@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.prod: system-center
 ms.date: 01/23/2018
 ms.technology: service-manager
+ms.custom: UpdateFrequency3
 ---
 
 # Use connectors to import data into Service Manager

@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 MonikerRange: '>=sc-om-2019'
+ms.custom: UpdateFrequency2
 ---
 
 

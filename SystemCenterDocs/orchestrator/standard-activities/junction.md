@@ -1,7 +1,7 @@
 ---
 title: Junction
 description: This article describes the functionality of Junction activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 834609dd-c152-4a8e-8c59-069e5857f365
 caps.latest.revision: 15
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Junction
 

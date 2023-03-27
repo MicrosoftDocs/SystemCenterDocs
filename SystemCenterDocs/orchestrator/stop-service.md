@@ -10,6 +10,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+ms.custom: UpdateFrequency3
 ---
 # Stop Service activity
 

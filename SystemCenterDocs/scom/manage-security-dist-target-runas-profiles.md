@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: evansma
 ms.date: 11/15/2016
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

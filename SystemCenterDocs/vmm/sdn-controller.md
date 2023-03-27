@@ -207,7 +207,7 @@ You need to deploy a logical switch on the management logical network. The switc
 1. In the VMM console, select **Fabric** > **Networking** > **Create Logical Switch**. Review the Getting Started information and select **Next**.
 2. Provide a **Name** and optional description. Select **No Uplink Team**. If you need teaming, select **Embedded Team**.
    > [!NOTE]
-   > Do not use **Team**.
+   > Don't use **Team**.
 
 3.  For minimum bandwidth mode, choose the **Weight** option.
 4.  In **Extensions**, clear all the switch extensions. This is important. If you select any of the switch extensions at this stage, it could block the network controller onboarding later.
@@ -456,9 +456,9 @@ The configure HNV logical network needs an IP address pool, even if DHCP is avai
 4.  In **IP Address range**, configure the starting and ending IP address. Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 5.  Next, configure the default gateway address. Select **Insert** next to the **Default gateways** box, type the address, and use the default metric. Optionally configure DNS and WINS.
 6.  Review the summary information and select **Finish** to complete the wizard.
-7. As part of network controller onboarding, the switch that you deployed on the hosts for the Management logical network connectivity was converted to an SDN switch. This switch can now be used to deploy a network controller managed network, including the HNV provider logical network. Ensure that you select the network site corresponding to the  HNV provider logical network in the uplink port profile settings for the Management logical switch.
+7.  As part of network controller onboarding, the switch that you deployed on the hosts for the Management logical network connectivity was converted to an SDN switch. This switch can now be used to deploy a network controller managed network, including the HNV provider logical network. Ensure that you select the network site corresponding to the  HNV provider logical network in the uplink port profile settings for the Management logical switch.
 
-   ![Screenshot of the Uplink port.](./media/sdn-controller/sdn-network-controller2.png)
+    ![Screenshot of the Uplink port.](./media/sdn-controller/sdn-network-controller2.png)
 
 The HNV provider logical network is now accessible to all the hosts in the network controller managed host group.
 

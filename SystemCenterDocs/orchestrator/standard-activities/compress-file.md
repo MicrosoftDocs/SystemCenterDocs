@@ -1,7 +1,7 @@
 ---
 title: Compress File 
 description: This article describes the Compress File activity that compresses files into zip archives.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: cdc74cd7-336f-42f7-b5fd-ffad7f926211
 caps.latest.revision: 15
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Compress File
 

@@ -2,7 +2,7 @@
 title: Work with management pack XML files
 description: Describes how to work with management pack XML files for Service Manager authoring.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

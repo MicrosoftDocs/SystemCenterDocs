@@ -1,7 +1,7 @@
 ---
 title: Send Email 
 description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 81c60f52-199b-46c7-83c9-3d38ae70b108
 caps.latest.revision: 16
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Send Email
 

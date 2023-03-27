@@ -1,7 +1,7 @@
 ---
 title: Move Computer
 description: You can use the Move Computer activity in a runbook to move a computer under a new parent path in the Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: f2e7bbaf-24b3-4aeb-ad55-2078dd21befa
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Move Computer

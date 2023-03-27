@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article
+ms.custom: UpdateFrequency5
 ---
 
 # Languages supported by System Center - Service Manager
@@ -49,4 +50,4 @@ It's assumed in this article that you're installing System Center - Service Mana
 |Russian|Cyrillic\_General\_100\_CI\_AS|  
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
-|Turkish \(Turkey\)|Turkish\_100\_CI\_AS|  
+|Turkish \(Türkiye\)|Turkish\_100\_CI\_AS|  

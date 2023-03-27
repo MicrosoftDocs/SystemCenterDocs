@@ -1,7 +1,7 @@
 ---
 title: Unlock User
 description: You can use the Unlock User activity in a runbook to reset the user password in Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 541e7081-1c6c-4b25-82b0-4369d48f14eb
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Unlock User

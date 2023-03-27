@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 05/10/2021
-ms.custom: na, intro-installation
+ms.custom: UpdateFrequency2, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: conceptual

@@ -1,7 +1,7 @@
 ---
 title: Remove Group From Group
 description: You can use the Remove Group From Group activity in a runbook to remove a group from a group in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: fc22dcd6-bd35-4e41-9ee6-f6060e6c014b
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Remove Group From Group

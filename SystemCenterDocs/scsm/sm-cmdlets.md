@@ -10,6 +10,7 @@ keywords:
 ms.date: 05/06/2019
 ms.technology: service-manager
 ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
+ms.custom: UpdateFrequency2
 ---
 
 # Configure and use Service Manager cmdlets for Windows PowerShell

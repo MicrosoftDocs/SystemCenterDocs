@@ -9,7 +9,7 @@ ms.date: 02/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Supported storage arrays

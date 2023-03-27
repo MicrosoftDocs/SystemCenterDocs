@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 04/21/2022
-ms.custom: na, intro-installation
+ms.custom: UpdateFrequency2, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](./system-requirements.md).
+You can use `MOMAgent.msi` to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](./system-requirements.md).
 
 Before you use either method to manually deploy the agent, ensure the following conditions are met:
 

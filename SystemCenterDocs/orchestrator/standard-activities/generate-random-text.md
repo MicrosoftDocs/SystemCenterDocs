@@ -1,7 +1,7 @@
 ---
 title: Generate Random Text
 description: This article describes the functionality of Generate Random Text activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: d20f8d7c-c7d7-4e2a-95c3-3c514514733d
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Generate Random Text
 

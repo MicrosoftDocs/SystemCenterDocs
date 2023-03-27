@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 11/08/2017
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -63,7 +63,7 @@ You must ensure that the computer that will host the Operations console meets th
 3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     ```
-    setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always]/SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1] /AcceptEndUserLicenseAgreement:[0|1]
+    setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always] /SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1] /AcceptEndUserLicenseAgreement:[0|1]
     ```
 
 ## Next steps

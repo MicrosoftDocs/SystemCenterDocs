@@ -1,7 +1,7 @@
 ---
 title: Deploy Configuration Baseline activity
 description: Describes the configurable properties for the Deploy Configuration Baseline activity for Configuration Manager Integration Pack.
-ms.custom: na, intro-deployment
+ms.custom: na, intro-deployment, UpdateFrequency3
 ms.date: 03/15/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -34,12 +34,12 @@ and optional properties and published data for this activity.
 
 ## Deploy Configuration Baseline required properties
 
-|**Element**|**Description**|**Valid Values**|
-|--------------------------------------------------|-------------------------------------------------------------------------------------------------|------------------|
-|Deployment Name|The desired name for the new deployment that will be shown in the Configuration Manager console||    
-|Baseline|Performs a WMI query against Configuration Manager and returns the baseline information ||           
+|**Element**|**Description**|**Valid</br>Values**|
+|----------------------------------|-------------------------------|------------------|
+|Deployment Name|The desired name for the new deployment that will be shown in the Configuration Manager console| |
+|Baseline|Performs a WMI query against Configuration Manager and returns the baseline information | |
 |Baseline Value Type|The type of baseline value|ID or Name|
-|Collection|Performs a WMI query against Configuration Manager and returns the collection information||          
+|Collection|Performs a WMI query against Configuration Manager and returns the collection information| |
 |Collection Value Type|The type of collection value|ID or Name|
 |Remediate non-compliant rules when supported |Enables the remediation of non-compliant rules |True or False|
 |Allow Remediation outside of Maintenance Windows|Enables the remediation of non-compliant rules outside of the maintenance window |True or False|

@@ -9,6 +9,7 @@ ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article
 monikerRange: 'sc-sm-2016'
+ms.custom: UpdateFrequency.5
 ---
 
 # Upgrade the Service Manager Self-Service portal

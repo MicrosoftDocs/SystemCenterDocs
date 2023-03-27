@@ -8,7 +8,7 @@ ms.author: jsuri
 ms.prod: system-center
 ms.date: 02/22/2023
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Overview of Service Management Automation
