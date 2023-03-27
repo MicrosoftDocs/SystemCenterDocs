@@ -39,10 +39,10 @@ To provide real-world context to the step-by-step procedures for the Service Man
  Additionally, Ken will create new custom objects, such as a template, a queue, and a view, to support working with the new type of activity. If email notifications are configured in the environment, in the final steps of the scenario, Ken can configure email notifications to send confirmation email messages after the activity is complete.  
 
 ## Save custom objects in a management pack  
- Ken saves the custom objects to the Automated Activity: Add Computer to AD Group management pack so that he can transfer these objects between the Service Manager console and the Service Manager Authoring Tool.  
+ Ken saves the custom objects to the Automated Activity: Add Computer to AD Group management pack so that they can transfer these objects between the Service Manager console and the Service Manager Authoring Tool.  
 
 ## Use the customized process  
- Eventually, after Ken imports the custom management pack into Service Manager and completes the creation of all the necessary custom objects, he can use the new process for compliance change requests. He creates a new compliance change request to add ADComputer1 computer to the GP_AUTHAPPS AD DS group. He can then monitor the process to confirm that the new computer is successfully added to the group.  
+ Eventually, after Ken imports the custom management pack into Service Manager and completes the creation of all the necessary custom objects, they can use the new process for compliance change requests. They create a new compliance change request to add ADComputer1 computer to the GP_AUTHAPPS AD DS group. They can then monitor the process to confirm that the new computer is successfully added to the group.  
 
 ## Prerequisites for the customization scenario
 
@@ -84,9 +84,9 @@ The primary goal of the Woodgrove Bank customization scenario is to create a new
 
 ## Step 2 - Customize the default change request form
 
-The second step in the Woodgrove Bank customization scenario is to customize the default Change Request form, which is Microsoft.EnterpriseManagement.ServiceManager.ChangeManagement.Forms.ChangeRequestForm. Ken wants to rearrange some fields on the form and then add the Woodgrove Bank logo. Before Ken starts, he views the fields in the form to see how the values change according to the properties that are selected.  
+The second step in the Woodgrove Bank customization scenario is to customize the default Change Request form, which is Microsoft.EnterpriseManagement.ServiceManager.ChangeManagement.Forms.ChangeRequestForm. Ken wants to rearrange some fields on the form and then add the Woodgrove Bank logo. Before Ken starts, they view the fields in the form to see how the values change according to the properties that are selected.  
 
- Next, Ken opens the **ServiceManager.ChangeManagement.Library.mp** management pack file in the Service Manager Authoring Tool, he customizes the form, and then saves the management pack file. Later, he must import the customized management pack into the Service Manager console.  
+ Next, Ken opens the **ServiceManager.ChangeManagement.Library.mp** management pack file in the Service Manager Authoring Tool, he customizes the form, and then saves the management pack file. Later, they must import the customized management pack into the Service Manager console.  
 
 ### View the System.AddComputerForm form  
 
@@ -117,7 +117,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 - **What does the workflow need to do?** The workflow needs to add a computer to a group in Active Directory Domain Services (AD DS), and then change the status of the automated activity to **Complete**.  
 - **What information does the workflow need?** The change request provides information about the specific computer and group to use. Properties of the workflow activities can retrieve the change request information from the Service Manager activity that is associated with the change request.  
 
-  To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
+  To create and implement their new workflow, Ken follows the steps in the rest of this section. They use the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
 
 ### Create a New Workflow  
  Ken uses this procedure to create a workflow named **AddComputerToADGroupWF** in the **Woodgrove.AutomatedActivity.AddComputerToADGroupMP** management pack.  
@@ -141,7 +141,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 For general information about these steps, see [How to Create a New Workflow](manage-workflows-auth-tool.md) and [How to Save and Build a Workflow](manage-workflows-auth-tool.md).  
 
 ### Add the Workflow Activities  
-Ken uses this procedure to add the WF activities **Add AD DS Computer to Group** and **Set Activity Status to Completed** to his workflow.  
+Ken uses this procedure to add the WF activities **Add AD DS Computer to Group** and **Set Activity Status to Completed** to their workflow.  
 
 #### Add WF activities to the workflow  
 
@@ -153,7 +153,7 @@ For general information about these steps, see [How to Add an Activity to a Work
 
 ### Configure the Activity Properties  
 
-Ken uses this procedure to set the **Computer Name** and **Group Name** properties of the **Add AD DS Computer to Group** activity to retrieve the values of the **Automated Activity: Add Computer To AD Group** properties **Computer Name**, **Group Name**, and **Activity ID** from the change request. In addition, he sets the **Computer Domain name** property of the **Add AD DS Computer to Group** activity to a constant value.  
+Ken uses this procedure to set the **Computer Name** and **Group Name** properties of the **Add AD DS Computer to Group** activity to retrieve the values of the **Automated Activity: Add Computer To AD Group** properties **Computer Name**, **Group Name**, and **Activity ID** from the change request. In addition, they set the **Computer Domain name** property of the **Add AD DS Computer to Group** activity to a constant value.  
 
 #### Configure the activity properties  
 
@@ -212,9 +212,9 @@ The following procedure provides only high-level steps for creating a new list i
 
 ## Step 7 - Create a new task
 
-When Ken works with a compliance change request, he needs to easily access the Active Directory Users and Computers administrative tool.  
+When Ken works with a compliance change request, they need to easily access the Active Directory Users and Computers administrative tool.  
 
- In this step of the Woodgrove Bank customization scenario, to make it easy to access the tool, Ken creates a new task, **Start Active Directory Users and Computers**. He saves this task to the **Woodgrove Automated Activity - Add Computer To Group** management pack. He can later use the new task to start the tool.  
+ In this step of the Woodgrove Bank customization scenario, to make it easy to access the tool, Ken creates a new task, **Start Active Directory Users and Computers**. They save this task to the **Woodgrove Automated Activity - Add Computer To Group** management pack. They can later use the new task to start the tool.  
 
  The following procedure provides only the high-level steps for creating a new task in the Service Manager console. For the complete procedure for creating a new task, see [How to Create a Task](troubleshoot-with-tasks.md).  
 
@@ -263,7 +263,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates a templat
 
 ## Step 10 - Optionally create a notification template and subscription
 
-If System Center - Service Manager is configured with a Simple Mail Transfer Protocol (SMTP) server, as part of the Woodgrove Bank customization scenario, Ken can configure an email notification that will be sent to him when a new computer is added to the compliance group. This is an optional step.  
+If System Center - Service Manager is configured with a Simple Mail Transfer Protocol (SMTP) server, as part of the Woodgrove Bank customization scenario, Ken can configure an email notification that will be sent to them when a new computer is added to the compliance group. This is an optional step.  
 
 The following procedure provides only the high-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](./notifications.md).  
 
