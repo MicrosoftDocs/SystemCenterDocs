@@ -120,12 +120,12 @@ To configure Linux log file monitoring, do the following:
       # Change owner of tmp folder
       chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/tmp
       
-      # Change owner of fluent-logging folder
+      # Change owner of fluent-logging folder (used for log file position file, this location is flexible)
       chown omsagent:omiusers /home/omsagent/fluent-logging
       ```
       ![Screenshot of log file monitoring.](../scom/media/log-file-monitoring/log-file-monitoring.png)
 
- 6. Create omsagent and omsconfig files. Create them and set permission:
+ 6. Create omsagent and omsconfig files:
       ```bash
       # Create omsadmin.conf file
       touch /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf
@@ -142,6 +142,7 @@ To configure Linux log file monitoring, do the following:
       # Change owner of omsagent.conf file
       chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
       ```
+      
  8. Edit the file `/etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf`, and add the following information after changing the highlighted information.
       > WORKSPACE_ID=scom \
       > SCOM_ENDPOINT=https://<mark>\<MSFQDN\></mark>:8886 \
@@ -152,7 +153,7 @@ To configure Linux log file monitoring, do the following:
       ```
 10. Verify the status in the omsagent log:
       ```bash
-      tail -50 /var/opt/microsoft/omsagent/scom/log/omsagent.log
+      tail -100 /var/opt/microsoft/omsagent/scom/log/omsagent.log
       ```
 
 
