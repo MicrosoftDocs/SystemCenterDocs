@@ -9,7 +9,6 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency1
 ---
 
 
