@@ -9,7 +9,7 @@ ms.date: 03/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Set up networking for Hyper-V hosts and clusters in the VMM fabric
