@@ -34,14 +34,14 @@ Before you start, it's important to understand how logical networks work in VMM.
 
         - **Connected network**: The VLAN and subnet pairs of the underlying physical networks are logically equivalent. A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs. This network type was earlier known as *One Connected Network*.
 
-            ![Connected network](media/network-logical/connected-network.png)
+            ![Illustration of Connected network.](media/network-logical/connected-network.png)
 
             **Example scenario**:
             Enterprise Contoso needs a network to host their DevTest workloads. This network might have multiple VLANs or subnets. Contoso creates a logical network of the type *Connected network*. VMM is responsible for assigning the VLAN or subnet to the VMs based on the host group on which the VM is placed.
 
        - **Independent network**: Multiple VM networks can be created on top of this logical network. Each VM network created provides access to a specific VLAN-subnet pair. The VM networks are independent of each other.
 
-         ![Independent network](media/network-logical/independent-network.png)
+         ![Illustration of an Independent network.](media/network-logical/independent-network.png)
 
            There are two types of independent networks:
            - VLAN-based independent networks
@@ -95,7 +95,7 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
 1.  Specify how you want to isolate VM networks associated with this logical network.
 
-    ![Create logical networks manually](media/network-logical/create-logical-networks-manually.png)
+    ![Screenshot of Create logical networks manually.](media/network-logical/create-logical-networks-manually.png)
 
     To simplify logical network creation, descriptions and illustrations of the logical network types are available in VMM. Each type of logical network has an in-product description and an illustration that describes the use case.
 
@@ -109,7 +109,10 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
     IP pools can be created when you add network sites in the **Create Logical Network Wizard**.
 
-    - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. Note that VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
+    - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. 
+      > [!NOTE]
+      > VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
+      
     - **Static IP**: If you use static IP addresses, create at least one network site and associate at least one IP subnet with it.
     - **VLAN**: If you use VLANs with static IP addressing, create corresponding network sites for the VLAN and subnet pairs. If you use DHCP, create corresponding network sites for VLAN information only.
     - **Network virtualization**: If you use network virtualization, create at least one network site with an associated IP subnet so that the logical network has an IP address pool.
@@ -124,4 +127,4 @@ To set up an IP address pool on a logical network, [follow these steps](./networ
 
 ## Next steps
 
- [Create a VM network](network-virtual.md)
+ [Create a VM network](network-virtual.md).
