@@ -148,7 +148,7 @@ To configure Linux log file monitoring, do the following:
       ```
  9. Edit the file /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf, and add the following information after changing the highlighted information.
       > WORKSPACE_ID=scom \
-      > SCOM_ENDPOINT=https://<mark><MSFQDN></mark>:8886 \
+      > SCOM_ENDPOINT=https://<mark>\<MSFQDN\></mark>:8886 \
       > MONITORING_ID={274F8D7B-DBCA-8FC3-1451-8DCD55092156}
 
 
