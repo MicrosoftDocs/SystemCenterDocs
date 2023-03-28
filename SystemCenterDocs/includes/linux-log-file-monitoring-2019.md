@@ -142,15 +142,18 @@ To configure Linux log file monitoring, do the following:
       # Change owner of omsagent.conf file
       chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
       ```
- 8. Restart the OMSAgent:
-      ```bash
-      /opt/microsoft/omsagent/bin/service_control restart
-      ```
- 9. Edit the file /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf, and add the following information after changing the highlighted information.
+ 8. Edit the file `/etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf`, and add the following information after changing the highlighted information.
       > WORKSPACE_ID=scom \
       > SCOM_ENDPOINT=https://<mark>\<MSFQDN\></mark>:8886 \
       > MONITORING_ID={274F8D7B-DBCA-8FC3-1451-8DCD55092156}
-
+ 9. Restart the OMSAgent:
+      ```bash
+      /opt/microsoft/omsagent/bin/service_control restart
+      ```
+10. Verify the status in the omsagent log:
+      ```bash
+      tail -50 /var/opt/microsoft/omsagent/scom/log/omsagent.log
+      ```
 
 
 ## Enable the OMED service
@@ -167,19 +170,42 @@ To configure Linux log file monitoring, do the following:
 3. From **Tasks**, select **Health Service Tasks**>**Enable System Center OMED Server**.
 
 ### Enable the OMED service manually
-You have two options when enabling the OMED service manually on the management server.
+You have two options when enabling the OMED service manually on the management server, [automatically via Powershell](#PowershellServiceStep) or [manually](#ManualServiceSteps).
 
-1. #### Set manually with services.msc
-   1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
-   2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
-   3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
-   4. In the details pane, right-click **Service** and select **Start**.
+> #### <a name="PowershellServiceStep"></a>Set automatically with Powershell
+>   Run the following Powershell as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
+>   ```powershell
+>   Set-Service -Name OMED -StartupType Automatic -Status Running
+>   ```
 
-2. #### Set automatically with Powershell
-   Run the following Powershell as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running.
-   ```powershell
-   Set-Service -Name OMED -StartupType Automatic -Status Running
-   ```
+> #### <a name="ManualServiceSteps"></a>Set manually with services.msc
+>   1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
+>   2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
+>   3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
+>   4. In the details pane, right-click **Service** and select **Start**.
+   
+### Add OMED Firewall Rule
+
+In order to enable to OMED Firewall Rule you have two options, either add the port [automatically via Powershell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
+
+#### <a name="AutomaticFirewallRule"></a>Automatically add rule with Powershell
+
+The following command will allow you to automatically add the firewall rule:
+```powershell
+Set-NetFirewallRule -DisplayName "System Center Operations Manager External DataSource Service" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8886
+```
+
+#### <a name="ManualFirewallRule"></a>Manually add rule with Windows Firewall
+1. Open Windows Defender Firewall with Advanced Security.
+    1. Right click the Windows icon in your taskbar and select **Run**.
+    2. Type in the run box: `wf.msc` and Click OK.
+2. Select **Inbound Rules**.
+3. Right click Inbound Rules and select: **New Rule...**
+4. Select **Port**, Click Next.
+5. Select **TCP** and select **Specific local ports:**. Type in `8886`.
+6. Select **Allow the connection**, Click Next.
+7. Select the Appropriate Profiles to apply the Firewall Rule (*Domain, Private, Public*).
+8. Type in the name box: `System Center Operations Manager External DataSource Service`, and Click Finish.
 
 ## Assign a Client Certificate for OMSAgent
 
