@@ -47,7 +47,7 @@ Regardless of any port profiles and logical switches you're using in your networ
 
 1. Open  **Fabric** > **Servers** > **All Hosts** > *host group* > **Hosts** > **Host** > **Properties** > **Virtual Switches**.
 2. Select the logical switch you created. Under **Adapter**, select the physical adapter that you want to apply the logical switch to.
-3. In the **Uplink Port Profile** list, select the uplink port profile that you want to apply. The list contains the uplink port profiles that have been added to the logical switch that you selected. If a profile seems to be missing, review the configuration of the logical switch and then return to this property tab. Select **OK** to finish.
+3. In the **Uplink Port Profile** list, select the uplink port profile that you want to apply. The list contains the uplink port profiles that have been added to the logical switch that you selected. If a profile seems to be missing, review the configuration of the logical switch, and then return to this property tab. Select **OK** to finish.
 
     > [!NOTE]
     > If you didn't create the virtual switch earlier and do it now, the host might temporarily lose network connectivity when VMM creates the switch.
