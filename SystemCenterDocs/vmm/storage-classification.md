@@ -30,7 +30,7 @@ Classifications are often based on storage types or performance characteristics.
 
 ## Create classifications:
 
-1.  Click **Fabric** > **Storage**, right-click **Classification and Pools** > **Create Classification**.
+1.  Select **Fabric** > **Storage**, right-click **Classification and Pools** > **Create Classification**.
 2.  In **New Classification**, enter a name and description > **Add**.
 
 ## Next steps
