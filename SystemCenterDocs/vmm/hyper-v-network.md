@@ -12,7 +12,6 @@ ms.technology: virtual-machine-manager
 ms.custom: UpdateFrequency2
 ---
 
-
 # Set up networking for Hyper-V hosts and clusters in the VMM fabric
 
 ::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
@@ -49,9 +48,12 @@ Regardless of any port profiles and logical switches you're using in your networ
 1. Open  **Fabric** > **Servers** > **All Hosts** > *host group* > **Hosts** > **Host** > **Properties** > **Virtual Switches**.
 2. Select the logical switch you created. Under **Adapter**, select the physical adapter that you want to apply the logical switch to.
 3. In the **Uplink Port Profile** list, select the uplink port profile that you want to apply. The list contains the uplink port profiles that've been added to the logical switch that you selected. If a profile seems to be missing, review the configuration of the logical switch and then return to this property tab. Select **OK** to finish.
-> [!NOTE]
-> If you didn't create the virtual switch earlier and do it now, the host might temporarily lose network connectivity when VMM creates the switch.
-4. Repeat the steps as needed. If you apply the same logical switch and uplink port profile to two or more adapters, the two adapters might be teamed, depending on a setting in the logical switch. To find out if they'll be teamed, open the logical switch properties, select the **Uplink** tab, and view the **Uplink mode** setting. If the setting is **Team**, the adapters will be teamed. The specific mode in which they'll be teamed is determined by a setting in the uplink port profile.
+
+    > [!NOTE]
+    > If you didn't create the virtual switch earlier and do it now, the host might temporarily lose network connectivity when VMM creates the switch.
+    >
+
+4. Repeat the steps as needed. If you apply the same logical switch and uplink port profile to two or more adapters, the two adapters might be teamed depending on a setting in the logical switch. To find out if they'll be teamed, open the logical switch properties, select the **Uplink** tab, and view the **Uplink mode** setting. If the setting is **Team**, the adapters will be teamed. The specific mode in which they'll be teamed is determined by a setting in the uplink port profile.
 5. After applying the logical switch, you can check the network adapter settings and verify whether they're in compliance with the switch:
     - Select **Fabric**> **Networking** > **Logical Switches** > **Home** > **Show** > **Hosts**.
     - In **Logical Switch Information for Hosts**, verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Select the switch > **Remediate** to fix this.
@@ -66,7 +68,7 @@ Regardless of any port profiles and logical switches you're using in your networ
 
 ## Set affinity between vNICs and pNICs
 
-This section provides the information on how to set affinity between virtual network adapters (vNICs) and physical network adapters (pNICs). Affinity between pNICs and vNICs  brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g., live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can use SMB multichannel to meet high throughput for SMB traffic.
+This section provides the information on how to set affinity between virtual network adapters (vNICs) and physical network adapters (pNICs). Affinity between pNICs and vNICs brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with RDMA settings enabled vNIC. Also, you can route specific type of traffic (for example, live migration) to a higher bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can use SMB multichannel to meet high throughput for SMB traffic.
 
 ### Before you begin
 
@@ -96,8 +98,8 @@ For a host, affinity between vNIC and pNIC can be set at virtual switch level. Y
 6. Once the affinity is defined, traffic from the vNIC is routed to the mapped physical adapter.
 
     > [!NOTE]
-    >- We recommend you not to remove any of the physical adapters post teaming, as it could break the assigned affinity mappings.
-    >- If the option **This virtual adapter inherits the properties from the physical management adapter** is checked, affinity cannot be defined for vNICs that handles management traffic.
+    >- We recommend you to not remove any of the physical adapters post teaming, as it could break the assigned affinity mappings.
+    >- If the option **This virtual adapter inherits the properties from the physical management adapter** is checked, affinity can't be defined for vNICs that handle management traffic.
 
     ![Screenshot of traffic NIC.](./media/set-affinity-vnic-pnic/option-vnic.png)
 
@@ -105,7 +107,7 @@ For a host, affinity between vNIC and pNIC can be set at virtual switch level. Y
 
 **Q**: I've deployed a SET enabled switch and teamed three physical adapters pNIC1, pNIC2, and pNIC3. I've set affinity between vNIC1 and pNIC1. For some reasons, if pNIC1 goes down, will there be no traffic flow from vNIC1?
 
-**A**: No, traffic will continue to flow from vNIC1 to any of physical adapters (pNIC2 and pNIC3). When a physical adapter for which you've defined an affinity goes down, the default behavior of SET switch overrides affinity behavior. This means, operating system will map the traffic from vNIC1 to any of the active physical adapters (pNIC2 or pNIC3).
+**A**: No, traffic will continue to flow from vNIC1 to any of physical adapters (pNIC2 and pNIC3). When a physical adapter for which you've defined an affinity goes down, the default behavior of SET switch overrides affinity behavior. This means operating system will map the traffic from vNIC1 to any of the active physical adapters (pNIC2 or pNIC3).
 
 ::: moniker-end
 
