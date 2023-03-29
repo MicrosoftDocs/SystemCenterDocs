@@ -192,7 +192,7 @@ Before you can complete the steps in the following procedures, you've to create 
 
 Use the following procedures to automatically assign all unassigned manual activities to a named user and then validate the creation of workflow.
 
-Before you can complete the steps in the following procedures, you have to create the following templates:
+Before you can complete the steps in the following procedures, you've to create the following templates:
 
 -   **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](#create-a-manual-activity-template).
 -   **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](./notifications.md).

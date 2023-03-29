@@ -23,7 +23,7 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 
 ::: moniker-end
 
-This section provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
+This article provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
 
  For information about how to use WF activities and WF workflows with Service Manager, see [Automating IT Processes with Workflows](automate-processes-workflows.md).  
 
@@ -46,7 +46,7 @@ This activity adds a computer to a security group in Active Directory Domain Ser
 
 |Display name|Internal name|Type|Required|Description|  
 |------------------|-------------------|----------|--------------|-----------------|  
-|Computer Domain|ComputerDomain|String|Yes|The fully qualified DNS domain name where the computer is located (for example, contoso.com)|  
+|Computer Domain|ComputerDomain|String|Yes|The fully qualified DNS domain name where the computer is located (for example, contoso.com).|  
 |Computer Name|FullyQualifiedComputerName|String|Yes|The name of the computer.|  
 |Group Name|FullyQualifiedGroupName|String|Yes|The name of the Active Directory Domain Services group.|  
 
@@ -148,8 +148,7 @@ Two types of activities don't get the **Current Item** and **Property to Bind** 
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions: <br /><br /> -  If any error occurs in the **ForEachLoop** activity and that isn't with the child activities, the workflow terminates. <br /> -  If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true. <br /> -   If any of the input properties are null. The activity doesn't iterate. <br /><br />  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity doesn't do so itself.  
-|None|None|
+|The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions: <br /><br /> -  If any error occurs in the **ForEachLoop** activity and that isn't with the child activities, the workflow terminates. <br /> -  If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true. <br /> -   If any of the input properties are null. The activity doesn't iterate. <br /><br />  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity doesn't do so itself.|None|None|
 
 ### IfElse activity
 
@@ -159,7 +158,7 @@ This activity controls the sequence of activities within a workflow based on a B
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
-|None|None.|
+|None|None|
 
 #### Properties  
  None.  
@@ -189,7 +188,6 @@ Use virtual machine management activities in Service Manager to build workflows 
 
  The Service Manager Authoring Tool provides the following five default virtual machine management activities in the **VMM Activities** group in the **Activities Toolbox** pane.  
 
-
 ### Get VM activity
 
 This activity in Service Manager retrieves a list of one or more virtual machine IDs from a Virtual Machine Manager (VMM) Library.  
@@ -203,7 +201,7 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 
 |Display name|Internal name|Type|Required|Description|  
 |------------------|-------------------|----------|--------------|-----------------|  
-|Parameter Set|ParameterSet|String|No; the default is **Connection**.|Specifies a subset of parameters, organized for a particular purpose. For the **Get VM** activity, you can select one of the following parameter sets:<br /><br /> -   **All:** Search for all of the available virtual machines.<br />-   **ID:** Search for a virtual machine with a known ID.<br />-   **Connection:** Search for virtual machines that are connected to the Virtual Machine Manager (VMM) server that is designated by the **VMMServer** property.<br />-   **VMHostGroup:** Search for virtual machines that are connected to the virtual machine host that is designated by the **VM Host** property.|  
+|Parameter Set|ParameterSet|String|No; the default is **Connection**.|Specifies a subset of parameters organized for a particular purpose. For the **Get VM** activity, you can select one of the following parameter sets:<br /><br /> -   **All:** Search for all the available virtual machines.<br />-   **ID:** Search for a virtual machine with a known ID.<br />-   **Connection:** Search for virtual machines that are connected to the Virtual Machine Manager (VMM) server that is designated by the **VMMServer** property.<br />-   **VMHostGroup:** Search for virtual machines that are connected to the virtual machine host that is designated by the **VM Host** property.|  
 |Continue On Error|ContinueOnError|Boolean|No. (The default setting is True.)|Determines whether the workflow should continue running if the activity fails.|  
 |Has Error|HasError||N/A|Specifies if the activity has an error set. (Read-only)|  
 |All|All|Boolean|No. (The default setting is True.)|Available if the **Parameter Set** is **All**. If it's set to **True**, the **Get VM** activity returns a list of the virtual machine IDs of all of the available virtual machines.|  
@@ -211,8 +209,8 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 |Management Group|ManagementGroup|String|No|Specifies the management group in which this activity will run. Set to **localhost**. (Read-only)|  
 |Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the activity to run.|  
-|VM Host|VMHost|String|Required if the **Parameter Set** is **VMHostGroup**|Available if the **Parameter Set** is **VMHostGroup**. If this parameter set is selected, the **Get VM** activity returns a list of the virtual machine IDs of all of the virtual machines running on the specified host.|  
-|VM Name|VMName|String|No|Specifies the name or part of a name of the virtual machine to search for. If the string is part of a name, the activity retrieves the IDs of all virtual machines that contain the string.|  
+|VM Host|VMHost|String|Required if the **Parameter Set** is **VMHostGroup**|Available if the **Parameter Set** is **VMHostGroup**. If this parameter set is selected, the **Get VM** activity returns a list of the virtual machine IDs of all the virtual machines running on the specified host.|  
+|VM Name|VMName|String|No|Specifies the name or part of a name of the virtual machine to search for. If the string is part of a name, the activity retrieves the IDs of all the virtual machines that contain the string.|  
 |VMMServer|VMMServer|String|Yes|Specifies the name of the System Center Virtual Machine Manager (VMM) server that manages the virtual machines.|  
 
  The **Get VM** activity generates the output that is described in the following table.  
@@ -232,7 +230,6 @@ This activity in Service Manager moves a virtual machine from the Virtual Machin
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
 |None| -   The Virtual Machine Manager console and Service Manager must both be installed on the same server. <br /> -   Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active Directory Domain Services (AD DS).|
- 
 
 #### Properties  
  The **Move VM** activity uses the input properties in the following table.  
@@ -335,7 +332,7 @@ This activity in Service Manager starts a stopped or paused virtual machine.
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|The **Start VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
+|The **Start VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions, as appropriate, if any of the script properties can't be resolved.|None|None|
 
 ### Save State VM activity
 
@@ -420,7 +417,7 @@ This activity in Service Manager runs a Windows PowerShell script as part of a W
 |Continue On Error|ContinueOnError|Boolean|No. (The default setting is True.)|Determines whether the workflow should continue running if the activity fails.|  
 |Has Error|HasError||N/A|Specifies whether the activity has an error set. (Read-only)|  
 |Management Group|ManagementGroupName|String|No|Specifies the management group to which the script server belongs. By default, this is set to **localhost**. (Read-only)|  
-|Script Parameters|Parameters|Dictionary <string,string>|Yes|Specifies the name/value list of parameters to be passed into the script when it runs.<br /><br /> You can set parameter values to any of the following management pack references:<br /><br /> -   $Target/...$<br /> -   $MPElement[...] <br /> -   $Data/...$. $Data references are resolved only at run time in the parameters (not in the script itself).<br /><br /> Using one of these references as the only value for a parameter sets that parameter to the XML string that represents the input data item (from **GetItemXML**).|  
+|Script Parameters|Parameters|Dictionary <string,string>|Yes|Specifies the name/value list of parameters to be passed into the script when it runs.<br /><br /> You can set parameter values to any of the following management pack references:<br /><br /> -   $Target/...$<br /> -  $MPElement[...] <br /> -   $Data/...$. $Data references are resolved only at run time in the parameters (not in the script itself).<br /><br /> Using one of these references as the only value for a parameter sets that parameter to the XML string that represents the input data item (from **GetItemXML**).|  
 |Script Body|ScriptBody|String|Yes|Specifies the text of the script itself.|  
 |Snap-ins|SnapIns|String|No|Lists Windows PowerShell snap-ins to preload into the runspace.|  
 |Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
@@ -535,7 +532,8 @@ This activity in Service Manager saves property changes to one Service Manager i
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  The **Update Incident** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
