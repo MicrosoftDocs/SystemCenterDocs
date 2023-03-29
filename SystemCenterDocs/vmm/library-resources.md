@@ -77,12 +77,12 @@ Ensure that you specify an account with administrative permissions on the server
 
 When you remove a library share from VMM management and there are templates that reference resources that were located on the library share, a representation of the library resource appears in the VMM library as an orphaned resource.
 
-To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically re-associate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
+To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically reassociate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
 
 1. Select **Library** > **Orphaned Resources**.
 2. You won't be able to delete an orphaned resource until the templates that reference it are updated to valid references. To view the templates, select and hold the orphaned resource > **Properties**. To update the template, select it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
 3. Add a new resource that's valid.
-4. When you've completed these steps for all the templates, close the **Properties** dialog. To verify there aren't any dependencies, select and hold the orphaned resource > **Properties** > **Dependencies**. Then select and hold the orphaned resource > **Delete**.
+4. When you have completed these steps for all the templates, close the **Properties** dialog. To verify there aren't any dependencies, select and hold the orphaned resource > **Properties** > **Dependencies**. Then select and hold the orphaned resource > **Delete**.
 
 
 ::: moniker range="sc-vmm-2019"
@@ -100,7 +100,7 @@ For effective management of replicated shares using VMM, disable the usage of *a
 
 VMM generates a GUID for all the library objects managed by VMM. This metadata is written into *Alternate Data Stream* of the file. VMM uses *Alternate Data Stream* to identify library objects as the same objects, while they're moved across folders in library shares or in scenarios where a library object is renamed. Disabled *Alternate Data stream* impacts the identification of object as the same object in the scenarios mentioned above.
 
-However, for effective management of replicated library shares using VMM, it is required to disable the *Alternate Data Stream* option.
+However, for effective management of replicated library shares using VMM, it's required to disable the *Alternate Data Stream* option.
 
   ![Screenshot of disable alternate data stream.](media/library-resources/disable-alternate-data-stream.png)
 
