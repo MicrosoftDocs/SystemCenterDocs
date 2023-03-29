@@ -2,11 +2,11 @@
 title: Workflow activity reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
 manager: mkluck
-ms.custom: na, UpdateFrequency2
+ms.custom: na, UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 03/29/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -29,13 +29,13 @@ This section provides guidance for information technology (IT) developers so tha
 
 ## Active Directory activities
 
-Use Active Directory Domain Services (AD&nbsp;DS) activities to make Active&nbsp;Directory functions part of your workflow in Service Manager.  
+Use Active Directory Domain Services (AD DS) activities to make Active Directory functions part of your workflow in Service Manager.  
 
  The Service Manager Authoring Tool provides two default Service Manager activities in the **Active Directory Activities** group in the **Activities Toolbox** pane. The sections in this article describe these activities.  
 
 ### Add AD DS Computer to a Group activity
 
-This activity adds a computer to a security group in Active Directory Domain Services (AD&nbsp;DS) in Service Manager. The computer and the group must belong to the same domain, and all the containers in the domain are searched.  
+This activity adds a computer to a security group in Active Directory Domain Services (AD DS) in Service Manager. The computer and the group must belong to the same domain, and all the containers in the domain are searched.  
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
@@ -62,7 +62,7 @@ This activity adds a computer to a security group in Active Directory Domain Ser
 
 ### Add AD DS User to Group activity
 
-This activity adds a user to a security group in Active Directory Domain Services (AD&nbsp;DS) in Service Manager. The user and the group must belong to the same domain, and all the containers in the domain are searched.  
+This activity adds a user to a security group in Active Directory Domain Services (AD DS) in Service Manager. The user and the group must belong to the same domain, and all the containers in the domain are searched.  
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
@@ -74,7 +74,7 @@ This activity adds a user to a security group in Active Directory Domain Service
 |Display name|Internal name|Type|Required|Description|  
 |------------------|-------------------|----------|--------------|-----------------|  
 |User Domain|UserDomain|String|Yes|The fully qualified domain name (FQDN) of the user.|  
-|User Name|UserName|String|Yes|The logon name of the user.|  
+|User Name|UserName|String|Yes|The sign-in name of the user.|  
 |Group Name|FullyQualifiedGroupName|String|Yes|The FQDN of the group.|  
 
  The **Add AD DS User to Group** activity generates the output that is described in the following table.  
@@ -94,7 +94,7 @@ Use control flow activities to provide structure—branches, loops, or timer del
  The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
 
 ### Delay activity
-This activity introduces a delay between activities in a workflow in Service Manager. The **Delay** activity is derived from the Microsoft .NET&nbsp;Framework **DelayActivity** class.  
+This activity introduces a delay between activities in a workflow in Service Manager. The **Delay** activity is derived from the Microsoft .NET Framework **DelayActivity** class.  
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
@@ -112,7 +112,7 @@ This activity introduces a delay between activities in a workflow in Service Man
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|None|For more information about this activity, see [DelayActivity Class](/dotnet/api/system.workflow.activities.delayactivity) in the .NET&nbsp;Framework Class Library.|None|
+|None|For more information about this activity, see [DelayActivity Class](/dotnet/api/system.workflow.activities.delayactivity) in the .NET Framework Class Library.|None|
 
 
 ### For Each Loop activity
@@ -132,7 +132,7 @@ Two types of activities don't get the **Current Item** and **Property to Bind** 
 
   -   Script activities, such as the **Windows PowerShell Script** activity.  
 
-  -   Custom activities or other activities that do not inherit from the **WorkflowActivityBase** class. Such activities include those activities that are based on the **Activity** base class, such as native Visual Studio activities.  
+  -   Custom activities or other activities that don't inherit from the **WorkflowActivityBase** class. Such activities include those activities that are based on the **Activity** base class, such as native Visual Studio activities.  
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
@@ -148,7 +148,7 @@ Two types of activities don't get the **Current Item** and **Property to Bind** 
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions: <br /> -  If any error occurs in the **ForEachLoop** activity and that isn't with the child activities, the workflow terminates. <br /> -  If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true. <br /> -   If any of the input properties are null. The activity doesn't iterate. <br /><br />  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity doesn't do so itself.  
+|The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions: <br /><br /> -  If any error occurs in the **ForEachLoop** activity and that isn't with the child activities, the workflow terminates. <br /> -  If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true. <br /> -   If any of the input properties are null. The activity doesn't iterate. <br /><br />  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity doesn't do so itself.  
 |None|None|
 
 ### IfElse activity
@@ -170,7 +170,7 @@ This activity controls the sequence of activities within a workflow based on a B
 
 ### Parallel activity
 
-This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](/dotnet/api/system.workflow.activities.parallelactivity) in the .NET&nbsp;Framework Class Library.  
+This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](/dotnet/api/system.workflow.activities.parallelactivity) in the .NET Framework Class Library.  
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
@@ -207,7 +207,7 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 |Continue On Error|ContinueOnError|Boolean|No. (The default setting is True.)|Determines whether the workflow should continue running if the activity fails.|  
 |Has Error|HasError||N/A|Specifies if the activity has an error set. (Read-only)|  
 |All|All|Boolean|No. (The default setting is True.)|Available if the **Parameter Set** is **All**. If it's set to **True**, the **Get VM** activity returns a list of the virtual machine IDs of all of the available virtual machines.|  
-|ID|ID|String|Required if **Parameter Set** is **ID**.|Available if the **Parameter Set** is **ID**. If it is set to **True**, the **Get VM** activity returns a list of the virtual machine IDs of all of the virtual machines whose virtual machine IDs match all or part of the specified ID value.|  
+|ID|ID|String|Required if **Parameter Set** is **ID**.|Available if the **Parameter Set** is **ID**. If it's set to **True**, the **Get VM** activity returns a list of the virtual machine IDs of all of the virtual machines whose virtual machine IDs match all or part of the specified ID value.|  
 |Management Group|ManagementGroup|String|No|Specifies the management group in which this activity will run. Set to **localhost**. (Read-only)|  
 |Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the activity to run.|  
@@ -265,7 +265,7 @@ This activity in Service Manager moves a virtual machine from the Virtual Machin
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|The **Move VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.|None|None|
+|The **Move VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
 
 ### Shutdown VM activity
 
@@ -301,7 +301,7 @@ This activity in Service Manager shuts down the guest operating system on a virt
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|The **Shutdown VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.|None|None|
+|The **Shutdown VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
 
 ### Start VM activity
 
@@ -322,7 +322,7 @@ This activity in Service Manager starts a stopped or paused virtual machine.
 |Management Group|ManagementGroup|String|No|The management group in which this activity will run. Set to **localhost**. (Read-only)|  
 |PROTipID|PROTipID|Guid|No|Specifies the ID of the Performance and Resource Optimization (PRO) tip that triggered this action. Allows for future auditing of PRO tips.|  
 |Run Asynchronously|RunAsynchronously|Boolean|No. (The default setting is False.)|Specifies that the job runs asynchronously so that control returns to the command shell immediately.|  
-|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
+|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the activity to run.|  
 |VM ID|VMID|String|Yes|Specifies the unique ID of the virtual machine to be started.|  
 |VMMServer|VMMServer|String|Yes|Specifies the name of the System Center Virtual Machine Manager (VMM) server that manages the virtual machines.|  
@@ -335,7 +335,7 @@ This activity in Service Manager starts a stopped or paused virtual machine.
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|The **Start VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.|None|None|
+|The **Start VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|None|None|
 
 ### Save State VM activity
 
@@ -478,10 +478,10 @@ This activity creates and populates an incident in Service Manager.
 |Action Log Comment|ActionLogComment|String|Yes|Specifies the comment to include in the **Incident** object's action log.|  
 |Affected User Domain|AffectedUserDomain|String|Yes|Specifies the name of the Domain Name System (DNS) domain of the primary user who is affected by the incident.|  
 |Affected User Name|AffectedUserName|String|Yes|Specifies the user name of the primary user who is affected by the incident.|  
-|Category|Category|Integer|Yes|Specifies the type of incident, such as "Networking" or "Printing." The value is the ID of **enum**. (Category -**enum** data field)|  
+|Category|Category|Integer|Yes|Specifies the type of incident, such as **Networking** or **Printing**. The value is the ID of **enum**. (Category -**enum** data field)|  
 |Continue On  Error|ContinueOnError|Boolean|No. (The default setting is true.)|Determines whether the workflow should continue running if the activity fails.|  
 |Impact|Impact|Integer|Yes|Specifies the impact of the incident on the affected user or users. The value is the ID of **enum**. (Impact -**enum** data type)|  
-|Source|Source|Integer|No|Specifies the source of information about the incident, such as "Phone" or "E-mail". The value is the ID of **enum**. (Source -**enum** data type field)|  
+|Source|Source|Integer|No|Specifies the source of information about the incident, such as **Phone** or **E-mail**. The value is the ID of **enum**. (Source -**enum** data type field)|  
 |Summary|Summary|String|Yes|Specifies the summary text that describes the incident.|  
 |Urgency|Urgency|Integer|Yes|Specifies the urgency of resolving the incident. The value is the ID of **enum**. (Urgency -**enum** data type field)|  
 
@@ -510,7 +510,7 @@ This activity retrieves one or more incidents in Service Manager.
 |------------------|-------------------|----------|--------------|--------------|  
 |Affected User Domain|AffectedUserDomain|String|No|Specifies the name of the Domain Name System (DNS) domain of the primary user who is affected by the incident.|  
 |Affected User Name|AffectedUserName|String|No|Specifies the user name of the primary user who is affected by the incident.|  
-|Category|Category|Integer|No|Specifies the type of incident, such as "Networking" or "Printing." The value is the ID of **enum**. (Category -**enum** data field)|  
+|Category|Category|Integer|No|Specifies the type of incident, such as **Networking** or **Printing**. The value is the ID of **enum**. (Category -**enum** data field)|  
 |Continue On Error|ContinueOnError|Boolean|No. (The default is true.)|Determines whether the workflow should continue running if the activity fails.|  
 |Incident ID|IncidentID|String|No|Specifies the unique identifier that is generated for the incident object.|  
 |Search Type|SearchType|Integer?|No|Specifies the title of the search type that is used with the activity.|  
@@ -543,10 +543,10 @@ This activity in Service Manager saves property changes to one Service Manager i
 |Action Log Comment|ActionLogComment|String|No|Specifies a comment to include in the Incident object's action log.|  
 |Affected User Domain|AffectedUserDomain|String|No|Specifies the name of the Domain Name System (DNS) domain of the primary user who is affected by the incident.|  
 |Affected User Name|AffectedUserName|String|No|Specifies the user name of the primary user who is affected by the incident.|  
-|Category|Category|Integer|No|Specifies the type of incident, such as "Networking" or "Printing." The value is the ID of **enum**. (Category -**enum** data type)|  
+|Category|Category|Integer|No|Specifies the type of incident, such as **Networking** or **Printing**. The value is the ID of **enum**. (Category -**enum** data type)|  
 |Continue On Error|ContinueOnError|Boolean|No. (The default setting is true.)|Determines whether the workflow should continue running if the activity fails.|  
 |Impact|Impact|Integer|No|Specifies the impact of the incident on the affected user or users. The value is the ID of **enum**. (Impact -**enum** data type)|  
-|Source|Source|Integer|No|Specifies the source of information about the incident, such as "Phone" or "E-mail." The value is the ID of **enum**. (Source -**enum** data type)|  
+|Source|Source|Integer|No|Specifies the source of information about the incident, such as **Phone** or **E-mail**. The value is the ID of **enum**. (Source -**enum** data type)|  
 |Service Manager Incident|SMIncident|System.Workitem.Incident|No|The constructed incident class instance to be updated.|  
 |Status|Status|Integer|No|Specifies the status of the incident that generated the activity. The value is the ID of **enum**. (Status -**enum** data type)|  
 |Summary|Summary|String|No|Specifies the summary text that describes the incident.|  
@@ -556,7 +556,7 @@ This activity in Service Manager saves property changes to one Service Manager i
 
 |Display name|Internal name|Type|Description|  
 |------------------|-------------------|----------|-----------------|  
-|SM Incident|SMIncident|System.WorkItem.Incident|Returns an update of the incident class instance. The input **SM Incident** and the output **SM Incident**are equal unless the activity failed to find the **SM Incident**. In that case, the output **SM Incident** is set to Null.|  
+|SM Incident|SMIncident|System.WorkItem.Incident|Returns an update of the incident class instance. The input **SM Incident** and the output **SM Incident** are equal unless the activity failed to find the **SM Incident**. In that case, the output **SM Incident** is set to Null.|  
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
@@ -579,4 +579,4 @@ This activity updates the status of an automated activity in Service Manager.
 
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
-|None|When you are using this activity in a workflow that is triggered by a Service Manager automated activity, enter **$Data/BaseManagedEntityId$** as the value of this property. This value applies to the **Set Activity Status to Completed** activity at the automated activity that triggered the workflow to run.|None|
+|None|When you're using this activity in a workflow that is triggered by a Service Manager automated activity, enter **$Data/BaseManagedEntityId$** as the value of this property. This value applies to the **Set Activity Status to Completed** activity at the automated activity that triggered the workflow to run.|None|
