@@ -5,11 +5,11 @@ description: This article describes management tasks for the VMM library
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/25/2020
+ms.date: 03/29/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Manage the VMM library
@@ -27,12 +27,12 @@ Read this article to learn how to manage the System Center - Virtual Machine Man
 
 By default, VMM refreshes library shares once every hour.
 
-- You can change the default refresh settings in **General** > **Library Settings** > **Settings** > **Modify**, from to 366 hours (14 days). You can also disable automatic library refreshes.
+- You can change the default refresh settings in **General** > **Library Settings** > **Settings** > **Modify** to 336 hours (14 days). You can also disable automatic library refreshes.
 - To manually refresh, select **Library** > library server or share > **Refresh share**.
 
 During a library refresh, the following occurs:
 
-- VMM adds these file types to the **Library** view: virtual hard disks (except for those attached to a stored VM), virtual floppy disks, ISO images, answer files, PowerShell scripts. Snapshots imported into the library with Hyper-V and VMware VMs are displayed on the **Checkpoints** tab of the VM properties. The snapshot files aren't displayed.
+- VMM adds these file types to the **Library** view: virtual hard disks (except for those attached to a stored VM), virtual floppy disks, ISO images, answer files, and PowerShell scripts. Snapshots imported into the library with Hyper-V and VMware VMs are displayed on the **Checkpoints** tab of the VM properties. The snapshot files aren't displayed.
 - VMM indexes but doesn't display these file types:
   - Files associated with stored VMs (VM configuration file, attached virtual hard disks, saved state files, imported snapshots, checkpoints).
   - Files associated with VM templates.
@@ -77,7 +77,7 @@ Ensure that you specify an account with administrative permissions on the server
 
 When you remove a library share from VMM management and there are templates that reference resources that were located on the library share, a representation of the library resource appears in the VMM library as an orphaned resource.
 
-To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically reassociate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
+To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically re-associate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
 
 1. Select **Library** > **Orphaned Resources**.
 2. You won't be able to delete an orphaned resource until the templates that reference it are updated to valid references. To view the templates, select and hold the orphaned resource > **Properties**. To update the template, select it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
@@ -96,11 +96,11 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 
 VMM supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR to replicate shares and manage the shares through VMM.
 
-For effective management of replicated shares using VMM, disable the usage of *alternate data stream* for both the source and destination library shares.  You can do this while adding new library shares or by editing properties of the existing library shares. *Alternate data stream* is enabled by default. Disable this option only when using replication across library shares.
+For effective management of replicated shares using VMM, disable the usage of *alternate data stream* for both the source and destination library shares. You can do this while adding new library shares or by editing properties of the existing library shares. *Alternate data stream* is enabled by default. Disable this option only when using replication across library shares.
 
 VMM generates a GUID for all the library objects managed by VMM. This metadata is written into *Alternate Data Stream* of the file. VMM uses *Alternate Data Stream* to identify library objects as the same objects, while they're moved across folders in library shares or in scenarios where a library object is renamed. Disabled *Alternate Data stream* impacts the identification of object as the same object in the scenarios mentioned above.
 
-However, for effective management of replicated library shares using VMM, it's required to disable the *Alternate Data Stream* option.
+However, for effective management of replicated library shares using VMM, it is required to disable the *Alternate Data Stream* option.
 
   ![Screenshot of disable alternate data stream.](media/library-resources/disable-alternate-data-stream.png)
 
@@ -112,6 +112,6 @@ If you've opted to disable writing to *Alternate Data Stream*, some scenarios li
 3.	Rename/move the library file in the parent library share.
 
 >[!NOTE]
->Storing VMs and VMWare VM templates is not supported on library shares with *UseAlternateDataStream* set to false.
+>Storing VMs and VMWare VM templates isn't supported on library shares with *UseAlternateDataStream* set to false.
 
 ::: moniker-end
