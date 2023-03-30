@@ -5,7 +5,7 @@ description: This include file details the Linux log file monitoring in Operatio
 author: jyothisuri
 ms.author: jsuri
 manager:  mkluck
-ms.date:  03/15/2023
+ms.date:  03/29/2023
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  operations-manager
@@ -174,7 +174,7 @@ To configure Linux log file monitoring, do the following:
 You have two options when enabling the OMED service manually on the management server, [automatically via Powershell](#PowershellServiceStep) or [manually](#ManualServiceSteps).
 
 > #### <a name="PowershellServiceStep"></a>Set automatically with Powershell
->   Run the following Powershell as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
+>   Run the following Powershell command as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
 >   ```powershell
 >   Set-Service -Name OMED -StartupType Automatic -Status Running
 >   ```
@@ -187,7 +187,7 @@ You have two options when enabling the OMED service manually on the management s
    
 ### Add OMED Firewall Rule
 
-In order to enable to OMED Firewall Rule you have two options, either add the port [automatically via Powershell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
+In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) [automatically via Powershell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
 
 #### <a name="AutomaticFirewallRule"></a>Automatically add rule with Powershell
 
@@ -217,11 +217,24 @@ You have two options when assigning the client certificate for OMSAgent.
 
 ### <a name="LinkOMIAgentCertificate"></a>1. Link OMI Agent Certificate to OMS Agent
 
-Run the following command on your Linux machine to set the OMS Agent Client Certificate to the OMI Certificate (*Operations Manager Linux Agent Certificate*):
+1. Set ownership on the `omi.pem` and `omikey.pem` file to `omsagent:omiusers`:
+      ```bash
+      # Change owner of scom-cert.pem file
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
+      
+      # Change owner of scom-key.pem file
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
+      ```
 
-```bash
-sudo ln -s /etc/opt/omi/ssl/omi.pem /etc/opt/microsoft/omsagent/scom/certs/omi.pem
-```
+2. Run the following command on your Linux machine to set the OMS Agent Client Certificate to the OMI Certificate (*Operations Manager Linux Agent Certificate*):
+
+      ```bash
+      # Link file omi.pem to scom-cert.pem
+      ln -s /etc/opt/omi/ssl/omi.pem /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
+      
+      # Link file omikey.pem to scom-key.pem
+      ln -s /etc/opt/omi/ssl/omikey.pem /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
+      ```
 
 ### <a name="GenerateOMSAgentCertificate"></a>2. Generate a Client Certificate for OMSAgent
 1. Generate the certificate and key to the ***omsagent*** folder: 
