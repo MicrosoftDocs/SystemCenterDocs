@@ -84,7 +84,7 @@ In the second procedure, you view an edit a distributed application that was imp
 
 Generally, you should construct service maps that are 3-5 levels deep. Components of a service map should vary from 5-20 at each level. However, the total number of components shouldn't exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the Service Manager console remains responsive. Service maps aren't designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
 
-# [Manually create a service for an IT messaging application](#tab/Create)
+# [Manually create a service for an IT messaging application](#tab/Messaging)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Business Services**.
@@ -135,7 +135,7 @@ You can view and edit items that were imported from a System Center Operations M
 
 Before you use these procedures, ensure that you import the SQL Server management packs for Operations Manager and for Service Manager. Although these procedures rely on SQL Server databases imported from Operations Manager, you can use the same steps to view other imported configuration items that don't have system-defined views or forms.
 
-# [Create a view for imported SQL Server database configuration items](#tab/Imported)
+# [Create a view for imported SQL Server database configuration items](#tab/SQL)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **All Windows Computers**.
