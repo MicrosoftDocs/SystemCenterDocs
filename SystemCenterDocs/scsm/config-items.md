@@ -193,7 +193,7 @@ You can use the following procedures to initiate the deletion of a configuration
 
 After members of the Advanced Operators, Authors, or Administrators user roles have initiated the deletion of a configuration item, a Service Manager administrator can use the following procedures to either permanently delete the configuration item or to restore the original properties for this item. You may need to refresh the Service Manager console to update the list of configuration items.
 
-#### Complete the deletion of a configuration item
+**Complete the deletion of a configuration item**
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Administrators user role.
 2.  In the Service Manager console, select **Administration**.
