@@ -158,6 +158,7 @@ Before you use these procedures, ensure that you import the SQL Server managemen
 5.  If you've made any changes to the item, select **OK**; otherwise, select **Cancel** to close the form.
 
 ![Screenshot of the PowerShell symbol.](./media/config-items/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in Service Manager. For more information, see [Get-SCSMView](/previous-versions/system-center/powershell/system-center-2012-r2/hh316213(v=sc.20)).
+
 ---
 
 ## Delete configuration items
