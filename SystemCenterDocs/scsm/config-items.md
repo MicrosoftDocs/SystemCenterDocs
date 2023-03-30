@@ -84,7 +84,7 @@ In the second procedure, you view an edit a distributed application that was imp
 
 Generally, you should construct service maps that are 3-5 levels deep. Components of a service map should vary from 5-20 at each level. However, the total number of components shouldn't exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the Service Manager console remains responsive. Service maps aren't designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
 
-### Manually create a service for an IT messaging application
+# [Manually create a service for an IT messaging application](#tab/Create)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Business Services**.
@@ -109,7 +109,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 17. Select the **Service Dependents** tab to define the items that use the service or are external to the service. For example, define other configuration items or services that use the new service.
 18. Select **OK** to save the new configuration item.
 
-### View and edit a distributed application that was imported from Operations Manager
+# [View and edit a distributed application that was imported from Operations Manager](#tab/Edit)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and select **All Business Services**.
@@ -118,13 +118,14 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 5.  In the *Service Maps - DistributedApplicationName* dialog, select the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
 6.  Select any configuration item, and select **Open** to view or edit its properties.
 
-### View dependent services
+# [View dependent services](#tab/View)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and select **All Business Services**.
 3.  Select the **DistributedApplicationName**. In the **Tasks** pane, under **DistributedApplicationName**, select **Edit**.
 4.  In the form that appears, select the **Service Dependents** tab. Services that use the new service are listed. For example, **IT Messaging Service** appears in the list.
 5.  Select **OK**.
+---
 
 ## Create a view for imported configuration items
 
@@ -134,7 +135,7 @@ You can view and edit items that were imported from a System Center Operations M
 
 Before you use these procedures, ensure that you import the SQL Server management packs for Operations Manager and for Service Manager. Although these procedures rely on SQL Server databases imported from Operations Manager, you can use the same steps to view other imported configuration items that don't have system-defined views or forms.
 
-### Create a view for imported SQL Server database configuration items
+# [Create a view for imported SQL Server database configuration items](#tab/Imported)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **All Windows Computers**.
@@ -148,7 +149,7 @@ Before you use these procedures, ensure that you import the SQL Server managemen
 10. Select the **Display** tab. In the **Columns to display** list, select **Database Name** and **Database Size (MB) String**, and select **OK**.
 11. Select the **SQL Server Databases** view to see the list of the imported SQL Server databases.
 
-### View and edit imported SQL Server database configuration items
+# [View and edit imported SQL Server database configuration items](#tab/Imported)
 
 1.  Select the **SQL Server Databases** view that you created, and then select any item in the list. Notice that the **Preview** pane shows detailed information about the selected item.
 2.  Double-click any item in the list to view the item in a dynamically generated form.
@@ -157,6 +158,7 @@ Before you use these procedures, ensure that you import the SQL Server managemen
 5.  If you've made any changes to the item, select **OK**; otherwise, select **Cancel** to close the form.
 
 ![Screenshot of the PowerShell symbol.](./media/config-items/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in Service Manager. For more information, see [Get-SCSMView](/previous-versions/system-center/powershell/system-center-2012-r2/hh316213(v=sc.20)).
+---
 
 ## Delete configuration items
 
@@ -164,7 +166,7 @@ Deleting configuration items is a two-step process, and only members of the Adva
 
 You can use the following procedures to initiate the deletion of a configuration item in Service Manager and validate the initiation of the deletion. Only users who are members of the Advanced Operators, Authors, or Administrators user role can initiate the deletion of a configuration item. Only users who are members of the Administrators user role can complete the deletion of a configuration item.
 
-### Initiate the deletion of a configuration item
+# [Initiate the deletion of a configuration item](#tab/Initiate)
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Advanced Operators, Authors, or Administrators user role.
 2.  In the Service Manager console, select **Configuration Items**.
@@ -173,7 +175,7 @@ You can use the following procedures to initiate the deletion of a configuration
 5.  In the **Tasks** pane, under the name of the computer that you selected in the previous step, select **Delete**.
 6.  In the **Delete Item** dialog, confirm your selection, and select **Yes**.
 
-### Validate that the deletion of a configuration item has been initiated
+# [Validate that the deletion of a configuration item has been initiated](#tab/Validate)
 
 1.  In the Service Manager console, select **View**, and select **Refresh**. Or, press F5.
 2.  Verify that the configuration item you selected is no longer displayed.
@@ -186,8 +188,7 @@ You can use the following procedures to initiate the deletion of a configuration
 -   For information about how to use Windows PowerShell to initiate the deletion of a configuration item by updating the `PendingDelete` property value, see [Update-SCSMClassInstance](/previous-versions/system-center/powershell/system-center-2012-r2/hh316267(v=sc.20)).
 -   For information about how to use Windows PowerShell to retrieve items that have been marked for deletion in Service Manager, see [Get-SCSMDeleteditem](/previous-versions/system-center/powershell/system-center-2012-r2/hh316215(v=sc.20)).
 
-
-### Delete or restore a configuration item
+# [Delete or restore a configuration item](#tab/Delete)
 
 After members of the Advanced Operators, Authors, or Administrators user roles have initiated the deletion of a configuration item, a Service Manager administrator can use the following procedures to either permanently delete the configuration item or to restore the original properties for this item. You may need to refresh the Service Manager console to update the list of configuration items.
 
@@ -204,7 +205,7 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 6.  In the **System Center Service Manager** dialog, ensure you selected the correct items, and select **Yes**.
 
-### Restore a configuration item
+# [Restore a configuration item](#tab/Restore)
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Administrators user role.
 2.  In the Service Manager console, select **Administration**.
@@ -221,6 +222,8 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 -   For information about how to use Windows PowerShell to permanently remove an instance of a configuration item object, see [Remove-SCSMClassInstance](/previous-versions/system-center/powershell/system-center-2012-r2/hh316280(v=sc.20)).
 -   For information about how to use Windows PowerShell to restore items that were previously marked for deletion in Service Manager, see [Restore-SCSMDeleteItem](/previous-versions/system-center/powershell/system-center-2012-r2/hh316256(v=sc.20)).
+
+---
 
 ## Update configuration items
 
@@ -239,25 +242,26 @@ Similarly, work items such as incidents, problems, and change requests are often
 3.  Select **All Windows Computers**. In the **All Windows Computers** pane, double-click the computer to which you want to add information.
 4.  In the computer form, select the **Related Items** tab.
 
-##### Add related services, people, and configuration items
+# [Add related services, people, and configuration items](#tab/Add)
 
 1.  In the **Configuration Items: Computers, Services, and People** area, select **Add**.
 2.  In the **Select Objects** dialog, select a class from the **Filter by class** list to narrow the choices available in the **Available objects** list.
 3.  In the **Available objects** list, select the items that you want to add, and select **Add**.
 4.  Select **OK** to close the dialog and to add the selected items.
 
-##### Add related work items
+# [Add related work items](#tab/Related)
 
 1.  In the **Related work items** area, select **Add**.
 2.  In the **Select Objects** dialog, select a class from the **Filter by class** list to narrow the choices available in the **Available objects** list.
 3.  In the **Available objects** list, select the work items that you want to add, and select **Add**.
 4.  Select **OK** to close the dialog and to add the selected work items.
 
-##### Attach files
+# [Attach files](#tab/Attach)
 
 1.  In the **Attached files** area, select **Add**.
 2.  In the **Open** dialog, select the file that you want to add, and then select **Open**.
 3.  Don't attempt to open an attached file before you submit the form.
+---
 
 ## Next steps
 
