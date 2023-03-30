@@ -37,7 +37,7 @@ Additionally, you might have to manually create a new user configuration item to
 
 You can use the following procedures to manually create two computer configuration items. However, you can also use the same procedures to add software, printers, or software updates in Service Manager. After you add the two computers, you can identify them as a service.
 
-# [### Manually create a computer configuration item](#tab/Create Computer config item)
+# [Manually create a computer configuration item](#tab/Manually create a computer configuration item)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
@@ -46,7 +46,7 @@ You can use the following procedures to manually create two computer configurati
 5.  Select **OK** to save the new configuration item.
 6.  Repeat step 3 through step 5 to create a second computer, such as **Exchange02.woodgrove.com**.
 
-# [### Manually create a user configuration item](#tab/Create user config item)
+# [Manually create a user configuration item](#tab/Manually create a user configuration item)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **Users**.
@@ -60,7 +60,7 @@ You can use the following procedures to manually create two computer configurati
     3.  In the **Delivery address for this notification channel** box, enter the address you would use to deliver a notification. Typically, this would be an email address.
     4.  Select **OK**.
 
-# [### Validate the manually created configuration item](#tab/Validate config item)
+# [Validate the manually created configuration item](#tab/Validate the manually created configuration item)
 
 -   Verify that the computer you added appears in the **Computers** pane.
 -   Verify that the user you added appears in the **Users** pane.
