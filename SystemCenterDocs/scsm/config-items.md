@@ -7,10 +7,10 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 03/30/2023
 ms.technology: service-manager
 ms.assetid: 7e6ab64c-c752-4cee-9057-e4b4413e571d
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Configuration items in System Center - Service Manager
@@ -21,9 +21,9 @@ ms.custom: UpdateFrequency2
 
 ::: moniker-end
 
-Configuration items are a way to store information about services, computers, software, software updates, users and other undefined imported objects in the Service Manager database in Service Manager. You can then select configuration items when you submit forms, such as an incident form, a change request form, or a work item form.
+Configuration items (CIs) are a way to store information about services, computers, software, software updates, users, and other undefined imported objects in the Service Manager database in Service Manager. You can select configuration items when you submit forms, such as an incident form, a change request form, or a work item form.
 
-A service is a special kind of configuration item that includes both technical and business data. It supports troubleshooting and impact analysis by showing critical dependencies, settings, and areas of responsibility to other configuration items. The key benefit of using services is that you can easily see when incidents affect configuration items because services are viewed as a map, or hierarchy, of items. A service also identifies service owners, key customers, and users. Because a service maps the relationships between configuration items and work items, you should use services to help manage work items.
+A service is a special kind of configuration item that includes both technical and business data. It supports troubleshooting and impact analysis by showing critical dependencies, settings, and areas of responsibility to other configuration items. The key benefit of using services is that you can easily see when incidents affect configuration items because services are viewed as a map or hierarchy of items. A service also identifies service owners, key customers, and users. Because a service maps the relationships between configuration items and work items, you should use services to help manage work items.
 
 You can use connectors to import a large number of configuration items from Active Directory Domain Services (AD DS), Configuration Manager, and Operations Manager, or you can manually create single CIs. You can also use the Operations Manager CI connector to import distributed applications in Operations Manager as a service.
 > [!NOTE]
@@ -37,7 +37,7 @@ Additionally, you might have to manually create a new user configuration item to
 
 You can use the following procedures to manually create two computer configuration items. However, you can also use the same procedures to add software, printers, or software updates in Service Manager. After you add the two computers, you can identify them as a service.
 
-### To manually create a computer configuration item
+# [### Manually create a computer configuration item](#tab/Create Computer config item)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
@@ -46,13 +46,13 @@ You can use the following procedures to manually create two computer configurati
 5.  Select **OK** to save the new configuration item.
 6.  Repeat step 3 through step 5 to create a second computer, such as **Exchange02.woodgrove.com**.
 
-### To manually create a user configuration item
+# [### Manually create a user configuration item](#tab/Create user config item)
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **Users**.
 3.  In the **Tasks** pane, under **Users**, select **Create User**.
 4.  On the **General** tab in the form, follow these steps:
-    1.  In the **First Name** box, enter a first name. For example, for the user account that will be used to populate the **Affected User** box for all incidents created by Operations Manager, enter **OMAlert**.
+    1.  In the **First Name** box, enter a first name. For example, for the user account that will be used to populate the **Affected User** box for all the incidents created by Operations Manager, enter **OMAlert**.
     2.  In the **Last Name** box, enter a last name. For example, for the user account that will be used to populate the **Affected User** box for all incidents created by Operations Manager, enter **User**.
 5.  On the **Notification** tab, select **Add**, and perform the following for each notification address that you want to add:
     1.  In the **User Notification** dialog, in the **Notification address name** box, enter a name you want to use for this notification.
@@ -60,7 +60,7 @@ You can use the following procedures to manually create two computer configurati
     3.  In the **Delivery address for this notification channel** box, enter the address you would use to deliver a notification. Typically, this would be an email address.
     4.  Select **OK**.
 
-### To validate the manually created configuration item
+# [### Validate the manually created configuration item](#tab/Validate config item)
 
 -   Verify that the computer you added appears in the **Computers** pane.
 -   Verify that the user you added appears in the **Users** pane.
@@ -78,12 +78,12 @@ In the second procedure, you view an edit a distributed application that was imp
     > [!NOTE]
     > You might need to download management packs or install them from the installation folder of your Operations Manager Root Management Server.
 
-2.  In Service Manager, import the management pack that contains the distributed application and its dependences. A new, empty, business service should appear in Business Services in the Configuration Items workspace.
+2.  In Service Manager, import the management pack that contains the distributed application and its dependencies. A new, empty business service should appear in Business Services in the Configuration Items workspace.
 3.  Browse to **Administration** and then **Connectors** and ensure that you refresh the list of management packs. Then, synchronize the Operations Manager configuration items connector. When the synchronization is complete, the service components appear in the **Configuration Items** workspace under the business service.
 
 Generally, you should construct service maps that are 3-5 levels deep. Components of a service map should vary from 5-20 at each level. However, the total number of components shouldn't exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the Service Manager console remains responsive. Service maps aren't designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
 
-### To manually create a service for an IT messaging application
+### Manually create a service for an IT messaging application
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Business Services**.
@@ -108,7 +108,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 17. Select the **Service Dependents** tab to define the items that use the service or are external to the service. For example, define other configuration items or services that use the new service.
 18. Select **OK** to save the new configuration item.
 
-### To view and edit a distributed application that was imported from Operations Manager
+### View and edit a distributed application that was imported from Operations Manager
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and select **All Business Services**.
@@ -117,7 +117,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 5.  In the *Service Maps - DistributedApplicationName* dialog, select the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
 6.  Select any configuration item, and select **Open** to view or edit its properties.
 
-### To view dependent services
+### View dependent services
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and select **All Business Services**.
@@ -133,7 +133,7 @@ You can view and edit items that were imported from a System Center Operations M
 
 Before you use these procedures, ensure that you import the SQL Server management packs for Operations Manager and for Service Manager. Although these procedures rely on SQL Server databases imported from Operations Manager, you can use the same steps to view other imported configuration items that don't have system-defined views or forms.
 
-### To create a view for imported SQL Server database configuration items
+### Create a view for imported SQL Server database configuration items
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **All Windows Computers**.
@@ -147,7 +147,7 @@ Before you use these procedures, ensure that you import the SQL Server managemen
 10. Select the **Display** tab. In the **Columns to display** list, select **Database Name** and **Database Size (MB) String**, and select **OK**.
 11. Select the **SQL Server Databases** view to see the list of the imported SQL Server databases.
 
-### To view and edit imported SQL Server database configuration items
+### View and edit imported SQL Server database configuration items
 
 1.  Select the **SQL Server Databases** view that you created, and then select any item in the list. Notice that the **Preview** pane shows detailed information about the selected item.
 2.  Double-click any item in the list to view the item in a dynamically generated form.
@@ -161,10 +161,9 @@ Before you use these procedures, ensure that you import the SQL Server managemen
 
 Deleting configuration items is a two-step process, and only members of the Advanced Operators, Authors, and Administrators user roles can initiate the Delete process in Service Manager. The first step doesn't delete configuration items directly. Instead, this process changes the property values of a configuration item so that the item will only be displayed in a **Deleted Items** view. The state of the configuration item is changed from Active to Pending Delete. A Service Manager administrator can later sign in and permanently delete the configuration item from the Service Manager database.
 
-
 You can use the following procedures to initiate the deletion of a configuration item in Service Manager and validate the initiation of the deletion. Only users who are members of the Advanced Operators, Authors, or Administrators user role can initiate the deletion of a configuration item. Only users who are members of the Administrators user role can complete the deletion of a configuration item.
 
-### To initiate the deletion of a configuration item
+### Initiate the deletion of a configuration item
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Advanced Operators, Authors, or Administrators user role.
 2.  In the Service Manager console, select **Configuration Items**.
@@ -173,7 +172,7 @@ You can use the following procedures to initiate the deletion of a configuration
 5.  In the **Tasks** pane, under the name of the computer that you selected in the previous step, select **Delete**.
 6.  In the **Delete Item** dialog, confirm your selection, and select **Yes**.
 
-### To validate that the deletion of a configuration item has been initiated
+### Validate that the deletion of a configuration item has been initiated
 
 1.  In the Service Manager console, select **View**, and select **Refresh**. Or, press F5.
 2.  Verify that the configuration item you selected is no longer displayed.
@@ -191,7 +190,7 @@ You can use the following procedures to initiate the deletion of a configuration
 
 After members of the Advanced Operators, Authors, or Administrators user roles have initiated the deletion of a configuration item, a Service Manager administrator can use the following procedures to either permanently delete the configuration item or to restore the original properties for this item. You may need to refresh the Service Manager console to update the list of configuration items.
 
-#### To complete the deletion of a configuration item
+#### Complete the deletion of a configuration item
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Administrators user role.
 2.  In the Service Manager console, select **Administration**.
@@ -204,7 +203,7 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 6.  In the **System Center Service Manager** dialog, ensure you selected the correct items, and select **Yes**.
 
-### To restore a configuration item
+### Restore a configuration item
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Administrators user role.
 2.  In the Service Manager console, select **Administration**.
@@ -224,7 +223,6 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 ## Update configuration items
 
-
 You might want to associate a work item to apply a Microsoft Exchange Server service pack update to the service that represents the computers that are affected by the email incident. To accomplish this, you can update the service configuration item and then add the respective work item as a related item.
 
 You can use the following procedures to add information, such as related work items or files, to configuration items in Service Manager. The procedures in this article describe only how to add items, but you can follow similar steps to view or remove items.
@@ -233,28 +231,28 @@ For example, when you're troubleshooting an incident, you might discover that a 
 
 Similarly, work items such as incidents, problems, and change requests are often interrelated. Related work items share some commonality with each other or with a configuration item. When a work item affects a particular configuration item, they're linked.
 
-### To add information to configuration items
+### Add information to configuration items
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
 3.  Select **All Windows Computers**. In the **All Windows Computers** pane, double-click the computer to which you want to add information.
 4.  In the computer form, select the **Related Items** tab.
 
-##### To add related services, people, and configuration items
+##### Add related services, people, and configuration items
 
 1.  In the **Configuration Items: Computers, Services, and People** area, select **Add**.
 2.  In the **Select Objects** dialog, select a class from the **Filter by class** list to narrow the choices available in the **Available objects** list.
 3.  In the **Available objects** list, select the items that you want to add, and select **Add**.
 4.  Select **OK** to close the dialog and to add the selected items.
 
-##### To add related work items
+##### Add related work items
 
 1.  In the **Related work items** area, select **Add**.
 2.  In the **Select Objects** dialog, select a class from the **Filter by class** list to narrow the choices available in the **Available objects** list.
 3.  In the **Available objects** list, select the work items that you want to add, and select **Add**.
 4.  Select **OK** to close the dialog and to add the selected work items.
 
-##### To attach files
+##### Attach files
 
 1.  In the **Attached files** area, select **Add**.
 2.  In the **Open** dialog, select the file that you want to add, and then select **Open**.
