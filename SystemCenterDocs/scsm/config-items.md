@@ -64,6 +64,7 @@ You can use the following procedures to manually create two computer configurati
 
 -   Verify that the computer you added appears in the **Computers** pane.
 -   Verify that the user you added appears in the **Users** pane.
+---
 
 ## Create a service
 
