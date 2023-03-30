@@ -64,6 +64,7 @@ You can use the following procedures to manually create two computer configurati
 
 -   Verify that the computer you added appears in the **Computers** pane.
 -   Verify that the user you added appears in the **Users** pane.
+
 ---
 
 ## Create a service
@@ -125,6 +126,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 3.  Select the **DistributedApplicationName**. In the **Tasks** pane, under **DistributedApplicationName**, select **Edit**.
 4.  In the form that appears, select the **Service Dependents** tab. Services that use the new service are listed. For example, **IT Messaging Service** appears in the list.
 5.  Select **OK**.
+
 ---
 
 ## Create a view for imported configuration items
@@ -262,6 +264,7 @@ Similarly, work items such as incidents, problems, and change requests are often
 1.  In the **Attached files** area, select **Add**.
 2.  In the **Open** dialog, select the file that you want to add, and then select **Open**.
 3.  Don't attempt to open an attached file before you submit the form.
+
 ---
 
 ## Next steps
