@@ -207,8 +207,9 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
     > For this release, if you're signed in as an administrator, you'll see three options in the **Tasks** pane under the name of the computer: **Delete**, **Remove Items**, and **Restore Items**. In the **Deleted Items** view, select only **Remove Items** or **Restore Items**.
 
 6.  In the **System Center Service Manager** dialog, ensure you selected the correct items, and select **Yes**.
+---
 
-# [Restore a configuration item](#tab/Restore)
+### Restore a configuration item
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Administrators user role.
 2.  In the Service Manager console, select **Administration**.
@@ -225,8 +226,6 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 -   For information about how to use Windows PowerShell to permanently remove an instance of a configuration item object, see [Remove-SCSMClassInstance](/previous-versions/system-center/powershell/system-center-2012-r2/hh316280(v=sc.20)).
 -   For information about how to use Windows PowerShell to restore items that were previously marked for deletion in Service Manager, see [Restore-SCSMDeleteItem](/previous-versions/system-center/powershell/system-center-2012-r2/hh316256(v=sc.20)).
-
----
 
 ## Update configuration items
 
