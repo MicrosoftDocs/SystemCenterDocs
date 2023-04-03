@@ -32,10 +32,10 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 ## Before you start
 
 ::: moniker range="sc-vmm-2016"
-- VMM should be running VMM 2016 with [Update Rollup 4](https://support.microsoft.com/help/4041074), or later.
+- VMM should be running VMM 2016 with [Update Rollup 4](https://support.microsoft.com/help/4041074) or later.
 ::: moniker-end
-- Security fixes should be up-to-date on the VMM server, and the server running the VMM database.
-- The VMM server should be running . NET version 4.6. Follow [these instructions](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed) to determine which version of .NET is installed.
+- Security fixes should be up-to-date on the VMM server and the server running the VMM database.
+- The VMM server should be running .NET version 4.6. Follow [these instructions](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed) to determine which version of .NET is installed.
 - To work with TLS 1.2, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) certificates are used, they should use SHA1 or SHA2.
 
 ## Install a SQL Server update for TLS 1.2 support
@@ -53,13 +53,13 @@ Disable all SCHANNEL protocols except for TLS 1.2.
 ### Manually modify the registry
 
 1. Open the Registry Editor, and navigate to HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols.
-2. Right-click **Protocol**, select **New** > **Key**. Type in the key and press Enter. Perform this procedure to create the following keys:
+2. Right-click **Protocol**, select **New** > **Key**. Enter the key and press Enter. Perform this procedure to create the following keys:
     - **SSL3**
     - **TLS 1.0**
     - **TLS 1.1**
     - **TLS 1.2**
 3. After you've created these keys, you need to create the **Client** and **Server** keys under them.
-    - For **SSL3**, select **New** > **Key**. Type in **Client** and press enter.  Again, for **SSL3**, select **New** > **Key** again. Then type in **Server** and press Enter.
+    - For **SSL3**, select **New** > **Key**. Enter **Client** and press enter.  Again, for **SSL3**, select **New** > **Key** again. Then enter **Server** and press **Enter**.
     - Repeat the action to create the **Client** and **Server** keys under **TLS 1.0**, **TLS 1.1**, and **TLS 1.2**.
 4. After you've created the **Client** and **Server** keys,  you need to create DWORD values under them, in order to enable and disable protocols. Do this as follows:
     - Enable the TLS 1.2 protocol. To do this, in **TLS 1.2**, under the **Client** key, create the DWORD value **DisabledByDefault**, and set the value to 0. Now create a DWORD value **Enabled**, and set the value to 1. Create the same DWORD values under the **Server** key.
@@ -113,7 +113,7 @@ Exit 0
 3. Now navigate to
    <strong>HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\
    .NetFramework\v4.0.30319</strong>.
-4. Under this location, create the same DWORD value **SchUseStrongCrypto**, and set the value to 1.
+4. Under this location, create the same DWORD value **SchUseStrongCrypto** and set the value to 1.
 5. Restart the server for the settings to take effect.
 
 ### Modify the registry with a PowerShell script
