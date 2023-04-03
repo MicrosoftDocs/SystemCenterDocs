@@ -49,7 +49,7 @@ Use one of the following procedures to browse a form in the Service Manager Auth
 ### Browse a form from Management Pack Explorer  
 
 1.  In the Authoring Tool, select **File**, and select **Open**.  
-2.  In the **Open a Management Pack** dialog, select the management pack that contains the form that you want to view. For example, select **Management Packs** as the file type, and then select the **ServiceManager.ChangeManagement.Library.mp** management pack in the D:\Program Files (x86)\Microsoft System Center\Service Manager Authoring\Library folder.  
+2.  In the **Open a Management Pack** dialog, select the management pack that contains the form that you want to view. For example, select **Management Packs** as the file type, and then select the **ServiceManager.ChangeManagement.Library.mp** management pack in the D:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\> Authoring\\Library folder.  
 3.  In the **Management Pack Explorer**, select the opened management pack, and then expand **Forms**. Right-click the form that you want to view, and select **View form**. The form opens in the authoring pane.  
 4.  Ensure that the **Details** pane is visible. If not, select **View** on the menu bar, and select **Details Window**. The properties of the form appear in the **Details** pane.  
 5.  Select a control on the form.  
@@ -70,7 +70,7 @@ Use the following procedure to customize an existing form.
 ### Customize an existing form  
 
 1.  In the Authoring Tool, select **File**, and select **Open**.  
-2.  In the **Open File** dialog, select the management pack that contains the form that you want to customize, and select **Open**. For example, select the Change Management Library management pack. The path might be *Authoring Tool installation drive*\Program Files (x86)\Microsoft System Center\Service Manager Authoring\Library\ServiceManager.ChangeManagement.Library.mp.  
+2.  In the **Open File** dialog, select the management pack that contains the form that you want to customize, and select **Open**. For example, select the Change Management Library management pack. The path might be *Authoring Tool installation drive*\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\> Authoring\\Library\\ServiceManager.ChangeManagement.Library.mp.  
 3.  Locate the form that you want to customize using the **Form Browser** or the **Management Pack Explorer**, as follows:  
      Using the **Form Browser**:  
     1.  In the **Form Browser**, select **All Management Packs** or select the management pack that contains the form that you want to customize, such as the **Service Manager Change Management Library** management pack.  
