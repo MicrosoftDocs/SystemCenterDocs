@@ -2,11 +2,11 @@
 title: Customize and author forms
 description: Provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
 manager: mkluck
-ms.custom: na, UpdateFrequency3
+ms.custom: na, UpdateFrequency3, engagement-fy23
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/06/2019
+ms.date: 03/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -26,7 +26,7 @@ ms.assetid: 9140312b-4d0b-4f22-a466-85887485e066
 
 This article provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
 
-Use the following guidelines when you're authoring forms in the Service Manager Authoring Tool. For more information about how Windows Presentation Foundation \(WPF\) forms work and WPF customization guidelines, see [Windows Presentation Foundation](/dotnet/desktop/wpf/) on MSDN.  
+Use the following guidelines when you're authoring forms in the Service Manager Authoring Tool. For more information about how Windows Presentation Foundation (WPF) forms work and WPF customization guidelines, see [Windows Presentation Foundation](/dotnet/desktop/wpf/) on MSDN.  
 
 -   When you're customizing the existing default forms by adding new controls, first create a new **Tab** control, and then add the new controls to the new **Tab** control.  
 -   Store all the customizations of a particular form in a single management pack.  
@@ -38,19 +38,19 @@ Use the following guidelines when you're authoring forms in the Service Manager 
 
 Use one of the following procedures to browse a form in the Service Manager Authoring Tool. In both the procedures, ensure that the properties in the **Details** pane are updated according to the class property that is bound to the selected control. Also, the **Binding Path** entry in the **Details** pane indicates the respective property that the field in the form represents.  
 
-### To browse a form from the Form Browser  
+### Browse a form from the Form Browser  
 
 1.  If the **Form Browser** pane isn't visible, select **View**, and select the **Form Browser** tab.  
 2.  In the **Form Browser** pane, select the management pack that contains the form that you want to view.  
-3.  In the list of forms, right\-click the form that you want to view, and select **View**. The form opens in the authoring pane.  
+3.  In the list of forms, right-click the form that you want to view, and select **View**. The form opens in the authoring pane.  
 4.  Ensure that the **Details** pane is visible. If not, select **View** on the menu bar, and select **Details Window**. The properties of the form appear in the **Details** pane.  
 5.  Select a control on the form.  
 
-### To browse a form from Management Pack Explorer  
+### Browse a form from Management Pack Explorer  
 
 1.  In the Authoring Tool, select **File**, and select **Open**.  
 2.  In the **Open a Management Pack** dialog, select the management pack that contains the form that you want to view. For example, select **Management Packs** as the file type, and then select the **ServiceManager.ChangeManagement.Library.mp** management pack in the D:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\> Authoring\\Library folder.  
-3.  In the **Management Pack Explorer**, select the opened management pack, and then expand **Forms**. Right\-click the form that you want to view, and select **View form**. The form opens in the authoring pane.  
+3.  In the **Management Pack Explorer**, select the opened management pack, and then expand **Forms**. Right-click the form that you want to view, and select **View form**. The form opens in the authoring pane.  
 4.  Ensure that the **Details** pane is visible. If not, select **View** on the menu bar, and select **Details Window**. The properties of the form appear in the **Details** pane.  
 5.  Select a control on the form.  
 
@@ -67,22 +67,22 @@ Use the following procedure to customize an existing form.
 > [!IMPORTANT]  
 >  You can't perform two customizations to the same form at the same time. Additionally, the Authoring Tool option **Undo all customizations** doesn't fully delete information from the management pack. If you want to remove all artifacts, delete the customized form, which removes it and any associated type projection from the management pack.  
 
-### To customize an existing form  
+### Customize an existing form  
 
 1.  In the Authoring Tool, select **File**, and select **Open**.  
 2.  In the **Open File** dialog, select the management pack that contains the form that you want to customize, and select **Open**. For example, select the Change Management Library management pack. The path might be *Authoring Tool installation drive*\\Program Files \(x86\)\\Microsoft System Center\\Service Manager \<version\> Authoring\\Library\\ServiceManager.ChangeManagement.Library.mp.  
 3.  Locate the form that you want to customize using the **Form Browser** or the **Management Pack Explorer**, as follows:  
      Using the **Form Browser**:  
     1.  In the **Form Browser**, select **All Management Packs** or select the management pack that contains the form that you want to customize, such as the **Service Manager Change Management Library** management pack.  
-    2.  Right\-click the form that you want to customize, such as the form that ends with **ChangeRequestForm**, and select **View**.  
+    2.  Right-click the form that you want to customize, such as the form that ends with **ChangeRequestForm**, and select **View**.  
     3.  In the authoring pane, select **Customize**.  
      Using the **Management Pack Explorer**:  
         1.  In the **Management Pack Explorer** pane, select the management pack that contains the form that you want to customize, such as the **Service Manager Change Management Library** management pack.  
-        2.  Expand **Forms**, and then right\-click the form that you want to customize, such as the form that ends with **ChangeRequestForm**.  
+        2.  Expand **Forms**, and then right-click the form that you want to customize, such as the form that ends with **ChangeRequestForm**.  
         3.  Select **Customize**.  
 4.  In the **Target Management Pack** dialog, select an unsealed management pack in which to save this customization, and select **OK**.  
-    In the **Management Pack Explorer** pane, a new form item appears in the **Forms** list of the management pack that you specified as the targeted management pack. The name of the new form ends with the string **\(Customized\)**.  
-5.  In the authoring pane, you can rearrange the location of controls on the form to change the appearance and behavior of the form. Also, you can add controls to the form by doing the following:  
+    In the **Management Pack Explorer** pane, a new form item appears in the **Forms** list of the management pack that you specified as the targeted management pack. The name of the new form ends with the string **(Customized)**.  
+5.  In the authoring pane, you can rearrange the location of the controls on the form to change the appearance and behavior of the form. Also, you can add controls to the form by doing the following:  
     -   Drag controls from the **Form Customization Toolbox** pane.  
     -   Drag specific properties from the **Class Browser** pane. This will automatically create and bind the control according to the property that you dragged.  
 
@@ -91,9 +91,9 @@ Use the following procedure to customize an existing form.
 If you defined a new custom class to extend Service Manager, you might have to create a custom form to interact with that class. You can use the Service Manager Authoring Tool to create a form using either of the following methods:  
 
 -   Start from a base class.  
--   Load a custom Windows Presentation Foundation \(WPF\) form that was initially developed by the Microsoft Visual&nbsp;Studio development system, and continue to customize that form in the Authoring Tool.  
+-   Load a custom Windows Presentation Foundation (WPF) form that was initially developed by the Microsoft Visual Studio development system, and continue to customize that form in the Authoring Tool.  
 
-The Authoring Tool includes form controls, such as the **Check Box**, **Date Picker**, **Tab Control**, and **Tab Item**, that you can add to the form. You can access these controls from the **Form Customizations Toolbox**. Typically, you bind the form controls to specific properties of the form's base class. Therefore, using either method you must first select a base class for the form to be associated with. For more information about the controls that you can add to a form, see the previous sections in this article, such as [How to Add a Check Box Control to a Form in the Authoring Tool](#to-add-a-check-box-control-to-a-form), and [How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool](#add-a-tab-control-and-tab-item-controls-to-a-form).  
+The Authoring Tool includes form controls, such as the **Check Box**, **Date Picker**, **Tab Control**, and **Tab Item**, that you can add to the form. You can access these controls from the **Form Customizations Toolbox**. Typically, you bind the form controls to specific properties of the form's base class. Therefore, using either method you must first select a base class for the form to be associated with. For more information about the controls that you can add to a form, see the previous sections in this article, such as [How to Add a Check Box Control to a Form in the Authoring Tool](#add-a-check-box-control-to-a-form) and [How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool](#add-a-tab-control-and-tab-item-controls-to-a-form).  
 
 The following sections describe how to create a new form in the Authoring Tool.  
 
@@ -102,11 +102,11 @@ The following sections describe how to create a new form in the Authoring Tool.
 Use the following procedure to create a simple form from a base class.  
 
 > [!NOTE]  
->  When you create a form from a base class, the Authoring Tool doesn't support advanced capabilities. For example, there's no support for code\-behind, complex rules such as field interdependency or calculated values.  
+>  When you create a form from a base class, the Authoring Tool doesn't support advanced capabilities. For example, there's no support for code-behind, complex rules such as field interdependency or calculated values.  
 
-#### To create a new form from a base class  
+#### Create a new form from a base class  
 
-1.  In the **Management Pack Explorer**, expand the management pack in which you want to store the new form. Right\-click **Forms**, and select **Create**.  
+1.  In the **Management Pack Explorer**, expand the management pack in which you want to store the new form. Right-click **Forms**, and select **Create**.  
 2.  In the **Base class** dialog, select the base class for the form. You can narrow your search by selecting a specific management pack, or you can leave the default **All Management Packs**. Select **OK**.  
 3.  If you selected a sealed management pack in step 1, the **Target Management Pack** dialog appears. Select an unsealed management pack in which to store the form, and select **OK**.  
 4.  In the **Create form** dialog, in the **Internal name** box, enter a name for the form, and select **Create**.  
@@ -121,9 +121,9 @@ Later, to use the customized form in Service Manager, after you complete all cus
 
 Use the following procedure to load a custom WPF form assembly file into the Service Manager and customize that form.  
 
-#### To create a new form that is based on a custom WPF form  
+#### Create a new form that is based on a custom WPF form  
 
-1.  In the **Management Pack Explorer**, expand the management pack in which you want to store customizations to the form. Right\-click **Forms**, and select **Add Custom**.  
+1.  In the **Management Pack Explorer**, expand the management pack in which you want to store customizations to the form. Right-click **Forms**, and select **Add Custom**.  
 2.  In the **Base class** dialog, select the base class for the form. You can narrow your search by selecting a specific management pack, or keep the default **All Management Packs**. Select **OK**.  
 3.  If you selected a sealed management pack in step 1, the **Target Management Pack** dialog appears. Select an unsealed management pack in which to store the form, and select **OK**.  
 4.  In the **Add custom form** dialog, enter a name in the **Internal name** box. In the **Assembly** box, select the assembly file that contains the custom form that you want to load, and in the **Type** box, select the name of the form from the assembly file that you want to load. Select **Create**. The form that you selected is now displayed in the authoring pane.  
@@ -137,12 +137,12 @@ A **Check Box** control in the Service Manager Authoring Tool presents an option
 
 Use the following procedure to add a **Check Box** control to a form.  
 
-### To add a Check Box control to a form  
+### Add a Check Box control to a form  
 
-1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
+1.  Ensure that the **Form Customization Toolbox** pane is open and that the form you want to customize is open in the authoring pane.  
 2.  Drag the **Check Box** icon from the **Form Customization Toolbox** pane to the form. Select the **Check Box** control on the form.  
 3.  In the **Details** pane, select the **Content** property and set its value to text that will be displayed on the check box.  
-4.  In the **Details** pane, select the **Binding Path** property, and select the ellipsis button (**...**). In the **Binding Path** dialog, expand the classes, and then select a **Boolean** property for the control to bind to. 
+4.  In the **Details** pane, select the **Binding Path** property, and select the ellipsis button (**...**). In the **Binding Path** dialog, expand the classes, and then select a **Boolean** property for the control to bind to.
     > [!NOTE]
     > The **Content** property is automatically set to the display name of the property that the control is bound to.  
 5.  Select any other property, such as **Font Family**, in the **Details** pane to customize the properties of the **Check Box** control.  
@@ -154,7 +154,7 @@ A **Date Picker** control in the Service Manager Authoring Tool is used for disp
 
 Use the following procedure to add a **Date Picker** control to a form.  
 
-### To add a Date Picker control to a form  
+### Add a Date Picker control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Date Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **Date Picker** control on the form.  
@@ -168,7 +168,7 @@ An **Image** control in the Service Manager Authoring Tool is used for displayin
 
 Use the following procedure to add an **Image** control to a form.  
 
-### To add an Image control to a form  
+### Add an Image control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Image** icon from the **Form Customization Toolbox** pane to the form.  
@@ -184,12 +184,12 @@ A **Label** control is used in the Service Manager Authoring Tool for displaying
 
 Use the following procedure to add a **Label** control to a form.  
 
-### To add a Label control to a form  
+### Add a Label control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Label** icon from the **Form Customization Toolbox** pane to the form. Select the **Label** control on the form.  
 3.  In the **Details** pane, select the **Binding Path** property. Select the ellipsis button (**...**), and then in the **Binding Path** dialog, select the class property that you want the **Label** control to bind to.  
-     Alternatively, if you want the **Label** control to display a static string, select the **Content** property and enter a string to replace the default Label\_1 string. It will be displayed on the form.  
+     Alternatively, if you want the **Label** control to display a static string, select the **Content** property and enter a string to replace the default Label_1 string. It will be displayed on the form.  
 4.  Select any other property in the **Details** pane to customize properties of the **Label** control.  
 5.  Select **File**, and select **Save All** to save the custom form to a management pack.  
 
@@ -203,13 +203,13 @@ To add list items to a newly created list, you must use the Service Manager cons
 
 Use the following procedure to add a **List Picker** control to a form.  
 
-### To add a List Picker control to a form  
+### Add a List Picker control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **List Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **List Picker** control on the form.  
 3.  In the **Details** pane, select the **List type** property, and select the ellipsis button (**...**). In the **Select a list** dialog, select the list of items that will populate the **List Picker** control that you're creating. Select a list from the **Available lists** list.  
      Select **OK**.  
-4.  Select any other property, such as **Width** or **Height**, in the **Details** pane to customize other properties of the **List Picker** control.  
+4.  Select any other property, such as **Width** or **Height** in the **Details** pane to customize other properties of the **List Picker** control.  
 5.  Select **File**, and select **Save All** to save the custom form to a management pack.  
 
 ## Add a panel control to a form
@@ -229,7 +229,7 @@ A **Single Instance Picker** control in the Service Manager Authoring Tool is a 
 
 Use the following procedure to add a **Single Instance Picker** control to a form.  
 
-### To add a Single Instance Picker control to a form  
+### Add a Single Instance Picker control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Single Instance Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **Single Instance Picker** control on the form.  
@@ -243,18 +243,18 @@ A **Tab Control** control, combined with **Tab Item** controls, is used for arra
 
 Use the following procedures to add a **Tab Control** control and a **Tab Item** control to a form.  
 
-### To add a Tab Control control to a form  
+### Add a Tab Control control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Tab Control** icon from the **Form Customization Toolbox** pane to the form. Select the **Tab Control** control on the form.  
 3.  Select any property in the **Details** pane to customize the properties of the **Tab Control** control.  
 4.  Select **File**, and select **Save All** to save the custom form to a management pack.  
 
-### To add a Tab Item control to a form  
+### Add a Tab Item control to a form  
 
 1.  Add a **Tab Control** control as described in the previous procedure, and then select it on the form.  
 2.  Drag the **Tab Item** icon from the **Form Customization Toolbox** pane, and drop it on the **Tab Control** control that it should be associated with.  
-3.  Right\-click the **Tab Item** control, and select **Edit Content**. Enter the text that you want to appear as the label on the **Tab Item**. Select any property in the **Details** pane to customize other properties of the **Tab Item** control.  
+3.  Right-click the **Tab Item** control, and select **Edit Content**. Enter the text that you want to appear as the label on the **Tab Item**. Select any property in the **Details** pane to customize other properties of the **Tab Item** control.  
 4.  Select **File**, and select **Save All** to save the custom form to a management pack.  
 
 ## Add a text box control to a form
@@ -263,7 +263,7 @@ A **Text Box** control is used in the Service Manager Authoring Tool for text di
 
 Use the following procedure to add a **Text Box** control to a form.  
 
-### To add a Text Box control to a form  
+### Add a Text Box control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Text Box** icon from the **Form Customization Toolbox** window to the form. Select the **Text Box** control on the form.  
@@ -278,11 +278,11 @@ Use the following procedure to add a **Text Box** control to a form.
 
 ## Add a user picker control to a form
 
-The **User Picker** control is a Service Manager custom control that is used for choosing a user from a drop\-down list of users. You can modify the properties of the **User Picker** control in the Service Manager Authoring Tool to customize characteristics such as the layout and the list of users to bind to.  
+The **User Picker** control is a Service Manager custom control that is used for choosing a user from a drop-down list of users. You can modify the properties of the **User Picker** control in the Service Manager Authoring Tool to customize characteristics such as the layout and the list of users to bind to.  
 
 Use the following procedure to add a **User Picker** control to a form.  
 
-### To add a User Picker control to a form  
+### Add a User Picker control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **User Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **User Picker** control on the form.  
@@ -292,4 +292,4 @@ Use the following procedure to add a **User Picker** control to a form.
 
 ## Next steps
 
-- [Customize the default incident form for the Authoring Tool sample scenario](customize-default-incident-form.md).
+[Customize the default incident form for the Authoring Tool sample scenario](customize-default-incident-form.md).
