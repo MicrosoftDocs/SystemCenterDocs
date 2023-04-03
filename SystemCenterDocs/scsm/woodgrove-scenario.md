@@ -77,7 +77,7 @@ The primary goal of the Woodgrove Bank customization scenario is to create a new
 2.  Select **File**, point to **Open**, and select **File**.  
 3.  In the **Open File** dialog, select the **Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml** file to open the management pack.  
 
-### Explore the "Automated Activity: Add Computer to AD Group" class  
+### Explore the Automated Activity: Add Computer to AD Group class  
 
 1.  In the Authoring Tool, if the **Class Browser** isn't visible, select **View**, and select **Class Browser**.  
 2.  Locate and expand the **Automated Activity: Add Computer to AD Group** class, and then view the class properties, such as **ComputerName** and **GroupName**.  
@@ -97,7 +97,7 @@ The second step in the Woodgrove Bank customization scenario is to customize the
 ### Customize the default Change Request form  
 
 1.  In the Authoring Tool, select **File**, point to **Open**, and select **File**. In the **Open File** dialog, locate the **ServiceManager.ChangeManagement.Library.mp** management pack. For example, the path to the management pack might be as follows:  
-     D:\Program Files (x86)\Microsoft System Center\Service Manager  Authoring\Library\ServiceManager.ChangeManagement.Library.mp.  
+     D:\Program Files (x86)\Microsoft System Center\Service Manager <version>  Authoring\Library\ServiceManager.ChangeManagement.Library.mp.  
      Select the management pack, and select **Open**.  
 2.  In the **Management Pack Explorer**, select the **Service Manager Change Management Library (sealed)** management pack, and then expand **Forms**. Right-click the form that ends with **ChangeRequestForm**, and select **Customize**.  
 3.  In the **Target Management Pack** dialog, select the **WoodGrove Automated Activity - Add Computer To AD Group** management pack, and select **OK**.  
