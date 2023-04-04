@@ -2,11 +2,11 @@
 title: Prepare for disaster recovery
 description: This article describes the steps that you must take for Service Manager disaster recovery before problems occur.
 manager: mkluck
-ms.custom: na, UpdateFrequency2
+ms.custom: na, UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/06/2019
+ms.date: 04/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -38,7 +38,7 @@ As a best practice, deploy your management servers and associated databases for 
 
 ## Back up Service Manager management servers
 
-When you deploy Service Manager, an encryption key is created and stored in the registry on the management servers. A matching encryption key is created in the associated databases. The encryption keys for the Service Manager and data warehouse management servers are stored in the Service Manager database. The matching encryption key for the data warehouse management server is stored in the DWStagingAndConfig database. By backing up the SQL&nbsp;Server databases, you back up the encryption key.  
+When you deploy Service Manager, an encryption key is created and stored in the registry on the management servers. A matching encryption key is created in the associated databases. The encryption keys for the Service Manager and data warehouse management servers are stored in the Service Manager database. The matching encryption key for the data warehouse management server is stored in the DWStagingAndConfig database. By backing up the SQL Server databases, you back up the encryption key.  
 
  In addition, the computer name of the management server and Self-Service Portal is stored in the associated databases. Regardless of whether you encounter a software or hardware failure of a management server or Self-Service Portal, your recovery process is based on restoring a computer that has the same computer name as the computer that failed.  
 
@@ -56,7 +56,7 @@ Your disaster recovery strategy for Service Manager depends on backing up the en
 
 You use the Encryption Key Backup or Restore Wizard to back up encryption keys on the management servers and Self-Service Portal. This wizard is located on the Service Manager installation media in the Tools\\SecureStorageBackup folder.  
 
-### To back up the encryption key  
+### Back up the encryption key  
 
 1.  Sign in to the computer that hosts the Service Manager management server of data warehouse management server by using an account that is a member of the Administrators group.  
 2.  In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.  
@@ -85,17 +85,17 @@ There are up to eight databases in a System Center - Service Manager environment
 
 The first four databases in this list need to connect and exchange data with the Service Manager and data warehouse management servers. Data is encrypted during these exchanges. On the management servers, the encryption keys are backed up and restored as necessary, as explained in this article. For the servers that host databases, the encryption keys are stored in the databases themselves.  
 
-If a computer that hosts a database fails, all you need for recovery is the ability to restore the databases, which include the encryption keys, to a computer with the same name as the original computer. Your disaster recovery strategy for the Service Manager databases should be based on procedures for general SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](/previous-versions/sql/sql-server-2008-r2/ms178094(v=sql.105)).  
+If a computer that hosts a database fails, all you need for recovery is the ability to restore the databases, which include the encryption keys, to a computer with the same name as the original computer. Your disaster recovery strategy for the Service Manager databases should be based on procedures for general SQL Server disaster recovery. For more information, see [Planning for Disaster Recovery](/previous-versions/sql/sql-server-2008-r2/ms178094(v=sql.105)).  
 
-As part of your disaster recovery preparation, you run a script to capture the Security log to preserve user role information for each database. After you deploy Service Manager and, if necessary, run the Data Warehouse Registration Wizard, you use the SQL&nbsp;Server Script Wizard to create a script that captures SQL&nbsp;Server logon permissions and object\-level permissions. Then, if you need to restore a new server for the Service Manager databases, you can use this script to recreate the necessary logon permissions and object\-level permissions.  
+As part of your disaster recovery preparation, you run a script to capture the Security log to preserve user role information for each database. After you deploy Service Manager and, if necessary, run the Data Warehouse Registration Wizard, you use the SQL Server Script Wizard to create a script that captures SQL Server logon permissions and object-level permissions. Then, if you need to restore a new server for the Service Manager databases, you can use this script to recreate the necessary logon permissions and object-level permissions.  
 
-### Enable common language runtime on SQL&nbsp;Server  
+### Enable common language runtime on SQL Server  
 
-During installation of the Service Manager database, Service Manager Setup enables common language runtime \(CLR\) on the computer that is running SQL&nbsp;Server. If you restore a Service Manager database to another computer running SQL&nbsp;Server, you must enable CLR manually. For more information, see [Enabling CLR Integration](/previous-versions/sql/sql-server-2008/ms131048(v=sql.100)).  
+During installation of the Service Manager database, Service Manager Setup enables common language runtime (CLR) on the computer that is running SQL Server. If you restore a Service Manager database to another computer running SQL Server, you must enable CLR manually. For more information, see [Enabling CLR Integration](/previous-versions/sql/sql-server-2008/ms131048(v=sql.100)).  
 
 ### Start the SQL Server Script wizard
 
-You can use the following procedure as part of your disaster recovery preparation steps for Service Manager to generate a script to capture SQL&nbsp;Server logon permissions and object\-level permissions. You perform this procedure on the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) and on the computers that host the following Service Manager and data warehouse databases:  
+You can use the following procedure as part of your disaster recovery preparation steps for Service Manager to generate a script to capture SQL Server logon permissions and object-level permissions. You perform this procedure on the computer that hosts SQL Server Reporting Services (SSRS) and on the computers that host the following Service Manager and data warehouse databases:  
 
 -   DWDataMart  
 -   DWRepository  
@@ -103,16 +103,16 @@ You can use the following procedure as part of your disaster recovery preparatio
 -   ServiceManager  
 -   ReportServer  
 
-#### To start the SQL&nbsp;Server Script wizard  
+#### To start the SQL Server Script wizard  
 
 1.  Using an account with Administrator privileges, sign in to the computer that hosts the Service Manager or data warehouse database.  
-2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Microsoft&nbsp;SQL&nbsp;Server&nbsp;2008&nbsp;R2**, and select **SQL&nbsp;Server Management Studio**.  
+2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Microsoft SQL Server 2008 R2**, and select **SQL Server Management Studio**.  
 3.  In the **Connect to Server** dialog, do the following:  
     1.  In the **Server Type** list, select **Database Engine**.  
     2.  In the **Server Name** list, select the server and the instance for your Service Manager database. For example, select **computer\\INSTANCE1**.  
     3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 4.  In the **Object Explorer** pane, expand **Databases**.  
-5.  Right\-click the database name, point to **Tasks**, and select **Generate Scripts**. For this example, select and hold **ServiceManager**, point to **Tasks**, and select **Generate Scripts**.  
+5.  Right-click the database name, point to **Tasks**, and select **Generate Scripts**. For this example, select and hold **ServiceManager**, point to **Tasks**, and select **Generate Scripts**.  
 6.  In the Generate and Publish Scripts Wizard, do the following:  
     1.  On the **Introduction** page, select **Next**.  
     2.  On the **Choose Objects** page, select **Select specific database objects**, and select **Select All**.  
@@ -140,15 +140,15 @@ Part of the disaster recovery plan for your Service Manager management server in
 
 ### Back up unsealed management packs
 
-You can use the Windows&nbsp;PowerShell command\-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that as part of your disaster recovery plan for Service Manager you can later import these management packs.  
+You can use the Windows PowerShell command-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that as part of your disaster recovery plan for Service Manager you can later import these management packs.  
 
 #### To back up unsealed management packs  
 
 1.  On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you will store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
-2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Windows&nbsp;PowerShell&nbsp;1.0**, select and hold **Windows&nbsp;PowerShell**, and select **Run as administrator**.  
+2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, select and hold **Windows PowerShell**, and select **Run as administrator**.  
 3.  In the Service Manager console, select **Administration**.  
 4.  In the **Tasks** pane, select **Start PowerShell Session**  
-5.  At the Windows&nbsp;PowerShell command prompt, enter the following command:  
+5.  At the Windows PowerShell command prompt, enter the following command:  
 
     ```  
     Get-SCSMManagementPack | where {$_.Sealed -eq $false}|Export-SCSMManagementPack -Path c:\mpbackup  
@@ -158,4 +158,4 @@ You can use the Windows&nbsp;PowerShell command\-line interface to identify and 
 
 ## Next steps
 
-- [Implement Service Manager disaster recovery](implement-disaster-recovery.md).
+[Implement Service Manager disaster recovery](implement-disaster-recovery.md).

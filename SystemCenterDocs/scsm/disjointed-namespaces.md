@@ -2,11 +2,11 @@
 title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
 manager: mkluck
-ms.custom: na, intro-deployment, UpdateFrequency3
+ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy23
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 04/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -61,4 +61,4 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 ## Next steps
 
-- Review [Learn about deploying the new Self Service portal and troubleshoot installation issues](learn-self-service-portal.md).
+Review [Learn about deploying the new Self Service portal and troubleshoot installation issues](learn-self-service-portal.md).

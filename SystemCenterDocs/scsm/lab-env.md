@@ -5,10 +5,10 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 01/23/2018
+ms.date: 04/04/2023
 ms.technology: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Set up a lab environment for upgrade testing
@@ -26,15 +26,15 @@ Many of the procedures in this article are lengthy and might take a considerable
 
 ## Restore the Service Manager database in the lab environment
 
-Use the following procedure to restore the production Service Manager database using Microsoft&nbsp;SQL&nbsp;Server&nbsp;2016.  
+Use the following procedure to restore the production Service Manager database using Microsoft SQL Server 2016.  
 
 
 1. After connecting to the appropriate instance of the Microsoft SQL Server Database Engine, in Object Explorer, select the server name to expand the server tree.  
-2. Expand **Databases**, and depending on the database, either select a user database or expand **System Databases** and select a system database.  
+2. Expand **Databases**, and depending on the database, either select a user database or expand **System Databases**, and select a system database.  
 3. Right-click the database, point to **Tasks**, and select **Restore**. The Back Up Database dialog appears.  
 4. Select **Database**, which opens the **Restore Database** dialog.  
 5. On the **General** page, the name of the restoring database appears in the **To database** list box. To create a new database, enter its name in the list box.  
-6. In the **To a point in time** text box, either retain the default \(Most recent possible\) or select a specific date and time by selecting the browse button, which opens the **Point in Time Restore** dialog. For more information, see [How to: Restore to a Point in Time \(SQL Server Management Studio\)](/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model).  
+6. In the **To a point in time** text box, either retain the default (Most recent possible) or select a specific date and time by selecting the browse button, which opens the **Point in Time Restore** dialog. For more information, see [How to: Restore to a Point in Time \(SQL Server Management Studio\)](/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model).  
 7. To specify the source and location of the backup sets to restore, select either **From database** or **From device**.  
 8. In the **Select the backup sets to restore** grid, select the backups to restore. For more information, see [Restore Database \(General Page\)](/sql/relational-databases/backup-restore/restore-database-general-page).  
 9. To view or select the advanced options, select **Options** in the **Select a page pane**.  
@@ -50,7 +50,7 @@ Use the following procedure to restore the production Service Manager database u
     - **Leave the database ready to use by rolling back the uncommitted transactions. Additional transaction logs cannot be restored. \(RESTORE WITH RECOVERY\)**  
 
       > [!NOTE]  
-      > Choose this option only if you're restoring all of the necessary backups at this time.  
+      > Choose this option only if you're restoring all the necessary backups at this time.  
 
     - **Leave the database non\-operational, and do not roll back the uncommitted transactions. Additional transaction logs can be restored. \(RESTORE WITH NORECOVERY\)**  
     - **Leave the database in read\-only mode. Undo uncommitted transactions, but save the undo actions in a standby file so that recovery effects can be reverted. \(RESTORE WITH STANDBY\)**  
@@ -101,7 +101,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 ### Configure the service account  
 
 1.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.  
-2.  Right\-click **Logins**, and select **New Login**  
+2.  Right-click **Logins**, and select **New Login**  
 3.  Perform the following procedures in the **Login - New** wizard:  
     1.  Select **Search**.  
     2.  Enter the username \(domain\\username\) for the service account for Service Manager database in the lab environment, select **Check Names**, and select **OK**.  
@@ -127,20 +127,20 @@ Use the following procedure to prepare the Service Manager database in the lab e
 ### Configure Service Manager tables  
 
 1.  In the **Object Explorer** pane, expand **Databases**, expand **ServiceManager**, and then expand **Tables**.  
-2.  Right\-click **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and select **Edit Top 200 Rows**.  
+2.  Right-click **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and select **Edit Top 200 Rows**.  
 3.  In the center pane, locate the column **SQLServerName\_43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**.  
 4.  In the first row and second rows of this column, enter the computer name of the computer hosting the Service Manager database in the lab environment. For named instances, enter computer name\\instance name.  
-5.  Right\-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and select **Edit Top 200 Rows**.  
+5.  Right-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and select **Edit Top 200 Rows**.  
 6.  In the center pane, locate the column **Server\_43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**.  
 7.  In the first row of this column, enter the computer name of the computer hosting the SQL Server for the Service Manager database in the lab environment. For named instances, enter computer name\\instance name.  
-8.  Right\-click **LFX.DataSource**, and select **Edit Top 200 Rows**.  
+8.  Right-click **LFX.DataSource**, and select **Edit Top 200 Rows**.  
 9. In the center pane, locate the column **DataSourceAddress**.  
 10. In the first row of this column, locate the entry that starts with **Data Source \= \<server name\>; Initial Catalog \= ServiceManager; Persist Security Info\=False**. Enter the name of the computer hosting SQL Server in the lab environment in place of **\<server name\>**.  
-11. Right\-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SdkResourceStore**, and select **Edit Top 200 Rows**.  
+11. Right-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SdkResourceStore**, and select **Edit Top 200 Rows**.  
 12. In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**.  
 13. In all the rows in this column, enter the name of the computer hosting the Service Manager management server in the lab environment.  
-14. Right\-click&nbsp;**\[dbo\].\[MT\_Microsoft$SystemCenter$ResourceAccessLayer$CmdbResourceStore\]**, and select&nbsp;**Edit Top 200 Rows**.  
-15. In all the rows, update the column&nbsp;**Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, enter the name of the SQL computer hosting the Service Manager database in the lab environment  
+14. Right-click **\[dbo\].\[MT\_Microsoft$SystemCenter$ResourceAccessLayer$CmdbResourceStore\]**, and select **Edit Top 200 Rows**.  
+15. In all the rows, update the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, enter the name of the SQL computer hosting the Service Manager database in the lab environment  
 16. In the toolbar, select **New Query**.  
 17. In the center pane, enter the following command, and select **Execute**.  
 
@@ -245,7 +245,7 @@ Use the following procedure to install a new data warehouse server in the lab en
 ### Install a data warehouse management server and data warehouse databases  
 
 1.  Sign in to the computer by using an account that has administrative rights.  
-2.  On the Service Manager installation media, double\-click the **Setup.exe** file.  
+2.  On the Service Manager installation media, double-click the **Setup.exe** file.  
 3.  On the **Microsoft System Center Service Manager 2016** page, select **Install a Service Manager data warehouse management server**.  
 4.  On the **Product registration** page, enter information in the boxes. In the **Product key** boxes, enter the product key you received with Service Manager, or alternatively, select **Install as an evaluation edition \(180 day trial\)?.** Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
 5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location in which the Service Manager data warehouse management server will be installed.  
@@ -253,7 +253,7 @@ Use the following procedure to install a new data warehouse server in the lab en
 7.  On the **Configure data warehouse databases** page, Service Manager checks the computer you're using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you're installing the data warehouse management server, and then select **Next**.  
 
     > [!WARNING]  
-    >  A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server.  
+    >  A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL Server.  
 
 8.  On the **Configure the data warehouse management group** page, follow these steps:  
     1.  In the **Management group name** box, enter a unique name for the group.  
@@ -348,7 +348,7 @@ Use the following procedure to register the newly installed data warehouse serve
     2.  In the **Tasks** pane, in the **Data Warehouse Jobs** area, select **Refresh**.  
     3.  In the **Data Warehouse Jobs** pane, select **MPSyncJobs**.  
     4.  In the **Tasks** pane, under **Synchronization**, select **Details**.  
-9. After the management packs have been deployed \(as determined in step 7\), ensure that the following five data warehouse jobs are displayed in the **Data Warehouse Jobs** pane:  
+9. After the management packs have been deployed (as determined in step 7), ensure that the following five data warehouse jobs are displayed in the **Data Warehouse Jobs** pane:  
 
     -   Extract\_\<Service Manager management group name\>  
     -   Extract\_\<data warehouse management group name\>  
@@ -363,4 +363,4 @@ Use the following procedure to register the newly installed data warehouse serve
 
 ## Next steps
 
-- [Run an upgrade](upgrade-environment.md)
+[Run an upgrade](upgrade-environment.md)
