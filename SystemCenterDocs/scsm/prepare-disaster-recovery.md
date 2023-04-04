@@ -144,7 +144,7 @@ You can use the Windows PowerShell command-line interface to identify and copy y
 
 #### To back up unsealed management packs  
 
-1.  On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you will store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
+1.  On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you'll store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
 2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, select and hold **Windows PowerShell**, and select **Run as administrator**.  
 3.  In the Service Manager console, select **Administration**.  
 4.  In the **Tasks** pane, select **Start PowerShell Session**  
