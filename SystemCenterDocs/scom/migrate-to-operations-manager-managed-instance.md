@@ -31,7 +31,7 @@ This article provides the process of migration from Operations Manager on-premis
 
 5. Configure Run-As account for management packs.  
 
-6. If you use multiple management servers in SCOM Managed Instance (preview), deploy a small set of pilot agents and verify failover behaviour between management servers in SCOM Managed Instance (preview).  
+6. If you use multiple management servers in SCOM Managed Instance (preview), deploy a small set of pilot agents and verify failover behavior between management servers in SCOM Managed Instance (preview).  
 
 7. Identify an application or service that is currently monitored by Operations Manager on-premises. Multihome its agents to start reporting to SCOM Managed Instance (preview) and Operations Manager on-premises and perform the following steps:
 
