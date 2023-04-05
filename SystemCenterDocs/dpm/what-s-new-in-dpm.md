@@ -185,7 +185,7 @@ With DPM 2019 UR4, you can restore previously backed up data even after DPM agen
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR5.
 
-For issues fixed and the installation instructions for UR5, see the KB article.
+For issues fixed and the installation instructions for UR5, see the [KB article](https://support.microsoft.com/help/5024231).
 
 ### Support for SQL Server 2022
 
