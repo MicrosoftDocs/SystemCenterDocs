@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
-ms.date: 03/14/2023
+ms.date: 04/11/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -202,6 +202,24 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 ### Support for vSphere 7.0
 
 DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
+
+### Support for Microsoft 365 SMTP
+
+DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm).
+
+### Increase maximum parallel online backups
+
+With DPM 2019 UR5 and MARS agent version 9249 and later, you can increase the number of maximum parallel online backup jobs from the default eight to a configurable number using the following registry keys (if your underlying hardware and network bandwidth can support it).
+  
+The following example increases the limit to 12 jobs:
+
+```
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Azure Backup\DbgSettings\OnlineBackup]
+“MaxParallelBackupJobs”=dword:0000000C 
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold] 
+"6e7c76f4-a832-4418-a772-8e58fd7466cb"=dword:0000000C
+```
 
 ::: moniker-end
 
