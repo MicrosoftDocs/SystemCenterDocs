@@ -8,6 +8,7 @@ ms.prod: system-center
 ms.date: 01/22/2018
 title: Simplify runbook authoring with global assets
 ms.technology: service-management-automation
+ms.custom: UpdateFrequency2
 ---
 
 # Simplify Service Management Automation runbook authoring with global assets

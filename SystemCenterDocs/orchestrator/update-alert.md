@@ -1,7 +1,7 @@
 ---
 title: Update Alert
 description: The Update Alert activity publishes all the data from the required and optional properties into published data.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

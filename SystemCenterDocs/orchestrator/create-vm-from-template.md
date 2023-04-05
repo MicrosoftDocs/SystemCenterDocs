@@ -1,7 +1,7 @@
 ---
 title: Create VM from Template
 description: The Create VM from Template activity is used to create a new virtual machine from the specified template.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

@@ -5,11 +5,11 @@ description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 02/15/2023
+ms.date: 04/11/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-whats-new
+ms.custom: UpdateFrequency.5, intro-whats-new
 ---
 
 

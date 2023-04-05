@@ -2,7 +2,7 @@
 title: System
 
 description: This article provides information about the tasks that you can do using System activities. 
-ms.custom: ""
+ms.custom: UpdateFrequency5
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -18,7 +18,7 @@ ms.assetid: 441c0d81-a1d5-4218-bbe8-54184f1deb62
 caps.latest.revision: 6
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # System
 

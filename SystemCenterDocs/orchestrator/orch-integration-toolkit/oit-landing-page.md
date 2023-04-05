@@ -2,12 +2,13 @@
 title: System Center - Orchestrator Integration Toolkit
 description: The Orchestrator Integration Toolkit is used to create new integrations for Orchestrator.
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ms.date: 02/02/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
+ms.custom: UpdateFrequency3
 ---
 
 # System Center - Orchestrator Integration Toolkit

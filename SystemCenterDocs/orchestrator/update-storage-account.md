@@ -1,8 +1,8 @@
 ---
 title: Update Storage Account
-description: The Update Storage Account activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Windows Azure.
-ms.custom: na
-ms.date: 05/08/2019
+description: The Update Storage Account activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Microsoft Azure.
+ms.custom: engagement-fy23, UpdateFrequency3
+ms.date: 01/30/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: cd7df37b-59f1-4e8f-ae04-7008c2806618
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Storage Account
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Update Storage Account** activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Windows Azure. It is part of the **Azure Storage** category activity.
+The **Update Storage Account** activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Microsoft Azure. It's part of the **Azure Storage** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Update Storage Account Required Properties
 
@@ -48,7 +48,7 @@ There are no optional properties for this runbook activity.
 | Label   | A label for the storage account.   | String   |
 | Description   | A description for the storage account.   | String   |
 | Geographic Replication Enabled | Enables or disables geo-replication on the specified storage account. | Boolean   |
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
+| Request ID   | The unique identifier of the request to Microsoft Azure.   | String   |
 
 ## Other Resources
 

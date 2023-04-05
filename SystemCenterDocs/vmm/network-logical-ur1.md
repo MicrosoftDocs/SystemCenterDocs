@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-2019'
+ms.custom: UpdateFrequency2
 ---
 
 # Set up logical networks in the VMM 2019 UR1 and later fabric

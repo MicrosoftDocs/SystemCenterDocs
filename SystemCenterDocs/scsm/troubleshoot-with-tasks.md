@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
+ms.custom: UpdateFrequency2
 ---
 
 # Troubleshoot computer problems with Service Manager tasks

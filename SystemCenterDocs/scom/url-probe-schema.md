@@ -4,26 +4,27 @@ title:  Microsoft.SystemCenter.WebApplication.UrlProbe
 description: This article details the schema for the System Center Operations Manager URL probe module.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 monikerRange: '>=sc-om-2019'
+ms.custom: UpdateFrequency5
 ---
 
 
 # Microsoft.SystemCenter.WebApplication.UrlProbe
 
-The **Microsoft.SystemCenter.WebApplication.UrlProbe** probe module connects to one or more URLs and returns **Microsoft.SystemCenter.WebApplication.WebApplicationData**. This data can then be used with other modules from the **Microsoft.SystemCenter.WebApplication.Library** to evaluate the health state of various aspects of the target web site.
+The **Microsoft.SystemCenter.WebApplication.UrlProbe** probe module connects to one or more URLs and returns **Microsoft.SystemCenter.WebApplication.WebApplicationData**. This data can then be used with other modules from the **Microsoft.SystemCenter.WebApplication.Library** to evaluate the health state of various aspects of the target website.
 
 ## Usage
 
-The primary function of **Microsoft.SystemCenter.WebApplication.UrlProbe** is to send a request to one or more URLs and report on the results. The format of the request is a complex type, and is used with other modules to evaluate the health state of the target URL. Because large numbers of requests can be made with a single probe, and because the results of the request can contain a large amount of data, the probe itself carries out some evaluation of the request before producing the output. For example, instead of just providing the status code from the queried URL as output, the module compares the status code against a specified range, and provides a success or failure code as output. The module can also match the content of the HTML that is returned by the request, for example, matching the word error to determine if an error page was returned. This evaluation performed by the module removes the need for complex expression matching logic in your rule or monitor.
+The primary function of **Microsoft.SystemCenter.WebApplication.UrlProbe** is to send a request to one or more URLs and report on the results. The format of the request is a complex type and is used with other modules to evaluate the health state of the target URL. Because large numbers of requests can be made with a single probe, and because the results of the request can contain a large amount of data, the probe itself carries out some evaluation of the request before producing the output. For example, instead of just providing the status code from the queried URL as output, the module compares the status code against a specified range and provides a success or failure code as output. The module can also match the content of the HTML that's returned by the request, for example, matching the word error to determine if an error page was returned. This evaluation performed by the module removes the need for complex expression matching logic in your rule or monitor.
 
 This module is often commonly triggered using [Microsoft.SystemCenter.WebApplication.PerProbe.Scheduler](/previous-versions/system-center/developer/hh442320%28v%3dmsdn.10%29).
 
-The **Microsoft.SystemCenter.WebApplication.UrlProbe** module is commonly used with a number of condition detection modules which are intended to evaluate its output. The module evaluates different aspects of the health of the URL based on parameters defined in the request and returns appropriate output for each.
+The **Microsoft.SystemCenter.WebApplication.UrlProbe** module is commonly used with a number of condition detection modules, which are intended to evaluate its output. The module evaluates different aspects of the health of the URL based on parameters defined in the request and returns the appropriate output for each.
 
 Some of those parameters evaluate directly to a health state. For these parameters, you would use three condition detection modules, each of which matches a specific integer output from the probe indicating a particular health state, as shown in the following table:
 
@@ -115,7 +116,7 @@ The **Microsoft.SystemCenter.WebApplication.UrlProbe** module supports the confi
 | _Requests_ | Complex Type | False | Collection of **Request** elements (see below). |
 | _TransactionResponseTimeWarningCriteria_ | **RequestEvaluationNumericCriteriaType** | False | Optional parameter. Specifies the response time at which to specify a warning. |
 | _TransactionResponseTimeErrorCriteria_ | **RequestEvaluationNumericCriteriaType** | False | Optional Parameter. Specifies the response time at which to specify an error. |
-| _PerformanceCollectionFrequencyInCycles_ | **Integer** | False | Optional Parameter. Specifies how many query intervals must be completed before each collection. If the value is 1, then the counters will be collected each time the browser session is run. If it is 2, then the counters will only be collected every second time the browser session is run, and so on. |
+| _PerformanceCollectionFrequencyInCycles_ | **Integer** | False | Optional Parameter. Specifies how many query intervals must be completed before each collection. If the value is 1, then the counters will be collected each time the browser session is run. If it's 2, then the counters will only be collected every second time the browser session is run, and so on. |
 
 ### Request element
 
@@ -135,9 +136,9 @@ The **Requests** element is a collection of one or more **Request** elements. Ea
 | _ThinkTime_ | **Integer** | Amount of time to wait between the request and collection of the body. |
 | _CheckInternalLinks_ | **Boolean** | Enables collection of the status of each internal link and includes internal links in the evaluation of the monitor for the request. An internal link is a link that refers to a location on the same page. |
 | _CheckExternalLinks_ | **Boolean** | Enables collection of the status of each external link and includes external links in the evaluation of the monitor for the request. An external link is a link that refers to a location outside the current page. |
-| _CheckResources_ | **Boolean** | If true, the monitor returns the status of the resources for the page. Instead of measuring each individual resource, the total of all resources are evaluated. If false, the resource monitor is not functional for the request. |
+| _CheckResources_ | **Boolean** | If true, the monitor returns the status of the resources for the page. Instead of measuring each individual resource, the total of all resources are evaluated. If false, the resource monitor isn't functional for the request. |
 | _RequestEvaluationCriteria_ | **RequestEvaluationCriteriaType** | A complex type that evaluates the data returned by the request (see below). |
-| _FormsAuthCredentials_ | **FormsAuthCredentialsType** | Complex type that consists of **CredentialName**,  **UserName**, and **Password** strings. |
+| _FormsAuthCredentials_ | **FormsAuthCredentialsType** | Complex type that consists of **CredentialName**, **UserName**, and **Password** strings. |
 
 ### RequestEvaluationCriteria element
 
@@ -217,9 +218,9 @@ The **CustomCriteria** element is of type **ExpressionType**.
 
 The **StatusCodeCriteria** element found in **LinksEvaluationCriteria** and **ResourcesEvaluationCriteria** is of type  **ListNumericRequestCriteriaType**. **ListNumericRequestCriteriaType** consists of a sequence of three elements: **ListNumericRequestMetric**, which can only be the string StatusCode, **Operator**, which is of  **CriteriaCompareType**, covered earlier, and a **Value**, which must be of type double.
 
-The key to creating a useful URL probe is in the **Request** element, and usually in the **NumericRequestMetric**. If you know what part of the web page you are trying to evaluate, you can choose the correct metric from the enumeration. However, be sure to select the correct category of metric. The metrics for link data, resource data, and total data are all aggregates, and are available for all three categories, so be sure to specify the correct category and ask for it in the correct part of the **Request** element.
+The key to creating a useful URL probe is in the **Request** element, and usually in the **NumericRequestMetric**. If you know what part of the web page you're trying to evaluate, you can choose the correct metric from the enumeration. However, ensure to select the correct category of metric. The metrics for link data, resource data, and total data are all aggregates, and are available for all three categories. So ensure to specify the correct category and ask for it in the correct part of the **Request** element.
 
-If you only want to evaluate the status code for a particular part of the page (base page, links), use the  **StatusCodeCriteria** element, which would look like this:
+If you only want to evaluate the status code for a particular part of the page (base page, links), use the **StatusCodeCriteria** element, which would look like this:
 
 ```
 <StatusCodeCriteria>

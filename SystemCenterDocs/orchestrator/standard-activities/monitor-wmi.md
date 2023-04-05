@@ -1,7 +1,7 @@
 ---
 title: Monitor WMI
 description: This article describes the functionality of Monitor WMI activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: d825cef7-e68a-4387-829e-c3602bed2b6a
 caps.latest.revision: 19
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Monitor WMI
 

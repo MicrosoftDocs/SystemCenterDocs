@@ -1,6 +1,6 @@
 ---
 description: Learn about the components of offline backup in DPM
-manager: vvithal
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -11,15 +11,16 @@ ms.technology: data-protection-manager
 ms.assetid: 87b6a324-15df-41ae-86a3-546901bdd369
 ms.author: jsuri
 monikerRange: 'sc-dpm-2019'
+ms.custom: UpdateFrequency2
 ---
 
 # Overview of offline backup in DPM
 
 This article gives an overview of offline backup and the offline backup modes that DPM supports.
 
-Initial full backups to Azure typically transfer large amounts of data online and require more network bandwidth when compared to subsequent backups that transfer only incremental changes. Remote offices or datacenters in certain geographies don't always have sufficient network bandwidth. For this reason, these initial backups take several days. During this time, the backups continuously use the same network that was provisioned for applications running in the on-premises datacenter.
+Initial full backups to Azure typically transfer large amounts of data online and require more network bandwidth compared to subsequent backups that transfer only incremental changes. Remote offices or datacenters in certain geographies don't always have sufficient network bandwidth. So, these initial backups take several days. During this time, the backups continuously use the same network that was provisioned for applications running in the on-premises datacenter.
 
-DPM supports offline backup, which transfers initial backup data offline, without the use of network bandwidth. Offline backup provides a mechanism to copy backup data onto physical storage devices. The devices are then shipped to a nearby Azure datacenter and uploaded onto a Recovery Services vault. This process ensures robust transfer of backup data without using any network bandwidth.
+DPM supports offline backup, which transfers initial backup data offline without the use of network bandwidth. Offline backup provides a mechanism to copy backup data onto physical storage devices. The devices are then shipped to a nearby Azure datacenter and uploaded onto a Recovery Services vault. This process ensures a robust transfer of backup data without using any network bandwidth.
 
 ## Offline backup options
 
@@ -35,11 +36,11 @@ You can do the Offline backup in two modes based on the ownership of the storage
 
 This mode is currently supported with the Microsoft Azure Recovery Services (MARS) Agent, in preview. This option takes advantage of [Azure Data Box](https://azure.microsoft.com/services/databox/) to ship Microsoft-proprietary, secure, and tamper-resistant transfer appliances with USB connectors to your datacenter or remote office. Backup data is directly written onto these devices. This option saves the effort required to procure your own Azure-compatible disks and connectors or to provision temporary storage as a staging location. Microsoft also handles the end-to-end transfer logistics, which you can track through the Azure portal.
 
-Here is the architecture to depict the movement of backup data.
+Here's the architecture to depict the movement of backup data.
 
-![Azure Backup Data Box architecture](./media/offline-backup-overview/azure-backup-databox-architecture.png)
+![Diagram showing the Azure Backup Data Box architecture.](./media/offline-backup-overview/azure-backup-databox-architecture.png)
 
-Here's the summary of architecture:
+Here's the summary of the architecture:
 
 - DPM directly copies backup data to these preconfigured devices.
 - You can then ship these devices back to an Azure datacenter.
@@ -52,11 +53,11 @@ For detailed procedure on how to use the offline backup using Azure Data Box, se
 
 In this scenario, Offline backup is done using the [Azure Import/Export service](/azure/storage/common/storage-import-export-service). You can transfer initial backup data to Azure by using your own Azure-compatible disks and connectors. This approach requires that you provision temporary storage known as the staging location and use prebuilt utilities to format and copy the backup data onto customer-owned disks.
 
-Here is the architecture to depict the movement of backup data.
+Here's the architecture to depict the movement of backup data.
 
-![Azure Backup Import/Export service architecture](./media/offline-backup-overview/azure-backup-import-export.png)
+![Diagram showing Azure Backup Import/Export service architecture.](./media/offline-backup-overview/azure-backup-import-export.png)
 
-Here's the summary of architecture:
+Here's the summary of the architecture:
 
 - Instead of sending the backup data over the network, DPM writes the backup data to a staging location.
 - The data in the staging location is written to one or more SATA disks by using a custom utility.

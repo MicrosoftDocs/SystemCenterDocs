@@ -1,7 +1,7 @@
 ---
 title: Deploy Service in System Center 2016
 description: The Deploy Service activity is used in a runbook to create a service using a specified service template.
-ms.custom: na, intro-deployment
+ms.custom: UpdateFrequency3, intro-deployment
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: dca5c7f8-2b28-4157-8a35-001545394336
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ROBOTS: noindex
 ---
 # Deploy Service in System Center 2016
 
 The Deploy Service activity is used in a runbook to create a service using a specified service template.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Deploy Service Required Properties
 
@@ -33,6 +33,6 @@ No optional properties are provided for this activity.
 
 No published data is provided for this activity.
 
-## Other Resources
+## Next steps
 
-[Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)
+[Design and build runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

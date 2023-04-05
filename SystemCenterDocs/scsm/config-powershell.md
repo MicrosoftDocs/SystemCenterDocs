@@ -2,7 +2,7 @@
 title: Configure PowerShell to run in Service Manager
 description: Before you use PowerShell with Service Manager, you need to prepare and then import Service Manager cmdlets.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

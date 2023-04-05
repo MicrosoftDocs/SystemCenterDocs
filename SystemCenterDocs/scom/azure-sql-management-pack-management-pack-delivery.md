@@ -28,10 +28,10 @@ After you download and unpack the **Microsoft.SqlServer.Azure.ManagementPack.msi
 
 ## Prerequisites
 
-Make sure to install the **.NET Framework 4.5.2** or higher before importing Management Pack for Azure SQL Database.
+Ensure to install the **.NET Framework 4.5.2** or higher before importing Management Pack for Azure SQL Database.
 
 >[!NOTE]
->Management Pack for Azure SQL Database does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+>Management Pack for Azure SQL Database doesn't support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
@@ -42,4 +42,4 @@ For more information on how to import management packs, see [How to import, expo
 The management pack supports monitoring of 2000 databases in a single Management Group.
 
 >[!NOTE]
->If you have been using an agnostic version of [Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md) prior to the upgrade, you can remove both the **Microsoft.SQLServer.Generic.Dashboards.mp** management pack and the **Microsoft.SQLServer.Generic.Presentation.mp** management pack after the upgrade. For a non-agnostic version of Management Pack for SQL Server, the removal of these management packs is not possible.
+>If you've been using an agnostic version of [Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md) prior to the upgrade, you can remove both the **Microsoft.SQLServer.Generic.Dashboards.mp** management pack and the **Microsoft.SQLServer.Generic.Presentation.mp** management pack after the upgrade. For a non-agnostic version of Management Pack for SQL Server, the removal of these management packs isn't possible.

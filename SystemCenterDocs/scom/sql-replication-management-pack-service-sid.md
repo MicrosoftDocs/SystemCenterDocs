@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 Management Pack for SQL Server Replication supports monitoring using Service SID. For more information on how to configure Service SID, see [Service SID in Management Pack for SQL Server](./sql-server-management-pack-service-sid.md).
 
-In addition to the steps described in the section above, make sure to provide the following grants:
+In addition to the steps described in the section above, ensure to provide the following grants:
 
 ```sql
 USE [msdb];

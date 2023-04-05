@@ -1,11 +1,11 @@
 ---
 ms.assetid: 1c4927e5-5053-47e1-bf35-9aca5b4793a2
 title: Monitoring configuration in Management Pack for SQL Server Analysis Services
-description: This section explains monitoring configurations in Management Pack for SQL Server Analysis Services
+description: This article explains monitoring configurations in Management Pack for SQL Server Analysis Services
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 01/12/2023
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -29,7 +29,7 @@ Analysis Services Instance includes the following server modes:
 - Tabular mode
 - Power Pivot for SharePoint mode
 
-For comparing model features see [determine the Server Mode of an Analysis Services Instance](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance) article.
+For comparing model features, see the [determine the Server Mode of an Analysis Services Instance](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance) article.
 
 ## Discovery of SQL Server Analysis Services Database
 
@@ -43,7 +43,7 @@ Analysis Services Database includes the following server modes:
 
 Management Pack for SQL Server Analysis Services allows you to exclude certain versions of SQL Server Analysis Services from monitoring.
 
-To exclude versions that you do not want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **SSAS: Multidimensional Instance Discovery**, **SSAS: PowerPivot Instance Discovery**, or **SSAS: Tabular Instance Discovery** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
+To exclude versions that you don't want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **SSAS: Multidimensional Instance Discovery**, **SSAS: PowerPivot Instance Discovery**, or **SSAS: Tabular Instance Discovery** discovery with the versions that you want to exclude. Use commas to specify multiple versions.
 
 For example, an override "2014,2016" instructs the management pack to skip instances of SQL Server Analysis Services 2014 and 2016.
 
@@ -53,7 +53,7 @@ For example, an override "2014,2016" instructs the management pack to skip insta
 
 Management Pack for SQL Server Analysis Services allows you to exclude certain editions of SQL Server Analysis Services instances from monitoring.
 
-To exclude editions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **SSAS: Multidimensional Instance Discovery**, **SSAS: PowerPivot Instance Discovery**, or **SSAS: Tabular Instance Discovery** discovery with the editions that you want to exclude. Use comma to specify multiple editions.
+To exclude editions that you don't want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **SSAS: Multidimensional Instance Discovery**, **SSAS: PowerPivot Instance Discovery**, or **SSAS: Tabular Instance Discovery** discovery with the editions that you want to exclude. Use commas to specify multiple editions.
 
 The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
 
@@ -93,22 +93,22 @@ Use commas to separate database names and asterisks to replace one or more chara
 |dbnotmon_sales|Monitored|
 |sales_dbnotmon|Monitored|
 
-If you have \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables monitoring of any database.
+If you've \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables the monitoring of any database.
 
 ## Instance Monitoring
 
-The following monitors are available for monitoring of SQL Server Analysis Services instances.
+The following monitors are available for the monitoring of SQL Server Analysis Services instances.
 
 |Monitor|Description
 |-|-|
-|Service State|This monitor reports an alert when the Windows service for the SQL Server Analysis Services instance is not in the running state for a period that exceeds the specified threshold. <br /> <br /> **NOTE:** This monitor does not work on a clustered SQL Server Analysis Services instance.|
-|Memory Configuration Conflict with SQL Server|This monitor reports an alert if there is a SQL Server relational database engine process running on the server and the **TotalMemoryLimit** configuration for the SQL Server Analysis Services instance is higher than the specified threshold.|
+|Service State|This monitor reports an alert when the Windows service for the SQL Server Analysis Services instance isn't in the running state for a period that exceeds the specified threshold. <br /> <br /> **NOTE:** This monitor doesn't work on a clustered SQL Server Analysis Services instance.|
+|Memory Configuration Conflict with SQL Server|This monitor reports an alert if there's a SQL Server relational database engine process running on the server, and the **TotalMemoryLimit** configuration for the SQL Server Analysis Services instance is higher than the specified threshold.|
 |Total Memory Limit Configuration|This monitor reports an alert when the configured **TotalMemoryLimit** setting for the SQL Server Analysis Services instance exceeds the specified threshold, risking allocation of physical memory that is required for the operating system to perform basic functions (at least 2 GB).|
-|Memory Usage| This monitor reports a Warning alert when memory allocations by the SQL Server Analysis Services instance exceeds the configured warning threshold expressed as a percentage of the **TotalMemoryLimit** setting for the SQL Server Analysis Services instance. The monitor reports a Critical alert when these allocations exceed the configured critical threshold.|
+|Memory Usage| This monitor reports a Warning alert when memory allocations by the SQL Server Analysis Services instance exceed the configured warning threshold expressed as a percentage of the **TotalMemoryLimit** setting for the SQL Server Analysis Services instance. The monitor reports a Critical alert when these allocations exceed the configured critical threshold.|
 |Memory Usage on the Server|This monitor observes the memory usage by non-SSAS processes on the server to ensure that **TotalMemoryLimit** for Analysis Services is always available.|
 |Processing Pool I/O Job Queue length|This monitor reports an alert when the processing pool I/O job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
 |Processing Pool Job Queue length|This monitor reports an alert when the processing pool job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
-|Default Storage Free Space|This monitor reports a Warning alert when the available free space for the instance default storage drops below the **Warning Threshold** setting expressed as a percentage of the sum of estimated default storage folder (DataDir) size and free disk space. The monitor reports a Critical alert when the available space drops below **Critical Threshold**. The monitor does not take into account databases and partitions located in folders other than the default storage folder (DataDir).|
+|Default Storage Free Space|This monitor reports a Warning alert when the available free space for the instance default storage drops below the **Warning Threshold** setting expressed as a percentage of the sum of estimated default storage folder (DataDir) size and free disk space. The monitor reports a Critical alert when the available space drops below **Critical Threshold**. The monitor doesn't take into account databases and partitions located in folders other than the default storage folder (DataDir).|
 |CPU utilization|This monitor reports an alert if the CPU usage by the SQL Server Analysis Services process is high.|
 
 ## Database Monitoring
@@ -121,7 +121,7 @@ The following monitors are available for monitoring of SQL Server Analysis Servi
 |Database Free Space|This monitor reports a Warning alert when the available disk space for the SQL Server Analysis Services database storage folder drops below the **Warning Threshold** setting expressed as a percentage of the sum of the estimated database storage folder size and disk free space. The monitor reports a Critical alert when the available space drops below the **Critical Threshold** setting.|
 |Blocking Duration|This monitor report an alert if at least one session is blocked longer than the configured threshold.|
 |Blocking Session Count|This monitor alerts when the number of sessions that are blocked for a period longer than the **WaitMinutes** setting exceeds the threshold.|
-|Database VertiPaq Size|This monitor reports a warning when the amount of VertiPaq memory consumed by SQL Server Analysis Services tabular databases exceeds the 'Warning Threshold' override (specified in GB). In cases when tabular databases consume more VertiPaq memory than it is allowed by the 'Critical Threshold' override, the monitor throws a critical alert.|
+|Database VertiPaq Size|This monitor reports a warning when the amount of VertiPaq memory consumed by SQL Server Analysis Services tabular databases exceeds the 'Warning Threshold' override (specified in GB). In cases when tabular databases consume more VertiPaq memory than it's allowed by the 'Critical Threshold' override, the monitor throws a critical alert.|
 
 ## Partition Monitoring
 
@@ -129,7 +129,7 @@ The following monitors are available for monitoring of health aspects of SQL Ser
 
 |Monitor|Description
 |-|-|
-|Partition Storage Free Space|This monitor reports a Warning alert when the available free space for the partition storage location drops below the **Critical Threshold** setting expressed as a percentage of the sum of the total size of the folder plus disk free space. The monitor reports a Critical alert when the available space drops below the Warning threshold. The monitor does not monitor available space for the default storage location for the SQL Server Analysis Services instance.|
+|Partition Storage Free Space|This monitor reports a Warning alert when the available free space for the partition storage location drops below the **Critical Threshold** setting expressed as a percentage of the sum of the total size of the folder plus disk free space. The monitor reports a Critical alert when the available space drops below the Warning threshold. The monitor doesn't monitor available space for the default storage location for the SQL Server Analysis Services instance.|
 
 ## Performance Collection Rules
 
@@ -205,19 +205,37 @@ if (-not(Test-Path $MPDebugKey)) {
 }
 
 Get-ChildItem -Path $searchPath |
-Out-GridView -OutputMode Multiple | # Remove this line if there is no need for GUI
+Out-GridView -OutputMode Multiple | # Remove this line if there's no need for GUI
 ForEach-Object {
     New-ItemProperty -LiteralPath $MPDebugKey -Name $_.PSChildName -Value '1' -PropertyType 'MultiString' -Force | Out-Null
 }
 ```
 
-The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
+The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You don't need to restart any service; changes are applied automatically.
+
+## Disabling Debugging
+
+To disable debugging, delete the keys added above or use the following PowerShell script to disable debugging in automated mode:
+
+```PowerShell
+$MPDebugKey = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Analysis Services MP'
+
+if (-not(Test-Path $MPDebugKey)) {
+    Write-Error 'The Microsoft Operations Manager or Monitoring Agent is not installed.' -ErrorAction Stop
+}
+
+(Get-Item -Path $MPDebugKey).property |
+Out-GridView -OutputMode Multiple | # Remove this line if there is no need for GUI
+ForEach-Object {
+    Remove-ItemProperty -LiteralPath $MPDebugKey -Name $_ -Force | Out-Null
+}
+```
 
 > [!NOTE]
-> Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+> Currently, you can enable extended logging for all SQL MP modules only. Extended logging of separate modules isn't supported yet.
 
 ## How Health Rolls Up
 
-The following diagram shows the roll up of the object health states.
+The following diagram shows the rollup of the object health states.
 
 ![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)

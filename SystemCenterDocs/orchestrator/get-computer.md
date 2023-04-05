@@ -1,7 +1,7 @@
 ---
 title: Get Computer
 description: You can use the Get Computer activity in a runbook to get the properties of a computer in Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: a2d782b3-10c2-453c-bb23-47ff4f7b0047
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Computer
