@@ -2,8 +2,8 @@
 ms.assetid: 
 title: Connect the Azure Monitor SCOM Managed Instance (preview) to Ops console
 description: This article describes how to connect the Azure Monitor SCOM Managed Instance (preview) to Ops console.
-author: v-pgaddala
-ms.author: v-pgaddala
+author: Farha-Bano
+ms.author: v-farhabano
 manager: jsuri
 ms.date: 02/13/2023
 ms.custom: UpdateFrequency.5
