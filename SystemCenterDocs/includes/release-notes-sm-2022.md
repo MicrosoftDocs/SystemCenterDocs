@@ -2,8 +2,8 @@
 description: include file to detail the release notes for Service Manager 2022
 manager:  mkluck
 ms.topic: include
-author:  v-pgaddala
-ms.author: v-pgaddala
+author:  Farha-Bano
+ms.author: v-farhabano
 ms.prod:  system-center
 ms.technology: service-manager
 keywords:
