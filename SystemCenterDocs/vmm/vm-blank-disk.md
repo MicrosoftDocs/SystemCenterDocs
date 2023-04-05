@@ -5,11 +5,11 @@ description: This article describes how to create and deploy VMs in the VMM fabr
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/12/2022
+ms.date: 04/05/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment
+ms.custom: intro-deployment, engagement-fy23
 ---
 
 

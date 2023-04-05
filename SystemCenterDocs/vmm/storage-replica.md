@@ -5,10 +5,11 @@ description: This article describes how to set up Storage Replica in the VMM fab
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 05/04/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy23
 ---
 
 # Manage Storage Replica in VMM
@@ -202,7 +203,7 @@ If you want to stop replication, you'll need to run this cmdlet at the source an
   ```
 
 
-## Learn more
+## Next steps
 
 - Learn more about [Storage Replica](/windows-server/storage/storage-replica/storage-replica-overview).
 - Learn about [allocating storage](hyper-v-storage.md) to Hyper-V hosts and clusters.

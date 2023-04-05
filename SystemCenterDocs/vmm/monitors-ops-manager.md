@@ -5,10 +5,11 @@ description: This article describes how to integrate VMM with Operations Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/06/2022
+ms.date: 04/05/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy23
 ---
 
 

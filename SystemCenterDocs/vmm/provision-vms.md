@@ -5,10 +5,11 @@ description: This article describes how to manage VMs in the VMM compute fabric
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/12/2022
+ms.date: 04/05/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy23
 ---
 
 
@@ -38,7 +39,7 @@ VMs can be provisioned using multiple methods:
 
 On a Hyper-V cluster, you can deploy a guest failover cluster that consists of multiple VMs and uses shared .vhdx files. VMM supports the following:
 
-You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if  Hyper-V uses Cluster Shared Volumes (CSVs) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage. Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS), as the location of the shared .vhdx files. No other storage types are supported, and third-party SMB storage isn't supported.
+You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if Hyper-V uses Cluster Shared Volumes (CSVs) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage. Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS), as the location of the shared .vhdx files. No other storage types are supported, and third-party SMB storage isn't supported.
 
 
 ## VM placement
@@ -58,7 +59,7 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 
 
 - VMM evaluates all hosts within a selected host group and any hosts contained in child host groups. Host ratings are calculated on a scale of 0 to 5 stars, where five stars indicate the highest rating. The ratings are based on default criteria that don't include all information. For example, network connection speed isn't taken into account.
-- Ratings are based on individual hosts, and not on the relative suitability of all available hosts. Ratings for one host don't change based on the ratings of the other hosts.
+- Ratings are based on individual hosts, and not on the relative suitability of all the available hosts. Ratings for one host don't change based on the ratings of the other hosts.
 - VMM calculates host ratings according to specific formulas, as described in the following table.
 
     - **CPU rating**:  [1 – ( CPU Utilization / (100 – CPU Reserve)) ] x CPU Weight
@@ -71,7 +72,7 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 - During automatic placement, VMM attempts to use the host assigned the highest rating. During manual placement, the host rating is shown so that you can select the appropriate host.
 
 ::: moniker range="<=sc-vmm-2019"
-- As of System Center 2012 SP1, you can select a host in VMM even if not all hosts have been rated. The selected host must have a positive number of stars.
+- As of System Center 2012 SP1, you can select a host in VMM even if not all the hosts have been rated. The selected host must have a positive number of stars.
 ::: moniker-end
 
 - VMM measures CPU, memory, disk, and network usage approximately every 10 minutes to recalculate an average rating that is an average of all the measurements taken that the last action that reset the host rating. Host ratings are reset when the following happens:

@@ -5,12 +5,12 @@ description: This article provides information about how to manage VMs with Azur
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 02/05/2018
+ms.date: 04/05/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: '>= sc-vmm-1801 <= sc-vmm-1807'
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Manage VMs using Azure AD-based authentication & authorization and region-specific Azure subscriptions
