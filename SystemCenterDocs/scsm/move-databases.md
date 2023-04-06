@@ -153,6 +153,7 @@ The following high-level steps are required to move the data warehouse databases
 
  Use the following procedures to locate the user accounts and instances of SQL Server that are used by the data warehouse management server.  
 
+
 # [Identify the SQL Server database and instance names used by the data warehouse management server](#tab/SQLServerDB) 
 
 1.  Sign in to the data warehouse management server as a user with administrative credentials.  
@@ -291,7 +292,6 @@ The following high-level steps are required to move the data warehouse databases
    9. Select **Cancel** twice to close the dialogs.  
 
    10. Repeat the steps above to note the Connection string and the User name for the DWDataMart and OMDataMart databases.  
-
 ---
 
 ### Stop Service Manager services  
