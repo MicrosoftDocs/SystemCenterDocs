@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 06/04/2023
+ms.date: 04/06/2023
 ms.technology: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23
@@ -80,7 +80,7 @@ Use the following procedure to disable the Service Manager connectors in the pro
 
 Use the following procedure to disable incoming and outbound E\-mail notifications in the production environment.  
 
-# [Disable outbound email notifications] (#tab/DisableOutbound)
+# [Disable outbound email notifications](#tab/DisableOutbound)
 
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Notifications**, and select **Channels**.  
@@ -88,7 +88,7 @@ Use the following procedure to disable incoming and outbound E\-mail notificatio
 4.  In the **Tasks** pane, under **E\-Mail Notification Channel**, select **Properties** to open the **Configure E\-Mail Notification Channel** dialog.  
 5.  Clear the **Enable e\-mail notifications** checkbox.  
 
-# [Disable incoming email notifications] (#tab/DisableIncoming)
+# [Disable incoming email notifications](#tab/DisableIncoming)
 
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Administration**, and select **Settings**.  
