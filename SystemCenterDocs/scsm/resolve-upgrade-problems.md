@@ -5,10 +5,10 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 01/23/2018
+ms.date: 06/04/2023
 ms.technology: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Troubleshoot upgrade issues
@@ -19,7 +19,7 @@ ms.custom: UpdateFrequency2
 
 ::: moniker-end
 
-This article helps you to troubleshoot upgrade issues in System Center – Service Manager.
+This article helps you troubleshoot upgrade issues in System Center – Service Manager.
 
  There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
 
@@ -28,11 +28,12 @@ This article helps you to troubleshoot upgrade issues in System Center – Servi
 - Failure occurs in an unpredictable manner before permanent changes are made to a management server.
 - Failure occurs in an unpredictable manner after permanent changes are made to a management server.
 - Failure occurs in an unpredictable manner after permanent changes are made to the database.
-- The upgrade might also fail as a result of Configuration service Startup timing out.
+
+The upgrade might also fail as a result of Configuration service Startup timing out.
 
 You can also work around configuration service startup issues after a failed upgrade.
 
-## Failure occurs during a prerequisite check
+# [Failure occurs during a prerequisite check](#tab/Phase1)
 
 Before the installation of Service Manager begins, a prerequisite check is made for certain requirements. If a condition is found in which Service Manager will continue to function, you receive a warning. Warnings are identified with an explanation point (!) in a yellow triangle. Conditions that have been identified as a Warning won't prevent you from installing Service Manager.
 
@@ -40,8 +41,7 @@ If a condition is found that is an absolute requirement for Service Manager, a f
 
 If either a warning or a failure indication appears, you can either cancel the installation and make the necessary changes, or make the appropriate changes and then select **Check prerequisites again** and continue with the installation. All failure conditions must be corrected before the installation or upgrade can proceed.
 
-
-## Failure occurs during predicted checks
+# [Failure occurs during predicted checks](#tab/Phase2)
 
 After any failures that were identified during the prerequisite check are corrected, pressing **Next** on the **Prerequisites** page starts the upgrade or installation of Service Manager. The system checks for the following conditions during the installation or upgrade process:
 
@@ -56,24 +56,25 @@ After any failures that were identified during the prerequisite check are correc
 If failures occur during these types of checks, you can make the appropriate changes. For example, specify a hard disk location with sufficient space, and then on the Warning page, select **Retry** to continue the installation.
 
 
-## Failure occurs in an unpredictable manner before permanent changes are made to the Management Server
+# [Failure occurs in an unpredictable manner before permanent changes are made to the Management Server](#tab/Phase3)
 
 During an installation or upgrade of Service Manager, an error may occur. If the error occurs before any permanent changes are made to the Service Manager management server or data warehouse management server—for example, before changes are made to the Structured Query Language (SQL) database or before management packs are imported—the error message that appears includes a **Retry** button. In these situations, you can correct the issue and then retry the installation or upgrade.
 
-
-## Failure occurs in an unpredictable manner after permanent changes are made to the Management Server
+# [Failure occurs in an unpredictable manner after permanent changes are made to the Management Server](#tab/Phase4)
 
 If an error occurs after permanent changes are made to the Service Manager management server or data warehouse management server—for example, after changes are made to the SQL database or after management packs are imported—the error message that appears doesn't include a Retry button. In this situation, you must reinstall the original version of the affected management server.
 
-In any case, you need the backup of the encryption key. For the Service Manager management server, the encryption key is available only if you made a backup before you started the upgrade. For more information, see "Back Up the Encryption Key" in the Disaster Recovery Guide for Service Manager.
+In any case, you need the backup of the encryption key. For the Service Manager management server, the encryption key is available only if you made a backup before you started the upgrade. For more information, see **Back Up the Encryption Key** in the Disaster Recovery Guide for Service Manager.
 
-## Failure occurs in an unpredictable manner after permanent changes are made to a database
+# [Failure occurs in an unpredictable manner after permanent changes are made to a database](#tab/Phase5)
 
 If an error occurs after permanent changes have been made—for example, after management packs are imported or any other time data is written into a database—the error message that appears doesn't include a Retry button.
 
-At this point, your only option is to select **Close** and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see "Backing Up Service Manager Databases" in the Disaster Recovery Guide for Service Manager.
+At this point, your only option is to select **Close** and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see **Backing Up Service Manager Databases** in the Disaster Recovery Guide for Service Manager.
 
-## Upgrade fails as a result of the Configuration service startup timing-out
+---
+
+## Upgrade fails as a result of the Configuration service startup timing out
 
 On some computers, Service Manager Setup fails and rolls back if it can't start the System Center Management Configuration service in a timely fashion. If this problem occurs, you might see the following entries in the install log:
 
@@ -111,7 +112,7 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 -   Increase the service time\-out setting on the computer that is running Setup.  
 
-### To disable signature verification  
+### Disable signature verification  
 
 1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
@@ -121,9 +122,9 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 4.  Attempt the upgrade again.  
 
-### To increase the service time\-out setting  
+### Increase the service time-out setting  
 
-1.  On the computer that is running Setup, create the following registry value to increase the service time\-out period:  
+1.  On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 
     ```  
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control   
