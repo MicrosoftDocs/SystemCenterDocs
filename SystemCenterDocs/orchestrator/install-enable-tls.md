@@ -24,7 +24,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Before you start
 
-- Orchestrator should be running version 2016 with Update Rollup 4 or later/1801/1807/2019.
+- Orchestrator should be running version 2016 with Update Rollup 4 or later, 1801, 1807, 2019, or 2022.
 - Security fixes should be up-to-date on the Orchestrator.
 - System Center updates should be up-to-date.
 - SQL Server 2012 Native client 11.0 or later should be installed on the Orchestrator management server. To download and install Microsoft SQL Server 2012 Native Client 11.0, see [this Microsoft Download Center webpage](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
@@ -45,11 +45,11 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
     a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
 
-    b.Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ .NetFrameword\v4.0.30319**.
+    b.Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.
 
     c. Create the DWORD  **SchUseStrongCrypto** [Value=1] under this key.
 
-    d. Locate the following registry subkey:   **<strong>HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NetFrameword\v4.0.30319</strong>**.
+    d. Locate the following registry subkey:   `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NetFramework\v4.0.30319`.
 
     e. Create the DWORD  **SchUseStrongCrypto** [Value=1] under this key.
 
@@ -71,7 +71,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
       | Path   |Registry key  | Value |
       | --- | --- | --- |
       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
-      | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
+      | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
 
 
 2. Set Windows to use only TLS 1.2.
