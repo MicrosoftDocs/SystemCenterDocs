@@ -22,9 +22,12 @@ ms.custom: UpdateFrequency2, engagement-fy23
 You might have to change the location of the Orchestrator database after installation, because you might want to separate the management server and database server, move the database to a larger server or a cluster, or just reconfigure the orchestration database based on required changes in your environment. You can use standard Microsoft SQL Server methods to move the existing database to another server, but then you must configure the Orchestrator features to connect to the new server. You must perform this configuration for the management server, the web service supporting the Orchestration console, and each runbook server as described in the following procedures.  
 
 ## Management server and runbook servers  
+
 You can use the Database Configuration utility to change the connection settings that the management server and runbook servers installed in your environment. The settings for these servers are stored in an encrypted file called **Settings.dat**. If you change your orchestration database settings, such as the port, user account access, or computer name, you must manually uninstall and reinstall all runbook servers, and then re-run the Database Configuration utility on the management server and all runbook servers.  
 
 ### Change the database settings for the management server and runbook servers  
+
+Follow these steps to change the database settings for the management server and runbook servers:
 
 1. On the management server, select **Start**, point to **All Programs**, select **Microsoft System Center \<version\>**, select **Orchestrator**, and then select **Data Store Configuration**.  
 2. In the **Server** box, enter the name of the server that is hosting the database by using the format **\<server\>\\<instance\>,\<port\>**. You can select the ellipsis button **(...)** to select the computer. You don't have to include the instance if the Orchestrator database is installed on the default instance. You don't have to include the port if the SQL Server is usually installed on the default port 1433.  
@@ -45,6 +48,7 @@ You can use the Database Configuration utility to change the connection settings
 7. Select **Finish**.  
 
 ## Web Service  
+
 The web service supporting the Orchestration console doesn't use the **Settings.dat** file. To change the database settings for the web service, you must modify the `web.config` file on the Internet Information Services (IIS) server.
 
 ::: moniker range="<=sc-orch-2019"
@@ -52,6 +56,8 @@ You can use **IIS Manager** to modify the file, but you must first decrypt it by
 ::: moniker-end  
 
 ### Change the database settings for the Orchestrator web service  
+
+Follow these steps to change the database settings for the Orchestrator web service:
 
 ::: moniker range="<=sc-orch-2019"
 1.  Sign in with administrative credentials to the computer with the Orchestration console installed.  

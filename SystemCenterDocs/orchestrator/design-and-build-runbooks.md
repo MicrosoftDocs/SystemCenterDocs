@@ -62,6 +62,8 @@ You can change the default size of each activity icon from small to large by sel
 
 ## Start a runbook in the Designer
 
+Follow these steps to start a runbook in the Designer:
+
 1.  In the **Connections** pane, select the **Runbooks** folder to see the available runbooks.  
 
 2.  In the Design workspace, select a runbook tab.  
@@ -76,7 +78,9 @@ You can change the default size of each activity icon from small to large by sel
 
 7.  Select **Start**.  
 
-## Stop a job from the Runbook Designer  
+## Stop a job from the Runbook Designer
+
+Follow these steps to stop a job from the Runbook Designer:  
 
 1.  Select the **Monitor Runbook** tab.  
 
@@ -93,7 +97,9 @@ After you build a runbook, you can test it before it's run in production. To tes
 > [!IMPORTANT]  
 > Note that the account used to start the runbook must have permission on the local computer to run successfully. These permission requirements also apply when testing the runbook with the Runbook Tester. To successfully test your runbook, start the Runbook Designer **as Administrator**. By association, the Runbook Tester runs **as Administrator** and uses the higher-level security token.
 
-### Test a runbook  
+### Test a runbook
+
+Follow these steps to test a runbook:
 
 1.  In the **Runbook Designer**, open the runbook, and on the menu bar, select **Runbook Tester**.  
 
@@ -106,6 +112,8 @@ After you build a runbook, you can test it before it's run in production. To tes
 4.  View the **Log** pane to see the completion status of each activity. To view the details and Published Data from an activity, select the activity and select **Show Details**.  
 
 ### Set a breakpoint  
+
+Follow these steps to set a breakpoint:
 
 1.  Select the activity on which to set the breakpoint.  
 

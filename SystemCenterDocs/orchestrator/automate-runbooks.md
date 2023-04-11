@@ -45,6 +45,8 @@ Use the following procedures to create, insert, and organize variables.
 
 # [Create a variable](#tab/Create)  
 
+Follow these steps to create a variable:
+
 1.  In the **Connections** pane in the Runbook Designer, expand the **Global Settings** folder, and then select the **Variables** folder.  
 
 2.  Select and hold the **Variables** folder or a subfolder of the **Variables** folder to select **New**, and then select **Variable** to open the **New Variable** dialog.  
@@ -66,6 +68,8 @@ Use the following procedures to create, insert, and organize variables.
 
 # [Insert a variable in an activity](#tab/Insert)
 
+Follow these steps to insert a variable in an activity:
+
 1.  Select and hold the applicable activity from your runbook to select **Properties**, and then select the **Details** tab to open the activities properties dialog.  
 
 2.  In a text box, to open a menu, right-click to select **Subscribe**, and then select **Variable** to open the **Select a Variable** dialog.  
@@ -77,6 +81,8 @@ Use the following procedures to create, insert, and organize variables.
     When the activity runs, the placeholder is replaced with the value of the variable.  
 
 # [Organize variables](#tab/Organize)
+
+Follow these steps to organize variables:
 
 1.  You can group variables into folders to organize them. To create a folder, select and hold the **Variables** folder to select **New**, and then select **Folder**.  
 

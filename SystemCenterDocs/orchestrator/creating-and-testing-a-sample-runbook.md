@@ -27,10 +27,9 @@ The following article describes how to create and test a sample runbook. The pur
 
 The runbook starts with a **Monitor File** activity to wait for the text file to be created. It then uses the **Copy File**, **Read Line**, **Append Line**, and **Delete File** activities to perform the other functions. A **Junction** activity is used to coordinate the activities so that the **Copy File** and **Append Line** activities are both completed before the source file is deleted.  
 
-## Create the runbook  
-Use the following procedures to create the runbook by using the required activities.  
+## Create the runbook
 
-### To create a runbook  
+Use the following procedures to create the runbook by using the required activities.  
 
 1.  Select **Start**, point to  **All Programs**, select **Microsoft System Center 2016**, select **Orchestrator**, and then select **Runbook Designer**.  
 
@@ -46,7 +45,9 @@ Use the following procedures to create the runbook by using the required activit
 
 You've created a new runbook and are ready to begin adding and configuring activities.  
 
-### To add and configure a Monitor File activity  
+### Add and configure a Monitor File activity  
+
+Follow these steps to add and configure a Monitor File activity:
 
 1.  With the newly created **Append and Copy Workflow** runbook open, in the **Activities** pane, expand the **File Management** category.  
 
@@ -72,7 +73,9 @@ You've created a new runbook and are ready to begin adding and configuring activ
 
 The **Monitor File** activity is created and configured to watch for any new text files that are created in the C:\\Drop folder.  
 
-### To add additional activities to the runbook  
+### Add additional activities to the runbook 
+
+Follow these steps to add additional activities to the rubook: 
 
 1.  In the **Activities** pane, expand the **File Management** category.  
 
@@ -88,7 +91,9 @@ The **Monitor File** activity is created and configured to watch for any new tex
 
 By adding both the **Read Line** activity and the **Copy File** activity, you've created a workflow.  
 
-### To configure the Copy File activity  
+### Configure the Copy File activity  
+
+Follow these steps to configure the Copy File activity:
 
 1.  In the **Append and Copy Workflow** runbook, select and hold the **Copy File** activity to select **Properties**.  
 
@@ -104,7 +109,9 @@ By adding both the **Read Line** activity and the **Copy File** activity, you've
 
 The **Copy File** activity is now configured to copy files from the source folder to the destination folder.  
 
-### To configure the Read Line activity  
+### Configure the Read Line activity  
+
+Follow these steps to configure the Read Line activity:
 
 1.  In the **Append and Copy Workflow** runbook, select and hold the **Read Line** activity to select **Properties**.  
 
@@ -122,7 +129,9 @@ The **Copy File** activity is now configured to copy files from the source folde
 
 The Read Line activity is now configured.  
 
-### To add an Append Line activity  
+### Add an Append Line activity 
+
+Follow these steps to add an Append Line activity: 
 
 1.  In the **Activities** pane, expand the **Text File Management** category.  
 
@@ -144,7 +153,9 @@ The Read Line activity is now configured.
 
 The **Append File** activity is now configured to append files to the **Masterlog.txt** file.  
 
-### To synchronize branches of a runbook  
+### Synchronize branches of a runbook  
+
+Follow these steps to synchronize the branches of a runbook:
 
 1.  In the **Activities** pane, expand the **Runbook Control** category.  
 
@@ -162,7 +173,9 @@ The **Append File** activity is now configured to append files to the **Masterlo
 
 The **Junction** activity is configured to coordinate the workflow so that no further activities run until both the **Copy File** activity and **Append Line** activity finish.  
 
-### To add and configure the Delete File activity  
+### Add and configure the Delete File activity  
+
+Follow these steps to add and configure the Delete File activity
 
 1.  In the **Activities** pane, expand the **File Management** category.  
 
@@ -187,7 +200,7 @@ The **Append and Copy Workflow** runbook is now completed. It should look simila
 ## Test the runbook  
 You can test the runbook by using the Runbook Tester. This tool lets you run the entire runbook and inspect the completion status and output of each activity. The Runbook Tester runs the activities, so you must first create the folders specified for the runbook.  
 
-### To test the runbook  
+Follow these steps to test the runbook:
 
 1.  Create a folder on the runbook server called C:\\Drop.  
 
@@ -209,4 +222,4 @@ You can test the runbook by using the Runbook Tester. This tool lets you run the
 
 ## Next steps
 
-- See the [Example Runbook: Monitor a folder with a runbook](monitor-a-folder-within-a-runbook.md).
+See the [Example Runbook: Monitor a folder with a runbook](monitor-a-folder-within-a-runbook.md).

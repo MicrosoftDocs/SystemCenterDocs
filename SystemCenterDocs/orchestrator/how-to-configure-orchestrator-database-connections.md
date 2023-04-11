@@ -41,10 +41,12 @@ In contrast, `DBconfig` only creates a new database; it doesn't configure the se
 
 ## Create a new database on a new database server  
 
+Follow these steps to create a new database on a new database server:
+
 1.  Run the Orchestrator Setup Wizard, and install a new management server.  
 2.  On the **Configure the database server** page in the setup wizard, point to the new database server.  
 3.  After you add a new DB server to your deployment, you must also run `permissionsconfig`, and then export and import the service master key to the new database server.  
 
 ## Next steps
 
-- Learn more about how to change the Orchestrator database at [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).
+Learn more about how to change the Orchestrator database at [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).

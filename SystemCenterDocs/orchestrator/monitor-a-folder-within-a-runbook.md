@@ -30,7 +30,9 @@ This article shows you how to create a simple runbook that monitors a folder for
 ## Create and test a monitor runbook  
 The procedures to create, configure, and test a simple runbook that monitors a folder are described below.  
 
-### Create the workflow  
+### Create the workflow 
+
+Follow these steps to create a workflow: 
 
 1.  In the Runbook Designer **Connections** pane, select and hold the **Runbooks** folder to select **New**, and then select **Runbook**.  
 
@@ -55,6 +57,8 @@ The procedures to create, configure, and test a simple runbook that monitors a f
 11. Select the smart link arrow, and then drag it to the **Invoke Runbook** activity.  
 
 ## To configure the workflow  
+
+Follow these steps to configure the workflow:
 
 1.  In the **Runbook Designer** Design workspace, double\-click the **Monitor Folder** activity.  
 
@@ -105,6 +109,8 @@ The procedures to create, configure, and test a simple runbook that monitors a f
 
 ## Modify runbook settings  
 
+Follow these steps to modify the runbook settings:
+
 1.  Above the **Runbook Designer** Design workspace, select and hold the **Monitor Runbook** tab to select **Properties**.  
 
 2.  In the **Monitor Runbook Properties** dialog, select the **Logging** tab, and then select both **Store Activity-specific Returned Data** and **Store Common Returned Data**.  
@@ -120,6 +126,8 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 ### Prepare your computer  
 
+Follow these steps to prepare your computer:
+
 1.  Select and hold **Start** to select **Open Windows Explorer**.  
 
 2.  Create a **C:\\Monitor** folder on your computer.  
@@ -128,7 +136,9 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 4.  In the **C:\\Source** folder, create a file with a **txt** extension. For example, **text.txt**.  
 
-### Test the runbook  
+### Test the runbook
+
+Follow these steps to test the runbook:
 
 1.  In the **Runbook Designer** Design workspace, select the **Monitor Runbook** tab.  
 
