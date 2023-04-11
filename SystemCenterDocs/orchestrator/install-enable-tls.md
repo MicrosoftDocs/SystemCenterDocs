@@ -24,7 +24,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Before you start
 
-- Orchestrator should be running version 2016 with Update Rollup 4 or later/1801/1807/2019.
+- Orchestrator should be running version 2016 with Update Rollup 4 or later, 1801, 1807, 2019, or 2022.
 - Security fixes should be up-to-date on the Orchestrator.
 - System Center updates should be up-to-date.
 - SQL Server 2012 Native client 11.0 or later should be installed on the Orchestrator management server. To download and install Microsoft SQL Server 2012 Native Client 11.0, see [this Microsoft Download Center webpage](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
@@ -45,11 +45,11 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
     a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
 
-    b.Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ .NetFrameword\v4.0.30319**.
+    b.Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.
 
     c. Create the DWORD  **SchUseStrongCrypto** [Value=1] under this key.
 
-    d. Locate the following registry subkey:   **<strong>HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NetFrameword\v4.0.30319</strong>**.
+    d. Locate the following registry subkey:   `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NetFramework\v4.0.30319`.
 
     e. Create the DWORD  **SchUseStrongCrypto** [Value=1] under this key.
 
@@ -71,7 +71,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
       | Path   |Registry key  | Value |
       | --- | --- | --- |
       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
-      | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
+      | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
 
 
 2. Set Windows to use only TLS 1.2.
@@ -117,53 +117,49 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
    Run the following Windows PowerShell script in administrator mode to automatically configure Windows to use only the TLS 1.2 protocol:
 
-   ```    
-       $ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")
-       $ProtocolSubKeyList = @("Client", "Server")
-       $DisabledByDefault = "DisabledByDefault"
-       $Enabled = "Enabled"
-       $registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
-
-       foreach($Protocol in $ProtocolList)
+   ```
+   $ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
+   $ProtocolSubKeyList = @("Client", "Server")
+   $DisabledByDefault  = "DisabledByDefault"
+   $registryPath       = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
+   
+   foreach ($Protocol in $ProtocolList)
+   {
+       foreach ($key in $ProtocolSubKeyList)
        {
-         Write-Host " In 1st For loop"
-         foreach($key in $ProtocolSubKeyList)
-         {		
-             $currentRegPath = $registryPath + $Protocol + "\" + $key
-             Write-Host " Current Registry Path $currentRegPath"
-
-             if(!(Test-Path $currentRegPath))
-             {
-                 Write-Host "creating the registry"
-                 New-Item -Path $currentRegPath -Force | out-Null			
-             }
-             if($Protocol -eq "TLS 1.2")
-             {
-                 Write-Host "Working for TLS 1.2"
-                 New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
-                 New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null
-
-              }
-             else
-              {
-                  Write-Host "Working for other protocol"
-                  New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
-                  New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null
-              }
-          }
-        }
-
-        Exit 0
-    ```
+           $currentRegPath = $registryPath + $Protocol + "\" + $key
+           Write-Output "Current Registry Path: `"$currentRegPath`""
+   
+           if (!(Test-Path $currentRegPath))
+           {
+               Write-Output " `'$key`' not found: Creating new Registry Key"
+               New-Item -Path $currentRegPath -Force | out-Null
+           }
+           if ($Protocol -eq "TLS 1.2")
+           {
+               Write-Output " Enabling - TLS 1.2"
+               New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
+               New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "1" -PropertyType DWORD -Force | Out-Null
+           }
+           else
+           {
+               Write-Output " Disabling - $Protocol"
+               New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
+               New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "0" -PropertyType DWORD -Force | Out-Null
+           }
+           Write-Output " "
+       }
+   }
+   ```
 
 3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
 
    | Operating system | Required update |
    | --- | --- |
-   | Windows 8.1 and Windows Server 2012 R2 | [3154520](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2help%2F3154520&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=4zmUO0R60zFAV339V1nYhf32MQRpCoxPEiEmUsNn5LM%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
-   | Windows Server 2012 | [3154519](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154519&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=Om3y93IekKZdW6%2FTt8Arerz1loDOsW3L6LE%2F5bd69dY%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
-   | Windows 7 SP1 and Windows Server 2008 R2 SP1 | [3154518](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fhelp%2F3154518&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=i1drbmxTit4RkFEKTaEKVTytzWpjAs3dg5DXD2DuH8Y%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
-   | Windows 10 and Windows Server 2016 | [3154521](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fhelp%2F3154521&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=OfqEkrkocQeSqf2MIW9wKQkZI7mKgaIhpKkZI3%2Bptis%3D&amp;reserved=0) Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows<br><br>[3156421](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2help%2F3156421&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873410525&amp;sdata=6xGOexADeuoR49tyrMBzxweoVDX2JNkrBqEvpbrdIdw%3D&amp;reserved=0) Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016 |
+   | Windows 8.1 and Windows Server 2012 R2 | [3154520](https://support.microsoft.com/kb/3154520) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
+   | Windows Server 2012 | [3154519](https://support.microsoft.com/kb/3154519) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
+   | Windows 7 SP1 and Windows Server 2008 R2 SP1 | [3154518](https://support.microsoft.com/kb/3154518) Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
+   | Windows 10 and Windows Server 2016 | [3154521](https://support.microsoft.com/kb/3154521) Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows<br><br>[3156421](https://support.microsoft.com/kb/3156421) Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016 |
 
 4. Restart the computer.
 
