@@ -220,6 +220,8 @@ Follow these steps to identify the service account used by the data warehouse ma
 
 # [Identify the reporting account used by the data warehouse management server](#tab/ReportingAccount)
 
+Follow these steps to identify the reporting account used by the data warehouse management server:
+
 1.  > [!NOTE]  
     >  The account that is configured by using the names in the following data sources in SQL Server Reporting Services is called the **Reporting account**.  
 
@@ -258,7 +260,9 @@ Follow these steps to identify the service account used by the data warehouse ma
 
 16. Close the browser window.  
 
-# [Identify the OLAP Account used by the data warehouse management server](#tab/OLAPAccount)  
+# [Identify the OLAP Account used by the data warehouse management server](#tab/OLAPAccount) 
+
+Follow these steps to identify the OLAP Account used by the data warehouse management server: 
 
 1. Sign in to the Service Manager server, select **Start**, select **All Programs**, select **Microsoft System Center \<version\>**, select **Service Manager**, and select **Service Manager Shell**.  
 
@@ -304,6 +308,8 @@ Follow these steps to identify the service account used by the data warehouse ma
  Use the following procedure to stop the Service Manager services on the data warehouse management server.  
 
 #### Stop Service Manager services on the data warehouse management server  
+
+Follow these steps to stop Service Manager services on the data warehouse management server:
 
 1.  In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
 
@@ -414,6 +420,8 @@ Follow these steps to identify the service account used by the data warehouse ma
 
 #### Configure the DWStagingAndConfig database on the new computer running SQL Server  
 
+Follow these steps to configure the DWStagingAndConfig database on the new computer running SQL Server:
+
 1.  On the new computer running SQL Server, open **SQL Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog, follow these steps:  
@@ -456,6 +464,8 @@ Follow these steps to identify the service account used by the data warehouse ma
     ```  
 
 #### Configure the service account database permissions  
+
+Follow these steps to configure the service account database permissions:
 
 1.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**. Select and hold **Logins**, and select **New Login**.  
 
@@ -598,6 +608,8 @@ Follow these steps to identify the service account used by the data warehouse ma
 
 #### Configure the DWStagingAndConfig tables  
 
+Follow these steps to configure the DWStagingAndConfig tables:
+
 1.  In the **Object Explorer** pane, expand **Databases**, expand **DWStagingAndConfig**, and then expand **Tables**.  
 
 2.  Select **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and select **Edit Top 200 Rows**.  
@@ -732,4 +744,4 @@ Follow these steps to identify the service account used by the data warehouse ma
 
 ## Next steps
 
-- To learn about upgrading Service Manager, review [Upgrade System Center 2012 R2 - Service Manager to System Center - Service Manager](./upgrade-service-manager.md).
+To learn about upgrading Service Manager, review [Upgrade System Center 2012 R2 - Service Manager to System Center - Service Manager](./upgrade-service-manager.md).

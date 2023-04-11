@@ -33,6 +33,8 @@ The upgrade might also fail as a result of Configuration service Startup timing 
 
 You can also work around configuration service startup issues after a failed upgrade.
 
+Select the required tab for the steps to take to recover from a failed upgrade depending on the phase in which the failure occurs.
+
 # [Failure occurs during a prerequisite check](#tab/Phase1)
 
 Before the installation of Service Manager begins, a prerequisite check is made for certain requirements. If a condition is found in which Service Manager will continue to function, you receive a warning. Warnings are identified with an explanation point (!) in a yellow triangle. Conditions that have been identified as a Warning won't prevent you from installing Service Manager.
@@ -54,7 +56,6 @@ After any failures that were identified during the prerequisite check are correc
 - Setup can access the file location for the Service Manager installation.
 
 If failures occur during these types of checks, you can make the appropriate changes. For example, specify a hard disk location with sufficient space, and then on the Warning page, select **Retry** to continue the installation.
-
 
 # [Failure occurs in an unpredictable manner before permanent changes are made to the Management Server](#tab/Phase3)
 
