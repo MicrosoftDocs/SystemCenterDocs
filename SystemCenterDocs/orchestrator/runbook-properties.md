@@ -57,7 +57,7 @@ On the **General** tab of the **Runbook Properties** dialog, you can customize a
 
  2.  Under **Occurrence**, select the week of the month to start the runbook.  
 
-    For example, if you want to start the runbook every Monday, under **Days of the week**, select **Monday**, and under **Occurrence**, select **First**, **Second**, **Third**, **Fourth**, and **Last**.  
+     For example, if you want to start the runbook every Monday, under **Days of the week**, select **Monday**, and under **Occurrence**, select **First**, **Second**, **Third**, **Fourth**, and **Last**.  
 
 #### Configure the schedule for specific days in the month  
 
@@ -159,7 +159,7 @@ The following limitations apply:
 
 -   Don't run simultaneous requests for runbooks that interact with a non-Microsoft product, such as a ticketing or system-monitoring tool, unless you have a good understanding of how the tool handles parallel processing. If the non-Microsoft application can't handle parallel processing, or if you don't know, leave the maximum number of simultaneous requests at a value of 1.  
 
--   Plan the use of multiple requests carefully. Before you change the maximum number of simultaneous runbook requests, consider the tasks performed by the runbook. Verify that each runbook instance can finish successfully. For example, if your runbook creates a folder, copies files into it, and then deletes the folder when it is finished, one instance of the runbook might delete the folder before other instances are finished with it. In this case, you should keep the maximum number of simultaneous requests for this runbook a value of 1 to avoid conflicts.  
+-   Plan the use of multiple requests carefully. Before you change the maximum number of simultaneous runbook requests, consider the tasks performed by the runbook. Verify that each runbook instance can finish successfully. For example, if your runbook creates a folder, copies files into it, and then deletes the folder when it's finished, one instance of the runbook might delete the folder before other instances are finished with it. In this case, you should keep the maximum number of simultaneous requests for this runbook a value of 1 to avoid conflicts.  
 
 ## Returned Data  
 Returned Data defines the data that a runbook returns when it finishes. Each Returned Data definition can contain either a single or multiple parameter values. To populate the data definitions, end the workflow with a Return Data activity that contains the return values.  
