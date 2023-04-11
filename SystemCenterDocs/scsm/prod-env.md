@@ -71,7 +71,7 @@ Follow these steps to copy the workflow assembly files:
 
 ## Disable Service Manager connectors in the production environment
 
-Use the following procedure to disable the Service Manager connectors in the production environment.  
+Use the following procedure to disable the Service Manager connectors in the production environment:
 
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.  
@@ -81,7 +81,7 @@ Use the following procedure to disable the Service Manager connectors in the pro
 
 ## Disable email notifications in the production environment
 
-Use the following procedure to disable incoming and outbound email notifications in the production environment.  
+Use the following procedure to disable incoming and outbound email notifications in the production environment:
 
 # [Disable outbound email notifications](#tab/DisableOutbound)
 
@@ -107,7 +107,7 @@ Follow these steps to disable incoming email notifications:
 
 ## Stop Service Manager services on the secondary management server
 
-Use the following procedure to stop the Service Manager services.  
+Use the following procedure to stop the Service Manager services:
 
 ### Stop the Service Manager services  
 
@@ -124,7 +124,7 @@ Follow these steps to stop the Service Manager services:
 
 ## Back up the production Service Manager database for future recovery
 
-Use the following procedure to back up the production Service Manager database in Microsoft SQL Server.
+Use the following procedure to back up the production Service Manager database in Microsoft SQL Server:
 
 ### Back up the Service Manager database
 
@@ -160,7 +160,7 @@ Follow these steps to back up the Service Manager database:
 
 ## Enable Service Manager connectors in the production environment
 
-Use the following procedure to enable the Service Manager connectors in the production environment.  
+Use the following procedure to enable the Service Manager connectors in the production environment:
 
 ### Enable a connector  
 
@@ -173,7 +173,7 @@ Follow these steps to enable a connector:
 
 ## Enable email notifications in the production environment
 
-Use the following procedure to enable incoming and outbound email notifications in the production environment.  
+Use the following procedure to enable incoming and outbound email notifications in the production environment:
 
 # [Enable outbound email notifications](#tab/Outbound)
 

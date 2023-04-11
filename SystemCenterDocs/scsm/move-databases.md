@@ -23,7 +23,7 @@ ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 
 ::: moniker-end
 
-After you've deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following.  
+After you've deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following:
 
 - You need to replace hardware that is experiencing issues and is no longer considered reliable.  
 
@@ -150,8 +150,7 @@ The following high-level steps are required to move the data warehouse databases
 
 ###  Locate user accounts and instances of SQL Server
 
- Use the following procedures to locate the user accounts and instances of SQL Server that are used by the data warehouse management server.  
-
+ Use the following procedures to locate the user accounts and instances of SQL Server that are used by the data warehouse management server:
 
 # [Identify the SQL Server database and instance names used by the data warehouse management server](#tab/SQLServerDB) 
 
@@ -305,7 +304,7 @@ Follow these steps to identify the OLAP Account used by the data warehouse manag
 
 ### Stop Service Manager services  
 
- Use the following procedure to stop the Service Manager services on the data warehouse management server.  
+ Use the following procedure to stop the Service Manager services on the data warehouse management server.
 
 #### Stop Service Manager services on the data warehouse management server  
 
@@ -323,7 +322,7 @@ Follow these steps to stop Service Manager services on the data warehouse manage
 
 ### Back up the data warehouse databases  
 
- Use the following procedure to back up the data warehouse databases on the original computer running SQL Server.  
+ Use the following procedure to back up the data warehouse databases on the original computer running SQL Server:
 
 1.  Sign in to the original computer running SQL Server that is hosting the data warehouse databases, and open **SQL Server Management Studio**.  
 
@@ -350,7 +349,7 @@ Follow these steps to stop Service Manager services on the data warehouse manage
 
 ### Take the data warehouse databases offline  
 
- Use the following procedure to take the data warehouse databases offline on the original computer running SQL Server.  
+ Use the following procedure to take the data warehouse databases offline on the original computer running SQL Server:
 
 1.  Sign in to the original computer running SQL Server that is hosting the data warehouse databases, and open **SQL Server Management Studio**.  
 
@@ -372,7 +371,7 @@ Follow these steps to stop Service Manager services on the data warehouse manage
 
 ###  Restore the data warehouse databases on the new computer running SQL Server  
 
- Use the following procedure to restore the data warehouse databases on the new computer running SQL Server.  
+ Use the following procedure to restore the data warehouse databases on the new computer running SQL Server:
 
 1.  On the new computer running SQL Server, open **SQL Server Management Studio**.  
 
@@ -634,7 +633,7 @@ Follow these steps to configure the DWStagingAndConfig tables:
 
 ###  Update data warehouse management Server with the new database server name  
 
- Use the following procedure to update the data warehouse management server to use the new database server name.  
+ Use the following procedure to update the data warehouse management server to use the new database server name:
 
 1.  Sign in to the computer as a user with administrative credentials.  
 
@@ -669,7 +668,7 @@ Follow these steps to configure the DWStagingAndConfig tables:
 
 ### Update the data sources on the reporting server  
 
- Use the following procedure to update data sources on the reporting server to point to the new computer running SQL Server.  
+ Use the following procedure to update data sources on the reporting server to point to the new computer running SQL Server:
 
 1.  Sign in to the Service Manager reporting server, and start **Reporting Services Configuration Manager**.  
 
@@ -705,7 +704,7 @@ Follow these steps to configure the DWStagingAndConfig tables:
 
 ###  Update the data sources for the Analysis Services  
 
- Use the following procedure to update the connection strings for the data sources on the server that hosts the Analysis Services database.  
+ Use the following procedure to update the connection strings for the data sources on the server that hosts the Analysis Services database:
 
 1.  Sign in to the server that hosts the SQL Server Analysis Services database.  
 
@@ -729,7 +728,7 @@ Follow these steps to configure the DWStagingAndConfig tables:
 
 ###  Start Service Manager Services on the data warehouse management server  
 
- Use the following procedure to start the Service Manager services on the data warehouse management server.  
+ Use the following procedure to start the Service Manager services on the data warehouse management server:
 
 1.  In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
 
