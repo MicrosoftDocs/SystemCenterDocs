@@ -93,6 +93,8 @@ In the second procedure, you view an edit a distributed application that was imp
 
 ### Manually create a service for an IT messaging application
 
+Follow these steps to manually create a service for an IT messaging application:
+
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Business Services**.
 3.  Select **All Business Services**, and then in the **Tasks** pane, under **Business Services**, select **Create Service**.
@@ -118,6 +120,8 @@ In the second procedure, you view an edit a distributed application that was imp
 
 ### View and edit a distributed application that was imported from Operations Manager
 
+Follow these steps to view and edit a distributed application that was imported from Operations Manager:
+
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and select **All Business Services**.
 3.  In the **All Business Services** pane, select the distributed application that you created in Operations Manager.
@@ -126,6 +130,8 @@ In the second procedure, you view an edit a distributed application that was imp
 6.  Select any configuration item, and select **Open** to view or edit its properties.
 
 ### View dependent services
+
+Follow these steps to view dependent services:
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and select **All Business Services**.
@@ -146,6 +152,8 @@ Before you use these procedures, ensure that you import the SQL Server managemen
 
 ### Create a view for imported SQL Server database configuration items
 
+Follow these steps to create a view for imported SQL Server database configuration items:
+
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **All Windows Computers**.
 3.  In the **Tasks** pane, under **Computers**, select **Create View**.
@@ -159,6 +167,8 @@ Before you use these procedures, ensure that you import the SQL Server managemen
 11. Select the **SQL Server Databases** view to see the list of the imported SQL Server databases.
 
 ### View and edit imported SQL Server database configuration items
+
+Follow these steps to view and edit imported SQL Server database configuration items:
 
 1.  Select the **SQL Server Databases** view that you created, and then select any item in the list. Notice that the **Preview** pane shows detailed information about the selected item.
 2.  Double-click any item in the list to view the item in a dynamically generated form.
@@ -175,6 +185,8 @@ Deleting configuration items is a two-step process, and only members of the Adva
 You can use the following procedures to initiate the deletion of a configuration item in Service Manager and validate the initiation of the deletion. Only users who are members of the Advanced Operators, Authors, or Administrators user role can initiate the deletion of a configuration item. Only users who are members of the Administrators user role can complete the deletion of a configuration item.
 
 ### Initiate the deletion of a configuration item
+
+Follow these steps to initiate the deletion of a configuration item:
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Advanced Operators, Authors, or Administrators user role.
 2.  In the Service Manager console, select **Configuration Items**.
@@ -202,6 +214,8 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 #### Complete the deletion of a configuration item
 
+Follow these steps to complete the deletion of a configuration item:
+
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Administrators user role.
 2.  In the Service Manager console, select **Administration**.
 3.  In the **Administration** pane, expand **Administration**, and select **Deleted Items**.
@@ -214,6 +228,8 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 6.  In the **System Center Service Manager** dialog, ensure you selected the correct items, and select **Yes**.
 
 ### Restore a configuration item
+
+Follow these steps to restore a configuration item:
 
 1.  Sign in to a computer that hosts the Service Manager console by using a user account that is a member of the Administrators user role.
 2.  In the Service Manager console, select **Administration**.
@@ -243,6 +259,8 @@ Similarly, work items such as incidents, problems, and change requests are often
 
 ### Add information to configuration items
 
+Follow these steps to add information to configuration items:
+
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
 3.  Select **All Windows Computers**. In the **All Windows Computers** pane, double-click the computer to which you want to add information.
@@ -263,7 +281,6 @@ Follow these steps to add related services, people, and configuration items:
 
 Follow these steps to add related work items:
 
-
 1.  In the **Related work items** area, select **Add**.
 2.  In the **Select Objects** dialog, select a class from the **Filter by class** list to narrow the choices available in the **Available objects** list.
 3.  In the **Available objects** list, select the work items that you want to add, and select **Add**.
@@ -281,4 +298,4 @@ Follow these steps to attach files:
 
 ## Next steps
 
-- For configuration scenarios, incident settings, email incident support, and to create an incident template, see [Configure incident management](incident-mgt.md).
+For configuration scenarios, incident settings, email incident support, and to create an incident template, see [Configure incident management](incident-mgt.md).
