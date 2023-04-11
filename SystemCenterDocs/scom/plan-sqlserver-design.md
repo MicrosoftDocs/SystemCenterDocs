@@ -318,7 +318,7 @@ The recommended approach to work around this limitation when you've deployed ser
 
 These settings allow, when failover to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
 
-Run the following PowerShell commands on any one of the SQL nodes to modify its settings.
+Run the following PowerShell commands on any one of the SQL nodes to modify its settings:
 
   ```PowerShell
   Import-Module FailoverClusters
