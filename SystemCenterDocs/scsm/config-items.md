@@ -37,7 +37,11 @@ Additionally, you might have to manually create a new user configuration item to
 
 You can use the following procedures to manually create two computer configuration items. However, you can also use the same procedures to add software, printers, or software updates in Service Manager. After you add the two computers, you can identify them as a service.
 
+Select the required tab to create the configuration items:
+
 # [Manually create a computer configuration item](#tab/Create)
+
+Follow these steps to manually create a computer configuration item:
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
@@ -47,6 +51,8 @@ You can use the following procedures to manually create two computer configurati
 6.  Repeat step 3 through step 5 to create a second computer, such as **Exchange02.woodgrove.com**.
 
 # [Manually create a user configuration item](#tab/Configure)
+
+Follow these steps to manually create a user configuration item:
 
 1.  In the Service Manager console, select **Configuration Items**.
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **Users**.
@@ -83,7 +89,7 @@ In the second procedure, you view an edit a distributed application that was imp
 2.  In Service Manager, import the management pack that contains the distributed application and its dependencies. A new, empty business service should appear in Business Services in the Configuration Items workspace.
 3.  Browse to **Administration** and then **Connectors** and ensure that you refresh the list of management packs. Then, synchronize the Operations Manager configuration items connector. When the synchronization is complete, the service components appear in the **Configuration Items** workspace under the business service.
 
-Generally, you should construct service maps that are 3-5 levels deep. Components of a service map should vary from 5-20 at each level. However, the total number of components shouldn't exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the Service Manager console remains responsive. Service maps aren't designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
+    Generally, you should construct service maps that are 3-5 levels deep. Components of a service map should vary from 5-20 at each level. However, the total number of components shouldn't exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the Service Manager console remains responsive. Service maps aren't designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
 
 ### Manually create a service for an IT messaging application
 
@@ -129,7 +135,10 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 ## Create a view for imported configuration items
 
-You can use the following procedures in Service Manager to create a view for imported Microsoft SQL Server database configuration items and then view the items in a dynamically generated form.
+You can use the following procedures in Service Manager to:
+
+- Create a view for imported Microsoft SQL Server database configuration items
+- View the items in a dynamically generated form
 
 You can view and edit items that were imported from a System Center Operations Manager configuration item (CI) connector. However, Service Manager doesn't have system-defined views or forms for some items. For example, Service Manager doesn't have a defined view for SQL Server databases, so you must manually create a view to see these configuration items. Although Service Manager doesn't have a predefined form for SQL Server databases or for many other objects that you might have imported, you can still view any configuration item in a dynamically generated form (if you created a view for those items).
 
@@ -239,7 +248,11 @@ Similarly, work items such as incidents, problems, and change requests are often
 3.  Select **All Windows Computers**. In the **All Windows Computers** pane, double-click the computer to which you want to add information.
 4.  In the computer form, select the **Related Items** tab.
 
+Select the required tab to add the items or attach files:
+
 # [Add related services, people, and configuration items](#tab/Add)
+
+Follow these steps to add related services, people, and configuration items:
 
 1.  In the **Configuration Items: Computers, Services, and People** area, select **Add**.
 2.  In the **Select Objects** dialog, select a class from the **Filter by class** list to narrow the choices available in the **Available objects** list.
@@ -248,12 +261,17 @@ Similarly, work items such as incidents, problems, and change requests are often
 
 # [Add related work items](#tab/Related)
 
+Follow these steps to add related work items:
+
+
 1.  In the **Related work items** area, select **Add**.
 2.  In the **Select Objects** dialog, select a class from the **Filter by class** list to narrow the choices available in the **Available objects** list.
 3.  In the **Available objects** list, select the work items that you want to add, and select **Add**.
 4.  Select **OK** to close the dialog and to add the selected work items.
 
 # [Attach files](#tab/Attach)
+
+Follow these steps to attach files:
 
 1.  In the **Attached files** area, select **Add**.
 2.  In the **Open** dialog, select the file that you want to add, and then select **Open**.
