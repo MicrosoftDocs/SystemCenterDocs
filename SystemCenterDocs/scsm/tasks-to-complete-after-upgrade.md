@@ -22,9 +22,12 @@ ms.custom: UpdateFrequency2, engagement-fy23
 This article describes the tasks you should complete after upgrading System Center - Service Manager.
 
 ## Restart the Data Access service and workflows
- If necessary, use the following procedures to restart the service and workflows.  
 
-#### Restart the Data Access service  
+If necessary, use the following procedures to restart the service and workflows.  
+
+#### Restart the Data Access service
+
+Follow these steps to restart the Data Access service:
 
 1.  On the computer that hosts the data warehouse management server, on the Windows desktop, select **Start**, and select **Run**.  
 
@@ -34,16 +37,21 @@ This article describes the tasks you should complete after upgrading System Cent
 
 #### Start Service Manager workflows  
 
+Follow these steps to start Service Manager workflows:
+
 1.  On the computer that hosts the Service Manager management server, on the Windows desktop, select **Start**, and select **Run**.  
 
 2.  In the **Run** dialog, in **Open**, enter **services.msc**, and select **OK**.  
 
 3.  In the **Services** window, in the **Services (Local)** pane, right-click **System Center Management**, and select **Start**.  
 
-## Restart data warehouse jobs  
+## Restart data warehouse jobs
+
  After you upgrade the data warehouse management server, you might need to restart the data warehouse (extraction, transformation, and load (ETL)) jobs. You can use the following procedure to restart the data warehouse jobs. In this procedure, you enable data warehouse job schedules by using Windows PowerShell cmdlets.  
 
 #### Restart data warehouse jobs  
+
+Follow these steps to restart data warehouse jobs:
 
 1.  On the computer that hosts the data warehouse management server, select **Start**, point to **Programs**, point to **Accessories**, select **Windows PowerShell**, right-click **Windows PowerShell**, and select **Run as administrator**.  
 
@@ -99,6 +107,8 @@ This article describes the tasks you should complete after upgrading System Cent
 
 #### Stop and then restart SSRS
 
+Follow these steps to stop and then restart SSRS:
+
 1.  On the computer that hosts SSRS, on the Windows desktop, select **Start**, and select **Run**.  
 
 2.  In the **Run** dialog, enter **services.msc**, and select **OK**.  
@@ -110,4 +120,4 @@ This article describes the tasks you should complete after upgrading System Cent
 
 ## Next steps
 
-- If needed, [troubleshoot upgrade issues](resolve-upgrade-problems.md).
+If needed, [troubleshoot upgrade issues](resolve-upgrade-problems.md).

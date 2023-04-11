@@ -112,7 +112,9 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 -   Increase the service time\-out setting on the computer that is running Setup.  
 
-### Disable signature verification  
+### Disable signature verification
+
+Follow these steps to disable signature verification:
 
 1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
@@ -123,6 +125,8 @@ There are two workaround procedures that you can use to try to resolve the issue
 4.  Attempt the upgrade again.  
 
 ### Increase the service time-out setting  
+
+Follow these steps to increase the service time-out setting:
 
 1.  On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 

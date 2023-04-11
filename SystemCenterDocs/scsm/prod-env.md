@@ -32,6 +32,8 @@ When you install a secondary management server, data retention settings are rese
 
 ### Run setup
 
+Follow these steps to run setup:
+
 1.  By using an account that has administrator rights and that is also a member of the Service Manager Management group administrators, sign in to the computer that will host the additional Service Manager Management server.  
 2.  On the System Center - Service Manager installation media, double-click Setup.exe.  
 3.  On the **Microsoft System Center \<version\> Service Manager** page, select **Install a Service Manager Management server**.  
@@ -56,7 +58,9 @@ When you install a secondary management server, data retention settings are rese
 
 Use the following procedure to copy the workflow assembly files from the Service Manager Installation folder on the primary management server to the secondary management server that you created in the previous procedure.  
 
-### To copy the workflow assembly files  
+### Copy the workflow assembly files 
+
+Follow these steps to copy the workflow assembly files: 
 
 1.  On the computer that is running the Service Manager Primary Server role, browse to the Service Manager Installation folder for example, C:\Program Files\Microsoft System Center\Service Manager copy the workflow files (workflow.dll).  
 2.  On the computer that is running the Service Manager Secondary server; browse to the Service Manager Installation folder; for example, C:\Program Files\Microsoft System Center\Service Manager. Paste the copied workflow files into this folder. You should overwrite any existing files.  
@@ -66,7 +70,6 @@ Use the following procedure to copy the workflow assembly files from the Service
 
 
 ## Disable Service Manager connectors in the production environment
-
 
 Use the following procedure to disable the Service Manager connectors in the production environment.  
 
@@ -78,9 +81,11 @@ Use the following procedure to disable the Service Manager connectors in the pro
 
 ## Disable email notifications in the production environment
 
-Use the following procedure to disable incoming and outbound E\-mail notifications in the production environment.  
+Use the following procedure to disable incoming and outbound email notifications in the production environment.  
 
 # [Disable outbound email notifications](#tab/DisableOutbound)
+
+Follow these steps to disable outbound email notifications:
 
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Notifications**, and select **Channels**.  
@@ -89,6 +94,8 @@ Use the following procedure to disable incoming and outbound E\-mail notificatio
 5.  Clear the **Enable e\-mail notifications** checkbox.  
 
 # [Disable incoming email notifications](#tab/DisableIncoming)
+
+Follow these steps to disable incoming email notifications:
 
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Administration**, and select **Settings**.  
@@ -104,8 +111,10 @@ Use the following procedure to stop the Service Manager services.
 
 ### Stop the Service Manager services  
 
+Follow these steps to stop the Service Manager services:
+
 1.  In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
-2.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services and for each one, and select **Stop**:  
+2.  In the **Services** window, in the **Services (Local)** pane, locate the following three services and for each one, and select **Stop**:  
     1.  System Center Data Access Service  
     2.  System Center Management  
     3.  System Center Management Configuration  
@@ -118,6 +127,8 @@ Use the following procedure to stop the Service Manager services.
 Use the following procedure to back up the production Service Manager database in Microsoft SQL Server.
 
 ### Back up the Service Manager database
+
+Follow these steps to back up the Service Manager database:
 
 1. After connecting to the appropriate instance of the Microsoft SQL Server Database Engine, in Object Explorer, select the server name to expand the server tree.
 2. Expand **Databases**, and depending on the database, either select a user database or expand **System Databases** and select a system database.
@@ -153,17 +164,20 @@ Use the following procedure to enable the Service Manager connectors in the prod
 
 ### Enable a connector  
 
+Follow these steps to enable a connector:
+
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.  
 3.  In the **Connectors** pane, select the connector that you want to enable.  
 4.  In the **Tasks** pane, under the connector name, select **Enable**.
 
-
 ## Enable email notifications in the production environment
 
 Use the following procedure to enable incoming and outbound email notifications in the production environment.  
 
-# [Enable outbound email notifications](#tab/Outbound)  
+# [Enable outbound email notifications](#tab/Outbound)
+
+Follow these steps to enable outbound email notifications:
 
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Notifications**, and select **Channels**.  
@@ -172,6 +186,8 @@ Use the following procedure to enable incoming and outbound email notifications 
 5.  Select **Enable e\-mail notifications**.  
 
 # [Enable incoming email notifications](#tab/Incoming)
+
+Follow these steps to enable incoming email notifications:
 
 1.  In the Service Manager console, select **Administration**.  
 2.  In the **Administration** pane, expand **Administration**, and select **Settings**.  
@@ -183,4 +199,4 @@ Use the following procedure to enable incoming and outbound email notifications 
 
 ## Next steps
 
-- [Prepare the lab environment](lab-env.md)
+[Prepare the lab environment](lab-env.md)

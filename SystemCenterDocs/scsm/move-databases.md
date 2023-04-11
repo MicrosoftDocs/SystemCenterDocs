@@ -50,7 +50,6 @@ You must use the following high-level steps to move the Service Manager database
 > - These steps link to content in the Service Manager Upgrade Guide.  
 > - After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
 
-
 1.  Open the inbound SQL Port on new Service Manager database server. The default port is 1433.  
 
 2.  Stop the System Center services on all the management servers.  
@@ -156,6 +155,8 @@ The following high-level steps are required to move the data warehouse databases
 
 # [Identify the SQL Server database and instance names used by the data warehouse management server](#tab/SQLServerDB) 
 
+Follow these steps to identify the SQL Server database and instance names used by the data warehouse management server:
+
 1.  Sign in to the data warehouse management server as a user with administrative credentials.  
 
 2.  On the Windows desktop, select **Start**, and select **Run**.  
@@ -190,6 +191,8 @@ The following high-level steps are required to move the data warehouse databases
 
 # [Identify the reporting server and instance names used by data warehouse management server](#tab/ReportingServer)  
 
+Follow these steps to identify the reporting server and instance names used by data warehouse management server:
+
 1. Sign in to the data warehouse management server as a user with administrative credentials.  
 2. On the Windows desktop, select **Start**, and select **Run**.  
 3. In the **Run** dialog, in the **Open** box, enter **regedit**, and select **OK**.  
@@ -200,6 +203,8 @@ The following high-level steps are required to move the data warehouse databases
     -   WebServiceURL  
 
 # [Identify the service account used by the data warehouse management server](#tab/ServiceAccount)
+
+Follow these steps to identify the service account used by the data warehouse management server:
 
 1.  On the Windows desktop, select **Start**, and select **Run**.  
 
