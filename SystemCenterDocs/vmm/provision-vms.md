@@ -64,7 +64,7 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 
     - **CPU rating**:  [1 – ( CPU Utilization / (100 – CPU Reserve)) ] x CPU Weight
     - **Memory (RAM) rating**: 	[ 1 – ( Memory Used / (Total Memory – Memory Reserve)) ] x Memory Weight
-    - **Disk I/O capacity rating**: 	[ 1 – ( Disk IOPS / Maximum Disk IOPS ] x Disk Weight
+    - **Disk I/O capacity rating**: 	[ 1 – ( Disk IOPS / Maximum Disk IOPS ) ] x Disk Weight
     - **Network rating**: 	[ 1 – ( Network Utilization / (100 – Network Reserve)) ] x Network Weight
 
 - A host is rated only when a virtual machine needs to be placed.
