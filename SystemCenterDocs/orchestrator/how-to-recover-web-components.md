@@ -23,7 +23,7 @@ manager: mkluck
 
 ::: moniker-end
 
-When you use the Database Configuration utility to modify the Orchestrator database, the tool will not modify the Web Service database reference (only the installer performs this task). You will need to manually modify it after updating with the database configuration utility.  
+When you use the Database Configuration utility to modify the Orchestrator database, the tool won't modify the Web Service database reference (only the installer performs this task). You will need to manually modify it after updating with the database configuration utility.  
 
 ## Modify the Web Service database reference  
 

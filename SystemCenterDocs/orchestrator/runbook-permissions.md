@@ -1,6 +1,6 @@
 ---
 title: Runbook permissions
-description: This topic describes how to set permissions for users to access runbook properties.
+description: This article describes how to set permissions for users to access runbook properties.
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na

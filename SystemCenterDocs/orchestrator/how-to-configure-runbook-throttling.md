@@ -23,7 +23,7 @@ ms.custom: engagement-fy23
 
 ::: moniker-end
 
-You can adjust the number of runbooks that are run concurrently on a runbook server. Reducing the number is known as **runbook throttling**. By default, each runbook server is configured to simultaneously run a maximum of 50 runbooks. You can change this number by using the Runbook Server Runbook Throttling tool. In most cases, you can keep this default setting, but you should consider the resource requirements of the runbooks on a particular server when considering whether to change it. If the server has a number of runbooks with high resource requirements, you might run fewer runbooks simultaneously on the runbook server. If they are simple runbooks with minimal requirements, you might consider increasing the number of simultaneously run runbooks.  
+You can adjust the number of runbooks that are run concurrently on a runbook server. Reducing the number is known as **runbook throttling**. By default, each runbook server is configured to simultaneously run a maximum of 50 runbooks. You can change this number by using the Runbook Server Runbook Throttling tool. In most cases, you can keep this default setting, but you should consider the resource requirements of the runbooks on a particular server when considering whether to change it. If the server has many runbooks with high resource requirements, you might run fewer runbooks simultaneously on the runbook server. If they're simple runbooks with minimal requirements, you might consider increasing the number of simultaneously run runbooks.  
 
 ## Configure the maximum number of runbooks that a runbook server processes  
 
