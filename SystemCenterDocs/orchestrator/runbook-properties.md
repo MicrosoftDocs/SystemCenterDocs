@@ -81,7 +81,7 @@ On the **General** tab of the **Runbook Properties** dialog, you can customize a
 
 6.  Select **Finish**.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > The scheduled date and time to start a runbook is based on the system clock of the runbook server. This enables schedules to function in virtual machine environments and to continue to run even when the system clock adjusts for daylight savings time.  
 
 #### Associate a schedule with a runbook  
@@ -134,7 +134,7 @@ Common Published Data is a set of data items that are common to all activities. 
 
 -   Previous Activity Name  
 
-> [CAUTION]  
+> [!CAUTION]  
 > When you turn on logging, the size of the orchestration database increases.  
 
 ## Event notifications  
