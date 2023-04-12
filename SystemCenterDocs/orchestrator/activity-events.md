@@ -1,7 +1,7 @@
 ---
 title: Activity Events
 description: This topic describes how to capture events triggered by activities in a runbook for monitoring success or performance issues.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
 ms.author: jsuri
-ms.date: 05/07/2019
+ms.date: 04/11/2023
 author: jyothisuri
 manager: mkluck
 ---
@@ -25,11 +25,13 @@ manager: mkluck
 
 Each activity in an Orchestrator runbook has the ability to send an event whenever it fails to run or is taking too long to run. These events are presented on the **Events** tab of the Runbook Designer or can be configured to be delivered to a receiver as an SNMP trap. Runbook activity events are only sent for those activities that you specifically configure to do so.  
 
-## To configure an activity to send events  
+## Configure an activity to send events  
+
+Follow these steps to configure an activity to send events:
 
 1.  Open the runbook in the **Runbook Designer**.  
 
-2.  Double\-click the activity to view its properties.  
+2.  Double-click the activity to view its properties.  
 
 3.  Select the **Run Behavior** tab.  
 
@@ -39,10 +41,12 @@ Each activity in an Orchestrator runbook has the ability to send an event whenev
 
 6.  Select **Finish** to save the activity.  
 
-## Receiving Events from SNMP  
+## Receiving Events from SNMP
+
 In addition to viewing the events on the **Events** tab in the Runbook Designer, you can send them to an SNMP trap destination. This lets you monitor the health of the Orchestrator environment by using other tools designed to provide proactive alerting. The only requirement for such a tool is that it can receive SNMP traps. You can use the **Orchestrator Event Delivery Configuration Utility** to add and configure SNMP trap destinations for Runbook events.  
 
-### Add an SNMP Trap Destination  
+### Add an SNMP Trap Destination
+
 To add an SNMP trap destination, run the `oedc` command one time for each destination that you want to add by using the following syntax:  
 
 ```bat
@@ -51,7 +55,9 @@ oedc /snmp /add /ip <Targeted IP Address> /port <Targeted Port> /version <versio
 
 For example, use the following procedure to send traps by using SNMP version 1 to an SNMP receiver at IP address 10.1.1.10 on port 162 and a community called public.  
 
-### To add an SNMP trap destination  
+### Add an SNMP trap destination
+
+Follow these steps to add an SNMP trap destination:
 
 1.  Open a command prompt with administrative credentials.  
 
@@ -67,12 +73,13 @@ For example, use the following procedure to send traps by using SNMP version 1 t
 
 4.  Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 
-### Remove All SNMP Trap Destinations  
+### Remove All SNMP Trap Destinations
+
 You can't remove individual SNMP trap destinations. Instead, you must remove all destinations, and then add back any that you want. To remove all SNMP trap destination, run the `oedc` command with the following syntax:  
 
 **oedc /snmp /clear**  
 
-### To remove all SNMP trap destinations  
+Follow these steps to remove all SNMP trap destinations:
 
 1.  Open a command prompt with administrative credentials.  
 
@@ -102,5 +109,5 @@ The variable bindings are listed in the following table.
 
 ## Next steps  
 
-Look up the data that is captured when activities fire at [Orchestrator Logs](orchestrator-logs.md)  
-Read more about SNMP traps at [SNMP Traps in Windows Server](https://blogs.technet.microsoft.com/networking/2009/06/25/snmp-traps-in-windows-server/).
+- Look up the data that is captured when activities fire at [Orchestrator Logs](orchestrator-logs.md)  
+- Read more about SNMP traps at [SNMP Traps in Windows Server](https://blogs.technet.microsoft.com/networking/2009/06/25/snmp-traps-in-windows-server/).
