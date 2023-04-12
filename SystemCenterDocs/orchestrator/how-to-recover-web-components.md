@@ -1,8 +1,8 @@
 ---
 title: How to Recover Web Components
 description: Describes how to recover web components after restoring a System Center 2016 - Orchestrator environment.
-ms.custom: UpdateFrequency2
-ms.date: 4/25/2017
+ms.custom: UpdateFrequency2, engagement-fy23
+ms.date: 04/12/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -23,11 +23,11 @@ manager: mkluck
 
 ::: moniker-end
 
-When you use the Database Configuration utility to modify the Orchestrator database, the tool will not modify the Web Service database reference \(only the installer performs this task\). You will need to manually modify it after updating with the database configuration utility.  
+When you use the Database Configuration utility to modify the Orchestrator database, the tool will not modify the Web Service database reference (only the installer performs this task). You will need to manually modify it after updating with the database configuration utility.  
 
-To do this, you will need to complete the following actions:  
+## Modify the Web Service database reference  
 
-### To modify the Web Service database reference  
+Follow these steps to modify the Web Service database reference:
 
 ::: moniker range="<=sc-orch-2019"
 1.  Open a Command Prompt using **Run as administrator**.  
@@ -37,8 +37,8 @@ To do this, you will need to complete the following actions:
     C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis.exe -pdf "connectionStrings" "C:\Program Files (x86)\Microsoft System Center 2016\Orchestrator\Web Service\Orchestrator2016"  
     ```  
 3.  Open IIS Manager and navigate to the Orchestrator2016 virtual application.  
-4.  Open up Connection Strings and then modify OrchestratorContext. Locate the segment that starts with `provider=System.Data.SqlClient;provider connection string` and then modify the Data Source and Initial Catalog attributes according to your new SQL Server and Database Catalog name respectively, then click OK.  
-5.  If you want to re\-encrypt the connection strings, you can execute the following command at the command prompt:  
+4.  Open up Connection Strings and then modify OrchestratorContext. Locate the segment that starts with `provider=System.Data.SqlClient;provider connection string` and then modify the Data Source and Initial Catalog attributes according to your new SQL Server and Database Catalog name respectively, and then select **OK**.  
+5.  If you want to re-encrypt the connection strings, you can execute the following command at the command prompt:  
 
     ```powershell
     C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis.exe -pef "connectionStrings" "C:\Program Files (x86)\Microsoft System Center 2016\Orchestrator\Web Service\Orchestrator2016"  
@@ -46,7 +46,7 @@ To do this, you will need to complete the following actions:
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-1.  Open the installation location of the WebAPI, typically it is `<OrchestratorInstallDir>\WebApi`.
+1.  Open the installation location of the WebAPI; typically it's `<OrchestratorInstallDir>\WebApi`.
     - You can use IIS Manager to navigate to the WebAPI folder as well.
 2.  Edit the `environmentVariable` element in `system.webServer` \> `aspNetCore` \> `environmentVariables` in the `web.config` using a text editor. Particularly, you'd want to change the values of the `DATABASE__*` variables. 
 
@@ -69,5 +69,7 @@ To set a value for a key called `property`, set an environment variable named `D
 [db-conn-string]: /dotnet/api/system.data.sqlclient.sqlconnection.connectionstring#remarks
 
 ::: moniker-end
+
 ## Next steps
-To learn more about the Orchestrator Web components read [Orchestrator Overview](learn-about-orchestrator.md)  
+
+To learn more about the Orchestrator Web components, see [Orchestrator Overview](learn-about-orchestrator.md).
