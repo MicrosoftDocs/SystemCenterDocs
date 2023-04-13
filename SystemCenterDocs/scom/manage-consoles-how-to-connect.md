@@ -26,7 +26,7 @@ System Center Operations Manager includes two consoles:
 
 To view operational data and administer the management group configuration, you use the Operations console.  The Web console provides a light-weight interface with the essential functionality to view the monitoring data, which avoids having to manage the lifecycle deployment of the Operations console.  
 
-In this section we provide information on how to connect to the Operations and Web consoles.
+In this section, we provide information on how to connect to the Operations and Web consoles.
 
 ## How to connect to the Operations console
 
