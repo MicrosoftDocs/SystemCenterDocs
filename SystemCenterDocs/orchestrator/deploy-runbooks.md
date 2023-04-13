@@ -1,14 +1,14 @@
 ---
 title: Deploy runbooks
-description: Provides an overview of creating making runbooks in System Center - Orchestra
+description: Provides an overview of creating making runbooks in System Center - Orchestrator
 author: jyothisuri
 manager: mkluck
-ms.date: 01/17/2018
+ms.date: 04/12/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
-ms.custom: intro-deployment
+ms.custom: intro-deployment, engagement-fy23
 ---
 
 # Deploy runbooks
@@ -40,9 +40,11 @@ When a runbook has been changed and is checked in by a user, an entry appears in
 > [!TIP]  
 > When a runbook has been altered to a state where it's no longer functioning, you can select the **Audit History** tab at the bottom of the Runbook Designer to see the changes that were made and then reverse them.  
 
-### To view runbook change details  
+### View runbook change details  
 
-1.  In the Runbook Designer, select the **Audit History** tab at the bottom and double\-click the entry item to open the **Details** dialog.  
+Follow these steps to view runbook change details:
+
+1.  In the Runbook Designer, select the **Audit History** tab at the bottom and double-click the entry item to open the **Details** dialog.  
 
 2.  In the **Name** column, select each item in the list to view the changes that were made.  
 
