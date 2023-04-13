@@ -75,7 +75,7 @@ The **Monitor File** activity is created and configured to watch for any new tex
 
 ### Add additional activities to the runbook 
 
-Follow these steps to add additional activities to the rubook: 
+Follow these steps to add additional activities to the runbook: 
 
 1.  In the **Activities** pane, expand the **File Management** category.  
 
