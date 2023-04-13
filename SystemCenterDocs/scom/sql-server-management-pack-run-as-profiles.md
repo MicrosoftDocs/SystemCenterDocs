@@ -98,7 +98,7 @@ If you store SQL Server databases on an SMB file share, the default action accou
 
 A System Center Operations Manager default action account is mapped to either local system account or domain user account, but SA rights can't be granted to this account due to security policies that forbid access to SQL Server.
 
-You can grant SA or low privilege rights to System Center Operations Manager HealthService using its Service Security Identifier. For more information, see [Security identifiers](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers).
+You can grant SA or low privilege rights to System Center Operations Manager HealthService using its Service Security Identifier. For more information, see [Security identifiers](/windows-server/identity/ad-ds/manage/understand-security-identifiers).
 
 Follow these steps to configure the security configuration using [Service SID](sql-server-management-pack-service-sid.md).
 
