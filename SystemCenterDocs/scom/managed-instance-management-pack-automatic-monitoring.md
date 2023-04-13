@@ -31,10 +31,10 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
 4. At the **Azure Endpoints** step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox, and modify the default Azure endpoints, if necessary. The default endpoints for creating Azure Service Principal Name are as follows:
 
-   - Authority URI: <https://login.windows.net>
-   - Management Service URI: <https://management.azure.com>
+   - Authority URI: `https://login.windows.net`
+   - Management Service URI: `https://management.azure.com`
    - Database Resource URI: `https://database.windows.net`  
-   - Graph API Resource URI: <https://graph.windows.net>
+   - Graph API Resource URI: `https://graph.windows.net`
 
    ![Screenshot showing the Configure Azure endpoints.](./media/managed-instance-management-pack/configuring-azure-endpoints.png)
 
