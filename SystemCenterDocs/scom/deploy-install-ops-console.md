@@ -5,8 +5,8 @@ description: This article describes how to install the Operations Manager Operat
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/08/2017
-ms.custom: UpdateFrequency2
+ms.date: 04/13/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -24,7 +24,9 @@ After you install System Center - Operations Manager, you can install the Operat
 
 You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md)
 
-## To install the Operations console
+## Install the Operations console
+
+Follow these steps to install the Operations console:
 
 1.  Sign in to the computer that will host the Operations console with an account that has local administrative credentials.
 
@@ -54,13 +56,15 @@ You must ensure that the computer that will host the Operations console meets th
 > [!IMPORTANT]
 > Company knowledge can't be edited with the x64 version of Microsoft Word 2010. You must install the x86 version of Microsoft Office 2010 or an earlier version to edit knowledge.
 
-## To install the Operations console from the Command Prompt
+## Install the Operations console from the command prompt
+
+Follow these steps to install the Operations console from the command prompt:
 
 1.  Sign in to the server by using an account that has local administrative credentials.
 
-2.  Open the Command Prompt window by using the **Run as Administrator** option.
+2.  Open the command prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command.
+3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command:
 
     ```
     setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always] /SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1] /AcceptEndUserLicenseAgreement:[0|1]
@@ -68,4 +72,4 @@ You must ensure that the computer that will host the Operations console meets th
 
 ## Next steps
 
-- To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).
+To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).

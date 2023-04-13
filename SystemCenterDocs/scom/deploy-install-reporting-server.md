@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/21/2022
+ms.date: 04/13/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -50,7 +50,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 ::: moniker-end
 
-## Installing Operations Manager reporting
+## Install Operations Manager reporting
 
 SQL Server Reporting Services installed on this instance of SQL Server can be used only by Operations Manager. If any reports exist on this SSRS instance, the System Center Operations Manager Reporting Services installer overrides all of the data/reports on it.
 
@@ -72,7 +72,9 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 - If SSRS is installed on remote server and SQL and Management Server are installed on the same server, [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) and [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server) SPNs are required.
 - If SQL installed on remote server and SSRS and Management Server are installed on the same server, ensure that [SQL](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) SPNs are set.
 
-#### To verify that Reporting Services is configured correctly
+#### Verify that Reporting Services is configured correctly
+
+Follow these steps to verify that Reporting Services is configured correctly:
 
 1.  Verify that the **ReportServer** and **ReportServerTempDB** databases in SQL Server Management Studio are located on the standalone server. Open **SQL Server Management Studio**, and then connect to the default database instance. Open the **Databases** node, and verify that the two Reporting Services databases exist under this node.
 
@@ -96,7 +98,9 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 
 11. In the Report Manager website, select **New Folder** to create a new folder. Enter a name and description, and select **OK**. Ensure that the new, created folder is visible on the Report Manager website.
 
-#### To install Operations Manager reporting
+#### Install Operations Manager reporting
+
+Follow these steps to install Operations Manager reporting:
 
 1.  Sign in to the computer with an account that has local administrative credentials.
 
@@ -124,7 +128,9 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 
 13. When the Setup is finished, the **Setup is complete** page appears. Select **Close**.
 
-#### To install Operations Manager reporting from the Command Prompt
+#### Install Operations Manager reporting from the command prompt
+
+Follow these steps to install Operations Manager reporting from the command prompt:
 
 1.  Sign in to the server by using an account that has local administrative credentials.
 
@@ -147,7 +153,9 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
     /AcceptEndUserLicenseAgreement:1
     ```
 
-#### To confirm the health of Operations Manager reports
+#### Confirm the health of Operations Manager reports
+
+Follow these steps to confirm the health of Operations Manager reports:
 
 1.  Open the Operations console, and select the **Reporting** workspace.
 
@@ -172,4 +180,4 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 
 ## Next steps
 
-- To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).
+To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).

@@ -4,8 +4,8 @@ description: This article describes how to open and configure the Operations Man
 author: jyothisuri
 ms.author: jsuri
 ms.manager: mkluck
-ms.date: 04/21/2022
-ms.custom: UpdateFrequency2
+ms.date: 04/13/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -35,7 +35,9 @@ The System Center Operations Manager Operations console can be installed on any 
 ![Screenshot showing Dialog box to connect console to server.](./media/manage-consoles-how-to-connect/om2016-operations-console-connect-to-server.png)  
 
 ::: moniker range="= sc-om-2016"
-### To connect an Operations console to a management server  
+### Connect an Operations console to a management server
+
+Follow these steps to connect an Operations console to a management server:
 
 1.  To open the Operations console, select **Start** and then select **Microsoft System Center 2016\Operations Console**.
 
@@ -44,7 +46,10 @@ The System Center Operations Manager Operations console can be installed on any 
 ::: moniker-end
 
 ::: moniker range=">= sc-om-1801"
-### To connect an Operations console to a management server  
+
+### Connect an Operations console to a management server
+
+Follow these steps to connect an Operations console to a management server:
 
 1.  To open the Operations console, select **Start** and then select **Microsoft System Center\Operations Console**.
 
@@ -54,7 +59,7 @@ The System Center Operations Manager Operations console can be installed on any 
 
 The Operations console opens with the focus on the Monitoring workspace.
 
-### To change the management server that the Operations console is connected to  
+### Change the management server that the Operations console is connected to
 
 1.  In the Operations console, select **Tools**, and then select **Connect...** as shown in the following image, which will open the **Connect To Server** window.  
 
@@ -80,12 +85,12 @@ By default, the web console session is limited to 30 minutes. You can change thi
 > [!NOTE]  
 > After you change the web.config file, you must open a new Web console session for the changes to take effect.  
 
-### To connect to a Web console  
+### Connect to a Web console  
 
 -   Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.  
 
-For information on installing the Web console, see [Install the Operations Manager Web console](~/scom/deploy-install-web-console.md).  
+    For information on installing the Web console, see [Install the Operations Manager Web console](~/scom/deploy-install-web-console.md).  
 
 ## Next steps
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](welcome.md).
+In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](welcome.md).
