@@ -1,7 +1,7 @@
 ---
 title: Modify the Orchestrator database
 description: Describes how to change the database location in a System Center - Orchestrator environment.
-ms.date: 04/10/2023
+ms.date: 04/13/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
