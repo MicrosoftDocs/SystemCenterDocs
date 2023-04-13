@@ -5,8 +5,8 @@ description: This guide provides the pre-upgrade tasks you must perform before a
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/19/2020
-ms.custom: UpdateFrequency.5
+ms.date: 04/13/2023
+ms.custom: UpdateFrequency.5, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -52,7 +52,7 @@ Review the event logs for Operations Manager on the management servers to look f
 
 As part of upgrade to System Center Operations Manager installation (setup) includes a script to clean up ETL tables and grooming the database. However, in cases where there are a large number of rows (greater than 100,000) to clean up, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre-upgrade task in all circumstances ensures a more efficient installation.
 
-### To clean up ETL
+### Clean up ETL
 
 To clean up the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
@@ -84,7 +84,7 @@ To clean up the ETL table, run the following script on the SQL Server hosting th
   ```   
 
 > [!NOTE]
-> Clean up of ETL can require several hours to complete.
+> Clean up of ETL can take several hours to complete.
 
 ## Remove Agents from pending management
 
@@ -99,7 +99,6 @@ Before you upgrade a management server, remove any agents that are in Pending Ma
 ## Disable notification subscriptions
 
 You must disable notification subscription before you upgrade the management group to ensure that notifications aren't sent during the upgrade process.
-
 
 1. Sign in to the Operations console account that is a member of the Operations Manager Administrators role for the Operations Manager management group.
 
@@ -122,7 +121,7 @@ To stop a service for a Connector, perform the following steps:
 
 2. In the **Name** column, right-click the Connector that you want to control, and select **Stop**.
 
-## Verify the Operations Manager database has more than 50 percent free
+## Verify the Operations Manager database has more than 50 percent free space
 
 You must verify that the operational database has more than 50 percent of free space before you upgrade the management group because the upgrade might fail if there isn't enough space. Ensure that the transactions logs are 50 percent of the total size of the operational database.
 
