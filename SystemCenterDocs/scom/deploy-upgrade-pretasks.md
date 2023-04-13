@@ -133,7 +133,7 @@ You must verify that the operational database has more than 50 percent of free s
 
 4. View the **Disk Usage** report to determine the percentage of free space.
 
-If the database doesn't have 50 percent free, perform the following steps to increase it for the upgrade:
+If the database doesn't have 50 percent free space, perform the following steps to increase it for the upgrade:
 
 1. On the computer that hosts the operational database, open **SQL Server Management Studio**.
 
