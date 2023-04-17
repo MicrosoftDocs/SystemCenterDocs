@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/28/2023
+ms.date: 04/13/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -37,7 +37,7 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 Gateway servers are often used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group. If the gateway server resides in a domain that isn't trusted by the domain that the System Center Operations Manager management group is in, certificates must be used to establish the computer's identity between gateway server and management server. This arrangement satisfies the requirement of SCOM Managed Instance (preview) for mutual authentication.
 
-You need to request certificates for each gateway and management server involved and import those certificates into the target computer using the `MOMCertImport.exe` tool, which is located on the installation media SupportTools\amd64 directory. You need to have access to a certification authority (CA) to request the right type of certificates, which can be a public CA, or you can use Microsoft Certificate Services. For more information about how to obtain a certificate, see [Obtain a certificate for use with Windows Servers and System Center Operations Manager](/SystemCenterDocs/scom/obtain-certificate-windows-server-and-operations-manager.md)
+You need to request certificates for each gateway and management server involved and import those certificates into the target computer using the `MOMCertImport.exe` tool, which is located on the installation media SupportTools\amd64 directory. You need to have access to a certification authority (CA) to request the right type of certificates, which can be a public CA, or you can use Microsoft Certificate Services. For more information about how to obtain a certificate, see [Obtain a certificate for use with Windows Servers and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md).
 
 ## Agent deployment
 
