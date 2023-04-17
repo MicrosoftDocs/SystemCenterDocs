@@ -249,7 +249,7 @@ This was used earlier for APM configuration, Privileged Monitoring Account, RunA
 
 ::: moniker-end
 
-## Verifying the installation
+## Verify the installation
 
 ### Confirm the health of the management server
 

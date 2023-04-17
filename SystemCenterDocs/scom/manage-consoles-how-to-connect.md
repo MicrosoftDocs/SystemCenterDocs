@@ -1,5 +1,5 @@
 ---
-title: How to Connect to the Operations and Web Console
+title: Connect to the Operations and Web Console
 description: This article describes how to open and configure the Operations Manager consoles to view monitoring data and perform administration in the management group.
 author: jyothisuri
 ms.author: jsuri
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
 ---
 
-# How to connect to the Operations and Web Console
+# Connect to the Operations and Web Console
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -28,13 +28,14 @@ To view operational data and administer the management group configuration, you 
 
 In this section, we provide information on how to connect to the Operations and Web consoles.
 
-## How to connect to the Operations console
+## Connect to the Operations console
 
 The System Center Operations Manager Operations console can be installed on any computer that meets the [system requirements](./system-requirements.md). When you open the Operations console on a management server, the console connects to that management server; however, you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that isn't a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog.  
 
 ![Screenshot showing Dialog box to connect console to server.](./media/manage-consoles-how-to-connect/om2016-operations-console-connect-to-server.png)  
 
 ::: moniker range="= sc-om-2016"
+
 ### Connect an Operations console to a management server
 
 Follow these steps to connect an Operations console to a management server:
@@ -65,9 +66,9 @@ The Operations console opens with the focus on the Monitoring workspace.
 
     ![Screenshot showing Connect option from the Tools menu.](./media/manage-consoles-how-to-connect/om2016-operations-console-menu-connect.png)  
 
-## How to Connect to the Web console
+## Connect to the Web console
 
-In System Center Operations Manager, the web console provides a monitoring interface for a management group that can be opened on any computer that has connectivity to the Web console server. The Web console is limited to My Workspace and the Monitoring workspace.  
+In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer that has connectivity to the Web console server. The Web console is limited to My Workspace and the Monitoring workspace.  
 
 ::: moniker range="<sc-om-1807"
 
@@ -76,7 +77,7 @@ In System Center Operations Manager, the web console provides a monitoring inter
 
 ::: moniker-end
 
-By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center\Operations Manager\\WebConsole\WebHost is the default path) and changing the *autoSignOutInterval* value from "30" to a shorter or longer interval, or disable the session limit by changing the value to "0", as shown in the following example.  
+By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center\Operations Manager\\WebConsole\WebHost is the default path) and changing the *autoSignOutInterval* value from **30** to a shorter or longer interval, or disable the session limit by changing the value to **0**, as shown in the following example.  
 
 ```  
 <connection autoSignIn="true" autoSignOutInterval="0">  
