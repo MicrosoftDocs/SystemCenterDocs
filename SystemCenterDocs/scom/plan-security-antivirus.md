@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This article outlines antivirus exclusions as they pertain to System Center - Operations Manager.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
+This article outlines antivirus exclusions as they pertain to System Center - Operations Manager.  For earlier versions of Operations Manager, see [Antivirus exclusions (Operations Manager 2012, 2012 R2, and 2016)](/troubleshoot/system-center/scom/antivirus-exclusions-recommendations).
 
 For specific exclusion recommendations for supported versions of SQL Server, see [KB309422](https://support.microsoft.com/help/309422/choosing-antivirus-software-for-computers-that-run-sql-server).
 
