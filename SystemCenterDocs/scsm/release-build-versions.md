@@ -5,7 +5,7 @@ description: This article details the release builds in Service Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/18/2023
+ms.date: 02/13/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -48,7 +48,6 @@ The following table lists the release history for Service Manager 2019.
 | 10.19.1035.73	 | [4532891](https://support.microsoft.com/help/4532891/update-rollup-1-for-system-center-service-manager-2019) | January 2020 | Update Rollup 1    |
 | 10.19.1035.101 | [4558753](https://support.microsoft.com/help/4558753/update-rollup-2-for-system-center-service-manager-2019) | July 2020 | Update Rollup 2    |
 | 10.19.1035.137 | [5013428](https://support.microsoft.com/help/5013428/update-rollup-4-for-system-center-service-manager-2019) | June 2022 | Update Rollup 4    |
-| - | - | April 2023 | Update Rollup 5 |
 
 ::: moniker-end
 
