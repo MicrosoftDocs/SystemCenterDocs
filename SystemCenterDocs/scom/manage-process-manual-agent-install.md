@@ -86,9 +86,9 @@ Follow these steps to override the manual agent installation setting for a singl
 
 7.  Select **OK**.
 
-## Approve a pending agent installation when automatic approval is not configured
+## Approve a pending agent installation when automatic approval isn't configured
 
-Follow these steps to approve a pending agent installation when automatic approval is not configured:
+Follow these steps to approve a pending agent installation when automatic approval isn't configured:
 
 1.  In the Operations console, select **Administration**.
 

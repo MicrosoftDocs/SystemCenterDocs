@@ -26,7 +26,7 @@ The Discovery Wizard doesn't show computers that the management group is already
 
 When agents are pushed out to computers, System Center Operations Manager sends credentials that have local administrator rights for that computer; this is required to install the agent.
 
-If the Discovery Wizard isn't right for your needs (for example, if you've a set list of computers to which you want to deploy agents), you've the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
+If the Discovery Wizard isn't right for your needs (for example, if you have a set list of computers to which you want to deploy agents), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
 
 Use the following procedure to discover computers running Windows and deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](./system-requirements.md).
 
