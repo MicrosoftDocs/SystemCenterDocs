@@ -6,7 +6,7 @@ ms.custom: na, UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/04/2023
+ms.date: 04/17/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -106,7 +106,7 @@ You can use the following procedure as part of your disaster recovery preparatio
 #### To start the SQL Server Script wizard  
 
 1.  Using an account with Administrator privileges, sign in to the computer that hosts the Service Manager or data warehouse database.  
-2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Microsoft SQL Server 2008 R2**, and select **SQL Server Management Studio**.  
+2.  On the Windows desktop, select **Start**, point to **Programs**, point to the Microsoft SQL Server version installed on your computer, and select **SQL Server Management Studio**.  
 3.  In the **Connect to Server** dialog, do the following:  
     1.  In the **Server Type** list, select **Database Engine**.  
     2.  In the **Server Name** list, select the server and the instance for your Service Manager database. For example, select **computer\\INSTANCE1**.  

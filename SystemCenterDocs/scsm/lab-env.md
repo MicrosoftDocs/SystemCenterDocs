@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/04/2023
+ms.date: 04/17/2023
 ms.technology: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23
@@ -26,7 +26,7 @@ Many of the procedures in this article are lengthy and might take a considerable
 
 ## Restore the Service Manager database in the lab environment
 
-Use the following procedure to restore the production Service Manager database using Microsoft SQL Server 2016.  
+Use the following procedure to restore the production Service Manager database using Microsoft SQL Server 2016 or later.  
 
 
 1. After connecting to the appropriate instance of the Microsoft SQL Server Database Engine, in Object Explorer, select the server name to expand the server tree.  
