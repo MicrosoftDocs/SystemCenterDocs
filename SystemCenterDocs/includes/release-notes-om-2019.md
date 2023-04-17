@@ -193,6 +193,9 @@ For the problems fixed in UR5 and the installation instructions for UR5, see [th
 
 ### Web console security vulnerabilities
 
+>[!NOTE]
+> Ensure to take the backup of *Web.config* files before you apply this update rollup.
+
 **Description**: Operations Manager 2019 Web console has security vulnerabilities.
 
-**Workaround**: With Operations Manager 2019 UR5, several Web console security vulnerabilities are fixed. Because of these fixes, the Web.config files of both HTMLDashboard and MonitoringView web apps will be replaced. Any earlier settings of these apps will be lost, and you will need to redo the changes.
+**Workaround**: With Operations Manager 2019 UR5, several Web console security vulnerabilities are fixed. Because of these fixes, the *Web.config* files of both `HTMLDashboard` and `MonitoringView` web apps will be replaced. Any earlier settings of these apps will be lost, and you will need to redo the changes.
