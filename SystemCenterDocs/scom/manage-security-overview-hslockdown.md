@@ -4,9 +4,9 @@ title: Control Access by Using the Health Service Lockdown Tool in Operations Ma
 description: This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/23/2018
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -23,7 +23,7 @@ ms.topic: article
 On computers requiring high security, for example a domain controller, you may need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.  
 
 > [!NOTE]  
-> You will be unable to start the Microsoft Monitoring Agent service if you have used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the Microsoft Monitoring Agent service, follow the second procedure in this topic to unlock the Action Account.  
+> You will be unable to start the Microsoft Monitoring Agent service if you've used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the Microsoft Monitoring Agent service, follow the second procedure in this article to unlock the Action Account.  
 
 The following command\-line options are available:  
 
@@ -47,49 +47,49 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 ## To deny an account with the health service lockdown tool  
 
-1.  Log on to the computer with an account that is a member of the Administrators group.  
+1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
-2.  On the Windows desktop, click **Start**, and then click **Run**.  
+2.  On the Windows desktop, select **Start**, and then select **Run**.  
 
-3.  In the **Run** dialog box, type **cmd** and then click **OK**.  
+3.  In the **Run** dialog, enter **cmd** and then select **OK**.  
 
-4.  At the command prompt, type ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
+4.  At the command prompt, enter ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
 
-5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
+5.  Enter `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type `HSLockdown.exe [Management Group Name] /D [account or group]` to deny the group or account, and then press **ENTER**.  
+6.  Enter `HSLockdown.exe [Management Group Name] /D [account or group]` to deny the group or account, and then press **ENTER**.  
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
 ## To unlock the Action account  
 
-1.  Log on to the computer with an account that is a member of the Administrators group.  
+1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
-2.  On the Windows desktop, click **Start**, and then click **Run**.  
+2.  On the Windows desktop, select **Start**, and then select **Run**.  
 
-3.  In the **Run** dialog box, type **cmd** and then click **OK**.  
+3.  In the **Run** dialog, enter **cmd** and then select **OK**.  
 
-4.  At the command prompt, type ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
+4.  At the command prompt, enter ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
 
-5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
+5.  Enter `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type `HSLockdown.exe [Management Group Name] /A <Action Account>` and then press **ENTER**.  
+6.  Enter `HSLockdown.exe [Management Group Name] /A <Action Account>` and then press **ENTER**.  
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
 ## To add the Local System account
 
-1.  Log on to the computer with an account that is a member of the Administrators group.  
+1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
-2.  On the Windows desktop, click **Start**, and then click **Run**.  
+2.  On the Windows desktop, select **Start**, and then select **Run**.  
 
-3.  In the **Run** dialog box, type **cmd** and then click **OK**.  
+3.  In the **Run** dialog, enter **cmd** and then select **OK**.  
 
-4.  At the command prompt, type ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
+4.  At the command prompt, enter ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
 
-5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
+5.  Enter `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type `HSLockdown.exe [Management Group Name] /A “NT AUTHORITY\SYSTEM”` and then press **ENTER**.
+6.  Enter `HSLockdown.exe [Management Group Name] /A “NT AUTHORITY\SYSTEM”` and then press **ENTER**.
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
@@ -99,4 +99,4 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 - If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](manage-security-create-runas-actionaccount.md).
 
-- Review [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md) to understand how to target Run As account  distribution to agent-managed computers securely.  
+- To understand how to target Run As account distribution to agent-managed computers securely, review [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  

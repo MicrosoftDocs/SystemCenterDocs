@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 11/15/2016
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -40,61 +40,61 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 1.  Sign in as the root user, and uninstall the agent by entering
 
-    **rpm -e scx**
+    `rpm -e scx`
 
 2.  To verify that the package is uninstalled, enter
 
-    **rpm -q scx**
+    `rpm -q scx`
 
 ### To uninstall the agent from RPM based Universal Linux servers (Oracle and Centos)
 
 1.  Sign in as the root user, and uninstall the agent by entering
 
-    **rpm -e scx**
+    `rpm -e scx`
 
 2.  To verify that the package is uninstalled, enter
 
-    **rpm -q scx**
+    `rpm -q scx`
 
 ### To uninstall the agent from DEB based Universal Linux servers (Debian and Ubuntu)
 
 1.  Sign in as the root user, and uninstall the agent by entering
 
-    **dpkg -P scx**
+    `dpkg -P scx`
 
 2.  To verify that the package is uninstalled, enter
 
-    **dpkg -l scx**
+    `dpkg -l scx`
 
 ### To uninstall the agent from Solaris computers
 
 1.  Sign in as the root user, and uninstall the agent by entering
 
-    **pkgrm MSFTscx**
+    `pkgrm MSFTscx`
 
 2.  To verify that the package is uninstalled, enter
 
-    **pkginfo -I MSFTscx**
+    `pkginfo -I MSFTscx`
 
 ### To uninstall the agent from HP-UX
 
 1.  Sign in as the root user, and uninstall the agent by entering
 
-    **swremove scx**
+    `swremove scx`
 
 2.  To verify that the package is uninstalled, enter
 
-    **swlist scx**
+    `swlist scx`
 
 ### To uninstall the agent from IBM AIX
 
 1.  Sign in as the root user, and uninstall the agent by entering
 
-    **installp -u scx**
+    `installp -u scx`
 
 2.  To verify that the package is uninstalled, enter
 
-    **lslpp -L scx.rte**
+    `lslpp -L scx.rte`
 
 ## Next steps
 

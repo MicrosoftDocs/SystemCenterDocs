@@ -1,13 +1,14 @@
 ---
 title: How to recover a database
 description: Describes how to restore a database from backup in System Center - Orchestrator.
-ms.date: 01/17/2018
+ms.date: 04/12/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
+ms.custom: engagement-fy23
 ---
 
 # Recover a database
@@ -25,25 +26,29 @@ However, there are a few key considerations when restoring.
 ## Orchestrator cryptography  
 Orchestrator provides a set of services for encryption and decryption of runbook properties and published data. These services are based on Microsoft SQL Server 2008 R2 cell\-level encryption. The Orchestrator database has a database encryption key that is created during its installation. This key is generated using a random passphrase. When a full database backup is performed, the key is backed up with the database. Likewise, the key is restored when the database is restored.  
 
-However, the encryption services also depend on the MS SQL Server Service Master Key. The service master key should be backed up and stored in a secure, off\-site location. Creating this backup should be one of the first administrative actions performed on the server. [Learn more](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
+However, the encryption services also depend on the MS SQL Server Service Master Key. The service master key should be backed up and stored in a secure, off-site location. Creating this backup should be one of the first administrative actions performed on the server. [Learn more](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
 
 The database key is essentially paired with the service master key on the database server targeted by the installer. If either the database key or the service master key is lost, encrypted data stored in the data is likewise lost. This would include the license key, either entered by the user or an automatically created trial license.  
 
 ### Run a backup
 
-1.  [Back up the service master key for Microsoft SQL Server](/sql/t-sql/statements/backup-service-master-key-transact-sql). This is a one\-time operation. Note "password" is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
+Follow these steps to run a backup:
+
+1.  [Back up the service master key for Microsoft SQL Server](/sql/t-sql/statements/backup-service-master-key-transact-sql). This is a one\-time operation. Note **password** is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key can't be recovered from the file.  
 
     ```sql
     BACKUP SERVICE MASTER KEY TO FILE = 'path_to_file'  
                 ENCRYPTION BY PASSWORD = 'password'  
     ```  
 
-2.  Back up the entire Orchestrator database. The backup may be performed when the system is running, but it is best to perform the backup when all runbook authors have checked in any pending changes to their runbooks. Pending changes are cached on the Runbook Designer and are not backed up with a database backup.  
+2.  Back up the entire Orchestrator database. The backup may be performed when the system is running, but it's best to perform the backup when all runbook authors have checked in any pending changes to their runbooks. Pending changes are cached on the Runbook Designer and aren't backed up with a database backup.  
 
-### To restore the database  
+### Restore the database  
 
-1.  If you are restoring to the same database server from which the backup was taken, and the service master key has not changed, simply restore the backup.  
-2.  If you are restoring to a different database server with a different service master key, or you are restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server](/sql/t-sql/statements/restore-service-master-key-transact-sql). 
+Follow these steps to restore the database:
+
+1.  If you're restoring to the same database server from which the backup was taken and the service master key hasn't changed, simply restore the backup.  
+2.  If you're restoring to a different database server with a different service master key, or you're restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server](/sql/t-sql/statements/restore-service-master-key-transact-sql). 
 
     ```sql
     BACKUP SERVICE MASTER KEY TO FILE = 'c:\temp_backups\keys\service_master_key'   
@@ -57,14 +62,15 @@ The database key is essentially paired with the service master key on the databa
 4.  On the Orchestrator Management Server, run the Data Store Configuration utility (`DBSetup`) from the Start menu.  
 5.  Provide the connection details to connect to the new database.
     > [!NOTE]
-    > Do not use `localhost` or `.`. Explicitly specify the database server name and database name.  
+    > Don't use `localhost` or `.`. Explicitly specify the database server name and database name.  
 6.  Restart the Management Service.  
-7.  Run the Data Store Configuration utility on each Runbook Server. This utility is not located in the Start menu on Runbook Servers. It can be found in `<OrchestratorInstallDir>\Management Server`.
+7.  Run the Data Store Configuration utility on each Runbook Server. This utility isn't located in the Start menu on Runbook Servers. It can be found in `<OrchestratorInstallDir>\Management Server`.
     > [!NOTE]
     > For Runbook Servers installed on the same server as the Management Server one doesn't need to run the Data Store Configuration utility a second time. Running it once will update the configuration for both the Management Server and Runbook Server at the same time.  
 8.  Restart the Runbook Server\(s\).  
 9.  Follow the Web Components Recovery Process to update the Web Components to connect to the new database.  
 
 ## Next steps
-[How to Recover Web Components](how-to-recover-web-components.md)
-[How to Configure Orchestrator Database Connections](how-to-configure-orchestrator-database-connections.md)
+
+- [How to Recover Web Components](how-to-recover-web-components.md)
+- [How to Configure Orchestrator Database Connections](how-to-configure-orchestrator-database-connections.md)

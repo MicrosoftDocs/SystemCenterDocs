@@ -9,6 +9,7 @@ ms.date: 02/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 
@@ -48,6 +49,7 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 2. Select **Add group** > **Add Resources** > **Hyper-V hosts and Clusters**.
 3. In the **Add Resource Wizard** > **Resource location**, select where the server you want to add is located.
 	- If you're adding a host in a perimeter network, select **Windows Server computer in a perimeter network**.
+      
 4. In **Credentials**, specify credentials for a domain account that has administrative permissions on all hosts that you want to add. (For computers in an untrusted domain, you must use a Run As account.)
 
    >[!NOTE]
@@ -55,11 +57,11 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 
 5. In **Discovery scope** specify:
 
-  - **Same domain or domains with two-way trust**:
-     - If you select **Specify Windows Server** computers by names, in **Computer names** enter names or IP addresses, one per line. If you're adding a Hyper-V host cluster, specify the name or IP address of the cluster or of any cluster node.
-     - If you select **Specify an Active Directory** query to search for Windows Server computers, you can type or generate a query.
-     - **Untrusted domain**: Discovery page doesn't appear.
-     - **Disjointed namespace**: Enter the host FQDN and select **Skip AD verification**.
+      - **Same domain or domains with two-way trust**:
+         - If you select **Specify Windows Server** computers by names, in **Computer names** enter names or IP addresses, one per line. If you're adding a Hyper-V host cluster, specify the name or IP address of the cluster or of any cluster node.
+         - If you select **Specify an Active Directory** query to search for Windows Server computers, you can type or generate a query.
+         - **Untrusted domain**: Discovery page doesn't appear.
+         - **Disjointed namespace**: Enter the host FQDN and select **Skip AD verification**.
 
 6. In **Target resources**, specify the computers you want to add. Repeat for all hosts. If discovery succeeds, the host will be listed under **Computer name**. Add as follows:
 

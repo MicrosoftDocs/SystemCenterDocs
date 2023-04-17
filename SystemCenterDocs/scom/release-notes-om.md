@@ -4,11 +4,12 @@ title: Release notes for System Center Operations Manager
 description: This article details the known issues and workarounds in Operations Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
 ms.date: 04/18/2023
+manager: mkluck
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
+ms.custom: UpdateFrequency.5
 ---
 
 # Release notes for System Center Operations Manager

@@ -1,7 +1,7 @@
 ---
 title: Add Group To Group
 description: You can use the Add Group To Group activity in a runbook to add a group to a group in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 3017b8c2-be10-44cf-a806-e7ec13d4e8c7
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add Group To Group

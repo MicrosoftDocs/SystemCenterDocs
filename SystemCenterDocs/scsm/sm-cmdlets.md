@@ -1,7 +1,7 @@
 ---
 title: Configure and use Service Manager cmdlets
 description: This article provides an introduction to the Service Manager cmdlets for the Windows PowerShell command-line interface and describes how to get started using them.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -10,6 +10,7 @@ keywords:
 ms.date: 05/06/2019
 ms.technology: service-manager
 ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
+ms.custom: UpdateFrequency2
 ---
 
 # Configure and use Service Manager cmdlets for Windows PowerShell
@@ -34,31 +35,31 @@ The Service Manager cmdlets are implemented in the following two modules:
 
 Windows PowerShell is a Windows command-line shell that includes an interactive prompt and a scripting environment. Windows PowerShell uses cmdlets to manipulate the Windows PowerShell objects. Service Manager includes many cmdlets that you can use to perform various Service Manager-related tasks without using the Service Manager console. For example, you can use the **Import-SCSMManagementPack** cmdlet to import a management pack.
 
-The Service Manager cmdlets are delivered in two modules that are listed below. In Service Manager, these cmdlet modules are not installed in the typical path that is listed in the $env:PSModulePath variable. Therefore, if you run the `Get-Module -List` cmdlet, the Service Manager modules are not listed.
+The Service Manager cmdlets are delivered in two modules that are listed below. In Service Manager, these cmdlet modules aren't installed in the typical path that is listed in the $env:PSModulePath variable. Therefore, if you run the `Get-Module -List` cmdlet, the Service Manager modules aren't listed.
 
--   Administrator cmdlets: The System.Center.Service.Manager module which contains the cmdlets that are needed for common administrative tasks.
+-   Administrator cmdlets: The System.Center.Service.Manager module that contains the cmdlets that are needed for common administrative tasks.
 
--   Data warehouse cmdlets: The Microsoft.EnterpriseManagement.Warehouse.Cmdlets module which contains the cmdlets that are needed for operating on the Service Manager data warehouse.
+-   Data warehouse cmdlets: The Microsoft.EnterpriseManagement.Warehouse.Cmdlets module that contains the cmdlets that are needed for operating on the Service Manager data warehouse.
 
 The data warehouse cmdlets operate on the data warehouse database, and you can run them on both the  Service Manager management server or the data warehouse management server.
 
-Data returned from Windows PowerShell command might contain more information than can be displayed in a default Windows PowerShell command window. We recommend increasing the width of the command window: Right-click the title bar, click **Properties**, and in the **Layout** tab, set the **Screen Buffer Size** width to 120.
+Data returned from Windows PowerShell command might contain more information than can be displayed in a default Windows PowerShell command window. We recommend increasing the width of the command window: Right-click the title bar, select **Properties**, and in the **Layout** tab, set the **Screen Buffer Size** width to 120.
 
 The following procedures help you to get started with Service Manager cmdlets.
 
 ### To open a Service Manager Windows PowerShell session from the Service Manager console
 
-1.  In the Service Manager console, click **Administration**.
+1.  In the Service Manager console, select **Administration**.
 
-2.  On the **Tasks** pane, click **Start PowerShell Session**.
+2.  On the **Tasks** pane, select **Start PowerShell Session**.
 
 The administrator cmdlet module is automatically pre-imported in this session.
 
 ### To open a Service Manager Windows PowerShell session from Windows
 
-1. On the computer that hosts the Service Manager management server, on the taskbar, click **Start**, point to **All Programs**, and then click **Microsoft System Center**.
+1. On the computer that hosts the Service Manager management server, on the taskbar, select **Start**, point to **All Programs**, and select **Microsoft System Center**.
 
-2. Click **Service Manager \<version\>**, and then click **Service Manager Shell**.
+2. Select **Service Manager \<version\>**, and select **Service Manager Shell**.
 
 The administrator cmdlet module is automatically pre-imported in this session.
 
@@ -66,13 +67,13 @@ The administrator cmdlet module is automatically pre-imported in this session.
 
 1.  Open a Service Manager Windows PowerShell session.
 
-2.  To list the cmdlets that are included in the administrator module, in the Service Manager Windows PowerShell session, type the following, and then press ENTER:
+2.  To list the cmdlets that are included in the administrator module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
 
     ```
     Get-Command -module System.Center.Service.Manager
     ```
 
-3.  To list the cmdlets that are included in the data warehouse module, in the Service Manager Windows PowerShell session, type the following, and then press ENTER:
+3.  To list the cmdlets that are included in the data warehouse module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
 
     ```
     Get-Command -module Microsoft.EnterpriseManagement.Warehouse.Cmdlets
@@ -146,7 +147,7 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |New-SCSMCMConnector|Creates a new Configuration Manager connector in Service Manager.|
 |New-SCSMDCMWorkflow|Creates a new desired configuration management workflow in Service Manager.|
 |New-SCSMEmailTemplate|Creates a new Email template for Service Manager.|
-|New-SCSMManagementGroupConnection|Creates a new connection for the specified management group. The most recent management group connection that was created is the active connection that  **Get-** cmdlets use by default, in which you did not specify the **ComputerName** and **Credential**, or the **SCSession** parameters.|
+|New-SCSMManagementGroupConnection|Creates a new connection for the specified management group. The most recent management group connection that was created is the active connection that  **Get-** cmdlets use by default, in which you didn't specify the **ComputerName** and **Credential**, or the **SCSession** parameters.|
 |New-SCSMManagementPack|Creates a new management pack.|
 |New-SCSMManagementPackBundle|Bundles individual management packs and their resources, creating a new management pack bundle.|
 |New-SCSMOMAlertConnector|Creates a new Operations Manager alert connector in Service Manager.|
@@ -218,4 +219,4 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 
 ## Next steps
 
-- [Manage the data warehouse](manage-dw.md) to perform maintenance tasks on data warehouse jobs.
+- To perform maintenance tasks on data warehouse jobs, see [Manage the data warehouse](manage-dw.md).

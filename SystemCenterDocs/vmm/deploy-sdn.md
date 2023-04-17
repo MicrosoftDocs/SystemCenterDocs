@@ -9,7 +9,7 @@ ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment
+ms.custom: intro-deployment, UpdateFrequency2
 ---
 
 # Deploy and manage a Software Defined Network (SDN) infrastructure in the VMM fabric

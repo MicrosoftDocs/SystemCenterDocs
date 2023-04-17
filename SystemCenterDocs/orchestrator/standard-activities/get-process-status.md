@@ -1,7 +1,7 @@
 ---
 title: Get Process Status
 description: This article describes the functionality of Get Process Status activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 58173cdc-97ea-4ecf-a7b8-4e48c30fea5b
 caps.latest.revision: 18
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Get Process Status
 

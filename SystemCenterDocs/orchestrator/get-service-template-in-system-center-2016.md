@@ -1,7 +1,7 @@
 ---
 title: Get Service Template in System Center 2016
-description: The Get Service Template activity is used in a runbook to return a list of all service templates. The activity publishes all of the data from the required and optional properties into published data.
-ms.custom: na
+description: The Get Service Template activity is used in a runbook to return a list of all service templates. The activity publishes all the data from the required and optional properties into published data.
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,15 +12,15 @@ ms.topic: article
 ms.assetid: 123a7e67-47af-4ec5-af94-22f3866d6d4a
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 monikerRange: '=sc-orch-2016'
 ---
 
 # Get Service Template in System Center 2016
 
-The Get Service Template activity is used in a runbook to return a list of all service templates.
+The Get Service Template activity is used in a runbook to return a list of all the service templates.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Service Template Required Properties
 
@@ -32,4 +32,4 @@ There are no optional properties for this activity.
 
 ## Get Service Template Published Data
 
-There is no published data for this activity.
+There's no published data for this activity.

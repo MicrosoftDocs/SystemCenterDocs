@@ -1,7 +1,7 @@
 ---
 ms.assetid: 8285d0f9-7069-4abf-b83e-ba5898dd73ff
 title: Enabling agent proxy option in Management Pack for SQL Server
-description: This article explains how to enable the aget proxy option
+description: This article explains how to enable the agent proxy option
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
@@ -23,6 +23,6 @@ To enable the **Agent Proxy** option, perform the following steps:
 
 3. Double-click an agent.
 
-4. On the **Security** tab, select the **Allow this agent to act as a proxy and discover managed objects on other computers** checkbox, and click **OK**.
+4. On the **Security** tab, select the **Allow this agent to act as a proxy and discover managed objects on other computers** checkbox, and select **OK**.
 
-    ![Enable agent proxy option](./media/sql-server-management-pack/enabling-agent-proxy-option.png)
+    ![Screenshot showing Enable agent proxy option.](./media/sql-server-management-pack/enabling-agent-proxy-option.png)

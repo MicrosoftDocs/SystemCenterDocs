@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 08/04/2020
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -50,7 +50,7 @@ System Center Operations Manager provides the reports described in the following
 |Overrides|This report shows overrides configured in or applied to selected management packs over time.|  
 |Performance|This report shows selected objects and performance counter values graphically over time.|  
 |Performance Detail|This report shows selected objects and performance counter values graphically over time.|  
-|Performance Top Instances|This report shows the top or bottom "N" instances for selected objects and a specific performance counter rule.|  
+|Performance Top Instances|This report shows the top or bottom **N** instances for selected objects and a specific performance counter rule.|  
 |Management pack history |This report generates the list of all the management packs, which are either imported or deleted on any management server in your management group. You can filter the report by date, action and username.|  
 | Management pack objects |This report tracks and generates the list of all management pack objects, which are newly created or deleted from the management server. This report also tracks edits on management pack objects such as renaming a group/monitor/rule or adding/deleting a member in the group etc.|  
 |Overrides tracking |This report tracks the overrides in detail, and supports fields such as Management pack name, Object name, Object type, Affected Property, Old value, New value, Target of the object type and Date.|  
@@ -59,16 +59,16 @@ System Center Operations Manager provides the reports described in the following
 
 |Report|Description|  
 |----------|---------------|  
-|Top N Applications|This report shows the top "N" applications based on their crash count and provides details for each application.|  
-|Top N Applications Growth and Resolution|This report shows the top "N" applications based on their growth percentile computed against two specified time intervals.|  
-|Top N Error Groups|This report shows the top "N" error groups based on their crash count.|  
-|Top N Error Groups Growth and Resolution|This report shows the top "N" error groups based on their growth percentile computed against two specified time intervals.|  
+|Top N Applications|This report shows the top **N** applications based on their crash count and provides details for each application.|  
+|Top N Applications Growth and Resolution|This report shows the top **N** applications based on their growth percentile computed against two specified time intervals.|  
+|Top N Error Groups|This report shows the top **N** error groups based on their crash count.|  
+|Top N Error Groups Growth and Resolution|This report shows the top **N** error groups based on their growth percentile computed against two specified time intervals.|  
 
 ## Microsoft Data Warehouse Reports  
 
 |Report|Description|  
 |----------|---------------|  
-|Data Warehouse Availability|This report shows the availability of the data warehouse components based on the monitor "Data Warehouse Connectivity and Processes State".|  
+|Data Warehouse Availability|This report shows the availability of the data warehouse components based on the monitor **Data Warehouse Connectivity and Processes State**.|  
 |Data Warehouse Events|This report shows data warehouse\-related events to help determine data warehouse health.|  
 |Data Warehouse Properties|This report shows data warehouse properties and grooming settings.|  
 

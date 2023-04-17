@@ -9,7 +9,7 @@ ms.date: 05/26/2022
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.custom: intro-installation
+ms.custom: intro-installation, UpdateFrequency2
 ---
 
 # Install Service Manager on a single computer (minimum configuration)

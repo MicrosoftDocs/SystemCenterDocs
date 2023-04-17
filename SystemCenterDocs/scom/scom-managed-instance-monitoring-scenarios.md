@@ -2,11 +2,11 @@
 ms.assetid: 
 title: Azure Monitor SCOM Managed Instance (preview) monitoring scenarios
 description: This article provides a high-level overview of the supported monitoring scenarios with Azure Monitor SCOM Managed Instance (preview).
-author: v-pgaddala
-ms.author: v-pgaddala
+author: Farha-Bano
+ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/15/2023
-ms.custom: na
+ms.date: 02/13/2023
+ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article

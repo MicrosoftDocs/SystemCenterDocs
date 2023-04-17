@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 07/19/2018
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 monikerRange: '>=sc-om-1807'
 ms.assetid:

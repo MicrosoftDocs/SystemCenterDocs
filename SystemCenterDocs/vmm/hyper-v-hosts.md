@@ -23,7 +23,7 @@ Read this article to learn how set up and manage Hyper-V hosts and clusters in t
 
 You can manage medium, large, and enterprise-scale Hyper-V deployments in the VMM fabric. VMM provides a number of features that allow you to manage and scale growing numbers of Hyper-V servers more easily than in Hyper-V Manager.
 
-In the VMM fabric you can:
+In the VMM fabric, you can:
 
 - [Perform rolling upgrades](hyper-v-rolling-upgrade.md) of Hyper-V clusters in the VMM fabric.
 - [Add existing Windows servers and clusters](hyper-v-existing.md) with or without the Hyper-V role to the VMM fabric.

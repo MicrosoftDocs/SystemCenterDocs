@@ -26,6 +26,6 @@ A Run As account is a container for a set of stored credentials. In VMM, a Run A
 
 
 1. Select **Settings**, and in **Create**, select **Create Run As Account**.
-2. In **Create Run As Account**,  specify name and optional description to identify the credentials in VMM.
+2. In **Create Run As Account**, specify name and optional description to identify the credentials in VMM.
 3. In **User name** and **Password**, specify the credentials. The credentials can be a valid Active Directory user or group account or local credentials.
 4.  Clear **Validate domain credentials** if you don't need them, and select **OK** to create the Run As account.

@@ -5,11 +5,13 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 03/06/2023
+ms.date: 04/18/2023
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
 ms.author: jsuri
+monikerRange: '>sc-dpm-2016'
+ms.custom: UpdateFrequency.5
 ---
 
 # Use DPM to back up and restore VMware virtual machines
