@@ -5,11 +5,11 @@ description: This topic describes how to deploy the Operations Manager agent on 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/10/2021
-ms.custom: UpdateFrequency2, intro-installation
+ms.date: 04/17/2023
+ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Install Agent on Windows Using the Discovery Wizard
@@ -33,7 +33,9 @@ Use the following procedure to discover computers running Windows and deploy the
 > [!NOTE]
 > For information about port requirements for agents, see [Agent and Agentless Monitoring](/previous-versions/system-center/system-center-2012-R2/hh487284(v=sc.12)) in the Deployment Guide.
 
-## To install an agent on a computer running Windows by using the Discovery Wizard
+## Install an agent on a computer running Windows by using the Discovery Wizard
+
+Follow these steps to install an agent on a computer running Windows by using the Discovery Wizard:
 
 1. Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -111,7 +113,7 @@ Use the following procedure to discover computers running Windows and deploy the
         > [!IMPORTANT]
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they don't exist.
 
-    2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and type the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
+    2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and enter the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
 
     3. Leave **Install APM** set to the default if you intend to monitor a .NET web-based application on the targeted computer.  Otherwise, deselect the option.  
 

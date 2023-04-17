@@ -5,8 +5,8 @@ description: This article describes how to install the Operations Manager agent 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 10/19/2022
-ms.custom: UpdateFrequency2, intro-installation
+ms.date: 04/17/2023
+ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -30,7 +30,9 @@ Before you run the wizard, gather the following information:
 
 -   If defined, the name of the resource pool created to monitor UNIX or Linux computers. Resource pools can contain management servers or gateways for monitoring UNIX or Linux computers. For more information, see [Resource Pool Design Considerations](plan-resource-pool-design.md).
 
-## To discover and install an agent on a UNIX or Linux computer
+## Discover and install an agent on a UNIX or Linux computer
+
+Follow these steps to discover and install an agent on a UNIX or Linux computer:
 
 1.  Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -53,7 +55,7 @@ Before you run the wizard, gather the following information:
            > [!IMPORTANT]
            > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
-        c.  To specify the credentials for installing an agent, select **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
+        c.  To specify the credentials for installing an agent, select **Set credentials**. For detailed instructions, see **Credentials for Installing Agents** in [Setting Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
 
         Alternatively, to use default credentials, check the box **Use Run As Credentials**. If this option is selected, a default Run As account must be defined in the **UNIX/Linux Action Account** and **UNIX/Linux Agent Maintenance Account** Run As profiles. The default account is the one that is associated with **All Managed Objects**.
 

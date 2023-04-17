@@ -76,3 +76,7 @@ For more information about [Set-SCOMLicense](/powershell/module/operationsmanage
 For current information about your license, you can use the [Get-SCOMLicense](/powershell/module/operationsmanager/get-scomlicense) cmdlet. For more information, enter the following in the Operations Manager Command Shell:
 
 `get-help Get-SCOMLicense`
+
+## Next steps
+
+To understand the post-upgrade tasks to be performed once you've completed the upgrade process, see [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md).

@@ -40,8 +40,6 @@ Perform the following tasks when you've completed the upgrade process.
 
 After the upgrade has finished, use the following procedure to re-enable subscriptions.
 
-#### Re-enable the subscriptions
-
 1. Open the Operations console with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.
 2. In the Operations console, in the navigation pane, select the **Administration** button.
 
@@ -56,7 +54,7 @@ After the upgrade has finished, use the following procedure to re-enable subscri
 
 Refer to third-party documentation for any installed connectors to determine if the connectors are supported for System Center Operations Manager. If you stopped a connector for any reason during upgrade, restart the service.
 
-#### Restart a connector service
+Follow these steps to restart a connector service:
 
 1. Open the Services MMC snap-in. Select **Start**, and then enter **services.msc** in the **Start Search** box.
 2. In the **Name** column, right-click the connector that you want to restart, and select **Start**.

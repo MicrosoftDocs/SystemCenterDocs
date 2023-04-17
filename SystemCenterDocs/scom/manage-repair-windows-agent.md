@@ -5,14 +5,14 @@ description: This article describes how to repair the installation of the Operat
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/20/2018
-ms.custom: UpdateFrequency2
+ms.date: 04/17/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
-ms.topic: conceptual
+ms.topic: article
 ---
 
-# How to repair the Windows agent
+# Repair the Windows agent
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -27,7 +27,9 @@ With Operation Manager 1807 and later, you can reconfigure the Application Perfo
 
 ::: moniker-end  
 
-## To repair the installation of the agent by using the Operations console
+## Repair the installation of the agent by using the Operations console
+
+Follow these steps to repair the installation of the agent by using the Operations console:
 
 1. Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -68,7 +70,9 @@ With Operation Manager 1807 and later, you can reconfigure the Application Perfo
 
 7. Select **Close**.
 
-## To repair the agent by using the MOMAgent.msi setup wizard
+## Repair the agent by using the MOMAgent.msi setup wizard
+
+Follow these steps to repair the agent by using the MOMAgent.msi setup wizard:
 
 1. Sign in to a managed computer with an account that is a member of the Administrators security group for the computer.
 
@@ -86,7 +90,9 @@ With Operation Manager 1807 and later, you can reconfigure the Application Perfo
 
 8. Check the Application Event Log to confirm it completed successfully or for errors if the repair failed by searching at events from source **MsiInstaller**.
 
-## To repair the agent by using MOMAgent.msi from the command line
+## Repair the agent by using MOMAgent.msi from the command line
+
+Follow these steps to repair the agent by using MOMAgent.msi from the command line:
 
 1.  Sign in to a managed computer with an account that is a member of the administrators security group for the computer.
 
