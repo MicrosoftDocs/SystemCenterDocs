@@ -1,7 +1,7 @@
 ---
 ms.assetid:
-title: Configure Antivirus for Operations Manager Components
-description: This article provides design guidance for anti-virus exclusions as they relate to Operations Manager agent and server roles.
+title: Antivirus exclusions (Operations Manager 2019, 2022, and later)
+description: Describes some antivirus exclusions that relate to Operations Manager. These exclusions include process-based exclusions, directory-specific exclusions, and file name extension-specific exclusions.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configuring antivirus exclusions for agent and components
+# Antivirus exclusions that relate to Operations Manager 2019, 2022 and later
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
