@@ -5,8 +5,8 @@ description: This guide provides the post-upgrade tasks you must perform after u
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/22/2022
-ms.custom: na
+ms.date: 04/17/2023
+ms.custom: na, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -40,7 +40,7 @@ Perform the following tasks when you've completed the upgrade process.
 
 After the upgrade has finished, use the following procedure to re-enable subscriptions.
 
-#### To re-enable the subscriptions
+#### Re-enable the subscriptions
 
 1. Open the Operations console with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.
 2. In the Operations console, in the navigation pane, select the **Administration** button.
@@ -56,12 +56,12 @@ After the upgrade has finished, use the following procedure to re-enable subscri
 
 Refer to third-party documentation for any installed connectors to determine if the connectors are supported for System Center Operations Manager. If you stopped a connector for any reason during upgrade, restart the service.
 
-#### To restart a connector service
+#### Restart a connector service
 
 1. Open the Services MMC snap-in. Select **Start**, and then enter **services.msc** in the **Start Search** box.
 2. In the **Name** column, right-click the connector that you want to restart, and select **Start**.
 
-### Re-Enable Audit Collection Services
+### Re-enable Audit Collection Services
 
 If you had Audit Collection Services (ACS) enabled for an agent prior to upgrade, it was disabled as part of the agent upgrade process. Re-enable ACS as appropriate.
 
@@ -75,10 +75,9 @@ The default decimal value of DWORD type is 15360 (15 MB).
 
 Perform the following tasks to verify that the upgrade was successful.
 
-- Check the health state of the management and gateway servers, and agents in the Health Service Watcher state view. In the **Administration** workspace of the Operations console, ensure that the management and gateway servers, and agents are healthy. In the **Monitoring** workspace, check if there are any alerts related to the management group health.
-- Review the event logs of all the management servers for new errors.
-Sort alerts by the last-modified column to review the new alerts.
-- Monitor CPU and memory utilization, and disk I/O on your database servers to ensure that they're functioning normally.
+- Check the health state of the management and gateway servers, and agents in the Health Service Watcher state view. In the **Administration** workspace of the Operations console, ensure that the management and gateway servers and agents are healthy. In the **Monitoring** workspace, check if there are any alerts related to the management group health.
+- Review the event logs of all the management servers for new errors. Sort alerts by the last-modified column to review the new alerts.
+- Monitor CPU and memory utilization and disk I/O on your database servers to ensure that they're functioning normally.
 - If the Reporting feature is installed, select Reporting, and then run a generic performance report to ensure that Reporting is functioning correctly.
 
 ### Apply the workaround to make the AD rules work
@@ -109,4 +108,4 @@ Use the following steps to fix this issue:
 
 ## Next steps
 
-- To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  
+To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  
