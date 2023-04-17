@@ -5,7 +5,7 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 12/30/2022
+ms.date: 04/13/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -40,7 +40,9 @@ You must ensure that your server meets the minimum supported configurations for 
 
 -   Reporting Services - Native
 
-### To install the single server management group configuration
+### Install the single server management group configuration
+
+Follow these steps to install the single server management group configuration:
 
 1. Sign in to the server by using an account that has local administrative credentials.
 
@@ -107,14 +109,14 @@ You must ensure that your server meets the minimum supported configurations for 
 
 6. If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
-7. On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, type in a name for your management group and then select **Next**.
+7. On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, enter a name for your management group and then select **Next**.
 
    > [!NOTE]
-   > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:
+   > After the management group name is set, it can't be changed. The Management Group name can't contain the following characters:
    > ```
    > ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] < > { }
    > ```
-   > Also, the Management Group name cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
+   > Also, the Management Group name can't have a leading or trailing space. It's recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
 
 8. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and select **Next**.
 
@@ -151,7 +153,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
 
-12. When the **Configuration**, **Configure the data warehouse database** page opens, in the **Server name and instance name** box, type the server name and the name of the instance of SQL Server for the database server that will host the data warehouse database.
+12. When the **Configuration**, **Configure the data warehouse database** page opens, in the **Server name and instance name** box, enter the server name and the name of the instance of SQL Server for the database server that will host the data warehouse database.
 
 13. Because this is a single-server installation, accept the default value of **Create a new data warehouse database**.
 
@@ -185,11 +187,13 @@ You must ensure that your server meets the minimum supported configurations for 
 
 22. When Setup is finished, the **Setup is complete** page appears. Select **Close** and the Operations console will open.
 
-### To install the Operations Manager single server management group configuration from the Command Prompt
+### Install the Operations Manager single server management group configuration from the command prompt
+
+Follow these steps to install the Operations Manager single server management group configuration from the command prompt:
 
 1.  Sign in to the server by using an account that has local administrative credentials.
 
-2.  Open the Command Prompt by using the **Run as Administrator** option.
+2.  Open the command prompt by using the **Run as Administrator** option.
 
     > [!NOTE]
     > Setup.exe requires administrator privileges because the Setup process requires access to system processes that can only be used by a local administrator.
@@ -245,20 +249,24 @@ This was used earlier for APM configuration, Privileged Monitoring Account, RunA
 
 ::: moniker-end
 
-## Verifying the installation
+## Verify the installation
 
-#### To confirm the health of the management server
+### Confirm the health of the management server
+
+Follow these steps to confirm the health of the management server:
 
 1.  In the Operations console, select the **Administration** workspace.
 
 2.  In **Device Management**, select **Management Servers**. In the results pane, you should see the Management server that you installed with a green check mark in the **Health State** column.
 
-#### To confirm the health of Operations Manager reports
+### Confirm the health of Operations Manager reports
+
+Follow these steps to confirm the health of Operations Manager reports:
 
 1.  In the Operations console, in the navigation pane, select the **Reporting** button.
 
     > [!NOTE]
-    > After the initial deployment, it can take up to 30 minutes for reports to appear.
+    > After the initial deployment, it can take up to 30 minutes for the reports to appear.
 
 2.  Select **Microsoft ODR Report Library**, and then double-click any of the reports listed. The selected report is generated and displays in a new window.
 
