@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Antivirus exclusions that relate to Operations Manager 2019, 2022 and later
+# Antivirus exclusions that relate to Operations Manager 2019, 2022, and later
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
