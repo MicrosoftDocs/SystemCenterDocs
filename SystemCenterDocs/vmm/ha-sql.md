@@ -19,7 +19,7 @@ ms.custom: intro-deployment
 
 ::: moniker-end
 
-This article describes the steps for deploying a highly available SQL Server database for System Center - Virtual Machine Manager (VMM). You set up a SQL Server cluster, configure the SQL Server VMM database with Always On Availability Groups.
+This article describes the steps for deploying a highly available SQL Server database for System Center - Virtual Machine Manager (VMM). You set up a SQL Server cluster, and configure the SQL Server VMM database with Always On Availability Groups.
 
 ## Before you start
 
@@ -27,7 +27,7 @@ Read the [planning information](plan-ha-install.md) for a highly available VMM d
 
 ## Set up availability groups
 
-[SQL Server Always On availability groups](/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server) support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. To set up an availability group you must deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the VMM SQL Server database as an availability database.
+[SQL Server Always On availability groups](/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server) support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. To set up an availability group, you must deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the VMM SQL Server database as an availability database.
 
 - [Learn more](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability) about Always On prerequisites
 - [Learn more](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server) about setting up a WSFC for Always On availability groups
@@ -42,7 +42,7 @@ Read the [planning information](plan-ha-install.md) for a highly available VMM d
 1. In **Add Database to Availability Group** > **Select Databases**, select the VMM database.
 1. In **Select Data Synchronization**, leave the **Full** default.
 1. In **Connect to Replicas** > **Connect**, specify permissions for the availability group destination.
-1. Prerequisites are checked in **Validation**. In **Summary**, when you click **Next** Always On availability support is initiated for the VMM database. The VMM database is copied and from this point Always On keeps the VMM database synchronized between the SQL Server Always On cluster nodes.
+1. Prerequisites are checked in **Validation**. In **Summary**, when you select **Next** Always On availability support is initiated for the VMM database. The VMM database is copied and from this point Always On keeps the VMM database synchronized between the SQL Server Always On cluster nodes.
 1. Change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\ConnectionString* from *Server* to *SQLListenerName*. Also, update the following:
 
    - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\MachineName* with *SQLListenerName*
@@ -61,11 +61,11 @@ To check that Always On is working as expected for the VMM database, run a failo
 
 1. In SQL Server Management Studio, right-click the availability group on the secondary server > **Failover**.
 1. In **Fail Over Availability Group** > **Select New Primary Replica**, select the secondary server.
-1. In **Summary**, click **Finish**.
+1. In **Summary**, select **Finish**.
 1. Now move it back by initiating a failover to the secondary node computer that is running SQL Server, and verify that you can restart the VMM service (scvmmservice).
 1. Repeat the last two steps for every secondary node in the cluster that is running SQL Server.
 1. If this is a high availability VMM setup, continue to install other high availability VMM nodes.
 
 >[!NOTE]
 >
-> If you are experiencing high latency or timeout errors in a multi-subnet scenario, change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\ConnectionString*, add MultiSubnetFailover=True; and restart the VMM service.
+> If you're experiencing high latency or timeout errors in a multi-subnet scenario, change the VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\ConnectionString*, add MultiSubnetFailover=True, and restart the VMM service.

@@ -1,7 +1,7 @@
 ---
 title: Capture VM Instance
 description: The Capture VM Instance activity makes a running virtual machine available as an image for reuse.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -57,6 +57,6 @@ There are no optional properties for this runbook activity.
 | Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity. | Boolean   |
 | Request ID   | The unique identifier of the request to Azure.   | String   |
 
-## See Also
+## Next Steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

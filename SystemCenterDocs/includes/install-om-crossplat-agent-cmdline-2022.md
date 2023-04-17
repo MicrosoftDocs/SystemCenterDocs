@@ -2,8 +2,8 @@
 ms.assetid: 
 title: include file
 description: include article to detail how to install the Operations Manager version 2019 agent manually on UNIX and Linux computers.
-author: v-pgaddala
-ms.author: v-pgaddala
+author: Farha-Bano
+ms.author: v-farhabano
 manager:  jsuri
 ms.date:  11/29/2021
 ms.topic:  include
@@ -97,7 +97,7 @@ You must have already manually installed an agent before you start this procedur
 
 6.  Securely copy or transfer the `scx_new.pem` file into the `/etc/opt/microsoft/scx/ssl` folder on the computer that is hosting the UNIX or Linux operating system. This replaces the original `scx-host-<hostname>.pem` file.
 
-7.  Restart the agent by entering `scxadmin –restart`.
+7.  Restart the agent by entering `scxadmin -restart`.
 
 ## Discover computers after manual deployment
 

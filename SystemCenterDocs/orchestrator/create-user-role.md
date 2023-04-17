@@ -1,7 +1,7 @@
 ---
 title: Create User Role
 description: This activity creates a user role within a designated cloud.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

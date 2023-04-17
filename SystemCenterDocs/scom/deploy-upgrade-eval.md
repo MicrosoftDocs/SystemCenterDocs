@@ -4,7 +4,7 @@ title: How to Upgrade from the Evaluation Version of Operations Manager
 description: This article describes how to upgrade from an evaluation version of Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/11/2018
 ms.custom: na
 ms.prod: system-center

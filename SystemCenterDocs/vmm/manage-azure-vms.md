@@ -9,6 +9,7 @@ ms.topic: article
 manager: mkluck
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency3
 ---
 
 # Manage Azure VMs

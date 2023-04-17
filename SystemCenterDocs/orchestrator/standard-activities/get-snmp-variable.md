@@ -1,7 +1,7 @@
 ---
 title: Get SNMP Variable
 description: This article describes the Get SNMP Variable activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 7bb233a2-aa1f-4739-8f43-fb5004ba4342
 caps.latest.revision: 22
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Get SNMP Variable
 

@@ -1,7 +1,7 @@
 ---
 title: Run Exchange PowerShell Command
 description: You can use the Run Exchange PowerShell Command activity in a runbook to run Exchange 2010 cmdlets.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: d3f20506-1362-4290-af79-ef3f6d0f1b05
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Run Exchange PowerShell Command
@@ -38,7 +38,7 @@ The following tables list the required properties and published data for this ac
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Command Output   | The output results from running the command. Each result consists of a collection of name-value pairs (format \[&lt;Name&gt;: &lt;Value&gt;\]) that represents the result object fields and their respective values. When the command returns multiple results, they are published as multi-valued data. | String   |
+| Command Output   | The output results from running the command. Each result consists of a collection of name-value pairs (format \[&lt;Name&gt;: &lt;Value&gt;\]) that represents the result object fields and their respective values. When the command returns multiple results, they're published as multi-valued data. | String   |
 | Command Text   | The full command text, to include the parameters.   | String   |
 | Command Warnings   | The warning stream contents that result from running the command.   | String   |
 | Exchange Environment   | The type of Exchange environment where the activity will be executed.   | String   |
@@ -49,5 +49,5 @@ The following tables list the required properties and published data for this ac
 | Is Exchange Command   | Indicates if the command is to be run against the configured Exchange server.   | String   |
 | Skip CA Check   | Indicates whether the client validates that the server certificate is signed by a trusted certification authority (CA) when connecting over Hypertext Transfer Protocol by using a Secure Socket Layer.   | String   |
 | Skip CN Check   | Indicates whether the client validates that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
-| Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
+| Skip Revocation Check   | Indicates whether the connection doesn't validate the revocation status of the server certificate.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |

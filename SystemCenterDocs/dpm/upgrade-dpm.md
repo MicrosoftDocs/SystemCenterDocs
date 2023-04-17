@@ -1,6 +1,6 @@
 ---
 description: This article explains how to upgrade your DPM installation.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -10,6 +10,7 @@ ms.date: 11/15/2022
 title: Upgrade your System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
+ms.custom: UpdateFrequency.5
 ---
 
 # Upgrade your DPM installation

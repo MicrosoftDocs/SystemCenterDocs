@@ -10,7 +10,7 @@ title: System Center DPM Compatible Tape Libraries
 ms.technology: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
 ms.author: jsuri
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, updateFrequency.5
 ---
 
 # System Center DPM Compatible Tape Libraries

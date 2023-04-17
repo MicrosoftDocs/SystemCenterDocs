@@ -5,12 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 12/12/2022
+ms.date: 04/11/2023
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
 ms.author: jsuri
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency2
 ---
 
 # Monitor DPM
@@ -34,7 +34,7 @@ To monitor DPM in the console, you should be signed in to the DPM server with a 
 
 -   In the **Management** task area, you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2019"
 
 ### Configure Email for DPM
 

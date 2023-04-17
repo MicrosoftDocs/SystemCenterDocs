@@ -1,8 +1,8 @@
 ---
 title: Update OS Image
 description: The Update OS Image activity updates an operating system image that is in your image repository.
-ms.custom: na
-ms.date: 05/08/2019
+ms.custom: engagement-fy23, UpdateFrequency3
+ms.date: 01/30/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 238dbd87-9e85-450d-b6da-08159767b9ea
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update OS Image
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Update OS Image** activity updates an operating system image that is in your image repository. It is part of the **Azure Virtual Machine Images** category activity.
+The **Update OS Image** activity updates an operating system image that is in your image repository. It's part of the **Azure Virtual Machine Images** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Update OS Image Required Properties
 
@@ -34,8 +34,8 @@ The activity publishes all of the data from the required and optional properties
 | Label   | Specifies the friendly name of the image.   | String   |
 | Name   | The name of the operating system image to update.   | String   |
 | OS Type   | The operating system type of the operating system image.   | Windows, Linux   |
-| Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the image is located. | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
+| Media Link   | Specifies the location of the blob in Microsoft Azure blob store where the media for the image is located. | String   |
+| Wait for Completion | Whether to wait for this operation to complete in Microsoft Azure before moving on to the next activity.   | True, False   |
 
 ## Update OS Image Optional Properties
 
@@ -48,9 +48,9 @@ There are no optional properties for this runbook activity.
 | Label   | Specifies the friendly name of the image.   | String   |
 | Name   | The name of the OS image to update.   | String   |
 | OS Type   | The operating system type of the operating system image.   | String   |
-| Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the image is located. | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
+| Media Link   | Specifies the location of the blob in Microsoft Azure blob store where the media for the image is located. | String   |
+| Wait for Completion | Whether to wait for this operation to complete in Microsoft Azure before moving on to the next activity.   | Boolean   |
+| Request ID   | The unique identifier of the request to Microsoft Azure.   | String   |
 
 
 ## Other Resources

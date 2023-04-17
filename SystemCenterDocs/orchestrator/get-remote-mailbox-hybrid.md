@@ -1,7 +1,7 @@
 ---
 title: Get Remote Mailbox (Hybrid)
 description: You can use the Get Remote Mailbox (Hybrid) activity to retrieve the mail-related attributes of one or more users in on-premises Active Directory that are associated with mailboxes in the cloud-based service (hybrid environment).
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 8172f3a7-8890-4ef1-9c0f-ff6d81ec9f33
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Remote Mailbox (Hybrid)
@@ -35,15 +35,15 @@ This activity has no required properties.
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Active Directory Password   | Specifies the user password that you will use to access the on-premises Active Directory.   | String   |
-| Active Directory User Name   | Specifies the user name that you will use to access the on-premises Active Directory.   | String   |
+| Active Directory Password   | Specifies the user password that you'll use to access the on-premises Active Directory.   | String   |
+| Active Directory User Name   | Specifies the user name that you'll use to access the on-premises Active Directory.   | String   |
 | ANR   | Specifies a string on which to perform an ambiguous name resolution (ANR) search. You can specify a partial string and search for objects with an attribute that matches that string. The default searched attributes are the following: <br>CommonName (CN)<br>DisplayName<br>FirstName<br>LastName<br>Alias   | String   |
 | Archive   | Specifies whether to return information about the recipient's archive mailbox.   | True, False   |
 | Domain Controller   | Specifies the fully qualified domain name (FQDN) of the domain controller that retrieves data from Active Directory.   | String   |
 | Identity   | Identifies the remote mailbox. The remote mailbox identity can be one the following value types:<br>GUID <br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>LegacyExchangeDN<br>SmtpAddress<br>Alias   | String   |
-| Ignore Default Scope   | Instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and to use the entire forest as the scope. This allows the command to access the Active Directory objects that are not currently in the default scope. Using this property introduces the following restrictions:<br>You cannot use the Domain Controller property. The command uses an appropriate global catalog server automatically.<br>You can only use the DN for the Identity property. Other forms of identification, such as alias, are not accepted.<br>You cannot use the On Premises Organizational Unit and Identity properties together.<br>You cannot use the User Name and Password properties. | True, False   |
+| Ignore Default Scope   | Instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and to use the entire forest as the scope. This allows the command to access the Active Directory objects that aren't currently in the default scope. Using this property introduces the following restrictions:<br>You can't use the Domain Controller property. The command uses an appropriate global catalog server automatically.<br>You can only use the DN for the Identity property. Other forms of identification, such as alias, aren't accepted.<br>You can't use the On Premises Organizational Unit and Identity properties together.<br>You can't use the User Name and Password properties. | True, False   |
 | On-Premises Organizational Unit | Specifies a container in the on-premises organization in which to limit the results. You can specify either an organizational unit (OU) or a domain. The canonical name should be specified, such as,<br>OU: westcoast.contoso.com/users <br>Domain: westcoast.contoso.com   | String   |
-| Read From Domain Controller   | Specifies that the user information is read from a domain controller in the user's domain. If you set the recipient scope to include all recipients in the forest and do not use this property, it is possible that the user information is read from a global catalog with outdated information. If you use this property, multiple reads might be necessary in order to get the information.<br>By default, the recipient scope is set to the domain that hosts your servers that run Exchange.   | True, False   |
+| Read From Domain Controller   | Specifies that the user information is read from a domain controller in the user's domain. If you set the recipient scope to include all recipients in the forest and don't use this property, it's possible that the user information is read from a global catalog with outdated information. If you use this property, multiple reads might be necessary in order to get the information.<br>By default, the recipient scope is set to the domain that hosts your servers that run Exchange.   | True, False   |
 | Result Size   | Specifies the maximum number of results to return. If you want to return all mailboxes that match the query, use **unlimited** for the value of this property. The default value is **unlimited**.   | String   |
 | Sort By   | Specifies the attribute by which to sort the results. You can sort by only one attribute at a time. You can sort by the following attributes: <br>Alias<br>Display name<br>Name<br> **Note** The results are sorted in ascending order.   | String   |
 
@@ -60,9 +60,9 @@ This activity has no required properties.
 | Archive Database   | Specifies the ID of the archive database.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Archive GUID   | Specifies the unique archive identifier for the mailbox archive.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Archive Name   | Specifies the name of the archive mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
-| Archive Quota   | Specifies the maximum size of the archive mailbox.<br>It be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default value is Byte, when the unit is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Archive Quota   | Specifies the maximum size of the archive mailbox.<br>It be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default value is Byte, when the unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
 | Archive Status   | Indicates the archive status (Active or None).   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
-| Archive Warning Quota   | Specifies the mailbox size at which a warning message is sent, when this size is exceeded<br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where the unit can be one of the following: KB, MB, GB, TB. The default unit is Byte, when unit is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Archive Warning Quota   | Specifies the mailbox size at which a warning message is sent, when this size is exceeded<br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where the unit can be one of the following: KB, MB, GB, TB. The default unit is Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
 | Bypass Moderation From Senders Or Members   | Specifies the list of senders for whom moderation is to be bypassed.   | Equals<br>Does not equal   |
 | Calendar Version Store Disabled   | Indicates whether calendar items in this mailbox will be repaired by the Calendar Repair Assistant.   | Equals<br>Does not equal   |
 | Custom Attribute 1 - 15   | Custom attribute value.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
@@ -102,8 +102,8 @@ This activity has no required properties.
 | Mailbox Move Target MDB   | Specifies the Active Directory identifier of the database that the mailbox is being copied to.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Mail Tip   | Mail tip.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Mail Tip Translations   | Mail tip translation list.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
-| Max Receive Size   | Specifies the size limit of the received messages.<br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte when the unit is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
-| Max Send Size   | Specifies the size limit for received messages. <br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte, when unit is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Max Receive Size   | Specifies the size limit of the received messages.<br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte when the unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Max Send Size   | Specifies the size limit for received messages. <br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
 | Moderated By   | Specifies the list of users that are responsible for moderating this mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Moderation Enabled   | Indicates whether moderation is enabled for this mailbox.   | Equals<br>Does not equal   |
 | Name   | Specifies the name associated with this object.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
@@ -161,7 +161,7 @@ This activity has no required properties.
 | Archive Quota   | Specifies the Quota parameter for the archive mailbox.   | String   |
 | Archive Status   | Indicates the archive status (Active or None).   | String   |
 | Archive Warning Quota   | Specifies the mailbox size at which a warning message is sent.   | String   |
-| Bypass Moderation From Senders Or Members   | Specifies the list of Senders or Members of a list who's messages are not subject to approval.   | String   |
+| Bypass Moderation From Senders Or Members   | Specifies the list of Senders or Members of a list who's messages aren't subject to approval.   | String   |
 | Calendar Version Store Disabled   | Indicates whether changes to calendar items are logged.   | String   |
 | Custom Attribute 1   | Custom attribute 1.   | String   |
 | Custom Attribute 10   | Custom attribute 10.   | String   |
@@ -186,7 +186,7 @@ This activity has no required properties.
 | Email Address Policy Enabled   | Indicated whether the use of Address Policies is enabled.   | String   |
 | Email Addresses   | Specifies the collection of email addresses for the mailbox.   | String   |
 | End Date For Retention Hold   | Specifies the end date of the Retention Hold period.   | String   |
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-premises.   | String   |
 | Exchange GUID   | Specifies the unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | Specifies the connected Exchange Server.   | String   |
@@ -259,7 +259,7 @@ This activity has no required properties.
 | Single Item Recovery Enabled   | Indicates whether the Recovery Items folder can be purged.   | String   |
 | Skip CA Check   | Indicates whether the client validates that the server certificate is signed by a trusted certification authority (CA) when connecting over Hypertext Transfer Protocol over Secure Socket Layer.   | String   |
 | Skip CN Check   | Indicates whether the client validates that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
-| Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
+| Skip Revocation Check   | Indicates whether the connection doesn't validate the revocation status of the server certificate.   | String   |
 | Start Date For Retention Hold   | Indicates the date and time that a retention hold on messages in this mailbox begins.   | String   |
 | UM DTMF Map   | UM DTMF Map.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |

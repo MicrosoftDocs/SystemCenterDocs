@@ -1,7 +1,7 @@
 ---
 title: Delete Folder activity
 description: This article describes the Delete Folder activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 7bd72977-b6e1-4d20-af6e-42354f986c5b
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Delete Folder
 

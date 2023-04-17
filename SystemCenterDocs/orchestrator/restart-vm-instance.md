@@ -1,8 +1,8 @@
 ---
 title: Restart VM Instance
 description: The Restart VM Instance activity restarts the specified virtual machine.
-ms.custom: na
-ms.date: 12/02/2016
+ms.custom: engagement-fy23, UpdateFrequency3
+ms.date: 01/30/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: b3e3176a-582d-4531-b882-441293114bc6
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Restart VM Instance
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Restart VM Instance** activity restarts the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
+The **Restart VM Instance** activity restarts the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Restart VM Instance required properties
 
@@ -34,7 +34,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Service Name   | The name of the cloud service containing the virtual machine.   | String   |
 | VM Deployment Name  | The name of the deployment containing the virtual machine.   | String   |
 | VM Instance Name   | The name of the virtual machine.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
+| Wait for Completion | Whether to wait for this operation to complete in Microsoft Azure before moving on to the next activity. | True, False   |
 
 ## Restart VM Instance optional properties
 
@@ -47,5 +47,5 @@ There are no optional properties for this runbook activity.
 | VM Service Name   | The name of the cloud service containing the virtual machine.   | String   |
 | VM Deployment Name  | The name of the deployment containing the virtual machine.   | String   |
 | VM Instance Name   | The name of the virtual machine.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
+| Wait for Completion | Whether to wait for this operation to complete in Microsoft Azure before moving on to the next activity. | True, False   |
+| Request ID   | The unique identifier of the request to Microsoft Azure.   | String   |

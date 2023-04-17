@@ -1,7 +1,7 @@
 ---
 title: Create VM from VM
 description: The Create VM From VM activity is used to create a new virtual machine from an existing virtual machine.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

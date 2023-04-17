@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
+ms.custom: UpdateFrequency2
 ---
 
 # Configure a nested VM as a host
@@ -94,10 +95,10 @@ Administrators/delegated administrators can configure nested virtualization by u
 
 3. Browse the selected VM’s **Properties**.
 
-![Screenshot of the vm properties.](media/nested-vm/nested-vm-properties.png)
+    ![Screenshot of the vm properties.](media/nested-vm/nested-vm-properties.png)
 4. On **General**, select **Enable Nested Virtualization**.
 
-![Screenshot of enable nested virtualization.](media/nested-vm/nested-virtualization-enable.png)
+    ![Screenshot of enable nested virtualization.](media/nested-vm/nested-virtualization-enable.png)
 
 ## Configure the nested VM as a host
 1.	Enable the following inbound and outbound firewall rules on the nested VM that you want to configure as the host.

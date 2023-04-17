@@ -3,7 +3,7 @@ title: Network Devices Supported for Discovery by Operations Manager
 description: This article provides information on how to monitor physical network routers and switches including the interfaces and ports.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -26,4 +26,4 @@ Operations Manager provides more detailed processor or memory monitoring for som
 
 ## Next steps
 
-- Review [Monitoring Networks by Using Operations Manager](manage-monitor-networkdevice-overview.md) to understand how Operations Manager monitors network devices, what requirements must be met and how they align with your management and security policies for network devices, and how to prepare Operations Manager to monitor them.  
+- To understand how Operations Manager monitors network devices, what requirements must be met and how they align with your management and security policies for network devices, and how to prepare Operations Manager to monitor them, review [Monitoring Networks by Using Operations Manager](manage-monitor-networkdevice-overview.md).  

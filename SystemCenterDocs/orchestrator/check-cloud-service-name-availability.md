@@ -1,7 +1,7 @@
 ---
 title: Check Cloud Service Name Availability
 description: The Check Cloud Service Name Availability activity checks to see if the specified cloud service name is available, or if it has already been taken.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -44,6 +44,6 @@ There are no optional properties for this runbook activity.
 | Desired DNS Prefix | The DNS prefix name to check for availability. | String   |
 | Name Available   | Whether the DNS prefix is available.   | Boolean   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

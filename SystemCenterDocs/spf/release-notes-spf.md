@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
 monikerRange: '>sc-spf-2016'
+ms.custom: UpdateFrequency2
 ---
 
 # Release notes for System Center Service Provider Foundation

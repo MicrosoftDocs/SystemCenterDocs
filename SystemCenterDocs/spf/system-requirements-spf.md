@@ -9,6 +9,7 @@ ms.date: 04/04/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
+ms.custom: UpdateFrequency2
 ---
 
 # System requirements for System Center Service Provider Foundation

@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 3c42925f-74f3-4c18-934e-8d1cd2edaa3b
+ms.custom: UpdateFrequency3
 ---
 
 # Use management packs to add functionality to Service Manager

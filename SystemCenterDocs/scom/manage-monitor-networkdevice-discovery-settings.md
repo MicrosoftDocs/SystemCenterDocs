@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 01/26/2017
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -41,7 +41,7 @@ System Center Operations Manager offers many settings that you can use to config
 |**IP Address or Host Name**|**Exclude Filters** page, **Add** button, when configuring a recursive discovery rule|Enter either a fully qualified domain name (FQDN), an IPv4 address, or an IPv6 address to exclude from discovery. You can add multiple IP address individually.|
 
 ## Wildcard matching for IP address range
-Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly. So, for example, the pattern *abc* doesn't match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it's interpreted as if there were an asterisk at the beginning. For example, the pattern ~[0-9] matches any string that doesn't contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates "except for an empty string."
+Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly. So, for example, the pattern *abc* doesn't match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it's interpreted as if there were an asterisk at the beginning. For example, the pattern ~[0-9] matches any string that doesn't contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates **except for an empty string**.
 
 Spaces are significant characters and are subject to matching.
 
@@ -79,7 +79,7 @@ To differentiate between VLANs, you can configure a tag for a virtual local area
 
 3.  Save vlan-tag-settings.conf.
 
-The following is an example of the configuration of a VLAN tag "LDSwitch" to be used for all switches that have a description that starts with "Cisco":
+The following is an example of the configuration of a VLAN tag **LDSwitch** to be used for all switches that have a description that starts with **Cisco**:
 
 ```
 config LanceSwitch

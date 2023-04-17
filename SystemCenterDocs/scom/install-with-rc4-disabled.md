@@ -3,10 +3,10 @@ ms.assetid: 0497e546-7da7-4342-a427-4a9488ae6c7a
 title: Install Operations Manager with RC4 disabled
 description: This article describes Operations Manager installation with RC4 disabled
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ms.author: jsuri
 ms.date: 06/18/2021
-ms.custom: na, intro-installation
+ms.custom: na, intro-installation, UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -71,7 +71,7 @@ In an environment that has RC4 disabled, ensure the following steps are implemen
 
 To disable RC4 in an Operations Manager Management Server, follow these steps:
 
-1. On the Management Server, go to **Local Group Policy Editor** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Network security: Configure encryption types allowed for Kerberos** > **Disable RC4**.
+1. On the Management Server, go to **Local Group Policy Editor** > **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Network security: Configure encryption types allowed for Kerberos** > **Disable RC4**.
    - Uncheck **RC4_HMAC_MD5**
 
    ![Screenshot of the Disable RC4.](./media/protocol-disabled/kerberos-disable-rc4.png)

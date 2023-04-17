@@ -1,7 +1,7 @@
 ---
 title: Get Operating Systems
 description: The Get Operating Systems activity gets all Windows Azure operating systems.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

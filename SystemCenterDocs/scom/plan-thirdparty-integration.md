@@ -4,9 +4,9 @@ title: Design Integration with other Enterprise Management Products
 description: This article provides design guidance for integrating Operations Manager with third-party enterprise management platforms.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 07/09/2019
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

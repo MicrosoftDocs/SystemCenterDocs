@@ -12,8 +12,8 @@ ms.assetid:
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
-ms.custom: engagement-fy23
+manager: manager
+ms.custom: engagement-fy23, UpdateFrequency3
 ---
 # Alphabetical List of Standard Activities
 

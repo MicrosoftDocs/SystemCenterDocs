@@ -1,7 +1,7 @@
 ---
 title: Update Move Request
-description: You can use the Update Move Request activity in a runbook to change the attributes of an existing Move request, for an on-premise environment.
-ms.custom: na
+description: You can use the Update Move Request activity in a runbook to change the attributes of an existing Move request for an on-premises environment.
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 835c5d91-79b8-4d0e-9cdf-89e472328608
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Move Request
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-You can use the Update Move Request activity in a runbook to change the attributes of an existing Move request, for an on-premise environment.
+You can use the Update Move Request activity in a runbook to change the attributes of an existing Move request for an on-premises environment.
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
@@ -37,11 +37,11 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Accept Large Data Loss   | Specifies that a large amount of data loss is acceptable if the Bad Item Limit is set to 51 or higher. Items are considered corrupted if the item cannot be read from the source database or cannot be written to the target database. Corrupted items will not be available in the destination mailbox or in the .pst file.   | True, False   |
+| Accept Large Data Loss   | Specifies that a large amount of data loss is acceptable if the Bad Item Limit is set to 51 or higher. Items are considered corrupted if the item can't be read from the source database or can't be written to the target database. Corrupted items won't be available in the destination mailbox or in the .pst file.   | True, False   |
 | Bad Item Limit   | Specifies the number of bad items to skip if the request encounters corruption in the mailbox. Use 0 (zero) to not skip bad items. The valid input range for this property is from 0 (zero) through 2147483647. The default value is 0 (zero). We suggest that you keep the default value 0 and only change the Bad Item Limit property value if the request fails.<br>If you set the Bad Item Limit property to more than 50, the command fails, and you receive a warning that states: "Please confirm your intention to accept a large amount of data loss by specifying Accept Large Data Loss." If you receive this warning, you need to run the command again. This time, run command by using the Accept Large Data Loss property. No further warnings appear, and any corrupted items are not available after the process is complete. | String   |
 | Batch Name   | Specifies a descriptive name for moving a batch of mailboxes. The name can then be used in the Batch Name property as a search string for the Get Move Request mode.   | String   |
 | Domain Controller   | Specifies the fully qualified domain name (FQDN) of the domain controller that writes this configuration change to Active Directory.   | String   |
-| Ignore Rule Limit Errors   | Specifies that the command does not move the user's rules to the target server that runs Exchange.<br>Default value is True, when selected.   | True, False   |
+| Ignore Rule Limit Errors   | Specifies that the command doesn't move the user's rules to the target server that runs Exchange.<br>Default value is True, when selected.   | True, False   |
 | Remote Credential User Name   | Specifies the user name for an administrator who has permission to perform the mailbox move.   | String   |
 | Remote Credential Password   | Specifies the password for an administrator who has permission to perform the mailbox move.   | String   |
 | Remote Global Catalog   | Specifies the fully qualified domain name (FQDN) of the global catalog server for the remote forest.   | String   |

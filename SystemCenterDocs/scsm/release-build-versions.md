@@ -5,7 +5,7 @@ description: This article details the release builds in Service Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 02/16/2023
+ms.date: 04/11/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager

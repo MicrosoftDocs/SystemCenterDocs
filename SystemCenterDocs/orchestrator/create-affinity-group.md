@@ -1,7 +1,7 @@
 ---
 title: Create Affinity Group
 description: The Create Affinity Group activity creates a new affinity group for the specified subscription.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -49,6 +49,6 @@ There are no optional properties for this runbook activity.
 | Description   | A description for the affinity group.   | String   |
 | Location   | The data center location where the affinity group will be created. | String   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
