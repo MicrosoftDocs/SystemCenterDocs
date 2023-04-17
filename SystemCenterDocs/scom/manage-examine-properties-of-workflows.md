@@ -6,7 +6,7 @@ ms.author: jsuri
 manager: mkluck
 ms.date: 03/30/2021
 ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

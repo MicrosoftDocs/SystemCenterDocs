@@ -1,7 +1,7 @@
 ---
 title: Write to Database 
 description: This article describes the Write to Database activity that writes a row into a database table.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 0e47a137-5f4b-41a2-a13a-59bcaae8e750
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Write to Database
 

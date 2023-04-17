@@ -1,13 +1,14 @@
 ---
 title: Languages supported by System Center - Service Manager
 description: Describes the languages that System Center - Service Manager supports.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article
+ms.custom: UpdateFrequency5
 ---
 
 # Languages supported by System Center - Service Manager
@@ -18,11 +19,11 @@ ms.topic: article
 
 ::: moniker-end
 
-It is assumed in this article that you are installing System Center - Service Manager on a computer where no previous version of Service Manager is installed.
+It's assumed in this article that you're installing System Center - Service Manager on a computer where no previous version of Service Manager is installed.
 
- Including English,  Service Manager supports a total of 21 languages. Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. Learn more about [SQL Server support](supported-configs.md).  
+ Including English, Service Manager supports a total of 21 languages. Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. Learn more about [SQL Server support](supported-configs.md).  
 
- The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, "CI" indicates case-insensitive, and "AS" indicates accent-sensitive.  
+ The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, **CI** indicates case-insensitive and **AS"**indicates accent-sensitive.  
 
 |Windows locale|Collation|  
 |--------------------|---------------|  
@@ -49,4 +50,4 @@ It is assumed in this article that you are installing System Center - Service Ma
 |Russian|Cyrillic\_General\_100\_CI\_AS|  
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
-|Turkish \(Turkey\)|Turkish\_100\_CI\_AS|  
+|Turkish \(Türkiye\)|Turkish\_100\_CI\_AS|  

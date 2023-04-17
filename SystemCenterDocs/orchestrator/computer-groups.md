@@ -7,7 +7,8 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.date: 01/17/2018
-manager: carmonm
+manager: mkluck
+ms.custom: UpdateFrequency3
 ---
 # Computer groups
 

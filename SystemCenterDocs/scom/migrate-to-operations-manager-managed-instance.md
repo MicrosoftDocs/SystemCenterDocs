@@ -2,11 +2,11 @@
 ms.assetid: 
 title: Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview).
-author: v-pgaddala
-ms.author: v-pgaddala
+author: Farha-Bano
+ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/15/2023
-ms.custom: na
+ms.date: 04/04/2023
+ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
@@ -15,7 +15,43 @@ monikerRange: '>=sc-om-2019'
 
 # Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)
 
-This article provides detailed information on how you can migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview).
+This article provides the process of migration from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview).
+
+## Prerequisites
+
+1. Verify that your current Operations Manager agent version is supported to multi-homed with SCOM Managed Instance (preview).  
+
+    >[!Note]
+    >Agent versions 2022 and 2019 are supported.
+2. Deploy a SCOM Managed Instance (preview) instance.
+
+3. Configure user roles and permissions in SCOM Managed Instance (preview).
+
+4. Import management packs and overrides from your current Operations Manager environment.
+
+5. Configure Run-As account for management packs.  
+
+6. If you use multiple management servers in SCOM Managed Instance (preview), deploy a small set of pilot agents and verify failover behavior between management servers in SCOM Managed Instance (preview).  
+
+7. Identify an application or service that is currently monitored by Operations Manager on-premises. Multihome its agents to start reporting to SCOM Managed Instance (preview) and Operations Manager on-premises and perform the following steps:
+
+    - Verify that you see the same monitoring data for the service in both your current Operations Manager environment and SCOM Managed Instance (preview).
+    - Configure groups.
+    - Configure notification subscriptions.
+    - Configure reporting.
+    - Configure Dashboards.
+    - Configure agent-specific settings.
+    - Configure Agent primary and failover management server.
+
+   Repeat the service-based migration according to step 6 for each application/service.
+
+8. Configure and verify connectors.
+   For example: Configure and verify connectors for ITSM tools and automation.  
+
+9. Once all the monitoring data, reporting, notification, connectors, permissions, and groups are verified in SCOM MI, uninstall agent configuration for the old Operations Manager environment.  
+
+>[!Note]
+>Overrides target a specific instance of a class and may not work after migration of management packs, as instance ID might change between management groups. Group membership configured on specific instances might not work either.
 
 Provided the procedure for the following artifacts as an example:
 
@@ -147,6 +183,13 @@ Export the **Notifications Internal Library** Management pack from the Operation
 
 After you migrate the notification configuration to SCOM Managed Instance (preview), copy the local files that are used in Command Channels to the same path on all Management Servers in the Notification Resource Pool. If you migrate from Operations Manager 2016, configuring Notification Channel requires more steps.
 
+Metadata for all notifications/subscriptions is stored under the unsealed management pack. If you migrate the management pack, the notifications and subscriptions are also migrated.
+
+Microsoft.SystemCenter.Notifications.Internal - 10.22.10113.0 - Notifications Internal Library
+
+>[!Note]
+>Notifications/Subscriptions depend on Run as account. Configure the accounts/profiles in a newer environment before you migrate the management pack.
+
 # [Groups](#tab/groups)
 
 Groups are migrated as part of Management Packs. For more information, see **step 5** in the **Management Packs and Overrides** tab.
@@ -163,7 +206,7 @@ System Center Orchestrator to Azure Automation is the recommendation on Azure eq
 
 # [Agent mapping and configuration](#tab/agent-mapping-config)
 
-To migrate from Agent to SCOM Managed Instance (preview), see [High level overview of upgrading agents and running two environments](/system-center/scom/deploy-upgrade-overview#high-level-overview-of-upgrading-agents-and-running-two-environments-1).
+To migrate from System Center Operations Manager agent to SCOM Managed Instance (preview), see [High level overview of upgrading agents and running two environments](/system-center/scom/deploy-upgrade-overview#high-level-overview-of-upgrading-agents-and-running-two-environments-1).
 
 --- 
 

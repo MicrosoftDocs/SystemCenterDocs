@@ -1,6 +1,6 @@
 ---
 description: This article describes logging in DPM.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -10,6 +10,7 @@ title: Set up DPM logging
 ms.technology: data-protection-manager
 ms.assetid: 710459cd-75ec-4052-9199-c45828cbc19b
 ms.author: jsuri
+ms.custom: UpdateFrequency2
 ---
 
 # Set up DPM logging

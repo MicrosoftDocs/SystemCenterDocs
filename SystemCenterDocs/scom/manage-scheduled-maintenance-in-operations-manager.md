@@ -3,9 +3,9 @@ title: Scheduled Maintenance in Operations Manager
 description: This article describes the default scheduled maintenance tasks configured automatically when the management group is installed.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/04/2020
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -25,7 +25,7 @@ This topic details the default schedule for System Center Operations Manager mai
 ## Maintenance Tasks Schedule  
 By default, System Center Operations Manager performs maintenance tasks daily to maintain optimal performance of the Operations Manager database and data warehouse database.  These maintenance tasks are defined as system rules in the Operations Manager management pack.  
 
-The following table displays the maintenance tasks and the time they are scheduled to run:  
+The following table displays the maintenance tasks and the time they're scheduled to run:  
 
 |Task|Description|Schedule|  
 |--------|---------------|------------|  
@@ -34,7 +34,7 @@ The following table displays the maintenance tasks and the time they are schedul
 |Partition and Grooming|A rule that runs workflows to partition and deletes aged data from the Operations Manager database.|Every day at 12 AM|  
 |Detect and Fix Object Space Inconsistencies|A rule that repairs data block corruption in database schema objects.|Every 30 minutes|  
 |Alert Auto Resolve Execute All|A rule that automatically resolves active alerts after a period of time.|Every day at 4 AM|  
-|Standard Data Warehouse Data Set maintenance rule|A rule that calls a number of other stored procedures to aggregate, optimize, and groom data in the data warehouse database.|Every 60 seconds|
+|Standard Data Warehouse Data Set maintenance rule|A rule that calls many other stored procedures to aggregate, optimize, and groom data in the data warehouse database.|Every 60 seconds|
 
 ### To check the schedules for the grooming jobs
 

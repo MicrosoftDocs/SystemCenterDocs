@@ -1,13 +1,14 @@
 ---
 title: Configure Orchestrator database connections
 description: Describes how to configure database connections in System Center - Orchestrator.
-ms.date: 01/17/2018
+ms.date: 04/13/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
+ms.custom: UpdateFrequency3, engagement-fy23
 ---
 
 
@@ -34,15 +35,18 @@ When connecting to a rebuilt database:
 
 In contrast, `DBconfig` only creates a new database; it doesn't configure the security for the database. DBConfig configures the database schema in the database and creates the contents of **settings.dat**, which contains the connection details for the management server and runbook servers. For more information on running DBConfig, see [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).  
 
-## To configure Orchestrator database connections  
+## Configure Orchestrator database connections  
 
 -   Run the `DBsetup` binary from the **Start** menu or from the **Program Files** folder.  
 
-## To create a new database on a new database server  
+## Create a new database on a new database server  
+
+Follow these steps to create a new database on a new database server:
 
 1.  Run the Orchestrator Setup Wizard, and install a new management server.  
 2.  On the **Configure the database server** page in the setup wizard, point to the new database server.  
 3.  After you add a new DB server to your deployment, you must also run `permissionsconfig`, and then export and import the service master key to the new database server.  
 
 ## Next steps
+
 Learn more about how to change the Orchestrator database at [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).

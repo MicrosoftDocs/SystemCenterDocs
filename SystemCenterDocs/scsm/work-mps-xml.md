@@ -1,8 +1,8 @@
 ---
 title: Work with management pack XML files
 description: Describes how to work with management pack XML files for Service Manager authoring.
-manager: evansma
-ms.custom: na
+manager: mkluck
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -23,18 +23,18 @@ ms.assetid: 1f621771-00da-4dd8-a96f-9a0b243c3d88
 
 ::: moniker-end
 
-For elaborate customizations of management packs, the Service Manager console and the Service Manager Authoring Tool might not be sufficient, and you might need to author or modify management pack files directly. Working directly with management pack files requires in\-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs.  
+For elaborate customizations of management packs, the Service Manager console and the Service Manager Authoring Tool might not be sufficient, and you might need to author or modify management pack files directly. Working directly with management pack files requires in-depth knowledge in several areas such as the System Center Common Schema and the structure of management packs.  
 
  This section provides background information and guidelines that can help you author and modify management packs to customize Service Manager.  
 
 ## Changes to the System Center Common Schema
 
-Service Manager includes an updated version of the System Center Management Pack Schema. This schema is now called the System Center Common Schema, and it includes a number of improvements and additions that are intended to enhance existing functionality and enable Service Manager features. This topic describes the changes to the System Center Common Schema.  
+Service Manager includes an updated version of the System Center Management Pack Schema. This schema is now called the System Center Common Schema, and it includes a number of improvements and additions that are intended to enhance the existing functionality and enable Service Manager features. This article describes the changes to the System Center Common Schema.  
 
 ### Properties and property restrictions  
- The common schema extends classes through several new property types. These property types include the binary, enumerator, and autoincrement types.  
+ The common schema extends classes through several new property types. These property types include the binary, enumerator, and auto-increment types.  
 
- In addition, you can define restrictions on certain property values. For example, you can define a regular expression restriction on a string property value. In the following example, the **BuildingName** property has a regular expression restriction that is defined so that only a value that contains the word "Building" followed by a space and a number is considered valid.  
+ In addition, you can define restrictions on certain property values. For example, you can define a regular expression restriction on a string property value. In the following example, the **BuildingName** property has a regular expression restriction that is defined so that only a value that contains the word **Building** followed by a space and a number is considered valid.  
 
 ```  
 
@@ -46,7 +46,7 @@ Service Manager includes an updated version of the System Center Management Pack
 ```  
 
 ### Images  
- Images are not stored inside a management pack. Therefore, the `<PresentationTypes>` section of the management pack no longer contains the `<Images>`, `<Image>`, or `<ImageData>` tags. Instead, use an image resource.  
+ Images aren't stored inside a management pack. Therefore, the `<PresentationTypes>` section of the management pack no longer contains the `<Images>`, `<Image>`, or `<ImageData>` tags. Instead, use an image resource.  
 
 ```  
 <Resources>  
@@ -87,16 +87,16 @@ Service Manager includes an updated version of the System Center Management Pack
 ```  
 
 ### Relationships  
- The functionality of relationship definitions has been enhanced in the common schema. The **RelationshipType** type now has **Source** and **Target** subelements with **ID** properties that can be used as display names. In addition, you can define minimum and maximum cardinality for both the source and target \(for example, 1\-to\-1 or 0\-to\-many relationships\).  
+ The functionality of relationship definitions has been enhanced in the common schema. The **RelationshipType** type now has **Source** and **Target** subelements with **ID** properties that can be used as display names. In addition, you can define minimum and maximum cardinality for both the source and target; for example, 1-to-1 or 0-to-many relationships.  
 
- Cardinality is not enforced by the management pack validation process, but it is intended to help define user interfaces for the management pack. For example, cardinality can be checked to determine whether a field can be represented in a form by a text box or by a list.  
+ Cardinality isn't enforced by the management pack validation process, but it's intended to help define user interfaces for the management pack. For example, cardinality can be checked to determine whether a field can be represented in a form by a text box or by a list.  
 
 > [!IMPORTANT]  
 >  Any **MaxCardinality** value that is defined as greater than 1 is processed as unlimited.  
 
  If you add a new relationship type from your own management pack, users must have sufficient privileges to update all properties of the source and target class instances of the relationship type in order to create an instance of the new relationship type.  
 
- In the following example, a hosting relationship \(called **HasXboxes**\) between the **Lobby** type and the **Xbox** type is defined. In this relationship definition, each **Lobby** type can have multiple **Xbox** types.  
+ In the following example, a hosting relationship called **HasXboxes** between the **Lobby** type and the **Xbox** type is defined. In this relationship definition, each **Lobby** type can have multiple **Xbox** types.  
 
 ```  
 
@@ -108,7 +108,7 @@ Service Manager includes an updated version of the System Center Management Pack
 ```  
 
 ### Combination classes  
- Combination classes represent an aggregation of multiple related types in the management pack, similar to views that are defined in a Microsoft SQL&nbsp;Server database that can return data from multiple tables. Combination classes store and retrieve all the aggregated data in one operation to the database, and they can make it easier to define user interfaces for a management pack.  
+ Combination classes represent an aggregation of multiple related types in the management pack, similar to views that are defined in a Microsoft SQL Server database that can return data from multiple tables. Combination classes store and retrieve all the aggregated data in one operation to the database, and they can make it easier to define user interfaces for a management pack.  
 
  In the following example, a projection is defined for an incident management view. This projection combines several different components that are related to an incident into one unit that can be used more easily for forms and for database operations.  
 
@@ -165,7 +165,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 ```  
 
 ### Console tasks  
- Console tasks are extended in the common schema. Previously, console tasks were simple pointers to an application directory and executable file name. Console tasks are now implemented as handler code in a Microsoft .NET&nbsp;Framework assembly. The handler code references the assembly that houses the code, the handler name, and a list of named values that can be passed as arguments to the handler.  
+ Console tasks are extended in the common schema. Previously, console tasks were simple pointers to an application directory and executable file name. Console tasks are now implemented as handler code in a Microsoft .NET Framework assembly. The handler code references the assembly that houses the code, the handler name, and a list of named values that can be passed as arguments to the handler.  
 
  In the following example, the **Some.Handler.Name** handler is defined in the **MyLibrary.Resources.Assembly** assembly. A list of handler parameters and their values is also defined.  
 
@@ -187,7 +187,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 ```  
 
 ### Resources  
- Binary data is not stored directly in a management pack. Instead, metadata about the binary resource is stored in the management pack, and the actual binary data is stored externally in a resource file. The metadata includes a unique identifier, the file name, the creation data, the modified date, and accessibility information.  
+ Binary data isn't stored directly in a management pack. Instead, metadata about the binary resource is stored in the management pack, and the actual binary data is stored externally in a resource file. The metadata includes a unique identifier, the file name, the creation data, the modified date, and accessibility information.  
 
  Binary data can include generic resources, images, assemblies, report definitions, and forms. The following example shows a generic XML resource, an assembly resource, and a report resource.  
 
@@ -209,9 +209,9 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 ### Forms  
  Forms are defined in a management pack. You can use forms to view and modify a single instance of a type or combination class.  
 
- Forms are based on the Windows Presentation Framework \(WPF\), and they are defined in assemblies. The assembly and class that contain the form implementations for a management pack are included in the resources section of the management pack. As with any binary resource in a management pack that uses the new common schema, the management pack itself does not contain the binary data for the form. Only the resource manifest is specified in the management pack.  
+ Forms are based on the Windows Presentation Framework \(WPF\), and they're defined in assemblies. The assembly and class that contain the form implementations for a management pack are included in the resources section of the management pack. As with any binary resource in a management pack that uses the new common schema, the management pack itself doesn't contain the binary data for the form. Only the resource manifest is specified in the management pack.  
 
- You can specify your own configuration information for the form in the management pack. In the following example, the Configuration section contains a **ShowXboxes** property. This configuration information is not evaluated by the management pack verification process; it is only interpreted by the form implementation.  
+ You can specify your own configuration information for the form in the management pack. In the following example, the Configuration section contains a **ShowXboxes** property. This configuration information isn't evaluated by the management pack verification process; it's only interpreted by the form implementation.  
 
 ```  
 
@@ -227,11 +227,11 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 
 ## Author a management pack file to manage projectors
 
-Management packs are used to direct and extend the functionality of Service Manager. This topic uses projectors as an example for describing the various sections of a management pack and for defining the various objects that are needed for managing projectors in an organization.  
+Management packs are used to direct and extend the functionality of Service Manager. This article uses projectors as an example for describing the various sections of a management pack and for defining the various objects that are needed for managing projectors in an organization.  
 
- This topic includes a complete management pack sample with the necessary extensions to manage projectors in an organization. Also, it describes how to import a management pack using a Windows&nbsp;PowerShell cmdlet.  
+ This article includes a complete management pack sample with the necessary extensions to manage projectors in an organization. Also, it describes how to import a management pack using a Windows&nbsp;PowerShell cmdlet.  
 
- This topic describes the following sections of a management pack:  
+ This article describes the following sections of a management pack:  
 
 - The Manifest  
 
@@ -239,7 +239,7 @@ Management packs are used to direct and extend the functionality of Service Mana
 
 - Forms  
 
-This topic also describes the following sections of a management pack that contain declarations and definitions for user interface \(UI\) and localization elements:  
+This article also describes the following sections of a management pack that contain declarations and definitions for user interface \(UI\) and localization elements:  
 
 - Categories  
 
@@ -286,7 +286,7 @@ This topic also describes the following sections of a management pack that conta
 ```  
 
 > [!IMPORTANT]  
->  In the **References** section, do not use nonalphanumeric values, such as a '.', in the Alias for a reference.  
+>  In the **References** section, don't use nonalphanumeric values, such as a '.', in the Alias for a reference.  
 
 ### Create classes in the TypeDefinitions section
  The next section of a management pack contains type definitions. The **TypeDefinitions** section of a management pack contains definitions for classes, enumerations, and relationships that are used by the management pack.  
@@ -321,7 +321,7 @@ This topic also describes the following sections of a management pack that conta
 
 ```  
 
- The following is a section\-by\-section explanation of what the type definition contains.  
+ The following is a section-by-section explanation of what the type definition contains.  
 
  **The ClassTypes section**  
 
@@ -329,7 +329,7 @@ This topic also describes the following sections of a management pack that conta
 
  `<ClassType ID="System.ConfigItem.Projector" Base="System!System.ConfigItem" Hosted="false" Accessibility="Public" Abstract="false">`  
 
- The **ID** attribute is the unique identifier of this class. It is set to:  
+ The **ID** attribute is the unique identifier of this class. It's set to:  
 
  `ID="System.ConfigItem.Projector"`  
 
@@ -339,7 +339,7 @@ This topic also describes the following sections of a management pack that conta
 
  The notation of **System\!** indicates that this class, **System.ConfigItem**, is in the management pack that is referenced by the alias **System**.  
 
- The **Hosted** attribute defines whether this class is hosted by another class. In this case, an instance of this class can only exist when a host instance exists that contains it. For this example, projectors are not hosted by anything; therefore, the **Hosted** attribute is set to **false**:  
+ The **Hosted** attribute defines whether this class is hosted by another class. In this case, an instance of this class can only exist when a host instance exists that contains it. For this example, projectors aren't hosted by anything; therefore, the **Hosted** attribute is set to **false**:  
 
  `Hosted="false"`  
 
@@ -403,9 +403,9 @@ In this example, an enumeration is defined for keeping track of the condition of
 ```  
 
 ### Create a form  
- Service Manager forms are based on Windows Presentation Framework \(WPF\) forms. Service Manager extends WPF with simple attributes that are added to the XML definition and allow Service Manager to bind data from the management pack to the form.  
+ Service Manager forms are based on Windows Presentation Framework (WPF) forms. Service Manager extends WPF with simple attributes that are added to the XML definition and allow Service Manager to bind data from the management pack to the form.  
 
- Service Manager forms can be created by using several different tools, including Microsoft Visual Studio or Microsoft Expression Blend. Because the forms are XML\-based, they can also be defined by using any XML editor.  
+ Service Manager forms can be created by using several different tools, including Microsoft Visual Studio or Microsoft Expression Blend. Because the forms are XML-based, they can also be defined by using any XML editor.  
 
  The following example shows a form definition that was created by using Microsoft Expression Blend. This form contains four controls, three text boxes and one combo box, that are bound to the **Projector** class properties that were defined previously:  
 
@@ -452,7 +452,7 @@ In this example, an enumeration is defined for keeping track of the condition of
 {Binding Path=SerialNumber, Mode=TwoWay}  
 ```  
 
- This tag binds the text box control to the **SerialNumber** property of the **Projector** class that was defined in the management pack, and it specifies that this should be a two\-way binding. The value of the property is retrieved from the database and displayed in the text box when the form is loaded, and the property value is stored back to the database if it is changed by the user.  
+ This tag binds the text box control to the **SerialNumber** property of the **Projector** class that was defined in the management pack, and it specifies that this should be a two\-way binding. The value of the property is retrieved from the database and displayed in the text box when the form is loaded, and the property value is stored back to the database if it's changed by the user.  
 
  **Binding Combo Boxes**  
 
@@ -627,11 +627,11 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 
  The **AdvancedListSupportClass** defines a number of parameters, the most important of which is the **TargetClass** parameter. Set this parameter to the **ID** of the **ClassType** that will appear in this view. To display the columns that are properties of the **ClassType**, use the **Column** element and bind it to the **PropertyID** attribute.  
 
- The **IsRecurring** attribute of the **ListSupportClass** element determines whether the view auto\-refreshes. The **RecurrenceFrequency** attribute defines the refresh interval in milliseconds. In this example, the refresh interval is set to 1 second, but that is not recommended for production installations.  
+ The **IsRecurring** attribute of the **ListSupportClass** element determines whether the view auto\-refreshes. The **RecurrenceFrequency** attribute defines the refresh interval in milliseconds. In this example, the refresh interval is set to 1 second, but that isn't recommended for production installations.  
 
  **Defining Folders**  
 
- Defining a folder determines the location in the navigation tree in which the view is displayed. In this example, a configuration item is defined so that it is only suitable to place the view under the existing folder for configuration items in the **Configuration Items** workspace:  
+ Defining a folder determines the location in the navigation tree in which the view is displayed. In this example, a configuration item is defined so that it's only suitable to place the view under the existing folder for configuration items in the **Configuration Items** workspace:  
 
 ```  
 <Folders>  
@@ -704,7 +704,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 ```  
 
 ### Class extensions  
- A class extension is a class that adds properties to an existing class. In most cases, this existing class is in a sealed management pack. In cases where the existing class is not in a sealed management pack, the class extension must be contained in the same management pack as the class that is being extended.  
+ A class extension is a class that adds properties to an existing class. In most cases, this existing class is in a sealed management pack. In cases where the existing class isn't in a sealed management pack, the class extension must be contained in the same management pack as the class that is being extended.  
 
  A class extension inherits the properties of any parent classes, for example:  
 
@@ -744,7 +744,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 IsExtensionType="true"  
 ```  
 
- The other option is **false**, which indicates that it is not an extension of another class but a new class that inherits from the base. The default value is **false**; therefore, this attribute does not have to be used if the class is not an extension.  
+ The other option is **false**, which indicates that it isn't an extension of another class but a new class that inherits from the base. The default value is **false**; therefore, this attribute doesn't have to be used if the class isn't an extension.  
 
  **Full Example**  
 
@@ -785,16 +785,16 @@ ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://ww
 ```  
 
 ### Import a management pack by using a cmdlet  
- You can use the Windows&nbsp;PowerShell [Import\-SCSMManagementPack](/previous-versions/system-center/powershell/system-center-2012-r2/hh316284(v=sc.20)) cmdlet to import a Service Manager management pack, for example:  
+ You can use the Windows PowerShell [Import\-SCSMManagementPack](/previous-versions/system-center/powershell/system-center-2012-r2/hh316284(v=sc.20)) cmdlet to import a Service Manager management pack, for example:  
 
 ```  
 Import-SCSMManagementPack MyServiceManager.ManagementPack.xml  
 ```  
 
- This document does not describe how to import and use management packs in the Service Manager console. For information about using management packs in the Service Manager console, see [Using Management Packs in Service Manager](~/scsm/management-packs.md).  
+ This document doesn't describe how to import and use management packs in the Service Manager console. For information about using management packs in the Service Manager console, see [Using Management Packs in Service Manager](~/scsm/management-packs.md).  
 
 ### Full management pack example
- The following code examples represent the full sample management pack that is used for examples in this topic, in addition to the form definition and the C\# code\-behind for the form.  
+ The following code examples represent the full sample management pack that is used for examples in this article in addition to the form definition and the C\# code\-behind for the form.  
 
  **Management Pack**  
 

@@ -9,7 +9,7 @@ ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-management-automation
-ms.custom: intro-whats-new
+ms.custom: UpdateFrequency2, intro-whats-new
 ---
 
 

@@ -9,6 +9,7 @@ ms.date: 04/13/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency3
 ---
 
 # Manage telemetry settings in VMM

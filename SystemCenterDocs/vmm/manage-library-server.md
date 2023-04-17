@@ -9,6 +9,7 @@ ms.date: 02/08/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 # Set up the library in the VMM compute fabric

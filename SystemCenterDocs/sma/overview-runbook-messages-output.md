@@ -9,6 +9,7 @@ keywords:
 ms.date: 01/22/2018
 title: Runbook Output and Messages
 ms.technology: service-management-automation
+ms.custom: UpdateFrequency2
 ---
 
 # Runbook output and messages

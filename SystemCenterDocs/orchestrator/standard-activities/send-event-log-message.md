@@ -1,7 +1,7 @@
 ---
 title: Send Event Log Message
 description: This article describes the functionality of Send Event Log Message activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 02ca2b81-a6a5-444a-8ddd-f3695ca5afd4
 caps.latest.revision: 10
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Send Event Log Message
 

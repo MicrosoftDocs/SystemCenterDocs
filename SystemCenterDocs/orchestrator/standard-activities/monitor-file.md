@@ -1,7 +1,7 @@
 ---
 title: Monitor File
 description: This article describes the functionality of Monitor File activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 78ce48a7-f7a2-4075-acfc-882c8148169d
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Monitor File
 

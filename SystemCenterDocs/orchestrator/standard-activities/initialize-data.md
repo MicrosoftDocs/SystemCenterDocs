@@ -1,7 +1,7 @@
 ---
 title: Initialize Data
 description: This article describes the functionality of Initialize Data activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: c1cae147-b286-421d-b344-c73216ea9977
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Initialize Data
 

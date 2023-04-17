@@ -8,7 +8,7 @@ ms.prod: system-center
 ms.date: 02/22/2023
 title: Automate Microsoft Azure Pack operations with runbooks
 ms.technology: service-management-automation
-ms.custom: engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Automate Microsoft Azure Pack operations with Service Management Automation

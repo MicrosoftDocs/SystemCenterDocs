@@ -9,7 +9,7 @@ ms.date: 04/18/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-whats-new
+ms.custom: UpdateFrequency.5, intro-whats-new
 ---
 
 

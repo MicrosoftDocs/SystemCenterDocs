@@ -1,7 +1,7 @@
 ---
 title: Exchange Administrator Activities
 description: The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 5a15cd3e-3838-4e20-a092-07b2470d5717
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Exchange Administrator Activities
@@ -23,25 +23,25 @@ manager: carmonm
 
 ::: moniker-end
 
-The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack. The detailed configuration topics for specific Exchange Admin activities all contain links back to these general instructions.
+The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack. The detailed configuration sections for specific Exchange Admin activities all contain links back to these general instructions.
 
-Each procedure in this topic is performed on an activity that has been placed in the runbook window of the **Orchestrator Runbook Designer**.
+Each procedure in this article is performed on an activity that has been placed in the runbook window of the **Orchestrator Runbook Designer**.
 
 ## Activity properties
 
 Each activity is configured with a set of required or optional properties. These define how the activity connects to other activities or how the activity performs its actions. When an activity has been placed in the runbook window, you can view or modify its properties.
 
 >[!NOTE]
-> The property needs to have a value, otherwise the property will not be passed to the activity. An empty string or spaces are not considered valid value.
-e.g. GetMailbox activity has a property Identity. If the value for this property Identity is passed "" or "   ", then the Identity property will be omitted.
+> The property needs to have a value, otherwise the property won't be passed to the activity. An empty string or spaces isn't considered valid value.
+For example, GetMailbox activity has a property Identity. If the value for this property Identity is passed "" or "   ", then the Identity property will be omitted.
 
 ### To view and configure the properties for an activity
 
-1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
+1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 2.  View and configure the activity properties as needed.
-3.  To save your configuration entries, click **Finish**.
+3.  To save your configuration entries, select **Finish**.
 
-In the activity properties dialog box, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
+In the activity properties dialog, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
 
 #### General tab
 
@@ -53,22 +53,22 @@ The **Properties** tab contains properties that are specific to the activity. Al
 
 ### To configure the Configuration Name property
 
-1.  Click the ellipsis **(...)** button next to the **Name** field.
+1.  Select the ellipsis **(...)** button next to the **Name** field.
 
 2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in <span>Exchange Admin Integration Pack for System Center - Orchestrator</span>.
 
 ### Criteria for filters
 
-The **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When you specify filter criteria, you can select one of the available methods of comparison. The system provides an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds items that do not match the filter. All text filters are case sensitive.
+The **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When you specify filter criteria, you can select one of the available methods of comparison. The system provides an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds items that don't match the filter. All text filters are case sensitive.
 
 -   **Equals**: The property of the item matches the text or number specified in the filter.
--   **Does not equal**: The property of the item does not match the text or number specified in the filter.
+-   **Does not equal**: The property of the item doesn't match the text or number specified in the filter.
 -   **Is less than**: The numeric property of the item is less than the number specified in the filter.
 -   **Is less than or equal to**: The numeric property of the item is less than or equal to the number specified in the filter.
 -   **Is greater than**: The numeric property of the item is greater than the number specified in the filter.
 -   **Is greater than or equal to**: The numeric property of the item is greater than or equal to the number specified in the filter.
 -   **Contains**: The property of the item contains the exact text specified in the filter. There can be other text surrounding the matching text.
--   **Does not contain**: The property of the item does not contain the exact text specified in the filter.
+-   **Does not contain**: The property of the item doesn't contain the exact text specified in the filter.
 -   **Matches pattern**: This comparison method uses regular expressions to specify a pattern that the text must match.
 -   **Does not match pattern**: This comparison method uses regular expressions to specify a pattern that the text must not match.
 -   **Starts with**: The property of the item starts with the exact text specified in the filter.
@@ -88,11 +88,11 @@ By default, the data from the **Get** activity will be passed on as multiple ind
 -   **Separate with**. Each item is separated by one or more characters of your choice.
 -   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
 
-The **Get** activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
+The **Get** activity will produce a new set of data every time it runs. The **Flatten** feature doesn't flatten data across multiple instances of the same activity.
 
 ## Timeout and failure event notifications
 
-Some activities are expected to take only a limited amount of time to complete. If they do not complete within an expected timeframe, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this timeout threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
+Some activities are expected to take only a limited amount of time to complete. If they don't complete within an expected time frame, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this timeout threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
 ### To be notified when the activity takes longer than a specified time to run or fails to run
 
@@ -108,30 +108,30 @@ An activity can subscribe only to data from the activities that are linked befor
 
 ### To use published data
 
-1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
-2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
-3.  Click the published data element that you want to use, and then click **OK**.
+1.  Select and hold the property value box, select **Subscribe**, and then select **Published Data**.
+2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
+3.  Select the published data element that you want to use, and select **OK**.
 
-For a list of the data elements published by each activity, see the **Published Data** table in the specific activity topic. For information about the common published data items, see <span>Common Published Data</span>.
+For a list of the data elements published by each activity, see the **Published Data** table in the specific activity section. For information about the common published data items, see <span>Common Published Data</span>.
 
 ## Activities
 
 This integration pack adds the **Exchange Admin** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Mailbox](create-mailbox.md)
-[Create Move Request](create-move-request.md)
-[Create Remote Mailbox (Hybrid)](create-remote-mailbox-hybrid.md)
-[Disable Mailbox](disable-mailbox.md)
-[Disable Remote Mailbox (Hybrid)](disable-remote-mailbox-hybrid.md)
-[Enable Mailbox](enable-mailbox.md)
-[Enable Remote Mailbox (Hybrid)](enable-remote-mailbox-hybrid.md)
-[Get Mailbox](get-mailbox.md)
-[Get Move Request](get-move-request.md)
-[Get Move Request Statistics](get-move-request-statistics.md)
-[Get Remote Mailbox (Hybrid)](get-remote-mailbox-hybrid.md)
-[Remove Mailbox](remove-mailbox.md)
-[Remove Remote Mailbox (Hybrid)](remove-remote-mailbox-hybrid.md)
-[Run Exchange PowerShell Command](run-exchange-powershell-command.md)
-[Update Mailbox](update-mailbox.md)
-[Update Move Request](update-move-request.md)
-[Update Remote Mailbox (Hybrid)](update-remote-mailbox-hybrid.md)
+- [Create Mailbox](create-mailbox.md)
+- [Create Move Request](create-move-request.md)
+- [Create Remote Mailbox (Hybrid)](create-remote-mailbox-hybrid.md)
+- [Disable Mailbox](disable-mailbox.md)
+- [Disable Remote Mailbox (Hybrid)](disable-remote-mailbox-hybrid.md)
+- [Enable Mailbox](enable-mailbox.md)
+- [Enable Remote Mailbox (Hybrid)](enable-remote-mailbox-hybrid.md)
+- [Get Mailbox](get-mailbox.md)
+- [Get Move Request](get-move-request.md)
+- [Get Move Request Statistics](get-move-request-statistics.md)
+- [Get Remote Mailbox (Hybrid)](get-remote-mailbox-hybrid.md)
+- [Remove Mailbox](remove-mailbox.md)
+- [Remove Remote Mailbox (Hybrid)](remove-remote-mailbox-hybrid.md)
+- [Run Exchange PowerShell Command](run-exchange-powershell-command.md)
+- [Update Mailbox](update-mailbox.md)
+- [Update Move Request](update-move-request.md)
+- [Update Remote Mailbox (Hybrid)](update-remote-mailbox-hybrid.md)

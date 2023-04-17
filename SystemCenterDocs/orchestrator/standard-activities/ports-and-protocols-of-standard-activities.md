@@ -1,7 +1,7 @@
 ---
 title: Ports and Protocols of Standard Activities 
 description: This article describes Ports and Protocols of Standard Activities.
-ms.custom: na
+ms.custom: UpdateFrequency5
 ms.date: 1/2/2018
 ms.prod: system-center
 ms.reviewer: ""
@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 # Ports and Protocols of Standard Activities
 

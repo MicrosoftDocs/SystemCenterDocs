@@ -1,6 +1,6 @@
 ---
 description: This article describes how you can identify tape libraries compatible with DPM.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

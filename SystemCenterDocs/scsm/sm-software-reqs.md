@@ -1,8 +1,8 @@
 ---
 title: Software Requirements for Service Manager
-manager: evansma
+manager: mkluck
 description: The article describes System Center 2016 - Service Manager software requirements.
-ms.custom: na
+ms.custom: na, UpdateFrequency.5
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -22,7 +22,7 @@ This article describes the software requirements for Service Manager in System C
 
 ## Software requirements
 
- All basic software requirements for System Center 2016 Service Manager are listed at [System requirements for Service Manager](system-requirements.md).  
+ All the basic software requirements for System Center 2016 Service Manager are listed in [System requirements for Service Manager](system-requirements.md).  
 
 > [!NOTE]  
 >  The Service Manager management server and data warehouse management server must be installed on the 64\-bit edition of the Windows operating system. The Service Manager console can be installed on both the 32\-bit and 64\-bit editions of Windows.  
@@ -35,10 +35,10 @@ This article describes the software requirements for Service Manager in System C
 |Service Manager management server|In addition to the [System Requirements for System Center 2016](system-requirements.md), the Service Manager management server  requires:<br /><br /> -   ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server<br />-   SQL Server Native client<br />-   Microsoft Report Viewer Redistributable, which is available with the Service Manager media.|  
 |Data warehouse management server|In addition to the [System Requirements for System Center 2016](system-requirements.md), the data warehouse management server requires:<br /><br /> -   SQL Server Native client|  
 |Service Manager or data warehouse databases|In addition to the [System Requirements for System Center 2016](system-requirements.md), the Service Manager or data warehouse databases require:<br /><br /> -   SQL Server Reporting Services \(SSRS\)<br />-   The SQL Server and Analysis Services collation settings must be the same for the computers hosting the Service Manager database, data warehouse database, analysis services database, and Reporting Services database.<br />-   SQL Server Analysis Management Objects.|  
-|Service Manager console|In addition to the [System Requirements for System Center 2016](system-requirements.md), the Service Manager console requires:<br /><br /> -   Microsoft Report Viewer Redistributable, which is available with the System Center 2016 - Service Manager media.<br />-   You must have Microsoft Excel 2007 or later installed in order view OLAP data cubes on the computer running the Service Manager console.<br />-   ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server. \*<br />-   SQL Server Analysis Management Objects|  
+|Service Manager console|In addition to the [System Requirements for System Center 2016](system-requirements.md), the Service Manager console requires:<br /><br /> -   Microsoft Report Viewer Redistributable, which is available with the System Center 2016 - Service Manager media.<br />-   You must have Microsoft Excel 2007 or later installed to view OLAP data cubes on the computer running the Service Manager console.<br />-   ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server. \*<br />-   SQL Server Analysis Management Objects|  
 |Self-Service Portal|In addition to the [System Requirements for System Center 2016](system-requirements.md), the Self-Service Portal server requires:<br /><br /> -   Windows 2012 R2 server or Windows Server 2016 <br> - Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server. <br> - Enable the IIS role and ASP.NET 4.5 <br> - SQL Server Analysis Management Objects <br>|  
-|Computers accessing the Self-Service Portal|The Self Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers. <br> - Microsoft Edge <br> - Microsoft Internet Explorer 10 and 11 <br> - Mozilla Firefox 42 and later <br> -Google Chrome 46 and later|  
-|SQL Server Reporting Services|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. For more information, see [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md).|  
+|Computers accessing the Self-Service Portal|The Self Service portal needs a screen resolution above 1024 X 768. It's supported on the following browsers. <br> - Microsoft Edge <br> - Microsoft Internet Explorer 10 and 11 <br> - Mozilla Firefox 42 and later <br> -Google Chrome 46 and later|  
+|SQL Server Reporting Services|In a deployment topology where the computer hosting SSRS isn't on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. For more information, see [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md).|  
 
  \* For more information about the ADO.NET Data Service Update, see [ADO.NET Data Services Update for .NET Framework 3.5](https://support.microsoft.com/topic/description-of-the-ado-net-data-services-update-for-net-framework-3-5-sp1-for-windows-server-2003-windows-xp-windows-vista-and-windows-server-2008-may-7-2010-e525c2b3-249c-7d66-3cb2-c029c786c745).  
 
@@ -64,7 +64,7 @@ You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use t
 
 ### Windows safe mode
 
-Service Manager does not operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
+Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
 
 ## Next steps
 

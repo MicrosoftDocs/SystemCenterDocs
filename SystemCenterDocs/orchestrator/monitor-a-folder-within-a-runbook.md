@@ -1,7 +1,6 @@
 ---
 title: Example Runbook Monitoring a folder with a runbook
 description: This article describes how you can use a sample to create a simple monitoring runbook that monitors a folder for new text files.
-ms.custom: na
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -11,8 +10,9 @@ ms.topic: article
 ms.assetid: 9be981fc-6708-4d00-a42a-2a15f0addbf0
 author: jyothisuri
 ms.author: jsuri
-ms.date: 5/10/2017
-manager: evansma
+ms.date: 04/13/2023
+manager: mkluck
+ms.custom: engagement-fy23
 ---
 
 # Example Runbook: Monitor a folder with a runbook
@@ -30,7 +30,9 @@ This article shows you how to create a simple runbook that monitors a folder for
 ## Create and test a monitor runbook  
 The procedures to create, configure, and test a simple runbook that monitors a folder are described below.  
 
-### To create the workflow  
+### Create the workflow 
+
+Follow these steps to create a workflow: 
 
 1.  In the Runbook Designer **Connections** pane, select and hold the **Runbooks** folder to select **New**, and then select **Runbook**.  
 
@@ -38,7 +40,7 @@ The procedures to create, configure, and test a simple runbook that monitors a f
 
 3.  In the **Confirm Check out** dialog, select **Yes**.  
 
-4.  Type a name for the runbook, such as **Monitor Runbook**, and then press Enter.  
+4.  Enter a name for the runbook, such as **Monitor Runbook**, and then press Enter.  
 
 5. In the **Activities** pane, select **File Management** to expand the category, and then drag the **Monitor Folder** activity into the **Runbook Designer** Design workspace.  
 
@@ -56,6 +58,8 @@ The procedures to create, configure, and test a simple runbook that monitors a f
 
 ## To configure the workflow  
 
+Follow these steps to configure the workflow:
+
 1.  In the **Runbook Designer** Design workspace, double\-click the **Monitor Folder** activity.  
 
 2.  In the **Monitor Folder Properties** dialog box, select the **General** tab.  
@@ -64,17 +68,17 @@ The procedures to create, configure, and test a simple runbook that monitors a f
 
 4.  Select the **Details** tab.  
 
-5.  On the **Details** tab, in the **Path** box, type the path of the folder you want to monitor. For example, **C:\\Monitor**.  
+5.  On the **Details** tab, in the **Path** box, enter the path of the folder you want to monitor. For example, **C:\\Monitor**.  
 
 6.  Below the **File Filters** list, select **Add**.  
 
-7.  In the **Filter Settings** dialog box, set the following:  
+7.  In the **Filter Settings** dialog, set the following:  
 
     1.  In the **Name** list box, select **File Name**.  
 
     2.  In the **Relation** list box, select **Matches pattern**.  
 
-    3.  In the **Value** box, type **\*.txt**.  
+    3.  In the **Value** box, enter **\*.txt**.  
 
         This setting directs the monitor to look for files with the **txt** extension. This field accepts regular expression syntax.  
 
@@ -82,32 +86,34 @@ The procedures to create, configure, and test a simple runbook that monitors a f
 
 9. Select the **Triggers** tab.  
 
-10. Select the **Number of files is** option, set the value in the list to **greater than**, and then type **0** in the edit box.  
+10. Select the **Number of files is** option, set the value in the list to **greater than**, and then enter **0** in the edit box.  
 
 11. Select **Finish**.  
 
-12. In the **Runbook Designer** Design workspace, double\-click the **Send Event Log Message**.  
+12. In the **Runbook Designer** Design workspace, double-click the **Send Event Log Message**.  
 
 13. In the **Send Event Log Message Properties** dialog, on the **Details** tab, in the **Properties** section, set the following:  
 
-    1.  In the **Computer** box, type the name of the computer to receive the Event message.  
+    1.  In the **Computer** box, enter the name of the computer to receive the Event message.  
 
         This is typically the computer where you're running Runbook Designer.  
 
-    2.  In the **Message** box, type the message to display in the Event log. For example, **File Detected**.  
+    2.  In the **Message** box, enter the message to display in the Event log. For example, **File Detected**.  
 
     3.  Leave the **Severity** level at **Information**.
 
 14. Select **Finish**.  
 
     > [!NOTE]  
-    > In this sample, the **Invoke Runbook** activity is not configured.  
+    > In this sample, the **Invoke Runbook** activity isn't configured.  
 
-## To modify runbook settings  
+## Modify runbook settings  
+
+Follow these steps to modify the runbook settings:
 
 1.  Above the **Runbook Designer** Design workspace, select and hold the **Monitor Runbook** tab to select **Properties**.  
 
-2.  In the **Monitor Runbook Properties** dialog, select the **Logging** tab, and then select both **Store Activity\-specific Returned Data** and **Store Common Returned Data**.  
+2.  In the **Monitor Runbook Properties** dialog, select the **Logging** tab, and then select both **Store Activity-specific Returned Data** and **Store Common Returned Data**.  
 
 3.  Select **Finish**.  
 
@@ -118,7 +124,9 @@ In the Runbook Tester, you can test runbooks in a simulated runtime and debuggin
 
 Use the following steps to test your runbook in the **Runbook Tester**.  
 
-### To prepare your computer  
+### Prepare your computer  
+
+Follow these steps to prepare your computer:
 
 1.  Select and hold **Start** to select **Open Windows Explorer**.  
 
@@ -128,7 +136,9 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 4.  In the **C:\\Source** folder, create a file with a **txt** extension. For example, **text.txt**.  
 
-### To test the runbook  
+### Test the runbook
+
+Follow these steps to test the runbook:
 
 1.  In the **Runbook Designer** Design workspace, select the **Monitor Runbook** tab.  
 
@@ -167,5 +177,5 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 ## Next steps
 
-Read [Design and build runbooks](design-and-build-runbooks.md) to learn more about building runbooks and get best practice guidance for designing runbooks.
-Read [Control runbook activities](control-runbook-activities.md) to learn more about the options for controlling runbook execution.
+- Read [Design and build runbooks](design-and-build-runbooks.md) to learn more about building runbooks and get best practice guidance for designing runbooks.
+- Read [Control runbook activities](control-runbook-activities.md) to learn more about the options for controlling runbook execution.

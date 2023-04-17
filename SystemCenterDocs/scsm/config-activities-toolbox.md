@@ -2,7 +2,7 @@
 title: Configure the Activities Toolbox
 description: You can configure the activities toolbox in the Service Manager Authoring Tool to add or remove custom activities and to personalize it.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -26,7 +26,7 @@ ms.assetid: fed6eb78-2fb6-432d-9c47-8d3502956ab4
 There are two ways to configure the Activities Toolbox in the Service Manager Authoring Tool:
 
 - Modify the default toolbox by adding or removing custom activities. These changes require administrative-level permissions, and they're visible to all the users of the Authoring Tool.
-- Personalize the toolbox. These changes don't require special permissions. Changes made by one user affect only that user.
+- Personalize the toolbox. These changes don't require special permissions. Changes made by one user affect that user only.
 
 ## Modify the default toolbox
 
@@ -129,4 +129,4 @@ Use this procedure to delete an activity group in the Service Manager Authoring 
 
 ## Next steps
 
-- Review [Guidelines for creating custom activities in the Authoring Tool](create-custom-activities.md).
+Review the [Guidelines for creating custom activities in the Authoring Tool](create-custom-activities.md).

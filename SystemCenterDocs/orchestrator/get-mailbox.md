@@ -1,7 +1,7 @@
 ---
 title: Get Mailbox
 description: You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 01/24/2018
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 1e5f6075-259b-426b-97c9-a934d155f665
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Mailbox
@@ -25,7 +25,7 @@ manager: evansma
 
 You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment. The Get Mailbox activity lets you filter against various mailbox attributes.
 
-This activity calls the Exchange Get-Mailbox PowerShell cmdlet to do the underlying work. For more information, see [this article](/powershell/module/exchange/get-mailbox) about the Get-Mailbox cmdlet that shares the same parameters set.
+This activity calls the Exchange Get-Mailbox PowerShell cmdlet to do the underlying work. For more information, see [this article](/powershell/module/exchange/get-mailbox) about the Get-Mailbox cmdlet that shares the same parameter set.
 
 The following tables list the required properties, filters, optional properties, and published data for this activity.
 
@@ -37,7 +37,7 @@ This activity has no required properties.
 
 The values in this section are used to filter the results returned from the underlying call to the Exchange Get-Mailbox PowerShell cmdlet.
 
-The filter values mentioned here only filters the returned results from the cmdlet and don't pass any values specified here as parameters to the underlying cmdlet.
+The filter values mentioned here only filter the returned results from the cmdlet and don't pass any values specified here as parameters to the underlying cmdlet.
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -227,9 +227,9 @@ If the value specified for any of these optional properties is empty or null, (n
 | Mailbox Plan   | Specifies the Get activity to return mailboxes associated with this mailbox plan. A mailbox plan specifies the permissions and features available to a mailbox user. The mailbox plan name you provide must be included in the service plan for the organization in which this mailbox belongs.<br>This property is available for multi-tenant deployments. This property applies to objects in the cloud-based service. It isn't available for on-premises deployments.   | String   |
 | Organization   | Specifies the organization to retrieve mailboxes from.<br>This property is available for multi-tenant deployments. It isn't available for on-premises deployments. <br>This property doesn't accept wildcard characters. This property must be configured with the exact name of the organization.   | String   |
 | Organizational Unit   | This property specifies an organizational unit (OU) to which the Get results will be limited. When this property is used, only mailboxes in the specified container will be returned. Specification can be either the OU or the domain name. If the OU is used, the canonical name of the OU must not be specified.   | String   |
-| Read From Domain Controller | Specifies that the user information is read from a domain controller in the user's domain. When the recipient scope is set to include all recipients in the forest and this property is not configured, it is possible that the user information is read from a global catalog containing outdated information. If you use this property, multiple reads might be necessary to get the information. By default, the recipient scope is set to the domain that hosts your servers that run Exchange. <br>Default is True, when selected.   | True, False  |
+| Read From Domain Controller | Specifies that the user information is read from a domain controller in the user's domain. When the recipient scope is set to include all recipients in the forest and this property isn't configured, it's possible that the user information is read from a global catalog containing outdated information. If you use this property, multiple reads might be necessary to get the information. By default, the recipient scope is set to the domain that hosts your servers that run Exchange. <br>Default is True, when selected.   | True, False  |
 | Recipient Type Details   | This property specifies the type of recipients returned by the Get activity. Recipient types are divided into recipient types and subtypes. <br>Each recipient type contains all common properties for all subtypes. For example, the type UserMailbox represents a user account in Active Directory that has an associated mailbox. Because there are several mailbox types, each mailbox type is identified by the RecipientTypeDetails property. For example, a conference room mailbox has RecipientTypeDetails set to RoomMailbox, whereas a user mailbox has RecipientTypeDetails set to UserMailbox.<br>This property accepts the following values:<br>RoomMailbox <br>EquipmentMailbox <br>LegacyMailbox <br>LinkedMailbox <br>UserMailbox <br>DiscoveryMailbox <br>SharedMailbox | String   |
-| Remote Archive   | Specifies whether to disconnect the remote archive for this mailbox. A remote archive exists in a cloud-based service.<br>When you use this property, you cannot also use the Archive property. Default is True, when selected.   | True, False  |
+| Remote Archive   | Specifies whether to disconnect the remote archive for this mailbox. A remote archive exists in a cloud-based service.<br>When you use this property, you can't also use the Archive property. Default is True, when selected.   | True, False  |
 | Result Size   | Specifies the maximum number of results to return. To return all mailboxes that match the query, use "unlimited" for the value of this property. The default value is "unlimited".   | String   |
 | Server   | Specifies an individual server by which to limit the results. When you use this property, only mailboxes that reside on the specified server will be returned. Use the common name of the server that you want to specify.   | String   |
 | Sort By   | Specifies the attribute by which to sort the results. Results can only be sorted by one attribute at a time. The results are sorted in ascending order. Results can be sorted by the following attributes: <br>Alias<br>Display name<br>Name<br>   | String   |
@@ -256,7 +256,7 @@ If the value specified for any of these optional properties is empty or null, (n
 | Archive State   | Indicates the state of the mailbox archive. This parameter can be one of the following values:<br>HostedPending <br>HostedProvisioned <br>Local <br>None <br>OnPremise   | String   |
 | Archive Status   | The archive status (Active or None).   | String   |
 | Archive Warning Quota   | Mailbox size at which a warning message is sent.   | String   |
-| Audit Admin   | List of admin operations which are logged. This parameter can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
+| Audit Admin   | List of admin operations that are logged. This parameter can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
 | Audit Delegate   | List of delegate options which are logged. This parameter can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
 | Audit Enabled   | Indicates whether audit logging is enabled or disabled for the mailbox.   | String   |
 | Audit Log Age Limit   | Amount of time that the audit log entries are retained in the mailbox.   | String   |

@@ -1,7 +1,7 @@
 ---
 title: Download File
 description: The Download File activity is used in a runbook to download a file from an FTP server.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

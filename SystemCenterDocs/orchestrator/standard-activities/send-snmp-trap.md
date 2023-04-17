@@ -1,7 +1,7 @@
 ---
 title: Send SNMP Trap activity
 description: This article describes about how to configure the Send SNMP Trap activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 2670b3bc-a5a6-4613-9516-dfe4bdf25612
 caps.latest.revision: 22
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Send SNMP Trap
 
