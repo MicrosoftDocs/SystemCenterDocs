@@ -5,7 +5,7 @@ description: This article details the release builds in Virtual Machine Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/11/2023
+ms.date: 04/18/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
