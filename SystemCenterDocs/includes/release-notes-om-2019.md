@@ -187,7 +187,7 @@ For the problems fixed in UR4 and the installation instructions for UR4, see [th
 **Workaround**: None.
 
 ## Operations Manager 2019 UR5 release notes
-The following sections summarize the release notes for Operations Manager 2019 UR5, and include the known issues and workarounds.
+The following section summarizes the release notes for Operations Manager 2019 UR5, and includes the known issues and workarounds.
 
 For the problems fixed in UR5 and the installation instructions for UR5, see [the KB article].
 
