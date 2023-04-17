@@ -5,8 +5,8 @@ description: This article describes how to install the Operations Manager Audit 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 02/11/2022
-ms.custom: na
+ms.date: 04/13/2023
+ms.custom: na, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -38,7 +38,9 @@ Use the following procedures to install an Audit Collection Services (ACS) colle
 
 The ACS database runs on a supported version of Microsoft SQL Server. The Audit Collection Services Collector Setup wizard creates the ACS database on an existing installation of Microsoft SQL Server. To complete the installation procedure, you must be a member of the local Administrators group on both the ACS collector and the ACS database computers, and a database administrator on the ACS database. As a best practice for security, consider using Run As to perform this procedure.
 
-## To install an ACS collector and an ACS database
+## Install an ACS collector and an ACS database
+
+Follow these steps to install an ACS collector and an ACS database:
 
 1.  Sign in to the server by using an account that has local administrative credentials.
 
@@ -61,7 +63,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 8.  In the **Database server instance name** field, enter the name of the server and the name of the SQL Server instance, if not the default instance, for the database server that will host the ACS database. In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and enter a different name or leave the default name. Select **Next**.
 
     > [!NOTE]
-    > Database name cannot contain the `-` character.
+    > Database name can't contain the `-` character.
 
 9. On the **Database Authentication** page, select one of the authentication methods. If the ACS collector and the ACS database are members of the same domain, you can select **Windows authentication**, otherwise select **SQL authentication**, and select **Next**.
 
@@ -87,6 +89,8 @@ You can verify the ACS collector performance using Performance monitor and Power
 
 ### Monitor ACS collector performance data with Performance monitor
 
+Follow these steps to monitor ACS collector performance data with Performance monitor:
+
 1. Sign in to the computer that has Performance monitor installed.
 
 2. Enter **perfmon.msc** on the **Run** page and select **OK**.
@@ -103,7 +107,7 @@ You can verify the ACS collector performance using Performance monitor and Power
 
    :::image type="add" source="media/deploy-install-acs/add.png" alt-text="Screenshot showing add.":::
 
-6. **Add Counters** page opens. Locate the **ACS Collector** counter and click **Add >>** and select **OK** to confirm the properties.
+6. **Add Counters** page opens. Locate the **ACS Collector** counter and select **Add >>** and select **OK** to confirm the properties.
 
    :::image type="add counters" source="media/deploy-install-acs/add-counters.png" alt-text="Screenshot showing the add counters.":::
 
@@ -143,7 +147,9 @@ Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous
 
 :::image type="example" source="media/deploy-install-acs/example.png" alt-text="Screenshot showing the PowerShell example for gathering ACS collector performance data.":::
 
-## To deploy ACS reporting
+## Deploy ACS reporting
+
+Follow these steps to deploy ACS reporting:
 
 1.  Sign in to the server that will be used to host ACS reporting as a user that is an administrator of the SSRS instance.
 
@@ -176,4 +182,4 @@ Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous
 
 ## Next steps
 
-- To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  
+To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  

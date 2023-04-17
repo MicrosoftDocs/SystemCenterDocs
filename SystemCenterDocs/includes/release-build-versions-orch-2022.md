@@ -1,8 +1,8 @@
 ---
 title: System Center 2022 - Orchestrator Release Build Versions
 description: Include file that shows the list of release builds for System Center 2022 - Orchestrator.
-author: v-pgaddala
-ms.author: v-pgaddala
+author: Farha-Bano
+ms.author: v-farhabano
 manager: jsuri
 ms.date: 03/15/2023
 ms.prod: system-center
