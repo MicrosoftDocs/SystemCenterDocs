@@ -185,3 +185,14 @@ For the problems fixed in UR4 and the installation instructions for UR4, see [th
 **Description**: In Operations Manager console **Authoring** > **Groups** new columns (**Management Pack**, **Sealed** and **Members**) appear in English, not displayed in the language as set in the computer accessing this view. 
 
 **Workaround**: None.
+
+## Operations Manager 2019 UR5 release notes
+The following sections summarize the release notes for Operations Manager 2019 UR5, and include the known issues and workarounds.
+
+For the problems fixed in UR5 and the installation instructions for UR5, see [the KB article].
+
+### Web console security vulnerabilities
+
+**Description**: Operations Manager 2019 Web console has security vulnerabilities.
+
+**Workaround**: With Operations Manager 2019 UR5, several Web console security vulnerabilities are fixed. So, any changes made to settings inside the HTMLDashboard and MonitoringView web apps have to be made again, as the Web.config files of both these web apps will be replaced.
