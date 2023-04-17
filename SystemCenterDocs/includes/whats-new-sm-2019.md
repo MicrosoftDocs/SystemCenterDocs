@@ -7,7 +7,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod:  system-center
 keywords:  
-ms.date: 02/16/2023
+ms.date: 05/10/2021
 ms.technology:  service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
@@ -15,7 +15,7 @@ ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ## New features in SM 2019
 See the following sections for information about the new features/features updated in Service Manager (SM) 2019.
 
-### Support to SQL Server 2017
+## Support to SQL Server 2017
 SM 2019 supports new installation of SQL Server 2017.
 [Learn more](../scsm/system-requirements.md).
 
@@ -28,24 +28,24 @@ Service Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
-###	Improvement in Active Directory Connector
-The Active Directory (AD) connector has been improvised to synchronize with a specific domain controller. You may now, specify the domain controller in the LDAP query of the Active Directory connector.
+##	Improvement in Active Directory Connector
+The Active Directory (AD) connector has been improvised to synchronize with a specific domain controller. You may now specify the domain controller in the LDAP query of the Active Directory connector.
 
-###	Improved UI Responsiveness
+##	Improved UI Responsiveness
 The user interface is made responsive by addressing memory leak problems.
 
-### Enable Service Logon
+## Enable Service Logon
 In earlier releases, during the setup of Service Manager Management Server and Service Manager Data Warehouse Management Server, various credentials are asked for SM accounts. These accounts had been interactive (accounts having **Allow log on locally** (SetInteractiveLogonRight) permission).
 
 With SM 2019, we've enabled *Service Logon* type to make Service Manager more secure, and the default logon type is set to *Service Logon*. For information on how to grant service logon permissions to the Run As accounts, see enable service logon feature. [Learn more](../scsm/enable-service-log-on-sm.md).
 
-### Bug fixes
+## Bug fixes
 This release of System Center Service Manager contains all the bug fixes shipped until the [Update Rollup 5 of SCSM 2016](https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager).  
 
 > [!NOTE]
 > The following feature was introduced in Service Manager 1807, enhanced in 2019.
 
-### Support to SQL 2017 feature pack
+## Support to SQL 2017 feature pack
 
 You can upgrade SQL server 2016 to SQL 2017.
 [Learn more](../scsm/system-requirements.md).
@@ -53,7 +53,7 @@ You can upgrade SQL server 2016 to SQL 2017.
 > [!NOTE]
 > The following feature was introduced in Service Manager 1801, included in 2019.
 
-### Support to enhanced evaluation experience
+## Support to enhanced evaluation experience
 
 SM supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
@@ -72,13 +72,3 @@ This support is applicable for Service Manager 2019.
 >[!NOTE]
 > - Service Manager 2019 doesn't support SQL 2019 RTM, supports SQL 2019 with CU8 or later.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
-
-## New features in Service Manager UR5
-
-See the following sections for information about the new features/feature updates supported in SM 2019 UR5.
-
-For issues fixed and the installation instructions for UR5, see the KB article.
-
-### Support for Modern Auth (0Auth2)
-
-With SM 2019 UR5, support for Modern Auth (OAuth2) has been added to email notifications. To use Modern Auth, ensure app registration is complete and TLS 1.2 is enabled. [Learn more](/SystemCenterDocs/scsm/notifications.md#configure-email-notification-with-modern-authentication).
