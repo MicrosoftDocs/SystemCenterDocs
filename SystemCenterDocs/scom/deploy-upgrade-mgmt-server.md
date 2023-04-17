@@ -5,8 +5,8 @@ description: This article describes how to upgrade a management server in a dist
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/11/2018
-ms.custom: UpdateFrequency.5
+ms.date: 04/13/2023
+ms.custom: UpdateFrequency.5, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -29,12 +29,14 @@ When you upgrade a distributed management group, you start by upgrading each of 
 > Because the ACS Collector server must be on the same machine as a management server, we recommend you perform the steps described in [How to Upgrade an ACS Collector](~/scom/deploy-upgrade-acs-collector.md) along with the upgrade of the management server on which ACS resides.
 
 > [!IMPORTANT]
-> When upgrading multiple management servers in a distributed management group, you must wait to start upgrade of additional management servers until after the setup on the first management server completes. Failing to do so can cause a SQL update script that runs early in the set up process to run on multiple management servers and result in database issues.  This SQL update script only needs to run on the initial management server being upgraded.
+> When upgrading multiple management servers in a distributed management group, you must wait to start upgrade of additional management servers until after the setup on the first management server completes. Failing to do so can cause a SQL update script that runs early in the set up process to run on multiple management servers and result in database issues. This SQL update script only needs to run on the initial management server being upgraded.
 
 > [!NOTE]
 > When upgrading multiple management servers in a distributed management group, sequence the upgrades in a manner that best suits your business needs. Upgrade all management servers in the distributed management group as soon as possible after the initial management server is upgraded to verify that your upgraded environment is healthy.
 
-### To upgrade a management server
+## Upgrade a management server
+
+Follow these steps to upgrade a management server:
 
 1.  Sign in to the Operations Manager management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
@@ -63,13 +65,15 @@ When you upgrade a distributed management group, you start by upgrading each of 
     > [!NOTE]
     > Upgrading a management server is just one phase of the distributed upgrade process. Upgrade isn't completed until you've upgraded all of the other features in your management group. The next step is to upgrade any gateways. For more information, see [How to Upgrade a Gateway Server](~/scom/deploy-upgrade-gateway-server.md).
 
-### To upgrade a management server from the Command Prompt
+## Upgrade a management server from the command prompt
+
+Follow these steps to upgrade a management server from the command prompt:
 
 1.  Sign in to the management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  Open a Command Prompt window by using the **Run as Administrator** option.
+2.  Open a command prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command.
+3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command:
 
     ```
     setup.exe /silent /upgrade
