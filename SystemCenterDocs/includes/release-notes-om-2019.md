@@ -195,4 +195,4 @@ For the problems fixed in UR5 and the installation instructions for UR5, see [th
 
 **Description**: Operations Manager 2019 Web console has security vulnerabilities.
 
-**Workaround**: With Operations Manager 2019 UR5, several Web console security vulnerabilities are fixed. So, any changes made to settings inside the HTMLDashboard and MonitoringView web apps have to be made again, as the Web.config files of both these web apps will be replaced.
+**Workaround**: With Operations Manager 2019 UR5, several Web console security vulnerabilities are fixed. As the Web.config files of HTMLDashboard and MonitoringView web apps will be replaced, you will have to redo the changes that you have made to the settings of these apps.
