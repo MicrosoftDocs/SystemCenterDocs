@@ -36,7 +36,7 @@ This article provides details of the new features supported in System Center 201
 [!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
 
 ### Discover Azure Monitor SCOM Managed Instance (preview) from Operations Manager console
-Operations Manager 2019 UR5 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. [Learn more](/SystemCenterDocs/scom/operations-manager-managed-instance-overview.md).
+Operations Manager 2019 UR5 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. [Learn more](operations-manager-managed-instance-overview.md).
 
 :::image type="content" source="media/whats-new-in-om/discover-scom-managed-instance-inline.png" alt-text="Screenshot of SCOM Managed Instance (preview) page." lightbox="media/whats-new-in-om/discover-scom-managed-instance-expanded.png":::
 
