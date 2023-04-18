@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/12/2023
+ms.date: 04/18/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -32,6 +32,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10552.0|[5005527](https://support.microsoft.com/kb/5005527) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 |10.19.10569.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
 |10.19.10576.0|[5016576](https://support.microsoft.com/kb/5016576) |July 2022 |Update Rollup 4 - Hotfix for Operations Console Performance issue |
+|10.19.10603|[5025123](https://support.microsoft.com/kb/5025123)|April 2023 |Update Rollup 5 |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
@@ -42,6 +43,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10177.0|[4594078](https://support.microsoft.com/kb/4594078) |March 2021 |Update Rollup 3 |
 |10.19.10185.0|[5005527](https://support.microsoft.com/kb/5005527) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 |10.19.10200.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
+|10.19.10211.0|[5025123](https://support.microsoft.com/kb/5025123)|April 2023 |Update Rollup 5 |
 
 ### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
@@ -56,5 +58,6 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.1167.0|[5013427](https://support.microsoft.com/kb/5013427) |December 2022 |1.6.11-0 |Update Rollup 4 - Hotfix |
 |10.19.1195.0|[5013427](https://support.microsoft.com/kb/5013427) |February 2023 |1.6.12-1 |Update Rollup 4 - Hotfix |
 |10.19.1214.0|[5013427](https://support.microsoft.com/kb/5013427) |March 2023 |1.7.0-0 |Update Rollup 4 - OpenSSL 3.0 |
+|-|[5025123](https://support.microsoft.com/kb/5025123)|April 2023 |-|Update Rollup 5 |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
