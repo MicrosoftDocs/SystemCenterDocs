@@ -189,7 +189,7 @@ For the problems fixed in UR4 and the installation instructions for UR4, see [th
 ## Operations Manager 2019 UR5 release notes
 The following section summarizes the release notes for Operations Manager 2019 UR5, and includes the known issues and workarounds.
 
-For the problems fixed in UR5 and the installation instructions for UR5, see [the KB article](https://support.microsoft.com/en-us/topic/788c571b-1887-4376-8b2f-c7881e797835).
+For the problems fixed in UR5 and the installation instructions for UR5, see [the KB article](https://support.microsoft.com/topic/788c571b-1887-4376-8b2f-c7881e797835).
 
 ### Web console security vulnerabilities
 
