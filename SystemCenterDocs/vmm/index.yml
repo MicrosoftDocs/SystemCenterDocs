@@ -9,8 +9,8 @@ metadata:
   ms.prod: system-center
   ms.technology: virtual-machine-manager
   ms.topic: landing-page # Required
-  author: v-pgaddala #Required; your GitHub user alias, with correct capitalization.
-  ms.author: v-pgaddala #Required; microsoft alias of author; optional team alias.
+  author: Farha-Bano #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-farhabano #Required; microsoft alias of author; optional team alias.
   ms.date: 06/09/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
