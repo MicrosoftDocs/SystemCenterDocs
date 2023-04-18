@@ -5,14 +5,14 @@ description: This article describes the options and how to configure the Microso
 author: jyothisuri
 ms.author: jsuri
 ms.manager: mkluck
-ms.date: 11/07/2016
-ms.custom: UpdateFrequency2
+ms.date: 04/17/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configuring Windows agents
+# Configure Windows agents
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -28,7 +28,7 @@ In System Center – Operations Manager, when you install an agent on a comput
 > [!NOTE]
 > When you save changes in the Microsoft Monitoring Agent application, the Microsoft Monitoring Agent service will be stopped and restarted.
 
-## Configuring an agent to report to multiple management groups
+## Configure an agent to report to multiple management groups
 
 Use the following procedure to make an Operations Manager agent a member of multiple management groups, also referred to as multi-homing. For example, an agent can be configured to report Active Directory data to the Directory Services Management Group and Exchange data to the Messaging Management Group. An agent can be a member of up to four management groups.
 
@@ -45,7 +45,7 @@ Do one of the following:
 
 - Run the MOMAgent.msi Windows installer package on the desired computers, and modify the installation by adding a new management group. For more information, see [Install Windows Agent Manually Using MOMAgent.msi](manage-deploy-windows-agent-manually.md).
 
-## Changing the account configuration for an agent
+## Change the account configuration for an agent
 
 You can use the following procedure to change the account that the agent will use when performing actions requested by the management server.
 
@@ -53,7 +53,7 @@ You can use the following procedure to change the account that the agent will us
 2.  On the **Operations Manager** tab, select a management group and select **Edit**.
 3.  In the **Agent Action Account** section, edit the account information and select **OK**.
 
-## Removing a management group from an agent
+## Remove a management group from an agent
 
 You can use the following procedure to remove a management group from the agent configuration.
 
@@ -64,7 +64,7 @@ You can use the following procedure to remove a management group from the agent 
 > [!NOTE]
 > You can remove all management groups while leaving the agent installed. This is useful in situations such as when you want to prepare a computer for imaging and want an image with the agent installed but without assignment to a specific management group.
 
-## Changing the Active Directory Integration setting for an agent
+## Change the Active Directory Integration setting for an agent
 
 You can use the following procedure to change the Active Directory integration setting for an agent.
 
