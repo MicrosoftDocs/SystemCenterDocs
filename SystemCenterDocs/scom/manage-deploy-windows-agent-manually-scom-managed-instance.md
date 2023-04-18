@@ -10,7 +10,7 @@ ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2019'
 ---
 
 # Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)
