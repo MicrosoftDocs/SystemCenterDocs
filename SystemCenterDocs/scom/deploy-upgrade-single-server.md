@@ -4,8 +4,8 @@ description: This article describes how to upgrade a single-server management gr
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/15/2018
-ms.custom: UpdateFrequency.5
+ms.date: 04/13/2023
+ms.custom: UpdateFrequency.5, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -22,7 +22,9 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 
 When you upgrade a single-server management group, all the features that are installed on the server are upgraded. Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
-### To upgrade a single-server management group
+## Upgrade a single-server management group
+
+Follow these steps to upgrade a single-server management group:
 
 1. Sign in to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
@@ -55,11 +57,13 @@ When you upgrade a single-server management group, all the features that are ins
 
 8. When the **Ready to Upgrade** page appears, review the upgrade summary, and select **Upgrade**.
 
-### To upgrade a single-server management group from the Command Prompt
+## Upgrade a single-server management group from the command prompt
+
+Follow these steps to upgrade a single-server management group from the command prompt:
 
 1.  Sign in to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  Open an elevated Command Prompt by using the **Run as Administrator** option.
+2.  Open an elevated command prompt by using the **Run as Administrator** option.
 
 3.  Change the path to where the Operations Manager Setup.exe file is located.
 
@@ -67,7 +71,7 @@ When you upgrade a single-server management group, all the features that are ins
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated. For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
     > [!IMPORTANT]
-    > The following commands assume that you specified the Local System for the Data Access service `(/UseLocalSystemDASAccount`). To specify a domain\user name for these accounts, you must provide the following parameters instead:`/DASAccountUser: <domain\username> /DASAccountPassword: <password>`
+    > The following commands assume that you specified the Local System for the Data Access service `(/UseLocalSystemDASAccount)`. To specify a domain\user name for these accounts, you must provide the following parameters instead:`/DASAccountUser: <domain\username> /DASAccountPassword: <password>`
 
 4.  Run the following command.
 
@@ -101,9 +105,11 @@ When you upgrade a single-server management group, all the features that are ins
 
     After you've upgraded your single-server management group, you can upgrade the agents.
 
-## Verifying the upgrade
+## Verify the upgrade
 
-### To confirm the health of the management server
+### Confirm the health of the management server
+
+Follow these steps to confirm the health of the management server:
 
 1. In the Operations console, in the navigation pane, select **Administration**.
 
@@ -111,4 +117,4 @@ When you upgrade a single-server management group, all the features that are ins
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
+To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
