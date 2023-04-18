@@ -33,7 +33,7 @@ For either of the methods, ensure the following conditions are met:
 
 [Download the MOMAgent.msi](https://go.microsoft.com/fwlink/?linkid=2212475).
 
-For more information about how to deploy the Operations Manager agent from the command line, see [Deploy the Operations Manager agent from the command line](./manage-deploy-windows-agent-manually.md#to-deploy-the-operations-manager-agent-from-the-command-line).
+For more information about how to deploy the Operations Manager agent from the command line, see [Deploy the Operations Manager agent from the command line](./manage-deploy-windows-agent-manually.md#deploy-the-operations-manager-agent-from-the-command-line).
 
 
 ## Next steps
