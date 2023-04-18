@@ -5,14 +5,14 @@ description: This article describes how to configure and modify custom report sc
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/15/2016
-ms.custom: UpdateFrequency2
+ms.date: 04/18/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to configure and modify report schedules
+# Configure and modify report schedules
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -20,11 +20,11 @@ ms.topic: article
 
 ::: moniker-end
 
-Operations Manager Reporting server component provides report-specific schedules to help you control the processing and distribution of reports.  Once you've configured a schedule for a report, it can be managed from the Reporting workspace under the Scheduled Reports node in the Operations console.  
+Operations Manager Reporting server component provides report-specific schedules to help you control the processing and distribution of reports. Once you've configured a schedule for a report, it can be managed from the Reporting workspace under the Scheduled Reports node in the Operations console.  
 
-## To create a report schedule
+## Create a report schedule
 
-Use the following procedure to create a schedule from a saved report.  Report schedules can be created after the report opens or when saved as a Favorite report.  The following steps will show you how to create a schedule from a saved report, however; the same steps for configuring the schedule can be performed from an open report by selecting **File**, **Schedule..** from the main menu.  
+Use the following procedure to create a schedule from a saved report. Report schedules can be created after the report opens or when saved as a Favorite report. The following steps will show you how to create a schedule from a saved report; however, the same steps for configuring the schedule can be performed from an open report by selecting **File**, **Schedule..** from the main menu.  
 
 For more information on how to run and save a report, see [How to Run, Save, and Export a Report](manage-reports-run-save-export.md).
 
@@ -44,7 +44,7 @@ For more information on how to run and save a report, see [How to Run, Save, and
 
     3.  Enter a file name for the report in the **File name** text box.  
 
-    4.  Enter a file path for the report in the **Path** text box.  Report scheduling supports Universal Naming Convention \(UNC\) file names and must not end in a backslash.  
+    4.  Enter a file path for the report in the **Path** text box. Report scheduling supports Universal Naming Convention (UNC) file names and must not end in a backslash.  
 
     5.  Select the down arrow in the **Render Format** list, and select the file format you want for the report.  
 
@@ -66,9 +66,9 @@ For more information on how to run and save a report, see [How to Run, Save, and
 8.  Make any other changes you need for this report, and select **Finish**.  
 
 
-## How to Email scheduled reports
+## Email scheduled reports
 
-The report server e-mail delivery extension isn't configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension.  For more  information on how to configure SQL Server Reporting Services for e-mail delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager).
+The report server email delivery extension isn't configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension. For more  information on how to configure SQL Server Reporting Services for email delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager).
 
 
 ### Configure email settings in the SQL Server Report Server  
@@ -79,12 +79,12 @@ The report server e-mail delivery extension isn't configured by default. You mus
 
 3. On the **Email Settings** page, enter the name of the SMTP server. This value can be an IP address, a UNC name of a computer on your corporate intranet, or a fully qualified domain name.
 
-4. In **Sender Address**, enter the name of an account that has permission to send e-mail from the SMTP server.
+4. In **Sender Address**, enter the name of an account that has permission to send email from the SMTP server.
 
 5. Select **Apply** and select **Exit**.
 
 
-### E-mail scheduled reports  
+### Email scheduled reports  
 
 1.  Sign in to the computer with an account that is a member of the Operations Manager Report Operators role.  
 
@@ -116,12 +116,12 @@ The report server e-mail delivery extension isn't configured by default. You mus
 
     2. Enter a start date and start time for the reports to be generated in  **The Subscription is effective beginning** list. You can also enter the date when this subscription will end in **The subscription expires on** list, and select **Next**.  
 
-7.  On the **Parameters** page, specify a span of time for the report in the **From** and **To** lists, make any other changes you need for this report, and select **Finish**.    
+7.  On the **Parameters** page, specify a span of time for the report in the **From** and **To** lists, make any other changes you need for this report, and select **Finish**.
 
 
 ## Edit a scheduled report  
 
-Use the following procedure to edit settings for scheduled reports from the **Reporting** pane in Operations Manager.
+Use the following procedure to edit settings for scheduled reports from the **Reporting** pane in Operations Manager:
 
 1.  Sign in to the computer with an account that is a member of the Operations Manager Report Operators role.  
 
@@ -139,10 +139,9 @@ Use the following procedure to edit settings for scheduled reports from the **Re
 
 8.  Enter any changes you need to make on the **Report Parameters** page, and select **Finish.**  
 
-
 ## Cancel a scheduled report  
 
-Use the following procedure to cancel scheduled reports.  
+Use the following procedure to cancel scheduled reports:
 
 1.  Sign in to the computer with an account that's a member of the Operations Manager Report Operators role.  
 
@@ -187,4 +186,4 @@ The example in this procedure uses an availability report that you've already cr
 
 ## Next steps
 
-- [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
+[How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
