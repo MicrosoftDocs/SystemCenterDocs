@@ -426,4 +426,4 @@ The following are the UI improvements in Operations Console:
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 5 (UR5).
 
-For the problems fixed in UR5, and the installation instructions for UR5, see the KB article.
+For the problems fixed in UR5, and the installation instructions for UR5, see the [KB article](https://support.microsoft.com/topic/788c571b-1887-4376-8b2f-c7881e797835).
