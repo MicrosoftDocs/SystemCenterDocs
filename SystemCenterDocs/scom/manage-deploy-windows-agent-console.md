@@ -9,7 +9,7 @@ ms.date: 04/17/2023
 ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Install Agent on Windows Using the Discovery Wizard
