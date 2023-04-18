@@ -1,6 +1,6 @@
 ---
 ms.assetid: 197a4330-5b2e-4ccd-bfe2-4c93e2a6714b
-title: How to Configure and Modify Report Schedules
+title: Configure and Modify Report Schedules
 description: This article describes how to configure and modify custom report schedules in Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
@@ -26,7 +26,7 @@ Operations Manager Reporting server component provides report-specific schedules
 
 Use the following procedure to create a schedule from a saved report. Report schedules can be created after the report opens or when saved as a Favorite report. The following steps will show you how to create a schedule from a saved report; however, the same steps for configuring the schedule can be performed from an open report by selecting **File**, **Schedule..** from the main menu.  
 
-For more information on how to run and save a report, see [How to Run, Save, and Export a Report](manage-reports-run-save-export.md).
+For more information on how to run and save a report, see [Run, Save, and Export a Report](manage-reports-run-save-export.md).
 
 1.  Sign in to the computer with an account that is a member of the Operations Manager Report Operators role.  
 
@@ -186,4 +186,4 @@ The example in this procedure uses an availability report that you've already cr
 
 ## Next steps
 
-[How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
+[Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
