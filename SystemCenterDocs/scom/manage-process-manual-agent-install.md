@@ -5,11 +5,11 @@ description: This article describes how to process Operations Manager agents dep
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/15/2016
+ms.date: 04/17/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Process manual agent installations
@@ -42,7 +42,9 @@ The following three options are available to process manually installed agents.
 
 The following procedures show you how to configure settings for manual agent installations.
 
-## To configure manual agent installation settings for a management group
+## Configure manual agent installation settings for a management group
+
+Follow these steps to configure manual agent installation settings for a management group:
 
 1.  Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -60,7 +62,9 @@ The following procedures show you how to configure settings for manual agent ins
 
     -   Optionally, select **Auto-approve new manually installed agents**.
 
-## To override the manual agent installation setting for a single management server
+## Override the manual agent installation setting for a single management server
+
+Follow these steps to override the manual agent installation setting for a single management server:
 
 1.  Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -82,7 +86,9 @@ The following procedures show you how to configure settings for manual agent ins
 
 7.  Select **OK**.
 
-## To approve a pending agent installation when automatic approval is not configured
+## Approve a pending agent installation when automatic approval isn't configured
+
+Follow these steps to approve a pending agent installation when automatic approval isn't configured:
 
 1.  In the Operations console, select **Administration**.
 

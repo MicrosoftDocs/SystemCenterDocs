@@ -1,18 +1,18 @@
 ---
 ms.assetid: 8b9770b0-4700-4871-82df-158f1d8c9869
-title: How to Upgrade from the Evaluation Version of Operations Manager
+title: Upgrade from an evaluation version of Operations Manager
 description: This article describes how to upgrade from an evaluation version of Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/11/2018
-ms.custom: na
+ms.date: 04/17/2023
+ms.custom: na, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade from the evaluation version of Operations Manager
+# Upgrade from the evaluation version of Operations Manager
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -29,7 +29,7 @@ To upgrade from an evaluation version of Operations Manager to a licensed versio
 
 ::: moniker range="sc-om-1801"
 
-## To upgrade from the evaluation version of System Center Operations Manager 1801
+## Upgrade from the evaluation version of System Center Operations Manager 1801
 
 Before proceeding, you need to be a member of the Operations Manager administrators role.
 
@@ -54,7 +54,7 @@ Before proceeding, you need to be a member of the Operations Manager administrat
 
 ::: moniker-end
 
-## To upgrade from the evaluation version of System Center - Operations Manager
+## Upgrade from the evaluation version of System Center - Operations Manager
 
 Before proceeding, you need to be a member of the Operations Manager administrators role, member of the computer's local Administrators group on the management server, and granted temporary membership of the sysadmin fixed server role on the SQL Server instance hosting the Operations Manager operational database to ensure this completes successfully.  
 
@@ -76,3 +76,7 @@ For more information about [Set-SCOMLicense](/powershell/module/operationsmanage
 For current information about your license, you can use the [Get-SCOMLicense](/powershell/module/operationsmanager/get-scomlicense) cmdlet. For more information, enter the following in the Operations Manager Command Shell:
 
 `get-help Get-SCOMLicense`
+
+## Next steps
+
+To understand the post-upgrade tasks to be performed once you've completed the upgrade process, see [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md).
