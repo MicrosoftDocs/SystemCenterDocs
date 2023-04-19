@@ -5,8 +5,8 @@ description: This article provides an overview about how to replace parameters i
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
+ms.date: 04/19/2023
+ms.custom: engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
