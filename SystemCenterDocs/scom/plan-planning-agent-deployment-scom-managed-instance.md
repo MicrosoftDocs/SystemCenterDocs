@@ -10,7 +10,7 @@ ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2019'
 ---
 
 # Azure Monitor SCOM Managed Instance (preview) Agents

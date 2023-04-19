@@ -10,7 +10,7 @@ ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2019'
 ---
 
 # Troubleshoot issues with Azure Monitor SCOM Managed Instance (preview)

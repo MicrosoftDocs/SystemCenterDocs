@@ -4,14 +4,14 @@ description: This article describes how to use PowerShell to configure failover 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/24/2017
-ms.custom: UpdateFrequency2
+ms.date: 04/17/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 4f6532e7-6bbd-441e-8a3c-9dec577c8724
 ---
-# How to Configure Agent Failover to Multiple Gateway Servers
+# Configure Agent Failover to Multiple Gateway Servers
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -24,7 +24,9 @@ If you've deployed multiple gateway servers in a domain that doesn't have a trus
 > [!IMPORTANT]  
 > When changing the primary management server of an agent, allow the agent to connect to its new primary management server before making changes to its failover server. Allowing the agent to get current topology information from the new primary management server prevents the agent from losing communication with all management servers.  
 
-## To configure agent failover to multiple gateway servers  
+## Configure agent failover to multiple gateway servers
+
+Follow these steps to configure agent failover to multiple gateway servers:
 
 1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
@@ -49,4 +51,5 @@ If you've deployed multiple gateway servers in a domain that doesn't have a trus
     ```  
 
 ## Next steps
+
 To understand how to manage the configuration settings of a Windows agent and the options available, review [Configuring Windows Agents](manage-deploy-config-windows-agent.md).

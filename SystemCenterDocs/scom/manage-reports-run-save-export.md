@@ -1,18 +1,18 @@
 ---
 ms.assetid: 113f2b4e-8f48-43da-9f31-2a2bf1d78ec5
-title: How to Run, Save, and Export a Report
+title: Run, Save, and Export a Report
 description: This article describes how to run, save and export a report in Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/15/2016
-ms.custom: UpdateFrequency2
+ms.date: 04/18/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to run, save, and export a report
+# Run, save, and export a report
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -20,12 +20,12 @@ ms.topic: article
 
 ::: moniker-end
 
-You can view a report in Operations Manager by selecting it, entering the required parameters, and executing it.  Once you run it, you can also choose to save the configuration to a linked report, which deploys that report with different settings.  You can export a report to another file format, such as PowerPoint, Image, PDF, Microsoft Word, or Microsoft Excel for your reporting users.  
+You can view a report in Operations Manager by selecting it, entering the required parameters, and executing it.  Once you run it, you can also choose to save the configuration to a linked report, which deploys that report with different settings. You can export a report to another file format, such as PowerPoint, Image, PDF, Microsoft Word, or Microsoft Excel for your reporting users.  
 
 Before exporting or saving the report parameters, you must first run the report.
 
 
-## To run a report from the Reporting pane  
+## Run a report from the Reporting pane  
 
 Use the following procedure to run a report from the Reporting workspace. In this example, you'll run an availability report.  
 
@@ -35,11 +35,11 @@ Use the following procedure to run a report from the Reporting workspace. In thi
 
 3.  In the **Reporting** workspace, expand **Reporting**, and select **Microsoft Generic Report Library**.  
 
-4.  In the **Reports** pane, right\-click one of the reports \(for example, **Availability**\) and select **Open**.  
+4.  In the **Reports** pane, right-click one of the reports (for example, **Availability**) and select **Open**.  
 
 5.  In the **Report** view, in the **Parameter** area, select the down arrow in the **From** box, point to **This week**, and select **Sunday**.  
 
-6.  Select the down arrow in the **To** box, point to **This week** and select **Saturday**.  
+6.  Select the down arrow in the **To** box, point to **This week**, and select **Saturday**.  
 
 7.  Select **Use business hours**.  
 
@@ -60,7 +60,7 @@ Use the following procedure to run a report from the Reporting workspace. In thi
 
 14. Select **Close** to close the report.  
 
-## How to save a report   
+## Save a report   
 
 When you run a report, you can save the report to **Favorite Reports**, or you can save it into an existing management pack. A report saved to **Favorite Reports** is only visible to you. Saving a report to an unsealed management pack is useful if you need to share with report users that include a specific set of parameters.  
 
@@ -74,7 +74,7 @@ The following steps outline the procedure for saving a report to a management pa
 
 4.  Follow the instructions in the wizard to save the report.  
 
-After the wizard completes, the management pack is saved to Operations Manager and then later deployed to the report server and is made available for all report operators.  
+After the wizard completes, the management pack is saved to Operations Manager and then later deployed to the report server and is made available for all the report operators.  
 
 > [!NOTE]  
 > Be aware of the following when saving reports:  
@@ -87,16 +87,16 @@ After the wizard completes, the management pack is saved to Operations Manager a
 > Only users who are members of the Report Operators group can save reports to management packs.  
 
 
-## How to export a Report
+## Export a report
 
-After a report has been run, you can export the report into one of several formats supported by SQL Server Reporting Services.  To learn about what formats are supported by SQL Server Reporting Services, review [Export Reports](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs)
+After a report has been run, you can export the report into one of several formats supported by SQL Server Reporting Services. To learn about what formats are supported by SQL Server Reporting Services, review [Export Reports](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs).
 
 > [!NOTE]  
 > Operations Manager Reporting must be installed before you can run a report.  
 
 If you want to manage and distribute reports securely, you can export reports to Microsoft Windows SharePoint Services, which offers digital rights management. Consult your network security administrator.  
 
-1.  After a report has been run, in the toolbar, select the **File** menu, point to **Export**, and select the format you want to export the file to.  
+1.  After a report has been run, in the toolbar, select the **File** menu, point to **Export**, and select the format in which you want to export the file.  
 
 2.  In the **Save As** dialog, select the folder where you want to save the report, and select **Save**.  
 
