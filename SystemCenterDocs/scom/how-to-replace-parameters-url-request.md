@@ -5,8 +5,8 @@ description: This article provides an overview about how to replace parameters i
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
+ms.date: 04/19/2023
+ms.custom: engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -94,7 +94,7 @@ The main Bing page is shown below with the  **Popular Now**  section highlighted
 
 ![Screenshot of Bing Homepage.](./media/bing-homepage.png)
 
-To determine where in the response body the search term appears, you can view the source of the page. A portion of the source is shown below with the HTML code of the  **Popular Now**  section. In this HTML code, you only need the search string, which is highlighted in the following illustration. The request is formed from [**http://www.bing.com**](http://www.bing.com/) followed by this string.
+To determine where in the response body the search term appears, you can view the source of the page. A portion of the source is shown below with the HTML code of the  **Popular Now**  section. In this HTML code, you only need the search string, which is highlighted in the following illustration. The request is formed from [**https://www.bing.com**](https://www.bing.com/) followed by this string.
 
 ![Illustration of the Bing Popular Now Search String.](./media/bing-popular-now-search-string.png)
 
@@ -103,7 +103,7 @@ You could just pull out the term itself, but it's more straightforward to includ
 ### To record a sample web application
 
 1. Use the procedure in [How to Capture Web Application Recording](/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to record a web application.
-2. While recording, connect to [**http://www.bing.com**](http://www.bing.com/).
+2. While recording, connect to [**https://www.bing.com**](https://www.bing.com/).
 3. Optionally, use the option on your browser to view the source of the Bing home page and locate the  **Popular Now**  section of the HTML code.
 4. Select the first search term under **Popular Now**.
 5. Save the recording to the web application.
@@ -129,8 +129,8 @@ You could just pull out the term itself, but it's more straightforward to includ
 
 1. Select the second request, and then select  **Properties**  in the  **Actions**  pane.
 2. On the  **General**  tab, select  **Insert parameter**.
-3. In the  **String**  box, delete all text after [**www.bing.com/**](http://www.bing.com/).
-4. With the cursor positioned at the end of the URL, just after [**www.bing.com**](http://www.bing.com/), select  **SearchString**  in the  **Parameters**  box, and then select  **Insert**. This inserts the variable $ParametersContext/SearchString$. The final request looks similar to the following illustration.
+3. In the  **String**  box, delete all text after [**www.bing.com/**](https://www.bing.com/).
+4. With the cursor positioned at the end of the URL, just after [**www.bing.com**](https://www.bing.com/), select  **SearchString**  in the  **Parameters**  box, and then select  **Insert**. This inserts the variable $ParametersContext/SearchString$. The final request looks similar to the following illustration.
 
    ![Illustration of the Insert Parameter.](./media/insert-parameter.png)
 
