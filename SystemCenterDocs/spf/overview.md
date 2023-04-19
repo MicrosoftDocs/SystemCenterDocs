@@ -21,7 +21,7 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 System Center - Virtual Machine Manager (VMM) provides all the resources needed to build, maintain, and monitor a cloud infrastructure. However, service providers and large enterprises need additional features to support multiple tenants, integrate infrastructures with sophisticated web-based self-service portals, and distribute management workloads across multiple datacenters.
 
-System Center - Service Provider Foundation (SPF), bundled with System Center Orchestrator, provides this functionality with an extensible [Open Data Protocol API](http://www.odata.org) over a Representational State Transfer (REST) web service that interacts with VMM.
+System Center - Service Provider Foundation (SPF), bundled with System Center Orchestrator, provides this functionality with an extensible [Open Data Protocol API](https://www.odata.org) over a Representational State Transfer (REST) web service that interacts with VMM.
 
 SPF can be used by service providers to offer infrastructure as a service (IaaS) to their clients. If a service provider has a frontend portal for clients, clients can make requests to the hosting provider resources without leaving the portal. Cloud resources provided by VMM can be managed using standard management interfaces from supported devices anywhere.
 
