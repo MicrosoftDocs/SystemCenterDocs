@@ -26,7 +26,7 @@ Operations Manager Reporting server component provides report-specific schedules
 
 Use the following procedure to create a schedule from a saved report. Report schedules can be created after the report opens or when saved as a Favorite report. The following steps will show you how to create a schedule from a saved report; however, the same steps for configuring the schedule can be performed from an open report by selecting **File**, **Schedule..** from the main menu.  
 
-For more information on how to run and save a report, see [Run, Save, and Export a Report](manage-reports-run-save-export.md).
+For more information on how to run and save a report, see [How to Run, Save, and Export a Report](manage-reports-run-save-export.md).
 
 1.  Sign in to the computer with an account that is a member of the Operations Manager Report Operators role.  
 
