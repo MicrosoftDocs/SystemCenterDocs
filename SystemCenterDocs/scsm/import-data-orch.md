@@ -7,10 +7,10 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 05/12/2022
+ms.date: 04/19/2023
 ms.technology: service-manager
 ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy23
 ---
 
 # Import Runbooks from System Center Orchestrator into Service Manager
@@ -28,11 +28,11 @@ Activities that make up a service request can be mapped to runbook activities, w
 > [!NOTE]
 > Ensure that you've installed the ADO.NET Data Services Update for .NET Framework 3.5 Service Pack 1 (SP1), as described in Microsoft Knowledge Base article 976127. For more information, see [ADO.NET Data Services Update](https://support.microsoft.com/topic/description-of-the-ado-net-data-services-update-for-net-framework-3-5-sp1-for-windows-server-2003-windows-xp-windows-vista-and-windows-server-2008-may-7-2010-e525c2b3-249c-7d66-3cb2-c029c786c745)
 
-## Create an Orchestrator Connector
+## Create an Orchestrator connector and validate its creation
 
 You can use the following procedures to create a connector for System Center - Orchestrator and then validate the creation of the connector.
 
-### To create an Orchestrator connector
+### Create an Orchestrator connector
 
 1. In the Service Manager console, select **Administration**.
 
@@ -74,7 +74,7 @@ You can use the following procedures to create a connector for System Center - O
 
    8. On the **Completion** page, ensure that you receive the message *Orchestrator connector successfully created*, and select **Close**.
 
-### To validate the creation of an Orchestrator connector
+### Validate the creation of an Orchestrator connector
 
 1.  In the **Connectors** pane, locate the Orchestrator connector that you created.
 
@@ -90,13 +90,11 @@ You can use the following procedures to create a connector for System Center - O
 5.  Review the **Runbooks** pane, and note that your runbooks have been imported.
 
 
-
-
 ## Synchronize an Orchestrator connector
 
 To ensure that the Service Manager database is up to date, the Orchestrator connector synchronizes with Service Manager on a daily basis. You can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
 
-### To manually synchronize an Orchestrator connector
+### Manually synchronize an Orchestrator connector
 
 1.  In the Service Manager console, select **Administration**.
 
@@ -106,7 +104,7 @@ To ensure that the Service Manager database is up to date, the Orchestrator conn
 
 4.  In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
 
-### To validate that an Orchestrator connector synchronized
+### Validate that an Orchestrator connector is synchronized
 
 1.  In the Service Manager console, select **Connectors**.
 
@@ -120,7 +118,7 @@ To ensure that the Service Manager database is up to date, the Orchestrator conn
 
 You can use the following procedures to disable or enable an Orchestrator connector and validate the status of the connector.
 
-### To disable an Orchestrator connector
+### Disable an Orchestrator connector
 
 1.  In the Service Manager console, select **Administration**.
 
@@ -132,7 +130,7 @@ You can use the following procedures to disable or enable an Orchestrator connec
 
 5.  In the **Disable Connector** dialog, select **OK**.
 
-### To enable an Orchestrator connector
+### Enable an Orchestrator connector
 
 1.  In the Service Manager console, select **Administration**, and select **Connectors**.
 
@@ -142,10 +140,10 @@ You can use the following procedures to disable or enable an Orchestrator connec
 
 4.  In the **Enable Connector** dialog, select **OK**.
 
-### To validate the status change of an Orchestrator connector
+### Validate the status change of an Orchestrator connector
 
 - In the middle pane, locate the connector for which you've changed status, and then verify the value in the **Enabled** column.
 
 ## Next steps
 
-- Learn about how to [Import data from VMM](import-data-vmm.md).
+Learn how to [Import data from VMM](import-data-vmm.md).
