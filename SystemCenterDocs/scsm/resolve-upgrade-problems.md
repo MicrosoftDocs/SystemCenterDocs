@@ -33,7 +33,7 @@ The upgrade might also fail as a result of Configuration service Startup timing 
 
 You can also work around configuration service startup issues after a failed upgrade.
 
-Select the required tab for the steps to take to recover from a failed upgrade when the failure occurs:
+Select the required tab for the steps to take to recover from a failed upgrade when the failure occurs in an unpredictable manner:
 
 # [During a prerequisite check](#tab/Phase1)
 
@@ -57,17 +57,17 @@ After any failures that were identified during the prerequisite check are correc
 
 If failures occur during these types of checks, you can make the appropriate changes. For example, specify a hard disk location with sufficient space, and then on the Warning page, select **Retry** to continue the installation.
 
-# [In an unpredictable manner before permanent changes are made to the Management Server](#tab/Phase3)
+# [Before permanent changes are made to the Management Server](#tab/Phase3)
 
 During an installation or upgrade of Service Manager, an error may occur. If the error occurs before any permanent changes are made to the Service Manager management server or data warehouse management server—for example, before changes are made to the Structured Query Language (SQL) database or before management packs are imported—the error message that appears includes a **Retry** button. In these situations, you can correct the issue and then retry the installation or upgrade.
 
-# [In an unpredictable manner after permanent changes are made to the Management Server](#tab/Phase4)
+# [After permanent changes are made to the Management Server](#tab/Phase4)
 
 If an error occurs after permanent changes are made to the Service Manager management server or data warehouse management server—for example, after changes are made to the SQL database or after management packs are imported—the error message that appears doesn't include a Retry button. In this situation, you must reinstall the original version of the affected management server.
 
 In any case, you need the backup of the encryption key. For the Service Manager management server, the encryption key is available only if you made a backup before you started the upgrade. For more information, see **Back Up the Encryption Key** in the Disaster Recovery Guide for Service Manager.
 
-# [In an unpredictable manner after permanent changes are made to a database](#tab/Phase5)
+# [After permanent changes are made to a database](#tab/Phase5)
 
 If an error occurs after permanent changes have been made—for example, after management packs are imported or any other time data is written into a database—the error message that appears doesn't include a Retry button.
 
