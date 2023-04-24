@@ -5,11 +5,11 @@ description: This article describes management tasks for the VMM library
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/25/2020
+ms.date: 04/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Manage the VMM library
@@ -70,7 +70,7 @@ There are circumstances in which you need to remove a library server or share. F
 
 Ensure that you specify an account with administrative permissions on the server.
 
-- VMM provides a list of dependent resources. If you process VMM removes any references to the removed files on dependent resources. When you remove a library server, the **Library Server** role is removed from the VMM agent running on the server. If the server isn't performing any other VMM roles, the agent is removed.
+- VMM provides a list of dependent resources. If you proceed with removing the chosen Library Server, VMM removes any references to the removed files on the dependent resources. When you remove a library server, the **Library Server** role is removed from the VMM agent running on the server. If the server isn't performing any other VMM roles, the agent is removed.
 - If you remove a highly available library server, the cluster is removed from the **Library** view. The individual cluster nodes aren't removed, but they're not displayed in the library. To remove the nodes from VMM, remove the VMM agent from each computer.
 
 ## Remove orphaned resources

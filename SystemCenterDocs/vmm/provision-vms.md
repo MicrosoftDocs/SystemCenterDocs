@@ -5,7 +5,7 @@ description: This article describes how to manage VMs in the VMM compute fabric
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/05/2023
+ms.date: 04/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -176,7 +176,7 @@ After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMwar
 
 ## Converting VMware VMs to Hyper-V
 
-There are currently a couple of methods for converting VMware VMs to Hyper-V (V2V):
+VMM can be used as a V2V conversion tool to convert VMware VMs to Hyper-V VMs.
 
 - **Convert Virtual Machine Wizard**: In the VMM console, you can use this wizard. This method has many limitations:
     - Supported for vSphere 4.1 and later.
@@ -185,8 +185,7 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V (V2
     - Online conversions aren't supported. You need to power off the VMware VMs.
     - Anti-virus apps must be supported.
     - VMware tools must be uninstalled from the guest operating system of the VM.
-- [Microsoft Virtual Machine Converter](https://techcommunity.microsoft.com/t5/system-center-blog/microsoft-virtual-machine-converter-3-0-is-now-available-for/ba-p/349874): After June 3, 2017, this tool will no longer be available. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/).
-
+    
 ::: moniker range=">=sc-vmm-2019"
 
 ## Static MAC address for VMs deployed on a VMM cloud
