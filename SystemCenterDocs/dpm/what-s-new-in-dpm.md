@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
-ms.date: 11/15/2022
+ms.date: 04/18/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -24,7 +24,7 @@ This article gives details of the new features supported in System Center - Data
 
 ::: moniker range="sc-dpm-2019"
 
-This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3) and [2019 UR4](#new-features-in-dpm-2019-ur4).
+This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3), [2019 UR4](#new-features-in-dpm-2019-ur4) and [2019 UR5](#new-features-in-dpm-2019-ur5).
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ DPM 2019 support SQL 2017 as its database.
 You can install SQL Server on a remote server or on the DPM server. The database must be installed and running before you install DPM.
 
 ### Support for newer workloads backups
-With DPM 2019, you can back up newer versions of workloads, as listed below:
+With DPM 2019, you can back up newer versions of workloads, as following:
 -	Hyper-V VMs 2019
 -	Windows Server 2019
 -	Exchange 2019
@@ -87,13 +87,13 @@ With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexib
 
 You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
 
-### VMware backup to tape
+### VMware back up to tape
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
 
 DPM 2019 supports both Original Location Recovery (OLR) and Alternate Location Recovery (ALR) for restoring the protected VM. [Learn more](back-up-vmware.md).
 
 ### VMware parallel backups
-With DPM 2019, all your VMware VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
+With DPM 2019, all your VMware VMs back up within a single protection group would be parallel, leading to 25% faster VM backups.
 
 With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMware delta replication jobs run in parallel. By default, the number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
@@ -126,8 +126,8 @@ You can install DPM 2019 UR1 on Windows Server Core 2019 and 2016.
 ### Disk exclusion for VMware VM backup
 With DPM 2019 UR1, you can exclude the specific disk from a VMware VM backup. [Learn more](back-up-vmware.md).
 
-### Support for additional layer of authentication to delete online backup
-With DPM 2019 UR1, an additional layer of authentication is added for critical operations. You will be prompted to enter a security PIN when you perform *Stop Protection* with *Delete data* operations.
+### Support for another layer of authentication to delete online backup
+With DPM 2019 UR1, an another layer of authentication is added for critical operations. You'll be prompted to enter a security PIN when you perform *Stop Protection* with *Delete data* operations.
 
 ### New cmdlet parameter
 
@@ -141,11 +141,11 @@ For issues fixed in UR2 and the installation instructions for UR2, see the [KB a
 
 ### Support for SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV)
 
-DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV). With CSV, the management of your SQL Server Instance is simplified. You will be able to manage the underlying storage from any node as there's an abstraction to which node owns the disk. [Learn more](back-up-sql-server.md).
+DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV). With CSV, the management of your SQL Server Instance is simplified. You'll be able to manage the underlying storage from any node as there's an abstraction to which node owns the disk. [Learn more](back-up-sql-server.md).
 
 ### Optimized Volume-to-Volume Migration
 
-DPM 2019 UR2 supports optimized Volume-to-Volume Migration. The optimized Volume-to-Volume Migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while the existing recovery points are maintained on the existing volume and are purged as per the retention policy. [Learn more](volume-to-volume-migration.md).
+DPM 2019 UR2 supports optimized Volume-to-Volume Migration. The optimized Volume-to-Volume Migration allows you to move data sources to the new volume faster. The enhanced migration process migrates only active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while the existing recovery points are maintained on the existing volume and are purged as per the retention policy. [Learn more](volume-to-volume-migration.md).
 
 ### Offline Backup using Azure Data Box (Preview)
 
@@ -181,13 +181,53 @@ Improvements done for VHDX file mounting and unmounting. To mount or unmount VHD
 
 With DPM 2019 UR4, you can restore previously backed up data even after DPM agent uninstallation.
 
+## New features in DPM 2019 UR5
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR5.
+
+For issues fixed and the installation instructions for UR5, see the [KB article](https://support.microsoft.com/help/5024231).
+
+### Support for SQL Server 2022
+
+DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+
+### Back up support for Windows Server 2022
+
+DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+
+### End of support for vSphere 5.5
+
+vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsphere/2018/02/vsphere-5-5-vsan-5-5-end-general-support-reminder.html), DPM 2019 UR5 and later don't support backups for VMware VMs on vSphere 5.5. Ensure to upgrade to newer vSphere versions.
+
+### Support for vSphere 7.0
+
+DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
+
+### Support for Microsoft 365 SMTP
+
+DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm).
+
+### Increase maximum parallel online backups
+
+With DPM 2019 UR5 and MARS agent version 9249 and later, you can increase the number of maximum parallel online backup jobs from the default eight to a configurable number using the following registry keys (if your underlying hardware and network bandwidth can support it).
+  
+The following example increases the limit to 12 jobs:
+
+```
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Azure Backup\DbgSettings\OnlineBackup]
+“MaxParallelBackupJobs”=dword:0000000C 
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold] 
+"6e7c76f4-a832-4418-a772-8e58fd7466cb"=dword:0000000C
+```
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
 
 ## What's new in DPM 1807
 
-DPM 1807 provides a number of bug fixes to improve performance.
+DPM 1807 provides many bug fixes to improve performance.
 
 To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
 
@@ -246,7 +286,7 @@ DPM 2016 uses block cloning to store backups on ReFS volumes. Instead of using c
 ### Choose the volumes for your data source to increase storage efficiency
 DPM's workload-aware storage feature decreases costs by providing flexible storage choices for a given data source. This means DPM can use expensive, high-performance disks for backing up high-IOPS workloads, such as SQL or SharePoint. Low-performance storage can be used for reduced-IOPS workloads.
 
-### Backup storage consumption in line with production data source
+### Back up storage consumption in line with production data source
 Without Logical Disk Manager (LDM) limits, data sources grow and shrink as needed, without the need for manual intervention. DPM doesn't need to allocate storage to data sources beforehand and can dynamically allow the backups to adjust as needed, thus achieving higher efficiency with less storage requirement.
 
 
@@ -269,7 +309,7 @@ Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RC
 
 2. In Hyper-V Manager, select **Action** > **Upgrade Configuration Version**.
 
-   If this option isn't available for the virtual machine, then it's already at the highest configuration version supported by the Hyper-V host. For additional information about checking or upgrading the virtual machine configuration version, see the article, [upgrading virtual machine version to Windows Server 2016](/windows-server/virtualization/hyper-v/deploy/Upgrade-virtual-machine-version-in-Hyper-V-on-Windows-or-Windows-Server).
+   If this option isn't available for the virtual machine, then it's already at the highest configuration version supported by the Hyper-V host. For more information about checking or upgrading the virtual machine configuration version, see the article, [upgrading virtual machine version to Windows Server 2016](/windows-server/virtualization/hyper-v/deploy/Upgrade-virtual-machine-version-in-Hyper-V-on-Windows-or-Windows-Server).
 
    If you want to use Windows PowerShell to upgrade the virtual machine configuration, run the following command where vmname is the name of the virtual machine.
 

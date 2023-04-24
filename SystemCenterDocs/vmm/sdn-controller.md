@@ -5,7 +5,7 @@ description: This article describes how to set up a Software Defined Network (SD
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/09/2022
+ms.date: 04/18/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -43,8 +43,8 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 ::: moniker range="sc-vmm-2022"
 
 >[!NOTE]
-> - VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
 > - VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.
+> - See [System Requirements](system-requirements.md#servers-in-the-vmm-fabric) for the full list of supported server Operating System.
 
 ::: moniker-end
 

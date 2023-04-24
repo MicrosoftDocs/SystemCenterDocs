@@ -46,7 +46,7 @@ Verify the following [system requirements](system-requirements.md):
 **.NET** | [Supported versions](system-requirements.md)
 **Host agent** | VMM 2016/1801/1807/2019<br/><br/> Needed for hosts managed in VMM.
 **Monitoring** | System Center Operations Manager 2016/1801. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
-**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
+**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
 
 ### SPN

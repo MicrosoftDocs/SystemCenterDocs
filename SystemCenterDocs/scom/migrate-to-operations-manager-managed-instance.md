@@ -2,15 +2,15 @@
 ms.assetid: 
 title: Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview).
-author: v-pgaddala
-ms.author: v-pgaddala
+author: Farha-Bano
+ms.author: v-farhabano
 manager: jsuri
 ms.date: 04/04/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2019'
 ---
 
 # Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)
