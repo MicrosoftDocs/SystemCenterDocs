@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Antivirus exclusions that relate to Operations Manager 2019, 2022, and later
+# Recommendations for antivirus exclusions that relate to Operations Manager 2019 and later
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This article outlines antivirus exclusions as they pertain to System Center - Operations Manager.  For earlier versions of Operations Manager, see [Antivirus exclusions (Operations Manager 2012, 2012 R2, and 2016)](/troubleshoot/system-center/scom/antivirus-exclusions-recommendations).
+This article outlines antivirus exclusions that relate to System Center 2019 Operations Manager and later.  For earlier versions of Operations Manager, see [antivirus exclusions (Operations Manager 2012, 2012 R2, and 2016)](/troubleshoot/system-center/scom/antivirus-exclusions-recommendations).
 
 For specific exclusion recommendations for supported versions of SQL Server, see [KB309422](https://support.microsoft.com/help/309422/choosing-antivirus-software-for-computers-that-run-sql-server).
 
