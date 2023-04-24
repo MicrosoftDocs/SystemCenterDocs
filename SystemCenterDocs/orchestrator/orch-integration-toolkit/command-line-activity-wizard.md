@@ -60,7 +60,7 @@ Follow these steps to create a new command-line activity assembly:
 
 7.  Select **Next**. The **Commands** page displays.  
 
-8.  Add one or more commands by following the instructions provided in [Add Commands to an Assembly](command-line-activity-wizard.md#adding-commands-to-an-assembly).  
+8.  Add one or more commands by following the instructions provided in [Add Commands to an Assembly](command-line-activity-wizard.md#add-commands-to-an-assembly).  
 
 9. When you've completed the definition of your activity, select **OK**. The dialog closes, and your new activity is added to the list on the **Commands** page. If you need to go back and edit a command, select the command in the list and select Edit. If you need to delete a command, select the command in the list and select **Remove**.  
 
