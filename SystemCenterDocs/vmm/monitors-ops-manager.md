@@ -31,7 +31,7 @@ This article describes how to integrate System Center - Virtual Machine Manager 
 
 You set up Operations Manager with VMM as follows:
 
-1. Verify [prerequisites](https://learn.microsoft.com/system-center/scom/system-requirements?view=sc-om-2022).
+1. Verify [prerequisites](./system-requirements?view=sc-om-2022&preserve-view=true).
 2. Install the Operations Manager console on the VMM server so that you can monitor VMM from the server.
 3. Install Operations Manager agents on the VMM management server and all hosts under management by VMM.
 4. Locate the latest management pack.
