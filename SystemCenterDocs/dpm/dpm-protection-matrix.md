@@ -1,11 +1,11 @@
 ---
-description: A complete matrix of all workloads, data types, and installations that DPM protects. Applies to DPM 2016, 1801, 1807, 2019 and 2022.
+description: A complete matrix of all workloads, data types, and installations that DPM protects.
 manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 04/18/2023
+ms.date: 04/24/2023
 title: What can System Center Data Protection Manager back up?
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4

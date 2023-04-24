@@ -1,16 +1,16 @@
 ---
-title: What's new in System Center Service Provider Foundation 1801
+title: What's new in System Center Service Provider Foundation
 description: This article describes the new features and other changes in System Center Service Provider Foundation.
 manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 01/15/2021
+ms.date: 04/20/2023
 ms.technology: service-provider-foundation
 ms.assetid: 49342436-7e22-4c6b-9602-2adddf8f58c9
 monikerRange: '>sc-spf-2016'
-ms.custom: UpdateFrequency2, intro-whats-new
+ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy23
 ---
 
 # What's new in System Center - Service Provider Foundation
