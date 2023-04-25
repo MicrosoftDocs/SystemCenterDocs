@@ -1,6 +1,6 @@
 ---
 title: System Center VMM activities
-description: This article describes all activities in the System Center integration iack for System Center - VMM.
+description: This article describes all activities in the System Center integration pack for System Center - VMM.
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator

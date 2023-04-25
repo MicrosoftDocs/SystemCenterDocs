@@ -1,8 +1,8 @@
 ---
 title: How to Recover Web Components
-description: Describes how to recover web components after restoring a System Center 2016 - Orchestrator environment.
+description: Describes how to recover web components after restoring a System Center - Orchestrator environment.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 04/12/2023
+ms.date: 04/25/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
