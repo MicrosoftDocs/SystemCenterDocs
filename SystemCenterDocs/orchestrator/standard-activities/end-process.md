@@ -41,7 +41,7 @@ The End Process activity ends processes that are running on the runbook server o
 
 Use the following information to configure the End Process activity.  
 
-### Details Tab  
+## Details tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -51,7 +51,8 @@ Use the following information to configure the End Process activity.
 |**Fail if there is more than one instance**|Select to cause the end process to fail if it finds more than one process matching the name you specified.|  
 |**Terminate in**|Enter the number of seconds to wait for the process to be shut down gracefully before it's shut down forcefully.|  
 
-### Published Data  
+## Published data  
+
  The following table lists the published data items.  
 
 |Item|Description|  
