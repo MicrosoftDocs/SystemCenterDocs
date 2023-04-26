@@ -5,8 +5,8 @@ description: This topic describes how to deploy the Operations Manager agent on 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/10/2021
-ms.custom: UpdateFrequency2, intro-installation
+ms.date: 04/17/2023
+ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: conceptual
@@ -26,14 +26,16 @@ The Discovery Wizard doesn't show computers that the management group is already
 
 When agents are pushed out to computers, System Center Operations Manager sends credentials that have local administrator rights for that computer; this is required to install the agent.
 
-If the Discovery Wizard isn't right for your needs (for example, if you've a set list of computers to which you want to deploy agents), you've the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
+If the Discovery Wizard isn't right for your needs (for example, if you have a set list of computers to which you want to deploy agents), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
 
 Use the following procedure to discover computers running Windows and deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](./system-requirements.md).
 
 > [!NOTE]
 > For information about port requirements for agents, see [Agent and Agentless Monitoring](/previous-versions/system-center/system-center-2012-R2/hh487284(v=sc.12)) in the Deployment Guide.
 
-## To install an agent on a computer running Windows by using the Discovery Wizard
+## Install an agent on a computer running Windows by using the Discovery Wizard
+
+Follow these steps to install an agent on a computer running Windows by using the Discovery Wizard:
 
 1. Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -111,7 +113,7 @@ Use the following procedure to discover computers running Windows and deploy the
         > [!IMPORTANT]
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they don't exist.
 
-    2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and type the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
+    2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and enter the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
 
     3. Leave **Install APM** set to the default if you intend to monitor a .NET web-based application on the targeted computer.  Otherwise, deselect the option.  
 

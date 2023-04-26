@@ -1,21 +1,21 @@
 ---
 ms.assetid:
 title: Release Notes for System Center DPM
-description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
+description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 releases.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/15/2022
+ms.date: 04/24/2023
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # System Center DPM Release Notes
 ::: moniker range="sc-dpm-2019"
 
-This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes), DPM [2019 UR2](#dpm-2019-ur2-release-notes), DPM [2019 UR3](#dpm-2019-ur3-release-notes), and DPM [2019 UR4](#dpm-2019-ur4-release-notes), as applicable.
+This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes), DPM [2019 UR2](#dpm-2019-ur2-release-notes), DPM [2019 UR3](#dpm-2019-ur3-release-notes), DPM [2019 UR4](#dpm-2019-ur4-release-notes), and [2019 UR5](#dpm-2019-ur5-release-notes) as applicable.
 
 We recommend you see the following articles for detailed information about what DPM supports and can back up:
 
@@ -419,6 +419,10 @@ The following section provides details of the known issue in DPM 2019 UR4 and th
 **Description**: Remote UI and Central Console must be installed on RTM, UR1, UR2.  
 
 **Workaround**: If Remote UI and Central Console are on UR3, you need to uninstall it, install RTM version and then upgrade to UR4. Only UR4 remote UI can connect to DPM 2019 UR4.
+
+## DPM 2019 UR5 release notes
+
+Currently there are no known issues in DPM 2019 UR5.
 
 ::: moniker-end
 

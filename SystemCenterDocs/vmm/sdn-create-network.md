@@ -1,15 +1,15 @@
 ---
 ms.assetid: 2e2323c5-6ec6-4fd2-bec5-70537d328fbe
-title: Set up a virtual network in SDN in the VMM 2016 fabric
+title: Set up a virtual network in SDN in the VMM fabric
 description: This article describes the procedure on how to create a VM network in SDN, using a VMM.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/21/2022
+ms.date: 04/24/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 

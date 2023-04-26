@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 06/04/2021
+ms.date: 03/01/2023
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -421,3 +421,9 @@ The following are the UI improvements in Operations Console:
 - Added 3 new columns **Management Pack**, **Sealed** and **Members** in the **Authoring** pane > **Groups**.
 
 - Added new column for **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
+
+## New features in Operations Manager 2019 UR5
+
+The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 5 (UR5).
+
+For the problems fixed in UR5, and the installation instructions for UR5, see the [KB article](https://support.microsoft.com/topic/788c571b-1887-4376-8b2f-c7881e797835).
