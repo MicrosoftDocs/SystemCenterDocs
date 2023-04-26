@@ -3,12 +3,12 @@ title: Orchestrator Integration Toolkit Command Line Activity Wizard
 description: This article provides details about the Orchestrator Integration Toolkit Command Line Activity Wizard.
 author: jyothisuri
 manager: mkluck
-ms.date: 02/02/2018
+ms.date: 04/26/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Command Line Activity Wizard
@@ -30,9 +30,11 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
  Activities range from simple to complex. You can create an activity using the Command-Line Activity Wizard that does nothing but echoes text to an output property. You can also create a single activity that performs a complex, multi-step action such as virtual machine deployment. It’s up to you to define what each activity will do. However, your goal should be to define activities that encapsulate single sets of functionality that allow for easy reuse in many different types of situations. The key is flexibility. It’s better to create a set of 10 different activities that each do something specific and be able to use those activities in 20 different ways, rather than create 20 different activities to solve the specific individual scenarios. More information about best practices is covered later in this document.  
 
-## Creating a New Activity Assembly  
+## Create a New Activity Assembly  
 
-#### To create a new command-line activity assembly  
+### Create a new command-line activity assembly  
+
+Follow these steps to create a new command-line activity assembly:
 
 1.  Select **Start > All Programs > Microsoft System Center 2012 > Orchestrator > Integration Toolkit > Orchestrator Command-Line Activity Wizard**  
 
@@ -46,19 +48,19 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
     |Property|Description|  
     |-|-|   
-    |Title|Specifies a title for the assembly, which appears as the “File description” property in Windows Explorer properties|  
-    |Description|Specifies an optional description for the assembly, which does not appear in Windows Explorer properties|  
-    |Product|Specifies a product name for the assembly, which appears as the “Product name” property in Windows Explorer properties|  
-    |Company|Specifies a company name for the assembly, which does not appear in Windows Explorer properties|  
-    |Copyright|Specifies a copyright notice for the assembly, which appears as “Copyright” in Windows Explorer properties|  
-    |Trademark|Specifies a trademark for the assembly, which appears as “Legal trademarks” in Windows Explorer properties|  
+    |Title|Specifies a title for the assembly, which appears as the **File description** property in Windows Explorer properties|  
+    |Description|Specifies an optional description for the assembly, which doesn't appear in Windows Explorer properties|  
+    |Product|Specifies a product name for the assembly, which appears as the **Product name** property in Windows Explorer properties|  
+    |Company|Specifies a company name for the assembly, which doesn't appear in Windows Explorer properties|  
+    |Copyright|Specifies a copyright notice for the assembly, which appears as **Copyright** in Windows Explorer properties|  
+    |Trademark|Specifies a trademark for the assembly, which appears as **Legal trademarks** in Windows Explorer properties|  
     |Version|Specifies the assembly version and file version. These appear in Windows Explorer properties as **File version** and **Product version**.<br /><br /> The version number has four parts as follows:<br /><br /> <major version\>.<minor version\>.<build number\>.<revision\>|  
 
 6.  Select **OK** when you're done entering assembly information.  
 
 7.  Select **Next**. The **Commands** page displays.  
 
-8.  Add one or more commands by following the instructions provided in [Adding Commands to an Assembly](command-line-activity-wizard.md#adding-commands-to-an-assembly).  
+8.  Add one or more commands by following the instructions provided in [Add Commands to an Assembly](command-line-activity-wizard.md#add-commands-to-an-assembly).  
 
 9. When you've completed the definition of your activity, select **OK**. The dialog closes, and your new activity is added to the list on the **Commands** page. If you need to go back and edit a command, select the command in the list and select Edit. If you need to delete a command, select the command in the list and select **Remove**.  
 
@@ -68,9 +70,11 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 12. If you wish to test your assembly using the Invoke .NET activity or just skip the IP build process for now, select **Finish**.  
 
-## Adding commands to an assembly  
+## Add commands to an assembly  
 
-#### To add a command to an assembly  
+### Add a command to an assembly  
+
+Follow these steps to add a command to an assembly:
 
 1.  On the **Commands** page, you can define one or more commands (which become activities) which will be added to the assembly. To add a new command, select **Add**.  
 
@@ -148,10 +152,12 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 20. Select **OK** to close the Add/Edit Command dialog and return to the Commands dialog.  
 
-## Testing an Activity Assembly  
+## Test an Activity Assembly  
  After you've created an assembly, you can test it using the Invoke .NET activity (contained in the Integration Toolkit IP for .NET) to verify that it works as expected before converting it into a custom Integration Pack.  
 
-#### To test and assembly  
+### Test an assembly
+
+Follow these steps to test an assembly:
 
 1.  Open the Runbook Designer.  
 
@@ -185,7 +191,9 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 > [!IMPORTANT]
 > The install for the Orchestrator Integration Toolkit won't fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it isn't present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before using the CLI.  
 
-#### To convert an Opalis QIK CLI Assembly  
+### Convert an Opalis QIK CLI Assembly  
+
+Follow these steps to convert an Opalis QIK CLI Assembly:
 
 1.  Launch the Orchestrator Command-Line Activity Wizard by selecting Start > All Programs > Microsoft System Center 2012 > Orchestrator > Command-Line Activity Wizard  
 

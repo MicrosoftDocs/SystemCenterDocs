@@ -1,22 +1,22 @@
 ---
 title: End Process
 description: This article describes the End Process activity that ends processes that are running on the runbook server or on a remote computer.
-ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/26/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: article
 applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: 349554ed-af74-42fd-b061-bb75e0a3bd0f
 caps.latest.revision: 18
-author: "jyothisuri"
-ms.author: "jsuri"
+author: jyothisuri
+ms.author: jsuri
 manager: mkluck
 ---
 # End Process
@@ -31,7 +31,8 @@ manager: mkluck
 
 The End Process activity ends processes that are running on the runbook server or on a remote computer. The End Process activity can be used to shut down an application that isn't responding. The activity returns **success** if the named process is successfully ended or if the name process isn't running. This activity uses a satellite license.  
 
-## Configuring the End Process Activity  
+## Configure the End Process Activity
+
  Before you configure the End Process activity, you need to determine the following:  
 
 - Name or ID of the process  
@@ -40,17 +41,18 @@ The End Process activity ends processes that are running on the runbook server o
 
 Use the following information to configure the End Process activity.  
 
-### Details Tab  
+## Details tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Type the computer where this process is running. Enter `localhost` to specify the runbook server where the runbook is being processed. You can also use the ellipsis **(...)** button to browse for the computer.|  
-|**Process**|Type the name or process ID of the process that you're ending. You can also use the ellipsis **(...)** button to browse for the process. Browsing is only available if you've specified a valid **Computer**.|  
+|**Computer**|Enter the computer where this process is running. Enter `localhost` to specify the runbook server where the runbook is being processed. You can also use the ellipsis button **(...)** to browse for the computer.|  
+|**Process**|Enter the name or process ID of the process that you're ending. You can also use the ellipsis button **(...)** to browse for the process. Browsing is only available if you've specified a valid **Computer**.|  
 |**End all instances**|Select to end all processes that match the Process that you've specified when multiples are found.|  
 |**Fail if there is more than one instance**|Select to cause the end process to fail if it finds more than one process matching the name you specified.|  
-|**Terminate in**|Type the number of seconds to wait for the process to be shut down gracefully before it's shut down forcefully.|  
+|**Terminate in**|Enter the number of seconds to wait for the process to be shut down gracefully before it's shut down forcefully.|  
 
-### Published Data  
+## Published data  
+
  The following table lists the published data items.  
 
 |Item|Description|  
