@@ -2,11 +2,11 @@
 title: Customize and author classes
 description: Learn about customizing and authoring classes with Service Manager authoring.
 manager: mkluck
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/06/2019
+ms.date: 04/26/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -31,7 +31,7 @@ A class is the main element that is used to represent objects that are used in S
 
 Objects in Service Manager are *instances* of a particular base class. All instances of a base class have a common set of properties and common behavior.  
 
- Like all management pack elements, classes have *ID* and *Display Name* properties. In this documentation, "ID" refers to the unique name of the class that is seen only in the Authoring Tool, while "Name" and "Display Name" refer to the language\-specific name that appears in the Service Manager console.  
+ Like all management pack elements, classes have *ID* and *Display Name* properties. In this documentation, **ID** refers to the unique name of the class that is seen only in the Authoring Tool, while **Name** and **Display Name** refer to the language-specific name that appears in the Service Manager console.  
 
 > [!NOTE]  
 >  When you're creating a class, always ensure that the class names are unique among management packs. If possible, use class names that are meaningful in your environment. You can determine whether a class name already exists by using the search feature in the **Class Browser** window of the Service Manager Authoring Tool.  
@@ -44,20 +44,20 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  Classes don't always require a key property. A key property is only required if more than one instance of a class is expected for a single parent. If only a single instance is expected, a key property isn't required but may still be defined.  
 
- For example, **SQL Database Engine** has a key property of **Instance Name** because a single computer can have more than one instance of Microsoft SQL&nbsp;Server installed. When there are multiple instances of **SQL Database Engine**, each instance must have a different value for **Instance Name** in order to clearly distinguish between the different objects. The **IIS Web Server** class, by contrast, doesn't define a key property because there can be only one instance installed on any computer.  
+ For example, **SQL Database Engine** has a key property of **Instance Name** because a single computer can have more than one instance of Microsoft SQL Server installed. When there are multiple instances of **SQL Database Engine**, each instance must have a different value for **Instance Name** in order to clearly distinguish between the different objects. The **IIS Web Server** class, by contrast, doesn't define a key property because there can be only one instance installed on any computer.  
 
  All the objects have a **Path Name** property that is calculated from the object's key property or properties and those of its hosting parent or parents. For unhosted objects, **Path Name** will be the key property of the class itself. **Path Name** can be used to uniquely identify any instance of a class in the management group.  
 
-### Base classes and inheritance  
+### Base classes and inheritance
  Every class must specify a *base class* that identifies an existing class that the new class will *specialize*. The management pack libraries that are included with Service Manager contain several classes that can be used as the base for custom classes in management packs. A management pack will typically have at least one class inheriting from a library class and potentially other classes inheriting from classes in the same management pack.  
 
- The concept of a base class can be illustrated with the Windows&nbsp;Server Operating System management pack. This management pack includes classes representing logical disks installed on the computer. The following illustration shows the classes **Windows&nbsp;Server&nbsp;2003 Logical Disk** and **Windows&nbsp;Server&nbsp;2008 Logical Disk**. These classes are both based on **Logical Disk \(Server\)** that is defined in the Microsoft.Windows.Server.Library management pack file. **Logical Disk \(Server\)** is in turn based on **Logical Disk**, which itself is based on **Logical Device**, and so on, through **Logical Hardware**, **Logical Entity**, and finally **Entity**. All classes can trace a similar inheritance path and will always end up at **Entity**, which is the root of the class structure. This is the only class that doesn't have a base class, and all the other classes eventually inherit from it.  
+ The concept of a base class can be illustrated with the Windows Server Operating System management pack. This management pack includes classes representing logical disks installed on the computer. The following illustration shows the classes **Windows Server 2003 Logical Disk** and **Windows Server 2008 Logical Disk**. These classes are both based on **Logical Disk (Server)** that is defined in the Microsoft.Windows.Server.Library management pack file. **Logical Disk (Server)** is in turn based on **Logical Disk**, which itself is based on **Logical Device**, and so on, through **Logical Hardware**, **Logical Entity**, and finally **Entity**. All classes can trace a similar inheritance path and will always end up at **Entity**, which is the root of the class structure. This is the only class that doesn't have a base class, and all the other classes eventually inherit from it.  
 
  **Inheritance of properties between classes**  
 
  ![Illustration showing the Inheritance of properties between classes.](./media/auth-classes/author-classinheritance.png)  
 
- **Entity** has a single property named **Display Name**. This property is inherited by all the classes inheriting from **Entity**. All the classes eventually inherit from **Entity**. That is why all the classes have a **Display Name** property. No other classes in this example have properties until **Logical Device**, which defines **Name**, **Description**, and **DeviceID**. **DeviceID** is specified as the key property. These properties are all inherited by **Logical Disk** and **Logical Disk \(Server\)**. **Logical Disk \(Server\)** then adds the additional properties **Size**, **Drive Type**, and **File System**. The bottom\-level classes that are specific to the version of the operating system inherit the entire set of properties provided by those classes above them in the inheritance tree.  
+ **Entity** has a single property named **Display Name**. This property is inherited by all the classes inheriting from **Entity**. All the classes eventually inherit from **Entity**. That is why all the classes have a **Display Name** property. No other classes in this example have properties until **Logical Device**, which defines **Name**, **Description**, and **DeviceID**. **DeviceID** is specified as the key property. These properties are all inherited by **Logical Disk** and **Logical Disk \(Server\)**. **Logical Disk \(Server\)** then adds the additional properties **Size**, **Drive Type**, and **File System**. The bottom-level classes that are specific to the version of the operating system inherit the entire set of properties provided by those classes above them in the inheritance tree.  
 
 ### Class types  
  Most classes have one or more actual instances and are known as *concrete classes*. *Abstract classes* and *singleton classes* are special kinds of classes that behave differently and are used for particular scenarios.  
@@ -65,7 +65,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 #### Abstract classes  
  Abstract classes have no instances and exist only to act as a base class for other classes. All the properties and relationships that are defined at the abstract class level are inherited by child classes and don't have to be defined again. Most of the classes that are defined in management pack libraries are abstract, since they're only provided to act as base classes for classes that are defined in custom management packs.  
 
- Abstract classes are used where there's a common set of properties, relationships, or grouping that can be defined across all further specializations of a class. In the previous example, all the classes shown above **Windows&nbsp;Server&nbsp;2003 Logical Disk** and **Windows&nbsp;Server&nbsp;2008 Logical Disk** are abstract. They exist only for the lower\-level classes to inherit from.  
+ Abstract classes are used where there's a common set of properties, relationships, or grouping that can be defined across all further specializations of a class. In the previous example, all the classes shown above **Windows Server 2003 Logical Disk** and **Windows Server 2008 Logical Disk** are abstract. They exist only for the lower-level classes to inherit from.  
 
 #### Singleton classes  
  *Singleton classes* are used when there's one and only one instance of a class. The class is the instance, and it always exists. The single instance is being created when the management pack is installed. Similarly, a key property isn't required for a singleton class, because it will only ever have a single instance. A common use of singleton classes is for the **Groups** class, because there's only a single instance of this class required throughout the management group.  
@@ -86,15 +86,15 @@ Class relationships affect objects in the following ways.
 
 |Relationship type|Key property and existence|Available properties|  
 |-----------------------|--------------------------------|--------------------------|  
-|Hosting|The value of the key property must be unique for all the instances of the class in the management group. For hosted classes, however, the key property value must be unique only for all the objects that have the same hosting parent.<br /><br /> To uniquely identify a hosted object, the key property of both the object and the object's parent are required and the key of the hosted class will be the combination of both the hosting class key property, and the hosted class key property.<br /><br /> The existence of a hosted class depends on the existence of the hosting class.|Any workflow that is targeted at a class has access to that class's properties in addition to the properties of any of its hosting parent\(s\).<br /><br /> For example, a script in a workflow using the **SQL&nbsp;2008 DB Engine** class as its target might require the name of the computer on which the instance of SQL Server 2008 is installed. Because an object can have only one hosting parent, we know the computer that hosts any particular instance of the **SQL&nbsp;2008 DB Engine** class. The workflow script can access the properties of the targeted object and the properties of that target's hosting parent.|  
-|Containment|Key property and existence aren't dependent on container object.|Any workflow that is targeted at a class have access to that class's properties in addition to the properties of any of its container parent\(s\).<br /><br /> For example, a script in a workflow targeting an incident class can access the properties of the container queue's class.|  
+|Hosting|The value of the key property must be unique for all the instances of the class in the management group. For hosted classes, however, the key property value must be unique only for all the objects that have the same hosting parent.<br /><br /> To uniquely identify a hosted object, the key property of both the object and the object's parent are required and the key of the hosted class will be the combination of both the hosting class key property, and the hosted class key property.<br /><br /> The existence of a hosted class depends on the existence of the hosting class.|Any workflow that is targeted at a class has access to that class's properties in addition to the properties of any of its hosting parent(s).<br /><br /> For example, a script in a workflow using the **SQL 2008 DB Engine** class as its target might require the name of the computer on which the instance of SQL Server 2008 is installed. Because an object can have only one hosting parent, we know the computer that hosts any particular instance of the **SQL 2008 DB Engine** class. The workflow script can access the properties of the targeted object and the properties of that target's hosting parent.|  
+|Containment|Key property and existence aren't dependent on container object.|Any workflow that is targeted at a class have access to that class's properties in addition to the properties of any of its container parent (s).<br /><br /> For example, a script in a workflow targeting an incident class can access the properties of the container queue's class.|  
 |Reference|Key property and existence aren't dependent on referenced object.|Any workflow that is targeted at a class has access only to that class's properties.|  
 
 #### Reference relationship  
  The *reference relationship* is the most general relationship type. A reference relationship is used when the parent and child classes aren't dependent on one another; for example, a database could reference another database that it's replicating. One database isn't dependent on the other, and the objects exist separately.  
 
 #### Containment relationship  
- The *containment relationship* type is less restrictive than the hosting relationship. It declares that one class is related to another class, although one isn't required for the other. Unlike a hosting relationship, a containment relationship is many\-to\-many. This means that one object can contain multiple objects, and a single object can be contained by multiple other objects. For example, one group can contain multiple objects, and a single object can be a member of multiple groups.  
+ The *containment relationship* type is less restrictive than the hosting relationship. It declares that one class is related to another class, although one isn't required for the other. Unlike a hosting relationship, a containment relationship is many-to-many. This means that one object can contain multiple objects, and a single object can be contained by multiple other objects. For example, one group can contain multiple objects, and a single object can be a member of multiple groups.  
 
  Containment relationships are typically used for group membership where objects are included in a group through a containment relationship between the group and the member object.  
 
@@ -107,11 +107,11 @@ Class relationships affect objects in the following ways.
 
  The SQL Server management pack provides another example of hosting relationships. The hosting relationship between the **Windows Computer** class, the **SQL 2008 DB Engine** class, and the **SQL 2008 DB** class is shown here.  
 
- **Hosting relationships for SQL&nbsp;Server&nbsp;2008 classes**  
+ **Hosting relationships for SQL Server 2008 classes**  
 
  ![Illustration of the Hosting relationship for SQL Server 2008 classes.](./media/auth-classes/author-authguide_sqlhostingrelationship.png)  
 
- The **SQL&nbsp;2008 DB Engine** class represents an instance of SQL Server&nbsp;2008 installed on a particular computer. Because a database can be installed on only a single database engine, the **SQL&nbsp;2008 DB Engine** class hosts the **SQL&nbsp;2008 DB** class. There can be several databases with the same name in a management group, but any databases installed on a particular instance of the **SQL Server** class must have a unique name. The database engine, in turn, is hosted by the **Windows Computer** class. There can be several **SQL Server** instances with the same name in a management group. Each one on a particular computer must have a unique name.  
+ The **SQL 2008 DB Engine** class represents an instance of SQL Server 2008 installed on a particular computer. Because a database can be installed on only a single database engine, the **SQL 2008 DB Engine** class hosts the **SQL 2008 DB** class. There can be several databases with the same name in a management group, but any databases installed on a particular instance of the **SQL Server** class must have a unique name. The database engine, in turn, is hosted by the **Windows Computer** class. There can be several **SQL Server** instances with the same name in a management group. Each one on a particular computer must have a unique name.  
 
  Because there are two hosting relationships, the path name for each database will be the computer name followed by the instance name followed by the database name. An example is shown in the following diagram.  
 
@@ -198,11 +198,11 @@ You can use the **Class Browser** pane in the Service Manager Authoring Tool to 
 
 3.  Locate the class that you want to view, such as the **Computer** class, and then do the following:  
 
-    -   To view the details of the class, such as **Description** and **Internal Name**, right\-click the class, and select **Details**.  
+    -   To view the details of the class, such as **Description** and **Internal Name**, right-click the class, and select **Details**.  
 
-    -   To view the list of class properties, such as **Display Name** and **Asset Status**, expand the class in the **Class Browser** pane. To further view details of a property, right\-click the property, and select **Details**.  
+    -   To view the list of class properties, such as **Display Name** and **Asset Status**, expand the class in the **Class Browser** pane. To further view details of a property, right-click the property, and select **Details**.  
 
-    -   To open the management pack that contains the definition of the class, right\-click the class, and select **View**.  
+    -   To open the management pack that contains the definition of the class, right-click the class, and select **View**.  
 
 ## Edit details of a class in the Authoring tool
 
@@ -210,7 +210,7 @@ You can use the Service Manager Authoring Tool to view the properties of a class
 
  In the **Management Pack Explorer**, you can select a class and view its details in the **Details** pane. If you select a class that is defined in an unsealed management pack, you can change the name and description of that class.  
 
-### To change the name or description of a class  
+### Change the name or description of a class  
 
 1.  On your desktop, select **Start**.  
 
@@ -228,7 +228,7 @@ You can use the Service Manager Authoring Tool to view the properties of a class
 
 8.  Select the value of the **Name** or **Description** property, and then enter the new value. Values that can't be changed are unavailable.  
 
-9. In the **Management Pack Explorer**, right\-click the management pack that contains the changed class, and select **Save**.  
+9. In the **Management Pack Explorer**, right-click the management pack that contains the changed class, and select **Save**.  
 
 ## Create a class using inheritance in the Authoring tool
 
@@ -252,7 +252,7 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 2.  In the **Management Pack Explorer**, select and then expand any management pack.  
 
-3.  Right\-click **Classes**, and select **Create Configuration Item Class** or **Create Work Item Class**.  
+3.  Right-click **Classes**, and select **Create Configuration Item Class** or **Create Work Item Class**.  
 
 4.  If you're creating a class from a sealed management pack, in the **Target Management Pack** dialog, select an unsealed management pack to store the class customization, and select **OK**.  
 
@@ -269,7 +269,7 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 1.  If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
-2.  In the **Management Pack Explorer**, locate and then right\-click the base class from which the new class will inherit properties and relationships. Select **Inherit from this class**.  
+2.  In the **Management Pack Explorer**, locate and then right-click the base class from which the new class will inherit properties and relationships. Select **Inherit from this class**.  
 
 3.  In the **Inherit New Class** dialog, enter an internal name for the class.  
 
@@ -283,7 +283,7 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 2.  In the **Management Pack Explorer**, select and then expand any management pack.  
 
-3.  Right\-click **Classes**, and select **Create other class**.  
+3.  Right-click **Classes**, and select **Create other class**.  
 
 4.  In the **Base class** dialog, select the base class to inherit properties and relationships from.  
 
