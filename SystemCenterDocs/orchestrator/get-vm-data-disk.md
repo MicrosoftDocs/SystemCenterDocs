@@ -2,7 +2,7 @@
 title: Get VM Data Disk
 description: The Get VM Data Disk activity retrieves the specified data disk from a virtual machine.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +13,7 @@ ms.assetid: 55184e52-7605-48e9-81b3-0ad20e06a28e
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Get VM Data Disk
