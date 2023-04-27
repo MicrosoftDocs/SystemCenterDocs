@@ -1,18 +1,14 @@
 ---
 title: Monitor Date-Time 
 description: This article describes the Monitor Date/Time activity to invoke your runbooks at a specific time once a day, week, or month.
-ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: e9baa069-6d81-43bc-8781-bdcc6d7ca5d3
 caps.latest.revision: 18
 author: "jyothisuri"
