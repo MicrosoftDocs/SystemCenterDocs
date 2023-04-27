@@ -3,12 +3,13 @@ title: Acknowledge Message
 description: The Acknowledge Message activity is used in a runbook to acknowledge or unacknowledge a message.
 author: jyothisuri
 manager: mkluck
-ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
 ms.custom: UpdateFrequency3
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 

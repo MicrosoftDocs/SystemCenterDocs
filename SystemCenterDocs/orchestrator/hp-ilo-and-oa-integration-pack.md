@@ -2,7 +2,6 @@
 title: HP iLO and OA Integration Pack for System Center - Orchestrator
 description: The Integration Pack for HP iLO and OA is an add-on for System Center - Orchestrator that enables you to automate HP iLO and OA commands.
 ms.custom: na
-ms.date: 04/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 79e741ff-5d02-4255-8efc-19926247c1c0
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # HP iLO and OA Integration Pack for System Center - Orchestrator
