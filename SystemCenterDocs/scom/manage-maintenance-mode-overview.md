@@ -1,18 +1,18 @@
 ---
 ms.assetid: c4e4d992-340a-4ab9-8c98-6640c37adda2
-title: How to Suspend Monitoring Temporarily by Using Maintenance Mode
+title: Suspend Monitoring Temporarily by Using Maintenance Mode
 description: This article describes how to put a monitored object into maintenance mode on-demand or using a schedule.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/04/2022
-ms.custom: UpdateFrequency2
+ms.date: 04/27/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to suspend monitoring temporarily by using maintenance mode
+# Suspend monitoring temporarily by using maintenance mode
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -83,7 +83,11 @@ The following section describes how to work with the different options for the o
 
 ## On-Demand Maintenance Mode
 
-### To put a monitored object into maintenance mode
+Select the required tab to work with the different options for the on-demand maintenance mode:
+
+# [Put a monitored object into maintenance mode](#tab/MonitoredObject)
+
+Follow these steps to put a monitored object into maintenance mode:
 
 1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
 
@@ -105,7 +109,9 @@ The following section describes how to work with the different options for the o
     > The minimum value for **Number of minutes** is 5. The maximum value is 1,051,200 (2 years).
     > To start the maintenance mode, the maximum wait time is 5 minutes.
 
-### To edit maintenance mode settings for a monitored object
+# [Edit maintenance mode settings for a monitored object](#tab/Edit)
+
+Follow these steps to edit the maintenance mode settings for a monitored object:
 
 1.  Sign in to the computer with an account that is a member of the Operations Manager Administrators role.
 
@@ -117,7 +123,9 @@ The following section describes how to work with the different options for the o
 
 5.  In the **Maintenance Mode Settings** dialog, edit the settings you want to change, and select **OK**.
 
-### To stop maintenance mode on a monitored object
+# [Stop maintenance mode on a monitored object](#tab/Stop)
+
+Follow these steps to stop the maintenance mode on a monitored object:
 
 1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
 
@@ -138,6 +146,8 @@ The following section describes how to work with the different options for the o
     > [!NOTE]
     > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from the maintenance mode.
 
+---
+
 ::: moniker range="<sc-om-2019"
 
 ### Enable from Target System
@@ -152,12 +162,11 @@ The comment field contains user information, specifically who has invoked mainte
 
 ### Enable from Target System
 
-Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs this PowerShell cmdlet on the computer, the command logs an event, which stores arguments for the maintenance mode, such as duration, reason, comment, and information like time of invocation of cmdlet.
+Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**. When server administrator or operator runs this PowerShell cmdlet on the computer, the command logs an event, which stores arguments for the maintenance mode, such as duration, reason, comment, and information like time of invocation of cmdlet.
 
 A rule that targets the agent, reads the event entry on the agent and stores this in Operations Manager database. There's another rule *Microsoft.SystemCenter.Agent.MaintenanceMode.Trigger.Rule*, which runs every 4 minutes by default, and reads this event from the Operations Manager database. It then sets maintenance mode on the agent based on the record read from the event.
 
 ::: moniker-end
-
 
 **Start-SCOMAgentMaintenanceMode** has the following syntax:
 
@@ -368,4 +377,5 @@ With 2019 UR2, if there's a conflict in maintenance mode end time, then the obje
 ::: moniker-end
 
 ## Next steps
+
 [Create and manage groups](manage-create-manage-groups.md)
