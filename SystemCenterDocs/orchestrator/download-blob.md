@@ -2,7 +2,7 @@
 title: Download Blob
 description: The Download Blob activity downloads a blob from the system.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +13,7 @@ ms.assetid: a6e1b38f-d31a-45da-9f00-dc1ee232da42
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Download Blob

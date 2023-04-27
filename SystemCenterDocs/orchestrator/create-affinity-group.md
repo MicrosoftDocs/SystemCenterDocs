@@ -2,7 +2,7 @@
 title: Create Affinity Group
 description: The Create Affinity Group activity creates a new affinity group for the specified subscription.
 ms.custom: UpdateFrequency2
-ms.date: 05/07/2019
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,6 +14,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+monikerRange: '<=sc-orch-2019'
 ---
 # Create Affinity Group
 
