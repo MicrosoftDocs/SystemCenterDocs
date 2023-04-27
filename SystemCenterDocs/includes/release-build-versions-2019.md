@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/20/2023
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -58,6 +58,5 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.1167.0|[5013427](https://support.microsoft.com/kb/5013427) |December 2022 |1.6.11-0 |Update Rollup 4 - Hotfix |
 |10.19.1195.0|[5013427](https://support.microsoft.com/kb/5013427) |February 2023 |1.6.12-1 |Update Rollup 4 - Hotfix |
 |10.19.1214.0|[5013427](https://support.microsoft.com/kb/5013427) |March 2023 |1.7.0-0 |Update Rollup 4 - OpenSSL 3.0 |
-|10.19.1214.0|[5025123](https://support.microsoft.com/kb/5025123)|April 2023 |1.7.0-0|Update Rollup 5 |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
