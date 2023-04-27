@@ -2,11 +2,11 @@
 title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
 manager: mkluck
-ms.custom: na, intro-deployment, UpdateFrequency3
+ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy23
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 04/26/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -23,7 +23,7 @@ ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
 
 ::: moniker-end
 
-In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjointed namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](/previous-versions/windows/it-pro/windows-server-2003/cc731125(v=ws.10)).  
+In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjointed namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](/windows-server/identity/ad-ds/plan/disjoint-namespace).  
 
  We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
 
@@ -61,4 +61,4 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 ## Next steps
 
-- Review [Learn about deploying the new Self Service portal and troubleshoot installation issues](learn-self-service-portal.md).
+Review [Learn about deploying the new Self Service portal and troubleshoot installation issues](learn-self-service-portal.md).
