@@ -42,7 +42,7 @@ Install the **Microsoft.Linux.Log.Monitoring** management pack to enable Linux l
 
 ## Configure Linux log file monitoring
 
-To configure Linux log file monitoring, do the following:
+To configure Linux log file monitoring, perform the following steps:
 
 ::: moniker range="sc-om-2019"
 1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208) using the standard process for installing a management pack.
@@ -58,7 +58,7 @@ To configure Linux log file monitoring, do the following:
    sh onboard_agent.sh
    ```
 
-   Do the following on the Linux agent:
+   Perform the following steps on the Linux agent:
 
 ::: moniker-end
 ::: moniker range="sc-om-2022"
@@ -75,7 +75,7 @@ To configure Linux log file monitoring, do the following:
    sh onboard_agent.sh
    ```
 
-   Do the following on the Linux agent:
+   Perform the following steps on the Linux agent:
 ::: moniker-end
 
  4. Create the folders in the following paths with the below commands:
@@ -191,7 +191,7 @@ In order to enable to OMED Firewall Rule you have two options, either add the po
 
 #### <a name="AutomaticFirewallRule"></a>Automatically add rule with Powershell
 
-The following command will allow you to automatically add the firewall rule:
+The following command will allows you to automatically add the firewall rule:
 ```powershell
 Set-NetFirewallRule -DisplayName "System Center Operations Manager External DataSource Service" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8886
 ```
@@ -265,7 +265,7 @@ You have two options when assigning the client certificate for OMSAgent.
 
 ## Create Fluentd configuration file
 
-You configure Fluentd operation using a configuration file. For log monitoring, create a configuration file that includes information such as source log file name, path, and filters to define the data to collect.
+You configure Fluentd operation using a configuration file. To utilize log monitoring, you must create a configuration file. The configuration file will include information such as source log file name, path, and filters to define the data to collect.
 
 The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/scom/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
@@ -289,7 +289,7 @@ A complete [sample configuration file for log monitoring](../scom/manage-sample-
 
 ### Source
 
-The **Source** directive defines the source of the data you're collecting. This is where you define the details of your log file. Fluentd picks up each record written to the source and submits an event for it into Fluentd's routing engine. Specify a tag here in this directive. The tag is a string that is used as the directions for Fluentd's internal routing engine to correlate different directives.
+The **Source** directive defines the source of the data you're collecting which is where you define the details of your log file. Fluentd picks up each record written to the source and submits an event for it into Fluentd's routing engine. Specify a tag here in this directive. The tag is a string that is used as the directions for Fluentd's internal routing engine to correlate different directives.
 
 The following example shows syslog records collected and tagged for processing by Operations Manager.
 
