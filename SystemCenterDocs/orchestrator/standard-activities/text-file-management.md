@@ -1,8 +1,8 @@
 ---
 title: Text File Management
 description: This article provides information about the tasks that you can do using text file management activities.  
-ms.custom: UpdateFrequency3
-ms.date: 05/27/2023
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""

@@ -1,8 +1,8 @@
 ---
 title: Monitor Disk Space
 description: This article describes the Monitor Disk Space activity that will invoke a runbook when the disk space on a computer passes a critical threshold.
-ms.custom: UpdateFrequency3
-ms.date: 05/27/2023
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""

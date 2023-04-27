@@ -1,8 +1,8 @@
 ---
 title: Get Computer-IP Status
 description: This article describes the Get Computer/IP Status activity.
-ms.custom: ""
-ms.date: 05/27/2023
+ms.custom: engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""

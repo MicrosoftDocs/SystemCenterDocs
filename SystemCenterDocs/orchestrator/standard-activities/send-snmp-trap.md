@@ -1,8 +1,8 @@
 ---
 title: Send SNMP Trap activity
 description: This article describes about how to configure the Send SNMP Trap activity.
-ms.custom: UpdateFrequency3
-ms.date: 05/27/2023
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""

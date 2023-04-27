@@ -1,8 +1,8 @@
 ---
 title: Monitor Counter
 description: This article describes the Monitor Counter activity that invokes a runbook when a counter has reached a value that you specify.
-ms.custom: UpdateFrequency3
-ms.date: 05/27/2023
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""

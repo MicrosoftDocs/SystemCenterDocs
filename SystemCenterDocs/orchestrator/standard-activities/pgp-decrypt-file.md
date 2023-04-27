@@ -1,7 +1,6 @@
 ---
 title: PGP Decrypt File
 description: This article describes the functionality of PGP Decrypt File activity.
-ms.custom: ""
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: ""
