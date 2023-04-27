@@ -206,7 +206,7 @@ The following reasons are accepted by the cmdlet:
 
     `Start-SCOMAgentMaintenanceMode -Duration 10`
 
-Perform the following steps to initiate maintenance mode from the target Windows computer.
+Perform the following steps to initiate maintenance mode from the target Windows computer:
 
 1. Sign in to the computer.
 
@@ -238,11 +238,11 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 ## Schedule maintenance mode
 
-The following section describes how to work with the different options available for the maintenance mode scheduling feature.
+Select the required tab to work with the different options available for the maintenance mode scheduling feature:
 
-### Create Maintenance Schedule in the Operations console
+# [Create Maintenance Schedule in the Operations console](#tab/OperationsConsole)
 
-The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Operations console.  
+The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Operations console: 
 
 1. Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
 
@@ -294,7 +294,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 ::: moniker range=">sc-om-1801"
 
-## Create maintenance schedule in the Web console
+# [Create maintenance schedule in the Web console](#tab/WebConsole)
 
 The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
 
@@ -342,7 +342,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 ::: moniker range=">=sc-om-2019"
 
-## Enable scheduled maintenance mode with SQL Always On
+# [Enable scheduled maintenance mode with SQL Always On](#tab/SQLAlwaysOn)
 
 In earlier releases of Operations Manager, maintenance schedules that targeted instances of SQL Server in an Always On availability group to provide high availability of the Operations Manager databases didn't work when failover to a replica on another SQL Server instance occurred. Operations Manager 2019 includes a fix for this issue to prevent this behavior, and ensures maintenance schedules work in a failover scenario.
 
@@ -360,6 +360,8 @@ In earlier releases of Operations Manager, maintenance schedules that targeted i
 
   >[!NOTE]
   >After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value five minutes is to avoid causing a large performance decrease on the system.
+
+---
 
 ## Furthest end time during schedule overlap  
 

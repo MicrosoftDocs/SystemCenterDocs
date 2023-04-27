@@ -65,7 +65,7 @@ For more information, see [Active Directory Certificate Services](/previous-vers
 
 The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only on the management server, and it only has to be run once.
 
-##### To copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers
+Follow these steps to **copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers**:
 
 1.  From a target management server, open the Operations Manager installation media `\SupportTools\` (amd64 or x86) directory.
 
@@ -75,7 +75,7 @@ The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only o
 
 This procedure registers the gateway server with the management group, and when this is completed, the gateway server appears in the Discovered Inventory view of the management group.
 
-##### Run the gateway approval tool
+Follow these steps to **run the gateway approval tool**:
 
 1.  On the management server that was targeted during the gateway server installation, sign in with the Operations Manager Administrator account.
 
@@ -88,7 +88,7 @@ This procedure registers the gateway server with the management group, and when 
 
     > [!NOTE]
     > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter on the command.
-    > ### Example
+    > **Example**
     > ```
     > "C:\Program Files\Microsoft System Center\Operations Manager\Server\Microsoft.EnterpriseManagement.GatewayApprovalTool.exe" /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /ManagementServerInitiatesConnection=True /Action=Create
     > ```
@@ -172,7 +172,7 @@ Follow these steps to install the gateway server from the command prompt:
 
 Perform this operation on each gateway server, management server, and computer that will be agent-managed and that is in a domain that isn't trusted.
 
-##### Import computer certificates by using MOMCertImport.exe
+Follow these steps to **import computer certificates by using MOMCertImport.exe**:
 
 1.  Copy the MOMCertImport.exe tool from the installation media `\SupportTools\` (amd64 or x86) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
 
@@ -184,7 +184,7 @@ Although gateway servers can communicate with any management server in the manag
 
 Use the Set-SCOMParentManagementServer command in the Operations Manager shell, as shown in the following example, to configure a gateway server to fail over to multiple management servers. The commands can be run from any Command Shell in the management group.
 
-##### Configure gateway server failover between management servers
+Follow these steps to **configure gateway server failover between management servers**:
 
 1.  Sign in to the management server with an account that is a member of the Administrators role for the management group.
 
@@ -199,7 +199,7 @@ Use the Set-SCOMParentManagementServer command in the Operations Manager shell, 
 
 ## Chain multiple gateway servers
 
-It's sometimes necessary to chain multiple gateways together in order to monitor across multiple untrusted boundaries. This article describes how to chain multiple gateways together.
+It's sometimes necessary to chain multiple gateways together in order to monitor across multiple untrusted boundaries. This section describes how to chain multiple gateways together.
 
 > [!NOTE]
 > - You should install one gateway at a time, and verify that each newly installed gateway is configured correctly before adding another gateway in the chain.
