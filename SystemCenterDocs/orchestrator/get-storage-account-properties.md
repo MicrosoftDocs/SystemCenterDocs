@@ -2,7 +2,7 @@
 title: Get Storage Account Properties
 description: The Get Storage Account Properties activity returns system properties for the specified storage account.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +13,7 @@ ms.assetid: db5fcc47-994c-4e79-b3b2-78c85919ae9d
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Get Storage Account Properties

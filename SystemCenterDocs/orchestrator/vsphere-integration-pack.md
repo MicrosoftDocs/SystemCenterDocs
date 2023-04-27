@@ -1,13 +1,14 @@
 ---
 title: VMware vSphere integration pack for System Center - Orchestrator
 description: This article describes the integration pack for VMware vSphere in System Center - Orchestrator.
-ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 # VMware vSphere integration pack
 
@@ -27,12 +28,6 @@ The integration pack for VMware vSphere is an add-on for System Center - Orchest
 - Download the pack for Orchestrator 2016 from [here, on the download center](https://www.microsoft.com//download/details.aspx?id=54099).
 
 - Download the pack for Orchestrator 2019 from [here, on the download center](https://www.microsoft.com/download/details.aspx?id=58112&WT.mc_id=rss_alldownloads_all).
-::: moniker-end
-
-::: moniker range="sc-orch-2022"
-
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released; download links will be provided once they are available. 
 ::: moniker-end
 
 ## Register and deploy the pack
