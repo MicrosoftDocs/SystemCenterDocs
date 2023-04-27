@@ -5,7 +5,7 @@ description: This article describes management tasks for the VMM library
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/24/2023
+ms.date: 04/27/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

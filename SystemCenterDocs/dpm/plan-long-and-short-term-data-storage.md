@@ -1,16 +1,16 @@
 ---
-description: Information to help you identify your storage needs and to prepare the storage to support a DPM 2016 deployment.
+description: Information to help you identify your storage needs and to prepare the storage to support a DPM deployment.
 manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 03/04/2022
+ms.date: 04/24/2023
 title: Prepare data storage
 ms.technology: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Prepare data storage

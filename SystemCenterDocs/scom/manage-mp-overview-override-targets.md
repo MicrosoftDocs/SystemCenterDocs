@@ -1,12 +1,12 @@
 ---
 ms.assetid: 22fdfe80-9d2a-4b46-b544-06a5b2b0e6c2
 title: Using Classes and Groups for Overrides
-description: This article describes how to apply overrides to classes and groups in Operations Manager 2016.
+description: This article describes how to apply overrides to classes and groups in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/21/2022
-ms.custom: na
+ms.date: 04/24/2023
+ms.custom: engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

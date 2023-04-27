@@ -1,7 +1,7 @@
 ---
 ms.assetid:
-title: Configure Antivirus for Operations Manager Components
-description: This article provides design guidance for anti-virus exclusions as they relate to Operations Manager agent and server roles.
+title: Antivirus exclusions (Operations Manager 2019 and later)
+description: Describes some antivirus exclusions that relate to Operations Manager. These exclusions include process-based exclusions, directory-specific exclusions, and file name extension-specific exclusions.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configuring antivirus exclusions for agent and components
+# Recommendations for antivirus exclusions that relate to Operations Manager 2019 and later
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This article outlines antivirus exclusions as they pertain to System Center - Operations Manager.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
+This article outlines antivirus exclusions that relate to System Center 2019 Operations Manager and later.  For earlier versions of Operations Manager, see [antivirus exclusions (Operations Manager 2012, 2012 R2, and 2016)](/troubleshoot/system-center/scom/antivirus-exclusions-recommendations).
 
 For specific exclusion recommendations for supported versions of SQL Server, see [KB309422](https://support.microsoft.com/help/309422/choosing-antivirus-software-for-computers-that-run-sql-server).
 
