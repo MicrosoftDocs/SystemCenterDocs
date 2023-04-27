@@ -2,7 +2,6 @@
 title: Get Host Datastores Activity
 description: The Get Host Datastores activity is used in a runbook to retrieve a list of datastores available for a specified host managed by the VMware vSphere server.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 260c93bf-de76-438a-92fe-1e3dcff4ed49
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # Get Host Datastores Activity

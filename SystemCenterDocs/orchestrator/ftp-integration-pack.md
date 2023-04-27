@@ -45,13 +45,6 @@ The Integration Pack for FTP requires the following software to be installed and
 
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
-
->[!Note]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released; download links will be provided once they are available.
-
-::: moniker-end
-
 ## Register and deploy the integration pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an integration pack](how-to-add-an-integration-pack.md).

@@ -38,11 +38,6 @@ Before you install the Integration Pack for Windows Azure, the following listed 
 -   Windows Azure
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
--   System Center 2022 integration packs require System Center 2022 - Orchestrator
--   Windows Azure
-::: moniker-end
-
 ## Download the Integration Pack
 
 ::: moniker range="<=sc-orch-2019"
@@ -50,13 +45,6 @@ Before you install the Integration Pack for Windows Azure, the following listed 
 - To download the Windows Azure integration pack, for Orchestrator 2016, see the [Microsoft Download Center space for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
 
 - To download the Windows Azure integration pack, for Orchestrator 2019, see the [Microsoft Download Center space for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
-
-::: moniker-end
-
-::: moniker range="sc-orch-2022"
-
->[!NOTE]
-> Integration packs and toolkit for Orchestrator 2022 are yet to be released; download links will be provided once they're available.
 
 ::: moniker-end
 

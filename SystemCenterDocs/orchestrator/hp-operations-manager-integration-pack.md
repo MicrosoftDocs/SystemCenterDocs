@@ -38,23 +38,12 @@ The Integration Pack for HP Operations Manager requires the following software t
 -  HP Operations Manager 9.x
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
--  System Center 2022 integration packs require System Center 2022 - Orchestrator
--  HP Operations Manager 9.x
-::: moniker-end
-
 ## Downloading the Integration Pack
 
 ::: moniker range="<=sc-orch-2019"
 - To download this integration pack for Orchestrator 2016, see [HP Operations Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54102).
 
 - To download this integration pack for Orchestrator 2019, see [HP Operations Manager Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58108&WT.mc_id=rss_alldownloads_all).
-::: moniker-end
-
-::: moniker range="sc-orch-2022"
-
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released; download links will be provided once they are available. 
 ::: moniker-end
 
 ## Registering and Deploying the Integration Pack

@@ -35,12 +35,6 @@ Microsoft is committed to protecting your privacy while delivering software that
 - To download this integration pack for Orchestrator 2019, see [IBM Tivoli Netcool Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58110&WT.mc_id=rss_alldownloads_all).
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
-
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released; download links will be provided once they are available. 
-::: moniker-end
-
 ## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
