@@ -2,17 +2,13 @@
 title: Get Internet Application Status
 description: This article describes the functionality of Get Internet Application Status activity.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 83143603-d47b-4162-8932-f91eb9cac53b
 caps.latest.revision: 18
 author: "jyothisuri"

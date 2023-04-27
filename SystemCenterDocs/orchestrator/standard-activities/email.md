@@ -2,17 +2,13 @@
 title: Email 
 description: This article provides a brief description of tasks you can accomplish when using an Email activity.  
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 90bfa176-af53-4c77-99d6-8cb6b619bcda
 caps.latest.revision: 8
 author: "jyothisuri"

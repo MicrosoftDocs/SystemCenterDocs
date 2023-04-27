@@ -2,17 +2,13 @@
 title: Return Data 
 description: This article describes the Return Data activity that allows you to return data from the current runbook to a runbook that invoked the runbook.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 60cdc2df-a0fe-49a8-aebf-ee1e2f9c60b9
 caps.latest.revision: 16
 author: "jyothisuri"

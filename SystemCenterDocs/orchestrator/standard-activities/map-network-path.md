@@ -2,17 +2,13 @@
 title: Map Network Path
 description: This article describes the functionality of Map Network Path activity.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 8954602d-8f80-4a5d-8e69-fd8148122ac6
 caps.latest.revision: 14
 author: "jyothisuri"

@@ -13,7 +13,7 @@ ms.assetid: cf1b4f0c-2694-405b-9940-1fdb88c9228b
 caps.latest.revision: 16
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: "mkluck"
 ---
 # PGP Decrypt File
 

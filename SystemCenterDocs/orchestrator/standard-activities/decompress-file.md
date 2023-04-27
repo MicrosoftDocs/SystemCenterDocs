@@ -2,17 +2,13 @@
 title: Decompress File
 description: This article describes the Decompress File activity.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: ca5b4132-d8bd-4052-95f3-d7df76ae426a
 caps.latest.revision: 12
 author: "jyothisuri"

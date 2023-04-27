@@ -2,17 +2,13 @@
 title: Monitor Internet Application
 description: This article provides the details about Monitor Internet Application activity.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 2cebdeb0-09dd-47b7-ae13-0b478fc77a6d
 caps.latest.revision: 17
 author: "jyothisuri"

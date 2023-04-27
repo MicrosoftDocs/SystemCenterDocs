@@ -2,17 +2,13 @@
 title: Create Folder activity
 description: This article describes the Create Folder activity that creates a new folder on the local file system
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 8fdf738a-6dc7-4173-a940-406d9cb81729
 caps.latest.revision: 12
 author: "jyothisuri"

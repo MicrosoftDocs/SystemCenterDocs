@@ -2,15 +2,13 @@
 title: Delete File activity
 description: This article describes the delete file activity.
 ms.custom: UpdateFrequency3
-ms.date: "12/12/2022"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center - Orchestrator"
 ms.assetid: c79a70d9-2956-4898-a6fe-d1c54bf10fd0
 caps.latest.revision: 11
 author: "jyothisuri"

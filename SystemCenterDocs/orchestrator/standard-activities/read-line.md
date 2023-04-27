@@ -2,17 +2,13 @@
 title: Read Line
 description: This article describes the Read Line activity.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 0ab7c54c-88fa-41fd-87be-00f959384b7d
 caps.latest.revision: 13
 author: "jyothisuri"

@@ -2,17 +2,13 @@
 title: Start-Stop Service
 description: This article provides detailed information about the start-stop service activity and how to configure it.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: d1aedb89-b6c9-44fd-9491-9818f5d1327a
 caps.latest.revision: 19
 author: "jyothisuri"

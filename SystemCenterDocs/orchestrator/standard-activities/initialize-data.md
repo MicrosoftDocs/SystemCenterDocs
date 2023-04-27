@@ -2,17 +2,13 @@
 title: Initialize Data
 description: This article describes the functionality of Initialize Data activity.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 05/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: c1cae147-b286-421d-b344-c73216ea9977
 caps.latest.revision: 13
 author: "jyothisuri"
