@@ -33,7 +33,7 @@ The upgrade might also fail as a result of Configuration service Startup timing 
 
 You can also work around configuration service startup issues after a failed upgrade.
 
-Select the required tab for the steps to take to recover from a failed upgrade when the failure occurs in an unpredictable manner:
+Select the required tab for the steps to recover from a failed upgrade when the failure occurs in an unpredictable manner:
 
 # [During a prerequisite check](#tab/Phase1)
 

@@ -150,9 +150,9 @@ The following high-level steps are required to move the data warehouse databases
 
 ###  Locate user accounts and instances of SQL Server
 
- Use the following procedures to locate the user accounts and instances of SQL Server that are used by the data warehouse management server:
+ Use the following procedures to locate the user accounts and instances of SQL Server that are used by the data warehouse management server to identify the:
 
-# [Identify the SQL Server database and instance names](#tab/SQLServerDB) 
+# [SQL Server database and instance names](#tab/SQLServerDB) 
 
 Follow these steps to identify the SQL Server database and instance names used by the data warehouse management server:
 
@@ -188,7 +188,7 @@ Follow these steps to identify the SQL Server database and instance names used b
 
     -   CMDataMartSQLInstance  
 
-# [Identify the reporting server and instance names](#tab/ReportingServer)  
+# [Reporting server and instance names](#tab/ReportingServer)  
 
 Follow these steps to identify the reporting server and instance names used by data warehouse management server:
 
@@ -201,7 +201,7 @@ Follow these steps to identify the reporting server and instance names used by d
     -   ServerInstance  
     -   WebServiceURL  
 
-# [Identify the service account](#tab/ServiceAccount)
+# [Service account](#tab/ServiceAccount)
 
 Follow these steps to identify the service account used by the data warehouse management server:
 
@@ -217,7 +217,7 @@ Follow these steps to identify the service account used by the data warehouse ma
 
 6.  Repeat Steps 3 through 5 for the **System Center Management Configuration** service.  
 
-# [Identify the reporting account](#tab/ReportingAccount)
+# [Reporting account](#tab/ReportingAccount)
 
 Follow these steps to identify the reporting account used by the data warehouse management server:
 
@@ -259,7 +259,7 @@ Follow these steps to identify the reporting account used by the data warehouse 
 
 16. Close the browser window.  
 
-# [Identify the OLAP Account](#tab/OLAPAccount) 
+# [OLAP Account](#tab/OLAPAccount) 
 
 Follow these steps to identify the OLAP Account used by the data warehouse management server: 
 
