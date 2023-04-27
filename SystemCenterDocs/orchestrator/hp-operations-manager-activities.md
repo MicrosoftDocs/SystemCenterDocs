@@ -2,7 +2,6 @@
 title: HP Operations Manager Activities
 description: The following configuration instructions apply to all activities in this integration pack. It also lists the filter behavior.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: dd525101-1078-46d0-93a5-f0761c6ad5e8
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # HP Operations Manager Activities

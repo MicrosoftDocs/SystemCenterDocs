@@ -1,18 +1,14 @@
 ---
 title: Move Folder
 description: This article describes the functionality of Move Folder activity.
-ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 011ed34f-7aa9-41bd-99fc-8d6700af179e
 caps.latest.revision: 12
 author: "jyothisuri"

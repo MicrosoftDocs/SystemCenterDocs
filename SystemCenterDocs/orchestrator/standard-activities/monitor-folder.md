@@ -1,18 +1,14 @@
 ---
 title: Monitor Folder
 description: This article describes how to configure the Monitor Folder Activity
-ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 7a88688b-c7dd-4cc7-bda8-cd8ca52fdb05
 caps.latest.revision: 13
 author: "jyothisuri"

@@ -2,7 +2,7 @@
 title: Add Management Certificate
 description: The Add Management Certificate activity is used in a runbook to add a certificate to the list of management certificates.
 ms.custom: UpdateFrequency
-ms.date: 05/07/2019
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,6 +14,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+monikerRange: '<=sc-orch-2019'
 ---
 # Add Management Certificate
 
