@@ -36,6 +36,8 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 ## Deploy a gateway server
 
+Follow these steps to deploy a gateway server:
+
 1.  Request certificates for any computer in the agent, gateway server, management server chain.
 
 2.  Import those certificates into the target computers by using the MOMCertImport.exe tool.
@@ -65,7 +67,7 @@ For more information, see [Active Directory Certificate Services](/previous-vers
 
 The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only on the management server, and it only has to be run once.
 
-Follow these steps to **copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers**:
+#### Copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers
 
 1.  From a target management server, open the Operations Manager installation media `\SupportTools\` (amd64 or x86) directory.
 
@@ -75,7 +77,7 @@ Follow these steps to **copy Microsoft.EnterpriseManagement.GatewayApprovalTool.
 
 This procedure registers the gateway server with the management group, and when this is completed, the gateway server appears in the Discovered Inventory view of the management group.
 
-Follow these steps to **run the gateway approval tool**:
+#### Run the gateway approval tool
 
 1.  On the management server that was targeted during the gateway server installation, sign in with the Operations Manager Administrator account.
 
@@ -108,9 +110,9 @@ This procedure installs the gateway server. The server that is to be the gateway
 
 Select the required tab to run the Operations Manager Gateway Windows Installer and install the gateway server:
 
-# [Run Operations Manager Gateway Windows Installer from a Command Prompt window](#tab/RunOpsManager)
+#### Run Operations Manager Gateway Windows Installer from a command prompt window
 
-Follow these steps to run the Operations Manager Gateway Windows Installer from a Command Prompt window:
+Follow these steps to run the Operations Manager Gateway Windows Installer from a command prompt window:
 
 1.  On the Windows desktop, select **Start**, point to **Programs**, point to **Accessories**, right-click **Command Prompt**, and select **Run as administrator**.
 
@@ -172,7 +174,7 @@ Follow these steps to install the gateway server from the command prompt:
 
 Perform this operation on each gateway server, management server, and computer that will be agent-managed and that is in a domain that isn't trusted.
 
-Follow these steps to **import computer certificates by using MOMCertImport.exe**:
+#### Import computer certificates by using MOMCertImport.exe
 
 1.  Copy the MOMCertImport.exe tool from the installation media `\SupportTools\` (amd64 or x86) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
 
@@ -184,7 +186,7 @@ Although gateway servers can communicate with any management server in the manag
 
 Use the Set-SCOMParentManagementServer command in the Operations Manager shell, as shown in the following example, to configure a gateway server to fail over to multiple management servers. The commands can be run from any Command Shell in the management group.
 
-Follow these steps to **configure gateway server failover between management servers**:
+#### Configure gateway server failover between management servers
 
 1.  Sign in to the management server with an account that is a member of the Administrators role for the management group.
 
