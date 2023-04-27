@@ -1,12 +1,12 @@
 ---
 ms.assetid: 2c2f0df5-befb-47f1-926b-c013fd659ec5
 title: Single-Server Deployment of Operations Manager
-description: This article provides an overview of the single-server deployment of Operations Manager 2016 to prepare you before performing setup.
+description: This article provides an overview of the single-server deployment of Operations Manager to prepare you before performing setup.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/25/2017
-ms.custom: UpdateFrequency2
+ms.date: 04/24/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

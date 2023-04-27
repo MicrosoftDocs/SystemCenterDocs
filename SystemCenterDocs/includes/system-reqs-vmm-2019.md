@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2019
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date:  03/30/2021
+ms.date:  03/01/2023
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -122,8 +122,8 @@ Windows Server 2022 | N | N | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
-vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
+ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)<br/>7.0, 8.0 (supported from VMM 2019 UR5)
+vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)<br/>7.0, 8.0 (supported from VMM 2019 UR5)
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric

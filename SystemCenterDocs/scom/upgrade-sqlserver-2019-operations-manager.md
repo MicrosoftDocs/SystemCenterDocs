@@ -99,7 +99,7 @@ After the upgrade is complete, perform the following steps to [install Operation
 
 To enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017) on the Operations Manager databases, run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2019).  
 
-```
+```sql
 -- Do this only for SQL server version 2017 and more
 IF( convert(int, SERVERPROPERTY('ProductMajorVersion')) > 13 )
 BEGIN

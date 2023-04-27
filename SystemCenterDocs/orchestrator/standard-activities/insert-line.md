@@ -1,18 +1,14 @@
 ---
 title: Insert Line 
 description: This article describes inserts lines into a text file on a line number that you specify.
-ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: ae2bc14f-7027-484e-95c0-4cad77b8f5ef
 caps.latest.revision: 13
 author: "jyothisuri"

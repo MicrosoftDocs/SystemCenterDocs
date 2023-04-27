@@ -1,14 +1,14 @@
 ---
-title: Scale Tier Out activity in System Center - Orchestra
+title: Scale Tier Out activity in System Center - Orchestrator
 description: The Scale Tier Out activity is used in a runbook to add one virtual machine instance to a specified service tier. It also lists the associated properties.
-ms.date: 01/22/2018
+ms.date: 04/25/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy23
 ---
 # Scale Tier Out activity
 

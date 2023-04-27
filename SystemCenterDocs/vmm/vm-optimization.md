@@ -1,15 +1,15 @@
 ---
 ms.assetid: 0746e47e-407b-44d7-b83d-655df3f53fb8
-title: Set up dynamic and power optimization in the VMM 2016 compute fabric
+title: Set up dynamic and power optimization in the VMM compute fabric
 description: This article describes how to configure dynamic optimization and power optimization in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/12/2022
+ms.date: 04/20/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Set up dynamic and power optimization in VMM
