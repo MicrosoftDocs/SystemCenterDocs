@@ -1,18 +1,14 @@
 ---
 title: Write Web Page 
 description: This article describes the Write Web Page activity that will create or add information to an HTML file.
-ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 43f5cfc6-df95-4c03-80b4-c2157bc7f88f
 caps.latest.revision: 13
 author: "jyothisuri"

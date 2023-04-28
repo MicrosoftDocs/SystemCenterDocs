@@ -2,7 +2,6 @@
 title: Rollback Update or Upgrade
 description: The Rollback Update or Upgrade activity cancels an in progress configuration change (update) or upgrade and returns the deployment to its state before the upgrade or configuration change was started.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.date: 01/30/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,6 +13,8 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 # Rollback Update or Upgrade
 

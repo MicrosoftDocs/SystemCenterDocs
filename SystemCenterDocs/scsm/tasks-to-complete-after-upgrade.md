@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/20/2023
+ms.date: 04/28/2023
 ms.technology: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23
@@ -22,35 +22,43 @@ ms.custom: UpdateFrequency2, engagement-fy23
 This article describes the tasks you should complete after upgrading System Center - Service Manager.
 
 ## Restart the Data Access service and workflows
- If necessary, use the following procedures to restart the service and workflows.  
 
-#### To restart the Data Access service  
+If necessary, use the following procedures to restart the service and workflows.  
+
+#### Restart the Data Access service
+
+Follow these steps to restart the Data Access service:
 
 1.  On the computer that hosts the data warehouse management server, on the Windows desktop, select **Start**, and select **Run**.  
 
 2.  In the **Run** dialog, in **Open**, enter **services.msc**, and select **OK**.  
 
-3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Data Access Service**, and select **Start**.  
+3.  In the **Services** window, in the **Services (Local)** pane, right-click **System Center Data Access Service**, and select **Start**.  
 
-#### To start Service Manager workflows  
+#### Start Service Manager workflows  
+
+Follow these steps to start Service Manager workflows:
 
 1.  On the computer that hosts the Service Manager management server, on the Windows desktop, select **Start**, and select **Run**.  
 
 2.  In the **Run** dialog, in **Open**, enter **services.msc**, and select **OK**.  
 
-3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Management**, and select **Start**.  
+3.  In the **Services** window, in the **Services (Local)** pane, right-click **System Center Management**, and select **Start**.  
 
-## Restart data warehouse jobs  
- After you upgrade the data warehouse management server, you might need to restart the data warehouse \(extraction, transformation, and load \(ETL\)\) jobs. You can use the following procedure to restart the data warehouse jobs. In this procedure, you enable data warehouse job schedules by using Windows&nbsp;PowerShell cmdlets.  
+## Restart data warehouse jobs
 
-#### To restart data warehouse jobs  
+ After you upgrade the data warehouse management server, you might need to restart the data warehouse (extraction, transformation, and load (ETL)) jobs. You can use the following procedure to restart the data warehouse jobs. In this procedure, you enable data warehouse job schedules by using Windows PowerShell cmdlets.  
 
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **Programs**, point to **Accessories**, select **Windows PowerShell**, right\-click **Windows PowerShell**, and select **Run as administrator**.  
+#### Restart data warehouse jobs  
+
+Follow these steps to restart data warehouse jobs:
+
+1.  On the computer that hosts the data warehouse management server, select **Start**, point to **Programs**, point to **Accessories**, select **Windows PowerShell**, right-click **Windows PowerShell**, and select **Run as administrator**.  
 
 2.  Enter the following commands and then press Enter after each command.  
 
     > [!NOTE]  
-    >  It's assumed in the following command examples that Service Manager was installed in its default location on the C: drive. If necessary, change directories to the location where you installed Service Manager.  
+    >  It's assumed in the following command examples that Service Manager was installed in its default location on the C: drive. If necessary, change directories to the location where you installed Service Manager.
 
     ```  
     cd 'C:\Program Files\Microsoft System Center <version>\Service Manager'  
@@ -97,17 +105,19 @@ This article describes the tasks you should complete after upgrading System Cent
 ## Stop and then restart SSRS  
  After you perform an upgrade, use the following procedure to stop and then start SSRS.  
 
-#### To stop and then restart SSRS  
+#### Stop and then restart SSRS
+
+Follow these steps to stop and then restart SSRS:
 
 1.  On the computer that hosts SSRS, on the Windows desktop, select **Start**, and select **Run**.  
 
 2.  In the **Run** dialog, enter **services.msc**, and select **OK**.  
 
-3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and select **Stop**.  
+3.  In the **Services** window, in the **Services (Local)** pane, right-click **SQL Server Reporting Services**, and select **Stop**.  
 
 4.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and select **Start**.
 
 
 ## Next steps
 
-- If needed, [troubleshoot upgrade issues](resolve-upgrade-problems.md).
+If needed, [troubleshoot upgrade issues](resolve-upgrade-problems.md).
