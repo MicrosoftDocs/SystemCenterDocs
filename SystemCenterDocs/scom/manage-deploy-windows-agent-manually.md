@@ -5,8 +5,8 @@ description: This article describes how to manually install the Operations Manag
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/21/2022
-ms.custom: UpdateFrequency2, intro-installation
+ms.date: 04/17/2023
+ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -49,7 +49,9 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 >  The Application Performance Monitoring (APM) feature in System Center 2016 Operations Manager and version 1801 agent causes a crash with IIS Application Pools that are running under the .NET Framework 2.0 runtime. By default when the agent is installed on a Windows computer, the APM components are installed by default. To avoid issues and prevent installation of the APM components on target Windows servers when you deploy the agent, add the `NOAPM=true` parameter
 ::: moniker-end
 
-## To deploy the Operations Manager agent with the Agent Setup Wizard
+## Deploy the Operations Manager agent with the Agent Setup Wizard
+
+Follow these steps to deploy the Operations Manager agent with the Agent Setup Wizard:
 
 1.  Use local administrator privileges to sign in to the computer where you want to install the agent.
 
@@ -82,7 +84,9 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 
 11. When the **Completing the Microsoft Monitoring Agent Setup Wizard** page appears, select **Finish**.
 
-## To deploy the Operations Manager agent from the command line
+## Deploy the Operations Manager agent from the command line
+
+Follow these steps to deploy the Operations Manager agent from the command line:
 
 1.  Sign in to the computer where you want to install the agent by using an account with local administrator privileges.
 
@@ -109,8 +113,8 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
     |MANAGEMENT_SERVER_DNS=*MSname*|Specifies the fully qualified domain name for the management server. To use a gateway server, enter the gateway server FQDN as **MANAGEMENT_SERVER_DNS**.|
     |MANAGEMENT_SERVER_AD_NAME=*ADname*|Use this parameter if the computer's DNS and Active Directory names differ to set to the fully qualified Active Directory Domain Services name.|
     |SECURE_PORT=*PortNumber*|Sets the health service port number.|
-    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with "1" to opt in to error report forwarding to Microsoft. If you don't include this parameter, the agent installation defaults to "0", which opts out of error report forwarding.|
-    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with "1" to queue error reports or with "0" to send reports immediately. If you don't include this parameter, the agent installation defaults to "0".|
+    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with **1** to opt in to error report forwarding to Microsoft. If you don't include this parameter, the agent installation defaults to **0**, which opts out of error report forwarding.|
+    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with **1** to queue error reports or with **0** to send reports immediately. If you don't include this parameter, the agent installation defaults to **0**.|
     |INSTALLDIR=*path*|Optional parameter. Use this parameter if you want to install the agent to a folder other than the default installation path. Note that \Agent will be appended to this value.|
     |ACTIONS_USE_COMPUTER_ACCOUNT={0&#124;1}|Indicates whether to use a specified user account (0) or the Local System account (1).|
     |ACTIONSUSER=*UserName*|Sets the Agent Action account to *UserName*. This parameter is required if you specified ACTIONS_USE_COMPUTER_ACCOUNT=0.|

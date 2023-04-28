@@ -1,14 +1,14 @@
 ---
-title: Get VM Network activity in System Center - Orchestra
+title: Get VM Network activity in System Center - Orchestrator
 description: The article explains about the Get VM Network activity and the way it is used in a runbook to return all virtual networks on the VMM management server that meet the filtering criteria.
-ms.date: 01/22/2018
+ms.date: 04/25/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy23
 ---
 
 # Get VM Network activity

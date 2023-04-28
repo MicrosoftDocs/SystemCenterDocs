@@ -2,7 +2,7 @@
 title: List Cloud Service
 description: The List Cloud Service activity lists the cloud services available under the current subscription.
 ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,6 +14,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+monikerRange: '<=sc-orch-2019'
 ---
 # List Cloud Service
 

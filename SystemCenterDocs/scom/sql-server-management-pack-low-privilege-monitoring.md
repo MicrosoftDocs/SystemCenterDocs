@@ -118,7 +118,7 @@ This section explains how to configure low-privilege agent monitoring.
     EXEC(@createLoginCommand);
     -- Add the login to the user-defined server role
     DECLARE @addServerMemberCommand nvarchar(200);
-    SET @addServerMemberCommand = 'ALTER SERVER ROLE [SCOM_HealthService] ADD MEMBER '
+    SET @addServerMemberCommand = 'ALTER SERVER ROLE [SCOM_SQLMPLowPriv] ADD MEMBER '
     + QUOTENAME(@accountname) + ';'
     EXEC(@addServerMemberCommand);
     -- Add the login and database role to each database
@@ -282,7 +282,7 @@ This section explains how to configure low-privilege agentless monitoring.
     EXEC(@createLoginCommand);
     -- Add the login to the user-defined server role
     DECLARE @addServerMemberCommand nvarchar(200);
-    SET @addServerMemberCommand = 'ALTER SERVER ROLE [SCOM_HealthService] ADD MEMBER '
+    SET @addServerMemberCommand = 'ALTER SERVER ROLE [SCOM_SQLMPLowPriv] ADD MEMBER '
     + QUOTENAME(@accountname) + ';'
     EXEC(@addServerMemberCommand);
     -- Add the login and database role to each database
