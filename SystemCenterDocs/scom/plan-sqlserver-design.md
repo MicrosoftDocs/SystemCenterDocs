@@ -43,7 +43,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 to 17.9, and MSOLEDBSQL 18.2 to 18.6.3.
+  > - Use ODBC 17.3 to 17.10.3, and MSOLEDBSQL 18.2 to 18.6.5.
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 to 17.9, and MSOLEDBSQL 18.2 to 18.6.3.
+  > - Use ODBC 17.3 to 17.10.3, and MSOLEDBSQL 18.2 to 18.6.5.
 
 ::: moniker-end
 
