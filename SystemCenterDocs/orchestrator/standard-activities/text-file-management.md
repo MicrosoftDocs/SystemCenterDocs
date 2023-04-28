@@ -1,18 +1,14 @@
 ---
 title: Text File Management
 description: This article provides information about the tasks that you can do using text file management activities.  
-ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 59a60b8a-2fb3-4dc9-9d3a-06cfd66db866
 caps.latest.revision: 7
 author: "jyothisuri"

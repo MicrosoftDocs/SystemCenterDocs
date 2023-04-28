@@ -2,7 +2,6 @@
 title: Get VM Status Activity
 description: The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 912dfce9-c159-4de2-853b-c47fc161b5ca
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # Get VM Status Activity

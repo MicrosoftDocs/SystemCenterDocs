@@ -2,7 +2,7 @@
 title: Get VM instance
 description: The Get VM Instance activity retrieves the specified virtual machine.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +13,7 @@ ms.assetid: db87de08-2b60-48da-b908-23d0b83f5146
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Get VM instance

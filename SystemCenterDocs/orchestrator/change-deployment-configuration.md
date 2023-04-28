@@ -2,7 +2,7 @@
 title: Change Deployment Configuration
 description: The Change Deployment Configuration activity initiates a change to the deployment configuration.
 ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,6 +14,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+monikerRange: '<=sc-orch-2019'
 ---
 # Change Deployment Configuration
 
