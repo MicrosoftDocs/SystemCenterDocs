@@ -2,7 +2,6 @@
 title: HP Service Manager Integration Pack for System Center - Orchestrator
 description: The integration pack for HP Service Manager is an add-on for Orchestrator in System Center and System Center - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager.
 ms.custom: na
-ms.date: 03/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 6eb5a088-0b37-456c-bd38-8af868e5ae82
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # HP Service Manager Integration Pack for System Center - Orchestrator
@@ -37,11 +38,6 @@ The integration pack for HP Service Manager requires the following software to b
 -   HP Service Manager 7.11 or 9
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
--  System Center 2022 integration packs require System Center 2022 - Orchestrator
--   HP Service Manager 7.11 or 9
-::: moniker-end
-
 The following software must be installed on each Runbook Server and Runbook Designer:
 
 -   Microsoft .NET Framework 3.5 Service Pack 1
@@ -57,13 +53,6 @@ The following software must be installed on each Runbook Server and Runbook Desi
 ::: moniker range="<=sc-orch-2019"
 - To download this integration pack for Orchestrator 2016, see [HP Service Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54101).
 - To download this integration pack for Orchestrator 2019, see [HP Service Manager Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58109&WT.mc_id=rss_alldownloads_all).
-::: moniker-end
-
-::: moniker range="sc-orch-2022"
-
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released; download links will be provided once they are available.
-
 ::: moniker-end
 
 ## Registering and Deploying the Integration Pack

@@ -2,7 +2,6 @@
 title: Get Host Properties Activity
 description: The Get Host Properties activity is used in a runbook to retrieve a list of properties for a specified host in the VMware vSphere cluster.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 32e0b1e4-6e53-42a3-a6e1-4f144d2e4073
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # Get Host Properties Activity

@@ -1,7 +1,7 @@
 ---
 title: Add VM Disk
 description: Describes the Add VM Disk activity, to add a disk to the user image repository.
-ms.date: 01/17/2018
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
@@ -9,6 +9,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.custom: UpdateFrequency2
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Add VM Disk

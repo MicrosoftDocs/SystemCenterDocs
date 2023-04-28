@@ -2,7 +2,6 @@
 title: HP iLO and OA Activities
 description: The following configuration instructions apply to all activities in this integration pack. It also lists the General tab.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 99a34ebc-9063-47c0-b25a-ff5a896ab671
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # HP iLO and OA Activities

@@ -2,7 +2,6 @@
 title: Launch Tool
 description: The Launch Tool activity is used in a runbook to run a specified command on a specified server.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 90d27667-d197-4d26-bb48-fdbeaf6e7e4b
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # Launch Tool
