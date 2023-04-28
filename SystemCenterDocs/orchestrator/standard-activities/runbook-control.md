@@ -1,18 +1,14 @@
 ---
 title: Runbook Control
 description: This article describes the tasks that can be accomplished using the initialize data, return data, junction and invoke runbook activity.
-ms.custom: UpdateFrequency2
-ms.date: "05/13/2016"
+ms.custom: UpdateFrequency2, engagement-fy23
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: dcbc0186-947f-4cf5-af5e-720980a2c8c0
 caps.latest.revision: 9
 author: "jyothisuri"

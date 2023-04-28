@@ -1,5 +1,5 @@
 ---
-title: Post-upgrade tasks in System Center - Service Manager p
+title: Post-upgrade tasks in System Center - Service Manager
 description: Summarizes tasks to complete after you upgrade System Center - Service Manager.
 manager: mkluck
 ms.prod: system-center

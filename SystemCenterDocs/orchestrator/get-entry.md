@@ -2,7 +2,6 @@
 title: Get Entry
 description: The Get Entry activity is used in a runbook to retrieve the existing entries from HP Service Manager.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 8a13614b-bc3a-41dc-9620-2152c7268fe7
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # Get Entry

@@ -2,7 +2,6 @@
 title: Get Annotation
 description: The Get Annotation activity retrieves annotations for a specified message according to the filter criteria that you specify.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: 60be0ba1-5e71-4521-bfae-9c7721fdfa03
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # Get Annotation

@@ -1,18 +1,18 @@
 ---
-title: Using SharePoint to View Operations Manager Data
+title: Use SharePoint to View Operations Manager Data
 description: This article describes how to deploy the Operations Manager Web console SharePoint web part for viewing select dashboards in SharePoint from Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/14/2020
-ms.custom: UpdateFrequency2
+ms.date: 04/18/2023
+ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
 ---
 
-# Using SharePoint to view Operations Manager data
+# Use SharePoint to view Operations Manager data
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -20,15 +20,15 @@ ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
 
 ::: moniker-end
 
-System Center Operations Manager can display select dashboards from the Web console in SharePoint to see at a glance the status of operational metrics, such as availability and performance of your managed services.  This is especially beneficial to members of your organization who don't need access to Operations Manager, such as service managers, executives, and even end-users of the service.  
+System Center Operations Manager can display select dashboards from the Web console in SharePoint to see at a glance the status of operational metrics, such as availability and performance of your managed services. This is especially beneficial to members of your organization who don't need access to Operations Manager, such as service managers, executives, and even end-users of the service.  
 
-Use the following procedures to configure dashboards on a SharePoint page.  This is accomplished using the Page Viewer Web Part included with SharePoint, which lets you view another web page from within your SharePoint page.  If the user hasn't already been granted rights to view operational data from either console available in Operations Manager, they'll need to be [assigned membership](manage-security-overview.md#how-to-assign-members-to-built-in-user-roles) to one of the built-in user roles.  If the user will only need to view the data but not interact with it from the Operations or web console, such as close an alert or perform some other related task, consider adding them to the **Read-only Operator** role.
+Use the following procedures to configure dashboards on a SharePoint page. This is accomplished using the Page Viewer Web Part included with SharePoint, which lets you view another web page from within your SharePoint page. If the user hasn't already been granted rights to view operational data from either console available in Operations Manager, they'll need to be [assigned membership](manage-security-overview.md#how-to-assign-members-to-built-in-user-roles) to one of the built-in user roles. If the user will only need to view the data but not interact with it from the Operations or web console, such as close an alert or perform some other related task, consider adding them to the **Read-only Operator** role.
 
 > [!NOTE]
 > Silverlight-based dashboards made accessible from the SharePoint web part can only be viewed using the Internet Explorer.
 >
 
-## How to configure the web part to connect to a Web console  
+## Configure the web part to connect to a Web console  
 
 1.  Open an Internet browser, and then navigate to the SharePoint server.  
 
@@ -58,6 +58,6 @@ Use the following procedures to configure dashboards on a SharePoint page.  This
 
 ## Next steps
 
-* You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).
+- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).
 
-* To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](manage-reports-installed-during-setup.md).
+- To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](manage-reports-installed-during-setup.md).
