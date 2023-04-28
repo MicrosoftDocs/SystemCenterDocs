@@ -2,7 +2,7 @@
 title: Get Deployment
 description: The Get Deployment activity returns configuration information, status, and system properties for a deployment.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.date: 1/27/2023
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +13,7 @@ ms.assetid: 846005ef-f15b-42e1-a6f5-ead1324a788f
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Get Deployment

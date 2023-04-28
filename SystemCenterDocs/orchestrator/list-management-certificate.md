@@ -2,7 +2,7 @@
 title: List Management Certificate
 description: The List Management Certificate activity is used in a runbook to list basic information about all of the management certificates associated with the specified subscription.
 ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,6 +14,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+monikerRange: '<=sc-orch-2019'
 ---
 # List Management Certificate
 
