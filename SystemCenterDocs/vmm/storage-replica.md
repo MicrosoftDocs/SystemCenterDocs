@@ -5,10 +5,11 @@ description: This article describes how to set up Storage Replica in the VMM fab
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 04/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy23
 ---
 
 # Manage Storage Replica in VMM
@@ -37,8 +38,8 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 
 ## Before you start
 
-* VMM must be running on Windows Server 2016 Datacenter Edition.
-* Hyper-V must be running on Windows Server 2016 Datacenter, Server Core, or Nano.
+* VMM must be running on Windows Server 2016 or later Datacenter Edition.
+* Hyper-V must be running on Windows Server 2016 or later Datacenter, Server Core, or Nano.
 * Only synchronous replication is supported. Asynchronous isn't supported.
 * You need two sets of storage, either volume or file storage. Both the source and destination locations must have the same type of storage (file or volume) but the actual storage can be mixed. For example, you could have Fibre Channel SAN at one end and Spaces Direct (in hyper-converged or disaggregated mode) at the other.
 * Each set of storage should be available in each of the clusters. Cluster storage shouldn't be shared.

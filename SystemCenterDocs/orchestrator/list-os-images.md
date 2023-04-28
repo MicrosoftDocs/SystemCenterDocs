@@ -2,7 +2,7 @@
 title: List OS Images
 description: The List OS Images activity retrieves a list of the operating system images from the image repository.
 ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.date: 04/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,6 +14,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
+monikerRange: '<=sc-orch-2019'
 ---
 # List OS Images
 

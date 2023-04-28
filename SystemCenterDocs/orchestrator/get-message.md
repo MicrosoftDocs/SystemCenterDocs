@@ -2,7 +2,6 @@
 title: Get Message
 description: The Get Message activity retrieves message from a management server according to the filter criteria that you specify.
 ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,6 +12,8 @@ ms.assetid: cd78c430-e320-44f8-b6ae-2b55c4e42ff6
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+monikerRange: '<=sc-orch-2019'
+ms.date: 04/27/2023
 ---
 
 # Get Message
