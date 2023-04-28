@@ -5,7 +5,7 @@ description: This article describes how to set up Storage Replica in the VMM fab
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/27/2023
+ms.date: 04/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
