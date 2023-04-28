@@ -108,8 +108,6 @@ This procedure installs the gateway server. The server that is to be the gateway
 > [!TIP]
 > An installation will fail when starting Windows Installer (for example, installing a gateway server by double-clicking MOMGateway.msi) if the local security policy User Account Control: Run all administrators in Admin Approval Mode is enabled.
 
-Select the required tab to run the Operations Manager Gateway Windows Installer and install the gateway server:
-
 #### Run Operations Manager Gateway Windows Installer from a command prompt window
 
 Follow these steps to run the Operations Manager Gateway Windows Installer from a command prompt window:
@@ -119,6 +117,8 @@ Follow these steps to run the Operations Manager Gateway Windows Installer from 
 2.  In the **Administrator: Command Prompt** window, navigate to the local drive that hosts the Operations Manager installation media.
 
 3.  Navigate to the directory where the .msi file is located, enter the name of the .msi file, and then press ENTER.
+
+Select the required tab to run the Operations Manager Gateway Windows Installer and install the gateway server:
 
 # [Install the gateway server](#tab/InstallGatewayServer)
 
