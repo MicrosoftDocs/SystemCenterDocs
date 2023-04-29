@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/27/2023
+ms.date: 04/28/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -48,10 +48,10 @@ Perform the following steps to enable TLS protocol version 1.2:
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
-1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver15#1865&preserve-view=true) version 18.2 to 18.6.5 on all management servers and the Web console server.
+1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) version 18.2 to 18.6.5 on all management servers and the Web console server.
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-4. Install [ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#179&preserve-view=true) version 17.3 to 17.10.3 on all management servers.
+4. Install [ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) version 17.3 to 17.10.3 on all management servers.
 5. Configure Windows to only use TLS 1.2.  
 6. Configure Operations Manager to only use TLS 1.2.  
 ::: moniker-end
@@ -147,9 +147,9 @@ After completing the configuration of all prerequisites for Operations Manager, 
 ### Manually modify the registry
 1. Sign in to the server by using an account that has local administrative credentials.  
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
-3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319**.  
+3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319**.  
 4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
-5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\\.NETFramework\v4.0.30319**.  
+5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319**.  
 6. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
 7. Restart the system for the settings to take effect.  
 
@@ -175,20 +175,22 @@ If this is being implemented for System Center 2016 - Operations Manager, after 
 
 If you're monitoring a supported version of Linux server with Operations Manager, follow the instructions on the appropriate website for your distro to configure TLS 1.2.  
 
+::: moniker range="sc-om-2016"
+
 ### Audit Collection Services
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
 1. Sign in to the server by using an account that has local administrative credentials.  
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
-3. Locate the following ODBC subkey for OpsMgrAC: **HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC**.  
+3. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
 
     >[!NOTE]
     >The default name of DSN is OpsMgrAC.
 
 4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 11.0 installed, change this name to **ODBC Driver 11 for SQL Server**, or if you have ODBC 13.0 installed, change this name to **ODBC Driver 13 for SQL Server**.
-5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBS version that is installed.
-   * If ODBC 11.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql11.dll.
-   * If ODBC 13.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql13.dll.
+5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
+   * If ODBC 11.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql11.dll`.
+   * If ODBC 13.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql13.dll`.
 
    Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
 
@@ -201,9 +203,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
         "OpsMgrAC"="ODBC Driver 11 for SQL Server"
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-        "Driver"="%WINDIR%\\system32\\msodbcsql11.dll"
+        "Driver"="%WINDIR%\system32\msodbcsql11.dll"
         ```
 
     * For ODBC 13.0, create the following ODBC 13.0.reg file:
@@ -215,10 +215,41 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
         "OpsMgrAC"="ODBC Driver 13 for SQL Server"
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+        "Driver"="%WINDIR%\system32\msodbcsql13.dll"
+        ```
+::: moniker-end
+
+::: moniker range=">sc-om-2016"
+
+### Audit Collection Services
+For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
+
+1. Sign in to the server by using an account that has local administrative credentials.  
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
+3. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
+
+    >[!NOTE]
+    >The default name of DSN is OpsMgrAC.
+
+4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 17.0 installed, change this name to **ODBC Driver 17 for SQL Server**.
+5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
+   * If ODBC 17.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
+
+   Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
+
+    * For ODBC 17.0, create the following ODBC 17.0.reg file:
+
+         ```
+         Windows Registry Editor Version 5.00
+
+        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+        "OpsMgrAC"="ODBC Driver 17 for SQL Server"
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-        "Driver"="%WINDIR%\\system32\\msodbcsql13.dll"
+        "Driver"="%WINDIR%\system32\msodbcsql17.dll"
         ```
+
+::: moniker-end
 
 ## Next steps
 
