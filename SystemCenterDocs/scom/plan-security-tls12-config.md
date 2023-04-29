@@ -77,14 +77,14 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 
 1. Sign in to the server by using an account that has local administrative credentials.
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.
-3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols**.
+3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols`.
 4. Create a subkey under **Protocols** for **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, and **TLS 1.2**.  
-5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the subkey for TLS 1.0 would be **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server**.  
+5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the subkey for TLS 1.0 would be `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client` and `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server`.  
 6. To disable each protocol, create the following DWORD values under **Server** and **Client**:  
    * **Enabled** [Value = 0]  
    * **DisabledByDefault** [Value = 1]  
 
-7. To enable the TLS 1.2 protocol, create the following DWORD values under **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server**:
+7. To enable the TLS 1.2 protocol, create the following DWORD values under `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client` and `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server`:
    * **Enabled** [Value = 1]  
    * **DisabledByDefault** [Value = 0]  
 
@@ -93,7 +93,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 ### Method 2: Automatically modify the registry
 Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol.
 
-```   
+```powershell
 $ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
 $ProtocolSubKeyList = @("Client", "Server")
 $DisabledByDefault  = "DisabledByDefault"
@@ -147,16 +147,16 @@ After completing the configuration of all prerequisites for Operations Manager, 
 ### Manually modify the registry
 1. Sign in to the server by using an account that has local administrative credentials.  
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
-3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319**.  
+3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.  
 4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
-5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319**.  
+5. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319`.  
 6. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
 7. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
 Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol.  
 
-```
+```powershell
 # Tighten up the .NET Framework
 $NetRegistryPath = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319"
 New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
