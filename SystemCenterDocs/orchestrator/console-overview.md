@@ -8,7 +8,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 05/02/2023
 author: jyothisuri
 manager: mkluck
 ---
@@ -158,7 +158,24 @@ The **Stop** button is shown on the Dashboard and the Job screen. Disappearing p
 
 2. If there are no CORS errors, look at the **Event Viewer** logs (Application) on the Web API computer.
 
-To fix CORS errors, you must ensure that the API’s *web.config* file must have a suitable CORS configuration. The browser error shows the origin value it's expecting in the *web.config*. For details on how to configure CORS in *web.config*, see this article on [CORS Module Configuration](/iis/extensions/cors-module/cors-module-configuration-reference).
+To fix CORS errors, you must ensure that the API’s `web.config` file must have a suitable CORS configuration. The browser error shows the origin value it is expecting in the Web API's `web.config`. Although domain names are case-insensitive, IIS CORS uses case-sensitive comparison test. Ensure that the `origin` value is lowercase in IIS CORS config.
+
+> [!TIP] 
+> Typical Web API IIS CORS config:
+> ```xml
+> <add allowCredentials="true" maxAge="7200" origin="http://{domain}[:{port}]">
+>   <allowMethods>
+>     <add method="GET"/>
+>     <add method="PUT"/>
+>     <add method="POST"/>
+>     <add method="PATCH"/>
+>     <add method="DELETE"/>
+>   </allowMethods>
+>   <allowHeaders allowAllRequestedHeaders="true"/>
+> </add>
+> ```
+
+For details on how to configure CORS in `web.config`, see this article on [CORS Module Configuration](/iis/extensions/cors-module/cors-module-configuration-reference).
 
 ### How do I update the Web API URL?
 
