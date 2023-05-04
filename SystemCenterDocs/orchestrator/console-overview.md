@@ -8,7 +8,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 05/02/2023
 author: jyothisuri
 manager: mkluck
 ---
@@ -152,13 +152,30 @@ The **Stop** button is shown on the Dashboard and the Job screen. Disappearing p
 
 ### The Console doesn't load, error “Uh oh! Trouble connecting to WebApi [status 0]” appears
 
-1. Check the [browser’s developer console](/microsoft-edge/devtools-guide-chromium/overview) (Console tab), look for CORS errors (*blocked by CORS policy*)
+1. Check the [browser’s developer console](/microsoft-edge/devtools-guide-chromium/overview) (Console tab), look for CORS errors (*blocked by CORS policy*).
 
    [ ![Screenshot showing error console.](./media/console-overview-2022/error-console-inline.png) ](./media/console-overview-2022/error-console-expanded.png#lightbox)
 
-2. If there are no CORS errors, look at the **Event Viewer** logs (Application) on the Web API computer.
+2. If there are no CORS errors, check the **Event Viewer** logs (Application) on the Web API computer.
 
-To fix CORS errors, you must ensure that the API’s *web.config* file must have a suitable CORS configuration. The browser error shows the origin value it's expecting in the *web.config*. For details on how to configure CORS in *web.config*, see this article on [CORS Module Configuration](/iis/extensions/cors-module/cors-module-configuration-reference).
+To fix CORS errors, you must ensure that the API’s `web.config` file must have a suitable CORS configuration. The browser error shows the origin value it is expecting in the Web API's `web.config`. Although domain names are case-insensitive, IIS CORS uses case-sensitive comparison test. Ensure that the `origin` value is in lowercase in the IIS CORS config.
+
+> [!TIP] 
+> A typical Web API IIS CORS config:
+> ```xml
+> <add allowCredentials="true" maxAge="7200" origin="http://{domain}[:{port}]">
+>   <allowMethods>
+>     <add method="GET"/>
+>     <add method="PUT"/>
+>     <add method="POST"/>
+>     <add method="PATCH"/>
+>     <add method="DELETE"/>
+>   </allowMethods>
+>   <allowHeaders allowAllRequestedHeaders="true"/>
+> </add>
+> ```
+
+For details on how to configure CORS in `web.config`, see this article on [CORS Module Configuration](/iis/extensions/cors-module/cors-module-configuration-reference).
 
 ### How do I update the Web API URL?
 
