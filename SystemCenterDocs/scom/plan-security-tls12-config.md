@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/28/2023
+ms.date: 05/05/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -91,7 +91,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 8. Close the Registry Editor.
 
 ### Method 2: Automatically modify the registry
-Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol.
+Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol:
 
 ```powershell
 $ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
@@ -154,7 +154,7 @@ After completing the configuration of all prerequisites for Operations Manager, 
 7. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
-Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol.  
+Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol:
 
 ```powershell
 # Tighten up the .NET Framework
@@ -193,29 +193,29 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
    * If ODBC 13.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql13.dll`.
    
    #### Registry File
-   Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
+   Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
     * For ODBC 11.0, create the following ODBC 11.reg file:
 
-         ```
-         Windows Registry Editor Version 5.00
-	 
-	 [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-	 "OpsMgrAC"="ODBC Driver 11 for SQL Server"
-	 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-	"Driver"="%WINDIR%\system32\msodbcsql11.dll"
-	```
+      ```
+      Windows Registry Editor Version 5.00
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+      "OpsMgrAC"="ODBC Driver 11 for SQL Server"
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+      "Driver"="%WINDIR%\system32\msodbcsql11.dll"
+      ```
 
    #### Powershell
-   Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
+   Alternatively, you can run the following PowerShell commands to automate the change.
 
     * For ODBC 11, run the following PowerShell commands:
 
-         ```powershell
-         New-ItemProperty -Path $ACSODBCReg -Name "Driver" -Value "%WINDIR%\system32\msodbcsql11.dll" -PropertyType STRING -Force | Out-Null
-	 New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name $ACSDSN -Value "ODBC Driver 11 for SQL Server" -PropertyType STRING -Force | Out-Null
-	 ```
+      ```powershell
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql11.dll" -PropertyType STRING -Force | Out-Null
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 11 for SQL Server" -PropertyType STRING -Force | Out-Null
+      ```
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
@@ -230,34 +230,34 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
     >[!NOTE]
     >The default name of DSN is OpsMgrAC.
 
-4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 17.0 installed, change this name to **ODBC Driver 17 for SQL Server**.
+4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 17 installed, change this name to **ODBC Driver 17 for SQL Server**.
 5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
-   * If ODBC 17.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
+   * If ODBC 17 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
    
    #### Registry File
-   Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
+   Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
     * For ODBC 17, create the following ODBC 17.reg file:
 
-         ```
-         Windows Registry Editor Version 5.00
-         
-         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-         "OpsMgrAC"="ODBC Driver 17 for SQL Server"
-          
-          [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-          "Driver"="%WINDIR%\system32\msodbcsql17.dll"
-          ```
+      ```
+      Windows Registry Editor Version 5.00
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+      "OpsMgrAC"="ODBC Driver 17 for SQL Server"
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+      "Driver"="%WINDIR%\system32\msodbcsql17.dll"
+      ```
 	
    #### Powershell
-   Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
+   Alternatively, you can run the following PowerShell commands to automate the change.
 
     * For ODBC 17, run the following PowerShell commands:
 
-         ```powershell
-         New-ItemProperty -Path $ACSODBCReg -Name "Driver" -Value "%WINDIR%\system32\msodbcsql17.dll" -PropertyType STRING -Force | Out-Null
-	 New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name $ACSDSN -Value "ODBC Driver 17 for SQL Server" -PropertyType STRING -Force | Out-Null
-	 ```
+      ```powershell
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql7.dll" -PropertyType STRING -Force | Out-Null
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 17 for SQL Server" -PropertyType STRING -Force | Out-Null
+      ```
 
 ::: moniker-end
 
