@@ -354,8 +354,8 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 You can configure tiered storage volume using the following methods:
 
-- [Simple volume](#create-simple-tiered-volume-no-resiliency) – Recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
-- [Resilient volume](#create-resilient-tiered-volume) – Supported when you are using only locally attached storage (JBOD). Ensure that resiliency isn't configured at the storage level.
+- Simple volume – Recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
+- Resilient volume – Supported when you are using only locally attached storage (JBOD). Ensure that resiliency isn't configured at the storage level.
 
 Before creating tiered storage, you need to plan the column size.
 
