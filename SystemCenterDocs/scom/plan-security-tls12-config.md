@@ -188,7 +188,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
     >The default name of DSN is OpsMgrAC.
 
 4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 11.0 installed, change this name to **ODBC Driver 11 for SQL Server**, or if you have ODBC 13.0 installed, change this name to **ODBC Driver 13 for SQL Server**.
-5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
+5. Under the **OpsMgrAC** subkey, update the **Driver** for the ODBC version that is installed.
    * If ODBC 11.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql11.dll`.
    * If ODBC 13.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql13.dll`.
    
@@ -210,7 +210,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
    #### Powershell
    Alternatively, you can run the following PowerShell commands to automate the change.
 
-    * For ODBC 11, run the following PowerShell commands:
+    * For ODBC 11.0, run the following PowerShell commands:
 
       ```powershell
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql11.dll" -PropertyType STRING -Force | Out-Null
