@@ -191,7 +191,7 @@ In order to enable to OMED Firewall Rule you have two options, either add the po
 
 #### <a name="AutomaticFirewallRule"></a>Automatically add rule with PowerShell
 
-The following command will allow you to automatically add the firewall rule:
+The following command allows you to automatically add the firewall rule:
 ```PowerShell
 Set-NetFirewallRule -DisplayName "System Center Operations Manager External DataSource Service" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8886
 ```
