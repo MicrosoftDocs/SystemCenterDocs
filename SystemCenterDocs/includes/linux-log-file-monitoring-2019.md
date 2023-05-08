@@ -191,7 +191,7 @@ In order to enable to OMED Firewall Rule you have two options, either add the po
 
 #### <a name="AutomaticFirewallRule"></a>Automatically add rule with PowerShell
 
-The following command will allows you to automatically add the firewall rule:
+The following command will allow you to automatically add the firewall rule:
 ```PowerShell
 Set-NetFirewallRule -DisplayName "System Center Operations Manager External DataSource Service" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8886
 ```
@@ -265,7 +265,7 @@ You have two options when assigning the client certificate for OMSAgent.
 
 ## Create Fluentd configuration file
 
-You configure Fluentd operation using a configuration file. To utilize log monitoring, you must create a configuration file. The configuration file will include information such as source log file name, path, and filters to define the data to collect.
+You configure Fluentd operation using a configuration file. To utilize log monitoring, you must create a configuration file. The configuration file includes information such as source log file name, path, and filters to define the data to collect.
 
 The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
@@ -486,13 +486,13 @@ sh /opt/microsoft/omsagent/bin/omsadmin.sh -l
 
 ## Event Log for System Center Operations Manager External DataSource Service
 
-The **System Center OMED Service** event log will be created only when there is a event sent successfully to the System Center Operations Manager External DataSource Service (OMED) Service.
+The **System Center OMED Service** event log is created only when there's an event sent successfully to the System Center Operations Manager External DataSource Service (OMED) Service.
 
 ## Create rules and monitors
 
 The Linux management pack doesn't provide modules to collect events from FluentD, the Linux management pack is bundled with the Linux agent. It's the fluentd module in the Linux agent and the OMED service on the management and gateway server that provides the capabilities for enhanced log file monitoring.
 
-You need to create your own management pack with custom rules and monitors that use the module **Microsoft.Linux.OMED.EventDataSource** to collect the events from Fluentd. Be aware, the computer name in the Event sent via the **System Center OMED Service** event log has to match the name of the machine in your UNIX/Linux Computers view. If the computer name does not match you will not receive any alert.
+You need to create your own management pack with custom rules and monitors that use the module **Microsoft.Linux.OMED.EventDataSource** to collect the events from Fluentd. Be aware, the computer name in the Event sent via the **System Center OMED Service** event log has to match the name of the machine in your UNIX/Linux Computers view. If the computer name doesn't match you won't receive any alert.
 
 The following table lists the parameters of **Microsoft.Linux.OMED.EventDataSource**.
 
