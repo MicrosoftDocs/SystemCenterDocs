@@ -6,10 +6,11 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 07/12/2021
+ms.date: 05/05/2023
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
+ms.custom: engagement-fy23
 ---
 
 # Add Modern Backup Storage to DPM
@@ -353,8 +354,8 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 You can configure tiered storage volume using the following methods:
 
--	[Simple volume](#create-simple-tiered-volume-no-resiliency) – Recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
-- [Resilient volume](#create-resilient-tiered-volume) – Supported when you are using only locally attached storage (JBOD). Ensure that resiliency isn't configured at the storage level.
+- Simple volume – Recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
+- Resilient volume – Supported when you are using only locally attached storage (JBOD). Ensure that resiliency isn't configured at the storage level.
 
 Before creating tiered storage, you need to plan the column size.
 
@@ -388,9 +389,11 @@ Before creating tiered storage, you need to plan the column size.
         Get-StoragePool DPMPool | Set-ResiliencySetting -Name Parity -NumberOfColumnsDefault 3
         ```
 
-### Create Simple tiered volume (No Resiliency)
+Select the required tab for steps to create a tiered storage:
 
-To create a simple tiered volume (no resiliency), follow the steps below.
+# [Create Simple tiered volume (No Resiliency)](#tab/SimpleTieredVolume)
+
+To create a simple tiered volume (no resiliency), follow the steps below:
 
 1. Create an SSD tier by running the following cmdlet:
 
@@ -440,7 +443,7 @@ To create a simple tiered volume (no resiliency), follow the steps below.
 
     ![Windows Disk Volume](./media/add-storage/window-disk-volume-1.png)
 
-### Create Resilient tiered volume
+# [Create Resilient tiered volume](#tab/ResilientTieredVolume)
 
 In the following example, the SSD tier is configured with Mirror resiliency and HDD tier is configured with Parity resiliency. In this configuration, a single SSD and/or a single HDD can fail without experiencing data loss.
 
@@ -495,10 +498,11 @@ To create a resilient tiered volume, use the following steps:
 
     ![Screenshot showing Storage Pools.](./media/add-storage/storage-pools.png)
 
+---
 
 ## Add volumes to DPM storage
 
-Follow these steps:
+Follow these steps to add volumes to DPM storage:
 
 1. In the DPM Management console \> **Disk Storage** , select **Rescan**.
 2. In **Add Disk Storage** , select **Add**.
@@ -538,20 +542,17 @@ Follow the steps below to disable write auto-caching:
 
 In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using volume migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](volume-to-volume-migration.md).
 
-
 Migration of data source should have all recovery points on Modern Storage.
 
 > [!NOTE]
 > - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) isn't supported.
 >- Migration is similar to modification of a protection group. While migration is in progress, you can't trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
-
 ## Configure workload-aware storage
 
 Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs. Workloads that are backed up less frequently, such as VMs, can be backed up to low-cost volumes.
 
 You can configure workload-aware storage using Windows PowerShell cmdlets.
-
 
 ### Update the volume properties
 
