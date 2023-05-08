@@ -6,10 +6,11 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 06/18/2019
+ms.date: 05/05/2023
 title: Back up Exchange with DPM
 ms.technology: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
+ms.custom: engagement-fy23
 ---
 
 # Back up Exchange with DPM
@@ -187,7 +188,7 @@ After the protection group has been created, the initial replication occurs, and
 
 ## Recover Exchange data
 
-### <a name="BKMK_Single"></a>Recover a single mailbox
+# [Recover a single mailbox](#tab/RecoverSingleMailbox)
 
 1.  On the protected Exchange server, verify whether you've an existing recovery mailbox database. If you don't, create one using the New-MailboxDatabase cmdlet. Configure the recovery database so it can be overwritten by using the Set-MailboxDatabase cmdlet. For example:
 
@@ -239,7 +240,7 @@ After the protection group has been created, the initial replication occurs, and
     Remove-MailboxDatabase -Identity 'RDB-CONTROL'
     ```
 
-### <a name="BKMK_DB"></a>Recover an Exchange database
+# [Recover an Exchange database](#tab/RecoverExchangeDatabase)
 
 -   In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protected Exchange Data** node).
 
@@ -271,7 +272,7 @@ After the protection group has been created, the initial replication occurs, and
 
 -   To resume normal DAG operations, select the failed database copy, and then select **Resume**. A dialog appears prompting you to reseed (or reset) the database. Select **Yes**.
 
-### <a name="BKMK_Server"></a>Recover an entire Exchange server
+# [Recover an entire Exchange server](#tab/RecoverExchangeServer)
 
 -   In the DPM Administrator Console, go to the **Recovery** view and navigate to the server you want to recover.
 
@@ -304,6 +305,8 @@ After the protection group has been created, the initial replication occurs, and
 -   In the **Select a system image backup** page, select **Select a system image**. Select **Advanced** to select recovery files from a network share. Select **Search for a system image on the network** and select **Yes** when asked if you're sure you want to connect to the network.
 
 -   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then select **Finish** to start the restore.
+
+---
 
 ::: moniker-end
 
