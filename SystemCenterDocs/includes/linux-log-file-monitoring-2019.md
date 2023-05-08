@@ -5,7 +5,7 @@ description: This include file details the Linux log file monitoring in Operatio
 author: jyothisuri
 ms.author: jsuri
 manager:  mkluck
-ms.date:  03/29/2023
+ms.date:  05/08/2023
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  operations-manager
@@ -16,7 +16,7 @@ ms.technology:  operations-manager
 Log file monitoring requires the following steps. The detailed information is provided in the following sections:
 
 ::: moniker range="sc-om-2019"
-1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208).
+1. Import the [latest System Center Operations Manager 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208).
 2. Install the latest version of the Linux agent on each Linux computer to be monitored.
 3. Install latest [OMSAgent](https://github.com/microsoft/OMS-Agent-for-Linux) on each Linux computer to be monitored.
 4. Create Fluentd configuration file to collect logs.
@@ -24,7 +24,7 @@ Log file monitoring requires the following steps. The detailed information is pr
 6. Create rules and monitors using the sample management pack to collect events from the log and create alerts.
 ::: moniker-end
 ::: moniker range="sc-om-2022"
-1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213).
+1. Import the [latest System Center Operations Manager 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213).
 2. Install the latest version of the Linux agent on each Linux computer to be monitored.
 3. Install latest [OMSAgent](https://github.com/microsoft/OMS-Agent-for-Linux) on each Linux computer to be monitored.
 4. Create Fluentd configuration file to collect logs.
@@ -45,8 +45,8 @@ Install the **Microsoft.Linux.Log.Monitoring** management pack to enable Linux l
 To configure Linux log file monitoring, perform the following steps:
 
 ::: moniker range="sc-om-2019"
-1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208) using the standard process for installing a management pack.
-2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/scom/manage-deploy-crossplat-agent-console).
+1. Import the [latest System Center Operations Manager 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208) using the standard process for installing a management pack.
+2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/System Center Operations Manager/manage-deploy-crossplat-agent-console).
 3. Install the latest OMSAgent on each Linux computer that you want to monitor.
    Use the following commands:
 
@@ -62,8 +62,8 @@ To configure Linux log file monitoring, perform the following steps:
 
 ::: moniker-end
 ::: moniker range="sc-om-2022"
-1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213) using the standard process for installing a management pack.
-2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/scom/manage-deploy-crossplat-agent-console).
+1. Import the [latest System Center Operations Manager 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213) using the standard process for installing a management pack.
+2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/System Center Operations Manager/manage-deploy-crossplat-agent-console).
 3. Install the latest OMSAgent on each Linux computer that you want to monitor.
    Use the following commands:
 
@@ -82,22 +82,22 @@ To configure Linux log file monitoring, perform the following steps:
 
       ```bash
       # Create omsagent.d folder
-      mkdir -p /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
+      mkdir -p /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.d
       
       # Create certs folder
-      mkdir /etc/opt/microsoft/omsagent/scom/certs
+      mkdir /etc/opt/microsoft/omsagent/System Center Operations Manager/certs
       
       # Create log folder
-      mkdir -p /var/opt/microsoft/omsagent/scom/log
+      mkdir -p /var/opt/microsoft/omsagent/System Center Operations Manager/log
       
       # Create run folder
-      mkdir /var/opt/microsoft/omsagent/scom/run
+      mkdir /var/opt/microsoft/omsagent/System Center Operations Manager/run
       
       # Create state folder
-      mkdir /var/opt/microsoft/omsagent/scom/state
+      mkdir /var/opt/microsoft/omsagent/System Center Operations Manager/state
       
       # Create tmp folder
-      mkdir /var/opt/microsoft/omsagent/scom/tmp
+      mkdir /var/opt/microsoft/omsagent/System Center Operations Manager/tmp
       
       # Create fluent-logging folder (used for log file position file, this location is flexible)
       mkdir -p /home/omsagent/fluent-logging
@@ -105,47 +105,47 @@ To configure Linux log file monitoring, perform the following steps:
       
  5. Set ownership on each of the above folders to `omsagent:omiusers`:
       ```bash
-      # Change owner of scom folder
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom
+      # Change owner of System Center Operations Manager folder
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager
       
       # Change owner of log folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/log
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/log
       
       # Change owner of run folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/run
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/run
       
       # Change owner of state folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/state
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/state
       
       # Change owner of tmp folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/tmp
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/tmp
       
       # Change owner of fluent-logging folder (used for log file position file, this location is flexible)
       chown omsagent:omiusers /home/omsagent/fluent-logging
       ```
-      ![Screenshot of log file monitoring.](../scom/media/log-file-monitoring/log-file-monitoring.png)
+      ![Screenshot of log file monitoring.](../System Center Operations Manager/media/log-file-monitoring/log-file-monitoring.png)
 
  6. Create omsagent and omsconfig files:
       ```bash
       # Create omsadmin.conf file
-      touch /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf
+      touch /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsadmin.conf
       
       # Create omsagent.conf file
-      touch /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
+      touch /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.conf
       ```
       
  7. Set ownership on each of the above files to `omsagent:omiusers`:
       ```bash
       # Change owner of omsadmin.conf file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsadmin.conf
       
       # Change owner of omsagent.conf file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.conf
       ```
       
- 8. Edit the file `/etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf`, and add the following information after changing the highlighted information.
-      > WORKSPACE_ID=scom \
-      > SCOM_ENDPOINT=https://<mark>\<MSFQDN\></mark>:8886 \
+ 8. Edit the file `/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsadmin.conf`, and add the following information after changing the highlighted information.
+      > WORKSPACE_ID=System Center Operations Manager \
+      > System Center Operations Manager_ENDPOINT=https://<mark>\<MSFQDN\></mark>:8886 \
       > MONITORING_ID={274F8D7B-DBCA-8FC3-1451-8DCD55092156}
  9. Restart the OMSAgent:
       ```bash
@@ -153,7 +153,7 @@ To configure Linux log file monitoring, perform the following steps:
       ```
 10. Verify the status in the omsagent log:
       ```bash
-      tail -100 /var/opt/microsoft/omsagent/scom/log/omsagent.log
+      tail -100 /var/opt/microsoft/omsagent/System Center Operations Manager/log/omsagent.log
       ```
 
 
@@ -171,11 +171,11 @@ To configure Linux log file monitoring, perform the following steps:
 3. From **Tasks**, select **Health Service Tasks**>**Enable System Center OMED Server**.
 
 ### Enable the OMED service manually
-You have two options when enabling the OMED service manually on the management server, [automatically via Powershell](#PowershellServiceStep) or [manually](#ManualServiceSteps).
+You have two options when enabling the OMED service manually on the management server, [automatically via PowerShell](#PowerShellServiceStep) or [manually](#ManualServiceSteps).
 
-> #### <a name="PowershellServiceStep"></a>Set automatically with Powershell
->   Run the following Powershell command as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
->   ```powershell
+> #### <a name="PowerShellServiceStep"></a>Set automatically with PowerShell
+>   Run the following PowerShell command as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
+>   ```PowerShell
 >   Set-Service -Name OMED -StartupType Automatic -Status Running
 >   ```
 
@@ -187,12 +187,12 @@ You have two options when enabling the OMED service manually on the management s
    
 ### Add OMED Firewall Rule
 
-In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) [automatically via Powershell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
+In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) [automatically via PowerShell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
 
-#### <a name="AutomaticFirewallRule"></a>Automatically add rule with Powershell
+#### <a name="AutomaticFirewallRule"></a>Automatically add rule with PowerShell
 
 The following command will allows you to automatically add the firewall rule:
-```powershell
+```PowerShell
 Set-NetFirewallRule -DisplayName "System Center Operations Manager External DataSource Service" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8886
 ```
 
@@ -219,28 +219,28 @@ You have two options when assigning the client certificate for OMSAgent.
 
 1. Set ownership on the `omi.pem` and `omikey.pem` file to `omsagent:omiusers`:
       ```bash
-      # Change owner of scom-cert.pem file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
+      # Change owner of System Center Operations Manager-cert.pem file
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-cert.pem
       
-      # Change owner of scom-key.pem file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
+      # Change owner of System Center Operations Manager-key.pem file
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-key.pem
       ```
 
 2. Run the following command on your Linux machine to set the OMS Agent Client Certificate to the OMI Certificate (*Operations Manager Linux Agent Certificate*):
 
       ```bash
-      # Link file omi.pem to scom-cert.pem
-      ln -s /etc/opt/omi/ssl/omi.pem /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
+      # Link file omi.pem to System Center Operations Manager-cert.pem
+      ln -s /etc/opt/omi/ssl/omi.pem /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-cert.pem
       
-      # Link file omikey.pem to scom-key.pem
-      ln -s /etc/opt/omi/ssl/omikey.pem /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
+      # Link file omikey.pem to System Center Operations Manager-key.pem
+      ln -s /etc/opt/omi/ssl/omikey.pem /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-key.pem
       ```
 
 ### <a name="GenerateOMSAgentCertificate"></a>2. Generate a Client Certificate for OMSAgent
 1. Generate the certificate and key to the ***omsagent*** folder: 
    ```bash
    # Generate Certificate to omsagent Folder
-   /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
+   /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/
    ```
 
    > [!NOTE]
@@ -248,28 +248,28 @@ You have two options when assigning the client certificate for OMSAgent.
 
 2. Rename the generated certificate on the Linux side:
    ```bash
-   # Rename omi-host-server.domain.pem to scom-cert.pem
-   mv omi-host-server.domain.pem scom-cert.pem
+   # Rename omi-host-server.domain.pem to System Center Operations Manager-cert.pem
+   mv omi-host-server.domain.pem System Center Operations Manager-cert.pem
    
-   # Rename omikey.pem to scom-key.pem
-   mv omikey.pem scom-key.pem
+   # Rename omikey.pem to System Center Operations Manager-key.pem
+   mv omikey.pem System Center Operations Manager-key.pem
    ```
 3. Change ownership of the certificate file:
    ```bash
-   # Change owner of the scom-cert file
-   chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
+   # Change owner of the System Center Operations Manager-cert file
+   chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-cert.pem
    
-   # Change owner of the scom-key file
-   chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
+   # Change owner of the System Center Operations Manager-key file
+   chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-key.pem
    ```
 
 ## Create Fluentd configuration file
 
 You configure Fluentd operation using a configuration file. To utilize log monitoring, you must create a configuration file. The configuration file will include information such as source log file name, path, and filters to define the data to collect.
 
-The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/scom/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
+The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
-For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/scom/conf/omsagent.d`, you would add one of the following lines to the **omsagent.d** file:
+For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.d`, you would add one of the following lines to the **omsagent.d** file:
 
 ```
 # Include all configuration files
@@ -285,7 +285,7 @@ For more information on Fluentd configuration files, see [Fluentd Configuration 
 
 The following sections describe settings in different directives of the configuration file that are unique to log file monitoring. Each includes sample settings that you can paste into a configuration file and modify for your requirements.
 
-A complete [sample configuration file for log monitoring](../scom/manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.
+A complete [sample configuration file for log monitoring](../System Center Operations Manager/manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.
 
 ### Source
 
@@ -306,7 +306,7 @@ The following example shows syslog records collected and tagged for processing b
     pos_file /home/user1/fluent-test/demo_syslog.log.pos
 
     # Used to correlate the directives.
-    tag scom.log.syslog
+    tag System Center Operations Manager.log.syslog
 
     format /(?<message>.*)/
 
@@ -319,14 +319,14 @@ The  **filter**  directive has the same syntax as **Match** but allows more comp
 
 There are six filter plugins for log file monitoring described here. Use one or more of these filters to define the events that you want to collect from your log file.
 
-#### Simple match: filter_scom_simple_match
+#### Simple match: filter_System Center Operations Manager_simple_match
 
 Takes up to 20 input patterns. Sends an event to Operations Manager whenever any pattern is matched.
 
 ```
 <filter tag>
 
-    type filter_scom_simple_match
+    type filter_System Center Operations Manager_simple_match
     regexp1 <key> <pattern>
     event_id1 <event ID>
     regexp2 <key> <pattern>
@@ -339,26 +339,26 @@ Takes up to 20 input patterns. Sends an event to Operations Manager whenever any
 </filter>
 ```
 
-#### Exclusive match: filter_scom_excl_match
+#### Exclusive match: filter_System Center Operations Manager_excl_match
 
 Takes two input patterns. Sends an event to Operations Manager when a single record matches pattern 1 but doesn't match pattern 2.
 
 ```
 <filter tag>
-    type filter_scom_excl_match
+    type filter_System Center Operations Manager_excl_match
     regexp1 <key> <pattern1>
     regexp2 <key> <pattern2>
     event_id <event ID>
 </filter>
 ```
 
-#### Repeated correlation: filter_scom_repeated_cor
+#### Repeated correlation: filter_System Center Operations Manager_repeated_cor
 
 Takes three inputs: a patterns, a time interval, and  number of occurrences. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
 ```
 <filter tag>
-    type filter_scom_repeated_cor
+    type filter_System Center Operations Manager_repeated_cor
     regexp <key> <pattern>
     event_id <event ID>
     time_interval <interval in seconds>
@@ -366,13 +366,13 @@ Takes three inputs: a patterns, a time interval, and  number of occurrences. Whe
 </filter>
 ```
 
-#### Correlated match: filter_scom_cor_match
+#### Correlated match: filter_System Center Operations Manager_cor_match
 
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's a match for the second pattern before the timer ends.
 
 ```
 <filter tag>
-    type filter_scom_cor_match
+    type filter_System Center Operations Manager_cor_match
     regexp1 <key> <pattern1>
     regexp2 <key> <pattern2>
     event_id <event ID>
@@ -380,13 +380,13 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 </filter>
 ```
 
-#### Exclusive correlation: filter_scom_excl_correlation
+#### Exclusive correlation: filter_System Center Operations Manager_excl_correlation
 
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's no match for the second pattern before the timer ends.
 
 ```
 <filter tag>
-    type filter_scom_excl_correlation
+    type filter_System Center Operations Manager_excl_correlation
     regexp1 <key> <pattern1>
     regexp2 <key> <pattern2>
     event_id <event ID>
@@ -394,13 +394,13 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 </filter>
 ```
 
-#### Operations Manager converter: filter_scom_converter
+#### Operations Manager converter: filter_System Center Operations Manager_converter
 
 Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
 
 ```
 <filter tag>
-    type filter_scom_converter
+    type filter_System Center Operations Manager_converter
     event_id <event ID>
     event_desc <event description>
 </filter>
@@ -410,13 +410,13 @@ Sends an event to Operations Manager for all records it receives. Sends the spec
 
 The **match** directive defines how to process events collected from the source with matching tags. Only events with a **tag** matching the pattern are sent to the output destination. When multiple patterns are listed inside one **match** tag, events can match any of the listed patterns. The **type** parameter specifies the type of plugin to use for these events.
 
-This example processes events with tags matching **scom.log.** \*\* and  **scom.alert**  (\*\* matches zero or more tag parts). It specifies the  **out\_scom**  plugin, which allows the events to be collected by the Operations Manager management pack.
+This example processes events with tags matching **System Center Operations Manager.log.** \*\* and  **System Center Operations Manager.alert**  (\*\* matches zero or more tag parts). It specifies the  **out\_System Center Operations Manager**  plugin, which allows the events to be collected by the Operations Manager management pack.
 
 ```
-<match scom.log.** scom.event>
+<match System Center Operations Manager.log.** System Center Operations Manager.event>
 
     # Output plugin to use
-     type out_scom
+     type out_System Center Operations Manager
 
     log_level trace
     num_threads 5
@@ -430,7 +430,7 @@ This example processes events with tags matching **scom.log.** \*\* and  **scom.
     buffer_type file
 
     # Specifies the file path for buffer. Fluentd must have write access to this directory.
-    buffer_path /var/opt/microsoft/omsagent/scom/state/out_scom_common*.buffer
+    buffer_path /var/opt/microsoft/omsagent/System Center Operations Manager/state/out_System Center Operations Manager_common*.buffer
 
     # If queue length exceeds the specified limit, events are rejected.
     buffer_queue_limit 10
@@ -454,8 +454,8 @@ This example processes events with tags matching **scom.log.** \*\* and  **scom.
 > To disable Server Authentication on the Linux computers that are using Fluentd communication, add a parameter  **enable\_server\_auth false**  to the Operations Manager plugin for Fluentd, such as the following:
 
 ```
-<match scom.log.** scom.event>
-type out_scom
+<match System Center Operations Manager.log.** System Center Operations Manager.event>
+type out_System Center Operations Manager
 
 max_retry_wait 9m
 enable_server_auth false
@@ -465,7 +465,7 @@ enable_server_auth false
 
 ## Copy configuration file to agent
 
-The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d** on all Linux computers you want to monitor. You must also add an @include directive in the master configuration file as described above.
+The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.d** on all Linux computers you want to monitor. You must also add an @include directive in the master configuration file as described above.
 
 ## Restart omsagent
 
@@ -474,9 +474,9 @@ You can run the following command to restart the omsagent:
 /opt/microsoft/omsagent/bin/service_control restart
 ```
 
-## Check status of SCOM Workspace
+## Check status of System Center Operations Manager Workspace
 
-Run the following command to check the SCOM Workspace on the OMSAgent:
+Run the following command to check the System Center Operations Manager Workspace on the OMSAgent:
 ```bash
 sh /opt/microsoft/omsagent/bin/omsadmin.sh -l
 ```
