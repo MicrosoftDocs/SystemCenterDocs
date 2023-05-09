@@ -167,13 +167,16 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 6. Locate the exported certificate. Select and hold the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
 
     ![Screenshot of click install Certificate.](./media/back-up-vmware/install-certificate.png)
+    
 7. In the **Certificate Import wizard**, select **Local Machine** and then select **Next**.
 8. To find the location where you want to place the certificate, on the **Certificate Store** screen, select **Place all certificates in the following store** and select **Browse**.
 9. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
 
   ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
+
 10. Select **Next** and then select **Finish** to import the certificate successfully.
 11. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
+
   ![Screenshot of verify connection page.](./media/back-up-vmware/secure-communication-established.png)
 
 ### Add a new user account in VMware server
