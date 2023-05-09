@@ -167,17 +167,17 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 6. Locate the exported certificate. Select and hold the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
 
     ![Screenshot of click install Certificate.](./media/back-up-vmware/install-certificate.png)
-    
+
 7. In the **Certificate Import wizard**, select **Local Machine** and then select **Next**.
 8. To find the location where you want to place the certificate, on the **Certificate Store** screen, select **Place all certificates in the following store** and select **Browse**.
 9. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
 
-  ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
+    ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
 
 10. Select **Next** and then select **Finish** to import the certificate successfully.
 11. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
 
-  ![Screenshot of verify connection page.](./media/back-up-vmware/secure-communication-established.png)
+    ![Screenshot of verify connection page.](./media/back-up-vmware/secure-communication-established.png)
 
 ### Add a new user account in VMware server
 
@@ -346,7 +346,7 @@ DPM provides application-consistent backups of Windows VMs and file-consistent b
 ### Back up virtual machine to Tape
 
 > [!NOTE]
-> Applicable to DPM 2019 and later
+> Applicable to DPM 2019 and later.
 
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 and later supports both OLR (Original Location Recovery) and ALR (Alternate Location Recovery) for restoring the protected VM.
 
@@ -363,6 +363,7 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 1. In the Administrator Console, select **Protection**.
 2. On the tool ribbon, select **New** to open the **Create New Protection Group** wizard.
 3. In the **Select Protection Group Type** screen, select **Servers** and then select **Next**.
+
     ![Screenshot of create new protection group.](./media/back-up-vmware/create-new-protection-group-wizard.png)
 4. In the **Select Group Members** screen, expand the **Available members** folders and select the folders to protect and select **Next**.
     Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server can't be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
@@ -381,9 +382,9 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
     -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
 
-On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
+    On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
 
 8. On the **Review Disk Allocation** screen, recommended disk allocations are displayed. Recommendations are based on the retention range, the type of workload, and the size of the protected data. Select **Next**.
 9. On the **Choose Replica Creation Method** screen, specify how the initial replication of data in the protection group is performed. If you choose to replicate over the network, we recommend you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
@@ -408,6 +409,7 @@ This section explains how to use DPM to restore VMware VM [recovery points](/pre
 
 1. In the DPM Administrator Console, select **Recovery** view.
 2. Using the Browse pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
+
     ![Screenshot of open recovery points panel.](./media/back-up-vmware/recovery-points-panel.png)
 3. In the **Recovery points for** field, use the calendar and dropdown menus to select a date when a recovery point was taken. Calendar dates in bold have available recovery points.
 4. On the tool ribbon, select **Recover** to open the **Recovery Wizard**.
@@ -444,6 +446,7 @@ You can restore individual files from a protected VM recovery point. This featur
     If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
 7. On the **Select Recovery Type** screen, select **Next**. You can only recover your file(s) or folder(s) to a network folder.
 8. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
+
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
@@ -457,9 +460,9 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-Key Path: Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+**Key Path:** Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
 
-Key Type: DWORD (32-bit) value.
+**Key Type:** DWORD (32-bit) value.
 
 > [!NOTE]
 >  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
