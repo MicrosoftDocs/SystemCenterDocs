@@ -170,6 +170,7 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 7. In the **Certificate Import wizard**, select **Local Machine** and then select **Next**.
 8. To find the location where you want to place the certificate, on the **Certificate Store** screen, select **Place all certificates in the following store** and select **Browse**.
 9. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
+
   ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
 10. Select **Next** and then select **Finish** to import the certificate successfully.
 11. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
@@ -256,7 +257,7 @@ The recommended steps for assigning these privileges:
 
 1. In the vSphere Web Client, from the **Navigator** menu, select **Administration** > **Roles**.
 2. From the **Roles provider** dropdown menu, select the vCenter Server to which the role applies.
-3. On the **Roles** pane, select '+' to open the **Create Role** dialog and create a role.
+3. On the **Roles** pane, select **+** to open the **Create Role** dialog and create a role.
     ![Screenshot of create a new role page.](./media/back-up-vmware/create-new-role-dialog.png)
 4. Name the role, **BackupAdminRole**.
 5. Select the privileges (identified in the preceding bulleted list) for the role and select **OK**.
@@ -267,7 +268,7 @@ When you create a user, that user must be in the same domain as the objects you 
 
 1. In the vSphere Web Client, on the **Navigator** menu, select **Administration**.
 2. In the **Administration** menu, select **Users and Groups**.
-3. To create a new user, on the **Users** tab, select '+' to open the **New User** page.
+3. To create a new user, on the **Users** tab, select **+** to open the **New User** page.
 4. Provide a **User name** and **password** for the role. Use BackupAdmin as the User name. Additional information is optional.
 
 #### Assign the role, BackupAdminRole, to the user, BackupAdmin

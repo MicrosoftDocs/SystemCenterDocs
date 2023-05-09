@@ -5,12 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 07/19/2021
+ms.date: 05/09/2023
 title: Back up client computers with DPM
 ms.technology: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
 ms.author: jsuri
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Back up client computers with DPM
@@ -35,7 +35,7 @@ Before you deploy DPM to protect client computer data, verify the deployment pre
 
 -   To set up client machines for protection, install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe. If you're using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
--   DPM can back up client computers that are physically or wirelessly connected to the local area network (LAN) or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
+-   DPM can back up client computers that are physically or wirelessly connected to the local area network (LAN) or back up over VPN. For VPN backup, the ICMP should be enabled on the client computer.
 
 -   Each DPM server can protect up to 3000 client computers. When protecting client computers at scale, we recommend you create multiple protection groups and stagger the recovery point times for those protection groups. The more the number of clients that belong to a protection group, the longer it takes to enumerate the changes to the protection group.
 
@@ -135,7 +135,7 @@ The details of the registry entry are below. Modify the value USERNAME according
     >  -   When you exclude a folder and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
     >  -   When you include a folder and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
     >  -   When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
-    >  -   In the **Folder** column, type the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
+    >  -   In the **Folder** column, enter the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
     >  -   You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
     >  -   Under **File type exclusions**, you can specify the file types to exclude using their file extensions.
 
@@ -147,7 +147,7 @@ The details of the registry entry are below. Modify the value USERNAME according
 
     -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
@@ -176,7 +176,9 @@ The details of the registry entry are below. Modify the value USERNAME according
 ## Recover client data
 You can recover client computer data using the Recovery Wizard. You can also set up end user recovery so that  users can recover their own data.
 
-### Allow clients to recover their own data
+Select the required tab for steps to recover client computer data or allow clients to recover their own data:
+
+# [Allow clients to recover their own data](#tab/AllowClients)
 End user recovery enables users to independently recover file data by retrieving recovery points of their files. 
 
 > [!NOTE]
@@ -200,7 +202,7 @@ To configure end user recovery, here's what you'll need to do:
 
 2.  After AD settings are complete in the **End-user Recovery** tab, select **Enable end-user recovery**.
 
-### Recover data
+# [Recover data](#tab/RecoverData)
 Recover data from the DPM console as follows:
 
 1.  In the DPM console, select **Recovery** on the navigation bar and browse for the data you want to recover. In the results pane, select the data.
@@ -242,3 +244,5 @@ End users should recover data as follows:
 1.  Navigate to the protected data file. Select and hold the file name > **Properties**.
 
 2.  In **Properties** > **Previous Versions**, select the version that you want to recover from.
+
+---
