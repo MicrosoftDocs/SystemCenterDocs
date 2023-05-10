@@ -347,7 +347,7 @@ DPM provides application-consistent backups of Windows VMs and file-consistent b
 ### Back up virtual machine to Tape
 
 > [!NOTE]
-> This feature is applicable for DPM 2019 and later.
+> Back up of virtual machines to tape is applicable for DPM 2019 and later.
 
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 and later supports both OLR (Original Location Recovery) and ALR (Alternate Location Recovery) for restoring the protected VM.
 

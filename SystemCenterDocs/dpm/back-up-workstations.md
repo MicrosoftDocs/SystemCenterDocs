@@ -174,11 +174,14 @@ The details of the registry entry are below. Modify the value USERNAME according
 14. On the **Summary** page, review your settings. After you select **Create Group**, initial replication of the data occurs. When it finishes, the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
 ## Recover client data
-You can recover client computer data using the Recovery Wizard. You can also set up end user recovery so that  users can recover their own data.
 
-Select the required tab for steps to recover client computer data or allow clients to recover their own data:
+You can recover the client data using any one of the following methods:
+- Allow clients to recover their own data by setting up user recovery
+- Use the Recovery Wizard to recover client computer data
 
-# [Allow clients to recover their own data](#tab/AllowClients)
+Select the required tab for steps to allow clients to recover their own data or recover client data using Recovery Wizard:
+
+# [Allow clients to recover their data](#tab/AllowClients)
 End user recovery enables users to independently recover file data by retrieving recovery points of their files. 
 
 > [!NOTE]
@@ -202,7 +205,7 @@ To configure end user recovery, here's what you'll need to do:
 
 2.  After AD settings are complete in the **End-user Recovery** tab, select **Enable end-user recovery**.
 
-# [Recover data](#tab/RecoverData)
+# [Recover data for clients](#tab/RecoverData)
 Recover data from the DPM console as follows:
 
 1.  In the DPM console, select **Recovery** on the navigation bar and browse for the data you want to recover. In the results pane, select the data.
