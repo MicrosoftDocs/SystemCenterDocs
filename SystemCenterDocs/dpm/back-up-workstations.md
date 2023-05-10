@@ -127,7 +127,7 @@ The details of the registry entry are below. Modify the value USERNAME according
 
     -   Comp3.abc.domain.com
 
-    If DPM can't find the text file or any of the computers, it will add them to the log file. Select **Failed to add machines** to open the log file. To add new client computers to an existing protection group, select and hold the group name and select **Add client computers**.
+    If DPM can't find the text file or any of the computers, it will add them to the log file. Select **Failed to add machines** to open the log file. To add new client computers to an existing protection group, right-click the group name and select **Add client computers**.
 
     -   On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well-known folders, such as **Documents**, select the dropdown list.
 
@@ -161,7 +161,7 @@ The details of the registry entry are below. Modify the value USERNAME according
 
 8.  In **Choose replica creation method**, select how you want to handle the initial full data replication. If you select to replicate over the network, we recommend you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
+9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
@@ -244,7 +244,7 @@ Recover data from the DPM console as follows:
 
 End users should recover data as follows:
 
-1.  Navigate to the protected data file. Select and hold the file name > **Properties**.
+1.  Navigate to the protected data file. Right-click the file name > **Properties**.
 
 2.  In **Properties** > **Previous Versions**, select the version that you want to recover from.
 

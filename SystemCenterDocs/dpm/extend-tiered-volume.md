@@ -66,7 +66,7 @@ You can add more capacity to the tiered volume by adding new disks. Based on the
 
     ![Screenshot showing additional disks connected.](./media/extend-tiered-volume/additional-disk-connected.png)
 
-2.	To add a new disk to an existing storage pool used for DPM, select and hold the storage pool name, and then select **Add Physical Disk…**.
+2.	To add a new disk to an existing storage pool used for DPM, right-click the storage pool name, and then select **Add Physical Disk…**.
 
     ![Screenshot showing add new disks.](./media/extend-tiered-volume/add-physical-disk.png)
 

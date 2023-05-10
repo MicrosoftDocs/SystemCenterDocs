@@ -117,7 +117,7 @@ Administrators/delegated administrators can configure nested virtualization by u
 
     ![Screenshot of host vm running.](media/nested-vm/nested-vm-running-state.png)
 
-3. Select and hold the VM and select **Configure as a Host**. The **Add Resource** wizard appears.
+3. Right-click the VM and select **Configure as a Host**. The **Add Resource** wizard appears.
 
     ![Screenshot of configure vm as a host.](media/nested-vm/nested-vm-configure-as-host.png)
 

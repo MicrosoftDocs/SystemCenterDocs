@@ -103,11 +103,11 @@ Either assign an existing unit, or create a new one and assign it.
     - To view the associated job information, open the **Jobs** workspace.
     - To verify that the logical unit was assigned, view the information on the **Storage** tab in the **Host Name** > **Properties** dialog. The newly assigned logical unit appears under **Disk**. Select the new disk to view the disk details.
     - If the **Array** field is populated in the disk details, this indicates that the storage array is under VMM management.
-8. To configure additional disk settings, open Disk Management on the host. To open Disk Management, select **Start**, type **diskmgmt.msc** in the search box, and then press ENTER. The new disk appears in the list of disks as a basic disk. If you chose to format the disk, the disk is already formatted and online. You can select and hold the disk to see the available options, such as **Format** and **Change Drive Letter and Paths**.
+8. To configure additional disk settings, open Disk Management on the host. To open Disk Management, select **Start**, type **diskmgmt.msc** in the search box, and then press ENTER. The new disk appears in the list of disks as a basic disk. If you chose to format the disk, the disk is already formatted and online. You can right-click the disk to see the available options, such as **Format** and **Change Drive Letter and Paths**.
 
 ## Configure storage for a Hyper-V cluster
 
-1. Select **Fabric** **Servers** > **All Hosts**. Select and hold the cluster you want to configure > **Properties**.
+1. Select **Fabric** **Servers** > **All Hosts**. Right-click the cluster you want to configure > **Properties**.
 In **Host Cluster Name** > **Properties**, select a tab:
 
    - **Available Storage**: for adding available storage, converting available storage to shared storage (CSV), or removing available storage.
@@ -134,7 +134,7 @@ In **Host Cluster Name** > **Properties**, select a tab:
 ## Create an iSCSI session
 
 1.  On the target host, in the Services snap-in, ensure that the Microsoft iSCSI Initiator Service is started and set to Automatic.
-2.  In **Fabric** > **Servers** > **All Hosts** **Hosts**, select and hold the host that you want to configure > **Properties**.
+2.  In **Fabric** > **Servers** > **All Hosts** **Hosts**, right-click the host that you want to configure > **Properties**.
 3.  Under **iSCSI Arrays**, see if the storage array is already listed. If it's not, on the toolbar, next to **iSCSI Array**, select **Add**.
 4.  In the **Create New iSCSI Session** > **Array** , select the storage array you want to use.
 5.  Select **Create** to create a new session. Select Use advanced settings if you want to modify customized settings, including target listener, name, or the host NIC that you want to use.
