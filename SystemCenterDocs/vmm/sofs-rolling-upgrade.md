@@ -61,9 +61,9 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 1. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all of the SOFS nodes are running Windows Server 2016 or later. The wizard upgrades the cluster functional level to Windows Server 2016.
 
 ::: moniker range="sc-vmm-2016"
-If you need to update the functional level of an SOFS that was upgraded outside VMM, you can do that by selecting and holding the **Files Servers** > **SOFS name** > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2012 R2 or later cluster.
+If you need to update the functional level of an SOFS that was upgraded outside VMM, you can do that by right-clicking the **Files Servers** > **SOFS name** > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2012 R2 or later cluster.
 ::: moniker-end
 
 ::: moniker range=">sc-vmm-2016"
-If you need to update the functional level of an SOFS that was upgraded outside VMM, you can do that by selecting and holding the **Files Servers** > SOFS name > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2016 or later cluster.
+If you need to update the functional level of an SOFS that was upgraded outside VMM, you can do that by right-clicking the **Files Servers** > SOFS name > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2016 or later cluster.
 ::: moniker-end

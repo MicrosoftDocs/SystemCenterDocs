@@ -43,7 +43,7 @@ Use the instructions in this article to create a cluster from standalone Hyper-V
       - If you're using a third-party clustered file system \(CFS\) solution, ensure that you're aware which disks are CFS disks. Don't select those disks for the cluster. If you do, cluster creation will fail. If you're using a third\-party clustered file system \(CFS\) solution, ensure that you're aware which disks are CFS disks. Don't select those disks for the cluster. If you do, cluster creation will fail.
       - If the number of selected hosts for the cluster is even, the smallest disk that is larger than 500 megabytes \(MB\) is automatically chosen as the witness disk and is unavailable for selection.
 1. In **Virtual Switches**, you can select the logical networks to use when VMM automatically creates virtual switches on the Hyper-V nodes. The external virtual switches on destination Hyper-V nodes. VMM will automatically create the virtual switches on all the Hyper-V nodes.
-1. In **Summary**, confirm the settings and then select **Finish**. You can monitor the cluster status on the **Jobs** page. After the job finishes, you can verify cluster information by selecting and holding **Properties** > **Status** tab on the cluster. You can also select and hold the cluster and select **Validate Cluster**.
+1. In **Summary**, confirm the settings and then select **Finish**. You can monitor the cluster status on the **Jobs** page. After the job finishes, you can verify cluster information by right-clicking **Properties** > **Status** tab on the cluster. You can also right-click the cluster and select **Validate Cluster**.
 
 Here's what VMM does after you create the cluster:
 

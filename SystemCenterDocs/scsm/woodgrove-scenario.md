@@ -90,7 +90,7 @@ The second step in the Woodgrove Bank customization scenario is to customize the
 
 ### View the System.AddComputerForm form  
 
-1.  In the Authoring Tool, expand **Forms** in the **Management Pack Explorer** pane. Select and hold the **System.AddComputerForm** form, and select **Customize** to open the form in the authoring pane.  
+1.  In the Authoring Tool, expand **Forms** in the **Management Pack Explorer** pane. Right-click the **System.AddComputerForm** form, and select **Customize** to open the form in the authoring pane.  
 2.  In the authoring pane, ensure that the **Details** pane is visible. If it isn't visible, select **View**, and select **Details Window**.  
 3.  Select a field on the form. Note that the properties in the **Details** pane are updated according to the class property that is bound to the field that you selected. Note the **Binding Path** entry in the **Details** pane. This entry indicates the property that the field in the form represents.  
 
@@ -126,7 +126,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 
 1.  If the Authoring Tool isn't open, start the Authoring Tool: On your desktop, select **Start**, select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
 2.  If the **Woodgrove.AutomatedActivity.AddComputerToADGroupMP** management pack isn't open, open it: On the **File** menu, point to **Open**, and select **File**. In the **Open File** dialog, select **Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml**, and select **Open**.  
-3.  In the **Management Pack Explorer**, select and hold **Workflows**, and select **Create**.  
+3.  In the **Management Pack Explorer**, right-click **Workflows**, and select **Create**.  
 4.  On the **General** page of the Create Workflow Wizard, in the **Name** box, enter **AddComputerToADGroupWF**, and select **Next**.  
 5.  On the **Trigger Condition** page, select **Run only when a database object meets specified conditions**, and select **Next**.  
 6.  On the **Trigger Criteria** page, under **Class name**, select **Browse**.  
@@ -145,7 +145,7 @@ Ken uses this procedure to add the WF activities **Add AD DS Computer to Group**
 
 #### Add WF activities to the workflow  
 
-1.  In the **Management Pack Explorer**, expand **Workflows**, select and hold **AddComputerToADGroupWF**, and select **Edit**.  
+1.  In the **Management Pack Explorer**, expand **Workflows**, right-click **AddComputerToADGroupWF**, and select **Edit**.  
 2.  In the **Activities Toolbox** pane, locate the **Active Directory Activities** group.  
 3.  Drag **Add AD DS Computer to Group** to the authoring pane, and drop it between the Workflow Start and End icons.  
 4.  Drag **Set Activity Status to Completed**, and drop it between the previous activity and the End icon.  

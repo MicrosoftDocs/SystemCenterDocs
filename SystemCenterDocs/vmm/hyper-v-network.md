@@ -81,7 +81,7 @@ Ensure the following:
 
 For a host, affinity between vNIC and pNIC can be set at virtual switch level. You can define affinity either when you add a new virtual network adapter to the virtual switch or when you modify the properties of an existing virtual network adapter.
 
-1. Open **Fabric** > **Servers** > **All Hosts** > **host group** > **Hosts** > **Host**. Select and hold **Host**, select **Properties**, and navigate to **Virtual Switches** tab.
+1. Open **Fabric** > **Servers** > **All Hosts** > **host group** > **Hosts** > **Host**. Right-click **Host**, select **Properties**, and navigate to **Virtual Switches** tab.
 2. Verify that the physical adapters to be teamed are added here. Affinity can be mapped only for physical adapters that are added here.
 
     ![Screenshot of virtual network adapter.](./media/set-affinity-vnic-pnic/virtual-network-adapter.png)

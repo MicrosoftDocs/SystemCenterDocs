@@ -183,8 +183,8 @@ Ensure the following:
 You can now modify the storage pool settings and create virtual disks and CSVs.
 
 1. Select **Fabric** > **Storage** > **Arrays**.
-2. Select and hold the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
-3. To create a CSV, select and hold the cluster > **Properties** > **Shared Volumes**.
+2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
+3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
 4. In the Create Volume Wizard > **Storage Type**, specify the volume name and select the storage pool.
 5. In **Capacity**, you can specify the volume size, file system, and resiliency settings.
 
@@ -212,7 +212,7 @@ In a hyper-converged topology, VMs can be directly deployed on the cluster. Thei
 You can now modify the storage pool settings and create virtual disks and CSVs.
 
 1. Select **Fabric** > **Storage** > **Arrays**.
-2. Select and hold the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
+2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
 3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
 4. In the Create Volume Wizard > **Storage Type**, specify the volume name and select the storage pool.
 5. In **Capacity**, you can specify the volume size, file system, and resiliency settings.

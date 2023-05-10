@@ -121,7 +121,7 @@ To back up SharePoint farm, configure protection for SharePoint by using Configu
 
 9. In **Choose replica creation method**, select how you want to handle the initial full data replication. If you select to replicate over the network, we recommend you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-10. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
+10. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
 11. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
@@ -316,7 +316,7 @@ To resolve this alert, follow these steps:
 1. Verify with the SharePoint administrator if the database has been removed from the farm. If the database has been removed from the farm, then it must be removed from active protection in DPM.
 2. To remove the database from active protection:
    1. In the **MABS Administrator Console**, select **Protection** on the navigation bar.
-   2. In the **Display** pane, select and hold the protection group for the SharePoint farm, and then select **Stop Protection of member**.
+   2. In the **Display** pane, right-click the protection group for the SharePoint farm, and then select **Stop Protection of member**.
    3. In the **Stop Protection** dialog, select **Retain Protected Data**.
    4. Select **Stop Protection**.
 

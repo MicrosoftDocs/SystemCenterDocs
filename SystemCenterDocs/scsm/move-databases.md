@@ -336,7 +336,7 @@ Follow these steps to stop Service Manager services on the data warehouse manage
 
 3.  In the **Object Explorer** pane, expand **Databases**.  
 
-4.  Select and hold the **DWStagingAndConfig** database, select **Tasks**, and select **Back Up**.  
+4.  Right-click the **DWStagingAndConfig** database, select **Tasks**, and select **Back Up**.  
 
 5.  In the **Back Up Database** dialog, enter a path and a file name in the **Destination on disk** text box, and select **OK**.  
 
@@ -363,7 +363,7 @@ Follow these steps to stop Service Manager services on the data warehouse manage
 
 3.  In the **Object Explorer** pane, expand **Databases**.  
 
-4.  Select and hold the **DWStagingAndConfig** database, select **Tasks**, and select **Take Offline**.  
+4.  Right-click the **DWStagingAndConfig** database, select **Tasks**, and select **Take Offline**.  
 
 5.  In the **Take database offline** dialog, select **Close**.  
 
@@ -383,7 +383,7 @@ Follow these steps to stop Service Manager services on the data warehouse manage
 
     3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 
-3.  In the **Object Explorer** pane, select and hold the **Databases** folder, and select **Restore Database**.  
+3.  In the **Object Explorer** pane, right-click the **Databases** folder, and select **Restore Database**.  
 
 4.  In the **Restore Database** dialog, under the **To a point in time** text box, retain the default, **Most recent possible**, or select a specific date and time by selecting the browse button to open the **Point in Time Restore** dialog.  
 
@@ -466,7 +466,7 @@ Follow these steps to configure the DWStagingAndConfig database on the new compu
 
 Follow these steps to configure the service account database permissions:
 
-1.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**. Select and hold **Logins**, and select **New Login**.  
+1.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**. Right-click **Logins**, and select **New Login**.  
 
 2.  Select **Search**.  
 
@@ -519,7 +519,7 @@ Follow these steps to configure the service account database permissions:
 
 10. In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.  
 
-11. Select and hold **Logins**, and then **click New  Login**.  
+11. Right-click **Logins**, and then **click New  Login**.  
 
 12. Select **Search**.  
 
@@ -571,7 +571,7 @@ Follow these steps to configure the service account database permissions:
 
 22. In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.  
 
-23. Select and hold **Logins**, and select **New  Login**.  
+23. Right-click **Logins**, and select **New  Login**.  
 
 24. Select **Search**.  
 
@@ -615,15 +615,15 @@ Follow these steps to configure the DWStagingAndConfig tables:
 
 3.  In the center pane, locate the column **SQLServerName\_ 43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**, and then in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. For named instances, enter **ComputerName\\InstanceName**.  
 
-4.  Select and hold **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and select **Edit Top 200 Rows**.  
+4.  Right-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and select **Edit Top 200 Rows**.  
 
 5.  Update the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA** for rows representing DWStagingAndConfig, DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart by entering the name of the new computer running SQL Server that is hosting the respective databases. For named instances, enter **ComputerName\\InstanceName**.  
 
-6.  Select and hold **dbo.MT\_Microsoft$SystemCenter$ResourceAccessLayer$CMDBResourceStore**, and select **Edit Top 200 Rows**.  
+6.  Right-click **dbo.MT\_Microsoft$SystemCenter$ResourceAccessLayer$CMDBResourceStore**, and select **Edit Top 200 Rows**.  
 
 7.  In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, and in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. For named instances, enter **ComputerName\\InstanceName**.  
 
-8.  Select and hold **LFX.DataSource**, and select **Edit Top 200 Rows**.  
+8.  Right-click **LFX.DataSource**, and select **Edit Top 200 Rows**.  
 
 9. In the center pane, locate the **DataSourceAddress** column, and in the first row of the column, locate the entry that starts with **Data Source = *server name*; Initial Catalog = DWStagingAndConfig; Persist Security Info=False**. Replace ***server name*** with the name of the new computer running SQL Server.  
 

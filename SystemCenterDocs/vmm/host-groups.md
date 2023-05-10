@@ -30,7 +30,7 @@ You can create host groups based on different criteria. For example, based on ph
 
 1.  Select **Fabric** > **Servers** > **All Hosts** > **Create Host Group**.
 
-2.  Type in a group name. To create a host group at a specific location in the tree, select and hold the desired parent node, and then select **Create Host Group**.
+2.  Type in a group name. To create a host group at a specific location in the tree, right-click the desired parent node, and then select **Create Host Group**.
 
 After you've created a host group, you can modify the following properties for the group.
 

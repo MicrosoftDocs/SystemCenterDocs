@@ -255,7 +255,7 @@ Setting up one of these for each support group will ensure that all your groups 
 
 ### To create a messaging-enabled universal security group
 
-1.  In the Exchange Management Console, navigate to **Recipient Configuration**, select and hold **Distribution Group**, and select **New Distribution Group**.
+1.  In the Exchange Management Console, navigate to **Recipient Configuration**, right-click **Distribution Group**, and select **New Distribution Group**.
 2.  On the **Introduction** page, either choose an existing universal group or create a new group.
 3.  On the **Group Information** page, select the **Security** group type.
 4.  Complete the creation of the group.

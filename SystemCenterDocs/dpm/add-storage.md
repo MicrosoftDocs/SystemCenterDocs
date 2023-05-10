@@ -260,7 +260,7 @@ To Initialize the disks, follow these steps:
 1. Open  **Server Manager**.
 2. Select  **File and Storage Services**.
 3. Select **Volumes** and then select **Disks Pools**.
-4. Select and hold the disks and select **Initialize**.
+4. Right-click the disks and select **Initialize**.
 5. Select **Yes** to initialize the disk.
 The disk gets converted to GPT disk in case the disk size is more than 2 TB.
 6. Repeat the steps for the remaining disks to initialize.

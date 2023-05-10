@@ -234,7 +234,7 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports, do the following:
 1.  Specify the SMTP server that DPM will use to send reports.
 
-2.  In the Reporting view, on the display pane, select and hold the report to which you want to subscribe and select **Schedule**.
+2.  In the Reporting view, on the display pane, right-click the report to which you want to subscribe and select **Schedule**.
 
 3.  On the **E-mail** tab, in **Recipients**, type the email addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
 

@@ -39,7 +39,7 @@ Ensure that you have the network controller deployed in the SDN fabric. [Learn m
 To create virtual network adapter port profile, use the following procedure:
 
 1.	Go to **Fabric** > **Port Profiles**.
-2.	Select and hold **Port Profile** and select **Create Hyper -V Port Profile**. Provide a name and optional description. For example, name can be **TenantA**.
+2.	Right-click **Port Profile** and select **Create Hyper -V Port Profile**. Provide a name and optional description. For example, name can be **TenantA**.
 3.	In **General**, select **Virtual Network Adapter Port Profile**.
 4.	Go to **Bandwidth Settings**.
 
@@ -63,7 +63,7 @@ To create virtual network adapter port profile, use the following procedure:
 
 To create a port classification:
 1.	Go to **Fabric** >  **Networking**.
-2.	Select and hold **Port Classifications** > **Create Port Classification**.
+2.	Right-click **Port Classifications** > **Create Port Classification**.
 3.	In the **Create Port Classification** wizard, in **General**, give a name to the classification and select **Finish**.
 
 As an example, we created a port classification with the name **TenantA workload**, which we use later.
@@ -72,7 +72,7 @@ As an example, we created a port classification with the name **TenantA workload
 To associate a port classification to the logical switch, use the following procedure:
 
 1.	Go to **Fabric** > **Networking** > **Logical Switches**.
-2.	Select and hold the selected logical switch to view its **Properties**.
+2.	Right-click the selected logical switch to view its **Properties**.
 3.	Select Virtual Ports , select **Add** to open the **Add Virtual Port** page.
 ![Screenshot of classification for virtual port.](media/port-classification-for-virtaul-port.png)
 4.	**Browse** to select the port classification (as an example, **TenantA Workload**) and select **OK**.
@@ -84,7 +84,7 @@ To associate a port classification to the logical switch, use the following proc
 ## Apply port classification to virtual network adapter
 To apply a port classification (and hence the QoS settings) to a virtual network adapter, use the following procedure:
 
-1.	Go to **VMs and Services**, select and hold the selected VM and open its **Properties**.
+1.	Go to **VMs and Services**, right-click the selected VM and open its **Properties**.
 2.	Go to the **Hardware Configuration** page and select the virtual network adapter.
 3.	Select the desired port classification from the **Classification** dropdown list.
 ![Screenshot of the Network adapter hardware configuration.](media/network-adapter-hardware-configuration.png)

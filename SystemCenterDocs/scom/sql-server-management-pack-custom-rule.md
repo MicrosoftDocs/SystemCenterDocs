@@ -17,7 +17,7 @@ If the set of default performance rules in the management pack isn't enough to c
 
 To create a new custom query-based performance rule, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, select and hold **Rules**, and select **Create a Rule**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, right-click **Rules**, and select **Create a Rule**.
 
     ![Screenshot of creating a performance collection rule.](./media/sql-server-management-pack/sql-creating-custom-performance-rule.png)
 
