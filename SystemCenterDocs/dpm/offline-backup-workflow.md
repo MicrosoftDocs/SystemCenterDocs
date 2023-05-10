@@ -98,7 +98,7 @@ The information in this section helps you complete the offline backup workflow s
 
      Save the *staging location* and the *Azure Import Job Name* you provided as it's required to prepare the disks.
 
-4. Complete the workflow to create or update the protection. And to initiate the offline-backup copy, select and hold the **Protection Group** and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
+4. Complete the workflow to create or update the protection. And to initiate the offline-backup copy, right-click the **Protection Group** and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
    ![Screenshot of Offline Backup copy.](./media/backup-server/create-recovery-point.png)
 

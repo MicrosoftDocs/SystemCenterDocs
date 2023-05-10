@@ -153,7 +153,7 @@ Now enable synchronous replication between the source and destination replicatio
 ## Refresh the storage providers
 
 1. Open the VMM console.
-2. Select **Fabric Resources** > **Providers**. Select and hold the provider > **Refresh**.
+2. Select **Fabric Resources** > **Providers**. Right-click the provider > **Refresh**.
 
 ## Verify replication status
 

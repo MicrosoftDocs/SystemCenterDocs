@@ -33,7 +33,7 @@ For the System Center Operations Manager configuration item (CI) connector to fu
 
 ### To import Operations Manager management packs for an Operations Manager CI connector
 
-1.  On the computer that is hosting the Service Manager management server, on the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell**, select and hold **Windows PowerShell**, and select **Run as administrator**.
+1.  On the computer that is hosting the Service Manager management server, on the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell**, right-click **Windows PowerShell**, and select **Run as administrator**.
 
 2.  In Windows PowerShell, enter the following command, and then press ENTER:
 

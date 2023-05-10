@@ -157,7 +157,7 @@ Use the following procedures to configure the key performance indicators \(KPIs\
 
 5.  In the Thresholds section, modify the value for **Best** to **100%**.  
 
-6.  To save the KPI, in the **Workspace Browser**, select and hold **Resolved Incidents KPI**, and select **Save**.  
+6.  To save the KPI, in the **Workspace Browser**, right-click **Resolved Incidents KPI**, and select **Save**.  
 
 ### To configure the Resolved Incidents KPI  
 
@@ -179,7 +179,7 @@ Use the following procedure to create an Analytic Grid report named Incidents by
 
 1.  Open Dashboard Designer, connect to the server that hosts the DWASDataBase, and select **Service Manager WorkItems Cube**. Or, if you've previously saved a designer workspace file that contains the connection information, open that file.  
 
-2.  In the **Workspace Browser**, select and hold the **PerformancePoint Content** list, select **New**, and select **Report**.  
+2.  In the **Workspace Browser**, right-click the **PerformancePoint Content** list, select **New**, and select **Report**.  
 
 3.  In the **Select a Report Template** dialog, select the **Analytic Grid** template, and select **OK**.  
 
@@ -191,11 +191,11 @@ Use the following procedure to create an Analytic Grid report named Incidents by
 
 7.  To configure the hierarchy member selection, in the **Rows** drop zone, select the down arrow to the right of the **AssignedToUserDim** hierarchy to open the **Select Members** dialog.  
 
-8.  In the **Select Members** dialog, select and hold **All members** member, point to **Autoselect Members**, select **Select "User Name"**, and select **OK**.  
+8.  In the **Select Members** dialog, right-click **All members** member, point to **Autoselect Members**, select **Select "User Name"**, and select **OK**.  
 
 9. In the **Details** pane, expand **Measures**, and then drag the **IncidentDimCount** and **Incidents Resolved Count** measures into the **Columns** drop zone.  
 
-10. Select and hold the **Incidents Resolved Count** column heading, point to **Sort**, and select **Smallest to Largest**.  
+10. Right-click the **Incidents Resolved Count** column heading, point to **Sort**, and select **Smallest to Largest**.  
 
 11. Right\-click anywhere in table, point to **Filter**, and select **Filter Empty Rows**.  
 
@@ -207,7 +207,7 @@ Use the following procedure to create an Analytic Grid report named Incidents by
 
 15. In the design pane, select the **Query** tab, and then review the MDX expression that was created automatically to support the report design.  
 
-16. To save the report, in the **Workspace Browser**, select and hold the **Incidents by Analyst** report, and select **Save**.
+16. To save the report, in the **Workspace Browser**, right-click the **Incidents by Analyst** report, and select **Save**.
 
 ## Create the Resolved Incidents dashboard
 
@@ -249,7 +249,7 @@ Use the following procedure to deploy the Resolved Incidents Dashboard to the Sh
 
 1.  Open Dashboard Designer, connect to the server that hosts the DWASDataBase, and then select **Service Manager WorkItems Cube**. Or, if you've previously saved a designer workspace file that contains the connection information, open that file.  
 
-2.  In the Workspace Browser, select and hold the **Resolved Incidents Dashboard**, and then select **Deploy to SharePoint**.  
+2.  In the Workspace Browser, right-click the **Resolved Incidents Dashboard**, and then select **Deploy to SharePoint**.  
 
 3.  In the **Deploy To** dialog, notice the selection of the Dashboards library.  
 

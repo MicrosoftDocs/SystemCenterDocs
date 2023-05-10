@@ -44,7 +44,7 @@ You can use the following procedure to restore the encryption keys before you ru
 
 1.  Sign in to the computer that will host the Service Manager part that you're attempting to recover by using an account that is a member of the Administrators group. For example, sign in to the computer that will host the Service Manager or data warehouse management servers.  
 2.  In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.  
-3.  Select and hold **SecureStorageBackup.exe** and select **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
+3.  Right-click **SecureStorageBackup.exe** and select **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
     > [!NOTE]  
     >  In this release, the wizard contains references to **Operations Manager**. This issue will be resolved in a future release.  
 

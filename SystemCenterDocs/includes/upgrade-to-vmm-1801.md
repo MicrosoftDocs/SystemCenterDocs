@@ -202,7 +202,7 @@ There are a couple of reasons you might want to upgrade the VMM SQL Server datab
 Before you upgrade, collect information about the VMM database:
 
 1. Record the database connection in the VMM console > **Settings** > **General** > **Database Connection**.
-2. Record the account information in Server Manager > **Tools** > **Services**. Select and hold **System Center Virtual Machine Manager** > **Properties** > **Log On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
+2. Record the account information in Server Manager > **Tools** > **Services**. Right-click **System Center Virtual Machine Manager** > **Properties** > **Log On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
 3. Check whether you used distributed key management when you installed VMM, or if encryption keys are stored locally on the VMM server.
 4. If you're moving the VMM database but not upgrading the VMM, check which update rollups have been applied on the VMM server.
 
@@ -234,9 +234,9 @@ When uninstalling VMM server from the last node, you may get a message about uns
 After the upgrade, you need to update the VMM agents on your Hyper-V hosts and in your VMM library servers.
 
 1. Select **Fabric** >  **Servers** >  **All Hosts**.
-2. In the **Hosts** pane, select and hold a column heading, and then select **Agent Version Status**.
+2. In the **Hosts** pane, right-click a column heading, and then select **Agent Version Status**.
 3. Select the host with the VMM agent that you want to update. On the **Hosts** tab, in the **Host** group, select **Refresh**. If a host needs to have its VMM agent updated, the **Host Status** column will display **Needs Attention**, and the **Agent Version Status** column will display **Upgrade Available**.
-4. Select and hold the host with the VMM agent that you want to update, and then select **Update Agent**. In **Update Agent** provide the necessary credentials, and then select **OK**.
+4. Right-click the host with the VMM agent that you want to update, and then select **Update Agent**. In **Update Agent** provide the necessary credentials, and then select **OK**.
 5. The **Agent Version Status** column will display a value of **Upgrading**. After the VMM agent is updated successfully on the host, the **Agent Version Status** column will display a value of **Up-to-date**, and the **Agent Version** column will display the updated version of the agent. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
 6. You can update the VMM agent on a VMM library server in a similar manner. To view a list of VMM library servers, select **Fabric** > **Servers** > **Library Servers**.
 

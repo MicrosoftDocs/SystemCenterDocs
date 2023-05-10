@@ -77,7 +77,7 @@ Use the following procedures to make these changes in Service Manager.
     2.  In the **Enter the object name to select** box, enter the name of the new Operational Database Account, select **Check Names**, and select **OK**.
     3.  In the **Password** and **Confirm Password** boxes, enter the password for the new user, and select **OK**.
 6.  Restart the Service Manager Data Access Service.
-7.  Select and hold **System Center Management Configuration**, and select **Properties**.
+7.  Right-click **System Center Management Configuration**, and select **Properties**.
 8.  In the **System Center Management Configuration Properties (Local Computer)** dialog, select **Log On**, and select **Browse**.
 9. In the **Select User or Group** dialog, complete these steps:
     1.  Select **Locations**, and in the **Locations** dialog, select **Entire Directory**, and select **OK**.
@@ -93,7 +93,7 @@ Use the following procedures to make these changes in Service Manager.
     2.  In the **Server Name** list, select the server name for your Service Manager or data warehouse databases.
     3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.
 3.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.
-4.  Select and hold **Logins**, and select **New Login**.
+4.  Right-click **Logins**, and select **New Login**.
 5.  In the **Login - New** dialog, in the **Select a page** pane, select **General**, and select **Search**.
 6.  In the **Select User or Group** dialog, complete these steps:
     1.  Select **Locations**, in the **Locations** dialog, select **Entire Directory**, and select **OK**.
@@ -104,7 +104,7 @@ Use the following procedures to make these changes in Service Manager.
 
 1.  On the Windows desktop, select **Start**, point to **Programs**, point to **Administrative Tools**, and select **Internet Information Services (IIS) Manager**.
 2.  In the **Internet Information Services (IIS) Manager** window, in the **Connections** pane, expand the name of your computer, and select **Application Pools**.
-3.  In the **Application Pools** pane, select and hold **SM_AppPool**, and select **Advanced Settings**.
+3.  In the **Application Pools** pane, right-click **SM_AppPool**, and select **Advanced Settings**.
 4.  In the **Advanced Settings** dialog, in the **Process Model** area, select **Identity**, and select the ellipsis (**...**) button.
 5.  In the **Application Pool Identity** dialog, select **Custom account**, and select **Set**.
 6.  In the **Set Credentials** dialog, in the **User name** box, enter the user name for the Operational Database Account. In the **Password** and **Confirm password** boxes, enter the password for the new Operational Database Account, and select **OK**.
@@ -126,7 +126,7 @@ To change the login password for the Service Manager Data Access and Service Man
 
 1.  On the Windows desktop, select **Start**, and select **Run**.
 2.  In the **Run** dialog, in the **Open** box, enter **services.msc**, and select **OK**.
-3.  In the **Services** window, in the **Services (Local)** pane, select and hold **System Center Data Access Service**, and select **Properties**.
+3.  In the **Services** window, in the **Services (Local)** pane, right-click **System Center Data Access Service**, and select **Properties**.
 4.  In the **System Center Data Access Service Properties (Local Computer)** dialog, select **Log On**.
 5.  Type the new password in the **Password** and **Confirm Password** text boxes, and select **OK**.
 6.  Restart the Service Manager Data Access Service.

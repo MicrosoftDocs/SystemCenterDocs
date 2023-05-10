@@ -169,7 +169,7 @@ There are a couple of reasons you might want to upgrade the VMM SQL Server datab
 Before you upgrade, collect information about the VMM database:
 
 1. Record the database connection in the VMM console > **Settings** > **General** > **Database Connection**.
-2. Record the account information in Server Manager > **Tools** > **Services**. Select and hold **System Center Virtual Machine Manager** > **Properties** > **Log On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
+2. Record the account information in Server Manager > **Tools** > **Services**. Right-click **System Center Virtual Machine Manager** > **Properties** > **Log On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
 3. Check whether you used distributed key management when you installed VMM, or if encryption keys are stored locally on the VMM server.
 4. If you're moving the VMM database but not upgrading the VMM, check which update rollups have been applied on the VMM server.
 
@@ -201,9 +201,9 @@ When uninstalling VMM server from the last node, you may get a message about uns
 After the upgrade, you need to update the VMM agents on your Hyper-V hosts and in your VMM library servers.
 
 1. Select **Fabric** >  **Servers** >  **All Hosts**.
-2. In the **Hosts** pane, select and hold a column heading, and then select **Agent Version Status**.
+2. In the **Hosts** pane, right-click a column heading, and then select **Agent Version Status**.
 3. Select the host with the VMM agent that you want to update. On the **Hosts** tab, in the **Host** group, select **Refresh**. If a host needs to have its VMM agent updated, the **Host Status** column will display **Needs Attention** and the **Agent Version Status** column will display **Upgrade Available**.
-4. Select and hold the host with the VMM agent that you want to update, and then select **Update Agent**. In **Update Agent**, provide the necessary credentials and then select **OK**.
+4. Right-click the host with the VMM agent that you want to update, and then select **Update Agent**. In **Update Agent**, provide the necessary credentials and then select **OK**.
 5. The **Agent Version Status** column will display a value of **Upgrading**. After the VMM agent is updated successfully on the host, the **Agent Version Status** column will display a value of **Up-to-date**, and the **Agent Version** column will display the updated version of the agent. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
 6. You can update the VMM agent on a VMM library server in a similar manner. To view a list of VMM library servers, select **Fabric** > **Servers** > **Library Servers**.
 
@@ -212,10 +212,10 @@ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and i
 You might need to reassociate virtual machine hosts and VMM library servers with the VMM management server after the upgrade.
 
 1. Select **Fabric** > **Servers** > **All Hosts**.
-2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't, select and hold a column heading > **Agent Status**.
+2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't, right-click a column heading > **Agent Status**.
 3. Select the host that you need to reassociate with the VMM management server.
 4. In the host group, select **Refresh**. If a host needs to be reassociated, the **Host Status** column will display a value of **Needs Attention**, and the **Agent Status** column will display a value of **Access Denied**.
-Select and hold the host that you want to reassociate, and then select **Reassociate**. In **Reassociate Agent**, provide credentials and then select **OK**. The Agent Status column will display a value of Reassociating. After the host has been reassociated successfully, the **Agent Status** column will display a value of **Responding**. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
+Right-click the host that you want to reassociate, and then select **Reassociate**. In **Reassociate Agent**, provide credentials and then select **OK**. The Agent Status column will display a value of Reassociating. After the host has been reassociated successfully, the **Agent Status** column will display a value of **Responding**. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
 After you've reassociated the host, you'll most likely have to update the VMM agent on the host.
 
 ## Redeploy Azure Site Recovery
@@ -246,7 +246,7 @@ If you upgraded a database that was configured with Always On Availability Group
 All the virtual machine templates that were upgraded need to correctly specify the virtual hard disk that contains the operating system.
 
 1. Select **Library** > **Templates** > **VM Templates**.
-2. Select and hold the template > **Properties** > **Hardware Configuration**, and check disk settings.
+2. Right-click the template > **Properties** > **Hardware Configuration**, and check disk settings.
 
 ## Renew certificates for PXE servers
 
@@ -263,9 +263,9 @@ In the physical computer profile, you can select to filter the drivers by tags o
 1. Locate a driver package that you want to add to the library.
 2. In the library share that is located on the library server associated with the group where you want to deploy the physical computers, create a folder to store the drivers and then copy the driver package to the folder.
 3. We strongly recommend that you create a separate folder for each driver package, and that you don't mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files or scripts with an .inf file name extension in the same folder, the VMM library server won't discover those resources. Also, when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides.
-4. In the VMM console, open the Library workspace. In the **Library** > **Library Servers**, expand the library server where the share is located, select and hold the share, and then select **Refresh**. After the library refreshes, the folder that you created to store the drivers appears.
+4. In the VMM console, open the Library workspace. In the **Library** > **Library Servers**, expand the library server where the share is located, right-click the share, and then select **Refresh**. After the library refreshes, the folder that you created to store the drivers appears.
 5. Now assign tags if required. In **Library**, expand the folder that you created to store the drivers in the previous procedure, and then select the folder that contains the driver package.
-6. In the **Physical Library Objects**, select and hold the driver .inf file, and then select **Properties**.
+6. In the **Physical Library Objects**, right-click the driver .inf file, and then select **Properties**.
 7. In the **Driver File Name Properties** > **Custom tags**, enter custom tags separated by a semicolon or select **Select** to assign available tags or to create and assign new ones. If you select **Select**, and then select **New Tag**. You can change the name of the tag after you select **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
 
 ## Relocate the VMM library

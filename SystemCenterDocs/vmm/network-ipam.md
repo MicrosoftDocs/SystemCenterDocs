@@ -34,7 +34,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 - Create or identify a domain account and set it to never expire. On the IPAM server, add the account to these groups:
  - **IPAM ASM Administrators**: A local group that exists on all IPAM servers, and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj878348(v=ws.11)).
  - **Remote Management Users**: A built-in group that provides access to WMI resources through management protocols, such as WS-Management through the Windows Remote Management service.
-- Check that the time is synchronized on the IPAM and VMM servers. This depends on settings for the Windows Time Service. If you can't synchronize them, you'll need to update permissions on the IPAM software so that VMM can query the current time setting on the server. To do this, on the IPAM server, run **mimgmt.msc** to open the WMI Control (Local) snap-in. Select and hold **WMI Control (Local)** > **Properties** > **Security**. Navigate to **Root\CIMV2**, select the Security button Security and select the account you configured. For **Remote Enable**, select **Allow**.
+- Check that the time is synchronized on the IPAM and VMM servers. This depends on settings for the Windows Time Service. If you can't synchronize them, you'll need to update permissions on the IPAM software so that VMM can query the current time setting on the server. To do this, on the IPAM server, run **mimgmt.msc** to open the WMI Control (Local) snap-in. Right-click **WMI Control (Local)** > **Properties** > **Security**. Navigate to **Root\CIMV2**, select the Security button Security and select the account you configured. For **Remote Enable**, select **Allow**.
 - Verify the FQDN of the IPAM server to use as a connection string.
 - Verify the names of the VMM host groups for which you want to use the IPAM server.
 - The provider software for an IPAM server is included in VMM. You don't need to install it. You can review settings in **Settings** > **Configuration Providers**.
@@ -51,7 +51,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 6. In the **Connection String** page, in the **Connection string** box, type the FQDN of the IPAM server. If you've configured a specific port on the IPAM server, end the string with the port number (for example, **:443**). If a port number isn't specified, the default port for the IPAM server is used.
 7. In **Provider** > **Configuration provider** > **Microsoft IP Address Management Provider**, select **Test** to run basic validation tests with the provider. Results that say **Passed** or **Failed** indicate whether the provider works as expected. One possible cause of failure is insufficient permissions in the Run As account. Results that say **Implemented** and **Not implemented** are informational only, and indicate whether the provider supports a particular API.
 8. In **Host Group**, select one or more host groups for which you want integration between the IPAM server and the VMM server.
-9. In **Summary**, review the settings and select **Finish**. Check that the IPAM server is listed under **Network Services**. Select and hold the server > **Refresh** to get the latest settings.
+9. In **Summary**, review the settings and select **Finish**. Check that the IPAM server is listed under **Network Services**. Right-click the server > **Refresh** to get the latest settings.
 10. On the IPAM server, to view the logical networks and related settings that were configured in VMM, navigate to **VIRTUALIZED IP ADDRESS SPACE**, and then to **Provider IP Address Space**. For each logical network, the IPAM server will have an address space (an overarching category that is found in IPAM, but not in VMM) with a name that is based on the name of the logical network. The logical network will be contained within the address space, with the name of the logical network displayed under the heading **VMM Logical Network**. To see the types of information that are stored in IPAM, expand the address space and select different views.
 
 The following table can help you interpret some of the information that you see on the IPAM server:
@@ -68,7 +68,7 @@ VM network | VIRTUALIZED IP ADDRESS SPACE<br /> Customer IP Address Space: **VM 
 
 IP reservation in IPAM is honored by VMM. Follow the steps below for reserving IP addresses.
 
-1. In IPAM, select and hold **IP Address Range** for IP address reservation.
+1. In IPAM, right-click **IP Address Range** for IP address reservation.
 2. Select **Edit IP Address Range** and a window opens.
 3. In the opened window, there's a **Reservations** tab on the left.
 4. In the **Reservations** tab, you can reserve IP addresses for reservation or whether to use them as VIPs.

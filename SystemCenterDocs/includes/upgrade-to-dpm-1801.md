@@ -69,7 +69,7 @@ Once you've the new instance of SQL Server installed and prepared for DPM use, y
 This example prepares a remote SQL Server cluster to use in a migration.
 
 1. On the System Center Data Protection Manager 2012 R2 server or on the remote SQL Server hosting the DPM database, start **Microsoft SQL Management Studio** and connect to the SQL instance hosting the current DPM 2012 R2 DPMDB.
-2. Select and hold the DPM database, and under **Tasks**, select the **Back Up…** option.
+2. Right-click the DPM database, and under **Tasks**, select the **Back Up…** option.
 
       ![Screenshot showing Select Backup.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-backup.png)
 
@@ -79,7 +79,7 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
 4. After the backup is complete, copy the output file to the remote SQL Server.  If this is a SQL Cluster, copy it to the active node hosting the SQL Instance you want to use in the DPM upgrade.  Before you can restore the DPM database, you must copy it to the Shared Cluster disk.
 5. On the Remote SQL Server, start **Microsoft SQL Management Studio** and connect to the SQL instance you want to use in the DPM upgrade. If this is a SQL Cluster, do this on the Active node that you copied the DPM backup file to. The backup file should now be located on the shared cluster disk.
-6. Select and hold the Databases icon, then select the **Restore Database…** option. This starts the restore wizard.
+6. Right-click the Databases icon, then select the **Restore Database…** option. This starts the restore wizard.
 
       ![Screenshot of Microsoft SQL Management Studio showing Select restore database option.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-restore-database.png)
 
@@ -197,7 +197,7 @@ The remainder of the New Protection Group wizard is unchanged from DPM 2012 R2. 
 ## Migrating legacy storage to Modern Backup Storage
 After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Server 2016, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups aren't changed and continue to function as they were configured in DPM 2012 R2. Updating protection groups to use Modern Backup Storage is optional. To update the protection group, stop the protection of all the data sources with Retain Data, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
 
-1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, select and hold the member and then select **Stop protection of member...**.
+1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member and then select **Stop protection of member...**.
 
    ![Screenshot showing how to stop protection.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 
