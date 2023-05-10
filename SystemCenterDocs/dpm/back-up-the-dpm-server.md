@@ -151,7 +151,7 @@ If a primary server fails, you can switch protection to the secondary server. Af
 
 Use the following steps:
 
-1.	On the secondary DPM server, in the **Protection** area of the DPM Administrator console, go to the **Protection** work area, select and hold the *data source* for which you want to switch protection.
+1.	On the secondary DPM server, in the **Protection** area of the DPM Administrator console, go to the **Protection** work area, right-click the *data source* for which you want to switch protection.
 2.	Select **Switch Disaster Protection** from the context menu.
 3.	Run a consistency check.
 
@@ -187,7 +187,7 @@ When you recover a primary DPM server, you’ll need to re-establish the protect
 If protection fails after completing the above steps, do the following:
 
 1.	In **Administrative Tools**, open **Component Services**. Expand **Computers**, expand **My Computer**, and then select **DCOM Config**.
-2.	In the results pane, select and hold **DPM RA Service**. Select **Properties** > **Security**.
+2.	In the results pane, right-click **DPM RA Service**. Select **Properties** > **Security**.
 3.	In the **Launch and Activation Permissions** area, select **Edit**.
     -	If the primary server is listed, the Access Control List (ACL) entry might be incorrect. Remove the entry, and then add the primary server with full permissions.
     -	If the primary server isn't listed, add the primary server with full permissions.
@@ -513,7 +513,7 @@ You can back up the DPM database as you would any other SQL Server database usin
 
 1.  Connect to the **\\\DPMServer\DPMSERVERNAME-dpmdb** share using Explorer from any Windows computer.
 
-2.  Select and hold the dpmdb.bak file to view properties. On the **Previous Versions** tab, there are all the backups that you can select and copy. There's also the very last backup still located in the C:\DPMBACKUP folder, which is also easily accessible.
+2.  Right-click the dpmdb.bak file to view properties. On the **Previous Versions** tab, there are all the backups that you can select and copy. There's also the very last backup still located in the C:\DPMBACKUP folder, which is also easily accessible.
 
 3.  If you need to move a SAN attached DPM storage pool disk to another server to be able to read from the replica volume or to reinstall Windows to read locally attached disks, you'll need to know the DPM Replica volume Mount point path or Volume GUID beforehand so you know what volume holds the database backup. You can use the SQL script below to extract that information anytime after initial protection but before the need to restore. Replace the %dpmsqlservername% with the name of the SQL Server hosting the database.
 
@@ -544,7 +544,7 @@ You can back up the DPM database as you would any other SQL Server database usin
 
     3.  Connect to the \\\SERVERNAME\DPMSERVERNAME-dpmdb share using Explorer from any Windows computer
 
-    4.  Select and hold the dpmdb.bak file to view the Properties. On the **Previous Versions** tab, there are all the backups that you can select and copy.
+    4.  Right-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab, there are all the backups that you can select and copy.
 
 ::: moniker range="sc-dpm-2019"
 

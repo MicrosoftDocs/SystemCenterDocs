@@ -108,7 +108,7 @@ An activity can subscribe only to data from the activities that are linked befor
 
 ### To use published data
 
-1.  Select and hold the property value box, select **Subscribe**, and then select **Published Data**.
+1.  Right-click the property value box, select **Subscribe**, and then select **Published Data**.
 2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 3.  Select the published data element that you want to use, and select **OK**.
 

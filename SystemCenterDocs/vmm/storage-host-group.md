@@ -34,7 +34,7 @@ After block storage has been discovered and classified in the System Center - Vi
 
 ## Allocate a storage pool to a host group
 
-1.  Select **Fabric** > **Storage** > **Allocate Capacity**, and then select the host group. If you're a delegate admin with scope restricted to host groups, select and hold the host group > **Properties** > **Storage**.
+1.  Select **Fabric** > **Storage** > **Allocate Capacity**, and then select the host group. If you're a delegate admin with scope restricted to host groups, right-click the host group > **Properties** > **Storage**.
 2.  The total and available storage capacity information is displayed for the host group. The storage capacity information includes the total and available capacity for both local and remote storage, and total and available allocated storage. Select **Allocate Storage Pools**.
 3. Select a storage pool > **Add**.
 

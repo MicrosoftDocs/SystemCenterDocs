@@ -29,7 +29,7 @@ To create a new management pack, perform the following steps:
 
 1. Open the System Center Operations Manager console.
 
-2. In the **Administration** view, select and hold **Management Packs**, and select **Create New Management Pack**.
+2. In the **Administration** view, right-click **Management Packs**, and select **Create New Management Pack**.
 
     ![Screenshot showing Creating New Management Pack for Customizations.](./media/sql-replication-management-pack/creating-new-management-pack.png)
 

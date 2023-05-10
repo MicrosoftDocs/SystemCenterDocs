@@ -64,7 +64,7 @@ If the published data is numerical, you can use any of the following to set the 
 
 ### To add a smart link condition  
 
-1.  Select and hold a smart link to select **Properties** to open the **Link Properties** dialog.  
+1.  Right-click a smart link to select **Properties** to open the **Link Properties** dialog.  
 
     > [!IMPORTANT]  
     > To change the values that make up the rule, you have to select each underlined portion of the smart link condition.  
@@ -99,7 +99,7 @@ Loops run one time for each incoming piece of data that is passed to the activit
 
 ### To configure looping  
 
-1.  Select and hold an activity in the runbook to select **Looping**. The **Looping Properties** dialog opens.  
+1.  Right-click an activity in the runbook to select **Looping**. The **Looping Properties** dialog opens.  
 
 2.  On the **General** tab, select **Enable**.  
 
@@ -159,7 +159,7 @@ Runbooks that start before a prohibited time run until finished, even if they're
 
 ### To create a schedule  
 
-1.  In the **Connections** pane, select and hold the **Schedules** folder or a subfolder of the **Schedules** folder, point to **New**, and then select **Schedule** to open the **New Schedule** dialog.  
+1.  In the **Connections** pane, right-click the **Schedules** folder or a subfolder of the **Schedules** folder, point to **New**, and then select **Schedule** to open the **New Schedule** dialog.  
 
 2.  On the **General** tab, in the **Name** box, type a name for the schedule.  
 
@@ -195,13 +195,13 @@ Runbooks that start before a prohibited time run until finished, even if they're
 
 12. To modify a schedule, double\-click the **Schedule**.  
 
-13. To remove a schedule, select and hold the **Schedule**, and then select **Delete**.  
+13. To remove a schedule, right-click the **Schedule**, and then select **Delete**.  
 
 14. Select **Finish**.  
 
 ### To assign a schedule to a runbook  
 
-1.  Select and hold the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
+1.  Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
 
 2.  On the **General** tab, select the ellipsis **\(...\)** button to open the **Select a Schedule** dialog.  
 
@@ -213,7 +213,7 @@ Runbooks that start before a prohibited time run until finished, even if they're
 
 ### To remove a schedule from a runbook  
 
-1.  Select and hold the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
+1.  Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
 
 2.  On the **General** tab, select the ellipsis **\(...\)** button to open the **Select a Schedule** dialog.  
 

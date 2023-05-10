@@ -400,7 +400,7 @@ To configure security for configurations with low-privilege accounts, perform th
     - Component Services
     - WMI Control (for a local computer)
 
-2. Expand **Component Services**, select and hold **My Computer**, and select **Properties**.
+2. Expand **Component Services**, right-click **My Computer**, and select **Properties**.
 
    ![Screenshot of opening properties.](./media/sql-server-management-pack/component-service-properties.png)
 

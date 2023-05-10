@@ -80,9 +80,9 @@ When you remove a library share from VMM management and there are templates that
 To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically reassociate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
 
 1. Select **Library** > **Orphaned Resources**.
-2. You won't be able to delete an orphaned resource until the templates that reference it are updated to valid references. To view the templates, select and hold the orphaned resource > **Properties**. To update the template, select it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
+2. You won't be able to delete an orphaned resource until the templates that reference it are updated to valid references. To view the templates, right-click the orphaned resource > **Properties**. To update the template, select it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
 3. Add a new resource that's valid.
-4. When you have completed these steps for all the templates, close the **Properties** dialog. To verify there aren't any dependencies, select and hold the orphaned resource > **Properties** > **Dependencies**. Then select and hold the orphaned resource > **Delete**.
+4. When you have completed these steps for all the templates, close the **Properties** dialog. To verify there aren't any dependencies, right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
 
 
 ::: moniker range="sc-vmm-2019"

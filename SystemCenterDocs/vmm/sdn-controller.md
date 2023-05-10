@@ -155,7 +155,7 @@ You can create a management logical network in VMM to mirror your physical manag
 
 **Use the following procedure to create management logical network**:
 
-1.  Select **Fabric** > **Networking**. Select and hold **Logical Networks**  > **Create Logical Network**.
+1.  Select **Fabric** > **Networking**. Right-click **Logical Networks**  > **Create Logical Network**.
 2.  Specify a **Name** and optional **Description**.
 ::: moniker range="<sc-vmm-2019"
 3.  In **Settings**, select **One Connected Network**. All the management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
@@ -188,7 +188,7 @@ You can create a management logical network in VMM to mirror your physical manag
 
 If you want to allocate static IP addresses to network controller VMs, create an IP address pool in the management logical network. If you're using DHCP, you can skip this step.
 
-1.  In the VMM console, select and hold the management logical network and select **Create IP Pool**.
+1.  In the VMM console, right-click the management logical network and select **Create IP Pool**.
 2.  Provide a **Name** and optional description for the pool, and ensure that the management network is selected for the logical network.
 3.  In **Network Site** panel, select the subnet that this IP address pool will service.
 4.  In **IP Address range** panel, type the starting and ending IP addresses.
@@ -361,7 +361,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 After the network controller service is successfully deployed, the next step is to add it to VMM as a network service.
 
 
-1. In **Fabric**, select and hold **Networking** > **Network Service**, and select **Add Network Service.**
+1. In **Fabric**, right-click **Networking** > **Network Service**, and select **Add Network Service.**
 2. The **Add Network Service Wizard** starts. Specify a name and optional description.
 3. Select **Microsoft** for the manufacturer and for model select **Microsoft network controller**.
 4. In **Credentials**, provide the Run As account you want to use to configure the network service. This should be the same account that you included in the network controller clients group.
@@ -426,7 +426,7 @@ You can optionally validate the network controller deployment. To do this:
 
 The configure HNV logical network needs an IP address pool, even if DHCP is available on this network. If you've more than one subnet on the configure HNV network, create a pool for each subnet.
 
-1.  Select and hold the configure HNV logical network > **Create IP Pool**.
+1.  Right-click the configure HNV logical network > **Create IP Pool**.
 2.  Provide a name and optional description, and ensure that the HNV Provider logical network is selected for the logical network.
 ::: moniker range="<sc-vmm-2019"
 3.  In **Network Site**, you need to select the subnet that this IP address pool will service. If you've more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you've only one site (for example, like the sample topology), then you can just select **Next**.

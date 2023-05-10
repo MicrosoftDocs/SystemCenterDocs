@@ -26,7 +26,7 @@ Use the following procedure to create and modify management pack templates.
 
 1. Start the Operations console with an account that has Author credentials in the management group.
 2. Open the  **Authoring**  workspace.
-3. In the  **Authoring**  navigation pane, select and hold the  **Management Pack Templates**  node, and then select  **Add Monitoring Wizard**.
+3. In the  **Authoring**  navigation pane, right-click the **Management Pack Templates**  node, and then select  **Add Monitoring Wizard**.
 4. Select the management pack template that you want to create, and then select  **Next**.
 5. Follow the instructions for the template that you selected. You can use the links in the table above to access this content.
 

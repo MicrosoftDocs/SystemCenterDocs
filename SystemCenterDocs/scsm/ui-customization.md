@@ -37,11 +37,11 @@ The **Failed Service Requests** view in Service Manager is in a sealed managemen
 
 4.  In the **Select management pack** dialog, accept the default management pack, **Service Manager Service Request Configuration Library**, and select **OK**.
 
-5.  Select and hold **Failed Service Requests - Copy**, and select **Edit View**.
+5.  Right-click **Failed Service Requests - Copy**, and select **Edit View**.
 
 6.  In the Edit Failed Service Requests - Copy Wizard, in **Name**, enter a new name for this view. For example, enter **New Failed Service Requests**, and select **OK**.
 
-7.  Select and hold **Failed Service Requests**, and select **Hide View**.
+7.  Right-click **Failed Service Requests**, and select **Hide View**.
 
 
 ## Customize a list item

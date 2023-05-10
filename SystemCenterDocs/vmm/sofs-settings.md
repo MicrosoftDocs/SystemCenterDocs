@@ -71,5 +71,5 @@ Set a storage QoS policy as follows:
 
 ## Set a disk witness for the SOFS
 
-1. Select **Fabric** > **Storage** > **File Servers**. Select and hold the SOFS server (not the nodes) and select **Properties**.
+1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS server (not the nodes) and select **Properties**.
 2. In **General**, select **Use disk witness for this file server from the specified pool** to indicate that the disk witness for the SOFS should come from a specific storage pool. VMM creates a three-way mirror space, and configures it as the disk witness for the cluster.

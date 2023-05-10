@@ -65,7 +65,7 @@ For more information, see [How to - Use the portal to create an Azure AD applica
 
 To begin the monitoring of Azure SQL Databases using the Azure REST API, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, select and hold **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
 
     ![Screenshot showing the REST API monitoring wizard.](./media/azure-sql-management-pack/opening-monitoring-wizard.png)  
 
@@ -228,7 +228,7 @@ T-SQL is intended for monitoring of specific Azure SQL Database Servers. When ch
 
 To begin monitoring of Azure SQL Databases using T-SQL queries, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, select and hold **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
 
     ![Screenshot of the T-SQL monitoring.](./media/azure-sql-management-pack/opening-monitoring-wizard.png)
 

@@ -334,7 +334,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 > You can't limit bandwidth in L3 VPN connection.
 
 1. In the VMM console, select the tenant virtual network that you want to connect to the physical network through L3 gateway.  
-2. Select and hold the selected tenant virtual network, select **Properties** > **Connectivity**.
+2. Right-click the selected tenant virtual network, select **Properties** > **Connectivity**.
 3. Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
     ![Screenshot of L3 configuration from ui.](./media/sdn-route-network-traffic/l3-ui-enable-bgp.png)
 4. Select the network controller service for the gateway device.
