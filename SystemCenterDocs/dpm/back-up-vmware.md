@@ -161,21 +161,22 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 
    ![Screenshot of open Certificate export wizard.](./media/back-up-vmware/add-new-certificate.png)
 
-3. In the **Certificate Export Wizard**, select **Next**, and on the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, and then select **Next**.
-4. On the **File to Export** screen, enter a name for your certificate and select **Next**.
-5. Select **Finish** to complete the **Certificate Export Wizard**.
-6. Locate the exported certificate. Select and hold the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
+3. In the **Certificate Export Wizard**, select **Next**.
+4. On the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, and then select **Next**.
+5. On the **File to Export** screen, enter a name for your certificate and select **Next**.
+6. Select **Finish** to complete the **Certificate Export Wizard**.
+7. Locate the exported certificate. Select and hold the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
 
     ![Screenshot of click install Certificate.](./media/back-up-vmware/install-certificate.png)
 
-7. In the **Certificate Import wizard**, select **Local Machine** and then select **Next**.
-8. To find the location where you want to place the certificate, on the **Certificate Store** screen, select **Place all certificates in the following store** and select **Browse**.
-9. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
+8. In the **Certificate Import wizard**, select **Local Machine** and then select **Next**.
+9. To find the location where you want to place the certificate, on the **Certificate Store** screen, select **Place all certificates in the following store** and select **Browse**.
+10. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
 
     ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
 
-10. Select **Next** and then select **Finish** to import the certificate successfully.
-11. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
+11. Select **Next** and then select **Finish** to import the certificate successfully.
+12. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
 
     ![Screenshot of verify connection page.](./media/back-up-vmware/secure-communication-established.png)
 
@@ -346,7 +347,7 @@ DPM provides application-consistent backups of Windows VMs and file-consistent b
 ### Back up virtual machine to Tape
 
 > [!NOTE]
-> Applicable to DPM 2019 and later.
+> This feature is applicable for DPM 2019 and later.
 
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 and later supports both OLR (Original Location Recovery) and ALR (Alternate Location Recovery) for restoring the protected VM.
 
