@@ -35,7 +35,7 @@ To remove an SDN from the System Center Virtual Machine Manager (VMM) fabric, yo
 >
 
 1. Select **VMs and Services** > **VM Networks**, and select the VM network to remove.
-2. Select and hold the VM network and select **Delete**.
+2. Right-click the VM network and select **Delete**.
 3. Repeat steps 1&2 for each VM network that you need to remove.
 
 ## Remove the logical networks
@@ -45,7 +45,7 @@ To remove an SDN from the System Center Virtual Machine Manager (VMM) fabric, yo
 >
 
 1. Select **Fabric** > **Logical networks**, and select the logical network to remove.
-2. Select and hold the logical network and select **Remove**.
+2. Right-click the logical network and select **Remove**.
 3. Repeat steps 1 and 2 for each logical network that you need to remove.
 
 > [!NOTE]
@@ -82,6 +82,6 @@ To remove an SDN from the System Center Virtual Machine Manager (VMM) fabric, yo
 >
 
 1. Select **Fabric** > **Network Services**, and select the network controller.
-2. Select and hold the NC and select **Remove**.
+2. Right-click the NC and select **Remove**.
 
     This action removes the NC service. Ensure that the job is complete. If the job fails, restart the job after making the required changes that the error message details you.

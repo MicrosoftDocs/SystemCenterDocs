@@ -21,7 +21,7 @@ To create a new management pack, perform the following steps:
 
 1. Open the **Administration** view and select **Management Packs**.
 
-2. Select and hold **Management Packs** and select **Create Management Pack**.
+2. Right-click **Management Packs** and select **Create Management Pack**.
 
 ## Creating Datacenter Dashboard
 

@@ -69,7 +69,7 @@ If you want to add additional nodes to the SOFS cluster, VMM automatically disco
 After the SOFS cluster is provisioned and managed by VMM, you can modify the storage pool and create the storage.
 
 1. Select **Fabric** > **Storage** > **Arrays**.
-2. Select and hold the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification
+2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification
 4.	After the pool appears with the new name if needed, select **Create File Share**.
 5.	In the Create File Share Wizard > **General**, specify a name for the share and select the pool from which storage should be taken.
 6.	In **Capacity**, specify the share size and settings.

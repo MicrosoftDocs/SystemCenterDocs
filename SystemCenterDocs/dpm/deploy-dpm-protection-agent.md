@@ -161,7 +161,7 @@ Use these steps:
 
         The **Component Services** window opens.
 
-    2.  In the **Component Services** window, expand **Computers**, expand **My Computer**, expand DCOM Config, select and hold the**DPM RA** service, and then select **Properties**.
+    2.  In the **Component Services** window, expand **Computers**, expand **My Computer**, expand DCOM Config, right-click the**DPM RA** service, and then select **Properties**.
 
     3.  Select **General**, and then set the **Authentication Level** to **Default**.
 

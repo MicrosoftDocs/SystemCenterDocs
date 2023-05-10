@@ -90,6 +90,6 @@ Use the following procedure to add the non-windows gateway:
 7. In **Gather Information**, select **Scan Provider** to run the basic validation test against the gateway.
 8. In **Host Group**, select one or more host groups to which the gateway will be available.
 9. In **Summary**, review the settings and select **Finish**.
-10. After the gateway is added, find its listing in **Network Services**, and select and hold > **Properties** > **Connectivity**.
+10. After the gateway is added, find its listing in **Network Services**, and right-click > **Properties** > **Connectivity**.
 11. Select **Enable front end connection**, and select the gateway network adapter and network site that provides connectivity outside the enterprise datacenter or hosting provider. Select **Enable back end connection**, and select a gateway network adapter and network site in a logical network within the enterprise. The network must have network virtualization enabled and the network site must have a static IP address.
 12. When you create a VM network, you can assign the gateway to it, and select the required connectivity options.

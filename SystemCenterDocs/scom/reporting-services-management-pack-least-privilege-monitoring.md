@@ -89,7 +89,7 @@ To configure permissions on System Center Operations Manager Management Server, 
 
 3. Open the **User Roles** view (located under the **Security** folder).
 
-4. Select and hold the **Operations Manager Operators** role and select **Properties**.
+4. Right-click the **Operations Manager Operators** role and select **Properties**.
 
 5. On the **General Properties** tab, select **Add**.
 

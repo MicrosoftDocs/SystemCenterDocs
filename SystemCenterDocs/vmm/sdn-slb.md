@@ -43,7 +43,7 @@ Ensure the following:
 
 - **Planning**: Read about planning a software defined network, and review the planning topology in [this](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM) and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should have an [SDN network controller](sdn-controller.md) deployed in the VMM fabric so that you've the compute and network infrastructure running before you set up the load balancing.
-- **SSL certificate**: To import the SLB service template, you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, select and hold the certificate and export it without a password in .CER format. Place it in the library in the NCCertificate.CR folder you created when you set up the network controller.
+- **SSL certificate**: To import the SLB service template, you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click the certificate and export it without a password in .CER format. Place it in the library in the NCCertificate.CR folder you created when you set up the network controller.
 - **Service template**: VMM uses a service template to automate SLB deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
 - **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016 or later with the latest patches installed.
 - **HNV Network**: Ensure that you created the Provider HNV network as part of NC validation. [Learn more](./sdn-controller.md).
@@ -111,7 +111,7 @@ You can create IP address pool using the **Create Logical Network** wizard.
 
 **Create the IP address pool**:
 
-1. Select and hold the logical network > **Create IP Pool**.
+1. Right-click the logical network > **Create IP Pool**.
 2. Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
 3. In **Network Site**, select the subnet that this IP address pool will service. If you've more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you've only one site (for example, like the sample topology), then you can just select **Next**.
 4. In **IP Address range**, configure the starting and ending IP address. Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
@@ -164,7 +164,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 
 ### Create IP address pools for the private and public VIP networks
 
-1. Select and hold the private VIP logical network > **Create IP Pool**.
+1. Right-click the private VIP logical network > **Create IP Pool**.
 2. Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
 3. Accept the default network site, and select **Next**.
 ::: moniker range="<sc-vmm-2019"
@@ -241,9 +241,9 @@ Now deploy an SLB/MUX service instance.
 
 4. After you configure these settings, select **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes.
 5. If you're not using a volume licensed VHDX, or if the VHDX doesn't have the product key from an answer file, then deployment will stop at the **Product Key** page during SLB/MUX VM provisioning. You need to manually access the VM desktop, and either skip or enter the product key.
-6. When the service deployment job is complete, verify that your service appears in **VMs and Services** > **Services** > **VM Network Information for Services**. Select and hold the service and verify that the state is **Deployed** in **Properties**.
+6. When the service deployment job is complete, verify that your service appears in **VMs and Services** > **Services** > **VM Network Information for Services**. Right-click the service and verify that the state is **Deployed** in **Properties**.
 
-After deployment, verify that the service appears in **All Hosts** > **Services** > **VM Network Information for Services**. Select and hold the SLB MUX service > **Properties**, and verify that the state is **Deployed**. If the SLB/MUX deployment fails, ensure that you delete the failed service instance before you try to deploy the SLB once again.
+After deployment, verify that the service appears in **All Hosts** > **Services** > **VM Network Information for Services**. Right-click the SLB MUX service > **Properties**, and verify that the state is **Deployed**. If the SLB/MUX deployment fails, ensure that you delete the failed service instance before you try to deploy the SLB once again.
 
 If you want to scale in or scale out a deployed software load balancer service instance, [read this blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
@@ -258,7 +258,7 @@ If you want to scale in or scale out a deployed software load balancer service i
 
 Now that the service is deployed, you can configure its properties. You'll need to associate the SLB service instance that you deployed with network controller, and then configuring BGP peering between the SLB/MUX instance and a TOR switch or a BGP router peer.
 
-1. Select **Fabric** > **Network Service**. Select and hold the **network controller** service > **Properties**.
+1. Select **Fabric** > **Network Service**. Right-click the **network controller** service > **Properties**.
 2. Select the **Services** tab > **Load Balancer Role** > **Associated Service** > **Browse**.
 3. Select the SLB/MUX service instance you created earlier. Select a Run As Account.
 4. For the **Management IP address**, use an IP address from the private VIP pool you created earlier. Optionally specify the IP address ranges to be excluded from the outbound NAT.

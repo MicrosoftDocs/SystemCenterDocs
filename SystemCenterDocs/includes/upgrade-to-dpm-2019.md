@@ -78,7 +78,7 @@ Once you've the new instance of SQL Server installed and prepared for DPM use, y
 This example prepares a remote SQL Server cluster to use in a migration.
 
 1. On the System Center Data Protection Manager server or on the remote SQL Server hosting the DPM database, start **Microsoft SQL Management Studio** and connect to the SQL Instance hosting the current DPM DPMDB.
-2. Select and hold the DPM database and under **Tasks**, select the **Back Up…** option.
+2. Right-click the DPM database and under **Tasks**, select the **Back Up…** option.
 
       ![Screenshot of Microsoft SQL Management Studio page showing Select Backup option.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-backup.png)
 
@@ -88,7 +88,7 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
 4. After the backup is complete, copy the output file to the remote SQL Server. If this is a SQL Cluster, copy it to the active node hosting the SQL instance you want to use in the DPM upgrade.  Before you can restore the DPM database, you must copy it to the Shared Cluster disk.
 5. On the Remote SQL Server, start **Microsoft SQL Management Studio** and connect to the SQL instance you want to use in the DPM upgrade. If this is a SQL Cluster, do this on the Active node that you copied the DPM backup file to. The backup file should now be located on the shared cluster disk.
-6. Select and hold the Databases icon, then select the **Restore Database…** option. This starts the restore wizard.
+6. Right-click the Databases icon, then select the **Restore Database…** option. This starts the restore wizard.
 
       ![Screenshot of Microsoft SQL Management Studio showing select restore database option.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-restore-database.png)
 
@@ -165,7 +165,7 @@ After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019
 
 Use the following steps:
 
-1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, select and hold the member and then select **Stop protection of member...**.
+1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member and then select **Stop protection of member...**.
 
    ![Screenshot showing how to stop protection.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 

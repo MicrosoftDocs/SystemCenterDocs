@@ -61,7 +61,7 @@ Each of these modes supports both the SQL Server and the Windows authentication.
 
 To configure agentless monitoring, perform the following steps:
 
-1. In the Operations Manager console, navigate to **Authoring** | **Management Pack Templates**, select and hold **Microsoft SQL Server**, and select **Add Monitoring Wizard**.
+1. In the Operations Manager console, navigate to **Authoring** | **Management Pack Templates**, right-click **Microsoft SQL Server**, and select **Add Monitoring Wizard**.
 
     ![Screenshot showing Running Add Monitoring Wizard.](./media/sql-server-management-pack/running-add-monitoring-wizard.png)
 
@@ -135,7 +135,7 @@ To configure mixed monitoring, perform the following steps:
 
 1. In the Operations Manager console, navigate to **Authoring** | **Management Pack Objects**, and select **Object Discoveries**.
 
-2. Select and hold **MSSQL: Discover Local SQL Database Engines on Windows** and select **Overrides** > **Override the Object Discovery** > **For all objects of class: MSSQL on Windows: Local Discovery Seed**.
+2. Right-click **MSSQL: Discover Local SQL Database Engines on Windows** and select **Overrides** > **Override the Object Discovery** > **For all objects of class: MSSQL on Windows: Local Discovery Seed**.
 
     ![Screenshot showing Local discovery seed.](./media/sql-server-management-pack/local-discovery-seed.png)
 
@@ -153,7 +153,7 @@ Management Pack for SQL Server allows you to customize views and configure auxil
 
 To view currently used monitoring types, perform the following steps:
 
-1. Select and hold the **Database Engines** view and select **Personalize View**.
+1. Right-click the **Database Engines** view and select **Personalize View**.
 
 2. In the **Columns to display** list, select the **Monitoring Type** checkbox.
 

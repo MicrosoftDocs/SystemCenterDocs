@@ -29,7 +29,7 @@ To configure permissions on System Center Operations Manager, perform the follow
 
 3. In the navigation pane, select **User Roles** under the **Security** folder.
 
-4. Select and hold the **Operations Manager Operators** role and select **Properties**.
+4. Right-click the **Operations Manager Operators** role and select **Properties**.
 
     ![Screenshot showing User role properties.](./media/sql-server-dashboards-management-pack/properties.png)
 

@@ -22,7 +22,7 @@ In addition to the standard [health and performance monitoring](azure-sql-manage
 
 To add a new two-state custom query-based monitor, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, select and hold **Monitors**, and select **Create a Monitor | Unit Monitor**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, right-click **Monitors**, and select **Create a Monitor | Unit Monitor**.
 
     ![Screenshot of creating a two-state unit monitor.](./media/azure-sql-management-pack/azure-creating-unit-monitor.png)
 

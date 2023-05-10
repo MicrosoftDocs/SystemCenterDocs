@@ -77,7 +77,7 @@ Before you can add guarded hosts to your VMM compute fabric, you must configure 
 To configure an existing Hyper-V host managed by VMM to be a guarded host, complete the following steps:
 
 1. Place the host in [maintenance mode](hyper-v-service.md#put-hosts-in-maintenance-mode).
-2. In **All Hosts**, select and hold the host > **Properties** > **Host Guardian Service**.
+2. In **All Hosts**, right-click the host > **Properties** > **Host Guardian Service**.
 
     ![Screenshot of Enable a host as a guarded host.](./media/guarded-deploy-host/guarded-enable-host.png)
 
@@ -95,7 +95,7 @@ VMM checks that the host passes attestation when you add it and every time the h
 
 Enable a cloud to support guarded hosts:
 
-1.	In the VMM console, select **VMs and Services** > **Clouds**. Select and hold the cloud name > **Properties**.
+1.	In the VMM console, select **VMs and Services** > **Clouds**. Right-click the cloud name > **Properties**.
 2.	In **General** > **Shielded VM support**, select **Supported on this private cloud**.
 
 ## Manage and deploy code integrity policies with VMM
@@ -113,7 +113,7 @@ To deploy a code integrity policy to a guarded host managed by VMM, complete the
 
 Now, for each guarded host, complete the following steps to apply a code integrity policy:
 1. Place the host in [maintenance mode](hyper-v-service.md#put-hosts-in-maintenance-mode).
-2. In **All Hosts**, select and hold the host > **Properties** > **Host Guardian Service**.
+2. In **All Hosts**, right-click the host > **Properties** > **Host Guardian Service**.
 
     ![Screenshot of Apply a code integrity policy.](./media/guarded-deploy-host/guarded-enable-host.png)
 
@@ -126,7 +126,7 @@ Now, for each guarded host, complete the following steps to apply a code integri
 
 If you update the code integrity policy in the file share and wish to also update the guarded hosts, you can do so by completing the following steps:
 1. Place the host in [maintenance mode](hyper-v-service.md#put-hosts-in-maintenance-mode).
-2. In **All Hosts**, select and hold the host > **Apply Latest Code Integrity Policy**.
+2. In **All Hosts**, right-click the host > **Apply Latest Code Integrity Policy**.
 3. Take the host out of maintenance mode.
 
 ## Next steps

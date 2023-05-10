@@ -344,7 +344,7 @@ Follow these steps to replace the existing report files:
 
     ![List of individual report files](media/release-notes/individual-report-files.png)
 
-4.	Select the report files that don't end with *Report*, select and hold **Option**, and then select **Manage**.
+4.	Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
 
     ![Manage report files](media/release-notes/manage-report-files.png)
 
@@ -769,7 +769,7 @@ Follow these steps to replace the existing report files:
 
     ![List of individual report files](media/release-notes/individual-report-files.png)
 
-4.	Select the report files that don't end with *Report*, select and hold **Option**, and then select **Manage**.
+4.	Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
 
     ![Manage report files](media/release-notes/manage-report-files.png)
 
