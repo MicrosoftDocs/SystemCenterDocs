@@ -5,12 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/15/2022
+ms.date: 05/10/2023
 title: Generate DPM reports
 ms.technology: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
 ms.author: jsuri
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Generate DPM reports
@@ -28,15 +28,13 @@ DPM provides many different reports:
 
 -   **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
 
--   **Protection report**:  Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
+-   **Protection report**: Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
 
 -   **Recovery report**: Provides commonly used metrics for recovery success rolled up over long periods of time. Use this report to track how recoveries are doing and how well you performed against your SLAs for RTOs.
 
--   **Disk utilization report**: Summarizes disk capacity, disk allocation, and disk usage in the DPM storage pool.
-    Use this report to do the following:
-    Identify trends in disk usage and make decisions about modifying space allocations.
+-   **Disk utilization report**: Summarizes disk capacity, disk allocation, and disk usage in the DPM storage pool. Use this report to identify trends in disk usage and make decisions about modifying space allocations.
 
--   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning, and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
+-   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
 
 ### Predefined SQL reports
 DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method than querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need in-depth knowledge of the entire database or the relationship between tables and keys.
@@ -50,7 +48,7 @@ The following table summarizes the predefined SQL views.
 |--------|---------|-------------|---------------|
 |**Vw_DPM_Agents**<br /><br />Contains the list of computers on which a DPM protection agent from this DPM server is installed.|ServerName|String|The name of the computer|
 |**Vw_DPM_Agents**|Version|String|DPM agent version on that computer|
-|**Vw_DPM_Alerts**<br /><br />List of alerts from the last 30 days|Severity|Integer<br /><br />0=Error<br /><br />1=Warning<br /><br />2=Information|Alert severity|
+|**Vw_DPM_Alerts**<br /><br />List of alerts from the last 30 days|Severity|Integer<br /><br />0 = Error<br /><br />1 = Warning<br /><br />2 = Information|Alert severity|
 |**Vw_DPM_Alerts**|Resolution|Integer<br /><br />0 = Active<br /><br />1 = Recommended action in progress<br /><br />2 = Resolved|Alert state|
 |**Vw_DPM_Alerts**|OccurredSince|Date and Time|First time alert was raised|
 |**Vw_DPM_Alerts**|ResolvedTime|Date and Time|Time when alert was resolved|
@@ -72,7 +70,7 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_Disk_Usage_Replica**|ShadowCopyUsed|Big Integer|Part of ShadowCopyAllocated actually in use|
 |**Vw_DPM_Disk_Usage_Replica**|StartDateTime|Date and time||
 |**Vw_DPM_Disk_Usage_Replica**|EndDateTime|Date and time||
-|**Vw_DPM_Disk_Usage_Replica**|ScheduleType|Integer<br /><br />0=weekly; 1=monthly; 2=quarterly; 3=yearly||
+|**Vw_DPM_Disk_Usage_Replica**|ScheduleType|Integer<br /><br />0 = weekly; 1 = monthly; 2 = quarterly; 3 = yearly||
 |**Vw_DPM_DiskRecoveryPoints**<br /><br />Counts for disk recovery points available for each data source.|DataSourceName|String|Protected data source name|
 |**Vw_DPM_DiskRecoveryPoints**|PGId|GUID|Unique identifier for protection group to which data source belongs|
 |**Vw_DPM_DiskRecoveryPoints**|ServerId|GUID|Unique identifier for server to which data source belongs|
@@ -110,17 +108,17 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_RecoveryJob**|ServerName|String|The server to which recovery was performed|
 |**Vw_DPM_RecoveryJob**|CreationTime|Date and time|Time at which the recovery job was run|
 |**Vw_DPM_RecoveryJob**|FailureCode|Integer|Error code in case of failure of the recovery job|
-|**Vw_DPM_RecoveryJob**|Status|Integer<br /><br />0/1=Progress<br /><br />2=Succeeded<br /><br />3=Failure|Status of the recovery job|
+|**Vw_DPM_RecoveryJob**|Status|Integer<br /><br />0/1 = Progress<br /><br />2 = Succeeded<br /><br />3 = Failure|Status of the recovery job|
 |**Vw_DPM_RecoveryPointDisk**<br /><br />Status of recent recovery point creation jobs on disk.|String|The data source for which the backup was created|String|
 |**Vw_DPM_RecoveryPointDisk**|String|The server on which the data source exists|String|
 |**Vw_DPM_RecoveryPointDisk**|Date and time|The time at which the recovery point creation job was run|Date and time|
-|**Vw_DPM_RecoveryPointDisk**|Integer<br /><br />0/1=Progress<br /><br />2=Succeeded<br /><br />3=Failure|Status of the recovery point creation job|Integer<br /><br />0/1=Progress<br /><br />2=Succeeded<br /><br />3=Failure|
+|**Vw_DPM_RecoveryPointDisk**|Integer<br /><br />0/1 = Progress<br /><br />2 = Succeeded<br /><br />3 = Failure|Status of the recovery point creation job|Integer<br /><br />0/1 = Progress<br /><br />2 = Succeeded<br /><br />3 = Failure|
 |**Vw_DPM_RecoveryPointDisk**|Integer|Zero if succeeded.<br /><br />Else, set to a DPM error code.|Integer|
 |**Vw_DPM_RecoveryPointTape**<br /><br />Status of recent recovery point creation jobs on tape.||||
 |**Vw_DPM_RecoveryPointTape**|String|The data source for which the backup was created|String|
 |**Vw_DPM_RecoveryPointTape**|String|The server on which the data source exists|String|
 |**Vw_DPM_RecoveryPointTape**|Date and time|The time at which the recovery point creation job was run|Date and time|
-|**Vw_DPM_RecoveryPointTape**|Integer<br /><br />0/1=Progress<br /><br />2=Succeeded<br /><br />3=Failure|Status of the recovery point creation job|Integer<br /><br />0/1=Progress<br /><br />2=Succeeded<br /><br />3=Failure|
+|**Vw_DPM_RecoveryPointTape**|Integer<br /><br />0/1 = Progress<br /><br />2 = Succeeded<br /><br />3 = Failure|Status of the recovery point creation job|Integer<br /><br />0/1 = Progress<br /><br />2 = Succeeded<br /><br />3 = Failure|
 |**Vw_DPM_Replica**<br /><br />Listing of all replicas managed by DPM|ReplicaId|GUID|Unique identifier generated by DPM for the replica volume|
 |**Vw_DPM_Replica**|PhysicalPath|String|The name of the data source on the replica|
 |**Vw_DPM_Replica**|ServerName|String|Name of the server to which the data source belongs|
@@ -137,21 +135,21 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_TapeRecoveryPoints**|PGId|GUID|The unique identifierentifier for the protection group to which this data source belongs|
 |**Vw_DPM_TapeRecoveryPoints**|ServerId|GUID|The unique identifierentifier for the server to which this data source belongs|
 |**Vw_DPM_TapeRecoveryPoints**|Frequency|Integer|The number of available recovery points|
-|**Vw_DPM_TapeRecoveryPoints**|Term|Integer<br /><br />0=ShortTerm; 1=LongTerm|The schedule to which the recovery point corresponds|
+|**Vw_DPM_TapeRecoveryPoints**|Term|Integer<br /><br />0 = ShortTerm; 1 = LongTerm|The schedule to which the recovery point corresponds|
 |**Vw_DPM_TapeStat**<br /><br />Historical information on tape usage counts.|StartDateTime|Date and time||
 |**Vw_DPM_TapeStat**|EndDateTime|Date and time||
-|**Vw_DPM_TapeStat**|ScheduleType|Integer|Integer<br /><br />0=Weekly<br /><br />1=Monthly<br /><br />2=Quarterly<br /><br />3=Yearly|
+|**Vw_DPM_TapeStat**|ScheduleType|Integer|Integer<br /><br />0 = Weekly<br /><br />1 = Monthly<br /><br />2 = Quarterly<br /><br />3 = Yearly|
 |**Vw_DPM_TapeStat**|Free|Integer|Number of free tapes at end-time|
 |**Vw_DPM_TapeStat**|Online|Integer|Number of online tapes at end time|
 |**Vw_DPM_TapeUsagePerPG**<br /><br />Historical tape usage data per protection group.|StartDateTime|Date and time|Start time|
 |**Vw_DPM_TapeUsagePerPG**|EndDateTime|Date and time|End time|
 |**Vw_DPM_TapeUsagePerPG**|PGName|String|Name of the protection group|
-|**Vw_DPM_TapeUsagePerPG**|ScheduleType|Integer|Integer<br /><br />0=Weekly<br /><br />1=Monthly<br /><br />2=Quarterly<br /><br />3=Yearly|
+|**Vw_DPM_TapeUsagePerPG**|ScheduleType|Integer|Integer<br /><br />0 = Weekly<br /><br />1 = Monthly<br /><br />2 = Quarterly<br /><br />3 = Yearly|
 |**Vw_DPM_TapeUsagePerPG**|Online|Integer|Number of online tapes at end time|
 |**Vw_DPM_TapeUsagePerPG**|Offline|Integer|Number of offline tapes at end time|
 |**Vw_DPM_Total_Disk_Trend**<br /><br />Total disk space usage historical trend.|StartDateTime|Date and time||
 |**Vw_DPM_Total_Disk_Trend**|EndDateTime|Date and time||
-|**Vw_DPM_Total_Disk_Trend**|ScheduleType|Integer|Integer<br /><br />0=Weekly<br /><br />1=Monthly<br /><br />2=Quarterly<br /><br />3=Yearly|
+|**Vw_DPM_Total_Disk_Trend**|ScheduleType|Integer|Integer<br /><br />0 = Weekly<br /><br />1 = Monthly<br /><br />2 = Quarterly<br /><br />3 = Yearly|
 |**Vw_DPM_Total_Disk_Trend**|DiskSpaceCapacity|Big integer|The total storage in storage pool at end-time|
 |**Vw_DPM_Total_Disk_Trend**|PreviousDiskSpaceCapacity|Big integer|Total storage in storage pool in previous corresponding period|
 |**Vw_DPM_Total_Disk_Trend**|DiskSpaceAllocated|Big integer|The disk space from storage pool that has been allocated|
@@ -161,7 +159,7 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_Total_RecoveryPoint**<br /><br />Information about all recent recovery point jobs.|DataSourceName|String|The name of the protected data source|
 |**Vw_DPM_Total_RecoveryPoint**|ServerName|String|The server to which the data source belongs|
 |**Vw_DPM_Total_RecoveryPoint**|CreationTime|Date and time|The time at which the recovery point creation job was run|
-|**Vw_DPM_Total_RecoveryPoint**|Status|Integer<br /><br />0/1=Progress<br /><br />2=Succeeded<br /><br />3=Failure|Status of the recovery point creation job|
+|**Vw_DPM_Total_RecoveryPoint**|Status|Integer<br /><br />0/1 = Progress<br /><br />2 = Succeeded<br /><br />3 = Failure|Status of the recovery point creation job|
 |**Vw_DPM_Total_RecoveryPoint**|ErrorCode|Integer|Error code in recovery point creation|
 
 ### Set up reports
@@ -200,7 +198,11 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 > [!NOTE]
 > If you experience any issues with reports on fitting on A4 paper, try changing the dimensions of the report page width to 8.27 in and the height to 11.69 in. See details on how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
 
-##### Print MHTML reports
+Select the required tab for steps to print MHTML, PDF, or Microsoft Excel reports:
+
+# [Print MHTML reports](#tab/MHTMLReports)
+
+Follow these steps to print MHTML reports:
 
 1.  On the Internet Explorer **File** menu, select **Page Setup**.
 
@@ -208,7 +210,9 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 
 3.  Set **Margins** to values no greater than the following (in inches): **Left:** 0.11, **Right:** 0.11, **Top:** 0.11, **Bottom:** 0.11. Then print the report.
 
-##### Print a PDF report
+# [Print a PDF report](#tab/PDFReport)
+
+Follow these steps to print PDF reports:
 
 1.  In Adobe Acrobat, open the **Print** page.
 
@@ -216,7 +220,9 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 
 3.  On the **Advanced** tab, set the orientation to **Portrait** and print the report.
 
-##### Print a report using Microsoft Excel
+# [Print a report using Microsoft Excel](#tab/MSExcel)
+
+Follow these steps to print reports using Microsoft Excel:
 
 1.  Open the file in Excel.
 
@@ -229,6 +235,8 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 5.  In **Scale to Fit**, set  **Scale** to 80%.
 
 6.  In **Sheet Options**, clear **Print** if it's selected. Then print the report.
+
+---
 
 ### Send reports
 You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports, do the following:
@@ -278,7 +286,7 @@ DPM provides many predefined views that you can use to search more simply than d
 |DataSourceName|varchar(max)|Data source for which the recovery job ran|
 |StartedDateTime|datetime|Job start time|
 |StoppedDateTime|datetime|Job end time|
-|ExecutionState|Int|2=succeeded; 3=failed|
+|ExecutionState|Int|2 = succeeded; 3 = failed|
 |ErorCode|int|Error code. If job succeeded ignore the error.|
 |ErrorString|varchar(max)|Corresponding localized error string|
 |TransferredBytes|int|Number of bytes transferred by the job|
