@@ -168,7 +168,7 @@ After you've restored the VMM server, take the following steps:
 
 2.  Add any hosts or virtual machines that were added after the last backup.
 
-# [On a different computer](#tab/DifferentComputer)
+# [A different computer](#tab/DifferentComputer)
 If you plan to restore the VMM management server onto a different physical computer, first review the hardware requirements in System Requirements.
 
 Next, reinstall VMM on the selected server, and point this VMM server to the VMM database. Because this server will have a different SID than the original computer, a few steps are necessary to bring it current with your environment. These steps include re-associating hosts with the new VMM server (otherwise, they remain mapped to the original computer's machine account).
