@@ -51,9 +51,13 @@ In addition to backing up the database, we recommend that you create a system st
 > - There are several ways to recover the VMM database file that you create through either of the following backup procedures. One way, which requires the VMM management server to be functioning, is to use the **SCVMMRecover.exe** tool, as described in [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)) (although **SCVMMRecover.exe** is not a cmdlet). Another way, which doesn't require the VMM management server to be functioning, is to restore by using SQL Server tools for restoring and attaching a database file.
 > - To use the following procedures, you must be a member of the Administrator user role.
 
-Select the required tab for steps to back up the VMM database by using the VMM console or by using cmdlets in Windows PowerShell:
+You can back up the VMM database in the following ways:
+1. By using the VMM console
+1. By using cmdlets in Windows PowerShell
 
-# [Back up the VMM database by using the VMM console](#tab/VMMConsole)
+Select the required tab for steps to back up the VMM database by:
+
+# [Using the VMM console](#tab/VMMConsole)
 
 Follow these steps to back up the VMM database by using the VMM console:
 
@@ -65,7 +69,7 @@ Follow these steps to back up the VMM database by using the VMM console:
 
     For information about how to recover the backup, see the **Important** note before this procedure.
 
-# [Back up the VMM database by using cmdlets in Windows PowerShell](#tab/WindowsPowerShell)
+# [Using cmdlets in Windows PowerShell](#tab/WindowsPowerShell)
 
 Follow these steps to back up the VMM database by using cmdlets in Windows PowerShell:
 
@@ -153,9 +157,9 @@ If the VMM database must be restored, restore it first, using the process that c
 
 If the VMM database is the only element that you need to restore, and you want information about the **SCVMMRecover.exe** tool, see [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)).
 
-Select the required tab for steps to restore the VMM server on the same or a different computer:
+You can restore the VMM server on the same or a different computer. Select the required tab for steps to restore the VMM server on:
 
-# [Restore the VMM server on the same computer](#tab/SameComputer)
+# [The same computer](#tab/SameComputer)
 If you're using the same computer for the VMM server, perform a system state restore on that computer (otherwise, skip this section). If you do this, the SID of the VMM server remains the same, and fewer steps are required to restore your VMM environment.
 
 After you've restored the VMM server, take the following steps:
@@ -164,7 +168,7 @@ After you've restored the VMM server, take the following steps:
 
 2.  Add any hosts or virtual machines that were added after the last backup.
 
-# [Restore the VMM server on a different computer](#tab/DifferentComputer)
+# [On a different computer](#tab/DifferentComputer)
 If you plan to restore the VMM management server onto a different physical computer, first review the hardware requirements in System Requirements.
 
 Next, reinstall VMM on the selected server, and point this VMM server to the VMM database. Because this server will have a different SID than the original computer, a few steps are necessary to bring it current with your environment. These steps include re-associating hosts with the new VMM server (otherwise, they remain mapped to the original computer's machine account).
