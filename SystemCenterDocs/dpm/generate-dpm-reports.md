@@ -164,7 +164,9 @@ The following table summarizes the predefined SQL views.
 
 ### Set up reports
 
-#### Schedule reports
+Select the required tab to schedule, view, print, or send reports:
+
+# [Schedule reports](#tab/Schedule)
 Reports aren't scheduled by default in DPM. To start creating and saving historical reports, create a report schedule. Each report type has an independent schedule. A report only has a single schedule. Schedule a report as follows:
 
 1.  In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and select **Schedule**.
@@ -173,7 +175,7 @@ Reports aren't scheduled by default in DPM. To start creating and saving histori
 
 3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
 
-### View reports
+# [View reports](#tab/View)
 In the DPM Administrator Console, you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of a report to customize, export, or print it.
 
 1.  You can request a new report with the following settings:
@@ -192,7 +194,7 @@ In the DPM Administrator Console, you can display both new and historical report
 
 2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report so that you can retain the maximum number of copies at all times.
 
-### Print reports
+# [Print reports](#tab/Print)
 Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats aren't editable, so you can't modify the report to fit other paper sizes.
 
 > [!NOTE]
@@ -200,7 +202,7 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 
 Select the required tab for steps to print MHTML, PDF, or Microsoft Excel reports:
 
-# [Print MHTML reports](#tab/MHTMLReports)
+#### Print MHTML reports
 
 Follow these steps to print MHTML reports:
 
@@ -210,7 +212,7 @@ Follow these steps to print MHTML reports:
 
 3.  Set **Margins** to values no greater than the following (in inches): **Left:** 0.11, **Right:** 0.11, **Top:** 0.11, **Bottom:** 0.11. Then print the report.
 
-# [Print a PDF report](#tab/PDFReport)
+#### Print a PDF report
 
 Follow these steps to print PDF reports:
 
@@ -220,7 +222,7 @@ Follow these steps to print PDF reports:
 
 3.  On the **Advanced** tab, set the orientation to **Portrait** and print the report.
 
-# [Print a report using Microsoft Excel](#tab/MSExcel)
+#### Print a report using Microsoft Excel
 
 Follow these steps to print reports using Microsoft Excel:
 
@@ -236,15 +238,15 @@ Follow these steps to print reports using Microsoft Excel:
 
 6.  In **Sheet Options**, clear **Print** if it's selected. Then print the report.
 
----
-
-### Send reports
+# [Send reports](#tab/Send)
 You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports, do the following:
 1.  Specify the SMTP server that DPM will use to send reports.
 
 2.  In the Reporting view, on the display pane, select and hold the report to which you want to subscribe and select **Schedule**.
 
-3.  On the **E-mail** tab, in **Recipients**, type the email addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
+3.  On the **E-mail** tab, in **Recipients**, enter the email addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
+
+---
 
 ## Generate DPM reports in Operations Manager
 Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information, you can use predefined views or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212876(v=sc.12)).
