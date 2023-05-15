@@ -74,7 +74,7 @@ Values of few registries that are customized (commonly) are retained when an upd
 - While upgrading non-primary Management Servers, Data warehouse registry details are retained (which were previously deleted).
 - Support for group managed service accounts in the Installer setup.
 - Operations Manager 2022 supports .NET 4.8.
-- The Web console now utilizes HTML 5 instead of Silverlight.
+- The Web console now utilizes HTML5 instead of Silverlight.
 
 ### View alert source under active alerts
 
