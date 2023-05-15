@@ -164,7 +164,7 @@ The following table summarizes the predefined SQL views.
 
 ### Set up reports
 
-Select the required tab to schedule, view, print, or send reports:
+Select the required tab for steps to schedule, view, print, or send reports:
 
 # [Schedule reports](#tab/Schedule)
 Reports aren't scheduled by default in DPM. To start creating and saving historical reports, create a report schedule. Each report type has an independent schedule. A report only has a single schedule. Schedule a report as follows:
@@ -199,8 +199,6 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 
 > [!NOTE]
 > If you experience any issues with reports on fitting on A4 paper, try changing the dimensions of the report page width to 8.27 in and the height to 11.69 in. See details on how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
-
-Select the required tab for steps to print MHTML, PDF, or Microsoft Excel reports:
 
 #### Print MHTML reports
 
