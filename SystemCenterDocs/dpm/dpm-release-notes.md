@@ -120,6 +120,18 @@ In addition to the issues listed in DPM 2022 release notes, the following additi
  - Backup failures due to DpmFilter.sys not loading on DPM agent.
  - DPM crashes when tape backup failure alerts are inactive.
 
+## DPM 2022 UR1 release notes
+The following issues were identified after the release of DPM 2022 UR1 (KB 5019645) and are fixed in Hotfix for DPM 2022 UR1 (KB 5026073); We recommend that you apply the hotfix if you are running into the issues described below. For more information, see the [KB article](https://support.microsoft.com/help/5026073) for the Hotfix.
+### Backups for VMware VMs that have VMware Tools start failing with error "Disk SubSystem 0x80990EF1" 
+**Description**: DPM 2022 UR1 had a bug where backups VMware VMs would fail if VMware tools is installed. This was due to a faulty configuration in DPM.
+
+**Fix**: Apply Hotfix for DPM 2022 UR1.
+
+### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 & 2016 over TLS 1.2. 
+**Description**: DPM 2022 RTM and UR1 did not support MSOLEDB 18 for SQL Server 2017 and 2016 which is required to perform discovery and protection of SQL Server over TLS 1.2. This issue is observed after [KB5021128](https://support.microsoft.com/help/5021128) or [KB5021127](https://support.microsoft.com/help/5021127) is installed for SQL Server 2016 and 2017 respectively to mandate TLS 1.2 or when TLS 1.0 and 1.1 are disabled on the protected server.
+
+**Fix**: Apply Hotfix for DPM 2022 UR1, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
+
 ::: moniker-end
 
 
