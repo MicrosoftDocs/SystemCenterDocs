@@ -32,9 +32,11 @@ This article describes the backup and recovery process in a System Center - Virt
 - The data will be lost if the VMM management server fails.
 
 ## Create and implement a backup plan
-Basic elements of a backup plan include a list of what needs to be backed up and an outline of what is changed frequently (and therefore need to be backed up frequently) in your environment.
+The basic elements of a backup plan include a list of what needs to be backed up and an outline of what is changed frequently (and therefore need to be backed up frequently) in your environment.
 
-## Back up the VMM database
+Select the required tab for steps to backup the VMM database, the hosts and virtual machines in the VMM fabric:
+
+# [Back up the VMM database](#tab/BackupVMMDatabase)
 The VMM database contains information such as configurations, service templates, profiles, virtual machine templates, services, scale-out services, and other critical data that is required for VMM to function correctly. Back up the VMM database regularly.
 
 The VMM database can be stored on the VMM management server or on a separate server running Microsoft SQL Server. To back up the VMM database, you can use one or more of the following:
@@ -53,7 +55,7 @@ In addition to backing up the database, we recommend that you create a system st
 
 Select the required tab for steps to back up the VMM database by using the VMM console or by using cmdlets in Windows PowerShell:
 
-# [Back up the VMM database by using the VMM console](#tab/VMMConsole)
+### Back up the VMM database by using the VMM console
 
 Follow these steps to back up the VMM database by using the VMM console:
 
@@ -65,7 +67,7 @@ Follow these steps to back up the VMM database by using the VMM console:
 
     For information about how to recover the backup, see the **Important** note before this procedure.
 
-# [Back up the VMM database by using cmdlets in Windows PowerShell](#tab/WindowsPowerShell)
+### Back up the VMM database by using cmdlets in Windows PowerShell
 
 Follow these steps to back up the VMM database by using cmdlets in Windows PowerShell:
 
@@ -79,9 +81,7 @@ Follow these steps to back up the VMM database by using cmdlets in Windows Power
 
 For information about how to recover the backup, see the **Important** note before these procedures.
 
----
-
-## Back up hosts and virtual machines
+# [Back up hosts and virtual machines](#tab/BackupHostsAndVMs)
 
 Virtual machine hosts are Hyper-V hosts, VMware ESXi hosts, and host clusters on which virtual machines and services are deployed. To back up virtual machine hosts and clusters, use Microsoft System Center Data Protection Manager (DPM) or another backup application that takes advantage of Volume Shadow Copy Service (VSS) to copy host and virtual machine data to a remote file server share.
 
@@ -98,7 +98,7 @@ For more information, see [Get-SCVMMServer](/previous-versions/system-center/pow
 
 Back up all the configuration and resource files on each VMM host by using backup software that supports the VMM VSS writer. Backup software that supports VMM can minimize the number of steps required to archive and restore virtual machines, help minimize downtime, and help ensure consistency of the data that is being archived or restored.
 
-## Back up library servers
+# [Back up library servers](#tab/BackupLibraryServers)
 The VMM library includes file-based resources, such as virtual hard disks, ISO images, scripts, driver files, and application packages that are stored on library servers. These resources are closely associated with resources in the VMM database that aren't file-based, such as virtual machine and service templates and profiles. All these resources should be backed up.
 
 To back up the data on library servers, use System Center Data Protection Manager (DPM) or another backup application that takes advantage of Volume Shadow Copy Service (VSS) to copy host and virtual machine data to a remote file server share. For a list of VMM library servers, run the following cmdlet from the Windows PowerShell command line:
@@ -118,7 +118,7 @@ Back up all the files on library shares to a shared folder on a remote file serv
 - .vmc
 - .vsv
 
-## Back up VMM private clouds
+# [Back up VMM private clouds](#tab/BackupVMMPrivateClouds)
 
 To orchestrate and automate the replication and failover of virtual machines located in VMM clouds, you can use [Azure Site Recovery Manager](/azure/site-recovery/). You can replicate in the following ways:
 
@@ -127,7 +127,7 @@ To orchestrate and automate the replication and failover of virtual machines loc
 -   From an on-premises VMM site to Azure, using Hyper-V replication.
 
 
-## Back up registry keys, encryption keys, and credentials
+# [Back up registry keys, encryption keys, and credentials](#tab/BackupRegistryKeys)
 Use the following guidelines to back up registry keys, encryption keys, and non-VMM managed credentials:
 
 -   **Registry keys**: VMM uses multiple registry keys to store important settings. Settings are stored in the following registry key and its subkeys: **HKLM\Software\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings**.
@@ -140,11 +140,13 @@ Use the following guidelines to back up registry keys, encryption keys, and non-
 
 -   **Non-VMM managed credentials**: Some credentials that are related to VMM are managed by the Windows Credential Manager on the VMM management server. To access the Credential Manager, in the Control Panel, select **All Control Panel Items**, and then select **Credential Manager**. Select **Back up Credentials** to back up any VMM-related credentials.
 
-## Back up non-Microsoft user interface add-ins and other non-Microsoft applications
+# [Back up non-Microsoft user interface add-ins and other non-Microsoft applications](#tab/BackupAddins)
 
 You can use non-Microsoft user interface (UI) add-ins to extend the functionality of the VMM console. The data that is used by a UI add-in might be stored on the local server or on a remote computer, and it might be configured with a specific set of permissions. Consult the backup guidelines of your specific UI add-in.
 
 For any other non-Microsoft applications, refer to the application's specific backup guidelines.
+
+---
 
 ## Restore the VMM environment
 
