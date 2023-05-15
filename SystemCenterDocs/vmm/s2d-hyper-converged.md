@@ -69,9 +69,13 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 ## Step 1: Provision the cluster
 
-Select the required tab to provision a cluster from Hyper-V hosts or bare metal machines:
+You can provision a cluster in the following ways:
+1. From Hyper-V hosts
+1. From bare metal machines
 
-# [Provision a cluster from Hyper-V hosts](#tab/HyperVhosts)
+Select the required tab for the steps to provision a cluster:
+
+# [From Hyper-V hosts](#tab/HyperVhosts)
 
 Follow these steps to provision a cluster from Hyper-V hosts:
 
@@ -82,7 +86,7 @@ Follow these steps to provision a cluster from Hyper-V hosts:
 > - When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard. In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
 > - If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
-# [Provision a cluster from bare metal machines](#tab/BareMetalMachines)
+# [From bare metal machines](#tab/BareMetalMachines)
 
 > [!NOTE]
 > Typically, S2D node requires RDMA, QoS, and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).

@@ -5,11 +5,11 @@ description: This article provides instructions for deploying the VMM server in 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/11/2023
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment, engagement-fy23
+ms.custom: intro-deployment
 ---
 
 # Deploy a highly available VMM management server
@@ -46,11 +46,7 @@ Follow these steps to set up the failover cluster:
 11. In **Confirmation**, review the settings. Clear **Add all eligible storage to the cluster** if you want to configure storage later. Select **Next** to create the cluster.
 12. In **Summary**, confirm that the cluster was created and that the cluster name is listed in Failover Cluster Manager.
 
-Select the required tab for steps to install VMM on the first and second cluster nodes:
-
-# [Install VMM on the first cluster node](#tab/FirstClusterNode)
-
-Follow these steps to install VMM on the first cluster node:
+### Install VMM on the first cluster node
 
 1. On either node of the cluster you created, run the VMM setup and select **Install**.
 2. VMM detects its installing on a cluster node and asks you if you want to make the VMM server highly available. Select **Yes**.
@@ -65,11 +61,7 @@ Follow these steps to install VMM on the first cluster node:
 11. In **Port configuration**, modify the port settings if required.
 12. Finish installing VMM. You can't specify a library share right now. In a highly available deployment, you create the library share after the installation is complete.
 
-# [Install VMM on the second cluster node](#tab/SecondClusterNode)
-
-Follow these steps to install VMM on the second cluster node:
+## Install VMM on the second cluster node
 
 1. Run setup and confirm that you want to **add this server as a node** to the highly available deployment.
 2. During the wizard, specify the service account password. You don't need to specify other information.
-
----
