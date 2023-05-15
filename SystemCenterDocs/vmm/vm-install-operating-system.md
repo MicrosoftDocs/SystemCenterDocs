@@ -32,7 +32,7 @@ You can install an operating system from a DVD, from an ISO image file in the VM
 
 ## Prepare to install from a system DVD
 
-1. In **Virtual Machines**, select and hold the VM > **Properties**.
+1. In **Virtual Machines**, right-click the VM > **Properties**.
 2. In **Hardware Configuration**, select **DVD** on the **New** toolbar to add a virtual DVD drive to the IDE bus.
 3. Select **Physical CD/DVD drive**, and select the drive on the host.
 
@@ -62,7 +62,7 @@ By default, when you create a VM, an ISO attached as a virtual DVD drive is copi
 
 If the network adapter on the host computer supports network service boots, you can configure a virtual network adapter on the VM to enable this.
 
-1. In **Virtual Machines**, select and hold the VM > **Properties**.
+1. In **Virtual Machines**, right-click the VM > **Properties**.
 2. In **Hardware Configuration**, configure a network connection.
 3. On the **New** toolbar, select **Network Adapter** to add a virtual network adapter to the IDE bus.
 4. In **Connect to**, select the external virtual network to use for the network service boot. The list contains all virtual networks that are configured on the host.
@@ -71,7 +71,7 @@ If the network adapter on the host computer supports network service boots, you 
 
 ## Install the operating system on the virtual machine
 
-1. Select and hold the VM > **Connect to virtual machine**. Select **Yes** to start the VM.
+1. Right-click the VM > **Connect to virtual machine**. Select **Yes** to start the VM.
 2. On the Remote Control menu, select **Special Keys** and then select **Send Ctrl+Alt+Delete**.
 3. Install the operating system on the VM. The boot disk partition must be the Windows partition.
 4. After completing the installation, end your session with the VM and stop the VM in VMM.

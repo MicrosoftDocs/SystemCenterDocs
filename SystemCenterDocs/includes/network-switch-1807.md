@@ -44,7 +44,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 > Ensure you've at least one uplink port profile before you begin.
 
 1. Select **Fabric** > **Networking**
-2. Select and hold **Logical Switches**, and then select **Create Logical Switch**.
+2. Right-click **Logical Switches**, and then select **Create Logical Switch**.
 3. In **Create Logical Switch Wizard** > **Getting Started**, review the information.
 4. In **General**,
     - Specify a name
@@ -111,7 +111,7 @@ If you want to enable:
 >[!NOTE]
 > This feature is available from VMM 2019 UR2.
 
-From VMM 2019 UR2, you can view the logical switch topology. To view, select and hold the logical switch name, and then select **View Topology**. The topology diagram displays the following information.
+From VMM 2019 UR2, you can view the logical switch topology. To view, right-click the logical switch name, and then select **View Topology**. The topology diagram displays the following information.
 
 - **Uplink Port Profiles** - Includes information about Load Balancing algorithm, Teaming mode, and Network sites.
 - **Virtual Network Adapters** - Includes information about VM Networks, VLANs, and Port Classifications.
@@ -130,10 +130,10 @@ If a host in the VMM fabric has a standard virtual switch with or without SET, y
 
 1.	Record if NIC Teaming (LBFO) or SET is being used on the host.
 2.	If you're using NIC teaming on the host, record teaming and load balancing settings by running the PowerShell commandlet *Get-NetLbfoTeam*.
-3. In **Hyper-V Manager**, select and hold the host > **Virtual Switch Manager**. Select the virtual switch and verify whether **Enable single-root I/O virtualization (SR-IOV)** is selected. Close Hyper-V Manager.
-4. In the VMM console > **Fabric** > **Servers** > **All Hosts**, select and hold the host > **Properties**.
+3. In **Hyper-V Manager**, right-click the host > **Virtual Switch Manager**. Select the virtual switch and verify whether **Enable single-root I/O virtualization (SR-IOV)** is selected. Close Hyper-V Manager.
+4. In the VMM console > **Fabric** > **Servers** > **All Hosts**, right-click the host > **Properties**.
 5. In **Virtual Switches**, note the properties, including logical network and minimum bandwidth mode.
-6. In **Fabric** > **Networking** > **Logical Switches**, select and hold the logical switch that you want to convert the host configuration to and select **Properties**.
+6. In **Fabric** > **Networking** > **Logical Switches**, right-click the logical switch that you want to convert the host configuration to and select **Properties**.
 7. In **Logical Switches**, record the information:
     - In **General**, record the uplink mode, whether SR-IOV is enabled, and minimum bandwidth mode.
     - In **Extensions**, note whether any forwarding extensions have been added to the logical switch.
@@ -160,8 +160,8 @@ If a host in the VMM fabric has a standard virtual switch with or without SET, y
 > - If any operation in the conversion fails, no settings will be changed and the switch will not be converted.
 
 
-1. In VMM, select **Fabric** > **Servers** > **All Hosts**. Select and hold the host > **Properties**.
+1. In VMM, select **Fabric** > **Servers** > **All Hosts**. Right-click the host > **Properties**.
 2. On the **Virtual Switches** tab, select **Convert to Logical Switch**.
 3. Select the logical switch that you want to convert the host to. Then select the uplink port profile to use and select **Convert**.
 4. The **Jobs** dialog box might appear, depending on your settings. Ensure that the job has a status of **Completed** and then close the dialog.
-5. To verify that the switch was converted, select and hold the host, select **Properties**, and then select the **Virtual Switches** tab.
+5. To verify that the switch was converted, right-click the host, select **Properties**, and then select the **Virtual Switches** tab.

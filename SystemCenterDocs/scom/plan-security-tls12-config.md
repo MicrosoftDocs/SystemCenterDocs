@@ -76,7 +76,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 > Making these registry changes doesn't affect the use of Kerberos or NTLM protocols.
 
 1. Sign in to the server by using an account that has local administrative credentials.
-2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.
+2. Start Registry Editor by right-clicking **Start**, enter **regedit** in the **Run** textbox, and select **OK**.
 3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols**.
 4. Create a subkey under **Protocols** for **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, and **TLS 1.2**.  
 5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the subkey for TLS 1.0 would be **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server**.  
@@ -146,7 +146,7 @@ After completing the configuration of all prerequisites for Operations Manager, 
 
 ### Manually modify the registry
 1. Sign in to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
+2. Start Registry Editor by right-clicking **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
 3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319**.  
 4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
 5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\\.NETFramework\v4.0.30319**.  
@@ -179,7 +179,7 @@ If you're monitoring a supported version of Linux server with Operations Manager
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
 1. Sign in to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
+2. Start Registry Editor by right-clicking **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
 3. Locate the following ODBC subkey for OpsMgrAC: **HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC**.  
 
     >[!NOTE]

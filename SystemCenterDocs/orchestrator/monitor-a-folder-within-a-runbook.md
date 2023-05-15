@@ -34,9 +34,9 @@ The procedures to create, configure, and test a simple runbook that monitors a f
 
 Follow these steps to create a workflow: 
 
-1.  In the Runbook Designer **Connections** pane, select and hold the **Runbooks** folder to select **New**, and then select **Runbook**.  
+1.  In the Runbook Designer **Connections** pane, right-click the **Runbooks** folder to select **New**, and then select **Runbook**.  
 
-2.  Select and hold the **New Runbook** tab to select **Rename**.  
+2.  Right-click the **New Runbook** tab to select **Rename**.  
 
 3.  In the **Confirm Check out** dialog, select **Yes**.  
 
@@ -111,13 +111,13 @@ Follow these steps to configure the workflow:
 
 Follow these steps to modify the runbook settings:
 
-1.  Above the **Runbook Designer** Design workspace, select and hold the **Monitor Runbook** tab to select **Properties**.  
+1.  Above the **Runbook Designer** Design workspace, right-click the **Monitor Runbook** tab to select **Properties**.  
 
 2.  In the **Monitor Runbook Properties** dialog, select the **Logging** tab, and then select both **Store Activity-specific Returned Data** and **Store Common Returned Data**.  
 
 3.  Select **Finish**.  
 
-4.  Select and hold the **Monitor Runbook** tab to select **Check In**.  
+4.  Right-click the **Monitor Runbook** tab to select **Check In**.  
 
 ## Test the runbook  
 In the Runbook Tester, you can test runbooks in a simulated runtime and debugging environment. You can run an entire runbook, step through it one activity at a time, or add breakpoints to stop the simulation at any activity that you select.  
@@ -128,7 +128,7 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 Follow these steps to prepare your computer:
 
-1.  Select and hold **Start** to select **Open Windows Explorer**.  
+1.  Right-click **Start** to select **Open Windows Explorer**.  
 
 2.  Create a **C:\\Monitor** folder on your computer.  
 

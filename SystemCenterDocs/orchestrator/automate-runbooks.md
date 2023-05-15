@@ -49,7 +49,7 @@ Follow these steps to create a variable:
 
 1.  In the **Connections** pane in the Runbook Designer, expand the **Global Settings** folder, and then select the **Variables** folder.  
 
-2.  Select and hold the **Variables** folder or a subfolder of the **Variables** folder to select **New**, and then select **Variable** to open the **New Variable** dialog.  
+2.  Right-click the **Variables** folder or a subfolder of the **Variables** folder to select **New**, and then select **Variable** to open the **New Variable** dialog.  
 
 3.  In the **Name** box, enter a name for the variable.  
 
@@ -70,7 +70,7 @@ Follow these steps to create a variable:
 
 Follow these steps to insert a variable in an activity:
 
-1.  Select and hold the applicable activity from your runbook to select **Properties**, and then select the **Details** tab to open the activities properties dialog.  
+1.  Right-click the applicable activity from your runbook to select **Properties**, and then select the **Details** tab to open the activities properties dialog.  
 
 2.  In a text box, to open a menu, right-click to select **Subscribe**, and then select **Variable** to open the **Select a Variable** dialog.  
 
@@ -84,9 +84,9 @@ Follow these steps to insert a variable in an activity:
 
 Follow these steps to organize variables:
 
-1.  You can group variables into folders to organize them. To create a folder, select and hold the **Variables** folder to select **New**, and then select **Folder**.  
+1.  You can group variables into folders to organize them. To create a folder, right-click the **Variables** folder to select **New**, and then select **Folder**.  
 
-2.  To move a variable to a different folder, select and hold the variable, and then select **Move** to open the **Select a Folder** dialog.  
+2.  To move a variable to a different folder, right-click the variable, and then select **Move** to open the **Select a Folder** dialog.  
 
 3.  Select the destination folder, and then select **OK**. The variable is moved to the new folder location.
 ---

@@ -111,12 +111,12 @@ Follow these steps:
    >[!NOTE]
    >We recommend that you enable the TLS 1.2 protocol for incoming communications. Enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications. Registry changes don't affect the use of the Kerberos protocol or the NTLM protocol.
 
-   a. Start Registry Editor. To do this, select and hold **Start**, enter **regedit** in the Run box, and then select **OK**.
+   a. Start Registry Editor. To do this, right-click **Start**, enter **regedit** in the Run box, and then select **OK**.
 
    b. Locate the following registry subkey:          
     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols
 
-   c. Select and hold **Protocol**, and point to **New** > **Key**.
+   c. Right-click **Protocol**, and point to **New** > **Key**.
 
       ![Screenshot showing New registry key.](./media/integration-pack-for-om/new-registry-key.png)
 

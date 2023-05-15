@@ -60,7 +60,7 @@ You use the Encryption Key Backup or Restore Wizard to back up encryption keys o
 
 1.  Sign in to the computer that hosts the Service Manager management server of data warehouse management server by using an account that is a member of the Administrators group.  
 2.  In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.  
-3.  Select and hold **SecureStorageBackup.exe** and select **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
+3.  Right-click **SecureStorageBackup.exe** and select **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
 4.  On the **Introduction** page, select **Next**.  
 5.  On the **Backup or Restore?** page, select **Backup the Encryption Key**, and select **Next**.  
 6.  On the **Provide a Location** page, enter the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the MyServer server in the Backup shared folder, enter **\\\\MyServer\\Backup\\SMBackupkey.bin**, and select **Next**.  
@@ -112,7 +112,7 @@ You can use the following procedure as part of your disaster recovery preparatio
     2.  In the **Server Name** list, select the server and the instance for your Service Manager database. For example, select **computer\\INSTANCE1**.  
     3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 4.  In the **Object Explorer** pane, expand **Databases**.  
-5.  Right-click the database name, point to **Tasks**, and select **Generate Scripts**. For this example, select and hold **ServiceManager**, point to **Tasks**, and select **Generate Scripts**.  
+5.  Right-click the database name, point to **Tasks**, and select **Generate Scripts**. For this example, right-click **ServiceManager**, point to **Tasks**, and select **Generate Scripts**.  
 6.  In the Generate and Publish Scripts Wizard, do the following:  
     1.  On the **Introduction** page, select **Next**.  
     2.  On the **Choose Objects** page, select **Select specific database objects**, and select **Select All**.  
@@ -145,7 +145,7 @@ You can use the Windows PowerShell command-line interface to identify and copy y
 #### To back up unsealed management packs  
 
 1.  On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you'll store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
-2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, select and hold **Windows PowerShell**, and select **Run as administrator**.  
+2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, right-click **Windows PowerShell**, and select **Run as administrator**.  
 3.  In the Service Manager console, select **Administration**.  
 4.  In the **Tasks** pane, select **Start PowerShell Session**  
 5.  At the Windows PowerShell command prompt, enter the following command:  

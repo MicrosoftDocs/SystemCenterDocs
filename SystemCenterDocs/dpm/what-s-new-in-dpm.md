@@ -374,7 +374,7 @@ To add the machine accounts to the backup operator groups, run the following ste
 
 1. Open the command prompt, and type **lusrmgr.msc** to open Local Users and Groups.
 2. In the Local Users and Groups dialog, select **Groups**.
-3. In the list of groups, select and hold **Backup Operators** and select **Properties**.
+3. In the list of groups, right-click **Backup Operators** and select **Properties**.
 
     The **Backup Operators Properties** dialog opens.
 4. In the **Backup Operators Properties** dialog, select **Add**.
@@ -389,7 +389,7 @@ To add the machine accounts to the backup operator groups, run the following ste
 To give permissions to the share
 
 1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
-2. Select and hold the VM storage share and then select **Properties**.
+2. Right-click the VM storage share and then select **Properties**.
 4. In the **Properties** dialog, on the left navigation menu, select **Permissions**.
 5. Select **Customize permissions** to open the Advanced Security Settings dialog.
 6. On the **Permissions** tab, select **Add**.

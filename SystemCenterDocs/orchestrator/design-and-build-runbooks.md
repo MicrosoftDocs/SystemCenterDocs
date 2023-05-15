@@ -58,7 +58,7 @@ Use the following steps to sort activities by their activity name and category n
     The activities are sorted alphabetically by category name.  
 
 ## Changing icons  
-You can change the default size of each activity icon from small to large by selecting and holding an activity name and selecting **Small** or **Large**.
+You can change the default size of each activity icon from small to large by right-clicking an activity name and selecting **Small** or **Large**.
 
 ## Start a runbook in the Designer
 
@@ -70,7 +70,7 @@ Follow these steps to start a runbook in the Designer:
 
 3.  If the runbook is Checked Out, select the **Check In** button.  
 
-4.  In the Design workspace, select and hold the runbook tab and select **Run**.  
+4.  In the Design workspace, right-click the runbook tab and select **Run**.  
 
 5.  In the **Start Runbook** dialog, go to **Available Runbook Server\(s\)** box and select the applicable server.  
 

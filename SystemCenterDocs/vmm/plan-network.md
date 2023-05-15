@@ -118,7 +118,7 @@ The following table provides detailed guidelines. Additional information about I
 -   IP address pools support both IPv4 and IPv6 addresses. However, you can't mix IPv4 and IPv6 addresses in the same IP address pool.
 
 > [!NOTE]
-> After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, select and hold the listing for the virtual machine, select **Properties**, and select the **Hardware Configuration** tab. Select the network adapter, and in the results pane select **Connection details**.
+> After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, right-click the listing for the virtual machine, select **Properties**, and select the **Hardware Configuration** tab. Select the network adapter, and in the results pane select **Connection details**.
 
 ## Next steps
 

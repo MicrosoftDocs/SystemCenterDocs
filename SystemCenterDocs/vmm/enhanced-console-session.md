@@ -65,13 +65,13 @@ Ensure the following prerequisites:
 
 **Use the following steps**:
 
-1. Select and hold the host in **VMs & Services** and navigate to the **Enhanced Session** option.
+1. Right-click the host in **VMs & Services** and navigate to the **Enhanced Session** option.
 2. Select **Allow enhanced session mode** and select **OK**.
 
    ![Screenshot of the allow enhanced session.](media/enhanced-console/enhanced-console-enable.png)
 
 3. In the VMM console, navigate to the VM on this host.
-4. Select and hold the VM and select **Connect via Console**.
+4. Right-click the VM and select **Connect via Console**.
 
 
 ::: moniker range="<sc-vmm-2019"

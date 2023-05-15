@@ -104,7 +104,7 @@ The execution policy in Windows PowerShell determines which scripts must be digi
 
 
 1.  Select **Start**, then **All Programs**, then **Accessories**, and then **Windows PowerShell**.
-2.  Select and hold **Windows PowerShell** and select **Run As Administrator**. Select **Yes** when prompted by **User Account Control**.
+2.  Right-click **Windows PowerShell** and select **Run As Administrator**. Select **Yes** when prompted by **User Account Control**.
 3.  Enter the following command and select **Enter**:
 
     **set-executionpolicy remotesigned**

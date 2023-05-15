@@ -81,9 +81,9 @@ Create a VM template that includes settings for a shared VHDX file. The VHDX fil
 ## Include the VM template in a service template
 
 1. [Create a service template](library-service-templates.md), and add the VM template to the appropriate template tier.
-2. After you save and validate the template, select and hold the tier object in the service template designer and select **Properties**.
+2. After you save and validate the template, right-click the tier object in the service template designer and select **Properties**.
 3. In **Application Configuration**, add the application profile you created. When the service is deployed, the scripts in the application profile will run. Save and validate the service template.
-4. Select and hold the service template again > **Properties**.
+4. Right-click the service template again > **Properties**.
 5. In **General**, select **This machine tier can be scaled out** and specify a value greater than 1 for **Default instance count** and **Maximum instance count**. The maximum should be set to less or equal to the number of SCSI channels you configured in the VM template. The default count should be less than the maximum.
 6. In **Number of upgrade domains**, specify the same value as that in **Maximum instance count**. For example, if you specify a default count of 3 and a maximum count of 3, the guest cluster will have three nodes. The number of upgrade domains should also be set to 3 so that updates are performed in three stages, one node (VM) at a time. This leaves at least two VMs in the guest cluster running during planned maintenance.
 7. Save and validate the service template.

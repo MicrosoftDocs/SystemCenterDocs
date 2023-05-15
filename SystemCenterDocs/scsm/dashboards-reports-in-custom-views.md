@@ -39,7 +39,7 @@ One of the benefits of using System Center - Service Manager with Microsoft Shar
     New-SCManagementPack -DisplayName Dashboards
     ```
 
-4. In the Service Manager console, select **Work Items**. In the **Work Items** pane, select and hold **Incident Management**, and select **Create Folder**.
+4. In the Service Manager console, select **Work Items**. In the **Work Items** pane, right-click **Incident Management**, and select **Create Folder**.
 
 5. In the **Create new folder** dialog, enter **Dashboards** as the **Folder name**. Select **Dashboards** as the **Management pack**, and select **OK**.
 
