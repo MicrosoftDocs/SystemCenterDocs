@@ -20,15 +20,15 @@ ms.custom: intro-installation, UpdateFrequency2, engagement-fy23
 
 ::: moniker-end
 
-If you want to evaluate System Center - Service Manager and you've a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration won't support a production environment, and no scalability or performance estimates are provided. Because you can't install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper-V to create a virtual computer to host the data warehouse management server.
+If you want to evaluate System Center - Service Manager and you've a minimal amount of hardware available, install Service Manager on one computer. A sample single-computer configuration is shown in figure&nbsp;1. This configuration won't support a production environment, and no scalability or performance estimates are provided. Because you can't install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper-V to create a virtual computer to host the data warehouse management server.
 
- To install Service Manager on a single computer, start with a physical computer that is running Windows Server and Hyper\-V, and ensure that the CPU on the physical computer is compatible with Hyper\-V. Of the 8&nbsp;gigabytes \(GB\) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Ensure that at least 200&nbsp;GB of free space is available on the hard disk drive.  
+ To install Service Manager on a single computer, start with a physical computer that is running Windows Server and Hyper-V, and ensure that the CPU on the physical computer is compatible with Hyper-V. Of the 8&nbsp;gigabytes (GB) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Ensure that at least 200&nbsp;GB of free space is available on the hard disk drive.  
 
- **Figure 1: Single\-computer installation in which you use a physical computer that is running Windows Server and Hyper\-V**  
+ **Figure 1: Single-computer installation in which you use a physical computer that is running Windows Server and Hyper-V**  
 
  ![Screenshot showing the Minimum Configuration for Service Manager.](./media/install-one-computer/deploy-minimumconfiguration.png)  
 
- If your organization's best practice guidelines don't allow you to install applications on a Hyper\-V host, you can create a second virtual computer to host the Service Manager management server, the Service Manager database, and the data warehouse databases. Use the following procedures to install Service Manager on a single computer.  
+ If your organization's best practice guidelines don't allow you to install applications on a Hyper-V host, you can create a second virtual computer to host the Service Manager management server, the Service Manager database, and the data warehouse databases. Use the following procedures to install Service Manager on a single computer.  
 
 ## Install Service Manager
 
