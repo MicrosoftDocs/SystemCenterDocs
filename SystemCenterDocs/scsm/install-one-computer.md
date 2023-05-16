@@ -284,4 +284,4 @@ Follow these steps to validate the data warehouse installation:
 
 ## Next steps
 
-To install Service Manager on two computers. This scenario is useful for testing Service Manager in a lab environment, review [Install Service Manager on two computers](install-two-computers.md).
+To install Service Manager on two computers, which is a useful scenario for testing Service Manager in a lab environment, review [Install Service Manager on two computers](install-two-computers.md).
