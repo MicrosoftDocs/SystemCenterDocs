@@ -104,7 +104,7 @@ Unlike the output stream, message streams are intended to communicate informatio
 
 Select the required tab to know more about these message streams:
 
-# [Warning and Error streams](#tab\WarningError)
+# [Warning and Error streams](#tab/WarningError)
 The Warning and Error streams are intended to log problems that occur in a runbook. They're written to the job history when a runbook is executed and are included in the Test Output Pane in the Management Portal when a runbook is tested. By default, the runbook will continue executing after a warning or error. You can specify that the runbook should be suspended on a warning or error by setting a [preference variable](overview-runbook-messages-output.md#preference-variables) in the runbook before creating the message. For example, to cause a runbook to suspend on an error as it would an exception, set $ErrorActionPreference to **Stop**.
 
 Create a warning or error message using the [Write-Warning](/powershell/module/microsoft.powershell.utility/write-warning) or [Write-Error](/powershell/module/microsoft.powershell.utility/write-error) cmdlet. Activities may also write to these streams.
@@ -117,7 +117,7 @@ Write-Warning -Message "This is a warning message."
 Write-Error -Message "This is an error message that will stop the runbook because of the preference variable."
 ```
 
-# [Verbose stream](#tab\Verbose)
+# [Verbose stream](#tab/Verbose)
 The Verbose message stream is for general information about the runbook operation. Since the [Debug Stream](overview-runbook-messages-output.md#debug-stream) isn't available in a runbook, verbose messages should be used for troubleshooting information. By default, verbose messages from published runbooks won't be stored in the job history. To store verbose messages, configure published runbooks to **Log Verbose Records** on the **Configure** tab of the runbook in the Management Portal. In most cases, you should keep the default setting of not logging verbose records for a runbook for performance reasons. Turn on this option only to troubleshoot or debug a runbook.
 
 The $VerbosePreference variable defaults to a value of **SilentlyContinue**. You don't need to change this variable in a published runbook for verbose messages to be stored. If this value is explicitly set to **SilentlyContinue** in a published runbook though, then verbose messages won't be stored even if the runbook is configured to log verbose records.
@@ -132,7 +132,7 @@ Create a verbose message using the [Write-Verbose](/powershell/module/microsoft.
 Write-Verbose -Message "This is a verbose message."
 ```
 
-# [Debug stream](#tab\Debug)
+# [Debug stream](#tab/Debug)
 The Debug stream is intended for use with an interactive user and shouldn't be used in runbooks.
 
 ---
