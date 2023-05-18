@@ -82,22 +82,22 @@ To configure Linux log file monitoring, perform the following steps:
 
       ```bash
       # Create omsagent.d folder
-      mkdir -p /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.d
+      mkdir -p /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
       
       # Create certs folder
-      mkdir /etc/opt/microsoft/omsagent/System Center Operations Manager/certs
+      mkdir /etc/opt/microsoft/omsagent/scom/certs
       
       # Create log folder
-      mkdir -p /var/opt/microsoft/omsagent/System Center Operations Manager/log
+      mkdir -p /var/opt/microsoft/omsagent/scom/log
       
       # Create run folder
-      mkdir /var/opt/microsoft/omsagent/System Center Operations Manager/run
+      mkdir /var/opt/microsoft/omsagent/scom/run
       
       # Create state folder
-      mkdir /var/opt/microsoft/omsagent/System Center Operations Manager/state
+      mkdir /var/opt/microsoft/omsagent/scom/state
       
       # Create tmp folder
-      mkdir /var/opt/microsoft/omsagent/System Center Operations Manager/tmp
+      mkdir /var/opt/microsoft/omsagent/scom/tmp
       
       # Create fluent-logging folder (used for log file position file, this location is flexible)
       mkdir -p /home/omsagent/fluent-logging
@@ -106,54 +106,58 @@ To configure Linux log file monitoring, perform the following steps:
  5. Set ownership on each of the above folders to `omsagent:omiusers`:
       ```bash
       # Change owner of System Center Operations Manager folder
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom
       
       # Change owner of log folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/log
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/log
       
       # Change owner of run folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/run
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/run
       
       # Change owner of state folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/state
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/state
       
       # Change owner of tmp folder
-      chown omsagent:omiusers /var/opt/microsoft/omsagent/System Center Operations Manager/tmp
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/tmp
       
       # Change owner of fluent-logging folder (used for log file position file, this location is flexible)
       chown omsagent:omiusers /home/omsagent/fluent-logging
       ```
-      ![Screenshot of log file monitoring.](../System Center Operations Manager/media/log-file-monitoring/log-file-monitoring.png)
+      ![Screenshot of log file monitoring.](../scom/media/log-file-monitoring/log-file-monitoring.png)
 
  6. Create omsagent and omsconfig files:
       ```bash
       # Create omsadmin.conf file
-      touch /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsadmin.conf
+      touch /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf
       
       # Create omsagent.conf file
-      touch /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.conf
+      touch /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
       ```
       
  7. Set ownership on each of the above files to `omsagent:omiusers`:
       ```bash
       # Change owner of omsadmin.conf file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsadmin.conf
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf
       
       # Change owner of omsagent.conf file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.conf
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
       ```
       
- 8. Edit the file `/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsadmin.conf`, and add the following information after changing the highlighted information.
-      > WORKSPACE_ID=System Center Operations Manager \
-      > System Center Operations Manager_ENDPOINT=https://<mark>\<MSFQDN\></mark>:8886 \
+ 8. Edit the file `/etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf`, and add the following information after changing the highlighted information.
+      > ```
+      > WORKSPACE_ID=scom
+      > System Center Operations Manager_ENDPOINT=https://<mark>\<MSFQDN\></mark>:8886
       > MONITORING_ID={274F8D7B-DBCA-8FC3-1451-8DCD55092156}
+      > ```
+   
  9. Restart the OMSAgent:
       ```bash
       /opt/microsoft/omsagent/bin/service_control restart
       ```
+
 10. Verify the status in the omsagent log:
       ```bash
-      tail -100 /var/opt/microsoft/omsagent/System Center Operations Manager/log/omsagent.log
+      tail -100 /var/opt/microsoft/omsagent/scom/log/omsagent.log
       ```
 
 
@@ -220,27 +224,27 @@ You have two options when assigning the client certificate for OMSAgent.
 1. Set ownership on the `omi.pem` and `omikey.pem` file to `omsagent:omiusers`:
       ```bash
       # Change owner of System Center Operations Manager-cert.pem file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-cert.pem
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
       
       # Change owner of System Center Operations Manager-key.pem file
-      chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-key.pem
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
       ```
 
 2. Run the following command on your Linux machine to set the OMS Agent Client Certificate to the OMI Certificate (*Operations Manager Linux Agent Certificate*):
 
       ```bash
       # Link file omi.pem to System Center Operations Manager-cert.pem
-      ln -s /etc/opt/omi/ssl/omi.pem /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-cert.pem
+      ln -s /etc/opt/omi/ssl/omi.pem /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
       
       # Link file omikey.pem to System Center Operations Manager-key.pem
-      ln -s /etc/opt/omi/ssl/omikey.pem /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-key.pem
+      ln -s /etc/opt/omi/ssl/omikey.pem /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
       ```
 
 ### <a name="GenerateOMSAgentCertificate"></a>2. Generate a Client Certificate for OMSAgent
 1. Generate the certificate and key to the ***omsagent*** folder: 
    ```bash
    # Generate Certificate to omsagent Folder
-   /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/
+   /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
    ```
 
    > [!NOTE]
@@ -248,28 +252,28 @@ You have two options when assigning the client certificate for OMSAgent.
 
 2. Rename the generated certificate on the Linux side:
    ```bash
-   # Rename omi-host-server.domain.pem to System Center Operations Manager-cert.pem
-   mv omi-host-server.domain.pem System Center Operations Manager-cert.pem
+   # Rename omi-host-server.domain.pem to scom-cert.pem
+   mv omi-host-server.domain.pem scom-cert.pem
    
-   # Rename omikey.pem to System Center Operations Manager-key.pem
-   mv omikey.pem System Center Operations Manager-key.pem
+   # Rename omikey.pem to scom-key.pem
+   mv omikey.pem scom-key.pem
    ```
 3. Change ownership of the certificate file:
    ```bash
-   # Change owner of the System Center Operations Manager-cert file
-   chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-cert.pem
+   # Change owner of the scom-cert file
+   chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
    
-   # Change owner of the System Center Operations Manager-key file
-   chown omsagent:omiusers /etc/opt/microsoft/omsagent/System Center Operations Manager/certs/System Center Operations Manager-key.pem
+   # Change owner of the scom-key file
+   chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
    ```
 
 ## Create Fluentd configuration file
 
 You configure Fluentd operation using a configuration file. To utilize log monitoring, you must create a configuration file. The configuration file includes information such as source log file name, path, and filters to define the data to collect.
 
-The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
+The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/scom/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
-For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.d`, you would add one of the following lines to the **omsagent.d** file:
+For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/scom/conf/omsagent.d`, you would add one of the following lines to the **omsagent.d** file:
 
 ```
 # Include all configuration files
@@ -285,7 +289,7 @@ For more information on Fluentd configuration files, see [Fluentd Configuration 
 
 The following sections describe settings in different directives of the configuration file that are unique to log file monitoring. Each includes sample settings that you can paste into a configuration file and modify for your requirements.
 
-A complete [sample configuration file for log monitoring](../System Center Operations Manager/manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.
+A complete [sample configuration file for log monitoring](../scom/manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.
 
 ### Source
 
@@ -430,7 +434,7 @@ This example processes events with tags matching **System Center Operations Mana
     buffer_type file
 
     # Specifies the file path for buffer. Fluentd must have write access to this directory.
-    buffer_path /var/opt/microsoft/omsagent/System Center Operations Manager/state/out_System Center Operations Manager_common*.buffer
+    buffer_path /var/opt/microsoft/omsagent/scom/state/out_System Center Operations Manager_common*.buffer
 
     # If queue length exceeds the specified limit, events are rejected.
     buffer_queue_limit 10
@@ -465,7 +469,7 @@ enable_server_auth false
 
 ## Copy configuration file to agent
 
-The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/System Center Operations Manager/conf/omsagent.d** on all Linux computers you want to monitor. You must also add an @include directive in the master configuration file as described above.
+The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d** on all Linux computers you want to monitor. You must also add an @include directive in the master configuration file as described above.
 
 ## Restart omsagent
 
