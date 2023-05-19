@@ -7,10 +7,10 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 05/19/2023
 ms.technology: service-manager
 ms.assetid: a8f84795-11fd-4c62-8f50-0929cedd3b20
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy23
 ---
 
 # Configure Service Level Management
@@ -53,7 +53,9 @@ The Service Level Objectives node is used to create relationships between a queu
 
 You create a calendar item to define work days, work hours, and holidays in Service Manager. After you create a calendar item, you'll use it as part of a service level objective, where it's measured against a time metric.
 
-#### To create a calendar item
+### Create a calendar item
+
+Follow these steps to create a calendar item:
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Calendar**.
@@ -69,9 +71,7 @@ You create a calendar item to define work days, work hours, and holidays in Serv
 You edit a calendar item in Service Manager to update work days, work hours, and holidays. After you edit a calendar item, you'll use it as part of a service level objective, where it's measured against a time metric. If the calendar is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
 > [!NOTE]
-> When you update an existing calendar item, the update is effective for incidents and service requests created afterward; however, the updates don't affect existing incidents.
-
-#### To edit a calendar item
+> When you update an existing calendar item, the update is effective for incidents and service requests created afterward; however, the updates don't affect the existing incidents.
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Calendar**.
@@ -87,7 +87,7 @@ You edit a calendar item in Service Manager to update work days, work hours, and
 
 You can create a service level management metric, which is analogous to service level agreements (SLAs), as a time metric to measure the difference between start and end times for incidents and service requests. After you define a metric, you associate it with a service level objective. If the metric is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
-#### To create a metric for incidents
+# [Create a metric for incidents](#tab/Incidents)
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Metric**.
@@ -98,7 +98,7 @@ You can create a service level management metric, which is analogous to service 
 7.  Select the list next to **End date**, and then select the item that you want to use to define the end date. For example, select **Resolved date**.
 8.  Select **OK** to close the **Create/Edit SLA Metric** dialog.
 
-#### To create a metric for service requests
+# [Create a metric for service requests](#tab/ServiceRequests)
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Metric**.
@@ -109,14 +109,14 @@ You can create a service level management metric, which is analogous to service 
 7.  Select the list next to **End date**, and then select the item that you want to use to define the end date. For example, select **Completed date**.
 8.  Select **OK** to close the **Create/Edit SLA Metric** dialog.
 
+---
+
 ### Edit SLA metrics
 
 In Service Manager, you edit a service level agreement (SLA) metric to update the title, start date, and end date. After you edit a metric, you associate it with a service level objective. If the metric is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
 > [!NOTE]
 > You should avoid making changes to an SLA metric that is in use because changing it might cause performance problems. If possible, edit in-use SLA metrics during a period of minimal system use, such as during a maintenance period.
-
-#### To edit an SLA metric
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Metric**.
@@ -134,7 +134,7 @@ You can use the following procedures to customize an SLA view.
 
 Views let you group SLA metrics that share certain criteria. However, when you personalize changes to a view, those changes aren't saved. For example, you can customize the **Metrics** view, but if you change column widths, column sorting, grouping, or if you remove columns, the next time you return to the view, it displays information in the same manner as it did before you personalized it.
 
-### To personalize an SLA metric view
+### Personalize an SLA metric view
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and then select **Metric**.
@@ -145,10 +145,9 @@ Views let you group SLA metrics that share certain criteria. However, when you p
 
 You create a service level objective to create relationships between a queue and a service level, a calendar item and a time metric, and actions that occur before or after service level breaches. Afterward, when you view incidents or service requests and they approach their warning time, you'll see a notification bar stating that the item is about to breach. You can also create periodic notifications if you want analysts to receive emails for incidents or service requests that might breach their service level objective.
 
-
 In order to create a service level objective, it's easier if you've already created or defined a calendar item and an SLA metric. Additionally, the service level objective that you create is linked to a queue. The queue that you associate to a service level objective must target the same type of work item, based on its class; otherwise, the queue won't be available when you create the service level objective.
 
-#### To create a service level objective
+### Create a service level objective
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Service Level Objective**.
@@ -170,7 +169,7 @@ You can edit a service level objective to modify relationships between a queue a
 
 The service level objective that you edit is linked to a queue. If you want to modify the association of queue to a service level objective, the service level objective must target the same type of work item as the queue based on its class; otherwise, the queue won't be available when you modify the service level objective.
 
-#### To modify a service level objective
+#### Modify a service level objective
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Service Level Objective**.
@@ -189,7 +188,7 @@ If you're already in an incident form and an incident is about to breach, a noti
 
 When an incident has already been breached, no notification bar is displayed in the form while you're on the **General** tab. However, you'll see breached status while you're on the **Service Level** tab if that incident's service level objective has breached.
 
-### To view warning SLA information in an incident form
+# [View warning SLA information in an incident form](#tab/WarningSLA)
 
 1.  In the Service Manager console, select **Work Items**.
 2.  In the **Work Items** pane, expand **Incident Management**, and select **Incidents with Service Level Warning**.
@@ -198,7 +197,7 @@ When an incident has already been breached, no notification bar is displayed in 
 5.  Select the **Service Level** tab, and observe the status of the incident as **Warning**. You can also see other information about the incident, most notably **Time Before SLA Breached**.
 6.  Select **OK** to close the incident.
 
-### To view breached SLA information in an incident form
+# [View breached SLA information in an incident form](#tab/BreachedSLA)
 
 1.  In the Service Manager console, select **Work Items**.
 2.  In the **Work Items** pane, expand **Incident Management**, and select **Incidents with Service Level Breached**.
@@ -206,11 +205,11 @@ When an incident has already been breached, no notification bar is displayed in 
 4.  Select the **Service Level** tab, and observe the status of the incident as **Breached**.  
 5.  Select **OK** to close the incident.  
 
+---
+
 ## Review incidents with SLA information
 
 You can use the following procedure to view incidents that have a service level objective associated with them.
-
-### To review incidents with SLA information
 
 1.  In the Service Manager console, select **Work Items**.
 2.  In the **Work Items** pane, expand **Incident Management**, and select **Incidents with Service Level Warning** or **Incidents with Service Level Breached**.
@@ -219,8 +218,6 @@ You can use the following procedure to view incidents that have a service level 
 ## Send SLA notification information to the assigned-to user
 
 You can send notifications to analysts who are responsible for incidents when each incident is within the warning period of its service level objective. Because periodic notifications require a large amount of system resources, the following example notifies the analyst once when the service level objective goes to a warning state.
-
-### To send an SLA notification to the assigned-to user
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Notifications**, and select **Subscriptions**.
@@ -246,8 +243,6 @@ You can send notifications to analysts who are responsible for incidents when ea
 
 You can reactivate resolved incidents that have an associated service level objective. However, keep in mind that the original date and time that the incident was opened is preserved. So, the time that elapsed while the incident was resolved continues to apply against the service level objective—possibly resulting in the service level objective being breached.
 
-### To reactivate an incident with SLA information
-
 1.  In the Service Manager console, select **Work Items**.
 2.  In the **Work Items** pane, expand **Incident Management**, and select **All** .
 3.  In the **All Incidents** list, locate a resolved incident that you want to reactivate, and select it.
@@ -256,4 +251,4 @@ You can reactivate resolved incidents that have an associated service level obje
 
 ## Next steps
 
-- To create a sequence of activities that automate a business process, see [Configure workflows](workflows.md).
+To create a sequence of activities that automate a business process, see [Configure workflows](workflows.md).
