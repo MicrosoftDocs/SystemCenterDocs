@@ -198,7 +198,7 @@ Supported versions:
 - Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
 
 >[!Note]
->To monitor RHEL 9.1 servers, manually update the OpenSSH version in your environment to >= 8.7p1-29
+> Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -242,7 +242,7 @@ Supported versions:
 
 >[!Note]
 >- RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
->- To monitor RHEL 9.1 servers, manually update the OpenSSH version in your environment to >= 8.7p1-29
+>- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
