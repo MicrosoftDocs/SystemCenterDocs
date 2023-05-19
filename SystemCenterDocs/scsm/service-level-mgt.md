@@ -87,7 +87,11 @@ You edit a calendar item in Service Manager to update work days, work hours, and
 
 You can create a service level management metric, which is analogous to service level agreements (SLAs), as a time metric to measure the difference between start and end times for incidents and service requests. After you define a metric, you associate it with a service level objective. If the metric is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
+Select the required tab for steps to create a metric for incidents or service requests:
+
 # [Create a metric for incidents](#tab/Incidents)
+
+Follow these steps to create a metric for incidents:
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Metric**.
@@ -99,6 +103,8 @@ You can create a service level management metric, which is analogous to service 
 8.  Select **OK** to close the **Create/Edit SLA Metric** dialog.
 
 # [Create a metric for service requests](#tab/ServiceRequests)
+
+Follow these steps to create a metric for service requests:
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Metric**.
@@ -188,7 +194,11 @@ If you're already in an incident form and an incident is about to breach, a noti
 
 When an incident has already been breached, no notification bar is displayed in the form while you're on the **General** tab. However, you'll see breached status while you're on the **Service Level** tab if that incident's service level objective has breached.
 
+Select the required tab for steps to view warning or breached SLA information in an incident form: 
+
 # [View warning SLA information in an incident form](#tab/WarningSLA)
+
+Follow these steps to view the warning SLA information in an incident form:
 
 1.  In the Service Manager console, select **Work Items**.
 2.  In the **Work Items** pane, expand **Incident Management**, and select **Incidents with Service Level Warning**.
@@ -198,6 +208,8 @@ When an incident has already been breached, no notification bar is displayed in 
 6.  Select **OK** to close the incident.
 
 # [View breached SLA information in an incident form](#tab/BreachedSLA)
+
+Follow these steps to view breached SLA information in an incident form:
 
 1.  In the Service Manager console, select **Work Items**.
 2.  In the **Work Items** pane, expand **Incident Management**, and select **Incidents with Service Level Breached**.
