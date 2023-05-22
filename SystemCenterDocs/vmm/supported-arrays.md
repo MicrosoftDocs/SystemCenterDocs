@@ -5,7 +5,7 @@ description: This article summarizes supported storage arrays for VMM.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 02/28/2023
+ms.date: 05/22/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -37,7 +37,7 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 |DELL-EMC <br/><br/> XtremIO All Flash Array	| iSCSI/FC	| XtremIO XMS Server Versions: 4.2.0 and 4.2.1 | Embedded SMI-S V1.6.1 | [Link](http://www.emc.com/en-us/storage/xtremio/benefits.htm) |
 |DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS: 7.2 or later <br/> DSM: 2016 R3 or later <br/><br/> SCOS 7.3.5 or later, DSM 2018 R1.20 or later <br/><br/> SCOS 7.4.x and later, DSM 2020 R1 (20.1.1) or later | SMI-S <br/>version 1.6 | [Link](http://www.dell.com/us/business/p/dell-compellent?dgc=IR&cid=emcstorcat&lid=1) |
 |NetApp <br/><br/> FAS	| iSCSI/FC/SMB	| 8.2 and later | Proxy NetApp SMIS Provider 5.2.4 or later | [Link](https://now.netapp.com) |
-|Huawei <br/><br/> OceanStor V3 Series	| iSCSI/FC	| V300R006  and later|Huawei SMI-S <br/>version 2.1.01 or later | [Link](https://e.huawei.com/in/products/cloud-computing-dc/storage/massive-storage/mid-range) |
+|Huawei <br/><br/> OceanStor V3 Series	| iSCSI/FC	| V300R006  and later|Huawei SMI-S <br/>version 2.1.01 or later | [OceanStor 2200 V3](https://e.huawei.com/en/products/storage/hybrid-flash-storage/oceanstor-2200-v3)<br/><br/>[OceanStor 2600 V3](https://e.huawei.com/en/products/storage/hybrid-flash-storage/oceanstor-2600-v3) |
 |Huawei <br/><br/> OceanStor Dorado V3 Series	| iSCSI/FC	| V300R001 and later|Huawei SMI-S <br/>version 2.1.01 or later | [Link](https://e.huawei.com/in/products/storage/all-flash-storage) |
 |Huawei  <br/><br/> OceanStor V5 Series	| iSCSI/FC	| V500R007  and later |Huawei SMI-S Provider<br/>v 2.1.03 and later | TBA |
 |IBM <br/><br/> XIV Storage System Gen3	| iSCSI/FC	| 11.6.0 and later|embedded SMI-S <br/>v1.6.1 | [Link](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/xiv_apicontainer.html) |
