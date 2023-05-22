@@ -3,7 +3,7 @@ ms.assetid: d69cf961-ec43-4dd8-9b53-14fddaf078fa
 title: SQL Server monitoring pool in Management Pack for SQL Server
 description: This article explains SQL Server monitoring pool
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
@@ -17,7 +17,7 @@ You can configure SQL Server Monitoring Pool manually by adding custom gateways 
 
 To configure SQL Server Monitoring Pool, perform the following steps:
 
-1. Navigate to **Administration | Resource Pools** and in the list of resource pools, select and hold **SQL Server Monitoring Pool**.
+1. Navigate to **Administration | Resource Pools** and in the list of resource pools, right-click **SQL Server Monitoring Pool**.
 
 2. Select the **Manual Membership** option and select **Properties**.
 

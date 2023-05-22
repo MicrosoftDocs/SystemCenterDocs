@@ -100,7 +100,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 3. We strongly recommend that you create a separate folder for each driver package, and that you don't mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files, or scripts with an .inf file name extension in the same folder, the VMM library server won't discover those resources. Also, when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides.
 4. In the VMM console > **Library** > **Library Servers**, expand the library server where the share is located, right-click the share, and select **Refresh**. After the library refreshes, the folder should appear.
 5. Assign tags if required. In **Library**, expand the folder that you created to store the drivers, and select the folder that contains the driver package.
-6. In the **Physical Library Objects**, select and hold the driver .inf file and select **Properties**.
+6. In the **Physical Library Objects**, right-click the driver .inf file and select **Properties**.
 7. In the **Driver File Name Properties** > **Custom tags**, enter custom tags separated by a semicolon, or select **Select** to assign available tags or to create and assign new ones. If you select **Select** and then select **New Tag**, you can change the name of the tag after you select **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
 
 ## Create a physical computer profile

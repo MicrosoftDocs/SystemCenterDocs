@@ -65,7 +65,7 @@ Review the platform [restrictions and limitations](/windows-server/failover-clus
 
 ## Run the upgrade
 
-1. Select **Fabric** > **Servers** > **All Hosts**. Select and hold the host cluster > **Upgrade Cluster**.
+1. Select **Fabric** > **Servers** > **All Hosts**. Right-click the host cluster > **Upgrade Cluster**.
 1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Then select **Physical computer profile**, and select the profile for the nodes.
 1. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new one. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select IPMI. DCMI is supported even though it's not listed. Ensure the correct port is listed.
 1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
@@ -73,4 +73,4 @@ Review the platform [restrictions and limitations](/windows-server/failover-clus
     - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet, if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address within the logical network.
 5. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes the nodes upgrade successfully, the wizard upgrades the cluster functional level to Windows Server 2016/2019.
 
-If for some reason you need to update the cluster functional level of a cluster that was upgraded outside VMM, select and hold the **Cluster** > **Update Version**. This could happen if you upgrade the cluster nodes before adding the cluster to the VMM fabric, but the cluster is still functioning as a Windows Server 2012 R2/2016 cluster.
+If for some reason you need to update the cluster functional level of a cluster that was upgraded outside VMM, right-click the **Cluster** > **Update Version**. This could happen if you upgrade the cluster nodes before adding the cluster to the VMM fabric, but the cluster is still functioning as a Windows Server 2012 R2/2016 cluster.

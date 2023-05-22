@@ -204,7 +204,7 @@ The registration status will reflect in VMM after a successful cluster refresh.
 ## Step 5: View the registration status of Azure Stack HCI clusters
 
 1. In the VMM console, you can view the registration status and last connected date of Azure Stack HCI clusters.
-2. Select **Fabric**, select and hold the **Azure Stack HCI** cluster, and select **Properties**.
+2. Select **Fabric**, right-click the **Azure Stack HCI** cluster, and select **Properties**.
 
    ![Screenshot of Registration status.](./media/s2d/registration-status.png)
 
@@ -215,8 +215,8 @@ The registration status will reflect in VMM after a successful cluster refresh.
 You can now modify the storage pool settings and create virtual disks and CSVs.
 
 1. Select **Fabric** > **Storage** > **Arrays**.
-2. Select and hold the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
-3. To create a CSV, select and hold the cluster > **Properties** > **Shared Volumes**.
+2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
+3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
 4. In the **Create Volume Wizard** > **Storage Type**, specify the volume name and select the storage pool.
 5. In **Capacity**, you can specify the volume size, file system, and resiliency (Failures to tolerate) settings.
 

@@ -81,7 +81,7 @@ To add the machine accounts to the backup operator groups, run the following ste
 
 1. Open the command prompt, and type **lusrmgr.msc** to open Local Users and Groups.
 2. In the Local Users and Groups page, select **Groups**.
-3. In the list of groups, select and hold **Backup Operators** and select **Properties**.
+3. In the list of groups, right-click **Backup Operators** and select **Properties**.
 
     The **Backup Operators Properties** page opens.
 4. In the **Backup Operators Properties** page, select **Add**.
@@ -96,7 +96,7 @@ To add the machine accounts to the backup operator groups, run the following ste
 To give permissions to the share, do the following:
 
 1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
-2. Select and hold the VM storage share, and then select **Properties**.
+2. Right-click the VM storage share, and then select **Properties**.
 3. In the **Properties** page, on the left navigation menu, select **Permissions**.
 4. Select **Customize permissions** to open the Advanced Security Settings page.
 5. On the **Permissions** tab, select **Add**.
@@ -183,7 +183,7 @@ These are the prerequisites for backing up Hyper-V virtual machines with DPM.
 
 8. On the **Choose Replica Creation Method** page, specify how the initial replication of data in the protection group will be performed. If you select to replicate over the network, we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. On the **Consistency Check Options** page, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group and selecting **Perform Consistency Check**.
+9. On the **Consistency Check Options** page, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group and selecting **Perform Consistency Check**.
 
     After you create the protection group, the initial replication of the data occurs in accordance with the method you selected. After the initial replication, each backup takes place in line with the protection group settings. If you need to recover backed-up data, note the following:
 
@@ -260,7 +260,7 @@ After you complete the steps in the previous sections and the DPM Summary Manage
 
 2. Run the following query: `select * from tbl_SCH_ScheduleDefinition where JobDefinitionID='9B30D213-B836-4B9E-97C2-DB03C3EB39D7'`. This query returns the **ScheduleID**. Note down this ID, as you'll use it in the next step.
 
-3. In the SQL Server Management Studio, expand **SQL Server Agent** and then expand **Jobs**. Select and hold the **ScheduleID** that you noted, and select **Start Job at Step**.
+3. In the SQL Server Management Studio, expand **SQL Server Agent** and then expand **Jobs**. Right-click the **ScheduleID** that you noted, and select **Start Job at Step**.
 
 > [!NOTE]
 > Backup performance is affected when the job runs. The size and scale of your deployment determines how much time the job takes to finish.

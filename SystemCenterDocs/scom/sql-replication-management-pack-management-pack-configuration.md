@@ -3,7 +3,7 @@ ms.assetid: 613e32b0-3f29-45f2-b7ca-897789564f5c
 title: Management Pack for SQL Server Replication configuration
 description: This article explains management pack configuration
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
@@ -29,7 +29,7 @@ To create a new management pack, perform the following steps:
 
 1. Open the System Center Operations Manager console.
 
-2. In the **Administration** view, select and hold **Management Packs**, and select **Create New Management Pack**.
+2. In the **Administration** view, right-click **Management Packs**, and select **Create New Management Pack**.
 
     ![Screenshot showing Creating New Management Pack for Customizations.](./media/sql-replication-management-pack/creating-new-management-pack.png)
 

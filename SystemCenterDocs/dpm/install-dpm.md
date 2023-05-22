@@ -268,7 +268,7 @@ If you want to set up DPM on an RODC, you'll need to do a couple of steps before
 
     -   Start installing the SQL Server. On the **Server Configuration - Service Accounts** page of Setup, specify the sign-in account for the SQL Server Services (SQL Server Agent, SQL Server Database Engine, SQL Server Reporting Services) to run under the user account DPMSQLSvcsAcct.
 
-    -   After the SQL Server is installed, open **SQL Server Configuration Manager** > **SQL Server Network Configuration** > **Protocols**, select and hold **Named Pipes** > **Enable**. You'll need to stop and restart the SQL Server Services.
+    -   After the SQL Server is installed, open **SQL Server Configuration Manager** > **SQL Server Network Configuration** > **Protocols**, right-click **Named Pipes** > **Enable**. You'll need to stop and restart the SQL Server Services.
 
 7.  Then you can install DPM:
 

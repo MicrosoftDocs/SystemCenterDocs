@@ -68,7 +68,7 @@ Use these procedures to create activity groups in the **Activities Toolbox** pan
 
 ### Create a top-level activity group
 
-1. In the **Activities Toolbox** pane, select and hold **Activity Groups**, and select **New Group**.
+1. In the **Activities Toolbox** pane, right-click **Activity Groups**, and select **New Group**.
 
 2. Enter a name for the new group.
 
