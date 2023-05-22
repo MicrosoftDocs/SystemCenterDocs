@@ -87,7 +87,7 @@ Where 'password' is the password that will be used to protect the service master
 ## Back up the Orchestrator database in environment A  
 Back up the entire Orchestrator database. You can perform the backup when the system is running; however, it's best to perform the backup when all runbook authors have checked in any pending changes to their runbooks. Pending changes are cached on the Runbook Designer and aren't backed up with a database backup.  
 
-1.  In SQL Server Management, select and hold the Orchestrator database, select **Tasks**, and then select **Back up**.  
+1.  In SQL Server Management, right-click the Orchestrator database, select **Tasks**, and then select **Back up**.  
 
 2.  Configure the backup settings as required in your organization.  
 
@@ -121,7 +121,7 @@ Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DEC
 Use the following steps to create a batch script to run on the new SQL Server computer to restore the Orchestrator database.  
 
 
-1.  In SQL Server Management, select and hold the Orchestrator database, select **Tasks**, and then select **Restore**.  
+1.  In SQL Server Management, right-click the Orchestrator database, select **Tasks**, and then select **Restore**.  
 
 2.  Configure the restore settings as required in your organization.  
 

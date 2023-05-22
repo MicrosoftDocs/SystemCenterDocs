@@ -183,17 +183,17 @@ You can configure many settings that help high availability and resilience for v
 
 1. Configure a virtual machine or virtual machine template by using one of the following options:
 
-    - To configure a deployed virtual machine, in **VMs and Services**, navigate to the host on which the virtual machine is deployed. Select and hold the virtual machine > **Properties**.
-    - To configure a stored virtual machine, in the **Library**, navigate to the library server on which the virtual machine is stored. Select and hold the virtual machine > **Properties**.
+    - To configure a deployed virtual machine, in **VMs and Services**, navigate to the host on which the virtual machine is deployed. Right-click the virtual machine > **Properties**.
+    - To configure a stored virtual machine, in the **Library**, navigate to the library server on which the virtual machine is stored. Right-click the virtual machine > **Properties**.
     - You can also set up priority while you're configuring a VM on the **Configure Hardware** page.
-    To configure a virtual machine template, in **Library** > **Templates**, select **VM Templates**. Select and hold the virtual machine template, > **Properties**.
+    To configure a virtual machine template, in **Library** > **Templates**, select **VM Templates**. Right-click the virtual machine template, > **Properties**.
 3. In **Hardware Configuration** or **Configure Hardware**, scroll down to **Advanced**, and select **Availability**. Ensure that **Make this virtual machine highly available** is checked. On a deployed virtual machine, this setting can't be changed because it depends on whether the virtual machine is deployed on a host cluster.
 4. In **Virtual machine priority**, select a priority of High, Medium, or Low for the VM. If you want the virtual machine to always require a manual start and never preempt other virtual machines, select **Do not restart automatically**.
 
 
 ### Configure preferred owners
 
-1. In **VMs and Services**, navigate to the host on which the virtual machine is deployed. Select and hold the virtual machine > **Properties**.
+1. In **VMs and Services**, navigate to the host on which the virtual machine is deployed. Right-click the virtual machine > **Properties**.
 2. Select **Settings** and configure the options:
 
     - To control which nodes (servers) in the cluster will own the virtual machine most of the time, configure the preferred owners list.
@@ -205,10 +205,10 @@ You can configure availability sets for standalone VMs in a cluster, or in avail
 
 1. Configure a virtual machine or virtual machine template by using one of the following options:
 
-    - To configure a deployed virtual machine, in **VMs and Services**, navigate to the host on which the virtual machine is deployed. Select and hold the virtual machine > **Properties**.
-    - To configure a stored virtual machine, in the **Library**, navigate to the library server on which the virtual machine is stored. Select and hold the virtual machine > **Properties**.
+    - To configure a deployed virtual machine, in **VMs and Services**, navigate to the host on which the virtual machine is deployed. Right-click the virtual machine > **Properties**.
+    - To configure a stored virtual machine, in the **Library**, navigate to the library server on which the virtual machine is stored. Right-click the virtual machine > **Properties**.
     - You can also set up priority while you're configuring a VM on the **Configure Hardware** page.
-    - To configure a virtual machine template, in **Library** > **Templates**, select **VM Templates**. Select and hold the virtual machine template, > **Properties**.
+    - To configure a virtual machine template, in **Library** > **Templates**, select **VM Templates**. Right-click the virtual machine template, > **Properties**.
 
 2.  On the **Hardware Configuration** tab, scroll down to **Advanced** and under it, select **Availability**.
 3.  Confirm that **Make this virtual machine highly available** has the intended setting. (On a deployed virtual machine, the setting can't be changed because it depends on whether the virtual machine is deployed on a host cluster.)

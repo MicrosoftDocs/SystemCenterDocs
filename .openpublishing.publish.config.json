@@ -7,13 +7,13 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        ">= sc-dpm-2016 <= sc-dpm-2019",
-        ">= sc-orch-2016 <= sc-orch-2019",
-        ">= sc-om-2016 <= sc-om-2019",
-        ">= sc-sm-2016 <= sc-sm-2019",
-        ">= sc-sma-2016 <= sc-sma-2019",
-        ">= sc-spf-2016 <= sc-spf-2019",
-        ">= sc-vmm-2016 <= sc-vmm-2019"
+        ">= sc-dpm-2016 <= sc-dpm-2022",
+        ">= sc-orch-2016 <= sc-orch-2022",
+        ">= sc-om-2016 <= sc-om-2022",
+        ">= sc-sm-2016 <= sc-sm-2022",
+        ">= sc-sma-2016 <= sc-sma-2022",
+        ">= sc-spf-2016 <= sc-spf-2022",
+        ">= sc-vmm-2016 <= sc-vmm-2022"
       ],
       "open_to_public_contributors": false,
       "type_mapping": {

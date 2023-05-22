@@ -81,7 +81,7 @@ DPM provides the following management packs:
 
 4. Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
 
-5. In the Operations console, select **Administration**. Select and hold **Management Packs** > **Import Management Packs**.
+5. In the Operations console, select **Administration**. Right-click **Management Packs** > **Import Management Packs**.
 
 6. Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**.
 
@@ -101,7 +101,7 @@ DPM provides the following management packs:
 
 1. Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
-2. In the Operations console, select **Administration**. Select and hold **Management Packs** > **Import Management Packs**.
+2. In the Operations console, select **Administration**. Right-click **Management Packs** > **Import Management Packs**.
 
 3. Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
 

@@ -3,7 +3,7 @@ ms.assetid: 7820156f-399a-4bad-a7bf-98d40a76be30
 title: Least-privilege monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains least-privilege monitoring configuration
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
@@ -89,7 +89,7 @@ To configure permissions on System Center Operations Manager Management Server, 
 
 3. Open the **User Roles** view (located under the **Security** folder).
 
-4. Select and hold the **Operations Manager Operators** role and select **Properties**.
+4. Right-click the **Operations Manager Operators** role and select **Properties**.
 
 5. On the **General Properties** tab, select **Add**.
 

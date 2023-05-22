@@ -110,7 +110,7 @@ The following procedure creates a runbook that runs a **Compare Values** activit
 
 5.  Select **Finish** to save the updates to the activity.  
 
-6.  Select and hold the activity and select **Looping**.  
+6.  Right-click the activity and select **Looping**.  
 
 7.  Select the **Enable** checkbox and enter the number **0** (zero) for **Delay between attempts**.  
 

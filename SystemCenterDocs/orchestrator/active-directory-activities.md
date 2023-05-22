@@ -31,7 +31,7 @@ Each activity has a set of required or optional properties that define the confi
 
 #### To configure the properties for an activity
 
-1.  Double-click the activity that you want to configure. Alternatively, you can select and hold the activity and select **Properties**.
+1.  Double-click the activity that you want to configure. Alternatively, you can right-click the activity and select **Properties**.
 
 2.  Select **Finish** to save your configuration entries.
 
@@ -102,7 +102,7 @@ An activity can subscribe to data only from the activities that are linked befor
 
 #### To use published data
 
-1.  Select and hold the **Property Value** box, select **Subscribe**, and select **Published Data**.
+1.  Right-click the **Property Value** box, select **Subscribe**, and select **Published Data**.
 
 2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements that are common to all runbooks, select **Show Common Published Data**.
 

@@ -3,7 +3,7 @@ ms.assetid: 4cdcce73-c9a2-4795-89bc-6d51ee04cd3c
 title: Configuring Run As profiles in Management Pack for SQL Server Dashboards
 description: This article explains how to configure run as profiles
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
@@ -29,7 +29,7 @@ To configure permissions on System Center Operations Manager, perform the follow
 
 3. In the navigation pane, select **User Roles** under the **Security** folder.
 
-4. Select and hold the **Operations Manager Operators** role and select **Properties**.
+4. Right-click the **Operations Manager Operators** role and select **Properties**.
 
     ![Screenshot showing User role properties.](./media/sql-server-dashboards-management-pack/properties.png)
 

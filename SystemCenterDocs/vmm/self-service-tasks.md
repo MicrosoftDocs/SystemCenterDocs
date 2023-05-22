@@ -61,7 +61,7 @@ As a self-service user, you can share your library resources with the other memb
 
 Share resources as follows:
 
-1. Select **Library**, select and hold the template or physical resource that you want to share > **Properties**.
+1. Select **Library**, right-click the template or physical resource that you want to share > **Properties**.
 2. In **Access** > **Users**, select **Add**.
 3. In **Select Users**, in User, share the resource with another member of your role. In **User Role**, share the resource with other self-service user roles.
 

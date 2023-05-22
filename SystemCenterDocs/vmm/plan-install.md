@@ -71,7 +71,7 @@ If you can't do this, you can also register the SPN during VMM installation. A d
 Hence, the delegated user should be highly trusted, and the account credentials must be kept secure. To do this:
 
 1. Run adsiedit as a domain administrator.
-2. Navigate to find the VMM service user. Select and hold **Properties** > **Security** > **Advanced**. Then select **Add**, and in **Select a principal**, specify the user who will be granted the  permissions.
+2. Navigate to find the VMM service user. Right-click **Properties** > **Security** > **Advanced**. Then select **Add**, and in **Select a principal**, specify the user who will be granted the  permissions.
 3. Select **Write servicePrincipalName** > **OK**.
 
 When you install VMM with this user account, SPN will be registered.

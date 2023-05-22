@@ -221,7 +221,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 -  Sign in to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 -  Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
 
-1.  In the Operations console, select **Administration**. Select and hold **Management Packs** > **Import Management Packs**. Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**
+1.  In the Operations console, select **Administration**. Right-click **Management Packs** > **Import Management Packs**. Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**
 
 2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](/previous-versions/system-center/system-center-2012-R2/hh212691(v=sc.12)).
 
@@ -241,7 +241,7 @@ You'll need to install the DPM Central Console on the Operations Manager server.
 
 1.  Sign in to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, select **Administration**. Select and hold **Management Packs** > **Import Management Packs**.
+2.  In the Operations console, select **Administration**. Right-click **Management Packs** > **Import Management Packs**.
 
 3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
     Follow the instructions in the Import Management Packs wizard.

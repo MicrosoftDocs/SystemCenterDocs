@@ -3,7 +3,7 @@ ms.assetid: e357ab3b-45b3-417e-8a41-84c4cc66b4a0
 title: Low-privilege monitoring in Management Pack for SQL Server
 description: This article explains low-privilege monitoring
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 2/1/2023
 ms.topic: article
@@ -400,7 +400,7 @@ To configure security for configurations with low-privilege accounts, perform th
     - Component Services
     - WMI Control (for a local computer)
 
-2. Expand **Component Services**, select and hold **My Computer**, and select **Properties**.
+2. Expand **Component Services**, right-click **My Computer**, and select **Properties**.
 
    ![Screenshot of opening properties.](./media/sql-server-management-pack/component-service-properties.png)
 

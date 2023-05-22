@@ -179,7 +179,7 @@ Here's how to set up protection with certificate authentication.
 ### <a name="BKMK_Template"></a>Create a DPM certificate template
 You can optionally set up a DPM template for web enrollment. If you do want to do this, select a template that has Client Authentication and Server Authentication as its intended purpose. For example:
 
-1.  In the **Certificate Templates** MMC snap-in, you could select the **RAS and IAS Server** template. Select and hold it and select **Duplicate Template**.
+1.  In the **Certificate Templates** MMC snap-in, you could select the **RAS and IAS Server** template. Right-click it and select **Duplicate Template**.
 
 2.  In **Duplicate Template**, leave the default setting **Windows Server 2003 Enterprise**.
 
@@ -187,7 +187,7 @@ You can optionally set up a DPM template for web enrollment. If you do want to d
 
 4.  In the **Request Handling** tab, ensure that **Allow private key to be exported** is enabled.
 
-5.  After you've created the template, make it available for use. Open the Certificate Authority snap-in. Select and hold **Certificate Templates**, select **New**, and choose **Certificate Template to Issue**. In **Enable Certificate Template**, select the template and select **OK**. Now the template will be available when you obtain a certificate.
+5.  After you've created the template, make it available for use. Open the Certificate Authority snap-in. Right-click **Certificate Templates**, select **New**, and choose **Certificate Template to Issue**. In **Enable Certificate Template**, select the template and select **OK**. Now the template will be available when you obtain a certificate.
 
 #### Enable enrollment or autoenrollment
 If you want to optionally configure the template for enrollment or autoenrollment, select the Subject Name tab in the template properties. When you configure enrollment, the template can be selected in the MMC. If you configure autoenrollment, the certificate is automatically assigned to all computers in the domain.
@@ -196,7 +196,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
 -   For autoenrollment, go to the **Security** tab and assign the **Autoenroll** permission to authenticated users. With this setting enabled, the certificate will be automatically assigned to all the computers in the domain.
 
--   If you've configured enrollment, you'll be able to request a new certificate in the MMC based on the template. To do this, on the protected computer, in **Certificates (Local Computer)** > **Personal**, select and hold **Certificates**. Select **All Tasks** > **Request New Certificate**. In the **Select Certificate Enrollment Policy** page of the wizard, select **Active Directory Enrollment Policy**. In **Request Certificates**, you'll see the template. Expand **Details** and select **Properties**. Select the **General** tab and provide a friendly name. After you apply the settings, you should receive a message that the certificate was installed successfully.
+-   If you've configured enrollment, you'll be able to request a new certificate in the MMC based on the template. To do this, on the protected computer, in **Certificates (Local Computer)** > **Personal**, right-click **Certificates**. Select **All Tasks** > **Request New Certificate**. In the **Select Certificate Enrollment Policy** page of the wizard, select **Active Directory Enrollment Policy**. In **Request Certificates**, you'll see the template. Expand **Details** and select **Properties**. Select the **General** tab and provide a friendly name. After you apply the settings, you should receive a message that the certificate was installed successfully.
 
 ### <a name="BKMK_CertDPM"></a>Configure a certificate on the DPM server
 
