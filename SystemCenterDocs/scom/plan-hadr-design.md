@@ -58,7 +58,7 @@ Deploying a duplicate management group is an option when there's no tolerance fo
 
 The following diagram is an example of this design scenario.<br>
 
-:::image type="content" source="./media/plan-hadr-design/om2016-dr-redundant-mg_inline.png" alt-text="Diagram of Duplicate MGs." ligtbox="./media/plan-hadr-design/om2016-dr-redundant-mg_expanded.png":::
+:::image type="content" source="./media/plan-hadr-design/om2016-dr-redundant-mg_inline.png" alt-text="Diagram of Duplicate MGs." lightbox="./media/plan-hadr-design/om2016-dr-redundant-mg_expanded.png":::
 
 If immediate recovery isn't necessary for your Operations Manager deployment and you want to avoid the complexity of a duplicate management group, you can alternatively deploy additional management group components in your secondary data center in order to retain the functionality of your management group. At a minimum, consider implementing a SQL Server 2014 or 2016 Always On Availability Group to provide recovery of the Operational and Data Warehouse databases between two or more datacenters, where a two-node failover cluster instance (FCI) is deployed in the primary data center, and a standalone SQL Server in the secondary datacenter as part of a single Windows Server Failover Cluster (WSFC). The secondary replica for the Always On Availability Group would be on the non-FCI standalone instance as shown in the following diagram.<br>
 
