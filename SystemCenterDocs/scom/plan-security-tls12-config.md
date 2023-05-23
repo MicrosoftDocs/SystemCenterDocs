@@ -219,7 +219,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
       "Driver"="%WINDIR%\system32\msodbcsql13.dll"
       ```
 
-   #### Powershell
+   #### PowerShell
    Alternatively, you can run the following PowerShell commands to automate the change.
 
     * For ODBC 11.0, run the following PowerShell commands:
@@ -269,7 +269,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
       "Driver"="%WINDIR%\system32\msodbcsql17.dll"
       ```
 	
-   #### Powershell
+   #### PowerShell
    Alternatively, you can run the following PowerShell commands to automate the change.
 
     * For ODBC 17, run the following PowerShell commands:
