@@ -6,7 +6,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 02/22/2023
+ms.date: 05/24/2023
 ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
@@ -96,6 +96,11 @@ For more information about how to set up, configure, and run your environment to
 ## New features in Orchestrator 2022
 
 See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2022.
+
+### Release of SCO 2022 Exchange Admin Integration pack v10.22.2.5
+
+SCO 2022 Exchange Admin Integration pack version 10.22.2.5 fixes issues with older versions 10.22.1. For more details, refer [blog announcement](https://techcommunity.microsoft.com/t5/system-center-blog/update-sc-orchestrator-exchange-admin-2022-integration-pack-v10/ba-p/3828422). 
+
 
 ### SCO 2022 Integration packs
 
