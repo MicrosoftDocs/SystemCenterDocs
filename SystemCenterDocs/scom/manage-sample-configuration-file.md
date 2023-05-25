@@ -36,7 +36,7 @@ This article details a sample configuration for collecting log files from Linux 
     # Specify the log file path. This supports wild card character
     path /root/demo/log/demo*.log
 
-    # This is recommended – Fluentd will record the position it last read into this file. Change this folder according to your server
+    # This is recommended - Fluentd will record the position it last read into this file. Change this folder according to your server
     #pos_file PATH /home/user1/fluent-test/demo_simple_match.log.pos
 
     # tag is used to correlate the directives. For example, source with corresponding filter and match directives.
@@ -69,7 +69,7 @@ This article details a sample configuration for collecting log files from Linux 
     # Specify the log file path. This supports wild card character
     path /var/log/syslog
 
-    # This is recommended – Fluentd will record the position it last read into this file
+    # This is recommended - Fluentd will record the position it last read into this file
     #pos_file /home/user1/fluent-test/demo_syslog.log.pos
 
     # tag is used to correlate the directives. For example, source with corresponding filter and match directives.
@@ -99,7 +99,7 @@ This article details a sample configuration for collecting log files from Linux 
 
 <filter scom.log>
 
-    # new scom fluentd plugin for simple match - Input – Pattern A;  Action: log record = A à Send Event
+    # new scom fluentd plugin for simple match - Input - Pattern A;  Action: log record = A à Send Event
 
     type filter_scom_simple_match
 
@@ -138,7 +138,7 @@ This article details a sample configuration for collecting log files from Linux 
 
 <filter scom.log.syslog>
 
-    # SCOM filter plugin for exclusive match - 2 Inputs – Pattern A and B; Action: (log record = A & log record != B) then Send Event.
+    # SCOM filter plugin for exclusive match - 2 Inputs - Pattern A and B; Action: (log record = A & log record != B) then Send Event.
     type filter_scom_excl_match
 
     # Example where user monitors if insertion of a record in MongoDB succeeds.
@@ -150,7 +150,7 @@ This article details a sample configuration for collecting log files from Linux 
     </filter>
 
     <filter scom.log.syslog>
-    # SCOM filter plugin for correlated match - 3 Inputs – Pattern A, B and Timer T; Action: (log record = A; within T if log record = B)  then send Event.
+    # SCOM filter plugin for correlated match - 3 Inputs - Pattern A, B and Timer T; Action: (log record = A; within T if log record = B)  then send Event.
     type filter_scom_cor_match
 
     # User verifies if a particular package installation fails
@@ -163,7 +163,7 @@ This article details a sample configuration for collecting log files from Linux 
 
 <filter scom.log.mongo>
 
-    # SCOM filter plugin for Repeated correlation - 3 Inputs – Pattern A, Timer T and Count N; Action: (within T if log record = A, N number of times) then send an Event
+    # SCOM filter plugin for Repeated correlation - 3 Inputs - Pattern A, Timer T and Count N; Action: (within T if log record = A, N number of times) then send an Event
     type filter_scom_repeated_cor
 
     # If a user tries to log into MongoDB using incorrect credentials and authentication fails for 5 times, an event is generated.
@@ -178,7 +178,7 @@ This article details a sample configuration for collecting log files from Linux 
 
 <filter scom.log.mongo>
 
-    # SCOM filter plugin for Exclusive correlation - 3 Inputs – Pattern A, B and Timer T; Action: (log record = A, within T if log record != B  then send an Event.
+    # SCOM filter plugin for Exclusive correlation - 3 Inputs - Pattern A, B and Timer T; Action: (log record = A, within T if log record != B  then send an Event.
 
     type filter_scom_excl_correlation
 
@@ -195,7 +195,7 @@ This article details a sample configuration for collecting log files from Linux 
 
 <match scom.log.** scom.event>
 
-    # output plugin to use – this is a dedicated output plugin for SCOM
+    # output plugin to use - this is a dedicated output plugin for SCOM
     type out_scom
 
     log_level trace
@@ -214,7 +214,7 @@ This article details a sample configuration for collecting log files from Linux 
     # If queue length exceeds the specified limit, events are rejected.
     buffer_queue_limit 10
 
-    # Control the buffer behavior when the queue becomes full – 3 modes supported – exception, block, drop oldest chunk
+    # Control the buffer behavior when the queue becomes full - 3 modes supported - exception, block, drop oldest chunk
     buffer_queue_full_action drop_oldest_chunk
 
 
