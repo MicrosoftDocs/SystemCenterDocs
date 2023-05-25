@@ -196,7 +196,7 @@ When an incident has already been breached, no notification bar is displayed in 
 
 Select the required tab for steps to view warning or breached SLA information in an incident form: 
 
-# [View warning SLA information in an incident form](#tab/WarningSLA)
+# [View warning SLA information](#tab/WarningSLA)
 
 Follow these steps to view the warning SLA information in an incident form:
 
@@ -207,7 +207,7 @@ Follow these steps to view the warning SLA information in an incident form:
 5.  Select the **Service Level** tab, and observe the status of the incident as **Warning**. You can also see other information about the incident, most notably **Time Before SLA Breached**.
 6.  Select **OK** to close the incident.
 
-# [View breached SLA information in an incident form](#tab/BreachedSLA)
+# [View breached SLA information](#tab/BreachedSLA)
 
 Follow these steps to view breached SLA information in an incident form:
 
