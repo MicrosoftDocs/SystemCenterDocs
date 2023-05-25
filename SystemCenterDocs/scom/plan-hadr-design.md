@@ -5,7 +5,7 @@ description: This article provides high availability and disaster recovery desig
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/23/2023
+ms.date: 05/25/2023
 ms.custom: engagement-fy23, UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
@@ -58,11 +58,11 @@ Deploying a duplicate management group is an option when there's no tolerance fo
 
 The following diagram is an example of this design scenario.<br>
 
-:::image type="content" source="./media/plan-hadr-design/om2016-dr-redundant-mg_inline.png" alt-text="Diagram of Duplicate MGs." lightbox="./media/plan-hadr-design/om2016-dr-redundant-mg_expanded.png":::
+:::image type="content" source="./media/plan-hadr-design/om2016-dr-redundant-mg-inline.png" alt-text="Diagram of Duplicate MGs." lightbox="./media/plan-hadr-design/om2016-dr-redundant-mg-expanded.png":::
 
 If immediate recovery isn't necessary for your Operations Manager deployment and you want to avoid the complexity of a duplicate management group, you can alternatively deploy additional management group components in your secondary data center in order to retain the functionality of your management group. At a minimum, consider implementing a SQL Server 2014 or 2016 Always On Availability Group to provide recovery of the Operational and Data Warehouse databases between two or more datacenters, where a two-node failover cluster instance (FCI) is deployed in the primary data center, and a standalone SQL Server in the secondary datacenter as part of a single Windows Server Failover Cluster (WSFC). The secondary replica for the Always On Availability Group would be on the non-FCI standalone instance as shown in the following diagram.<br>
 
-:::image type="content" source="./media/plan-hadr-design/om2016-dr-simple-config_inline.png" alt-text="Diagram of Simple DR Config." lightbox="./media/plan-hadr-design/om2016-dr-simple-config_expanded.png":::
+:::image type="content" source="./media/plan-hadr-design/om2016-dr-simple-config-inline.png" alt-text="Diagram of Simple DR Config." lightbox="./media/plan-hadr-design/om2016-dr-simple-config-expanded.png":::
 
 In this example, you would be required to deploy one or more Windows Servers with the same hardware configuration and computer name, and reinstall the management server role using the **/Recover** parameter. Here's a sample:
 
@@ -78,7 +78,7 @@ During this time, agents will queue the data collected (alerts, events, performa
 
 If a management server is supporting integration (via a connector hosted directly on the management server or from another System Center product such as VMM, Orchestrator, or Service Manager), this will need to be planned for with manual or automatic recovery steps depending on the integration configuration and sequence of recovery steps. This ensures any other dependency on the management server is captured and planned for when the disaster recovery plan needs to be implemented.<br>
 
-:::image type="content" source="./media/plan-hadr-design/om2016-dr-complex-config_inline.png" alt-text="Illustration of the Complex DR Config." lightbox="./media/plan-hadr-design/om2016-dr-complex-config_expanded.png":::
+:::image type="content" source="./media/plan-hadr-design/om2016-dr-complex-config-inline.png" alt-text="Illustration of the Complex DR Config." lightbox="./media/plan-hadr-design/om2016-dr-complex-config-expanded.png":::
 
 If one site goes offline, the agent will fail over to the management server in another site, assuming that the agent’s failover configuration allows this. Reconfigure the Windows agents to cache only management servers in your primary data center that should manage them to prevent them from attempting to failover to a management server in the secondary data center, which would only delay recovery and reporting.  This can be accomplished if you manually deploy the agent in an automated manner with a script (for example, VBScript, or better yet, PowerShell) to pre-configure during installation, or post deployment if you push the agent from the console, again using a scripted method managed with your enterprise configuration management solution.
 
