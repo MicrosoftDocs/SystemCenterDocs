@@ -99,7 +99,7 @@ See the following sections for detailed information about the new features/featu
 
 ### Release of SCO 2022 Exchange Admin Integration pack v10.22.2.5
 
-SCO 2022 Exchange Admin Integration pack version 10.22.2.5 fixes issues with older versions 10.22.1. For more details, refer [blog announcement](https://techcommunity.microsoft.com/t5/system-center-blog/update-sc-orchestrator-exchange-admin-2022-integration-pack-v10/ba-p/3828422). 
+SCO 2022 Exchange Admin Integration pack version 10.22.2.5 fixes issues with older versions 10.22.1.x. For more details, refer [blog announcement](https://techcommunity.microsoft.com/t5/system-center-blog/update-sc-orchestrator-exchange-admin-2022-integration-pack-v10/ba-p/3828422). 
 
 
 ### SCO 2022 Integration packs

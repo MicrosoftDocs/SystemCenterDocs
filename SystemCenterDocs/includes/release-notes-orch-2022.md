@@ -8,7 +8,7 @@ ms.author: jsuri
 ms.prod:  system-center
 ms.technology: Orchestrator
 keywords:
-ms.date: 03/21/2022
+ms.date: 05/25/2023
 title:  include file
 ---
 
@@ -26,6 +26,13 @@ See [KB article #5021420](https://support.microsoft.com/kb/5021420) for improvem
 ## Known Issues and Workarounds
 
 The following are the known issues and workarounds in System Center 2022 - Orchestrator.
+
+### Issues with Exchange Admin Integration pack v10.22.1.x
+
+**Description**: Issues with Exchange Admin Integration pack v10.22.1.x
+
+**Workaround**: Upgrade to SCO 2022 Exchange Admin Integration pack version 10.22.2.5. For more details, refer [blog announcement](https://techcommunity.microsoft.com/t5/system-center-blog/update-sc-orchestrator-exchange-admin-2022-integration-pack-v10/ba-p/3828422).
+
 
 ### Orchestrator Web console doesn't work properly
 
