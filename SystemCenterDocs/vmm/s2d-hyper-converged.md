@@ -5,11 +5,11 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/10/2022
+ms.date: 05/11/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2, intro-deployment
+ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23
 ---
 
 # Deploy a Storage Spaces Direct hyper-converged cluster in VMM
@@ -69,36 +69,47 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 ## Step 1: Provision the cluster
 
-### Provision a cluster from Hyper-V hosts
+You can provision a cluster in the following ways:
+1. From Hyper-V hosts
+1. From bare metal machines
+
+Select the required tab for the steps to provision a cluster:
+
+# [From Hyper-V hosts](#tab/HyperVhosts)
+
+Follow these steps to provision a cluster from Hyper-V hosts:
 
 1.	If you need to add the Hyper-V hosts to the VMM fabric, [follow these steps](hyper-v-existing.md). If they’re already in the VMM fabric, skip to the next step.
 2.	 Follow the instructions for [provisioning a cluster from standalone Hyper-V hosts managed in the VMM fabric](hyper-v-standalone.md).
 
-**Note the following**:
-- When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard.
--In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
-- If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
+> [!NOTE]
+> - When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard. In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
+> - If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
-### Provision a cluster from bare metal machines
+# [From bare metal machines](#tab/BareMetalMachines)
 
 > [!NOTE]
-> Typically, S2D node requires RDMA, QoS, and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
+> Typically, S2D node requires RDMA, QoS, and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
 > You can also use this script to configure RDMA, QoS, and SET while adding a new node to an existing S2D deployment from bare metal computers.
+
+Follow these steps to provision a cluster from bare metal machines:
 
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. 
 
 > [!NOTE]
 > - The generalized VHD or VHDX in the VMM library should be running the applicable Windows Server version with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk should be set.
-> - For bare-metal deployment, you need to add a pre-boot execution environment (PXE) server to the VMM fabric. The PXE server is provided through Windows Deployment Services. VMM uses its own WinPE image, and you need to ensure that it’s the latest. To do this, select **Fabric** > **Infrastructure** > **Update WinPE image**, and ensure that the job finishes.
+> - For bare-metal deployment, you need to add a pre-boot execution environment (PXE) server to the VMM fabric. The PXE server is provided through Windows Deployment Services. VMM uses its own WinPE image, and you need to ensure that it's the latest. To do this, select **Fabric** > **Infrastructure** > **Update WinPE image**, and ensure that the job finishes.
 
 2.	Follow the instructions for [provisioning a cluster from bare-metal computers](hyper-v-bare-metal.md).
+
+---
 
 ## Step 2: Set up networking for the cluster
 
 After the cluster is provisioned and managed in the VMM fabric, you need to set up networking for cluster nodes.
 
 1.	Start by [creating a logical network](network-logical.md) to mirror your physical management network.
-2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled so that the switch is aware of virtualization. This switch is connected to the management logical network and has all of the host virtual adapters that are required to provide access to the management network or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
+2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled so that the switch is aware of virtualization. This switch is connected to the management logical network and has all the host virtual adapters that are required to provide access to the management network or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
 3.	[Create VM networks](network-virtual.md).
 
 ::: moniker range="sc-vmm-2019"
@@ -111,10 +122,10 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 ## Step 3: Configure DCB settings on the S2D cluster
 
 > [!NOTE]
-> Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4 if you do not wish to configure DCB settings.
+> Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4 if you don't wish to configure DCB settings.
 
 ### Recommendations
-- If you've vNICs deployed, for optimal performance, we recommend you to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).
+- If you have vNICs deployed, for optimal performance, we recommend you to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).
 
 
 - When you create a network adapter port profile, we recommend you to allow **IEEE priority**. [Learn more](network-port-profile.md#create-a-virtual-network-adapter-port-profile). You can also set the IEEE Priority by using the following PowerShell commands:
@@ -123,7 +134,6 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     PS> Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
     PS> Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
     ```
-
 
 
 ### Before you begin
@@ -136,12 +146,12 @@ Ensure the following:
     >[!NOTE]
     >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
     >- You can configure the DCB settings during cluster creation workflow or on an existing cluster.
-    >- You cannot configure DCB settings during SOFS cluster creation, you can only configure on an existing SOFS cluster. All the nodes of the SOFS cluster must be managed by VMM.
-    > - Configuration of DCB settings during cluster creation is supported only when the cluster is created with an existing windows server. It is not supported with bare metal/operating system deployment workflow.
+    >- You can't configure DCB settings during SOFS cluster creation; you can only configure on an existing SOFS cluster. All the nodes of the SOFS cluster must be managed by VMM.
+    > - Configuration of DCB settings during cluster creation is supported only when the cluster is created with an existing windows server. It isn't supported with bare metal/operating system deployment workflow.
 
 **Use the following steps to configure DCB settings**:
 
-1. [Create a new Hyper-V cluster](hyper-v-standalone.md), select **Enable Storage Spaces Direct**.
+1. [Create a new Hyper-V cluster](hyper-v-standalone.md), and select **Enable Storage Spaces Direct**.
    *DCB Configuration* option gets added to the Hyper-V cluster creation workflow.
 
     ![Screenshot of Hyper-V cluster.](./media/s2d/create-hyperv-cluster-wizard.png)
@@ -171,7 +181,7 @@ Ensure the following:
 
 8. Review the summary and select **Finish**.
 
-    An S2D cluster will be created and the DCB parameters are configured on all the S2D Nodes.
+    An S2D cluster will be created, and the DCB parameters are configured on all the S2D Nodes.
 
     > [!NOTE]
     > - DCB settings can be configured on the existing Hyper-V S2D clusters by visiting the **Cluster Properties** page and navigating to the **DCB configuration** page.
@@ -193,7 +203,6 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 6. Select **Configure advanced storage and tiering settings** to set up these options.
 
     ![Screenshot of Configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
-
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
