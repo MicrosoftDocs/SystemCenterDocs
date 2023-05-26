@@ -5,11 +5,11 @@ description: This article describes how to run a live migration in the VMM fabri
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/10/2020
+ms.date: 05/12/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 
@@ -38,9 +38,11 @@ To migrate a virtual machine from one standalone Hyper-V host to another standal
 
 
 ## Migrate a VM between clusters
-You can migrate a VM between clusters by using shared storage or with no shared infrastructure. See the following sections for detailed information.
+You can migrate a VM between clusters by using shared storage or with no shared infrastructure.
 
-### Live migration with shared storage
+Select the required tab for steps for live migration with shared storage or with no shared infrastructure:
+
+# [Live migration with shared storage](#tab/SharedStorage)
 
 When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration with shared storage, you must use SMB 3.0 file shares as the storage location. Because the storage doesn't have to be migrated, the time in which high availability status can't be guaranteed is short.
 
@@ -54,11 +56,11 @@ When you migrate a VM between clusters, note that the VM temporarily loses its h
 
 
 >[!NOTE]
-> When you run live migration on VMs from an older cluster version to a newer version, if the [*Msvm_CompatibilityVector*](/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
+> When you run live migration on VMs from an older cluster version to a newer version, if the [*Msvm_CompatibilityVector*](/windows/win32/hyperv_v2/msvm-compatibilityvector) value isn't updated, migration within the new cluster will be blocked.
 >
 >To fix this issue, restart the VM. VM restart updates the *Msvm_CompatibilityVector* values according to the new cluster version.
 
-### Live migration with no shared infrastructure
+# [Live migration with no shared infrastructure](#tab/NoSharedInfra)
 
 When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. For live migration with no shared infrastructure, you must use two different SMB 3.0 shares. First, synchronize the source and destination virtual hard disks completely, then initiate the live migration for the virtual machine. [Read more](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831435(v=ws.11)) about virtual machine storage migration.
 
@@ -74,7 +76,7 @@ Follow these steps:
 5.  In **Summary**, select **Move**. To track the job status, open the **Jobs** workspace.
 6.  To verify that the virtual machine was migrated, check the **VMs** list on the destination node to ensure the VM is running.
 
-
+---
 
 ## Migrate storage between two locations on a standalone host
 
@@ -87,7 +89,7 @@ You can run a live migration of VM storage between locations on standalone hosts
 1.  In **VMs and Services** > **All Hosts**, select the standalone host where the VM is located.
 2.  In **VMs**, select the running VM for which you want to migrate storage. Start the machine if it's not running.
 3.  In **Virtual Machine**, select **Migrate Storage** to start the Migrate Virtual Machine Wizard.
-4.  In **Select Path** >  **Storage location**, select one of the default storage locations on the host. Or select **Browse** to view all possible storage destinations. Select the destination SMB 3.0 file share or location on the local hard disk, and select **OK**.
+4.  In **Select Path** > **Storage location**, select one of the default storage locations on the host. Or select **Browse** to view all possible storage destinations. Select the destination SMB 3.0 file share or location on the local hard disk, and select **OK**.
 
     If you specify an SMB 3.0 file share in the **Storage location** list, ensure that you use the fully qualified domain name (FQDN) of the destination server in the share path. For example, instead of *\\\fileserver1\smbshare*, use *\\\fileserver1.contoso.com\smbshare*.
 
