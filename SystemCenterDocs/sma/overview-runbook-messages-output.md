@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.prod: system-center
 keywords:
-ms.date: 01/22/2018
+ms.date: 05/17/2023
 title: Runbook Output and Messages
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Runbook output and messages
@@ -35,7 +35,7 @@ The following table provides a brief description of each of the streams and thei
 |Debug|Messages intended for an interactive user. Shouldn't be used in runbooks.|Not written to job history.|Not written to Test Output Pane.|
 
 ## Output stream
-The Output stream is intended for output of objects created by a workflow when it runs correctly. In Automation, this stream is primarily used for objects intended to be consumed by [parent runbooks that call the current runbook](~/sma/link-runbooks.md). When you [call a runbook inline](~/sma/link-runbooks.md#invoke-a-child-runbook-using-inline-execution) from a parent runbook, it returns data from the output stream to the parent. You should only use the output stream to communicate general information back to the user if you know the runbook will never be called by another runbook. As a best practice, however, you should typically use the [Verbose Stream](overview-runbook-messages-output.md#verbose-stream) to communicate general information to the user.
+The Output stream is intended for output of objects created by a workflow when it runs correctly. In Automation, this stream is primarily used for objects intended to be consumed by [parent runbooks that call the current runbook](~/sma/link-runbooks.md). When you [call a runbook inline](~/sma/link-runbooks.md#invoke-a-child-runbook-using-inline-execution) from a parent runbook, it returns data from the output stream to the parent. You should only use the output stream to communicate general information back to the user if you know the runbook will never be called by another runbook. As a best practice, however, you should typically use the [Verbose Stream](overview-runbook-messages-output.md#message-streams) to communicate general information to the user.
 
 You can write data to the output stream using [Write-Output](/powershell/module/microsoft.powershell.utility/write-output) or by putting the object on its own line in the runbook.
 
@@ -81,7 +81,7 @@ Verbose inside of function
 The $functionOutput variable would have the value:
 
 ```powershell
-Output inside of fuction
+Output inside of function
 ```
 
 ### Declare output data type
@@ -102,7 +102,9 @@ Workflow Test-Runbook
 ## Message streams
 Unlike the output stream, message streams are intended to communicate information to the user. There are multiple message streams for different kinds of information, and each is handled differently by Automation.
 
-### Warning and Error streams
+Select the required tab to know more about these message streams:
+
+# [Warning and Error streams](#tab/WarningError)
 The Warning and Error streams are intended to log problems that occur in a runbook. They're written to the job history when a runbook is executed and are included in the Test Output Pane in the Management Portal when a runbook is tested. By default, the runbook will continue executing after a warning or error. You can specify that the runbook should be suspended on a warning or error by setting a [preference variable](overview-runbook-messages-output.md#preference-variables) in the runbook before creating the message. For example, to cause a runbook to suspend on an error as it would an exception, set $ErrorActionPreference to **Stop**.
 
 Create a warning or error message using the [Write-Warning](/powershell/module/microsoft.powershell.utility/write-warning) or [Write-Error](/powershell/module/microsoft.powershell.utility/write-error) cmdlet. Activities may also write to these streams.
@@ -115,8 +117,8 @@ Write-Warning -Message "This is a warning message."
 Write-Error -Message "This is an error message that will stop the runbook because of the preference variable."
 ```
 
-### Verbose stream
-The Verbose message stream is for general information about the runbook operation. Since the [Debug Stream](overview-runbook-messages-output.md#debug-stream) isn't available in a runbook, verbose messages should be used for troubleshooting information. By default, verbose messages from published runbooks won't be stored in the job history. To store verbose messages, configure published runbooks to **Log Verbose Records** on the **Configure** tab of the runbook in the Management Portal. In most cases, you should keep the default setting of not logging verbose records for a runbook for performance reasons. Turn on this option only to troubleshoot or debug a runbook.
+# [Verbose stream](#tab/Verbose)
+The Verbose message stream is for general information about the runbook operation. Since the [Debug Stream](overview-runbook-messages-output.md#message-streams) isn't available in a runbook, verbose messages should be used for troubleshooting information. By default, verbose messages from published runbooks won't be stored in the job history. To store verbose messages, configure published runbooks to **Log Verbose Records** on the **Configure** tab of the runbook in the Management Portal. In most cases, you should keep the default setting of not logging verbose records for a runbook for performance reasons. Turn on this option only to troubleshoot or debug a runbook.
 
 The $VerbosePreference variable defaults to a value of **SilentlyContinue**. You don't need to change this variable in a published runbook for verbose messages to be stored. If this value is explicitly set to **SilentlyContinue** in a published runbook though, then verbose messages won't be stored even if the runbook is configured to log verbose records.
 
@@ -130,8 +132,10 @@ Create a verbose message using the [Write-Verbose](/powershell/module/microsoft.
 Write-Verbose -Message "This is a verbose message."
 ```
 
-### Debug stream
+# [Debug stream](#tab/Debug)
 The Debug stream is intended for use with an interactive user and shouldn't be used in runbooks.
+
+---
 
 ## Progress records
 If you configure a runbook to log progress records (on the **Configure** tab of the runbook in the Management Portal), then a record will be written to the job history before and after each activity is run. In most cases, you should keep the default setting of not logging progress records for a runbook in order to maximize performance. Turn on this option only to troubleshoot or debug a runbook. When testing a runbook, progress messages aren't displayed even if the runbook is configured to log progress records.
@@ -163,7 +167,7 @@ The following table lists the behavior for the preference variable values that a
 ## <a name="RetrieveOutput"></a>Retrieving Runbook Output and Messages
 
 ### Management portal
-You can view the details of a runbook job in the Management Portal from the **Jobs** tab of a runbook. The **Summary** of the job will display the input parameters and the [Output Stream](overview-runbook-messages-output.md#output-stream) in addition to general information about the job and any exceptions if they occurred. The **History** will include messages from the Output Stream and [Warning and Error Streams](overview-runbook-messages-output.md#warning-and-error-streams) in addition to the [Verbose Stream](overview-runbook-messages-output.md#verbose-stream) and [Progress Records](overview-runbook-messages-output.md#progress-records) if the runbook is configured to log verbose and progress records.
+You can view the details of a runbook job in the Management Portal from the **Jobs** tab of a runbook. The **Summary** of the job will display the input parameters and the [Output Stream](overview-runbook-messages-output.md#output-stream) in addition to general information about the job and any exceptions if they occurred. The **History** will include messages from the Output Stream and [Warning and Error Streams](overview-runbook-messages-output.md#message-streams) in addition to the [Verbose Stream](overview-runbook-messages-output.md#message-streams) and [Progress Records](overview-runbook-messages-output.md#progress-records) if the runbook is configured to log verbose and progress records.
 
 ### Windows PowerShell
 In Windows PowerShell, you can retrieve output and messages from a runbook using the [Get-SmaJobOutput](/previous-versions/system-center/powershell/system-center-2012-r2/dn502570(v=sc.20)) cmdlet. This cmdlet requires the ID of the job and has a parameter called **Stream** where you specify which stream to return. You can specify **Any** to return all streams for the job.

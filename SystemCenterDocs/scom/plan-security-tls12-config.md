@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/27/2023
+ms.date: 05/23/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -38,7 +38,7 @@ Perform the following steps to enable TLS protocol version 1.2:
 >[!NOTE]
 > Microsoft OLE DB Driver 18 for SQL Server (recommended) is supported with Operations Manager 2016 UR9 and later.
 
-1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/en-us/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver 18 for SQL Server](https://www.microsoft.com/download/details.aspx?id=56730) on all management servers and the Web console server.  
+1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver 18 for SQL Server](https://www.microsoft.com/download/details.aspx?id=56730) on all management servers and the Web console server.  
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.   
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
 4. Install [ODBC 11.0](https://www.microsoft.com/download/details.aspx?id=36434) or [ODBC 13.0](https://www.microsoft.com/download/details.aspx?id=50420) on all management servers.
@@ -48,10 +48,10 @@ Perform the following steps to enable TLS protocol version 1.2:
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
-1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver15#1865&preserve-view=true) version 18.2 to 18.6.5 on all management servers and the Web console server.
+1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server#1865) version 18.2 to 18.6.5 on all management servers and the Web console server.
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-4. Install [ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#179&preserve-view=true) version 17.3 to 17.10.3 on all management servers.
+4. Install [ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#17103) version 17.3 to 17.10.3 on all management servers.
 5. Configure Windows to only use TLS 1.2.  
 6. Configure Operations Manager to only use TLS 1.2.  
 ::: moniker-end
@@ -76,24 +76,24 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 > Making these registry changes doesn't affect the use of Kerberos or NTLM protocols.
 
 1. Sign in to the server by using an account that has local administrative credentials.
-2. Start Registry Editor by right-clicking **Start**, enter **regedit** in the **Run** textbox, and select **OK**.
-3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols**.
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.
+3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols`.
 4. Create a subkey under **Protocols** for **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, and **TLS 1.2**.  
-5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the subkey for TLS 1.0 would be **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server**.  
+5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the subkey for TLS 1.0 would be `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client` and `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server`.  
 6. To disable each protocol, create the following DWORD values under **Server** and **Client**:  
    * **Enabled** [Value = 0]  
    * **DisabledByDefault** [Value = 1]  
 
-7. To enable the TLS 1.2 protocol, create the following DWORD values under **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server**:
+7. To enable the TLS 1.2 protocol, create the following DWORD values under `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client` and `HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server`:
    * **Enabled** [Value = 1]  
    * **DisabledByDefault** [Value = 0]  
 
 8. Close the Registry Editor.
 
 ### Method 2: Automatically modify the registry
-Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol.
+Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol:
 
-```   
+```powershell
 $ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
 $ProtocolSubKeyList = @("Client", "Server")
 $DisabledByDefault  = "DisabledByDefault"
@@ -146,17 +146,17 @@ After completing the configuration of all prerequisites for Operations Manager, 
 
 ### Manually modify the registry
 1. Sign in to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by right-clicking **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
-3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319**.  
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
+3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.  
 4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
-5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\\.NETFramework\v4.0.30319**.  
+5. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319`.  
 6. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
 7. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
-Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol.  
+Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol:
 
-```
+```powershell
 # Tighten up the .NET Framework
 $NetRegistryPath = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319"
 New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
@@ -175,50 +175,111 @@ If this is being implemented for System Center 2016 - Operations Manager, after 
 
 If you're monitoring a supported version of Linux server with Operations Manager, follow the instructions on the appropriate website for your distro to configure TLS 1.2.  
 
+::: moniker range="sc-om-2016"
+
 ### Audit Collection Services
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
 1. Sign in to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by right-clicking **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
-3. Locate the following ODBC subkey for OpsMgrAC: **HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC**.  
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
+3. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
 
     >[!NOTE]
     >The default name of DSN is OpsMgrAC.
 
 4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 11.0 installed, change this name to **ODBC Driver 11 for SQL Server**, or if you have ODBC 13.0 installed, change this name to **ODBC Driver 13 for SQL Server**.
-5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBS version that is installed.
-   * If ODBC 11.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql11.dll.
-   * If ODBC 13.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql13.dll.
+5. Under the **OpsMgrAC** subkey, update the **Driver** for the ODBC version that is installed.
+   * If ODBC 11.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql11.dll`.
+   * If ODBC 13.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql13.dll`.
+   
+   #### Registry File
+   Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
-   Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
+    * For ODBC 11.0, create the following ODBC 11.reg file:
 
-    * For ODBC 11.0, create the following ODBC 11.0.reg file:
+      ```
+      Windows Registry Editor Version 5.00
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+      "OpsMgrAC"="ODBC Driver 11 for SQL Server"
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+      "Driver"="%WINDIR%\system32\msodbcsql11.dll"
+      ```
 
-         ```
-         Windows Registry Editor Version 5.00
+    * For ODBC 13.0, create the following ODBC 13.reg file:
 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-        "OpsMgrAC"="ODBC Driver 11 for SQL Server"
+      ```
+      Windows Registry Editor Version 5.00
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+      "OpsMgrAC"="ODBC Driver 13 for SQL Server"
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+      "Driver"="%WINDIR%\system32\msodbcsql13.dll"
+      ```
 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+   #### PowerShell
+   Alternatively, you can run the following PowerShell commands to automate the change.
 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-        "Driver"="%WINDIR%\\system32\\msodbcsql11.dll"
-        ```
+    * For ODBC 11.0, run the following PowerShell commands:
 
-    * For ODBC 13.0, create the following ODBC 13.0.reg file:
+      ```powershell
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql11.dll" -PropertyType STRING -Force | Out-Null
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 11 for SQL Server" -PropertyType STRING -Force | Out-Null
+      ```
+      
+    * For ODBC 13.0, run the following PowerShell commands:
 
-        ```
-        Windows Registry Editor Version 5.00
+      ```powershell
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql13.dll" -PropertyType STRING -Force | Out-Null
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 13 for SQL Server" -PropertyType STRING -Force | Out-Null
+      ```
+ 
+::: moniker-end
 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-        "OpsMgrAC"="ODBC Driver 13 for SQL Server"
+::: moniker range=">sc-om-2016"
 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+### Audit Collection Services
+For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-        "Driver"="%WINDIR%\\system32\\msodbcsql13.dll"
-        ```
+1. Sign in to the server by using an account that has local administrative credentials.  
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
+3. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
+
+    >[!NOTE]
+    >The default name of DSN is OpsMgrAC.
+
+4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 17 installed, change this name to **ODBC Driver 17 for SQL Server**.
+5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
+   * If ODBC 17 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
+   
+   #### Registry File
+   Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
+
+    * For ODBC 17, create the following ODBC 17.reg file:
+
+      ```
+      Windows Registry Editor Version 5.00
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+      "OpsMgrAC"="ODBC Driver 17 for SQL Server"
+      
+      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+      "Driver"="%WINDIR%\system32\msodbcsql17.dll"
+      ```
+	
+   #### PowerShell
+   Alternatively, you can run the following PowerShell commands to automate the change.
+
+    * For ODBC 17, run the following PowerShell commands:
+
+      ```powershell
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql7.dll" -PropertyType STRING -Force | Out-Null
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 17 for SQL Server" -PropertyType STRING -Force | Out-Null
+      ```
+
+::: moniker-end
 
 ## Next steps
 
