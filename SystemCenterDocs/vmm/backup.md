@@ -5,7 +5,7 @@ description: This article describes how to back up and restore the VMM database,
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/23/2022
+ms.date: 05/12/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -32,7 +32,7 @@ This article describes the backup and recovery process in a System Center - Virt
 - The data will be lost if the VMM management server fails.
 
 ## Create and implement a backup plan
-Basic elements of a backup plan include a list of what needs to be backed up, and an outline of what is changed frequently (and therefore need to be backed up frequently) in your environment.
+Basic elements of a backup plan include a list of what needs to be backed up and an outline of what is changed frequently (and therefore need to be backed up frequently) in your environment.
 
 ## Back up the VMM database
 The VMM database contains information such as configurations, service templates, profiles, virtual machine templates, services, scale-out services, and other critical data that is required for VMM to function correctly. Back up the VMM database regularly.
@@ -51,7 +51,15 @@ In addition to backing up the database, we recommend that you create a system st
 > - There are several ways to recover the VMM database file that you create through either of the following backup procedures. One way, which requires the VMM management server to be functioning, is to use the **SCVMMRecover.exe** tool, as described in [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)) (although **SCVMMRecover.exe** is not a cmdlet). Another way, which doesn't require the VMM management server to be functioning, is to restore by using SQL Server tools for restoring and attaching a database file.
 > - To use the following procedures, you must be a member of the Administrator user role.
 
-### Back up the VMM database by using the VMM console
+You can back up the VMM database in the following ways:
+1. By using the VMM console
+1. By using cmdlets in Windows PowerShell
+
+Select the required tab for steps to back up the VMM database by:
+
+# [Using the VMM console](#tab/VMMConsole)
+
+Follow these steps to back up the VMM database by using the VMM console:
 
 1.  In the **Settings** workspace, on the **Home**, in the **Backup** group, select **Backup**.
 
@@ -61,17 +69,21 @@ In addition to backing up the database, we recommend that you create a system st
 
     For information about how to recover the backup, see the **Important** note before this procedure.
 
-### Back up the VMM database by using cmdlets in Windows PowerShell
+# [Using cmdlets in Windows PowerShell](#tab/WindowsPowerShell)
+
+Follow these steps to back up the VMM database by using cmdlets in Windows PowerShell:
 
 1.  Start a Windows PowerShell session.
 
-2.  At the Windows PowerShell command prompt, run the [Get-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj613273(v=sc.20)) and [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)) cmdlets, using the following syntax:
+2.  At the Windows PowerShell command prompt, run the [Get-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj613273(v=sc.20)) and [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)) cmdlets using the following syntax:
 
     ```
     get-scvmmserver <VMM management server name> | backup-scvmmserver -Path <BackupFileDir>
     ```
 
 For information about how to recover the backup, see the **Important** note before these procedures.
+
+---
 
 ## Back up hosts and virtual machines
 
@@ -101,7 +113,7 @@ $libraryservers = get-scvmmserver <VMM management server name> | get-sclibraryse
 
 For more information, see [Get-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj613273(v=sc.20)) and [Get-SCLibraryServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647755(v=sc.20)).
 
-Back up all files on library shares to a shared folder on a remote file server, including files with the following extensions:
+Back up all the files on library shares to a shared folder on a remote file server, including the files with the following extensions:
 
 - .vhd and .vhdx
 - .iso
@@ -130,7 +142,7 @@ Use the following guidelines to back up registry keys, encryption keys, and non-
 
 -   **Encryption keys in Active Directory Domain Services**: If distributed key management (DKM) is configured, then you're storing VMM-related encryption keys in Active Directory Domain Services (AD DS). To back up these keys, back up Active Directory on a regular basis.
 
--   **Non-VMM managed credentials**: Some credentials that are related to VMM are managed by the Windows Credential Manager on the VMM management server. To access the Credential Manager, in Control Panel, select **All Control Panel Items**, and then select **Credential Manager**. Select **Back up Credentials** to back up any VMM-related credentials.
+-   **Non-VMM managed credentials**: Some credentials that are related to VMM are managed by the Windows Credential Manager on the VMM management server. To access the Credential Manager, in the Control Panel, select **All Control Panel Items**, and then select **Credential Manager**. Select **Back up Credentials** to back up any VMM-related credentials.
 
 ## Back up non-Microsoft user interface add-ins and other non-Microsoft applications
 
@@ -145,7 +157,9 @@ If the VMM database must be restored, restore it first, using the process that c
 
 If the VMM database is the only element that you need to restore, and you want information about the **SCVMMRecover.exe** tool, see [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)).
 
-### Restore the VMM server on the same computer
+You can restore the VMM server on the same or a different computer. Select the required tab for steps to restore the VMM server on:
+
+# [The same computer](#tab/SameComputer)
 If you're using the same computer for the VMM server, perform a system state restore on that computer (otherwise, skip this section). If you do this, the SID of the VMM server remains the same, and fewer steps are required to restore your VMM environment.
 
 After you've restored the VMM server, take the following steps:
@@ -154,10 +168,12 @@ After you've restored the VMM server, take the following steps:
 
 2.  Add any hosts or virtual machines that were added after the last backup.
 
-### Restore the VMM server on a different computer
+# [A different computer](#tab/DifferentComputer)
 If you plan to restore the VMM management server onto a different physical computer, first review the hardware requirements in System Requirements.
 
-Next, reinstall VMM on the selected server, and point this VMM server to the VMM database. Because this server will have a different SID than the original computer, a few steps are necessary to bring it current with your environment. These steps include reassociating hosts with the new VMM server (otherwise, they remain mapped to the original computer's machine account).
+Next, reinstall VMM on the selected server, and point this VMM server to the VMM database. Because this server will have a different SID than the original computer, a few steps are necessary to bring it current with your environment. These steps include re-associating hosts with the new VMM server (otherwise, they remain mapped to the original computer's machine account).
+
+---
 
 #### Update hosts with the new VMM management server
 
@@ -169,15 +185,15 @@ Next, reinstall VMM on the selected server, and point this VMM server to the VMM
 
     -   To review the list of virtual machines, in the **VMs and Services** workspace, on the left, select **All Hosts**.
 
-3.  Remove any hosts or virtual machines from the VMM console that were removed after the last backup. If a host has been removed after the last backup, then it appears as **Not Responding** and all virtual machines on the host appear as **Host Not Responding**. If the host is present but a virtual machine has been removed after the last backup, then the virtual machine appears as **Missing**.
+3.  Remove any hosts or virtual machines from the VMM console that were removed after the last backup. If a host has been removed after the last backup, then it appears as **Not Responding** and all the virtual machines on the host appear as **Host Not Responding**. If the host is present but a virtual machine has been removed after the last backup, then the virtual machine appears as **Missing**.
 
 4.  Add any hosts or virtual machines that were added after the last backup.
 
-5.  Identify managed computers that are marked as **Access Denied**, right-click each one, select **Reassociate**, and then provide the administrative credentials.
+5.  Identify the managed computers that are marked as **Access Denied**, right-click each one, select **Reassociate**, and then provide the administrative credentials.
 
 6.  If you're restoring a VMM management server that was also a library server, then the new computer lists the original VMM server as the default library server. From the **Library** view, remove the original library server, and then add the new computer as a library server.
 
-You might also need to reassociate servers in the perimeter network (also known as DMZ, demilitarized zone, and screened subnet), as described in the next section.
+You might also need to re-associate servers in the perimeter network (also known as DMZ, demilitarized zone, and screened subnet), as described in the next section.
 
 ### Reassociate servers in a perimeter network
 After you restore a VMM server, servers on a perimeter network might initially appear as **Not Responding**. In that case, perform the following steps:
@@ -191,9 +207,9 @@ After you restore a VMM server, servers on a perimeter network might initially a
 ### Restore VMM library servers
 To restore a library server after data loss, restore the file server shares, and then restore the data back onto the shares.
 
-After you restore the VMM management server and the VMM database, library servers are listed in the VMM console. As needed, reassociate these listings with the physical library servers.
+After you restore the VMM management server and the VMM database, library servers are listed in the VMM console. As needed, re-associate these listings with the physical library servers.
 
-1.  If the newly restored computer has the same name as the original computer, install the Virtual Machine Manager agent locally on that computer, and then reassociate that computer with the VMM management server.
+1.  If the newly restored computer has the same name as the original computer, install the Virtual Machine Manager agent locally on that computer, and then re-associate that computer with the VMM management server.
 2.  If the newly restored computer has a different name than the original computer, use the VMM console to remove the original computer from the list of managed computers, and then add the new computer.
 
 ## Restore registry keys, Active Directory objects, and non-VMM managed credentials
@@ -216,7 +232,7 @@ If the VMM database was configured by using SQL Server Always On Availability Gr
 ::: moniker range="<sc-vmm-2019"
 
 ## Reinstall Microsoft Azure Pack
-If Microsoft Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you'll have to reinstall it after you restore the VMM environment. For more information about Microsoft Azure Pack for Windows Server, see [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
+If Microsoft Azure Pack was deployed in your environment to support tenants by using VMM, then you'll have to reinstall it after you restore the VMM environment. For more information about Microsoft Azure Pack for Windows Server, see [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
 
 ::: moniker-end
 
@@ -226,7 +242,7 @@ If you had to replace any servers on which VMM consoles were installed, reinstal
 
 ### Update virtual machine templates
 
-All virtual machine templates that were restored must correctly specify the virtual hard disk that contains the operating system.
+All the virtual machine templates that were restored must correctly specify the virtual hard disk that contains the operating system.
 
 
 1.  In the VMM console, open the **Library** workspace, expand **Templates**, and then select **VM Templates**.
@@ -239,11 +255,11 @@ If Microsoft Azure Hyper-V Recovery Manager is implemented in the VMM environmen
 
 ### Review add-ins, driver packages, and certificates
 
-After you restore VMM, review the following items to ensure that you've taken necessary steps for your add-ins, driver packages, and certificates:
+After you restore VMM, review the following items to ensure that you've taken the necessary steps for your add-ins, driver packages, and certificates:
 
 -   **Non-Microsoft user interface add-ins**: To restore any non-Microsoft user interface add-ins or any other non-Microsoft party applications, consult the respective application's restore guidelines.
 
--   **Driver packages**: Driver packages that were previously added to the VMM library might not be discovered correctly after a restore. They might have to be removed and be re-added.
+-   **Driver packages**: Driver packages that were previously added to the VMM library might not be discovered correctly after a restore. They might have to be removed and re-added.
 
 -   **Certificates**: Any VMM-related certificates on hosts must be updated with the information of the new VMM management server.
 

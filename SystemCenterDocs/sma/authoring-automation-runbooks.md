@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 02/22/2023
+ms.date: 05/17/2023
 title: Author Automation Runbooks
 ms.technology: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy23
@@ -21,7 +21,7 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows or PowerShell scripts. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
-There's no difference in the runbooks between the two systems, and the same runbook can run on either with identical functionality. When the term *Automation* is used in this guide, it refers to both Service Management Automation and Microsoft Azure Automation.
+There's no difference in the runbooks between the two systems, and the same runbook can run on either with identical functionality. When the term *Automation* is used in this article, it refers to both Service Management Automation and Microsoft Azure Automation.
 
 The additional services provided by Automation for working with Windows PowerShell Workflows include the following:
 
@@ -81,7 +81,7 @@ Publish-SMARunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName
 Each runbook in Service Management Automation has two versions: Draft and Published. You edit the Draft version of the workflow and then publish it so that it can be executed. The Published version can't be edited.
 
 ### Edit a runbook with the Management Portal
-The Management Portal includes an editor that you can use to view and edit runbooks. In addition to providing basic text editing capabilities, the editor provides the ability to automatically insert code for [Global Assets](#insert-a-global-asset-into-a-runbook), [Activities](#insert-an-activity-into-a-runbook), and [Runbooks](#insert-code-into-a-runbook).
+The Management Portal includes an editor that you can use to view and edit runbooks. In addition to providing basic text editing capabilities, the editor provides the ability to automatically insert code for runbooks, global assets, and activities.
 
 1.  In the Management Portal, select **Automation**.
 
@@ -99,7 +99,11 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 8.  Select **Publish** if you want the latest draft version of the runbook to be published.
 
-### Insert code into a Runbook
+Select the required tab for steps to insert code for runbooks, global assets, and activities:
+
+# [Insert code into a runbook](#tab/InsertCode)
+
+Follow these steps to insert code into a runbook:
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -115,7 +119,9 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 7.  If the runbook requires parameters, provide an appropriate value in place of the data type surrounded by braces <>.
 
-#### Insert a global asset into a runbook
+# [Insert a global asset into a runbook](#tab/GlobalAsset)
+
+Follow these steps to insert a global asset into a runbook:
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -127,7 +133,9 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 5.  Select the check button.
 
-#### Insert an activity into a runbook
+# [Insert an activity into a runbook](#tab/Activity)
+
+Follow these steps to insert an activity into a runbook:
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -148,6 +156,8 @@ The Management Portal includes an editor that you can use to view and edit runbo
 9. Code to run the activity will be inserted into the runbook.
 
 10. If the activity requires parameters, provide an appropriate value in place of the data type surrounded by braces <>.
+
+---
 
 ### Edit an Automation runbook with PowerShell
 
@@ -192,7 +202,7 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 4. Select the **Runbook** tab.  You should see a list of SMA runbooks.
 
-5. Select the runbook you want to edit and select **Download**.  This downloads a local copy of the runbook from SMA.
+5. Select the runbook you want to edit and select **Download**. This downloads a local copy of the runbook from SMA.
 
 6. Select **Open**. This creates a new tab with the runbook.
 
@@ -243,7 +253,7 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 3. Sign in to SMA on the **Configuration** tab.
 
-4. Select the **Runbook** tab.  You should see a list of SMA runbooks.
+4. Select the **Runbook** tab. You should see a list of SMA runbooks.
 
 5. Select the runbook and select **Publish Draft** to publish the latest draft version of the runbook.
 
@@ -251,7 +261,7 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 You can test the Draft version of a runbook in Service Management Automation while leaving the published version of the runbook unchanged. This allows you to verify that the runbook is working correctly before replacing the published version.
 
-When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](overview-runbook-messages-output.md#output-stream) and [Warning and Error](overview-runbook-messages-output.md#warning-and-error-streams) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](overview-runbook-messages-output.md#verbose-stream) are displayed in the Output Pane only if the [$VerbosePreference variable](overview-runbook-messages-output.md#preference-variables) is set to **Continue**.
+When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](overview-runbook-messages-output.md#output-stream) and [Warning and Error](overview-runbook-messages-output.md#message-streams) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](overview-runbook-messages-output.md#message-streams) are displayed in the Output Pane only if the [$VerbosePreference variable](overview-runbook-messages-output.md#preference-variables) is set to **Continue**.
 
 When you test a runbook, it still executes the workflow normally and performs any actions against resources in the environment. For this reason, you should only test runbooks against non-production resources.
 
@@ -263,7 +273,7 @@ You can stop or suspend the runbook while it's being tested with the buttons und
 ### Test a runbook using PowerShell ISE
 The [PowerShell ISE add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) provides cmdlets that emulate the standard activities such as Get-SMACredential and Set-SMAVariable, so you can test the runbook on the local computer just as you would any other script.
 
-Global assets and their values are downloaded from the automation group to use for local testing.  You can inspect or change these values on the **Assets** tab. Encrypted values are displayed in orange, and their values aren't downloaded.  If you want to use these assets in local testing, then you must set their value locally.
+Global assets and their values are downloaded from the automation group to use for local testing.  You can inspect or change these values on the **Assets** tab. Encrypted values are displayed in orange, and their values aren't downloaded. If you want to use these assets in local testing, then you must set their value locally.
 
 To test the runbook in SMA, select **Test Draft in SMA**.  A new window will be opened. Select **Start New Job** to start the test. The output will be displayed in the window.
 
