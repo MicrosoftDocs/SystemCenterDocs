@@ -2,10 +2,10 @@
 ms.assetid: 9e13d0f4-84b2-42bf-836f-b23791616971
 title: Management Pack for SQL Server delivery
 description: This article explains how to install Management Pack for SQL Server
-author: vchvlad
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/7/2022
+ms.date: 31/5/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -17,30 +17,35 @@ You can download Management Pack for SQL Server from the [Microsoft portal](http
 
 The package includes the following files:
 
-- **SQLServerMP.Windows.msi**—a set of MP and MPB files for monitoring of SQL on Windows.
-- **SQLServerMP.Linux.msi**—a set of MP and MPB files for monitoring of SQL on Linux.
+- **SQLServerMP.Windows.msi** - a set of MP and MPB files for monitoring of SQL on Windows.
+- **SQLServerMP.Linux.msi** - a set of MP and MPB files for monitoring of SQL on Linux.
+- **SQLServerMP.CustomMonitoring.msi** - a set of MPB files for custom monitoring of SQL Server.
 
 Management Pack for SQL Server consists of the following files:  
 
-- Microsoft.SQLServer.Core.CustomMonitoring.mpb
 - Microsoft.SQLServer.Core.Library.mpb
-- Microsoft.SQLServer.Core.Views.</i>mp
-- Microsoft.SQLServer.Core.WebDashboards.</i>mp
+- Microsoft.SQLServer.Core.Views.mp
+- Microsoft.SQLServer.Core.WebDashboards.mp
 - Microsoft.SQLServer.IS.Windows.mpb
-- Microsoft.SQLServer.IS.Windows.Views.</i>mp
+- Microsoft.SQLServer.IS.Windows.Views.mp
 - Microsoft.SQLServer.Visualization.Library.mpb
-- Microsoft.SQLServer.Linux.Views.</i>mp
+- Microsoft.SQLServer.Linux.Views.mp
 - Microsoft.SQLServer.Linux.Discovery.mpb
 - Microsoft.SQLServer.Linux.Monitoring.mpb
 - Microsoft.SQLServer.Windows.Views.mpb
 - Microsoft.SQLServer.Windows.Discovery.mpb
 - Microsoft.SQLServer.Windows.Monitoring.mpb
 
-> [!WARNING]
-> The management pack **Microsoft.SQLServer.Core.CustomMonitoring.mpb** contains a set for [custom query-based monitoring](sql-server-management-pack-custom-monitor.md) of the SQL Server. For security purposes, don't import this management pack if you don't plan to use it, as it allows running arbitrary SQL queries that might be a security violation.
-
 > [!NOTE]
 > Don't import the management pack **Microsoft.SQLServer.Core.WebDashboards.mp** if the version of System Center Operations Manager that you use is lower than 2019. This management pack contains SQL Server MP Dashboards for the new Operations Manager Web Console introduced in System Center Operations Manager 2019 and higher.
+
+Management Pack for Custom Monitoring of SQL Server consist of the following files:
+
+- Microsoft.SQLServer.Core.CustomMonitoring.mpb
+- Microsoft.SQLServer.Core.Library.mpb
+
+> [!WARNING]
+> The management pack **Microsoft.SQLServer.Core.CustomMonitoring.mpb** contains a set for [custom query-based monitoring](sql-server-management-pack-custom-monitor.md) of the SQL Server. For security purposes, don't import this management pack if you don't plan to use it, as it allows running arbitrary SQL queries that might be a security violation.
 
 ## Prerequisites
 
