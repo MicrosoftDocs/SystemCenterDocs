@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for SQL Server
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 31/5/2023
+ms.date: 5/31/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
