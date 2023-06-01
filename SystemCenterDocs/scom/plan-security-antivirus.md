@@ -22,7 +22,7 @@ ms.topic: article
 
 This article outlines antivirus exclusions that relate to System Center 2019 Operations Manager and later.  For earlier versions of Operations Manager, see [antivirus exclusions (Operations Manager 2012, 2012 R2, and 2016)](/troubleshoot/system-center/scom/antivirus-exclusions-recommendations).
 
-For specific exclusion recommendations for supported versions of SQL Server, see [KB309422](https://support.microsoft.com/help/309422/choosing-antivirus-software-for-computers-that-run-sql-server).
+For specific exclusion recommendations for supported versions of SQL Server, see: [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server).
 
 ## Exclusions by process executable
 
