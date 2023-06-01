@@ -30,9 +30,9 @@ If exclusions are configured based on process executable, exclude the following 
 
 |Component | Process |
 |--------|---------|
-|**Management servers** |MonitoringHost.exe<br> HealthService.exe<br> Microsoft.Mom.Sdk.ServiceHost.exe<br> cshost.exe |
+|**Management servers** |HealthService.exe<br> MonitoringHost.exe<br> MOMPerfSnapshotHelper.exe<br> Microsoft.Mom.Sdk.ServiceHost.exe<br> cshost.exe |
 |**Gateway server** |HealthService.exe<br> MonitoringHost.exe |
-|**Windows agent** |HealthService.exe<br> MonitoringHost.exe |
+|**Windows agent** |HealthService.exe<br> MonitoringHost.exe<br> MOMPerfSnapshotHelper.exe |
 |**Web Console server** |HealthService.exe<br> MonitoringHost.exe |
 |**SQL Server**<sup>1</sup> |HealthService.exe<br> MonitoringHost.exe |
 
