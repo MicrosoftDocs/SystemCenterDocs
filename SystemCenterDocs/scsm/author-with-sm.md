@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/12/2022
+ms.date: 06/05/2023
 ms.technology: service-manager
 ms.topic: article
 ---
@@ -32,17 +32,17 @@ The Service Manager Software Development Kit \(SDK\) contains information that y
 
 Management packs in Service Manager are XML\-based files that contain definitions for classes, workflows, views, forms, and reports. You can use management packs to do the following:  
 
--   Extend Service Manager with new objects  
--   Extend Service Manager with new behavior  
--   Store new custom objects that you created, such as forms or templates.  
--   Transport customizations to another Service Manager deployment or implement the customizations in a newer deployment  
+- Extend Service Manager with new objects  
+- Extend Service Manager with new behavior  
+- Store new custom objects that you created, such as forms or templates.  
+- Transport customizations to another Service Manager deployment or implement the customizations in a newer deployment  
 
 You can use management packs to extend Service Manager with the definitions and the information necessary to implement all or part of a service management process.  
 
 By default, the Service Manager installation folder contains several preimported management packs that enable core Service Manager features, such as incident management and change management.  
 
 > [!IMPORTANT]  
->  Unsealed management packs aren't automatically upgraded during an upgrade to Service Manager.  
+> Unsealed management packs aren't automatically upgraded during an upgrade to Service Manager.  
 
 ### Overview of authoring methods for Service Manager
 
@@ -50,9 +50,9 @@ There are three methods that you can use to customize Service Manager. While all
 
 The three methods for customizing and extending Service Manager are as follows:  
 
--   Using the Service Manager console  
--   Using the Service Manager Authoring Tool  
--   Directly modifying and authoring management pack files  
+- Using the Service Manager console  
+- Using the Service Manager Authoring Tool  
+- Directly modifying and authoring management pack files  
 
 In general, we recommend that you use the Service Manager console or the Authoring Tool for simple customizations and that you work directly with the management pack files only for customizations that the Service Manager console and the Authoring Tool don't support.  
 
@@ -62,11 +62,10 @@ The **Administration** pane and the **Authoring** pane in the Service Manager co
 
 The Service Manager console provides for the following customizations:  
 
--   In the **Administration** pane, you can customize settings for activities, change management, incident management, and notifications. For example, you can configure the list notification recipients when an incident changes status.  
--   In the **Authoring** pane, you can make simple customizations to objects such as queues, lists, and views.  
+- In the **Administration** pane, you can customize settings for activities, change management, incident management, and notifications. For example, you can configure the list notification recipients when an incident changes status.  
+- In the **Authoring** pane, you can make simple customizations to objects such as queues, lists, and views.  
 
-
-#### Authoring Tool  
+#### Authoring Tool
 The Authoring Tool provides an environment in which you can open, view, customize, extend, and author Service Manager management packs. You can use the Authoring Tool to modify some class properties, customize forms in a graphical form designer, and modify and create Service Manager workflows.  
 
 You can also use the Authoring Tool to create advanced customizations that require testing and verification before implementation. The Authoring Tool doesn't require advanced user skills or advanced knowledge of the internal architecture of Service Manager.  
@@ -79,9 +78,9 @@ For extensive or complex customizations and for customizations that require codi
 
 The Authoring Tool is a tool in Service Manager that you can use to open an existing management pack so that you can view, customize, and extend it. Using the Authoring Tool, you can do the following:  
 
--   Extend and customize the Service Manager class model  
--   Customize forms  
--   Create and customize workflows  
+- Extend and customize the Service Manager class model  
+- Customize forms  
+- Create and customize workflows  
 
 You can also use the Authoring Tool to create new Service Manager management packs. By authoring management packs, you can customize the features of Service Manager.  
 
@@ -99,35 +98,34 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 ::: moniker range="sc-sm-2016"
 
--   Windows Vista \(any edition\) with the latest service pack  
--   Windows 7  
--   Windows Server 2008 with the latest service pack  
--   Windows Server 2008 R2  
+- Windows Vista \(any edition\) with the latest service pack  
+- Windows 7  
+- Windows Server 2008 with the latest service pack  
+- Windows Server 2008 R2  
 
 ::: moniker-end
 
 ::: moniker range=">sc-sm-2016 <=sc-sm-2019"
  
--   Windows 10
--   Windows Server 2019 with the latest service pack  
--   Windows Server 2016 
+- Windows 10
+- Windows Server 2019 with the latest service pack  
+- Windows Server 2016
 
 ::: moniker-end
 
-
 ::: moniker range="sc-sm-2022"
 
--   Windows 10
--   Windows 11
--   Windows Server 2022 with the latest service pack  
--   Windows Server 2019 
+- Windows 10
+- Windows 11
+- Windows Server 2022 with the latest service pack  
+- Windows Server 2019
 
 ::: moniker-end
 
 ##### Additional requirements  
 
--   [Microsoft .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21), which you can download from the Microsoft Download Center.  
--   Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
+- [Microsoft .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21), which you can download from the Microsoft Download Center.  
+- Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  
     >  During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 isn't installed and you've verified that it's installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
@@ -143,13 +141,13 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 > [!NOTE]
 > Don't install the Service Manager Authoring tool on the same computer that has the Service Manager Web portal installed.
 
-::: moniker-end    
+::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
 > [!NOTE]
-> - Don't install the Service Manager Authoring tool on the same computer that has the Service Manager (SM) Web portal installed.
-> - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if Service Manager Authoring tool is to be used on the same computer.
+>- Don't install the Service Manager Authoring tool on the same computer that has the Service Manager (SM) Web portal installed.
+>- Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if Service Manager Authoring tool is to be used on the same computer.
 
 ::: moniker-end
 
@@ -158,8 +156,18 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 1. Verify that the computer on which you plan to install the Authoring tool meets the requirements.  
 2. Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
 
+::: moniker range="<=sc-sm-2019"
+
    - [Download 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
    - [Download 1801 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
+
+::: moniker-end
+
+::: moniker range="sc-sm-2022"
+
+   - [Download 2022 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=105032)
+
+::: moniker-end
 
 3. Double-click the downloaded zip file, read through the license agreement, and extract the files to the desired location.  
 4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.
