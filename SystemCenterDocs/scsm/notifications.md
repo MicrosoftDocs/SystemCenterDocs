@@ -115,7 +115,7 @@ To create an Azure AD app, do the following:
 
      - Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
      
-           :::image type="Advanced settings" source="media/notifications/advanced-settings.png" alt-text="screenshot of advanced settings page.":::
+          :::image type="Advanced settings" source="media/notifications/advanced-settings.png" alt-text="screenshot of advanced settings page.":::
 
 8. Select **Save**.
 
