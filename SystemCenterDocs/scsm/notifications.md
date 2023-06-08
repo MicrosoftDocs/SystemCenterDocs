@@ -7,7 +7,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 02/15/2016
+ms.date: 06/08/2023
 ms.technology: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ms.custom: UpdateFrequency3
@@ -68,6 +68,137 @@ You can use the following procedures to configure notification channels and vali
 
 -   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316236(v=sc.20)).
 -   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316246(v=sc.20)).
+
+::: moniker range="sc-sm-2022"
+
+## Send notifications using external email authentication
+
+Azure Active Directory (Azure AD) implements OAuth protocol for secure authentication of its users and applications. Here's how the connection establishes when the activity runs:
+
+1. Obtains user credentials from IP configuration.
+
+2. Uses the credentials to authenticate with Azure AD using OAuth.
+
+3. After authentication, you will receive an OAuth token from Azure AD.
+
+4. Activity performs operations on the EWS endpoint using the OAuth token.
+
+### Create an Azure AD app
+
+To create an Azure AD app, do the following:
+
+1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) and search for [Azure Active Directory admin center](https://aad.portal.azure.com/).
+
+2. On the **Azure Active Directory admin center** dashboard, select **Azure Active Directory**.
+
+3. On the **Overview** page, under **Manage** > **App registrations**, select **New registration**.
+     
+      :::image type="App registrations page" source="media/notifications/app-registrations.png" alt-text="screenshot of app registrations page.":::
+
+4. On the Register an application page, do the following:
+
+     - **Name**: Enter the desired name.
+
+     - **Supported account types**: Select the supported account type based on your scenario.
+
+     - **Redirect URI (optional)**: From the **Select a platform** dropdown, select **Public client/native (mobile & desktop)**, and set the URI to https://login.microsoftonline.com/common/oauth2/nativeclient.
+          
+      :::image type="Register application page" source="media/notifications/register-application-inline.png" alt-text="screenshot of register an application page." lightbox="media/notifications/register-application-expanded.png":::
+
+5. Select **Register**.
+
+6. After successful registration, under **Overview** > **Essentials**, ensure to note the **Application (client) ID** and **Directory (tenant) ID**.
+
+      :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page.":::
+
+7. On the **Overview** page, under **Manage**, select **Authentication**, and do the following:
+
+     - Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least https://login.microsoftonline.com/common/oauth2/nativeclient as one of the Redirect URIs. Shape screenshot of authentication page.
+
+     - Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
+     
+          :::image type="Advanced settings" source="media/notifications/advanced-settings.png" alt-text="screenshot of advanced settings page.":::
+
+8. Select **Save**.
+
+9. On the **Overview** page, under **Manage**, select **API Permissions**.
+
+10. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
+
+11. Enter **Office** in the search bar and select **Office 365 Exchange Online**, and then select **Delegated permissions** > **EWS** > **EWS.AccessAsUser.All** permission.
+     
+      :::image type="APIs used by organization" source="media/notifications/apis-used-by-my-organization.png" alt-text="screenshot of APIs used by organization."::: 
+
+12. Remove redundant permissions and select **Grant admin consent**.
+     
+      :::image type="API permissions" source="media/notifications/api-permissions.png" alt-text="screenshot of API permissions.":::
+
+### Enable TLS 1.2
+
+To enable TLS 1.2, do the following:
+
+1. Open Windows PowerShell in Administrator mode in Service Manager Console machine.
+
+2. Run the following script to enable TLS 1.2 version.
+
+     ```powershell
+     New-Item 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319' -name 'SystemDefaultTlsVersions' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319' -name 'SchUseStrongCrypto' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-Item 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -name 'SystemDefaultTlsVersions' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -name 'SchUseStrongCrypto' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-Item 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'Enabled' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'DisabledByDefault' -value 0 -PropertyType 'DWord' -Force | Out-Null
+     New-Item 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'Enabled' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'DisabledByDefault' -value 0 -PropertyType 'DWord' -Force | Out-Null
+     Write-Host 'TLS 1.2 has been enabled. You must restart the Windows Server for the changes to take effect.' -ForegroundColor Cyan 
+     ```
+
+### Use OAuth for Notifications
+
+To use OAuth for notifications, do the following:
+
+1. Open the Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**.
+
+2. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications** checkbox, and select **Add**.
+
+      :::image type="Email notification channel" source="media/notifications/email-notification-channel-inline.png" alt-text="screenshot of Email notification channel." lightbox="media/notifications/email-notification-channel-expanded.png":::
+
+3. On the Add SMTP Server page, do the following:
+
+     - **Authentication method**: Select **External E-mail Authentication** from the dropdown.
+
+     - **Client Id**: Enter the client ID created in the previous steps.
+
+     - **Tenant Id**: Enter the tenant ID created in the previous steps.
+
+     - **Mail Id**: Enter the mail ID that acts as a sender for notifications.
+
+     - **Password**: Enter the corresponding password.
+
+      :::image type="Add SMTP server" source="media/notifications/add-smtp-server-inline.png" alt-text="screenshot of add SMTP server." lightbox="media/notifications/add-smtp-server-expanded.png":::
+
+4. Select **OK** to save the changes.
+
+5. Enter **Return e-mail address** and set **Retry primary after** as required and select **OK**.
+
+Use this channel for sending notifications/outgoing e-mails.
+
+An additional setup of connector/SMTP relay and SMTP details such as FQDN and port number are not required while you use External E-mail Authentication mode for sending notifications. Therefore, FQDN and port number values are set to random values as NA and 65534 when a channel is created using this authentication method.
+
+### Troubleshooting
+
+Each time Notification part runs, it logs events into the event viewer. In case of unexpected behavior, check events to troubleshoot. For more information or for debugging purposes, refer EWS Traces in events. To display trace and logs in the event viewer, open command prompt in administrator mode in the Service Manager Console machine and set the env var EXTERNALEWSLogs value to 1 (setx /m EXTERNALEWSLogs 1).
+
+Setting EXTERNALEWSLogs to 1 enables trace and logs to be shown in event viewer as follows:
+
+:::image type="Troubleshooting" source="media/notifications/troubleshooting-inline.png" alt-text="screenshot of troubleshooting." lightbox="media/notifications/troubleshooting-expanded.png":::
+
+::: moniker-end
+
 
 ## Create notification templates
 
