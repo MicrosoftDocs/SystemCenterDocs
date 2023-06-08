@@ -91,7 +91,7 @@ To create an Azure AD app, do the following:
 
 2. On the **Azure Active Directory admin center** dashboard, select **Azure Active Directory**.
 
-3. On the **Overview** page, under **Managep** > **App registrations**, select **New registration**.
+3. On the **Overview** page, under **Manage** > **App registrations**, select **New registration**.
      :::image type="App registrations page" source="media/notifications/app-registrations.png" alt-text="screenshot of app registrations page.":::
 4. On the Register an application page, do the following:
 
