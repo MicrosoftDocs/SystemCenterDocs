@@ -102,6 +102,8 @@ To create an Azure AD app, do the following:
      - **Supported account types**: Select the supported account type based on your scenario.
 
      - **Redirect URI (optional)**: From the **Select a platform** dropdown, select **Public client/native (mobile & desktop)**, and set the URI to https://login.microsoftonline.com/common/oauth2/nativeclient.
+          
+           :::image type="Register application page" source="media/notifications/register-application-inline.png" alt-text="screenshot of register an application page." lightbox="media/notifications/register-application-expanded.png":::
 
 5. Select **Register**.
 
@@ -163,6 +165,8 @@ To use OAuth for notifications, do the following:
 
 2. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications** checkbox, and select **Add**.
 
+      :::image type="Email notification channel" source="media/notifications/email-notification-channel-inline.png" alt-text="screenshot of Email notification channel." lightbox="media/notifications/email-notification-channel-expanded.png":::
+
 3. On the Add SMTP Server page, do the following:
 
      - **Authentication method**: Select **External E-mail Authentication** from the dropdown.
@@ -174,6 +178,8 @@ To use OAuth for notifications, do the following:
      - **Mail Id**: Enter the mail ID that acts as a sender for notifications.
 
      - **Password**: Enter the corresponding password.
+
+           :::image type="Add SMTP server" source="media/notifications/add-smtp-server-inline.png" alt-text="screenshot of add SMTP server." lightbox="media/notifications/add-smtp-server-expanded.png":::
 
 4. Select **OK** to save the changes.
 
