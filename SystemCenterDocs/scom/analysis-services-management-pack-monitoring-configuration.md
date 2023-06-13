@@ -180,7 +180,7 @@ The SQL Server Analysis Services Management Pack provides tasks for some activit
 
 - **Export Event Log**
 
-   Export the Windows Event log file from the the machine hosting SQL Server Analysis Services instance.
+   Export the Windows Event log file from the machine hosting SQL Server Analysis Services instance.
    The exported source events with ID 4221 are:
 
   - SQL Server Analysis Services MP Library
