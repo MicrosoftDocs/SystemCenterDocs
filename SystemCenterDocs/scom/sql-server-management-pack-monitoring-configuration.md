@@ -462,6 +462,7 @@ These overrides support wildcards and can be used for excluding long running que
 If an element should contain an asterisk (\*) that is not a wildcard, double quote ("), or backslash (\\), the element must be escaped with a backslash `\`. For example, use conditions like `Query\*3` to exclude queries that have `Query*3` in the query text, use conditions like `\\path\\to\\` to exclude queries that have `\path\to\` in the query text, or `"GO, WITH"` condition to exclude queries that have a `"GO, WITH"` entry with a comma inside of the query text. Overrides with exclude lists can be used simultaneously.
 
 The following table defines wildcard patterns that you can use in expressions:
+
 |Character|Description|Example|  
 |---|---|---|
 | ? |Matches any single character. You can use the question mark (?) anywhere in a character string.|**Quer?** finds Query, Quer1, Quer_, Quer?, Quer*, but not Query1, or Queries.
@@ -469,6 +470,7 @@ The following table defines wildcard patterns that you can use in expressions:
 | " |Matches any number of characters in double quotes. You can use the double quotes (" ") anywhere in a character string. If a character string contains a comma, the string must be quoted.|**"Instance, Database"** finds an Instance, Database string with a comma inside, but not an Instance string separately, and a Database string separately. **"   Query with leading and trailing spaces  "** finds an entry with all spaces included in double-quotes.
 
 The following table defines escape patterns that you can use in expressions:
+
 |Character|Description|Example|
 |---|---|---|
 | \\* |Not a wildcard. Escapes the asterisk (\*) anywhere in a character string.|**dbname\\*** finds dbname\*, but not dbname1, dbname_prod, dbnames.

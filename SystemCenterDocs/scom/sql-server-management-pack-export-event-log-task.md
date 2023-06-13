@@ -71,6 +71,7 @@ The following date time formats can be used:
 Separate the date numbers with symbols: ".", "/", "-".
 
 The following parameters for specifying the duration range:
+
 |Parameter|Definition|
 |-|-|
 |P|Duration designator, placed at the start of duration expression|
