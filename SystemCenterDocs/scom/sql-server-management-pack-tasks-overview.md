@@ -1,17 +1,17 @@
 ---
 ms.assetid: 9550f943-bcc2-45dc-a866-9eae7b3b8b0c
-title: Tasks
+title: Tasks Overview
 description: This section explains tasks in the Management Pack for SQL Server
-author: vchvlad
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 11/22/2022
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Tasks
+# Tasks Overview
 
 The SQL Server Management Pack provides tasks for some activities with the following targets:
 
@@ -26,6 +26,10 @@ The task can be launched for one object of the class or several at once. Tasks c
 System Center Operations Manager tasks require higher privileges on the agent computer and/or database to allow the task to be executed for an instance monitored in low-privilege mode. For how to give the necessary permission, see [Optional Steps for Tasks on Agents](sql-server-management-pack-low-privilege-monitoring.md#optional-steps-for-tasks-on-agents).
 
 ## List of SQL Server Database Engine tasks
+
+- **Export Event Log**
+
+   Export the Event log file from the selected SQL Server DB Engine with Discovery, Monitoring, and Library SQL Server MP source events. For more information, see [Export Event Log Task](sql-server-management-pack-export-event-log-task.md).
 
 - **Global Configuration Settings**
 
