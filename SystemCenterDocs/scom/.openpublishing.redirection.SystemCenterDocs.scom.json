@@ -1,9 +1,0 @@
-{
-    "redirections": [
-        {
-            "source_path": "SystemCenterDocs/scom/sql-server-management-pack-tasks.md",
-            "redirect_url": "/system-center/scom/sql-server-management-pack-tasks-overview"
-            "redirect_document_id": true
-        }
-    ]
-}
