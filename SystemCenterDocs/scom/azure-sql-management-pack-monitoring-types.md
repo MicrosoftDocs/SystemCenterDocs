@@ -160,7 +160,9 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
     ![Screenshot showing Existing Run As Account.](./media/azure-sql-management-pack/using-existing-run-as-account.png)
 
-    If you already have an Azure Service Principal Name and want to use it to create a new Run As Account, at the **SPN Configuration** step, select the **Enter SPN Manually** option, select **Next**, and provide required information about your Azure Service Principal Name. This information will be used to create a new Run As Account for authentication in Azure Cloud.
+   If you need to create SPN manually use the [Creating a service principal for use with Microsoft Purview](/azure/purview/create-service-principal-azure#app-registration).
+    
+    At the **SPN Configuration** step, select the **Enter SPN Manually** option for this case, select **Next**, and provide the required information about your Azure Service Principal Name. This information will be used to create a new Run As Account for authentication in Azure Cloud.
 
     ![Screenshot showing Enter SPN manually.](./media/azure-sql-management-pack/entering-spn-manually.png)
 

@@ -121,7 +121,7 @@ Use the following procedures:
 15.	In **Setup completed successfully**, select **Close** to finish the installation. To open the VMM console, check **Open the VMM console when this wizard closes** or you can select the Virtual Machine Manager Console icon on the desktop.
 
 >[!NOTE]
->Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.
+>Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM. It is recommended to maintain the server and the agent in the same version.
 
 If there's any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
