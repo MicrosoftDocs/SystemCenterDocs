@@ -11,13 +11,13 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Features and Enhancements in Management Pack for SQL Server
+# Features and enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
 ## June 2023 - 7.1.0.0 CTP
 
-### What's New
+### What's new
 
 - Updated the [custom monitoring](sql-server-management-pack-custom-monitor.md) which allows the creation of monitors and performance rules, now it's on the separate package installer
 - Added a query execution and time synchronization schedule filtering mode for the custom monitoring
@@ -31,7 +31,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with false-negative alerts from the Availability Group rollup monitors, now the "Availability Group Automatic Failover (rollup)", "Availability Replica Role (rollup)", "Availability Replicas Connection (rollup)", and "Synchronous Replicas Data Synchronization (rollup)" have the best state of any member rollup algorithm
 - Fixed an issue with the inability to launch the custom monitoring without the registry keys for unsigned modules
@@ -40,7 +40,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## December 2022 - 7.0.42.0 RTM
 
-### What's New
+### What's new
 
 - Added support for the SQL Server 2022 RTM
 - Added [custom monitoring](sql-server-management-pack-custom-monitor.md) which allows the creation of monitors and performance rules
@@ -60,7 +60,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed a performance issue with the “Service Principal Name Configuration Status” monitor by reducing the load on the domain controller in large environments
 - Fixed an issue with the "Thread Count" monitor and the performance rule. Now these workflows count free threads more precisely including only the 'VISIBLE ONLINE' schedulers
@@ -69,7 +69,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## June 2022 - 7.0.38.0 RTM
 
-### What's New
+### What's new
 
 - Added 'Timeout for query execution (seconds)' override which can now be used in all workflows
 - Added 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
@@ -81,7 +81,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with the failing "ROWS Data Free Space Left" monitor and "Always On Custom User Policy" workflows in cases when a non-default RunAs account is used
 - Fixed an issue with the failing dashboard view in cases when the 'OperationsManagerDW' database is used by several management groups
@@ -93,18 +93,18 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## February 2022 - 7.0.36.0 RTM
 
-### What's New
+### What's new
 
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with the failing 'MultiValueSpaceHealthCalculator' module on localized operating systems where SQL Server is installed
 - Fixed an issue with the failing 'LocalDBEngineDiscovery' module in environments, in which both x64 and x86 versions of SQL Server are installed
 
 ## December 2021 - 7.0.34.0 RTM
 
-### What's New
+### What's new
 
 - Added a new 'Health Calculation Mode' override for space monitoring workflows targeted to databases. This override allows you to define how you want to monitor free space in your environment. You can now track the health state based on the 'Threshold' parameter expressed as a percentage term (%) or as a capacity metric (MB). The override is added to the following monitors: "LOG Free Space Left", "ROWS Data Free Space Left", "FILESTREAM Data Free Space Left", "In-Memory OLTP Data Free Space Left"
 - Added a new 'Timeout for query execution' override to the following performance rules: "Memory Used By Indexes (MB)" and "Memory Used By Tables (MB)". These rules are now disabled by default to avoid the extra load in environments with a large number of memory-optimized databases
@@ -116,7 +116,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Optimized performance metric collection
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with the failing discovery modules after upgrading SQL Server
 - Fixed an issue with free space calculations in cases when 'Autogrowth' is enabled for the database
@@ -127,7 +127,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## June 2021 - 7.0.32.0 RTM
 
-### What's New
+### What's new
 
 - Updated override for the "Service Principal Name Configuration Status" monitor. The ‘Interval’ value is now set to 3600 (1 hour) to avoid an alert storm in multiple domain controller environments
 - Updated the "Virtual Log File Count" monitor. Now it uses the ‘sys.dm_db_log_info’ view instead of DBCC on SQL Server 2016 and higher
@@ -142,7 +142,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of the public updates for SQL Server
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover
 - Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names by adding proper error handling
@@ -154,7 +154,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## August 2020 - 7.0.24.0 RTM
 
-### What's New
+### What's new
 
 - Added a new "Securables Configuration Status" monitor targeted to SQL Server databases
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
@@ -171,7 +171,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Revised columns of SQL Agent and SQL Agent Jobs state views
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed the Alerting Rules data source to avoid an alert storm after exiting maintenance mode
 - Fixed the SQL Log Reader data source to support changing of the SQL Authentication method
@@ -188,7 +188,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 [Including changes made in the prior preview release — v.7.0.18, November 2019]
 
-### What's New
+### What's new
 
 - Updated MP to support SQL Server 2019 RTM
 - Added filter by edition to "Local DB Engine Discovery"
@@ -209,7 +209,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated display strings
 - Revised columns on DB Engine state views
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed: monitor "Service Principal Name Configuration Status" raises false alerts because of case-sensitive comparison
 - Fixed: "Local DB Engine Discovery" crashes when Windows has Turkish locale
