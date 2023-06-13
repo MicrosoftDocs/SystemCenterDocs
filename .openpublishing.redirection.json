@@ -3625,6 +3625,10 @@
 {
      "source_path" : "SystemCenterDocs/vmm/scenario/sdn-remove-an-sdn.md",
      "redirect_url" : "/system-center/vmm/sdn-remove"
-}
+},
+{
+     "source_path": "SystemCenterDocs/scom/sql-server-management-pack-tasks.md",
+     "redirect_url": "/system-center/scom/sql-server-management-pack-tasks-overview"
+ }
  ]
 }
