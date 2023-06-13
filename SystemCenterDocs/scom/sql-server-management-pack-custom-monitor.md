@@ -96,7 +96,7 @@ To create a new two-state custom query-based monitor, perform the following step
 
 8. At the **Schedule Filter** page, select the schedule filtering mode with the following options:
  
-   ![Screenshot of schedule filter creation in custom monitors.](./media/sql-server-management-pack/sql-unit-monitor-shedule-filter.png)
+   ![Screenshot of schedule filter creation in custom monitors.](./media/sql-server-management-pack/sql-unit-monitor-schedule-filter.png)
 
     - **Always process data**
 

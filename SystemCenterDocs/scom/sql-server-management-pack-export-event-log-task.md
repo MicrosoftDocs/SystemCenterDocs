@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Export Event Log Task in Management Pack for SQL Server
+title: Export event log task in Management Pack for SQL Server
 description: This article explains how to run the export event log task for DB Engine in SQL Server Management Pack
 manager: evansma
 author: epomortseva
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Export Event Log Task
+# Export event log Task
 
 Export Event Log Task exports the Event log file containing Discovery, Monitoring, and Library SQL Server MP source events with ID 4221 from the selected SQL Server DB Engine.
 
@@ -29,7 +29,7 @@ For the SQL Server DB Engine on Windows in the agentless monitoring mode, this t
 
 4. Specify the **Task Credentials** for the target SQL Server DB Engine according to its monitoring type and run the task.
 
-## Tasks Parameters
+## Tasks parameters
 
 ![Export Event Log task screenshot.](./media/sql-server-management-pack/export-log-task.png)
 
@@ -88,20 +88,20 @@ The following parameters for specifying the duration range:
   
 ### InvariantCulture date time examples
 
-1. The time range is one day.
+- The time range is one day.
 
     Date From=06/2023/15 and Date To=06/2023/16. An event log file is created with events from the whole day of June 15.
 
     >[!WARNING]
     > Specifying the range Date From and Date To with single date but without a time, creates a blank file.  
 
-2. The time range is several hours.
+- The time range is several hours.
 
     Date From=2023-06-15T09:29:10.0000000Z and Date To=2023-06-15T19:29:10.0000000Z. The log is exported to the file according to the specified period.
 
     Date From=10:00:00 AM and Date To=06:30:00 PM. When the time is specified, but the date is not, the event log file is generated for the current day according to the specified time range.
 
-3. The time range is several days.
+- The time range is several days.
 
     Date From=06/2023/15 and Date To=06/2023/30. An event log file contains events from June 15 till the end of June 29.
 
@@ -109,15 +109,15 @@ The following parameters for specifying the duration range:
 
 ### Duration range examples
 
-1. The time range is last hour.
+- The time range is last hour.
 
    Date From is empty and Date To=PT1H.
 
-2. The time range is one day (the previous 24 hours since the request time).
+- The time range is one day (the previous 24 hours since the request time).
 
    Date From is empty and Date To=P1D.
 
-3. The time range is a specific period during the current day.
+- The time range is a specific period during the current day.
 
    Date From=PT10H:30M:30S and Date To=PT3H:30M.
 

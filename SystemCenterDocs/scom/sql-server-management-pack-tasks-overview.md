@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Tasks Overview
+# Tasks overview
 
 The SQL Server Management Pack provides tasks for some activities with the following targets:
 

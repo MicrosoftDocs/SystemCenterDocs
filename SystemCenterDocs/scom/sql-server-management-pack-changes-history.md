@@ -46,7 +46,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added [custom monitoring](sql-server-management-pack-custom-monitor.md), which allows the creation of monitors and performance rules
 - Added a new "Availability Database Log Backup Status" monitor, which allows to track the alert backups in databases participated in Availability Groups
 - Added new Operations Manager console tasks, which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
-- Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold', which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed', which could track the Cancelled job's last run status as a Failed
+- Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold', which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed', which could track the canceled job's last run status as a Failed
 - Added new Agent "Job Duration" performance collection rule, which collects the duration of the SQL Server Agent job in minutes, for Windows and Linux platforms
 - Added new Agent "Job Duration" alerting rule, which throws an alert if the execution time of any of SQL Agent jobs has exceeded the specified threshold in minutes, for Windows and Linux platforms
 - Updated the "Securables Configuration Status" monitor by removing the unnecessary 'msdb.dbo.sp_help_jobactivity' securable and by adding new 'msdb.dbo.sysjobactivity', 'msdb.dbo.sysjobhistory', 'msdb.dbo.syssessions', and 'msdb.dbo.agent_datetime' securables
