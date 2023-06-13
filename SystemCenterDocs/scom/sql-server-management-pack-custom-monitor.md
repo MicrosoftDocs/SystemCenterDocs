@@ -13,6 +13,9 @@ ms.technology: operations-manager
 
 # Custom Query-Based Monitors
 
+> [!WARNING]
+> Note that since the latest preview version of the SQL Server MP 7.1.0.0, the management pack for the custom monitoring feature is on the separate package installer - **SQLServerMP.CustomMonitoring.msi**. The management pack file **Microsoft.SQLServer.Core.CustomMonitoring.mpb** should be imported from scratch, the importing process with the update option is not supported.
+
 If the set of default monitors in the management pack isn't enough to cover your workflows, you can create your monitor that targets the SQL Server DB Engine for Windows and Linux platforms.
 
 During the monitor creation process, you will define how the monitor will determine the state after query results are received, it's called **conditions**.
