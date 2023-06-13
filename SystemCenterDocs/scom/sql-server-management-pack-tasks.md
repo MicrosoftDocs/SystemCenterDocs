@@ -1,7 +1,7 @@
 ---
 ms.assetid: 9550f943-bcc2-45dc-a866-9eae7b3b8b0c
-title: Tasks Overview
-description: This section explains tasks in the Management Pack for SQL Server
+title: Tasks 
+description: This section explains tasks in the Management Pack for SQL Server (old version)
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Tasks Overview
+# Tasks
 
 The SQL Server Management Pack provides tasks for some activities with the following targets:
 
