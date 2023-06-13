@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/27/2022
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,6 +15,29 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
+## June 2023 - 7.1.0.0 CTP
+
+### What's New
+
+- Updated the [custom monitoring](sql-server-management-pack-custom-monitor.md) which allows the creation of monitors and performance rules, now it's on the separate package installer
+- Added a query execution and time synchronization schedule filtering mode for the custom monitoring
+- Added the 'Number of samples' override to the "Availability Group Automatic Failover", "Availability Group Online", "Availability Replicas Data Synchronization", "Availability Replicas Role", "Availability Replicas Connection", and "Synchronous Replicas Data Synchronization" unit monitors to help avoid alert storming
+- Added new "SQL Connection Encryption Certificate Status" monitor which targets the DB Engine and is capable to check the TLS certificate validation period in days and the certificate requirements for the SQL Server
+- Added new "TDE Certificate Backup Status" monitor which targets the Database and is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up
+- Added new Operations Manager console task which allows saving and transport of the Event Log file from the Agent machine to the Management Server
+- Extended the "Long Running Queries" alerting rule by adding the Application, Database, and Query exclude list overrides which are capable to exclude queries by the application name, database name, or the custom query text from the rule alerting
+- Improved the diagnostic tracing in the System Center Operations Manager toolset
+- Improved the "Database Files Space Usage Forecast" report by adding the number of days for the forecast summary
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed an issue with false-negative alerts from the Availability Group rollup monitors, now the "Availability Group Automatic Failover (rollup)", "Availability Replica Role (rollup)", "Availability Replicas Connection (rollup)", and "Synchronous Replicas Data Synchronization (rollup)" have the best state of any member rollup algorithm
+- Fixed an issue with the inability to launch the custom monitoring without the registry keys for unsigned modules
+- Fixed an issue with the wrong average free space in percentage terms in the "Database Files Space Usage Forecast" report
+- Fixed accessibility issues
+
 ## December 2022 - 7.0.42.0 RTM
 
 ### What's New
@@ -22,7 +45,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added support for the SQL Server 2022 RTM
 - Added [custom monitoring](sql-server-management-pack-custom-monitor.md) which allows the creation of monitors and performance rules
 - Added a new "Availability Database Log Backup Status" monitor which allows to track the alert backups in databases participated in Availability Groups
-- Added new tasks which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
+- Added new Operations Manager console tasks which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
 - Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold' which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed' which could track the Cancelled job's last run status as a Failed
 - Added new Agent "Job Duration" performance collection rule which collects the duration of the SQL Server Agent job in minutes, for Windows and Linux platforms
 - Added new Agent "Job Duration" alerting rule which throws an alert if the execution time of any of SQL Agent jobs has exceeded the specified threshold in minutes, for Windows and Linux platforms
