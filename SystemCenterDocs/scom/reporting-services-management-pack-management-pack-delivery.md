@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 You can download Management Pack for SQL Server Reporting Services from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=57381) or System Center Operations Manager Online Catalog.
 
-After you download and unpack the **Microsoft.SQLServer.ReportingServices.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Reporting Services on Windows, the following files become available:
+After you download and unpack the **Microsoft.SQLServer.ReportingServices.ManagementPack.msi** package - a set of MP and MPB files for monitoring of Reporting Services on Windows, the following files become available:
 
 - **Microsoft.SQLServer.ReportingServices.Discovery.mpb**
 
