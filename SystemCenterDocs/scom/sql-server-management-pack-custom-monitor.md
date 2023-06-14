@@ -1,6 +1,6 @@
 ---
 ms.assetid: dc45fd44-50ff-47af-bfdd-5407695c6cae
-title: Custom query-based monitors in the management pack for SQL Server
+title: Custom query-based monitors in System Center Management Pack for SQL Server
 description: This article explains how to configure a custom query monitor in System Center Management Pack for SQL Server.
 manager: evansma
 author: epomortseva
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Custom query-based monitors in the management pack for SQL Server
+# Custom query-based monitors
 
 If the set of default monitors in System Center Management Pack for SQL Server isn't enough to cover your workflows, you can create a monitor that targets the SQL Server Database Engine for Windows and Linux platforms.
 
@@ -24,25 +24,23 @@ There are two types of unit monitors based on custom queries that you can create
 
 ## Two-state monitor
 
-To create a new two-state custom query-based monitor, perform the following steps:
+To create a two-state custom query-based monitor, perform the following steps:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Objects**. Right-click **Monitors**, select **Create a Monitor**, and then select **Unit Monitor**.
 
     ![Screenshot of selections for creating a two-state unit monitor.](./media/sql-server-management-pack/sql-creating-unit-monitor.png)
 
-2. At the **Monitor Type** step, select **Microsoft SQL Server** > **DB Engine** > **User-defined SQL Query Two State Monitor**.
+2. At the **Monitor Type** step, select **Microsoft SQL Server** > **DB Engine** > **User-defined SQL Query Two-State Monitor**.
 
 3. From the **Select destination management pack** dropdown list, select a management pack that you want to use, or select **New** to create a new one. Then select **Next**.
 
     ![Screenshot of selecting a monitor type.](./media/sql-server-management-pack/sql-selecting-monitor-type.png)
 
-4. At the **General Properties** step, enter the monitor name and an optional description. Make your selections for **Monitor target** and **Parent monitor**. If you want the monitor to be enabled by default, select **Monitor is enabled**. Then select **Next**.
+4. At the **General Properties** step, enter the monitor name and an optional description. Make your selections for **Monitor target** and **Parent monitor**. If you want the monitor to be enabled by default, select the **Monitor is enabled** checkbox. Then select **Next**.
 
     ![Screenshot of selecting a monitor name and description.](./media/sql-server-management-pack/sql-custom-monitor-name-and-description.png)
 
-5. At the **SQL Query** step, enter the database name, query text, and timeouts (in seconds).
-
-    The default selected database is **master**.
+5. At the **SQL Query** step, enter the database name, query text, and timeouts (in seconds). The default database is **master**.
 
     ![Screenshot that shows a target database name and SQL query.](./media/sql-server-management-pack/sql-unit-monitor-sql-query.png)
 
@@ -73,8 +71,7 @@ To create a new two-state custom query-based monitor, perform the following step
     - **Is NULL** is a true\false verification option. If the value is false, the monitor is unhealthy. Otherwise, the monitor is healthy.
     - Use **Equal to** to insert the specific value. If the result of the query matches the number value, the monitor is healthy. Otherwise, the monitor is unhealthy.
 
-    >[!NOTE]
-    > The **Equal to** option is for single value only and can't parse a range of values.
+      The **Equal to** option is for a single value only. It can't parse a range of values.
 
     You can make more than one condition by using the **OR** and **AND** operators. If you want to add, edit, or remove a condition, select the condition and use the appropriate button.
 
@@ -86,21 +83,21 @@ To create a new two-state custom query-based monitor, perform the following step
 
     ![Screenshot of configuring a schedule.](./media/sql-server-management-pack/sql-unit-monitor-schedule.png)
 
-8. At the **Schedule Filter** step, select the schedule filtering mode with the following options.
-
-   ![Screenshot of schedule filter creation in custom monitors.](./media/sql-server-management-pack/sql-unit-monitor-schedule-filter.png)
+8. At the **Schedule Filter** step, select the schedule filtering mode with the following options:
 
     - **Always process data**
 
       This is the regular mode, in which the monitor processes the data all the time. This mode doesn't support the time range schedule and excludes day options.
 
-    - **Only process data during the specified times**
+    - **Only process data during the specified time**
   
       In this mode, you schedule monitoring by selecting a date and time range during the week.
 
     - **Process data except during the specified time**
 
-      In this mode, you exclude days so that monitor doesn't track the specified time periods. You can exclude it temporarily by using the **Exclude days** button. You can exclude it permanently by using the time range schedule.
+      In this mode, you exclude days so that the monitor doesn't track the specified time periods. You can exclude it temporarily by using the **Exclude days** button. You can exclude it permanently by using the time range schedule.
+
+   ![Screenshot of schedule filter creation in custom monitors.](./media/sql-server-management-pack/sql-unit-monitor-schedule-filter.png)
 
    To specify the time range for both **Only process data during the specified time** and **Process data except during the specified time** modes, use the **Add** button and select the days and times.
 
@@ -133,7 +130,7 @@ To create a new two-state custom query-based monitor, perform the following step
 
 ## Three-state monitor
 
-Creating a three-state custom query-based monitor is similar to creating a two-state monitor. The main difference is that you can specify details for the **Warning Conditions** and **Critical Conditions** steps.
+Creating a three-state custom query-based monitor is similar to creating a two-state monitor. The main difference is that you select **User-defined SQL Query Three-State Monitor** at the **Monitor Type** step. Then, you can specify details for **Warning Conditions** and **Critical Conditions** steps.
 
 A critical state has a higher priority than a warning in three-state monitors, and it's verified first. If one or more critical conditions fail, the monitor switches to the critical state, and warning conditions aren't verified.
 
