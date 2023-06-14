@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 06/13/2023
+ms.date: 06/14/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -22,12 +22,12 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the [custom monitoring](sql-server-management-pack-custom-monitor.md), which allows the creation of monitors and performance rules, now it's on the separate package installer
 - Added a query execution and time synchronization schedule filtering mode for the custom monitoring
 - Added the 'Number of samples' override to the "Availability Group Automatic Failover", "Availability Group Online", "Availability Replicas Data Synchronization", "Availability Replicas Role", "Availability Replicas Connection", and "Synchronous Replicas Data Synchronization" unit monitors to help avoid alert storming
-- Added new "SQL Connection Encryption Certificate Status" monitor, which targets the DB Engine and is capable to check the TLS certificate validation period in days and the certificate requirements for the SQL Server
-- Added new "TDE Certificate Backup Status" monitor, which targets the Database and is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up
-- Added new Operations Manager console task, which allows saving and transport of the Event Log file from the Agent machine to the Management Server
-- Extended the "Long Running Queries" alerting rule by adding the Application, Database, and Query exclude list overrides, which are capable to exclude queries by the application name, database name, or the custom query text from the rule alerting
+- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor, which targets the DB Engine and is capable to check the TLS certificate validation period in days and the certificate requirements for the SQL Server
+- Added new ["TDE Certificate Backup Status"](sql-server-management-pack-monitoring-configuration.md#transparent-data-encryption-tde-certificate-backup-status-monitoring) monitor, which targets the Database and is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up
+- Added new [Operations Manager console task](sql-server-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
+- Extended the ["Long Running Queries"](sql-server-management-pack-monitoring-configuration.md#long-running-queries-monitoring) alerting rule by adding the Application, Database, and Query exclude list overrides, which are capable to exclude queries by the application name, database name, or the custom query text from the rule alerting
 - Improved the diagnostic tracing in the System Center Operations Manager toolset
-- Improved the "Database Files Space Usage Forecast" report by adding the number of days for the forecast summary
+- Improved the ["Database Files Space Usage Forecast"](sql-server-management-pack-sql-server-reporting.md) report by adding the number of days for the forecast summary
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Updated display strings
 
