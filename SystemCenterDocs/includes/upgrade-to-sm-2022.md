@@ -219,7 +219,7 @@ After the installation, do the following:
 
 10.  Deploy the new Self-Service Portal.  
 
-11. Apply the [System Center 2022 Service Manager Hotfix](https://support.microsoft.com/topic/hotfix-for-system-center-2022-service-manager-june-2023-kb5021792-8f17ff60-eafc-4c43-8399-85beebc1065f) to the Primary management server, Secondary management server(s), Self-Service Portal(s) and all Analyst consoles.
+11. Apply the [System Center 2022 Service Manager Hotfix](https://support.microsoft.com/topic/hotfix-for-system-center-2022-service-manager-june-2023-kb5021792-8f17ff60-eafc-4c43-8399-85beebc1065f) to the Primary management server, Secondary management server(s), Self-Service Portal(s), and all Analyst consoles.
 
 The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must update the Service Manager management server, and also deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
 
