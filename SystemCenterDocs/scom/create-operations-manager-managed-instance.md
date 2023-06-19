@@ -109,10 +109,10 @@ Ensure that the static IP is in the subnet that you created during virtual netwo
 
 ## Create and configure a gMSA account
 
-Create a gMSA to run the management server services and to authenticate the services. Use the following command to create a gMSA:
+Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account:
 
 ```powershell
-New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
+New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
 ```
 
 In that command:
