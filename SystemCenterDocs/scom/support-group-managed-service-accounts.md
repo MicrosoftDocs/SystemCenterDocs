@@ -5,7 +5,7 @@ description: This article details the group managed service accounts feature, su
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/02/2020
+ms.date: 06/19/2023
 ms.prod: system-center
 monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
@@ -48,6 +48,9 @@ Currently, the Operations Manager uses the following accounts and services:
   - Data Warehouse Write account (for DW) must be a member of Operations Manager Report Security Administrators group.
   - Agent Installation account
       - MSAA, by default, needs admin rights on the target computers.
+
+>[!Note]
+>[Group Managed Service Accounts (gMSAs)](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview) are not supported as a SQL report server service account for Data reader account.
 
 To use gMSA, administrators must do the following:
 
