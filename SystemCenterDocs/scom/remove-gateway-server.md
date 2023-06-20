@@ -14,9 +14,9 @@ ms.topic: article
 
 # Remove a Gateway Server from a Management Group
 
-Throughout the life cycle of your System Center – Operations Manager implementation, you might need to modify the structure and configuration of your deployment. 
+Throughout the life cycle of your System Center – Operations Manager implementation, you might need to modify the structure and configuration of your deployment.
 
-In the case of Gateway servers, these type of changes can stem from the decommissioning of an untrusted domain so that monitoring is no longer required or from the old server hardware being replaced with new hardware.  
+In the case of Gateway servers, these types of changes can stem from the decommissioning of an untrusted domain so that monitoring is no longer required or from the old server hardware being replaced with new hardware.  
 
 This article describes the procedure to remove a Gateway server from a Management Group.
 
@@ -77,7 +77,7 @@ Alternatively, this configuration can be changed on the agent-managed computer i
 6. In the next **Management Group Configuration** page, follow these steps:
 
      1. Enter the name of the **Management Server**.
-     1. Enter a value for **Management Server Port**, or retain the default value **5723**.
+     1. Enter a value for **Management Server Port** or retain the default value **5723**.
      1. Select **Next**.
 
 7. On the **Ready to Install** page, review the settings, and select **Install** to display the **Installing the System Center - Operations Manager Agent** page.
