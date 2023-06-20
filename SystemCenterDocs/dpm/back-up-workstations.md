@@ -181,6 +181,7 @@ You can recover the client data using any one of the following methods:
 Select the required tab for steps to allow clients to recover their own data or recover client data using Recovery Wizard:
 
 # [Allow clients to recover their data](#tab/AllowClients)
+
 End user recovery enables users to independently recover file data by retrieving recovery points of their files. 
 
 > [!NOTE]
@@ -206,7 +207,7 @@ End user recovery enables users to independently recover file data by retrieving
 
 # [Recover data for clients](#tab/RecoverData)
 
-Recover data from the DPM console as follows:
+**Recover data from the DPM console as follows:**
 
 1.  In the DPM console, select **Recovery** on the navigation bar and browse for the data you want to recover. In the results pane, select the data.
 

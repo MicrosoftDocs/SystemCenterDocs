@@ -192,7 +192,8 @@ You can recover BMR or system state to a network location. If you've backed up B
 Select the required tab for the steps to restore BMR or system state:
 
 # [Restore BMR](#tab/RestoreBMR)
-Run recovery on the DPM server:
+
+**Run recovery on the DPM server:**
 
 1.  In the Recovery pane, find the machine you want to recover > Bare Metal Recovery.
 
