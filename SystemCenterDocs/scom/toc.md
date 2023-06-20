@@ -69,6 +69,7 @@
 #### [How to upgrade to version 1807](upgrade-1801-to-1807.md)
 #### [How to upgrade from the evaluation version of Operations Manager](deploy-upgrade-eval.md)
 #### [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md)
+### [Remove a Gateway Server from a Management Group](remove-gateway-server.md)
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
