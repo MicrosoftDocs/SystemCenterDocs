@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM managed instance to mon
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 06/19/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -120,6 +120,9 @@ In that command:
 - `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously).
 - `ContosoServerGroup` is the computer group in Active Directory (specified previously).
 - `MSOMHSvc/ContosoLB.aquiladom.com`, `SMSOMHSvc/ContosoLB`, `MSOMSdkSvc/ContosoLB.aquiladom.com`, and `MSOMSdkSvc/ContosoLB` are service principal names.
+
+>[!Note]
+>If the gMSA name is longer than 14 characters, ensure that you set the `SamAccountName` less than 15 characters including the `$` sign.
 
 Use the following command if the root key isn't effective:
 
