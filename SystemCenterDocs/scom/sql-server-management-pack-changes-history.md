@@ -5,39 +5,62 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/27/2022
+ms.date: 06/14/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Features and Enhancements in Management Pack for SQL Server
+# Features and enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## December 2022 - 7.0.42.0 RTM
+## June 2023 - 7.1.0.0 CTP
 
-### What's New
+### What's new
 
-- Added support for the SQL Server 2022 RTM
-- Added [custom monitoring](sql-server-management-pack-custom-monitor.md) which allows the creation of monitors and performance rules
-- Added a new "Availability Database Log Backup Status" monitor which allows to track the alert backups in databases participated in Availability Groups
-- Added new tasks which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
-- Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold' which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed' which could track the Cancelled job's last run status as a Failed
-- Added new Agent "Job Duration" performance collection rule which collects the duration of the SQL Server Agent job in minutes, for Windows and Linux platforms
-- Added new Agent "Job Duration" alerting rule which throws an alert if the execution time of any of SQL Agent jobs has exceeded the specified threshold in minutes, for Windows and Linux platforms
-- Updated the "Securables Configuration Status" monitor by removing the unnecessary 'msdb.dbo.sp_help_jobactivity' securable and by adding new 'msdb.dbo.sysjobactivity', 'msdb.dbo.sysjobhistory', 'msdb.dbo.syssessions', and 'msdb.dbo.agent_datetime' securables
-- Updated the "Low Privilege Monitoring" and the "Service SID" operations guide sections with updated T-SQL scripts for least-privileged configurations
-- Added new "DB Log Bytes Flushed per Second", "DB Log Flushes per Second", and "DB Log Flush Wait Time" performance collection rules to measure the latency or investigate the I/O performance of a log device, for Windows and Linux platforms
-- Added new "Long Running Queries" alerting rule which throws an alert if the execution time of any of the running SQL queries has exceeded the specified threshold in seconds, for Windows and Linux platforms
-- Added new "DB Engine Disk Write Latency" and the "DB Engine Disk Read Latency" monitors to track the read/write latency issues at the DB Engine level
-- Always On discovery and monitoring workflows have been optimized for better performance
-- Policy discovery workflows have been optimized for better performance
-- Updated space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated the [custom monitoring](sql-server-management-pack-custom-monitor.md), which allows the creation of monitors and performance rules, now it's on the separate package installer
+- Added a query execution and time synchronization schedule filtering mode for the custom monitoring
+- Added the 'Number of samples' override to the "Availability Group Automatic Failover", "Availability Group Online", "Availability Replicas Data Synchronization", "Availability Replicas Role", "Availability Replicas Connection", and "Synchronous Replicas Data Synchronization" unit monitors to help avoid alert storming
+- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor, which targets the DB Engine and is capable to check the TLS certificate validation period in days and the certificate requirements for the SQL Server
+- Added new ["TDE Certificate Backup Status"](sql-server-management-pack-monitoring-configuration.md#transparent-data-encryption-tde-certificate-backup-status-monitoring) monitor, which targets the Database and is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up
+- Added new [Operations Manager console task](sql-server-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
+- Extended the ["Long Running Queries"](sql-server-management-pack-monitoring-configuration.md#long-running-queries-monitoring) alerting rule by adding the Application, Database, and Query exclude list overrides, which are capable to exclude queries by the application name, database name, or the custom query text from the rule alerting
+- Improved the diagnostic tracing in the System Center Operations Manager toolset
+- Improved the ["Database Files Space Usage Forecast"](sql-server-management-pack-sql-server-reporting.md) report by adding the number of days for the forecast summary
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
+
+- Fixed an issue with false-negative alerts from the Availability Group rollup monitors, now the "Availability Group Automatic Failover (rollup)", "Availability Replica Role (rollup)", "Availability Replicas Connection (rollup)", and "Synchronous Replicas Data Synchronization (rollup)" have the best state of any member rollup algorithm
+- Fixed an issue with the inability to launch the custom monitoring without the registry keys for unsigned modules
+- Fixed an issue with the wrong average free space in percentage terms in the "Database Files Space Usage Forecast" report
+- Fixed accessibility issues
+
+## December 2022 - 7.0.42.0 RTM
+
+### What's new
+
+- Added support for the SQL Server 2022 RTM
+- Added [custom monitoring](sql-server-management-pack-custom-monitor.md), which allows the creation of monitors and performance rules
+- Added a new "Availability Database Log Backup Status" monitor, which allows to track the alert backups in databases participated in Availability Groups
+- Added new Operations Manager console tasks, which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
+- Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold', which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed', which could track the canceled job's last run status as a Failed
+- Added new Agent "Job Duration" performance collection rule, which collects the duration of the SQL Server Agent job in minutes, for Windows and Linux platforms
+- Added new Agent "Job Duration" alerting rule, which throws an alert if the execution time of any of SQL Agent jobs has exceeded the specified threshold in minutes, for Windows and Linux platforms
+- Updated the "Securables Configuration Status" monitor by removing the unnecessary 'msdb.dbo.sp_help_jobactivity' securable and by adding new 'msdb.dbo.sysjobactivity', 'msdb.dbo.sysjobhistory', 'msdb.dbo.syssessions', and 'msdb.dbo.agent_datetime' securables
+- Updated the "Low Privilege Monitoring" and the "Service SID" operations guide sections with updated T-SQL scripts for least-privileged configurations
+- Added new "DB Log Bytes Flushed per Second", "DB Log Flushes per Second", and "DB Log Flush Wait Time" performance collection rules to measure the latency or investigate the I/O performance of a log device, for Windows and Linux platforms
+- Added new "Long Running Queries" alerting rule, which throws an alert if the execution time of any of the running SQL queries has exceeded the specified threshold in seconds, for Windows and Linux platforms
+- Added new "DB Engine Disk Write Latency" and the "DB Engine Disk Read Latency" monitors to track the read/write latency issues at the DB Engine level
+- Always On discovery and monitoring workflows have been optimized for better performance
+- Policy discovery workflows have been optimized for better performance
+- Updated space monitoring workflows to apply four-significant digit rounding in all the values
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Updated display strings
+
+### Bug fixes
 
 - Fixed a performance issue with the “Service Principal Name Configuration Status” monitor by reducing the load on the domain controller in large environments
 - Fixed an issue with the "Thread Count" monitor and the performance rule. Now these workflows count free threads more precisely including only the 'VISIBLE ONLINE' schedulers
@@ -46,9 +69,9 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## June 2022 - 7.0.38.0 RTM
 
-### What's New
+### What's new
 
-- Added 'Timeout for query execution (seconds)' override which can now be used in all workflows
+- Added 'Timeout for query execution (seconds)' override, which can now be used in all workflows
 - Added 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
 - Added support for the SQL Server 2022 public preview
 - Added support for enabling debug logging in Windows Event Log
@@ -58,7 +81,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with the failing "ROWS Data Free Space Left" monitor and "Always On Custom User Policy" workflows in cases when a non-default RunAs account is used
 - Fixed an issue with the failing dashboard view in cases when the 'OperationsManagerDW' database is used by several management groups
@@ -70,18 +93,18 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## February 2022 - 7.0.36.0 RTM
 
-### What's New
+### What's new
 
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with the failing 'MultiValueSpaceHealthCalculator' module on localized operating systems where SQL Server is installed
 - Fixed an issue with the failing 'LocalDBEngineDiscovery' module in environments, in which both x64 and x86 versions of SQL Server are installed
 
 ## December 2021 - 7.0.34.0 RTM
 
-### What's New
+### What's new
 
 - Added a new 'Health Calculation Mode' override for space monitoring workflows targeted to databases. This override allows you to define how you want to monitor free space in your environment. You can now track the health state based on the 'Threshold' parameter expressed as a percentage term (%) or as a capacity metric (MB). The override is added to the following monitors: "LOG Free Space Left", "ROWS Data Free Space Left", "FILESTREAM Data Free Space Left", "In-Memory OLTP Data Free Space Left"
 - Added a new 'Timeout for query execution' override to the following performance rules: "Memory Used By Indexes (MB)" and "Memory Used By Tables (MB)". These rules are now disabled by default to avoid the extra load in environments with a large number of memory-optimized databases
@@ -93,7 +116,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Optimized performance metric collection
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with the failing discovery modules after upgrading SQL Server
 - Fixed an issue with free space calculations in cases when 'Autogrowth' is enabled for the database
@@ -104,7 +127,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## June 2021 - 7.0.32.0 RTM
 
-### What's New
+### What's new
 
 - Updated override for the "Service Principal Name Configuration Status" monitor. The ‘Interval’ value is now set to 3600 (1 hour) to avoid an alert storm in multiple domain controller environments
 - Updated the "Virtual Log File Count" monitor. Now it uses the ‘sys.dm_db_log_info’ view instead of DBCC on SQL Server 2016 and higher
@@ -119,7 +142,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of the public updates for SQL Server
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover
 - Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names by adding proper error handling
@@ -131,7 +154,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## August 2020 - 7.0.24.0 RTM
 
-### What's New
+### What's new
 
 - Added a new "Securables Configuration Status" monitor targeted to SQL Server databases
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
@@ -148,7 +171,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Revised columns of SQL Agent and SQL Agent Jobs state views
 - Updated display strings
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed the Alerting Rules data source to avoid an alert storm after exiting maintenance mode
 - Fixed the SQL Log Reader data source to support changing of the SQL Authentication method
@@ -165,11 +188,11 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 [Including changes made in the prior preview release — v.7.0.18, November 2019]
 
-### What's New
+### What's new
 
 - Updated MP to support SQL Server 2019 RTM
 - Added filter by edition to "Local DB Engine Discovery"
-- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database which watch for disk space consumption by ROWS Filegroups and Log files
+- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database, which watch for disk space consumption by ROWS Filegroups and Log files
 - Redesigned DB Space monitoring: Added two monitors and two performance rules targeting Database to watch for disk space consumption by In-Memory and FILESTREAM data
 - Redesigned DB Space monitoring: Read-only Filegroups now count as well
 - Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Log files
@@ -186,7 +209,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated display strings
 - Revised columns on DB Engine state views
 
-### Bug Fixes
+### Bug fixes
 
 - Fixed: monitor "Service Principal Name Configuration Status" raises false alerts because of case-sensitive comparison
 - Fixed: "Local DB Engine Discovery" crashes when Windows has Turkish locale

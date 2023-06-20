@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM managed instance to mon
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 06/19/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -109,10 +109,10 @@ Ensure that the static IP is in the subnet that you created during virtual netwo
 
 ## Create and configure a gMSA account
 
-Create a gMSA to run the management server services and to authenticate the services. Use the following command to create a gMSA:
+Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account:
 
 ```powershell
-New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
+New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
 ```
 
 In that command:
@@ -120,6 +120,9 @@ In that command:
 - `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously).
 - `ContosoServerGroup` is the computer group in Active Directory (specified previously).
 - `MSOMHSvc/ContosoLB.aquiladom.com`, `SMSOMHSvc/ContosoLB`, `MSOMSdkSvc/ContosoLB.aquiladom.com`, and `MSOMSdkSvc/ContosoLB` are service principal names.
+
+>[!Note]
+>If the gMSA name is longer than 14 characters, ensure that you set the `SamAccountName` less than 15 characters including the `$` sign.
 
 Use the following command if the root key isn't effective:
 
