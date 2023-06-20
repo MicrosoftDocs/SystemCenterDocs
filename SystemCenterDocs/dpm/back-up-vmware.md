@@ -316,8 +316,8 @@ If your organization doesn't want to use secure communication protocol (HTTPS), 
 
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]
 
-   "IgnoreCertificateValidation"=dword:00000001"```
-
+   "IgnoreCertificateValidation"=dword:00000001"
+    ```
 
 2. Save the file with the name, **DisableSecureAuthentication.reg**, to your DPM server.
 3. Double-click the file to activate the registry entry.
