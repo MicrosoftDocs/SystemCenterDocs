@@ -189,7 +189,7 @@ End user recovery enables users to independently recover file data by retrieving
 > -   If you enable end user recovery, you can't specify on which file servers end user recovery is enabled.
 > -   You can't control which Active Directory users or groups can perform end user recovery.
 
-To configure end user recovery, here's what you'll need to do:
+**To configure end user recovery, here's what you'll need to do:**
 
 1.  Configure Active Directory to support end user recovery:
 
@@ -205,6 +205,7 @@ To configure end user recovery, here's what you'll need to do:
 2.  After AD settings are complete in the **End-user Recovery** tab, select **Enable end-user recovery**.
 
 # [Recover data for clients](#tab/RecoverData)
+
 Recover data from the DPM console as follows:
 
 1.  In the DPM console, select **Recovery** on the navigation bar and browse for the data you want to recover. In the results pane, select the data.
@@ -241,7 +242,7 @@ Recover data from the DPM console as follows:
 
 8.  Review your recovery settings, and select **Recover**. Any synchronization job for the selected recovery item will be canceled while the recovery is in progress.
 
-End users should recover data as follows:
+**End users should recover data as follows:**
 
 1.  Navigate to the protected data file. Right-click the file name > **Properties**.
 

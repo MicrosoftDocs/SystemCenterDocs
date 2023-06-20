@@ -206,13 +206,13 @@ Run recovery on the DPM server:
 
 6.  Set up notification options and select **Recover** on the **Summary** page.
 
-### Set up the share location:
+**Set up the share location:**
 
 1.  In the restore location, navigate to the folder that contains the backup.
 
 2.  Share the folder above WindowsImageBackup so that the root of the shared folder is the WindowsImageBackup folder. If it isn't, restore won't find the backup. To connect using WinRE, you'll need a share that you can access in WinRE with the correct IP address and credentials.
 
-### Restore the system:
+**Restore the system:**
 
 1.  Start the machine for which you want to restore the image to using the Windows DVD to match the system you're restoring.
 
@@ -226,7 +226,7 @@ Run recovery on the DPM server:
 5.  In **Choose how to restore the backup**, select **Format and repartition disks**. In the next screen, verify settings and select **Finish** to begin the restore. Restart as required.
 
 # [Restore system state](#tab/RestoreSystemState)
-Run recovery on the DPM server:
+**Run recovery on the DPM server:**
 
 1.  In the Recovery pane, find the machine you want to recover > Bare Metal Recovery.
 
@@ -240,7 +240,7 @@ Run recovery on the DPM server:
 
 6.  Set up notification options and select **Recover** on the **Summary** page.
 
-### Run Windows Server Backup
+**Run Windows Server Backup:**
 
 1.  Select **Actions** > **Recover** > **This Server** > **Next.**
 
