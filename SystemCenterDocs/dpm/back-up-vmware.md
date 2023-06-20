@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 05/09/2023
+ms.date: 06/20/2023
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -41,7 +41,7 @@ DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSp
 DPM provides the following features when backing up VMware virtual machines:
 
 >[!NOTE]
-> Backup to tape is supported from DPM 2019.
+> Back up of virtual machines to tape is applicable for DPM 2019 and later.
 
 - Agentless backup: DPM doesn't require an agent to be installed on the vCenter or ESXi server to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN) and sign in credentials used to authenticate the VMware server with DPM.
 - Cloud Integrated Backup: DPM protects workloads to disk, tape, and cloud. DPM's backup and recovery workflow help you manage long-term retention and offsite backup.
@@ -145,7 +145,7 @@ DPM communicates with the VMware server securely over an HTTPS channel. To creat
 
 To verify if there's a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you're using Chrome and you don't have a valid certificate, you see the strikethrough in the URL, like this example:
 
-![Screenshot of no secure communication channel on Chrome.](./media/back-up-vmware/secure-communication-chrome.png)
+:::image type="content" source="./media/back-up-vmware/secure-communication-chrome.png" alt-text="Screenshot of no secure communication channel on Chrome.":::
 
 If you're using Internet Explorer and you don't have a valid certificate, you see this message when you access the URL:
 
@@ -165,7 +165,7 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 4. On the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, and then select **Next**.
 5. On the **File to Export** screen, enter a name for your certificate and select **Next**.
 6. Select **Finish** to complete the **Certificate Export Wizard**.
-7. Locate the exported certificate. Select and hold the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
+7. Locate the exported certificate. Right-click the certificate and select **Install Certificate**.
 
     ![Screenshot of click install Certificate.](./media/back-up-vmware/install-certificate.png)
 
@@ -261,9 +261,9 @@ The recommended steps for assigning these privileges:
 
 1. In the vSphere Web Client, from the **Navigator** menu, select **Administration** > **Roles**.
 2. From the **Roles provider** dropdown menu, select the vCenter Server to which the role applies.
-3. On the **Roles** pane, select **+** to open the **Create Role** dialog and create a role.
+3. On the **Roles** pane, select '**+**' to open the **Create Role** dialog and create a role.
     ![Screenshot of create a new role page.](./media/back-up-vmware/create-new-role-dialog.png)
-4. Name the role, **BackupAdminRole**.
+4. Name the role **BackupAdminRole**.
 5. Select the privileges (identified in the preceding bulleted list) for the role and select **OK**.
 
 #### Create a new user, for example, BackupAdmin
@@ -272,7 +272,7 @@ When you create a user, that user must be in the same domain as the objects you 
 
 1. In the vSphere Web Client, on the **Navigator** menu, select **Administration**.
 2. In the **Administration** menu, select **Users and Groups**.
-3. To create a new user, on the **Users** tab, select **+** to open the **New User** page.
+3. To create a new user, on the **Users** tab, select '**+**' to open the **New User** page.
 4. Provide a **User name** and **password** for the role. Use BackupAdmin as the User name. Additional information is optional.
 
 #### Assign the role, BackupAdminRole, to the user, BackupAdmin
@@ -311,11 +311,11 @@ If your organization doesn't want to use secure communication protocol (HTTPS), 
 
 1. Copy and paste the following text into a .txt file.
 
-   `Windows Registry Editor Version 5.00`
+   ```"Windows Registry Editor Version 5.00
 
-   `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]`
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]
 
-   `"IgnoreCertificateValidation"=dword:00000001`
+   "IgnoreCertificateValidation"=dword:00000001"```
 
 2. Save the file with the name, **DisableSecureAuthentication.reg**, to your DPM server.
 3. Double-click the file to activate the registry entry.
@@ -461,7 +461,7 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-**Key Path:** Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+**Key Path:** *Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare*
 
 **Key Type:** DWORD (32-bit) value.
 
@@ -480,7 +480,7 @@ DPM 2022 supports restore of more than one VMware VMs protected from same vCente
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.
 
-**Key Path**: HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs
+**Key Path**: *HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs*
 
 **32 Bit DWORD**: VMware
 

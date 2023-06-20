@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 05/09/2023
+ms.date: 06/20/2023
 title: Back up system state and bare metal
 ms.technology: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -75,7 +75,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 2.  DPM server calls WSB and shares out the replica volume for that BMR backup. In this case, it doesn't tell WSB to use the drive with the most free space, but instead to use the share created for the job.
 
-3.  When the backup finishes, the file is transferred to the DPM server. Logs are stored in C:\Windows\Logs\WindowsServerBackup.
+3.  When the backup finishes, the file is transferred to the DPM server. Logs are stored in *C:\Windows\Logs\WindowsServerBackup*.
 
 ## Prerequisites and limitations
 
@@ -91,7 +91,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 -   For BMR protection (unlike system state protection), DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. The job for this doesn't appear in the DPM Jobs view.
 
-- If you use Modern Backup Storage and want to increase the BMR default replica size > 30 GB, use the registry key: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD).
+- If you use Modern Backup Storage and want to increase the BMR default replica size > 30 GB, use the registry key: `HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)`.
 
 - If you use Modern Backup Storage, SystemState and BMR backups consume more storage (than legacy storage) due to ReFS cloning. Each SystemState or BMR backup is a full recovery point. To mitigate this storage consumption, you may want to:
   - schedule fewer System State or BMR recovery points,
@@ -206,13 +206,13 @@ Run recovery on the DPM server:
 
 6.  Set up notification options and select **Recover** on the **Summary** page.
 
-Set up the share location:
+### Set up the share location:
 
 1.  In the restore location, navigate to the folder that contains the backup.
 
 2.  Share the folder above WindowsImageBackup so that the root of the shared folder is the WindowsImageBackup folder. If it isn't, restore won't find the backup. To connect using WinRE, you'll need a share that you can access in WinRE with the correct IP address and credentials.
 
-Restore the system:
+### Restore the system:
 
 1.  Start the machine for which you want to restore the image to using the Windows DVD to match the system you're restoring.
 
@@ -240,7 +240,7 @@ Run recovery on the DPM server:
 
 6.  Set up notification options and select **Recover** on the **Summary** page.
 
-Run Windows Server Backup
+### Run Windows Server Backup
 
 1.  Select **Actions** > **Recover** > **This Server** > **Next.**
 

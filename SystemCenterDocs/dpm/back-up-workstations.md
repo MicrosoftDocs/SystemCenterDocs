@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 05/09/2023
+ms.date: 06/20/2023
 title: Back up client computers with DPM
 ms.technology: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
@@ -41,17 +41,17 @@ Before you deploy DPM to protect client computer data, verify the deployment pre
 
 -   You can tweak the performance of client data backup as follows:
 
-    -   If client data backup is slow, you can set this key to a lower value:  HKLM\Software\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection\WaitInMSPerRequestForClientRead to a lower value.
+    -   If client data backup is slow, you can set this key to a lower value:  `HKLM\Software\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection\WaitInMSPerRequestForClientRead to a lower value`.
 
     -   To scale up client performance, you can tweak these registry keys:
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 9037ebb9-5c1b-4ab8-a446-052b13485f57
+        -   `Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 9037ebb9-5c1b-4ab8-a446-052b13485f57`
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 3d859d8c-d0bb-4142-8696-c0d215203e0d
+        -   `Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 3d859d8c-d0bb-4142-8696-c0d215203e0d`
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: c4cae2f7-f068-4a37-914e-9f02991868da
+        -   `Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: c4cae2f7-f068-4a37-914e-9f02991868da`
 
-        -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Collocation\Client. Value: DSCollocationFactor
+        -   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Collocation\Client. Value: DSCollocationFactor`
 
 ## Before you start
 
@@ -77,7 +77,7 @@ If you're looking to back up certain common folders in your client machines, you
 
 | **Well Known Folder**    | **Location to all or every user on the client machine**                                  |
 |--------------------------|------------------------------------------------------------------------------------------|
-| AppData                  | c:\Users\USERNAME\AppData\Roaming                                                    |
+| AppData                  | C:\Users\USERNAME\AppData\Roaming                                                   |
 | User Profiles            | C:\Users\USERNAME OR %SystemDrive%\Users                                              |
 | Slide Shows              | C:\Users\USERNAME\Pictures                                                            |
 | Quick Launch             | C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch        |
@@ -101,14 +101,13 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folde
 
 The details of the registry entry are below. Modify the value USERNAME according to your username of the client computer.
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links`
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Downloads /t REG_SZ /d C:\Users\USERNAME\Downloads
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Downloads /t REG_SZ /d C:\Users\USERNAME\Downloads`
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Slides Shows” /t REG_SZ /d C:\Users\USERNAME\Pictures
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Slides Shows” /t REG_SZ /d C:\Users\USERNAME\Pictures`
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d
-“C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d “C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”`
 
 > [!NOTE]
 > While creating a protection group of your client or workstation machine, DPM honors the folder hierarchy during backup. As an example, if you select backup of *User Profiles*, which represents the parent of *Desktop* folder, the *Desktop* folder will be included in backup.
