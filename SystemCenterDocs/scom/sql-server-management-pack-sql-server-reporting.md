@@ -3,7 +3,7 @@ ms.assetid: b4dbae9a-cf0d-4598-96d8-421e10681e45
 title: SQL Server reporting in Management Pack for SQL Server
 description: This article explains SQL Server reporting
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
@@ -17,8 +17,6 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 
 - Initially consumed file space (GB)
 - Finally consumed file space (GB)
-- Initial average free file space (%)
-- Final average free file space (%)
 - File space consumption forecast (GB)
 
 To open the report, perform the following steps:

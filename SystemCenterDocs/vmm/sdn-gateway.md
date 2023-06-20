@@ -149,7 +149,7 @@ Both the templates have a default count of three virtual machines, which can be 
 
 ::: moniker range=">=sc-vmm-2019"
 
-1. Select and hold the GRE VIP logical network > **Create IP Pool**.
+1. Right-click the GRE VIP logical network > **Create IP Pool**.
 2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Select **Next**.
 3. Accept the default network site and select **Next**.
 ::: moniker-end
@@ -252,7 +252,7 @@ To override the maximum number of VM networks that can be used with the gateway 
 
 Now that the gateway service is deployed, you can configure the properties and associate it with the network controller service.
 
-1. Select **Fabric** > **Network Service** to display the list of network services installed. Select and hold the network controller service > **Properties**.
+1. Select **Fabric** > **Network Service** to display the list of network services installed. Right-click the network controller service > **Properties**.
 2. Select the **Services** tab, and select the **Gateway Manager Role**.
 3. Find the **Associated Service** field under **Service information**, and select **Browse**. Select the gateway service instance you created earlier, and select **OK**.
 4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.

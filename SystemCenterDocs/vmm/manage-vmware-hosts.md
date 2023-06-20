@@ -95,7 +95,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 4. In **Host Settings**, select the host group to which you want to assign the host or cluster. You don't need to add VM placement paths.
 5. In **Summary**, verify the settings and select **Finish**. Wait until the Jobs dialog shows a **Completed** status.
 6. Select **Fabric** > **Servers**> **All Hosts** and in the host group, check the status of each host or cluster. Either select **OK** or **OK (limited)**.
-7. If the status is limited, it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, select and hold the vCenter server > **Properties** > **Security**.
+7. If the status is limited, it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, right-click the vCenter server > **Properties** > **Security**.
 5. To import the certificate, select each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status should be **OK** after the import.
 
 ## Associate host adapters with logical networks

@@ -33,11 +33,11 @@ Use the following procedures to create the runbook by using the required activit
 
 1.  Select **Start**, point to  **All Programs**, select **Microsoft System Center 2016**, select **Orchestrator**, and then select **Runbook Designer**.  
 
-2.  In the **Connections** pane, select and hold **Runbooks** to select **New**, and then select **Runbook**.  
+2.  In the **Connections** pane, right-click **Runbooks** to select **New**, and then select **Runbook**.  
 
     A **New Runbook** tab appears at the top of the **Runbook Designer** Design workspace with the name **New Runbook**.  
 
-3.  Select and hold the **New Runbook** tab to select **Rename**.  
+3.  Right-click the **New Runbook** tab to select **Rename**.  
 
     In the **Confirm Check out** dialog, select **Yes**.  
 
@@ -95,9 +95,9 @@ By adding both the **Read Line** activity and the **Copy File** activity, you've
 
 Follow these steps to configure the Copy File activity:
 
-1.  In the **Append and Copy Workflow** runbook, select and hold the **Copy File** activity to select **Properties**.  
+1.  In the **Append and Copy Workflow** runbook, right-click the **Copy File** activity to select **Properties**.  
 
-2.  On the **Details** tab, select and hold the **File** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
+2.  On the **Details** tab, right-click the **File** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
     The **Monitor File** activity is listed at the top of the **Published Data** dialog because this is the activity just before the selected activity.  
 
@@ -113,9 +113,9 @@ The **Copy File** activity is now configured to copy files from the source folde
 
 Follow these steps to configure the Read Line activity:
 
-1.  In the **Append and Copy Workflow** runbook, select and hold the **Read Line** activity to select **Properties**.  
+1.  In the **Append and Copy Workflow** runbook, right-click the **Read Line** activity to select **Properties**.  
 
-2.  On the **Details** tab, select and hold the **File** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
+2.  On the **Details** tab, right-click the **File** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
 3.  In the **Activities** list, select **Monitor File**.  
 
@@ -139,13 +139,13 @@ Follow these steps to add an Append Line activity:
 
 3.  To create a link from the **Read Line** activity to the **Append Line** activity, select and drag the right arrow of the **Read Line** activity to the **Append Line** activity.  
 
-4.  Select and hold the **Append Line** activity to select **Properties**.  
+4.  Right-click the **Append Line** activity to select **Properties**.  
 
 5.  On the **Details** tab in the **File** box, enter **C:\\Copy\\Masterlog.txt**.  
 
 6.  Select the ellipsis button (**...**) to the right of the **File encoding** box, and then select **auto**.  
 
-7.  Select and hold the **Text** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
+7.  Right-click the **Text** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
 8.  In the **Name** column for the **Read Line** activity, select **Line text**, and then select **OK**.  
 
@@ -165,7 +165,7 @@ Follow these steps to synchronize the branches of a runbook:
 
 4.  To create a link from the **Copy File** activity to the **Junction** activity, select and drag the right arrow of the **Copy File** activity to the **Junction** activity.  
 
-5.  Select and hold the **Junction** activity to select **Properties**.  
+5.  Right-click the **Junction** activity to select **Properties**.  
 
 6.  Select the ellipsis button (**...**) next to the **Return data from** box, and then select **Copy File**. Select **OK**. This action configures the activity to return the same Published Data as the **Copy File** activity.  
 
@@ -183,9 +183,9 @@ Follow these steps to add and configure the Delete File activity
 
 3.  To create a link from the **Junction** activity to the **Delete File** activity, select and drag the right arrow of the **Junction** activity to the **Delete File** activity.  
 
-4.  Select and hold the **Delete File** activity to select **Properties**.  
+4.  Right-click the **Delete File** activity to select **Properties**.  
 
-5.  Select and hold the **Path** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
+5.  Right-click the **Path** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
     In the **Activity** list, select **Copy File**.  
 

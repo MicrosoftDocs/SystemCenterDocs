@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/20/2022
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -31,8 +31,8 @@ Management Pack for SQL Server provides the following SQL Server agent alerting 
 
 By default, these rules are enabled in [agent monitoring](sql-server-management-pack-monitoring-modes.md) mode, but disabled in [mixed monitoring](sql-server-management-pack-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager doesn't allow events from event logs to collect on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
 
->[!NOTE]
->Enabling the **AllowProxying** option may cause remote code execution. Don't enable this option unless you're sure that your computer is secured.
+> [!NOTE]
+> Enabling the **AllowProxying** option may cause remote code execution. Don't enable this option unless you're sure that your computer is secured.
 
 None of these rules work in the [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) mode and are unavailable for SQL on Linux.
 
@@ -149,8 +149,8 @@ Space monitoring supports the following types of media:
 
 After you import Management Pack for SQL Server, you may find that some of the space monitoring workflows are enabled by default while others are disabled. For the purposes of reducing the load on the environment, space monitoring is enabled only for the database level and disabled for the filegroup, log file, In-Memory OLTP container, and FILESTREAM filegroup levels. If your environment is sensitive to extra load, enabling rarely used workflows isn't recommended.
 
->[!NOTE]
->When monitoring filegroups, an alert is only thrown if all files in the filegroup are unhealthy altogether. If there is at least one file in the filegroup that is healthy, then no alerts will be registered.
+> [!NOTE]
+> When monitoring filegroups, an alert is only thrown if all files in the filegroup are unhealthy altogether. If there is at least one file in the filegroup that is healthy, then no alerts will be registered.
 
 The following is a list that explains the default state of each of the space monitoring workflows:
 
@@ -246,7 +246,7 @@ The monitor also supports the "Disable if Availability Group is offline" overrid
 
 ## Many Databases on the Same Drive
 
-Space monitoring introduced in this management pack may be noisy in environments where many databases share the same media and have the **autogrowth** setting enabled. In such cases, an alert for each database is generated when the amount of free space on the hard drive reaches the threshold.
+Space monitoring in the management pack may be noisy in environments where many databases share the same media and have the **autogrowth** setting enabled. In such cases, an alert for each database is generated when the amount of free space on the hard drive reaches the threshold.
 
 To reduce the noise, turn off space monitoring for data and transaction log files and use the Operating System Management Pack to monitor space on the hard drive.
 
@@ -340,8 +340,8 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.filegroups
   - sys.syscolumns
 
->[!NOTE]
->Some monitors may have properties with double underscore in their names. Such properties are used for internal management pack purposes; ensure not to use them.
+> [!NOTE]
+> Some monitors may have properties with double underscore in their names. Such properties are used for internal management pack purposes; ensure not to use them.
 
 ## WMI Health State Monitor
 
@@ -364,7 +364,7 @@ Management Pack for SQL Server is capable of performing availability and perform
 
 - Last Runs Status monitor
 
-  This monitor checks all jobs on the SQL Agent and if any of the jobs didn't complete successfully, the monitor changes its state to Warning. This doesnt generate an alert because there's an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled.
+  This monitor checks all jobs on the SQL Agent and if any of the jobs didn't complete successfully, the monitor changes its state to Warning. This doesn't generate an alert because there's an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled.
 
   The monitor has the **Number of fails threshold** override, which indicates how many times a SQL Agent Job can fail before the monitor's state is changed to Warning. The override **Defines the Canceled status as Failed** could track the Canceled job's last run status as a Failed.
 
@@ -393,12 +393,89 @@ Management Pack for SQL Server is capable of performing availability and perform
 
 - Job Duration alert rule
 
-  This rule checks whether the execution time of any of your SQL Agent jobs has exceeded the specified threshold in minutes and throws an alert if the execution time has breached the threshold. 
+  This rule checks whether the execution time of any of your SQL Agent jobs has exceeded the specified threshold in minutes and throws an alert if the execution time has breached the threshold.
   > [!NOTE]
   > This rule is disabled by default. Use overrides to enable it when necessary.
 
 - Job Duration performance rule
 
-  This rule collects the duration in minutes of any of your SQL Agent jobs. 
+  This rule collects the duration in minutes of any of your SQL Agent jobs.
   > [!NOTE]
   > This rule is disabled by default. Use overrides to enable it when necessary.
+
+## SQL Server connection encryption certificate monitoring
+
+Management Pack for SQL Server provides the monitor which is capable of performing the SQL Server connection encryption certificate status.
+
+SQL Server can use TLS to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. TLS uses a certificate to implement encryption. Enabling TLS encryption increases the security of data transmitted across networks between instances of SQL Server and applications. For more information, see [Certificate overview](/sql/database-engine/configure-windows/certificate-overview) and [Certificate procedures](/sql/database-engine/configure-windows/certificate-procedures) articles.
+
+This monitor targets the DB Engine and checks the certificate validation period in days and the [certificate requirements](/sql/database-engine/configure-windows/certificate-requirements).
+
+> [!IMPORTANT]
+> SQL Server will not start if a certificate exists in the computer store, but only meets some requirements in the above list and if it is manually configured for use by SQL Server Configuration Manager or through registry entries. Select another certificate that meets all the requirements or remove the certificate from being used by SQL Server till you are able to provision one that meets requirements. For more information, see [Configure SQL Server for encryption](/sql/database-engine/configure-windows/configure-sql-server-encryption) article.
+
+The following table defines the monitor override parameters and fine-tunes the certificate validation requirements for SQL Server:
+
+|Override name|Description|  
+|----------|----------|
+|Additional host names to check|By default, the monitor checks that the certificate contains the target DB Engine's Principal name. This override allows checking with a comma-separated list of additional host names like Always On listener DNS name, DNS alias of the hosting machine, FCI virtual name, etc.
+|Certificate must be configured|If true, the monitor changes its state to a Critical when a DB Engine has no explicitly configured certificate.|
+|Ignore 'Untrusted Root' check|If true, the monitor will ignore that the certificate is not placed in the Trusted Root Certification Authorities. If placed, these certificates are trusted by the operating system and can be used by applications as a reference for which public key infrastructure (PKI) hierarchies and digital certificates are trustworthy.
+|Set flag 'IgnoreCertificateAuthorityRevocationUnknown'|Ignore that the certificate authority revocation is unknown when determining certificate verification.
+|Set flag 'IgnoreCtlNotTimeValid'|Ignore that the certificate trust list (CTL) is not valid, for reasons such as the CTL has expired, when determining certificate verification.
+|Set flag 'IgnoreCtlSignerRevocationUnknown'|Ignore that the certificate trust list (CTL) signer revocation is unknown when determining certificate verification.
+|Set flag 'IgnoreEndRevocationUnknown'|Ignore that the end certificate (the user certificate) revocation is unknown when determining certificate verification.
+|Set flag 'IgnoreInvalidBasicConstraints'|Ignore that the basic constraints are not valid when determining certificate verification.
+|Set flag 'IgnoreInvalidPolicy'|Ignore that the certificate has invalid policy when determining certificate verification.
+|Set flag 'IgnoreNotTimeNested'|Ignore that the CA (certificate authority) certificate and the issued certificate have validity periods that are not nested when verifying the certificate. For example, the CA cert can be valid from January 1 to December 1 and the issued certificate from January 2 to December 2, which would mean the validity periods are not nested.
+|Set flag 'IgnoreNotTimeValid'|Ignore certificates in the chain that are not valid either because they have expired or they are not yet in effect when determining certificate validity.
+|Set flag 'IgnoreRootRevocationUnknown'|Ignore that the root revocation is unknown when determining certificate verification.
+|Set flag 'IgnoreWrongUsage'|Ignore that the certificate was not issued for the current use when determining certificate verification.
+|Skip 'Host Name' check|If true, the monitor will skip checking that the certificate contains particular host names.
+|Skip 'Key Usage Server Authentication' check|If true, the monitor will skip the server's authentication certificate requirement of the presence of the key's usage extension 'Server Authentication'. Some connection driver implementations may not check the existence of this extension and they may consider the certificate valid even without the extension.
+|Skip 'Revocation' check|If true, the monitor will ignore all issues related to revocation.
+
+  > [!NOTE]
+  > This monitor is disabled by default. Use overrides to enable it when necessary.
+
+## Transparent data encryption (TDE) certificate backup status monitoring
+
+Management Pack for SQL Server provides the monitor which is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up.
+
+Transparent data encryption (TDE) encrypts the storage of an entire database by using a symmetric key called the database encryption key. The database encryption key can also be protected using a certificate, which is protected by the database master key of the master database. TDE does real-time I/O encryption and decryption of data and log files. The encryption uses a database encryption key (DEK). The database boot record stores the key for availability during recovery. The DEK is a symmetric key and secured by a certificate that the server's master database stores or by an asymmetric key that an EKM module protects. TDE protects data at rest, which is the data and log files. It lets you follow many laws, regulations, and guidelines established in various industries. This ability lets software developers encrypt data by using AES and 3DES encryption algorithms without changing existing applications. For more information, see [SQL Server security best practices](/sql/relational-databases/security/sql-server-security-best-practices), and [Transparent data encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption) articles.
+
+> [!NOTE]
+> TDE is not available for system databases. It can't be used to encrypt **master**, **model**, or **msdb**. **tempdb** is automatically encrypted when a user database enabled TDE, but can't be encrypted directly. This monitor is disabled by default. Use overrides to enable it when necessary.
+
+## Long running queries monitoring
+
+Management Pack for SQL Server provides the rule which is capable to raise an alert if the execution time of any of the running SQL queries has exceeded the specified threshold (in seconds).
+
+The rule supports alert customization filtering with the following overrides:
+
+- Application Exclude List - for excluding the query with application name
+- Database Exclude List - for excluding the query with database name
+- Query Exclude List - for excluding the query with custom query-text
+
+These overrides support wildcards and can be used for excluding long running queries with the application name, database name, or the query text itself with comma-separated values. For example, use conditions like `*test` to exclude queries that end with `_test`, or `Test*` to exclude queries that start with `Test`, or `*test*` condition to exclude queries that have a `test` entry in any part of the query text.
+
+If an element should contain an asterisk (\*) that is not a wildcard, double quote ("), or backslash (\\), the element must be escaped with a backslash `\`. For example, use conditions like `Query\*3` to exclude queries that have `Query*3` in the query text, use conditions like `\\path\\to\\` to exclude queries that have `\path\to\` in the query text, or `"GO, WITH"` condition to exclude queries that have a `"GO, WITH"` entry with a comma inside of the query text. Overrides with exclude lists can be used simultaneously.
+
+The following table defines wildcard patterns that you can use in expressions:
+
+|Character|Description|Example|  
+|---|---|---|
+| ? |Matches any single character. You can use the question mark (?) anywhere in a character string.|**Quer?** finds Query, Quer1, Quer_, Quer?, Quer*, but not Query1, or Queries.
+| \* |Matches any number of characters. You can use the asterisk (*) anywhere in a character string.|**DB\*** finds DBs, DB1, DB2, DB_prod, but not 1DB or Database. **\*DB** finds 1DB, _DB, test-DB, but not 1DB_prod or D_Base. **\*DB\*** finds cloudDB_1, DBtest, 3DB, but not prod_D_B or Database.
+| " |Matches any number of characters in double quotes. You can use the double quotes (" ") anywhere in a character string. If a character string contains a comma, the string must be quoted.|**"Instance, Database"** finds an Instance, Database string with a comma inside, but not an Instance string separately, and a Database string separately. **"   Query with leading and trailing spaces  "** finds an entry with all spaces included in double-quotes.
+
+The following table defines escape patterns that you can use in expressions:
+
+|Character|Description|Example|
+|---|---|---|
+| \\* |Not a wildcard. Escapes the asterisk (\*) anywhere in a character string.|**dbname\\*** finds dbname\*, but not dbname1, dbname_prod, dbnames.
+|\\" |Not a wildcard. Escapes the double quotes (") anywhere in a character string.|**query \\"example\\"** finds query "example", but not query\\, query example, or "example".
+| \\\\ |Not a wildcard. Escapes the backslash (\\) anywhere in a character string.|**C:\\\Path\\\to\\\\** finds C:\\Path\\to\\, but not C:\\, Path\\\to.
+
+> [!NOTE]
+> This rule doesn't provide the texts of executing queries due to security reasons.

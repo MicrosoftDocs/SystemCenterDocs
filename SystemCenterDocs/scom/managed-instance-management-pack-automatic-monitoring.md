@@ -3,7 +3,7 @@ ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: vvithal
 ms.date: 3/17/2021
 ms.topic: article
@@ -17,7 +17,7 @@ Automatic monitoring template allows you to configure monitoring by discovering 
 
 To configure monitoring using the automatic monitoring template, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, select and hold **Azure SQL MI - Automatic**, and select **Add Monitoring Wizard…**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Automatic**, and select **Add Monitoring Wizard…**.
 
     ![Screenshot showing the Run Add Monitoring Wizard.](./media/managed-instance-management-pack/running-monitoring-wizard.png)
 

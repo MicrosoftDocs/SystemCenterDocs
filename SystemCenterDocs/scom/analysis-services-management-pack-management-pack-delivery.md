@@ -18,7 +18,7 @@ Services instances, databases, and partitions.
 
 You can download Management Pack for SQL Server Analysis Services from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=57382) or System Center Operations Manager Online Catalog.
 
-After you download and unpack the **Microsoft.SQLServer.AnalysisServices.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Analysis Services on Windows, the following files become available:
+After you download and unpack the **Microsoft.SQLServer.AnalysisServices.ManagementPack.msi** package - a set of MP and MPB files for monitoring of Analysis Services on Windows, the following files become available:
 
 - **Microsoft.SQLServer.AnalysisServices.Windows.Discovery.mpb**
 

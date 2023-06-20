@@ -44,7 +44,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 
 ## Run setup
 
-1. Review the planning instructions. Then, select and hold setup.exe for VMM > **Run as administrator**.
+1. Review the planning instructions. Then, right-click setup.exe for VMM > **Run as administrator**.
 2. On the main setup page, select **Install** and on the **Select features to install** page, select the **VMM console** check box, and then select **Next**. On the **Please read this notice page**, select the **I agree with the terms of this notice** check box, and then select **Next**.
 3. Review the information on the **Diagnostic and Usage Data** page, and then select **Next**. On the **Microsoft Update** page, select whether you want to use Microsoft Update, and then select **Next**. This page won't appear if updates are already installed.
 4. On the **Installation location** page, type an installation path for the VMM program files or use the default path, and then select **Next**. Setup checks that the computer meets the console installation requirements.

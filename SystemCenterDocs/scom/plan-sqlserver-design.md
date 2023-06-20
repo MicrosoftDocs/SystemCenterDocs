@@ -112,7 +112,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 > [!NOTE]
 > - Each of the following SQL Server components supporting a SCOM infrastructure are required to be at the same SQL Server major version: 
->    - SQL Server database engine instances hosting any of the SCOM databases (that is,**OperationManager**, **OperationManagerDW**, and SSRS databases **ReportServer** & **ReportServerTempDB**).
+>    - SQL Server database engine instances hosting any of the SCOM databases (that is, **OperationManager**, **OperationManagerDW**, and SSRS databases **ReportServer** & **ReportServerTempDB**).
 >    - SQL Server Reporting Services (SSRS) instance.
 > - The SQL Server collation setting must be one of the supported types as described in the [**SQL Server collation setting**](#sql-server-collation-setting) section below.
 > - SQL Server Full Text Search is required for all SQL Server database engine instances hosting any of the SCOM databases.
@@ -431,7 +431,7 @@ To configure tempdb, you can run the following query or modify its properties in
   GO
   ```
 
-Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
+Run the T-SQL query `SELECT * from sys.sysprocesses` to detect page allocation contention for the tempdb database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources and have similar values as highlighted earlier when you execute the **sys.sysprocesses** query.  
 
 If the previous recommendations don't significantly reduce the allocation contention and the contention is on SGAM pages, implement trace flag -T1118 in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages.
 

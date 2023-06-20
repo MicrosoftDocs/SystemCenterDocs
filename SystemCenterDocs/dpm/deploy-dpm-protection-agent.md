@@ -88,8 +88,8 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
 
 7.  On the **Summary** page, select **Install** to begin the installation. If the EULA appears, accept it for the installation to start. On the **Task** tab of the installation page, you can see whether the installation is successful. You can select **Close** before the wizard is finished and monitor the installation progress in the **Agents** tab in the **Management** task area. If the installation is unsuccessful, you can view the alerts in the **Monitoring** task area on the **Alerts** tab.
 
->  [!NOTE]
->  After you install a protection agent on a computer that is part of a Windows SharePoint Services farm, each of the computers in the farm won't appear as protected computers on the **Agents** tab in the **Management** task area, only the computer that you selected. However, if the Windows SharePoint Services farm has data on the selected computer, DPM protects the data on all of the computers in the farm, provided all of them have the protection agent installed.
+> [!NOTE]
+> After you install a protection agent on a computer that is part of a Windows SharePoint Services farm, each of the computers in the farm won't appear as protected computers on the **Agents** tab in the **Management** task area, only the computer that you selected. However, if the Windows SharePoint Services farm has data on the selected computer, DPM protects the data on all of the computers in the farm, provided all of them have the protection agent installed.
 
 ## <a name="BKMK_Manual"></a>Install the agent manually
 
@@ -161,7 +161,7 @@ Use these steps:
 
         The **Component Services** window opens.
 
-    2.  In the **Component Services** window, expand **Computers**, expand **My Computer**, expand DCOM Config, select and hold the**DPM RA** service, and then select **Properties**.
+    2.  In the **Component Services** window, expand **Computers**, expand **My Computer**, expand DCOM Config, right-click the**DPM RA** service, and then select **Properties**.
 
     3.  Select **General**, and then set the **Authentication Level** to **Default**.
 

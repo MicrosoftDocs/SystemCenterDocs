@@ -3,7 +3,7 @@ ms.assetid: 170dc7fd-11a3-411c-a164-e8fce974deee
 title: Management Pack for SQL Server Reporting Services delivery
 description: This article explains how to install Management Pack for SQL Server Reporting Services
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 5/31/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 You can download Management Pack for SQL Server Reporting Services from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=57381) or System Center Operations Manager Online Catalog.
 
-After you download and unpack the **Microsoft.SQLServer.ReportingServices.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Reporting Services on Windows, the following files become available:
+After you download and unpack the **Microsoft.SQLServer.ReportingServices.ManagementPack.msi** package - a set of MP and MPB files for monitoring of Reporting Services on Windows, the following files become available:
 
 - **Microsoft.SQLServer.ReportingServices.Discovery.mpb**
 

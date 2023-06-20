@@ -3,7 +3,7 @@ ms.assetid: 847ad457-3a51-4ecd-8aac-dde7539339c5
 title: Managed instance monitoring pool in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure monitoring pool in Management Pack for Azure SQL Managed Instance
 author: Anastas1ya
-ms.author: v-asimanovic
+ms.author: v-ekaterinap
 manager: evansma
 ms.date: 03/02/2023
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: engagement-fy23
 
 To configure a monitoring pool using the Operations Manager console, perform the following steps:
 
-1. Navigate to **Administration | Resource Pools**, select and hold **Azure SQL MI Monitoring Pool**, and select the **Manual Membership** option.
+1. Navigate to **Administration | Resource Pools**, right-click **Azure SQL MI Monitoring Pool**, and select the **Manual Membership** option.
 
 2. Select **Properties**.
 

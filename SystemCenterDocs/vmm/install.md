@@ -42,7 +42,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 > - If you're using gMSA account, the format should be *domainFQDN\gMSAAccount$*.
 
 1. Close any open programs and ensure that no restarts are pending on the computer.
-2. To start the Virtual Machine Manager Setup wizard, on your installation media, select and hold **setup.exe** and then select **Run as administrator**.
+2. To start the Virtual Machine Manager Setup wizard, on your installation media, right-click **setup.exe** and then select **Run as administrator**.
 3. In the main setup page, select **Install**.
 4. On the **Select features to install** page, </br>
      Select the **VMM management server** check box, and then select **Next**. 
@@ -160,7 +160,7 @@ Each of these files contains key/value pairs with default values. These entries 
 
 1. Ensure that the VMM console and VMM command shell are closed.
 2. On the computer on which the VMM management server is installed, select **Start** and then select **Control Panel**.
-3. Under **Programs**, select **Uninstall a program**. Under **Name**, select and hold **Microsoft System Center Virtual Machine Manager**.
+3. Under **Programs**, select **Uninstall a program**. Under **Name**, right-click **Microsoft System Center Virtual Machine Manager**.
 4. On the **What would you like to do?** page, select **Remove features**.
 5. On the **Select features to remove** page, select the **VMM management server** check-box, and then select **Next**. If you want to uninstall the VMM console, select the **VMM console** check-box.
 
