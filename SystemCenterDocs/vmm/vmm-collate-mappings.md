@@ -67,7 +67,7 @@ This article provides the code and associated details for the VMM server collate
 **Code** | **Details**
 --- | ---
 3076|Chinese (Hong Kong SAR, PRC)
-136196|Chinese (Macau)
+136196|Chinese (Macao Special Administrative Region)
 1028|Chinese (Taiwan)
 5124|Chinese (Macao SAR)
 197636| Chinese (Taiwan)
