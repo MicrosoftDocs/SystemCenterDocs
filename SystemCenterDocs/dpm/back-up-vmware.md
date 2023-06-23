@@ -5,13 +5,13 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 04/18/2023
+ms.date: 06/20/2023
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
 ms.author: jsuri
 monikerRange: '>sc-dpm-2016'
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Use DPM to back up and restore VMware virtual machines
@@ -23,7 +23,7 @@ ms.custom: UpdateFrequency.5
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
-This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5, 6.7  or 7.0 (supported from DPM 2019 UR5) versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5, 6.7, or 7.0 (supported from DPM 2019 UR5) versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
 DPM 2019 UR5 and later don't support vSphere 5.5. Ensure to upgrade to newer vSphere versions as vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsphere/2018/02/vsphere-5-5-vsan-5-5-end-general-support-reminder.html).
 
@@ -41,7 +41,7 @@ DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSp
 DPM provides the following features when backing up VMware virtual machines:
 
 >[!NOTE]
-> Backup to tape is supported from DPM 2019.
+> Back up of virtual machines to tape is applicable for DPM 2019 and later.
 
 - Agentless backup: DPM doesn't require an agent to be installed on the vCenter or ESXi server to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN) and sign in credentials used to authenticate the VMware server with DPM.
 - Cloud Integrated Backup: DPM protects workloads to disk, tape, and cloud. DPM's backup and recovery workflow help you manage long-term retention and offsite backup.
@@ -53,7 +53,7 @@ DPM provides the following features when backing up VMware virtual machines:
 
 ## Prerequisites and Limitations
 
-Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites.
+Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
 
 - If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
     - You can use static IP address of vCenter Server as a workaround.
@@ -94,22 +94,22 @@ Remember the following details about credentials:
     The **Manage Credentials** page opens. Using the **Manage Credentials** page, you can add, update, or delete credentials.
     ![open Manage Credentials dialog](./media/back-up-vmware/manage-credentials-dialog.png)
 
-   See the following sections for detailed information on adding, updating, or deleting credentials.
+   Select the required tab for detailed information on adding, updating, or deleting credentials:
 
-#### Add VMware server credentials
+# [Add VMware server credentials](#tab/Add)
 
 You add a credential to the DPM server so that you can pair it up with credential on the VMware server. Remember, the credential on the DPM server must be identical to the credential on the VMware server. To add a credential, in the **Manage Credentials** page:
 
 1. Select **Add** to open the **Add Credential** page.
    ![Screenshot of open Add Credentials page.](./media/back-up-vmware/add-credential-dialog.png)
 
-2. Type your information in the **Name**, **Description**, **User name**, and **Password** fields. Once you've added text in the required fields, the **Add** button becomes active.
+2. Enter your information in the **Name**, **Description**, **User name**, and **Password** fields. Once you've added text in the required fields, the **Add** button becomes active.
    - **Name** is what appears in the **Credential** column of the Manage Credentials dialog. **Name** is a required field and is the identifier for the credentials. This field can't be edited later. If you want to change the name of a credential, you must add a new credential.
    - **Description** is the descriptive text or an alternate name so that you can recognize or distinguish the credentials in the Manage Credentials page. The **Description** text is an optional field and appears in the **Description** column of the Manage Credentials page.
    - **User name** and **Password** are the user name and password for the user account used to access the server. Both fields are required.
 3. Select **Add** to save your new credentials. Once you've created credentials, you can use them to authenticate with a VMware server.
 
-#### Update VMware server credentials
+# [Update VMware server credentials](#tab/Update)
 
 Most organizations need to update credentials due to security reasons or personnel changes. When VMware server credentials are changed, the credentials used by DPM also need to be updated. If a VMware server's credentials (user name and password) have changed, you must add matching credentials in DPM.
 
@@ -128,7 +128,7 @@ Once you've matching credentials in DPM, update the VMware server credentials us
     In the image, notice demovcenter_002 authenticates a production server, and demovcenter1.Contoso.com is now protected.
    ![Screenshot of select Credentials page.](./media/back-up-vmware/update-server-credential.png)
 
-#### Delete VMware server credentials
+# [Delete VMware server credentials](#tab/Delete)
 
 When you delete credentials, you're removing the credential from the list on the DPM server. DPM doesn't allow you to delete a credential that is used to authenticate a production server.
 
@@ -137,6 +137,7 @@ To delete a credential:
 1. In the DPM Administrator Console, select Management, select Production Servers, and in the tool ribbon, select Manage VMware Credentials.
 2. In the Manage Credentials page, select the credential. Make sure the credential isn't associated with any Production Servers.
 3. Select **Delete** to remove the credential from the list.
+---
 
 ### Set up secure communication between DPM and a VMware server
 
@@ -144,7 +145,7 @@ DPM communicates with the VMware server securely over an HTTPS channel. To creat
 
 To verify if there's a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you're using Chrome and you don't have a valid certificate, you see the strikethrough in the URL, like this example:
 
-![Screenshot of no secure communication channel on Chrome.](./media/back-up-vmware/secure-communication-chrome.png)
+:::image type="content" source="./media/back-up-vmware/secure-communication-chrome.png" alt-text="Screenshot of no secure communication channel on Chrome.":::
 
 If you're using Internet Explorer and you don't have a valid certificate, you see this message when you access the URL:
 
@@ -160,19 +161,24 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 
    ![Screenshot of open Certificate export wizard.](./media/back-up-vmware/add-new-certificate.png)
 
-3. In the **Certificate Export Wizard**, select **Next**, and on the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, then select **Next**.
-4. On the **File to Export** screen, type a name for your certificate and select **Next**.
-5. Select **Finish** to complete the **Certificate Export Wizard**.
-6. Locate the exported certificate. Right-click the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
+3. In the **Certificate Export Wizard**, select **Next**.
+4. On the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, and then select **Next**.
+5. On the **File to Export** screen, enter a name for your certificate and select **Next**.
+6. Select **Finish** to complete the **Certificate Export Wizard**.
+7. Locate the exported certificate. Right-click the certificate and select **Install Certificate**.
 
     ![Screenshot of click install Certificate.](./media/back-up-vmware/install-certificate.png)
-7. In the **Certificate Import wizard**, select **Local Machine** and then select **Next**.
-8. To find the location where you want to place the certificate, on the **Certificate Store** screen, select **Place all certificates in the following store** and select **Browse**.
-9. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
-  ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
-10. Select **Next** and then select **Finish** to import the certificate successfully.
-11. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
-  ![Screenshot of verify connection page.](./media/back-up-vmware/secure-communication-established.png)
+
+8. In the **Certificate Import wizard**, select **Local Machine** and then select **Next**.
+9. To find the location where you want to place the certificate, on the **Certificate Store** screen, select **Place all certificates in the following store** and select **Browse**.
+10. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
+
+    ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
+
+11. Select **Next** and then select **Finish** to import the certificate successfully.
+12. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
+
+    ![Screenshot of verify connection page.](./media/back-up-vmware/secure-communication-established.png)
 
 ### Add a new user account in VMware server
 
@@ -255,9 +261,9 @@ The recommended steps for assigning these privileges:
 
 1. In the vSphere Web Client, from the **Navigator** menu, select **Administration** > **Roles**.
 2. From the **Roles provider** dropdown menu, select the vCenter Server to which the role applies.
-3. On the **Roles** pane, select '+' to open the **Create Role** dialog and create a role.
+3. On the **Roles** pane, select '**+**' to open the **Create Role** dialog and create a role.
     ![Screenshot of create a new role page.](./media/back-up-vmware/create-new-role-dialog.png)
-4. Name the role, **BackupAdminRole**.
+4. Name the role **BackupAdminRole**.
 5. Select the privileges (identified in the preceding bulleted list) for the role and select **OK**.
 
 #### Create a new user, for example, BackupAdmin
@@ -266,7 +272,7 @@ When you create a user, that user must be in the same domain as the objects you 
 
 1. In the vSphere Web Client, on the **Navigator** menu, select **Administration**.
 2. In the **Administration** menu, select **Users and Groups**.
-3. To create a new user, on the **Users** tab, select '+' to open the **New User** page.
+3. To create a new user, on the **Users** tab, select '**+**' to open the **New User** page.
 4. Provide a **User name** and **password** for the role. Use BackupAdmin as the User name. Additional information is optional.
 
 #### Assign the role, BackupAdminRole, to the user, BackupAdmin
@@ -305,11 +311,13 @@ If your organization doesn't want to use secure communication protocol (HTTPS), 
 
 1. Copy and paste the following text into a .txt file.
 
-   `Windows Registry Editor Version 5.00`
+   ```
+   Windows Registry Editor Version 5.00
 
-   `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]`
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]
 
-   `"IgnoreCertificateValidation"=dword:00000001`
+   "IgnoreCertificateValidation"=dword:00000001"
+    ```
 
 2. Save the file with the name, **DisableSecureAuthentication.reg**, to your DPM server.
 3. Double-click the file to activate the registry entry.
@@ -330,7 +338,7 @@ In large VMware deployments, a single vCenter server can manage thousands of VMs
 
 ![Screenshot of conceptual diagram of a scale-out farm.](./media/back-up-vmware/scale-out-protection-diagram.png)
 
-### Backing up virtual machines to a disk, tape, or cloud
+### Back up virtual machines to a disk, tape, or cloud
 
 DPM can back up VMware VMs to disk, tape, and Azure cloud. You can specify the protection method while creating the new Protection Group.
 
@@ -341,7 +349,7 @@ DPM provides application-consistent backups of Windows VMs and file-consistent b
 ### Back up virtual machine to Tape
 
 > [!NOTE]
-> Applicable to DPM 2019 and later
+> Back up of virtual machines to tape is applicable for DPM 2019 and later.
 
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 and later supports both OLR (Original Location Recovery) and ALR (Alternate Location Recovery) for restoring the protected VM.
 
@@ -358,12 +366,13 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 1. In the Administrator Console, select **Protection**.
 2. On the tool ribbon, select **New** to open the **Create New Protection Group** wizard.
 3. In the **Select Protection Group Type** screen, select **Servers** and then select **Next**.
+
     ![Screenshot of create new protection group.](./media/back-up-vmware/create-new-protection-group-wizard.png)
 4. In the **Select Group Members** screen, expand the **Available members** folders and select the folders to protect and select **Next**.
     Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server can't be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
 
     ![Screenshot of select members for the new protection group.](./media/back-up-vmware/select-group-members.png)
-5. On the **Select Data Protection Method** screen, type a **Protection group name** and then select the protection method.
+5. On the **Select Data Protection Method** screen, enter a **Protection group name** and then select the protection method.
     For protection method, you can choose: short-term protection to a hard drive, long-term backup to tape, or online protection to the cloud. Once you've selected your protection method, select **Next**.
 
     If you've a standalone tape or tape library connected to the DPM server, you'll be able to select **I want long-term protection using tape**.
@@ -373,12 +382,12 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 
 7. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**,  specify how often backups to tape should run. The frequency is based on the retention range you've specified:
     -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
-    -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
 
-On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
+    On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
 
 8. On the **Review Disk Allocation** screen, recommended disk allocations are displayed. Recommendations are based on the retention range, the type of workload, and the size of the protected data. Select **Next**.
 9. On the **Choose Replica Creation Method** screen, specify how the initial replication of data in the protection group is performed. If you choose to replicate over the network, we recommend you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
@@ -396,13 +405,14 @@ The Status screen appears and gives you an update on the creation of your protec
 This section explains how to use DPM to restore VMware VM [recovery points](/previous-versions/system-center/system-center-2012-R2/jj627975(v=sc.12)). For an overview on using DPM to recover data, see [Recover protected data](/previous-versions/system-center/system-center-2012-R2/jj628056(v=sc.12)). In the DPM Administrator Console, there are two ways to find recoverable data: search or browse. When recovering data, you may or may not want to restore data or a VM to the same location. For this reason, DPM supports these three recovery options for VMware VM backups.
 
 - **Original location recovery (OLR)** - Use OLR to restore a protected VM to its original location. You can restore a VM to its original location only if no disks have been added or deleted since the backup occurred. If disks have been added or deleted, you must use alternate location recovery.
-- **Alternate location recovery (ALR)** - When the original VM is missing or you don't want to disturb the original VM, recover the VM to an alternate location. To recover a VM to an alternate location, you must provide the location of an ESXi host, resource pool, folder, and the storage datastore and path. To help differentiate the restored VM from the original VM, DPM appends "-Recovered" to the name of the VM.
+- **Alternate location recovery (ALR)** - When the original VM is missing or you don't want to disturb the original VM, recover the VM to an alternate location. To recover a VM to an alternate location, you must provide the location of an ESXi host, resource pool, folder, and the storage datastore and path. To help differentiate the restored VM from the original VM, DPM appends **-Recovered** to the name of the VM.
 - **Individual file location recovery (ILR)** - If the protected VM is a Windows Server VM, individual files/folders inside the VM can be recovered using the ILR capability of the DPM. To recover individual files, see the procedure later in this article.
 
 ### Restore a recovery point
 
 1. In the DPM Administrator Console, select **Recovery** view.
 2. Using the Browse pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
+
     ![Screenshot of open recovery points panel.](./media/back-up-vmware/recovery-points-panel.png)
 3. In the **Recovery points for** field, use the calendar and dropdown menus to select a date when a recovery point was taken. Calendar dates in bold have available recovery points.
 4. On the tool ribbon, select **Recover** to open the **Recovery Wizard**.
@@ -439,6 +449,7 @@ You can restore individual files from a protected VM recovery point. This featur
     If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
 7. On the **Select Recovery Type** screen, select **Next**. You can only recover your file(s) or folder(s) to a network folder.
 8. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
+
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
@@ -452,9 +463,9 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-Key Path: Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+**Key Path:** *Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare*
 
-Key Type: DWORD (32-bit) value.
+**Key Type:** DWORD (32-bit) value.
 
 > [!NOTE]
 >  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
@@ -471,7 +482,7 @@ DPM 2022 supports restore of more than one VMware VMs protected from same vCente
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.
 
-**Key Path**: HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs
+**Key Path**: *HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs*
 
 **32 Bit DWORD**: VMware
 
