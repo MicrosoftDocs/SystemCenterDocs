@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 23/06/2023
+ms.date: 06/23/2023
 ms.custom: na, UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager
