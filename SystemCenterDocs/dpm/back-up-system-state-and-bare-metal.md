@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 12/19/2022
+ms.date: 06/20/2023
 title: Back up system state and bare metal
 ms.technology: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -41,7 +41,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 |----------|---------|---------------------------|------------------------------------|-------|
 |**File data**<br /><br />Regular data backup<br /><br />BMR/system state backup|Lost file data|Y|N|N|
 |**File data**<br /><br />DPM backup of file data<br /><br />BMR/system state backup|Lost/damaged operating system|N|Y|Y|
-|**File data**<br /><br />DPM backup of file data<br /><br />BMR/system state backup|Lost server (data volumes intact|N|N|Y|
+|**File data**<br /><br />DPM backup of file data<br /><br />BMR/system state backup|Lost server (data volumes intact)|N|N|Y|
 |**File data**<br /><br />DPM backup of file data<br /><br />BMR/system state backup|Lost server (data volumes lost)|Y|No|Yes (BMR followed by regular recovery of backed up file data)|
 |**SharePoint data**:<br /><br />DPM backup of farm data<br /><br />BMR/system state backup|Lost site, lists, list items. documents|Y|N|N|
 |**SharePoint data**:<br /><br />DPM backup of farm data<br /><br />BMR/system state backup|Lost or damaged operating system|N|Y|Y|
@@ -51,13 +51,13 @@ This table summarizes what you can back up and recover. You can see detailed inf
 |Hyper-V<br /><br />DPM backup of Hyper-V host or guest<br /><br />BMR/system state backup of host|Lost Hyper-V host (VMs intact)|N|N|Y|
 |Hyper-V<br /><br />DPM backup of Hyper-V host or guest<br /><br />BMR/system state backup of host|Lost Hyper-V host (VMs lost)|N|N|Y<br /><br />BMR recovery followed by regular DPM recovery|
 |SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost app data|Y|N|N|
-|SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost or damaged operating system|N|y|Y|
+|SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost or damaged operating system|N|Y|Y|
 |SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost server (database/transaction logs intact)|N|N|Y|
 |SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost server (database/transaction logs lost)|N|N|Y<br /><br />BMR recovery followed by regular DPM recovery|
 
 ## How system state backup works
 
-1.  When a system state backup runs, DPM communicates with WSB to request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. This is the drive WSB will use to do backups to.
+1.  When a system state backup runs, DPM communicates with WSB to request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. WSB will use this drive for backups.
 
 2.  You can customize the drive that DPM uses for the system state backup. To do this on the protected server, go to *drive*:\Program Files\Microsoft Data Protection Manager\DPM\Datasources. Open the PSDataSourceConfig.XML file for editing. Change the \<FilesToProtect\> value for the drive letter. Save and close the file. If a protection group protects the computer's system state, run a consistency check. If the consistency check generates an alert, select **Modify protection group** link in the alert, and then step through the wizard. After finishing, run another consistency check.
 
@@ -75,7 +75,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 2.  DPM server calls WSB and shares out the replica volume for that BMR backup. In this case, it doesn't tell WSB to use the drive with the most free space, but instead to use the share created for the job.
 
-3.  When the backup finishes, the file is transferred to the DPM server. Logs are stored in C:\Windows\Logs\WindowsServerBackup.
+3.  When the backup finishes, the file is transferred to the DPM server. Logs are stored in *C:\Windows\Logs\WindowsServerBackup*.
 
 ## Prerequisites and limitations
 
@@ -91,7 +91,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 -   For BMR protection (unlike system state protection), DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. The job for this doesn't appear in the DPM Jobs view.
 
-- If you use Modern Backup Storage and want to increase the BMR default replica size > 30 GB, use the registry key: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD).
+- If you use Modern Backup Storage and want to increase the BMR default replica size > 30 GB, use the registry key: `HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)`.
 
 - If you use Modern Backup Storage, SystemState and BMR backups consume more storage (than legacy storage) due to ReFS cloning. Each SystemState or BMR backup is a full recovery point. To mitigate this storage consumption, you may want to:
   - schedule fewer System State or BMR recovery points,
@@ -158,7 +158,7 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In Frequency of backup, specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, biweekly, monthly, quarterly, half-yearly, or yearly.
 
     -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
@@ -189,8 +189,11 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 ## Recover system state or BMR
 You can recover BMR or system state to a network location. If you've backed up BMR, use the Windows Recovery Environment (WinRE) to start up your system and connect it to the network. Then use Windows Server Backup to recover from the network location. If you've backed up system state, just use Windows Server Backup to recover from the network location.
 
-### Restore BMR
-Run recovery on the DPM server:
+Select the required tab for the steps to restore BMR or system state:
+
+# [Restore BMR](#tab/RestoreBMR)
+
+**Run recovery on the DPM server:**
 
 1.  In the Recovery pane, find the machine you want to recover > Bare Metal Recovery.
 
@@ -204,15 +207,15 @@ Run recovery on the DPM server:
 
 6.  Set up notification options and select **Recover** on the **Summary** page.
 
-Set up the share location:
+**Set up the share location:**
 
 1.  In the restore location, navigate to the folder that contains the backup.
 
 2.  Share the folder above WindowsImageBackup so that the root of the shared folder is the WindowsImageBackup folder. If it isn't, restore won't find the backup. To connect using WinRE, you'll need a share that you can access in WinRE with the correct IP address and credentials.
 
-Restore the system:
+**Restore the system:**
 
-1.  Start the machine  for which you want to restore the image to using the Windows DVD to match the system you're restoring.
+1.  Start the machine for which you want to restore the image to using the Windows DVD to match the system you're restoring.
 
 2.  On the first screen, verify language/locale settings. On the **Install** screen, select **Repair your computer**.
 
@@ -223,8 +226,8 @@ Restore the system:
 
 5.  In **Choose how to restore the backup**, select **Format and repartition disks**. In the next screen, verify settings and select **Finish** to begin the restore. Restart as required.
 
-### Restore system state
-Run recovery on the DPM server:
+# [Restore system state](#tab/RestoreSystemState)
+**Run recovery on the DPM server:**
 
 1.  In the Recovery pane, find the machine you want to recover > Bare Metal Recovery.
 
@@ -238,7 +241,7 @@ Run recovery on the DPM server:
 
 6.  Set up notification options and select **Recover** on the **Summary** page.
 
-Run Windows Server Backup
+**Run Windows Server Backup:**
 
 1.  Select **Actions** > **Recover** > **This Server** > **Next.**
 
@@ -248,6 +251,7 @@ Run Windows Server Backup
 
 4.  In **Confirmation**, select **Recover**. You'll need to restart the server after the restore.
 
-5.  You can also run a system state restore from the command line. To do this, start Windows Server Backup on the machine you want to recover. From a command line, type: **wbadmin get versions -backuptarget <servername\sharename>** to get the version identifier.
+5.  You can also run a system state restore from the command line. To do this, start Windows Server Backup on the machine you want to recover. From a command line, enter: **wbadmin get versions -backuptarget <servername\sharename>** to get the version identifier.
 
-    Use the version identifier to start system state restore. At the command line, type: **wbadmin start systemstaterecovery -version:\<versionidentified\> -backuptarget:<servername\sharename>** Confirm that you want to start the recovery. You can see the process in the command window. A restore log is created. You'll need to restart the server after the restore.
+    Use the version identifier to start system state restore. At the command line, enter: **wbadmin start systemstaterecovery -version:\<versionidentified\> -backuptarget:<servername\sharename>**, and confirm that you want to start the recovery. You can see the process in the command window. A restore log is created. You'll need to restart the server after the restore.
+---
