@@ -21,6 +21,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 
 - Added a new "Product Version Compliance" monitor which is capable to check the product version number  of the current SQL Server Reporting Services or Power BI Report Server to determine that instance is up-to-date
 - Added new [Operations Manager console task](reporting-services-management-pack-monitoring-configuration.md#tasks-overview), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
+- Extended "Failed Subscriptions" unit monitor to a 3-level state. Now the monitor raises a critical alert if the SQL Server Reporting Services or Power BI Report Server has subscriptions or scheduled refresh plans with failed statuses, otherwise, it raises a warning alert if the statuses are unknown (other than successful and failed).
 - Updated display strings
 
 ## December 2022 - 7.0.42.0 RTM
