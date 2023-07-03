@@ -61,7 +61,7 @@ Follow these steps:
 5.	In the **Select Users** or **Groups** dialog, find the user you wish to add and select **OK**.
 6.	Select **OK** in the **Log on as a service Properties** to save the changes.
 
-        :::image type="content" source="./media/enable-service-logon-sm/enable-service-logon-inline.png" alt-text="Screenshot showing enable service logon permission." lightbox="./media/enable-service-logon-sm/enable-service-logon-expanded.png":::
+    :::image type="content" source="./media/enable-service-logon-sm/enable-service-logon-inline.png" alt-text="Screenshot showing enable service logon permission." lightbox="./media/enable-service-logon-sm/enable-service-logon-expanded.png":::
 
 ##  Change logon type from a default value
 
