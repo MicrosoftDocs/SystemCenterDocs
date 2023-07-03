@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 10/13/2020
+ms.date: 07/03/2023
 ms.technology: service-manager
 ms.topic: article
 ms.custom: intro-deployment, UpdateFrequency3
@@ -19,7 +19,7 @@ ms.custom: intro-deployment, UpdateFrequency3
 
 ::: moniker-end
 
-The sections in this article help you deploy System Center - Service Manager in one of several different scenarios. The scenarios range from a simple, one\-computer scenario to a four\-computer scenario that is designed to support production\-type environments. In addition, this guide shows you how to register a Service Manager management group with the Service Manager data warehouse so that you can generate reports. You've the option of deploying the Self-Service Portal so you can provide access to Service Manager through a web browser. To improve performance and provide for redundancy, you can deploy additional secondary Service Manager management servers.  
+The sections in this article help you deploy System Center - Service Manager in one of several different scenarios. The scenarios range from a simple, one\-computer scenario to a four\-computer scenario that is designed to support production\-type environments. In addition, this article shows you how to register a Service Manager management group with the Service Manager data warehouse so that you can generate reports. You have the option of deploying the Self-Service Portal so you can provide access to Service Manager through a web browser. To improve performance and provide for redundancy, you can deploy additional secondary Service Manager management servers.  
 
 > [!NOTE]  
 > - It's assumed that you're installing Service Manager on a computer where no previous version of Service Manager is installed.
@@ -61,7 +61,7 @@ You can set the default language for a new SQL sign-in account or change the def
 
 ## Avoid using Turkish language collations with Service Manager
 
-This section applies only if you're considering deploying a Service Manager database or data warehouse database to a SQL&nbsp;Server that has been configured to use a Turkish language collation.  
+This section applies only if you're considering deploying a Service Manager database or data warehouse database to a SQL Server that has been configured to use a Turkish language collation.  
 
  The installation of a Service Manager database isn't supported on a computer running SQL&nbsp;Server that uses a Turkish language collation. This is true for both the Service Manager and data warehouse databases. If you specify a computer running SQL&nbsp;Server that contains a Turkish language collation during the deployment of a Service Manager database, the following warning message appears.
 
@@ -73,14 +73,14 @@ This section applies only if you're considering deploying a Service Manager data
 
 During installation, System Center - Service Manager Setup performs prerequisite checks for software and hardware requirements and returns one of the three following states:  
 
--   **Success**: Setup finds that all software and hardware requirements are met, and installation proceeds.  
+-   **Success**: Setup finds that all software and hardware requirements are met, and the installation proceeds.  
 
--   **Warning**: Setup finds that all software requirements are met, but the computer doesn't meet minimum hardware requirements. Or the requirements for optional software are missing. Installation proceeds.  
+-   **Warning**: Setup finds that all software requirements are met, but the computer doesn't meet the minimum hardware requirements or the requirements for optional software are missing. The installation proceeds.  
 
--   **Failure**: At least one software or hardware requirement isn't met, and installation can't proceed. An **Installation cannot continue** message appears.  
+-   **Failure**: At least one software or hardware requirement isn't met, and the installation can't proceed. An **Installation cannot continue** message appears.  
 
 > [!NOTE]  
->  On the **Installation cannot continue** screen, there is no option to restart the prerequisite checker. You must select **Cancel** to restart the installation process. Ensure that the computer meets all the hardware and software requirements before you run Setup again.
+>  On the **Installation cannot continue** screen, there's no option to restart the prerequisite checker. You must select **Cancel** to restart the installation process. Ensure that the computer meets all the hardware and software requirements before you run Setup again.
 
 ## Next steps
 

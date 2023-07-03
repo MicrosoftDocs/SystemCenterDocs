@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/10/2022
+ms.date: 07/03/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -49,20 +49,19 @@ If required accounts aren't provided with service logon permission, then *monito
 
 Here's a sample error:
 
-![Screenshot of identify accounts that need service logon permission.](./media/enable-service-logon-sm/identify-logon-type.png)
+:::image type="content" source="./media/enable-service-logon-sm/identify-logon-type.png" alt-text="Screenshot of identify accounts that need service logon permission.":::
 
 ## Enable service log on through a local group policy
 Follow these steps:
 
 1.	Sign in with administrator privileges to the computer from which you want to provide **Log on as Service** permission to accounts.
-2.	Go to **Administrative Tools**, select **Local Security Policy**.
-3.	Expand **Local Policy**, select **User Rights Assignment**. In the right pane, right-click **Log on as a service** and select **Properties**.
+2.	Go to **Administrative Tools** and select **Local Security Policy**.
+3.	Expand **Local Policy** and select **User Rights Assignment**. In the right pane, right-click **Log on as a service** and select **Properties**.
 4.	Select **Add User** or **Group** option to add the new user.
 5.	In the **Select Users** or **Groups** dialog, find the user you wish to add and select **OK**.
 6.	Select **OK** in the **Log on as a service Properties** to save the changes.
 
-    ![Screenshot showing enable service logon permission.](./media/enable-service-logon-sm/enable-service-logon.png)
-
+        :::image type="content" source="./media/enable-service-logon-sm/enable-service-logon-inline.png" alt-text="Screenshot showing enable service logon permission." lightbox="./media/enable-service-logon-sm/enable-service-logon-expanded.png":::
 
 ##  Change logon type from a default value
 
@@ -74,8 +73,8 @@ You can change the default logon type by using the following steps:
 1.	Sign in with administrator privileges to the computer from which you want to provide **Log on as Service** permission to accounts.
 2.	Run gpedit.msc
 3.	Under **Computer Configuration**, expand **Administrative Templates**.
-4.	Click **System Center – Operations Manager**.
-5.	Right-click **Monitoring Action Account Logon Type**, click **Edit**, select **Enabled**.
+4.	Select **System Center – Operations Manager**.
+5.	Right-click **Monitoring Action Account Logon Type**, select **Edit**, and select **Enabled**.
 7.	Choose **Logon Type** from the drop-down menu.
 
-    ![Screenshot showing change service logon permission.](./media/enable-service-logon-sm/change-logon-type.png)
+    :::image type="content" source="./media/enable-service-logon-sm/change-logon-type-inline.png" alt-text="Screenshot showing change service logon permission." lightbox="./media/enable-service-logon-sm/change-logon-type-expanded.png":::
