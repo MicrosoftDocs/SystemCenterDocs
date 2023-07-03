@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM managed instance to mon
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 06/29/2023
+ms.date: 07/03/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -395,7 +395,7 @@ To create a SCOM managed instance, follow these steps:
            >[!Note]
            >Ensure to associate a NAT gateway with a chosen subnet. The presence of a NAT gateway is necessary for the SCOM Managed Instance (preview) to retrieve the components required for both installation and auto upgrade scenarios.
     - **SCOM managed instance interface**:
-        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview). The IP must be in the IPv4 format and needs to be created in your routing table.
+        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview). Ensure that the IP is in the IPv4 format, and create it in your routing table.
         - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step. The DNS name will be mapped to the Static IP that is defined above.
     - **gMSA details**:
         - **Computer group name**: Enter the name of the computer group that you create after creation of the gMSA account.
@@ -410,7 +410,7 @@ To create a SCOM managed instance, follow these steps:
 1. Under **Validate**, all the prerequisites are validated. It takes 10 minutes to complete the validation.
      :::image type="Validate tab" source="media/create-operations-manager-managed-instance/validate.png" alt-text="Screenshot that shows Validate tab.":::
 
-     After the completion the validation, you can check the results and revalidate if needed.
+     After the validation is complete, check the results and revalidate if needed.
 
      :::image type="Validation complete" source="media/create-operations-manager-managed-instance/validation-complete.png" alt-text="Screenshot that shows Validation complete.":::
 
