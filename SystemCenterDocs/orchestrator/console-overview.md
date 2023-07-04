@@ -59,9 +59,9 @@ When you select a runbook on the navigation tree or select a runbook link, the a
 
 Below this panel is a tabbed view:
 
-- View, for the Runbook graphical image.
-- Jobs, for listing the active and completed jobs of the runbook (see below).
-- Instances, for listing active and completed instances of the runbook across all its Jobs (see below).
+- **View**: For the Runbook graphical image.
+- **Jobs**: For listing the active and completed jobs of the runbook (see below).
+- **Instances**: For listing active and completed instances of the runbook across all its Jobs (see below).
 
 :::image type="content" source="./media/console-overview-2022/runbook-jobs-2-inline.png" alt-text="Screenshot showing runbook jobs." lightbox="./media/console-overview-2022/runbook-jobs-2-expanded.png":::
 
@@ -155,9 +155,7 @@ The **Stop** button is shown on the Dashboard and the Job screen. Disappearing p
 
 1. Check the [browser’s developer console](/microsoft-edge/devtools-guide-chromium/overview) (Console tab), look for CORS errors (*blocked by CORS policy*).
 
-   [ ![Screenshot showing error console.](./media/console-overview-2022/error-console-inline.png) ](./media/console-overview-2022/error-console-expanded.png#lightbox)
-
-:::image type="content" source="./media/console-overview-2022/error-console-inline.png" alt-text="Screenshot showing error console." lightbox="./media/console-overview-2022/error-console-expanded.png":::
+    :::image type="content" source="./media/console-overview-2022/error-console-inline.png" alt-text="Screenshot showing error console." lightbox="./media/console-overview-2022/error-console-expanded.png":::
 
 
 2. If there are no CORS errors, check the **Event Viewer** logs (Application) on the Web API computer.
