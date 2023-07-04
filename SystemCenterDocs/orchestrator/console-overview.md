@@ -63,11 +63,11 @@ Below this panel is a tabbed view:
 - **Jobs**: For listing the active and completed jobs of the runbook (see below).
 - **Instances**: For listing active and completed instances of the runbook across all its Jobs (see below).
 
+You can select the rows in the Jobs view just like the ones on the Dashboard screen. Jobs that are running can be stopped using the buttons on the right of the running row.
+
 :::image type="content" source="./media/console-overview-2022/runbook-jobs-2-inline.png" alt-text="Screenshot showing runbook jobs." lightbox="./media/console-overview-2022/runbook-jobs-2-expanded.png":::
 
 :::image type="content" source="./media/console-overview-2022/runbook-instances-inline.png" alt-text="Screenshot showing runbook instances." lightbox="./media/console-overview-2022/runbook-instances-expanded.png":::
-
-You can select the rows in the Jobs view just like the ones on the Dashboard screen. Jobs that are running can be stopped using the buttons on the right of the running row.
 
 While this screen is active, you can choose a different runbook on the Navigation tree. This won't change the selected tab. You can quickly look at Jobs of different runbooks by selecting the jobs tab and navigating to the desired runbooks in the Navigation tree.
 
@@ -109,12 +109,12 @@ The top panel also has three navigation buttons:
 
 :::image type="runbook instance details" source="./media/console-overview-2022/runbook-instance-details-inline.png" alt-text="Screenshot showing runbook instance details." lightbox="./media/console-overview-2022/runbook-instance-details-expanded.png":::
 
+Below the panel, you see the runbook diagram. You can select each runbook activity to view activity outputs. An icon dedicated for each activity denotes the status of that activity. When you select any activity, an overlay is shown on the right that lists the activity’s outputs.
+
 :::image type="runbook details" source="./media/console-overview-2022/runbook-instance-details-1-inline.png" alt-text="Screenshot showing runbook details." lightbox="./media/console-overview-2022/runbook-instance-details-1-expanded.png":::
 
 >[!NOTE]
 > The job ID is the same, and since the second instance is still running, the job is also still running.
-
-Below the panel, you see the runbook diagram. You can select each runbook activity to view activity outputs. An icon dedicated for each activity denotes the status of that activity. When you select any activity, an overlay is shown on the right that lists the activity’s outputs.
 
 Since an activity may be executed more than once within an instance (because of looping), each execution of the Activity has a unique **Sequence number**. The overlay lets you choose the **Sequence #** using the dropdown on the top.
 
@@ -133,7 +133,7 @@ Navigate to the Runbook screen of the desired Runbook and select **Run**. An ove
 
 :::image type="content" source="./media/console-overview-2022/parameterized-run-inline.png" alt-text="Screenshot showing parameterized run." lightbox="./media/console-overview-2022/parameterized-run-expanded.png":::
 
-Only one of these servers will actually execute this Job. To execute a Runbook on many servers, you'll have to run those many number of Jobs and explicitly set the servers one-by-one.
+Only one of these servers will actually execute this Job. To execute a Runbook on many servers, you'll have to run those many number of Jobs and explicitly set the servers one by one.
 
 >[!NOTE]
 > Enter the parameters in the form, else the form won't be considered.
@@ -229,10 +229,10 @@ The **Events** workspace lets you view log events. By default, log events includ
 
 ## Start the Orchestration console in the Runbook Designer  
 
--  Select the **Orchestration Console** button on the toolbar.  
+Select the **Orchestration Console** button on the toolbar.  
 
-    > [!NOTE]  
-    > If the URL hasn't been set for the Orchestration console, you'll receive an error message. Use the following procedure to set the URL.  
+> [!NOTE]  
+> If the URL hasn't been set for the Orchestration console, you'll receive an error message. Use the following procedure to set the URL.  
 
 ## Set the Orchestration console URL in the Runbook Designer  
 
