@@ -35,7 +35,7 @@ This account is used to run the *MonitoringHost.exe* process (runs all the Workf
 >We recommend that you provide service logon permission to the accounts used by various SM connectors (AD, OM, SCO, CM, VMM, exchange connectors).
 >Service reporting account and analysis services accounts don't require service logon permission.
 
-## How to enable service logon
+## To enable service logon
 
 You can grant service logon permission through a domain policy or a local group policy.
 
@@ -75,6 +75,6 @@ You can change the default logon type by using the following steps:
 3.	Under **Computer Configuration**, expand **Administrative Templates**.
 4.	Select **System Center – Operations Manager**.
 5.	Right-click **Monitoring Action Account Logon Type**, select **Edit**, and select **Enabled**.
-7.	Choose **Logon Type** from the drop-down menu.
+7.	Choose **Logon Type** from the dropdown menu.
 
     :::image type="content" source="./media/enable-service-logon-sm/change-logon-type-inline.png" alt-text="Screenshot showing change service logon permission." lightbox="./media/enable-service-logon-sm/change-logon-type-expanded.png":::

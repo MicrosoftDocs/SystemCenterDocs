@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 07/03/2023
+ms.date: 10/13/2020
 ms.technology: service-manager
 ms.topic: article
 ms.custom: intro-deployment, UpdateFrequency3
