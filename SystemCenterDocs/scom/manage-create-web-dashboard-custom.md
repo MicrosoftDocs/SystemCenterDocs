@@ -947,7 +947,7 @@ var totalCounter =0;
 8. Select **Custom Widget** from the **Select Widget** dropdown list.
 9. In the Custom widget pane, select criteria for the widget adding the HTML code using one of the earlier examples to visualize monitoring data in one of the supported chart visualizations.
 
-    ![Screenshot showing Configure the Custom widget for dashboard.](./media/create-web-dashboard-custom/web-console-new-dashboard-custom.png)
+    :::image type="content" source="./media/create-web-dashboard-custom/web-console-new-dashboard-custom.png" alt-text="Screenshot showing Configure the Custom widget for dashboard.":::
 
 10. Complete the configuration by providing a **Name**, **Description**, and **Widget refresh interval** (default interval is 5 minutes) for the widget. Select **Save Widget** to save your new dashboard.  
 
