@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboard in Syste
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/04/2020
+ms.date: 07/05/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -153,9 +153,10 @@ The widget supports rendering monitoring data in the following chart types:
 - Stacked bar chart
 
 
-You can configure a chart type to present state, performance, and alert data.  For each example below, alerts from the Windows Computer group are returned for any severity, matching specific resolution states.
+You can configure a chart type to present state, performance, and alert data. For each example below, alerts from the Windows Computer group are returned for any severity, matching specific resolution states.
 
-### Bar chart (state data)
+# [Bar chart (state data)](#tab/Bar)
+
 The following HTML code demonstrates rendering a bar chart with state data.
 
 ```
@@ -238,7 +239,8 @@ The following HTML code demonstrates rendering a bar chart with state data.
 
 </html>
 ```
-### Spline chart (performance data)
+# [Spline chart (performance data)](#tab/Spline)
+
 The following HTML code demonstrates rendering a spline chart with performance data.
 
 ```
@@ -335,7 +337,8 @@ The following HTML code demonstrates rendering a spline chart with performance d
 </html>
 ```
 
-### Bar chart (alert data)
+# [Bar chart (alert data)](#tab/Bar alert)
+
 The following HTML code demonstrates rendering a bar chart with alert data.
 
 ```
@@ -409,7 +412,8 @@ The following HTML code demonstrates rendering a bar chart with alert data.
 
 </html>
 ```
-### Pie chart
+# [Pie chart](#tab/Pie)
+
 The following HTML code demonstrates rendering a pie chart with alert data.
 
 ```
@@ -491,7 +495,8 @@ The following HTML code demonstrates rendering a pie chart with alert data.
 </html>
 ```
 
-### 3D Pie chart
+# [3D Pie chart](#tab/3DPie)
+
 The following HTML code demonstrates rendering a 3D pie chart with alert data.
 
 ```
@@ -598,7 +603,8 @@ The following HTML code demonstrates rendering a 3D pie chart with alert data.
 </html>
 ```
 
-### Donut chart
+# [Donut chart](#tab/Donut)
+
 The following HTML code demonstrates rendering a donut chart with alert data.
 
 ```
@@ -684,7 +690,8 @@ animationEnabled: true,
 </html>
 ```
 
-### 3D Donut chart
+# [3D Donut chart](#tab/3DDonut)
+
 The following HTML code demonstrates rendering a 3D donut chart with alert data.
 
 ```
@@ -780,7 +787,7 @@ The following HTML code demonstrates rendering a 3D donut chart with alert data.
 </html>
 ```
 
-### Combination chart
+# [Combination chart](#tab/Combination)
 The following HTML code demonstrates creating a Combination chart to display alerts in a pie and spline chart.
 
 ```
@@ -909,6 +916,8 @@ var totalCounter =0;
 
 </html>
 ```
+---
+
 ## Add widget to dashboard
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
