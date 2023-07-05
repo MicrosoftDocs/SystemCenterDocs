@@ -8,7 +8,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jsuri
-ms.date: 07/04/2023
+ms.date: 07/05/2023
 author: jyothisuri
 manager: mkluck
 ---
@@ -28,7 +28,7 @@ The Orchestrator console is a Single Page App that helps you monitor and execute
 
 ## Navigation pane
 
-The Navigation pane on the left shows the **Runbook** and **Folders** tree, like the one shown on the **Runbook Designer**. Unlike the console in earlier versions, you can't select the *Folders*, but you can select the *Runbooks* and view their jobs and execute them.
+The Navigation pane on the left shows the **Runbook** and **Folders** tree, like the one shown on the **Runbook Designer**. Unlike the console in earlier versions, you can't select the *Folders*, but you select the *Runbooks* and view their jobs and execute them.
 
 The Navigation pane is always visible on all the screens to allow quick navigation to other runbooks and folders while remaining on the same screen.
 
@@ -60,8 +60,8 @@ When you select a runbook on the navigation tree or select a runbook link, the a
 Below this panel is a tabbed view:
 
 - **View**: For the Runbook graphical image.
-- **Jobs**: For listing the active and completed jobs of the runbook (see below).
-- **Instances**: For listing active and completed instances of the runbook across all its Jobs (see below).
+- **Jobs**: For the list of active and completed jobs of the runbook (see below).
+- **Instances**: For the list of active and completed instances of the runbook across all its Jobs (see below).
 
 You can select the rows in the Jobs view just like the ones on the Dashboard screen. Jobs that are running can be stopped using the buttons on the right of the running row.
 
@@ -109,12 +109,12 @@ The top panel also has three navigation buttons:
 
 :::image type="runbook instance details" source="./media/console-overview-2022/runbook-instance-details-inline.png" alt-text="Screenshot showing runbook instance details." lightbox="./media/console-overview-2022/runbook-instance-details-expanded.png":::
 
-Below the panel, you see the runbook diagram. You can select each runbook activity to view activity outputs. An icon dedicated for each activity denotes the status of that activity. When you select any activity, an overlay is shown on the right that lists the activity’s outputs.
-
 :::image type="runbook details" source="./media/console-overview-2022/runbook-instance-details-1-inline.png" alt-text="Screenshot showing runbook details." lightbox="./media/console-overview-2022/runbook-instance-details-1-expanded.png":::
 
 >[!NOTE]
 > The job ID is the same, and since the second instance is still running, the job is also still running.
+
+Below the panel, you see the runbook diagram. You can select each runbook activity to view activity outputs. An icon dedicated for each activity denotes the status of that activity. When you select any activity, an overlay is shown on the right that lists the activity’s outputs.
 
 Since an activity may be executed more than once within an instance (because of looping), each execution of the Activity has a unique **Sequence number**. The overlay lets you choose the **Sequence #** using the dropdown on the top.
 
@@ -248,7 +248,11 @@ In addition to viewing the current status of a runbook, you can also start and s
 
 When you stop a runbook, the runbook, all the jobs, and the all instances associated with the runbook are stopped.  
 
-### Start a runbook
+Select the required tab for steps to start, stop, or view the status of a runbook:
+
+# [Start a runbook](#tab/Start)
+
+Follow these steps to start a runbook:
 
 1.  Select **Runbooks** to open the **Runbooks** workspace.
 
@@ -267,7 +271,9 @@ When you stop a runbook, the runbook, all the jobs, and the all instances associ
 
 7.  Select **Start**.
 
-### Stop a runbook
+# [Stop a runbook](#tab/Stop)
+
+Follow these steps to stop a runbook:
 
 1.  Select **Runbooks** to open the **Runbooks** workspace.
 
@@ -281,7 +287,9 @@ When you stop a runbook, the runbook, all the jobs, and the all instances associ
 
 6.  If the runbook was started successfully, you receive a confirmation message that the job was stopped. If the runbook has no running jobs, you receive a message that no job was running.
 
-### View the status of a runbook in the Orchestration console
+# [View the status of a runbook](#tab/ViewStatus)
+
+Follow these steps to view the status of a runbook in the Orchestration console:
 
 1.  Select **Runbooks** to open the **Runbooks** workspace.
 
@@ -294,6 +302,8 @@ When you stop a runbook, the runbook, all the jobs, and the all instances associ
 5.  To view all the jobs that the runbook created, in the **Actions** pane, select **View Jobs**.
 
 6.  To view all the instances that the runbook created, in the **Actions** pane, select **View Instances**.
+
+---
 
 ## Stop jobs
 
