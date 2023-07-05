@@ -408,11 +408,13 @@ To create a SCOM managed instance, follow these steps:
     - **User managed identity**: For **User managed identity account**, provide a user managed identity with system admin privileges on the SQL MI and *Get* and *List* permissions on Key vault secrets that was selected in the **Basics** tab. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
 1. Under **Validate**, all the prerequisites are validated. It takes 10 minutes to complete the validation.
-     :::image type="Validate tab" source="media/create-operations-manager-managed-instance/validate.png" alt-text="Screenshot that shows Validate tab.":::
+
+     :::image type="Validate tab" source="media/create-operations-manager-managed-instance/validate-inline.png" alt-text="Screenshot that shows Validate tab." lightbox="media/create-operations-manager-managed-instance/validate-expanded.png":::
 
      After the validation is complete, check the results and revalidate if needed.
 
-     :::image type="Validation complete" source="media/create-operations-manager-managed-instance/validation-complete.png" alt-text="Screenshot that shows Validation complete.":::
+     :::image type="Validation complete" source="media/create-operations-manager-managed-instance/validation-complete-inline.png" alt-text="Screenshot that shows Validation complete." lightbox="media/create-operations-manager-managed-instance/validation-complete-expanded.png":::
+    
 
 1. Select **Next : Tags >**.
 1. Under **Tags**, enter the **Name, value** information, and then select the resource.
