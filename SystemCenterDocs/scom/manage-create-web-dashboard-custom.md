@@ -337,7 +337,7 @@ The following HTML code demonstrates rendering a spline chart with performance d
 </html>
 ```
 
-# [Bar chart (alert data)](#tab/Bar alert)
+# [Bar chart (alert data)](#tab/Alert)
 
 The following HTML code demonstrates rendering a bar chart with alert data.
 
