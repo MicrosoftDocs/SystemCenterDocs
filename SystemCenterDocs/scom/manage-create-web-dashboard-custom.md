@@ -13,7 +13,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to create a dashboard with the Custom widget in the Web console
+# Create a dashboard with the Custom widget in the Web console
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -26,10 +26,12 @@ In System Center Operations Manager, the Web console provides a monitoring inter
 ::: moniker range="sc-om-2019"
 
 >[!NOTE]
-> Operations Manager 2019 UR1 and later supports Cross-Site Request Forgery (CSRF) tokens to prevent CSRF attacks.  If you're using Operations Manager 2019 UR1 or later, you must initialize the CSRF token. HTML scripts don't work without the initialization of CSRF token.
+> Operations Manager 2019 UR1 and later supports Cross-Site Request Forgery (CSRF) tokens to prevent CSRF attacks. If you're using Operations Manager 2019 UR1 or later, you must initialize the CSRF token. HTML scripts don't work without the initialization of CSRF token.
 
 ## Initialize the CSRF token
+
 Required action, applicable for Operations Manager 2019 UR1 and later.
+
 1. In the HTML header of the dashboard, add the following code:
 ```
 var requestHeaders = {
@@ -58,8 +60,8 @@ var requestHeaders = {
 
 ::: moniker-end
 
-## Using the Operations Manager REST API reference
-Use the REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard. If you're new to REST API, take a look at the information on [getting started with this API](/rest/operationsmanager) if you haven't already seen it.
+## Use the Operations Manager REST API reference
+Use the REST API reference to learn about the available operations you can perform with the custom widget to present operational data in the dashboard. If you're new to REST API, take a look at the information on [getting started with this API](/rest/operationsmanager) if you haven't already seen it.
 
 ## Script structure
 A Custom Widget script has three major sections:
@@ -95,7 +97,7 @@ In order for the script to query and return data in the visualization, the **URL
 To scope the monitoring data for each data type, you can select a class to see all instances of that class, or to see only a subset of objects of the selected class, you can also include a group.  For example, to specify all objects of class Windows Server DC Computer, you would modify the property value for *classId*.
 
 >[!NOTE]
->This is only applicable to state data, not alert or performance.  For performance data, specify a group or monitored object.
+>This is only applicable to state data, not alert or performance. For performance data, specify a group or monitored object.
 
 ```
 <!DOCTYPE HTML>
@@ -155,9 +157,11 @@ The widget supports rendering monitoring data in the following chart types:
 
 You can configure a chart type to present state, performance, and alert data. For each example below, alerts from the Windows Computer group are returned for any severity, matching specific resolution states.
 
+Select the required tab to view the HTML code for the respective chart type:
+
 # [Bar chart (state data)](#tab/Bar)
 
-The following HTML code demonstrates rendering a bar chart with state data.
+The following HTML code demonstrates rendering a bar chart with state data:
 
 ```
 <!DOCTYPE HTML>
@@ -241,7 +245,7 @@ The following HTML code demonstrates rendering a bar chart with state data.
 ```
 # [Spline chart (performance data)](#tab/Spline)
 
-The following HTML code demonstrates rendering a spline chart with performance data.
+The following HTML code demonstrates rendering a spline chart with performance data:
 
 ```
 <!DOCTYPE HTML>
@@ -339,7 +343,7 @@ The following HTML code demonstrates rendering a spline chart with performance d
 
 # [Bar chart (alert data)](#tab/Alert)
 
-The following HTML code demonstrates rendering a bar chart with alert data.
+The following HTML code demonstrates rendering a bar chart with alert data:
 
 ```
 <!DOCTYPE HTML>
@@ -414,7 +418,7 @@ The following HTML code demonstrates rendering a bar chart with alert data.
 ```
 # [Pie chart](#tab/Pie)
 
-The following HTML code demonstrates rendering a pie chart with alert data.
+The following HTML code demonstrates rendering a pie chart with alert data:
 
 ```
 <!DOCTYPE HTML>
@@ -497,7 +501,7 @@ The following HTML code demonstrates rendering a pie chart with alert data.
 
 # [3D Pie chart](#tab/3DPie)
 
-The following HTML code demonstrates rendering a 3D pie chart with alert data.
+The following HTML code demonstrates rendering a 3D pie chart with alert data:
 
 ```
 <!DOCTYPE HTML>
@@ -605,7 +609,7 @@ The following HTML code demonstrates rendering a 3D pie chart with alert data.
 
 # [Donut chart](#tab/Donut)
 
-The following HTML code demonstrates rendering a donut chart with alert data.
+The following HTML code demonstrates rendering a donut chart with alert data:
 
 ```
 <!DOCTYPE HTML>
@@ -692,7 +696,7 @@ animationEnabled: true,
 
 # [3D Donut chart](#tab/3DDonut)
 
-The following HTML code demonstrates rendering a 3D donut chart with alert data.
+The following HTML code demonstrates rendering a 3D donut chart with alert data:
 
 ```
 <!DOCTYPE HTML>
@@ -788,7 +792,8 @@ The following HTML code demonstrates rendering a 3D donut chart with alert data.
 ```
 
 # [Combination chart](#tab/Combination)
-The following HTML code demonstrates creating a Combination chart to display alerts in a pie and spline chart.
+
+The following HTML code demonstrates creating a Combination chart to display alerts in a pie and spline chart:
 
 ```
 <!DOCTYPE HTML>
@@ -921,20 +926,23 @@ var totalCounter =0;
 ## Add widget to dashboard
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
-2. From the left pane in the Web console, select **+ New dashboard**.<br><br> ![Screenshot showing select New Dashboard in Web console.](./media/create-web-dashboard-alerts/web-console-new-dashboard-01.png)<br>
+2. From the left pane in the Web console, select **+ New dashboard**.
+
+    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-inline.png" alt-text="Screenshot showing select New Dashboard in Web console." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-expanded.png":::
+
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
 
-    ![Screenshot showing specify name and description for new dashboard.](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
+   :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-inline.png" alt-text="Screenshot showing specify name and description for new dashboard." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-expanded.png":::
 
 4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** dropdown list or you can save the dashboard by creating a new management pack by selecting **New** next to the **Management Pack** dropdown list and provide a name, description, and optionally a version number.
 
     ![Screenshot showing Specify name and description for new MP.](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
 
-5. When you've completed specifying where to save the new dashboard to, select **OK**.
+5. After you've specified where to save the new dashboard, select **OK**.
 6. Select **Save** after providing a name and description for the new dashboard.
 7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard**, and **View in fullscreen** options at the top of the page.
 
-    ![Screenshot showing New dashboard canvas.](./media/create-web-dashboard-alerts/web-console-new-dashboard-04.png)
+    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-inline.png" alt-text="Screenshot showing New dashboard canvas." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-expanded.png":::
 
 8. Select **Custom Widget** from the **Select Widget** dropdown list.
 9. In the Custom widget pane, select criteria for the widget adding the HTML code using one of the earlier examples to visualize monitoring data in one of the supported chart visualizations.
@@ -945,4 +953,4 @@ var totalCounter =0;
 
 After the widget has been created, it displays the output of the HTML code.
 
-![Screenshot showing Completed example of Tile widget in dashboard.](./media/create-web-dashboard-custom/web-console-new-dashboard-custom-01.png)
+:::image type="content" source="./media/create-web-dashboard-custom/web-console-new-dashboard-custom-01-inline.png" alt-text="Screenshot showing Completed example of Tile widget in dashboard." lightbox="./media/create-web-dashboard-custom/web-console-new-dashboard-custom-01-expanded.png":::
