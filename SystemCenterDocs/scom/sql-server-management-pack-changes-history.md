@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 06/14/2023
+ms.date: 7/5/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## June 2023 - 7.1.0.0 CTP
+## July 2023 - 7.2.0.0 RTM
 
 ### What's new
 
