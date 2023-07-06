@@ -168,13 +168,13 @@ To configure Linux log file monitoring, perform the following steps:
 
    You can enable the OMED service either from the Operations console or manually on the management server or gateway server.
 
-### Enable the OMED service from Operations console
+# [Enable the OMED service from Operations console](#tab/OpsConsole)
 
 1. From the Operations console, go to **Monitoring**>**Operations Manager**>**Management Server**>**Management Servers State**.
 2. Select the management server in the **Management Servers state**.
 3. From **Tasks**, select **Health Service Tasks**>**Enable System Center OMED Server**.
 
-### Enable the OMED service manually
+# [Enable the OMED service manually](#tab/Manually)
 You have two options when enabling the OMED service manually on the management server, [automatically via PowerShell](#PowerShellServiceStep) or [manually](#ManualServiceSteps).
 
 > #### <a name="PowerShellServiceStep"></a>Set automatically with PowerShell
@@ -188,29 +188,34 @@ You have two options when enabling the OMED service manually on the management s
 >   2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
 >   3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
 >   4. In the details pane, right-click **Service** and select **Start**.
-   
+---
+
 ### Add OMED Firewall Rule
 
 In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) [automatically via PowerShell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
 
-#### <a name="AutomaticFirewallRule"></a>Automatically add rule with PowerShell
+# [Automatically add rule with PowerShell](#tab/AutomaticFirewallRule)
+Follow these steps to automatically add rule with PowerShell:
 
 The following command allows you to automatically add the firewall rule:
 ```PowerShell
 Set-NetFirewallRule -DisplayName "System Center Operations Manager External DataSource Service" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8886
 ```
 
-#### <a name="ManualFirewallRule"></a>Manually add rule with Windows Firewall
+# [Manually add rule with Windows Firewall](#tab/ManualFirewallRule)
+Follow these steps to manually add rule with Windows Firewall:
+
 1. Open Windows Defender Firewall with Advanced Security.
-    1. Right click the Windows icon in your taskbar and select **Run**.
-    2. Type in the run box: `wf.msc` and Click OK.
+    1. Right-click the Windows icon in your taskbar and select **Run**.
+    2. Enter in the run box: `wf.msc` and click OK.
 2. Select **Inbound Rules**.
-3. Right click Inbound Rules and select: **New Rule...**
-4. Select **Port**, Click Next.
-5. Select **TCP** and select **Specific local ports:**. Type in `8886`.
-6. Select **Allow the connection**, Click Next.
+3. Right-click Inbound Rules and select: **New Rule...**
+4. Select **Port**, click Next.
+5. Select **TCP** and select **Specific local ports:**. Enter `8886`.
+6. Select **Allow the connection**, click Next.
 7. Select the Appropriate Profiles to apply the Firewall Rule (*Domain, Private, Public*).
-8. Type in the name box: `System Center Operations Manager External DataSource Service`, and Click Finish.
+8. Enter the name box: `System Center Operations Manager External DataSource Service`, and click Finish.
+---
 
 ## Assign a Client Certificate for OMSAgent
 
@@ -219,7 +224,9 @@ You have two options when assigning the client certificate for OMSAgent.
 1. [Link to the signed certificate](#LinkOMIAgentCertificate) from the OMI Agent.
 2. [Generate a client certificate manually](#GenerateOMSAgentCertificate) for the OMS Agent.
 
-### <a name="LinkOMIAgentCertificate"></a>1. Link OMI Agent Certificate to OMS Agent
+Select the required tab for steps to link to the signed certificate from the OMI Agent or generate a client certificate manually from the OMS Agent:
+
+# [Link OMI Agent Certificate to OMS Agent](#tab/LinkOMIAgentCertificate)
 
 1. Set ownership on the `omi.pem` and `omikey.pem` file to `omsagent:omiusers`:
       ```bash
@@ -240,7 +247,10 @@ You have two options when assigning the client certificate for OMSAgent.
       ln -s /etc/opt/omi/ssl/omikey.pem /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
       ```
 
-### <a name="GenerateOMSAgentCertificate"></a>2. Generate a Client Certificate for OMSAgent
+# [Generate a Client Certificate for OMS Agent](#tab/GenerateOMSAgentCertificate)
+
+Follow these steps to generate a client certificate for OMS Agent:
+
 1. Generate the certificate and key to the ***omsagent*** folder: 
    ```bash
    # Generate Certificate to omsagent Folder
@@ -266,6 +276,7 @@ You have two options when assigning the client certificate for OMSAgent.
    # Change owner of the scom-key file
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
    ```
+---
 
 ## Create Fluentd configuration file
 
