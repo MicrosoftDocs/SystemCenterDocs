@@ -35,11 +35,12 @@ System Center Operations Manager Web console provides a monitoring interface for
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 2. From the left pane in the Web console, select **+ New dashboard**.
 
-    ![Screenshot showing select New Dashboard in Web console.](./media/create-web-dashboard-alerts/web-console-new-dashboard-01-inline.png)
+   :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-inline.png" alt-text="Screenshot showing select New Dashboard in Web console." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-expanded.png":::
 
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
 
-    ![Screenshot showing Specify name and description for new dashboard.](./media/create-web-dashboard-alerts/web-console-new-dashboard-02-inline.png)
+
+    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-inline.png" alt-text="Screenshot showing specify name and description for new dashboard." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-expanded.png":::
 
 4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** dropdown list or you can save the dashboard by creating a new management pack by selecting **New** next to the **Management Pack** dropdown list and provide a name, description, and optionally a version number.
 
@@ -49,7 +50,7 @@ System Center Operations Manager Web console provides a monitoring interface for
 6. Select **Save** after providing a name and description for the new dashboard.
 7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard**, and **View in fullscreen** options on the top of the page.
 
-    ![Screenshot showing New dashboard canvas.](./media/create-web-dashboard-alerts/web-console-new-dashboard-04-inline.png)
+   :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-inline.png" alt-text="Screenshot showing New dashboard canvas." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-expanded.png":::
 
 8. Select **State Widget** from the **Select Widget** dropdown list.
 9. In the State widget pane, select scope for the widget by selecting either **Groups** or **Class**.
