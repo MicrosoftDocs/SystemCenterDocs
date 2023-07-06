@@ -474,7 +474,7 @@ This example processes events with tags matching **System Center Operations Mana
 ```
 
 > [!NOTE]
-> To disable Server Authentication on the Linux computers that are using Fluentd communication, add a parameter  **enable\_server\_auth false**  to the Operations Manager plugin for Fluentd, such as the following:
+> To disable Server Authentication on the Linux computers that are using Fluentd communication, add a parameter **enable\_server\_auth false** to the Operations Manager plugin for Fluentd, such as the following:
 
 ```
 <match System Center Operations Manager.log.** System Center Operations Manager.event>
