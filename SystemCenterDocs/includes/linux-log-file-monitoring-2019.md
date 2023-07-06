@@ -361,7 +361,7 @@ Takes up to 20 input patterns. Sends an event to Operations Manager whenever any
 </filter>
 ```
 
-# [Exclusive match](#tab/Exclusive)
+# [Exclusive match](#tab/ExclusiveMatch)
 
 Takes two input patterns. Sends an event to Operations Manager when a single record matches pattern 1 but doesn't match pattern 2.
 
