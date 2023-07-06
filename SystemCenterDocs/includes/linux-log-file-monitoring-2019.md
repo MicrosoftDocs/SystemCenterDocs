@@ -341,6 +341,8 @@ There are six filter plugins for log file monitoring described here. Use one or 
 - Exclusive correlation: filter_System Center Operations Manager_excl_correlation
 - Operations Manager converter: filter_System Center Operations Manager_converter
 
+Select the required tab to copy the code for the respective filter plugin:
+
 # [Simple match](#tab/Simple)
 
 Takes up to 20 input patterns. Sends an event to Operations Manager whenever any pattern is matched.
