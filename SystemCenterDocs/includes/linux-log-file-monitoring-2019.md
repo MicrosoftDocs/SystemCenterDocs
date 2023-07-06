@@ -192,7 +192,7 @@ You have two options when enabling the OMED service manually on the management s
 
 ### Add OMED Firewall Rule
 
-In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) [automatically via PowerShell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
+In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) automatically via PowerShell or manually.
 
 # [Automatically add rule with PowerShell](#tab/AutomaticFirewallRule)
 Follow these steps to automatically add rule with PowerShell:
@@ -221,8 +221,8 @@ Follow these steps to manually add rule with Windows Firewall:
 
 You have two options when assigning the client certificate for OMSAgent.
 
-1. [Link to the signed certificate](#LinkOMIAgentCertificate) from the OMI Agent.
-2. [Generate a client certificate manually](#GenerateOMSAgentCertificate) for the OMS Agent.
+1. Link to the signed certificate from the OMI Agent.
+2. Generate a client certificate manually for the OMS Agent.
 
 Select the required tab for steps to link to the signed certificate from the OMI Agent or generate a client certificate manually from the OMS Agent:
 
@@ -334,7 +334,14 @@ The  **filter**  directive has the same syntax as **Match** but allows more comp
 
 There are six filter plugins for log file monitoring described here. Use one or more of these filters to define the events that you want to collect from your log file.
 
-#### Simple match: filter_System Center Operations Manager_simple_match
+- Simple match: filter_System Center Operations Manager_simple_match
+- Exclusive match: filter_System Center Operations Manager_excl_match
+- Repeated correlation: filter_System Center Operations Manager_repeated_cor
+- Correlated match: filter_System Center Operations Manager_cor_match
+- Exclusive correlation: filter_System Center Operations Manager_excl_correlation
+- Operations Manager converter: filter_System Center Operations Manager_converter
+
+# [Simple match](#tab/Simple)
 
 Takes up to 20 input patterns. Sends an event to Operations Manager whenever any pattern is matched.
 
@@ -354,7 +361,7 @@ Takes up to 20 input patterns. Sends an event to Operations Manager whenever any
 </filter>
 ```
 
-#### Exclusive match: filter_System Center Operations Manager_excl_match
+# [Exclusive match](#tab/Exclusive)
 
 Takes two input patterns. Sends an event to Operations Manager when a single record matches pattern 1 but doesn't match pattern 2.
 
@@ -367,7 +374,7 @@ Takes two input patterns. Sends an event to Operations Manager when a single rec
 </filter>
 ```
 
-#### Repeated correlation: filter_System Center Operations Manager_repeated_cor
+# [Repeated correlation](#tab/Repeated)
 
 Takes three inputs: a patterns, a time interval, and  number of occurrences. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
@@ -381,7 +388,7 @@ Takes three inputs: a patterns, a time interval, and  number of occurrences. Whe
 </filter>
 ```
 
-#### Correlated match: filter_System Center Operations Manager_cor_match
+# [Correlated match](#tab/Correlated)
 
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's a match for the second pattern before the timer ends.
 
@@ -395,7 +402,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 </filter>
 ```
 
-#### Exclusive correlation: filter_System Center Operations Manager_excl_correlation
+# [Exclusive correlation](#tab/Exclusive)
 
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's no match for the second pattern before the timer ends.
 
@@ -409,7 +416,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 </filter>
 ```
 
-#### Operations Manager converter: filter_System Center Operations Manager_converter
+# [Operations Manager converter](#tab/OpsManagerConverter)
 
 Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
 
@@ -420,6 +427,7 @@ Sends an event to Operations Manager for all records it receives. Sends the spec
     event_desc <event description>
 </filter>
 ```
+---
 
 ### Match
 
