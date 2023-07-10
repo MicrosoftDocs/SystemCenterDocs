@@ -5,12 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 07/19/2021
+ms.date: 06/20/2023
 title: Back up client computers with DPM
 ms.technology: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
 ms.author: jsuri
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Back up client computers with DPM
@@ -35,23 +35,23 @@ Before you deploy DPM to protect client computer data, verify the deployment pre
 
 -   To set up client machines for protection, install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe. If you're using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
--   DPM can back up client computers that are physically or wirelessly connected to the local area network (LAN) or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
+-   DPM can back up client computers that are physically or wirelessly connected to the local area network (LAN) or back up over VPN. For VPN backup, the ICMP should be enabled on the client computer.
 
 -   Each DPM server can protect up to 3000 client computers. When protecting client computers at scale, we recommend you create multiple protection groups and stagger the recovery point times for those protection groups. The more the number of clients that belong to a protection group, the longer it takes to enumerate the changes to the protection group.
 
 -   You can tweak the performance of client data backup as follows:
 
-    -   If client data backup is slow, you can set this key to a lower value:  HKLM\Software\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection\WaitInMSPerRequestForClientRead to a lower value.
+    -   If client data backup is slow, you can set this key to a lower value:  `HKLM\Software\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection\WaitInMSPerRequestForClientRead to a lower value`.
 
     -   To scale up client performance, you can tweak these registry keys:
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 9037ebb9-5c1b-4ab8-a446-052b13485f57
+        -   `Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 9037ebb9-5c1b-4ab8-a446-052b13485f57`
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 3d859d8c-d0bb-4142-8696-c0d215203e0d
+        -   `Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 3d859d8c-d0bb-4142-8696-c0d215203e0d`
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: c4cae2f7-f068-4a37-914e-9f02991868da
+        -   `Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: c4cae2f7-f068-4a37-914e-9f02991868da`
 
-        -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Collocation\Client. Value: DSCollocationFactor
+        -   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Collocation\Client. Value: DSCollocationFactor`
 
 ## Before you start
 
@@ -77,7 +77,7 @@ If you're looking to back up certain common folders in your client machines, you
 
 | **Well Known Folder**    | **Location to all or every user on the client machine**                                  |
 |--------------------------|------------------------------------------------------------------------------------------|
-| AppData                  | c:\Users\USERNAME\AppData\Roaming                                                    |
+| AppData                  | C:\Users\USERNAME\AppData\Roaming                                                   |
 | User Profiles            | C:\Users\USERNAME OR %SystemDrive%\Users                                              |
 | Slide Shows              | C:\Users\USERNAME\Pictures                                                            |
 | Quick Launch             | C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch        |
@@ -101,14 +101,13 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folde
 
 The details of the registry entry are below. Modify the value USERNAME according to your username of the client computer.
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links`
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Downloads /t REG_SZ /d C:\Users\USERNAME\Downloads
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Downloads /t REG_SZ /d C:\Users\USERNAME\Downloads`
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Slides Shows” /t REG_SZ /d C:\Users\USERNAME\Pictures
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Slides Shows” /t REG_SZ /d C:\Users\USERNAME\Pictures`
 
-- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d
-“C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”
+- reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d “C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”`
 
 > [!NOTE]
 > While creating a protection group of your client or workstation machine, DPM honors the folder hierarchy during backup. As an example, if you select backup of *User Profiles*, which represents the parent of *Desktop* folder, the *Desktop* folder will be included in backup.
@@ -135,7 +134,7 @@ The details of the registry entry are below. Modify the value USERNAME according
     >  -   When you exclude a folder and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
     >  -   When you include a folder and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
     >  -   When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
-    >  -   In the **Folder** column, type the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
+    >  -   In the **Folder** column, enter the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
     >  -   You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
     >  -   Under **File type exclusions**, you can specify the file types to exclude using their file extensions.
 
@@ -147,7 +146,7 @@ The details of the registry entry are below. Modify the value USERNAME according
 
     -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
@@ -174,9 +173,15 @@ The details of the registry entry are below. Modify the value USERNAME according
 14. On the **Summary** page, review your settings. After you select **Create Group**, initial replication of the data occurs. When it finishes, the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
 ## Recover client data
-You can recover client computer data using the Recovery Wizard. You can also set up end user recovery so that  users can recover their own data.
 
-### Allow clients to recover their own data
+You can recover the client data using any one of the following methods:
+- Allow clients to recover their own data by setting up user recovery
+- Use the Recovery Wizard to recover client computer data
+
+Select the required tab for steps to allow clients to recover their own data or recover client data using Recovery Wizard:
+
+# [Allow clients to recover their data](#tab/AllowClients)
+
 End user recovery enables users to independently recover file data by retrieving recovery points of their files. 
 
 > [!NOTE]
@@ -185,7 +190,7 @@ End user recovery enables users to independently recover file data by retrieving
 > -   If you enable end user recovery, you can't specify on which file servers end user recovery is enabled.
 > -   You can't control which Active Directory users or groups can perform end user recovery.
 
-To configure end user recovery, here's what you'll need to do:
+**To configure end user recovery, here's what you'll need to do:**
 
 1.  Configure Active Directory to support end user recovery:
 
@@ -200,8 +205,9 @@ To configure end user recovery, here's what you'll need to do:
 
 2.  After AD settings are complete in the **End-user Recovery** tab, select **Enable end-user recovery**.
 
-### Recover data
-Recover data from the DPM console as follows:
+# [Recover data for clients](#tab/RecoverData)
+
+**Recover data from the DPM console as follows:**
 
 1.  In the DPM console, select **Recovery** on the navigation bar and browse for the data you want to recover. In the results pane, select the data.
 
@@ -237,8 +243,10 @@ Recover data from the DPM console as follows:
 
 8.  Review your recovery settings, and select **Recover**. Any synchronization job for the selected recovery item will be canceled while the recovery is in progress.
 
-End users should recover data as follows:
+**End users should recover data as follows:**
 
 1.  Navigate to the protected data file. Right-click the file name > **Properties**.
 
 2.  In **Properties** > **Previous Versions**, select the version that you want to recover from.
+
+---

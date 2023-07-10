@@ -279,7 +279,7 @@ This verbose tracing method is used to see the Windows Remote Management (WinRM)
 > WinRM is also known as WS-Management (WS-Man).  
 
 > [!NOTE]  
-> The FormatTracing command opens a Windows Explorer window displaying the `C:\Windows\Temp\OpsMgrTrace` directory. The TracingGuidsNative.log file is in that directory.
+> The FormatTracing command opens a Windows Explorer window displaying the `C:\Windows\Logs\OpsMgrTrace` directory. The TracingGuidsNative.log file is in that directory.
 
 ## Manage UNIX and Linux Log Files
 The Operations Manager Agents for UNIX and Linux don't limit the size of the agent log files. In order to control the maximum size of the log files, implement a process to manage the log files. For example, the standard utility logrotate is available on many UNIX and Linux operating systems. The logrotate utility can be configured to control the log files used by the Operations Manager Agents for UNIX or Linux. After rotating or modifying the log files of the agent, the agent must be signaled that logs have rotated in order to resume logging. The scxadmin command can be used with the -log\-rotate parameter with the following syntax:  

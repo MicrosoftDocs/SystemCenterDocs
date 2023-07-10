@@ -5,22 +5,23 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 06/14/2023
+ms.date: 7/5/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Features and Enhancements in Management Pack for SQL Server Reporting Services
+# Features and enhancements in Management Pack for SQL Server Reporting Services
 
 This article covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
-## June 2023 - 7.1.0.0 CTP
+## July 2023 - 7.2.0.0 RTM
 
 ### What's new
 
 - Added a new "Product Version Compliance" monitor which is capable to check the product version number  of the current SQL Server Reporting Services or Power BI Report Server to determine that instance is up-to-date
 - Added new [Operations Manager console task](reporting-services-management-pack-monitoring-configuration.md#tasks-overview), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
+- Extended "Failed Subscriptions" unit monitor to a 3-level state. Now the monitor raises a critical alert if the SQL Server Reporting Services or Power BI Report Server has subscriptions or scheduled refresh plans with failed statuses, otherwise, it raises a warning alert if the statuses are unknown (other than successful and failed)
 - Updated display strings
 
 ## December 2022 - 7.0.42.0 RTM

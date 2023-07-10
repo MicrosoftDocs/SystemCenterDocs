@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM managed instance to mon
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 06/20/2023
+ms.date: 07/03/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -351,7 +351,7 @@ To create a SCOM managed instance, follow these steps:
 1. Under **Basics**, do the following:
     - **Project details**:
         - **Subscription**: Select the Azure subscription in which you want to place the SCOM managed instance.
-        - **Resource group**: Select the resource group in which you want to place the SCOM managed instance. If you don't have a resource group, select **Create new** to create a new resource group, and then place the instance. We recommend that you have a new resource group exclusively for SCOM Managed Instance (preview).
+        - **Resource group**: Select the resource group in which you want to place the SCOM managed instance. We recommend that you have a new resource group exclusively for SCOM Managed Instance (preview).
 
         :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details.png" alt-text="Screenshot that shows project details for creating a SCOM managed instance.":::
 
@@ -395,8 +395,8 @@ To create a SCOM managed instance, follow these steps:
            >[!Note]
            >Ensure to associate a NAT gateway with a chosen subnet. The presence of a NAT gateway is necessary for the SCOM Managed Instance (preview) to retrieve the components required for both installation and auto upgrade scenarios.
     - **SCOM managed instance interface**:
-        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview).
-        - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step.
+        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview). Ensure that the IP is in the IPv4 format, and create it in your routing table.
+        - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step. The DNS name will be mapped to the Static IP that is defined above.
     - **gMSA details**:
         - **Computer group name**: Enter the name of the computer group that you create after creation of the gMSA account.
         - **gMSA account name**: Enter the gMSA name. It must end with **$**.
@@ -405,8 +405,18 @@ To create a SCOM managed instance, follow these steps:
 1. Select **Next**.
 1. Under **Database**, do the following:
     - **SQL managed instance**: For **Resource Name**, select the Azure SQL Managed Instance resource name for the instance that you want to associate with this SCOM managed instance. Use only the SQL managed instance that has given permissions to the SCOM managed instance. For more information, see [SQL managed instance creation and permission](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#create-and-configure-a-sql-mi&preserve-view=true).
-    - **User managed identity**: For **User managed identity account**, select the managed identity that you created and for which you provided admin permissions to the SQL managed instance. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
+    - **User managed identity**: For **User managed identity account**, provide a user managed identity with system admin privileges on the SQL MI and *Get* and *List* permissions on Key vault secrets that was selected in the **Basics** tab. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
+1. Under **Validate**, all the prerequisites are validated. It takes 10 minutes to complete the validation.
+
+     :::image type="Validate tab" source="media/create-operations-manager-managed-instance/validate-inline.png" alt-text="Screenshot that shows Validate tab." lightbox="media/create-operations-manager-managed-instance/validate-expanded.png":::
+
+     After the validation is complete, check the results and revalidate if needed.
+
+     :::image type="Validation complete" source="media/create-operations-manager-managed-instance/validation-complete-inline.png" alt-text="Screenshot that shows Validation complete." lightbox="media/create-operations-manager-managed-instance/validation-complete-expanded.png":::
+    
+
+1. Select **Next : Tags >**.
 1. Under **Tags**, enter the **Name, value** information, and then select the resource.
    
    Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources?wt.mc_id=azuremachinelearning_inproduct_portal_utilities-tags-tab&tabs=json).
