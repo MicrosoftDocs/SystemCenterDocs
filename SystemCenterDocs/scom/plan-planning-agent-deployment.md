@@ -39,7 +39,7 @@ The agent sends data according to the schedule parameters for each rule and moni
 
 Additionally, all agents send a packet of data, called a *heartbeat*, to the management server on a regular schedule, by default every 60 seconds. The purpose of the heartbeat is to validate the availability of the agent and communication between the agent and the management server. For more information on heartbeats, see [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md).
 
-For each agent, Operations Manager runs a *health service watcher*, which monitors the state of the remote Health Service from the perspective of the management server.  The agent communicates with a management server over TCP port 5723.<br> 
+For each agent, Operations Manager runs a *health service watcher*, which monitors the state of the remote Health Service from the perspective of the management server.  The agent communicates with a management server over TCP port 5723.
 
 :::image type="content" source="{./media/plan-planning-agent-deployment/om2016-agent-to-management-server-communication.png}" alt-text="{Illustration of the Agent to Management Server Communication.}":::
 
