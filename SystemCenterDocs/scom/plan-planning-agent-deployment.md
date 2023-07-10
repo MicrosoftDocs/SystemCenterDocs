@@ -41,7 +41,7 @@ Additionally, all agents send a packet of data, called a *heartbeat*, to the man
 
 For each agent, Operations Manager runs a *health service watcher*, which monitors the state of the remote Health Service from the perspective of the management server.  The agent communicates with a management server over TCP port 5723.
 
-:::image type="content" source="{./media/plan-planning-agent-deployment/om2016-agent-to-management-server-communication.png}" alt-text="{Illustration of the Agent to Management Server Communication.}":::
+:::image type="content" source="./media/plan-planning-agent-deployment/om2016-agent-to-management-server-communication.png" alt-text="Illustration of the Agent to Management Server Communication.":::
 
 ## Linux/UNIX agent
 
@@ -57,11 +57,11 @@ The architecture of the UNIX and Linux agent differs from a Windows agent signif
 
 The UNIX and Linux agents for Operations Manager consist of a CIM Object Manager (that is, CIM Server), and a set of CIM Providers. The CIM Object Manager is the “server” component that implements the WS-Management communication, authentication, authorization, and dispatch of requests to the providers. The providers are the key to the CIM implementation in the agent, defining the CIM classes and properties, interfacing with the kernel APIs to retrieve raw data, formatting the data (for example, calculating deltas and averages), and servicing the requests dispatched from the CIM Object Manager. From System Center Operations Manager 2007 R2 through System Center 2012 SP1, the CIM Object Manager used in the Operations Manager UNIX and Linux agents is the OpenPegasus server. The providers used to collect and report monitoring data are developed by Microsoft, and open-sourced at CodePlex.com.
 
-:::image type="content" source="{./media/plan-planning-agent-deployment/om2016-unixlinux-agent-architecture.png}" alt-text="{Illustration of the Software Architecture of the Operations Manager UNIX/Linux Agent.}":::
+:::image type="content" source="./media/plan-planning-agent-deployment/om2016-unixlinux-agent-architecture.png" alt-text="Illustration of the Software Architecture of the Operations Manager UNIX/Linux Agent.":::
 
 This changed in System Center 2012 R2 Operations Manager, where UNIX and Linux agents are now based on a fully consistent implementation of Open Management Infrastructure (OMI) as their CIM Object Manager. In the case of the Operations Manager UNIX/Linux agents, OMI is replacing OpenPegasus. Like OpenPegasus, OMI is an open-source, lightweight, and portable CIM Object Manager implementation – though it's lighter in weight and more portable than OpenPegasus. This implementation continues to be applied in System Center 2016 - Operations Manager and later.
 
-:::image type="content" source="{./media/plan-planning-agent-deployment/om2016-omi-unixlinux-agent-architecture.png}" alt-text="{Diagram of the Updated Software Architecture of the Operations Manager UNIX/Linux Agent.}":::
+:::image type="content" source="./media/plan-planning-agent-deployment/om2016-omi-unixlinux-agent-architecture.png" alt-text="Diagram of the Updated Software Architecture of the Operations Manager UNIX/Linux Agent.":::
 
 Communication between the management server and the UNIX and Linux agent is split into two categories: agent maintenance and health monitoring.  The management server uses two protocols to communicate with the UNIX or Linux computer:
 
