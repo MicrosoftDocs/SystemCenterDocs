@@ -67,7 +67,7 @@ This section applies only if you're considering deploying a Service Manager data
 
 ![Screenshot showing the Turkish Collation Warning.](./media/deploy-sm/deploy-turkishcollationwarning.png)
 
- If you encounter this warning message during the deployment of any of the Service Manager databases, select **OK**. On the **Database Configuration** page, in the **Database server** box, enter the name of a computer that is hosting an installation of SQL&nbsp;Server that is configured with a non\-Turkish collation, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, select **Next**.  
+ If you encounter this warning message during the deployment of any of the Service Manager databases, select **OK**. On the **Database Configuration** page, in the **Database server** box, enter the name of a computer that is hosting an installation of SQL&nbsp;Server that is configured with a non-Turkish collation, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, select **Next**.  
 
 ## Use the Prerequisite checker before you deploy Service Manager
 
