@@ -55,7 +55,7 @@ The architecture of the UNIX and Linux agent differs from a Windows agent signif
    - Processes
    - Log files  
 
-The UNIX and Linux agents for Operations Manager consist of a CIM Object Manager (that is, CIM Server), and a set of CIM Providers. The CIM Object Manager is the “server” component that implements the WS-Management communication, authentication, authorization, and dispatch of requests to the providers. The providers are the key to the CIM implementation in the agent, defining the CIM classes and properties, interfacing with the kernel APIs to retrieve raw data, formatting the data (for example, calculating deltas and averages), and servicing the requests dispatched from the CIM Object Manager. From System Center Operations Manager 2007 R2 through System Center 2012 SP1, the CIM Object Manager used in the Operations Manager UNIX and Linux agents is the OpenPegasus server. The providers used to collect and report monitoring data are developed by Microsoft, and open-sourced at CodePlex.com.
+The UNIX and Linux agents for Operations Manager consist of a CIM Object Manager (that is, CIM Server), and a set of CIM Providers. The CIM Object Manager is the **server** component that implements the WS-Management communication, authentication, authorization, and dispatch of requests to the providers. The providers are the key to the CIM implementation in the agent, defining the CIM classes and properties, interfacing with the kernel APIs to retrieve raw data, formatting the data (for example, calculating deltas and averages), and servicing the requests dispatched from the CIM Object Manager. From System Center Operations Manager 2007 R2 through System Center 2012 SP1, the CIM Object Manager used in the Operations Manager UNIX and Linux agents is the OpenPegasus server. The providers used to collect and report monitoring data are developed by Microsoft, and open-sourced at CodePlex.com.
 
 :::image type="content" source="./media/plan-planning-agent-deployment/om2016-unixlinux-agent-architecture.png" alt-text="Illustration of the Software Architecture of the Operations Manager UNIX/Linux Agent.":::
 
@@ -117,7 +117,7 @@ Agents that are installed using the Discovery Wizard can be managed from the Ope
 
 When you install the agent using a manual method, updates to the agent must also be performed manually. You'll be able to use Active Directory integration to assign agents to management groups. For more information, see [Integrating Active Directory and Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212829(v=sc.12)).
 
-Select the required tab to know more about agent deployment to Windows, UNIX, and LINUX system:
+Select the required tab to know more about agent deployment to Windows and UNIX and LINUX systems:
 
 # [Agent deployment to Windows system](#tab/Windows)
 
