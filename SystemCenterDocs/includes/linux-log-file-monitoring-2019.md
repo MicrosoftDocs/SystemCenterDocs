@@ -177,13 +177,13 @@ To configure Linux log file monitoring, perform the following steps:
 # [Enable the OMED service manually](#tab/Manually)
 You have two options when enabling the OMED service manually on the management server, [automatically via PowerShell](#PowerShellServiceStep) or [manually](#ManualServiceSteps).
 
-> #### <a name="PowerShellServiceStep"></a>Set automatically with PowerShell
+> #### Set automatically with PowerShell
 >   Run the following PowerShell command as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
 >   ```PowerShell
 >   Set-Service -Name OMED -StartupType Automatic -Status Running
 >   ```
 
-> #### <a name="ManualServiceSteps"></a>Set manually with services.msc
+> #### Set manually with services.msc
 >   1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
 >   2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
 >   3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
@@ -214,7 +214,7 @@ Follow these steps to manually add rule with Windows Firewall:
 5. Select **TCP** and select **Specific local ports:**. Enter `8886`.
 6. Select **Allow the connection**, click Next.
 7. Select the Appropriate Profiles to apply the Firewall Rule (*Domain, Private, Public*).
-8. Enter the name box: `System Center Operations Manager External DataSource Service`, and click Finish.
+8. Enter `System Center Operations Manager External DataSource Service`in the name box and select Finish.
 ---
 
 ## Assign a Client Certificate for OMSAgent
