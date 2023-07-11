@@ -175,7 +175,7 @@ To configure Linux log file monitoring, perform the following steps:
 3. From **Tasks**, select **Health Service Tasks**>**Enable System Center OMED Server**.
 
 # [Enable the OMED service manually](#tab/Manually)
-You have two options when enabling the OMED service manually on the management server, [automatically via PowerShell](#PowerShellServiceStep) or [manually](#ManualServiceSteps).
+You have two options when enabling the OMED service manually on the management server, automatically via PowerShell or manually.
 
 > #### Set automatically with PowerShell
 >   Run the following PowerShell command as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
