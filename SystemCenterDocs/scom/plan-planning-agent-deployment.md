@@ -4,9 +4,9 @@ title: Operations Manager Agents
 description: This article provides design guidance for agent deployment on Windows, Linux and UNIX computers with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 01/29/2021
-ms.custom: na, UpdateFrequency2
+manager: mkluck
+ms.date: 07/10/2023
+ms.custom: na, UpdateFrequency2, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -39,8 +39,9 @@ The agent sends data according to the schedule parameters for each rule and moni
 
 Additionally, all agents send a packet of data, called a *heartbeat*, to the management server on a regular schedule, by default every 60 seconds. The purpose of the heartbeat is to validate the availability of the agent and communication between the agent and the management server. For more information on heartbeats, see [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md).
 
-For each agent, Operations Manager runs a *health service watcher*, which monitors the state of the remote Health Service from the perspective of the management server.  The agent communicates with a management server over TCP port 5723.<br> ![Illustration of the Agent to Management Server Communication.](./media/plan-planning-agent-deployment/om2016-agent-to-management-server-communication.png)  
+For each agent, Operations Manager runs a *health service watcher*, which monitors the state of the remote Health Service from the perspective of the management server.  The agent communicates with a management server over TCP port 5723.
 
+:::image type="content" source="./media/plan-planning-agent-deployment/om2016-agent-to-management-server-communication.png" alt-text="Illustration of the Agent to Management Server Communication.":::
 
 ## Linux/UNIX agent
 
@@ -54,9 +55,13 @@ The architecture of the UNIX and Linux agent differs from a Windows agent signif
    - Processes
    - Log files  
 
-The UNIX and Linux agents for Operations Manager consist of a CIM Object Manager (that is, CIM Server), and a set of CIM Providers. The CIM Object Manager is the “server” component that implements the WS-Management communication, authentication, authorization, and dispatch of requests to the providers. The providers are the key to the CIM implementation in the agent, defining the CIM classes and properties, interfacing with the kernel APIs to retrieve raw data, formatting the data (for example, calculating deltas and averages), and servicing the requests dispatched from the CIM Object Manager. From System Center Operations Manager 2007 R2 through System Center 2012 SP1, the CIM Object Manager used in the Operations Manager UNIX and Linux agents is the OpenPegasus server. The providers used to collect and report monitoring data are developed by Microsoft, and open-sourced at CodePlex.com.<br> ![Illustration of the Software Architecture of the Operations Manager UNIX/Linux Agent.](./media/plan-planning-agent-deployment/om2016-unixlinux-agent-architecture.png)<br>
+The UNIX and Linux agents for Operations Manager consist of a CIM Object Manager (that is, CIM Server), and a set of CIM Providers. The CIM Object Manager is the **server** component that implements the WS-Management communication, authentication, authorization, and dispatch of requests to the providers. The providers are the key to the CIM implementation in the agent, defining the CIM classes and properties, interfacing with the kernel APIs to retrieve raw data, formatting the data (for example, calculating deltas and averages), and servicing the requests dispatched from the CIM Object Manager. From System Center Operations Manager 2007 R2 through System Center 2012 SP1, the CIM Object Manager used in the Operations Manager UNIX and Linux agents is the OpenPegasus server. The providers used to collect and report monitoring data are developed by Microsoft, and open-sourced at CodePlex.com.
 
-This changed in System Center 2012 R2 Operations Manager, where UNIX and Linux agents are now based on a fully consistent implementation of Open Management Infrastructure (OMI) as their CIM Object Manager. In the case of the Operations Manager UNIX/Linux agents, OMI is replacing OpenPegasus. Like OpenPegasus, OMI is an open-source, lightweight, and portable CIM Object Manager implementation – though it's lighter in weight and more portable than OpenPegasus. This implementation continues to be applied in System Center 2016 - Operations Manager and later.<br> ![Diagram of the Updated Software Architecture of the Operations Manager UNIX/Linux Agent.](./media/plan-planning-agent-deployment/om2016-omi-unixlinux-agent-architecture.png)<br>
+:::image type="content" source="./media/plan-planning-agent-deployment/om2016-unixlinux-agent-architecture.png" alt-text="Illustration of the Software Architecture of the Operations Manager UNIX/Linux Agent.":::
+
+This changed in System Center 2012 R2 Operations Manager, where UNIX and Linux agents are now based on a fully consistent implementation of Open Management Infrastructure (OMI) as their CIM Object Manager. In the case of the Operations Manager UNIX/Linux agents, OMI is replacing OpenPegasus. Like OpenPegasus, OMI is an open-source, lightweight, and portable CIM Object Manager implementation – though it's lighter in weight and more portable than OpenPegasus. This implementation continues to be applied in System Center 2016 - Operations Manager and later.
+
+:::image type="content" source="./media/plan-planning-agent-deployment/om2016-omi-unixlinux-agent-architecture.png" alt-text="Diagram of the Updated Software Architecture of the Operations Manager UNIX/Linux Agent.":::
 
 Communication between the management server and the UNIX and Linux agent is split into two categories: agent maintenance and health monitoring.  The management server uses two protocols to communicate with the UNIX or Linux computer:
 
@@ -112,7 +117,9 @@ Agents that are installed using the Discovery Wizard can be managed from the Ope
 
 When you install the agent using a manual method, updates to the agent must also be performed manually. You'll be able to use Active Directory integration to assign agents to management groups. For more information, see [Integrating Active Directory and Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212829(v=sc.12)).
 
-### Agent deployment to Windows system
+Select the required tab to know more about agent deployment to Windows and UNIX and LINUX systems:
+
+# [Agent deployment to Windows system](#tab/Windows)
 
 Discovery of a Windows system requires that the TCP 135 (RPC), RPC range, and TCP 445 (SMB) ports remain open and that the SMB service is enabled on the agent computer.
 
@@ -123,22 +130,23 @@ Discovery of a Windows system requires that the TCP 135 (RPC), RPC range, and TC
 - An account that has local administrator rights on the target computer.
 - Windows Installer 3.1. To install, see article 893803 in the Microsoft Knowledge Base
 https://go.microsoft.com/fwlink/?LinkId=86322 <!--<verify if we need to continue calling this out\-->
-- Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation installs MSXML 6 on the target device if it's not already installed. <!--<verify if we need to continue calling this out-->
+- Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation installs MSXML 6 on the target device if it isn't already installed. <!--<verify if we need to continue calling this out-->
 
-### Agent deployment to UNIX and Linux system
+# [Agent deployment to UNIX and Linux system](#tab/UnixLinux)
 
 In System Center Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
 
 - Secure Shell (SSH) for installing, upgrading, and removing agents.
 - Web Services for Management (WS-Management) for all monitoring operations and include the discovery of agents that were already installed.
 
-The protocol that is used depends on the action or information that is requested on the management server.  All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account.
+The protocol that is used depends on the action or information that is requested on the management server. All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account.
 
 > [!NOTE]
-> All credentials referred to in this section pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager.  Contact your system administrator for credentials and authentication information.
+> All credentials referred to in this section pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.
 
-By elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer.  The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies.  For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and SSH key authentication (with or without passphrase) is provided.  For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is supported.
+By elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and SSH key authentication (with or without passphrase) is provided.  For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is supported.
 
+---
 
 ## Active Directory agent assignment
 

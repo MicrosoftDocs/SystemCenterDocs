@@ -168,58 +168,65 @@ To configure Linux log file monitoring, perform the following steps:
 
    You can enable the OMED service either from the Operations console or manually on the management server or gateway server.
 
-### Enable the OMED service from Operations console
+# [Enable the OMED service from Operations console](#tab/OpsConsole)
 
 1. From the Operations console, go to **Monitoring**>**Operations Manager**>**Management Server**>**Management Servers State**.
 2. Select the management server in the **Management Servers state**.
 3. From **Tasks**, select **Health Service Tasks**>**Enable System Center OMED Server**.
 
-### Enable the OMED service manually
-You have two options when enabling the OMED service manually on the management server, [automatically via PowerShell](#PowerShellServiceStep) or [manually](#ManualServiceSteps).
+# [Enable the OMED service manually](#tab/Manually)
+You have two options when enabling the OMED service manually on the management server, automatically via PowerShell or manually.
 
-> #### <a name="PowerShellServiceStep"></a>Set automatically with PowerShell
+> #### Set automatically with PowerShell
 >   Run the following PowerShell command as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running:
 >   ```PowerShell
 >   Set-Service -Name OMED -StartupType Automatic -Status Running
 >   ```
 
-> #### <a name="ManualServiceSteps"></a>Set manually with services.msc
+> #### Set manually with services.msc
 >   1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
 >   2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
 >   3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
 >   4. In the details pane, right-click **Service** and select **Start**.
-   
+---
+
 ### Add OMED Firewall Rule
 
-In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) [automatically via PowerShell](#AutomaticFirewallRule) or [manually](#ManualFirewallRule).
+In order to enable to OMED Firewall Rule you have two options, either add the port (TCP/8886) automatically via PowerShell or manually.
 
-#### <a name="AutomaticFirewallRule"></a>Automatically add rule with PowerShell
+# [Automatically add rule with PowerShell](#tab/AutomaticFirewallRule)
+Follow these steps to automatically add rule with PowerShell:
 
 The following command allows you to automatically add the firewall rule:
 ```PowerShell
 Set-NetFirewallRule -DisplayName "System Center Operations Manager External DataSource Service" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8886
 ```
 
-#### <a name="ManualFirewallRule"></a>Manually add rule with Windows Firewall
+# [Manually add rule with Windows Firewall](#tab/ManualFirewallRule)
+Follow these steps to manually add rule with Windows Firewall:
+
 1. Open Windows Defender Firewall with Advanced Security.
-    1. Right click the Windows icon in your taskbar and select **Run**.
-    2. Type in the run box: `wf.msc` and Click OK.
+    1. Right-click the Windows icon in your taskbar and select **Run**.
+    2. Enter in the run box: `wf.msc` and click OK.
 2. Select **Inbound Rules**.
-3. Right click Inbound Rules and select: **New Rule...**
-4. Select **Port**, Click Next.
-5. Select **TCP** and select **Specific local ports:**. Type in `8886`.
-6. Select **Allow the connection**, Click Next.
+3. Right-click Inbound Rules and select: **New Rule...**
+4. Select **Port**, click Next.
+5. Select **TCP** and select **Specific local ports:**. Enter `8886`.
+6. Select **Allow the connection**, click Next.
 7. Select the Appropriate Profiles to apply the Firewall Rule (*Domain, Private, Public*).
-8. Type in the name box: `System Center Operations Manager External DataSource Service`, and Click Finish.
+8. Enter `System Center Operations Manager External DataSource Service`in the name box and select Finish.
+---
 
 ## Assign a Client Certificate for OMSAgent
 
 You have two options when assigning the client certificate for OMSAgent.
 
-1. [Link to the signed certificate](#LinkOMIAgentCertificate) from the OMI Agent.
-2. [Generate a client certificate manually](#GenerateOMSAgentCertificate) for the OMS Agent.
+1. Link to the signed certificate from the OMI Agent.
+2. Generate a client certificate manually for the OMS Agent.
 
-### <a name="LinkOMIAgentCertificate"></a>1. Link OMI Agent Certificate to OMS Agent
+Select the required tab for steps to link to the signed certificate from the OMI Agent or generate a client certificate manually from the OMS Agent:
+
+# [Link OMI Agent Certificate to OMS Agent](#tab/LinkOMIAgentCertificate)
 
 1. Set ownership on the `omi.pem` and `omikey.pem` file to `omsagent:omiusers`:
       ```bash
@@ -240,7 +247,10 @@ You have two options when assigning the client certificate for OMSAgent.
       ln -s /etc/opt/omi/ssl/omikey.pem /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
       ```
 
-### <a name="GenerateOMSAgentCertificate"></a>2. Generate a Client Certificate for OMSAgent
+# [Generate a Client Certificate for OMS Agent](#tab/GenerateOMSAgentCertificate)
+
+Follow these steps to generate a client certificate for OMS Agent:
+
 1. Generate the certificate and key to the ***omsagent*** folder: 
    ```bash
    # Generate Certificate to omsagent Folder
@@ -266,6 +276,7 @@ You have two options when assigning the client certificate for OMSAgent.
    # Change owner of the scom-key file
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
    ```
+---
 
 ## Create Fluentd configuration file
 
@@ -323,7 +334,16 @@ The  **filter**  directive has the same syntax as **Match** but allows more comp
 
 There are six filter plugins for log file monitoring described here. Use one or more of these filters to define the events that you want to collect from your log file.
 
-#### Simple match: filter_System Center Operations Manager_simple_match
+- Simple match: filter_System Center Operations Manager_simple_match
+- Exclusive match: filter_System Center Operations Manager_excl_match
+- Repeated correlation: filter_System Center Operations Manager_repeated_cor
+- Correlated match: filter_System Center Operations Manager_cor_match
+- Exclusive correlation: filter_System Center Operations Manager_excl_correlation
+- Operations Manager converter: filter_System Center Operations Manager_converter
+
+Select the required tab to copy the code for the respective filter plugin:
+
+# [Simple match](#tab/Simple)
 
 Takes up to 20 input patterns. Sends an event to Operations Manager whenever any pattern is matched.
 
@@ -343,7 +363,7 @@ Takes up to 20 input patterns. Sends an event to Operations Manager whenever any
 </filter>
 ```
 
-#### Exclusive match: filter_System Center Operations Manager_excl_match
+# [Exclusive match](#tab/ExclusiveMatch)
 
 Takes two input patterns. Sends an event to Operations Manager when a single record matches pattern 1 but doesn't match pattern 2.
 
@@ -356,7 +376,7 @@ Takes two input patterns. Sends an event to Operations Manager when a single rec
 </filter>
 ```
 
-#### Repeated correlation: filter_System Center Operations Manager_repeated_cor
+# [Repeated correlation](#tab/Repeated)
 
 Takes three inputs: a patterns, a time interval, and  number of occurrences. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
@@ -370,7 +390,7 @@ Takes three inputs: a patterns, a time interval, and  number of occurrences. Whe
 </filter>
 ```
 
-#### Correlated match: filter_System Center Operations Manager_cor_match
+# [Correlated match](#tab/Correlated)
 
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's a match for the second pattern before the timer ends.
 
@@ -384,7 +404,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 </filter>
 ```
 
-#### Exclusive correlation: filter_System Center Operations Manager_excl_correlation
+# [Exclusive correlation](#tab/Exclusive)
 
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's no match for the second pattern before the timer ends.
 
@@ -398,7 +418,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 </filter>
 ```
 
-#### Operations Manager converter: filter_System Center Operations Manager_converter
+# [Operations Manager converter](#tab/OpsManagerConverter)
 
 Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
 
@@ -409,6 +429,7 @@ Sends an event to Operations Manager for all records it receives. Sends the spec
     event_desc <event description>
 </filter>
 ```
+---
 
 ### Match
 
@@ -455,7 +476,7 @@ This example processes events with tags matching **System Center Operations Mana
 ```
 
 > [!NOTE]
-> To disable Server Authentication on the Linux computers that are using Fluentd communication, add a parameter  **enable\_server\_auth false**  to the Operations Manager plugin for Fluentd, such as the following:
+> To disable Server Authentication on the Linux computers that are using Fluentd communication, add a parameter **enable\_server\_auth false** to the Operations Manager plugin for Fluentd, such as the following:
 
 ```
 <match System Center Operations Manager.log.** System Center Operations Manager.event>
