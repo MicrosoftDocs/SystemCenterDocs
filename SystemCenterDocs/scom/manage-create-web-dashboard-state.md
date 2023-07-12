@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: How to create a dashboard with the State widget in the Web console
-description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Health State widget.
+description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Health State widget.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
