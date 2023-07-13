@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 07/05/2023
+ms.date: 07/13/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -13,6 +13,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5eb94e4f-72b8-46ec-8417-5d776cc6288f
 monikerRange: '>=sc-sm-2019'
+ms.custom: engagement-fy23
 ---
 
 # Enable Service Logon
