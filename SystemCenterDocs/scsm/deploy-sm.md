@@ -65,7 +65,7 @@ This section applies only if you're considering deploying a Service Manager data
 
  The installation of a Service Manager database isn't supported on a computer running SQL&nbsp;Server that uses a Turkish language collation. This is true for both the Service Manager and data warehouse databases. If you specify a computer running SQL&nbsp;Server that contains a Turkish language collation during the deployment of a Service Manager database, the following warning message appears.
 
-![Screenshot showing the Turkish Collation Warning.](./media/deploy-sm/deploy-turkishcollationwarning.png)
+![Screenshot showing the Turkish Collation Warning.](./media/deploy-sm/deploy-turkish-collation-warning.png)
 
  If you encounter this warning message during the deployment of any of the Service Manager databases, select **OK**. On the **Database Configuration** page, in the **Database server** box, enter the name of a computer that is hosting an installation of SQL&nbsp;Server that is configured with a non-Turkish collation, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, select **Next**.  
 
