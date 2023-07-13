@@ -77,11 +77,13 @@ To configure trunk mode in VMM, follow these steps:
 
 ### Add a virtual adapter with PowerShell
 
- You can use PowerShell to add a virtual adapter. Here's a sample cmdlet for setting this up:
+You can use PowerShell to add a virtual adapter.
 
-#### Example 1
+Here are the sample cmdlets for setting this up. Select the required tab to view or copy the sample cmdlets:
 
-Add a vNIC:
+# [Example 1 - Add a vNIC](#tab/AddvNIC)
+
+Sample cmdlets for adding a vNIC:
 
 - The first command gets the virtual machine object named VM01 and then stores the object in the $VM variable.
 - The second command creates a virtual network adapter on VM01.
@@ -91,7 +93,7 @@ PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> New-SCVirtualNetworkAdapter -VM $VM -Synthetic
 ```
 
-#### Example 2
+# [Example 2 - Remove a vNIC](#tab/RemovevNIC)
 
 The following PowerShell commands will remove a vNIC from a running VM. It assumes there's only one vNIC on the VM.
 
@@ -104,6 +106,7 @@ PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> Remove-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter
 ```
+---
 
 ## Manage static memory on a running VM
 
