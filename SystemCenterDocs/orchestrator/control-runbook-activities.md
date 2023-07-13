@@ -6,8 +6,9 @@ ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-ms.date: 01/17/2018
+ms.date: 07/11/2023
 manager: mkluck
+ms.custom: engagement-fy23
 ---
 # Control runbook activities
 
@@ -30,7 +31,7 @@ The activities in your runbook will complete according to the order you set by l
 > [!IMPORTANT]  
 > The rules on each tab are joined by using an **or** condition. Only one of the conditions defined on a tab must be true for the condition to be true.  
 
-The type of data published by an activity determines the type of criteria  you can set for controlling the runbook sequence. Some activities publish binary data, and others publish numeric or text data.
+The type of data published by an activity determines the type of criteria you can set for controlling the runbook sequence. Some activities publish binary data, and others publish numeric or text data.
 
 If the published data is text data, you can use any of the following to set the criteria for execution, inclusion, or exclusion.  
 
@@ -46,7 +47,7 @@ If the published data is text data, you can use any of the following to set the 
 |does not equal|The value of the Published Data item does not match the specified text.|  
 
 > [!NOTE]  
-> Text values aren't case\-sensitive.
+> Text values aren't case-sensitive.
 
 You can also set criteria using regular expressions to perform pattern matching.
 
@@ -62,7 +63,11 @@ If the published data is numerical, you can use any of the following to set the 
 |is greater than or equal to|The value of the Published Data item is greater than or equal to the specified value.|  
 |is between|The value of the Published Data item is between two specified values.|
 
-### To add a smart link condition  
+Select the required tab for steps to add or remove a smart link condition:
+
+# [Add a smart link condition](#tab/AddSmartLink)
+
+Follow these steps to add a smart link condition:
 
 1.  Right-click a smart link to select **Properties** to open the **Link Properties** dialog.  
 
@@ -75,17 +80,21 @@ If the published data is numerical, you can use any of the following to set the 
 
 4.  Select a property from the Published Data and select **OK**. The criteria expression is changed depending on the type of data that the property returns.  
 
-5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value.
+5.  To change the different parts of the expression, select the underlined text, and then either select or enter an appropriate value.
 
 6.  Select **Finish**.  
 
-### To remove a smart link condition  
+# [Remove a smart link condition](#tab/RemoveSmartLink)
+
+Follow these steps to remove a smart link condition:
 
 1.  In the **Link Properties** dialog, select either the **Include** tab or **Exclude** tab.  
 
 2.  To select the condition that you want to remove, select to the right of the link condition on the word **or**, and then select **Remove**.  
 
 3.  Select **Finish**.
+
+---
 
 ## Repeat activities with embedded loops
 
@@ -97,13 +106,13 @@ When you configure a loop for an activity, it will continue to run with the same
 
 Loops run one time for each incoming piece of data that is passed to the activity. For example, consider a runbook that uses a **Query Database** activity followed by **Append Line**. If the **Query Database** activity returned three rows, the **Append Line** activity would run three times. If you have a loop on the **Append Line** activity, it would run three separate loops. After the first data item has looped through the **Append Line** activity, the next item goes through **Append Line** and loops until it exits, and then the third begins. After all three items have been processed, the next activity in the runbook runs.  
 
-### To configure looping  
+### Configure looping  
 
 1.  Right-click an activity in the runbook to select **Looping**. The **Looping Properties** dialog opens.  
 
 2.  On the **General** tab, select **Enable**.  
 
-3.  In the **Delay between attempts** box, type the number of seconds to pause between each attempt to run the activity.  
+3.  In the **Delay between attempts** box, enter the number of seconds to pause between each attempt to run the activity.  
 
 ### Exit and Do Not Exit Conditions  
 The rules on the **Exit** tab specify the conditions that determine whether the loop exits. The rules on the **Do Not Exit** tab specify the conditions that cause the loop to continue.  
@@ -113,9 +122,11 @@ The rules on the **Exit** tab specify the conditions that determine whether the 
 
 The rules within each tab are joined by using an **Or** condition. Only one of the conditions on a tab must be true for the entire tab to be true.  
 
-Use the following procedure to add or remove an **Exit** condition.  
+Select the required tab for the procedure to add or remove an **Exit** condition:  
 
-#### To add an exit condition  
+# [Add an exit condition](#tab/AddExitCondition)
+
+Follow these steps to add an exit condition:
 
 1.  In the **Looping Properties** dialog, select either the **Exit** tab or **Do Not Exit** tab, and then select the condition listed in the box select **Add** to add a condition.  
 
@@ -128,17 +139,21 @@ Use the following procedure to add or remove an **Exit** condition.
 
 4.  Select a property from the published data, and then select **OK**. The criteria expression is changed depending on the type of data that the property returns.  
 
-5.  To change the different parts of the expression, select the underlined text and either select or type in an appropriate value.  
+5.  To change the different parts of the expression, select the underlined text and either select or enter an appropriate value.  
 
 6.  Select **Finish**.  
 
-#### To remove an exit condition  
+# [Remove an exit condition](#tab/RemoveExitCondition)
+
+Follow these steps to remove an exit condition:
 
 1.  In the **Looping Properties** dialog, select either the **Exit** tab or the **Do Not Exit** tab.  
 
 2.  To select the condition you want to remove, select **Or** to the right of the link condition, and then select **Remove**.  
 
 3.  Select **Finish**.  
+
+---
 
 ## Set a schedule for a runbook
 
@@ -157,13 +172,17 @@ Runbooks that start before a prohibited time run until finished, even if they're
 > [!NOTE]  
 > Orchestrator doesn't support moving multiple schedules with multiple\-selection. To move more than one schedule to another folder, you must move each schedule individually.
 
-### To create a schedule  
+Select the required tab to create a schedule, assign a schedule to a runbook, or remove a schedule from a runbook:
+
+# [Create a schedule](#tab/CreateASchedule)
+
+Follow these steps to create a schedule:
 
 1.  In the **Connections** pane, right-click the **Schedules** folder or a subfolder of the **Schedules** folder, point to **New**, and then select **Schedule** to open the **New Schedule** dialog.  
 
-2.  On the **General** tab, in the **Name** box, type a name for the schedule.  
+2.  On the **General** tab, in the **Name** box, enter a name for the schedule.  
 
-3.  In the **Description** box, type a description that describes or explains the purpose of the schedule.  
+3.  In the **Description** box, enter a description that describes or explains the purpose of the schedule.  
 
 4.  Select the **Details** tab. Select the days that this schedule allows runbooks to run:  
 
@@ -171,9 +190,9 @@ Runbooks that start before a prohibited time run until finished, even if they're
 
     **Occurrence**: Select the weeks of the month when the schedule allows runbooks to run.  
 
-    **Days of month**: Select this option and select the days of the month when this schedule allows runbooks to run. Specify the days of the month by entering the number of the day. You can use hyphens to describe ranges and commas to separate entries. For example, typing **1,3** includes the first and third day of the month. Typing **1\-21** includes the first through to the twenty\-first day of the month. You can combine both to create complex descriptions of the days of the month. Type **all** to specify all days of the month. Type **last** to specify the last day of the month.  
+    **Days of month**: Select this option and select the days of the month when this schedule allows runbooks to run. Specify the days of the month by entering the number of the day. You can use hyphens to describe ranges and commas to separate entries. For example, typing **1,3** includes the first and third day of the month. Entering **1\-21** includes the first through to the twenty\-first day of the month. You can combine both to create complex descriptions of the days of the month. Enter **all** to specify all days of the month. Enter **last** to specify the last day of the month.  
 
-    You can't use **all** and **last** as part of a range of days. Additionally, if you typed a range of 5\-31, this range works correctly for all the months, including those with 28, 29, 30, and 31 days.  
+    You can't use **all** and **last** as part of a range of days. Additionally, if you entered a range of 5\-31, this range works correctly for all the months, including those with 28, 29, 30, and 31 days.  
 
 5.  Select **Hours** to open the **Schedule Hours** dialog.  
 
@@ -199,7 +218,9 @@ Runbooks that start before a prohibited time run until finished, even if they're
 
 14. Select **Finish**.  
 
-### To assign a schedule to a runbook  
+# [Assign a schedule to a runbook](#tab/AssignASchedule)
+
+Follow these steps to assign a schedule to a runbook:
 
 1.  Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
 
@@ -211,7 +232,9 @@ Runbooks that start before a prohibited time run until finished, even if they're
 
     Every time the runbook is started, it checks the schedule to verify that it's allowed to run. If it isn't allowed to run, it stops and doesn't restart until the next time it's started.  
 
-### To remove a schedule from a runbook  
+# [Remove a schedule from a runbook](#tab/RemoveASchedule)
+
+Follow these steps to remove a schedule from a runbook:
 
 1.  Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
 
@@ -220,6 +243,8 @@ Runbooks that start before a prohibited time run until finished, even if they're
 3.  Don't select a schedule. Select **OK**.  
 
 4.  Select **Finish**. The schedule is removed from the runbook.
+
+---
 
 ## Manipulate data with functions
 
@@ -258,4 +283,4 @@ The table below lists the functions supported for runbooks.
 
 ## Next Steps
 
-- To read a guided walkthrough of creating a sample runbook, see [Creating and testing a sample runbook](~/orchestrator/creating-and-testing-a-sample-runbook.md).
+To read a guided walkthrough of creating a sample runbook, see [Creating and testing a sample runbook](~/orchestrator/creating-and-testing-a-sample-runbook.md).

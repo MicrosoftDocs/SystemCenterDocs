@@ -110,7 +110,6 @@ RETURN $Is64BitProcess, $PSVersion
 
 $64bit = $Result[0]
 $PSVersion = $Result[1]
-)
 ```
 
 ![Screenshot of View .NET Script Activity.](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
