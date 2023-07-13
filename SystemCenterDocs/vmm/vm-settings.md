@@ -248,8 +248,12 @@ VMM includes resource throttling features, such as processor (CPU) and memory th
      - **Maximum memory**: The memory limit that is allocated to the virtual machine. The default value is 1 TB.
      - **Memory Buffer Percentage**: Dynamic memory adds memory to a virtual machine as required, but there's a chance that an application might demand memory more quickly than the dynamic memory allocates it. The memory buffer percentage specifies the amount of available memory that will be assigned to the virtual machine if needed. The percentage is based on the amount of memory that is needed by the applications and services that run on the virtual machine. It's expressed as a percentage because it changes depending on the virtual machine requirements. The percentage is calculated as follows: Amount of memory buffer = memory needed by the virtual machine/(memory buffer value/100). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% (200 MB) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
   - **Memory weight**: The priority that is allocated to a virtual machine when the memory resources are in full use. If you set a high priority value, it will prioritize a virtual machine when the memory resources are allocated. If you set a low priority, a virtual machine might be unable to start if memory resources are insufficient.
+  
+Select the required tab for steps to configure processor or memory throttling:
 
 # [Configure processor throttling](#tab/ProcessorThrottling)
+
+Follow these steps to configure processor throttling:
 
 1. In the virtual machine > **Properties** > **Advanced**, select **CPU Priority**.
 2. Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machines and correspond to the relative weight value in Hyper-V:
@@ -263,6 +267,8 @@ VMM includes resource throttling features, such as processor (CPU) and memory th
 4. In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine won't be allocated more than this percentage.
 
 # [Configure memory throttling](#tab/MemoryThrottling)
+
+Follow these steps to configure memory throttling:
 
 1. In the virtual machine > **Properties** > **General**, select **Memory**.
 2. Select **Static** to specify that a fixed amount of memory should be assigned to a virtual machine.
