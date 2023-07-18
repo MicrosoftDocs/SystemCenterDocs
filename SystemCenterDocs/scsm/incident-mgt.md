@@ -126,7 +126,7 @@ Follow these steps to automatically resolve child incidents:
     -   If you don't want to automatically activate child incidents, set **Auto reactivation of child incidents** to **Do not reactivate child incidents when parent incident is reactivated**.
 6.  Select **OK**.
 
-# [Automatically update child incident status](##tab/UpdateChildIncidentStatus)
+# [Automatically update child incident status](#tab/UpdateChildIncidentStatus)
 
 Follow these steps to automatically update child incident status:
 
