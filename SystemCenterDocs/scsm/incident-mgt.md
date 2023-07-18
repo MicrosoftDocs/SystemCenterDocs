@@ -100,6 +100,8 @@ Use the following procedure to set default options for parent and child incident
 
 When choosing to automatically resolve child incidents or automatically reactivate child incidents when its parent is resolved or when its parent is reactivated, you can prompt the resolving analyst for their decision. When prompted, an analyst can choose a resolution category or activation status. Otherwise, when incidents are automatically resolved or activated, the analyst isn't prompted and the changes are effective immediately using the parent incident settings.
 
+Select the required tab for steps to automatically resolve or activate child incidents or automatically update child incident status:
+
 # [Automatically resolve child incidents](#tab/ResolveChildIncidents)
 
 Follow these steps to automatically resolve child incidents:
@@ -115,6 +117,8 @@ Follow these steps to automatically resolve child incidents:
 6.  Select **OK**.
 
 # [Automatically activate child incidents](#tab/ActivateChildIncidents)
+
+Follow these steps to automatically activate child incidents:
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
