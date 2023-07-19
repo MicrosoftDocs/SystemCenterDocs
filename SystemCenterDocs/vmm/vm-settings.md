@@ -81,7 +81,7 @@ You can use PowerShell to add a virtual adapter.
 
 Here are the sample cmdlets for setting this up. Select the required tab to view or copy the sample cmdlets:
 
-# [Example 1 - Add a vNIC](#tab/AddvNIC)
+# [Add a vNIC](#tab/AddvNIC)
 
 Sample cmdlets for adding a vNIC:
 
@@ -93,7 +93,7 @@ PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> New-SCVirtualNetworkAdapter -VM $VM -Synthetic
 ```
 
-# [Example 2 - Remove a vNIC](#tab/RemovevNIC)
+# [Remove a vNIC](#tab/RemovevNIC)
 
 The following PowerShell commands will remove a vNIC from a running VM. It assumes there's only one vNIC on the VM.
 
@@ -254,7 +254,7 @@ VMM includes resource throttling features, such as processor (CPU) and memory th
   
 Select the required tab for steps to configure processor or memory throttling:
 
-# [Configure processor throttling](#tab/ProcessorThrottling)
+# [Processor throttling](#tab/ProcessorThrottling)
 
 Follow these steps to configure processor throttling:
 
@@ -269,7 +269,7 @@ Follow these steps to configure processor throttling:
 3. In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
 4. In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine won't be allocated more than this percentage.
 
-# [Configure memory throttling](#tab/MemoryThrottling)
+# [Memory throttling](#tab/MemoryThrottling)
 
 Follow these steps to configure memory throttling:
 
