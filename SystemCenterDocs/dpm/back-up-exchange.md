@@ -49,8 +49,8 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
 -  To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node.
 
-> [!NOTE]
-> While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
+    > [!NOTE]
+    > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
 -  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
@@ -190,7 +190,7 @@ After the protection group has been created, the initial replication occurs, and
 
 Select the required tab for steps to recover a single mailbox, an Exchange database, or an entire Exchange server:
 
-# [Recover a single mailbox](#tab/RecoverSingleMailbox)
+# [A single mailbox](#tab/RecoverSingleMailbox)
 
 Follow these steps to recover a single mailbox:
 
@@ -244,7 +244,7 @@ Follow these steps to recover a single mailbox:
     Remove-MailboxDatabase -Identity 'RDB-CONTROL'
     ```
 
-# [Recover an Exchange database](#tab/RecoverExchangeDatabase)
+# [An Exchange database](#tab/RecoverExchangeDatabase)
 
 Follow these steps to recover an Exchange database:
 
@@ -278,7 +278,7 @@ Follow these steps to recover an Exchange database:
 
 -   To resume normal DAG operations, select the failed database copy, and then select **Resume**. A dialog appears prompting you to reseed (or reset) the database. Select **Yes**.
 
-# [Recover an entire Exchange server](#tab/RecoverExchangeServer)
+# [An entire Exchange server](#tab/RecoverExchangeServer)
 
 Follow these steps to recover an entire Exchange server:
 
