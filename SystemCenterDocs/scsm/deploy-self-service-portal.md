@@ -5,7 +5,7 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/10/2022
+ms.date: 07/19/2023
 ms.technology: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -39,7 +39,6 @@ The Self-Service portal provides web-based access to the features of System Cent
  - Windows Server 2016
  - Windows Server 2012 R2
  ::: moniker-end
-
 
 For more information, see [system requirements](system-requirements.md)
 ## Supported web browsers
@@ -171,8 +170,8 @@ The `<appSettings>` tab in the Web.config file offers some standard settings to 
 |MaxQueryResults|The value of this key defines the maximum number of results that are returned by any query form element inside your request offering forms.|
 |UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user-specific details of the signed-in user.|
 |DataCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache generic data which can be shared among different users.|
-|EnableTelemetry|The value of this key defines your selection about participating in Microsoft's Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as **True**. By default, it has the same value that you chose during Setup.|
-
+|EnableTelemetry|The value of this key defines your selection about participating in Microsoft's Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as **True**. By default, it has the same value that you chose during Setup.|,
+|CustomActiveRequestStatusEnumList|By default, the Self Service portal puts custom enumerations for My Request (incident and service requests) states in the *Closed* filter category. This key allows customization to map required custom states to the *Active* filter category. The value of this key should be a comma separated list containing *EnumTypeName* values of enumerations which are required to be mapped with the Active category in the Self Service Portal. You can look for desired custom states labeled *EnumTypeName* in the *EnumType* table, using the following example. </br></br> `SELECT [EnumTypeName]` </br></br> `FROM [<Service Manager DB name, which by default is “ServiceManager”>].[dbo].[EnumType]`|
 
 > [!NOTE]
 > You must restart the IIS service after you make any changes to the Web.config file.
