@@ -100,9 +100,9 @@ Use the following procedure to set default options for parent and child incident
 
 When choosing to automatically resolve child incidents or automatically reactivate child incidents when its parent is resolved or when its parent is reactivated, you can prompt the resolving analyst for their decision. When prompted, an analyst can choose a resolution category or activation status. Otherwise, when incidents are automatically resolved or activated, the analyst isn't prompted and the changes are effective immediately using the parent incident settings.
 
-Select the required tab for steps to automatically resolve or activate child incidents or automatically update child incident status:
+Select the required tab for steps to automatically resolve, activate, or update child incidents:
 
-# [Automatically resolve child incidents](#tab/ResolveChildIncidents)
+# [Resolve child incidents](#tab/ResolveChildIncidents)
 
 Follow these steps to automatically resolve child incidents:
 
@@ -116,7 +116,7 @@ Follow these steps to automatically resolve child incidents:
     -   If you don't want child incidents to automatically resolve, select **Auto resolution of child incidents** to **Do not resolve child incidents when parent incident is resolved**.
 6.  Select **OK**.
 
-# [Automatically activate child incidents](#tab/ActivateChildIncidents)
+# [Activate child incidents](#tab/ActivateChildIncidents)
 
 Follow these steps to automatically activate child incidents:
 
@@ -130,7 +130,7 @@ Follow these steps to automatically activate child incidents:
     -   If you don't want to automatically activate child incidents, set **Auto reactivation of child incidents** to **Do not reactivate child incidents when parent incident is reactivated**.
 6.  Select **OK**.
 
-# [Automatically update child incident status](#tab/UpdateChildIncidentStatus)
+# [Update child incident status](#tab/UpdateChildIncidentStatus)
 
 Follow these steps to automatically update child incident status:
 
@@ -355,7 +355,11 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 Use the following procedures to create two incident templates in Service Manager. The first you use to create email-related incidents, and the second you use with the Incident Change workflow for printer-related problems.
 
-### Create an email-related incident template
+Select the required tab for steps to create an email-related or a new printer-related incident template:
+
+# [Email-related incident template](#tab/EmailRelated)
+
+Follow these steps to create an email-related incident template:
 
 1.  In the Service Manager console, select **Library**.
 2.  In the **Library** pane, expand **Library**, and select **Templates**.
@@ -377,7 +381,9 @@ Use the following procedures to create two incident templates in Service Manager
     7.  In the **Support Group** box, select a tier. For example, if you want all email-related issues to be assigned to the tier 2 support group, select **Tier 2**.
     8.  Select **OK**.
 
-### Create a new printer-related incident template
+# [Printer-related incident template](#tab/PrinterRelated)
+
+Follow these steps to create a new printer-related incident template:
 
 1.  In the Service Manager console, select **Library**.
 2.  In the **Library** pane, expand **Library**, and select **Templates**.
@@ -393,10 +399,12 @@ Use the following procedures to create two incident templates in Service Manager
     2.  Select **OK**.
     3.  Press F5 to refresh the **Templates** pane.
 
+---
+
 ### Validate that the new incident template was created
 
--   Verify that the new incident templates are listed in the **Templates** pane.
+Verify that the new incident templates are listed in the **Templates** pane.
 
 ## Next steps
 
-- To measure incident and service request timeliness, see [Configure service level management](service-level-mgt.md).
+To measure incident and service request timeliness, see [Configure service level management](service-level-mgt.md).
