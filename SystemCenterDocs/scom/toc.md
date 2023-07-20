@@ -85,7 +85,9 @@
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 #### [FAQs](operations-manager-managed-instance-common-questions.md)
-#### [Troubleshoot](troubleshoot-scom-managed-instance.md)
+#### Troubleshoot
+##### [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
+##### [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
 #### Security
 ##### [Managed Identity](use-managed-identities-with-scom-mi.md)
 ##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)
