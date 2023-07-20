@@ -283,7 +283,7 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ### Issue: The provided static IP \<static IP\> and Load Balancer DNS \<DNS Name\> doesn't match
 
-**Resolution:** Check the DNS records and provide the correct DNS Name/Static IP combination. For more information, see [Create a static IP and confiure the DNS name](/system-center/scom/create-operations-manager-managed-instance&tabs=prereqs-active#create-a-static-ip-and-configure-the-dns-name).
+**Resolution:** Check the DNS records and provide the correct DNS Name/Static IP combination. For more information, see [Create a static IP and confiure the DNS name](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-a-static-ip-and-configure-the-dns-name).
 
 ### General troubleshooting steps
 
@@ -317,11 +317,11 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ### Issue: The input computer group \<computer group name\> isn't managed by the user \<domain username\>
 
-**Resolution:** Navigate to the group properties and set this user as the manager. For more information, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the group properties and set this user as the manager. For more information, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
 
 ### Issue: The manager \<domain username\> of the input computer group \<computer group name\> doesn't have the necessary permissions to manage group membership
 
-**Resolution:** Navigate to the group properties and check the Manage can update membership list checkbox. For more details, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the group properties and check the Manage can update membership list checkbox. For more details, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
 
 ### General troubleshooting steps
 
@@ -385,41 +385,41 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 **Resolution:** Enable it using the following command:
 
-       ```powershell
-       Set-ADServiceAccount -Identity <domain gMSA> -Enabled $true
-       ```
+```powershell
+Set-ADServiceAccount -Identity <domain gMSA> -Enabled $true
+```
 
 ### Issue: gMSA  \<domain gMSA\> needs to have its DNS Host Name set to \<DNS Name\>
 
 **Resolution:** The gMSA doesn't have the DNSHostName property set correctly. Set the DNSHostName property using the following command:
 
-       ```powershell
-       Set-ADServiceAccount -Identity <domain gMSA> -DNSHostName <DNS Name>
-       ```
+```powershell
+Set-ADServiceAccount -Identity <domain gMSA> -DNSHostName <DNS Name>
+```
 
 ### Issue: The Sam Account Name for gMSA \<domain gMSA\> exceeds the limit of 15 characters
 
 **Resolution:** Set the SamAccountName using the following command:
 
-       ```powershell
-       Set-ADServiceAccount -Identity <domain gMSA> -SamAccountName <shortname$>
-       ```
+```powershell
+Set-ADServiceAccount -Identity <domain gMSA> -SamAccountName <shortname$>
+```
 
 ### Issue: Computer  Group \<computer group name\> needs to be set as the PrincipalsAllowedToRetrieveManagedPassword for gMSA \<domain gMSA\>
 
 **Resolution:** The gMSA doesn't have PrincipalsAllowedToRetrieveManagedPassword set correctly. Set the PrincipalsAllowedToRetrieveManagedPassword using the following command:
 
-       ```powershell
-       Set-ADServiceAccount -Identity <domain gMSA> - PrincipalsAllowedToRetrieveManagedPassword <computer group name>
-       ```
+```powershell
+Set-ADServiceAccount -Identity <domain gMSA> - PrincipalsAllowedToRetrieveManagedPassword <computer group name>
+```
 
 ### Issue: The SPNs haven't been set correctly for the gMSA \<domain gMSA\>
 
 **Resolution:** The gMSA doesn't have correct Service Principal Names set. Set the Service Principal Names using the following command:
 
-       ```powershell
-       Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs>
-       ```
+```powershell
+Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs>
+```
 
 ### General troubleshooting steps
 
