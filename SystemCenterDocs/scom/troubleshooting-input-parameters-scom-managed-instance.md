@@ -165,7 +165,7 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ## DNS Server connectivity
 
-### Issue: DNS IP provided (<DNS IP>) is incorrect, or the DNS Server isn't reachable
+### Issue: DNS IP provided (\<DNS IP\>) is incorrect, or the DNS Server isn't reachable
 
 **Resolution:** Check the DNS Server IP, and ensure that DNS Server is up and running.
 
@@ -195,7 +195,7 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ## Domain connectivity
 
-### Issue: Domain controller for domain <domain name> isn't reachable from this network, or port 9389 isn/t open on at least one domain controller
+### Issue: Domain controller for domain \<domain name\> isn't reachable from this network, or port 9389 isn/t open on at least one domain controller
 
 **Cause:** Occurs due to an issue with the provided DNS Server IP or your network configuration.
 **Resolution:**
@@ -277,13 +277,13 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 **Resolution:** Ensure that the machines can join the domain. Follow the troubleshooting steps from the [Domain join validation section](#domain-join-validation).
 
-### Issue: DNS Name <DNS Name> couldn't be resolved
+### Issue: DNS Name \<DNS Name\> couldn't be resolved
 
 **Resolution:** The DNS Name provided doesn't exist in the DNS records. Check the DNS name and ensure it is correctly associated with the Static IP provided.
 
-### Issue: The provided static IP <static IP> and Load Balancer DNS <DNS Name> doesn't match
+### Issue: The provided static IP \<static IP\> and Load Balancer DNS \<DNS Name\> doesn't match
 
-**Resolution:** Check the DNS records and provide the correct DNS Name/Static IP combination. For more information, see [Create a static IP and confiure the DNS name](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-active#create-a-static-ip-and-configure-the-dns-name).
+**Resolution:** Check the DNS records and provide the correct DNS Name/Static IP combination. For more information, see [Create a static IP and confiure the DNS name](/system-center/scom/create-operations-manager-managed-instance&tabs=prereqs-active#create-a-static-ip-and-configure-the-dns-name).
 
 ### General troubleshooting steps
 
@@ -311,17 +311,17 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 **Resolution:** Ensure that the machines can join the domain. Follow the troubleshooting steps specified in the [Domain join validation section](#domain-join-validation).
 
-### Issue: Computer group with name <computer group name> couldn't be found in your domain
+### Issue: Computer group with name \<computer group name\> couldn't be found in your domain
 
 **Resolution:** Verify the existence of the group and check the name provided or create a new one if not created already.
 
-### Issue: The input computer group <computer group name> isn't managed by the user <domain username>
+### Issue: The input computer group \<computer group name\> isn't managed by the user \<domain username\>
 
-**Resolution:** Navigate to the group properties and set this user as the manager. For more information, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the group properties and set this user as the manager. For more information, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance&tabs=prereqs-active#create-and-configure-a-computer-group).
 
-### Issue: The manager <domain username> of the input computer group <computer group name> doesn't have the necessary permissions to manage group membership
+### Issue: The manager \<domain username\> of the input computer group \<computer group name\> doesn't have the necessary permissions to manage group membership
 
-**Resolution:** Navigate to the group properties and check the Manage can update membership list checkbox. For more details, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the group properties and check the Manage can update membership list checkbox. For more details, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance&tabs=prereqs-active#create-and-configure-a-computer-group).
 
 ### General troubleshooting steps
 
@@ -373,53 +373,53 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 **Resolution:** Ensure that the machines can join the domain. Follow the troubleshooting steps specified in the [Domain join validation section](#domain-join-validation).
 
-### Issue: Computer group with name <computer group name> isn't found in your domain. The members of this group must be able to retrieve the gMSA password
+### Issue: Computer group with name \<computer group name\> isn't found in your domain. The members of this group must be able to retrieve the gMSA password
 
 **Resolution:** Verify the existence of the group and check the name provided.
 
-### Issue: gMSA with name <domain gMSA> couldn't be found in your domain
+### Issue: gMSA with name \<domain gMSA\> couldn't be found in your domain
 
 **Resolution:** Verify the existence of the account and check the name provided or create a new one if it has not been created already.
 
-### Issue: gMSA <domain gMSA> isn't enabled
+### Issue: gMSA \<domain gMSA\> isn't enabled
 
 **Resolution:** Enable it using the following command:
 
-      ```powershell
-      Set-ADServiceAccount -Identity <domain gMSA> -Enabled $true
-      ```
+       ```powershell
+       Set-ADServiceAccount -Identity <domain gMSA> -Enabled $true
+       ```
 
-### Issue: gMSA  <domain gMSA> needs to have its DNS Host Name set to <DNS Name>
+### Issue: gMSA  \<domain gMSA\> needs to have its DNS Host Name set to \<DNS Name\>
 
 **Resolution:** The gMSA doesn't have the DNSHostName property set correctly. Set the DNSHostName property using the following command:
 
-      ```powershell
-      Set-ADServiceAccount -Identity <domain gMSA> -DNSHostName <DNS Name>
-      ```
+       ```powershell
+       Set-ADServiceAccount -Identity <domain gMSA> -DNSHostName <DNS Name>
+       ```
 
-### Issue: The Sam Account Name for gMSA <domain gMSA> exceeds the limit of 15 characters
+### Issue: The Sam Account Name for gMSA \<domain gMSA\> exceeds the limit of 15 characters
 
 **Resolution:** Set the SamAccountName using the following command:
 
-      ```powershell
-      Set-ADServiceAccount -Identity <domain gMSA> -SamAccountName <shortname$>
-      ```
+       ```powershell
+       Set-ADServiceAccount -Identity <domain gMSA> -SamAccountName <shortname$>
+       ```
 
-### Issue: Computer  Group <computer group name> needs to be set as the PrincipalsAllowedToRetrieveManagedPassword for gMSA <domain gMSA>
+### Issue: Computer  Group \<computer group name\> needs to be set as the PrincipalsAllowedToRetrieveManagedPassword for gMSA \<domain gMSA\>
 
 **Resolution:** The gMSA doesn't have PrincipalsAllowedToRetrieveManagedPassword set correctly. Set the PrincipalsAllowedToRetrieveManagedPassword using the following command:
 
-      ```powershell
-      Set-ADServiceAccount -Identity <domain gMSA> - PrincipalsAllowedToRetrieveManagedPassword <computer group name>
-      ```
+       ```powershell
+       Set-ADServiceAccount -Identity <domain gMSA> - PrincipalsAllowedToRetrieveManagedPassword <computer group name>
+       ```
 
-### Issue: The SPNs haven't been set correctly for the gMSA <domain gMSA >
+### Issue: The SPNs haven't been set correctly for the gMSA \<domain gMSA\>
 
 **Resolution:** The gMSA doesn't have correct Service Principal Names set. Set the Service Principal Names using the following command:
 
-      ```powershell
-      Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs>
-      ```
+       ```powershell
+       Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs>
+       ```
 
 ### General troubleshooting steps
 
@@ -472,19 +472,19 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 **Resolution:** Ensure that the machines join the domain. Follow the troubleshooting steps from the [Domain join validation section](#domain-join-validation).
 
-### Issue: gMSA with name <domain gMSA> couldn't be found in your domain. This account needs to be a local administrator on the server
+### Issue: gMSA with name \<domain gMSA\> couldn't be found in your domain. This account needs to be a local administrator on the server
 
 **Resolution:** Verify the existence of the account and check the name provided.
 
-### Issue: The accounts <domain username> and <domain gMSA> couldn't be added to the local Administrators group on the test management servers or did not persist in the group after group policy update
+### Issue: The accounts \<domain username\> and \<domain gMSA\> couldn't be added to the local Administrators group on the test management servers or did not persist in the group after group policy update
 
 **Resolution:** Ensure that the domain username and gMSA inputs provided are correct, including the full name (domain\account). Also check if there are any group policies overriding the local Administrators group on OU containing the test management servers.
 
 ### Issue: SCOM Managed Instance failed
 
-**Cause:** A group policy in your domain (name: <group policy name>) is overriding the local Administrators group on test management servers, either on the OU containing the servers or the root of the domain.
+**Cause:** A group policy in your domain (name: \<group policy name\>) is overriding the local Administrators group on test management servers, either on the OU containing the servers or the root of the domain.
 
-**Resolution:** Ensure that the OU for SCOM Managed Instance Management Servers (<OU Path>) isn't affected by this policy and that no policies override the group.
+**Resolution:** Ensure that the OU for SCOM Managed Instance Management Servers (\<OU Path\>) isn't affected by this policy and that no policies override the group.
 
 ### General troubleshooting steps
 
@@ -511,7 +511,7 @@ Retrieve OU details using the following command:
 
       ` Get-ADOrganizationalUnit -Filter "DistinguishedName -like '$ouPathDN'" -Properties CanonicalName -Credential $domainUserCredentials`
 
-      Replace the `<OuPathDN>` with the actual OU path and provide actual $domainUserCredentials.
+      Replace the \<OuPathDN\> with the actual OU path and provide actual $domainUserCredentials.
 
 5. To get the GPO (Group Policy Object) report from the domain and check for overriding policies on the local Administrators group, run the following command:
 
