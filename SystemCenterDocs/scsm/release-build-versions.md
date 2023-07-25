@@ -5,10 +5,11 @@ description: This article details the release builds in Service Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 06/08/2023
+ms.date: 07/20/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
+ms.custom: engagement-fy23
 ---
 
 # System Center – Service Manager build versions
