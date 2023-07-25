@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/20/2023
+ms.date: 07/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -47,11 +47,11 @@ Use the following guidelines for using the script:
 
 ## General guidelines for running validation script
 
-During the onboarding process, a validation is conducted at the validation stage/tab. If all validations are successful, you can proceed to the final creation stage. However, if any validations fail, you can't proceed with the creation.
+During the onboarding process, a validation is conducted at the validation stage/tab. If all validations are successful, you can proceed to the final stage of creating SCOM Managed Instance. However, if any validations fail, you can't proceed with the creation.
 
 In cases where multiple validations fail, the best approach is to address all the issues at once by manually running a validation script on a test machine.
 
-Follow the below steps for running the validation script:
+Follow these steps for running the validation script:
 
 1. Create a new test virtual machine (VM) in the same subnet selected for SCOM Managed Instance creation and sign in to the VM.
 
@@ -59,10 +59,9 @@ Follow the below steps for running the validation script:
       1. Validation.ps1
       2. Runvalidation.ps1
 
+3. Open the *RunValidation.ps1* in PowerShell ISE, provide the applicable input values in settings dictionary and run the *RunValidation.ps1* by selecting F5. You can add break point in the specific check to understand the issues better.
 
-3. Open the *RunValidation.ps1* in PowerShell ISE, provide the right input values in settings dictionary and run the *RunValidation.ps1* by selecting F5. You can add break point in the specific check to understand the issues better.
-
-4. The validation script will display all the validation checks and their respective errors, which will assist in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
+4. The validation script displays all the validation checks and their respective errors, which will assist in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 
 If all the checks pass successfully, return to the onboarding page and commence the onboarding process again.
 
