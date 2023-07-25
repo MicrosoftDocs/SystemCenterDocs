@@ -5,11 +5,11 @@ description: This article details the known issues and issues fixed in Orchestra
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/26/2023
+ms.date: 07/20/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Release notes for System Center Orchestrator

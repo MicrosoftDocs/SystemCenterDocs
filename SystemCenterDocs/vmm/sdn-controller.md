@@ -5,10 +5,11 @@ description: This article describes how to set up a Software Defined Network (SD
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/18/2023
+ms.date: 07/20/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy23, UpdateFrequency2
 ---
 
 # Set up an SDN network controller in the VMM fabric

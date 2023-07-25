@@ -6,11 +6,11 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 11/15/2022
+ms.date: 07/20/2023
 title: Upgrade your System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Upgrade your DPM installation
