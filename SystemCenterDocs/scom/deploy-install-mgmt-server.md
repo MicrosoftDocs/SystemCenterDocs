@@ -5,11 +5,11 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.reviewer: randolphwest
-ms.date: 02/23/2023
+ms.date: 07/20/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-ms.custom: na
+ms.custom: engagement-fy23
 ---
 
 # How to install an Operations Manager management server
