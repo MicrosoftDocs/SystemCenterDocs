@@ -7,10 +7,10 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 07/17/2023
 ms.technology: service-manager
 ms.assetid: 37c13875-a46b-4387-b35a-5d2c8f511f56
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy23
 ---
 
 # Use the Service Manager service catalog to offer services
@@ -242,7 +242,11 @@ After you create a request offering or a service offering, you can copy the offe
 
 You can use the following procedures to copy a request offering and a service offering. Keep in mind that if you copy a published catalog item, the published status of the copy is set to Draft.
 
-### To copy a request offering
+Select the required tab for steps to copy a request or service offering:
+
+# [Copy a request offering](#tab/CopyRequestOffering)
+
+Follow these steps to copy a request offering:
 
 1.  In the Service Manager console, select **Library**.
 2.  In the **Library** pane, expand **Service Catalog**, expand **Request Offerings**, and then select **All Request Offerings**.
@@ -252,7 +256,9 @@ You can use the following procedures to copy a request offering and a service of
 6.  Select **OK** to close the dialog and create the copy.
 7.  The copied item appears in the list, with a prefix of **Copy of**. For example, your copy might have the name **Copy of Access to Active Directory Group**.
 
-### To copy a service offering
+# [Copy a service offering](#tab/CopyServiceOffering)
+
+Follow these steps to copy a service offering:
 
 1.  In the Service Manager console, select **Library**.
 2.  In the **Library** pane, expand **Service Catalog**, expand **Service Offerings**, and then select **All Service Offerings**.
@@ -260,6 +266,8 @@ You can use the following procedures to copy a request offering and a service of
 4.  Optionally, you can change the management pack where information about the copied service offering is stored or you can create a new management pack.
 5.  Select **OK** to close the dialog and create the copy.
 6.  The copied item appears in the list, with a prefix of **Copy of**. For example, your copy might have the name **Copy of Access Services**.
+
+---
 
 ## Publish a service offering
 
@@ -289,7 +297,9 @@ Request offerings are catalog items that describe the item, assistance, or actio
 
 You can use the following procedures to edit a service offering or a request offering.
 
-### To edit a request offering
+# [Edit a request offering](#tab/EditRequestOffering)
+
+Follow these steps to edit a request offering:
 
 1.  In the Service Manager console, select **Library**.
 2.  In the **Library** pane, expand **Service Catalog**, expand **Request Offerings**, and then select **All Request Offerings**.
@@ -322,7 +332,9 @@ You can use the following procedures to edit a service offering or a request off
 10. Optionally, on the **Publish** page, you can set publishing information.
 11. Select **OK** to close the **Edit Request Offering** form.
 
-### To edit a service offering
+# [Edit a service offering](#tab/EditServiceOffering)
+
+Follow these steps to edit a service offering:
 
 1.  In the Service Manager console, select **Library**.
 2.  In the **Library** pane, expand **Service Catalog**, expand **Service Offerings**, and then select **All Service Offerings**.
@@ -346,6 +358,8 @@ You can use the following procedures to edit a service offering or a request off
 10. On the  **Publish** page in the **Offering status** list, select **Published**, and then set the **Offering owner** to yourself.
 11. Select **OK** to close the **Edit Service Offering** form.
 
+---
+
 ## Next steps
 
-- [Use groups, queues, and lists in Service Manager](group-queue-lists.md).
+[Use groups, queues, and lists in Service Manager](group-queue-lists.md).

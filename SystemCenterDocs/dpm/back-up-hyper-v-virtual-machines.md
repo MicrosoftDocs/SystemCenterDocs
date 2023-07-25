@@ -5,11 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 06/21/2022
+ms.date: 07/20/2023
 title: Back up Hyper V virtual machines
 ms.technology: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
 ms.author: jsuri
+ms.custom: engagement-fy23
 ---
 
 # Back up Hyper-V virtual machines
