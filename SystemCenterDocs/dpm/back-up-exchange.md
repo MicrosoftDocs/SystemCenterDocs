@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 05/05/2023
+ms.date: 07/12/2023
 title: Back up Exchange with DPM
 ms.technology: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
@@ -38,9 +38,9 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
     1.  At the command prompt, navigate to the `<DPM installation folder>\Bin` directory.
 
-    2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
+    2.  Enter the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
-        For example, in a typical installation, type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
+        For example, in a typical installation, enter: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
       > [!NOTE]
       > The *Eseutil* isn't forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server version. <br>To avoid this, we recommend you to use a separate DPM server for protecting each version of the Exchange Server with respective *Eseutil* version installed on the DPM server. If that isn't feasible, you need to turn on the integrity check for only one version of Exchange Server databases with the respective version of *Eseutil*.
@@ -49,8 +49,8 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
 -  To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node.
 
-> [!NOTE]
-> While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
+      > [!NOTE]
+      > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
 -  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
@@ -170,11 +170,11 @@ After the protection group has been created, the initial replication occurs, and
 
 1.  In the DPM Administrator Console, select **Monitoring** > **Action** > **Options**.
 
-2.  Select **SMTP Server**, type the server name, port, and email address from which notifications will be sent. The address must be valid.
+2.  Select **SMTP Server**, enter the server name, port, and email address from which notifications will be sent. The address must be valid.
 
-3.  In **Authenticated SMTP server**, type a username and password. The username and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
+3.  In **Authenticated SMTP server**, enter a username and password. The username and password must be the domain account name of the person whose **From** address is described in the previous step; otherwise, notification delivery fails.
 
-4.  To test the SMTP server settings, select **Send Test E-mail**, type the email address where you want DPM to send the test message and then select **OK**. Select **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients**, type the email address for each recipient to whom you want DPM to send copies of the notifications.
+4.  To test the SMTP server settings, select **Send Test E-mail**, enter the email address where you want DPM to send the test message and then select **OK**. Select **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients**, enter the email address for each recipient to whom you want DPM to send copies of the notifications.
 
 5.  To test the SMTP server settings, select **Send Test Notification** > **OK**.
 
@@ -188,7 +188,11 @@ After the protection group has been created, the initial replication occurs, and
 
 ## Recover Exchange data
 
-# [Recover a single mailbox](#tab/RecoverSingleMailbox)
+Select the required tab for steps to recover a single mailbox, an Exchange database, or an entire Exchange server:
+
+# [A single mailbox](#tab/RecoverSingleMailbox)
+
+Follow these steps to recover a single mailbox:
 
 1.  On the protected Exchange server, verify whether you've an existing recovery mailbox database. If you don't, create one using the New-MailboxDatabase cmdlet. Configure the recovery database so it can be overwritten by using the Set-MailboxDatabase cmdlet. For example:
 
@@ -212,7 +216,7 @@ After the protection group has been created, the initial replication occurs, and
 
 6.  In the **Specify Recovery Options** page, do the following:
 
-    1.  **Mount the databases after they are recovered**. Clear the check box if you don't want to mount the databases.
+    1.  **Mount the databases after they are recovered**. Clear the checkbox if you don't want to mount the databases.
 
     2.  **Network bandwidth usage throttling**. Select **Modify** to enable throttling.
 
@@ -240,7 +244,9 @@ After the protection group has been created, the initial replication occurs, and
     Remove-MailboxDatabase -Identity 'RDB-CONTROL'
     ```
 
-# [Recover an Exchange database](#tab/RecoverExchangeDatabase)
+# [An Exchange database](#tab/RecoverExchangeDatabase)
+
+Follow these steps to recover an Exchange database:
 
 -   In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protected Exchange Data** node).
 
@@ -272,7 +278,9 @@ After the protection group has been created, the initial replication occurs, and
 
 -   To resume normal DAG operations, select the failed database copy, and then select **Resume**. A dialog appears prompting you to reseed (or reset) the database. Select **Yes**.
 
-# [Recover an entire Exchange server](#tab/RecoverExchangeServer)
+# [An entire Exchange server](#tab/RecoverExchangeServer)
+
+Follow these steps to recover an entire Exchange server:
 
 -   In the DPM Administrator Console, go to the **Recovery** view and navigate to the server you want to recover.
 
@@ -327,9 +335,9 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 
     1.  At the command prompt, navigate to the `<DPM installation folder>\Bin` directory.
 
-    2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
+    2.  Enter the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
-        For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
+        For example, in a typical installation, enter: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
     > [!NOTE]
     > The *Eseutil* isn't forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server versions.<br>
@@ -410,7 +418,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 2.  In **Select Protection Group Type**, select **Servers**.
 
-3.  In **Select Group Members**, select all the DAGs that store data you want to protect. For each Exchange server, you can also select to do a system state backup or full bare metal backup (which includes the system state. This is useful if you want the ability to recover your entire server and not just data. [Deploy protection groups](create-dpm-protection-groups.md).
+3.  In **Select Group Members**, select all the DAGs that store data you want to protect. For each Exchange server, you can also select to do a system state backup or full bare metal backup (which includes the system state). This is useful if you want the ability to recover your entire server and not just data. [Deploy protection groups](create-dpm-protection-groups.md).
 
 4.  In **Select data protection method**, specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
@@ -461,11 +469,11 @@ After the protection group has been created, the initial replication occurs and 
 
 1.  In the DPM Administrator Console, select **Monitoring** > **Action** > **Options**.
 
-2.  Select **SMTP Server**, type the server name, port, and email address from which notifications will be sent. The address must be valid.
+2.  Select **SMTP Server**, enter the server name, port, and email address from which notifications will be sent. The address must be valid.
 
-3.  In **Authenticated SMTP server**, type a username and password. The username and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
+3.  In **Authenticated SMTP server**, enter a username and password. The username and password must be the domain account name of the person whose **From** address is described in the previous step; otherwise, notification delivery fails.
 
-4.  To test the SMTP server settings, select **Send Test E-mail**, type the email address where you want DPM to send the test message, and then select **OK**. Select **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients**, type the email address for each recipient to whom you want DPM to send copies of the notifications.
+4.  To test the SMTP server settings, select **Send Test E-mail**, enter the email address where you want DPM to send the test message, and then select **OK**. Select **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients**, enter the email address for each recipient to whom you want DPM to send copies of the notifications.
 
 5.  To test the SMTP server settings, select **Send Test Notification** > **OK**.
 
@@ -479,7 +487,11 @@ After the protection group has been created, the initial replication occurs and 
 
 ## Recover Exchange data
 
-### <a name="BKMK_Single"></a>Recover a single mailbox
+Select the required tab for steps to recover a single mailbox, an Exchange database, or an entire Exchange server:
+
+# [Recover a single mailbox](#tab/SingleMailbox)
+
+Follow these steps to recover a single mailbox:
 
 1.  On the protected Exchange server, verify whether you've an existing recovery mailbox database. If you don't, create one using the New-MailboxDatabase cmdlet. Configure the recovery database so it can be overwritten by using the Set-MailboxDatabase cmdlet. For example:
 
@@ -503,7 +515,7 @@ After the protection group has been created, the initial replication occurs and 
 
 6.  In the **Specify Recovery Options** page, do the following:
 
-    1.  **Mount the databases after they are recovered**. Clear the check box if you don't want to mount the databases.
+    1.  **Mount the databases after they are recovered**. Clear the checkbox if you don't want to mount the databases.
 
     2.  **Network bandwidth usage throttling**. Select **Modify** to enable throttling.
 
@@ -531,7 +543,9 @@ After the protection group has been created, the initial replication occurs and 
     Remove-MailboxDatabase -Identity 'RDB-CONTROL'
     ```
 
-### <a name="BKMK_DB"></a>Recover an Exchange database
+# [Recover an Exchange database](#tab/ExchangeDatabase)
+
+Follow these steps to recover an Exchange database:
 
 -   In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protected Exchange Data** node).
 
@@ -563,7 +577,9 @@ After the protection group has been created, the initial replication occurs and 
 
 -   To resume normal DAG operations, select the failed database copy, and then select **Resume**. A dialog appears prompting you to reseed (or reset) the database. Select **Yes**.
 
-### <a name="BKMK_Server"></a>Recover an entire Exchange server
+# [Recover an entire Exchange server](#tab/EntireExchangeServer)
+
+Follow these steps to recover an entire Exchange server:
 
 -   In the DPM Administrator Console, go to the **Recovery** view and navigate to the server you want to recover.
 
@@ -596,5 +612,7 @@ After the protection group has been created, the initial replication occurs and 
 -   In the **Select a system image backup** page, select **Select a system image**. Select **Advanced** to select recovery files from a network share. Select **Search for a system image on the network** and select **Yes** when asked if you're sure you want to connect to the network.
 
 -   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then select **Finish** to start the restore.
+
+---
 
 ::: moniker-end
