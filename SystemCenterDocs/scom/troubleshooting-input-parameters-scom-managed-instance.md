@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/25/2023
+ms.date: 07/27/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -26,7 +26,7 @@ Use the following guidelines for using the script:
 1. Download the script and run it with the **-Help** option to get the parameters.
 2. Sign in with domain credentials to a domain joined machine and then run the script with the specified parameters.
 3. If any validation fails, take the corrective actions suggested by the script and re-run the script until it passes all validations.
-4. Once all the validations are successful, select **Continue to create** and use the same parameters used in the script, for instance creation.
+4. Once all the validations are successful, use the same parameters used in the script, for instance creation.
 
 ## Validation checks and details
 
@@ -49,19 +49,92 @@ Use the following guidelines for using the script:
 
 During the onboarding process, a validation is conducted at the validation stage/tab. If all validations are successful, you can proceed to the final stage of creating SCOM Managed Instance. However, if any validations fail, you can't proceed with the creation.
 
-In cases where multiple validations fail, the best approach is to address all the issues at once by manually running a validation script on a test machine.
+In cases where multiple validations fail, the best approach is to address all the issues at once by manually running a [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip) on a test machine.
 
-Follow these steps for running the validation script:
+> [!Important]
+> Initially, Create a new test Windows Server (2022/2019) virtual machine (VM) in the same subnet selected for SCOM Managed Instance creation. Subsequently, both your AD admin and Network admin can individually utilize this VM to verify the effectiveness of their respective changes. This approach significantly saves time spent on back and forth communication between the AD admin and Network admin. 
 
-1. Create a new test virtual machine (VM) in the same subnet selected for SCOM Managed Instance creation and sign in to the VM.
+Follow these steps to run the validation script:
 
-2. Download the validation script to the test VM and extract.  It  consists of two files:
-      1. Validation.ps1
-      2. Runvalidation.ps1
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM managed instance.
 
-3. Open the *RunValidation.ps1* in PowerShell ISE, provide the applicable input values in settings dictionary and run the *RunValidation.ps1* by selecting F5. You can add break point in the specific check to understand the issues better.
+2. Download the validation script to the test VM and extract. It consists of three files:
+       - ScomValidation.ps1
+       - RunValidation.ps1
+       - Readme.txt
 
-4. The validation script displays all the validation checks and their respective errors, which will assist in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
+3. Follow the steps mentioned in the Readme.txt file to run the RunValidation.ps1. Ensure to fill the settings value in RunValidation.ps1 with applicable values before running it.
+
+       ```powershell
+            # $settings = @{
+       #   Configuration = @{
+       #         DomainName="test.com"                 
+       #         OuPath= "DC=test,DC=com"           
+       #         DNSServerIP = "190.36.1.55"           
+       #         UserName="test\testuser"              
+       #         Password = "password"                 
+       #         SqlDatabaseInstance= "test-sqlmi-instance.023a29518976.database.windows.net" 
+       #         ManagementServerGroupName= "ComputerMSG"      
+       #         GmsaAccount= "test\testgMSA$"
+       #         DnsName= "lbdsnname.test.com"
+       #         LoadBalancerIP = "10.88.78.200"
+       #     }
+       # }
+
+       # Note : Before running this script, please make sure you have provided all the parameters in the settings
+
+       $settings = @{
+       Configuration = @{
+        DomainName="<domain name>"
+        OuPath= "<OU path>"
+        DNSServerIP = "<DNS server IP>"
+        UserName="<domain user name>"
+        Password = "<domain user password>"
+        SqlDatabaseInstance= "<SQL MI Host name>"
+        ManagementServerGroupName= "<Computer Management server group name>"
+        GmsaAccount= "<GMSA account>"
+        DnsName= "<DNS name associated with the load balancer IP address>"
+        LoadBalancerIP = "<Load balancer IP address>"
+        }
+       }
+       ```
+
+4. In general, RunValidation.ps1 runs all the validations. If you wish to run a specific check, then open ScomValidation.ps1 and comment all other checks which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
+
+       ```powershell
+       {
+        # Connectivity checks
+       $validationResults += Invoke-ValidateStorageConnectivity $settings
+       $results = ConvertTo-Json $validationResults -Compress
+           
+       $validationResults += Invoke-ValidateSQLConnectivity $settings
+       $results = ConvertTo-Json $validationResults -Compress
+
+       $validationResults += Invoke-ValidateDnsIpAddress $settings
+       $results = ConvertTo-Json $validationResults -Compress
+
+       $validationResults += Invoke-ValidateDomainControllerConnectivity $settings
+       $results = ConvertTo-Json $validationResults -Compress
+
+       # Parameter validations
+       $validationResults += Invoke-ValidateDomainJoin $settings
+       $results = ConvertTo-Json $validationResults -Compress
+
+       $validationResults += Invoke-ValidateStaticIPAddressAndDnsname $settings
+       $results = ConvertTo-Json $validationResults -Compress
+
+       $validationResults += Invoke-ValidateComputerGroup $settings
+       $results = ConvertTo-Json $validationResults -Compress
+
+       $validationResults += Invoke-ValidategMSAAccount $settings
+       $results = ConvertTo-Json $validationResults -Compress
+        
+       $validationResults += Invoke-ValidateLocalAdminOverideByGPO $settings
+       $results = ConvertTo-Json $validationResults -Compress
+       }
+       ```
+
+5. The validation script displays all the validation checks and their respective errors, which will assist in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 
 If all the checks pass successfully, return to the onboarding page and commence the onboarding process again.
 
