@@ -65,74 +65,72 @@ Follow these steps to run the validation script:
 
 3. Follow the steps mentioned in the Readme.txt file to run the *RunValidation.ps1*. Ensure to fill the settings value in *RunValidation.ps1* with applicable values before running it.
 
-       ```powershell
-            # $settings = @{
-       #   Configuration = @{
-       #         DomainName="test.com"                 
-       #         OuPath= "DC=test,DC=com"           
-       #         DNSServerIP = "190.36.1.55"           
-       #         UserName="test\testuser"              
-       #         Password = "password"                 
-       #         SqlDatabaseInstance= "test-sqlmi-instance.023a29518976.database.windows.net" 
-       #         ManagementServerGroupName= "ComputerMSG"      
-       #         GmsaAccount= "test\testgMSA$"
-       #         DnsName= "lbdsnname.test.com"
-       #         LoadBalancerIP = "10.88.78.200"
-       #     }
-       # }
-
-       # Note : Before running this script, please make sure you have provided all the parameters in the settings
-
-       $settings = @{
-       Configuration = @{
-        DomainName="<domain name>"
-        OuPath= "<OU path>"
-        DNSServerIP = "<DNS server IP>"
-        UserName="<domain user name>"
-        Password = "<domain user password>"
-        SqlDatabaseInstance= "<SQL MI Host name>"
-        ManagementServerGroupName= "<Computer Management server group name>"
-        GmsaAccount= "<GMSA account>"
-        DnsName= "<DNS name associated with the load balancer IP address>"
-        LoadBalancerIP = "<Load balancer IP address>"
-        }
-       }
-       ```
+      ```powershell
+      # $settings = @{
+      #   Configuration = @{
+      #         DomainName="test.com"                 
+      #         OuPath= "DC=test,DC=com"           
+      #         DNSServerIP = "190.36.1.55"           
+      #         UserName="test\testuser"              
+      #         Password = "password"                 
+      #         SqlDatabaseInstance= "test-sqlmi-instance.023a29518976.database.windows.net" 
+      #         ManagementServerGroupName= "ComputerMSG"      
+      #         GmsaAccount= "test\testgMSA$"
+      #         DnsName= "lbdsnname.test.com"
+      #         LoadBalancerIP = "10.88.78.200"
+      #     }
+      # }
+      # Note : Before running this script, please make sure you have provided all the parameters in the settings
+      $settings = @{
+      Configuration = @{
+      DomainName="<domain name>"
+      OuPath= "<OU path>"
+      DNSServerIP = "<DNS server IP>"
+      UserName="<domain user name>"
+      Password = "<domain user password>"
+      SqlDatabaseInstance= "<SQL MI Host name>"
+      ManagementServerGroupName= "<Computer Management server group name>"
+      GmsaAccount= "<GMSA account>"
+      DnsName= "<DNS name associated with the load balancer IP address>"
+      LoadBalancerIP = "<Load balancer IP address>"
+      }
+      }
+      ```
 
 4. In general, *RunValidation.ps1* runs all the validations. If you wish to run a specific check, then open *ScomValidation.ps1* and comment all other checks which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
 
-       ```powershell
-       {
-        # Connectivity checks
-       $validationResults += Invoke-ValidateStorageConnectivity $settings
-       $results = ConvertTo-Json $validationResults -Compress
-           
-       $validationResults += Invoke-ValidateSQLConnectivity $settings
-       $results = ConvertTo-Json $validationResults -Compress
+      ```powershell
+      {
+      # Connectivity checks
+      $validationResults += Invoke-ValidateStorageConnectivity $settings
+      $results = ConvertTo-Json $validationResults -Compress
+       
+      $validationResults += Invoke-ValidateSQLConnectivity $settings
+      $results = ConvertTo-Json $validationResults -Compress
 
-       $validationResults += Invoke-ValidateDnsIpAddress $settings
-       $results = ConvertTo-Json $validationResults -Compress
+      $validationResults += Invoke-ValidateDnsIpAddress $settings
+      $results = ConvertTo-Json $validationResults -Compress
 
-       $validationResults += Invoke-ValidateDomainControllerConnectivity $settings
-       $results = ConvertTo-Json $validationResults -Compress
+      $validationResults += Invoke-ValidateDomainControllerConnectivity $settings
+      $results = ConvertTo-Json $validationResults -Compress
 
-       # Parameter validations
-       $validationResults += Invoke-ValidateDomainJoin $settings
-       $results = ConvertTo-Json $validationResults -Compress
+      # Parameter validations
+      $validationResults += Invoke-ValidateDomainJoin $settings
+      $results = ConvertTo-Json $validationResults -Compress
 
-       $validationResults += Invoke-ValidateStaticIPAddressAndDnsname $settings
-       $results = ConvertTo-Json $validationResults -Compress
+      $validationResults += Invoke-ValidateStaticIPAddressAndDnsname $settings
+      $results = ConvertTo-Json $validationResults -Compress
 
-       $validationResults += Invoke-ValidateComputerGroup $settings
-       $results = ConvertTo-Json $validationResults -Compress
+      $validationResults += Invoke-ValidateComputerGroup $settings
+      $results = ConvertTo-Json $validationResults -Compress
 
-       $validationResults += Invoke-ValidategMSAAccount $settings
-       $results = ConvertTo-Json $validationResults -Compress
+      $validationResults += Invoke-ValidategMSAAccount $settings
+      $results = ConvertTo-Json $validationResults -Compress
         
-       $validationResults += Invoke-ValidateLocalAdminOverideByGPO $settings
-       $results = ConvertTo-Json $validationResults -Compress
-       }
-       ```
+      $validationResults += Invoke-ValidateLocalAdminOverideByGPO $settings
+      $results = ConvertTo-Json $validationResults -Compress
+      }
+      ```
 
 5. The validation script displays all the validation checks and their respective errors, which will assist in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 
@@ -347,31 +345,31 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 4. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation.
       For joining the domain to a machine using credentials, run the following command:
-       ```powershell
+      ```powershell
 
-        $domainName = "<domainname>"
-
-
-       $domainJoinCredentials = New-Object pscredential -ArgumentList ("<username>", (ConvertTo-SecureString "password" -AsPlainText -Force))
+      $domainName = "<domainname>"
 
 
+      $domainJoinCredentials = New-Object pscredential -ArgumentList ("<username>", (ConvertTo-SecureString "password" -AsPlainText -Force))
 
-       $ouPath = "<OU path>"
-       if (![String]::IsNullOrWhiteSpace($ouPath)) {
-       	$domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -OUPath $ouPath -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
-       }
-       else {
-      	$domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
-       }   
-       ```
 
-       Replace the username, password, $domainName, $ouPath with the right values. 
 
-       After you run the above command, run the following command to check if the machine joined the domain successfully:
+      $ouPath = "<OU path>"
+      if (![String]::IsNullOrWhiteSpace($ouPath)) {
+      $domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -OUPath $ouPath -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+      }
+      else {
+      $domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+      }   
+      ```
 
-       ```powershell
-       Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty PartOfDomain
-       ```
+      Replace the username, password, $domainName, $ouPath with the right values. 
+
+      After you run the above command, run the following command to check if the machine joined the domain successfully:
+
+      ```powershell
+      Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty PartOfDomain
+      ```
 
 ## Static IP and LB FQDN association
 
