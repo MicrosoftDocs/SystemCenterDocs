@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/01/2023
+ms.date: 07/26/2023
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -399,6 +399,10 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
   Operations Manager console was taking longer time to load and complete basic tasks.
 
   With Operations Manager 2019 UR3, we optimized relevant SQL queries and the performance has improved now.
+
+### Discover Azure Migrate from Operations Manager console
+
+Operations Manager 2019 UR3 and later allows you to discover Azure Migrate from console.You can now generate a complete inventory of your on-premises environment without appliance. This can be used in Azure Migrate to assess machines at scale. [Learn more](https://support.microsoft.com/topic/discover-azure-migrate-for-operations-manager-04b33766-f824-4e99-9065-3109411ede63).
 
 ## New features in Operations Manager 2019 UR4
 
