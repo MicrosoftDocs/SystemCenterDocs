@@ -19,7 +19,7 @@ This article describes the errors that might occur while validating input parame
 
 If you encounter any issues while creating on-premises parameters, use [this script](https://go.microsoft.com/fwlink/?linkid=2221732) for assistance.
 
-This script is designed to help troubleshoot and resolve issues related to on-premises parameter creation. Access the script and utilize its functionalities to address any difficulties you may encounter during the process.
+This script is designed to help troubleshoot and resolve issues related to on-premises parameter creation. Access the script and utilize its functionalities to address any difficulties you may encounter during the creation of on-premises parameters.
 
 Use the following guidelines for using the script:
 
@@ -52,7 +52,7 @@ During the onboarding process, a validation is conducted at the validation stage
 In cases where multiple validations fail, the best approach is to address all the issues at once by manually running a [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip) on a test machine.
 
 > [!Important]
-> Initially, Create a new test Windows Server (2022/2019) virtual machine (VM) in the same subnet selected for SCOM Managed Instance creation. Subsequently, both your AD admin and Network admin can individually utilize this VM to verify the effectiveness of their respective changes. This approach significantly saves time spent on back and forth communication between the AD admin and Network admin. 
+> Initially, Create a new test Windows Server (2022/2019) virtual machine (VM) in the same subnet selected for SCOM Managed Instance creation. Subsequently, both your AD admin and Network admin can individually utilize this VM to verify the effectiveness of their respective changes. This approach significantly saves time spent on back and forth communication between the AD admin and Network admin.
 
 Follow these steps to run the validation script:
 
@@ -63,7 +63,7 @@ Follow these steps to run the validation script:
        - RunValidation.ps1
        - Readme.txt
 
-3. Follow the steps mentioned in the Readme.txt file to run the RunValidation.ps1. Ensure to fill the settings value in RunValidation.ps1 with applicable values before running it.
+3. Follow the steps mentioned in the Readme.txt file to run the *RunValidation.ps1*. Ensure to fill the settings value in *RunValidation.ps1* with applicable values before running it.
 
        ```powershell
             # $settings = @{
@@ -99,7 +99,7 @@ Follow these steps to run the validation script:
        }
        ```
 
-4. In general, RunValidation.ps1 runs all the validations. If you wish to run a specific check, then open ScomValidation.ps1 and comment all other checks which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
+4. In general, *RunValidation.ps1* runs all the validations. If you wish to run a specific check, then open *ScomValidation.ps1* and comment all other checks which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
 
        ```powershell
        {
@@ -153,21 +153,25 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 **Cause:** Occurs due to a problem with your internet connectivity.
 
-**Resolution:** Verify that the VNet being used for SCOM Managed Instance creation has outbound internet access by creating another virtual machine on the network.
+**Resolution:** Verify that the VNet being used for SCOM Managed Instance creation has outbound internet access by creating test virtual machine on the same subnet as SCOM Managed Instance and test out bound connectivity from test virtual machine.
 
-### General troubleshooting steps for internet connectivity
+### General troubleshooting steps for [internet connectivity](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)
 
-1. Create a virtual machine in the subnet selected for SCOM Managed Instance creation and sign in to the VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. To check the internet connectivity, run the following command:
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateStorageConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+
+3. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+4. To check the internet connectivity, run the following command:
 
       ```powershell
       Test-NetConnection www.microsoft.com -Port 80
       ```
 
-      This command verifies the connectivity to *www.microsoft.com* on port 80. If this fails, it indicates an issue with outbound internet connectivity.
+      This command verifies the connectivity to *[www.microsoft.com](https://www.microsoft.com/)* on port 80. If this fails, it indicates an issue with outbound internet connectivity.
 
-3. To verify the DNS settings, run the following command:
+5. To verify the DNS settings, run the following command:
 
       ```powershell
       Get-DnsClientServerAddress
@@ -175,21 +179,13 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
       This command retrieves the DNS server IP addresses configured on the machine. Ensure that the DNS settings are correct and accessible.
 
-4. To check the network configuration, run the following command:
+6. To check the network configuration, run the following command:
 
       ```powershell
       Get-NetIPConfiguration
       ```
 
       This command displays the network configuration details. Verify that the network settings are accurate and match your network environment.
-
-5. To get the blob URL for any file in your storage account, download the file using the following command:
-
-      ```powershell
-      Invoke-WebRequest -Uri $decodedUrl -OutFile "$ScomServerDownloadPath\filename.ext"
-      ```
-
-      This command downloads the files from the provided blob URL to the specified path.
 
 ## SQL MI connectivity
 
@@ -198,7 +194,7 @@ If all the checks pass successfully, return to the onboarding page and commence 
 **Cause:** Occurs due to an incorrect DNS Server IP, or an incorrect network configuration.
 
 **Resolution:**
-      
+
 1. Check the DNS Server IP and ensure that the DNS Server is up and running.
 2. Ensure that the VNet which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
 
@@ -213,25 +209,29 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ### General troubleshooting steps for SQL MI connectivity
 
-1. Create a virtual machine in the subnet selected for SCOM Managed Instance creation and sign in to the VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. To check the outbound internet connectivity, run the following command:
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateSQLConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+
+3. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+4. To check the outbound internet connectivity, run the following command:
 
       ```powershell
       Test-NetConnection -ComputerName "www.microsoft.com" -Port 80
       ```
 
-      This command verifies the outbound internet connectivity by attempting to establish a connection to *www.microsoft.com* on port 80. If the connection fails, it indicates a potential issue with the internet connectivity.
+      This command verifies the outbound internet connectivity by attempting to establish a connection to *[www.microsoft.com](https://www.microsoft.com/)* on port 80. If the connection fails, it indicates a potential issue with the internet connectivity.
 
-3. To verify the DNS settings and network configuration, ensure that the DNS server IP addresses are correctly configured and validate the network configuration settings on the machine where the validation is being performed.
+5. To verify the DNS settings and network configuration, ensure that the DNS server IP addresses are correctly configured and validate the network configuration settings on the machine where the validation is being performed.
 
-4. To test the SQL MI connection, run the following command:
+6. To test the SQL MI connection, run the following command:
 
       ```powershell
-      Test-NetConnection -ComputerName $sqlMiName -Port $sqlMiPort
+      Test-NetConnection -ComputerName $sqlMiName -Port 1433
       ```
 
-      Replace `$sqlMiName` with the name of the SQL MI instance, and `$sqlMiPort` with the appropriate port number.
+      Replace `$sqlMiName` with the name of the SQL MI host name.
 
       This command tests the connection to the SQL MI instance. If the connection is successful, it indicates that the SQL MI is reachable.
 
@@ -243,9 +243,13 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ### General trouble shooting for DNS server connectivity
 
-1. Create a virtual machine in the subnet selected for SCOM Managed Instance creation and sign in to the VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. To check the DNS resolution for the specified IP address, run the following command:
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateDnsIpAddress` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+
+3. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+4. To check the DNS resolution for the specified IP address, run the following command:
 
       ```powershell
       Resolve-DnsName -Name $ipAddress -IssueAction SilentlyContinue
@@ -255,7 +259,7 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
       This command checks the DNS resolution for the provided IP address. If the command doesn't return any results or throws an error, it indicates a potential issue with DNS resolution.
 
-3. To verify the network connectivity to the IP address, run the following command:
+5. To verify the network connectivity to the IP address, run the following command:
 
       ```powershell
       Test-NetConnection -ComputerName $ipAddress -Port 80
@@ -267,48 +271,60 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ## Domain connectivity
 
-### Issue: Domain controller for domain \<domain name\> isn't reachable from this network, or port 9389 isn/t open on at least one domain controller
+### Issue: Domain controller for domain \<domain name\> isn't reachable from this network, or port isn't open on at least one domain controller
 
 **Cause:** Occurs due to an issue with the provided DNS Server IP or your network configuration.
+
 **Resolution:**
-      
+
 1. Check the DNS Server IP and ensure that DNS Server is up and running.
-2. Check the domain name and ensure that at least one domain controller is up and running.
+2. Ensure that the domain name resolution is correctly directed to the designated Domain Controller (DC) configured for either Azure or SCOM Managed Instance. Confirm that this DC is listed at the top among the resolved DCs. If the resolution is directed to different DC servers, it indicates a problem with AD domain resolution.
+3. Check the domain name and ensure that domain controller configure for Azure and SCOM Managed Instance is up and running.
      >[!Note]
-     >Port 9389 should be open on it , and Active Directory Web Services service should be running.
-3. The domain controller meeting the above criteria should be within line-of-sight from the VNet being used for SCOM Managed Instance creation.
+     >Ports 9389, 389/636, 88, 3268/3269, 135, 445 should be open on DC configured for Azure or SCOM Managed Instance, and all services on the DC should be running.
 
 ### General trouble shooting steps for domain connectivity
 
-1. Create a virtual machine in the subnet selected for SCOM Managed Instance creation and sign in to the VM.
-2. To check the domain controller reachability, run the following command:
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
+
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateDomainControllerConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+
+3. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+4. To check the domain controller reachability, run the following command:
       ```powershell
-      Test-Connection -ComputerName $domainName -Count 1 -Quiet
+      Resolve-DnsName -Name $domainName 
       ```
 
       Replace `$domainName` with the name of the domain you want to test.
 
-      This command tests if at least one domain controller for the specified domain is reachable. If the command returns **True**, it indicates successful reachability.
+      Ensure that the domain name resolution is correctly directed to the designated Domain Controller (DC) configured for either Azure or SCOM Managed Instance. Confirm that this DC is listed at the top among the resolved DCs. If the resolution is directed to different DC servers, it indicates a problem with AD domain resolution.
 
-3. To verify DNS server settings:
+5. To verify DNS server settings:
 
       - Ensure that the DNS server settings on the machine running the validation are correctly configured.
       - Verify if the DNS server IP addresses are accurate and accessible.
 
-4. To validate network configuration:
+6. To validate network configuration:
 
       - Verify the network configuration settings on the machine where the validation is being performed.
       - Ensure that the machine is connected to the correct network and has the necessary network settings to communicate with the domain controller.
 
-5. To test the required port on the domain controller, run the following command:
+7. To test the required port on the domain controller, run the following command:
 
       ```powershell
       Test-NetConnection -ComputerName $domainName -Port $portToCheck
       ```
 
-      Replace `$domainName` with the name of the domain you want to test, and `$portToCheck` with the port number (9389 in this case).
+      Replace `$domainName` with the name of the domain you want to test, and `$portToCheck` with each port from the following list number:
+       - 389/636
+       - 88
+       - 3268/3269
+       - 135
+       - 445
+      Execute the provided command for all the above ports.
 
-      This command checks if the specified port is open on at least one domain controller. If the command shows a successful connection, it indicates that the necessary port is open.
+      This command checks if the specified port is open on the designated domain controller that is configured for Azure or SCOM Managed Instance creation. If the command shows a successful connection, it indicates that the necessary ports are open.
 
 ## Domain join validation
 
@@ -317,31 +333,45 @@ If all the checks pass successfully, return to the onboarding page and commence 
 **Cause:** Occurs because of an incorrect OU path, incorrect credentials, or a problem in the network connectivity.
 
 **Resolution:**
-      
-1. Check the credentials created in your Key vault. The username and password secret must reflect the correct username (domain\username) and password which have permissions to join a machine to the domain. By default, user accounts can only add up to 10 computers to the domain. To configure, see [Default limit to number if workstations a user can join to the domain](/troubleshoot/windows-server/identity/default-workstation-numbers-join-domain).
+
+1. Check the credentials created in your Key vault. The username and password secret must reflect the correct username and format of the username value must be *domain\username* and password which have permissions to join a machine to the domain. By default, user accounts can only add up to 10 computers to the domain. To configure, see [Default limit to number if workstations a user can join to the domain](/troubleshoot/windows-server/identity/default-workstation-numbers-join-domain).
 2. Verify that the OU Path is correct and doesn't block new computers from joining the domain.
 
 ### General troubleshooting steps
 
-1. Create a virtual machine in the subnet selected for SCOM Managed Instance creation and sign in to the VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. Join the domain to a VM using the domain account that is used in SCOM Managed Instance creation.
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateDomainJoin` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+
+3. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+4. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation.
       For joining the domain to a machine using credentials, run the following command:
-      ```powershell
+       ```powershell
 
         $domainName = "<domainname>"
-        
-        $domainJoinCredentials = New-Object pscredential -ArgumentList ([pscustomobject]@{
-            UserName = "<username>
-            Password = "password"
-        })
-		$ouPath = "<OU path>"
-		if (![String]::IsNullOrWhiteSpace($ouPath)) {
-			$domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -OUPath $ouPath -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
-		}
-		else {
-			$domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
-		}   
+
+
+       $domainJoinCredentials = New-Object pscredential -ArgumentList ("<username>", (ConvertTo-SecureString "password" -AsPlainText -Force))
+
+
+
+       $ouPath = "<OU path>"
+       if (![String]::IsNullOrWhiteSpace($ouPath)) {
+       	$domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -OUPath $ouPath -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+       }
+       else {
+      	$domainJoinResult = Add-Computer -DomainName $domainName -Credential $domainJoinCredentials -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+       }   
+       ```
+
+       Replace the username, password, $domainName, $ouPath with the right values. 
+
+       After you run the above command, run the following command to check if the machine joined the domain successfully:
+
+       ```powershell
+       Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty PartOfDomain
+       ```
 
 ## Static IP and LB FQDN association
 
@@ -359,15 +389,16 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ### General troubleshooting steps
 
-1. Create a virtual machine in the subnet that is selected for SCOM Managed Instance creation and sign in to the VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. Join the domain to a VM using the domain account that is used in SCOM Managed Instance creation.
-      To join the domain to a machine using credentials, follow the steps provided in the [Domain join validation section](#domain-join-validation).
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateStaticIPAddressAndDnsname` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
-3. Verify that the servers have successfully joined the domain:
-     - If the servers haven't joined the domain, provide instructions to resolve the domain join issue, such as checking network connectivity, domain name configuration, and domain join credentials.
+3. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
 
-4. Get IP address and associated DNS name and run the following commands to see if they match.
+4. Join the virtual machine to a domain using the domain account that is used in SCOM Managed Instance creation.
+      To join the virtual machine to domain, follow the steps provided in the [Domain join validation section](#domain-join-validation).
+
+5. Get IP address and associated DNS name and run the following commands to see if they match.
       Resolve the DNS name and fetch the actual IP address:
 
       ```powershell
@@ -375,7 +406,7 @@ If all the checks pass successfully, return to the onboarding page and commence 
       $ActualIP = $DNSRecord.IPAddress
       ```
   
-      If the DNS name can't be resolved, ensure that the DNS name is valid and associated with the correct IP address.
+      If the DNS name can't be resolved, ensure that the DNS name is valid and associated with the actual IP address.
 
 ## Computer group validations
 
@@ -393,51 +424,99 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ### Issue: The manager \<domain username\> of the input computer group \<computer group name\> doesn't have the necessary permissions to manage group membership
 
-**Resolution:** Navigate to the group properties and check the Manage can update membership list checkbox. For more details, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the **Group properties** and check the **Manage** can update membership list checkbox. For more details, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
 
 ### General troubleshooting steps
 
-1. Create a virtual machine in the subnet selected for SCOM Managed Instance creation and sign in to the VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. Join the domain to a VM using the domain account that is used in SCOM Managed Instance creation. To join the domain to a machine using credentials, follow the steps provided in Domain join validation section.
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateComputerGroup` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
-3. Open a PowerShell session with administrative privileges.
+3. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation. To join the virtual machine to domain, follow the steps provided in the [Domain join validation section](#domain-join-validation).
 
-4. To verify if the VM is joined to the domain, run the following command:
+4. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+5. Run the following command to import modules:
+
+      ```powershell
+      Add-WindowsFeature RSAT-AD-PowerShell -ErrorAction SilentlyContinue
+      Add-WindowsFeature GPMC -ErrorAction SilentlyContinue
+      ```
+
+6. To verify if the VM is joined to the domain, run the following command:
 
       ```powershell
       Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty PartOfDomain
       ```
 
-5. To verify the existence of the user in the domain, run the following command:
+7. To verify the domain existence and current machine already joined the domain, run the following command:
 
       ```powershell
-      Get-ADUser -Filter "SamAccountName -eq '$username'" -ErrorAction SilentlyContinue
+      $domainJoinCredentials = New-Object pscredential -ArgumentList ("<username>", (ConvertTo-SecureString "password" -AsPlainText -Force)) 
+      $Domain = Get-ADDomain -Current LocalComputer -Credential $domainUserCredentials
       ```
 
-6. To verify the existence of the computer group in the domain, run the following command:
+      Replace `$username`, `password` with applicable values.
+
+8. To verify the existence of the user in the domain, run the following command:
 
       ```powershell
-      Get-ADGroup -Filter "Name -eq '$computerGroupName'" -ErrorAction SilentlyContinue
+      $DomainUser = Get-ADUser -Identity $username -Credential $domainUserCredentials
       ```
 
-7. If the user and computer group exist, verify the group management configuration:
+      Replace `$username`, `$domainUserCredentials` with applicable values  
 
-      Determine if the user is the manager of the computer group:
+9. To verify the existence of the computer group in the domain, run the following command:
 
       ```powershell
-      Get-ADGroup -Identity $computerGroupName -Properties ManagedBy | Select-Object -ExpandProperty ManagedBy
+      $ComputerGroup = Get-ADGroup -Identity $computerGroupName -Properties ManagedBy,DistinguishedName -Credential $domainUserCredentials
       ```
 
-      If the output matches the user's distinguished name, it means the user is the manager of the group. If not, update the computer group configuration accordingly.
+      Replace `$computerGroupName`, `$domainUserCredentials` with applicable values.
 
-      Check if the manager can update group membership:
+10. If the user and computer group exist, determine if the user is the manager of the computer group.
 
       ```powershell
-      Get-ADGroup -Identity $computerGroupName | Get-ADPermission | Where-Object {$_.ExtendedRights -contains "WriteProperty" -and $_.User -eq $username}
-      ```
+      Import-Module ActiveDirectory
+        	$DomainDN = $Domain.DistinguishedName
+        $GroupDN = $ComputerGroup.DistinguishedName
+       $RightsGuid = [GUID](Get-ItemProperty "AD:\CN=Self-Membership,CN=Extended-Rights,CN=Configuration,$DomainDN" -Name rightsGuid -Credential $domainUserCredentials | Select-Object -ExpandProperty rightsGuid)
 
-      If no results are returned, it means the manager doesn't have the necessary permissions to manage group membership. Update the group membership permissions for the manager.
+        # Run Get ACL under the give credentials
+        $job = Start-Job -ScriptBlock {
+            param (
+                [Parameter(Mandatory = $true)]
+                [string] $GroupDN,
+                [Parameter(Mandatory = $true)]
+                [GUID] $RightsGuid
+            )
+
+        Import-Module ActiveDirectory
+        $AclRule = (Get-Acl -Path "AD:\$GroupDN").GetAccessRules($true,$true,[System.Security.Principal.SecurityIdentifier]) |  Where-Object {($_.ObjectType -eq $RightsGuid) -and ($_.ActiveDirectoryRights -like '*WriteProperty*')}
+            return $AclRule
+
+        } -ArgumentList $GroupDN, $RightsGuid -Credential $domainUserCredentials
+
+        $timeoutSeconds = 20
+        $jobResult = Wait-Job $job -Timeout $timeoutSeconds
+
+        # Job did not complete within the timeout
+        if ($null -eq $jobResult) {
+            Write-Host "Checking permissions, timeout after 10 seconds."
+            Remove-Job $job -Force
+        } else {
+            # Job completed within the timeout
+            $AclRule = Receive-Job $job
+            Remove-Job $job -Force
+        }
+        
+        $managerCanUpdateMembership = $false
+        if (($null -ne $AclRule) -and ($AclRule.AccessControlType -eq 'Allow') -and ($AclRule.IdentityReference -eq $DomainUser.SID)) {
+            $managerCanUpdateMembership = $true
+
+       ```
+
+      If `managerCanUpdateMembership` is **True** then the domain user have update membership permission on the computer group.
 
 ## gMSA account validations
 
@@ -451,7 +530,7 @@ If all the checks pass successfully, return to the onboarding page and commence 
 
 ### Issue: gMSA with name \<domain gMSA\> couldn't be found in your domain
 
-**Resolution:** Verify the existence of the account and check the name provided or create a new one if it has not been created already.
+**Resolution:** Verify the existence of the gMSA account and check the name provided or create a new one if it has not been created already.
 
 ### Issue: gMSA \<domain gMSA\> isn't enabled
 
@@ -463,7 +542,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -Enabled $true
 
 ### Issue: gMSA  \<domain gMSA\> needs to have its DNS Host Name set to \<DNS Name\>
 
-**Resolution:** The gMSA doesn't have the DNSHostName property set correctly. Set the DNSHostName property using the following command:
+**Resolution:** The gMSA doesn't have the `DNSHostName` property set correctly. Set the `DNSHostName` property using the following command:
 
 ```powershell
 Set-ADServiceAccount -Identity <domain gMSA> -DNSHostName <DNS Name>
@@ -471,7 +550,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -DNSHostName <DNS Name>
 
 ### Issue: The Sam Account Name for gMSA \<domain gMSA\> exceeds the limit of 15 characters
 
-**Resolution:** Set the SamAccountName using the following command:
+**Resolution:** Set the `SamAccountName` using the following command:
 
 ```powershell
 Set-ADServiceAccount -Identity <domain gMSA> -SamAccountName <shortname$>
@@ -479,7 +558,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -SamAccountName <shortname$>
 
 ### Issue: Computer  Group \<computer group name\> needs to be set as the PrincipalsAllowedToRetrieveManagedPassword for gMSA \<domain gMSA\>
 
-**Resolution:** The gMSA doesn't have PrincipalsAllowedToRetrieveManagedPassword set correctly. Set the PrincipalsAllowedToRetrieveManagedPassword using the following command:
+**Resolution:** The gMSA doesn't have `PrincipalsAllowedToRetrieveManagedPassword` set correctly. Set the `PrincipalsAllowedToRetrieveManagedPassword` using the following command:
 
 ```powershell
 Set-ADServiceAccount -Identity <domain gMSA> - PrincipalsAllowedToRetrieveManagedPassword <computer group name>
@@ -495,48 +574,83 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 
 ### General troubleshooting steps
 
-1. To verify that the servers have successfully joined the domain, run the following command:
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-      `(Get-WmiObject -Class Win32_ComputerSystem).PartOfDomain`
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidategMSAAccount` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
-2. To check the existence of the computer group, run the following command:
+3. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation. To join the virtual machine to domain, follow the steps provided in the [Domain join validation section](#domain-join-validation).
 
-      `Get-ADGroup -Identity <ComputerGroupName>`
+4. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+5. Run following command to import modules:
+
+      ```powershell
+      Add-WindowsFeature RSAT-AD-PowerShell -ErrorAction SilentlyContinue
+      Add-WindowsFeature GPMC -ErrorAction SilentlyContinue
+      ```
+
+6. To verify that the servers have successfully joined the domain, run the following command:
+
+      ```powershell
+      (Get-WmiObject -Class Win32_ComputerSystem).PartOfDomain
+      ```
+
+7. To check the existence of the computer group, run the following command:
+
+      ```powershell
+     $Credentials = New-Object pscredential -ArgumentList ("<username>", (ConvertTo-SecureString "password" -AsPlainText -Force))
+     $adGroup = Get-ADGroup -Identity $computerGroupName -Properties ManagedBy,DistinguishedName -Credential $Credentials
+     ```
+
+     Replace username, password and computerGroupName with applicable values.
    
-3. To check the existence of the gMSA account, run the following command:
+8. To check the existence of the gMSA account, run the following command:
 
-      `Get-ADServiceAccount -Identity <GmsaAccount>`
+      ```powershell
+      $adServiceAccount = Get-ADServiceAccount -Identity gMSAAccountName -Properties DNSHostName,Enabled,PrincipalsAllowedToRetrieveManagedPassword,SamAccountName,ServicePrincipalNames -Credential $Credentials
+      ```
 
-4. To validate the gMSA account properties, run the following command:
-      - Check if the gMSA account is enabled:
+9. To validate the gMSA account properties, check if the gMSA account is enabled:
 
-        `(Get-ADServiceAccount -Identity <GmsaAccount>).Enabled`
+      ```powershell
+      (Get-ADServiceAccount -Identity <GmsaAccount>).Enabled
+      ```
 
       If the command returns **False**, enable the account in the domain.
 
-      Verify that the DNS Host Name of the gMSA account matches the provided DNS name (LB DNS name), run the following commands:
+10. Verify that the DNS Host Name of the gMSA account matches the provided DNS name (LB DNS name), run the following commands:
 
-      `(Get-ADServiceAccount -Identity <GmsaAccount>).DNSHostName`
+      ```powershell
+      (Get-ADServiceAccount -Identity <GmsaAccount>).DNSHostName
+      ```
 
-      If the command doesn't return the expected DNS name, provide instructions to update the DNS Host Name.
+      If the command doesn't return the expected DNS name, update the DNS Host Name of gMsaAccount to LB DNS name.
 
-      Ensure that the Sam Account Name for the gMSA account doesn't exceed the limit of 15 characters:
+11. Ensure that the Sam Account Name for the gMSA account doesn't exceed the limit of 15 characters:
 
-      `(Get-ADServiceAccount -Identity <GmsaAccount>).SamAccountName.Length`
+      ```powershell
+      (Get-ADServiceAccount -Identity <GmsaAccount>).SamAccountName.Length
+      ```
 
-5. To validate the PrincipalsAllowedToRetrieveManagedPassword property, run the following commands:
+12. To validate the `PrincipalsAllowedToRetrieveManagedPassword`` property, run the following commands:
 
-      Check if the Computer Group specified is set as the PrincipalsAllowedToRetrieveManagedPassword for the gMSA account:
+      Check if the Computer Group specified is set as the `PrincipalsAllowedToRetrieveManagedPassword`` for the gMSA account:
 
-      `(Get-ADServiceAccount -Identity <GmsaAccount>).PrincipalsAllowedToRetrieveManagedPassword -contains (Get-ADGroup -Identity <ComputerGroupName>).DistinguishedName`
+      ```powershell
+      (Get-ADServiceAccount -Identity <GmsaAccount>).PrincipalsAllowedToRetrieveManagedPassword -contains (Get-ADGroup -Identity <ComputerGroupName>).DistinguishedName
+      ```
 
-6. To validate the Service Principal Names (SPNs) for the gMSA account, run the following command:
+      Replace `gMSAAccount` and `ComputerGroupName` with applicable values.
 
-      - $CorrectSPNs = @("MSOMSdkSvc/$dnsHostName", "MSOMSdkSvc/$dnsName", "MSOMHSvc/$dnsHostName", "MSOMHSvc/$dnsName")
-      - Check if the correct SPNs are set for the gMSA account:
+13. To validate the Service Principal Names (SPNs) for the gMSA account, run the following command:
 
-        `(Get-ADServiceAccount -Identity <GmsaAccount>).ServicePrincipalNames`
-      - Check if the results have Correct SPNs.
+      ```powershell
+      $CorrectSPNs = @("MSOMSdkSvc/$dnsHostName", "MSOMSdkSvc/$dnsName", "MSOMHSvc/$dnsHostName", "MSOMHSvc/$dnsName")
+      (Get-ADServiceAccount -Identity <GmsaAccount>).ServicePrincipalNames
+      ```
+
+      Check if the results have Correct SPNs. Replace `$dnsName` with LB DNS name given in the SCOM Managed Instance creation. Replace `$dnsHostName` with LB DNS short name. 
+      For example: MSOMHSvc/ContosoLB.domain.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.domain.com, and MSOMSdkSvc/ContosoLB are service principal names.
 
 ## Group policy validations
 
@@ -546,57 +660,88 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 
 ### Issue: gMSA with name \<domain gMSA\> couldn't be found in your domain. This account needs to be a local administrator on the server
 
-**Resolution:** Verify the existence of the account and check the name provided.
+**Resolution:** Verify the existence of the account and ensure that the gMSA and domain user are part of local administrator group.
 
 ### Issue: The accounts \<domain username\> and \<domain gMSA\> couldn't be added to the local Administrators group on the test management servers or did not persist in the group after group policy update
 
-**Resolution:** Ensure that the domain username and gMSA inputs provided are correct, including the full name (domain\account). Also check if there are any group policies overriding the local Administrators group on OU containing the test management servers.
+**Resolution:** Ensure that the domain username and gMSA inputs provided are correct, including the full name (domain\account). Also check if there are any group policies on your test machine overriding the local Administrators group because of policies created at OU or Domain level. gMSA and domain user must be a part of the local administrator group for SCOM Managed Instance to work. SCOM Managed Instance machines mus be excluded from any policy overriding the local administrator group, work with AD admin.
 
 ### Issue: SCOM Managed Instance failed
 
 **Cause:** A group policy in your domain (name: \<group policy name\>) is overriding the local Administrators group on test management servers, either on the OU containing the servers or the root of the domain.
 
-**Resolution:** Ensure that the OU for SCOM Managed Instance Management Servers (\<OU Path\>) isn't affected by this policy and that no policies override the group.
+**Resolution:** Ensure that the OU for SCOM Managed Instance Management Servers (\<OU Path\>) isn't affected by no policies override the group.
 
 ### General troubleshooting steps
 
-1. To verify if the servers have successfully joined the domain, run the following command:
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign into the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-      `(Get-WmiObject -Class Win32_ComputerSystem).PartOfDomain`
+2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell,execute the specific check called `Invoke-ValidateLocalAdminOverideByGPO` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script, For further details on running the validation script independently on your test machine, refer **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+
+3. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation. To join the virtual machine to domain, follow the steps provided in the [Domain join validation section](#domain-join-validation).
+
+4. Open the Powershell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
+
+5. Run the following commands to import modules:
+
+      ```powershell
+      Add-WindowsFeature RSAT-AD-PowerShell -ErrorAction SilentlyContinue
+      Add-WindowsFeature GPMC -ErrorAction SilentlyContinue
+      ```
+
+6. To verify if the servers have successfully joined the domain, run the following command:
+
+      ```powershell
+      (Get-WmiObject -Class Win32_ComputerSystem).PartOfDomain
+      ```
 
       The command must return **True**.
 
-2. To check the existence of the gMSA account, run the following command:
+7. To check the existence of the gMSA account, run the following command:
 
-      `Get-ADServiceAccount -Identity <GmsaAccount>`
+      ```powershell
+      Get-ADServiceAccount -Identity <GmsaAccount>
+      ```
 
-3. To validate the presence of user accounts in the local Administrators group, run the following command:
+8. To validate the presence of user accounts in the local Administrators group, run the following command:
 
-      `  $addToAdminResult = Add-LocalGroupMember -Group "Administrators" -Member $userName, $gMSAccount -ErrorAction SilentlyContinue
-            $gpUpdateResult = gpupdate /force
-            $LocalAdmins = Get-LocalGroupMember -Group 'Administrators' | Select-Object -ExpandProperty Name `
+      ```powershell
+      $domainJoinCredentials = New-Object pscredential -ArgumentList ("<username>", (ConvertTo-SecureString "password" -AsPlainText -Force)) 
+      $addToAdminResult = Add-LocalGroupMember -Group "Administrators" -Member $userName, $gMSAccount -ErrorAction SilentlyContinue 
+      $gpUpdateResult = gpupdate /force 
+      $LocalAdmins = Get-LocalGroupMember -Group 'Administrators' | Select-Object -ExpandProperty Name
+      ```
 
-      Replace the `<UserName>` and `<GmsaAccount>` with the actual user account names.
+      Replace the `<UserName>` and `<GmsaAccount>` with the actual values.
 
-4. To determine the domain and organizational unit (OU) details, run the following command:
+9. To determine the domain and organizational unit (OU) details, run the following command:
 Retrieve OU details using the following command:
 
-      ` Get-ADOrganizationalUnit -Filter "DistinguishedName -like '$ouPathDN'" -Properties CanonicalName -Credential $domainUserCredentials`
+      ```powershell
+      Get-ADOrganizationalUnit -Filter "DistinguishedName -like '$ouPathDN'" -Properties CanonicalName -Credential $domainUserCredentials
+      ```
 
-      Replace the \<OuPathDN\> with the actual OU path and provide actual $domainUserCredentials.
+      Replace the \<OuPathDN\> with the actual OU path.
 
-5. To get the GPO (Group Policy Object) report from the domain and check for overriding policies on the local Administrators group, run the following command:
+10. To get the GPO (Group Policy Object) report from the domain and check for overriding policies on the local Administrators group, run the following command:
 
-      `[XML] $gpoReport = Get-GPOReport -All -ReportType Xml `
+      ```powershell
+      $gpoReport = Get-GPOReport -All -ReportType Xml -Domain <domain name>
       foreach ($GPO in $gpoReport.GPOS.GPO) {
-         if (($GPO.LinksTo.SOMPath -eq $domainName) -or ($GPO.LinksTo.SOMPath -eq $ouPathCN)) {
-             if ($GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group) {
-                 $GroupPolicy = $GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group | Select-Object @{Name='RemoveUsers';Expression={$_.Properties.deleteAllUsers}},@{Name='RemoveGroups';Expression={$_.Properties.deleteAllGroups}},@{Name='GroupName';Expression={$_.Properties.groupName}}
-                 if (($GroupPolicy.groupName -eq "Administrators (built-in)") -and (($GroupPolicy.RemoveUsers -eq 1) -or ($GroupPolicy.RemoveGroups -eq 1))) {
-                     # Overriding policy found
-                     $overridingPolicyFound = $true
-                     $overridingPolicyName = $GPO.Name
-                 }
-             }
-         }
-     }
+      # Check if the GPO links to the entire domain, or the input OU if provided
+      if (($GPO.LinksTo.SOMPath -eq $domainName) -or ($GPO.LinksTo.SOMPath -eq $ouPathCN)) {
+        # Check if there is a policy overriding the Local Users and Groups
+        if ($GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group) {
+            $GroupPolicy = $GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group | Select-Object @{Name='RemoveUsers';Expression={$_.Properties.deleteAllUsers}},@{Name='RemoveGroups';Expression={$_.Properties.deleteAllGroups}},@{Name='GroupName';Expression={$_.Properties.groupName}}
+            # Check if the policy is acting on the BUILTIN\Administrators group, and whether it is removing other users or groups
+            if (($GroupPolicy.groupName -eq "Administrators (built-in)") -and (($GroupPolicy.RemoveUsers -eq 1) -or ($GroupPolicy.RemoveGroups -eq 1))) {
+                $overridingPolicyFound = $true
+                $overridingPolicyName = $GPO.Name
+                   }
+               }
+            }
+        }
+
+      ```
+
+      If `$overridingPolicy` found **True** then there is policy with name in variable **$overridingPolicyName** overriding local administrator group.
