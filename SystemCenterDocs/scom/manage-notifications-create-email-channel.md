@@ -4,7 +4,7 @@ description: This article describes the steps to configure an email notification
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/29/2019
+ms.date: 07/28/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager

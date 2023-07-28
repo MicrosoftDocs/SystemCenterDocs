@@ -5,7 +5,7 @@ description: This article provides an overview of the security accounts required
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 06/08/2021
+ms.date: 07/28/2023
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager
