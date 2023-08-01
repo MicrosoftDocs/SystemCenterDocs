@@ -25,7 +25,7 @@ Follow these steps to run the script:
 
 1. Download the script and run it with the **-Help** option to get the parameters.
 2. Sign in with domain credentials and then run the script with the specified parameters.
-3. If any validation fails, take the corrective actions as suggested by the script and re-run the script until it passes all the validations.
+3. If any validation fails, take the corrective actions as suggested by the script and rerun the script until it passes all the validations.
 4. Once all the validations are successful, use the same parameters used in the script, for instance creation.
 
 ## Validation checks and details
@@ -41,8 +41,8 @@ Follow these steps to run the script:
 |Domain join validation| Checks if domain join succeeds using provided OU Path and domain credentials.|
 |Static IP and LB FQDN association| Checks if a DNS record has been created for the provided static IP against the provided DNS name.|
 |Computer group validations| Checks if the provided computer group is managed by the provided domain user, and the manager can update group membership.|
-|gMSA account validations| Checks if the provided gMSA: </br>- Is enabled. </br>- Has its DNS Host Name set to the provided DNS name of the LB. </br>- Has a SAM Account Name length of 15 characters or less. </br>- Has the right SPNs set. </br> The password can be retrieved by members of the provided computer group.
-|Group policy validations| Checks if the domain (or the OU Path which hosts the management servers) is affected by any group policy which will alter the local Administrators group.|
+|gMSA account validations| Checks if the provided gMSA: </br>- Is enabled. </br>- Has its DNS Host Name set to the provided DNS name of the LB. </br>- Has a SAM Account Name length of 15 characters or less. </br>- Has the right SPNs' set. </br> The password can be retrieved by members of the provided computer group.
+|Group policy validations| Checks if the domain (or the OU Path, which hosts the management servers) is affected by any group policy, which will alter the local Administrators group.|
 |Post validation clean-up| Unjoin from the domain.|
 
 ## General guidelines for running validation script
@@ -97,7 +97,7 @@ Follow these steps to run the validation script:
       }
       ```
 
-4. In general, *RunValidation.ps1* runs all the validations. If you wish to run a specific check, then open *ScomValidation.ps1* and comment all other checks which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
+4. In general, *RunValidation.ps1* runs all the validations. If you wish to run a specific check, then open *ScomValidation.ps1* and comment all other checks, which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
 
       ```powershell
       {
@@ -132,7 +132,7 @@ Follow these steps to run the validation script:
       }
       ```
 
-5. The validation script displays all the validation checks and their respective errors, which will assist in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
+5. The validation script displays all the validation checks and their respective errors, which will help resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 
 If all the checks pass successfully, return to the onboarding page and restart the onboarding process again.
 
@@ -145,7 +145,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
 **Resolution:**
 
 1. Check the DNS Server IP, and ensure that DNS Server is up and running.
-2. Ensure that the VNet which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
+2. Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
 
 ### Issue: Unable to connect to the storage account to download SCOM Managed Instance product bits
 
@@ -157,7 +157,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateStorageConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateStorageConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Open the PowerShell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
 
@@ -194,7 +194,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
 **Resolution:**
 
 1. Check the DNS Server IP and ensure that the DNS Server is up and running.
-2. Ensure that the VNet which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
+2. Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
 
 ### Issue: Failed to connect to SQL MI from this instance
 
@@ -203,13 +203,13 @@ If all the checks pass successfully, return to the onboarding page and restart t
 **Resolution:**
 
 1. Verify that the SQL MI is correctly configured.
-2. Ensure that the VNet which is being used for SCOM Managed Instance creation has line-of-sight to the SQL MI, either by being in the same VNet or by VNet peering.
+2. Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the SQL MI, either by being in the same VNet or by VNet peering.
 
 ### General troubleshooting steps for SQL MI connectivity
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateSQLConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateSQLConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Open the PowerShell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
 
@@ -243,7 +243,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateDnsIpAddress` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateDnsIpAddress` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Open the PowerShell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
 
@@ -285,7 +285,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateDomainControllerConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateDomainControllerConnectivity` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Open the PowerShell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
 
@@ -332,14 +332,14 @@ If all the checks pass successfully, return to the onboarding page and restart t
 
 **Resolution:**
 
-1. Check the credentials created in your Key vault. The username and password secret must reflect the correct username and format of the username value must be *domain\username* and password which have permissions to join a machine to the domain. By default, user accounts can only add up to 10 computers to the domain. To configure, see [Default limit to number if workstations a user can join to the domain](/troubleshoot/windows-server/identity/default-workstation-numbers-join-domain).
+1. Check the credentials created in your Key vault. The username and password secret must reflect the correct username and format of the username value must be *domain\username* and password, which have permissions to join a machine to the domain. By default, user accounts can only add up to 10 computers to the domain. To configure, see [Default limit to number if workstations a user can join to the domain](/troubleshoot/windows-server/identity/default-workstation-numbers-join-domain).
 2. Verify that the OU Path is correct and doesn't block new computers from joining the domain.
 
 ### General troubleshooting steps for Domain join validation
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateDomainJoin` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateDomainJoin` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Open the PowerShell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
 
@@ -389,7 +389,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateStaticIPAddressAndDnsname` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateStaticIPAddressAndDnsname` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Open the PowerShell ISE in admin mode and set *Set-ExecutionPolicy* as *Unrestricted*.
 
@@ -422,13 +422,13 @@ If all the checks pass successfully, return to the onboarding page and restart t
 
 ### Issue: The manager \<domain username\> of the input computer group \<computer group name\> doesn't have the necessary permissions to manage group membership
 
-**Resolution:** Navigate to the **Group properties** and check the **Manage can update membership list** checkbox. For more details, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the **Group properties** and check the **Manage can update membership list** checkbox. For more information, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
 
 ### General troubleshooting steps for Computer group validations
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateComputerGroup` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateComputerGroup` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation. To join the virtual machine to domain, follow the steps provided in the [Domain join validation section](#domain-join-validation).
 
@@ -529,7 +529,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
 
 ### Issue: gMSA with name \<domain gMSA\> couldn't be found in your domain
 
-**Resolution:** Verify the existence of the gMSA account and check the name provided or create a new one if it has not been created already.
+**Resolution:** Verify the existence of the gMSA account and check the name provided or create a new one if it hasn't been created already.
 
 ### Issue: gMSA \<domain gMSA\> isn't enabled
 
@@ -575,7 +575,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidategMSAAccount` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidategMSAAccount` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation. To join the virtual machine to domain, follow the steps provided in the [Domain join validation section](#domain-join-validation).
 
@@ -661,7 +661,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 
 **Resolution:** Verify the existence of the account and ensure that the gMSA and domain user are part of local administrator group.
 
-### Issue: The accounts \<domain username\> and \<domain gMSA\> couldn't be added to the local Administrators group on the test management servers or did not persist in the group after group policy update
+### Issue: The accounts \<domain username\> and \<domain gMSA\> couldn't be added to the local Administrators group on the test management servers or didn't persist in the group after group policy update
 
 **Resolution:** Ensure that the domain username and gMSA inputs provided are correct, including the full name (domain\account). Also check if there are any group policies on your test machine overriding the local Administrators group because of policies created at OU or Domain level. gMSA and domain user must be a part of the local administrator group for SCOM Managed Instance to work. SCOM Managed Instance machines must be excluded from any policy overriding the local administrator group (work with AD admin).
 
@@ -675,7 +675,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. You can either follow the step-by-step instructions provided below, or if you are familiar with PowerShell, execute the specific check called `Invoke-ValidateLocalAdminOverideByGPO` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For further details on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
+2. You can either follow the step-by-step instructions provided below, or if you're familiar with PowerShell, execute the specific check called `Invoke-ValidateLocalAdminOverideByGPO` in the *[ScomValidation.ps1](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter%20(1).zip)* script. For more information on running the validation script independently on your test machine, see **[General guidelines for running the validation script](#general-guidelines-for-running-validation-script)**.
 
 3. Join the VM to a domain using the domain account that is used in SCOM Managed Instance creation. To join the virtual machine to domain, follow the steps provided in the [Domain join validation section](#domain-join-validation).
 
