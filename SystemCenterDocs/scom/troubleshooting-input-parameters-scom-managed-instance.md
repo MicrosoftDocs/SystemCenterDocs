@@ -59,9 +59,9 @@ Follow these steps to run the validation script:
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM managed instance.
 
 2. Download the validation script to the test VM and extract. It consists of three files:
-       - ScomValidation.ps1
-       - RunValidation.ps1
-       - Readme.txt
+     - ScomValidation.ps1
+     - RunValidation.ps1
+     - Readme.txt
 
 3. Follow the steps mentioned in the Readme.txt file to run the *RunValidation.ps1*. Ensure to fill the settings value in *RunValidation.ps1* with applicable values before running it.
 
@@ -134,7 +134,7 @@ Follow these steps to run the validation script:
 
 5. The validation script displays all the validation checks and their respective errors, which will help resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 
-If all the checks pass successfully, return to the onboarding page and restart the onboarding process again.
+    If all the checks pass successfully, return to the onboarding page and restart the onboarding process again.
 
 ## Internet connectivity
 
@@ -315,12 +315,13 @@ If all the checks pass successfully, return to the onboarding page and restart t
       ```
 
       Replace `$domainName` with the name of the domain you want to test, and `$portToCheck` with each port from the following list number:
-       - 389/636
-       - 88
-       - 3268/3269
-       - 135
-       - 445
-      Execute the provided command for all the above ports.
+   - 389/636
+   - 88
+   - 3268/3269
+   - 135
+   - 445
+      
+    Execute the provided command for all the above ports.
 
       This command checks if the specified port is open on the designated domain controller that is configured for Azure or SCOM Managed Instance creation. If the command shows a successful connection, it indicates that the necessary ports are open.
 
