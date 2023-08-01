@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/31/2023
+ms.date: 08/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -515,6 +515,7 @@ If all the checks pass successfully, return to the onboarding page and restart t
        ```
 
       If `managerCanUpdateMembership` is **True**, then the domain user has update membership permission on the computer group.
+      If `managerCanUpdateMembership` is **False**, then give the computer group manage permission to the domain user.
 
 ## gMSA account validations
 
@@ -741,4 +742,4 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 
       ```
 
-      If `$overridingPolicy` is found **True**, then there is policy with name in variable **$overridingPolicyName** overriding local administrator group.
+      If `$overridingPolicy` is found **True**, then there is policy with name in variable **$overridingPolicyName** overriding local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
