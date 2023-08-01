@@ -56,7 +56,7 @@ In cases where multiple validations fail, the best approach is to address all th
 
 Follow these steps to run the validation script:
 
-1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM managed instance.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
 2. Download the validation script to the test VM and extract. It consists of three files:
      - ScomValidation.ps1
