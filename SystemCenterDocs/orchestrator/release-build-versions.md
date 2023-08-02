@@ -5,7 +5,7 @@ description: This article details the release builds in Orchestrator
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 03/21/2023
+ms.date: 08/02/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
@@ -74,4 +74,4 @@ The following table lists the release history for Orchestrator 1801
 
 ## Next steps
 
-- See [What's new in System Center Orchestrator](whats-new-in-orch.md).
+See [What's new in System Center Orchestrator](whats-new-in-orch.md).

@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 03/21/2023
+ms.date: 08/02/2023
 ms.prod: system-center
 ms.assetid: 
 ms.technology: orchestrator
@@ -24,3 +24,4 @@ The following table lists the release history for Orchestrator 2019.
 |10.19.100.0|[4533414](https://support.microsoft.com/kb/4533414) |February 2020 |Update Rollup 1 |
 |10.19.119.0|[4569536](https://support.microsoft.com/kb/4569536) |August 2020 |Update Rollup 2 |
 |10.19.126.0|[4599686](https://support.microsoft.com/kb/4599686) |March 2021 |Update Rollup 3 |
+|10.19.170.0|[5029811](https://support.microsoft.com/kb/5029811) |July 2023 |Conforms to [GB18030-2022] (https://learn.microsoft.com/azure/compliance/offerings/offering-china-gb-18030) standard |
