@@ -1,8 +1,8 @@
 ---
 title: Run SSH Command
-description: This articles describes the functionality of Run SSH Command activity.
+description: This article describes the functionality of Run SSH Command activity.
 ms.custom: UpdateFrequency3
-ms.date: "05/13/2016"
+ms.date: 07/28/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 
 - The property **Accept Host Key Change** is not a recommended setting. This property should only be used to establish the initial connection to a computer when the key is stored on the runbook server. Runbooks that contain the Run SSH Command activity should be configured with **Accept Host Key Change** disabled. When you use this property, it disables the validation of the identity of the SSH server and represents a security risk.  
 
-- You should review the list of cryptographic ciphers supported by PuTTY, which is found at [<https://the.earth.li/~sgtatham/putty/0.70/htmldoc/Chapter4.html#config-ssh-encryption>).  
+- You should review the list of cryptographic ciphers supported by PuTTY, which is found at <https://the.earth.li/~sgtatham/putty/0.70/htmldoc/Chapter4.html#config-ssh-encryption>.  
 
 - PuTTY beta .61 uses a pseudorandom number generator suitable for most cryptographic purposes. It isn't recommended for the generation of long-term cryptographic keys.  
 
