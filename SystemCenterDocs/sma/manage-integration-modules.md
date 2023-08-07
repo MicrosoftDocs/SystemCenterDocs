@@ -8,7 +8,7 @@ ms.prod: system-center
 ms.date: 08/07/2023
 title: Work with Integration Modules
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Work with integration modules

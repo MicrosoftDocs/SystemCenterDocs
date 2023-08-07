@@ -8,7 +8,7 @@ ms.prod: system-center
 ms.date: 08/07/2023
 title: Simplify runbook authoring with global assets
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Simplify Service Management Automation runbook authoring with global assets
