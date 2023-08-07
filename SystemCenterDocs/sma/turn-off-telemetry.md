@@ -5,11 +5,11 @@ description: This article provides information about how to turn off the telemet
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/08/2018
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Turn off telemetry settings in Service Management Automation

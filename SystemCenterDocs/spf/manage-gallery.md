@@ -4,7 +4,7 @@ description: Provides information about importing gallery items into SPF
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/18/2022
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation

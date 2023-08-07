@@ -4,11 +4,11 @@ description: This article describes how to install and deploy System Center Serv
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/22/2018
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
-ms.custom: UpdateFrequency2, intro-deployment
+ms.custom: UpdateFrequency2, intro-deployment, enggement-fy23
 ---
 
 # Deploy SPF

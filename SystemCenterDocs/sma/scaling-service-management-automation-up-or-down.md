@@ -6,10 +6,11 @@ author: jyothisuri
 ms.prod: system-center
 ms.author: jsuri
 keywords:
-ms.date: 01/22/2018
+ms.date: 08/07/2023
 title: Scaling Service Management Automation
 ms.technology: service-management-automation
 ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
+ms.custom: engagement-fy23
 ---
 
 # Scaling Service Management Automation

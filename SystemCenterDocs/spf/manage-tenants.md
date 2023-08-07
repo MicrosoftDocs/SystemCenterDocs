@@ -4,7 +4,7 @@ description: Provides information setting up SPF tenants, and creating self-serv
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/22/2018
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation

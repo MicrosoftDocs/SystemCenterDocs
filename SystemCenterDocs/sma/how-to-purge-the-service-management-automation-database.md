@@ -5,9 +5,10 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 01/22/2018
+ms.date: 08/07/2023
 title: Purge the Service Management Automation database
 ms.technology: service-management-automation
+ms.custom: engagement-fy23
 ---
 
 # Purge the Service Management Automation database
