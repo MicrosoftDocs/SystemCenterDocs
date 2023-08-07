@@ -240,7 +240,7 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
     After you assign permissions to Azure Service Principal Name on each database, T-SQL monitoring should work properly in REST+T-SQL mode.
 
-    For proper T-SQL monitoring of georeplicas, grant the **SQL Administrator** right on each replica server.
+    For proper T-SQL monitoring of geo replicas, grant the **SQL Administrator** right on each replica server.
 
 ## Configuring T-SQL Monitoring
 
