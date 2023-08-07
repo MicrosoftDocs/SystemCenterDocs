@@ -36,7 +36,6 @@ PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"
 
 ## Invoke runbooks
 
-
 You can set a runbook in System Center - Orchestrator to run whenever a new VM or service is created by remote calls to SPF with System Center - Virtual Machine Manager (VMM).
 
 - You can set the runbook to be invoked using the Windows PowerShell `T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler` cmdlet.

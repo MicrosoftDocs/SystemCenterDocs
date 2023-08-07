@@ -87,7 +87,7 @@ The following table summarizes the differences between the two methods for calli
 |**Job**|Child runbooks run in the same job as the parent.|A separate job is created for the child runbook.|
 |**Execution**|Parent runbook waits for the child runbook to complete before continuing.|Parent runbook continues immediately after child runbook is started.|
 |**Output**|Parent runbook can directly get output from child runbook.|Parent runbook must retrieve output from child runbook job.|
-|**Parameters**|Values for the child runbook parameters are specified separately and can use any data type.|Values for the child runbook parameters must be combined into a single hashtable and can only include simple, array, and object data types that leverage JSON serialization.|
+|**Parameters**|Values for the child runbook parameters are specified separately and can use any data type.|Values for the child runbook parameters must be combined into a single hashtable and can only include simple, array, and object data types that use JSON serialization.|
 |**Publishing**|Child runbook must be published before parent runbook is published.|Child runbook must be published anytime before a parent runbook is started.|
 
 ## Next steps
