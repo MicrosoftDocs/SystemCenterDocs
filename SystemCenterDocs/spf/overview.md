@@ -4,11 +4,11 @@ description: This article provides a broad overview of Service Provider Foundati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/19/2023
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # What is Service Provider Foundation?

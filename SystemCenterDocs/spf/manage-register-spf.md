@@ -4,11 +4,11 @@ description: Provides information about registering the SPF endpoint in Microsof
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/18/2022
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
