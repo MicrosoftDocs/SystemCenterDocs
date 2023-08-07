@@ -151,9 +151,9 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
     >[!TIP]
     > You can skip the Web URI redirection, this parameter is not needed for monitoring.
 
-    Assign the **Reader** role to SPN in the IAM Access pane for the respective Azure SQL DB server in the Azure Portal. Role assignment flow is like [Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal#grant-access).
+    Assign the **Reader** role to SPN in the IAM Access pane for the respective Azure SQL DB server in the Azure portal. Role assignment flow is like [Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal#grant-access).
 
-     ![Screenshot of manual granted SPN permission in the Azure Portal.](./media/azure-sql-management-pack/azure-spn-reader-permission.png)
+     ![Screenshot of manual granted SPN permission in the Azure portal.](./media/azure-sql-management-pack/azure-spn-reader-permission.png)
 
     At the **SPN Configuration** step, select the **Enter SPN Manually** option for this case, select **Next**, and provide the required information about your Azure Service Principal Name:
    - Tenant ID – Directory (tenant) ID from SPN overview section.
