@@ -5,8 +5,8 @@ description: This article describes how to upgrade an Operations console to the 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/21/2022
-ms.custom: UpdateFrequency.5
+ms.date: 08/07/2023
+ms.custom: UpdateFrequency.5, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
