@@ -8,7 +8,7 @@ ms.prod: system-center
 ms.date: 08/07/2023
 title: Purge the Service Management Automation database
 ms.technology: service-management-automation
-ms.custom: engagement-fy23
+ms.custom: engagement-fy24
 ---
 
 # Purge the Service Management Automation database
