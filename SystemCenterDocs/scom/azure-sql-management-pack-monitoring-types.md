@@ -6,7 +6,7 @@ ms.custom: engagement-fy23
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 01/09/2023
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -91,7 +91,7 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
    - Management Service URI: `https://management.azure.com`
 
-     This endpoint is also used for Azure REST API. In this case, the Firewall port 443 should be used. However, according to [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the Firewall port 1433 should be used.
+     According to [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), should be used the Firewall port 1433. This endpoint is also used for Azure REST API.
 
    - Database Resource URI: `https://database.windows.net`
 
@@ -115,6 +115,8 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
     For any of these options, you can select the **Use T-SQL for monitoring** checkbox to receive additional monitoring information and neutralize Azure Subscription throttling effects. For more information, see [Differences Between Azure REST API and T-SQL Monitoring](#differences-between-azure-rest-api-and-t-sql-monitoring).
 
+    ### Auto-Create SPN
+
     ![SPN configuration](./media/azure-sql-management-pack/selecting-spn-configuration.png)
 
     If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window appears. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
@@ -132,37 +134,36 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
     ![Screenshot showing Authentication information.](./media/azure-sql-management-pack/reviewing-authentication-information.png)
 
-    To perform T-SQL monitoring when using Azure Service Principal Name, create a separate user for every monitored database and grant this user the **dbmanager** role by executing the following queries:
-
-    ```SQL
-    /*Run this on [master] database.
-    Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
-    CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
-    exec sp_addrolemember 'dbmanager', 'ApplicationName';
-
-    /*Run this on all [user] databases.
-    Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
-    CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
-    GRANT VIEW DATABASE STATE TO [ApplicationName];
-    ```
-
-    To run these queries in SQL Server Management Studio, connect to the Azure SQL Server as **Active Directory Administrator**.
-
-    After you assign permissions to Azure Service Principal Name on each database, T-SQL monitoring should work properly in REST+T-SQL mode.
-
-    For proper T-SQL monitoring of georeplicas, grant the **SQL Administrator** right on each replica server.
-
     At the **Subscription Permissions** step, select Azure subscriptions to which you want to add the created Azure Service Principal Name.
 
     ![Screenshot showing Subscription permissions.](./media/azure-sql-management-pack/configuring-subscription-permissions.png)
 
+    ### Use existing Run As Profile
+    
     To use an existing Run As Profile, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, select **Next**, and select an existing Run As Account associated with Azure Service Principal Name. This account will be used for authentication in Azure Cloud.
 
     ![Screenshot showing Existing Run As Account.](./media/azure-sql-management-pack/using-existing-run-as-account.png)
 
-   If you need to create SPN manually use the [Creating a service principal for use with Microsoft Purview](/azure/purview/create-service-principal-azure#app-registration).
-    
-    At the **SPN Configuration** step, select the **Enter SPN Manually** option for this case, select **Next**, and provide the required information about your Azure Service Principal Name. This information will be used to create a new Run As Account for authentication in Azure Cloud.
+   ### Enter SPN manually
+
+   Follow the steps to register the application and create SPN manually using the Azure portal to [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+
+    >[!TIP]
+    > You can skip the Web URI redirection, this parameter is not needed for monitoring.
+
+    Assign the **Reader** role to SPN in the IAM Access pane for the respective Azure SQL DB server in the Azure portal. Role assignment flow is like [Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal#grant-access).
+
+     ![Screenshot of manual granted SPN permission in the Azure portal.](./media/azure-sql-management-pack/azure-spn-reader-permission.png)
+
+    At the **SPN Configuration** step, select the **Enter SPN Manually** option for this case, select **Next**, and provide the required information about your Azure Service Principal Name:
+   - Tenant ID – Directory (tenant) ID from SPN overview section.
+   - Application ID – Application (client) ID from SPN overview section.
+   - Client Secret – Client Secret Value for the specific SPN.
+
+    >[!NOTE]
+    > The Client Secret Value is available only once after creation. Copy this information to a secure location for reuse.
+
+    This information will be used to create a new Run As Account for authentication in Azure Cloud.
 
     ![Screenshot showing Enter SPN manually.](./media/azure-sql-management-pack/entering-spn-manually.png)
 
@@ -220,6 +221,26 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 10. At the **Summary** step, review connection settings and select **Create**.
 
     ![Screenshot of the Summary information.](./media/azure-sql-management-pack/reviewing-summary.png)
+
+11. To perform T-SQL monitoring when using Azure Service Principal Name, create a separate user for every monitored database and grant this user the **dbmanager** role by executing the following queries:
+
+    ```SQL
+    /*Run this on [master] database.
+    Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
+    CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
+    exec sp_addrolemember 'dbmanager', 'ApplicationName';
+
+    /*Run this on all [user] databases.
+    Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
+    CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
+    GRANT VIEW DATABASE STATE TO [ApplicationName];
+    ```
+
+    To run these queries in SQL Server Management Studio, connect to the Azure SQL Server as **Active Directory Administrator**.
+
+    After you assign permissions to Azure Service Principal Name on each database, T-SQL monitoring should work properly in REST+T-SQL mode.
+
+    For proper T-SQL monitoring of geo replicas, grant the **SQL Administrator** right on each replica server.
 
 ## Configuring T-SQL Monitoring
 
