@@ -5,7 +5,7 @@ description: This article describes the procedure to remove a gateway server fro
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 06/20/2023
+ms.date: 08/08/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -37,6 +37,37 @@ Gateway servers can manage three different types of objects:
 - Agentless-managed computers
 
 - Network devices acting as a proxy agent
+
+### Configure agentless-managed computers to use an alternate proxy agent using PowerShell 
+
+The following PowerShell script allows you to configure the proxy agent for agentless-managed computers to use another management server or gateway.
+
+Edit the variable section of the PowerShell script as appropriate.
+
+```powershell
+#------------------------------- 
+
+# Variables Section 
+
+#------------------------------- 
+
+$FromGatewayServer = 'GW01-2019.contoso-2019.com' # Management Server or Gateway Server to move FROM 
+
+$ToGatewayServer = 'MS01-2019.contoso-2019.com' # Management Server or Gateway Server to move TO 
+
+#------------------------------- 
+
+$MSList = Get-SCOMManagementServer 
+
+$FromGatewayServer = $MSList | Where-Object {$_.Name -match $FromGatewayServer} 
+
+$ToGatewayServer =  $MSList | Where-Object {$_.Name -match $ToGatewayServer} 
+
+  
+
+Get-SCOMAgentlessManagedComputer | Where-Object {$_.ProxyAgentPrincipalName -match $FromGatewayServer.DisplayName} | Set-SCOMAgentlessManagedComputer -ManagedByManagementServer $ToGatewayServer -PassThru 
+
+```
 
 ### Configure agent-managed computers using the Operations console
 
