@@ -5,8 +5,8 @@ description: This article describes how to upgrade the Reporting server to the l
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/22/2022
-ms.custom: UpdateFrequency.5
+ms.date: 08/07/2023
+ms.custom: UpdateFrequency.5, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

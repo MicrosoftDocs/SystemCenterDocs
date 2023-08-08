@@ -5,7 +5,7 @@ description: This article describes how to apply overrides to classes and groups
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/24/2023
+ms.date: 07/2/2023
 ms.custom: engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager

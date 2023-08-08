@@ -5,12 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 05/14/2021
+ms.date: 07/12/2023
 title: Back up SharePoint with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
 ms.author: jsuri
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Back up SharePoint with DPM
@@ -193,7 +193,11 @@ There are a couple of possible scenarios for farm recovery:
 
 -   The configuration database is corrupt and the servers in the farm are down.
 
-#### Restore data to a functioning farm
+Select the required tab for steps to restore data to a functioning or non-functioning farm:
+
+# [Restore data to a functioning farm](#tab/FunctioningFarm)
+
+Follow these steps to restore data to a functioning farm:
 
 1.  In the DPM Administrator Console, select **Recovery** on the navigation bar.
 
@@ -220,7 +224,9 @@ There are a couple of possible scenarios for farm recovery:
 
 9. On the **Summary** page, review the recovery settings and then select **Recover**.
 
-#### Restore data to a non-functioning farm
+# [Restore data to a non-functioning farm](#tab/NonfunctioningFarm)
+
+Follow these steps to restore data to a non-functioning farm:
 
 1.  Create a new farm that uses the same instance of SQL Server and the same front-end Web server as the original protected farm.
 
@@ -252,6 +258,8 @@ There are a couple of possible scenarios for farm recovery:
 11. On the **Summary** page, review the recovery settings, and then select **Recover**.
 
 12. On the main front-end Web server for the server farm, run the SharePoint Products and Technologies Configuration Wizard and disconnect the front-end Web server from the farm.
+
+---
 
 ## Switching the Front-End Web Server
 

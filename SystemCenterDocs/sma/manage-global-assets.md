@@ -5,10 +5,10 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 01/22/2018
+ms.date: 08/07/2023
 title: Simplify runbook authoring with global assets
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Simplify Service Management Automation runbook authoring with global assets
