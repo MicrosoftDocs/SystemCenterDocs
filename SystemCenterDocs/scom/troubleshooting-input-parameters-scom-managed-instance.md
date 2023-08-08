@@ -101,7 +101,7 @@ Follow these steps to run the validation script:
 
 4. In general, *RunValidationAsSCOMAdmin.ps1* runs all the validations. If you wish to run a specific check, then open *ScomValidation.ps1* and comment all other checks, which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
 
-      ```powershell
+```powershell
         # Default mode is - SCOMAdmin, by default if mode is not passed then it will run all the validations  
 
     # adding all the checks to result set 
@@ -171,7 +171,7 @@ Follow these steps to run the validation script:
         Write-Verbose -Verbose  $_ 
 
     } 
-      ```
+```
 
 5. The validation script displays all the validation checks and their respective errors, which will help resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 
