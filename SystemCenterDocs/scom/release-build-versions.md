@@ -5,11 +5,11 @@ description: This article details the release builds in Operations Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/27/2023
+ms.date: 08/02/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # System Center - Operations Manager build versions

@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Virtual M
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/04/2020
+ms.date: 07/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

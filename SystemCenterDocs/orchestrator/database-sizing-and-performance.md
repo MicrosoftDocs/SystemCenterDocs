@@ -3,11 +3,12 @@ title: Database sizing and performance
 description: Provides guidance for sizing the System Center - Orchestrator database
 author: jyothisuri
 manager: mkluck
-ms.date: 01/17/2018
+ms.date: 07/18/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
+ms.custom: engagement-fy23
 ---
 
 
@@ -25,7 +26,7 @@ Database sizing is the key to understanding the performance of System Center - O
 
 Because the Runbook Designer communicates with the Orchestrator database (through the management server), poor database performance will impede that communication.  
 
-The Orchestrator operator experience is based on two components: The **Orchestration Console** and the Web Service. The **Orchestration Console** is a Silverlight\-based application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. So, the Web Service and **Orchestration Console** are both dependent on the performance of the Orchestrator database.  
+The Orchestrator operator experience is based on two components: The **Orchestration Console** and the Web Service. The **Orchestration Console** is a Silverlight-based application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. So, the Web Service and **Orchestration Console** are both dependent on the performance of the Orchestrator database.  
 
 Additionally, while the **Orchestration Console** is dependent on the Web Service, it also has logic unique to its function as a user interface and its own performance characteristics.  
 
@@ -39,7 +40,7 @@ The Orchestrator infrastructure contains configuration data. This data isn't a c
 
 ### Log Data  
 
-Orchestrator creates different types of log data, all of which can be viewed and managed in the **Runbook Designer**. The storage requirements for this data can vary in size and be large.  
+Orchestrator creates different types of log data, all of which can be viewed and managed in the **Runbook Designer**. The storage requirements for this data can vary in size and can be large.  
 
 The following table lists the types of log data that can be stored in the Orchestrator database. Orchestrator also stores data in separate log files (outside of the database) for audit trails and tracing. For more information about all the types of log data, see [Orchestrator Logs](orchestrator-logs.md).  
 
@@ -106,7 +107,7 @@ The following procedure creates a runbook that runs a **Compare Values** activit
 
 3.  Select the **General** tab and configure this activity to compare strings (the default value).  
 
-4.  Select the **Details** tab, type the value **STRING** in the **Test** box, and select **is empty**.  
+4.  Select the **Details** tab, enter the value **STRING** in the **Test** box, and select **is empty**.  
 
 5.  Select **Finish** to save the updates to the activity.  
 
@@ -118,7 +119,7 @@ The following procedure creates a runbook that runs a **Compare Values** activit
 
 9. Change the default exit condition. Select **Compare Values**, check the **Show Common Published Data** checkbox, and select **Loop:  Number of attempts**. Select **OK** to save this change.  
 
-10. Select **value** from the updated exit condition and type the number **10000** (ten\-thousand). Select **OK** to save this change.  
+10. Select **value** from the updated exit condition and enter the number **10000** (ten\-thousand). Select **OK** to save this change.
 
 11. Select **Finish** to save these updates.  
 
@@ -207,7 +208,7 @@ Using the database sizing described above, you can estimate the storage requirem
 |Runbook 2|13,100|6.2|1,500|18.7|2%|  
 |Runbook 3|72,984|34.8|720|50.1|6%|  
 |Runbook 4|48,656|23.2|15,000|696.0|83%|  
-|||Total: 76.7 MB||Total: 839.8 MB||  
+|||Total: 76.7 MB||Total: 839.3 MB||  
 
 This example clearly illustrates the importance of making sound decisions for data logging. Runbook 4 contains only eight activities, but when configured at the Common Published Data Logging level, it consumes most of the storage in the database because of the high frequency of invocation. Based on these results, you may prefer to reduce the logging level of Runbook 4 to the Default logging configuration.  
 
@@ -229,7 +230,7 @@ Recalculating the storage figures for the updated configuration produces signifi
 |Runbook 2|13,100|6.2|1,500|18.7|9%|  
 |Runbook 3|72,984|34.8|720|50.1|25%|  
 |Runbook 4|4,192|2.0|15,000|60.0|29%|  
-|||Total: 55.5 MB||Total: 203.8 MB||  
+|||Total: 55.5 MB||Total: 203.3 MB||  
 
 While there's little change in the default logging configuration (500 log entries per runbook), the 30\-day storage requirements have changed greatly. Clearly, the storage cost of using Common Published Data logging for Runbook 4 should be carefully considered since this change results in a 76% reduction in database storage requirements for 30 days of data.  
 

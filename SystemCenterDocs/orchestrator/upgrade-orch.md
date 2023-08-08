@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Orc
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/07/2022
+ms.date: 07/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator

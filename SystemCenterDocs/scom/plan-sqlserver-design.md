@@ -5,8 +5,8 @@ description: This article provides detailed design guidance for SQL Server to su
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 06/26/2023
-ms.custom: na, UpdateFrequency.5
+ms.date: 08/04/2023
+ms.custom: engagement-fy23, UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -54,7 +54,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 to 17.10.3, and MSOLEDBSQL 18.2 to 18.6.5.
+  > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 ::: moniker-end
 
