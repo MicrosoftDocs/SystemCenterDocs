@@ -1,7 +1,7 @@
 ---
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: This article provides information about exchange Integration packs and how to deploy it.
-ms.date: 07/26/2022
+ms.date: 08/09/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,6 +12,7 @@ ms.assetid: 3d807dc8-013d-45da-9647-825ab64aba2a
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+ms.custom: engagement-fy24
 ---
 
 # Exchange Admin Integration Pack for Orchestrator in System Center
@@ -87,7 +88,7 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 - Microsoft Exchange Management Shell
 - Microsoft PowerShell
 - Microsoft WinRM 2.0
-- Exchange Online PowerShell V2 Module (EXO V3)
+- Exchange Online PowerShell V3 Module ([EXO v3](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)), you must [upgrade from EXO v2 to EXO v3 for this IP](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597).
 
 
 
