@@ -88,7 +88,7 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 - Microsoft Exchange Management Shell
 - Microsoft PowerShell
 - Microsoft WinRM 2.0
-- Exchange Online PowerShell V3 Module ([EXO v3](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)), you must [upgrade from EXO v2 to EXO v3 for this IP](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597).
+- Exchange Online PowerShell V3 Module ([EXO v3](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)); you must [upgrade from EXO v2 to EXO v3 for this IP](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597&preserve-view=true).
 
 
 
