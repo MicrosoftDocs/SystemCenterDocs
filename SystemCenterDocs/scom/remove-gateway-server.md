@@ -38,37 +38,6 @@ Gateway servers can manage three different types of objects:
 
 - Network devices acting as a proxy agent
 
-### Configure agentless-managed computers to use an alternate proxy agent using PowerShell 
-
-The following PowerShell script allows you to configure the proxy agent for agentless-managed computers to use another management server or gateway.
-
-Edit the variable section of the PowerShell script as appropriate.
-
-```powershell
-#------------------------------- 
-
-# Variables Section 
-
-#------------------------------- 
-
-$FromGatewayServer = 'GW01-2019.contoso-2019.com' # Management Server or Gateway Server to move FROM 
-
-$ToGatewayServer = 'MS01-2019.contoso-2019.com' # Management Server or Gateway Server to move TO 
-
-#------------------------------- 
-
-$MSList = Get-SCOMManagementServer 
-
-$FromGatewayServer = $MSList | Where-Object {$_.Name -match $FromGatewayServer} 
-
-$ToGatewayServer =  $MSList | Where-Object {$_.Name -match $ToGatewayServer} 
-
-  
-
-Get-SCOMAgentlessManagedComputer | Where-Object {$_.ProxyAgentPrincipalName -match $FromGatewayServer.DisplayName} | Set-SCOMAgentlessManagedComputer -ManagedByManagementServer $ToGatewayServer -PassThru 
-
-```
-
 ### Configure agent-managed computers using the Operations console
 
 1. Sign-in to a management server with Administrator privileges for the Operations Manager management group.
@@ -80,7 +49,7 @@ Get-SCOMAgentlessManagedComputer | Where-Object {$_.ProxyAgentPrincipalName -mat
 4. In the Agent Managed pane, select the computers for which you want to change the primary management server, right-click them, and then select **Change Primary Management Server**.
 
      >[!Note]
-     >The **Change Primary Management Server** option will be unavailable if Active Directory Domain Services was used to assign any of the selected computers to the management group using [Active Directory Integration for agent assignment](/system-center/scom/manage-ad-integration-agent-assignment?view=sc-om-2022).
+     >The **Change Primary Management Server** option will be unavailable if Active Directory Domain Services was used to assign any of the selected computers to the management group using [Active Directory Integration for agent assignment](/system-center/scom/manage-ad-integration-agent-assignment?view=sc-om-2022). The **Change Primary Management Server** option can also be disabled due to the Agents not being Remotely Manageable.
 
 5. In the Change Management Server dialog, select the new management server from the list, and then select **OK**. The change takes effect on the agent after its next update interval.
 
@@ -134,6 +103,30 @@ Alternatively, this configuration can be changed on the agent-managed computer i
 >- If the Domain Name System (DNS) and Active Directory names for the management server differ, the **MANAGEMENT_SERVER_AD_NAME** property also needs to be set to the fully qualified Active Directory Domain Services name.
 
 ### Redirect Agentless-Managed Computers and Network devices
+
+#### Configure Agentless-Managed computers to use an alternate proxy agent using PowerShell
+
+The following PowerShell script allows you to configure the proxy agent for agentless-managed computers to use another management server or gateway.
+
+Edit the variable section of the PowerShell script as appropriate.
+
+```powershell
+#------------------------------- 
+# Variables Section 
+#------------------------------- 
+$FromGatewayServer = 'GW01-2019.contoso-2019.com' # Management Server or Gateway Server to move FROM
+
+$ToGatewayServer = 'MS01-2019.contoso-2019.com' # Management Server or Gateway Server to move TO 
+#------------------------------- 
+
+$MSList = Get-SCOMManagementServer 
+$FromGatewayServer = $MSList | Where-Object {$_.Name -match $FromGatewayServer} 
+$ToGatewayServer =  $MSList | Where-Object {$_.Name -match $ToGatewayServer} 
+
+Get-SCOMAgentlessManagedComputer | Where-Object {$_.ProxyAgentPrincipalName -match $FromGatewayServer.DisplayName} | Set-SCOMAgentlessManagedComputer -ManagedByManagementServer $ToGatewayServer -PassThru 
+
+```
+
 
 #### Change the proxy agent for agentless-managed computers and network devices
 
