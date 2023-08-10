@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/08/2023
+ms.date: 08/10/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -58,7 +58,7 @@ Follow these steps to run the validation script:
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. Download the validation script to the test VM and extract. It consists of three files:
+2. Download the validation script to the test VM and extract. It consists of five files:
      - ScomValidation.ps1
      - RunValidationAsSCOMAdmin.ps1
      - RunValidationAsActiveDirectoryAdmin.ps1
