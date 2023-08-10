@@ -22,9 +22,9 @@ manager: mkluck
 
 ::: moniker range="sc-orch-2019"
 
-The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on [HTML 5](#navigation-pane) and using [SilverLight (deprecated)](#navigation-pane-1). Ensure you [migrate](#migrate-to-html5-web-components) to the latest Web console using the steps mentioned in this article.
+The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on [HTML5](#navigation-pane) and using [SilverLight (deprecated)](#navigation-pane-1). Ensure you [migrate](#migrate-to-html5-web-components) to the latest Web console using the steps mentioned in this article.
 
-# [Orchestrator Web console using HTML 5](#tab/html)
+# [Orchestrator Web console using HTML5](#tab/html)
 
 ## Navigation pane
 
@@ -313,7 +313,7 @@ When you view an instance, you can choose to stop the associated job. Stopping t
 
 The HTML5 Web components were released in Dec 2021 through a [blog post announcement](https://techcommunity.microsoft.com/t5/system-center-blog/a-brand-new-web-console-for-orchestrator-2019/bc-p/3757682/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufExFUkNVQTdCTjFIQTNYfDM3NTc2ODJ8U1VCU0NSSVBUSU9OU3xoSw%22%20/l%20%22M3691%22%20/t%20%22_blank). The release featured a .NET Core 5 REST API and a redesigned HTML5 Console (without Silverlight).
 
-We recommend you migrate to the .NET Core 6 Web Components (v10.19.148.0) which will be supported as per the System Center 2019 support policy.
+We recommend you migrate to the .NET Core 6 Web Components (v10.19.350.0) which will be supported as per the System Center 2019 support policy.
 
 Following are the improvements made to the Web components:
 
@@ -333,7 +333,7 @@ The included Setup.exe will test and prompt for the following missing prerequisi
 1. [.NET 6 Hosting bundle](https://msazure.visualstudio.com/One/_git/SystemCenter-Orchestrator?version=GBsupport/2019-ur&path=/docs/web-components-2019-migration.md&_a=preview)
 2. IIS modules: [CORS](https://www.iis.net/downloads/microsoft/iis-cors-module) and [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite).
 
-# [Migrate from .NET 5 Web components to .NET 6 (v10.19.148.0)](#tab/net)
+# [Migrate from .NET 5 Web components to .NET 6 (v10.19.350.0)](#tab/net)
 
 >[!TIP] 
 >You can install the v10.19.350.0 release side-by-side with the .NET 5 and SilverLight Web features.
@@ -352,7 +352,7 @@ The API spec (Swagger/OpenAPI) is included in *.json* format and can be visualis
 
 Follow the FAQ to troubleshoot common issues. Once you are comfortable with the v10.19.350.0 release, you can remove the .NET 5 apps and the respective IIS sites.
 
-# [Migrate from SilverLight Web Features to .NET 6 (v10.19.148.0)](#tab/silverlightnet)
+# [Migrate from SilverLight Web Features to .NET 6 (v10.19.350.0)](#tab/silverlightnet)
 
 Follow the same steps as in Migrate from .NET web components to .NET 6. Since this is a fresh install, you may want to review the IIS site and `web.config` created by the installer. It would be beneficial to add the console domains to the API's CORS allowed origin list.
 
