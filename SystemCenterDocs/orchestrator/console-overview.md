@@ -22,7 +22,7 @@ manager: mkluck
 
 ::: moniker range="sc-orch-2019"
 
-The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on [HTML5](#navigation-pane) and using [SilverLight (deprecated)](#navigation-pane-1). Ensure you [migrate](#migrate-to-html5-web-components) to the latest Web console using the steps mentioned in this article.
+The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on [HTML5](#navigation-pane) and using [SilverLight (deprecated)](#runbooks-workspace). Ensure you [migrate](#migrate-to-html5-web-components) to the latest Web console using the steps mentioned in this article.
 
 # [Orchestrator Web console using HTML5](#tab/html)
 
