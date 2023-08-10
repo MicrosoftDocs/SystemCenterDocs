@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/27/2023
+ms.date: 08/02/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -33,6 +33,8 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10569.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
 |10.19.10576.0|[5016576](https://support.microsoft.com/kb/5016576) |July 2022 |Update Rollup 4 - Hotfix for Operations Console Performance issue |
 |10.19.10606.0|[5025123](https://support.microsoft.com/kb/5025123)|April 2023 |Update Rollup 5 |
+|10.19.10616.0|[5029512](https://support.microsoft.com/kb/5029512)|July 2023|Discover Azure Migrate in Operations Manager|
+|10.19.10615.0|[5029601](https://support.microsoft.com/kb/5029601)|July 2023|GB compliance|
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |

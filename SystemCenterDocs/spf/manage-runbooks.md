@@ -4,11 +4,11 @@ description: Provides information about integrating System Center SPF and SMA.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/22/2018
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Automate and invoke runbooks from SPF
@@ -35,7 +35,6 @@ PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"
 ```  
 
 ## Invoke runbooks
-
 
 You can set a runbook in System Center - Orchestrator to run whenever a new VM or service is created by remote calls to SPF with System Center - Virtual Machine Manager (VMM).
 

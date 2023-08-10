@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 03/15/2023
+ms.date: 08/02/2023
 ms.prod: system-center
 ms.assetid: 
 ms.technology: orchestrator
@@ -22,3 +22,5 @@ The following table lists the release history for Orchestrator 2022.
 |-------------|---|-------------|------------|
 |10.22.2.0||April 2022 |General Availability |
 |10.22.6.1|[5021420](https://support.microsoft.com/kb/5021420)|January 2023 |Update Rollup 1 |
+|10.22.8.3|[5024318](https://support.microsoft.com/kb/5024318)|March 2023 |Hotfix for Web Console |
+|10.22.8.29|[5029810](https://support.microsoft.com/kb/5029810)|July 2023 |Conforms to [GB18030-2022](/azure/compliance/offerings/offering-china-gb-18030) standard |

@@ -69,6 +69,7 @@
 #### [How to upgrade to version 1807](upgrade-1801-to-1807.md)
 #### [How to upgrade from the evaluation version of Operations Manager](deploy-upgrade-eval.md)
 #### [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md)
+### [Remove a Gateway Server from a Management Group](remove-gateway-server.md)
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
@@ -85,7 +86,9 @@
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 #### [FAQs](operations-manager-managed-instance-common-questions.md)
-#### [Troubleshoot](troubleshoot-scom-managed-instance.md)
+#### Troubleshoot
+##### [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
+##### [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
 #### Security
 ##### [Managed Identity](use-managed-identities-with-scom-mi.md)
 ##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)

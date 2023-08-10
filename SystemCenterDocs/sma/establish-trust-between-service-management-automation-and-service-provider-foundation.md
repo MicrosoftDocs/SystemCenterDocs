@@ -6,10 +6,10 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 01/22/2018
+ms.date: 08/07/2023
 title: Establish trust between Service Management Automation and Service Provider Foundation
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Establish trust between Service Management Automation and Service Provider Foundation
