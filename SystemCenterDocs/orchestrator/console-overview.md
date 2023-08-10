@@ -8,7 +8,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jsuri
-ms.date: 08/01/2023
+ms.date: 08/10/2023
 author: jyothisuri
 manager: mkluck
 ---
@@ -22,7 +22,7 @@ manager: mkluck
 
 ::: moniker range="sc-orch-2019"
 
-The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on HTML 5 and using SilverLight (deprecated). Ensure you migrate to the latest Web console using the steps mentioned in this article.
+The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on [HTML 5](#orchestrator-web-console-using-html-5) and using [SilverLight (deprecated)](#orchestrator-web-console-using-silverlight). Ensure you [migrate](#migrate-to-html5-web-components) to the latest Web console using the steps mentioned in this article.
 
 # [Orchestrator Web console using HTML 5](#tab/html)
 
@@ -315,7 +315,7 @@ The HTML5 Web components were released in Dec 2021 through a [blog post announce
 
 We recommend you migrate to the .NET Core 6 Web Components (v10.19.148.0) which will be supported as per the System Center 2019 support policy.
 
-Following are the improvements made to the Web components until 2022 UR1:
+Following are the improvements made to the Web components:
 
 1. Upgrade to latest LTSC .NET Core 6. *.NET 5* has reached [end of support](https://dotnet.microsoft.com/platform/support/policy) .
 2. `Job start` form parameters in .NET 5 Web Console were mandatory.
@@ -336,9 +336,9 @@ The included Setup.exe will test and prompt for the following missing prerequisi
 # [Migrate from .NET 5 Web components to .NET 6 (v10.19.148.0)](#tab/net)
 
 >[!TIP] 
->You can install the v10.19.148.0 release side-by-side with the .NET 5 and SilverLight Web features.
+>You can install the v10.19.350.0 release side-by-side with the .NET 5 and SilverLight Web features.
 
-Run the following PowerShell command to extract the v10.19.148.0 release package from [DLC](https://www.microsoft.com/download/details.aspx?id=103552) and launch Setup.exe:
+Run the following PowerShell command to extract the v10.19.350.0 release package from [DLC](https://www.microsoft.com/download/details.aspx?id=103552) and launch Setup.exe:
 
 ```powershell
 Setup.exe /components:webapi,webconsole
@@ -350,7 +350,7 @@ The installer will automatically create new IIS sites with fresh `web.config`. Y
 
 The API spec (Swagger/OpenAPI) is included in *.json* format and can be visualised using a swagger previewer of your choice such as [Swagger editor](https://editor-next.swagger.io/).
 
-Follow the FAQ to troubleshoot common issues. Once you are comfortable with the v10.19.148.0 release, you can remove the .NET 5 apps and the respective IIS sites.
+Follow the FAQ to troubleshoot common issues. Once you are comfortable with the v10.19.350.0 release, you can remove the .NET 5 apps and the respective IIS sites.
 
 # [Migrate from SilverLight Web Features to .NET 6 (v10.19.148.0)](#tab/silverlightnet)
 
@@ -364,7 +364,7 @@ Review the documentation on the new Web components here:
 
 The API spec (Swagger/OpenAPI) is included in .json format and can be visualised using a swagger previewer of your choice such as [Swagger editor](https://editor-next.swagger.io/).
 
-Follow the FAQ to troubleshoot common issues. Once you are comfortable with the v10.19.148.0 release, you can remove the .NET 5 apps and the respective IIS sites.
+Follow the FAQ to troubleshoot common issues. Once you are comfortable with the v10.19.350.0 release, you can remove the .NET 5 apps and the respective IIS sites.
 
 ---
 
