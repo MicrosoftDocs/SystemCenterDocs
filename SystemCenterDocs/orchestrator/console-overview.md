@@ -8,7 +8,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jsuri
-ms.date: 08/10/2023
+ms.date: 08/11/2023
 author: jyothisuri
 manager: mkluck
 ---
@@ -23,6 +23,9 @@ manager: mkluck
 ::: moniker range="sc-orch-2019"
 
 The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on HTML5 and using SilverLight (deprecated). Ensure you [migrate](#migrate-to-html5-web-components) to the latest Web console using the steps mentioned in this article.
+
+>[!Note]
+>Extract the v10.19.350.0 release package from [DLC](https://www.microsoft.com/download/details.aspx?id=103552).
 
 # [Orchestrator Web console using HTML5](#tab/html)
 
@@ -317,34 +320,35 @@ We recommend you migrate to the .NET Core 6 Web Components (v10.19.350.0) which 
 
 Following are the improvements made to the Web components:
 
-1. Upgrade to latest LTSC .NET Core 6. *.NET 5* has reached [end of support](https://dotnet.microsoft.com/platform/support/policy) .
-2. `Job start` form parameters in .NET 5 Web Console were mandatory.
-3. Horizontal scrolling added to navigation tree, fixes rendering of deeply nested contents.
-4. API endpoints have been hardened and issues with respect to user permissions not being honoured are fixed.
-5. Timestamps seen on the Console now match the system's time zone.
-6. Runbooks at root level (that is., without any parent Folder) are now visible.
-7. Swagger (aka. [OpenAPI](https://swagger.io/specification/)) spec describing the API is published along with the app.
-8. Packaged in a Microsoft Installer (.msi) along with an installer UI to simplify the installation/uninstallation.
+1. Upgrade to latest LTSC .NET Core 6.
+     .NET 5 has reached [end of support](https://dotnet.microsoft.com/platform/support/policy) .
+1. `Job start` form parameters in .NET 5 Web Console were mandatory.
+1. Horizontal scrolling added to navigation tree, fixes rendering of deeply nested contents.
+1. API endpoints have been hardened and issues with respect to user permissions not being honoured are fixed.
+1. Timestamps seen on the Console now match the system's time zone.
+1. Runbooks at root level (that is, without any parent Folder) are now visible.
+1. Swagger (aka. [OpenAPI](https://swagger.io/specification/)) spec describing the API is published along with the app.
+1. [Packaged in a Microsoft Installer (.msi)](https://www.microsoft.com/download/details.aspx?id=103552) along with an installer UI to simplify the installation/uninstallation.
 
 ### Prerequisites for installation
 
-The included Setup.exe will test and prompt for the following missing prerequisites:
+The included `Setup.exe` will test and prompt for the following missing prerequisites:
 
 1. [.NET 6 Hosting bundle](https://msazure.visualstudio.com/One/_git/SystemCenter-Orchestrator?version=GBsupport/2019-ur&path=/docs/web-components-2019-migration.md&_a=preview)
 2. IIS modules: [CORS](https://www.iis.net/downloads/microsoft/iis-cors-module) and [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite).
 
-# [Migrate from .NET 5 Web components to .NET 6 (v10.19.350.0)](#tab/net)
-
->[!TIP] 
+>[!TIP]
 >You can install the v10.19.350.0 release side-by-side with the .NET 5 and SilverLight Web features.
 
-Run the following PowerShell command to extract the v10.19.350.0 release package from [DLC](https://www.microsoft.com/download/details.aspx?id=103552) and launch Setup.exe:
+# [Migrate from .NET 5 Web components to .NET 6 (v10.19.350.0)](#tab/net)
+
+Run the following PowerShell command to extract the v10.19.350.0 release package from [DLC](https://www.microsoft.com/download/details.aspx?id=103552) and launch `Setup.exe`:
 
 ```powershell
 Setup.exe /components:webapi,webconsole
 ```
 
-Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestration-console) documentation and follow the steps shown by Setup.exe.
+Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
 
 The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
@@ -354,13 +358,17 @@ Follow the FAQ to troubleshoot common issues. Once you are comfortable with the 
 
 # [Migrate from SilverLight Web Features to .NET 6 (v10.19.350.0)](#tab/silverlightnet)
 
-Follow the same steps as in Migrate from .NET web components to .NET 6. Since this is a fresh install, you may want to review the IIS site and `web.config` created by the installer. It would be beneficial to add the console domains to the API's CORS allowed origin list.
+Since this is a fresh install, you may want to review the IIS site and `web.config` created by the installer. It would be beneficial to add the console domains to the API's CORS allowed origin list.
 
-Review the documentation on the new Web components here:
+Run the following PowerShell command to extract the v10.19.350.0 release package from [DLC](https://www.microsoft.com/download/details.aspx?id=103552) and launch `Setup.exe`:
 
-- [Overview of Orchestration Console](/system-center/orchestrator/console-overview?view=sc-orch-2022)
-- [Release notes (2022)](/system-center/orchestrator/release-notes-orch?view=sc-orch-2022)
-- [Updating Database settings in Web components](/system-center/orchestrator/how-to-change-the-orchestrator-database?view=sc-orch-2022#change-the-database-settings-for-the-orchestrator-web-service)
+```powershell
+Setup.exe /components:webapi,webconsole
+```
+
+Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
+
+The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
 The API spec (Swagger/OpenAPI) is included in .json format and can be visualised using a swagger previewer of your choice such as [Swagger editor](https://editor-next.swagger.io/).
 
