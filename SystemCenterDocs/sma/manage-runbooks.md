@@ -6,9 +6,9 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 12/25/2020
+ms.date: 08/07/2023
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage runbooks for Service Management Automation

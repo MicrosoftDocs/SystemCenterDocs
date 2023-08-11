@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/01/2023
+ms.date: 08/10/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -24,7 +24,7 @@ This script is designed to help troubleshoot and resolve issues related to on-pr
 Follow these steps to run the script:
 
 1. Download the script and run it with the **-Help** option to get the parameters.
-2. Sign in with domain credentials and then run the script with the specified parameters.
+2. Sign in with domain credentials to a domain joined machine and then run the script with the specified parameters.
 3. If any validation fails, take the corrective actions as suggested by the script and rerun the script until it passes all the validations.
 4. Once all the validations are successful, use the same parameters used in the script, for instance creation.
 
@@ -58,12 +58,14 @@ Follow these steps to run the validation script:
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
 
-2. Download the validation script to the test VM and extract. It consists of three files:
+2. Download the validation script to the test VM and extract. It consists of five files:
      - ScomValidation.ps1
-     - RunValidation.ps1
+     - RunValidationAsSCOMAdmin.ps1
+     - RunValidationAsActiveDirectoryAdmin.ps1
+     - RunValidationAsNetworkAdmin.ps1
      - Readme.txt
 
-3. Follow the steps mentioned in the Readme.txt file to run the *RunValidation.ps1*. Ensure to fill the settings value in *RunValidation.ps1* with applicable values before running it.
+3. Follow the steps mentioned in the Readme.txt file to run the *RunValidationAsSCOMAdmin.ps1*. Ensure to fill the settings value in *RunValidationAsSCOMAdmin.ps1* with applicable values before running it.
 
       ```powershell
       # $settings = @{
@@ -97,40 +99,79 @@ Follow these steps to run the validation script:
       }
       ```
 
-4. In general, *RunValidation.ps1* runs all the validations. If you wish to run a specific check, then open *ScomValidation.ps1* and comment all other checks, which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
+4. In general, *RunValidationAsSCOMAdmin.ps1* runs all the validations. If you wish to run a specific check, then open *ScomValidation.ps1* and comment all other checks, which are at the end of the file. You can also add break point in the specific check to debug the check and understand the issues better.
 
-      ```powershell
-      {
-      # Connectivity checks
-      $validationResults += Invoke-ValidateStorageConnectivity $settings
-      $results = ConvertTo-Json $validationResults -Compress
-       
-      $validationResults += Invoke-ValidateSQLConnectivity $settings
-      $results = ConvertTo-Json $validationResults -Compress
+```powershell
+        # Default mode is - SCOMAdmin, by default if mode is not passed then it will run all the validations  
 
-      $validationResults += Invoke-ValidateDnsIpAddress $settings
-      $results = ConvertTo-Json $validationResults -Compress
+    # adding all the checks to result set 
 
-      $validationResults += Invoke-ValidateDomainControllerConnectivity $settings
-      $results = ConvertTo-Json $validationResults -Compress
+    try { 
 
-      # Parameter validations
-      $validationResults += Invoke-ValidateDomainJoin $settings
-      $results = ConvertTo-Json $validationResults -Compress
+        # Connectivity checks 
 
-      $validationResults += Invoke-ValidateStaticIPAddressAndDnsname $settings
-      $results = ConvertTo-Json $validationResults -Compress
+        $validationResults += Invoke-ValidateStorageConnectivity $settings 
 
-      $validationResults += Invoke-ValidateComputerGroup $settings
-      $results = ConvertTo-Json $validationResults -Compress
+        $results = ConvertTo-Json $validationResults -Compress 
 
-      $validationResults += Invoke-ValidategMSAAccount $settings
-      $results = ConvertTo-Json $validationResults -Compress
-        
-      $validationResults += Invoke-ValidateLocalAdminOverideByGPO $settings
-      $results = ConvertTo-Json $validationResults -Compress
-      }
-      ```
+         
+
+        $validationResults += Invoke-ValidateSQLConnectivity $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+ 
+
+        $validationResults += Invoke-ValidateDnsIpAddress $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+ 
+
+        $validationResults += Invoke-ValidateDomainControllerConnectivity $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+ 
+
+        # Parameter validations 
+
+        $validationResults += Invoke-ValidateDomainJoin $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+ 
+
+        $validationResults += Invoke-ValidateStaticIPAddressAndDnsname $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+ 
+
+        $validationResults += Invoke-ValidateComputerGroup $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+ 
+
+        $validationResults += Invoke-ValidategMSAAccount $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+             
+
+        $validationResults += Invoke-ValidateLocalAdminOverideByGPO $settings 
+
+        $results = ConvertTo-Json $validationResults -Compress 
+
+    } 
+
+    catch { 
+
+        Write-Verbose -Verbose  $_ 
+
+    } 
+```
 
 5. The validation script displays all the validation checks and their respective errors, which will help resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 

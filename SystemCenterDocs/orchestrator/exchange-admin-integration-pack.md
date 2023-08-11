@@ -1,7 +1,7 @@
 ---
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: This article provides information about exchange Integration packs and how to deploy it.
-ms.date: 07/26/2022
+ms.date: 08/09/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -87,7 +87,12 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 - Microsoft Exchange Management Shell
 - Microsoft PowerShell
 - Microsoft WinRM 2.0
-- Exchange Online PowerShell V2 Module (EXO V2)
+- Exchange Online PowerShell V3 Module ([EXO V3](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true)); you must [upgrade from EXO V2 to EXO V3](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597) for this IP.
+
+
+
+
+
 
 ---
 
@@ -157,6 +162,11 @@ For more information on setting up app-only authentication for Exchange Online t
 
    :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin-inline.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen." lightbox="media/exchange-admin-integration-pack/exchange-admin-expanded.png":::
 
+
+
+
+
+
 ---
 
 ## Configure Windows PowerShell and WinRM for the Exchange Admin Integration Pack
@@ -222,9 +232,11 @@ On the Exchange server, ensure that PowerShell doesn't require SSL:
 
 # [Exchange Online](#tab/ex-online)
 
-Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 module, see
+Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597#:~:text=Starting%20today%2C%20RPS%20use%20through%20running%20New-PSSession%20cmdlet,module%20deprecation%20will%20be%20completed%20by%20July%202023.) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell V3 Module (EXO V3)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V3 module, see:
  - [Prerequisites](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module&preserve-view=true)
- - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true) and
+ - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true)
  - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module&preserve-view=true)
 
+
 ---
+
