@@ -96,7 +96,7 @@ The status of the job is shown visually with the icons:
 |----|----|
 |Three dots|Job is queued|
 |Hourglass|Job is running|
-|Circle with slash|Job was cancelled|
+|Circle with slash|Job was canceled|
 |Tick|Job completed successfully|
 |Red exclamation|Job completed but failed|
 |Warning|Job completed with warning(s)|
@@ -324,10 +324,10 @@ Following are the improvements made to the Web components:
      .NET 5 has reached [end of support](https://dotnet.microsoft.com/platform/support/policy) .
 1. `Job start` form parameters in .NET 5 Web Console were mandatory.
 1. Horizontal scrolling added to navigation tree, fixes rendering of deeply nested contents.
-1. API endpoints have been hardened and issues with respect to user permissions not being honoured are fixed.
+1. API endpoints have been hardened and issues with respect to user permissions not being honored are fixed.
 1. Timestamps seen on the Console now match the system's time zone.
 1. Runbooks at root level (that is, without any parent Folder) are now visible.
-1. Swagger (aka. [OpenAPI](https://swagger.io/specification/)) spec describing the API is published along with the app.
+1. Swagger (also known as [OpenAPI](https://swagger.io/specification/)) spec describing the API is published along with the app.
 1. [Packaged in a Microsoft Installer (.msi)](https://www.microsoft.com/download/details.aspx?id=103552) along with an installer UI to simplify the installation/uninstallation.
 
 ### Prerequisites for installation
@@ -352,7 +352,7 @@ Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-o
 
 The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
-The API spec (Swagger/OpenAPI) is included in *.json* format and can be visualised using a swagger previewer of your choice such as [Swagger editor](https://editor-next.swagger.io/).
+The API spec (Swagger/OpenAPI) is included in *.json* format and can be visualized using a swagger previewer of your choice such as [Swagger editor](https://editor-next.swagger.io/).
 
 Follow the FAQ to troubleshoot common issues. Once you are comfortable with the v10.19.350.0 release, you can remove the .NET 5 apps and the respective IIS sites.
 
@@ -370,7 +370,7 @@ Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-o
 
 The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
-The API spec (Swagger/OpenAPI) is included in .json format and can be visualised using a swagger previewer of your choice such as [Swagger editor](https://editor-next.swagger.io/).
+The API spec (Swagger/OpenAPI) is included in .json format and can be visualized using a swagger previewer of your choice such as [Swagger editor](https://editor-next.swagger.io/).
 
 Follow the FAQ to troubleshoot common issues. Once you are comfortable with the v10.19.350.0 release, you can remove the .NET 5 apps and the respective IIS sites.
 
