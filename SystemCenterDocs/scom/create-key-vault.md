@@ -73,16 +73,16 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
     - Select **Enable public access**.
     - Under **Public Access**, for **Allow access from**, select **All networks**.
 
-   :::image type="Networking tab" source="media/create-key-vault/networking-inline.png" alt-text="Screenshot of selections for enabling public access on the Networking tab." lightbox="media/create-operations-manager-managed-instance/networking-expanded.png":::
+   :::image type="Networking tab" source="media/create-key-vault/networking-inline.png" alt-text="Screenshot of selections for enabling public access on the Networking tab." lightbox="media/create-key-vault/networking-expanded.png":::
 1. Select **Next**.
 1. For **Tags**, select the tags if required, and then select **Next**.
 1. For **Review + create**, review the selections, and then select **Create** to create the key vault.
   
-    :::image type="content" source="media/create-key-vault/review-inline.png" alt-text="Screenshot of the tab for reviewing selections before creating a key vault." lightbox="media/create-operations-manager-managed-instance/review-expanded.png":::
+    :::image type="content" source="media/create-key-vault/review-inline.png" alt-text="Screenshot of the tab for reviewing selections before creating a key vault." lightbox="media/create-key-vault/review-expanded.png":::
 
 1. On the left pane, under **Objects**, select **Secrets**.
 
-    :::image type="content" source="./media/create-key-vault/secrets-inline.png" alt-text="Screenshot of the pane for secrets." lightbox="./media/create-operations-manager-managed-instance/secrets-expanded.png":::
+    :::image type="content" source="./media/create-key-vault/secrets-inline.png" alt-text="Screenshot of the pane for secrets." lightbox="./media/create-key-vault/secrets-expanded.png":::
 
      >[!Note]
      > You must create two secrets to store the domain account credentials: 

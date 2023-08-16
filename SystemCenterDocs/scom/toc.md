@@ -78,7 +78,7 @@
 ##### [Step 1. Register the SCOM Managed Instance resource provider](register-scom-mi-resource-provider.md)
 ##### [Step 2. Create separate subnet in a VNet](create-separate-subnet-in-vnet.md)
 ##### [Step 3. Create a SQL MI](create-sql-mi.md)
-##### [Step 4. Create a Key vault](create-key-vault)
+##### [Step 4. Create a Key vault](create-key-vault.md)
 ##### [Step 5. Create a user assigned identity](create-user-assigned-identity.md)
 ##### [Step 6. Create a gMSA account](create-gmsa-account.md)
 ##### [Step 7. Create a static IP](create-static-ip.md)

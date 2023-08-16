@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Create an instance of Azure Monitor SCOM Managed Instance (preview)
-description: This article describes how to create a SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
+title: Create gMSA account
+description: This article describes how to create a gMSA accout and computer group, domine user account in on-premises Active directory.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -15,9 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Create gMSA account
 
-This article describes how to create an instance of the service (a SCOM managed instance) with System Center Operations Manager functionality in Azure.
-
-In on-premises Active directory, create gMSA account and Computer Group, domain user account.
+This article describes how to create a gMSA accout and computer group, domine user account in on-premises Active directory.
 
 ## Active directory prerequisites
 
