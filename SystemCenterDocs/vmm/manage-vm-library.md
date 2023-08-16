@@ -5,11 +5,11 @@ description: This article describes how to create VMs in the VMM fabric from the
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 08/16/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment, UpdateFrequency3
+ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ---
 
 
