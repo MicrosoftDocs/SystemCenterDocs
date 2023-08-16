@@ -5,11 +5,11 @@ description: This article describes how to create VMs in the VMM fabric from the
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 08/16/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment, UpdateFrequency3
+ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ---
 
 
@@ -43,7 +43,7 @@ This article describes how to deploy a virtual machine that's stored in the Syst
 4. In **Select Path**, specify where you want to store the configuration files for the VM.
 
     - If you didn't select the default path, and you want to store other VMs on the path, select **Add this path to the list of host default paths**.
-    - If SAN transfers are enabled for this deployment, by default, the virtual machine is transferred to the host over the storage area network (SAN). If you don't want to perform a SAN transfer, select the Transfer over the network even if a SAN transfer is available check box. If SAN transfers aren't available for this deployment, this option isn't available.
+    - If SAN transfers are enabled for this deployment, by default, the virtual machine is transferred to the host over the storage area network (SAN). If you don't want to perform a SAN transfer, select the Transfer over the network even if a SAN transfer is available checkbox. If SAN transfers aren't available for this deployment, this option isn't available.
 5. In **Select Networks**, select the network settings the VM should use.
 6. In **Summary**, review the settings, and select **Deploy**. You can select to start the VM after it's deployed.
 
