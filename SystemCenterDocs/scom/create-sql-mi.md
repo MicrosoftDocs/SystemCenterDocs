@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Create a SQL MI
-description: This article describes how to create a SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
+description: This article describes how to create a SQL managed instance in a dedicated subnet of virtual network.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -15,9 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Create a SQL MI
 
-This article describes how to create a SQL managed instance.
-
-Create SQL MI in a dedicated subnet of virtual network. Peer SCOM Managed Instance subnet and SQL MI subnet.
+This article describes how to create a SQL managed instance in a dedicated subnet of virtual network. Peer SCOM Managed Instance subnet and SQL MI subnet.
 
 ## Create and configure a SQL managed instance
 
