@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 This article describes how to create a SQL managed instance.
 
-Create SQL MI in a dedicated subnet of virtual network. Peer SCOM Managed Instance subnet and SQL MI subnet.    
+Create SQL MI in a dedicated subnet of virtual network. Peer SCOM Managed Instance subnet and SQL MI subnet.
 
 ## Create and configure a SQL managed instance
 
@@ -26,9 +26,9 @@ Before you create a SCOM managed instance, create a SQL managed instance. For mo
 We recommend the following settings for creating a SQL managed instance:
 
 - **Resource Group**: Create a new resource group for Azure SQL Managed Instance (preview). A best practice is to create a new resource group for large Azure resources.
-- **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM managed instance to refer to this SQL managed instance.
+- **Managed Instance name**: Choose a unique name. This name is used while you create a SCOM managed instance to refer to this SQL managed instance.
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but we recommend the closest region for latency purposes.
-- **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration will suffice for the SCOM managed instance.
+- **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration suffices for the SCOM managed instance.
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
 - **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance (preview) virtual network.
 
@@ -50,42 +50,42 @@ For the rest of the settings on the other tabs, you can leave them as default or
 
 After you create a SQL managed instance, you need to provide permission to the SCOM Managed Instance (preview) resource provider to access this SQL managed instance.
 
-To provide the permission, do the following:
+To provide the permission, follow these steps:
 
 1. Open the SQL managed instance and select **Access control (IAM)**. On the top menu, select **+Add** > **Add role assignment**.
 
-   :::image type="Access control" source="media/create-operations-manager-managed-instance/access-control.png" alt-text="Screenshot that shows selections for starting the process of adding a role assignment for access control.":::
+   :::image type="Access control" source="media/create-sql-mi/access-control.png" alt-text="Screenshot that shows selections for starting the process of adding a role assignment for access control.":::
 1. On the **Add role assignment** pane:
    - For **Role**, select **Reader** from the dropdown list.
    - For **Assign access to**, select **User, group, or service principal** from the dropdown list.
    - For **Select**, enter **Microsoft.SCOM Resource Provider**.
 
-   :::image type="Add role assignment" source="media/create-operations-manager-managed-instance/add-role-assignment.png" alt-text="Screenshot of selections for adding a role assignment.":::
+   :::image type="Add role assignment" source="media/create-sql-mi/add-role-assignment.png" alt-text="Screenshot of selections for adding a role assignment.":::
 1. Select **Save**.
 
 ### Set the Active Directory admin value in the SQL managed instance
 
-To set the Active Directory admin value in the SQL managed instance, use the following steps:
+To set the Active Directory admin value in the SQL managed instance, follow these steps:
 
 >[!Note]
 >You must have Global Administrator or Privileged Role Administrator permissions for the subscription.
 
 1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
 
-   :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
+   :::image type="Active directory admin" source="media/create-sql-mi/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
 
 2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the SCOM Managed Instance (preview) creation flow. You'll find the admin added to the SQL managed instance.
 
-   :::image type="Azure Active directory admin" source="media/create-operations-manager-managed-instance/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
+   :::image type="Azure Active directory admin" source="media/create-sql-mi/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
 
 3. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your instance, or your instance creation will fail.
 
-   :::image type="SQL Active directory admin" source="media/create-operations-manager-managed-instance/sql-active-directory-admin.png" alt-text="Screenshot that shows successful Active Directory authentication.":::
+   :::image type="SQL Active directory admin" source="media/create-sql-mi/sql-active-directory-admin.png" alt-text="Screenshot that shows successful Active Directory authentication.":::
 
 For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Prerequisites Verification**](/system-center/scom/scom-mi-prerequisites-verification?view=sc-om-2022). The section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

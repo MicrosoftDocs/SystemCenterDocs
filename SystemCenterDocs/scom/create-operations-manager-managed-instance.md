@@ -61,7 +61,7 @@ To create a SCOM managed instance, follow these steps:
     - **Active directory details**:
         - **Domain name**: Enter the name of the domain that the domain controller is administering.
         - **DNS Server IP**: Enter the IP address of the DNS server that's providing the IP addresses to the resources in the domain from the previous step.
-        - **OU Path**: Enter the organizational unit (OU) path to where you want to join the servers. This isn't a necessary field. If you leave it blank, it will assume the default value. Ensure that the value you enter is in the distinguished name format. For example: **OU=testOU,DC=domain,DC=Domain,DC=com**.
+        - **OU Path**: Enter the organizational unit (OU) path to where you want to join the servers. This isn't a necessary field. If you leave it blank, it assumes the default value. Ensure that the value you enter is in the distinguished name format. For example: **OU=testOU,DC=domain,DC=Domain,DC=com**.
 
         :::image type="Active Directory details" source="media/create-operations-manager-managed-instance/active-directory-details.png" alt-text="Screenshot that shows Active Directory details for creating a SCOM managed instance.":::
 
@@ -90,7 +90,7 @@ To create a SCOM managed instance, follow these steps:
            >Ensure to associate a NAT gateway with a chosen subnet. The presence of a NAT gateway is necessary for the SCOM Managed Instance (preview) to retrieve the components required for both installation and auto upgrade scenarios.
     - **SCOM managed instance interface**:
         - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview). Ensure that the IP is in the IPv4 format, and create it in your routing table.
-        - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step. The DNS name will be mapped to the Static IP that is defined above.
+        - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step. The DNS name is mapped to the Static IP that is defined above.
     - **gMSA details**:
         - **Computer group name**: Enter the name of the computer group that you create after creation of the gMSA account.
         - **gMSA account name**: Enter the gMSA name. It must end with **$**.
@@ -99,7 +99,7 @@ To create a SCOM managed instance, follow these steps:
 1. Select **Next**.
 1. Under **Database**, do the following:
     - **SQL managed instance**: For **Resource Name**, select the Azure SQL Managed Instance resource name for the instance that you want to associate with this SCOM managed instance. Use only the SQL managed instance that has given permissions to the SCOM managed instance. For more information, see [SQL managed instance creation and permission](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#create-and-configure-a-sql-mi&preserve-view=true).
-    - **User managed identity**: For **User managed identity account**, provide a user managed identity with system admin privileges on the SQL MI and *Get* and *List* permissions on Key vault secrets that was selected in the **Basics** tab. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
+    - **User managed identity**: For **User managed identity account**, provide a user managed identity with system admin privileges on the SQL MI and *Get* and *List* permissions on Key vault secrets that were selected in the **Basics** tab. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
 1. Under **Validate**, all the prerequisites are validated. It takes 10 minutes to complete the validation.
 
@@ -108,11 +108,10 @@ To create a SCOM managed instance, follow these steps:
      After the validation is complete, check the results and revalidate if needed.
 
      :::image type="Validation complete" source="media/create-operations-manager-managed-instance/validation-complete-inline.png" alt-text="Screenshot that shows Validation complete." lightbox="media/create-operations-manager-managed-instance/validation-complete-expanded.png":::
-    
 
 1. Select **Next : Tags >**.
 1. Under **Tags**, enter the **Name, value** information, and then select the resource.
-   
+
    Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources?wt.mc_id=azuremachinelearning_inproduct_portal_utilities-tags-tab&tabs=json).
 1. Select **Next**.
 1. Under **Review + Submit**, review all the inputs given so far, and then select **Create**. Your deployment will now be created on Azure. Creation of a SCOM managed instance takes up to an hour.

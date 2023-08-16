@@ -19,7 +19,7 @@ This article describes how to create a user assigned identity, provide admin acc
 
 ## Create a managed service identity
 
-The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a managed identity will replace the traditional four System Center Operations Manager service accounts. It will be used to access the Azure SQL Managed Instance database. You can also use the MSI to access the key vault.
+The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a managed identity replaces the traditional four System Center Operations Manager service accounts. It is used to access the Azure SQL Managed Instance database. You can also use the MSI to access the key vault.
 
 >[!Note]
 >- Ensure that you're a contributor in the subscription where you create the MSI.
@@ -27,10 +27,10 @@ The managed service identity (MSI) provides an identity for applications to use 
 
 1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Managed Identities**.
 
-   :::image type="Managed Identity in Azure portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of the icon for managed identities in the Azure portal.":::
+   :::image type="Managed Identity in Azure portal" source="media/create-user-assigned-identity/azure-portal-managed-identity.png" alt-text="Screenshot of the icon for managed identities in the Azure portal.":::
 1. On the **Managed Identities** page, select **+ Create**.
 
-   :::image type="Managed Identity" source="media/create-operations-manager-managed-instance/managed-identities.png" alt-text="Screenshot of Managed Identity.":::
+   :::image type="Managed Identity" source="media/create-user-assigned-identity/managed-identities.png" alt-text="Screenshot of Managed Identity.":::
 
    The **Create User Assigned Managed Identity** pane opens.
 1. Under **Basics**, do the following:
@@ -41,7 +41,7 @@ The managed service identity (MSI) provides an identity for applications to use 
         - **Region**: Select the region in which you want to create the SCOM managed instance.
         - **Name**: Enter a name for the instance.
 
-    :::image type="Create user assigned managed identity" source="media/create-operations-manager-managed-instance/create-user-assigned-managed-identity.png" alt-text="Screenshot of project and instance details for a user-assigned managed identity.":::
+    :::image type="Create user assigned managed identity" source="media/create-user-assigned-identity/create-user-assigned-managed-identity.png" alt-text="Screenshot of project and instance details for a user-assigned managed identity.":::
 1. Select **Next : Tags >**.
 1. Under **Tags**, enter the **Name** value, and then select the resource.
 
@@ -49,12 +49,12 @@ The managed service identity (MSI) provides an identity for applications to use 
 1. Select **Next : Review + Create >**.
 1. Under **Review + create**, review all the information that you provided, and then select **Create**.
 
-   :::image type="Managed identity review" source="media/create-operations-manager-managed-instance/managed-identity-review.png" alt-text="Screenshot of the tab for reviewing a managed identity before creation.":::
+   :::image type="Managed identity review" source="media/create-user-assigned-identity/managed-identity-review.png" alt-text="Screenshot of the tab for reviewing a managed identity before creation.":::
 
 Your deployment is now created on Azure. You can access the resource and view its details.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Prerequisites Verification**](/system-center/scom/scom-mi-prerequisites-verification?view=sc-om-2022). The section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

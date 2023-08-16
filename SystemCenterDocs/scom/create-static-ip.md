@@ -19,14 +19,14 @@ This article describes how to create a static IP for load balancer in a dedicate
 
 ## Create a static IP and configure the DNS name
 
-For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance (preview) service will create, you need a static IP and DNS name for the load balancer's front-end configuration.
+For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance (preview) service creates, you need a static IP and DNS name for the load balancer's front-end configuration.
 
 Ensure that the static IP is in the subnet that you created during virtual network creation. Create a DNS name (according to your organization's policy) for the static IP.
 
-:::image type="DNS manager" source="media/create-operations-manager-managed-instance/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
+:::image type="DNS manager" source="media/create-static-ip/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Prerequisites Verification**](/system-center/scom/scom-mi-prerequisites-verification?view=sc-om-2022). The section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

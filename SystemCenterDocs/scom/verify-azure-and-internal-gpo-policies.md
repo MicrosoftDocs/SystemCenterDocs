@@ -19,14 +19,14 @@ This article describes how to verify Azure and internal GPO policies.
 
 ## Verify Azure policies
 
-If there exists any Azure policies aimed at constraining the creation of managed resource groups, virtual machine scale sets, load balancers, managed identities, and metric alerts, make an exception for the subscription associated with the SCOM Managed Instance. This exception is necessary as the SCOM Managed Instance creates all these resources within the managed resource group.
+If there exist any Azure policies that are aimed at constraining the creation of managed resource groups, virtual machine scale sets, load balancers, managed identities, and metric alerts, make an exception for the subscription that is associated with the SCOM Managed Instance. This exception is necessary as the SCOM Managed Instance creates all these resources within the managed resource group.
 
 Follow these steps to view the policies applied on subscription:
 1. Go to specific subscription, on the Subscription left hand menu, select the policies.
-2. In the policies page, select the policy assignments and find the policy which is causing the issue.
+2. In the policies page, select the policy assignments and find the policy, which is causing the issue.
 3. Open the specific assignment and select exemption.
 
-:::image type="create exemption" source="media/create-operations-manager-managed-instance/create-exemption.png" alt-text="Screenshot of create exemption.":::
+:::image type="create exemption" source="media/verify-azure-and-internal-gpo-policies/create-exemption.png" alt-text="Screenshot of create exemption.":::
 
 ## Verify internal GPO policies
 
@@ -39,7 +39,7 @@ Following are certain policies that could potentially influence the local admini
    - Assess whether any policies are obstructing remote logins to the local administrator group.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Prerequisites Verification**](/system-center/scom/scom-mi-prerequisites-verification?view=sc-om-2022). The section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

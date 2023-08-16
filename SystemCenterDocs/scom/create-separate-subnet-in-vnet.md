@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Create a separate subnet in a VNet
-description: This article describes how to create a SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
+description: This article describes how to create a separate subnet in a VNet.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Create a separate subnet in a VNet
 
-This article describes how to create a seperate subnet in a VNet.
+This article describes how to create a separate subnet in a VNet.
 
 Create a separate subnet in a VNet for a SCOM Managed Instance and enable NAT gateway on SCOM Managed Instance subnet.
 
@@ -31,12 +31,12 @@ To create a NAT gateway, follow these steps:
 1. Create a NAT gateway in the same subscription that you use for SCOM Managed Instance (preview).
 1. Create a public IP.
 
-   :::image type="NAT gateway" source="media/create-operations-manager-managed-instance/nat-gateway.png" alt-text="Screenshot of public IP information for a NAT gateway.":::
+   :::image type="NAT gateway" source="media/create-separate-subnet-in-vnet/nat-gateway.png" alt-text="Screenshot of public IP information for a NAT gateway.":::
 
 1. Select a virtual network and subnet for SCOM Managed Instance (preview).
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Prerequisites Verification**](/system-center/scom/scom-mi-prerequisites-verification?view=sc-om-2022). The section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

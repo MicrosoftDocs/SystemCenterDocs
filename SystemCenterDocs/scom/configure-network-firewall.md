@@ -33,7 +33,7 @@ If your domain controller or any other component is on-premises, you must establ
 
 Following is the network model, wherein the desired domain controller is situated within the on-premises network. There exists a direct connection (via Express Route or VPN) between the on-premises network and the Virtual Network (VNet) used for SCOM Managed Instance creation.
 
-:::image type="Network model 1" source="media/create-operations-manager-managed-instance/network-model1.png" alt-text="Screenshot of network model 1.":::
+:::image type="Network model 1" source="media/configure-network-firewall/network-model1.png" alt-text="Screenshot of network model 1.":::
 
 #### Network model 2 - The domain controller is hosted in Azure
 
@@ -41,15 +41,15 @@ In this configuration, the desired domain controller is hosted in Microsoft Azur
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Microsoft Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
-:::image type="Network model 2" source="media/create-operations-manager-managed-instance/network-model2.png" alt-text="Screenshot of network model 2.":::
+:::image type="Network model 2" source="media/configure-network-firewall/network-model2.png" alt-text="Screenshot of network model 2.":::
 
 ### Network model 3 - The domain controller and SCOM managed instances are in Azure VNets
 
 In this model, both the desired domain controller and the SCOM Managed Instances are placed in separate and dedicated Virtual Networks (VNets) in Azure.
 
-If your domain controller and all other components are in Azure (a conventional domain controller and not Azure Active Directory) with no presence on-premises, a virtual network will work. (ExpressRoute isn't required.) If you're using one virtual network to host all your components, you'll already have a line of sight between all your components. If you have multiple virtual networks, you'll need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
+If your domain controller and all other components are in Azure (a conventional domain controller and not Azure Active Directory) with no presence on-premises, a virtual network works. (ExpressRoute isn't required.) If you're using one virtual network to host all your components, you'll already have a line of sight between all your components. If you have multiple virtual networks, you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 
-:::image type="Network model 3" source="media/create-operations-manager-managed-instance/network-model3.png" alt-text="Screenshot of network model 3.":::
+:::image type="Network model 3" source="media/configure-network-firewall/network-model3.png" alt-text="Screenshot of network model 3.":::
 
 Ensure to take care of the following for all the three networking models mentioned above:
 
@@ -73,7 +73,7 @@ The internal firewall rules and network security group (NSG) must allow communic
 5. Enable NAT gateway on the SCOM Managed Instance subnet.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Prerequisites Verification**](/system-center/scom/scom-mi-prerequisites-verification?view=sc-om-2022). The section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

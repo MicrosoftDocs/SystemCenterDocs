@@ -19,22 +19,22 @@ This article describes how to register the SCOM Managed Instance (preview) resou
 
 Provide a subscription that has the registration of both SCOM Managed Instance provider and a Compute provider. This enables the SCOM Managed Instance to create a managed resource group, set up a VMSS for Operations Manager Management servers, and implement a load balancer.
 
-:::image type="Tenant" source="media/create-operations-manager-managed-instance/tenant.png" alt-text="Screenshot of tenant.":::
+:::image type="Tenant" source="media/register-scom-mi-resource-provider/tenant.png" alt-text="Screenshot of tenant.":::
 
 ## To register the SCOM Managed Instance (preview) resource provider
 
-To qregister the SCOM managed Instance (preview) resource provider, follow these steps:
+To register the SCOM managed Instance (preview) resource provider, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Subscriptions**.
 2. Select the subscription where you want to deploy SCOM Managed Instance (preview).
 3. Under **Settings**, select **Resource providers**.
 4. Search for **SCOM** and register **Microsoft.Scom**.
-5. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider and then select **Register**.
+5. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider, and then select **Register**.
 
-    :::image type="Microsoft insights resource provider" source="media/create-operations-manager-managed-instance/resource-provider.png" alt-text="Screenshot of the Microsoft insights provider.":::
+    :::image type="Microsoft insights resource provider" source="media/register-scom-mi-resource-provider/resource-provider.png" alt-text="Screenshot of the Microsoft insights provider.":::
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review the **Pre-requisites Verification** section. This section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review the [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). This outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

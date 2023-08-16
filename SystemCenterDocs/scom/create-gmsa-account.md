@@ -29,7 +29,7 @@ In on-premises Active directory, create gMSA account and Computer Group, domain 
 
 Create a domain account in your Active Directory instance. The domain account is a typical Active Directory account. (It can be a non-admin account.) You'll use this account to add the System Center Operations Manager management servers to your existing domain.
 
-:::image type="Active directory users" source="media/create-operations-manager-managed-instance/active-directory-users.png" alt-text="Screenshot of Active Directory users.":::
+:::image type="Active directory users" source="media/create-gmsa-account/active-directory-users.png" alt-text="Screenshot of Active Directory users.":::
 
 Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain. You can use an existing domain account if it has these permissions.
 
@@ -39,7 +39,7 @@ You'll use the configured domain account in later steps for creating a SCOM mana
 
 Create a computer group in your Active Directory instance. For more information, see [Create a group account in Active Directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers that you create will be a part of this group so that all the members of the group can retrieve group managed service account (gMSA) credentials. (You'll create these credentials in later steps.) The group name can't contain spaces and must have alphabet characters only.
 
-:::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active Directory computers.":::
+:::image type="Active directory computers" source="media/create-gmsa-account/active-directory-computers.png" alt-text="Screenshot of Active Directory computers.":::
 
 To manage this computer group, provide permissions to the domain account that you created. Follow these steps to provide permissions:
 
@@ -47,7 +47,7 @@ To manage this computer group, provide permissions to the domain account that yo
 1. For **Name**, enter the name of the domain account.
 1. Select the **Manager can update membership list** checkbox.
 
-:::image type="Server group properties" source="media/create-operations-manager-managed-instance/server-group-properties.png" alt-text="Screenshot of server group properties.":::
+:::image type="Server group properties" source="media/create-gmsa-account/server-group-properties.png" alt-text="Screenshot of server group properties.":::
 
 ### Create a static IP and configure the DNS name
 
@@ -55,7 +55,7 @@ For all the System Center Operations Manager components to communicate with the 
 
 Ensure that the static IP is in the subnet that you created during virtual network creation. Create a DNS name (according to your organization's policy) for the static IP.
 
-:::image type="DNS manager" source="media/create-operations-manager-managed-instance/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
+:::image type="DNS manager" source="media/create-gmsa-account/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
 
 ### Create and configure a gMSA account
 
@@ -83,7 +83,7 @@ Add-KdsRootKey -EffectiveTime ((get-date).addhours(-10))
 Ensure that the created gMSA account is a local admin account. If there are any GPO policies on the local admins at the Active Directory level, ensure that they have the gMSA account as the local admin.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Prerequisites Verification**](/system-center/scom/scom-mi-prerequisites-verification?view=sc-om-2022). The section outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 
