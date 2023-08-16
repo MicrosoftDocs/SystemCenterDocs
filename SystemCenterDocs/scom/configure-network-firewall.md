@@ -21,7 +21,7 @@ This article describes how to configure the network firewall.
 
 ### Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the network (VNet) in which you'll deploy a SCOM managed instance. This is required so that all your resources (domain controller, agents, System Center Operations Manager components such as the Ops console, and SCOM Managed Instance (preview) components such as management servers) can communicate with each other over the network.
+Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the network (VNet) in which you deploy a SCOM managed instance. This is required so that all your resources (domain controller, agents, System Center Operations Manager components such as the Ops console, and SCOM Managed Instance (preview) components such as management servers) can communicate with each other over the network.
 
 Following are the three distinct network models visually represented to create the SCOM Managed Instance.
 

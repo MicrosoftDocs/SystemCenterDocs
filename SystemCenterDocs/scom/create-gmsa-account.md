@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Create gMSA account
-description: This article describes how to create a gMSA accout and computer group, domine user account in on-premises Active directory.
+description: This article describes how to create a gMSA acconut and computer group, domine user account in on-premises Active directory.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Create gMSA account
 
-This article describes how to create a gMSA accout and computer group, domine user account in on-premises Active directory.
+This article describes how to create a gMSA account and computer group, domine user account in on-premises Active directory.
 
 ## Active directory prerequisites
 
@@ -25,7 +25,7 @@ This article describes how to create a gMSA accout and computer group, domine us
 
 ### Configure a domain account in Active Directory
 
-Create a domain account in your Active Directory instance. The domain account is a typical Active Directory account. (It can be a non-admin account.) You'll use this account to add the System Center Operations Manager management servers to your existing domain.
+Create a domain account in your Active Directory instance. The domain account is a typical Active Directory account. (It can be a nonadmin account.) You'll use this account to add the System Center Operations Manager management servers to your existing domain.
 
 :::image type="Active directory users" source="media/create-gmsa-account/active-directory-users.png" alt-text="Screenshot of Active Directory users.":::
 
@@ -49,7 +49,7 @@ To manage this computer group, provide permissions to the domain account that yo
 
 ### Create a static IP and configure the DNS name
 
-For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance (preview) service will create, you need a static IP and DNS name for the load balancer's front-end configuration.
+For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance (preview) service creates, you need a static IP and DNS name for the load balancer's front-end configuration.
 
 Ensure that the static IP is in the subnet that you created during virtual network creation. Create a DNS name (according to your organization's policy) for the static IP.
 
