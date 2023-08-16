@@ -24,8 +24,8 @@ Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the Syste
 
 - **Datacenter**: Configure and manage your datacenter components as a single fabric in VMM. Datacenter components include virtualization servers, networking components, and storage resources. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds.
 - **Virtualization hosts**: VMM can add, provision, and manage Hyper-V and VMware virtualization hosts and clusters.
-- **Networking**: Add networking resources to the VMM fabric, including network sites defined by IP subnets, virtual LANs (VLANs), logical switches, static IP address, and MAC pools. VMM provides network virtualization, including support for creating and manage virtual networks and network gateways. Network virtualization allows multiple tenants to have isolated networks and their own IP address ranges for increased privacy and security. Using gateways, VMs on virtual networks can connect to physical networks in the same site or in different locations.
-- **Storage**: VMM can discover, classify, provision, allocate, and assign local and remote storage. VMM supports block storage (fibre channel, iSCSI, and Serial Attached SCSI (SAS) storage area networks (SANs)).
+- **Networking**: Add networking resources to the VMM fabric, including network sites defined by IP subnets, virtual LANs (VLANs), logical switches, static IP address, and MAC pools. VMM provides network virtualization, including support for creating and managing virtual networks and network gateways. Network virtualization allows multiple tenants to have isolated networks and their own IP address ranges for increased privacy and security. Using gateways, VMs on virtual networks can connect to physical networks in the same site or in different locations.
+- **Storage**: VMM can discover, classify, provision, allocate, and assign local and remote storage. VMM supports block storage (fiber channel, iSCSI, and Serial Attached SCSI (SAS) storage area networks (SANs)).
 - **Library resources**: The VMM fabric retains a library of file-based and non file-based resources that are used to create and deploy VMs and services on virtualization hosts. File-based resources include virtual hard disks, ISO images, and scripts. Non file-based resources include templates and profiles that are used to standardize the creation of VMs. Library resources are accessed through library shares.
 
 ## Resources
@@ -35,4 +35,4 @@ Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the Syste
 
 ## Next steps
 
-- [Learn about](system-requirements.md) system requirements.
+[Learn about](system-requirements.md) system requirements.
