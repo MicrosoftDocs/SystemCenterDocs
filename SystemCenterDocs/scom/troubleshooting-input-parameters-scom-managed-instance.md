@@ -56,7 +56,7 @@ In cases where multiple validations fail, the best approach is to address all th
 
 Follow these steps to run the validation script:
 
-1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen **subnet** for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance as below:
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen **subnet** for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance. For example, see below:
     
    :::image type="Properties" source="media/troubleshooting-input-parameters-scom-managed-instance/properties.png" alt-text="Screenshot of properties.":::
 
@@ -696,6 +696,12 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
       For example: MSOMHSvc/ContosoLB.domain.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.domain.com, and MSOMSdkSvc/ContosoLB are service principal names.
 
 ## Group policy validations
+
+>[!Important]
+>To fix GPO policies, collaborate with your active directory admin and exclude System Center Operations Manager from the below policies:
+>- GPOs that modify or override local administrator group configurations.
+>- GPOs that deactivate network authentication.
+>- Evaluate GPOs impeding remote sign in for local administrators.
 
 ### Issue: This test couldn't be run since the servers failed to join the domain
 
