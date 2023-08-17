@@ -15,9 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Create a separate subnet in a VNet
 
-This article describes how to create a separate subnet in a VNet.
-
-Create a separate subnet in a VNet for a SCOM Managed Instance and enable NAT gateway on SCOM Managed Instance subnet.
+This article describes how to create a separate subnet in a VNet for a SCOM Managed Instance and enable NAT gateway on SCOM Managed Instance subnet.
 
 ## To create a separate subnet in a VNet
 
