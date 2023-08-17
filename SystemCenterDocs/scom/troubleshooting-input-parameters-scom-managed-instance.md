@@ -793,3 +793,4 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
       ```
 
       If `$overridingPolicy` is found **True**, then there is policy with name in variable **$overridingPolicyName** overriding local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
+
