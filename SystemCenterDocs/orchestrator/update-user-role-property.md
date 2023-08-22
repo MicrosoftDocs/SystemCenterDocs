@@ -1,8 +1,8 @@
 ---
 title: Update User Role Property
 description: Updates User Role Property
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 08/22/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
