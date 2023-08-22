@@ -5,10 +5,10 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 01/23/2018
+ms.date: 08/22/2023
 ms.technology: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency5
+ms.custom: UpdateFrequency5, engagement-fy24
 ---
 
 # Databases created by System Center - Service Manager
@@ -19,7 +19,7 @@ ms.custom: UpdateFrequency5
 
 ::: moniker-end
 
-Before you start the installation of System Center - Service Manager, you may want to meet with your SQL Server administration team to discuss the effect Service Manager will have on your computers running SQL Server, specifically the databases that will be created. The databases that are created by the deployment of Service Manager are listed in the following table.  
+Before you start the installation of System Center - Service Manager, you may want to meet with your SQL Server administration team to discuss the effect Service Manager has on your computers running SQL Server, specifically the databases that are created. The databases that are created by the deployment of Service Manager are listed in the following table.  
 
 |Service Manager parts|Database name|Contents|  
 |---------------------------------|-------------------|--------------|  

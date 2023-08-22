@@ -5,10 +5,10 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 01/23/2018
+ms.date: 08/22/2023
 ms.technology: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency5
+ms.custom: UpdateFrequency5, engagement-fy24
 ---
 
 # Planning for System Center - Service Manager deployment

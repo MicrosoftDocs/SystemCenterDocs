@@ -1,8 +1,8 @@
 ---
 title: Ports and Protocols of Standard Activities 
 description: This article describes Ports and Protocols of Standard Activities.
-ms.custom: UpdateFrequency5
-ms.date: 1/2/2018
+ms.custom: UpdateFrequency5, engagement-fy24
+ms.date: 08/22/2023
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
