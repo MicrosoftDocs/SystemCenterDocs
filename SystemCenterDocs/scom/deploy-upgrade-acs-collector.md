@@ -5,8 +5,8 @@ description: This article describes how to upgrade an ACS Collector to the lates
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/15/2018
-ms.custom: UpdateFrequency.5
+ms.date: 08/22/2023
+ms.custom: UpdateFrequency.5, engagement-fy24
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

@@ -5,8 +5,8 @@ description: This article describes how to perform an upgrade from System Center
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/12/2019
-ms.custom: UpdateFrequency5
+ms.date: 08/22/2023
+ms.custom: UpdateFrequency5, engagement-fy24
 ms.prod: system-center
 monikerRange: 'sc-om-1807'
 ms.technology: operations-manager

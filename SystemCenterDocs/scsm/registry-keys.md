@@ -6,9 +6,9 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 01/23/2018
+ms.date: 08/22/2023
 ms.technology: service-manager
-ms.custom: UpdateFrequency5
+ms.custom: UpdateFrequency5, engagement-fy24
 ---
 
 # Registry keys used by Service Manager
