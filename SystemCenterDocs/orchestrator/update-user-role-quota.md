@@ -1,8 +1,8 @@
 ---
 title: Update User Role Quota
 description: Updates the quotas for a certain user role and cloud.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 08/22/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
