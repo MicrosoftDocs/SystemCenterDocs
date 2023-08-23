@@ -7,7 +7,7 @@ ms.author: jsuri
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2020
+ms.date: 08/23/2023
 ms.technology: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 monikerRange:  sc-sm-2016 || sc-sm-2019 || sc-sm-2022
@@ -63,6 +63,7 @@ For detailed information about the requirements for Service Manager components, 
 |-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
 | **SQL Server 2017 and Cumulative Updates**    | Yes                                                       |Yes                                           |
 | **SQL Server 2019 with Cumulative Update 8 (CU8) or later**    | Yes                                                       |Yes                                          |
+| **SQL Server 2022 with**                                | Yes                                                       |Yes                                          |
 
 >[!NOTE]
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
