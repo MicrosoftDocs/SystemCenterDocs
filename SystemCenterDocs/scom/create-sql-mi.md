@@ -5,7 +5,7 @@ description: This article describes how to create a SQL managed instance in a de
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/16/2023
+ms.date: 08/23/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -28,7 +28,7 @@ We recommend the following settings for creating a SQL managed instance:
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but we recommend the closest region for latency purposes.
 - **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration suffices for the SCOM managed instance.
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
-- **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance (preview) virtual network.
+- **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance (preview) virtual network by peering both SCOM Managed Instance VNet and SQL Managed Instance VNet.
 
    The subnet that you provide to Azure SQL Managed Instance has to be dedicated (delegated) to the SQL managed instance. The provided subnet can't be used to house any other resources.
 
@@ -38,8 +38,8 @@ We recommend the following settings for creating a SQL managed instance:
 
   If the Azure SQL Managed Instance virtual network is different from the SCOM Managed Instance (preview) virtual network:
 
-  - If you choose to enable, create an inbound NSG rule on the Azure SQL Managed Instance subnet to allow traffic from the System Center Operations Manager virtual network or subnet to port 3342. For more information, see [Configure a public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true).
-  - If you choose to disable, be sure to peer your Azure SQL Managed Instance virtual network with the one in which System Center Operations Manager and SCOM Managed Instance (preview) are present.
+  - Create an inbound NSG rule on the Azure SQL Managed Instance subnet to allow traffic from the SCOM Managed Instance subnet to port 3342 on SQL Managed Instance subnet. For more information, see [Configure a public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true).
+  - Peer your Azure SQL Managed Instance virtual network with the one in which SCOM Managed Instance (preview) is present.
 
 For the rest of the settings on the other tabs, you can leave them as default or change them according to your requirements.
 
@@ -60,30 +60,6 @@ To provide the permission, follow these steps:
 
    :::image type="Add role assignment" source="media/create-sql-mi/add-role-assignment.png" alt-text="Screenshot of selections for adding a role assignment.":::
 1. Select **Save**.
-
-### Set the Active Directory admin value in the SQL managed instance
-
-To set the Active Directory admin value in the SQL managed instance, follow these steps:
-
->[!Note]
->You must have Global Administrator or Privileged Role Administrator permissions for the subscription.
-
-1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
-
-   :::image type="Active directory admin" source="media/create-sql-mi/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
-
-2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the SCOM Managed Instance (preview) creation flow. You'll find the admin added to the SQL managed instance.
-
-   :::image type="Azure Active directory admin" source="media/create-sql-mi/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
-
-3. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your instance, or your instance creation will fail.
-
-   :::image type="SQL Active directory admin" source="media/create-sql-mi/sql-active-directory-admin.png" alt-text="Screenshot that shows successful Active Directory authentication.":::
-
-For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
-
->[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 

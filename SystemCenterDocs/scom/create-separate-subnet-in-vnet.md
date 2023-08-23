@@ -5,7 +5,7 @@ description: This article describes how to create a separate subnet in a VNet.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/16/2023
+ms.date: 08/23/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -21,7 +21,7 @@ This article describes how to create a separate subnet in a VNet for a SCOM Mana
 
 For more information on how to create a VNet, see [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal).
 
-We need a NAT gateway for outbound internet access from SCOM Managed Instance subnet. Edit the subnet to add a NAT gateway. In Azure, add a NAT gateway to the virtual network or subnet where the SCOM managed instance will be created. A NAT gateway is needed for outbound internet access from subnets. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
+We need a NAT gateway for outbound internet access from SCOM Managed Instance subnet. Edit the subnet to add a NAT gateway. In Azure, add a NAT gateway to the subnet where the SCOM managed instance will be created. A NAT gateway is needed for outbound internet access from SCOM Managed Instance subnet. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
 
 To create a NAT gateway, follow these steps:
 
@@ -32,9 +32,6 @@ To create a NAT gateway, follow these steps:
    :::image type="NAT gateway" source="media/create-separate-subnet-in-vnet/nat-gateway.png" alt-text="Screenshot of public IP information for a NAT gateway.":::
 
 1. Select a virtual network and subnet for SCOM Managed Instance (preview).
-
->[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
 
 ## Next steps
 
