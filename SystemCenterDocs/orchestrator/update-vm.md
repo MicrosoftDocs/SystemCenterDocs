@@ -1,8 +1,8 @@
 ---
 title: Update VM
 description: The Update VM Properties activity is used to make changes to an existing virtual machine.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 08/22/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na

@@ -4,8 +4,8 @@ description: This article lists the features and functionality that have been re
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/31/2018
-ms.custom: UpdateFrequency5
+ms.date: 08/22/2023
+ms.custom: UpdateFrequency5, engagement-fy24
 ms.prod: system-center
 monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
