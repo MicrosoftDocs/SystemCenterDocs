@@ -17,6 +17,9 @@ monikerRange: '>=sc-om-2019'
 
 This article describes how to create a user assigned identity, provide admin access to SQL MI, and grant *get and list access* on key-vault.
 
+>[!Note]
+> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+
 ## Create a managed service identity
 
 The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a managed identity replaces the traditional four System Center Operations Manager service accounts. It is used to access the Azure SQL Managed Instance database. You can also use the MSI to access the key vault.
@@ -52,6 +55,49 @@ The managed service identity (MSI) provides an identity for applications to use 
    :::image type="Managed identity review" source="media/create-user-assigned-identity/managed-identity-review.png" alt-text="Screenshot of the tab for reviewing a managed identity before creation.":::
 
 Your deployment is now created on Azure. You can access the resource and view its details.
+
+### Set the Active Directory admin value in the SQL managed instance created in [Step3](create-sql-mi.md)
+
+To set the Active Directory admin value in the SQL managed instance, use the following steps:
+
+>[!Note]
+>You must have Global Administrator or Privileged Role Administrator permissions for the subscription to perform the following operations.
+
+1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
+
+   :::image type="Active directory admin" source="media/create-user-assigned-identity/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
+
+2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the SCOM Managed Instance (preview) creation flow. You'll find the admin added to the SQL managed instance.
+
+   :::image type="Azure Active directory admin" source="media/create-user-assigned-identity/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
+
+3. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your instance, or your instance creation will fail.
+
+   :::image type="SQL Active directory admin" source="media/create-user-assigned-identity/sql-active-directory-admin.png" alt-text="Screenshot that shows successful Active Directory authentication.":::
+
+For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
+
+## Grant permission on key vault created in [Step4](create-key-vault.md)
+
+1. Go to Key vault resource created in [step4](create-key-vault.md) and select **Access policies**.
+
+2. On the **Access policies** page, select **Create**.
+
+    :::image type="Access Policies" source="media/create-user-assigned-identity/access-policies.png" alt-text="Screenshot that shows Access Policies page.":::
+
+3. Under **Permissions** tab, select **Get** and **List** options.
+
+    :::image type="Create Access policy" source="media/create-user-assigned-identity/create-access-policy.png" alt-text="Screenshot that shows create access policy page.":::
+
+4. Select **Next**.
+
+5. Under **Principal** tab, enter the name of the MSI created above.
+
+6. Select **Next**. Select the same MSI that you used in Azure SQL Managed Instance admin configuration.
+
+    :::image type="Principal tab" source="media/create-user-assigned-identity/principal.png" alt-text="Screenshot that shows Principal tab.":::
+
+7. Select **Next** and then select **Create**.
 
 ## Next steps
 

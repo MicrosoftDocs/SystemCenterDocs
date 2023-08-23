@@ -17,6 +17,9 @@ monikerRange: '>=sc-om-2019'
 
 This article describes how to create a SQL managed instance in a dedicated subnet of virtual network. Peer SCOM Managed Instance subnet and SQL MI subnet.
 
+>[!Note]
+> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+
 ## Create and configure a SQL managed instance
 
 Before you create a SCOM managed instance, create a SQL managed instance. For more information, see [Create a SQL managed instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).

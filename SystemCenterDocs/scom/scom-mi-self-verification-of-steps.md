@@ -5,7 +5,7 @@ description: This article describes the self-verification processes of Operation
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri
-ms.date: 08/10/2023
+ms.date: 08/23/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -16,6 +16,9 @@ monikerRange: '>=sc-om-2019'
 # SCOM Managed Instance self-verification of steps
 
 This article describes the self-verification processes of Operations Manager admin, Active directory admin and Network admin.
+
+>[!Note]
+> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
 
 After setting up the steps, run the self-validation tool. Based on the experience and data collected from telemetry, Operations Manager administrators have spent considerable time validating the accuracy of steps. Running this tool helps to identify any issues with your environment or parameters before proceeding with the actual deployment.
 
@@ -46,7 +49,9 @@ Running Operations Manager admin self-verification is essential to understand th
 
 Follow these steps to run the validation script:
 
-1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that is planned to utilize during the creation of the SCOM managed instance.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS server IP that is planned to utilize during the creation of the SCOM managed instance. For example, see the following to set the DNS server IP:
+
+     :::image type="DNS server IP" source="media/scom-mi-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot of DNS server IP.":::
 
 2. Download the validation script to the test VM and extract. It consists of five files: 
      - Readme.txt
@@ -144,7 +149,9 @@ Performing Active Directory admin self-verification is an optional step, and we 
 
 Follow these steps to run the validation script:
 
-1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that is planned to utilize during the creation of the SCOM Managed Instance. If the test VM is already created by Operations Manager admin, then use the test VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS server IP that is planned to utilize during the creation of the SCOM Managed Instance. If the test VM is already created by Operations Manager admin, then use the test VM. For example, see the following to set the DNS server IP:
+
+     :::image type="DNS server IP" source="media/scom-mi-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot of DNS server IP.":::
 
 2. Download the validation script to the test VM and extract. It consists of five files: 
      - Readme.txt
@@ -236,7 +243,9 @@ Performing network admin self-verification is an optional step, and we provide t
 
 Follow these steps to run the validation script:
 
-1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that is planned to utilize during the creation of the SCOM managed instance. If the test VM is already created by Operations Manager admin, then use the test VM.
+1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS server IP that is planned to utilize during the creation of the SCOM managed instance. If the test VM is already created by Operations Manager admin, then use the test VM. For example, see the following to set the DNS server IP:
+
+     :::image type="DNS server IP" source="media/scom-mi-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot of DNS server IP.":::
 
 2. Download the validation script to the test VM and extract. It consists of five files:
      - Readme.txt

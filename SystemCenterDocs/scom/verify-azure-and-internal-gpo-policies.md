@@ -5,7 +5,7 @@ description: This article describes how to verify Azure and internal GPO policie
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/16/2023
+ms.date: 08/23/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -16,6 +16,9 @@ monikerRange: '>=sc-om-2019'
 # Verify Azure and internal GPO policies
 
 This article describes how to verify Azure and internal GPO policies.
+
+>[!Note]
+> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
 
 ## Verify Azure policies
 
@@ -39,7 +42,7 @@ Following are certain policies that could potentially influence the local admini
    - Assess whether any policies are obstructing remote logins to the local administrator group.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operaions Manager admin.
 
 ## Next steps
 

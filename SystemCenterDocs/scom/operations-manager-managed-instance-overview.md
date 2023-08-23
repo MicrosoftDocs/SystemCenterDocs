@@ -5,7 +5,7 @@ description: This article describes about Azure Monitor SCOM Managed Instance (p
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 08/23/2023
 ms.custom: na, UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -22,6 +22,8 @@ With the integration of SCOM Managed Instance (preview), System Center Operation
 SCOM Managed Instance (preview) is a cloud-based alternative for System Center Operations Manager customers. SCOM Managed Instance (preview) provides you with continuous monitoring of your workloads with minimal infrastructure management through migrations or after you enable Azure connectivity for your on-premise environments. 
 
 > [!VIDEO https://www.youtube.com/embed/lOlUq72wWag]
+
+> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
  
 ## Key benefits
 
@@ -67,7 +69,17 @@ The databases hosted in the SQL MI allow formation and to view reports in Power 
 
 ### A customer-managed part
 
-A customer-managed part consists of Ops and Web console that will be used to monitor and administer the instance. The agents to be monitored will be under the customer domain, and if they are in another domain, a gateway server will be needed to carry out the authentication. The customer-managed part will also host a DNS with a static IP that will be provided to the Management Servers hosted in Azure.  
+A customer-managed part consists of Ops and Web console that will be used to monitor and administer the instance. The agents to be monitored will be under the customer domain, and if they are in another domain, a gateway server will be needed to carry out the authentication. The customer-managed part will also host a DNS with a static IP that will be provided to the Management Servers hosted in Azure. 
+
+**Detailed Architecture of SCOM Managed Instance**
+
+:::image type="Detailed architecture" source="media/create-operations-manager-managed-instance/detailed-scom-mi-architecture.png" alt-text="Screenshot of SCOM Managed Instance detailed architecture.":::
+
+SCOM Managed Instance deploys and manages Operations Manager in customer subscription. It establishes connectivity to the on-premises monitored agents through VPN/Express Route.
+
+In customer subscription, SCOM Managed Instance, creates a Virtual Machine Scale Set in a managed resource group and deploys Operations Manager on the VMSS which is front-loaded with Load Balancer for resiliency and elasticity. Operations Manager Management server connects to customer provided SQL MI for Database operations. Both SQL MI and VMSS are created in different VNets and are joined to establish line of sight.
+
+Operations Manager Management server and monitored agents are connected through ER/VPN. Agents establish session with Operations Manager Management server using the Kerberos authentication, where Operations Manager VMSS VMs are joined to the AD domain of the monitored agents. 
 
 ## Next steps
 

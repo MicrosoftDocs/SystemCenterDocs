@@ -5,7 +5,7 @@ description: This article describes how to configure the network firewall.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/16/2023
+ms.date: 08/23/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -17,27 +17,30 @@ monikerRange: '>=sc-om-2019'
 
 This article describes how to configure the network firewall.
 
+>[!Note]
+> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+
 ## Network prerequisites
 
 ### Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the network (VNet) in which you deploy a SCOM managed instance. This is required so that all your resources (domain controller, agents, System Center Operations Manager components such as the Ops console, and SCOM Managed Instance (preview) components such as management servers) can communicate with each other over the network.
+Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the Azure subnet (VNet) in which you deploy a SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet (VNet) in which SCOM Managed Instance is deployed.This is required so that all your resources (domain controller, agents, System Center Operations Manager components such as the Ops console, and SCOM Managed Instance (preview) components such as management servers) can communicate with each other over the network.
 
 Following are the three distinct network models visually represented to create the SCOM Managed Instance.
 
 #### Network Model 1 - The domain controller is located on-premise
 
-In this model, the desired domain controller is located within your on-premises network. You must establish an Express Route connection between your on-premises network and the Virtual Network (VNet) used for the SCOM Managed Instance.
+In this model, the desired domain controller is located within your on-premises network. You must establish an Express Route connection between your on-premises network and the Azure subnet (VNet) used for the SCOM Managed Instance.
 
-If your domain controller or any other component is on-premises, you must establish the line of sight through Azure ExpressRoute or VPN. For more information, see [ExpressRoute documentation](/azure/expressroute/) and [Azure VPN Gateway documentation](/azure/vpn-gateway/).
+If your domain controller and other component is in on-premises, you must establish the line of sight through Azure ExpressRoute or VPN. For more information, see [ExpressRoute documentation](/azure/expressroute/) and [Azure VPN Gateway documentation](/azure/vpn-gateway/).
 
-Following is the network model, wherein the desired domain controller is situated within the on-premises network. There exists a direct connection (via Express Route or VPN) between the on-premises network and the Virtual Network (VNet) used for SCOM Managed Instance creation.
+Following is the network model, wherein the desired domain controller is situated within the on-premises network. There exists a direct connection (via Express Route or VPN) between the on-premises network and the Azure subnet (VNet) used for SCOM Managed Instance creation.
 
 :::image type="Network model 1" source="media/configure-network-firewall/network-model1.png" alt-text="Screenshot of network model 1.":::
 
 #### Network model 2 - The domain controller is hosted in Azure
 
-In this configuration, the desired domain controller is hosted in Microsoft Azure, and you must establish an Express Route connection between your on-premises network and the Virtual Networks (VNet) used for the SCOM Managed Instance creation.
+In this configuration, the desired domain controller is hosted in Microsoft Azure, and you must establish an Express Route connection between your on-premises network and the Azure subnet (VNet) used for the SCOM Managed Instance creation.
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Microsoft Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
@@ -47,7 +50,9 @@ In this model, the desired domain controller remains integrated into your on-pre
 
 In this model, both the desired domain controller and the SCOM Managed Instances are placed in separate and dedicated Virtual Networks (VNets) in Azure.
 
-If your domain controller and all other components are in Azure (a conventional domain controller and not Azure Active Directory) with no presence on-premises, a virtual network works. (ExpressRoute isn't required.) If you're using one virtual network to host all your components, you'll already have a line of sight between all your components. If you have multiple virtual networks, you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
+If your desired domain controller and all other components are in same virtual network (VNet) of Azure (a conventional active domain controller) with no presence in on-premises, then you'll already have a line of sight between all your components. 
+
+If your desired domain controller and all other components are in different virtual networks (VNets) of Azure (a conventional active domain controller) with no presence in on-premises, then you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 
 :::image type="Network model 3" source="media/configure-network-firewall/network-model3.png" alt-text="Screenshot of network model 3.":::
 
@@ -66,14 +71,18 @@ Ensure to take care of the following for all the three networking models mention
 
 The internal firewall rules and network security group (NSG) must allow communication from SCOM Managed Instance virtual network and the designated domain controller/DNS for all the ports listed above.
 
-3. The SQL MI VNet and SCOM Managed Instance must be peered to establish connectivity. Specifically, the port 1433(private port) or 3342(public port) must be reachable from the SCOM Managed Instance to the SQL MI.
+3. The SQL MI VNet and SCOM Managed Instance must be peered to establish connectivity. Specifically, the port 1433(private port) or 3342(public port) must be reachable from the SCOM Managed Instance to the SQL MI. Configure the NSG rules and firewall rules on both virtual networks (VNet) to allow ports 1433 and 3342.
 
-4. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the virtual machine being monitored, and vice versa.
+4. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the machine being monitored, and vice versa.
 
-5. Enable NAT gateway on the SCOM Managed Instance subnet.
+      - If the machine is located in on-premises, set up NSG rules and firewall rules on the SCOM Managed Instance VNET; Also, on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
+      
+      - If the machine is located in Azure, set up NSG rules and firewall rules on the SCOM managed instance's VNET; Also, on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
+
+5. Enable NAT gateway on the SCOM Managed Instance subnet to download the System Center Operations Manager installer from Azure storage account and install.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions with Operations Manager admin time.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operaions Manager admin.
 
 ## Next steps
 

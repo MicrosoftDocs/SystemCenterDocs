@@ -17,6 +17,9 @@ monikerRange: '>=sc-om-2019'
 
 This article describes how to create a separate subnet in a VNet for a SCOM Managed Instance and enable NAT gateway on SCOM Managed Instance subnet.
 
+>[!Note]
+> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+
 ## To create a separate subnet in a VNet
 
 For more information on how to create a VNet, see [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal).
