@@ -63,7 +63,7 @@ For detailed information about the requirements for Service Manager components, 
 |-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
 | **SQL Server 2017 and Cumulative Updates**    | Yes                                                       |Yes                                           |
 | **SQL Server 2019 with Cumulative Update 8 (CU8) or later**    | Yes                                                       |Yes                                          |
-| **SQL Server 2022 with**                                | Yes                                                       |Yes                                          |
+| **SQL Server 2022**                                     | Yes                                                       |Yes                                          |
 
 >[!NOTE]
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
