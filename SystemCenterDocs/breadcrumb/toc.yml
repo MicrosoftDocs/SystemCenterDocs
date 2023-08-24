@@ -27,3 +27,9 @@
     - name: VMM
       tocHref: /system-center/vmm/
       topicHref: /system-center/vmm/
+  - name: System Center
+    tocHref: /troubleshoot/
+    topicHref: /system-center/
+    - name: SCOM
+      tocHref: /troubleshoot/system-center/scom/
+      topicHref: /system-center/scom/welcome
