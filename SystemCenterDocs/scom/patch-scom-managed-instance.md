@@ -49,7 +49,7 @@ It takes 30 mins to 1 hour to successfully update the instance.
 
 **Cause**: Occurs if a patching operation has left an inconsistent state after completion.
 
-**Resolution**: You can use VMSS to provision the management servers for SCOM Managed Instances. To remove the stale management server from the system, follow these steps:
+**Resolution**: VMSS is used to provision the management servers for SCOM Managed Instances. To remove the stale management server from the system, follow these steps:
 
 1. Access the VMSS and log in to one of the management servers for the SCOM Managed Instance.
 
