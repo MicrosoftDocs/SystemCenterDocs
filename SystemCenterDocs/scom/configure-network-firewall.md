@@ -32,7 +32,7 @@ Following are the three distinct network models visually represented to create t
 
 In this model, the desired domain controller is located within your on-premises network. You must establish an Express Route connection between your on-premises network and the Azure subnet (VNet) used for the SCOM Managed Instance.
 
-If your domain controller and other component is in on-premises, you must establish the line of sight through Azure ExpressRoute or VPN. For more information, see [ExpressRoute documentation](/azure/expressroute/) and [Azure VPN Gateway documentation](/azure/vpn-gateway/).
+If your domain controller and other component are in on-premises, you must establish the line of sight through Azure ExpressRoute or VPN. For more information, see [ExpressRoute documentation](/azure/expressroute/) and [Azure VPN Gateway documentation](/azure/vpn-gateway/).
 
 Following is the network model, wherein the desired domain controller is situated within the on-premises network. There exists a direct connection (via Express Route or VPN) between the on-premises network and the Azure subnet (VNet) used for SCOM Managed Instance creation.
 

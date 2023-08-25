@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # About Azure Monitor SCOM Managed Instance (preview)
 
-This article provides you a quick service overview of Azure Monitor SCOM Managed Instance (preview).
+This article provides you with a quick service overview of Azure Monitor SCOM Managed Instance (preview).
 
 With the integration of SCOM Managed Instance (preview), System Center Operations Manager functionality is now available on Azure.
 
@@ -65,11 +65,11 @@ A SCOM Managed Instance (preview) consists of two parts:
 A Microsoft-managed part consists of Management Servers and the [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql&preserve-view=true) hosting an Operations database and Data Warehouse database. The Azure-hosted components can be managed directly from the Azure portal. At the backend, the components interact continuously with ARM and the RP to carry out Azure-based operations.
 
 
-The databases hosted in the SQL MI allow formation and to view reports in Power BI. The Management Servers can be scaled up/down based on your requirements. When you create a new instance, you'll get one management server. The number changes depending on how you decide to scale your instance. You can update your management servers at the click of a button.
+The databases hosted in the SQL MI allow formation and to view reports in Power BI. The Management Servers can be scaled up/down based on your requirements. When you create a new instance, you get one management server. The number changes depending on how you decide to scale your instance. You can update your management servers at the click of a button.
 
 ### A customer-managed part
 
-A customer-managed part consists of Ops and Web console that will be used to monitor and administer the instance. The agents to be monitored will be under the customer domain, and if they are in another domain, a gateway server will be needed to carry out the authentication. The customer-managed part will also host a DNS with a static IP that will be provided to the Management Servers hosted in Azure. 
+A customer-managed part consists of Ops and Web console that will be used to monitor and administer the instance. The agents to be monitored will be under the customer domain, and if they are in another domain, a gateway server is needed to carry out the authentication. The customer-managed part will also host a DNS with a static IP that will be provided to the Management Servers hosted in Azure. 
 
 **Detailed Architecture of SCOM Managed Instance**
 
@@ -77,7 +77,7 @@ A customer-managed part consists of Ops and Web console that will be used to mon
 
 SCOM Managed Instance deploys and manages Operations Manager in customer subscription. It establishes connectivity to the on-premises monitored agents through VPN/Express Route.
 
-In customer subscription, SCOM Managed Instance, creates a Virtual Machine Scale Set in a managed resource group and deploys Operations Manager on the VMSS which is front-loaded with Load Balancer for resiliency and elasticity. Operations Manager Management server connects to customer provided SQL MI for Database operations. Both SQL MI and VMSS are created in different VNets and are joined to establish line of sight.
+In customer subscription, SCOM Managed Instance, creates a Virtual Machine Scale Set in a managed resource group and deploys Operations Manager on the VMSS, which is front-loaded with Load Balancer for resiliency and elasticity. Operations Manager Management server connects to customer provided SQL MI for Database operations. Both SQL MI and VMSS are created in different VNets and are joined to establish line of sight.
 
 Operations Manager Management server and monitored agents are connected through ER/VPN. Agents establish session with Operations Manager Management server using the Kerberos authentication, where Operations Manager VMSS VMs are joined to the AD domain of the monitored agents. 
 

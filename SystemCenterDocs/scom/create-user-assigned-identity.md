@@ -58,7 +58,7 @@ Your deployment is now created on Azure. You can access the resource and view it
 
 ### Set the Active Directory admin value in the SQL managed instance
 
-To set the Active Directory admin value in the SQL managed instancecreated in [Step3](create-sql-mi.md), follow these steps:
+To set the Active Directory admin value in the SQL managed instance created in [Step3](create-sql-mi.md), follow these steps:
 
 >[!Note]
 >You must have Global Administrator or Privileged Role Administrator permissions for the subscription to perform the following operations.
@@ -67,7 +67,7 @@ To set the Active Directory admin value in the SQL managed instancecreated in [S
 
    :::image type="Active directory admin" source="media/create-user-assigned-identity/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
 
-2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the SCOM Managed Instance (preview) creation flow. You'll find the admin added to the SQL managed instance.
+2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the SCOM Managed Instance (preview) creation flow. You find the admin added to the SQL managed instance.
 
    :::image type="Azure Active directory admin" source="media/create-user-assigned-identity/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
 
