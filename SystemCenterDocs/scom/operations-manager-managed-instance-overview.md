@@ -5,7 +5,7 @@ description: This article describes about Azure Monitor SCOM Managed Instance (p
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 08/23/2023
+ms.date: 08/25/2023
 ms.custom: na, UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -73,7 +73,7 @@ A customer-managed part consists of Ops and Web console that will be used to mon
 
 **Detailed Architecture of SCOM Managed Instance**
 
-:::image type="Detailed architecture" source="media/create-operations-manager-managed-instance/detailed-scom-mi-architecture.png" alt-text="Screenshot of SCOM Managed Instance detailed architecture.":::
+:::image type="Detailed architecture" source="media/operations-manager-managed-instance-overview/detailed-scom-mi-architecture.png" alt-text="Screenshot of SCOM Managed Instance detailed architecture.":::
 
 SCOM Managed Instance deploys and manages Operations Manager in customer subscription. It establishes connectivity to the on-premises monitored agents through VPN/Express Route.
 
