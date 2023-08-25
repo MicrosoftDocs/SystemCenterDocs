@@ -231,9 +231,9 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**: Occurs if a patching or scaling operation has left an inconsistent state after completion.
 
-**Resolution**: VMSS is used to provision the management servers for SCOM Managed Instances. To remove the stale management server from the system, follow these steps:
+**Resolution**: Microsoft Azure Virtual Machine Scale Sets is used to provision the management servers for SCOM Managed Instances. To remove the stale management server from the system, follow these steps:
 
-1. Access the VMSS and log in to one of the management servers for the SCOM Managed Instance.
+1. Access the Azure Virtual Machine Scale Sets and log in to one of the management servers for the SCOM Managed Instance.
 
 2. Launch PowerShell in administrative mode and navigate to the following directory.
 
