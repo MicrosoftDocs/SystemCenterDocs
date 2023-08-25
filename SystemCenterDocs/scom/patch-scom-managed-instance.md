@@ -17,9 +17,9 @@ monikerRange: '>=sc-om-2019'
 
 Azure Monitor SCOM Managed Instance (preview) offers a convenient patching experience compared to on-premises System Center Operations Manager. 
 
-Below are the key highlights:
+Following are the key highlights:
 
-- No update rollup in SCOM Managed Instance (preview). A patch is released as and when there are significant fixes and updates made to the product. They are released at a frequency of as often as two weeks or two months.
+- No update rollup in SCOM Managed Instance (preview). A patch is released as and when there are significant fixes and updates made to the product. They're released at a frequency of as often as two weeks or two months.
 - Patching is quick and convenient and happens at the click of a button.
 - All newer patches are backward compatible with the older versions. 
 
