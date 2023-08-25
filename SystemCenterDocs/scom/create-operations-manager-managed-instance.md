@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM managed instance to mon
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/16/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance

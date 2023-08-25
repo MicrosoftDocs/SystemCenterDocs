@@ -5,7 +5,7 @@ description: This article describes how to create a gMSA acconut and computer gr
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/23/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -60,7 +60,7 @@ Ensure that the static IP is in the subnet that you created during virtual netwo
 
 ### Create and configure a gMSA account
 
-Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account, ensure to use the DNS host name provided in [step7](create-static-ip.md) to configure static IP and associated same DNS name to static IP:
+Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account. Ensure to use the DNS host name provided in [step7](create-static-ip.md) to configure static IP and associate the same DNS name to static IP:
 
 ```powershell
 New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
@@ -68,7 +68,7 @@ New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -Princip
 
 In that command:
 - `ContosogMSA` is the gMSA name. 
-- `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously). Use the same DNS name used in [step7](create-static-ip.md) to create the static IP and associated same DNS name to static IP.
+- `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously). Use the same DNS name used in [step7](create-static-ip.md) to create the static IP and associate the same DNS name to static IP.
 - `ContosoServerGroup` is the computer group in Active Directory (specified previously).
 - `MSOMHSvc/ContosoLB.aquiladom.com`, `SMSOMHSvc/ContosoLB`, `MSOMSdkSvc/ContosoLB.aquiladom.com`, and `MSOMSdkSvc/ContosoLB` are service principal names.
 
@@ -84,7 +84,7 @@ Add-KdsRootKey -EffectiveTime ((get-date).addhours(-10))
 Ensure that the created gMSA account is a local admin account. If there are any GPO policies on the local admins at the Active Directory level, ensure that they have the gMSA account as the local admin.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operaions Manager admin.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operations Manager admin.
 
 ## Next steps
 

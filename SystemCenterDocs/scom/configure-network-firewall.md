@@ -5,7 +5,7 @@ description: This article describes how to configure the network firewall.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/23/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -52,7 +52,7 @@ In this model, both the desired domain controller and the SCOM Managed Instances
 
 If your desired domain controller and all other components are in same virtual network (VNet) of Azure (a conventional active domain controller) with no presence in on-premises, then you'll already have a line of sight between all your components. 
 
-If your desired domain controller and all other components are in different virtual networks (VNets) of Azure (a conventional active domain controller) with no presence in on-premises, then you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
+If your desired domain controller and all other components are in different virtual networks (VNets) of Azure (a conventional active domain controller) with no presence on-premises, then you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 
 :::image type="Network model 3" source="media/configure-network-firewall/network-model3.png" alt-text="Screenshot of network model 3.":::
 
@@ -75,14 +75,14 @@ The internal firewall rules and network security group (NSG) must allow communic
 
 4. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the machine being monitored, and vice versa.
 
-      - If the machine is located in on-premises, set up NSG rules and firewall rules on the SCOM Managed Instance VNET; Also, on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
+      - If the machine is on-premises, set up NSG rules and firewall rules on the SCOM Managed Instance VNET and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
       
-      - If the machine is located in Azure, set up NSG rules and firewall rules on the SCOM managed instance's VNET; Also, on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
+      - If the machine is in Azure, set up NSG rules and firewall rules on the SCOM managed instance's VNET and on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
 
 5. Enable NAT gateway on the SCOM Managed Instance subnet to download the System Center Operations Manager installer from Azure storage account and install.
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operaions Manager admin.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](/system-center/scom/scom-mi-self-verification-of-steps?view=sc-om-2022). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operations Manager admin.
 
 ## Next steps
 

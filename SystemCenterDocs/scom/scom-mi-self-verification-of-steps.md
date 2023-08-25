@@ -5,7 +5,7 @@ description: This article describes the self-verification processes of Operation
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri
-ms.date: 08/23/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance

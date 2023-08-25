@@ -5,7 +5,7 @@ description: This article describes how to create a user assigned identity, prov
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/23/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -77,9 +77,11 @@ To set the Active Directory admin value in the SQL managed instance, use the fol
 
 For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
 
-## Grant permission on key vault created in [Step4](create-key-vault.md)
+## Grant permission on the key vault
 
-1. Go to Key vault resource created in [step4](create-key-vault.md) and select **Access policies**.
+To grant permission on the key vault created in [Step4](create-key-vault.md), follow these steps:
+
+1. Go to the Key vault resource created in [step4](create-key-vault.md) and select **Access policies**.
 
 2. On the **Access policies** page, select **Create**.
 
