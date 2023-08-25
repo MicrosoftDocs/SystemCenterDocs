@@ -24,6 +24,9 @@ This article describes how to create a SQL managed instance in a dedicated subne
 
 Before you create a SCOM managed instance, create a SQL managed instance. For more information, see [Create a SQL managed instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
 
+>[!Note]
+>You can re-use your existing SQL MI if that matches the requirement. However, you need to configure it to work for SCOM Managed Instance.
+
 We recommend the following settings for creating a SQL managed instance:
 
 - **Resource Group**: Create a new resource group for Azure SQL Managed Instance (preview). A best practice is to create a new resource group for large Azure resources.

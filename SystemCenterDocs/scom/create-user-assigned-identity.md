@@ -56,9 +56,9 @@ The managed service identity (MSI) provides an identity for applications to use 
 
 Your deployment is now created on Azure. You can access the resource and view its details.
 
-### Set the Active Directory admin value in the SQL managed instance created in [Step3](create-sql-mi.md)
+### Set the Active Directory admin value in the SQL managed instance
 
-To set the Active Directory admin value in the SQL managed instance, use the following steps:
+To set the Active Directory admin value in the SQL managed instancecreated in [Step3](create-sql-mi.md), follow these steps:
 
 >[!Note]
 >You must have Global Administrator or Privileged Role Administrator permissions for the subscription to perform the following operations.

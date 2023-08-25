@@ -62,12 +62,6 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
       The **Create an access policy** page opens on the right pane.
 
-      1. For **Permissions**, under **Secret permissions**, select **Get** and **List**.
-
-         :::image type="Create an Access policy" source="media/create-key-vault/create-an-access-policy.png" alt-text="Screenshot of checkboxes for get and list permissions.":::
-      1. Select **Next**.
-      1. For **Principal**, select the same MSI that you used in Azure SQL Managed Instance admin configuration.
-
       1. For **Review + create**, review the selections, and then select **Create**.
 1. Select the access policy that you created, and then select **Next**.
 

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Create gMSA account
+title: Create a computer group and gMSA account
 description: This article describes how to create a gMSA acconut and computer group, domine user account in on-premises Active directory.
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create gMSA account
+# Create a computer group and gMSA account
 
 This article describes how to create a gMSA account and computer group, domine user account in on-premises Active directory.
 
@@ -49,14 +49,6 @@ To manage this computer group, provide permissions to the domain account that yo
 1. Select the **Manager can update membership list** checkbox.
 
 :::image type="Server group properties" source="media/create-gmsa-account/server-group-properties.png" alt-text="Screenshot of server group properties.":::
-
-### Create a static IP and configure the DNS name
-
-For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance (preview) service creates, you need a static IP and DNS name for the load balancer's front-end configuration.
-
-Ensure that the static IP is in the subnet that you created during virtual network creation. Create a DNS name (according to your organization's policy) for the static IP.
-
-:::image type="DNS manager" source="media/create-gmsa-account/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
 
 ### Create and configure a gMSA account
 
