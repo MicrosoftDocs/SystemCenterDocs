@@ -113,6 +113,7 @@
 #### [Install agent on UNIX and Linux from command line](manage-install-crossplat-agent-cmdline.md)
 #### [Install agent on Linux from command line](deploy-linux-agent-install.md)
 #### [Manage certificates for UNIX and Linux computers](manage-crossplat-certificates.md)
+#### [Use CA certificate on SCX agent](/troubleshoot/system-center/scom/use-ca-certificate-on-scx-agent?toc=/system-center/scom/toc.json&bc=/system-center/breadcrumb/toc.json)
 #### [Repair Windows agent](manage-repair-windows-agent.md)
 #### [Process manual agent installations](manage-process-manual-agent-install.md)
 #### [Applying overrides to object discoveries](manage-apply-overrides-object-discovery.md)
