@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM Manage
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -26,6 +26,8 @@ Follow the below steps to connect a SCOM Managed Instance (preview) to Ops conso
 1. **Identify server to install Ops Console**: Identify a server where you want to install the Ops console. 
      >[!Note]
      >Don't perform this on a SCOM Managed Instance (preview) VM; do it on a separate VM. The VM needs to be a Windows Server. This server can be on-premises or on Azure.
+     >- If the VM/machine is on-premises, set the NSG rules and firewall rules on the SCOM Managed Instance VNet and on the on-premises network where the VM/machine is located to ensure specified essential port (5724) is reachable.
+     >- If the VM/machine is in Azure, set the NSG rules and firewall rules on the SCOM Managed Instance VNet and on the Virtual network (VNET) where the VM/machine is located to ensure specified essential port (5724) is reachable.
 1. **Install the Ops Console**: From the [executable file](https://go.microsoft.com/fwlink/?linkid=2212475), install the Operations console and follow the installation wizard to successfully install the Ops console.
 1. **Connect SCOM Managed Instance (preview) to Ops Console**: Sign in to the Ops console and select **Connect To Server**. Add the FQDN pointing to the management servers.
          
