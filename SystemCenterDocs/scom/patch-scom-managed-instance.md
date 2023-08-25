@@ -5,7 +5,7 @@ description: This article provides information on how to patch your Azure Monito
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -42,6 +42,35 @@ To patch SCOM Managed Instance (preview), follow these steps:
 It takes 30 mins to 1 hour to successfully update the instance.
 
  :::image type="Instance updated" source="media/patch-scom-managed-instance/instance-updated.png" alt-text="Screenshot of Instance updated.":::
+
+## Troubleshoot patching issues
+
+### Issue: In rare cases, after patching, stale Management Servers are visible on console
+
+**Cause**: Occurs if a patching operation has left an inconsistent state after completion.
+
+**Resolution**: You can use VMSS to provision the management servers for SCOM Managed Instances. To remove the stale management server from the system, follow these steps:
+
+1. Access the VMSS and log in to one of the management servers for the SCOM Managed Instance.
+
+2. Launch PowerShell in administrative mode and navigate to the following directory.
+
+    `C:\Packages\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\<version>\bin\troubleshooter`
+
+    >[!Note]
+    >To find the version, go to `C:\Packages\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows` and review all available versions and then select the latest one.
+
+3. Execute the following script:
+
+    ```powershell
+    .\RemoveStaleManagementServers.ps1 
+    ```
+
+    The script is interactive and prompts you for the FQDN of the stale server.  
+
+4. Provide the accurate FQDN of the stale management server you wish to remove.
+
+    For example, FQDN: SCOMMI2000001.contoso.com.
 
 ## Next steps
 
