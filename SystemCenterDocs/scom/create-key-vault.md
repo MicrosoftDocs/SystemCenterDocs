@@ -20,7 +20,7 @@ This article describes how to create a key vault to store the domain credentials
 >[!Note]
 > To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
 
-## Create a key vault and add credentials as a secret in the key vault  
+## Create a key vault and add domain user credentials as a secret in the key vault  
 
 For security, you can store the domain account (which you created previously in Active Directory) in a key vault.
 
@@ -52,20 +52,8 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
         - **Purge protection**: We recommend enabling this feature to have a mandatory retention period.
 
    :::image type="create a key vault" source="media/create-key-vault/create-a-key-vault.png" alt-text="Screenshot of basic information for creating a key vault.":::
-1. Select **Next**.
-1. For **Access Policy**, do the following:
-    - **Access configuration**: Select **Vault access policy**.
-    - **Resource access**: Don't select any of the options.
-    - **Access policies**: Select **+ Create** to create a new access policy.
+1. Select **Next**. For now, no change is required in access configuration, access configuration will be done in the [step5](create-user-assigned-identity.md). 
 
-      :::image type="Access policies" source="media/create-key-vault/access-policies.png" alt-text="Screenshot of the button for creating an access policy.":::
-
-      The **Create an access policy** page opens on the right pane.
-
-      1. For **Review + create**, review the selections, and then select **Create**.
-1. Select the access policy that you created, and then select **Next**.
-
-     :::image type="Access policy" source="media/create-key-vault/access-policy.png" alt-text="Screenshot of a selected access policy.":::
 1. For **Networking**, do the following:
     - Select **Enable public access**.
     - Under **Public Access**, for **Allow access from**, select **All networks**.
