@@ -5,7 +5,7 @@ description: This article describes how to create a static IP for load balancer 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/25/2023
+ms.date: 08/28/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -31,6 +31,11 @@ Get-ADServiceAccount -Identity <gMSA Account Name> -Properties DNSHostName,Enabl
 ```    
 
 Replace the gMSA account name and domain credentials with the right values in the above command.
+
+Create the forward lookup entry in DNS, it is nothing but creating association between IP and DNS name.
+
+- If you use Microsoft Domain Name System (DNS) infrastructure of an Active Directory domain, then open the DNS manager and connect to the DNS Server. This creates association between IP and DNS name (forward lookup) as following.
+- In case if you use a different Domain Name System (DNS) softwares, create the forward lookup entry in the DNS server to create the association between IP and DNS name (forward lookup) as following.
 
 :::image type="DNS manager" source="media/create-static-ip/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
 

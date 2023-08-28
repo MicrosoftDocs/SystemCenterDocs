@@ -5,7 +5,7 @@ description: This article describes how to create a gMSA acconut and computer gr
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/25/2023
+ms.date: 08/28/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Create a computer group and gMSA account
 
-This article describes how to create a gMSA account and computer group, domine user account in on-premises Active directory.
+This article describes how to create a gMSA account, computer group and domain user account in on-premises Active directory.
 
 >[!Note]
 > To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
@@ -24,7 +24,7 @@ This article describes how to create a gMSA account and computer group, domine u
 
 >[!Note]
 >- To perform Active Directory operations, install the **RSAT: Active Directory Domain Services and Lightweight Directory Tools** feature. Then install the **Active Directory Users and Computers** tool. You can install this tool on any machine that has domain connectivity. You must sign in to this tool with admin permissions to perform all Active Directory operations.
->- To perform operations on the DNS server, you need to sign in to the DNS server and run the **DNS Manager** tool.
+
 
 ### Configure a domain account in Active Directory
 
@@ -34,7 +34,7 @@ Create a domain account in your Active Directory instance. The domain account is
 
 Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain. You can use an existing domain account if it has these permissions.
 
-You'll use the configured domain account in later steps for creating a SCOM managed instance.
+You'll use the configured domain account in later steps for creating a SCOM Managed Instance and subsequent steps.
 
 ### Create and configure a computer group
 
@@ -52,7 +52,7 @@ To manage this computer group, provide permissions to the domain account that yo
 
 ### Create and configure a gMSA account
 
-Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account. Ensure to use the DNS host name provided in [step7](create-static-ip.md) to configure static IP and associate the same DNS name to static IP:
+Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account. DNS host name provided will also be used to configure the static IP and associate the same DNS name to static IP in [step7](create-static-ip.md).
 
 ```powershell
 New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
@@ -60,8 +60,8 @@ New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -Princip
 
 In that command:
 - `ContosogMSA` is the gMSA name. 
-- `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously). Use the same DNS name used in [step7](create-static-ip.md) to create the static IP and associate the same DNS name to static IP.
-- `ContosoServerGroup` is the computer group in Active Directory (specified previously).
+- `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously). Use the same DNS name to create the static IP and associate the same DNS name to static IP in [step7](create-static-ip.md).
+- `ContosoServerGroup` is the computer group created above in Active Directory (specified previously).
 - `MSOMHSvc/ContosoLB.aquiladom.com`, `SMSOMHSvc/ContosoLB`, `MSOMSdkSvc/ContosoLB.aquiladom.com`, and `MSOMSdkSvc/ContosoLB` are service principal names.
 
 >[!Note]
