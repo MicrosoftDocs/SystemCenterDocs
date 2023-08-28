@@ -80,7 +80,7 @@
 ##### [Step 3. Create a SQL MI](create-sql-mi.md)
 ##### [Step 4. Create a Key vault](create-key-vault.md)
 ##### [Step 5. Create a user assigned identity](create-user-assigned-identity.md)
-##### [Step 6. Create a gMSA account](create-gmsa-account.md)
+##### [Step 6. Create a computer group and gMSA account](create-gmsa-account.md)
 ##### [Step 7. Create a static IP](create-static-ip.md)
 ##### [Step 8. Configure the network firewall](configure-network-firewall.md)
 ##### [Step 9. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md)

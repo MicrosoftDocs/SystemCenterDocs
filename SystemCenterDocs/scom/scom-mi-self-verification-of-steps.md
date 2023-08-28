@@ -139,7 +139,7 @@ Follow these steps to run the validation script:
 
 5. The validation script displays all the validation checks and their respective errors, which will help in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with break point, which can speed up the debugging process.
 
-     If all the checks pass successfully, return to the onboarding page and start the onboarding process again.
+     If all the checks pass successfully, return to the onboarding page and start the onboarding process.
 
 ## Active directory admin self-verification of steps
 
