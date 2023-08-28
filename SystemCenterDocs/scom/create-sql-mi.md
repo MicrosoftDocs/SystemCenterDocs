@@ -5,7 +5,7 @@ description: This article describes how to create a SQL managed instance in a de
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/25/2023
+ms.date: 08/28/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -44,7 +44,7 @@ We recommend the following settings for creating a SQL managed instance:
 
   If the Azure SQL Managed Instance virtual network is different from the SCOM Managed Instance (preview) virtual network:
 
-  - Create an inbound NSG rule on the Azure SQL Managed Instance subnet to allow traffic from the SCOM Managed Instance subnet to port 3342 on SQL Managed Instance subnet. For more information, see [Configure a public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true).
+  - Create an inbound NSG rule on the Azure SQL Managed Instance subnet to allow traffic from the SCOM Managed Instance subnet to port 3342 and 1433 on SQL Managed Instance subnet. For more information, see [Configure a public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true).
   - Peer your Azure SQL Managed Instance virtual network with the one in which SCOM Managed Instance (preview) is present.
 
 For the rest of the settings on the other tabs, you can leave them as default or change them according to your requirements.
@@ -52,7 +52,7 @@ For the rest of the settings on the other tabs, you can leave them as default or
 >[!Note]
 > Creation of a new SQL managed instance can take up to six hours.
 
-After you create a SQL managed instance, you need to provide permission to the SCOM Managed Instance (preview) resource provider to access this SQL managed instance.
+After you create a SQL managed instance, you need to provide permission to the SCOM Managed Instance (preview) resource provider to access this SQL managed instance properties.
 
 To provide the permission, follow these steps:
 
@@ -62,7 +62,7 @@ To provide the permission, follow these steps:
 1. On the **Add role assignment** pane:
    - For **Role**, select **Reader** from the dropdown list.
    - For **Assign access to**, select **User, group, or service principal** from the dropdown list.
-   - For **Select**, enter **Microsoft.SCOM Resource Provider**.
+   - For **Select**, enter **Microsoft.SCOM** Resource Provider.
 
    :::image type="Add role assignment" source="media/create-sql-mi/add-role-assignment.png" alt-text="Screenshot of selections for adding a role assignment.":::
 1. Select **Save**.

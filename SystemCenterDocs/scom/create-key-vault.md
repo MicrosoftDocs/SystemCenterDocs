@@ -22,12 +22,10 @@ This article describes how to create a key vault to store the domain credentials
 
 ## Create a key vault and add domain user credentials as a secret in the key vault  
 
-For security, you can store the domain account (which you created previously in Active Directory) in a key vault.
+For security, you can store the domain account credentials in a key vault secrets; Later, you can use these secrets in SCOM Managed Instance creation.
+.
 
 Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
-
->[!Note]
-> You must have Global Administrator or Privileged Role Administrator permissions for the tenant to do the following steps.
 
 1. In the Azure portal, search for and select **Key vaults**.
 
@@ -64,28 +62,6 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. For **Review + create**, review the selections, and then select **Create** to create the key vault.
   
     :::image type="content" source="media/create-key-vault/review-inline.png" alt-text="Screenshot of the tab for reviewing selections before creating a key vault." lightbox="media/create-key-vault/review-expanded.png":::
-
-1. On the left pane, under **Objects**, select **Secrets**.
-
-    :::image type="content" source="./media/create-key-vault/secrets-inline.png" alt-text="Screenshot of the pane for secrets." lightbox="./media/create-key-vault/secrets-expanded.png":::
-
-     >[!Note]
-     > You must create two secrets to store the domain account credentials: 
-     > - Username
-     > - Password
-
-1. Select **+ Generate/Import**.
-
-1. On the **Create a secret** page, do the following:
-    - **Upload options**: Select **Manual**.
-    - **Name**: Enter the name of the secret. For example, you can use *Username* for the username secret and *Password* for the password secret.
-    - **Secret value**: For the username value (in the format *domain\username*), enter the domain account username. For the password value, enter the domain account password. For example, if the domain is *contoso.com*, the username should be in the format *contoso\username*.
-
-       :::image type="Secrets" source="media/create-key-vault/create-a-secret-username.png" alt-text="Screenshot of entering a secret value for a username.":::
-
-       :::image type="Secrets" source="media/create-key-vault/create-a-secret-password.png" alt-text="Screenshot of entering a secret value for a password.":::
-
-    - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, and **Tags** areas as default, and select **Create** to create the secret.
 
 ## Next steps
 

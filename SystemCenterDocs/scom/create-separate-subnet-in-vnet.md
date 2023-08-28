@@ -5,7 +5,7 @@ description: This article describes how to create a separate subnet in a VNet.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/25/2023
+ms.date: 08/28/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -24,9 +24,9 @@ This article describes how to create a separate subnet in a VNet for a SCOM Mana
 
 For more information on how to create a VNet, see [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal).
 
-We need a NAT gateway for outbound internet access from SCOM Managed Instance subnet. Edit the subnet to add a NAT gateway. In Azure, add a NAT gateway to the subnet where the SCOM managed instance will be created. A NAT gateway is needed for outbound internet access from SCOM Managed Instance subnet. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
+Once SCOM Managed Instance subnet is created, we need a NAT gateway for outbound internet access from SCOM Managed Instance subnet. Edit the subnet to add a NAT gateway. In Azure, add a NAT gateway to the subnet where the SCOM managed instance will be created. A NAT gateway is needed for outbound internet access from SCOM Managed Instance subnet. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
 
-To create a NAT gateway, follow these steps:
+To create a NAT gateway for SCOM Managed Instance subnet, follow these steps:
 
 1. Create a NAT gateway in the same region where the virtual network is present.
 1. Create a NAT gateway in the same subscription that you use for SCOM Managed Instance (preview).
@@ -34,7 +34,7 @@ To create a NAT gateway, follow these steps:
 
    :::image type="NAT gateway" source="media/create-separate-subnet-in-vnet/nat-gateway.png" alt-text="Screenshot of public IP information for a NAT gateway.":::
 
-1. Select a virtual network and subnet for SCOM Managed Instance (preview).
+1. In subnet section, select a virtual network and subnet for SCOM Managed Instance (preview).
 
 ## Next steps
 
