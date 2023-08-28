@@ -20,9 +20,9 @@ This article describes the self-verification processes of Operations Manager adm
 >[!Note]
 > To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
 
-After setting up the steps, run the self-validation tool. Based on the experience and data collected from telemetry, Operations Manager administrators have spent considerable time validating the accuracy of steps. Running this tool helps to identify any issues with your environment or parameters before proceeding with the actual deployment.
+After setting up the required parameters, run the self-validation tool. Based on the experience and data collected from telemetry, Operations Manager administrators have spent considerable time validating the accuracy of parameters. Running this tool helps to identify any issues with your environment or parameters before proceeding with the actual deployment.
 
-Many customers are benefited from this tool as it saves a significant amount of time that would otherwise be spent troubleshooting issues with steps later on. Therefore, we recommend running this tool before deployment to avoid spending excessive time diagnosing and troubleshooting on-premises parameters in the future.
+Many customers are benefited from this tool as it saves a significant amount of time that would otherwise be spent troubleshooting issues with parameters later on. Therefore, we recommend running this tool before deployment to avoid spending excessive time diagnosing and troubleshooting on-premises parameters in the future.
 
 In the process of SCOM Managed Instance creation, three primary personas are involved. Following is the typical flow of how the Operations Manager admin sets up the steps in enterprise organizations:
 
@@ -34,13 +34,13 @@ In the process of SCOM Managed Instance creation, three primary personas are inv
 
 If the Operations Manager admin plays all three roles, they can independently handle and manage all the tasks without requiring the involvement of different personnel for each specific area.
 
-With the steps provided for each persona to validate the parameters, we aim to streamline the process of setting up the steps, thereby reducing the time required for creating the SCOM Managed Instance.
+With the steps provided for each persona to validate the parameters, we aim to streamline the process of setting up the parameters, thereby reducing the time required for creating the SCOM Managed Instance.
 
 By empowering each persona to verify their respective parameters, we can expedite the overall setup process and achieve faster SCOM Managed Instance deployment.
 
 ## Operations Manager admin self-verification of steps
 
-Running Operations Manager admin self-verification is essential to understand the correctness of steps.
+Running Operations Manager admin self-verification is essential to understand the correctness of parameters.
 
 [Demonstration of how to run the self-validation tool.]
 

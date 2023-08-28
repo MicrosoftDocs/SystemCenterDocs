@@ -52,7 +52,7 @@ To manage this computer group, provide permissions to the domain account that yo
 
 ### Create and configure a gMSA account
 
-Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account. DNS host name provided will also be used to configure the static IP and associate the same DNS name to static IP in [step7](create-static-ip.md).
+Create a gMSA to run the management server services and to authenticate the services. Use the following PowerShell command to create a gMSA service account. DNS host name provided will also be used to configure the static IP and associate the same DNS name to static IP in [step8](create-static-ip.md).
 
 ```powershell
 New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
@@ -60,7 +60,7 @@ New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -Princip
 
 In that command:
 - `ContosogMSA` is the gMSA name. 
-- `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously). Use the same DNS name to create the static IP and associate the same DNS name to static IP in [step7](create-static-ip.md).
+- `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously). Use the same DNS name to create the static IP and associate the same DNS name to static IP in [step8](create-static-ip.md).
 - `ContosoServerGroup` is the computer group created above in Active Directory (specified previously).
 - `MSOMHSvc/ContosoLB.aquiladom.com`, `SMSOMHSvc/ContosoLB`, `MSOMSdkSvc/ContosoLB.aquiladom.com`, and `MSOMSdkSvc/ContosoLB` are service principal names.
 
@@ -80,6 +80,6 @@ Ensure that the created gMSA account is a local admin account. If there are any 
 
 ## Next steps
 
-- [Create a static IP](create-static-ip.md)
+[Store domain credentials in Key vault](store-domain-credentials-in-key-vault.md)
 
 To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

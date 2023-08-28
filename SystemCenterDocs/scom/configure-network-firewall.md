@@ -5,7 +5,7 @@ description: This article describes how to configure the network firewall.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/25/2023
+ms.date: 08/28/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Configure the network firewall
 
-This article describes how to configure the network firewall.
+This article describes how to configure the network firewall and Azure NSG rules.
 
 >[!Note]
 > To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
@@ -40,7 +40,7 @@ Following is the network model, wherein the desired domain controller is situate
 
 #### Network model 2 - The domain controller is hosted in Azure
 
-In this configuration, the desired domain controller is hosted in Microsoft Azure, and you must establish an Express Route connection between your on-premises network and the Azure subnet (VNet) used for the SCOM Managed Instance creation.
+In this configuration, the designated domain controller is hosted in Microsoft Azure, and you must establish an Express Route/VPN connection between your on-premises network and the Azure subnet (VNet) used for the SCOM Managed Instance creation and to Azure subnet (VNet) used for the designated domain controller. For more information, see [ExpressRoute](/azure/expressroute/) and [Azure VPN Gateway](/azure/vpn-gateway/).
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Microsoft Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
@@ -69,15 +69,15 @@ Ensure to take care of the following for all the three networking models mention
      - TCP 445 for SMB
      - TCP 135 for RPC
 
-The internal firewall rules and network security group (NSG) must allow communication from SCOM Managed Instance virtual network and the designated domain controller/DNS for all the ports listed above.
+       The internal firewall rules and network security group (NSG) must allow communication from SCOM Managed Instance virtual network and the designated domain controller/DNS for all the ports listed above.
 
 3. The SQL MI VNet and SCOM Managed Instance must be peered to establish connectivity. Specifically, the port 1433(private port) or 3342(public port) must be reachable from the SCOM Managed Instance to the SQL MI. Configure the NSG rules and firewall rules on both virtual networks (VNet) to allow ports 1433 and 3342.
 
 4. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the machine being monitored, and vice versa.
 
-      - If the machine is on-premises, set up NSG rules and firewall rules on the SCOM Managed Instance VNET and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
+      - If the machine is on-premises, set up NSG rules and firewall rules on the SCOM Managed Instance subnet and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
       
-      - If the machine is in Azure, set up NSG rules and firewall rules on the SCOM managed instance's VNET and on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable.
+      - If the machine is in Azure, set up NSG rules and firewall rules on the SCOM Managed Instance's VNet and on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
 
 5. Enable NAT gateway on the SCOM Managed Instance subnet to download the System Center Operations Manager installer from Azure storage account and install.
 
