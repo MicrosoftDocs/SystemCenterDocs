@@ -117,6 +117,7 @@
 ### [Create an SOFS cluster from standalone servers](sofs-cluster.md)
 ### [Provision SOFS from bare-metal computers](sofs-bare-metal.md)
 ### [Manage SOFS settings](sofs-settings.md)
+### [Set QoS for storage resources](manage-sofs-qos.md)
 ## Manage virtual machines
 ### [Provision VMs](provision-vms.md)
 ### [Deploy VMs from a blank VHD](vm-blank-disk.md)
@@ -124,6 +125,7 @@
 ### [Clone existing VMs](vm-clone.md)
 ### [Deploy VMs with rapid provisioning using SAN copy](vm-san-copy.md)
 ### [Deploy VMs from a VM template](vm-template.md)
+### [Deploy VMs from the VMM library](manage-vm-library.md)
 ### [Deploy Linux VMs](vm-linux.md)
 ### [Deploy nested VMs](vm-nested-virtualization.md)
 ### [Convert VMware VMs to Hyper-V](vm-convert-vmware.md)
@@ -150,3 +152,5 @@
 ### [VM update management](vm-update-management.md)
 ### [Manage Azure VMs](manage-azure-vms.md)
 ### [Manage Azure Resource Manager-based and region-specific Azure subscriptions](vms-manage-azure-ad-and-region-specific.md)
+## Troubleshoot
+### [Resources for Troubleshooting VMM](troubleshoot.md)
