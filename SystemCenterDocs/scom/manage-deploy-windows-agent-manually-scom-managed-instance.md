@@ -5,7 +5,7 @@ description: This article describes how to manually install the Azure Monitor SC
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 08/24/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -14,6 +14,18 @@ monikerRange: '>=sc-om-2019'
 ---
 
 # Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)
+
+This article describes how to manually install the Azure Monitor SCOM Managed Instance (preview) agent on Windows computers.
+
+## Monitor agent network configuration
+
+The monitoring agent communicates with SCOM Managed Instance on port 5723. To allow communication from the monitoring agent to SCOM Managed Instance, the network administrator must configure the network firewall and NSG rules as follows:
+
+   - If the agent machine is on-premises, set the NSG rules and firewall rules on the SCOM Managed Instance VNet and on the on-premises network where the monitored machine is located to ensure specified essential port (5723) is reachable.  
+
+   - If the machine is in Azure, set the NSG rules and firewall rules on the SCOM Managed Instance VNet and on the Virtual network (VNET) where the monitored machine is located to ensure specified essential port (5723) is reachable.  
+
+## Install Windows agent
 
 You can use *MOMAgent.msi* to deploy Azure Monitor SCOM Managed Instance (preview) agents from the command line or by manual installation. For a list of the supported operating system versions, see [System requirements](./connect-managed-instance-ops-console.md).
 
