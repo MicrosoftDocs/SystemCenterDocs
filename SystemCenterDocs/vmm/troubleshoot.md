@@ -1,15 +1,15 @@
 ---
 ms.assetid: d8bfec1d-83c8-44aa-a672-2dfc4f50074c
-title: Troubleshooting VMM
+title: Resources for Troubleshooting VMM
 description: This article summarizes troubleshooting resources available for VMM
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/24/2023
+ms.date: 08/29/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency5, engagement-fy23
+ms.custom: UpdateFrequency5, engagement-fy24
 ---
 
 # Resources for troubleshooting

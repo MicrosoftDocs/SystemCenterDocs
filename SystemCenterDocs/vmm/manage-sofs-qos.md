@@ -5,11 +5,11 @@ description: This article describes how to set QoS policies for SOFS storage
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/11/2017
+ms.date: 08/29/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Set QoS for storage resources
