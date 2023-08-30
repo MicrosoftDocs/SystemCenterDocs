@@ -32,10 +32,10 @@ Get-ADServiceAccount -Identity <gMSA Account Name> -Properties DNSHostName,Enabl
 
 Replace the gMSA account name and domain credentials with the right values in the above command.
 
-Create the forward lookup entry in DNS, it is nothing but creating association between IP and DNS name.
+Create the forward lookup entry in DNS, it's nothing but creating association between IP and DNS name.
 
 - If you use Microsoft Domain Name System (DNS) infrastructure of an Active Directory domain, then open the DNS manager and connect to the DNS Server and create association between IP and DNS name (forward lookup) as following.
-- In case if you use a different Domain Name System (DNS) softwares, create the forward lookup entry in the DNS server to create the association between IP and DNS name (forward lookup) as following.
+- In case if you use a different Domain Name System (DNS) software, create the forward lookup entry in the DNS server to create the association between IP and DNS name (forward lookup) as following.
 
 :::image type="DNS manager" source="media/create-static-ip/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
 

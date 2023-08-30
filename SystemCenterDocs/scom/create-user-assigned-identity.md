@@ -22,7 +22,7 @@ This article describes how to create a user assigned identity, provide admin acc
 
 ## Create a managed service identity
 
-The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a managed identity replaces the traditional four System Center Operations Manager service accounts. It is used to access the Azure SQL Managed Instance database. It is also used to access the key vault.
+The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a managed identity replaces the traditional four System Center Operations Manager service accounts. It's used to access the Azure SQL Managed Instance database. It's also used to access the key vault.
 
 >[!Note]
 >- Ensure that you're a contributor in the subscription where you create the MSI.
@@ -71,7 +71,7 @@ To set the Active Directory admin value in the SQL managed instance created in [
 
    :::image type="Azure Active directory admin" source="media/create-user-assigned-identity/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
 
-3. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your SCOM Managed Instance, else your SCOM Managed Instance creation will fail.
+3. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your SCOM Managed Instance, else your SCOM Managed Instance creation fails.
 
    :::image type="SQL Active directory admin" source="media/create-user-assigned-identity/sql-active-directory-admin.png" alt-text="Screenshot that shows successful Active Directory authentication.":::
 
