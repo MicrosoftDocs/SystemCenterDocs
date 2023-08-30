@@ -83,8 +83,19 @@ Operations Manager Management server and monitored agents are connected through 
 
 ## Next steps
 
-- [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
-- [Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md)
+- [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md).
+- [Step 1. Register the SCOM Managed Instance resource provider](register-scom-mi-resource-provider.md).
+- [Step 2. Create separate subnet in a VNet](create-separate-subnet-in-vnet.md).
+- [Step 3. Create a SQL MI](create-sql-mi.md).
+- [Step 4. Create a Key vault](create-key-vault.md).
+- [Step 5. Create a user assigned identity](create-user-assigned-identity.md).
+- [Step 6. Create a computer group and gMSA account](create-gmsa-account.md).
+- [Step 7. Store domain credentials in Key vault](store-domain-credentials-in-key-vault.md).
+- [Step 8. Create a static IP](create-static-ip.md).
+- [Step 9. Configure the network firewall](configure-network-firewall.md).
+- [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md).
+- [Step 11. SCOM Managed Instance self-verification of steps](scom-mi-self-verification-of-steps.md).
+- [Step 12. Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md).
 
 **Feedback**
 
