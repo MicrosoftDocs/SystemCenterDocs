@@ -5,7 +5,7 @@ description: This guide provides the pre-upgrade tasks you must perform before a
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/13/2023
+ms.date: 08/30/2023
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
@@ -56,32 +56,33 @@ As part of upgrade to System Center Operations Manager installation (setup) incl
 
 To clean up the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
-  ```
-    -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
-    -- Proprietary and confidential to Microsoft Corporation                      --       
-    -- File:      CatchupETLGrooming.sql                                          --
-    -- Contents: A bug in the ETL grooming code could have left the customer      --
-    -- Database with a large amount of ETL rows to groom. This script will groom   --
-    -- The ETL entries in a loop 100K rows at a time to avoid filling up the        --
-    -- Transaction log                                                             --
-    ---------------------------------------------------------------------------------
-    DECLARE @RowCount int = 1;
-    DECLARE @BatchSize int = 100000;
-    DECLARE @SubscriptionWatermark bigint = 0;     
-    DECLARE @LastErr int;
-    -- Delete rows from the EntityTransactionLog. We delete the rows with TransactionLogId that aren't being
-    -- used anymore by the EntityChangeLog table and by the RelatedEntityChangeLog table.
-    SELECT @SubscriptionWatermark = dbo.fn_GetEntityChangeLogGroomingWatermark();
-    WHILE(@RowCount > 0)
-    BEGIN
-      DELETE TOP(@BatchSize) ETL  
-      FROM EntityTransactionLog ETL
-      WHERE NOT EXISTS (SELECT 1 FROM EntityChangeLog ECL WHERE ECL.EntityTransactionLogId = ETL.EntityTransactionLogId) AND NOT EXISTS (SELECT 1 FROM RelatedEntityChangeLog RECL
-      WHERE RECL.EntityTransactionLogId = ETL.EntityTransactionLogId)
-      AND ETL.EntityTransactionLogId < @SubscriptionWatermark;        
-      SELECT @LastErr = @@ERROR, @RowCount = @@ROWCOUNT;            
-    END
-  ```   
+    
+```sql
+-- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
+-- Proprietary and confidential to Microsoft Corporation                      --       
+-- File:      CatchupETLGrooming.sql                                          --
+-- Contents: A bug in the ETL grooming code could have left the user          --
+-- Database with a large amount of ETL rows to groom. This script will groom  --
+-- The ETL entries in a loop 100K rows at a time to avoid filling up the      --
+-- Transaction log                                                            --
+--------------------------------------------------------------------------------
+DECLARE @RowCount int = 1;
+DECLARE @BatchSize int = 100000;
+DECLARE @SubscriptionWatermark bigint = 0;     
+DECLARE @LastErr int;
+-- Delete rows from the EntityTransactionLog. We delete the rows with TransactionLogId that aren't being
+-- used anymore by the EntityChangeLog table and by the RelatedEntityChangeLog table.
+SELECT @SubscriptionWatermark = dbo.fn_GetEntityChangeLogGroomingWatermark();
+WHILE(@RowCount > 0)
+BEGIN
+  DELETE TOP(@BatchSize) ETL  
+  FROM EntityTransactionLog ETL
+  WHERE NOT EXISTS (SELECT 1 FROM EntityChangeLog ECL WHERE ECL.EntityTransactionLogId = ETL.EntityTransactionLogId) AND NOT EXISTS (SELECT 1 FROM RelatedEntityChangeLog RECL
+  WHERE RECL.EntityTransactionLogId = ETL.EntityTransactionLogId)
+  AND ETL.EntityTransactionLogId < @SubscriptionWatermark;        
+  SELECT @LastErr = @@ERROR, @RowCount = @@ROWCOUNT;            
+END
+```
 
 > [!NOTE]
 > Clean up of ETL can take several hours to complete.
@@ -166,10 +167,13 @@ Before upgrading the first management server in your management group, it's reco
 
 To ensure the agents can queue data during the upgrade, update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
 
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName\>\maximumQueueSizeKb​
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb​
+```
 
-The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying DWORD type registry key. ​Once you've completed the upgrade of the management group, you can reset it to default value.
+The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying the **DWORD** type registry key. ​Once you've completed the upgrade of the management group, you can reset it back to the default value.
 
 ## Next steps
 
 To continue with the upgrade, review [Upgrade overview](deploy-upgrade-overview.md).
+
