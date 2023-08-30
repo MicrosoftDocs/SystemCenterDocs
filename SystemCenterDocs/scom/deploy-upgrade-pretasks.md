@@ -169,7 +169,7 @@ To ensure the agents can queue data during the upgrade, update the following reg
 
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb​`
 
-The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying DWORD type registry key. ​Once you've completed the upgrade of the management group, you can reset it to default value.
+The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying the **DWORD** type registry key. ​Once you've completed the upgrade of the management group, you can reset it back to default value.
 
 ## Next steps
 
