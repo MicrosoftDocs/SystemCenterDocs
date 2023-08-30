@@ -57,7 +57,7 @@ As part of upgrade to System Center Operations Manager installation (setup) incl
 To clean up the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
     
-```sql
+    ```sql
     -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
     -- Proprietary and confidential to Microsoft Corporation                      --       
     -- File:      CatchupETLGrooming.sql                                          --
@@ -167,7 +167,9 @@ Before upgrading the first management server in your management group, it's reco
 
 To ensure the agents can queue data during the upgrade, update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
 
-`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb​`
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb​
+```
 
 The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying the **DWORD** type registry key. ​Once you've completed the upgrade of the management group, you can reset it back to default value.
 
