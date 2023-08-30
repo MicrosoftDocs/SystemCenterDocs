@@ -5,7 +5,7 @@ description: This guide provides the pre-upgrade tasks you must perform before a
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/13/2023
+ms.date: 08/30/2023
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
@@ -61,11 +61,11 @@ To clean up the ETL table, run the following script on the SQL Server hosting th
 -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
 -- Proprietary and confidential to Microsoft Corporation                      --       
 -- File:      CatchupETLGrooming.sql                                          --
--- Contents: A bug in the ETL grooming code could have left the customer      --
--- Database with a large amount of ETL rows to groom. This script will groom   --
--- The ETL entries in a loop 100K rows at a time to avoid filling up the        --
--- Transaction log                                                             --
----------------------------------------------------------------------------------
+-- Contents: A bug in the ETL grooming code could have left the user          --
+-- Database with a large amount of ETL rows to groom. This script will groom  --
+-- The ETL entries in a loop 100K rows at a time to avoid filling up the      --
+-- Transaction log                                                            --
+--------------------------------------------------------------------------------
 DECLARE @RowCount int = 1;
 DECLARE @BatchSize int = 100000;
 DECLARE @SubscriptionWatermark bigint = 0;     
