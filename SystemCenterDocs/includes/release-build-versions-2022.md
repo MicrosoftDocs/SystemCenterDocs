@@ -42,7 +42,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1032.0||August 2022 |1.6.10-2 |OMI Vulnerability Fix	|
 |10.22.1039.0|[5020318](https://support.microsoft.com/kb/5020318) |December 2022 |1.6.11-0 |Update Rollup 1 |
 |10.22.1042.0|[5020318](https://support.microsoft.com/kb/5020318) |February 2023 |1.6.12-1 |Update Rollup 1 - Hotfix |
-|10.22.1044.0|[5020318](https://support.microsoft.com/kb/5020318) |March 2023 |1.7.0-0 |Update Rollup 1 - OpenSSL 3.0 |
+|10.22.1044.0|[5024286](https://support.microsoft.com/kb/5024286) |March 2023 |1.7.0-0 |Update Rollup 1 - OpenSSL 3.0 |
 |10.22.1052.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023 |1.7.1-0 |Update Rollup 1 - Hotfix |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
