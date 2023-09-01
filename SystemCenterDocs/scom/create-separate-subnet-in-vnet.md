@@ -5,7 +5,7 @@ description: This article describes how to create a separate subnet in a VNet.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/28/2023
+ms.date: 09/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -32,7 +32,7 @@ To create a NAT gateway for SCOM Managed Instance subnet, follow these steps:
 1. Create a NAT gateway in the same subscription that you use for SCOM Managed Instance (preview).
 1. Create a public IP.
 
-   :::image type="NAT gateway" source="media/create-separate-subnet-in-vnet/nat-gateway.png" alt-text="Screenshot of public IP information for a NAT gateway.":::
+   :::image type="NAT gateway" source="media/create-separate-subnet-in-vnet/nat-gateway-inline.png" alt-text="Screenshot of public IP information for a NAT gateway." lightbox="media/create-separate-subnet-in-vnet/nat-gateway-expanded.png":::
 
 1. In subnet section, select a virtual network and subnet for SCOM Managed Instance (preview).
 

@@ -5,7 +5,7 @@ description: This article describes how to register the SCOM Managed Instance (p
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/28/2023
+ms.date: 09/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -31,7 +31,7 @@ To register the SCOM managed Instance (preview) resource provider, follow these 
 5. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider, and then select **Register**.
 6. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.Compute**. If the **microsoft.Compute** provider isn't registered, select the provider, and then select **Register**.
 
-    :::image type="Microsoft insights resource provider" source="media/register-scom-mi-resource-provider/resource-provider.png" alt-text="Screenshot of the Microsoft insights provider.":::
+    :::image type="Microsoft Insights resource provider" source="media/register-scom-mi-resource-provider/resource-provider.png" alt-text="Screenshot of the Microsoft insights provider.":::
 
 
 ## Next steps

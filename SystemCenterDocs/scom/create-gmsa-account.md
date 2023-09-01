@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
 title: Create a computer group and gMSA account
-description: This article describes how to create a gMSA acconut and computer group, domine user account in on-premises Active directory.
+description: This article describes how to create a gMSA account and computer group, domine user account in on-premises Active directory.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/28/2023
+ms.date: 09/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -30,7 +30,7 @@ This article describes how to create a gMSA account, computer group and domain u
 
 Create a domain account in your Active Directory instance. The domain account is a typical Active Directory account. (It can be a nonadmin account.) You'll use this account to add the System Center Operations Manager management servers to your existing domain.
 
-:::image type="Active directory users" source="media/create-gmsa-account/active-directory-users.png" alt-text="Screenshot of Active Directory users.":::
+:::image type="Active directory users" source="media/create-gmsa-account/active-directory-users-inline.png" alt-text="Screenshot of Active Directory users." lightbox="media/create-gmsa-account/active-directory-users-expanded.png":::
 
 Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain. You can use an existing domain account if it has these permissions.
 
@@ -40,7 +40,7 @@ You'll use the configured domain account in later steps for creating a SCOM Mana
 
 Create a computer group in your Active Directory instance. For more information, see [Create a group account in Active Directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers that you create will be a part of this group so that all the members of the group can retrieve group managed service account (gMSA) credentials. (You'll create these credentials in later steps.) The group name can't contain spaces and must have alphabet characters only.
 
-:::image type="Active directory computers" source="media/create-gmsa-account/active-directory-computers.png" alt-text="Screenshot of Active Directory computers.":::
+:::image type="Active directory computers" source="media/create-gmsa-account/active-directory-computers-inline.png" alt-text="Screenshot of Active Directory computers." lightbox="media/create-gmsa-account/active-directory-computers-expanded.png":::
 
 To manage this computer group, provide permissions to the domain account that you created. Follow these steps to provide permissions:
 
@@ -48,7 +48,7 @@ To manage this computer group, provide permissions to the domain account that yo
 1. For **Name**, enter the name of the domain account.
 1. Select the **Manager can update membership list** checkbox.
 
-:::image type="Server group properties" source="media/create-gmsa-account/server-group-properties.png" alt-text="Screenshot of server group properties.":::
+     :::image type="Server group properties" source="media/create-gmsa-account/server-group-properties-inline.png" alt-text="Screenshot of server group properties." lightbox="media/create-gmsa-account/server-group-properties-expanded.png":::
 
 ### Create and configure a gMSA account
 

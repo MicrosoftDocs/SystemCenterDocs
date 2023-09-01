@@ -5,7 +5,7 @@ description: This article describes how to store domain credentials inkey vault.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/28/2023
+ms.date: 09/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,11 +13,11 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Store domain credentials in key vault
+# Store domain credentials in Key vault
 
 This article describes how to store domain credentials inkey vault.
 
-## To store domain credentials in key vault
+## To store domain credentials in Key vault
 
 1. Go to the Key vault resource created in [step4](create-key-vault.md).
 

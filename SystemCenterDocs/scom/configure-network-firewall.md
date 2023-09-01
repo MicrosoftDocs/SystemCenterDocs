@@ -5,7 +5,7 @@ description: This article describes how to configure the network firewall.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/28/2023
+ms.date: 09/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -36,7 +36,7 @@ If your domain controller and other component are in on-premises, you must estab
 
 Following is the network model, wherein the desired domain controller is situated within the on-premises network. There exists a direct connection (via Express Route or VPN) between the on-premises network and the Azure subnet (VNet) used for SCOM Managed Instance creation.
 
-:::image type="Network model 1" source="media/configure-network-firewall/network-model1.png" alt-text="Screenshot of network model 1.":::
+:::image type="Network model 1" source="media/configure-network-firewall/network-model-1-inline.png" alt-text="Screenshot describing network model 1." lightbox="media/configure-network-firewall/network-model-1-expanded.png":::
 
 #### Network model 2 - The domain controller is hosted in Azure
 
@@ -44,7 +44,7 @@ In this configuration, the designated domain controller is hosted in Microsoft A
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Microsoft Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
-:::image type="Network model 2" source="media/configure-network-firewall/network-model2.png" alt-text="Screenshot of network model 2.":::
+:::image type="Network model 2" source="media/configure-network-firewall/network-model-2-inline.png" alt-text="Screenshot describing network model 2." lightbox="media/configure-network-firewall/network-model-2-expanded.png":::
 
 ### Network model 3 - The domain controller and SCOM managed instances are in Azure VNets
 
@@ -54,7 +54,7 @@ If your desired domain controller and all other components are in same virtual n
 
 If your desired domain controller and all other components are in different virtual networks (VNets) of Azure (a conventional active domain controller) with no presence on-premises, then you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 
-:::image type="Network model 3" source="media/configure-network-firewall/network-model3.png" alt-text="Screenshot of network model 3.":::
+:::image type="Network model 3" source="media/configure-network-firewall/network-model-3-inline.png" alt-text="Screenshot describing network model 3." lightbox="media/configure-network-firewall/network-model-3-expanded.png":::
 
 Ensure to take care of the following for all the three networking models mentioned above:
 

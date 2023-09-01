@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
 title: Create a Key vault
-description: This article describes how to create a key vault.
+description: This article describes how to create a Key vault.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/28/2023
+ms.date: 09/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -28,13 +28,13 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
 1. In the Azure portal, search for and select **Key vaults**.
 
-     :::image type="Key vaults in portal" source="media/create-key-vault/azure-portal-key-vaults.png" alt-text="Screenshot of the icon for key vaults in the Azure portal.":::
+     :::image type="Key vaults in portal" source="media/create-key-vault/azure-portal-key-vaults-inline.png" alt-text="Screenshot of the icon for key vaults in the Azure portal." lightbox="media/create-key-vault/azure-portal-key-vaults-expanded.png":::
 
    The **Key vaults** page opens.
 
 1. Select **+ Create**.
 
-     :::image type="Key vault" source="media/create-key-vault/key-vaults.png" alt-text="Screenshot of the button for creating a key vault.":::
+     :::image type="Key vault" source="media/create-key-vault/key-vaults-inline.png" alt-text="Screenshot of the button for creating a key vault." lightbox="media/create-key-vault/key-vaults-expanded.png":::
 
 1. For **Basics**, do the following:
     - **Project details**:
@@ -48,8 +48,8 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
         - **Days to retain deleted vaults**: Enter a value from 7 to 90.
         - **Purge protection**: We recommend enabling this feature to have a mandatory retention period.
 
-   :::image type="create a key vault" source="media/create-key-vault/create-a-key-vault.png" alt-text="Screenshot of basic information for creating a key vault.":::
-1. Select **Next**. For now, no change is required in access configuration, access configuration will be done in the [step5](create-user-assigned-identity.md). 
+   :::image type="Create a key vault" source="media/create-key-vault/create-a-key-vault-inline.png" alt-text="Screenshot of basic information for creating a key vault." lightbox="media/create-key-vault/create-a-key-vault-expanded.png":::
+1. Select **Next**. For now, no change is required in access configuration, access configuration will be done in the [step5](create-user-assigned-identity.md).
 
 1. For **Networking**, do the following:
     - Select **Enable public access**.
@@ -60,7 +60,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. For **Tags**, select the tags if required, and then select **Next**.
 1. For **Review + create**, review the selections, and then select **Create** to create the key vault.
   
-    :::image type="content" source="media/create-key-vault/review-inline.png" alt-text="Screenshot of the tab for reviewing selections before creating a key vault." lightbox="media/create-key-vault/review-expanded.png":::
+    :::image type="Tab for reviewing selections before creating a key vault" source="media/create-key-vault/review-inline.png" alt-text="Screenshot of the tab for reviewing selections before creating a key vault." lightbox="media/create-key-vault/review-expanded.png":::
 
 ## Next steps
 
