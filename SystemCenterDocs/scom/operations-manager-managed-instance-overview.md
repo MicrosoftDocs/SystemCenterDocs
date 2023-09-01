@@ -69,7 +69,7 @@ The databases hosted in the SQL MI allow formation and to view reports in Power 
 
 ### A customer-managed part
 
-A customer-managed part consists of Ops and Web console that will be used to monitor and administer the instance. The agents to be monitored will be under the customer domain, and if they are in another domain, a gateway server is needed to carry out the authentication. The customer-managed part hosts a DNS with a static IP that will be provided to the Management Servers hosted in Azure. 
+A customer-managed part consists of Ops and Web console that are used to monitor and administer the instance. The agents to be monitored are under the customer domain, and if they are in another domain, a gateway server is needed to carry out the authentication. The customer-managed part hosts a DNS with a static IP that is provided to the Management Servers hosted in Azure.
 
 **Detailed Architecture of SCOM Managed Instance**
 

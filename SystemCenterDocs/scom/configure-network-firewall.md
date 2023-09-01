@@ -56,9 +56,9 @@ In this model, the desired domain controller remains integrated into your on-pre
 
 In this model, both the desired domain controller and the SCOM Managed Instances are placed in separate and dedicated Virtual Networks (VNets) in Azure.
 
-If your desired domain controller and all other components are in same virtual network (VNet) of Azure (a conventional active domain controller) with no presence in on-premises, then you'll already have a line of sight between all your components. 
+If your desired domain controller and all other components are in same virtual network of Azure (a conventional active domain controller) with no presence in on-premises, then you'll already have a line of sight between all your components. 
 
-If your desired domain controller and all other components are in different virtual networks (VNets) of Azure (a conventional active domain controller) with no presence on-premises, then you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
+If your desired domain controller and all other components are in different virtual networks of Azure (a conventional active domain controller) with no presence on-premises, then you need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 
 :::image type="Network model 3" source="media/configure-network-firewall/network-model-3-inline.png" alt-text="Screenshot describing network model 3." lightbox="media/configure-network-firewall/network-model-3-expanded.png":::
 
@@ -77,13 +77,13 @@ Ensure to take care of the following for all the three networking models mention
 
        The internal firewall rules and network security group (NSG) must allow communication from SCOM Managed Instance virtual network and the designated domain controller/DNS for all the ports listed above.
 
-3. The SQL MI VNet and SCOM Managed Instance must be peered to establish connectivity. Specifically, the port 1433(private port) or 3342(public port) must be reachable from the SCOM Managed Instance to the SQL MI. Configure the NSG rules and firewall rules on both virtual networks (VNet) to allow ports 1433 and 3342.
+3. The SQL MI VNet and SCOM Managed Instance must be peered to establish connectivity. Specifically, the port 1433(private port) or 3342(public port) must be reachable from the SCOM Managed Instance to the SQL MI. Configure the NSG rules and firewall rules on both virtual networks to allow ports 1433 and 3342.
 
 4. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the machine being monitored, and vice versa.
 
       - If the machine is on-premises, set up the NSG rules and firewall rules on the SCOM Managed Instance subnet and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
       
-      - If the machine is in Azure, set up the NSG rules and firewall rules on the SCOM Managed Instance's VNet and on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
+      - If the machine is in Azure, set up the NSG rules and firewall rules on the SCOM Managed Instance's VNet and on the virtual network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
 
 5. Enable NAT gateway on the SCOM Managed Instance subnet to download the System Center Operations Manager installer from Azure storage account and install.
 
