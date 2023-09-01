@@ -24,7 +24,13 @@ This article describes how to configure the network firewall and Azure NSG rules
 
 ### Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the Azure subnet (VNet) in which you deploy a SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet (VNet) in which SCOM Managed Instance is deployed. This is required so that all your resources (domain controller, agents, System Center Operations Manager components such as the Ops console, and SCOM Managed Instance (preview) components such as management servers) can communicate with each other over the network.
+Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the Azure subnet (VNet) in which you deploy a SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet (VNet) in which SCOM Managed Instance is deployed.
+
+This is required so that all your following resources can communicate with each other over the network:
+- Domain controller
+- Agents
+- System Center Operations Manager components such as the Ops console
+- SCOM Managed Instance (preview) components such as management servers
 
 Following are the three distinct network models visually represented to create the SCOM Managed Instance.
 
@@ -75,9 +81,9 @@ Ensure to take care of the following for all the three networking models mention
 
 4. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the machine being monitored, and vice versa.
 
-      - If the machine is on-premises, set up NSG rules and firewall rules on the SCOM Managed Instance subnet and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
+      - If the machine is on-premises, set up the NSG rules and firewall rules on the SCOM Managed Instance subnet and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
       
-      - If the machine is in Azure, set up NSG rules and firewall rules on the SCOM Managed Instance's VNet and on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
+      - If the machine is in Azure, set up the NSG rules and firewall rules on the SCOM Managed Instance's VNet and on the virtual network (VNet) where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from monitored machine to SCOM Managed Instance subnet.
 
 5. Enable NAT gateway on the SCOM Managed Instance subnet to download the System Center Operations Manager installer from Azure storage account and install.
 
