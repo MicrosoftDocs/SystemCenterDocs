@@ -46,7 +46,7 @@ Following is the network model, wherein the desired domain controller is situate
 
 #### Network model 2 - The domain controller is hosted in Azure
 
-In this configuration, the designated domain controller is hosted in Microsoft Azure, and you must establish an Express Route/VPN connection between your on-premises network and the Azure subnet used for the SCOM Managed Instance creation and to Azure subnet used for the designated domain controller. For more information, see [ExpressRoute](/azure/expressroute/) and [Azure VPN Gateway](/azure/vpn-gateway/).
+In this configuration, the designated domain controller is hosted in Microsoft Azure, and you must establish an Express Route/VPN connection between your on-premises network and the Azure subnet which is used for the SCOM Managed Instance creation and to Azure subnet used for the designated domain controller. For more information, see [ExpressRoute](/azure/expressroute/) and [Azure VPN Gateway](/azure/vpn-gateway/).
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Microsoft Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
