@@ -24,7 +24,7 @@ This article describes how to configure the network firewall and Azure NSG rules
 
 ### Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the Azure subnet (VNet) in which you deploy a SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet (VNet) in which SCOM Managed Instance is deployed.
+Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the Azure subnet (VNet) in which you deploy a SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet in which SCOM Managed Instance is deployed.
 
 This is required so that all your following resources can communicate with each other over the network:
 - Domain controller
@@ -36,17 +36,17 @@ Following are the three distinct network models visually represented to create t
 
 #### Network Model 1 - The domain controller is located on-premise
 
-In this model, the desired domain controller is located within your on-premises network. You must establish an Express Route connection between your on-premises network and the Azure subnet (VNet) used for the SCOM Managed Instance.
+In this model, the desired domain controller is located within your on-premises network. You must establish an Express Route connection between your on-premises network and the Azure subnet used for the SCOM Managed Instance.
 
 If your domain controller and other component are in on-premises, you must establish the line of sight through Azure ExpressRoute or VPN. For more information, see [ExpressRoute documentation](/azure/expressroute/) and [Azure VPN Gateway documentation](/azure/vpn-gateway/).
 
-Following is the network model, wherein the desired domain controller is situated within the on-premises network. There exists a direct connection (via Express Route or VPN) between the on-premises network and the Azure subnet (VNet) used for SCOM Managed Instance creation.
+Following is the network model, wherein the desired domain controller is situated within the on-premises network. There exists a direct connection (via Express Route or VPN) between the on-premises network and the Azure subnet used for SCOM Managed Instance creation.
 
 :::image type="Network model 1" source="media/configure-network-firewall/network-model-1-inline.png" alt-text="Screenshot describing network model 1." lightbox="media/configure-network-firewall/network-model-1-expanded.png":::
 
 #### Network model 2 - The domain controller is hosted in Azure
 
-In this configuration, the designated domain controller is hosted in Microsoft Azure, and you must establish an Express Route/VPN connection between your on-premises network and the Azure subnet (VNet) used for the SCOM Managed Instance creation and to Azure subnet (VNet) used for the designated domain controller. For more information, see [ExpressRoute](/azure/expressroute/) and [Azure VPN Gateway](/azure/vpn-gateway/).
+In this configuration, the designated domain controller is hosted in Microsoft Azure, and you must establish an Express Route/VPN connection between your on-premises network and the Azure subnet used for the SCOM Managed Instance creation and to Azure subnet used for the designated domain controller. For more information, see [ExpressRoute](/azure/expressroute/) and [Azure VPN Gateway](/azure/vpn-gateway/).
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Microsoft Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
