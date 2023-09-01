@@ -62,7 +62,7 @@ If your desired domain controller and all other components are in different virt
 
 :::image type="Network model 3" source="media/configure-network-firewall/network-model-3-inline.png" alt-text="Screenshot describing network model 3." lightbox="media/configure-network-firewall/network-model-3-expanded.png":::
 
-Ensure to take care of the following for all the three networking models mentioned above:
+Ensure to take care of the following for all the three networking models mentioned earlier:
 
 1. Ensure that the SCOM Managed Instance subnet can establish connectivity to the designated domain controller configured for Azure or SCOM Managed Instance. Also, ensure that domain name resolution within the SCOM Managed Instance subnet lists the designated domain controller as the top entry among the resolved domain controllers to avoid network latency/performance and firewall issues.
 
@@ -75,7 +75,7 @@ Ensure to take care of the following for all the three networking models mention
      - TCP 445 for SMB
      - TCP 135 for RPC
 
-       The internal firewall rules and network security group (NSG) must allow communication from SCOM Managed Instance virtual network and the designated domain controller/DNS for all the ports listed above.
+       The internal firewall rules and network security group (NSG) must allow communication from SCOM Managed Instance virtual network and the designated domain controller/DNS for all the ports listed earlier.
 
 3. The SQL MI VNet and SCOM Managed Instance must be peered to establish connectivity. Specifically, the port 1433(private port) or 3342(public port) must be reachable from the SCOM Managed Instance to the SQL MI. Configure the NSG rules and firewall rules on both virtual networks to allow ports 1433 and 3342.
 
