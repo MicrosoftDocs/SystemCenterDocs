@@ -40,7 +40,7 @@ Create the forward lookup entry in DNS, it's nothing but creating association be
 :::image type="DNS manager" source="media/create-static-ip/dns-manager.png" alt-text="Screenshot of host information in DNS Manager.":::
 
 >[!Important]
->To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](scom-mi-self-verification-of-steps.md). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operations Manager admin.
+>To minimize the need for extensive communication with both your Active Directory admin and Network Admin, review  [**Self-verification**](scom-managed-instance-self-verification-of-steps.md). The outlines the procedures through which the AD admin and network admin validate their configuration changes and ensure their successful implementation; thus, reducing unnecessary back-and-forth interactions from Operations Manager admin to AD Admin and network admin. This saves time of AD admin, Network admin and System Center Operations Manager admin.
 
 ## Next steps
 
