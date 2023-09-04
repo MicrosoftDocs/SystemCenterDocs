@@ -6,9 +6,9 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 02/22/2023
+ms.date: 09/04/2023
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Service Management Automation architecture
@@ -33,4 +33,4 @@ This article shows a diagram that illustrates System Center - Service Management
 
 ## Next steps
 
-- Learn [what's new](./whats-new-in-sma.md) in the latest version of SMA.
+Learn [what's new](./whats-new-in-sma.md) in the latest version of SMA.

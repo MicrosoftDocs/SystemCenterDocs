@@ -5,11 +5,11 @@ description: This article provides information about how to encrypt SMA web serv
 author:  jyothisuri
 ms.author: jsuri
 manager:  mkluck
-ms.date:  12/25/2020
+ms.date:  09/04/2023
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Encrypt SMA network traffic
@@ -87,4 +87,4 @@ Use the following steps to secure the connection between Runbook worker and the 
 
 ## Next steps
 
-- [Manage runbooks](manage-runbooks.md).
+[Manage runbooks](manage-runbooks.md).

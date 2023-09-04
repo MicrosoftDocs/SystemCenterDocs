@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.prod: system-center
 keywords:
-ms.date: 05/17/2023
+ms.date: 09/04/2023
 title: Runbook Output and Messages
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Runbook output and messages
@@ -140,7 +140,7 @@ The Debug stream is intended for use with an interactive user and shouldn't be u
 ## Progress records
 If you configure a runbook to log progress records (on the **Configure** tab of the runbook in the Management Portal), then a record will be written to the job history before and after each activity is run. In most cases, you should keep the default setting of not logging progress records for a runbook in order to maximize performance. Turn on this option only to troubleshoot or debug a runbook. When testing a runbook, progress messages aren't displayed even if the runbook is configured to log progress records.
 
-The [Write-Progress](/powershell/module/microsoft.powershell.utility/write-progress) cmdlet isn't valid in a runbook, since this is intended for use with an interactive user.
+The [Write-Progress](/powershell/module/microsoft.powershell.utility/write-progress) cmdlet isn't valid in a runbook since it is intended for use with an interactive user.
 
 ## Preference variables
 Windows PowerShell uses [preference variables](/powershell/module/microsoft.powershell.core/about/about_preference_variables) to determine how to respond to data sent to different output streams. You can set these variables in a runbook to control how it will respond to data sent into different streams.
@@ -192,4 +192,4 @@ Get-SmaJobOutput -WebServiceEndpoint $webServer -Port $port -Id $job.Id -Stream 
 
 ## Next steps
 
-- [Author automation runbooks](authoring-automation-runbooks.md).
+[Author automation runbooks](authoring-automation-runbooks.md).
