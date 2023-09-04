@@ -24,9 +24,9 @@ This article describes how to configure the network firewall and Azure NSG rules
 
 ### Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network that has your desired domain controller and the Azure subnet (VNet) in which you deploy a SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet in which SCOM Managed Instance is deployed.
+Ensure that there's direct network connectivity (line of sight) between the network of your desired domain controller and the Azure subnet (VNet) where you want to deploy a SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet in which SCOM Managed Instance is deployed.
 
-This is required so that all your following resources can communicate with each other over the network:
+It is required so that all your following resources can communicate with each other over the network:
 - Domain controller
 - Agents
 - System Center Operations Manager components such as the Ops console
@@ -46,7 +46,7 @@ Following is the network model, wherein the desired domain controller is situate
 
 #### Network model 2 - The domain controller is hosted in Azure
 
-In this configuration, the designated domain controller is hosted in Microsoft Azure, and you must establish an Express Route or VPN connection between your on-premises network and the Azure subnet. This is used for the SCOM Managed Instance creation and to Azure subnet used for the designated domain controller. For more information, see [ExpressRoute](/azure/expressroute/) and [Azure VPN Gateway](/azure/vpn-gateway/).
+In this configuration, the designated domain controller is hosted in Microsoft Azure, and you must establish an Express Route or VPN connection between your on-premises network and the Azure subnet. It is used for the SCOM Managed Instance creation and to Azure subnet used for the designated domain controller. For more information, see [ExpressRoute](/azure/expressroute/) and [Azure VPN Gateway](/azure/vpn-gateway/).
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Microsoft Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
