@@ -23,8 +23,8 @@ SCOM Managed Instance (preview) is a cloud-based alternative for System Center O
 
 > [!VIDEO https://www.youtube.com/embed/lOlUq72wWag]
 
->To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
- 
+To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+
 ## Key benefits
 
 The key benefits of SCOM Managed Instance (preview) are:

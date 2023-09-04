@@ -48,7 +48,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
         - **Days to retain deleted vaults**: Enter a value from 7 to 90.
         - **Purge protection**: We recommend enabling this feature to have a mandatory retention period.
 
-   :::image type="Create a key vault" source="media/create-key-vault/create-a-key-vault-inline.png" alt-text="Screenshot of basic information for creating a key vault." lightbox="media/create-key-vault/create-a-key-vault-expanded.png":::
+   :::image type="Create a key vault" source="media/create-key-vault/create-a-key-vault.png" alt-text="Screenshot of basic information for creating a key vault.":::
 1. Select **Next**. For now, no change is required in access configuration, access configuration will be done in the [step5](create-user-assigned-identity.md).
 
 1. For **Networking**, do the following:

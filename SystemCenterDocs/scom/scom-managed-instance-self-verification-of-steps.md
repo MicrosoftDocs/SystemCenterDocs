@@ -65,14 +65,14 @@ Follow these steps to run the validation script:
    #   Configuration = @{
    #         DomainName="test.com"                 
    #         OuPath= "DC=test,DC=com"           
-   #         DNSServerIP = "190.36.1.55"           
+   #         DNSServerIP = "000.00.0.00"           
    #         UserName="test\testuser"              
    #         Password = "password"                 
    #         SqlDatabaseInstance= "test-sqlmi-instance.023a29518976.database.windows.net" 
    #         ManagementServerGroupName= "ComputerMSG"      
    #         GmsaAccount= "test\testgMSA$"
    #         DnsName= "lbdsnname.test.com"
-   #         LoadBalancerIP = "10.88.78.200"
+   #         LoadBalancerIP = "00.00.00.000"
    #     }
    # }
    # Note : Before running this script, please make sure you have provided all the parameters in the settings
@@ -165,13 +165,13 @@ Follow these steps to run the validation script:
    #   Configuration = @{
    #         DomainName="test.com"                 
    #         OuPath= "DC=test,DC=com"           
-   #         DNSServerIP = "190.36.1.55"           
+   #         DNSServerIP = "000.00.0.00"           
    #         UserName="test\testuser"              
    #         Password = "password"                 
    #         ManagementServerGroupName= "ComputerMSG"      
    #         GmsaAccount= "test\testgMSA$"
    #         DnsName= "lbdsnname.test.com"
-   #         LoadBalancerIP = "10.88.78.200"
+   #         LoadBalancerIP = "00.00.00.000"
    #     }
    # }
    # Note : Before running this script, please make sure you have provided all the parameters in the settings
@@ -258,7 +258,7 @@ Follow these steps to run the validation script:
    # $settings = @{
    #   Configuration = @{
    #         DomainName="test.com"                 
-   #         DNSServerIP = "190.36.1.55"
+   #         DNSServerIP = "000.00.0.00"
    #	     SqlDatabaseInstance= "<SQL MI Host name>"           
    #     }
    # }
