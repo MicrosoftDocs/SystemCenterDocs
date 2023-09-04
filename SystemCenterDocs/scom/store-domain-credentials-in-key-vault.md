@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Store domain credentials in Key vault
-description: This article describes how to store domain credentials inkey vault.
+description: This article describes how to store domain credentials in key vault.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Store domain credentials in Key vault
 
-This article describes how to store domain credentials inkey vault.
+This article describes how to store domain credentials in key vault.
 
 ## To store domain credentials in Key vault
 

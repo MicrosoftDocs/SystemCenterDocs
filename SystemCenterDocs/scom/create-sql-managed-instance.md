@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Create a SQL MI
+title: Create a SQL Managed Instance
 description: This article describes how to create a SQL managed instance in a dedicated subnet of virtual network.
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create a SQL MI
+# Create a SQL Managed Instance
 
 This article describes how to create a SQL managed instance in a dedicated subnet of virtual network. Peer SCOM Managed Instance subnet and SQL MI subnet.
 

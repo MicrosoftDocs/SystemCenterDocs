@@ -23,7 +23,7 @@ SCOM Managed Instance (preview) is a cloud-based alternative for System Center O
 
 > [!VIDEO https://www.youtube.com/embed/lOlUq72wWag]
 
-> To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+>To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
  
 ## Key benefits
 
@@ -73,7 +73,7 @@ A customer-managed part consists of Ops and Web console that are used to monitor
 
 **Detailed Architecture of SCOM Managed Instance**
 
-:::image type="Detailed architecture" source="media/operations-manager-managed-instance-overview/detailed-scom-mi-architecture.png" alt-text="Screenshot of SCOM Managed Instance detailed architecture.":::
+:::image type="Detailed architecture" source="media/operations-manager-managed-instance-overview/detailed-scom-managed-instance-architecture.png" alt-text="Screenshot of SCOM Managed Instance detailed architecture.":::
 
 SCOM Managed Instance deploys and manages Operations Manager in customer subscription. It establishes connectivity to the on-premises monitored agents through VPN/Express Route.
 
@@ -85,9 +85,9 @@ Operations Manager Management server and monitored agents are connected through 
 
   To create SCOM Managed Instance (preview), follow these steps:
 
-   - [Step 1. Register the SCOM Managed Instance resource provider](register-scom-mi-resource-provider.md).
+   - [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md).
    - [Step 2. Create separate subnet in a VNet](create-separate-subnet-in-vnet.md).
-   - [Step 3. Create a SQL MI](create-sql-mi.md).
+   - [Step 3. Create a SQL Managed Instance](create-sql-managed-instance.md).
    - [Step 4. Create a Key vault](create-key-vault.md).
    - [Step 5. Create a user assigned identity](create-user-assigned-identity.md).
    - [Step 6. Create a computer group and gMSA account](create-gmsa-account.md).
@@ -95,7 +95,7 @@ Operations Manager Management server and monitored agents are connected through 
    - [Step 8. Create a static IP](create-static-ip.md).
    - [Step 9. Configure the network firewall](configure-network-firewall.md).
    - [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md).
-   - [Step 11. SCOM Managed Instance self-verification of steps](scom-mi-self-verification-of-steps.md).
+   - [Step 11. SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md).
    - [Step 12. Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md).
 
 [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md).

@@ -31,8 +31,7 @@ To register the SCOM managed Instance (preview) resource provider, follow these 
 5. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider, and then select **Register**.
 6. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.Compute**. If the **microsoft.Compute** provider isn't registered, select the provider, and then select **Register**.
 
-    :::image type="Microsoft Insights resource provider" source="media/register-scom-mi-resource-provider/resource-provider.png" alt-text="Screenshot of the Microsoft insights provider.":::
-
+    :::image type="Microsoft Insights resource provider" source="media/register-scom-managed-instance-resource-provider/resource-provider.png" alt-text="Screenshot of the Microsoft insights provider.":::
 
 ## Next steps
 
