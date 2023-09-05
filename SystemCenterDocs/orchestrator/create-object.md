@@ -1,8 +1,8 @@
 ---
 title: Create Object
 description: The Create Object is used to create a new Service Manager record associated with a specified class.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 09/05/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -29,11 +29,14 @@ The following published data element is specific to Create Object. Additional pu
 
 Certain classes contain a mandatory ID property, which requires a GUID. Generating a GUID is the responsibility of the workflow author and can be generated using a .NET scripting activity with the following procedure.
 
-#### To create a class with an ID property
+#### Create a class with an ID property
 
 1.  Create a Run .NET Script activity using the following method: $GUID = \[guid\]::NewGUID().
 
-2.  On the Published Data tab, define the GUID variable using the following settings:Name: guidType: StringVariable: GUID
+2.  On the Published Data tab, define the GUID variable using the following settings:
+    1. Name: guid
+    1. Type: String
+    1. Variable: GUID
 
 When the .NET Script Activity runs, it will generate a GUID that you can subscribe to in the ID property of the activity you're creating.
 
