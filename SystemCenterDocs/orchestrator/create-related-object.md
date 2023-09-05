@@ -29,11 +29,11 @@ The following published data elements are specific to Create Related Object. Add
 
 Certain classes contain a mandatory ID property, which requires a GUID. Generating a GUID is the responsibility of the workflow author, and can be generated using a .NET scripting activity with the following procedure.
 
-#### Create a class with an ID property
+### Create a class with an ID property
 
 1.  Create a Run .NET Script activity using the following method: `$GUID = \[guid\]::NewGUID()`.
 
-2.  On the Published Data tab, define the GUID variable using the following settings:
+2.  On the **Published Data** tab, define the GUID variable using the following settings:
     1. Name: guid
     2. Type: String
     3. Variable: GUID
