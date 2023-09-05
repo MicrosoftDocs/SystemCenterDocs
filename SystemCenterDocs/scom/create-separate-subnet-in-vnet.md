@@ -41,3 +41,4 @@ To create a NAT gateway for SCOM Managed Instance subnet, follow these steps:
 - [Create SQL Managed Instance](create-sql-managed-instance.md)
 
 To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+
