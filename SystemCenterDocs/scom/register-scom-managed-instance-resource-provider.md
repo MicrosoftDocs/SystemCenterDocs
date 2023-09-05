@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Register the SCOM Managed Instance (preview) resource provider 
+title: Register the Azure Monitor SCOM Managed Instance (preview) resource provider
 description: This article describes how to register the SCOM Managed Instance (preview) resource provider.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/01/2023
+ms.date: 09/05/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Register the SCOM Managed Instance (preview) resource provider 
+# Register the Azure Monitor SCOM Managed Instance (preview) resource provider
 
 This article describes how to register the SCOM Managed Instance (preview) resource provider.
 
@@ -31,7 +31,7 @@ To register the SCOM managed Instance (preview) resource provider, follow these 
 5. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider, and then select **Register**.
 6. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.Compute**. If the **microsoft.Compute** provider isn't registered, select the provider, and then select **Register**.
 
-    :::image type="Microsoft Insights resource provider" source="media/register-scom-managed-instance-resource-provider/resource-provider-inline.png" alt-text="Screenshot of the Microsoft insights provider." lightbox="media/register-scom-managed-instance-resource-provider/resource-provider-expanded.png":::
+    :::image type="Microsoft Insights resource provider" source="media/register-scom-managed-instance-resource-provider/resource-provider.png" alt-text="Screenshot of the Microsoft insights provider.":::
 
 ## Next steps
 

@@ -5,8 +5,8 @@ description: This article describes about Azure Monitor SCOM Managed Instance (p
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 09/01/2023
-ms.custom: na, UpdateFrequency.5
+ms.date: 09/05/2023
+ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article

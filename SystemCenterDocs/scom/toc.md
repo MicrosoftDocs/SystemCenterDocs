@@ -86,7 +86,7 @@
 ##### [Step 8. Create a static IP](create-static-ip.md)
 ##### [Step 9. Configure the network firewall](configure-network-firewall.md)
 ##### [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md)
-##### [Step 11. SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md)
+##### [Step 11. SCOM Managed Instance (preview) self-verification of steps](scom-managed-instance-self-verification-of-steps.md)
 ##### [Step 12. Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md)
 #### [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
 #### [Patch SCOM Managed Instance (preview)](patch-scom-managed-instance.md)
