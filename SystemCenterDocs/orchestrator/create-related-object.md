@@ -31,12 +31,12 @@ Certain classes contain a mandatory ID property, which requires a GUID. Generati
 
 #### Create a class with an ID property
 
-1.  Create a Run .NET Script activity using the following method: $GUID = \[guid\]::NewGUID().
+1.  Create a Run .NET Script activity using the following method: `$GUID = \[guid\]::NewGUID()`.
 
 2.  On the Published Data tab, define the GUID variable using the following settings:
     1. Name: guid
-    1. Type: String
-    1. Variable: GUID
+    2. Type: String
+    3. Variable: GUID
 
 When the .NET Script Activity runs, it will generate a GUID that you can subscribe to in the ID property of the activity you're creating.
 
