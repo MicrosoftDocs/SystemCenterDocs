@@ -103,6 +103,7 @@ High-level process to obtain a certificate:
 
 9. Import the certificate into Operations Manager using `<MOMCertImport>`.
 
+
 --- 
 
 ## Download and Import the Root Certificate from the CA
@@ -235,10 +236,10 @@ For more information, see [certificate templates](/previous-versions/windows/it-
       ```
 
 3. Save the file with an *.inf* file extension.
+
 For example, `CertRequestConfig.inf`.
 
 4. Close the text editor.
-
 
 ### Create a Certificate request file
 
@@ -261,6 +262,7 @@ This process encodes the information specified in our config file in Base64 and 
 # [Enterprise CA](#tab/Enter)
 
 1. On the computer hosting the Operations Manager feature for which you're requesting a certificate, open a web browser and connect to the computer hosting Certificate server web address.
+
 For example, `https://<servername>/certsrv`.
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
@@ -272,20 +274,23 @@ For example, `https://<servername>/certsrv`.
 5. On the **Submit a Certificate Request or Renewal Request** page, in the **Saved Request** text box, paste the contents of the *CertRequest.req* file that you copied in step 4 in the previous procedure.
 
 6. On the **Certificate Template**, select the certificate template that you created.
+
 For example, *OperationsManagerCert*, and then select **Submit**.
 
 7. If successful, on the **Certificate Issued** page, select **Base 64 encoded** > **Download certificate**.
 
 8. Save the certificate and provide a friendly name.
+
 For example, save as *SCOM-MS01.cer*.
 
 9. Close the web browser.
 
-
 # [Stand-Alone CA](#tab/StandAlo)
 
 1. On the computer hosting the Operations Manager feature for which you're requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
+
 For example, `https://<servername>/certsrv`.
+
 
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
@@ -297,6 +302,7 @@ For example, `https://<servername>/certsrv`.
 5. On the **Submit a Certificate Request or Renewal Request** page, in the **Saved Request** text box, paste the contents of the *CertRequest.req* file that you copied in step 4 in the previous procedure.
 
 6. On the **Certificate Template**, select the certificate template that you created.
+
 For example, *OperationsManagerCert*, and then select **Submit**.
 
 7. A request will now be submitted to the CA for manual approval before we can download the certificate.
@@ -316,6 +322,7 @@ For example, *OperationsManagerCert*, and then select **Submit**.
 A certificate from a Stand-Alone CA will be retrieved on the target machine for ease of certificate installation. If the CA isn't reached from the target machine, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you're requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
+
 For example, `https://<servername>/certsrv`.
 2. On the Welcome page, select **View the status of a pending certificate request**.
 3. On the Certificates Issued page, select **Base 64 encoded**, and select **Download Certificate**.
@@ -339,6 +346,7 @@ For example, `https://<servername>/certsrv`.
       1. Copy the exported file to the target machine.
 10.	Close the web browser.
 
+
 --- 
 
 ## Use the AD-CS web portal to request a certificate 
@@ -346,6 +354,7 @@ For example, `https://<servername>/certsrv`.
 Apart from the request file, you can create a certificate request through the Certificate services web portal. This step completes on the target machine for ease of certificate installation. If the certificate request using the AD-CS web portal isn't possible, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you're requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
+
 For example, `https://<servername>/certsrv`.
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 3. On the **Request a Certificate** page, select **advanced certificate request**.
@@ -465,6 +474,7 @@ Apart from installation of certificate on the system, you must update Operations
 Use the MOMCertImport.exe utility included in the **SupportTools** folder in the Operations Manager installation media. Copy the file to your server.
 
 
+
 To import the certificate into Operations Manager using MOMCertImport, follow these steps:
 
 1. Sign in to the target computer.
@@ -518,7 +528,10 @@ Use the Enterprise CA to configure certificate auto-enrollment and renewals when
 Configuration of certificate auto-enrollment and renewal won't work with Stand-Alone or third-party CAs. For systems in a Workgroup or separate domain, certificate renewals and enrollments will still be a manual process.
 
 
+
 For more information, see [Windows Server guide](/windows-server/networking/core-network-guide/cncg/server-certs/configure-server-certificate-autoenrollment).
 
 >[!Note]
 >Auto-enrollment and renewal doesn't automatically configure Operations Manager to use the new certificate. If the certificate auto renews with the same key, the thumbprint may also stay the same and no action is required by an Administrator. If a new certificate is generated or the thumbprint changes, the updated certificate will need to be imported into Operations Manager using the MOMCertImport tool as outlined above.
+
+
