@@ -527,7 +527,7 @@ Use the Enterprise CA to configure certificate auto-enrollment and renewals when
 
 Configuration of certificate auto-enrollment and renewal won't work with Stand-Alone or third-party CAs. For systems in a Workgroup or separate domain, certificate renewals and enrollments will still be a manual process.
 
-
+ TEST
 
 For more information, see [Windows Server guide](/windows-server/networking/core-network-guide/cncg/server-certs/configure-server-certificate-autoenrollment).
 
