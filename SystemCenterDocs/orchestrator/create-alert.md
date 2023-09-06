@@ -1,8 +1,8 @@
 ---
 title: Create Alert
 description: The Create Alert activity is used in a runbook to create a new alert in an Operations Manager management group.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 05/09/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -110,4 +110,4 @@ The activity publishes all the data from the required and optional properties in
 | TimeRaised   | The time that the alert was raised   |
 | TimeResolutionStateLastModified   | The time that the resolution state of the alert was last changed   |
 | TimeResolved   | The time that the alert was resolved   |
-| Username   | The user name that was used to access the System Center Operations Manager server   |
+| Username   | The username that was used to access the System Center Operations Manager server   |
