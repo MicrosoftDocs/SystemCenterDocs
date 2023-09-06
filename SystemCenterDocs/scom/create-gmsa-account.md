@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Create a computer group and gMSA account
+title: Create a computer group and gMSA account for Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to create a gMSA account and computer group, domine user account in on-premises Active directory.
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create a computer group and gMSA account
+# Create a computer group and gMSA account for Azure Monitor SCOM Managed Instance (preview)
 
 This article describes how to create a gMSA account, computer group and domain user account in on-premises Active directory.
 

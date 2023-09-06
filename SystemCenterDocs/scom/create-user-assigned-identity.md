@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Create a user assigned identity
+title: Create a user assigned identity for Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to create a user assigned identity, provide admin access to SQL MI, and grant get and list access on key-vault.
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create a user assigned identity
+# Create a user assigned identity for Azure Monitor SCOM Managed Instance (preview)
 
 This article describes how to create a user assigned identity, provide admin access to SQL MI, and grant *get and list access* on key-vault.
 

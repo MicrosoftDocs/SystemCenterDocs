@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Verify Azure and internal GPO policies
+title: Verify Azure and internal GPO policies for Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to verify Azure and internal GPO policies.
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Verify Azure and internal GPO policies
+# Verify Azure and internal GPO policies for Azure Monitor SCOM Managed Instance (preview)
 
 This article describes how to verify Azure and internal GPO policies.
 

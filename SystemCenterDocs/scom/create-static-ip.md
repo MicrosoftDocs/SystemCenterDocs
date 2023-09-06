@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Create a static IP
+title: Create a static IP for Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to create a static IP for load balancer in a dedicated subnet of SCOM Managed Instance.
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create a static IP
+# Create a static IP for Azure Monitor SCOM Managed Instance (preview)
 
 This article describes how to create a static IP for load balancer in a dedicated subnet of SCOM Managed Instance. Additionally, insert an entry into the DNS server, ensure that DNS name resolves to DNS name (DNSHostName) of the gMSA; Get DNSHostName of gMSA account from [step6](create-gmsa-account.md).
 
