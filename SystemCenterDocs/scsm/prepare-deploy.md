@@ -5,10 +5,10 @@ manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/09/2020
+ms.date: 07/14/2023
 ms.technology: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Prepare for System Center - Service Manager deployment
@@ -35,32 +35,31 @@ Before you start the deployment of System Center - Service Manager, you create a
 
 Before running Setup for Service Manager, review the following sections to ensure that the requirements that are needed to install Service Manager have been met. During Setup, you will be prompted to provide domain users or groups for various Service Manager functions. Review this information to ensure that you're ready for the setup process.
 
-
 ### Account used when you install Service Manager
-
 
 This section describes the permissions that you need when you're installing a Service Manager management server and Service Manager console databases and when you're registering the Service Manager management group with the data warehouse management group in Service Manager.
 
 > [!NOTE]  
 >  The account that you use to run Setup is automatically made an administrator in Service Manager.
 
-#### Service Manager management server
+Select the required tab for details of the permissions that you need:
+
+# [Service Manager management server](#tab/SMManagementServer)
 
 You need the following permissions when you're installing a Service Manager management server:  
 
 -   Local administrator on the computer that you run Setup on  
 -   Local administrator on the computer that will host the Service Manager database if it's on a remote computer  
--   Logged\-on user must be a domain account  
+-   Logged-on user must be a domain account  
 -   The Sysadmin SQL Server role on the SQL Server instance where the Service Manager database is being created  
 
-
-#### Service Manager console
+# [Service Manager console](#tab/SMConsole)
 
 You need the following permissions when you're installing the Service Manager console:  
 
 -   Local administrator on the computer that you run Setup on  
 
-#### Data warehouse management server
+# [Data warehouse management server](#tab/DataWarehouse)
 
 You need the following permissions when you're installing the data warehouse management server:  
 
@@ -70,13 +69,13 @@ You need the following permissions when you're installing the data warehouse man
 -   The Content Manager role in SQL Server Reporting Services \(SSRS\) at the site level \(root\)  
 -   The Sysadmin SQL Server role on the SQL Server instance where the data warehouse database is being created  
 
-#### SQL Server Reporting Services
+# [SQL Server Reporting Services](#tab/SQLServer)
 
 You need the following permissions when you're installing SSRS:  
 
 Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server.
 
-#### Registering Service Manager with the data warehouse  
+# [Registering Service Manager with the data warehouse](#tab/SMDataWarehouse)
 
 You need the following permissions when you're registering Service Manager with the data warehouse:  
 
@@ -84,6 +83,8 @@ You need the following permissions when you're registering Service Manager with 
 -   The Sysadmin or security admin SQL Server role on the instance that is hosting the data warehouse database  
 -   Membership in the Service Manager Administrators user role on the Service Manager management server  
 -   Membership in the Service Manager Administrators user role on the data warehouse management server
+
+---
 
 ### Accounts required when you install Service Manager
 
@@ -133,35 +134,36 @@ You will have to provide credentials for the accounts in the following table dur
 **Optional**:
  - Deny log on as a batch job
  - Deny log on through Remote Desktop Services
+ 
+Select the required tab to view the permissions and best practices:
 
-#### Operations Manager Alert connector  
+# [Operations Manager Alert connector](#tab/OMAlertConnector)
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
 |-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.<br />-   Must be an Operations Manager Administrator.|Domain account specifically created for this purpose that is only in the Users local security group and in an Administrator user role in Operations Manager and in an Advanced Operator user role in Service Manager.|  
 
-#### Operations Manager CI connector  
+# [Operations Manager CI connector](#tab/OMCIConnector)
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
 |-   Must be a domain account.<br />-   Must be a member of the Users local security group on the management server.<br />-   Must be an Operations Manager Operator.|Domain account specifically created for this purpose that is only in the Users local security group and in an Operator user role in Operations Manager and in an Advanced Operator user role in Service Manager.|  
 
-#### Active Directory connector  
+# [Active Directory connector](#tab/ADConnector)
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
 |-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.<br />-   Must have permissions to bind to the domain controller that the connector will read data from.<br />-   Needs generic read rights on the objects that are being synchronized into the Service Manager database from AD DS.|Domain account specifically created for this purpose that is only in the Users local security group and in an Advanced Operator user role in Service Manager and has read\-only permissions in AD DS.|  
 
-#### Configuration Manager connector  
+# [Configuration Manager connector](#tab/CMConnector)
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
 |-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.|Domain account specifically created for this purpose that is only in the Users local security group must be a member of the smsdbrole\_extract and db\_datareader on the Configuration Manager database, and is in an Advanced Operator user role in Service Manager.|
 
-
+---
 
 ## Prepare computers for Service Manager deployment
-
 
 Use the following procedures to prepare computers for deployment of Service Manager.  
 
@@ -187,7 +189,7 @@ Use the following procedures to prepare computers for deployment of Service Mana
 
    - `http://<computer hosting SSRS>/reportserver`  
 
-     If either connection attempt fails or returns an error—for example, **HTTP Error 404.0 Not Found**—complete the steps in the procedure "To configure the reporting server." Otherwise, continue with the installation of Service Manager.  
+     If either connection attempt fails or returns an error—for example, **HTTP Error 404.0 Not Found**—complete the steps in the procedure **To configure the reporting server**. Otherwise, continue with the installation of Service Manager.  
 
 ### To configure the reporting server  
 
@@ -227,4 +229,4 @@ To resolve this issue, add \*.\* to the list of extensions. Follow these steps:
 
 ## Next steps
 
-- To learn about the issues that affect performance and scalability in Service Manager, review [Planning for performance and scalability](plan-perf-scale.md). It also suggests best practices to achieve good performance using suggested hardware configurations.
+To learn about the issues that affect performance and scalability in Service Manager, review [Planning for performance and scalability](plan-perf-scale.md). It also suggests best practices to achieve good performance using suggested hardware configurations.

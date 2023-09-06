@@ -5,10 +5,10 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 02/22/2023
+ms.date: 09/04/2023
 title: Deploy Service Management Automation
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23
+ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 ---
 
 # Deploy Service Management Automation
@@ -173,7 +173,7 @@ The following variables can be specified at a command prompt to override default
 |Automatic Microsoft Update|MSUPDATE|**Yes** (opt-in) or **No** (no change; this is the default value)|
 |Product key|PRODUCTKEY|String|
 
-If logging is desired, use the Msiexec.exe command and specify the log path. For example, you could use the following command (ensure to use the name of your SQL Server instance).
+If logging is desired, use the Msiexec.exe command and specify the log path. For example, you could use the following command (ensure to use the name of your SQL Server instance):
 
 ```
 msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDATABASE="Yes" SQLSERVER="localhost" DATABASEAUTHENTICATION="Windows" SQLDATABASE="SMA123"
@@ -196,7 +196,7 @@ The SMA endpoint requires the following information:
 
 -   The service URL and port. The port number is set when you install SMA.
 
--   The user name of a user account that can access the SMA web service. Accounts with access to the SMA web service are also set during installation.
+-   The username of a user account that can access the SMA web service. Accounts with access to the SMA web service are also set during installation.
 
 -   The access password for the user account.
 
@@ -206,4 +206,4 @@ Any of the SMA components can be removed in the **Control Panel** by selecting t
 
 ## Next steps
 
-- Learn more about Microsoft Azure Pack for Windows Server [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
+Learn more about Microsoft Azure Pack for Windows Server [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).

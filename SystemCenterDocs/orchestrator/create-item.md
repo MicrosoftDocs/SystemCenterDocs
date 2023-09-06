@@ -1,8 +1,8 @@
 ---
 title: Create Item
 description: The Create Item activity is used in a runbook to create new appointment, contact group, and Email Message or task items.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 09/05/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -156,7 +156,7 @@ Additionally, this article describes how to create recurring appointments and ta
 | Exchange Server Address | Address of the Exchange Server   | String   |
 | Timeout (seconds)   | Timeout value for the Exchange Server connection   | Number   |
 | Use Autodiscover   | Whether or not to use Autodiscover to check for changes | Boolean   |
-| User Name   | User name used to sign in to the Exchange Server   | String   |
+| User Name   | Username used to sign in to the Exchange Server   | String   |
 
 ## Recurring Appointments and Tasks
 
@@ -175,4 +175,4 @@ The integration pack provides the ability to create recurring appointments and t
 | The same day each month  | Not required. The day is determined by the start date.   |
 | The same week each month | Specify a relative index followed by a day of the week. Valid indexes include First, Second, Third, Fourth, and Last. Days of the week include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Weekday, and WeekendDay.<br>For example: First Monday.   |
 | The same day each year   | Not required. The day is determined by the start date.   |
-| The same week each year  | Specify a relative index followed by a day of the week. Valid indexes include First, Second, Third, Fourth, and Last. Days of the week include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Weekday, and WeekendDay. The month is determined by the start date.<br>For example: First Monday |
+| The same week each year  | Specify a relative index followed by a day of the week. Valid indexes include First, Second, Third, Fourth, and Last. Days of the week include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Weekday, and WeekendDay. The month is determined by the start date.<br>For example: First Monday. |

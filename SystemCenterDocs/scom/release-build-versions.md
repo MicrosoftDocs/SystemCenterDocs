@@ -5,11 +5,11 @@ description: This article details the release builds in Operations Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/27/2023
+ms.date: 08/31/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # System Center - Operations Manager build versions
@@ -78,3 +78,4 @@ The following is the build version for Operations Manager 1801.
 - See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
 
 - See [What's New in Operations Manager](./whats-new-in-om.md).
+

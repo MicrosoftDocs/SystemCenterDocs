@@ -1,8 +1,8 @@
 ---
 title: Create Checkpoint
 description: The Create Checkpoint is used to save the state of a virtual hard disk that is attached to a virtual machine and all of the disk's contents, including application data files.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 09/05/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na

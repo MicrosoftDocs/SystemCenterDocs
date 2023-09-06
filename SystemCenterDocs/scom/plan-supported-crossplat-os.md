@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/19/2023
+ms.date: 08/30/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -177,7 +177,7 @@ Supported versions:
 
 >[!NOTE]
 >- Debian 10, 11, and Ubuntu 20.04 are compatible with System Center - Operations Manager 2019 UR3 and later.
->- Ubuntu 22.04 is compatible with System Center - Operations Manager 2019 UR4 and later.
+>- Ubuntu 22.04 is compatible with System Center - Operations Manager 2019 UR5 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -191,10 +191,10 @@ Supported versions:
 
 - CentOS 7
 - Oracle Linux 7 and 8
-- Rocky 8 (supported from Operations Manager 2019 UR4 and later)
-- Alma 8 (supported from Operations Manager 2019 UR4 and later)
+- Rocky 8 (supported from Operations Manager 2019 UR5 and later)
+- Alma 8 (supported from Operations Manager 2019 UR5 and later)
 - Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
-- Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR4 and later) 
+- Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR5 and later) 
 - Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
 
 >[!Note]

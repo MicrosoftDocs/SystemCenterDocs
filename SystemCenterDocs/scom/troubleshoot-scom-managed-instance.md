@@ -5,7 +5,7 @@ description: This article describes the errors that might occur when you deploy 
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -22,8 +22,8 @@ This article describes the errors that might occur when you deploy or use Azure 
 ### General troubleshooting
 
 1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
-2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
-3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the System Center Operations Manager setup logs.
+2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation. 
+3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the System Center Operations Manager setup logs. Analyze the logs to identify and resolve errors/failures.
 4.	If you're unable to identify the issue with the above steps, sign in to the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
 5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, and so on]
 
@@ -231,7 +231,28 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**: Occurs if a patching or scaling operation has left an inconsistent state after completion.
 
-**Resolution**: Go to System Center Operations Manager console and remove the stale management servers.
+**Resolution**: Microsoft Azure Virtual Machine Scale Sets is used to provision the management servers for SCOM Managed Instances. To remove the stale management server from the system, follow these steps:
+
+1. Access the Azure Virtual Machine Scale Sets and log in to one of the management servers for the SCOM Managed Instance.
+
+2. Launch PowerShell in administrative mode and navigate to the following directory.
+
+    `C:\Packages\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\<version>\bin\troubleshooter`
+
+    >[!Note]
+    >To find the version, go to `C:\Packages\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows` and review all available versions and then select the latest one.
+
+3. Execute the following script:
+
+    ```powershell
+    .\RemoveStaleManagementServers.ps1 
+    ```
+
+    The script is interactive and prompts you for the FQDN of the stale server.  
+
+4. Provide the accurate FQDN of the stale management server you wish to remove.
+
+    For example, FQDN: SCOMMI2000001.contoso.com.
 
 **Feedback**
 
