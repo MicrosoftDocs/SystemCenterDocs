@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Store domain credentials in Key vault
+title: Store domain credentials in Azure Key Vault
 description: This article describes how to store domain credentials in key vault.
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Store domain credentials in Key vault
+# Store domain credentials in Azure Key vault
 
 This article describes how to store domain credentials in key vault.
 
