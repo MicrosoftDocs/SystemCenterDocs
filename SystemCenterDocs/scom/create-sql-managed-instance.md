@@ -5,7 +5,7 @@ description: This article describes how to create a SQL managed instance in a de
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/05/2023
+ms.date: 09/06/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -58,7 +58,7 @@ To provide the permission, follow these steps:
 
 1. Open the SQL managed instance and select **Access control (IAM)**. On the top menu, select **+Add** > **Add role assignment**.
 
-   :::image type="Access control" source="media/create-sql-mi/access-control.png" alt-text="Screenshot that shows selections for starting the process of adding a role assignment for access control.":::
+   :::image type="Access control" source="media/create-sql-mi/access-control-inline.png" alt-text="Screenshot that shows selections for starting the process of adding a role assignment for access control." lightbox="media/create-sql-mi/access-control-expanded.png":::
 1. On the **Add role assignment** pane:
    - For **Role**, select **Reader** from the dropdown list.
    - For **Assign access to**, select **User, group, or service principal** from the dropdown list.

@@ -5,7 +5,7 @@ description: This article describes how to create a Key vault.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/05/2023
+ms.date: 09/06/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -55,7 +55,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
     - Select **Enable public access**.
     - Under **Public Access**, for **Allow access from**, select **All networks**.
 
-   :::image type="Networking tab" source="media/create-key-vault/networking.png" alt-text="Screenshot of selections for enabling public access on the Networking tab.":::
+   :::image type="Networking tab" source="media/create-key-vault/networking-inline.png" alt-text="Screenshot of selections for enabling public access on the Networking tab." lightbox="media/create-key-vault/networking-expanded.png":::
 1. Select **Next**.
 1. For **Tags**, select the tags if required, and then select **Next**.
 1. For **Review + create**, review the selections, and then select **Create** to create the key vault.

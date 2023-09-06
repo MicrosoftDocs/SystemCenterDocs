@@ -5,7 +5,7 @@ description: This article describes how to create a user assigned identity, prov
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/05/2023
+ms.date: 09/06/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -65,15 +65,15 @@ To set the Active Directory admin value in the SQL managed instance created in [
 
 1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
 
-   :::image type="Active directory admin" source="media/create-user-assigned-identity/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
+   :::image type="Active directory admin" source="media/create-user-assigned-identity/active-directory-admin-inline.png" alt-text="Screenshot of the pane for Active Directory admin information." lightbox="media/create-user-assigned-identity/active-directory-admin-expanded.png":::
 
 2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the SCOM Managed Instance (preview) creation flow. You find the admin added to the SQL managed instance.
 
-   :::image type="Azure Active directory admin" source="media/create-user-assigned-identity/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
+   :::image type="Azure Active directory admin" source="media/create-user-assigned-identity/azure-active-directory-inline.png" alt-text="Screenshot of MSI information for Azure Active Directory." lightbox="media/create-user-assigned-identity/azure-active-directory-expanded.png":::
 
 3. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your SCOM Managed Instance, else your SCOM Managed Instance creation fails.
 
-   :::image type="SQL Active directory admin" source="media/create-user-assigned-identity/sql-active-directory-admin.png" alt-text="Screenshot that shows successful Active Directory authentication.":::
+   :::image type="SQL Active directory admin" source="media/create-user-assigned-identity/sql-active-directory-admin-inline.png" alt-text="Screenshot that shows successful Active Directory authentication." lightbox="media/create-user-assigned-identity/sql-active-directory-admin-expanded.png":::
 
 For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
 
