@@ -93,7 +93,7 @@ To configure agentless monitoring, perform the following steps:
 
     ![Screenshot showing Authentication type.](./media/sql-server-management-pack/authentication-type.png)
 
-    > [!NOTE]
+    > [!TIP]
     > The connection test may fail if an IP address of a Linux-based instance is specified as a connection string and the authentication type is **Windows AD credentials**. To avoid that, specify the machine name as the connection string.
 
 7. Select **OK** and wait until the connection is established.
