@@ -2,10 +2,10 @@
 ms.assetid: 5be59923-32d6-4758-b078-a26bf85ae28b
 title: Monitoring modes in Management Pack for SQL Server
 description: This article explains monitoring modes in Management Pack for SQL Server
-author: Anastas1ya
+author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 9/7/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -17,9 +17,7 @@ Management Pack for SQL Server provides the following monitoring modes:
 
 - **Agent monitoring**
 
-    Agent monitoring is performed by the System Center Operations Manager agent and supports SQL on Windows only.
-
-    In this monitoring mode, the management pack automatically discovers standalone and clustered instances of SQL Server across all managed systems that run the System Center Operations Manager agent service.
+    Agent monitoring is performed by the System Center Operations Manager agent and supports SQL on Windows only. In this monitoring mode, the management pack automatically discovers standalone and clustered instances of SQL Server across all managed systems that run the System Center Operations Manager agent service.
 
     The following protocols are supported in this mode:
 
@@ -29,15 +27,11 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     - Shared Memory
 
-- **Agentless monitoring**
+- [**Agentless monitoring**](#configuring-agentless-monitoring-mode)
 
-    This monitoring mode supports both SQL on Linux and SQL on Windows.
+    This monitoring mode supports both SQL on Linux and SQL on Windows. In this monitoring mode, the management pack workflows run on Management Servers and Gateway Servers. Both servers are mapped to **SQL Server Monitoring Pool**. If SQL Server Monitoring Pool isn't configured, **All Management Servers Pool** is used.
 
-    In this monitoring mode, the management pack workflows run on Management Servers and Gateway Servers. Both servers are mapped to **SQL Server Monitoring Pool**. If SQL Server Monitoring Pool isn't configured, **All Management Servers Pool** is used.
-
-    This monitoring mode doesn't provide automatic discovery of SQL Server instances. To discover SQL Server instances, add them to the monitoring list manually, as described in [Configuring Agentless Monitoring Mode](#configuring-agentless-monitoring-mode).
-
-    To make monitoring more efficient, configure a dedicated pool of Management Servers, as described in [Configuring SQL Server Monitoring Pool](sql-server-management-pack-sql-server-monitoring-pool.md).
+    This monitoring mode doesn't provide automatic discovery of SQL Server instances. To discover SQL Server instances, add them to the monitoring list manually with the **Monitoring Wizard** management pack template. To make monitoring more efficient, configure a dedicated pool of Management Servers, as described in [Configuring SQL Server Monitoring Pool](sql-server-management-pack-sql-server-monitoring-pool.md).
 
     The following protocols are supported in this mode:
 
@@ -45,13 +39,9 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     - Named Pipes
 
-- **Mixed monitoring**
+- [**Mixed monitoring**](#configuring-mixed-monitoring-mode)
 
-    This monitoring mode supports SQL on Windows only.
-
-    In this monitoring mode, the management pack places its seed on each computer that has the System Center Operations Manager agent. This seed is then used to automatically discover all SQL Server on Windows instances. The entire monitoring is performed by Management Servers and Gateway Servers that are members of the SQL Server Monitoring Pool.
-
-    For more information on how to configure this mode, see [Configuring Mixed Monitoring Mode](#configuring-mixed-monitoring-mode).
+    This monitoring mode supports SQL on Windows only. In this monitoring mode, the management pack places its seed on each computer that has the System Center Operations Manager agent. This seed is then used to automatically discover all SQL Server on Windows instances. The entire monitoring is performed by Management Servers and Gateway Servers that are members of the SQL Server Monitoring Pool.
 
     Only the TCP/IP protocol is supported in this mode.
 
@@ -101,17 +91,17 @@ To configure agentless monitoring, perform the following steps:
 
         - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
 
-     When you add a Linux-based instance, a connection test will fail if an IP address is specified as a connection string and the authentication type is **Windows AD credentials**. In this case, specify the machine name as the connection string.
-
     ![Screenshot showing Authentication type.](./media/sql-server-management-pack/authentication-type.png)
+
+    > [!TIP]
+    > The connection test may fail if an IP address of a Linux-based instance is specified as a connection string and the authentication type is **Windows AD credentials**. To avoid that, specify the machine name as the connection string.
 
 7. Select **OK** and wait until the connection is established.
 
-    **Monitoring Template Wizard** may show the following error when establishing connection: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process".
-
-    To work around this issue, decrease intervals for both the **MSSQL: Generic Monitoring Pool Watcher Discovery** discovery and the **Discover All Management Servers Pool Watcher** discovery to force them to run right away, and then restore the previous value.
-
     ![Screenshot showing Decrease intervals.](./media/sql-server-management-pack/decrease-intervals.png)
+
+    > [!NOTE]
+    > **Monitoring Template Wizard** may show the following error when establishing connection: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process". To work around this issue, decrease intervals for both the **MSSQL: Generic Monitoring Pool Watcher Discovery** discovery and the **Discover All Management Servers Pool Watcher** discovery to force them to run right away, and then restore the previous value.
 
     Once the connection is established, you can view and edit the properties of the instance. To view properties, select an instance and select **Edit Instance**.
 
@@ -122,6 +112,9 @@ To configure agentless monitoring, perform the following steps:
 8. At the **Summary** step, review summary information and select **Create**.
 
     ![Screenshot showing Server summary.](./media/sql-server-management-pack/server-details-summary.png)
+
+    > [!IMPORTANT]
+    > To avoid double monitoring of the SQL Server instance and additional burden eventually, don't add the instance to the monitoring template wizard for **Agentless mode** if it is already monitoring in **Agent mode**.
 
 ## Configuring Mixed Monitoring Mode
 
