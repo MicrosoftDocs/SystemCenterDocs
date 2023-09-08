@@ -5,7 +5,7 @@ description: This article describes the self-verification processes of Operation
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri
-ms.date: 09/05/2023
+ms.date: 09/08/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -41,6 +41,8 @@ By empowering each persona to verify their respective parameters, we can expedit
 ## Operations Manager admin self-verification of steps
 
 Running Operations Manager admin self-verification is essential to understand the correctness of parameters.
+
+> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=de6cac42-06ca-4517-bb99-9438ce2b8fa5]
 
 >[!Important]
 > Initially, create a new test Windows Server (2022/2019) virtual machine (VM) in the same subnet selected for SCOM Managed Instance creation. Subsequently, both your AD admin and Network admin can individually use this VM to verify the effectiveness of their respective changes. This approach significantly saves time spent on back-and-forth communication between the AD admin and Network admin.
