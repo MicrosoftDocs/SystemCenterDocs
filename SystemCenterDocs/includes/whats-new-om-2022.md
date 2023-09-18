@@ -114,7 +114,3 @@ Operations Manager 2022 allows you to discover Azure Migrate from console.You ca
 The following sections introduce the new features or feature updates supported in Operations Manager 2022 Update Rollup 1 (UR1).
 
 For problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-operations-manager-3f5780c9-36d9-4bba-8361-d40ca7c7ae80).
-
-### Supports SQL Server 2022
-
-Operations Manager 2022 UR1 supports SQL Server 2022.
