@@ -71,7 +71,7 @@ Values of few registries that are customized (commonly) are retained when an upd
 
 - Value of custom install location of Monitoring Agent is retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.
 - Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
-- While upgrading non-primary Management Servers, Data warehouse registry details are retained (which were previously deleted).
+- While upgrading nonprimary Management Servers, Data warehouse registry details are retained (which were previously deleted).
 - Support for group managed service accounts in the Installer setup.
 - Operations Manager 2022 supports .NET 4.8.
 - The Web console now utilizes HTML5 instead of Silverlight.
@@ -107,7 +107,7 @@ Operations Manager 2022 also includes the following updates:
 
 ### Discover Azure Migrate from Operations Manager console
 
-Operations Manager 2022 allows you to discover Azure Migrate from console.You can now generate a complete inventory of your on-premises environment without appliance. This can be used in Azure Migrate to assess machines at scale. [Learn more](https://support.microsoft.com/topic/discover-azure-migrate-for-operations-manager-04b33766-f824-4e99-9065-3109411ede63).
+Operations Manager 2022 allows you to discover Azure Migrate from console. You can now generate a complete inventory of your on-premises environment without appliance. This can be used in Azure Migrate to assess machines at scale. [Learn more](https://support.microsoft.com/topic/discover-azure-migrate-for-operations-manager-04b33766-f824-4e99-9065-3109411ede63).
 
 ## New features in Operations Manager 2022 UR1
 
