@@ -5,16 +5,14 @@ description: This article describes the new features supported in Operations Man
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/26/2023
-ms.custom: UpdateFrequency.5, engagement-fy23, intro-whats-new
+ms.date: 09/18/2023
+ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # What's New in Operations Manager
-
-
 
 ::: moniker range="sc-om-2022"
 
