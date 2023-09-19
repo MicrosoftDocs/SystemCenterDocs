@@ -5,10 +5,11 @@ description: This article provides planning information for deploying VMM and it
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 10/29/2020
+ms.date: 09/19/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 # Plan a highly available VMM deployment

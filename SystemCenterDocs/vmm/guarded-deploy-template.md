@@ -5,13 +5,14 @@ description: Describes how to configure a shielded template disk and utility dis
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/12/2022
+ms.date: 09/19/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
-#  Set up a disks and a VM template to deploy shielded VMs
+#  Set up a disk and a VM template to deploy shielded VMs
 
 ::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 

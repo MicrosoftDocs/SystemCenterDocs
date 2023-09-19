@@ -5,11 +5,11 @@ description: This article provides guidance about managing VMware servers in the
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 09/19/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
@@ -75,7 +75,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
  - You can decide whether you want VMM to communicate with the vSphere hosts managed by the vCenter server over a secure connection. If so, you'll need a certificate to authenticate communications on each vSphere host or cluster. You can either use the self-signed certificate that VMware created when vSphere was installed on the host, or a certificate from a trusted CA. If you're using a self-signed certificate, you can  import it from each vSphere host to the vMM management server before you begin deployment
  - Before you configure network settings for vSphere hosts, ensure that you've created logical networks that you want to associate with the physical network adapters on the hosts.
 
-## Add a v-Center server
+## Add a vCenter server
 
 1. Select **Fabric** > **Servers** > **vCenter servers** > **Add** > **Add Resources** > **VMware vCenter Server**.
 2. In **Add VMware vCenter Server**, specify the name (FQDN, NetBIOS, or IP address) of the vCenter server. Add the port needed to connect to the vCenter server (443 by default).
