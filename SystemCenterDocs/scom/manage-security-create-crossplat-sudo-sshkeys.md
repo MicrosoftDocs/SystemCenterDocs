@@ -38,11 +38,11 @@ To obtain and configure the SSH key from the UNIX and Linux computer, you have t
 > [!NOTE]  
 > The sudo program exists at different locations on UNIX and Linux operating systems. To provide uniform access to sudo, the UNIX and Linux agent installation script creates the symbolic link `/etc/opt/microsoft/scx/conf/sudodir` to point to the directory expected to contain the sudo program. The agent uses this symbolic link to invoke sudo. The installation script automatically creates the symbolic link, so you do not need to take any action on standard UNIX and Linux configurations; however, if you have sudo installed at a non-standard location, you should change the symbolic link to point to the directory where sudo is installed. If you change the symbolic link, its value is preserved across uninstall, re-install, and upgrade operations with the agent.  
 
-## Configure a low-privileged account for sudo elevation  
+## Configure an account for sudo elevation
 
-The following procedures create a low\-privileged account and sudo elevation by using `opsuser` for a user name.  
+The following procedures create an account and sudo elevation by using `opsuser` for a user name.  
 
-#### To create a low-privileged user  
+#### To create a user
 
 1.  Log on to the UNIX or Linux computer as `root`.  
 
@@ -56,8 +56,10 @@ The following procedures create a low\-privileged account and sudo elevation by 
 
 You can now configure sudo elevation and create an SSH key for `opsuser`, as described in the following procedures.  
 
-#### To configure sudo elevation for the low-privileged user  
+#### To configure sudo elevation for the user
 
+> [!NOTE]
+> [For more detailed sudoers configuration for Low Privilege scenarios, please see the following TechNet Wiki: https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx](For more detailed sudoers configuration for Low Privilege scenarios, please see the following TechNet Wiki: https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx)
 1.  Log on to the UNIX or Linux computer as `root`.  
 
 2.  Use the visudo program to edit the sudo configuration in a vi text editor. Run the following command:  
@@ -152,3 +154,4 @@ You can use the `opsuser` account by using the SSH key and sudo elevation for sp
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
 
 - Review the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
+
