@@ -132,6 +132,7 @@
 ### [Install an operating system on a VM](vm-install-operating-system.md)
 ### [Manage VM settings](vm-settings.md)
 ### [Manage dynamic and power optimization for VMs](vm-optimization.md)
+### [Configure VM failover between virtual networks](manage-vm-failover-virtual-networks.md)
 ### [Create VM role templates with VMM and Azure Pack](vm-role-template.md)
 ## Migrate VMs
 ### [Migration overview](migrate.md)

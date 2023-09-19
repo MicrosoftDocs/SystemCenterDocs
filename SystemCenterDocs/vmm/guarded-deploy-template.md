@@ -5,13 +5,14 @@ description: Describes how to configure a shielded template disk and utility dis
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/12/2022
+ms.date: 09/19/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
-#  Set up a disks and a VM template to deploy shielded VMs
+#  Set up a disk and a VM template to deploy shielded VMs
 
 ::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
@@ -39,7 +40,7 @@ To prepare and add a signed template disk to the VMM library, complete the follo
 1. [Prepare a signed template disk](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 with Desktop Experience, or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/download/details.aspx?id=45520) installed.
 ::: moniker-end
 ::: moniker range="sc-vmm-2022"
-1. [Prepare a signed template disk](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 with Desktop Experience or later, or Windows 10 or Windows 11 with the [Remote Server Administration Tools](https://www.microsoft.com/download/details.aspx?id=45520) installed.
+1. [Prepare a signed template disk](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 or 2019 with Desktop Experience or later, or Windows 10 or Windows 11 with the [Remote Server Administration Tools](https://www.microsoft.com/download/details.aspx?id=45520) installed.
 ::: moniker-end
 2. [Copy the template disk](library-files.md) to a library share (\\\\\<vmmserver\>\\MSSCVMMLibrary\\VHDs by default), and refresh the library server.
 3. To provide VMM with information about the operating system on the template disk, in **Library**, right-click the disk > **Properties**.
