@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: What’s new for Azure Monitor SCOM Managed Instance (preview)
+title: What’s new in Azure Monitor SCOM Managed Instance (preview)
 description: This article provides details of the features supported in Azure Monitor SCOM Managed Instance (preview).
 author: jyothisuri
 ms.author: jsuri
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# What’s new for Azure Monitor SCOM Managed Instance (preview) 
+# What’s new in Azure Monitor SCOM Managed Instance (preview) 
 
 This article provides details of the features supported in Azure Monitor SCOM Managed Instance (preview).
 
