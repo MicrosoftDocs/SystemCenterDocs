@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Release notes for Azure Monitor SCOM Managed Instance (preview)
-description: This article lists the release notes for Azure Monitor SCOM Managed Instance (preview).
+title: What’s new for Azure Monitor SCOM Managed Instance (preview)
+description: This article provides details of the features supported in Azure Monitor SCOM Managed Instance (preview).
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Release notes for Azure Monitor SCOM Managed Instance (preview)
+# What’s new for Azure Monitor SCOM Managed Instance (preview) 
 
-This article lists the release notes for Azure Monitor SCOM Managed Instance (preview).
+This article provides details of the features supported in Azure Monitor SCOM Managed Instance (preview).
 
 ## Version 1.0.85
 
@@ -31,13 +31,13 @@ Improved performance of extension for onboarding, scaling, and patching operatio
 
 - Bug fixes for onboarding validation.
 
-- Fixed issue where Domain Connectivity check fails with error **The property 'TcpTestSucceeded' cannot be found on this object**.
+- Fixed issue where Domain Connectivity check fails with error **The property `TcpTestSucceeded` cannot be found on this object**.
 
 ## Version 1.0.88
 
 - Bugfixes for onboarding validation.
 
-- Fixed issue where Static IP and LB association check fails with error **The property 'IP4Address' cannot be found on this object**.
+- Fixed issue where Static IP and LB association check fails with error **The property `IP4Address` cannot be found on this object**.
 
 ## Next steps
 

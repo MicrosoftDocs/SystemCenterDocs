@@ -94,7 +94,7 @@
 #### [SCOM Managed Instance (preview) monitoring scenarios](scom-managed-instance-monitoring-scenarios.md)
 #### [SCOM Managed Instance (preview) agents](plan-planning-agent-deployment-scom-managed-instance.md)
 #### [Install Windows Agent manually Using MOMAgent.msi](manage-deploy-windows-agent-manually-scom-managed-instance.md)
-#### [Release notes for SCOM Managed Instance (preview)](release-notes-in-scom-mi.md)
+#### [What's new in SCOM Managed Instance (preview)](whats-new-scom-mi.md)
 #### Post Deployment
 ##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
 #### Logs
