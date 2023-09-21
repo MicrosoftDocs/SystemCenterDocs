@@ -73,7 +73,7 @@ A customer-managed part consists of Ops and Web console that are used to monitor
 
 **Detailed Architecture of SCOM Managed Instance**
 
-:::image type="Detailed architecture" source="media/operations-manager-managed-instance-overview/detailed-scom-managed-instance-architecture.png" alt-text="Screenshot of SCOM Managed Instance detailed architecture.":::
+:::image type="Detailed architecture" source="media/operations-manager-managed-instance-overview/detailed-scom-managed-instance-architecture-inline.png" alt-text="Screenshot of SCOM Managed Instance detailed architecture."lightbox="media/operations-manager-managed-instance-overview/detailed-scom-managed-instance-architecture-expanded.png":::
 
 SCOM Managed Instance deploys and manages Operations Manager in customer subscription. It establishes connectivity to the on-premises monitored agents through VPN/Express Route.
 
