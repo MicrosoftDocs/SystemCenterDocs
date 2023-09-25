@@ -7,10 +7,10 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 09/26/2023
 ms.technology: service-manager
 ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Mapping Active Directory Domain Services attributes to properties in System Center - Service Manager
