@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
 title: What’s new in Azure Monitor SCOM Managed Instance (preview)
-description: This article provides details of the features supported in Azure Monitor SCOM Managed Instance (preview).
+description: This article provides details of what is new in each version in Azure Monitor SCOM Managed Instance (preview).
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/20/2023
+ms.date: 09/25/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -15,11 +15,11 @@ monikerRange: '>=sc-om-2019'
 
 # What’s new in Azure Monitor SCOM Managed Instance (preview) 
 
-This article provides details of the features supported in Azure Monitor SCOM Managed Instance (preview).
+This article provides details of what is new in each version in Azure Monitor SCOM Managed Instance (preview).
 
 ## Version 1.0.85
 
-Improved performance of extension for onboarding, scaling, and patching operations.
+- Improved performance of extension for onboarding, scaling, and patching operations.
 
 ## Version 1.0.86
 
@@ -38,6 +38,10 @@ Improved performance of extension for onboarding, scaling, and patching operatio
 - Bugfixes for onboarding validation.
 
 - Fixed issue where Static IP and LB association check fails with error **The property `IP4Address` cannot be found on this object**.
+
+## Version 1.0.89
+
+- The Log Analytics workspace feature is available for existing and new SCOM Managed Instances.
 
 ## Next steps
 
