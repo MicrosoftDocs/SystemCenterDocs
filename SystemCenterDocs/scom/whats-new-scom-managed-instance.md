@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: What’s new in Azure Monitor SCOM Managed Instance (preview)
-description: This article provides details of what is new in each version in Azure Monitor SCOM Managed Instance (preview).
+description: This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance (preview).
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # What’s new in Azure Monitor SCOM Managed Instance (preview) 
 
-This article provides details of what is new in each version in Azure Monitor SCOM Managed Instance (preview).
+This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance (preview).
 
 ## Version 1.0.85
 
@@ -35,7 +35,7 @@ This article provides details of what is new in each version in Azure Monitor SC
 
 ## Version 1.0.88
 
-- Bugfixes for onboarding validation.
+- Bug fixes for onboarding validation.
 
 - Fixed issue where Static IP and LB association check fails with error **The property `IP4Address` cannot be found on this object**.
 
