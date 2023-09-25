@@ -4,8 +4,8 @@ description: This article reviews the default grooming settings for the operatio
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/10/2016
-ms.custom: UpdateFrequency3
+ms.date: 09/26/2023
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
