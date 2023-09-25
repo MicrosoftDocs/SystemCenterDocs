@@ -145,7 +145,8 @@ For more information, see [Hardware and Software Requirements for Installing SQL
 ::: moniker-end
 
 > [!NOTE]
-> Although Operations Manager will only use Windows authentication during installation, the SQL Mixed Mode Authentication setting will still work as long as no local account has the db_owner role. Local accounts with the db_owner role are known to cause issues with SCOM. Please remove the db_owner role from all local accounts before installing the product and do not add the db_owner role to any local accounts after installation.
+> Although Operations Manager uses only Windows authentication during installation, the SQL Mixed Mode Authentication setting will still work if no local account has the db_owner role. Local accounts with the db_owner role are known to cause issues with System Center Operations Manager. Remove the db_owner role from all the local accounts before installing the product and don’t add the db_owner role to any of the local accounts after installation.
+
 ## SQL Server collation setting
 
 The following SQL Server and Windows collations are supported by System Center Operations Manager.
