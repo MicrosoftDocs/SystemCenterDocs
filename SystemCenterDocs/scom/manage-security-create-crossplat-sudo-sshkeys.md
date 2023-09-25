@@ -5,7 +5,7 @@ description: This article describes how to configure sudo and SSH keys for an un
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/25/2023
+ms.date: 09/25/2023
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
@@ -42,7 +42,7 @@ To obtain and configure the SSH key from the UNIX and Linux computer, you have t
 
 The following procedures create an account and sudo elevation by using `opsuser` for a user name.  
 
-#### To create a user
+#### Create a user
 
 1.  Log on to the UNIX or Linux computer as `root`.  
 
@@ -56,10 +56,10 @@ The following procedures create an account and sudo elevation by using `opsuser`
 
 You can now configure sudo elevation and create an SSH key for `opsuser`, as described in the following procedures.  
 
-#### To configure sudo elevation for the user
+#### Configure sudo elevation for the user
 
 > [!NOTE]
-> [For more detailed sudoers configuration for Low Privilege scenarios, please see the following TechNet Wiki: https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx](For more detailed sudoers configuration for Low Privilege scenarios, please see the following TechNet Wiki: https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx)
+> For more information about sudoers configuration for Low Privilege scenarios, see [SCOM: Configuring sudo Elevation for UNIX and Linux Monitoring](https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx)
 1.  Log on to the UNIX or Linux computer as `root`.  
 
 2.  Use the visudo program to edit the sudo configuration in a vi text editor. Run the following command:  
@@ -97,7 +97,7 @@ You can use the `opsuser` account by using the password and sudo elevation for s
 
 The following procedures create an SSH key for the `opsuser` account that was created in the previous examples.  
 
-#### To generate the SSH key  
+#### Generate the SSH key  
 
 1.  Log on as `opsuser`.  
 
@@ -109,7 +109,7 @@ The following procedures create an SSH key for the `opsuser` account that was cr
 
 The **ssh-keygen** creates the `/home/opsuser/.ssh` directory with the private key file (`id_dsa`) and the public key file (`id_dsa.pub`). You can now configure the key to be supported by `opsuser` as described in the next procedure.  
 
-#### To configure a user account to support the SSH key  
+#### Configure a user account to support the SSH key  
 
 1.  At the command prompt, type the following commands. To navigate to the user account directory:  
 
@@ -133,7 +133,7 @@ The **ssh-keygen** creates the `/home/opsuser/.ssh` directory with the private k
 
 You can now copy the private SSH key to the Windows\-based computer, as described in the next procedure.  
 
-#### To copy the private SSH key to the Windows\-based computer and save in OpenSSH format  
+#### Copy the private SSH key to the Windows\-based computer and save in OpenSSH format
 
 1.  Use a tool, such as WinSCP, to transfer the private key file (`id_dsa` - with no extension) from the UNIX or Linux computer to a directory on your Windows-based computer.  
 
