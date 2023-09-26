@@ -774,7 +774,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 10. To get the GPO (Group Policy Object) report from the domain and check for overriding policies on the local Administrators group, run the following command:
 
       ```xml
-       $gpoReport = Get-GPOReport -All -ReportType Xml -Domain <domain name>
+       [XML]$gpoReport = Get-GPOReport -All -ReportType Xml -Domain <domain name>
        foreach ($GPO in $gpoReport.GPOS.GPO) {
        # Check if the GPO links to the entire domain, or the input OU if provided
        if (($GPO.LinksTo.SOMPath -eq $domainName) -or ($GPO.LinksTo.SOMPath -eq $ouPathCN)) {
