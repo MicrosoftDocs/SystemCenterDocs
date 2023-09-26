@@ -785,16 +785,16 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
                if (($GroupPolicy.groupName -eq "Administrators (built-in)") -and (($GroupPolicy.RemoveUsers -eq 1) -or ($GroupPolicy.RemoveGroups -eq 1))) {
                 $overridingPolicyFound = $true
                 $overridingPolicyName = $GPO.Name
+                   }
                }
            }
        }
-   }
-   if($overridingPolicyFound) {
-    Write-Warning "Validation failed. A group policy in your domain (name: $overridingPolicyName) is overriding the local Administrators group on this machine. This will cause SCOM MI installation to fail. Please ensure that the OU for SCOM MI Management Servers is not affected by this policy"
-   }
-   else {
-    Write-Output "Validation suceeded. No group policy found in your domain which overrides local Administrators. "
-   }
+       if($overridingPolicyFound) {
+       - Write-Warning "Validation failed. A group policy in your domain (name: $overridingPolicyName) is overriding the local Administrators group on this machine. This will cause SCOM MI installation to fail. Please ensure that the OU for SCOM MI Management Servers is not affected by this policy"
+       }
+       else {
+        Write-Output "Validation suceeded. No group policy found in your domain which overrides local Administrators. "
+       }
       ```
 
 If the script execution gives a warning as **Validation Failed**, then there is policy (name as in the warning message) that overrides local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
