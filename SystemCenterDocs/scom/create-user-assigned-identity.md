@@ -24,10 +24,9 @@ This article describes how to create a user-assigned identity, provide admin acc
 
 The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory authentication. For SCOM Managed Instance (preview), a managed identity replaces the traditional four System Center Operations Manager service accounts. It's used to access the Azure SQL Managed Instance database. It's also used to access the key vault.
 
-Before you create a MSI:
-
-- Ensure that you're a contributor in the subscription where you create the MSI.
-- The MSI must have admin permission on SQL Managed Instance and read permission on the key vault that you use to store the domain account credentials.
+> [!NOTE]
+> - Ensure that you're a contributor in the subscription where you create the MSI.
+> - The MSI must have admin permission on SQL Managed Instance and read permission on the key vault that you use to store the domain account credentials.
 
 1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Managed Identities**.
 

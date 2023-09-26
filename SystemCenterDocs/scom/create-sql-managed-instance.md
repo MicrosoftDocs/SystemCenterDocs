@@ -49,7 +49,8 @@ We recommend the following settings for creating a SQL managed instance:
 
 For the rest of the settings on the other tabs, you can leave them as default or change them according to your requirements.
 
-Creation of a new SQL managed instance can take up to six hours.
+> [!NOTE]
+> Creation of a new SQL managed instance can take up to six hours.
 
 After you create a SQL managed instance, you need to provide permission to the SCOM Managed Instance (preview) resource provider to access the SQL managed instance properties.
 
