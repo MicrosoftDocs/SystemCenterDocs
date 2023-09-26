@@ -798,4 +798,4 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
               }
       ```
       
-      If the script execution gives warning **Validation Failed**, then there is policy (name in the warning message) overriding local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
+      If the script execution gives a warning as **Validation Failed**, then there is policy (name as in the warning message) that overrides local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
