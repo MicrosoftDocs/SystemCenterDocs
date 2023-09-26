@@ -790,7 +790,7 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
            }
        }
        if($overridingPolicyFound) {
-       - Write-Warning "Validation failed. A group policy in your domain (name: $overridingPolicyName) is overriding the local Administrators group on this machine. This will cause SCOM MI installation to fail. Please ensure that the OU for SCOM MI Management Servers is not affected by this policy"
+        Write-Warning "Validation failed. A group policy in your domain (name: $overridingPolicyName) is overriding the local Administrators group on this machine. This will cause SCOM MI installation to fail. Please ensure that the OU for SCOM MI Management Servers is not affected by this policy"
        }
        else {
         Write-Output "Validation suceeded. No group policy found in your domain which overrides local Administrators. "
