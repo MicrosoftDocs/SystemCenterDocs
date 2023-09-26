@@ -796,5 +796,5 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
     Write-Output "Validation suceeded. No group policy found in your domain which overrides local Administrators. "
    }
       ```
-      
-      If the script execution gives a warning as **Validation Failed**, then there is policy (name as in the warning message) that overrides local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
+
+If the script execution gives a warning as **Validation Failed**, then there is policy (name as in the warning message) that overrides local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
