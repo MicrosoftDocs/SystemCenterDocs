@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/17/2023
+ms.date: 09/26/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -774,22 +774,27 @@ Set-ADServiceAccount -Identity <domain gMSA> -ServicePrincipalNames <set of SPNs
 10. To get the GPO (Group Policy Object) report from the domain and check for overriding policies on the local Administrators group, run the following command:
 
       ```powershell
-      $gpoReport = Get-GPOReport -All -ReportType Xml -Domain <domain name>
-      foreach ($GPO in $gpoReport.GPOS.GPO) {
-      # Check if the GPO links to the entire domain, or the input OU if provided
-      if (($GPO.LinksTo.SOMPath -eq $domainName) -or ($GPO.LinksTo.SOMPath -eq $ouPathCN)) {
-        # Check if there is a policy overriding the Local Users and Groups
-        if ($GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group) {
-            $GroupPolicy = $GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group | Select-Object @{Name='RemoveUsers';Expression={$_.Properties.deleteAllUsers}},@{Name='RemoveGroups';Expression={$_.Properties.deleteAllGroups}},@{Name='GroupName';Expression={$_.Properties.groupName}}
-            # Check if the policy is acting on the BUILTIN\Administrators group, and whether it is removing other users or groups
-            if (($GroupPolicy.groupName -eq "Administrators (built-in)") -and (($GroupPolicy.RemoveUsers -eq 1) -or ($GroupPolicy.RemoveGroups -eq 1))) {
+       [xml]$gpoReport = Get-GPOReport -All -ReportType Xml -Domain <domain name>
+       foreach ($GPO in $gpoReport.GPOS.GPO) {
+           # Check if the GPO links to the entire domain, or the input OU if provided
+           if (($GPO.LinksTo.SOMPath -eq $domainName) -or ($GPO.LinksTo.SOMPath -eq $ouPathCN)) {
+               # Check if there is a policy overriding the Local Users and Groups
+               if ($GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group) {
+               $GroupPolicy = $GPO.Computer.ExtensionData.Extension.LocalUsersAndGroups.Group | Select-Object @{Name='RemoveUsers';Expression={$_.Properties.deleteAllUsers}},@{Name='RemoveGroups';Expression={$_.Properties.deleteAllGroups}},@{Name='GroupName';Expression={$_.Properties.groupName}}
+               # Check if the policy is acting on the BUILTIN\Administrators group, and whether it is removing other users or groups
+               if (($GroupPolicy.groupName -eq "Administrators (built-in)") -and (($GroupPolicy.RemoveUsers -eq 1) -or ($GroupPolicy.RemoveGroups -eq 1))) {
                 $overridingPolicyFound = $true
                 $overridingPolicyName = $GPO.Name
                    }
                }
-            }
-        }
-
+           }
+       }
+       if($overridingPolicyFound) {
+       - Write-Warning "Validation failed. A group policy in your domain (name: $overridingPolicyName) is overriding the local Administrators group on this machine. This will cause SCOM MI installation to fail. Please ensure that the OU for SCOM MI Management Servers is not affected by this policy"
+       }
+       else {
+        Write-Output "Validation suceeded. No group policy found in your domain which overrides local Administrators. "
+       }
       ```
 
-      If `$overridingPolicy` is found **True**, then there is policy with name in variable **$overridingPolicyName** overriding local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
+If the script execution gives a warning as **Validation Failed**, then there is policy (name as in the warning message) that overrides local administrator group. Check with active directory administrator and exclude the System Center Operations Manager management server from the policy.
