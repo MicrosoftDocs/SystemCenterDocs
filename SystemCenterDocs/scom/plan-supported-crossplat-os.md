@@ -198,7 +198,7 @@ Supported versions:
 - Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
 
 >[!Note]
-> Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
+>- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -356,7 +356,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker range="sc-om-2016"
 >[!NOTE]
-> Solaris zone-level monitoring isn't supported.
+>- Solaris zone-level monitoring isn't supported.
 ::: moniker-end
 
 ::: moniker range="<=sc-om-1807"
