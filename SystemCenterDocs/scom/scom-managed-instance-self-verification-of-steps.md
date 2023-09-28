@@ -24,7 +24,7 @@ After you set up the required parameters, run the self-validation tool. Based on
 
 Many customers benefit from this tool because it saves time that would otherwise be spent troubleshooting issues with parameters later on. We recommend running this tool before deployment to avoid spending excessive time diagnosing and troubleshooting on-premises parameters in the future.
 
-In the process of SCOM Managed Instance creation, three primary personas are involved. The following flow is typical of how the Operations Manager admin sets up the steps in enterprise organizations:
+In the process of creating an instance of SCOM Managed Instance, three primary personas are involved. The following flow is typical of how the Operations Manager admin sets up the steps in enterprise organizations:
 
 1. The Operations Manager admin initiates communication with the Active Directory admin to configure all the Active Directory-related settings.
 
@@ -36,7 +36,7 @@ If the Operations Manager admin plays all three roles, they can independently ha
 
 With the steps provided for each persona to validate the parameters, we aim to streamline the process of setting up the parameters to reduce the time required for creating the SCOM managed instance.
 
-By empowering each persona to verify their respective parameters, we can expedite the overall setup process and achieve faster SCOM Managed Instance deployment.
+By empowering each persona to verify their respective parameters, we can expedite the overall setup process and achieve faster SCOM managed instance deployment.
 
 ## Operations Manager admin self-verification of steps
 
@@ -54,13 +54,13 @@ Follow these steps to run the validation script:
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot that shows the DNS server IP.":::
 
 1. Download the validation script to the test VM and extract. It consists of five files:
-     - Readme.txt
-     - ScomValidation.ps1
-     - RunValidationAsSCOMAdmin.ps1
-     - RunValidationAsActiveDirectoryAdmin.ps1
-     - RunValidationAsNetworkAdmin.ps1
+     - `Readme.txt`
+     - `ScomValidation.ps1`
+     - `RunValidationAsSCOMAdmin.ps1`
+     - `RunValidationAsActiveDirectoryAdmin.ps1`
+     - `RunValidationAsNetworkAdmin.ps1`
 
-1. Follow the steps mentioned in the Readme.txt file to run `RunValidationAsSCOMAdmin.ps1`. Make sure to fill in the settings value in `RunValidationAsSCOMAdmin.ps1` with applicable values before you run it.
+1. Follow the steps mentioned in the `Readme.txt` file to run `RunValidationAsSCOMAdmin.ps1`. Make sure to fill in the settings value in `RunValidationAsSCOMAdmin.ps1` with applicable values before you run it.
 
    ```powershell
    # $settings = @{
@@ -94,7 +94,7 @@ Follow these steps to run the validation script:
    }
    ```
 
-1. In general, `RunValidationAsSCOMAdmin.ps1` runs all the validations. If you want to run a specific check, open `ScomValidation.ps1` and comment all other checks, which are at the end of the file. You can also add a break point in the specific check to debug the check and understand the issues better.
+1. In general, `RunValidationAsSCOMAdmin.ps1` runs all the validations. If you want to run a specific check, open `ScomValidation.ps1` and comment all other checks, which are at the end of the file. You can also add a breakpoint in the specific check to debug the check and understand the issues better.
 
    ```powershell
 	    # Default mode is - SCOMAdmin, by default if mode is not passed then it will run all the validations 
@@ -134,10 +134,10 @@ Follow these steps to run the validation script:
     }
    ```
 
-> [!NOTE]
-> Operations Manager admin validations include a check for any GPO policies overriding the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
+   > [!NOTE]
+   > Operations Manager admin validations include a check for any GPO policies that override the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
 
-1. The validation script displays all the validation checks and their respective errors, which helps in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with a break point, which can speed up the debugging process.
+1. The validation script displays all the validation checks and their respective errors, which helps in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, return to the onboarding page and start the onboarding process.
 
@@ -149,18 +149,18 @@ Performing Active Directory admin self-verification is an optional step. We prov
 
 Follow these steps to run the validation script:
 
-1. Generate a new VM running on Windows Server 2022 or 2019 within the chosen subnet for the SCOM managed instance creation. Sign in to the VM and configure its DNS server to use the same DNS server IP that you plan to use during the creation of the SCOM managed instance. If the test VM is already created by Operations Manager admin, then use the test VM. For example, see the following to set the DNS server IP:
+1. Generate a new VM running on Windows Server 2022 or 2019 within the chosen subnet for the SCOM managed instance creation. Sign in to the VM and configure its DNS server to use the same DNS server IP that you plan to use during the creation of the SCOM managed instance. If the test VM is already created by Operations Manager admin, then use the test VM. For example, see the following screenshot to set the DNS server IP.
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot that shows the DNS server IP.":::
 
 1. Download the validation script to the test VM and extract. It consists of five files:
-     - Readme.txt
-     - ScomValidation.ps1
-     - RunValidationAsSCOMAdmin.ps1
-     - RunValidationAsActiveDirectoryAdmin.ps1
-     - RunValidationAsNetworkAdmin.ps1
+     - `Readme.txt`
+     - `ScomValidation.ps1`
+     - `RunValidationAsSCOMAdmin.ps1`
+     - `RunValidationAsActiveDirectoryAdmin.ps1`
+     - `RunValidationAsNetworkAdmin.ps1`
 
-1. Follow the steps mentioned in the Readme.txt file to run `RunValidationAsActiveDirectoryAdmin.ps1`. Make sure to fill in the settings value in `RunValidationAsActiveDirectoryAdmin.ps1` with applicable values before you run it.
+1. Follow the steps mentioned in the `Readme.txt` file to run `RunValidationAsActiveDirectoryAdmin.ps1`. Make sure to fill in the settings value in `RunValidationAsActiveDirectoryAdmin.ps1` with applicable values before you run it.
 
    ```powershell
    # $settings = @{
@@ -192,7 +192,7 @@ Follow these steps to run the validation script:
    }
    ```
 
-1. In general, `RunValidationAsActiveDirectoryAdmin.ps1` runs all the validations. If you want to run a specific check, open `ScomValidation.ps1` and comment all other checks, which are under Active Directory admin checks. You can also add a break point in the specific check to debug the check and understand the issues better.
+1. In general, `RunValidationAsActiveDirectoryAdmin.ps1` runs all the validations. If you want to run a specific check, open `ScomValidation.ps1` and comment all other checks, which are under Active Directory admin checks. You can also add a breakpoint in the specific check to debug the check and understand the issues better.
 
    ```powershell
    # Mode is AD admin then following validations/test will be performed
@@ -228,10 +228,10 @@ Follow these steps to run the validation script:
    }
    ```
 
-> [!NOTE]
-> Active Directory admin validations include a check for any GPO policies overriding the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
+   > [!NOTE]
+   > Active Directory admin validations include a check for any GPO policies that override the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
 
-1. The validation script displays all the validation checks and their respective errors, which will help in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a break point, which can speed up the debugging process.
+1. The validation script displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, there are no issues with the Active Directory parameters.
 
@@ -248,13 +248,13 @@ Follow these steps to run the validation script:
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot of the DNS server IP.":::
 
 1. Download the validation script to the test VM and extract. It consists of five files:
-     - Readme.txt
-     - ScomValidation.ps1
-     - RunValidationAsSCOMAdmin.ps1
-     - RunValidationAsActiveDirectoryAdmin.ps1
-     - RunValidationAsNetworkAdmin.ps1
+     - `Readme.txt`
+     - `ScomValidation.ps1`
+     - `RunValidationAsSCOMAdmin.ps1`
+     - `RunValidationAsActiveDirectoryAdmin.ps1`
+     - `RunValidationAsNetworkAdmin.ps1`
 
-1. Follow the steps mentioned in the Readme.txt file to run `RunValidationAsNetworkAdmin.ps1`. Make sure to fill in the settings value in `RunValidationAsNetworkAdmin.ps1` with applicable values before you run it.
+1. Follow the steps mentioned in the `Readme.txt` file to run `RunValidationAsNetworkAdmin.ps1`. Make sure to fill in the settings value in `RunValidationAsNetworkAdmin.ps1` with applicable values before you run it.
 
    ```powershell
    # $settings = @{
@@ -274,7 +274,7 @@ Follow these steps to run the validation script:
    }
    ```
 
-1. In general, `RunValidationAsNetworkAdmin.ps1` runs all the validations related to network configuration. If you want to run a specific check, open `ScomValidation.ps1` and comment all other checks, which are under network admin checks. You can also add a break point in the specific check to debug the check and understand the issues better.
+1. In general, `RunValidationAsNetworkAdmin.ps1` runs all the validations related to network configuration. If you want to run a specific check, open `ScomValidation.ps1` and comment all other checks, which are under network admin checks. You can also add a breakpoint in the specific check to debug the check and understand the issues better.
 
    ```powershell
 	       # Mode is Network admin then following validations/test will be performed
@@ -296,7 +296,7 @@ Follow these steps to run the validation script:
        }
    ```
 
-1. The validation script displays all the validation checks and their respective errors, which will help resolve validation issues. For fast resolution, run the script in PowerShell ISE with a break point, which can speed up the debugging process.
+1. The validation script displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, there are no issues with the network configuration.
 
