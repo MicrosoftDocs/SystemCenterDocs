@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/30/2023
+ms.date: 09/28/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -69,7 +69,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker range="sc-om-2022"
 >[!NOTE]
-> Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022.
+>- Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022.
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -220,7 +220,7 @@ Supported versions:
 - Ubuntu 16.04, 18.04, 20.04, and 22.04
 
 >[!Note]
->Ubuntu 22.04 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
+>- Ubuntu 22.04 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -241,7 +241,7 @@ Supported versions:
 - Red Hat Enterprise Linux (RHEL) Server 8 and 9
 
 >[!Note]
->- RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
+>- RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
 >- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 |Required package|Description|Minimum version|
