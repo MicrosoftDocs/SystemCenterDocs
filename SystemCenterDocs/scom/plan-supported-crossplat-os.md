@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/30/2023
+ms.date: 09/28/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -69,7 +69,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker range="sc-om-2022"
 >[!NOTE]
-> Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022.
+>- Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022.
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -198,7 +198,7 @@ Supported versions:
 - Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
 
 >[!Note]
-> Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
+>- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -220,7 +220,7 @@ Supported versions:
 - Ubuntu 16.04, 18.04, 20.04, and 22.04
 
 >[!Note]
->Ubuntu 22.04 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
+>- Ubuntu 22.04 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -241,7 +241,7 @@ Supported versions:
 - Red Hat Enterprise Linux (RHEL) Server 8 and 9
 
 >[!Note]
->- RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
+>- RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
 >- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 |Required package|Description|Minimum version|
@@ -356,7 +356,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker range="sc-om-2016"
 >[!NOTE]
-> Solaris zone-level monitoring isn't supported.
+>- Solaris zone-level monitoring isn't supported.
 ::: moniker-end
 
 ::: moniker range="<=sc-om-1807"
@@ -475,7 +475,6 @@ CentOS 7 and Oracle Linux 6, 7 are supported.
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
 
-
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
@@ -488,6 +487,5 @@ CentOS 7 and Oracle Linux 7 are supported.
 |glibc|C Standard shared library|2.5-12|  
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
-
 
 ::: moniker-end
