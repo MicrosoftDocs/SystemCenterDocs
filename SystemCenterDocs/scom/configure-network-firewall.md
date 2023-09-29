@@ -22,9 +22,11 @@ This article describes how to configure the network firewall and Azure network s
 
 ## Network prerequisites
 
+This section discusses network prerequisites with three network model examples.
+
 ### Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network of your desired domain controller and the Azure subnet (virtual network) where you want to deploy an instance of SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet in which the SCOM managed instance is deployed.
+Ensure that there's direct network connectivity (line of sight) between the network of your desired domain controller and the Azure subnet (virtual network) where you want to deploy an instance of SCOM Managed Instance (preview). Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet in which the SCOM managed instance is deployed.
 
 Direct connectivity is required so that all your following resources can communicate with each other over the network:
 
@@ -43,7 +45,7 @@ If your domain controller and other component are on-premises, you must establis
 
 The following network model shows where the desired domain controller is situated within the on-premises network. A direct connection exists (via ExpressRoute or VPN) between the on-premises network and the Azure subnet that's used for SCOM managed instance creation.
 
-:::image type="Network model 1" source="media/configure-network-firewall/network-model-1-inline.png" alt-text="Diagram that shows the network model 1 with the domain controller located on-premises." lightbox="media/configure-network-firewall/network-model-1-expanded.png":::
+:::image type="Network model 1" source="media/configure-network-firewall/network-model-1-inline.png" alt-text="Screenshot that shows the network model 1 with the domain controller located on-premises." lightbox="media/configure-network-firewall/network-model-1-expanded.png":::
 
 #### Network model 2: The domain controller is hosted in Azure
 
@@ -51,7 +53,7 @@ In this configuration, the designated domain controller is hosted in Azure, and 
 
 In this model, the desired domain controller remains integrated into your on-premises domain forest. However, you chose to create a dedicated Active Directory controller in Azure to support Azure resources that rely on the on-premises Active Directory infrastructure.
 
-:::image type="Network model 2" source="media/configure-network-firewall/network-model-2-inline.png" alt-text="Diagram that shows the network model 2 with the domain controller hosted in Azure." lightbox="media/configure-network-firewall/network-model-2-expanded.png":::
+:::image type="Network model 2" source="media/configure-network-firewall/network-model-2-inline.png" alt-text="Screenshot that shows the network model 2 with the domain controller hosted in Azure." lightbox="media/configure-network-firewall/network-model-2-expanded.png":::
 
 ### Network model 3: The domain controller and SCOM managed instances are in Azure virtual networks
 
@@ -61,7 +63,7 @@ If the domain controller you want and all other components are in the same virtu
 
 If the domain controller you want and all other components are in different virtual networks of Azure (a conventional active domain controller) with no presence on-premises, you need to do virtual network peering between all the virtual networks that are in your network. For more information, see [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 
-:::image type="Network model 3" source="media/configure-network-firewall/network-model-3-inline.png" alt-text="Diagram that shows the network model 3 with the domain controller and SCOM managed instances in Azure virtual networks." lightbox="media/configure-network-firewall/network-model-3-expanded.png":::
+:::image type="Network model 3" source="media/configure-network-firewall/network-model-3-inline.png" alt-text="Screenshot that shows the network model 3 with the domain controller and SCOM managed instances in Azure virtual networks." lightbox="media/configure-network-firewall/network-model-3-expanded.png":::
 
 Take care of the following issues for all three networking models mentioned earlier:
 
