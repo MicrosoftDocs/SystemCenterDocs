@@ -74,7 +74,7 @@ For detailed information about the requirements for Service Manager components, 
 
 ## Allow updates
 
-To either install or upgrade System Center - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center - Service Manager Setup won't complete and the following error message will appear at the **Create database** stage of the installation:
+To either install or upgrade System Center - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center - Service Manager Setup won't complete and the following error message appears at the **Create database** stage of the installation:
 
 *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role.*
 
@@ -84,7 +84,7 @@ You can check the status of **allow updates** on SQL Server by executing the fol
 sp_configure 'allow updates'
 ```
 
-In the results table, examine the value for "run_value". If the value of "run value" is 1, set it back to 0 with the following stored procedure, and then run Setup again.
+In the results table, examine the value for **run_value**. If the value of **run value** is 1, set it back to 0 with the following stored procedure, and then run Setup again.
 
 ```
 sp_configure 'allow updates',0 reconfigure with override
@@ -98,4 +98,4 @@ For more information about installing Service Manager with AlwaysOn availability
 
 ## Next steps
 
-- To learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions, review [Service Manager editions](sm-editions.md).
+To learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions, review [Service Manager editions](sm-editions.md).

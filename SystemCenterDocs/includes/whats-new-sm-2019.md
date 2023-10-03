@@ -70,5 +70,5 @@ Service Manager UR2 supports SQL Server 2019 with Cumulative Update 8 (CU8) or l
 This support is applicable for Service Manager 2019.
 
 >[!NOTE]
-> - Service Manager 2019 doesn't support SQL 2019 RTM, supports SQL 2019 with CU8 or later.
+> - Service Manager 2019 doesn't support SQL 2019 RTM, and supports SQL 2019 with CU8 or later.
 > - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.

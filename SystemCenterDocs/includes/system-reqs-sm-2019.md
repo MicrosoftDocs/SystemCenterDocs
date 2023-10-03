@@ -101,7 +101,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
 ### Allow updates
 
- To either install or upgrade System Center 2019 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2019 - Service Manager Setup won't complete and the following error message will appear at the **Create database** stage of the installation:
+ To either install or upgrade System Center 2019 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2019 - Service Manager Setup won't complete and the following error message appears at the **Create database** stage of the installation:
 
  *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry the upgrade for this role.*
 
@@ -111,7 +111,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
  sp_configure 'allow updates'
  ```
 
- In the results table, examine the value for "run_value". If the value of "run value" is 1, set it back to 0 with the following stored procedure, and then run Setup again.
+ In the results table, examine the value for **run_value**. If the value of **run value** is 1, set it back to 0 with the following stored procedure, and then run Setup again.
 
  ```
  sp_configure 'allow updates',0 reconfigure with override
