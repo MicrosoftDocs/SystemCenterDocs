@@ -7,7 +7,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod:  system-center
 keywords:  
-ms.date: 05/10/2021
+ms.date: 10/03/2023
 ms.technology:  service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
@@ -25,7 +25,7 @@ Service Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later
 
 >[!NOTE]
 > - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
 
 
 ##	Improvement in Active Directory Connector
@@ -71,4 +71,4 @@ This support is applicable for Service Manager 2019.
 
 >[!NOTE]
 > - Service Manager 2019 doesn't support SQL 2019 RTM, supports SQL 2019 with CU8 or later.
-> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.

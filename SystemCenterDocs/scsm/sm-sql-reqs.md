@@ -7,7 +7,7 @@ ms.author: jsuri
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 08/23/2023
+ms.date: 10/03/2023
 ms.technology: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 monikerRange:  sc-sm-2016 || sc-sm-2019 || sc-sm-2022
@@ -52,7 +52,7 @@ For detailed information about the requirements for Service Manager components, 
 
 >[!NOTE]
 > - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 ::: moniker-end
@@ -66,7 +66,7 @@ For detailed information about the requirements for Service Manager components, 
 | **SQL Server 2022**                                     | Yes                                                       |
 
 >[!NOTE]
-> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 
