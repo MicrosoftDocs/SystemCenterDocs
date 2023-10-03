@@ -23,7 +23,8 @@ For more information about deploying SCOM Managed Instance (preview), play the f
 
 > [!VIDEO https://www.youtube.com/embed/urxiQBkObkU]
 
-In this preview of the service, you can create an instance only in the West Europe and West US regions.
+>[!NOTE]
+>In this preview of the service, you can create an instance only in the **West Europe** and **West US** regions.
 
 ## Create a SCOM managed instance
 
