@@ -32,7 +32,7 @@ Create a domain account in your Active Directory instance. The domain account is
 
 Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain. You can use an existing domain account if it has these permissions.
 
-You use the configured domain account in later steps to create a instance of SCOM Managed Instance and subsequent steps.
+You use the configured domain account in later steps to create an instance of SCOM Managed Instance and subsequent steps.
 
 ### Create and configure a computer group
 
