@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Azure Monitor SCOM Managed Instance (preview) self-verification of steps
 
-This article describes the self-verification processes of the Operations Manager admin, Active Directory admin, and the network admin.
+This article describes the self-verification processes of the Operations Manager admin, Active Directory admin, and network admin.
 
 > [!NOTE]
 > To learn about the Azure Monitor SCOM Managed Instance (preview) architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
