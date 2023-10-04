@@ -2,9 +2,9 @@
 ms.assetid: 504be106-2b97-4a06-be11-7edef683359a
 title: Windows Service template in Operations Manager management pack
 description: This article provides an overview of windows service template
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center
