@@ -49,8 +49,8 @@ To integrate SCOM Managed Instance with Log Analytics, follow these steps:
          - **Subscription**: Select the desired subscription.
          - **Log Analytics workspace**: Select the desired Log Analytics workspace.
 
-         >[!NOTE]
-         >Ensure to provide Log Analytics Contributor permissions on the resource group.  
+             >[!NOTE]
+             >Ensure to provide Log Analytics Contributor permissions on the resource group.  
 
      2. **Log data types**:
          - **Data types**: Select the desired date type.  
