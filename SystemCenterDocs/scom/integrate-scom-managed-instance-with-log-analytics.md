@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 The integration of Azure Monitor SCOM Managed Instance with Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a defined frequency, enabling retention and advanced user actions such as visualization and reporting.
 
-Synchronization of SCOM Managed Instance monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
+Synchronization of SCOM Managed Instance attached workload's monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
 
 ## General guidelines
 
@@ -27,13 +27,13 @@ Following are the general guidelines for the location and existence of LA worksp
 
 - To reduce management (RBAC, policies, NSG) activities, we recommend that you keep SCOM Managed Instance and LA workspace in the same subscription and resource group.
 
-- To reduce onboarding failures on LA integration, the SCOM Managed Instance creation prerequisite script checks if you have the permission to create LA workspace on Azure (Microsoft.Resources/deployments/*, Microsoft.OperationalInsights/workspaces/*). For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
+- To onboard Azure Log Analytics workspace to SCOM Managed Instance, you must have right level of permissions, atleast **Log Analytics Contributor**. You must assign **Log Analytics Contributor** permissions on the resource group of the workspace to **Microsoft.SCOM Resource Provider**.For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
 
 ## Permissions required
 
 To set up LA integration, the minimum privilege required is **Log Analytics Contributor** or **Monitoring Contributor at Resource Group scope**.
 
-**Data synchronized to Log Analytics workspace**
+**Data types synchronized to Log Analytics workspace**
 
 The prioritized list of SCOM Managed Instance monitored data that synchronizes to LA workspace are  
 
