@@ -1,9 +1,9 @@
 ---
 title: How to install an Operations Manager management server
 description: This article describes how to install an Operations Manager management server.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.reviewer: randolphwest
 ms.date: 07/20/2023
 ms.prod: system-center
