@@ -56,7 +56,7 @@ To integrate SCOM Managed Instance with Log Analytics, follow these steps:
          - **Data types**: Select the desired date type.  
 
      3. **Historic data**:
-         - **Enable historic data for last 7 days**: Select this checkbox if you wish to enable the last 7 days of historic data.
+         - **Enable historic data for last 7 days**: Select this checkbox if you wish to enable the last seven days of historic data.
 
 7. Select **Save**.
 

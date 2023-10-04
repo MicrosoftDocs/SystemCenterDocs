@@ -44,6 +44,6 @@ The prioritized list of SCOM Managed Instance monitored data that synchronizes t
 
 ## Data Retention in Log Analytics
 
-The retention policy application on Log Analytic workspace is default value, which is 30 days. Azure Monitor SCOM managed instance does not change this value. For more information on Data retention, see [Data retention and archive in Azure Monitor Logs](/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2)
+The retention policy application on Log Analytic workspace is default value, which is 30 days. Azure Monitor SCOM managed instance doesn't change this value. For more information on Data retention, see [Data retention and archive in Azure Monitor Logs](/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2)
 
 :::image type="Data retention" source="media/integrate-scom-managed-instance-with-log-analytics/data-retention.png" alt-text="Screenshot that shows about Data retention.":::
