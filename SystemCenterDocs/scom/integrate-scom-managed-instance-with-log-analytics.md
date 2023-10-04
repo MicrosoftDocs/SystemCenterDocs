@@ -27,7 +27,7 @@ Following are the general guidelines for the location and existence of LA worksp
 
 - To reduce management (RBAC, policies, NSG) activities, we recommend that you keep SCOM Managed Instance and LA workspace in the same subscription and resource group.
 
-- To onboard Azure Log Analytics workspace to SCOM Managed Instance, you must have right level of permissions, atleast **Log Analytics Contributor**. You must assign **Log Analytics Contributor** permissions on the resource group of the workspace to **Microsoft.SCOM Resource Provider**.For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
+- To onboard Azure Log Analytics workspace to SCOM Managed Instance, you must have right level of permissions, atleast **Log Analytics Contributor**. You must assign **Log Analytics Contributor** permissions on the resource group of the workspace to **Microsoft.SCOM Resource Provider**. For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
 
 ## Permissions required
 
