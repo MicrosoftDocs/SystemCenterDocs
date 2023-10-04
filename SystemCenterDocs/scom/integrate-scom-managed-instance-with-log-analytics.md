@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Integrate Azure Monitor SCOM Managed Instance (preview) with Log Analytics
 
-The integration of Azure Monitor SCOM Managed Instance with Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a defined frequency, enabling retention and advanced user actions.
+The integration of Azure Monitor SCOM Managed Instance with Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a defined frequency, enabling retention and advanced user actions such as visualization and reporting.
 
 Synchronization of SCOM Managed Instance monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
 
@@ -35,12 +35,12 @@ To set up LA integration, the minimum privilege required is **Log Analytics Cont
 
 **Data synchronized to Log Analytics workspace**
 
-The prioritized list of SCOM Managed Instance monitored data that synchronizes to LA workspace is  
+The prioritized list of SCOM Managed Instance monitored data that synchronizes to LA workspace are  
 
-- **EVENT**: Queries the event logs and displays events that are based on criteria specified in the event view properties.
-- **STATE**: Displays relationships between components, computers, and computer groups.
-- **PERFORMANCE**: Allows you to customize how you want to view performance data collected from performance objects and counters.
-- **AUDIT**: 
+- **EVENT**: Table consists of Event log data collected by management pack rules and monitors.
+- **STATE**: Table consists of current and past health states of monitored resources.
+- **PERFORMANCE**: Table consists of Performance metric data collected by management pack rules and monitors.
+- **AUDIT**: Table consists of management pack related audit (change tracking) data.
 
 ## Data Retention in Log Analytics
 
