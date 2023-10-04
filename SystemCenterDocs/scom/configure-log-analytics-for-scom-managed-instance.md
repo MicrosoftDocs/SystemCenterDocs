@@ -21,7 +21,7 @@ Before you configure Log Analytics workspace for SCOM managed instance, create a
 
 ## Prerequisites
 
-Ensure to provide Log Analytics Contributor permissions on the Log Analytics workspace's resource group for Microsoft.SCOM Resource Provider (RP).
+Ensure to provide Log Analytics Contributor permissions on the Log Analytics workspace's resource group for *Microsoft.SCOM* Resource Provider (RP).
 
 To provide the permissions, follow these steps:
 
@@ -71,7 +71,7 @@ To view the integrated logs, follow these steps:
 2. On the **Overview** page, select **Logs**.
    On the Query page, under **Custom Logs**, SCOM Managed Instance related data tables such as State, Performance, Event, and Management pack (ending with CL) are created.
 
-3. Select the desired custom table (State, Performance, Event and Management pack) and select Run to view the results.
+3. Select the desired custom table (State, Performance, Event and Management pack) and select **Run** to view the results.
 
 Optionally, you can create a new workbook, query the data from this LA workspace, and visualize the monitored data.
 
