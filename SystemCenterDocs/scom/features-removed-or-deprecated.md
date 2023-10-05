@@ -1,9 +1,9 @@
 ---
 title: Features removed or deprecated in System Center
 description: This article lists the features and functionality that have been removed or replaced in System Center Operations Manager 1801.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
 ms.custom: UpdateFrequency5, engagement-fy24
 ms.prod: system-center

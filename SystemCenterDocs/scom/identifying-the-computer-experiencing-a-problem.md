@@ -1,10 +1,10 @@
 ---
 title: Identifying the Computer Experiencing a Problem
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 description: This topic describes how to identify particular computers in your environment that have triggered an alert.
 ms.date: 08/29/2016
-ms.author: jsuri
 ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager

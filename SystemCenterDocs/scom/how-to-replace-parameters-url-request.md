@@ -2,9 +2,9 @@
 ms.assetid: 79cdd322-909b-4159-a189-d9e3a68ad681
 title: How to replace parameters in a URL request in Operations Manager management pack
 description: This article provides an overview about how to replace parameters in a URL request
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/19/2023
 ms.custom: engagement-fy23
 ms.prod: system-center
