@@ -5,7 +5,7 @@ description: This article details about the Integration of Azure Monitor SCOM Ma
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: mkluck
-ms.date: 10/04/2023
+ms.date: 10/05/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -27,7 +27,7 @@ Following are the general guidelines for the location and existence of LA worksp
 
 - To reduce management (RBAC, policies, NSG) activities, we recommend that you keep SCOM Managed Instance and LA workspace in the same subscription and resource group.
 
-- To onboard Azure Log Analytics workspace to SCOM Managed Instance, you must have right level of permissions, atleast **Log Analytics Contributor**. You must assign **Log Analytics Contributor** permissions on the resource group of the workspace to **Microsoft.SCOM Resource Provider**. For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
+- To onboard Azure Log Analytics workspace to SCOM Managed Instance, you must have required level of permissions, at least **Log Analytics Contributor**. You must assign **Log Analytics Contributor** permissions on the resource group of the workspace to **Microsoft.SCOM Resource Provider**. For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
 
 ## Permissions required
 

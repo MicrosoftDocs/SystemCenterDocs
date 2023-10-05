@@ -5,7 +5,7 @@ description: This article describes how to configure Azure Monitor SCOM Managed 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: mkluck
-ms.date: 10/04/2023
+ms.date: 10/05/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
