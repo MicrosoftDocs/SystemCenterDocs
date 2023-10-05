@@ -67,6 +67,15 @@ This article summarizes some of the common support information you might need wh
 
 ::: moniker-end
 
+::: moniker range="<=sc-dpm-2022"
+
+### Performing item level recovery from Disk to Tape (D2T) for a Hyper-V VM fails with error 1001 
+**Issue**: Item level recovery from tape for Hyper-V VM is not supported for the Disk to Tape (D2T) configuration for DPM 2016 to 2022.
+
+**Workaround**: Restore the Hyper-V VM as a folder or configure Disk To Disk To Tape (D2D2T) for the VM.
+
+::: moniker-end
+
 ### DPM doesn't run on the Turkish language version of Windows Server operating systems
 **Issue**: No language support
 
