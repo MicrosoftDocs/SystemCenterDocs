@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Configure Log Analytics for Azure Monitor SCOM Managed Instance
-description: This article describes how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
+description: This article details about the Integration of Azure Monitor SCOM Managed Instance (preview) with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: mkluck
@@ -15,11 +15,46 @@ monikerRange: '>=sc-om-2019'
 
 # Configure Log Analytics for Azure Monitor SCOM Managed Instance
 
-This article describes how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
+The integration of Azure Monitor SCOM Managed Instance with Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a defined frequency, enabling retention and advanced user actions such as visualization and reporting.
+
+Synchronization of SCOM Managed Instance attached workload's monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
+
+This article details about the Integration of Azure Monitor SCOM Managed Instance (preview) with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
 
 Before you configure Log Analytics workspace for SCOM managed instance, create a Log Analytics workspace. For more information on how to create Log Analytics workspace, see [Create a Log Analytics workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 
-## Prerequisites
+## General guidelines
+
+Following are the general guidelines for the location and existence of LA workspaces and SCOM Managed Instance:
+
+- To reduce latency in data synchronization, we recommend that you keep the SCOM Managed Instance and LA workspace in the same region.
+
+- To reduce management (RBAC, policies, NSG) activities, we recommend that you keep SCOM Managed Instance and LA workspace in the same subscription and resource group.
+
+- To onboard Azure Log Analytics workspace to SCOM Managed Instance, you must have required level of permissions, at least **Log Analytics Contributor**. You must assign **Log Analytics Contributor** permissions on the resource group of the workspace to **Microsoft.SCOM Resource Provider**. For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
+
+### Permissions required
+
+To set up LA integration, the minimum privilege required is **Log Analytics Contributor** or **Monitoring Contributor at Resource Group scope**.
+
+## Data types synchronized to Log Analytics workspace
+
+The prioritized list of SCOM Managed Instance monitored data that synchronizes to LA workspace are  
+
+- **EVENT**: Table consists of Event log data collected by management pack rules and monitors.
+- **STATE**: Table consists of current and past health states of monitored resources.
+- **PERFORMANCE**: Table consists of Performance metric data collected by management pack rules and monitors.
+- **AUDIT**: Table consists of management pack related audit (change tracking) data.
+
+## Data Retention in Log Analytics
+
+The retention policy application on Log Analytic workspace is default value, which is 30 days. Azure Monitor SCOM managed instance doesn't change this value. For more information on Data retention, see [Data retention and archive in Azure Monitor Logs](/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2)
+
+:::image type="Data retention" source="media/configure-log-analytics-for-scom-managed-instance/data-retention.png" alt-text="Screenshot that shows about Data retention.":::
+
+## Configure Log Analytics Workspace for SCOM managed instance
+
+### Prerequisites
 
 Ensure to provide Log Analytics Contributor permissions on the Log Analytics workspace's resource group for *Microsoft.SCOM* Resource Provider (RP).
 
@@ -29,9 +64,9 @@ To provide the permissions, follow these steps:
 
 2. Search for **Microsoft.SCOM Resource provider** and select **Assign**.
 
-## Configure Log Analytics Workspace for SCOM Managed Instance
+### Integrate SCOM Managed Instance with Log Analytics
 
-To integrate SCOM Managed Instance with Log Analytics, follow these steps: 
+To integrate SCOM Managed Instance with Log Analytics, follow these steps:
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home). Search for and select **SCOM Managed Instance**.
 
