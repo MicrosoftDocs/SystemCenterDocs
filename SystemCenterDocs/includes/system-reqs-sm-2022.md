@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/25/2022
+ms.date: 10/04/2023
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -87,7 +87,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 > - SM  doesn’t support SSAS mode *Tabular*. Select the SSAS mode as *Multi-dimensional* during the installation of SQL Server.
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 > - Service Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-> - With SQL 2019 (CU8 or later), use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> - With SQL 2019 (CU8 or later), use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
 
 
 |**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**|
@@ -101,7 +101,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
 ### Allow updates
 
- To either install or upgrade to System Center 2022 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2022 - Service Manager Setup won't complete and the following error message will appear at the **Create database** stage of the installation:
+ To either install or upgrade to System Center 2022 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2022 - Service Manager Setup won't complete and the following error message appears at the **Create database** stage of the installation:
 
  *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry the upgrade for this role.*
 
@@ -111,7 +111,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
  sp_configure 'allow updates'
  ```
 
- In the results table, examine the value for "run_value". If the value of "run value" is 1, set it back to 0 with the following stored procedure, and then run Setup again.
+ In the results table, examine the value for **run_value**. If the value of **run value** is 1, set it back to 0 with the following stored procedure, and then run Setup again.
 
  ```
  sp_configure 'allow updates',0 reconfigure with override
@@ -145,7 +145,7 @@ The following steps provide information about upgrading to SQL 2019.
 
  > [!NOTE]  
  > - You must use Cumulative Update 8 (CU8) or later with SQL 2019.
- > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+ > - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
  > - Upgrade process to SQL 2019 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
 
  **Use the following steps to upgrade from SQL 2017 to 2019**:
