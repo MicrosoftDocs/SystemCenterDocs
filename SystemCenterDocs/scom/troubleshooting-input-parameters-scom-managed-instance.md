@@ -2,9 +2,9 @@
 ms.assetid: 
 title: Troubleshoot commonly encountered errors while validating input parameters
 description: This article describes the errors that might occur while validating input parameters and how to resolve them.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center

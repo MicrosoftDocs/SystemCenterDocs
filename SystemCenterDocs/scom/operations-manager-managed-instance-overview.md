@@ -2,8 +2,8 @@
 ms.assetid: 
 title: About Azure Monitor SCOM Managed Instance (preview)
 description: This article describes about Azure Monitor SCOM Managed Instance (preview).
-author: Farha-Bano
-ms.author: v-farhabano
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
 ms.date: 09/21/2023
 ms.custom: UpdateFrequency.5
