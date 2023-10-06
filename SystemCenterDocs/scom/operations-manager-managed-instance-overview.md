@@ -53,7 +53,7 @@ SCOM Managed Instance (preview) functionality allows you to:
 - Patch your instance in one click with the latest bug fixes and features.
 
 >[!NOTE]
->Resources as part of Azure Monitor SCOM Managed Instance doesn't support **Move Resource** functionality.
+>Azure Monitor SCOM Managed Instance doesn't support **Move Resource** functionality.
 
 ## Architecture
 
