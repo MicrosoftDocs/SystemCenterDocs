@@ -87,10 +87,10 @@ Once the ITSM connector is created and connected to the ServiceNow instance, fol
 2. Create an Alert Processing Rule with the filter **Monitor Service equals SCOM Managed Instance**.
 
 3. In the **Rule settings** tab, under **Rule type**, select **Apply action group** option.
+   
+   Now, the connection to the ServiceNow instance is successfully established and the alerts reflect in the portal as incidents.  
 
-       Now, the connection to the ServiceNow instance is successfully established and the alerts reflect in the portal as incidents.  
-
-       In the ServiceNow portal, you can see your list of incidents under the **Microsoft OMS Integrator – OMS Incidents** tab.
+   In the ServiceNow portal, you can see your list of incidents under the **Microsoft OMS Integrator – OMS Incidents** tab.
 
 ## Status of Alert when it’s closed  
 
