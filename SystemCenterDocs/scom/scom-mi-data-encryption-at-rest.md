@@ -2,8 +2,8 @@
 ms.assetid: 
 title: Azure Monitor SCOM Managed Instance (preview) Data Encryption at Rest
 description: This article provides an overview of SCOM Managed Instance (preview) Data Encryption at Rest.
-author: Farha-Bano
-ms.author: v-farhabano
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
 ms.date: 02/13/2023
 ms.custom: UpdateFrequency.5
