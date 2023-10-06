@@ -2,8 +2,8 @@
 ms.assetid: 
 title: Use Managed identities for Azure with Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to use Managed identities for Azure with Azure Monitor SCOM Managed Instance (preview).
-author: Farha-Bano
-ms.author: v-farhabano
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
 ms.date: 02/13/2023
 ms.custom: UpdateFrequency.5
