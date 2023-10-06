@@ -2,8 +2,8 @@
 ms.assetid: 
 title: Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to manually install the Azure Monitor SCOM Managed Instance (preview) agent on Windows computers.
-author: Farha-Bano
-ms.author: v-farhabano
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
 ms.date: 08/24/2023
 ms.custom: UpdateFrequency.5
