@@ -2,8 +2,8 @@
 ms.assetid: 
 title: Patch Azure Monitor SCOM Managed Instance (preview)
 description: This article provides information on how to patch your Azure Monitor SCOM Managed Instance (preview).
-author: Farha-Bano
-ms.author: v-farhabano
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
 ms.date: 08/25/2023
 ms.custom: UpdateFrequency.5
