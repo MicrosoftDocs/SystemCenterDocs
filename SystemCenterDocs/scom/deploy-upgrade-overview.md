@@ -2,9 +2,9 @@
 ms.assetid: 9d47d9ef-9a95-4b05-817f-75b3039f6e2c
 title: Upgrading System Center Operations Manager
 description: This guide provides information on how to upgrade to Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/20/2023
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.prod: system-center
