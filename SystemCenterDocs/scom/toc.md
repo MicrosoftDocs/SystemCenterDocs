@@ -99,6 +99,7 @@
 ##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
+##### [Configure Log Analytics for Azure Monitor SCOM Managed Instance](configure-log-analytics-for-scom-managed-instance.md)
 #### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### Troubleshoot
 ##### [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
