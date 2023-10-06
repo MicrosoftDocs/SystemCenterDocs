@@ -15,9 +15,9 @@ monikerRange: '>=sc-om-2019'
 
 # Configure Log Analytics for Azure Monitor SCOM Managed Instance
 
-The integration of Azure Monitor SCOM Managed Instance with Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a defined frequency, enabling retention and advanced user actions such as visualization and reporting.
+The integration of Azure Monitor SCOM Managed Instance with Azure Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a pre-defined frequency, enabling retention and advanced user actions such as visualization and reporting.
 
-Synchronization of SCOM Managed Instance attached workload's monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
+Synchronization of SCOM Managed Instance workload's monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
 
 This article details about the Integration of Azure Monitor SCOM Managed Instance (preview) with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
 
@@ -32,10 +32,6 @@ Following are the general guidelines for the location and existence of LA worksp
 - To reduce management (RBAC, policies, NSG) activities, we recommend that you keep SCOM Managed Instance and LA workspace in the same subscription and resource group.
 
 - To onboard Azure Log Analytics workspace to SCOM Managed Instance, you must have required level of permissions, at least **Log Analytics Contributor**. You must assign **Log Analytics Contributor** permissions on the resource group of the workspace to **Microsoft.SCOM Resource Provider**. For more information, see [Manage access to Log Analytics workspace](/azure/azure-monitor/logs/manage-access?tabs=portal).
-
-### Permissions required
-
-To set up LA integration, the minimum privilege required is **Log Analytics Contributor** or **Monitoring Contributor at Resource Group scope**.
 
 ## Data types synchronized to Log Analytics workspace
 
@@ -91,11 +87,11 @@ To integrate SCOM Managed Instance with Log Analytics, follow these steps:
          - **Data types**: Select the desired date type.  
 
      3. **Historic data**:
-         - **Enable historic data for last 7 days**: Select this checkbox if you wish to enable the last seven days of historic data.
+         - **Enable historic data for last 7 days**: Select this checkbox if you wish to synchronize the last seven days of historic data.
 
 7. Select **Save**.
 
-It takes 2-3 minutes for the integration of SCOM managed instance with Log Analytics. 
+The Integration of SCOM managed instance with Log Analytics will take few minutes to complete.
 
 ## View Logs
 
