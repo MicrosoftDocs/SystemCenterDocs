@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Configure Log Analytics for Azure Monitor SCOM Managed Instance
 
-The integration of Azure Monitor SCOM Managed Instance with Azure Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a pre-defined frequency, enabling retention and advanced user actions such as visualization and reporting.
+The integration of Azure Monitor SCOM Managed Instance with Azure Log Analytics (LA) is a mechanism to synchronize the monitoring data from individual SCOM Managed Instances to the respective LA workspace with a predefined frequency, enabling retention and advanced user actions such as visualization and reporting.
 
 Synchronization of SCOM Managed Instance workload's monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
 
@@ -91,7 +91,7 @@ To integrate SCOM Managed Instance with Log Analytics, follow these steps:
 
 7. Select **Save**.
 
-The Integration of SCOM managed instance with Log Analytics will take few minutes to complete.
+The Integration of SCOM managed instance with Log Analytics takes few minutes to complete.
 
 ## View Logs
 
