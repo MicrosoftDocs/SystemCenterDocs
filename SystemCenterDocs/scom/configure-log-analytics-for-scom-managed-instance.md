@@ -21,7 +21,7 @@ Synchronization of SCOM Managed Instance workload's monitoring data to a common 
 
 This article details about the Integration of Azure Monitor SCOM Managed Instance (preview) with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
 
-Before you configure Log Analytics workspace for SCOM managed instance, ensure you have a Log Analytics workspace available for integration or create a Log Analytics workspace. For more information on how to create Log Analytics workspace, see [Create a Log Analytics workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
+Before you configure Log Analytics workspace for SCOM Managed Instance, ensure you have a Log Analytics workspace available for integration or create a Log Analytics workspace. For more information on how to create Log Analytics workspace, see [Create a Log Analytics workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 
 ## General guidelines
 
@@ -44,11 +44,11 @@ The prioritized list of SCOM Managed Instance monitored data that synchronizes t
 
 ## Data Retention in Log Analytics
 
-The retention policy application on Log Analytic workspace is default value, which is 30 days. Azure Monitor SCOM managed instance doesn't change this value. For more information on Data retention, see [Data retention and archive in Azure Monitor Logs](/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2)
+The retention policy application on Log Analytic workspace is default value, which is 30 days. Azure Monitor SCOM Managed Instance doesn't change this value. For more information on Data retention, see [Data retention and archive in Azure Monitor Logs](/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2)
 
-:::image type="Data retention" source="media/configure-log-analytics-for-scom-managed-instance/data-retention.png" alt-text="Screenshot that shows about Data retention.":::
+:::image type="Data retention" source="media/configure-log-analytics-for-scom-managed-instance/data-retention-inline.png" alt-text="Screenshot that shows about Data retention." lightbox="media/configure-log-analytics-for-scom-managed-instance/data-retention-expanded.png":::
 
-## Configure Log Analytics Workspace for SCOM managed instance
+## Configure Log Analytics Workspace for SCOM Managed Instance
 
 ### Prerequisites
 
@@ -91,7 +91,7 @@ To integrate SCOM Managed Instance with Log Analytics, follow these steps:
 
 7. Select **Save**.
 
-The Integration of SCOM managed instance with Log Analytics takes few minutes to complete.
+The Integration of SCOM Managed Instance with Log Analytics takes few minutes to complete.
 
 ## View Logs
 
