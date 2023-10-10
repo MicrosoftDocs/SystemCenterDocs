@@ -1,8 +1,8 @@
 ---
 title: Create VM from Template
 description: The Create VM from Template activity is used to create a new virtual machine from the specified template.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 10/10/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -77,7 +77,7 @@ The activity publishes all the data from the required and optional properties in
 | Element   | Description   |
 |:---|:---|
 | Accessibility   | Public or Internal   |   
-| Added Time   | The date and time that the virtual machine was added in the formatyyyy-mm-dd hh:mm:ss AM or PM   |   
+| Added Time   | The date and time that the virtual machine was added in the format yyyy-mm-dd hh:mm:ss AM or PM   |   
 | Admin Password   | The password for the Local Administrator account   |   
 | Admin User Name   | The account name for the Local Administrator account   |   
 | Answer File Path   | The full path and file name of the script object stored in the Virtual Machine Manager library to be used as an answer file. The answer file contains the product key, the credentials with permissions to join a domain, and the computer name wildcard character (\*). These allow the computer name to be randomly generated.   |   
@@ -110,7 +110,7 @@ The activity publishes all the data from the required and optional properties in
 | Has Pass-through Disk   | True or False   |   
 | Has VM Additions   | True or False. If True, the virtual machine has additional software installed on the Guest Operating System to assist with virtualization, also known as virtual machine Guest Services.   |   
 | Heartbeat Enabled   | True or False   |   
-| Host Group Path   | The path of the virtual machine under its host group, in the format All Hosts\\virtual machineame   |   
+| Host Group Path   | The path of the virtual machine under its host group, in the format All Hosts\\virtual machine name   |   
 | Host ID   | The unique identifier (GUID) of the host computer   |   
 | Host Type   | VMHost   |  
 | Highly Available   | True or False   |   
