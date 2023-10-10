@@ -124,7 +124,7 @@ The following values are published in addition to the input values above:
 - Connection:  Specifies the name of the connection to the Configuration Manager server
 - Collection ID: Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).
 
-## To configure the deploy application activity
+## Configure the deploy application activity
 
 1. From the **Activities** pane, drag a **Deploy Application** activity
    to the active runbook.

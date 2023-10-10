@@ -116,7 +116,7 @@ above:
 |Connection |Specifies the name of the connection to the Configuration Manager server|
 |Collection ID|Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|
 
-## Configuring the Deploy Task Sequence activity
+## Configure the Deploy Task Sequence activity
 
 1.  From the **Activities** pane, drag a **Deploy Task Sequence**
     activity to the active runbook.
