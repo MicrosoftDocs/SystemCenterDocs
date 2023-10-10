@@ -52,7 +52,7 @@ activity.
     -   **Name**: the value is a collection name
 - Purpose: The deployment intent or purpose. The options are:
     -   **Required** (default): the task sequence is mandatory to be installed or uninstalled
-    -   **Available**: the task sequence is made available but is not mandatory
+    -   **Available**: the task sequence is made available but isn't mandatory
 - Rerun behavior: Specifies whether the task sequence will be rerun on the client computer if it has previously been run before the scheduled mandatory time. The options are:
     -   **Always rerun program** (default): The task sequence will always be rerun on the client when the advertisement is scheduled even if the task sequence has already been successfully run. This is useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
     -   **Never rerun program**: The task sequence won't be rerun on the client if the task sequence has previously been run on the client, even if the task sequence originally failed or the program files have been changed.
@@ -65,7 +65,7 @@ activity.
 
 ## Deploy Task Sequence optional properties
 
-- Allow running independently of assignments: True or False (Default = False) Specifies whether or not users may run the program independently, regardless of its assignment status
+- Allow running independently of assignments: True or False (Default = False) Specifies whether or not users can run the program independently, regardless of its assignment status
 - Allow Software Install Outside of Maintenance Windows: True or False (Default = False) Allows the application to install even if the installation would occur outside of a maintenance window
 - Allow System Restart Outside of Maintenance Windows: True or False (Default = False) Allows the advertised program to restart the client even if the restart would occur outside of a maintenance window
 - Allow Task Sequence to Run on Internet Clients: True or False (Default = False) Allows the task sequence to run even if the client is connecting via the Internet.
@@ -91,7 +91,7 @@ activity.
     - **None**: Specifies that the operation doesn't occur.
     - **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
     - **Monthly**: Specifies that the operation recurs every N months. If this option is selected, you must specify the day of the month on which the operation will occur.
-    - **Custom interval**: varies depending on the recurrence pattern selected. Specifies the frequency with which the operation will recur. You may set this in terms of minutes, hours, or days.
+    - **Custom interval**: varies depending on the recurrence pattern selected. Specifies the frequency with which the operation will recur. You can set this in terms of minutes, hours, or days.
   - **Assign immediately after this event**: Enables the selector for event-based assignment. The options are:
       - **As soon as possible**: Specifies that the program will automatically run as soon as it reaches the client and all program requirements are met. This value is specified by default.
       - **Logon**: Specifies that the program will automatically run the next time a user signs in to the client.

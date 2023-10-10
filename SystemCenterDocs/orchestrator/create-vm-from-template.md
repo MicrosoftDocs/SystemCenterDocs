@@ -82,7 +82,7 @@ The activity publishes all the data from the required and optional properties in
 | Admin User Name   | The account name for the Local Administrator account   |   
 | Answer File Path   | The full path and file name of the script object stored in the Virtual Machine Manager library to be used as an answer file. The answer file contains the product key, the credentials with permissions to join a domain, and the computer name wildcard character (\*). These allow the computer name to be randomly generated.   |   
 | Backup Enabled   | True or False   |   
-| Boot Order   | The order of devices that the virtual machine on a Hyper-V host uses to start up. The value values are: CD, IDE Hard Drive, PXE Boot, or Floppy   |   
+| Boot Order   | The order of devices that the virtual machine on a Hyper-V host uses to start up. The valid values are: CD, IDE Hard Drive, PXE Boot, or Floppy   |   
 | Checkpoint Location   | The full path of the checkpoint for the virtual machine, in the format C:\\ProgramData\\Microsoft\\Windows\\Hyper-V   |   
 | Computer Name   | The name of the virtual machine   |   
 | Cost Center   | An alphanumeric value for the Self-Service Portal   |   

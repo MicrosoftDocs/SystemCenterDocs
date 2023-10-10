@@ -60,7 +60,7 @@ activity.
     - **Update ID**: The value is the CI\_ID of an individual update
 - Purpose: The deployment intent or purpose. The options are:
   - **Required** (default): The application is mandatory to be installed or uninstalled
-  - **Available**: The application is made available but is not mandatory
+  - **Available**: The application is made available but isn't mandatory
 
     >[!NOTE]
     >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.

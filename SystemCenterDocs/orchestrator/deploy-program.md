@@ -86,7 +86,7 @@ optional properties into published data.
 - Enable peer caching: True or False (Default = True) Select this option to reduce the load on the network by allowing clients to download content from other clients on the network that have already downloaded and cached the content. This option utilizes Windows BranchCache and can be used on computers running Windows Vista SP2 and later.
 
 ## Deploy Program optional properties
-- Allow running independently of assignments: True or False (Default = False) Specifies whether or not users may run the program independently, regardless of its assignment status.
+- Allow running independently of assignments: True or False (Default = False) Specifies whether or not users can run the program independently, regardless of its assignment status.
 - Allow Software Install Outside of Maintenance Windows: True or False (Default = False) Allows the application to install even if the installation would occur outside of a maintenance window.
 - Allow System Restart Outside of Maintenance Windows: True or False (Default = False) Allows the advertised program to restart the client even if the restart would occur outside of a maintenance window.
 - Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if content isn't immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
@@ -122,7 +122,7 @@ optional properties into published data.
     - **None**: Specifies that the operation doesn't occur.
     - **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
     - **Monthly**: Specifies that the operation recurs every N months. If this option is selected, you must specify the day of the month on which the operation will occur.
-    - **Custom interval** (varies depending on the recurrence pattern selected): Specifies the frequency with which the operation will recur. You may set this in terms of minutes, hours, or days.
+    - **Custom interval** (varies depending on the recurrence pattern selected): Specifies the frequency with which the operation will recur. You can set this in terms of minutes, hours, or days.
   - **Assign immediately after this event**: Enables the selector for event-based assignment. The options are:
       - **As soon as possible**: Specifies that the program will automatically run as soon as it reaches the client and all the program requirements are met. This value is specified by default.
       - **Logon**: Specifies that the program will automatically run the next time a user signs in to the client.

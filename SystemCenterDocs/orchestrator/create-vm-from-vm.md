@@ -80,7 +80,7 @@ The activity publishes all the data from the required and optional properties in
 | Delay Start (s)   | The number of seconds to wait after the virtualization service starts before automatically starting the virtual machine   |
 | Description   | An alphanumeric description of the virtual machine   |
 | Disk I/O (IOPS)   | The disk I/O performance, measured by the number of I/O operations per second \[IOPS\] that can be performed with acceptable latency   |
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |
+| Enabled   | True or False. If False, the virtual machine can't be started.   |
 | Expected CPU Utilization   | A two-digit percent value that represents the average CPU usage for the virtual machine   |
 | Failed Job ID   | The unique identifier (GUID) of the most recent failed job   |
 | Has Pass-through Disk   | True or False   |
@@ -128,7 +128,7 @@ The activity publishes all the data from the required and optional properties in
 | Time Synchronization Enabled   | True or False   |
 | Total Size   | The total size of the virtual machine, including all disks and configuration files   |
 | Undo Disks Enabled   | True or False. If True, the virtual machine can undo any changes when shutting down.   |
-| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action is not supported   |
+| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action isn't supported   |
 | Use Hardware Assisted Virtualization | True or False   |
 | User Role ID   | The unique identifier (GUID) of the user role that allows users to create virtual machines   |
 | Virtual COM Ports   | A list of the names of the Virtual COM Ports. Always COM1 or COM2.   |
@@ -136,7 +136,7 @@ The activity publishes all the data from the required and optional properties in
 | Virtual DVD Drives   | A list of the names of the Virtual DVD Drives   |
 | Virtual Floppy Drive   | A list of the names of the Virtual Floppy Drives   |
 | Virtual Hard Disks   | A list of the names of the Virtual Hard Disks   |
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |
 | Virtual Network   | The name of the Virtual Network   |
 | Virtual Network Adapters   | A list of the names of the Virtual Network Adapters   |
 | Virtual SCSI Adapters   | A list of the names of the Virtual SCSI Adapters   |
