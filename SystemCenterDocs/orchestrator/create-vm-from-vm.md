@@ -86,7 +86,7 @@ The activity publishes all the data from the required and optional properties in
 | Has Pass-through Disk   | True or False   |
 | Has VM Additions   | True or False. If True, the virtual machine has additional software installed on the Guest Operating System to assist with virtualization, also known as VM Guest Services.   |
 | Heartbeat Enabled   | True or False   |
-| Host Group Path   | The path of the virtual machine under its host group, in the format All Hosts\\virtual machine name.   |
+| Host Group Path   | The path of the virtual machine under its host group, in the format All Hosts\\virtual machinename.   |
 | Host ID   | The unique identifier (GUID) of the host computer   |
 | Host Type   | VMHost   |
 | Highly Available   | True or False   |
