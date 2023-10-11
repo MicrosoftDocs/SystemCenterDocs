@@ -2,9 +2,9 @@
 ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
 title: Deploying System Center Operations Manager
 description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/22/2022
 ms.custom: na, intro-deployment
 ms.prod: system-center

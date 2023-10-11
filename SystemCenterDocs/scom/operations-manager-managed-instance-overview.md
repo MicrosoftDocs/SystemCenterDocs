@@ -2,10 +2,10 @@
 ms.assetid: 
 title: About Azure Monitor SCOM Managed Instance (preview)
 description: This article describes about Azure Monitor SCOM Managed Instance (preview).
-author: Farha-Bano
-ms.author: v-farhabano
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/21/2023
+ms.date: 10/06/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -50,7 +50,10 @@ SCOM Managed Instance (preview) functionality allows you to:
 - Incur zero database maintenance (Ops database and Data warehouse database) because of the offloading of database management to SQL Managed Instance (SQL MI).
 - Scale your instance immediately without the need to add/delete physical servers.
 - View your SCOM Managed Instance (preview) reports in Power BI.
-- Patch your instance in one click with the latest bug fixes and features. 
+- Patch your instance in one click with the latest bug fixes and features.
+
+>[!NOTE]
+>Azure Monitor SCOM Managed Instance doesn't support **Move Resource** functionality.
 
 ## Architecture
 

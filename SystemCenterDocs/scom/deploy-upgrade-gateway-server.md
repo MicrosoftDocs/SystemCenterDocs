@@ -2,9 +2,9 @@
 ms.assetid: 700dd1e3-9a40-42b9-a366-92592a6be96a
 title: How to Upgrade a Gateway Server
 description: This article describes how to upgrade a Gateway server to the latest release of System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.prod: system-center

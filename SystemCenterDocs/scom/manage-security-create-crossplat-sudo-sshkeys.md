@@ -5,7 +5,7 @@ description: This article describes how to configure sudo and SSH keys for an un
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/25/2023
+ms.date: 09/25/2023
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
@@ -38,11 +38,11 @@ To obtain and configure the SSH key from the UNIX and Linux computer, you have t
 > [!NOTE]  
 > The sudo program exists at different locations on UNIX and Linux operating systems. To provide uniform access to sudo, the UNIX and Linux agent installation script creates the symbolic link `/etc/opt/microsoft/scx/conf/sudodir` to point to the directory expected to contain the sudo program. The agent uses this symbolic link to invoke sudo. The installation script automatically creates the symbolic link, so you do not need to take any action on standard UNIX and Linux configurations; however, if you have sudo installed at a non-standard location, you should change the symbolic link to point to the directory where sudo is installed. If you change the symbolic link, its value is preserved across uninstall, re-install, and upgrade operations with the agent.  
 
-## Configure a low-privileged account for sudo elevation  
+## Configure an account for sudo elevation
 
-The following procedures create a low\-privileged account and sudo elevation by using `opsuser` for a user name.  
+The following procedures create an account and sudo elevation by using `opsuser` for a user name.  
 
-#### To create a low-privileged user  
+#### Create a user
 
 1.  Log on to the UNIX or Linux computer as `root`.  
 
@@ -56,8 +56,10 @@ The following procedures create a low\-privileged account and sudo elevation by 
 
 You can now configure sudo elevation and create an SSH key for `opsuser`, as described in the following procedures.  
 
-#### To configure sudo elevation for the low-privileged user  
+#### Configure sudo elevation for the user
 
+> [!NOTE]
+> For more information about sudoers configuration for Low Privilege scenarios, see [SCOM: Configuring sudo Elevation for UNIX and Linux Monitoring](https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx)
 1.  Log on to the UNIX or Linux computer as `root`.  
 
 2.  Use the visudo program to edit the sudo configuration in a vi text editor. Run the following command:  
@@ -95,7 +97,7 @@ You can use the `opsuser` account by using the password and sudo elevation for s
 
 The following procedures create an SSH key for the `opsuser` account that was created in the previous examples.  
 
-#### To generate the SSH key  
+#### Generate the SSH key  
 
 1.  Log on as `opsuser`.  
 
@@ -107,7 +109,7 @@ The following procedures create an SSH key for the `opsuser` account that was cr
 
 The **ssh-keygen** creates the `/home/opsuser/.ssh` directory with the private key file (`id_dsa`) and the public key file (`id_dsa.pub`). You can now configure the key to be supported by `opsuser` as described in the next procedure.  
 
-#### To configure a user account to support the SSH key  
+#### Configure a user account to support the SSH key  
 
 1.  At the command prompt, type the following commands. To navigate to the user account directory:  
 
@@ -131,7 +133,7 @@ The **ssh-keygen** creates the `/home/opsuser/.ssh` directory with the private k
 
 You can now copy the private SSH key to the Windows\-based computer, as described in the next procedure.  
 
-#### To copy the private SSH key to the Windows\-based computer and save in OpenSSH format  
+#### Copy the private SSH key to the Windows\-based computer and save in OpenSSH format
 
 1.  Use a tool, such as WinSCP, to transfer the private key file (`id_dsa` - with no extension) from the UNIX or Linux computer to a directory on your Windows-based computer.  
 
@@ -152,3 +154,4 @@ You can use the `opsuser` account by using the SSH key and sudo elevation for sp
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
 
 - Review the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
+

@@ -2,10 +2,10 @@
 ms.assetid: 
 title: What’s new in Azure Monitor SCOM Managed Instance (preview)
 description: This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance (preview).
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 09/25/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/09/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -17,21 +17,9 @@ monikerRange: '>=sc-om-2019'
 
 This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance (preview).
 
-## Version 1.0.85
+## Version 1.0.89
 
-- Improved performance of extension for onboarding, scaling, and patching operations.
-
-## Version 1.0.86
-
-- Introduced [Resource Health feature](/azure/service-health/resource-health-overview?WT.mc_id=Portal-Microsoft_Azure_Health) for SCOM Managed Instance (preview).
-
-- Introduced Log Analytics Integration feature for SCOM Managed Instance (preview).
-
-## Version 1.0.87
-
-- Bug fixes for onboarding validation.
-
-- Fixed issue where Domain Connectivity check fails with error **The property `TcpTestSucceeded` cannot be found on this object**.
+- The Log Analytics workspace feature is available for existing and new SCOM Managed Instances.
 
 ## Version 1.0.88
 
@@ -39,9 +27,21 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 - Fixed issue where Static IP and LB association check fails with error **The property `IP4Address` cannot be found on this object**.
 
-## Version 1.0.89
+## Version 1.0.87
 
-- The Log Analytics workspace feature is available for existing and new SCOM Managed Instances.
+- Bug fixes for onboarding validation.
+
+- Fixed issue where Domain Connectivity check fails with error **The property `TcpTestSucceeded` cannot be found on this object**.
+
+## Version 1.0.86
+
+- Introduced [Resource Health feature](/azure/service-health/resource-health-overview?WT.mc_id=Portal-Microsoft_Azure_Health) for SCOM Managed Instance (preview).
+
+- Introduced Log Analytics Integration feature for SCOM Managed Instance (preview).
+
+## Version 1.0.85
+
+- Improved performance of extension for onboarding, scaling, and patching operations.
 
 ## Next steps
 
