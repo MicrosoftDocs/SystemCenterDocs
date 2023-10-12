@@ -5,7 +5,7 @@ description: This article provides a high-level overview of the supported monito
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 10/12/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -49,9 +49,24 @@ To monitor your workloads (both on-premises and in Azure), follow these steps:
 2. Import the management pack of the workload that you plan to monitor.
 3. After successfully importing the management pack, begin monitoring your workload.
 
-## Agentless monitoring 
+## Agentless monitoring
 
-In SCOM Managed Instance (preview), agents need to be installed manually. The Discovery wizard isn't supported. 
+In SCOM Managed Instance (preview), agents need to be installed manually. The Discovery wizard isn't supported.
+
+## Monitor health for Azure Monitor SCOM Managed Instance
+
+SCOM Managed Instance can now monitor the health of the SCOM Managed Instance Resource and report differences. Resource Health capability allows you to do the following:
+
+- Monitors your resource and lets you know if it’s running as expected.
+- Help you diagnose and get support for service problems that affect your Azure resources.
+- Reports on the current and past health of your resources.
+
+For more information, see [Azure Resource Health overview](/azure/service-health/resource-health-overview?WT.mc_id=Portal-Microsoft_Azure_Health).
+
+To troubleshoot the problems in your service if there are any, see the following:
+
+- [Troubleshoot issues with Azure Monitor SCOM Managed Instance](/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022).
+- [Troubleshoot commonly encountered errors while validating input parameters](/system-center/scom/troubleshooting-input-parameters-scom-managed-instance?view=sc-om-2022).
 
 ## Next steps
 
