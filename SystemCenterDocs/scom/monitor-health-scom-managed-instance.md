@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Monitor health for Azure Monitor SCOM Managed Instance
-description: This article provides a high-level overview of the supported monitoring scenarios with Azure Monitor SCOM Managed Instance (preview).
+title: Monitor health for Azure Monitor SCOM Managed Instance (preview)
+description: Azure Monitor SCOM Managed Instance (preview) can now monitor the health of the SCOM Managed Instance Resource and report differences.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Monitor health for Azure Monitor SCOM Managed Instance
+# Monitor health for Azure Monitor SCOM Managed Instance (preview)
 
-SCOM Managed Instance can now monitor the health of the SCOM Managed Instance Resource and report differences.
+Azure Monitor SCOM Managed Instance (preview) can now monitor the health of the SCOM Managed Instance Resource and report differences.
 
 ## Key capabilities
 
