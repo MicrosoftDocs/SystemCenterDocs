@@ -14,6 +14,10 @@
      "redirect_url": "/system-center/dpm/dpm-overview"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/scom-managed-instance-monitoring-scenarios.md",
+     "redirect_url": "/system-center/scom/monitor-health-scom-managed-instance"
+  },
+  {
     "source_path" : "SystemCenterDocs/dpm/get-started/prepare-environment-for-dpm.md",
     "redirect_url": "/system-center/dpm/prepare-environment-for-dpm"
   },
