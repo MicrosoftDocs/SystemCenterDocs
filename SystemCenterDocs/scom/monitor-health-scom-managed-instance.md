@@ -35,7 +35,7 @@ To troubleshoot the problems in your service, see the following:
 
 ## Next steps
 
-[Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)](/system-center/scom/manage-deploy-windows-agent-manually-scom-managed-instance?view=sc-om-2022).
+[Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)](/system-center/scom/manage-deploy-windows-agent-manually-scom-managed-instance).
 
 **Feedback**
 
