@@ -20,7 +20,8 @@ ms.topic: article
 
 ::: moniker-end
 
-This article describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management group.  
+## Executive Summary
+This article describes how to allow System Center Operations Manager to utilize Transport Layer Security (TLS) 1.2.
 
 >[!NOTE]
 > Operations Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Operations Manager will select one of the three protocols in the following order of preference:
@@ -31,7 +32,7 @@ This article describes how to enable Transport Layer Security (TLS) protocol ver
 > The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
 
 
-Perform the following steps to enable TLS protocol version 1.2:
+Perform the following steps to implement TLS protocol version 1.2 in Operations Manager:
 
 ::: moniker range="sc-om-2016"
 
@@ -148,40 +149,39 @@ After completing the configuration of all prerequisites for Operations Manager, 
 1. Sign in to the server by using an account that has local administrative credentials.  
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.
 3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727`.  
-4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
-5. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
-6. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727`.  
-7. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
-8. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+  1. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+  2. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+6. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727`.
+  1. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+  2. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+7. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.  
+  1. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+  2. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+8. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319`.  
+  1. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+  2. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
 9. Restart the system for the settings to take effect.  
-10. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.  
-11. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
-12. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
-13. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319`.  
-14. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
-15. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
-16. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
-Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol:
+Run the following Windows PowerShell script in Administrator mode to automatically configure .NET Framework to prevent framework-inherited TLS 1.0 dependencies:
 
 ```powershell
 # Tighten up the .NET Framework
 $NetRegistryPath1 = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727" 
-New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null 
-New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath1 -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null 
+New-ItemProperty -Path $NetRegistryPath1 -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
 
 $NetRegistryPath2 = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319" 
-New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
-New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath2 -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath2 -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
 
 $NetRegistryPath3 = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v2.0.50727" 
-New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null 
-New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath3 -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null 
+New-ItemProperty -Path $NetRegistryPath3 -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
 
 $NetRegistryPath4 = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319" 
-New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
-New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath4 -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath4 -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
 ```
 
 ## Additional settings
@@ -210,32 +210,22 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 5. Under the **OpsMgrAC** subkey, update the **Driver** for the ODBC version that is installed.
    * If ODBC 11.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql11.dll`.
    * If ODBC 13.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql13.dll`.
+   * If ODBC 17.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
+   * If ODBC 18.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql18.dll`.
    
    #### Registry File
    Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
-    * For ODBC 11.0, create the following ODBC 11.reg file:
+    * For ODBC 11.0, 13.0, 17.x, or 18.x. Create the following file ODBC.reg and (replace with the ODBC version being used) :
 
       ```
       Windows Registry Editor Version 5.00
       
       [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-      "OpsMgrAC"="ODBC Driver 11 for SQL Server"
+      "OpsMgrAC"="ODBC Driver 18 for SQL Server"
       
       [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-      "Driver"="%WINDIR%\system32\msodbcsql11.dll"
-      ```
-
-    * For ODBC 13.0, create the following ODBC 13.reg file:
-
-      ```
-      Windows Registry Editor Version 5.00
-      
-      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-      "OpsMgrAC"="ODBC Driver 13 for SQL Server"
-      
-      [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-      "Driver"="%WINDIR%\system32\msodbcsql13.dll"
+      "Driver"="%WINDIR%\system32\msodbcsql18.dll"
       ```
 
    #### PowerShell
