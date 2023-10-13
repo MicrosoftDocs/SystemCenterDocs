@@ -43,7 +43,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 to 17.10.3, and MSOLEDBSQL 18.2 to 18.6.5.
+  > - Use [ODBC](https://aka.ms/downloadmsodbcsql) (x64) 17.3 or later, and [MSOLEDBSQL](https://aka.ms/downloadmsoledbsql) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+  > - Use [ODBC](https://aka.ms/downloadmsodbcsql) (x64) 17.3 or later, and [MSOLEDBSQL](https://aka.ms/downloadmsoledbsql) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
