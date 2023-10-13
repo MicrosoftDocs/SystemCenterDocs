@@ -43,7 +43,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - For SQL 2019 and SQL 2022 use [ODBC](https://learn.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16) (x64) 17.3 or later, and [MSOLEDBSQL](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
+  > - For SQL 2019 and SQL 2022 use [ODBC](https://learn.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) 17.3 or later, and [MSOLEDBSQL](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - For SQL 2019 and SQL 2022 use [ODBC](https://learn.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16) (x64) 17.3 or later, and [MSOLEDBSQL](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
+  > - For SQL 2019 and SQL 2022 use [ODBC](https://learn.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) 17.3 or later, and [MSOLEDBSQL](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
