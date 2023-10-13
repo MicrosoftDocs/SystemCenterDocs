@@ -38,22 +38,22 @@ Perform the following steps to enable TLS protocol version 1.2:
 >[!NOTE]
 > Microsoft OLE DB Driver 18 for SQL Server (recommended) is supported with Operations Manager 2016 UR9 and later.
 
-1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver 18 for SQL Server](https://www.microsoft.com/download/details.aspx?id=56730) on all management servers and the Web console server.  
+1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) on all management servers and the Web console server.  
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.   
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-4. Install [ODBC 11.0](https://www.microsoft.com/download/details.aspx?id=36434) or [ODBC 13.0](https://www.microsoft.com/download/details.aspx?id=50420) on all management servers.
+4. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers.
 5. For System Center 2016 - Operations Manager, install Update Rollup 4 or later.  
 6. Configure Windows to only use TLS 1.2.  
-7. Configure Operations Manager to only use TLS 1.2.  
+7. Configure Operations Manager Audit Collection Services to use the installed ODBC Driver.  
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
-1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server#1865) version 18.2 to 18.6.5 on all management servers and the Web console server.
+1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) on all management servers and the Web console server.
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-4. Install [ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#17103) version 17.3 to 17.10.3 on all management servers.
+4. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers.
 5. Configure Windows to only use TLS 1.2.  
-6. Configure Operations Manager to only use TLS 1.2.  
+6. Configure Operations Manager Audit Collection Services to use the installed ODBC Driver.  
 ::: moniker-end
 
 Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is required to enable TLS 1.2. If CA-signed certificates are used, ensure that the certificates are either SHA1 or SHA2.
@@ -146,23 +146,42 @@ After completing the configuration of all prerequisites for Operations Manager, 
 
 ### Manually modify the registry
 1. Sign in to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
-3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.  
-4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
-5. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319`.  
-6. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
-7. Restart the system for the settings to take effect.  
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.
+3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727`.  
+4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+5. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+6. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727`.  
+7. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+8. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+9. Restart the system for the settings to take effect.  
+10. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.  
+11. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+12. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+13. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319`.  
+14. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
+15. Create the DWORD value **SystemDefaultTlsVersions** under this subkey with a value of **1**.    
+16. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
 Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol:
 
 ```powershell
 # Tighten up the .NET Framework
-$NetRegistryPath = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319"
-New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
+$NetRegistryPath1 = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727" 
+New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null 
+New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
 
-$NetRegistryPath = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319"
+$NetRegistryPath2 = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319" 
 New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
+
+$NetRegistryPath3 = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v2.0.50727" 
+New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null 
+New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
+
+$NetRegistryPath4 = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319" 
+New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path $NetRegistryPath -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
 ```
 
 ## Additional settings
