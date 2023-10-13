@@ -39,36 +39,35 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2019"
 
-- SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+- SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use [ODBC](https://aka.ms/downloadmsodbcsql) (x64) 17.3 or later, and [MSOLEDBSQL](https://aka.ms/downloadmsoledbsql) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
+  > - For SQL 2019 and SQL 2022 use [ODBC](https://learn.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16) (x64) 17.3 or later, and [MSOLEDBSQL](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
 - SQL Server 2022
-- SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+- SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
 
   >[!NOTE]
   > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use [ODBC](https://aka.ms/downloadmsodbcsql) (x64) 17.3 or later, and [MSOLEDBSQL](https://aka.ms/downloadmsoledbsql) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
+  > - For SQL 2019 and SQL 2022 use [ODBC](https://learn.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16) (x64) 17.3 or later, and [MSOLEDBSQL](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16) (x64) 18.2 or later. If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](https://learn.microsoft.com/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
-
 ::: moniker range=">sc-om-1807 <=sc-om-2019"
 
-- SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+- SQL Server 2017 and Cumulative Updates as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
 - SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
-- SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+- SQL Server 2017 and Cumulative Updates as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
 
 ::: moniker-end
 
@@ -76,7 +75,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+* SQL Server 2017 and Cumulative Updates as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
 * SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
