@@ -5,7 +5,7 @@ description: This article describes the recent feature addition that allows Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/09/2023
+ms.date: 10/16/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -16,6 +16,8 @@ monikerRange: '>=sc-om-2019'
 # View System Center Operations Manager’s alerts in Azure Monitor
 
 This article describes the recent feature addition that allows Azure Monitor SCOM Managed Instance customers to view Operations Manager’s alerts in Azure Monitor.
+
+> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=09a0b07e-c50c-4ee4-b0a7-43d8ca6bb847]
 
 ## Alert
 
