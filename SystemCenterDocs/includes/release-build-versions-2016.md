@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/11/2023
+ms.date: 10/17/2023
 ms.custom: na
 ms.prod: system-center
 ms.assetid:
@@ -35,6 +35,7 @@ The following tables list the release history for Operations Manager 2016.
 |7.2.12265.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |Update Rollup 9 |
 |7.2.12324.0 |[4580254](https://support.microsoft.com/kb/4580254) |October 2020 |Update Rollup 10 |
 |7.2.12335.0 |[5006871](https://support.microsoft.com/kb/5006871) |October 2021 |Update Rollup 10 - Web Console IDOR Vulnerability Fix |
+|7.2.12335.0 |[5028684](https://support.microsoft.com/kb/5028684) |August 2023 |SCX Compiler Mitigated Packages|
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
@@ -55,15 +56,15 @@ The following tables list the release history for Operations Manager 2016.
 |Build Number |KB |Release Date |Agent Version |Description |
 |-------------|---|-------------|--------------|------------|
 |7.6.1064.0 ||September 2016 |1.6.2-336 |General Availability release|  
-|7.6.1067.0 |[3190029](https://support.microsoft.com/kb/3190029) |October 2016 |1.6.2-337 |Update Rollup 1 |  
-|7.6.1072.0	|[3209591](https://support.microsoft.com/kb/3209591) |February 2017 |1.6.2-338 |Update Rollup 2 |  
-|7.6.1076.0	|[4016126](https://support.microsoft.com/kb/4016126) |May 2017 |1.6.2-339 |Update Rollup 3|
-|7.6.1092.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |1.6.2-343 |Update Rollup 9 |
-|7.6.1105.0 |[4580254](https://support.microsoft.com/kb/4580254) |September 2021 |1.6.8-1 |Update Rollup 10 |
-|7.6.1108.0 |[4580254](https://support.microsoft.com/kb/4580254) |May 2022 |1.6.9-2 |Update Rollup 10 - OMI Vulnerability Fix |
-|7.6.1113.0 |[4580254](https://support.microsoft.com/kb/4580254) |August 2022 |1.6.10-2 |Update Rollup 10 - OMI Vulnerability Fix |
-|7.6.1164.0 |[4580254](https://support.microsoft.com/kb/4580254) |February 2023 |1.6.12-1 |Update Rollup 10 - Hotfix |
-|7.6.1185.0 |[5028684](https://support.microsoft.com/kb/5028684) |August 2023 |1.7.1-0 |Update Rollup 10 - Hotfix |
+|7.6.1067.0 ||October 2016 |1.6.2-337 |Update Rollup 1 |  
+|7.6.1072.0	||February 2017 |1.6.2-338 |Update Rollup 2 |  
+|7.6.1076.0	||May 2017 |1.6.2-339 |Update Rollup 3|
+|7.6.1092.0 ||March 2020 |1.6.2-343 |Update Rollup 9 |
+|7.6.1105.0 |[v1.6.8-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.8-1)|September 2021 |1.6.8-1 |Update Rollup 10 |
+|7.6.1108.0 |[v1.6.9-2](https://github.com/microsoft/SCXcore/releases/tag/v1.6.9-2)|May 2022 |1.6.9-2 |Update Rollup 10 - OMI Vulnerability Fix |
+|7.6.1113.0 |[v1.6.10-2](https://github.com/microsoft/SCXcore/releases/tag/v1.6.10-2)|August 2022 |1.6.10-2 |Update Rollup 10 - OMI Vulnerability Fix |
+|7.6.1164.0 |[v1.6.12-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.12-1)|February 2023 |1.6.12-1 |Update Rollup 10 - Hotfix |
+|7.6.1185.0 |[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0)|August 2023 |1.7.1-0 |Update Rollup 10 - Hotfix |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
 
