@@ -73,14 +73,14 @@ The alerts moving from System Center Operations Manager to Azure Monitor SCOM Ma
 
 The following translations are made to the Operations Manager alert schema when moving to Azure Monitor alerts schema:
 
-|Operations Manager Alert property|SCOM Managed Instance to Azure Alert mapper|
-|----|----|
-|Target resource|Azure native/Arc resource ID or SCOM Managed Instance resource ID (on-premises)|
-|Severity|Azure Alert severities are different than Operations Manager severities.<br/> <br/> Convert from Operations Manager alert severity to Azure alert severity. <br/><br/>Critical > Sev2 <br/><br/> Warning > Sev3|
-|Signal Type|**AvailabilityHealth** > **Health** <br/><br/> **StateCollection** > **Health** <br/> <br/> **Custom** > **Custom**|
-|Monitoring Service|**SCOM Managed Instance**|
-|States|New, Acknowledged, Scheduled, Assigned to Engineering, Awaiting Evidence, Resolved, Closed <br/> <br/> New > New <br/><br/> Acknowledged, Scheduled, Assigned to Engineering, Awaiting Evidence, and all other intermediate states > Acknowledged. <br/> <br/> Resolved, closed > Closed|
-|Additional Operations Manager alert properties added to alert context|MonitoringObjectName, MonitoringObjectPath, IsMonitorAlert, ProblemDescription, MonitoringRule <br/> <br/> SCOMResolutionState, Priority, Category, Owner, ResolvedBy, LastModified, LastModifiedBy, TimeResolved, scomAlertContext, MonitoringObjectHealthState, RepeatCount,  scomAlertParams, customfields|
+|Alert property|Representation in Operations Console|Representation in Azure Monitor|
+|------|------|------|
+| State | There are seven predefined Alert states, and these states can be extended to 255 user defined states. <br/> <br/> New, Acknowledged, Scheduled, Assigned to Engineering, Awaiting Evidence, Resolved, Closed.| Azure monitor alert state is represented with two distinct properties, Alert monitoring Condition and User state. <br/> <br/> The new alert from SCOM to Azure is represented as **Fired** and **New** respectively. <br/> <br/> The closed alert from SCOM Managed Instance is represented as **Resolved** and **New** or **Resolved** and **Closed**. |
+|Severity|Critical, Warning, and Informational|Critical, Error, Warning, Informational and Verbose <br/> <br/> SCOM MI alerts are represented with corresponding Alert severity in Azure.|
+|Signal Type| |All SCOM Managed Instance alerts are represented as Custom signal type in Azure|
+|Monitoring Service| |**SCOM Managed Instance**|
+|Effected resource| |If the alert is from Azure native/Arc resource, then the alert is represented with its corresponding ARM resource ID. <br/> <br/> If the alert is from on-prem workload, the alert is represented with SCOM Managed Instance resource ARM ID|
+|Additional properties|Priority, Category, Owner, Repeat count, alert context, and parameters. <br/> <br/> The management pack discovered object for the alert.|All these properties are represented in Azure alert context to enhance it with SCOM MI alerts information.|
 
 ## Integrate Azure Monitor alerts with ITSM tools
 
