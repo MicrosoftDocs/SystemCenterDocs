@@ -67,7 +67,7 @@ To set the Active Directory admin value in the SQL managed instance that you cre
 
    :::image type="Active directory admin" source="media/create-user-assigned-identity/active-directory-admin-inline.png" alt-text="Screenshot of the pane for Active Directory admin information." lightbox="media/create-user-assigned-identity/active-directory-admin-expanded.png":::
 
-1. Provide **Read** permissions to the SQL managed instance on Azure Active Directory (AAD) as mentioned in the error-box message which opens a pane for granting permissions.
+1. Provide **Read** permissions to the SQL managed instance on Azure Active Directory (AAD) as mentioned in the error-box message which opens a pane to grant permissions.
 
    :::image type="Grant permissions" source="media/create-user-assigned-identity/grant-permissions.png" alt-text="Screenshot of grant permissions.":::
 
