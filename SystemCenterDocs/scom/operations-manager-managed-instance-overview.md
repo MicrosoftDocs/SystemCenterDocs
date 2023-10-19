@@ -55,6 +55,26 @@ SCOM Managed Instance (preview) functionality allows you to:
 >[!NOTE]
 >Azure Monitor SCOM Managed Instance doesn't support **Move Resource** functionality.
 
+## Comparison of System Center Operations Manager on-premises with SCOM Managed Instance
+
+SCOM Managed Instance has all the capabilities of System Center Operations Manager on-premises in a cloud-native way.  
+
+The following table highlights the key differences between System Center Operations Manager on-premises and SCOM Managed Instance:  
+
+|Scenario|Feature|Operations Manager on-premises|SCOM Managed Instance|
+|---|---|---|---|
+|Manageability of monitoring infrastructure|Patching|Update RollUps (URs) released every 6-7 months. Customer must spend days to update all the System Center Operations Manager components.|Auto operating system patches; System Center Operations Manager patches every 15-20 days. Patching done at the click of a button.|
+|Manageability of monitoring infrastructure|Agent management|Manually managed by the customer.|Azure managed through VM extensions.|
+|Manageability of monitoring infrastructure|Availability, Reliability, and Fault-Tolerance|Customer responsibility. No HA or BCDR promised by the product.|Instance-level availability and tolerance.|
+|Manageability of monitoring infrastructure|Optimization and Scaling|Customer responsibility and heavy infrastructure.|Manually initiated from the portal at the click of a button.|
+|Workload monitoring|Reuse of System Center Operations Manager management packs|All agent-based management packs are supported.|All agent-based management packs are supported.|
+|Workload monitoring|Monitoring non-domain workloads|Supported via gateway servers.|Via gateway servers for off-Azure endpoints and via managed identify for Azure endpoints.|
+|Workload monitoring|Monitoring Arc and multi-cloud workloads|Arc is not supported. Availability of Azure management pack.|Azure-based, Arc connected, and on-premises workloads.|
+|Log collection and analysis|Query and analysis of observability data|Querying is possible.|Maintained in SQL managed instance. <br/> <br/> A first-class ability to channel data into the log analytics workspace to maintain a central data plane.
+|Alerting|Real-time alerts for infra and apps|Alerting through System Center Operations Manager Ops console.|Integrated alerting with Azure Monitor.|
+|Dashboarding|Basic reports about monitoring setup|SSRS-based reporting.|Built-in templates on Azure workbooks and dashboards for Azure Managed Grafana.|
+|Dashboarding|App-specific reports|Customers must manually integrate with SquaredUp.|Partner published library of dashboards for Azure Managed Grafana.|
+
 ## Architecture
 
 :::image type="SCOM Managed Instance (preview) architecture" source="media/operations-manager-managed-instance-overview/architecture.png" alt-text="Screenshot showing architecture.":::
