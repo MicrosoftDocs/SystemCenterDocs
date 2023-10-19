@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Troubleshoot issues with Azure Monitor SCOM Managed Instance (preview)
-description: This article describes the errors that might occur when you deploy or use Azure Monitor SCOM Managed Instance (preview) and how to resolve them.
+title: Troubleshoot issues with Azure Monitor SCOM Managed Instance
+description: This article describes the errors that might occur when you deploy or use Azure Monitor SCOM Managed Instance and how to resolve them.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -13,11 +13,11 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Troubleshoot issues with Azure Monitor SCOM Managed Instance (preview)
+# Troubleshoot issues with Azure Monitor SCOM Managed Instance
 
-This article describes the errors that might occur when you deploy or use Azure Monitor SCOM Managed Instance (preview) and how to resolve them.
+This article describes the errors that might occur when you deploy or use Azure Monitor SCOM Managed Instance and how to resolve them.
 
-## Scenario: SCOM Managed Instance (preview) creation/deployment
+## Scenario: SCOM Managed Instance creation/deployment
 
 ### General troubleshooting
 
@@ -40,20 +40,20 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 **Resolution**: Provide a subnet, which isn't delegated to any other service.
 
-### Issue: Error when SCOM Managed Instance (preview) is unable to reach SQL Managed Instance `%instance%`
+### Issue: Error when SCOM Managed Instance is unable to reach SQL Managed Instance `%instance%`
 
 **Cause**: This error can be caused by any of the following reasons:
-   -  Missing Line-of-sight visibility from SCOM Managed Instance (preview) VNet to SQL Managed Instance endpoint.
+   -  Missing Line-of-sight visibility from SCOM Managed Instance VNet to SQL Managed Instance endpoint.
    -  Missing the right level of NSG rules to allow traffic over SQL Managed Instance public endpoint.
    -  MSI isn't added as Active Directory admin.
-   - SCOM Managed Instance (preview) might not have read permissions on the SQL Managed Instance.
+   - SCOM Managed Instance might not have read permissions on the SQL Managed Instance.
    - There might be an issue with your VNet/Region.
 
 
 **Resolution:**
    - Provide read permission to the SQL Managed Instance.  
    - MSI must be added as Active Directory admin on the SQL Managed Instance.
-   - Ensure connectivity between SCOM Managed Instance (preview) and SQL Managed Instance networks. For more information, see [Create and configure an SQL Managed Instance](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
+   - Ensure connectivity between SCOM Managed Instance and SQL Managed Instance networks. For more information, see [Create and configure an SQL Managed Instance](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
 
 ### Issue: Not enough cores to create `%instance%` in the given region
 
@@ -70,7 +70,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 ### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain `%DomainName%`
 
 **Cause**: Occurs due to the following reasons:
-1. Line-of-sight visibility from SCOM Managed Instance (preview) Server to Domain Controller.
+1. Line-of-sight visibility from SCOM Managed Instance Server to Domain Controller.
 2. Domain User Credentials aren't provided or incorrect.
 3. OU Path for AD Domain isn't provided.
 
@@ -205,9 +205,9 @@ For example, the update button is enabled even though the title of the card read
 
 ### Issue: Extension takes more time to update and fails
 
-**Cause**: Occurs if SQL Managed Instance and SCOM Managed Instance (preview) are in different regions due to which the extension takes more time to update and eventually fails.
+**Cause**: Occurs if SQL Managed Instance and SCOM Managed Instance are in different regions due to which the extension takes more time to update and eventually fails.
 
-**Resolution**: Have SQL Managed Instance and SCOM Managed Instance (preview) in the same region.
+**Resolution**: Have SQL Managed Instance and SCOM Managed Instance in the same region.
 
 ### Issue: After patching, user data in the database is altered or not retained properly
 
@@ -256,4 +256,4 @@ For example, the update button is enabled even though the title of the card read
 
 **Feedback**
 
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

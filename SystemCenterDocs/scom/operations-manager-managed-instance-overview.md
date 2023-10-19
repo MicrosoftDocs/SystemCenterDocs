@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: About Azure Monitor SCOM Managed Instance (preview)
-description: This article describes about Azure Monitor SCOM Managed Instance (preview).
+title: About Azure Monitor SCOM Managed Instance
+description: This article describes about Azure Monitor SCOM Managed Instance.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -13,43 +13,43 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# About Azure Monitor SCOM Managed Instance (preview)
+# About Azure Monitor SCOM Managed Instance
 
-This article provides you with a quick service overview of Azure Monitor SCOM Managed Instance (preview).
+This article provides you with a quick service overview of Azure Monitor SCOM Managed Instance.
 
-With the integration of SCOM Managed Instance (preview), System Center Operations Manager functionality is now available on Azure.
+With the integration of SCOM Managed Instance, System Center Operations Manager functionality is now available on Azure.
 
-SCOM Managed Instance (preview) is a cloud-based alternative for System Center Operations Manager customers. SCOM Managed Instance (preview) provides you with continuous monitoring of your workloads with minimal infrastructure management through migrations or after you enable Azure connectivity for your on-premise environments. 
+SCOM Managed Instance is a cloud-based alternative for System Center Operations Manager customers. SCOM Managed Instance provides you with continuous monitoring of your workloads with minimal infrastructure management through migrations or after you enable Azure connectivity for your on-premise environments. 
 
 > [!VIDEO https://www.youtube.com/embed/lOlUq72wWag]
 
-To know about the SCOM Managed Instance (preview) Architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+To know about the SCOM Managed Instance Architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
 ## Key benefits
 
-The key benefits of SCOM Managed Instance (preview) are:
+The key benefits of SCOM Managed Instance are:
 
-- **Preserves investments in SCOM**: Allows you to preserve your existing System Center Operations Manager investments. SCOM Managed Instance (preview) is compatible with all the existing System Center Operations Manager management packs and provides a means to migrate management pack configurations from the on-premises setup.  
+- **Preserves investments in SCOM**: Allows you to preserve your existing System Center Operations Manager investments. SCOM Managed Instance is compatible with all the existing System Center Operations Manager management packs and provides a means to migrate management pack configurations from the on-premises setup.  
 
 - **Simplifies System Center Operations Manager infrastructure management**: All the cloud connected System Center Operations Manager components are managed by Microsoft; removes the responsibility of hardware/software updates and security patches.  
 
 - **Continues monitoring through migration**: Won't cause disruptions in monitoring while you migrate infrastructure or workloads from on-premises to the cloud. As you migrate from one UR to the next, you can migrate from your existing System Center Operations Manager setup.
 
-- **Monitors workloads everywhere**:  SCOM Managed Instance (preview) is hosted in Azure with the capability of monitoring workloads running wherever they are (in Azure or on-premises) without the need for modification.
+- **Monitors workloads everywhere**:  SCOM Managed Instance is hosted in Azure with the capability of monitoring workloads running wherever they are (in Azure or on-premises) without the need for modification.
 
 ## Features
 
 > [!VIDEO https://www.youtube.com/embed/MG5kGoe1zj0]
 
-SCOM Managed Instance (preview) functionality allows you to:
+SCOM Managed Instance functionality allows you to:
 
-- Configure an E2E System Center Operations Manager setup (SCOM Managed Instance (preview)) on Azure.
-- Manage (view, delete) your SCOM Managed Instance (preview) in Azure.
-- Connect to your SCOM Managed Instance (preview) using the System Center Operations Manager Ops console.
+- Configure an E2E System Center Operations Manager setup (SCOM Managed Instance) on Azure.
+- Manage (view, delete) your SCOM Managed Instance in Azure.
+- Connect to your SCOM Managed Instance using the System Center Operations Manager Ops console.
 - Monitor workloads (wherever they're located) using the Ops and Web console, and while using your existing management packs.
 - Incur zero database maintenance (Ops database and Data warehouse database) because of the offloading of database management to SQL Managed Instance (SQL MI).
 - Scale your instance immediately without the need to add/delete physical servers.
-- View your SCOM Managed Instance (preview) reports in Power BI.
+- View your SCOM Managed Instance reports in Power BI.
 - Patch your instance in one click with the latest bug fixes and features.
 
 >[!NOTE]
@@ -57,9 +57,9 @@ SCOM Managed Instance (preview) functionality allows you to:
 
 ## Architecture
 
-:::image type="SCOM Managed Instance (preview) architecture" source="media/operations-manager-managed-instance-overview/architecture.png" alt-text="Screenshot showing architecture.":::
+:::image type="SCOM Managed Instance architecture" source="media/operations-manager-managed-instance-overview/architecture.png" alt-text="Screenshot showing architecture.":::
 
-A SCOM Managed Instance (preview) consists of two parts: 
+A SCOM Managed Instance consists of two parts:
    - A Microsoft-managed part
    - A customer-managed part
 
@@ -86,7 +86,7 @@ Operations Manager Management server and monitored agents are connected through 
 
 ## Next steps
 
-  To create SCOM Managed Instance (preview), follow these steps:
+  To create SCOM Managed Instance, follow these steps:
 
    - [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md).
    - [Step 2. Create separate subnet in a VNet](create-separate-subnet-in-vnet.md).
@@ -99,10 +99,10 @@ Operations Manager Management server and monitored agents are connected through 
    - [Step 9. Configure the network firewall](configure-network-firewall.md).
    - [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md).
    - [Step 11. SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md).
-   - [Step 12. Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md).
+   - [Step 12. Create a SCOM Managed Instance](create-operations-manager-managed-instance.md).
 
-[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md).
+[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md).
 
 **Feedback**
 
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)
-description: This article describes how to manually install the Azure Monitor SCOM Managed Instance (preview) agent on Windows computers.
+title: Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance
+description: This article describes how to manually install the Azure Monitor SCOM Managed Instance agent on Windows computers.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)
+# Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance
 
-This article describes how to manually install the Azure Monitor SCOM Managed Instance (preview) agent on Windows computers.
+This article describes how to manually install the Azure Monitor SCOM Managed Instance agent on Windows computers.
 
 ## Monitor agent network configuration
 
@@ -27,7 +27,7 @@ The monitoring agent communicates with SCOM Managed Instance on port 5723. To al
 
 ## Install Windows agent
 
-You can use *MOMAgent.msi* to deploy Azure Monitor SCOM Managed Instance (preview) agents from the command line or by manual installation. For a list of the supported operating system versions, see [System requirements](./connect-managed-instance-ops-console.md).
+You can use *MOMAgent.msi* to deploy Azure Monitor SCOM Managed Instance agents from the command line or by manual installation. For a list of the supported operating system versions, see [System requirements](./connect-managed-instance-ops-console.md).
 
 For either of the methods, ensure the following conditions are met:
 
@@ -37,7 +37,7 @@ For either of the methods, ensure the following conditions are met:
 
 -   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack. The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers. To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller.  The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.
 
-- SCOM Managed Instance (preview) must be configured to accept agents installed with *MOMAgent.msi*, or they'll be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the managed instance is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+- SCOM Managed Instance must be configured to accept agents installed with *MOMAgent.msi*, or they'll be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the managed instance is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 
 > [!NOTE]
@@ -50,8 +50,8 @@ For more information about how to deploy the Operations Manager agent from the c
 
 ## Next steps
 
-[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
 
 **Feedback**
 
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
