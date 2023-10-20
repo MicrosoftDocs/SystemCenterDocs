@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Create an instance of Azure Monitor SCOM Managed Instance
-description: This article describes how to create a SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
+title: Tutorial - Create an instance of Azure Monitor SCOM Managed Instance
+description: This article describes how to create an Azure Monitor SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/05/2023
+ms.date: 10/20/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
