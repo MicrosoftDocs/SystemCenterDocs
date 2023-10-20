@@ -77,6 +77,8 @@
 ##### [What's new in SCOM Managed Instance](whats-new-scom-managed-instance.md)
 #### Quickstarts
 ##### [Quickstart: Migrate from Operations Manager on-premises to SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
+#### Tutorials
+##### [Tutorial: Create SCOM Managed Instance](tutorial-create-scom-managed-instance.md)
 #### Concepts
 ##### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
 ##### [FAQs](operations-manager-managed-instance-common-questions.md)
