@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 10/20/2023
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, references_regions
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
