@@ -20,7 +20,7 @@ Azure Monitor SCOM Managed Instance provides System Center Operations Manager fu
 This article describes how to create an instance of the service (a SCOM managed instance) with System Center Operations Manager functionality in Azure.
 
 >[!NOTE]
->You can create an instance only in the **West Europe**, **West US** and **North Europe** regions.
+>You can create an instance only in the **West Europe**, **West US**, and **North Europe** regions.
 
 ## Create a SCOM managed instance
 
