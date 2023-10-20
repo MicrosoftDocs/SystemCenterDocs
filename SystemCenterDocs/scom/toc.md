@@ -96,14 +96,14 @@
 ###### [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md)
 ###### [Step 11. SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md)
 ###### [Step 12. Create a SCOM Managed Instance](create-operations-manager-managed-instance.md)
-##### [SCOM Managed Instance agents](plan-planning-agent-deployment-scom-managed-instance.md)
-###### [Install Windows Agent manually Using MOMAgent.msi](manage-deploy-windows-agent-manually-scom-managed-instance.md)
-###### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
 ##### Post Deployment
 ###### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
 ###### [Scale SCOM Managed Instance](scale-scom-managed-instance.md)
 ###### [Patch SCOM Managed Instance](patch-scom-managed-instance.md)
 ###### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
+###### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
+##### [SCOM Managed Instance agents](plan-planning-agent-deployment-scom-managed-instance.md)
+###### [Install Windows Agent manually Using MOMAgent.msi](manage-deploy-windows-agent-manually-scom-managed-instance.md)
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 ##### [Configure Log Analytics for Azure Monitor SCOM Managed Instance](configure-log-analytics-for-scom-managed-instance.md)
