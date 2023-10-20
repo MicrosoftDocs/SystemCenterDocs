@@ -8,7 +8,6 @@
 ## [What's new in Operations Manager](whats-new-in-om.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
-## [Migrate from On-premises to SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
 ## [How to disable RC4 while installing Operations Manager](install-with-rc4-disabled.md)
 ## [Enable service logon ](enable-service-logon.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)
@@ -22,7 +21,6 @@
 ### [Design integration with other enterprise management products](plan-thirdparty-integration.md)
 ### [Designing for high availability and disaster recovery](plan-hadr-design.md)
 ### [Agent deployment planning](plan-planning-agent-deployment.md)
-### [Migrate to Operations Manager managed instance](migrate-to-operations-manager-managed-instance.md)
 ### Security
 #### [Configuring a firewall for Operations Manager](plan-security-config-firewall.md)
 #### [Configure TLS 1.2 encryption](plan-security-tls12-config.md)
