@@ -5,7 +5,7 @@ description: This article provides information on how to patch your Azure Monito
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/25/2023
+ms.date: 10/19/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -42,6 +42,9 @@ To patch SCOM Managed Instance, follow these steps:
 It takes 30 mins to 1 hour to successfully update the instance.
 
  :::image type="Instance updated" source="media/patch-scom-managed-instance/instance-updated.png" alt-text="Screenshot of Instance updated.":::
+
+>[!NOTE]
+>To run custom configurations in your SCOM Managed Instance management servers, write a script for your custom configurations and run that on your SCOM Managed Instance VMSS cluster using the steps mentioned in [Install applications in Virtual Machine Scale Sets with Azure PowerShell](https://learn.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-powershell).
 
 ## Troubleshoot patching issues
 
