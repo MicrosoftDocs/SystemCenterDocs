@@ -75,9 +75,11 @@
 #### Overview
 ##### [Overview](operations-manager-managed-instance-overview.md)
 ##### [What's new in SCOM Managed Instance](whats-new-scom-managed-instance.md)
-#### [Quickstart: Migrate from Operations Manager on-premises to SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
+#### Quickstarts
+##### [Quickstart: Migrate from Operations Manager on-premises to SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
 #### Concepts
 ##### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
+##### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### How-to guides
 ##### Create SCOM Managed Instance
 ###### [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md)
@@ -98,12 +100,11 @@
 ###### [SCOM Managed Instance agents](plan-planning-agent-deployment-scom-managed-instance.md)
 ###### [Install Windows Agent manually Using MOMAgent.msi](manage-deploy-windows-agent-manually-scom-managed-instance.md)
 ###### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
-#### Post Deployment
-##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
+##### Post Deployment
+###### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 ##### [Configure Log Analytics for Azure Monitor SCOM Managed Instance](configure-log-analytics-for-scom-managed-instance.md)
-#### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### Troubleshoot
 ##### [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
 ##### [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
