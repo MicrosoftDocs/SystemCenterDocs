@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
 title: Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance
-description: This article describes how to migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance.
-author: Farha-Bano
-ms.author: v-farhabano
+description: This quickstart describes how to migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance.
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/04/2023
+ms.date: 10/12/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance
+# Quickstart: Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance
 
-This article provides the process of migration from Operations Manager on-premises to Azure Monitor SCOM Managed Instance.
+This quickstart provides the process of migration from Operations Manager on-premises to Azure Monitor SCOM Managed Instance.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ This article provides the process of migration from Operations Manager on-premis
 8. Configure and verify connectors.
    For example: Configure and verify connectors for ITSM tools and automation.  
 
-9. Once all the monitoring data, reporting, notification, connectors, permissions, and groups are verified in SCOM MI, uninstall agent configuration for the old Operations Manager environment.  
+9. Once all the monitoring data, reporting, notification, connectors, permissions, and groups are verified in SCOM Managed Instance, uninstall agent configuration for the old Operations Manager environment.  
 
 >[!Note]
 >Overrides target a specific instance of a class and may not work after migration of management packs, as instance ID might change between management groups. Group membership configured on specific instances might not work either.

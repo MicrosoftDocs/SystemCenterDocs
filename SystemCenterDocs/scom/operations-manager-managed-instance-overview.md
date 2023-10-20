@@ -19,9 +19,7 @@ This article provides you with a quick service overview of Azure Monitor SCOM Ma
 
 With the integration of SCOM Managed Instance, System Center Operations Manager functionality is now available on Azure.
 
-SCOM Managed Instance is a cloud-based alternative for System Center Operations Manager customers. SCOM Managed Instance provides you with continuous monitoring of your workloads with minimal infrastructure management through migrations or after you enable Azure connectivity for your on-premise environments. 
-
-> [!VIDEO https://www.youtube.com/embed/lOlUq72wWag]
+SCOM Managed Instance is a cloud-based alternative for System Center Operations Manager customers. SCOM Managed Instance provides you with continuous monitoring of your workloads with minimal infrastructure management through migrations or after you enable Azure connectivity for your on-premises environments.
 
 To know about the SCOM Managed Instance Architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
@@ -38,8 +36,6 @@ The key benefits of SCOM Managed Instance are:
 - **Monitors workloads everywhere**:  SCOM Managed Instance is hosted in Azure with the capability of monitoring workloads running wherever they are (in Azure or on-premises) without the need for modification.
 
 ## Features
-
-> [!VIDEO https://www.youtube.com/embed/MG5kGoe1zj0]
 
 SCOM Managed Instance functionality allows you to:
 
@@ -69,7 +65,7 @@ The following table highlights the key differences between System Center Operati
 |Manageability of monitoring infrastructure|Optimization and Scaling|Customer responsibility and heavy infrastructure.|Manually initiated from the portal at the click of a button.|
 |Workload monitoring|Reuse of System Center Operations Manager management packs|All agent-based management packs are supported.|All agent-based management packs are supported.|
 |Workload monitoring|Monitoring non-domain workloads|Supported via gateway servers.|Via gateway servers for off-Azure endpoints and via managed identify for Azure endpoints.|
-|Workload monitoring|Monitoring Arc and multi-cloud workloads|Arc is not supported. Availability of Azure management pack.|Azure-based, Arc connected, and on-premises workloads.|
+|Workload monitoring|Monitoring Arc and multicloud workloads|Arc is not supported. Availability of Azure management pack.|Azure-based, Arc connected, and on-premises workloads.|
 |Log collection and analysis|Query and analysis of observability data|Querying is possible.|Maintained in SQL managed instance. <br/> <br/> A first-class ability to channel data into the log analytics workspace to maintain a central data plane.
 |Alerting|Real-time alerts for infra and apps|Alerting through System Center Operations Manager Ops console.|Integrated alerting with Azure Monitor.|
 |Dashboarding|Basic reports about monitoring setup|SSRS-based reporting.|Built-in templates on Azure workbooks and dashboards for Azure Managed Grafana.|
@@ -100,9 +96,9 @@ A customer-managed part consists of Ops and Web console that are used to monitor
 
 SCOM Managed Instance deploys and manages Operations Manager in customer subscription. It establishes connectivity to the on-premises monitored agents through VPN/Express Route.
 
-In customer subscription, SCOM Managed Instance, creates a Virtual Machine Scale Set in a managed resource group and deploys Operations Manager on the VMSS, which is front-loaded with Load Balancer for resiliency and elasticity. Operations Manager Management server connects to customer provided SQL MI for Database operations. Both SQL MI and VMSS are created in different VNets and are joined to establish line of sight.
+In customer subscription, SCOM Managed Instance, creates a Virtual Machine Scale Set in a managed resource group and deploys Operations Manager on the Virtual Machine Scale Sets, which is front-loaded with Load Balancer for resiliency and elasticity. Operations Manager Management server connects to customer provided SQL MI for Database operations. Both SQL managed instance and Virtual Machine Scale Sets are created in different VNets and are joined to establish line of sight.
 
-Operations Manager Management server and monitored agents are connected through ER/VPN. Agents establish session with Operations Manager Management server using the Kerberos authentication, where Operations Manager VMSS VMs are joined to the AD domain of the monitored agents. 
+Operations Manager Management server and monitored agents are connected through ER/VPN. Agents establish session with Operations Manager Management server using the Kerberos authentication, where Operations Manager Virtual Machine Scale Sets VMs are joined to the AD domain of the monitored agents. 
 
 ## Next steps
 
