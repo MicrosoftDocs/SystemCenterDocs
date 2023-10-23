@@ -81,7 +81,6 @@
 ##### [Tutorial: Create SCOM Managed Instance](tutorial-create-scom-managed-instance.md)
 #### Concepts
 ##### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
-##### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### How-to guides
 ##### Create SCOM Managed Instance
 ###### [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md)
@@ -110,6 +109,7 @@
 #### Troubleshoot
 ##### [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
 ##### [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
+##### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### Security
 ##### [Managed Identity](use-managed-identities-with-scom-mi.md)
 ##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)
