@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Create an instance of Azure Monitor SCOM Managed Instance
-description: This article describes how to create a SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
+title: Tutorial - Create an instance of Azure Monitor SCOM Managed Instance
+description: This article describes how to create an Azure Monitor SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 10/20/2023
 ms.custom: UpdateFrequency.5, references_regions
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,14 +13,30 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create an instance of Azure Monitor SCOM Managed Instance
+# Tutorial: Create an instance of Azure Monitor SCOM Managed Instance
 
 Azure Monitor SCOM Managed Instance provides System Center Operations Manager functionality in Azure. It helps you monitor all your workloads, whether they're on-premises, in Azure, or in any other cloud services.
 
-This article describes how to create an instance of the service (a SCOM managed instance) with System Center Operations Manager functionality in Azure.
+This tutorial describes how to create an instance of the service (a SCOM managed instance) with System Center Operations Manager functionality in Azure.
 
 >[!NOTE]
 >You can create an instance only in the **West Europe**, **West US**, and **North Europe** regions.
+
+## Prerequisites
+
+Before you create a SCOM managed instance, follow these steps:
+
+- [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md).
+- [Step 2. Create separate subnet in a VNet](create-separate-subnet-in-vnet.md).
+- [Step 3. Create a SQL Managed Instance](create-sql-managed-instance.md).
+- [Step 4. Create a Key vault](create-key-vault.md).
+- [Step 5. Create a user assigned identity](create-user-assigned-identity.md).
+- [Step 6. Create a computer group and gMSA account](create-gmsa-account.md).
+- [Step 7. Store domain credentials in Key vault](store-domain-credentials-in-key-vault.md).
+- [Step 8. Create a static IP](create-static-ip.md).
+- [Step 9. Configure the network firewall](configure-network-firewall.md).
+- [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md).
+- [Step 11. SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md).
 
 ## Create a SCOM managed instance
 

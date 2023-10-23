@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Create a user-assigned identity for SCOM Managed Instance (preview)
+title: Create a user-assigned identity for SCOM Managed Instance
 description: This article describes how to create a user-assigned identity, provide admin access to Azure SQL Managed Instance, and grant get and list access on a key vault.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -13,16 +13,16 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create a user-assigned identity for Azure Monitor SCOM Managed Instance (preview)
+# Create a user-assigned identity for Azure Monitor SCOM Managed Instance
 
 This article describes how to create a user-assigned identity, provide admin access to Azure SQL Managed Instance, and grant **Get** and **List** access on a key vault.
 
 >[!NOTE]
-> To learn about the Azure Monitor SCOM Managed Instance (preview) architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+> To learn about the Azure Monitor SCOM Managed Instance architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
 ## Create a managed service identity
 
-The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory authentication. For SCOM Managed Instance (preview), a managed identity replaces the traditional four System Center Operations Manager service accounts. It's used to access the Azure SQL Managed Instance database. It's also used to access the key vault.
+The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory authentication. For SCOM Managed Instance, a managed identity replaces the traditional four System Center Operations Manager service accounts. It's used to access the Azure SQL Managed Instance database. It's also used to access the key vault.
 
 > [!NOTE]
 > - Ensure that you're a contributor in the subscription where you create the MSI.
@@ -75,7 +75,7 @@ To set the Active Directory admin value in the SQL managed instance that you cre
 
    :::image type="read permissions" source="media/create-user-assigned-identity/read-permissions.png" alt-text="Screenshot of read permissions.":::
 
-1. Select **Set admin**, and search for your MSI. This MSI is the same one that you provided during the SCOM Managed Instance (preview) creation flow. You find the admin added to the SQL managed instance.
+1. Select **Set admin**, and search for your MSI. This MSI is the same one that you provided during the SCOM Managed Instance creation flow. You find the admin added to the SQL managed instance.
 
    :::image type="Azure Active directory admin" source="media/create-user-assigned-identity/azure-active-directory-inline.png" alt-text="Screenshot of MSI information for Azure Active Directory." lightbox="media/create-user-assigned-identity/azure-active-directory-expanded.png":::
 
@@ -113,4 +113,4 @@ To grant permission on the key vault that you created in [step 4](create-key-vau
 
 - [Create a gMSA account](create-gmsa-account.md)
 
-To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
