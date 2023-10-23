@@ -97,10 +97,6 @@ Users with the Global administrator role have access to all administrative featu
 
 ## Other queries
 
-### What are the charges that will be incurred during preview? 
-
-The charges that incur while running SCOM Managed Instance will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, and so on). Apart from the infrastructure charges, there will be no other IP-related charge.
-
 ### What if there's an error during the deployment? 
 
 During the deployment phase, there can be several reasons why deploying a SCOM Managed Instance shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it's best to delete the instance and create one again. For more information, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](./troubleshoot-scom-managed-instance.md).
@@ -138,7 +134,7 @@ Being in the same private network so that the IPs assigned to each component in 
 
 ### Can I view the SCOM Managed Instance resources and VMs in my subscription? 
 
-Since this preview requires you to create the SCOM Managed Instance in your subscription, all the SCOM Managed Instance resources (including the VMs) will be visible to you. However, we recommend not to do any actions on the VMs and other resources while you're operating SCOM Managed Instance to avoid unforeseen complexities.
+Since this instance requires you to create the SCOM Managed Instance in your subscription, all the SCOM Managed Instance resources (including the VMs) will be visible to you. However, we recommend not to do any actions on the VMs and other resources while you're operating SCOM Managed Instance to avoid unforeseen complexities.
 
 ## Next steps
 

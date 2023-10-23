@@ -122,7 +122,7 @@ Below is a quick summary of what can be migrated:
 >[!Note]
 > No 1:1 mapping is permitted between user roles in SCOM Managed Instance to Operations Manager on-premises.
 
-In preview, only two user roles are available, whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](/system-center/scom/manage-security-create-runas-account). 
+In SCOM Managed Instance, only two user roles are available, whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](/system-center/scom/manage-security-create-runas-account). 
 
 Use the following mapping chart to provide access on SCOM Managed Instance with appropriate permissions:
 
