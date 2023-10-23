@@ -136,6 +136,26 @@ Being in the same private network so that the IPs assigned to each component in 
 
 Since this instance requires you to create the SCOM Managed Instance in your subscription, all the SCOM Managed Instance resources (including the VMs) will be visible to you. However, we recommend not to do any actions on the VMs and other resources while you're operating SCOM Managed Instance to avoid unforeseen complexities.
 
+## Monitoring scenarios
+
+### Can I reuse existing System Center Operations Manager Gateway servers with SCOM Managed Instance? 
+
+No.  
+
+SCOM Managed Instance Managed Gateways can be configured on any Azure and Arc-enabled server which doesn’t have Operations Manager Gateway software on it. If you want to reuse Operations Manager on-premises Gateway servers with SCOM Managed Instance, uninstall Operations Manager Gateway software on it. To configure SCOM MI Managed Gateway, see [Configure monitoring of servers via SCOM Managed Instance Gateway](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-servers-via-scom-managed-instance-gateway).
+
+### Can SCOM Managed Instance Managed Gateway multi-home with System Center Operations Manager on-premises Management server?
+
+No. Multi-homing on SCOM Managed Instance Managed Gateway is not possible.  
+
+### What certificate is used in SCOM Managed Instance Managed Gateway for authentication?  
+
+The certificates are assigned by Microsoft and are signed by CA. There is no requirement for manual management of certificates on Managed Gateways.  
+
+### Can SCOM Managed Instance monitor on-premises machines without Arc installed?  
+
+Yes, if there is a direct connectivity (line-of-sight) between SCOM Managed Instance and on-premises machine via VPN/ER, you can monitor these machines. For more information, see [Configure monitoring of on-premises servers](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-on-premises-servers).
+
 ## Next steps
 
 [SCOM Managed Instance overview](operations-manager-managed-instance-overview.md)
