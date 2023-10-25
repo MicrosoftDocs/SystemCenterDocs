@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/24/2023
+ms.date: 10/25/2023
 ms.custom: intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager
@@ -114,3 +114,13 @@ Operations Manager 2022 allows you to discover Azure Migrate from console. You c
 The following sections introduce the new features or feature updates supported in Operations Manager 2022 Update Rollup 1 (UR1).
 
 For problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-operations-manager-3f5780c9-36d9-4bba-8361-d40ca7c7ae80).
+
+## New features in Operations Manager 2022 UR2
+
+The following sections introduce the new features or feature updates supported in Operations Manager 2022 Update Rollup 2 (UR2).
+
+For problems fixed in UR2 and the installation instructions for UR2, see the KB article.
+
+### Discover Azure Migrate from System Center Operations Manager
+
+Operations Manager 2022 UR2 allows you to discover Azure Migrate from console. You can now generate a complete inventory of your on-premises environment without appliance. This can be used in Azure Migrate to assess machines at scale. [Learn more](https://techcommunity.microsoft.com/t5/system-center-blog/discover-azure-migrate-from-scom/ba-p/3877467).
