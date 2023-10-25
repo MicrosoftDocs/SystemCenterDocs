@@ -5,7 +5,7 @@ description: This quickstart describes how to migrate from Operations Manager on
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/12/2023
+ms.date: 11/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -53,7 +53,7 @@ This quickstart provides the process of migration from Operations Manager on-pre
 >[!Note]
 >Overrides target a specific instance of a class and may not work after migration of management packs, as instance ID might change between management groups. Group membership configured on specific instances might not work either.
 
-Provided the procedure for the following artifacts as an example:
+Provided the migration details for the following artifacts as an example:
 
 - Management Packs and Overrides 
 - Dashboard
@@ -67,7 +67,7 @@ Provided the procedure for the following artifacts as an example:
 
 ## Migrate from on-premises to SCOM Managed Instance
 
-Select the required artifact to view the migration procedure from on-premises to SCOM Managed Instance:
+Select the required artifact to view the migration details from on-premises to SCOM Managed Instance:
 
 # [Management Packs and Overrides](#tab/mp-overrides)
 
