@@ -106,13 +106,13 @@ For problems fixed in VMM 2022 UR2, and installation instructions for UR2, see t
 
 ### Improved V2V conversion performance of VMware VMs to Hyper-V VMs
 
-Using VMM, convert your VMware VMs to Hyper-V with close to four times faster conversion speed and support for VMware VMs with disk sizes greater than 2TB.
+Using VMM, convert your VMware VMs to Hyper-V with close to four times faster conversion speed and support for VMware VMs with disk sizes greater than 2 TB.
 
-### Improved Arc-enabled SCVMM Discovery tab with guidance for WS 2012 and 2012R2 host and guest OSes
+### Improved Arc-enabled SCVMM Discovery tab with guidance for WS 2012 and 2012R2 host and guest operating systems
 
 The **Azure Arc** tab now highlights the latest feature additions to Arc-enabled SCVMM which includes support for Azure management services such as Microsoft Defender for Cloud, Azure Update Manager, Azure Monitor, Microsoft Sentinel, and more. [Learn more](https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-azure-management-capabilities-for-azure-arc-enabled/ba-p/3947253).  
 
-If you are running WS 2012 and 2012R2 host and guest OSes, the Azure Arc blade now gives guidance to continue remaining in support state.  
+If you are running WS 2012 and 2012R2 host and guest operating systems, the Azure Arc blade now gives guidance to continue remaining in support state.  
 
 ### Support for latest Linux Guest Operating Systems
 
