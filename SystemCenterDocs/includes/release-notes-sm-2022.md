@@ -12,7 +12,7 @@ title: include file
 ms.assetid:
 ---
 
-## Release Notes for System Center 2022 - Service Manager
+## Service Manager 2022 release notes
 The following sections detail the release notes for Service Manager 2022 and include the known issues and workarounds.
 
 ### Known issues and workarounds
