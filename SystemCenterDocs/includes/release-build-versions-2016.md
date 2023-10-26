@@ -35,7 +35,7 @@ The following tables list the release history for Operations Manager 2016.
 |7.2.12265.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |Update Rollup 9 |
 |7.2.12324.0 |[4580254](https://support.microsoft.com/kb/4580254) |October 2020 |Update Rollup 10 |
 |7.2.12335.0 |[5006871](https://support.microsoft.com/kb/5006871) |October 2021 |Update Rollup 10 - Web Console IDOR Vulnerability Fix |
-|7.2.12335.0 |[5028684](https://support.microsoft.com/kb/5028684) |August 2023 |SCX Compiler Mitigated Packages|
+|7.2.12345.0 |[5028684](https://support.microsoft.com/kb/5028684) |August 2023 |SCX Compiler Mitigated Packages |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
