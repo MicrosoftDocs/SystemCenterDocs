@@ -116,4 +116,4 @@ If you are running WS 2012 and 2012R2 host and guest operating systems, the Azur
 
 ### Support for latest Linux Guest Operating Systems
 
-With VMM 2022 UR2, you can run Ubuntu Linux 22, Debian 11, Oracle Linux 8, and 9 based Linux VMs.
+With VMM 2022 UR2, you can run Ubuntu Linux 22, Debian 11, Oracle Linux 8 and 9 based Linux VMs.
