@@ -63,6 +63,7 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 1. If you're configuring an internal email, then on the **General Properties** page, select **Next**. If you're configuring an external email, then right-click on **Profiles** and select **Create Run As Profile**. On the **General Properties** page, enter a suitable **Display name** and for **Select destination management pack**, choose **Notifications Internal Library** from the dropdown list.
 > [!NOTE]
 > The **Notifications Internal Library** Management Pack is required for External Email Authentication Run as profiles to be populated so you can select the profile you want to authenticate with in the SMTP Channel.
+
 19. On the **Run As Accounts** page, select **Add**.  
 
 20. In the **Add a Run As Account** window, in the **Run As account** dropdown list,  select the Run As account that you created earlier in this procedure. If you're configuring an internal email, accept the default **All targeted objects** and select **OK**. If you're configuring an external email, choose **A selected class, group, or object**, select **Select**, and choose **Class**. On the **Class Search** page, search and select **Alert Notification Subscription server**, and select **OK**.
