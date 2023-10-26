@@ -51,6 +51,7 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 13. Select the server(s) or resource pool(s) to distribute the credentials to, select **Add**, and then select **OK** to close the search window.  
 > [!NOTE]
 > The **Notifications Resource Pool** is normally used to allow all servers in the resource pool to access the credential.
+
 14. Select **OK** to close the properties window.  
 
 15. In the navigation pane, select **Profiles** under **Run As Configuration**.  
