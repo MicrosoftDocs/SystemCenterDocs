@@ -7,7 +7,7 @@ ms.author: v-farhabano
 ms.prod:  system-center
 ms.technology: service-manager
 keywords:
-ms.date: 03/15/2022
+ms.date: 10/26/2022
 title: include file
 ms.assetid:
 ---
@@ -57,3 +57,9 @@ Continue using System Center 2019 Web API until we fix this. System Center 2022 
 This issue is observed in Service Manager 2016 and later.
 
 **Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).
+
+## Service Manager 2022 UR2 release notes
+
+No known issues in Service Manager 2022 UR2.
+
+For the problems fixed in UR2 and the installation instructions for UR2, see the KB article.
