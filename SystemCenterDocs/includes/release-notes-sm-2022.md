@@ -62,4 +62,4 @@ This issue is observed in Service Manager 2016 and later.
 
 No known issues in Service Manager 2022 UR2.
 
-For the problems fixed in UR2 and the installation instructions for UR2, see the KB article.
+For the problems fixed in UR2 and the installation instructions for UR2, see the [KB article](https://support.microsoft.com/topic/hotfix-for-system-center-2022-service-manager-june-2023-kb5021792-8f17ff60-eafc-4c43-8399-85beebc1065f).
