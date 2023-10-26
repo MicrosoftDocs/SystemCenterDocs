@@ -91,9 +91,10 @@
 #### [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
 #### [Patch SCOM Managed Instance (preview)](patch-scom-managed-instance.md)
 #### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
-#### [SCOM Managed Instance (preview) monitoring scenarios](scom-managed-instance-monitoring-scenarios.md)
+#### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
 #### [SCOM Managed Instance (preview) agents](plan-planning-agent-deployment-scom-managed-instance.md)
 #### [Install Windows Agent manually Using MOMAgent.msi](manage-deploy-windows-agent-manually-scom-managed-instance.md)
+#### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
 #### [What's new in SCOM Managed Instance (preview)](whats-new-scom-managed-instance.md)
 #### Post Deployment
 ##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
