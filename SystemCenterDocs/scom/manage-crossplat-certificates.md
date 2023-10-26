@@ -54,6 +54,8 @@ If you've a firewall on your UNIX or Linux computer, you must open port 1270 (in
 
 - For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md).
 
+- For steps on how to configure the UNIX and Linux agent to use a certificate issued by a certificate authority: [Convert self-signed SCX certificates to CA certificates](/troubleshoot/system-center/scom/use-ca-certificate-on-scx-agent)
+
 - To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](~/scom/manage-upgrade-uninstall-crossplat-agent.md).
 
 - To understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers, review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md).
