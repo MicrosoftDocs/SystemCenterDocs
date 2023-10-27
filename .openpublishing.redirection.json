@@ -10,7 +10,7 @@
       "redirect_url" : "/system-center/dpm/upgrade-to-dpm-2016"
   },
   {
-     "source_path" : "SystemCenterDocs/scom/plan/manage-deploy-windows-agent-manually-scom-managed-instance.md",
+     "source_path" : "SystemCenterDocs/scom/manage-deploy-windows-agent-manually-scom-managed-instance.md",
      "redirect_url" : "/system-center/scom/operations-manager-managed-instance-overview"
   },
   {
