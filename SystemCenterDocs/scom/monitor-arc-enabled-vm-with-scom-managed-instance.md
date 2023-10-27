@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Monitor On-premises and Arc-enabled Virtual machines with Azure Monitor SCOM Managed Instance
+title: Monitor Azure and Arc-enabled Virtual machines with Azure Monitor SCOM Managed Instance
 description: Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Operations Manager users providing monitoring continuity for cloud and on-premises environments across the cloud adoption journey.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Monitor On-premises and Arc-enabled Virtual machines with Azure Monitor SCOM Managed Instance
+# Monitor Azure and Arc-enabled Virtual machines with Azure Monitor SCOM Managed Instance
 
 Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Operations Manager users providing monitoring continuity for cloud and on-premises environments across the cloud adoption journey.
 
