@@ -14,10 +14,6 @@
      "redirect_url": "/system-center/dpm/dpm-overview"
   },
   {
-     "source_path" : "SystemCenterDocs/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance.md",
-     "redirect_url": "/system-center/scom/monitor-arc-enabled-vm-with-scom-managed-instance"
-  },
-  {
      "source_path" : "SystemCenterDocs/scom/scom-managed-instance-monitoring-scenarios.md",
      "redirect_url": "/system-center/scom/monitor-health-scom-managed-instance"
   },
