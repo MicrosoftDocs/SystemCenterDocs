@@ -73,7 +73,7 @@ To associate a port classification to the logical switch, use the following proc
 
 1.	Go to **Fabric** > **Networking** > **Logical Switches**.
 2.	Right-click the selected logical switch to view its **Properties**.
-3.	Select Virtual Ports , select **Add** to open the **Add Virtual Port** page.
+3.	Select Virtual Ports, select **Add** to open the **Add Virtual Port** page.
 ![Screenshot of classification for virtual port.](media/port-classification-for-virtaul-port.png)
 4.	**Browse** to select the port classification (as an example, **TenantA Workload**) and select **OK**.
 5.	Select the **Include the Hyper-V virtual network adapter port profile** option and select **Browse**. Select the vNIC port profile (as an example, **TenantA**  that you created in the previous procedure). Select **OK**.
