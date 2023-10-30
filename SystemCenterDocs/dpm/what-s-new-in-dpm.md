@@ -127,7 +127,7 @@ You can install DPM 2019 UR1 on Windows Server Core 2019 and 2016.
 With DPM 2019 UR1, you can exclude the specific disk from a VMware VM backup. [Learn more](back-up-vmware.md).
 
 ### Support for another layer of authentication to delete online backup
-With DPM 2019 UR1, an another layer of authentication is added for critical operations. You'll be prompted to enter a security PIN when you perform *Stop Protection* with *Delete data* operations.
+With DPM 2019 UR1, another layer of authentication is added for critical operations. You'll be prompted to enter a security PIN when you perform *Stop Protection* with *Delete data* operations.
 
 ### New cmdlet parameter
 

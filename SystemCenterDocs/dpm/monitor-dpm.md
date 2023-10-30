@@ -70,13 +70,13 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
     1. **SMTP server name**: Enter the fully qualified domain name of the SMTP server.
     1. **SMTP server port**: Enter the fully qualified domain name of the server port. 
     1. **"From" address**: Configure the **From** address; should be a valid email address on the SMTP server. 
-    1. **Authenticated SMTP server**: Enter the domain user; for example, **domain\username** and password to authenticate to the SMTP server. With DPM 2022 UR2 and later, select Windows Authentication and supply your domain user credentials to proceed.
+    1. **Authenticated SMTP server**: Enter the domain user; for example, **domain\username** and password to authenticate to the SMTP server. With DPM 2022 UR2 and later, select Windows Authentication and provide your domain user credentials to proceed.
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
 **Use Microsoft 365 SMTP to configure email for DPM**
 
-DPM supports Microsoft 365 without a relay agent using the Basic SMTP authentication method with your email (username@contoso.com) and password. You can also use other email providers supporting Basic Authentication and port 587 for secure SMTP.
+DPM supports Microsoft 365 without a relay agent using the Basic SMTP authentication method with your email (username@contoso.com) and password. You can also use other email providers supporting basic authentication and port 587 for secure SMTP.
 
 >[!NOTE]
 >If you upgrade from DPM 2022 UR1 to 2022 UR2 and were using M365 SMTP, you must reconfigure your credentials by selecting the Basic Authentication option.

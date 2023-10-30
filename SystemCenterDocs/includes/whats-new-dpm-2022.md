@@ -66,7 +66,7 @@ See the following sections for information about the new features/feature update
 
 For issues fixed and the installation instructions for UR2, see KB article for Update Rollup 2.
 
-### Support for item level recovery for VMware and Hyper-V VMs running Windows from online recovery points
+### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
 DPM 2022 UR2 supports item level recovery directly from online recovery points for [VMware](https://learn.microsoft.com/system-center/dpm/back-up-vmware&tabs=Add%22%20%5Cl%20%22restore-an-individual-file-from-a-vm) and [Hyper-V](https://learn.microsoft.com/system-center/dpm/back-up-hyper-v-virtual-machines) VMs running Windows.  
 
@@ -75,7 +75,10 @@ DPM 2022 UR2 supports item level recovery directly from online recovery points f
 
 ### Support for VMware vSphere 8.0
 
-DPM 2022 UR2 supports protection of VMware VMs running on vSphere 8.0. Note that backup of vSphere [Data Sets](https://core.vmware.com/resource/vsphere-datasets) isn't supported. [Learn more](https://learn.microsoft.com/system-center/dpm/back-up-vmware).
+DPM 2022 UR2 supports protection of VMware VMs running on vSphere 8.0. 
+
+>[!NOTE]
+>Back up of vSphere [Data Sets](https://core.vmware.com/resource/vsphere-datasets) isn't supported. [Learn more](https://learn.microsoft.com/system-center/dpm/back-up-vmware).
 
 ### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
 
@@ -90,6 +93,6 @@ DPM 2022 UR2 supports falling back to crash consistent recovery points via a reg
 
 ### Experience improvements for DPM backups to Azure
 
-DPM 2022 UR2 supports listing of online recovery points for a data source along with the expiry time and soft-delete status. Right click on a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
+DPM 2022 UR2 supports listing of online recovery points for a data source along with the expiry time and soft-delete status. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
 
 DPM 2022 UR2 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](https://learn.microsoft.com/azure/backup/backup-azure-security-feature#immutability-support).

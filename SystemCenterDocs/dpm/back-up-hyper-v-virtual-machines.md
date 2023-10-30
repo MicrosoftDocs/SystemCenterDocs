@@ -381,11 +381,12 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 You can restore individual files from a protected Hyper-V VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
 >[!NOTE]
->Restoring an individual file from a Hyper-V VM is available only for Windows VM and from Disk and Online Recovery Points.
+>- Restoring an individual file from a Hyper-V VM is available only for Windows VM and from Disk and Online Recovery Points.
+>- With DPM 2022 UR2 and later, you can restore an individual file from a Hyper-V VM from both disk and online recovery points. The VM should be a Windows Server VM.
 
-With DPM 2022 UR2 and later, you can restore an individual file from a Hyper-V VM from both disk and online recovery points. The VM should be a Windows Server VM.
+For item-level recovery from an online recovery point, ensure that the Hyper-V role is installed on the MABS Server, automatic mounting of volumes is enabled, and the VM VHD doesn't contain a dynamic disk. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
 
-Additionally, for item-level recovery from an online recovery point, ensure that the Hyper-V role is installed on the MABS Server, automatic mounting of volumes is enabled, and the VM VHD doesn't contain a dynamic disk. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
+To restore an individual file from a Hyper-V VM, follow these steps:
 
 1. In the DPM Administrator Console, select **Recovery** view.
 
