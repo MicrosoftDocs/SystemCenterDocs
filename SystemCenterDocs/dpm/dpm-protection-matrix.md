@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 10/30/2023
 title: What can System Center Data Protection Manager back up?
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -121,7 +121,7 @@ The following sections provide details of the protection support matrix for DPM:
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2022, 2019, 2016|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs)<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.|
-|VMware VMs | VMware server 6.0, 6.5, 6.7, 7.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.<br /><br />vSphere 6.0 isn't supported in 2022 UR1 and later.|
+|VMware VMs | VMware server 6.0, 6.5, 6.7, 7.0, 8.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.<br /><br />vSphere 6.0 isn't supported in 2022 UR1 and later. <br/><br/>vSphere 8.0 is supported from 2022 UR2.|
 
 ### Linux
 
