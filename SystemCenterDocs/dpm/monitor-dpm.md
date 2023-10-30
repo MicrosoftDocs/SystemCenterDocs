@@ -38,7 +38,7 @@ To monitor DPM in the console, you should be signed in to the DPM server with a 
 
 **Use on-premises SMTP server to configure email for DPM**
 
-::: moniker range=">=sc-dpm-2019"
+::: moniker range="sc-dpm-2019"
 
 Follow the below steps to configure email for DPM using on-premises SMTP server:
 

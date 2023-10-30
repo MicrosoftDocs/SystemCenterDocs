@@ -26,7 +26,7 @@ We recommend you see the following articles for detailed information about what 
 
 ::: moniker range="sc-dpm-2022"
 
-This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2022](#dpm-2022-release-notes), [2022 UR1](#dpm-2022-ur1-release-notes) and 2022 UR2.
+This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2022](#dpm-2022-release-notes), [2022 UR1](#dpm-2022-ur1-release-notes) and [2022 UR2](#dpm-2022-ur2-release-notes).
 
 This article also includes the [release notes for DPM 2022 Hotfix KB 5015376](#dpm-2022-hotfix-kb-5015376-release-notes).
 
@@ -45,9 +45,9 @@ In addition, the following known issues are observed.
 
 DPM SQL Self-Service Recovery isn't available in DPM 2022 RTM. Support for SQL Self-Service Recovery is available from DPM 2022 UR1. [Learn More](/system-center/dpm/what-s-new-in-dpm?view=sc-dpm-2022&preserve-view=true#sql-self-service-recovery-tool).
 
-### DPM self-service recoveries does not list any recovery points for client machines.
+### DPM self-service recoveries doesn't list any recovery points for client machines
 
-**Description**: DPM client machine backups are not listed for domain users in the local administrators’ group for self-service recoveries.
+**Description**: DPM client machine backups aren't listed for domain users in the local administrators’ group for self-service recoveries.
 
 **Workaround**: Upgrade to DPM 2022 UR2 which fixes this issue and add non-administrative users manually via Authorization Manager.
 
