@@ -101,8 +101,6 @@
 ###### [Patch SCOM Managed Instance](patch-scom-managed-instance.md)
 ###### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
 ###### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
-##### [SCOM Managed Instance agents](plan-planning-agent-deployment-scom-managed-instance.md)
-###### [Install Windows Agent manually Using MOMAgent.msi](manage-deploy-windows-agent-manually-scom-managed-instance.md)
 ###### [Monitor Azure and Arc-enabled Virtual machines](monitor-arc-enabled-vm-with-scom-managed-instance.md)
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
