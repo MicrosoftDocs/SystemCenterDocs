@@ -5,7 +5,7 @@ description: This article describes how to create a user-assigned identity, prov
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/06/2023
+ms.date: 10/18/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -66,6 +66,14 @@ To set the Active Directory admin value in the SQL managed instance that you cre
 1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
 
    :::image type="Active directory admin" source="media/create-user-assigned-identity/active-directory-admin-inline.png" alt-text="Screenshot of the pane for Active Directory admin information." lightbox="media/create-user-assigned-identity/active-directory-admin-expanded.png":::
+
+1. Select the error-box message to provide **Read** permissions to the SQL managed instance on Azure Active Directory (AAD). **Grant permissions** pane opens to grant the permissions.
+
+   :::image type="Grant permissions" source="media/create-user-assigned-identity/grant-permissions.png" alt-text="Screenshot of grant permissions.":::
+
+1. Select **Grant Permissions** to initiate the operation and once it is completed, you can find a notification for the successful updation of active directory read permissions.
+
+   :::image type="read permissions" source="media/create-user-assigned-identity/read-permissions.png" alt-text="Screenshot of read permissions.":::
 
 1. Select **Set admin**, and search for your MSI. This MSI is the same one that you provided during the SCOM Managed Instance (preview) creation flow. You find the admin added to the SQL managed instance.
 
