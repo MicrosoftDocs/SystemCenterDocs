@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/20/2023
+ms.date: 10/30/2023
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
@@ -26,7 +26,7 @@ We recommend you see the following articles for detailed information about what 
 
 ::: moniker range="sc-dpm-2022"
 
-This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2022](#dpm-2022-release-notes) and [2022 UR1](#dpm-2022-ur1-release-notes).
+This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2022](#dpm-2022-release-notes), [2022 UR1](#dpm-2022-ur1-release-notes) and 2022 UR2.
 
 This article also includes the [release notes for DPM 2022 Hotfix KB 5015376](#dpm-2022-hotfix-kb-5015376-release-notes).
 
@@ -44,6 +44,12 @@ In addition, the following known issues are observed.
 ### No DPM SQL Self-Service Recovery Tool in DPM 2022 RTM
 
 DPM SQL Self-Service Recovery isn't available in DPM 2022 RTM. Support for SQL Self-Service Recovery is available from DPM 2022 UR1. [Learn More](/system-center/dpm/what-s-new-in-dpm?view=sc-dpm-2022&preserve-view=true#sql-self-service-recovery-tool).
+
+### DPM self-service recoveries does not list any recovery points for client machines.
+
+**Description**: DPM client machine backups are not listed for domain users in the local administrators’ group for self-service recoveries.
+
+**Workaround**: Upgrade to DPM 2022 UR2 which fixes this issue and add non-administrative users manually via Authorization Manager.
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 
@@ -125,12 +131,22 @@ The following issues were identified after the release of DPM 2022 UR1 (KB 50196
 ### Backups for VMware VMs that have VMware Tools start failing with error "Disk SubSystem 0x80990EF1" 
 **Description**: DPM 2022 UR1 had a bug where backups VMware VMs would fail if VMware tools is installed. This was due to a faulty configuration in DPM.
 
-**Workaround**: Apply Hotfix for DPM 2022 UR1.
+**Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2.
 
 ### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 and 2016 over TLS 1.2. 
 **Description**: DPM 2022 RTM and UR1 did not support MSOLEDB 18 for SQL Server 2017 and 2016 which is required to perform discovery and protection of SQL Server over TLS 1.2. This issue is observed after [KB5021128](https://support.microsoft.com/help/5021128) or [KB5021127](https://support.microsoft.com/help/5021127) is installed for SQL Server 2016 and 2017 respectively to mandate TLS 1.2 or when TLS 1.0 and 1.1 are disabled on the protected server.
 
-**Workaround**: Apply Hotfix for DPM 2022 UR1, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
+**Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
+
+## DPM 2022 UR2 release notes
+
+In addition to the issues documented above, DPM 2022 UR2 has the following issues:
+
+### DPM 2022 UR1 email reports with M365 credentials fail after upgrading to DPM 2022 UR2
+
+**Description**: DPM 2022 UR2 adds support for Windows and Basic SMTP authentication methods. Basic SMTP authentication will work for M365 and other mail providers who support it. But if you are using DPM 2022 UR1 with M365 credentials, your email reports and alerts will start failing since the credentials can’t be read by DPM 2022 UR2.
+
+**Workaround**: Re-configure email credentials for M365 using the Basic authentication type added in DPM 2022 UR2.
 
 ::: moniker-end
 

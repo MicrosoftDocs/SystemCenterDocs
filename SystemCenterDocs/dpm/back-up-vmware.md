@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 10/30/2023
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -30,9 +30,9 @@ DPM 2019 UR5 and later don't support vSphere 5.5. Ensure to upgrade to newer vSp
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
-This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, or 7.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0, and 8.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
-DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html).
+DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html). vSphere 8.0 is supported from DPM 2022 UR2.
 
 ::: moniker-end
 
@@ -51,6 +51,8 @@ DPM provides the following features when backing up VMware virtual machines:
 - DPM protects VMs migrated for load balancing: As VMs are migrated for load balancing, DPM automatically detects and continues VM protection.
 - DPM can recover files/folders from a Windows VM without recovering the entire VM, which helps recover necessary files faster.
 
+::: moniker range="<=sc-dpm-2019"
+
 ## Prerequisites and Limitations
 
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
@@ -68,6 +70,31 @@ Before you start backing up a VMware virtual machine, review the following list 
 - Ensure the following network ports are open:
     - TCP 443 between MABS and vCenter
     - TCP 443 and TCP 902 between MABS and ESXi host
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+## Prerequisites and Limitations
+
+Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
+
+- If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
+    - You can use static IP address of vCenter Server as a workaround.
+    - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
+- If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
+- If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
+- DPM can't protect VMware VMs to a secondary DPM server.
+- You can't back up user snapshots before the first DPM backup. Once DPM completes the first backup, then you can back up user snapshots.
+- DPM can't protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
+- DPM can't detect or protect VMware vApps.
+- DPM can't protect VMware VMs with existing snapshots.
+- Ensure the following network ports are open:
+    - TCP 443 between MABS and vCenter
+    - TCP 443 and TCP 902 between MABS and ESXi host
+- DPM can’t protect Data Sets when backing up vSphere 8.0 VMs.
+
+::: moniker-end
 
 ## Configure DPM to protect VMware
 
@@ -429,8 +456,10 @@ This section explains how to use DPM to restore VMware VM [recovery points](/pre
 
 ### Restore an individual file from a VM
 
+::: moniker range="<=sc-dpm-2019"
+
 >[!NOTE]
-> Restore of an individual file from a VM backup is possible only from the disk recovery points.  
+> Restore of an individual file from a VM backup is possible only from the disk recovery points.
 
 You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
@@ -454,6 +483,53 @@ You can restore individual files from a protected VM recovery point. This featur
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+>[!NOTE]
+> Restore of an individual file from a VM backup is possible only for Windows VMs from the disk and online recovery points.
+
+With DPM 2022 UR2 and later, you can restore an individual file from a VMware VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+Additionally, for item-level recovery from an online recovery point, ensure that automatic mounting of volumes is enabled. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
+
+You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
+
+1. In the DPM Administrator Console, select the **Recovery** view.
+2. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
+    ![Screenshot of open Recovery points.](./media/back-up-vmware/vmware-recovery-point-disk.png)
+3. In the **Recovery Points for:** pane, use the calendar to select the date that contains the desired recovery point(s).
+    Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, ensure that you've chosen the correct Recovery time. If the selected date has multiple recovery points, choose your recovery point by selecting it in the **Recovery time** dropdown menu. Once you chose the recovery point, the list of recoverable items appears in the **Path:** pane.
+4. To find the files you want to recover, in the **Path** pane, double-click the item in the **Recoverable item** column to open it. If you use an online recovery point, wait until the recovery point is mounted. Once the mount is complete, select the VM, disk, and the volume you want to restore until the files and folders are listed. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item.
+    Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** doesn't search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You can't recover items from multiple folders in the same recovery job.
+5. When you've selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**.
+    In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
+
+     ![Screenshot of review Recovery points.](./media/back-up-vmware/review-recovery-point-selection.png)
+6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, select **Modify**. To leave network throttling disabled, select **Next**. No other options on this wizard screen are available for VMware VMs.
+    If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
+7. On the **Select Recovery Type** screen, select **Next**. You can only recover your file(s) or folder(s) to a network folder.
+8. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
+
+    ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
+9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
+10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
+    The **Recovery status screen shows the progression of the recovery operation**.
+
+>[!TIP]
+>You can perform item-level restore of online recovery points for VMware VMs running Windows also from Add external DPM Server to recover VM files and folders quickly.
+
+### Fallback to crash consistent backups for VMware VMs
+
+Application consistent backups for VMware VMs running Windows can fail with **ApplicationQuiesceFault** error if the VSS providers in the VM aren't in a stable state or if the VM is under heavy load. If you encounter this quiescing error, use the following registry key on the DPM server running 2022 UR2 or later to retry the failed application consistent backup with a crash consistent backup.
+
+`Name - FailbackToCrashConsistentBackup DWORD = 1`
+
+`Path- SOFTWARE\\MICROSOFT\\MICROSOFT DATA PROTECTION MANAGER\\VMWare`
+
+::: moniker-end
 
 ::: moniker range=">=sc-dpm-2019"
 

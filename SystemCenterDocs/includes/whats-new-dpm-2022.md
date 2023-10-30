@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.prod: system-center
-ms.date: 02/27/2023
+ms.date: 10/30/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
@@ -59,3 +59,37 @@ DPM 2022 UR1 supports sending alert and report emails using Microsoft 365 SMTP d
 ### End of Support for vSphere 6.0
 
 vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html). DPM 2022 UR1 and later don't support backups for VMware VMs on vSphere 6.0. Ensure to upgrade to newer vSphere versions.
+
+## New features in DPM 2022 UR2
+
+See the following sections for information about the new features/feature updates supported in DPM 2022 UR2.
+
+For issues fixed and the installation instructions for UR2, see KB article for Update Rollup 2.
+
+### Support for item level recovery for VMware, Hyper-V VMs running Windows from online recovery points
+
+DPM 2022 UR2 supports item level recovery directly from online recovery points for [VMware](https://learn.microsoft.com/system-center/dpm/back-up-vmware&tabs=Add%22%20%5Cl%20%22restore-an-individual-file-from-a-vm) and [Hyper-V](https://learn.microsoft.com/system-center/dpm/back-up-hyper-v-virtual-machines) VMs running Windows.  
+
+>[!NOTE]
+>You need [MARS](https://support.microsoft.com/topic/update-for-azure-backup-for-microsoft-azure-recovery-services-agent-bb330054-65d3-4432-a45e-362e1888dd2c) version 2.0.9251.0 or later to use this feature.  
+
+### Support for VMware vSphere 8.0
+
+DPM 2022 UR2 supports protecting VMware VMs running on vSphere 8.0. Note that backup of vSphere [Data Sets](https://core.vmware.com/resource/vsphere-datasets) is not supported. [Learn more](https://learn.microsoft.com/system-center/dpm/back-up-vmware).
+
+### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
+
+DPM 2022 UR2 now supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](https://learn.microsoft.com/system-center/dpm/monitor-dpm).
+
+>[!NOTE]
+>If you have been using M365 SMTP with DPM 2022 UR1, you need to re-enter the credential using Basic Authentication.  
+
+### Fallback to crash consistent backups for VMware VMs  
+
+DPM 2022 UR2 supports falling back to crash consistent recovery points via a registry key for VMware VMs when backups fail with R*ApplicationQuiesceFault*. Learn more.
+
+### Experience improvements for DPM backups to Azure
+
+DPM 2022 UR2 supports listing of online recovery points for a data source along with the expiry time and soft-delete status. Right click on a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
+
+DPM 2022 UR2 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This will help you save backup costs when stopping protection for a data source backed up to an immutable vault. Learn more.
