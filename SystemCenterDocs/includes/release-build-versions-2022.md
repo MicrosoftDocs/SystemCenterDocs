@@ -26,6 +26,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10337.0|[5022455](https://support.microsoft.com/kb/5022455) |December 2022|Update Rollup 1 - Console Hotfix|
 |10.22.10565.0|[5029512](https://support.microsoft.com/kb/5029512) |July 2023|Discover Azure Migrate in Operations Manager|
 |10.22.10575.0|[5029601](https://support.microsoft.com/kb/5029601) |July 2023|GB compliance|
+| - | 5031649 | November 2023 | Update Rollup 2 |
 
 ### Agent
 |Build Number |KB |Release Date |Description |
