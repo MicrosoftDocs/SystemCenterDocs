@@ -5,11 +5,11 @@ description: This article describes how to deploy a Storage Spaces Direct disagg
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 10/30/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2, intro-deployment
+ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 ---
 
 # Deploy a Storage Spaces Direct disaggregated cluster in VMM
