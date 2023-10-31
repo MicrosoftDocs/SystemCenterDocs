@@ -33,6 +33,7 @@ The following tables list the release history for Operations Manager 2022.
 |-------------|---|-------------|------------|
 |10.22.10056.0||March 2022 |General Availability |
 |10.22.10110.0|[5020318](https://support.microsoft.com/kb/5020318) |December 2022|Update Rollup 1|
+| - | 5031649 | November 2023 | Update Rollup 2 |
 
 
 ### SCX Agent
@@ -45,5 +46,6 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1042.0|[5020318](https://support.microsoft.com/kb/5020318) |February 2023 |1.6.12-1 |Update Rollup 1 - Hotfix |
 |10.22.1044.0|[5024286](https://support.microsoft.com/kb/5024286) |March 2023 |1.7.0-0 |Update Rollup 1 - OpenSSL 3.0 |
 |10.22.1052.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023 |1.7.1-0 |Update Rollup 1 - Hotfix |
+| - | 5031649 | November 2023 | Update Rollup 2 |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
