@@ -5,7 +5,7 @@ description: This article describes the self-verification processes of the Opera
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/27/2023
+ms.date: 10/31/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -137,7 +137,7 @@ Follow these steps to run the validation script:
    > [!NOTE]
    > Operations Manager admin validations include a check for any GPO policies that override the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
 
-1. The validation script displays all the validation checks and their respective errors, which helps in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
+1. The [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) displays all the validation checks and their respective errors, which helps in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, return to the onboarding page and start the onboarding process.
 
@@ -153,7 +153,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot that shows the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
@@ -231,7 +231,7 @@ Follow these steps to run the validation script:
    > [!NOTE]
    > Active Directory admin validations include a check for any GPO policies that override the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
 
-1. The validation script displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
+1. The [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, there are no issues with the Active Directory parameters.
 
@@ -247,7 +247,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot of the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
@@ -296,7 +296,7 @@ Follow these steps to run the validation script:
        }
    ```
 
-1. The validation script displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
+1. The [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, there are no issues with the network configuration.
 
