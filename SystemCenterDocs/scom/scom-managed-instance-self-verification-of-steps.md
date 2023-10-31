@@ -137,7 +137,7 @@ Follow these steps to run the validation script:
    > [!NOTE]
    > Operations Manager admin validations include a check for any GPO policies that override the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
 
-1. The [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) displays all the validation checks and their respective errors, which helps in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
+1. The validation script displays all the validation checks and their respective errors, which helps in resolving the validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, return to the onboarding page and start the onboarding process.
 
@@ -231,7 +231,7 @@ Follow these steps to run the validation script:
    > [!NOTE]
    > Active Directory admin validations include a check for any GPO policies that override the local administrator group. It might take a long time to finish because the check queries all the policies for assessment.
 
-1. The [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
+1. The validation script displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, there are no issues with the Active Directory parameters.
 
@@ -296,7 +296,7 @@ Follow these steps to run the validation script:
        }
    ```
 
-1. The [validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
+1. The validation script displays all the validation checks and their respective errors, which helps in resolving validation issues. For fast resolution, run the script in PowerShell ISE with a breakpoint, which can speed up the debugging process.
 
      If all the checks pass successfully, there are no issues with the network configuration.
 
