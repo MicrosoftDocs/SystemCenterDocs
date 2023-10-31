@@ -75,3 +75,9 @@ taskkill /f /pid {pid of the service}
 **Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
 
 **Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
+
+### Update Rollup 2
+
+No known issues in Orchestrator 2022 UR2.
+
+For the problems fixed in UR2 and the installation instructions for UR2, see the KB article.
