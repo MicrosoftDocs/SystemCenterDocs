@@ -35,13 +35,13 @@ You may need to clear the Operations Console cache if you experience errors tryi
 
 Clearing the cache using a command:
 
-#### [Command Prompt](#tab/Cons_CMD)
+#### [Command Prompt](#tab/command-prompt)
 This may need to be executed from an Administrator Command Prompt, depending on organization policy.
 ```cmd
 "%ProgramFiles%\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" /clearcache
 ```
 
-#### [PowerShell](#tab/Cons_PS)
+#### [PowerShell](#tab/powershell)
 This may need to be executed from an Administrator PowerShell console, depending on organization policy.
 ```powershell
 # This will read the console install directory from registry and then execute. Useful if installed in a non-default directory
@@ -51,18 +51,17 @@ Start-Process ((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\System Center Operati
 Start-Process "$Env:ProgramFiles\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" -ArgumentList "/clearCache"
 ```
 
----
-
 Or to clear it manually:
 1. Close any open consoles
 2. Delete this file: `%LocalAppData%\Microsoft\Microsoft.EnterpriseManagement.Monitoring.Console\momcache.mdb`
 3. Reopen the Operations Manager console.
 
+---
 
 
 ### Management Servers
 
-#### [From the console](#tab/Mgmt_Console)
+#### [From the console](#tab/from-the-console)
 1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Management Server**.
 2. Select **Management Server State**.
 3. In the **Management Server State** column, select one or several servers.
@@ -72,7 +71,7 @@ Or to clear it manually:
 > [!NOTE] 
 > Know that this task works differently than that of an agent as all the workflows that are running under the HealthService on the management server needs to be stopped, and this can take time, to the point where the task may time out or throw an error. If this occurs, you may want to consider performing the cache clear manually.
 
-#### [On the server directly](#tab/Mgmt_Direct)
+#### [On the server directly](#tab/on-the-server-directly)
 1. Navigate to the server.
 2. Stop the Microsoft Monitoring Agent (HealthService) service.
 3. Delete this folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State`.
@@ -82,14 +81,14 @@ Or to clear it manually:
 
 ### Gateway Servers
 
-#### [From the console](#tab/Gtwy_Console)
+#### [From the console](#tab/from-the-console)
 1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Management Server**.
 2. Select **Management Server State**.
 3. In the **Gateway Management Server State** column, select one or several servers.
 4. In the **Tasks** pane, select **Flush Health Service State and Cache**.
 5. In the prompt window, enter the credentials used for this task, or use default and hit **Run**
 
-#### [On the server directly](#tab/Gtwy_Direct)
+#### [On the server directly](#tab/on-the-gateway-directly)
 1. Navigate to the server.
 2. Stop the Microsoft Monitoring Agent (HealthService) service.
 3. Delete this folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Gateway\Health Service State`.
@@ -100,7 +99,7 @@ Or to clear it manually:
 ### Client Servers
 If the agent on a client server is having issues with running workflows, old workflows, or is not communicating with the management group, you can try clearing the cache and restarting the agent. This should be one of the final steps in troubleshooting, however it can be very effective in solving some issues.
 
-#### [From the console](#tab/Clnt_Console)
+#### [From the console](#tab/from-the-console)
 1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Agent Details**.
 2. Select **Agent Health State**.
 3. In the **Agent State** column, select one or several agents.
@@ -110,7 +109,7 @@ If the agent on a client server is having issues with running workflows, old wor
 > [!NOTE] 
 > Because this action deletes the cached data in the health service store files, including the record of this task itself, no task status is reported in the console upon completion of the task, it will always "Succeed" if we sent the command.
 
-#### [On the client directly](#tab/Clnt_Direct)
+#### [On the client directly](#tab/on-the-client-directly)
 1. Navigate to the client machine.
 2. Stop the Microsoft Monitoring Agent (HealthService) service.
 3. Delete this folder: `%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State`.
