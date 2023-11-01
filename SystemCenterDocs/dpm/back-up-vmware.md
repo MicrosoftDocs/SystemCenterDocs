@@ -526,9 +526,10 @@ You can restore individual files from a protected VM recovery point. This featur
 
 Application consistent backups for VMware VMs running Windows can fail with **ApplicationQuiesceFault** error if the VSS providers in the VM aren't in a stable state or if the VM is under heavy load. If you encounter this quiescing error, use the following registry key on the DPM server running 2022 UR2 or later to retry the failed application consistent backup with a crash consistent backup.
 
-`Name - FailbackToCrashConsistentBackup DWORD = 1`
-
-`Path- SOFTWARE\\MICROSOFT\\MICROSOFT DATA PROTECTION MANAGER\\VMWare`
+```
+Name - FailbackToCrashConsistentBackup DWORD = 1
+Path- SOFTWARE\\MICROSOFT\\MICROSOFT DATA PROTECTION MANAGER\\VMWare
+```
 
 ::: moniker-end
 
