@@ -5,11 +5,7 @@ description: This article describes the self-verification processes of the Opera
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-<<<<<<< HEAD
 ms.date: 11/01/2023
-=======
-ms.date: 10/31/2023
->>>>>>> b409b7bc511f6ac8205530c8815ae0ee43e6d885
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
