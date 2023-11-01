@@ -1,30 +1,26 @@
 ---
 ms.assetid: 
-title: Create an instance of Azure Monitor SCOM Managed Instance (preview)
+title: Create an instance of Azure Monitor SCOM Managed Instance
 description: This article describes how to create a SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/05/2023
-ms.custom: UpdateFrequency.5
+ms.date: 11/01/2023
+ms.custom: UpdateFrequency.5, references_regions
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create an instance of Azure Monitor SCOM Managed Instance (preview)
+# Create an instance of Azure Monitor SCOM Managed Instance
 
-Azure Monitor SCOM Managed Instance (preview) provides System Center Operations Manager functionality in Azure. It helps you monitor all your workloads, whether they're on-premises, in Azure, or in any other cloud services.
+Azure Monitor SCOM Managed Instance provides System Center Operations Manager functionality in Azure. It helps you monitor all your workloads, whether they're on-premises, in Azure, or in any other cloud services.
 
 This article describes how to create an instance of the service (a SCOM managed instance) with System Center Operations Manager functionality in Azure.
 
-For more information about deploying SCOM Managed Instance (preview), play the following video.
-
-> [!VIDEO https://www.youtube.com/embed/urxiQBkObkU]
-
 >[!NOTE]
->In this preview of the service, you can create an instance only in the **West Europe** and **West US** regions.
+>You can create an instance only in the **West Europe**, **West US**, and **North Europe** regions.
 
 ## Create a SCOM managed instance
 
@@ -36,7 +32,7 @@ To create a SCOM managed instance, follow these steps:
     - **SCOM managed instance**: Allows you to create a SCOM managed instance.
     - **Manage your SCOM managed instance**: Allows you to view the list of created instances.
 
-    :::image type="SCOM Managed Instance (preview) overview" source="media/create-operations-manager-managed-instance/scom-managed-instance-overview-inline.png" alt-text="Screenshot that shows options on the Overview page for SCOM Managed Instance (preview)." lightbox="media/create-operations-manager-managed-instance/scom-managed-instance-overview-expanded.png":::
+    :::image type="SCOM Managed Instance overview" source="media/create-operations-manager-managed-instance/scom-managed-instance-overview-inline.png" alt-text="Screenshot that shows options on the Overview page for SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/scom-managed-instance-overview-expanded.png":::
 
     Select **Create SCOM managed instance**.
 1. The **Prerequisites to create SCOM managed instance** page opens. Download the script and run it on a domain-joined machine to validate the prerequisites.
@@ -45,7 +41,7 @@ To create a SCOM managed instance, follow these steps:
 1. Under **Basics**, do the following:
     - **Project details**:
         - **Subscription**: Select the Azure subscription in which you want to place the SCOM managed instance.
-        - **Resource group**: Select the resource group in which you want to place the SCOM managed instance. We recommend that you have a new resource group exclusively for SCOM Managed Instance (preview).
+        - **Resource group**: Select the resource group in which you want to place the SCOM managed instance. We recommend that you have a new resource group exclusively for SCOM Managed Instance.
 
         :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details-inline.png" alt-text="Screenshot that shows project details for creating a SCOM managed instance." lightbox="media/create-operations-manager-managed-instance/project-details-expanded.png":::
 
@@ -84,12 +80,12 @@ To create a SCOM managed instance, follow these steps:
         - **Virtual network**: Select the virtual network that has direct connectivity to the workloads that you want to monitor and to your domain controller and DNS server.
         - **Subnet**: Select a subnet that has at least 32 IP addresses to house the instance. The minimum address space is 28.
 
-           The subnet can have existing resources in it. However, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the SCOM Managed Instance (preview) components.
+           The subnet can have existing resources in it. However, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the SCOM Managed Instance components.
 
            >[!NOTE]
-           >Make sure to associate a NAT gateway with a chosen subnet. The presence of a NAT gateway is necessary for SCOM Managed Instance (preview) to retrieve the components required for both installation and auto upgrade scenarios.
+           >Make sure to associate a NAT gateway with a chosen subnet. The presence of a NAT gateway is necessary for SCOM Managed Instance to retrieve the components required for both installation and auto upgrade scenarios.
     - **SCOM managed instance interface**:
-        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview). Ensure that the IP is in the IPv4 format, and create it in your routing table.
+        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance. Ensure that the IP is in the IPv4 format, and create it in your routing table.
         - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step. The DNS name is mapped to the static IP that's previously defined.
     - **gMSA details**:
         - **Computer group name**: Enter the name of the computer group that you create after creation of the group managed service account (gMSA) account.
@@ -126,7 +122,7 @@ To create a SCOM managed instance, follow these steps:
 ## Next steps
 
 - [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
-- [Troubleshoot issues with Azure Monitor SCOM Managed Instance (preview)](troubleshoot-scom-managed-instance.md)
-- [Azure Monitor SCOM Managed Instance (preview) frequently asked questions](operations-manager-managed-instance-common-questions.md)
+- [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
+- [Azure Monitor SCOM Managed Instance frequently asked questions](operations-manager-managed-instance-common-questions.md)
 
-To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
