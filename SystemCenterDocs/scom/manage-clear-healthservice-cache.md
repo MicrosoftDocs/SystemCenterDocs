@@ -71,7 +71,7 @@ Or to clear it manually:
 > [!NOTE] 
 > Know that this task works differently than that of an agent as all the workflows that are running under the HealthService on the management server needs to be stopped, and this can take time, to the point where the task may time out or throw an error. If this occurs, you may want to consider performing the cache clear manually.
 
-#### [On the server directly](#tab/on-the-server-directly)
+#### [Perform steps manually](#tab/perform-steps-manually)
 1. Navigate to the server.
 2. Stop the Microsoft Monitoring Agent (HealthService) service.
 3. Delete this folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State`.
@@ -81,14 +81,14 @@ Or to clear it manually:
 
 ### Gateway Servers
 
-#### [From the console](#tab/from-the-console)
+#### [Perform steps manually](#tab/perform-steps-manually)
 1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Management Server**.
 2. Select **Management Server State**.
 3. In the **Gateway Management Server State** column, select one or several servers.
 4. In the **Tasks** pane, select **Flush Health Service State and Cache**.
 5. In the prompt window, enter the credentials used for this task, or use default and hit **Run**
 
-#### [On the server directly](#tab/on-the-gateway-directly)
+#### [Perform steps manually](#tab/perform-steps-manually)
 1. Navigate to the server.
 2. Stop the Microsoft Monitoring Agent (HealthService) service.
 3. Delete this folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Gateway\Health Service State`.
@@ -109,7 +109,7 @@ If the agent on a client server is having issues with running workflows, old wor
 > [!NOTE] 
 > Because this action deletes the cached data in the health service store files, including the record of this task itself, no task status is reported in the console upon completion of the task, it will always "Succeed" if we sent the command.
 
-#### [On the client directly](#tab/on-the-client-directly)
+#### [Perform steps manually](#tab/perform-steps-manually)
 1. Navigate to the client machine.
 2. Stop the Microsoft Monitoring Agent (HealthService) service.
 3. Delete this folder: `%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State`.
