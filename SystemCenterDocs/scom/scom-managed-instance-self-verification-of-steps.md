@@ -5,7 +5,11 @@ description: This article describes the self-verification processes of the Opera
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
+<<<<<<< HEAD
 ms.date: 11/01/2023
+=======
+ms.date: 10/31/2023
+>>>>>>> b409b7bc511f6ac8205530c8815ae0ee43e6d885
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -53,7 +57,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot that shows the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
@@ -153,7 +157,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot that shows the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
@@ -247,7 +251,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot of the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
