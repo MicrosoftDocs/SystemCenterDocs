@@ -47,6 +47,7 @@ Here's an example of a command to run the script (replace the parameters in quot
 ```
 
 If the script runs successfully, you see **Deployment finished Successfully**.
+
 If there's an error in the script, you see **An error occurred during deployment. Please check the above logs for debugging**.
 
 ## Next steps
