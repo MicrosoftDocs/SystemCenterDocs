@@ -22,9 +22,6 @@ ms.assetid: bea86d42-4838-46b0-96ac-75a0e8988e3c
 
 In System Center Operations Manager, when troubleshooting an issue with the Operations console or with an agent, you may see recommendations to "clear the cache." For more information on troubleshooting an issue with an agent, see [Not monitored and gray agents](manage-agents-not-healthy.md).  
 
-## To clear the cache
-
-The following explains how and when to clear the console, server, or agent cache.  
 
 ### Operations Console
 
@@ -33,15 +30,8 @@ You may need to clear the Operations Console cache if you experience errors tryi
 > [!IMPORTANT] 
 > Before proceeding close any open consoles.
 
-Clearing the cache using a command:
 
-#### [Command Prompt](#tab/command-prompt)
-This may need to be executed from an Administrator Command Prompt, depending on organization policy.
-```cmd
-"%ProgramFiles%\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" /clearcache
-```
-
-#### [PowerShell](#tab/powershell)
+#### [Using PowerShell](#tab/using-powershell)
 This may need to be executed from an Administrator PowerShell console, depending on organization policy.
 ```powershell
 # This will read the console install directory from registry and then execute. Useful if installed in a non-default directory
@@ -51,9 +41,15 @@ Start-Process ((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\System Center Operati
 Start-Process "$Env:ProgramFiles\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" -ArgumentList "/clearCache"
 ```
 
-Or to clear it manually:
-1. Close any open consoles
-2. Delete this file: `%LocalAppData%\Microsoft\Microsoft.EnterpriseManagement.Monitoring.Console\momcache.mdb`
+#### [Using Command Prompt](#tab/using-command-prompt)
+This may need to be executed from an Administrator Command Prompt, depending on organization policy.
+```cmd
+"%ProgramFiles%\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" /clearcache
+```
+
+#### [Perform steps manually](#tab/perform-steps-manually)
+1. Close any open Operations Manager consoles
+2. Delete the console cache file: `%LocalAppData%\Microsoft\Microsoft.EnterpriseManagement.Monitoring.Console\momcache.mdb`
 3. Reopen the Operations Manager console.
 
 ---
@@ -69,12 +65,12 @@ Or to clear it manually:
 5. In the prompt window, enter the credentials used for this task, or use default and hit **Run**
 
 > [!NOTE] 
-> Know that this task works differently than that of an agent as all the workflows that are running under the HealthService on the management server needs to be stopped, and this can take time, to the point where the task may time out or throw an error. If this occurs, you may want to consider performing the cache clear manually.
+> Know that this task works differently than that of an agent as all the workflows that are running under the HealthService on the management server (which could be in the tens of thousands) needs to be stopped, and this can take time, to the point where the task may time out or throw an error. If this occurs, you may want to consider performing the cache clear manually.
 
 #### [Perform steps manually](#tab/perform-steps-manually)
 1. Navigate to the server.
 2. Stop the Microsoft Monitoring Agent (HealthService) service.
-3. Delete this folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State`.
+3. Delete the cache folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State`.
 4. Restart the Microsoft Monitoring Agent (HealthService) service.
 
 ---
@@ -90,9 +86,9 @@ Or to clear it manually:
 
 #### [Perform steps manually](#tab/perform-steps-manually)
 1. Navigate to the server.
-2. Stop the Microsoft Monitoring Agent (HealthService) service.
-3. Delete this folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Gateway\Health Service State`.
-4. Restart the Microsoft Monitoring Agent (HealthService) service.
+2. Stop the **Microsoft Monitoring Agent (HealthService)** service.
+3. Delete the cache folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Gateway\Health Service State`.
+4. Restart the **Microsoft Monitoring Agent (HealthService)** service.
 
 ---
 
@@ -107,13 +103,13 @@ If the agent on a client server is having issues with running workflows, old wor
 5. In the prompt window, enter the credentials used for this task, or use default and hit **Run**
 
 > [!NOTE] 
-> Because this action deletes the cached data in the health service store files, including the record of this task itself, no task status is reported in the console upon completion of the task, it will always "Succeed" if we sent the command.
+> Because this action deletes the cached data in the health service store files, including the record of this task itself, no true task status is reported in the console upon completion of the task, it will always "Succeed" so long as the command was sent.
 
 #### [Perform steps manually](#tab/perform-steps-manually)
 1. Navigate to the client machine.
-2. Stop the Microsoft Monitoring Agent (HealthService) service.
-3. Delete this folder: `%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State`.
-4. Restart the Microsoft Monitoring Agent (HealthService) service.
+2. Stop the **Microsoft Monitoring Agent (HealthService)** service.
+3. Delete the cache folder: `%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State`.
+4. Restart the **Microsoft Monitoring Agent (HealthService)** service.
 
 ---
 
