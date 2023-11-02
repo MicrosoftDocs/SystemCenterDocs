@@ -1,5 +1,5 @@
 # [About Operations Manager](welcome.md)
-## [About Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md)
+## [About Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md)
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
 ## [Operations Manager build versions](release-build-versions.md)
@@ -8,7 +8,6 @@
 ## [What's new in Operations Manager](whats-new-in-om.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
-## [Migrate from On-premises to SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
 ## [How to disable RC4 while installing Operations Manager](install-with-rc4-disabled.md)
 ## [Enable service logon ](enable-service-logon.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)
@@ -22,7 +21,6 @@
 ### [Design integration with other enterprise management products](plan-thirdparty-integration.md)
 ### [Designing for high availability and disaster recovery](plan-hadr-design.md)
 ### [Agent deployment planning](plan-planning-agent-deployment.md)
-### [Migrate to Operations Manager managed instance (preview)](migrate-to-operations-manager-managed-instance.md)
 ### Security
 #### [Configuring a firewall for Operations Manager](plan-security-config-firewall.md)
 #### [Configure TLS 1.2 encryption](plan-security-tls12-config.md)
@@ -73,36 +71,44 @@
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
-### Azure Monitor SCOM Managed Instance (preview)
-#### [Overview](operations-manager-managed-instance-overview.md)
-#### Create SCOM Managed Instance (preview)
-##### [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md)
-##### [Step 2. Create separate subnet in a VNet](create-separate-subnet-in-vnet.md)
-##### [Step 3. Create a SQL MI](create-sql-managed-instance.md)
-##### [Step 4. Create a Key vault](create-key-vault.md)
-##### [Step 5. Create a user assigned identity](create-user-assigned-identity.md)
-##### [Step 6. Create a computer group and gMSA account](create-gmsa-account.md)
-##### [Step 7. Store domain credentials in Key vault](store-domain-credentials-in-key-vault.md)
-##### [Step 8. Create a static IP](create-static-ip.md)
-##### [Step 9. Configure the network firewall](configure-network-firewall.md)
-##### [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md)
-##### [Step 11. SCOM Managed Instance (preview) self-verification of steps](scom-managed-instance-self-verification-of-steps.md)
-##### [Step 12. Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md)
-#### [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
-#### [Patch SCOM Managed Instance (preview)](patch-scom-managed-instance.md)
-#### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
-#### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
-#### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
-#### [What's new in SCOM Managed Instance (preview)](whats-new-scom-managed-instance.md)
-#### Post Deployment
-##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
+### Azure Monitor SCOM Managed Instance
+#### Overview
+##### [Overview](operations-manager-managed-instance-overview.md)
+##### [What's new in SCOM Managed Instance](whats-new-scom-managed-instance.md)
+#### Quickstarts
+##### [Quickstart: Migrate from Operations Manager on-premises to SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
+#### Tutorials
+##### [Tutorial: Create SCOM Managed Instance](tutorial-create-scom-managed-instance.md)
+#### Concepts
+##### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
+#### How-to guides
+##### Create SCOM Managed Instance
+###### [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md)
+###### [Step 2. Create separate subnet in a VNet](create-separate-subnet-in-vnet.md)
+###### [Step 3. Create a SQL MI](create-sql-managed-instance.md)
+###### [Step 4. Create a Key vault](create-key-vault.md)
+###### [Step 5. Create a user assigned identity](create-user-assigned-identity.md)
+###### [Step 6. Create a computer group and gMSA account](create-gmsa-account.md)
+###### [Step 7. Store domain credentials in Key vault](store-domain-credentials-in-key-vault.md)
+###### [Step 8. Create a static IP](create-static-ip.md)
+###### [Step 9. Configure the network firewall](configure-network-firewall.md)
+###### [Step 10. Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md)
+###### [Step 11. SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md)
+###### [Step 12. Create a SCOM Managed Instance](create-operations-manager-managed-instance.md)
+##### Post Deployment
+###### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
+###### [Scale SCOM Managed Instance](scale-scom-managed-instance.md)
+###### [Patch SCOM Managed Instance](patch-scom-managed-instance.md)
+###### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
+###### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
+###### [Monitor Azure and Arc-enabled Virtual machines](monitor-arc-enabled-vm-with-scom-managed-instance.md)
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 ##### [Configure Log Analytics for Azure Monitor SCOM Managed Instance](configure-log-analytics-for-scom-managed-instance.md)
-#### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### Troubleshoot
 ##### [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
 ##### [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
+##### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### Security
 ##### [Managed Identity](use-managed-identities-with-scom-mi.md)
 ##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)
