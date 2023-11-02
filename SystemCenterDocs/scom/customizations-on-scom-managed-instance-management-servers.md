@@ -34,6 +34,7 @@ You can run the script on a machine, which has PowerShell running. Sign in to th
 The script needs the following inputs:
 
 |Input | Description |
+|---|---|
 | **ResourceGroupName** | The name of the resource group that contains the SCOM Managed Instance management servers Virtual machine scale set. |
 | **VMSSName** | The name of the SCOM Managed Instance management servers Virtual machine scale set to apply customizations to. |
 | **FileURI** | The parameter should point to an accessible URI where the PowerShell script to be executed is hosted. You can upload the customization script to sources such as Azure Blob Storage, GitHub, or any other platform that provides storage. For example, see https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/automate-iis.ps1. |
