@@ -86,7 +86,7 @@ DPM 2022 UR2 supports Windows and Basic SMTP authentication to send reports and 
 
 ### Fallback to crash consistent backups for VMware VMs  
 
-DPM 2022 UR2 supports falling back to crash consistent recovery points via a registry key for VMware VMs when backups fail with *ApplicationQuiesceFault*. Learn more.
+DPM 2022 UR2 supports falling back to crash consistent recovery points via a registry key for VMware VMs when backups fail with *ApplicationQuiesceFault*. [Learn more](https://learn.microsoft.com/system-center/dpm/back-up-vmware&tabs=Add#fallback-to-crash-consistent-backups-for-vmware-vms).
 
 ### Experience improvements for DPM backups to Azure
 
