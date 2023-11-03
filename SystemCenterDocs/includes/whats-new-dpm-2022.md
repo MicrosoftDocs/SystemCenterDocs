@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.prod: system-center
-ms.date: 10/30/2023
+ms.date: 11/07/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
