@@ -78,6 +78,20 @@ taskkill /f /pid {pid of the service}
 
 ### Update Rollup 2
 
-No known issues in Orchestrator 2022 UR2.
+See [KB article #5033099](https://support.microsoft.com/kb/5033099) for improvements and issues fixed in 2022 UR2.
 
-For the problems fixed in UR2 and the installation instructions for UR2, see the KB article.
+## Known Issues and Workarounds
+
+The following are the known issues and workarounds in System Center 2022 - Orchestrator.
+
+### Identifiers are displayed instead of activity names on the Runbook Tester canvas and log view area.
+
+**Description**: Identifiers are displayed instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity name is included as a property in the Log View area.
+
+**Workaround**: If needed, Runbook tester of UR1 can be used, it is compatible with SCO UR2.
+
+### Text content does not show correctly in the Runbook Tester log view area.
+
+**Description**: Text content does not show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
+
+**Workaround**: None
