@@ -19,13 +19,11 @@ The Orchestrator 2022 release includes all issues fixed until [Orchestrator 2019
 >[!NOTE]
 >System Center Orchestrator 2019 IPs aren't supported on System Center Orchestrator 2022. 
 
-### Update Rollup 1 (12 January 2023)
+## Orchestrator 2022 UR1 release notes
 
-See [KB article #5021420](https://support.microsoft.com/kb/5021420) for improvements and issues fixed in 2022 UR1.
+The following sections summarize the release notes for Orchestrator 2022 UR1, and include the known issues and workarounds.
 
-## Known Issues and Workarounds
-
-The following are the known issues and workarounds in System Center 2022 - Orchestrator.
+For the problems fixed in UR1 and the installation instructions for UR2, see [the KB article](https://support.microsoft.com/kb/5021420).
 
 ### Issues with Exchange Admin Integration pack v10.22.1.x
 
@@ -76,8 +74,20 @@ taskkill /f /pid {pid of the service}
 
 **Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
 
-### Update Rollup 2
+## Orchestrator 2022 UR2 release notes
 
-No known issues in Orchestrator 2022 UR2.
+The following sections summarize the release notes for Orchestrator 2022 UR2, and include the known issues and workarounds.
 
-For the problems fixed in UR2 and the installation instructions for UR2, see the KB article.
+For the problems fixed in UR2 and the installation instructions for UR2, see [the KB article](https://support.microsoft.com/kb/5033099).
+
+### Identifiers are displayed instead of activity names on the Runbook Tester canvas and log view area.
+
+**Description**: Identifiers are displayed instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity name is included as a property in the Log View area.
+
+**Workaround**: If needed, Runbook tester of UR1 can be used, it is compatible with SCO UR2.
+
+### Text content does not show correctly in the Runbook Tester log view area.
+
+**Description**: Text content does not show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
+
+**Workaround**: None
