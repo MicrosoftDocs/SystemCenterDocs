@@ -47,7 +47,7 @@ This may need to be executed from an Administrator Command Prompt, depending on 
 "%ProgramFiles%\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" /clearcache
 ```
 
-#### [Perform steps manually](#tab/perform-steps-manually)
+#### [Manual Clear](#tab/manual-clear)
 1. Close any open Operations Manager consoles
 2. Delete the console cache file: `%LocalAppData%\Microsoft\Microsoft.EnterpriseManagement.Monitoring.Console\momcache.mdb`
 3. Reopen the Operations Manager console.
