@@ -5,7 +5,7 @@ description: This article details the release builds in Orchestrator
 author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 08/02/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
