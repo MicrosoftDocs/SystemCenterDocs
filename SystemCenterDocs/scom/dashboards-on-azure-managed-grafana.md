@@ -17,15 +17,15 @@ monikerRange: '>=sc-om-2019'
 
 Azure Managed Grafana (AMG) is a data visualization platform, built on top of the Grafana software by Grafana Labs. Grafana helps you bring together metrics, logs, and traces into a single user interface.
 
-Azure Managed Grafana is optimized for the Azure environment and works seamlessly providing the following integration features:
+Azure Managed Grafana is optimized for the Azure environment and works seamlessly, providing the following integration features:
 
-- Built-in support for [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/) and [Azure Data Explorer](https://learn.microsoft.com/azure/data-explorer/)
-- User authentication and access control using Microsoft Entra identities
-- Direct import of existing charts from the Azure portal
+- Built-in support for [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/) and [Azure Data Explorer](https://learn.microsoft.com/azure/data-explorer/).
+- User authentication and access control using Microsoft Entra identities.
+- Direct import of existing charts from the Azure portal.
 
 This article describes how to create a SCOM Managed Instance dashboards on Azure Managed Grafana.
 
-## Steps to create a SCOM Managed Instace dashboards on Azure Managed Grafana
+## Steps to create a SCOM Managed Instance dashboards on Azure Managed Grafana
 
 To create a SCOM Managed Instance dashboards on Azure Managed Grafana, follow these steps:
 
@@ -40,7 +40,7 @@ To create a SCOM Managed Instance dashboards on Azure Managed Grafana, follow th
 
 1. On the AMG instance, provide **Grafana Editors** permissions to the users who need access to create dashboards.
 2. On the SCOM Managed Instance Database, assign `db_datareader` permission by downloading and running the script from here.
-3. Note down the SQL managed instance database endpoints and the Database name.
+3. Note the SQL managed instance database endpoints and the Database name.
 
 ### Configure Data source on AMG
 
@@ -51,5 +51,5 @@ To create a SCOM Managed Instance dashboards on Azure Managed Grafana, follow th
 
 ### Import SCOM Managed Instance dashboards in AMG instance
 
-1. You can import SCOM Managed Instance dashboards by navigating to AMG instance endpoint > **Dashboards** > **Import** > **Import via grafana.com** > **Enter XXXX** and **Load**.
+1. Navigate to AMG instance endpoint > **Dashboards** > **Import** > **Import via grafana.com** > **Enter XXXX** and select **Load**.
 2. Browse to imported dashboards and choose the above created Data source in the dashboard settings.
