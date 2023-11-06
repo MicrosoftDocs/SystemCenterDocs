@@ -148,6 +148,18 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 **Workaround**: Re-configure email credentials for Microsoft 365 using the basic authentication type added in DPM 2022 UR2.
 
+### DPM can’t enumerate SQL databases for protection 
+
+**Description**: DPM can’t enumerate SQL databases for protection when MSOLEDB 18 is missing on the protected server since DPM requires MSOLEDB18 to enumerate databases for protection.  
+
+**Workaround**: Install SQL [MSOLEDB 18](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16&viewFallbackFrom=sql-server-2016%22%20%5Cl%20%221867) driver if it is missing on the protected server. SQL Server 2022 ships with MSOLEDB 18 by default.  
+
+### Stop protection with delete online data fails from remote management console
+
+**Description**: The stop protection with delete online data operation fails from the remote management console when enhanced Hybrid security option is enabled on the vault.  
+
+**Workaround**: To prevent this, perform stop protection with delete online data directly from the DPM console.  
+
 ::: moniker-end
 
 
