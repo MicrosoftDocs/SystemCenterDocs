@@ -81,7 +81,6 @@
 ##### [Tutorial: Create SCOM Managed Instance](tutorial-create-scom-managed-instance.md)
 #### Concepts
 ##### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
-##### [Design for High Availability and Disaster Recovery](design-high-availability-and-disaster-recovery.md)
 ##### [Customizations on Azure Monitor SCOM managed instance management servers](customizations-on-scom-managed-instance-management-servers.md)
 #### How-to guides
 ##### Create SCOM Managed Instance

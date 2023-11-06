@@ -5,7 +5,7 @@ description: Azure Monitor SCOM Managed Instance provides a cloud-based alternat
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/06/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -32,6 +32,7 @@ The following are the supported monitoring scenarios:
 - On-premises VMs that are Arc-enabled.
 - On-premises VMs connected by SCOM Managed Instance Gateway.
 - On-premises VMs that have connectivity (Line of Sight) with Azure.
+- Linux workloads behind a Gateway server
 
 ## Support for cross domain and non-domain workloads
 
@@ -156,5 +157,9 @@ To configure monitoring of on-premises servers that have direct connectivity (VP
 
 >[!NOTE]
 >Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](https://learn.microsoft.com/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022)
+
+## Linux monitoring with SCOM Managed Instance
+
+With SCOM Managed Instance, it is possible to monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/en-us/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
 
 For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
