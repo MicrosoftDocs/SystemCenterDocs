@@ -160,6 +160,6 @@ To configure monitoring of on-premises servers that have direct connectivity (VP
 
 ## Linux monitoring with SCOM Managed Instance
 
-With SCOM Managed Instance, it is possible to monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/en-us/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
+With SCOM Managed Instance, it is possible to monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
 
 For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
