@@ -32,7 +32,7 @@ The following are the supported monitoring scenarios:
 - On-premises VMs that are Arc-enabled.
 - On-premises VMs connected by SCOM Managed Instance Gateway.
 - On-premises VMs that have connectivity (Line of Sight) with Azure.
-- Linux workloads behind a Gateway server
+- On-premises linux workloads behind a Gateway server
 
 ## Support for cross domain and non-domain workloads
 
@@ -44,6 +44,12 @@ SCOM Managed Instance users will be able to:
 - Set up and manage Gateways seamlessly from SCOM Managed Instance portal on Arc-enabled servers for off-Azure monitoring.
 - Reuse existing System Center Operations Manager on-premises connected Gateway servers with SCOM Managed Instance while retaining their connectivity with the existing endpoints.
 - Set high availability at Gateway plane for agent failover as described in [Designing for High Availability and Disaster Recovery](https://learn.microsoft.com/system-center/scom/plan-hadr-design) .
+
+## Linux monitoring with SCOM Managed Instance
+
+With SCOM Managed Instance, you can monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
+
+For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
 
 ## Use Arc channel for Agent configuration and monitoring data
 
@@ -157,9 +163,3 @@ To configure monitoring of on-premises servers that have direct connectivity (VP
 
 >[!NOTE]
 >Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](https://learn.microsoft.com/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022)
-
-## Linux monitoring with SCOM Managed Instance
-
-With SCOM Managed Instance, you can monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
-
-For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
