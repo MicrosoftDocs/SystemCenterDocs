@@ -21,20 +21,6 @@ Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Opera
 
 In Azure Monitor SCOM Managed Instance, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like an SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance to monitor Windows operating systems and the components installed on them, such as a website or an Active Directory domain controller. For more information, see [Azure Monitor SCOM Managed Instance Agents](/system-center/scom/plan-planning-agent-deployment-scom-managed-instance).
 
-## Prerequisites
-
-Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
-
-1. Allowlist these Azure URLs.
-2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
-
-    ```    
-    Test-NetConnection -ComputerName <LB DNS> -Port 5723
-    ```
-3. .NET Framework 4.7.2 or higher
-
-To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance).
-
 ## Supported scenarios
 
 The following are the supported monitoring scenarios:
@@ -48,6 +34,20 @@ The following are the supported monitoring scenarios:
 |Line of sight on-premises agent|Trusted|
 |Line of sight on-premises agent|Untrusted|
 |No Line of sight on-premises agent|Trusted/Untrusted|
+
+## Prerequisites
+
+Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
+
+1. Allowlist these Azure URLs.
+2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
+
+    ```    
+    Test-NetConnection -ComputerName <LB DNS> -Port 5723
+    ```
+3. .NET Framework 4.7.2 or higher
+
+To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance).
 
 ## Install agent for Windows virtual machine
 
