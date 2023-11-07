@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Monitor Azure and Off-Azure Virtual machines with Azure Monitor SCOM Managed Instance
-description: This article describes how ti monitor Azure and Off-Azure virtual machines with SCOM Managed Instance.
+description: This article describes how it monitor Azure and Off-Azure virtual machines with SCOM Managed Instance.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -23,17 +23,17 @@ In Azure Monitor SCOM Managed Instance, an agent is a service that is installed 
 
 ## Prerequisites
 
-Following are the prerequisties required on desired monitoring endpoints that is Virtual machines:
+Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
 
-1. Allow list these Azure URLs.
+1. Allowlist these Azure URLs.
 2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
 
     ```    
     Test-NetConnection -ComputerName <LB DNS> -Port 5723
     ```
-3. .Net Framework 4.7.2 or higher
+3. .NET Framework 4.7.2 or higher
 
-To Troubleshooting connectivity problems, see <link>
+To Troubleshooting connectivity problems, see 
 
 ## Supported scenarios
 
@@ -45,9 +45,9 @@ The following are the supported monitoring scenarios:
 |Arc VM 1|Trusted/same domain|
 |Azure VM 2|Untrusted domain|
 |Arc VM 2|Untrusted domain|
-|Line of sight on-premise agent|Trusted|
-|Line of sight on-premise agent|Untrusted|
-|No Line of sight on-premise agent|Trusted/Untrusted|
+|Line of sight on-premises agent|Trusted|
+|Line of sight on-premises agent|Untrusted|
+|No Line of sight on-premises agent|Trusted/Untrusted|
 
 ## Install agent for Windows virtual machine
 
