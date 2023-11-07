@@ -254,6 +254,16 @@ For example, the update button is enabled even though the title of the card read
 
     For example, FQDN: SCOMMI2000001.contoso.com.
 
+## Scenario: Agent connectivity failing
+
+Following are the possible reasons for Agent connectivity failing:
+
+- DNS entry missing in the Agent's Vnet
+- VNet Peering
+- Firewall blocked
+- SCOM Managed Instance server health state not running
+
+
 **Feedback**
 
 Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
