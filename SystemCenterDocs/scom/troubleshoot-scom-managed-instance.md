@@ -254,7 +254,7 @@ For example, the update button is enabled even though the title of the card read
 
     For example, FQDN: SCOMMI2000001.contoso.com.
 
-## Scenario: Agent connectivity failing
+## Scenario: Agent connectivity failure
 
 Following are the possible reasons for Agent connectivity failing:
 
@@ -262,7 +262,6 @@ Following are the possible reasons for Agent connectivity failing:
 - VNet Peering
 - Firewall blocked
 - SCOM Managed Instance server health state not running
-
 
 **Feedback**
 

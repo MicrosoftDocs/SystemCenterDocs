@@ -47,7 +47,7 @@ Following are the prerequisites required on desired monitoring endpoints that ar
     ```
 3. .NET Framework 4.7.2 or higher
 
-To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance).
+To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing).
 
 ## Install agent for Windows virtual machine
 
