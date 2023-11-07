@@ -256,7 +256,7 @@ For example, the update button is enabled even though the title of the card read
 
 ## Scenario: Agent connectivity failure
 
-Following are the possible reasons for Agent connectivity failing:
+Following are the possible reasons for Agent connectivity failure:
 
 - DNS entry missing in the Agent's VNet
 - VNet Peering
