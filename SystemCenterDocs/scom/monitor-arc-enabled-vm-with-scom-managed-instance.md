@@ -177,14 +177,14 @@ To delete a Gateway, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
 3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Monitored Resources**.
-5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Delete**.
+4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Managed Gateways**.
+5. On the **Managed Gateways** page, select Ellipsis button **(…)**, which is next to your desired gateway, and select **Delete**.
 
-   :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-inline.png" alt-text="Screenshot that shows delete agent option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-expanded.png":::
+   :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-gateway-inline.png" alt-text="Screenshot that shows delete gateway option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-gateway-expanded.png":::
 
-6. On the **Delete SCOM MI Agent** page, check **Are you sure that you want to delete Monitored Resource?** and then select **Delete**.
+6. On the **Delete SCOM MI Gateway** page, check **Are you sure that you want to delete Managed Gateway?** and then select **Delete**.
 
-   :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-monitored-resource-inline.png" alt-text="Screenshot that shows delete option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-monitored-resource-expanded.png":::
+   :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-managed-gateway-inline.png" alt-text="Screenshot that shows delete managed gateway option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-managed-gateway-expanded.png":::
 
 
 ## Configure monitoring of on-premises servers
