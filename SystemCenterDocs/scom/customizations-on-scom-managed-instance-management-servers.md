@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Customizations on Azure Monitor SCOM managed instance management servers
-description: This article describes about the Customizations on Azure Monitor SCOM managed instance management servers.
+title: Customizations on Azure Monitor SCOM Managed Instance management servers
+description: This article describes about the Customizations on Azure Monitor SCOM Managed Instance management servers.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/06/2023
+ms.date: 11/07/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Customizations on Azure Monitor SCOM managed instance management servers
+# Customizations on Azure Monitor SCOM Managed Instance management servers
 
-Azure Monitor SCOM Managed Instance is a PaaS service hosted on Azure. As part of instance creation, Azure creates a Virtual machine scale set cluster and commissions VMs inside that Virtual machine scale set cluster. However, if you have a requirement to access the management server and customize some aspect of it, such as applying a post-deployment configuration, installing an Management Pack or software, or carry out any other management operation, use the [Script for Customization](https://download.microsoft.com/download/0/1/5/015ee8fc-e3ab-4842-8c2a-3acebb0e54f5/RunCustomizations.zip).
+Azure Monitor SCOM Managed Instance is a PaaS service hosted on Azure. As part of instance creation, Azure creates a Virtual machine scale set cluster and commissions VMs inside that Virtual machine scale set cluster. However, if you have a requirement to access the management server and customize some aspect of it, such as applying a post-deployment configuration, installing a Management Pack or software, or carry out any other management operation, use the [Script for Customization](https://download.microsoft.com/download/0/1/5/015ee8fc-e3ab-4842-8c2a-3acebb0e54f5/RunCustomizations.zip).
 
 The script internally uses Azure custom script extensions for making the customizations. Once you run the script, it downloads and executes the customization script on the SCOM Managed Instance Management Servers.
 
@@ -24,7 +24,7 @@ The script internally uses Azure custom script extensions for making the customi
 - Azure CLI (Installed and Logged In)
 - PowerShell 5.1 or later
 
-You can run the script on a machine, which has PowerShell running. Sign into the Azure portal Microsoft account that is a part of the SCOM managed instance subscription. Run the following cmdlets in the PowerShell console:
+You can run the script on a machine, which has PowerShell running. Sign into the Azure portal Microsoft account that is a part of the SCOM Managed Instance subscription. Run the following cmdlets in the PowerShell console:
 
 ```powershell
 “az login”

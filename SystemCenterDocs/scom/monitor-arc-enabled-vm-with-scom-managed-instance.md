@@ -64,7 +64,7 @@ Azure Arc can unlock connectivity and monitor on-premises workloads. Azure based
 
 To install SCOM Managed Instance agent, follow these steps:
 
-1. On the desired SCOM managed instance **Overview** page, under Manage, select **Monitored Resources**.
+1. On the desired SCOM Managed Instance **Overview** page, under Manage, select **Monitored Resources**.
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/manage-monitored-resources-inline.png" alt-text="Screenshot that shows the Monitored Resource option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/manage-monitored-resources-expanded.png":::
 
@@ -93,7 +93,7 @@ To upgrade the agent version, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
 3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Monitored Resources**.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **Monitored Resources**.
 5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Configure**.
    
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-inline.png" alt-text="Screenshot that shows monitored resources." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-expanded.png":::
@@ -110,8 +110,8 @@ To delete the agent version, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
-3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Monitored Resources**.
+3. On the **SCOM managed instances** page, select the desired SCOM Managed Instance.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **Monitored Resources**.
 5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Delete**.
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-inline.png" alt-text="Screenshot that shows delete agent option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-expanded.png":::
@@ -126,8 +126,8 @@ To install SCOM Managed Instance gateway, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
-3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **SCOM Gateway**.
+3. On the **SCOM managed instances** page, select the desired SCOM Managed Instance.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **SCOM Gateway**.
  
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/managed-gateway-inline.png" alt-text="Screenshot that shows managed gateway." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/managed-gateway-expanded.png":::
 

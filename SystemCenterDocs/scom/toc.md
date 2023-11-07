@@ -81,7 +81,7 @@
 ##### [Tutorial: Create SCOM Managed Instance](tutorial-create-scom-managed-instance.md)
 #### Concepts
 ##### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
-##### [Customizations on Azure Monitor SCOM managed instance management servers](customizations-on-scom-managed-instance-management-servers.md)
+##### [Customizations on Azure Monitor SCOM Managed Instance management servers](customizations-on-scom-managed-instance-management-servers.md)
 #### How-to guides
 ##### Create SCOM Managed Instance
 ###### [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md)
