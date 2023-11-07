@@ -5,7 +5,7 @@ description: This article details the release builds in Operations Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/31/2023
+ms.date: 11/07/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
