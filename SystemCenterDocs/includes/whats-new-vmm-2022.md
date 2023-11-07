@@ -102,7 +102,7 @@ VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.
 
 The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 2 (UR2).
 
-For problems fixed in VMM 2022 UR2, and installation instructions for UR2, see the KB article.
+For problems fixed in VMM 2022 UR2, and installation instructions for UR2, see the [KB article](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-virtual-machine-manager-a9ece9b5-a73f-42c2-9d03-427243a8f210).
 
 ### Improved V2V conversion performance of VMware VMs to Hyper-V VMs
 
