@@ -33,7 +33,7 @@ Following are the prerequisites required on desired monitoring endpoints that ar
     ```
 3. .NET Framework 4.7.2 or higher
 
-To Troubleshooting connectivity problems, see 
+To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://review.learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022&branch=pr-en-us-5246)
 
 ## Supported scenarios
 
