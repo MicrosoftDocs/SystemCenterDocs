@@ -5,7 +5,7 @@ description: Azure Monitor SCOM Managed Instance provides a cloud-based alternat
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/06/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -32,6 +32,7 @@ The following are the supported monitoring scenarios:
 - On-premises VMs that are Arc-enabled.
 - On-premises VMs connected by SCOM Managed Instance Gateway.
 - On-premises VMs that have connectivity (Line of Sight) with Azure.
+- On-premises linux workloads behind a Gateway server
 
 ## Support for cross domain and non-domain workloads
 
@@ -43,6 +44,12 @@ SCOM Managed Instance users will be able to:
 - Set up and manage Gateways seamlessly from SCOM Managed Instance portal on Arc-enabled servers for off-Azure monitoring.
 - Reuse existing System Center Operations Manager on-premises connected Gateway servers with SCOM Managed Instance while retaining their connectivity with the existing endpoints.
 - Set high availability at Gateway plane for agent failover as described in [Designing for High Availability and Disaster Recovery](https://learn.microsoft.com/system-center/scom/plan-hadr-design) .
+
+## Linux monitoring with SCOM Managed Instance
+
+With SCOM Managed Instance, you can monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
+
+For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
 
 ## Use Arc channel for Agent configuration and monitoring data
 
@@ -57,7 +64,7 @@ Azure Arc can unlock connectivity and monitor on-premises workloads. Azure based
 
 To install SCOM Managed Instance agent, follow these steps:
 
-1. On the desired SCOM managed instance **Overview** page, under Manage, select **Monitored Resources**.
+1. On the desired SCOM Managed Instance **Overview** page, under Manage, select **Monitored Resources**.
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/manage-monitored-resources-inline.png" alt-text="Screenshot that shows the Monitored Resource option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/manage-monitored-resources-expanded.png":::
 
@@ -86,7 +93,7 @@ To upgrade the agent version, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
 3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Monitored Resources**.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **Monitored Resources**.
 5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Configure**.
    
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-inline.png" alt-text="Screenshot that shows monitored resources." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-expanded.png":::
@@ -103,8 +110,8 @@ To delete the agent version, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
-3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Monitored Resources**.
+3. On the **SCOM managed instances** page, select the desired SCOM Managed Instance.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **Monitored Resources**.
 5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Delete**.
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-inline.png" alt-text="Screenshot that shows delete agent option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-expanded.png":::
@@ -119,8 +126,8 @@ To install SCOM Managed Instance gateway, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
-3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **SCOM Gateway**.
+3. On the **SCOM managed instances** page, select the desired SCOM Managed Instance.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **SCOM Gateway**.
  
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/managed-gateway-inline.png" alt-text="Screenshot that shows managed gateway." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/managed-gateway-expanded.png":::
 
@@ -156,5 +163,3 @@ To configure monitoring of on-premises servers that have direct connectivity (VP
 
 >[!NOTE]
 >Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](https://learn.microsoft.com/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022)
-
-For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
