@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/16/2023
+ms.date: 11/07/2023
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -96,4 +96,24 @@ VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage yo
 
 ### Support for 64 virtual networks for Windows Server 2019 or later
 
-VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.  
+VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.
+
+## New features in VMM 2022 UR2
+
+The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 2 (UR2).
+
+For problems fixed in VMM 2022 UR2, and installation instructions for UR2, see the KB article.
+
+### Improved V2V conversion performance of VMware VMs to Hyper-V VMs
+
+You can now convert your VMware VMs to Hyper-V with close to four times faster conversion speed and support for VMware VMs with disk sizes greater than 2 TB.
+
+### Improved Arc-enabled SCVMM Discovery tab
+
+The **Azure Arc** tab now highlights the latest feature additions to Arc-enabled SCVMM which includes support for Azure management services such as Microsoft Defender for Cloud, Azure Update Manager, Azure Monitor, Microsoft Sentinel, and more. [Learn more](https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-azure-management-capabilities-for-azure-arc-enabled/ba-p/3947253).  
+
+If you are running WS 2012 and 2012R2 host and guest operating systems, the Azure Arc blade now provides guidance to continue remaining in support state.  
+
+### Support for latest Linux Guest Operating Systems
+
+With VMM 2022 UR2, you can run Ubuntu Linux 22, Debian 11, Oracle Linux 8 and 9 based Linux VMs.

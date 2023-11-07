@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 10/17/2023
+ms.date: 11/07/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -27,12 +27,14 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10565.0|[5029512](https://support.microsoft.com/kb/5029512) |July 2023|Discover Azure Migrate in Operations Manager|
 |10.22.10575.0|[5029601](https://support.microsoft.com/kb/5029601) |July 2023|GB compliance|
 |10.22.10560.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023|SCX Compiler Mitigated Packages|
+| 10.22.10604.0 | [5031649](https://support.microsoft.com/kb/5031649) |November 2023|Update Rollup 2|
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.22.10056.0||March 2022 |General Availability |
 |10.22.10110.0|[5020318](https://support.microsoft.com/kb/5020318) |December 2022|Update Rollup 1|
+| - | [5031649](https://support.microsoft.com/kb/5031649) | November 2023 | Update Rollup 2 |
 
 
 ### SCX Agent
@@ -45,5 +47,6 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1042.0|[v1.6.12-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.12-1) |February 2023 |1.6.12-1 |Update Rollup 1 - Hotfix |
 |10.22.1044.0|[v1.7.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.0-0) |March 2023 |1.7.0-0 |Update Rollup 1 - OpenSSL 3.0 |
 |10.22.1052.0|[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0) |August 2023 |1.7.1-0 |Update Rollup 1 - Hotfix |
+| - |[5031649](https://support.microsoft.com/kb/5031649)|November 2023| - |Update Rollup 2|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
