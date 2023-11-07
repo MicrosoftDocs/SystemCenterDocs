@@ -64,7 +64,7 @@ vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsph
 
 See the following sections for information about the new features/feature updates supported in DPM 2022 UR2.
 
-For issues fixed and the installation instructions for UR2, see KB article for Update Rollup 2.
+For issues fixed and the installation instructions for UR2, see [KB article](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-data-protection-manager-254d23f2-2adf-46b8-9ec8-27b868073ede) for Update Rollup 2.
 
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
@@ -86,7 +86,7 @@ DPM 2022 UR2 supports Windows and Basic SMTP authentication to send reports and 
 
 ### Fallback to crash consistent backups for VMware VMs  
 
-DPM 2022 UR2 supports falling back to crash consistent recovery points via a registry key for VMware VMs when backups fail with *ApplicationQuiesceFault*. [Learn more](https://learn.microsoft.com/system-center/dpm/back-up-vmware&tabs=Add#fallback-to-crash-consistent-backups-for-vmware-vms).
+DPM 2022 UR2 supports falling back to crash consistent recovery points via a registry key for VMware VMs when backups fail with *ApplicationQuiesceFault*. [Learn more](https://learn.microsoft.com/system-center/dpm/back-up-vmware?view=sc-dpm-2022&tabs=Add#fallback-to-crash-consistent-backups-for-vmware-vms).
 
 ### Experience improvements for DPM backups to Azure
 
