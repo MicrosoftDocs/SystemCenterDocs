@@ -59,6 +59,12 @@ SCOM Managed Instance users will be able to:
 - Set up and manage Gateways seamlessly from SCOM Managed Instance portal on Arc-enabled servers for off-Azure monitoring.
 - Set high availability at Gateway plane for agent failover as described in [Designing for High Availability and Disaster Recovery](https://learn.microsoft.com/system-center/scom/plan-hadr-design) .
 
+## Linux monitoring with SCOM Managed Instance
+
+With SCOM Managed Instance, you can monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
+
+For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
+
 ## Use Arc channel for Agent configuration and monitoring data
 
 Azure Arc can unlock connectivity and monitor on-premises workloads. Azure based manageability of monitoring agents for SCOM Managed Instance helps you to reduce operations cost and simplify agent configuration. The following are the key capabilities of SCOM Managed Instance monitoring over Arc channel:
@@ -75,7 +81,7 @@ Azure Arc can unlock connectivity and monitor on-premises workloads. Azure based
 
 To install SCOM Managed Instance agent, follow these steps:
 
-1. On the desired SCOM managed instance **Overview** page, under Manage, select **Monitored Resources**.
+1. On the desired SCOM Managed Instance **Overview** page, under Manage, select **Monitored Resources**.
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/manage-monitored-resources-inline.png" alt-text="Screenshot that shows the Monitored Resource option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/manage-monitored-resources-expanded.png":::
 
@@ -104,7 +110,7 @@ To upgrade the agent version, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
 3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Monitored Resources**.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **Monitored Resources**.
 5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Configure**.
    
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-inline.png" alt-text="Screenshot that shows monitored resources." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-expanded.png":::
@@ -121,8 +127,8 @@ To delete the agent version, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/). Search and select **SCOM Managed Instance**.
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
-3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
-4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Monitored Resources**.
+3. On the **SCOM managed instances** page, select the desired SCOM Managed Instance.
+4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **Monitored Resources**.
 5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Delete**.
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-inline.png" alt-text="Screenshot that shows delete agent option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-agent-expanded.png":::
@@ -193,5 +199,3 @@ To configure monitoring of on-premises servers that have direct connectivity (VP
 
 >[!NOTE]
 >Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](https://learn.microsoft.com/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022)
-
-For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
