@@ -26,8 +26,8 @@ In Azure Monitor SCOM Managed Instance, an agent is a service that is installed 
 The following are the supported monitoring scenarios:
 
 - Azure and Arc-enabled VMs
-- On-premises agents that have Line of sight connectivity
-- On-permises agents with no Line of sight connectivity (must use managed Gateway)
+- On-premises agents that have Line of sight connectivity to Azure
+- On-permises agents with no Line of sight connectivity (must use managed Gateway) to Azure
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Following are the prerequisites required on desired monitoring endpoints:
 3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
 4. Ensure TLS 1.2 or higher is enabled.
 
-To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing).
+To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022).
 
 ## Install agent for Windows virtual machine
 

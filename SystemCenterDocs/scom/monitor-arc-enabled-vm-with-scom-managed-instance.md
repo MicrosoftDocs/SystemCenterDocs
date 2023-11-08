@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Monitor Azure and Arc-enabled Virtual machines with Azure Monitor SCOM Managed Instance
+title: Monitor Azure and Off-Azure Virtual machines with Azure Monitor SCOM Managed Instance
 description: Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Operations Manager users providing monitoring continuity for cloud and on-premises environments across the cloud adoption journey.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Monitor Azure and Arc-enabled Virtual machines with Azure Monitor SCOM Managed Instance
+# Monitor Azure and Off-Azure Virtual machines with Azure Monitor SCOM Managed Instance
 
 Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Operations Manager users providing monitoring continuity for cloud and on-premises environments across the cloud adoption journey.
 
@@ -21,38 +21,19 @@ Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Opera
 
 In Azure Monitor SCOM Managed Instance, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like an SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance to monitor Windows operating systems and the components installed on them, such as a website or an Active Directory domain controller. For more information, see [Azure Monitor SCOM Managed Instance Agents](/system-center/scom/plan-planning-agent-deployment-scom-managed-instance).
 
-## Supported scenarios
+## Support for Azure and Off-Azure workloads
+
+One of the most important monitoring scenarios is that of on-premises (off-Azure) workloads that unlock SCOM Managed Instance as a true **Hybrid monitoring solution**.
 
 The following are the supported monitoring scenarios:
 
 |Type of endpoint|Trust|Experience|
 |---|---|---|
-|Azure VM 1|Trusted/same domain| |
-|Arc VM 1|Trusted/same domain| |
-|Azure VM 2|Untrusted domain| |
-|Arc VM 2|Untrusted domain| |
+|Azure VM |Any type|Azure portal|
+|Arc VM |Any type|Azure portal|
 |Line of sight on-premises agent|Trusted|OpsConsole|
-|Line of sight on-premises agent|Untrusted|OpsConsole and Gateway|
-|No Line of sight on-premises agent|Trusted/Untrusted|OpsConsole and Gateway|
-
-## Prerequisites
-
-Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
-
-1. Allowlist this Azure URLs- `*.workloadnexus.azure.com`
-2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
-
-    ```    
-    Test-NetConnection -ComputerName <LB DNS> -Port 5723
-    ```
-3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
-4. Ensure TLS 1.2 or higher is enabled.
-
-To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing).
-
-## Support for Azure and Off-Azure workloads
-
-One of the most important monitoring scenarios is that of on-premises (off-Azure) workloads that unlock SCOM Managed Instance as a true **Hybrid monitoring solution**.
+|Line of sight on-premises agent|Untrusted|Managed Gateway and OpsConsole|
+|No Line of sight on-premises agent|Trusted/Untrusted|Managed Gateway and OpsConsole|
 
 SCOM Managed Instance users will be able to:
 - Monitor VMs and applications which are in untrusted domain/workgroup.
@@ -74,6 +55,21 @@ Azure Arc can unlock connectivity and monitor on-premises workloads. Azure based
 - Monitor Arc connected servers and hosted applications by reusing existing System Center Operations Manager management packs.
 - Azure based SCOM Managed Instance agent management (such as patch, push management pack rules and monitors) via Arc connectivity.
 - SCOM Managed Instance agents to relay monitoring data back to SCOM Managed Instance via Arc connectivity.
+
+## Prerequisites
+
+Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
+
+1. Allowlist this Azure URLs- `*.workloadnexus.azure.com`
+2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
+
+    ```    
+    Test-NetConnection -ComputerName <LB DNS> -Port 5723
+    ```
+3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
+4. Ensure TLS 1.2 or higher is enabled.
+
+To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing).
 
 ## Install an agent to monitor Azure and Arc-enabled servers
 
