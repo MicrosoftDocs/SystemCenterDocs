@@ -25,27 +25,23 @@ In Azure Monitor SCOM Managed Instance, an agent is a service that is installed 
 
 The following are the supported monitoring scenarios:
 
-|Type of endpoint|Trust|
-|---|---|
-|Azure VM 1|Trusted/same domain|
-|Arc VM 1|Trusted/same domain|
-|Azure VM 2|Untrusted domain|
-|Arc VM 2|Untrusted domain|
-|Line of sight on-premises agent|Trusted|
-|Line of sight on-premises agent|Untrusted|
-|No Line of sight on-premises agent|Trusted/Untrusted|
+- Azure and Arc-enabled VMs
+- On-premises agents that have Line of sight connectivity
+- On-permises agents with no Line of sight connectivity (must use managed Gateway)
 
 ## Prerequisites
 
-Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
+Following are the prerequisites required on desired monitoring endpoints:
 
-1. Allowlist this Azure URLs- `*.workloadnexus.azure.com`
+1. Ensure to Allowlist the following Azure URL on the desired monitoring endpoints:
+      `*.workloadnexus.azure.com`
 2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
 
     ```    
     Test-NetConnection -ComputerName <LB DNS> -Port 5723
     ```
-3. .NET Framework 4.7.2 or higher
+3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
+4. Ensure TLS 1.2 or higher is enabled.
 
 To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing).
 
@@ -53,9 +49,9 @@ To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Mo
 
 To install agent for Windows virtual machine, see [Install an agent on a computer running Windows by using the Discovery Wizard](https://learn.microsoft.com/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard).
 
-## Install Gateway
+## Install Managed Gateway
 
-To install Gateway, [download the Gateway software](https://go.microsoft.com/fwlink/?linkid=2252000) and follow [these steps](https://learn.microsoft.com/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer)
+To install Managed Gateway, [download the Gateway software](https://go.microsoft.com/fwlink/?linkid=2252000) and follow [these steps](https://learn.microsoft.com/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer).
  
 ## Monitor Linux machine
 
