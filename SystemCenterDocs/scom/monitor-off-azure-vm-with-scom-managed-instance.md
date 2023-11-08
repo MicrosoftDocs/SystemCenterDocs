@@ -39,7 +39,7 @@ The following are the supported monitoring scenarios:
 
 Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
 
-1. Allowlist these Azure URLs.
+1. Allowlist this Azure URLs- `*.workloadnexus.azure.com`
 2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
 
     ```    
@@ -55,7 +55,7 @@ To install agent for Windows virtual machine, see [Install an agent on a compute
 
 ## Install Gateway
 
-To install Gateway, download the Gateway software and follow [these steps](https://learn.microsoft.com/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer)
+To install Gateway, [download the Gateway software](https://go.microsoft.com/fwlink/?linkid=2252000) and follow [these steps](https://learn.microsoft.com/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer)
  
 ## Monitor Linux machine
 

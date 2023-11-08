@@ -39,7 +39,7 @@ The following are the supported monitoring scenarios:
 
 Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
 
-1. Allowlist these Azure URLs.
+1. Allowlist this Azure URLs- `*.workloadnexus.azure.com`
 2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
 
     ```    
