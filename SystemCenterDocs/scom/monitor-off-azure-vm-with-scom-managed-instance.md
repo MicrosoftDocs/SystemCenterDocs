@@ -27,7 +27,7 @@ The following are the supported monitoring scenarios:
 
 - Azure and Arc-enabled VMs
 - On-premises agents that have Line of sight connectivity to Azure
-- On-permises agents with no Line of sight connectivity (must use managed Gateway) to Azure
+- On-premises agents with no Line of sight connectivity (must use managed Gateway) to Azure
 
 ## Prerequisites
 
