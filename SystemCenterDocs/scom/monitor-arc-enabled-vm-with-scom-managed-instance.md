@@ -63,7 +63,8 @@ Azure Arc can unlock connectivity and monitor on-premises workloads. Azure based
 
 Following are the prerequisites required on desired monitoring endpoints that are Virtual machines:
 
-1. Allowlist this Azure URLs- `*.workloadnexus.azure.com`
+1. Ensure to Allowlist the following Azure URL on the desired monitoring endpoints:
+      `*.workloadnexus.azure.com`
 2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
 
     ```    
