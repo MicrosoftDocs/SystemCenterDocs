@@ -5,7 +5,7 @@ description: This article describes how to create a SQL managed instance in a de
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/07/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -51,21 +51,6 @@ For the rest of the settings on the other tabs, you can leave them as default or
 
 > [!NOTE]
 > Creation of a new SQL managed instance can take up to six hours.
-
-After you create a SQL managed instance, you need to provide permission to the SCOM Managed Instance resource provider to access the SQL managed instance properties.
-
-To provide the permission, follow these steps:
-
-1. Open the SQL managed instance and select **Access control (IAM)**. On the top menu, select **Add** > **Add role assignment**.
-
-   :::image type="Access control" source="media/create-sql-mi/access-control-inline.png" alt-text="Screenshot that shows selections for starting the process of adding a role assignment for access control." lightbox="media/create-sql-mi/access-control-expanded.png":::
-1. On the **Add role assignment** pane:
-   - For **Role**, select **Reader** from the dropdown list.
-   - For **Assign access to**, select **User, group, or service principal** from the dropdown list.
-   - For **Select**, enter **Microsoft.SCOM** Resource Provider.
-
-   :::image type="Add role assignment" source="media/create-sql-mi/add-role-assignment.png" alt-text="Screenshot that shows selections for adding a role assignment.":::
-1. Select **Save**.
 
 ## Next steps
 

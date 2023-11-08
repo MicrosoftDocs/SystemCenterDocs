@@ -5,7 +5,7 @@ description: This article provides information on how to patch your Azure Monito
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/06/2023
+ms.date: 11/07/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -24,6 +24,20 @@ Following are the key highlights:
 - All newer patches are backward compatible with the older versions. 
 
 This article provides information on how to patch your SCOM Managed Instance.
+
+## Pre-Patching Checklist
+
+Before you proceed with the patching process, complete the following pre-checks to ensure a successful patching operation:
+
+1. **SQL managed instance status**: Verify that the SQL managed instance is operational and running, and not in a shutdown state.
+
+**2. Management server health**: Confirm the health of existing Management Servers.
+
+3. **Domain credentials verification**: Validate the status of domain credentials used in the key vault. If the credentials have expired, update the password to ensure they are active and functional.
+
+4. **NAT Gateway association**: Ensure that the NAT Gateway is still associated with the subnet and has not been removed.
+
+5. **VNET connectivity requirements**: Ensure that VNet to VNet communication is allowed to enable communication between the newly added managed servers and the existing ones. Additionally, verify that the connectivity from the VNet to the SQL managed instance and Domain Controller is operational.
 
 ## Patch SCOM Managed Instance
 
