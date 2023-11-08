@@ -68,7 +68,7 @@ For issues fixed and the installation instructions for UR2, see [KB article](h
 
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
-DPM 2022 UR2 supports item level recovery directly from online recovery points for [VMware](https://learn.microsoft.com/system-center/dpm/back-up-vmware&tabs=Add%22%20%5Cl%20%22restore-an-individual-file-from-a-vm) and [Hyper-V](https://learn.microsoft.com/system-center/dpm/back-up-hyper-v-virtual-machines) VMs running Windows. You need [MARS](https://support.microsoft.com/topic/update-for-azure-backup-for-microsoft-azure-recovery-services-agent-bb330054-65d3-4432-a45e-362e1888dd2c) version 2.0.9251.0 or later to use this feature.  
+DPM 2022 UR2 supports item level recovery directly from online recovery points for [VMware](https://learn.microsoft.com/system-center/dpm/back-up-vmware?view=sc-dpm-2022&tabs=Add#restore-an-individual-file-from-a-vm) and [Hyper-V](https://learn.microsoft.com/system-center/dpm/back-up-hyper-v-virtual-machines) VMs running Windows. You need [MARS](https://support.microsoft.com/topic/update-for-azure-backup-for-microsoft-azure-recovery-services-agent-bb330054-65d3-4432-a45e-362e1888dd2c) version 2.0.9251.0 or later to use this feature.  
 
 ### Support for VMware vSphere 8.0
 
