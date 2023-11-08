@@ -31,7 +31,7 @@ Before you proceed with the patching process, complete the following prechecks t
 
 1. **SQL managed instance status**: Verify that the SQL managed instance is operational and running, and not in a shutdown state.
 
-**2. Management server health**: Confirm the health of existing Management Servers.
+2. **Management server health**: Confirm the health of existing Management Servers.
 
 3. **Domain credentials verification**: Validate the status of domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
 
