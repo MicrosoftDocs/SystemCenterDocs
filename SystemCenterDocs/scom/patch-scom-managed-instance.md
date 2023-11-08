@@ -25,7 +25,7 @@ Following are the key highlights:
 
 This article provides information on how to patch your SCOM Managed Instance.
 
-## Pre-Patching Checklist
+## Pre-Patching checklist
 
 Before you proceed with the patching process, complete the following prechecks to ensure a successful patching operation:
 
@@ -33,7 +33,7 @@ Before you proceed with the patching process, complete the following prechecks t
 
 2. **Management server health**: Confirm the health of existing Management Servers.
 
-3. **Domain credentials verification**: Validate the status of domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
+3. **Domain credentials verification**: Validate the status of the domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
 
 4. **NAT Gateway association**: Ensure that the NAT Gateway is still associated with the subnet and hasn't been removed.
 

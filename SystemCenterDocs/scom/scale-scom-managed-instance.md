@@ -21,7 +21,7 @@ This article provides information on how to scale your SCOM Managed Instance.
 
 > [!VIDEO https://www.youtube.com/embed/MG5kGoe1zj0?start=63]
 
-## Pre-Scaling Checklist
+## Pre-Scaling checklist
 
 Before you proceed with the scaling process, complete the following prechecks to ensure a successful scaling operation:
 
@@ -29,7 +29,7 @@ Before you proceed with the scaling process, complete the following prechecks to
 
 2. **Management server health**: Confirm the health of the existing Management Servers.
 
-3. **Domain credentials verification**: Validate the status of domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
+3. **Domain credentials verification**: Validate the status of the domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
 
 4. **NAT Gateway association**: Ensure that the NAT Gateway is still associated with the subnet and hasn't been removed. 
 
