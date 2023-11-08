@@ -19,7 +19,7 @@ This article describes the errors that might occur while validating input parame
 
 If you encounter any issues while creating on-premises parameters, use [this script](https://go.microsoft.com/fwlink/?linkid=2221732) for assistance.
 
-This script is designed to help troubleshoot and resolve issues related to on-premises parameter creation. Access the script and utilize its functionalities to address any difficulties you may encounter during the creation of on-premises parameters.
+This script is designed to help troubleshoot and resolve issues related to on-premises parameter creation. Access the script and utilize its functionalities to address any difficulties you might encounter during the creation of on-premises parameters.
 
 Follow these steps to run the script:
 
