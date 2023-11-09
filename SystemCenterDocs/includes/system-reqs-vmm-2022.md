@@ -92,7 +92,9 @@ VMM console | You can install the VMM console on a VM.
 ## Installation components
 
 >[!NOTE]
-> If you run into ADK file path issue while installing VMM, copy the files from *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM\amd64* to *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*. If your CPU isn't amd64 based, copy the files from the corresponding folder: arm or arm64 or x86. These components should be installed on the server before you install VMM.
+> If you run into ADK file path issue while installing VMM, copy the files from *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM\amd64* to *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*. If your CPU isn't amd64 based, copy the files from the corresponding folder: arm or arm64 or x86. 
+
+These components should be installed on the server before you install VMM.
 
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
