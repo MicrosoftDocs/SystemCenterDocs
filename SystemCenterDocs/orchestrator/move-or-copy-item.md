@@ -33,7 +33,7 @@ The following tables list the required properties and published data for this ac
 |:---|:---|:---|
 | ID   | The ID of the item to be moved or copied   | String   |
 | Copy   | Indicates whether the item is to be copied to the new location | True<br>False   |
-| Destination Folder | The folder that the item will be moved to   | String   |
+| Destination Folder | The folder to which the item will be moved   | String   |
 
 ## Move Or Copy Item published data
 
@@ -41,7 +41,7 @@ The following tables list the required properties and published data for this ac
 |:---|:---|:---|
 | ID   | The new ID of the item that is moved or copied   | String   |
 | Copy   | Indicates whether the item is to be copied to the new location  | Boolean   |
-| Destination Folder   | The folder that the item will be moved to   | String   |
+| Destination Folder   | The folder to which the item will be moved   | String   |
 | Domain   | The domain that the Exchange server belongs to   | String   |
 | Exchange Server Address | The address of the Exchange server   | String   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
