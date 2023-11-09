@@ -1,8 +1,8 @@
 ---
 title: Move Or Copy Item
 description: The Move Or Copy Item activity is used in a runbook to move or copy an item to another folder.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 11/09/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -46,4 +46,4 @@ The following tables list the required properties and published data for this ac
 | Exchange Server Address | The address of the Exchange server   | String   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Use Autodiscover   | Indicates whether or not the Autodiscover service is being used | Boolean   |
-| User Name   | User name to be used to connect to Exchange server   | String   |
+| User Name   | Username to be used to connect to Exchange server   | String   |
