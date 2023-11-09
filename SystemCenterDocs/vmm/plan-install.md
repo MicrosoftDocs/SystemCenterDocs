@@ -135,7 +135,7 @@ When you install VMM with this user account, SPN will be registered.
 
 ## Account and domain requirements
 
-::: moniker range="> sc-vmm-2016 < sc-vmm-2016"
+::: moniker range="sc-vmm-1801, sc-vmm-1807, sc-vmm-2019, sc-vmm-2022"
 When you install VMM, you must configure the VMM service to use any one of the following accounts:
 
 - The Local System account (can't be used for a highly available VMM deployment) or
