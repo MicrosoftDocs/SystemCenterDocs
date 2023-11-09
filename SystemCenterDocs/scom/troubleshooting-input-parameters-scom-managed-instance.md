@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/07/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -19,7 +19,7 @@ This article describes the errors that might occur while validating input parame
 
 If you encounter any issues while creating on-premises parameters, use [this script](https://go.microsoft.com/fwlink/?linkid=2221732) for assistance.
 
-This script is designed to help troubleshoot and resolve issues related to on-premises parameter creation. Access the script and utilize its functionalities to address any difficulties you may encounter during the creation of on-premises parameters.
+This script is designed to help troubleshoot and resolve issues related to on-premises parameter creation. Access the script and utilize its functionalities to address any difficulties you might encounter during the creation of on-premises parameters.
 
 Follow these steps to run the script:
 
@@ -238,6 +238,12 @@ Follow these steps to run the validation script:
 
 1. Check the DNS Server IP and ensure that the DNS Server is up and running.
 2. Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
+
+### Issue: Failed to configure DB login for MSI on SQL managed instance
+
+**Cause**: Occurs when MSI is not properly configured to access SQL managed instance.
+
+**Resolution**: Check if MSI is configured as Active Directory Admin on SQL managed instance. Ensure that required [Azure Active Directory permissions](https://learn.microsoft.com/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-active-directory-admin-value-in-the-sql-managed-instance) are provided to SQL managed instance for MSI authentication to work.
 
 ### Issue: Failed to connect to SQL MI from this instance
 
