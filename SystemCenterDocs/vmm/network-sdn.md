@@ -9,7 +9,7 @@ ms.date: 11/09/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage SDN resources in the VMM fabric

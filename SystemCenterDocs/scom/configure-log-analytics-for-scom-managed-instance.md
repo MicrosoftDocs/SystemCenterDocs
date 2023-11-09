@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
 title: Configure Log Analytics for Azure Monitor SCOM Managed Instance
-description: This article details about the Integration of Azure Monitor SCOM Managed Instance (preview) with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
+description: This article details about the Integration of Azure Monitor SCOM Managed Instance with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/06/2023
+ms.date: 11/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -19,7 +19,7 @@ The integration of Azure Monitor SCOM Managed Instance with Azure Log Analytics 
 
 Synchronization of SCOM Managed Instance workload's monitoring data to a common data source (LA) helps to centralize all monitoring logs and prevents data fragmentation. With LA retention policies, longer-term trend analysis is possible in LA.
 
-This article details about the Integration of Azure Monitor SCOM Managed Instance (preview) with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
+This article details about the Integration of Azure Monitor SCOM Managed Instance with Log Analytics and how to configure Azure Monitor SCOM Managed Instance with Azure Log Analytics.
 
 Before you configure Log Analytics workspace for SCOM Managed Instance, ensure you have a Log Analytics workspace available for integration or create a Log Analytics workspace. For more information on how to create Log Analytics workspace, see [Create a Log Analytics workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 

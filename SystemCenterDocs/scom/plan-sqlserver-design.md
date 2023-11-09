@@ -145,8 +145,7 @@ For more information, see [Hardware and Software Requirements for Installing SQL
 ::: moniker-end
 
 > [!NOTE]
-> During the initial installation of the operational database, only use Windows Authentication on the SQL Server that hosts the Operations Manager operational database. Don't use Mixed Mode (Windows Authentication and SQL Server Authentication) because using SQL Server Authentication mode during the initial installation of the operational database can cause issues. Although enabling Mixed Mode security is possible on the SQL Server hosting the Operations Manager operational database, it isn't supported as all contact with the database is accomplished using Windows accounts only.  
->
+> Although Operations Manager uses only Windows authentication during installation, the SQL Mixed Mode Authentication setting will still work if no local account has the db_owner role. Local accounts with the db_owner role are known to cause issues with System Center Operations Manager. Remove the db_owner role from all the local accounts before installing the product and don’t add the db_owner role to any of the local accounts after installation.
 
 ## SQL Server collation setting
 
@@ -259,6 +258,14 @@ Based on these factors, there are several recommended practices to consider when
 - Consider placing the Reporting data warehouse on a separate server from the Operations Manager database.  Although smaller-scale deployments can often consolidate the Operations Manager database and Reporting data warehouse on the same server, it's advantageous to separate them as you scale up the number of agents and the volume of incoming operational data.  When the Reporting data warehouse and Reporting Server are on a separate server from the Operations Manager database, you experience better reporting performance.
 
 The Operations Manager data warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.  
+
+
+
+
+
+
+
+
 
 
 
@@ -439,6 +446,9 @@ If the previous recommendations don't significantly reduce the allocation conten
 > This trace flag affects every database on the instance of SQL Server.
 
 
+
+
+
 ### Max degree of parallelism
 
 The default configuration of SQL Server for small to medium size deployments of Operations Manager is adequate for most needs.  However, when the workload of the management group scales upwards towards an enterprise class scenario (typically 2,000+ agent-managed systems and an advanced monitoring configuration, which includes service-level monitoring with advanced synthetic transactions, network device monitoring, cross-platform, and so forth) it's necessary to optimize the configuration of SQL Server described in this section of the document.  One configuration option that hasn't been discussed in previous guidance is MAXDOP.  
@@ -520,6 +530,14 @@ Behind the scenes of Reporting Services, there's a SQL Server Database instance 
 
 
 
+
+
+
+
+
+
+
+
 ::: moniker range=">sc-om-1801"
 
 >[!NOTE]
@@ -533,3 +551,4 @@ Behind the scenes of Reporting Services, there's a SQL Server Database instance 
 ## Next steps
 
 To understand how to configure hosting the Report data warehouse behind a firewall, see [Connect Reporting Data Warehouse Across a Firewall](deploy-connect-reportingdw-firewall.md).
+
