@@ -1,8 +1,8 @@
 ---
 title: Perform Client Action activity
 description: Describes the configurable properties for the Perform Client Action activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 11/09/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -39,7 +39,7 @@ Library](/windows/win32/wmisdk/connecting-to-wmi-on-a-remote-computer).
 
 Connecting remotely using WMI also requires appropriate credentials. If
 the account used for the Orchestrator Management Service doesn't have
-rights to access WMI on the target computer, you'll need to specify an
+the rights to access WMI on the target computer, you'll need to specify an
 account that does by using the optional properties on the Connection
 tab. For more information about WMI security and connection settings,
 see [Securing a Remote WMI Connection in the Microsoft MSDN
@@ -48,7 +48,7 @@ Library](/windows/win32/wmisdk/securing-a-remote-wmi-connection).
 >[!IMPORTANT]
 >Avoid using this activity to refresh a large number of clients simultaneously.
 
-Because this activity targets individual computers and bypasses the normal communication processes of Configuration Manager, including client polling intervals that might be configured for optimal site performance, the use of this activity should be limited to individual computers or small groups of computers targeted by a runbook.
+As this activity targets individual computers and bypasses the normal communication processes of Configuration Manager, including client polling intervals that might be configured for optimal site performance, the use of this activity should be limited to individual computers or small groups of computers targeted by a runbook.
 
 ## Perform Client Action properties
 
@@ -83,7 +83,7 @@ Because this activity targets individual computers and bypasses the normal commu
     -   Delegate
 
   For more information, see [Impersonation Level Enumeration](/dotnet/api/system.management.impersonationlevel) in the Microsoft MSDN Library.
-- Locale: The client can request data from the WMI server in a client-preferred locale. This string is specified as MS\_xxx format. The default value for this property is “MS\_409”.
+- Locale: The client can request data from the WMI server in a client-preferred locale. This string is specified as MS\_xxx format. The default value for this property is **MS\_409**.
 
     For more information, see [Locale IDs](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) in the Microsoft MSDN Library.
 - Timeout (Seconds).
@@ -113,7 +113,7 @@ Because this activity targets individual computers and bypasses the normal commu
 
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        select the ellipsis **(…)** button next to the text box to browse
+        select the ellipsis **(…)** button next to the textbox to browse
         for a value.
 
         You can also use published data to automatically populate the
@@ -122,7 +122,7 @@ Because this activity targets individual computers and bypasses the normal commu
 
 4.  Select the **Connection** tab. Enter a value for each of the required
     properties. If the property is Lookup-enabled, you can select the
-    ellipsis button **(…)** next to the text box to browse for a value.
+    ellipsis button **(…)** next to the textbox to browse for a value.
     You can also use published data to automatically populate the value
     of the property from the data output by a previous activity in the
     runbook.

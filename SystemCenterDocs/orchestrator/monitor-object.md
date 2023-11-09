@@ -1,8 +1,8 @@
 ---
 title: Monitor Object
 description: The Monitor Object activity uses filter criteria to look for new and updated records that satisfy the criteria that you specify.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 11/09/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
