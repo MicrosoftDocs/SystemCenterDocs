@@ -59,7 +59,7 @@ New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -Princip
 In that command:
 
 - `ContosogMSA` is the gMSA name.
-- `ContosoLB.aquiladom.com` is the DNS name for the load balancer (specified previously). Use the same DNS name to create the static IP and associate the same DNS name to the static IP as in [step 8](create-static-ip.md).
+- `ContosoLB.aquiladom.com` is the DNS name for the load balancer. Use the same DNS name to create the static IP and associate the same DNS name to the static IP as in [step 8](create-static-ip.md).
 - `ContosoServerGroup` is the computer group created in Active Directory (specified previously).
 - `MSOMHSvc/ContosoLB.aquiladom.com`, `SMSOMHSvc/ContosoLB`, `MSOMSdkSvc/ContosoLB.aquiladom.com`, and `MSOMSdkSvc/ContosoLB` are service principal names.
 
