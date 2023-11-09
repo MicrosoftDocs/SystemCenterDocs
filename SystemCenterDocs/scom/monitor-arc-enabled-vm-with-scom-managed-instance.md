@@ -153,7 +153,7 @@ To install SCOM Managed Instance gateway, follow these steps:
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/new-managed-gateway-inline.png" alt-text="Screenshot that shows new managed gateway." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/new-managed-gateway-expanded.png":::
 
-   **Add a Managed Gateway** page opens listing all the Azure virtual machines.
+   **Add a Managed Gateway** page opens listing all the Azure arc virtual machines.
 
     >[!NOTE]
     >SCOM Managed Instance Managed Gateway can be configured on Arc-enabled machines only.
