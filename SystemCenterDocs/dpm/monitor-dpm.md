@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 07/28/2023
+ms.date: 11/07/2023
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -34,11 +34,11 @@ To monitor DPM in the console, you should be signed in to the DPM server with a 
 
 -   In the **Management** task area, you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
 
-::: moniker range=">=sc-dpm-2019"
-
 ### Configure Email for DPM
 
 **Use on-premises SMTP server to configure email for DPM**
+
+::: moniker range="sc-dpm-2019"
 
 Follow the below steps to configure email for DPM using on-premises SMTP server:
 
@@ -58,6 +58,30 @@ DPM supports Microsoft 365 without a relay agent.
 Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use Microsoft 365, ensure to use the username and password for Microsoft 365 instead of the domain user.
 
 :::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+Follow the below steps to configure email for DPM using on-premises SMTP server:
+
+1. In the DPM console, select **Actions** > **Options** and then select the **SMTP Server**.
+1. In **SMTP Server**, do the following:
+    1. **SMTP server name**: Enter the fully qualified domain name of the SMTP server.
+    1. **SMTP server port**: Enter the fully qualified domain name of the server port. 
+    1. **"From" address**: Configure the **From** address; should be a valid email address on the SMTP server. 
+    1. **Authenticated SMTP server**: Enter the domain user; for example, **domain\username** and password to authenticate to the SMTP server. With DPM 2022 UR2 and later, select Windows Authentication and provide your domain user credentials to proceed.
+1. Select **Send Test E-mail** to verify if the setup is working.
+1. Select **OK** to save the details.
+
+**Use Microsoft 365 SMTP to configure email for DPM**
+
+DPM supports Microsoft 365 without a relay agent using the Basic SMTP authentication method with your email (username@contoso.com) and password. You can also use other email providers supporting basic authentication and port 587 for secure SMTP.
+
+>[!NOTE]
+>If you upgrade from DPM 2022 UR1 to 2022 UR2 and were using M365 SMTP, you must reconfigure your credentials by selecting the Basic Authentication option.
+
+:::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
     
 ::: moniker-end
 
