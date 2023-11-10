@@ -5,7 +5,7 @@ description: This article summarizes frequently asked questions about Azure Moni
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/10/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -155,6 +155,62 @@ The certificates are assigned by Microsoft and are signed by CA. There is no req
 ### Can SCOM Managed Instance monitor on-premises machines without Arc installed?  
 
 Yes, if there is a direct connectivity (line-of-sight) between SCOM Managed Instance and on-premises machine via VPN/ER, you can monitor these machines. For more information, see [Configure monitoring of on-premises servers](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-on-premises-servers).
+
+## Agent
+
+### Are Linux machines permitted for monitoring?
+
+Currently, we do not support monitoring of Azure and Arc-enabled Linux machines. However, they can be managed via the Arc-enabled gateway servers.
+
+## Agents/Gateway Servers
+
+### Can we perform actions on on-premises monitored resources?
+
+You cannot perform actions on the on-premises monitored resources, but can view them. Additionally, if the monitored objects are deleted, the portal will automatically remove those on-premises objects after six hours.
+
+### How often are the connectivity synchronizations performed for monitored resources and managed gateways?
+
+The monitored resources and managed gateways connectivity status are updated every minute, you can view the same in the Properties context menu.
+
+### What happens if an agent is already installed on the machine?
+
+The same agent will be used and multi-homed to the SCOM Managed Instance.
+
+### Which extension version of SCOM Managed Instance supports agent (monitored resource) or managed gateway servers?
+
+The capability is enabled with SCOM Managed Instance extension >=91.
+
+### How can we view the complete list of properties for a monitored resource or a managed gateway?
+
+You can view the list of properties for a monitored resource or a managed gateway in the **Properties** context menu.
+
+### Which machine types are eligible for monitoring?
+
+SCOM Managed Instance enables monitoring of Azure and Arc-enabled machines. Additionally, it displays information about on-premises machines that are directly connected to the SCOM Managed Instance.
+
+## Gateway Server
+
+### Is it permissible to use Azure Windows machines as gateway servers?
+
+Currently, only Arc-enabled machines are permitted as gateway servers.
+
+## Managed Gateway Servers
+
+### Is it possible to configure gateway servers with multi-homing?
+
+Currently, multi-homing for gateway servers is not supported.
+
+## Monitored resources (Agents)
+
+### Is it possible to configure an agent to communicate with multiple SCOM Managed Instances?
+
+No. You cannot configure an agent to communicate with multiple SCOM Managed Instances, but it can have a multi-home configuration for on-premises System Center Operations Manager and a SCOM Managed Instance.
+
+## Monitored resources/Managed Gateway servers onboarding
+
+### What is the minimum required .NET version for the agent (monitored resources) or gateway servers?
+
+The minimum required .NET Framework version is 4.7.2.
 
 ## Next steps
 
