@@ -59,7 +59,7 @@ This may need to be executed from an Administrator Command Prompt, depending on 
 
 
 
-### Management Servers
+### Management servers
 
 One of the last steps in troubleshooting is to clear the cache. This will remove any unsaved data along with the current configuration and management packs. After clearing the cache, we will receive a new configuration from the database, which includes updated management packs, and reconnect with clients. This can help if a management server has faulty or missing management packs that cause workflow errors or is delayed in sending data to the database.
 
@@ -104,9 +104,9 @@ net start HealthService
 
 ---
 
-### Gateway Servers
+### Gateway servers
 
-One of the last steps in troubleshooting is clearing the cache. Sometimes, the gateway may not communicate with the management server and appear greyed out in the SCOM console. In such cases, we need to clear the cache for gateways. We also need to do this when the gateway has outdated or unusable management packs or data that cannot be inserted into the database.
+One of the last steps in troubleshooting is clearing the cache. Sometimes, the gateway may not communicate with the management server and appear greyed out in the System Center Operations Manager console. In such cases, we need to clear the cache for gateways. We also need to do this when the gateway has outdated or unusable management packs or data that cannot be inserted into the database.
 
 #### [From the Operations Console](#tab/from-the-operations-console)
 1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Management Server**.
@@ -146,7 +146,7 @@ net start HealthService
 
 ---
 
-### Client Servers
+### Client servers
 A possible way to fix problems with workflows or communication between the agent on a client server and the management group is to clear the cache and restart the agent. This is a last resort for troubleshooting, but it can resolve some issues effectively.
 
 #### [From the Operations Console](#tab/from-the-operations-console)
