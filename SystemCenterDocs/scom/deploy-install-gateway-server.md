@@ -57,17 +57,17 @@ These steps are to be performed from a management server, preferably your primar
 1. There's an executable included with the Operations Manager installation media called "Microsoft.EnterpriseManagement.GatewayApprovalTool.exe," which can be found in the install media under `..\SupportTools\amd64\`.
 1. Once located, copy this executable and the configuration file with the same name to the installation path under: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`
 1. Open a Command Prompt as an administrator and navigate to the Operations Manager installation directory.
-1. Use the following command to register the intended gateway as a gateway ensure to replace "managementServerFQDN" with the actual DNS entry for the management server, and "gatewayFQDN" with the DNS entry for the intended gateway:
+1. Use the following command to register the intended gateway as a gateway ensure to replace the server names with your own:
 
     ```cmd
-    Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=managementserverFQDN /GatewayName=GatewayFQDN /Action=Create
+    Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=MS01.contoso.com /GatewayName=GW01.dmz.contoso.com /Action=Create
     ```
 
     > [!NOTE]
     > If you want to prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter as used in the following command. Otherwise by default communication will initiate from the gateway itself.
     >
     > ```cmd
-    > "Microsoft.EnterpriseManagement.GatewayApprovalTool.exe" /ManagementServerName=managementserverFQDN /GatewayName=GatewayFQDN /ManagementServerInitiatesConnection=True /Action=Create
+    > "Microsoft.EnterpriseManagement.GatewayApprovalTool.exe" /ManagementServerName=MS01.contoso.com /GatewayName=GW01.dmz.contoso.com /ManagementServerInitiatesConnection=True /Action=Create
     > ```
 
 1. If the approval is successful, the message `The approval of server <GatewayFQDN> completed successfully.` is returned.
@@ -114,8 +114,8 @@ Follow these steps to install the gateway server from the command prompt:
 ADDLOCAL=MOMGateway ^
 MANAGEMENT_GROUP="ManagementGroupName" ^
 IS_ROOT_HEALTH_SERVER=0 ^
-ROOT_MANAGEMENT_SERVER_AD="ParentMSFQDN" ^
-ROOT_MANAGEMENT_SERVER_DNS="ParentMSFQDN" ^
+ROOT_MANAGEMENT_SERVER_AD="MS01.contoso.com" ^
+ROOT_MANAGEMENT_SERVER_DNS="MS01.contoso.com" ^
 ACTIONS_USE_COMPUTER_ACCOUNT=0 ^
 ACTIONSDOMAIN="DomainName" ^
 ACTIONSUSER="ActionAccountName" ^
@@ -154,10 +154,20 @@ We're using the [Set-SCOMParentManagementServer](/powershell/module/operationsma
 1. In the console, run the following commands:
 
     ```powershell
-    $GatewayServer = Get-SCOMGatewayManagementServer -Name "ComputerName.Contoso.com"
-    $FailoverServer = Get-SCOMManagementServer -Name "ManagementServer.Contoso.com","ManagementServer2.Contoso.com"
+    $GatewayServer = Get-SCOMGatewayManagementServer -Name "GW01.dmz.contoso.com"
+    $FailoverServer = Get-SCOMManagementServer -Name "MS02.Contoso.com","MS03.Contoso.com"
     Set-SCOMParentManagementServer -GatewayServer $GatewayServer -FailoverServer $FailoverServer
     ```
+
+> [!NOTE]
+> You cannot set a failover server to be the same as the primary server without changing the primary at the same time, or first. If you want to change the primary and set it to a secondary, use the following commands:
+>
+>```powershell
+>$GatewayServer = Get-SCOMGatewayManagementServer -Name "GW01.dmz.contoso.com"
+>$PrimaryServer = Get-SCOMManagementServer -Name "MS02.Contoso.com"
+>$FailoverServer = Get-SCOMManagementServer -Name "MS01.Contoso.com","MS03.Contoso.com"
+>Set-SCOMParentManagementServer -GatewayServer $GatewayServer -PrimaryServer $PrimaryServer -FailoverServer $FailoverServer
+>```
 
 ## Chain multiple gateway servers
 
@@ -168,18 +178,18 @@ While uncommon, it's sometimes necessary to chain multiple gateways together in 
 > - You should install one gateway at a time, and verify that each newly installed gateway is configured correctly and showing as healthy in the SCOM console before adding another gateway in the chain.
 > - When you add the gateways end of chain to the same resource pool, don't configure failover to the other chain by using the **Set-SCOMParentManagementServer** command. In such a scenario, the pool doesn't work as expected. For failover configuration and the resource pool to function together, the gateway end of the chain should have the same parent.
 
-To configure a gateway chain, we utilize the **Microsoft.EnterpriseManagement.GatewayApprovalTool.exe** tool just as we did for the initial gateway server. However, this time we need to set the "ManagementServerName" as the upstream gateway server in the chain. For example, if GatewayB is going to connect to GatewayA, then GatewayA is the "ManagementServer" in this scenario.
+To configure a gateway chain, we utilize the **Microsoft.EnterpriseManagement.GatewayApprovalTool.exe** tool just as we did for the initial gateway server. However, this time we need to set the "ManagementServerName" as the upstream gateway server in the chain. For example, if GW02 is going to connect to GW01, then GW01 is the "ManagementServer" in this scenario.
 
 1. Sign onto one of your management servers that has the GatewayApprovalTool set up already.
 1. Open a Command Prompt as an administrator and navigate to the directory where the tool is saved
-1. Then run the below command to approve the downstream gateway server, ensuring to replace "managementserverFQDN" with the upstream gateway server FQDN, and "gatewayFQDN" with the downstream gateway FQDN:
+1. Then run the below command to approve the downstream gateway server, ensuring to replace the server names with your own:
 
    ```cmd
-   Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=managementserverFQDN /GatewayName=gatewayFQDN /Action=Create
+   Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=GW01.dmz.contoso.com /GatewayName=GW02.dmz.contoso.com /Action=Create
    ```
 
 1. Install the gateway role on a new server.
-1. Configure the certificates between GatewayA and GatewayB in the same way that you would configure certificates between a gateway and a management server. The Health Service can only load and use a single certificate. Therefore, the same certificate is used by the parent and child of the gateway in the chain.
+1. Configure the certificates between GW01 and GW02 in the same way that you would configure certificates between a gateway and a management server. The Health Service can only load and use a single certificate. Therefore, the same certificate is used by the parent and child of the gateway in the chain.
 
 ## Next steps
 
