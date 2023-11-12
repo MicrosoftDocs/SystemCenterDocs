@@ -71,7 +71,7 @@ These steps are to be performed from a management server, preferably your primar
     > ```
 
 1. If the approval is successful, the message `The approval of server <GatewayFQDN> completed successfully.` is returned.
-1. If you need to remove the gateway server from the management group, run the same command, but substitute `/Action=Delete` for the `/Action=Create` flag.
+1. If you need to remove the gateway server from the management group, run the same command, but substitute `/Action=Create` for the `/Action=Delete` flag.
 1. Open the Operations console to the Monitoring view. Select the Discovered Inventory view to see that the gateway server is present. It should also be viewable under Administration > Device Management > Management Servers.
 
 ## Installation Process
