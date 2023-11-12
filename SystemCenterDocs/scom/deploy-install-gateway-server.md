@@ -139,7 +139,7 @@ Perform this operation on each gateway server, and management server, along with
 1. Copy this file to the root directory of the target server or to the Operations Manager installation directory.
 1. Open a Command Prompt as an administrator, and change the directory to the directory where MOMCertImport.exe is.
 1. Then run the command `MOMCertImport.exe /SubjectName subjectNameFQDN`, where "subjectNameFQDN" is the defined subject on the certificate.
-    1. You can also run `MOMCertImport.exe` without any arguments to allow you to choose a certificate from a pop up window that shows the certificates in the Local Machine Personal Store.
+    1. You can also run `MOMCertImport.exe` without any arguments to allow you to choose a certificate from a pop-up window that shows the certificates in the Local Machine Personal Store.
 1. If successful, the Microsoft Monitoring Agent service is restarted and eventID 20053 is logged to the Operations Manager event log. If this eventID isn't present, observe the details of one of these IDs for any issues and make corrections accordingly: `20049,20050,20052,20066,20069,20077`
 
 > [!TIP]
