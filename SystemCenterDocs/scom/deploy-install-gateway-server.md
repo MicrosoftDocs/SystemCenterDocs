@@ -134,14 +134,17 @@ INSTALLDIR="C:\Program Files\System Center Operations Manager"
 
 Perform this operation on each gateway server, and management server, along with any client computers that are to be agent managed in a workgroup.
 
+1. Ensure the certificates are installed before continuing
 1. Locate the **MOMCertImport.exe** file located in the installation media under `..\SupportTools\amd64\`
 1. Copy this file to the root directory of the target server or to the Operations Manager installation directory.
 1. Open a Command Prompt as an administrator, and change the directory to the directory where MOMCertImport.exe is.
 1. Then run the command `MOMCertImport.exe /SubjectName subjectNameFQDN`, where "subjectNameFQDN" is the defined subject on the certificate.
+    1. You can also run `MOMCertImport.exe` without any arguments to allow you to choose a certificate from a pop up window that shows the certificates in the Local Machine Personal Store.
 1. If successful, the Microsoft Monitoring Agent service is restarted and eventID 20053 is logged to the Operations Manager event log. If this eventID isn't present, observe the details of one of these IDs for any issues and make corrections accordingly: `20049,20050,20052,20066,20069,20077`
 
-> [!NOTE]
-> You can also run `momcertimport.exe` without any arguments to allow you to select a certificate from a pop up window that shows the certificates in the Local Machine Personal Store.
+> [!TIP]
+> Once the certificate is successfully imported, you can see a mirrored version of the thumbprint in the registry here:
+> `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`
 
 ## Configure gateway servers for failover between management servers
 
