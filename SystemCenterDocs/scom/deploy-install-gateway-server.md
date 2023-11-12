@@ -124,19 +124,19 @@ Select the required tab to run the Operations Manager Gateway Windows Installer 
 
     
 ```
-    %WinDir%\System32\msiexec.exe /i path\Directory\MOMGateway.msi /qn /l*v C:\Logs\GatewayInstall.log
-    ADDLOCAL=MOMGateway
-    MANAGEMENT_GROUP="<ManagementGroupName>"
-    IS_ROOT_HEALTH_SERVER=0
-    ROOT_MANAGEMENT_SERVER_AD=<ParentMSFQDN>
-    ROOT_MANAGEMENT_SERVER_DNS=<ParentMSFQDN>
-    ACTIONS_USE_COMPUTER_ACCOUNT=0
-    ACTIONSDOMAIN=<DomainName>
-    ACTIONSUSER=<ActionAccountName>
-    ACTIONSPASSWORD=<Password>
-    ROOT_MANAGEMENT_SERVER_PORT=5723
-    INSTALLDIR=<path\Directory>
-    ```
+%WinDir%\System32\msiexec.exe /i path\Directory\MOMGateway.msi /qn /l*v C:\Logs\GatewayInstall.log
+ADDLOCAL=MOMGateway
+MANAGEMENT_GROUP="<ManagementGroupName>"
+IS_ROOT_HEALTH_SERVER=0
+ROOT_MANAGEMENT_SERVER_AD=<ParentMSFQDN>
+ROOT_MANAGEMENT_SERVER_DNS=<ParentMSFQDN>
+ACTIONS_USE_COMPUTER_ACCOUNT=0
+ACTIONSDOMAIN=<DomainName>
+ACTIONSUSER=<ActionAccountName>
+ACTIONSPASSWORD=<Password>
+ROOT_MANAGEMENT_SERVER_PORT=5723
+INSTALLDIR=<path\Directory>
+```
 
 ### Import certificates with the MOMCertImport.exe tool
 > Perform this operation on each gateway server, management server, and computer that will be agent-managed and that is in a domain that isn't trusted.
