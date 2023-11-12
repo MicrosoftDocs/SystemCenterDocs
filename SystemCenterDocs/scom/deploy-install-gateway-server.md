@@ -67,7 +67,7 @@ These steps are to be performed from a management server, preferably your primar
     > If you want to prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter as used in the following command. Otherwise by default communication will initiate from the gateway itself.
     >
     > ```cmd
-    > "Microsoft.EnterpriseManagement.GatewayApprovalTool.exe" /ManagementServerName=<managementserverFQDN/GatewayName=<GatewayFQDN/ManagementServerInitiatesConnection=True /Action=Create
+    > "Microsoft.EnterpriseManagement.GatewayApprovalTool.exe" /ManagementServerName=managementserverFQDN /GatewayName=GatewayFQDN /ManagementServerInitiatesConnection=True /Action=Create
     > ```
 
 1. If the approval is successful, the message `The approval of server <GatewayFQDN> completed successfully.` is returned.
