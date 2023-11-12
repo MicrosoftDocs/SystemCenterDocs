@@ -104,13 +104,13 @@ Follow these steps to install the gateway server from the command prompt:
 
 1. Sign in to the gateway server with Administrator rights.
 1. Open the Command Prompt window by using the **Run as Administrator** option.
-1. Run the following command, where *path\toInstaller* is the location of the MOMGateway.msi. The MOMGateway.msi can be found in the Operations Manager installation media under `..\gateway\amd64\`.
+1. Run the following command, where **path\to\Installer** is the path of the installation media. The MOMGateway.msi can be found in the Operations Manager installation media under `..\gateway\amd64\`.
 
 > [!TIP]
 > The ^ characters are to allow for multi-line input into the console window and easier editing, if this does not work in your environment, remove the ^ characters and edit the command to be on one line.
 
 ```cmd
-%WinDir%\System32\msiexec.exe /i path\toInstaller\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log
+%WinDir%\System32\msiexec.exe /i C:\path\to\Installer\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log ^
 ADDLOCAL=MOMGateway ^
 MANAGEMENT_GROUP="ManagementGroupName" ^
 IS_ROOT_HEALTH_SERVER=0 ^
