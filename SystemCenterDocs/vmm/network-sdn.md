@@ -5,7 +5,7 @@ description: This article describes how to manage SDN networking elements in the
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 10/30/2023
+ms.date: 11/09/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -71,6 +71,6 @@ VM | Corresponds to a virtual machine. | Overwritten by VMM if you enable out-of
 
 ### Unknown resources
 
-These resources to be created and managed outside the VMM fabric. VMM has no knowledge of them, and obviously doesn't overwrite them when they're configured outside the VMM console.
+These resources are to be created and managed outside the VMM fabric. VMM has no knowledge of them, and obviously doesn't overwrite them when they're configured outside the VMM console.
 
 Unknown objects are any Network Controller resources that aren't listed in the table above. Get the [latest list](/openspecs/windows_protocols/ms-ncnbi/d2a6f7c9-563f-40aa-94f7-9bf89fb79b80) of SDN resources.

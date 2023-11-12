@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: What’s new in Azure Monitor SCOM Managed Instance (preview)
-description: This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance (preview).
+title: What’s new in Azure Monitor SCOM Managed Instance
+description: This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/09/2023
+ms.date: 11/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# What’s new in Azure Monitor SCOM Managed Instance (preview) 
+# What’s new in Azure Monitor SCOM Managed Instance 
 
-This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance (preview).
+This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
 
 ## Version 1.0.89
 
@@ -35,9 +35,9 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 ## Version 1.0.86
 
-- Introduced [Resource Health feature](/azure/service-health/resource-health-overview?WT.mc_id=Portal-Microsoft_Azure_Health) for SCOM Managed Instance (preview).
+- Introduced [Resource Health feature](/azure/service-health/resource-health-overview?WT.mc_id=Portal-Microsoft_Azure_Health) for SCOM Managed Instance.
 
-- Introduced Log Analytics Integration feature for SCOM Managed Instance (preview).
+- Introduced Log Analytics Integration feature for SCOM Managed Instance.
 
 ## Version 1.0.85
 
@@ -45,4 +45,4 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 ## Next steps
 
-[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
