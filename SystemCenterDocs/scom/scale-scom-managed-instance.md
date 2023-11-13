@@ -5,7 +5,7 @@ description: This article provides information on how to scale your Azure Monito
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/07/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -20,6 +20,20 @@ Addition or deletion of a management server to the existing System Center Operat
 This article provides information on how to scale your SCOM Managed Instance.
 
 > [!VIDEO https://www.youtube.com/embed/MG5kGoe1zj0?start=63]
+
+## Pre-Scaling checklist
+
+Before you proceed with the scaling process, complete the following prechecks to ensure a successful scaling operation:
+
+1. **SQL managed instance status**: Verify that the SQL managed instance is operational and running, and not in a shutdown state.
+
+2. **Management server health**: Confirm the health of the existing Management Servers.
+
+3. **Domain credentials verification**: Validate the status of the domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
+
+4. **NAT Gateway association**: Ensure that the NAT Gateway is still associated with the subnet and hasn't been removed. 
+
+5. **VNet connectivity requirements**: Ensure that VNet to VNet communication is allowed to enable communication between the newly added managed servers and the existing ones. Additionally, verify that the connectivity from the VNet to the SQL managed instance and Domain Controller is operational.
 
 ## Scale In/Out the management servers
 

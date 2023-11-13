@@ -254,6 +254,7 @@ For example, the update button is enabled even though the title of the card read
 
     For example, FQDN: SCOMMI2000001.contoso.com.
 
+
 **Feedback**
 
 Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

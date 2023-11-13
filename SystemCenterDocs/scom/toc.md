@@ -81,6 +81,7 @@
 ##### [Tutorial: Create SCOM Managed Instance](tutorial-create-scom-managed-instance.md)
 #### Concepts
 ##### [SCOM Managed Instance Service Health Dashboard](monitor-health-scom-managed-instance.md)
+##### [Customizations on Azure Monitor SCOM Managed Instance management servers](customizations-on-scom-managed-instance-management-servers.md)
 #### How-to guides
 ##### Create SCOM Managed Instance
 ###### [Step 1. Register the SCOM Managed Instance resource provider](register-scom-managed-instance-resource-provider.md)
@@ -102,7 +103,8 @@
 ###### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
 ###### [Dashboards on Azure Managed Grafana](dashboards-on-azure-managed-grafana.md)
 ###### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
-###### [Monitor Azure and Arc-enabled Virtual machines](monitor-arc-enabled-vm-with-scom-managed-instance.md)
+###### [Monitor Azure and Off-Azure Virtual machines](monitor-off-azure-vm-with-scom-managed-instance.md)
+###### [Monitor Azure and Off-Azure Virtual machines (preview)](monitor-arc-enabled-vm-with-scom-managed-instance.md)
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 ##### [Configure Log Analytics for Azure Monitor SCOM Managed Instance](configure-log-analytics-for-scom-managed-instance.md)

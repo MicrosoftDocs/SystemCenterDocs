@@ -6,7 +6,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 11/07/2023
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: jsuri
@@ -48,6 +48,7 @@ The following table lists the build versions for Data Protection Manager 2022.
 | --- | --- |-------------| --- |
 | 10.22.123.0 | n/a |May 2022 |System Center 2022 Data Protection Manager     |
 | 10.22.148.0 | [5019645](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-data-protection-manager-81543e78-69c2-4b75-9780-0ac1b98debf1) |November 2022 | Update Rollup 1 for System Center 2022 Data Protection Manager|
+| 10.22.189.0 | [5032420](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-data-protection-manager-254d23f2-2adf-46b8-9ec8-27b868073ede) | November 2023 | Update Rollup 2 for System Center 2022 Data Protection Manager |
 
 ::: moniker-end
 
