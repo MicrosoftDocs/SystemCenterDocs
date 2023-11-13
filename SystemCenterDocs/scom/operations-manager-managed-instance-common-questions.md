@@ -5,7 +5,7 @@ description: This article summarizes frequently asked questions about Azure Moni
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/10/2023
+ms.date: 11/13/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -211,6 +211,26 @@ No. You can't configure an agent to communicate with multiple SCOM Managed Insta
 ### What is the minimum required .NET version for the agent (monitored resources) or gateway servers?
 
 The minimum required .NET Framework version is 4.7.2.
+
+### How do we check whether the agent (monitored resources) or gateway has line of sight to Azure endpoint *.workloadnexus.com?
+
+On the agent/gateway server to be onboarded,  
+- Check if it has the outbound connectivity to *.workloadnexus.azure.com 
+- Check if the firewall has been opened for this URL.
+
+For example: `Test-NetConnection westus.workloadnexu.azure.com -Port 443`
+
+### How can we determine if an agent (monitored resource) or gateway has a line of sight to the management servers?
+
+On the agent/gateway server to be onboarded, check if has the outbound connectivity to management servers load balancers endpoint.
+
+For example: `Test-NetConnection wlnxMWH160LB.scommi.com -Port 5723`
+
+### How can we verify if the machine has TLS 1.2, or a higher version enabled, and TLS 1.1 disabled?
+
+The agent and gateway server machines needs TLS 1.2 or more enabled, and TLS 1.1 disabled to get the successful onboarding and monitoring.
+ 
+For more information, see [the process for enabling TLS 1.2](https://learn.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
 ## Next steps
 
