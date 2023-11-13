@@ -162,7 +162,11 @@ Yes, if there's a direct connectivity (line-of-sight) between SCOM Managed Insta
 
 Currently, we don't support monitoring of Azure and Arc-enabled Linux machines. However, they can be managed via the Arc-enabled gateway servers.
 
-## Agents/Gateway Servers
+### Is it possible to configure an agent to communicate with multiple SCOM Managed Instances?
+
+No. You can't configure an agent to communicate with multiple SCOM Managed Instances, but it can have a multi-home configuration for on-premises System Center Operations Manager and a SCOM Managed Instance.
+
+## Agents/Gateway servers
 
 ### Can we perform actions on on-premises monitored resources?
 
@@ -188,23 +192,15 @@ You can view the list of properties for a monitored resource or a managed gatewa
 
 SCOM Managed Instance enables monitoring of Azure and Arc-enabled machines. Additionally, it displays information about on-premises machines that are directly connected to the SCOM Managed Instance.
 
-## Gateway Server
+## Managed Gateway server
 
 ### Is it permissible to use Azure Windows machines as gateway servers?
 
 Currently, only Arc-enabled machines are permitted as gateway servers.
 
-## Managed Gateway Servers
-
 ### Is it possible to configure gateway servers with multi-homing?
 
 Currently, multi-homing for gateway servers isn't supported.
-
-## Monitored resources (Agents)
-
-### Is it possible to configure an agent to communicate with multiple SCOM Managed Instances?
-
-No. You can't configure an agent to communicate with multiple SCOM Managed Instances, but it can have a multi-home configuration for on-premises System Center Operations Manager and a SCOM Managed Instance.
 
 ## Monitored resources/Managed Gateway servers onboarding
 
