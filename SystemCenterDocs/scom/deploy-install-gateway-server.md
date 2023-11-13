@@ -31,7 +31,7 @@ Before continuing, ensure that your server meets the minimum system requirements
 
 ## Prerequisites
 
-There are two major things that we need to have ready and in place before proceeding with the gateway role installation in a standard scenario:
+There are three major things that we need to have ready and in place before proceeding with the gateway role installation in a standard scenario:
 
 1. Certificates need to be generated for the gateway and management server(s) and installed into the certificate stores.
     1. If the gateway and client servers are being used in a Workgroup scenario, then the clients also need certificates.
