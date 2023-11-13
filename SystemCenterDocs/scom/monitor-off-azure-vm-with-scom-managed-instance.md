@@ -47,7 +47,7 @@ To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Mo
 
 ## Install agent for Windows virtual machine
 
-To install agent for Windows virtual machine, [download the Agent](https://go.microsoft.com/fwlink/?linkid=2251996) and follow [these steps](https://learn.microsoft.com/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard).
+To install agent for Windows virtual machine, [download](https://go.microsoft.com/fwlink/?linkid=2251996) and follow [these steps](https://learn.microsoft.com/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard).
 
 ## Install Managed Gateway
 
