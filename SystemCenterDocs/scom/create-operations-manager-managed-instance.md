@@ -113,7 +113,7 @@ To create a SCOM managed instance, follow these steps:
 1. Under **Review + create**, review all the inputs given so far, and then select **Create**. Your deployment is created on Azure. Creation of a SCOM managed instance takes up to an hour.
 
     >[!NOTE]
-    >If the deployment fails, delete the instance and all the associated resources, and then create the instance again. For more information, see [Delete an instance](./operations-manager-managed-instance-common-questions.md#what-is-the-procedure-to-delete-an-instance).
+    >If the deployment fails, delete the instance and all the associated resources, and then create the instance again. For more information, see [Delete an instance](./operations-manager-managed-instance-common-questions.md#other-queries).
 
 1. After the deployment is finished, select **Go to resource**.
 
