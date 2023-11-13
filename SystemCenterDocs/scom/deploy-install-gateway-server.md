@@ -18,9 +18,9 @@ ms.topic: article
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 ::: moniker-end
 
-Gateway servers typically are used to enable monitoring of client computers that are outside the Kerberos trust boundary of management groups. The gateway server acts as a proxy for agent-to-management server communication, enabling only one port to be opened between networks in place of many.
+Gateway servers are typically used to enable monitoring of client computers that are outside the Kerberos trust boundary of management groups. However, they can also be used within the same domain if there are needs to split up the environment due to network segmentation, or to have "far away" agents connect to the management group.
 
-Agents communicate directly with the gateway server, and the gateway server communicates with one or more management servers. Multiple gateway servers can be placed in a single domain so that the agents can fail over from one to the other if they lose communication with their primary gateway. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain. Certificates must be used to establish each computer's identity. Without certificates, the systems might connect, but refuse to communicate due to being unable to authenticate the connection.
+Agents communicate directly with the gateway server, and the gateway server communicates with one or more management servers. Multiple gateway servers can be placed in a single domain so that the agents can fail over from one to the other if they lose communication with their primary gateway. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain. The gateway server acts as a proxy for agent-to-management server communication, enabling only one port to be opened between networks in place of many. Certificates must be used to establish each computer's identity when outside the Kerberos trust boundary. Without certificates, the systems might connect, but refuse to communicate due to being unable to authenticate the connection.
 
 Before continuing, ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
@@ -31,15 +31,21 @@ Before continuing, ensure that your server meets the minimum system requirements
 
 ## Prerequisites
 
-There are two major things that we need to have ready and in place before proceeding with the gateway role installation:
+There are two major things that we need to have ready and in place before proceeding with the gateway role installation in a standard scenario:
 
 1. Certificates need to be generated for the gateway and management server(s) and installed into the certificate stores.
     1. If the gateway and client servers are being used in a Workgroup scenario, then the clients also need certificates.
 1. The intended gateway server needs to be "Approved" to be a gateway within the management group before installation.
+1. Port 5723 must be opened between the gateway and management server as defined in the guide here: [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md)
 
 ### Certificates and Name Resolution
 
 1. Deployment of gateway servers in domains without a two-way transitive trust, or in a workgroup, requires the use of certificates for authentication. The primary and failover management servers need one in addition to the gateway that is connecting to them. These certificates can come from a Microsoft Certificate Services CA, or a third-party CA, if configured correctly for Operations Manager. If you need assistance with creating these certificates, use the guide here: [Obtain a certificate for use with Windows Servers and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md)
+
+    > [!NOTE]
+    >
+    > - Gatway servers that are in the same domain or in a shared trust boundary as the management group do not require certificates.
+    > - If the gateway and agents are in a workgroup, then we will need certificates for each management server, gateway, and client computer that will be monitored as there is no domain within a workgroup to faciliate authentication of systems.
 
 2. Reliable name resolution must exist between the agent-managed computers and the gateway server, and between the gateway server and the management server. This name resolution is typically done through DNS. However, if it isn't possible to get proper name resolution through DNS, it might be necessary to manually create entries in each computer's hosts file.
 
@@ -56,7 +62,7 @@ These steps are to be performed from a management server, preferably your primar
 
 1. There's an executable included with the Operations Manager installation media called "Microsoft.EnterpriseManagement.GatewayApprovalTool.exe," which can be found in the install media under `..\SupportTools\amd64\`.
 1. Once located, copy this executable and the configuration file with the same name to the installation path under: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`
-1. Open a Command Prompt as an administrator and navigate to the Operations Manager installation directory.
+1. Open a Command Prompt as an administrator and navigate to the Operations Manager installation directory. (ex. `cd %ProgramFiles%\Microsoft System Center\Operations Manager\Server`)
 1. Use the following command to register the intended gateway as a gateway ensure to replace the server names with your own:
 
     ```cmd
@@ -136,8 +142,10 @@ Perform this operation on each gateway server, and management server, along with
 
 1. Ensure the certificates are installed before continuing
 1. Locate the **MOMCertImport.exe** file located in the installation media under `..\SupportTools\amd64\`
-1. Copy this file to the root directory of the target server or to the Operations Manager installation directory.
+1. Copy this file to the root directory of the target server or to the Operations Manager installation directory 
+    1. For example: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`).
 1. Open a Command Prompt as an administrator, and change the directory to the directory where MOMCertImport.exe is.
+    1. For example: `cd %ProgramFiles%\Microsoft System Center\Operations Manager\Server`
 1. Then run the command `MOMCertImport.exe /SubjectName subjectNameFQDN`, where "subjectNameFQDN" is the defined subject on the certificate.
     1. You can also run `MOMCertImport.exe` without any arguments to allow you to choose a certificate from a pop-up window that shows the certificates in the Local Machine Personal Store.
 1. If successful, the Microsoft Monitoring Agent service is restarted and eventID 20053 is logged to the Operations Manager event log. If this eventID isn't present, observe the details of one of these IDs for any issues and make corrections accordingly: `20049,20050,20052,20066,20069,20077`
@@ -161,16 +169,16 @@ We're using the [Set-SCOMParentManagementServer](/powershell/module/operationsma
     $FailoverServer = Get-SCOMManagementServer -Name "MS02.Contoso.com","MS03.Contoso.com"
     Set-SCOMParentManagementServer -GatewayServer $GatewayServer -FailoverServer $FailoverServer
     ```
-
-> [!NOTE]
-> You cannot set a failover server to be the same as the primary server without changing the primary at the same time, or first. If you want to change the primary and set it to a secondary, use the following commands:
->
->```powershell
->$GatewayServer = Get-SCOMGatewayManagementServer -Name "GW01.dmz.contoso.com"
->$PrimaryServer = Get-SCOMManagementServer -Name "MS02.Contoso.com"
->$FailoverServer = Get-SCOMManagementServer -Name "MS01.Contoso.com","MS03.Contoso.com"
->Set-SCOMParentManagementServer -GatewayServer $GatewayServer -PrimaryServer $PrimaryServer -FailoverServer $FailoverServer
->```
+    
+    > [!NOTE]
+    > You cannot set a failover server to be the same as the primary server without changing the primary at the same time, or first. If you want to change the primary and set it to a secondary, use the following commands:
+    >
+    >```powershell
+    >$GatewayServer = Get-SCOMGatewayManagementServer -Name "GW01.dmz.contoso.com"
+    >$PrimaryServer = Get-SCOMManagementServer -Name "MS02.Contoso.com"
+    >$FailoverServer = Get-SCOMManagementServer -Name "MS01.Contoso.com","MS03.Contoso.com"
+    >Set-SCOMParentManagementServer -GatewayServer $GatewayServer -PrimaryServer $PrimaryServer -FailoverServer $FailoverServer
+    >```
 
 ## Chain multiple gateway servers
 
