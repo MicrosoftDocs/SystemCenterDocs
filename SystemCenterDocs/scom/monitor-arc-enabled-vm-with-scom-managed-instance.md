@@ -22,7 +22,7 @@ Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Opera
 
 ## SCOM Managed Instance Agent
 
-In Azure Monitor SCOM Managed Instance, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like an SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance to monitor Windows operating systems and the components installed on them, such as a website or an Active Directory domain controller. For more information, see [Azure Monitor SCOM Managed Instance Agents](/system-center/scom/plan-planning-agent-deployment-scom-managed-instance).
+In Azure Monitor SCOM Managed Instance, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like an SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance to monitor Windows operating systems and the components installed on them, such as a website or an Active Directory domain controller.
 
 ## Support for Azure and Off-Azure workloads
 
