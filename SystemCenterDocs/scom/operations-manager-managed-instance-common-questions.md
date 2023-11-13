@@ -192,6 +192,10 @@ You can view the list of properties for a monitored resource or a managed gatewa
 
 SCOM Managed Instance enables monitoring of Azure and Arc-enabled machines. Additionally, it displays information about on-premises machines that are directly connected to the SCOM Managed Instance.
 
+### What is the expected duration for the health and connectivity states to be updated after onboarding?
+
+The initial retrieval of health and connectivity states on the portal takes approximately five to seven minutes. Subsequently, heartbeats occur every minute.
+
 ## Managed Gateway server
 
 ### Is it permissible to use Azure Windows machines as gateway servers?
@@ -202,7 +206,7 @@ Currently, only Arc-enabled machines are permitted as gateway servers.
 
 Currently, multi-homing for gateway servers isn't supported.
 
-## Monitored resources/Managed Gateway servers onboarding
+## Agents/Managed Gateway servers onboarding
 
 ### What is the minimum required .NET version for the agent (monitored resources) or gateway servers?
 
