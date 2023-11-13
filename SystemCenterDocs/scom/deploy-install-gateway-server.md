@@ -138,7 +138,7 @@ INSTALLDIR="C:\Program Files\System Center Operations Manager"
 
 ### Import certificates with the MOMCertImport.exe tool
 
-Perform this operation on each gateway server, and management server, along with any client computers that are to be agent managed in a workgroup.
+Perform this operation on each gateway and management server, along with any client computers that are to be agent managed in a workgroup.
 
 1. Ensure the certificates are installed before continuing
 1. Locate the **MOMCertImport.exe** file located in the installation media under `..\SupportTools\amd64\`
