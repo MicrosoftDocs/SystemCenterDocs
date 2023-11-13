@@ -29,7 +29,7 @@ This article describes how to create a SCOM Managed Instance dashboard on Azure 
 
 To create a SCOM Managed Instance dashboard on Azure Managed Grafana, follow these steps:
 
-### Get started with Azure Managed Instance
+### Get started with Azure Managed Grafana
 
 1. Get started by using an Azure Managed Grafana (AMG) with a version between 9 and 10 on the Azure portal. To create an AMG instance, follow [these steps](https://learn.microsoft.com/azure/managed-grafana/quickstart-managed-grafana-portal). Optionally, you can reuse an existing AMG instance.
 2. Enable System assigned managed identity on the AMG instance.
