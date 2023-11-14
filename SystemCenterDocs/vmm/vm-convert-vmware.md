@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/06/2022
+ms.date: 11/14/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -142,6 +142,15 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 ```
 
 ::: moniker-end
+
+## Convert VMware VMs to Hyper-V faster
+
+- As a prerequisite to start converting VMware VMs to Hyper-V four times faster, upgrade to SCVMM 2022 UR2 or later.
+- As part of SCVMM 2022 UR2, a new registry named **V2VTransferChunkSizeBytes** is introduced at *HKLM:\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Agent* in the Hyper-V hosts managed by SCVMM.
+- This registry of type REG_DWORD, with a value equal to *2147483648*, which is 2 GB in size, has to be set on every Hyper-V host managed by VMM by running [this script]() from the VMM Console.
+- Alternatively, if you want to set this registry value in a single host only and not on all the hosts, run [this script]() from the VMM Console.
+- After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
+
 
 ## Next steps
 
