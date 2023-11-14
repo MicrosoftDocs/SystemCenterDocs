@@ -5,7 +5,7 @@ description: This article describes the errors that might occur when you deploy 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -253,8 +253,3 @@ For example, the update button is enabled even though the title of the card read
 4. Provide the accurate FQDN of the stale management server you wish to remove.
 
     For example, FQDN: SCOMMI2000001.contoso.com.
-
-
-**Feedback**
-
-Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
