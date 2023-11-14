@@ -5,7 +5,7 @@ description: This article provides an overview of SCOM Managed Instance Data Enc
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -41,9 +41,4 @@ SCOM Managed Instance uses RPaaS Cosmos database to store SCOM Managed Instance 
 
 ## Encryption at Compute 
 
-Though SCOM Managed Instance doesn't store any customer details, it takes domain user details from your key vault secrets. These domain user details are used for adding System Center Operations Manager management servers to on-premises Domain controller. To avoid any data leak at compute, encrypt it using the VM extension `AzureDiskEncryption`. 
-
-**Feedback**
-
-Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
-
+Though SCOM Managed Instance doesn't store any customer details, it takes domain user details from your key vault secrets. These domain user details are used for adding System Center Operations Manager management servers to on-premises Domain controller. To avoid any data leak at compute, encrypt it using the VM extension `AzureDiskEncryption`.

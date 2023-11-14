@@ -5,7 +5,7 @@ description: This quickstart describes how to migrate from Operations Manager on
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -225,7 +225,3 @@ To migrate from System Center Operations Manager agent to SCOM Managed Instance,
 ## Next steps
 
 [Create a SCOM Managed Instance on Azure](create-operations-manager-managed-instance.md).
-
-**Feedback**
-
-Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
