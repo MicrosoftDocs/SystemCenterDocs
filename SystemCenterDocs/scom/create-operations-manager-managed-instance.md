@@ -43,7 +43,7 @@ To create a SCOM Managed Instance, follow these steps:
         - **Subscription**: Select the Azure subscription in which you want to place the SCOM Managed Instance.
         - **Resource group**: Select the resource group in which you want to place the SCOM Managed Instance. We recommend that you have a new resource group exclusively for SCOM Managed Instance.
 
-        :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details-inline.png" alt-text="Screenshot that shows project details for creating a SCOM managed instance." lightbox="media/create-operations-manager-managed-instance/project-details-expanded.png":::
+        :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details-inline.png" alt-text="Screenshot that shows project details for creating a SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/project-details-expanded.png":::
 
     - **Instance details**:
         - **SCOM managed instance name**: Enter a name for your SCOM Managed Instance.
@@ -52,14 +52,14 @@ To create a SCOM Managed Instance, follow these steps:
             >- A SCOM Managed Instance is equivalent to a System Center Operations Manager management group, so choose a name accordingly.
         - **Region**: Select a region near to you geographically so that latency between your agents and the SCOM Managed Instance is as low as possible. This region must also contain the virtual network.
 
-        :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details-inline.png" alt-text="Screenshot that shows instance details for creating a SCOM managed instance." lightbox="media/create-operations-manager-managed-instance/instance-details-expanded.png":::
+        :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details-inline.png" alt-text="Screenshot that shows instance details for creating a SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/instance-details-expanded.png":::
 
     - **Active directory details**:
         - **Domain name**: Enter the name of the domain that the domain controller is administering.
         - **DNS server IP**: Enter the IP address of the Domain Name System (DNS) server that's providing the IP addresses to the resources in the domain from the previous step.
         - **OU Path**: Enter the organizational unit (OU) path to where you want to join the servers. This field isn't a necessary. If you leave it blank, it assumes the default value. Ensure that the value you enter is in the distinguished name format. For example: **OU=testOU,DC=domain,DC=Domain,DC=com**.
 
-        :::image type="Active Directory details" source="media/create-operations-manager-managed-instance/active-directory-details-inline.png" alt-text="Screenshot that shows Active Directory details for creating a SCOM managed instance." lightbox="media/create-operations-manager-managed-instance/active-directory-details-expanded.png":::
+        :::image type="Active Directory details" source="media/create-operations-manager-managed-instance/active-directory-details-inline.png" alt-text="Screenshot that shows Active Directory details for creating a SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/active-directory-details-expanded.png":::
 
     - **Domain account details**:
         - **Security key vault**: Select the key vault that has the secret username and secret password of the domain account's user credentials.

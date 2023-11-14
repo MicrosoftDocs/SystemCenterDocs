@@ -32,7 +32,7 @@ The minimum address space is /27 (which means /28 and above wouldn't work).
 - VNet needs two subnets. 
     - For SCOM Managed Instance
     - For SQL Managed Instance
-- The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the SCOM Managed Instance. Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/SCOM Managed Instance.
+- The subnet for SQL Managed Instance instance will be a delegated (dedicated) subnet and won't be used by the SCOM Managed Instance. Name the subnets accordingly to avoid confusion in the future while you create the SQL Managed Instance/SCOM Managed Instance.
 
 **What address range do the two subnets need?**
 
@@ -212,7 +212,7 @@ Currently, multi-homing for gateway servers isn't supported.
 
 The minimum required .NET Framework version is 4.7.2.
 
-**How do we check whether the agent (monitored resources) or gateway has line of sight to Azure endpoint *.workloadnexus.com?**
+**How do we check whether the agent (monitored resources) or gateway has line of sight to Azure endpoint <*.workloadnexus.com>?**
 
 On the agent/gateway server to be onboarded,  
 - Check if it has the outbound connectivity to *.workloadnexus.azure.com 

@@ -59,7 +59,7 @@ To create a SCOM Managed Instance, follow these steps:
         - **Subscription**: Select the Azure subscription in which you want to place the SCOM Managed Instance.
         - **Resource group**: Select the resource group in which you want to place the SCOM Managed Instance. We recommend that you have a new resource group exclusively for SCOM Managed Instance.
 
-        :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details-inline.png" alt-text="Screenshot that shows project details for creating a SCOM managed instance." lightbox="media/create-operations-manager-managed-instance/project-details-expanded.png":::
+        :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details-inline.png" alt-text="Screenshot that shows project details for creating a SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/project-details-expanded.png":::
 
     - **Instance details**:
         - **SCOM managed instance name**: Enter a name for your SCOM Managed Instance.
@@ -68,7 +68,7 @@ To create a SCOM Managed Instance, follow these steps:
             >- A SCOM Managed Instance is equivalent to a System Center Operations Manager management group, so choose a name accordingly.
         - **Region**: Select a region near to you geographically so that latency between your agents and the SCOM Managed Instance is as low as possible. This region must also contain the virtual network.
 
-        :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details-inline.png" alt-text="Screenshot that shows instance details for creating a SCOM managed instance." lightbox="media/create-operations-manager-managed-instance/instance-details-expanded.png":::
+        :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details-inline.png" alt-text="Screenshot that shows instance details for creating a SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/instance-details-expanded.png":::
 
     - **Active directory details**:
         - **Domain name**: Enter the name of the domain that the domain controller is administering.
