@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Azure Monitor SCOM Managed Instance (preview) self-verification of steps
+title: Azure Monitor SCOM Managed Instance self-verification of steps
 description: This article describes the self-verification processes of the Operations Manager admin, Active Directory admin, and network admin.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/08/2023
+ms.date: 11/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,12 +13,12 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Azure Monitor SCOM Managed Instance (preview) self-verification of steps
+# Azure Monitor SCOM Managed Instance self-verification of steps
 
 This article describes the self-verification processes of the Operations Manager admin, Active Directory admin, and network admin.
 
 > [!NOTE]
-> To learn about the Azure Monitor SCOM Managed Instance (preview) architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+> To learn about the Azure Monitor SCOM Managed Instance architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
 After you set up the required parameters, run the self-validation tool. Based on the experience and data collected from telemetry, Operations Manager administrators have spent considerable time validating the accuracy of parameters. Running this tool helps to identify any issues with your environment or parameters before you proceed with the deployment.
 
@@ -53,7 +53,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot that shows the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
@@ -153,7 +153,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot that shows the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
@@ -247,7 +247,7 @@ Follow these steps to run the validation script:
 
      :::image type="DNS server IP" source="media/scom-managed-instance-self-verification-of-steps/dns-server-ip.png" alt-text="Screenshot of the DNS server IP.":::
 
-1. Download the validation script to the test VM and extract. It consists of five files:
+1. [Download the validation script](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip) to the test VM and extract. It consists of five files:
      - `Readme.txt`
      - `ScomValidation.ps1`
      - `RunValidationAsSCOMAdmin.ps1`
@@ -302,6 +302,6 @@ Follow these steps to run the validation script:
 
 ## Next steps
 
-- [Create an instance of Azure Monitor SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md)
+- [Create an instance of Azure Monitor SCOM Managed Instance](create-operations-manager-managed-instance.md)
 
-To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
