@@ -155,7 +155,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 ## SUSE Linux Enterprise Server 15
 
 >[!NOTE]
->SLES 15 is supported under Universal Linux from System Center Operations Manager 2019 UR1 and later.
+>System Center Operations Manager 2019 UR1 and later supports SLES 15 under Universal Linux.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
