@@ -156,7 +156,7 @@ The certificates are assigned by Microsoft and are signed by CA. There's no requ
 
 Yes, if there's a direct connectivity (line-of-sight) between SCOM Managed Instance and on-premises machine via VPN/ER, you can monitor these machines. For more information, see [Configure monitoring of on-premises servers](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-on-premises-servers).
 
-## Agent
+## Monitored Resources (Agents)
 
 **Are Linux machines permitted for monitoring?**
 
@@ -166,7 +166,7 @@ Currently, we don't support monitoring of Azure and Arc-enabled Linux machines. 
 
 No. You can't configure an agent to communicate with multiple SCOM Managed Instances, but it can have a multi-home configuration for on-premises System Center Operations Manager and a SCOM Managed Instance.
 
-## Agents/Gateway servers
+## Monitored Resources (Agents)/Managed Gateway Servers
 
 **Can we perform actions on on-premises monitored resources?**
 
@@ -196,7 +196,7 @@ SCOM Managed Instance enables monitoring of Azure and Arc-enabled machines. Addi
 
 The initial retrieval of health and connectivity states on the portal takes approximately five to seven minutes. Subsequently, heartbeats occur every minute.
 
-## Managed Gateway server
+## Managed Gateway Servers
 
 **Is it permissible to use Azure Windows machines as gateway servers?**
 
