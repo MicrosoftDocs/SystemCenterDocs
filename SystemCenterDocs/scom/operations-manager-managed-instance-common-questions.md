@@ -5,7 +5,7 @@ description: This article summarizes frequently asked questions about Azure Moni
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/13/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -142,7 +142,7 @@ Since this instance requires you to create the SCOM Managed Instance in your sub
 
 No.  
 
-SCOM Managed Instance Managed Gateways can be configured on any Azure and Arc-enabled server, which doesn’t have Operations Manager Gateway software on it. If you want to reuse Operations Manager on-premises Gateway servers with SCOM Managed Instance, uninstall Operations Manager Gateway software on it. To configure SCOM MI Managed Gateway, see [Configure monitoring of servers via SCOM Managed Instance Gateway](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-servers-via-scom-managed-instance-gateway).
+SCOM Managed Instance Managed Gateways can be configured on any Azure and Arc-enabled server, which doesn’t have Operations Manager Gateway software on it. If you want to reuse Operations Manager on-premises Gateway servers with SCOM Managed Instance, uninstall Operations Manager Gateway software on it. To configure SCOM Managed Instance Managed Gateway, see [Configure monitoring of servers via SCOM Managed Instance Gateway](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-servers-via-scom-managed-instance-gateway).
 
 **Can SCOM Managed Instance Managed Gateway multi-home with System Center Operations Manager on-premises Management server?**
 
@@ -222,7 +222,7 @@ For example: `Test-NetConnection westus.workloadnexu.azure.com -Port 443`
 
 **How can we determine if an agent (monitored resource) or gateway has a line of sight to the management servers?**
 
-On the agent/gateway server to be onboarded, check if has the outbound connectivity to management servers load balancers endpoint.
+On the agent/gateway server to be onboarded, check if it has the outbound connectivity to management servers load balancers endpoint.
 
 For example: `Test-NetConnection wlnxMWH160LB.scommi.com -Port 5723`
 
