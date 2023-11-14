@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/28/2023
+ms.date: 11/14/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -153,6 +153,9 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
 
 ## SUSE Linux Enterprise Server 15
+
+>[!NOTE]
+>SLES 15 is supported under Universal Linux from System Center Operations Manager 2019 UR1 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
