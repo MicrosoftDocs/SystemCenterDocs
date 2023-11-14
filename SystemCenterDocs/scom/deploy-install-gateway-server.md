@@ -70,10 +70,10 @@ These steps are to be performed from a management server, preferably your primar
     ```
 
     > [!NOTE]
-    > If you want to prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter as used in the following command. Otherwise by default communication will initiate from the gateway itself.
+    > If you want to prevent the gateway server from initiating communication with a management server, include the **/ManagementServerInitiatesConnection=True** parameter as used in the following command. Otherwise by default communication will initiate from the gateway itself. This is helpful if you want to prevent any inbound access to the primary domain from the network where the gateway resides.
     >
     > ```cmd
-    > "Microsoft.EnterpriseManagement.GatewayApprovalTool.exe" /ManagementServerName=MS01.contoso.com /GatewayName=GW01.dmz.contoso.com /ManagementServerInitiatesConnection=True /Action=Create
+    > Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=MS01.contoso.com /GatewayName=GW01.dmz.contoso.com /ManagementServerInitiatesConnection=True /Action=Create
     > ```
 
 1. If the approval is successful, the message `The approval of server <GatewayFQDN> completed successfully.` is returned.
@@ -114,6 +114,22 @@ Follow these steps to install the gateway server from the command prompt:
 
 > [!TIP]
 > The ^ characters are to allow for multi-line input into the console window and easier editing, if this does not work in your environment, remove the ^ characters and edit the command to be on one line.
+
+If you are using **LocalSystem** as the action account:
+
+```cmd
+%WinDir%\System32\msiexec.exe /i C:\path\to\Installer\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log ^
+ADDLOCAL=MOMGateway ^
+MANAGEMENT_GROUP="ManagementGroupName" ^
+IS_ROOT_HEALTH_SERVER=0 ^
+ROOT_MANAGEMENT_SERVER_AD="MS01.contoso.com" ^
+ROOT_MANAGEMENT_SERVER_DNS="MS01.contoso.com" ^
+ACTIONS_USE_COMPUTER_ACCOUNT=1 ^
+ROOT_MANAGEMENT_SERVER_PORT=5723 ^
+INSTALLDIR="C:\Program Files\System Center Operations Manager"
+```
+
+If you are using a **Domain User** as the action account:
 
 ```cmd
 %WinDir%\System32\msiexec.exe /i C:\path\to\Installer\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log ^
