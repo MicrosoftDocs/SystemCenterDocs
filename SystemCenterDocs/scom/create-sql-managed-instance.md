@@ -5,7 +5,7 @@ description: This article describes how to create a SQL managed instance in a de
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -55,5 +55,3 @@ For the rest of the settings on the other tabs, you can leave them as default or
 ## Next steps
 
 - [Create a key vault ](create-key-vault.md)
-
-To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
