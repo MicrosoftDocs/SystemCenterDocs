@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5, references_regions
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -140,5 +140,3 @@ To create a SCOM Managed Instance, follow these steps:
 - [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
 - [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
 - [Azure Monitor SCOM Managed Instance frequently asked questions](operations-manager-managed-instance-common-questions.md)
-
-To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
