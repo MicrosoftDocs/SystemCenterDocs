@@ -5,7 +5,7 @@ description: This article describes how to create a user-assigned identity, prov
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -112,5 +112,3 @@ To grant permission on the key vault that you created in [step 4](create-key-vau
 ## Next steps
 
 - [Create a gMSA account](create-gmsa-account.md)
-
-To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
