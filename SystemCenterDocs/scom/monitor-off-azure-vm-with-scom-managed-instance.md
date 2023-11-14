@@ -51,13 +51,13 @@ To install agent for Windows virtual machine, [download](https://go.microsoft.co
 
 Before you use either method to manually deploy the agent, ensure the following conditions are met:
 
-- The account that is used to run MOMAgent.msi must have administrative privileges on the computer on which you're installing agent.
+- The account that is used to run MSI must have administrative privileges on the computer on which you're installing agent.
 
 - Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md).
 
-- A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi, or they'll be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+- SCOM Managed Instance must be configured to accept agents installed with MSI, or they'll be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the managed instance is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
-Follow these steps to deploy the Operations Manager agent with the Agent Setup Wizard:
+Follow these steps to deploy the SCOM Managed Instance agent with the Agent Setup Wizard:
 
 1. Use local administrator privileges to sign in to the computer where you want to install the agent.
 
@@ -71,7 +71,7 @@ Follow these steps to deploy the Operations Manager agent with the Agent Setup W
 
 6. On the **Destination Folder** page, leave the installation folder set to the default, or select **Change** and type a path, and select **Next**.
 
-7. On the **Agent Setup Options** page, you can choose whether you want to **connect the agent to Operations Manager**. When you connect the agent to Operations Manager, you can manually choose the management group that this agent will participate with in monitoring. If you don't select this option, the agent can still collect Application Performance Monitoring data locally. You can change your selection in the **Monitoring Agent** item in Control Panel.  
+7. On the **Agent Setup Options** page, you can choose whether you want to **connect the agent to Operations Manager**. 
 
 8. On the **Management Group Configuration** page, do the following:
 
