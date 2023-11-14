@@ -5,7 +5,7 @@ description: This article describes how to configure the network firewall.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -96,5 +96,3 @@ Take care of the following issues for all three networking models mentioned earl
 ## Next steps
 
 - [Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md)
-
-To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
