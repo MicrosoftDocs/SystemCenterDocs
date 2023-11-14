@@ -19,7 +19,7 @@ Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Opera
 
 ## SCOM Managed Instance Agent
 
-In Azure Monitor SCOM Managed Instance, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like an SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance to monitor Windows operating systems and the components installed on them, such as a website or an Active Directory domain controller. For more information, see [Azure Monitor SCOM Managed Instance Agents](/system-center/scom/plan-planning-agent-deployment-scom-managed-instance).
+In Azure Monitor SCOM Managed Instance, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like an SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance to monitor Windows operating systems and the components installed on them, such as a website or an Active Directory domain controller.
 
 ## Supported scenarios
 
@@ -47,11 +47,11 @@ To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Mo
 
 ## Install agent for Windows virtual machine
 
-To install agent for Windows virtual machine, see [Install an agent on a computer running Windows by using the Discovery Wizard](https://learn.microsoft.com/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard).
+To install agent for Windows virtual machine, [download](https://go.microsoft.com/fwlink/?linkid=2251996) and follow [these steps](https://learn.microsoft.com/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard).
 
 ## Install Managed Gateway
 
-To install Managed Gateway, [download the Gateway software](https://go.microsoft.com/fwlink/?linkid=2252000) and follow [these steps](https://learn.microsoft.com/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer).
+To install Managed Gateway, [download the Gateway software](https://go.microsoft.com/fwlink/?linkid=2251997) and follow [these steps](https://learn.microsoft.com/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer).
  
 ## Monitor Linux machine
 
