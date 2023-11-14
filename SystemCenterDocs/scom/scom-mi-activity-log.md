@@ -5,7 +5,7 @@ description: This article provides information on how to view the activity log.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -46,7 +46,3 @@ You can view the change history of an event and get the details of changes occur
 If any changes are associated with the event, you'll see a list of changes that you can select. To view details, select a change. The  **Change history** page opens and displays the changes to the resource. In the following example, you can see that the SCOM Managed Instance tags and provision state changes. 
 
 :::image type="SCOM Managed Instance tags" source="media/scom-mi-activity-log/scom-mi-tags.png" alt-text="Screenshot showing SCOM Managed Instance tags."::: 
-
-**Feedback**
-
-Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

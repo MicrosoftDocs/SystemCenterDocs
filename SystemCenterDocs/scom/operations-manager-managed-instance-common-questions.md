@@ -235,7 +235,3 @@ For more information, see [the process for enabling TLS 1.2](https://learn.micro
 ## Next steps
 
 [SCOM Managed Instance overview](operations-manager-managed-instance-overview.md)
-
-**Feedback**
-
-Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

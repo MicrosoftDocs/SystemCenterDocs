@@ -5,7 +5,7 @@ description: This article describes the self-verification processes of the Opera
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -303,5 +303,3 @@ Follow these steps to run the validation script:
 ## Next steps
 
 - [Create an instance of Azure Monitor SCOM Managed Instance](create-operations-manager-managed-instance.md)
-
-To provide feedback on SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
