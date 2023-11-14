@@ -35,7 +35,7 @@ Following are the prerequisites required on desired monitoring endpoints:
 
 1. Ensure to Allowlist the following Azure URL on the desired monitoring endpoints:
       `*.workloadnexus.azure.com`
-2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
+2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS (Load balancer DNS) information by navigating to SCOM Managed Instance **Overview** > **Properties** > **Load balancer** > **DNS Name**.
 
     ```    
     Test-NetConnection -ComputerName <LB DNS> -Port 5723
