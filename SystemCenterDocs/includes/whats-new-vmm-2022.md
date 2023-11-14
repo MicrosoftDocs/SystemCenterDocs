@@ -105,7 +105,7 @@ For problems fixed in VMM 2022 UR2, and installation instructions for UR2, see t
 
 ### Improved V2V conversion performance of VMware VMs to Hyper-V VMs
 
-You can now convert your VMware VMs to Hyper-V with close to four times faster conversion speed and support for VMware VMs with disk sizes greater than 2 TB. [Learn more about how to use this enhancement](vm-convert-vmware#Convert-VMware-VMs-to-Hyper-V-faster).
+You can now convert your VMware VMs to Hyper-V with close to four times faster conversion speed and support for VMware VMs with disk sizes greater than 2 TB. [Learn more about how to use this enhancement](vm-convert-vmware#convert-vmware-vms-to-hyper-v-faster).
 
 ### Improved Arc-enabled SCVMM Discovery tab
 
