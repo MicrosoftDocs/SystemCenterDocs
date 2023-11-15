@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2023
+ms.date: 11/15/2023
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -95,7 +95,6 @@ With VMM 2022 UR1, removed VMM dependencies on deprecated SCOM Management Packs.
 VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2022).
 
 ### Support for 64 virtual networks for Windows Server 2019 or later
-
 VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.
 
 ## New features in VMM 2022 UR2
@@ -106,7 +105,7 @@ For problems fixed in VMM 2022 UR2, and installation instructions for UR2, see t
 
 ### Improved V2V conversion performance of VMware VMs to Hyper-V VMs
 
-You can now convert your VMware VMs to Hyper-V with close to four times faster conversion speed and support for VMware VMs with disk sizes greater than 2 TB.
+You can now convert your VMware VMs to Hyper-V with close to four times faster conversion speed and support for VMware VMs with disk sizes greater than 2 TB. [Learn more about how to use this enhancement](../vmm/vm-convert-vmware.md#convert-vmware-vms-to-hyper-v-faster).
 
 ### Improved Arc-enabled SCVMM Discovery tab
 
