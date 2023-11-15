@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/14/2023
+ms.date: 11/15/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

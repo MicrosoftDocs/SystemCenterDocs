@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/14/2023
+ms.date: 11/15/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -161,9 +161,9 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 - As a prerequisite to start converting VMware VMs to Hyper-V four times faster, upgrade to SCVMM 2022 UR2 or later.
 - As part of SCVMM 2022 UR2, a new registry named **V2VTransferChunkSizeBytes** is introduced at *HKLM:\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Agent* in the Hyper-V hosts managed by SCVMM.
-- This registry of type REG_DWORD, with a value of *2147483648*, which is 2 GB in size has to be set on every Hyper-V host managed by VMM by running [this script](https://download.microsoft.com/download/2/c/a/2caf6779-853a-4455-9c67-a0d2b1e2ccfe/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20All%20Hosts.ps1) from the VMM Console.
+- This registry of type REG_DWORD, with a value of *2147483648*, which is 2 GB in bytes has to be set on every Hyper-V host managed by VMM by running [this script](https://download.microsoft.com/download/2/c/a/2caf6779-853a-4455-9c67-a0d2b1e2ccfe/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20All%20Hosts.ps1) from the VMM Console.
 - Alternatively, if you want to set this registry value in a single host and not on all the hosts, run [this script](https://download.microsoft.com/download/4/4/6/446e9dac-0356-44ce-a0c9-707a8d3e2bb0/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20Single%20Host.ps1) from the VMM Console.
-- After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
+- After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
 
 
 ## Next steps
