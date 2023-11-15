@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2022
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/13/2023
+ms.date: 11/15/2023
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -99,6 +99,9 @@ Active Directory | The VMM management server must be a domain member.<br><br> Th
 Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 11 and Windows Server 2022 and download windows PE Add-on for ADK| Not applicable
 PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 .NET (minimum) | 4.6 |  4.5
+
+>[!Note]
+> If you run into ADK file path issue while installing VMM, copy the files from the *amd64* folder in ADK root folder to the ADK root folder itself. The default ADK folder path is *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*, but it can be different based on your choice of folder path during ADK installation.
 
 ## Servers in the VMM fabric
 

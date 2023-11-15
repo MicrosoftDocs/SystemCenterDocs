@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM Manage
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -29,18 +29,10 @@ Follow the below steps to connect a SCOM Managed Instance to Operations console:
      >- If the VM/machine is on-premises, set the NSG rules and firewall rules on the SCOM Managed Instance VNet and on the on-premises network where the VM/machine is located to ensure specified essential port (5724) is reachable.
      >- If the VM/machine is in Azure, set the NSG rules and firewall rules on the SCOM Managed Instance VNet and on the Virtual network (VNET) where the VM/machine is located to ensure specified essential port (5724) is reachable.
 1. **Install the Ops Console**: From the [executable file](https://go.microsoft.com/fwlink/?linkid=2212475), install the Operations console and follow the installation wizard to successfully install the Operations console.
-1. **Connect SCOM Managed Instance to Ops Console**: Sign in to the Operations console and select **Connect To Server**. Add the FQDN pointing to the management servers.
-         
-      For a detailed procedure to connect the Operations console to a Management Group (in this case, SCOM Managed Instance), see [How to connect to the Operations and Web console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
-
-1. **Install Agents**: Open the ports 5723/135/138/445 and [install your agents](/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-2019&preserve-view=true).
-
-1. **Connect SCOM Managed Instance to the Web Console**: To connect to the Web console, go to properties in the SCOM Managed Instance homepage, and copy the value in the *Operations Manager Web Console URL*. Paste that URL in any browser to open the web console.
+1. **Connect SCOM Managed Instance to Ops Console**: Sign in to the Operations console and select **Connect To Server**. Add the DNS name displayed at SCOM Managed Instance > **Overview** > **Properties** > **Load Balancer**.
 
 ## Next step
 
 [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
 
-**Feedback**
 
-Provide your feedback on Azure Monitor SCOM Managed Instance [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
