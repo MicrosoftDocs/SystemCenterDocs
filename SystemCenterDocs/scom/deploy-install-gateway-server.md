@@ -115,7 +115,7 @@ Follow these steps to install the gateway server from the command prompt:
 > [!TIP]
 > The ^ characters are to allow for multi-line input into the console window and easier editing, if this does not work in your environment, remove the ^ characters and edit the command to be on one line.
 
-If you are using **LocalSystem** as the action account:
+If you're using **LocalSystem** as the action account:
 
 ```cmd
 %WinDir%\System32\msiexec.exe /i C:\path\to\Installer\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log ^
@@ -129,7 +129,7 @@ ROOT_MANAGEMENT_SERVER_PORT=5723 ^
 INSTALLDIR="C:\Program Files\System Center Operations Manager"
 ```
 
-If you are using a **Domain User** as the action account:
+If you're using a **Domain User** as the action account:
 
 ```cmd
 %WinDir%\System32\msiexec.exe /i C:\path\to\Installer\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log ^
