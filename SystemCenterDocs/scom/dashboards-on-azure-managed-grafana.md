@@ -29,19 +29,21 @@ This article describes how to create a SCOM Managed Instance dashboard on Azure 
 
 To create a SCOM Managed Instance dashboard on Azure Managed Grafana, follow these steps:
 
-### Get started with Azure Managed Grafana
+### Get started with Azure Managed Grafana (AMG)
 
-1. Get started by using an Azure Managed Grafana (AMG) with a version 10 on the Azure portal. To create an AMG instance, follow [these steps](https://learn.microsoft.com/azure/managed-grafana/quickstart-managed-grafana-portal). Optionally, you can reuse an existing AMG instance.
+1. Create or reuse an Azure Managed Grafana (AMG) with a version 10 on the Azure portal. To create an AMG instance, follow [these steps](https://learn.microsoft.com/azure/managed-grafana/quickstart-managed-grafana-portal). Optionally, you can reuse an existing AMG instance.
 2. Enable System assigned managed identity on the AMG instance.
 
      :::image type="Permissions" source="media/dashboards-on-azure-managed-grafana/grafana-permissions.png" alt-text="Screenshot of grafana permissions.":::
+3. Browse to SQL managed instance where SCOM Managed Instance databases are created. Note the SQL managed instance public endpoints and the Database name.
 
 ### Assign Permissions
 
-1. On the AMG instance, provide **Grafana Editors** permissions to the users who need access to create dashboards.
-2. Grant permissions to the managed identity of the Grafana instance on the SQL managed instance database.
-3. [Download and run the PowerShell script](https://go.microsoft.com/fwlink/?linkid=2252607) to create SQL user for Azure Managed Grafana identity.
-4. Note the SQL managed instance public endpoints and the Database name.
+1. On the AMG instance, provide **Grafana Admin** permissions to the users who need access to create dashboards.
+      >[!NOTE]
+      >After you set up a dashboard, assign **Grafana Editor** user permission to view, edit and create additional dashboards.
+1. Grant permissions to the System managed identity of the Grafana instance on the SQL managed instance database by downloading and running the [PowerShell script](https://go.microsoft.com/fwlink/?linkid=2252607). This script is going to create SQL user for Azure Managed Grafana identity.
+1. The script accepts details of **Azure Managed Grafana Instance name**, **SCOM MI instance name**, SQL managed instance **Public endpoint** and **Server admin login** credentials of SQL managed instance.
 
 ### Configure Data source on AMG
 
@@ -50,9 +52,10 @@ To create a SCOM Managed Instance dashboard on Azure Managed Grafana, follow the
 3. On the **Settings** page, enter the Database endpoint URL in the **Host** field.
 4. Enter the Database name (noted above) in **Database** field.
 5. Use Azure Managed Identity as the authentication method.
+6. Select **Save and test**.
 
 ### Import SCOM Managed Instance dashboards in AMG instance
 
 1. Navigate to AMG instance endpoint > **Dashboards** > **New** > **Import** > **Import via grafana.com** > **Enter 19919** and select **Import**.
 2. Browse to the imported dashboards.
-3. Choose the above created Data source and the respective database in the dashboard settings.
+3. On the top of the dashboard, choose the above created Data source and the respective database in the dashboard settings.
