@@ -199,6 +199,7 @@ Supported versions:
 - Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
 - Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR5 and later) 
 - Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
+- SLES 15 is supported from System Center - Operations Manager 2019 UR1 and later
 
 >[!Note]
 >- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
