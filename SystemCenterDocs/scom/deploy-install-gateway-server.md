@@ -34,11 +34,11 @@ Before continuing, ensure that your server meets the minimum system requirements
 There are three major things that we need to have ready and in place before proceeding with the gateway role installation in a standard scenario:
 
 1. Certificates need to be generated for the gateway and management server(s) and installed into the certificate stores.
-    1. If the gateway and client servers are being used in a Workgroup scenario, then the clients also need certificates.
+    - If the gateway and client servers are being used in a Workgroup scenario, then the clients also need certificates.
 1. The intended gateway server needs to be "Approved" to be a gateway within the management group before installation.
 1. Port 5723 must be opened between the gateway and management server as defined in the guide here: [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md)
 
-### Certificates and Name Resolution
+### Certificates and Name resolution
 
 1. Deployment of gateway servers in domains without a two-way transitive trust, or in a workgroup, requires the use of certificates for authentication. The primary and failover management servers need one in addition to the gateway that is connecting to them. These certificates can come from a Microsoft Certificate Services CA, or a third-party CA, if configured correctly for Operations Manager. If you need assistance with creating these certificates, use the guide here: [Obtain a certificate for use with Windows Servers and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md)
 
@@ -80,7 +80,7 @@ These steps are to be performed from a management server, preferably your primar
 1. If you need to remove the gateway server from the management group, run the same command, but substitute `/Action=Create` for the `/Action=Delete` flag.
 1. Open the Operations console to the Monitoring view. Select the Discovered Inventory view to see that the gateway server is present. It should also be viewable under Administration > Device Management > Management Servers.
 
-## Installation Process
+## Installation process
 
 Once the intended gateway server is registered with the management group, it's time to install the role on the new gateway.
 
@@ -159,11 +159,11 @@ Perform this operation on each gateway and management server, along with any cli
 1. Ensure the certificates are installed before continuing
 1. Locate the **MOMCertImport.exe** file located in the installation media under `..\SupportTools\amd64\`
 1. Copy this file to the root directory of the target server or to the Operations Manager installation directory 
-    1. For example: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`).
+    - For example: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server`).
 1. Open a Command Prompt as an administrator, and change the directory to the directory where MOMCertImport.exe is.
-    1. For example: `cd %ProgramFiles%\Microsoft System Center\Operations Manager\Server`
+    - For example: `cd %ProgramFiles%\Microsoft System Center\Operations Manager\Server`
 1. Then run the command `MOMCertImport.exe /SubjectName subjectNameFQDN`, where "subjectNameFQDN" is the defined subject on the certificate.
-    1. You can also run `MOMCertImport.exe` without any arguments to allow you to choose a certificate from a pop-up window that shows the certificates in the Local Machine Personal Store.
+    - You can also run `MOMCertImport.exe` without any arguments to allow you to choose a certificate from a pop-up window that shows the certificates in the Local Machine Personal Store.
 1. If successful, the Microsoft Monitoring Agent service is restarted and eventID 20053 is logged to the Operations Manager event log. If this eventID isn't present, observe the details of one of these IDs for any issues and make corrections accordingly: `20049,20050,20052,20066,20069,20077`
 
 > [!TIP]
