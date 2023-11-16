@@ -32,19 +32,19 @@ Arc-enabled System Center VMM allows you to:
 
 You can discover and learn about Arc-enabled SCVMM from the *Azure Arc* blade in the SCVMM console.
 
-Navigate to **Azure Arc** in the administrator **SCVMM Console** and do the following:
+Navigate to **Azure Arc** in the administrator **SCVMM Console** and you can do the following:
 
    - **Overview**: Read the overview of Arc-enabled SCVMM.
    - **Pre-requisites**: Review the prerequisites of Are-enabled SCVMM.
    - **Steps to deploy**: View steps to Arc-enable your SCVMM managed estate.
    - **Install Arc agents at scale**: View steps to install Azure Connected Machine agents at scale to your SCVMM VMs from Azure.
-   - **Azure Management Services**: Learn about the popular Azure management services to govern, protect, configure and monitor your SCVMM VMs through Azure Arc.
+   - **Azure Management Services**: Learn about the popular Azure management services to govern, protect, configure, and monitor your SCVMM VMs through Azure Arc.
    - **Deploy Arc Resource Bridge**: Deploy Arc resource bridge.
    - **View onboarded SCVMM in Azure**: Navigate to your SCVMM inventory page on the Azure Arc portal from the default web browser.
 
 You need appropriate credentials on the Azure portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM.
 
-:::image type="Arc-enabled SCVMM blade" source="media/about-arc-enabled-system-center-virtual-machine-manager/arc-enabled-system-center-virtual-machine-manager.png" alt-text="Screenshot showing Arc-enabled SCVMM blade.":::
+:::image type="Arc-enabled SCVMM blade" source="media/about-arc-enabled-system-center-virtual-machine-manager/arc-enabled-system-center-virtual-machine-manager.png" alt-text="Screenshot showing Arc-enabled SCVMM blade." lightbox="media/about-arc-enabled-system-center-virtual-machine-manager/arc-enabled-system-center-virtual-machine-manager.png":::
 
 ## Next steps
 
