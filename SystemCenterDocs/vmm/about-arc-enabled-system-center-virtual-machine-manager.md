@@ -18,7 +18,7 @@ Azure Arc-enabled System Center Virtual Machine Manager (SCVMM) empowers System 
 
 Azure Arc-enabled System Center Virtual Machine Manager also allows you to manage your hybrid environment consistently and perform self-service VM operations through Azure portal. For Microsoft Azure Pack customers, this solution is intended as an alternative to perform VM self-service operations.
 
-Arc-enabled System Center VMM allows you to:
+Arc-enabled System Center Virtual Machine Manager allows you to:
 
 - Perform various VM lifecycle operations such as start, stop, pause, and delete VMs on SCVMM managed VMs directly from Azure.
 - Empower developers and application teams to self-serve VM operations on demand using [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
