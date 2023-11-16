@@ -5,7 +5,7 @@ description: This article describes how to create a key vault to store domain cr
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/06/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -18,7 +18,7 @@ monikerRange: '>=sc-om-2019'
 This article describes how to create a key vault to store domain credentials.
 
 >[!NOTE]
-> To learn about the Azure Monitor SCOM Managed Instance (preview) architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+> To learn about the Azure Monitor SCOM Managed Instance architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
 ## Create a key vault to store secrets
 
@@ -65,5 +65,3 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 ## Next steps
 
 - [Create a user-assigned identity](create-user-assigned-identity.md)
-
-To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
