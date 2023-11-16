@@ -14,25 +14,22 @@ ms.custom: intro-overview, UpdateFrequency0.5
 
 # About Arc-enabled System Center Virtual Machine Manager
 
-Azure Arc-enabled System Center Virtual Machine Manager (SCVMM) empowers System Center customers to connect their VMM environment to Azure and perform VM self-service operations from the Azure portal. With Azure Arc-enabled SCVMM, you get consistent management experience across Azure.
+Azure Arc-enabled System Center Virtual Machine Manager (SCVMM) empowers System Center customers to connect their VMM environment to Azure and perform VM self-service operations from Azure portal. Azure Arc-enabled SCVMM extends the Azure control plane to SCVMM managed infrastructure, enabling the use of Azure security, governance, and management capabilities consistently across System Center managed estate and Azure.
 
-Azure Arc-enabled System Center Virtual Machine Manager allows you to manage your Hybrid environment and perform self-service VM operations through Azure portal. For Microsoft Azure Pack customers, this solution is intended as an alternative to perform VM self-service operations.
+Azure Arc-enabled System Center Virtual Machine Manager also allows you to manage your hybrid environment consistently and perform self-service VM operations through Azure portal. For Microsoft Azure Pack customers, this solution is intended as an alternative to perform VM self-service operations.
 
 Arc-enabled System Center VMM allows you to:
 
-- Perform various VM lifecycle operations such as start, stop, pause, and delete VMs on VMM managed VMs directly from Azure.
-
-- Empower developers and application teams to self-serve VM operations on-demand using [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
-
-- Browse your VMM resources (VMs, templates, VM networks, and storage) in Azure, providing you with a single pane view for your infrastructure across both environments.
-
+- Perform various VM lifecycle operations such as start, stop, pause, and delete VMs on SCVMM managed VMs directly from Azure.
+- Empower developers and application teams to self-serve VM operations on demand using [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
+- Browse your VMM resources (VMs, templates, VM networks, and storage) in Azure, providing you a single pane view for your infrastructure across both environments.
 - Discover and onboard existing SCVMM managed VMs to Azure.
+- Install the Arc-connected machine agents at scale on SCVMM VMs to govern, protect, configure, and monitor them.
+- Procure Extended Security Updates (ESUs) for the WS 2012 and 2012R2 VMs managed by SCVMM.
 
 ## Discover Arc-enabled SCVMM from SCVMM console
 
 You can discover and learn about Arc-enabled SCVMM from the **Azure Arc** blade in the SCVMM console.
-
-Follow these:
 
 Navigate to **Azure Arc** in the administrator **SCVMM Console** and do the following:
 
