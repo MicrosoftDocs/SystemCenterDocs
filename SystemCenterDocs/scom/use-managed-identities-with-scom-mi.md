@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Use Managed identities for Azure with Azure Monitor SCOM Managed Instance (preview)
-description: This article describes how to use Managed identities for Azure with Azure Monitor SCOM Managed Instance (preview).
+title: Use Managed identities for Azure with Azure Monitor SCOM Managed Instance
+description: This article describes how to use Managed identities for Azure with Azure Monitor SCOM Managed Instance.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Use Managed identities for Azure with Azure Monitor SCOM Managed Instance (preview)
+# Use Managed identities for Azure with Azure Monitor SCOM Managed Instance
 
 A common challenge when building cloud applications is how to securely manage the credentials in your code for authenticating various services without saving them locally on a developer workstation or in source control. 
 
@@ -43,21 +43,21 @@ There are two types of managed identities:
 
 For more information on Managed identity types, see  [How do managed identities for Azure resources work?](/azure/active-directory/managed-identities-azure-resources/overview#managed-identity-types). 
 
-## Supported scenarios for SCOM Managed Instance (preview)
+## Supported scenarios for SCOM Managed Instance
 
-SCOM Managed Instance (preview) supports both System Assigned Managed Identity and User Assigned Managed Identity for the SCOM Managed Instances (preview) deployed in Azure. SCOM Managed Instance (preview) creates other dependency resources like Virtual Machine Scale Sets (VMSS) cluster to host management servers. SCOM Managed Instance (preview) onboarded the Managed identities with HOBO v2 so that the assigned Identity will be delegated to the underlying infrastructure for authenticating with sink resources. These Identities are used to authenticate other Azure services in different scenarios. 
+SCOM Managed Instance supports both System Assigned Managed Identity and User Assigned Managed Identity for the SCOM Managed Instances deployed in Azure. SCOM Managed Instance creates other dependency resources like Virtual Machine Scale Sets (VMSS) cluster to host management servers. SCOM Managed Instance onboarded the Managed identities with HOBO v2 so that the assigned Identity will be delegated to the underlying infrastructure for authenticating with sink resources. These Identities are used to authenticate other Azure services in different scenarios. 
 
 - System Assigned Managed Identity
 
-     - SCOM Managed Instance (preview) will send different health or performance metrics to Geneva Cluster services, monitoring the instance behavior at run time. The system Assigned Identity, which is delegated to SCOM Managed Instance (preview) resource, will be used to authenticate with Azure Geneva Cluster services. 
+     - SCOM Managed Instance will send different health or performance metrics to Geneva Cluster services, monitoring the instance behavior at run time. The system Assigned Identity, which is delegated to SCOM Managed Instance resource, will be used to authenticate with Azure Geneva Cluster services. 
 
 - User Assigned Managed Identity 
 
-     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and will be used to access the SQL Managed Instance database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases. The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from System Center Operations Manager servers to SQL Managed instance. 
+     - For SCOM Managed Instance, a Managed Identity will replace the traditional four System Center Operations Manager service accounts and will be used to access the SQL Managed Instance database. SCOM Managed Instance reads/writes customer workload monitoring data to SQL managed instance databases. The User Assigned Identity assigned to SCOM Managed Instance resource will be used for authenticating from System Center Operations Manager servers to SQL Managed instance. 
 
-     - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM Managed Instance (preview). 
+     - SCOM Managed Instance onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM Managed Instance. 
 
-     During SCOM Managed Instance (preview) onboarding, you must provide the User Managed Identity, which has access to Customer Key vault and SQL Managed Instance.
+     During SCOM Managed Instance onboarding, you must provide the User Managed Identity, which has access to Customer Key vault and SQL Managed Instance.
 
 ## Create a Managed Service Identity (MSI)
 
@@ -74,7 +74,3 @@ Store the domain account you create in the Active Directory in a Key vault accou
 ## Set the Active Directory Admin value in the SQL Managed Instance
 
 [Set the Active Directory Admin value](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#set-the-active-directory-admin-value-in-the-sql-mi&preserve-view=true) in the SQL Managed Instance.
-
-**Feedback**
-
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

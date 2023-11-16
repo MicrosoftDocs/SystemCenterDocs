@@ -48,7 +48,9 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 
 12. In the **Computer Search** window, select **Search** to display a name of available computers.  
 
-13. Select the server or servers to distribute the credentials to, select **Add**, and then select **OK** to close the search window.  
+13. Select the server(s) or resource pool(s) to distribute the credentials to, select **Add**, and then select **OK** to close the search window.  
+> [!NOTE]
+> The **Notifications Resource Pool** is normally used to allow all servers in the resource pool to access the credential.
 
 14. Select **OK** to close the properties window.  
 
@@ -58,7 +60,9 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 
 17. On the **Introduction** page, select **Next**.  
 
-18. If you're configuring an internal email, then on the **General Properties** page, select **Next**. If you're configuring an external email, then right-click on **Profiles** and select **Create Run As Profile**. On the **General Properties** page, enter a suitable **Display name** and for **Select destination management pack**, choose **Notification Internal Library** from the dropdown list.  
+1. If you're configuring an internal email, then on the **General Properties** page, select **Next**. If you're configuring an external email, then right-click on **Profiles** and select **Create Run As Profile**. On the **General Properties** page, enter a suitable **Display name** and for **Select destination management pack**, choose **Notifications Internal Library** from the dropdown list.
+> [!NOTE]
+> The **Notifications Internal Library** Management Pack is required for External Email Authentication Run as profiles to be populated so you can select the profile you want to authenticate with in the SMTP Channel.
 
 19. On the **Run As Accounts** page, select **Add**.  
 
@@ -69,5 +73,6 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 ## Next steps
 
 * To designate when to send notifications and the addresses to which the notifications should be sent, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
-
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).
+
+
