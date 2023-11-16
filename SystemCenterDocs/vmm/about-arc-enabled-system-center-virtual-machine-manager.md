@@ -32,7 +32,7 @@ Arc-enabled System Center VMM allows you to:
 
 You can discover and learn about Arc-enabled SCVMM from the **Azure Arc** blade in the SCVMM console.
 
-Navigate to **Azure Arc** in the administrator **SCVMM Console** and you can do the following:
+Navigate to **Azure Arc** in the administrator **SCVMM Console** and do the following:
 
    - **Overview**: Read the overview of Arc-enabled SCVMM.
    - **Pre-requisites**: Review the prerequisites of Arc-enabled SCVMM.
