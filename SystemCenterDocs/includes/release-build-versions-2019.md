@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 10/17/2023
+ms.date: 11/17/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -62,5 +62,6 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.1195.0|[v1.6.12-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.12-1) |February 2023 |1.6.12-1 |Update Rollup 4 - Hotfix |
 |10.19.1214.0|[v1.7.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.0-0) |March 2023 |1.7.0-0 |Update Rollup 4 - OpenSSL 3.0 |
 |10.19.1226.0|[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0) |August 2023 |1.7.1-0 |Update Rollup 5 - Hotfix |
+|10.19.1234.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |OMI Vulnerability Fix |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
