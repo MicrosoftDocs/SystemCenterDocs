@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2023
+ms.date: 11/17/2023
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
@@ -159,6 +159,23 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 **Description**: The stop protection with delete online data operation fails from the remote management console when enhanced Hybrid security option is enabled on the vault.  
 
 **Workaround**: To prevent this, perform stop protection with delete online data directly from the DPM console.  
+
+### Stopping protection of a data source from fails with ID: 33469
+
+**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
+
+This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
+
+**Workaround**: Download and install the Microsoft Azure Recovery Services (MARS) agent on your DPM Server. You need not register the MARS agent to Azure. Installation mitigates this error.
+To install MARS, follow these steps:
+1. [Download the latest agent](https://aka.ms/backup_agent).
+2. Double click **MARSAgentInstaller.exe**.
+3. Retain the default installation and cache folders and then select **Next**.
+4. Retain the default proxy settings and select **Next**.
+5. Review the prerequisites and select **Install**.
+6. After agent installation, close the installation wizard and check if the issue is mitigated.
+
+Retry removing the data source after installation of MARS. If the issue persists, reach out to Microsoft support.
 
 ::: moniker-end
 
