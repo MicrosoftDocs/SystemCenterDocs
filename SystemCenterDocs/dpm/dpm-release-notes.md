@@ -168,7 +168,7 @@ This issue occurs because DPM erroneously checks for an installed version of MAR
 
 **Workaround**: Download and install the Microsoft Azure Recovery Services (MARS) agent on your DPM Server. You need not register the MARS agent to Azure. Installation mitigates this error.
 To install MARS, follow these steps:
-1. [Download the latest agent](https://aka.ms/backup_agent).
+1. [Download the latest agent](https://aka.ms/azurebackup_agent).
 2. Double click **MARSAgentInstaller.exe**.
 3. Retain the default installation and cache folders and then select **Next**.
 4. Retain the default proxy settings and select **Next**.
