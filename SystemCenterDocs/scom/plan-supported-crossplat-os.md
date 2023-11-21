@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/14/2023
+ms.date: 11/21/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -93,6 +93,8 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
 
+>[!NOTE]
+>Solaris zone-level monitoring isn't supported.
 
 ## Solaris 10 SPARC
 
