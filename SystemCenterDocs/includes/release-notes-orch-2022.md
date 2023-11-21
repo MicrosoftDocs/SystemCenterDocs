@@ -8,7 +8,7 @@ ms.author: jsuri
 ms.prod:  system-center
 ms.technology: Orchestrator
 keywords:
-ms.date: 11/17/2023
+ms.date: 11/21/2023
 title:  include file
 ---
 
@@ -35,6 +35,12 @@ For the problems fixed in UR2 and the installation instructions for UR2, see [th
 **Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
 
 **Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
+
+### Runbook designer crashes with some Integration packs
+
+**Description**: With some integration packs, Runbook designer might crash when you update existing runbooks or create new runbooks.
+
+**Workaround**: Uninstall UR2 patch for Runbook designer only.
 
 ## Orchestrator 2022 UR1 release notes
 
