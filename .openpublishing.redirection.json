@@ -3177,6 +3177,14 @@
      "redirect_url": "/system-center/system-center"
   },
   {
+     "source_path" : "SystemCenterDocs/VMM/hyper-v-hosts.md",
+     "redirect_url": "/system-center/vmm/host-groups"
+  },
+  {
+     "source_path" : "SystemCenterDocs/VMM/manage-vmm.md",
+     "redirect_url": "/system-center/vmm/provision-vms"
+  },
+  {
      "source_path" : "SystemCenterDocs/VMM/vmm.md",
      "redirect_url": "/system-center/vmm/overview"
   },

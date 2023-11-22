@@ -46,4 +46,4 @@ After you've created a host group, you can modify the following properties for t
 
 ## Next steps
 
-After you've created host groups, you can deploy [Hyper-V](hyper-v-hosts.md) hosts in the VMM fabric.
+After you've created host groups, you can deploy [Hyper-V](host-groups.md) hosts in the VMM fabric.
