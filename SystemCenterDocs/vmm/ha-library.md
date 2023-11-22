@@ -5,11 +5,11 @@ description: This article describes how to set up the VMM library in a highly av
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/01/2017
+ms.date: 11/22/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment
+ms.custom: intro-deployment, engagement-fy24
 ---
 
 # Deploy a highly available VMM library
@@ -40,9 +40,9 @@ This procedure presumes you're setting up a single failover cluster with two or 
 6. After you've at least two nodes in the cluster, you can run cluster validation tests (you'll need at least two nodes in the cluster). Open **Failover Cluster Manager** and under **Management**, select **Validate Configuration**.
 7. In **Select Servers or a Cluster**, specify the NetBIOS or FQDN of a node you're adding and select **Add**. In **Testing Options**, select **Run all tests (recommended)**.
 8. In **Summary**, if the tests completed correctly, select **Create the cluster now using the validated nodes**. Select **View Report** to troubleshoot any issues.
-9. In **Access Point for Administering the Cluster**, specify the cluster name. For example, **VMMLibrary**. When the cluster is created, this name will be registered as the cluster computer object (CNO) in Active Directory. If you specify a NetBIOS name for the cluster, the CNO is created in the same location where the computer objects for the cluster node reside (either the default Computers container or an OU). You can specify a different location by adding the distinguished OU name. For example, CN=ClusterName, OU=Clusters,DC=Contoso.
-10. If the server isn't configured to use DHCP, specify a static IP address for the cluster. Select each network you want to use for cluster management and in **Address** select the IP address. This is the IP address that will be associated with the cluster in DNS.
-11. In **Confirmation**, review the settings. Clear **Add all eligible storage to the cluster** if you want to configure storage later. Select **Next** to create the cluster.
+9. In **Access Point for Administering the Cluster**, specify the cluster name. For example, **VMMLibrary**. When the cluster is created, this name will be registered as the cluster computer object (CNO) in Active Directory. If you specify a NetBIOS name for the cluster, the CNO is created in the same location where the computer objects for the cluster node reside (either the default Computers container or an OU). You can specify a different location by adding the distinguished OU name. For example, CN=ClusterName, OU=Clusters, DC=Contoso.
+10. If the server isn't configured to use DHCP, specify a static IP address for the cluster. Select each network you want to use for cluster management, and in **Address** select the IP address. This is the IP address that will be associated with the cluster in DNS.
+11. In **Confirmation**, review the settings. Clear **Add all eligible storage to the cluster** if you want to configure the storage later. Select **Next** to create the cluster.
 12. In **Summary**, confirm that the cluster was created and that the cluster name is listed in Failover Cluster Manager.
 
 If you want to build a guest cluster to deploy the file server, read Rudolf Vesely's useful [blog post](https://techstronghold.com/blogs/virtualization/building-guest-virtual-file-server-failover-cluster-on-hyper-v-host-with-windows-server-2012-r2).
@@ -52,9 +52,9 @@ If you want to build a guest cluster to deploy the file server, read Rudolf Vese
 1. On each computer you'll set up as a file server node, in **Failover Cluster Manager**, select **Configure Role**.
 2. In the **High Availability Wizard** > **Select Role**, select **File Server**.
 3. In **File Server Type**, select **File Server for general use**.
-4.  In **Client Access Point**, enter the cluster name (in our procedure this was **VMMLibrary**) and the cluster IP address.
-5.  In **Select storage**, specify the shared storage you want to use.
-6.  Confirm the settings and finish the wizard.
+4. In **Client Access Point**, enter the cluster name (in our procedure this was **VMMLibrary**) and the cluster IP address.
+5. In **Select storage**, specify the shared storage you want to use.
+6. Confirm the settings and finish the wizard.
 
 ## Create a file share
 
@@ -73,3 +73,7 @@ If you want to build a guest cluster to deploy the file server, read Rudolf Vese
 4. On the **Add Library Servers** page, select the library shares you want to add. If you want to add the default library resources to the share, select **Add Default Resources**. In addition to default resources, this adds the ApplicationFrameworks folder to the share.
 5. On the **Summary** page, review settings and select **Add Library Servers**. In **Library** > **Library Servers**, verify the library server and share are listed.
 6. After the share is created, you can copy resources to the library share.
+
+## Next steps
+
+[Set up TLS for VMM](./install-tls.md).
