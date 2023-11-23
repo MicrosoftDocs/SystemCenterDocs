@@ -5,7 +5,7 @@ description: This article details the release builds in Service Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/16/2023
+ms.date: 11/23/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -35,7 +35,7 @@ The following table lists the build versions for Service Manager 2022.
 | --- | --- |--- |--- |
 | 10.22.1068.0 | n/a | March 2022 | System Center 2022 Service Manager RTM     |
 | 10.22.1219.0 | [5021792](https://support.microsoft.com/kb/5021792) | June 2023 | System Center 2022 Service Manager Hotfix |
-| 10.22.1301.0 | [5031648](https://support.microsoft.com/kb/5031648) | November 2023 | Update Rollup 2 |
+| 10.22.1313.0 | [5031648](https://support.microsoft.com/kb/5031648) | November 2023 | Update Rollup 2 |
 
 ::: moniker-end
 
