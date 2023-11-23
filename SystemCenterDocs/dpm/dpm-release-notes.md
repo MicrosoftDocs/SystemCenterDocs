@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/17/2023
+ms.date: 11/23/2023
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
@@ -139,6 +139,22 @@ The following issues were identified after the release of DPM 2022 UR1 (KB 50196
 **Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
 
 ## DPM 2022 UR2 release notes
+
+>[!Note]
+>We have temporarily paused the release of System Center DPM 2022 Update Rollup 2 due to the following known issues.
+
+### Known issues
+
+Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check is triggered with the error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
+
+**Mitigation**
+
+An updated build with fixes for the known issues will be released by 4th December 2023. 
+
+- If you have not installed UR2 for SCDPM 2022, wait for the new release.  
+- If you have already installed UR2 for SCDPM 2022, this new build will install on top of SCDPM 2022 UR2 to fix the known issues.
+
+Reach out to Microsoft Support for queries or additional information.
 
 In addition to the issues documented above, DPM 2022 UR2 has the following issues:
 
