@@ -145,7 +145,7 @@ The following issues were identified after the release of DPM 2022 UR1 (KB 50196
 
 ### Known issues
 
-Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check is triggered with the error message: *The replica of Microsoft Hyper-V RCT on <Machine Name> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
+Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check is triggered with the error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
 
 **Mitigation**
 
