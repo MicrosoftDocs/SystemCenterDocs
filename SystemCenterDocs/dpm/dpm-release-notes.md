@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/20/2023
+ms.date: 11/23/2023
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
@@ -26,7 +26,7 @@ We recommend you see the following articles for detailed information about what 
 
 ::: moniker range="sc-dpm-2022"
 
-This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2022](#dpm-2022-release-notes) and [2022 UR1](#dpm-2022-ur1-release-notes).
+This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2022](#dpm-2022-release-notes), [2022 UR1](#dpm-2022-ur1-release-notes) and [2022 UR2](#dpm-2022-ur2-release-notes).
 
 This article also includes the [release notes for DPM 2022 Hotfix KB 5015376](#dpm-2022-hotfix-kb-5015376-release-notes).
 
@@ -37,13 +37,19 @@ We recommend you to see the following articles for detailed information about wh
 
 ## DPM 2022 release notes
 
-DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes), and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes).
+DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes).
 
 In addition, the following known issues are observed.
 
 ### No DPM SQL Self-Service Recovery Tool in DPM 2022 RTM
 
 DPM SQL Self-Service Recovery isn't available in DPM 2022 RTM. Support for SQL Self-Service Recovery is available from DPM 2022 UR1. [Learn More](/system-center/dpm/what-s-new-in-dpm?view=sc-dpm-2022&preserve-view=true#sql-self-service-recovery-tool).
+
+### DPM self-service recoveries doesn't list any recovery points for client machines
+
+**Description**: DPM client machine backups aren't listed for domain users in the local administrators’ group for self-service recoveries.
+
+**Workaround**: Upgrade to DPM 2022 UR2 to fix this issue and add non-administrative users manually via Authorization Manager.
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 
@@ -92,7 +98,7 @@ Use these steps to rename the database:
 
 ### Online recovery point creation of a data source might fail with error ID 33505 or 100195
 
-**Description**: In some scenarios, the online recovery point creation of a data source may fail intermittently with error ID 33505 or 100195.
+**Description**: In some scenarios, the online recovery point creation of a data source might fail intermittently with error ID 33505 or 100195.
 
 :::image type="error" source="media/release-notes/error.png" alt-text="Screenshot showing error when creating online recovery point.":::
 
@@ -125,12 +131,67 @@ The following issues were identified after the release of DPM 2022 UR1 (KB 50196
 ### Backups for VMware VMs that have VMware Tools start failing with error "Disk SubSystem 0x80990EF1" 
 **Description**: DPM 2022 UR1 had a bug where backups VMware VMs would fail if VMware tools is installed. This was due to a faulty configuration in DPM.
 
-**Workaround**: Apply Hotfix for DPM 2022 UR1.
+**Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2.
 
 ### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 and 2016 over TLS 1.2. 
 **Description**: DPM 2022 RTM and UR1 did not support MSOLEDB 18 for SQL Server 2017 and 2016 which is required to perform discovery and protection of SQL Server over TLS 1.2. This issue is observed after [KB5021128](https://support.microsoft.com/help/5021128) or [KB5021127](https://support.microsoft.com/help/5021127) is installed for SQL Server 2016 and 2017 respectively to mandate TLS 1.2 or when TLS 1.0 and 1.1 are disabled on the protected server.
 
-**Workaround**: Apply Hotfix for DPM 2022 UR1, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
+**Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
+
+## DPM 2022 UR2 release notes
+
+>[!Note]
+>We have temporarily paused the release of System Center DPM 2022 Update Rollup 2 due to the following known issues.
+
+### Known issues
+
+Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check is triggered with the error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
+
+**Mitigation**
+
+An updated build with fixes for the known issues will be released by 4th December 2023. 
+
+- If you have not installed UR2 for SCDPM 2022, wait for the new release.  
+- If you have already installed UR2 for SCDPM 2022, this new build will install on top of SCDPM 2022 UR2 to fix the known issues.
+
+Reach out to Microsoft Support for queries or additional information.
+
+In addition to the issues documented above, DPM 2022 UR2 has the following issues:
+
+### DPM 2022 UR1 email reports with Microsoft 365 credentials fail after upgrading to DPM 2022 UR2
+
+**Description**: DPM 2022 UR2 adds support for Windows and Basic SMTP authentication methods. Basic SMTP authentication will work for Microsoft 365 and other mail providers who support it. But if you are using DPM 2022 UR1 with Microsoft 365 credentials, your email reports and alerts will start failing since the credentials can’t be read by DPM 2022 UR2.
+
+**Workaround**: Re-configure email credentials for Microsoft 365 using the basic authentication type added in DPM 2022 UR2.
+
+### DPM can’t enumerate SQL databases for protection 
+
+**Description**: DPM can’t enumerate SQL databases for protection when MSOLEDB 18 is missing on the protected server since DPM requires MSOLEDB18 to enumerate databases for protection.  
+
+**Workaround**: Install SQL [MSOLEDB 18](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16&viewFallbackFrom=sql-server-2016%22%20%5Cl%20%221867) driver if it is missing on the protected server. SQL Server 2022 ships with MSOLEDB 18 by default.  
+
+### Stop protection with delete online data fails from remote management console
+
+**Description**: The stop protection with delete online data operation fails from the remote management console when enhanced Hybrid security option is enabled on the vault.  
+
+**Workaround**: To prevent this, perform stop protection with delete online data directly from the DPM console.  
+
+### Stopping protection of a data source from fails with ID: 33469
+
+**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
+
+This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
+
+**Workaround**: Download and install the Microsoft Azure Recovery Services (MARS) agent on your DPM Server. You need not register the MARS agent to Azure. Installation mitigates this error.
+To install MARS, follow these steps:
+1. [Download the latest agent](https://aka.ms/azurebackup_agent).
+2. Double click **MARSAgentInstaller.exe**.
+3. Retain the default installation and cache folders and then select **Next**.
+4. Retain the default proxy settings and select **Next**.
+5. Review the prerequisites and select **Install**.
+6. After agent installation, close the installation wizard and check if the issue is mitigated.
+
+Retry removing the data source after installation of MARS. If the issue persists, reach out to Microsoft support.
 
 ::: moniker-end
 
@@ -264,11 +325,11 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
     - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell won't report sizes.
 
-    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI may not be correct.
+    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI might not be correct.
 
     - ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
 
-    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups may fail with vhd mount errors.
+    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups might fail with vhd mount errors.
 
 - **UpdateSizeForDS:** Path to a text file with a list of Datasource IDs for which size needs to be calculated with a datasourceID on each line. When not passed, size calculation is triggered for all the data sources.
     Use after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
@@ -277,14 +338,14 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 - **UpdatedDSSizeReport:** Path to a file that stores the updated data source sizes. When not passed, sizes.csv file is created in the execution directory.
     Use after ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
-- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This may happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
+- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This might happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
     This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
 ### DPM Datasources not being reflected on Recovery Services Vault
 
 **Description**: Some data sources in the *Backup items (DPM)* view from recovery service vault in Azure portal aren't getting refreshed/updated.
 
-**Cause**: You may have decommissioned a protected server and stopped protection of the data sources but chosen to maintain the online recovery points and then you uninstalled the DPM/MABS agent from the console.
+**Cause**: You might have decommissioned a protected server and stopped protection of the data sources but chosen to maintain the online recovery points and then you uninstalled the DPM/MABS agent from the console.
 
 You can verify if this is the cause by opening the GatewayProvider0Curr.errlog file in *C:\ProgramFiles\Microsoft Azure Backup Server\DPM\MARS\Temp* folder in notepad and search for the word **Mis-Match**.
 
@@ -461,13 +522,13 @@ The following issues exist in the 1807 release.
 
 ### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
-**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups may fail.
+**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups might fail.
 
 **Workaround**: After recovery, change the VM Version to 2016 and then run a Consistency Check.
 
 ### Bare Metal Recovery protection failures
 
-**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size isn't sufficiently large.
+**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job might fail with the message that the replica size isn't sufficiently large.
 
 **Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
 
@@ -493,11 +554,11 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
     - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell won't report sizes.
 
-    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI may not be correct.
+    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI might not be correct.
 
     - ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
 
-    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups may fail with vhd mount errors.
+    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups might fail with vhd mount errors.
 
 - **UpdateSizeForDS:** Path to a text file with a list of Datasource IDs for which size needs to be calculated with a datasourceID on each line. When not passed, size calculation is triggered for all the data sources.
     Use after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
@@ -506,7 +567,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 - **UpdatedDSSizeReport:** Path to a file that stores the updated data source sizes. When not passed, sizes.csv file is created in the execution directory.
     Use after ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
-- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This may happen due to reasons as ongoing backups. When not passed failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
+- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This might happen due to reasons as ongoing backups. When not passed failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
     This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
 ### Hyper-V RCT - recover as files for D-T backup fails
@@ -568,13 +629,13 @@ The following issues exist in the 1801 release.
 
 ### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
-**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups may fail.
+**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups might fail.
 
 **Workaround**: After recovery, change the VM Version to 2016 and then run a Consistency Check.
 
 ### Bare Metal Recovery protection failures
 
-**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size isn't sufficiently large.
+**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job might fail with the message that the replica size isn't sufficiently large.
 
 **Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
 
@@ -601,11 +662,11 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
     - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell won't report sizes.
 
-    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI may not be correct.
+    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI might not be correct.
 
     - ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
 
-    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups may fail with vhd mount errors.
+    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups might fail with vhd mount errors.
 
 - **UpdateSizeForDS:** Path to a text file with a list of Datasource IDs for which size needs to be calculated with a datasourceID on each line. When not passed, size calculation is triggered for all the data sources.
     Use after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
@@ -614,7 +675,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 - **UpdatedDSSizeReport:** Path to a file that stores the updated data source sizes. When not passed, sizes.csv file is created in the execution directory.
     Use after ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
-- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This may happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
+- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This might happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
     This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
 ### Hyper-V RCT - recover as files for D-T backup fails
@@ -681,14 +742,14 @@ The following sections summarize the release notes for DPM 2016 and include the 
 
 ### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
-**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups may fail.
+**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups might fail.
 
 **Workaround**: After recovery, change the VM Version to 2016 and then run a Consistency Check.
 
 
 ### Bare Metal Recovery protection failures
 
-**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size isn't sufficiently large.
+**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job might fail with the message that the replica size isn't sufficiently large.
 
 **Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
 
@@ -716,11 +777,11 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
     - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell won't report sizes.
 
-    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI may not be correct.
+    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI might not be correct.
 
     - ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
 
-    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups may fail with vhd mount errors.
+    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups might fail with vhd mount errors.
 
 - **UpdateSizeForDS:** Path to a text file with a list of Datasource IDs for which size needs to be calculated with a datasourceID on each line. When not passed, size calculation is triggered for all the data sources.
     Use after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
@@ -729,7 +790,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 - **UpdatedDSSizeReport:** Path to a file that stores the updated data source sizes. When not passed, sizes.csv file is created in the execution directory.
     Use after ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
-- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This may happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
+- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This might happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
     This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
 
@@ -804,3 +865,4 @@ Follow these steps to replace the existing report files:
 - To install DPM, see the article, [Install DPM](install-dpm.md).
 - If you would like to consult planning information for your environment, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
 - See these KBs for ReFS specific issues - [KB4016173](https://support.microsoft.com/en-us/help/4016173/fix-heavy-memory-usage-in-refs-on-windows-server-2016-and-windows-10), [KB4035951](https://support.microsoft.com/en-us/help/4035951/refs-volume-using-dpm-becomes-unresponsive-on-windows-server-2016).
+

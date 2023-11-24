@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/28/2023
+ms.date: 11/21/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -93,6 +93,8 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
 
+>[!NOTE]
+>Solaris zone-level monitoring isn't supported.
 
 ## Solaris 10 SPARC
 
@@ -154,6 +156,9 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## SUSE Linux Enterprise Server 15
 
+>[!NOTE]
+>System Center Operations Manager 2019 UR1 and later supports SLES 15 under Universal Linux.
+
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|
@@ -196,6 +201,7 @@ Supported versions:
 - Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
 - Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR5 and later) 
 - Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
+- SLES 15 is supported from System Center - Operations Manager 2019 UR1 and later
 
 >[!Note]
 >- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.

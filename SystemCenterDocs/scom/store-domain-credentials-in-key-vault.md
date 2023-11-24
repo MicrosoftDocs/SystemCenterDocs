@@ -5,7 +5,7 @@ description: This article describes how to store domain credentials in Azure Key
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/05/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -38,5 +38,3 @@ This article describes how to store domain credentials in Azure Key Vault.
 ## Next steps
 
 - [Create a static IP](create-static-ip.md)
-
-To provide feedback on Azure Monitor SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

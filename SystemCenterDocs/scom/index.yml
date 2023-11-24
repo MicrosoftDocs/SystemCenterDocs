@@ -51,15 +51,15 @@ landingContent:
             url: manage-overview-management-pack.md
 
   # Card
-  - title: About Azure Monitor SCOM Managed Instance (preview)
+  - title: About Azure Monitor SCOM Managed Instance
     linkLists:
       - linkListType: overview
         links:
-          - text: Azure Monitor SCOM Managed Instance overview (preview)
+          - text: Azure Monitor SCOM Managed Instance overview
             url: operations-manager-managed-instance-overview.md
       - linkListType: get-started
         links:
-          - text: Migrate to Azure Monitor SCOM Managed Instance (preview)
+          - text: Migrate to Azure Monitor SCOM Managed Instance
             url: migrate-to-operations-manager-managed-instance.md
-          - text: Create Azure Monitor SCOM Managed Instance (preview)
+          - text: Create Azure Monitor SCOM Managed Instance
             url: create-operations-manager-managed-instance.md

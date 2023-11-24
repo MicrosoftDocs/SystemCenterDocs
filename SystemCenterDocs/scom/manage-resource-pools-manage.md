@@ -58,7 +58,9 @@ By default, all management servers are members of the resource pools created whe
 > [!NOTE]
 > The membership of the All Management Servers Resource Pool is read-only. To change its membership from automatic to manual, run the following PowerShell code in the Operations Manager Command Shell:
 >  
-> ```Get-SCOMResourcePool -DisplayName "All Management Servers Resource Pool" | Set-SCOMResourcePool -EnableAutomaticMembership 0```
+> ```powershell
+> Get-SCOMResourcePool -DisplayName "All Management Servers Resource Pool" | Set-SCOMResourcePool -EnableAutomaticMembership 0
+> ```
 
 #### To remove a member from an automatic resource pool
 
