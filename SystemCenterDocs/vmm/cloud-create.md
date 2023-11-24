@@ -5,10 +5,11 @@ description: This article provides instructions for creating a private cloud in 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/09/2022
+ms.date: 11/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 
