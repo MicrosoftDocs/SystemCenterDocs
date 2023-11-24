@@ -5,11 +5,11 @@ description: This article describes how to create and deploy VMs in the VMM fabr
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 11/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment, UpdateFrequency2
+ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
 ---
 
 
@@ -91,4 +91,4 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Next steps
 
-- [Manage the VM settings](vm-settings.md).
+[Manage the VM settings](vm-settings.md).

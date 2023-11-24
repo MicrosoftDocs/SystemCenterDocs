@@ -5,12 +5,12 @@ description: This article describes how to deploy and manage Nano server-based h
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/01/2017
+ms.date: 11/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-2016'
-ms.custom: intro-deployment
+ms.custom: intro-deployment, engagement-fy24
 ---
 
 # Deploy and manage Nano server-based Hyper-V hosts or VMs in VMM

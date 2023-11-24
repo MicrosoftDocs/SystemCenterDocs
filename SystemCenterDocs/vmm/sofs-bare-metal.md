@@ -5,10 +5,11 @@ description: This article provides about provisioning an SOFS in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 11/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 # Provision a scale-out file server (SOFS) cluster from bare metal computers in the VMM fabric
@@ -145,3 +146,7 @@ Run the wizard:
 	- **Static**: If the profile uses static IP addresses for each BMC IP address, enter a MAC address of the computer's network adapter that's used to communicate with VMM. Select the logical network you want to use. The default logical network is the one indicated in the profile. Select the IP subnet you want to use. The subnet list is scope to what's defined for the logical network in the associated network sites. You should select the IP subnet that corresponds to the physical location in which you're deploying the server and the network to which the adapter is connected. You can automatically assign an IP address or assign a specific address.
 
 8. In **Summary**, confirm the settings and select **Finish**. To confirm the cluster was added, select **Fabric** > **Storage** > **File Servers**.
+
+## Next steps
+
+[Manage SOFS settings in the VMM fabric](./sofs-settings.md).
