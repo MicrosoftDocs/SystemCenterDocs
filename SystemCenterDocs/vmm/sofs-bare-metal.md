@@ -5,7 +5,7 @@ description: This article provides about provisioning an SOFS in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/22/2023
+ms.date: 11/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
