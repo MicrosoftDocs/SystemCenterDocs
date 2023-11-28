@@ -4,7 +4,7 @@ description: This article describes how to configure Operations Manager to sampl
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/26/2017
+ms.date: 11/28/2023
 ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager
