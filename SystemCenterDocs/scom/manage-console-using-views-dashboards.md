@@ -4,7 +4,7 @@ description: This article describes how to use the views and dashboards in Opera
 author: jyothisuri
 ms.author: jsuri
 ms.manager: mkluck
-ms.date: 11/28/2016
+ms.date: 11/28/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
