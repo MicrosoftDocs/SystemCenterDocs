@@ -37,6 +37,9 @@ The following table lists the build versions for Service Manager 2022.
 | 10.22.1219.0 | [5021792](https://support.microsoft.com/kb/5021792) | June 2023 | System Center 2022 Service Manager Hotfix |
 | 10.22.1313.0 | [5031648](https://support.microsoft.com/kb/5031648) | November 2023 | Update Rollup 2 |
 
+>[!NOTE]
+>With the release of UR2, there is no requirement to apply Hotfix anymore. We recommend you to directly apply UR2 if Hotfix is not installed on SM 2022.
+
 ::: moniker-end
 
 ::: moniker range="sc-sm-2019"
