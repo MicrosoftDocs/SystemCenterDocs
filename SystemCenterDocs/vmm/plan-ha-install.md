@@ -45,7 +45,7 @@ You shouldn't install SQL Server on the VMM cluster.
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
 - Before you start, you'll need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
-- The user who creates the cluster has **Create Computers objects** permission to the OU or the contain where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
+- The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 - Requirements for computers running as VMM management nodes:
 	- All cluster nodes that will act as VMM servers must be running Windows Server 2016.
 	- Each cluster node must be joined to a domain and must have a computer name that doesn't exceed 15 characters.
@@ -98,9 +98,9 @@ You can create highly available library servers to ensure that file-based resour
 - Computers you'll configure as file servers should be running Windows Server 2012 R2 or later. We recommend that all nodes have the same version of Windows.
 - All nodes you want to add as file servers should be in the same domain.
 - Ensure that the hardware and software you want to use for the library meets the system requirements.
-- The user who creates the cluster has **Create Computers objects** permission to the OU or the contain where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
+- The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 - The account you use to create the cluster should be a domain user on all the computers you want to add as file server nodes.
-- The library server can't be a scale-out file server (SOFS). It must be on a failover cluster that doesn't use the SOFS cluster role. This is because when you deploy the library, the VMM agent is deployed on the host. For SOFS, there're multiple hosts in a cluster provides shares, which makes it complicated for agent deployment. When you have a standalone or clustered library server, you can use storage on SOFS by creating shares on it.
+- The library server can't be a scale-out file server (SOFS). It must be on a failover cluster that doesn't use the SOFS cluster role. This is because when you deploy the library, the VMM agent is deployed on the host. For SOFS, there are multiple hosts in a cluster provides shares, which makes it complicated for agent deployment. When you have a standalone or clustered library server, you can use storage on SOFS by creating shares on it.
 - You can deploy the library shares on a cluster with physical nodes or a guest cluster.
 - If you want to add clustered storage when you create the cluster, ensure that all the computers can access the storage.
 - If you want to deploy a distributed VMM library in different datacenters, you'll need to set up a scheduled copy between the two library shares. No replication is available.
