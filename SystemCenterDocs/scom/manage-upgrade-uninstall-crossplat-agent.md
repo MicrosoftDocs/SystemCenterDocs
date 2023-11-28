@@ -5,7 +5,7 @@ description: This article describes how to upgrade and uninstall the Operations 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/15/2016
+ms.date: 11/28/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager

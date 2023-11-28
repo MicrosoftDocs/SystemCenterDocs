@@ -4,7 +4,7 @@ description: This article describes how to reconfigure the data graphics in Visi
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 12/13/2016
+ms.date: 11/28/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
