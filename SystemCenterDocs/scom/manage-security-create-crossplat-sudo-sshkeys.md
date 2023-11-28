@@ -151,7 +151,7 @@ You can use the `opsuser` account by using the SSH key and sudo elevation for sp
 >
 > By default, PuTTYgen is set to use PPK file version 3. You may change the PPK file version to 2 by going to the toolbar and selecting **Key** > **Parameters for saving key files...**, then select the radio button for **2** for **PPK file version.**
 >
-> ![User's image](media/manage-security-create-crossplat-sudo-sshkeys/image.png)
+> ![Screenshot showing how to change the PPK file version.](media/manage-security-create-crossplat-sudo-sshkeys/image.png)
 
 ## Next steps
 
