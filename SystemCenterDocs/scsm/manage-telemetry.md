@@ -5,7 +5,7 @@ description: This article provides information about how to manage the telemetry
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/15/2018
+ms.date: 11/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
