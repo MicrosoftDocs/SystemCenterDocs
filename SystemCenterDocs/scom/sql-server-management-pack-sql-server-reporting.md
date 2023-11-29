@@ -35,19 +35,23 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 To open the report, perform the following steps:
 
 1. In the **Reporting** view, double-click **Database Files Space Usage Forecast**.
- ![Screenshot showing Database usage forecast.](./media/sql-server-management-pack/database-files-space-usage-forecast.png)
 
-1. Using the **Add Group** option in the parameters, add a group of DB Engine objects, a default option is "MSSQL on Windows: DB Engine Group". If adding an individual object, use the **Add Object** option and ensure to select the **DB Engine** object for the SQL Instance you want a forecast report for.
-![Screenshot showing Adding objects and groups.](./media/sql-server-management-pack/adding-objects-and-groups.png)
+    ![Screenshot showing Database usage forecast.](./media/sql-server-management-pack/database-files-space-usage-forecast.png)
 
-1. Select a period and the corresponding time zone for the report. Also, select the number of days for the file space consumption forecast.
-![Screenshot showing the Forecast period.](./media/sql-server-management-pack/forecast-period.png)
+2. Using the **Add Group** option in the parameters, add a group of DB Engine objects, a default option is "MSSQL on Windows: DB Engine Group". If adding an individual object, use the **Add Object** option and ensure to select the **DB Engine** object for the SQL Instance you want a forecast report for.
 
-1. Select **Run**.
-The report displays a separate chart for each selected object or a group of objects.
+    ![Screenshot showing Adding objects and groups.](./media/sql-server-management-pack/adding-objects-and-groups.png)
 
-![Screenshot showing Forecast chart.](./media/sql-server-management-pack/forecast-chart.png)
+3. Select a period and the corresponding time zone for the report. Also, select the number of days for the file space consumption forecast.
 
-A space usage forecast can be reviewed in a separate table.
+    ![Screenshot showing the Forecast period.](./media/sql-server-management-pack/forecast-period.png)
 
-![Screenshot showing Forecast space usage.](./media/sql-server-management-pack/forecast-space-usage.png)
+4. Select **Run**.
+
+    The report displays a separate chart for each selected object or a group of objects.
+
+    ![Screenshot showing Forecast chart.](./media/sql-server-management-pack/forecast-chart.png)
+
+    A space usage forecast can be reviewed in a separate table.
+
+    ![Screenshot showing Forecast space usage.](./media/sql-server-management-pack/forecast-space-usage.png)
