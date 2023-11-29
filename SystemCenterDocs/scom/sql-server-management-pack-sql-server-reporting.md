@@ -41,7 +41,7 @@ To open the report, perform the following steps:
 ![Screenshot showing Adding objects and groups.](./media/sql-server-management-pack/adding-objects-and-groups.png)
 
 1. Select a period and the corresponding time zone for the report. Also, select the number of days for the file space consumption forecast.
- ![Screenshot showing the Forecast period.](./media/sql-server-management-pack/forecast-period.png)
+![Screenshot showing the Forecast period.](./media/sql-server-management-pack/forecast-period.png)
 
 1. Select **Run**.
 The report displays a separate chart for each selected object or a group of objects.
