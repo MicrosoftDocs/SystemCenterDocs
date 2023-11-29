@@ -22,23 +22,23 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 > [!IMPORTANT]
 > The **Database Files Space Usage Forecast** report relies on several performance collection rules and a discovery that are disabled by default. These ***must*** be enabled and allowed to run for *several days* before this report will generate any data. Please create overrides for the below rules and discoveries for either All Objects of Class, or individual objects if you only want to collect data from certain SQL instances:
 > 
->**Discoveries** 
->- MSSQL on Windows: Discover SQL Server DB Files
->- MSSQL on Windows: Discover SQL Server DB Filegroups
+>**Discoveries**
+> - MSSQL on Windows: Discover SQL Server DB Files
+> - MSSQL on Windows: Discover SQL Server DB Filegroups
 >
 >**Rules**
->- MSSQL on Windows: ROWS Data Allocated Free Space (MB)
->- MSSQL on Windows: ROWS Data Free Space Total (MB) 
->- MSSQL on Windows: ROWS Data Allocated Free Space (%)
->- MSSQL on Windows: ROWS Data Free Space Total (%)
+> - MSSQL on Windows: ROWS Data Allocated Free Space (MB)
+> - MSSQL on Windows: ROWS Data Free Space Total (MB) 
+> - MSSQL on Windows: ROWS Data Allocated Free Space (%)
+> - MSSQL on Windows: ROWS Data Free Space Total (%)
 
 To open the report, perform the following steps:
 
 1. In the **Reporting** view, double-click **Database Files Space Usage Forecast**.
  ![Screenshot showing Database usage forecast.](./media/sql-server-management-pack/database-files-space-usage-forecast.png)
 
-1. In the **Add Group** window, add an object or a group of objects.
- ![Screenshot showing Adding objects and groups.](./media/sql-server-management-pack/adding-objects-and-groups.png)
+1. Using the **Add Group** option in the parameters, add a group of DB Engine objects, a default option is "MSSQL on Windows: DB Engine Group". If adding an individual object, use the **Add Object** option and ensure to select the **DB Engine** object for the SQL Instance you want a forecast report for.
+![Screenshot showing Adding objects and groups.](./media/sql-server-management-pack/adding-objects-and-groups.png)
 
 1. Select a period and the corresponding time zone for the report. Also, select the number of days for the file space consumption forecast.
  ![Screenshot showing the Forecast period.](./media/sql-server-management-pack/forecast-period.png)
