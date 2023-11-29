@@ -40,7 +40,7 @@ For the problems fixed in UR2 and the installation instructions for UR2, see [th
 
 **Description**: With some integration packs, Runbook designer might crash when you update existing runbooks or create new runbooks.
 
-**Workaround**: Uninstall UR2 patch for Runbook designer only.
+**Mitigation**: Install the [Hotfix](https://www.catalog.update.microsoft.com/Search.aspx?q=5033783) for Orchestrator 2022 UR2 that fixes this issue.
 
 ## Orchestrator 2022 UR1 release notes
 
