@@ -20,7 +20,7 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 - File space consumption forecast (GB)
 
 > [!IMPORTANT]
-> The **Database Files Space Usage Forecast** report relies on several performance collection rules and a discovery that are disabled by default. These ***must*** be enabled and allowed to run for *several days* before this report will generate any data. Please create overrides for the below rules and discoveries for either All Objects of Class, or individual objects if you only want to collect data from certain SQL instances:
+> The **Database Files Space Usage Forecast** report relies on several performance collection rules and discoveries that are disabled by default. These ***must*** be enabled and allowed to run for *several days* before this report will generate any data. Please create overrides for the below rules and discoveries for either All Objects of Class, or individual objects if you only want to collect data from certain SQL instances:
 > 
 >**Discoveries**
 > - MSSQL on Windows: Discover SQL Server DB Files
