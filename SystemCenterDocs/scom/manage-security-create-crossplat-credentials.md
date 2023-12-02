@@ -31,8 +31,7 @@ These wizards define credentials to be authenticated on the UNIX or Linux comput
 
 > [!IMPORTANT]
 > The RunAs account password cannot contain "illegal" characters in the [Command Prompt](/windows-server/administration/windows-commands/cmd), such as: `& < ( ) @ ^ | "`
-> These characters in the password may cause monitoring to fail, due to the use of WinRM commands these symbols cannot be parsed correctly. To avoid grey agents and non-functioning monitoring, change the password to exclude these characters. A *maintenance* account should be OK with these symbols as this is used for SSH communication and works differently, however, to avoid potential issues down the line, please follow the same guidance for all accounts.
-
+> These characters in the password may cause monitoring to fail, due to the use of WSMan commands these symbols cannot be parsed correctly. To avoid grey agents and non-functioning monitoring, change the password to exclude these characters. A *maintenance* account should be OK with these symbols as this is used for SSH communication and works differently, however, to avoid potential issues down the line, please follow the same guidance for all accounts.
 ## Credentials for discovering UNIX and Linux computers  
 
 The following procedure begins in **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you select the **Set Credentials** button. For more information, see [Install Agent on UNIX and Linux Using the Discovery Wizard](~/scom/manage-deploy-crossplat-agent-console.md).  
