@@ -146,6 +146,7 @@ We are recalling the release of Update Rollup 2 for System Center DPM 2022 due t
      Error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
 2. Removing a data source from protection group or stopping backup, results in an error with ID 33469 - This operation is not supported on the current version of the MARS agent.
 3. DPM console occasionally crashes when SMTP alerts or reports are configured.
+
 An updated build (Update Rollup 2 Refresh for System Center DPM 2022) fixing the known issues has been released.
 
 If you had installed Update Rollup 2 for System Center DPM 2022 (10.22.189.0), We recommend you to install Update Rollup 2 Refresh (10.22.197.0) on your DPM server and update the protection agents.  
