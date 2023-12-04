@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.prod: system-center
-ms.date: 11/07/2023
+ms.date: 12/04/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
@@ -60,11 +60,14 @@ DPM 2022 UR1 supports sending alert and report emails using Microsoft 365 SMTP d
 
 vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html). DPM 2022 UR1 and later don't support backups for VMware VMs on vSphere 6.0. Ensure to upgrade to newer vSphere versions.
 
-## New features in DPM 2022 UR2
+## New features in DPM 2022 UR2 refresh
 
-See the following sections for information about the new features/feature updates supported in DPM 2022 UR2.
+See the following sections for information about the new features/feature updates supported in DPM 2022 UR2 refresh.
 
-For issues fixed and the installation instructions for UR2, see [KB article](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-data-protection-manager-254d23f2-2adf-46b8-9ec8-27b868073ede) for Update Rollup 2.
+For issues fixed and the installation instructions for UR2 refresh, see [KB article](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-data-protection-manager-254d23f2-2adf-46b8-9ec8-27b868073ede) for Update Rollup 2 refresh.
+
+>[!NOTE]
+>DPM 2022 UR2 has been superseded with DPM 2022 UR2 Refresh that has the same feature enhancements but fixes the known issues observed in DPM 2022 UR2. [Learn more](https://learn.microsoft.com/system-center/dpm/dpm-release-notes?view=sc-dpm-2022#dpm-2022-ur2-release-notes).
 
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 

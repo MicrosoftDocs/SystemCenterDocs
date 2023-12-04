@@ -2,7 +2,7 @@
 title: Create User
 description: You can use the Create User activity in a runbook to create a user in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
+ms.date: 12/04/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
