@@ -67,7 +67,7 @@ See the following sections for information about the new features/feature update
 For issues fixed and the installation instructions for UR2 refresh, see [KB article](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-data-protection-manager-254d23f2-2adf-46b8-9ec8-27b868073ede) for Update Rollup 2 refresh.
 
 >[!NOTE]
-DPM 2022 UR2 has been superseded with DPM 2022 UR2 Refresh that has the same feature enhancements but fixes the known issues observed in DPM 2022 UR2. [Learn more](https://learn.microsoft.com/system-center/dpm/dpm-release-notes?view=sc-dpm-2022#dpm-2022-ur2-release-notes).
+>DPM 2022 UR2 has been superseded with DPM 2022 UR2 Refresh that has the same feature enhancements but fixes the known issues observed in DPM 2022 UR2. [Learn more](https://learn.microsoft.com/system-center/dpm/dpm-release-notes?view=sc-dpm-2022#dpm-2022-ur2-release-notes).
 
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
