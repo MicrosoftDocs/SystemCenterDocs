@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/23/2023
+ms.date: 12/04/2023
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
@@ -140,19 +140,16 @@ The following issues were identified after the release of DPM 2022 UR1 (KB 50196
 
 ## DPM 2022 UR2 release notes
 
->[!Note]
->We have temporarily paused the release of System Center DPM 2022 Update Rollup 2 due to the following known issues.
+We are recalling the release of Update Rollup 2 for System Center DPM 2022 due to the known issues listed below:
 
-### Known issues
+1. Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check.
+     Error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
+2. Removing a data source from protection group or stopping backup, results in an error with ID 33469 - This operation is not supported on the current version of the MARS agent.
+3. DPM console occasionally crashes when SMTP alerts or reports are configured.
 
-Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check is triggered with the error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
+An updated build (Update Rollup 2 Refresh for System Center DPM 2022) fixing the known issues has been released.
 
-**Mitigation**
-
-An updated build with fixes for the known issues will be released by 4th December 2023. 
-
-- If you have not installed UR2 for SCDPM 2022, wait for the new release.  
-- If you have already installed UR2 for SCDPM 2022, this new build will install on top of SCDPM 2022 UR2 to fix the known issues.
+If you had installed Update Rollup 2 for System Center DPM 2022 (10.22.189.0), We recommend you to install Update Rollup 2 Refresh (10.22.197.0) on your DPM server and update the protection agents.  
 
 Reach out to Microsoft Support for queries or additional information.
 
@@ -182,16 +179,11 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
 
-**Workaround**: Download and install the Microsoft Azure Recovery Services (MARS) agent on your DPM Server. You need not register the MARS agent to Azure. Installation mitigates this error.
-To install MARS, follow these steps:
-1. [Download the latest agent](https://aka.ms/azurebackup_agent).
-2. Double click **MARSAgentInstaller.exe**.
-3. Retain the default installation and cache folders and then select **Next**.
-4. Retain the default proxy settings and select **Next**.
-5. Review the prerequisites and select **Install**.
-6. After agent installation, close the installation wizard and check if the issue is mitigated.
+**Workaround**: Install Update Rollup 2 Refresh for System Center DPM 2022.
 
-Retry removing the data source after installation of MARS. If the issue persists, reach out to Microsoft support.
+## DPM 2022 UR2 Refresh release notes
+
+DPM 2022 UR2 Refresh fixes the known issues in DPM 2022 UR2.
 
 ::: moniker-end
 
