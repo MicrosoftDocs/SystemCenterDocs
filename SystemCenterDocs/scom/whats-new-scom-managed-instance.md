@@ -25,7 +25,7 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 - Enhanced system resiliency by executing the SCOM managed gateway onboard and offboard commands exclusively on the present RMS.
 
-Bug fix in scale management server script to handle right reallocation of agents.
+- Bug fix in scale management server script to handle right reallocation of agents.
 
 ## Version 1.0.91
 
