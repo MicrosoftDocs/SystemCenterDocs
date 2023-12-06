@@ -19,7 +19,7 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 ## Version 1.0.94 
 
-- Installation bug fixed for domain joined machines.
+- Installation bug fix for domain joined machines.
 
 - Fixed issue in scale down operation where incorrect management server was being assigned as RMS.
 
@@ -31,7 +31,7 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 - **Implemented pre-patching validations**: Conducted essential checks before initiating the patching operation, ensuring optimal conditions for existing management servers, verifying SQL connectivity, confirming active directory accessibility, and validating the accuracy of domain account credentials.
 
-- Bug fixed to handle the concurrency in extension installation.
+- Bug fix to handle the concurrency in extension installation.
 
 ## Version 1.0.89
 
