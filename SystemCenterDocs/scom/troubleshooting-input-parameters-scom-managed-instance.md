@@ -9,7 +9,7 @@ ms.date: 11/07/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.topic: troubleshooting-general
 monikerRange: '>=sc-om-2019'
 ---
 
