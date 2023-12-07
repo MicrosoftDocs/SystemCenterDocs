@@ -90,7 +90,7 @@ Take care of the following issues for all three networking models mentioned earl
 
 ## Firewall requirements
 
-For SCOM Managed Instance to function properly it must have access to the following port number and URLs. Configure the NSG rules and firewall rules to allow this communication.  
+For SCOM Managed Instance to function properly it must have access to the following port number and URLs. Configure the NSG and firewall rules to allow this communication.  
 
 |Resource|Port|Direction|Service Tags|Purpose|
 |---|---|---|---|---|
@@ -98,8 +98,8 @@ For SCOM Managed Instance to function properly it must have access to the follow
 |management.azure.com|443|Outbound|AzureResourceManager|Azure Resource Manager|
 |gcs.prod.monitoring.core.windows.net <br/> *.prod.warm.ingest.monitor.core.windows.net|443|Outbound|AzureMonitor|SCOM MI Logs|
 |*.prod.microsoftmetrics.com <br/> *.prod.hot.ingest.monitor.core.windows.net <br/> *.prod.hot.ingestion.msftcloudes.com|443|Outbound|AzureMonitor|SCOM MI Metrics|
-|*.workloadnexus.azure.com|443|Outbound|Nexus Service|
-|*.azuremonitor-scommiconnect.azure.com|443|Outbound|Bridge Service|
+|*.workloadnexus.azure.com|443|Outbound| |Nexus Service|
+|*.azuremonitor-scommiconnect.azure.com|443|Outbound| |Bridge Service|
 
 > [!IMPORTANT]
 > To minimize the need for extensive communication with both your Active Directory admin and the network admin, see [Self-verification](scom-managed-instance-self-verification-of-steps.md). The article outlines the procedures that the Active Directory admin and the network admin use to validate their configuration changes and ensure their successful implementation. This process reduces unnecessary back-and-forth interactions from the Operations Manager admin to the Active Directory admin and the network admin. This configuration saves time for the admins.
