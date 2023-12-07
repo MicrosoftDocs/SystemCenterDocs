@@ -196,6 +196,18 @@ Follow these steps to run the validation script:
 
 **Resolution:** Verify that the VNet being used for SCOM Managed Instance creation has outbound internet access by creating test virtual machine on the same subnet as SCOM Managed Instance and test outbound connectivity from test virtual machine.
 
+### Issue: Internet connectivity test failed; required endpoints are not reachable from this network
+
+**Cause**: Occurs due to an incorrect DNS Server IP or an incorrect network configuration.
+
+**Resolution**:
+
+- Check the DNS Server IP, and ensure that DNS Server is up and running.
+
+- Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
+
+- Ensure that the SCOM Managed Instance has outbound internet access and NSG/Firewall are properly configured to allow access to required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
+
 ### General troubleshooting steps for [internet connectivity](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip)
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
