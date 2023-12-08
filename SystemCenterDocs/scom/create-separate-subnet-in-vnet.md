@@ -27,7 +27,7 @@ For more information on how to create a virtual network, see [Quickstart: Use th
 After a SCOM Managed Instance subnet is created, we need a NAT gateway for outbound internet access from the SCOM Managed Instance subnet. Edit the subnet to add a NAT gateway. In Azure, add a NAT gateway to the subnet where the SCOM managed instance is created. A NAT gateway is needed for outbound internet access from the SCOM Managed Instance subnet. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
 
 >[!NOTE]
->The SCOM Managed Instance requires outbound internet access for communication with dependent endpoints. It is advisable to use a NAT Gateway for this purpose. However, if there is an already established outbound internet access through a firewall, you can omit the creation of a NAT Gateway.
+>The SCOM Managed Instance requires outbound Internet access for communication with dependent endpoints. We recommend to use a NAT Gateway for this purpose. However, if there is an already established outbound internet access through a firewall, you can skip the creation of a NAT Gateway.
 
 To create a NAT gateway for a SCOM Managed Instance subnet, follow these steps:
 

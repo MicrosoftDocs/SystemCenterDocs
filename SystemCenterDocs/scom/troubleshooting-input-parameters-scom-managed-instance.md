@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 12/08/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -206,7 +206,7 @@ Follow these steps to run the validation script:
 
 - Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
 
-- Ensure that the SCOM Managed Instance has outbound internet access and NSG/Firewall is properly configured to allow access to the required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
+- Ensure that the SCOM Managed Instance has outbound Internet access and NSG/Firewall is properly configured to allow access to the required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
 
 ### General troubleshooting steps for [internet connectivity](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip)
 

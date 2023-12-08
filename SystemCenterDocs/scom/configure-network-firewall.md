@@ -90,7 +90,7 @@ Take care of the following issues for all three networking models mentioned earl
 
 ## Firewall requirements
 
-For SCOM Managed Instance to function properly it must have access to the following port number and URLs. Configure the NSG and firewall rules to allow this communication.  
+To function properly, SCOM Managed Instance must have access to the following port number and URLs. Configure the NSG and firewall rules to allow this communication.  
 
 |Resource|Port|Direction|Service Tags|Purpose|
 |---|---|---|---|---|
