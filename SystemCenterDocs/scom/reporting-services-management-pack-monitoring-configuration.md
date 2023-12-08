@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 06/13/2023
+ms.date: 12/8/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -160,6 +160,28 @@ This management pack collects the following performance metrics:
   - Working set memory consumed by Power BI Mashup containers (GB)
   - Private memory consumed by Power BI Mashup containers (GB)
   - Total memory usage by running Power BI reports on the Server (GB)
+
+## Securables Configuration Status Monitor
+
+This monitor checks if each of the required SQL Server Reporting Services securables is accessible to the **ReportServer** database under the configured [Reporting Services Run As Profiles](reporting-services-management-pack-run-as-profiles.md).
+
+The following is a complete list of securables that are checked by the monitor targeted to the Reporting Services instance:
+
+- SELECT permission on catalog views
+  - dbo.ExecutionLog2
+
+- SELECT permission on tables
+  - dbo.Keys
+
+The following is a complete list of securables that are checked by the monitor targeted to the Reporting Services deployment watcher:
+
+- SELECT permission on catalog views
+  - dbo.ExecutionLog2
+
+- SELECT permission on tables
+  - dbo.Catalog
+  - dbo.DataSource
+  - dbo.Subscriptions
 
 ## Feature Groups
 
