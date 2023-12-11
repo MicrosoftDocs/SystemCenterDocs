@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/17/2023
+ms.date: 12/11/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -52,7 +52,7 @@ The following tables list the release history for Operations Manager 2019.
 |Build Number |KB |Release Date |Agent Version |Description |
 |-------------|---|-------------|--------------|------------|
 |10.19.1008.0||March 2019 |1.6.3-793 |General Availability release |
-|10.19.1082.0|[v1.6.4-7](https://github.com/microsoft/SCXcore/releases/tag/v1.6.4-7) |February 2020 |1.6.4-7 |Update Rollup 1 |
+|10.19.1082.0|[v1.6.4-7](https://github.com/microsoft/SCXcore/releases/tag/scx-1.6.4-7) |February 2020 |1.6.4-7 |Update Rollup 1 |
 |10.19.1123.0|[v1.6.6-0](https://github.com/microsoft/SCXcore/releases/tag/v1.6.6-0) |August 2020 |1.6.6-0	|Update Rollup 2 |
 |10.19.1138.0|[v1.6.8-0](https://github.com/microsoft/SCXcore/releases/tag/v1.6.8-0) |March 2021 |1.6.8-0 |Update Rollup 3 |
 |10.19.1147.0|[v1.6.8-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.8-1) |October 2021 |1.6.8-1 |Update Rollup 3 - OMI Vulnerability Fix |
