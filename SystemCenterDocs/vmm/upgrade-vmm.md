@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Vir
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 07/20/2023
+ms.date: 12/13/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
