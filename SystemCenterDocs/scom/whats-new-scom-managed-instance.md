@@ -19,7 +19,7 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 ## Version 1.0.95
 
-Enhance onboarding/pre-patching/pre-scaling validations to check the connectivity to required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
+- Enhance onboarding/pre-patching/pre-scaling validations to check the connectivity to required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
 
 ## Version 1.0.94 
 
