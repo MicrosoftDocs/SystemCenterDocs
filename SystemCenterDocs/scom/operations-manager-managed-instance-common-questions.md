@@ -142,7 +142,7 @@ Since this instance requires you to create the SCOM Managed Instance in your sub
 
 No.  
 
-SCOM Managed Instance Managed Gateways can be configured on any Azure and Arc-enabled server, which doesn’t have Operations Manager Gateway software on it. If you want to reuse Operations Manager on-premises Gateway servers with SCOM Managed Instance, uninstall Operations Manager Gateway software on it. To configure SCOM Managed Instance Managed Gateway, see [Configure monitoring of servers via SCOM Managed Instance Gateway](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-servers-via-scom-managed-instance-gateway).
+SCOM Managed Instance Managed Gateways can be configured on any Azure and Arc-enabled server, which doesn’t have Operations Manager Gateway software on it. If you want to reuse Operations Manager on-premises Gateway servers with SCOM Managed Instance, uninstall Operations Manager Gateway software on it. To configure SCOM Managed Instance Managed Gateway, see [Configure monitoring of servers via SCOM Managed Instance Gateway](monitor-arc-enabled-vm-with-scom-managed-instance.md#configure-monitoring-of-servers-via-scom-managed-instance-gateway).
 
 **Can SCOM Managed Instance Managed Gateway multi-home with System Center Operations Manager on-premises Management server?**
 
@@ -154,7 +154,7 @@ The certificates are assigned by Microsoft and are signed by CA. There's no requ
 
 **Can SCOM Managed Instance monitor on-premises machines without Arc installed?**
 
-Yes, if there's a direct connectivity (line-of-sight) between SCOM Managed Instance and on-premises machine via VPN/ER, you can monitor these machines. For more information, see [Configure monitoring of on-premises servers](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-on-premises-servers).
+Yes, if there's a direct connectivity (line-of-sight) between SCOM Managed Instance and on-premises machine via VPN/ER, you can monitor these machines. For more information, see [Configure monitoring of on-premises servers](monitor-arc-enabled-vm-with-scom-managed-instance.md#configure-monitoring-of-on-premises-servers).
 
 ## Monitored Resources (Agents)/Managed Gateway Servers
 
