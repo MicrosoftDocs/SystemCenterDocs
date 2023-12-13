@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 12/13/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -195,6 +195,18 @@ Follow these steps to run the validation script:
 **Cause:** Occurs due to a problem with your internet connectivity.
 
 **Resolution:** Verify that the VNet being used for SCOM Managed Instance creation has outbound internet access by creating test virtual machine on the same subnet as SCOM Managed Instance and test outbound connectivity from test virtual machine.
+
+### Issue: Internet connectivity test failed. Required endpoints are not reachable from the VNet
+
+**Cause**: Occurs due to an incorrect DNS Server IP or an incorrect network configuration.
+
+**Resolution**:
+
+- Check the DNS Server IP, and ensure that the DNS Server is up and running.
+
+- Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
+
+- Ensure that the SCOM Managed Instance has outbound Internet access and NSG/Firewall is properly configured to allow access to the required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
 
 ### General troubleshooting steps for [internet connectivity](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip)
 

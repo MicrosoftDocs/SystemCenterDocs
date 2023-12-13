@@ -5,7 +5,7 @@ description: This article provides details of what's new in each version of Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/05/2023
+ms.date: 12/13/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -16,6 +16,10 @@ monikerRange: '>=sc-om-2019'
 # What’s new in Azure Monitor SCOM Managed Instance 
 
 This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
+
+## Version 1.0.95
+
+- Enhance onboarding/pre-patching/pre-scaling validations to check the connectivity to required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
 
 ## Version 1.0.94 
 
