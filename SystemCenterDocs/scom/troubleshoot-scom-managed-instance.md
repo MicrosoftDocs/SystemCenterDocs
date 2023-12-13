@@ -116,6 +116,12 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 ## Scenario: Manual Scale up/down
 
+### Issue: Internet connectivity test failed. Required endpoints are not reachable from the VNet
+
+**Cause**: Network issue.
+
+**Resolution**: Ensure that the SCOM Managed Instance has outbound Internet access and NSG/Firewall is properly configured to allow access to the required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
+
 ### Issue: Quota Exceeded
 
 **Cause**: Occurs if there are no cores available for scaling.
@@ -137,6 +143,12 @@ Check the quota section on Azure portal and allocate more cores of type Standard
 **Resolution**: Wait for the ongoing process to complete and try again.
 
 ## Scenario: Patching
+
+### Issue: Internet connectivity test failed. Required endpoints are not reachable from the VNet
+
+**Cause**: Network issue.
+
+**Resolution**: Ensure that the SCOM Managed Instance has outbound Internet access and NSG/Firewall is properly configured to allow access to the required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
 
 ### Issue: Notification is stuck at *Fetching updates* even though the update operation is complete
 
