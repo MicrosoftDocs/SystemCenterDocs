@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/21/2023
+ms.date: 12/08/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -27,7 +27,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10448.0|[5024286](https://support.microsoft.com/kb/5024286) |March 2023|Update Rollup 1 - OpenSSL3.0 integration Hotfix|
 |10.22.10565.0|[5029512](https://support.microsoft.com/kb/5029512) |July 2023|Discover Azure Migrate in Operations Manager|
 |10.22.10575.0|[5029601](https://support.microsoft.com/kb/5029601) |July 2023|GB compliance|
-|10.22.10560.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023|SCX Compiler Mitigated Packages|
+|10.22.10560.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023|SCX Compiler Mitigated Packages <br/> <br/> **This package is not cumulative; apply [KB5024286](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081) as a prerequisite**.|
 |10.22.10610.0|[5031649](https://support.microsoft.com/kb/5031649) |November 2023|Update Rollup 2|
 
 ### Agent and Gateway
