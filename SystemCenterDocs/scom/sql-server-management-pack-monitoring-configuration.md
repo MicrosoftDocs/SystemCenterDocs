@@ -409,17 +409,17 @@ Management Pack for SQL Server provides the monitor which is capable of performi
 
 SQL Server can use TLS to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. TLS uses a certificate to implement encryption. Enabling TLS encryption increases the security of data transmitted across networks between instances of SQL Server and applications. For more information, see [Certificate overview](/sql/database-engine/configure-windows/certificate-overview) and [Certificate procedures](/sql/database-engine/configure-windows/certificate-procedures) articles.
 
-This monitor targets the DB Engine and checks the certificate validation period in days and the [certificate requirements](/sql/database-engine/configure-windows/certificate-requirements).
+This monitor targets the SQL Server DB Engine on Windows and Linux and checks the certificate validation period in days and the [certificate requirements](/sql/database-engine/configure-windows/certificate-requirements).
 
 > [!IMPORTANT]
-> SQL Server will not start if a certificate exists in the computer store, but only meets some requirements in the above list and if it is manually configured for use by SQL Server Configuration Manager or through registry entries. Select another certificate that meets all the requirements or remove the certificate from being used by SQL Server till you are able to provision one that meets requirements. For more information, see [Configure SQL Server for encryption](/sql/database-engine/configure-windows/configure-sql-server-encryption) article.
+> SQL Server will not start if a certificate exists in the computer store, but only meets some requirements in the above list and if it is manually configured for use by SQL Server Configuration Manager or through registry entries (for SQL Server on Windows only). Select another certificate that meets all the requirements or remove the certificate from being used by SQL Server till you are able to provision one that meets requirements. For more information, see [Configure SQL Server for encryption](/sql/database-engine/configure-windows/configure-sql-server-encryption) article.
 
 The following table defines the monitor override parameters and fine-tunes the certificate validation requirements for SQL Server:
 
 |Override name|Description|  
 |----------|----------|
 |Additional host names to check|By default, the monitor checks that the certificate contains the target DB Engine's Principal name. This override allows checking with a comma-separated list of additional host names like Always On listener DNS name, DNS alias of the hosting machine, FCI virtual name, etc.
-|Certificate must be configured|If true, the monitor changes its state to a Critical when a DB Engine has no explicitly configured certificate.|
+|Certificate must be configured (for SQL Server on Windows only)|If true, the monitor changes its state to a Critical when a DB Engine has no explicitly configured certificate.|
 |Ignore 'Untrusted Root' check|If true, the monitor will ignore that the certificate is not placed in the Trusted Root Certification Authorities. If placed, these certificates are trusted by the operating system and can be used by applications as a reference for which public key infrastructure (PKI) hierarchies and digital certificates are trustworthy.
 |Set flag 'IgnoreCertificateAuthorityRevocationUnknown'|Ignore that the certificate authority revocation is unknown when determining certificate verification.
 |Set flag 'IgnoreCtlNotTimeValid'|Ignore that the certificate trust list (CTL) is not valid, for reasons such as the CTL has expired, when determining certificate verification.
@@ -434,9 +434,6 @@ The following table defines the monitor override parameters and fine-tunes the c
 |Skip 'Host Name' check|If true, the monitor will skip checking that the certificate contains particular host names.
 |Skip 'Key Usage Server Authentication' check|If true, the monitor will skip the server's authentication certificate requirement of the presence of the key's usage extension 'Server Authentication'. Some connection driver implementations may not check the existence of this extension and they may consider the certificate valid even without the extension.
 |Skip 'Revocation' check|If true, the monitor will ignore all issues related to revocation.
-
-  > [!NOTE]
-  > This monitor is disabled by default. Use overrides to enable it when necessary.
 
 ## Transparent data encryption (TDE) certificate backup status monitoring
 
