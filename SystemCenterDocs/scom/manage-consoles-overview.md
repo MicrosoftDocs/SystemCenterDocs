@@ -4,7 +4,7 @@ description: Learn how to manage Operations Console and Web console in Operation
 author: jyothisuri
 ms.author: jsuri
 ms.manager: mkluck
-ms.date: 11/10/2017
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
