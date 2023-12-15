@@ -4,7 +4,7 @@ description: This article describes how to publish a Visio diagram created with 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 02/16/2017
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager

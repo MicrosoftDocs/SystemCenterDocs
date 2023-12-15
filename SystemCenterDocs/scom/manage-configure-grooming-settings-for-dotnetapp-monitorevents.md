@@ -4,7 +4,7 @@ description: This article describes how to configure grooming of the APM data fr
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 06/06/2017
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
