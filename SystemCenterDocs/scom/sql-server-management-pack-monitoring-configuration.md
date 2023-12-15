@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 06/13/2023
+ms.date: 12/15/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -384,9 +384,6 @@ Management Pack for SQL Server is capable of performing availability and perform
   
   Any name belonging to any of the classes above should be from 1 to 128 characters, excluding delimiter characters.
 
-  > [!NOTE]
-  > This monitor is disabled by default. Use overrides to enable it when necessary.
-
 - Job Duration monitor
 
   This monitor checks all jobs on the SQL Agent and if any of the jobs takes longer than the specified threshold. A Warning or Error alert will appear if a job duration is longer than the configured thresholds - **Warning Threshold (minutes)** and **Critical Threshold (minutes)**. This doesn't generate an alert because there's an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled, or use the **Job Duration alert rule**.
@@ -394,14 +391,10 @@ Management Pack for SQL Server is capable of performing availability and perform
 - Job Duration alert rule
 
   This rule checks whether the execution time of any of your SQL Agent jobs has exceeded the specified threshold in minutes and throws an alert if the execution time has breached the threshold.
-  > [!NOTE]
-  > This rule is disabled by default. Use overrides to enable it when necessary.
 
 - Job Duration performance rule
 
   This rule collects the duration in minutes of any of your SQL Agent jobs.
-  > [!NOTE]
-  > This rule is disabled by default. Use overrides to enable it when necessary.
 
 ## SQL Server connection encryption certificate monitoring
 
@@ -442,7 +435,7 @@ Management Pack for SQL Server provides the monitor which is capable to check th
 Transparent data encryption (TDE) encrypts the storage of an entire database by using a symmetric key called the database encryption key. The database encryption key can also be protected using a certificate, which is protected by the database master key of the master database. TDE does real-time I/O encryption and decryption of data and log files. The encryption uses a database encryption key (DEK). The database boot record stores the key for availability during recovery. The DEK is a symmetric key and secured by a certificate that the server's master database stores or by an asymmetric key that an EKM module protects. TDE protects data at rest, which is the data and log files. It lets you follow many laws, regulations, and guidelines established in various industries. This ability lets software developers encrypt data by using AES and 3DES encryption algorithms without changing existing applications. For more information, see [SQL Server security best practices](/sql/relational-databases/security/sql-server-security-best-practices), and [Transparent data encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption) articles.
 
 > [!NOTE]
-> TDE is not available for system databases. It can't be used to encrypt **master**, **model**, or **msdb**. **tempdb** is automatically encrypted when a user database enabled TDE, but can't be encrypted directly. This monitor is disabled by default. Use overrides to enable it when necessary.
+> TDE is not available for system databases. It can't be used to encrypt **master**, **model**, or **msdb**. **tempdb** is automatically encrypted when a user database enabled TDE, but can't be encrypted directly.
 
 ## Long running queries monitoring
 
