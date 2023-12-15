@@ -81,7 +81,8 @@ To configure agentless monitoring, perform the following steps:
 
       When you create a new Run As account, enter a name and credentials to connect to the SQL Server that you want to monitor and select **OK**.
 
-    - Specify the management server resource pool. By default, the **SQL Server Monitoring Pool** is selected. This option allows you to use the custom management server resource pools. If the latter is used, make sure than the selected Run As account is distributed to the corresponding management pool. Otherwise, the monitoring wizard runs the Run As account distribution automatically.
+    - Specify the management server resource pool. By default, the **SQL Server Monitoring Pool** is selected. This option allows you to use the custom management server resource pools. If the latter is used, make sure that the selected Run As account is distributed to the corresponding management pool. Otherwise, the monitoring wizard runs the Run As account distribution automatically.
+
 
         ![Screenshot showing automatically distribution of the Run As account.](./media/sql-server-management-pack/run-as-account-distribution.png)
 
