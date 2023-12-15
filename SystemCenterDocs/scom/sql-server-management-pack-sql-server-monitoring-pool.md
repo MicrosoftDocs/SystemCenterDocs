@@ -5,7 +5,7 @@ description: This article explains SQL Server monitoring pool
 author: Anastas1ya
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 12/15/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # SQL Server Monitoring Pool
 
-You can configure SQL Server Monitoring Pool manually by adding custom gateways and management servers.
+You can configure **SQL Server Monitoring Pool** manually by adding custom gateways and management servers. Custom management server resource pools are also supported for both [Agentless](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) and [Mixed](sql-server-management-pack-monitoring-modes.md#configuring-mixed-monitoring-mode) monitoring modes.
 
 To configure SQL Server Monitoring Pool, perform the following steps:
 

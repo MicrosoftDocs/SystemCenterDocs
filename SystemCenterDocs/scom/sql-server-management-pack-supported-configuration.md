@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 12/15/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -82,15 +82,19 @@ Management Pack for SQL Server supports the following versions of System Center 
 Management Pack for SQL Server supports the following operating systems and platforms:
 
 - Windows Server 2012
+  
+  Due to the [Lifecycle Policy](/lifecycle/products/windows-server-2012), this version is no longer being tested.
+
 - Windows Server 2012 R2
+  
+  Due to the [Lifecycle Policy](/lifecycle/products/windows-server-2012-r2), this version is no longer being tested.
+  
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
-- Ubuntu 16.04
-- Ubuntu 18.04
-- Ubuntu 20.04
-- Red Hat Enterprise Linux 7.3 and 7.4
-- SUSE Linux Enterprise Server v12 SP2
+- Ubuntu 16.04 - 22.04
+- Red Hat Enterprise Linux 7.7 - 7.9, or 8.x - 9.x Server
+- SUSE Linux Enterprise Server v12 - v15
 - Docker Engine 1.8+
 - Azure Kubernetes Service (AKS)
 
