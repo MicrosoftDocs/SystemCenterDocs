@@ -4,7 +4,7 @@ description: This article describes how to view the information about the networ
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 01/25/2017
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager
