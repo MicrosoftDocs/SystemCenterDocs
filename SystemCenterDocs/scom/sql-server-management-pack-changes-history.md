@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/4/2023
+ms.date: 12/18/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,24 @@ ms.technology: operations-manager
 # Features and enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
+
+## December 2023 - 7.3.0.0 CTP
+
+### What's new
+
+- Added support of custom management server resource pools for agentless and mixed monitoring modes
+- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor for SQL Server on Linux, which targets DB Engine and checks if the server’s TLS certificate is valid
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - improved keyboard navigation
+  - improved color contrast in dashboards for better legibility
+  - reworked high contrast theme for dashboards
+  - added support of screen-reading software
+- Updated display strings
+
+### Bug fixes
+
+- Fixed the issue of Summary Dashboard view not working in the System Center Operations Manager Console when operational and data warehouse databases are hosted on SQL Server version 2022
 
 ## July 2023 - 7.2.0.0 RTM
 
