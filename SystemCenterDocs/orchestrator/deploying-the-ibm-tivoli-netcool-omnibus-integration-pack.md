@@ -5,9 +5,9 @@ ms.date: 10/27/2022
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: intro-deployment
 monikerRange: '<=sc-orch-2019'
 ---

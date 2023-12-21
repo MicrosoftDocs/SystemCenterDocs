@@ -9,10 +9,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1f3f12bf-e2c2-405c-9205-8d6de6d199d2
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
-manager: mkluck
 ---
 # Common Activity Properties
 
