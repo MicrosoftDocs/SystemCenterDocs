@@ -7,10 +7,10 @@ ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/11/2023
-author: jyothisuri
-manager: mkluck
 ---
 # Overview of the Orchestration console
 
