@@ -1,9 +1,9 @@
 ---
 description: This article explains the supported deployment options for DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 11/21/2022
