@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 7/5/2023
+ms.date: 12/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,20 @@ ms.technology: operations-manager
 # Features and enhancements in Management Pack for SQL Server Reporting Services
 
 This article covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
+
+## December 2023 - 7.3.0.0 CTP
+
+### What's new
+
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server Reporting Services and Power BI Report Server
+- Added new ["Securables Configuration Status"](reporting-services-management-pack-monitoring-configuration.md#securables-configuration-status-monitor) monitors targeted to SQL Server Reporting Services instance and Deployment Watcher that check if each of the required SQL Server securables is accessible under the configured Run As Account
+- Added support for enabling diagnostic tracing in the System Center Operations Manager toolset
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - improved keyboard navigation
+  - improved color contrast in dashboards for better legibility
+  - reworked high contrast theme for dashboards
+  - added support of screen-reading software
+- Updated display strings
 
 ## July 2023 - 7.2.0.0 RTM
 
