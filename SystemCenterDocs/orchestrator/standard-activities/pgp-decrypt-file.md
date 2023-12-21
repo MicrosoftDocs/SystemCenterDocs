@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cf1b4f0c-2694-405b-9940-1fdb88c9228b
 caps.latest.revision: 16
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: "mkluck"
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # PGP Decrypt File
 

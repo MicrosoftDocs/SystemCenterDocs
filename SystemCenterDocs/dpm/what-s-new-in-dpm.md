@@ -1,14 +1,14 @@
 ---
 description: Descriptions of the new features in System Center DPM
-manager: mkluck
 ms.topic: article
-author: jyothisuri
 ms.prod: system-center
 ms.date: 12/04/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 ---
 
