@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ab465f97-ef96-41b8-bae5-57c5413af14a
 caps.latest.revision: 5
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Get Dial-up Status
 

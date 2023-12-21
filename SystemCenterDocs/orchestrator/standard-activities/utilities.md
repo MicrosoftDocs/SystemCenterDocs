@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b2024376-f24f-4279-997a-f7fe2ccd73e4
 caps.latest.revision: 8
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Utilities
 

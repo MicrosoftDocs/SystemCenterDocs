@@ -9,9 +9,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 748c58c3-6ef0-4249-b6bc-51f756d89f61
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ROBOTS: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
