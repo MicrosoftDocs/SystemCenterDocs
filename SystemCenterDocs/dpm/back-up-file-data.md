@@ -1,9 +1,9 @@
 ---
 description: You can back up file data on server and client computers with DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 08/09/2021
