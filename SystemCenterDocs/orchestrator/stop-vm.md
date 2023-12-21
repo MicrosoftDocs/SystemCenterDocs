@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b21b1694-b13c-4547-9029-b24ba6ee38a4
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+manager: mkluck
 robots: noindex
 ---
 # Stop VM

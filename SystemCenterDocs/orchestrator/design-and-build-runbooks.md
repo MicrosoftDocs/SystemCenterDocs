@@ -4,10 +4,10 @@ description: This article provides guidance and detailed procedures for creating
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/25/2023
+manager: mkluck
 ms.custom: engagement-fy23, engagement-fy23
 ---
 # Build and test runbooks

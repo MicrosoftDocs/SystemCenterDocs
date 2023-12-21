@@ -5,9 +5,9 @@ ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+manager: mkluck
 ---
 
 # The integration pack for System Center Operations Manager

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2cebdeb0-09dd-47b7-ae13-0b478fc77a6d
 caps.latest.revision: 17
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: mkluck
 ---
 # Monitor Internet Application
 

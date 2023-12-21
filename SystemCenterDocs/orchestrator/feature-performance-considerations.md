@@ -1,13 +1,13 @@
 ---
 title: Feature performance considerations
 description: Provides performance guidance for System Center - Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+manager: mkluck
 ms.date: 04/25/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
+ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy23
 ---
 

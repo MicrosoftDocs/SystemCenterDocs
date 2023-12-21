@@ -5,9 +5,9 @@ ms.date: 02/10/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+manager: mkluck
 ---
 
 # Integration pack for System Center - Service Manager

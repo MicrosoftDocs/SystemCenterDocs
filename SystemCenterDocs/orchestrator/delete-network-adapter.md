@@ -4,9 +4,9 @@ description: The Delete Network Adapter activity is used in a runbook to remove 
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+manager: mkluck
 ms.custom: UpdateFrequency3, engagement-fy23
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023

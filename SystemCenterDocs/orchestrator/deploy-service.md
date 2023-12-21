@@ -5,9 +5,9 @@ ms.date: 04/25/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+manager: mkluck
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23
 ---
 # Deploy Service activity

@@ -1,9 +1,9 @@
 ---
 title: Orchestrator overview
 description: This article provides an overview of System Center - Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+manager: mkluck
+ms.author: jsuri
 ms.date: 08/22/2023
 ms.prod: system-center
 ms.technology: orchestrator

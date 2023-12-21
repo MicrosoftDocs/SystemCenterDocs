@@ -2,9 +2,9 @@
 ms.assetid: 48acfa8f-eef3-4129-b8b7-aa4a41345ea7
 title: Upgrade information for System Center Orchestrator
 description: This article details the upgrade information and procedures for Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+manager: mkluck
 ms.date: 07/28/2023
 ms.topic: article
 ms.prod: system-center

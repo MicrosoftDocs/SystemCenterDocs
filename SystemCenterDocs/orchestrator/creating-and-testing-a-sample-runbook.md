@@ -8,10 +8,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10b8d20a-7bf8-4af8-86fa-8b936319355b
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/13/2023
+manager: mkluck
 ms.custom: engagement-fy23
 ---
 

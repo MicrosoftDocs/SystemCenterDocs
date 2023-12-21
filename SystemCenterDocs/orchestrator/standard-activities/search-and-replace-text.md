@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 481ef283-c99f-4379-933a-1db86c3aceb2
 caps.latest.revision: 13
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Search and Replace Text
 

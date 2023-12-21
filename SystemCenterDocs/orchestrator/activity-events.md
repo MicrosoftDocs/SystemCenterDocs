@@ -9,10 +9,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
+ms.author: jsuri
 ms.date: 04/11/2023
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+manager: mkluck
 ---
 
 # Capture activity events to monitor runbooks
