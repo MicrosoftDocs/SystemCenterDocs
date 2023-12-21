@@ -13,7 +13,6 @@ caps.latest.revision: 12
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-manager: manager
 ms.custom: engagement-fy23, UpdateFrequency3
 ---
 # Alphabetical List of Standard Activities
