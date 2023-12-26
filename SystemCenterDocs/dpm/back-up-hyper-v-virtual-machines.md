@@ -297,7 +297,7 @@ A replica virtual machine is turned off until a failover is initiated, and VSS c
 
   ```powershell
 
-  Convert-VHD –Path c:\VM\my-vhdx.vhdx –DestinationPath c:\New-VM\new-vhdx.vhdx –VHDType Dynamic
+  Convert-VHD –Path c:\VM\my-vhdx.vhdx –DestinationPath c:\New-VM\new-vhdx.vhdx –VHDType Fixed
 
   ```
 
