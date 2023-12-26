@@ -5,7 +5,7 @@ description: This article explains monitoring modes in Management Pack for SQL S
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/15/2023
+ms.date: 12/26/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -53,23 +53,23 @@ To configure agentless monitoring, perform the following steps:
 
 1. In the Operations Manager console, navigate to **Authoring** | **Management Pack Templates**, right-click **Microsoft SQL Server**, and select **Add Monitoring Wizard**.
 
-    ![Screenshot showing Running Add Monitoring Wizard.](./media/sql-server-management-pack/running-add-monitoring-wizard.png)
+    ![Screenshot showing Running Add Monitoring Wizard.](./media/sql-server-management-pack/authoring-add-monitoring-wizard.png)
 
 2. At the **Monitoring Type** step, select **Microsoft SQL Server**, and select **Next**.
 
-    ![Screenshot showing selecting SQL Server.](./media/sql-server-management-pack/selecting-sql-server.png)
+    ![Screenshot showing selecting SQL Server.](./media/sql-server-management-pack/selecting-sql-server-template.png)
 
 3. At the **General Properties** step, enter a new name and description.
 
 4. From the **Select destination management pack** dropdown list, select a management pack that you want to use to store the template.
 
-    ![Screenshot showing Entering name.](./media/sql-server-management-pack/entering-name.png)
+    ![Screenshot showing Entering name.](./media/sql-server-management-pack/entering-name-wizard.png)
 
     To create a new management pack, select **New**.
 
 5. At the **Service Details** step, select **Add Instances** to add instances that you want to monitor.
 
-    ![Screenshot showing Adding instances.](./media/sql-server-management-pack/adding-instances.png)
+    ![Screenshot showing Adding instances.](./media/sql-server-management-pack/adding-instances-wizard.png)
 
 6. In the **Add Instances** window, perform the following steps:
 
@@ -96,27 +96,27 @@ To configure agentless monitoring, perform the following steps:
 
         - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
 
-    ![Screenshot showing Authentication type.](./media/sql-server-management-pack/authentication-type-agentless.png)
+    ![Screenshot showing Authentication type.](./media/sql-server-management-pack/authentication-type-agentless-wizard.png)
 
     > [!TIP]
     > The connection test may fail if an IP address of a Linux-based instance is specified as a connection string and the authentication type is **Windows AD credentials**. To avoid that, specify the machine name as the connection string.
 
 7. Select **OK** and wait until the connection is established.
 
-    ![Screenshot showing Decrease intervals.](./media/sql-server-management-pack/decrease-intervals.png)
+    ![Screenshot showing Decrease intervals.](./media/sql-server-management-pack/decrease-intervals-wizard.png)
 
     > [!NOTE]
     > **Monitoring Template Wizard** may show the following error when establishing connection: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process". To work around this issue, decrease intervals for both the **MSSQL: Generic Monitoring Pool Watcher Discovery** and the **Discover All Management Servers Pool Watcher** discoveries to force them to run right away, and then restore the previous value.
 
     Once the connection is established, you can view and edit the properties of the instance. To view properties, select an instance and select **Edit Instance**.
 
-    ![Screenshot showing Editing instance configuration.](./media/sql-server-management-pack/editing-instance-configuration-agentless.png)
+    ![Screenshot showing Editing instance configuration.](./media/sql-server-management-pack/editing-instance-configuration-agentless-wizard.png)
 
     To skip connection testing and enter data manually, select the **Skip Test Connection and enter this data manually** checkbox.
 
 8. At the **Summary** step, review summary information and select **Create**.
 
-    ![Screenshot showing Server summary.](./media/sql-server-management-pack/server-details-summary.png)
+    ![Screenshot showing Server summary.](./media/sql-server-management-pack/server-details-summary-wizard.png)
 
     > [!IMPORTANT]
     > To avoid double monitoring of the SQL Server instance and additional burden eventually, don't add the instance to the monitoring template wizard for **Agentless mode** if it is already monitoring in **Agent mode**.
