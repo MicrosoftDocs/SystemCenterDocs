@@ -2,7 +2,7 @@
 ms.assetid: 7e0ce57d-1b20-4412-a14e-941b4264f849
 title: Monitoring configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the monitoring configuration in Management Pack for Azure SQL Managed Instance
-author: Anastas1ya
+author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
 ms.date: 11/10/2021
@@ -23,8 +23,8 @@ Management Pack for Azure SQL Managed Instance has two monitoring templates for 
 
     This template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
->[!NOTE]
->Using both the templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and may also cause performance issues.
+> [!NOTE]
+> Using both the templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and may also cause performance issues.
 
 ## Space Monitoring
 
@@ -51,8 +51,8 @@ For instance space monitoring, the management pack checks storage utilization at
 
 Management Pack for Azure SQL Managed Instance provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
 
->[!NOTE]
->The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups aren't considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql).
+> [!NOTE]
+> The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups aren't considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql).
 
 ## Securables Configuration Status Monitor
 
