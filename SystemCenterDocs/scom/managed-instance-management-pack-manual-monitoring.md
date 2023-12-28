@@ -2,10 +2,10 @@
 ms.assetid: 29b787f9-5c1f-4d08-a9a0-9c0a9b9075e1
 title: Manual monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure manual monitoring template in Management Pack for Azure SQL Managed Instance
-author: Anastas1ya
+author: v-ekaterinap
 ms.author: v-ekaterinap
 manager: vvithal
-ms.date: 5/11/2022
+ms.date: 12/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -17,7 +17,7 @@ Manual monitoring template allows you to add the selected instances to the monit
 
 To configure monitoring using the manual monitoring template, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Manual**, and select **Add Monitoring Wizard…**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Manual**, and select **Add Monitoring Wizard**.
 
     ![Screenshot showing the Run Add Monitoring Wizard.](./media/managed-instance-management-pack/running-monitoring-wizard.png)
 
@@ -46,7 +46,7 @@ To configure monitoring using the manual monitoring template, perform the follow
     ```
     Server=<ServerAddress>;Database=<DatabaseName>;
     ```
-    
+
     You can get a connection string for a managed instance using the Azure portal.
 
     To create a Run As account from the connection string, use the following format:  
@@ -54,7 +54,7 @@ To configure monitoring using the manual monitoring template, perform the follow
     ```
     Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Password>;
     ```
-    
+
     You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
     ![Screenshot showing the Configure Run As account.](./media/managed-instance-management-pack/new-run-as-account-manual.png)
@@ -65,8 +65,8 @@ To configure monitoring using the manual monitoring template, perform the follow
 
     After the connection test is complete, you can view and edit the properties of the added instance. For that, select an instance and select **Edit Instance**.
 
-    >[!NOTE]
-    >The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](managed-instance-management-pack-known-issues-and-troubleshooting.md).
+    > [!NOTE]
+    > The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](managed-instance-management-pack-known-issues-and-troubleshooting.md).
 
     ![Screenshot showing the Edit instance parameters.](./media/managed-instance-management-pack/editing-instance.png)
 

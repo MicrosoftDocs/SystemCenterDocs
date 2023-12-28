@@ -2,10 +2,10 @@
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance
-author: Anastas1ya
+author: v-ekaterinap
 ms.author: v-ekaterinap
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 12/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -17,7 +17,7 @@ Automatic monitoring template allows you to configure monitoring by discovering 
 
 To configure monitoring using the automatic monitoring template, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Automatic**, and select **Add Monitoring Wizard…**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Automatic**, and select **Add Monitoring Wizard**.
 
     ![Screenshot showing the Run Add Monitoring Wizard.](./media/managed-instance-management-pack/running-monitoring-wizard.png)
 
@@ -43,12 +43,12 @@ To configure monitoring using the automatic monitoring template, perform the fol
    - **Auto-Create SPN**
 
        Select this option if you want your Azure Service Principal Name to be created automatically by the Azure SQL MI MP library using the Azure REST API.
-       
+
        Ensure that the account that you use must have either the **Owner** role (or higher), or any of the following roles:
 
        - **Active Directory Administrator**
-       
-       - **Service Administrator** or C**o-Administrator**
+
+       - **Service Administrator** or **Сo-Administrator**
 
        For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 
