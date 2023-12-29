@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/21/2023
+ms.date: 12/29/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -30,7 +30,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 - Added new "Processing Rows written/sec" performance collection rule which collects rate of rows written during processing of data
 - Improved the memory-related instance monitoring workflows by adding new properties and removing deprecated ones
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server Analysis Services
-- Added support for enabling diagnostic tracing in the System Center Operations Manager toolset
+- Added support for enabling [diagnostic tracing](/troubleshoot/system-center/scom/use-diagnostic-tracing) in the System Center Operations Manager toolset
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
   - improved keyboard navigation
   - improved color contrast in dashboards for better legibility
