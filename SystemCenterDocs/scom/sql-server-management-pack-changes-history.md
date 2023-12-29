@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/18/2023
+ms.date: 12/29/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -44,7 +44,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added new ["TDE Certificate Backup Status"](sql-server-management-pack-monitoring-configuration.md#transparent-data-encryption-tde-certificate-backup-status-monitoring) monitor, which targets the Database and is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up
 - Added new [Operations Manager console task](sql-server-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
 - Extended the ["Long Running Queries"](sql-server-management-pack-monitoring-configuration.md#long-running-queries-monitoring) alerting rule by adding the Application, Database, and Query exclude list overrides, which are capable to exclude queries by the application name, database name, or the custom query text from the rule alerting
-- Improved the diagnostic tracing in the System Center Operations Manager toolset
+- Improved the [diagnostic tracing](/troubleshoot/system-center/scom/use-diagnostic-tracing) in the System Center Operations Manager toolset
 - Improved the ["Database Files Space Usage Forecast"](sql-server-management-pack-sql-server-reporting.md) report by adding the number of days for the forecast summary
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Updated display strings
@@ -93,7 +93,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
 - Added support for the SQL Server 2022 public preview
 - Added support for enabling debug logging in Windows Event Log
-- Added support for enabling diagnostic tracing in the System Center Operations Manager toolset
+- Added support for enabling [diagnostic tracing](/troubleshoot/system-center/scom/use-diagnostic-tracing) in the System Center Operations Manager toolset
 - The SQL Server Evaluation edition can now be added to the exclude list of the "Local DB Engine" discovery
 - Monitoring workflows have been optimized for better performance
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
