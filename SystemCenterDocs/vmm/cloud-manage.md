@@ -2,9 +2,9 @@
 ms.assetid: 54833c06-7479-47cd-8926-1eb703634a3f
 title: Manage VMM cloud settings
 description: This article provides instructions for managing a private cloud in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/16/2023
 ms.topic: article
 ms.prod: system-center

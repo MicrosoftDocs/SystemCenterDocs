@@ -2,9 +2,9 @@
 ms.assetid: f327b30f-ff15-4460-be00-dd4fa1a665f5
 title: Add VM templates to the VMM library
 description: This article provides guidance for adding VM templates to the library in the VMM compute fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/02/2018
 ms.topic: article
 ms.prod: system-center

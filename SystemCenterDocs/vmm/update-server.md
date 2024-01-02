@@ -2,9 +2,9 @@
 ms.assetid: 2189918c-c43d-4541-aa02-46e59c9f03ca
 title: Set up update servers in the VMM compute fabric
 description: This article describes how to set up update servers in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

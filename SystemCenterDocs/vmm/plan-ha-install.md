@@ -2,9 +2,9 @@
 ms.assetid: b60c4398-37f7-4015-afe7-229d7c62ea01
 title: Plan a highly available VMM deployment
 description: This article provides planning information for deploying VMM and its components in high availability mode
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 11/28/2023
 ms.topic: article
 ms.prod: system-center

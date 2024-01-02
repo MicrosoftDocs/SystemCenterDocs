@@ -2,9 +2,9 @@
 ms.assetid: d8bfec1d-83c8-44aa-a672-2dfc4f50074c
 title: Resources for troubleshooting VMM
 description: This article summarizes troubleshooting resources available for VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/29/2023
 ms.topic: article
 ms.prod: system-center
