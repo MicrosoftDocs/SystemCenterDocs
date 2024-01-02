@@ -2,9 +2,9 @@
 ms.assetid:
 title: Antivirus exclusions (Operations Manager 2019 and later)
 description: Describes some antivirus exclusions that relate to Operations Manager. These exclusions include process-based exclusions, directory-specific exclusions, and file name extension-specific exclusions.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/22/2022
 ms.custom: na, UpdateFrequency2
 ms.prod: system-center

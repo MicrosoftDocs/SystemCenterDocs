@@ -2,9 +2,9 @@
 ms.assetid:
 title: Implement TLS 1.2 for Operations Manager
 description: This article describes how to configure Transport Layer Security (TLS) 1.2 for System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/23/2023
 ms.custom: na
 ms.prod: system-center
