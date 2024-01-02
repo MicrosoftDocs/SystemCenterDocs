@@ -2,10 +2,10 @@
 ms.assetid: c31d2851-7333-4aa0-8f4f-890eb1fbaa64
 title: Scope and supported configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Managed Instance
-author: vchvlad
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 11/25/2022
+ms.date: 12/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -49,13 +49,3 @@ The following is a list of supported versions of System Center Operations Manage
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
-
-## Operating Systems and Platforms
-
-Management Pack for Azure SQL Managed Instance supports the following 64-bit operating systems and platforms:
-
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2019
-- Windows Server 2022
