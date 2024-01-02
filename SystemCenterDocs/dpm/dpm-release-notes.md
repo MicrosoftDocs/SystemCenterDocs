@@ -2,9 +2,9 @@
 ms.assetid:
 title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 releases.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 12/04/2023
 ms.prod: system-center
 ms.technology: data-protection-manager
