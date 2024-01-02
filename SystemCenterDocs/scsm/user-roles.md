@@ -1,10 +1,10 @@
 ---
 title: Manage user roles
 description: Describes the user roles used by Service Manager and how to manage them.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 10/12/2016

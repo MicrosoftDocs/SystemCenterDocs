@@ -1,11 +1,11 @@
 ---
 title: Data warehouse reporting and analytics
 description: Provides an overview about data warehouse reporting and analytics in Service Manager.
-manager: mkluck
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 11/28/2023
 ms.reviewer: na
 ms.suite: na

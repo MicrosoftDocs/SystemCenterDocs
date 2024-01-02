@@ -1,11 +1,11 @@
 ---
 title: Manage service requests
 description: Explains how to manage service requests in Service Manager.
-manager: mkluck
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na

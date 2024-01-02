@@ -1,11 +1,11 @@
 ---
 title: Install Service Manager on four computers
 description: You can create an installation topology where each Service Manager part resides on its own computer when moving Service Manager into a production environment, or to maximize performance and scalability.
-manager: mkluck
 ms.custom: na, intro-installation, UpdateFrequency2
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/26/2022
 ms.reviewer: na
 ms.suite: na

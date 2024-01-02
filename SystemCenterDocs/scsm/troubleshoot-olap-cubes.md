@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot OLAP cubes
 description: Explains how you can troubleshoot Service Manager OLAP cubes.
-manager: mkluck
 ms.custom: na, UpdateFrequency2
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na
