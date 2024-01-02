@@ -2,9 +2,9 @@
 title: Supported configurations for System Center - Service Manager
 description: The article describes supported configurations for Service Manager.
 ms.prod: system-center
-manager: mkluck
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article

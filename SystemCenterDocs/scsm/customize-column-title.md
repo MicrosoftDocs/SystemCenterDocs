@@ -1,11 +1,11 @@
 ---
 title: Customize a column title in a view for the views sample scenario
 description: Describes how to customize a column title in a view for the Service Manager Authoring Tool views sample scenario.
-manager: mkluck
 ms.custom: na
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

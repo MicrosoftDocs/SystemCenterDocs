@@ -1,11 +1,11 @@
 ---
 title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
-manager: mkluck
 ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy23
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/26/2023
 ms.reviewer: na
 ms.suite: na
