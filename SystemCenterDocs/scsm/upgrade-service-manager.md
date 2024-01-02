@@ -2,9 +2,9 @@
 ms.assetid: 3e61b849-49f1-4852-81cf-9cae2aff68f3
 title: Upgrade information for System Center Service Manager
 description: This article details the upgrade information and procedures for Service Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/28/2023
 ms.topic: article
 ms.prod: system-center
