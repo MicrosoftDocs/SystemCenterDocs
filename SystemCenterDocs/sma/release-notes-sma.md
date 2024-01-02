@@ -2,9 +2,9 @@
 ms.assetid: 8d35cb2c-3128-45e4-bd83-bdb7c178b684
 title: Release notes for System Center Service Management Automation
 description: This article details the known issues and issues fixed in Service Management Automation.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/28/2023
 ms.topic: article
 ms.prod: system-center

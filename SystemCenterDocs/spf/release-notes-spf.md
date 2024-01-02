@@ -2,9 +2,9 @@
 ms.assetid: c129d90a-5d9d-4dea-854e-fecad7d0f6ac
 title: Release notes for Service Provider Foundation
 description: This article details the known issues and issues fixed in Service Provider Foundation
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/28/2023
 ms.topic: article
 ms.prod: system-center
