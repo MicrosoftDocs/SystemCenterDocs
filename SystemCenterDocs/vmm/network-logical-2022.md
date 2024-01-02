@@ -2,9 +2,9 @@
 ms.assetid: 049a010e-78e8-4c93-b8ca-4543ae0c55d7
 title: Set up logical networks in VMM 2022 fabric
 description: This article describes how to set up logical networks in the VMM 2022 fabric.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: system-center

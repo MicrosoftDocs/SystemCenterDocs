@@ -2,9 +2,9 @@
 ms.assetid: e81f5d5c-0780-4a2d-8611-c15b23dc47cf
 title: Accessing UNIX and Linux Computers in Operations Manager
 description: This article highlights accessing UNIX and Linux computers in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: UpdateFrequency2
 ms.prod: system-center

@@ -2,9 +2,9 @@
 ms.assetid: 57fb5b26-923e-4d33-8195-aeab83db9443
 title: Migrate storage in the VMM fabric
 description: This article describes how to migrate storage in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: system-center

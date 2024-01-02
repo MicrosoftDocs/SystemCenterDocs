@@ -2,9 +2,9 @@
 ms.assetid: 0ebd1dcd-cfe8-42ae-9c5f-cd9b91d582f8
 title: Supported storage arrays in VMM
 description: This article summarizes supported storage arrays for VMM.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/23/2023
 ms.topic: article
 ms.prod: system-center

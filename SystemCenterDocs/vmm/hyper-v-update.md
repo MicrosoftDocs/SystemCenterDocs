@@ -2,9 +2,9 @@
 ms.assetid: 929257eb-5089-415b-9ad9-f5d7623c0983
 title: Update Hyper-V hosts and clusters
 description: This article describes how to update Hyper-V hosts and clusters in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/19/2023
 ms.topic: article
 ms.prod: system-center

@@ -2,9 +2,9 @@
 ms.assetid:
 title: How to create a dashboard with the Performance widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Performance widget.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/19/2018
 ms.custom: UpdateFrequency2
 ms.prod: system-center

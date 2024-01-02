@@ -1,10 +1,10 @@
 ---
 title: Recommended deployment topology scenarios
 description: Recommended deployment topology scenarios for Service Manager.
-manager: mkluck
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/16/2023
 ms.technology: service-manager
 ms.topic: article

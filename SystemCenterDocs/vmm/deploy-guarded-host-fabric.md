@@ -2,9 +2,9 @@
 ms.assetid: a013a64d-946d-4847-97b0-7f3fcb4b3dbf
 title: Scenario-Deploy guarded hosts and shielded virtual machines in VMM
 description: Describes how to set up guarded hosts and provision shielded VMs in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
