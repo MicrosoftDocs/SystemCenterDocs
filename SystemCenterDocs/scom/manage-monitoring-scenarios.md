@@ -1,9 +1,9 @@
 ---
 title: Operations Manager Monitoring Scenarios
 description: This article provides a high level overview of the supported monitoring scenarios with System Center Operations Manager.
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 01/04/2018
 ms.custom: UpdateFrequency2
 ms.prod: system-center

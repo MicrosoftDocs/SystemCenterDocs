@@ -1,9 +1,9 @@
 ---
 title: Manage Operations console and Web console in Operations Manager
 description: Learn how to manage Operations Console and Web console in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 12/15/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center

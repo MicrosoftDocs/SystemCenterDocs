@@ -2,9 +2,9 @@
 ms.assetid: 18a1048f-b83c-4961-ba46-a931d48b0cf3
 title: Implementing User Roles
 description: This article provides an overview of how access to the operational data in the Operations Manager consoles works and how to configure a user role to assign permission.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/20/2023
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.prod: system-center

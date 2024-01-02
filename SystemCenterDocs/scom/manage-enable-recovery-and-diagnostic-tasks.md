@@ -2,9 +2,9 @@
 ms.assetid: 6f8cff68-8b1f-49ab-a094-a1d5c17b2482
 title: How to Enable Recovery and Diagnostic Tasks
 description: This article describes how to create tasks to diagnose issues and take remedial actions.
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/20/2019
 ms.custom: UpdateFrequency2
 ms.prod: system-center
