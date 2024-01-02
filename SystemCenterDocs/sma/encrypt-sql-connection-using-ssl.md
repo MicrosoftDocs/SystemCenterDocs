@@ -2,9 +2,9 @@
 ms.assetid: ba58d433-17ea-4ddc-af8d-42748ad2d349
 title: Encrypt SMA web service to SQL connection by using SSL
 description: This article provides information about how to encrypt SMA web service to SQL connection by using SSL.
-author:  jyothisuri
-ms.author: jsuri
-manager:  mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  09/04/2023
 ms.topic:  article
 ms.prod:  system-center
