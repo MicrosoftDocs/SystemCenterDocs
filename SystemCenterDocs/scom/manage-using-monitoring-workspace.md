@@ -1,9 +1,9 @@
 ---
 title: Using the Operations Manager Operations console
 description: This article describes how to use the Operations Manager Operations console to view operational data from monitored objects in the environment.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 02/13/2018
 ms.custom: UpdateFrequency2
 ms.prod: system-center

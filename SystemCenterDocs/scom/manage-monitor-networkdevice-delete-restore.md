@@ -1,9 +1,9 @@
 ---
 title: How to Delete or Restore a Network Device in Operations Manager
 description: This article describes how to delete or restore a network device monitored by Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: UpdateFrequency3
 ms.prod: system-center

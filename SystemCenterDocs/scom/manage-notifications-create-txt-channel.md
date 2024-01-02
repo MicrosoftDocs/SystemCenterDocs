@@ -1,9 +1,9 @@
 ---
 title: How to Enable a Text Message (SMS) Notification Channel
 description: This article describes how to create a text message notification channel in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: UpdateFrequency2
 ms.prod: system-center
