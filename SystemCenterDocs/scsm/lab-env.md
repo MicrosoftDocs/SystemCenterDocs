@@ -1,10 +1,10 @@
 ---
 title: Create a lab environment for upgrade
 description: To prepare for upgrade, create a lab environment and prepare it for production data.
-manager: mkluck
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/26/2023
 ms.technology: service-manager
 ms.topic: article

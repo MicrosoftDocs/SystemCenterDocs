@@ -1,11 +1,11 @@
 ---
 title: Work with management packs in the Authoring Tool
 description: Describes how to work with management packs in the Service Manager Authoring Tool.
-manager: mkluck
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/11/2022
 ms.reviewer: na
 ms.suite: na
