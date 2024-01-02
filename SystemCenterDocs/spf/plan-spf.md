@@ -1,9 +1,9 @@
 ---
 title: Plan SPF deployment
 description: This article provides an overview of how to plan for a Service Provider Foundation installation.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
 ms.prod: system-center

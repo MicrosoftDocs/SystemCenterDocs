@@ -1,9 +1,9 @@
 ---
 description: Provides an overview of how you can use different output stream in your runbooks.
-manager: cfreeman
 ms.topic: article
-author: bwren
-ms.author: bwren
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 09/04/2023
