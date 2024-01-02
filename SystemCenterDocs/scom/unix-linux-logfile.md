@@ -2,9 +2,9 @@
 ms.assetid: 7a8a492c-fede-4952-952a-6dec5b7be382
 title: UNIX or Linux log file in Operations Manager management pack
 description: This article provides an overview of UNIX or Linux log file
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center
