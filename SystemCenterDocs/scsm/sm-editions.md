@@ -1,10 +1,10 @@
 ---
 title: Service Manager editions
 description: Learn about Service Manager editions.
-manager: mkluck
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
 ms.technology: service-manager
 ms.topic: article

@@ -2,9 +2,9 @@
 ms.assetid: c2049a9d-fb5b-4d87-beae-529a244c97ce
 title: Service, User, and Security Accounts
 description: This article provides an overview of the security accounts required for initial setup of Operations Manager and for core features that may require a privileged account.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/28/2023
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center

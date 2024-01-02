@@ -1,10 +1,10 @@
 ---
 title: Use the service catalog
 description: You can use the Service Manager service catalog to offer your organization's services to end users.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 07/17/2023

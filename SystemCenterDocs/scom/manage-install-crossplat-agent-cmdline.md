@@ -1,9 +1,9 @@
 ---
 title: Install agent on UNIX and Linux computers from the command line
 description: Article to detail how to install the System Center Operations Manager agent manually on UNIX and Linux computers.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/20/2023
 ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.prod: system-center

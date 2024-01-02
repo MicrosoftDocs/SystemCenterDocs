@@ -2,9 +2,9 @@
 ms.assetid: 3b2683c5-6f10-437e-87cb-cb389356ea00
 title: OLE DB data source template in Operations Manager management pack
 description: This article provides an overview about OLE DB data source template
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center

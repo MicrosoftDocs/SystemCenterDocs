@@ -1,8 +1,8 @@
 ---
 title: Upgrade Operations Manager databases to SQL Server 2022
 description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2022.
-author: Farha-Bano
-ms.author: v-farhabano
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
 manager: jsuri
 ms.date: 01/13/2023
 ms.custom: na

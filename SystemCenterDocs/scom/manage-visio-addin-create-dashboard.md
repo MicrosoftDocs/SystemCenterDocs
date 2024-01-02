@@ -1,9 +1,9 @@
 ---
 title: Build a simple monitoring dashboard using the Visio Web Part
 description: This article provides a walk-through on how to create a basic monitoring dashboard in SharePoint linking to your Visio drawing.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.prod: system-center
