@@ -2,9 +2,9 @@
 ms.assetid: eded29a4-dfa5-4bb4-b9b3-6b55d51fbd4e
 title: Plan the VMM compute fabric
 description: This article provides planning steps for setting up and provisioning the VMM compute fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/30/2023
 ms.topic: article
 ms.prod: system-center
