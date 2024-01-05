@@ -30,7 +30,7 @@ To configure a monitoring pool using the Operations Manager console, perform the
 
 4. If the pool is empty, it mirrors the contents of the **All Management Servers** pool. The pool can contain either gateways or management servers, but not both at the same time.
 
-    ![Screenshot showing Configure pool membership.](./media/managed-instance-management-pack/selecting-servers.png)
+    ![Screenshot showing Configure pool membership.](./media/managed-instance-management-pack/resource-pool-selecting-servers.png)
 
 5. At the **Summary** step, check the settings and select **Save**.
 
