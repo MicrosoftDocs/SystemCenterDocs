@@ -26,7 +26,7 @@ To configure a monitoring pool using the Operations Manager console, perform the
 
 3. In the **Azure SQL MI Monitoring Pool** Properties window, open the **Pool Membership** tab and select **Add** to populate the monitoring pool.
 
-    ![Screenshot showing Added pool members.](./media/managed-instance-management-pack/resource-and-members.png)
+    ![Screenshot showing Added pool members.](./media/managed-instance-management-pack/resource-pool-and-members.png)
 
 4. If the pool is empty, it mirrors the contents of the **All Management Servers** pool. The pool can contain either gateways or management servers, but not both at the same time.
 
