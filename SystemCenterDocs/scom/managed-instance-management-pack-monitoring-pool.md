@@ -34,4 +34,4 @@ To configure a monitoring pool using the Operations Manager console, perform the
 
 5. At the **Summary** step, check the settings and select **Save**.
 
-    ![Screenshot showing the Review summary information.](./media/managed-instance-management-pack/summary-pool.png)
+    ![Screenshot showing the Review summary information.](./media/managed-instance-management-pack/summary-resource-pool.png)
