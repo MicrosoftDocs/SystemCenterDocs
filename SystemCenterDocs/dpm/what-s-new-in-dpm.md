@@ -420,7 +420,7 @@ The new method has the following advantages:
 
 - After the recovery point is mounted, file browsing during item level recovery is faster for recovery points with many files and folders.
 
-It is highly recommended that you update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](../azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
+It is highly recommended that you update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](https://learn.microsoft.com/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
 
 ::: moniker-end
 
