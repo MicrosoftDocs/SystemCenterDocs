@@ -403,9 +403,9 @@ To give permissions to the share
 
     This prepares the VMs on SOFS shares for the backup process.
 
-## New features in DPM 2016 UR 10 Hotfix
+## New features in DPM 2016 UR10 Hotfix
 
-DPM 2016 UR 10 Hotfix contains the enhancement below to improve backup times. For more information and the installation instructions, see the KB article.
+DPM 2016 UR10 Hotfix contains the enhancement below to improve backup times. For more information and the installation instructions, see the KB article.
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
 
