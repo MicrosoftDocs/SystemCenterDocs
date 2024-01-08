@@ -415,11 +415,11 @@ The new method has the following advantages:
 
 - Reduces backup time up to 15% since file catalog metadata (list of files in a recovery point) isn't generated during backup.
 
-- Item level recovery errors due to inconsistent file catalog metadata is avoided since iSCSI mounts are used.
+- Item level recovery errors due to inconsistent file catalog metadata is avoided, since iSCSI mounts are used.
 
 - After the recovery point is mounted, file browsing during item level recovery is faster for recovery points with many files and folders.
 
-It is highly recommended that you update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](https://learn.microsoft.com/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
+We recommended you to update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](https://learn.microsoft.com/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
 
 ::: moniker-end
 
