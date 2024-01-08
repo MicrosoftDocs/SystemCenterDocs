@@ -2,7 +2,7 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
 ms.prod: system-center
-ms.date: 12/04/2023
+ms.date: 01/08/2024
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -403,6 +403,24 @@ To give permissions to the share
 14. When you've finished adding permissions for the servers, select **Apply**.
 
     This prepares the VMs on SOFS shares for the backup process.
+
+## New features in DPM 2016 UR 10 Hotfix
+
+DPM 2016 UR 10 Hotfix contains the enhancement below to improve backup times. For more information and the installation instructions, see the KB article.
+
+### Removed File Catalog dependency for online backup of file/folder workloads
+
+This update rollup hotfix removes the dependency on File Catalog (list of files in a recovery point, maintained in the cloud), which was needed to restore individual files and folders from the Online recovery points. With this hotfix, DPM 2016 now uses a modern iSCSI mount method to provide individual file restoration.
+
+The new method has the following advantages:
+
+- Reduces backup time up to 15% since file catalog metadata (list of files in a recovery point) isn't generated during backup.
+
+- Item level recovery errors due to inconsistent file catalog metadata is avoided since iSCSI mounts are used.
+
+- After the recovery point is mounted, file browsing during item level recovery is faster for recovery points with many files and folders.
+
+It is highly recommended that you update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](../azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
 
 ::: moniker-end
 
