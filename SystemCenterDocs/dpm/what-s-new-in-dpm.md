@@ -405,7 +405,7 @@ To give permissions to the share
 
 ## New features in DPM 2016 UR10 Hotfix
 
-DPM 2016 UR10 Hotfix contains the enhancement below to improve backup times. For more information and the installation instructions, see the KB article.
+DPM 2016 UR10 Hotfix contains the enhancement below to improve backup times. For more information and the installation instructions, see the [KB article](https://support.microsoft.com/help/5031798).
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
 
