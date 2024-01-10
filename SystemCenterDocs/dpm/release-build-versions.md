@@ -4,7 +4,7 @@ description: This article provides the list of release builds for System Center 
 ms.topic: article
 ms.prod: system-center
 keywords:
-ms.date: 12/04/2023
+ms.date: 01/08/2024
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 author: PriskeyJeronika-MS
@@ -89,6 +89,7 @@ The following table lists the build versions for Data Protection Manager 2016.
 | 5.0.457.0   | [4511102](https://support.microsoft.com/en-us/help/4511102/update-rollup-8-for-system-center-2016-data-protection-manager) | Update Rollup 8 for System Center 2016 Data Protection Manager  |
 | 5.0.525.0   | [4534063](https://support.microsoft.com/en-us/help/4534063/update-rollup-9-for-system-center-2016-data-protection-manager) | Update Rollup 9 for System Center 2016 Data Protection Manager  |
 | 5.0.622.0   | [4578608](https://support.microsoft.com/help/4578608/update-rollup-10-for-system-center-2016-data-protection-manager) | Update Rollup 10 for System Center 2016 Data Protection Manager  |
+| 5.0.661.0 | [5031798](https://support.microsoft.com/help/5031798) | Update Rollup 10 Hotfix for System Center 2016 Data Protection Manager |
 
 ::: moniker-end
 
