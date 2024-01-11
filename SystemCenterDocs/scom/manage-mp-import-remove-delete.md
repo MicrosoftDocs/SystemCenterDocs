@@ -171,9 +171,8 @@ You should always review the management pack guide before you import a managemen
 
 Exporting a management pack allows customizations to a sealed management pack to be saved to a writeable management pack. Because sealed management packs can't be changed, the modifications made to a management pack are saved to a separate, unsealed management pack file. The unsealed management pack can then be imported into a different management group or the same management group depending on the situation. This unsealed management pack is dependent on the original sealed management pack and can be imported only to management groups that have the original sealed management pack.  
 
-> [!NOTE]  
-> Using the Operations Console, you can only export unsealed management packs. To export a sealed management pack, you must use the Export-SCOMManagementPack cmdlet. For more information, see [Operations Manager Cmdlet Reference](/previous-versions/system-center/powershell/system-center-2012-r2/hh545244(v=sc.20)).  
-
+> [!NOTE]
+> Using the Operations Console, you can only export unsealed management packs. To export a sealed management pack, you must use the Export-SCManagementPack cmdlet. For more information, see [Operations Manager Cmdlet Reference](/powershell/module/operationsmanager/export-scmanagementpack?view=systemcenter-ps-2022).  
 ### To export an unsealed management pack   
 
 1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators role.  
