@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/05/2024
+ms.date: 01/12/2024
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -38,6 +38,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## IBM AIX 7.1
 
+>[!NOTE]
+>OpenSSH 9.2 or later isn't supported.
+
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|
 |OS version|Version of operating system|7100-01-06-1241|
@@ -46,6 +49,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 
 ## IBM AIX 7.2
+
+>[!NOTE]
+>OpenSSH 9.2 or later isn't supported.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -298,7 +304,22 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
+
+## IBM AIX 7 (Power)  
+
+>[!NOTE]
+>OpenSSH 9.2 or later isn't supported.
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|OS version|Version of operating system|7100-01-06-1241|  
+|xlC.rte|XL C/C++ Runtime|11.1.0.2|  
+|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
+
+::: moniker-end
+
+::: moniker range="sc-om-1807"
 
 ## IBM AIX 7 (Power)  
 
@@ -307,6 +328,22 @@ The following tables describe the required UNIX and Linux operating systems and 
 |OS version|Version of operating system|7100-01-06-1241|  
 |xlC.rte|XL C/C++ Runtime|11.1.0.2|  
 |OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
+
+::: moniker-end
+
+::: moniker range="sc-om-1801"
+
+## IBM AIX 7 (Power)  
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|OS version|Version of operating system|7100-01-06-1241|  
+|xlC.rte|XL C/C++ Runtime|11.1.0.2|  
+|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
 
 ## HP-UX 11i v3 IA64  
 
