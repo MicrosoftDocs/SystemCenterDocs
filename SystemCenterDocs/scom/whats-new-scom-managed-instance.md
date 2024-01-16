@@ -5,7 +5,7 @@ description: This article provides details of what's new in each version of Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/13/2023
+ms.date: 01/16/2024
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -16,6 +16,10 @@ monikerRange: '>=sc-om-2019'
 # What’s new in Azure Monitor SCOM Managed Instance 
 
 This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
+
+## Version 1.0.96
+
+- Pre-patch validation bug fix for machines that have unresolved accounts in the admin group.
 
 ## Version 1.0.95
 
