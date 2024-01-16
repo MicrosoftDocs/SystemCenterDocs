@@ -5,10 +5,10 @@ description: This article explains how to configure automatic monitoring templat
 author: epomortseva
 ms.author: v-ekaterinap
 manager: vvithal
-ms.date: 12/28/2023
+ms.date: 1/16/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Automatic Monitoring Template
@@ -62,7 +62,10 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
     ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.jpg)
 
-    Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed. Select **Next**.
+    Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
+
+    > [!TIP]
+    > This information is available only once. Ensure to save this information to a secure location for reuse.
 
     ![Screenshot showing the SPN status.](./media/managed-instance-management-pack/auto-create-spn-status.png)
 
