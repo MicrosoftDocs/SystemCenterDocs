@@ -5,10 +5,10 @@ description: This article explains monitoring modes in Management Pack for SQL S
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/26/2023
+ms.date: 1/17/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Monitoring Modes
@@ -155,7 +155,8 @@ To view currently used monitoring types, perform the following steps:
 
 2. In the **Columns to display** list, select the **Monitoring Type** checkbox.
 
-    ![Screenshot showing Monitoring type](./media/sql-server-management-pack/monitoring-type-view.png)
+    ![Screenshot showing Monitoring type personalization.](./media/sql-server-management-pack/monitoring-type-personalize-view.png)
+
 
     After enabling the **Monitoring Type** checkbox, used monitoring types become available in the **Database Engines** table.
 

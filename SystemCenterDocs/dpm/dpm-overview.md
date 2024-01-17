@@ -3,14 +3,14 @@ description: DPM overview article that explains the workloads and types of data 
 ms.topic: article
 ms.prod: system-center
 keywords:
-ms.date: 01/09/2023
+ms.date: 01/17/2024
 title: Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Data Protection Manager
