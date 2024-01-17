@@ -5,9 +5,9 @@ ms.date: 03/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Integration pack for System Center - DPM

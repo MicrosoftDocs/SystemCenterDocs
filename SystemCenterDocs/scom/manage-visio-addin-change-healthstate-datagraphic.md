@@ -1,10 +1,10 @@
 ---
 title: Change the Way Health State is Represented in Visio
 description: This article describes how to reconfigure the data graphics in Visio for health states.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 12/13/2016
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/28/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager

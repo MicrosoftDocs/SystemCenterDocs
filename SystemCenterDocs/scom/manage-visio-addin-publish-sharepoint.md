@@ -1,10 +1,10 @@
 ---
 title: Publish a Visio diagram to SharePoint Server
 description: This article describes how to publish a Visio diagram created with the add-in to your SharePoint document library.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 02/16/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager

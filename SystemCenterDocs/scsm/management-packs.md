@@ -1,13 +1,13 @@
 ---
 title: Use management packs
 description: You use management packs to add functionality to Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 12/15/2023
 ms.technology: service-manager
 ms.assetid: 3c42925f-74f3-4c18-934e-8d1cd2edaa3b
 ms.custom: UpdateFrequency3

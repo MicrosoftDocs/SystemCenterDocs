@@ -1,7 +1,7 @@
 ---
 title: Orchestrator logs
 description: Provides information about common troubleshooting issues using log files.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagment-fy24
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -9,10 +9,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c06b17d-fd0d-4a98-8013-f5e5954606ed
-ms.author: jsuri
-ms.date: 10/12/2016
-author: jyothisuri
-manager: mkluck
+ms.date: 11/09/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Orchestrator logs
 

@@ -1,28 +1,28 @@
 ---
 ms.assetid: 
-title: Verify Azure and internal GPO policies for Azure Monitor SCOM Managed Instance (preview)
+title: Verify Azure and internal GPO policies for Azure Monitor SCOM Managed Instance
 description: This article describes how to verify Azure and internal GPO policies.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/25/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
-# Verify Azure and internal GPO policies for Azure Monitor SCOM Managed Instance (preview)
+# Verify Azure and internal GPO policies for Azure Monitor SCOM Managed Instance
 
 This article describes how to verify Azure and internal Group Policy Object (GPO) policies.
 
 > [!NOTE]
-> To learn about the Azure Monitor SCOM Managed Instance (preview) architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+> To learn about the Azure Monitor SCOM Managed Instance architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
 ## Verify Azure policies
 
-If any Azure policies are aimed at constraining the creation of managed resource groups, virtual machine scale sets, load balancers, managed identities, and metric alerts, make an exception for the subscription that's associated with the instance of Azure Monitor SCOM Managed Instance (preview). This exception is necessary because the SCOM managed instance creates all these resources within the managed resource group.
+If any Azure policies are aimed at constraining the creation of managed resource groups, virtual machine scale sets, load balancers, managed identities, and metric alerts, make an exception for the subscription that's associated with the instance of Azure Monitor SCOM Managed Instance. This exception is necessary because the SCOM managed instance creates all these resources within the managed resource group.
 
 Follow these steps to view the policies that are applied on a subscription:
 
@@ -48,5 +48,3 @@ The following policies could potentially influence the local administrator group
 ## Next steps
 
 - [SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md)
-
-To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

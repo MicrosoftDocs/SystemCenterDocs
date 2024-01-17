@@ -6,9 +6,9 @@ ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.assetid: 488bb198-73fc-4983-b0ef-14a8c7176f9c
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ms.custom: UpdateFrequency3, engagement-fy23
 ---

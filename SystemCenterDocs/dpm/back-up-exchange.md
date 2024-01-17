@@ -1,9 +1,9 @@
 ---
 description: Back up Exchange mailbox databases with DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 07/12/2023

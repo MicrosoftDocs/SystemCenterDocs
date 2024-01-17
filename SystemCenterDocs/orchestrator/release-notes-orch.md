@@ -2,10 +2,10 @@
 ms.assetid: efe53e20-a7f4-4150-8d05-29819914066d
 title: Release notes for Orchestrator
 description: This article details the known issues and issues fixed in Orchestrator
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/20/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/29/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator

@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 7/5/2023
+ms.date: 1/08/2024
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,6 +15,24 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
+## December 2023 - 7.3.0.0 CTP
+
+### What's new
+
+- Added support for custom management server resource pools for agentless and mixed monitoring modes
+- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor for SQL Server on Linux, which targets DB Engine and checks if the server’s TLS certificate is valid
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - improved keyboard navigation
+  - improved color contrast in dashboards for better legibility
+  - reworked high contrast theme for dashboards
+  - added support of screen-reading software
+- Updated display strings
+
+### Bug fixes
+
+- Fixed the issue of Summary Dashboard view not working in the System Center Operations Manager Console when operational and data warehouse databases are hosted on SQL Server version 2022
+
 ## July 2023 - 7.2.0.0 RTM
 
 ### What's new
@@ -22,11 +40,11 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the [custom monitoring](sql-server-management-pack-custom-monitor.md), which allows the creation of monitors and performance rules, now it's on the separate package installer
 - Added a query execution and time synchronization schedule filtering mode for the custom monitoring
 - Added the 'Number of samples' override to the "Availability Group Automatic Failover", "Availability Group Online", "Availability Replicas Data Synchronization", "Availability Replicas Role", "Availability Replicas Connection", and "Synchronous Replicas Data Synchronization" unit monitors to help avoid alert storming
-- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor, which targets the DB Engine and is capable to check the TLS certificate validation period in days and the certificate requirements for the SQL Server
+- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor, which targets the DB Engine and is capable to check the TLS certificate validation period in days and the certificate requirements for the SQL Server on Windows
 - Added new ["TDE Certificate Backup Status"](sql-server-management-pack-monitoring-configuration.md#transparent-data-encryption-tde-certificate-backup-status-monitoring) monitor, which targets the Database and is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up
 - Added new [Operations Manager console task](sql-server-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
 - Extended the ["Long Running Queries"](sql-server-management-pack-monitoring-configuration.md#long-running-queries-monitoring) alerting rule by adding the Application, Database, and Query exclude list overrides, which are capable to exclude queries by the application name, database name, or the custom query text from the rule alerting
-- Improved the diagnostic tracing in the System Center Operations Manager toolset
+- Improved the [diagnostic tracing](/troubleshoot/system-center/scom/use-diagnostic-tracing) in the System Center Operations Manager toolset
 - Improved the ["Database Files Space Usage Forecast"](sql-server-management-pack-sql-server-reporting.md) report by adding the number of days for the forecast summary
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Updated display strings
@@ -75,7 +93,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
 - Added support for the SQL Server 2022 public preview
 - Added support for enabling debug logging in Windows Event Log
-- Added support for enabling diagnostic tracing in the System Center Operations Manager toolset
+- Added support for enabling [diagnostic tracing](/troubleshoot/system-center/scom/use-diagnostic-tracing) in the System Center Operations Manager toolset
 - The SQL Server Evaluation edition can now be added to the exclude list of the "Local DB Engine" discovery
 - Monitoring workflows have been optimized for better performance
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server

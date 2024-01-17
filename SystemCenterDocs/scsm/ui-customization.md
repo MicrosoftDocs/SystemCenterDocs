@@ -1,13 +1,13 @@
 ---
 title: User interface customization in Service Manager
 description: Explains to customize how items are displayed in Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 12/15/2023
 ms.technology: service-manager
 ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
 ms.custom: UpdateFrequency3

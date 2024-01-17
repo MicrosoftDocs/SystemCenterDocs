@@ -1,9 +1,9 @@
 ---
 title: Comparing the Operations and Web Console
 description: This article describes both of the Operations Manager consoles and the differences between them for viewing monitoring data and performing administration in the management group.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 02/06/2018
 ms.custom: UpdateFrequency2
 ms.prod: system-center

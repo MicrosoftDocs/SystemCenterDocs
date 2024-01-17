@@ -1,9 +1,9 @@
 ---
 title: Network Devices Supported for Discovery by Operations Manager
 description: This article provides information on how to monitor physical network routers and switches including the interfaces and ports.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center

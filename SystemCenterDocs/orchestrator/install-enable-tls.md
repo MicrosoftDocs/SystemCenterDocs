@@ -2,9 +2,9 @@
 ms.assetid: 958fdc2f-73b1-4648-94d0-b9c45b51b719
 title: Set up TLS for Orchestrator
 description: This article provides instructions for setting up TLS with Orchestrator
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/05/2019
 ms.topic: article
 ms.prod: system-center

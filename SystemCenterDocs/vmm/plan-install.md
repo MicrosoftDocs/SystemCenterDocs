@@ -2,10 +2,10 @@
 ms.assetid: b6c7614a-e5af-42ae-b88d-9810b42a35f6
 title: Plan VMM installation
 description: This article provides planning information for setting up VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/09/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -135,12 +135,23 @@ When you install VMM with this user account, SPN will be registered.
 
 ## Account and domain requirements
 
+::: moniker range=">sc-vmm-2016"
 When you install VMM, you must configure the VMM service to use any one of the following accounts:
 
 - The Local System account (can't be used for a highly available VMM deployment) or
 - A domain user account or 
 - A Group Managed Service Account (gMSA)
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2016"
+
+When you install VMM, you must configure the VMM service to use any one of the following accounts:
+
+- The Local System account (can't be used for a highly available VMM deployment) or
+- A domain user account
+
+::: moniker-end
 Ensure the following before you prepare an account:
 
 ::: moniker range=">=sc-vmm-2019"

@@ -1,9 +1,9 @@
 ---
 title: Monitoring Service Level Objectives by Using Operations Manager
 description: This article describes how to create a service level objective in the Operations Manager console to measure service availability.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.prod: system-center

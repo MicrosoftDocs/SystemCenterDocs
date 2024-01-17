@@ -5,7 +5,7 @@ description: This article explains Reporting Services Run As Profiles
 author: Anastas1ya
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 5/31/2021
+ms.date: 12/8/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -32,9 +32,11 @@ After importing Management Pack for SQL Server Reporting Services, the following
 
     - Workflow Type: **Monitor**
         - Configuration conflict with SQL Server
+        - Securables configuration status
         - CPU utilization (%)
         - Database accessible
         - Instance configuration state
+        - Product version compliance
         - Memory consumed by others
         - Memory consumed by SSRS Instance
         - Misconfigured data sources
@@ -68,8 +70,8 @@ By default, all discoveries, monitors, and rules defined in the management pack 
 
 If the default action account for the given system doesn't have the necessary permissions to discover and monitor instances of SQL Server Analysis Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
 
->[!NOTE]
->It's not recommended to use the Local System account or HealthService SSID because it's a special case to monitor SSRS. Some workflows run on the server hosting an SSRS instance and try to reach the SSRS Database usually installed on another server. You'll need to provide computer accounts of all the servers hosting SSRS instances with the required permissions to access the SSRS Database. A domain account is a more preferable option.
+> [!NOTE]
+> It's not recommended to use the Local System account or HealthService SSID because it's a special case to monitor SSRS. Some workflows run on the server hosting an SSRS instance and try to reach the SSRS Database usually installed on another server. You'll need to provide computer accounts of all the servers hosting SSRS instances with the required permissions to access the SSRS Database. A domain account is a more preferable option.
 
 ## Configuring Run As Profiles
 
@@ -94,5 +96,5 @@ To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create thr
 |SQL Server AS Monitoring|**[Class]** SSAS Seed <br/> **[Class]** SSAS Instance|
 |SQL Server RS Monitoring|**[Class]** SSRS Deployment Seed <br/> **[Class]** Microsoft SQL Server Reporting Services Instance Seed <br/> **[Class]** Microsoft SQL Server Reporting Services (Native Mode) <br/> **[Class]** SSRS Deployment|
 
->[!NOTE]
->For the SQL Server DB account, use either **SQL Server DB Monitoring Opt. # 1** or **SQL Server DB Monitoring Opt. # 2**.
+> [!NOTE]
+> For the SQL Server DB account, use either **SQL Server DB Monitoring Opt. # 1** or **SQL Server DB Monitoring Opt. # 2**.

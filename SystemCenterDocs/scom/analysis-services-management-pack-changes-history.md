@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 7/5/2023
+ms.date: 12/29/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,33 @@ ms.technology: operations-manager
 # Features and enhancements in Management Pack for SQL Server Analysis Services
 
 This article covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
+
+## December 2023 - 7.3.0.0 CTP
+
+### What's new
+
+- Added new "MDX Number of calculation covers" performance collection rule which collects total number of evaluation nodes built by MDX execution plans, including active and cached
+- Added new "MDX total cells calculated" performance collection rule which collects the total number of cell properties
+- Added new "MDX Total NON EMPTY for calculated members" performance collection rule which collects total number of times a NON EMPTY algorithm looped over calculated members
+- Added new "MDX Total NON EMPTY unoptimized" performance collection rule which collects total number of times an unoptimized NON EMPTY algorithm was used
+- Added new "MDX Total Recomputes" performance collection rule which collects collects total number of cells recomputed due to error
+- Added new "MDX Total Sonar subcubes" performance collection rule which collects total number of subcubes that the query optimizer generated
+- Added new "Processing Aggreagations Rows created/sec" performance collection rule which collects rate of aggregation rows created during processing of aggregations in MOLAP data files
+- Added new "Indexes Processing Rows/sec" performance collection rule which collects the number of rows per second being read from MOLAP stores to create indexes during a processing workload
+- Added new "Processing Rows written/sec" performance collection rule which collects rate of rows written during processing of data
+- Improved the memory-related instance monitoring workflows by adding new properties and removing deprecated ones
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server Analysis Services
+- Added support for enabling [diagnostic tracing](/troubleshoot/system-center/scom/use-diagnostic-tracing) in the System Center Operations Manager toolset
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - improved keyboard navigation
+  - improved color contrast in dashboards for better legibility
+  - reworked high contrast theme for dashboards
+  - added support of screen-reading software
+- Updated display strings
+
+### Bug fixes
+
+- Fixed an issue with the failing "Vertipaq memory consumed by SSAS Instance" monitor in some configuration cases
 
 ## July 2023 - 7.2.0.0 RTM
 

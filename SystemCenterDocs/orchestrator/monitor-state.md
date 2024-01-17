@@ -1,8 +1,8 @@
 ---
 title: Monitor State
 description: The Monitor State activity monitors the state of an Operations Manager object that you specify.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 11/09/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 47d10330-5980-44f7-a11c-23cc04636ddc
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Monitor State
@@ -58,4 +58,4 @@ The following tables list the properties and published data for this activity. T
 | Path   | The path to the Operations Manager monitoring object   |
 | Server   | The name of the Operations Manager server   |
 | StateLastModified   | The date and time that the Operations Manager monitoring object state was last changed   |
-| Username   | The user name that was used to access the Operations Manager server   |
+| Username   | The username that was used to access the Operations Manager server   |

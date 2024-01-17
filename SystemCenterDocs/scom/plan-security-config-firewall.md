@@ -2,9 +2,9 @@
 ms.assetid: 045b2f66-b672-4cd2-9d83-9d067b83fdaf
 title: Configuring a Firewall for Operations Manager
 description: This article provides design guidance for which ports and protocols need to be allowed for Operations Manager to communicate through network firewalls and proxy servers.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 11/24/2020
 ms.custom: na
 ms.prod: system-center

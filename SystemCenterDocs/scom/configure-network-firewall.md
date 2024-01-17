@@ -1,24 +1,24 @@
 ---
 ms.assetid: 
-title: Configure the network firewall for Azure Monitor SCOM Managed Instance (preview)
+title: Configure the network firewall for Azure Monitor SCOM Managed Instance
 description: This article describes how to configure the network firewall.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/21/2023
+ms.date: 12/07/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
-# Configure the network firewall for Azure Monitor SCOM Managed Instance (preview)
+# Configure the network firewall for Azure Monitor SCOM Managed Instance
 
 This article describes how to configure the network firewall and Azure network security group (NSG) rules.
 
 > [!NOTE]
-> To learn about the Azure Monitor SCOM Managed Instance (preview) architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+> To learn about the Azure Monitor SCOM Managed Instance architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
 ## Network prerequisites
 
@@ -26,14 +26,14 @@ This section discusses network prerequisites with three network model examples.
 
 ### Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network of your desired domain controller and the Azure subnet (virtual network) where you want to deploy an instance of SCOM Managed Instance (preview). Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet in which the SCOM managed instance is deployed.
+Ensure that there's direct network connectivity (line of sight) between the network of your desired domain controller and the Azure subnet (virtual network) where you want to deploy an instance of SCOM Managed Instance. Ensure that there's direct network connectivity (line of sight) between the workloads/agents and the Azure subnet in which the SCOM managed instance is deployed.
 
 Direct connectivity is required so that all your following resources can communicate with each other over the network:
 
 - Domain controller
 - Agents
 - System Center Operations Manager components, such as the Operations console
-- SCOM Managed Instance (preview) components, such as management servers
+- SCOM Managed Instance components, such as management servers
 
 The following three distinct network models are visually represented to create the SCOM managed instance.
 
@@ -67,7 +67,7 @@ If the domain controller you want and all other components are in different virt
 
 Take care of the following issues for all three networking models mentioned earlier:
 
-1. Ensure that the SCOM Managed Instance subnet can establish connectivity to the designated domain controller configured for Azure or SCOM Managed Instance (preview). Also, ensure that domain name resolution within the SCOM Managed Instance subnet lists the designated domain controller as the top entry among the resolved domain controllers to avoid network latency or performance and firewall issues.
+1. Ensure that the SCOM Managed Instance subnet can establish connectivity to the designated domain controller configured for Azure or SCOM Managed Instance. Also, ensure that domain name resolution within the SCOM Managed Instance subnet lists the designated domain controller as the top entry among the resolved domain controllers to avoid network latency or performance and firewall issues.
 
 1. The following ports on the designated domain controller and Domain Name System (DNS) must be accessible from the SCOM Managed Instance subnet:
      - TCP port 389 or 636 for LDAP
@@ -78,17 +78,28 @@ Take care of the following issues for all three networking models mentioned earl
      - TCP 445 for SMB
      - TCP 135 for RPC
 
-       The internal firewall rules and NSG must allow communication from the SCOM Managed Instance (preview) virtual network and the designated domain controller/DNS for all the ports listed earlier.
+       The internal firewall rules and NSG must allow communication from the SCOM Managed Instance virtual network and the designated domain controller/DNS for all the ports listed earlier.
 
 1. The Azure SQL Managed Instance virtual network and SCOM managed instance must be peered to establish connectivity. Specifically, the port 1433 (private port) or 3342 (public port) must be reachable from the SCOM managed instance to the SQL managed instance. Configure the NSG rules and firewall rules on both virtual networks to allow ports 1433 and 3342.
 
-1. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the machine being monitored, and vice versa.
+1. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance and the machine being monitored, and vice versa.
 
       - If the machine is on-premises, set up the NSG rules and firewall rules on the SCOM Managed Instance subnet and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from the monitored machine to the SCOM Managed Instance subnet.
       
       - If the machine is in Azure, set up the NSG rules and firewall rules on the SCOM Managed Instance virtual network and on the virtual network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from the monitored machine to the SCOM Managed Instance subnet.
 
-1. Enable NAT Gateway on the SCOM Managed Instance subnet to download the System Center Operations Manager installer from the Azure Storage account and install.
+## Firewall requirements
+
+To function properly, SCOM Managed Instance must have access to the following port number and URLs. Configure the NSG and firewall rules to allow this communication.  
+
+|Resource|Port|Direction|Service Tags|Purpose|
+|---|---|---|---|---|
+|*.blob.core.windows.net|443|Outbound|Storage|Azure Storage|
+|management.azure.com|443|Outbound|AzureResourceManager|Azure Resource Manager|
+|gcs.prod.monitoring.core.windows.net <br/> *.prod.warm.ingest.monitor.core.windows.net|443|Outbound|AzureMonitor|SCOM MI Logs|
+|*.prod.microsoftmetrics.com <br/> *.prod.hot.ingest.monitor.core.windows.net <br/> *.prod.hot.ingestion.msftcloudes.com|443|Outbound|AzureMonitor|SCOM MI Metrics|
+|*.workloadnexus.azure.com|443|Outbound| |Nexus Service|
+|*.azuremonitor-scommiconnect.azure.com|443|Outbound| |Bridge Service|
 
 > [!IMPORTANT]
 > To minimize the need for extensive communication with both your Active Directory admin and the network admin, see [Self-verification](scom-managed-instance-self-verification-of-steps.md). The article outlines the procedures that the Active Directory admin and the network admin use to validate their configuration changes and ensure their successful implementation. This process reduces unnecessary back-and-forth interactions from the Operations Manager admin to the Active Directory admin and the network admin. This configuration saves time for the admins.
@@ -96,5 +107,3 @@ Take care of the following issues for all three networking models mentioned earl
 ## Next steps
 
 - [Verify Azure and internal GPO policies](verify-azure-and-internal-gpo-policies.md)
-
-To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

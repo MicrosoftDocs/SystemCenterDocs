@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 06/13/2023
+ms.date: 12/15/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -384,9 +384,6 @@ Management Pack for SQL Server is capable of performing availability and perform
   
   Any name belonging to any of the classes above should be from 1 to 128 characters, excluding delimiter characters.
 
-  > [!NOTE]
-  > This monitor is disabled by default. Use overrides to enable it when necessary.
-
 - Job Duration monitor
 
   This monitor checks all jobs on the SQL Agent and if any of the jobs takes longer than the specified threshold. A Warning or Error alert will appear if a job duration is longer than the configured thresholds - **Warning Threshold (minutes)** and **Critical Threshold (minutes)**. This doesn't generate an alert because there's an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled, or use the **Job Duration alert rule**.
@@ -394,14 +391,10 @@ Management Pack for SQL Server is capable of performing availability and perform
 - Job Duration alert rule
 
   This rule checks whether the execution time of any of your SQL Agent jobs has exceeded the specified threshold in minutes and throws an alert if the execution time has breached the threshold.
-  > [!NOTE]
-  > This rule is disabled by default. Use overrides to enable it when necessary.
 
 - Job Duration performance rule
 
   This rule collects the duration in minutes of any of your SQL Agent jobs.
-  > [!NOTE]
-  > This rule is disabled by default. Use overrides to enable it when necessary.
 
 ## SQL Server connection encryption certificate monitoring
 
@@ -409,17 +402,17 @@ Management Pack for SQL Server provides the monitor which is capable of performi
 
 SQL Server can use TLS to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. TLS uses a certificate to implement encryption. Enabling TLS encryption increases the security of data transmitted across networks between instances of SQL Server and applications. For more information, see [Certificate overview](/sql/database-engine/configure-windows/certificate-overview) and [Certificate procedures](/sql/database-engine/configure-windows/certificate-procedures) articles.
 
-This monitor targets the DB Engine and checks the certificate validation period in days and the [certificate requirements](/sql/database-engine/configure-windows/certificate-requirements).
+This monitor targets the SQL Server DB Engine on Windows and Linux and checks the certificate validation period in days and the [certificate requirements](/sql/database-engine/configure-windows/certificate-requirements).
 
 > [!IMPORTANT]
-> SQL Server will not start if a certificate exists in the computer store, but only meets some requirements in the above list and if it is manually configured for use by SQL Server Configuration Manager or through registry entries. Select another certificate that meets all the requirements or remove the certificate from being used by SQL Server till you are able to provision one that meets requirements. For more information, see [Configure SQL Server for encryption](/sql/database-engine/configure-windows/configure-sql-server-encryption) article.
+> SQL Server will not start if a certificate exists in the computer store, but only meets some requirements in the above list and if it is manually configured for use by SQL Server Configuration Manager or through registry entries (for SQL Server on Windows only). Select another certificate that meets all the requirements or remove the certificate from being used by SQL Server till you are able to provision one that meets requirements. For more information, see [Configure SQL Server for encryption](/sql/database-engine/configure-windows/configure-sql-server-encryption) article.
 
 The following table defines the monitor override parameters and fine-tunes the certificate validation requirements for SQL Server:
 
 |Override name|Description|  
 |----------|----------|
 |Additional host names to check|By default, the monitor checks that the certificate contains the target DB Engine's Principal name. This override allows checking with a comma-separated list of additional host names like Always On listener DNS name, DNS alias of the hosting machine, FCI virtual name, etc.
-|Certificate must be configured|If true, the monitor changes its state to a Critical when a DB Engine has no explicitly configured certificate.|
+|Certificate must be configured (for SQL Server on Windows only)|If true, the monitor changes its state to a Critical when a DB Engine has no explicitly configured certificate.|
 |Ignore 'Untrusted Root' check|If true, the monitor will ignore that the certificate is not placed in the Trusted Root Certification Authorities. If placed, these certificates are trusted by the operating system and can be used by applications as a reference for which public key infrastructure (PKI) hierarchies and digital certificates are trustworthy.
 |Set flag 'IgnoreCertificateAuthorityRevocationUnknown'|Ignore that the certificate authority revocation is unknown when determining certificate verification.
 |Set flag 'IgnoreCtlNotTimeValid'|Ignore that the certificate trust list (CTL) is not valid, for reasons such as the CTL has expired, when determining certificate verification.
@@ -435,9 +428,6 @@ The following table defines the monitor override parameters and fine-tunes the c
 |Skip 'Key Usage Server Authentication' check|If true, the monitor will skip the server's authentication certificate requirement of the presence of the key's usage extension 'Server Authentication'. Some connection driver implementations may not check the existence of this extension and they may consider the certificate valid even without the extension.
 |Skip 'Revocation' check|If true, the monitor will ignore all issues related to revocation.
 
-  > [!NOTE]
-  > This monitor is disabled by default. Use overrides to enable it when necessary.
-
 ## Transparent data encryption (TDE) certificate backup status monitoring
 
 Management Pack for SQL Server provides the monitor which is capable to check that the certificate used for encrypting the database encryption key hasn't been backed up.
@@ -445,7 +435,7 @@ Management Pack for SQL Server provides the monitor which is capable to check th
 Transparent data encryption (TDE) encrypts the storage of an entire database by using a symmetric key called the database encryption key. The database encryption key can also be protected using a certificate, which is protected by the database master key of the master database. TDE does real-time I/O encryption and decryption of data and log files. The encryption uses a database encryption key (DEK). The database boot record stores the key for availability during recovery. The DEK is a symmetric key and secured by a certificate that the server's master database stores or by an asymmetric key that an EKM module protects. TDE protects data at rest, which is the data and log files. It lets you follow many laws, regulations, and guidelines established in various industries. This ability lets software developers encrypt data by using AES and 3DES encryption algorithms without changing existing applications. For more information, see [SQL Server security best practices](/sql/relational-databases/security/sql-server-security-best-practices), and [Transparent data encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption) articles.
 
 > [!NOTE]
-> TDE is not available for system databases. It can't be used to encrypt **master**, **model**, or **msdb**. **tempdb** is automatically encrypted when a user database enabled TDE, but can't be encrypted directly. This monitor is disabled by default. Use overrides to enable it when necessary.
+> TDE is not available for system databases. It can't be used to encrypt **master**, **model**, or **msdb**. **tempdb** is automatically encrypted when a user database enabled TDE, but can't be encrypted directly.
 
 ## Long running queries monitoring
 

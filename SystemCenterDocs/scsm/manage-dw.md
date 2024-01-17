@@ -1,14 +1,14 @@
 ---
 title: Manage the data warehouse
 description: Describes how to manage the Service Manager data warehouse.
-manager: mkluck
 ms.custom: na, UpdateFrequency3
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 05/12/2022

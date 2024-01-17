@@ -2,9 +2,9 @@
 ms.assetid: 4ffb6a72-8447-4fb7-97da-c374221d2b0d
 title: Deploy and manage Storage Spaces Direct in VMM
 description: This article describes how to set up and manage Storage Spaces Direct in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/10/2022
 ms.topic: article
 ms.prod: system-center

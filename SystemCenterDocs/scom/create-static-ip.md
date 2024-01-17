@@ -1,30 +1,30 @@
 ---
 ms.assetid: 
-title: Create a static IP for Azure Monitor SCOM Managed Instance (preview)
+title: Create a static IP for Azure Monitor SCOM Managed Instance
 description: This article describes how to create a static IP for load balancer in a dedicated subnet of SCOM Managed Instance.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/05/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create a static IP for Azure Monitor SCOM Managed Instance (preview)
+# Create a static IP for Azure Monitor SCOM Managed Instance
 
-This article describes how to create a static IP for a load balancer in a dedicated subnet of Azure Monitor SCOM Managed Instance (preview). Additionally, insert an entry into the Domain Name System (DNS) server, and ensure that the DNS name resolves to the DNS name (`DNSHostName`) of the group managed service account (gMSA). Get the DNS host name of the gMSA account from [step 6](create-gmsa-account.md).
+This article describes how to create a static IP for a load balancer in a dedicated subnet of Azure Monitor SCOM Managed Instance. Additionally, insert an entry into the Domain Name System (DNS) server, and ensure that the DNS name resolves to the DNS name (`DNSHostName`) of the group managed service account (gMSA). Get the DNS host name of the gMSA account from [step 6](create-gmsa-account.md).
 
 >[!NOTE]
-> To learn about the SCOM Managed Instance (preview) architecture, see [Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md).
+> To learn about the SCOM Managed Instance architecture, see [Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md).
 
 ## Create a static IP and configure the DNS name
 
-For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance (preview) service creates, you need a static IP and DNS name for the load balancer's front-end configuration.
+For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance service creates, you need a static IP and DNS name for the load balancer's front-end configuration.
 
-Ensure that the static IP is in the subnet that you created for SCOM Managed Instance (preview). Create a DNS name (according to your organization's policy) for the static IP. The DNS name must resolve to the gMSA account DNS Host name. For the DNS Host name of the gMSA account, run the following command:
+Ensure that the static IP is in the subnet that you created for SCOM Managed Instance. Create a DNS name (according to your organization's policy) for the static IP. The DNS name must resolve to the gMSA account DNS Host name. For the DNS Host name of the gMSA account, run the following command:
 
 ```powershell
 Get-ADServiceAccount -Identity <gMSA Account Name> -Properties DNSHostName,Enabled,PrincipalsAllowedToRetrieveManagedPassword,SamAccountName,ServicePrincipalNames -Credential <DomainUserCredentials> 
@@ -45,5 +45,3 @@ Create the forward lookup entry in DNS by creating an association between the IP
 ## Next steps
 
 - [Configure the network firewall](configure-network-firewall.md)
-
-To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

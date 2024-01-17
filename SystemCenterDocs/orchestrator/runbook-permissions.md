@@ -9,9 +9,9 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
 ms.date: 04/12/2023
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 # Runbook permissions

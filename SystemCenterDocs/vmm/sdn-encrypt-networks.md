@@ -2,9 +2,9 @@
 ms.assetid: 4c078131-cb8b-4c43-b651-182f8060c19f
 title: Configure encrypted networks in System Center Virtual Machine Manager
 description: This article explains about how to configure encrypted networks in SDN using VMM.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center

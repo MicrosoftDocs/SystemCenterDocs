@@ -1,11 +1,11 @@
 ---
 title: Use and manage standard reports
 description: Explains how to use and manage standard reports in Service Manager.
-manager: mkluck
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/12/2022
 ms.reviewer: na
 ms.suite: na

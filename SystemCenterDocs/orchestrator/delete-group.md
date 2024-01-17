@@ -2,7 +2,7 @@
 title: Delete Group
 description: You can use the Delete Group activity in a runbook to delete a group in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
+ms.date: 12/04/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a9e39268-b3aa-493c-b6f1-7b4862164f5d
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Delete Group

@@ -2,10 +2,10 @@
 ms.assetid: 2c4831ae-0b67-40c0-a91f-247a3ee3e01f
 title: SQL Server Run As profiles in Management Pack for SQL Server
 description: This article explains run as profiles in Management Pack for SQL Server
-author: Anastas1ya
+author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 5/31/2021
+ms.date: 1/03/2024
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -39,12 +39,10 @@ Management Pack for SQL Server provides the following Run As profiles:
 
   This profile is used for [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) mode only.
 
->[!NOTE]
->Don't bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, don't use a Windows account or non-basic account with this profile.
+> [!NOTE]
+> Don't bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, don't use a Windows account or non-basic account with this profile.
 
-When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile.
-
-If the default action account for a given system doesn't have the necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles.
+When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile. If the default action account for a given system doesn't have the necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles, [group Managed Service Accounts (gMSAs)](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview) are also [supported](/system-center/scom/support-group-managed-service-accounts).
 
 For more information about Run As accounts, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md).
 

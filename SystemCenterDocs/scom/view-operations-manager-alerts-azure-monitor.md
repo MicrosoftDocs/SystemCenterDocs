@@ -5,11 +5,11 @@ description: This article describes the recent feature addition that allows Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/17/2023
+ms.date: 11/01/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 

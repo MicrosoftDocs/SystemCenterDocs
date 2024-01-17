@@ -1,11 +1,11 @@
 ---
 title: Create and deploy dashboards
 description: Explains how to create and deploy Service Manager dashboards.
-manager: mkluck
 ms.custom: engagement-fy24, UpdateFrequency2
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.reviewer: na
 ms.suite: na

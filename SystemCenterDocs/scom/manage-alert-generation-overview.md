@@ -1,10 +1,10 @@
 ---
 title: How an Alert is Produced
 description: This article describes how to an alert is generated in Operations Manager by  management pack rules and monitors in the management group.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
-ms.date: 11/08/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager

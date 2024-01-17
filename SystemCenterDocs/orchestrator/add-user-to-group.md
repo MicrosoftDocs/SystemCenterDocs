@@ -2,7 +2,7 @@
 title: Add User To Group
 description: You can use the Add User To Group activity in a runbook to add a user to a group in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
+ms.date: 12/04/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 38b183fe-a0ef-45f2-a6f6-615b33c072fc
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Add User To Group

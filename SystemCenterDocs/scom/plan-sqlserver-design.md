@@ -2,10 +2,10 @@
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/13/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/04/2023
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager

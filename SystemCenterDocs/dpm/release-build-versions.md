@@ -1,15 +1,15 @@
 ---
 title:  System Center - Data Protection Manager release build versions
 description: This article provides the list of release builds for System Center - Data Protection Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 01/08/2024
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 monikerRange: '>=sc-dpm-2016'
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
@@ -48,6 +48,8 @@ The following table lists the build versions for Data Protection Manager 2022.
 | --- | --- |-------------| --- |
 | 10.22.123.0 | n/a |May 2022 |System Center 2022 Data Protection Manager     |
 | 10.22.148.0 | [5019645](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-data-protection-manager-81543e78-69c2-4b75-9780-0ac1b98debf1) |November 2022 | Update Rollup 1 for System Center 2022 Data Protection Manager|
+| 10.22.189.0 | [5032420](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-data-protection-manager-254d23f2-2adf-46b8-9ec8-27b868073ede) | November 2023 | Update Rollup 2 for System Center 2022 Data Protection Manager |
+|10.22.197.0 | - |December 2023 |Update Rollup 2 Refresh for System Center 2022 Data Protection Manager|
 
 ::: moniker-end
 
@@ -87,6 +89,7 @@ The following table lists the build versions for Data Protection Manager 2016.
 | 5.0.457.0   | [4511102](https://support.microsoft.com/en-us/help/4511102/update-rollup-8-for-system-center-2016-data-protection-manager) | Update Rollup 8 for System Center 2016 Data Protection Manager  |
 | 5.0.525.0   | [4534063](https://support.microsoft.com/en-us/help/4534063/update-rollup-9-for-system-center-2016-data-protection-manager) | Update Rollup 9 for System Center 2016 Data Protection Manager  |
 | 5.0.622.0   | [4578608](https://support.microsoft.com/help/4578608/update-rollup-10-for-system-center-2016-data-protection-manager) | Update Rollup 10 for System Center 2016 Data Protection Manager  |
+| 5.0.661.0 | [5031798](https://support.microsoft.com/help/5031798) | Update Rollup 10 Hotfix for System Center 2016 Data Protection Manager |
 
 ::: moniker-end
 

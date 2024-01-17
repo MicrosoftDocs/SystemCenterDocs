@@ -2,14 +2,14 @@
 ms.assetid: 72a60bb6-55e6-4305-a318-7fe88512f2c4
 title: Plan the VMM networking fabric
 description: This article provides information about preparing the VMM network fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/30/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
@@ -35,26 +35,26 @@ VMM networking contains many components, summarized in the following table:
 **VIP templates** | Virtual IP (VIP) templates contain load balancing information for a particular type of traffic. For example, you could have a template that specifies how to balance HTTPS traffic on a specific load balancer.
 **Logical switches** | Logical switches are containers for virtual switch settings. You apply logical switches to hosts so that you have consistent switch settings across all hosts. VMM  tracks switch settings on hosts deployed with logical switches to ensure compliance.
 **Port profiles** | Port profiles act as containers for the properties you want a network adapter to have. Instead of configuring properties per network adapter, you set up in the port profile and apply that profile to an adapter.<br/><br/>There are two types of port profiles. Virtual port profiles contain settings that are applied to virtual network adapters connect to VMs or used by virtualization hosts. Uplink port profiles are used to define how a virtual switch connects to a logical network.
-**Port classifications** | Port classifications are abstract containers for virtual port profile settings. This abstraction means that admins and tenants can assign a port classification to a VM template, while the VM's logical switch determines which port profile should be used. Profiles and then both admins and tenant can select a suitable classification. VMM contains many default port classifications. For example, there is a classification for VMs that needs high bandwidth and a different one for VMs that need low bandwidth. Port classifications are linked to virtual port profiles when you configure logical switches.
+**Port classifications** | Port classifications are abstract containers for virtual port profile settings. This abstraction means that admins and tenants can assign a port classification to a VM template, while the VM's logical switch determines which port profile should be used. Profiles and then both admins and tenant can select a suitable classification. VMM contains many default port classifications. For example, there's a classification for VMs that needs high bandwidth and a different one for VMs that need low bandwidth. Port classifications are linked to virtual port profiles when you configure logical switches.
 
 ## Plan logical networks
 
-During deployment, you'll need to create logical networks and set up network sites and IP addressing in each network. Then you'll create VM networks based on those logical networks.
+During deployment, you need to create logical networks and set up network sites and IP addressing in each network. Then you create VM networks based on those logical networks.
 
-Here's what you'll need to plan:
+Here's what you need to plan:
 
 1. **Automation creation**: Decide whether you want to let VMM create logical networks. VMM will automatically create a logical network each time you add a virtualization host. VMM doesn't create network sites in the automatically created logical network. You can turn off this option in **Settings** > **General** > **Network Settings** and clear **Automatic creation of logical networks**.
 2. **Logical network capacity**: If you're going to create logical networks manually, figure out what you'll need to represent your physical network topology. For example, if you need a management network and a network used by VMs, you should create two logical networks.
-3. **Logical network types**: Figure out the type of logical network you need. You'll configure VM networks on top of logical networks and those VM networks can provide network virtualization with the ability to create multiple virtual networks on a shared physical networks, or VM networks can provide isolation with VLANS and PVLANS. When you configure the logical network, you'll need to indicate the type of network you need.
+3. **Logical network types**: Figure out the type of logical network you need. You'll configure VM networks on top of logical networks and those VM networks can provide network virtualization with the ability to create multiple virtual networks on a shared physical networks, or VM networks can provide isolation with VLANS and PVLANS. When you configure the logical network, you need to indicate the type of network you need.
 4. **Network sites**: Determine how many network sites you need in the logical network. You could plan around host groups and host locations. For example, a Seattle host group and a New York host group. You don't need network sites if you don't have VLANs and you're using DHCP to allocate IP addresses.
 5. **VLANs/subnets**: Figure out the VLANs and IP subnets you need in the logical network. These will mirror what you have in your physical network topology.
 6. **IP addressing**: If you're using static IP address assignment, determine which logical networks need static address pools.
 
-Here's what you'll need to do:
+Here's what you need to do:
 
 1. Identify baseline logical networks: Identify a set of initial logical networks that mirror the physical networks in your environment.
 2. Identify additional logical networks for specific requirements: Define logical networks with  specific purpose or perform a particular function within your environment. One of the benefits of logical networks is that you can separate computer and network services with different business purposes without needing to change your physical infrastructure.
-3. Determine isolation requirements: Identify which logical networks need to be isolated and how that isolation will be enforced, either through physical separation, VLAN/PVLAN, or network virtualization. Remember, that you need isolation if the logical network is going to be used by multiple tenants. If you've a single tenant or customer, isolation is optional. In turn, if you don't need isolation you'll only need a single VM network that maps to the logical network.
+3. Determine isolation requirements: Identify which logical networks need to be isolated and how that isolation will be enforced, either through physical separation, VLAN/PVLAN, or network virtualization. Remember, that you need isolation if the logical network is going to be used by multiple tenants. If you've a single tenant or customer, isolation is optional. In turn, if you don't need isolation you only need a single VM network that maps to the logical network.
 4. Determine the network sites, VLANs, PVLANs, and IP pools that need to be defined for each logical network you've identified.
 5. Figure out which logical network will associate with which virtualization hosts.
 
@@ -63,7 +63,7 @@ Use the following table to plan for the logical networks, VM networks, and IP ad
 
 |Item to review or determine|Description and (as needed) links within this article|
 |-------------------------------|---------------------------------------------------------|
-| Logical networks already created by default by VMM|When you add a Hyper-V host to VMM, logical networks may be created by default, based on DNS suffixes. |
+| Logical networks already created by default by VMM|When you add a Hyper-V host to VMM, logical networks can be created by default, based on DNS suffixes. |
 | How many logical networks you need, and the purpose of each|Plan to create logical networks to represent the network topology for your hosts. For example, if you need a management network, a network used for cluster heartbeats, and a network used by virtual machines, create a logical network for each.|
 | Categories that your logical networks fall into|Review the purposes of your logical networks, and categorize them:<br /><br />-   **No isolation**: For example, a cluster-heartbeat network for a host cluster.<br />-   **VLAN**: Isolation provided by your VLANs.<br />-   **Virtualized**: Provides a foundation for Hyper-V network virtualization.<br />-   **External**: Managed through a network manager (vendor network-management console or virtual switch extension manager) outside of VM. <br />-   **IPAM**: Managed through an IP Address Management (IPAM) server. |
 | How many network sites are needed in each logical network|One common way to plan network sites is around host groups and host locations. For example, for a **Seattle** host group and a **New York** host group, if you had a MANAGEMENT logical network, you might create two network sites called **MANAGEMENT - Seattle** and **MANAGEMENT - New York**. |
@@ -72,7 +72,7 @@ Use the following table to plan for the logical networks, VM networks, and IP ad
 
 ## Logical networks created by default
 
-In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you have at least one logical network for deploying virtual machines and services. No network sites are created automatically.
+In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you've at least one logical network for deploying virtual machines and services. No network sites are created automatically.
 
 To illustrate how these settings work, suppose that you haven't changed the settings and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network, VMM also creates a VM network that is configured with **no isolation**. For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named **corp**, and on it, a VM network named “corp” that is configured with no isolation.
 

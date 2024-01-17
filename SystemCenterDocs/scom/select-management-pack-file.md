@@ -2,9 +2,9 @@
 ms.assetid: 0a119fc2-b6fb-4ca6-a2ce-5344ea69b327
 title: Select a management pack file in Operations Manager management pack
 description: This article provides an overview about how to select a Management Pack File
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: Anastas1ya
+ms.author: v-ekaterinap
+manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center

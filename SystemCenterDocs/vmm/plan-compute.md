@@ -2,14 +2,14 @@
 ms.assetid: eded29a4-dfa5-4bb4-b9b3-6b55d51fbd4e
 title: Plan the VMM compute fabric
 description: This article provides planning steps for setting up and provisioning the VMM compute fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/30/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Plan the VMM compute fabric
@@ -42,9 +42,9 @@ VMM supports Hyper-V and VMware virtualization hosts. When you're adding, provis
 - The system configuration of the VMs running on the host.
 - The types of apps running on the guest operating systems.
 - The VM workloads that will run on the host.
-- The processor requirements for the host. You'll need enough processing capacity to run the VMs.
+- The processor requirements for the host. You need enough processing capacity to run the VMs.
 - The memory requirements for the host. After you use VMM to allocate host RAM to a VM, that memory isn't available for other resources. You also need adequate memory to run the host operating system and any other apps.
-- The storage requirements for the host. You need adequate storage for the host itself and also for the VMs running on it. Remember, you'll need to take extra space into account for VM paging files, dynamically expanding virtual hard disks, saving the contents of VM RAM when the VM is in a saved state, and VM checkpoints.
+- The storage requirements for the host. You need adequate storage for the host itself and also for the VMs running on it. Remember, you need to take extra space into account for VM paging files, dynamically expanding virtual hard disks, saving the contents of VM RAM when the VM is in a saved state, and VM checkpoints.
 - The network requirements for the host. If VMs are running apps that need high availability, you'll need to consider the network requirements.
 
 ## Plan host groups

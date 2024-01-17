@@ -1,10 +1,10 @@
 ---
 title: Disaster recovery for Service Manager
 description: Describes the process used for disaster recovery for System Center - Service Manager.
-manager: mkluck
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article

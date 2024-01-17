@@ -1,11 +1,11 @@
 ---
 title: Bundle management packs and resource files
 description: Learn about bundling management packs and resource files for Service Manager authoring.
-manager: mkluck
 ms.custom: engagement-fy24, UpdateFrequency3
 ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.reviewer: na
 ms.suite: na

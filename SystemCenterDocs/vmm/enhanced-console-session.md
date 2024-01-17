@@ -2,9 +2,9 @@
 ms.assetid: 625286e3-1d38-4ea8-8088-a53fffd7c721
 title: Enable enhanced console session in VMM
 description: This article explains about how to enable enhanced console session in System Center VMM.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/10/2022
 ms.topic: article
 ms.prod: system-center

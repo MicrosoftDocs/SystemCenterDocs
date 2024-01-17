@@ -1,9 +1,9 @@
 ---
 title: How and When to Clear the Cache
 description: This article provides guidance on how to manage the cache for the HealthService on management servers and agents in System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 01/04/2018
 ms.custom: UpdateFrequency3
 ms.prod: system-center
@@ -11,6 +11,7 @@ ms.technology: operations-manager
 ms.topic: article
 ms.assetid: bea86d42-4838-46b0-96ac-75a0e8988e3c
 ---
+
 # How and When to Clear the Cache
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
@@ -21,18 +22,177 @@ ms.assetid: bea86d42-4838-46b0-96ac-75a0e8988e3c
 
 In System Center Operations Manager, when troubleshooting an issue with the Operations console or with an agent, you may see recommendations to "clear the cache." For more information on troubleshooting an issue with an agent, see [Not monitored and gray agents](manage-agents-not-healthy.md).  
 
-## To clear the cache
 
-The following table explains how and when to clear the console cache or agent cache.  
+### Operations Console
 
-|Cache|How to clear|When|Results|  
-|---------|----------------|--------|-----------|  
-|Operations console|Open the Operations console with the **/clearcache** parameter.|Use this method to open the Operations console if you experience errors trying to retrieve data in views, such as ObjectNotFoundExceptions, or when the cache file grows too large and you want to reduce its size on disk.|Opening the Operations console with<br> **/clearcache** deletes the following file:<br><br>%systemdrive%\Users\*username*\AppData\ <br> Local\Microsoft\ <br> Microsoft.EnterpriseManagement.Monitoring.Console\ <br> momcache.mdb|  
-|Health service on agent-managed computer|1.  In the **Monitoring** workspace, expand **Operations Manager**<br> and then expand **Agent Details**.<br>2.  Select **Agent Health State**.<br>3.  In **Agent State**, select an agent.<br>4.  In the **Tasks** pane, select **Flush Health Service State and Cache**.|This should be the final step when troubleshooting issues with the agent, before uninstalling and reinstalling the agent.|Clearing the agent cache can cause data loss<br> of monitoring data from that system.<br><br>1.  Stops the Microsoft Monitoring Agent service.<br>2.  Deletes the health service store files.<br>3.  Resets the state of the agent, including all rules,<br> monitors, outgoing data, and cached<br> management packs.<br>4.  Starts the Microsoft Monitoring Agent service.<br><br> When the service restarts, the agent requests<br> configuration from its primary assigned<br> management server.<br> **Note:** Because this task deletes the cached data<br> in the health service store files,<br> including the record of this task itself,<br> no task status is reported<br> on completion of the task.|  
-|Health service on management server|1.  In the **Monitoring** workspace, expand **Operations Manager**<br> and then expand **Management Server**.<br>2.  Select **Management Servers State**.<br>3.  In **Management Server State**, select a management server.<br>4.  In the **Tasks** pane, select **Flush Health Service State and Cache**.|Run this task on a management server when the management server isn't functional, a restart hasn't fixed the problem, and you've exhausted other troubleshooting options.|Clearing the agent cache can cause<br> data loss of monitoring data from<br> agents to the management server.<br><br>1.  Stops the Microsoft Monitoring Agent service.<br>2.  Deletes the health service store files.<br>3.  Resets the state of the agent, including all rules,<br> monitors, outgoing data, and<br> cached management packs.<br>4.  Starts the Microsoft Monitoring Agent service.<br> **Note:** Because this task deletes the cached<br> data in the health service store files,<br> including the record of this task itself,<br> no task status will be reported<br> on completion of the task.|  
+A possible reason to clear the Operations Console cache is to fix errors that occur when you access data in views, such as ObjectNotFoundExceptions. Another reason is to free up disk space when the cache file becomes too large.
+
+> [!IMPORTANT] 
+> Before proceeding close any open consoles.
+
+
+#### [Using PowerShell](#tab/using-powershell)
+This may need to be executed from an Administrator PowerShell console, depending on organization policy.
+
+```powershell
+# Option 1: This will read the console install directory from registry and then execute. Useful if installed in a non-default directory
+Start-Process ((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\System Center Operations Manager\12\Setup\Console").InstallDirectory + "Microsoft.EnterpriseManagement.Monitoring.Console.exe") -ArgumentList "/clearCache"
+
+# Option 2: This will start the process in the default ProgramFiles directory
+Start-Process "$Env:ProgramFiles\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" -ArgumentList "/clearCache"
+```
+
+#### [Using Command Prompt](#tab/using-command-prompt)
+This may need to be executed from an Administrator Command Prompt, depending on organization policy.
+
+```cmd
+"%ProgramFiles%\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" /clearcache
+```
+
+#### [Manual Clear](#tab/manual-clear)
+1. Close any open Operations Manager consoles.
+2. Delete the console cache file: `%LocalAppData%\Microsoft\Microsoft.EnterpriseManagement.Monitoring.Console\momcache.mdb`
+3. Reopen the Operations Manager console.
+
+
+---
+
+
+
+### Management servers
+
+One of the last steps in troubleshooting is to clear the cache. This will remove any unsaved data along with the current configuration and management packs. After clearing the cache, we will receive a new configuration from the database, which includes updated management packs, and reconnect with clients. This can help if a management server has faulty or missing management packs that cause workflow errors or is delayed in sending data to the database.
+
+#### [From the Operations Console](#tab/from-the-operations-console)
+1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Management Server**.
+2. Select **Management Server State**.
+3. In the **Management Server State** column, select one or several servers.
+4. In the **Tasks** pane, select **Flush Health Service State and Cache**.
+5. In the prompt window, enter the credentials used for this task, or use default and hit **Run**
+
+> [!NOTE] 
+> Know that this task works differently than that of an agent as all the workflows that are running under the HealthService on the management server (which could be in the tens of thousands) needs to be stopped, and this can take time, to the point where the task may time out or throw an error. If this occurs, you may want to consider performing the cache clear manually.
+
+#### [Using a Command Line Interface](#tab/using-a-command-line-interface)
+This may need to be executed from an Administrator console depending on organization policy.
+
+PowerShell:
+```powershell
+# This will read the install directory from registry and perform the same steps outlined
+Stop-Service HealthService -Force -Verbose;
+Remove-Item -Path "$((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\System Center Operations Manager\12\Setup\Server").InstallDirectory + 'Health Service State')" -Recurse -Force;
+Start-Service HealthService -Verbose
+```
+
+Command Prompt (as a batch file):
+```cmd
+:: Clear Health Service State (Cache)
+ECHO OFF
+net stop HealthService
+FOR /F "usebackq tokens=2,* skip=2" %%L IN (`reg query "HKLM\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup" /v InstallDirectory`) DO SET installpath=%%M
+echo %installpath%
+@RMDIR "%installpath%Health Service State" /S /Q
+net start HealthService
+```
+
+#### [Perform steps manually](#tab/perform-steps-manually)
+1. Navigate to the server.
+2. Stop the Microsoft Monitoring Agent (HealthService) service.
+3. Delete the cache folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State`.
+4. Restart the Microsoft Monitoring Agent (HealthService) service.
+
+
+---
+
+### Gateway servers
+
+One of the last steps in troubleshooting is clearing the cache. Sometimes, the gateway may not communicate with the management server and appear greyed out in the System Center Operations Manager console. In such cases, we need to clear the cache for gateways. We also need to do this when the gateway has outdated or unusable management packs or data that cannot be inserted into the database.
+
+#### [From the Operations Console](#tab/from-the-operations-console)
+1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Management Server**.
+2. Select **Management Server State**.
+3. In the **Gateway Management Server State** column, select one or several servers.
+4. In the **Tasks** pane, select **Flush Health Service State and Cache**.
+5. In the prompt window, enter the credentials used for this task, or use default and hit **Run**
+
+#### [Using a Command Line Interface](#tab/using-a-command-line-interface)
+This may need to be executed from an Administrator console depending on organization policy.
+
+PowerShell:
+```powershell
+# This will read the install directory from registry and perform the same steps outlined
+Stop-Service HealthService -Force -Verbose;
+Remove-Item -Path "$((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\System Center Operations Manager\12\Setup\Gateway").InstallDirectory + 'Health Service State')" -Recurse -Force;
+Start-Service HealthService -Verbose
+```
+
+Command Prompt (as a batch file):
+```cmd
+:: Clear Health Service State (Cache)
+ECHO OFF
+net stop HealthService
+FOR /F "usebackq tokens=2,* skip=2" %%L IN (`reg query "HKLM\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup" /v InstallDirectory`) DO SET installpath=%%M
+echo %installpath%
+@RMDIR "%installpath%Health Service State" /S /Q
+net start HealthService
+```
+
+#### [Perform steps manually](#tab/perform-steps-manually)
+1. Navigate to the server.
+2. Stop the **Microsoft Monitoring Agent (HealthService)** service.
+3. Delete the cache folder: `%ProgramFiles%\Microsoft System Center\Operations Manager\Gateway\Health Service State`.
+4. Restart the **Microsoft Monitoring Agent (HealthService)** service.
+
+
+---
+
+### Client servers
+A possible way to fix problems with workflows or communication between the agent on a client server and the management group is to clear the cache and restart the agent. This is a last resort for troubleshooting, but it can resolve some issues effectively.
+
+#### [From the Operations Console](#tab/from-the-operations-console)
+1. In the **Monitoring** workspace, expand **Operations Manager**, and then expand **Agent Details**.
+2. Select **Agent Health State**.
+3. In the **Agent State** column, select one or several agents.
+4. In the **Tasks** pane, select **Flush Health Service State and Cache**.
+5. In the prompt window, enter the credentials used for this task, or use default and hit **Run**
+
+> [!NOTE] 
+> Because this action deletes the cached data in the health service store files, including the record of this task itself, no true task status is reported in the console upon completion of the task, it will always "Succeed" so long as the command was sent.
+
+#### [Using a Command Line Interface](#tab/using-a-command-line-interface)
+This may need to be executed from an Administrator console depending on organization policy.
+
+PowerShell:
+```powershell
+# This will read the install directory from registry and perform the same steps outlined
+Stop-Service HealthService -Force -Verbose;
+Remove-Item -Path "$((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\System Center Operations Manager\12\Setup\Agent").InstallDirectory + 'Health Service State')" -Recurse -Force;
+Start-Service HealthService -Verbose
+```
+
+Command Prompt (as a batch file):
+```cmd
+:: Clear Health Service State (Cache)
+ECHO OFF
+net stop HealthService
+FOR /F "usebackq tokens=2,* skip=2" %%L IN (`reg query "HKLM\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup" /v InstallDirectory`) DO SET installpath=%%M
+echo %installpath%
+@RMDIR "%installpath%Health Service State" /S /Q
+net start HealthService
+```
+
+#### [Perform steps manually](#tab/perform-steps-manually)
+1. Navigate to the client machine.
+2. Stop the **Microsoft Monitoring Agent (HealthService)** service.
+3. Delete the cache folder: `%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State`.
+4. Restart the **Microsoft Monitoring Agent (HealthService)** service.
+
+
+---
 
 ## Next steps
 
 - To understand how it can help you review alerts that have been generated by rules and monitors that are still active, review [Viewing Active Alerts and Details](manage-alert-view-alerts-details.md).
 
 - To understand how Operations Manager monitors the communication channel between an agent and its primary management server to ensure it's responsive and available, see [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md).
+

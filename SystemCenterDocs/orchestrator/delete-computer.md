@@ -2,7 +2,7 @@
 title: Delete Computer
 description: You can use the Delete Computer activity in a runbook to delete a computer in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
+ms.date: 12/04/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 45b7c571-5ae6-46a9-8154-531927a1dfb3
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Delete Computer

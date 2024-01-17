@@ -5,7 +5,7 @@ description: This article explains monitoring configurations in Management Pack 
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 06/13/2023
+ms.date: 12/6/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -173,6 +173,15 @@ Performance collection rules collect the following metrics:
 - Total Memory on the Server (GB)
 - Used Space on Drive (GB)
 - Database VertiPaq Memory Size (GB)
+- MDX Number of calculation covers
+- MDX Total cells calculated
+- MDX Total NON EMPTY for calculated members
+- MDX Total NON EMPTY unoptimized
+- MDX Total Recomputes
+- MDX Total Sonar subcubes
+- Processing Aggreagations Rows created/sec
+- Indexes Processing Rows/sec
+- Processing Rows written/sec
 
 ## Tasks Overview
 

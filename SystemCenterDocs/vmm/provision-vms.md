@@ -2,9 +2,9 @@
 ms.assetid: 3ab37fed-9dcf-411f-983f-4fc9ea78c4c9
 title: Provision and manage virtual machines in the VMM fabric
 description: This article describes how to manage VMs in the VMM compute fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/28/2023
 ms.topic: article
 ms.prod: system-center

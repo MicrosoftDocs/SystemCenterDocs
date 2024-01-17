@@ -2,10 +2,10 @@
 ms.assetid: 28a3bb81-979c-4ebe-aa07-7ba7ecfb6efc
 title: Convert a VMware VM to Hyper-V in the VMM fabric
 description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 05/06/2022
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/28/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -34,7 +34,7 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 
 >[!Important]
@@ -44,6 +44,21 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- Anti-virus apps must be supported.
   >- Online conversions aren't supported. You need to power off the VMware VMs.
   >- VMware tools must be uninstalled from the guest operating system of the VM.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+
+>[!Important]
+  >- See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
+  >- You can't convert VMware workstations.
+  >- You can't convert VMs with virtual hard disks connected to an IDE bus.
+  >- Anti-virus apps must be supported.
+  >- Online conversions aren't supported. You need to power off the VMware VMs.
+  >- VMware tools must be uninstalled from the guest operating system of the VM.
+  >- We recommend upgrading to VMM 2022 UR2 to convert your VMware VMs to Hyper-V four times faster.
+  >- Converting VMware VMs in vSAN configuration to Hyper-V isn't supported through SCVMM.
 
 ::: moniker-end
 
@@ -142,6 +157,15 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 ```
 
 ::: moniker-end
+
+## Convert VMware VMs to Hyper-V faster
+
+- As a prerequisite to start converting VMware VMs to Hyper-V four times faster, upgrade to SCVMM 2022 UR2 or later.
+- As part of SCVMM 2022 UR2, a new registry named **V2VTransferChunkSizeBytes** is introduced at *HKLM:\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Agent* in the Hyper-V hosts managed by SCVMM.
+- This registry of type REG_DWORD, with a value of *2147483648*, which is 2 GB in bytes has to be set on every Hyper-V host managed by VMM by running [this script](https://download.microsoft.com/download/2/c/a/2caf6779-853a-4455-9c67-a0d2b1e2ccfe/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20All%20Hosts.ps1) from the VMM Console.
+- Alternatively, if you want to set this registry value in a single host and not on all the hosts, run [this script](https://download.microsoft.com/download/4/4/6/446e9dac-0356-44ce-a0c9-707a8d3e2bb0/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20Single%20Host.ps1) from the VMM Console.
+- After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
+
 
 ## Next steps
 

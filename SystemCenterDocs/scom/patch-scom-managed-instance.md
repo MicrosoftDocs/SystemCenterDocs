@@ -1,33 +1,47 @@
 ---
 ms.assetid: 
-title: Patch Azure Monitor SCOM Managed Instance (preview)
-description: This article provides information on how to patch your Azure Monitor SCOM Managed Instance (preview).
+title: Patch Azure Monitor SCOM Managed Instance
+description: This article provides information on how to patch your Azure Monitor SCOM Managed Instance.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/19/2023
+ms.date: 11/14/2023
 ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
-# Patch Azure Monitor SCOM Managed Instance (preview)
+# Patch Azure Monitor SCOM Managed Instance
 
-Azure Monitor SCOM Managed Instance (preview) offers a convenient patching experience compared to on-premises System Center Operations Manager. 
+Azure Monitor SCOM Managed Instance offers a convenient patching experience compared to on-premises System Center Operations Manager.
 
 Following are the key highlights:
 
-- No update rollup in SCOM Managed Instance (preview). A patch is released as and when there are significant fixes and updates made to the product. They're released at a frequency of as often as two weeks or two months.
+- No update rollup in SCOM Managed Instance. A patch is released as and when there are significant fixes and updates made to the product. They're released at a frequency of as often as two weeks or two months.
 - Patching is quick and convenient and happens at the click of a button.
 - All newer patches are backward compatible with the older versions. 
 
-This article provides information on how to patch your SCOM Managed Instance (preview).
+This article provides information on how to patch your SCOM Managed Instance.
 
-## Patch SCOM Managed Instance (preview)
+## Pre-Patching checklist
 
-To patch SCOM Managed Instance (preview), follow these steps:
+Before you proceed with the patching process, complete the following prechecks to ensure a successful patching operation:
+
+1. **SQL managed instance status**: Verify that the SQL managed instance is operational and running, and not in a shutdown state.
+
+2. **Management server health**: Confirm the health of existing Management Servers.
+
+3. **Domain credentials verification**: Validate the status of the domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
+
+4. **NAT Gateway association**: Ensure that the NAT Gateway is still associated with the subnet and hasn't been removed.
+
+5. **VNET connectivity requirements**: Ensure that VNet to VNet communication is allowed to enable communication between the newly added managed servers and the existing ones. Additionally, verify that the connectivity from the VNet to the SQL managed instance and Domain Controller is operational.
+
+## Patch SCOM Managed Instance
+
+To patch SCOM Managed Instance, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) and search for **SCOM Managed Instance**.
 1. On the **Overview** page, under **Configuration**, select **Patching**.
@@ -44,7 +58,8 @@ It takes 30 mins to 1 hour to successfully update the instance.
  :::image type="Instance updated" source="media/patch-scom-managed-instance/instance-updated.png" alt-text="Screenshot of Instance updated.":::
 
 >[!NOTE]
->To run custom configurations in your SCOM Managed Instance management servers, write a script for your custom configurations and run that on your SCOM Managed Instance VMSS cluster using the steps mentioned in [Install applications in Virtual Machine Scale Sets with Azure PowerShell](https://learn.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-powershell).
+>To run custom configurations in your SCOM Managed Instance management servers, see [Customizations on Azure Monitor SCOM managed instance management servers](customizations-on-scom-managed-instance-management-servers.md).
+
 
 ## Troubleshoot patching issues
 
@@ -77,8 +92,4 @@ It takes 30 mins to 1 hour to successfully update the instance.
 
 ## Next steps
 
-[Connect the Azure Monitor SCOM Managed Instance (preview) to Ops console](connect-managed-instance-ops-console.md)
-
-**Feedback**
-
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+[Connect the Azure Monitor SCOM Managed Instance to Ops console](connect-managed-instance-ops-console.md)

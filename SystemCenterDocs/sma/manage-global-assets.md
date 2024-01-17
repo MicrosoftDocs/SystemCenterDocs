@@ -1,9 +1,9 @@
 ---
 description: Provides guidance and procedures for using global assets in an Automation runbook.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 ms.date: 08/07/2023
 title: Simplify runbook authoring with global assets

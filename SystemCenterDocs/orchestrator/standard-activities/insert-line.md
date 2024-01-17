@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ae2bc14f-7027-484e-95c0-4cad77b8f5ef
 caps.latest.revision: 13
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: "evansma"
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Insert Line
 
