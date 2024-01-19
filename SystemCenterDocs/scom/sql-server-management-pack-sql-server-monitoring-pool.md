@@ -5,10 +5,10 @@ description: This article explains SQL Server monitoring pool
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/05/2024
+ms.date: 1/19/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # SQL Server Monitoring Pool
