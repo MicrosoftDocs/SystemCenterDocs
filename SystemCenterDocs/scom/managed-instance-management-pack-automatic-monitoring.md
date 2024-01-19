@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: epomortseva
 ms.author: v-ekaterinap
 manager: vvithal
-ms.date: 1/16/2024
+ms.date: 1/19/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -44,17 +44,11 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
        Select this option if you want your Azure Service Principal Name to be created automatically by the Azure SQL MI MP library using the Azure REST API.
 
-       Ensure that the account that you use must have either the **Owner** role (or higher), or any of the following roles:
-
-       - **Active Directory Administrator**
-
-       - **Service Administrator** or **Сo-Administrator**
-
-       For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+       Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
 
    - **Use Existing Run As Profile**
 
-       Select this option if you want to use your own Azure Service Principal Name.
+       Select this option if you want to use your own Azure Service Principal Name. For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 
     ![Screenshot showing the Configure SPN.](./media/managed-instance-management-pack/spn-configuration.png)
 
