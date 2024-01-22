@@ -4,8 +4,8 @@ description: This article provides guidance on how to manage the cache for the H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/04/2018
-ms.custom: UpdateFrequency3
+ms.date: 01/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
