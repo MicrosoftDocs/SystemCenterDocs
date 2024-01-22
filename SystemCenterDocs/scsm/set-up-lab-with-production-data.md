@@ -5,10 +5,10 @@ ms.prod: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/23/2018
+ms.date: 01/22/2024
 ms.technology: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Set up a lab environment with production data
