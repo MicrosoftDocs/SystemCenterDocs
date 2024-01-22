@@ -1,12 +1,12 @@
 ---
 title: Work with management packs in the console
 description: Describes how to work with management packs in the Service Manager console.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.prod: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/12/2016
+ms.date: 01/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
