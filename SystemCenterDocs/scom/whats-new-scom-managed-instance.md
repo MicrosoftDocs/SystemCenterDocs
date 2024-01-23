@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
 
-## v1.0.97
+## Version 1.0.97
 
 - Improved onboarding telemetry.
 
