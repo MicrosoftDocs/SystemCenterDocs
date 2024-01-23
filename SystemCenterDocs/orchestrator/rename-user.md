@@ -1,8 +1,8 @@
 ---
 title: Rename User
 description: You can use the Rename User activity in a runbook to rename a computer in the Microsoft Active Directory.
-ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.date: 01/23/2024
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
