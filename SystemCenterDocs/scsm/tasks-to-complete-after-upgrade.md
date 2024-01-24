@@ -1,12 +1,12 @@
 ---
 title: Post-upgrade tasks in System Center - Service Manager
 description: Summarizes tasks to complete after you upgrade System Center - Service Manager.
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/28/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
