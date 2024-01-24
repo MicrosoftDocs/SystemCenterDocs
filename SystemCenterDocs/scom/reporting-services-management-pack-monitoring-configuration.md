@@ -7,8 +7,8 @@ author: epomortseva
 ms.author: v-ekaterinap
 ms.date: 12/8/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Monitoring Configuration in Management Pack for SQL Server Reporting Services
