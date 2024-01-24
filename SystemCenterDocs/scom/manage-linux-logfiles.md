@@ -24,7 +24,7 @@ ms.topic: article
 ::: moniker range=">=sc-om-2019"
 
 >[!Note]
->System Center Operations Manager doesn't support the fluentD log file monitoring upon OMS retirement which is scheduled for August 2024.
+>System Center Operations Manager won't support the fluentD log file monitoring upon OMS retirement which is scheduled for August 2024.
 
 ::: moniker-end
 
