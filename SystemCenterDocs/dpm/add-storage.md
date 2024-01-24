@@ -4,11 +4,11 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 07/28/2023
 title: Add Modern Backup Storage to DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 ms.custom: engagement-fy23
 ---

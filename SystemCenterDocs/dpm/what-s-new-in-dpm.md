@@ -1,10 +1,10 @@
 ---
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 ms.date: 01/08/2024
 title: What's new in System Center DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
