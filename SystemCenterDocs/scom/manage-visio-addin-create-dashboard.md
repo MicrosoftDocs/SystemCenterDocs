@@ -6,8 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 09/26/2023
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 21d8f3a5-2ac8-4776-b063-f6895a21cd5a
 ---
