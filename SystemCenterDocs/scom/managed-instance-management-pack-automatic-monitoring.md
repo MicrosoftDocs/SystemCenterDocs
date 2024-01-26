@@ -67,31 +67,31 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
         For more information on how to create a Microsoft Entra application and service principal that can access resources, see the following [article](/azure/active-directory/develop/howto-create-service-principal-portal) or follow the steps below to create a single tenant application in the Azure portal:
 
-        - Sign in to the [Azure portal](https://portal.azure.com).
-        - Browse to **Microsoft Entra ID** > **App registrations** then select **New registration**.
-        - Name the application, for example **Azure_SQL_ManagedInstance_App_customSPN**.
-        - Select a supported account type, which determines who can use the application, then select **Register**.
+        1. Sign in to the [Azure portal](https://portal.azure.com).
+        2. Browse to **Microsoft Entra ID** > **App registrations** then select **New registration**.
+        3. Name the application, for example **Azure_SQL_ManagedInstance_App_customSPN**.
+        4. Select a supported account type, which determines who can use the application, then select **Register**.
 
             ![Screenshot showing the Registration application.](./media/managed-instance-management-pack/register-new-spn.png)
-        - Select **Certificates & secrets**, select **Client secrets**, and then Select **New client secret**.
-        - Provide a description of the secret and a duration, then select **Add**.
+        5. Select **Certificates & secrets**, select **Client secrets**, and then Select **New client secret**.
+        6. Provide a description of the secret and a duration, then select **Add**.
 
             > [!TIP]
             > Once you've saved the client secret, the value of the client secret is displayed. This is only displayed once, so copy this value and store it to a secure location for reuse.
 
             ![Screenshot showing the Client secret registration.](./media/managed-instance-management-pack/add-client-secret.png)
 
-        - Staying in the portal, select the level of scope you wish to assign the application to. For example, to assign a role at the subscription scope, search for and select **Subscriptions**. If you don't see the subscription you're looking for, select **global subscriptions filter**. Make sure the subscription you want is selected for the tenant.
-        - Select **Access control (IAM)**, select **Add**, then select **Add role assignment**.
-        - In the **Role** tab, select the **Reader** role to assign to the application in the list, then select **Next**.
-        - In the **Members** tab select **Assign access to**, then select **User, group, or service principal**.
-        - Select **Select members** and find your application, search for it by its name. Select the **Select** button, then select **Review + assign**.
+        7. Staying in the portal, select the level of scope you wish to assign the application to. For example, to assign a role at the subscription scope, search for and select **Subscriptions**. If you don't see the subscription you're looking for, select **global subscriptions filter**. Make sure the subscription you want is selected for the tenant.
+        8. Select **Access control (IAM)**, select **Add**, then select **Add role assignment**.
+        9. In the **Role** tab, select the **Reader** role to assign to the application in the list, then select **Next**.
+        10. In the **Members** tab select **Assign access to**, then select **User, group, or service principal**.
+        11. Select **Select members** and find your application, search for it by its name. Select the **Select** button, then select **Review + assign**.
 
-            ![Screenshot showing the Adding a role assignment.](./media/managed-instance-management-pack/new-spn-rbac.png)
+            ![Screenshot showing the Adding a role assignment.](./media/managed-instance-management-pack/new-spn-role-based-access-control.png)
 
             Your service principal is set up. To start using it, at the **Set Azure Run As Account** monitoring wizard step, select **New** and complete the form with the values that you can find on the app's overview page:
 
-            ![Screenshot showing the new Azure Run As account creation.](./media/managed-instance-management-pack/new-spn-runas.png)
+            ![Screenshot showing the new Azure Run As account creation.](./media/managed-instance-management-pack/new-spn-run-as.png)
 
         Once you've created the Run As Account associated with the Azure service principal name, select it from the drop-down list, then select **Next**. This Run As Account will be used for authentication in Azure Cloud.
 
