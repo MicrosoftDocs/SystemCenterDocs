@@ -63,7 +63,7 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
        If you want to use your own Azure Service Principal Name, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, then select **Next**.
 
-       ![Screenshot showing the Manual Configuring SPN.](./media/managed-instance-management-pack/use-existing-runas.png)
+       ![Screenshot showing the Manual SPN Configuration.](./media/managed-instance-management-pack/use-existing-runas.png)
 
         For more information on how to create a Microsoft Entra application and service principal that can access resources, see the following [article](/azure/active-directory/develop/howto-create-service-principal-portal) or follow the steps below to create a single tenant application in the Azure portal:
 
@@ -71,7 +71,7 @@ To configure monitoring using the automatic monitoring template, perform the fol
         - Browse to **Microsoft Entra ID** > **App registrations** then select **New registration**.
         - Name the application, for example **Azure_SQL_ManagedInstance_App_customSPN**.
         - Select a supported account type, which determines who can use the application, then select **Register**.
-        ![Screenshot showing the Registering an application.](./media/managed-instance-management-pack/register-new-spn.png)
+        ![Screenshot showing the Registration application.](./media/managed-instance-management-pack/register-new-spn.png)
         - Select **Certificates & secrets**, select **Client secrets**, and then Select **New client secret**.
         - Provide a description of the secret and a duration, then select **Add**.
 
@@ -85,13 +85,13 @@ To configure monitoring using the automatic monitoring template, perform the fol
         - In the **Role** tab, select the **Reader** role to assign to the application in the list, then select **Next**.
         - In the **Members** tab select **Assign access to**, then select **User, group, or service principal**.
         - Select **Select members** and find your application, search for it by its name. Select the **Select** button, then select **Review + assign**.
-            ![Screenshot showing the Registering an application.](./media/managed-instance-management-pack/new-spn-rbac.png)
+            ![Screenshot showing the Adding a role assignment.](./media/managed-instance-management-pack/new-spn-rbac.png)
         Your service principal is set up. To start using it, at the **Set Azure Run As Account** monitoring wizard step, select **New** and complete the form with the values that you can find on the app's overview page:
-            ![Screenshot showing the Creating new Azure Run As account.](./media/managed-instance-management-pack/new-spn-runas.png)
+            ![Screenshot showing the new Azure Run As account creation.](./media/managed-instance-management-pack/new-spn-runas.png)
 
         Once you've created the Run As Account associated with the Azure service principal name, select it from the drop-down list, then select **Next**. This Run As Account will be used for authentication in Azure Cloud.
 
-        ![Screenshot showing the Use existing Run As profile.](./media/managed-instance-management-pack/set-runas-account-manual.png)
+        ![Screenshot showing the existing Run As profile.](./media/managed-instance-management-pack/set-runas-account-manual.png)
 
 6. At the **Subscription Permissions** step, select the Azure subscriptions that you want to monitor.
 
