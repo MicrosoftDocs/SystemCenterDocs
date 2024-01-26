@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: epomortseva
 ms.author: v-ekaterinap
 manager: vvithal
-ms.date: 1/19/2024
+ms.date: 1/26/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -46,26 +46,52 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
        Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
 
+        ![Screenshot showing the Automatic Configuring SPN.](./media/managed-instance-management-pack/spn-configuration.png)
+
+        If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
+
+        ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.jpg)
+
+        Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
+
+        > [!TIP]
+        > This information is available only once. Ensure to save this information to a secure location for reuse.
+
+        ![Screenshot showing the SPN status.](./media/managed-instance-management-pack/auto-create-spn-status.png)
+
    - **Use Existing Run As Profile**
 
-       Select this option if you want to use your own Azure Service Principal Name. For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+       If you want to use your own Azure Service Principal Name, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, then select **Next**.
 
-    ![Screenshot showing the Configure SPN.](./media/managed-instance-management-pack/spn-configuration.png)
+       ![Screenshot showing the Manual Configuring SPN.](./media/managed-instance-management-pack/use-existing-runas.png)
 
-     If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
+        For more information on how to create a Microsoft Entra application and service principal that can access resources, see the following [article](/azure/active-directory/develop/howto-create-service-principal-portal) or follow the steps below to create a single tenant application in the Azure portal:
 
-    ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.jpg)
+        - Sign in to the [Azure portal](https://portal.azure.com).
+        - Browse to **Microsoft Entra ID** > **App registrations** then select **New registration**.
+        - Name the application, for example **Azure_SQL_ManagedInstance_App_customSPN**.
+        - Select a supported account type, which determines who can use the application, then select **Register**.
+        ![Screenshot showing the Registering an application.](./media/managed-instance-management-pack/register-new-spn.png)
+        - Select **Certificates & secrets**, select **Client secrets**, and then Select **New client secret**.
+        - Provide a description of the secret and a duration, then select **Add**.
 
-    Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
+            > [!TIP]
+            > Once you've saved the client secret, the value of the client secret is displayed. This is only displayed once, so copy this value and store it to a secure location for reuse.
 
-    > [!TIP]
-    > This information is available only once. Ensure to save this information to a secure location for reuse.
+            ![Screenshot showing the Client secret registration.](./media/managed-instance-management-pack/add-client-secret.png)
 
-    ![Screenshot showing the SPN status.](./media/managed-instance-management-pack/auto-create-spn-status.png)
+        - Staying in the portal, select the level of scope you wish to assign the application to. For example, to assign a role at the subscription scope, search for and select **Subscriptions**. If you don't see the subscription you're looking for, select **global subscriptions filter**. Make sure the subscription you want is selected for the tenant.
+        - Select **Access control (IAM)**, select **Add**, then select **Add role assignment**.
+        - In the **Role** tab, select the **Reader** role to assign to the application in the list, then select **Next**.
+        - In the **Members** tab select **Assign access to**, then select **User, group, or service principal**.
+        - Select **Select members** and find your application, search for it by its name. Select the **Select** button, then select **Review + assign**.
+            ![Screenshot showing the Registering an application.](./media/managed-instance-management-pack/new-spn-rbac.png)
+        Your service principal is set up. To start using it, at the **Set Azure Run As Account** monitoring wizard step, select **New** and complete the form with the values that you can find on the app's overview page:
+            ![Screenshot showing the Creating new Azure Run As account.](./media/managed-instance-management-pack/new-spn-runas.png)
 
-    If you want to use an existing Run As Profile, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, select **Next**, and select an existing Run As Account associated with the Azure service principal name. This Run As Account will be used for authentication in Azure Cloud.
+        Once you've created the Run As Account associated with the Azure service principal name, select it from the drop-down list, then select **Next**. This Run As Account will be used for authentication in Azure Cloud.
 
-    ![Screenshot showing the Use existing Run As profile.](./media/managed-instance-management-pack/existing-run-as-profile.png)
+        ![Screenshot showing the Use existing Run As profile.](./media/managed-instance-management-pack/set-runas-account-manual.png)
 
 6. At the **Subscription Permissions** step, select the Azure subscriptions that you want to monitor.
 
