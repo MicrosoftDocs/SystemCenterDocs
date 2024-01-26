@@ -71,7 +71,8 @@ To configure monitoring using the automatic monitoring template, perform the fol
         - Browse to **Microsoft Entra ID** > **App registrations** then select **New registration**.
         - Name the application, for example **Azure_SQL_ManagedInstance_App_customSPN**.
         - Select a supported account type, which determines who can use the application, then select **Register**.
-        ![Screenshot showing the Registration application.](./media/managed-instance-management-pack/register-new-spn.png)
+
+            ![Screenshot showing the Registration application.](./media/managed-instance-management-pack/register-new-spn.png)
         - Select **Certificates & secrets**, select **Client secrets**, and then Select **New client secret**.
         - Provide a description of the secret and a duration, then select **Add**.
 
@@ -85,8 +86,11 @@ To configure monitoring using the automatic monitoring template, perform the fol
         - In the **Role** tab, select the **Reader** role to assign to the application in the list, then select **Next**.
         - In the **Members** tab select **Assign access to**, then select **User, group, or service principal**.
         - Select **Select members** and find your application, search for it by its name. Select the **Select** button, then select **Review + assign**.
+
             ![Screenshot showing the Adding a role assignment.](./media/managed-instance-management-pack/new-spn-rbac.png)
-        Your service principal is set up. To start using it, at the **Set Azure Run As Account** monitoring wizard step, select **New** and complete the form with the values that you can find on the app's overview page:
+
+            Your service principal is set up. To start using it, at the **Set Azure Run As Account** monitoring wizard step, select **New** and complete the form with the values that you can find on the app's overview page:
+
             ![Screenshot showing the new Azure Run As account creation.](./media/managed-instance-management-pack/new-spn-runas.png)
 
         Once you've created the Run As Account associated with the Azure service principal name, select it from the drop-down list, then select **Next**. This Run As Account will be used for authentication in Azure Cloud.
