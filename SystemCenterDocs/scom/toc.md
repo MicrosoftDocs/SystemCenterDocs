@@ -361,7 +361,7 @@
 #### Monitoring Templates
 ##### [Automatic Monitoring Template](managed-instance-management-pack-automatic-monitoring.md)
 ##### [Manual Monitoring Template](managed-instance-management-pack-manual-monitoring.md)
-#### [Create a Service Principal](managed-instance-management-pack-service-principal)
+#### [Create a Service Principal](managed-instance-management-pack-service-principal.md)
 #### [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md)
 ### [Security Configuration](managed-instance-management-pack-security-configuration.md)
 ### [Views and Dashboards in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-views-and-dashboards.md)

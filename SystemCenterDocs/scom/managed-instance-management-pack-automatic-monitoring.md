@@ -71,7 +71,7 @@ If you want to use your own Azure Service Principal Name, at the **SPN Configura
 
 ![Screenshot showing the Manual SPN Configuration.](./media/managed-instance-management-pack/use-existing-runas.png)
 
-For more information on how to create a Microsoft Entra application and service principal that can access resources, see [Create a Service Principal](managed-instance-management-pack-service-principal).
+For more information on how to create a Microsoft Entra application and service principal that can access resources, see [Create a Service Principal](managed-instance-management-pack-service-principal.md).
 
 Once you've created the Run As Account associated with the Azure service principal name, select it from the drop-down list, then select **Next**. This Run As Account will be used for authentication in Azure Cloud.
 

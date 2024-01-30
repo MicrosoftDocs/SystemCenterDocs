@@ -17,7 +17,7 @@ In this article, you'll learn how to create a Microsoft Entra application and se
 
 When you register a new application in Microsoft Entra ID, a service principal is automatically created for the app registration. The service principal is the app's identity in the Microsoft Entra tenant. Access to resources is restricted by the roles assigned to the service principal, giving you control over which resources can be accessed and at which level. For security reasons, it's always recommended to use service principals with automated tools rather than allowing them to sign in with a user identity.
 
-In this article, you'll create a single tenant application in the Azure portal. This example is applicable for line-of-business applications used within one organization. You can also [use Azure PowerShell](https://learn.microsoft.com/entra/identity-platform/howto-authenticate-service-principal-powershell) or the [Azure CLI](https://learn.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli) to create a service principal.
+In this article, you'll create a single tenant application in the Azure portal. This example is applicable for line-of-business applications used within one organization. You can also [use Azure PowerShell](/entra/identity-platform/howto-authenticate-service-principal-powershell) or the [Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli) to create a service principal.
 
 ## Prerequisites
 
