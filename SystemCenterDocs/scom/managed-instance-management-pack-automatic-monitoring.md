@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Automatic Monitoring Template
+# Automatic monitoring template
 
 Automatic monitoring template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
 
@@ -31,7 +31,7 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
     ![Screenshot showing the Select destination management pack.](./media/managed-instance-management-pack/destination-management-pack.png)
 
-## Azure Endpoints
+## Azure endpoints
 
 At this step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox, and modify the default Azure endpoints, if necessary. The default endpoints for creating Azure Service Principal Name are as follows:
 
@@ -42,11 +42,11 @@ At this step, select the **Enable checkbox if you want to change default Azure E
 
 ![Screenshot showing the Configure Azure endpoints.](./media/managed-instance-management-pack/configuring-azure-endpoints.png)
 
-## SPN Configuration
+## SPN configuration
 
 At this step, select the configuration option that corresponds to authentication in Azure Cloud.
 
-### Auto-Create SPN
+### Auto-create SPN
 
 Select this option if you want your Azure Service Principal Name to be created automatically by the Azure SQL MI MP library using the Azure REST API.
 
@@ -65,7 +65,7 @@ Upon the successful creation of the Azure AD application, at the **Auto-Create S
 
 ![Screenshot showing the SPN status.](./media/managed-instance-management-pack/auto-create-spn-status.png)
 
-### Use Existing Run As Profile
+### Use existing Run As profile
 
 If you want to use your own Azure Service Principal Name, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, then select **Next**.
 
@@ -77,13 +77,13 @@ Once you've created the Run As Account associated with the Azure service princip
 
 ![Screenshot showing the existing Run As profile.](./media/managed-instance-management-pack/set-runas-account-manual.png)
 
-## Subscription Permissions
+## Subscription permissions
 
 At this step, select the Azure subscriptions that you want to monitor, multiple subscriptions select is also supported.
 
 ![Screenshot showing the Configure subscription permissions.](./media/managed-instance-management-pack/subscription-permissions.png)
 
-## SQL Connection Settings
+## SQL connection settings
 
 At this step, select an authentication method that you want to use to connect to your managed instances.
 
@@ -94,7 +94,7 @@ Regardless of the selected option, ensure to grant required SQL permissions to t
 
 ![Screenshot showing the Configure SQL connection settings.](./media/managed-instance-management-pack/sql-connection-settings.png)
 
-## Instances Filtering
+## Instances filtering
 
 At this optionally step, you can configure the filtering options:
 
@@ -106,7 +106,7 @@ Use an asterisk to replace any symbol/symbols.
 
 ![Screenshot showing the Configure instance filtering.](./media/managed-instance-management-pack/instance-filtering.png)
 
-## Management Pool
+## Management pool
 
 At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 

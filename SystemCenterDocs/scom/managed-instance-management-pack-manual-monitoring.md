@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Manual Monitoring Template
+# Manual monitoring template
 
 Manual monitoring template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
@@ -35,7 +35,7 @@ To configure monitoring using the manual monitoring template, perform the follow
 
     ![Screenshot showing the Create new management pack.](./media/managed-instance-management-pack/new-management-pack.png)
 
-## Service Details
+## Service details
 
 At this step, to add a new instance, select **Add Instances**.
 
