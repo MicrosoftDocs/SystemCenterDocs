@@ -27,7 +27,7 @@ To register an application in your Microsoft Entra tenant, you need:
 
 ## Permissions required for registering an app
 
-You must have sufficient permissions to register an application with your Microsoft Entra tenant, and assign to the application a role in your Azure subscription. To complete these tasks, you require `Application.ReadWrite.Allpermission`.
+You must have sufficient permissions to register an application with your Microsoft Entra tenant, and assign to the application a role in your Azure subscription. To complete these tasks, you require `Application.ReadWrite.Allpermission.`
 
 ## Register an application with Microsoft Entra ID and create a service principal
 
