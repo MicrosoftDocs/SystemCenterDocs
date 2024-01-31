@@ -3,10 +3,10 @@ title: Create Container
 description: The Create Container activity creates a new container under the specified account.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e58ceb1a-56fe-4675-95e5-a7f8187198ce

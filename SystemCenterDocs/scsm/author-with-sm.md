@@ -1,12 +1,12 @@
 ---
 title: Author with Service Manager
 description: Provides an overview of using, authoring, and customizing management packs, which enable customizations in Service Manager.
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 06/05/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.topic: article
 ---
 

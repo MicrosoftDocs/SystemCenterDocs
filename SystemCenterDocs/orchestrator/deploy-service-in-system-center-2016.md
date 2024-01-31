@@ -3,10 +3,10 @@ title: Deploy Service in System Center 2016
 description: The Deploy Service activity is used in a runbook to create a service using a specified service template.
 ms.custom: UpdateFrequency3, intro-deployment
 ms.date: 12/02/2016
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dca5c7f8-2b28-4157-8a35-001545394336
