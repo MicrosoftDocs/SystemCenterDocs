@@ -7,8 +7,8 @@ ms.author: jsuri
 manager: mkluck
 ms.date: 12/16/2020
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: include
 ---
 

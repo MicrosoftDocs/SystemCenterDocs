@@ -5,9 +5,9 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 12/11/2023
-ms.prod: system-center
+ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: include
 ---
 

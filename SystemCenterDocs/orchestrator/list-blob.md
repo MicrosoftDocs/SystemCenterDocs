@@ -3,10 +3,10 @@ title: List Blob
 description: The List Blob activity returns all user-defined metadata, standard HTTP properties, and system properties for blobs in the specified container.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a10dcef-501b-4678-b1dd-ffdd963fa430

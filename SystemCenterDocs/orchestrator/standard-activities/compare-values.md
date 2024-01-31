@@ -3,10 +3,10 @@ title: Compare Values
 description: This article compares two text values or two numerical values and then determines whether or not they are equal.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 caps.latest.revision: 12
