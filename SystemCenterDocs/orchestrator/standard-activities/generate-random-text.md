@@ -3,10 +3,10 @@ title: Generate Random Text
 description: This article describes the functionality of Generate Random Text activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d20f8d7c-c7d7-4e2a-95c3-3c514514733d

@@ -3,10 +3,10 @@ title: Set Pending Service Update in System Center 2016
 description: The Set Pending Service Update activity is used in a runbook to set a specific service template as the pending service update. The tables list the required and optional properties and published data for this activity.
 ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 18e965c9-7f74-4259-96ae-14e0b4a19efa

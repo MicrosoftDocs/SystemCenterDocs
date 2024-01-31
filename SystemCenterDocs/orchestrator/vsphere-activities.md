@@ -2,10 +2,10 @@
 title: VMware vSphere Activities
 description: This integration pack adds the VMware vSphere category to the Activities pane in the Runbook Designer.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 39775552-06b7-4a54-aece-6b62ce7ee766

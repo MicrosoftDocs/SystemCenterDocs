@@ -2,8 +2,8 @@
 title: System Center integration pack for System Center - Service Manager
 description: The article describes the integration pack for System Center - Service Manager. The pack is an add-in for System Center - Orchestrator.
 ms.date: 02/10/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
