@@ -3,10 +3,10 @@ title: Delete Container
 description: The Delete Container activity marks the specified container for deletion.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 299c0f5b-287f-4e68-8657-1cb8696b1668

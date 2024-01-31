@@ -3,10 +3,10 @@ title: REST activities
 description: The following configuration instructions apply to all activities in this integration pack. It lists event notifications.
 ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8dfe35b3-d3bf-4b34-889d-703b51672ca0

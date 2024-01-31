@@ -2,10 +2,10 @@
 title: Restart VM Instance
 description: The Restart VM Instance activity restarts the specified virtual machine.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b3e3176a-582d-4531-b882-441293114bc6

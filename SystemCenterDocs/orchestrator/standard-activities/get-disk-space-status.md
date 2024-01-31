@@ -3,10 +3,10 @@ title: Get Disk Space Status
 description: This article describes the Get Disk Space Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e092f55e-b9bd-4e78-8609-1bb5676b7dce

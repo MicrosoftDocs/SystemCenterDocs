@@ -6,9 +6,9 @@ ms.author: v-farhabano
 manager: jsuri
 ms.date: 03/15/2023
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 ms.assetid:
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.topic: include
 ---
 

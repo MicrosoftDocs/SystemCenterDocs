@@ -2,14 +2,14 @@
 title: Manage incidents and problems
 description: Provides an overview and explains how to manage incidents and problems in Service Manager.
 ms.custom: na, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 11/28/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7904413b-ace2-4e65-b609-d0804d99c764

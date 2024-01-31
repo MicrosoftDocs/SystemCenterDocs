@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 10/04/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-manager
+ms.service: system-center
+ms.subservice: service-manager
 ms.custom: UpdateFrequency.5, intro-whats-new
 ---
 

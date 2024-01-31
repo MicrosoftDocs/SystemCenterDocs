@@ -4,16 +4,18 @@ title: Automatic monitoring template in Management Pack for Azure SQL Managed In
 description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance
 author: epomortseva
 ms.author: v-ekaterinap
-manager: vvithal
-ms.date: 1/19/2024
+manager: evansma
+ms.date: 1/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Automatic Monitoring Template
+# Automatic monitoring template
 
 Automatic monitoring template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
+
+## Add Monitoring Wizard and create a destination management pack
 
 To configure monitoring using the automatic monitoring template, perform the following steps:
 
@@ -29,68 +31,89 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
     ![Screenshot showing the Select destination management pack.](./media/managed-instance-management-pack/destination-management-pack.png)
 
-4. At the **Azure Endpoints** step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox, and modify the default Azure endpoints, if necessary. The default endpoints for creating Azure Service Principal Name are as follows:
+## Azure endpoints
 
-   - Authority URI: `https://login.windows.net`
-   - Management Service URI: `https://management.azure.com`
-   - Database Resource URI: `https://database.windows.net`  
-   - Graph API Resource URI: `https://graph.windows.net`
+At this step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox, and modify the default Azure endpoints, if necessary. The default endpoints for creating Azure Service Principal Name are as follows:
 
-   ![Screenshot showing the Configure Azure endpoints.](./media/managed-instance-management-pack/configuring-azure-endpoints.png)
+- Authority URI: `https://login.windows.net`
+- Management Service URI: `https://management.azure.com`
+- Database Resource URI: `https://database.windows.net`  
+- Graph API Resource URI: `https://graph.windows.net`
 
-5. At the **SPN Configuration** step, select any of the following options:
+![Screenshot showing the Configure Azure endpoints.](./media/managed-instance-management-pack/configuring-azure-endpoints.png)
 
-   - **Auto-Create SPN**
+## SPN configuration
 
-       Select this option if you want your Azure Service Principal Name to be created automatically by the Azure SQL MI MP library using the Azure REST API.
+At this step, select the configuration option that corresponds to authentication in Azure Cloud.
 
-       Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
+### Auto-create SPN
 
-   - **Use Existing Run As Profile**
+Select this option if you want your Azure Service Principal Name to be created automatically by the Azure SQL MI MP library using the Azure REST API.
 
-       Select this option if you want to use your own Azure Service Principal Name. For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
 
-    ![Screenshot showing the Configure SPN.](./media/managed-instance-management-pack/spn-configuration.png)
+![Screenshot showing the Automatic Configuring SPN.](./media/managed-instance-management-pack/spn-configuration.png)
 
-     If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
+If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
 
-    ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.jpg)
+![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.jpg)
 
-    Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
+Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
 
-    > [!TIP]
-    > This information is available only once. Ensure to save this information to a secure location for reuse.
+> [!TIP]
+> This information is available only once. Ensure to save this information to a secure location for reuse.
 
-    ![Screenshot showing the SPN status.](./media/managed-instance-management-pack/auto-create-spn-status.png)
+![Screenshot showing the SPN status.](./media/managed-instance-management-pack/auto-create-spn-status.png)
 
-    If you want to use an existing Run As Profile, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, select **Next**, and select an existing Run As Account associated with the Azure service principal name. This Run As Account will be used for authentication in Azure Cloud.
+### Use existing Run As profile
 
-    ![Screenshot showing the Use existing Run As profile.](./media/managed-instance-management-pack/existing-run-as-profile.png)
+If you want to use your own Azure Service Principal Name, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, then select **Next**.
 
-6. At the **Subscription Permissions** step, select the Azure subscriptions that you want to monitor.
+![Screenshot showing the Manual SPN Configuration.](./media/managed-instance-management-pack/use-existing-runas.png)
 
-    ![Screenshot showing the Configure subscription permissions.](./media/managed-instance-management-pack/subscription-permissions.png)
+For more information on how to create a Microsoft Entra application and service principal that can access resources, see [Create a Service Principal](managed-instance-management-pack-service-principal.md).
 
-7. At the **SQL Connection Settings** step, select an authentication method that you want to use to connect to your managed instances.
+Once you've created the Run As Account associated with the Azure service principal name, select it from the drop-down list, then select **Next**. This Run As Account will be used for authentication in Azure Cloud.
 
-    Regardless of the selected option, ensure to grant required permissions to the selected monitoring account for all the managed instances. For more information, see [Security Configuration](managed-instance-management-pack-security-configuration.md).
+![Screenshot showing the existing Run As profile.](./media/managed-instance-management-pack/set-runas-account-manual.png)
 
-    ![Screenshot showing the Configure SQL connection settings.](./media/managed-instance-management-pack/sql-connection-settings.png)
+## Subscription permissions
 
-8. At the **Configure Instances Filtering** step, you can configure the filtering options:
+At this step, select the Azure subscriptions that you want to monitor, multiple subscriptions select is also supported.
 
-   - Exclude
+![Screenshot showing the Configure subscription permissions.](./media/managed-instance-management-pack/subscription-permissions.png)
 
-      Select this option to specify instances that shouldn't be discovered.
+## SQL connection settings
 
-   - Include
+At this step, select an authentication method that you want to use to connect to your managed instances.
 
-      Select this option to specify only those instances that you want to be discovered.
+> [!IMPORTANT]
+> The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
 
-    Use an asterisk to replace any symbol/symbols.
+Regardless of the selected option, ensure to grant required SQL permissions to the selected monitoring account for all the managed instances. For more information, see [Security Configuration](managed-instance-management-pack-security-configuration.md).
 
-    ![Screenshot showing the Configure instance filtering.](./media/managed-instance-management-pack/instance-filtering.png)
+![Screenshot showing the Configure SQL connection settings.](./media/managed-instance-management-pack/sql-connection-settings.png)
 
-9. At the **Summary** step, review the connection settings and select **Create**.
+## Instances filtering
 
-    ![Screenshot showing the Review connection settings.](./media/managed-instance-management-pack/review-connection-settings.png)
+At this optionally step, you can configure the filtering options:
+
+- Exclude - select this option to specify instances that shouldn't be discovered.
+
+- Include - select this option to specify only those instances that you want to be discovered.
+
+Use an asterisk to replace any symbol/symbols.
+
+![Screenshot showing the Configure instance filtering.](./media/managed-instance-management-pack/instance-filtering.png)
+
+## Management pool
+
+At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
+
+![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/choose-management-pool.png)
+
+## Summary
+
+At this step, review all the configuration and connection settings and select **Create**.
+
+![Screenshot showing the Review connection settings.](./media/managed-instance-management-pack/review-connection-settings.png)
