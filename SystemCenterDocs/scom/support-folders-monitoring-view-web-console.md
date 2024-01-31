@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 08/04/2020
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 MonikerRange: '>=sc-om-2019'
 ms.custom: UpdateFrequency2
 ---
