@@ -1,10 +1,10 @@
 ---
 ms.assetid:
 description: include file to summarize the release notes for System Center 2022 - Orchestrator
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod:  system-center
 ms.technology: Orchestrator
 keywords:

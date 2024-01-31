@@ -2,9 +2,9 @@
 ms.assetid:
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2019.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 12/13/2023
 ms.topic: include
 ms.prod:  system-center

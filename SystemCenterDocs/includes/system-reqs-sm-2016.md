@@ -1,10 +1,10 @@
 ---
 title: include file
-manager: mkluck
 description: include file to describe the system requirements for Service Manager 2016.
 ms.prod: system-center-2016
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/08/2021
 ms.technology: service-manager
 ms.topic: include

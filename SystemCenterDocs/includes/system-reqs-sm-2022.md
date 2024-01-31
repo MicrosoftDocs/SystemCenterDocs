@@ -1,11 +1,11 @@
 ---
 title: include file
-manager: mkluck
 description: include file to describe the hardware, software, and other system requirements  Service Manager 2022.
 ms.custom: na
-ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/04/2023
 ms.reviewer: na
 ms.suite: na
