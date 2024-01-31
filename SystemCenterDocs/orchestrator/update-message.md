@@ -2,10 +2,10 @@
 title: Update Message
 description: The Update Message activity is used in a runbook to update an existing message.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ba06a70c-1b93-4588-9ef7-15ae6ba47dbd

@@ -3,10 +3,10 @@ title: List Container
 description: The List Container activity returns a list of the containers under the specified storage account.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6b2bb18f-00dd-44da-a4be-d2ec57f9a257

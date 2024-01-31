@@ -2,10 +2,10 @@
 title: Delete Custom Attribute
 description: The Delete Custom Attribute activity is used in a runbook to delete a custom attribute from an existing message.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a33075ab-042d-4efa-81b6-1efa8f8fa578

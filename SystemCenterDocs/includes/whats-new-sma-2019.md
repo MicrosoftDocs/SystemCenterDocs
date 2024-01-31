@@ -5,10 +5,10 @@ manager:  mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
-ms.prod:  system-center
+ms.service: system-center
 keywords:  
 ms.date: 03/14/2019
-ms.technology:  service-management-automation
+ms.subservice: service-management-automation
 ms.assetid:  c247a287-a48f-4e79-8f0a-ec2759c42db3
 ---
 
