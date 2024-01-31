@@ -4,8 +4,8 @@ manager:  mkluck
 ms.topic: include
 author:  Farha-Bano
 ms.author: v-farhabano
-ms.prod:  system-center
-ms.technology: service-manager
+ms.service: system-center
+ms.subservice: service-manager
 keywords:
 ms.date: 11/07/2023
 title: include file

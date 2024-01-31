@@ -7,8 +7,8 @@ ms.author: v-ekaterinap
 manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

@@ -2,14 +2,14 @@
 title: Refresh OLAP data cube information
 description: Explains how to refresh OLAP data cube information in Service Manager.
 ms.custom: na, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 12/15/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aeb99cdc-6d17-4979-bbf8-76f822e2636b

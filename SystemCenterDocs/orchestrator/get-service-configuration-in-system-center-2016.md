@@ -2,8 +2,8 @@
 title: Get Service Configuration activity in System Center
 description: Describes the Get Service Configuration activity that is used in a runbook to return all the service configurations on the VMM management server that meet the filtering criteria.
 ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika

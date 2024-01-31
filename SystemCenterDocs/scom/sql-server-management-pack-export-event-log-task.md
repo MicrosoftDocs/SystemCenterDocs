@@ -7,8 +7,8 @@ author: epomortseva
 ms.author: v-ekaterinap
 ms.date: 06/13/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Export event log Task
@@ -27,7 +27,7 @@ For the SQL Server DB Engine on Windows in the agentless monitoring mode, this t
 
 3. Use the **Override** button to fine-tune the task parameters.
 
-4. Specify the **Task Credentials** for the target SQL Server DB Engine according to its monitoring type and run the task.
+4. Specify the **Task Credentials** for the target SQL Server DB Engine according to its monitoring type and run the task. Date and/or time must be specified in at least one parameter.
 
 ## Tasks parameters
 
@@ -58,11 +58,9 @@ The following date time formats can be used:
 |Parameter|Format|
 |-|-|
 |Date|MM-YYYY-DD|
-||DD-YYYY-MM
 || MM-YYYY
 ||YYYY-MM|
 |Time|HH AM/PM|
-||HH:MM:SS AM/PM|
 ||HH:MM:SS GMT|
 ||HH:MM:SS +H:00|
 
@@ -119,6 +117,6 @@ The following parameters for specifying the duration range:
 
 - The time range is a specific period during the current day.
 
-   Date From=PT10H:30M:30S and Date To=PT3H:30M.
+   Date From=PT10H30M30S and Date To=PT3H30M.
 
    An event log file is created with the log history exported for the period starting 10 hours, 30 minutes, and 30 seconds before the request time and ending 3 hours and 30 minutes before the request time.

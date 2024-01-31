@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 07/05/2019
 ms.topic: article
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ---
 
 # Set up TLS for Orchestrator

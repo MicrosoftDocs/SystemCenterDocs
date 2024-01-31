@@ -1,12 +1,12 @@
 ---
 title: Plan for hardware performance
 description: Describes planning considerations for Service Manager hardware performance.
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 01/23/2018
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2
 ---
