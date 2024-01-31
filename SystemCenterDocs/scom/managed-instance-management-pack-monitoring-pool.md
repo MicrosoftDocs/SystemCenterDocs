@@ -9,6 +9,7 @@ ms.date: 1/31/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
+ms.custom: engagement-fy23
 ---
 
 # Azure SQL Managed Instance Monitoring Pool

@@ -7,8 +7,8 @@ ms.author: v-ekaterinap
 manager: evansma
 ms.date: 12/28/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for Azure SQL Managed Instance
