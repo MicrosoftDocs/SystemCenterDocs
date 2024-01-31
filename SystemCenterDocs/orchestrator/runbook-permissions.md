@@ -1,10 +1,10 @@
 ---
 title: Runbook permissions
 description: This article describes how to set permissions for users to access runbook properties.
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef

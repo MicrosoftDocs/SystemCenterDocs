@@ -2,14 +2,14 @@
 title: Add or remove workflow activities
 description: You can add or remove Service Manager workflow activities in a workflow to automate processes.
 ms.custom: UpdateFrequency2, engagement-fy24
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 01/22/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 32de708f-02f7-4021-882b-14ed140ebc89

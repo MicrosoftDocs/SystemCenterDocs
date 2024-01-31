@@ -3,10 +3,10 @@ title: Update Object
 description: The Update Object activity is used to change the values of one or more properties of an existing object.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 08/22/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8aacf84b-0606-4bf7-b094-865108bbfae7

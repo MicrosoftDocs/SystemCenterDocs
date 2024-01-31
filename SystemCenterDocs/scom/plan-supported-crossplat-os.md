@@ -6,8 +6,8 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 01/12/2024
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.custom: engagement-fy23, UpdateFrequency.5
 ---

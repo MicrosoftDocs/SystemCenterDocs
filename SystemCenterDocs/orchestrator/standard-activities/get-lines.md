@@ -3,10 +3,10 @@ title: Get Lines
 description: This article describes the Get Lines activity that gets multiple lines from a text file according to criteria that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 846ae2cb-ab9c-4d59-b0ca-3f0e82c8cbd6

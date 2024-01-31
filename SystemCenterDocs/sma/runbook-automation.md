@@ -4,10 +4,10 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 ms.date: 09/04/2023
 title: Automate Microsoft Azure Pack operations with runbooks
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

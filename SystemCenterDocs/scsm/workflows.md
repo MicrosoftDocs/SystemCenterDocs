@@ -5,10 +5,10 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 01/22/2024
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.assetid: b204c2fc-c65e-41f3-a650-e425060f61b3
 ms.custom: UpdateFrequency3, engagement-fy24
 ---

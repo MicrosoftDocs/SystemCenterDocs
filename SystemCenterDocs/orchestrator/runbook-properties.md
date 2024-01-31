@@ -2,10 +2,10 @@
 title: View and configure Runbook properties
 description: This article describes how you can View and configure Runbook properties.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3bd4992a-badc-4d36-9e64-52e2a167f9e8

@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 12/13/2023
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
 ms.topic: troubleshooting-general
 monikerRange: '>=sc-om-2019'
 ---
