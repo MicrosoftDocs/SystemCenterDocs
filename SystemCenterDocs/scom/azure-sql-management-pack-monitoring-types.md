@@ -8,8 +8,8 @@ ms.author: v-vchernov
 manager: evansma
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Monitoring Types

@@ -1,14 +1,14 @@
 ---
 title: Enable service logon
 description: the article provides information about how to enable service logon as log on type.
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 07/13/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5eb94e4f-72b8-46ec-8417-5d776cc6288f

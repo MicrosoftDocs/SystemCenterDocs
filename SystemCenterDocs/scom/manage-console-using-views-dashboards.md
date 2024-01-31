@@ -6,8 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 11/28/2023
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 0b8ed9f1-b1f0-4006-976f-84d654c5f1da
 ---

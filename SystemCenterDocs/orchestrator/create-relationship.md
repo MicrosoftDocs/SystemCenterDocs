@@ -3,10 +3,10 @@ title: Create Relationship
 description: The Create Relationship activity is used to create a relationship between two existing entities.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 10/10/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 63ab5e0c-4407-401b-9f43-59ca1a3a4915

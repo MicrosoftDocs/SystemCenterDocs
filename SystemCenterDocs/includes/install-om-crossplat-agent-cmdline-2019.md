@@ -7,8 +7,8 @@ ms.author: jsuri
 manager:  mkluck
 ms.date:  03/14/2019
 ms.topic:  include
-ms.prod:  system-center
-ms.technology:  operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 ## Install Operations Manager 2019 agent on UNIX and Linux computers

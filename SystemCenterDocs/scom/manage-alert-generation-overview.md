@@ -6,8 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 12/15/2023
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: abf93e05-3b1d-499c-bb23-1fbe7cc8bd93
 ---

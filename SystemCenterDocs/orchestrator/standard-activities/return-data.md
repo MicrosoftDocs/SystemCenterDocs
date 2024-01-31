@@ -3,10 +3,10 @@ title: Return Data
 description: This article describes the Return Data activity that allows you to return data from the current runbook to a runbook that invoked the runbook.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60cdc2df-a0fe-49a8-aebf-ee1e2f9c60b9

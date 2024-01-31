@@ -3,10 +3,10 @@ title: Delete VM Data Disk
 description: The Delete VM Data Disk activity removes the specified data disk from a virtual machine.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 16b29d57-c3d9-407d-949f-94dc8b4e4ef0
