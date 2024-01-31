@@ -3,10 +3,10 @@ title: Create Folder activity
 description: This article describes the Create Folder activity that creates a new folder on the local file system
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8fdf738a-6dc7-4173-a940-406d9cb81729

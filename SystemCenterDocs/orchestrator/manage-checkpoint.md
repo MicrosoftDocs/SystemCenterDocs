@@ -3,10 +3,10 @@ title: Manage Checkpoint
 description: The Manage Checkpoint activity is used to restore a virtual machine to the state when the checkpoint was created or to remove a checkpoint that is no longer needed.
 ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ab911e0f-d549-4e63-ba67-fe2641ca5136

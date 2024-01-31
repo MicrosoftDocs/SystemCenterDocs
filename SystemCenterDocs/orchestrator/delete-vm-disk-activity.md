@@ -2,8 +2,8 @@
 title: Delete VM Disk activity
 description: The Delete VM Disk activity is used in a runbook to remove or delete a virtual disk from a virtual machine that is controlled by the VMware vSphere server. It also lists the required properties.
 ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
