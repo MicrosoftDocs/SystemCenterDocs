@@ -1,10 +1,10 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 2022.
-manager:  mkluck
 ms.topic:  include
-author:  jyothisuri
-ms.author: jsuri
-ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.prod:  system-center
 keywords:
 ms.date:  11/08/2022
 title:  include file

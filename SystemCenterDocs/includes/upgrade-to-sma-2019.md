@@ -1,9 +1,9 @@
 ---
 description: include file to provide information about how to upgrade your existing Service Management Automation to release 2019.
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod:  system center
 keywords:  
 ms.date: 03/14/2019

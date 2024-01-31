@@ -2,10 +2,10 @@
 ms.assetid:
 title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/15/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/31/2024
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -72,11 +72,11 @@ See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deplo
 
 ### Support for VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0
 
-VMM 2022 UR1 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
+VMM 2022 UR1 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022&preserve-view=true).
 
 ### Support for SQL Server 2022
 
-VMM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
+VMM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022&preserve-view=true).
 
 ### Support for Smart card sign in in SCVMM Console
 
@@ -92,7 +92,7 @@ With VMM 2022 UR1, removed VMM dependencies on deprecated SCOM Management Packs.
 
 ### Discover Arc-enabled SCVMM from VMM console
 
-VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2022).
+VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2022&preserve-view=true).
 
 ### Support for 64 virtual networks for Windows Server 2019 or later
 VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.
