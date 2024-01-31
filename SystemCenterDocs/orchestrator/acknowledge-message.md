@@ -4,8 +4,8 @@ description: The Acknowledge Message activity is used in a runbook to acknowledg
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 ms.custom: UpdateFrequency3
 monikerRange: '<=sc-orch-2019'
