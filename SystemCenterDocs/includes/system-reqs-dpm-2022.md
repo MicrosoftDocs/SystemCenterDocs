@@ -8,7 +8,7 @@ ms.prod: system-center
 keywords:
 ms.date: 05/02/2022
 title: Preparing your environment for System Center Data Protection Manager
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid:
 ---
 

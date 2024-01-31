@@ -9,7 +9,7 @@ manager: jsuri
 ms.date: 10/04/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid: 47fbb6f8-f811-4661-96f3-075cf3b22c9e

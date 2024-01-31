@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  08/19/2020
 ms.topic:  include
-ms.prod:  system-center
-ms.technology: service-management-automation
+ms.service: system-center
+ms.subservice: service-management-automation
 ---
 > [!IMPORTANT]
 >

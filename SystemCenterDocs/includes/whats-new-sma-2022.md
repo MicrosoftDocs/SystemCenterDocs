@@ -8,7 +8,7 @@ manager: jsuri
 ms.prod:  system-center
 keywords:  
 ms.date: 06/09/2022
-ms.technology:  service-management-automation
+ms.subservice: service-management-automation
 ms.assetid: 
 ---
 

@@ -3,10 +3,10 @@ title: Rename File
 description: This article describes the functionality of Rename File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c2f45811-c1de-4b38-b52d-e4f329c36868

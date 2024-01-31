@@ -7,7 +7,7 @@ manager: jsuri
 ms.prod: system-center
 ms.date: 01/31/2024
 title: What's new in System Center DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid:
 ms.custom: intro-whats-new
 ---

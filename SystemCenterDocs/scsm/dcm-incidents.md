@@ -5,9 +5,9 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 ms.date: 09/26/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 

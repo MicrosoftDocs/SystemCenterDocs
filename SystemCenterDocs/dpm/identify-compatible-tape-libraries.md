@@ -1,11 +1,11 @@
 ---
 description: This article describes how you can identify tape libraries compatible with DPM.
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 11/01/2017
 title: Identify compatible tape libraries
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika

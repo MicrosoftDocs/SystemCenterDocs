@@ -3,10 +3,10 @@ title: Get Activity
 description: The Get Activity activity is used to query for activity records for the selected activity class.
 ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 60938aea-2ad0-42b2-b425-09d02b3d5053
