@@ -7,8 +7,8 @@ ms.author: jsuri
 manager:  evansma
 ms.date:  08/19/2020
 ms.topic:  include
-ms.prod:  system-center
-ms.technology: service-provider-foundation  
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ---
 > [!IMPORTANT]
 >
