@@ -1,9 +1,9 @@
 ---
 description: include file to provide information about how to upgrade your existing Service Management Automation to release 1801.
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 05/31/2018

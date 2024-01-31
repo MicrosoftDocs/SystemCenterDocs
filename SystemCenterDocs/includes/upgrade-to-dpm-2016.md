@@ -1,9 +1,9 @@
 ---
 description: Learn about the new features when you upgrade to DPM 2016. This article also provides an overview of how to upgrade your DPM installation.
-manager: mkluck
 ms.topic:  article
-author:  jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod:  system-center-threshold
 keywords:
 ms.date:  05/31/2021

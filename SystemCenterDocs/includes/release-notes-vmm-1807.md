@@ -2,9 +2,9 @@
 ms.assetid: 1bbf9096-f1aa-438a-b40e-8df3c021f3b2
 title: include file
 description: include file to detail the release notes for System Center 1807 Virtual Machine Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-2016

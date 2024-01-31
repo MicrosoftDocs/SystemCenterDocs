@@ -1,10 +1,10 @@
 ---
 ms.assetid: d90ac676-292f-4b33-aa79-b7a5870c1ea3
 description: include file to provide Release Notes for System Center 2016 -Orchestrator
-manager: mkluck
 ms.topic:  include file
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod:  system-center-threshold
 ms.technology: Orchestrator
 keywords:

@@ -2,9 +2,9 @@
 ms.assetid:
 title: include file
 description: This include file details the Linux log file monitoring in Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager:  mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  05/08/2023
 ms.topic:  include
 ms.prod:  system-center

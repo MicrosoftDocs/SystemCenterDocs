@@ -1,9 +1,9 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2022 in your environment.
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 05/02/2022

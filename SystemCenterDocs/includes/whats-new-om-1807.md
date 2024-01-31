@@ -2,9 +2,9 @@
 ms.assetid: 70fad9da-0c8b-4b0a-abbd-a1246b57da5b
 title: include file
 description: include file to describe the new features in Operations Manager 1807.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 12/21/2018
 ms.custom: na
 ms.prod: system-center

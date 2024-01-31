@@ -2,13 +2,13 @@
 ms.assetid: c3c34c0d-4f06-489a-aaba-0a96b9d8eaf9
 title: include file
 description: include file to provide the system requirements for System Center 2016 - Orchestrator, and includes the  general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 12/18/2020
 ms.prod: system-center-threshold
 ms.technology: Orchestrator
 ms.topic: include
-ms-author: jsuri
 ---
 
 

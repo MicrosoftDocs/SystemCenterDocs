@@ -1,11 +1,11 @@
 ---
 title: include file
-manager: mkluck
 description: include file to describe the hardware, software, and other system requirements Service Manager 1807.
 ms.custom: na
 ms.prod: system-center-2016
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/14/2019
 ms.reviewer: na
 ms.suite: na

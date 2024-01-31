@@ -1,10 +1,10 @@
 ---
 title:  include file
 description: include file to describe the new features and other changes in System Center 1807 - Service Manager.
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 07/24/2018

@@ -1,14 +1,14 @@
 ---
 description: This article provides the new features and feature updates supported by System Center DPM 2022.
-manager: mkluck
 ms.topic: include
-author: jyothisuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod: system-center
 ms.date: 12/04/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
-ms.author: jsuri
 ms.custom: intro-whats-new
 ---
 

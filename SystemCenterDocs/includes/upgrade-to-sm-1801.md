@@ -1,11 +1,11 @@
 ---
 title: include file
 description: include file that outlines planning considerations and the order to upgrade from System Center 2012 R2/2016 Service Manager to Service Manager in System Center 1801.  
-manager: mkluck
 ms.custom: na
 ms.prod: system-center-2016
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/09/2018
 ms.reviewer: na
 ms.suite: na

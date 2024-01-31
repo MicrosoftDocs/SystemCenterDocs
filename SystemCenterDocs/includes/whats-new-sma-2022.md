@@ -1,10 +1,10 @@
 ---
 title:  include file
 description: include file to describe the new features and other changes in System Center Service Management Automation 2022.
-manager:  mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.prod:  system-center
 keywords:  
 ms.date: 06/09/2022

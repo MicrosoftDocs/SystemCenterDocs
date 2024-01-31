@@ -1,9 +1,9 @@
 ---
 title: include file
 description: include file to provide information about how to upgrade to System Center Service Provider Foundation (SPF) 2019 from a previous version.
-author: jyothisuri
-ms.author: jsuri
-manager:  mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  02/21/2023
 ms.topic: include
 ms.prod:  system center
