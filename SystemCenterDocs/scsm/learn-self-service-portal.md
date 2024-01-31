@@ -2,14 +2,14 @@
 title: New Self-Service portal deployment scenarios and troubleshooting
 description: This article helps you understand what you need to know before you deploy the new Service Manager Self-Service portal, and troubleshoot its installation.
 ms.custom: engagement-fy23
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/19/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
