@@ -3,10 +3,10 @@ title: Start-Stop Service
 description: This article provides detailed information about the start-stop service activity and how to configure it.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d1aedb89-b6c9-44fd-9491-9818f5d1327a
