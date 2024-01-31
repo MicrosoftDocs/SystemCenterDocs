@@ -3,10 +3,10 @@ description: This article provides the new features and feature updates supporte
 manager: mkluck
 ms.topic: include
 author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 ms.date: 12/04/2023
 title: What's new in System Center DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid:
 ms.author: jsuri
 ms.custom: intro-whats-new

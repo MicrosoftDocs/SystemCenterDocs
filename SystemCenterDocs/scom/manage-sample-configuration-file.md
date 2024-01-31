@@ -5,11 +5,11 @@ description: This article describes a sample configuration file for collecting L
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/24/2020
+ms.date: 01/24/2024
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 monikerRange: '>=sc-om-1801'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -18,6 +18,13 @@ ms.topic: article
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
+>[!Note]
+>System Center Operations Manager won't support the fluentD based log file monitoring upon the OMS agent retirement which is scheduled for August 2024.
 
 ::: moniker-end
 

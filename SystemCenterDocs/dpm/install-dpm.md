@@ -6,8 +6,8 @@ title: Installing DPM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
-ms.technology: data-protection-manager
+ms.service: system-center
+ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ---
 

@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 07/28/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-management-automation
+ms.service: system-center
+ms.subservice: service-management-automation
 monikerRange: '>sc-sma-2016'
 ms.custom: UpdateFrequency2
 ---

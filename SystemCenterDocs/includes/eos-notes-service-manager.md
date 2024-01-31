@@ -7,8 +7,8 @@ ms.author: jsuri
 manager:  mkluck
 ms.date:  08/25/2022
 ms.topic:  include
-ms.prod:  system-center
-ms.technology: service-manager
+ms.service: system-center
+ms.subservice: service-manager
 ---
 > [!IMPORTANT]
 >

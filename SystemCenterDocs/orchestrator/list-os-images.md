@@ -3,10 +3,10 @@ title: List OS Images
 description: The List OS Images activity retrieves a list of the operating system images from the image repository.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b89cdf77-e3d9-4513-a0c6-657bdc0ef3c7

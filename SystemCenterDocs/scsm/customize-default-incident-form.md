@@ -2,14 +2,14 @@
 title: Customize the default incident form for the sample scenario
 description: This sample scenario article describes how to apply simple customizations to a default form in the Service Manager Authoring Tool.
 ms.custom: na, UpdateFrequency2
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2af8b9d4-f736-4f96-b058-a96b10a64aca

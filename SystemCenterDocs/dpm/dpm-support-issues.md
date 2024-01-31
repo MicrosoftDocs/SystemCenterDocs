@@ -4,11 +4,11 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 11/21/2022
 title: What's supported and what isn't for DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
 ms.custom: engagement-fy23, UpdateFrequency.5
 ---

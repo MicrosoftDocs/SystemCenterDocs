@@ -2,8 +2,8 @@
 title: Back up Orchestrator
 description: Describes how to backup a System Center - Orchestrator environment.
 ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
