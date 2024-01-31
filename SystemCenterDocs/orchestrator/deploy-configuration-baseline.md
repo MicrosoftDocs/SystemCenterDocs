@@ -3,10 +3,10 @@ title: Deploy Configuration Baseline activity
 description: Describes the configurable properties for the Deploy Configuration Baseline activity for Configuration Manager Integration Pack.
 ms.custom: na, intro-deployment, UpdateFrequency3
 ms.date: 03/15/2017
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a3f3137f-3e5a-44bc-9623-d541d1348e9e

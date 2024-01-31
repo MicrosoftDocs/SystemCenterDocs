@@ -5,13 +5,17 @@ description: This article explains the monitoring configuration in Management Pa
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/05/2024
+ms.date: 1/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
 # Monitoring Configuration in Management Pack for Azure SQL Managed Instance
+
+This section explains monitoring configurations in Management Pack for Azure SQL Managed Instance.
+
+## Monitoring Templates
 
 Management Pack for Azure SQL Managed Instance has two monitoring templates for monitoring of Azure SQL Managed Instance:
 
@@ -23,7 +27,7 @@ Management Pack for Azure SQL Managed Instance has two monitoring templates for 
 
     This template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Using both the templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and may also cause performance issues.
 
 ## Space Monitoring

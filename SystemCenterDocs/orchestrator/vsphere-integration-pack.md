@@ -1,8 +1,8 @@
 ---
 title: VMware vSphere integration pack for System Center - Orchestrator
 description: This article describes the integration pack for VMware vSphere in System Center - Orchestrator.
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika

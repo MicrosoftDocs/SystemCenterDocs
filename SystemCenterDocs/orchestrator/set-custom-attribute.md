@@ -2,10 +2,10 @@
 title: Set Custom Attribute
 description: The Set Custom Attribute activity is used in a runbook to create or update a custom attribute for an existing message.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7655d0b0-8b28-495a-8431-e9962a6d5fcd

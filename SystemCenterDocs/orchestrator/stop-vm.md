@@ -3,10 +3,10 @@ title: Stop VM
 description: The Stop VM activity is used to stop a virtual machine that is currently running or in a paused state.
 ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b21b1694-b13c-4547-9029-b24ba6ee38a4

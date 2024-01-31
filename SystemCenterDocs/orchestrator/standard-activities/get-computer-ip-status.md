@@ -3,10 +3,10 @@ title: Get Computer-IP Status
 description: This article describes the Get Computer/IP Status activity.
 ms.custom: engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 22f388d5-ad23-4722-a3f5-25e26893dba8
