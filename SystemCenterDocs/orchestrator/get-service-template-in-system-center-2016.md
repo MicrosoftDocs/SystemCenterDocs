@@ -3,10 +3,10 @@ title: Get Service Template in System Center 2016
 description: The Get Service Template activity is used in a runbook to return a list of all service templates. The activity publishes all the data from the required and optional properties into published data.
 ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 123a7e67-47af-4ec5-af94-22f3866d6d4a

@@ -7,8 +7,8 @@ ms.author: jsuri
 manager:  mkluck
 ms.date:  05/08/2023
 ms.topic:  include
-ms.prod:  system-center
-ms.technology:  operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 ## Overview of configuration
