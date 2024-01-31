@@ -5,9 +5,9 @@ author: Farha-Bano
 ms.author: v-farhabano
 manager: jsuri
 ms.date: 08/02/2023
-ms.prod: system-center
+ms.service: system-center
 ms.assetid: 
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.topic: include
 ---
 

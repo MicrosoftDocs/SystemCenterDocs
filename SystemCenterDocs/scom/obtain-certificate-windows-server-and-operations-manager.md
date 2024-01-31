@@ -8,8 +8,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 01/28/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Obtain a certificate for use with Windows Servers and System Center Operations Manager

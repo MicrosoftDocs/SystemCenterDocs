@@ -2,10 +2,10 @@
 title: Shutdown VM Instance
 description: The Shutdown VM Instance activity shuts down the specified virtual machine.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a60f46a3-7696-4857-8cd9-eecc2162c9ee

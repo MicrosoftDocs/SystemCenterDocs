@@ -3,10 +3,10 @@ title: Monitor SNMP Trap
 description: This article describes the Monitor SNMP Trap activity that waits for an event to occur either in the Microsoft SNMP Trap Service, or on a port that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ca394727-e584-4422-9ce2-5760f29e93d2
