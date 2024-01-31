@@ -3,10 +3,10 @@ title: Active Directory Activities
 description: This article contains configuration instructions for Active Directory activities.
 ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 73d76ac0-8eee-466a-b11b-3df39e045d6d

@@ -2,10 +2,10 @@
 title: List Folders or Files
 description: The List Folders/Files activity is used in a runbook to list the folders and files in the specified folder path.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f7816e0c-c185-4f76-967d-5b501fe39f58

@@ -2,10 +2,10 @@
 title: Update Deployment Status
 description: The Update Deployment Status activity initiates a change in deployment status.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: affe5f1b-7ae3-496c-89eb-35d8a74c8ea5

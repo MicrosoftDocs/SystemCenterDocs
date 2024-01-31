@@ -3,10 +3,10 @@ title: Delete Deployment
 description: The Delete Deployment activity deletes the specified deployment.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 40e827f1-2dfa-4a05-81c8-e23bfd8643ec
