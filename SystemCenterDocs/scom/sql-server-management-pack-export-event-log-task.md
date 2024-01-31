@@ -7,8 +7,8 @@ author: epomortseva
 ms.author: v-ekaterinap
 ms.date: 06/13/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Export event log Task

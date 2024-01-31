@@ -3,10 +3,10 @@ title: Create Item
 description: The Create Item activity is used in a runbook to create new appointment, contact group, and Email Message or task items.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 09/05/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5e06c804-4544-4479-a664-d4a92df0c20b

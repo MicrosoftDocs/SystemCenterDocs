@@ -7,8 +7,8 @@ ms.author: v-ekaterinap
 manager: evansma
 ms.date: 12/8/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Reporting Services Run As Profiles

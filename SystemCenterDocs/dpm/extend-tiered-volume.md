@@ -4,11 +4,11 @@ ms.topic:  article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center
+ms.service: system-center
 keywords:
 ms.date:  11/04/2020
 title:  Extend tiered volume in System Center Data Protection Manager
-ms.technology:  data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
 ms.custom: UpdateFrequency2
 ---

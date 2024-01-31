@@ -1,11 +1,11 @@
 ---
 description: A complete matrix of all workloads, data types, and installations that DPM protects.
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 11/07/2023
 title: What can System Center Data Protection Manager back up?
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika

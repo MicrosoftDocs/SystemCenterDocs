@@ -2,14 +2,14 @@
 title: Configure the way activities manage and pass information
 description: You can configure the way that activities manage and pass information in Service Manager authoring.
 ms.custom: engagement-fy24, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 09/26/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1c7f52a4-3af1-4640-a71c-157dcc8e7f49

@@ -5,8 +5,8 @@ manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.author: jsuri
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 keywords:
 ms.date: 02/05/2018
 title: include file

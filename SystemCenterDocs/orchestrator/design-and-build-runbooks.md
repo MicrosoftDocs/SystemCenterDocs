@@ -1,8 +1,8 @@
 ---
 title: Build and test runbooks in System Center - Orchestrator
 description: This article provides guidance and detailed procedures for creating and testing runbooks in System Center - Orchestrator.
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika

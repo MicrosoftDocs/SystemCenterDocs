@@ -5,8 +5,8 @@ manager:  mkluck
 ms.topic:  include
 author:  jyothisuri
 ms.author: jsuri
-ms.prod:  system-center
-ms.technology: service-management-automation
+ms.service: system-center
+ms.subservice: service-management-automation
 keywords:
 ms.date: 03/14/2019
 title:  include file

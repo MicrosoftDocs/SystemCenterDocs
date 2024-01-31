@@ -3,10 +3,10 @@ title: Get SNMP Variable
 description: This article describes the Get SNMP Variable activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7bb233a2-aa1f-4739-8f43-fb5004ba4342

@@ -6,9 +6,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/21/2022
-ms.prod: system-center
+ms.service: system-center
 monikerRange: '>=sc-om-2019'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ms.custom: UpdateFrequency2
 ---

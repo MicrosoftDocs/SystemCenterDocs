@@ -3,10 +3,10 @@ title: Exchange Users Activities
 description: The configuration instructions in this article apply to all activities in the Exchange Users Integration Pack.
 ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 624f4afd-f248-4e1c-a2c2-e747d2ed3fd4

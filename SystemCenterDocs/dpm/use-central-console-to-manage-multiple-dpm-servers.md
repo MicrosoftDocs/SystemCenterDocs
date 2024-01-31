@@ -1,11 +1,11 @@
 ---
 description: Explains why you should use the Central Console to manage multiple DPM servers and how to install the console.
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 03/07/2022
 title: Manage multiple DPM servers with Central Console
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 6e08e911-36e0-48d6-b71e-df4741811a0a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
