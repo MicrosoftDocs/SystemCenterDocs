@@ -6,10 +6,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 07/19/2018
 ms.custom: UpdateFrequency2
-ms.prod: system-center
+ms.service: system-center
 monikerRange: '>=sc-om-1807'
 ms.assetid:
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

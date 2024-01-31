@@ -6,8 +6,8 @@ summary: Service Management Automation (SMA) is an IT process automation solutio
 metadata:
   title: Service Management Automation documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Service Management Automation (SMA) is an IT process automation solution for Windows Azure Pack for Windows Server. It enables you to automate the creation, monitoring, and deployment of resources in your Windows Azure Pack environment. # Required; article description that is displayed in search results. < 160 chars.
-  ms.prod: system-center
-  ms.technology: service-management-automation
+  ms.service: system-center
+  ms.subservice: service-management-automation
   ms.topic: landing-page # Required
   author: Farha-Bano #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-farhabano #Required; microsoft alias of author; optional team alias.

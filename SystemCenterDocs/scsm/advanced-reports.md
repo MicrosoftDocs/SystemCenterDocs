@@ -2,14 +2,14 @@
 title: Advanced analytical reports in Service Manager
 description: Provides a reference of advanced analytical reports available in Service Manager.
 ms.custom: na, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 05/10/2021
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
