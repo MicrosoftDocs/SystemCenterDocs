@@ -2,10 +2,10 @@
 title: Snapshot Blob
 description: The Snapshot Blob activity creates a read-only snapshot of a blob.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4817dd67-6ee5-4c2f-86dd-82b3ee90fa51
