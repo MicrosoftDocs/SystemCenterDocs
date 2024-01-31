@@ -3,10 +3,10 @@ title: Run Program
 description: This article details about the Run Program activity
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9e3d272f-0b32-4af2-a78e-808e74f6c5ca
