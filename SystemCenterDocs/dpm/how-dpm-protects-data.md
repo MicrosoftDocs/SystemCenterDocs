@@ -4,11 +4,11 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 11/01/2017
 title: How does DPM work?
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
 ms.custom: UpdateFrequency.5
 ---

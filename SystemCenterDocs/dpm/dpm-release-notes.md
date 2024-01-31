@@ -6,8 +6,8 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 12/04/2023
-ms.prod: system-center
-ms.technology: data-protection-manager
+ms.service: system-center
+ms.subservice: data-protection-manager
 ms.topic: article
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---

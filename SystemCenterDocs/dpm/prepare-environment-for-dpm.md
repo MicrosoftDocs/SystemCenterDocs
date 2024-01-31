@@ -4,11 +4,11 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 07/20/2023
 title: Preparing your environment for System Center Data Protection Manager
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---

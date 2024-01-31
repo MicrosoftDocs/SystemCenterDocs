@@ -1,11 +1,11 @@
 ---
 description: This article describes the steps you can take to improve replication performance in DPM.
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 01/17/2024
 title: Improve replication performance
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
