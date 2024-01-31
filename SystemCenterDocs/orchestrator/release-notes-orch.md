@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 11/29/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 

@@ -5,8 +5,8 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 07/20/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ---

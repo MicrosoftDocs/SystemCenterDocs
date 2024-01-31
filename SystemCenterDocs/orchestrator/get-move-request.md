@@ -3,10 +3,10 @@ title: Get Move Request
 description: You can use the Get Move Request activity in a runbook to retrieve detailed information for an existing mailbox move request for an on-premises environment.
 ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3b3e9322-cff6-4b32-af10-6b7fa0f22a65

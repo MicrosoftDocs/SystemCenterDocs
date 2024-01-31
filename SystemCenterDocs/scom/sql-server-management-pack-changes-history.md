@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/22/2024
+ms.date: 1/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -19,7 +19,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's new
 
-- Added support for [custom management server resource pools](sql-server-management-pack-sql-server-monitoring-pool.md) for agentless and mixed monitoring modes
+- Added support for [custom management server resource pools](sql-server-management-pack-sql-server-monitoring-pool.md) for agentless monitoring mode
 - Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor for SQL Server on Linux, which targets DB Engine and checks if the server’s TLS certificate is valid
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
