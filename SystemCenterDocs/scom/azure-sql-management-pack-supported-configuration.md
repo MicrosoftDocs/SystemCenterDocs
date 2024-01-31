@@ -8,8 +8,8 @@ ms.author: v-vchernov
 manager: evansma
 ms.date: 01/09/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for Azure SQL Database

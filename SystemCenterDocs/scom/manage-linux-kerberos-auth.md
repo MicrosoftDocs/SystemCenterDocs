@@ -7,9 +7,9 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 09/20/2022
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 monikerRange: '>sc-om-1801'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

@@ -3,10 +3,10 @@ title: Get Cloud in System Center 2016
 description: The Get Cloud activity is used in a runbook to return all clouds on the VMM management server that meet the filtering criteria. The activity publishes all of the data from the required and optional properties into published data.
 ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: da433077-6741-443f-89b5-dd431fe1b216

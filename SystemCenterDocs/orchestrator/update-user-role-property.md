@@ -3,10 +3,10 @@ title: Update User Role Property
 description: Updates User Role Property
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 08/22/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6cb84e98-be26-4aa5-b0d4-d1400a8852db

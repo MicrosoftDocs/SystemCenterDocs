@@ -4,8 +4,8 @@ manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.author: jsuri
-ms.prod:  system-center
-ms.technology: service-manager
+ms.service: system-center
+ms.subservice: service-manager
 keywords:
 ms.date: 04/29/2021
 title: include file
