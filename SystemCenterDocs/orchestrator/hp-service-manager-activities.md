@@ -2,10 +2,10 @@
 title: HP Service Manager Activities
 description: The following configuration instructions apply to all activities in this integration pack. It also lists the Activities links.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 583b948b-5ea2-43e3-afad-f5281b83090a

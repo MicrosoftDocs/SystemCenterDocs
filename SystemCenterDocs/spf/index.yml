@@ -6,8 +6,8 @@ summary: As a service provider you can use Service Provider Foundation (SPF) to 
 metadata:
   title: Service Provider Foundation documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: As a service provider you can use Service Provider Foundation (SPF) to offer infrastructure as a service (IaaS) to your clients. Your clients can request IaaS resources managed by VMM through your front-end portal. # Required; article description that is displayed in search results. < 160 chars.
-  ms.prod: system-center
-  ms.technology: service-provider-foundation
+  ms.service: system-center
+  ms.subservice: service-provider-foundation
   ms.topic: landing-page # Required
   author: Farha-Bano #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-farhabano #Required; microsoft alias of author; optional team alias.

@@ -3,10 +3,10 @@ title: Apply Pending Service Update in System Center
 description: The Apply Pending Service Update activity is used in a runbook to apply the pending service update to a specified service.
 ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 33f9ea96-ae3d-4046-a146-50af1c32fde8

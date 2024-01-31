@@ -3,13 +3,13 @@ title: include file
 manager: mkluck
 description: include file to describe the hardware, software, and other system requirements  Service Manager 2022.
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 10/04/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: include
 ms.assetid:

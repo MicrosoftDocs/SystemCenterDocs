@@ -7,8 +7,8 @@ ms.author: v-vchernov
 manager: evansma
 ms.date: 11/22/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Known Issues and Troubleshooting in Management Pack for SQL Server Dashboards
