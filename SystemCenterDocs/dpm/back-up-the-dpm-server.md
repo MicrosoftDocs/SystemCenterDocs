@@ -240,35 +240,35 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
         **Select distinct MajorVersionNumber,MinorVersionNumber ,BuildNumber, FileName FROM dbo.tbl\_AM\_AgentPatch order byMajorVersionNumber,MinorVersionNumber,BuildNumber**
 
-::: moniker range="sc-dpm-2022"
+    ::: moniker range="sc-dpm-2022"
 
     If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-2022&preserve-view=true).
 
-::: moniker-end
+    ::: moniker-end
 
-::: moniker range="sc-dpm-2019"
+    ::: moniker range="sc-dpm-2019"
 
     If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-2019&preserve-view=true).
 
-::: moniker-end
+    ::: moniker-end
 
-::: moniker range="sc-dpm-2016"
+    ::: moniker range="sc-dpm-2016"
 
     If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-2016&preserve-view=true).
 
-::: moniker-end
+    ::: moniker-end
 
-::: moniker range="sc-dpm-1801"
+    ::: moniker range="sc-dpm-1801"
 
     If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-1801&preserve-view=true).
 
-::: moniker-end
+    ::: moniker-end
 
-::: moniker range="sc-dpm-1807"
+    ::: moniker range="sc-dpm-1807"
 
     If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-1807&preserve-view=true).
 
-::: moniker-end
+    ::: moniker-end
 
 ### Back up to Azure
 
