@@ -262,4 +262,4 @@ Set-SmaRunbookConfiguration -WebServiceEndpoint $webServer -Port $port -Name $ru
 ## Next steps
 
 - Read about [managing global assets](manage-global-assets.md).
-- Learn about the [role of SMA](https://gallery.technet.microsoft.com/Service-Management-fcd75828) in a Microsoft Azure Pack implementation.
+- Learn about the [role of SMA](/system-center/sma/runbook-automation) in a Microsoft Azure Pack implementation.
