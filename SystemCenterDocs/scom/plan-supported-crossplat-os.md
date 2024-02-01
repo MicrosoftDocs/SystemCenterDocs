@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/12/2024
+ms.date: 02/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -35,18 +35,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 >[!IMPORTANT]
 > Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
-
-## IBM AIX 7.1
-
->[!NOTE]
->OpenSSH 9.2 or later isn't supported.
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|
-|OS version|Version of operating system|7100-01-06-1241|
-|xlC.rte|XL C/C++ Runtime|11.1.0.2|
-|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|1.0.2o|
-
 
 ## IBM AIX 7.2
 
