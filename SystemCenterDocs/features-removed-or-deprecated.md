@@ -4,7 +4,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 05/31/2021
 title: Features Removed or Deprecated from System Center 2016

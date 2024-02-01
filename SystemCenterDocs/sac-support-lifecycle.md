@@ -1,7 +1,7 @@
 ---
 description: This article provides an overview Semi-Annual Channel (SAC) release for System Center.
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
