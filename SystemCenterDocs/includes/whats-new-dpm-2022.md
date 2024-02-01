@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.prod: system-center
-ms.date: 01/31/2024
+ms.date: 02/01/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
