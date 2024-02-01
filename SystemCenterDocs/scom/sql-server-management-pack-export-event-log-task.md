@@ -5,7 +5,7 @@ description: This article explains how to run the export event log task for DB E
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 06/13/2023
+ms.date: 02/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -84,13 +84,13 @@ The following parameters for specifying the duration range:
 **PT1H15M** means 1 hour and 15 minutes.
 **PT45M30S** means 45 minutes and 30 seconds.
   
-### InvariantCulture date time examples
+## InvariantCulture date time examples
 
 - The time range is one day.
 
     Date From=06/2023/15 and Date To=06/2023/16. An event log file is created with events from the whole day of June 15.
 
-    >[!WARNING]
+    > [!WARNING]
     > Specifying the range Date From and Date To with single date but without a time, creates a blank file.  
 
 - The time range is several hours.
@@ -105,7 +105,7 @@ The following parameters for specifying the duration range:
 
     Date From=06/2023 and Date To=06/2023. An event log file is created with events from the whole month of June.
 
-### Duration range examples
+## Duration range examples
 
 - The time range is last hour.
 
