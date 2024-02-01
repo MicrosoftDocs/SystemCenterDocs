@@ -189,11 +189,11 @@ For issues fixed and the installation instructions for UR5, see the [KB article]
 
 ### Support for SQL Server 2022
 
-DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### Back up support for Windows Server 2022
 
-DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### End of support for vSphere 5.5
 
@@ -201,11 +201,11 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 
 ### Support for vSphere 7.0
 
-DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
+DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019&preserve-view=true).
 
 ### Support for Microsoft 365 SMTP
 
-DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm).
+DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm&preserve-view=true).
 
 ### Increase maximum parallel online backups
 

@@ -43,7 +43,7 @@ Following are the prerequisites required on desired monitoring endpoints:
 3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
 4. Ensure TLS 1.2 or higher is enabled.
 
-To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022).
+To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022&preserve-view=true).
 
 ## Install agent for Windows virtual machine
 
@@ -92,7 +92,7 @@ Follow these steps to deploy the SCOM Managed Instance agent with the Agent Setu
 
 ## Install Managed Gateway
 
-To install Managed Gateway, [download the Gateway software](https://go.microsoft.com/fwlink/?linkid=2251997) and follow [these steps](/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer).
+To install Managed Gateway, [download the Gateway software](https://go.microsoft.com/fwlink/?linkid=2251997) and follow [these steps](/system-center/scom/deploy-install-gateway-server?view=sc-om-2022&tabs=InstallGatewayServer&preserve-view=true).
  
 ## Monitor Linux machine
 

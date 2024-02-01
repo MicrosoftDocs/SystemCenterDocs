@@ -165,7 +165,7 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 **Description**: DPM can’t enumerate SQL databases for protection when MSOLEDB 18 is missing on the protected server since DPM requires MSOLEDB18 to enumerate databases for protection.  
 
-**Workaround**: Install SQL [MSOLEDB 18](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16&viewFallbackFrom=sql-server-2016%22%20%5Cl%20%221867) driver if it is missing on the protected server. SQL Server 2022 ships with MSOLEDB 18 by default.  
+**Workaround**: Install SQL [MSOLEDB 18](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16&viewFallbackFrom=sql-server-2016%22%20%5Cl%20%221867&preserve-view=true) driver if it is missing on the protected server. SQL Server 2022 ships with MSOLEDB 18 by default.  
 
 ### Stop protection with delete online data fails from remote management console
 
