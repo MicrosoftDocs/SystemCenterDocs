@@ -5,7 +5,7 @@ description: This article summarizes frequently asked questions about Azure Moni
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/06/2023
+ms.date: 02/01/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -208,7 +208,7 @@ For example: `Test-NetConnection wlnxMWH160LB.scommi.com -Port 5723`
 
 The agent and gateway server machines needs TLS 1.2 or more enabled, and TLS 1.1 disabled to get the successful onboarding and monitoring.
  
-For more information, see [the process for enabling TLS 1.2](https://learn.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2).
+For more information, see [the process for enabling TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
 
 ## Monitored Resources (Agents)

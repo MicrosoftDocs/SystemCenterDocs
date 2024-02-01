@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 03/23/2020
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2
 ---
 # Set up an IPAM server in the VMM fabric

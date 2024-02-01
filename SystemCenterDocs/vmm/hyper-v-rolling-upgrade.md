@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 03/14/2019
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 # Perform a rolling upgrade of a Hyper-V host cluster to Windows Server in VMM
