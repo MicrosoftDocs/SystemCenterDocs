@@ -8,8 +8,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 12/14/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 # Add a network virtualization gateway to the VMM fabric
