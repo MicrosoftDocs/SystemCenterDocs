@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/19/2023
+ms.date: 02/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -158,8 +158,8 @@ In the future, you need to make all customizations to the Service Manager Self-S
 
 The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas that are most often modified. Here's a list of them.
 
-|Key|Purpose|
-|-------|-----------|
+| Key | Purpose |
+| ------- | ----------- |
 |CompanyName|The value of this key appears as the company's name inside the portal.|
 |CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company's logo inside the portal.|
 |ITPhone|This key takes the value to configure the IT help desk's phone number. This information appears at the bottom of the navigation menu.|

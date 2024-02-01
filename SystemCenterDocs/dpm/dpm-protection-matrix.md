@@ -90,8 +90,8 @@ The following sections provide details of the protection support matrix for DPM:
 
 ### VM backup
 
-|Workload|Version|DPM installation|Protection and recovery|
-|------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
+| Workload | Version | DPM installation | Protection and recovery |
+| ------------ | ----------- | -------------------- | -------------------------------------------- |-------------------------------- | --------------------------- |
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2022, 2019, 2016, 2012 R2, 2012|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs).<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.|
 |VMware VMs | VMware server 5.5, 6.0, 6.5, 6.7 or 7.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.<br/><br/>vSphere 5.5 is not supported in 2019 UR5 and later.<br/><br/>vSphere 7.0 is supported from 2019 UR5 and later.||
 
