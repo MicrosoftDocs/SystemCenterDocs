@@ -1,8 +1,8 @@
 ---
 title: Create Collection Activity
 description: This article provides guidance on how to configure the Create Collection activity for System Center 2016 Configuration Manager.
-ms.custom: UpdateFrequency3
-ms.date: 03/08/2017
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/07/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -49,9 +49,9 @@ optional properties into published data.
 
 - Collection Type: Specifies the type of collection to create. Options are:
 
-  - **Device** (default): the collection will contain device resources
+  - **Device** (default): the collection contains device resources
 
-  - **User**: the collection will contain user resources
+  - **User**: the collection contains user resources
 
 - Limiting Collection: The display name or ID of an existing collection that will limit the membership of the new collection.
 
