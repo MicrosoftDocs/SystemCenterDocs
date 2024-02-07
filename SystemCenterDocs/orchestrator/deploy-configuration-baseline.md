@@ -25,7 +25,7 @@ ROBOTS: noindex
 ::: moniker-end
 
 The objective of this activity is to assign a configuration baseline to
-a collection. It requires a pre-existing baseline as well as a
+a collection. It requires a pre-existing baseline and a
 collection to which the baseline will be assigned.
 
 The activity publishes all of the data from the required and optional
@@ -41,8 +41,8 @@ and optional properties and published data for this activity.
 |Baseline Value Type|The type of baseline value|ID or Name|
 |Collection|Performs a WMI query against Configuration Manager and returns the collection information| |
 |Collection Value Type|The type of collection value|ID or Name|
-|Remediate non-compliant rules when supported |Enables the remediation of non-compliant rules |True or False|
-|Allow Remediation outside of Maintenance Windows|Enables the remediation of non-compliant rules outside of the maintenance window |True or False|
+|Remediate non-compliant rules when supported |Enables the remediation of noncompliant rules |True or False|
+|Allow Remediation outside of Maintenance Windows|Enables the remediation of noncompliant rules outside of the maintenance window |True or False|
 
 ## Schedule Tab properties
 
@@ -63,8 +63,8 @@ and optional properties and published data for this activity.
 
 ## Alerts Tab properties
 
-- Generate Alerts: True or False (Default = False) When set to **True**, an alert definition will be created for the configuration baseline deployment according to the settings below. When set to **False**, alert settings in this group are ignored.
-- When Compliance % Below: When compliance with this configuration baseline is below this percentage, an alert will be generated in Configuration Manager. Valid values: 1 - 99
+- Generate Alerts: True or False (Default = False) When set to **True**, an alert definition is created for the configuration baseline deployment according to the settings below. When set to **False**, alert settings in this group are ignored.
+- When Compliance % Below: When compliance with this configuration baseline is below this percentage, an alert is generated in Configuration Manager. Valid values: 1 - 99
 - After Date and Time: Alerts will be generated only after this period of time has elapsed from the configuration baseline’s deployment.
 - Also Generate a System Center Operations Manager Alert: True or False (Default = False).
    >[!NOTE]

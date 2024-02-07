@@ -49,9 +49,9 @@ optional properties into published data.
 
 - Collection Type: Specifies the type of collection to create. Options are:
 
-  - **Device** (default): the collection will contain device resources
+  - **Device** (default): the collection contains device resources
 
-  - **User**: the collection will contain user resources
+  - **User**: the collection contains user resources
 
 - Limiting Collection: The display name or ID of an existing collection that will limit the membership of the new collection.
 

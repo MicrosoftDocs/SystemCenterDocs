@@ -61,9 +61,9 @@ optional properties into published data.
 
   - **Query Rule**: a WQL query string or a predefined query saved on the Configuration Manager server
 
-  - **Include Collection**: a collection whose members will be included in this collection’s membership
+  - **Include Collection**: a collection whose members are included in this collection’s membership
 
-  - **Exclude Collection**: a collection whose members will be excluded in this collection’s membership
+  - **Exclude Collection**: a collection whose members are excluded in this collection’s membership
 
 
 ## Delete collection published data
