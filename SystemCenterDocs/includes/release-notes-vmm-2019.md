@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  08/04/2019
 ms.topic:  include
-ms.prod:  system-center
-ms.technology:  virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 ## VMM 2019 release notes
