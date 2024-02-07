@@ -1,8 +1,8 @@
 ---
 title: Delete Collection Rule Activity
 description: Describes the configuration properties for the delete collection rule activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency3
-ms.date: 03/09/2017
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/07/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
