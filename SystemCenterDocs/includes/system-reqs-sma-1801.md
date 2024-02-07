@@ -4,11 +4,11 @@ ms.topic:  include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center-threshold
+ms.service:  system-center-threshold
 keywords:  
 ms.date: 02/05/2018
 title:  include file
-ms.technology:  service-management-automation
+ms.subservice:  service-management-automation
 ms.assetid:  4a87ff3b-0d96-472c-8836-be98f1aec00f
 ---
 

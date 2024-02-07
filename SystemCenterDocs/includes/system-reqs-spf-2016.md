@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  06/14/2018
 ms.topic:  include
-ms.prod:  system-center-threshold
-ms.technology:  service-provider-foundation
+ms.service:  system-center-threshold
+ms.subservice:  service-provider-foundation
 ---
 
 ## System requirements for Service Provider Foundation 2016

@@ -4,11 +4,11 @@ ms.topic:  article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center-threshold
+ms.service:  system-center-threshold
 keywords:
 ms.date:  2/8/2018
 title:  Update to DPM 1807
-ms.technology:  system-center-2016
+ms.subservice:  system-center-2016
 ms.assetid:
 ---
 

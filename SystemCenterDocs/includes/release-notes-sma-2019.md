@@ -5,8 +5,8 @@ ms.topic:  include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center
-ms.technology: service-management-automation
+ms.service:  system-center
+ms.subservice: service-management-automation
 keywords:
 ms.date: 03/14/2019
 title:  include file

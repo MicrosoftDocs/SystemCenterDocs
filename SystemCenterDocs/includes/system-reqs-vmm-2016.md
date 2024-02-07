@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  07/27/2018
 ms.topic: include
-ms.prod:  system-center-threshold
-ms.technology:  virtual-machine-manager
+ms.service:  system-center-threshold
+ms.subservice:  virtual-machine-manager
 ---
 
 ## VMM 2016 system requirements

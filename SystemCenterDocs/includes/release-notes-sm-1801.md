@@ -4,8 +4,8 @@ ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center-threshold
-ms.technology: service-manager
+ms.service:  system-center-threshold
+ms.subservice: service-manager
 keywords:
 ms.date: 05/07/2018
 title: include file

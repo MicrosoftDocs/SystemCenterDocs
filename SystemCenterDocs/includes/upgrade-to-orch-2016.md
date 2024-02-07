@@ -6,8 +6,8 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date:  o5/17/2018
-ms.prod:  system-center-threshold
-ms.technology:  orchestrator
+ms.service:  system-center-threshold
+ms.subservice:  orchestrator
 ms.topic:  include
 ---
 

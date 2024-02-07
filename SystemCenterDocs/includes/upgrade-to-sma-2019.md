@@ -4,11 +4,11 @@ ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system center
+ms.service:  system center
 keywords:  
 ms.date: 03/14/2019
 title:  include file
-ms.technology:  service-management-automation
+ms.subservice:  service-management-automation
 ms.assetid:  7fc426cb-aa90-4e45-b14c-95d711f6e005
 ---
 

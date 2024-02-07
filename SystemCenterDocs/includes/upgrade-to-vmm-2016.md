@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 12/13/2023
 ms.topic: include
-ms.prod:  system-center-threshold
-ms.technology: virtual-machine-manager
+ms.service:  system-center-threshold
+ms.subservice: virtual-machine-manager
 ---
 
 ## Upgrade to System Center 2016 - VMM

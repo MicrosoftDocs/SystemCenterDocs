@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  05/08/2018
 ms.topic:  include
-ms.prod:  system-center-threshold
-ms.technology:  operations-manager
+ms.service:  system-center-threshold
+ms.subservice:  operations-manager
 ---
 
 ## Install Operations Manager 1801/1807 agent on UNIX and Linux computers

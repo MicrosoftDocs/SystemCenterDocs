@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  07/04/2022
 ms.topic:  include
-ms.prod:  system center
-ms.technology:  service-provider-foundation
+ms.service:  system center
+ms.subservice:  service-provider-foundation
 ---
 
 ## System requirements for System Center 2022 - Service Provider Foundation
