@@ -43,6 +43,7 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 - SQL Server High Availability Features:
   - Single-domain Availability Groups, including availability replicas and database replicas
   - Distributed Availability Groups
+  - Contained Availability Groups
   - Failover Clustering
   - Log Shipping
   - [Not supported] Replication
