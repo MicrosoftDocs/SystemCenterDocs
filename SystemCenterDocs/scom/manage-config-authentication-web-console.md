@@ -5,8 +5,8 @@ description: This article describes how to configure Secure Sockets Layer (SSL) 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/19/2023
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.date: 02/08/2024
+ms.custom: engagement-fy24, UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
