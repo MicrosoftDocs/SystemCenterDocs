@@ -5,8 +5,8 @@ description: This article describes how to create a new HTML5 dashboard in Syste
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2018
-ms.custom: na
+ms.date: 02/08/2024
+ms.custom: engagement-fy24
 ms.service: system-center
 monikerRange: 'sc-om-1807'
 ms.subservice: operations-manager
