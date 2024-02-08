@@ -26,9 +26,9 @@ The **Management Group Health** view under the **Operations Manager** folder, al
 
 You can display **Management Group Health** on a SharePoint site by integrating with Operations Manager, giving all authorized users a useful summary of management group status. For more information, see [Using SharePoint to view Operations Manager data](manage-console-sharepoint-integration.md).  
 
-**Management Group Health** automatically refreshes every 15 minutes by default. To manually refresh the view, right-click the view and select **Refresh**. It may take some time before the dashboard starts to show data. The agent data is recalculated every 15 minutes, and not when you refresh the dashboard.  
+**Management Group Health** automatically refreshes every 15 minutes by default. To manually refresh the view, right-click the view and select **Refresh**. It might take some time before the dashboard starts to show data. The agent data is recalculated every 15 minutes, and not when you refresh the dashboard.  
 
-This article describes the specific information you'll see in each cell of the **Management Group Health** dashboard view.  
+This article describes the specific information that you see in each cell of the **Management Group Health** dashboard view.  
 
 ## Management Group Functions  
 ![Screenshot showing Health of management group functions.](./media/manage-monitor-health-mg/om2016-mgh-dashboard-grid1.png)  

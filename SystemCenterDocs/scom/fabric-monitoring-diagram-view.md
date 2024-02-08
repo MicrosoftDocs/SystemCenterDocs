@@ -1,7 +1,7 @@
 ---
 ms.assetid: 6dea2e1e-2a33-417c-8a65-785b5dd2cd9b
 title: The Fabric Monitoring Diagram View displaying health states of cloud environments in System Center Operations Manager
-description: This article provides an overview of the Fabric Monitoring diagram view
+description: This article provides an overview of the Fabric Monitoring diagram view.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -28,7 +28,7 @@ Follow these steps:
 
 1. To open the Diagram View, select **Monitoring**, and in **Microsoft System Center Virtual Machine Manager Views**, select **Diagram View** for the environment you want to see displayed as a diagram.
 
-   Diagram View nodes show the health roll up, so if a node is shown as healthy, you know that everything beneath is also healthy. Similarly, if a node is marked unhealthy, something in that node has a problem.
+   Diagram View nodes show the health roll up. So if a node is shown as healthy, you know that everything beneath is also healthy. Similarly, if a node is marked unhealthy, something in that node has a problem.
 
    ![Screenshot showing the Diagram view.](./media/fabric-monitoring/diagram-view.png)
 
@@ -40,4 +40,4 @@ Follow these steps:
 
 ## Next steps
 
-[Monitor cloud fabric using System Center Advisor ](use-system-center-advisor.md)
+[Monitor cloud fabric using System Center Advisor.](use-system-center-advisor.md)

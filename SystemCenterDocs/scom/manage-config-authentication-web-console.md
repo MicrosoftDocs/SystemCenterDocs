@@ -150,10 +150,10 @@ Repeat the preceding step on the following files:
 
 ::: moniker range=">=sc-om-2019"
 
-## Configure login session
+## Configure sign in session
 
 >[!NOTE]
->The web console uses windows authentication by default, if available to login into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
+>The web console uses windows authentication by default, if available to sign into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
 
 1. To edit the value, use a plain text editor to open the web.config in `<PATH>:\Program Files\Microsoft System Center\Operations Manager\WebConsole\Dashboard`.
 2. In the `<appSettings>` root element, modify the following session timeout value in minutes.

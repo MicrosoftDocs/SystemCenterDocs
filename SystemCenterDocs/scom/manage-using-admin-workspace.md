@@ -80,7 +80,7 @@ For more information, see [Connecting Operations Manager With Other Management S
 You can use **Run As Configuration** in the Administration workspace to manage Run As accounts and profiles. For more information, see [Managing Run As accounts in Operations Manager](manage-security-maintain-runas-profiles.md).
 
 ## Security  
-In Operations Manager, operations such as resolving alerts, running tasks, overriding monitors, viewing alerts, viewing events, and so on have been grouped into user roles, with each user role representing a particular job function. Role\-based security allows you to limit privileges that users have for various aspects of Operations Manager. In **Security** in the Administration workspace, you can add and remove users to specific user roles. You can also modify the properties of user roles that you create.  
+In Operations Manager, operations such as resolving alerts, running tasks, overriding monitors, viewing alerts, viewing events, and so on, have been grouped into user roles, with each user role representing a particular job function. Role-based security allows you to limit privileges that users have for various aspects of Operations Manager. In **Security** in the Administration workspace, you can add and remove users to specific user roles. You can also modify the properties of user roles that you create.  
 
 For more information, see [Implementing User Roles](manage-security-overview.md).  
 

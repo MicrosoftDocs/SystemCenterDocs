@@ -32,7 +32,7 @@ Both consoles share a similar layout:
 
 ![Diagram of the console panes.](./media/manage-consoles-comparison/om2016-consoleframe.png)  
 
-Each navigation button opens a specific workspace, such as Monitoring or Administration. In the Operations console, the following navigation buttons may be available depending on the user role you're assigned:  
+Each navigation button opens a specific workspace, such as Monitoring or Administration. In the Operations console, the following navigation buttons are available depending on the user role you're assigned:  
 
 ![Screenshot of the Navigation buttons in Operations Console.](./media/manage-consoles-comparison/om2016-operations-console-navbuttons.png)  
 

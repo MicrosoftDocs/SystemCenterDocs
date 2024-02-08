@@ -61,7 +61,8 @@ After the widget has been created, it displays a summary tile showing the health
 
   ![Screenshot showing Completed example of Tile widget in dashboard.](./media/create-web-dashboard-tile/web-console-new-dashboard-tile-01.png)
 
-Click on the object name in the Tile widget to launch Health Explorer for the specific object.
+Select the object name in the Tile widget to launch Health Explorer for the specific object.
 
 ## Next steps
+
 To learn how to create a dashboard in the new web console with the Custom widget, see [How create a dashboard with the Custom widget in the Web console](manage-create-web-dashboard-custom.md).
