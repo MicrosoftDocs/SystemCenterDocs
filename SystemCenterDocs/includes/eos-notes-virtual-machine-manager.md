@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  08/19/2020
 ms.topic:  include
-ms.prod:  system-center
-ms.technology:  virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 > [!IMPORTANT]
 >
