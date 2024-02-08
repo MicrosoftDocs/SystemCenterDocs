@@ -15,9 +15,9 @@ monikerRange: '>=sc-om-2019'
 
 # Query Azure Monitor SCOM Managed Instance data from Azure Managed Grafana dashboards
 
-From Azure Managed Grafana linked to Azure Monitor SCOM Managed Instance, you can use SQL queries to get the monitored data from Operational database stored on Azure Managed SQL Managed Instance.
-
 This article describes how to query monitoring data from Operational database and create dashboards on Azure Managed Grafana.
+
+From Azure Managed Grafana linked to Azure Monitor SCOM Managed Instance, you can use SQL queries to get the monitored data from Operational database stored on Azure Managed SQL Managed Instance.
 
 ## Prerequisites
 
@@ -42,10 +42,10 @@ Following are few helpful sample queries and dashboards to get started on using 
 4. Events data
 5. Monitors data
 
-Below queries help you to build Health, Alerts, and Top events from a particular workload/monitoring object:
+The below queries help you to build Health, Alerts, and Top events from a particular workload/monitoring object:
 
 >[!NOTE]
->1. Replace the \<MP name prefix\> with actual management pack name, say **Microsoft.SQL%** for SQL workload.
+>1. Replace the \<MP name prefix\> with the actual management pack name, say **Microsoft.SQL%** for SQL workload.
 >2. Replace the \<Monitoring Object Type\> with component class, say, **%.DBEngine** for SQL server role.
 
 ### Health state of workload  
@@ -78,7 +78,7 @@ SELECT HealthState =
   ORDER BY MEV.HealthState  
 ```
 
-### Workloads health and the number of new alerts on them  
+### Workload health and the number of new alerts on them  
 
 ```
 SELECT MEV.Name  
@@ -188,4 +188,4 @@ SELECT PD.TimeSampled
 
 ## Next steps
 
-[Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
+[Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md).
