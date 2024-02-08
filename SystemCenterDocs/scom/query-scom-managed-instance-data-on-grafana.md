@@ -27,10 +27,13 @@ Before you query monitoring data from Azure Managed Grafana portal, ensure that 
 
 To create a dashboard, follow these steps:
 
-1. Navigate to Grafana and select **Add** > **Visualization**. You can choose the type of visualization based on the available options.
-2. Under **Panel options**, enter **Title** and **Description**.
-3. Under **Query**, select **Code** and enter the query.
-4. Select **Run query**.
+1. Navigate to Grafana and select **Add visualization**. You can choose the type of visualization based on the available options.
+   :::image type="Add visualization" source="media/query-scom-managed-instance-data-on-grafana/add-visualization.png" alt-text="Screenshot of Add visualization.":::
+1. Under **Panel options**, enter **Title** and **Description**.
+   :::image type="panel options" source="media/query-scom-managed-instance-data-on-grafana/panel-options.png" alt-text="Screenshot of panel options.":::
+1. Under **Query**, select **Code** and enter the query.
+   :::image type="code option" source="media/query-scom-managed-instance-data-on-grafana/code.png" alt-text="Screenshot of code options.":::
+1. Select **Run query**.
 
 ## Sample queries
 
@@ -45,7 +48,7 @@ Following are few helpful sample queries and dashboards to get started on using 
 The below queries help you to build Health, Alerts, and Top events from a particular workload/monitoring object:
 
 >[!NOTE]
->1. Replace the \<MP name prefix\> with the actual management pack name, say **Microsoft.SQL%** for SQL workload.
+>1. Replace the \<Management pack name prefix\> with the actual management pack name, say **Microsoft.SQL%** for SQL workload.
 >2. Replace the \<Monitoring Object Type\> with component class, say, **%.DBEngine** for SQL server role.
 
 ### Health state of workload  
