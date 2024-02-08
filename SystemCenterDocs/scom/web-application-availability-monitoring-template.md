@@ -236,7 +236,7 @@ The following options are available on the  **Change Configuration for Test Set*
 | Performance Collection: Request (Base page): Response time | Processing time for the request, such as opening a browser and waiting for all resources to load. |
 | Performance Collection: Request (Base page): TCP connect time | Time taken to establish a TCP connection to the target server and receive the initial greeting from the service. |
 | Performance Collection: Request (Base page): Time to first byte | Time taken since the TCP connection is established until the first byte of response is received. |
-| Performance Collection: Request (Base page): Time to last byte | Time from when TCP connection is established until the last byte of the response is received. |
+| Performance Collection: Request (Base page): Time to last byte | Time from when TCP connection is established until the last byte of the response is completely received. |
 | Performance Collection: Request (Base page): DNS resolution time | Time taken to resolve the URL domain name to the IP address. |
 | Performance Collection: Request (Base page): Content size | Size of the response body received. |
 | Performance Collection: Request (Base page): Content time | Base page download time (base page only). |
