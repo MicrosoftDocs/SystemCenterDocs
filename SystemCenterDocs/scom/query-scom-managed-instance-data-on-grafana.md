@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Query Azure Monitor System Center Operations Manager Managed Instance data from Azure Managed Grafana dashboards.
+title: Query Azure Monitor SCOM Managed Instance data from Azure Managed Grafana dashboards.
 description: This article describes how to query monitoring data from Operational database and create dashboards on Azure Managed Grafana.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -13,15 +13,15 @@ ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
-# Query Azure Monitor System Center Operations Manager Managed Instance data from Azure Managed Grafana dashboards
+# Query Azure Monitor SCOM Managed Instance data from Azure Managed Grafana dashboards
 
-From Azure Managed Grafana linked to Azure Monitor SCOM managed instance, you can use SQL queries to get the monitored data from Operational database stored on Azure Managed SQL Managed Instance.
+From Azure Managed Grafana linked to Azure Monitor SCOM Managed Instance, you can use SQL queries to get the monitored data from Operational database stored on Azure Managed SQL Managed Instance.
 
 This article describes how to query monitoring data from Operational database and create dashboards on Azure Managed Grafana.
 
 ## Prerequisites
 
-Before you query monitoring data from AMG portal, ensure Azure Monitor SCOM Managed Instance is linked to AMG using <link>.
+Before you query monitoring data from Azure Managed Grafana portal, ensure that SCOM Managed Instance is linked to Azure Managed Grafana using \<link\>.
 
 ## Create a dashboard on Azure Managed Grafana
 
@@ -45,10 +45,10 @@ Following are few helpful sample queries and dashboards to get started on using 
 Below queries help you to build Health, Alerts, and Top events from a particular workload/monitoring object:
 
 >[!NOTE]
->1. Replace the <MP name prefix> with actual management pack name, say **Microsoft.SQL%** for SQL workload.
->2. Replace the <Monitoring Object Type> with component class, say, **%.DBEngine** for SQL server role.
+>1. Replace the \<MP name prefix\> with actual management pack name, say **Microsoft.SQL%** for SQL workload.
+>2. Replace the \<Monitoring Object Type\> with component class, say, **%.DBEngine** for SQL server role.
 
-### Health State of Workload  
+### Health state of workload  
 
 ```
 SELECT HealthState =  
@@ -78,7 +78,7 @@ SELECT HealthState =
   ORDER BY MEV.HealthState  
 ```
 
-### Workloads health and the number of new Alerts on them  
+### Workloads health and the number of new alerts on them  
 
 ```
 SELECT MEV.Name  
@@ -110,7 +110,7 @@ SELECT MEV.Name
   GROUP BY MEV.Name, HealthState, AV.ResolutionState  
 ```
 
-### Top Events on workload
+### Top events on workload
 
 ```
 SELECT EventDescription = LT5.LTValue  
@@ -134,7 +134,7 @@ GROUP BY Number, LT5.LTValue
 ORDER BY Occurences, AffectedSQLServers DESC;  
 ```
 
-### Top alerts from Workload  
+### Top alerts from workload  
 
 ```
 SELECT AV.AlertStringName AS Alert  
@@ -156,7 +156,7 @@ SELECT AV.AlertStringName AS Alert
   GROUP BY AV.AlertStringName, AV.ResolutionState 
 ```
 
-### Performace data query for workload counter
+### Performance data query for workload counter
 
 ```
 SELECT PD.TimeSampled 
@@ -188,6 +188,4 @@ SELECT PD.TimeSampled
 
 ## Next steps
 
-- [Troubleshoot commonly encountered errors while validating input parameters](troubleshooting-input-parameters-scom-managed-instance.md)
-- [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
-- [Azure Monitor SCOM Managed Instance frequently asked questions](operations-manager-managed-instance-common-questions.md)
+[Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md)
