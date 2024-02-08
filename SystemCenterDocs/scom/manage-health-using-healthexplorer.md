@@ -4,8 +4,8 @@ description: This article describes how to use the Operations Manager Health Exp
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/13/2018
-ms.custom: UpdateFrequency2
+ms.date: 02/08/2024
+ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
