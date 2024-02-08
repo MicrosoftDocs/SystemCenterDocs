@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 02/08/2024
 ms.subservice: service-manager
 ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Use SQL Server AlwaysOn availability groups with Service Manager to support failover
