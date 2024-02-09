@@ -4,7 +4,7 @@ description: This article describes how to delete or restore a network device mo
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/08/2024
+ms.date: 02/09/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

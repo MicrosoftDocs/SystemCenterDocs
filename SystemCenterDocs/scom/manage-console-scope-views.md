@@ -4,7 +4,7 @@ description: This article describes how to create views in the Operations Manage
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/08/2024
+ms.date: 02/09/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
