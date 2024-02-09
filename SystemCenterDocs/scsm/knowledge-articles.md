@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 02/08/2024
 ms.subservice: service-manager
 ms.assetid: 50edf3f3-fa1d-4134-8383-dfc6be73ddf0
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage Service Manager knowledge articles

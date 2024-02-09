@@ -5,8 +5,8 @@ description: This article describes the new Type Cache feature for the System Ce
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/16/2018
-ms.custom: na
+ms.date: 02/08/2024
+ms.custom: engagement-fy24
 ms.service: system-center
 monikerRange: 'sc-om-1801'
 ms.subservice: operations-manager
