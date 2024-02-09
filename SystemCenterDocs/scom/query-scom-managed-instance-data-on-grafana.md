@@ -41,18 +41,17 @@ To create a dashboard, follow these steps:
 
 Following are few helpful sample queries and dashboards to get started on using Azure Managed Grafana with SCOM Managed Instance:
 
-
-1. Health state of workload  
-1. Workload health and the number of new alerts on them  
-1. Top events on workload
-1. Top alerts from workload  
-1. Performance data query for workload counter
+- Health state of workload  
+- Workload health and the number of new alerts on them  
+- Top events on workload
+- Top alerts from workload  
+- Performance data query for workload counter
 
 The following queries help you to build Health, Alerts, and Top events from a particular workload/monitoring object:
 
 >[!NOTE]
->1. Replace the \<Management pack name prefix\> with the actual management pack name, say **Microsoft.SQL%** for SQL workload.
->2. Replace the \<Monitoring Object Type\> with component class, say, **%.DBEngine** for SQL server role.
+>- Replace the \<Management pack name prefix\> with the actual management pack name, say **Microsoft.SQL%** for SQL workload.
+>- Replace the \<Monitoring Object Type\> with component class, say, **%.DBEngine** for SQL server role.
 
 ### Health state of workload  
 
