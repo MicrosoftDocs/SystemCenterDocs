@@ -4,8 +4,8 @@ description: This article describes how to use My Workspace in the Operations Ma
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/18/2018
-ms.custom: UpdateFrequency2
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2016'
 ms.subservice: operations-manager
@@ -25,7 +25,7 @@ My Workspace provides you with a private area in the Operations and Web console 
 
 
 ::: moniker range="sc-om-1807"
-In version 1807, you can create dashboards as well as add an existing dashboard from the Monitoring workspace. For more information, see [Using My Workspace in Web console](manage-web-console-my-workspace.md).
+In version 1807, you can create dashboards and add an existing dashboard from the Monitoring workspace. For more information, see [Using My Workspace in Web console](manage-web-console-my-workspace.md).
 ::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
@@ -91,7 +91,7 @@ You can save useful searches in My Workspace to run at any time.
 
     -   Views  
 
-    Each object type will display a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](manage-console-using-adv-search.md).  
+    Each object type displays a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](manage-console-using-adv-search.md).  
 
 4.  In the displayed criteria for the object type, select the condition that you want to search against.  
 
