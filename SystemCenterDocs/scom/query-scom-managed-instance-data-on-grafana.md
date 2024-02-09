@@ -21,7 +21,9 @@ From Azure Managed Grafana linked to Azure Monitor SCOM Managed Instance, you ca
 
 ## Prerequisites
 
-Before you query monitoring data from Azure Managed Grafana portal, ensure that SCOM Managed Instance is linked to Azure Managed Grafana using \<link\>.
+Before you query monitoring data from Azure Managed Grafana portal, ensure that SCOM Managed Instance is linked to Azure Managed Grafana. For more information, see [Dashboards on Azure Managed Grafana](/system-center/scom/dashboards-on-azure-managed-grafana). 
+
+Few ready-to-use dashboards are available at [Azure/SCOM Managed Instance/Operational Dashboard](https://grafana.com/grafana/dashboards/19919-azure-scom-managed-instance-operational-dashboard/) as per your requirement.
 
 ## Create a dashboard on Azure Managed Grafana
 
