@@ -1,7 +1,7 @@
 ---
 title: include file
 description: include file that outlines the order you need to follow to upgrade from System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager, also includes planning considerations.  
-ms.service: system-center-2016
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri

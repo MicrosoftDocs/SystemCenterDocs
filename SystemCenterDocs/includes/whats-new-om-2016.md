@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 11/09/2017
 ms.custom: na
-ms.service: system-center-2016
+ms.service: system-center
 monikerRange: 'sc-om-2016'
 ms.subservice: operations-manager
 ms.topic: include

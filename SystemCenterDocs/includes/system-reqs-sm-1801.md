@@ -2,7 +2,7 @@
 title: include file
 description: include file to describe the hardware, software, and other system requirements Service Manager 1801.
 ms.custom: na
-ms.service: system-center-2016
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri

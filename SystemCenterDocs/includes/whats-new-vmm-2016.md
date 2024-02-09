@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  04/24/2020
 ms.topic:  include
-ms.service:  system-center-2016
+ms.service:  system-center
 ms.subservice:  virtual-machine-manager
 ---
 

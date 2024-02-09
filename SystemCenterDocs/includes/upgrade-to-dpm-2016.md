@@ -4,11 +4,11 @@ ms.topic:  article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.service:  system-center-threshold
+ms.service:  system-center
 keywords:
 ms.date:  05/31/2021
 title:  Upgrade to DPM-2016
-ms.subservice:  system-center-2016
+ms.subservice: data-protection-manager
 ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
 ---
 

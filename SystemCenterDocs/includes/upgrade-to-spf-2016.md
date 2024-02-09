@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  02/21/2023
 ms.topic:  include
-ms.service:  system-center-threshold
+ms.service:  system-center
 ms.subservice:  service-provider-foundation
 ms.assetid: ad904874-7065-409f-923a-8571c99d36fe
 ---

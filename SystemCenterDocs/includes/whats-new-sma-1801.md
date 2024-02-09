@@ -5,7 +5,7 @@ ms.topic:  include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.service:  system-center-2016
+ms.service:  system-center
 keywords:  
 ms.date: 02/05/2018
 ms.subservice:  service-management-automation

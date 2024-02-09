@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  06/14/2018
 ms.topic:  include
-ms.service:  system-center-threshold
+ms.service:  system-center
 ms.subservice:  service-provider-foundation
 ---
 

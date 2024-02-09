@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  07/04/2022
 ms.topic:  include
-ms.service:  system center
+ms.service:  system-center
 ms.subservice:  service-provider-foundation
 ---
 

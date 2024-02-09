@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 02/19/2021
 ms.topic: include
-ms.service:  system-center-threshold
+ms.service:  system-center
 ms.subservice: virtual-machine-manager
 ---
 

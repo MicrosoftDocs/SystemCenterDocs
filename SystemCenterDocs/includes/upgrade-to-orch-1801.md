@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  05/17/2018
 ms.topic:  include
-ms.service:  system-center-threshold
+ms.service:  system-center
 ms.subservice: orchestrator
 description: include file to provide an overview of how to upgrade your System Center Orchestrator installation to release 1801.
 keywords:

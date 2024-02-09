@@ -4,7 +4,7 @@ ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.service:  system-center-threshold
+ms.service:  system-center
 ms.subservice: service-manager
 keywords:
 ms.date: 05/07/2018
