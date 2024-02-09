@@ -5,7 +5,7 @@ description: This article describes how to query monitoring data from Operationa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/08/2024
+ms.date: 02/09/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -39,13 +39,14 @@ To create a dashboard, follow these steps:
 
 Following are few helpful sample queries and dashboards to get started on using Azure Managed Grafana with SCOM Managed Instance:
 
-1. Performance data
-2. Workload or Management Pack data
-3. Alerts data
-4. Events data
-5. Monitors data
 
-The below queries help you to build Health, Alerts, and Top events from a particular workload/monitoring object:
+1. Health state of workload  
+1. Workload health and the number of new alerts on them  
+1. Top events on workload
+1. Top alerts from workload  
+1. Performance data query for workload counter
+
+The following queries help you to build Health, Alerts, and Top events from a particular workload/monitoring object:
 
 >[!NOTE]
 >1. Replace the \<Management pack name prefix\> with the actual management pack name, say **Microsoft.SQL%** for SQL workload.
