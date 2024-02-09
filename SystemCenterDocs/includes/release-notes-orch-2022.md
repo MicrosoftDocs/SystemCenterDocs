@@ -5,8 +5,8 @@ ms.topic:  include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center
-ms.technology: Orchestrator
+ms.service:  system-center
+ms.subservice: Orchestrator
 keywords:
 ms.date: 11/21/2023
 title:  include file

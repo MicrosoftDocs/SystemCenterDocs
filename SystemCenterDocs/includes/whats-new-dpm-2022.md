@@ -4,7 +4,7 @@ ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 ms.date: 02/01/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager

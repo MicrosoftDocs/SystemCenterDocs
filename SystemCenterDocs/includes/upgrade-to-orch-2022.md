@@ -6,8 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  09/07/2022
 ms.topic:  include
-ms.prod:  system center
-ms.technology: orchestrator
+ms.service:  system-center
+ms.subservice: orchestrator
 description: include file to provide an overview of how to upgrade your System Center Orchestrator installation to release 2022.
 keywords:
 ---

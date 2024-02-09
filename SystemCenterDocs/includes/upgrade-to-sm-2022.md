@@ -2,7 +2,7 @@
 title: include file
 description: include file that outlines planning considerations and the order to upgrade to System Center 2022 - Service Manager.  
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
