@@ -5,10 +5,10 @@ ms.topic:  include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center-2016
+ms.service:  system-center
 keywords:  
 ms.date: 02/05/2018
-ms.technology:  service-management-automation
+ms.subservice:  service-management-automation
 ms.assetid:  63d6f604-f51c-4ea8-b2ce-a00bab78fd05
 ---
 

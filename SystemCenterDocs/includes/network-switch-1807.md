@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  21/11/2018
 ms.topic:  include
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+ms.service:  system-center
+ms.subservice:  virtual-machine-manager
 ---
 
 ## How to create logical switches

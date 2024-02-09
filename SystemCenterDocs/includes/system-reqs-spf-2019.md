@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  03/14/2019
 ms.topic:  include
-ms.prod:  system center
-ms.technology:  service-provider-foundation
+ms.service:  system-center
+ms.subservice:  service-provider-foundation
 ---
 
 ## System requirements for System Center 2019 - Service Provider Foundation

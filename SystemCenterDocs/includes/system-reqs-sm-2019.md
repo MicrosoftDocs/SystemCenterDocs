@@ -2,7 +2,7 @@
 title: include file
 description: include file to describe the hardware, software, and other system requirements Service Manager 2019.
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri

@@ -4,11 +4,11 @@ ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center-threshold
+ms.service:  system-center
 keywords:  
 ms.date: 01/22/2018
 title:  include file
-ms.technology:  service-management-automation
+ms.subservice:  service-management-automation
 ---
 
 ## What's new in SMA 2016
