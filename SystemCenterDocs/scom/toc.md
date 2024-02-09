@@ -102,6 +102,7 @@
 ###### [Patch SCOM Managed Instance](patch-scom-managed-instance.md)
 ###### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
 ###### [Dashboards on Azure Managed Grafana](dashboards-on-azure-managed-grafana.md)
+###### [Query SCOM Managed Instance data on Azure Managed Grafana](query-scom-managed-instance-data-on-grafana.md)
 ###### [View System Center Operations Manager’s alerts in Azure Monitor](view-operations-manager-alerts-azure-monitor.md)
 ###### [Monitor Azure and Off-Azure Virtual machines](monitor-off-azure-vm-with-scom-managed-instance.md)
 ###### [Monitor Azure and Off-Azure Virtual machines (preview)](monitor-arc-enabled-vm-with-scom-managed-instance.md)

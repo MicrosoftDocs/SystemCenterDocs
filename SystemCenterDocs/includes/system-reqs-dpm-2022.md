@@ -4,7 +4,7 @@ ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 05/02/2022
 title: Preparing your environment for System Center Data Protection Manager

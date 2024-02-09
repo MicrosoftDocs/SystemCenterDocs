@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 02/19/2021
 ms.topic: include
-ms.prod:  system-center-threshold
-ms.technology: virtual-machine-manager
+ms.service:  system-center
+ms.subservice: virtual-machine-manager
 ---
 
 ## Upgrade to System Center 1801 - Virtual Machine Manager

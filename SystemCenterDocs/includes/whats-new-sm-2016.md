@@ -5,9 +5,9 @@ ms.topic:  include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center-2016
+ms.service:  system-center
 ms.date: 06/21/2018
-ms.technology:  service-manager
+ms.subservice:  service-manager
 ms.assetid: ad91af28-dc8c-4f24-b6fa-e7a8b983cf2c
 
 ---

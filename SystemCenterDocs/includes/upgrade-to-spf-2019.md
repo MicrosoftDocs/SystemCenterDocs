@@ -6,8 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  02/21/2023
 ms.topic: include
-ms.prod:  system center
-ms.technology:  service-provider-foundation
+ms.service:  system-center
+ms.subservice:  service-provider-foundation
 ms.assetid: d085d58a-f48d-4ab3-9e07-1a3e49526582
 ---
 

@@ -5,8 +5,8 @@ ms.topic:  include file
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod:  system-center-threshold
-ms.technology: Orchestrator
+ms.service:  system-center
+ms.subservice: Orchestrator
 keywords:
 ms.date: 05/17/2018
 title:  include
