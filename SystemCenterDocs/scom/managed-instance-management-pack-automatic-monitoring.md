@@ -96,7 +96,7 @@ Regardless of the selected option, ensure to grant required SQL permissions to t
 
 ## Instances filtering
 
-At this optionally step, you can configure the filtering options:
+At this optional step, you can configure the filtering options:
 
 - Exclude - select this option to specify instances that shouldn't be discovered.
 
@@ -112,14 +112,12 @@ At this step, specify the Management Server pool which will be used for discover
 
 ![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/choose-management-pool.png)
 
+Confirm Run As account distribution to the selected management pool by completing the Summary step.
+
+![Screenshot showing the RunAS account modification confirmation.](./media/managed-instance-management-pack/allowing-runas-modification.png)
+
 ## Summary
 
 At this step, review all the configuration and connection settings and select **Create**.
 
 ![Screenshot showing the Review connection settings.](./media/managed-instance-management-pack/review-connection-settings.png)
-
-## Run As account distribution
-
-Confirm Run As account distribution for the selected management pool.
-
-![Screenshot showing the RunAS account modification confirmation.](./media/managed-instance-management-pack/allowing-runas-modification.png)
