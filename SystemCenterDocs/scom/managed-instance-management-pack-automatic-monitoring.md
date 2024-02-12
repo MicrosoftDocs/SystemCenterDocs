@@ -96,7 +96,7 @@ Regardless of the selected option, ensure to grant required SQL permissions to t
 
 ## Instances filtering
 
-At this optionally step, you can configure the filtering options:
+At this optional step, you can configure the filtering options:
 
 - Exclude - select this option to specify instances that shouldn't be discovered.
 
