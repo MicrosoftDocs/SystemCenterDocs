@@ -56,7 +56,7 @@ Ensure that the account that you use must have either the **Owner** role (or hig
 
 If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
 
-![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.jpg)
+![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.png)
 
 Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
 
