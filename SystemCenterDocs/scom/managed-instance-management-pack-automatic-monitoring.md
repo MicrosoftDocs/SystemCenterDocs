@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/30/2024
+ms.date: 02/12/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -35,7 +35,7 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
 At this step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox, and modify the default Azure endpoints, if necessary. The default endpoints for creating Azure Service Principal Name are as follows:
 
-- Authority URI: `https://login.windows.net`
+- Authority URI: `https://login.microsoftonline.com`
 - Management Service URI: `https://management.azure.com`
 - Database Resource URI: `https://database.windows.net`  
 - Graph API Resource URI: `https://graph.windows.net`
@@ -117,3 +117,9 @@ At this step, specify the Management Server pool which will be used for discover
 At this step, review all the configuration and connection settings and select **Create**.
 
 ![Screenshot showing the Review connection settings.](./media/managed-instance-management-pack/review-connection-settings.png)
+
+## Run As account distribution
+
+Confirm Run As account distribution for the selected management pool.
+
+![Screenshot showing the RunAS account modification confirmation.](./media/managed-instance-management-pack/allowing-runas-modification.png)
