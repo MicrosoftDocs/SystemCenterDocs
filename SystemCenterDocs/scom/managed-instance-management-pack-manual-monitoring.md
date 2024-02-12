@@ -5,7 +5,7 @@ description: This article explains how to configure manual monitoring template i
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/30/2024
+ms.date: 02/12/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -21,7 +21,7 @@ To configure monitoring using the manual monitoring template, perform the follow
 
 1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Manual**, and select **Add Monitoring Wizard**.
 
-    ![Screenshot showing the Run Add Monitoring Wizard.](./media/managed-instance-management-pack/running-monitoring-wizard.png)
+    ![Screenshot showing the Run Add Monitoring Wizard.](./media/managed-instance-management-pack/running-monitoring-wizard-manual.png)
 
 2. At the **Monitoring Type** step, select **Azure SQL MI - Manual**, and select **Next**.
 
@@ -32,8 +32,6 @@ To configure monitoring using the manual monitoring template, perform the follow
     ![Screenshot showing the Select destination management pack.](./media/managed-instance-management-pack/destination-management-pack-manual.png)
 
     You can also create a new management pack by selecting **New**.
-
-    ![Screenshot showing the Create new management pack.](./media/managed-instance-management-pack/new-management-pack.png)
 
 ## Service details
 
