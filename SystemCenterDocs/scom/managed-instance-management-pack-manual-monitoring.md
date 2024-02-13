@@ -59,7 +59,7 @@ Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Pass
 
 You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
-![Screenshot showing the Configure Run As account.](./media/managed-instance-management-pack/new-run-as-account-manual.png)
+![Screenshot showing the Configure Run As account.](./media/managed-instance-management-pack/new-run-as-account-manual-template.png)
 
 After you select **OK** in the **Add Instances** window, a connection test will be performed.
 
