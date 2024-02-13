@@ -112,7 +112,7 @@ Use an asterisk to replace any symbol/symbols.
 
 ## Management pool
 
-At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
+At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Azure SQL Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 
 ![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/choose-management-pool.png)
 
