@@ -90,6 +90,10 @@ At this step, select an authentication method that you want to use to connect to
 > [!IMPORTANT]
 > The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
 
+You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
+
+![Screenshot showing the Configure Run As account for Automatic template.](./media/managed-instance-management-pack/new-run-as-account-automatic-template.png)
+
 Regardless of the selected option, ensure to grant required SQL permissions to the selected monitoring account for all the managed instances. For more information, see [Security Configuration](managed-instance-management-pack-security-configuration.md).
 
 ![Screenshot showing the Configure SQL connection settings.](./media/managed-instance-management-pack/sql-connection-settings.png)
@@ -108,7 +112,7 @@ Use an asterisk to replace any symbol/symbols.
 
 ## Management pool
 
-At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
+At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Azure SQL Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 
 ![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/choose-management-pool.png)
 
