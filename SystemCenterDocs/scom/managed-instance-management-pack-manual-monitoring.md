@@ -41,7 +41,7 @@ At this step, to add a new instance, select **Add Instances**.
 
 In the **Add Instances** window, select a Run As Account with the appropriate SQL credentials, and specify data sources and (or) connection strings. Follow the instructions provided in the wizard to avoid errors.
 
-![Screenshot showing the Add instances.](./media/managed-instance-management-pack/add-instance-credentials.png)
+![Screenshot showing the Add instances.](./media/managed-instance-management-pack/add-instance-credentials-connection-string.png)
 
 Use the standard security connection string format to specify the connection settings:
 
@@ -59,7 +59,7 @@ Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Pass
 
 You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
-![Screenshot showing the Configure Run As account.](./media/managed-instance-management-pack/new-run-as-account-manual.png)
+![Screenshot showing the Configure Run As account for Manual template.](./media/managed-instance-management-pack/new-run-as-account-manual-template.png)
 
 After you select **OK** in the **Add Instances** window, a connection test will be performed.
 
