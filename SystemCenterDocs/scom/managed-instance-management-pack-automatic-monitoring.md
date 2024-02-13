@@ -90,6 +90,10 @@ At this step, select an authentication method that you want to use to connect to
 > [!IMPORTANT]
 > The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
 
+You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
+
+![Screenshot showing the Configure Run As account for Automatic template.](./media/managed-instance-management-pack/new-run-as-account-automatic-template.png)
+
 Regardless of the selected option, ensure to grant required SQL permissions to the selected monitoring account for all the managed instances. For more information, see [Security Configuration](managed-instance-management-pack-security-configuration.md).
 
 ![Screenshot showing the Configure SQL connection settings.](./media/managed-instance-management-pack/sql-connection-settings.png)
