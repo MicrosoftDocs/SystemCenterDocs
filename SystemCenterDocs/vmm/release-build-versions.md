@@ -5,7 +5,7 @@ description: This article details the release builds in Virtual Machine Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 02/13/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -39,6 +39,7 @@ The following table lists the release history for Virtual Machine Manager 2019.
 |10.19.2591.0|[5001835](https://support.microsoft.com/kb/5001835) |May 2021 |Update Rollup 3 |
 |10.19.2648.0|[5014156](https://support.microsoft.com/kb/5014156) |July 2022 |Update Rollup 4 |
 |10.19.2729.0|[5024282](https://support.microsoft.com/kb/5024282) |April 2023 |Update Rollup 5 |
+| - | - | March 2024 | Update Rollup 6 |
 
 ::: moniker-end
 
