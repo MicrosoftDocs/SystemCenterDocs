@@ -4,7 +4,7 @@ description: This article provides the list of release builds for System Center 
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 01/08/2024
+ms.date: 02/13/2024
 ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 author: PriskeyJeronika-MS
@@ -65,6 +65,7 @@ The following table lists the build versions for Data Protection Manager 2019.
 | 10.19.458.0 | [5001202](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d) | March 2021 | Update Rollup 3 for System Center 2019 Data Protection Manager    |
 | 10.19.577.0 | [5014054](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-data-protection-manager-1f4a13ed-9750-49bb-b312-9def71bc31da) | June 2022 | Update Rollup 4 for System Center 2019 Data Protection Manager    |
 | 10.19.677.0 | [5024231](https://support.microsoft.com/help/5024231) | April 2023| Update Rollup 5 for System Center 2019 Data Protection Manager |
+| - | - | March 2023 | Update Rollup 6 for System Center 2019 Data Protection Manager |
 
 ::: moniker-end
 
