@@ -5,7 +5,7 @@ description: This article describes how to configure the network firewall.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/07/2023
+ms.date: 02/15/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
