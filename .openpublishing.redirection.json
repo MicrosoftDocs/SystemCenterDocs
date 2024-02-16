@@ -6,8 +6,20 @@
       "redirect_url" : "/system-center/index"
   },
   {
-     "source_path" : "SystemCenterDocs/orchestrator/configure-service-deployment-in-system-center-2016.md",
-     "redirect_url" : "/system-center/orchestrator/configure-service-deployment"
+     "source_path" : "SystemCenterDocs/orchestrator/delete-network-adapter.md",
+     "redirect_url" : "/system-center/orchestrator/delete-network-adapter-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/delete-vm-disk-activity.md",
+     "redirect_url" : "/system-center/orchestrator/delete-vm-disk-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/modify-vm-disk-activity.md",
+     "redirect_url" : "/system-center/orchestrator/modify-vm-disk-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/monitor-vmm-job.md",
+     "redirect_url" : "/system-center/orchestrator/monitor-vmm-job-in-system-center-2016"
   },
   {
      "source_path" : "SystemCenterDocs/orchestrator/deploy-service-in-system-center-2016.md",
