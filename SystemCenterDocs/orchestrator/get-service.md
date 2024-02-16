@@ -1,7 +1,7 @@
 ---
 title: Get Service activity in System Center - Orchestrator
 description: The Get Service activity is used in a runbook to return data on all of the services within the VMM management server.
-ms.date: 04/25/2023
+ms.date: 02/16/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
