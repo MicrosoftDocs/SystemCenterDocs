@@ -54,10 +54,6 @@
      "redirect_url" : "/system-center/orchestrator/get-vm-subnet"
   },
   {
-     "source_path" : "SystemCenterDocs/orchestrator/get-vm-subnet-in-system-center-2016.md",
-     "redirect_url" : "/system-center/orchestrator/get-vm-subnet"
-  },
-  {
      "source_path" : "SystemCenterDocs/orchestrator/scale-tier-in-in-system-center-2016.md",
      "redirect_url" : "/system-center/orchestrator/scale-tier-in"
   },
