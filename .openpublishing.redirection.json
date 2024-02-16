@@ -22,6 +22,10 @@
      "redirect_url" : "/system-center/orchestrator/monitor-vmm-job-in-system-center-2016"
   },
   {
+     "source_path" : "SystemCenterDocs/orchestrator/configure-service-deployment-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/configure-service-deployment"
+  },
+  {
      "source_path" : "SystemCenterDocs/orchestrator/deploy-service-in-system-center-2016.md",
      "redirect_url" : "/system-center/orchestrator/deploy-service"
   },
