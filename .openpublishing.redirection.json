@@ -6,6 +6,14 @@
       "redirect_url" : "/system-center/index"
   },
   {
+     "source_path" : "SystemCenterDocs/orchestrator/configure-service-deployment-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/configure-service-deployment"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/deploy-service-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/deploy-service"
+  },
+  {
       "source_path" : "SystemCenterDocs/dpm/get-started/upgrade-to-dpm-2016.md",
       "redirect_url" : "/system-center/dpm/upgrade-to-dpm-2016"
   },
