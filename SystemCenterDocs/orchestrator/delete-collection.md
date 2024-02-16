@@ -1,8 +1,8 @@
 ---
 title: Delete Collection Activity
-description: This article provides guidance on how to configure the Delete Collection activity for System Center 2016 Configuration Manager.
+description: This article provides guidance on how to configure the Delete Collection activity for System Center Configuration Manager.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/07/2024
+ms.date: 02/16/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,7 +16,7 @@ manager: jsuri
 robots: noindex
 ---
 
-# Delete collection activity for System Center 2016 Configuration Manager
+# Delete collection activity for System Center Configuration Manager
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
