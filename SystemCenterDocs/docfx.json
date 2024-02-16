@@ -236,6 +236,12 @@
         "src": "vmm",
         "dest": "vmm"
       }
+  "globalMetadata": {
+        "feedback_system": "Standard",
+        "feedback_product_url": "https://feedback.azure.com/d365community/",
+        "feedback_help_link_url": "https://learn.microsoft.com/en-us/answers/tags/182/msc.html",
+        "feedback_help_link_type": "get-help-at-qna"
+  }
     ],
     "overwrite": [],
     "externalReference": [],
