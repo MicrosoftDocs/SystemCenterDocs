@@ -97,7 +97,7 @@ From a management server:
 > Level: Error  
 > Computer: **managementServer.domain.a.net**  
 > Description:  
-> A device at IP <clientServerIP>:50348 attempted to connect but could not be authenticated, and was rejected.
+> A device at IP [clientServerIP]:50348 attempted to connect but could not be authenticated, and was rejected.
 Another symptom could be that when using the Discovery Wizard to push agents to client machines, the process gets "stuck" after the agent is installed and monitoring never completes.
 To resolve this, ensure that the following ports are open, and communications are allowed, from the management servers to the domain controllers in the client's domain:
 - TCP and UDP port 389 for LDAP
