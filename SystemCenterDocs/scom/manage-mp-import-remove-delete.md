@@ -57,8 +57,10 @@ The Operations Manager community maintains a list of management packs developed 
 
 You should always review the management pack guide before you import a management pack.
 
-### Import a management pack from the catalog
+### Import a management pack from the web catalog
 
+> [!IMPORTANT]
+> If you receive errors connecting to the management pack web catalog, ensure that .NET is utilizing StrongCrypto settings to communicate with the web service. More information and steps to apply this can be found here: [Transport Layer Security (TLS) best practices with the .NET Framework | Microsoft Learn](/dotnet/framework/network-programming/tls)
 1.  Sign in to the computer with an account that is a member of the Operations Manager Administrators role.
 
 2.  In the Operations console, select **Administration**.
