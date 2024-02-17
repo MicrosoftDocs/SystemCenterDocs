@@ -46,7 +46,7 @@ The following table shows Operations Manager feature interaction across a firewa
 |Connected management server (Local)|5724&nbsp;--->|Connected management server (Connected)|No||
 |Windows agent installed using MOMAgent.msi|5723&nbsp;--->|Management server|Yes (Setup)||
 |Windows agent installed using MOMAgent.msi|5723&nbsp;--->|Gateway server|Yes (Setup)||
-|Windows agent push installation, pending repair, pending update|5723/TCP<br>135/TCP<br>137/UDP<br>138/UDP<br>139/TCP<br>445/TCP<br><br>*RPC/DCOM&nbsp;High&nbsp;ports&nbsp;(2008&nbsp;OS&nbsp;and&nbsp;later)<br>Ports&nbsp;49152-65535&nbsp;TCP||No|Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.||
+|Windows agent push installation, pending repair, pending update|5723/TCP<br>135/TCP<br>137/UDP<br>138/UDP<br>139/TCP<br>445/TCP<br><br>*RPC/DCOM&nbsp;High&nbsp;ports&nbsp;(2008&nbsp;OS&nbsp;and&nbsp;later)<br>Ports&nbsp;49152-65535&nbsp;TCP||No|Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.|
 |UNIX/Linux agent discovery and monitoring of agent|TCP&nbsp;1270&nbsp;<---|Management server or Gateway server|No||
 |UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP&nbsp;22&nbsp;<---|Management server or Gateway server|Yes||
 |OMED Service|TCP&nbsp;8886&nbsp;<---|Management server or Gateway server|Yes||
