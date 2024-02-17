@@ -48,7 +48,7 @@ You have several options for importing management packs:
 -   Download a management pack by using an Internet browser to import at a later time.
 
 > [!NOTE]
-> Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx**. If the computer running Operations Manager Operations console can't connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that's accessible from the console.
+> Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL: `https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx`. If the computer running Operations Manager Operations console can't connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that's accessible from the console.
 
 The Operations Manager community maintains a list of management packs developed by Microsoft on the following website [Microsoft Management Pack List](https://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk).
 
@@ -60,7 +60,8 @@ You should always review the management pack guide before you import a managemen
 ### Import a management pack from the web catalog
 
 > [!IMPORTANT]
-> If you receive errors connecting to the management pack web catalog, ensure that .NET is utilizing StrongCrypto settings to communicate with the web service. More information and steps to apply this can be found here: [Transport Layer Security (TLS) best practices with the .NET Framework | Microsoft Learn](/dotnet/framework/network-programming/tls)
+> If you receive errors connecting to the management pack web catalog, ensure that .NET is utilizing StrongCrypto settings to communicate with the web service. More information and steps to apply this can be found here: [Transport Layer Security (TLS) best practices with the .NET Framework](/dotnet/framework/network-programming/tls)
+
 1.  Sign in to the computer with an account that is a member of the Operations Manager Administrators role.
 
 2.  In the Operations console, select **Administration**.
@@ -174,7 +175,7 @@ You should always review the management pack guide before you import a managemen
 Exporting a management pack allows customizations to a sealed management pack to be saved to a writeable management pack. Because sealed management packs can't be changed, the modifications made to a management pack are saved to a separate, unsealed management pack file. The unsealed management pack can then be imported into a different management group or the same management group depending on the situation. This unsealed management pack is dependent on the original sealed management pack and can be imported only to management groups that have the original sealed management pack.  
 
 > [!NOTE]
-> Using the Operations Console, you can only export unsealed management packs. To export a sealed management pack, you must use the Export-SCManagementPack cmdlet. Know that this will break the seal on the MP, and it cannot be used the same as it was before unless resealed. For more information, see [Operations Manager Cmdlet Reference](/powershell/module/operationsmanager/export-scmanagementpack?view=systemcenter-ps-2022).  
+> Using the Operations Console, you can only export unsealed management packs. To export a sealed management pack, you must use the Export-SCManagementPack cmdlet. Know that this will break the seal on the MP, and it cannot be used the same as it was before unless resealed. For more information, see [Operations Manager Cmdlet Reference](/powershell/module/operationsmanager/export-scmanagementpack).  
 ### To export an unsealed management pack   
 
 1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators role.  
