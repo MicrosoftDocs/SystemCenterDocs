@@ -5,9 +5,9 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
-ms.date: 08/07/2023
-ms.technology: service-management-automation
+ms.service: system-center
+ms.date: 02/01/2024
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
@@ -262,4 +262,4 @@ Set-SmaRunbookConfiguration -WebServiceEndpoint $webServer -Port $port -Name $ru
 ## Next steps
 
 - Read about [managing global assets](manage-global-assets.md).
-- Learn about the [role of SMA](https://gallery.technet.microsoft.com/Service-Management-fcd75828) in a Microsoft Azure Pack implementation.
+- Learn about the [role of SMA](/system-center/sma/runbook-automation) in a Microsoft Azure Pack implementation.

@@ -6,8 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.reviewer: randolphwest
 ms.date: 07/20/2023
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.custom: engagement-fy23
 ---

@@ -6,8 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/29/2019
 ms.custom: na, intro-installation
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: ac69f3db-00ab-4ca3-a2fc-f87d4503f1ed
 monikerRange: '<sc-om-1807'

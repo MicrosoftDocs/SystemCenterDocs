@@ -4,10 +4,10 @@ description: This article describes how to create views in the Operations Manage
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/28/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: ac556a83-37b4-4388-b033-d1a59c52ab79
 ---
@@ -121,7 +121,7 @@ The state view in Operations Manager is like most other view types in that you u
 
 4.  Use the checkboxes provided to select individual criteria to apply additional filters to the objects that you want to display in your view. You might need to further define the criteria in the **Criteria description** box.  
 
-5.  Select the **Display** tab. By default, all the columns in your state view display. Click to deselect one or more columns that you don't want to display. Choose how you want to sort the objects in your view in **Sort columns by**.  
+5.  Select the **Display** tab. By default, all the columns in your state view display. Deselect one or more columns that you don't want to display. Choose how you want to sort the objects in your view in **Sort columns by**.  
 
 6.  Select **OK** to create the view.  
 
@@ -184,16 +184,16 @@ The task status view in Operations Manager is like most other view types in that
 
 3.  In the **Properties** dialog of the task status view, enter a name and a description for the view. (The description is optional.)  
 
-4.  On the **Criteria** tab, click the ellipsis (**...**) next to the **Show data related to** box. The **Select a Target Type** dialog displays a list of the object types available in your management group. Click to select the object type that most specifically describes the objects that you want to view, and select **OK**.
+4.  On the **Criteria** tab, select the ellipsis (**...**) next to the **Show data related to** box. The **Select a Target Type** dialog displays a list of the object types available in your management group. Select the object type that most specifically describes the objects that you want to view, and select **OK**.
 
-    The object type you select is listed in the **Show data related to** box. If you want to narrow the focus of the view, you can also click the ellipsis (**...**) next to **Show data contained in a specific group**. Select a group to filter the objects shown in your view, and select **OK**.  
+    The object type you select is listed in the **Show data related to** box. If you want to narrow the focus of the view, you can also select the ellipsis (**...**) next to **Show data contained in a specific group**. Select a group to filter the objects shown in your view, and select **OK**.  
 
     > [!NOTE]  
     > If you don't see the object type that you want, select **View all targets** and then enter a word or phrase in **Find** to filter the displayed list.  
 
 5.  Use the checkboxes provided to select individual criteria to apply additional filters to the objects that you want to display in your view. You might need to further define the criteria in the **Criteria description** box.  
 
-6.  Select the **Display** tab. By default, all the columns in your state view display. Click to deselect one or more columns that you don't want to display. Choose how you want to sort the objects in your view in **Sort columns by**.  
+6.  Select the **Display** tab. By default, all the columns in your state view display. Deselect one or more columns that you don't want to display. Choose how you want to sort the objects in your view in **Sort columns by**.  
 
 7. Select **OK** to create the view.  
 

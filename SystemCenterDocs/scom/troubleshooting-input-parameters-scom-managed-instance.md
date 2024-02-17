@@ -5,10 +5,10 @@ description: This article describes the errors that might occur while validating
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/13/2023
+ms.date: 02/01/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
 ms.topic: troubleshooting-general
 monikerRange: '>=sc-om-2019'
 ---
@@ -255,7 +255,7 @@ Follow these steps to run the validation script:
 
 **Cause**: Occurs when MSI is not properly configured to access SQL managed instance.
 
-**Resolution**: Check if MSI is configured as Active Directory Admin on SQL managed instance. Ensure that required [Azure Active Directory permissions](https://learn.microsoft.com/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-active-directory-admin-value-in-the-sql-managed-instance) are provided to SQL managed instance for MSI authentication to work.
+**Resolution**: Check if MSI is configured as Active Directory Admin on SQL managed instance. Ensure that required [Azure Active Directory permissions](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-active-directory-admin-value-in-the-sql-managed-instance&preserve-view=true) are provided to SQL managed instance for MSI authentication to work.
 
 ### Issue: Failed to connect to SQL MI from this instance
 

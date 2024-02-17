@@ -7,8 +7,8 @@ ms.author: v-ekaterinap
 manager: evansma
 ms.date: 12/15/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for SQL Server
@@ -43,6 +43,7 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 - SQL Server High Availability Features:
   - Single-domain Availability Groups, including availability replicas and database replicas
   - Distributed Availability Groups
+  - Contained Availability Groups
   - Failover Clustering
   - Log Shipping
   - [Not supported] Replication

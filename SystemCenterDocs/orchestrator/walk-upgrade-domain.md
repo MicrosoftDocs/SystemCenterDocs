@@ -2,10 +2,10 @@
 title: Walk Upgrade Domain
 description: The Walk Upgrade Domain activity specifies the next upgrade domain to be walked during manual in-place upgrade or configuration change.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 80432b66-bbce-4fbf-b26e-a4e457f76265

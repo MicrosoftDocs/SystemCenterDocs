@@ -5,12 +5,12 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 10/12/2016
-ms.technology: service-manager
+ms.date: 02/08/2024
+ms.subservice: service-manager
 ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Troubleshoot computer problems with Service Manager tasks

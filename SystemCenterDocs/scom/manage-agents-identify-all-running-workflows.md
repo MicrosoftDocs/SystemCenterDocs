@@ -4,10 +4,10 @@ description: This article describes how to view what workflows are running on an
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/06/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 01/22/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 5ec7aa58-3789-4589-a051-63fdd6f2dec1
 ---

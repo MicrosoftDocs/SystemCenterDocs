@@ -1,10 +1,10 @@
 ---
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
-ms.prod: system-center
-ms.date: 01/08/2024
+ms.service: system-center
+ms.date: 02/01/2024
 title: What's new in System Center DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -189,11 +189,11 @@ For issues fixed and the installation instructions for UR5, see the [KB article]
 
 ### Support for SQL Server 2022
 
-DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### Back up support for Windows Server 2022
 
-DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### End of support for vSphere 5.5
 
@@ -201,11 +201,11 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 
 ### Support for vSphere 7.0
 
-DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
+DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019&preserve-view=true).
 
 ### Support for Microsoft 365 SMTP
 
-DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm).
+DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm&preserve-view=true).
 
 ### Increase maximum parallel online backups
 
@@ -419,7 +419,7 @@ The new method has the following advantages:
 
 - After the recovery point is mounted, file browsing during item level recovery is faster for recovery points with many files and folders.
 
-We recommended you to update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](https://learn.microsoft.com/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
+We recommended you to update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
 
 ::: moniker-end
 

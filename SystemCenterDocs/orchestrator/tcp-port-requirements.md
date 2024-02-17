@@ -5,10 +5,10 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 01/19/2021
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: 'sc-orch-2016 || sc-orch-2019 || sc-orch-2022'
 ---

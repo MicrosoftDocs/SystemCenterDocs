@@ -5,10 +5,10 @@ description: This article explains monitoring modes in Management Pack for SQL S
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/26/2023
+ms.date: 1/25/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Monitoring Modes
@@ -41,7 +41,10 @@ Management Pack for SQL Server provides the following monitoring modes:
 
 - [**Mixed monitoring**](#configuring-mixed-monitoring-mode)
 
-    This monitoring mode supports SQL on Windows only. In this monitoring mode, the management pack places its seed on each computer that has the System Center Operations Manager agent. This seed is then used to automatically discover all SQL Server on Windows instances. The entire monitoring is performed by Management Servers and Gateway Servers that are members of the **SQL Server Monitoring Pool**. Custom management server resource pools are also supported.
+    This monitoring mode supports SQL on Windows only. In this monitoring mode, the management pack places its seed on each computer that has the System Center Operations Manager agent. This seed is then used to automatically discover all SQL Server on Windows instances. The entire monitoring is performed by Management Servers and Gateway Servers that are members of the **SQL Server Monitoring Pool**.
+
+    > [!NOTE]
+    > For mixed monitoring mode only the **SQL Server Monitoring Pool** is supported. Custom management server resource pools are not supported.
 
     Only the TCP/IP protocol is supported in this mode.
 
@@ -127,7 +130,10 @@ Use the mixed monitoring mode when you want to switch monitoring from the agent 
 
 In this monitoring mode, you don't need to configure the connection strings manually. Instead, you can use overrides.
 
-When enabling the mixed monitoring mode, only a SQL Server seed is discovered locally by the System Center Operations Manager agent. All other workflows are executed on a dedicated Management Server Pool.
+When enabling the mixed monitoring mode, only a SQL Server seed is discovered locally by the System Center Operations Manager agent. All other workflows are executed on a dedicated **SQL Server Monitoring Pool**.
+
+> [!IMPORTANT]
+> Consider using at least one management server in the **SQL Server Monitoring Pool** for valid mixed monitoring mode settings.
 
 To configure mixed monitoring, perform the following steps:
 
@@ -155,7 +161,7 @@ To view currently used monitoring types, perform the following steps:
 
 2. In the **Columns to display** list, select the **Monitoring Type** checkbox.
 
-    ![Screenshot showing Monitoring type](./media/sql-server-management-pack/monitoring-type-view.png)
+    ![Screenshot showing Monitoring type personalization.](./media/sql-server-management-pack/monitoring-type-personalize-view.png)
 
     After enabling the **Monitoring Type** checkbox, used monitoring types become available in the **Database Engines** table.
 

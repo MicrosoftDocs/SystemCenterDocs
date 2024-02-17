@@ -1,11 +1,11 @@
 ---
 description: This article describes how you can identify tape libraries compatible with DPM.
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 11/01/2017
+ms.date: 02/01/2024
 title: Identify compatible tape libraries
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -20,7 +20,7 @@ manager: jsuri
 
 ::: moniker-end
 
-Use the TechNet wiki to find the latest list of [compatible tape libraries](https://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx) for System Center Data Protection Manager (DPM).
+Find the latest list of [compatible tape libraries](/system-center/dpm/dpm-compatible-tape-libraries) for System Center Data Protection Manager (DPM).
 
 ## Virtual tape library support
 Virtual tape libraries configured with a virtual fiber channel adapter are supported with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fiber channel adapter, ask your tape hardware vendor to verify tape library compatibility.

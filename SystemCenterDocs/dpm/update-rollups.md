@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 08/04/2020
 ms.topic: article
-ms.prod: system-center
-ms.technology: data-protection-manager
+ms.service: system-center
+ms.subservice: data-protection-manager
 ms.custom: intro-deployment, UpdateFrequency2
 ---
 

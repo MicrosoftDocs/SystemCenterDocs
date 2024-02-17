@@ -5,10 +5,10 @@ description: This article describes how to install the Operations Manager Gatewa
 author: sepaugh
 ms.author: lornesepaugh
 manager: amanan
-ms.date: 11/11/2023
+ms.date: 02/01/2024
 ms.custom: intro-installation, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

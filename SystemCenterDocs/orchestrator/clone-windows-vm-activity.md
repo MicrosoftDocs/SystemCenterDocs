@@ -2,10 +2,10 @@
 title: Clone Windows VM Activity
 description: The Clone Windows VM activity is used in a runbook to create a copy of an existing Windows virtual machine or template.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ab0c21ce-3a9d-4901-ad45-4e9e76757a48

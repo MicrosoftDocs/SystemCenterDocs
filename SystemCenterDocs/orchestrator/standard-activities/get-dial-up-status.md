@@ -3,10 +3,10 @@ title: Get Dial-up Status
 description: This article describes the functionality of Get Dial-up Status activity.
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ab465f97-ef96-41b8-bae5-57c5413af14a
