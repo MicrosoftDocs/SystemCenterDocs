@@ -23,8 +23,7 @@ ms.topic: article
 This section describes how to configure your firewall to allow communication between the different Operations Manager features on your network.  
 
 > [!NOTE]
-> Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, and so on.   
-> Operations Manager does not support LDAPs.
+> Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, and so on. Operations Manager does not support LDAPs.
 ## Port assignments
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
 
@@ -90,6 +89,7 @@ From the client:
 > Computer: **clientServer.domain.b.net**  
 > Description:  
 > The OpsMgr Connector connected to **managementServer.domain.a.net**, but the connection was closed immediately without authentication taking place.  The most likely cause of this error is a failure to authenticate either this agent or the server.  Check the event log on the server and on the agent for events which indicate a failure to authenticate.
+
 From a management server:
 > Log Name: Operations Manager  
 > Source: OpsMgr Connector  
@@ -98,7 +98,9 @@ From a management server:
 > Computer: **managementServer.domain.a.net**  
 > Description:  
 > A device at IP [clientServerIP]:50348 attempted to connect but could not be authenticated, and was rejected.
+
 Another symptom could be that when using the Discovery Wizard to push agents to client machines, the process gets "stuck" after the agent is installed and monitoring never completes.
+
 To resolve this, ensure that the following ports are open, and communications are allowed, from the management servers to the domain controllers in the client's domain:
 - TCP and UDP port 389 for LDAP
 - TCP and UDP port 88 for Kerberos authentication
