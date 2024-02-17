@@ -32,6 +32,8 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 > - MSSQL on Windows: ROWS Data Allocated Free Space (%)
 > - MSSQL on Windows: ROWS Data Free Space Total (%)To open the report, perform the following steps:
 
+Once these rules and discoveries have had time to collect data to report on, the report can be executed by:
+
 1. In the **Reporting** view, double-click **Database Files Space Usage Forecast**.
 
     ![Screenshot showing Database usage forecast.](./media/sql-server-management-pack/database-files-space-usage-forecast.png)
