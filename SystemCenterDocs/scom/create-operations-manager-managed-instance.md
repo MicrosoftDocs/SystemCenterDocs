@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM Managed Instance to mon
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/09/2024
+ms.date: 02/19/2024
 ms.custom: UpdateFrequency.5, references_regions
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -19,8 +19,21 @@ Azure Monitor SCOM Managed Instance provides System Center Operations Manager fu
 
 This article describes how to create an instance of the service (a SCOM Managed Instance) with System Center Operations Manager functionality in Azure.
 
->[!NOTE]
->You can create an instance only in the **West Europe**, **West US**, **North Europe**, **East US**, **East US 2**, **Australia East**,	**Southeast Asia**,	**UK South**, and **West US 3** regions.
+## Supported regions
+
+- West Europe
+- West US
+- North Europe
+- East US
+- East US 2
+- Australia East
+- Southeast Asia
+- UK South
+- West US 3
+- Sweden Central
+- Canada Central
+- South India
+- Germany West Central
 
 ## Create a SCOM Managed Instance
 
