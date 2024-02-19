@@ -34,6 +34,7 @@ This tutorial describes how to create an instance of the service (a SCOM Managed
 - Canada Central
 - South India
 - Germany West Central
+- Italy North 
 
 ## Prerequisites
 
