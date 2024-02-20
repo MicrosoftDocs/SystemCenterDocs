@@ -100,15 +100,17 @@ Regardless of the selected option, ensure to grant required SQL permissions to t
 
 ## Instances filtering
 
-At this optional step, you can configure the filtering options:
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
 
-- Exclude - select this option to specify instances that shouldn't be discovered.
+**Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
-- Include - select this option to specify only those instances that you want to be discovered.
+![Screenshot of the server exclude list wildcard SPN.](./media/managed-instance-management-pack/configure-instances-filtering-wildcard.png)
 
-Use an asterisk to replace any symbol/symbols.
+**Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-![Screenshot showing the Configure instance filtering.](./media/managed-instance-management-pack/instance-filtering.png)
+![Screenshot of the server exclude list regular expression SPN.](./media/managed-instance-management-pack/configure-instances-filtering-regex.png)
+
+If you want to remove an existing mask, select it and select **Delete**.
 
 ## Management pool
 
