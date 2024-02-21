@@ -55,7 +55,7 @@ The activity publishes all the data from the required and optional properties in
 | ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMware, or Virtual Server   |  
 | Description   | An alphanumeric description of the checkpoint   |  
 | Disk I/O (IOPS)   | The disk I/O performance, measured by the number of I/O operations per second (IOPS) that can be performed with acceptable latency |  
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |  
+| Enabled   | True or False. If False, the virtual machine can't be started.   |  
 | Modified Time   | The date and time that the checkpoint was modified in the format yyyy-mm-dd hh:mm:ss AM or PM   |  
 | Most Recent   | True or False   |  
 | Most Recent Task   | The last recorded task for the checkpoint, for example, Start virtual machine   |  

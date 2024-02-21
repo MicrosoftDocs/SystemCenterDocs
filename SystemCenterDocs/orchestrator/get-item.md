@@ -97,7 +97,7 @@ The following tables list the required properties, filters, and published data f
 | ID   | ID of the appointment   | String   |
 | Importance   | The importance of the appointment   | String   |
 | Is All Day Event   | Indicates whether the appointment is an all-day event   | Boolean   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Boolean   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Boolean   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Boolean   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Boolean   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Boolean   |
@@ -210,7 +210,7 @@ The following tables list the required properties, filters, and published data f
 | Attachments   | List of attachments   | String   |
 | Bcc   | List of Bcc recipients for the email message   | String   |
 | Body   | The body of the item   | String   |
-| Body Type   | The format of the message body, text or HTML   | String   |
+| Body Type   | The format of the message body, text, or HTML   | String   |
 | Categories   | List of categories associated with the item   | String   |
 | Cc   | List of Cc recipients for the email message   | String   |
 | Conversation ID   | The ID of the conversation that this item is a part of   | String   |

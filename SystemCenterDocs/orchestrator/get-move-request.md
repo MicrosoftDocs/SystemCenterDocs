@@ -81,7 +81,7 @@ This Activity has no required properties.
 | Offline   | Indicates if this is an offline move request. The default value is True, when selected.   | True, False   |
 | Move Status   | Specifies to return "move" requests with the specified configured status.<br>Can't be used with Identity property. The Value range is one of the following:<br>Auto Suspended <br>Completed <br>Completed With Warning <br>Completion In Progress <br>Failed <br>In Progress <br>None <br>Queued <br>Suspended <br>Default is blank, when selected. | AutoSuspended<br>Completed CompletedWithWaring<br>CompletionInProgress<br>Failed<br>InProgress<br>None<br>Queued<br>Suspended |
 | Multi Tenant   | Specifies that the search should be performed across the entire forest, not just across the organization that's currently scoped. The default value is True, when selected   | True, False   |
-| Organization   | Specifies the organization in which the search will be performed. This filter is available for multi-tenant deployments. It isn't available for on-premises deployments.   | String   |
+| Organization   | Specifies the organization in which the search will be performed. This filter is available for multitenant deployments. It isn't available for on-premises deployments.   | String   |
 | Organizational Unit   | Specifies an organizational unit (OU) and is used to limit the results.   | String   |
 | Password   | Specifies the password used by the mail user to secure the user account and the associated mailbox in the service.   | String   |
 | Protect   | Returns the moved mailboxes in protected mode. <br>Can't be used in conjunction with the Identity property. The default value is True, when selected.   | True, False   |

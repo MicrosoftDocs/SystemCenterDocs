@@ -59,7 +59,7 @@ The following tables list the filters, properties, and published data for this a
 | IsAvailable   | Indicates whether the Operations Manager monitoring object is available to perform a monitoring operation |
 | IsManaged   | Indicates whether the Operations Manager monitoring object is managed   |
 | LastModified   | The date and time that the Operations Manager monitoring object was last modified   |
-| LeastDerivedNonAbstractingMonitoringClassId | The globally unique ID for the least derived non-abstract monitoring class   |
+| LeastDerivedNonAbstractingMonitoringClassId | The globally unique ID for the least derived nonabstract monitoring class   |
 | MaintenanceModeLastModified   | The date and time that the monitor maintenance mode was last changed   |
 | ManagementGroup   | The Management Group to which the Operations Manager monitoring object belongs   |
 | ManagementGroupId   | The unique ID of the Management Group   |

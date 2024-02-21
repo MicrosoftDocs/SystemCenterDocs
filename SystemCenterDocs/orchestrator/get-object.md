@@ -14,6 +14,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ---
+
 # Get Object
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
@@ -30,4 +31,4 @@ The following published data element is specific to Get Object. Additional publi
 
 | Element   | Description   |
 |-------------------|-----------------------------------------------------------|
-| Number of Objects | The number of objects returned by the Get Object activity |
+| Number of Objects | The number of objects returned by the Get Object activity. |
