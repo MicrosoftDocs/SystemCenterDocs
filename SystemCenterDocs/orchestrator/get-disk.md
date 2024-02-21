@@ -1,8 +1,8 @@
 ---
 title: Get Disk
 description: The Get Disk activity is used to retrieve an existing virtual disk based on the filters that you specify.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2023
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

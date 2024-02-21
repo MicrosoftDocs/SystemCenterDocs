@@ -1,8 +1,8 @@
 ---
 title: Get Object
 description: The Get Object activity is used to search for a record based on a set of filter criteria.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2023
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
