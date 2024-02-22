@@ -541,7 +541,7 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-**Key Path:** *HKLM/Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelIncrementalJobs*
+**Key Path:** *HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelIncrementalJobs*
 **32 Bit DWORD:** VMware
 **Data:** `number` 
 The value should be the number (decimal) of virtual machines that you select for parallel backup.
