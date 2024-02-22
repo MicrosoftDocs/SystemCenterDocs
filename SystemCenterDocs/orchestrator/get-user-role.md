@@ -1,8 +1,8 @@
 ---
 title: Get User Role
-description: Returns data on all the user roles within the VMM server
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+description: Returns data on all the user roles within the VMM server.
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -23,7 +23,7 @@ manager: jsuri
 
 ::: moniker-end
 
-Returns data on all the user roles within the VMM server
+Returns data on all the user roles within the VMM server.
 
 >[!IMPORTANT]
 >When designating a computer, you must specify it using the FQDN. FQDN names are case sensitive.
@@ -48,9 +48,9 @@ None
 | Member Names   | Members of a user role.   |   |
 | Profile Type   | The type of VMM user role.   | Administrator, SelfServiceUser, ReadOnlyAdmin, DelegatedAdmin   |
 | User Role data Path   | The library path that each member of this user role can upload their data to   | \\\\MyLibraryServer.CONTOSO.com\\OneUserRoleVMMLibrary   |
-| Most Recent   | True or False   |   |
-| User Role ID   | The unique identifier (GUID) of the user role   |   |
-| User Role Name   | The names of the user role   |   |
+| Most Recent   | True or False.   |   |
+| User Role ID   | The unique identifier (GUID) of the user role.   |   |
+| User Role Name   | The names of the user role.   |   |
 | Application Profile Resource Names   |   |   |
 | Guest OS Profile Resource Names   |   |   |
 | Hardware Profile Resource Names   |   |   |
@@ -65,14 +65,14 @@ None
 
 | Element   | Description   |
 |:---|:---|
-| User Role ID   | The ID of the user role   |   
-| User Role Name   | The name of the user role   |   
-| Profile Type   | The profile type of the user role |   
+| User Role ID   | The ID of the user role.   |   
+| User Role Name   | The name of the user role.   |   
+| Profile Type   | The profile type of the user role. |   
 | Host Group Names in Scope   |   |   
 | Cloud Names in Scope   |   |   
-| Actions Permitted   | List of actions permitted   |   
-| Member Names   | Members of the user role   |   
-| Description   | Text description of the user role |   
+| Actions Permitted   | List of actions permitted.   |   
+| Member Names   | Members of the user role.   |   
+| Description   | Text description of the user role. |   
 | User Role Data Path   |   |   
 | Library Server Names   |   |   
 | VM Template Resource Names   |   |   
