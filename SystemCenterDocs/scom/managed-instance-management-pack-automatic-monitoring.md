@@ -90,25 +90,31 @@ At this step, select an authentication method that you want to use to connect to
 > [!IMPORTANT]
 > The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
 
+You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
+
+![Screenshot showing the Configure Run As account for Automatic template.](./media/managed-instance-management-pack/new-run-as-account-automatic-template.png)
+
 Regardless of the selected option, ensure to grant required SQL permissions to the selected monitoring account for all the managed instances. For more information, see [Security Configuration](managed-instance-management-pack-security-configuration.md).
 
 ![Screenshot showing the Configure SQL connection settings.](./media/managed-instance-management-pack/sql-connection-settings.png)
 
 ## Instances filtering
 
-At this optional step, you can configure the filtering options:
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
 
-- Exclude - select this option to specify instances that shouldn't be discovered.
+**Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
-- Include - select this option to specify only those instances that you want to be discovered.
+![Screenshot of the server exclude list wildcard SPN.](./media/managed-instance-management-pack/configure-instances-filtering-wildcard.png)
 
-Use an asterisk to replace any symbol/symbols.
+**Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-![Screenshot showing the Configure instance filtering.](./media/managed-instance-management-pack/instance-filtering.png)
+![Screenshot of the server exclude list regular expression SPN.](./media/managed-instance-management-pack/configure-instances-filtering-regex.png)
+
+If you want to remove an existing mask, select it and select **Delete**.
 
 ## Management pool
 
-At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
+At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Azure SQL Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 
 ![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/choose-management-pool.png)
 
