@@ -1,11 +1,11 @@
 ---
 ms.assetid: ac25266c-9def-404d-95dc-6d037fb710e4
-title: include file
-description: include file to summarize the release notes for VMM 2019.
+title: Include file
+description: Include file to summarize the release notes for VMM 2019.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  08/04/2019
+ms.date:  02/22/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,6 +18,10 @@ No known issues in VMM 2019 UR1 and UR2.
 
 - For issues fixed in 2019 UR1, [see the KB article for UR1](https://support.microsoft.com/help/4533411/update-rollup-1-for-system-center-virtual-machine-manager-2019).
 - For issues fixed in 2019 UR2, [see the KB article for UR2](https://support.microsoft.com/help/4569533).
+- For issues fixed in 2019 UR3, [see the KB article for UR3](https://support.microsoft.com/kb/5001835).
+- For issues fixed in 2019 UR4, [see the KB article for UR4](https://support.microsoft.com/kb/5014156).
+- For issues fixed in 2019 UR5, [see the KB article for UR5](https://support.microsoft.com/kb/5024282).
+- For issues fixed in 2019 UR6, see the KB article for UR6.
 
 ## Removal of cluster node fails with CleanUpDisks flag
 
@@ -39,13 +43,13 @@ No known issues in VMM 2019 UR1 and UR2.
 
 **Workaround**: VMM depends on the *Windows Standards-Based Storage Management* service to manage the storage devices using SMI-S. Ensure that the service is started before trying to add the storage device.  
 
-## Windows Server 2019 does not support HNVv1 networks
+## Windows Server 2019 doesn't support HNVv1 networks
 
 **Description**: Windows Server 2019 doesn't support HNVv1. If HNVv1 is currently in use, then the cluster that is utilizing HNVv1 shouldn't be upgraded to Windows Server 2019 using Cluster Rolling Upgrade.
 
 **Workaround**: Migrate out of HNVv1 to SDNv2 on Windows Server 2016 before using Cluster Rolling upgrade to Windows Server 2019.
 
-## Latest accessibility fixes in Console are not available
+## Latest accessibility fixes in Console aren't available
 
 **Description**: Latest accessibility fixes in Console might not be available when you use .NET 4.7 while installing the VMM console.
 
@@ -66,7 +70,7 @@ No known issues in VMM 2019 UR1 and UR2.
 
 To avoid this issue, prior to CRU triggering, ensure to install the latest OS updates on the VHD that you want to use for CRU.  
 
-## Storage Dynamic Optimization does not trigger VHD migration even when optimization criteria are met
+## Storage Dynamic Optimization doesn't trigger VHD migration even when optimization criteria are met
 
 **Description**: Storage Dynamic Optimization (DO) should trigger the VHD migration between Clustered Shared Volumes (CSV), when the free storage space in one of the CSVs falls below the disk space threshold set in the Dynamic Optimization page, and the aggressiveness criteria are met. However, in some cases, the VHDs might not be migrated even if all other Storage DO conditions are met.
 
@@ -89,7 +93,7 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 ```
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-VirtualMachineManager-Server/Operational /v ChannelAccess /t REG_SZ /d O:BAG:SYD:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;NS)(A;;0x1;;;IU)(A;;0x1;;;SU)"
 ```
-This command will add the service user to the list of allowed users, who can access VirtualMachineManager-Server/Operational event log.
+This command adds the service user to the list of allowed users, who can access VirtualMachineManager-Server/Operational event log.
 
 ## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
 
