@@ -6,7 +6,6 @@ author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
 ms.date: 02/24/2024
-ms.custom: na
 ms.product: msc-operations-manager
 ms.topic: reference
 ---
