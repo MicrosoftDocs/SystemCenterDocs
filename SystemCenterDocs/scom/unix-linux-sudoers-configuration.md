@@ -16,7 +16,7 @@ Effective monitoring of UNIX or Linux operating systems requires some elevated p
 
 ## Introduction
 
-In order to use sudo-enabled accounts for monitoring with Operations Manager, sudo configurations must be put into place to authorize elevation for RunAs Accounts using sudo. General requirements for the accounts used by Operations Manager with sudo elevation are:
+In order to use sudo-enabled accounts for monitoring with Operations Manager, configurations must be put into place to authorize elevation for RunAs Accounts using sudo. General requirements for the accounts used by Operations Manager with sudo elevation are:
 
 - The accounts must have RequireTTY disabled as a default parameter.
 - The accounts must be configured to elevate with NOPASSWD.
@@ -54,7 +54,7 @@ Make sure to modify the template to fit your organization's usernames and standa
 ### Red Hat Enterprise Linux (RHEL)
 
 > [!IMPORTANT]
-> Essential information required for user successBeginning with major version 8, Red Hat Enterprise Linux is contained within the "[Universal Linux](#universal-linux)" packages.
+> Beginning with major version 8, Red Hat Enterprise Linux falls under [Universal Linux](#universal-linux).
 
 ::: moniker range="< sc-om-2022"
 
@@ -79,13 +79,13 @@ Make sure to modify the template to fit your organization's usernames and standa
 ### SUSE Linux Enterprise Server (SLES)
 
 > [!IMPORTANT]
-> Essential information required for user successStarting with version 15, SUSE is contained within the [Universal Linux](#universal-linux) packages.
+> Starting with version 15, SUSE falls under [Universal Linux](#universal-linux).
 
 [!INCLUDE [sudoers-sles.md](includes/sudoers-sles.md)]
 
 ### Universal Linux
 
-Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md#universal-linux)
+Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](plan-supported-crossplat-os.md#universal-linux)
 
 [!INCLUDE [sudoers-universallinux.md](includes/sudoers-universallinux.md)]
 
@@ -112,14 +112,14 @@ There should be no quotes around the command as sudo doesn't recognize them, onl
 
 ## Troubleshooting
 
-### Sudo log
+### Sudo error log
 
-One of the best ways to troubleshoot authentication failures, related to sudoers configuration, can be to inspect the sudo log on the agent host.
+One of the best ways to troubleshoot authentication failures related to sudoers configurations can be to inspect the sudo log on the agent host.
 
 - For RedHat based operating systems, the default log location is `/var/log/secure`.
 - For Debian based operating systems, the default log location is `/var/log/auth.log`.
 
-Check the `/etc/sudoers` file for the `logfile` parameter to see where the log is currently being written to, if using a different operating system or a customized log location.
+Check the `/etc/sudoers` file for the `logfile` parameter to see where the log is currently being written to if using a different operating system or customized log location.
 
 ### Password prompts and timeouts
 
@@ -131,6 +131,6 @@ Defaults:scomuser passwd_tries = 1, passwd_timeout = 1
 
 This example sets a one-minute password prompt timeout for the user *scomuser*, which allows the command to fail quickly if a sudo configuration problem exists.
 
-### Password errors or authentication failures
+### Password errors or other authentication failures
 
 For guidelines on password and authentication configurations, see [Planning Security Credentials for Accessing Unix and Linux Computers](manage-security-create-crossplat-credentials.md).

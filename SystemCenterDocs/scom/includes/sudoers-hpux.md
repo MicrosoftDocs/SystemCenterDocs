@@ -34,40 +34,40 @@ SCOM 1801-1807
 
 ```bash
 #-----------------------------------------------------------------------------------
-#Example user configuration for Operations Manager 1801-1807
-#Example assumes users named: scomadm & scomuser
-#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+# Example user configuration for Operations Manager 1801-1807
+# Example assumes users named: scomadm & scomuser
+# Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 
-#General requirements
+# General requirements
 Defaults:scomadm !requiretty
 
-#Agent maintenance
+# Agent maintenance
 
-##Certificate signing
+## Certificate signing
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 
-##Install or upgrade
+## Install or upgrade
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
-##Uninstall
+## Uninstall
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
 
-##Log file monitoring
+## Log file monitoring
 scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 
-###Examples
-#Custom shell command monitoring example - replace \<shell command\> with the correct command string
+### Examples ###
+## Custom shell command monitoring example - replace \<shell command\> with the correct command string
 #scomuser ALL=(root) NOPASSWD: /usr/bin/sh -c  \<shell command\>
 
-#Daemon diagnostic and restart recovery tasks example (using cron)
+## Daemon diagnostic and restart recovery tasks example (using cron)
 #scomuser ALL=(root) NOPASSWD: /bin/sh -c ps -ef | grep cron | grep -v grep
 #scomuser ALL=(root) NOPASSWD: /usr/sbin/cron &
 
 #Defaults logfile=/var/log/sudo.log
 
-#End user configuration for Operations Manager agent
+# End user configuration for Operations Manager agent
 #-----------------------------------------------------------------------------------
 ```
 
@@ -85,19 +85,19 @@ SCOM 2016
 
 ```bash
 #-----------------------------------------------------------------------------------
-#Example user configuration for Operations Manager 2016
-#Example assumes users named: scomadm & scomuser
-#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+# Example user configuration for Operations Manager 2016
+# Example assumes users named: scomadm & scomuser
+# Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 
-#General requirements
+# General requirements
 Defaults:scomadm !requiretty
 
-#Agent maintenance
-##Certificate signing
+# Agent maintenance
+## Certificate signing
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 
-##Install or upgrade
+## Install or upgrade
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
@@ -105,21 +105,21 @@ scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
-##Uninstall
+## Uninstall
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
 
-##Log file monitoring
+## Log file monitoring
 scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 
-###Examples
-#Custom shell command monitoring example – replace \<shell command\> with the correct command string
-# scomuser ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
+### Examples ###
+## Custom shell command monitoring example – replace \<shell command\> with the correct command string
+#scomuser ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
 
-#Daemon diagnostic and restart recovery tasks example (using cron)
+## Daemon diagnostic and restart recovery tasks example (using cron)
 #scomuser ALL=(root) NOPASSWD: /usr/bin/sh -c ps -ef | grep cron | grep -v grep
 #scomuser ALL=(root) NOPASSWD: /usr/sbin/cron & 
 
-#End user configuration for Operations Manager agent
+# End user configuration for Operations Manager agent
 #-----------------------------------------------------------------------------------
 ```
 

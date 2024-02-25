@@ -26,20 +26,20 @@ SCOM 2019
 
 ```bash
 #-----------------------------------------------------------------------------------
-#Example user configuration for Operations Manager 2019
-#Example assumes users named: scomadm & scomuser
-#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+# Example user configuration for Operations Manager 2019
+# Example assumes users named: scomadm & scomuser
+# Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 
-#General requirements
+# General requirements
 Defaults:scomadm !requiretty
 
-#Agent maintenance
-##Certificate signing
+# Agent maintenance
+## Certificate signing
 scomadm ALL=(root) NOPASSWD: /bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
 scomadm ALL=(root) NOPASSWD: /bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c if test -f /opt/microsoft/omsagent/bin/service_control; then cp /tmp/scx-scomadm/omsadmin.conf /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf; /opt/microsoft/omsagent/bin/service_control restart scom; fi
 
-##Install or upgrade
+## Install or upgrade
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install --enable-opsmgr; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install --enable-opsmgr; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install --enable-opsmgr; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
@@ -47,22 +47,22 @@ scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --enable-opsmgr; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --enable-opsmgr; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
-##Uninstall
+## Uninstall
 #scomadm ALL=(root) NOPASSWD: /bin/sh -c /opt/microsoft/scx/bin/uninstall
 scomadm ALL=(root) NOPASSWD: /bin/sh -c if test -f /opt/microsoft/omsagent/bin/omsadmin.sh; then if test "$(/opt/microsoft/omsagent/bin/omsadmin.sh -l | grep scom | wc -l)" \\ "1" && test "$(/opt/microsoft/omsagent/bin/omsadmin.sh -l | wc -l)" \\ "1" || test "$(/opt/microsoft/omsagent/bin/omsadmin.sh -l)" \\ "No Workspace"; then /opt/microsoft/omsagent/bin/uninstall; else /opt/microsoft/omsagent/bin/omsadmin.sh -x scom; fi; else /opt/microsoft/scx/bin/uninstall; fi
 
-##Log file monitoring
+## Log file monitoring
 scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 
-###Examples
-#Custom shell command monitoring example – replace \<shell command\> with the correct command string
+### Examples ###
+## Custom shell command monitoring example – replace \<shell command\> with the correct command string
 #scomuser ALL=(root) NOPASSWD: /bin/sh -c echo error
 
-#Daemon diagnostic and restart recovery tasks example (using cron)
+## Daemon diagnostic and restart recovery tasks example (using cron)
 #scomuser ALL=(root) NOPASSWD: /bin/sh -c ps -ef | grep cron | grep -v grep
 #scomuser ALL=(root) NOPASSWD: /usr/sbin/cron & 
 
-#End user configuration for Operations Manager agent
+# End user configuration for Operations Manager agent
 #-----------------------------------------------------------------------------------
 ```
 
@@ -78,53 +78,53 @@ SCOM 1801-1807
 
 ```bash
 #-----------------------------------------------------------------------------------
-#Example user configuration for Operations Manager 1801-1807
-#Example assumes users named: scomadm & scomadm
-#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+# Example user configuration for Operations Manager 1801-1807
+# Example assumes users named: scomadm & scomadm
+# Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 
-#General requirements
+# General requirements
 Defaults:scomadm !requiretty
-#Agent maintenance
-##Certificate signing
+
+# Agent maintenance
+## Certificate signing
 scomadm ALL=(root) NOPASSWD: /bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
 scomadm ALL=(root) NOPASSWD: /bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 scomadm ALL=(root) NOPASSWD: /bin/sh -c if test -f /opt/microsoft/omsagent/bin/service_control; then cat /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; else cat /etc/opt/microsoft/scx/ssl/scx.pem; fi
 scomadm ALL=(root) NOPASSWD: /bin/sh -c if test -f /opt/microsoft/omsagent/bin/service_control; then mv /tmp/scx-scomadm/scom-cert.pem /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; fi
 scomadm ALL=(root) NOPASSWD: /bin/sh -c if test -r /etc/opt/microsoft/scx/ssl/scx.pem; then cat /etc/opt/microsoft/scx/ssl/scx.pem; else cat /etc/opt/microsoft/scx/ssl/scx-seclevel1.pem; fi
 
-##SCOM Workspace
+## SCOM Workspace
 scomadm ALL=(root) NOPASSWD: /bin/sh -c if test -f /opt/microsoft/omsagent/bin/service_control; then cp /tmp/scx-scomadm/omsadmin.conf /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf; /opt/microsoft/omsagent/bin/service_control restart scom; fi
 scomadm ALL=(root) NOPASSWD: /bin/sh -c if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi
 
-##Install or upgrade
-
-#Linux
+## Install or upgrade
+# Linux
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\].universal\[\[\\alpha\\\]\].\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].universal\[\[\\alpha\\\]\].\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\].universal\[\[\\alpha\\\]\].\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].universal\[\[\\alpha\\\]\].\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
-#RHEL
+# RHEL
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/omsagent-1.\[0-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --enable-opsmgr; if test -f /opt/microsoft/omsagent/bin/omsadmin.sh && test ! -f /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem; then /opt/microsoft/omsagent/bin/omsadmin.sh -w scom; fi; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
-##Uninstall
+## Uninstall
 scomadm ALL=(root) NOPASSWD: /bin/sh -c if test -f /opt/microsoft/omsagent/bin/omsadmin.sh; then if test "$(/opt/microsoft/omsagent/bin/omsadmin.sh -l | grep scom | wc -l)" \\ "1" && test "$(/opt/microsoft/omsagent/bin/omsadmin.sh -l | wc -l)" \\ "1" || test "$(/opt/microsoft/omsagent/bin/omsadmin.sh -l)" \\ "No Workspace"; then /opt/microsoft/omsagent/bin/uninstall; else /opt/microsoft/omsagent/bin/omsadmin.sh -x scom; fi; else /opt/microsoft/scx/bin/uninstall; fi
 
-##Log file monitoring
+## Log file monitoring
 scomadm ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 
-###Examples
-#Custom shell command monitoring example -replace \<shell command\> with the correct command string
+### Examples ###
+## Custom shell command monitoring example -replace \<shell command\> with the correct command string
 #scomadm ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
 
-#Daemon diagnostic and restart recovery tasks example (using cron)
+## Daemon diagnostic and restart recovery tasks example (using cron)
 #scomadm ALL=(root) NOPASSWD: /bin/sh -c ps -ef | grep cron | grep -v grep
 #scomadm ALL=(root) NOPASSWD: /usr/sbin/cron &
 
-#End user configuration for Operations Manager agent
+# End user configuration for Operations Manager agent
 #-----------------------------------------------------------------------------------
 ```
 
@@ -140,19 +140,19 @@ SCOM 2016
 
 ```bash
 #-----------------------------------------------------------------------------------
-#Example user configuration for Operations Manager 2016
-#Example assumes users named: scomadm & scomuser
-#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+# Example user configuration for Operations Manager 2016
+# Example assumes users named: scomadm & scomuser
+# Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 
-#General requirements
+# General requirements
 Defaults:scomadm !requiretty
 
-#Agent maintenance
-##Certificate signing
+# Agent maintenance
+## Certificate signing
 scomadm ALL=(root) NOPASSWD: /bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
 scomadm ALL=(root) NOPASSWD: /bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 
-##Install or upgrade
+## Install or upgrade
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --install; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
@@ -160,21 +160,21 @@ scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --force; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 scomadm ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].rhel.\[\[\\digit\\\]\].x\[6-8\]\[4-6\].sh --upgrade --force; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
-##Uninstall
+## Uninstall
 scomadm ALL=(root) NOPASSWD: /bin/sh -c /opt/microsoft/scx/bin/uninstall
 
-##Log file monitoring
+## Log file monitoring
 scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 
-###Examples
-#Custom shell command monitoring example – replace \<shell command\> with the correct command string
+### Examples ###
+## Custom shell command monitoring example – replace \<shell command\> with the correct command string
 # scomuser ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
 
-#Daemon diagnostic and restart recovery tasks example (using cron)
+## Daemon diagnostic and restart recovery tasks example (using cron)
 #scomuser ALL=(root) NOPASSWD: /bin/sh -c ps -ef | grep cron | grep -v grep
 #scomuser ALL=(root) NOPASSWD: /usr/sbin/cron & 
 
-#End user configuration for Operations Manager agent
+# End user configuration for Operations Manager agent
 #-----------------------------------------------------------------------------------
 ```
 
@@ -186,15 +186,15 @@ SCOM 2012 - Out of Support
 
 ```bash
 #-----------------------------------------------------------------------------------
-#User configuration for Operations Manager agent – for a user with the name: monuser
+# User configuration for Operations Manager agent – for a user with the name: monuser
 
-#General requirements
+# General requirements
 Defaults:monuser !requiretty
 
-#Lower sudo password prompt timeout for the user
+# Lower sudo password prompt timeout for the user
 Defaults:monuser passwd_tries = 1, passwd_timeout = 1
 
-#Agent maintenance (discovery, install, uninstall, upgrade, restart, cert signing) 
+# Agent maintenance (discovery, install, uninstall, upgrade, restart, cert signing) 
 monuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/tools/scxadmin
 monuser ALL=(root) NOPASSWD: /bin/sh -c sh /tmp/scx-\*/GetOSVersion.sh; EC=$?; rm -rf /tmp/scx-\*; exit $EC
 monuser ALL=(root) NOPASSWD: /bin/sh -c /bin/rpm -U --force \*/scx-\*
@@ -203,18 +203,18 @@ monuser ALL=(root) NOPASSWD: /bin/sh -c rpm -e scx
 monuser ALL=(root) NOPASSWD: /bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 monuser ALL=(root) NOPASSWD: /bin/sh -c echo \*
 
-#Log file monitoring
+# Log file monitoring
 monuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 
-###Examples
-#Custom shell command monitoring example – replace \<shell command\> with the correct command string
+### Examples ###
+## Custom shell command monitoring example – replace \<shell command\> with the correct command string
 #monuser ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
 
-#Daemon diagnostic and restart recovery tasks example (using cron)
+## Daemon diagnostic and restart recovery tasks example (using cron)
 #monuser ALL=(root) NOPASSWD: /bin/sh -c ps -ef | grep cron | grep -v grep
 #monuser ALL=(root) NOPASSWD: /sbin/service cron start
 
-#End user configuration for Operations Manager agent
+# End user configuration for Operations Manager agent
 #-----------------------------------------------------------------------------------
 ```
 -------------------------->
