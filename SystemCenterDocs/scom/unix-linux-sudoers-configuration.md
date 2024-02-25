@@ -13,33 +13,35 @@ ms.topic: reference
 
 # Configuring sudo elevation for Unix/Linux monitoring
 
-Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. Provided here are templates for use in configuring sudo for baseline monitoring.
+Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. We provided templates for use in configuring sudo for baseline operability.
 
 ## Introduction
 
-In order to use sudo-enabled accounts for monitoring with Operations Manager, the sudo configurations must be put into place to authorize elevation for the selected Run As Account using sudo. General requirements for the accounts used by Operations Manager with sudo elevation are:
+In order to use sudo-enabled accounts for monitoring with Operations Manager, sudo configurations must be put into place to authorize elevation for RunAs Accounts using sudo. General requirements for the accounts used by Operations Manager with sudo elevation are:
 
-- The account must have RequireTTY disabled as a default parameter.
+- The accounts must have RequireTTY disabled as a default parameter.
 - The accounts must be configured to elevate with NOPASSWD.
-- The accounts must have the "lecture" that typically is shown when logging in elevating using sudo disabled.
+- The accounts must have the "lecture" that typically is shown when logging in, and when elevating using sudo, disabled.
 
 Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
 
-## Configuring sudoers files
+## Using the templates
 
-There are typically two ways to add sudo configurations, by directly modifying the `/etc/sudoers` file, or by adding a "drop in' file under `/etc/sudoers.d`. For easy maintainability and distribution, consider adding a new file under `/etc/sudoers.d` and have `#includedir /etc/sudoers.d` as part of the main sudoers file, this article doesn't go into detail on how to fully configure sudo. For more information about configuring sudo, see the vendor for your specific operating system.
+There are typically two ways to add sudo configurations, either by directly modifying the `/etc/sudoers` or `/etc/sudo.conf` file (depending on the OS), or by adding a "drop in" file under `/etc/sudoers.d` (ex. `/etc/sudoers.d/scom`). This article doesn't go into detail on how to fully configure sudo itself. For more information, see the documentation provided by the vendor for your specific operating system.
 
-## Sudoers templates
-
-> [!NOTE]
-> Requirements are **not** the same across all UNIX/Linux distributions or versions, ensure you have the correct template for your Operating System.
-
-In each template there are two accounts defined, and maps to standard RunAs Accounts as:
+Templates are provided for baseline monitoring and maintenance activities within Operations Manager. In each template there are two accounts defined and maps to standard RunAs Accounts as:
 
 | RunAs Account | Username |
 |---------------|----------|
 | Unix/Linux Action Account | scomuser |
 | Unix/Linux Maintenance Account | scomadm |
+
+Make sure to modify the template to fit your organization's usernames and standards.
+
+## Sudoers templates
+
+> [!NOTE]
+> Requirements are **not** the same across all UNIX/Linux distributions or versions, ensure you have the correct template for your Operating System.
 
 ::: moniker range="< sc-om-2022"
 
@@ -52,7 +54,8 @@ In each template there are two accounts defined, and maps to standard RunAs Acco
 
 ### Red Hat Enterprise Linux (RHEL)
 
-Beginning with major version 8, Red Hat Enterprise Linux is contained within the "[Universal Linux](#universal-linux)" packages.
+> [!IMPORTANT]
+> Essential information required for user successBeginning with major version 8, Red Hat Enterprise Linux is contained within the "[Universal Linux](#universal-linux)" packages.
 
 ::: moniker range="< sc-om-2022"
 
@@ -66,19 +69,24 @@ Beginning with major version 8, Red Hat Enterprise Linux is contained within the
 
 [!INCLUDE [sudoers-rhel7.md](includes/sudoers-rhel7.md)]
 
+::: moniker range="< sc-om-2022"
+
 ### Solaris
 
 [!INCLUDE [sudoers-solaris.md](includes/sudoers-solaris.md)]
 
+::: moniker-end
+
 ### SUSE Linux Enterprise Server (SLES)
 
-Starting with version 15, SUSE is contained within the [Universal Linux](#universal-linux) packages.
+> [!IMPORTANT]
+> Essential information required for user successStarting with version 15, SUSE is contained within the [Universal Linux](#universal-linux) packages.
 
 [!INCLUDE [sudoers-sles.md](includes/sudoers-sles.md)]
 
 ### Universal Linux
 
-Universal Linux encompasses both Debian and Red Hat based operating systems, and is the class that contains configurations for the latest supported Linux operating systems and distributions.
+Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md#universal-linux)
 
 [!INCLUDE [sudoers-universallinux.md](includes/sudoers-universallinux.md)]
 
@@ -102,10 +110,6 @@ scomuser ALL=(root) NOPASSWD: /bin/sh -c /usr/bin/vmstat -c
 ```
 
 There should be no quotes around the command as sudo doesn't recognize them, only the shell itself.
-
-```bash
-
-```
 
 ## Troubleshooting
 

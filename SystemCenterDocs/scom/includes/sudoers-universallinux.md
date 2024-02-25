@@ -128,11 +128,11 @@ scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 
 <!-----------------
 
-SCOM 2016
+SCOM 2016, 1801/1807
 
 -------------------------->
 
-::: moniker range="sc-om-2016"
+::: moniker range="sc-om-2016 <= sc-om-1807"
 
 ```bash
 #-----------------------------------------------------------------------------------

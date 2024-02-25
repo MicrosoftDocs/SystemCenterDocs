@@ -18,7 +18,7 @@ SCOM 2022
 
 ::: moniker range="sc-om-2022"
 
-#### Linux - SLES 12
+#### SLES 12
 
 ```bash
 #-----------------------------------------------------------------------------------
@@ -118,11 +118,11 @@ scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
 #-----------------------------------------------------------------------------------
 ```
 
-#### Linux - SLES-PPC
+#### SLES on PowerPC (PPC)
 
 ```bash
 #-----------------------------------------------------------------------------------
-#Example user configuration for Operations Manager agent
+#Example user configuration for Operations Manager 2019
 #Example assumes users named: scomadm & scomuser
 #Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 
