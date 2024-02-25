@@ -7,8 +7,7 @@ ms.author: lornesepaugh
 manager: benvan
 ms.date: 02/24/2024
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: msc-operations-manager
 ms.topic: reference
 ---
 
@@ -24,7 +23,7 @@ In order to use sudo-enabled accounts for monitoring with Operations Manager, th
 - The accounts must be configured to elevate with NOPASSWD.
 - The accounts must have the "lecture" that typically is shown when logging in elevating using sudo disabled.
 
-Refer to the [Supported UNIX and Linux operating system versions](/SystemCenterDocs/scom/plan-supported-crossplat-os.md) page for supported distributions.
+Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
 
 ## Configuring sudoers files
 
@@ -53,7 +52,7 @@ In each template there are two accounts defined, and maps to standard RunAs Acco
 
 ### Red Hat Enterprise Linux (RHEL)
 
-Beginning with major version 8, Red Hat Enterprise Linux is contained within the "[Universal Linux](#Universal-Linux---Debian-&-Red-Hat-Based-Distros)" packages.
+Beginning with major version 8, Red Hat Enterprise Linux is contained within the "[Universal Linux](#universal-linux)" packages.
 
 ::: moniker range="< sc-om-2022"
 
@@ -73,13 +72,13 @@ Beginning with major version 8, Red Hat Enterprise Linux is contained within the
 
 ### SUSE Linux Enterprise Server (SLES)
 
-Starting with version 15, SUSE is contained within the "[Universal Linux](#Universal-Linux---Debian-&-Red-Hat-Based-Distros)" packages.
+Starting with version 15, SUSE is contained within the [Universal Linux](#universal-linux) packages.
 
 [!INCLUDE [sudoers-sles.md](includes/sudoers-sles.md)]
 
-### Universal Linux - Debian & Red Hat based Operating Systems
+### Universal Linux
 
-Universal Linux is the class that contains configurations for the latest supported Linux operating systems and distributions.
+Universal Linux encompasses both Debian and Red Hat based operating systems, and is the class that contains configurations for the latest supported Linux operating systems and distributions.
 
 [!INCLUDE [sudoers-universallinux.md](includes/sudoers-universallinux.md)]
 
@@ -131,4 +130,4 @@ This example sets a one-minute password prompt timeout for the user *scomuser*, 
 
 ### Password errors or authentication failures
 
-For guidelines on password and authentication configurations, see [Planning Security Credentials for Accessing Unix and Linux Computers](/SystemCenterDocs/scom/manage-security-create-crossplat-credentials.md).
+For guidelines on password and authentication configurations, see [Planning Security Credentials for Accessing Unix and Linux Computers](manage-security-create-crossplat-credentials.md).

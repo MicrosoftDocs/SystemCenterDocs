@@ -7,8 +7,7 @@ ms.author: lornesepaugh
 manager: benvan
 ms.date: 02/24/2024
 ms.topic: include
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: msc-operations-manager
 ---
 
 <!-----------------
