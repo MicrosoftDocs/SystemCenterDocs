@@ -12,7 +12,7 @@ ms.topic: reference
 
 # Configuring sudo elevation for Unix/Linux monitoring
 
-Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. We provided templates for use in configuring sudo for baseline operability.
+Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. We've provided templates for configuring sudo for baseline operability.
 
 ## Introduction
 
@@ -21,6 +21,15 @@ In order to use sudo-enabled accounts for monitoring with Operations Manager, co
 - The accounts must have RequireTTY disabled as a default parameter.
 - The accounts must be configured to elevate with NOPASSWD.
 - The accounts must have the "lecture" that typically is shown when logging in, and when elevating using sudo, disabled.
+
+These templates specify the commands that allow the specified RunAs Accounts to execute tasks that require elevated permissions such as:
+
+- Installing the agent
+- Upgrading the agent
+- Uninstalling the agent
+- Monitoring system logs
+- Restarting the agent services
+- Facilitating the creation of authentication certificates
 
 Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
 
@@ -85,7 +94,7 @@ Make sure to modify the template to fit your organization's usernames and standa
 
 ### Universal Linux
 
-Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](plan-supported-crossplat-os.md#universal-linux)
+Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](plan-supported-crossplat-os.md#universal-linux-debian-package-1)
 
 [!INCLUDE [sudoers-universallinux.md](includes/sudoers-universallinux.md)]
 
