@@ -33,6 +33,9 @@ These templates specify the commands that allow the specified RunAs Accounts to 
 
 Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
 
+> [!NOTE]
+> Requirements are **not** the same across all UNIX/Linux distributions or versions, ensure you have the correct template for your Operating System.
+
 ## Using the templates
 
 There are typically two ways to add sudo configurations, either by directly modifying the `/etc/sudoers` or `/etc/sudo.conf` file (depending on the OS), or by adding a "drop in" file under `/etc/sudoers.d` (ex. `/etc/sudoers.d/scom`). This article doesn't go into detail on how to fully configure sudo itself. For more information, see the documentation provided by the vendor for your specific operating system.
@@ -46,53 +49,48 @@ Templates are provided for baseline monitoring and maintenance activities within
 
 Make sure to modify the template to fit your organization's usernames and standards.
 
-## Sudoers templates
-
-> [!NOTE]
-> Requirements are **not** the same across all UNIX/Linux distributions or versions, ensure you have the correct template for your Operating System.
-
 ::: moniker range="< sc-om-2022"
 
-### AIX
+## AIX
 
 [!INCLUDE [sudoers-aix.md](includes/sudoers-aix.md)]
 [!INCLUDE [sudoers-hpux.md](includes/sudoers-hpux.md)]
 
 ::: moniker-end
 
-### Red Hat Enterprise Linux (RHEL)
+## Red Hat Enterprise Linux (RHEL)
 
 > [!IMPORTANT]
 > Beginning with major version 8, Red Hat Enterprise Linux falls under [Universal Linux](#universal-linux).
 
 ::: moniker range="< sc-om-2022"
 
-#### RHEL 6
+### RHEL 6
 
 [!INCLUDE [sudoers-rhel6.md](includes/sudoers-rhel6.md)]
 
 ::: moniker-end
 
-#### RHEL 7
+### RHEL 7
 
 [!INCLUDE [sudoers-rhel7.md](includes/sudoers-rhel7.md)]
 
 ::: moniker range="< sc-om-2022"
 
-### Solaris
+## Solaris
 
 [!INCLUDE [sudoers-solaris.md](includes/sudoers-solaris.md)]
 
 ::: moniker-end
 
-### SUSE Linux Enterprise Server (SLES)
+## SUSE Linux Enterprise Server (SLES)
 
 > [!IMPORTANT]
 > Starting with version 15, SUSE falls under [Universal Linux](#universal-linux).
 
 [!INCLUDE [sudoers-sles.md](includes/sudoers-sles.md)]
 
-### Universal Linux
+## Universal Linux
 
 Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](plan-supported-crossplat-os.md#universal-linux-debian-package-1)
 
