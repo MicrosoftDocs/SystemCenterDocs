@@ -10,7 +10,7 @@ ms.product: msc-operations-manager
 ms.topic: reference
 ---
 
-# Configuring sudo elevation for Unix/Linux monitoring
+# Configuring sudo elevation for UNIX/Linux monitoring
 
 Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. We've provided templates for configuring sudo for baseline operability.
 
