@@ -22,7 +22,7 @@ In order to use sudo-enabled accounts for monitoring with Operations Manager, co
 - The accounts must be configured to elevate with NOPASSWD.
 - The accounts must have the "lecture" that typically is shown when logging in, and when elevating using sudo, disabled.
 
-These templates specify the commands that allow the specified RunAs Accounts to execute tasks that require elevated permissions such as:
+The provided templates specify the commands that allow the configured RunAs Accounts to execute tasks that require elevated permissions such as:
 
 - Installing the agent
 - Upgrading the agent
@@ -31,23 +31,23 @@ These templates specify the commands that allow the specified RunAs Accounts to 
 - Restarting the agent services
 - Facilitating the creation of authentication certificates
 
-Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
-
 > [!NOTE]
-> Requirements are **not** the same across all UNIX/Linux distributions or versions, ensure you have the correct template for your Operating System.
+> Commands and requirements are **not** the same across all UNIX/Linux distributions or versions, ensure you have the correct template for your Operating System.
+>
+> Don't see your OS? Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
 
 ## Using the templates
 
-There are typically two ways to add sudo configurations, either by directly modifying the `/etc/sudoers` or `/etc/sudo.conf` file (depending on the OS), or by adding a "drop in" file under `/etc/sudoers.d` (ex. `/etc/sudoers.d/scom`). This article doesn't go into detail on how to fully configure sudo itself. For more information, see the documentation provided by the vendor for your specific operating system.
+Select the appropriate template for your Operating System and replace the example accounts with your RunAs Account usernames, include are other organizational customizations if necessary.
 
-Templates are provided for baseline monitoring and maintenance activities within Operations Manager. In each template there are two accounts defined and maps to standard RunAs Accounts as:
+In each template there are two accounts defined and maps to standard RunAs Accounts as:
 
 | RunAs Account | Username |
 |---------------|----------|
-| Unix/Linux Action Account | scomuser |
-| Unix/Linux Maintenance Account | scomadm |
+| UNIX/Linux Action Account | scomuser |
+| UNIX/Linux Maintenance Account | scomadm |
 
-Make sure to modify the template to fit your organization's usernames and standards.
+Once updated with the correct usernames and any extra modifications, the template must be added to the client system's sudoers configuration. There are typically two ways to add sudo configurations, either by directly modifying the `/etc/sudoers` or `/etc/sudo.conf` file (depending on the OS), or by adding a "drop in" file under `/etc/sudoers.d` (ex. `/etc/sudoers.d/scom`). This article doesn't go into detail on how to fully configure sudo itself. For more information, see the documentation provided by the vendor for your specific operating system.
 
 ::: moniker range="< sc-om-2022"
 
@@ -140,4 +140,4 @@ This example sets a one-minute password prompt timeout for the user *scomuser*, 
 
 ### Password errors or other authentication failures
 
-For guidelines on password and authentication configurations, see [Planning Security Credentials for Accessing Unix and Linux Computers](manage-security-create-crossplat-credentials.md).
+For guidelines on password and authentication configurations, see [Planning Security Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
