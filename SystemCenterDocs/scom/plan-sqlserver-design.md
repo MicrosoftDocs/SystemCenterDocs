@@ -30,7 +30,7 @@ We don't recommend utilization of Operations Manager databases from an SQL Insta
 
 
 > [!IMPORTANT]
-> Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure SCOM Managed Instance](/system-center/scom/operations-manager-managed-instance-overview), which utilizes Azure SQL MI, and is not reconfigurable.
+> Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure Monitor SCOM Managed Instance](/system-center/scom/operations-manager-managed-instance-overview), which utilizes Azure SQL MI, and is not reconfigurable.
 
 ## SQL Server requirements
 
