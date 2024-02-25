@@ -3,17 +3,17 @@ title: Append Line
 description: This article describes the functionality of Append Line Activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 652ce6db-3ca9-42bc-87f3-82e796f65e2c
 caps.latest.revision: 14
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: "mkluck"
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Append Line
 

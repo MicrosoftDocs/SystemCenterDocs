@@ -2,14 +2,14 @@
 ms.assetid:
 title: How to create a dashboard with the PowerShell widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the PowerShell widget.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/22/2018
-ms.custom: na
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
+ms.custom: engagement-fy24
+ms.service: system-center
 monikerRange: 'sc-om-1807'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

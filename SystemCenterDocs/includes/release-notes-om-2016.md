@@ -1,12 +1,12 @@
 ---
 title:  include file
 description: include file to summarize the release notes for OM 2016.
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
+ms.subservice: operations-manager
 ms.date: 05/23/2017
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---

@@ -2,13 +2,13 @@
 ms.assetid: 326aa5d0-4793-4f79-8510-efb5a0a69529
 title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 11/15/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 ---
 

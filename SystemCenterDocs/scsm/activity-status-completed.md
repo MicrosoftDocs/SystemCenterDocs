@@ -1,15 +1,15 @@
 ---
 title: Set an activity's status to completed for the sample activity
 description: Provides an example to set an activity's status to completed for the Service Manager Authoring Tool sample activity.
-manager: mkluck
 ms.custom: engagement-fy24, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 1e31bc91-020f-47e7-bd2b-d40ddc2fb7ca

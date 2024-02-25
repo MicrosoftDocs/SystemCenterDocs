@@ -2,13 +2,13 @@
 ms.assetid: faa9d459-3bed-4f7f-9e67-6c07ffdc13b6
 title: Manage telemetry settings in System Center Data Protection Manager
 description: This article provides information about how to manage the telemetry settings in System Center DPM
-author:  jyothisuri
-ms.author: jsuri
-manager:  vvithal
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  10/13/2022
 ms.topic:  article
-ms.prod:  system-center
-ms.technology: data-protection-manager
+ms.service: system-center
+ms.subservice: data-protection-manager
 MonikerRange: sc-dpm-2019||sc-dpm-2016||sc-dpm-2022
 ms.custom: UpdateFrequency2
 ---

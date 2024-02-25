@@ -3,17 +3,17 @@ title: Send Platform Event
 description: This article describes the Send Platform Event activity that creates an activity event with text that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 58d4359b-155b-4406-8978-8b40fc87f5d0
 caps.latest.revision: 15
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Send Platform Event
 

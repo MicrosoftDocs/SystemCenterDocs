@@ -3,15 +3,15 @@ title: Ports and Protocols of Standard Activities
 description: This article describes Ports and Protocols of Standard Activities.
 ms.custom: UpdateFrequency5, engagement-fy24
 ms.date: 08/22/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: reference
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Ports and Protocols of Standard Activities
 

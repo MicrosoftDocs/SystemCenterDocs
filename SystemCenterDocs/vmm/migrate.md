@@ -2,13 +2,13 @@
 ms.assetid: f6301c37-5e3d-449c-adde-952fdd2b7fee
 title: Migrate virtual machines in the VMM fabric
 description: This article describes how to migrate VMs in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/20/2020
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: intro-migration
 ---
 

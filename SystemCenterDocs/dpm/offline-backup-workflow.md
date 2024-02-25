@@ -1,15 +1,15 @@
 ---
 description: This article explains the offline backup workflow for DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 08/25/2020
 title: Offline backup for DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency2
 ---
 # Offline seeding using own disk (using Azure Import/Export service)

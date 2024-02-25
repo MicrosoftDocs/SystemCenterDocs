@@ -1,14 +1,14 @@
 ---
 ms.assetid:
 description: include file to summarize the release notes for System Center 2022 - Orchestrator
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center
-ms.technology: Orchestrator
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
+ms.subservice: Orchestrator
 keywords:
-ms.date: 11/21/2023
+ms.date: 02/21/2024
 title:  include file
 ---
 
@@ -17,6 +17,12 @@ title:  include file
 The following sections summarize the release notes for Orchestrator 2022 UR2, and include the known issues and workarounds.
 
 For the problems fixed in UR2 and the installation instructions for UR2, see [the KB article](https://support.microsoft.com/kb/5033099).
+
+### 'Send platform event' activity isn't persisted to the database
+
+**Description**: **Send platform event** activity isn't persisted to the database and isn't visible in **Events** tab of the Runbook Designer.
+
+**Workaround**: None
 
 ### Identifiers are displayed instead of activity names on the Runbook Tester canvas and log view area
 
@@ -40,13 +46,19 @@ For the problems fixed in UR2 and the installation instructions for UR2, see [th
 
 **Description**: With some integration packs, Runbook designer might crash when you update existing runbooks or create new runbooks.
 
-**Workaround**: Uninstall UR2 patch for Runbook designer only.
+**Mitigation**: Install the [Hotfix](https://www.catalog.update.microsoft.com/Search.aspx?q=5033783) for Orchestrator 2022 UR2 that fixes this issue.
 
 ## Orchestrator 2022 UR1 release notes
 
 The following sections summarize the release notes for Orchestrator 2022 UR1, and include the known issues and workarounds.
 
 For the problems fixed in UR1 and the installation instructions for UR2, see [the KB article](https://support.microsoft.com/kb/5021420).
+
+### 'Send platform event' activity isn't persisted to the database
+
+**Description**: **Send platform event** activity isn't persisted to the database and isn't visible in **Events** tab of the Runbook Designer.
+
+**Workaround**: None
 
 ### Issues with Exchange Admin Integration pack v10.22.1.x
 

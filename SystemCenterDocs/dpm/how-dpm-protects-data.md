@@ -1,14 +1,14 @@
 ---
 description: This article provides an overview of how DPM protects the various data types, the recovery process, and protection policies.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 11/01/2017
 title: How does DPM work?
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
 ms.custom: UpdateFrequency.5
 ---

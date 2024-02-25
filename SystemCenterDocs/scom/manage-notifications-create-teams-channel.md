@@ -1,13 +1,13 @@
 ---
 title: How to enable Microsoft Teams notification channel
 description: This article describes how to enable Microsoft Teams notification channel for Operations Manager.
-author: Farha-Bano
-ms.author: v-farhabano
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/20/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid:
 MonikerRange: 'sc-om-2022'

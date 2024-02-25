@@ -3,16 +3,16 @@ title: Stop Maintenance Mode
 description: The Stop Maintenance Mode activity takes a monitor out of maintenance mode.
 ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2358a3dd-2f24-46f6-b7b9-4a5d0952b887
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Stop Maintenance Mode

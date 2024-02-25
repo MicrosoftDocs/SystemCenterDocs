@@ -1,18 +1,18 @@
 ---
 title: Find Appointments
 description: The Find Appointments activity is used in a runbook to find an existing appointment.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 223820eb-1c24-43ce-938e-935176e2a8bf
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Find Appointments
@@ -64,7 +64,7 @@ The following tables list the required properties, optional properties, filters,
 | ID   | ID of the appointment   | Equals<br>Does not equal   |
 | Importance   | Importance of the appointment   | Equals<br>Does not equal   |
 | Is All Day Event   | Indicates whether the appointment is an all-day event   | Equals<br>Does not equal   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Equals<br>Does not equal   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Equals<br>Does not equal   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Equals<br>Does not equal   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Equals<br>Does not equal   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Equals<br>Does not equal   |
@@ -113,7 +113,7 @@ The following tables list the required properties, optional properties, filters,
 | ID   | ID of the appointment   | String   |
 | Importance   | Importance of the appointment   | String   |
 | Is All Day Event   | Indicates whether the appointment is an all day event   | Boolean   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Boolean   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Boolean   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Boolean   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Boolean   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Boolean   |

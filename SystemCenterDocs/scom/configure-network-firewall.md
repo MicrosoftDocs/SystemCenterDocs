@@ -5,11 +5,11 @@ description: This article describes how to configure the network firewall.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 02/15/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
@@ -88,7 +88,18 @@ Take care of the following issues for all three networking models mentioned earl
       
       - If the machine is in Azure, set up the NSG rules and firewall rules on the SCOM Managed Instance virtual network and on the virtual network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from the monitored machine to the SCOM Managed Instance subnet.
 
-1. Enable NAT Gateway on the SCOM Managed Instance subnet to download the System Center Operations Manager installer from the Azure Storage account and install.
+## Firewall requirements
+
+To function properly, SCOM Managed Instance must have access to the following port number and URLs. Configure the NSG and firewall rules to allow this communication.  
+
+|Resource|Port|Direction|Service Tags|Purpose|
+|---|---|---|---|---|
+|*.blob.core.windows.net|443|Outbound|Storage|Azure Storage|
+|management.azure.com|443|Outbound|AzureResourceManager|Azure Resource Manager|
+|gcs.prod.monitoring.core.windows.net <br/> *.prod.warm.ingest.monitor.core.windows.net|443|Outbound|AzureMonitor|SCOM MI Logs|
+|*.prod.microsoftmetrics.com <br/> *.prod.hot.ingest.monitor.core.windows.net <br/> *.prod.hot.ingestion.msftcloudes.com|443|Outbound|AzureMonitor|SCOM MI Metrics|
+|*.workloadnexus.azure.com|443|Outbound| |Nexus Service|
+|*.azuremonitor-scommiconnect.azure.com|443|Outbound| |Bridge Service|
 
 > [!IMPORTANT]
 > To minimize the need for extensive communication with both your Active Directory admin and the network admin, see [Self-verification](scom-managed-instance-self-verification-of-steps.md). The article outlines the procedures that the Active Directory admin and the network admin use to validate their configuration changes and ensure their successful implementation. This process reduces unnecessary back-and-forth interactions from the Operations Manager admin to the Active Directory admin and the network admin. This configuration saves time for the admins.

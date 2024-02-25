@@ -1,13 +1,13 @@
 ---
 title: Troubleshooting the Visio Add-in
 description: This article provides information to help troubleshoot common issues with the Visio add-in for Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 12/13/2016
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/22/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: c9dabbc3-0ac5-46fe-8a34-b82b67c0e6ad
 ---

@@ -2,16 +2,16 @@
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: This article provides information about exchange Integration packs and how to deploy it.
 ms.date: 08/09/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3d807dc8-013d-45da-9647-825ab64aba2a
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Exchange Admin Integration Pack for Orchestrator in System Center

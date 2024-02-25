@@ -2,13 +2,13 @@
 ms.assetid: d830d226-80d0-4132-8b3c-d3de545f5fa2
 title: Creating and Managing Groups
 description: This article describes how to create and configure groups for scoping in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/21/2022
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/01/2024
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -64,7 +64,7 @@ The most common objects you'll place in your groups are **Windows Computer** obj
 
 ![Screenshot showing properties of a Windows computer object.](./media/manage-create-manage-groups/om2016-windows-computer-properties.png)  
 
-You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of dynamic group queries and formulas, see [Operations Manager Dynamic Group Examples](https://go.microsoft.com/fwlink/p/?LinkId=242241).  
+You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of group queries and formulas, see [Operations Manager Group Examples](/troubleshoot/system-center/scom/regular-expression-support).  
 
 ## To create a group in Operations Manager  
 

@@ -3,16 +3,16 @@ title: Create Cloud Service
 description: The Create Cloud Service activity creates a new cloud service in Azure.
 ms.custom: UpdateFrequency2
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 991105e1-71ad-43eb-b20e-1b31323a275f
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---

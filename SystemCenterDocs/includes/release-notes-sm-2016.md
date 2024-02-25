@@ -1,11 +1,11 @@
 ---
 description: include file to detail the release notes for System Center 2016 - Service Manager
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-threshold
-ms.technology: service-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
+ms.subservice: service-manager
 keywords:
 ms.date: 10/20/2020
 title:  include file

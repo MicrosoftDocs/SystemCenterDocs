@@ -2,19 +2,19 @@
 title: Monitor VMM Job in System Center 2016
 description: The Monitor VMM Job activity is used in a runbook to monitor a VMM job and lists the required and optional properties.
 ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.date: 02/16/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a7410fd9-8ecd-4d52-9899-323996331943
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
-monikerRange: '=sc-orch-2016'
+monikerRange: 'sc-orch-2016'
 ---
 # Monitor VMM Job in System Center 2016
 

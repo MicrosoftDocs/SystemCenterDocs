@@ -2,13 +2,13 @@
 ms.assetid: 68d9b467-12db-4fec-af94-9f9fa15c5f86
 title: How to Configure sudo Elevation and SSH Keys
 description: This article describes how to configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/25/2023
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -25,7 +25,7 @@ With System Center - Operations Manager, you can provide credentials for an unpr
 >[!NOTE]
 > Operations Manager supports SSH Key-based authentication with key file data in the PuTTY Private Key (PPK) format. Currently supports SSH v.1 RSA keys and SSH v.2 RSA and DSA keys.
 
-This topic provides examples for creating an account for a low-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only, and might not reflect your environment. The following examples provide a user with access to a full set of privileges.  
+This topic provides examples for creating an account for a low-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only and might not reflect your environment. The following examples provide a user with access to a full set of privileges.  
 
 To obtain and configure the SSH key from the UNIX and Linux computer, you have to install the following software on your Windows-based computer:  
 
@@ -60,6 +60,7 @@ You can now configure sudo elevation and create an SSH key for `opsuser`, as des
 
 > [!NOTE]
 > For more information about sudoers configuration for Low Privilege scenarios, see [SCOM: Configuring sudo Elevation for UNIX and Linux Monitoring](https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx)
+
 1.  Log on to the UNIX or Linux computer as `root`.  
 
 2.  Use the visudo program to edit the sudo configuration in a vi text editor. Run the following command:  
@@ -145,9 +146,12 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
 
 You can use the `opsuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
 
->[!NOTE]
-> Verify that you are saving the PuTTYgen Private Key as version 2 instead of version 3. You may change the PPK file version by going to the menu and selecting, **Key** > **Parameters for saving key files...** \
-> PPK file version 2 is currently supported for System Center Operations Manager.
+> [!Important]
+> **PPK file version 2 is the only version currently supported for System Center Operations Manager.**
+>
+> By default, PuTTYgen is set to use PPK file version 3. You may change the PPK file version to 2 by going to the toolbar and selecting **Key** > **Parameters for saving key files...**, then select the radio button for **2** for **PPK file version.**
+>
+> ![Screenshot showing how to change the PPK file version.](media/manage-security-create-crossplat-sudo-sshkeys/image.png)
 
 ## Next steps
 

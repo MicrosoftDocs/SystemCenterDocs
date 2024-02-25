@@ -2,16 +2,16 @@
 title: Update OS Image
 description: The Update OS Image activity updates an operating system image that is in your image repository.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 238dbd87-9e85-450d-b6da-08159767b9ea
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023

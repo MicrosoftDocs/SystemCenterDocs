@@ -1,17 +1,17 @@
 ---
 title: Creating and Testing a Sample Runbook
 description: This article describes how to create and test a simple runbook.
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10b8d20a-7bf8-4af8-86fa-8b936319355b
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/13/2023
-manager: mkluck
 ms.custom: engagement-fy23
 ---
 

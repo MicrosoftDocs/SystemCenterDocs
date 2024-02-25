@@ -2,13 +2,13 @@
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/04/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/19/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -43,7 +43,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 to 17.10.3, and MSOLEDBSQL 18.2 to 18.6.5.
+  > - Use ODBC 17.3 or 17.10.5 or later, and MSOLEDBSQL 18.2 or 18.6.7 or later.
 
 ::: moniker-end
 

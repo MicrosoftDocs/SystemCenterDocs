@@ -2,13 +2,13 @@
 ms.assetid: 34358d18-4eaf-4b04-9cbe-38a0dc935238
 title: Provision guarded hosts in VMM
 description: Describes how to add and provision guarded hosts in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/16/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 

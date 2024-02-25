@@ -1,13 +1,13 @@
 ---
 title: include file
 description: include file to provide information about how to upgrade to System Center Service Provider Foundation (SPF) 2022.
-author: jyothisuri
-ms.author: jsuri
-manager:  mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 11/18/2022
 ms.topic: include
-ms.prod:  system center
-ms.technology:  service-provider-foundation
+ms.service:  system-center
+ms.subservice:  service-provider-foundation
 ms.assetid: 
 ---
 

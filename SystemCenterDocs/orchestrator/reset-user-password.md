@@ -1,18 +1,18 @@
 ---
 title: Reset User Password
 description: You can use the Reset User Password activity in a runbook to reset the user password in the Microsoft Active Directory.
-ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.date: 01/23/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 50b7bfd7-ecef-4c81-9172-854059cbc853
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Reset User Password

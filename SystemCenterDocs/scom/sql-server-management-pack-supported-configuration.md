@@ -2,13 +2,13 @@
 ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
 title: Scope and supported configuration in Management Pack for SQL Server
 description: This article explains the scope and supported configuration for Management Pack for SQL Server
-author: vchvlad
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 12/15/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for SQL Server
@@ -43,6 +43,7 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 - SQL Server High Availability Features:
   - Single-domain Availability Groups, including availability replicas and database replicas
   - Distributed Availability Groups
+  - Contained Availability Groups
   - Failover Clustering
   - Log Shipping
   - [Not supported] Replication
@@ -82,15 +83,19 @@ Management Pack for SQL Server supports the following versions of System Center 
 Management Pack for SQL Server supports the following operating systems and platforms:
 
 - Windows Server 2012
+  
+  Due to the [Lifecycle Policy](/lifecycle/products/windows-server-2012), this version is no longer being tested.
+
 - Windows Server 2012 R2
+  
+  Due to the [Lifecycle Policy](/lifecycle/products/windows-server-2012-r2), this version is no longer being tested.
+  
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
-- Ubuntu 16.04
-- Ubuntu 18.04
-- Ubuntu 20.04
-- Red Hat Enterprise Linux 7.3 and 7.4
-- SUSE Linux Enterprise Server v12 SP2
+- Ubuntu 16.04 - 22.04
+- Red Hat Enterprise Linux 7.7 - 7.9, or 8.x - 9.x Server
+- SUSE Linux Enterprise Server v12 - v15
 - Docker Engine 1.8+
 - Azure Kubernetes Service (AKS)
 

@@ -2,13 +2,13 @@
 ms.assetid: 05fe26c2-25a5-44a0-8a34-20a387d317a3
 title: include file
 description: include file to detail the release notes for System Center Virtual Machine Manager 1801
-author:  jyothisuri
-ms.author: jsuri
-manager:  mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  04/30/2018
 ms.topic:  include
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+ms.service:  system-center
+ms.subservice:  virtual-machine-manager
 ---
 
 ## VMM 1801 release notes

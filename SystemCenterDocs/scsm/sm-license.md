@@ -1,14 +1,14 @@
 ---
 title: System Center Service Manager Evaluation and Licensing
 description: This article provides information about the Evaluation and Licensing related updates in System Center - Service Manager
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 05/10/2022
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: '>sc-sm-2016'
 ms.custom: UpdateFrequency2

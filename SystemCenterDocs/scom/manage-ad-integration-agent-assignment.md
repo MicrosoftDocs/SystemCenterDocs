@@ -1,13 +1,13 @@
 ---
 title: How to configure and use Active Directory Integration for agent assignment in Operations Manager
 description: This article describes how to configure and use Active Directory integration for agent assignment and failover with your Operations Manager management group.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/07/2020
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
 ---

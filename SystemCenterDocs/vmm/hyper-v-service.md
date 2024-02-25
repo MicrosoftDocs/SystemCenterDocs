@@ -2,13 +2,13 @@
 ms.assetid: 74520b3d-e41d-4abd-9da8-8c0bc6d34c37
 title: Service hosts and virtual machines in the VMM compute fabric
 description: This article describes how to service host and virtual machines in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/19/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

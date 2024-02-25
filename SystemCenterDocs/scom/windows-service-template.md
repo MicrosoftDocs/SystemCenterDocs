@@ -1,14 +1,14 @@
 ---
 ms.assetid: 504be106-2b97-4a06-be11-7edef683359a
 title: Windows Service template in Operations Manager management pack
-description: This article provides an overview of windows service template
+description: This article provides an overview of windows service template.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 02/09/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -76,7 +76,7 @@ The following options are available on the  **Performance Data**  page of the wi
 | CPU Usage (percentage) | If CPU usage is monitored, this option sets the threshold. If the percentage of total CPU usage exceeds the threshold, the object is set to an error state and an alert is generated. |
 | Generate an alert if memory usage exceeds the specified threshold | Specifies whether memory usage should be monitored. A monitor is created to set an error state on the object and generate an alert when the specified threshold is exceeded. A rule is created to collect CPU usage for analysis and reporting. |
 | Memory Usage (MB) | If memory usage is monitored, this option sets the threshold. If the percentage of total CPU usage exceeds the threshold, the object is set to an error state and an alert is generated. |
-| Number of samples | If CPU usage or memory is monitored, this option specifies the number of consecutive performance samples that must be exceeded before the object is set to an error state and an alert is generated. <br>Specifying a number greater than 1 for this option limits the noise from monitoring by ensuring that an alert isn't generated when the service only briefly exceeds the threshold. The larger the value that you set, the longer the period of time before you receive an alert. A typical value is 2 or 3.</br> |
+| Number of samples | If CPU usage or memory is monitored, this option specifies the number of consecutive performance samples that must be exceeded before the object is set to an error state and an alert is generated. <br>Specifying a number greater than one for this option limits the noise from monitoring by ensuring that an alert isn't generated when the service only briefly exceeds the threshold. The larger the value that you set, the longer the period of time before you receive an alert. A typical value is 2 or 3.</br> |
 | Sample Interval | If CPU usage or memory is monitored, this option specifies the length of time between performance samples. A smaller value for this option reduces the time for detecting a problem but increases overhead on the agent and the amount of data collected for reporting. A typical value is between 5 and 15 minutes. |
 
 ## Additional monitoring

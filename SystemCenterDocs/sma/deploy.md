@@ -1,13 +1,13 @@
 ---
 description: Provides step by step instructions for setting up Service Management Automation
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 ms.date: 09/04/2023
 title: Deploy Service Management Automation
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 ---
 

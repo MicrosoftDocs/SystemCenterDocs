@@ -1,14 +1,14 @@
 ---
 title: Configuration items in Service Manager
 description: Lean about configuration items in Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 04/28/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.assetid: 7e6ab64c-c752-4cee-9057-e4b4413e571d
 ms.custom: UpdateFrequency2, engagement-fy23
 ---

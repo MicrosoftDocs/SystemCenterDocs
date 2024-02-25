@@ -5,11 +5,11 @@ description: This article summarizes frequently asked questions about Azure Moni
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 02/01/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
+ms.topic: faq
 monikerRange: '>=sc-om-2019'
 ---
 
@@ -142,7 +142,7 @@ Since this instance requires you to create the SCOM Managed Instance in your sub
 
 No.  
 
-SCOM Managed Instance Managed Gateways can be configured on any Azure and Arc-enabled server, which doesn’t have Operations Manager Gateway software on it. If you want to reuse Operations Manager on-premises Gateway servers with SCOM Managed Instance, uninstall Operations Manager Gateway software on it. To configure SCOM Managed Instance Managed Gateway, see [Configure monitoring of servers via SCOM Managed Instance Gateway](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-servers-via-scom-managed-instance-gateway).
+SCOM Managed Instance Managed Gateways can be configured on any Azure and Arc-enabled server, which doesn’t have Operations Manager Gateway software on it. If you want to reuse Operations Manager on-premises Gateway servers with SCOM Managed Instance, uninstall Operations Manager Gateway software on it. To configure SCOM Managed Instance Managed Gateway, see [Configure monitoring of servers via SCOM Managed Instance Gateway](monitor-arc-enabled-vm-with-scom-managed-instance.md#configure-monitoring-of-servers-via-scom-managed-instance-gateway).
 
 **Can SCOM Managed Instance Managed Gateway multi-home with System Center Operations Manager on-premises Management server?**
 
@@ -154,17 +154,7 @@ The certificates are assigned by Microsoft and are signed by CA. There's no requ
 
 **Can SCOM Managed Instance monitor on-premises machines without Arc installed?**
 
-Yes, if there's a direct connectivity (line-of-sight) between SCOM Managed Instance and on-premises machine via VPN/ER, you can monitor these machines. For more information, see [Configure monitoring of on-premises servers](https://learn.microsoft.com/system-center/scom/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance#configure-monitoring-of-on-premises-servers).
-
-## Monitored Resources (Agents)
-
-**Are Linux machines permitted for monitoring?**
-
-Currently, we don't support monitoring of Azure and Arc-enabled Linux machines. However, they can be managed via the Arc-enabled gateway servers.
-
-**Is it possible to configure an agent to communicate with multiple SCOM Managed Instances?**
-
-No. You can't configure an agent to communicate with multiple SCOM Managed Instances, but it can have a multi-home configuration for on-premises System Center Operations Manager and a SCOM Managed Instance.
+Yes, if there's a direct connectivity (line-of-sight) between SCOM Managed Instance and on-premises machine via VPN/ER, you can monitor these machines. For more information, see [Configure monitoring of on-premises servers](monitor-arc-enabled-vm-with-scom-managed-instance.md#configure-monitoring-of-on-premises-servers).
 
 ## Monitored Resources (Agents)/Managed Gateway Servers
 
@@ -196,18 +186,6 @@ SCOM Managed Instance enables monitoring of Azure and Arc-enabled machines. Addi
 
 The initial retrieval of health and connectivity states on the portal takes approximately five to seven minutes. Subsequently, heartbeats occur every minute.
 
-## Managed Gateway Servers
-
-**Is it permissible to use Azure Windows machines as gateway servers?**
-
-Currently, only Arc-enabled machines are permitted as gateway servers.
-
-**Is it possible to configure gateway servers with multi-homing?**
-
-Currently, multi-homing for gateway servers isn't supported.
-
-**Agents/Managed Gateway servers onboarding**
-
 **What is the minimum required .NET version for the agent (monitored resources) or gateway servers?**
 
 The minimum required .NET Framework version is 4.7.2.
@@ -218,7 +196,7 @@ On the agent/gateway server to be onboarded,
 - Check if it has the outbound connectivity to *.workloadnexus.azure.com 
 - Check if the firewall has been opened for this URL.
 
-For example: `Test-NetConnection westus.workloadnexu.azure.com -Port 443`
+For example: `Test-NetConnection westus.workloadnexus.azure.com -Port 443`
 
 **How can we determine if an agent (monitored resource) or gateway has a line of sight to the management servers?**
 
@@ -230,7 +208,28 @@ For example: `Test-NetConnection wlnxMWH160LB.scommi.com -Port 5723`
 
 The agent and gateway server machines needs TLS 1.2 or more enabled, and TLS 1.1 disabled to get the successful onboarding and monitoring.
  
-For more information, see [the process for enabling TLS 1.2](https://learn.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2).
+For more information, see [the process for enabling TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
+
+
+## Monitored Resources (Agents)
+
+**Are Linux machines permitted for monitoring?**
+
+Currently, we don't support monitoring of Azure and Arc-enabled Linux machines. However, they can be managed via the Arc-enabled gateway servers.
+
+**Is it possible to configure an agent to communicate with multiple SCOM Managed Instances?**
+
+No. You can't configure an agent to communicate with multiple SCOM Managed Instances, but it can have a multi-home configuration for on-premises System Center Operations Manager and a SCOM Managed Instance.
+
+## Managed Gateway Servers
+
+**Is it permissible to use Azure Windows machines as gateway servers?**
+
+Currently, only Arc-enabled machines are permitted as gateway servers.
+
+**Is it possible to configure gateway servers with multi-homing?**
+
+Currently, multi-homing for gateway servers isn't supported.
 
 ## Next steps
 
