@@ -1,0 +1,276 @@
+---
+ms.assetid: 
+title: include file
+description: include file with sudoers configuration for Solaris operating systems
+author: sepaugh
+ms.author: lornesepaugh
+manager: benvan
+ms.date: 02/24/2024
+ms.topic: include
+ms.prod: system-center
+ms.technology: operations-manager
+---
+
+<!-----------------
+
+SCOM 2022 and above does not support Solaris
+
+-------------------------->
+
+<!-----------------
+
+SCOM 2019
+
+-------------------------->
+
+::: moniker range="sc-om-2019"
+
+```bash
+#----------------------------------------------------------------------------------- 
+#Example user configuration for Operations Manager 2019
+#Example assumes users named: scomadm & scomuser
+#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+
+#General requirements
+Defaults:scomadm !requiretty
+
+#Agent maintenance
+##Certificate signing
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
+
+##Install or upgrade
+
+#SOLARIS 10
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.10.sparc.sh --install --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.10.sparc.sh --install --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.10.sparc.sh --install --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.10.sparc.sh --upgrade --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.10.sparc.sh --upgrade --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.10.sparc.sh --upgrade --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+
+#SOLARIS 11 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+
+##Uninstall 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
+
+##Log file monitoring
+scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
+
+###Examples
+#Custom shell command monitoring example – replace \<shell command\> with the correct command string
+#scomuser ALL=(root) NOPASSWD: /bin/sh -c echo error
+
+#Daemon diagnostic and restart recovery tasks example (using cron)
+#scomuser ALL=(root) NOPASSWD: /usr/bin/sh -c ps -ef | grep cron | grep -v grep
+#scomuser ALL=(root) NOPASSWD: /usr/sbin/cron & 
+
+#End user configuration for Operations Manager agent
+#-------------------------------------------------------------------------------------
+```
+
+::: moniker-end
+
+<!-----------------
+
+SCOM 1801-1807
+
+-------------------------->
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+```bash
+#-----------------------------------------------------------------------------------
+#Example user configuration for Operations Manager 1801-1807
+#Example assumes users named: scomadm & scomuser
+#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+
+#General requirements
+Defaults:scomadm !requiretty
+
+#Agent maintenance
+
+##Certificate signing
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
+
+##Install or upgrade
+
+#SOLARIS x86
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+
+#SOLARIS sparc
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+
+##Uninstall
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
+
+##Log file monitoring
+scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
+
+###Examples
+#Custom shell command monitoring example - replace \<shell command\> with the correct command string
+#scomuser ALL=(root) NOPASSWD: /usr/bin/sh -c  \<shell command\>
+
+#Daemon diagnostic and restart recovery tasks example (using cron)
+#scomuser ALL=(root) NOPASSWD: /bin/sh -c ps -ef | grep cron | grep -v grep
+#scomuser ALL=(root) NOPASSWD: /usr/sbin/cron &
+
+#Defaults logfile=/var/log/sudo.log
+
+#End user configuration for Operations Manager 
+#-----------------------------------------------------------------------------------
+```
+
+::: moniker-end
+
+<!-----------------
+
+SCOM 2016
+
+-------------------------->
+
+::: moniker range="sc-om-2016"
+
+#### Solaris 10
+
+```bash
+#-----------------------------------------------------------------------------------
+#Example user configuration for Operations Manager 2016
+#Example assumes users named: scomadm & scomuser
+#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+
+#General requirements
+Defaults:scomadm !requiretty
+
+#Agent maintenance
+##Certificate signing
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
+
+##Install or upgrade 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.10.sparc.sh --install \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.10.sparc.sh --install \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.10.sparc.sh --install \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.10.sparc.sh --upgrade --force \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.10.sparc.sh --upgrade --force \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.10.sparc.sh --upgrade --force \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.10.x86.sh --install \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.10.x86.sh --install \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.10.x86.sh --install \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.10.x86.sh --upgrade --force \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.10.x86.sh --upgrade --force \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.10.x86.sh --upgrade --force \*
+
+##Uninstall
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
+
+##Log file monitoring
+scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
+
+###Examples
+#Custom shell command monitoring example – replace \<shell command\> with the correct command string
+# scomuser ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
+
+#Daemon diagnostic and restart recovery tasks example (using cron)
+#scomuser ALL=(root) NOPASSWD: /usr/bin/sh -c ps -ef | grep cron | grep -v grep
+#scomuser ALL=(root) NOPASSWD: /usr/sbin/cron & 
+
+#End user configuration for Operations Manager agent
+#----------------------------------------------------------------------------------- 
+```
+
+#### Solaris 11
+
+```bash
+#-----------------------------------------------------------------------------------
+#Example user configuration for Operations Manager 2016
+#Example assumes users named: scomadm & scomuser
+#Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
+
+#General requirements
+Defaults:scomadm !requiretty
+
+#Agent maintenance
+##Certificate signing
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt/microsoft/scx/ssl/scx.pem; rm -rf /tmp/scx-scomadm; /opt/microsoft/scx/bin/tools/scxadmin -restart
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
+
+##Install or upgrade 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].x86.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].solaris.1\[\[\\digit\\\]\].sparc.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+
+##Uninstall
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
+
+##Log file monitoring
+scomuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
+
+###Examples
+#Custom shell command monitoring example – replace \<shell command\> with the correct command string
+# scomuser ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
+
+#Daemon diagnostic and restart recovery tasks example (using cron)
+#scomuser ALL=(root) NOPASSWD: /usr/bin/sh -c ps -ef | grep cron | grep -v grep
+#scomuser ALL=(root) NOPASSWD: /usr/sbin/cron & 
+
+#End user configuration for Operations Manager agent
+#----------------------------------------------------------------------------------- 
+```
+
+::: moniker-end
+
+<!-----------------
+
+SCOM 2012 -- Out of Support
+
+```bash
+#-----------------------------------------------------------------------------------
+#User configuration for Operations Manager agent �� for a user with the name: monuser
+
+#General requirements
+Defaults:monuser !requiretty
+
+#Lower sudo password prompt timeout for the user
+Defaults:monuser passwd_tries = 1, passwd_timeout = 1
+
+#Agent maintenance (discovery, install, uninstall, upgrade, restart, cert signing)
+monuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/tools/scxadmin
+monuser ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-\*/GetOSVersion.sh; EC=$?; rm -rf /tmp/scx-\*; exit $EC
+monuser ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
+monuser ALL=(root) NOPASSWD: /usr/bin/sh -c echo \*
+monuser ALL=(root) NOPASSWD: /usr/bin/sh -c rm -rf /tmp/scx-\*
+
+#Log file monitoring
+monuser ALL=(root) NOPASSWD: /opt/microsoft/scx/bin/scxlogfilereader -p
+
+###Examples
+#Custom shell command monitoring example – replace \<shell command\> with the correct command string
+#monuser ALL=(root) NOPASSWD: /bin/bash -c \<shell command\>
+
+#Daemon diagnostic and restart recovery tasks example (using cron)
+#monuser ALL=(root) NOPASSWD: /bin/sh -c ps -ef | grep cron | grep -v grep
+#monuser ALL=(root) NOPASSWD: sh -c '/etc/init.d/cron start'
+
+#End user configuration for Operations Manager agent
+#-----------------------------------------------------------------------------------
+```
+-------------------------->

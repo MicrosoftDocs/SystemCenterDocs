@@ -28,7 +28,6 @@ This article lists Microsoft System Center 2022 - Operations Manager build versi
 
 ::: moniker-end
 
-
 ::: moniker range="sc-om-2019"
 
 This article lists Microsoft System Center 2019 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
@@ -54,7 +53,7 @@ The following table lists the release history for Operations Manager 1807.
 The following is the build version for Operations Manager 1807.
 
 |Build Number |KB |Release Date |Description |  
-|-------------|---|-------------|------------|   
+|-------------|---|-------------|------------|
 |7.3.13261.0 |[4133779](https://support.microsoft.com/help/4133779/system-center-operations-manager-version-1807) |July 2018 |Version 1807|
 
 ::: moniker-end
@@ -68,7 +67,7 @@ The following table lists the release history for Operations Manager 1801.
 The following is the build version for Operations Manager 1801.
 
 |Build Number |KB |Release Date |Description |  
-|-------------|---|-------------|------------|   
+|-------------|---|-------------|------------|
 |7.3.13142.0 | |February 2018 |Version 1801|
 
 ::: moniker-end
@@ -78,4 +77,3 @@ The following is the build version for Operations Manager 1801.
 - See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
 
 - See [What's New in Operations Manager](./whats-new-in-om.md).
-

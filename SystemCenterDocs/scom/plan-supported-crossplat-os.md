@@ -24,7 +24,7 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2022 - Operations Manager.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
 
 ::: moniker-end
@@ -33,7 +33,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2019 - Operations Manager.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
 
 ## IBM AIX 7.1
@@ -43,7 +43,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 |OS version|Version of operating system|7100-01-06-1241|
 |xlC.rte|XL C/C++ Runtime|11.1.0.2|
 |OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|1.0.2o|
-
 
 ## IBM AIX 7.2
 
@@ -68,8 +67,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
->[!NOTE]
->- Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022.
+
+> [!NOTE]
+> Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022.
+
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -82,7 +83,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
 |PAM|Pluggable Authentication Modules|1.1.8|
 
-
 ## Red Hat Enterprise Linux Server 6  (applicable for 2019 UR3 and later)
 
 Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 management pack.
@@ -92,7 +92,6 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |glibc|C Standard Libraries|2.12-1.7|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
-
 
 ## Solaris 10 SPARC
 
@@ -120,6 +119,7 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |Release|Oracle Solaris 11|11/11 SPARC|
 
 ## Solaris UTF\-8 Support
+
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.
 
 ::: moniker-end
@@ -137,8 +137,9 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
->[!NOTE]
->- SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022.
+
+> [!NOTE]
+> SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022.
 
 ::: moniker-end
 
@@ -154,8 +155,8 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## SUSE Linux Enterprise Server 15
 
->[!NOTE]
->System Center Operations Manager 2019 UR1 and later supports SLES 15 under Universal Linux.
+> [!NOTE]
+> System Center Operations Manager 2019 UR1 and later supports SLES 15 under Universal Linux.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -178,9 +179,9 @@ Supported versions:
 - Debian 9, 10, and 11
 - Ubuntu 16.04, 18.04, 20.04 and 22.04
 
->[!NOTE]
->- Debian 10, 11, and Ubuntu 20.04 are compatible with System Center - Operations Manager 2019 UR3 and later.
->- Ubuntu 22.04 is compatible with System Center - Operations Manager 2019 UR5 and later.
+> [!NOTE]
+> - Debian 10, 11, and Ubuntu 20.04 are compatible with System Center - Operations Manager 2019 UR3 and later.
+> - Ubuntu 22.04 is compatible with System Center - Operations Manager 2019 UR5 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -201,8 +202,8 @@ Supported versions:
 - Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
 - SLES 15 is supported from System Center - Operations Manager 2019 UR1 and later
 
->[!Note]
->- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
+> [!Note]
+> Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -359,8 +360,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
->[!NOTE]
->- Solaris zone-level monitoring isn't supported.
+
+> [!NOTE]
+> Solaris zone-level monitoring isn't supported.
+
 ::: moniker-end
 
 ::: moniker range="<=sc-om-1807"
@@ -414,7 +417,8 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0, REV=2010.05.25.01.00|
 |Release|Oracle Solaris 11|11/11 X86|  
 
-## Solaris UTF\-8 Support  
+## Solaris UTF\-8 Support
+
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.  
 
 ::: moniker-end
@@ -432,7 +436,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ::: moniker range="<=sc-om-1807"
 
-## SUSE Linux Enterprise Server 12   
+## SUSE Linux Enterprise Server 12
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -444,6 +448,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 ::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Universal Linux (Debian package)
+
 Debian 8 and Ubuntu 14.04, 16.04 are supported.
 
 |Required package|Description|Minimum version|  
@@ -471,6 +476,7 @@ Ubuntu 14.04, 16.04 are supported.
 ::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Universal Linux (RPM package)
+
 CentOS 7 and Oracle Linux 6, 7 are supported.
 
 |Required package|Description|Minimum version|  
@@ -484,6 +490,7 @@ CentOS 7 and Oracle Linux 6, 7 are supported.
 ::: moniker range="sc-om-2016"
 
 ## Universal Linux (RPM package)
+
 CentOS 7 and Oracle Linux 7 are supported.
 
 |Required package|Description|Minimum version|  
