@@ -135,7 +135,7 @@ ms.topic: article
 |[Windows Server Guarded Fabric 2016](https://www.microsoft.com/download/details.aspx?id=52764)|10.0.1.0|10/08/2020|
 |[Windows Server Hyper-V 2012](https://www.microsoft.com/download/details.aspx?id=36438)|6.2.6641.0|10/08/2020|
 |[Windows Server Hyper-V 2012 R2](https://www.microsoft.com/download/details.aspx?id=40798)|7.1.10107.0|09/24/2020|
-|[Windows Server Hyper-V 2016](https://www.microsoft.com/download/details.aspx?id=54918)|10.0.8.0|03/13/2017|
+|Windows Server Hyper-V 2016|10.0.8.0|03/13/2017|
 |[Windows Server Internet Information Services (IIS) 8](https://www.microsoft.com/download/details.aspx?id=34767)|7.0.10249.0|11/19/2018|
 |[Windows Server Internet Information Services (IIS) 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54445)|10.1.0.1|10/14/2020|
 |[Windows Server Internet Naming Service (WINS) 2003 (Converted)](https://www.microsoft.com/download/details.aspx?id=6758)|6.0.5000.00|09/14/2007|
@@ -157,8 +157,6 @@ ms.topic: article
 |[Windows Server Update Services 2012 R2 (WSUS)](https://www.microsoft.com/download/details.aspx?id=40801)|7.1.10100.0|10/01/2020|
 |[Windows Server Update Services 2016 (WSUS)](https://www.microsoft.com/download/details.aspx?id=54509)|7.1.10128.3|12/09/2016|
 
-If you have feedback about any of these management packs, please feel free to discuss it at https://systemcenterom.uservoice.com 
-
 ## Additional tooling
 
 Below you find some additional references and tooling, as added by the community (collected from the comments).
@@ -168,4 +166,4 @@ Below you find some additional references and tooling, as added by the community
 
 ## References
 
-[Finding Management Packs from Microsoft Download website using PowerShell](https://learn.microsoft.com/en-us/archive/blogs/stefan_stranger/finding-management-packs-from-microsoft-download-website-using-powershell)
+[Finding Management Packs from Microsoft Download website using PowerShell](/archive/blogs/stefan_stranger/finding-management-packs-from-microsoft-download-website-using-powershell)
