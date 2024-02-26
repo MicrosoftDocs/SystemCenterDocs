@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 02/12/2024
+ms.date: 02/26/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -100,13 +100,13 @@ Regardless of the selected option, ensure to grant required SQL permissions to t
 
 ## Instances filtering
 
-[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
 
 **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
 ![Screenshot of the server exclude list wildcard SPN.](./media/managed-instance-management-pack/configure-instances-filtering-wildcard.png)
 
-**Regular Expression** filtering mask type supports .NET regular expression patterns.
+**Regular Expression** filtering mask type supports [.NET regular expressions patterns](/dotnet/standard/base-types/regular-expressions).
 
 ![Screenshot of the server exclude list regular expression SPN.](./media/managed-instance-management-pack/configure-instances-filtering-regex.png)
 
