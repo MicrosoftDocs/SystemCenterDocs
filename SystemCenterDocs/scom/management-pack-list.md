@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Microsoft Management Packs
-description: This article lists the Microsoft Management Packs
+description: This article lists the Microsoft Management Packs.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -41,7 +41,7 @@ ms.topic: article
 |[Java Application Performance Monitoring](https://www.microsoft.com/download/details.aspx?id=39709)|7.1.10227|09/24/2020|
 |[Java EE Application Servers (Tomcat, JBoss, WebSphere, WebLogic)](https://www.microsoft.com/download/details.aspx?id=29270)|7.3.2135.0|09/23/2020|
 |[Java EE Application Servers (Tomcat, JBoss, WebSphere, WebLogic)](https://www.microsoft.com/download/details.aspx?id=44576)|7.5.1038.0|09/23/2020|
-|[Java EE Application Servers (Tomcat, JBoss, WebSphere, WebLogic) for SCOM 2019](https://www.microsoft.com/download/details.aspx?id=58157)|10.19.1123.0|10/08/2020|
+|[Java EE Application Servers (Tomcat, JBoss, WebSphere, WebLogic) for Operations Manager 2019](https://www.microsoft.com/download/details.aspx?id=58157)|10.19.1123.0|10/08/2020|
 |[Message Queuing 4.0 (MSMQ)](https://www.microsoft.com/download/details.aspx?id=1653)|6.0.6700.83|10/08/2020|
 |[Message Queuing 5.0 (MSMQ)](https://www.microsoft.com/download/details.aspx?id=12962)|6.0.6748.88|10/08/2020|
 |[Message Queuing Services (MSMQ) 6.0](https://www.microsoft.com/download/details.aspx?id=36775)|7.0.8608.0|09/23/2020|
@@ -100,8 +100,8 @@ ms.topic: article
 |[System Center 2016 Virtual Machine Manager](https://www.microsoft.com/download/details.aspx?id=54113&WT.mc_id=rss_alldownloads_all)|10.0.6.0|07/06/2017|
 |[System Center Data Protection Manager 2010](https://www.microsoft.com/download/details.aspx?id=7612)|3.0.7696.12|09/24/2020|
 |[System Center Service Manager 2010](https://www.microsoft.com/download/details.aspx?id=23964)|7.0.5826.856|09/24/2020|
-|[UNIX and Linux Operating Systems (SCOM 2012-through 1807)](https://www.microsoft.com/download/details.aspx?id=29696)|10.19.1006.0|09/23/2021|
-|[UNIX and Linux Operating Systems (SCOM 2019)](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1147.0|09/20/2021|
+|[UNIX and Linux Operating Systems (Operations Manager 2012-through 1807)](https://www.microsoft.com/download/details.aspx?id=29696)|10.19.1006.0|09/23/2021|
+|[UNIX and Linux Operating Systems (Operations Manager 2019)](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1147.0|09/20/2021|
 |[Visual Studio 2008 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=14720)|	1.0.0.2|10/08/2020|
 |[Visual Studio 2010 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=6325)|	1.0.0.7|10/08/2020|
 |[Visual Studio 2013 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=41696)|	1.0.0.1|09/30/2020|
@@ -146,7 +146,7 @@ ms.topic: article
 |[Windows Server Print Server 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|12/14/2020|
 |[Windows Server Remote Access 2012](https://www.microsoft.com/download/details.aspx?id=36496)|7.0.8560.0|09/30/2020|
 |[Windows Server Remote Access 2012 R2](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|09/30/2020|
-|[Windows Server Remote Access 2012 R2 Multi-Tenant](https://www.microsoft.com/download/details.aspx?id=40807)|7.1.10100.0|09/30/2020|
+|[Windows Server Remote Access 2012 R2 Multitenant](https://www.microsoft.com/download/details.aspx?id=40807)|7.1.10100.0|09/30/2020|
 |[Windows Server Remote Desktop Services 2012 R2](https://www.microsoft.com/download/details.aspx?id=44991)|7.1.10100.0|09/30/2020|
 |[Windows Server Remote Desktop Services 2016 and above](https://www.microsoft.com/download/details.aspx?id=54806)|10.0.6.0|12/17/2021|
 |[Windows Server Routing and Remote Access Service (RRAS) 2003 (Converted)](https://www.microsoft.com/download/details.aspx?id=11348)|6.0.5000.00|09/14/2007|
@@ -159,10 +159,10 @@ ms.topic: article
 
 ## Additional tooling
 
-Below you find some additional references and tooling, as added by the community (collected from the comments).
+Following are some additional references and tooling:
 
-- [Download all MP's in bulk](https://cloudadministrator.net/2015/06/29/open-sourcing-download-all-microsoft-scom-mps-script/)
-- [Version 3.0.1 of THE MVP Script to Download All SCOM Management Packs with PowerShell](https://cloudadministrator.net/2014/08/29/version-3-0-1-of-damians-and-my-script-to-download-all-scom-management-packs-with-powershell/)
+- [Download all management packs in bulk](https://cloudadministrator.net/2015/06/29/open-sourcing-download-all-microsoft-scom-mps-script/)
+- [Version 3.0.1 of THE MVP Script to download all System Center Operations Manager management packs with PowerShell](https://cloudadministrator.net/2014/08/29/version-3-0-1-of-damians-and-my-script-to-download-all-scom-management-packs-with-powershell/)
 
 ## References
 
