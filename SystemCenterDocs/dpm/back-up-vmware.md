@@ -522,6 +522,7 @@ You can restore individual files from a protected VM recovery point. This featur
 >[!TIP]
 >You can perform item-level restore of online recovery points for VMware VMs running Windows also from Add external DPM Server to recover VM files and folders quickly.
 
+::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 

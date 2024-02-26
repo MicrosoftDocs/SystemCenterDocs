@@ -489,7 +489,7 @@ The following section provides details of the known issue in DPM 2019 UR4 and th
 
 Currently there are no known issues in DPM 2019 UR5.
 
-## DPM 2019 UR5 release notes
+## DPM 2019 UR6 release notes
 
 The following sections detail the known issues and workarounds for DPM 2019 UR6.
 
