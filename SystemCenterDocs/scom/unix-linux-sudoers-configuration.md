@@ -60,9 +60,11 @@ Once updated with the correct usernames and any extra modifications, the templat
 
 ## Red Hat Enterprise Linux (RHEL)
 
-::: moniker range="< sc-om-2019"
+::: moniker range=">= sc-om-2019"
+
 > [!IMPORTANT]
 > Beginning with version 8, Red Hat Enterprise Linux falls under [Universal Linux](#universal-linux).
+
 ::: moniker-end
 
 ::: moniker range="< sc-om-2022"
@@ -87,9 +89,11 @@ Once updated with the correct usernames and any extra modifications, the templat
 
 ## SUSE Linux Enterprise Server (SLES)
 
-::: moniker range="< sc-om-2019"
+::: moniker range=">= sc-om-2019"
+
 > [!IMPORTANT]
 > Starting with version 15, SUSE falls under [Universal Linux](#universal-linux).
+
 ::: moniker-end
 
 [!INCLUDE [sudoers-sles.md](includes/sudoers-sles.md)]
