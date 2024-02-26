@@ -341,7 +341,7 @@ When you can recover a backed-up virtual machine, you use the Recovery wizard to
 
 ## Restore an individual file from a Hyper-V VM
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<=sc-dpm-1807"
 
 You can restore individual files from a protected Hyper-V VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
@@ -376,7 +376,7 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-1807"
+::: moniker range="sc-dpm-2019"
 
 You can restore individual files from a protected Hyper-V VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
