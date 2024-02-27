@@ -10,7 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Debugging
+# Debugging in Azure SQL Managed Instance Management Pack 
 
 In Management Pack for Azure SQL Managed Instance, you can enable debugging in the Windows Event log in cases where you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
 
