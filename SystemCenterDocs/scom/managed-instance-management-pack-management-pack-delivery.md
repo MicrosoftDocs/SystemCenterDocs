@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for Azure SQL 
 author: epomortseva
 ms.author: v-ekaterinap
 manager: vvithal
-ms.date: 12/28/2023
+ms.date: 02/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -27,7 +27,11 @@ After you download and unpack the **Microsoft.Azure.ManagedInstance.ManagementPa
 
 The environment that you use must meet the following prerequisites before you start using Management Pack for Azure SQL Managed Instance:
 
-- Install **.NET Framework 4.6.1** or higher on all management servers participating in managed instance monitoring.
+- Install **.NET Framework 4.7.2** or higher on all management servers participating in managed instance monitoring.
+
+- Enable **TLS 1.2** protocol.
+
+    To correctly enable Transport Layer Security (TLS) 1.2 encryption protocol, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
 - Provide access to managed instances from management servers.
 
