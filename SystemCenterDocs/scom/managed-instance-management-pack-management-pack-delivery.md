@@ -29,7 +29,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Install **.NET Framework 4.7.2** or higher on all management servers participating in managed instance monitoring.
 
-- Enable TLS 1.2 protocol.
+- Enable **TLS 1.2** protocol.
 
     To correctly enable Transport Layer Security (TLS) 1.2 encryption protocol, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
