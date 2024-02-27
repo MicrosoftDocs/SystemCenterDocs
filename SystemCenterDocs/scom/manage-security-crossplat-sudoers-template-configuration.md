@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Configure sudo elevation for UNIX or Linux Monitoring
+title: Sudoers templates for elevation in UNIX/Linux monitoring
 description: This article provides sudoers file templates for monitoring Unix and Linux operating systems with Microsoft System Center Operations Manager.
 author: sepaugh
 ms.author: lornesepaugh
@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Configure sudo elevation for UNIX/Linux monitoring
+# Sudoers templates for elevation in UNIX/Linux monitoring
 
 Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. There are sudoers configuration templates provided in this article for baseline operability.
 

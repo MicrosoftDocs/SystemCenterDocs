@@ -5,10 +5,10 @@ description: This article describes how to configure sudo and SSH keys for an un
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/25/2023
+ms.date: 02/27/2024
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -20,138 +20,95 @@ ms.topic: article
 
 ::: moniker-end
 
-With System Center - Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer by using the sudo program, which allows users to run programs that have the security privileges of another user account. You can also use Secure Shell (SSH) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
+With Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer using sudo, allowing the user to run programs or access files that have the security privileges of another user account. For agent maintenance, you also have the ability to use Secure Shell (SSH) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
 
->[!NOTE]
+> [!NOTE]
 > Operations Manager supports SSH Key-based authentication with key file data in the PuTTY Private Key (PPK) format. Currently supports SSH v.1 RSA keys and SSH v.2 RSA and DSA keys.
 
-This topic provides examples for creating an account for a low-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only, and might not reflect your environment. The following examples provide a user with access to a full set of privileges.  
+To obtain and configure the SSH key from the UNIX and Linux computer, you need the following software on your Windows-based computer:  
 
-To obtain and configure the SSH key from the UNIX and Linux computer, you have to install the following software on your Windows-based computer:  
-
--   A file transfer tool, such as WinSCP, to transfer files from the UNIX or Linux computer to the Windows-based computer.  
-
--   The PuTTY program, or a similar program, to run commands on the UNIX or Linux computer.  
-
--   The PuTTYgen program to save the private SHH key in OpenSSH format on the Windows-based computer.  
+- A file transfer tool, such as WinSCP, to transfer files from the UNIX or Linux computer to the Windows-based computer.  
+- The PuTTY program, or a similar program, to run commands on the UNIX or Linux computer.  
+- The PuTTYgen program to save the private SHH key in OpenSSH format on the Windows-based computer.  
 
 > [!NOTE]  
-> The sudo program exists at different locations on UNIX and Linux operating systems. To provide uniform access to sudo, the UNIX and Linux agent installation script creates the symbolic link `/etc/opt/microsoft/scx/conf/sudodir` to point to the directory expected to contain the sudo program. The agent uses this symbolic link to invoke sudo. The installation script automatically creates the symbolic link, so you do not need to take any action on standard UNIX and Linux configurations; however, if you have sudo installed at a non-standard location, you should change the symbolic link to point to the directory where sudo is installed. If you change the symbolic link, its value is preserved across uninstall, re-install, and upgrade operations with the agent.  
+> The sudo program exists at different locations on UNIX and Linux operating systems. To provide uniform access to sudo, the UNIX and Linux agent installation script creates the symbolic link `/etc/opt/microsoft/scx/conf/sudodir` to point to the directory expected to contain the sudo program. The agent then uses this symbolic link to invoke sudo.
+> When the agent is installed this symbolic link is created automatically, there are no additional actions required on standard UNIX and Linux configurations; however, if you have sudo installed at a non-standard location, you should change the symbolic link to point to the directory where sudo is installed. If you change the symbolic link, its value is preserved across uninstall, re-install, and upgrade operations with the agent.  
 
 ## Configure an account for sudo elevation
 
-The following procedures create an account and sudo elevation by using `opsuser` for a user name.  
-
-#### Create a user
-
-1.  Log on to the UNIX or Linux computer as `root`.  
-
-2.  Add the user:  
-
-    `useradd opsuser`  
-
-3.  Add a password and confirm the password:  
-
-    `passwd opsuser`  
-
-You can now configure sudo elevation and create an SSH key for `opsuser`, as described in the following procedures.  
-
-#### Configure sudo elevation for the user
-
 > [!NOTE]
-> For more information about sudoers configuration for Low Privilege scenarios, see [SCOM: Configuring sudo Elevation for UNIX and Linux Monitoring](https://social.technet.microsoft.com/wiki/contents/articles/7375.scom-configuring-sudo-elevation-for-unix-and-linux-monitoring.aspx)
-1.  Log on to the UNIX or Linux computer as `root`.  
+> The information provided in this section walks through configuring an example user, `scomuser`, and grants it full rights on the client computer.
+> If you already have user accounts and/or want to setup **Low Privilege** monitoring, sudoers templates are available and grant only the permissions needed for successful monitoring and maintenance operations. For more information, see: [Sudoers templates for elevation in UNIX/Linux monitoring](manage-security-crossplat-sudoers-template-configuration.md)
 
-2.  Use the visudo program to edit the sudo configuration in a vi text editor. Run the following command:  
+The following procedures create an account and sudo elevation by using `scomuser` for a user name.  
 
-    `visudo`  
+### Create a user
 
-3.  Find the following line:  
+1. Sign in the UNIX or Linux computer as `root`
+2. Add the user: `useradd scomuser`
+3. Add a password and confirm the password: `passwd scomuser`
 
-    `root ALL=(ALL)  ALL`  
+You can now configure sudo elevation and create an SSH key for `scomuser`, as described in the following procedures.
 
-4.  Insert the following line after it:  
+### Configure sudo elevation for the user
 
-    `opsuser ALL=(ALL) NOPASSWD: ALL`  
+1. Sign in the UNIX or Linux computer as `root`
+2. Use the visudo program to edit the sudo configuration in a vi text editor. Run the following command: `visudo`
+3. Find the following line: `root ALL=(ALL)  ALL`
+4. Insert the following line after it: `scomuser ALL=(ALL) NOPASSWD: ALL`
+5. TTY allocation isn't supported. Ensure the following line is commented out: `# Defaults requiretty`
 
-5.  TTY allocation is not supported. Ensure the following line is commented out:  
+    > [!IMPORTANT]
+    > This step is required for sudo to work.
 
-    `# Defaults requiretty`  
+6. Save the file and exit visudo:
+    - Press `ESC` then `: (colon)` followed by `wq!`, and then press `Enter` to save your changes and exit gracefully.
+7. Test the configuration by entering in the following two commands. The result should be a listing of the directory without being prompted for a password:
 
-    > [!IMPORTANT]  
-    > This step is required for sudo to work.  
+    ```bash
+    su - scomuser
+    sudo ls /etc
+    ```
 
-6.  Save the file and exit visudo:  
-
-    Press ESC \+ : \(colon\) followed by `wq!`, and then press Enter.  
-
-7.  Test the configuration by entering in the following two commands. The result should be a listing of the directory without being prompted for a password:  
-
-    `su - opsuser`  
-
-    `sudo ls /etc`  
-
-You can use the `opsuser` account by using the password and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
+You can now access the `scomuser` account by using its password and sudo elevation, allowing you to specify credentials in task and discovery wizards, and within RunAs Accounts.
 
 ## Create an SSH key for authentication  
 
-The following procedures create an SSH key for the `opsuser` account that was created in the previous examples.  
+The following procedures create an SSH key for the `scomuser` account that was created in the previous examples.  
 
-#### Generate the SSH key  
+### Generate the SSH key
 
-1.  Log on as `opsuser`.  
+1. Sign in as `scomuser`.  
+2. Generate the key by using the Digital Signature Algorithm \(DSA\) algorithm: `ssh-keygen -t dsa`  
+    - Note the optional passphrase if you provided it.
 
-2.  Generate the key by using the Digital Signature Algorithm \(DSA\) algorithm:  
-
-    `ssh-keygen -t dsa`  
-
-    Note the optional passphrase if you provided it.  
-
-The **ssh-keygen** creates the `/home/opsuser/.ssh` directory with the private key file (`id_dsa`) and the public key file (`id_dsa.pub`). You can now configure the key to be supported by `opsuser` as described in the next procedure.  
+The **ssh-keygen** utility creates the `/home/scomuser/.ssh` directory with the private key file `id_dsa` and the public key file `id_dsa.pub` inside, these files are used in the following procedure.
 
 #### Configure a user account to support the SSH key  
 
-1.  At the command prompt, type the following commands. To navigate to the user account directory:  
-
-    `cd /home/opsuser`  
-
-2.  Specify exclusive owner access to the directory:  
-
-    `chmod 700 .ssh`  
-
-3.  Navigate to the .ssh directory:  
-
-    `cd .ssh`  
-
-4.  Create an authorized keys file with the public key:  
-
-    `cat id_dsa.pub >> authorized_keys`  
-
-5.  Give the user read and write permissions to the authorized keys file:  
-
-    `chmod 600 authorized_keys`  
+1. At the command prompt, type the following commands. To navigate to the user account directory: `cd /home/scomuser`  
+2. Specify exclusive owner access to the directory: `chmod 700 .ssh`  
+3. Navigate to the .ssh directory: `cd .ssh`  
+4. Create an authorized keys file with the public key: `cat id_dsa.pub >> authorized_keys`  
+5. Give the user read and write permissions to the authorized keys file: `chmod 600 authorized_keys`  
 
 You can now copy the private SSH key to the Windows\-based computer, as described in the next procedure.  
 
 #### Copy the private SSH key to the Windows\-based computer and save in OpenSSH format
 
-1.  Use a tool, such as WinSCP, to transfer the private key file (`id_dsa` - with no extension) from the UNIX or Linux computer to a directory on your Windows-based computer.  
+1. Use a tool, such as WinSCP, to transfer the private key file `id_dsa` (with no extension) from the client to a directory on your Windows-based computer.  
+2. Run PuTTYgen.  
+3. In the **PuTTY Key Generator** dialog box, select the **Load** button, and then select the private key `id_dsa` that you transferred from the UNIX or Linux computer.  
+4. Select **Save private key** and name and save the file to the desired directory.  
 
-2.  Run PuTTYgen.  
+You can use the `scomuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
 
-3.  In the **PuTTY Key Generator** dialog box, click the **Load** button, and then select the private key `(id_dsa`) that you transferred from the UNIX or Linux computer.  
-
-4.  Click **Save private key** and name and save the file to the desired directory.  
-
-You can use the `opsuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
-
->[!NOTE]
+> [!NOTE]
 > Verify that you are saving the PuTTYgen Private Key as version 2 instead of version 3. You may change the PPK file version by going to the menu and selecting, **Key** > **Parameters for saving key files...** \
 > PPK file version 2 is currently supported for System Center Operations Manager.
 
 ## Next steps
 
-- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
-
-- Review the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
-
+- Review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md) to understand how to authenticate and monitor your UNIX and Linux computers.
+- Review [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.
