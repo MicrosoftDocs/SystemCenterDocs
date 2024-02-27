@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration in Mana
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/28/2023
+ms.date: 02/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -28,7 +28,7 @@ Management Pack for Azure SQL Managed Instance supports the following tiers and 
   - Agent and Jobs
   - Memory-Optimized Data (In-Memory OLTP)
   - Failover Groups, including secondary read-only replicas
-  - Authentication Mode—both SQL Server Authentication and Azure AD Authentication are supported.
+  - Authentication Mode - both SQL Server Authentication and Azure AD Authentication are supported.
 
 ## System Center Operations Manager
 
