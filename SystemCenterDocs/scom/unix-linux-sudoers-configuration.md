@@ -1,18 +1,19 @@
 ---
 ms.assetid: 
-title: Configuring sudo elevation for UNIX or Linux Monitoring
-description: This article provides sudoers file templates for monitoring Unix and Linux operating systems with Microsoft System Center Operations Manager (SCOM).
+title: Configure sudo elevation for UNIX or Linux Monitoring
+description: This article provides sudoers file templates for monitoring Unix and Linux operating systems with Microsoft System Center Operations Manager.
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 02/24/2024
-ms.product: msc-operations-manager
+ms.date: 02/27/2024
 ms.topic: reference
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
-# Configuring sudo elevation for UNIX/Linux monitoring
+# Configure sudo elevation for UNIX/Linux monitoring
 
-Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. We've provided templates for configuring sudo for baseline operability.
+Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. There are sudoers configuration templates provided in this article for baseline operability.
 
 ## Introduction
 
@@ -36,7 +37,7 @@ The provided templates specify the commands that allow the configured RunAs Acco
 >
 > Don't see your OS? Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
 
-## Using the templates
+## Using the sudoers templates
 
 Select the appropriate template for your Operating System and replace the example accounts with your RunAs Account usernames, include are other organizational customizations if necessary.
 

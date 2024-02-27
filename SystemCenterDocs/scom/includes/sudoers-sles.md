@@ -1,13 +1,14 @@
 ---
 ms.assetid: 
-title: include file
-description: include file with sudoers configuration for SUSE Linux Enterprise Server (SLES) operating systems
+title: Include file
+description: Include file with sudoers configuration for SUSE Linux Enterprise Server (SLES) operating systems.
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 02/24/2024
+ms.date: 02/27/2024
 ms.topic: include
-ms.product: msc-operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 <!-----------------
