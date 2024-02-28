@@ -20,11 +20,11 @@ ms.topic: article
 
 ::: moniker-end
 
-Run As accounts define which credentials are used for certain actions that are carried out by the Operations Manager agent. These accounts are centrally managed through the Operations console and assigned to different Run As profiles. If a Run As profile isn't assigned to a particular action, it is carried out under the Default Action account. In a low-privilege environment, the default account may not have the required permissions for a particular action, and a Run As profile can be used to provide this authority. Management packs may install Run As profiles and Run As accounts to support required actions. If so, their documentation should be referenced for any required configuration.
+Run As accounts define which credentials are used for certain actions performed by the Operations Manager agent. These accounts are centrally managed through the Operations console and assigned to different Run As profiles. If a Run As profile isn't assigned to a particular action, it is carried out under the Default Action account. In a low-privilege environment, the default account may not have the required permissions for a particular action, and a Run As profile can be used to provide this authority. Management packs may install Run As profiles and Run As accounts to support required actions. If so, their documentation should be referenced for any required configuration.
 
 ## Default Run As accounts
 
-The following table lists the default Run As accounts that are created by Operations Manager during setup.  
+The following table lists the default Run As accounts created by Operations Manager during setup.  
 
 | Name | Description | Credentials |
 |:--- |:--- |:--- |
