@@ -39,6 +39,7 @@ To obtain and configure the SSH key from the UNIX and Linux computer, you need t
 
 > [!NOTE]
 > The information provided in this section walks through configuring an example user, `scomuser`, and grants it full rights on the client computer.
+>
 > If you already have user accounts and/or want to setup **Low Privilege** monitoring, sudoers templates are available and grant only the permissions needed for successful monitoring and maintenance operations. For more information, see: [Sudoers templates for elevation in UNIX/Linux monitoring](manage-security-crossplat-sudoers-template-configuration.md)
 
 The following procedures create an account and sudo elevation by using `scomuser` for a user name.  
@@ -103,7 +104,8 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
 1. Use a tool, such as WinSCP, to transfer the private key file `id_dsa` (with no extension) from the client to a directory on your Windows-based computer.  
 2. Run PuTTYgen.  
 3. In the **PuTTY Key Generator** dialog box, select the **Load** button, and then select the private key `id_dsa` that you transferred from the UNIX or Linux computer.  
-4. Select **Save private key** and name and save the file to the desired directory.  
+4. Select **Save private key** and name and save the file to the desired directory.
+5. You can use the exported file within a maintenance RunAs account configured for `scomuser`, or when performing maintenance tasks through the console.
 
 You can use the `scomuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
 
@@ -111,6 +113,7 @@ You can use the `scomuser` account by using the SSH key and sudo elevation for s
 > **PPK file version 2 is the only version currently supported for System Center Operations Manager.**
 >
 > By default, PuTTYgen is set to use PPK file version 3. You may change the PPK file version to 2 by going to the toolbar and selecting Key > Parameters for saving key files..., then select the radio button for 2 for PPK file version.
+>
 > :::image type="content" source="media/manage-security-create-crossplat-sudo-sshkeys/puTTYgen-keygen-privatekeyfileparameters.png" alt-text="Screenshot of PuTTY Key Generator showing that where to select the PPK file version for the private key":::
 
 ## Next steps
