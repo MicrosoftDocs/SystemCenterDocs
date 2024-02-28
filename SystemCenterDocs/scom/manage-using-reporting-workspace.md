@@ -1,13 +1,13 @@
 ---
 title: Using the Reporting Workspace in Operations Manager
 description: This article describes how to use the Operations Manager Operations console to view and administer reports.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/04/2020
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: dbfffaab-d49c-42a5-bbb3-77cbeae9b841
 ---

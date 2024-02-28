@@ -1,12 +1,12 @@
 ---
 title: Prepare for Service Manager deployment
 description: Describes Service Manager deployment preparation considerations.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/14/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23
 ---

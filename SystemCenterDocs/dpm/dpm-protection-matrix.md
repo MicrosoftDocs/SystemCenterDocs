@@ -1,15 +1,15 @@
 ---
 description: A complete matrix of all workloads, data types, and installations that DPM protects.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 11/07/2023
 title: What can System Center Data Protection Manager back up?
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23, UpdateFrequency.5
 ---
 
@@ -90,10 +90,10 @@ The following sections provide details of the protection support matrix for DPM:
 
 ### VM backup
 
-|Workload|Version|DPM installation|Protection and recovery|
-|------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
+| Workload | Version | DPM installation | Protection and recovery |
+| ------------ | ----------- | -------------------- | -------------------------------------------- |
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2022, 2019, 2016, 2012 R2, 2012|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs).<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.|
-|VMware VMs | VMware server 5.5, 6.0, 6.5, 6.7 or 7.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.<br/><br/>vSphere 5.5 is not supported in 2019 UR5 and later.<br/><br/>vSphere 7.0 is supported from 2019 UR5 and later.||
+|VMware VMs | VMware server 5.5, 6.0, 6.5, 6.7 or 7.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.<br/><br/>vSphere 5.5 is not supported in 2019 UR5 and later.<br/><br/>vSphere 7.0 is supported from 2019 UR5 and later.|
 
 ### Linux
 

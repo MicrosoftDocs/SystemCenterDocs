@@ -1,14 +1,14 @@
 ---
 description: include file to provide information about how to upgrade your existing Service Management Automation to release 2022.
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
 keywords:  
 ms.date: 08/12/2022
 title:  include file
-ms.technology:  service-management-automation
+ms.subservice:  service-management-automation
 ms.assetid:
 ---
 

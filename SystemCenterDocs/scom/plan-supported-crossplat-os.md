@@ -2,12 +2,12 @@
 ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
 title: Supported UNIX and Linux operating system versions
 description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/14/2023
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/01/2024
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.custom: engagement-fy23, UpdateFrequency.5
 ---
@@ -36,16 +36,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 >[!IMPORTANT]
 > Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
 
-## IBM AIX 7.1
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|
-|OS version|Version of operating system|7100-01-06-1241|
-|xlC.rte|XL C/C++ Runtime|11.1.0.2|
-|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|1.0.2o|
-
-
 ## IBM AIX 7.2
+
+>[!NOTE]
+>OpenSSH 9.2 or later isn't supported.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -93,6 +87,8 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
 
+>[!NOTE]
+>Solaris zone-level monitoring isn't supported.
 
 ## Solaris 10 SPARC
 
@@ -175,7 +171,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 Supported versions:
 
-- Debian 9, 10, and 11
+- Debian 9, 10, 11, and 12
 - Ubuntu 16.04, 18.04, 20.04 and 22.04
 
 >[!NOTE]
@@ -220,7 +216,7 @@ To install the agent on servers, see [Install the agent on RPM based Universal L
 
 Supported versions:
 
-- Debian 9, 10, and 11
+- Debian 9, 10, 11, and 12
 - Ubuntu 16.04, 18.04, 20.04, and 22.04
 
 >[!Note]
@@ -296,7 +292,22 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
+
+## IBM AIX 7 (Power)  
+
+>[!NOTE]
+>OpenSSH 9.2 or later isn't supported.
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|OS version|Version of operating system|7100-01-06-1241|  
+|xlC.rte|XL C/C++ Runtime|11.1.0.2|  
+|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
+
+::: moniker-end
+
+::: moniker range="sc-om-1807"
 
 ## IBM AIX 7 (Power)  
 
@@ -305,6 +316,22 @@ The following tables describe the required UNIX and Linux operating systems and 
 |OS version|Version of operating system|7100-01-06-1241|  
 |xlC.rte|XL C/C++ Runtime|11.1.0.2|  
 |OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
+
+::: moniker-end
+
+::: moniker range="sc-om-1801"
+
+## IBM AIX 7 (Power)  
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|OS version|Version of operating system|7100-01-06-1241|  
+|xlC.rte|XL C/C++ Runtime|11.1.0.2|  
+|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
 
 ## HP-UX 11i v3 IA64  
 

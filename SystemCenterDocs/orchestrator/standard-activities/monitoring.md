@@ -3,17 +3,17 @@ title: Monitoring
 description: This article provides a brief description of tasks you can accomplish when using each Monitoring activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f7d2a4f1-97cf-4dc7-bf68-70c573b6fc08
 caps.latest.revision: 7
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Monitoring
 

@@ -2,13 +2,13 @@
 ms.assetid: a6271390-71e0-4a97-b48c-38369165613b
 title: Release build versions for System Center Operations Manager
 description: This article details the release builds in Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/08/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 

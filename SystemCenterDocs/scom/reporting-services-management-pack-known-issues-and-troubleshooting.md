@@ -7,8 +7,8 @@ ms.author: v-ekaterinap
 manager: evansma
 ms.date: 6/30/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Known Issues and Troubleshooting in Management Pack for SQL Server Reporting Services

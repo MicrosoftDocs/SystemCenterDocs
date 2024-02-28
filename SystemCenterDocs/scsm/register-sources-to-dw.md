@@ -1,16 +1,16 @@
 ---
 title: Register source systems to the System Center data warehouse
 description: Describes how you can register source systems to the System Center data warehouse and troubleshoot common problems in Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 10/12/2016
-ms.technology: service-manager
+ms.date: 02/08/2024
+ms.subservice: service-manager
 ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Register source systems to the System Center data warehouse in Service Manager

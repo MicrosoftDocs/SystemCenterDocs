@@ -2,14 +2,14 @@
 ms.assetid: 00698994-021a-413e-94fb-54b07ebe3e4a
 title: Deploy VMM for high availability
 description: This article describes how to deploy the VMM server in high availability mode.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: intro-deployment
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: intro-deployment, engagement-fy24
 ---
 
 # Deploy VMM for high availability
@@ -41,3 +41,8 @@ Prepare for a high availability deployment by considering the following:
 - [Deploy the VMM management server in a failover cluster](ha-server.md).
 - [Make library server file shares highly available](ha-library.md).
 - [Deploy the SQL Server VMM database as highly available](ha-sql.md).
+
+## Next steps
+
+[Deploy a highly available VMM management server](./ha-server.md).
+

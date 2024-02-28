@@ -2,16 +2,16 @@
 title: Get VM List Activity
 description: The Get VM List activity is used in a runbook to retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 043ce1cb-31d6-47c7-991f-9278b01b0113
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---

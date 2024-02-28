@@ -2,13 +2,13 @@
 ms.assetid: cbf4471e-e219-4aa2-a1fe-590d3f84d664
 title: Azure update management in VMM
 description: This article provides information about how to manage Azure updates for VMs and workloads in VMM.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/28/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 monikerRange: '>=sc-vmm-2019'
 ms.custom: UpdateFrequency2
 ---

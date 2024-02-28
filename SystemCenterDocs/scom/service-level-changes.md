@@ -2,12 +2,12 @@
 ms.assetid: 84899e64-8395-4d33-aecb-19b07be15b9a  
 title: Service-level changes for gMSA in System Center Operations Manager
 description: This article describes the service-level changes that are required to use group Managed Service Accounts (gMSA), a new feature supported in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 01/11/2023
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.custom: UpdateFrequency2
 ---

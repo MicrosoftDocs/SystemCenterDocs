@@ -1,12 +1,12 @@
 ---
 title: Port assignments for System Center - Service Manager
 description: Learn about the port assignments used by System Center - Service Manager.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 01/23/2018
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.topic: article
 ---
 

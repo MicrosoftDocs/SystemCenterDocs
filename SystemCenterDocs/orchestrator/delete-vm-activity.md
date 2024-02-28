@@ -2,16 +2,16 @@
 title: Delete VM Activity
 description: The Delete VM activity is used in a runbook to permanently delete a virtual machine and all of its associated files that has already been added to the VMware ESX server host.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: daa3d513-25e3-4fa4-896a-ffb3526b0ea8
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023

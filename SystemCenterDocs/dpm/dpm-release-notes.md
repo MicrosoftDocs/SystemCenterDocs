@@ -2,12 +2,12 @@
 ms.assetid:
 title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 releases.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2023
-ms.prod: system-center
-ms.technology: data-protection-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/01/2024
+ms.service: system-center
+ms.subservice: data-protection-manager
 ms.topic: article
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
@@ -140,6 +140,19 @@ The following issues were identified after the release of DPM 2022 UR1 (KB 50196
 
 ## DPM 2022 UR2 release notes
 
+We are recalling the release of Update Rollup 2 for System Center DPM 2022 due to the known issues listed below:
+
+1. Hyper-V scheduled backups take a long time to complete because each backup job triggers a consistency check.
+     Error message: *The replica of Microsoft Hyper-V RCT on \<Machine Name\> is not consistent with the protected data source. DPM has detected changes in file locations or volume configurations of protected objects since the data source was configured for protection. (ID 30135).*
+2. Removing a data source from protection group or stopping backup, results in an error with ID 33469 - This operation is not supported on the current version of the MARS agent.
+3. DPM console occasionally crashes when SMTP alerts or reports are configured.
+
+An updated build (Update Rollup 2 Refresh for System Center DPM 2022) fixing the known issues has been released.
+
+If you had installed Update Rollup 2 for System Center DPM 2022 (10.22.189.0), We recommend you to install Update Rollup 2 Refresh (10.22.197.0) on your DPM server and update the protection agents.  
+
+Reach out to Microsoft Support for queries or additional information.
+
 In addition to the issues documented above, DPM 2022 UR2 has the following issues:
 
 ### DPM 2022 UR1 email reports with Microsoft 365 credentials fail after upgrading to DPM 2022 UR2
@@ -152,13 +165,25 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 **Description**: DPM can’t enumerate SQL databases for protection when MSOLEDB 18 is missing on the protected server since DPM requires MSOLEDB18 to enumerate databases for protection.  
 
-**Workaround**: Install SQL [MSOLEDB 18](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16&viewFallbackFrom=sql-server-2016%22%20%5Cl%20%221867) driver if it is missing on the protected server. SQL Server 2022 ships with MSOLEDB 18 by default.  
+**Workaround**: Install SQL [MSOLEDB 18](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16&viewFallbackFrom=sql-server-2016%22%20%5Cl%20%221867&preserve-view=true) driver if it is missing on the protected server. SQL Server 2022 ships with MSOLEDB 18 by default.  
 
 ### Stop protection with delete online data fails from remote management console
 
 **Description**: The stop protection with delete online data operation fails from the remote management console when enhanced Hybrid security option is enabled on the vault.  
 
 **Workaround**: To prevent this, perform stop protection with delete online data directly from the DPM console.  
+
+### Stopping protection of a data source from fails with ID: 33469
+
+**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
+
+This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
+
+**Workaround**: Install Update Rollup 2 Refresh for System Center DPM 2022.
+
+## DPM 2022 UR2 Refresh release notes
+
+DPM 2022 UR2 Refresh fixes the known issues in DPM 2022 UR2.
 
 ::: moniker-end
 

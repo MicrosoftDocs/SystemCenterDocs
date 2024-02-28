@@ -2,13 +2,13 @@
 ms.assetid: 58a686bd-2b59-4c73-ab41-6e3c8fc200c0
 title: Deploy and manage update rollups in VMM
 description: This article provides information about how to deploy and manage the update rollups in System Center - VMM.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
 ---
 

@@ -1,15 +1,15 @@
 ---
 description: This article describes the  pre and post backup scripts for Data Protection Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 07/08/2021
 title: Use Pre-backup and Post-backup scripts
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency2
 ---
 

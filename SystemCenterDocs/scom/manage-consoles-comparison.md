@@ -1,13 +1,13 @@
 ---
 title: Comparing the Operations and Web Console
 description: This article describes both of the Operations Manager consoles and the differences between them for viewing monitoring data and performing administration in the management group.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
-ms.date: 02/06/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 ---
@@ -32,7 +32,7 @@ Both consoles share a similar layout:
 
 ![Diagram of the console panes.](./media/manage-consoles-comparison/om2016-consoleframe.png)  
 
-Each navigation button opens a specific workspace, such as Monitoring or Administration. In the Operations console, the following navigation buttons may be available depending on the user role you're assigned:  
+Each navigation button opens a specific workspace, such as Monitoring or Administration. In the Operations console, the following navigation buttons are available depending on the user role you're assigned:  
 
 ![Screenshot of the Navigation buttons in Operations Console.](./media/manage-consoles-comparison/om2016-operations-console-navbuttons.png)  
 

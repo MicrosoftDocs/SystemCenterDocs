@@ -1,19 +1,20 @@
 ---
 title: Get Object
 description: The Get Object activity is used to search for a record based on a set of filter criteria.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e1217c55-4f07-4892-8480-65ea1d453be1
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
+
 # Get Object
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
@@ -30,4 +31,4 @@ The following published data element is specific to Get Object. Additional publi
 
 | Element   | Description   |
 |-------------------|-----------------------------------------------------------|
-| Number of Objects | The number of objects returned by the Get Object activity |
+| Number of Objects | The number of objects returned by the Get Object activity. |

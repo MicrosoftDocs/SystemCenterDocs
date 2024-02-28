@@ -1,14 +1,14 @@
 ---
 description: This article provides information on how you can use groups to manage configuration and work items in service manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 11/28/2023
 title: Using Groups, Queues, and Lists in Service Manager
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
 ms.custom: UpdateFrequency3
 ---

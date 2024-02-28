@@ -1,12 +1,12 @@
 ---
 ms.assetid: 5d4550ac-0367-4c03-925c-e246fa3b291d
 description: include file to provide Release Notes for System Center 1807 - Orchestrator
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-threshold
-ms.technology: Orchestrator
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
+ms.subservice: Orchestrator
 keywords:
 ms.date: 07/24/2018
 title:  include file

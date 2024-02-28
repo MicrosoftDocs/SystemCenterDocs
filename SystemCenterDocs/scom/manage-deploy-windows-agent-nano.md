@@ -2,13 +2,13 @@
 ms.assetid: f257a38b-38b3-4688-8c56-19317fc68d8e
 title: Install Agent on Nano Server
 description: This article describes how to install the Operations Manager agent on Nano Server.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/21/2022
 ms.custom: na, intro-installation
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 monikerRange: 'sc-om-2016'
 ---

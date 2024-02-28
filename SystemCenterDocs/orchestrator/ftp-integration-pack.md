@@ -2,16 +2,16 @@
 title: FTP Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. You can design runbooks in Orchestrator.
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e0482f7f-711a-4b40-9884-1d1bd4b96bf2
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---

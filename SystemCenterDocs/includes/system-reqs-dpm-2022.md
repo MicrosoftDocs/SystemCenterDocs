@@ -1,14 +1,14 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2022 in your environment.
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 05/02/2022
 title: Preparing your environment for System Center Data Protection Manager
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid:
 ---
 

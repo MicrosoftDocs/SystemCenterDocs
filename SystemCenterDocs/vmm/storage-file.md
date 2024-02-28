@@ -2,13 +2,13 @@
 ms.assetid: 88134cd9-4440-47bd-acf0-ab8f90bc2003
 title: Set up file storage in the VMM fabric
 description: This article describes how to set up file storage in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/20/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 

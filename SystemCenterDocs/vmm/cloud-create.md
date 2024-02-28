@@ -2,13 +2,14 @@
 ms.assetid: 8e171d54-0071-48fb-803e-26895dfefe93
 title: Create a private VMM cloud
 description: This article provides instructions for creating a private cloud in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 05/09/2022
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 
@@ -30,7 +31,7 @@ You can create a private cloud from a host group or from a VMware resource pool.
 ## Before you start
 
   - You need to have the VMM fabric in place. [Learn more](plan-compute.md).
-  - You should have one or more [Hyper-V](hyper-v-hosts.md) or [VMware](manage-vmware-hosts.md) virtualization hosts in the fabric. If you're creating a cloud from a VMware resource pool, a vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be available in the VMM fabric.
+  - You should have one or more [Hyper-V](hyper-v-cluster.md) or [VMware](manage-vmware-hosts.md) virtualization hosts in the fabric. If you're creating a cloud from a VMware resource pool, a vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be available in the VMM fabric.
     - If you want to provide [self-service users](self-service.md) the ability to store virtual machines to the VMM library, then create a library share or create a folder in a library share that will serve as the storage location. [Learn more](manage-library-server.md).
 
         > [!NOTE]

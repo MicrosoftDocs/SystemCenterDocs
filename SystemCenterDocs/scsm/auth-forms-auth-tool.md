@@ -1,15 +1,15 @@
 ---
 title: Customize and author forms
 description: Provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
-manager: mkluck
-ms.custom: na, UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.custom: UpdateFrequency3, engagement-fy23
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 03/28/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9140312b-4d0b-4f22-a466-85887485e066
