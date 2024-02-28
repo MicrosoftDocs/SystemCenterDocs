@@ -37,7 +37,7 @@ The provided templates specify the commands that allow the configured RunAs Acco
 >
 > Don't see your OS? Refer to the [Supported UNIX and Linux operating system versions](plan-supported-crossplat-os.md) page for supported distributions.
 
-## Using the sudoers templates
+## Using the templates
 
 Select the appropriate template for your Operating System and replace the example accounts with your RunAs Account usernames, include are other organizational customizations if necessary.
 
