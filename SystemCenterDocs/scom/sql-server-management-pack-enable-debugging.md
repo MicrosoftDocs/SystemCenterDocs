@@ -5,13 +5,13 @@ description: This article explains how to enable debugging in Management Pack fo
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 03/22/2023
+ms.date: 02/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Debugging
+# Debugging in SQL Server Management Pack 
 
 In Management Pack for SQL Server, you can enable debugging in the Windows Event log in cases where you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
 
