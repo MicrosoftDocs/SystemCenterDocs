@@ -19,7 +19,8 @@ Export Event Log Task exports the Event log file containing Discovery, Monitorin
 1. Verify debugging mode is turned on in the server monitoring Azure SQL Managed Instance. See more in [Enable Debugging](managed-instance-management-pack-enable-debugging.md).
 
 2. Determine the log file location for saving:
-   - local computer
+   - Local computer
+
    - [File share (SMB) symbol server](/windows-hardware/drivers/debugger/file-share--smb--symbol-server)
 
 3. In the System Center Operations Manager console, navigate to the **Database Engines view** and select the desired Azure SQL Managed Instance Database Engine. Select the **Export Event Log** task on the right pane Tasks dropdown.
@@ -34,7 +35,8 @@ For using **Other** credentials create new account in the server connecting with
 
 ## Tasks parameters
 
-![Export Event Log task screenshot.](./media/managed-instance-management-pack/export-log-task.png)
+![Screenshot of export event log task.](./media/managed-instance-management-pack/export-log-task.png)
+
 
 - **Timeout (seconds)**
 
