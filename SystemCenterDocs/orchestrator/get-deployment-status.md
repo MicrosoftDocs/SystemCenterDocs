@@ -1,18 +1,18 @@
 ---
-title: Get Deployment Status activity
+title: Get Deployment Status activity.
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
@@ -33,7 +33,7 @@ application model), use the **Deploy Application** activity. To deploy a
 task sequence, use the **Deploy Task Sequence** activity. To deploy
 software updates in an update group, use the **Deploy Software Update**
 activity. To deploy a legacy application, use the **Deploy Program**
-activity
+activity.
 
 ## Get Deployment Status properties
 
@@ -58,8 +58,8 @@ above:
 
 |Element|Description|
 |---|---|
-|Connection|Specifies the name of the connection to the Configuration Manager server|
-|Result Count|The number of values returned by the query|
+|Connection|Specifies the name of the connection to the Configuration Manager server. |
+|Result Count|The number of values returned by the query. |
 
 The following list describes the Published Data for the available
 Deployment Types.
@@ -192,7 +192,7 @@ Deployment Types.
         connection that you want to use for this activity. Select **OK**.
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        select the ellipsis button **(...)**  next to the text box to browse
+        select the ellipsis button **(...)** next to the text box to browse
         for a value.
 
         You can also use published data to automatically populate the

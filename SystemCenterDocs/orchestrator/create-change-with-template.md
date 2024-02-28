@@ -2,12 +2,12 @@
 title: Create Change with Template activity
 description: The Create Change with Template activity is used to configure a change record based on an existing template.
 ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency3
 ---
 # Create Change with Template activity

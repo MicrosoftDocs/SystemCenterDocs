@@ -2,12 +2,12 @@
 title: Configure Orchestrator database connections
 description: Describes how to configure database connections in System Center - Orchestrator.
 ms.date: 04/13/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency3, engagement-fy23
 ---
 

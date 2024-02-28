@@ -1,15 +1,15 @@
 ---
 title: Deploy Service Manager
 description: You can install Service Manager for various deployment scenarios.
-manager: mkluck
 ms.custom: intro-deployment, UpdateFrequency5, engagement-fy24
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 91a72f45-07ff-41cd-80aa-7acde988f08f

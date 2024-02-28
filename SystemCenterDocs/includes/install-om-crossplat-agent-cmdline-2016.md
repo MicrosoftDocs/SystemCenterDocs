@@ -2,13 +2,13 @@
 ms.assetid:
 title: include file
 description: include article to detail the detail how to install the System Center 2016 - Operations Manager agent manually on UNIX and Linux computers.
-author: jyothisuri
-ms.author: jsuri
-manager:  mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  05/08/2018
 ms.topic:  include
-ms.prod:  system-center-threshold
-ms.technology:  operations-manager
+ms.service:  system-center
+ms.subservice:  operations-manager
 ---
 
 ## Install Operations Manager agent on UNIX and Linux computers

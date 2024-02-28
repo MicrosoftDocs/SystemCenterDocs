@@ -1,14 +1,14 @@
 ---
 description: Descriptions of the new features in System Center DPM
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
-ms.date: 11/07/2023
+ms.service: system-center
+ms.date: 02/01/2024
 title: What's new in System Center DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 ---
 
@@ -189,11 +189,11 @@ For issues fixed and the installation instructions for UR5, see the [KB article]
 
 ### Support for SQL Server 2022
 
-DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### Back up support for Windows Server 2022
 
-DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### End of support for vSphere 5.5
 
@@ -201,11 +201,11 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 
 ### Support for vSphere 7.0
 
-DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
+DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019&preserve-view=true).
 
 ### Support for Microsoft 365 SMTP
 
-DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm).
+DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm&preserve-view=true).
 
 ### Increase maximum parallel online backups
 
@@ -272,35 +272,35 @@ DPM 2016 can back up Hyper-V VMs deployed on ReFS-based SOFS clusters. Backup an
 - **Upgrading a DPM production server to 2016 doesn't require a reboot** -
 When you upgrade to DPM 2016, you aren't required to reboot the production server. To avoid rebooting the production server, upgrade to DPM 2016 and upgrade the DPM agent on the production servers. Backups continue and you reboot the production server when you want.
 
-## Modern Backup Storage
+### Modern Backup Storage
 
 Modern Backup Storage is a feature that provides several benefits including:
 
-### Improved storage savings
+#### Improved storage savings
 
 Modern Backup Storage achieves 30-40% storage savings using technologies such as Resilient File System (ReFS). Using ReFS volumes and storing backups on VHDXs means there are no Local Disk Manager (LDM) limits or storage over-allocations. DPM storage consumption is flexible: it grows and shrinks based on the production data source’s storage changes.
 
-### Faster backups
+#### Faster backups
 DPM 2016 uses block cloning to store backups on ReFS volumes. Instead of using copy-on-write to store backups (which was used by VolSnap in DPM 2012 R2), DPM 2016's block cloning uses allocate-on-write. This change improves IOPS efficiency, making backups nearly 70% faster.
 
-### Choose the volumes for your data source to increase storage efficiency
+#### Choose the volumes for your data source to increase storage efficiency
 DPM's workload-aware storage feature decreases costs by providing flexible storage choices for a given data source. This means DPM can use expensive, high-performance disks for backing up high-IOPS workloads, such as SQL or SharePoint. Low-performance storage can be used for reduced-IOPS workloads.
 
-### Back up storage consumption in line with production data source
+#### Back up storage consumption in line with production data source
 Without Logical Disk Manager (LDM) limits, data sources grow and shrink as needed, without the need for manual intervention. DPM doesn't need to allocate storage to data sources beforehand and can dynamically allow the backups to adjust as needed, thus achieving higher efficiency with less storage requirement.
 
 
-## Hyper-V protection improvements
+### Hyper-V protection improvements
 
 The following information touches on the improvements for protecting VMs with DPM 2016.
 
-### Resilient Change Tracking (RCT)
+#### Resilient Change Tracking (RCT)
 In Windows Server 2016, Hyper-V virtual hard disks have built-in change tracking. As a result, in case of a host outage or VM migration, change-tracking is automatically preserved. With RCT, backups:
 - **are more reliable**: Consistency checks aren't required after VM migration.
 - **are scalable**: More parallel backups and less storage overhead.
 - **have improved performance**: Lower impact on the production fabric and faster backup.
 
-#### Enabling RCT VM backup
+##### Enabling RCT VM backup
 
 Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RCT by default. VMs deployed on Windows Server 2012 R2 or earlier don't support RCT. However, you can upgrade older VMs. To upgrade older VMs to enable RCT:
 
@@ -325,7 +325,7 @@ Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RC
 
 This backs up RCT-enabled VMs deployed in various configurations. The following sections describe the supported scenarios:
 
-#### Meet backup SLA during cluster operating system rolling upgrade
+##### Meet backup SLA during cluster operating system rolling upgrade
 
 Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade the cluster nodes' operating system, from Windows Server 2012 R2 to Windows Server 2016, without stopping the Hyper-V or Scale-Out File Server (SOFS) workloads. Cluster OS rolling upgrade ensures protection isn't interrupted during operating system upgrades. This sustained protection meets the backup SLA, reinforces continuity, and provides peace of mind for backup administrators. For detailed information on the cluster OS rolling upgrade process, see the article, [Cluster OS Rolling Upgrade Process](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#cluster-os-rolling-upgrade-process).
 
@@ -347,13 +347,13 @@ To enable uninterrupted protection, run the following steps for each node:
 
     This allows backups to occur without consistency checks while keeping the cluster alive.
 
-#### Seamless protection and recovery of Shielded VMs (vTPM-enabled VMs)
+##### Seamless protection and recovery of Shielded VMs (vTPM-enabled VMs)
 
 Trusted Platform Module (TPM) is a chip in the motherboard of a computer that helps to integrate cryptographic keys. These keys are used by BitLocker to protect the computer even if it's stolen. Virtual TPM (vTPM) is a feature in Windows Server 2016. With vTPM, you can use BitLocker and a virtual TPM chip to encrypt a VM, thereby protecting the VM. These VMs, called Shielded VMs, can only be run on healthy and approved hosts in the fabric.
 
 DPM 2016 supports the backup and recovery of Shielded VMs that have their VHDs/VHDXs protected with vTPM. Note that Item Level Recovery (ILR) and Alternate Location Recovery (ALR) to a location outside the guarded fabric isn't available for this scenario.
 
-#### Protecting VMs stored on Storage Spaces Direct
+##### Protecting VMs stored on Storage Spaces Direct
 
 Storage Spaces Direct leverages the Storage Spaces feature introduced in Windows Server 2012 R2, which allows you to deploy highly available (HA) storage systems using local storage. Storage Spaces Direct leverages the local disks on hosts to provide a shared pool of clustered storage that can be used as primary storage for Hyper-V virtual machine files or for secondary storage for Hyper-V Replica virtual machine files.
 The primary use case for Storage Spaces Direct is private cloud storage, either on-premises for enterprises or in hosted private clouds for service providers.
@@ -361,7 +361,7 @@ For more information about Storage Spaces Direct, see the article [Storage Space
 
 DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the backup of VMs using the [Storage Spaces Direct hyper-converged scenario](/windows-server/storage/storage-spaces/deploy-storage-spaces-direct) with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
 
-#### Protecting VMs stored on NTFS and ReFS-based SOFS clusters
+##### Protecting VMs stored on NTFS and ReFS-based SOFS clusters
 
 DPM 2016 can back up VMs deployed on both NTFS and ReFS-based SOFS clusters.
 
@@ -385,7 +385,6 @@ To add the machine accounts to the backup operator groups, run the following ste
 7. In the **Select Users, Computers, Service Accounts, or Groups** dialog, enter the name of the server or cluster and select **Check Names**.
 8. Once you've identified the computers, restart the node.
 
-
 To give permissions to the share
 
 1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
@@ -403,6 +402,24 @@ To give permissions to the share
 14. When you've finished adding permissions for the servers, select **Apply**.
 
     This prepares the VMs on SOFS shares for the backup process.
+
+## New features in DPM 2016 UR10 Hotfix
+
+DPM 2016 UR10 Hotfix contains the enhancement below to improve backup times. For more information and the installation instructions, see the [KB article](https://support.microsoft.com/help/5031798).
+
+### Removed File Catalog dependency for online backup of file/folder workloads
+
+This update rollup hotfix removes the dependency on File Catalog (list of files in a recovery point, maintained in the cloud), which was needed to restore individual files and folders from the Online recovery points. With this hotfix, DPM 2016 now uses a modern iSCSI mount method to provide individual file restoration.
+
+The new method has the following advantages:
+
+- Reduces backup time up to 15% since file catalog metadata (list of files in a recovery point) isn't generated during backup.
+
+- Item level recovery errors due to inconsistent file catalog metadata is avoided, since iSCSI mounts are used.
+
+- After the recovery point is mounted, file browsing during item level recovery is faster for recovery points with many files and folders.
+
+We recommended you to update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
 
 ::: moniker-end
 

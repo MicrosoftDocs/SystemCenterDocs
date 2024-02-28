@@ -2,12 +2,12 @@
 title: Operations Manager activities in the System Center - Orchestrator integration pack
 description: This article describes all activities in the System Center integration pack for System Center - Operations Manager.
 ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency3
 ---
 # Operations Manager integration pack activities

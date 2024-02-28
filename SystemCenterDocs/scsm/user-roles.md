@@ -1,16 +1,16 @@
 ---
 title: Manage user roles
 description: Describes the user roles used by Service Manager and how to manage them.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 10/12/2016
-ms.technology: service-manager
+ms.date: 02/08/2024
+ms.subservice: service-manager
 ms.assetid: e7cd2a94-13ad-40cf-84c5-f9063072a591
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage Service Manager user roles

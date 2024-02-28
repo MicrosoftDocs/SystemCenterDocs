@@ -1,13 +1,13 @@
 ---
 title: Monitoring Clusters with Operations Manager
 description: This article provides an overview on how to perform monitoring of a failover cluster in Windows Server with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/21/2022
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 6842cddc-b875-4358-8f00-f4b8ab784739
 ---

@@ -2,24 +2,26 @@
 ms.assetid: 29b787f9-5c1f-4d08-a9a0-9c0a9b9075e1
 title: Manual monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure manual monitoring template in Management Pack for Azure SQL Managed Instance
-author: Anastas1ya
+author: epomortseva
 ms.author: v-ekaterinap
-manager: vvithal
-ms.date: 5/11/2022
+manager: evansma
+ms.date: 02/12/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
-# Manual Monitoring Template
+# Manual monitoring template
 
 Manual monitoring template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
+## Add Monitoring Wizard and create a destination management pack
+
 To configure monitoring using the manual monitoring template, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Manual**, and select **Add Monitoring Wizard…**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Manual**, and select **Add Monitoring Wizard**.
 
-    ![Screenshot showing the Run Add Monitoring Wizard.](./media/managed-instance-management-pack/running-monitoring-wizard.png)
+    ![Screenshot showing the Run Add Monitoring Wizard.](./media/managed-instance-management-pack/running-monitoring-wizard-manual.png)
 
 2. At the **Monitoring Type** step, select **Azure SQL MI - Manual**, and select **Next**.
 
@@ -31,45 +33,47 @@ To configure monitoring using the manual monitoring template, perform the follow
 
     You can also create a new management pack by selecting **New**.
 
-    ![Screenshot showing the Create new management pack.](./media/managed-instance-management-pack/new-management-pack.png)
+## Service details
 
-4. At the **Service Details** step, select **Add Instances**.
+At this step, to add a new instance, select **Add Instances**.
 
-    ![Screenshot showing the Configure service details.](./media/managed-instance-management-pack/service-details.png)
+![Screenshot showing the Configure service details.](./media/managed-instance-management-pack/service-details.png)
 
-5. In the **Add Instances** window, select a Run As Account with the appropriate SQL credentials, and specify data sources and (or) connection strings. Follow the instructions provided in the wizard to avoid errors.
+In the **Add Instances** window, select a Run As Account with the appropriate SQL credentials, and specify data sources and (or) connection strings. Follow the instructions provided in the wizard to avoid errors.
 
-    ![Screenshot showing the Add instances.](./media/managed-instance-management-pack/add-instance-credentials.png)
+![Screenshot showing the Add instances.](./media/managed-instance-management-pack/add-instance-credentials-connection-string.png)
 
-    Use the standard security connection string format to specify the connection settings:
+Use the standard security connection string format to specify the connection settings:
 
-    ```
-    Server=<ServerAddress>;Database=<DatabaseName>;
-    ```
-    
-    You can get a connection string for a managed instance using the Azure portal.
+```
+Server=<ServerAddress>;Database=<DatabaseName>;
+```
 
-    To create a Run As account from the connection string, use the following format:  
+You can get a connection string for a managed instance using the Azure portal.
 
-    ```
-    Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Password>;
-    ```
-    
-    You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
+To create a Run As account from the connection string, use the following format:  
 
-    ![Screenshot showing the Configure Run As account.](./media/managed-instance-management-pack/new-run-as-account-manual.png)
+```
+Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Password>;
+```
 
-    After you select **OK** in the **Add Instances** window, a connection test will be performed.
+You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
-    ![Screenshot showing the Connection test.](./media/managed-instance-management-pack/connection-test.png)
+![Screenshot showing the Configure Run As account for Manual template.](./media/managed-instance-management-pack/new-run-as-account-manual-template.png)
 
-    After the connection test is complete, you can view and edit the properties of the added instance. For that, select an instance and select **Edit Instance**.
+After you select **OK** in the **Add Instances** window, a connection test will be performed.
 
-    >[!NOTE]
-    >The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](managed-instance-management-pack-known-issues-and-troubleshooting.md).
+![Screenshot showing the Connection test.](./media/managed-instance-management-pack/connection-test.png)
 
-    ![Screenshot showing the Edit instance parameters.](./media/managed-instance-management-pack/editing-instance.png)
+After the connection test is complete, you can view and edit the properties of the added instance. For that, select an instance and select **Edit Instance**. You can also delete the added instance.
 
-6. At the **Summary** step, review the monitoring settings and select **Create**.
+> [!NOTE]
+> The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](managed-instance-management-pack-known-issues-and-troubleshooting.md).
 
-    ![Screenshot showing the Review summary.](./media/managed-instance-management-pack/manual-summary.png)
+![Screenshot showing the Edit instance parameters.](./media/managed-instance-management-pack/editing-instance.png)
+
+## Summary
+
+At this step, review all the configuration and connection settings and select **Create**.
+
+![Screenshot showing the Review summary.](./media/managed-instance-management-pack/manual-summary.png)

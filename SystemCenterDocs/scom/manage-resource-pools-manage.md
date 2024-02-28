@@ -2,13 +2,13 @@
 ms.assetid: e598989d-0aa8-4eb4-b5f7-db27d2beb8a0
 title: How to Manage Resource Pools
 description: This article describes how to manage and configure resource pools in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -58,7 +58,9 @@ By default, all management servers are members of the resource pools created whe
 > [!NOTE]
 > The membership of the All Management Servers Resource Pool is read-only. To change its membership from automatic to manual, run the following PowerShell code in the Operations Manager Command Shell:
 >  
-> ```Get-SCOMResourcePool -DisplayName "All Management Servers Resource Pool" | Set-SCOMResourcePool -EnableAutomaticMembership 0```
+> ```powershell
+> Get-SCOMResourcePool -DisplayName "All Management Servers Resource Pool" | Set-SCOMResourcePool -EnableAutomaticMembership 0
+> ```
 
 #### To remove a member from an automatic resource pool
 

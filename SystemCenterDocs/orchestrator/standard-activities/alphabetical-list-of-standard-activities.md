@@ -2,17 +2,17 @@
 title: Alphabetical List of Standard Activities
 description: This article lists Standard Activities
 ms.date: 12/28/2022
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: reference
 ms.assetid:
 caps.latest.revision: 12
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23, UpdateFrequency3
 ---
 # Alphabetical List of Standard Activities

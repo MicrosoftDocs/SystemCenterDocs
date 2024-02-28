@@ -2,13 +2,13 @@
 ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
 title: Set up an SDN RAS gateway in the VMM fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/20/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 

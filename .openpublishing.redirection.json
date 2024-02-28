@@ -6,6 +6,86 @@
       "redirect_url" : "/system-center/index"
   },
   {
+     "source_path" : "SystemCenterDocs/orchestrator/delete-network-adapter.md",
+     "redirect_url" : "/system-center/orchestrator/delete-network-adapter-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/delete-vm-disk-activity.md",
+     "redirect_url" : "/system-center/orchestrator/delete-vm-disk-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/modify-vm-disk-activity.md",
+     "redirect_url" : "/system-center/orchestrator/modify-vm-disk-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/monitor-vmm-job.md",
+     "redirect_url" : "/system-center/orchestrator/monitor-vmm-job-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/configure-service-deployment-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/configure-service-deployment"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/deploy-service-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/deploy-service"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/apply-pending-service-update-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/apply-pending-service-update"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-cloud-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-cloud"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-service-configuration-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-service-configuration"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-service-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-service"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-service-template-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-service-template"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-tier-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-tier"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-user-role-quota-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-user-role-quota"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-vm-host-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-vm-host"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-vm-network-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-vm-network"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-vm-subnet-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-vm-subnet"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/scale-tier-in-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/scale-tier-in"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/scale-tier-out-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/scale-tier-out"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/set-pending-service-update-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/set-pending-service-update"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/stop-service-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/stop-service"
+  },
+  {
       "source_path" : "SystemCenterDocs/dpm/get-started/upgrade-to-dpm-2016.md",
       "redirect_url" : "/system-center/dpm/upgrade-to-dpm-2016"
   },
@@ -3187,6 +3267,14 @@
   {
      "source_path" : "SystemCenterDocs/system-requirements/Dot-Net-Version-Support.md",
      "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/VMM/hyper-v-hosts.md",
+     "redirect_url": "/system-center/vmm/hyper-v-cluster"
+  },
+  {
+     "source_path" : "SystemCenterDocs/VMM/manage-vmm.md",
+     "redirect_url": "/system-center/vmm/provision-vms"
   },
   {
      "source_path" : "SystemCenterDocs/VMM/vmm.md",

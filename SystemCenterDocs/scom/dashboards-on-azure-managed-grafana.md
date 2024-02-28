@@ -5,11 +5,11 @@ description: This article describes how to create a SCOM Managed Instance dashbo
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 02/01/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
@@ -19,7 +19,7 @@ Azure Managed Grafana (AMG) is a data visualization platform, built on top of th
 
 Azure Managed Grafana is optimized for the Azure environment and works seamlessly, providing the following integration features:
 
-- Built-in support for [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/) and [Azure Data Explorer](https://learn.microsoft.com/azure/data-explorer/).
+- Built-in support for [Azure Monitor](/azure/azure-monitor/) and [Azure Data Explorer](/azure/data-explorer/).
 - User authentication and access control using Microsoft Entra identities.
 - Direct import of existing charts from the Azure portal.
 
@@ -31,7 +31,7 @@ To create a SCOM Managed Instance dashboard on Azure Managed Grafana, follow the
 
 ### Get started with Azure Managed Grafana (AMG)
 
-1. Create or reuse an Azure Managed Grafana (AMG) with a version 10 on the Azure portal. To create an AMG instance, follow [these steps](https://learn.microsoft.com/azure/managed-grafana/quickstart-managed-grafana-portal).
+1. Create or reuse an Azure Managed Grafana (AMG) with a version 10 on the Azure portal. To create an AMG instance, follow [these steps](/azure/managed-grafana/quickstart-managed-grafana-portal).
 2. Enable System assigned managed identity on the AMG instance.
 
      :::image type="Permissions" source="media/dashboards-on-azure-managed-grafana/grafana-permissions.png" alt-text="Screenshot of grafana permissions.":::

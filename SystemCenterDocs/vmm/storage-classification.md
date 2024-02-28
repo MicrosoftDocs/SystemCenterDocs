@@ -2,13 +2,13 @@
 ms.assetid: 03be2a03-3c30-418f-8c5c-169744ac864f
 title: Set up storage classifications in the VMM fabric
 description: This article describes how to set up storage classifications in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23
 ---
 # Set up storage classifications in the VMM fabric

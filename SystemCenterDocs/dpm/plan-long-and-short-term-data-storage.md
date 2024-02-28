@@ -1,14 +1,14 @@
 ---
 description: Information to help you identify your storage needs and to prepare the storage to support a DPM deployment.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 07/28/2023
+ms.date: 02/01/2024
 title: Prepare data storage
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
@@ -105,7 +105,7 @@ After the storage pool is set up, when you create protection groups that include
 
 -   You'll need to attach your tape libraries or standalone tape drives to the DPM server with SAN or SCSI. Tape devices must be compatible with DPM. Read about [Identify compatible tape libraries](~/dpm/identify-compatible-tape-libraries.md).
 
--   Get a list of [Compatible Tape Libraries](https://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
+-   Get a list of [Compatible Tape Libraries](/system-center/dpm/dpm-compatible-tape-libraries).
 
 -   The tape capacity you need depends on the size of the protected data and the number of tape backup jobs you'll run. To plan for the number of tapes required for a protection group, multiply the required backup frequency by the retention range.
 

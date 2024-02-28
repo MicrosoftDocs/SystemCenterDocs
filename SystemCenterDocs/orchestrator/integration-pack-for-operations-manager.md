@@ -2,12 +2,12 @@
 title: System Center - The Orchestrator integration pack for System Center Operations Manager
 description: Learn about the integration pack for Operations Manager, an add-in provided by System Center Orchestrator.
 ms.date: 04/04/2019
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # The integration pack for System Center Operations Manager

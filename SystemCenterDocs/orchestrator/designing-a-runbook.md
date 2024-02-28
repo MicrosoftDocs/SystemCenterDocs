@@ -1,18 +1,18 @@
 ---
 title: Designing a Runbook
 description: Describes how to design a new runbook for System Center 2016 - Orchestrator.
-ms.custom: UpdateFrequency3
-ms.date: 04/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/07/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a0af32cb-3faf-4f13-b9eb-eadc10effe1b
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Designing a Runbook

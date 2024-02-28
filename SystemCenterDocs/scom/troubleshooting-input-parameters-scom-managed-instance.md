@@ -5,11 +5,11 @@ description: This article describes the errors that might occur while validating
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 02/01/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
+ms.topic: troubleshooting-general
 monikerRange: '>=sc-om-2019'
 ---
 
@@ -196,6 +196,18 @@ Follow these steps to run the validation script:
 
 **Resolution:** Verify that the VNet being used for SCOM Managed Instance creation has outbound internet access by creating test virtual machine on the same subnet as SCOM Managed Instance and test outbound connectivity from test virtual machine.
 
+### Issue: Internet connectivity test failed. Required endpoints are not reachable from the VNet
+
+**Cause**: Occurs due to an incorrect DNS Server IP or an incorrect network configuration.
+
+**Resolution**:
+
+- Check the DNS Server IP, and ensure that the DNS Server is up and running.
+
+- Ensure that the VNet, which is being used for SCOM Managed Instance creation has line-of-sight to the DNS Server.
+
+- Ensure that the SCOM Managed Instance has outbound Internet access and NSG/Firewall is properly configured to allow access to the required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
+
 ### General troubleshooting steps for [internet connectivity](https://download.microsoft.com/download/2/3/a/23a14c00-8adf-4aba-99ea-6c80fb321f3b/SCOMMI%20Validation%20and%20Troubleshooter.zip)
 
 1. Generate a new virtual machine (VM) running on Windows Server 2022 or 2019 within the chosen subnet for SCOM Managed Instance creation. Sign in to the VM and configure its DNS server to use the same DNS IP that was utilized during the creation of the SCOM Managed Instance.
@@ -243,7 +255,7 @@ Follow these steps to run the validation script:
 
 **Cause**: Occurs when MSI is not properly configured to access SQL managed instance.
 
-**Resolution**: Check if MSI is configured as Active Directory Admin on SQL managed instance. Ensure that required [Azure Active Directory permissions](https://learn.microsoft.com/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-active-directory-admin-value-in-the-sql-managed-instance) are provided to SQL managed instance for MSI authentication to work.
+**Resolution**: Check if MSI is configured as Active Directory Admin on SQL managed instance. Ensure that required [Azure Active Directory permissions](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-active-directory-admin-value-in-the-sql-managed-instance&preserve-view=true) are provided to SQL managed instance for MSI authentication to work.
 
 ### Issue: Failed to connect to SQL MI from this instance
 

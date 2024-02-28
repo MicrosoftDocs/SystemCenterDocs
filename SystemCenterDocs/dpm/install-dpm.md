@@ -1,13 +1,13 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
-manager: mkluck
 ms.topic: article
-author: jyothisuri
 ms.date: 07/28/2023
 title: Installing DPM
-ms.author: jsuri
-ms.prod: system-center
-ms.technology: data-protection-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ---
 

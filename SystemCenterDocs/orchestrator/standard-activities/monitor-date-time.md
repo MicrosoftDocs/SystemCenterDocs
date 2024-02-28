@@ -3,17 +3,17 @@ title: Monitor Date-Time
 description: This article describes the Monitor Date/Time activity to invoke your runbooks at a specific time once a day, week, or month.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e9baa069-6d81-43bc-8781-bdcc6d7ca5d3
 caps.latest.revision: 18
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Monitor Date/Time
 

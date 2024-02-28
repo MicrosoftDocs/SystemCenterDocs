@@ -2,12 +2,12 @@
 ms.assetid: f286e1fc-57f5-469f-bee5-e3756b560810
 title: Applying Overrides to Object Discoveries
 description: This article describes how to target and apply overrides to object discovery rules.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/21/2022
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.custom: UpdateFrequency2
 ---

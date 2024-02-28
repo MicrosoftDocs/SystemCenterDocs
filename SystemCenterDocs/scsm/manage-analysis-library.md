@@ -1,15 +1,15 @@
 ---
 title: Manage and use the analysis libraries
 description: Explains how to manage and use the analysis libraries in the Service Manager console.
-manager: mkluck
 ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/28/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5f3e94e5-6706-4ef4-a511-a21c5d6b98f8

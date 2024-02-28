@@ -1,14 +1,14 @@
 ---
 description: Back up Exchange mailbox databases with DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 07/12/2023
 title: Back up Exchange with DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
 ms.custom: engagement-fy23
 ---

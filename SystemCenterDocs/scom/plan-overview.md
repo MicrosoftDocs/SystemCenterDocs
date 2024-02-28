@@ -2,13 +2,13 @@
 ms.assetid: d101c474-7a4d-4a01-b52a-a22270c475d0
 title: Operations Manager Planning Guide
 description: This article is the landing page for the planning guide supporting System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/09/2019
 ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

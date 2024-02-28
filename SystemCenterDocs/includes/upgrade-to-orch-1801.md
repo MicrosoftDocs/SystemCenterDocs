@@ -1,13 +1,13 @@
 ---
 ms.assetid: ba25182b-5ddf-439e-8dd6-541194e65168
 title:  include file  
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  05/17/2018
 ms.topic:  include
-ms.prod:  system-center-threshold
-ms.technology: orchestrator
+ms.service:  system-center
+ms.subservice: orchestrator
 description: include file to provide an overview of how to upgrade your System Center Orchestrator installation to release 1801.
 keywords:
 ---

@@ -1,14 +1,14 @@
 ---
 description: This article provides information on how to add and configure storage in DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 07/28/2023
 title: Add Modern Backup Storage to DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 ms.custom: engagement-fy23
 ---

@@ -1,13 +1,13 @@
 ---
 title: How to Delete or Restore a Network Device in Operations Manager
 description: This article describes how to delete or restore a network device monitored by Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/29/2019
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 85dae573-5813-4fd1-b81a-6a05f6e1cb7f
 ---
@@ -60,7 +60,7 @@ If you delete a device that was discovered by a recursive discovery rule, it wil
 
 7.  Select **Exclude Filters**.  
 
-8.  Verify that an exclude filter has been created for the deleted device. This may take a few minutes to occur.  
+8.  Verify that an exclude filter has been created for the deleted device. This might take a few minutes to occur.  
 
 ### To restore a network device that was deleted from recursive discovery  
 
@@ -80,7 +80,7 @@ If you delete a device that was discovered by a recursive discovery rule, it wil
 
     Note the status of the rule as it runs and wait until it shows a blank status.  
 
-8.  Verify that the device is rediscovered. This may take a few minutes to a few hours depending on the number of devices in the environment. You can view the status of the discovery rule to determine when it has completed.  
+8.  Verify that the device is rediscovered. This might take a few minutes to a few hours depending on the number of devices in the environment. You can view the status of the discovery rule to determine when it has completed.  
 
 ## Next steps
 

@@ -2,12 +2,12 @@
 title: Integration Pack for System Center DPM in System Center - Orchestrator
 description: This article describes the System Center DPM integration pack provided by System Center - Orchestrator.
 ms.date: 03/04/2019
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Integration pack for System Center - DPM

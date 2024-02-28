@@ -2,14 +2,14 @@
 ms.assetid: 2d8c7af1-fe96-4901-9d51-90e12bedeaa8
 title: Set up host groups in the VMM compute fabric
 description: This article describes how to set up host groups in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2016
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Set up host groups in the VMM compute fabric
@@ -46,4 +46,4 @@ After you've created a host group, you can modify the following properties for t
 
 ## Next steps
 
-After you've created host groups, you can deploy [Hyper-V](hyper-v-hosts.md) hosts in the VMM fabric.
+After you've created host groups, you can deploy [Hyper-V](hyper-v-cluster.md) hosts in the VMM fabric.

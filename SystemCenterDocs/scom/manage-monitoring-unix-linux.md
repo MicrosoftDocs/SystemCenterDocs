@@ -1,13 +1,13 @@
 ---
 title: Troubleshooting UNIX and Linux Agent Monitoring
 description: This article provides basic troubleshooting guidance for discovery and monitoring of the UNIX/Linux OS.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 03/30/2021
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 6afa5807-9393-4fc9-92c2-aa7427d72f2f
 ---
@@ -100,7 +100,7 @@ If you see this error, do the following:
 3.  Ensure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information, see [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
 
 ### Certificate Name and Host Name do not Match  
-The common name (CN) that is used in the certificate must match the fully qualified domain name (FQDN) that is resolved by Operations Manager. If the CN doesn't match, you will see the following error when you run the Discovery Wizard:  
+The common name (CN) that is used in the certificate must match the fully qualified domain name (FQDN) that is resolved by Operations Manager. If the CN doesn't match, you'll see the following error when you run the Discovery Wizard:  
 
 ```  
 The SSL certificate contains a common name (CN) that doesn't match the hostname  
@@ -112,7 +112,7 @@ You can view the basic details of the certificate on the UNIX or Linux computer 
 openssl x509 -noout -in /etc/opt/microsoft/scx/ssl/scx.pem -subject -issuer -dates  
 ```  
 
-When you do this, you will see output that is similar to the following:  
+When you do this, you'll see output that is similar to the following:  
 
 ```  
 subject= /DC=name/DC=newdomain/CN=newhostname/CN=newhostname.newdomain.name  
@@ -241,9 +241,9 @@ The Operations Manager Agents for UNIX and Linux maintain several log files that
     > [!NOTE]  
     > Generally, it's the SYSTEM account making the calls, and C:\Windows\Temp is the default SYSTEM temp folder.  
 
-2. After the creation of the blank file, Operations Manager will immediately begin logging SSH and Certificate activity to the Temp directory. Scripts that call into the SSH modules will log to <*Scriptname.vbs*>.log. Other modules have their own logs.  
+2. After the creation of the blank file, Operations Manager will immediately begin logging SSH and Certificate activity to the Temp directory. Scripts that call into the SSH modules log to <*Scriptname.vbs*>.log. Other modules have their own logs.  
 
-In some cases, it may be required to restart the HealthService to get the EnableOpsmgrModuleLogging logging to take effect.  
+In some cases, it might be required to restart the HealthService to get the EnableOpsmgrModuleLogging logging to take effect.  
 
 ## Enable Logging on the UNIX Agent  
 These logs will report the UNIX agent actions. If there's a problem with the data returned to Operations Manager, look in this log. You can set the amount of information logged with the scxadmin command. The syntax for this command is:  
@@ -255,7 +255,7 @@ The following table lists the possible parameter values:
 |Level|Description|  
 |---------|---------------|  
 |Errors|Log only **Warning** or **Error** messages.|  
-|Intermediate|Log **Info**, **Warning** and **Error** messages.|  
+|Intermediate|Log **Info**, **Warning**, and **Error** messages.|  
 |Verbose|Log **Info**, **Warning**, and **Error** messages with debug logging. Note that This level of logging is likely to cause rapid growth in the size of the log files. It's recommended that this option only be used for short periods of time to diagnose a specific issue.|  
 
 ### Use DebugView to Troubleshoot Discovery Issues  
@@ -304,7 +304,7 @@ The Operations Manager Agents for UNIX and Linux don't limit the size of the age
 `scxadmin -log-rotate all`  
 
 ### Example Logrotate configuration file  
-The following example demonstrates a configuration file to rotate the scx.log files as well as omiserver.log with the [logrotate](https://linux.die.net/man/8/logrotate) utility of Linux. Typically, logrotate will run as a scheduled job (with crond) and act on configuration files found in `/etc/logrotate.d`. To test and use this configuration file, modify the configuration to be appropriate for your environment, and link or save the file in `/etc/logrotate.d`.  
+The following example demonstrates a configuration file to rotate the scx.log files and omiserver.log with the [logrotate](https://linux.die.net/man/8/logrotate) utility of Linux. Typically, logrotate will run as a scheduled job (with crond) and act on configuration files found in `/etc/logrotate.d`. To test and use this configuration file, modify the configuration to be appropriate for your environment, and link or save the file in `/etc/logrotate.d`.  
 ```
 #opsmgr.lr  
 

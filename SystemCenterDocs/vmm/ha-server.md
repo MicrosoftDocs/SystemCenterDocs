@@ -2,14 +2,14 @@
 ms.assetid: bc7828ab-1e1f-43d4-a390-c14321f9124b
 title: Deploy highly available VMM management server
 description: This article provides instructions for deploying the VMM server in high availability mode
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: intro-deployment
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: intro-deployment, engagement-fy24
 ---
 
 # Deploy a highly available VMM management server
@@ -65,3 +65,7 @@ Follow these steps to set up the failover cluster:
 
 1. Run setup and confirm that you want to **add this server as a node** to the highly available deployment.
 2. During the wizard, specify the service account password. You don't need to specify other information.
+
+## Next steps
+
+[Deploy SQL Server for VMM high availability](./ha-sql.md).

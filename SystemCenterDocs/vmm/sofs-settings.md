@@ -2,13 +2,14 @@
 ms.assetid: aa0580cc-884b-42bc-8326-ff0b4291d703
 title: Manage SOFS settings in the VMM fabric
 description: This article describes how to manage SOFS settings in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 # Manage SOFS settings in the VMM fabric
@@ -54,7 +55,7 @@ You can manage scale-out file server (SOFS) in the System Center - Virtual Machi
 
 ## Set a storage QoS for an SOFS
 
- System Center VMM 2016 and later include storage QoS policies to solve the **noisy neighbor** problem. This problem is common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there's always a chance that one VM’s usage of the resource exceeds that of the other. This can affect the performance of an app running on the VM. Storage QoS ensures:
+ System Center VMM 2016 and later include storage QoS policies to solve the **noisy neighbor** problem. This problem is common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there's always a chance that one VM's usage of the resource exceeds that of the other. This can affect the performance of an app running on the VM. Storage QoS ensures:
 
 - **Mitigation of noisy neighbor issues**: Ensures that a single VM doesn't consume all the resources and starves the other VMs of storage bandwidth.
 - **Monitor end-to-end storage performance**: When VMs are started on an SOFS, their performance is monitored.
@@ -73,3 +74,7 @@ Set a storage QoS policy as follows:
 
 1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS server (not the nodes) and select **Properties**.
 2. In **General**, select **Use disk witness for this file server from the specified pool** to indicate that the disk witness for the SOFS should come from a specific storage pool. VMM creates a three-way mirror space, and configures it as the disk witness for the cluster.
+
+## Next steps
+
+[Set QoS for storage resources](./manage-sofs-qos.md).

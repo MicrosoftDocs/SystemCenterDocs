@@ -2,13 +2,13 @@
 ms.assetid: 6aaf4c5c-db14-4c48-8c6d-8912ac333cab
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2016
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 02/19/2021
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/13/2023
 ms.topic: include
-ms.prod:  system-center-threshold
-ms.technology: virtual-machine-manager
+ms.service:  system-center
+ms.subservice: virtual-machine-manager
 ---
 
 ## Upgrade to System Center 2016 - VMM
@@ -91,7 +91,7 @@ Back up and upgrade the operating system and then install VMM 2016.
  - [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
  - If you're using a remote SQL instance, specify the SQL server computer name.
  - If SQL server runs on the VMM server, enter the name of the VMM server or enter **localhost**. If the SQL Server is in a cluster, enter the cluster name.
- - Don't specify a port value if you're using local SQL server or if your remote SQL server uses the default port (1443).
+ - Don't specify a port value if you're using local SQL server or if your remote SQL server uses the default port (1433).
  - Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 11. In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
 12. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.

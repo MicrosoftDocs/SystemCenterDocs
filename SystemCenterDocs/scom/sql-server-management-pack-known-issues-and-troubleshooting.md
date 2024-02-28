@@ -5,15 +5,18 @@ description: This article explains known issues and troubleshooting in Managemen
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 06/13/2023
+ms.date: 1/22/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Known Issues and Troubleshooting in Management Pack for SQL Server
 
 This article lists the known issues for Management Pack for SQL Server.
+
+> [!WARNING]
+> There is an issue in the **SQL Server 2022** which is used as the **OperationsManagerDW** database-hosted SQL server in the System Center Operations Manager. In the case of this configuration, the SQL Server MP failed to load the Summary Dashboard view in the System Center Operations Manager console with the following error: `[sdk].[Microsoft_SQLServer_Visualization_Library_GetDataCenterDashboardData] StoredProcedureNotAvailable. Conversion failed when converting from a character string to uniqueidentifier.` It's related to the [non-guaranteed ordering of predicates](https://techcommunity.microsoft.com/t5/sql-server-blog/predicate-ordering-is-not-guaranteed/ba-p/383075) which affects the SQL Server Summary Dashboard. As a workaround, set the **OperationsManagerDW** database [Compatibility level](/sql/t-sql/statements/alter-database-transact-sql-compatibility-level) =  150, which is related to the database engine version number for SQL Server 2019, or use the latest version 7.4.0.0 of the SQL Server Management Pack with the fix of this issue.
 
 |Issue title|Behavior / Symptom|Known workaround|
 |-|-|-|

@@ -3,17 +3,17 @@ title: Monitor Service
 description: This article describes about the Monitor Service activity that invokes runbooks when a service has been started or stopped.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 274d3f61-125f-4d90-9ab3-33208908534e
 caps.latest.revision: 17
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Monitor Service
 
