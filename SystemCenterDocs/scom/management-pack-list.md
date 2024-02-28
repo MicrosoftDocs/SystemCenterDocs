@@ -63,7 +63,7 @@ ms.topic: article
 |[Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1.0|06/08/2012|
 |[Service Bus](https://www.microsoft.com/download/details.aspx?id=41672)|1.0.0.26|09/30/2020|
 |[SharePoint Foundation 2010](https://www.microsoft.com/download/details.aspx?id=13819)|14.0.4745.1000|10/08/2020|
-|[SharePoint Server 2010 (This version is for OpsMgr 2007 R2, see below for Operations Manager 2012 management pack)](https://www.microsoft.com/download/details.aspx?id=4419)|14.0.7137.5000|10/08/2020|
+|[SharePoint Server 2010 (This version is for Operations Manager 2007 R2, see below for Operations Manager 2012 management pack)](https://www.microsoft.com/download/details.aspx?id=4419)|14.0.7137.5000|10/08/2020|
 |[SharePoint Server 2013](https://www.microsoft.com/download/details.aspx?id=35590)|15.0.4557.1000|09/30/2020|
 |[SharePoint Server 2016](https://www.microsoft.com/download/details.aspx?id=52043)|16.0.13125.1000|07/31/2020|
 |[SharePoint Server 2019](https://www.microsoft.com/download/details.aspx?id=57776&WT.mc_id=rss_alldownloads_all)|16.0.11426.3000|11/18/2021|
@@ -157,10 +157,10 @@ ms.topic: article
 |[Windows Server Update Services 2012 R2 (WSUS)](https://www.microsoft.com/download/details.aspx?id=40801)|7.1.10100.0|10/01/2020|
 |[Windows Server Update Services 2016 (WSUS)](https://www.microsoft.com/download/details.aspx?id=54509)|7.1.10128.3|12/09/2016|
 |[ISA Server 2004, 2006 Management Pack](https://www.microsoft.com/download/details.aspx?id=24164)|6.0.5000.00|9/13/2007|
-|[Host Integration Server 2006 for Ops Mgr 2007](https://www.microsoft.com/download/details.aspx?id=16159)|6.0.5000.0|4/30/2008|
+|[Host Integration Server 2006 for  Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=16159)|6.0.5000.0|4/30/2008|
 |[Monitoring Pack for Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1|6/8/2012|
 |[BizTalk Server 2013 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=39617)|7.0.1033.0|7/16/2014|
-|[Application Insights .NET Application Performance Monitoring Management Pack -- Technical Preview](https://www.microsoft.com/download/details.aspx?id=53895)|Preview|9/27/2016|
+|[Application Insights .NET Application Performance Monitoring Management Pack - Technical Preview](https://www.microsoft.com/download/details.aspx?id=53895)|Preview|9/27/2016|
 |[Microsoft System Center 2016 Management Pack for Service Provider Foundation (SPF)](https://www.microsoft.com/download/details.aspx?id=54064)|7.3.81.0|10/13/2016|
 |[BizTalk Server 2016 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=54291)|7.0.2014.0|11/22/2016|
 |[Microsoft System Center 2016 Management Pack for WSUS](https://www.microsoft.com/download/details.aspx?id=54509)|7.1.10128.3|12/9/2016|
@@ -221,12 +221,12 @@ ms.topic: article
 |[Message Queuing 5.0 Management Pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=12962)|6.0.6748.88|10/8/2020|
 |[SharePoint Foundation 2010 management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=13819)|14.0.4745.1000|10/8/2020|
 |[Active Directory Lightweight Directory Services (ADLDS) Management Pack](https://www.microsoft.com/download/details.aspx?id=1451)|6.0.8228.0|10/8/2020|
-|[VSTS 2008 TFS management pack for OpsMgr 2007](8https://www.microsoft.com/download/details.aspx?id=14720)|1.0.0.2|10/8/2020|
+|[VSTS 2008 TFS management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=14720)|1.0.0.2|10/8/2020|
 |[Message Queuing 4.0 Management Pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=1653)|6.0.6700.83|10/8/2020|
 |[FAST Search Server 2010 for SharePoint management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=17998)|14.0.19.1000|10/8/2020|
 |[Forefront Identity Manager 2010 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=19395)|1.0.0.0|10/8/2020|
 |[Windows Storage Server 2008 R2 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=23251)|6.0.6600.0|10/8/2020|
-|[Forefront Protection 2010 for SharePoint management pack for OpsMgr 2007](https://www.microsoft.com/download/details.aspx?id=24233)|11.1.0301.0|10/8/2020|
+|[Forefront Protection 2010 for SharePoint management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=24233)|11.1.0301.0|10/8/2020|
 |[Management Pack for Microsoft Dynamics CRM 2011](https://www.microsoft.com/download/details.aspx?id=26795)|5.0.0.0|10/8/2020|
 |[Management Pack for Microsoft Dynamics AX 2012](https://www.microsoft.com/download/details.aspx?id=26934)|6.3.158.0|10/8/2020|
 |[Management Pack for Windows Server Hyper-V 2012](https://www.microsoft.com/download/details.aspx?id=36438)|6.2.6641.0|10/8/2020|
@@ -238,7 +238,7 @@ ms.topic: article
 |[Microsoft System Center management pack for SQL Server Replication](https://www.microsoft.com/download/details.aspx?id=56204)|7.0.28.0|12/26/2020|
 |[System Center Management Pack for Windows Server Cluster](https://www.microsoft.com/download/details.aspx?id=2268)|10.0.6.6|2/11/2021|
 |[Management Packs for Data Protection Manager Reporting, Discovery and Monitoring](https://www.microsoft.com/download/details.aspx?id=56560)|5.0.1401.2|2/11/2021|
-|[Exchange Server 2010 Monitoring management pack for Ops Mgr 2007](https://www.microsoft.com/download/details.aspx?id=692)|14.3.210.2|4/23/2021|
+|[Exchange Server 2010 Monitoring management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=692)|14.3.210.2|4/23/2021|
 |[System Center Management Pack for Distributed Transaction Coordinator on Windows Server 2012 R2](https://www.microsoft.com/download/details.aspx?id=41560)|7.1.10100.0|5/5/2021|
 |[System Center Management Packs for Open Source Software](https://www.microsoft.com/download/details.aspx?id=46924)|7.7.1129.0|5/25/2021|
 |[Skype for Business Server 2015, Management Pack](https://www.microsoft.com/download/details.aspx?id=47364)|9319.562|6/7/2021|
@@ -263,8 +263,8 @@ ms.topic: article
 |[Microsoft Exchange Server 2013 and above Management Pack](https://www.microsoft.com/download/details.aspx?id=39039)|15.0.669.23|6/22/2022|
 |[Microsoft System Center Management Pack for ADDS](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|6/22/2022|
 |[Storage Spaces Direct Management Pack for Windows Server 2016 and above](https://www.microsoft.com/download/details.aspx?id=100782)|1.0.47.4|7/27/2022|
-[|Microsoft System Center Operations Manager Management Pack for Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=50013)|1.8.0.9|8/18/2022|
-[|Microsoft System Center Management Pack for Azure SQL Dtabase](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.42.0|12/26/2022|
+|[Microsoft System Center Operations Manager Management Pack for Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=50013)|1.8.0.9|8/18/2022|
+|[Microsoft System Center Management Pack for Azure SQL Dtabase](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.42.0|12/26/2022|
 |[Microsoft System Center 2019 and above Management Pack for Orchestrator](https://www.microsoft.com/download/details.aspx?id=56558)|7.5.1.0|2/23/2023|
 |[Microsoft System Center Operations Manager Management Pack for Certificates Monitoring](https://www.microsoft.com/download/details.aspx?id=104858)|2.0.0.1|5/31/2023|
 |[System Center Management Pack for Active Directory Federation Services](https://www.microsoft.com/download/details.aspx?id=54526)|10.0.3.3|8/9/2023|
