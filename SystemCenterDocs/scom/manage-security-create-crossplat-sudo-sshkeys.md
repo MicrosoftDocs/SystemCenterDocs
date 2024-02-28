@@ -75,6 +75,9 @@ You can now access the `scomuser` account by using its password and sudo elevati
 
 ## Create an SSH key for authentication  
 
+> [!TIP]
+> SSH keys are only used for agent maintenance operations and are not used for monitoring, ensure you're creating the key for the correct user if using multiple accounts.
+
 The following procedures create an SSH key for the `scomuser` account that was created in the previous examples.  
 
 ### Generate the SSH key
@@ -104,9 +107,11 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
 
 You can use the `scomuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
 
-> [!NOTE]
-> Verify that you are saving the PuTTYgen Private Key as version 2 instead of version 3. You may change the PPK file version by going to the menu and selecting, **Key** > **Parameters for saving key files...** \
-> PPK file version 2 is currently supported for System Center Operations Manager.
+> [!IMPORTANT]
+> **PPK file version 2 is the only version currently supported for System Center Operations Manager.**
+>
+> By default, PuTTYgen is set to use PPK file version 3. You may change the PPK file version to 2 by going to the toolbar and selecting Key > Parameters for saving key files..., then select the radio button for 2 for PPK file version.
+> :::image type="content" source="media/manage-security-create-crossplat-sudo-sshkeys/puTTYgen-keygen-privatekeyfileparameters.png" alt-text="Screenshot of PuTTY Key Generator showing that where to select the PPK file version for the private key":::
 
 ## Next steps
 
