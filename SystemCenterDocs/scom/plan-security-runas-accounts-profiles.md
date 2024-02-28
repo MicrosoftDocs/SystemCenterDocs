@@ -30,7 +30,7 @@ The following table lists the default Run As accounts that are created by Operat
 |:--- |:--- |:--- |
 |Domain\ManagementServerActionAccount | This is the user account under which all rules run by default on management servers. | Domain account specified as the Management Server Action account during setup. |
 | Local System Action Account | Built-in System account used as an action account. | Windows Local System account |
-| APM Account | Application Performance Monitoring account used to provide keys for encrypting secure information collected from the application during monitoring. | Encrypted binary account |
+| APM Account | Application Performance Monitoring account used to provide keys for encrypting secure information collected from the application during monitoring. This account is automatically created once you create your first .Net Performance Monitor. | Encrypted binary account |
 | Data Warehouse Action Account | Used to authenticate with SQL Server hosting the OperationsManagerDW database. | Domain account specified during setup as the Data Warehouse Write account. |
 | Data Warehouse Report Deployment Account | Used to authenticate between the management server and SQL Server hosting Operations Manager Reporting Services. | Domain account specified during setup as the Data Reader account. |
 | Local System Windows Account | Built-in SYSTEM account used by the agent action account. | Windows Local System account |
