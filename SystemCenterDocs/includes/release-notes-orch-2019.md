@@ -8,7 +8,7 @@ manager: jsuri
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:
-ms.date: 08/04/2020
+ms.date: 02/28/2024
 title:  include file
 ---
 
@@ -19,6 +19,7 @@ The following are known issues in System Center 2019 - Orchestrator.
 - See [KB article #4533414](https://support.microsoft.com/help/4533414) for issues fixed in Orchestrator UR1.
 - See [KB article #4569536](https://support.microsoft.com/help/4569536) for issues fixed in Orchestrator UR2.
 - See [KB article #4599686](https://support.microsoft.com/help/4599686) for issues fixed in Orchestrator UR3.
+- See KB article for issues fixed in Orchestrator UR6.
 
 ### New Web API and Console (without Silverlight)
 
