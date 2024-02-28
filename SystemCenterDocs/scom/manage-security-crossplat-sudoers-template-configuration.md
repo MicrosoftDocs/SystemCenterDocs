@@ -124,7 +124,7 @@ When using the **ExecuteShellCommand** method to run elevated commands, add some
 scomuser ALL=(root) NOPASSWD: /bin/sh -c /usr/bin/vmstat -c
 ```
 
-There should be no quotes around the command as sudo doesn't recognize them, only the shell itself.
+There should be no quotes around the command as only the shell recognizes them, sudo doesn't.
 
 ## Troubleshooting
 
