@@ -28,7 +28,7 @@ The following table lists the default Run As accounts created by Operations Mana
 
 | Name | Description | Credentials |
 |:--- |:--- |:--- |
-|Domain\ManagementServerActionAccount | This account is the user account under which all rules run by default on management servers. | Domain account specified as the Management Server Action account during setup. |
+|Domain\ManagementServerActionAccount | The user account under which all rules run by default on management servers. | Domain account specified as the Management Server Action account during setup. |
 | Local System Action Account | Built-in System account used as an action account. | Windows Local System account |
 | APM Account | Application Performance Monitoring account used to provide keys for encrypting secure information collected from the application during monitoring. This account is automatically created once you create your first .NET Performance Monitor. | Encrypted binary account |
 | Data Warehouse Action Account | Used to authenticate with SQL Server hosting the OperationsManagerDW database. | Domain account specified during setup as the Data Warehouse Write account. |
@@ -39,7 +39,7 @@ The following table lists the default Run As accounts created by Operations Mana
 
 ## Default Run As profiles
 
-The following table lists the Run As profiles that are created by Operations Manager during setup.
+The following table lists the Run As profiles created by Operations Manager during setup.
 
 >[!NOTE]
 > If the Run As account is left blank for a particular profile, the Default Action account (either the Management Server Action account or the Agent Action account depending on the location of the action) is used.
@@ -65,7 +65,7 @@ The following table lists the Run As profiles that are created by Operations Man
 | UNIX/Linux Action Account | THis account is used for low privilege UNIX and Linux access. | None |
 | UNIX/Linux Agent Maintenance Account | This account is used for privileged maintenance operations for UNIX and Linux agents.  Without this account, agent maintenance operations doesn't work. | None |
 | UNIX/Linux Privileged Account | This account is used for accessing protected UNIX and Linux resources and actions that require high privileges.  Without this account, some rules, diagnostics, and recoveries doesn't work. | None |
-| Windows Cluster Action Account | This profile is used for all discovery and monitoring of Windows Cluster components. This profile defaults to used action accounts unless specifically populated by the user. | None |
+| Windows Cluster Action Account | This profile is used for all discovery and monitoring of Windows Cluster components. This profile defaults to used action accounts unless it's populated by the user. | None |
 | WS-Management Action Account | This profile is used for WS-Management access. | None |
 
 ## Understanding distribution and targeting
@@ -74,7 +74,7 @@ Both Run As account distribution and Run As account targeting must be correctly 
 
 When you configure a Run As profile, you select the Run As accounts you want to associate with the Run As profile. After you create that association, you can specify the class, group, or object for which the Run As account is to be used for running tasks, rules, monitors, and discoveries against.
 
-Distribution is an attribute of a Run As account, and you can specify which computers will receive the Run As account credentials. You can choose to distribute the Run As account credentials to every agent-managed computer or only to selected computers.
+Distribution is an attribute of a Run As account, and you can specify which computers receive the Run As account credentials. You can choose to distribute the Run As account credentials to every agent-managed computer or only to selected computers.
 
 Example of Run As account targeting: Physical computer ABC hosts two instances of Microsoft SQL Server: instance X and instance Y. Each instance uses a different set of credentials for the sa account. You create a Run As account with the sa credentials for instance X, and you create a different Run As account with the sa credentials for instance Y. When you configure the SQL Server Run As profile, you associate both Run As account credentials—for example, X and Y—with the profile and specify that the Run As account instance X credentials are to be used for SQL Server instance X and that the Run As account Y credentials are to be used for SQL Server instance Y. Then you must also configure each set of Run As account credentials to be distributed to physical computer ABC.
 
