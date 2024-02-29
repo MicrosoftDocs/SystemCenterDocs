@@ -23,7 +23,7 @@ This article covers new functionality and improvements in Management Pack for Az
 - Improved "Database Status" monitor by adding two additional [database statuses](managed-instance-management-pack-monitoring-configuration.md#database-status-monitoring) for Geo-Replication - COPYING and OFFLINE_SECONDARY
 - Added support for [custom management server resource pools](managed-instance-management-pack-monitoring-pool.md)
 - Added support for [enabling debug logging](managed-instance-management-pack-enable-debugging.md) in Windows Event Log
-- Added new [Operations Manager console task](managed-instance-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from  the Management Server
+- Added new [Operations Manager console task](managed-instance-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Management Server
 - Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression as well as wildcards for include and exclude from the monitoring
 - Added support for manually setting the expiration date for the application client secret in the [Automatic Monitoring Template wizard step](managed-instance-management-pack-automatic-monitoring.md#auto-create-spn)
 - Updated memory and space monitoring workflows to apply four significant digit rounding in all the values
