@@ -20,7 +20,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's new
 
 - Added support for [custom management server resource pools](sql-server-management-pack-sql-server-monitoring-pool.md) for agentless monitoring mode
-- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor for SQL Server on Linux, which targets DB Engine and checks if the server’s TLS certificate is valid
+- Added new ["SQL Connection Encryption Certificate Status"](sql-server-management-pack-monitoring-configuration.md#sql-server-connection-encryption-certificate-monitoring) monitor for SQL Server on Linux, which targets DB Engine and checks if the server’s transport layer security (TLS) certificate is valid
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
   - improved keyboard navigation
@@ -60,7 +60,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's new
 
-- Added support for the SQL Server 2022 RTM
+- Added support for the SQL Server 2022
 - Added [custom monitoring](sql-server-management-pack-custom-monitor.md), which allows the creation of monitors and performance rules
 - Added new "Availability Database Log Backup Status" monitor, which allows to track the alert backups in databases participated in Availability Groups
 - Added new Operations Manager console tasks, which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
@@ -107,7 +107,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Fixed an issue with the failing event rule "The agent is suspect. No response within last minutes" on Windows
 - Fixed an issue with an invalid type of the 'Timeout' override in seconds for several workflows on Windows
 - Fixed an issue with the "Local DB Engine" discovery error handling in cases when the SQL Server instance was deleted, but some namespaces remained in the registry
-- Fixed an issue with the failing 'EventLogReader' module in localized OS
+- Fixed an issue with the failing 'EventLogReader' module in localized operating systems
 
 ## February 2022 - 7.0.36.0 RTM
 
@@ -178,7 +178,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
 - Updated the "Securables Configuration Status" monitor targeted to the DB Engine when a SQL Server instance participates in Availability Groups
 - Removed the "Securables Configuration Status" monitor targeted to the Availability Replica as non-useful
-- Updated the "SQL Server Database Engines" discovery; the "Netbios Computer Name" property is now uppercased.
+- Updated the "SQL Server Database Engines" discovery; the "Netbios Computer Name" property is now uppercased
 - Added reports from version-specific management packs for SQL Server
 - Updated monitor "Job Duration" to add current job run's duration to its alert description
 - Updated Web Console version of SQL MP Dashboards to support System Center Operations Manager 2019 UR1
@@ -195,7 +195,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Fixed the SQL Log Reader data source to support changing of the SQL Authentication method
 - Fixed the Performance Reader data source to support changing of the SQL Authentication method
 - Fixed issue in data source of SPN Status monitor that may lead to memory leak
-- Fixed error "Unsupported path format" in workflows targeting Filegroups
+- Fixed error "Unsupported path format" in workflows targeting filegroups
 - Fixed discovery error on non-readable availability replicas
 - Fixed wrong Run As profile in the SQL Server Integration Services Seed Discovery
 - Fixed issue that caused rule "Disable Discovery of Selected DB Engines" to fail
@@ -208,12 +208,12 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's new
 
-- Updated MP to support SQL Server 2019 RTM
+- Updated MP to support SQL Server 2019
 - Added filter by edition to "Local DB Engine Discovery"
-- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database, which watch for disk space consumption by ROWS Filegroups and Log files
+- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database, which watch for disk space consumption by ROWS filegroups and log files
 - Redesigned DB Space monitoring: Added two monitors and two performance rules targeting Database to watch for disk space consumption by In-Memory and FILESTREAM data
-- Redesigned DB Space monitoring: Read-only Filegroups now count as well
-- Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Log files
+- Redesigned DB Space monitoring: Read-only filegroups now count as well
+- Redesigned DB Space monitoring: Disabled by default all workflows targeting filegroups, files, Log files
 - Redesigned XTP performance counters to make them completely version-agnostic
 - Added attribute "TCP Port" to "SQL DB Engine Class" and updated "DB Engine Discovery" to populate the new property
 - Added summary dashboard for System Center Operations Manager 2019 Web Console (HTML5)
