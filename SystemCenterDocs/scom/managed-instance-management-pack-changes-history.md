@@ -32,7 +32,7 @@ This article covers new functionality and improvements in Management Pack for Az
 ### Bug fixes
 
 - Fixed an issue with the "Database Status" monitor becoming healthy despite the database being in an unhealthy state in some configuration cases
-- Fixed an issue with the client secret expiration date in the Service Principal Name if using Automatic Monitoring Template
+- Fixed an issue with the client secret expiration date if the Auto-Create Service Principal Name option is selected
 
 ## December 2021 - 7.0.34.0 RTM
 
