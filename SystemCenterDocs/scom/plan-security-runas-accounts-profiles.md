@@ -5,7 +5,7 @@ description: This article describes how to use run as accounts and profiles to s
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/25/2023
+ms.date: 02/29/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
