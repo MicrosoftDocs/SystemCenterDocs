@@ -10,6 +10,10 @@
      "redirect_url" : "/system-center/orchestrator/delete-network-adapter-activity-in-system-center-2016"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/manage-mp-installed-during-seutp.md",
+     "redirect_url" : "/system-center/scom/manage-mp-installed-during-setup"
+  },
+  {
      "source_path" : "SystemCenterDocs/orchestrator/delete-vm-disk-activity.md",
      "redirect_url" : "/system-center/orchestrator/delete-vm-disk-activity-in-system-center-2016"
   },

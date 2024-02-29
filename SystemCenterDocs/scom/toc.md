@@ -364,6 +364,8 @@
 ##### [Manual Monitoring Template](managed-instance-management-pack-manual-monitoring.md)
 #### [Create a Service Principal](managed-instance-management-pack-service-principal.md)
 #### [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md)
+#### [Enable Debugging](managed-instance-management-pack-enable-debugging.md)
+#### [Export Event Log Task](managed-instance-management-pack-export-event-log-task.md)
 ### [Security Configuration](managed-instance-management-pack-security-configuration.md)
 ### [Views and Dashboards in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-views-and-dashboards.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-known-issues-and-troubleshooting.md)

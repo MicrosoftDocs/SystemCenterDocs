@@ -1,36 +1,35 @@
 ---
-ms.assetid: b6aec30b-3bd1-4e4e-a664-23faee39953a
-title: Enabling debugging in Management Pack for SQL Server
-description: This article explains how to enable debugging in Management Pack for SQL Server
+title: Enabling debugging in Management Pack for Azure SQL Managed Instance
+description: This article explains how to enable debugging in Management Pack for Azure SQL Managed Instance
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 02/27/2024
+ms.date: 02/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Debugging in SQL Server Management Pack 
+# Debugging in Azure SQL Managed Instance Management Pack 
 
-In Management Pack for SQL Server, you can enable debugging in the Windows Event log in cases where you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
+In Management Pack for Azure SQL Managed Instance, you can enable debugging in the Windows Event log in cases where you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
 
-## Enabling Debugging
+## Enabling debugging
 
-To enable debugging, do the following:
+To enable debugging, follow these steps on the computer running System Center Operations Manager or another server that collects Azure SQL Managed Instance events:
 
 1. Open the Windows registry.
 
 2. Create the following key:
-`HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP`
+`HKLM\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\Azure SQL MI MP`
 
-3. Create a Multi-String with the name `<MG Name>` that corresponds to the management group name for which you want to collect logs. Leave **Value data** empty to enable Debug logging for all SQL MP modules in the Operations Manager Event Log.
+3. Create a Multi-String with the name `<Management Group Name>` that corresponds to the management group name for which you want to collect logs. Fill the **Value** field with the value "1" to enable module debugging.
 
 Or use the following PowerShell script to enable debugging in automated mode:
 
 ```PowerShell
 $SCOMRoot = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\'
-$MPDebugKey = Join-Path -Path $SCOMRoot -ChildPath 'SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP'
+$MPDebugKey = Join-Path -Path $SCOMRoot -ChildPath 'SQL Management Packs\EnableEvtLogDebugOutput\Azure SQL MI MP'
 $AgRoot = Join-Path -Path $SCOMRoot -ChildPath 'Agent Management Groups'
 $SrvRoot = Join-Path -Path $SCOMRoot -ChildPath 'Server Management Groups'
 $searchPath = if (Test-Path $AgRoot) { $AgRoot } else { $SrvRoot }
@@ -57,7 +56,7 @@ The same should be done for each Operations Manager or Monitoring Agent where ex
 To disable debugging, delete the keys added above or use the following PowerShell script to disable debugging in automated mode:
 
 ```PowerShell
-$MPDebugKey = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP'
+$MPDebugKey = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\Azure SQL MI MP'
 
 if (-not(Test-Path $MPDebugKey)) {
     Write-Error 'The Microsoft Operations Manager or Monitoring Agent is not installed.' -ErrorAction Stop
