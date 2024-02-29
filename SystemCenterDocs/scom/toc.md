@@ -367,6 +367,8 @@
 #### [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md)
 ### [Security Configuration](managed-instance-management-pack-security-configuration.md)
 ### [Views and Dashboards in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-views-and-dashboards.md)
+### [Enable Debugging](managed-instance-management-pack-enable-debugging.md)
+### [Export Event Log Task](managed-instance-management-pack-export-event-log-task.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-known-issues-and-troubleshooting.md)
 ## Management Pack for SQL Server Replication
 ### [Features and Enhancements in Management Pack for SQL Server Replication](sql-replication-management-pack-changes-history.md)
