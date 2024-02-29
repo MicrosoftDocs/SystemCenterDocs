@@ -457,7 +457,7 @@ This section explains how to use DPM to restore VMware VM [recovery points](/pre
 
 ### Restore an individual file from a VM
 
-::: moniker range="<=sc-dpm-1807"
+::: moniker range="<=sc-dpm-2019"
 
 >[!NOTE]
 > Restore of an individual file from a VM backup is possible only from the disk recovery points.
@@ -484,43 +484,6 @@ You can restore individual files from a protected VM recovery point. This featur
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
-
-::: moniker-end
-
-::: moniker range="sc-dpm-2019"
-
->[!NOTE]
-> Restore of an individual file from a VM backup is possible only for Windows VMs from the disk and online recovery points.
-
-With DPM 2019 UR6 and later, you can restore an individual file from a VMware VM from both disk and online recovery points. The VM should be a Windows Server VM.
-
-Additionally, for item-level recovery from an online recovery point, ensure that automatic mounting of volumes is enabled. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
-
-You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
-
-1. In the DPM Administrator Console, select the **Recovery** view.
-2. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
-    ![Screenshot of open Recovery points.](./media/back-up-vmware/vmware-recovery-point-disk.png)
-3. In the **Recovery Points for:** pane, use the calendar to select the date that contains the desired recovery point(s).
-    Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, ensure that you've chosen the correct Recovery time. If the selected date has multiple recovery points, choose your recovery point by selecting it in the **Recovery time** dropdown menu. Once you chose the recovery point, the list of recoverable items appears in the **Path:** pane.
-4. To find the files you want to recover, in the **Path** pane, double-click the item in the **Recoverable item** column to open it. If you use an online recovery point, wait until the recovery point is mounted. Once the mount is complete, select the VM, disk, and the volume you want to restore until the files and folders are listed. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item.
-    Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** doesn't search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You can't recover items from multiple folders in the same recovery job.
-5. When you've selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**.
-    In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
-
-     ![Screenshot of review Recovery points.](./media/back-up-vmware/review-recovery-point-selection.png)
-6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, select **Modify**. To leave network throttling disabled, select **Next**. No other options on this wizard screen are available for VMware VMs.
-    If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
-7. On the **Select Recovery Type** screen, select **Next**. You can only recover your file(s) or folder(s) to a network folder.
-8. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
-
-    ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
-9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
-10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
-    The **Recovery status screen shows the progression of the recovery operation**.
-
->[!TIP]
->You can perform item-level restore of online recovery points for VMware VMs running Windows also from Add external DPM Server to recover VM files and folders quickly.
 
 ::: moniker-end
 

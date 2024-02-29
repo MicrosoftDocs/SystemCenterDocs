@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/26/2024
+ms.date: 02/29/2024
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: article
@@ -491,36 +491,9 @@ Currently there are no known issues in DPM 2019 UR5.
 
 ## DPM 2019 UR6 release notes
 
-The following sections detail the known issues and workarounds for DPM 2019 UR6.
+No known issues in Data Protection Manager 2019 UR6.
 
-For issues fixed in DPM 2019 UR6, see the KB article.
-
-### DPM self-service recoveries doesn't list any recovery points for client machines
-
-**Description**: DPM client machine backups aren't listed for domain users in the local administrators’ group for self-service recoveries.
-
-**Workaround**: Upgrade to DPM 2019 UR6 to fix this issue and add non-administrative users manually via Authorization Manager.
-
-### DPM can’t enumerate SQL databases for protection 
-
-**Description**: DPM can’t enumerate SQL databases for protection when MSOLEDB 18 is missing on the protected server since DPM requires MSOLEDB18 to enumerate databases for protection.  
-
-**Workaround**: Install SQL [MSOLEDB 18](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16&viewFallbackFrom=sql-server-2016%22%20%5Cl%20%221867&preserve-view=true) driver if it is missing on the protected server. SQL Server 2022 ships with MSOLEDB 18 by default.  
-
-### Stop protection with delete online data fails from remote management console
-
-**Description**: The stop protection with delete online data operation fails from the remote management console when enhanced Hybrid security option is enabled on the vault.  
-
-**Workaround**: To prevent this, perform stop protection with delete online data directly from the DPM console.  
-
-### Stopping protection of a data source from fails with ID: 33469
-
-**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
-
-This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
-
-**Workaround**: Install Update Rollup 6 for System Center DPM 2019.
-
+For the issues fixed in UR6 and the installation instructions for UR6, see the KB article.
 
 ::: moniker-end
 
