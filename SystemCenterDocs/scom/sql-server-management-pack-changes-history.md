@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/25/2024
+ms.date: 2/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -62,7 +62,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 - Added support for the SQL Server 2022 RTM
 - Added [custom monitoring](sql-server-management-pack-custom-monitor.md), which allows the creation of monitors and performance rules
-- Added a new "Availability Database Log Backup Status" monitor, which allows to track the alert backups in databases participated in Availability Groups
+- Added new "Availability Database Log Backup Status" monitor, which allows to track the alert backups in databases participated in Availability Groups
 - Added new Operations Manager console tasks, which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
 - Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold', which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed', which could track the canceled job's last run status as a Failed
 - Added new Agent "Job Duration" performance collection rule, which collects the duration of the SQL Server Agent job in minutes, for Windows and Linux platforms
