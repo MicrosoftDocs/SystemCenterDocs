@@ -1,7 +1,7 @@
 ---
 ms.assetid: 500910b3-e260-4673-b219-8dc24bc4f916
 title: Features and enhancements in Management Pack for Azure SQL Managed Instance
-description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Managed Instance
+description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Managed Instance.
 author: epomortseva
 ms.author: v-ekaterinap
 manager: vvithal
@@ -20,26 +20,26 @@ This article covers new functionality and improvements in Management Pack for Az
 ### What's new
 
 - Updated API with Microsoft Authentication Library (MSAL) in place of deprecated Azure Active Directory Authentication Library (ADAL)
-- Improved "Database Status" monitor by adding two additional [database statuses](managed-instance-management-pack-monitoring-configuration.md#database-status-monitoring) for Geo-Replication - COPYING and OFFLINE_SECONDARY
+- Improved "Database Status" monitor by adding two more [database statuses](managed-instance-management-pack-monitoring-configuration.md#database-status-monitoring) for Geo-Replication - COPYING and OFFLINE_SECONDARY
 - Added support for [custom management server resource pools](managed-instance-management-pack-monitoring-pool.md)
 - Added support for [enabling debug logging](managed-instance-management-pack-enable-debugging.md) in Windows Event Log
 - Added new [Operations Manager console task](managed-instance-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Management Server
-- Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression as well as wildcards for include and exclude from the monitoring
+- Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression and wildcards for include and exclude from the monitoring
 - Added support for manually setting the expiration date for the application client secret in the [Automatic Monitoring Template wizard step](managed-instance-management-pack-automatic-monitoring.md#auto-create-spn)
-- Updated memory and space monitoring workflows to apply four significant digit rounding in all the values
+- Updated memory and space monitoring workflows to apply four significant digit roundings in all the values
 - Updated display strings
 
 ### Bug fixes
 
 - Fixed an issue with the "Database Status" monitor becoming healthy despite the database being in an unhealthy state in some configuration cases
-- Fixed an issue with the client secret expiration date in the Service Principal Name in case of using Automatic Monitoring Template; now the user can manually set the expiration date for the application client secret
+- Fixed an issue with the client secret expiration date in the Service Principal Name if using Automatic Monitoring Template
 
 ## December 2021 - 7.0.34.0 RTM
 
 ### What's new
 
 - Improved the "CPU Utilization" monitor and the associated performance rule. Now they show the same data as on the Azure portal
-- Updated the SPN creation process related to the [latest changes in Azure API](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains)
+- Updated the Service Principal Name creation process related to the [latest changes in Azure API](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains)
 - Updated display strings
 
 ### Bug fixes
@@ -50,9 +50,9 @@ This article covers new functionality and improvements in Management Pack for Az
 
 ### What's new
 
-- Updated monitor “Securables Configuration Status”
-- Updated monitor “Job Duration” to add current job run's duration to its alert description
-- Updated UI of wizard “Automatic Discovery”
+- Updated monitor "Securables Configuration Status"
+- Updated monitor "Job Duration" to add current job run's duration to its alert description
+- Updated UI of wizard "Automatic Discovery"
 - Updated alerting rules to avoid gathering SQL Log events that happened during the maintenance mode
 - Updated dashboards
 - Updated display strings
@@ -65,12 +65,12 @@ This article covers new functionality and improvements in Management Pack for Az
 
 ### What's new
 
-- Management pack was completely redone being based on up-to-date SQL Server MP codebase
+- Management pack was redone being based on up-to-date SQL Server MP codebase
 
 ## September 2019 - 1.0.1.0 CTP
 
 ### What's new
 
-- Disabled “XTP Configuration Monitor”
-- Disabled “Database Backup Status Monitor”
-- Rebuild management pack and verify against the current version of Azure SQL Managed Instance Provided a few minor UI improvements to the Add Monitoring Wizard
+- Disabled "XTP Configuration Monitor"
+- Disabled "Database Backup Status Monitor"
+- Rebuild management pack and verify against the current version of Azure SQL Managed Instance Provided a few minor UI improvements to the Monitoring Wizard
