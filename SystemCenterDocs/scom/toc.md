@@ -242,6 +242,7 @@
 #### [Accessing UNIX and Linux computers](manage-security-authenticate-crossplat.md)
 #### [How to set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)
 #### [How to configure sudo elevation and SSH keys](manage-security-create-crossplat-sudo-sshkeys.md)
+#### [Sudoers templates for elevation in UNIX/Linux monitoring](manage-security-unix-linux-sudoers-templates.md)
 #### [Configure Kerberos authentication for Linux computers](manage-linux-kerberos-auth.md)
 #### [Required capabilities for UNIX and Linux computers](manage-security-crossplat-capabilities.md)
 #### [Configuring SSL ciphers](manage-security-crossplat-config-sslcipher.md)
