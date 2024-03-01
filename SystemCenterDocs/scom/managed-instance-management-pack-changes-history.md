@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: vvithal
-ms.date: 02/29/2024
+ms.date: 03/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -27,6 +27,11 @@ This article covers new functionality and improvements in Management Pack for Az
 - Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression and wildcards for include and exclude from the monitoring
 - Added support for manually setting the expiration date for the application client secret in the [Automatic Monitoring Template wizard step](managed-instance-management-pack-automatic-monitoring.md#auto-create-spn)
 - Updated memory and space monitoring workflows to apply four significant digit roundings in all the values
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - improved keyboard navigation
+  - improved color contrast in dashboards for better legibility
+  - reworked high contrast theme for dashboards
+  - added support for screen-reading software
 - Updated display strings
 
 ### Bug fixes
