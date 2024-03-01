@@ -1,11 +1,12 @@
 ---
 ms.assetid: 
-title: Sudoers templates for elevation in UNIX/Linux monitoring
+title: Sudoers Templates for Elevation in UNIX/Linux Monitoring
+titlesuffix: System Center Operations Manager
 description: This article provides sudoers file templates for monitoring Unix and Linux operating systems with Microsoft System Center Operations Manager.
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 02/27/2024
+ms.date: 03/01/2024
 ms.topic: reference
 ms.service: system-center
 ms.subservice: operations-manager
@@ -111,7 +112,7 @@ Universal Linux encompasses both Debian and Red Hat based operating systems and 
 
 [!INCLUDE [sudoers-universallinux.md](includes/sudoers-universallinux.md)]
 
-## Other Commands
+## Other commands
 
 When using the **ExecuteShellScript** method to run elevated scripts, add the following line your sudoers file for your user:
 

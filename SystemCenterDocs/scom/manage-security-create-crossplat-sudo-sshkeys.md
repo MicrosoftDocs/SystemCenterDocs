@@ -40,7 +40,7 @@ To obtain and configure the SSH key from the UNIX and Linux computer, you need t
 > [!NOTE]
 > The information provided in this section walks through configuring an example user, `scomuser`, and grants it full rights on the client computer.
 >
-> If you already have user accounts and/or want to setup **Low Privilege** monitoring, sudoers templates are available and grant only the permissions needed for successful monitoring and maintenance operations. For more information, see: [Sudoers templates for elevation in UNIX/Linux monitoring](manage-security-crossplat-sudoers-template-configuration.md)
+> If you already have user accounts and/or want to setup **Low Privilege** monitoring, sudoers templates are available and grant only the permissions needed for successful monitoring and maintenance operations. For more information, see: [Sudoers templates for elevation in UNIX/Linux monitoring](manage-security-unix-linux-sudoers-templates.md)
 
 The following procedures create an account and sudo elevation by using `scomuser` for a user name.  
 
@@ -114,7 +114,7 @@ You can use the `scomuser` account by using the SSH key and sudo elevation for s
 >
 > By default, PuTTYgen is set to use PPK file version 3. You may change the PPK file version to 2 by going to the toolbar and selecting Key > Parameters for saving key files..., then select the radio button for 2 for PPK file version.
 >
-> :::image type="content" source="media/manage-security-create-crossplat-sudo-sshkeys/puTTYgen-keygen-privatekeyfileparameters.png" alt-text="Screenshot of PuTTY Key Generator showing that where to select the PPK file version for the private key":::
+> :::image type="content" source="media/manage-security-create-crossplat-sudo-sshkeys/puttygen-key-generator-private-key-file-parameters.png" alt-text="Screenshot of PuTTY Key Generator showing that where to select the PPK file version for the private key.":::
 
 ## Next steps
 
