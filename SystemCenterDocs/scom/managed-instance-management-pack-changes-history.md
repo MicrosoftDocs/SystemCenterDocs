@@ -49,7 +49,7 @@ This article covers new functionality and improvements in Management Pack for Az
 
 ### Bug fixes
 
-- Fixed an issue with creating SPN with unnecessary API permissions for the Azure AD application
+- Fixed an issue with creating Service Principal Name with unnecessary API permissions for the Azure AD application
 
 ## July 2020 - 7.0.22.0 RTM
 
