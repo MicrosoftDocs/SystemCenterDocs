@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Sudoers Templates for Elevation in UNIX/Linux Monitoring
-titlesuffix: System Center Operations Manager
+titlesuffix: Microsoft System Center Operations Manager
 description: This article provides sudoers file templates for monitoring Unix and Linux operating systems with Microsoft System Center Operations Manager.
 author: sepaugh
 ms.author: lornesepaugh

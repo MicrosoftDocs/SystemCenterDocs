@@ -1,6 +1,7 @@
 ---
 ms.assetid: 68d9b467-12db-4fec-af94-9f9fa15c5f86
 title: How to Configure sudo Elevation and SSH Keys
+titlesuffix: Microsoft System Center Operations Manager
 description: This article describes how to configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
