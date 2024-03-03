@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/24/2020
+ms.date: 03/02/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -24,18 +24,20 @@ This section describes how to configure your firewall to allow communication bet
 
 > [!NOTE]
 > Operations Manager does not support LDAP over SSL (LDAPS) at this time.
+
 ## Port assignments
+
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
 
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
-|Management server|1433/TCP&nbsp;--->&nbsp;<br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->|Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For more information, see [Special considerations for Port 135](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br>Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>[2](#footnote2)</sup>|
-|Management server|5723,&nbsp;5724&nbsp;--->|Management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
-|Management server, Gateway Server|53 (DNS)&nbsp;---><br>88 (Kerberos)&nbsp;---><br>389 (LDAP)&nbsp;--->|Domain Controllers|No|Ports 88 is used for Kerberos authentication, not required if only using certificate authentication.<sup>[3](#footnote3)</sup> |
+|Management server|1433/TCP&nbsp;--->&nbsp;<br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->|Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024. For more information, see [Special considerations for Port 135](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br><br>Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>[2](#footnote2)</sup>|
+|Management server|5723,&nbsp;5724&nbsp;--->|Management server|No|Port 5724 must be open to install this feature and can be closed after installation.|
+|Management server, Gateway Server|53 (DNS)&nbsp;---><br>88 (Kerberos)&nbsp;---><br>389 (LDAP)&nbsp;--->|Domain Controllers|No|Port 88 is used for Kerberos authentication, and isn't required if only using certificate authentication.<sup>[3](#footnote3)</sup> |
 |Management server|161,162&nbsp;<--->|Network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
 |Gateway server|5723&nbsp;--->|Management server|No||
 |Management server|1433/TCP&nbsp;---><br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->|Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>[2](#footnote2)</sup>|
-|Reporting server|5723,&nbsp;5724&nbsp;--->|Management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
+|Reporting server|5723,&nbsp;5724&nbsp;--->|Management server|No|Port 5724 must be open to install this feature and can be closed after installation.|
 |Operations console|5724&nbsp;--->|Management server|No||
 |Operations console|80,&nbsp;443&nbsp;---><br>49152-65535&nbsp;TCP&nbsp;<--->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>[1](#footnote1)</sup>|
 |Connector framework source|51905&nbsp;--->|Management server|No||
@@ -58,33 +60,36 @@ The following table shows Operations Manager feature interaction across a firewa
 |Reporting server|1433/TCP&nbsp;---><br>1434/UDP&nbsp;--->|Reporting data warehouse|Yes <sup>[2](#footnote2)</sup>||
 |Management server (Audit Collection Services collector)|1433/TCP&nbsp;<---<br>1434/UDP&nbsp;<---|Audit Collection Services database|Yes <sup>[2](#footnote2)</sup>||
 
-#### <a name="footnote1"></a> Management Pack Catalog Web Service <sup>1</sup>
-- To access the Management Pack Catalog web service, your firewall must allow the following URL and wildcard (*):
-  1. [https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx](https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx)
-  2. `http://go.microsoft.com/fwlink/*`
+### <a name="footnote1"></a> Management Pack Catalog web service <sup>1</sup>
 
-#### <a name="footnote2"></a> Identify SQL Port <sup>2</sup>
- - If SQL Server is installed with the default port, the port number is 1433. If not the default port, it may be dynamic or non-default. To identify the port, follow these steps:
-   1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for \<instance name\>, and then double-click **TCP/IP**.
-   2. In the **TCP/IP Properties** dialog, on the **IP Addresses** tab, note the port value for **IPAall**.  
+To access the Management Pack Catalog web service, your firewall and/or proxy server must allow the following URL and wildcard (*):
 
- - If you plan on deploying the Operations Manager databases on a SQL Server configured with an Always On Availability Group or migrate after installation, do the following to identify the port:
-  
-   1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Select the server name to expand the server tree.
-   2. Expand the **Always On High Availability** node and the **Availability Groups** node.
-   3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
-   4. Right-click the listener that you want to view, and select the **Properties** command. \
-      This opens the **Availability Group Listener Properties** dialog. 
+- `https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx`
+- `http://go.microsoft.com/fwlink/*`
 
-#### <a name="footnote3"></a>Kerberos Authentication <sup>3</sup>
-For Windows clients who are not using certificate-based authentication and reside in a different domain from where the management servers are located, there are additional requirements that that must be met:
+### <a name="footnote2"></a> Identify SQL port <sup>2</sup>
+
+- The default SQL port is 1433, however this port number can be customized based on organizational requirements. To identify the configured port, follow these steps:
+    1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for \<instance name\>, and then double-click **TCP/IP**.
+    2. In the **TCP/IP Properties** dialog, on the **IP Addresses** tab, note the port value for **IPAall**.  
+
+- If using a SQL Server configured with an Always On Availability Group or after migrating an installation, do the following to identify the port:  
+    1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Select the server name to expand the server tree.
+    2. Expand the **Always On High Availability** node and the **Availability Groups** node.
+    3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
+    4. Right-click the listener that you want to view, and select the **Properties** command, opening the **Availability Group Listener Properties** dialog window, where the configured port should be available.
+
+### <a name="footnote3"></a>Kerberos authentication <sup>3</sup>
+
+For Windows clients using Kerberos authentication, and reside in a different domain from where the management servers are located, there are extra requirements that that must be met:
 
 1. A [two-way transitive trust](/entra/identity/domain-services/concepts-forest-trust) must be established between domains.
-1. These ports must be open between the domains:
-   1. TCP and UDP port 389 for LDAP
-   1. TCP and UDP port 88 for Kerberos authentication
-   1. TCP and UDP port 53 for Domain Name Service (DNS)
-      
-For more information about Kerberos Authentication, check here: [Kerberos Authentication Overview](/windows-server/security/kerberos/kerberos-authentication-overview)
+1. The following ports must be open between the domains:
+   1. TCP/UDP port 389 for LDAP.
+   1. TCP/UDP port 88 for Kerberos.
+   1. TCP/UDP port 53 for Domain Name Service (DNS).
 
-For more agent communication troubleshooting tips, check here: [Troubleshoot agent connectivity issues in Operations Manager](/troubleshoot/system-center/scom/troubleshoot-agent-connectivity-issues)
+## See also
+
+- [Kerberos authentication troubleshooting guidance](/troubleshoot/windows-server/windows-security/kerberos-authentication-troubleshooting-guidance)
+- [Troubleshoot agent connectivity issues in Operations Manager](/troubleshoot/system-center/scom/troubleshoot-agent-connectivity-issues)
