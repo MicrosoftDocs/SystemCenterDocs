@@ -1,8 +1,8 @@
 ---
 title: Start VM
 description: The Start VM activity is used to start a virtual machine that has been paused, shut down, or stopped.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 03/04/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
