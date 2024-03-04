@@ -491,9 +491,15 @@ Currently there are no known issues in DPM 2019 UR5.
 
 ## DPM 2019 UR6 release notes
 
-No known issues in Data Protection Manager 2019 UR6.
+The following section provides details of the known issue in DPM 2019 UR6 and the workaround.
 
 For the issues fixed in UR6 and the installation instructions for UR6, see the KB article.
+
+### Subsequent online recovery points creation fails
+
+**Description**: Subsequent online recovery points creation fails after the back up of data sources through databox when MARS agent version is greater than 9251.
+
+**Workaround**: None, reach out to the support for assistance.
 
 ::: moniker-end
 
