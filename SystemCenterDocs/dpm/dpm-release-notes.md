@@ -499,7 +499,7 @@ For the issues fixed in UR6 and the installation instructions for UR6, see the K
 
 **Description**: Subsequent online recovery points creation fails after the back up of data sources through databox when MARS agent version is greater than 9251.
 
-**Workaround**: None, reach out to the support for assistance.
+**Workaround**: None. Contact Microsoft support for assistance.
 
 ::: moniker-end
 
