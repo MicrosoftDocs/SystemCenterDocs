@@ -52,6 +52,8 @@ Select this option if you want your Azure Service Principal Name to be created a
 
 Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
 
+Select an expiration date for the new application client secret.
+
 ![Screenshot showing the Automatic Configuring SPN.](./media/managed-instance-management-pack/spn-configuration.png)
 
 If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
