@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: JYOTHIRMAISURI
   ms.author: apexprodleads
-  ms.date: 11/10/2021
+  ms.date: 3/5/2024
   ms.service: system-center
   ms.custom: intro-landing-hub
 conceptualContent:
@@ -165,9 +165,7 @@ additionalContent:
         - title: System Center
           links:
             - text: Get a free trial
-              url: https://www.microsoft.com/evalcenter/evaluate-system-center-2019
-            - text: Watch System Center in Action
-              url: https://channel9.msdn.com/Blogs/hybrid-it-management
+              url: https://www.microsoft.com/evalcenter/evaluate-system-center-2022
             - text: Manage Windows 10 through co-management
               url: /training/modules/manage-windows-10-through-co-management-by-using-system-center-configuration-manager/
             - text: Blog
