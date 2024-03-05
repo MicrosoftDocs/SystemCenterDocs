@@ -1,7 +1,7 @@
 ---
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
-description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance
+description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance.
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
@@ -52,7 +52,7 @@ Select this option if you want your Azure Service Principal Name to be created a
 
 Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
 
-Select an expiration date for the new application client secret.
+Select an expiration date for the new application client secret based on your corporate policy, then select **Next**.
 
 ![Screenshot showing the Automatic Configuring SPN.](./media/managed-instance-management-pack/spn-configuration.png)
 
