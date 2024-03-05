@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -51,6 +51,8 @@ At this step, select the configuration option that corresponds to authentication
 Select this option if you want your Azure Service Principal Name to be created automatically by the Azure SQL MI MP library using the Azure REST API.
 
 Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
+
+Select an expiration date for the new application client secret.
 
 ![Screenshot showing the Automatic Configuring SPN.](./media/managed-instance-management-pack/spn-configuration.png)
 
