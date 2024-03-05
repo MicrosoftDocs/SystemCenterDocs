@@ -497,7 +497,7 @@ For the issues fixed in UR6 and the installation instructions for UR6, see the K
 
 ### Subsequent online recovery points creation fails
 
-**Description**: Subsequent online recovery points creation fails after the back up of data sources through databox when MARS agent version is greater than 9251.
+**Description**: Subsequent online recovery points creation fails after the first online recovery point is successfully created for data sources backed up through Databox only, when the MARS agent version is greater than 9251.
 
 **Workaround**: None. Contact Microsoft support for assistance.
 
