@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
