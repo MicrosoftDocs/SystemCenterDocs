@@ -48,6 +48,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10185.0|[5005527](https://support.microsoft.com/kb/5005527) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 |10.19.10200.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
 |10.19.10211.0|[5025123](https://support.microsoft.com/kb/5025123) |April 2023 |Update Rollup 5 |
+| - | 5035285 |March 2024|Update Rollup 6|
 
 ### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
@@ -64,5 +65,6 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.1214.0|[v1.7.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.0-0) |March 2023 |1.7.0-0 |Update Rollup 4 - OpenSSL 3.0 |
 |10.19.1226.0|[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0) |August 2023 |1.7.1-0 |Update Rollup 5 - Hotfix |
 |10.19.1234.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |OMI Vulnerability Fix |
+| - | 5035285 |March 2024|-|Update Rollup 6|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
