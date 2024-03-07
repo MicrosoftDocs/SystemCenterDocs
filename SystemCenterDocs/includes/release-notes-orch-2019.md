@@ -16,7 +16,7 @@ title:  include file
 
 The following sections summarize the release notes for Orchestrator 2019 UR6, and include the known issues and workarounds.
 
-For the problems fixed in UR2 and the installation instructions for UR6, see the KB article.
+For the problems fixed in UR6 and the installation instructions for UR6, see the KB article.
 
 ### New Web console doesn't take zero (0) as the input parameter
 
