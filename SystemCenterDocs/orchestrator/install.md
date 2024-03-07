@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
+ms.date: 03/07/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -34,7 +34,7 @@ A complete Orchestrator installation includes:
 
 It's possible to install all these roles and components on a single computer, but it's more common to distribute the roles across several computers or virtual machines.
 
-For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](/system-center/orchestrator/learn-about-orchestrator).
+For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](./learn-about-orchestrator.md).
 
 This article provides detailed installation instructions for the various Orchestrator roles.
 

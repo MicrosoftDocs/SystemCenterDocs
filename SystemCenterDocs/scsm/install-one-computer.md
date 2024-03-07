@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/16/2023
+ms.date: 03/07/2024
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -119,7 +119,7 @@ For more information about the permissions that these accounts require, see **Ac
 10. On the **Configure the reporting server for the data warehouse** page, Service Manager will use the existing computer if SQL Server Reporting Services \(SSRS\) is present. Accept the defaults, and select **Next**.  
 
     > [!NOTE] 
-    > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](/system-center/scsm/config-remote-ssrs). 
+    > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](./config-remote-ssrs.md).
     > - The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented can't be resolved in your environment, configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information, see [How to: Configure a URL \(Reporting Services Configuration\)](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
 
 11. On the **Configure the account for Service Manager services** page, select a domain account; select **Domain account**; specify the user name, password, and domain for the account; and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**.  

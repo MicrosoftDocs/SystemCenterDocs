@@ -8,22 +8,22 @@
     items:
     - name: DPM
       tocHref: /system-center/dpm/
-      topicHref: /system-center/dpm/dpm-overview
+      topicHref: ../dpm/dpm-overview.md
     - name: SCOM
       tocHref: /system-center/scom/
-      topicHref: /system-center/scom/welcome
+      topicHref: ../scom/welcome.md
     - name: Orchestrator 
       tocHref: /system-center/orchestrator/
-      topicHref: /system-center/orchestrator/learn-about-orchestrator
+      topicHref: ../orchestrator/learn-about-orchestrator.md
     - name: SCSM
       tocHref: /system-center/scsm/
-      topicHref: /system-center/scsm/service-manager
+      topicHref: ../scsm/service-manager.md
     - name: SMA
       tocHref: /system-center/sma/
-      topicHref: /system-center/sma/service-management-automation
+      topicHref: ../sma/service-management-automation.md
     - name: SPF
       tocHref: /system-center/spf/
-      topicHref: /system-center/spf/overview
+      topicHref: ../spf/overview.md
     - name: VMM
       tocHref: /system-center/vmm/
       topicHref: /system-center/vmm/
@@ -33,4 +33,4 @@
   items:
     - name: SCOM
       tocHref: /troubleshoot/system-center/scom/
-      topicHref: /system-center/scom/welcome
+      topicHref: ../scom/welcome.md
