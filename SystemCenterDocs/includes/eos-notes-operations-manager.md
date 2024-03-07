@@ -12,4 +12,4 @@ ms.subservice: operations-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Operations Manager has reached the end of support. We recommend you to [upgrade to Operations Manager 2022](/SystemCenterDocs/scom/deploy-upgrade-overview.md).
+> This version of Operations Manager has reached the end of support. We recommend you to [upgrade to Operations Manager 2022](../scom//deploy-upgrade-overview.md).
