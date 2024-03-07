@@ -4,7 +4,7 @@
   items:
   - name: System Center
     tocHref: /system-center/
-    topicHref: /system-center/
+    topicHref: ../SystemCenterDocs/
     items:
     - name: DPM
       tocHref: /system-center/dpm/
@@ -26,10 +26,10 @@
       topicHref: ../spf/overview.md
     - name: VMM
       tocHref: /system-center/vmm/
-      topicHref: /system-center/vmm/
+      topicHref: ../vmm/
 - name: System Center
   tocHref: /troubleshoot/
-  topicHref: /system-center/
+  topicHref: ../SystemCenterDocs/
   items:
     - name: SCOM
       tocHref: /troubleshoot/system-center/scom/
