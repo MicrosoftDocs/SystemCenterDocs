@@ -37,7 +37,7 @@ Most of the operations to manage Azure Stack clusters in VMM are similar to mana
 >[!NOTE]
 > Management of Azure Stack HCI stretched clusters is currently not supported in VMM.
 
-See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deploy-manage-azure-stack-hci).
+See [Deploy and manage Azure Stack HCI clusters in VMM](../vmm/deploy-manage-azure-stack-hci.md).
 
 ### Register and unregister Azure Stack HCI cluster using PowerShell cmdlets
 
@@ -51,7 +51,7 @@ In VMM 2019 UR2, we introduced support for Ipv6 based SDN deployment. VMM 2022 s
 
 To enable Ipv6 for SDN deployment, do the required changes in the network controller, gateway, and SLB setup.   
 
-For more information about these updates, see [Network controller](/system-center/vmm/sdn-controller), [Gateway](/system-center/vmm/sdn-gateway), [SLB](/system-center/vmm/sdn-slb), and [Set up NAT](/system-center/vmm/sdn-set-up-nat).
+For more information about these updates, see [Network controller](../vmm/sdn-controller.md), [Gateway](../vmm/sdn-gateway.md), [SLB](../vmm/sdn-slb.md), and [Set up NAT](../vmm/sdn-set-up-nat.md).
 
 
 ## New features in VMM 2022 UR1
@@ -68,7 +68,7 @@ Azure Stack HCI, version 22H2 is the newly introduced hyper-converged infrastruc
 
 Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters. 
 
-See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deploy-manage-azure-stack-hci).
+See [Deploy and manage Azure Stack HCI clusters in VMM](../vmm/deploy-manage-azure-stack-hci.md).
 
 ### Support for VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0
 

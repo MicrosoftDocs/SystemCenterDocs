@@ -5,7 +5,7 @@ description: This article explains run as profiles in Management Pack for SQL Se
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/03/2024
+ms.date: 03/07/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -42,7 +42,7 @@ Management Pack for SQL Server provides the following Run As profiles:
 > [!NOTE]
 > Don't bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, don't use a Windows account or non-basic account with this profile.
 
-When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile. If the default action account for a given system doesn't have the necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles, [group Managed Service Accounts (gMSAs)](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview) are also [supported](/system-center/scom/support-group-managed-service-accounts).
+When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile. If the default action account for a given system doesn't have the necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles, [group Managed Service Accounts (gMSAs)](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview) are also [supported](./support-group-managed-service-accounts.md).
 
 For more information about Run As accounts, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md).
 

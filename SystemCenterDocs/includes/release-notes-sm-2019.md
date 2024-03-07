@@ -7,7 +7,7 @@ manager: jsuri
 ms.service:  system-center
 ms.subservice: service-manager
 keywords:
-ms.date: 04/29/2021
+ms.date: 03/07/2024
 title: include file
 ms.assetid: df2f12b4-ccbe-459e-815c-c70ad97fd0e1
 ---
@@ -173,4 +173,4 @@ This issue is observed in Service Manager 2019 with Windows 2019.
 
 This issue is observed in Service Manager 2016 and later.
 
-**Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).
+**Workaround**: Perform the steps [detailed here](../scsm/config-remote-ssrs.md).

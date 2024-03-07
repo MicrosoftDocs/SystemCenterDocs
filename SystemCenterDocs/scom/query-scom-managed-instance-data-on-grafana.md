@@ -5,7 +5,7 @@ description: This article describes how to query monitoring data from Operationa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 03/07/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -21,7 +21,7 @@ From Azure Managed Grafana linked to Azure Monitor SCOM Managed Instance, you ca
 
 ## Prerequisites
 
-Before you query monitoring data from Azure Managed Grafana portal, ensure that SCOM Managed Instance is linked to Azure Managed Grafana. For more information, see [Dashboards on Azure Managed Grafana](/system-center/scom/dashboards-on-azure-managed-grafana). 
+Before you query monitoring data from Azure Managed Grafana portal, ensure that SCOM Managed Instance is linked to Azure Managed Grafana. For more information, see [Dashboards on Azure Managed Grafana](./dashboards-on-azure-managed-grafana.md). 
 
 Few ready-to-use dashboards are available at [Azure/SCOM Managed Instance/Operational Dashboard](https://grafana.com/grafana/dashboards/19919-azure-scom-managed-instance-operational-dashboard/), which can be imported and edited as per your requirement on Azure Managed Grafana instance.
 

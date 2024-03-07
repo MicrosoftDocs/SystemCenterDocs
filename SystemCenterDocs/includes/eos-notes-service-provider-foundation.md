@@ -5,11 +5,11 @@ description: include file with notes on end of support information for 1801 and 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  08/19/2020
+ms.date:  03/07/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ---
 > [!IMPORTANT]
 >
-> This version of Service Provider Foundation (SPF) has reached the end of support; we recommend you to [upgrade to SPF 2022](/system-center/spf/upgrade-spf).
+> This version of Service Provider Foundation (SPF) has reached the end of support; we recommend you to [upgrade to SPF 2022](../spf/upgrade-spf.md).
