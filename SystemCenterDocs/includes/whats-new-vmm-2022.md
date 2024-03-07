@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/31/2024
+ms.date: 03/07/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
