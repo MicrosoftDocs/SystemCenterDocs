@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 02/01/2024
+ms.date: 03/07/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -32,7 +32,7 @@ With DPM 2022, you can use a private endpoint to take online backup to the Azure
 
 ### Support for VMware vSphere 7.0
 
-DPM 2022 adds support for protecting virtual machines running on VMware 7.0. [Learn more](/system-center/dpm/back-up-vmware).
+DPM 2022 adds support for protecting virtual machines running on VMware 7.0. [Learn more](../dpm/back-up-vmware.md).
 
 ### Parallel restore for VMware and Hyper-V virtual machines
 
@@ -71,18 +71,18 @@ For issues fixed and the installation instructions for UR2 refresh, see [KB ar
 
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
-DPM 2022 UR2 supports item level recovery directly from online recovery points for [VMware](/system-center/dpm/back-up-vmware?view=sc-dpm-2022&tabs=Add#restore-an-individual-file-from-a-vm&preserve-view=true) and [Hyper-V](/system-center/dpm/back-up-hyper-v-virtual-machines) VMs running Windows. You need [MARS](https://support.microsoft.com/topic/update-for-azure-backup-for-microsoft-azure-recovery-services-agent-bb330054-65d3-4432-a45e-362e1888dd2c) version 2.0.9251.0 or later to use this feature.  
+DPM 2022 UR2 supports item level recovery directly from online recovery points for [VMware](/system-center/dpm/back-up-vmware?view=sc-dpm-2022&tabs=Add#restore-an-individual-file-from-a-vm&preserve-view=true) and [Hyper-V](../dpm/back-up-hyper-v-virtual-machines.md) VMs running Windows. You need [MARS](https://support.microsoft.com/topic/update-for-azure-backup-for-microsoft-azure-recovery-services-agent-bb330054-65d3-4432-a45e-362e1888dd2c) version 2.0.9251.0 or later to use this feature.  
 
 ### Support for VMware vSphere 8.0
 
 DPM 2022 UR2 supports protection of VMware VMs running on vSphere 8.0. 
 
 >[!NOTE]
->Back up of vSphere [Data Sets](https://core.vmware.com/resource/vsphere-datasets) isn't supported. [Learn more](/system-center/dpm/back-up-vmware).
+>Back up of vSphere [Data Sets](https://core.vmware.com/resource/vsphere-datasets) isn't supported. [Learn more](../dpm/back-up-vmware.md).
 
 ### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
 
-DPM 2022 UR2 supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](/system-center/dpm/monitor-dpm).
+DPM 2022 UR2 supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](../dpm/monitor-dpm.md).
 
 >[!NOTE]
 >If you have been using M365 SMTP with DPM 2022 UR1, you must re-enter the credentials using Basic Authentication.  

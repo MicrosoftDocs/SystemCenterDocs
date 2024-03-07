@@ -5,11 +5,11 @@ description: Include file with notes on end of support information for 1801 and 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  08/18/2020
+ms.date:  03/07/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: orchestrator
 ---
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2022](/system-center/orchestrator/upgrade-orch).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2022](../orchestrator/upgrade-orch.md).
