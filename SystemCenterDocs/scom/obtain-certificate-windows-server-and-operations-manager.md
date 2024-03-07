@@ -6,7 +6,7 @@ ms.custom: engagement-fy23, UpdateFrequency2
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/28/2023
+ms.date: 03/07/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -23,7 +23,7 @@ This article describes how to obtain a certificate and use with Operations Manag
 Ensure you've the following:
 
 - AD-CS installed and configured in the environment with web services **or** a third party Certificate Authority with certificates that match the required settings shown.
-- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/configure-https-binding-windows-server-ca).
+- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](./configure-https-binding-windows-server-ca.md).
 - A typical desktop experience and not Core servers.
 
   >[!NOTE]

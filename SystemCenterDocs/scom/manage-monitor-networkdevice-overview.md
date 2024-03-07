@@ -4,7 +4,7 @@ description: This article provides an overview of how you can monitor network de
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2023
+ms.date: 03/07/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -104,7 +104,7 @@ Network discovery and monitoring requires the following management packs, which 
 
 -   Microsoft.Windows.Client.NetworkDiscovery  
 
-There are additional management packs that are required to relate network devices to each other and to the agent computers they're connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs are installed for each of the operating systems in your environment. See [System Requirements](/system-center/scom/system-requirements).
+There are additional management packs that are required to relate network devices to each other and to the agent computers they're connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs are installed for each of the operating systems in your environment. See [System Requirements](./system-requirements.md).
 
 ## How Network device discovery works  
 

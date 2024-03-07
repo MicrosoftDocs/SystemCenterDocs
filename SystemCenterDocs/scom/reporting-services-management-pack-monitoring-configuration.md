@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 12/8/2023
+ms.date: 03/07/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -185,7 +185,7 @@ The following is a complete list of securables that are checked by the monitor t
 
 ## Feature Groups
 
-In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](/system-center/scom/manage-create-manage-groups).
+In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](./manage-create-manage-groups.md).
 
 In Management Pack for SQL Server Reporting Services you can use two groups, which have the dynamic type of membership:
 

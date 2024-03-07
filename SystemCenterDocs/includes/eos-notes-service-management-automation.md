@@ -5,11 +5,11 @@ description: include file with notes on end of support information for 1801 and 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  08/19/2020
+ms.date:  03/07/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: service-management-automation
 ---
 > [!IMPORTANT]
 >
-> This version of Service Management Automation (SMA) has reached the end of support. We recommend you to [upgrade to SMA 2022](/system-center/sma/upgrade-sma).
+> This version of Service Management Automation (SMA) has reached the end of support. We recommend you to [upgrade to SMA 2022](../sma/upgrade-sma.md).
