@@ -284,8 +284,7 @@ ms.topic: article
 
 Following are some additional references and tooling:
 
-- [Download all management packs in bulk](https://cloudadministrator.net/2015/06/29/open-sourcing-download-all-microsoft-scom-mps-script/)
-- [Version 3.0.1 of THE MVP Script to download all System Center Operations Manager management packs with PowerShell](https://cloudadministrator.net/2014/08/29/version-3-0-1-of-damians-and-my-script-to-download-all-scom-management-packs-with-powershell/)
+- [Download all management packs in bulk](https://github.com/slavizh/Get-SCOMManagementPacks)
 
 ## References
 
