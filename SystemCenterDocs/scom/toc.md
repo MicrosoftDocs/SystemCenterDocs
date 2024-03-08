@@ -318,6 +318,7 @@
 #### [How to configure grooming settings for the Operations Manager database](manage-omdb-grooming-settings.md)
 #### [How to configure grooming settings for the Reporting data warehouse database](manage-omdwdb-grooming-settings.md)
 # Management Packs
+## [List of Management Packs](management-pack-list.md)
 ## Management Pack for SQL Server
 ### [Features and Enhancements in Management Pack for SQL Server](sql-server-management-pack-changes-history.md)
 ### [Scope and Supported Configuration in Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md)
