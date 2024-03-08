@@ -42,12 +42,12 @@ scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.p
 ##Install or upgrade
 
 #SOLARIS 10
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --install --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --install --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --install --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --upgrade --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --upgrade --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --upgrade --enable-opsmgr \*; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
 #SOLARIS 11 
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.1[[\:digit\:]].sparc.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC  
@@ -157,18 +157,18 @@ scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 
 ##Install or upgrade 
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --install \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --install \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --install \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --upgrade --force \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --upgrade --force \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --upgrade --force \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.x86.sh --install \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.x86.sh --install \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.x86.sh --install \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.x86.sh --upgrade --force \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.x86.sh --upgrade --force \*
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.x86.sh --upgrade --force \*
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --install 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --install 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --install 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.sparc.sh --upgrade --force 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.sparc.sh --upgrade --force 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.sparc.sh --upgrade --force 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.x86.sh --install 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.x86.sh --install 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.x86.sh --install 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].solaris.10.x86.sh --upgrade --force 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].solaris.10.x86.sh --upgrade --force 
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].solaris.10.x86.sh --upgrade --force 
 
 ##Uninstall
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
