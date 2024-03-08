@@ -5,7 +5,7 @@ description: This article lists the Microsoft Management Packs.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/29/2024
+ms.date: 03/08/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
