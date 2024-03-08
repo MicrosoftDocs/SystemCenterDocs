@@ -89,7 +89,7 @@ The following parameters for specifying the duration range:
 **PT1H15M** means 1 hour and 15 minutes.
 **PT45M30S** means 45 minutes and 30 seconds.
   
-### InvariantCulture date time examples
+## InvariantCulture date time examples
 
 - The time range is one day.
 
@@ -110,7 +110,7 @@ The following parameters for specifying the duration range:
 
     Date From=06/2023 and Date To=06/2023. An event log file is created with events from the whole month of June.
 
-### Duration range examples
+## Duration range examples
 
 - The time range is last hour.
 

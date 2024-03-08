@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/22/2024
+ms.date: 03/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -23,7 +23,7 @@ This article covers new functionality and improvements in Management Pack for SQ
   - improved keyboard navigation
   - improved color contrast in dashboards for better legibility
   - reworked high contrast theme for dashboards
-  - added support of screen-reading software
+  - added support for screen-reading software
 
 ### Bug fixes
 

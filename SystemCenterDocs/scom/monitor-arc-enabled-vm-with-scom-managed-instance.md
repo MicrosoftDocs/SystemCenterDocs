@@ -5,7 +5,7 @@ description: Azure Monitor SCOM Managed Instance provides a cloud-based alternat
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/01/2024
+ms.date: 03/07/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -42,13 +42,13 @@ SCOM Managed Instance users will be able to:
 - Monitor VMs and applications which are in untrusted domain/workgroup.
 - Onboard endpoints (including Agent installation and setup) seamlessly from SCOM Managed Instance portal.
 - Set up and manage Gateways seamlessly from SCOM Managed Instance portal on Arc-enabled servers for off-Azure monitoring.
-- Set high availability at Gateway plane for agent failover as described in [Designing for High Availability and Disaster Recovery](/system-center/scom/plan-hadr-design) .
+- Set high availability at Gateway plane for agent failover as described in [Designing for High Availability and Disaster Recovery](./plan-hadr-design.md) .
 
 ## Linux monitoring with SCOM Managed Instance
 
 With SCOM Managed Instance, you can monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022&preserve-view=true).
 
-For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](/system-center/scom/operations-manager-managed-instance-common-questions).
+For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](./operations-manager-managed-instance-common-questions.md).
 
 ## Use Arc channel for Agent configuration and monitoring data
 
