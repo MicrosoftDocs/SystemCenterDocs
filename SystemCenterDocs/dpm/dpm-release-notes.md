@@ -495,9 +495,9 @@ The following section provides details of the known issue in DPM 2019 UR6 and th
 
 For the issues fixed in UR6 and the installation instructions for UR6, see the KB article.
 
-### Subsequent online recovery points creation fails
+### Offline Seeding does not work with MARS agent 2.0.9254.0 and later
 
-**Description**: Subsequent online recovery points creation fails after the first online recovery point is successfully created for data sources backed up through Databox only, when the MARS agent version is greater than 2.0.9251.0.
+**Description**: Subsequent online recovery points creation fails after the first online recovery point is successfully created for data sources backed up through Databox only, when the MARS agent version is greater than 2.0.9254.0.
 
 **Workaround**: None. Contact Microsoft support for assistance.
 
