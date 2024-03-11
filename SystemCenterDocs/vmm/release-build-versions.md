@@ -39,7 +39,7 @@ The following table lists the release history for Virtual Machine Manager 2019.
 |10.19.2591.0|[5001835](https://support.microsoft.com/kb/5001835) |May 2021 |Update Rollup 3 |
 |10.19.2648.0|[5014156](https://support.microsoft.com/kb/5014156) |July 2022 |Update Rollup 4 |
 |10.19.2729.0|[5024282](https://support.microsoft.com/kb/5024282) |April 2023 |Update Rollup 5 |
-| - |5035468 | March 2024 | Update Rollup 6 |
+|10.19.2883.0|5035468 | March 2024 | Update Rollup 6 |
 
 ::: moniker-end
 
