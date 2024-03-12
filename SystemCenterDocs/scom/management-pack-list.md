@@ -124,7 +124,7 @@ ms.topic: article
 |[Microsoft System Center Operations Manager Management Pack for Microsoft 365](https://www.microsoft.com/download/details.aspx?id=103379)|10.2.0.0|9/22/2023|
 |[Microsoft System Center Operations Manager Management Pack for Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=50013)|1.8.0.9|8/18/2022|
 |[Microsoft Windows Server File & iSCSI Services 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=57594&WT.mc_id=rss_alldownloads_all)|10.1.0.4|04/07/2022|
-|[Monitoring Pack for Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1|6/8/2012|
+|[Monitoring Pack for Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1.0|6/8/2012|
 |[NET Application Performance Monitoring with Visual Studio Application Insights (Preview)](https://www.microsoft.com/download/details.aspx?id=53895)|1.0.0.0|09/27/2016|
 |[OMS Service Map Integration](https://www.microsoft.com/download/details.aspx?id=55763)|1.0.0.6|08/16/2017|
 |[Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1.0|06/08/2012|
@@ -202,13 +202,13 @@ ms.topic: article
 |[System Center Management Pack for SharePoint Server 2013](https://www.microsoft.com/download/details.aspx?id=35590)|15.0.4557.1000|11/30/2021|
 |[System Center Management Pack for SharePoint Server 2016](https://www.microsoft.com/download/details.aspx?id=52043)|16.0.13125.10000|11/18/2021|
 |[System Center Management Pack for SharePoint Server 2019](https://www.microsoft.com/download/details.aspx?id=57776)|16.0.11426.3000|11/18/2021|
-|[System Center Management Pack for the Microsoft Analytics Platform System](https://www.microsoft.com/download/details.aspx?id=42522)|1|9/27/2019|
+|[System Center Management Pack for the Microsoft Analytics Platform System](https://www.microsoft.com/download/details.aspx?id=42522)|1.0|9/27/2019|
 |[System Center Management Pack for Windows 10 and above Operating System](https://www.microsoft.com/download/details.aspx?id=51189)|10.0.0.2|3/21/2022|
 |[System Center Management Pack for Windows Server 2012 DHCP](https://www.microsoft.com/download/details.aspx?id=39062)|6.0.7309.0|9/23/2020|
 |[System Center Management Pack for Windows Server 2012 R2 Essentials](https://www.microsoft.com/download/details.aspx?id=40809)|7.1.10100.0|9/30/2020|
 |[System Center Management Pack for Windows Server 2012 R2 Hyper-V](https://www.microsoft.com/download/details.aspx?id=40798)|7.1.10107.0|9/24/2020|
 |[System Center Management Pack for Windows Server 2012 R2 Remote Desktop Services](https://www.microsoft.com/download/details.aspx?id=44991)|7.2.0.0|12/17/2021|
-|[System Center management pack for Windows Server 2016 Essentials](https://www.microsoft.com/download/details.aspx?id=53900)|1|12/14/2020|
+|[System Center management pack for Windows Server 2016 Essentials](https://www.microsoft.com/download/details.aspx?id=53900)|1.0|12/14/2020|
 |[System Center Management Pack for Windows Server Cluster](https://www.microsoft.com/download/details.aspx?id=2268)|10.0.6.6|2/11/2021|
 |[System Center Management Pack for Windows Server Network Load Balancing](https://www.microsoft.com/download/details.aspx?id=13302)|6.0.7221.0|9/24/2020|
 |[System Center Management Pack for WSUS on Windows Server 2012 R2](https://www.microsoft.com/download/details.aspx?id=40801)|7.1.10100.0|10/1/2020|
@@ -222,8 +222,8 @@ ms.topic: article
 |[TFS 2017 System Center Operations Manager management pack](https://www.microsoft.com/download/details.aspx?id=54791)|15.113.26130.0|2/23/2017|
 |[UNIX and Linux Operating Systems (Operations Manager 2012-through 1807)](https://www.microsoft.com/download/details.aspx?id=29696)|10.19.1006.0|09/23/2021|
 |[UNIX and Linux Operating Systems (Operations Manager 2019)](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1234.0|11/21/2023|
-|[Update for Microsoft PowerPoint 2016 (KB4462191) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=57990)|1|2/20/2019|
-|[Update for Microsoft Visio 2016 (KB3128045) 64-Bit Edition](https://www.microsoft.com/download/details.aspx?id=54554)|1|12/27/2016|
+|[Update for Microsoft PowerPoint 2016 (KB4462191) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=57990)|1.0|2/20/2019|
+|[Update for Microsoft Visio 2016 (KB3128045) 64-Bit Edition](https://www.microsoft.com/download/details.aspx?id=54554)|1.0|12/27/2016|
 |[Visual Studio 2008 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=14720)|	1.0.0.2|10/08/2020|
 |[Visual Studio 2010 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=6325)|	1.0.0.7|10/08/2020|
 |[Visual Studio 2013 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=41696)|	1.0.0.1|09/30/2020|

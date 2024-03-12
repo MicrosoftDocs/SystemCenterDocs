@@ -5,7 +5,7 @@ description: Include file with sudoers configuration for HP-UX operating systems
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 02/27/2024
+ms.date: 03/05/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -49,8 +49,8 @@ scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 
 ## Install or upgrade
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].hpux.11iv3.ia64.sh --install --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].hpux.11iv3.ia64.sh --upgrade --enable-opsmgr ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
 ## Uninstall
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
@@ -99,12 +99,12 @@ scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cp /tmp/scx-scomadm/scx.pem /etc/opt
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c cat /etc/opt/microsoft/scx/ssl/scx.pem
 
 ## Install or upgrade
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]\[0-9\]-\[0-9\].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
-scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.\[5-9\].\[0-9\]-\[0-9\]\[0-9\]\[0-9\].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].hpux.11iv3.ia64.sh --install ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9][0-9]-[0-9].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
+scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c sh /tmp/scx-scomadm/scx-1.[5-9].[0-9]-[0-9][0-9][0-9].hpux.11iv3.ia64.sh --upgrade --force ; EC=$?; cd /tmp; rm -rf /tmp/scx-scomadm; exit $EC
 
 ## Uninstall
 scomadm ALL=(root) NOPASSWD: /usr/bin/sh -c /opt/microsoft/scx/bin/uninstall
