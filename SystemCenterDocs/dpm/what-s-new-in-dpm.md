@@ -236,7 +236,7 @@ DPM 2019 UR6 supports Windows and Basic SMTP authentication to send reports and 
 
 ### Experience improvements for DPM backups to Azure
 
-DPM 2019 UR6 supports listing of online recovery points for a data source along with the expiry time and soft-delete status. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
+DPM 2019 UR6 supports listing of online recovery points for a data source along with the expiry time. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
 
 DPM 2019 UR6 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](/azure/backup/backup-azure-security-feature#immutability-support).
 
