@@ -279,13 +279,3 @@ ms.topic: article
 |[Windows Server Update Services 2012 R2 (WSUS)](https://www.microsoft.com/download/details.aspx?id=40801)|7.1.10100.0|10/01/2020|
 |[Windows Server Update Services 2016 (WSUS)](https://www.microsoft.com/download/details.aspx?id=54509)|7.1.10128.3|12/09/2016|
 |[Windows Storage Server 2008 R2 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=23251)|6.0.6600.0|10/8/2020|
-
-## Additional tooling
-
-Following are some additional references and tooling:
-
-- [Download all management packs in bulk](https://github.com/slavizh/Get-SCOMManagementPacks)
-
-## References
-
-[Finding Management Packs from Microsoft Download website using PowerShell](/archive/blogs/stefan_stranger/finding-management-packs-from-microsoft-download-website-using-powershell)
