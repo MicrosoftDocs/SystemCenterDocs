@@ -15,9 +15,11 @@ ms.topic: article
 
 For many of our own technologies, Microsoft provides a management pack to help monitor these technologies using Operations Manager. For more information about management packs, see: [What is in an Operations Manager management pack?](/system-center/scom/manage-overview-management-pack)
 
+The following table is for reference only and contains links to management packs that are still available to download. This list is subject to change at any time.
+
 > [!IMPORTANT]
-> The following table is for reference only and contains links to management packs that are still available to download. This list is subject to change at any time.
 > **Not all management packs are still supported**, nor are all of the underlying technologies. For concerns on underlying technology supportability, see the [Microsoft Lifecycle Policy](/lifecycle/).
+
 ## Overview
 
 |**Management Pack**|**Version**|**Date (mm/dd/yyyy)**|
