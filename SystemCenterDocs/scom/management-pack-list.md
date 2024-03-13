@@ -16,8 +16,7 @@ ms.topic: article
 For many of our own technologies, Microsoft provides a management pack to help monitor these technologies using Operations Manager. For more information about management packs, see: [What is in an Operations Manager management pack?](/system-center/scom/manage-overview-management-pack)
 
 > [!IMPORTANT]
-> The following table is for reference only and contains links to management packs that are still available to download. **Not all management packs are still supported**, nor are all of the underlying technologies. 
-
+> The following table is for reference only and contains links to management packs that are still available to download. **Not all management packs are still supported**, nor are all of the underlying technologies. For concerns on underlying technology supportability, see the [Microsoft Lifecycle Policy](/lifecycle/).
 ## Overview
 
 |**Management Pack**|**Version**|**Date (mm/dd/yyyy)**|
@@ -39,7 +38,7 @@ For many of our own technologies, Microsoft provides a management pack to help m
 |[Exchange Connector System Center Operations Manager Pack - Intune](https://www.microsoft.com/download/details.aspx?id=55990)|1.0.0.0|9/28/2017|
 |[Exchange Server 2010 Monitoring management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=692)|14.3.210.2|4/23/2021|
 |[Exchange Server 2010](https://www.microsoft.com/download/details.aspx?id=692)|14.3.210.2|12/09/2014|
-|[Exchange Server 2013](https://www.microsoft.com/download/details.aspx?id=39039) (also supports Exchange 2016 and higher)|15.0.669.23|06/22/2022|
+|[Exchange Server 2013 and above](https://www.microsoft.com/download/details.aspx?id=39039) (also supports Exchange 2016 and higher)|15.0.669.23|06/22/2022|
 |[FAST Search Server 2010 for SharePoint management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=17998)|14.0.19.1000|10/8/2020|
 |[FAST Search Server 2010 for SharePoint](https://www.microsoft.com/download/details.aspx?id=17998)|14.0.19.1000|10/08/2020|
 |[Forefront Identity Manager 2010 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=19395)|1.0.0.0|10/8/2020|
