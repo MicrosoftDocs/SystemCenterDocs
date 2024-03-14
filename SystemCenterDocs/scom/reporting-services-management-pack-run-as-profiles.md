@@ -5,7 +5,7 @@ description: This article explains Reporting Services Run As Profiles.
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 03/13/2024
+ms.date: 03/14/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -60,15 +60,15 @@ Management Pack for SQL Server Reporting Services provides the following Run As 
     - Scheduled executions per minute
     - Total memory consumed on the server (GB)
     - Total memory on the Server (GB)
-    - WorkingSetMaximum (GB)
-    - WorkingSetMinimum (GB)
+    - Working Set Maximum (GB)
+    - Working Set Minimum (GB)
 
-By default, all discoveries, monitors, and rules defined in the management pack use accounts are defined in the **Default Action Account** Run As profile.
+By default, all discoveries, monitors, and rules in the management pack use Run As accounts are defined in the **Default Action Account** Run As profile.
 
 If the default action account for the given system doesn't have the necessary permissions to discover and monitor instances of SQL Server Reporting Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
 
 > [!IMPORTANT]
-> It's not recommended to use the **Local System account** or **HealthService SSID** because it's a special case to monitor SQL Server Reporting Services. Some workflows run on the server hosting a Reporting Services instance and try to reach the Reporting Services database usually installed on another computer. You'll need to provide computer accounts of all the servers hosting SQL Server Reporting Services instances with the required permissions to access the Reporting Services database. A domain account is a more preferable option.
+> It's not recommended to use the **Local System account** or **HealthService SSID** because it's a specific case to monitor SQL Server Reporting Services. Some workflows run on the server hosting a Reporting Services instance and try to reach the Reporting Services database commonly installed on another computer. You'll need to provide computer accounts of all the servers hosting SQL Server Reporting Services instances with the required permissions to access the Reporting Services databases. A domain account is a more suitable and secure option.
 
 ## Configuring Run As Profiles
 
