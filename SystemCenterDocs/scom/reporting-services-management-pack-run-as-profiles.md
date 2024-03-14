@@ -68,7 +68,7 @@ By default, all discoveries, monitors, and rules in the management pack use Run 
 If the default action account for the given system doesn't have the necessary permissions to discover and monitor instances of SQL Server Reporting Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
 
 > [!IMPORTANT]
-> It's not recommended to use the **Local System account** or **HealthService SSID** because it's a special case to monitor SQL Server Reporting Services. Some workflows run on the server hosting a Reporting Services instance and try to reach the Reporting Services database usually installed on another computer. You'll need to provide computer accounts of all the servers hosting SQL Server Reporting Services instances with the required permissions to access the Reporting Services database. A domain account is a more preferable option.
+> It's not recommended to use the **Local System account** or **HealthService SSID** because it's a specific case to monitor SQL Server Reporting Services. Some workflows run on the server hosting a Reporting Services instance and try to reach the Reporting Services database commonly installed on another computer. You'll need to provide computer accounts of all the servers hosting SQL Server Reporting Services instances with the required permissions to access the Reporting Services databases. A domain account is a more suitable and secure option.
 
 ## Configuring Run As Profiles
 
