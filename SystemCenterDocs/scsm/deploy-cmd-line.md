@@ -1,12 +1,12 @@
 ---
 title: Deploy from a command line
 description: This article describes how to deploy Service Manager using command-line parameters.
-ms.custom: intro-deployment, UpdateFrequency3
+ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/05/2019
+ms.date: 03/18/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
