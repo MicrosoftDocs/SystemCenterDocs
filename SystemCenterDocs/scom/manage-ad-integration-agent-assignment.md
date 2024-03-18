@@ -4,8 +4,8 @@ description: This article describes how to configure and use Active Directory in
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/07/2020
-ms.custom: UpdateFrequency2
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
