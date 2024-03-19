@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/05/2024
+ms.date: 03/19/2024
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -36,7 +36,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10616.0|[5029512](https://support.microsoft.com/kb/5029512) |July 2023|Discover Azure Migrate in Operations Manager|
 |10.19.10615.0|[5029601](https://support.microsoft.com/kb/5029601) |July 2023|GB compliance|
 |10.19.10618.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023|SCX Compiler Mitigated Packages|
-| - | 5035285 |March 2024|Update Rollup 6|
+| 10.19.10649.0 | 5035285 |March 2024|Update Rollup 6|
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |

@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/29/2024
+ms.date: 03/19/2024
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: article
@@ -493,7 +493,7 @@ Currently there are no known issues in DPM 2019 UR5.
 
 The following section provides details of the known issue in DPM 2019 UR6 and the workaround.
 
-For the issues fixed in UR6 and the installation instructions for UR6, see the KB article.
+For the issues fixed in UR6 and the installation instructions for UR6, see the [KB article](https://support.microsoft.com/help/5035307).
 
 ### Offline Seeding does not work with MARS agent 2.0.9254.0 and later
 

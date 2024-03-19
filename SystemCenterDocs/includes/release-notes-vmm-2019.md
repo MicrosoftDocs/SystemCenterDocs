@@ -5,7 +5,7 @@ description: Include file to summarize the release notes for VMM 2019.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  02/22/2024
+ms.date:  03/19/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,7 +21,7 @@ No known issues in VMM 2019 UR1 and UR2.
 - For issues fixed in 2019 UR3, [see the KB article for UR3](https://support.microsoft.com/kb/5001835).
 - For issues fixed in 2019 UR4, [see the KB article for UR4](https://support.microsoft.com/kb/5014156).
 - For issues fixed in 2019 UR5, [see the KB article for UR5](https://support.microsoft.com/kb/5024282).
-- For issues fixed in 2019 UR6, see the KB article for UR6.
+- For issues fixed in 2019 UR6, [see the KB article for UR6](https://support.microsoft.com/kb/5035468).
 
 ## Removal of cluster node fails with CleanUpDisks flag
 

@@ -3,7 +3,7 @@ description: This article describes the way that you can monitor DPM.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 02/26/2024
+ms.date: 03/19/2024
 title: Monitor DPM
 ms.subservice: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
