@@ -8,7 +8,7 @@ manager: jsuri
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:
-ms.date: 02/28/2024
+ms.date: 03/19/2024
 title:  include file
 ---
 
@@ -16,7 +16,8 @@ title:  include file
 
 The following sections summarize the release notes for Orchestrator 2019 UR6, and include the known issues and workarounds.
 
-For the problems fixed in UR6 and the installation instructions for UR6, see the KB article.
+For the problems fixed in UR6 and the installation instructions for UR6, see the [KB article](https://support.microsoft.com/kb/5035767).
+
 
 ### New Web console doesn't take zero (0) as the input parameter
 
