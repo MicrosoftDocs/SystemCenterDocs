@@ -5,7 +5,7 @@ description: This include file describes the new features in Virtual Machine Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  02/22/2024
+ms.date:  03/19/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -417,10 +417,10 @@ VMM 2019 UR5 allows you to discover Arc-enabled SCVMM from console and manage yo
 
 The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 6 (UR6).
 
-For problems fixed in UR6, and the installation instructions for UR6, see the KB article.
+For problems fixed in UR6, and the installation instructions for UR6, see the [KB article](https://support.microsoft.com/kb/5035468).
 
 ### Improved Arc-enabled SCVMM Discovery tab
 
-The **Azure Arc** tab now highlights the latest feature additions to Arc-enabled SCVMM which includes support for Azure management services such as Microsoft Defender for Cloud, Azure Update Manager, Azure Monitor, Microsoft Sentinel, and more. [Learn more](https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-azure-management-capabilities-for-azure-arc-enabled/ba-p/3947253)
+The **Azure Arc** tab now highlights the latest feature additions to Arc-enabled SCVMM which includes support for Azure management services such as Microsoft Defender for Cloud, Azure Update Manager, Azure Monitor, Microsoft Sentinel, and more. [Learn more](https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-azure-management-capabilities-for-azure-arc-enabled/ba-p/3947253).
 
 If you are running WS 2012 and 2012R2 host and guest operating systems, the Azure Arc blade now provides guidance to continue remaining in support state.
