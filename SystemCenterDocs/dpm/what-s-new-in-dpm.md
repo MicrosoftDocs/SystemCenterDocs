@@ -2,7 +2,7 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
 ms.service: system-center
-ms.date: 02/26/2024
+ms.date: 03/19/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -225,7 +225,7 @@ The following example increases the limit to 12 jobs:
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR6.
 
-For issues fixed and the installation instructions for UR6, see KB article for Update Rollup 6.  
+For issues fixed and the installation instructions for UR6, see [KB article](https://support.microsoft.com/help/5035307) for Update Rollup 6.  
 
 ### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
 
