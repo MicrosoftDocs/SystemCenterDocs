@@ -225,7 +225,7 @@ The following example increases the limit to 12 jobs:
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR6.
 
-For issues fixed and the installation instructions for UR6, see [KB article](https://support.microsoft.com/help/5035307) for Update Rollup 6.  
+For issues fixed and the installation instructions for UR6, see [KB article](https://support.microsoft.com/help/5035307).  
 
 ### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
 
