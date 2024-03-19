@@ -18,6 +18,7 @@ The following sections summarize the release notes for Orchestrator 2019 UR6, an
 
 For the problems fixed in UR6 and the installation instructions for UR6, see the [KB article](https://support.microsoft.com/kb/5035767).
 
+
 ### New Web console doesn't take zero (0) as the input parameter
 
 **Description**: New web console doesn't take zero as the input parameter.
