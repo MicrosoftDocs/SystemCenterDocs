@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 release
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/01/2024
+ms.date: 03/19/2024
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 # System Center DPM Release Notes
 ::: moniker range="sc-dpm-2019"
 
-This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes), DPM [2019 UR2](#dpm-2019-ur2-release-notes), DPM [2019 UR3](#dpm-2019-ur3-release-notes), DPM [2019 UR4](#dpm-2019-ur4-release-notes), and [2019 UR5](#dpm-2019-ur5-release-notes) as applicable.
+This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes), DPM [2019 UR2](#dpm-2019-ur2-release-notes), DPM [2019 UR3](#dpm-2019-ur3-release-notes), DPM [2019 UR4](#dpm-2019-ur4-release-notes), [2019 UR5](#dpm-2019-ur5-release-notes), and [2019 UR6](#dpm-2019-ur6-release-notes) as applicable.
 
 We recommend you see the following articles for detailed information about what DPM supports and can back up:
 
@@ -488,6 +488,18 @@ The following section provides details of the known issue in DPM 2019 UR4 and th
 ## DPM 2019 UR5 release notes
 
 Currently there are no known issues in DPM 2019 UR5.
+
+## DPM 2019 UR6 release notes
+
+The following section provides details of the known issue in DPM 2019 UR6 and the workaround.
+
+For the issues fixed in UR6 and the installation instructions for UR6, see the [KB article](https://support.microsoft.com/help/5035307).
+
+### Offline Seeding does not work with MARS agent 2.0.9254.0 and later
+
+**Description**: Subsequent online recovery points creation fails after the first online recovery point is successfully created for data sources backed up through Databox only, when the MARS agent version is greater than 2.0.9254.0.
+
+**Workaround**: None. Contact Microsoft support for assistance.
 
 ::: moniker-end
 
