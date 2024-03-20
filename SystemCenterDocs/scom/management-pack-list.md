@@ -137,17 +137,14 @@ The following table is for reference only and contains links to management packs
 |[Server App-V](https://www.microsoft.com/download/details.aspx?id=30003)|1.0|06/08/2012|
 |[Service Bus](https://www.microsoft.com/download/details.aspx?id=41672)|1.0.0.26|09/30/2020|
 |[Service Manager 2010 management pack for Operations Manager 2007 R2](https://www.microsoft.com/download/details.aspx?id=23964)|7.0.5826.856|9/24/2020|
-|[SharePoint 2010 Products management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=4419)|14.0.7137.5000|10/8/2020|
-|[SharePoint Foundation 2010 management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=13819)|14.0.4745.1000|10/8/2020|
+|[SharePoint 2010 Products Management Pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=4419)|14.0.7137.5000|10/8/2020|
 |[SharePoint Foundation 2010](https://www.microsoft.com/download/details.aspx?id=13819)|14.0.4745.1000|10/08/2020|
 |[SharePoint Server 2010 (This version is for Operations Manager 2007 R2, see below for Operations Manager 2012 management pack)](https://www.microsoft.com/download/details.aspx?id=4419)|14.0.7137.5000|10/08/2020|
 |[SharePoint Server 2013](https://www.microsoft.com/download/details.aspx?id=35590)|15.0.4557.1000|09/30/2020|
 |[SharePoint Server 2016](https://www.microsoft.com/download/details.aspx?id=52043)|16.0.13125.1000|07/31/2020|
 |[SharePoint Server 2019](https://www.microsoft.com/download/details.aspx?id=57776&WT.mc_id=rss_alldownloads_all)|16.0.11426.3000|11/18/2021|
-|[Skype for Business Server 2015 (Lync Server 2015)](https://www.microsoft.com/download/details.aspx?id=47364)|9319.562|10/10/2019|
-|[Skype for Business Server 2015, Management Pack](https://www.microsoft.com/download/details.aspx?id=47364)|9319.562|6/7/2021|
-|[Skype for Business Server 2019, Management Pack](https://www.microsoft.com/download/details.aspx?id=57511)|2046.143|6/7/2021|
-|[Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57511&WT.mc_id=rss_alldownloads_all)|2046.143|09/27/2019|
+|[Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=47364)|9319.562|6/7/2021|
+|[Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57511&WT.mc_id=rss_alldownloads_all)|2046.143|6/27/2021|
 |[Software Defined Networking (SDN) Management Pack](https://www.microsoft.com/download/details.aspx?id=54300)|10.0.0.2|3/21/2022|
 |[SQL Server 2012 Parallel Data Warehouse Appliance](https://www.microsoft.com/download/details.aspx?id=38198)|1.0.14.0|09/30/2020|
 |[SQL Server Analysis Services Version Agnostic 2012-2019+](https://www.microsoft.com/download/details.aspx?id=57382)|7.4.0.0|01/23/2024|
@@ -171,7 +168,7 @@ The following table is for reference only and contains links to management packs
 |[System Center 2012 Management Pack for Windows Deployment Services](https://www.microsoft.com/download/details.aspx?id=36817)|7.0.8560.0|9/30/2020|
 |[System Center 2012 Management Pack for Windows Server 2012 R2 Remote Access](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|9/30/2020|
 |[System Center 2012 Management Pack for Windows Server 2012 R2 Windows Deployment Services](https://www.microsoft.com/download/details.aspx?id=40800)|7.1.10100.0|9/30/2020|
-|[System Center 2012 ManagementPack for RemoteAccess 2012](https://www.microsoft.com/download/details.aspx?id=36496)|7.0.8560.0|9/30/2020|
+|[System Center 2012 Management Pack for RemoteAccess 2012](https://www.microsoft.com/download/details.aspx?id=36496)|7.0.8560.0|9/30/2020|
 |[System Center 2012 R2 Data Protection Manager](https://www.microsoft.com/download/details.aspx?id=45525)|4.2.1276.0|09/25/2020|
 |[System Center 2012 R2 Management Pack for JEE Application Servers](https://www.microsoft.com/download/details.aspx?id=44576)|7.5.1038.0|9/23/2020|
 |[System Center 2012 R2 Management Pack for Virtual Machine Manager Host and Virtual Machine Dashboards](https://www.microsoft.com/download/details.aspx?id=43707)|1.1.41.91|9/24/2020|
@@ -215,7 +212,7 @@ The following table is for reference only and contains links to management packs
 |[System Center Management Pack for Windows Server 2012 R2 Essentials](https://www.microsoft.com/download/details.aspx?id=40809)|7.1.10100.0|9/30/2020|
 |[System Center Management Pack for Windows Server 2012 R2 Hyper-V](https://www.microsoft.com/download/details.aspx?id=40798)|7.1.10107.0|9/24/2020|
 |[System Center Management Pack for Windows Server 2012 R2 Remote Desktop Services](https://www.microsoft.com/download/details.aspx?id=44991)|7.2.0.0|12/17/2021|
-|[System Center management pack for Windows Server 2016 Essentials](https://www.microsoft.com/download/details.aspx?id=53900)|1.0|12/14/2020|
+|[System Center Management Pack for Windows Server 2016 Essentials](https://www.microsoft.com/download/details.aspx?id=53900)|1.0|12/14/2020|
 |[System Center Management Pack for Windows Server Cluster](https://www.microsoft.com/download/details.aspx?id=2268)|10.0.6.6|2/11/2021|
 |[System Center Management Pack for Windows Server Network Load Balancing](https://www.microsoft.com/download/details.aspx?id=13302)|6.0.7221.0|9/24/2020|
 |[System Center Management Pack for WSUS on Windows Server 2012 R2](https://www.microsoft.com/download/details.aspx?id=40801)|7.1.10100.0|10/1/2020|
@@ -223,27 +220,23 @@ The following table is for reference only and contains links to management packs
 |[System Center Management Packs for Open Source Software (Apache, MySQL, MariaDB)](https://www.microsoft.com/download/details.aspx?id=46924)|7.7.1129.0|09/09/2020|
 |[System Center Management Packs for Open Source Software](https://www.microsoft.com/download/details.aspx?id=46924)|7.7.1129.0|5/25/2021|
 |[System Center Operations Manager 2016,2019 management pack for DNS monitoring on Windows Server 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54524)|10.1.0.1|10/23/2023|
-|[System Center Operations Manager management pack for TFS2013](https://www.microsoft.com/download/details.aspx?id=41696)|1.0.0.1|9/30/2020|
 |[System Center Operations Manager OMS Service Map integration management pack](https://www.microsoft.com/download/details.aspx?id=55763)|1.0.0.6|8/16/2017|
 |[System Center Service Manager 2010](https://www.microsoft.com/download/details.aspx?id=23964)|7.0.5826.856|09/24/2020|
-|[TFS 2017 System Center Operations Manager management pack](https://www.microsoft.com/download/details.aspx?id=54791)|15.113.26130.0|2/23/2017|
-|[UNIX and Linux Operating Systems (Operations Manager 2012-through 1807)](https://www.microsoft.com/download/details.aspx?id=29696)|10.19.1006.0|09/23/2021|
-|[UNIX and Linux Operating Systems (Operations Manager 2019)](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1234.0|11/21/2023|
-|[Update for Microsoft PowerPoint 2016 (KB4462191) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=57990)|1.0|2/20/2019|
-|[Update for Microsoft Visio 2016 (KB3128045) 64-Bit Edition](https://www.microsoft.com/download/details.aspx?id=54554)|1.0|12/27/2016|
+|[UNIX and Linux Operating Systems (Operations Manager 2012 - 2016)](https://www.microsoft.com/download/details.aspx?id=29696)|7.6.1197.0|03/12/2024|
+|[UNIX and Linux Operating Systems (Operations Manager 2019)](https://www.microsoft.com/download/details.aspx?id=58208)|10.19.1253.0|03/12/2024|
+|[UNIX and Linux Operating Systems (Operations Manager 2022)](https://www.microsoft.com/download/details.aspx?id=104213)|10.22.1070.0|03/12/2024|
 |[Visual Studio 2008 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=14720)|	1.0.0.2|10/08/2020|
 |[Visual Studio 2010 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=6325)|	1.0.0.7|10/08/2020|
 |[Visual Studio 2013 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=41696)|	1.0.0.1|09/30/2020|
 |[Visual Studio 2015 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=49554)|	14.0.24807.0|09/30/2020|
 |[Visual Studio 2017 Team Foundation Server](https://www.microsoft.com/download/details.aspx?id=54791)|15.113.26130.0|02/23/2017|
-|[VSTS 2008 TFS management pack for Operations Manager 2007](https://www.microsoft.com/download/details.aspx?id=14720)|1.0.0.2|10/8/2020|
 |[Windows Client 10 Operating System](https://www.microsoft.com/download/details.aspx?id=51189)|10.0.0.0|02/22/2021|
 |[Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|09/08/2021|
 |[Windows Server 2012 R2 Essentials](https://www.microsoft.com/download/details.aspx?id=40809)|7.1.10100.0|09/30/2020|
 |[Windows Server 2016 Essentials](https://www.microsoft.com/download/details.aspx?id=53900)|1.0|10/11/2016|
 |[Windows Server Active Directory Certificate Services (ADCS) 2008/2008 R2/2012/2012 R2](https://www.microsoft.com/download/details.aspx?id=34765)|7.1.10100.0|09/30/2020|
 |[Windows Server Active Directory Certificate Services (ADCS) 2016 (and above)](https://www.microsoft.com/download/details.aspx?id=56671)|10.0.0.1|02/11/2021|
-|[Windows Server Active Directory Directory Services (ADDS) 2012 - 2019](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|03/09/2022|
+|[Windows Server Active Directory Directory Services (ADDS) 2016 - 2022](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|03/09/2022|
 |[Windows Server Active Directory Federation Services (ADFS) 2016 (and above)](https://www.microsoft.com/download/details.aspx?id=54526)|10.0.3.2|04/07/2022|
 |[Windows Server Active Directory Lightweight Directory Services (ADLDS) 2008/2008R2/2012R2](https://www.microsoft.com/download/details.aspx?id=1451)|6.0.8228.0|10/08/2020|
 |[Windows Server Active Directory Rights Management Services (ADRMS) 2012 R2](https://www.microsoft.com/download/details.aspx?id=40797)|7.1.10100.0|09/30/2020|
@@ -266,12 +259,12 @@ The following table is for reference only and contains links to management packs
 |[Windows Server Hyper-V 2012](https://www.microsoft.com/download/details.aspx?id=36438)|6.2.6641.0|10/08/2020|
 |[Windows Server Hyper-V 2016](https://www.microsoft.com/download/details.aspx?id=54918)|10.0.8.0|03/13/2017|
 |[Windows Server Internet Information Services (IIS) 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54445)|10.1.0.1|10/14/2020|
-|[Windows Server Internet Information Services (IIS) 8](https://www.microsoft.com/download/details.aspx?id=34767)|7.0.10249.0|11/19/2018|
+|[System Center 2012 Windows Server Internet Information Services (IIS) 8](https://www.microsoft.com/download/details.aspx?id=34767)|7.0.10249.0|11/19/2018|
 |[Windows Server Internet Naming Service (WINS) 2003 (Converted)](https://www.microsoft.com/download/details.aspx?id=6758)|6.0.5000.00|09/14/2007|
 |[Windows Server Network Load Balancing 2012/2012 R2](https://www.microsoft.com/download/details.aspx?id=13302)|6.0.7221.0|09/24/2020|
 |[Windows Server Network Load Balancing 2016](https://www.microsoft.com/download/details.aspx?id=54653)|10.1.0.0|09/30/2020|
 |[Windows Server Operating System 2003/2008/2008 R2/2012/2012R2](https://www.microsoft.com/download/details.aspx?id=9296)|6.0.7326.0|04/09/2021|
-|[Windows Server Operating System 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.1.0|12/05/2022|
+|[Windows Server Operating System 2016 and above](https://www.microsoft.com/download/details.aspx?id=54303)|10.1.1.0|12/05/2022|
 |[Windows Server Print Server 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|12/14/2020|
 |[Windows Server Remote Access 2012 R2 Multitenant](https://www.microsoft.com/download/details.aspx?id=40807)|7.1.10100.0|09/30/2020|
 |[Windows Server Remote Access 2012 R2](https://www.microsoft.com/download/details.aspx?id=40802)|7.1.10181.1|09/30/2020|
@@ -281,7 +274,7 @@ The following table is for reference only and contains links to management packs
 |[Windows Server Routing and Remote Access Service (RRAS) 2003 (Converted)](https://www.microsoft.com/download/details.aspx?id=11348)|6.0.5000.00|09/14/2007|
 |[Windows Server Software Defined Networking (SDN) 2016](https://www.microsoft.com/download/details.aspx?id=54300)|1.0.0.0|11/28/2016|
 |[Windows Server Storage Server 2008 R2](https://www.microsoft.com/download/details.aspx?id=23251)|6.0.6600.0|10/08/2020|
-|[Windows Server Storage Spaces Direct 2016 and 2019](https://www.microsoft.com/download/details.aspx?id=100782)|1.0.47.4|07/27/2022|
+|[Windows Server Storage Spaces Direct 2016 and above](https://www.microsoft.com/download/details.aspx?id=100782)|1.0.47.4|07/27/2022|
 |[Windows Server Update Services 2012 (WSUS)](https://www.microsoft.com/download/details.aspx?id=36784)|7.0.8560.0|10/08/2020|
 |[Windows Server Update Services 2012 R2 (WSUS)](https://www.microsoft.com/download/details.aspx?id=40801)|7.1.10100.0|10/01/2020|
 |[Windows Server Update Services 2016 (WSUS)](https://www.microsoft.com/download/details.aspx?id=54509)|7.1.10128.3|12/09/2016|
