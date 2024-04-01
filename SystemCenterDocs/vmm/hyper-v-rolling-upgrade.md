@@ -5,10 +5,11 @@ description: This article provides guidance on upgrading Hyper-V host clusters
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/14/2019
+ms.date: 04/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 # Perform a rolling upgrade of a Hyper-V host cluster to Windows Server in VMM
@@ -57,13 +58,25 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 
 Review the platform [restrictions and limitations](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start Cluster rolling upgrade.
 
+::: moniker range="<=sc-vmm-2019"
 - The cluster must be managed by VMM.
 - The cluster must be running Windows Server 2012 R2 (in releases prior to 2019) or Windows Server 2016 (in VMM 2019).
 - The cluster must meet the [requirements](hyper-v-bare-metal.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade, VMM records the node's network and disk configuration and uses that information instead of the computer profile.
 - You can upgrade nodes that weren't originally provisioned using bare metal as long as those nodes meet bare metal requirements such as BMC. You'll need to provide this information in the upgrade wizard.
 - The VMM library needs a virtual hard disk configured with Windows Server 2016.
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+- The cluster must be managed by VMM.
+- The cluster must be running Windows Server 2016 or 2019.
+- The cluster must meet the [requirements](hyper-v-bare-metal.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade, VMM records the node's network and disk configuration and uses that information instead of the computer profile.
+- You can upgrade nodes that weren't originally provisioned using bare metal as long as those nodes meet bare metal requirements such as BMC. You'll need to provide this information in the upgrade wizard.
+- The VMM library needs a virtual hard disk configured with Windows Server 2016 or 2019.
+::: moniker-end
 
 ## Run the upgrade
+
+::: moniker range="<=sc-vmm-2019"
 
 1. Select **Fabric** > **Servers** > **All Hosts**. Right-click the host cluster > **Upgrade Cluster**.
 1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Then select **Physical computer profile**, and select the profile for the nodes.
@@ -73,4 +86,28 @@ Review the platform [restrictions and limitations](/windows-server/failover-clus
     - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet, if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address within the logical network.
 5. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes the nodes upgrade successfully, the wizard upgrades the cluster functional level to Windows Server 2016/2019.
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+1. Select **Fabric** > **Servers** > **All Hosts**. Right-click the host cluster > **Upgrade Cluster**.
+1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Then select **Physical computer profile**, and select the profile for the nodes.
+1. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new one. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select IPMI. DCMI is supported even though it's not listed. Ensure the correct port is listed.
+1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
+    - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to ensure the new name isn't in use.
+    - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet, if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address within the logical network.
+5. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes the nodes upgrade successfully, the wizard upgrades the cluster functional level to Windows Server 2019/2022.
+
+::: moniker-end
+
+::: moniker range="<=sc-vmm-2019"
+
 If for some reason you need to update the cluster functional level of a cluster that was upgraded outside VMM, right-click the **Cluster** > **Update Version**. This could happen if you upgrade the cluster nodes before adding the cluster to the VMM fabric, but the cluster is still functioning as a Windows Server 2012 R2/2016 cluster.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+If for some reason you need to update the cluster functional level of a cluster that was upgraded outside VMM, right-click the **Cluster** > **Update Version**. This could happen if you upgrade the cluster nodes before adding the cluster to the VMM fabric, but the cluster is still functioning as a Windows Server 2016/2019 cluster.
+
+::: moniker-end
