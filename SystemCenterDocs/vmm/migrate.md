@@ -50,7 +50,7 @@ VMM supports the following types of live migration:
 - **Live migration within a cluster**: You can run a live migration between nodes in the same cluster.
 - **Live migration between nodes in different clusters**: You can migrate between nodes in different clusters.
 - **Live migration of VM storage**: You can migrate storage to update the physical storage available in Hyper-V or to mitigate bottlenecks in storage performance. You can also use storage migration to move, service, or upgrade storage resources, or for migration of a standalone or cluster virtual machine. Storage can be added to either a standalone computer or to a Hyper-V cluster. VMs can be moved to the new storage while they continue to run.
-- **Live Virtual machine and storage migration (Live VSM)**: You can use live system migration (live VSM) to migrate virtual machines and their storage together in a single action.
+- **Live Virtual machine and storage migration**: You can use live system migration (live VSM) to migrate virtual machines and their storage together in a single action.
 - **Concurrent live migration**: You can perform multiple concurrent live migrations of virtual machines and storage. The concurrent limit can be configured manually. Any concurrent live migrations in excess of the limit will be queued.
 
 VMM inspects and validates the configuration settings of a destination host before migration from a source host begins.

@@ -52,7 +52,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
     - Provide a description (optional).
 5. In **Uplink Mode**, select:
     - **Embedded Team** - if you're using Windows Server 2016 or later
-    - **Team** - if you're using Windows Server 2016 and want to use NIC teaming
+    - **Team** - if you're using Windows Server 2012 and want to use NIC teaming
     - **No Uplink Team** - if you're not using any teaming.
 
     **Embedded Team** is the default Uplink mode.
