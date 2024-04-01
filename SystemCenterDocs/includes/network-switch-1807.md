@@ -5,10 +5,11 @@ description: This article describes how to create logical switches in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  21/11/2018
+ms.date:  04/01/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 ## How to create logical switches
@@ -49,73 +50,26 @@ You can set up a virtual switch extension manager (network manager) if you want 
 4. In **General**,
     - Specify a name
     - Provide a description (optional).
-::: moniker range="=sc-vmm-1807"
 5. In **Uplink Mode**, select:
     - **Embedded Team** - if you're using Windows Server 2016 or later
     - **Team** - if you're using Windows Server 2012 and want to use NIC teaming
-    - **No Uplink Team** - if you're not using any teaming
-::: moniker-end    
-::: moniker range="=sc-vmm-2019"
-5. In **Uplink Mode**, select:
-    - **Embedded Team** - if you're using Windows Server 2016 or later
-    - **Team** - if you're using Windows Server 2012 and want to use NIC teaming
-    - **No Uplink Team** - if you're not using any teaming.
-
-    From VMM 2019 UR2, **Embedded Team** is the default Uplink mode.
-::: moniker-end
-::: moniker range="=sc-vmm-1807"
+    - **No Uplink Team** - if you're not using any teaming 
 6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
-::: moniker-end
-::: moniker range="=sc-vmm-2019"
-6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
-    - **Weight** - Weight is the default minimum bandwidth mode. Weight specifies a percentage of bandwidth rather than a specific number of bits per second. Minimum bandwidth is a value ranging from 1 to 100.
-    - **Default** – The system sets the mode to **Weight** if the switch isn't IOV enabled, or **None** if the switch is IOV enabled.
-    - **Absolute** – Minimum bandwidth will be in bits per second.  
-    - **None** – Minimum bandwidth is disabled on the switch. Users can't configure it on any network adapter that is connected to the switch.
-::: moniker-end
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter.
 If you want to enable:
     - Ensure that you've SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
     - Create a native port profile for virtual network adapters that is SR-IOV enabled.
     - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
-::: moniker range="=sc-vmm-1807"
 8. In **Extensions**, if you're using virtual switch extensions, select them and arrange the order. Extensions process network traffic through the switch in the order you specify.
 
 > [!NOTE]
 > Only one forwarding extension can be enabled.
-
-::: moniker-end
-
-::: moniker range="=sc-vmm-2019"
-8. In **Extensions**, if you're using virtual switch extensions, select them and arrange the order. Extensions process network traffic through the switch in the order you specify. 
-
-> [!NOTE]
-> Only one forwarding extension can be enabled. From VMM 2019 UR2, none of the extensions are enabled by default.
-
-::: moniker-end
-::: moniker range="=sc-vmm-1807"
 9. In **Virtual Port**, add one or more port classifications and virtual network adapter port profiles. Every Port Classification must be mapped to a Port Profile.
-::: moniker-end
-::: moniker range="=sc-vmm-2019"
-9. In **Virtual Port**, add one or more port classifications and virtual network adapter port profiles. Every Port Classification must be mapped to a Port Profile. From VMM 2019 UR2, you can view Port Classification to Port Profile mapping on the **Virtual Port** screen.
-::: moniker-end
 10. In **Uplink**, add an uplink port profile, or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it's placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
 
     If *Uplink* is chosen as Embedded Team (Switch Embedded Team or SET), then the only supported load balancing algorithms are Hyper-V Port and Dynamic. Hyper-V Port is the default load balancing algorithm. If *Uplink* mode is chosen as Embedded Team, then Hyper-V Port is the recommended load balancing algorithm; Dynamic isn't recommended.
 
 11. In **Summary**, review the settings and select **Finish**. Verify; the switch created appears in **Logical Switches**.
-::: moniker range="=sc-vmm-2019"
-
-## View logical switch topology
-
->[!NOTE]
-> This feature is available from VMM 2019 UR2.
-
-From VMM 2019 UR2, you can view the logical switch topology. To view, right-click the logical switch name, and then select **View Topology**. The topology diagram displays the following information.
-
-- **Uplink Port Profiles** - Includes information about Load Balancing algorithm, Teaming mode, and Network sites.
-- **Virtual Network Adapters** - Includes information about VM Networks, VLANs, and Port Classifications.
-::: moniker-end
 
 ## Convert virtual switch to logical switch
 

@@ -5,11 +5,11 @@ description: This article describes how to migrate VMs in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/20/2020
+ms.date: 04/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-migration
+ms.custom: intro-migration, engagement-fy24
 ---
 
 
@@ -41,7 +41,6 @@ Using live migration provides many benefits:
 -   **Ease-of-maintenance**: Live migration alleviates the need to take standalone hosts and cluster hosts offline for maintenance and migration purposes, which helps to avoid downtime. With the ability to perform concurrent migrations and maintenance, migration timeframes can become shorter, depending on the time that is required to perform the live migration. In addition, the planning process for Hyper-V mobility is simplified.
 -   **Better hardware utilization**: The distribution of virtual machines can be optimized across the infrastructure. Virtual machines and storage can be moved to standalone servers and clusters with spare capacity, without interrupting availability. Power consumption is reduced as virtual machines can be moved across hosts, and then hosts can be powered down to save energy.
 -   **Failover clustering features**: VMM takes advantage of failover clustering features that were introduced in Windows Server 2012. These features include additional APIs to migrate virtual machines across cluster nodes, and improved attach/detach functionality that enables migration of virtual machines in and out of failover clusters without downtime.
-VMM supports the following types of live migration:
 
 ### Live migration support
 
@@ -51,7 +50,7 @@ VMM supports the following types of live migration:
 - **Live migration within a cluster**: You can run a live migration between nodes in the same cluster.
 - **Live migration between nodes in different clusters**: You can migrate between nodes in different clusters.
 - **Live migration of VM storage**: You can migrate storage to update the physical storage available in Hyper-V or to mitigate bottlenecks in storage performance. You can also use storage migration to move, service, or upgrade storage resources, or for migration of a standalone or cluster virtual machine. Storage can be added to either a standalone computer or to a Hyper-V cluster. VMs can be moved to the new storage while they continue to run.
-- **Live VSM**: You can use live system migration (live VSM) to migrate virtual machines and their storage together in a single action.
+- **Live Virtual machine and storage migration (Live VSM)**: You can use live system migration (live VSM) to migrate virtual machines and their storage together in a single action.
 - **Concurrent live migration**: You can perform multiple concurrent live migrations of virtual machines and storage. The concurrent limit can be configured manually. Any concurrent live migrations in excess of the limit will be queued.
 
 VMM inspects and validates the configuration settings of a destination host before migration from a source host begins.
@@ -97,7 +96,7 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 
 ### Live VSM
 
-Live VMS migrates a VM and its machine storage in a single action.
+Live VSM migrates a VM and its machine storage in a single action.
 
 - To use live VSM, the virtual machine LUN must be masked from the destination host.
 - Live VSM is supported between two standalone hosts that run Hyper-V, starting with Windows Server 2012. The transfer can occur between local disks or SMB 3.0 file shares.
