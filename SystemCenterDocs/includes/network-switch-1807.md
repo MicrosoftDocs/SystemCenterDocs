@@ -67,7 +67,7 @@ If you want to enable:
 9. In **Virtual Port**, add one or more port classifications and virtual network adapter port profiles. Every Port Classification must be mapped to a Port Profile.
 10. In **Uplink**, add an uplink port profile, or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it's placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
 
-    If *Uplink* is chosen as Embedded Team (Switch Embedded Team or SET), then the only supported load balancing algorithms are Hyper-V Port and Dynamic. Hyper-V Port is the default load balancing algorithm. If *Uplink* mode is chosen as Embedded Team, then Hyper-V Port is the recommended load balancing algorithm; Dynamic isn't recommended.
+If *Uplink* is chosen as Embedded Team (Switch Embedded Team or SET), then the only supported load balancing algorithms are Hyper-V Port and Dynamic. Hyper-V Port is the default load balancing algorithm. If *Uplink* mode is chosen as Embedded Team, then Hyper-V Port is the recommended load balancing algorithm; Dynamic isn't recommended.
 
 11. In **Summary**, review the settings and select **Finish**. Verify; the switch created appears in **Logical Switches**.
 
