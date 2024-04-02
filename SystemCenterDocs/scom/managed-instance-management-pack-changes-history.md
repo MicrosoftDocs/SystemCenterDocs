@@ -2,10 +2,10 @@
 ms.assetid: 500910b3-e260-4673-b219-8dc24bc4f916
 title: Features and enhancements in Management Pack for Azure SQL Managed Instance
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Managed Instance.
-author: epomortseva
-ms.author: v-ekaterinap
+author: fkornilov
+ms.author: v-fkornilov
 manager: vvithal
-ms.date: 03/01/2024
+ms.date: 04/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,13 +15,14 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
 
-## March 2024 - 7.3.4.0 CTP
+## March 2024 - 7.4.0.0 RTM
 
 ### What's new
 
 - Updated API with Microsoft Authentication Library (MSAL) in place of deprecated Azure Active Directory Authentication Library (ADAL)
 - Improved "Database Status" monitor by adding two more [database statuses](managed-instance-management-pack-monitoring-configuration.md#database-status-monitoring) for Geo-Replication - COPYING and OFFLINE_SECONDARY
 - Added support for [custom management server resource pools](managed-instance-management-pack-monitoring-pool.md)
+- Added support for selecting a tenant in the 'Entra ID Tenant' monitoring wizard step
 - Added support for [enabling debug logging](managed-instance-management-pack-enable-debugging.md) in Windows Event Log
 - Added new [Operations Manager console task](managed-instance-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Management Server
 - Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression and wildcards for include and exclude from the monitoring
@@ -38,6 +39,7 @@ This article covers new functionality and improvements in Management Pack for Az
 
 - Fixed an issue with the "Database Status" monitor becoming healthy despite the database being in an unhealthy state in some configuration cases
 - Fixed an issue with the client secret expiration date if the Auto-Create Service Principal Name option is selected
+- Fixed an issue with creating multiple Run As accounts per day for different application registrations
 
 ## December 2021 - 7.0.34.0 RTM
 
