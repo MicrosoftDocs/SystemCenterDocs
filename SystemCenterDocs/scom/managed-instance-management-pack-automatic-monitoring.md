@@ -2,10 +2,10 @@
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance.
-author: epomortseva
-ms.author: v-ekaterinap
+author: fkornilov
+ms.author: v-fkornilov
 manager: evansma
-ms.date: 03/05/2024
+ms.date: 04/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -59,6 +59,10 @@ Select an expiration date for the new application client secret based on your co
 If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
 
 ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.png)
+
+Specify the desired Entra ID tenant with a specific Azure SQL Managed Instance.
+
+![Screenshot showing step with selecting Azure tenant.](./media/managed-instance-management-pack/selecting-tenant-id.png)
 
 Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
 
