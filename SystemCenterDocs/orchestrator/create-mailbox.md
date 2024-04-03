@@ -1,8 +1,8 @@
 ---
 title: Create Mailbox
 description: For an on-premises Exchange environment, the Create Mailbox activity creates a new mailbox and a new Active Directory user associated with the new mailbox.
-ms.custom: UpdateFrequency3
-ms.date: 05/07/2019
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 04/03/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
