@@ -94,7 +94,7 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 - Storage migration is per virtual machine.
 - Storage migration doesn't move base (parent) disks, except for snapshot disks.
 
-### Live VSM
+### Live Virtual machine and storage migration (Live VSM)
 
 Live VSM migrates a VM and its machine storage in a single action.
 
