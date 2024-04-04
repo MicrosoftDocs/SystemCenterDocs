@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 09/04/2023
+ms.date: 04/03/2024
 title: Deploy Service Management Automation
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
