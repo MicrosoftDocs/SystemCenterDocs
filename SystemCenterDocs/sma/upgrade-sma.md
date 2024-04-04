@@ -5,11 +5,11 @@ description: This article details the upgrade information and procedures for Ser
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/28/2023
+ms.date: 04/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Upgrade Service Management Automation
