@@ -1,8 +1,8 @@
 ---
 title: Get Mailbox
 description: You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment.
-ms.custom: UpdateFrequency3
-ms.date: 01/24/2018
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 04/03/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

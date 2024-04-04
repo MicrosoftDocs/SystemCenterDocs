@@ -5,11 +5,11 @@ description: This article provides guidance for adding VM templates to the libra
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/02/2018
+ms.date: 04/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Add VM templates to the VMM library

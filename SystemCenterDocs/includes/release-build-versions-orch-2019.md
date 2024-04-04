@@ -25,5 +25,7 @@ The following table lists the release history for Orchestrator 2019.
 |10.19.119.0|[4569536](https://support.microsoft.com/kb/4569536) |August 2020 |Update Rollup 2 |
 |10.19.126.0|[4599686](https://support.microsoft.com/kb/4599686) |March 2021 |Update Rollup 3 |
 |10.19.170.0|[5029811](https://support.microsoft.com/kb/5029811) |July 2023 |Conforms to [GB18030-2022](/azure/compliance/offerings/offering-china-gb-18030) standard |
-|10.19.135.1|[5035767](https://support.microsoft.com/kb/5035767) | March 2024 | Update Rollup 6 |
+|10.19.236.0*<br/> 10.19.135.1**|[5035767](https://support.microsoft.com/kb/5035767) | March 2024 | Update Rollup 6 |
 
+*For ManagementServer, RunbookDesigner and RunbookWorker.<br/>
+**For WebAPI and WebConsole.
