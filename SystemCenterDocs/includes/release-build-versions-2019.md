@@ -66,6 +66,6 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.1226.0|[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0) |August 2023 |1.7.1-0 |Update Rollup 5 - Hotfix |
 |10.19.1234.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |OMI Vulnerability Fix |
 |10.19.1248.0| [v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024|1.8.1-0|Update Rollup 6|
-| - |[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0)|April 2024|1.9.0-0|-|
+|10.19.1254.0|[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0)|April 2024|1.9.0-0|-|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*

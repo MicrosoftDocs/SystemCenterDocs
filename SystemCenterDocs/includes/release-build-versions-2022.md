@@ -50,6 +50,6 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1052.0|[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0) |August 2023 |1.7.1-0 |Update Rollup 1 - Hotfix |
 |10.22.1055.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |OMI Vulnerability Fix |
 |10.22.1070.0|[v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024 |1.8.1-0 |Update Rollup 2 - Hotfix |
-| - |[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0)|April 2024|1.9.0-0|-|
+|10.22.1072.0|[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0)|April 2024|1.9.0-0|-|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
