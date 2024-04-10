@@ -5,8 +5,8 @@ description: This quickstart describes how to migrate from Operations Manager on
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
-ms.custom: UpdateFrequency.5
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
 ms.topic: quickstart
@@ -122,7 +122,7 @@ Below is a quick summary of what can be migrated:
 >[!Note]
 > No 1:1 mapping is permitted between user roles in SCOM Managed Instance to Operations Manager on-premises.
 
-In SCOM Managed Instance, only two user roles are available, whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](/system-center/scom/manage-security-create-runas-account). 
+In SCOM Managed Instance, only two user roles are available, whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](./manage-security-create-runas-account.md). 
 
 Use the following mapping chart to provide access on SCOM Managed Instance with appropriate permissions:
 

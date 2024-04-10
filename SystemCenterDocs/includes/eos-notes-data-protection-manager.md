@@ -5,11 +5,11 @@ description: include file with notes on end of support information for 1801 and 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  08/18/2020
+ms.date:  03/07/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: data-protection-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Data Protection Manager (DPM) has reached the end of support. We recommend you to [upgrade to DPM 2022](/system-center/dpm/upgrade-dpm).
+> This version of Data Protection Manager (DPM) has reached the end of support. We recommend you to [upgrade to DPM 2022](../dpm/upgrade-dpm.md).

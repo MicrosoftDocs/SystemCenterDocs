@@ -2,7 +2,7 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
 ms.service: system-center
-ms.date: 02/01/2024
+ms.date: 03/19/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -24,7 +24,7 @@ This article gives details of the new features supported in System Center - Data
 
 ::: moniker range="sc-dpm-2019"
 
-This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3), [2019 UR4](#new-features-in-dpm-2019-ur4) and [2019 UR5](#new-features-in-dpm-2019-ur5).
+This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3), [2019 UR4](#new-features-in-dpm-2019-ur4), [2019 UR5](#new-features-in-dpm-2019-ur5) and [2019 UR6](#new-features-in-dpm-2019-ur6).
 
 ::: moniker-end
 
@@ -220,6 +220,25 @@ The following example increases the limit to 12 jobs:
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold] 
 "6e7c76f4-a832-4418-a772-8e58fd7466cb"=dword:0000000C
 ```
+
+## New features in DPM 2019 UR6
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR6.
+
+For issues fixed and the installation instructions for UR6, see [KB article](https://support.microsoft.com/help/5035307).  
+
+### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
+
+DPM 2019 UR6 supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](/system-center/dpm/monitor-dpm).
+
+>[!NOTE]
+>If you have been using M365 SMTP with DPM 2019 UR5, you must re-enter the credentials using Basic Authentication.
+
+### Experience improvements for DPM backups to Azure
+
+DPM 2019 UR6 supports listing of online recovery points for a data source along with the expiry time. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
+
+DPM 2019 UR6 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](/azure/backup/backup-azure-security-feature#immutability-support).
 
 ::: moniker-end
 
