@@ -27,7 +27,7 @@ Ensure you've the following:
 - A typical desktop experience and not Core servers.
 
  > [!IMPORTANT]
-  > Microsoft Software Key Storage Provider [KSP](/windows/win32/secgloss/k-gly?redirectedfrom=MSDN#_security_key_storage_provider_gly) is not supported for Operations Manager certificates.
+  > Cryptography API Key Storage Provider ([KSP](/windows/win32/secgloss/k-gly?redirectedfrom=MSDN#_security_key_storage_provider_gly)) is not supported for Operations Manager certificates.
 
   >[!NOTE]
   >If your organization doesn't use AD CS or uses an external certificate authority, use the instructions provided for that application to create a certificate and ensure it meets the following requirements for Operations Manager, and then follow the Import and Installation steps provided:
@@ -59,7 +59,7 @@ Ensure you've the following:
 >[!Important]
 >For this topic, the default settings for AD-CS are as below: 
 > - Standard key length: 2048
-> - Microsoft Software Key Storage Provider: [CSP](/windows/win32/secgloss/c-gly?redirectedfrom=MSDN#_security_cryptographic_service_provider_gly) 
+> - Cryptography API: Cryptographic Service Provider ([CSP](/windows/win32/secgloss/c-gly?redirectedfrom=MSDN#_security_cryptographic_service_provider_gly))
 > - Secure Hash Algorithm: 256 (SHA256)
 >Evaluate these selections against the requirements of your company's security policy.
 
