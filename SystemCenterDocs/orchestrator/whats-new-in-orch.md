@@ -166,4 +166,3 @@ See the following sections for detailed information about the new features/featu
 
 ## Next steps
 [Know the fixed issues](release-notes-orch.md).
-
