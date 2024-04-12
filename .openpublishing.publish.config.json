@@ -12,7 +12,7 @@
         ">= sc-om-2016 <= sc-om-2025",
         ">= sc-sm-2016 <= sc-sm-2025",
         ">= sc-sma-2016 <= sc-sma-2025",
-        ">= sc-spf-2016 <= sc-spf-2025",
+        ">= sc-spf-2016 <= sc-spf-2022",
         ">= sc-vmm-2016 <= sc-vmm-2025"
       ],
       "open_to_public_contributors": false,
