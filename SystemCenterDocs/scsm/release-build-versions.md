@@ -5,7 +5,7 @@ description: This article details the release builds in Service Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/19/2024
+ms.date: 04/12/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
@@ -24,6 +24,18 @@ This article provides information about how to determine your current Microsoft 
 
 > [!NOTE]
 > All System Center Service Manager update rollups are cumulative. This means, you don't need to apply the URs in order; you can always apply the latest update. If you've deployed System Center – Service Manager and never applied an update rollup, you can proceed to install the latest one available.
+
+::: moniker range="sc-sm-2025"
+
+## Service Manager 2025 build versions
+
+The following table lists the build versions for Service Manager 2025.
+
+| Build Number | KB | Release Date | Description |
+| --- | --- |--- |--- |
+| | | September 2024 | General Availability |
+
+::: moniker-end
 
 ::: moniker range="sc-sm-2022"
 

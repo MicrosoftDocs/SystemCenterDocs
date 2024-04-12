@@ -5,7 +5,7 @@ description: This article details the release builds in Operations Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/05/2024
+ms.date: 04/12/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -17,6 +17,14 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+This article lists Microsoft System Center 2025 - Operations Manager build versions.
+
+[!INCLUDE [release-build-versions-2025.md](../includes/release-build-versions-2025.md)]
 
 ::: moniker-end
 
