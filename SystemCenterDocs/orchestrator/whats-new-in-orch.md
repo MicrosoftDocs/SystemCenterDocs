@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 07/20/2023
+ms.date: 04/10/2024
 ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
@@ -14,6 +14,12 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # What's new in System Center Orchestrator
+
+::: moniker range="sc-orch-2025"
+
+This article details the new features supported in System Center 2025 - Orchestrator.
+
+::: moniker-end
 
 ::: moniker range="sc-orch-2022"
 
@@ -150,6 +156,17 @@ Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [
 
 ::: moniker-end
 
+::: moniker range="sc-orch-2025"
+
+## New features in Orchestrator 2025
+
+See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2025.
+
+### Support for SQL Server 2022
+
+Orchestrator 2025 supports SQL Server 2022. [Learn more](/system-center/orchestrator/system-requirements-orch#sql-server).
+
+::: moniker-end
+
 ## Next steps
 [Know the fixed issues](release-notes-orch.md).
-

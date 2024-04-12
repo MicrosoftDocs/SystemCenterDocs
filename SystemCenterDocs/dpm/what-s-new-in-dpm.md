@@ -2,7 +2,7 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
 ms.service: system-center
-ms.date: 03/19/2024
+ms.date: 04/10/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -13,6 +13,14 @@ ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 ---
 
 # What's new in System Center Data Protection Manager
+
+::: moniker range="sc-dpm-2025"
+
+This article gives details of the new features supported in System Center - Data Protection Manager (DPM) 2025.
+
+[!INCLUDE [whats-new-dpm-2025.md](../includes/whats-new-dpm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 

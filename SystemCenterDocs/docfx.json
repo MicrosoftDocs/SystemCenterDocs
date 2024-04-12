@@ -276,23 +276,23 @@
     "groups": {
       "dpm": {
         "dest": "dpm",
-        "moniker_range": ">= sc-dpm-2016 <= sc-dpm-2022"
+        "moniker_range": ">= sc-dpm-2016 <= sc-dpm-2025"
       },
       "orchestrator": {
         "dest": "orchestrator",
-        "moniker_range": ">= sc-orch-2016 <= sc-orch-2022"
+        "moniker_range": ">= sc-orch-2016 <= sc-orch-2025"
       },
       "scom": {
         "dest": "scom",
-        "moniker_range": ">= sc-om-2016 <= sc-om-2022"
+        "moniker_range": ">= sc-om-2016 <= sc-om-2025"
       },
       "scsm": {
         "dest": "scsm",
-        "moniker_range": ">= sc-sm-2016 <= sc-sm-2022"
+        "moniker_range": ">= sc-sm-2016 <= sc-sm-2025"
       },
       "sma": {
         "dest": "sma",
-        "moniker_range": ">= sc-sma-2016 <= sc-sma-2022"
+        "moniker_range": ">= sc-sma-2016 <= sc-sma-2025"
       },
       "spf": {
         "dest": "spf",
@@ -300,7 +300,7 @@
       },
       "vmm": {
         "dest": "vmm",
-        "moniker_range": ">= sc-vmm-2016 <= sc-vmm-2022"
+        "moniker_range": ">= sc-vmm-2016 <= sc-vmm-2025"
       }
     }
   }
