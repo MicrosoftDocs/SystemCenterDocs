@@ -158,9 +158,13 @@ Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [
 
 ::: moniker range="sc-orch-2025"
 
-## New features in Orchestrator 2022
+## New features in Orchestrator 2025
 
 See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2025.
+
+### Support for SQL Server 2022
+
+Orchestrator 2025 supports SQL Server 2022. [Learn more](/system-center/orchestrator/system-requirements-orch#sql-server).
 
 ::: moniker-end
 

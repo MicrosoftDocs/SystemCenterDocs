@@ -19,6 +19,10 @@ ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy24
 
 This article provides the new features supported by System Center 2025 - Service Management Automation (SMA).
 
+### Improved reliability of SMA jobs
+
+With improvements made in Sandbox lifecycle management, we've improved the overall reliability of jobs run in SMA. 
+
 ::: moniker-end
 
 ::: moniker range="sc-sma-2019"

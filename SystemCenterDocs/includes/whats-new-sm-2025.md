@@ -16,3 +16,7 @@ ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 
 See the following sections for information about the new features/features updated in Service Manager (SM) 2025.
 
+## Support to SQL Server 2017
+
+SM 2025 supports new installation of SQL Server 2017.
+

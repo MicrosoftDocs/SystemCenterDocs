@@ -15,3 +15,7 @@ ms.custom: intro-whats-new
 ## New features in DPM 2025
 
 See the following sections for detailed information about the new features/feature updates supported in DPM 2025.
+
+### Windows Server 2025 support
+
+DPM 2025 supports the installation of DPM 2025 on Windows Server 2025 and the protection of Windows Server 2025 workloads. 
