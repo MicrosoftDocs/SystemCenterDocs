@@ -5,7 +5,7 @@ description: This article describes how to create logical switches in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/01/2024
+ms.date: 04/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -48,6 +48,12 @@ This article describes how to create logical switches in the System Center - Vir
 ::: moniker range="sc-vmm-2022"
 
 [!INCLUDE [network-switch-2022.md](../includes/network-switch-2022.md)]
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+
+[!INCLUDE [network-switch-2025.md](../includes/network-switch-2025.md)]
 
 ::: moniker-end
 
