@@ -23,7 +23,7 @@ ms.subservice: orchestrator
 
 This article lists Microsoft System Center 2025 - Orchestrator build versions.
 
-[!INCLUDE [release-build-versions-2025.md](../includes/release-build-versions-orch-2025.md)]
+[!INCLUDE [release-build-versions-2025.md](../includes/release-build-versions-orchestrator-2025.md)]
 
 ::: moniker-end
 
