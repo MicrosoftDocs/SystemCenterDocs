@@ -30,13 +30,13 @@ To register the SCOM Managed Instance resource provider, follow these steps:
 
     :::image type="Microsoft SCOM resource provider" source="media/register-scom-managed-instance-resource-provider/resource-providers-inline.png" alt-text="Screenshot that shows the Microsoft SCOM provider." lightbox="media/register-scom-managed-instance-resource-provider/resource-providers-expanded.png":::
 
-1. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **Microsoft.insights**. If the **Microsoft.insights** provider isn't registered, select the provider, and then select **Register**.
+1. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider, and then select **Register**.
 
     :::image type="Microsoft Insights resource provider" source="media/register-scom-managed-instance-resource-provider/resource-provider-insights-inline.png" alt-text="Screenshot that shows the Microsoft insights provider." lightbox="media/register-scom-managed-instance-resource-provider/resource-provider-insights-expanded.png":::
 
 1. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **Microsoft.Compute**. If the **Microsoft.Compute** provider isn't registered, select the provider, and then select **Register**.
 
-    :::image type="Microsoft compute resource provider" source="media/register-scom-managed-instance-resource-provider/resource-provider-compute-inline.png" alt-text="Screenshot that shows the Microsoft insights provider." lightbox="media/register-scom-managed-instance-resource-provider/resource-provider-compute-expanded.png":::
+    :::image type="Microsoft compute resource provider" source="media/register-scom-managed-instance-resource-provider/resource-provider-compute-inline.png" alt-text="Screenshot that shows the Microsoft compute provider." lightbox="media/register-scom-managed-instance-resource-provider/resource-provider-compute-expanded.png":::
 
 ## Next steps
 
