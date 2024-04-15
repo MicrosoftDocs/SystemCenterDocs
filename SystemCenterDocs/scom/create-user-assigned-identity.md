@@ -38,10 +38,10 @@ The managed service identity (MSI) provides an identity for applications to use 
    The **Create User Assigned Managed Identity** pane opens.
 1. Under **Basics**, do the following:
     - **Project details**:
-        - **Subscription**: Select the Azure subscription in which you want to create the SCOM managed instance.
-        - **Resource group**: Select the resource group in which you want to create the SCOM managed instance.
+        - **Subscription**: Select the Azure subscription in which you want to create the SCOM Managed Instance.
+        - **Resource group**: Select the resource group in which you want to create the SCOM Managed Instance.
     - **Instance details**:
-        - **Region**: Select the region in which you want to create the SCOM managed instance.
+        - **Region**: Select the region in which you want to create the SCOM Managed Instance.
         - **Name**: Enter a name for the instance.
 
     :::image type="Create user assigned managed identity" source="media/create-user-assigned-identity/create-user-assigned-managed-identity.png" alt-text="Screenshot that shows project and instance details for a user-assigned managed identity.":::
@@ -65,23 +65,23 @@ To set the Microsoft Entra admin value in the SQL managed instance that you crea
 
 1. Open the SQL managed instance. Under **Settings**, select **Microsoft Entra admin**.
 
-   :::image type="Microsoft entra admin" source="media/create-user-assigned-identity/microsoft-entra-admin-inline.png" alt-text="Screenshot of the pane for Microsoft Entra admin information." lightbox="media/create-user-assigned-identity/microsoft-entra-admin-expanded.png":::
+   :::image type="Microsoft Entra admin" source="media/create-user-assigned-identity/microsoft-entra-admin.png" alt-text="Screenshot of the pane for Microsoft Entra admin information.":::
 
 1. Select the error-box message to provide **Read** permissions to the SQL managed instance on Microsoft Entra ID. **Grant permissions** pane opens to grant the permissions.
 
    :::image type="Grant permissions" source="media/create-user-assigned-identity/grant-permissions.png" alt-text="Screenshot of grant permissions.":::
 
-1. Select **Grant Permissions** to initiate the operation and once it is completed, you can find a notification for the successful updation of active directory read permissions.
+1. Select **Grant Permissions** to initiate the operation and once it is completed, you can find a notification for successfully updating the Microsoft Entra read permissions.
 
    :::image type="read permissions" source="media/create-user-assigned-identity/read-permissions.png" alt-text="Screenshot of read permissions.":::
 
 1. Select **Set admin**, and search for your MSI. This MSI is the same one that you provided during the SCOM Managed Instance creation flow. You find the admin added to the SQL managed instance.
 
-   :::image type="Microsoft entra admin" source="media/create-user-assigned-identity/microsoft-entra-inline.png" alt-text="Screenshot of MSI information for microsoft entra." lightbox="media/create-user-assigned-identity/microsoft-entra-expanded.png":::
+   :::image type="Microsoft Entra admin" source="media/create-user-assigned-identity/microsoft-entra-inline.png" alt-text="Screenshot of MSI information for Microsoft Entra." lightbox="media/create-user-assigned-identity/microsoft-entra-expanded.png":::
 
-1. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your SCOM managed instance or else your SCOM managed instance creation fails.
+1. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your SCOM Managed Instance or else your SCOM Managed Instance creation fails.
 
-   :::image type="SQL Active directory admin" source="media/create-user-assigned-identity/sql-microsoft-entra-inline.png" alt-text="Screenshot that shows successful Active Directory authentication." lightbox="media/create-user-assigned-identity/sql-microsoft-entra-expanded.png":::
+   :::image type="SQL Microsoft Entra admin" source="media/create-user-assigned-identity/sql-microsoft-entra-inline.png" alt-text="Screenshot that shows successful  Microsoft Entra authentication." lightbox="media/create-user-assigned-identity/sql-microsoft-entra-expanded.png":::
 
 For more information about permissions, see [Directory Readers role in Microsoft Entra ID for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
 
