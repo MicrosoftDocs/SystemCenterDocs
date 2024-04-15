@@ -5,7 +5,7 @@ description: This article details the release builds in Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/22/2024
+ms.date: 04/12/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -18,6 +18,15 @@ ms.subservice: orchestrator
 [!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
 
 ::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+This article lists Microsoft System Center 2025 - Orchestrator build versions.
+
+[!INCLUDE [release-build-versions-2025.md](../includes/release-build-versions-orchestrator-2025.md)]
+
+::: moniker-end
+
 
 ::: moniker range="sc-orch-2022"
 
