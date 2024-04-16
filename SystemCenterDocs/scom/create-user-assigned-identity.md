@@ -61,8 +61,10 @@ Your deployment is now created on Azure. You can access the resource and view it
 To set the Microsoft Entra admin value in the SQL managed instance that you created in [step 3](create-sql-managed-instance.md), follow these steps:
 
 >[!NOTE]
->- You must have Global Administrator or Privileged Role Administrator permissions for the subscription to perform the following operations.
->- Using Groups as Microsoft Entra admin is currently not supported.
+>You must have Global Administrator or Privileged Role Administrator permissions for the subscription to perform the following operations.
+
+>[!Important]
+>Using Groups as Microsoft Entra admin is currently not supported.
 
 1. Open the SQL managed instance. Under **Settings**, select **Microsoft Entra admin**.
 

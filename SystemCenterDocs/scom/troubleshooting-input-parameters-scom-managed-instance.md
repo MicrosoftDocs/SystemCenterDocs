@@ -484,7 +484,7 @@ Follow these steps to run the validation script:
 
 ### Issue: The manager \<domain username\> of the input computer group \<computer group name\> doesn't have the necessary permissions to manage group membership
 
-**Resolution:** Navigate to the **Group properties** and check the **Manage can update membership list** checkbox. For more information, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the **Group properties** and check the **Manage can update membership list** checkbox. For more information, see [Create and configure a computer group](/system-center/scom/create-gmsa-account).
 
 ### General troubleshooting steps for Computer group validations
 
