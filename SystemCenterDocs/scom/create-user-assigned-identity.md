@@ -5,7 +5,7 @@ description: This article describes how to create a user-assigned identity, prov
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 04/16/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -62,6 +62,9 @@ To set the Microsoft Entra admin value in the SQL managed instance that you crea
 
 >[!NOTE]
 >You must have Global Administrator or Privileged Role Administrator permissions for the subscription to perform the following operations.
+
+>[!Important]
+>Using Groups as Microsoft Entra admin is currently not supported.
 
 1. Open the SQL managed instance. Under **Settings**, select **Microsoft Entra admin**.
 
