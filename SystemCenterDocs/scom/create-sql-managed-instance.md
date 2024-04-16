@@ -35,8 +35,8 @@ We recommend the following settings for creating a SQL managed instance:
 - **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration suffices for the SCOM managed instance.
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
 
->[Note]
->Choosing SQL Authentication mode is temporary. Later in [Step 5](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-microsoft-entra-admin-value-in-the-sql-managed-instance&preserve-view=true) it will be updated to use Microsoft Entra ID with MSI.
+   >[!Note]
+   >Choosing SQL Authentication mode is temporary. Later in [Step 5](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-microsoft-entra-admin-value-in-the-sql-managed-instance&preserve-view=true) it will be updated to use Microsoft Entra ID with MSI.
 
 - **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance virtual network by peering both the SCOM Managed Instance virtual network and the SQL Managed Instance virtual network.
 
