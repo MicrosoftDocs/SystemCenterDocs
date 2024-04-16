@@ -5,7 +5,7 @@ description: This article describes how to configure the network firewall.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/15/2024
+ms.date: 04/16/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -82,7 +82,7 @@ Take care of the following issues for all three networking models mentioned earl
 
 1. The Azure SQL Managed Instance virtual network and SCOM managed instance must be peered to establish connectivity. Specifically, the port 1433 (private port) or 3342 (public port) must be reachable from the SCOM managed instance to the SQL managed instance. Configure the NSG rules and firewall rules on both virtual networks to allow ports 1433 and 3342.
 
-1. Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance and the machine being monitored, and vice versa.
+1. Allow communication on ports 5723, 5724, and 443 from the machine being monitored to SCOM Managed Instance.
 
       - If the machine is on-premises, set up the NSG rules and firewall rules on the SCOM Managed Instance subnet and on the on-premises network where the monitored machine is located to ensure specified essential ports (5723, 5724, and 443) are reachable from the monitored machine to the SCOM Managed Instance subnet.
       

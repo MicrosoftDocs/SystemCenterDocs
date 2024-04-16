@@ -5,7 +5,7 @@ description: This article describes the errors that might occur while validating
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/01/2024
+ms.date: 04/16/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -255,7 +255,7 @@ Follow these steps to run the validation script:
 
 **Cause**: Occurs when MSI is not properly configured to access SQL managed instance.
 
-**Resolution**: Check if MSI is configured as Active Directory Admin on SQL managed instance. Ensure that required [Azure Active Directory permissions](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-active-directory-admin-value-in-the-sql-managed-instance&preserve-view=true) are provided to SQL managed instance for MSI authentication to work.
+**Resolution**: Check if MSI is configured as Microsoft Entra Admin on SQL managed instance. Ensure that required [Microsoft Entra ID permissions](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-active-directory-admin-value-in-the-sql-managed-instance&preserve-view=true) are provided to SQL managed instance for MSI authentication to work.
 
 ### Issue: Failed to connect to SQL MI from this instance
 
@@ -480,7 +480,7 @@ Follow these steps to run the validation script:
 
 ### Issue: The input computer group \<computer group name\> isn't managed by the user \<domain username\>
 
-**Resolution:** Navigate to the group properties and set this user as the manager. For more information, see [Create and configure a computer group](/system-center/scom/create-operations-manager-managed-instance?&tabs=prereqs-active#create-and-configure-a-computer-group).
+**Resolution:** Navigate to the group properties and set this user as the manager. For more information, see [Create and configure a computer group](/system-center/scom/create-gmsa-account).
 
 ### Issue: The manager \<domain username\> of the input computer group \<computer group name\> doesn't have the necessary permissions to manage group membership
 

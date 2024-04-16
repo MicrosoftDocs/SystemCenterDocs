@@ -5,7 +5,7 @@ description: This article describes how to create a SQL managed instance in a de
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 04/16/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -34,6 +34,10 @@ We recommend the following settings for creating a SQL managed instance:
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but we recommend the closest region for latency purposes.
 - **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration suffices for the SCOM managed instance.
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
+
+>[Note]
+>Choosing SQL Authentication mode is temporary. Later in [Step 5](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-microsoft-entra-admin-value-in-the-sql-managed-instance&preserve-view=true) it will be updated to use Microsoft Entra ID with MSI.
+
 - **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance virtual network by peering both the SCOM Managed Instance virtual network and the SQL Managed Instance virtual network.
 
    The subnet that you provide to SQL Managed Instance has to be dedicated (delegated) to the SQL managed instance. The provided subnet can't be used to house any other resources.
