@@ -5,7 +5,7 @@ description: This article provides details of what's new in each version of Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/19/2024
+ms.date: 04/16/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -16,6 +16,10 @@ monikerRange: '>=sc-om-2019'
 # What’s new in Azure Monitor SCOM Managed Instance 
 
 This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
+
+## Version 1.0.99
+
+- Enhanced checks for domain connectivity to handle multiple domain controllers during onboarding, pre-patching, and pre-scaling validations.
 
 ## Version 1.0.98
 
