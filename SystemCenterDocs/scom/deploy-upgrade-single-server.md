@@ -4,7 +4,7 @@ description: This article describes how to upgrade a single-server management gr
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
+ms.date: 04/17/2024
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager

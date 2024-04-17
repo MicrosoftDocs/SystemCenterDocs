@@ -5,8 +5,8 @@ description: This guide provides the post-upgrade tasks you must perform after u
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2023
-ms.custom: na, engagement-fy23
+ms.date: 04/17/2024
+ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
