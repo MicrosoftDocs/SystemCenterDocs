@@ -53,14 +53,14 @@ DPM 2022 setup allows you to migrate the DPM database to different SQL Servers d
 
 ### Possible database migration scenarios
 
-The following scenarios exist when you're upgrading DPM 2019 to DPM 2022 using a:
+The following scenarios exist when you're upgrading DPM 2022 to DPM 2025 using a:
 
-1. Local instance and migrating to a remote instance of SQL Server during setup.
-2. Remote instance and migrating to a local instance of SQL Server during setup.
-3. Local instance and migrating to a remote SQL Server Cluster instance during setup.
-4. Local instance and migrating to a different local instance of SQL Server during setup.
-5. Remote instance and migrating to a different remote instance of SQL Server during setup.
-6. Remote instance and migrating to a remote SQL Server Cluster instance during setup.
+- Local instance and migrating to a remote instance of SQL Server during setup.
+- Remote instance and migrating to a local instance of SQL Server during setup.
+- Local instance and migrating to a remote SQL Server Cluster instance during setup.
+- Local instance and migrating to a different local instance of SQL Server during setup.
+- Remote instance and migrating to a different remote instance of SQL Server during setup.
+- Remote instance and migrating to a remote SQL Server Cluster instance during setup.
 
 ### Prepare for a database migration
 
@@ -122,7 +122,7 @@ This example prepares a remote SQL Server cluster to use in migration.
 
 4. Continue with the wizard options and complete the setup.
 
-5. After the setup is complete, the corresponding database name on the instance specified will be *DPMPB_DPMServerName*. As this may be shared with other DPM servers, the naming convention for the DPM database will now be: *DPM2016$DPMDB_DPMServerName*
+5. After the setup is complete, the corresponding database name on the instance specified will be *DPMPB_DPMServerName*. As this may be shared with other DPM servers, the naming convention for the DPM database will now be: *DPM2016$DPMDB_DPMServerName*.
 
 ## Add storage for Modern Backup Storage
 

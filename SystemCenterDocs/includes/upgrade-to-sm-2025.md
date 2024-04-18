@@ -21,13 +21,13 @@ The following sections provide information about how to upgrade to System Center
 > [!WARNING]  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
 >   
-> 1.  Orchestrator  
-> 2.  Service Manager  
-> 3.  Data Protection Manager
-> 4.  Operations Manager  
-> 5.  Configuration Manager  
-> 6.  Virtual Machine Manager  
-> 7.  App Controller  
+> -  Orchestrator  
+> -  Service Manager  
+> -  Data Protection Manager
+> -  Operations Manager  
+> -  Configuration Manager  
+> -  Virtual Machine Manager  
+> -  App Controller  
 
  You can only upgrade to System Center 2025 from System Center 2022.
 
@@ -42,7 +42,7 @@ An in-place upgrade from Service Manager 2022 is supported. An in-place upgrade 
 
 Upgrading to Service Manager 2025 requires preparation. We recommend that you install Service Manager in a lab environment and then replicate your production databases into the lab. After that perform an upgrade of the new installation in the lab.
 
-### Evaluation and Select versions  
+### Evaluation and select versions  
 
 The release of System Center 2022 - Service Manager was available in two different versions:  
 
