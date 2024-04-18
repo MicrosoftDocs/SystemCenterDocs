@@ -20,13 +20,13 @@ ms.topic: article
 
 ::: moniker-end
 
-System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
+System Center Operations Manager relies on Microsoft SQL Server to support its operational, data warehouse, and ACS audit databases. These databases are essential and are created during the deployment of the first management server or ACS collector in your management group.
 
-In a lab environment or small-scale deployment of Operations Manager, SQL Server can be co-located on the first management server in the management group.
+In a lab environment or small-scale deployment of Operations Manager, SQL Server can be colocated on the first management server in the management group.
 
 In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration. In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.
 
-We don't recommend utilization of Operations Manager databases from an SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
+We don't recommend utilization of Operations Manager databases from an SQL Instance that has other application databases to avoid any potential issues with I/O and other hardware resource restrictions.
 
 > [!IMPORTANT]
 > Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure Monitor SCOM Managed Instance](./operations-manager-managed-instance-overview.md), which utilizes Azure SQL MI, and is not reconfigurable.
@@ -121,16 +121,16 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 >
 > - SQL Server database engine instances hosting any of the SCOM databases (that is, **OperationManager**, **OperationManagerDW**, and SSRS databases **ReportServer** & **ReportServerTempDB**).
 > - SQL Server Reporting Services (SSRS) instance.
-> - The SQL Server collation setting must be one of the supported types as described in the [**SQL Server collation setting**](#sql-server-collation-setting) section below.
+> - The SQL Server collation setting must be one of the supported types as described in the section: [**SQL Server collation setting**](#sql-server-collation-setting).
 > - SQL Server Full Text Search is required for all SQL Server database engine instances hosting any of the SCOM databases.
 > - The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components are based on what installation options of Windows Server are supported by SQL Server.
 >
 > Additionally, the Operations Manager Reporting role cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only (SharePoint integrated mode isn't supported).
 
-Additional hardware and software considerations apply in your design planning:
+Other hardware and software considerations apply in your design planning:
 
-- We recommend that you run SQL Server on computers with the NTFS file format.
-- There must be at least 1024 MB of free disk space for the operational and data warehouse database. It's enforced at the time of database creation, and it will likely grow significantly after setup.  
+- It's recommended that SQL Server run on disks in NTFS file format.
+- It's required to have at least 1 GB of free disk space for the operational and data warehouse database, and is enforced at the time of database creation. Keep in mind that the disk utilization of the databases will likely grow significantly after setup, ensure to have plenty of free disk space above this base requirement.
 - .NET Framework 4 is required.
 - .NET Framework 4.8 is supported from Operations Manager 2022.
 - Reporting Server isn't supported on Windows Server Core.
@@ -142,9 +142,9 @@ For more information, see the Hardware & Software Requirements section under the
 
 ## SQL Server collation setting
 
-The following SQL Server and Windows collations are supported by System Center Operations Manager.
+The following SQL Server and Windows collations are supported in System Center Operations Manager.
 
->[!NOTE]
+> [!NOTE]
 > To avoid any compatibility issues in comparing or copying operations, we recommend you use the same collation for the SQL and Operations Manager DB.  
 
 ### SQL Server collation
@@ -172,26 +172,27 @@ The following SQL Server and Windows collations are supported by System Center O
 - Polish_100_CI_AS
 - Finnish_Swedish_100_CI_AS  
 
-If your SQL Server instance isn't configured with one of the supported collations listed earlier, performing a new setup of Operations Manager setup will fail.  However, an in-place upgrade will complete successfully.  
+If your SQL Server instance isn't configured with one of the supported collations listed earlier, performing a new setup of Operations Manager setup fails. However, an in-place upgrade completes successfully.  
 
 ## Firewall configuration
 
 Operations Manager depends on SQL Server to host its databases and a reporting platform to analyze and present historical operational data. The management server, Operations, and Web console roles need to be able to successfully communicate with SQL Server, and it's important to understand the communication path and ports in order to configure your environment correctly.  
 
-If you're designing a distributed deployment that will require SQL Always On Availability Groups to provide failover functionality for the Operations Manager databases, there are additional firewall configuration settings that need to be included in your firewall security strategy.
+If designing a distributed deployment that using SQL Always On Availability Groups, there are extra firewall configuration settings that need to be included in your firewall security strategy.
 
-The following table helps you identify the firewall ports required by SQL Server that will need to be allowed at a minimum in order for server roles in your Operations Manager management group to successfully communicate.
+The following table identifies the firewall ports required by SQL Server in order for management servers to communicate with the databases:
 
 | Scenario | Port | Direction | Operations Manager Role |
 |-----------|---------------|---------------|---------------|
 | SQL Server hosting Operations Manager databases | TCP 1433 \* | Inbound | management server and Web console (for Application Advisor and Application Diagnostics) |
 | SQL Server Browser service | UDP 1434 | Inbound | management server |
 | SQL Server Dedicated Admin Connection | TCP 1434 | Inbound | management server |
-| Additional ports used by SQL Server<br> - Microsoft remote procedure calls (MS RPC)<br> - Windows Management Instrumentation (WMI)<br> - Microsoft Distributed Transaction Coordinator (MS DTC)| TCP 135 | Inbound | management server |
+| Other ports used by SQL Server<br> - Microsoft remote procedure calls (MS RPC)<br> - Windows Management Instrumentation (WMI)<br> - Microsoft Distributed Transaction Coordinator (MS DTC)| TCP 135 | Inbound | management server |
 | SQL Server Always On Availability Group Listener | Administrator configured port | Inbound | management server
 | SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | Inbound | management server and Operations console |  
 
-\* While TCP 1433 is the standard port for the default instance of the Database Engine, when you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port will be defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.
+> [!NOTE]
+> While TCP 1433 is the standard port for the default instance of the Database Engine, when you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port is defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.
 
 For a more detailed overview of the firewall requirements for SQL Server, see [Configure the Windows Firewall to Allow SQL Server Access](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access).
 
@@ -199,17 +200,20 @@ For a more detailed overview of the firewall requirements for SQL Server, see [C
 
 ### Operations Manager database
 
-The Operations Manager database is a SQL Server database that contains all of the data needed by Operations Manager for day-to-day monitoring.  Sizing and configuration of the database server is critical to the overall performance of the management group.  The most critical resource used by the Operations Manager database is the storage subsystem, but CPU and RAM are also significant.
+The Operations Manager database is a SQL Server database that contains all of the data needed by Operations Manager for day-to-day monitoring. Sizing and configuration of the database server is critical to the overall performance of the management group. The most critical resource used by the Operations Manager database is the storage subsystem, but CPU and RAM are also significant.
 
 Factors that influence the load on the Operations Manager database include:
 
-- Rate of operational data collection.  Operational data consists of all the events, alerts, state changes, and performance data collected by agents.  Most of the resources that are used by the Operations Manager database are used to write this data to disk as it comes into the system.  The rate of operational data collected tends to increase as additional management packs are imported and additional agents are added.  The type of computer that an agent is monitoring is also an important factor used when determining the overall rate of operational data collection.  For example, an agent that is monitoring a business-critical desktop computer can be expected to collect less data than an agent monitoring a server that is running an instance of SQL Server with a large number of databases.
-- Rate of instance space changes.  Updating this data in the Operations Manager database is costly relative to writing new operational data.  In addition, when instance space data changes, the management servers make additional queries to the Operations Manager database in order to compute configuration and group changes.  The rate of instance space changes increases as you import additional management packs into a management group.  Adding new agents to a management group also temporarily increases the rate of instance space changes.
-- Number of Operations Consoles and other SDK connections running simultaneously.  Each Operations console reads data from the Operations Manager database.  Querying this data consumes potentially large amounts of storage I/O resources, CPU time, and RAM. Operations consoles that display large amounts of operational data in the Events View, State View, Alerts View, and Performance Data View tend to cause the largest load on the database.  
+- Rate of operational data collection.
+  - The rate of operational data collection is influenced by factors such as the number of management packs imported, the number of agents added, and the type of computer being monitored. For example, an agent monitoring a business-critical desktop computer will collect less data compared to an agent monitoring a server running SQL Server with multiple databases.
+- Rate of instance space changes.
+  - Updating existing data in the Operations Manager database is resource-intensive compared to writing new operational data. Additionally, when there are changes in instance space data, the management servers need to make additional queries to the database to compute configuration and group changes. The rate of instance space changes increases when importing new management packs or adding new agents to the management group.
+- The number of Operations Consoles and other SDK connections running simultaneously also affects the load on the database.
+  - Each Operations console reads data from the Operations Manager database. Querying this data consumes potentially large amounts of storage I/O resources, CPU time, and RAM. Operations consoles that display large amounts of operational data in the Events View, State View, Alerts View, and Performance Data View tend to cause the largest load on the database.  
 
 The Operations Manager database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
@@ -217,7 +221,7 @@ You can set up and upgrade Operations Manager databases with an existing SQL Alw
 
 ### Enable SQL Broker on Operations Manager database
 
-System Center Operations Manager depends on SQL Server Service Broker to implement all task operations. If SQL Server Service Broker is disabled, all task operations will be affected. The resulting behavior may vary according to the task that is initiated. Therefore, it's important to check the state of SQL Server Service Broker whenever unexpected behavior is observed around a task in System Center Operations Manager.
+System Center Operations Manager depends on SQL Server Service Broker to implement all task operations. If SQL Server Service Broker is disabled, all task operations are affected. The resulting behavior can vary according to the task that is initiated. Therefore, it's important to check the state of SQL Server Service Broker whenever unexpected behavior is observed around a task in System Center Operations Manager.
 
 To enable SQL Server Service Broker, follow these steps:
 
@@ -235,32 +239,40 @@ To enable SQL Server Service Broker, follow these steps:
    ALTER DATABASE OperationsManager SET MULTI_USER
    ```
 
-### Operations Manager data warehouse database
+### Operations Manager Data Warehouse database
 
-System Center - Operations Manager inserts data into the Reporting data warehouse in near-real time, it's important to have sufficient capacity on this server that supports writing all of the data that is being collected to the Reporting data warehouse.  As with the Operations Manager database, the most critical resource on the Reporting data warehouse is the storage I/O subsystem.  On most systems, loads on the Reporting data warehouse are similar to the Operations Manager database, but they can vary.  In addition, the workload put on the Reporting data warehouse by reporting is different than the load put on the Operations Manager database by Operations console usage.
+> [!NOTE]
+> The Operations Manager Data Warehouse is also referred to as the "Reporting Data Warehouse" database in some documentation.
 
-Factors that influence the load on the Reporting data warehouse include:
+System Center - Operations Manager inserts data into the data warehouse in near-real time, it's important to have sufficient capacity on this server that supports writing all of the data that is being collected to the data warehouse. As with the Operations Manager database, the most critical resource on the data warehouse is the storage I/O subsystem. On most systems, loads on the data warehouse are similar to the Operations Manager database, but they can vary. In addition, the workload put on the data warehouse by reporting is different than the load put on the Operations Manager database by Operations console usage.
 
-- Rate of operational data collection.  To allow for more efficient reporting, the Reporting data warehouse computes and stores aggregated data in addition to a limited amount of raw data.  Doing this extra work means that operational data collection to the Reporting data warehouse can be slightly more costly than to the Operations Manager database.  This additional cost is typically balanced by the reduced cost of processing discovery data by the Reporting data warehouse versus the Operations Manager database.
-- Number of concurrent reporting users or scheduled report generation.  Because reports frequently summarize large volumes of data, each reporting user can add a significant load on the system.  The number of reports run simultaneously and the type of reports being run both affect overall capacity needs.  Generally, reports that query large date ranges or large numbers of objects require additional system resources.
+Factors that influence the load on the data warehouse include:
 
-Based on these factors, there are several recommended practices to consider when sizing the Reporting data warehouse:
+- Rate of operational data collection.
+  - The data warehouse performs computations and stores aggregated data, along with a limited amount of raw data, to enable more efficient reporting. As a result, the cost of collecting operational data to the data warehouse is slightly higher compared to the Operations Manager database. However, this cost is offset by the reduced processing cost of discovery data in the data warehouse compared to the Operations Manager database.
+- Number of concurrent reporting users or scheduled report generation.  
+  - Each reporting user can add a significant load on the system because reports frequently summarize large volumes of data. The overall capacity needs are influenced by the number of reports run simultaneously and the type of reports being run. Reports that query large date ranges or large numbers of objects require additional system resources.
 
-- Choose an appropriate storage subsystem.  Because the Reporting data warehouse is an integral part of the overall data flow through the management group, choosing an appropriate storage subsystem for the Reporting data warehouse is important.  As with the Operations Manager database, RAID 0 + 1 is often the best choice.  In general, the storage subsystem for the Reporting data warehouse should be similar to the storage subsystem for the Operations Manager database, and the guidance that applies to the Operations Manager database also applies to the Reporting data warehouse.
-- Consider appropriate placement of data logs vs. transaction logs.  As for the Operations Manager database, separating SQL data and transaction logs are often an appropriate choice as you scale up the number of agents.  If both the Operations Manager database and Reporting data warehouse are located on the same server and you want to separate data and transaction logs, you must put the transaction logs for the Operations Manager database on a separate physical volume and disk spindles from the Reporting data warehouse to receive any benefit.  The data files for the Operations Manager database and Reporting data warehouse can share the same physical volume as long as the volume provides adequate capacity and disk I/O performance doesn't negatively affect the monitoring and reporting functionality.
-- Consider placing the Reporting data warehouse on a separate server from the Operations Manager database.  Although smaller-scale deployments can often consolidate the Operations Manager database and Reporting data warehouse on the same server, it's advantageous to separate them as you scale up the number of agents and the volume of incoming operational data.  When the Reporting data warehouse and Reporting Server are on a separate server from the Operations Manager database, you experience better reporting performance.
+Based on these factors, there are several recommended practices to consider when sizing the data warehouse:
 
-The Operations Manager data warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.  
+- Choose an appropriate storage subsystem.
+  - Because the data warehouse is an integral part of the overall data flow through the management group, choosing an appropriate storage subsystem for the data warehouse is important. As with the Operations Manager database, RAID 0 + 1 is often the best choice. In general, the storage subsystem for the data warehouse should be similar to the storage subsystem for the Operations Manager database, and the guidance that applies to the Operations Manager database also applies to the data warehouse.
+- Consider appropriate placement of data logs vs. transaction logs.  
+  - As for the Operations Manager database, separating SQL data and transaction logs are often an appropriate choice as you scale up the number of agents. If both the Operations Manager database and data warehouse are located on the same server and you want to separate data and transaction logs, you must put the transaction logs for the Operations Manager database on a separate physical volume and disk spindles from the data warehouse to receive any benefit. The data files for the Operations Manager database and data warehouse can share the same physical volume as long as the volume provides adequate capacity and disk I/O performance doesn't negatively affect the monitoring and reporting functionality.
+- Consider placing the data warehouse on a separate server from the Operations Manager database.
+  - Although smaller-scale deployments can often consolidate the Operations Manager database and data warehouse on the same server, it's advantageous to separate them as you scale up the number of agents and the volume of incoming operational data. When the data warehouse and Reporting Server are on a separate server from the Operations Manager database, you experience better reporting performance.
+
+The Operations Manager Data Warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.  
 
 ::: moniker range="<=sc-om-1807"
 
 ## SQL Server Always On
 
-SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica.
+SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted on an availability replica.
 
 With System Center 2016 and later - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.
 
-To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
+To set up an availability group, you'll deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
 - Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability).
 - Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
@@ -287,7 +299,7 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 ::: moniker range=">=sc-om-2019"
 
-To set up an availability group, you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
+To set up an availability group, you'll deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
 - Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability).
 - Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
@@ -300,16 +312,16 @@ To set up an availability group, you'll need to deploy a Windows Server Failover
 
 ### Multisubnet string
 
-Operations Manager doesn't support the connection string key words (MultiSubnetFailover=True).  Because an availability group has a listener name (known as the network name or Client Access Point in the WSFC Cluster Manager) depending on multiple IP addresses from different subnets, such as when you deploy in a cross-site failover configuration, client-connection requests from management servers to the availability group listener will hit a connection timeout.  
+Operations Manager doesn't support the connection string key words (`MultiSubnetFailover=True`). Because an availability group has a listener name (known as the network name or Client Access Point in the WSFC Cluster Manager) depending on multiple IP addresses from different subnets, such as when you deploy in a cross-site failover configuration, client-connection requests from management servers to the availability group listener will hit a connection timeout.  
 
-The recommended approach to work around this limitation when you've deployed server nodes in the availability group in a multi-subnet environment is to do the following:
+The recommended approach to work around this limitation with deployed availability group server nodes in a multi-subnet environment is to:
 
 1. Set the network name of your availability group listener to only register a single active IP address in DNS.
 2. Configure the cluster to use a low TTL value for the registered DNS record.
 
-These settings allow, when failover to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
+These settings allow for quicker recovery and resolution of the cluster name with the new IP address when failing over to a node in a different subnet.
 
-Run the following PowerShell commands on any one of the SQL nodes to modify its settings:
+Run the following PowerShell commands on any one of the SQL nodes to modify these settings:
 
 ```PowerShell
 Import-Module FailoverClusters
@@ -333,25 +345,26 @@ Start-ClusterResource <Listener Cluster Resource name>
 Start-ClusterGroup <Listener Cluster Group name>
 ```
 
-When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
+When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur. For configuration information, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
 
 ## Optimizing SQL Server
 
-In general, previous deployment experience with customers shows that performance issues are typically not caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather it's directly related to the configuration of the storage subsystem.  Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance.  Such examples are:
+Previous deployment support experience with customers shows that performance issues are not typically caused by high resource utilization (i.e. processor or memory) with SQL Server itself; rather it's directly related to the configuration of the storage subsystem. Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance. Such examples are:
 
 - Insufficient allocation of spindles for the LUNs to support the IO requirements of Operations Manager.  
-- Hosting transaction logs and database files on the same volume.  These two workloads have different IO and latency characteristics.
+- Hosting transaction logs and database files on the same volume. These two workloads have different IO and latency characteristics.
 - Configuration of TempDB is incorrect with respect to placement, sizing, and so on.
 - Disk partition misalignment of volumes hosting the database transaction logs, database files, and TempDB.
 - Overlooking the basic SQL Server configuration such as using AUTOGROW for database and transaction log files, MAXDOP setting for query parallelism, creating multiple TempDB data files per CPU core, and so on.
 
-Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
+Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager. Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing. The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads. As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
-It's important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Ensure that these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://github.com/Microsoft/diskspd) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code and [Capturing the results using PerfMon](/archive/blogs/josebda/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares).  You can also refer to the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  for initial guidance.
+It's important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Ensure that these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://github.com/Microsoft/diskspd) to evaluate the I/O capacity of the storage subsystem supporting SQL Server. The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code and [Capturing the results using PerfMon](/archive/blogs/josebda/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares).  You can also refer to the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  for initial guidance.
 
 ### NTFS allocation unit size
 
 Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation and is most commonly the result of partition misalignment with stripe unit boundaries. It can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
+
 When formatting the partition that will be used for SQL Server data files, it's recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and tempdb. Be aware, however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it isn't recommended.
 
 ### Reserve memory
@@ -425,18 +438,18 @@ Run the T-SQL query `SELECT * from sys.sysprocesses` to detect page allocation c
 
 If the previous recommendations don't significantly reduce the allocation contention and the contention is on SGAM pages, implement trace flag -T1118 in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages.
 
->[!NOTE]
+> [!NOTE]
 > This trace flag affects every database on the instance of SQL Server.
 
 ### Max degree of parallelism
 
-The default configuration of SQL Server for small to medium size deployments of Operations Manager is adequate for most needs.  However, when the workload of the management group scales upwards towards an enterprise class scenario (typically 2,000+ agent-managed systems and an advanced monitoring configuration, which includes service-level monitoring with advanced synthetic transactions, network device monitoring, cross-platform, and so forth) it's necessary to optimize the configuration of SQL Server described in this section of the document.  One configuration option that hasn't been discussed in previous guidance is MAXDOP.  
+The default configuration of SQL Server for small to medium size deployments of Operations Manager is adequate for most needs. However, when the workload of the management group scales upwards towards an enterprise class scenario (typically 2,000+ agent-managed systems and an advanced monitoring configuration, which includes service-level monitoring with advanced synthetic transactions, network device monitoring, cross-platform, and so forth) it's necessary to optimize the configuration of SQL Server described in this section of the document. One configuration option not discussed in previous guidance is MAXDOP.  
 
-The Microsoft SQL Server max degree of parallelism (MAXDOP) configuration option controls the number of processors that are used for the execution of a query in a parallel plan. This option determines the computing and thread resources that are used for the query plan operators that perform the work in parallel. Depending on whether SQL Server is set up on a symmetric multiprocessing (SMP) computer, a non-uniform memory access (NUMA) computer, or hyperthreading-enabled processors, you've to configure the max degree of parallelism option appropriately.  
+The Microsoft SQL Server max degree of parallelism (MAXDOP) configuration option controls the number of processors that are used for the execution of a query in a parallel plan. This option determines the computing and thread resources that are used for the query plan operators that perform the work in parallel. Depending on whether SQL Server is set up on a symmetric multiprocessing (SMP) computer, a nonuniform memory access (NUMA) computer, or hyperthreading-enabled processors, you've to configure the max degree of parallelism option appropriately.  
 
-When SQL Server runs on a computer with more than one microprocessor or CPU, it detects the best degree of parallelism, that is, the number of processors employed to run a single statement, for each parallel plan execution.  By default, its value for this option is 0, which allows SQL Server to determine the maximum degree of parallelism.
+When SQL Server runs on a computer with more than one microprocessor or CPU, it detects the best degree of parallelism, that is, the number of processors employed to run a single statement, for each parallel plan execution. By default, its value for this option is 0, which allows SQL Server to determine the maximum degree of parallelism.
 
-The stored procedures and queries pre-defined in Operations Manager as it relates to the operational, data warehouse, and even audit database don't include the MAXDOP option, as there's no way during installation to dynamically query how many processors are presented to the operating system, nor does it attempt to hardcode the value for this setting, which could have negative consequences when the query is executed.  
+The stored procedures and queries predefined in Operations Manager as it relates to the operational, data warehouse, and even audit database don't include the MAXDOP option, as there's no way during installation to dynamically query how many processors are presented to the operating system, nor does it attempt to hardcode the value for this setting, which could have negative consequences when the query is executed.  
 
 > [!NOTE]
 > The max degree of parallelism configuration option doesn't limit the number of processors that the SQL Server uses. To configure the number of processors that SQL Server uses, use the affinity mask configuration option.
@@ -446,29 +459,29 @@ MAXDOP=8
 - For servers that use eight or fewer processors, use the following configuration:
 MAXDOP=0 to N
   
-    > [!TIP]
-    > In this configuration, `N` represents the number of processors.
+  > [!TIP]
+  > In this configuration, `N` represents the number of processors.
 
 - For servers that have NUMA configured, MAXDOP shouldn't exceed the number of CPUs that are assigned to each NUMA node.
 - For servers that have hyperthreading enabled, the MAXDOP value shouldn't exceed the number of physical processors.
 - For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value shouldn't exceed the number of physical processors per NUMA node.
 
 You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM. The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB. After performing the suggested optimizations in this section, performance improved. However, a query parallelism bottleneck still persisted. After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 
-Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment isn't a simple exercise. While the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it doesn't take into account several factors, which can influence growth in the near term versus long term.  
+Attempting to estimate the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment isn't a simple exercise. While the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it doesn't take into account several factors, which can influence growth in the near term versus long term.  
 
 The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then reindexed thereafter to defragment and optimize accordingly. This recommendation applies to the ACS database also.
 
-Proactive monitoring of the growth of the operational and data warehouse database should be performed on a daily or weekly cycle.  This will be necessary to identify unexpected and significant growth spurts, and begin troubleshooting in order to determine if it's caused by a bug in a management pack workflow (that is, discovery rule, performance or event collection rule, or monitor or alert rule) or other symptom with a management pack that wasn't identified during testing and quality assurance phase of the release management process.  
+Proactive monitoring of the growth of the operational and data warehouse database should be performed on a daily or weekly cycle. This will be necessary to identify unexpected and significant growth spurts, and begin troubleshooting in order to determine if it's caused by a bug in a management pack workflow (that is, discovery rule, performance or event collection rule, or monitor or alert rule) or other symptom with a management pack that wasn't identified during testing and quality assurance phase of the release management process.  
 
 ### Database autogrow
 
-When the databases file size that has been reserved on disk becomes full, SQL Server can automatically increase the size by a percentage or by a fixed amount. Moreover, a maximum database size can be configured to prevent filling up all the space available on disk.  By default, the Operations Manager database isn't configured with autogrow enabled; only the Data Warehouse and ACS databases are.  
+When the databases file size that has been reserved on disk becomes full, SQL Server can automatically increase the size by a percentage or by a fixed amount. Moreover, a maximum database size can be configured to prevent filling up all the space available on disk. By default, the Operations Manager database isn't configured with autogrow enabled; only the Data Warehouse and ACS databases are.  
 
-Only rely on autogrow as a contingency for unexpected growth.  Autogrow introduces a performance penalty that should be considered when dealing with a highly transactional database.  Performance penalties include:
+Only rely on autogrow as a contingency for unexpected growth. Autogrow introduces a performance penalty that should be considered when dealing with a highly transactional database. Performance penalties include:
 
 - Fragmentation of the log file or database if you don’t provide an appropriate growth increment.
 - If you run a transaction that requires more log space than is available, and you've turned on the autogrow option for the transaction log of that database, then the time it takes the transaction to complete will include the time it takes the transaction log to grow by the configured amount.
@@ -480,15 +493,15 @@ It's recommended to configure these two settings carefully. The particular confi
 
 ### Cluster failover policy
 
-Windows Server Failover Clustering is a high availability platform that is constantly monitoring the network connections and health of the nodes in a cluster.  If a node isn't reachable over the network, then recovery action is taken to recover and bring applications and services online on another node in the cluster.  The default settings out of the box are optimized for failures where there's a complete loss of a server, which is considered a ‘hard’ failure.  These would be unrecoverable failure scenarios such as the failure of non-redundant hardware or power.  In these situations, the server is lost and the goal is for Failover Clustering to quickly detect the loss of the server and rapidly recover on another server in the cluster.  To accomplish this fast recovery from hard failures, the default settings for cluster health monitoring are fairly aggressive.  However, they're fully configurable to allow flexibility for a variety of scenarios.
+Windows Server Failover Clustering is a high availability platform that is constantly monitoring the network connections and health of the nodes in a cluster. If a node isn't reachable over the network, then recovery action is taken to recover and bring applications and services online on another node in the cluster. The default settings out of the box are optimized for failures where there's a complete loss of a server, which is considered a "hard" failure. These would be unrecoverable failure scenarios such as the failure of nonredundant hardware or power. In these situations, the server is lost and the goal is for Failover Clustering to quickly detect the loss of the server and rapidly recover on another server in the cluster. To accomplish this fast recovery from hard failures, the default settings for cluster health monitoring are fairly aggressive. However, they're fully configurable to allow flexibility for various scenarios.
 
-These default settings deliver the best behavior for most customers; however, as clusters are stretched from being inches to possibly miles apart, the cluster may become exposed to additional and potentially unreliable networking components between the nodes.  Another factor is that the quality of commodity servers is constantly increasing, coupled with augmented resiliency through redundant components (such as dual power supplies, NIC teaming, and multi-path I/O), the number of non-redundant hardware failures may potentially be fairly rare.  Because hard failures may be less frequent, some customers may wish to tune the cluster for transient failures, where the cluster is more resilient to brief network failures between the nodes.  By increasing the default failure thresholds, you can decrease the sensitivity to brief network issues that last a short period of time.
+These default settings deliver the best behavior for most customers; however, as clusters are stretched from being inches to possibly miles apart, the cluster may become exposed to additional and potentially unreliable networking components between the nodes. Another factor is that the quality of commodity servers is constantly increasing, coupled with augmented resiliency through redundant components (such as dual power supplies, NIC teaming, and multi-path I/O), the number of nonredundant hardware failures may potentially be fairly rare. Because hard failures may be less frequent, some customers may wish to tune the cluster for transient failures, where the cluster is more resilient to brief network failures between the nodes. By increasing the default failure thresholds, you can decrease the sensitivity to brief network issues that last a short period of time.
 
 It's important to understand that there's no right answer here, and the optimized setting may vary by your specific business requirements and service level agreements.
 
 ### Virtualizing SQL Server
 
-In virtual environments, for performance reasons, it's recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. You can use the old [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) to estimate required IOPS and stress test your data disks to verify. You can test storage performance with the [DiskSpd utility](https://github.com/microsoft/diskspd).  See also [Operations Manager virtualization support](./system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
+In virtual environments, for performance reasons, it's recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. You can use the old [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) to estimate required IOPS and stress test your data disks to verify. You can test storage performance with the [DiskSpd utility](https://github.com/microsoft/diskspd). See also [Operations Manager virtualization support](./system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
 
 ### Always On and recovery model
 
@@ -512,10 +525,10 @@ Behind the scenes of Reporting Services, there's a SQL Server Database instance 
 
 > [!NOTE]
 > From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings don't allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
-> To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+> To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add `\*.\*` to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
 ::: moniker-end
 
 ## Next steps
 
-To understand how to configure hosting the Report data warehouse behind a firewall, see [Connect Reporting Data Warehouse Across a Firewall](deploy-connect-reportingdw-firewall.md).
+To understand how to configure hosting the Report data warehouse behind a firewall, see [Connect the (Reporting) Data Warehouse Across a Firewall](deploy-connect-reportingdw-firewall.md).
