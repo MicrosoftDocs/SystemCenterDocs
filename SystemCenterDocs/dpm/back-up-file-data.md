@@ -4,11 +4,11 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 08/09/2021
 title: Back up file data with DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 98626f09-e4b1-4cbb-9195-651d54e118d1
 ms.custom: UpdateFrequency2
 ---

@@ -5,9 +5,9 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 ms.date: 07/28/2023
-ms.technology: service-provider-foundation
+ms.subservice: service-provider-foundation
 ms.assetid: 49342436-7e22-4c6b-9602-2adddf8f58c9
 monikerRange: '>sc-spf-2016'
 ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy23

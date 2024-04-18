@@ -5,11 +5,11 @@ description: This article describes how to set up and manage Storage Spaces Dire
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/04/2020
+ms.date: 04/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage Storage Spaces Direct clusters

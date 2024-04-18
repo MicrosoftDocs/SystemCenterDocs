@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/20/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -28,6 +28,9 @@ In a medium to enterprise-scale distributed deployment, the SQL Server instance 
 
 We don't recommend utilization of Operations Manager databases from an SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
 
+> [!IMPORTANT]
+> Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure Monitor SCOM Managed Instance](./operations-manager-managed-instance-overview.md), which utilizes Azure SQL MI, and is not reconfigurable.
+
 ## SQL Server requirements
 
 ::: moniker range=">sc-om-1807"
@@ -45,6 +48,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 > - Operations Manager 2019 supports SQL 2019 with **CU8 or later**.
 > - For SQL 2019 and SQL 2022 use [ODBC](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) 17.3 or later, and [MSOLEDBSQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) 18.2 or later.
 > - If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](/sql/database-engine/configure-windows/configure-sql-server-encryption)
+
 
 ::: moniker-end
 

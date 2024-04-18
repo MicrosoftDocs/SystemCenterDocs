@@ -5,11 +5,11 @@ description: This article provides guidance for adding files to the library in t
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/02/2018
+ms.date: 02/19/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Add file-based resources to the VMM library

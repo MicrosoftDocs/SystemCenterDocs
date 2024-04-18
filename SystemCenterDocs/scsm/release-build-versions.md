@@ -5,10 +5,10 @@ description: This article details the release builds in Service Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/23/2023
+ms.date: 03/19/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-manager
+ms.service: system-center
+ms.subservice: service-manager
 ms.custom: engagement-fy23
 ---
 

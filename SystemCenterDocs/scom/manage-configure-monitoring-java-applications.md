@@ -4,10 +4,10 @@ description: This article describes how to configure monitoring of Java applicat
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/20/2017
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 02/08/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: ec45bdd7-cc61-4c81-8d1c-a4aae303f892
 ---

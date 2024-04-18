@@ -2,10 +2,10 @@
 title: Runbook Samples
 description: This article describes the instructions for the build and test sample runbooks using the standard activities.
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7dcf9d0a-db63-48ad-9fb8-525147ba62b7

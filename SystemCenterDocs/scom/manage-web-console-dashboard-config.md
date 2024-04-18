@@ -5,11 +5,11 @@ description: This article describes how to manage the configuration of the HTML5
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/16/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
+ms.date: 02/08/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
 monikerRange: '>sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

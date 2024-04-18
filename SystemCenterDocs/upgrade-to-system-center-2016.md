@@ -1,12 +1,12 @@
 ---
 description: This article provides information about how to upgrade to System Center 2016
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 keywords:
-ms.date: 10/12/2016
+ms.date: 03/07/2024
 title: Upgrade to System Center 2016
 ms.assetid: 4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 ---
@@ -156,7 +156,7 @@ Upgrade:
 
     In other words, if it's off, let it remain off and if it's on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
 
-    ![Active Directory Connector wizard](/system-center/scsm/media/upgrade-environment/sm-adconnector01.png)
+    ![Active Directory Connector wizard](./scsm/media/upgrade-environment/sm-adconnector01.png)
 
 ### Upgrade steps for custom development
 With the System Center 2016 - Service Manager release, the product has moved to support .NET 4.5.1. The tool set to support this movement to .NET 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by third party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.

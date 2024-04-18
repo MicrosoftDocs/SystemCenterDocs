@@ -5,12 +5,12 @@ description: This article describes how to set up logical networks in the VMM 20
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/04/2020
+ms.date: 04/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 monikerRange: 'sc-vmm-2019'
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Set up logical networks in the VMM 2019 UR1 and later fabric

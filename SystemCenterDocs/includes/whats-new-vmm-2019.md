@@ -2,13 +2,13 @@
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
 description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, UR2, UR3, UR4, and UR5.
-author:  jyothisuri
-ms.author: jsuri
-manager:  mkluck
-ms.date:  04/19/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date:  03/19/2024
 ms.topic:  include
-ms.prod:  system-center
-ms.technology:  virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 
@@ -412,3 +412,15 @@ VMM 2019 UR5 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more](/s
 ### Discover Arc-enabled SCVMM from VMM console
 
 VMM 2019 UR5 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2019&preserve-view=true).
+
+## New features in VMM 2019 UR6
+
+The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 6 (UR6).
+
+For problems fixed in UR6, and the installation instructions for UR6, see the [KB article](https://support.microsoft.com/kb/5035468).
+
+### Improved Arc-enabled SCVMM Discovery tab
+
+The **Azure Arc** tab now highlights the latest feature additions to Arc-enabled SCVMM which includes support for Azure management services such as Microsoft Defender for Cloud, Azure Update Manager, Azure Monitor, Microsoft Sentinel, and more. [Learn more](https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-azure-management-capabilities-for-azure-arc-enabled/ba-p/3947253).
+
+If you are running WS 2012 and 2012R2 host and guest operating systems, the Azure Arc blade now provides guidance to continue remaining in support state.

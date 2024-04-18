@@ -1,12 +1,12 @@
 ---
 title: Get Remote Mailbox (Hybrid)
 description: You can use the Get Remote Mailbox (Hybrid) activity to retrieve the mail-related attributes of one or more users in on-premises Active Directory that are associated with mailboxes in the cloud-based service (hybrid environment).
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8172f3a7-8890-4ef1-9c0f-ff6d81ec9f33
@@ -60,9 +60,9 @@ This activity has no required properties.
 | Archive Database   | Specifies the ID of the archive database.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Archive GUID   | Specifies the unique archive identifier for the mailbox archive.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Archive Name   | Specifies the name of the archive mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
-| Archive Quota   | Specifies the maximum size of the archive mailbox.<br>It be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default value is Byte, when the unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Archive Quota   | Specifies the maximum size of the archive mailbox.<br>It can be either **unlimited** or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default value is Byte, when the unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
 | Archive Status   | Indicates the archive status (Active or None).   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
-| Archive Warning Quota   | Specifies the mailbox size at which a warning message is sent, when this size is exceeded<br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where the unit can be one of the following: KB, MB, GB, TB. The default unit is Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Archive Warning Quota   | Specifies the mailbox size at which a warning message is sent, when this size is exceeded<br>The size can be either **unlimited** or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where the unit can be one of the following: KB, MB, GB, TB. The default unit is Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
 | Bypass Moderation From Senders Or Members   | Specifies the list of senders for whom moderation is to be bypassed.   | Equals<br>Does not equal   |
 | Calendar Version Store Disabled   | Indicates whether calendar items in this mailbox will be repaired by the Calendar Repair Assistant.   | Equals<br>Does not equal   |
 | Custom Attribute 1 - 15   | Custom attribute value.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
@@ -81,7 +81,7 @@ This activity has no required properties.
 | Extensions   | Extensions list.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | External Directory Object Id   | External directory object ID.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Forwarding Address   | Specifies the forwarding address for a mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
-| Grant Send On Behalf To   | Specifies the list of users with "send on behalf" rights for this mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
+| Grant Send On Behalf To   | Specifies the list of users with **send on behalf** rights for this mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | GUID   | Unique identifier for this object.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Has Picture   | Indicates whether a picture has been associated with this mailbox.   | Equals<br>Does not equal   |
 | Has Spoken Name   | Indicates whether a spoken name has been associated with this mailbox.   | Equals<br>Does not equal   |
@@ -102,8 +102,8 @@ This activity has no required properties.
 | Mailbox Move Target MDB   | Specifies the Active Directory identifier of the database that the mailbox is being copied to.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Mail Tip   | Mail tip.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Mail Tip Translations   | Mail tip translation list.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
-| Max Receive Size   | Specifies the size limit of the received messages.<br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte when the unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
-| Max Send Size   | Specifies the size limit for received messages. <br>The size can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Max Receive Size   | Specifies the size limit of the received messages.<br>The size can be either **unlimited** or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte when the unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
+| Max Send Size   | Specifies the size limit for received messages. <br>The size can be either **unlimited** or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of the following: KB, MB, GB, TB. The default unit it Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
 | Moderated By   | Specifies the list of users that are responsible for moderating this mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 | Moderation Enabled   | Indicates whether moderation is enabled for this mailbox.   | Equals<br>Does not equal   |
 | Name   | Specifies the name associated with this object.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |

@@ -1,14 +1,14 @@
 ---
 title: System Center - Service Manager parts
 description: Learn about the six major parts of System Center - Service Manager.
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/23/2018
-ms.technology: service-manager
+ms.date: 03/18/2024
+ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # System Center - Service Manager parts

@@ -5,11 +5,11 @@ description: This article describes how to upgrade a Web console to the latest r
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/15/2018
-ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.date: 01/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
 monikerRange: 'sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

@@ -5,9 +5,9 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
-ms.date: 08/07/2023
-ms.technology: service-management-automation
+ms.service: system-center
+ms.date: 04/03/2024
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
@@ -57,7 +57,7 @@ SMA also has deep integration with Microsoft Azure Pack; however, you no longer 
 
 The following diagram illustrates each of the SMA features, and the communication with a Microsoft Azure Pack installation.
 
-![SMA Architecture diagram.](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
+![SMA Architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)
 
 
 -   The SMA web service communicates with Microsoft Azure Pack, and authenticates users.

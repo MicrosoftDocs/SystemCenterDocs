@@ -2,13 +2,13 @@
 ms.assetid: 1e6e82dd-2ba6-45f2-8340-8efaeae1d4a6
 title: include file
 description: include file to provide system requirements for Orchestrator 1807, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/31/2018
 ms.custom: na
-author: jyothisuri
-ms.prod: system-center-threshold
-ms.technology: Orchestrator
+ms.service: system-center
+ms.subservice: Orchestrator
 ms.topic: include
 ---
 

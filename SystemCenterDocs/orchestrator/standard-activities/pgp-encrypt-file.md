@@ -2,10 +2,10 @@
 title: PGP Encrypt File
 description: This article describes the PGP Encrypt File activity.
 ms.date: 05/07/2019
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1866b4f2-8755-43d0-89a3-dbeaa948a508

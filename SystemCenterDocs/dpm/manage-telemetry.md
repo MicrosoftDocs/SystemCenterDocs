@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date:  10/13/2022
 ms.topic:  article
-ms.prod:  system-center
-ms.technology: data-protection-manager
+ms.service: system-center
+ms.subservice: data-protection-manager
 MonikerRange: sc-dpm-2019||sc-dpm-2016||sc-dpm-2022
 ms.custom: UpdateFrequency2
 ---

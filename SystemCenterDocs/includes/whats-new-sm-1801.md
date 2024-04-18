@@ -1,14 +1,14 @@
 ---
 title:  include file
 description: include file to describe the new features and other changes in System Center 1801 - Service Manager.
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-2016
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
 keywords:  
 ms.date: 05/08/2018
-ms.technology:  service-manager
+ms.subservice:  service-manager
 ms.assetid:  87385ef8-1875-477c-8e6c-efc05028aaa6
 ---
 

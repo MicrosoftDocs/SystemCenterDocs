@@ -6,10 +6,10 @@ ms.custom: engagement-fy23, UpdateFrequency2
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/28/2023
+ms.date: 04/10/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Obtain a certificate for use with Windows Servers and System Center Operations Manager
@@ -23,8 +23,11 @@ This article describes how to obtain a certificate and use with Operations Manag
 Ensure you've the following:
 
 - AD-CS installed and configured in the environment with web services **or** a third party Certificate Authority with certificates that match the required settings shown.
-- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/configure-https-binding-windows-server-ca).
+- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](./configure-https-binding-windows-server-ca.md).
 - A typical desktop experience and not Core servers.
+
+ > [!IMPORTANT]
+  > Cryptography API Key Storage Provider ([KSP](/windows/win32/secgloss/k-gly?redirectedfrom=MSDN#_security_key_storage_provider_gly)) is not supported for Operations Manager certificates.
 
   >[!NOTE]
   >If your organization doesn't use AD CS or uses an external certificate authority, use the instructions provided for that application to create a certificate and ensure it meets the following requirements for Operations Manager, and then follow the Import and Installation steps provided:
@@ -56,7 +59,7 @@ Ensure you've the following:
 >[!Important]
 >For this topic, the default settings for AD-CS are as below: 
 > - Standard key length: 2048
-> - Microsoft Software Key Storage Provider: CSP 
+> - Cryptography API: Cryptographic Service Provider ([CSP](/windows/win32/secgloss/c-gly?redirectedfrom=MSDN#_security_cryptographic_service_provider_gly))
 > - Secure Hash Algorithm: 256 (SHA256)
 >Evaluate these selections against the requirements of your company's security policy.
 

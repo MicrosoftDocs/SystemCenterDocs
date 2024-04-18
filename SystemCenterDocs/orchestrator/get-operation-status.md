@@ -3,10 +3,10 @@ title: Get Operation Status
 description: The Get Operation Status activity is used to get the status of the specified operation.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 12a83835-4c84-4474-a8e0-df70d88e2818

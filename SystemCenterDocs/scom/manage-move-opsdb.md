@@ -5,10 +5,10 @@ description: This article describes how to move the Operations Manager operation
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/17/2018
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 01/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

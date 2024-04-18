@@ -5,11 +5,11 @@ description: This article describes how to create logical switches in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/04/2020
+ms.date: 04/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 # Create logical switches
 
@@ -33,9 +33,21 @@ This article describes how to create logical switches in the System Center - Vir
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-1807"
+::: moniker range="sc-vmm-1807"
 
 [!INCLUDE [network-switch-1807.md](../includes/network-switch-1807.md)]
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+[!INCLUDE [network-switch-2019.md](../includes/network-switch-2019.md)]
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+[!INCLUDE [network-switch-2022.md](../includes/network-switch-2022.md)]
 
 ::: moniker-end
 

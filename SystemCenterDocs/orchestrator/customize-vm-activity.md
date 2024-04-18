@@ -2,10 +2,10 @@
 title: Customize VM Activity
 description: The Customize VM activity is used in a runbook to customize a virtual machine using a designated script.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f6e414a7-8505-432c-9da1-052ab78cdace

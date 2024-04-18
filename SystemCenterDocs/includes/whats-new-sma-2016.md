@@ -1,14 +1,14 @@
 ---
 description: include file to describe the new features in Service Management Automation (SMA) 2016
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-threshold
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
 keywords:  
 ms.date: 01/22/2018
 title:  include file
-ms.technology:  service-management-automation
+ms.subservice:  service-management-automation
 ---
 
 ## What's new in SMA 2016

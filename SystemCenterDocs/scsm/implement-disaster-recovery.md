@@ -1,14 +1,14 @@
 ---
 title: Implement disaster recovery
 description: Describes the steps needed to recover from potential software and equipment failures in your Service Manager environment.
-ms.prod: system-center
+ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/23/2018
-ms.technology: service-manager
+ms.date: 01/22/2024
+ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Implement Service Manager disaster recovery

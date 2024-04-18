@@ -2,10 +2,10 @@
 title: Reimage VM Instance
 description: The Reimage Role Instance activity requests a reimage of a role instance that is running in a deployment.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2ab3be4a-3f87-4f77-9a35-7d077a84cfd0

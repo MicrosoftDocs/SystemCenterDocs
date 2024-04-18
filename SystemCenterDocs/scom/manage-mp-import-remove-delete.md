@@ -5,10 +5,10 @@ description: This article describes how to import, export and remove an Operatio
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/24/2023
+ms.date: 02/19/2024
 ms.custom: engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

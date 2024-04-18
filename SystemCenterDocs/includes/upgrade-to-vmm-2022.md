@@ -2,13 +2,13 @@
 ms.assetid:
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2019.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 12/13/2023
 ms.topic: include
-ms.prod:  system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 ## Upgrade to System Center 2022 - Virtual Machine Manager

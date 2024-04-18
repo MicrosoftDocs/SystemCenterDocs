@@ -5,17 +5,17 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/18/2023
+ms.date: 03/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Features and enhancements in Management Pack for SQL Server Dashboards
 
 This article covers new functionality and improvements in Management Pack for SQL Server Dashboards.
 
-## December 2023 - 7.3.0.0 CTP
+## January 2024 - 7.4.0.0 RTM
 
 ### What's new
 
@@ -23,7 +23,7 @@ This article covers new functionality and improvements in Management Pack for SQ
   - improved keyboard navigation
   - improved color contrast in dashboards for better legibility
   - reworked high contrast theme for dashboards
-  - added support of screen-reading software
+  - added support for screen-reading software
 
 ### Bug fixes
 

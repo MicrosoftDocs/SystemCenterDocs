@@ -1,12 +1,12 @@
 ---
 title: Delete Collection Rule Activity
 description: Describes the configuration properties for the delete collection rule activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency3
-ms.date: 03/09/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/07/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 728e1e07-f776-4080-8ee2-188affb15224
@@ -61,9 +61,9 @@ optional properties into published data.
 
   - **Query Rule**: a WQL query string or a predefined query saved on the Configuration Manager server
 
-  - **Include Collection**: a collection whose members will be included in this collection’s membership
+  - **Include Collection**: a collection whose members are included in this collection’s membership
 
-  - **Exclude Collection**: a collection whose members will be excluded in this collection’s membership
+  - **Exclude Collection**: a collection whose members are excluded in this collection’s membership
 
 
 ## Delete collection published data

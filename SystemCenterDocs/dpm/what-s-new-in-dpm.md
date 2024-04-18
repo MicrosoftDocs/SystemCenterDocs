@@ -1,10 +1,10 @@
 ---
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
-ms.prod: system-center
-ms.date: 01/08/2024
+ms.service: system-center
+ms.date: 03/19/2024
 title: What's new in System Center DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -24,7 +24,7 @@ This article gives details of the new features supported in System Center - Data
 
 ::: moniker range="sc-dpm-2019"
 
-This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3), [2019 UR4](#new-features-in-dpm-2019-ur4) and [2019 UR5](#new-features-in-dpm-2019-ur5).
+This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3), [2019 UR4](#new-features-in-dpm-2019-ur4), [2019 UR5](#new-features-in-dpm-2019-ur5) and [2019 UR6](#new-features-in-dpm-2019-ur6).
 
 ::: moniker-end
 
@@ -189,11 +189,11 @@ For issues fixed and the installation instructions for UR5, see the [KB article]
 
 ### Support for SQL Server 2022
 
-DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### Back up support for Windows Server 2022
 
-DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019&preserve-view=true).
 
 ### End of support for vSphere 5.5
 
@@ -201,11 +201,11 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 
 ### Support for vSphere 7.0
 
-DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
+DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019&preserve-view=true).
 
 ### Support for Microsoft 365 SMTP
 
-DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm).
+DPM 2019 UR5 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2019#configure-email-for-dpm&preserve-view=true).
 
 ### Increase maximum parallel online backups
 
@@ -220,6 +220,25 @@ The following example increases the limit to 12 jobs:
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold] 
 "6e7c76f4-a832-4418-a772-8e58fd7466cb"=dword:0000000C
 ```
+
+## New features in DPM 2019 UR6
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR6.
+
+For issues fixed and the installation instructions for UR6, see [KB article](https://support.microsoft.com/help/5035307).  
+
+### Support for Windows and Basic SMTP Authentication for DPM email reports and alerts  
+
+DPM 2019 UR6 supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](/system-center/dpm/monitor-dpm).
+
+>[!NOTE]
+>If you have been using M365 SMTP with DPM 2019 UR5, you must re-enter the credentials using Basic Authentication.
+
+### Experience improvements for DPM backups to Azure
+
+DPM 2019 UR6 supports listing of online recovery points for a data source along with the expiry time. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
+
+DPM 2019 UR6 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](/azure/backup/backup-azure-security-feature#immutability-support).
 
 ::: moniker-end
 
@@ -419,7 +438,7 @@ The new method has the following advantages:
 
 - After the recovery point is mounted, file browsing during item level recovery is faster for recovery points with many files and folders.
 
-We recommended you to update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](https://learn.microsoft.com/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
+We recommended you to update your DPM 2016 installation to Hotfix for Update Rollup 10 to benefit from the enhancement. Ensure that you also [update your MARS Agent](/azure/backup/upgrade-mars-agent) to the latest version (2.0.9262.0 or later).
 
 ::: moniker-end
 
