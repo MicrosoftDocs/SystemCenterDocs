@@ -1,15 +1,15 @@
 ### YamlMime:Hub
 
 title: System Center documentation
-summary: System Center documentation for versions 2016 and above. The documentation covers the LTSC version of System Center.
+summary: System Center documentation for versions 2016 and higher. The documentation covers the LTSC and SAC versions of System Center. SAC versions aren't maintained and will be archived soon.
 
 metadata:
   title: System Center documentation
-  description: System Center documentation for versions 2016 and above. The documentation covers the LTSC version of System Center.
+  description: System Center documentation for versions 2016 and higher. The documentation covers the LTSC and SAC versions of System Center. SAC versions aren't maintained and will be archived soon.
   ms.topic: hub-page
   author: PriskeyJeronika-MS
   ms.author: apexprodleads
-  ms.date: 04/03/2024
+  ms.date: 04/18/2024
   ms.service: system-center
   ms.custom: intro-landing-hub
 conceptualContent:
