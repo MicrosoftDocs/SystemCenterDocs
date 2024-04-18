@@ -5,10 +5,10 @@ description: This article describes how to upgrade an Operations Manager agent t
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 04/17/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
-monikerRange: ' sc-om-1801 || sc-om-2019 || sc-om-2022'
+monikerRange: ' sc-om-1801 || sc-om-2019 || sc-om-2022 || sc-om-2025 '
 ms.subservice: operations-manager
 ms.topic: article
 ---
@@ -20,6 +20,14 @@ ms.topic: article
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
 ::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2025. You should first verify that the agents meet the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+
+::: moniker-end
+
 
 ::: moniker range="sc-om-2019"
 
@@ -33,6 +41,13 @@ Use the following procedures to upgrade an agent running on Windows or Linux to 
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2022. You should first verify that the agents meet the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2025. You should first verify that the agents meet the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+
+::: moniker-end
+
 
 ::: moniker range=">=sc-om-2019"
 
@@ -62,6 +77,14 @@ If you're upgrading agents that are deployed to a computer that has other System
 -   If the agent is installed on a computer that has System Center 2019 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2019 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
 
 ::: moniker-end
+
+::: moniker range="sc-om-2025"
+If you're upgrading agents that are deployed to a computer that has other System Center 2022 Operations Manager features installed, you must do the following:
+
+-   If the agent is installed on a computer that has System Center 2022 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2022 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
+
+::: moniker-end
+
 
 ::: moniker range=">=sc-om-2019"
 
@@ -143,6 +166,12 @@ Manually installed agents are agents that were installed manually either from th
 ::: moniker range="sc-om-2022"
 
 3.  In the Agent Managed pane, verify that the value listed in the **Version** column is 10.22.10118.0.
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+3.  In the Agent Managed pane, verify that the value listed in the **Version** column is \<build number\>.
 
 ::: moniker-end
 

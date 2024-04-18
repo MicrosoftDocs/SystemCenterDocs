@@ -5,12 +5,12 @@ description: This guide provides information on how to upgrade to Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
+ms.date: 04/17/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
-monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019 || sc-om-2022'
+monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019 || sc-om-2022 || sc-om-2025'
 ---
 
 # Upgrading System Center Operations Manager
@@ -18,6 +18,19 @@ monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019 || sc-om-2022'
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+This section of the Deployment Guide provides information about how to upgrade to System Center 2025 from an older supported version. You can upgrade to Operations Manager 2025 from Operations Manager versions 2022.
+
+It's assumed in this guide that you're performing an upgrade from System Center 2022.
+
+>[!Note]
+>If you upgrade from System Center Operation Manager 2022 or earlier, ensure to remove the duplicate management pack aliases. For more information on how to remove the management pack aliases, see [Remove duplicate Management pack aliases](/troubleshoot/system-center/scom/remove-duplicate-management-pack-aliases).
+
+For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see Deploying System Center Operations Manager.
 
 ::: moniker-end
 
@@ -84,6 +97,13 @@ There are several options for upgrade:
 
 ::: moniker-end
 
+::: moniker range="sc-om-2025"
+
+3. If you want to maintain your earlier version of Operations Manager (2022) Operations Manager environment, you can install version 2025 in parallel, upgrade your agents, and multi-home them between both management groups.
+
+::: moniker-end
+
+
 ::: moniker range="sc-om-2019"
 
 ## Supported coexistence
@@ -122,6 +142,25 @@ System Center 2022 - Operations Manager supports an in-place upgrade from the fo
 - System Center 2019
 
 ::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+## Supported coexistence
+
+The following table lists the scenarios in which coexistence between Operations Manager 2025 and earlier versions of Operations Manager is supported.
+
+| Version | Management Group Coexistence |
+|:--- |:---|
+|  Operations Manager 2022 RTM to the latest update| Yes|
+
+## In-place upgrade
+
+System Center 2025 - Operations Manager supports an in-place upgrade from the following versions:
+
+- System Center 2022
+
+::: moniker-end
+
 
 ::: moniker range=">=sc-om-2019"
 
@@ -170,6 +209,17 @@ The following upgrade path supports customers in an Operations Manager scenario 
 Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md#how-to-upgrade-agents-in-a-parallel-deployment).
 
 ::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+## High level overview of upgrading agents and running two environments
+
+The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2025 Operations Manager on your upgrade path are fully capable of working with native Operations Manager 2022 functionality.
+
+Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md#how-to-upgrade-agents-in-a-parallel-deployment).
+
+::: moniker-end
+
 
 ::: moniker range=">=sc-om-2019"
 

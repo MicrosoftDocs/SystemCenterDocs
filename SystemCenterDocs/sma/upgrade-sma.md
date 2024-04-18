@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Ser
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/03/2024
+ms.date: 04/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -13,6 +13,14 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Upgrade Service Management Automation
+
+::: moniker range="=sc-sma-2025"
+
+This article provides the upgrade information for System Center 2025 - Service Management Automation (SMA).
+
+[!INCLUDE [upgrade-to-sma-2025.md](../includes/upgrade-to-sma-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="=sc-sma-2022"
 

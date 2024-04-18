@@ -5,7 +5,7 @@ description: This article describes how to upgrade from an evaluation version of
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2023
+ms.date: 04/17/2024
 ms.custom: na, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager

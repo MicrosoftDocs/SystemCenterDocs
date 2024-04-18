@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 04/17/2024
 title: Upgrade your System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -14,6 +14,14 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Upgrade your DPM installation
+
+::: moniker range="sc-dpm-2025"
+
+This article provides the upgrade information for System Center 2025 - Data Protection Manager (DPM).
+
+[!INCLUDE [upgrade-to-dpm-2025.md](../includes/upgrade-to-dpm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 
