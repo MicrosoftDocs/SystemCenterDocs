@@ -15,8 +15,8 @@ monikerRange: '>=sc-om-2019'
 
 # Monitor Azure and Off-Azure Virtual machines with Azure Monitor SCOM Managed Instance (preview)
 
->[!NOTE]
->This feature is currently in preview.
+> [!NOTE]
+> This feature is currently in preview.
 
 Azure Monitor SCOM Managed Instance provides a cloud-based alternative for Operations Manager users providing monitoring continuity for cloud and on-premises environments across the cloud adoption journey.
 
@@ -39,6 +39,7 @@ The following are the supported monitoring scenarios:
 |No Line of sight on-premises agent|Trusted/Untrusted|Managed Gateway and OpsConsole|
 
 SCOM Managed Instance users will be able to:
+
 - Monitor VMs and applications which are in untrusted domain/workgroup.
 - Onboard endpoints (including Agent installation and setup) seamlessly from SCOM Managed Instance portal.
 - Set up and manage Gateways seamlessly from SCOM Managed Instance portal on Arc-enabled servers for off-Azure monitoring.
@@ -65,22 +66,24 @@ Following are the prerequisites required on desired monitoring endpoints that ar
 
 1. Ensure to Allowlist the following Azure URL on the desired monitoring endpoints:
       `*.workloadnexus.azure.com`
-2. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
+1. Confirm the Line of sight between SCOM Managed Instance and desired monitoring endpoints by running the following command. Obtain LB DNS information by navigating to SCOM Managed Instance **Overview** > **DNS Name**.
 
-    ```    
-    Test-NetConnection -ComputerName <LB DNS> -Port 5723
-    ```
+```PowerShell
+Test-NetConnection -ComputerName <LB DNS> -Port 5723
+```
+
 3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
-4. Ensure TLS 1.2 or higher is enabled.
+4. Ensure to enable TLS 1.2 or higher: [How to implement Transport Layer Security 1.2](plan-security-tls12-config.md)
+5. Ensure to configure SystemDefaultTlsVersions and SchUseStrongCrypto for .NET as outlined here (or in the TLS 1.2 article): [Transport Layer Security (TLS) best practices with .NET Framework](/dotnet/framework/network-programming/tls)
 
 To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing).
 
 ## Install an agent to monitor Azure and Arc-enabled servers
 
->[!NOTE]
->Agent doesn't support multi-homing to multiple SCOM Managed Instances.
+> [!IMPORTANT]
+> The Microsoft Monitoring Agent doesn't support multi-homing to multiple SCOM Managed Instances.
 
-To install SCOM Managed Instance agent, follow these steps:
+To install the SCOM Managed Instance agent, follow these steps:
 
 1. On the desired SCOM Managed Instance **Overview** page, under Manage, select **Monitored Resources**.
 
@@ -91,7 +94,7 @@ To install SCOM Managed Instance agent, follow these steps:
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/monitored-resources-inline.png" alt-text="Screenshot that shows the Monitored Resource page." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/monitored-resources-expanded.png":::
 
    **Add a Monitored Resource** page opens listing all the unmonitored virtual machines.
-   
+
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/add-monitored-resource-inline.png" alt-text="Screenshot that shows add a monitored resource page." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/add-monitored-resource-expanded.png":::
 
 3. Select the desired resource and then select **Add**.
@@ -99,7 +102,7 @@ To install SCOM Managed Instance agent, follow these steps:
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/add-resource-inline.png" alt-text="Screenshot that shows the Add a resource option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/add-resource-expanded.png":::
 
 4. On the **Install SCOM MI Agent** window, review the selections and select **Install**.
-   
+
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/install-inline.png" alt-text="Screenshot that shows Install option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/install-expanded.png":::
 
 ## Manage agent configuration installed on Azure and Arc-enabled servers
@@ -113,7 +116,7 @@ To upgrade the agent version, follow these steps:
 3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
 4. On the desired SCOM Managed Instance **Overview** page, under **Manage**, select **Monitored Resources**.
 5. On the **Monitored Resources** page, select Ellipsis button **(…)**, which is next to your desired monitored resource, and select **Configure**.
-   
+
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-inline.png" alt-text="Screenshot that shows monitored resources." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/resource-expanded.png":::
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/configure-agent-inline.png" alt-text="Screenshot that shows agent configuration option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/configure-agent-expanded.png":::
@@ -192,7 +195,6 @@ To delete a Gateway, follow these steps:
 6. On the **Delete SCOM MI Gateway** page, check **Are you sure that you want to delete Managed Gateway?** and then select **Delete**.
 
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-managed-gateway-inline.png" alt-text="Screenshot that shows delete managed gateway option." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/delete-managed-gateway-expanded.png":::
-
 
 ## Configure monitoring of on-premises servers
 
