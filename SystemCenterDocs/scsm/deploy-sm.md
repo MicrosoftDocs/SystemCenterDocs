@@ -5,10 +5,10 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/07/2024
+ms.date: 04/18/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: intro-deployment, UpdateFrequency3
+ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ---
 
 # Deploy System Center - Service Manager
