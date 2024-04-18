@@ -484,7 +484,7 @@ It's important to understand that there's no right answer here, and the optimize
 
 ### Virtualizing SQL Server
 
-In virtual environments, for performance reasons, it's recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. You can use the old [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) to estimate required IOPS and stress test your data disks to verify. You can use the SQLIO tool for this task.  See also [Operations Manager virtualization support](./system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
+In virtual environments, for performance reasons, it's recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. You can use the old [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) to estimate required IOPS and stress test your data disks to verify. You can test storage performance with the [DiskSpd utility](https://github.com/microsoft/diskspd).  See also [Operations Manager virtualization support](./system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
 
 ### Always On and recovery model
 
