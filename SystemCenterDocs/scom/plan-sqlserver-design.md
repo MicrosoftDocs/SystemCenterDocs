@@ -365,7 +365,7 @@ It's important to test the SQL Server design by performing throughput testing of
 
 Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation and is most commonly the result of partition misalignment with stripe unit boundaries. It can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
 
-When formatting the partition that will be used for SQL Server data files, it's recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and tempdb. Be aware, however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it isn't recommended.
+When formatting the partition that will be used for SQL Server data files, it's recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and TempDB. Be aware, however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it isn't recommended.
 
 ### Reserve memory
 
@@ -409,39 +409,50 @@ For more information, see [Server memory configuration options](/sql/database-en
 
 ### Optimize TempDB
 
-The size and physical placement of the tempdb database can affect the performance of Operations Manager. For example, if the size that is defined for tempdb is too small, part of the system-processing load may be taken up with autogrowing tempdb to the size required to support the workload every time you restart the instance of SQL Server.
-To achieve optimal tempdb performance, we recommend the following configuration for tempdb in a production environment:
+The size and physical placement of the TempDB database can affect the performance of Operations Manager. For example, if the size that is defined for TempDB is too small, part of the system-processing load may be taken up with autogrowing TempDB to the size required to support the workload every time you restart the instance of SQL Server.
+To achieve optimal TempDB performance, we recommend the following configuration for TempDB in a production environment:
 
-- Set the recovery model of tempdb to SIMPLE. This model automatically reclaims log space to keep space requirements small.
-- Preallocate space for all tempdb files by setting the file size to a value large enough to accommodate the typical workload in the environment. It prevents tempdb from expanding too frequently, which can affect performance. The tempdb database can be set to autogrow, but this should be used to increase disk space for unplanned exceptions.
-- Create as many files as needed to maximize disk bandwidth. Using multiple files reduces tempdb storage contention and yields improved scalability. However, don't create too many files as it can reduce performance and increase management overhead. As a general guideline, create one data file for each logical processor on the server (accounting for any affinity mask settings) and then adjust the number of files up or down as necessary. As a general rule, if the number of logical processors is less than or equal to 8, use the same number of data files as logical processors. If the number of logical processors is greater than 8, use eight data files and then if contention continues, increase the number of data files by multiples of 4 (up to the number of logical processors) until the contention is reduced to acceptable levels or make changes to the workload/code. If the contention isn't reduced, you may have to increase the number of data files more.  
-- Make each data file the same size, allowing for optimal proportional-fill performance.  The equal sizing of data files is critical because the proportional fill algorithm is based on the size of the files. If data files are created with unequal sizes, the proportional fill algorithm tries to use the largest file more for GAM allocations instead of spreading the allocations between all the files, thereby defeating the purpose of creating multiple data files.
-- Put the tempdb database on a fast I/O subsystem using solid-state drives for the most optimal performance. Use disk striping if there are many directly attached disks.
-- Put the tempdb database on disks that differ from those that are used by user databases.
+- Set the [recovery model](/sql/relational-databases/backup-restore/recovery-models-sql-server) of TempDB to SIMPLE.
+  - This model automatically reclaims log space to keep space requirements small.
+- Preallocate space for all TempDB files by setting the file size to a value large enough to accommodate the typical workload in the environment. It prevents TempDB from expanding too frequently, which can affect performance. The TempDB database can be set to autogrow, but this should be used to increase disk space for unplanned exceptions.
+- Create as many files as needed to maximize disk bandwidth.
+  - Using multiple files reduces TempDB storage contention and yields improved scalability. However, don't create too many files as it can reduce performance and increase management overhead.
+  - As a general guideline, create one data file for each logical processor on the server (accounting for any affinity mask settings) and then adjust the number of files up or down as necessary.
+  - As a general rule, if the number of logical processors is less than or equal to 8, use the same number of data files as logical processors. 
+    - If the number of logical processors is greater than 8, use eight data files and then if contention continues, increase the number of data files by multiples of 4 (up to the number of logical processors) until the contention is reduced to acceptable levels or make changes to the workload/code.
+    - If the contention isn't reduced, you may have to increase the number of data files more.  
+- Make each data file the same size, allowing for optimal proportional-fill performance.
+  - The equal sizing of data files is critical because the proportional fill algorithm is based on the size of the files. If data files are created with unequal sizes, the proportional fill algorithm tries to use the largest file more for GAM allocations instead of spreading the allocations between all the files, thereby defeating the purpose of creating multiple data files.
+- Put the TempDB database on a fast I/O subsystem using solid-state drives for the most optimal performance. 
+  - Use disk striping if there are many directly attached disks.
+- Put the TempDB database on disks that differ from those that are used by user databases.
 
-To configure tempdb, you can run the following query or modify its properties in Management Studio.
+To configure TempDB, you can run the following query or modify its properties in Management Studio.
 
 ```SQL
-USE [tempdb]
+USE [TempDB]
 GO
 DBCC SHRINKFILE (N'tempdev' , 8)
 GO
 USE [master]
 GO
-ALTER DATABASE [tempdb] MODIFY FILE ( NAME = N'tempdev', NEWNAME = N'tempdb', SIZE = 2097152KB , FILEGROWTH = 512MB )
+ALTER DATABASE [TempDB] MODIFY FILE ( NAME = N'tempdev', NEWNAME = N'TempDB', SIZE = 2097152KB , FILEGROWTH = 512MB )
 GO
-ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
+ALTER DATABASE [TempDB] ADD FILE ( NAME = N'TempDB2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\TempDB2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
 GO
 ```
 
-Run the T-SQL query `SELECT * from sys.sysprocesses` to detect page allocation contention for the tempdb database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources and have similar values as highlighted earlier when you execute the **sys.sysprocesses** query.  
+Run the T-SQL query `SELECT * from sys.sysprocesses` to detect page allocation contention for the TempDB database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for TempDB resources and have similar values as highlighted earlier when you execute the `sys.sysprocesses` query.  
 
-If the previous recommendations don't significantly reduce the allocation contention and the contention is on SGAM pages, implement trace flag -T1118 in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages.
+If the previous recommendations don't significantly reduce the allocation contention and the contention is on SGAM pages, [implement trace flag](/sql/t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql) `-T1118` in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages.
 
 > [!NOTE]
 > This trace flag affects every database on the instance of SQL Server.
 
 ### Max degree of parallelism
+
+> [!TIP]
+> For the latest best practices and recommendations from the SQL Server team, refer to their documentation here: [Set the max degree of parallelism option for optimal performance](/sql/relational-databases/policy-based-management/set-the-max-degree-of-parallelism-option-for-optimal-performance)
 
 The default configuration of SQL Server for small to medium size deployments of Operations Manager is adequate for most needs. However, when the workload of the management group scales upwards towards an enterprise class scenario (typically 2,000+ agent-managed systems and an advanced monitoring configuration, which includes service-level monitoring with advanced synthetic transactions, network device monitoring, cross-platform, and so forth) it's necessary to optimize the configuration of SQL Server described in this section of the document. One configuration option not discussed in previous guidance is MAXDOP.  
 
@@ -466,8 +477,9 @@ MAXDOP=0 to N
 - For servers that have hyperthreading enabled, the MAXDOP value shouldn't exceed the number of physical processors.
 - For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value shouldn't exceed the number of physical processors per NUMA node.
 
-You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM. The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB. After performing the suggested optimizations in this section, performance improved. However, a query parallelism bottleneck still persisted. After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+You can monitor the number of parallel workers by querying `select * from sys.dm_os_tasks`.
+
+In this example, the hardware configuration of the server was an HP Blade G6 with 24 core processors and 196 GB of RAM. The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB. After performing the suggested optimizations in this section, performance improved. However, a query parallelism bottleneck still persisted. After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 
