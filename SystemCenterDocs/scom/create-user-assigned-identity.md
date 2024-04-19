@@ -5,7 +5,7 @@ description: This article describes how to create a user-assigned identity, prov
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 04/16/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -22,7 +22,7 @@ This article describes how to create a user-assigned identity, provide admin acc
 
 ## Create a managed service identity
 
-The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory authentication. For SCOM Managed Instance, a managed identity replaces the traditional four System Center Operations Manager service accounts. It's used to access the Azure SQL Managed Instance database. It's also used to access the key vault.
+The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Microsoft Entra ID authentication. For SCOM Managed Instance, a managed identity replaces the traditional four System Center Operations Manager service accounts. It's used to access the Azure SQL Managed Instance database. It's also used to access the key vault.
 
 > [!NOTE]
 > - Ensure that you're a contributor in the subscription where you create the MSI.
@@ -38,10 +38,10 @@ The managed service identity (MSI) provides an identity for applications to use 
    The **Create User Assigned Managed Identity** pane opens.
 1. Under **Basics**, do the following:
     - **Project details**:
-        - **Subscription**: Select the Azure subscription in which you want to create the SCOM managed instance.
-        - **Resource group**: Select the resource group in which you want to create the SCOM managed instance.
+        - **Subscription**: Select the Azure subscription in which you want to create the SCOM Managed Instance.
+        - **Resource group**: Select the resource group in which you want to create the SCOM Managed Instance.
     - **Instance details**:
-        - **Region**: Select the region in which you want to create the SCOM managed instance.
+        - **Region**: Select the region in which you want to create the SCOM Managed Instance.
         - **Name**: Enter a name for the instance.
 
     :::image type="Create user assigned managed identity" source="media/create-user-assigned-identity/create-user-assigned-managed-identity.png" alt-text="Screenshot that shows project and instance details for a user-assigned managed identity.":::
@@ -56,34 +56,37 @@ The managed service identity (MSI) provides an identity for applications to use 
 
 Your deployment is now created on Azure. You can access the resource and view its details.
 
-### Set the Active Directory admin value in the SQL managed instance
+### Set the Microsoft Entra admin value in the SQL managed instance
 
-To set the Active Directory admin value in the SQL managed instance that you created in [step 3](create-sql-managed-instance.md), follow these steps:
+To set the Microsoft Entra admin value in the SQL managed instance that you created in [step 3](create-sql-managed-instance.md), follow these steps:
 
 >[!NOTE]
 >You must have Global Administrator or Privileged Role Administrator permissions for the subscription to perform the following operations.
 
-1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
+>[!Important]
+>Using Groups as Microsoft Entra admin is currently not supported.
 
-   :::image type="Active directory admin" source="media/create-user-assigned-identity/active-directory-admin-inline.png" alt-text="Screenshot of the pane for Active Directory admin information." lightbox="media/create-user-assigned-identity/active-directory-admin-expanded.png":::
+1. Open the SQL managed instance. Under **Settings**, select **Microsoft Entra admin**.
 
-1. Select the error-box message to provide **Read** permissions to the SQL managed instance on Azure Active Directory (AAD). **Grant permissions** pane opens to grant the permissions.
+   :::image type="Microsoft Entra admin" source="media/create-user-assigned-identity/microsoft-entra-admin.png" alt-text="Screenshot of the pane for Microsoft Entra admin information.":::
+
+1. Select the error-box message to provide **Read** permissions to the SQL managed instance on Microsoft Entra ID. **Grant permissions** pane opens to grant the permissions.
 
    :::image type="Grant permissions" source="media/create-user-assigned-identity/grant-permissions.png" alt-text="Screenshot of grant permissions.":::
 
-1. Select **Grant Permissions** to initiate the operation and once it is completed, you can find a notification for the successful updation of active directory read permissions.
+1. Select **Grant Permissions** to initiate the operation and once it is completed, you can find a notification for successfully updating the Microsoft Entra read permissions.
 
    :::image type="read permissions" source="media/create-user-assigned-identity/read-permissions.png" alt-text="Screenshot of read permissions.":::
 
 1. Select **Set admin**, and search for your MSI. This MSI is the same one that you provided during the SCOM Managed Instance creation flow. You find the admin added to the SQL managed instance.
 
-   :::image type="Azure Active directory admin" source="media/create-user-assigned-identity/azure-active-directory-inline.png" alt-text="Screenshot of MSI information for Azure Active Directory." lightbox="media/create-user-assigned-identity/azure-active-directory-expanded.png":::
+   :::image type="Microsoft Entra admin" source="media/create-user-assigned-identity/microsoft-entra-inline.png" alt-text="Screenshot of MSI information for Microsoft Entra." lightbox="media/create-user-assigned-identity/microsoft-entra-expanded.png":::
 
-1. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your SCOM managed instance or else your SCOM managed instance creation fails.
+1. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your SCOM Managed Instance or else your SCOM Managed Instance creation fails.
 
-   :::image type="SQL Active directory admin" source="media/create-user-assigned-identity/sql-active-directory-admin-inline.png" alt-text="Screenshot that shows successful Active Directory authentication." lightbox="media/create-user-assigned-identity/sql-active-directory-admin-expanded.png":::
+   :::image type="SQL Microsoft Entra admin" source="media/create-user-assigned-identity/sql-microsoft-entra-inline.png" alt-text="Screenshot that shows successful  Microsoft Entra authentication." lightbox="media/create-user-assigned-identity/sql-microsoft-entra-expanded.png":::
 
-For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
+For more information about permissions, see [Directory Readers role in Microsoft Entra ID for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
 
 ## Grant permission on the key vault
 
