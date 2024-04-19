@@ -5,8 +5,8 @@ description: This article provides an overview about authoring strategies for .N
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/14/2019
-ms.custom: na
+ms.date: 04/18/2024
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article

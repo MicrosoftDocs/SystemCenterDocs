@@ -7,11 +7,11 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 10/04/2023
+ms.date: 04/18/2024
 ms.subservice: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 monikerRange:  sc-sm-2016 || sc-sm-2019 || sc-sm-2022
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # SQL Server requirements for System Center - Service Manager

@@ -1,12 +1,12 @@
 ---
 title: Modeling OLAP cubes in management packs overview
 description: Provides an overview of modeling Service Manager OLAP cubes in management packs.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2023
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
