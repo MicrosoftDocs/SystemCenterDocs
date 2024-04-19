@@ -3,7 +3,7 @@ description: This article contains the procedures for backing up and recovery of
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 02/29/2024
+ms.date: 04/18/2024
 title: Back up Hyper V virtual machines
 ms.subservice: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -376,13 +376,29 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
 You can restore individual files from a protected Hyper-V VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
 
 >[!NOTE]
 >- Restoring an individual file from a Hyper-V VM is available only for Windows VM and from Disk and Online Recovery Points.
 >- With DPM 2022 UR2 and later, you can restore an individual file from a Hyper-V VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2022"
+
+>[!NOTE]
+>- Restoring an individual file from a Hyper-V VM is available only for Windows VM and from Disk and Online Recovery Points.
+>- You can restore an individual file from a Hyper-V VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2022"
 
 For item-level recovery from an online recovery point, ensure that the Hyper-V role is installed on the MABS Server, automatic mounting of volumes is enabled, and the VM VHD doesn't contain a dynamic disk. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
 
