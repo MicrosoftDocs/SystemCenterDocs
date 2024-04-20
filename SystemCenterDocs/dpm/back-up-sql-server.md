@@ -1,15 +1,15 @@
 ---
 description: You can use DPM to back up and recover SQL Server databases.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 12/19/2022
 title: Back up SQL Server with DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 
@@ -213,7 +213,7 @@ You can set up the  DPM Self-Service Recovery Configuration Tool to create and m
 ::: moniker range="sc-dpm-2022"
 
 DPM 2022 UR1 provides a self-service recovery feature to allow SQL Server administrators access to data protected by DPM so that they can restore a SQL Server database from backup to a network folder.
-You can set up the  DPM Self-Service Recovery Configuration Tool to create and manage roles that specify which users can perform self-service recovery. Then users use the DPM Self-Service Recovery Wizard to recover SQL Server databases. Download the [self-service recovery wizard tool](https://go.microsoft.com/fwlink/?linkid=2215141).
+You can set up the  DPM Self-Service Recovery Configuration Tool to create and manage roles that specify which users can perform self-service recovery. Then users use the DPM Self-Service Recovery Wizard to recover SQL Server databases. Download the [self-service recovery wizard tool](https://go.microsoft.com/fwlink/?linkid=2215141). Note that you need to have [.NET 3.5 SP1](https://www.microsoft.com/download/details.aspx?id=22) and [Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784) installed to run the tool.
 
 Configure self-service SQL Server recovery as follows:
 

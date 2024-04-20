@@ -5,15 +5,29 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 7/5/2023
+ms.date: 03/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Features and enhancements in Management Pack for SQL Server Dashboards
 
 This article covers new functionality and improvements in Management Pack for SQL Server Dashboards.
+
+## January 2024 - 7.4.0.0 RTM
+
+### What's new
+
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - improved keyboard navigation
+  - improved color contrast in dashboards for better legibility
+  - reworked high contrast theme for dashboards
+  - added support for screen-reading software
+
+### Bug fixes
+
+- Fixed the issue of Summary Dashboard view not working in the System Center Operations Manager Console when operational and data warehouse databases are hosted on SQL Server version 2022
 
 ## July 2023 - 7.2.0.0 RTM
 

@@ -1,16 +1,16 @@
 ---
 title: Configure workflows
 description: Learn about configuring workflows in Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 10/12/2016
-ms.technology: service-manager
+ms.date: 01/22/2024
+ms.subservice: service-manager
 ms.assetid: b204c2fc-c65e-41f3-a650-e425060f61b3
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Configure workflows in Service Manager

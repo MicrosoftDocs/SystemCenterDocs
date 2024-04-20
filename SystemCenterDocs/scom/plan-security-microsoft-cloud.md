@@ -2,13 +2,13 @@
 ms.assetid: accc6f3d-396c-43bc-91a6-7e723d57bfa1
 title: Security Considerations for Microsoft Azure and Microsoft 365
 description: This article provides design guidance on how to authenticate and securely monitor Microsoft Azure and Microsoft 365 with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 06/19/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

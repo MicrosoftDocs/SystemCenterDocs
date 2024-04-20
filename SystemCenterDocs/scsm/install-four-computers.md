@@ -1,15 +1,15 @@
 ---
 title: Install Service Manager on four computers
 description: You can create an installation topology where each Service Manager part resides on its own computer when moving Service Manager into a production environment, or to maximize performance and scalability.
-manager: mkluck
 ms.custom: na, intro-installation, UpdateFrequency2
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/26/2022
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/07/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 474fd861-01b0-44a6-b917-cf320a5d725b
@@ -158,7 +158,7 @@ The data warehouse databases include the following three databases: DWStagingAnd
     1.  In the **Report server** box, enter the name of the computer that will host the reporting server. In this example, this will be the computer that hosts the data warehouse database, enter **Computer 4**, and then press the TAB key.  
 
         > [!NOTE] 
-        > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](/system-center/scsm/config-remote-ssrs). 
+        > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](./config-remote-ssrs.md). 
         > - The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented can't be resolved in your environment, you'll need to configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information, see the TechNet article [Configure a URL](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
 
     2.  Verify that **Default** is displayed in the **Report server instance** box.  

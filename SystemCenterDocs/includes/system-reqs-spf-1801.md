@@ -2,13 +2,13 @@
 ms.assetid: d4d662cd-de11-4f4b-bff1-cbe0ea927f6f
 title: include file
 description: include file to provide information about hardware and software system requirements for System Center  2016 - Service Provider Foundation
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  06/14/2018
 ms.topic:  include
-ms.prod:  system-center-threshold
-ms.technology:  service-provider-foundation
+ms.service:  system-center
+ms.subservice:  service-provider-foundation
 ---
 
 ## System requirements for System Center 1801 - Service Provider Foundation

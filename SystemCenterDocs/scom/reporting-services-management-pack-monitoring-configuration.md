@@ -5,10 +5,10 @@ description: This article explains the monitoring configuration in Management Pa
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 06/13/2023
+ms.date: 03/07/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Monitoring Configuration in Management Pack for SQL Server Reporting Services
@@ -161,9 +161,31 @@ This management pack collects the following performance metrics:
   - Private memory consumed by Power BI Mashup containers (GB)
   - Total memory usage by running Power BI reports on the Server (GB)
 
+## Securables Configuration Status Monitor
+
+This monitor checks if each of the required SQL Server Reporting Services securables is accessible to the **ReportServer** database under the configured [Reporting Services Run As Profiles](reporting-services-management-pack-run-as-profiles.md).
+
+The following is a complete list of securables that are checked by the monitor targeted to the Reporting Services instance:
+
+- SELECT permission on catalog views
+  - dbo.ExecutionLog2
+
+- SELECT permission on tables
+  - dbo.Keys
+
+The following is a complete list of securables that are checked by the monitor targeted to the Reporting Services deployment watcher:
+
+- SELECT permission on catalog views
+  - dbo.ExecutionLog2
+
+- SELECT permission on tables
+  - dbo.Catalog
+  - dbo.DataSource
+  - dbo.Subscriptions
+
 ## Feature Groups
 
-In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](/system-center/scom/manage-create-manage-groups).
+In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](./manage-create-manage-groups.md).
 
 In Management Pack for SQL Server Reporting Services you can use two groups, which have the dynamic type of membership:
 

@@ -5,12 +5,12 @@ description: This article provides information on how to create users, assign ro
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/11/2020
-ms.prod: system-center
+ms.date: 03/18/2024
+ms.service: system-center
 monikerRange: '>=sc-om-2019'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Change databases

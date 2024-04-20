@@ -1,15 +1,15 @@
 ---
 title: Software Requirements for System Center 2016 - Service Manager
-manager: mkluck
 description: The article describes System Center 2016 - Service Manager software requirements.
 ms.custom: engagement-fy23, UpdateFrequency.5
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/20/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 787b218d-2f31-41e2-a8c7-3365972d029b

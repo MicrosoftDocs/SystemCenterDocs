@@ -2,13 +2,13 @@
 ms.assetid: 383a3286-5e1e-410b-a3b9-216af2febd97
 title: Design Integration with other Enterprise Management Products
 description: This article provides design guidance for integrating Operations Manager with third-party enterprise management platforms.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/09/2019
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

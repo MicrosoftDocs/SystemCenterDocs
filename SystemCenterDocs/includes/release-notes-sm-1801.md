@@ -1,11 +1,11 @@
 ---
 description: include file to detail the release notes for Service Manager 1801
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-threshold
-ms.technology: service-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
+ms.subservice: service-manager
 keywords:
 ms.date: 05/07/2018
 title: include file

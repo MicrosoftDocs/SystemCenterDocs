@@ -1,13 +1,13 @@
 ---
 title: Working with the Application Diagnostics Console
 description: This article describes how to use the Application Diagnostics console to review captured application error, exceptions, and events.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/29/2019
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: bb451d4a-4e48-428d-8992-0f2e2b5c240f
 ---

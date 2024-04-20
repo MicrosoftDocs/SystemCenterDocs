@@ -2,13 +2,13 @@
 ms.assetid: 8e171d54-0071-48fb-803e-26895dfefe93
 title: Create a private VMM cloud
 description: This article provides instructions for creating a private cloud in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 11/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24
 ---
 

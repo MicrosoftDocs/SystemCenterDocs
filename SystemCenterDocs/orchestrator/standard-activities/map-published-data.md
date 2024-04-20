@@ -3,17 +3,17 @@ title: Map Published Data
 description: This article describes the functionality of Map Published Data activity.
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d9ddc895-bc37-4139-bf6d-87f21e064ade
 caps.latest.revision: 15
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Map Published Data
 

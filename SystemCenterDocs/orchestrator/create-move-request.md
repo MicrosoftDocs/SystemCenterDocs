@@ -1,18 +1,18 @@
 ---
 title: Create Move Request
 description: You can use the Create Move Request activity to create a new mailbox move request and to begin the process of an asynchronous mailbox or personal archive move for an on-premises environment.
-ms.custom: UpdateFrequency3
-ms.date: 05/07/2019
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 04/03/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 346a8baa-10d7-4d04-931e-82f12ebf6c58
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Create Move Request

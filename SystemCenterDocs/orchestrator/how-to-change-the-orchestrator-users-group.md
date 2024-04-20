@@ -1,14 +1,14 @@
 ---
 title: Modify the Orchestrator users group
 description: Describes how to change the users group for System Center - Orchestrator.
-ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 04/03/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.custom: UpdateFrequency3
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Modify the Orchestrator users group

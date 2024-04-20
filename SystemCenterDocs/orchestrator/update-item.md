@@ -1,18 +1,18 @@
 ---
 title: Update Item
 description: The Update Item activity is used in a runbook to update an existing item.
-ms.custom: UpdateFrequency3
-ms.date: 05/08/2019
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 04/03/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87f2a757-d513-44fb-b1c5-bcf2feeec0bf
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Update Item

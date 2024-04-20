@@ -2,13 +2,13 @@
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/04/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/07/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -29,6 +29,9 @@ In a medium to enterprise-scale distributed deployment, the SQL Server instance 
 We don't recommend utilization of Operations Manager databases from an SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
 
 
+> [!IMPORTANT]
+> Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure Monitor SCOM Managed Instance](./operations-manager-managed-instance-overview.md), which utilizes Azure SQL MI, and is not reconfigurable.
+
 ## SQL Server requirements
 
 ::: moniker range=">sc-om-1807"
@@ -43,7 +46,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 to 17.10.3, and MSOLEDBSQL 18.2 to 18.6.5.
+  > - Use ODBC 17.3 or 17.10.5 or later, and MSOLEDBSQL 18.2 or 18.6.7 or later.
 
 ::: moniker-end
 
@@ -468,87 +471,4 @@ MAXDOP=8
 MAXDOP=0 to N
    >[!NOTE]
    > In this configuration, N represents the number of processors.
-
--  For servers that have NUMA configured, MAXDOP shouldn't exceed the number of CPUs that are assigned to each NUMA node.
--  For servers that have hyperthreading enabled, the MAXDOP value shouldn't exceed the number of physical processors.
--  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value shouldn't exceed the number of physical processors per NUMA node.
-
-You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
-
-### Initial database sizing
-
-Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment isn't a simple exercise. While the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it doesn't take into account several factors, which can influence growth in the near term versus long term.  
-
-The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then reindexed thereafter to defragment and optimize accordingly. This recommendation applies to the ACS database also.
-
-Proactive monitoring of the growth of the operational and data warehouse database should be performed on a daily or weekly cycle.  This will be necessary to identify unexpected and significant growth spurts, and begin troubleshooting in order to determine if it's caused by a bug in a management pack workflow (that is, discovery rule, performance or event collection rule, or monitor or alert rule) or other symptom with a management pack that wasn't identified during testing and quality assurance phase of the release management process.  
-
-### Database autogrow
-
-When the databases file size that has been reserved on disk becomes full, SQL Server can automatically increase the size by a percentage or by a fixed amount. Moreover, a maximum database size can be configured to prevent filling up all the space available on disk.  By default, the Operations Manager database isn't configured with autogrow enabled; only the Data Warehouse and ACS databases are.  
-
-Only rely on autogrow as a contingency for unexpected growth.  Autogrow introduces a performance penalty that should be considered when dealing with a highly transactional database.  Performance penalties include:
-
--  Fragmentation of the log file or database if you don’t provide an appropriate growth increment.
--  If you run a transaction that requires more log space than is available, and you've turned on the autogrow option for the transaction log of that database, then the time it takes the transaction to complete will include the time it takes the transaction log to grow by the configured amount.
--  If you run a large transaction that requires the log to grow, other transactions that require a write to the transaction log will also have to wait until the grow operation completes.
-
-If you combine the autogrow and autoshrink options, you might create unnecessary overhead. Ensure that the thresholds that trigger the grow and shrink operations won't cause frequent up and down size changes. For example, you may run a transaction that causes the transaction log to grow by 100 MB by the time it commits. Some time after that the autoshrink starts and shrinks the transaction log by 100 MB. Then you run the same transaction, and it causes the transaction log to grow by 100 MB again. In that example, you're creating unnecessary overhead and potentially creating fragmentation of the log file, either of which can negatively affect performance.
-
-It's recommended to configure these two settings carefully. The particular configuration really depends on your environment. In general, it's recommended to increase database size by a fixed amount in order to reduce disk fragmentation. See, for example, the following figure, where the database is configured to grow by 1024 MB each time autogrow is required.
-
-### Cluster failover policy
-
-Windows Server Failover Clustering is a high availability platform that is constantly monitoring the network connections and health of the nodes in a cluster.  If a node isn't reachable over the network, then recovery action is taken to recover and bring applications and services online on another node in the cluster.  The default settings out of the box are optimized for failures where there's a complete loss of a server, which is considered a ‘hard’ failure.  These would be unrecoverable failure scenarios such as the failure of non-redundant hardware or power.  In these situations, the server is lost and the goal is for Failover Clustering to quickly detect the loss of the server and rapidly recover on another server in the cluster.  To accomplish this fast recovery from hard failures, the default settings for cluster health monitoring are fairly aggressive.  However, they're fully configurable to allow flexibility for a variety of scenarios.
-
-These default settings deliver the best behavior for most customers; however, as clusters are stretched from being inches to possibly miles apart, the cluster may become exposed to additional and potentially unreliable networking components between the nodes.  Another factor is that the quality of commodity servers is constantly increasing, coupled with augmented resiliency through redundant components (such as dual power supplies, NIC teaming, and multi-path I/O), the number of non-redundant hardware failures may potentially be fairly rare.  Because hard failures may be less frequent, some customers may wish to tune the cluster for transient failures, where the cluster is more resilient to brief network failures between the nodes.  By increasing the default failure thresholds, you can decrease the sensitivity to brief network issues that last a short period of time.
-
-It's important to understand that there's no right answer here, and the optimized setting may vary by your specific business requirements and service level agreements.
-
-### Virtualizing SQL Server
-
-In virtual environments, for performance reasons, it's recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  to estimate required IOPS, and stress test your data disks to verify. You can use the SQLIO tool for this task.  See also [Operations Manager virtualization support](./system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
-
-### Always On and recovery model
-
-Although not strictly an optimization, an important consideration regarding Always On Availability Group is the fact that, by design, this feature requires the databases to be set in the “Full” recovery model. Meaning, the transaction logs are never discarded until either a full backup is done or only the transaction log.
-For this reason, a backup strategy isn't an optional but a required part of the AlwaysOn design for Operations Manager databases. Otherwise, with time, disks containing transaction logs will fill up.
-
-A backup strategy must take into account the details of your environment. A typical backup schedule is given in the following table.
-
-|Backup Type | Schedule |
-|-----------|---------------|
-| Transaction log only | Every one hour |
-| Full | Weekly, Sunday at 3:00 AM |
-
-## Optimizing SQL Server reporting services
-
-The Reporting Services instance acts as a proxy for access to data in the Data Warehouse database. It generates and displays reports based on templates stored inside the management packs.
-
-Behind the scenes of Reporting Services, there's a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
-
-
-
-
-
-
-
-
-
-
-
-::: moniker range=">sc-om-1801"
-
->[!NOTE]
->
->From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings don't allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
->
->To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
-
-::: moniker-end
-
-## Next steps
-
-To understand how to configure hosting the Report data warehouse behind a firewall, see [Connect Reporting Data Warehouse Across a Firewall](deploy-connect-reportingdw-firewall.md).
 

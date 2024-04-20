@@ -2,13 +2,13 @@
 ms.assetid: 317af986-15b1-469b-ac5b-dd8bb3e0b02d
 title: Change tracking for management packs in System Center Operations Manager
 description: This article details the management pack change tracking in Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: Anastas1ya
+ms.author: v-ekaterinap
+manager: evansma
 ms.date: 07/20/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 MonikerRange: '>=sc-om-2019'
 ms.custom: engagement-fy23
 ---

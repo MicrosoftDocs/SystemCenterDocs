@@ -2,13 +2,13 @@
 ms.assetid: f08056ae-d899-464c-9746-052833dfe2dd
 title: Turn off telemetry settings in Service Management Automation (SMA)
 description: This article provides information about how to turn off the telemetry settings in System Center Service Management Automation
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/07/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/03/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-management-automation
+ms.service: system-center
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

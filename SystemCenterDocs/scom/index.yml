@@ -6,11 +6,11 @@ summary: Operations Manager monitors services, devices, and operations for many 
 metadata:
   title: Operations Manager documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resolution. # Required; article description that is displayed in search results. < 160 chars.
-  ms.prod: system-center
-  ms.technology: operations-manager
+  ms.service: system-center
+  ms.subservice: operations-manager
   ms.topic: landing-page # Required
-  author: Farha-Bano #Required; your GitHub user alias, with correct capitalization.
-  ms.author: v-farhabano #Required; microsoft alias of author; optional team alias.
+  author: PriskeyJeronika-MS #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-gjeronika #Required; microsoft alias of author; optional team alias.
   ms.date: 04/05/2017 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

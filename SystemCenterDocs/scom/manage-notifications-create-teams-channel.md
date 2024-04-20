@@ -1,13 +1,13 @@
 ---
 title: How to enable Microsoft Teams notification channel
 description: This article describes how to enable Microsoft Teams notification channel for Operations Manager.
-author: Farha-Bano
-ms.author: v-farhabano
-manager: mkluck
-ms.date: 07/20/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/07/2024
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid:
 MonikerRange: 'sc-om-2022'
@@ -23,7 +23,7 @@ In line with the lifecycle, we now support Operations Manager alerts on Microsof
 
 With System Center 2022, Microsoft Teams has been added to the existing basic Notification channels of Operations Manager. You can specify conditions for the channel to allow only certain types of alerts.
 
-To configure alert notifications for Operations Manager, you must enable a notification channel. For detailed information about notification channels, see [Subscribing to alert notifications](/system-center/scom/manage-notifications-alert-notifications).
+To configure alert notifications for Operations Manager, you must enable a notification channel. For detailed information about notification channels, see [Subscribing to alert notifications](./manage-notifications-alert-notifications.md).
 
 > [!NOTE]
 > Integration of Operations Manager with Teams is supported for customers who use GCC, GCC High, and DoD Clouds.
@@ -38,7 +38,7 @@ Before you begin, ensure you've the following:
    - A member of target Microsoft Teams channel
    - Not enabled for multifactor authentication (MFA)
    
-  For more information, see [How to create and configure the Notification action account](/system-center/scom/manage-notifications-create-configure).
+  For more information, see [How to create and configure the Notification action account](./manage-notifications-create-configure.md).
 - Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
 - Details of the newly created application in Azure. Instructions to register an application available at [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2).
 - For the newly created App, ensure the Graph API permission is given as **ChannelMessage.Send** and **Grant admin consent for Contoso** is selected.
@@ -51,7 +51,7 @@ Before you begin, ensure you've the following:
 
 ## Operations Manager notification channel - key descriptions
 
-For detailed information about Channel, Subscriber and Subscription, see [Subscribing to Alert Notifications](/system-center/scom/manage-notifications-alert-notifications).
+For detailed information about Channel, Subscriber and Subscription, see [Subscribing to Alert Notifications](./manage-notifications-alert-notifications.md).
 
 | Parameters | Microsoft Teams |
 |---|---|

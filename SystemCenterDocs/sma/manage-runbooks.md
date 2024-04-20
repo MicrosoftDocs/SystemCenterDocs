@@ -1,13 +1,13 @@
 ---
 title: Manage runbooks
 description: Describes how to schedule, track, and configure runbooks for System Center Service Management Automation.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 08/07/2023
-ms.technology: service-management-automation
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 04/03/2024
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
@@ -129,11 +129,11 @@ When you start a runbook in SMA, a job is created. A job is a single execution i
 
 The following diagram shows the lifecycle of a runbook job for PowerShell Workflow runbooks.
 
-![Diagram showing the PowerShell workflow.](/system-center/sma/media/manage-runbooks/sma-runbook-execution-workflow.png)
+![Diagram showing the PowerShell workflow.](./media/manage-runbooks/sma-runbook-execution-workflow.png)
 
 The following diagram shows the lifecycle of a runbook job for PowerShell script runbooks.
 
-![Diagram showing the PowerShell script.](/system-center/sma/media/manage-runbooks/sma-runbook-execution-script.png)
+![Diagram showing the PowerShell script.](./media/manage-runbooks/sma-runbook-execution-script.png)
 
 
 ### Job status
@@ -262,4 +262,4 @@ Set-SmaRunbookConfiguration -WebServiceEndpoint $webServer -Port $port -Name $ru
 ## Next steps
 
 - Read about [managing global assets](manage-global-assets.md).
-- Learn about the [role of SMA](https://gallery.technet.microsoft.com/Service-Management-fcd75828) in a Microsoft Azure Pack implementation.
+- Learn about the [role of SMA](./runbook-automation.md) in a Microsoft Azure Pack implementation.

@@ -1,13 +1,13 @@
 ---
 title: About System Center - Service Manager
 description: This article provides an overview of System Center - Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 ms.date: 01/31/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 

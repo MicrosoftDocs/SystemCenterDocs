@@ -2,13 +2,13 @@
 ms.assetid: ba5add9b-c6c8-4e70-b916-94d9c548757f
 title: Release build versions for System Center Virtual Machine Manager
 description: This article details the release builds in Virtual Machine Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/19/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 monikerRange: '>=sc-vmm-2016'
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
@@ -39,6 +39,7 @@ The following table lists the release history for Virtual Machine Manager 2019.
 |10.19.2591.0|[5001835](https://support.microsoft.com/kb/5001835) |May 2021 |Update Rollup 3 |
 |10.19.2648.0|[5014156](https://support.microsoft.com/kb/5014156) |July 2022 |Update Rollup 4 |
 |10.19.2729.0|[5024282](https://support.microsoft.com/kb/5024282) |April 2023 |Update Rollup 5 |
+|10.19.2883.0|[5035468](https://support.microsoft.com/kb/5035468) | March 2024 | Update Rollup 6 |
 
 ::: moniker-end
 

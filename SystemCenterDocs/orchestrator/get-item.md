@@ -1,18 +1,18 @@
 ---
 title: Get Item
 description: The Get Item activity is used in a runbook to retrieve details of existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ba93f546-04de-40dc-b03b-08a12dc18818
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Get Item
@@ -97,7 +97,7 @@ The following tables list the required properties, filters, and published data f
 | ID   | ID of the appointment   | String   |
 | Importance   | The importance of the appointment   | String   |
 | Is All Day Event   | Indicates whether the appointment is an all-day event   | Boolean   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Boolean   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Boolean   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Boolean   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Boolean   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Boolean   |
@@ -210,7 +210,7 @@ The following tables list the required properties, filters, and published data f
 | Attachments   | List of attachments   | String   |
 | Bcc   | List of Bcc recipients for the email message   | String   |
 | Body   | The body of the item   | String   |
-| Body Type   | The format of the message body, text or HTML   | String   |
+| Body Type   | The format of the message body, text, or HTML   | String   |
 | Categories   | List of categories associated with the item   | String   |
 | Cc   | List of Cc recipients for the email message   | String   |
 | Conversation ID   | The ID of the conversation that this item is a part of   | String   |

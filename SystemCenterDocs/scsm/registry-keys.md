@@ -1,13 +1,13 @@
 ---
 title: Service Manager registry keys
 description: Learn about registry keys used by Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 ms.date: 08/22/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.custom: UpdateFrequency5, engagement-fy24
 ---
 

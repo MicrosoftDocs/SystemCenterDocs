@@ -1,14 +1,14 @@
 ---
 title: Using the Administration workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/03/2017
-ms.custom: UpdateFrequency2
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -80,7 +80,7 @@ For more information, see [Connecting Operations Manager With Other Management S
 You can use **Run As Configuration** in the Administration workspace to manage Run As accounts and profiles. For more information, see [Managing Run As accounts in Operations Manager](manage-security-maintain-runas-profiles.md).
 
 ## Security  
-In Operations Manager, operations such as resolving alerts, running tasks, overriding monitors, viewing alerts, viewing events, and so on have been grouped into user roles, with each user role representing a particular job function. Role\-based security allows you to limit privileges that users have for various aspects of Operations Manager. In **Security** in the Administration workspace, you can add and remove users to specific user roles. You can also modify the properties of user roles that you create.  
+In Operations Manager, operations such as resolving alerts, running tasks, overriding monitors, viewing alerts, viewing events, and so on, have been grouped into user roles, with each user role representing a particular job function. Role-based security allows you to limit privileges that users have for various aspects of Operations Manager. In **Security** in the Administration workspace, you can add and remove users to specific user roles. You can also modify the properties of user roles that you create.  
 
 For more information, see [Implementing User Roles](manage-security-overview.md).  
 

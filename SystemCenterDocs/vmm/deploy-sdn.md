@@ -2,13 +2,13 @@
 ms.assetid: dbb10ddd-b976-4cb6-9216-ec70eafca4b6
 title: Deploy and manage a Software Defined Network (SDN) infrastructure in System Center VMM
 description: This article provides an overview of setting up n SDN in the System Center VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/12/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency2
 ---
 

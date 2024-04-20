@@ -1,15 +1,15 @@
 ---
 title: Index non-English knowledge articles
 description: This article helps you resolve issues when you want to index non-English knowledge articles.
-manager: mkluck
-ms.custom: na, UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 04/26/2023
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3a0d866d-40b8-4f40-a175-3c5b563bbf83

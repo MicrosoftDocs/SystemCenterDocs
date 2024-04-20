@@ -5,11 +5,11 @@ description: Azure Monitor SCOM Managed Instance provides a cloud-based alternat
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 03/07/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
+ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
 
@@ -42,13 +42,13 @@ SCOM Managed Instance users will be able to:
 - Monitor VMs and applications which are in untrusted domain/workgroup.
 - Onboard endpoints (including Agent installation and setup) seamlessly from SCOM Managed Instance portal.
 - Set up and manage Gateways seamlessly from SCOM Managed Instance portal on Arc-enabled servers for off-Azure monitoring.
-- Set high availability at Gateway plane for agent failover as described in [Designing for High Availability and Disaster Recovery](https://learn.microsoft.com/system-center/scom/plan-hadr-design) .
+- Set high availability at Gateway plane for agent failover as described in [Designing for High Availability and Disaster Recovery](./plan-hadr-design.md) .
 
 ## Linux monitoring with SCOM Managed Instance
 
-With SCOM Managed Instance, you can monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](https://learn.microsoft.com/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022).
+With SCOM Managed Instance, you can monitor Linux workloads that are on-premises and behind a gateway server. At this stage, we don't support monitoring Linux VMs hosted in Azure. For more information, see [How to monitor on-premises Linux VMs](/system-center/scom/manage-deploy-crossplat-agent-console?view=sc-om-2022&preserve-view=true).
 
-For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](https://learn.microsoft.com/system-center/scom/operations-manager-managed-instance-common-questions).
+For more information, see [Azure Monitor SCOM Managed Instance frequently asked questions](./operations-manager-managed-instance-common-questions.md).
 
 ## Use Arc channel for Agent configuration and monitoring data
 
@@ -73,7 +73,7 @@ Following are the prerequisites required on desired monitoring endpoints that ar
 3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
 4. Ensure TLS 1.2 or higher is enabled.
 
-To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](https://learn.microsoft.com/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing).
+To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing&preserve-view=true).
 
 ## Install an agent to monitor Azure and Arc-enabled servers
 
@@ -172,10 +172,10 @@ To install SCOM Managed Instance gateway, follow these steps:
 
 ### Configure monitoring of servers via SCOM Managed Instance Gateway
 
-To configure monitoring of servers via SCOM Managed Instance Gateway, follow the steps mentioned in [Install an agent on a computer running Windows by using the Discovery Wizard](https://learn.microsoft.com/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard) section.
+To configure monitoring of servers via SCOM Managed Instance Gateway, follow the steps mentioned in [Install an agent on a computer running Windows by using the Discovery Wizard](/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard) section.
 
 >[!NOTE]
->Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](https://learn.microsoft.com/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022)
+>Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022&preserve-view=true)
 
 ### Delete a Gateway
 
@@ -196,7 +196,7 @@ To delete a Gateway, follow these steps:
 
 ## Configure monitoring of on-premises servers
 
-To configure monitoring of on-premises servers that have direct connectivity (VPN/ER) with Azure, follow the steps mentioned in [Install an agent on a computer running Windows by using the Discovery Wizard](https://learn.microsoft.com/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard) section.
+To configure monitoring of on-premises servers that have direct connectivity (VPN/ER) with Azure, follow the steps mentioned in [Install an agent on a computer running Windows by using the Discovery Wizard](/system-center/scom/manage-deploy-windows-agent-console#install-an-agent-on-a-computer-running-windows-by-using-the-discovery-wizard) section.
 
 >[!NOTE]
->Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](https://learn.microsoft.com/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022)
+>Operations Manager Console is required for this action. For more information, see [Connect the Azure Monitor SCOM Managed Instance to Ops console](/system-center/scom/connect-managed-instance-ops-console?view=sc-om-2022&preserve-view=true)

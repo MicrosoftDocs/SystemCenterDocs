@@ -2,13 +2,13 @@
 ms.assetid:
 title: Configure Computer Not Reachable Recovery Task for Gateway Servers
 description: This article describes how to configure the diagnostic task to ping computer on heartbeat failure for agents reporting to an Operations Manager gateway server.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 03/22/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -35,7 +35,7 @@ RPC port 135 (DCOM/RPC) must be open between the management server and the gatew
     >When you run the Operations console on a computer that isn't a management server, the **Connect To Server** dialog appears. In the **Server name** box, enter the name of the management server to which you want to connect.
 
 3. In the **Authoring** workspace, in the navigation pane under **Management Pack Objects**, select **Monitors**.
-4. From the toolbar, select **Change Scope...** and in the **Scope Management Pack Objects** window, select the option **View all targets** and select **Clear All** if enabled, to deselect any pre-selected classes you may have filtered earlier.
+4. From the toolbar, select **Change Scope...** and in the **Scope Management Pack Objects** window, select the option **View all targets** and select **Clear All** if enabled, to deselect any preselected classes you might have filtered earlier.
 5. Search for the class **Health Service Watcher** and select it by selecting the checkbox to the left of the class name under the **Target** column. Select **OK** to accept your selection.  
 6. Expand the health category **Availability** and select the **Health Service Heartbeat Failure** monitor.  From the Operations console toolbar, select **Overrides** and then point to **Override Diagnostic**, select **Ping Computer on Heartbeat Failure** and then choose to override **For a group...** or **For all objects of class: Health Service Watcher**.
 7. Override the value for **Source Computer** parameter with the Fully Qualified Domain Name (FQDN) of the gateway server that you want the ping to be performed from when this monitored object reports a heartbeat failure.

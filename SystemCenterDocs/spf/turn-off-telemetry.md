@@ -2,13 +2,13 @@
 ms.assetid: f08056ae-d899-464c-9746-052833dfe2dd
 title: Turn off telemetry settings in Service Provider Foundation
 description: This article provides information about how to turn off the telemetry settings in System Center Service Provider Foundation
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

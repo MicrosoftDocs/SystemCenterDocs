@@ -1,15 +1,15 @@
 ---
 title: Workflow activity reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
-manager: mkluck
 ms.custom: na, UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 03/29/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32

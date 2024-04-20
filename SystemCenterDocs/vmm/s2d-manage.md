@@ -2,14 +2,14 @@
 ms.assetid: d0f49f22-f145-4147-b66d-3bf384e2ac08
 title: Manage Storage Spaces Direct clusters in VMM
 description: This article describes how to set up and manage Storage Spaces Direct in the VMM fabric.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 02/04/2020
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage Storage Spaces Direct clusters

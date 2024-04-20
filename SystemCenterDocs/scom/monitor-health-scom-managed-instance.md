@@ -5,11 +5,11 @@ description: With Azure Monitor SCOM Managed Instance Service Health Dashboard, 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 03/07/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
-ms.topic: article
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
+ms.topic: concept-article
 monikerRange: '>=sc-om-2019'
 ---
 
@@ -29,10 +29,6 @@ For more information, see [Azure Resource Health overview](/azure/service-health
 
 To troubleshoot the problems in your service, see the following:
 
-- [Troubleshoot issues with Azure Monitor SCOM Managed Instance](/system-center/scom/troubleshoot-scom-managed-instance).
-- [Troubleshoot commonly encountered errors while validating input parameters](/system-center/scom/troubleshooting-input-parameters-scom-managed-instance).
+- [Troubleshoot issues with Azure Monitor SCOM Managed Instance](./troubleshoot-scom-managed-instance.md).
+- [Troubleshoot commonly encountered errors while validating input parameters](./troubleshooting-input-parameters-scom-managed-instance.md).
 - Use the [troubleshooting tool](https://portal.azure.com/#view/Microsoft_Azure_Support/TroubleshootV2Blade/assetId/%2Fsubscriptions%2F5a87dd7e-200a-4e94-8cd6-a9461de63755%2FresourceGroups%2Fsaipwus2rg1%2Fproviders%2FMicrosoft.Scom%2FmanagedInstances%2Fsaipscom1) to get recommended solutions.
-
-## Next steps
-
-[Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance](/system-center/scom/manage-deploy-windows-agent-manually-scom-managed-instance).

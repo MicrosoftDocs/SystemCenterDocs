@@ -2,14 +2,14 @@
 ms.assetid: 04774952-44b7-48f5-847a-194febefcc5e
 title: Set up an IPAM server in the VMM fabric
 description: This article describes how to add an IP Address Management server to System Center.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 03/23/2020
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 # Set up an IPAM server in the VMM fabric
 

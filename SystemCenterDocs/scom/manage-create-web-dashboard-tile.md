@@ -2,14 +2,14 @@
 ms.assetid:
 title: How to create a dashboard with the Tile widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Tile widget.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/19/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
 monikerRange: '>sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -61,7 +61,8 @@ After the widget has been created, it displays a summary tile showing the health
 
   ![Screenshot showing Completed example of Tile widget in dashboard.](./media/create-web-dashboard-tile/web-console-new-dashboard-tile-01.png)
 
-Click on the object name in the Tile widget to launch Health Explorer for the specific object.
+Select the object name in the Tile widget to launch Health Explorer for the specific object.
 
 ## Next steps
+
 To learn how to create a dashboard in the new web console with the Custom widget, see [How create a dashboard with the Custom widget in the Web console](manage-create-web-dashboard-custom.md).

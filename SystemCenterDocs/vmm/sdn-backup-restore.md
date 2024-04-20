@@ -2,13 +2,13 @@
 ms.assetid: 1a71c7fa-faa3-4d0a-a8ef-d022c803f298
 title: Back up and restore a software defined network infrastructure
 description: This article describes the procedure to back up and restore the software defined infrastructure.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/10/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2
 ---
 

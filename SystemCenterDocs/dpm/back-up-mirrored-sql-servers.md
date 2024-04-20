@@ -2,13 +2,13 @@
 ms.assetid: 5523da23-09d3-4b34-b7a9-af2dbde9e64b
 title: Manage mirrored SQL servers
 description: This article provides information about how to manage mirrored SQL servers in System Center DPM.
-author:  jyothisuri
-ms.author: jsuri
-manager:  mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date:  04/08/2021
 ms.topic:  article
-ms.prod:  system-center
-ms.technology: data-protection-manager
+ms.service: system-center
+ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency2
 ---
 

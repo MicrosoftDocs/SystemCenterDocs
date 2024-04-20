@@ -1,15 +1,15 @@
 ---
 description: This article contains the procedures for backing up and recovery of virtual machines.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 11/07/2023
+ms.date: 02/29/2024
 title: Back up Hyper V virtual machines
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 
@@ -297,7 +297,7 @@ A replica virtual machine is turned off until a failover is initiated, and VSS c
 
   ```powershell
 
-  Convert-VHD –Path c:\VM\my-vhdx.vhdx –DestinationPath c:\New-VM\new-vhdx.vhdx –VHDType Dynamic
+  Convert-VHD –Path c:\VM\my-vhdx.vhdx –DestinationPath c:\New-VM\new-vhdx.vhdx –VHDType Fixed
 
   ```
 

@@ -1,15 +1,15 @@
 ---
 description: This article describes the way that you can monitor DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 11/07/2023
+ms.date: 03/19/2024
 title: Monitor DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23, UpdateFrequency2
 ---
 
@@ -47,17 +47,19 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
     1. **SMTP server name**: Enter the fully qualified domain name of the SMTP server.
     1. **SMTP server port**: Enter the fully qualified domain name of the server port. 
     1. **"From" address**: Configure the **From** address; should be a valid email address on the SMTP server. 
-    1. **Authenticated SMTP server**: Enter the domain user; for example, **domain\username** and password to authenticate to the SMTP server.  
+    1. **Authenticated SMTP server**: Enter the domain user; for example, **domain\username** and password to authenticate to the SMTP server. With DPM 2019 UR6 and later, select Windows Authentication and provide your domain user credentials to proceed.  
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
 **Use Microsoft 365 SMTP to configure email for DPM**
 
-DPM supports Microsoft 365 without a relay agent. 
+DPM supports Microsoft 365 without a relay agent using the Basic SMTP authentication method with your email (username@contoso.com) and password. You can also use other email providers supporting basic authentication and port 587 for secure SMTP.
 
-Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use Microsoft 365, ensure to use the username and password for Microsoft 365 instead of the domain user.
+>[!NOTE]
+>If you upgrade from DPM 2019 UR5 to 2019 UR6 and were using M365 SMTP, you must reconfigure your credentials by selecting the Basic Authentication option.
 
-:::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
+:::image type="SMTP Server tab" source="media/monitor-dpm/smtp-server-new.png" alt-text="Screenshot of SMTP server new tab.":::
+
 
 ::: moniker-end
 

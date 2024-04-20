@@ -1,13 +1,13 @@
 ---
 title: Monitoring Networks by Using Operations Manager
 description: This article provides an overview of how you can monitor network devices with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/24/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/07/2024
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: fe56f0f3-0f28-4b0c-8adf-9982a710540a
 ---
@@ -35,6 +35,24 @@ Network Monitoring Management Pack generation tool helps you create a custom man
 ::: moniker-end
 
 Additionally, this tool enables you to add monitoring of other device components such as fan, temperature sensor, voltage sensor, and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). This tool is also supported with newer releases of Operations Manager.
+
+::: moniker range="sc-om-2016"
+>[!NOTE]
+>Discovery and Monitoring of network devices with dynamic MAC addresses isn't supported in System Center Operations Manager.
+>If you try to monitor network devices that have dynamic MAC addresses, you may notice the following symptoms:
+> - Duplicated network devices.
+> - Unexpected changes to network device properties.
+> - Network devices that disappear or reappear when discovery runs.
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+>[!NOTE]
+>Discovery and Monitoring of network devices with dynamic MAC addresses isn't supported in System Center Operations Manager.
+>If you try to monitor network devices that have dynamic MAC addresses, you may notice the following symptoms:
+> - Duplicated network devices.
+> - Unexpected changes to network device properties.
+> - Network devices that disappear or reappear when discovery runs.
+::: moniker-end
 
 ## Network device monitoring capabilities and scope  
 
@@ -86,7 +104,7 @@ Network discovery and monitoring requires the following management packs, which 
 
 -   Microsoft.Windows.Client.NetworkDiscovery  
 
-There are additional management packs that are required to relate network devices to each other and to the agent computers they're connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs are installed for each of the operating systems in your environment. See [System Requirements](/system-center/scom/system-requirements).
+There are additional management packs that are required to relate network devices to each other and to the agent computers they're connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs are installed for each of the operating systems in your environment. See [System Requirements](./system-requirements.md).
 
 ## How Network device discovery works  
 

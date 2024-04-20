@@ -1,14 +1,14 @@
 ---
 description: This article explains the supported deployment options for DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 11/21/2022
+ms.date: 03/07/2024
 title: What's supported and what isn't for DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
 ms.custom: engagement-fy23, UpdateFrequency.5
 ---
@@ -175,7 +175,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries for System Center DPM 2012 and later](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor, and ask them to [verify tape library compatibility](identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries for System Center DPM 2012 and later](./dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor, and ask them to [verify tape library compatibility](identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 

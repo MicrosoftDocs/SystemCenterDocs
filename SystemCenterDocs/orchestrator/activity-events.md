@@ -2,17 +2,17 @@
 title: Activity Events
 description: This topic describes how to capture events triggered by activities in a runbook for monitoring success or performance issues.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
-ms.author: jsuri
 ms.date: 04/11/2023
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Capture activity events to monitor runbooks

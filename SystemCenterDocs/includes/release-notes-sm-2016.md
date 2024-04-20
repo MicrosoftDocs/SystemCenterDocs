@@ -1,13 +1,13 @@
 ---
 description: include file to detail the release notes for System Center 2016 - Service Manager
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-threshold
-ms.technology: service-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
+ms.subservice: service-manager
 keywords:
-ms.date: 10/20/2020
+ms.date: 03/07/2024
 title:  include file
 ms.assetid: 59dcba5c-cc45-4611-9a95-9e6d534bd562
 ---
@@ -227,4 +227,4 @@ This issue is fixed.
 
 This issue is observed in Service Manager 2016 and later.
 
-**Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).
+**Workaround**: Perform the steps [detailed here](../scsm/config-remote-ssrs.md).

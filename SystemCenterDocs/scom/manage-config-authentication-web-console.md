@@ -2,13 +2,13 @@
 ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
 description: This article describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
-ms.date: 01/19/2023
-ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -150,10 +150,10 @@ Repeat the preceding step on the following files:
 
 ::: moniker range=">=sc-om-2019"
 
-## Configure login session
+## Configure sign in session
 
 >[!NOTE]
->The web console uses windows authentication by default, if available to login into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
+>The web console uses windows authentication by default, if available to sign into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
 
 1. To edit the value, use a plain text editor to open the web.config in `<PATH>:\Program Files\Microsoft System Center\Operations Manager\WebConsole\Dashboard`.
 2. In the `<appSettings>` root element, modify the following session timeout value in minutes.

@@ -2,13 +2,13 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Set up TLS for VMM
 description: This article provides instructions for setting up TLS with VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 05/12/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 # Set up TLS for VMM

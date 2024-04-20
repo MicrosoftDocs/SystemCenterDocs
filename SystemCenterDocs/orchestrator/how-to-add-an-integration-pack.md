@@ -2,12 +2,12 @@
 title: Add an integration pack
 description: Describes how to register and import an integration pack to be used in an Orchestrator runbook.
 ms.date: 04/26/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 
