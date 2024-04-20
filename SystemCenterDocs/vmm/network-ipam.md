@@ -5,11 +5,11 @@ description: This article describes how to add an IP Address Management server t
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/23/2020
+ms.date: 04/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 # Set up an IPAM server in the VMM fabric
 

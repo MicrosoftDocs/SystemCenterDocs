@@ -1,8 +1,8 @@
 ---
 title: Exchange Users Activities
 description: The configuration instructions in this article apply to all activities in the Exchange Users Integration Pack.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -84,7 +84,7 @@ The activity will produce a new set of data every time it runs. The **Flatten** 
 
 ## Event Notifications
 
-Some activities are expected to take a limited amount of time to complete. If they don't complete within that time, they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for the completion of the action. After this specified time period, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
+Some activities are expected to take a limited amount of time to complete. If they don't complete within that time, they might be stalled or there might be another issue preventing them from completing. You can define the number of seconds to wait for the completion of the action. After this specified time period, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
 ### To be notified when the activity takes longer than a specified time to run or fails to run
 

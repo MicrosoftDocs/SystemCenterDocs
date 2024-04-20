@@ -4,8 +4,8 @@ description: This article describes how to create a command notification channel
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/06/2019
-ms.custom: UpdateFrequency2
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article

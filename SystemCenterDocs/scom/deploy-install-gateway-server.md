@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Gatewa
 author: sepaugh
 ms.author: lornesepaugh
 manager: amanan
-ms.date: 02/01/2024
+ms.date: 03/07/2024
 ms.custom: intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -44,7 +44,7 @@ There are three major things that we need to have ready and in place before proc
 
     > [!NOTE]
     >
-    > - Gatway servers that are in the same domain or in a shared trust boundary as the management group do not require certificates.
+    > - Gateway servers that are in the same domain or in a shared trust boundary as the management group do not require certificates.
     > - If the gateway and agents are in a workgroup, then we will need certificates for each management server, gateway, and client computer that will be monitored as there is no domain within a workgroup to faciliate authentication of systems.
 
 2. Reliable name resolution must exist between the agent-managed computers and the gateway server, and between the gateway server and the management server. This name resolution is typically done through DNS. However, if it isn't possible to get proper name resolution through DNS, it might be necessary to manually create entries in each computer's hosts file.

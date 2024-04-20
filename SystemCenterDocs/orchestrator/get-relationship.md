@@ -1,8 +1,8 @@
 ---
 title: Get Relationship
 description: The Get Relationship activity is used to generate a list of objects from two different classes that are related by the criteria you specify.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -31,9 +31,9 @@ The following published data elements are specific to Get Relationship. Addition
 
 | Element   | Description   |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Number of Objects   | The number of objects returned by the Get Relationship activity   |
-| Object Class   | The name of a class for which you want to define a relationship to the related class   |
-| Object GUID   | The unique identifier (GUID) of a single object in the object class that is used to define the relationship to another class |
-| Related Class   | The name of a class for which you want to define a relationship to the object class   |
-| Related Object GUID   | The unique identifier (GUID) of a single object in the second class that is used to define the relationship   |
-| Relationship Object GUID | The unique identifier (GUID) of the items returned by the Get Relationship activity   |
+| Number of Objects   | The number of objects returned by the Get Relationship activity.   |
+| Object Class   | The name of a class for which you want to define a relationship to the related class.   |
+| Object GUID   | The unique identifier (GUID) of a single object in the object class that is used to define the relationship to another class. |
+| Related Class   | The name of a class for which you want to define a relationship to the object class.  |
+| Related Object GUID   | The unique identifier (GUID) of a single object in the second class that is used to define the relationship.  |
+| Relationship Object GUID | The unique identifier (GUID) of the items returned by the Get Relationship activity.  |
