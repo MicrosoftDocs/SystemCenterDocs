@@ -7,8 +7,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/24/2023
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
@@ -28,6 +28,11 @@ This article contains procedures for how to set credentials in wizards for the f
 -  Credentials for Uninstalling an Agent
 
 These wizards define credentials to be authenticated on the UNIX or Linux computer and follow a similar process. For an overview of how credentials are provided, see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).  
+
+> [!IMPORTANT]
+> RunAs account passwords cannot contain "illegal" characters in the [Command Prompt](/windows-server/administration/windows-commands/cmd), such as: `& < ( ) @ ^ | "`
+>
+> Due to the use of WSMan for monitoring, having these characters in the password may cause monitoring to fail as they cannot be parsed correctly. To avoid grey agents and non-functioning monitoring, change the password to exclude these characters. A *maintenance* account should be OK with these symbols as this is used for SSH communication and works differently, however, to avoid potential issues down the line, please follow the same guidance for all accounts.
 
 ## Credentials for discovering UNIX and Linux computers  
 

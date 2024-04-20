@@ -5,10 +5,10 @@ description: This article describes how to create a SQL managed instance in a de
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 04/16/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
 ms.topic: how-to
 monikerRange: '>=sc-om-2019'
 ---
@@ -22,7 +22,7 @@ This article describes how to create a SQL managed instance in a dedicated subne
 
 ## Create and configure a SQL managed instance
 
-Before you create a SCOM managed instance, create a SQL managed instance. For more information, see [Create a SQL managed instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
+Before you create a SCOM Managed Instance, create a SQL managed instance. For more information, see [Create a SQL managed instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
 
 >[!NOTE]
 >You can reuse your existing SQL managed instance if that matches the requirement. However, you need to configure it to work for SCOM Managed Instance.
@@ -30,11 +30,15 @@ Before you create a SCOM managed instance, create a SQL managed instance. For mo
 We recommend the following settings for creating a SQL managed instance:
 
 - **Resource Group**: Create a new resource group for SQL Managed Instance. A best practice is to create a new resource group for large Azure resources.
-- **Managed Instance name**: Choose a unique name. This name is used while you create a SCOM managed instance to refer to this SQL managed instance.
+- **Managed Instance name**: Choose a unique name. This name is used while you create a SCOM Managed Instance to refer to this SQL managed instance.
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but we recommend the closest region for latency purposes.
-- **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration suffices for the SCOM managed instance.
+- **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration suffices for the SCOM Managed Instance.
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
-- **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance virtual network by peering both the SCOM Managed Instance virtual network and the SQL Managed Instance virtual network.
+
+   >[!Note]
+   >Choosing SQL Authentication mode is temporary. Later in [Step 5](/system-center/scom/create-user-assigned-identity?view=sc-om-2022#set-the-microsoft-entra-admin-value-in-the-sql-managed-instance&preserve-view=true) it will be updated to use Microsoft Entra ID with MSI.
+
+- **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM Managed Instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM Managed Instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance virtual network by peering both the SCOM Managed Instance virtual network and the SQL Managed Instance virtual network.
 
    The subnet that you provide to SQL Managed Instance has to be dedicated (delegated) to the SQL managed instance. The provided subnet can't be used to house any other resources.
 

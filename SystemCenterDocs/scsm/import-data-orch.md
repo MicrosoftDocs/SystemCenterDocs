@@ -5,12 +5,12 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 04/19/2023
-ms.technology: service-manager
+ms.date: 04/18/2024
+ms.subservice: service-manager
 ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Import Runbooks from System Center Orchestrator into Service Manager

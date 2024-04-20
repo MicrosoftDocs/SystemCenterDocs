@@ -5,12 +5,12 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 05/06/2019
-ms.technology: service-manager
+ms.date: 04/18/2024
+ms.subservice: service-manager
 ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Configure and use Service Manager cmdlets for Windows PowerShell

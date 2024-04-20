@@ -5,10 +5,10 @@ description: This article provides information about how to turn off the telemet
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/07/2023
+ms.date: 04/03/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-management-automation
+ms.service: system-center
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

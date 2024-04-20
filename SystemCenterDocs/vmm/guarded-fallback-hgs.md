@@ -5,12 +5,12 @@ description: This article explains about how to configure the fallback HGS in VM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/10/2018
+ms.date: 02/19/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Configure HGS fallback URLs in VMM

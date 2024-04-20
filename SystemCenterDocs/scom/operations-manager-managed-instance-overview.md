@@ -5,10 +5,10 @@ description: This article describes about Azure Monitor SCOM Managed Instance.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2023
+ms.date: 04/03/2024
 ms.custom: UpdateFrequency.5
-ms.prod: system-center
-ms.technology: operations-manager-managed-instance
+ms.service: system-center
+ms.subservice: operations-manager-managed-instance
 ms.topic: overview
 monikerRange: '>=sc-om-2019'
 ---
@@ -42,7 +42,7 @@ SCOM Managed Instance functionality allows you to:
 - Configure an E2E System Center Operations Manager setup (SCOM Managed Instance) on Azure.
 - Manage (view, delete) your SCOM Managed Instance in Azure.
 - Connect to your SCOM Managed Instance using the System Center Operations Manager Ops console.
-- Monitor workloads (wherever they're located) using the Ops and Web console, and while using your existing management packs.
+- Monitor workloads (wherever they're located) using the Ops, and while using your existing management packs.
 - Incur zero database maintenance (Ops database and Data warehouse database) because of the offloading of database management to SQL Managed Instance (SQL MI).
 - Scale your instance immediately without the need to add/delete physical servers.
 - View your SCOM Managed Instance reports in Power BI.
@@ -88,7 +88,7 @@ The databases hosted in the SQL MI allow formation and to view reports in Power 
 
 ### A customer-managed part
 
-A customer-managed part consists of Ops and Web console that are used to monitor and administer the instance. The agents to be monitored are under the customer domain, and if they are in another domain, a gateway server is needed to carry out the authentication. The customer-managed part hosts a DNS with a static IP that is provided to the Management Servers hosted in Azure.
+A customer-managed part consists of Ops that are used to monitor and administer the instance. The agents to be monitored are under the customer domain, and if they are in another domain, a gateway server is needed to carry out the authentication. The customer-managed part hosts a DNS with a static IP that is provided to the Management Servers hosted in Azure.
 
 **Detailed Architecture of SCOM Managed Instance**
 

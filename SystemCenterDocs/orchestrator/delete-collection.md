@@ -1,12 +1,12 @@
 ---
 title: Delete Collection Activity
-description: This article provides guidance on how to configure the Delete Collection activity for System Center 2016 Configuration Manager.
-ms.custom: UpdateFrequency3
-ms.date: 03/08/2017
-ms.prod: system-center
+description: This article provides guidance on how to configure the Delete Collection activity for System Center Configuration Manager.
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/16/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 728e1e07-f776-4080-8ee2-188affb15224
@@ -16,7 +16,7 @@ manager: jsuri
 robots: noindex
 ---
 
-# Delete collection activity for System Center 2016 Configuration Manager
+# Delete collection activity for System Center Configuration Manager
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
@@ -58,7 +58,7 @@ optional properties into published data.
 By default, the Delete Collection activity won't remove a collection
 with the following properties:
 
-- The collection has assigned deployments (including auto-deployments)
+- The collection has assigned deployments (including autodeployments)
 
 - The collection is used in any update deployment templates
 
@@ -72,7 +72,7 @@ These defaults act as a safeguard against accidentally deleting
 collections that are being actively used. You can override these
 defaults by setting the appropriate values to **False**.
 
-- Has assigned deployments (including auto-deployments): True or False (Default = True) When set to **True**, causes the activity to fail if the collection has any assigned deployments, including legacy programs, applications, software updates, task sequences, or auto-deployments for software updates).
+- Has assigned deployments (including autodeployments): True or False (Default = True) When set to **True**, causes the activity to fail if the collection has any assigned deployments, including legacy programs, applications, software updates, task sequences, or autodeployments for software updates).
 - Is used in any deployment templates: True or False (Default = True) When set to **True**, causes the activity to fail if the collection is the target assigned to a software update deployment template.
 - Has custom client settings assignments: True or False (Default = True) When set to **True**, causes the activity to fail if the collection has any custom client configuration settings defined.
 - Has antimalware policy assignments: True or False (Default = True) When set to **True**, causes the activity to fail if the collection has any antimalware policies assigned.

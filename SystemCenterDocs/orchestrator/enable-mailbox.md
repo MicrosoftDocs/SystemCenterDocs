@@ -1,12 +1,12 @@
 ---
 title: Enable Mailbox
 description: You can use the Enable Mailbox activity in an on-premises environment to enable a mailbox for an existing Active Directory user or InetOrgPerson object.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement_fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1825d27b-c016-4d16-8237-350fbced1686
@@ -55,7 +55,7 @@ The following tables list the required properties, optional properties, and publ
 | Equipment   | Specifies the new mailbox as equipment if this mailbox is a resource mailbox.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Linked Domain Controller   | The domain controller in the forest where the user account resides. This domain controller is used to get security information for the account specified by the Linked Master Account property. This property is required only if you're creating a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Linked Domain Password   | The password that is used to access the domain controller specified by the Linked Domain Controller property. This property is optional, even if when enabling a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Linked Domain User Name   | The user name that is used to access the domain controller specified by the Linked Domain Controller property. This property is optional, even if when enabling a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
+| Linked Domain User Name   | The user name that is used to access the domain controller specified by the Linked Domain Controller property. This property is optional, even when enabling a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Linked Master Account   | The master account in the forest where the user account resides. This master account is the account to link the mailbox to. The master account grants access to the mailbox. This property is required only if you're creating a linked mailbox.<br>This property can be one of the following value types:<br>GUID <br>DN<br>Domain\\Account <br>UPN<br>LegacyExchangeDN<br>SmtpAddress<br>Alias <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br> | String   |
 | Managed Folder Mailbox Policy Allowed   | Specifies whether to bypass the warning that messaging records management (MRM) features aren't supported for email clients using versions of Microsoft Outlook earlier than Office Outlook 2007.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Managed Folder Mailbox Policy   | The name or identity of the managed folder mailbox policy to apply to the mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
@@ -258,5 +258,5 @@ The following tables list the required properties, optional properties, and publ
 | When Created UTC   | UTC date and time when mailbox was created.   | DateTime   |
 | When Mailbox Created   | Date and time when mailbox was created.   | DateTime   |
 | When Soft Deleted   | Date and time when mailbox was soft deleted.   | DateTime   |
-| Windows Email Address   | Email address .   | String   |
+| Windows Email Address   | Email address.   | String   |
 | Windows Live ID (Live@edu only)   | Windows Live ID associated with the mailbox.   | String   |

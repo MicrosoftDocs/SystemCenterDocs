@@ -4,11 +4,11 @@ description: This article describes how to install an operating system on a VM i
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/03/2018
+ms.date: 04/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: intro-installation, UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: intro-installation, UpdateFrequency2, engagement-fy24
 ---
 
 

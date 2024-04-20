@@ -1,12 +1,12 @@
 ---
 title: Get DPM Server Capacity
 description: The Get DPM Server Capacity activity is used in a runbook that queries a Data Protection Manager server for its available free storage capacity.
-ms.custom: UpdateFrequency3
-ms.date: 04/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: be555ca0-71d1-4de6-ad5f-b1d2089ad958
@@ -25,7 +25,7 @@ manager: jsuri
 
 The Get DPM Server Capacity activity is used in a runbook that queries a Data Protection Manager server for its available free storage capacity. This information helps you determine the placement of backup data.
 
-The Data Protection Manager server's storage pool returns capacity information in raw gigabytes (GB). For example, the value returned might be "120716263424". This data value requires additional calculation using standard activities such as Run .NET Script to perform real-world capacity checks. Typically, Data Protection Manager needs two to three times the storage space used by the primary data.
+The Data Protection Manager server's storage pool returns capacity information in raw gigabytes (GB). For example, the value returned might be **120716263424**. This data value requires additional calculation using standard activities such as Run .NET Script to perform real-world capacity checks. Typically, Data Protection Manager needs two to three times the storage space used by the primary data.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

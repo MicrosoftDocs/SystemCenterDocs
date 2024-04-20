@@ -4,11 +4,11 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 09/04/2023
+ms.date: 04/03/2024
 title: Author Automation Runbooks
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 # Author Service Management Automation runbooks

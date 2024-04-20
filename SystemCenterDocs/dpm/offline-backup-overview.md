@@ -1,11 +1,11 @@
 ---
 description: Learn about the components of offline backup in DPM
 ms.topic: article
-ms.prod: system-center
+ms.service: system-center
 keywords:
 ms.date: 08/04/2020
 title: Overview of offline backup
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 87b6a324-15df-41ae-86a3-546901bdd369
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika

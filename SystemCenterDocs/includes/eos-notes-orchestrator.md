@@ -2,14 +2,14 @@
 ms.assetid: e2b78e2e-6e6b-4826-8aa6-e35ad57e30e7
 title: include file
 description: Include file with notes on end of support information for 1801 and 1807, notes for use in all articles under 1801 and 1807 monikers
-author:  jyothisuri
-ms.author: jsuri
-manager:  mkluck
-ms.date:  08/18/2020
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date:  03/07/2024
 ms.topic:  include
-ms.prod:  system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ---
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2022](/system-center/orchestrator/upgrade-orch).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2022](../orchestrator/upgrade-orch.md).

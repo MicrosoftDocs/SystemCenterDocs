@@ -5,12 +5,12 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 05/11/2022
-ms.technology: service-manager
+ms.date: 04/18/2024
+ms.subservice: service-manager
 ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Import data from Configuration Manager into Service Manager

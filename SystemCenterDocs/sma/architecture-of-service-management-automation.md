@@ -5,9 +5,9 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.prod: system-center
-ms.date: 09/04/2023
-ms.technology: service-management-automation
+ms.service: system-center
+ms.date: 03/04/2024
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
@@ -22,7 +22,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 This article shows a diagram that illustrates System Center - Service Management Automation (SMA) features.
 
 
-![SMA architecture diagram.](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
+![SMA architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)
 
  ## Features
 

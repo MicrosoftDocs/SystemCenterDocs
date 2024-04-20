@@ -1,12 +1,12 @@
 ---
 title: Delete Attachment
 description: The Delete Attachment activity is used in a runbook to delete an attachment from a Microsoft SharePoint list item.
-ms.custom: UpdateFrequency3
-ms.date: 05/07/2019
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 04/03/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 01589057-32ee-4de2-8148-59eacc1586a4

@@ -1,14 +1,14 @@
 ---
 title: View Orchestrator data with PowerPivot
 description: Describes how to use PowerPivot for Excel to analyze operations data in System Center  - Orchestrator.
-ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 04/03/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # View Orchestrator data using PowerPivot

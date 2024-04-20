@@ -1,12 +1,12 @@
 ---
 title: Shut Down VM
 description: The Shut Down VM activity is used to shut down a stopped virtual machine.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 03/04/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10abad32-5d28-42fa-ab99-39d2965489c7

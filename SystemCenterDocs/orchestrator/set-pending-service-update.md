@@ -1,9 +1,9 @@
 ---
 title: Set Pending Service Update activity in System Center - Orchestrator
 description: The Set Pending Service Update activity is used in a runbook to set a specific service template as the pending service update.
-ms.date: 04/25/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 02/16/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -76,3 +76,7 @@ There are no optional properties for this activity.
 | Tag   |   |   |
 | User Role ID   |   |   |
 | User Role Name   |   |   |
+
+## Next steps
+
+[Design and build runbooks in System Center 2016 Orchestrator](design-and-build-runbooks.md)

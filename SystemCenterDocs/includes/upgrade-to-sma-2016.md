@@ -1,14 +1,14 @@
 ---
 description: include file to describe the process to upgrade Service Management Automation in System Center 2016.
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-threshold
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
 keywords:  
 ms.date: 05/31/2018
 title:  include file
-ms.technology:  service-management-automation
+ms.subservice:  service-management-automation
 ms.assetid: f13edf4f-5708-4a50-94ca-9afb5c266839
 ---
 

@@ -5,11 +5,11 @@ description: This article provides an overview of the design decisions for consi
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/09/2023
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 03/18/2024
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
-ms.custom: engagement-fy23, UpdateFrequency.5
+ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 
 # Planning a Management Group Design

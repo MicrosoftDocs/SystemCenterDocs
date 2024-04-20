@@ -4,9 +4,9 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 03/07/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ---
@@ -34,7 +34,7 @@ A complete Orchestrator installation includes:
 
 It's possible to install all these roles and components on a single computer, but it's more common to distribute the roles across several computers or virtual machines.
 
-For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](/system-center/orchestrator/learn-about-orchestrator).
+For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](./learn-about-orchestrator.md).
 
 This article provides detailed installation instructions for the various Orchestrator roles.
 
@@ -185,8 +185,13 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
    3. Select **Next** to continue.
 
-6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API will run under an IIS App Pool with this identity. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
+1. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API will run under an IIS App Pool with this identity. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 
+> [!NOTE]
+> If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
+> ```
+> aspnet_regiis.exe -ga DOMAIN\USER
+> ```
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous steps are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
 8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
@@ -226,8 +231,13 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
     Orchestration Console requires IIS URL Rewrite module; download from here.
 
-6.	On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Select **Test to verify the account credentials**. If the credentials are accepted, select **Next**.
+1. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Select **Test to verify the account credentials**. If the credentials are accepted, select **Next**.
 
+> [!NOTE]
+> If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
+> ```
+> aspnet_regiis.exe -ga DOMAIN\USER
+> ```
 7.	On the **Configure the ports for the Web Console** page, verify the port numbers for the Orchestration Console service and the URL of the Web API service, and select **Next**.
 
     >[!NOTE]
@@ -529,7 +539,7 @@ This article provides detailed installation instructions for the various Orchest
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-   1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
       > [!WARNING]
       > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
@@ -652,7 +662,7 @@ This article provides detailed installation instructions for the various Orchest
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-   1.  Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+1.  Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
    2.  After you resolve the missing prerequisites, select **Verify prerequisites again**.
 

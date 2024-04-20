@@ -1,14 +1,14 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 2019.
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
 keywords:
 ms.date:  03/14/2019
 title:  include file
-ms.technology:  data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 ---
 

@@ -5,11 +5,11 @@ description: This article describes the service-level changes that are required 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/11/2023
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 03/18/2024
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
