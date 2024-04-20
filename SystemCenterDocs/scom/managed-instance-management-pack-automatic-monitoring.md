@@ -1,11 +1,11 @@
 ---
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
-description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance
-author: epomortseva
-ms.author: v-ekaterinap
+description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance.
+author: fkornilov
+ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/12/2024
+ms.date: 04/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -52,11 +52,17 @@ Select this option if you want your Azure Service Principal Name to be created a
 
 Ensure that the account that you use must have either the **Owner** role (or higher), **Active Directory Administrator**, **Service Administrator**, or **Сo-Administrator**.
 
+Select an expiration date for the new application client secret based on your corporate policy, then select **Next**.
+
 ![Screenshot showing the Automatic Configuring SPN.](./media/managed-instance-management-pack/spn-configuration.png)
 
 If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window will be displayed. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
 
 ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.png)
+
+Specify the desired Entra ID tenant with a specific Azure SQL Managed Instance.
+
+![Screenshot showing step with selecting Azure tenant.](./media/managed-instance-management-pack/selecting-tenant-id.png)
 
 Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication data will be displayed.
 
@@ -100,15 +106,17 @@ Regardless of the selected option, ensure to grant required SQL permissions to t
 
 ## Instances filtering
 
-At this optional step, you can configure the filtering options:
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
 
-- Exclude - select this option to specify instances that shouldn't be discovered.
+**Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
-- Include - select this option to specify only those instances that you want to be discovered.
+![Screenshot of the server exclude list wildcard SPN.](./media/managed-instance-management-pack/configure-instances-filtering-wildcard.png)
 
-Use an asterisk to replace any symbol/symbols.
+**Regular Expression** filtering mask type supports [.NET regular expressions patterns](/dotnet/standard/base-types/regular-expressions).
 
-![Screenshot showing the Configure instance filtering.](./media/managed-instance-management-pack/instance-filtering.png)
+![Screenshot of the server exclude list regular expression SPN.](./media/managed-instance-management-pack/configure-instances-filtering-regex.png)
+
+If you want to remove an existing mask, select it and select **Delete**.
 
 ## Management pool
 

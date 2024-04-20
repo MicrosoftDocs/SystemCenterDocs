@@ -5,10 +5,11 @@ description: This article describes how to create logical switches in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  07/24/2018
+ms.date:  04/01/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 ## How to create logical switches

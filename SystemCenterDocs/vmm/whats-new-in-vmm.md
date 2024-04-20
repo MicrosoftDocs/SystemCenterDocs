@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/15/2023
+ms.date: 03/19/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -25,7 +25,7 @@ This article details the new features supported in System Center 2022 - Virtual 
 
 ::: moniker range="sc-vmm-2019"
 
-This article details the new features supported in System Center 2019 - Virtual Machine Manager (VMM). It also details the new features in VMM 2019 UR1, UR2, UR3, UR4, and UR5.
+This article details the new features supported in System Center 2019 - Virtual Machine Manager (VMM). It also details the new features in VMM 2019 UR1, UR2, UR3, UR4, UR5, and UR6.
 
 [!INCLUDE [whats-new-vmm-2019.md](../includes/whats-new-vmm-2019.md)]
 

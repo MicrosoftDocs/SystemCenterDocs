@@ -1,12 +1,12 @@
 ---
 title: Advanced analytical reports in Service Manager
 description: Provides a reference of advanced analytical reports available in Service Manager.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/10/2021
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager

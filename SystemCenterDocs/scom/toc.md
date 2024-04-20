@@ -242,6 +242,7 @@
 #### [Accessing UNIX and Linux computers](manage-security-authenticate-crossplat.md)
 #### [How to set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)
 #### [How to configure sudo elevation and SSH keys](manage-security-create-crossplat-sudo-sshkeys.md)
+#### [Sudoers templates for elevation in UNIX/Linux monitoring](manage-security-unix-linux-sudoers-templates.md)
 #### [Configure Kerberos authentication for Linux computers](manage-linux-kerberos-auth.md)
 #### [Required capabilities for UNIX and Linux computers](manage-security-crossplat-capabilities.md)
 #### [Configuring SSL ciphers](manage-security-crossplat-config-sslcipher.md)
@@ -317,6 +318,7 @@
 #### [How to configure grooming settings for the Operations Manager database](manage-omdb-grooming-settings.md)
 #### [How to configure grooming settings for the Reporting data warehouse database](manage-omdwdb-grooming-settings.md)
 # Management Packs
+## [List of Management Packs](management-pack-list.md)
 ## Management Pack for SQL Server
 ### [Features and Enhancements in Management Pack for SQL Server](sql-server-management-pack-changes-history.md)
 ### [Scope and Supported Configuration in Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md)
@@ -364,6 +366,8 @@
 ##### [Manual Monitoring Template](managed-instance-management-pack-manual-monitoring.md)
 #### [Create a Service Principal](managed-instance-management-pack-service-principal.md)
 #### [Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md)
+#### [Enable Debugging](managed-instance-management-pack-enable-debugging.md)
+#### [Export Event Log Task](managed-instance-management-pack-export-event-log-task.md)
 ### [Security Configuration](managed-instance-management-pack-security-configuration.md)
 ### [Views and Dashboards in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-views-and-dashboards.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-known-issues-and-troubleshooting.md)

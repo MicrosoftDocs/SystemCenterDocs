@@ -44,9 +44,9 @@ The Integration Pack for HP iLO and OA requires the following software to be ins
 
 ::: moniker range="<=sc-orch-2019"
 
-- To download this integration pack for Orchestrator 2016, see [HP iLO and OA Integration Pack for System Center 2016 - Orchestrator.](https://www.microsoft.com/download/details.aspx?id=54102).
+- To download this integration pack for Orchestrator 2016, see [HP iLO and OA Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54102).
 
-- To download this integration pack for Orchestrator 2019, see [HP iLO and OA Integration Pack for System Center 2019 - Orchestrator.](https://www.microsoft.com/download/details.aspx?id=58107&WT.mc_id=rss_alldownloads_all).
+- To download this integration pack for Orchestrator 2019, see [HP iLO and OA Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58107&WT.mc_id=rss_alldownloads_all).
 
 ::: moniker-end
 

@@ -3,7 +3,7 @@ description: Use DPM to back up and restore VMware VMs.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/07/2023
+ms.date: 02/26/2024
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -541,9 +541,10 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-**Key Path:** *Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare*
-
-**Key Type:** DWORD (32-bit) value.
+**Key Path:** *HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelIncrementalJobs*
+**32 Bit DWORD:** VMware
+**Data:** `number` 
+The value should be the number (decimal) of virtual machines that you select for parallel backup.
 
 > [!NOTE]
 >  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
@@ -560,7 +561,7 @@ DPM 2022 supports restore of more than one VMware VMs protected from same vCente
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.
 
-**Key Path**: *HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs*
+**Key Path**: *HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelRecoveryJobs*
 
 **32 Bit DWORD**: VMware
 

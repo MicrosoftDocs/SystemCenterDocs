@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/11/2023
+ms.date: 04/05/2024
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -36,6 +36,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10616.0|[5029512](https://support.microsoft.com/kb/5029512) |July 2023|Discover Azure Migrate in Operations Manager|
 |10.19.10615.0|[5029601](https://support.microsoft.com/kb/5029601) |July 2023|GB compliance|
 |10.19.10618.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023|SCX Compiler Mitigated Packages|
+|10.19.10649.0| [5035285](https://support.microsoft.com/kb/5035285) |March 2024|Update Rollup 6|
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
@@ -47,6 +48,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10185.0|[5005527](https://support.microsoft.com/kb/5005527) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 |10.19.10200.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
 |10.19.10211.0|[5025123](https://support.microsoft.com/kb/5025123) |April 2023 |Update Rollup 5 |
+|10.19.10253.0|[5035285](https://support.microsoft.com/kb/5035285) |March 2024|Update Rollup 6|
 
 ### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
@@ -63,5 +65,7 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.1214.0|[v1.7.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.0-0) |March 2023 |1.7.0-0 |Update Rollup 4 - OpenSSL 3.0 |
 |10.19.1226.0|[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0) |August 2023 |1.7.1-0 |Update Rollup 5 - Hotfix |
 |10.19.1234.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |OMI Vulnerability Fix |
+|10.19.1248.0| [v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024|1.8.1-0|Update Rollup 6|
+|10.19.1254.0|[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0)|April 2024|1.9.0-0|FIPS Crypto Policy Support|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*

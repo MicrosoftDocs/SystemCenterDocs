@@ -5,7 +5,7 @@ description: This article explains how to create a service principal in Azure Cl
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 1/30/2024
+ms.date: 02/28/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -73,7 +73,7 @@ There are two types of authentication available for service principals: password
 
 1. Browse to **Microsoft Entra ID** > **App registrations**, then select your application.
 2. Select **Certificates & secrets**, select **Client secrets**, and then Select **New client secret**.
-3. Provide a description of the secret and a duration, then select **Add**.
+3. Provide a description of the secret and a duration based on your corporate policy, then select **Add**.
 
     > [!TIP]
     > Once you've saved the client secret, the value of the client secret is displayed. This is only displayed once, so copy this value and store it to a secure location for reuse.

@@ -5,10 +5,10 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/13/2020
+ms.date: 04/18/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: intro-deployment, UpdateFrequency3
+ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ---
 
 # Deploy System Center - Service Manager
@@ -23,7 +23,7 @@ The sections in this article help you deploy System Center - Service Manager in 
 
 > [!NOTE]  
 > - It's assumed that you're installing Service Manager on a computer where no previous version of Service Manager is installed.
-> - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](/system-center/scsm/config-remote-ssrs).
+> - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](./config-remote-ssrs.md).
 
 The sections in this article also describe how to find and read the Setup log if you encounter issues when you deploy Service Manager. And, finally, information about backing up Service Manager management server encryption keys is included. After you run Setup, the Encryption Key Backup and Restore Wizard start automatically.  
 
