@@ -4,7 +4,7 @@ description: This article describes how to an alert is generated in Operations M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2023
+ms.date: 22/04/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
