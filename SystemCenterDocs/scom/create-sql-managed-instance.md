@@ -32,7 +32,7 @@ We recommend the following settings for creating a SQL managed instance:
 - **Resource Group**: Create a new resource group for SQL Managed Instance. A best practice is to create a new resource group for large Azure resources.
 - **Managed Instance name**: Choose a unique name. This name is used while you create a SCOM Managed Instance to refer to this SQL managed instance.
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but we recommend the closest region for latency purposes.
-- **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. However, customers with less than 2000 workloads or customers who are validating SCOM Managed Instance in their test environments, can use a SQL MI instance with four vCores.
+- **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. However, customers with less than 2000 workloads or customers who are validating SCOM Managed Instance in their test environments can use a SQL MI instance with four vCores.
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
 
    >[!Note]
