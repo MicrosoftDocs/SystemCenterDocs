@@ -3,7 +3,7 @@ ms.assetid: 6d774c55-b334-489e-977e-206b2c6bc2e9
 title: Known issues and troubleshooting in Management Pack for Azure SQL Database
 description: This article explains known issues and troubleshooting in Management Pack for Azure SQL Database
 author: Anastas1ya
-ms.author:v-fkornilov
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 1/31/2023
 ms.topic: article

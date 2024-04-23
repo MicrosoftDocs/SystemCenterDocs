@@ -3,7 +3,7 @@ ms.assetid: 9550f943-bcc2-45dc-a866-9eae7b3b8b0c
 title: Monitoring configuration in Management Pack for SQL Server
 description: This section explains monitoring configurations in Management Pack for SQL Server
 author: epomortseva
-ms.author:v-fkornilov
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 12/15/2023
 ms.topic: article

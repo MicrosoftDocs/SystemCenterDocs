@@ -4,7 +4,7 @@ title: Enabling debugging in Management Pack for SQL Server
 description: This article explains how to enable debugging in Management Pack for SQL Server
 manager: evansma
 author: epomortseva
-ms.author:v-fkornilov
+ms.author: v-fkornilov
 ms.date: 02/27/2024
 ms.topic: article
 ms.service: system-center
