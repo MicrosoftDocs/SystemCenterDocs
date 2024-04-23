@@ -3,7 +3,7 @@ ms.assetid: 110aa866-00e8-4672-bd03-39cc8818e6b4
 title: Features and enhancements in Management Pack for SQL Server Dashboards
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Dashboards
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 manager: evansma
 ms.date: 03/01/2024
 ms.topic: article

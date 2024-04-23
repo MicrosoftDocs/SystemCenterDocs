@@ -3,7 +3,7 @@ ms.assetid: d69cf961-ec43-4dd8-9b53-14fddaf078fa
 title: SQL Server monitoring pool in Management Pack for SQL Server
 description: This article explains SQL Server monitoring pool
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 manager: evansma
 ms.date: 1/25/2024
 ms.topic: article

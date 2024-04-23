@@ -3,7 +3,7 @@ ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
 title: Scope and supported configuration in Management Pack for SQL Server
 description: This article explains the scope and supported configuration for Management Pack for SQL Server
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 manager: evansma
 ms.date: 12/15/2023
 ms.topic: article

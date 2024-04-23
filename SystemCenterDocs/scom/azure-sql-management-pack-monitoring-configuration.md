@@ -3,7 +3,7 @@ ms.assetid: 3e21f741-fd1d-4a60-9864-209ed131df1a
 title: Monitoring configuration in Management Pack for Azure SQL Database
 description: This article explains the monitoring configuration in Management Pack for Azure SQL Database
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article

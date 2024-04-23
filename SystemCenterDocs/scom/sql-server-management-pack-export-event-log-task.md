@@ -4,7 +4,7 @@ title: Export event log task in Management Pack for SQL Server
 description: This article explains how to run the export event log task for DB Engine in SQL Server Management Pack
 manager: evansma
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 ms.date: 02/01/2024
 ms.topic: article
 ms.service: system-center

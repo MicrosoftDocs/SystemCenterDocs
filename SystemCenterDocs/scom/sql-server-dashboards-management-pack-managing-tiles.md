@@ -3,7 +3,7 @@ ms.assetid: 2ad571c2-f460-4b52-bccd-737e0936c5ff
 title: Managing tiles in Management Pack for SQL Server Dashboards
 description: This article explains how to manage tiles
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article

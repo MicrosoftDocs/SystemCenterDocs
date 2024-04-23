@@ -3,7 +3,7 @@ ms.assetid: 8285d0f9-7069-4abf-b83e-ba5898dd73ff
 title: Enabling agent proxy option in Management Pack for SQL Server
 description: This article explains how to enable the agent proxy option
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article

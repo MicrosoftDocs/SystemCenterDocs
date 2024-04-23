@@ -3,7 +3,7 @@ ms.assetid: 170dc7fd-11a3-411c-a164-e8fce974deee
 title: Management Pack for SQL Server Reporting Services delivery
 description: This article explains how to install Management Pack for SQL Server Reporting Services
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 manager: evansma
 ms.date: 5/31/2021
 ms.topic: article

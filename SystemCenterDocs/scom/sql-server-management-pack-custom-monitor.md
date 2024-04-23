@@ -4,7 +4,7 @@ title: Custom query-based monitors in System Center Management Pack for SQL Serv
 description: This article explains how to configure a custom query monitor in System Center Management Pack for SQL Server.
 manager: evansma
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author:v-fkornilov
 ms.date: 06/13/2022
 ms.topic: article
 ms.service: system-center
