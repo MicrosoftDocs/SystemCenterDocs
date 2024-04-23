@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Disabling monitoring of specified SQL Servers and databases in Management Pack SQL Server Analysis Services
-description: This section explains how to disable monitoring of of Analysis Servers and Databases
+title: Disabling monitoring of specified Analysis Servers and Databases in Management Pack SQL Server Analysis Services
+description: This section explains how to disable monitoring of Analysis Servers and Databases
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
@@ -10,6 +10,10 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
+# Disabling monitoring of specified SQL Servers and databases in Management Pack SQL Server Analysis Services
+
+This section explains how to disable monitoring of SQL Servers Analysis Services and Databases.
+
 ## Disabling Monitoring of Specified SQL Server Analysis Services Versions
 
 Management Pack for SQL Server Analysis Services allows you to exclude certain versions of SQL Server Analysis Services from monitoring.

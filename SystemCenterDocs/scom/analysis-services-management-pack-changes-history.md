@@ -2,10 +2,10 @@
 ms.assetid: 8e379e26-a604-4976-88ff-d291c48b8700
 title: Features and enhancements in Management Pack for SQL Server Analysis Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Analysis Services
-author: epomortseva
-ms.author: v-ekaterinap
+author: fkornilov
+ms.author: v-fkornilov
 manager: evansma
-ms.date: 1/22/2024
+ms.date: 04/23/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -50,7 +50,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 - Added new "VertiPaq Memory Usage on the Server (%)" performance collection rule which collects total VertiPaq memory usage in percentage terms from either limit or available memory on the server where the Analysis Services instance is installed
 - Added new "VertiPaq Memory Usage on the Server (GB)" performance collection rule which collects total VertiPaq memory usage in gigabytes on the server where the Analysis Services instance is installed
 - Added a new "Product Version Compliance" monitor which is capable to check the product version number of the current SQL Server instance to determine that instance is up-to-date
-- Added new [Operations Manager console task](analysis-services-management-pack-monitoring-configuration.md#tasks-overview), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
+- Added new [Operations Manager console task](analysis-services-management-pack-tasks-overview.md), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
 - Updated display strings
 
 ### Bug fixes

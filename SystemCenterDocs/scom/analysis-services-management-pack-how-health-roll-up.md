@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# How Health Rolls Up
+# How Health Rolls Up in SQL Server Analysis Services Management Pack
 
 The following diagram shows the rollup of the object health states.
 

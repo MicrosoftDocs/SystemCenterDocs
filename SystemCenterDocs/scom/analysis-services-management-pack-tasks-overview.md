@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Tasks in Management Pack for SQL Server Analysis Services
-description: This article explains monitoring configurations in Management Pack for SQL Server Analysis Services
+description: This section explains tasks in the Management Pack for SQL Server Analysis Services
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma

@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# How Health Rolls Up
+# How Health Rolls Up in SQL Server Management Pack
 
 This section explains diagrams that show how the health state of objects roll up in Management Pack for SQL Server.
 
