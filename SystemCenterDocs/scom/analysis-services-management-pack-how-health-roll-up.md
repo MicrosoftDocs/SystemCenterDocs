@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: How health rolls up in Management Pack for for SQL Server Analysis Services
-description: This article explains how health rolls up in Management Pack for SQL Server Analysis Services
+title: How health rolls up in Management Pack for SQL Server Analysis Services
+description: This article explains how health rolls up in Management Pack for SQL Server Analysis Services.
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma

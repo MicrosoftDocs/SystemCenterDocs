@@ -19,15 +19,15 @@ This article covers new functionality and improvements in Management Pack for SQ
 
 ### What's new
 
-- Added new "MDX Number of calculation covers" performance collection rule which collects total number of evaluation nodes built by MDX execution plans, including active and cached
-- Added new "MDX total cells calculated" performance collection rule which collects the total number of cell properties
-- Added new "MDX Total NON EMPTY for calculated members" performance collection rule which collects total number of times a NON EMPTY algorithm looped over calculated members
-- Added new "MDX Total NON EMPTY unoptimized" performance collection rule which collects total number of times an unoptimized NON EMPTY algorithm was used
-- Added new "MDX Total Recomputes" performance collection rule which collects collects total number of cells recomputed due to error
-- Added new "MDX Total Sonar subcubes" performance collection rule which collects total number of subcubes that the query optimizer generated
-- Added new "Processing Aggreagations Rows created/sec" performance collection rule which collects rate of aggregation rows created during processing of aggregations in MOLAP data files
-- Added new "Indexes Processing Rows/sec" performance collection rule which collects the number of rows per second being read from MOLAP stores to create indexes during a processing workload
-- Added new "Processing Rows written/sec" performance collection rule which collects rate of rows written during processing of data
+- Added new "MDX Number of calculation covers" performance collection rule that collects total number of evaluation nodes built by MDX execution plans, including active and cached
+- Added new "MDX total cells calculated" performance collection rule that collects the total number of cell properties
+- Added new "MDX Total NON EMPTY for calculated members" performance collection rule that collects total number of times a NON EMPTY algorithm looped over calculated members
+- Added new "MDX Total NON EMPTY unoptimized" performance collection rule that collects total number of times an unoptimized NON EMPTY algorithm was used
+- Added new "MDX Total Recomputes" performance collection rule that collects collects total number of cells recomputed due to error
+- Added new "MDX Total Sonar subcubes" performance collection rule that collects total number of subcubes that the query optimizer generated
+- Added new "Processing Aggreagations Rows created/sec" performance collection rule that collects rate of aggregation rows created during processing of aggregations in MOLAP data files
+- Added new "Indexes Processing Rows/sec" performance collection rule that collects the number of rows per second being read from MOLAP stores to create indexes during a processing workload
+- Added new "Processing Rows written/sec" performance collection rule that collects rate of rows written during processing of data
 - Improved the memory-related instance monitoring workflows by adding new properties and removing deprecated ones
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server Analysis Services
 - Added support for enabling [diagnostic tracing](/troubleshoot/system-center/scom/use-diagnostic-tracing) in the System Center Operations Manager toolset
@@ -47,9 +47,9 @@ This article covers new functionality and improvements in Management Pack for SQ
 ### What's new
 
 - Added new threshold overrides in percentage terms for the "Vertipaq memory consumed by SSAS Instance" monitor, now the monitor is capable to check the Vertipaq memory allocations by Analysis Services instance in gigabytes and percentage terms with the 'Health Calculation Mode' override
-- Added new "VertiPaq Memory Usage on the Server (%)" performance collection rule which collects total VertiPaq memory usage in percentage terms from either limit or available memory on the server where the Analysis Services instance is installed
-- Added new "VertiPaq Memory Usage on the Server (GB)" performance collection rule which collects total VertiPaq memory usage in gigabytes on the server where the Analysis Services instance is installed
-- Added a new "Product Version Compliance" monitor which is capable to check the product version number of the current SQL Server instance to determine that instance is up-to-date
+- Added new "VertiPaq Memory Usage on the Server (%)" performance collection rule that collects total VertiPaq memory usage in percentage terms from either limit or available memory on the server where the Analysis Services instance is installed
+- Added new "VertiPaq Memory Usage on the Server (GB)" performance collection rule that collects total VertiPaq memory usage in gigabytes on the server where the Analysis Services instance is installed
+- Added a new "Product Version Compliance" monitor that is capable to check the product version number of the current SQL Server instance to determine that instance is up-to-date
 - Added new [Operations Manager console task](analysis-services-management-pack-tasks-overview.md), which allows saving and transport of the Event Log file from the Agent machine to the Management Server
 - Updated display strings
 
