@@ -126,3 +126,9 @@ Performance collection rules collect the following metrics:
 - Processing Aggreagations Rows created/sec
 - Indexes Processing Rows/sec
 - Processing Rows written/sec
+
+## How Health Rolls Up
+
+The following diagram shows the rollup of the object health states.
+
+![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)

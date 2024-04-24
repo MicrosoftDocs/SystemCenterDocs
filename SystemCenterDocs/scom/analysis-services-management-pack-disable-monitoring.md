@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Disabling monitoring of specified Analysis Servers and Databases in Management Pack SQL Server Analysis Services
+title: Disable monitoring of specified Analysis Servers and Databases in Management Pack SQL Server Analysis Services
 description: This section explains how to disable monitoring of Analysis Servers and Databases
 author: fkornilov
 ms.author: v-fkornilov
