@@ -111,8 +111,8 @@ The following table is for reference only and contains links to management packs
 |[Microsoft System Center 2019 Management Pack for Hyper-V](https://www.microsoft.com/download/details.aspx?id=101312)|11.0.1.0|06/15/2020|
 |[Microsoft System Center 2019 Management Pack for Hyper-V](https://www.microsoft.com/download/details.aspx?id=101312)|11.0.4.0|2/5/2024|
 |[Microsoft System Center Management Pack for ADDS](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|6/22/2022|
-|[Microsoft System Center Management Pack for Azure SQL Dtabase](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.42.0|12/26/2022|
-|[Microsoft System Center Management Pack for Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.0.34.0|12/22/2021|
+|[Microsoft System Center Management Pack for Azure SQL Database](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.42.0|12/26/2022|
+|[Microsoft System Center Management Pack for Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.4.0.0|3/29/2024|
 |[Microsoft System Center Management Pack for Internet Information Service 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54445)|10.1.0.1|4/7/2022|
 |[Microsoft System Center management pack for SQL Server Analysis Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57382)|7.4.0.0|1/24/2024|
 |[Microsoft System Center management pack for SQL Server Dashboards](https://www.microsoft.com/download/details.aspx?id=51479)|7.4.0.0|1/23/2024|
