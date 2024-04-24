@@ -3,7 +3,7 @@ ms.assetid: 8f280433-6981-402e-b94d-ba2e9ae97b81
 title: Service SID in Management Pack for SQL Server
 description: This article explains how to configure monitoring with service SID
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 2/1/2023
 ms.topic: article
