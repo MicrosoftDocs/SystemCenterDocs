@@ -3,7 +3,7 @@ ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Create a service principal in Management Pack for Azure SQL Managed Instance
 description: This article explains how to create a service principal in Azure Cloud for using them in the Management Pack for Azure SQL Managed Instance
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 02/28/2024
 ms.topic: article
