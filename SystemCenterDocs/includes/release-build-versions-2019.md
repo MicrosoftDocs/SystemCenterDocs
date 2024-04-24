@@ -13,9 +13,8 @@ ms.topic: include
 
 ## Operations Manager 2019 build versions
 
->[!NOTE]
->All System Center Operations Manager update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2019 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
->
+> [!NOTE]
+> All System Center Operations Manager update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2019 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 The following tables list the release history for Operations Manager 2019.
 
@@ -36,7 +35,8 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.10616.0|[5029512](https://support.microsoft.com/kb/5029512) |July 2023|Discover Azure Migrate in Operations Manager|
 |10.19.10615.0|[5029601](https://support.microsoft.com/kb/5029601) |July 2023|GB compliance|
 |10.19.10618.0|[5028684](https://support.microsoft.com/kb/5028684) |August 2023|SCX Compiler Mitigated Packages|
-|10.19.10649.0| [5035285](https://support.microsoft.com/kb/5035285) |March 2024|Update Rollup 6|
+|10.19.10649.0|[5035285](https://support.microsoft.com/kb/5035285) |March 2024|Update Rollup 6|
+|10.19.10652.0|[5037360](https://support.microsoft.com/kb/5037360) | April 2024 | Update Rollup 6 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
