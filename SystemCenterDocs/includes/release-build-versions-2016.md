@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/05/2024
+ms.date: 04/23/2024
 ms.custom: na
 ms.service: system-center
 ms.assetid:
@@ -16,7 +16,6 @@ ms.topic: include
 
 >[!NOTE]
 >All System Center Operations Manager update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2016 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
->
 
 The following tables list the release history for Operations Manager 2016.
 
@@ -36,6 +35,7 @@ The following tables list the release history for Operations Manager 2016.
 |7.2.12324.0 |[4580254](https://support.microsoft.com/kb/4580254) |October 2020 |Update Rollup 10 |
 |7.2.12335.0 |[5006871](https://support.microsoft.com/kb/5006871) |October 2021 |Update Rollup 10 - Web Console IDOR Vulnerability Fix |
 |7.2.12345.0 |[5028684](https://support.microsoft.com/kb/5028684) |August 2023 |SCX Compiler Mitigated Packages |
+|7.2.12348.0 |[5037360](https://support.microsoft.com/kb/5037360) |April 2024 | Update Rollup 10 Hotfix - Introduces support for crypto policies in FIPS mode, specifically tailored for users monitoring Linux workloads. |
 
 ### Agent and Gateway
 |Build Number |KB |Release Date |Description |
@@ -57,8 +57,8 @@ The following tables list the release history for Operations Manager 2016.
 |-------------|---|-------------|--------------|------------|
 |7.6.1064.0 ||September 2016 |1.6.2-336 |General Availability release|  
 |7.6.1067.0 ||October 2016 |1.6.2-337 |Update Rollup 1 |  
-|7.6.1072.0	||February 2017 |1.6.2-338 |Update Rollup 2 |  
-|7.6.1076.0	||May 2017 |1.6.2-339 |Update Rollup 3|
+|7.6.1072.0 ||February 2017 |1.6.2-338 |Update Rollup 2 |  
+|7.6.1076.0 ||May 2017 |1.6.2-339 |Update Rollup 3|
 |7.6.1092.0 ||March 2020 |1.6.2-343 |Update Rollup 9 |
 |7.6.1105.0 |[v1.6.8-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.8-1)|September 2021 |1.6.8-1 |Update Rollup 10 |
 |7.6.1108.0 |[v1.6.9-2](https://github.com/microsoft/SCXcore/releases/tag/v1.6.9-2)|May 2022 |1.6.9-2 |Update Rollup 10 - OMI Vulnerability Fix |
@@ -66,8 +66,8 @@ The following tables list the release history for Operations Manager 2016.
 |7.6.1164.0 |[v1.6.12-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.12-1)|February 2023 |1.6.12-1 |Update Rollup 10 - Hotfix |
 |7.6.1185.0 |[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0)|August 2023 |1.7.1-0 |Update Rollup 10 - Hotfix |
 |7.6.1189.0 |[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |OMI Vulnerability Fix |
-|7.6.1197.0|[v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024 |1.8.1-0 |Update Rollup 10 - Hotfix |
-|7.6.1201.0|[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0)|April 2024|1.9.0-0|FIPS Crypto Policy Support|
+|7.6.1197.0 |[v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024 |1.8.1-0 |Update Rollup 10 - Hotfix |
+|7.6.1201.0 |[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0)|April 2024|1.9.0-0|FIPS Crypto Policy Support|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
 

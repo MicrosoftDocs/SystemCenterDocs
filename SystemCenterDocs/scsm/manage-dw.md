@@ -1,7 +1,7 @@
 ---
 title: Manage the data warehouse
 description: Describes how to manage the Service Manager data warehouse.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 05/12/2022
+ms.date: 04/18/2024
 ms.subservice: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
