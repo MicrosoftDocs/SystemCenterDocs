@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/23/2024
+ms.date: 04/30/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -275,7 +275,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
     * For ODBC 17, run the following PowerShell commands:
 
       ```powershell
-      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql7.dll" -PropertyType STRING -Force | Out-Null
+      New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql17.dll" -PropertyType STRING -Force | Out-Null
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 17 for SQL Server" -PropertyType STRING -Force | Out-Null
       ```
 

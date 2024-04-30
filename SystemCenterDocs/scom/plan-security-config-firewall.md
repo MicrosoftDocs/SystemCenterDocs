@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/20/2024
+ms.date: 04/30/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -32,27 +32,27 @@ The following table shows Operations Manager feature interaction across a firewa
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
 |Management server|1433/TCP&nbsp;--->&nbsp;<br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->|Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024. For more information, see [Special considerations for Port 135](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br><br>Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>[2](#footnote2)</sup>|
-|Management server|5723,&nbsp;5724&nbsp;--->|Management server|No|Port 5724 must be open to install this feature and can be closed after installation.|
+|Management server|5723/TCP,&nbsp;5724/TCP&nbsp;--->|Management server|No|Port 5724/TCP must be open to install this feature and can be closed after installation.|
 |Management server, Gateway Server|53 (DNS)&nbsp;---><br>88 (Kerberos)&nbsp;---><br>389 (LDAP)&nbsp;--->|Domain Controllers|No|Port 88 is used for Kerberos authentication, and isn't required if only using certificate authentication.<sup>[3](#footnote3)</sup> |
 |Management server|161,162&nbsp;<--->|Network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
-|Gateway server|5723&nbsp;--->|Management server|No||
+|Gateway server|5723/TCP&nbsp;--->|Management server|No||
 |Management server|1433/TCP&nbsp;---><br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->|Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>[2](#footnote2)</sup>|
-|Reporting server|5723,&nbsp;5724&nbsp;--->|Management server|No|Port 5724 must be open to install this feature and can be closed after installation.|
-|Operations console|5724&nbsp;--->|Management server|No||
+|Reporting server|5723/TCP,&nbsp;5724/TCP&nbsp;--->|Management server|No|Port 5724/TCP must be open to install this feature and can be closed after installation.|
+|Operations console|5724/TCP&nbsp;--->|Management server|No||
 |Operations console|80,&nbsp;443&nbsp;---><br>49152-65535&nbsp;TCP&nbsp;<--->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>[1](#footnote1)</sup>|
 |Connector framework source|51905&nbsp;--->|Management server|No||
-|Web console server|5724&nbsp;--->|Management server|No||
+|Web console server|5724/TCP&nbsp;--->|Management server|No||
 |Web console browser|80,&nbsp;443&nbsp;--->|Web console server|Yes (IIS Admin)|Default ports for HTTP or SSL enabled.|
 |Web console for Application Diagnostics|1433/TCP&nbsp;---><br>&nbsp;1434&nbsp;--->|Operations Manager database|Yes (Setup) <sup>[2](#footnote2)</sup>||
 |Web console for Application Advisor|1433/TCP&nbsp;---><br>&nbsp;1434&nbsp;--->|Reporting data warehouse|Yes (Setup) <sup>[2](#footnote2)</sup>||
-|Connected management server (Local)|5724&nbsp;--->|Connected management server (Connected)|No||
-|Windows agent installed using MOMAgent.msi|5723&nbsp;--->|Management server|Yes (Setup)||
-|Windows agent installed using MOMAgent.msi|5723&nbsp;--->|Gateway server|Yes (Setup)||
+|Connected management server (Local)|5724/TCP&nbsp;--->|Connected management server (Connected)|No||
+|Windows agent installed using MOMAgent.msi|5723/TCP&nbsp;--->|Management server|Yes (Setup)||
+|Windows agent installed using MOMAgent.msi|5723/TCP&nbsp;--->|Gateway server|Yes (Setup)||
 |Windows agent push installation, pending repair, pending update|5723/TCP<br>135/TCP<br>137/UDP<br>138/UDP<br>139/TCP<br>445/TCP<br><br>*RPC/DCOM&nbsp;High&nbsp;ports&nbsp;(2008&nbsp;OS&nbsp;and&nbsp;later)<br>Ports&nbsp;49152-65535&nbsp;TCP||No|Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.|
 |UNIX/Linux agent discovery and monitoring of agent|TCP&nbsp;1270&nbsp;<---|Management server or Gateway server|No||
 |UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP&nbsp;22&nbsp;<---|Management server or Gateway server|Yes||
 |OMED Service|TCP&nbsp;8886&nbsp;<---|Management server or Gateway server|Yes||
-|Gateway server|5723&nbsp;--->|Management server|Yes (Setup)||
+|Gateway server|5723/TCP&nbsp;--->|Management server|Yes (Setup)||
 |Agent (Audit Collection Services forwarder)|51909&nbsp;--->|Management server Audit Collection Services collector|Yes (Registry)||
 |Agentless Exception Monitoring data from client|51906&nbsp;--->|Management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||
 |Customer Experience Improvement Program data from client|51907&nbsp;--->|Management server (Customer Experience Improvement Program End) Point|Yes (Client Monitoring Wizard)||
