@@ -5,7 +5,7 @@ description: This article explains how to configure a custom query monitor in Sy
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 06/13/2022
+ms.date: 05/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -46,6 +46,12 @@ To create a two-state custom query-based monitor, perform the following steps:
 
 6. At the **Conditions** step, add one or more conditions to verify query results.
 
+   Condition supports two modes of evaluation:
+
+   - **ANY** - if any of the conditions are violated, the monitor switches to an unhealthy state.
+  
+   - **ALL** - if all the conditions are violated, the monitor switches to an unhealthy state.
+
     To add a new condition, select **Add**, and then select one of the available conditions:
 
     - **Empty Result Set**
@@ -60,7 +66,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
       Checks the scalar value in the specified cell of the result set. Only equal comparison is available at this moment. If you need complex logic, you can cover that with the query.
 
-    ![Screenshot that shows test conditions.](./media/sql-server-management-pack/sql-unit-monitor-conditions.png)
+    ![Screenshot that shows adding new conditions.](./media/sql-server-management-pack/sql-unit-monitor-conditions.png)
 
     When you add a condition, you must specify **Friendly name** and **Configuration** details for a specific check to be performed.
 
@@ -76,7 +82,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
     You can make more than one condition by using the **OR** and **AND** operators. If you want to add, edit, or remove a condition, select the condition and use the appropriate button.
 
-    ![Screenshot that shows multiple conditions.](./media/sql-server-management-pack/multiple-conditions.png)
+    ![Screenshot that shows multiple conditions.](./media/sql-server-management-pack/sql-unit-monitor-multiple-conditions.png)
 
     After you finish setting all the required conditions, select **Next**.
 
@@ -102,7 +108,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
    To specify the time range for both **Only process data during the specified time** and **Process data except during the specified time** modes, use the **Add** button and select the days and times.
 
-   ![Screenshot of selecting a time range for a monitor.](./media/sql-server-management-pack/select-time-range-in-filter.png)
+   ![Screenshot of selecting a time range for a monitor.](./media/sql-server-management-pack/sql-unit-monitor-select-time-range-in-filter.png)
 
    To exclude some days from the schedule, use the **Exclude days** button and choose the date range by using the **Start** and **End** fields. Complete the description, if applicable.
 
@@ -127,7 +133,7 @@ To create a two-state custom query-based monitor, perform the following steps:
     ![Screenshot of editing alerts.](./media/sql-server-management-pack/custom-monitor-editing-alerts.png)  
 
 > [!TIP]
-> By default, a custom query-based monitor works for all SQL Server instances. If you need to target only a specific instance, override your monitor after creation.
+> By default, a custom query-based monitor works for all SQL Server instances. To avoid alert storming you need to override the monitor target only to a specific instance of the SQL Server. To do that, in the monitor's override properties set the **Enabled = False** for the **MSSQL on Windows: DB Engine class**, and set the **Enabled = True** for the **specific SQL Server DB Engine** object.
 
 ## Three-state monitor
 
@@ -135,7 +141,7 @@ Creating a three-state custom query-based monitor is similar to creating a two-s
 
 A critical state has a higher priority than a warning in three-state monitors, and it's verified first. If one or more critical conditions fail, the monitor switches to the critical state, and warning conditions aren't verified.
 
-![Screenshot that shows a warning and a critical condition for a three-state monitor.](./media/sql-server-management-pack/warning-and-critical-conditions.png)
+![Screenshot that shows a warning and a critical condition for a three-state monitor.](./media/sql-server-management-pack/sql-unit-monitor-warning-and-critical-conditions.png)
 
 When you use the **Equal to** condition in a three-state monitor:
 
