@@ -26,8 +26,8 @@ Global Assets are available to all the runbooks in an Automation environment.  Y
 An Automation Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server. The properties for a credential are stored securely in the Automation database and can be accessed in the runbook with either the **Get-AutomationPSCredential** or **Get-AutomationCertificate** activity.
 
 ### PowerShell for managing credentials
-You can use the cmdlets in the following table to create and manage credentials with Windows PowerShell in Service Management Automation.
 
+You can use the cmdlets in the following table to create and manage credentials with Windows PowerShell in Service Management Automation.
 
 |Cmdlets|Description|
 |-----------|---------------|
@@ -39,6 +39,7 @@ You can use the cmdlets in the following table to create and manage credentials 
 |[Set-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502575(v=sc.20))|Creates a new Automation PowerShell credential or sets the properties for an existing credential.|
 
 ###  PowerShell for working with credentials
+
 You can use the activities in the following table to access the credentials in a runbook.
 
 |Activities|Description|
@@ -51,21 +52,21 @@ You can use the activities in the following table to access the credentials in a
 
 ### Create a PowerShell credential in the Management Portal
 
-1.  Select the **Automation** workspace.
+1. Select the **Automation** workspace.
 
-2.  At the top of the window, select **Assets**.
+2. At the top of the window, select **Assets**.
 
-3.  At the bottom of the window, select **Add Setting**.
+3. At the bottom of the window, select **Add Setting**.
 
-4.  Select **Add Credential**.
+4. Select **Add Credential**.
 
-5.  In the **Credential Type** dropdown, select **PowerShell Credential**.
+5. In the **Credential Type** dropdown, select **PowerShell Credential**.
 
-6.  Enter a name for the credential in the **Name** box.
+6. Enter a name for the credential in the **Name** box.
 
-7.  Select the right arrow.
+7. Select the right arrow.
 
-8.  Enter the values for each property.
+8. Enter the values for each property.
 
 9. Select the check mark to save the credential.
 
@@ -73,27 +74,28 @@ You can use the activities in the following table to access the credentials in a
 
  Management Portal
 
-1.  Select the **Automation** workspace.
+1. Select the **Automation** workspace.
 
-2.  At the top of the window, select **Assets**.
+2. At the top of the window, select **Assets**.
 
-3.  At the bottom of the window, select **Add Setting**.
+3. At the bottom of the window, select **Add Setting**.
 
-4.  Select **Add Credential**.
+4. Select **Add Credential**.
 
-5.  In the **Credential Type** dropdown, select **Certificate**.
+5. In the **Credential Type** dropdown, select **Certificate**.
 
-6.  Enter a name for the certificate in the **Name** box.
+6. Enter a name for the certificate in the **Name** box.
 
-7.  Select the right arrow.
+7. Select the right arrow.
 
-8.  Select **Browse for File** and navigate to either a .cer or .pfx file.
+8. Select **Browse for File** and navigate to either a .cer or .pfx file.
 
 9. If you selected a .pfx file, then provide its password.
 
 10. Select the check mark to save the certificate.
 
 ### Create a credential with PowerShell
+
 The following sample commands show how to create a new credential.
 
 ```powershell
@@ -108,6 +110,7 @@ Set-SmaCredential -WebServiceEndpoint $webServer -port $port -Name $credName -Va
 ```
 
 ### To create a new PowerShell certificate with Windows PowerShell in Service Management Automation
+
 The following sample commands show how to create a new certificate by importing a certificate file.
 
 ```powershell
@@ -121,6 +124,7 @@ Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName -P
 ```
 
 ## Use a PowerShell credential in a runbook
+
 You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCredential** activity. This returns a PSCredential object that you can use in the workflow.
 
 - The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](overview-powershell-workflows.md#inlinescript) activity to run a set of commands using alternate credentials.
@@ -137,6 +141,7 @@ You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCre
 An Automation Connection contains the information required to connect to a service or application from a runbook. This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to. Other information may also be required such as a certificate or a subscription ID. The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 
 ### Windows PowerShell Cmdlets
+
 You can create and manage credentials with the Windows PowerShell cmdlets in the following table.
 
 |Cmdlets|Description|
@@ -149,6 +154,7 @@ You can create and manage credentials with the Windows PowerShell cmdlets in the
 |[Set-SmaConnectionFieldValue](/previous-versions/system-center/powershell/system-center-2012-r2/dn502584(v=sc.20))|Sets the value of a particular field for an existing connection.|
 
 ### Runbook activities
+
 You can access connections in a runbook with the activities in the following table.
 
 |Activities|Description|
@@ -157,21 +163,21 @@ You can access connections in a runbook with the activities in the following tab
 
 ### Create a connection in the management portal
 
-1.  Select the **Automation** workspace.
+1. Select the **Automation** workspace.
 
-2.  At the top of the window, select **Assets**.
+2. At the top of the window, select **Assets**.
 
-3.  At the bottom of the window, select **Add Setting**.
+3. At the bottom of the window, select **Add Setting**.
 
-4.  Select **Add Connection**.
+4. Select **Add Connection**.
 
-5.  In the **Connection Type** dropdown, select a connection type.
+5. In the **Connection Type** dropdown, select a connection type.
 
-6.  Enter a name for the connection in the **Name** box.
+6. Enter a name for the connection in the **Name** box.
 
-7.  Select the right arrow.
+7. Select the right arrow.
 
-8.  Enter a value for each property.
+8. Enter a value for each property.
 
 9. Select the check mark to save the connection.
 
@@ -213,27 +219,28 @@ InlineScript {
 
 Automation variables are values that are available to all the runbooks.  You can create, modify, and retrieve them from the management portal, Windows PowerShell, or from within a runbook. Automation variables are useful for the following scenarios:
 
--   Share a value between multiple runbooks.
+- Share a value between multiple runbooks.
 
--   Share a value between multiple jobs from the same runbook.
+- Share a value between multiple jobs from the same runbook.
 
--   Manage a value from the management portal or from the Windows PowerShell command line that is used by runbooks.
+- Manage a value from the management portal or from the Windows PowerShell command line that is used by runbooks.
 
 Automation Variables are persisted so that they continue to be available even if the runbook fails. This also allows a value to be set by one runbook that is then used by another or is used by the same runbook the next time that it's run.
 
 When a variable is created, you must specify its data type from the following list. This is so that the management portal can display the appropriate control for the variable value. You can only assign a value of the correct type to a variable.
 
--   String
+- String
 
--   Integer
+- Integer
 
--   Boolean
+- Boolean
 
--   Datetime
+- Datetime
 
 When a variable is created, you can specify that it be stored encrypted. When a variable is encrypted, it's stored securely in the SMA database, and its value can't be retrieved from the **Get-SmaVariable** cmdlet. The only way that an encrypted value can be retrieved is from the **Get-AutomationVariable** activity in a runbook. You can store multiple values of the defined type to a single variable by creating a hash table.
 
 ### Windows PowerShell Cmdlets
+
 You can create and manage variables with the Windows PowerShell cmdlets in the following table.
 
 |Cmdlets|Description|
@@ -242,6 +249,7 @@ You can create and manage variables with the Windows PowerShell cmdlets in the f
 |[Set-SmaVariable](/previous-versions/system-center/powershell/system-center-2012-r2/dn502569(v=sc.20))|Creates a new variable or sets the value for an existing variable.|
 
 ### Runbook activities
+
 You can access variables in a runbook with the activities in the following table.
 
 |Activities|Description|
@@ -252,24 +260,23 @@ You can access variables in a runbook with the activities in the following table
 > [!NOTE]
 > You should avoid using variables in the "Name parameter of Get-AutomationVariable since this can complicate discovering dependencies between runbooks and Automation variables.
 
-
 ### Create a new variable in the management portal
 
-1.  Select the **Automation** workspace.
+1. Select the **Automation** workspace.
 
-2.  At the top of the window, select **Assets**.
+2. At the top of the window, select **Assets**.
 
-3.  At the bottom of the window, select **Add Setting**.
+3. At the bottom of the window, select **Add Setting**.
 
-4.  Select **Add Variable**.
+4. Select **Add Variable**.
 
-5.  In the **Type** dropdown, select a data type.
+5. In the **Type** dropdown, select a data type.
 
-6.  Enter a name for the variable in the **Name** box.
+6. Enter a name for the variable in the **Name** box.
 
-7.  Select the right arrow.
+7. Select the right arrow.
 
-8.  Enter a value for the variable and specify whether to encrypt it.
+8. Enter a value for the variable and specify whether to encrypt it.
 
 9. Select the check mark to save the new variable.
 
@@ -286,7 +293,7 @@ Set-SMAVariable -WebServiceEndpoint $web -Port $port -Name 'MyVariable' -Value '
 
 ### Use a variable in a runbook
 
--   The following sample code shows how to set and retrieve a variable in a runbook. In this sample, it's assumed that variables of type integer named NumberOfIterations and NumberOfRunnings and a variable of type string named SampleMessage have already been created.
+- The following sample code shows how to set and retrieve a variable in a runbook. In this sample, it's assumed that variables of type integer named NumberOfIterations and NumberOfRunnings and a variable of type string named SampleMessage have already been created.
 
     ```powershell
     $NumberOfIterations = Get-AutomationVariable -Name 'NumberOfIterations'
