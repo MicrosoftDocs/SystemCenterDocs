@@ -1,11 +1,11 @@
 ---
 ms.assetid: 0492a730-365e-4d72-bf83-f1fd990b7ba1
-title: What is VMM?
+title: What is Virtual Machine Manager?
 description: This article provides an overview of System Center VMM and a summary of what it can do for your business.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/16/2023
+ms.date: 05/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -30,7 +30,6 @@ Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the Syste
 
 ## Resources
 
-- For VMM questions or comments, go to [System Center Virtual Machine Manager Forums](https://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager).
 - To read blog posts from the VMM engineering team, see [System Center Blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog/label-name/System%20Center%20Virtual%20Machine%20Manager).
 
 ## Next steps
