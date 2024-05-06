@@ -1,5 +1,5 @@
 ---
-title: Mapping Active Directory Domain Services attributes to properties in Service Manager
+title: Map Active Directory Domain Services attributes to properties in Service Manager
 description: Learn about the relationships between Active Directory Domain Services attributes and properties in Service Manager.
 ms.topic: article
 author: PriskeyJeronika-MS
@@ -13,7 +13,7 @@ ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
-# Mapping Active Directory Domain Services attributes to properties in System Center - Service Manager
+# Map Active Directory Domain Services attributes to properties in System Center - Service Manager
 
 ::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
@@ -24,6 +24,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services (AD DS) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding Service Manager class properties.
 
 ## User/Microsoft.AD.User
+
 The following table describes the mapping between the attributes of the Active Directory User object and the Service Manager **Microsoft.AD.User** class properties.
 
 |Active Directory user attribute|Microsoft.AD.User property|
@@ -57,6 +58,7 @@ The following table describes the mapping between the attributes of the Active D
 |Domain|Domain|
 
 ## Group/Microsoft.AD.UserBase
+
 The following table describes the mapping between the attributes of the Active Directory Group object and the Service Manager **Microsoft.AD.UserBase** class properties.
 
 |Active Directory group attribute|Microsoft.AD.UserBase property|
@@ -69,6 +71,7 @@ The following table describes the mapping between the attributes of the Active D
 |Domain|Domain|
 
 ## Printer/Microsoft.AD.Printer
+
 The following table describes the mapping between the attributes of the Active Directory PrintQueue object and the Service Manager **Microsoft.AD.Printer** class properties.
 
 |Active Directory printer attribute|Microsoft.AD.Printer property|
@@ -117,6 +120,7 @@ The following table describes the mapping between the attributes of the Active D
 |description|description|
 
 ## Computer/Microsoft.Windows.Computer
+
 The following table describes the mapping between the attributes of the Active Directory Computer object and the Service Manager **Microsoft.Windows.Computer** class properties.
 
 |Active Directory computer attribute|Microsoft.Windows.Computer property|
