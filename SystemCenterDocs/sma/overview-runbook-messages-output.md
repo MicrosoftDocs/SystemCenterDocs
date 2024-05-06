@@ -137,6 +137,7 @@ Write-Verbose -Message "This is a verbose message."
 ```
 
 # [Debug stream](#tab/Debug)
+
 The Debug stream is intended for use with an interactive user and shouldn't be used in runbooks.
 
 ---
@@ -158,9 +159,9 @@ The following table lists the preference variables that can be used in runbooks 
 
 |Variable|Default Value|Valid Values|
 |------------|-----------------|----------------|
-|WarningPreference|Continue|Stop<\br>\Continue<\br>\SilentlyContinue|
-|ErrorActionPreference|Continue|Stop<\br>\Continue<\br>\SilentlyContinue|
-|VerbosePreference|SilentlyContinue|Stop<\br>\Continue<\br>\SilentlyContinue|
+|WarningPreference|Continue|Stop<br />Continue<\br><br />\SilentlyContinue|
+|ErrorActionPreference|Continue|Stop<br />Continue<br />SilentlyContinue|
+|VerbosePreference|SilentlyContinue|Stop<br />Continue<br />SilentlyContinue|
 
 The following table lists the behavior for the preference variable values that are valid in runbooks.
 
