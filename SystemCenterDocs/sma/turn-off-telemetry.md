@@ -20,23 +20,22 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 ::: moniker-end
 
-
 This article provides information about how to turn off the telemetry settings in System Center - Service Management Automation (SMA).
 
 By default, SMA sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
 
 Administrators can turn off this feature at any point of time.
 
-
 > [!NOTE]
 > Microsoft doesn't collect any personal data from the customers. We only listen to events that would help diagnostics in SMA. [Learn more](#telemetry-data-collected).
-
 
 ## Turn off telemetry in SMA
 
 Use the following procedure:
+
 1. [Import the PowerShell SMA module](/powershell/module/microsoft.systemcenter.servicemanagementautomation/import-smamodule).
-2. Run the following PowerShell cmdlet to disable sharing of usage and connectivity data in SMA.
+
+1. Run the following PowerShell cmdlet to disable sharing of usage and connectivity data in SMA.
 
    ```powershell
 

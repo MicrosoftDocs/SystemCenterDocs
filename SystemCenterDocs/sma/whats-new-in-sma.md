@@ -21,7 +21,7 @@ This article provides the new features supported by System Center 2025 - Service
 
 ### Improved reliability of SMA jobs
 
-With improvements made in Sandbox lifecycle management, we've improved the overall reliability of jobs run in SMA. 
+With improvements made in Sandbox lifecycle management, we've improved the overall reliability of jobs run in SMA.
 
 ::: moniker-end
 
