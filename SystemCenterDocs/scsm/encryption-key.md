@@ -47,7 +47,7 @@ Use the Encryption Key Backup or Restore Wizard and the following procedures to 
 7. On the **Provide a Password** page, enter a password that contains at least eight characters in the **Password** box. In the **Confirm Password** box, re-enter the same password, and select **Next**.  
 
     > [!NOTE]  
-    >  Recovery of the password isn't possible if it's lost or forgotten.  
+    > Recovery of the password isn't possible if it's lost or forgotten.  
 
 8. After you receive the message **Secure Storage Backup Complete**, select **Finish**.  
 

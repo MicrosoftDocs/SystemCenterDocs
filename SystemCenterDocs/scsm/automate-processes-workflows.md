@@ -31,8 +31,9 @@ This article describes functionality in Service Manager that you can use to auto
 
 Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger condition information stored in the management pack. For each workflow, the management pack contains one data source module and one write action module. The data source module defines the condition that triggers the workflow to run, and the write action module defines the workflow actions. The management pack also stores any script information that the workflow uses.  
 
-### Files and formats  
- In addition to the management pack file, WF workflows require several supporting files:  
+### Files and formats
+
+In addition to the management pack file, WF workflows require several supporting files:  
 
 - **Authoring environment files**. When you create or edit a workflow, these files store the raw workflow information, such as property values and workflow logic.  
 
@@ -44,18 +45,19 @@ To implement a management pack with workflows in your Service Manager console en
 
   ![Illustration of the Management Pack and Workflow Files.](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
 
-### Trigger conditions for workflows  
- A workflow's data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
+### Trigger conditions for workflows
 
--   **Timer.** This option \(also referred to as a *schedule*\) triggers the workflow on designated days of the week or at another specified interval.  
+A workflow's data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
 
--   **Database query**. This option \(also referred to as a *subscription*\) triggers the workflow when a specific type of change occurs to a specific class of object. You can select the class from any of the installed management packs, and you can choose from three types of changes:  
+- **Timer.** This option \(also referred to as a *schedule*\) triggers the workflow on designated days of the week or at another specified interval.  
 
-    -   When a new instance of the class is created  
+- **Database query**. This option \(also referred to as a *subscription*\) triggers the workflow when a specific type of change occurs to a specific class of object. You can select the class from any of the installed management packs, and you can choose from three types of changes:  
 
-    -   When an instance of the class is updated  
+   - When a new instance of the class is created  
 
-    -   When an instance of the class is deleted  
+   - When an instance of the class is updated  
+
+   - When an instance of the class is deleted  
 
 ## The Activity Library
 
@@ -71,7 +73,7 @@ The Activity Library in Service Manager Authoring Tool provides many workflow ac
 
 - [Service Manager Activities](workflow-activity-ref.md) - Activities that perform Service Manager functions, such as creating or updating incidents.  
 
-  The following tables list the default activities that are available with the Authoring Tool:  
+The following tables list the default activities that are available with the Authoring Tool:  
 
 |Active Directory activity|Description|  
 |-------------------------------|-----------------|  

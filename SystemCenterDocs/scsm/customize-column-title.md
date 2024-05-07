@@ -29,7 +29,7 @@ For example, you can use the following procedure to customize a column title of 
 
 Another customization to a view is adding a column to a predefined view. For more information about adding a column to an existing view, see the [Editing a View in a Management Pack](https://go.microsoft.com/fwlink/p/?LinkID=204706) blog.
 
-## To customize a column title in a view
+## Customize a column title in a view
 
 1. Locate and export the management pack that contains the view that you want to customize, as follows:
 
@@ -47,13 +47,13 @@ Another customization to a view is adding a column to a predefined view. For mor
 
         This example shows the code for the **My Incidents** view:
 
-        ```
+        ```xml
         System.WorkItem.Incident.AssignedToMe.View
         ```
 
         and the code for the **Category** column in that view:
 
-        ```
+        ```xml
         System.WorkItem.Incident.AssignedToMe.View.Header_Category
         ```
 

@@ -35,58 +35,58 @@ You can use the following procedures to configure incident management to automat
 
 ## Automatically generate management-based incidents
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Workflows**, and select **Configuration**.
+2. In the **Administration** pane, expand **Workflows**, and select **Configuration**.
 
-3.  In the **Configuration** pane, double-click **Desired Configuration Management Event Workflow Configuration**.
+3. In the **Configuration** pane, double-click **Desired Configuration Management Event Workflow Configuration**.
 
-4.  In the **Configure Desired Configuration Management Workflows** dialog, select **Add**.
+4. In the **Configure Desired Configuration Management Workflows** dialog, select **Add**.
 
-5.  In the Add Desired Configuration Management Workflow Wizard, complete these steps:
+5. In the Add Desired Configuration Management Workflow Wizard, complete these steps:
 
-    1.  On the **Before You Begin** page, select **Next**.
+    1. On the **Before You Begin** page, select **Next**.
 
         > [!NOTE]
         > The **Next** button will be unavailable if a Configuration Manager connector hasn't been created.
 
-    2.  On the **Workflow Information** page, enter a name and a description for the rule. Ensure that the **Enabled** checkbox is selected, and select **Next**.
+    2. On the **Workflow Information** page, enter a name and a description for the rule. Ensure that the **Enabled** checkbox is selected, and select **Next**.
 
-    3.  On the **Select System Center Configuration Manager Configuration Items** page, expand all the configuration baselines that are listed, select the Configuration Manager configuration items that you want to include in the rule, and select **Next**.
+    3. On the **Select System Center Configuration Manager Configuration Items** page, expand all the configuration baselines that are listed, select the Configuration Manager configuration items that you want to include in the rule, and select **Next**.
 
-    4.  On the **Select Incident Template** page, select **Apply the following template**, select a template for the new incidents that will be created by this rule, and select **Next**.
+    4. On the **Select Incident Template** page, select **Apply the following template**, select a template for the new incidents that will be created by this rule, and select **Next**.
 
-    5.  On the **Select People to Notify** page, select the **Enable notification** checkbox. Select the users who should be notified when an incident is created by this rule. For each user, specify the notification method and a template, and select **Add**. Select **Next**.
+    5. On the **Select People to Notify** page, select the **Enable notification** checkbox. Select the users who should be notified when an incident is created by this rule. For each user, specify the notification method and a template, and select **Add**. Select **Next**.
 
-    6.  On the **Summary** page, ensure that the settings contain the information you expect, and select **Create**.
+    6. On the **Summary** page, ensure that the settings contain the information you expect, and select **Create**.
 
-    7.  On the **Completion** page, ensure that you receive the following confirmation message, and select **Close**:
+    7. On the **Completion** page, ensure that you receive the following confirmation message, and select **Close**:
 
         `Desired Configuration Management Workflow Created Successfully`
 
-### To validate that desired configuration management is configured
+### Validate that desired configuration management is configured
 
-1.  Import an out-of-compliance Service Manager configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management-based incident in Service Manager.
+1. Import an out-of-compliance Service Manager configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management-based incident in Service Manager.
 
-2.  In the Service Manager console, select **Work Items**
+2. In the Service Manager console, select **Work Items**
 
-3.  In the **Work Items** pane, expand **Incident Management**, and select **All Open DCM Incidents**.
+3. In the **Work Items** pane, expand **Incident Management**, and select **All Open DCM Incidents**.
 
-4.  In the **All Open Desired Configuration Management Incidents** pane, double-click an incident.
+4. In the **All Open Desired Configuration Management Incidents** pane, double-click an incident.
 
-5.  In the **Incident** form, select the **Compliance Errors** tab.
+5. In the **Incident** form, select the **Compliance Errors** tab.
 
-6.  Verify that the correct configuration baseline and Configuration Manager configuration items are listed.
+6. Verify that the correct configuration baseline and Configuration Manager configuration items are listed.
 
 ![Screenshot of the PowerShell symbol.](./media/dcm-incidents/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a desired configuration management workflow in Service Manager, see [New-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316251(v=sc.20)).
+- For information about how to use Windows PowerShell to create a desired configuration management workflow in Service Manager, see [New-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316251(v=sc.20)).
 
--   For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in Service Manager, see [Get-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316212(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in Service Manager, see [Get-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316212(v=sc.20)).
 
--   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316258(v=sc.20)).
+- For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316258(v=sc.20)).
 
--   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316252(v=sc.20)).
+- For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316252(v=sc.20)).
 
 ## Next steps
 

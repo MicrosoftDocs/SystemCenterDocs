@@ -218,7 +218,7 @@ The **Panel** control in the Service Manager Authoring Tool is a **Layout** cont
 
 Use the following procedure to add a **Panel** control to a form.  
 
-### To add a panel control to a form  
+To add a panel control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Panel** icon from the **Form Customization Toolbox** pane to the form. You can now add other controls on the **Panel** control.  

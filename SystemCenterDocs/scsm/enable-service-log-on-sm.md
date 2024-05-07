@@ -1,6 +1,6 @@
 ---
 title: Enable service logon
-description: the article provides information about how to enable service logon as log on type.
+description: This article provides information about how to enable service logon as log on type.
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -36,7 +36,7 @@ This account is used to run the *MonitoringHost.exe* process (runs all the Workf
 >We recommend that you provide service logon permission to the accounts used by various SM connectors (AD, OM, SCO, CM, VMM, exchange connectors).
 >Service reporting account and analysis services accounts don't require service logon permission.
 
-## To enable service logon
+## Enable service logon as log on type
 
 You can grant service logon permission through a domain policy or a local group policy.
 
@@ -53,29 +53,30 @@ Here's a sample error:
 :::image type="content" source="./media/enable-service-logon-sm/identify-logon-type.png" alt-text="Screenshot of identify accounts that need service logon permission.":::
 
 ## Enable service log on through a local group policy
-Follow these steps:
 
-1.	Sign in with administrator privileges to the computer from which you want to provide **Log on as Service** permission to accounts.
-2.	Go to **Administrative Tools** and select **Local Security Policy**.
-3.	Expand **Local Policy** and select **User Rights Assignment**. In the right pane, right-click **Log on as a service** and select **Properties**.
-4.	Select **Add User** or **Group** option to add the new user.
-5.	In the **Select Users** or **Groups** dialog, find the user you wish to add and select **OK**.
-6.	Select **OK** in the **Log on as a service Properties** to save the changes.
+To enable service log on through a local group policy, follow these steps:
+
+1. Sign in with administrator privileges to the computer from which you want to provide **Log on as Service** permission to accounts.
+2. Go to **Administrative Tools** and select **Local Security Policy**.
+3. Expand **Local Policy** and select **User Rights Assignment**. In the right pane, right-click **Log on as a service** and select **Properties**.
+4. Select **Add User** or **Group** option to add the new user.
+5. In the **Select Users** or **Groups** dialog, find the user you wish to add and select **OK**.
+6. Select **OK** in the **Log on as a service Properties** to save the changes.
 
     :::image type="content" source="./media/enable-service-logon-sm/enable-service-logon-inline.png" alt-text="Screenshot showing enable service logon permission." lightbox="./media/enable-service-logon-sm/enable-service-logon-expanded.png":::
 
-##  Change logon type from a default value
+## Change logon type from a default value
 
 Default logon type is *Service log on*.
 After new installation of  SM or an upgrade, logon type will be Service log on, by default.
 
 You can change the default logon type by using the following steps:
 
-1.	Sign in with administrator privileges to the computer from which you want to provide **Log on as Service** permission to accounts.
-2.	Run gpedit.msc
-3.	Under **Computer Configuration**, expand **Administrative Templates**.
-4.	Select **System Center – Operations Manager**.
-5.	Right-click **Monitoring Action Account Logon Type**, select **Edit**, and select **Enabled**.
-7.	Choose **Logon Type** from the dropdown menu.
+1. Sign in with administrator privileges to the computer from which you want to provide **Log on as Service** permission to accounts.
+2. Run gpedit.msc
+3. Under **Computer Configuration**, expand **Administrative Templates**.
+4. Select **System Center – Operations Manager**.
+5. Right-click **Monitoring Action Account Logon Type**, select **Edit**, and select **Enabled**.
+6. Choose **Logon Type** from the dropdown menu.
 
     :::image type="content" source="./media/enable-service-logon-sm/change-logon-type-inline.png" alt-text="Screenshot showing change service logon permission." lightbox="./media/enable-service-logon-sm/change-logon-type-expanded.png":::
