@@ -41,7 +41,7 @@ In the Woodgrove Bank customization scenario, Ken uses this procedure to set the
 
 Use this procedure in the Service Manager Authoring Tool to set a property to a constant value (also referred to as a literal value). This value applies anytime this workflow starts.
 
-### To set an activity property to a constant value
+To set an activity property to a constant value, follow these steps:
 
 1. In the authoring pane, select the activity you want. The **Details** pane becomes active, and it displays the properties for this activity.
 
@@ -55,7 +55,7 @@ Use this procedure in the Service Manager Authoring Tool to set a property to a 
 
 Use this procedure in the Service Manager Authoring Tool to configure an activity to obtain its property values from another activity in the workflow. This process is referred to as "binding" one property to another.
 
-### To set an activity property to use a value from another activity
+To set an activity property to use a value from another activity, follow these steps:
 
 1. In the authoring pane, select the activity you want. The **Details** pane becomes active, and it displays the properties for this activity.
 
@@ -71,7 +71,7 @@ Use this procedure in the Service Manager Authoring Tool to set a property to re
 
 In the Woodgrove Bank customization scenario, Ken uses this procedure to set the **Computer Name** and **Group Name** properties of the **Add AD DS Computer to Group** activity to retrieve the values of the **Automated Activity: Add Computer To AD Group** properties **Computer Name**, **Group Name**, and **Activity ID** from the change request.
 
-### To configure activity properties to retrieve data from a trigger class
+### Configure activity properties to retrieve data from a trigger class
 
 1. In the authoring pane, select the activity you want. The **Details** pane becomes active and displays the properties for this activity. For example, select the **Add AD DS Computer to Group** activity or the **Set Activity Status to Completed** activity.
 

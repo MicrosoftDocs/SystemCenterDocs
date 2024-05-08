@@ -84,7 +84,7 @@ Use the following procedure to set execution policy to RemoteSigned in Service M
 
 You have to run this command only once on the computer where you intend to use Windows PowerShell cmdlets for Service Manager.
 
-### To set execution policy
+To set execution policy, follow these steps:
 
 1. On the computer where you want to run Windows PowerShell, select **Start**, select **All Programs**, select **Microsoft System Center \<version\>**, select **Service Manager**, and select **Service Manager Shell**.
 2. At the Windows PowerShell prompt, enter the following command, and then press ENTER:
@@ -92,13 +92,14 @@ You have to run this command only once on the computer where you intend to use W
     ```powershell
     Set-ExecutionPolicy –Force RemoteSigned
     ```
+
 3. Enter *exit*, and then press ENTER to close the **Administrator: Windows PowerShell** window.
 
 ## Import the data warehouse cmdlet module
 
 To be able to use the data warehouse cmdlets in Service Manager, you must first manually import the Windows PowerShell data warehouse cmdlets module for Service Manager. You can import the data warehouse cmdlets module on the Service Manager management server, the data warehouse management server, or both.
 
-### To import the data warehouse cmdlets module
+To import the data warehouse cmdlets module, follow these steps:
 
 1. On a management server, open a Service Manager Windows PowerShell session. Or on a data warehouse management server, open a Windows PowerShell session.
     Ensure that the Windows PowerShell prompt is at the Service Manager installation folder.

@@ -66,6 +66,7 @@ The Service Manager console provides for the following customizations:
 - In the **Authoring** pane, you can make simple customizations to objects such as queues, lists, and views.  
 
 #### Authoring Tool
+
 The Authoring Tool provides an environment in which you can open, view, customize, extend, and author Service Manager management packs. You can use the Authoring Tool to modify some class properties, customize forms in a graphical form designer, and modify and create Service Manager workflows.  
 
 You can also use the Authoring Tool to create advanced customizations that require testing and verification before implementation. The Authoring Tool doesn't require advanced user skills or advanced knowledge of the internal architecture of Service Manager.  
@@ -106,7 +107,7 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 ::: moniker-end
 
 ::: moniker range=">sc-sm-2016 <=sc-sm-2019"
- 
+
 - Windows 10
 - Windows Server 2019 with the latest service pack  
 - Windows Server 2016
@@ -122,13 +123,22 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 ::: moniker-end
 
+::: moniker range="sc-sm-2025"
+
+- Windows 10
+- Windows 11
+- Windows Server 2025 with the latest service pack  
+- Windows Server 2022
+
+::: moniker-end
+
 ##### Additional requirements  
 
 - [Microsoft .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21), which you can download from the Microsoft Download Center.  
 - Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  
-    >  During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 isn't installed and you've verified that it's installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
+    > During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 isn't installed and you've verified that it's installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
 
 #### Set up the Authoring Tool
 
@@ -151,7 +161,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 
 ::: moniker-end
 
-##### To install the Authoring Tool  
+##### Install the Authoring Tool  
 
 1. Verify that the computer on which you plan to install the Authoring tool meets the requirements.  
 
@@ -172,6 +182,14 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 
 ::: moniker-end
 
+::: moniker range="sc-sm-2025"
+
+2. Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
+
+      - Download 2025 SM Authoring tool
+
+::: moniker-end
+
 3. Double-click the downloaded zip file, read through the license agreement, and extract the files to the desired location.  
 4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.
 5. In the Service Manager Authoring Tool Setup Wizard, select **Install the Service Manager Authoring Tool**.  
@@ -181,12 +199,12 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 8. Continue through the **Use Microsoft Update to help keep your computer secure and up\-to\-date** pages.  
 9. On the **Installation summary** page, select **Install** and wait for the installation to finish.  
 
-##### To start the Authoring Tool  
+##### Start the Authoring Tool  
 
-1.  On your desktop, select **Start**.  
-2.  Select **Programs**, select **Microsoft System Center**, and select **Service Manager \<version\> Authoring**.  
-3.  Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
-4.  In the **Class Browser** pane, select **Refresh**. This populates the browser with all the classes that are defined in management packs from the \<Installation folder\>\/Library folder. When you opened the Authoring Tool for the first time, this pane was empty.  
+1. On your desktop, select **Start**.  
+2. Select **Programs**, select **Microsoft System Center**, and select **Service Manager \<version\> Authoring**.  
+3. Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
+4. In the **Class Browser** pane, select **Refresh**. This populates the browser with all the classes that are defined in management packs from the \<Installation folder\>\/Library folder. When you opened the Authoring Tool for the first time, this pane was empty.  
 
 #### Authoring Tool panes
 
@@ -230,40 +248,41 @@ The **Activities Toolbox** pane displays activities that you can use as building
 
 During an upgrade to Service Manager, all customized Service Manager management packs are unsealed. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](mps-in-auth-tool.md)). Management packs are copied to the new Service Manager folders without any further upgrade\-related processing. Using these custom management packs that were authored in previous versions of System Center, Service Manager is supported. However, there are some issues to be aware of, and you may have to make some updates to these management packs to ensure that they work properly and as intended after the upgrade to Service Manager.  
 
-##### Forms  
+##### Forms
+
 The placement of a control in a form is determined by its top, bottom, left, and right margins in relation to either its parent control or to the form itself. In a customized form, this method can cause controls to be adjusted improperly when the margins of the parent control or of the form are modified.  
 
 As a result of updated styles that were implemented in System Center 2012 - Service Manager, some custom forms that were authored in System Center Service Manager 2010 might have layout issues when they're imported into Service Manager. Depending on the customization, some controls might be placed incorrectly, causing issues such as overlapping and clipping. Some of these issues affect only how the form looks, and other issues can prevent some intended functionality of the form.  
 
 The following sections describe the issues that you might encounter when you import into Service Manager forms that were authored in System Center Service Manager 2010. These sections also describe how you can use the Service Manager Authoring Tool to rectify these issues to ensure that these forms look and function as intended.  
 
-###### Clipping and overlapping controls  
+###### Clipping and overlapping controls
 
 Some controls on a form might appear clipped, with incomplete border lines and cut-off text. Sometimes this issue appears with another issue in which the controls overlap each other. Also, some controls on a form might not be visible, causing some functionality of the form to be unavailable.  
 
 To rectify these issues, you may have to use the Authoring Tool to adjust the control's properties as follows. You may have to try several remedies, and you may have to make several attempts before the control is placed correctly.  
 
--   Select the affected control, and check the value of its **Margin** properties: **Bottom**, **Left**, **Right**, and **Top**. For example, set the values of these properties to 0, or to a positive value, to ensure that there are no negative values that cause the control to be placed incorrectly.  
--   Check the values of the affected control's **Layout** group properties: **Horizontal Alignment** and **Vertical Alignment**. You may have to set the values of these properties to **Stretch** for better control alignment.  
--   Place the affected control in a grid inside a **Panel** control for better control alignment.  
--   Set the parent control's dimensions to **Auto** to allow its size to shrink or grow dynamically.  
--   Set the **Height** property of the container of the affected control to **Auto**. This allows the width and the height of controls to be automatically adjusted correctly to fit the container of the object.  
+- Select the affected control, and check the value of its **Margin** properties: **Bottom**, **Left**, **Right**, and **Top**. For example, set the values of these properties to 0, or to a positive value, to ensure that there are no negative values that cause the control to be placed incorrectly.  
+- Check the values of the affected control's **Layout** group properties: **Horizontal Alignment** and **Vertical Alignment**. You may have to set the values of these properties to **Stretch** for better control alignment.  
+- Place the affected control in a grid inside a **Panel** control for better control alignment.  
+- Set the parent control's dimensions to **Auto** to allow its size to shrink or grow dynamically.  
+- Set the **Height** property of the container of the affected control to **Auto**. This allows the width and the height of controls to be automatically adjusted correctly to fit the container of the object.  
 
-###### Shuffle controls  
+###### Shuffle controls
 
 Some controls on a form might be shuffled with each other, resulting in controls not being placed in their designated location on the form.  
 
 To rectify this issue, use the Authoring Tool to do one of the following:  
 
--   Drag controls to their desired location on the form.  
--   Select the control that is shuffled. In the **Details** pane, in the **Margin** properties group, adjust properties such as **Bottom** or **Left** to place the control in the desired location.  
--   Select the control that contains the shuffled control. In the **Details** pane, modify its properties such as **Bottom** or **Left** in the **Margin** properties group.  
+- Drag controls to their desired location on the form.  
+- Select the control that is shuffled. In the **Details** pane, in the **Margin** properties group, adjust properties such as **Bottom** or **Left** to place the control in the desired location.  
+- Select the control that contains the shuffled control. In the **Details** pane, modify its properties such as **Bottom** or **Left** in the **Margin** properties group.  
 
 ##### Workflows  
 
 Workflows that were developed in System Center Service Manager 2010 are supported in Service Manager.  
 
-###### Virtual Machine management activities  
+###### Virtual Machine management activities
 
 The Virtual Machine Management (VMM) workflow activities in Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities don't support System Center VMM.
 

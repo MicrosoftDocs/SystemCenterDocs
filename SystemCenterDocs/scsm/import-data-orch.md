@@ -59,12 +59,12 @@ You can use the following procedures to create a connector for System Center - O
 
    4. On the **Connection** page, in the **Credentials** area, either select an existing account or select **New**, and then do the following:
 
-      1.  In the **Run As Account** dialog, in the **Display name** box, enter a name for the Run As account. In the **Account** list, select **Windows Account**. Enter the credentials for an account that has rights to connect Orchestrator, and select **OK**. On the **Connection** page, select **Test Connection**.
+      1. In the **Run As Account** dialog, in the **Display name** box, enter a name for the Run As account. In the **Account** list, select **Windows Account**. Enter the credentials for an account that has rights to connect Orchestrator, and select **OK**. On the **Connection** page, select **Test Connection**.
 
           > [!NOTE]
           > Special characters (such as the ampersand [&]) in the **User Name** box aren't supported.
 
-      2.  In the **Test Connection** dialog, ensure that the message *The connection to the server was successful* appears, and select **OK**. On the **Connection** page, select **Next**.
+      2. In the **Test Connection** dialog, ensure that the message *The connection to the server was successful* appears, and select **OK**. On the **Connection** page, select **Next**.
 
    5. On the **Folder** page, select a folder, and select **Next**.
 
@@ -76,19 +76,18 @@ You can use the following procedures to create a connector for System Center - O
 
 ### Validate the creation of an Orchestrator connector
 
-1.  In the **Connectors** pane, locate the Orchestrator connector that you created.
+1. In the **Connectors** pane, locate the Orchestrator connector that you created.
 
-2.  Review the **Status** column for a status of **Finished Success**.
+2. Review the **Status** column for a status of **Finished Success**.
 
     > [!NOTE]
     > Allow sufficient time for the import process to finish if you're importing a large number of runbooks.
 
-3.  In the Service Manager console, select **Library**.
+3. In the Service Manager console, select **Library**.
 
-4.  In the **Library** pane, expand **Library**, and select **Runbooks**.
+4. In the **Library** pane, expand **Library**, and select **Runbooks**.
 
-5.  Review the **Runbooks** pane, and note that your runbooks have been imported.
-
+5. Review the **Runbooks** pane, and note that your runbooks have been imported.
 
 ## Synchronize an Orchestrator connector
 
@@ -96,23 +95,22 @@ To ensure that the Service Manager database is up to date, the Orchestrator conn
 
 ### Manually synchronize an Orchestrator connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Orchestrator connector that you want to synchronize.
+3. In the **Connectors** pane, select the Orchestrator connector that you want to synchronize.
 
-4.  In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
+4. In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
 
 ### Validate that an Orchestrator connector is synchronized
 
-1.  In the Service Manager console, select **Connectors**.
+1. In the Service Manager console, select **Connectors**.
 
-2.  In the **Connectors** pane, examine the start time and finish time to determine when the synchronization process started and finished.
+2. In the **Connectors** pane, examine the start time and finish time to determine when the synchronization process started and finished.
 
     > [!NOTE]
     > Synchronization events are also written to the Event log in the Applications and Services Logs/Operations Manager folder.
-
 
 ## Disable and enable an Orchestrator connector
 
@@ -120,25 +118,25 @@ You can use the following procedures to disable or enable an Orchestrator connec
 
 ### Disable an Orchestrator connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Orchestrator connector that you want to disable.
+3. In the **Connectors** pane, select the Orchestrator connector that you want to disable.
 
-4.  In the **Tasks** pane, under the connector name, select **Disable**.
+4. In the **Tasks** pane, under the connector name, select **Disable**.
 
-5.  In the **Disable Connector** dialog, select **OK**.
+5. In the **Disable Connector** dialog, select **OK**.
 
 ### Enable an Orchestrator connector
 
-1.  In the Service Manager console, select **Administration**, and select **Connectors**.
+1. In the Service Manager console, select **Administration**, and select **Connectors**.
 
-2.  In the **Connectors** pane, select the Orchestrator connector that you want to enable.
+2. In the **Connectors** pane, select the Orchestrator connector that you want to enable.
 
-3.  In the **Tasks** pane, under the connector name, select **Enable**.
+3. In the **Tasks** pane, under the connector name, select **Enable**.
 
-4.  In the **Enable Connector** dialog, select **OK**.
+4. In the **Enable Connector** dialog, select **OK**.
 
 ### Validate the status change of an Orchestrator connector
 

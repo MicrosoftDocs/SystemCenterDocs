@@ -126,7 +126,6 @@ Use this procedure to delete an activity group in the Service Manager Authoring 
 
 - In the **Activities Toolbox** pane, right-click the group, and select **Delete Group**.
 
-
 ## Next steps
 
 Review the [Guidelines for creating custom activities in the Authoring Tool](create-custom-activities.md).

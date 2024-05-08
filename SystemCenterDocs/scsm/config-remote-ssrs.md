@@ -51,7 +51,6 @@ Use the following steps:
 
 1. On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer folder for SQL server 2016.
 
-
 2. Using an XML editor of your choice (such as Notepad), open the rssrvpolicy.config file.
 
 3. Scroll through the rssrvpolicy.config file and locate the `<CodeGroup>` code segments. The following code shows an example of a `<CodeGroup>` segment.
@@ -93,7 +92,6 @@ Use the following steps:
 Use the following steps:
 
 1. On the computer hosting SSRS, locate the file rsreportserver.config in the \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer folder for SQL server 2016.
-
 
 2. Using an XML editor of your choice (such as Notepad), open the rsreportserver.config file.
 

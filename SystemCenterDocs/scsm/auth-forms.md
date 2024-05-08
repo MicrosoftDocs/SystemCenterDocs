@@ -25,30 +25,31 @@ ms.assetid: dd99e994-e34d-469e-aea0-5c3547eeab66
 
 A form is a window that makes it possible for users to interact with objects from the database. Users can use a form to view and edit the properties of objects. Each form is tied to a specific class, and it displays information only for instances of the targeted class. A form contains fields. Typically, each field is bound to a specific property of the form's targeted class. The incident form, for example, is tied to the incident object. Therefore, the incident form displays information about incident objects in the database.
 
- A Service Manager form consists of the Windows Presentation Foundation \(WPF\) form implementation in a Microsoft .NET&nbsp;Framework assembly and a form definition in a Service Manager management pack. The form definition specifies the class that the form represents, along with the other properties of the form.
+A Service Manager form consists of the Windows Presentation Foundation \(WPF\) form implementation in a Microsoft .NET&nbsp;Framework assembly and a form definition in a Service Manager management pack. The form definition specifies the class that the form represents, along with the other properties of the form.
 
 ## Key concepts about forms
 
 Before customizing forms, you should be familiar with the following form concepts.
 
-### How forms are used
- When the management pack that contains the form definitions is imported into Service Manager, the form definitions are stored in the database. Later, when the user initiates a Service Manager console task that requires the display of an object, Service Manager must find a form to display the requested object. Service Manager accesses the database and searches for a form that has been defined for that object. If no form is defined for the object, Service Manager searches for a form that is defined for the object's parent object. Service Manager continues to search the entire object's inheritance hierarchy until it finds a defined form.
+### Usage of forms
+
+When the management pack that contains the form definitions is imported into Service Manager, the form definitions are stored in the database. Later, when the user initiates a Service Manager console task that requires the display of an object, Service Manager must find a form to display the requested object. Service Manager accesses the database and searches for a form that has been defined for that object. If no form is defined for the object, Service Manager searches for a form that is defined for the object's parent object. Service Manager continues to search the entire object's inheritance hierarchy until it finds a defined form.
 
 ### Generic forms
 
- If Service Manager can't find any form for the object or for any of its parent objects, Service Manager dynamically builds a default *generic form* for that object. The generic form is a system\-generated form that is sufficient for simple form use. The generic form represents a quick and easy way to create a form for objects without any form definitions.
+If Service Manager can't find any form for the object or for any of its parent objects, Service Manager dynamically builds a default *generic form* for that object. The generic form is a system\-generated form that is sufficient for simple form use. The generic form represents a quick and easy way to create a form for objects without any form definitions.
 
- By default, the generic form displays all the properties of the form in a simple layout that you can't change. The generic form displays the properties of all the parent objects in the inheritance hierarchy of the form, and you can't change that behavior. Customizations to the generic form are limited. For example, you can specify the properties that you want the generic form to display; however, the generic form can't be used as a basis for customization. If you later define a custom form for that object, your custom form overwrites the object's generic form.
+By default, the generic form displays all the properties of the form in a simple layout that you can't change. The generic form displays the properties of all the parent objects in the inheritance hierarchy of the form, and you can't change that behavior. Customizations to the generic form are limited. For example, you can specify the properties that you want the generic form to display; however, the generic form can't be used as a basis for customization. If you later define a custom form for that object, your custom form overwrites the object's generic form.
 
- For information about hiding properties in a generic form and other ways that you can customize a generic form, see the blog post [Overview of the Forms Infrastructure and the Generic Form](https://go.microsoft.com/fwlink/p/?LinkID=208536).
+For information about hiding properties in a generic form and other ways that you can customize a generic form, see the blog post [Overview of the Forms Infrastructure and the Generic Form](https://go.microsoft.com/fwlink/p/?LinkID=208536).
 
 ### Combination classes in forms
 
- Sometimes, you need a form to display information that is derived from more than one class. To do this, you create a *combination class* and then bind a field on the form to the combination class. For more information about combination classes, see [Changes to the System Center Common Schema](work-mps-xml.md).
+Sometimes, you need a form to display information that is derived from more than one class. To do this, you create a *combination class* and then bind a field on the form to the combination class. For more information about combination classes, see [Changes to the System Center Common Schema](work-mps-xml.md).
 
 ### Functional aspects of a form
 
- A form has the following functional aspects:
+A form has the following functional aspects:
 
 1. Initialization
 
@@ -79,18 +80,20 @@ We recommend that you set these properties as follows:
 When the form is hosted inside the Service Manager forms host, the last\-used size and location is preserved for subsequent display of that form by the same user within the same run session.
 
 #### Refresh
- The target instance of a form can change as a result of executing a **Refresh** command on the form. The handler for this command fetches new data from the database. When the data arrives, the form's **DataContext** property value is set to the new target instance, and the **DataContextChanged** event is raised.
 
- To differentiate between the **DataContextChanged** event that was raised when the form was first loaded and the event that was raised to handle a **Refresh** command, check the **OldValue** property of the event arguments that are passed in with the event. This property is null if the form has just been initialized.
+The target instance of a form can change as a result of executing a **Refresh** command on the form. The handler for this command fetches new data from the database. When the data arrives, the form's **DataContext** property value is set to the new target instance, and the **DataContextChanged** event is raised.
+
+To differentiate between the **DataContextChanged** event that was raised when the form was first loaded and the event that was raised to handle a **Refresh** command, check the **OldValue** property of the event arguments that are passed in with the event. This property is null if the form has just been initialized.
 
 #### Submit changes
- The form host pop\-up window in Service Manager provides buttons for submitting changes that are made in the form and for closing the pop\-up window.
 
- When a user selects the **Apply** button for a form, the form's target instance is submitted for storage. This operation is synchronous; therefore, the user can't edit the form until the submission operation is complete. If failure occurs during the form submission, an error message appears. The form remains open for further changes. We recommend that users apply their changes frequently to avoid collisions if another instance of the form is being edited at the same time.
+The form host pop\-up window in Service Manager provides buttons for submitting changes that are made in the form and for closing the pop\-up window.
 
- If the user selects the **OK** button, the behavior is similar to **Apply**, except that, if the form submission operation is successful, the form and its host window are closed.
+When a user selects the **Apply** button for a form, the form's target instance is submitted for storage. This operation is synchronous; therefore, the user can't edit the form until the submission operation is complete. If failure occurs during the form submission, an error message appears. The form remains open for further changes. We recommend that users apply their changes frequently to avoid collisions if another instance of the form is being edited at the same time.
 
- If the user selects the **Cancel** button, a dialog appears that asks the user to confirm the operation. The user can select **Yes** and lose changes, or select **No** and return to the form.
+If the user selects the **OK** button, the behavior is similar to **Apply**, except that, if the form submission operation is successful, the form and its host window are closed.
+
+If the user selects the **Cancel** button, a dialog appears that asks the user to confirm the operation. The user can select **Yes** and lose changes, or select **No** and return to the form.
 
 ## General guidelines and best practices for forms
 
@@ -126,9 +129,9 @@ Controls that are used on a form can be:
 
 When you design a form, use public design guidelines to ensure that the form is user friendly and that it adheres to common user\-interaction paradigms.
 
- For more information about general Windows design, see [Windows User Experience Interaction Guidelines](/windows/apps/desktop/).
+For more information about general Windows design, see [Windows User Experience Interaction Guidelines](/windows/apps/desktop/).
 
- In addition:
+In addition:
 
 - Divide information across multiple tabs to make the form simpler and easier to read. Include the most commonly used information on the first tab and information of lesser importance on the subsequent tabs.
 - Use layout panels to lay out controls on the form. This ensures that the form behaves correctly when it's resized and localized.
@@ -330,7 +333,6 @@ RoutedCommand="{x:Static scwpf:FormCommands.Refresh}"/>
         </scwpf:RuleCollection>
     </scwpf:BusinessLogic.Rules>
 ```
-
 
 ## Next steps
 
