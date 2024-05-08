@@ -29,31 +29,31 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ## Copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file  
 
-1.  On the computer that will host the remote SSRS, open an instance of Windows Explorer.  
+1. On the computer that will host the remote SSRS, open an instance of Windows Explorer.  
 
-2.  Locate the folder \\Program Files\\Microsoft SQL Server\\MSRS10\_50.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin.  
+2. Locate the folder \\Program Files\\Microsoft SQL Server\\MSRS10\_50.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin.  
 
-3.  Start a second instance of Windows Explorer, locate the drive that contains the Service Manager installation media, and then open the Prerequisites folder.  
+3. Start a second instance of Windows Explorer, locate the drive that contains the Service Manager installation media, and then open the Prerequisites folder.  
 
-4.  In the Prerequisites folder, select **Microsoft.EnterpriseManagement.Reporting.Code.dll** and drag it to the folder that you located in step 2.  
+4. In the Prerequisites folder, select **Microsoft.EnterpriseManagement.Reporting.Code.dll** and drag it to the folder that you located in step 2.  
 
 ## Add an Extension tag to the rsreportserver.conf file  
 
-1.  On the computer that is hosting SSRS, locate the file rsreportserver.config in the following folder:  
+1. On the computer that is hosting SSRS, locate the file rsreportserver.config in the following folder:  
 
      \\Program Files\\Microsoft SQL Server\\MSRS10\_50.MSSQLSERVER\\Reporting Services\\ReportServer  
 
-2.  Using an XML editor of your choice \(such as Notepad\), open the rsreportserver.config file.  
+2. Using an XML editor of your choice \(such as Notepad\), open the rsreportserver.config file.  
 
-3.  Scroll through the rsreportserver.config file, and locate the `<Data>` code segment. There's only one `<Data>` code segment in this file.  
+3. Scroll through the rsreportserver.config file, and locate the `<Data>` code segment. There's only one `<Data>` code segment in this file.  
 
-4.  Add the following **Extension** tag to the `<Data>` code segment where all the other **Extension** tags are:  
+4. Add the following **Extension** tag to the `<Data>` code segment where all the other **Extension** tags are:  
 
     ```  
     <Extension Name="SCDWMultiMartDataProcessor" Type="Microsoft.EnterpriseManagement.Reporting.MultiMartConnection, Microsoft.EnterpriseManagement.Reporting.Code" />  
     ```  
 
-5.  Save the changes, and close the XML editor.
+5. Save the changes, and close the XML editor.
 
 ## Next steps
 

@@ -33,13 +33,13 @@ When a management pack in Service Manager contains base definitions that other m
 
 ## Seal a management pack
 
-1.  Create a .snk key file that contains a public\/private key pair.  
+1. Create a .snk key file that contains a public\/private key pair.  
 
-2.  In the Service Manager Authoring Tool, in **Management Pack Explorer**, right\-click the management pack that you want to seal, and select **Seal Management Pack**.  
+2. In the Service Manager Authoring Tool, in **Management Pack Explorer**, right\-click the management pack that you want to seal, and select **Seal Management Pack**.  
 
-3.  In the **Seal Management Pack** dialog, in the **Key File** box, enter the location of the key file that you previously created. The file must have a .snk extension. You must also fill in the **Company** box. Filling in the other boxes is optional.  
+3. In the **Seal Management Pack** dialog, in the **Key File** box, enter the location of the key file that you previously created. The file must have a .snk extension. You must also fill in the **Company** box. Filling in the other boxes is optional.  
 
-4.  Select **Seal** to create a sealed management pack, which will be stored in the folder that you specify in the **Output Directory** box.  
+4. Select **Seal** to create a sealed management pack, which will be stored in the folder that you specify in the **Output Directory** box.  
 
 ## Next steps
 

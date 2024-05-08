@@ -29,19 +29,19 @@ You can use the following procedures in Service Manager to refresh data in a Mic
 
 ## Refresh using the Service Manager console  
 
-1.  In the Service Manager console, select **Data Warehouse**, expand it, and select **Cubes**.  
+1. In the Service Manager console, select **Data Warehouse**, expand it, and select **Cubes**.  
 
-2.  In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Process Cube**.  
+2. In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Process Cube**.  
 
-3.  Select **OK** to close the **Process Cube** dialog.  
+3. Select **OK** to close the **Process Cube** dialog.  
 
 ### Validate refresh
 
--   Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
+- Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
 
 ## Manually refresh
 
--   Run the following script for the OLAP data cube of your choice.  
+- Run the following script for the OLAP data cube of your choice.  
 
     ```  
     Update etl.CubePartition set  

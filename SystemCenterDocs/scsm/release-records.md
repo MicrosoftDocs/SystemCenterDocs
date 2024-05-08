@@ -55,23 +55,22 @@ At Woodgrove Bank, Garret configures administrative settings for releases, and h
 
 ## Create a release record
 
-
 The Release Manager creates a release record in Service Manager using the following procedure.  
 
-### To create a release record  
+To create a release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
-2.  In the **Tasks** pane, select **Create Release Record**.  
-3.  In the **Select Template** dialog, select a release record template, and select **OK** to open it.  
-4.  In the release record form on the **General** tab, enter any necessary information, and select the **Activities** tab.  
-5.  Modify the default set of release activities that are added from the release record template, if any, are present. You can add, delete, or modify sets of activities to the release record, including the following actions:  
-    -   Add activities from the list of existing activity templates.  
-    -   Move activities up and down in the order in which they're completed.  
-    -   Move activities in the process list, and place them inside container activities.  
-    -   Move activities from container activities, and place them anywhere in the process list.  
-    -   Delete activities.  
-6.  As you add an activity, the activity form opens. Enter necessary information, and select **OK** to save the activity.  
-7.  When you've added all the activities you want, select **OK** to save the release record and close it. The release record then appears in the **Release Records: All** view.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
+2. In the **Tasks** pane, select **Create Release Record**.  
+3. In the **Select Template** dialog, select a release record template, and select **OK** to open it.  
+4. In the release record form on the **General** tab, enter any necessary information, and select the **Activities** tab.  
+5. Modify the default set of release activities that are added from the release record template, if any, are present. You can add, delete, or modify sets of activities to the release record, including the following actions:  
+    - Add activities from the list of existing activity templates.  
+    - Move activities up and down in the order in which they're completed.  
+    - Move activities in the process list, and place them inside container activities.  
+    - Move activities from container activities, and place them anywhere in the process list.  
+    - Delete activities.  
+6. As you add an activity, the activity form opens. Enter necessary information, and select **OK** to save the activity.  
+7. When you've added all the activities you want, select **OK** to save the release record and close it. The release record then appears in the **Release Records: All** view.  
 
 ## Create a release record template
 
@@ -79,21 +78,21 @@ A release record template is used to create new release records. A release recor
 
 The template author creates a template for release records by completing the following procedure.  
 
-### To create a release record template  
+To create a release record template, follow these steps:
 
-1.  In the Service Manager console, open the **Library** workspace, and in the **Library** pane, select **Templates**.  
-2.  In the **Templates** list, select **Default Release Record**, and then in the **Tasks** pane under **Templates**, select **Create Template**.  
-3.  In the **Create Template** dialog, enter a name for the template and a description of what the template applies.  
-4.  Under **Class**, select **Browse**, and in the **Select a Class** box, select **Release Record**, and select **OK** to close the **Select a Class** box.  
-5.  Select **OK** to close the **Create Template** dialog, and the New Release Record Template form appears.  
-6.  Enter information in the boxes on the **General** tab, and select the **Activities** tab.  
-7.  You can add, delete, or modify sets of activities to the release record template, including the following actions:  
-    -   Add activities from the list of existing activity templates.  
-    -   Move activities up and down in the order in which they're completed.  
-    -   Move activities in the process list, and place them inside container activities.  
-    -   Move activities from container activities, and place them anywhere in the process list.  
-    -   Delete activities.  
-8.  As you add an activity, the activity form opens. Enter the necessary information, and select **OK** to save the activity.  
+1. In the Service Manager console, open the **Library** workspace, and in the **Library** pane, select **Templates**.  
+2. In the **Templates** list, select **Default Release Record**, and then in the **Tasks** pane under **Templates**, select **Create Template**.  
+3. In the **Create Template** dialog, enter a name for the template and a description of what the template applies.  
+4. Under **Class**, select **Browse**, and in the **Select a Class** box, select **Release Record**, and select **OK** to close the **Select a Class** box.  
+5. Select **OK** to close the **Create Template** dialog, and the New Release Record Template form appears.  
+6. Enter information in the boxes on the **General** tab, and select the **Activities** tab.  
+7. You can add, delete, or modify sets of activities to the release record template, including the following actions:  
+    - Add activities from the list of existing activity templates.  
+    - Move activities up and down in the order in which they're completed.  
+    - Move activities in the process list, and place them inside container activities.  
+    - Move activities from container activities, and place them anywhere in the process list.  
+    - Delete activities.  
+8. As you add an activity, the activity form opens. Enter the necessary information, and select **OK** to save the activity.  
 9. When you've added all the activities you want, select **OK** to save the release record template and close it. The release record template then appears in **Templates** list.  
 
 ## Combine release records into parent-child groups
@@ -106,15 +105,15 @@ The Release Manager can promote a release record to parent release record using 
 
 The following procedure is performed on a release record that is neither a parent release record nor a child release record.  
 
-#### To promote a release record to a parent release record  
+To promote a release record to a parent release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
-2.  Select any Release Management view, and then select a release record.  
-3.  In the **Tasks** pane, select **Edit** to open the release record.  
-4.  In the **Tasks** pane, select **Convert or Revert to Parent**.  
-5.  In the **Comments** box, enter a comment indicating that you've converted the release record to a parent release record, and select **OK** to close the **Comments** box.  
-6.  The **Child Items** tab appears in the form where you can add child release records.  
-7.  In the release record form, select **OK** to close it.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
+2. Select any Release Management view, and then select a release record.  
+3. In the **Tasks** pane, select **Edit** to open the release record.  
+4. In the **Tasks** pane, select **Convert or Revert to Parent**.  
+5. In the **Comments** box, enter a comment indicating that you've converted the release record to a parent release record, and select **OK** to close the **Comments** box.  
+6. The **Child Items** tab appears in the form where you can add child release records.  
+7. In the release record form, select **OK** to close it.  
 
 ### Demote a parent release record
 
@@ -122,55 +121,55 @@ The Release Manager can demote a parent release record using the following proce
 
 The following procedure is performed on a parent release record that may or may not have child release records linked to it.  
 
-#### To demote a parent release record  
+To demote a parent release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
-2.  Select any Release Management view that contains a parent release that you want to demote, and then select the release record.  
-3.  In the **Tasks** pane, select **Edit** to open the release record.  
-4.  In the **Tasks** pane, select **Convert or Revert to Parent**.  
-5.  If the release record that you're demoting contains child release records, a message appears stating that all links to child records will be removed. If so, select **OK** to unlink any child release records.  
-6.  In the **Comments** box, enter a comment indicating that you've reverted the release record from a parent release record, and select **OK** to close the **Comments** box.  
-7.  The **Child Items** tab no longer appears in the form.  
-8.  In the release record form, select **OK** to close it.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
+2. Select any Release Management view that contains a parent release that you want to demote, and then select the release record.  
+3. In the **Tasks** pane, select **Edit** to open the release record.  
+4. In the **Tasks** pane, select **Convert or Revert to Parent**.  
+5. If the release record that you're demoting contains child release records, a message appears stating that all links to child records will be removed. If so, select **OK** to unlink any child release records.  
+6. In the **Comments** box, enter a comment indicating that you've reverted the release record from a parent release record, and select **OK** to close the **Comments** box.  
+7. The **Child Items** tab no longer appears in the form.  
+8. In the release record form, select **OK** to close it.  
 
 ### Link a child release record
 
 The Release Manager can link a child release record while editing a parent release record using the following procedure.  
 
-#### To link a child release record to the current parent release record  
+To link a child release record to the current parent release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
-2.  Select any Release Management view that contains a parent release record where you want link to a child release record.  
-3.  In the **Tasks** pane, select **Edit**, and then in the parent release record form, select the **Child Items** tab.  
-4.  On the **Child Items** tab, select **Add**.  
-5.  In the **Select objects** dialog, select the release record that you want to link to a parent, and select **Add**. Select **OK** to close the **Select objects** dialog.  
-6.  In the parent release record form, select **OK** to close it.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
+2. Select any Release Management view that contains a parent release record where you want link to a child release record.  
+3. In the **Tasks** pane, select **Edit**, and then in the parent release record form, select the **Child Items** tab.  
+4. On the **Child Items** tab, select **Add**.  
+5. In the **Select objects** dialog, select the release record that you want to link to a parent, and select **Add**. Select **OK** to close the **Select objects** dialog.  
+6. In the parent release record form, select **OK** to close it.  
 
 ### Unlink the current release record
 
 The Release Manager can unlink a child release record using the following procedure.  
 
-#### To unlink the current release record from a parent release record  
+To unlink the current release record from a parent release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
-2.  Select any Release Management view that contains a child release record that you want to unlink from its parent release record.  
-3.  In the **Tasks** pane, select **Link or Unlink to Existing Parent Release Record**, and then in the fly\-out list, select **Unlink**.  
-4.  In the **Comments** box, enter a comment indicating that you've unlinked the child release record from its parent release record, and select **OK** to close the **Comments** box.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
+2. Select any Release Management view that contains a child release record that you want to unlink from its parent release record.  
+3. In the **Tasks** pane, select **Link or Unlink to Existing Parent Release Record**, and then in the fly\-out list, select **Unlink**.  
+4. In the **Comments** box, enter a comment indicating that you've unlinked the child release record from its parent release record, and select **OK** to close the **Comments** box.  
 
 ### Unlink a child release record from the current release record
 
 The Release Manager can unlink a child release record while editing a parent release record using the following procedure.  
 
-#### To unlink a child release record from the current parent release record  
+To unlink a child release record from the current parent release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
-2.  Select any Release Management view that contains a parent release record where you want unlink to a child release record.  
-3.  In the **Tasks** pane, select **Edit**, and then in the parent release record form, select the **Child Items** tab.  
-4.  On the **Child Items** tab, select the child release records to unlink, and select **Remove**.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
+2. Select any Release Management view that contains a parent release record where you want unlink to a child release record.  
+3. In the **Tasks** pane, select **Edit**, and then in the parent release record form, select the **Child Items** tab.  
+4. On the **Child Items** tab, select the child release records to unlink, and select **Remove**.  
     > [!NOTE]  
-    >  You can select multiple child items by pressing Shift\+Click.  
+    > You can select multiple child items by pressing Shift\+Click.  
 
-5.  In the parent release record form, select **OK** to close it.  
+5. In the parent release record form, select **OK** to close it.  
 
 ## Define release package configuration items
 
@@ -180,53 +179,53 @@ Release packages normally contain a build and an environment that the release is
 
 The release manager can create a build configuration item that defines the software and version that a build consists of by performing the following procedure. After a build is created, it's normally added to the release package of a release record.  
 
-#### To create a build configuration item  
+To create a build configuration item, follow these steps:
 
-1.  In the Service Manager console, select **Configuration Items**.  
-2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **Builds**.  
-3.  In the **Tasks** pane, under **Builds**, select **Create Build**.  
-4.  On the **General** tab in the form, do the following:  
-    1.  In the **Title** box, enter a name for the build. For example, for the build that will be used to deploy the new HRWeb software, enter **HRWeb July 2017**.  
-    2.  In the **Version** box, enter a version number or other designation. For example, enter **0.2**.  
-    3.  Select **OK**.  
-5.  On the **Related Items** tab, under **Configuration Items: Computers, Services and People**, select **Add** to associate a software configuration item, and then do the following for each software item that you want to add:  
-    1.  In the **Select objects** dialog under **Filter by class** list, select the dropdown arrow, and then select **Software Items**.  
-    2.  In the **Available objects** list, select the software configuration item that you want to associate with the build, select **Add**, and select **OK** to close the **Select objects** dialog.  
-6.  Select **OK** to close the build form.  
+1. In the Service Manager console, select **Configuration Items**.  
+2. In the **Configuration Items** pane, expand **Configuration Items**, and select **Builds**.  
+3. In the **Tasks** pane, under **Builds**, select **Create Build**.  
+4. On the **General** tab in the form, do the following:  
+    1. In the **Title** box, enter a name for the build. For example, for the build that will be used to deploy the new HRWeb software, enter **HRWeb July 2017**.  
+    2. In the **Version** box, enter a version number or other designation. For example, enter **0.2**.  
+    3. Select **OK**.  
+5. On the **Related Items** tab, under **Configuration Items: Computers, Services and People**, select **Add** to associate a software configuration item, and then do the following for each software item that you want to add:  
+    1. In the **Select objects** dialog under **Filter by class** list, select the dropdown arrow, and then select **Software Items**.  
+    2. In the **Available objects** list, select the software configuration item that you want to associate with the build, select **Add**, and select **OK** to close the **Select objects** dialog.  
+6. Select **OK** to close the build form.  
 
 ### Create an environment configuration item
 
 The release manager can create an environment configuration item that defines the computers, services, and people that the environment consists of by performing the following procedure. After an environment is created, it's normally added to the release package of a release record.  
 
-#### To create an environment configuration item  
+To create an environment configuration item, follow these steps:
 
-1.  In the Service Manager console, select **Configuration Items**.  
-2.  In the **Configuration Items** pane, expand **Configuration Items**, and select **Environments**.  
-3.  In the **Tasks** pane, under **Environments**, select **Create Environment**.  
-4.  On the **General** tab in the form, do the following:  
-    1.  In the **Title** box, enter a name for the environment. For example, for the pre\-environment that will be used to test the new HRWeb software, enter **Environment for HRWeb July 2011**.  
-    2.  Optionally, in other boxes on the tab, enter or select information that might help you easily identify the environment that you're creating. For example, set the **Category** to **Pre Production**.  
-    3.  Select **OK**.  
-5.  On the **Related Items** tab, under **Configuration Items: Computers, Services and People**, you can add configuration items that are important to the environment. Examples might include the following:  
-    -   Software  
-    -   Users  
-    -   Computers  
-6.  Select **OK** to close the environment form.  
+1. In the Service Manager console, select **Configuration Items**.  
+2. In the **Configuration Items** pane, expand **Configuration Items**, and select **Environments**.  
+3. In the **Tasks** pane, under **Environments**, select **Create Environment**.  
+4. On the **General** tab in the form, do the following:  
+    1. In the **Title** box, enter a name for the environment. For example, for the pre\-environment that will be used to test the new HRWeb software, enter **Environment for HRWeb July 2011**.  
+    2. Optionally, in other boxes on the tab, enter or select information that might help you easily identify the environment that you're creating. For example, set the **Category** to **Pre Production**.  
+    3. Select **OK**.  
+5. On the **Related Items** tab, under **Configuration Items: Computers, Services and People**, you can add configuration items that are important to the environment. Examples might include the following:  
+    - Software  
+    - Users  
+    - Computers  
+6. Select **OK** to close the environment form.  
 
 ### Add release package information to a release record
 
 The Release Manager can add release package information for a release record using the following procedure. The release package normally contains the build and environment that the release is tested with.  
 
-#### To add release package information to a release record  
+To add release package information to a release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
-2.  Select any Release Management view that contains a release record where you want to add release package information.  
-3.  In the **Tasks** pane, select **Edit**, and then in the release record form, select the **Release Package** tab.  
-4.  On the **Release Package** tab, under **Configuration Items to Modify**, select **Add**.  
-5.  In the **Select objects** dialog, select the computer\-related configuration items that you want to add to the release package, select **Add**, and select **OK** to close the **Select objects** dialog.  
-6.  Under **Affected Services**, select **Add**.  
-7.  In the **Select objects** dialog, select the business service items that you want to add to the release package and select **Add**, and select **OK** to close the **Select objects** dialog.  
-8.  In the release record form, select **OK** to close it.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**.  
+2. Select any Release Management view that contains a release record where you want to add release package information.  
+3. In the **Tasks** pane, select **Edit**, and then in the release record form, select the **Release Package** tab.  
+4. On the **Release Package** tab, under **Configuration Items to Modify**, select **Add**.  
+5. In the **Select objects** dialog, select the computer\-related configuration items that you want to add to the release package, select **Add**, and select **OK** to close the **Select objects** dialog.  
+6. Under **Affected Services**, select **Add**.  
+7. In the **Select objects** dialog, select the business service items that you want to add to the release package and select **Add**, and select **OK** to close the **Select objects** dialog.  
+8. In the release record form, select **OK** to close it.  
 
 ## Create a template for parallel and sequential activities in Service Manager
 
@@ -234,21 +233,21 @@ Release record templates for parallel and sequential activities are used to crea
 
 The template author creates a template for a parallel activity by performing the following procedure. Afterward, the same steps are followed to create a template for a sequential activity.  
 
-### To create a template for a parallel activity  
+To create a template for a parallel activity, follow these steps:
 
-1.  In the Service Manager console, open the **Library** workspace, and in the **Library** pane, select **Templates**.  
-2.  In the **Templates** list, select **Default Parallel Activity**, and then in the **Tasks** pane under **Templates**, select **Create Template**.  
-3.  In the **Create Template** dialog, enter a name for the template and a description of what the template applies.  
-4.  Under **Class**, select **Browse**, in the **Select a Class** box, select **Parallel Activity**, and select **OK** to close the **Select a Class** box.  
-5.  Select **OK** to close the **Create Template** dialog, and the New Container Activity Template form appears.  
-6.  Enter information in the boxes on the **General** tab, and select the **Activities** tab.  
-7.  You can add, delete, or modify sets of activities to the parallel activity template, including the following actions:  
-    1.  Add activities from the list of existing activity templates.  
-    2.  Add parallel or sequential activities from the list of existing activity templates.  
-    3.  Move activities up and down in the order in which they're completed.  
-    4.  Move activities in the process list.  
-    5.  Delete activities.  
-8.  As you add an activity, the activity form opens. Enter the necessary information, and select **OK** to save the activity.  
+1. In the Service Manager console, open the **Library** workspace, and in the **Library** pane, select **Templates**.  
+2. In the **Templates** list, select **Default Parallel Activity**, and then in the **Tasks** pane under **Templates**, select **Create Template**.  
+3. In the **Create Template** dialog, enter a name for the template and a description of what the template applies.  
+4. Under **Class**, select **Browse**, in the **Select a Class** box, select **Parallel Activity**, and select **OK** to close the **Select a Class** box.  
+5. Select **OK** to close the **Create Template** dialog, and the New Container Activity Template form appears.  
+6. Enter information in the boxes on the **General** tab, and select the **Activities** tab.  
+7. You can add, delete, or modify sets of activities to the parallel activity template, including the following actions:  
+    1. Add activities from the list of existing activity templates.  
+    2. Add parallel or sequential activities from the list of existing activity templates.  
+    3. Move activities up and down in the order in which they're completed.  
+    4. Move activities in the process list.  
+    5. Delete activities.  
+8. As you add an activity, the activity form opens. Enter the necessary information, and select **OK** to save the activity.  
 9. When you've added all the activities you want, select **OK** to save the parallel activity template and close it. The parallel activity template then appears in **Templates** list.  
 10. Repeat this procedure for a sequential activity, replacing instances of **parallel activity** with **sequential activity**.  
 
@@ -258,73 +257,73 @@ The release manager selects approved changes for release by performing the follo
 
 The procedure to create a dependent activity to add it to a change request should already be completed before you proceed.
 
-### To choose changes to deploy  
+To choose changes to deploy, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
-2.  In the **Work Items** pane, select a view under **Release Management** that displays a release record that comprises changes that are ready for deployment, and then double\-click the release record.  
-3.  Select the **Activities** tab.  
-4.  In the list that appears, right\-click a manual activity to link a change request dependent activity to, and then select **Link to Change Request Activity**.  
-5.  In the **Select Change Request Activity** dialog, select the change request to link to, expand it, and then select one or more dependent activities, and select **OK** twice.  
+1. In the Service Manager console, open the **Work Items** workspace, in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
+2. In the **Work Items** pane, select a view under **Release Management** that displays a release record that comprises changes that are ready for deployment, and then double\-click the release record.  
+3. Select the **Activities** tab.  
+4. In the list that appears, right\-click a manual activity to link a change request dependent activity to, and then select **Link to Change Request Activity**.  
+5. In the **Select Change Request Activity** dialog, select the change request to link to, expand it, and then select one or more dependent activities, and select **OK** twice.  
     > [!TIP]  
-    >  When you've linked the activity, the selected activity shows a linking indicator that resembles a chain icon. The tooltip for the selected activity shows IDs for the linked change request dependent activities.  
+    > When you've linked the activity, the selected activity shows a linking indicator that resembles a chain icon. The tooltip for the selected activity shows IDs for the linked change request dependent activities.  
 
-6.  Navigate to **Activity Management**, expand **Manual Activities**, and then select **In\-Progress Activities**.  
-7.  Select the manual activity and then in the **Tasks** list, select **Mark as Completed**.  
-8.  Navigate to **Change Management**, expand **All Change Requests**, and then open the change request that is linked to the release record.  
+6. Navigate to **Activity Management**, expand **Manual Activities**, and then select **In\-Progress Activities**.  
+7. Select the manual activity and then in the **Tasks** list, select **Mark as Completed**.  
+8. Navigate to **Change Management**, expand **All Change Requests**, and then open the change request that is linked to the release record.  
 9. Select the **Activities** tab and notice that the dependent activity is now marked **Completed**.  
 
 ## Plan release activities in Service Manager
 
 The Release Manager creates and modifies the structure of release activities by performing the following procedure.  
 
-### To plan release activities  
+To plan release activities, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
-2.  In the **Work Items** pane, select a view under **Release Management** that displays a release record that includes release activities that you want to add or modify activities for, and then double\-click the record to open it.  
-3.  Select the **Activities** tab to view the list of proposed changes and dependent activities they contain.  
-4.  Optionally, you can change the activities view by selecting either **Diagram View** or **List View**.  
-5.  Select a dependent change management activity, and then move it to the top of release management activity list or diagram. A dependent indicator appears on release management activities, which resembles the link in a chain.  
+1. In the Service Manager console, open the **Work Items** workspace, and in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
+2. In the **Work Items** pane, select a view under **Release Management** that displays a release record that includes release activities that you want to add or modify activities for, and then double\-click the record to open it.  
+3. Select the **Activities** tab to view the list of proposed changes and dependent activities they contain.  
+4. Optionally, you can change the activities view by selecting either **Diagram View** or **List View**.  
+5. Select a dependent change management activity, and then move it to the top of release management activity list or diagram. A dependent indicator appears on release management activities, which resembles the link in a chain.  
 
 ## Skip a failed activity in Service Manager
 
 The release manager skips a failed activity by performing the following procedure.  
 
-### To skip a failed activity  
+To skip a failed activity, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
-2.  In the **Work Items** pane, select a view under **Release Management** that displays a release record that includes a failed release activity or an activity in progress that you want to skip, and then double\-click the record to open it.  
-3.  Select the **Activities** tab to view the list of proposed changes and dependent activities they contain. Optionally, you can change the activities view by selecting either **Diagram View** or **List View**.  
-4.  Right\-click the failed activity or the activity in progress that you want to skip, and select **Skip Activity**.  
-5.  In the **Comments** box, enter the reason why you're skipping the activity, and select **OK** to close the box. The activity that you skipped displays an icon resembling a blue down\-pointing arrow to indicate that the activity is marked as skipped.  
+1. In the Service Manager console, open the **Work Items** workspace, in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
+2. In the **Work Items** pane, select a view under **Release Management** that displays a release record that includes a failed release activity or an activity in progress that you want to skip, and then double\-click the record to open it.  
+3. Select the **Activities** tab to view the list of proposed changes and dependent activities they contain. Optionally, you can change the activities view by selecting either **Diagram View** or **List View**.  
+4. Right\-click the failed activity or the activity in progress that you want to skip, and select **Skip Activity**.  
+5. In the **Comments** box, enter the reason why you're skipping the activity, and select **OK** to close the box. The activity that you skipped displays an icon resembling a blue down\-pointing arrow to indicate that the activity is marked as skipped.  
 
 ## Determine status and progress for a Service Manager change request in the release record
 
 The change manager reviews the status and progress of a change request in the currently opened release record. They know the ID of the change request and its title, or at least a few of the keywords of the title. They can review the status of the change request by performing the following procedure.  
 
-### To determine status and progress for a change request in a release record  
+To determine status and progress for a change request in a release record, follow these steps:
 
-1.  In the Service Manager console, open the **Work Items** workspace, in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
-2.  In the **Work Items** pane, under **Release Management**, select the **Release Records: In Progress**.  
-3.  In the **Release Records: In Progress** view, double\-click the record of interest to open it.  
-4.  Select the **Activities** tab to view the list of proposed changes and dependent activities they contain. Optionally, you change the activities view by selecting either **Diagram View** or **List View**.  
-5.  You can view records by using any of the following methods:  
-    -   Mouse scrolling:  
-        -   You can find the release management activity showing that it's linked to the specific change request by looking for an indicator icon and viewing its properties while in either diagram view or list view.  
-        -   The following information is shown for all activities:  
-            -   Activity IDs  
-            -   Activity titles  
-            -   Activity status indicator icons, which vary based on the state of the activity  
-    -   Using the diagram view:  
-        -   When you're using the diagram view, you can use **Zoom** to choose different for activities.  
-    -   Using search anywhere in the Service Manager console:  
-        -   You can search for and view an activity by searching with any of the following information:  
-            -   Change request ID  
-            -   Keywords from the linked change request's title  
-            -   Change activity's ID  
-            -   Keywords from the dependent activity's title  
-        -   Filtering:  
-            -   You can filter any returned search results by keywords and also by criteria such as class, last modified dates, and name.  
-6.  You can double\-click an activity to view its status and the details of its progress.  
+1. In the Service Manager console, open the **Work Items** workspace, in the **Work Items** pane, expand **Release Management**, and then select **Release Management**.  
+2. In the **Work Items** pane, under **Release Management**, select the **Release Records: In Progress**.  
+3. In the **Release Records: In Progress** view, double\-click the record of interest to open it.  
+4. Select the **Activities** tab to view the list of proposed changes and dependent activities they contain. Optionally, you change the activities view by selecting either **Diagram View** or **List View**.  
+5. You can view records by using any of the following methods:  
+    - Mouse scrolling:  
+        - You can find the release management activity showing that it's linked to the specific change request by looking for an indicator icon and viewing its properties while in either diagram view or list view.  
+        - The following information is shown for all activities:  
+            - Activity IDs  
+            - Activity titles  
+            - Activity status indicator icons, which vary based on the state of the activity  
+    - Using the diagram view:  
+        - When you're using the diagram view, you can use **Zoom** to choose different for activities.  
+    - Using search anywhere in the Service Manager console:  
+        - You can search for and view an activity by searching with any of the following information:  
+            - Change request ID  
+            - Keywords from the linked change request's title  
+            - Change activity's ID  
+            - Keywords from the dependent activity's title  
+        - Filtering:  
+            - You can filter any returned search results by keywords and also by criteria such as class, last modified dates, and name.  
+6. You can double\-click an activity to view its status and the details of its progress.  
 
 ## Next steps
 

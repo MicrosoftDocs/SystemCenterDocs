@@ -49,7 +49,6 @@ For detailed information about the requirements for Service Manager components, 
 | **SQL Server 2017 and Cumulative Updates**    | Yes                                                       |
 | **SQL Server 2019 with Cumulative Update 8 (CU8) or later**    | Yes                                                       |
 
-
 >[!NOTE]
 > - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
@@ -57,7 +56,7 @@ For detailed information about the requirements for Service Manager components, 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 ::: moniker-end
 
-::: moniker range="sc-sm-2022"
+::: moniker range=">=sc-sm-2022"
 
 | **System Center 2022 component**                      | **Service Manager** Database or Data Warehouse Database |
 |-------------------------------------------------------|---------------------------------------------------------|

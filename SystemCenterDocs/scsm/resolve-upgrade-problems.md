@@ -109,27 +109,27 @@ For more information about the cause of this problem, see [Knowledgebase Article
 
 There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to Service Manager fails as a result of Configuration service Startup timing out. You can:  
 
--   Disable signature verification on the computer that is running Setup.  
+- Disable signature verification on the computer that is running Setup.  
 
--   Increase the service time\-out setting on the computer that is running Setup.  
+- Increase the service time\-out setting on the computer that is running Setup.  
 
 ### Disable signature verification
 
 Follow these steps to disable signature verification:
 
-1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
+1. On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
-2.  In the `<runtime> </runtime>` section, add `<generatePublisherEvidence enabled="false">`.  
+2. In the `<runtime> </runtime>` section, add `<generatePublisherEvidence enabled="false">`.  
 
-3.  Save the changes to the file.  
+3. Save the changes to the file.  
 
-4.  Attempt the upgrade again.  
+4. Attempt the upgrade again.  
 
 ### Increase the service time-out setting  
 
 Follow these steps to increase the service time-out setting:
 
-1.  On the computer that is running Setup, create the following registry value to increase the service time-out period:  
+1. On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 
     ```  
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control   
@@ -140,11 +140,11 @@ Follow these steps to increase the service time-out setting:
     ```  
 
     > [!CAUTION]  
-    >  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
+    > Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
 
     > [!NOTE]  
-    >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For more information about the registry key, see [article 922918](/troubleshoot/windows-server/system-management-components/service-not-start-events-7000-7011-time-out-error) in the Microsoft Knowledge Base.  
+    > You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For more information about the registry key, see [article 922918](/troubleshoot/windows-server/system-management-components/service-not-start-events-7000-7011-time-out-error) in the Microsoft Knowledge Base.  
 
-2.  Start the computer again.  
+2. Start the computer again.  
 
-3.  Attempt the upgrade again.
+3. Attempt the upgrade again.

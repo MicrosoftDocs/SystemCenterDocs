@@ -21,11 +21,11 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 Performance for System Center - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 
--   Service Manager console responsiveness. This is the length of time it takes from the moment you take some sort of action in the console until it completes.  
+- Service Manager console responsiveness. This is the length of time it takes from the moment you take some sort of action in the console until it completes.  
 
--   Data insertion time for connectors. This is how long it takes for Service Manager to import data when a connector synchronizes.  
+- Data insertion time for connectors. This is how long it takes for Service Manager to import data when a connector synchronizes.  
 
--   Workflow completion time. This is the length of time it takes for workflows to automatically apply some kind of action.  
+- Workflow completion time. This is the length of time it takes for workflows to automatically apply some kind of action.  
 
 ## Connector performance
 
@@ -39,9 +39,9 @@ Workflows are automatic processes that occur. They include sending email notific
 
 Workflow performance considerations include the following:  
 
--   Normally, workflows start and finish within one minute. When Service Manager server roles are under a heavy workload, workflows don't complete as quickly as normal.  
+- Normally, workflows start and finish within one minute. When Service Manager server roles are under a heavy workload, workflows don't complete as quickly as normal.  
 
--   In addition, when you create new workflows, such as a new notification subscription, additional load is placed on the system. As the number of new workflows that you create increases, the time it takes for each workflow to run also increases.  
+- In addition, when you create new workflows, such as a new notification subscription, additional load is placed on the system. As the number of new workflows that you create increases, the time it takes for each workflow to run also increases.  
 
 When the system is under a heavy load—if, for example, a large number of new incidents are being created and each incident generates many workflows—performance might be negatively affected.  
 
@@ -54,23 +54,23 @@ Often, administrators create groups to ensure that users have access to specifie
 Solution 1: You can manually specify how often Service Manager checks for group changes by modifying a registry key. For example, if you change the group check frequency from 30 seconds to 10 minutes, you significantly increase performance. However, queues and service level objectives are special kinds of groups that use the same group calculation polling interval. So, increasing the value of the polling interval results in longer times for queue and service level objective calculations.  
 
 > [!CAUTION]  
->  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
+> Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
 
-#### To manually specify the group change check interval  
+### Manually specify the group change check interval
 
-1.  Run Regedit, and navigate to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2010\\Common\\.  
+1. Run Regedit, and navigate to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2010\\Common\\.  
 
-2.  Create a new DWORD value named **GroupCalcPollingIntervalMilliseconds**.  
+2. Create a new DWORD value named **GroupCalcPollingIntervalMilliseconds**.  
 
-3.  For its value, specify the interval in milliseconds. The result is multiplied by 6. For example, to set the interval to 10 minutes, enter **600000**.  
+3. For its value, specify the interval in milliseconds. The result is multiplied by 6. For example, to set the interval to 10 minutes, enter **600000**.  
 
-4.  Restart the System Center Management service.  
+4. Restart the System Center Management service.  
 
 Solution 2: You can use a Windows PowerShell script to add objects of a type, such as "Users", to a user role. Essentially, an analyst who is logged on in this role can access all objects that have a type equal to "User". If you use this method, you eliminate the need for a large group \("All Users"\) and the expensive check that Service Manager performs to determine this group membership. On the Service Manager management server, you can run the following Windows PowerShell script to add the "user" type to a role "RoleName". You've to modify this example script for your environment.  
 
-#### To run a Windows PowerShell script to add objects to a user role  
+### Run a Windows PowerShell script to add objects to a user role  
 
--   Modify the following script as necessary, and then run it:  
+- Modify the following script as necessary, and then run it:  
 
 ```  
 #  

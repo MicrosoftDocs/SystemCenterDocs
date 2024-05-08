@@ -44,35 +44,35 @@ As the first step in the two-computer installation process, install the Service 
 
 For more information about the permissions that these accounts require, see [Account required during Setup](prepare-deploy.md).  
 
-### To install the Service Manager management server, Service Manager database, and console  
+To install the Service Manager management server, Service Manager database, and console, follow these steps:
 
-1.  Sign in to the computer that will host the Service Manager management server by using an account that has administrative rights.  
+1. Sign in to the computer that will host the Service Manager management server by using an account that has administrative rights.  
 
-2.  On the Service Manager installation media, double-click the **Setup.exe** file.  
+2. On the Service Manager installation media, double-click the **Setup.exe** file.  
 
-3.  On the **Service Manager Setup Wizard** page, select **Service Manager management server**.  
+3. On the **Service Manager Setup Wizard** page, select **Service Manager management server**.  
 
-4.  On the **Product registration** page, enter information in the boxes. In the **Product key** boxes, enter the product key that you received with Service Manager, or as an alternative, select **Install as an evaluation edition (180 day trial**. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
+4. On the **Product registration** page, enter information in the boxes. In the **Product key** boxes, enter the product key that you received with Service Manager, or as an alternative, select **Install as an evaluation edition (180 day trial**. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
 
-5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location in which the Service Manager management server will be installed.  
+5. On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location in which the Service Manager management server will be installed.  
 
-6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
+6. On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
 
      If the prerequisite checker determines that the Microsoft Report Viewer Redistributable hasn't been installed, select **Install Microsoft Report Viewer Redistributable**. After the Microsoft Report Viewer Redistributable 2008 (KB971119) Setup Wizard completes, select **Check prerequisites again**.  
 
-7.  On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
+7. On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you're using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL Server. See the [Planning Guide for System Center - Service Manager](plan-sm.md).  
+    > A warning message appears if you're using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL Server. See the [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
-8.  On the **Configure the Service Manager management group** page, complete these steps:  
+8. On the **Configure the Service Manager management group** page, complete these steps:  
 
-    1.  In the **Management group name** box, enter a unique name for the management group.  
+    1. In the **Management group name** box, enter a unique name for the management group.  
 
         > [!IMPORTANT]  
-        >  Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
+        > Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
 
-    2.  Select **Browse**, enter the user account or group to which you want to give Service Manager administrative rights, and select **Next**.  
+    2. Select **Browse**, enter the user account or group to which you want to give Service Manager administrative rights, and select **Next**.  
 
 9. On the **Configure the account for Service Manager services** page, select **Domain account**; specify the user name, password, and domain for the account; and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**.  
 
@@ -96,7 +96,7 @@ As the second step in the two\-computer installation process for System Center -
 
 For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md). Before you start, ensure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
 
-### To install a data warehouse management server and data warehouse databases  
+### Install a data warehouse management server and data warehouse databases  
 
 1. Sign in to the computer by using an account that has administrative rights.  
 
@@ -113,18 +113,18 @@ For more information about the permissions that these accounts require, see [Acc
 7. On the **Configure data warehouse databases** page, Service Manager checks the computer you're using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you're installing the data warehouse management server, and select **Next**.  
 
    > [!IMPORTANT]  
-   >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
+   > A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure additional data warehouse datamarts** page, Service Manager checks the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
 
 9. On the **Configure the data warehouse management group** page, complete these steps:  
 
-   1.  In the **Management group name** box, enter a unique name for the group.  
+   1. In the **Management group name** box, enter a unique name for the group.  
 
        > [!IMPORTANT]  
-       >  Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
+       > Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
 
-   2.  Select **Browse**, enter the user account or group to which you want to give Service Manager administrative rights, and select **Next**.  
+   2. Select **Browse**, enter the user account or group to which you want to give Service Manager administrative rights, and select **Next**.  
 
 10. On the **Configure the reporting server for the data warehouse** page, Service Manager will use the existing computer if SQL Server Reporting Services is present. Accept the defaults, and select **Next**.  
 
@@ -141,7 +141,7 @@ For more information about the permissions that these accounts require, see [Acc
 14. On the **Configure Analysis Services credential** page, select a domain account; select **Domain account** specify the user name, password, and domain for the account; and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**.  
 
     > [!NOTE]  
-    >  The account that you specify here must have administrator rights on the computer hosting SSRS.  
+    > The account that you specify here must have administrator rights on the computer hosting SSRS.  
 
 15. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, select **Privacy statement for System Center Service Manager**, and select **Next**.  
 
@@ -154,14 +154,16 @@ For more information about the permissions that these accounts require, see [Acc
 After the installation, do the following:
 
 19. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the following commands:
-    ```
+
+    ```powershell
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
 
 20. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
-    ```
+
+    ```powershell
     $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
 
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices")
@@ -198,13 +200,13 @@ After the installation, do the following:
 
 21. Enable the job schedules by running the following commands:
 
-    ```
+    ```powershell
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
-22. Restart the Data Warehouse management server.
 
+22. Restart the Data Warehouse management server.
 
 ## Next steps
 

@@ -31,54 +31,53 @@ The success or failure of a workflow is retained by Service Manager, and it's av
 
 You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](./incident-mgt.md). To create a new printer-related incident template, see [How to Create Incident Templates](./incident-mgt.md).
 
-### To configure an incident workflow
+To configure an incident workflow, follow these steps:
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
-3.  In the **Configuration** pane, double-click **Incident Event Workflow Configuration**.
-4.  In the **Configure Incident Event Workflows** dialog, select **Add**.
-5.  In the **Add Incident Event Workflow** dialog, complete these steps:
-    1.  On the **Before You Begin** page, select **Next**.
-    2.  On the **Workflow Information** page, in the **Name** box, enter a name for the workflow. For example, enter **Escalates Printer Problems to Support Tier 2 when the Urgency property is changed to High**.
-    3.  In the **Check for events** list, select **when an object is created or when an object is updated**, ensure that the **Enabled** checkbox is selected, and select **Next**.
-    4.  On the **Specify Event Criteria** page, select the **Changed to** tab. In the **Available Properties** list, select **Urgency**, and select **Add**. In the **Criteria** box, select **equals**. In the list, select **High**. Then, select **Next**.
-    5.  On the **Select Incident Template** page, select **Apply the following template**, and then select the template you created earlier that will set the support group to **Tier 2**. For example, select **Escalate Printer Problems to Tier 2**, and select **Next**.
-    6.  Optionally, in the **Select People to Notify** page, select the **Enable notification** checkbox, select the user to notify, and select **Next**.
-    7.  On the **Summary** page, review your settings, and select **Create**.
-    8.  On the **Completion** page, select **Close**.
-6.  In the **Configure Incident Event Workflows** dialog, select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
+3. In the **Configuration** pane, double-click **Incident Event Workflow Configuration**.
+4. In the **Configure Incident Event Workflows** dialog, select **Add**.
+5. In the **Add Incident Event Workflow** dialog, complete these steps:
+    1. On the **Before You Begin** page, select **Next**.
+    2. On the **Workflow Information** page, in the **Name** box, enter a name for the workflow. For example, enter **Escalates Printer Problems to Support Tier 2 when the Urgency property is changed to High**.
+    3. In the **Check for events** list, select **when an object is created or when an object is updated**, ensure that the **Enabled** checkbox is selected, and select **Next**.
+    4. On the **Specify Event Criteria** page, select the **Changed to** tab. In the **Available Properties** list, select **Urgency**, and select **Add**. In the **Criteria** box, select **equals**. In the list, select **High**. Then, select **Next**.
+    5. On the **Select Incident Template** page, select **Apply the following template**, and then select the template you created earlier that will set the support group to **Tier 2**. For example, select **Escalate Printer Problems to Tier 2**, and select **Next**.
+    6. Optionally, in the **Select People to Notify** page, select the **Enable notification** checkbox, select the user to notify, and select **Next**.
+    7. On the **Summary** page, review your settings, and select **Create**.
+    8. On the **Completion** page, select **Close**.
+6. In the **Configure Incident Event Workflows** dialog, select **OK**.
 
-### To validate an incident workflow
+### Validate an incident workflow
 
-1.  In the Service Manager console, select **Work Items**.
-2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and select **All Incidents**.
-3.  In the **All Incidents** pane, double-click an incident that isn't currently assigned to the tier 2 support group.
-4.  In the **Incident Form** page, set the **Urgency** property to **High**, and select **OK**.
-5.  In a few minutes, press F5. Verify that the value in the **Support Group** box changed to **Tier 2**.
+1. In the Service Manager console, select **Work Items**.
+2. In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and select **All Incidents**.
+3. In the **All Incidents** pane, double-click an incident that isn't currently assigned to the tier 2 support group.
+4. In the **Incident Form** page, set the **Urgency** property to **High**, and select **OK**.
+5. In a few minutes, press F5. Verify that the value in the **Support Group** box changed to **Tier 2**.
 
 ![Screenshot of PowerShell symbol.](./media/workflows/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316243(v=sc.20)).
--   For information about how to use Windows PowerShell to retrieve configuration and status information for Service Manager workflows, see [Get-SCSMWorkflowStatus](/previous-versions/system-center/powershell/system-center-2012-r2/hh316207(v=sc.20)).
--   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](/previous-versions/system-center/powershell/system-center-2012-r2/hh316204(v=sc.20)).
--   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316221(v=sc.20)).
+- For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316243(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve configuration and status information for Service Manager workflows, see [Get-SCSMWorkflowStatus](/previous-versions/system-center/powershell/system-center-2012-r2/hh316207(v=sc.20)).
+- For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](/previous-versions/system-center/powershell/system-center-2012-r2/hh316204(v=sc.20)).
+- For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316221(v=sc.20)).
 
 ## View workflow success or failure in Service Manager
 
 Use the following procedure to view the success or failure instances of the workflows.
 
-### To view workflow success or failure
+To view workflow success or failure, follow these steps:
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Status**.
-3.  In the **Status** pane, select the workflow that you want to view. For example, select **Escalates Printer Problems to Support Tier 2 when the Urgency property is changed to High**.
-4.  In the **Status** results pane, select **Need attention** to view workflows that didn't run successfully. Or select **All Instances**, and then do the following:
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Status**.
+3. In the **Status** pane, select the workflow that you want to view. For example, select **Escalates Printer Problems to Support Tier 2 when the Urgency property is changed to High**.
+4. In the **Status** results pane, select **Need attention** to view workflows that didn't run successfully. Or select **All Instances**, and then do the following:
     1. Select **View log** to view the list of events that occurred when the workflow ran.
     2. Select **View related object** to view the form that was used when the workflow ran.
     The status of each workflow is displayed in the **Status** column.
 
 ![Screenshot of the PowerShell symbol.](./media/workflows/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](/previous-versions/system-center/powershell/system-center-2012-r2/hh316207(v=sc.20)).
-
 
 ## Next steps
 

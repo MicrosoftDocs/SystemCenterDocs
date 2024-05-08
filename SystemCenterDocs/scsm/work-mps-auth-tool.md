@@ -54,9 +54,9 @@ If you want to customize objects that are defined in a management pack in Servic
 This is important because the definitions from all open management packs co\-exist in the Authoring Tool; therefore, they can't contradict each other.  
 
 > [!NOTE]  
->  You can't create new management pack files in the \<Authoring Tool Installation\>\\Library folder.  
+> You can't create new management pack files in the \<Authoring Tool Installation\>\\Library folder.  
 
-### To open a management pack file  
+### Open a management pack file  
 
 1. On your desktop, select **Start**.  
 
@@ -70,13 +70,13 @@ This is important because the definitions from all open management packs co\-exi
 
      \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
 
-     ::: moniker-end 
+     ::: moniker-end
 
      ::: moniker range=">sc-sm-2016"
 
      \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
 
-     ::: moniker-end 
+     ::: moniker-end
 
 5. Wait for the management pack to open, and then verify that it's displayed in the **Management Pack Explorer** pane.  
 
@@ -90,21 +90,21 @@ To be able to implement customizations that you make in the Service Manager Auth
 
  You can use the following procedure to create a new management pack file.  
 
-### To create a new management pack file  
+To create a new management pack file, follow these steps:
 
-1.  On your desktop, select **Start**.  
+1. On your desktop, select **Start**.  
 
-2.  Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
+2. Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
 
-3.  In the Authoring Tool, on the menu bar, select **File**, and select **New**.  
+3. In the Authoring Tool, on the menu bar, select **File**, and select **New**.  
 
-4.  In the **New Management Pack** dialog, enter a file name and a location for the new management pack file.  
+4. In the **New Management Pack** dialog, enter a file name and a location for the new management pack file.  
 
      Ensure that the file name that you enter doesn't contain spaces or special characters, and don't specify the Authoring Tool installation folder as the location for new and customized management pack files.  
 
-5.  Select **Open**.  
+5. Select **Open**.  
 
-6.  In the **Management Pack Explorer**, verify that the new management pack is listed.  
+6. In the **Management Pack Explorer**, verify that the new management pack is listed.  
 
 ## Next steps
 
