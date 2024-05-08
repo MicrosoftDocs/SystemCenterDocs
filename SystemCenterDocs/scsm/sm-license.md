@@ -24,8 +24,8 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ::: moniker-end
 
 ::: moniker range="sc-sm-1801"
-System Center - Service Manager (SM) 1801 and later supports an enhanced experience for evaluating Service Manager and activating the product for retail use. 
-::: moniker-end 
+System Center - Service Manager (SM) 1801 and later supports an enhanced experience for evaluating Service Manager and activating the product for retail use.
+::: moniker-end
 
 ::: moniker range="sc-sm-1801"
 The evaluation version of Service Manager can be installed and used for 180 days. In SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM.
@@ -45,11 +45,11 @@ You will receive notices for evaluation expiry once the evaluation period expire
 
 If you try to connect to Service Manager after the expiry of the evaluation period, the following notices appear on the Console and on PowerShell.
 
-**Notice for Service Manager Console**
+### Notice for Service Manager Console
 
 ![Screenshot showing Notice through console.](./media/sm-licensing/notice-for-sm.png)
 
-**Notice for Service Manager PowerShell**
+### Notice for Service Manager PowerShell
 
 ![Screenshot showing Notice through PowerShell.](./media/sm-licensing/notice-for-sm-powershell.png)
 

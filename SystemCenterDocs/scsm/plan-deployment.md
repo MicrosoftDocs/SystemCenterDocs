@@ -39,7 +39,8 @@ You continue the deployment process by creating several templates; configuring i
 
 After the evaluation phase is complete, you might install Service Manager in a production environment and select the deployment scenario in which Service Manager is installed on four computers.  
 
-## Multiple Service Manager management servers and one data warehouse  
+## Multiple Service Manager management servers and one data warehouse
+
  The Service Manager management server and its associated Service Manager database make up a Service Manager management group. The data warehouse management server and its associated databases make up a data warehouse management group. After deploying Service Manager, you will register the Service Manager management group with the data warehouse management group.  
 
  In your enterprise, you might create multiple Service Manager management groups. You can centralize reporting for multiple Service Manager management groups by registering multiple Service Manager management groups with a single data warehouse management group.

@@ -22,6 +22,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 The hardware inventory feature in Configuration Manager gathers information about computers in the organization. In Service Manager, by using a Configuration Manager Connector, you can import that hardware inventory data from Configuration Manager. The tables in this appendix describe the mapping between Service Manager properties and column names of Configuration Manager database views.
 
 ## Microsoft.SystemCenter.ConfigurationManager.DeployedComputer
+
 The following table describes the mapping for the **Microsoft.SystemCenter.ConfigurationManager.DeployedComputer** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -38,6 +39,7 @@ The following table describes the mapping for the **Microsoft.SystemCenter.Confi
 ||SerialNumber|If SCCM.Ext.vex_GS_SYSTEM_ENCLOSURE.SerialNumber0 is NULL, '00000000' or 'Not Available', then SCCM.Ext.vex_GS_PC_BIOS.SerialNumber0, else SCCM.Ext.vex_GS_SYSTEM_ENCLOSURE.SerialNumber0|
 
 ## Microsoft.Windows.Computer
+
 The following table describes the mappings for the **Microsoft.Windows.Computer** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -52,6 +54,7 @@ The following table describes the mappings for the **Microsoft.Windows.Computer*
 ||LastInventoryDate|SCCM.Ext.Vex_GS_Workstation_Status.LastHWScan|
 
 ## Microsoft.Windows.OperatingSystem
+
 The following table describes the mappings for the **Microsoft.Windows.OperatingSystem** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -73,6 +76,7 @@ The following table describes the mappings for the **Microsoft.Windows.Operating
 ||MajorVersion|SCCM.Ext.vex_GS_OPERATING_SYSTEM.Version0|
 
 ## Microsoft.Windows.Peripherals.LogicalDisk
+
 The following table describes the mappings for the **Microsoft.Windows.Peripherals.LogicalDisk** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -89,6 +93,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 ||FreeSpace|SCCM.Ext.vex_GS_LOGICAL_DISK.FreeSpace0|
 
 ## Microsoft.Windows.Peripherals.PhysicalDisk
+
 The following table describes the mappings for the **Microsoft.Windows.Peripherals.PhysicalDisk** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -116,6 +121,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 ||TracksPerCylinder|SCCM.Ext.vex.GS_DISK.TracksPerCylinder0|
 
 ## Microsoft.Windows.Peripherals.Processor
+
 The following table describes the mappings for the **Microsoft.Windows.Peripherals.Processor** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -139,6 +145,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 ||Version|SCCM.Ext.vex.GS_PROCESSOR.Version0|
 
 ## Microsoft.Windows.Peripherals.NetworkAdapter
+
 The following table describes the mappings for the **Microsoft.Windows.Peripherals.NetworkAdapter** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager Database Views|
@@ -165,6 +172,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 ||IPSubnet|SCCM.Ext.vex.GS_NETWORK_ADAPTER_CONFIGUR.IPSubnet0|
 
 ## System.DeviceHasSoftwareItemInstalled
+
 The following table describes the mappings for the **System.DeviceHasSoftwareItemInstalled** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -182,6 +190,7 @@ The following table describes the mappings for the **System.DeviceHasSoftwareIte
 ||IsVirtualApplication|SCCM.Ext.Vex_GS_INSTALLED_SOFTWARE.InstallType|
 
 ## System.DeviceHasSoftwareUpdateInstalled
+
 The following table describes the mappings for the **System.DeviceHasSoftwareUpdateInstalled** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -195,6 +204,7 @@ The following table describes the mappings for the **System.DeviceHasSoftwareUpd
 |System.DeviceHasSoftwareUpdateInstalled|InstallStatus|SCCM.Ext.vex_UpdateComplianceStatus.Status|
 
 ## Microsoft.SystemCenter.ConfigurationManager.DCM_CI
+
 The following table describes the mappings for the **Microsoft.SystemCenter.ConfigurationManager.DCM_CI** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -205,6 +215,7 @@ The following table describes the mappings for the **Microsoft.SystemCenter.Conf
 ||IsBaseline|SCCM.Ext.vex_ConfigurationItems.CIType_ID|
 
 ## Microsoft.SystemCenter.ConfigurationManager.DCM_NoncompliantCI
+
 The following table describes the mappings for the **Microsoft.SystemCenter.ConfigurationManager.DCM_NoncompliantCI** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -214,6 +225,7 @@ The following table describes the mappings for the **Microsoft.SystemCenter.Conf
 ||MaxNonComplianceCriticality [Key]|SCCM.Ext.vex_CICurrentComplianceStatus.MaxNoncomplianceCriticality|
 
 ## System.Domain.User
+
 The following table describes the mappings for the **System.Domain.User** type.
 
 |Configuration Manager class|Configuration Manager database value|Service Manager property|
@@ -222,6 +234,7 @@ The following table describes the mappings for the **System.Domain.User** type.
 ||UserName [Key]|Parse SCCM_Ext.vex_GS_SYSTEM_CONSOLE_USER|
 
 ## Microsoft.SystemCenter.ConfigurationManagergr.CollectionInf
+
 The following table describes the mapping for the **Microsoft.SystemCenter.ConfigurationManagergr.CollectionInf** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
@@ -233,6 +246,7 @@ The following table describes the mapping for the **Microsoft.SystemCenter.Confi
 ||CollectionID|SCCM_Ext.vex_Collection.CollectionID|
 
 ## Microsoft.ConfigMgr.SoftwarePackage
+
 The following table describes the mapping for the **Microsoft.ConfigMgr.SoftwarePackage** type.
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|

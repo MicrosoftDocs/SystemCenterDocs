@@ -21,7 +21,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 There are six major parts of a System Center - Service Manager installation, as described in the following table.  
 
-
 |Service Manager part|Description|  
 |--------------------------------|-----------------|  
 |Service Manager management server|Contains the main software part of a Service Manager installation. You can use the Service Manager management server to manage incidents, changes, users, and tasks.|  
