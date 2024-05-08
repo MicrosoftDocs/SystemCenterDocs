@@ -22,8 +22,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot Data Warehouse Jobs](manage-dw.md).
 
-
-
 ## Installation log files
 
 A log file, SCSMInstall.log, captures the progress of the installation. You can use this log file to troubleshoot a failed installation. You can find this log file in the %temp% folder. To troubleshoot installation problems, you can open the log files and search for a line that reads *Return Value 3*. If you find such a line in the log file, look above this line for any indication that a particular step failed.
