@@ -25,30 +25,32 @@ ms.assetid: 7f6da179-5a54-46fb-adc4-3fcaa7bd9864
 
 The ability to define customized management pack elements was used to model the online analytical processing \(OLAP\) cube management pack elements that are included in Service Manager. These management pack elements make it possible for the user to declaratively define and customize an OLAP cube at a higher level of abstraction. Based on the definition, the deployment of these management pack elements creates the correct relationships, components, and fundamental building blocks of the OLAP cube at a greater level of detail, without any further user guidance. The following are the two main management pack elements that are included in OLAP cubes:  
 
--   SystemCenterCube  
+- SystemCenterCube  
 
--   CubeExtension  
+- CubeExtension  
 
-## SystemCenterCube  
+## SystemCenterCube
+
  The SystemCenterCube element defines the OLAP cube to a varying degree of detail, depending on your specific needs. This element contains the following subelements:  
 
--   MeasureGroup  
+- MeasureGroup  
 
--   Substitution  
+- Substitution  
 
--   CustomMDX  
+- CustomMDX  
 
--   NamedCalculation  
+- NamedCalculation  
 
--   Measure  
+- Measure  
 
--   KPI  
+- KPI  
 
--   Action \(however, only drill\-through actions are supported currently\)  
+- Action \(however, only drill\-through actions are supported currently\)  
 
--   ManyToManyRelationship  
+- ManyToManyRelationship  
 
-### MeasureGroup  
+### MeasureGroup
+
  Each OLAP cube contains a collection of facts that exist in the data mart, where each member in the collection corresponds to a measure group. Each measure group must have its own unique name within the OLAP cube. However, a single fact may correspond to multiple measure groups in an OLAP cube. For example, the abstract relationship *WorkItemAssignedToUser* may be defined three times in an OLAP cube, with the unique measure group names of *ChangeRequestAssignedToUser*, *IncidentAssignedToUser*, and *ProblemAssignedToUser*. You can customize the fact so that only change requests, incidents, and problems are included in the respective measure group for the OLAP cube.  
 
  The following example shows the management pack element for the IncidentAssignedToUser measure group:  
@@ -65,7 +67,8 @@ The ability to define customized management pack elements was used to model the 
 |MeasureGroupName|Yes|String|The name of the measure group in the cube. This name must be unique within the cube.|  
 |Fact|Yes|Relationship or CustomFact|The target of the measure group, which must be a fact in the data warehouse.|  
 
-## Substitution  
+## Substitution
+
  Because relationship facts in the data warehouse may target abstract relationships and dimensions, you need to substitute in concrete dimensions so that the measure group will contain only instances that you want to browse.  
 
  This is illustrated in the following example.  
@@ -97,10 +100,12 @@ The ability to define customized management pack elements was used to model the 
 |AliasReplacementDimensionsAs|No|String|The alias name for the substituted dimension|  
 |DimensionAlias|No|ManagementPackDimension|The dimension alias from a custom fact if one exists|  
 
-## Custom MDX  
+## Custom MDX
+
  You can use custom Multi\-Dimensional Expression \(MDX\) scripts to modify and tailor the OLAP cube to the exact specifications that meet your needs. Because Service Manager is model based, it's impossible to determine all your possible semantic needs when taking into account the wide spectrum of requirements and exact specifications for the domain\-specific business needs of a particular user. Custom MDX makes it possible for you to define MDX scripts that will be applied to the OLAP cube to enable specific scenarios that users need to measure and instrument.  
 
-## Named calculation  
+## Named calculation
+
  You can use named calculations to define new attributes on a dimension that a custom measure can later target. This makes it possible for you to extend the dimensional schema and customize the schema to fit your exact needs. The following example is from the SystemCenterWorkItemsCube:  
 
 ```  
@@ -122,7 +127,8 @@ The ability to define customized management pack elements was used to model the 
 
  The subelement \<Calculation\> contains, as its value, the definition of the named calculation. The value is stored as an MDX expression.  
 
-## Measure  
+## Measure
+
  You can use custom measures to aggregate and display data based on numeric attributes from dimensions. Service Manager doesn't support custom measures based on facts. Continuing with the example of the Named Calculation above, Service Manager defines a custom measure on IncidentsPastTargetResolutionTime as the following:  
 
 ```  
@@ -140,7 +146,8 @@ The ability to define customized management pack elements was used to model the 
 |Property|Yes|String|The targeted dimension property|  
 |Type|No|\(Count, Sum\)|The type of the measure|  
 
-## ManyToManyRelationship  
+## ManyToManyRelationship
+
  The ManyToManyRelationship makes it possible for you, the cube designer, to add custom, many\-to\-many dimensions to an OLAP cube, for enabling advanced analytic scenarios. Defining many\-to\-many relationships is beyond the scope of this document. However, you can investigate this concept and its benefits. For more information about the ManyToManyRelationship, see [The Many\-to\-Many Revolution 2.0](https://go.microsoft.com/fwlink/p/?LinkId=246670).  
 
  During cube deployment, Service Manager automatically adds many\-to\-many dimensions to the cube for all "one\-hop" relationships, without any interaction from you. However, Service Manager doesn't add many\-to\-many dimensions for cascading \(multi\-hop\) relationships because of the exponential increase of possible relationships that could be added. Adding all these relationships can significantly degrade performance when the OLAP cube is browsed. This is because the aggregations of many\-to\-many relationships are generally not calculated during processing and because the joins will be evaluated while the OLAP cube is browsed. If you want a specific, cascading, many\-to\-many relationship, you can define the relationship using a management pack element and it will be added to the OLAP cube. Conversely, you can overwrite an automatically generated, many\-to\-many relationship to use a different intermediate measure group in instances in which multiple intermediate groups exist. In this case, Service Manager automatically uses the first group that is encountered. The following is an example of a many\-to\-many management pack relationship element:  
@@ -157,7 +164,8 @@ The ability to define customized management pack elements was used to model the 
 |TargetMeasureGroup|Yes|String|The target measure group to create the many\-to\-many relationship|  
 |IntermediateMeasureGroup|Yes|String|The intermediate measure group to create the many\-to\-many relationship|  
 
-## KPI  
+## KPI
+
  Organizations and businesses can use key performance indicators \(KPIs\) to quickly estimate the health of an enterprise by measuring its progress toward a predefined goal. Each KPI has a target value and an actual value. The target value is a quantitative goal that is critical to the success of the organization. Large amounts of data are filtered to one discrete value that can be used to monitor performance and progress towards goals and benchmarks. Some examples of KPIs are a college having a goal that 90% of their students graduate within four years or a basketball team with a goal of causing the opposing team to shoot less than 50&nbsp;percent for a game. You can use a scorecard to show a group of KPIs, providing in one instantaneous snapshot the overall health of a business. The following is an example KPI:  
 
 ```  
@@ -185,7 +193,8 @@ The ability to define customized management pack elements was used to model the 
 |Direction|Yes|\(Up, Down\)|If the direction is up, any numbers above the green or yellow threshold are marked with the corresponding symbol. Similarly for down, numbers below the green or yellow thresholds are marked with the corresponding symbol.|  
 |Status Graphic|Yes|\(Shapes, TrafficLight, RoadSigns, Gauge, ReversedGauge, Thermometer, Cylinder, Faces, VarianceArrow\)|The symbol that will represent the KPI.|  
 
-## Action  
+## Action
+
  Actions are events that you can trigger on an OLAP cube when you're accessing data in the cube. Only drill\-through actions are supported by Service Manager. The following is an example of an action:  
 
 ```  
@@ -210,7 +219,8 @@ The ability to define customized management pack elements was used to model the 
 |CubeDimension|Yes|String|The cube dimension that is the target of the action, which must be a slicer on the Measure Group|  
 |PropertyName|Yes|String|Attribute of the dimension that is displayed when the drill\-through action is executed|  
 
-## CubeExtension  
+## CubeExtension
+
  The primary purpose of the CubeExtension element is to make it possible for you to modify the OLAP cube after the cube has deployed onto SSAS, without having to uninstall and reinstall the cube. In situations in which the OLAP cube has been fully processed with years of data, recreating the cube is time consuming because all partitions have to be fully reprocessed.  
 
  The CubeExtension element can define the following elements:  
