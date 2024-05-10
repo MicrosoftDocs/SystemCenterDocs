@@ -84,7 +84,7 @@ Orchestrator Web API requires the following versions of .NET Core and Hosting Bu
 |SCO version|.NET Core|
 |---|---|
 |2022 RTM|[.NET Core 5 Hosting Bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.17-windows-hosting-bundle-installer)|
-|2022 UR1|[.NET Core 6 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
+|2022 UR1, UR2|[.NET Core 6 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
 
 ## Virtualization
 
