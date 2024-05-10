@@ -194,7 +194,7 @@ Use the following procedure to enable the schedule for the ETL jobs as needed; y
 
 ::: moniker-end
 
-1. At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
+2. At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
 
     ```powershell
     Enable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>
