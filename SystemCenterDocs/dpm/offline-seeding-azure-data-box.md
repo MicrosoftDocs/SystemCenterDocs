@@ -14,7 +14,6 @@ monikerRange: 'sc-dpm-2019'
 ms.custom: UpdateFrequency2
 ---
 
-
 # Offline seeding using Azure Data Box (Preview)
 
 > [!NOTE]
@@ -83,7 +82,6 @@ Once you receive the Azure Data Box device, depending on the Azure Data Box SKU 
 
 If you ordered one or more Azure Data Box disks (up to 8 TB each), follow the steps mentioned [here](/azure/databox/data-box-disk-deploy-set-up) to unpack, connect, and unlock your Data Box disk.
 
-
 > [!NOTE]
 > It's possible that the DPM doesn't have an USB port. In such a scenario, you can connect your Azure Data Box disk to another server/client and expose the root of the device as a network share.
 
@@ -103,12 +101,14 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
    ```cmd
    psexec.exe  -s  -i  cmd.exe
    ```
+
 4. The command window that opens as a result of the command above is in Local System context. Use this command window to execute steps to mount the Azure Page Blob Share as a network drive on your Windows Server.
 5. Follow the steps [here](/azure/databox/data-box-deploy-copy-data-via-nfs#connect-to-data-box) to connect your DPM Server to the Data Box device via NFS and execute the following command on the Local System command prompt to mount the Azure Page Blobs share:
 
     ```cmd
     mount -o nolock \\<DeviceIPAddres>\<StorageAccountName_PageBlob X:
     ```
+
 6. Once mounted, check if you can access X: from your server. If yes, continue with the next section of this article.
 
 ## Transfer Initial Backup data to Azure Data Box device(s)
@@ -126,7 +126,6 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 8. On the **Specify online protection data:** page, select the member you want enable online protection.
 
     ![Screenshot of specify online protection data.](./media/databox/specify-online-protection-data.png)
-
 
 9. On the **Specify online backup schedule** page, specify how often incremental backups to Azure should occur.
 10. On the **Specify online retention policy** page, specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
@@ -149,11 +148,9 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
           - Azure.Storage       *4.6.1*<br>
      >  - The Azure AD application is registered as *AzureOfflineBackup_\<object GUID of the user>*.
 
-
 13. Select the correct Data box order for which you've unpacked, connected, and unlocked your Data Box disk. Select **Next**.
 
     ![Screenshot showing Select the databox.](./media/databox/select-databox.png)
-
 
 14. On the **Detect the DataBox** screen, enter the path of your Data Box device, and select **Detect Device**.
 
@@ -166,7 +163,6 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
     >
     > For example, if the path of the disk is `\\mydomain\myserver\disk1\` and *disk1* contains a directory called *PageBlob*, the path to be provided on the DPM Server wizard is `\\mydomain\myserver\disk1\`.
     > If you [setup an Azure Data Box 100 TB device](/azure/backup/offline-backup-azure-data-box#setup-azure-data-box), provide the following as the network path to the device `\\<DeviceIPAddress>\<StorageAccountName>_PageBlob`.
-
 
 15. Select **Next**. On the **Summary** page, review your settings and select **Create Group**.
 
@@ -226,7 +222,6 @@ Check if you see one of the following error messages in the DPM/MABS console at 
 
 :::image type="content" source="./media/databox/azure-recovery-services-agent.png" alt-text="Screenshot of Azure recovery services agent.":::
 
-
 **Unable to make service calls to Azure that are required for querying Import Job status and moving backup data into the recovery Services Vault. (ID:100230)**
 
 :::image type="content" source="./media/databox/azure-recovery-services-agent-error-screen.png" alt-text="Screenshot of error screen for Azure recovery services agent.":::
@@ -258,7 +253,6 @@ From the DPM server you're trying to configure offline backup, do the following 
 
    ![Screenshot of the Upload public keys.](./media/databox/upload-public-keys.png)
 
-
 4. In the server, open the registry by typing **regedit** in the run window.
 5. Go to the registry *Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows Azure Backup\Config\CloudBackupProvider*. Right-click **CloudBackupProvider** and add a new string value with name `AzureADAppCertThumbprint_<Azure User Id>`.
 
@@ -266,13 +260,12 @@ From the DPM server you're trying to configure offline backup, do the following 
     > To get the Azure user ID, perform one of these actions:
     >
     >- From the Azure-connected PowerShell, run the `Get-AzureRmADUser -UserPrincipalName "Account Holder's email as defined in the portal"` command.
-    > - Navigate to the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Azure Backup\DbgSettings\OnlineBackup` with the name *CurrentUserId*.
+    >- Navigate to the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Azure Backup\DbgSettings\OnlineBackup` with the name *CurrentUserId*.
 
 6. Right-click the string added in the step above and select **Modify**. In the value, provide the thumbprint of the certificate you exported in **point 2** and select **OK**.
 7. To get the value of thumbprint, double-click on the certificate, then select **Details**  and scroll down until you see the thumbprint field. Select **Thumbprint** and copy the value.
 
    ![Screenshot showing Get value of thumbprint.](./media/databox/certificate.png)
-
 
 ## Next steps
 

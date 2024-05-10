@@ -7,13 +7,13 @@ manager: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/17/2024
-title: Preparing your environment for System Center Data Protection Manager
+title: Prepare your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
-# Preparing your environment for System Center Data Protection Manager
+# Prepare your environment for System Center Data Protection Manager
 
 ::: moniker range="sc-dpm-2025"
 
@@ -37,9 +37,7 @@ Use the following information to plan the deployment for System Center - Data Pr
 
 ::: moniker-end
 
-
 ::: moniker range="<sc-dpm-2022"
-
 
 Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
@@ -70,7 +68,7 @@ In all deployments you’ll need:
 DPM uses SQL Server as a database to store backup information for workloads, servers, and computers it protects. All SQL Server versions should be Standard or Enterprise 64-bit.
 
 >[!NOTE]
-> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
+> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 > - For the below supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported, based on availability.
 
 ::: moniker-end
@@ -130,7 +128,6 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 > [!NOTE]
 > If you are upgrading SQL Database to SQL 2017 or later, ensure you install SQL SSRS post SQL upgrade.
 
-
 ## DPM server
 
 |Requirement|Details|
@@ -183,7 +180,6 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 |Windows Management Framework (WMF) <br/><br/> (Not applicable to DPM 2019)| If you are protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/><br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [Windows Management Frame 5.1](https://www.microsoft.com/download/details.aspx?id=54616) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/><br/> Windows Server 2012 and later do not require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
 |Prerequisites|DPM protection agent must be installed on protected computer. For more information, see Set up the protection agent.<br/><br/> Protected volumes must be at least 1 GB in size with NTFS formatting.<br/><br/> Server operating systems protected by DPM must be 64-bit.|
-
 
 ## Networking
 

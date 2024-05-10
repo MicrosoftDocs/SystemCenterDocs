@@ -40,7 +40,6 @@ This article describes how to determine your current Microsoft System Center –
 
 ## Build versions
 
-
 ::: moniker range="sc-dpm-2025"
 
 The following table lists the build versions for Data Protection Manager 2025.
@@ -126,4 +125,5 @@ The following table lists the build versions for Data Protection Manager 1807.
 ::: moniker-end
 
 ## Next steps
+
 [See what's New in DPM](what-s-new-in-dpm.md)

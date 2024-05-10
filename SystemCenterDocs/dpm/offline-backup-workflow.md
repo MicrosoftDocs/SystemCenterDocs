@@ -27,7 +27,6 @@ The offline-seeding process of Azure Backup is tightly integrated with the [Azur
 > [!NOTE]
 > The process of Offline backup for the Microsoft Azure Recovery Services (MARS) agent is distinct from System Center DPM. For information on using Offline backup with MARS agent, see [this article](/azure/backup/backup-azure-backup-import-export). Offline Backup is not supported for System State backups done using the Azure Backup agent.
 
-
 ## Overview
 
 With the offline-seeding capability of Azure Backup and Azure Import/Export, it's simple to upload the data offline to Azure by using disks. The Offline Backup process involves the following steps:
@@ -76,7 +75,6 @@ The information in this section helps you complete the offline backup workflow s
 
     ![Import screen](./media/backup-server/create-new-protection-group.png)
 
-
   > [!NOTE]
   > > With DPM 2019 Update Roll Up 1, the console might stall when you select **Add online protection** for an existing Protection group. To resolve this issue, apply the hotfix as detailed in the [KB article](https://support.microsoft.com/en-us/help/4547368/console-may-crash-when-you-select-add-online-protection-to-existing-pr).
 
@@ -107,7 +105,6 @@ The information in this section helps you complete the offline backup workflow s
    ![Screenshot of View Backup Information page.](./media/backup-server/complete-recovery-point.png)
 
 6. After the operation finishes, the staging location is ready to be used for disk preparation.
-
 
 ## Prepare SATA drives and ship to Azure
 
@@ -193,7 +190,6 @@ The following procedure updates the Azure Import job shipping details. This info
 
       ![Saving Shipping Information](./media/backup-server/tracking-info.png)
 
-
 ### Time to process the drives
 
 The amount of time it takes to process an Azure import job varies depending on factors such as shipping time, job type, type and size of the data being copied, and the size of the disks provided. The Azure Import/Export service doesn't have an SLA, but after the disks are received, the service strives to complete the backup data copy to your Azure storage account in 7-10 days. The next section provides details on how you can monitor the status of the Azure import job.
@@ -201,7 +197,6 @@ The amount of time it takes to process an Azure import job varies depending on f
 ### Monitoring Azure Import job status
 
 You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see [Storage Import Export service](/azure/storage/common/storage-import-export-service).
-
 
 ### Complete the workflow
 
