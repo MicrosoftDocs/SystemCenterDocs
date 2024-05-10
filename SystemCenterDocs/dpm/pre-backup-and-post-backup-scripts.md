@@ -62,7 +62,7 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
    > The *DataSourceName* attribute must be provided as **Drive:** (for example, **D:** if the data source is on the D drive).
 
 2. For each data source, complete the *DatasourceScriptConfig* element as follows:
-   -  For the *DataSourceName* attribute, enter the data source volume (for file data sources) or name (for all other data sources). The data source name for application data should be in the form of _Instance\Database_ for SQL, _Storage group name_ for Exchange, _Logical Path\Component Name_ for Virtual Server, and _SharePoint Farm\SQL Server Name\SQL Instance Name\SharePoint Config DB_ for Windows SharePoint Services.
+   - For the *DataSourceName* attribute, enter the data source volume (for file data sources) or name (for all other data sources). The data source name for application data should be in the form of _Instance\Database_ for SQL, _Storage group name_ for Exchange, _Logical Path\Component Name_ for Virtual Server, and _SharePoint Farm\SQL Server Name\SQL Instance Name\SharePoint Config DB_ for Windows SharePoint Services.
 
    - In the **PreBackupScript** tag, enter the path and script name.
    - In the **PreBackupCommandLine** tag, enter command-line parameters to be passed to the scripts, separated by spaces.
@@ -71,7 +71,6 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
    - In the **TimeOut** tag, enter the time in minutes that DPM should wait after invoking a script before timing out and marking the script as failed.
 
 3. Save the *ScriptingConfig.xml* file.
-
 
 > [!NOTE]
 > DPM will suffix an additional Boolean (true/false) parameter to the post-backup script command, indicating the status of the DPM backup job.

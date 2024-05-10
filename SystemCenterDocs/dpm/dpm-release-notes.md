@@ -64,7 +64,7 @@ Use these steps to rename the database:
 1. Stop the DPM service on the DPM server.  
 2. Run the following SQL commands to rename the database; update the DPM server name in the query below.
 
-   ```
+   ```sql  
    USE master
    GO
    ALTER DATABASE DPMDB  
@@ -127,13 +127,16 @@ In addition to the issues listed in DPM 2022 release notes, the following additi
  - DPM crashes when tape backup failure alerts are inactive.
 
 ## DPM 2022 UR1 release notes
+
 The following issues were identified after the release of DPM 2022 UR1 (KB 5019645) and are fixed in Hotfix for DPM 2022 UR1 (KB 5026073); We recommend that you apply the hotfix if you are running into the following issues. For more information, see the [KB article](https://support.microsoft.com/help/5026073) for the Hotfix.
-### Backups for VMware VMs that have VMware Tools start failing with error "Disk SubSystem 0x80990EF1" 
+### Backups for VMware VMs that have VMware Tools start failing with error "Disk SubSystem 0x80990EF1"
+
 **Description**: DPM 2022 UR1 had a bug where backups VMware VMs would fail if VMware tools is installed. This was due to a faulty configuration in DPM.
 
 **Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2.
 
-### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 and 2016 over TLS 1.2. 
+### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 and 2016 over TLS 1.2.
+
 **Description**: DPM 2022 RTM and UR1 did not support MSOLEDB 18 for SQL Server 2017 and 2016 which is required to perform discovery and protection of SQL Server over TLS 1.2. This issue is observed after [KB5021128](https://support.microsoft.com/help/5021128) or [KB5021127](https://support.microsoft.com/help/5021127) is installed for SQL Server 2016 and 2017 respectively to mandate TLS 1.2 or when TLS 1.0 and 1.1 are disabled on the protected server.
 
 **Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
@@ -186,7 +189,6 @@ This issue occurs because DPM erroneously checks for an installed version of MAR
 DPM 2022 UR2 Refresh fixes the known issues in DPM 2022 UR2.
 
 ::: moniker-end
-
 
 ::: moniker range="sc-dpm-1807"
 
@@ -304,6 +306,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Workaround**: Upgrade your DPM server to version 2019.
 
 ### Recovery Points not being pruned, leading to an accumulation of Recovery Points
+
 **Description:** DPM prunes recovery points older than the retention range. During the pruning process, DPM calculates the storage consumed by those recovery points to be pruned. Storage calculation delays pruning.
 
 **Workaround:** Configure DPM to skip calculating the size of recovery points to be pruned. As a result, the pruning script runs faster and prunes all recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source isn't updated until DPM finishes pruning. The storage consumption per volume continues to reflect the correct values.
@@ -365,6 +368,7 @@ GetData of Provider failed. |Backup Service Exception: FMException: [ErrorCode:G
 For issues fixed in DPM 2019 UR1, [see the KB article](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
 
 ## DPM 2019 UR2 release notes
+
 The following sections detail the known issues and workarounds for DPM 2019 UR2.
 
 For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft.com/help/4563392/update-rollup-2-for-system-center-2019-data-protection-manager).
@@ -380,7 +384,6 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 >[!NOTE]
 > This issue is fixed in DPM 2019 UR3. For more information about the issues fixed in UR3, see the [KB article](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d).  
 
-
 ### Latest report files are not automatically updated
 
 **Description**: With DPM 2019 UR2, issue with DPM report formatting and volume-to-volume migration reporting is fixed. However, the existing  report files aren't automatically replaced with the updated files.
@@ -389,31 +392,32 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 Follow these steps to replace the existing report files:
 
 #### Replace the ReportSRV10.dll
+
 1. Stop the SQL Server Reporting service.
-2.	Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
+2. Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
     - For SQL Server 2017 and later -  C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin
     - For SQL Server 2016 -  C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin
-3.	Start the SQL Server Reporting service.
+3. Start the SQL Server Reporting service.
 
 #### Replace the RDL files
 
-1.	On DPM, open the SQL Reporting Services portal URL.
-2.	On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
+1. On DPM, open the SQL Reporting Services portal URL.
+2. On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
 
     ![Reports folder](media/release-notes/reports-folder.png)
 
      >[!NOTE]
      > You can see only one folder with this naming convention. If DPM is upgraded from a previous version, the previous folder might still exist but you can’t open it.
 
-3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
+3. Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
 
     ![List of individual report files](media/release-notes/individual-report-files.png)
 
-4.	Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
+4. Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
 
     ![Manage report files](media/release-notes/manage-report-files.png)
 
-5.	On the new page, select **Replace** to replace with the latest report files.
+5. On the new page, select **Replace** to replace with the latest report files.
 
     ![Replace report files](media/release-notes/replace-report-files.png)
 
@@ -421,9 +425,9 @@ Follow these steps to replace the existing report files:
 
     For example: C:\Program Files\Microsoft System Center\DPM\DPM\bin\DpmReports
 
-6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
+6. After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
 
-7.	Restart DPM and use the report files.
+7. Restart DPM and use the report files.
 
 ## DPM 2019 UR3 release notes
 
