@@ -213,85 +213,102 @@ You can set up the  DPM Self-Service Recovery Configuration Tool to create and m
 DPM 2022 UR1 provides a self-service recovery feature to allow SQL Server administrators access to data protected by DPM so that they can restore a SQL Server database from backup to a network folder.
 You can set up the  DPM Self-Service Recovery Configuration Tool to create and manage roles that specify which users can perform self-service recovery. Then users use the DPM Self-Service Recovery Wizard to recover SQL Server databases. Download the [self-service recovery wizard tool](https://go.microsoft.com/fwlink/?linkid=2215141). Note that you need to have [.NET 3.5 SP1](https://www.microsoft.com/download/details.aspx?id=22) and [Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784) installed to run the tool.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+DPM provides a self-service recovery feature to allow SQL Server administrators access to data protected by DPM so that they can restore a SQL Server database from backup to a network folder.
+You can set up the  DPM Self-Service Recovery Configuration Tool to create and manage roles that specify which users can perform self-service recovery. Then users use the DPM Self-Service Recovery Wizard to recover SQL Server databases. Download the [self-service recovery wizard tool](https://go.microsoft.com/fwlink/?linkid=2215141). Note that you need to have [.NET 3.5 SP1](https://www.microsoft.com/download/details.aspx?id=22) and [Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784) installed to run the tool.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2022"
+
 Configure self-service SQL Server recovery as follows:
 
-1.  In the DPM console > **Protection**, select **Configure self service recovery**.
+1. In the DPM console > **Protection**, select **Configure self service recovery**.
 
-2.  In the DPM Self-Service Recovery Configuration Tool for SQL Server, select **Create Role**.
+2. In the DPM Self-Service Recovery Configuration Tool for SQL Server, select **Create Role**.
 
-3.  On the **Security Groups** page, you'll create one or more groups that contain the users for whom you want to enable self-service recovery. Specify the security groups in the format domain\security group or an individual user in the format domain\username. You can add multiple groups and users to a DPM role.
+3. On the **Security Groups** page, you'll create one or more groups that contain the users for whom you want to enable self-service recovery. Specify the security groups in the format domain\security group or an individual user in the format domain\username. You can add multiple groups and users to a DPM role.
 
-4.  On the **Recovery Items** page, specify protected SQL Server instances and databases for which you want to allow self-service recovery. Specify instances in the format <computer name\instance name>. To specify a database, press the TAB key and then type a database name. Alternatively, to enable role users to recover all databases on the instance, press the TAB key and then press the spacebar to clear the text in the **Database Name** column.
+4. On the **Recovery Items** page, specify protected SQL Server instances and databases for which you want to allow self-service recovery. Specify instances in the format <computer name\instance name>. To specify a database, press the TAB key and then type a database name. Alternatively, to enable role users to recover all databases on the instance, press the TAB key and then press the spacebar to clear the text in the **Database Name** column.
 
 > [!NOTE]
 > When you enable users of a DPM role to recover all SQL Server databases on an instance of the SQL Server, those users can also recover any SQL Server databases that are subsequently added to the instance. When you enable access by using DPM roles, ensure that all members of the role have been granted appropriate permission to view and access all the databases.
 
-5.  On the **Recovery Target Locations** page,  to restrict recovery locations for role users, select **Allow users to recover the databases to another instance of SQL Server** and specify one or more recovery target locations and file paths that are allowed. If you want to allow any path on an instance, then don't specify a value in **Recovered File Path**. If you enable the setting, users can recover database files to any location for which they've the write permission. However, users can't overwrite the original database files, and the DPM Self-Service Recovery Tool (SSRT) for SQL Server blocks them if they attempt to do so.
+5. On the **Recovery Target Locations** page,  to restrict recovery locations for role users, select **Allow users to recover the databases to another instance of SQL Server** and specify one or more recovery target locations and file paths that are allowed. If you want to allow any path on an instance, then don't specify a value in **Recovered File Path**. If you enable the setting, users can recover database files to any location for which they've the write permission. However, users can't overwrite the original database files, and the DPM Self-Service Recovery Tool (SSRT) for SQL Server blocks them if they attempt to do so.
 
-6.  In addition, on the computer from which self-service recovery will run, ensure that at least .NET framework 4.5 is installed and the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location in the **DpmSqlEURInstaller** folder.
+6. In addition, on the computer from which self-service recovery will run, ensure that at least .NET framework 4.5 is installed and the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location in the **DpmSqlEURInstaller** folder.
 
 ::: moniker-end
 
 ## Restore  SQL Server data
+
 You can recover SQL data as follows:
 
--   Recover a database to the original location
+- Recover a database to the original location
 
--   Recover the database with a new name to its original location or to a different instance of SQL Server
+- Recover the database with a new name to its original location or to a different instance of SQL Server
 
--   Recover the database to a different instance of SQL Server
+- Recover the database to a different instance of SQL Server
 
--   Copy the database to a network folder
+- Copy the database to a network folder
 
--   Copy the database to tape
+- Copy the database to tape
 
 You can't recover a system database to a different instance of the SQL Server.
 
 Recover a database from the DPM console as follows:
 
-1.  In the DPM Administrator Console, select **Recovery** on the navigation bar. Using the browse functionality, select the database you want to recover.
+1. In the DPM Administrator Console, select **Recovery** on the navigation bar. Using the browse functionality, select the database you want to recover.
 
-2.  On the calendar, select any date in bold to obtain the recovery points available for that date. The **Recovery time** menu lists the time for each available recovery point. On the **Recovery time** menu, select the recovery point you want to use.
+2. On the calendar, select any date in bold to obtain the recovery points available for that date. The **Recovery time** menu lists the time for each available recovery point. On the **Recovery time** menu, select the recovery point you want to use.
 
-3.  In the **Actions** pane, select **Recover** to start the Recovery Wizard.
+3. In the **Actions** pane, select **Recover** to start the Recovery Wizard.
 
-4.  On the **Review recovery selection** page, select **Next**.  
+4. On the **Review recovery selection** page, select **Next**.  
 
 > [!NOTE]
->   -   Select where you want to recover the database. If you select **Recover to any SQL instance**, enter the recovery path. You can specify a new name for the recovered database. This option isn't available with the setting **Latest recovery point**.
->  -  The default recovery path is the original location path. You must enter the appropriate recovery path.
->  -   You can't recover a newer version SQL Server database to an older version SQL Server instance.
->  -   If you select **Copy to a network folder** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices.
->  -   If you select **Copy to tape** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices. For the tape option, you'll select the tape library you want to use for recovery.
+>- Select where you want to recover the database. If you select **Recover to any SQL instance**, enter the recovery path. You can specify a new name for the recovered database. This option isn't available with the setting **Latest recovery point**.
+>- The default recovery path is the original location path. You must enter the appropriate recovery path.
+>- You can't recover a newer version SQL Server database to an older version SQL Server instance.
+>- If you select **Copy to a network folder** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices.
+>- If you select **Copy to tape** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices. For the tape option, you'll select the tape library you want to use for recovery.
 
-5.  If you selected a recovery point other than **Latest** on the Specify Database State page, select **Leave database operational**.
+5. If you selected a recovery point other than **Latest** on the Specify Database State page, select **Leave database operational**.
 
-6.  Specify recovery options for network bandwidth usage throttling, SAN-based recovery, and email notifications, and then select **Next**.
+6. Specify recovery options for network bandwidth usage throttling, SAN-based recovery, and email notifications, and then select **Next**.
 
-7.  On the **Summary** page, review the recovery settings, and then select **Recover**.
-
+7. On the **Summary** page, review the recovery settings, and then select **Recover**.
 
 Users with self-service recovery permissions should recover as follows:
 
 ::: moniker range="sc-dpm-2022"
 
-With DPM 2022 UR1, download the [SQL Server Self Service Recovery tool](https://go.microsoft.com/fwlink/?linkid=2215141) separately to use it for Self-Service recoveries. 
+With DPM 2022 UR1, download the [SQL Server Self Service Recovery tool](https://go.microsoft.com/fwlink/?linkid=2215141) separately to use it for Self-Service recoveries.
 
 ::: moniker-end
 
-1.  The user should open the DPM Self-Service Recovery Tool, select **Connect to DPM server** and specify the DPM server name.
+::: moniker range="sc-dpm-2025"
 
-2.  After a connection is established, the user should select **New Recovery Job** to start the Recovery Wizard.
+Download the [SQL Server Self Service Recovery tool](https://go.microsoft.com/fwlink/?linkid=2215141) separately to use it for Self-Service recoveries.
 
-3.  On the **Specify Database Details** page of the wizard, specify the SQL Server instance and database name to recover. If you're using availability groups, specify the group name in the format: **AGNAME.ClusternameFQDN\AGNAME**.
+::: moniker-end
 
-4.  On the **Specify Recovery Point** page, select the data and time of the recovery point.
+1. The user should open the DPM Self-Service Recovery Tool, select **Connect to DPM server** and specify the DPM server name.
 
-5.  On the **Select Recovery Type** page, select whether to recover to any instance on the same SQL Server or a different one. Specify whether to recover to a network folder. 
+2. After a connection is established, the user should select **New Recovery Job** to start the Recovery Wizard.
+
+3. On the **Specify Database Details** page of the wizard, specify the SQL Server instance and database name to recover. If you're using availability groups, specify the group name in the format: **AGNAME.ClusternameFQDN\AGNAME**.
+
+4. On the **Specify Recovery Point** page, select the data and time of the recovery point.
+
+5. On the **Select Recovery Type** page, select whether to recover to any instance on the same SQL Server or a different one. Specify whether to recover to a network folder. 
 
     > [!NOTE]
     > Only recovery points that will be created from full express backup can be recovered to a network folder.
 
-6.  If you're recovering to a database, on the **Specify Database State** page, specify whether the database should remain operational after recovery and specify whether you want to copy the SQL transaction logs.
+6. If you're recovering to a database, on the **Specify Database State** page, specify whether the database should remain operational after recovery and specify whether you want to copy the SQL transaction logs.
 
-7.  On the **Specify Recovery Options** page, specify whether you want to retain security settings from the source server or apply settings from the destination server. You can also specify that an email notification should be sent when the recovery finishes.
+7. On the **Specify Recovery Options** page, specify whether you want to retain security settings from the source server or apply settings from the destination server. You can also specify that an email notification should be sent when the recovery finishes.

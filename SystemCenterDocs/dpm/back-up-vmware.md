@@ -37,6 +37,14 @@ This article explains how to use Data Protection Manager (DPM) to back up virtua
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2025"
+This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0, and 8.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+
+>[!NOTE]
+>DPM 2025 don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html).
+
+::: moniker-end
+
 ## Supported VMware features
 
 DPM provides the following features when backing up VMware virtual machines:
@@ -74,7 +82,7 @@ Before you start backing up a VMware virtual machine, review the following list 
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
 ## Prerequisites and Limitations
 
@@ -282,7 +290,6 @@ The following table captures the privileges that you need to assign to the user 
 | Virtual machine.Snapshot management.Create snapshot |   |
 | Virtual machine.Snapshot management.Remove Snapshot |   |
 
-
 The recommended steps for assigning these privileges:
 
 #### Create a role, for example, BackupAdminRole
@@ -383,11 +390,11 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 
 **Use the following procedure**:
 
-1.	In the DPM Administrator console, select **Protection** > **Create protection group** to open the Create New Protection Group wizard.
-2.	On the **Select Group Members** page, select the VMware VMs you want to protect.
-3.	On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
-4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency you want.
-5.	On the **Select Tape and Library Details** page, specify the tape and library that will be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
+1. In the DPM Administrator console, select **Protection** > **Create protection group** to open the Create New Protection Group wizard.
+2. On the **Select Group Members** page, select the VMware VMs you want to protect.
+3. On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
+4. In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency you want.
+5. On the **Select Tape and Library Details** page, specify the tape and library that will be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
 
 ### Create a Protection Group for VMware VMs
 
@@ -405,12 +412,12 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 
     If you've a standalone tape or tape library connected to the DPM server, you'll be able to select **I want long-term protection using tape**.
 
-6.	On the **Specify Short-Term Goals** screen, for the **Retention Range**, specify the number of days your data is kept on disk.
+6. On the **Specify Short-Term Goals** screen, for the **Retention Range**, specify the number of days your data is kept on disk.
     If you want to change the schedule when application recovery points are taken, select **Modify**. On the Express Full Backup tab, choose a new schedule for the time(s) and days of the week when Express Full Backups are taken. The default is daily at 8 PM local time for the DPM server. When you've the short-term goals you like, select **Next**.
 
 7. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**,  specify how often backups to tape should run. The frequency is based on the retention range you've specified:
-    -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
-    -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
+    - When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    - When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
@@ -482,7 +489,7 @@ You can restore individual files from a protected VM recovery point. This featur
 
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
-10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
+10. On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
 ::: moniker-end
@@ -493,6 +500,19 @@ You can restore individual files from a protected VM recovery point. This featur
 > Restore of an individual file from a VM backup is possible only for Windows VMs from the disk and online recovery points.
 
 With DPM 2022 UR2 and later, you can restore an individual file from a VMware VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+>[!NOTE]
+> Restore of an individual file from a VM backup is possible only for Windows VMs from the disk and online recovery points.
+
+You can restore an individual file from a VMware VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2022"
 
 Additionally, for item-level recovery from an online recovery point, ensure that automatic mounting of volumes is enabled. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
 
@@ -549,7 +569,6 @@ The value should be the number (decimal) of virtual machines that you select for
 > [!NOTE]
 >  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
 
-
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
@@ -557,6 +576,18 @@ The value should be the number (decimal) of virtual machines that you select for
 ## VMware parallel restore in DPM 2022
 
 DPM 2022 supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, eight parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+## VMware parallel restore
+
+DPM supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, eight parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2022"
 
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.
@@ -585,7 +616,7 @@ To back up vSphere 6.7, do the following:
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
 To back up vSphere 6.7 and 7.0, do the following:
 
@@ -693,13 +724,13 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
         > With DPM 2019 UR2, this experience is improved. You can run the script without stopping the DPMRA service.
 
 
-     **To add/remove the disk from exclusion, run the following command:**
+     **Add/remove the disk from exclusion, run the following command:**
 
       ```
       ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
       ```
 
-     **Example: To add the disk exclusion for TestVM4, run the following command**
+     **Example: Add the disk exclusion for TestVM4, run the following command**
 
        ```
        PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
@@ -708,7 +739,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
        ```
 5. Verify that the disk has been added for exclusion
 
-   **To view the existing exclusion for specific VMs, run the following command:**
+   **View the existing exclusion for specific VMs, run the following command:**
 
     ```
     ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
@@ -728,7 +759,6 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   > [!NOTE]
   > If you're performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
-
 
 **Remove the disk from exclusion**
 
