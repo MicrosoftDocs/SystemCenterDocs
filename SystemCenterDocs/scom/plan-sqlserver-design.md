@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/20/2024
+ms.date: 05/14/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager
@@ -41,40 +41,33 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2019"
 
-- SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
+- SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 
 > [!NOTE]
 >
-> - Operations Manager 2019 supports SQL 2019 with **CU8 or later**.
-> - For SQL 2019 and SQL 2022 use [ODBC](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) 17.3 or later, and [MSOLEDBSQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) 18.2 or later.
-> - If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](/sql/database-engine/configure-windows/configure-sql-server-encryption)
-
+> SQL Server Drivers are highly recommended to be installed on all management servers:
+>
+> - [ODBC v17.x or later](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows)
+> - [MSOLEDBSQL v18.x or later](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server)
+>
+> If ODBC v18.x or MSOLEDBSQL v19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. More information on this process can be found here: [Configure SQL Server Database Engine for encryption - SQL Server](/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
-- SQL Server 2022
-- SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
+- SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
+- SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
+- SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
 
 > [!NOTE]
 >
-> - Operations Manager 2022 supports SQL 2019 with **CU8 or later**.
-> - For SQL 2019 and SQL 2022 use [ODBC](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) 17.3 or later, and [MSOLEDBSQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) 18.2 or later.
->   - If ODBC 18.x or MSOLEDBSQL 19.x are used then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. You can use the following as a guide on this process: [Configure SQL Server Database Engine for encryption - SQL Server | Microsoft Learn](/sql/database-engine/configure-windows/configure-sql-server-encryption)
-
-::: moniker-end
-
-::: moniker range=">sc-om-1807 <=sc-om-2019"
-
-- SQL Server 2017 and Cumulative Updates as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
-- SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-
-::: moniker-end
-
-::: moniker range="sc-om-2022"
-
-- SQL Server 2017 and Cumulative Updates as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
+> SQL Server Drivers are highly recommended to be installed on all management servers:
+>
+> - [ODBC v17.x or later](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows)
+> - [MSOLEDBSQL v18.x or later](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server)
+>
+> If ODBC v18.x or MSOLEDBSQL v19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. More information on this process can be found here: [Configure SQL Server Database Engine for encryption - SQL Server](/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
@@ -82,20 +75,20 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-- SQL Server 2017 and Cumulative Updates as detailed [here](https://techcommunity.microsoft.com/t5/sql-server-blog/announcing-the-modern-servicing-model-for-sql-server/ba-p/385594)
-- SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
+- SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
+- SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
-Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md) and [upgrade information for SQL 2019](upgrade-sqlserver-2019-operations-manager.md).
+Before upgrading SQL Server, see [upgrade information for 2017+](upgrade-sqlserver-2017-opsmgr.md) and [upgrade information for SQL 2019](upgrade-sqlserver-2019-operations-manager.md).
 
 ::: moniker-end
 
 ::: moniker range="sc-om-1807"
 
-Before upgrading to SQL Server 2017, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md).
+Before upgrading to SQL Server 2017, see [upgrade information for 2017+](upgrade-sqlserver-2017-opsmgr.md).
 
 ::: moniker-end
 
@@ -103,16 +96,16 @@ Before upgrading to SQL Server 2017, see [upgrade information for 2017](upgrade-
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center Operations Manager version 1801 to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-- SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
+- SQL Server 2016 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2016 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-- SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-- SQL Server 2014 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2014)
-- SQL Server 2012 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2012)
+- SQL Server 2016 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
+- SQL Server 2014 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2014)
+- SQL Server 2012 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2012)
 
 ::: moniker-end
 
@@ -129,8 +122,8 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 Other hardware and software considerations apply in your design planning:
 
-- It's recommended that SQL Server run on disks in NTFS file format.
-- It's required to have at least 1 GB of free disk space for the operational and data warehouse database, and is enforced at the time of database creation. Keep in mind that the disk utilization of the databases will likely grow significantly after setup, ensure to have plenty of free disk space above this base requirement.
+- SQL Server is recommended run on disks in NTFS file format.
+- SQL Server is required to have at least 1 GB of free disk space for the operational and data warehouse database, and is enforced at the time of database creation. Keep in mind that the disk utilization of the databases will likely grow significantly after setup, ensure to have plenty of free disk space above this base requirement.
 - .NET Framework 4 is required.
 - .NET Framework 4.8 is supported from Operations Manager 2022.
 - Reporting Server isn't supported on Windows Server Core.
@@ -205,9 +198,9 @@ The Operations Manager database is a SQL Server database that contains all of th
 Factors that influence the load on the Operations Manager database include:
 
 - Rate of operational data collection.
-  - The rate of operational data collection is influenced by factors such as the number of management packs imported, the number of agents added, and the type of computer being monitored. For example, an agent monitoring a business-critical desktop computer will collect less data compared to an agent monitoring a server running SQL Server with multiple databases.
+  - The rate of operational data collection is influenced by factors such as the number of management packs imported, the number of agents added, and the type of computer being monitored. For example, an agent monitoring a business-critical desktop computer collects less data compared to an agent monitoring a server running SQL Server with multiple databases.
 - Rate of instance space changes.
-  - Updating existing data in the Operations Manager database is resource-intensive compared to writing new operational data. Additionally, when there are changes in instance space data, the management servers need to make additional queries to the database to compute configuration and group changes. The rate of instance space changes increases when importing new management packs or adding new agents to the management group.
+  - Updating existing data in the Operations Manager database is resource-intensive compared to writing new operational data. Additionally, when there are changes in instance space data, the management servers need to make more queries to the database to compute configuration and group changes. The rate of instance space changes increases when importing new management packs or adding new agents to the management group.
 - The number of Operations Consoles and other SDK connections running simultaneously also affects the load on the database.
   - Each Operations console reads data from the Operations Manager database. Querying this data consumes potentially large amounts of storage I/O resources, CPU time, and RAM. Operations consoles that display large amounts of operational data in the Events View, State View, Alerts View, and Performance Data View tend to cause the largest load on the database.  
 
@@ -272,7 +265,7 @@ SQL Server Always On availability groups support failover environments for a dis
 
 With System Center 2016 and later - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.
 
-To set up an availability group, you'll deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
+To set up an availability group, you deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
 - Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability).
 - Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
@@ -299,7 +292,7 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 ::: moniker range=">=sc-om-2019"
 
-To set up an availability group, you'll deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
+To set up an availability group, you deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
 - Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability).
 - Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
@@ -332,9 +325,9 @@ Start-ClusterResource "Cluster Name"
 Start-ClusterGroup "Cluster Name"
 ```
 
-If you're using Always On with a listener name, you should also make these configuration changes on the listener. For more information about configuring an availability group listener, see the documentation here: [Configure availability group listener - SQL Server Always On](/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server)
+If you're using Always On with a listener name, you should also make these configuration changes on the listener. For more information about configuring an availability group listener, see the documentation here: [Configure availability group listener - SQL Server Always On.](/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server)
 
-Run the following PowerShell commands on the SQL node currently hosting the listener to modify its settings:
+The following PowerShell commands can be run on the SQL node currently hosting the listener to modify its settings:
 
 ```PowerShell
 Import-Module FailoverClusters
@@ -349,7 +342,7 @@ When a clustered or an Always On SQL instance is used for high availability, you
 
 ## Optimizing SQL Server
 
-Previous deployment support experience with customers shows that performance issues are not typically caused by high resource utilization (i.e. processor or memory) with SQL Server itself; rather it's directly related to the configuration of the storage subsystem. Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance. Such examples are:
+Support experiences have shown that performance issues aren't typically caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather the issue is directly related to the configuration of the storage subsystem. Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance. Such examples are:
 
 - Insufficient allocation of spindles for the LUNs to support the IO requirements of Operations Manager.  
 - Hosting transaction logs and database files on the same volume. These two workloads have different IO and latency characteristics.
@@ -359,20 +352,20 @@ Previous deployment support experience with customers shows that performance iss
 
 Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager. Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing. The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads. As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
-It's important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Ensure that these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://github.com/Microsoft/diskspd) to evaluate the I/O capacity of the storage subsystem supporting SQL Server. The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool - [DiskSpd, PowerShell and storage performance: measuring IOPs, throughput and latency for both local disks and SMB file shares](/archive/blogs/josebda/diskspd-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares?branch=main).
+It's important to test the SQL Server design by performing throughput testing of the IO subsystem before deploying SQL Server. Ensure that these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://github.com/Microsoft/diskspd) to evaluate the I/O capacity of the storage subsystem supporting SQL Server. The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool - [DiskSpd, PowerShell and storage performance: measuring IOPs, throughput and latency for both local disks and SMB file shares](/archive/blogs/josebda/diskspd-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares?branch=main).
 
 ### NTFS allocation unit size
 
 Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation and is most commonly the result of partition misalignment with stripe unit boundaries. It can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
 
-When formatting the partition that will be used for SQL Server data files, it's recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and TempDB. Be aware, however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it isn't recommended.
+When formatting the partition used for SQL Server data files, it's recommended to use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and TempDB. Be aware, however, that using allocation unit sizes greater than 4-KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it isn't recommended.
 
 ### Reserve memory
 
 > [!NOTE]
 > Much of the information in this section comes from Jonathan Kehayias in his blog post [How much memory does my SQL Server actually need? (sqlskills.com)](https://www.sqlskills.com/blogs/jonathan/how-much-memory-does-my-sql-server-actually-need/).
 
-It's not always easy to identify the right amount of physical memory and processors to allocate for SQL Server in support of System Center Operations Manager (or for other workloads outside of this product).  The sizing calculator provided by the product group provides guidance based on workload scale, but its recommendations are based on testing performed in a lab environment that may or may not align with your actual workload and configuration.
+It's not always easy to identify the right amount of physical memory and processors to allocate for SQL Server in support of System Center Operations Manager (or for other workloads outside of this product). The sizing calculator provided by the product group provides guidance based on workload scale, but its recommendations are based on testing performed in a lab environment that may or may not align with your actual workload and configuration.
 
 SQL Server allows you to [configure the minimum and maximum amount of memory](/sql/database-engine/configure-windows/server-memory-server-configuration-options) that will be reserved and used by its process. By default, SQL Server can change its memory requirements dynamically based on available system resources. The default setting for **min server memory** is 0, and the default setting for **max server memory** is 2,147,483,647 MB.
 
@@ -386,11 +379,11 @@ For **max server memory**, we recommend that you initially reserve a total of:
 - 1 GB of RAM per every 4 GB of RAM installed (up to 16-GB RAM)
 - 1 GB of RAM per every 8-GB RAM installed (above 16-GB RAM)
 
-After you've set these values, monitor the **Memory\Available MBytes** counter in Windows to determine if you can increase the memory available to SQL Server. Windows signals that the available physical memory is running low at 96 MB, so ideally the counter shouldn't run lower than around 200-300 MB, to ensure you've a buffer. For servers with 256-GB RAM or higher, you'll probably want to ensure it doesn't run lower than 1 GB.
+After you've set these values, monitor the **Memory\Available MBytes** counter in Windows to determine if you can increase the memory available to SQL Server. Windows signals that the available physical memory is running low at 96 MB, so ideally the counter shouldn't run lower than around 200-300 MB, to ensure you have a buffer. For servers with 256-GB RAM or higher, ensure it doesn't run lower than 1 GB.
 
 Keep in mind that these calculations assume you want SQL Server to be able to use all available memory, unless you modify them to account for other applications. Consider the specific memory requirements for your OS, other applications, the SQL Server thread stack, and other multipage allocators. A typical formula would be `((total system memory) – (memory for thread stack) – (OS memory requirements) – (memory for other applications) – (memory for multipage allocators))`, where the memory for thread stack = `((max worker threads) (stack size))`. The stack size is 512 KB for x86 systems, 2 MB for x64 systems, and 4 MB for IA64 systems, and you can find the value for max worker threads in the max_worker_count column of sys.dm_os_sys_info.
 
-These considerations also apply to the memory requirements for SQL Server to run in a virtual machine. Since SQL Server is designed to cache data in the buffer pool, and it will typically use as much memory as possible, it can be difficult to determine the ideal amount of RAM needed. When reducing the memory allocated to a SQL Server instance, you'll eventually reach a point where lower memory allotment gets traded for higher disk I/O access.
+These considerations also apply to the memory requirements for SQL Server to run in a virtual machine. Since SQL Server is designed to cache data in the buffer pool, and it will use as much memory as possible, it can be difficult to determine the ideal amount of RAM needed. When reducing the memory allocated to a SQL Server instance, you can reach a point where lower memory allotment gets traded for higher disk I/O access.
 
 To configure SQL Server memory in an environment that has been over-provisioned, start by monitoring the environment and the current performance metrics, including the SQL Server Buffer Manager **page life expectancy** and **page reads/sec** and the Physical Disk **disk reads/sec** values. If the environment has excess memory, **page life expectancy** will increase by a value of one each second without any decrease under the workload, due to caching; the SQL Server Buffer Manager **page reads/sec** value will be low after the cache ramps up; and the Physical Disk **disk reads/sec** will also remain low.  
 
@@ -442,7 +435,7 @@ ALTER DATABASE [TempDB] ADD FILE ( NAME = N'TempDB2', FILENAME = N'C:\Program Fi
 GO
 ```
 
-Run the T-SQL query `SELECT * from sys.sysprocesses` to detect page allocation contention for the TempDB database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for TempDB resources and have similar values as highlighted earlier when you execute the `sys.sysprocesses` query.  
+Run the T-SQL query `SELECT * from sys.sysprocesses` to detect page allocation contention for the TempDB database. In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods. Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks]. The results show that these requests or tasks are waiting for TempDB resources and have similar values as highlighted earlier when you execute the `sys.sysprocesses` query.  
 
 If the previous recommendations don't significantly reduce the allocation contention and the contention is on SGAM pages, [implement trace flag](/sql/t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql) `-T1118` in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages.
 
@@ -501,7 +494,7 @@ Only rely on autogrow as a contingency for unexpected growth. Autogrow introduce
 
 If you combine the autogrow and autoshrink options, you might create unnecessary overhead. Ensure that the thresholds that trigger the grow and shrink operations won't cause frequent up and down size changes. For example, you may run a transaction that causes the transaction log to grow by 100 MB by the time it commits. Some time after that the autoshrink starts and shrinks the transaction log by 100 MB. Then you run the same transaction, and it causes the transaction log to grow by 100 MB again. In that example, you're creating unnecessary overhead and potentially creating fragmentation of the log file, either of which can negatively affect performance.
 
-It's recommended to configure these two settings carefully. The particular configuration really depends on your environment. In general, it's recommended to increase database size by a fixed amount in order to reduce disk fragmentation. See, for example, the following figure, where the database is configured to grow by 1024 MB each time autogrow is required.
+It's recommended to configure these two settings carefully. The particular configuration really depends on your environment. In general, it's recommended to increase database size by a fixed amount in order to reduce disk fragmentation. See, for example, the following figure, where the database is configured to grow by 1,024 MB each time autogrow is required.
 
 ### Cluster failover policy
 
@@ -518,7 +511,7 @@ In virtual environments, for performance reasons, it's recommended that you stor
 ### Always On and recovery model
 
 Although not strictly an optimization, an important consideration regarding Always On Availability Group is the fact that, by design, this feature requires the databases to be set in the “Full” recovery model. Meaning, the transaction logs are never discarded until either a full backup is done or only the transaction log.
-For this reason, a backup strategy isn't an optional but a required part of the AlwaysOn design for Operations Manager databases. Otherwise, with time, disks containing transaction logs will fill up.
+For this reason, a backup strategy isn't an optional but a required part of the AlwaysOn design for Operations Manager databases. Otherwise, with time, disks containing transaction logs fill up.
 
 A backup strategy must take into account the details of your environment. A typical backup schedule is given in the following table.
 

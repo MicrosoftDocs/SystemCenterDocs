@@ -72,9 +72,9 @@ Following are the prerequisites required on desired monitoring endpoints that ar
 Test-NetConnection -ComputerName <LB DNS> -Port 5723
 ```
 
-3. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
-4. Ensure to enable TLS 1.2 or higher: [How to implement Transport Layer Security 1.2](plan-security-tls12-config.md)
-5. Ensure to configure SystemDefaultTlsVersions and SchUseStrongCrypto for .NET as outlined here (or in the TLS 1.2 article): [Transport Layer Security (TLS) best practices with .NET Framework](/dotnet/framework/network-programming/tls)
+1. Ensure to install [.NET Framework 4.7.2](https://support.microsoft.com/topic/microsoft-net-framework-4-7-2-offline-installer-for-windows-05a72734-2127-a15d-50cf-daf56d5faec2) or higher on desired monitoring endpoints.
+1. Ensure to enable TLS 1.2 or higher: [How to implement Transport Layer Security 1.2](plan-security-tls12-config.md)
+1. Ensure to configure SystemDefaultTlsVersions and SchUseStrongCrypto for .NET as outlined here (or in the TLS 1.2 article): [Transport Layer Security (TLS) best practices with .NET Framework](/dotnet/framework/network-programming/tls)
 
 To Troubleshooting connectivity problems, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance](/system-center/scom/troubleshoot-scom-managed-instance?view=sc-om-2022#scenario-agent-connectivity-failing&preserve-view=true).
 
@@ -149,7 +149,7 @@ To install SCOM Managed Instance gateway, follow these steps:
 2. On the **Overview** page, under **Manage**, select **SCOM managed instances**.
 3. On the **SCOM managed instances** page, select the desired SCOM managed instance.
 4. On the desired SCOM managed instance **Overview** page, under **Manage**, select **Managed Gateway**.
- 
+
    :::image type="content" source="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/managed-gateway-inline.png" alt-text="Screenshot that shows managed gateway." lightbox="media/monitor-on-premises-arc-enabled-vm-with-scom-managed-instance/managed-gateway-expanded.png":::
 
 5. On the **Managed Gateways** page, select **New Managed Gateway**.
