@@ -1,5 +1,5 @@
 ---
-title: How to Upgrade a single-server Management Group
+title: Upgrade a single-server Management Group
 description: This article describes how to upgrade a single-server management group to the newest release of Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 ---
 
-# How to upgrade a single-server management group
+# Upgrade a single-server management group
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -21,8 +21,6 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 ::: moniker-end
 
 When you upgrade a single-server management group, all the features that are installed on the server are upgraded. Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
-
-## Upgrade a single-server management group
 
 Follow these steps to upgrade a single-server management group:
 
@@ -61,11 +59,11 @@ Follow these steps to upgrade a single-server management group:
 
 Follow these steps to upgrade a single-server management group from the command prompt:
 
-1.  Sign in to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1. Sign in to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  Open an elevated command prompt by using the **Run as Administrator** option.
+2. Open an elevated command prompt by using the **Run as Administrator** option.
 
-3.  Change the path to where the Operations Manager Setup.exe file is located.
+3. Change the path to where the Operations Manager Setup.exe file is located.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated. For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
@@ -73,7 +71,7 @@ Follow these steps to upgrade a single-server management group from the command 
     > [!IMPORTANT]
     > The following commands assume that you specified the Local System for the Data Access service `(/UseLocalSystemDASAccount)`. To specify a domain\user name for these accounts, you must provide the following parameters instead:`/DASAccountUser: <domain\username> /DASAccountPassword: <password>`
 
-4.  Run the following command.
+4. Run the following command.
 
     ```
     setup.exe /silent /install

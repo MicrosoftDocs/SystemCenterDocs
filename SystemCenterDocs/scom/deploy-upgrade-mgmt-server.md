@@ -1,6 +1,6 @@
 ---
 ms.assetid: aabf9661-6b4c-4495-845d-7d30de3cff93
-title: How to Upgrade a Management Server - Upgrading a Distributed Management Group
+title: Upgrade a Management Server - Upgrading a Distributed Management Group
 description: This article describes how to upgrade a management server in a distributed deployment of Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade a management server - upgrading a distributed management group
+# Upgrade a management server - upgrading a distributed management group
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -38,25 +38,25 @@ When you upgrade a distributed management group, you start by upgrading each of 
 
 Follow these steps to upgrade a management server:
 
-1.  Sign in to the Operations Manager management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1. Sign in to the Operations Manager management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  From the Operations Manager media, run **Setup.exe**, and then select **Install**. The **Getting Started** page displays information about which features will be upgraded.
+2. From the Operations Manager media, run **Setup.exe**, and then select **Install**. The **Getting Started** page displays information about which features will be upgraded.
 
-3.  On the **Getting Started** page, select **Next** to proceed with the upgrade.
+3. On the **Getting Started** page, select **Next** to proceed with the upgrade.
 
-4.  On the **Getting Started, Please read the license terms** page, read the Microsoft Software License Terms, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.
+4. On the **Getting Started, Please read the license terms** page, read the Microsoft Software License Terms, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.
 
-5.  On the **Getting Started, Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
+5. On the **Getting Started, Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
     > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807, 2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807, 2019, 2022 and 2025), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
     >
 
-6.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.
+6. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.
 
-7.  If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites, Proceed with Setup** page appears. Select **Next**.
+7. If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites, Proceed with Setup** page appears. Select **Next**.
 
-8.  On the **Configuration, Configure Operations Manager accounts** page, enter the domain account credentials for the System Center Configuration and Data Access Service account, and select **Next**
+8. On the **Configuration, Configure Operations Manager accounts** page, enter the domain account credentials for the System Center Configuration and Data Access Service account, and select **Next**
 
 9. Review the **Configuration, Ready To Upgrade** page, and select **Upgrade**. The upgrade proceeds and displays the upgrade progress.
 
@@ -69,11 +69,11 @@ Follow these steps to upgrade a management server:
 
 Follow these steps to upgrade a management server from the command prompt:
 
-1.  Sign in to the management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1. Sign in to the management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  Open a command prompt window by using the **Run as Administrator** option.
+2. Open a command prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command:
+3. Change the path to where the Operations Manager setup.exe file is located, and run the following command:
 
     ```
     setup.exe /silent /upgrade
@@ -85,7 +85,6 @@ Follow these steps to upgrade a management server from the command prompt:
     ```
 
 After you've upgraded all of the management servers in your management group, you should upgrade gateway servers, and then upgrade any standalone Operations consoles.
-
 
 ## Next steps
 

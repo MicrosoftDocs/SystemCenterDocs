@@ -14,9 +14,7 @@ ms.topic: article
 
 # Install agent and certificate on Linux computers using the command line
 
-
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
 
 This article provides details of the latest version of the Linux agent for System Center Operations Manager 1801 and the process for installing it.
 
@@ -29,6 +27,7 @@ This version of the Linux agent supports [Fluentd](https://www.fluentd.org/), an
 3. Added support to additional Linux distros.
 
 ## Supported platforms
+
 The Linux distributions in the following table are supported in this release.
 
 | Linux Operating System | Version Supported |
@@ -42,7 +41,8 @@ The Linux distributions in the following table are supported in this release.
 
 **Upgrade from the existing Operations Manager/OMS agents isn't currently supported.**
 
-##	Supported deployment configurations
+## Supported deployment configurations
+
 Operations Manager supports the following agent reporting configurations in the management group.  
 
 1. Linux servers reporting directly to a management server
@@ -56,6 +56,7 @@ You can choose to install the latest version of the Linux agent for Operations M
 Use the following procedures to manually install agents to UNIX and Linux computers. The agent packages can be found in the following folder on a management server - %ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits after you import the required management packs for the specific version of UNIX/Linux you need to monitor. The management packs are available in the Operations Manager installation media in the \ManagementPacks directory.
 
 ## Manual installation
+
 The agent is provided as a self-extracting, installable shell script bundle. This bundle contains both Debian and RPM packages for each of the agent components and can be installed directly or extracted to retrieve the individual packages. Separate bundles are available for x64 and x86 architectures.
 
 This will require the following steps:
@@ -68,6 +69,7 @@ This will require the following steps:
 The following sections describe the steps required to manually install the Linux agent.
 
 ### Install agent
+
 1. The agent install bundles will be located in **%Program Files%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits**.  Transfer the appropriate bundle (x86 or x64) to the Linux computer, using scp/sftp.
 2. Install the bundle with the following command. The **enable-opsmgr** parameter ensures that port 1270 is open for the management server to communicate with the agent.
 
@@ -83,9 +85,11 @@ The following sections describe the steps required to manually install the Linux
     SCOM_ENDPOINT=https://<FQDN_OF_OM_MACHINE>:<PORT_OF_OMED_SERVICE>
 
 ### Configure TCP port for OMED service
+
 Operations Manager requires that TCP port 8886 be used to establish inbound communication between the Linux agent and the management server or gateway server to enable data collection.  
 
 ### Configure certificates
+
 In the previous version of the Linux agent, the management server accessed each Linux computer with a server authentication certificate. With the new agent, Fluentd acts as the client accessing the management server, so the certificate requires client authentication. You need to obtain a new certificate to work with the new agent. Operations Manager will use the new certificate for Fluentd communications and the old certificate for other communications.
 
 1. Locate<strong>/etc/opt/omi/ssl/omi-host-\<hostname\>.pem</strong> and **/etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem** on the Linux computer and copy them to any location on the management server.  
@@ -102,6 +106,7 @@ In the previous version of the Linux agent, the management server accessed each 
     scxadmin –restart
 
 ### Discovery
+
 After you've manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager using the Discovery Wizard. For the Discovery type, select **Discover only computers with the UNIX/Linux agent installed**. For more information, see [Install Agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).
 
 ## Next steps

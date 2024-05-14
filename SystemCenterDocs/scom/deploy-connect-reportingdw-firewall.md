@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Connecting to the Reporting Data Warehouse Across a Firewall
+# Connect to the Reporting Data Warehouse Across a Firewall
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 

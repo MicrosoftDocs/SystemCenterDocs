@@ -26,7 +26,7 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 2. Clean up the Database (ETL Table)
 
-3. Configure agents to fail over between multiple gateway servers so all agents reporting to a gateway have a failover gateway assigned.   
+3. Configure agents to fail over between multiple gateway servers so all agents reporting to a gateway have a failover gateway assigned.
 
 4. Remove Agents from Pending Management
 
@@ -56,7 +56,6 @@ As part of upgrade to System Center Operations Manager installation (setup) incl
 
 To clean up the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
-    
 ```sql
 -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
 -- Proprietary and confidential to Microsoft Corporation                      --       
@@ -176,4 +175,3 @@ The default value of queue size is 100 MB. It can be increased up to 1500 MB by 
 ## Next steps
 
 To continue with the upgrade, review [Upgrade overview](deploy-upgrade-overview.md).
-
