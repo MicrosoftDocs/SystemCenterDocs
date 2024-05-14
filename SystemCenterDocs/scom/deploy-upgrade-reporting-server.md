@@ -41,7 +41,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 ::: moniker-end
 
-## To upgrade the Reporting server
+## Upgrade the Reporting server
 
 1. Sign in to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group and the SQL Server sysadmin fixed server role.
 
@@ -65,7 +65,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 8. When upgrade is finished, the **Upgrade complete** page appears. Select **Close**.
 
-## To upgrade the Reporting server from the Command Prompt
+## Upgrade the Reporting server from the Command Prompt
 
 1. Sign in to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
