@@ -1,6 +1,6 @@
 ---
 ms.assetid: 71cf60f4-e6fb-4250-a9d3-64eff209e0cc
-title: How to Upgrade Agents in a Parallel Deployment
+title: Upgrade Agents in a Parallel Deployment
 description: This article provides guidance with upgrading agents when planning a side-by-side migration to Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade agents in a parallel deployment
+# Upgrade agents in a parallel deployment
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 

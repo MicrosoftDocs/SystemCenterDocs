@@ -48,7 +48,6 @@ Because *momActGMSA* is an example, use the name of the gMSA that you intend to 
 
    ![Screenshot of server management select user.](media/gmsa/server-management-select-users.png)
 
-
 1. Assign the following roles for the Action account:
 
    - SQLAgentOperatorRole
@@ -56,7 +55,6 @@ Because *momActGMSA* is an example, use the name of the gMSA that you intend to 
    - SQLAgentUserRole
 
    ![Screenshot of Database user membership.](media/gmsa/database-user-membership.png)
-
 
 Follow steps 1 to 5 from the previous procedure. Assign the roles by using the information in this table.
 

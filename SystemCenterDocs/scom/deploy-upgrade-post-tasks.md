@@ -46,7 +46,6 @@ After the upgrade has finished, use the following procedure to re-enable subscri
     > [!NOTE]
     > When you run the Operations console on a computer that isn't a management server, the **Connect To Server** dialog appears. In the **Server name** text box, enter the name of the Operations Manager management server to which you want to connect.
 
-
 3. In the **Administration** pane, under **Notifications**, select **Subscriptions**.
 4. In the **Actions** pane, select **Enable** for each subscription listed that was enabled prior to performing the upgrade.
 
@@ -64,6 +63,7 @@ Follow these steps to restart a connector service:
 If you had Audit Collection Services (ACS) enabled for an agent prior to upgrade, it was disabled as part of the agent upgrade process. Re-enable ACS as appropriate.
 
 ### Reset agent HealthService cache size
+
 Restore the default setting for the agent HealthService cache size by updating the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName\>\maximumQueueSizeKb
 
@@ -84,9 +84,9 @@ Previous AD rules don't work after upgrading to Operations Manager 2019. After y
 
 Use the following steps to fix this issue:
 
-1.	After you upgrade to 2022, export the default management pack to a folder.
-2.	Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
-3.	Rename all the AD rules to use \<NetBIOS Domain Name of Management Server\> instead of \<FQDN of Management Server\>, example below.
+1. After you upgrade to 2022, export the default management pack to a folder.
+2. Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
+3. Rename all the AD rules to use \<NetBIOS Domain Name of Management Server\> instead of \<FQDN of Management Server\>, example below.
 
     >[!NOTE]
     > Domain name is case-sensitive.
@@ -97,12 +97,11 @@ Use the following steps to fix this issue:
 
     After: Rule ID="_SMX_MS1_contoso.com" Enabled="true"
 
-4.	Import the updated management pack.
+4. Import the updated management pack.
 
     The rules are now visible on the console.
 
     For detailed information about this issue, see [update an active directory integration with Operations Manager](https://techcommunity.microsoft.com/t5/system-center-blog/update-on-active-directory-integration-with-scom/ba-p/1226768).
-
 
 ## Next steps
 

@@ -1,7 +1,7 @@
 ---
 ms.assetid: ddb56d8e-703c-4145-b301-99ab3e8f8fbd
-title: Application monitoring using the default settings in Operations Manager management pack
-description: This article provides an overview about application monitoring using the default settings
+title: Application monitoring using the default settings
+description: This article provides an overview about application monitoring using the default settings.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -22,11 +22,11 @@ ms.topic: article
 
 Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports.
 
-## Using default settings for server-side monitoring
+## Use default settings for server-side monitoring
 
 You still need to select the application you want to monitor and the target management pack, but then you can start monitoring with "all defaults". With all default settings Application Performance Monitoring will monitor only server-side, and all thresholds for all pages will be the same. To see the default values, you can go through the wizard without changing anything.
 
-## Using default settings for client-side monitoring
+## Use default settings for client-side monitoring
 
 The defaults are enough to get this started and to allow you to test it out from localhost connections. It's scoped to monitor localhost by default.
 

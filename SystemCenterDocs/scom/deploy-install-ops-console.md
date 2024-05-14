@@ -1,6 +1,6 @@
 ---
 ms.assetid: 7f64b190-0af1-431d-85ca-6b6ac9f0ce0e
-title: How to Install the Operations Console
+title: Install the Operations Console
 description: This article describes how to install the Operations Manager Operations console on other servers and computers.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to Install the Operations console
+# Install the Operations console
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -28,21 +28,21 @@ You must ensure that the computer that will host the Operations console meets th
 
 Follow these steps to install the Operations console:
 
-1.  Sign in to the computer that will host the Operations console with an account that has local administrative credentials.
+1. Sign in to the computer that will host the Operations console with an account that has local administrative credentials.
 
-2.  On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
+2. On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
 
-3.  On the **Getting Started**, **Select features to install** page, select **Operations console**. To read more about what each feature provides and its requirements, select **Expand all**, or expand the buttons next to each feature, and select **Next**.
+3. On the **Getting Started**, **Select features to install** page, select **Operations console**. To read more about what each feature provides and its requirements, select **Expand all**, or expand the buttons next to each feature, and select **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default location or enter a new location or browse to one, and select **Next**.
+4. On the **Getting Started**, **Select installation location** page, accept the default location or enter a new location or browse to one, and select **Next**.
 
-5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify Prerequisites Again**.
+5. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify Prerequisites Again**.
 
-6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
+6. If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
-7.  On the **Configuration**, **Help improve System Center - Operations Manager** page, select your options, and select **Next**.
+7. On the **Configuration**, **Help improve System Center - Operations Manager** page, select your options, and select **Next**.
 
-8.  If Windows Update isn't enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and select **Next**.
+8. If Windows Update isn't enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and select **Next**.
 
 9. Review the options on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
 
@@ -60,11 +60,11 @@ Follow these steps to install the Operations console:
 
 Follow these steps to install the Operations console from the command prompt:
 
-1.  Sign in to the server by using an account that has local administrative credentials.
+1. Sign in to the server by using an account that has local administrative credentials.
 
-2.  Open the command prompt window by using the **Run as Administrator** option.
+2. Open the command prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command:
+3. Change the path to where the Operations Manager setup.exe file is located, and run the following command:
 
     ```
     setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always] /SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1] /AcceptEndUserLicenseAgreement:[0|1]

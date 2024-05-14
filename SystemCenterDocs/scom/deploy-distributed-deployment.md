@@ -26,57 +26,56 @@ The distributed management group installation will form the foundation of 99 per
 
 This configuration supports all System Center - Operations Manager features:
 
--   Monitoring and alerting, targeted for up to 15,000 agents
+- Monitoring and alerting, targeted for up to 15,000 agents
 
--   Monitoring across trust boundaries
+- Monitoring across trust boundaries
 
--   Reporting
+- Reporting
 
--   Audit collection
+- Audit collection
 
--   Agentless exception management
+- Agentless exception management
 
--   Agent failover between management servers
+- Agent failover between management servers
 
--   Gateway failover between management servers
+- Gateway failover between management servers
 
--   Clustering high availability for database roles
+- Clustering high availability for database roles
 
 ## Operations Manager server roles
 
 This configuration supports all Operations Manager server roles:
 
--   Audit Collection Services (ACS) collector
+- Audit Collection Services (ACS) collector
 
--   ACS database
+- ACS database
 
--   ACS forwarder (on agent-managed devices)
+- ACS forwarder (on agent-managed devices)
 
--   Gateway server
+- Gateway server
 
--   Management server
+- Management server
 
--   Operational database
+- Operational database
 
--   Operations console
+- Operations console
 
--   Operations Manager Reporting server
+- Operations Manager Reporting server
 
--   Reporting data warehouse database
+- Reporting data warehouse database
 
--   Web console server
-
+- Web console server
 
 This section of the Deployment Guide contains the following topics:
 
--   [How to install an Operations Manager management server](deploy-install-mgmt-server.md)
+- [How to install an Operations Manager management server](deploy-install-mgmt-server.md)
 
--   [How to install the Operations console](deploy-install-ops-console.md)
+- [How to install the Operations console](deploy-install-ops-console.md)
 
--   [How to install the Operations Manager Web console](deploy-install-web-console.md)
+- [How to install the Operations Manager Web console](deploy-install-web-console.md)
 
--   [How to install an Audit Collection Services (ACS) collector and database](deploy-install-acs.md)
+- [How to install an Audit Collection Services (ACS) collector and database](deploy-install-acs.md)
 
--   [How to install the Operations Manager Reporting server](deploy-install-reporting-server.md)
+- [How to install the Operations Manager Reporting server](deploy-install-reporting-server.md)
 
--   [How to deploy a gateway server](deploy-install-gateway-server.md)
+- [How to deploy a gateway server](deploy-install-gateway-server.md)

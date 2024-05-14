@@ -1,6 +1,6 @@
 ---
 ms.assetid: 9d47d9ef-9a95-4b05-817f-75b3039f6e2c
-title: Upgrading System Center Operations Manager
+title: Upgrade System Center Operations Manager
 description: This guide provides information on how to upgrade to Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019 || sc-om-2022 || sc-om-2025'
 ---
 
-# Upgrading System Center Operations Manager
+# Upgrade System Center Operations Manager
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
