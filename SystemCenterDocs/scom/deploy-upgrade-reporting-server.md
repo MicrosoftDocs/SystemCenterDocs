@@ -41,7 +41,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 ::: moniker-end
 
-## Upgrade the Reporting server
+## To upgrade the Reporting server
 
 1. Sign in to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group and the SQL Server sysadmin fixed server role.
 
@@ -65,7 +65,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 8. When upgrade is finished, the **Upgrade complete** page appears. Select **Close**.
 
-## Upgrade the Reporting server from the Command Prompt
+## To upgrade the Reporting server from the Command Prompt
 
 1. Sign in to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
@@ -99,7 +99,7 @@ The prerequisites checker will report the following error:  **Management Server 
 
 To work around this issue, install the System Center 2016 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 1801. Once the upgrade is successfully completed, you can rerun setup and uninstall the upgraded Operations console from the Reporting server.  
 
-## Upgrade the Reporting server
+## To upgrade the Reporting server
 
 1. Sign in to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group and the SQL Server sysadmin fixed server role.
 
@@ -124,7 +124,7 @@ To work around this issue, install the System Center 2016 - Operations Manager O
 
 8. When upgrade is finished, the **Upgrade complete** page appears. Select **Close**.
 
-## Upgrade the Reporting server from the Command Prompt
+## To upgrade the Reporting server from the Command Prompt
 
 1. Sign in to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
