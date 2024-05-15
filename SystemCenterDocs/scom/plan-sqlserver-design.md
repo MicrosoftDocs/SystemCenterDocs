@@ -219,13 +219,13 @@ System Center Operations Manager depends on SQL Server Service Broker to impleme
 
 To enable SQL Server Service Broker, follow these steps:
 
-1. Run the following SQL query:
+1. Run the following SQL query to check if the broker is already enabled, indicated by a result of **1** (one) in the `is_broker_enabled` field:
 
    ```SQL
    SELECT is_broker_enabled FROM sys.databases WHERE name='OperationsManager'
    ```
 
-2. Skip this step if the value that is displayed in the `is_broker_enabled` field is **1** (one). Otherwise, run the following SQL queries:
+2. If the value that is displayed in the `is_broker_enabled` field is **0** (zero), run the following SQL statement to enable the broker:
 
    ```SQL
    ALTER DATABASE OperationsManager SET SINGLE_USER WITH ROLLBACK IMMEDIATE
@@ -236,7 +236,7 @@ To enable SQL Server Service Broker, follow these steps:
 ### Operations Manager Data Warehouse database
 
 > [!NOTE]
-> The Operations Manager Data Warehouse is also referred to as the "Reporting Data Warehouse" database in some documentation.
+> The Operations Manager Data Warehouse is also referred to as the "Reporting Data Warehouse" database, or just "Data Warehouse" in some documentation.
 
 System Center - Operations Manager inserts data into the data warehouse in near-real time, it's important to have sufficient capacity on this server that supports writing all of the data that is being collected to the data warehouse. As with the Operations Manager database, the most critical resource on the data warehouse is the storage I/O subsystem. On most systems, loads on the data warehouse are similar to the Operations Manager database, but they can vary. In addition, the workload put on the data warehouse by reporting is different than the load put on the Operations Manager database by Operations console usage.
 
