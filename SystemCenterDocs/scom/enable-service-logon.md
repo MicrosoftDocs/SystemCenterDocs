@@ -21,18 +21,19 @@ System Center Operations Manager supports hardening of service accounts and does
 
 Earlier version of Operations Managers has *Allow log on locally* as the default log on type. Operations Manager uses *Service Log on* by default. This leads to the following changes:
 
--	Health service uses log on type **Service** by default. For Operations Manager 1807 and earlier versions, it was **Interactive**.
--	Operations Manager action accounts and service accounts now have **Log on as a Service** permission.
--	Action accounts and Run As accounts must have **Log on as a Service** permission to execute MonitoringHost.exe. [Learn more](plan-security-accounts.md).
+- Health service uses log on type **Service** by default. For Operations Manager 1807 and earlier versions, it was **Interactive**.
+- Operations Manager action accounts and service accounts now have **Log on as a Service** permission.
+- Action accounts and Run As accounts must have **Log on as a Service** permission to execute MonitoringHost.exe. [Learn more](plan-security-accounts.md).
 
 ## Changes to Operations Manager action accounts
+
  The following accounts are granted **Log on as a Service** permission during the Operations Manager installation and during upgrade from the previous versions:
 
- -	Management Server Action account
- -	System Center configuration service and System Center data access service accounts  
- -	Agent action account
- -	Data Warehouse Write account
- -	Data Reader account
+- Management Server Action account
+- System Center configuration service and System Center data access service accounts  
+- Agent action account
+- Data Warehouse Write account
+- Data Reader account
 
     ![Screenshot of the local security setting.](./media/enable-service-logon/om2019-local-security-setting.png)
 
@@ -69,7 +70,7 @@ Follow these steps:
 
     ![Screenshot of Select users.](./media/enable-service-logon/om2019-select-users.png)
 
-::: moniker range="sc-om-2019"    
+::: moniker range="sc-om-2019"
 
 > [!NOTE]
 > If you're upgrading to Operations Manager 2019 from a previous version or installing a new Operations Manager 2019 environment, follow the steps above to provide **Log on as a service** permission to Run As accounts.
@@ -80,6 +81,13 @@ Follow these steps:
 
 > [!NOTE]
 > If you're upgrading to Operations Manager 2022 from a previous version or installing a new Operations Manager 2022 environment, follow the steps above to provide **Log on as a service** permission to Run As accounts.
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+> [!NOTE]
+> If you're upgrading to Operations Manager 2025 from a previous version or installing a new Operations Manager 2025 environment, follow the steps above to provide **Log on as a service** permission to Run As accounts.
 
 ::: moniker-end
 
@@ -94,6 +102,7 @@ Here's an example:
 ::: moniker range="sc-om-2019"
 
 ## Coexistence with Operations Manager 2016 agent
+
 With the log on type change that is introduced in Operations Manager 2019, the Operations Manager 2016 agent can coexist and interoperate without any issues. However, there are a couple of scenarios that are affected by this change:  
 
 - Push install of agent from the Operations Manager console requires an account that has administrative privileges and the *Log on as a service* right on the destination computer.

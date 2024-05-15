@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create an attribute
+# Create an attribute
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 

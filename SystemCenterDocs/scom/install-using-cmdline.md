@@ -1,6 +1,6 @@
 ---
 ms.assetid: e305673d-88ab-4aa1-9287-31b617a9f1fc
-title: Installing Operations Manager From the Command Prompt
+title: Install Operations Manager from the Command Prompt
 description: This article describes the different command-line arguments you would use when installing an Operations Manager component from the Command Prompt.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Installing Operations Manager from the Command Prompt
+# Install Operations Manager from the Command Prompt
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -65,7 +65,6 @@ The following table lists the command-line parameters for installing features of
 |/WebSiteName:|The name of the website. For default web installation, specify "**Default Web Site**".<br><br>Used for web console installations.|
 |/WebConsoleUseSSL|Specify only if your website has Secure Sockets Layer (SSL) activated.<br><br>Used for web console installations.|
 |/WebConsoleAuthorizationMode:|Mixed: Used for intranet scenarios.<br><br>Network: Used for extranet scenarios.<br><br>Used for web console installations.|
-
 
 ## Next steps
 
