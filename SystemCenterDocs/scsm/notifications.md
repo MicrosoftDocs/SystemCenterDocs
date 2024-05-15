@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 06/08/2023
+ms.date: 05/15/2024
 ms.subservice: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3,  engagement-fy24
 ---
 
 # Configure notifications in Service Manager
