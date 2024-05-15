@@ -28,7 +28,7 @@ Agentless-managed computers are managed as if there's an agent installed on them
 > [!IMPORTANT]  
 > Agentless management of a computer won't work if the agentless-managed computer and its proxy communicate through a firewall. A management server won't collect descriptions for events or publishers that are present on an agentless managed computer but aren't present on the proxy agent.  
 
-For information about configuring an agent-managed computer as a proxy for agentless-managed computers, see [How to configure a proxy for agentless monitoring](#how-to-configure-a-proxy-for-agentless-monitoring).  
+For information about configuring an agent-managed computer as a proxy for agentless-managed computers, see [How to configure a proxy for agentless monitoring](#configure-a-proxy-for-agentless-monitoring).  
 
 > [!IMPORTANT]  
 > An agentless-managed computer places additional resource utilization on a management server than an agent-managed computer.  
