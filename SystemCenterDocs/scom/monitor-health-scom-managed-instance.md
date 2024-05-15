@@ -5,8 +5,8 @@ description: With Azure Monitor SCOM Managed Instance Service Health Dashboard, 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/07/2024
-ms.custom: UpdateFrequency.5
+ms.date: 05/15/2024
+ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
 ms.topic: concept-article

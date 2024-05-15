@@ -5,8 +5,8 @@ description: This article describes how to upgrade a management server in a dist
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.date: 05/15/2024
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
