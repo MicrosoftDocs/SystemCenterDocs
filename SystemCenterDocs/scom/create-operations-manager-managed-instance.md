@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM Managed Instance to mon
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/19/2024
+ms.date: 05/08/2024
 ms.custom: UpdateFrequency.5, references_regions
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -62,7 +62,7 @@ To create a SCOM Managed Instance, follow these steps:
     - **Instance details**:
         - **SCOM managed instance name**: Enter a name for your SCOM Managed Instance.
             >[!NOTE]
-            >- The name of a SCOM Managed Instance can have only alphanumeric characters and be up to 10 characters.
+            >- The name of a SCOM Managed Instance can have only alphanumeric characters and be up to 9 characters.
             >- A SCOM Managed Instance is equivalent to a System Center Operations Manager management group, so choose a name accordingly.
         - **Region**: Select a region near to you geographically so that latency between your agents and the SCOM Managed Instance is as low as possible. This region must also contain the virtual network.
 

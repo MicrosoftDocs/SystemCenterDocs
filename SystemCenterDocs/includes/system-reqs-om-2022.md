@@ -192,7 +192,7 @@ The following table lists the scenarios in which coexistence between Operations 
 
 System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
 
-System Center 2019
+- System Center 2019
 
 ## Active Directory and DNS
 

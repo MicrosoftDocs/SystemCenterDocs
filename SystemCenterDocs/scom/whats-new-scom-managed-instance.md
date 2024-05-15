@@ -17,6 +17,10 @@ monikerRange: '>=sc-om-2019'
 
 This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
 
+## Version 1.0.100
+
+- Bug fix in pre-patch/pre-scale validations.
+
 ## Version 1.0.99
 
 - Enhanced checks for domain connectivity to handle multiple domain controllers during onboarding, pre-patching, and pre-scaling validations.
@@ -43,7 +47,7 @@ This article provides details of what's new in each version of Azure Monitor SCO
 
 - Enhance onboarding/pre-patching/pre-scaling validations to check the connectivity to required endpoints as described in [firewall requirements](configure-network-firewall.md#firewall-requirements).
 
-## Version 1.0.94 
+## Version 1.0.94
 
 - Installation bug fix for domain joined machines.
 
