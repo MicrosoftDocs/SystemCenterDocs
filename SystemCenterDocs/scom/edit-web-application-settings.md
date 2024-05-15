@@ -14,7 +14,7 @@ monikerRange: '>=sc-om-2019'
 ---
 
 
-# How to edit settings or requests in a Web application
+# Edit settings or requests in a Web application
 
 You can use the Web Application Editor to manually create or edit a request in a Web Application Transaction Monitoring template. For editing a particular request, there's no difference whether the request was created manually or by capturing a browser session. For detailed information about the properties that you can set for the request, see Web Application Request Properties.
 

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 79cdd322-909b-4159-a189-d9e3a68ad681
-title: How to replace parameters in a URL request in Operations Manager management pack
+title: Replace parameters in a URL request in Operations Manager management pack
 description: This article provides an overview about how to replace parameters in a URL request
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to replace parameters in a URL request
+# Replace parameters in a URL request
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -45,6 +45,7 @@ http://www.myapp.com/results.aspx?sessionid=32793279321721
 http://www.myapp.com/submit.aspx?sessionid=32793279321721
 
 ```
+
 In this request sequence, the session ID is created by the first request and used in the second, third, and fourth requests. When you run this monitor, it fails because the first request generates a new session ID that couldn't match the session ID that was used when the session was captured.
 
 To configure this request sequence with parameter replacement, you've to create an extraction rule on the first request to create a context parameter for the session ID. The extraction rule inspects the body of the request to locate the value for the sessionid variable. You would then modify the subsequent requests to use this parameter instead of the value for the session ID.
@@ -62,7 +63,8 @@ http://www.myapp.com/results.aspx?sessionid=$ParametersContext/sessionID$
 http://www.myapp.com/submit.aspx?sessionid=$ParametersContext/sessionID$
 
 ```
-## Creating an extraction rule
+
+## Create an extraction rule
 
 Context parameters are collected by an _extraction rule_, and each extraction rule collects a single context parameter. You create an extraction rule in the  **Properties**  dialog of the request that initially generates the required data. To identify the value to extract, you must view the body of the response returned from the particular request. You can either view the source of the page returned in the browser or use a tool that lets you inspect the details of the HTTP responses. You can't view the text by using the Web Application Editor.
 
@@ -77,7 +79,7 @@ When you've identified the request that contains the information you have to ext
 | Ignore case during search for matching text | Specifies whether to ignore the case of the characters being searched by the  **Starts with**  and  **Ends with**  boxes. |
 | Perform URI encoding of extracted strings | Specifies whether to encode the extracted string after it's collected. |
 
-## Inserting a parameter into a request
+## Insert a parameter into a request
 
 You use a parameter in a request by replacing the explicit value with a variable representing the parameter. The format of the variable is $ParametersContext/\<ContextParameterName>$. When the request is run, the variable is replaced with the data extracted by the parameter.
 
@@ -100,7 +102,7 @@ To determine where in the response body the search term appears, you can view th
 
 You could just pull out the term itself, but it's more straightforward to include the entire string in the parameter. This string is preceded by the characters  **\<h3>Popular now\</h3>\<ul>\<li>\<a href=>**  and ends with the next occurrence of  **"**. Those are the values that you'll use when you define the parameter extraction.
 
-### To record a sample web application
+### Record a sample web application
 
 1. Use the procedure in [How to Capture Web Application Recording](/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to record a web application.
 2. While recording, connect to [**https://www.bing.com**](https://www.bing.com/).

@@ -26,7 +26,7 @@ In Operations Manager 2019 UR2 and later, you can run and view favorite reports 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 This article provides information about how to create and view favorite reports in Operations Manager.
 
@@ -55,7 +55,6 @@ You can create a report in operations console and view them as *Favorite reports
 - If Operations Manager Report Server and Management Server are installed on different computers, ensure to set up Windows Authentication (Kerberos) to connect to SQL Reporting Services Web Service, [as detailed in the following section](#configure-windows-authentication).  
 
     For more information on windows authentication, see [this article](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
-
 
 ## Save a report as favorite from Operations console
 
@@ -90,7 +89,7 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
     - To check if the SPN is created, run the following command in Command prompt or PowerShell:
 
-        ```
+        ```powershell
         setspn -L <domain-user-account-under-which-ssrs-is-running>
 
         ```
@@ -110,17 +109,17 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
         - **Domain name**:smx.net
         - **Domain user account under which SSRS is running**:smx\momReporting
 
-4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) isn't installed on a Management Server, the (computer or domain) account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it's installed.
+4. Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) isn't installed on a Management Server, the (computer or domain) account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it's installed.
 
     >[!NOTE]
     >The domain administrator can select *Trust this computer for delegation to any service(kerberos only)*, or constraint delegation with protocol transition.
 
-5.	Run *klist* purge command on both the report server and the management server or reboot the servers.
+5. Run *klist* purge command on both the report server and the management server or reboot the servers.
 
 ### Important notes
 
--	If Operations Management web console is installed on a Standalone server (not an Operations Manager Management  Server), then add the SDK Account SPN (account under which System Center Data Access Service is running) to the *Constraint Delegation* allowed list for the Operations Manager Web Console server as well.
--	If you don't want to see the sign in prompt for web console, add the web console URL to the intranet zone (**Internet Options** > **Security** > **Local Intranet**).
+- If Operations Management web console is installed on a Standalone server (not an Operations Manager Management  Server), then add the SDK Account SPN (account under which System Center Data Access Service is running) to the *Constraint Delegation* allowed list for the Operations Manager Web Console server as well.
+- If you don't want to see the sign in prompt for web console, add the web console URL to the intranet zone (**Internet Options** > **Security** > **Local Intranet**).
 
 ## Next steps
 
