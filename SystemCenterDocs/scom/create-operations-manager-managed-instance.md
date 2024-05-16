@@ -5,8 +5,8 @@ description: This article describes how to create a SCOM Managed Instance to mon
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/08/2024
-ms.custom: UpdateFrequency.5, references_regions
+ms.date: 05/15/2024
+ms.custom: UpdateFrequency.5, references_regions, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
 ms.topic: how-to

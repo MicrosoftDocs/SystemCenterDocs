@@ -1,7 +1,7 @@
 ---
 title: Delete Annotation
 description: The Delete Annotation activity is used in a runbook to delete an annotation from an existing message.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,7 +14,7 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 05/16/2024
 ---
 # Delete Annotation
 

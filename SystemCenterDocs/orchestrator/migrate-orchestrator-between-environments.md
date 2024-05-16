@@ -7,8 +7,8 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/23/2020
-ms.custom: intro-migration, UpdateFrequency3
+ms.date: 05/16/2024
+ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
 
 # Migrate Orchestrator between environments
