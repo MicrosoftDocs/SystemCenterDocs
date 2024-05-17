@@ -58,7 +58,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the template. This name is displayed in the Operations console. |
 | Description | Optional description of the service. |
-| Management Pack | Management pack to store the class and monitors that the template created. If you create any additional monitors or rules by using the service as a target class, you must store them in the same management pack.For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
+| Management Pack | Management pack to store the class and monitors that the template created. If you create any additional monitors or rules by using the service as a target class, you must store them in the same management pack. For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
 
 ## Target and Port
 
