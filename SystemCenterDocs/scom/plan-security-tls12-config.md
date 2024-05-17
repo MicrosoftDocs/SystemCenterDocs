@@ -205,7 +205,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 
    Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
-    * For ODBC 11.0, create the following ODBC 11.reg file:
+   * For ODBC 11.0, create the following ODBC 11.reg file:
 
       ```
       Windows Registry Editor Version 5.00
@@ -233,7 +233,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 
    Alternatively, you can run the following PowerShell commands to automate the change.
 
-    * For ODBC 11.0, run the following PowerShell commands:
+   * For ODBC 11.0, run the following PowerShell commands:
 
       ```powershell
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql11.dll" -PropertyType STRING -Force | Out-Null
@@ -270,7 +270,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 
    Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
-    * For ODBC 17, create the following ODBC 17.reg file:
+   * For ODBC 17, create the following ODBC 17.reg file:
 
       ```
       Windows Registry Editor Version 5.00
@@ -286,7 +286,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 
    Alternatively, you can run the following PowerShell commands to automate the change.
 
-    * For ODBC 17, run the following PowerShell commands:
+   * For ODBC 17, run the following PowerShell commands:
 
       ```powershell
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql7.dll" -PropertyType STRING -Force | Out-Null
