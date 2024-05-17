@@ -217,7 +217,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
       "Driver"="%WINDIR%\system32\msodbcsql11.dll"
       ```
 
-    * For ODBC 13.0, create the following ODBC 13.reg file:
+   * For ODBC 13.0, create the following ODBC 13.reg file:
 
       ```
       Windows Registry Editor Version 5.00
@@ -240,7 +240,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 11 for SQL Server" -PropertyType STRING -Force | Out-Null
       ```
       
-    * For ODBC 13.0, run the following PowerShell commands:
+   * For ODBC 13.0, run the following PowerShell commands:
 
       ```powershell
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql13.dll" -PropertyType STRING -Force | Out-Null
