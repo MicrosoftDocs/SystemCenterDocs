@@ -241,7 +241,7 @@ Follow these steps:
 
 ## Closure of orphan alerts
 
-In Operations Manager 2019 RTM, UR1 and UR2, active alerts aren't getting closed after non-Persistent health state in certain scenarios, as detailed below:
+In Operations Manager 2019 RTM, UR1 and UR2, active alerts aren't getting closed after non-persistent health state in certain scenarios, as detailed below:
 
 1. Failover:
    - The failover that might get triggered when the management server goes offline.
