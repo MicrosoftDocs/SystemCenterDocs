@@ -26,23 +26,22 @@ Use the following procedures to configure dashboards on a SharePoint page. This 
 
 > [!NOTE]
 > Silverlight-based dashboards made accessible from the SharePoint web part can only be viewed using the Internet Explorer.
->
 
 ## Configure the web part to connect to a Web console  
 
-1.  Open an Internet browser, and then navigate to the SharePoint server.  
+1. Open an Internet browser, and then navigate to the SharePoint server.  
 
-2.  In the **Site Actions** dropdown menu, select **New Page**.  
+2. In the **Site Actions** dropdown menu, select **New Page**.  
 
-3.  Enter a name for the page, and select **Create**.  
+3. Enter a name for the page, and select **Create**.  
 
-4.  The new page opens with editing tools available. Select **Insert**.  
+4. The new page opens with editing tools available. Select **Insert**.  
 
-5.  On the **Insert** toolbar, select **Web Part**.  
+5. On the **Insert** toolbar, select **Web Part**.  
 
-6.  In **Categories**, select **Media and Content** and then select **Page Viewer**. Select **Add** to the page.
+6. In **Categories**, select **Media and Content** and then select **Page Viewer**. Select **Add** to the page.
 
-7.  Select the arrow in the top right of the web part, and select **Edit web part**.  
+7. Select the arrow in the top right of the web part, and select **Edit web part**.  
 
 8. In the **To specify a link, type a URL or path** field, enter the URL of an Operations Manager Web console dashboard view.  
 

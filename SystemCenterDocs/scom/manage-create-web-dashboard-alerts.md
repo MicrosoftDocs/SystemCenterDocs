@@ -1,6 +1,6 @@
 ---
 ms.assetid:
-title: How to create a dashboard with the Alert widget in the Web console
+title: Create a dashboard with the Alert widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Alert widget.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create a dashboard with the Alert widget in the Web console
+# Create a dashboard with the Alert widget in the Web console
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -21,12 +21,11 @@ ms.topic: article
 
 ::: moniker-end
 
-
 In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
-Operations Manager 2022 supports **Alert source** in the **Add** widget.
+Operations Manager supports **Alert source** in the **Add** widget.
 
 ::: moniker-end
 
@@ -67,7 +66,7 @@ Operations Manager 2022 supports **Alert source** in the **Add** widget.
     * Priority
     * Resolution state
     * Alert age
-    * Alert source (applicable for Operations Manager 2022)
+    * Alert source (applicable for Operations Manager 2022 and later)
 
     Data matching the defined criteria will only be displayed in the widget.
 
@@ -87,6 +86,7 @@ You can modify the alert resolution state and drill down to the monitoring objec
 ![Screenshot showing Viewing alert details.](./media/create-web-dashboard-alerts/view-alert-details-01.png)
 
 ## Actions on Alert widget
+
 For one or more alerts selected in the widget, you can perform such actions as:
 
 - Change resolution state while viewing the details of a particular alert or for one or more alerts selected in the widget.
@@ -101,7 +101,7 @@ To perform these actions, hover your mouse over the widget, and click on the ell
 
 ## Additional view options in Alert widget
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Alert widget now supports *sort by* option.
 
@@ -128,7 +128,6 @@ To include this feature, while creating a new widget using the **Add widget** wi
 
 ![Screenshot showing Add widget.](./media/create-web-dashboard-alerts/add-widget.png)
 
-
 ### View columns using sort by feature
 
 The **Sort by** option is available under **Edit** > **Personalize**.
@@ -147,7 +146,6 @@ Here's a sample view:
 The following image shows sample results for Alert widget after grouping by **Name** and sorting by **Age**, in **descending** order.
 
 ![Screenshot showing Screenshot showing Alert widget.](./media/create-web-dashboard-alerts/alert-widget-name-age.png)
-
 
 ## Next steps
 

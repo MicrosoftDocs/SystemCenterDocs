@@ -1,5 +1,5 @@
 ---
-title: How to Reset Health
+title: Reset Health
 description: This article describes how to reset health for a monitor after correcting the issue identified.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 87da70aa-607a-47ec-bab5-39345ea53258
 ---
 
-# How to reset health
+# Reset health
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -29,7 +29,7 @@ Some monitors can set state to critical (red), warning (yellow), and healthy (gr
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 > [!NOTE]  
 > Only reset health for a monitor when you're sure that all the issues have been resolved.  
@@ -45,20 +45,20 @@ Some monitors can set state to critical (red), warning (yellow), and healthy (gr
 
 ::: moniker-end
 
-## To reset the health for a monitor
+## Reset the health for a monitor
 
-1.  In the **Monitoring** workspace of the Operations console, right-click an alert, point to **Open**, and select **Health Explorer**.  
+1. In the **Monitoring** workspace of the Operations console, right-click an alert, point to **Open**, and select **Health Explorer**.  
 
-2.  In **Health Explorer**, select a monitor, and on the toolbar, select **Reset Health**.  
+2. In **Health Explorer**, select a monitor, and on the toolbar, select **Reset Health**.  
 
     > [!NOTE]  
     > You may also notice **Recalculate Health** on the toolbar. This function reexamines the health state of a monitor or monitors; however, it only works with monitors that implement **On Demand Detection**. Most monitors don't implement **On Demand Detection**.  
 
     The following message displays: **Resetting the health of a monitor may take several minutes and will not be reflected in the Health Explorer immediately. The health state of some monitors cannot be reset and will not be updated as a result of this request. Do you wish to continue?**  
 
-3.  If you're sure that you want to reset the monitor, select **Yes**.  
+3. If you're sure that you want to reset the monitor, select **Yes**.  
 
-4.  Return to the Monitoring workspace, right-click the alert, point to **Set Resolution State**, and select **Closed**.  
+4. Return to the Monitoring workspace, right-click the alert, point to **Set Resolution State**, and select **Closed**.  
 
 ## Next steps
 

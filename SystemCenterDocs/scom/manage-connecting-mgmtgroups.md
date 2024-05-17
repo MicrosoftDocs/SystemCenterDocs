@@ -1,6 +1,6 @@
 ---
 ms.assetid: e2d68a4e-b2d5-4567-be36-454fd1dc67bb
-title: Connecting Management Groups in Operations Manager
+title: Connect Management Groups in Operations Manager
 description: This article describes how to connect multiple management groups for a consolidated view in a single Operations console.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,14 +12,13 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Connecting management groups in Operations Manager
+# Connect management groups in Operations Manager
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
 ::: moniker-end
-
 
 Connecting management groups in System Center Operations Manager enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer-to-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.  
 
@@ -30,24 +29,29 @@ When you connect management groups, you aren't deploying any new servers; rather
 
 Connecting management groups offers these additional services:  
 
--   Consolidated monitoring and alerting for greater than 6,000 agents  
+- Consolidated monitoring and alerting for greater than 6,000 agents  
 
--   Consolidated monitoring across trust boundaries  
+- Consolidated monitoring across trust boundaries  
 
 ::: moniker range=">=sc-om-2016 <=sc-om-1807"
 > [!IMPORTANT]  
-> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2016 - Operations Manager. 
-::: moniker-end 
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2016 - Operations Manager.
+::: moniker-end
 
 ::: moniker range="sc-om-2019"
 > [!IMPORTANT]  
-> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2019 - Operations Manager. 
-::: moniker-end 
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2019 - Operations Manager.
+::: moniker-end
 
 ::: moniker range="sc-om-2022"
 > [!IMPORTANT]  
-> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2022 - Operations Manager. 
-::: moniker-end 
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2022 - Operations Manager.
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+> [!IMPORTANT]  
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2025 - Operations Manager.
+::: moniker-end
 
 In addition to all the communication channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).  
 
@@ -57,48 +61,48 @@ In this procedure, you can create a connection between two management groups. Th
 
 ## Before you start  
 
-1.  To connect management groups, you must provide the fully qualified domain name (FQDN) of a management server of the connected management group. The management server of the local management group must be able to resolve this FQDN. If the two management groups don't use the same Domain Name System (DNS) service, you must create a secondary DNS zone in the DNS service that the local management group uses. This secondary DNS zone transfers the DNS information from the primary DNS zone of the connected management group. The transferred information is essentially a copy of the DNS information that's available to the management server of the local management group.  
+1. To connect management groups, you must provide the fully qualified domain name (FQDN) of a management server of the connected management group. The management server of the local management group must be able to resolve this FQDN. If the two management groups don't use the same Domain Name System (DNS) service, you must create a secondary DNS zone in the DNS service that the local management group uses. This secondary DNS zone transfers the DNS information from the primary DNS zone of the connected management group. The transferred information is essentially a copy of the DNS information that's available to the management server of the local management group.  
 
-2.  Add the System Center Data Access service and System Center Management Configuration service account of the connected management groups to the Operations Manager Administrator role for the connected management group, or add it to the domain-based Operations Manager Administrator security group in the connected management group's domain, which has already been added to the Operations Manager Administrator role.  
+2. Add the System Center Data Access service and System Center Management Configuration service account of the connected management groups to the Operations Manager Administrator role for the connected management group, or add it to the domain-based Operations Manager Administrator security group in the connected management group's domain, which has already been added to the Operations Manager Administrator role.  
 
-3.  Collect the System Center Data Access service and System Center Management Configuration service account credentials from the connected management groups. These credentials are needed when you add the connected management group in the local management group.  
+3. Collect the System Center Data Access service and System Center Management Configuration service account credentials from the connected management groups. These credentials are needed when you add the connected management group in the local management group.  
 
-4.  Identify users in the domain of the local management group that will need access to data from the connected management groups. They must be added to the appropriate Operations Manager roles in the connected management group.  
+4. Identify users in the domain of the local management group that will need access to data from the connected management groups. They must be added to the appropriate Operations Manager roles in the connected management group.  
 
-## To connect management groups  
+## Connect management groups  
 
-1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators user role.  
+1. Sign in to the computer with an account that's a member of the Operations Manager Administrators user role.  
 
-2.  In the Operations console that's connected to the destination management group, select **Administration**.  
+2. In the Operations console that's connected to the destination management group, select **Administration**.  
 
-3.  In the **Administration** workspace, right-click **Connected Management Groups**, and select **Add Management Group**.  
+3. In the **Administration** workspace, right-click **Connected Management Groups**, and select **Add Management Group**.  
 
-4.  In the **Add Management Group** dialog, do the following:  
+4. In the **Add Management Group** dialog, do the following:  
 
-    1.  Enter the **Management Group name** of the management group to be connected.  
+    1. Enter the **Management Group name** of the management group to be connected.  
 
-    2.  Enter the fully qualified domain name (FQDN) of a **Management Server** in the desired management group to be connected.  
+    2. Enter the fully qualified domain name (FQDN) of a **Management Server** in the desired management group to be connected.  
 
-    3.  Specify the account that will be used for the initial connection to the connected management group, either by leaving **Use SDK service account** selected or selecting **Other user account** and entering in the **User name**, **Password**, and **Domain**. The account must be a member of the Operations Manager&nbsp;Administrators role for the connected management group.  
+    3. Specify the account that will be used for the initial connection to the connected management group, either by leaving **Use SDK service account** selected or selecting **Other user account** and entering in the **User name**, **Password**, and **Domain**. The account must be a member of the Operations Manager&nbsp;Administrators role for the connected management group.  
 
-5.  Select **Add**.  
+5. Select **Add**.  
 
-## To grant access to Connected Management Groups  
+## Grant access to Connected Management Groups  
 
-1.  Identify users in the local management group that need access to the connected management groups.  
+1. Identify users in the local management group that need access to the connected management groups.  
 
-2.  Add those users as members to the appropriate user role in the connected management groups.  
+2. Add those users as members to the appropriate user role in the connected management groups.  
 
     > [!NOTE]  
     > If local and connected management groups aren't in the same domain and there's no trust relationship between the two domains, you'll have to create accounts in the connected management group domain for the users in the local management group domain to use.  
 
-3.  In the Operations console for the local management group, in the **Administration** view, expand **Security**, and select **User Roles**.  
+3. In the Operations console for the local management group, in the **Administration** view, expand **Security**, and select **User Roles**.  
 
-4.  In the right pane, right-click the user role to which you want to grant connected management group access, and select **Properties**.  
+4. In the right pane, right-click the user role to which you want to grant connected management group access, and select **Properties**.  
 
-5.  On the **Group Scope** tab, select the connected management groups to which you want to grant access to this user role, and select **OK**. A user with both permission and access to at least one connected management group will see the **Show Connected Alerts** button in the toolbar of any **Alert** view in the **Monitoring** space.  
+5. On the **Group Scope** tab, select the connected management groups to which you want to grant access to this user role, and select **OK**. A user with both permission and access to at least one connected management group will see the **Show Connected Alerts** button in the toolbar of any **Alert** view in the **Monitoring** space.  
 
-6.  A **Log On** dialog appears and prompts the user for credentials (to sign in to the connected management groups). Enter the credentials, and select **OK**. Alerts appear from all connected management groups for which you've access and permission. You can run tasks in the managed computers of the connected management groups.  
+6. A **Log On** dialog appears and prompts the user for credentials (to sign in to the connected management groups). Enter the credentials, and select **OK**. Alerts appear from all connected management groups for which you've access and permission. You can run tasks in the managed computers of the connected management groups.  
 
 ## Next steps
 

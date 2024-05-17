@@ -19,6 +19,12 @@ ms.topic: article
 
 ::: moniker-end
 
+::: moniker range="sc-om-2025"
+
+Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 2025. The agent packages can be found in the following folder on a management server - `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`. Import the required management packs for the specific version of UNIX/Linux you need to monitor. The management packs are available in the Operations Manager installation media, in the `\ManagementPacks` folder or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=104213).
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 2019. The agent packages can be found in the following folder on a management server - `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`. Import the required management packs for the specific version of UNIX/Linux you need to monitor. The management packs are available in the Operations Manager installation media in the `\ManagementPacks` folder, or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58208).
@@ -46,6 +52,12 @@ Your environment may require that you manually install the agent. Use the follow
 ::: moniker range="sc-om-2016"
 
 Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center 2016 - Operations Manager.  The agent packages can be found in the following folder on a management server - `%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`. Import the required management packs for the specific version of UNIX/Linux you need to monitor. The management packs are available in the Operations Manager installation media, in the `\ManagementPacks` folder or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58208).
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+[!INCLUDE [install-om-crossplat-agent-cmdline-2025](../includes/install-om-crossplat-agent-cmdline-2025.md)]
 
 ::: moniker-end
 

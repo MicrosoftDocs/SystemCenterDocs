@@ -1,6 +1,6 @@
 ---
 ms.assetid:
-title: How to create a dashboard with the PowerShell widget in the Web console
+title: Create a dashboard with the PowerShell widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the PowerShell widget.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create a dashboard with the PowerShell widget in the Web console
+# Create a dashboard with the PowerShell widget in the Web console
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -57,7 +57,7 @@ The script will typically use the Operations Manager cmdlets to retrieve informa
 
     The following sample script creates a table of numbered Windows Computer objects and displays the ID, health state, and display name for each.  
 
-    ```
+    ```powershell   
     $class = Get-SCOMClass -Name Microsoft.Windows.Computer  
     $computers = Get-SCOMClassInstance -Class $class  
     $i=1  
@@ -77,6 +77,7 @@ After the widget has been created, it displays the results of your script.
 ![Screenshot of PowerShell widget results example.](./media/create-web-dashboard-posh/dashboard-posh-widget-results.png)
 
 ## Actions with PowerShell widget
+
 With a PowerShell widget, you can perform such actions as:
 
 - Export the alerts to Excel for further analysis

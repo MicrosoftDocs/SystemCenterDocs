@@ -1,6 +1,6 @@
 ---
 ms.assetid: d830d226-80d0-4132-8b3c-d3de545f5fa2
-title: Creating and Managing Groups
+title: Create and Manage Groups
 description: This article describes how to create and configure groups for scoping in Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Creating and managing groups
+# Create and manage groups
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -30,21 +30,21 @@ In System Center Operations Manager, groups are logical collections of objects, 
 
 ::: moniker-end
 
-Some of the purposes of using groups are:  
+Some of the purposes of using groups are to:  
 
--   To scope overrides to a specific subset of computers.
+- Scope overrides to a specific subset of computers.
 
--   To scope alert notifications or product connector subscriptions for a specific set of computers.
+- Scope alert notifications or product connector subscriptions for a specific set of computers.
 
--   To scope user consoles, so the user role only sees the servers they're responsible for.  
+- Scope user consoles, so the user role only sees the servers they're responsible for.  
 
--   To scope a set of computers that need to go into a scheduled maintenance mode.  
+- Scope a set of computers that need to go into a scheduled maintenance mode.  
 
--   To scope application views only to computers that host a given application.
+- Scope application views only to computers that host a given application.
 
--   To create a rollup health state view of an otherwise unrelated set of computers.
+- Create a rollup health state view of an otherwise unrelated set of computers.
 
--   To create a set of computers for a report.  
+- Create a set of computers for a report.  
 
 Using the Operations console in the **Authoring** workspace, you can only create instance groups. To create a computer group, you must use the Authoring console or work directly in the XML of a management pack.  The following image shows the display of groups in the Operations console.
 
@@ -54,9 +54,9 @@ Using the Operations console in the **Authoring** workspace, you can only create
 
 Computer groups only contain computers. Instance groups can contain all object types, such as an instance of a health service or an instance of a SQL database. Both computer groups and instance groups can contain other computer and instance groups. Another way to view the difference between the group types is:  
 
--   An instance group is populated with objects that match your criteria.  
+- An instance group is populated with objects that match your criteria.  
 
--   A computer group is populated by computers that host objects that match your criteria.  
+- A computer group is populated by computers that host objects that match your criteria.  
 
 To create a group based on a hosting relationship, such as all computers that are running SQL Server, you must use the Visual Studio Authoring Extensions for Operations Manager or work directly in the XML of a management pack.
 
@@ -66,69 +66,68 @@ The most common objects you'll place in your groups are **Windows Computer** obj
 
 You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of group queries and formulas, see [Operations Manager Group Examples](/troubleshoot/system-center/scom/regular-expression-support).  
 
-## To create a group in Operations Manager  
+## Create a group in Operations Manager  
 
-1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators role.  
+1. Sign in to the computer with an account that's a member of the Operations Manager Administrators role.  
 
-2.  In the Operations console, select **Authoring**.  
+2. In the Operations console, select **Authoring**.  
 
-3.  Right-click **Groups**, and select **Create a new Group** to start the Create Group Wizard.  
+3. Right-click **Groups**, and select **Create a new Group** to start the Create Group Wizard.  
 
-4.  On the **Enter a name and description for the new group** page, do the following:  
+4. On the **Enter a name and description for the new group** page, do the following:  
 
-    1.  Enter the **Name** for the group.  
+    1. Enter the **Name** for the group.  
 
-    2.  Optionally, enter the **Description** for the group. A description of the group membership makes it easier to select the right group for views, overrides, and so forth.  
+    2. Optionally, enter the **Description** for the group. A description of the group membership makes it easier to select the right group for views, overrides, and so forth.  
 
-    3.  Select a **destination management pack** from the list, or select **New** to create a management pack with the Create a Management Pack Wizard.  
+    3. Select a **destination management pack** from the list, or select **New** to create a management pack with the Create a Management Pack Wizard.  
 
-    4.  Select **Next**.  
+    4. Select **Next**.  
 
-5.  On the **Explicit Members** - **Choose Members from a List**  page, you can add explicit objects to the group or select **Next** to continue to the **Dynamic Members** configuration. To add explicit group members, select **Add/Remove Objects** and then perform the following steps:  
+5. On the **Explicit Members** - **Choose Members from a List**  page, you can add explicit objects to the group or select **Next** to continue to the **Dynamic Members** configuration. To add explicit group members, select **Add/Remove Objects** and then perform the following steps:  
 
-    1.  In the **Search for** list, select an object type, such as **Windows Computer**.  
+    1. In the **Search for** list, select an object type, such as **Windows Computer**.  
 
-    2.  Optionally, in the **Filter by part of the name** box, enter all or part of the object name, and select **Search**.  
+    2. Optionally, in the **Filter by part of the name** box, enter all or part of the object name, and select **Search**.  
 
-    3.  In the **Available items** box, select the desired objects, select **Add**, and select **Next**.  
+    3. In the **Available items** box, select the desired objects, select **Add**, and select **Next**.  
 
-6.  On the **Dynamic Members** - **Create a Membership Formula** page, you can add a dynamic membership formula to the group or select **Next** to continue to the **Subgroups** page. To add a dynamic membership formula, select **Create/Edit rules** and then perform the following steps:  
+6. On the **Dynamic Members** - **Create a Membership Formula** page, you can add a dynamic membership formula to the group or select **Next** to continue to the **Subgroups** page. To add a dynamic membership formula, select **Create/Edit rules** and then perform the following steps:  
 
     > [!WARNING]  
     > This procedure tells you how to create a query for Windows computers based on NetBIOS computer name.  
 
-    1.  In the **Query Builder** dialog, leave the default **Windows Computer** and select **Add**.  
+    1. In the **Query Builder** dialog, leave the default **Windows Computer** and select **Add**.  
 
-    2.  In the **Property** list, select **NetBIOS computer name**.  
+    2. In the **Property** list, select **NetBIOS computer name**.  
 
-    3.  In the **Operator** list, select **Contains**.  
+    3. In the **Operator** list, select **Contains**.  
 
-    4.  Set **Value** to part of the name of the computers you want in the group, such as **NY** or **MKTG**.  
+    4. Set **Value** to part of the name of the computers you want in the group, such as **NY** or **MKTG**.  
 
         > [!NOTE]  
         > Select **Insert** to add an **Expression** or group expressions with **OR** or **AND** operators. Repeat the preceding steps to add additional object types to the rule.  
 
-    5.  Select **OK**, review the **Query formula**, and select **Next**.  
+    5. Select **OK**, review the **Query formula**, and select **Next**.  
 
-7.  On the **Choose Optional Subgroups** page, either select **Next** to not add groups to the group, or select **Add/Remove Subgroups** to add groups, for example.  
+7. On the **Choose Optional Subgroups** page, either select **Next** to not add groups to the group, or select **Add/Remove Subgroups** to add groups, for example.  
 
-    1.  In the **Group Selection** dialog, in **Filter by part of name**, you can optionally enter part or the all of the group's names, and select **Search**.  
+    1. In the **Group Selection** dialog, in **Filter by part of name**, you can optionally enter part or the all of the group's names, and select **Search**.  
 
-    2.  In the **Available items** text box, select the desired groups, select **Add**, select **OK**, and select **Next**.  
+    2. In the **Available items** text box, select the desired groups, select **Add**, select **OK**, and select **Next**.  
 
-8.  On the **Excluded Members** - **Specify Exclude List** page, select **Finish** to not exclude objects from the group, or select **Exclude Objects**, and then perform the following steps:  
+8. On the **Excluded Members** - **Specify Exclude List** page, select **Finish** to not exclude objects from the group, or select **Exclude Objects**, and then perform the following steps:  
 
-    1.  In the **Object Exclusion** dialog, from the **Search for** list, select an object type, such as **Windows Computer**.  
+    1. In the **Object Exclusion** dialog, from the **Search for** list, select an object type, such as **Windows Computer**.  
 
-    2.  Optionally, in the **Filter by part of the name** box, enter all or part of the object name, and select **Search**.  
+    2. Optionally, in the **Filter by part of the name** box, enter all or part of the object name, and select **Search**.  
 
-    3.  In the **Available items** text box, select the objects you want to exclude, select **Add**, select **OK**, and select **Finish**.  
+    3. In the **Available items** text box, select the objects you want to exclude, select **Add**, select **OK**, and select **Finish**.  
 
     > [!NOTE]  
     > It can take approximately one minute to populate the membership of a group.  
 
-
-## To view members, state, and diagram of a group
+## View members, state, and diagram of a group
 
 1. In the **Authoring** workspace, select **Groups**.
 
@@ -141,7 +140,6 @@ You can assign both explicit and dynamic members in the same group definition, a
    - **View Group State** to view a state view of the group.
 
    - **View Diagram** to view a diagram of the group.
-
 
 ## Next steps
 

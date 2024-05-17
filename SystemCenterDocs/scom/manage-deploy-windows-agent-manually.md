@@ -24,14 +24,13 @@ You can use `MOMAgent.msi` to deploy System Center Operations Manager agents fro
 
 Before you use either method to manually deploy the agent, ensure the following conditions are met:
 
--   The account that is used to run MOMAgent.msi must have administrative privileges on the computer on which you're installing agent.
+- The account that is used to run MOMAgent.msi must have administrative privileges on the computer on which you're installing agent.
 
--   Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md).
+- Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md).
 
--   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack. The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers. The Active Directory Management Pack helper object is normally installed automatically when the agent is deployed using the Discovery Wizard. To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller. The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.
+- If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack. The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers. The Active Directory Management Pack helper object is normally installed automatically when the agent is deployed using the Discovery Wizard. To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller. The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.
 
--   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi, or they'll be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
-
+- A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi, or they'll be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 > [!NOTE]
 > For information about port requirements for agents, see [Communication Between Agents and Management Servers](plan-planning-agent-deployment.md#communication-between-agents-and-management-servers).
@@ -46,28 +45,28 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 
 ::: moniker range=">=sc-om-2016 <=sc-om-1801"
 > [!IMPORTANT]
->  The Application Performance Monitoring (APM) feature in System Center 2016 Operations Manager and version 1801 agent causes a crash with IIS Application Pools that are running under the .NET Framework 2.0 runtime. By default when the agent is installed on a Windows computer, the APM components are installed by default. To avoid issues and prevent installation of the APM components on target Windows servers when you deploy the agent, add the `NOAPM=true` parameter
+> The Application Performance Monitoring (APM) feature in System Center 2016 Operations Manager and version 1801 agent causes a crash with IIS Application Pools that are running under the .NET Framework 2.0 runtime. By default when the agent is installed on a Windows computer, the APM components are installed by default. To avoid issues and prevent installation of the APM components on target Windows servers when you deploy the agent, add the `NOAPM=true` parameter
 ::: moniker-end
 
 ## Deploy the Operations Manager agent with the Agent Setup Wizard
 
 Follow these steps to deploy the Operations Manager agent with the Agent Setup Wizard:
 
-1.  Use local administrator privileges to sign in to the computer where you want to install the agent.
+1. Use local administrator privileges to sign in to the computer where you want to install the agent.
 
-2.  On the Operations Manager installation media, double-click **Setup.exe**.
+2. On the Operations Manager installation media, double-click **Setup.exe**.
 
-3.  In **Optional Installations**, select **Local agent**.
+3. In **Optional Installations**, select **Local agent**.
 
-4.  On the **Welcome** page, select **Next**.
+4. On the **Welcome** page, select **Next**.
 
-5.  On the **Important Notice** page, review the Microsoft software license terms and select **I Agree**.
+5. On the **Important Notice** page, review the Microsoft software license terms and select **I Agree**.
 
-6.  On the **Destination Folder** page, leave the installation folder set to the default, or select **Change** and type a path, and select **Next**.
+6. On the **Destination Folder** page, leave the installation folder set to the default, or select **Change** and type a path, and select **Next**.
 
-6.  On the **Agent Setup Options** page, you can choose whether you want to **connect the agent to Operations Manager**. When you connect the agent to Operations Manager, you can manually choose the management group that this agent will participate with in monitoring. If you don't select this option, the agent can still collect Application Performance Monitoring data locally. You can change your selection in the **Monitoring Agent** item in Control Panel.  
+7. On the **Agent Setup Options** page, you can choose whether you want to **connect the agent to Operations Manager**. When you connect the agent to Operations Manager, you can manually choose the management group that this agent will participate with in monitoring. If you don't select this option, the agent can still collect Application Performance Monitoring data locally. You can change your selection in the **Monitoring Agent** item in Control Panel.  
 
-7.  On the **Management Group Configuration** page, do the following:
+8. On the **Management Group Configuration** page, do the following:
 
     a. Enter the name of the management group in the **Management Group Name** field and the (which server?) server name in the **Management Server** field.
 
@@ -78,9 +77,9 @@ Follow these steps to deploy the Operations Manager agent with the Agent Setup W
 
     c. Enter **Next**.
 
-8.  On the **Agent Action Account** page, leave it set to the default of **Local System**, or select **Domain or Local Computer Account**; enter the **User Account**, **Password**, and **Domain or local computer**; and select **Next**.
+9. On the **Agent Action Account** page, leave it set to the default of **Local System**, or select **Domain or Local Computer Account**; enter the **User Account**, **Password**, and **Domain or local computer**; and select **Next**.
 
-9. On the **Ready to Install** page, review the settings and select **Install** to display the **Installing Microsoft Monitoring Agent** page.
+10. On the **Ready to Install** page, review the settings and select **Install** to display the **Installing Microsoft Monitoring Agent** page.
 
 11. When the **Completing the Microsoft Monitoring Agent Setup Wizard** page appears, select **Finish**.
 
@@ -88,11 +87,11 @@ Follow these steps to deploy the Operations Manager agent with the Agent Setup W
 
 Follow these steps to deploy the Operations Manager agent from the command line:
 
-1.  Sign in to the computer where you want to install the agent by using an account with local administrator privileges.
+1. Sign in to the computer where you want to install the agent by using an account with local administrator privileges.
 
-2.  Open a command prompt as an administrator.
+2. Open a command prompt as an administrator.
 
-3.  Run the following command:
+3. Run the following command:
 
     ```
 
@@ -122,7 +121,6 @@ Follow these steps to deploy the Operations Manager agent from the command line:
     |ACTIONSPASSWORD= *Password*|The password for the user identified with the ACTIONSUSER parameter.|
     |NOAPM=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you're using AVIcode 5.7, NOAPM=1 leaves the AVIcode agent in place. If you're using AVIcode 5.7 and install the Operations Manager agent by using momagent.msi without NOAPM=1, the AVIcode agent won't work correctly and an alert will be generated.|
     |AcceptEndUserLicenseAgreement=1|Used to specify that you accept the End User License Agreement (EULA). This parameter is required when you use /qn to perform a fully silent installation of the agent.|
-
 
 ## Examples of installing the agent from the command line
 

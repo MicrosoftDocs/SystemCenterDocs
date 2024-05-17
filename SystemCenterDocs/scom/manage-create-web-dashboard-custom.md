@@ -1,6 +1,6 @@
 ---
 ms.assetid:
-title: How to create a dashboard with the Custom widget in the Web console
+title: Create a dashboard with the Custom widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Custom widget.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -33,6 +33,7 @@ In System Center Operations Manager, the Web console provides a monitoring inter
 Required action, applicable for Operations Manager 2019 UR1 and later.
 
 1. In the HTML header of the dashboard, add the following code:
+
 ```
 var requestHeaders = {
             Accept: 'q=0.8;application/json;q=0.9',
@@ -61,9 +62,11 @@ var requestHeaders = {
 ::: moniker-end
 
 ## Use the Operations Manager REST API reference
+
 Use the REST API reference to learn about the available operations you can perform with the custom widget to present operational data in the dashboard. If you're new to REST API, take a look at the information on [getting started with this API](/rest/operationsmanager) if you haven't already seen it.
 
 ## Script structure
+
 A Custom Widget script has three major sections:
 
 1. Defining the REST API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data.
@@ -71,6 +74,7 @@ A Custom Widget script has three major sections:
 3. Third-party visualization, which is open-source libraries hosted on cloudflare.com that are required to render the data depending on the chart type selected.
 
 ### Widget properties
+
 In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://\<servername\>/operationsmanager/data/\<dataitem\>* and the value for **dataitem** is one of the following:
 
 * *alert* represents a monitoring alert
@@ -144,6 +148,7 @@ To specify a group that contains a subset of objects of the same class specified
 Once you've specified the target class and optionally a group to further scope the results, you can then specify the criteria to limit the type of data to display according to the values of one or more properties.
 
 ## Widget examples
+
 The widget supports rendering monitoring data in the following chart types:
 
 - Bar chart (state data)
@@ -154,7 +159,6 @@ The widget supports rendering monitoring data in the following chart types:
 - Combination chart
 - Stacked bar chart
 
-
 You can configure a chart type to present state, performance, and alert data. For each example below, alerts from the Windows Computer group are returned for any severity, matching specific resolution states.
 
 Select the required tab to view the HTML code for the respective chart type:
@@ -163,7 +167,7 @@ Select the required tab to view the HTML code for the respective chart type:
 
 The following HTML code demonstrates rendering a bar chart with state data:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 
@@ -247,7 +251,7 @@ The following HTML code demonstrates rendering a bar chart with state data:
 
 The following HTML code demonstrates rendering a spline chart with performance data:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 
@@ -345,7 +349,7 @@ The following HTML code demonstrates rendering a spline chart with performance d
 
 The following HTML code demonstrates rendering a bar chart with alert data:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 
@@ -416,11 +420,12 @@ The following HTML code demonstrates rendering a bar chart with alert data:
 
 </html>
 ```
+
 # [Pie chart](#tab/Pie)
 
 The following HTML code demonstrates rendering a pie chart with alert data:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 
@@ -503,7 +508,7 @@ The following HTML code demonstrates rendering a pie chart with alert data:
 
 The following HTML code demonstrates rendering a 3D pie chart with alert data:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 
@@ -611,7 +616,7 @@ The following HTML code demonstrates rendering a 3D pie chart with alert data:
 
 The following HTML code demonstrates rendering a donut chart with alert data:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 
@@ -698,7 +703,7 @@ animationEnabled: true,
 
 The following HTML code demonstrates rendering a 3D donut chart with alert data:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 
@@ -795,7 +800,7 @@ The following HTML code demonstrates rendering a 3D donut chart with alert data:
 
 The following HTML code demonstrates creating a Combination chart to display alerts in a pie and spline chart:
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 

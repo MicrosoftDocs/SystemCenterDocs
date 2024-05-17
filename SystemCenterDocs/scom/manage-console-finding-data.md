@@ -1,5 +1,5 @@
 ---
-title: Finding Data and Objects in the Operations Manager Consoles
+title: Find Data and Objects in the Operations Manager Consoles
 description: This article describes how to filter monitoring data in the Operations Manager Operations console to see data based on your specific criteria.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
 ---
 
-# Finding data and objects in the Operations Manager consoles
+# Find data and objects in the Operations Manager consoles
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -35,7 +35,7 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 
 ## How to change scope  
 
-Changing the scope of the monitoring view enables you to view only those objects that meet a certain criteria, such as management servers. 
+Changing the scope of the monitoring view enables you to view only those objects that meet a certain criteria, such as management servers.
 
 ::: moniker range=">=sc-om-2016 <=sc-om-2019"
 For example, if you want to view only those computers in your environment that are running Windows server 2016, you can apply a scope that uses **Windows server 2016** as the criteria; no other computers are displayed.  
@@ -45,13 +45,17 @@ For example, if you want to view only those computers in your environment that a
 For example, if you want to view only those computers in your environment that are running Windows server 2022, you can apply a scope that uses **Windows server 2022** as the criteria; no other computers are displayed.  
 ::: moniker-end
 
-1.  In the Operations console, select **Monitoring** to display the objects in your monitoring environment.  
+::: moniker range="sc-om-2025"
+For example, if you want to view only those computers in your environment that are running Windows server 2025, you can apply a scope that uses **Windows server 2025** as the criteria; no other computers are displayed.  
+::: moniker-end
 
-2.  Select the **Scope** button on the Operations Manager toolbar. If this button isn't available, check to ensure that you've an object, not a folder, selected in the Monitoring pane. The **Change View Scope** dialog displays a list of existing groups and distributed applications.  
+1. In the Operations console, select **Monitoring** to display the objects in your monitoring environment.  
+
+2. Select the **Scope** button on the Operations Manager toolbar. If this button isn't available, check to ensure that you've an object, not a folder, selected in the Monitoring pane. The **Change View Scope** dialog displays a list of existing groups and distributed applications.  
 
     ![Screenshot showing a Dialog box to change scope.](./media/manage-console-finding-data/om2016-operations-console-change-scope.png)  
 
-3.  If the list is too long, you can find a specific group or distributed application by entering a word or phrase in the **Look for** field. After you make a selection, select **OK**. Now only the objects that meet the scope criteria are shown in the Results pane.  
+3. If the list is too long, you can find a specific group or distributed application by entering a word or phrase in the **Look for** field. After you make a selection, select **OK**. Now only the objects that meet the scope criteria are shown in the Results pane.  
 
 ## How to use Find and Search
 
@@ -59,23 +63,23 @@ Use the **Find** button when the list of objects in the Results pane is too long
 
 ### To use Find to create a list of objects
 
-1.  In the Operations console, select **Monitoring**.  
+1. In the Operations console, select **Monitoring**.  
 
-2.  Select a view that is available in the Monitoring workspace. This displays a list of objects in the Results pane.  
+2. Select a view that is available in the Monitoring workspace. This displays a list of objects in the Results pane.  
 
-3.  Check to see whether a **Look for** box is at the top of the Results pane. If there's no **Look for** box, select the **Find** button on the toolbar. In **Look for**, enter a word, such as the name of an object, that you want to find in the list, and then select **Find**.  
+3. Check to see whether a **Look for** box is at the top of the Results pane. If there's no **Look for** box, select the **Find** button on the toolbar. In **Look for**, enter a word, such as the name of an object, that you want to find in the list, and then select **Find**.  
 
     The object that you're looking for is displayed.  
 
-4.  Select **Clear** to go back to the original list of objects.  
+4. Select **Clear** to go back to the original list of objects.  
 
 ### To use Search to create a list of objects  
 
-1.  In the Operations console, select **Monitoring**.  
+1. In the Operations console, select **Monitoring**.  
 
-2.  Select the **Search** button on the toolbar.  
+2. Select the **Search** button on the toolbar.  
 
-3.  In the **Search** window, enter the word or phrase that describes the set of objects you want to find. A list of objects that meet your criteria is displayed. The list is sorted by object type.  
+3. In the **Search** window, enter the word or phrase that describes the set of objects you want to find. A list of objects that meet your criteria is displayed. The list is sorted by object type.  
 
 ## Next steps
 

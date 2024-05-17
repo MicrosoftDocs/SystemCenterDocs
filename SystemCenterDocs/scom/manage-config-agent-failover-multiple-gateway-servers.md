@@ -1,5 +1,5 @@
 ---
-title: How to Configure Agent Failover to Multiple Gateway Servers
+title: Configure Agent Failover to Multiple Gateway Servers
 description: This article describes how to use PowerShell to configure failover between multiple Gateway servers.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -28,11 +28,11 @@ If you've deployed multiple gateway servers in a domain that doesn't have a trus
 
 Follow these steps to configure agent failover to multiple gateway servers:
 
-1.  Sign in to the computer with an account that is a member of the Administrators group.  
+1. Sign in to the computer with an account that is a member of the Administrators group.  
 
-2.  Select **Start**, select **All Programs**, select **Microsoft System Center&nbsp;2012**, select **Operations Manager**, and then select **Operations Manager Shell**.  
+2. Select **Start**, select **All Programs**, select **Microsoft System Center&nbsp;2012**, select **Operations Manager**, and then select **Operations Manager Shell**.  
 
-3.  In Operations Manager Shell, run the following command:  
+3. In Operations Manager Shell, run the following command:  
 
     ```  
     $primaryMS = Get-SCOMManagementServer -Name "<name of primary server>"  
