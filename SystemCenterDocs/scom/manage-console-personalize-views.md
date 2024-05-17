@@ -1,5 +1,5 @@
 ---
-title: How to Personalize a View in Operations Manager
+title: Personalize a View in Operations Manager
 description: This article describes how to customize views in the Operations Manager Operations console.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
 ---
 
-# How to personalize a view in Operations Manager
+# Personalize a view in Operations Manager
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -25,24 +25,24 @@ In System Center Operations Manager, views are contained in management packs. If
 > [!NOTE]  
 > Personalized views are only visible to the user who personalized the view.  
 
-## To personalize a view  
+## Personalize a view  
 
-1.  In the Operations console, select **Monitoring**.  
+1. In the Operations console, select **Monitoring**.  
 
-2.  In the **Monitoring** workspace, right-click the view that you want to personalize and then select **Personalize view**. The **Personalize view** dialog displays with the default settings of the view.  
+2. In the **Monitoring** workspace, right-click the view that you want to personalize and then select **Personalize view**. The **Personalize view** dialog displays with the default settings of the view.  
 
-3.  In **Columns to display**, click to place a check next to the property that you want to display in your view. You can also click to remove any checkmarks set by the original view. In the **Sort columns by** box, select the dropdown arrow to choose a property by which you want to sort the monitored objects in your view, and select **OK**.  
+3. In **Columns to display**, click to place a check next to the property that you want to display in your view. You can also click to remove any checkmarks set by the original view. In the **Sort columns by** box, select the dropdown arrow to choose a property by which you want to sort the monitored objects in your view, and select **OK**.  
 
     > [!NOTE]  
     > In a state view, the option to sort by groups isn't available. This option is available in other view types, such as the alert view and event view.  
 
-## To restore view defaults  
+## Restore view defaults  
 
-1.  In the Operations console, select **Monitoring**.  
+1. In the Operations console, select **Monitoring**.  
 
-2.  In the **Monitoring** workspace, right-click the personalized view.  
+2. In the **Monitoring** workspace, right-click the personalized view.  
 
-3.  Select **Reset to Default**, and select **OK**.  
+3. Select **Reset to Default**, and select **OK**.  
 
 ## Next steps
 

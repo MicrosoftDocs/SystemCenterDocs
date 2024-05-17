@@ -82,7 +82,7 @@ The following subset of those operating systems now supports WS-Management commu
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 | Operating System | Version |
 |------------------|:---------|
@@ -101,8 +101,8 @@ The following subset of those operating systems now supports WS-Management commu
 | Ubuntu Server | 16 |
 | Ubuntu Server | 18 |
 | Ubuntu Server | 20 |
-::: moniker-end
 
+::: moniker-end
 
 - UNIX or Linux agent must be domain joined.
 

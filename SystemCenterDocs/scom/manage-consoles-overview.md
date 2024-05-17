@@ -21,7 +21,8 @@ ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 ::: moniker-end
 
 System Center – Operations Manager includes two consoles:
-- Operations console 
+
+- Operations console
 - Web console
 
 To Know the difference between them, see [Comparing the Operations and Web console](manage-consoles-comparison.md). Also learn how to configure them after installation, and how to use the consoles to view the operational data reported by the monitored services in the enterprise.  

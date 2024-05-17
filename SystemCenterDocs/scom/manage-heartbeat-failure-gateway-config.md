@@ -22,7 +22,6 @@ ms.topic: article
 
 When an agent fails to send a heartbeat, a Health Service Heartbeat Failure alert is generated and the management server attempts to contact the computer by performing a ping using Windows Management Instrumentation (WMI) based on its recovery task **Ping Computer on Heartbeat Failure**. If the computer doesn't respond to the ping, a Failed to Connect to Computer alert is generated. By default, this recovery task is performed from its assigned management server.  But when agents report to a gateway server that communicates with its assigned management server through a firewall, the attempt to ping the remote agent will fail.  The following steps describe how to configure the gateway server in this scenario to attempt to contact the computer and verify it's responding to a ping.  
 
-
 ## Prerequisites
 
 RPC port 135 (DCOM/RPC) must be open between the management server and the gateway server in order for it to remotely connect to the WMI provider on the gateway server. Initially the management server binds to port 135 and then a dynamically assigned port above 1024 is selected.  For further information, review [How to configure RPC dynamic port allocation to work with firewalls](https://support.microsoft.com/help/154596/how-to-configure-rpc-dynamic-port-allocation-to-work-with-firewalls).
@@ -52,7 +51,6 @@ Perform the following steps to configure the Run As account.
 
     >[!NOTE]
     >While the gateway server pings the agent, initiation occurs from management server using a WMI query that runs against agents reporting to the gateway server.  For this reason, the **Automatic Agent Management Account** Run As account needs to have the necessary privileges on both the management and gateway server to execute this WMI query from both roles. For more information on how to properly configure privileges to remotely connect to a computer using WMI, see [Securing a Remote WMI Connection](/windows/win32/wmisdk/securing-a-remote-wmi-connection).
->
 
 ## Next steps
 

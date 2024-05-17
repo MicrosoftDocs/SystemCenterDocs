@@ -31,56 +31,55 @@ Monitoring a Nano Server installation is similar to monitoring any other install
 
 You will need to follow the steps listed below to start monitoring a Nano Server.
 
-1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md) or [Manually install the Operations Manager agent on a Nano server](#manually-install-the-operations-manager-agent-on-a-nano-server).
+1. [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md) or [Manually install the Operations Manager agent on a Nano server](#manually-install-the-operations-manager-agent-on-a-nano-server).
 
-2.  [Validate that the Operations Manager agent has been successfully installed](#validate-that-the-operations-manager-agent-has-been-successfully-installed)
+2. [Validate that the Operations Manager agent has been successfully installed](#validate-that-the-operations-manager-agent-has-been-successfully-installed)
 
-3.  [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md) if you installed the agent manually on Nano Server.
+3. [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md) if you installed the agent manually on Nano Server.
 
-4.  [Verify that you are monitoring your Nano Server](#verify-that-you-are-monitoring-your-nano-server).
+4. [Verify that you are monitoring your Nano Server](#verify-that-you-are-monitoring-your-nano-server).
 
 There are several limitations in this release of the Nano Server agent. The following operations aren't supported in this release:
 
--   Installing the Operations Manager Agent via an MSI package.
+- Installing the Operations Manager Agent via an MSI package.
 
--   Monitoring a Nano Server that isn't in the same domain as the Operations Manager Management Server.
+- Monitoring a Nano Server that isn't in the same domain as the Operations Manager Management Server.
 
--   Monitoring a Nano Server with a Management Pack written in VBScript or JScript.
+- Monitoring a Nano Server with a Management Pack written in VBScript or JScript.
 
--   Monitoring .NET applications running on a Nano Server.
+- Monitoring .NET applications running on a Nano Server.
 
--   Process Monitoring on the Nano Server.
+- Process Monitoring on the Nano Server.
 
--   ICMP monitoring on the Nano Server.
+- ICMP monitoring on the Nano Server.
 
--   OLE DB monitoring on the Nano Server.
+- OLE DB monitoring on the Nano Server.
 
--   Integrating the Nano Server with Active Directory.
+- Integrating the Nano Server with Active Directory.
 
--   Updating the Operations Manager agent on a Nano Server by applying updates.
+- Updating the Operations Manager agent on a Nano Server by applying updates.
 
--   Using network discovery rules to discover devices that support ICMP.
+- Using network discovery rules to discover devices that support ICMP.
 
--   Monitoring specific URLs on a Nano Server.
+- Monitoring specific URLs on a Nano Server.
 
--   Collecting data from the Application Log of a Nano Server.
+- Collecting data from the Application Log of a Nano Server.
 
--   Putting a Nano Server into maintenance mode.
-
+- Putting a Nano Server into maintenance mode.
 
 ## Manually install the Operations Manager agent on a Nano server
 
-1.  Follow the instructions for manually installing Nano Server on either a physical computer or a virtual machine. See [Getting Started with Nano Server](/windows-server/get-started/getting-started-with-nano-server) for complete instructions.
+1. Follow the instructions for manually installing Nano Server on either a physical computer or a virtual machine. See [Getting Started with Nano Server](/windows-server/get-started/getting-started-with-nano-server) for complete instructions.
 
     > [!NOTE]
     > The Nano Server must be in the same domain as the Operations Manager Management Server.
 
-2.  Add the Microsoft-OneCore-ReverseForwarders package as described in the Getting Started with Nano Server topic.
+2. Add the Microsoft-OneCore-ReverseForwarders package as described in the Getting Started with Nano Server topic.
 
-3.  Join the Nano Server to the same domain as the Operations Manager Management Server.
+3. Join the Nano Server to the same domain as the Operations Manager Management Server.
 There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the article [Discover and install agent on Windows](~/scom/manage-deploy-windows-agent-console.md).
 
-Use the following procedure to install the agent with a PowerShell script.   
+Use the following procedure to install the agent with a PowerShell script:
 
 1. Copy the NanoServer directory from the System Center Operations Manager setup directory to the Nano Server.
 
@@ -90,7 +89,7 @@ Use the following procedure to install the agent with a PowerShell script.
 
 4. Run the following script:
 
-   ```
+   ```powershell  
    .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder ..\
    ```
 
@@ -102,7 +101,8 @@ Use the following procedure to install the agent with a PowerShell script.
    ```
    Net Start HealthService
    ```
-   ### Troubleshooting agent installation
+
+### Troubleshoot agent installation
 
 If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server, you can follow the checklist below for possible solutions.
 
@@ -115,43 +115,43 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 
 ### Validate that the Operations Manager agent has been successfully installed
 
-1.  Open the Services console on a computer joined to the same domain as the Nano Server by running the services.msc command.
+1. Open the Services console on a computer joined to the same domain as the Nano Server by running the services.msc command.
 
-2.  Connect to the Nano Server in the Action panel by specifying the Fully Qualified Domain Name (FQDN) of the Nano Server.
+2. Connect to the Nano Server in the Action panel by specifying the Fully Qualified Domain Name (FQDN) of the Nano Server.
 
-3.  Verify that the Status of the Microsoft Monitoring Agent Service is **Running**.
+3. Verify that the Status of the Microsoft Monitoring Agent Service is **Running**.
 
 ## Start Monitoring your Nano Server
 
 > [!NOTE]
 > The following procedure is only required for a PowerShell-based agent installation.
 
-1.  Open the **Pending Management** section of the Administration pane in the Operations Manager console.
+1. Open the **Pending Management** section of the Administration pane in the Operations Manager console.
 
-2.  Approve the Nano Server for management.
+2. Approve the Nano Server for management.
 
 ### Verify that you are monitoring your Nano Server
 
-1.  Open the **Agent Managed** list in the Device Management section of the Operations Manager Console Administration pane.
+1. Open the **Agent Managed** list in the Device Management section of the Operations Manager Console Administration pane.
 
-2.  Verify that the Health State is shown as Healthy.
+2. Verify that the Health State is shown as Healthy.
 
 ## Remove the Operations Manager Agent from your Nano Server
 
-1.  Open a PowerShell window as an administrator on the Nano Server.
+1. Open a PowerShell window as an administrator on the Nano Server.
 
-2.  Change to the \NanoAgent\NanoServer folder.
+2. Change to the \NanoAgent\NanoServer folder.
 
-3.  Run the following script:
+3. Run the following script:
 
-    ```
+    ```powershell
     .\UnInstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server>
     ```
 
     > [!NOTE]
     > You can validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \NanoAgent\NanoServer folder doesn't contain any errors and that  you see the message **Successfully un-installed the agent from Nano Server** in the log file.
 
-## Troubleshooting agent uninstall
+## Troubleshoot agent uninstall
 
 If you encounter any difficulties with removing the Operations Manager Agent on a Nano Server, you can follow the checklist below for possible solutions.
 
@@ -166,7 +166,7 @@ If you encounter any difficulties with removing the Operations Manager Agent on 
 |Unable to locate agent folder on the Nano Server.|Either the NanoAgent directory has been moved, or the account has insufficient permissions to access the NanoAgent directory.|Ensure the account the script is running under has sufficient permissions to access the NanoAgent directory and that the NanoAgent directory is present and run the uninstall script again.|
 |Unable to remove the agent directory. Try restarting the Nano Server and then re-running this script.|A process may be using the Operations Manager agent.|Ensure there are no processes attached to the Operations Manager agent and run the uninstall script again.|
 
-## Installing updates to the Nano agent
+## Install updates to the Nano agent
 
 The Nano agent can be updated by one of the following methods:
 
@@ -186,7 +186,7 @@ The Nano agent can be updated by one of the following methods:
 
     For System Center 2016 - Operations Manager RTM, you can download the Nano Agent cab file from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54767&WT.mc_id=rss_windows_allproducts).  
 
-### Uninstalling updates from the Nano Agent
+### Uninstall updates from the Nano Agent
 
 Directly uninstalling the most recent update from the Nano agent isn't supported. Instead, you should uninstall the agent completely and reinstall the agent with the desired set of updates.
 

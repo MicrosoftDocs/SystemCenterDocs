@@ -1,5 +1,5 @@
 ---
-title: Using Advanced Search
+title: Use Advanced Search
 description: This article describes how to search in My Workspace in the Operations Manager Operations console to see data based on your specific criteria.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 1c8d08db-f510-463a-83db-f5b45411090e
 ---
 
-# Using advanced search
+# Use advanced search
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -24,9 +24,9 @@ In System Center Operations Manager, advanced search is available in My Workspac
 
 Use advanced search to search for a specific object type that meets specified criteria. Advanced search has two steps:  
 
--   Select the specific object type and criteria
+- Select the specific object type and criteria
 
--   Set the criteria values  
+- Set the criteria values  
 
 You can also save the searches you create.  
 
@@ -53,7 +53,7 @@ If you've ever created a rule in Microsoft Outlook, setting criteria values for 
 
 To assign a value to the variable, select the underlined portion of the criterion. A dialog appears. In the example of **With a specific name**, you enter a text string for the specific name. For variables with limited values, such as alert priorities, the dialog provides checkboxes that you can select.  
 
-## Running and saving searches  
+## Run and save searches  
 
 After you set the values for the search criteria, you can run the search by selecting **Search** or you can save the search by selecting **Save parameters to My Favorites**. Saved searches are displayed in My Workspace and can be run at any time.  
 
@@ -72,7 +72,6 @@ The following table lists examples of using advanced search to find objects in O
 |All rules that have overrides|-   **Object:** Rules<br>-   **Condition:** the rule has been overridden for any context (excluding category overrides)|  
 |All monitors that autoresolve alerts|-   **Object:** Monitors<br>-   **Condition:** autoresolves alerts|  
 |All Unix computers in a warning or critical state|-   **Object:** Managed Objects<br>-   **Condition/Value:** In specific health state/warning, critical<br>-   **Condition/Value:** Contained in a specific group/Unix Computer Group|  
-
 
 ## Next steps
 

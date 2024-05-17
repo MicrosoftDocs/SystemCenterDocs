@@ -1,5 +1,5 @@
 ---
-title: Examining Properties of Alerts, Rules, and Monitors
+title: Examine Properties of Alerts, Rules, and Monitors
 description: This article describes how to examine properties of alerts, rules and monitors.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Examining properties of alerts, rules, and monitors
+# Examine properties of alerts, rules, and monitors
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -58,7 +58,6 @@ The properties pages for alerts, rules, and monitors offer useful information an
 
 >[!NOTE]
 > Orphan alerts are closed based on the type of monitor. [Learn more](manage-alert-created-by-monitor.md#closure-of-orphan-alerts)
-
 
 ## Next steps
 

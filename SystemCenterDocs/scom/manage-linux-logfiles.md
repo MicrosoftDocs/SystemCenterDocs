@@ -35,13 +35,13 @@ System Center Operations Manager now has enhanced log file monitoring capabiliti
 - Support for generic Fluentd plugins published by the Fluentd community.
 
 ## Basic operation
+
 The basic operation of log file monitoring in Linux includes the following steps:
 
 1. Record is written to a log on a Linux agent.
 2. Fluentd collects the record and creates an event on pattern match.
 3. Event is sent to OMED service on management server and logged to the **System Center OMED Service** Event Log on the management server. (The **System Center OMED Service** Event Log is only created when an Event has been successfully sent from a Fluentd Agent)
-3. Rules and monitors in a custom management pack collect events and create alerts in Operations Manager.
-
+4. Rules and monitors in a custom management pack collect events and create alerts in Operations Manager.
 
 ::: moniker range="sc-om-1801"
 
@@ -57,7 +57,7 @@ The basic operation of log file monitoring in Linux includes the following steps
 
 ::: moniker range=">=sc-om-2019"
 
-[!INCLUDE [log-file-monitoring-2019.md](../includes/linux-log-file-monitoring-2019.md)]
+[!INCLUDE [log-file-monitoring.md](../includes/linux-log-file-monitoring.md)]
 
 ::: moniker-end
 

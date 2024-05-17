@@ -1,5 +1,5 @@
 ---
-title: Connecting Operations Manager With Other Management Systems
+title: Connect Operations Manager With Other Management Systems
 description: This article describes how to integrate Operations Manager with other enterprise management systems and System Center components.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 7fd5ca6b-cde4-4610-ba6d-6fbb7ca57373
 ---
 
-# Connecting Operations Manager with other management systems
+# Connect Operations Manager with other management systems
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -50,7 +50,6 @@ The connector framework in Operations Manager was designed to be a lightweight t
 System Center 2016 and later has the same connector framework from Operations Manager 2012/2012 R2 and 2007 R2. New connectors can be created using the Operations Manager Connector Framework. Verify from your vendor if the existing connector released for Operations Manager 2012/2012 R2 will work without modification for Operations Manager 2016 and later.
 ::: moniker-end
 
-
 ## System Center Integration
 
 ### Virtual Machine Manager
@@ -63,7 +62,7 @@ There's nothing that the vendor of resources that are used by VMM must do to hav
 
 ### Service Manager
 
-Service Manager integrates with Operations Manager through two types of connectors that are both created and configured in the Service Manager console. 
+Service Manager integrates with Operations Manager through two types of connectors that are both created and configured in the Service Manager console.
 
 * The Configuration Items connector imports objects from Operations Manager as Configuration Items in Service Manager.  Discoveries in Operations Manager locate resources and their properties on managed computers, and the connector allows these objects to be automatically imported into Service Manager.
 * The Alerts connector imports alerts as they're created from Operations Manager into Service Manager.  They're created in Service manager as incidents where they can be managed. The incident then remains in synchronization with the alert, allowing it to be closed when the incident is resolved.
@@ -73,10 +72,10 @@ Service Manager integrates with Operations Manager through two types of connecto
 The System Center Monitoring Pack for System Center - Service Manager allows Operations Manager to monitor the health of a Service Manager environment. It discovers Service Manager management servers and data warehouse and measures the health of its services.
 
 The Operations Manager agent can't be installed on a Service Manager management server because Service Manager uses the System Center Management service to process its own management packs. To monitor a Service Manager management server, you must configure it to use agentless monitoring, which allows Operations Manager to process its management packs on an Operations Manager management server.  Once the computer is added to the Operations Manager management group in this manner, it's monitored like any other computer.  The only exception is that it won't run any rules or monitors that don't support an agentless scenario.
- 
+
 ## Orchestrator
 
-The System Center Integration Pack for System Center Operations Manager includes activities that allow you to create a runbook in System Center - Orchestrator that interacts with Operations Manager.  You can perform many of the functions that you can perform with Windows PowerShell cmdlets only within the context of an Orchestrator runbook. 
+The System Center Integration Pack for System Center Operations Manager includes activities that allow you to create a runbook in System Center - Orchestrator that interacts with Operations Manager.  You can perform many of the functions that you can perform with Windows PowerShell cmdlets only within the context of an Orchestrator runbook.
 The activities included in the Operations Manager Integration Pack address the following scenarios:
 
 * Retrieve and modify alerts. This includes the ability to monitor for an alert to be created or changed, a feature that directly supports the connector scenario with other management systems.  
@@ -98,7 +97,6 @@ The recommended strategy to raise an alert in Operations Manager if a runbook fa
 ## Product Connector installation  
 
 If you want to connect to a particular management system, you should ask the vendor of that management system for a product connector. Installation instructions should be included in the download of the product connector files. After a product connector is installed, you can configure which events you want the product connector to accept or forward using subscriptions. The product connectors you install are displayed in the Administration workspace in **Product Connectors**. For more information, see [How to Configure a Product Connector Subscription](manage-integration-config-integration.md).  
-
 
 ## Next steps
 
