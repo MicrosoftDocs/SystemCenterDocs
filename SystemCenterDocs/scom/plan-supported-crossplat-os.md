@@ -20,6 +20,15 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 
 ::: moniker-end
 
+::: moniker range="sc-om-2025"
+
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2025 - Operations Manager.
+
+>[!IMPORTANT]
+> Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
+
+::: moniker-end
+
 ::: moniker range="sc-om-2022"
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2022 - Operations Manager.
@@ -61,9 +70,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 >[!NOTE]
->- Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022.
+>- Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022 and later.
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -75,7 +84,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 |glibc|C Standard Libraries|2.17|
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
 |PAM|Pluggable Authentication Modules|1.1.8|
-
 
 ## Red Hat Enterprise Linux Server 6  (applicable for 2019 UR3 and later)
 
@@ -116,6 +124,7 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |Release|Oracle Solaris 11|11/11 SPARC|
 
 ## Solaris UTF\-8 Support
+
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.
 
 ::: moniker-end
@@ -132,9 +141,9 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 >[!NOTE]
->- SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022.
+>- SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022 and later.
 
 ::: moniker-end
 
@@ -210,7 +219,7 @@ To install the agent on servers, see [Install the agent on RPM based Universal L
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 ## Universal Linux (Debian package)
 
@@ -236,8 +245,8 @@ Supported versions:
 - Oracle Linux 7 and 8
 - SLES 15
 - openSUSE Leap 15t
-- Rocky 8 
-- Alma 8 
+- Rocky 8
+- Alma 8
 - Red Hat Enterprise Linux (RHEL) Server 8 and 9
 
 >[!Note]
@@ -321,7 +330,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker range="sc-om-1801"
 
-## IBM AIX 7 (Power)  
+## IBM AIX 7 (Power)
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -367,7 +376,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
 
-## Red Hat Enterprise Linux Server 7  
+## Red Hat Enterprise Linux Server 7
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -375,7 +384,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|  
 |PAM|Pluggable Authentication Modules|1.1.8-1|  
 
-## Red Hat Enterprise Linux Server 7 (Power)  
+## Red Hat Enterprise Linux Server 7 (Power)
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -392,7 +401,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker range="<=sc-om-1807"
 
-## Solaris 10 SPARC  
+## Solaris 10 SPARC
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -417,7 +426,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.16.34|
 |Release|Oracle Solaris 10 9/10|s10x_u9wos_14a x86|
 
-## Solaris 11 SPARC  
+## Solaris 11 SPARC
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -441,7 +450,8 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0, REV=2010.05.25.01.00|
 |Release|Oracle Solaris 11|11/11 X86|  
 
-## Solaris UTF\-8 Support  
+## Solaris UTF\-8 Support
+
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.  
 
 ::: moniker-end
@@ -459,7 +469,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ::: moniker range="<=sc-om-1807"
 
-## SUSE Linux Enterprise Server 12   
+## SUSE Linux Enterprise Server 12
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -471,6 +481,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 ::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Universal Linux (Debian package)
+
 Debian 8 and Ubuntu 14.04, 16.04 are supported.
 
 |Required package|Description|Minimum version|  
@@ -498,6 +509,7 @@ Ubuntu 14.04, 16.04 are supported.
 ::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Universal Linux (RPM package)
+
 CentOS 7 and Oracle Linux 6, 7 are supported.
 
 |Required package|Description|Minimum version|  
@@ -511,6 +523,7 @@ CentOS 7 and Oracle Linux 6, 7 are supported.
 ::: moniker range="sc-om-2016"
 
 ## Universal Linux (RPM package)
+
 CentOS 7 and Oracle Linux 7 are supported.
 
 |Required package|Description|Minimum version|  

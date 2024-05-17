@@ -36,7 +36,6 @@ The following table lists the default Run As accounts created by Operations Mana
 | Local System Windows Account | Built-in SYSTEM account used by the agent action account. | Windows Local System account |
 | Network Service Windows Account | Built-in Network service account. | Windows NetworkService account |
 
-
 ## Default Run As profiles
 
 The following table lists the Run As profiles created by Operations Manager during setup.
@@ -68,7 +67,7 @@ The following table lists the Run As profiles created by Operations Manager duri
 | Windows Cluster Action Account | This profile is used for all discovery and monitoring of Windows Cluster components. This profile defaults to used action accounts unless it's populated by the user. | None |
 | WS-Management Action Account | This profile is used for WS-Management access. | None |
 
-## Understanding distribution and targeting
+## Understand distribution and targeting
 
 Both Run As account distribution and Run As account targeting must be correctly configured for the Run As profile to work properly.
 

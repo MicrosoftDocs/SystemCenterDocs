@@ -26,11 +26,11 @@ System Center Operations Manager consists of features such as the management se
 
 When an Operations Manager agent and management server are separated by either an untrusted forest or workgroup boundary, certificate-based authentication will need to be implemented. The following sections provide information about these situations and specific procedures for obtaining and installing certificates from Windows-based certification authorities.
 
-### Setting Up Communication Between Agents and Management Servers Within the Same Trust Boundary
+### Set up Communication Between Agents and Management Servers Within the Same Trust Boundary
 
 An agent and the management server use Windows authentication to mutually authenticate with each other before the management server accepts data from the agent. The Kerberos version 5 protocol is the default method for providing authentication. In order for Kerberos-based mutual authentication to function, the agents and management server must be installed in an Active Directory domain. If an agent and a management server are in separate domains, full trust must exist between the domains. In this scenario, after mutual authentication has taken place, the data channel between the agent and the management server is encrypted. No user intervention is required for authentication and encryption to take place.
 
-### Setting Up Communication Between Agents and Management Servers Across Trust Boundaries
+### Set up Communication Between Agents and Management Servers Across Trust Boundaries
 
 An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there's no trust between the two domains, the agents in one domain can't authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs.
 
@@ -38,7 +38,7 @@ A solution to this situation is to install a gateway server in the same domain w
 
 ![Illustration of the Monitor Untrusted Agent with Gateway.](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-with-gateway.png)
 
-### Setting Up Communication Across a Domain – Workgroup Boundary
+### Sett up Communication Across a Domain – Workgroup Boundary
 
 In your environment, you may have one or two agents deployed to a workgroup inside your firewall. The agent in the workgroup can't authenticate with the management server in the domain using the Kerberos protocol. A solution to this situation is to install certificates on both the computer hosting the agent and the management server that the agent connects to, as shown in the following illustration.
 
@@ -57,10 +57,9 @@ Perform the following steps on both the computer hosting the agent and the manag
 > [!NOTE]
 > Certificates with the KEYSPEC other than 1 aren't supported.
 
-
 These are the same steps for installing certificates on a gateway server, except you don't install or run the gateway approval tool
 
-#### Confirming Certificate Installation
+#### Confirm Certificate Installation
 
 If you've properly installed the certificate, the following event is written into the Operations Manager event log.
 

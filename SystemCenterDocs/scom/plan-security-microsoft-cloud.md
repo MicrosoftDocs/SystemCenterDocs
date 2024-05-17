@@ -42,6 +42,7 @@ You must associate the Run As Account with an appropriate Run As profile. The Ad
 
 Microsoft 365 management pack uses the agentless monitoring approach. All monitoring workflows that communicate with Microsoft 365 Monitoring API are being executed on management servers only. A user account with Global Administrator permissions for the subscription is required for monitoring of a Microsoft 365 subscription. It's highly recommended to add a new dedicated user account to each subscription you want to monitor.
 To create a new user with Global Administrator permissions using Microsoft 365 admin center:
+
 1. Go to https://portal.office.com/Adminportal/ to open the admin center. Sign in as Subscription Global Administrator.
 2. On Users and Groups tab: select Add button
 3. Enter First name, Last name, Display name, and User name and select a domain linked to the subscription.
