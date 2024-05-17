@@ -68,19 +68,19 @@ Follow these steps to install an agent on a computer running Windows by using th
 
 6. On the **Discovery Method** page, you can locate the computers that you want to manage by either scanning or browsing Active Directory Domain Services or entering the computer names.
 
-   If you want to scan, do the following:
+ If you want to scan, do the following:
 
-   1. If it isn't already selected, select **Scan Active Directory** and select **Configure**.
+ 1. If it isn't already selected, select **Scan Active Directory** and select **Configure**.
 
-   2. In the **Find Computers** dialog, enter the criteria that you want to use for discovering computers, and select **OK**.
+ 2. In the **Find Computers** dialog, enter the criteria that you want to use for discovering computers, and select **OK**.
 
-   3. In the **Domain** list, select the domain of the computers that you want to discover.
+ 3. In the **Domain** list, select the domain of the computers that you want to discover.
 
-   If you want to browse Active Directory Domain Services or enter the computer names, do the following:
+ If you want to browse Active Directory Domain Services or enter the computer names, do the following:
 
-    1. Select **Browse for, or type-in computer names**, select **Browse**, specify the names of the computers that you want to manage, and select **OK**.
+   1. Select **Browse for, or type-in computer names**, select **Browse**, specify the names of the computers that you want to manage, and select **OK**.
 
-    2. In the **Browse for, or type-in computer names** box, enter the computer names, separated by a semicolon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+   2. In the **Browse for, or type-in computer names** box, enter the computer names, separated by a semicolon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
 
 7. Select **Next**, and on the **Administrator Account** page, do one of the following:
 

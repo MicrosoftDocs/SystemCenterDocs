@@ -50,10 +50,10 @@ Follow these steps to discover and install an agent on a UNIX or Linux computer:
 
         b.  For the **Discovery type**, select **Discover all computers** or **Discover only computers with the UNIX/Linux agent installed**.
 
-           If you choose to discover only computers with the agent installed, the only credential that you'll need to provide is for the agent verification. This can be a low-privileged account on the UNIX or Linux computer.
+         If you choose to discover only computers with the agent installed, the only credential that you'll need to provide is for the agent verification. This can be a low-privileged account on the UNIX or Linux computer.
 
-           > [!IMPORTANT]
-           > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
+         > [!IMPORTANT]
+         > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
         c.  To specify the credentials for installing an agent, select **Set credentials**. For detailed instructions, see **Credentials for Installing Agents** in [Setting Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
 
