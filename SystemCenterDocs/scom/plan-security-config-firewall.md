@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/30/2024
+ms.date: 05/14/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -71,7 +71,7 @@ To access the Management Pack Catalog web service, your firewall and/or proxy se
 
 - The default SQL port is 1433, however this port number can be customized based on organizational requirements. To identify the configured port, follow these steps:
     1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for \<instance name\>, and then double-click **TCP/IP**.
-    2. In the **TCP/IP Properties** dialog, on the **IP Addresses** tab, note the port value for **IPAall**.  
+    2. In the **TCP/IP Properties** dialog, on the **IP Addresses** tab, note the port value for **IPAll**.  
 
 - If using a SQL Server configured with an Always On Availability Group or after migrating an installation, do the following to identify the port:  
     1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Select the server name to expand the server tree.

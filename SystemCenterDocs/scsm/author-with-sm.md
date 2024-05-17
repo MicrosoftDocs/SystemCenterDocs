@@ -5,9 +5,10 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/05/2023
+ms.date: 05/15/2024
 ms.subservice: service-manager
 ms.topic: article
+ms.custom: engagement-fy24
 ---
 
 # Author with System Center - Service Manager
