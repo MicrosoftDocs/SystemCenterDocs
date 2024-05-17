@@ -87,7 +87,7 @@ You can use the following REST APIs to create folders in Web console and save da
 
 - Request of type POST to create a new folder inside a management pack.
 
-      Parameters required:
+    Parameters required:
 
       | Name | Type  | Definition |
       |----|---|------|
@@ -96,7 +96,7 @@ You can use the following REST APIs to create folders in Web console and save da
 
 - Request of type POST to create a new folder inside a pre-existing folder
 
-      Parameters required:
+    Parameters required:
 
       | Name | Type  | Definition |
       |----|---|------|
