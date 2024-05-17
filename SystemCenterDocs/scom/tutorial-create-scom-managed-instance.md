@@ -21,20 +21,21 @@ This tutorial describes how to create an instance of the service (a SCOM Managed
 
 ## Supported regions
 
-- West Europe
-- West US
-- North Europe
+- Australia East
+- Canada Central
 - East US
 - East US 2
-- Australia East
-- Southeast Asia
-- UK South
-- West US 3
-- Sweden Central
-- Canada Central
-- South India
 - Germany West Central
-- Italy North 
+- Italy North
+- North Europe
+- South India
+- Southeast Asia
+- Sweden Central
+- UK South
+- West Europe
+- West US
+- West US 2
+- West US 3
 
 ## Prerequisites
 
