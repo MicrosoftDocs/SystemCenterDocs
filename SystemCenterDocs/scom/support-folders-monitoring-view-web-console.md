@@ -89,19 +89,19 @@ You can use the following REST APIs to create folders in Web console and save da
 
     Parameters required:
 
-      | Name | Type  | Definition |
-      |----|---|------|
-      |  path  | string  |Name of the new folder. |
-      | mpId|string| ID of the management pack where you want to create the new folder.  |
+    | Name | Type  | Definition |
+    |----|---|------|
+    |  path  | string  |Name of the new folder. |
+    | mpId|string| ID of the management pack where you want to create the new folder.  |
 
 - Request of type POST to create a new folder inside a pre-existing folder
 
     Parameters required:
 
-      | Name | Type  | Definition |
-      |----|---|------|
-      |  component Id  | string  |Folder ID of the parent where you want to store the new folder. |
-      | path|string| Name of the new folder.  |
+    | Name | Type  | Definition |
+    |----|---|------|
+    |  component Id  | string  |Folder ID of the parent where you want to store the new folder. |
+    | path|string| Name of the new folder.  |
 
 **monitoring/dashboard/**
 
