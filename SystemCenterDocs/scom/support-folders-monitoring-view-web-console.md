@@ -100,7 +100,7 @@ You can use the following REST APIs to create folders in Web console and save da
 
     | Name | Type  | Definition |
     |----|---|------|
-    |  component Id  | string  |Folder ID of the parent where you want to store the new folder. |
+    |  component ID  | string  |Folder ID of the parent where you want to store the new folder. |
     | path|string| Name of the new folder.  |
 
 **monitoring/dashboard/**

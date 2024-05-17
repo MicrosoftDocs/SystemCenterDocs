@@ -38,7 +38,7 @@ A solution to this situation is to install a gateway server in the same domain w
 
 ![Illustration of the Monitor Untrusted Agent with Gateway.](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-with-gateway.png)
 
-### Sett up Communication Across a Domain – Workgroup Boundary
+### Set up Communication Across a Domain – Workgroup Boundary
 
 In your environment, you may have one or two agents deployed to a workgroup inside your firewall. The agent in the workgroup can't authenticate with the management server in the domain using the Kerberos protocol. A solution to this situation is to install certificates on both the computer hosting the agent and the management server that the agent connects to, as shown in the following illustration.
 
