@@ -24,7 +24,7 @@ In Operations Manager 2016 and later, you can create a folder and place dashboar
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 In Operations Manager, you can create a folder and place dashboards/views inside it using the Operations console and Web console. You can also create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
 
@@ -32,7 +32,6 @@ In Operations Manager, you can create a folder and place dashboards/views inside
 
 > [!NOTE]
 > Folders and views created from operations console can be viewed in the web console, but the dashboards created from the web console won't be visible in the operations console.
-
 
 ## Create a new folder
 
@@ -58,7 +57,6 @@ Use the following steps:
 > - You can save a folder inside a preexisting folder. To do this, select the desired folder instead of Monitoring, and follow the same procedure mentioned above.
 > - These folders can be deleted from the operations console.
 
-
 ## Save a dashboard inside a folder
 
 1. Open the web console and navigate to **Monitoring**.
@@ -66,7 +64,7 @@ Use the following steps:
 3. Enter the name of the dashboard.
 4. Select the folder from the list where you want to store the dashboard.
    Management pack selection will be based on root folder.
-6. Select **Save**.
+5. Select **Save**.
    The dashboard is stored inside the selected folder and can be seen in the left navigation pane.
 
    ![Screenshot of save dashboard.](./media/support-for-folders/new-dashboard-folder-in-client.png)
@@ -83,12 +81,11 @@ You can use the following REST APIs to create folders in Web console and save da
 
 **Data/monitoringTreeForRootFolders**
 
-  - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders. The output of this request can be used for below POST requests.
-
+- Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders. The output of this request can be used for below POST requests.
 
 **monitoring/folder**
 
-  - Request of type POST to create a new folder inside a management pack.
+- Request of type POST to create a new folder inside a management pack.
 
       Parameters required:
 
@@ -97,7 +94,7 @@ You can use the following REST APIs to create folders in Web console and save da
       |  path  | string  |Name of the new folder. |
       | mpId|string| ID of the management pack where you want to create the new folder.  |
 
-  - Request of type POST to create a new folder inside a pre-existing folder
+- Request of type POST to create a new folder inside a pre-existing folder
 
       Parameters required:
 
@@ -108,7 +105,7 @@ You can use the following REST APIs to create folders in Web console and save da
 
 **monitoring/dashboard/**
 
-  - Request of type POST to save a dashboard inside a new folder.
+- Request of type POST to save a dashboard inside a new folder.
 
      Parameters required:
 
@@ -117,8 +114,7 @@ You can use the following REST APIs to create folders in Web console and save da
      |  name | string  |Name of the new dashboard. |
      | path|string| Folder ID where you want to save the new dashboard.  |
 
-
-  - Request of type POST to save a dashboard inside the root monitoring.
+- Request of type POST to save a dashboard inside the root monitoring.
 
      Parameters required:
 
@@ -127,8 +123,8 @@ You can use the following REST APIs to create folders in Web console and save da
      |  mpId  | string  |ID of the management pack where you want to store the dashboard. |
      | name |string| Name of the new dashboard.  |
 
-
 ## Next Steps
+
 - [See standard views in management pack](manage-console-standard-views.md)
 
 - [Scope the views in management packs](manage-console-scope-views.md)

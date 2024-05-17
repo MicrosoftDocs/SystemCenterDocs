@@ -38,6 +38,6 @@ To register the SCOM Managed Instance resource provider, follow these steps:
 
     :::image type="Microsoft compute resource provider" source="media/register-scom-managed-instance-resource-provider/resource-provider-compute-inline.png" alt-text="Screenshot that shows the Microsoft compute provider." lightbox="media/register-scom-managed-instance-resource-provider/resource-provider-compute-expanded.png":::
 
-## Next steps
+## Next step
 
-- [Create a separate subnet in a virtual network](create-separate-subnet-in-vnet.md)
+[Create a separate subnet in a virtual network](create-separate-subnet-in-vnet.md)

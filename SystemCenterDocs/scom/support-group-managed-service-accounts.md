@@ -26,7 +26,7 @@ Operations Manager 2019 UR1 and later supports group managed service accounts (g
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Operations Manager supports group managed service accounts (gMSA). This article details the accounts used for gMSA and the procedures involved with gMSA support.
 
@@ -36,6 +36,7 @@ Operations Manager supports group managed service accounts (gMSA). This article 
 ::: moniker-end
 
 ## Accounts used for gMSA
+
 Currently, the Operations Manager uses the following accounts and services:
 
   - Action Accounts
@@ -63,6 +64,7 @@ Test-ADServiceAccount <gMSA_name>
 ```
 
 ## Next steps
+
 To use gMSA, do the following:
 
 - [Provide security rights](provide-security-rights.md)

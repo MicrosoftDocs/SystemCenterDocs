@@ -61,7 +61,7 @@ The following options are available on the  **Log File Details**  page of the wi
 
 ## Creating and modifying UNIX/Linux log file templates
 
-#### To create a UNIX/Linux log file template
+To create a UNIX/Linux log file template, follow these steps:
 
 1. If you want to monitor the log file on a group of computers, determine the target group for the monitor by using the following logic:
 
@@ -87,7 +87,7 @@ The following options are available on the  **Log File Details**  page of the wi
 13. Select  **Next**.
 14. Verify the summary information for the template, and select  **Create**.
 
-#### To modify an existing UNIX/Linux Log File template
+### Modify an existing UNIX/Linux Log File template
 
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring**  workspace.

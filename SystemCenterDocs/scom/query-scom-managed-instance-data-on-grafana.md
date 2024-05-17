@@ -21,9 +21,9 @@ From Azure Managed Grafana linked to Azure Monitor SCOM Managed Instance, you ca
 
 ## Prerequisites
 
-Before you query monitoring data from Azure Managed Grafana portal, ensure that SCOM Managed Instance is linked to Azure Managed Grafana. For more information, see [Dashboards on Azure Managed Grafana](./dashboards-on-azure-managed-grafana.md). 
+- Before you query monitoring data from Azure Managed Grafana portal, ensure that SCOM Managed Instance is linked to Azure Managed Grafana. For more information, see [Dashboards on Azure Managed Grafana](./dashboards-on-azure-managed-grafana.md).
 
-Few ready-to-use dashboards are available at [Azure/SCOM Managed Instance/Operational Dashboard](https://grafana.com/grafana/dashboards/19919-azure-scom-managed-instance-operational-dashboard/), which can be imported and edited as per your requirement on Azure Managed Grafana instance.
+- Few ready-to-use dashboards are available at [Azure/SCOM Managed Instance/Operational Dashboard](https://grafana.com/grafana/dashboards/19919-azure-scom-managed-instance-operational-dashboard/), which can be imported and edited as per your requirement on Azure Managed Grafana instance.
 
 ## Create a dashboard on Azure Managed Grafana
 
@@ -191,6 +191,6 @@ SELECT PD.TimeSampled
   INNER JOIN [dbo].[ManagementPackView] MPV ON MPV.Id = MTV.ManagementPackId and MPV.name like 'Microsoft.SQL%' 
 ```
 
-## Next steps
+## Next step
 
 [Troubleshoot issues with Azure Monitor SCOM Managed Instance](troubleshoot-scom-managed-instance.md).

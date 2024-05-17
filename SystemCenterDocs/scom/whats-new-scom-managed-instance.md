@@ -13,7 +13,7 @@ ms.topic: whats-new
 monikerRange: '>=sc-om-2019'
 ---
 
-# What’s new in Azure Monitor SCOM Managed Instance 
+# What’s new in Azure Monitor SCOM Managed Instance
 
 This article provides details of what's new in each version of Azure Monitor SCOM Managed Instance.
 

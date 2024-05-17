@@ -1,6 +1,6 @@
 ---
 ms.assetid: 5d49e7f3-0e22-4ab4-90c4-ef1c67a28aae
-title: Using exception handlers to define critical exceptions in Operations Manager management pack
+title: Use exception handlers to define critical exceptions in Operations Manager management pack
 description: This article provides an overview of using exception handlers to define critical exceptions
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Using exception handlers to define critical exceptions
+# Use exception handlers to define critical exceptions
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -40,7 +40,7 @@ The default list of exception handlers includes:
 
 ## Add an exception handler
 
-### To add an exception handler
+To add an exception handler, follow these steps:
 
 1. To open the .NET Application Performance Monitoring template, in the Operations Manager console, in the navigation pane, select the  **Authoring**  button, select  **Management Pack Templates**, and select  **.NET Application Performance Monitoring**.
 2. Right-click the application group you want to modify, and then select  **Properties**.
@@ -56,7 +56,7 @@ The default list of exception handlers includes:
 
 ## Edit an exception handler
 
-### To edit an exception handler
+To edit an exception handler, follow these steps:
 
 1. Open the .NET Application Performance Monitoring template. In the Operations Manager console, in the navigation pane, select the  **Authoring**  button, select  **Management Pack Templates**, and select  **.NET Application Performance Monitoring**.
 2. Right-click the application group you want to modify and select  **Properties**.
@@ -69,7 +69,7 @@ The default list of exception handlers includes:
 
 ## Remove an exception handler
 
-### To remove an exception handler
+To remove an exception handler, follow these steps:
 
 1. Open the .NET Application Performance Monitoring template. In the Operations Manager console, in the navigation pane, select the  **Authoring**  button, select  **Management Pack Templates**, and select  **.NET Application Performance Monitoring**.
 2. Right-click the application group you want to modify and select  **Properties**.

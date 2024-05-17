@@ -24,7 +24,7 @@ Welcome to System Center - Operations Manager. Operations Manager provides infra
 
 ## Operations Manager documentation
 
--   [Getting Started with System Center - Operations Manager](get-started.md)
+- [Getting Started with System Center - Operations Manager](get-started.md)
 
     Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
 
@@ -32,18 +32,18 @@ Welcome to System Center - Operations Manager. Operations Manager provides infra
 
     Review information to help you plan the deployment of Operations Manager into your organization.
 
--   [Deploying System Center - Operations Manager](deploy-overview.md)
+- [Deploying System Center - Operations Manager](deploy-overview.md)
 
     Read these articles to learn how to deploy Operations Manager in your environment.
 
--   [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md)
+- [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md)
 
     Read these articles once you've Operations Manager up and running and are looking to start monitoring your environment and procedures for day-to-day operations.
 
--   [Management Pack Authoring Guide for Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh457564(v=sc.12))
+- [Management Pack Authoring Guide for Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh457564(v=sc.12))
 
     The Management Pack Authoring Guide for Operations Manager provides information on creating custom monitoring for your service or application.
-    
--   [System Center - Operations Manager troubleshooting](/troubleshoot/system-center/scom/welcome-scom)
+
+- [System Center - Operations Manager troubleshooting](/troubleshoot/system-center/scom/welcome-scom)
 
     Read these articles to learn how to troubleshoot Operations Manager issues in your environment.

@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Scoping the Fabric Health Dashboard to a specific cloud
+# Scope the Fabric Health Dashboard to a specific cloud
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -24,7 +24,7 @@ Using the Fabric Health Dashboard, you can see the overall cloud health and the 
 
 ## Monitor the health of a cloud
 
-### To scope to a particular cloud
+### Scope to a particular cloud
 
 1. In the Operations Manager console, select **Monitoring**, expand **Cloud Health Dashboard**, select **Cloud Health**, and you see the private clouds you're monitoring in the **Cloud State** pane.
 

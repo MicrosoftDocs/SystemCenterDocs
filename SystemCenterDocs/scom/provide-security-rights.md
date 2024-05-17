@@ -29,11 +29,10 @@ This article provides information on how to provide security rights to group Man
 
 To provide *log on as a service* right to gMSA accounts, follow these steps:
 
-
-1.	Open the *Local Security Policy* MMC snap-in. Or you can open a run box and enter: `secpol.msc`
-2.	Go to **Local Policies**>**User Rights Assignment**
-3.	Double-click **Log on as a service** job under **Policy**.
-4.	Add the gMSAs to the list of accounts that are allowed to log on as a service.
+1. Open the *Local Security Policy* MMC snap-in. Or you can open a run box and enter: `secpol.msc`
+2. Go to **Local Policies**>**User Rights Assignment**
+3. Double-click **Log on as a service** job under **Policy**.
+4. Add the gMSAs to the list of accounts that are allowed to log on as a service.
 
     Here are the account details:
 
@@ -47,27 +46,28 @@ To provide *log on as a service* right to gMSA accounts, follow these steps:
 
         ![Screenshot of Log-on Service properties.](media/gmsa/logon-service-properties.png)
 
-
-
 ## Provide *Log on as a batch* right
+
 To grant *log on as a batch right* to Data Writer and Data Reader gMSAs, follow these steps:
 
-1.	Open the *Local Security Policy* MMC snap-in. Or you can open a run box and enter: `secpol.msc`
-2.	Go to **Local Policies**>**User Rights Assignment**
-3.	Select **Log on as a batch** under **Policy**.  
-4.  Add the gMSAs to the list of accounts that are allowed to log on as a batch.
+1. Open the *Local Security Policy* MMC snap-in. Or you can open a run box and enter: `secpol.msc`
+2. Go to **Local Policies**>**User Rights Assignment**
+3. Select **Log on as a batch** under **Policy**.  
+4. Add the gMSAs to the list of accounts that are allowed to log on as a batch.
 
     ![Screenshot of log on as a batch.](media/gmsa/batch-job-properties.png)
 
 ## Generate security audits
+
 Provide permissions to the gMSA SDK account if you wish to generate auditing events. Follow these steps:
 
-1.	Open the *Local Security Policy* MMC snap-in. Or you can open a run box and enter: `secpol.msc`
-2.	Go to **Local Policies**>**User Rights Assignment**
-3.	Double-click **Generate security audits** under **Policy**.
-4.	Add the gMSAs to the list of accounts that are allowed to generate security audits.
+1. Open the *Local Security Policy* MMC snap-in. Or you can open a run box and enter: `secpol.msc`
+2. Go to **Local Policies**>**User Rights Assignment**
+3. Double-click **Generate security audits** under **Policy**.
+4. Add the gMSAs to the list of accounts that are allowed to generate security audits.
 
     ![Screenshot of Generate Security Audits.](media/gmsa/generate-security-audit-properties.png)
 
-## Next steps
+## Next step
+
 After you've provided the required access rights, [change the databases](database-changes.md).
