@@ -70,8 +70,8 @@ Follow these steps to deploy the Operations Manager agent with the Agent Setup W
 
     a. Enter the name of the management group in the **Management Group Name** field and the (which server?) server name in the **Management Server** field.
 
-       > [!NOTE]
-       > To use a gateway server, enter the gateway server name in the **Management Server** text box.
+     > [!NOTE]
+     > To use a gateway server, enter the gateway server name in the **Management Server** text box.
 
     b. Enter a value for **Management Server Port**, or leave the default of 5723.
 
