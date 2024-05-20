@@ -14,7 +14,7 @@ ms.custom: engagement-fy23
 
 # Security Configuration
 
-Monitoring accounts, SQL accounts, and Azure Active Directory principles used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
+Monitoring accounts, SQL accounts, and Microsoft Entra principles used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
 
 Every managed instance should have a sign-in for the monitoring account. This sign-in should be granted either of the following permissions:
 
