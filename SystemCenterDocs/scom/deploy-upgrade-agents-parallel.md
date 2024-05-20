@@ -5,7 +5,7 @@ description: This article provides guidance with upgrading agents when planning 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 04/30/2024
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -20,7 +20,23 @@ ms.topic: article
 
 ::: moniker-end
 
-When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 1801 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.  
+::: moniker range="<=sc-om-2016"
+
+When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 1801 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services. 
+
+::: moniker-end 
+
+::: moniker range="sc-om-2019"
+
+When you perform a side-by-side deployment of System Center 2019 - Operations Manager or System Center Operations Manager 2016 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services. 
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+When you perform a side-by-side deployment of System Center 2022 - Operations Manager or System Center Operations Manager 2019 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services. 
+
+::: moniker-end
 
 ::: moniker range="sc-om-1801"
 
@@ -33,7 +49,23 @@ Agents reporting to your Operations Manager 2012 R2 or 2016 management group can
 
 ::: moniker-end
 
-Agents reporting to your Operations Manager 2012 R2 management group can be upgraded to System Center 2016 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2012 R2 management group.  
+::: moniker range="<=sc-om-2016"
+
+Agents reporting to your Operations Manager 2012 R2 management group can be upgraded to System Center 2016 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2012 R2 management group. 
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
+Agents reporting to your Operations Manager 2016 management group can be upgraded to System Center 2019 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2016 management group.
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+Agents reporting to your Operations Manager 2019 management group can be upgraded to System Center 2022 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2019 management group.
+
+::: moniker-end
 
 ## Upgrading agents
 

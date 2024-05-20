@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/05/2024
+ms.date: 05/06/2024
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -38,6 +38,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.10056.0||March 2022 |General Availability |
 |10.22.10110.0|[5020318](https://support.microsoft.com/kb/5020318) | December 2022 | Update Rollup 1|
 |10.22.10208.0|[5031649](https://support.microsoft.com/kb/5031649) | November 2023 | Update Rollup 2 |
+|10.22.10215.0|[5033752](https://support.microsoft.com/kb/5033752) | November 2023 | Update Rollup 2 hotfix |
 
 ### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
@@ -49,7 +50,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1042.0|[v1.6.12-1](https://github.com/microsoft/SCXcore/releases/tag/v1.6.12-1) |February 2023 |1.6.12-1 |Update Rollup 1 - Hotfix |
 |10.22.1044.0|[v1.7.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.0-0) |March 2023 |1.7.0-0 |Update Rollup 1 - OpenSSL 3.0 |
 |10.22.1052.0|[v1.7.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.1-0) |August 2023 |1.7.1-0 |Update Rollup 1 - Hotfix |
-|10.22.1055.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |OMI Vulnerability Fix |
+|10.22.1055.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |UR2 refresh/Deactivate OMI HTTP tracing|
 |10.22.1070.0|[v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024 |1.8.1-0 |Update Rollup 2 - Hotfix |
 |10.22.1072.0|[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0) |April 2024|1.9.0-0|FIPS Crypto Policy Support |
 

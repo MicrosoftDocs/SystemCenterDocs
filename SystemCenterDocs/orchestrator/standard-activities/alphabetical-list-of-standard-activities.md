@@ -1,7 +1,7 @@
 ---
 title: Alphabetical List of Standard Activities
 description: This article lists Standard Activities
-ms.date: 12/28/2022
+ms.date: 05/16/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -13,7 +13,7 @@ caps.latest.revision: 12
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ---
 # Alphabetical List of Standard Activities
 
