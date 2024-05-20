@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 07/20/2023
+ms.date: 05/20/2024
 ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
@@ -96,6 +96,10 @@ For more information about how to set up, configure, and run your environment to
 ## New features in Orchestrator 2022
 
 See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2022.
+
+### Release of SCO 2022 Exchange User Integration pack v10.22.2.19
+
+SCO 2022 Exchange User Integration pack now supports Private clouds. Download [here](https://www.microsoft.com/download/details.aspx?id=104336).
 
 ### Release of SCO 2022 Exchange Admin Integration pack v10.22.2.5
 
