@@ -4,7 +4,7 @@ description: This article describes how to enable Microsoft Teams notification c
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/07/2024
+ms.date: 05/20/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -33,7 +33,7 @@ Before you begin, ensure you've the following:
 - Teams tenant information.
 - Run As account. Delegated API type is used in Teams integration and the Run As account credentials will be used to authenticate.
   Run As account should be
-   - A valid Azure Active Directory (Azure AD) account (sample: user@domain)
+   - A valid Microsoft Entra account (sample: user@domain)
    - Licensed to use Microsoft Teams
    - A member of target Microsoft Teams channel
    - Not enabled for multifactor authentication (MFA)
@@ -45,7 +45,7 @@ Before you begin, ensure you've the following:
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
 
-- On the **Azure Active Directory admin center** > **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
+- On the **Microsoft Entra admin center** > **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
 
   :::image type="advance settings" source="media/teams-notifications/advance-settings.png" alt-text="screenshot showing advance settings.":::
 
@@ -75,7 +75,7 @@ Follow these steps:
 
    :::image type="Microsoft Teams channel notification" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="screenshot showing Microsoft Teams notification channel wizard.":::
 
-4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your Azure Active Directory (Azure AD) App, and select **Next**.
+4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your Microsoft Entra App, and select **Next**.
 
    :::image type="authentication" source="media/teams-notifications/authentication.png" alt-text="screenshot showing authentication.":::
 
