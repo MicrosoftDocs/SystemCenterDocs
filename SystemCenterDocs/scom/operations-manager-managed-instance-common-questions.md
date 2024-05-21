@@ -80,7 +80,12 @@ Azure RBAC is the role-based access control system that Azure follows while gran
 
 Azure RBAC is divided into Azure roles and Microsoft Entra roles. At a high level, Azure roles control permissions to manage Azure resources, while Microsoft Entra roles control permissions to manage Microsoft Entra Directory resources. The following table compares some of the differences.
 
-:::image type="Comparision of Azure roles and Microsoft Entra roles" source="media/operations-manager-managed-instance-common-questions/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of Azure roles and Microsoft Entra roles.":::
+|**Azure roles**|**Microsoft Entra roles**|
+|---|---|
+|Manage access to Azure resources|Manage access to Microsoft Entra resources|
+|Supports custom roles|Supports custom roles|
+|Scope can be specified at multiple levels (management groups, subscription, resource group, resource)|Scope can be specified at the tenant level (organization-wide), administrative unit, or on an individual object (for example, a specific application)|
+|Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API|Role information can be accessed in Azure admin portal, Microsoft 365, admin center, Microsoft graph, Microsoft Entra PowerShell|
 
 Below is the high-level view of how the classic subscription administrator roles, Azure roles, and Azure AD roles are related.
 
