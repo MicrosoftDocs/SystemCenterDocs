@@ -3,7 +3,7 @@ description: This article explains the offline backup workflow for DPM.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 08/25/2020
+ms.date: 05/21/2024
 title: Offline backup for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89
@@ -49,11 +49,11 @@ Ensure that the following prerequisites are met before initiating the Offline Ba
 * Update Rollup 1 is installed on SC DPM 2019.
 
   > [!NOTE]
-  > With DPM 2019 UR1 and later, the offline seeding authenticates using Azure Active Directory.
+  > With DPM 2019 UR1 and later, the offline seeding authenticates using Microsoft Entra.
 
 * On the computer running Azure Backup agent, ensure that Microsoft Edge or Internet Explorer 11 is installed and JavaScript is enabled.
 * Create an Azure Storage account in the same subscription as the Recovery Services vault.
-* Ensure that you've the [necessary permissions](/azure/active-directory/develop/howto-create-service-principal-portal) to create the Azure Active Directory application. The Offline Backup workflow creates an Azure Active Directory application in the subscription associated with the Azure Storage account. The goal of the application is to provide Azure Backup with secure and scoped access to the Azure Import Service required for the Offline Backup workflow.
+* Ensure that you've the [necessary permissions](/azure/active-directory/develop/howto-create-service-principal-portal) to create the Microsoft Entra application. The Offline Backup workflow creates an Microsoft Entra application in the subscription associated with the Azure Storage account. The goal of the application is to provide Azure Backup with secure and scoped access to the Azure Import Service required for the Offline Backup workflow.
 * Register the Microsoft.ImportExport resource provider with the subscription containing the Azure Storage account. To register the resource provider:
     1. In the main menu, select **Subscriptions**.
     2. If you're subscribed to multiple subscriptions, select the subscription you're using for the offline backup. If you use only one subscription, then your subscription appears.

@@ -241,7 +241,7 @@ Check if you see one of the following error messages in the DPM/MABS console at 
 To resolve this issue, do the following steps and retry the policy configuration.
 
 1. Sign in to Azure sign-in page that appears on the DPM server UI using a different account with admin access on the subscription that will have the import export job created.
-2. If no other server has offline seeding configured and no other server is dependent on the `AzureOfflineBackup_<Azure User Id>` application, then delete this application from **Azure portal > Azure Active Directory > App registrations**.
+2. If no other server has offline seeding configured and no other server is dependent on the `AzureOfflineBackup_<Azure User Id>` application, then delete this application from **Azure portal > Microsoft Entra > App registrations**.
 
    > [!NOTE]
    > Check if the application `AzureOfflineBackup_<Azure User Id>` doesn't have any other offline seeding configured and also no other server is dependent on this application. Go to **Settings > Keys** under the Public Keys section; it shouldn't have any other **public keys** added. See the following screenshot for reference:
