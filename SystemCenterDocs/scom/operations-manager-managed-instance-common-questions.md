@@ -84,8 +84,8 @@ Azure RBAC is divided into Azure roles and Microsoft Entra roles. At a high leve
 |---|---|
 |Manage access to Azure resources|Manage access to Microsoft Entra resources|
 |Supports custom roles|Supports custom roles|
-|Scope can be specified at multiple levels (management groups, subscription, resource group, resource)|Scope can be specified at the tenant level (organization-wide), administrative unit, or on an individual object (for example, a specific application)|
-|Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API|Role information can be accessed in Azure admin portal, Microsoft 365, admin center, Microsoft graph, Microsoft Entra PowerShell|
+|Scope can be specified at multiple levels (management group, subscription, resource group, resource)|Scope can be specified at the tenant level (organization-wide), administrative unit, or on an individual object (for example, a specific application)|
+|Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API|Role information can be accessed in Azure admin portal, Microsoft 365, admin center, Microsoft Graph, Microsoft Entra PowerShell|
 
 Below is the high-level view of how the classic subscription administrator roles, Azure roles, and Azure AD roles are related.
 
