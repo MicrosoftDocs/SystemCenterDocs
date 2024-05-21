@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 05/20/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -58,7 +58,6 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- Online conversions aren't supported. You need to power off the VMware VMs.
   >- VMware tools must be uninstalled from the guest operating system of the VM.
   >- We recommend upgrading to VMM 2022 UR2 to convert your VMware VMs to Hyper-V four times faster.
-  >- Converting VMware VMs in vSAN configuration to Hyper-V isn't supported through SCVMM.
 
 ::: moniker-end
 
