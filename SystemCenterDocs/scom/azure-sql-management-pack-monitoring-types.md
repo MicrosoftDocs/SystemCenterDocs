@@ -6,7 +6,7 @@ ms.custom: engagement-fy23
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 05/20/2024
+ms.date: 05/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -167,7 +167,7 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
     ![Screenshot showing Enter SPN manually.](./media/azure-sql-management-pack/entering-spn-manually.png)
 
-    If necessary, you can create and configure a new Microsoft Entra application and Azure Service Principal Name by using [Azure PowerShell](/powershell/azure/?preserve-view=true&view=azps-2.8.0). For more information, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+    If necessary, you can create and configure a new Microsoft Entra ID application and Azure Service Principal Name by using [Azure PowerShell](/powershell/azure/?preserve-view=true&view=azps-2.8.0). For more information, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 
     Once a new Run As Account is created, at the **Enter SPN Manually Status** step, review the status and select **Next**.
 
