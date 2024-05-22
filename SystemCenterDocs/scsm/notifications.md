@@ -73,7 +73,7 @@ You can use the following procedures to configure notification channels and vali
 
 ## Send notifications using external email authentication
 
-Microsoft Entra implements OAuth protocol for secure authentication of its users and applications. Here's how the connection establishes when the activity runs:
+Microsoft Entra ID implements OAuth protocol for secure authentication of its users and applications. Here's how the connection establishes when the activity runs:
 
 1. Obtains user credentials from IP configuration.
 
@@ -87,9 +87,9 @@ Microsoft Entra implements OAuth protocol for secure authentication of its users
 
 To create an Azure AD app, do the following:
 
-1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) and search for [Microsoft Entra admin center](https://aad.portal.azure.com/).
+1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) and search for [Microsoft Entra ID admin center](https://aad.portal.azure.com/).
 
-2. On the **Microsoft Entra admin center** dashboard, select **Microsoft Entra**.
+2. On the **Microsoft Entra ID admin center** dashboard, select **Microsoft Entra ID**.
 
 3. On the **Overview** page, under **Manage** > **App registrations**, select **New registration**.
      
