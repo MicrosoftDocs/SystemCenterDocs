@@ -153,7 +153,7 @@ We recommend that you test the upgrade to System Center 2022 - Service Manager i
 
 The order of your upgrades is important. Perform the upgrade steps in the following order:
 
-1. Back up your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center - Service Manager](/SystemCenterDocs/scsm/disaster-recovery.md).
+1. Back up your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md).
 
 2. Start with the data warehouse management server.  
 
