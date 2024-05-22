@@ -31,7 +31,7 @@ Managed identities for Azure are based on several key concepts:
 
 - **Principal ID** - The object ID of the service principal object for your managed identity that is used to grant role-based access to an Azure resource.
 
-- **Service Principal** - An Microsoft Entra ID object, which represents the projection of an Microsoft Entra ID application on a given tenant. For more information, see  [Service principal](/azure/active-directory/develop/developer-glossary#service-principal-object).
+- **Service Principal** - A Microsoft Entra ID object, which represents the projection of a Microsoft Entra ID application on a given tenant. For more information, see  [Service principal](/azure/active-directory/develop/developer-glossary#service-principal-object).
 
 ## Managed identity types
 
