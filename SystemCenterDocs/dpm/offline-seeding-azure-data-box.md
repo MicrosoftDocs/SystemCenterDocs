@@ -3,7 +3,7 @@ description: You can use Azure Data Box to seed initial Backup data offline from
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 08/04/2020
+ms.date: 05/22/2024
 title: Offline Seeding using Azure Data box
 ms.subservice: data-protection-manager
 ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
@@ -241,7 +241,7 @@ Check if you see one of the following error messages in the DPM/MABS console at 
 To resolve this issue, do the following steps and retry the policy configuration.
 
 1. Sign in to Azure sign-in page that appears on the DPM server UI using a different account with admin access on the subscription that will have the import export job created.
-2. If no other server has offline seeding configured and no other server is dependent on the `AzureOfflineBackup_<Azure User Id>` application, then delete this application from **Azure portal > Azure Active Directory > App registrations**.
+2. If no other server has offline seeding configured and no other server is dependent on the `AzureOfflineBackup_<Azure User Id>` application, then delete this application from **Azure portal > Microsoft Entra ID > App registrations**.
 
    > [!NOTE]
    > Check if the application `AzureOfflineBackup_<Azure User Id>` doesn't have any other offline seeding configured and also no other server is dependent on this application. Go to **Settings > Keys** under the Public Keys section; it shouldn't have any other **public keys** added. See the following screenshot for reference:
