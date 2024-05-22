@@ -78,17 +78,22 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 Azure RBAC is the role-based access control system that Azure follows while granting permissions. For more information, see [Azure role-based access control](/azure/role-based-access-control/overview). 
 
-Azure RBAC is divided into Azure roles and Azure Active Directory roles. At a high level, Azure roles control permissions to manage Azure resources, while Azure Active Directory roles control permissions to manage Azure Active Directory resources. The following table compares some of the differences.
+Azure RBAC is divided into Azure roles and Microsoft Entra ID roles. At a high level, Azure roles control permissions to manage Azure resources, while Microsoft Entra ID roles control permissions to manage Microsoft Entra ID Directory resources. The following table compares some of the differences.
 
-:::image type="Comparision of Azure roles and Azure active directory roles" source="media/operations-manager-managed-instance-common-questions/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of Azure roles and Azure active directory roles.":::
+|**Azure roles**|**Microsoft Entra ID roles**|
+|---|---|
+|Manage access to Azure resources|Manage access to Microsoft Entra ID resources|
+|Supports custom roles|Supports custom roles|
+|Scope can be specified at multiple levels (management group, subscription, resource group, resource)|Scope can be specified at the tenant level (organization-wide), administrative unit, or on an individual object (for example, a specific application)|
+|Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API|Role information can be accessed in Azure admin portal, Microsoft 365, admin center, Microsoft Graph, Microsoft Entra ID PowerShell|
 
 Below is the high-level view of how the classic subscription administrator roles, Azure roles, and Azure AD roles are related.
 
-:::image type="Azure active directory roles" source="media/operations-manager-managed-instance-common-questions/azure-active-directory-roles.png" alt-text="Screenshot of Azure active directory roles.":::
+:::image type="Microsoft Entra ID roles" source="media/operations-manager-managed-instance-common-questions/azure-active-directory-roles.png" alt-text="Screenshot of Microsoft Entra ID roles.":::
 
 **What is a Global Administrator role?**
 
-Users with the Global administrator role have access to all administrative features in Azure Active Directory and services that use Azure Active Directory identities, such as:
+Users with the Global administrator role have access to all administrative features in Microsoft Entra ID and services that use Microsoft Entra ID identities, such as:
    - Microsoft 365 Defender portal
    - Compliance portal
    - Exchange Online
