@@ -74,7 +74,7 @@ To create a SCOM Managed Instance, follow these steps:
         - **DNS server IP**: Enter the IP address of the Domain Name System (DNS) server that's providing the IP addresses to the resources in the domain from the previous step.
         - **OU Path**: Enter the organizational unit (OU) path to where you want to join the servers. This field isn't a necessary. If you leave it blank, it assumes the default value. Ensure that the value you enter is in the distinguished name format. For example: **OU=testOU,DC=domain,DC=Domain,DC=com**.
 
-        :::image type="Active Directory details" source="media/create-operations-manager-managed-instance/active-directory-details-inline.png" alt-text="Screenshot that shows Active Directory details for creating a SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/active-directory-details-expanded.png":::
+        :::image type="Active directory details" source="media/create-operations-manager-managed-instance/active-directory-details-inline.png" alt-text="Screenshot that shows Active directory details for creating a SCOM Managed Instance." lightbox="media/create-operations-manager-managed-instance/active-directory-details-expanded.png":::
 
     - **Domain account details**:
         - **Security key vault**: Select the key vault that has the secret username and secret password of the domain account's user credentials.
