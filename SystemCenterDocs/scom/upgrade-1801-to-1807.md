@@ -1,6 +1,6 @@
 ---
 ms.assetid:
-title: How to upgrade to Operations Manager version 1807
+title: Upgrade to Operations Manager version 1807
 description: This article describes how to perform an upgrade from System Center Operations Manager version 1801 to 1807.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 
 
-# How to upgrade to Operations Manager version 1807
+# Upgrade to Operations Manager version 1807
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
@@ -23,6 +23,7 @@ This article describes how to perform a successful upgrade of System Center Oper
 ## Requirements
 
 This update is available from Microsoft Update in the following languages:
+
 - Chinese Simplified (CHS)
 - Chinese Traditional (CHT)
 - Czech (CSY)
@@ -50,7 +51,6 @@ If you don't want to restart the computer after you apply the Operations console
 
 If User Account Control is enabled, run the .msp update files from an elevated command prompt.
 
-
 ## Supported installation order
 
 Install the update package in the following order:
@@ -74,39 +74,42 @@ Install the update package in the following order:
 
 6. Update Unix/Linux management packs and agents.
 
-## How to obtain Microsoft System Center Operations Manager 1807 Update
+## Obtain Microsoft System Center Operations Manager 1807 Update
+
 Update packages for Operations Manager are available from Microsoft Update or by manual download.
 
 ### Microsoft Update
+
 To obtain and install an update package from Microsoft Update, follow these steps on a computer that has an Operations Manager component installed:
 
-1.	Select **Start**, and then select **Control Panel**.
+1. Select **Start**, and then select **Control Panel**.
 
-2.	In the Control Panel, double-click **Windows Update**.
+2. In the Control Panel, double-click **Windows Update**.
 
-3.	In the Windows Update window, select **Check Online for updates from Microsoft Update**.
+3. In the Windows Update window, select **Check Online for updates from Microsoft Update**.
 
-4.	Select **Important updates are available**.
+4. Select **Important updates are available**.
 
-5.	Select the update rollup package, and then select **OK**.
+5. Select the update rollup package, and then select **OK**.
 
-6.	Select **Install updates** to install the update package.
+6. Select **Install updates** to install the update package.
 
 If your computer is running Windows Server 2016 or later, follow these steps:
 
-1.	Select **Start**, and then select **Settings**.
+1. Select **Start**, and then select **Settings**.
 
-2.	In Settings, select **Updates & Security**.
+2. In Settings, select **Updates & Security**.
 
-3.	On the **Windows Update** tab, select **Check Online for updates from Microsoft Update**.
+3. On the **Windows Update** tab, select **Check Online for updates from Microsoft Update**.
 
-4.	Select **Important updates are available**.
+4. Select **Important updates are available**.
 
-5.	Select the update rollup package, and then select **OK**.
+5. Select the update rollup package, and then select **OK**.
 
-6.	Select **Install updates** to install the update package.
+6. Select **Install updates** to install the update package.
 
 ### Manual download
+
 Go to the following websites to manually download the update packages from the Microsoft Update Catalog:
 
    [Download the Operations Manager update package now](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=4133779).
@@ -124,7 +127,7 @@ Apply the appropriate MSP files on each computer.
 
 2. Execute the following SQL database SQL scripts located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
 
-    -  Execute the following script on the SQL Server instance hosting  the OperationsManagerDB database:
+    - Execute the following script on the SQL Server instance hosting  the OperationsManagerDB database:
 
         `Update_rollup_mom_db.sql`
 
@@ -164,7 +167,6 @@ Apply the appropriate MSP files on each computer.
     >[!NOTE]
     >Management packs are included in the Server component updates in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\Management Packs for Update Rollups`
 
-
 ## Update Nano Agent
 
 To manually install the updates to Nano Agent, download the [KB3209591-8.0.10913.0-NanoAgent.cab](https://www.microsoft.com/download/details.aspx?id=54790) file. You can install this update on a Nano Agent system by using the following PowerShell script:
@@ -184,8 +186,8 @@ To install the updated monitoring packs and agents for UNIX and Linux operating 
 
 2. Download the **Microsoft System Center 1801 MP for UNIX and Linux.msi** installer package file - [System Center Management Pack for UNIX and Linux Operating Systems](https://www.microsoft.com/download/details.aspx?id=29696).
 
-3.	Install the management pack update package to extract the management pack files.
+3. Install the management pack update package to extract the management pack files.
 
-4.	Import the updated management pack for each version of Linux or UNIX that you are monitoring in your environment.
+4. Import the updated management pack for each version of Linux or UNIX that you are monitoring in your environment.
 
-5.	Upgrade each agent to the latest version by using either the **Update-SCXAgent** Windows PowerShell cmdlet or the [UNIX/Linux Agent Upgrade Wizard](manage-upgrade-uninstall-crossplat-agent.md) from the Device Management node under the Administration workspace in the Operations console.  
+5. Upgrade each agent to the latest version by using either the **Update-SCXAgent** Windows PowerShell cmdlet or the [UNIX/Linux Agent Upgrade Wizard](manage-upgrade-uninstall-crossplat-agent.md) from the Device Management node under the Administration workspace in the Operations console.  

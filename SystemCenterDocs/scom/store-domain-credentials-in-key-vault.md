@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 This article describes how to store domain credentials in Azure Key Vault.
 
-## To store domain credentials in a key vault
+To store domain credentials in a key vault, follow these steps:
 
 1. Go to the key vault resource created in [step 4](create-key-vault.md).
 
@@ -35,6 +35,6 @@ This article describes how to store domain credentials in Azure Key Vault.
      1. **Secret value**: For the username value (in the format **domain\username**), enter the domain account username. For the password value, enter the domain account password. For example, if the domain is contoso.com, the username should be in the format **contoso\username**.
      1. Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, and **Tags** areas as default. Select **Create** to create the secret.
 
-## Next steps
+## Next step
 
 - [Create a static IP](create-static-ip.md)

@@ -21,12 +21,11 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 ### General troubleshooting
 
-1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
-2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation. 
-3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the System Center Operations Manager setup logs. Analyze the logs to identify and resolve errors/failures.
-4.	If you're unable to identify the issue with the above steps, sign in to the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
+1. Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
+2. Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
+3. Check the **SCOM Setup logs** link provided in the error message. Select the link to download the System Center Operations Manager setup logs. Analyze the logs to identify and resolve errors/failures.
+4. If you're unable to identify the issue with the above steps, sign in to the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
 5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, and so on]
-
 
 ### Issue: Resource group `%ResourceGroupName%` is managed by other Azure resource
 
@@ -49,7 +48,6 @@ This article describes the errors that might occur when you deploy or use Azure 
    - SCOM Managed Instance might not have read permissions on the SQL Managed Instance.
    - There might be an issue with your VNet/Region.
 
-
 **Resolution:**
    - Provide read permission to the SQL Managed Instance.  
    - MSI must be added as Active Directory admin on the SQL Managed Instance.
@@ -70,6 +68,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 ### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain `%DomainName%`
 
 **Cause**: Occurs due to the following reasons:
+
 1. Line-of-sight visibility from SCOM Managed Instance Server to Domain Controller.
 2. Domain User Credentials aren't provided or incorrect.
 3. OU Path for AD Domain isn't provided.
@@ -164,7 +163,7 @@ Check the quota section on Azure portal and allocate more cores of type Standard
 
 ### Issue: Inconsistency in the controls within the card
 
-**Cause**: Consistency Issue. 
+**Cause**: Consistency Issue.
 For example, the update button is enabled even though the title of the card reads **SCOM is up to date**.
 
 **Resolution**: Try refreshing. If not resolved, contact Microsoft support.
@@ -172,13 +171,14 @@ For example, the update button is enabled even though the title of the card read
 ### Issue: Warning message pops up for updates
 
 **Cause**: Occurs due to any of the following reasons:
+
 1. New update is available, and the user hasn't triggered the update instance; or
 2. Last update failed, and the user hasn't triggered another update instance.
 
 **Resolution**: Trigger an *update instance*.
 
 ### Issue: Update fails after multiple retries
-	
+
 **Resolution**: To resolve, contact Microsoft support.
 
 ### Issue: Update fails, and rollback fails to leave an inconsistent state where the number of VMs on the Virtual Machine Scale Sets instance has been modified

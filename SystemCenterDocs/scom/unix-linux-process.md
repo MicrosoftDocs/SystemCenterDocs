@@ -75,7 +75,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 
 ## Creating and modifying UNIX/Linux process monitoring templates
 
-#### To create a UNIX/Linux process monitoring template
+To create a UNIX/Linux process monitoring template, follow these steps:
 
 1. If you want to monitor a process on a group of computers, determine the targeted group for the monitor by using the following logic:
 
@@ -102,7 +102,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 16. Select  **Next**.
 17. Select  **Create**.
 
-#### To modify an existing UNIX/Linux process monitoring template
+### Modify an existing UNIX/Linux process monitoring template
 
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring**  workspace.
@@ -113,7 +113,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 
 ## Viewing UNIX/Linux process monitors and collected data
 
-#### To view the state of each monitor
+### View the state of each monitor
 
 1. Select the  **UNIX/Linux Computers**  view.
 2. In the  **UNIX/Linux Computers**  pane, right-click an object, select  **Open** , and select  **Health Explorer**.

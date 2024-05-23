@@ -31,7 +31,7 @@ Before you proceed with the scaling process, complete the following prechecks to
 
 3. **Domain credentials verification**: Validate the status of the domain credentials used in the key vault. If the credentials have expired, update the password to ensure they're active and functional.
 
-4. **NAT Gateway association**: Ensure that the NAT Gateway is still associated with the subnet and hasn't been removed. 
+4. **NAT Gateway association**: Ensure that the NAT Gateway is still associated with the subnet and hasn't been removed.
 
 5. **VNet connectivity requirements**: Ensure that VNet to VNet communication is allowed to enable communication between the newly added managed servers and the existing ones. Additionally, verify that the connectivity from the VNet to the SQL managed instance and Domain Controller is operational.
 
@@ -52,7 +52,7 @@ To scale In/Out the management servers, follow these steps:
            >A Management server can monitor up to 1000 endpoints. 
 
            :::image type="Scaling SCOM Managed Instance" source="media/scale-scom-managed-instance/scaling-scom-mi.png" alt-text="Screenshot of Scaling SCOM Managed Instance.":::
- 
+
 1. Select **Save** to trigger the Scale In or Scale Out operation.
 
 ## Troubleshoot scaling issues
@@ -84,6 +84,6 @@ To scale In/Out the management servers, follow these steps:
 
     For example, FQDN: SCOMMI2000001.contoso.com.
 
-## Next steps
+## Next step
 
 [Patch SCOM Managed Instance](patch-scom-managed-instance.md)

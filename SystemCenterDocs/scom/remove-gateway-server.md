@@ -127,7 +127,6 @@ Get-SCOMAgentlessManagedComputer | Where-Object {$_.ProxyAgentPrincipalName -mat
 
 ```
 
-
 #### Change the proxy agent for agentless-managed computers and network devices
 
 1. Sign-in to a management server computer with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.

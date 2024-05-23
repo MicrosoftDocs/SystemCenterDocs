@@ -18,7 +18,6 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 This article lists the release notes for System Center 2019 - Operations Manager.  This article also includes the release notes for Operations Manager 2019 UR1, UR2, UR4, and UR5.
 
-
 [!INCLUDE [release-notes-om-2019.md](../includes/release-notes-om-2019.md)]
 
 ::: moniker-end
@@ -58,5 +57,6 @@ This article lists the release notes for System Center 1801 - Operations Manager
 
 ::: moniker-end
 
-## Next steps
+## Next step
+
 [What's new in Operations Manager](whats-new-in-om.md).

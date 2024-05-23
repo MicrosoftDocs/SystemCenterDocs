@@ -45,6 +45,6 @@ The following policies could potentially influence the local administrator group
 > [!IMPORTANT]
 > To minimize the need for extensive communication with both your Active Directory admin and network admin, see [Self-verification](scom-managed-instance-self-verification-of-steps.md). The article outlines the procedures that the Active Directory admin and network admin use to validate their configuration changes and ensure their successful implementation. This process reduces unnecessary back-and-forth interactions from the Operations Manager admin to the Active Directory admin and the network admin. This configuration saves time for the admins.
 
-## Next steps
+## Next step
 
 - [SCOM Managed Instance self-verification of steps](scom-managed-instance-self-verification-of-steps.md)

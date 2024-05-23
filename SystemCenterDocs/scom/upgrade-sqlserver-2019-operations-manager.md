@@ -19,7 +19,6 @@ Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does no
 
 Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2019 (with CU8 or later).  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
-
 >[!NOTE]
 > - You must use Cumulative Update 8 (CU8) or later with SQL 2019.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
@@ -28,6 +27,7 @@ Use the steps in this article to perform an in-place upgrade of the databases su
 Before performing these upgrade steps, review the [SQL Server 2019 upgrade information](/sql/database-engine/install-windows/upgrade-sql-server).
 
 ## Stop the Operations Manager services
+
 On all the management servers in the management group, stop the Operations Manager services:
 
 * System Center Data Access
@@ -35,6 +35,7 @@ On all the management servers in the management group, stop the Operations Manag
 * System Center Management Configuration
 
 ## Back up the Reporting server database
+
 1. On the SQL Server hosting the Reporting server databases, create a full backup of the **ReportServer** and **ReportServerTempDB** database. For more information, see [Create a Full Database Backup (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
 2. On the current Operations Manager reporting server, back up the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
@@ -65,7 +66,6 @@ On all the management servers in the management group, stop the Operations Manag
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
-
 To download SQL Server 2019 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download).
 
 After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.  This is necessary to configure Reporting Services to:
@@ -78,11 +78,12 @@ After a successful setup, select **Configure Report Server** to launch the Repor
 
 4. Run **regedit** from an elevated Command Prompt and navigate to _HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\SSRS\\MSSQLServer\\CurrentVersion_.  Note the value for the key _CurrentVersion_.   
 
-6. Create a registry REG_SZ  value named *Version* under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\Setup\ with REG_SZ value noted in the previous step.
+5. Create a registry REG_SZ  value named *Version* under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\Setup\ with REG_SZ value noted in the previous step.
 
-7. Reboot the server in order for the changes to take effect.
+6. Reboot the server in order for the changes to take effect.
 
 ## Verify the installation of SQL Report server
+
 After reinstalling the Operations Manager reporting server component, perform the following steps to confirm SQL Reporting Services is working correctly.
 
 1. Run the Reporting Services Configuration tool and connect to the report server instance you installed. The Web Service URL page includes a link to the Report Server Web service. Click the link to verify you can access the server.

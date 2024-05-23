@@ -300,6 +300,6 @@ Follow these steps to run the validation script:
 
      If all the checks pass successfully, there are no issues with the network configuration.
 
-## Next steps
+## Next step
 
 - [Create an instance of Azure Monitor SCOM Managed Instance](create-operations-manager-managed-instance.md)

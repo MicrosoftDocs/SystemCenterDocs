@@ -31,7 +31,7 @@ In System Center Operations Manager, alerts matching a specific criterion and re
 
 Each alert has specific properties that inform the user about different factors such as the history of the alert, how it's generated, what are the objects affected etc. For a complete list of all the properties of a rule/monitor alert, see [Examining Properties of Alerts, Rules, and Monitors](./manage-examine-properties-of-workflows.md).
 
-## View Operations Manager’s alerts in Azure Monitor  
+## View Operations Manager’s alerts in Azure Monitor
 
 For SCOM Managed Instance, the alerts that are generated in the workload can now be seen in Azure Monitor.  
 
@@ -103,7 +103,7 @@ In the ServiceNow portal, you can see your list of incidents under the **Microso
 
 :::image type="content" source="media/view-operations-manager-alerts-azure-monitor/oms-incidents-inline.png" alt-text="Screenshot showing incidents tab." lightbox="media/view-operations-manager-alerts-azure-monitor/oms-incidents-expanded.png":::
 
-## Status of an alert when it’s closed  
+## Status of an alert when it’s closed
 
 Irrespective of the alert being a rule or monitor alert, if the alert is closed in the System Center Operations Manager Ops Console, the closed state of the alert will be reflected in the Azure Monitor portal with the **Alert condition** changing from **Fired** to **Resolved**.
 

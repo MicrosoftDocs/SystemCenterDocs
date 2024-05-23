@@ -28,7 +28,6 @@ In a medium to enterprise-scale distributed deployment, the SQL Server instance 
 
 We don't recommend utilization of Operations Manager databases from an SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
 
-
 > [!IMPORTANT]
 > Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure Monitor SCOM Managed Instance](./operations-manager-managed-instance-overview.md), which utilizes Azure SQL MI, and is not reconfigurable.
 
@@ -50,17 +49,16 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 - SQL Server 2022
 - SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
   >[!NOTE]
-  > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
+  > - Operations Manager 2022 and later supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
   > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 ::: moniker-end
-
 
 ::: moniker range=">sc-om-1807 <=sc-om-2019"
 
@@ -69,7 +67,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 - SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
@@ -124,15 +122,13 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 > [!NOTE]
 > System Center Operations Manager Reporting cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only (SharePoint integrated mode isn't supported).
 
-
-
 Additional hardware and software considerations apply in your design planning:
 
--  We recommend that you run SQL Server on computers with the NTFS file format.
--  There must be at least 1024 MB of free disk space for the operational and data warehouse database. It's enforced at the time of database creation, and it will likely grow significantly after setup.  
--  .NET Framework 4 is required.
--  .NET Framework 4.8 is supported from Operations Manager 2022.
--  Reporting Server isn't supported on Windows Server Core.
+- We recommend that you run SQL Server on computers with the NTFS file format.
+- There must be at least 1024 MB of free disk space for the operational and data warehouse database. It's enforced at the time of database creation, and it will likely grow significantly after setup.  
+- .NET Framework 4 is required.
+- .NET Framework 4.8 is supported from Operations Manager 2022.
+- Reporting Server isn't supported on Windows Server Core.
 
 ::: moniker range="=sc-om-2016"
 
@@ -141,7 +137,6 @@ For more information, see Hardware and Software Requirements for Installing SQL 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-1801"
-
 
 For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?preserve-view=true&view=sql-server-2016).
 
@@ -158,9 +153,11 @@ The following SQL Server and Windows collations are supported by System Center O
 > To avoid any compatibility issues in comparing or copying operations, we recommend you use the same collation for the SQL and Operations Manager DB.  
 
 ### SQL Server collation
+
 - SQL_Latin1_General_CP1_CI_AS
 
 ### Windows collation
+
 - Latin1_General_100_CI_AS
 - French_CI_AS
 - French_100_CI_AS
@@ -190,7 +187,6 @@ If you're designing a distributed deployment that will require SQL Always On Ava
 
 The following table helps you identify the firewall ports required by SQL Server that will need to be allowed at a minimum in order for server roles in your Operations Manager management group to successfully communicate.
 
-
 | Scenario | Port | Direction | Operations Manager Role |
 |-----------|---------------|---------------|---------------|
 | SQL Server hosting Operations Manager databases | TCP 1433 \* | Inbound | management server and Web console (for Application Advisor and Application Diagnostics) |
@@ -218,7 +214,7 @@ Factors that influence the load on the Operations Manager database include:
 
 The Operations Manager database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
@@ -244,7 +240,6 @@ To enable SQL Server Service Broker, follow these steps:
    ALTER DATABASE OperationsManager SET MULTI_USER
    ```
 
-
 ### Operations Manager data warehouse database
 
 System Center - Operations Manager inserts data into the Reporting data warehouse in near-real time, it's important to have sufficient capacity on this server that supports writing all of the data that is being collected to the Reporting data warehouse.  As with the Operations Manager database, the most critical resource on the Reporting data warehouse is the storage I/O subsystem.  On most systems, loads on the Reporting data warehouse are similar to the Operations Manager database, but they can vary.  In addition, the workload put on the Reporting data warehouse by reporting is different than the load put on the Operations Manager database by Operations console usage.
@@ -261,16 +256,6 @@ Based on these factors, there are several recommended practices to consider when
 - Consider placing the Reporting data warehouse on a separate server from the Operations Manager database.  Although smaller-scale deployments can often consolidate the Operations Manager database and Reporting data warehouse on the same server, it's advantageous to separate them as you scale up the number of agents and the volume of incoming operational data.  When the Reporting data warehouse and Reporting Server are on a separate server from the Operations Manager database, you experience better reporting performance.
 
 The Operations Manager data warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.  
-
-
-
-
-
-
-
-
-
-
 
 ::: moniker range="<=sc-om-1807"
 
@@ -298,9 +283,9 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
-With Operations Manager 2022, you can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
+You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
 ::: moniker-end
 
@@ -323,8 +308,8 @@ Operations Manager doesn't support the connection string key words (MultiSubnetF
 
 The recommended approach to work around this limitation when you've deployed server nodes in the availability group in a multi-subnet environment is to do the following:
 
-1.	Set the network name of your availability group listener to only register a single active IP address in DNS.
-2.	Configure the cluster to use a low TTL value for the registered DNS record.
+1. Set the network name of your availability group listener to only register a single active IP address in DNS.
+2. Configure the cluster to use a low TTL value for the registered DNS record.
 
 These settings allow, when failover to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
 
@@ -338,7 +323,6 @@ Run the following PowerShell commands on any one of the SQL nodes to modify its 
   Start-ClusterResource "Cluster Name"
   Start-ClusterGroup "Cluster Name"
   ```
-
 
 If you're using Always On with a listener name, you should also make these configuration changes on the listener. For more information about configuring an availability group listener, see the documentation here: [Configure availability group listener - SQL Server Always On](/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server)
 
@@ -355,15 +339,15 @@ Run the following PowerShell commands on the SQL node currently hosting the list
 
 When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
 
-## Optimizing SQL Server
+## Optimize SQL Server
 
 In general, previous deployment experience with customers shows that performance issues are typically not caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather it's directly related to the configuration of the storage subsystem.  Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance.  Such examples are:
 
--  Insufficient allocation of spindles for the LUNs to support the IO requirements of Operations Manager.  
--  Hosting transaction logs and database files on the same volume.  These two workloads have different IO and latency characteristics.
--  Configuration of TempDB is incorrect with respect to placement, sizing, and so on.
--  Disk partition misalignment of volumes hosting the database transaction logs, database files, and TempDB.
--  Overlooking the basic SQL Server configuration such as using AUTOGROW for database and transaction log files, MAXDOP setting for query parallelism, creating multiple TempDB data files per CPU core, and so on.
+- Insufficient allocation of spindles for the LUNs to support the IO requirements of Operations Manager.  
+- Hosting transaction logs and database files on the same volume.  These two workloads have different IO and latency characteristics.
+- Configuration of TempDB is incorrect with respect to placement, sizing, and so on.
+- Disk partition misalignment of volumes hosting the database transaction logs, database files, and TempDB.
+- Overlooking the basic SQL Server configuration such as using AUTOGROW for database and transaction log files, MAXDOP setting for query parallelism, creating multiple TempDB data files per CPU core, and so on.
 
 Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
@@ -393,7 +377,7 @@ For **max server memory**, we recommend that you initially reserve a total of:
 - 1 GB of RAM per every 4 GB of RAM installed (up to 16-GB RAM)
 - 1 GB of RAM per every 8-GB RAM installed (above 16-GB RAM)
 
-After you've set these values, monitor the **Memory\Available MBytes** counter in Windows to determine if you can increase the memory available to SQL Server. Windows signals that the available physical memory is running low at 96 MB, so ideally the counter shouldn't run lower than around 200-300 MB, to ensure you've a buffer. For servers with 256-GB RAM or higher, you'll probably want to ensure it doesn't run lower than 1 GB.
+After you've set these values, monitor the **Memory\Available MBytes** counter in Windows to determine if you can increase the memory available to SQL Server. Windows signals that the available physical memory is running low at 96 MB, so ideally the counter shouldn't run lower than around 200-300 MB, to ensure you have a buffer. For servers with 256-GB RAM or higher, you'll probably want to ensure it doesn't run lower than 1 GB.
 
 Keep in mind that these calculations assume you want SQL Server to be able to use all available memory, unless you modify them to account for other applications. Consider the specific memory requirements for your OS, other applications, the SQL Server thread stack, and other multipage allocators. A typical formula would be `((total system memory) – (memory for thread stack) – (OS memory requirements) – (memory for other applications) – (memory for multipage allocators))`, where the memory for thread stack = `((max worker threads) (stack size))`. The stack size is 512 KB for x86 systems, 2 MB for x64 systems, and 4 MB for IA64 systems, and you can find the value for max worker threads in the max_worker_count column of sys.dm_os_sys_info.
 
@@ -419,12 +403,12 @@ For more information, see [Server memory configuration options](/sql/database-en
 The size and physical placement of the tempdb database can affect the performance of Operations Manager. For example, if the size that is defined for tempdb is too small, part of the system-processing load may be taken up with autogrowing tempdb to the size required to support the workload every time you restart the instance of SQL Server.
 To achieve optimal tempdb performance, we recommend the following configuration for tempdb in a production environment:
 
--  Set the recovery model of tempdb to SIMPLE. This model automatically reclaims log space to keep space requirements small.
--  Preallocate space for all tempdb files by setting the file size to a value large enough to accommodate the typical workload in the environment. It prevents tempdb from expanding too frequently, which can affect performance. The tempdb database can be set to autogrow, but this should be used to increase disk space for unplanned exceptions.
--  Create as many files as needed to maximize disk bandwidth. Using multiple files reduces tempdb storage contention and yields improved scalability. However, don't create too many files as it can reduce performance and increase management overhead. As a general guideline, create one data file for each logical processor on the server (accounting for any affinity mask settings) and then adjust the number of files up or down as necessary. As a general rule, if the number of logical processors is less than or equal to 8, use the same number of data files as logical processors. If the number of logical processors is greater than 8, use eight data files and then if contention continues, increase the number of data files by multiples of 4 (up to the number of logical processors) until the contention is reduced to acceptable levels or make changes to the workload/code. If the contention isn't reduced, you may have to increase the number of data files more.  
--  Make each data file the same size, allowing for optimal proportional-fill performance.  The equal sizing of data files is critical because the proportional fill algorithm is based on the size of the files. If data files are created with unequal sizes, the proportional fill algorithm tries to use the largest file more for GAM allocations instead of spreading the allocations between all the files, thereby defeating the purpose of creating multiple data files.
--  Put the tempdb database on a fast I/O subsystem using solid-state drives for the most optimal performance. Use disk striping if there are many directly attached disks.
--  Put the tempdb database on disks that differ from those that are used by user databases.
+- Set the recovery model of tempdb to SIMPLE. This model automatically reclaims log space to keep space requirements small.
+- Preallocate space for all tempdb files by setting the file size to a value large enough to accommodate the typical workload in the environment. It prevents tempdb from expanding too frequently, which can affect performance. The tempdb database can be set to autogrow, but this should be used to increase disk space for unplanned exceptions.
+- Create as many files as needed to maximize disk bandwidth. Using multiple files reduces tempdb storage contention and yields improved scalability. However, don't create too many files as it can reduce performance and increase management overhead. As a general guideline, create one data file for each logical processor on the server (accounting for any affinity mask settings) and then adjust the number of files up or down as necessary. As a general rule, if the number of logical processors is less than or equal to 8, use the same number of data files as logical processors. If the number of logical processors is greater than 8, use eight data files and then if contention continues, increase the number of data files by multiples of 4 (up to the number of logical processors) until the contention is reduced to acceptable levels or make changes to the workload/code. If the contention isn't reduced, you may have to increase the number of data files more.  
+- Make each data file the same size, allowing for optimal proportional-fill performance.  The equal sizing of data files is critical because the proportional fill algorithm is based on the size of the files. If data files are created with unequal sizes, the proportional fill algorithm tries to use the largest file more for GAM allocations instead of spreading the allocations between all the files, thereby defeating the purpose of creating multiple data files.
+- Put the tempdb database on a fast I/O subsystem using solid-state drives for the most optimal performance. Use disk striping if there are many directly attached disks.
+- Put the tempdb database on disks that differ from those that are used by user databases.
 
 To configure tempdb, you can run the following query or modify its properties in Management Studio.
 
@@ -448,10 +432,6 @@ If the previous recommendations don't significantly reduce the allocation conten
 >[!NOTE]
 > This trace flag affects every database on the instance of SQL Server.
 
-
-
-
-
 ### Max degree of parallelism
 
 The default configuration of SQL Server for small to medium size deployments of Operations Manager is adequate for most needs.  However, when the workload of the management group scales upwards towards an enterprise class scenario (typically 2,000+ agent-managed systems and an advanced monitoring configuration, which includes service-level monitoring with advanced synthetic transactions, network device monitoring, cross-platform, and so forth) it's necessary to optimize the configuration of SQL Server described in this section of the document.  One configuration option that hasn't been discussed in previous guidance is MAXDOP.  
@@ -465,10 +445,9 @@ The stored procedures and queries pre-defined in Operations Manager as it relate
 > [!NOTE]
 > The max degree of parallelism configuration option doesn't limit the number of processors that the SQL Server uses. To configure the number of processors that SQL Server uses, use the affinity mask configuration option.
 
--  For servers that use more than eight processors, use the following configuration:
+- For servers that use more than eight processors, use the following configuration:
 MAXDOP=8
--  For servers that use eight or fewer processors, use the following configuration:
+- For servers that use eight or fewer processors, use the following configuration:
 MAXDOP=0 to N
    >[!NOTE]
    > In this configuration, N represents the number of processors.
-

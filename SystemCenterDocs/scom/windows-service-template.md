@@ -85,7 +85,7 @@ In addition to performing the specified monitoring, the  **Windows Service**  te
 
 ## Creating and modifying Windows Service templates
 
-#### To create a Windows Service template
+### Create a Windows Service template
 
 1. Determine the target group for the monitor by using the following logic:
 
@@ -109,7 +109,7 @@ In addition to performing the specified monitoring, the  **Windows Service**  te
 13. Select **Next**.
 14. Review the summary of the monitor, and select **Create**.
 
-#### To modify an existing Windows Service template
+### Modify an existing Windows Service template
 
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring** workspace.
@@ -118,15 +118,15 @@ In addition to performing the specified monitoring, the  **Windows Service**  te
 5. Right-click the monitor, and then select  **Properties**.
 6. Enter the changes that you want, and select  **OK**.
 
-## Viewing Windows Service Monitors and Collected Data
+## View Windows Service Monitors and Collected Data
 
-#### To view all Windows Service monitors
+### View all Windows Service monitors
 
 1. Open the Operations console.
 2. Open the  **Monitoring**  workspace.
 3. In the  **Monitoring**  navigation pane, select  **Windows Service and Process Monitoring** , and select  **Windows Service State**.
 
-#### To view the state of each monitor
+### View the state of each monitor
 
 1. In the  **Windows Service State**  pane, right-click an object. Select  **Open**, and select  **Health Explorer**.
 2. Expand the  **Availability**  and  **Performance**  nodes to view the individual monitors.

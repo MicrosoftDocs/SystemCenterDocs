@@ -60,7 +60,7 @@ By default, the  **Web Application Availability Monitoring** template configures
 ||- Content time: enabled
 ||- Download time: enabled
 
-## Viewing monitoring data
+## View monitoring data
 
 All data collected by the **Web Application Availability Monitoring** template appears in the  **Web Application Availability Monitoring**  folder in the  **Application Monitoring**  folder in the  **Monitoring**  navigation pane. The  **Application Availability Monitoring**  folder contains the default views and subfolders that provide Test State, Web Application Status, and alerts related to the tests being monitored. By using the Test State view, you can see the test state of the individual tests. The state of each object matches the state of the targeted object that has the worst health state so that you see the worst state of the monitors that are running. If one or more of the tests are shown with an error while at least one other test is healthy, it could indicate a problem for that particular test location. If all the components are unhealthy, it could indicate a problem with the web application itself.
 
@@ -265,7 +265,7 @@ The  **Summary**  page of the wizard lists the settings you've configured for th
 
 For the procedure to run the .NET Application Performance Monitoring wizard, see [How to Configure Web Application Availability Monitoring](/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
 
-#### To modify an existing Web application availability monitoring template
+### Modify an existing Web application availability monitoring template
 
 1. Open the Operations console with a user account that has Author credentials in the management group.
 2. Select the **Authoring** workspace.
@@ -278,20 +278,20 @@ For the procedure to run the .NET Application Performance Monitoring wizard, see
 
 After you configure monitoring for an application, these three views will help you get started with the monitoring experience.
 
-#### To view all web application availability monitoring monitored applications
+### View all web application availability monitoring monitored applications
 
 1. Open the Operations console.
 2. Select the **Monitoring** workspace.
 3. In the **Monitoring** navigation pane, expand **Application Monitoring**, expand **Web Application Availability Monitoring**, and select **Web Application Status**.
 
-#### To view the state of each monitor
+#### View the state of each monitor
 
 1. Open the Operations console.
 2. Select the  **Monitoring**  workspace.
 3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and select  **Test State**.
 4. In the  **Test State**  view, right-click an object. Select  **Open**, and select  **Health Explorer**.
 
-#### To view the performance collected for an application component
+#### View the performance collected for an application component
 
 1. Open the Operations console.
 2. Select the  **Monitoring**  workspace.

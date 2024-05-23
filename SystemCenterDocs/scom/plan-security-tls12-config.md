@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to implement Transport Layer Security 1.2
+# Implement Transport Layer Security 1.2
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -24,12 +24,11 @@ This article describes how to enable Transport Layer Security (TLS) protocol ver
 
 >[!NOTE]
 > Operations Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Operations Manager will select one of the three protocols in the following order of preference:
-> 1.	TLS version 1.2
-> 2.	TLS version 1.1
-> 3.	TLS version 1.0
+> 1. TLS version 1.2
+> 2. TLS version 1.1
+> 3. TLS version 1.0
 >
 > The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
-
 
 Perform the following steps to enable TLS protocol version 1.2:
 
@@ -48,6 +47,7 @@ Perform the following steps to enable TLS protocol version 1.2:
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
+
 1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server#1865) version 18.2 to 18.6.7 or later on all management servers and the Web console server.
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
@@ -63,10 +63,13 @@ Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is re
 >If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media doesn't include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation doesn't apply to Operations Manager version 1801.
 
 ::: moniker-end
+
 ## Configure Windows Operating System to only use TLS 1.2 protocol
+
 Use one of the following methods to configure Windows to use only the TLS 1.2 protocol.
 
 ### Method 1: Manually modify the registry
+
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
 >
@@ -91,6 +94,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 8. Close the Registry Editor.
 
 ### Method 2: Automatically modify the registry
+
 Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol:
 
 ```powershell
@@ -127,7 +131,9 @@ foreach ($Protocol in $ProtocolList)
 	}
 }
 ```
+
 ## Configure Operations Manager to use only TLS 1.2
+
 After completing the configuration of all prerequisites for Operations Manager, perform the following steps on all management servers, the server hosting the Web console role, and on any Windows computer the agent is installed on.  
 
 >[!IMPORTANT]
@@ -145,6 +151,7 @@ After completing the configuration of all prerequisites for Operations Manager, 
 ::: moniker-end
 
 ### Manually modify the registry
+
 1. Sign in to the server by using an account that has local administrative credentials.  
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
 3. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.  
@@ -154,6 +161,7 @@ After completing the configuration of all prerequisites for Operations Manager, 
 7. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
+
 Run the following Windows PowerShell script in Administrator mode to automatically configure Operations Manager to use only the TLS 1.2 Protocol:
 
 ```powershell
@@ -178,6 +186,7 @@ If you're monitoring a supported version of Linux server with Operations Manager
 ::: moniker range="sc-om-2016"
 
 ### Audit Collection Services
+
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
 1. Sign in to the server by using an account that has local administrative credentials.  
@@ -191,11 +200,12 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 5. Under the **OpsMgrAC** subkey, update the **Driver** for the ODBC version that is installed.
    * If ODBC 11.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql11.dll`.
    * If ODBC 13.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql13.dll`.
-   
-   #### Registry File
+
+#### Registry File
+
    Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
-    * For ODBC 11.0, create the following ODBC 11.reg file:
+   * For ODBC 11.0, create the following ODBC 11.reg file:
 
       ```
       Windows Registry Editor Version 5.00
@@ -207,7 +217,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
       "Driver"="%WINDIR%\system32\msodbcsql11.dll"
       ```
 
-    * For ODBC 13.0, create the following ODBC 13.reg file:
+   * For ODBC 13.0, create the following ODBC 13.reg file:
 
       ```
       Windows Registry Editor Version 5.00
@@ -219,28 +229,30 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
       "Driver"="%WINDIR%\system32\msodbcsql13.dll"
       ```
 
-   #### PowerShell
+#### PowerShell
+
    Alternatively, you can run the following PowerShell commands to automate the change.
 
-    * For ODBC 11.0, run the following PowerShell commands:
+   * For ODBC 11.0, run the following PowerShell commands:
 
       ```powershell
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql11.dll" -PropertyType STRING -Force | Out-Null
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 11 for SQL Server" -PropertyType STRING -Force | Out-Null
       ```
       
-    * For ODBC 13.0, run the following PowerShell commands:
+   * For ODBC 13.0, run the following PowerShell commands:
 
       ```powershell
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql13.dll" -PropertyType STRING -Force | Out-Null
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources" -Name "OpsMgrAC" -Value "ODBC Driver 13 for SQL Server" -PropertyType STRING -Force | Out-Null
       ```
- 
+
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
 
 ### Audit Collection Services
+
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
 1. Sign in to the server by using an account that has local administrative credentials.  
@@ -253,11 +265,12 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 17 installed, change this name to **ODBC Driver 17 for SQL Server**.
 5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
    * If ODBC 17 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
-   
-   #### Registry File
+
+#### Registry File
+
    Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
-    * For ODBC 17, create the following ODBC 17.reg file:
+   * For ODBC 17, create the following ODBC 17.reg file:
 
       ```
       Windows Registry Editor Version 5.00
@@ -268,11 +281,12 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
       [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
       "Driver"="%WINDIR%\system32\msodbcsql17.dll"
       ```
-	
-   #### PowerShell
+
+#### PowerShell
+
    Alternatively, you can run the following PowerShell commands to automate the change.
 
-    * For ODBC 17, run the following PowerShell commands:
+   * For ODBC 17, run the following PowerShell commands:
 
       ```powershell
       New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql17.dll" -PropertyType STRING -Force | Out-Null
