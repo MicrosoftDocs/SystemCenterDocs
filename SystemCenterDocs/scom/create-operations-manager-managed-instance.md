@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM Managed Instance to mon
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/17/2024
+ms.date: 05/27/2024
 ms.custom: UpdateFrequency.5, references_regions, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager-managed-instance
@@ -97,8 +97,6 @@ To create a SCOM Managed Instance, follow these steps:
 
            The subnet can have existing resources in it. However, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the SCOM Managed Instance components.
 
-           >[!NOTE]
-           >Make sure to associate a NAT gateway with a chosen subnet. The presence of a NAT gateway is necessary for SCOM Managed Instance to retrieve the components required for both installation and auto upgrade scenarios.
     - **SCOM managed instance interface**:
         - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance. Ensure that the IP is in the IPv4 format, and create it in your routing table.
         - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step. The DNS name is mapped to the static IP that's previously defined.
