@@ -15,11 +15,11 @@ ms.topic: article
 
 This article outlines antivirus exclusions that relate to System Center Orchestrator.
 
-An incorrect exclusions may prevent some potentially dangerous programs from being detected. We do not recommend that you rely on exclusions that are based on any process executables for Orchestrator servers.
+An incorrect exclusion may prevent some potentially dangerous programs from being detected. We don't recommend that you rely on exclusions that are based on any process executables for Orchestrator servers.
 
 ## Exclusions by process executable
 
-If you have to make exclusions that are based on the process executables, use the following processes:
+If you must make exclusions that are based on the process executables, use the following processes:
 
 |Component | Process |
 |--------|---------|
@@ -57,7 +57,7 @@ These exclusions include the default installation locations for all Orchestrator
 
 ## Exclusion of file type by extension
 
-The following file name extension-specific exclusions for Orchestrator includes real-time scans, scheduled scans, and local scans.
+The following file name extension-specific exclusions for Orchestrator include real-time scans, scheduled scans, and local scans.
 
 ### SQL database servers
 
