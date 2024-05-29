@@ -21,11 +21,11 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
 
 ## Prerequisites
 
-- Azure Active Directory based authentication: 
+- Microsoft Entra ID based authentication:
 
-    1. [Create an Azure Active Directory group](/azure/active-directory/roles/groups-create-eligible) for the users to whom you want to provide permissions to read data from the SQL Managed Instance through this Power BI report. 
+    1. [Create a Microsoft Entra ID group](/azure/active-directory/roles/groups-create-eligible) for the users to whom you want to provide permissions to read data from the SQL Managed Instance through this Power BI report.
 
-    2. Create login credentials for the Azure Active Directory group in the SQL Managed Instance, which adds the user principal of the group in the SQL Managed Instance. To create a login, see [Create Login (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
+    2. Create login credentials for the Microsoft Entra ID group in the SQL Managed Instance, which adds the user principal of the group in the SQL Managed Instance. To create a login, see [Create Login (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
             :::image type="Create login" source="media/operations-manager-managed-instance-create-reports-on-power-bi/create-login.png" alt-text="Screenshot showing create login option.":::
     3. Provide **db_datareader** permission to the Login on Data warehouse database.
             :::image type="Login properties" source="media/operations-manager-managed-instance-create-reports-on-power-bi/login-properties.png" alt-text="Screenshot showing login properties.":::
@@ -51,9 +51,9 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
      >[!Note]
      >To update the parameters, go to **Settings** of the dataset, and edit the parameters or select **Connect your data** in the banner.
          :::image type="Connect your data" source="media/operations-manager-managed-instance-create-reports-on-power-bi/connect-your-data.png" alt-text="Screenshot showing Connect your data option.":::
-1. After you enter the parameters, select any one of the following authentication methods: 
-    - SQL username and password-based method 
-    - Azure Active Directory-based method 
+1. After you enter the parameters, select any one of the following authentication methods:
+    - SQL username and password-based method
+    - Microsoft Entra ID-based method
     
     The dataset and reports will be refreshed. 
 
