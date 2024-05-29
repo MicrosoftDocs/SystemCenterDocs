@@ -5,7 +5,7 @@ description: This article explains a security configuration in Management Pack f
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 05/20/2024
+ms.date: 05/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,7 +14,7 @@ ms.custom: engagement-fy23
 
 # Security Configuration
 
-Monitoring accounts, SQL accounts, and Microsoft Entra principles used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
+Monitoring accounts, SQL accounts, and Microsoft Entra ID principles used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
 
 Every managed instance should have a sign-in for the monitoring account. This sign-in should be granted either of the following permissions:
 

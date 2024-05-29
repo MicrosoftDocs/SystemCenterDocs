@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/01/2024
+ms.date: 05/22/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -206,10 +206,6 @@ For example:
 ![Screenshot showing the sidebar.cshtml.](./media/deploy-self-service-portal/sm-sspsidebar.png)
 
 You can add or remove shortcuts from the menu, and you can customize them with details for the CSS class, keyboard hotkeys, and others.
-
-### Additional UI customization
-
-For more information about UI customization, see [The Official System Center Service Manager Blog](https://techcommunity.microsoft.com/t5/system-center-blog/basic-ui-customization-in-the-new-self-service-portal-html5/ba-p/351441).
 
 ## Next steps
 
