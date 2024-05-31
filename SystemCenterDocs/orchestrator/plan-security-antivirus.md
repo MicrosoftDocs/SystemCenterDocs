@@ -5,7 +5,7 @@ description: Describes some antivirus exclusions that relate to Orchestrator. Th
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/27/2024
+ms.date: 05/30/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -37,7 +37,7 @@ These exclusions include the SQL Server database files that are used by Orchestr
 
 For example:
 
-- *C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data*
+- *%ProgramFiles%\Microsoft SQL Server\MSSQL.1\MSSQL\Data*
 - *D:\MSSQL\DATA*
 - *E:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Log*
 
@@ -49,11 +49,11 @@ These exclusions include the default installation locations for all Orchestrator
 
 **For a Management Server**
 
-*C:\Program Files\Microsoft System Center\Orchestrator\Management Server*
+*%ProgramFiles%\Microsoft System Center\Orchestrator\Management Server*
 
 **For a Runbook Server**
 
-*C:\Program Files\Microsoft System Center\Orchestrator\Runbook Server*
+*%ProgramFiles%\Microsoft System Center\Orchestrator\Runbook Server*
 
 ## Exclusion of file type by extension
 
@@ -65,9 +65,9 @@ These exclusions include the SQL Server database files that are used by Orchestr
 
 For example:
 
-- MDF
-- LDF
-- NDF
+- *.mdf*
+- *.ldf*
+- *.ndf*
 
 For standard Microsoft SQL Server specific exclusions, see [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server).
 
@@ -76,6 +76,7 @@ For standard Microsoft SQL Server specific exclusions, see [Configure antivirus 
 These exclusions include the log files that are used by Orchestrator.
 
 For Example:
-- LOG
+
+- *.log*
 
 Page files should also be excluded from any real-time scans.
