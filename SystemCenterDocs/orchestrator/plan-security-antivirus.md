@@ -55,6 +55,14 @@ These exclusions include the default installation locations for all Orchestrator
 
 *%ProgramFiles%\Microsoft System Center\Orchestrator\Runbook Server*
 
+**For Runbook logs (Real time log, Historic log, Runbook audit history, Activity events, Audit trail)**
+
+*%Common Files%\Microsoft System Center 2012\Orchestrator\Management Server\Components\Logs\*.log*
+
+**For Trace logs**
+
+*%ProgramData%Microsoft System Center 2012\Orchestrator\**\Logs\*.log*
+
 ## Exclusion of file type by extension
 
 The following file name extension-specific exclusions for Orchestrator include real-time scans, scheduled scans, and local scans.
