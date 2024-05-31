@@ -23,11 +23,11 @@ If you must make exclusions that are based on the process executables, use the f
 
 |Component | Process |
 |--------|---------|
-|**Management Service** |ManagementService.exe|
-|**Remoting Service** |OrchestratorRemotingService.exe|
-|**Run Program Service** |OrchestratorRunProgramService.exe|
-|**Runbook Server Monitor Service** |RunbookServerMonitorService.exe|
-|**Runbook Service** |RunbookService.exe|
+|**Management Service** |ManagementService.exe, PolicyModule.exe |
+|**Remoting Service** |OrchestratorRemotingService.exe, PolicyModule.exe |
+|**Run Program Service** |OrchestratorRunProgramService.exe, PolicyModule.exe |
+|**Runbook Server Monitor Service** |RunbookServerMonitorService.exe, PolicyModule.exe |
+|**Runbook Service** |RunbookService.exe, PolicyModule.exe |
 
 ## Exclusions by folders
 
