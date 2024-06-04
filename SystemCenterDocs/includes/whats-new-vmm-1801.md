@@ -5,7 +5,7 @@ description: include file to detail the new features in virtual machine manager 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  04/25/2018
+ms.date:  06/04/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
@@ -106,4 +106,4 @@ The primary HGS URLs will always be used in favor of the secondary. If the prima
 
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and global Azure regions.
 
-VMM 1801 supports management of Azure Resource Manager based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
+VMM 1801 supports management of Azure Resource Manager based VMs, Microsoft Entra ID-based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).

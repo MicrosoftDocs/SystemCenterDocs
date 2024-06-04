@@ -5,7 +5,7 @@ description: This include file describes the new features in Virtual Machine Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  03/19/2024
+ms.date:  06/04/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
