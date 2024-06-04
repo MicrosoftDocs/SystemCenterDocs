@@ -24,7 +24,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 This article provides information about how to manage the Azure Resource Manager-based and region-specific Azure subscriptions using System Center - Virtual Machine Manager (VMM).
 
-You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later, and perform the required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows the management of Azure subscriptions through certificate-based authentication and authorization and VMs in public Azure region.
+You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later, and perform the required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows the management of Azure subscriptions through certificate-based authentication and authorization and VMs in global Azure region.
 
 VMM 1801 and later supports management of Azure subscriptions through Microsoft Entra ID and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
 
@@ -37,17 +37,17 @@ Management of VMs using Microsoft Entra ID-based authentication and authorizatio
 
 Ensure the following prerequisites:
 
-- **Microsoft Entra ID application** - to manage VMs by using VMM through AD authentication and authorization, you need to create an Microsoft Entra ID application and then provide the following details through VMM Azure plugin:
+- **Microsoft Entra ID application** - to manage VMs by using VMM through AD authentication and authorization, you need to create a Microsoft Entra ID application and then provide the following details through VMM Azure plugin:
 
     -	Azure Subscription ID
     -   Microsoft Entra ID
     - 	Microsoft Entra ID - Application ID & Application Key
 
-  [Learn more](/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create an Microsoft Entra ID App.  
+  [Learn more](/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create a Microsoft Entra ID App.  
 
 - **A management certificate** - with the configuration as described in [this article](./azure-subscription.md).
 
-  - The subscription must have a management certificate associated with it so that VMM can use the service management API in Azure.
+  - The subscription must have a management certificate associated with it so that VMM can use the classic deployment model in Azure.
   - Make note of the subscription ID and the certificate thumbprint.
   - Certificates must be x509 v3 compliant.
   - The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.  
@@ -65,7 +65,7 @@ Ensure the following prerequisites:
 
 2. Provide **Display Name**, **Azure cloud**, and **Subscription ID**.
 
-    You can provide any friendly name as display name. Choose either public Azure or region-specific subscription as appropriate.
+    You can provide any friendly name as display name. Choose either global Azure or region-specific subscription as appropriate.
 
     ![Screenshot of add subscription id.](media/azure-arm-based/add-subscription-id.png)
 

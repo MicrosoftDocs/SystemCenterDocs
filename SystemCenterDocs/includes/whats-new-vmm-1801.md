@@ -20,7 +20,7 @@ See the following sections for detailed information about the new features suppo
 ### Nested virtualization
 VMM  supports Nested Virtualization feature that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third-party virtualization management products with Microsoft hypervisor.
+You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use non-Microsoft virtualization management products with Microsoft hypervisor.
 
 You can enable or disable the nested virtualization feature using SCVMM 1801. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement. [Learn more](../vmm/vm-nested-virtualization.md).
 

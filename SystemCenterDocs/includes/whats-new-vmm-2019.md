@@ -135,7 +135,7 @@ VMM supports SQL Server 2017. You can upgrade SQL Server 2016 to SQL Server 2017
 
 VMM supports a nested virtualization feature that you can use to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. With this feature, you can also use third-party virtualization management products with Hyper-V.
+You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. With this feature, you can also use non-Microsoft virtualization management products with Hyper-V.
 
 You can enable or disable the nested virtualization feature by using VMM. You can configure the VM as a host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement. For more information, see [Configure a nested VM as a host](../vmm/vm-nested-virtualization.md).
 
@@ -364,7 +364,7 @@ VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV
 
 #### Support for Azure Stack HCI clusters
 
-VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
+VMM 2019 UR3 includes support to add, deploy, and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
 
 Azure Stack HCI, version 20H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
@@ -393,9 +393,9 @@ For problems fixed in UR4, and the installation instructions for UR4, see [the K
 
 VMM 2019 UR4 supports Windows Server 2012 2022 and Windows 11 guest virtual machines. For more information about supported hosts, see [System requirements](/system-center/vmm/system-requirements?view=sc-vmm-2019&preserve-view=true#servers-in-the-vmm-fabric).
 
-#### Support for Smart card login
+#### Support for Smart card sign in
 
-VMM 2019 UR4 supports smart card login to connect virtual machines in enhanced session mode.
+VMM 2019 UR4 supports smart card sign in to connect virtual machines in enhanced session mode.
 
 ## New features in VMM 2019 UR5
 
