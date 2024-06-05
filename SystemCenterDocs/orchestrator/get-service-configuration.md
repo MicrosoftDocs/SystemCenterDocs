@@ -1,14 +1,14 @@
 ---
 title: Get Service Configuration activity in System Center - Orchestrator
 description: Describes the Get Service Configuration activity that is used in a runbook to return all service configurations on the VMM management server that meet the filtering criteria.
-ms.date: 02/16/2024
+ms.date: 06/05/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Get Service Configuration activity
@@ -27,7 +27,7 @@ The activity publishes all the data from the required and optional properties in
 
 There are no required properties for this activity.
 
-##  Optional properties
+## Optional properties
 
 There are no optional properties for this activity.
 
