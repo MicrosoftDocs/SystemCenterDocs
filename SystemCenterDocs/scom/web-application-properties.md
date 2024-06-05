@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency3
 
  The following sections describe the settings available for a **Web Application Transaction Monitoring** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md).
 
- ## Ignore server certificate errors
+## Ignore server certificate errors
 
  Web application URL monitoring, web application availability, and transaction monitoring are used to test a URL/website/web-based application by sending WinHttp requests, validating their response, and measuring their performance.
 
