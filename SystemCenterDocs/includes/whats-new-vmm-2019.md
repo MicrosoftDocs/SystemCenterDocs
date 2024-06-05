@@ -5,7 +5,7 @@ description: This include file describes the new features in Virtual Machine Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  06/04/2024
+ms.date:  06/05/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,7 +18,7 @@ The following sections introduce the new features in Virtual Machine Manager (VM
 
 ### Compute
 
-####   Cluster rolling upgrade for S2D clusters
+#### Cluster rolling upgrade for S2D clusters
 
 System Center 2019 Virtual Machine Manager supports a rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. For more information, see [Perform a rolling upgrade](../vmm/hyper-v-rolling-upgrade.md).
 

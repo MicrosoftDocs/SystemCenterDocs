@@ -5,7 +5,7 @@ description: include file to detail the new features in virtual machine manager 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  06/04/2024
+ms.date:  06/05/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager

@@ -5,7 +5,7 @@ description: This article provides information about how to manage VMs with Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/04/2024
+ms.date: 06/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
