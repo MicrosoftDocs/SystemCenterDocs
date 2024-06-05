@@ -1,7 +1,7 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 02/01/2023
+ms.date: 06/05/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -27,6 +27,8 @@ This article provides information about System Center integration pack for Micro
 
 The System Center Integration Pack for Microsoft SharePoint enables the automation of common tasks in SharePoint. For example, to create list items, to upload and download documents, and to monitor a list for changes.
 
+>[!Note]
+>Azure Active Directory or Azure AD or AAD mentioned in Integration packs refers to Microsoft Entra ID. [Learn more](https://azure.microsoft.com/updates/azure-ad-is-becoming-microsoft-entra-id/).
 
 ## System requirements
 
