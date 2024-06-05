@@ -32,6 +32,8 @@ Management of Azure subscriptions through certificate-based authentication and a
 
 Management of VMs using Microsoft Entra ID-based authentication and authorization requires Microsoft Entra ID application.
 
+>[!Note]
+> Azure AD mentioned in this article refers to Microsoft Entra ID. [Learn more](https://azure.microsoft.com/updates/azure-ad-is-becoming-microsoft-entra-id/).
 
 ## Before you start
 
