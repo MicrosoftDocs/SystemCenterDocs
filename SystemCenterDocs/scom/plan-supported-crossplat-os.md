@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 06/06/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -217,10 +217,11 @@ To install the agent on servers, see [Install the agent on RPM based Universal L
 Supported versions:
 
 - Debian 9, 10, 11, and 12
-- Ubuntu 16.04, 18.04, 20.04, and 22.04
+- Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!Note]
 >- Ubuntu 22.04 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
+>- Ubuntu 24.04 is supported from Operations Manager 2022 UR2 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
