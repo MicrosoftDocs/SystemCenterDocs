@@ -15,7 +15,10 @@ ms.topic: article
 
 This article outlines antivirus exclusions that relate to System Center Orchestrator.
 
-An incorrect exclusion may prevent some potentially dangerous programs from being detected. We don't recommend that you rely on exclusions that are based on any process executables for Orchestrator servers.
+>[!NOTE]
+>An incorrect exclusion may prevent some potentially dangerous programs from being detected. 
+
+We don't recommend that you rely on exclusions that are based on any process executables for Orchestrator servers.
 
 ## Exclusions by process executable
 
