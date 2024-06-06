@@ -22,6 +22,7 @@
 ### [Configure Orchestrator database connections](how-to-configure-orchestrator-database-connections.md)
 ### [Migrate Orchestrator between environments](migrate-orchestrator-between-environments.md)
 ### [Change the Orchestrator database](how-to-change-the-orchestrator-database.md)
+### [Antivirus](plan-security-antivirus.md)
 ## Manage Runbooks
 ### [Design and build runbooks](design-and-build-runbooks.md)
 ### [Create and test a sample runbook](creating-and-testing-a-sample-runbook.md)
