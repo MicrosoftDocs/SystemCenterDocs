@@ -26,10 +26,10 @@ If you must make exclusions that are based on the process executables, use the f
 
 |Component | Process |
 |--------|---------|
-|**Management Service** |ManagementService.exe, PolicyModule.exe |
-|**Remoting Service** |OrchestratorRemotingService.exe, PolicyModule.exe |
-|**Run Program Service** |OrchestratorRunProgramService.exe, PolicyModule.exe |
-|**Runbook Server Monitor Service** |RunbookServerMonitorService.exe, PolicyModule.exe |
+|**Management Service** |ManagementService.exe|
+|**Remoting Service** |OrchestratorRemotingService.exe|
+|**Run Program Service** |OrchestratorRunProgramService.exe|
+|**Runbook Server Monitor Service** |RunbookServerMonitorService.exe|
 |**Runbook Service** |RunbookService.exe, PolicyModule.exe |
 
 ## Exclusions by folders
@@ -58,14 +58,6 @@ These exclusions include the default installation locations for all Orchestrator
 
 *%ProgramFiles%\Microsoft System Center\Orchestrator\Runbook Server*
 
-**For Runbook logs (Real time log, Historic log, Runbook audit history, Activity events, Audit trail)**
-
-*%Common Files%\Microsoft System Center 2012\Orchestrator\Management Server\Components\Logs\*.log*
-
-**For Trace logs**
-
-*%ProgramData%Microsoft System Center 2012\Orchestrator\**\Logs\*.log*
-
 ## Exclusion of file type by extension
 
 The following file name extension-specific exclusions for Orchestrator include real-time scans, scheduled scans, and local scans.
@@ -78,10 +70,6 @@ For standard Microsoft SQL Server specific exclusions, see [Configure antivirus 
 
 ### Orchestrator (Management Server, Runbook Server)
 
-These exclusions include the log files that are used by Orchestrator.
-
-For Example:
-
-- *.log*
+These exclusions include the log files that are used by Orchestrator. For more information, see [Orchestrator Logs](/system-center/orchestrator/orchestrator-logs).
 
 Page files should also be excluded from any real-time scans.
