@@ -228,7 +228,7 @@ Currently, the VMM Azure plug-in supports only classic VMs and global Azure regi
 VMM 1801 supports management of:
 
 * Azure Resource Manager-based VMs.
-* Azure Active Directory-based authentication that's created by using the new Azure portal.
+* Microsoft Entra ID-based authentication that's created by using the new Azure portal.
 * Region-specific Azure subscriptions, namely, Germany, China, and US Government Azure regions.
 
 For more information, see [Manage VMs](../vmm/vms-manage-azure-ad-and-region-specific.md).
