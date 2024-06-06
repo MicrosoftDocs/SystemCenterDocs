@@ -69,13 +69,7 @@ The following file name extension-specific exclusions for Orchestrator include r
 
 ### SQL database servers
 
-These exclusions include the SQL Server database files that are used by Orchestrator components and the system database files for the master database and for the tempdb database.
-
-For example:
-
-- *.mdf*
-- *.ldf*
-- *.ndf*
+These exclusions include the SQL Server database files that are used by Orchestrator components and the system database files for the master database and for the tempdb database. [Learn more](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server#directories-and-file-name-extensions-to-exclude-from-virus-scanning).
 
 For standard Microsoft SQL Server specific exclusions, see [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server).
 
