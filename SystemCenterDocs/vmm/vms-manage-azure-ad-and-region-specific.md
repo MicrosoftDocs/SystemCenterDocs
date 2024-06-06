@@ -5,7 +5,7 @@ description: This article provides information about how to manage VMs with Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/05/2024
+ms.date: 06/06/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -45,7 +45,7 @@ Ensure the following prerequisites:
     -   Microsoft Entra ID
     - 	Microsoft Entra ID - Application ID & Application Key
 
-  [Learn more](/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create a Microsoft Entra ID App.  
+  [Learn more](/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create a Microsoft Entra ID app.  
 
 - **A management certificate** - with the configuration as described in [this article](./azure-subscription.md).
 
