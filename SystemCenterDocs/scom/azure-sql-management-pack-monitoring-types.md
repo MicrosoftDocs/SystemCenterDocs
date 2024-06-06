@@ -66,17 +66,17 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Templates**. Rght-click **Azure SQL Database Monitoring** and select **Add Monitoring Wizard**.
 
-   ![Screenshot that shows the REST API monitoring wizard.](./media/azure-sql-management-pack/opening-monitoring-wizard.png)  
+   :::image type="content" source="media/azure-sql-management-pack/opening-monitoring-wizard.png" alt-text="Screenshot that shows selecting the Add Monitoring Wizard link.":::
 
 1. For **Monitoring Type**, select **Azure SQL Database Monitoring**, and then select **Next**.
 
-   ![Screenshot that shows the Monitoring target.](./media/azure-sql-management-pack/selecting-monitoring-target.png)
+   :::image type="content" source="media/azure-sql-management-pack/selecting-monitoring-target.png" alt-text="Screenshot that shows selecting the Monitoring target.":::
 
 1. For **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to use to store the template.  
 
-   To create a new management pack, select **New**, and follow the instructions in the wizard.
+   To create a new management pack, select **New**, and thenfollow the instructions in the wizard.
 
-   ![Screenshot that shows General properties.](./media/azure-sql-management-pack/configuring-general-properties.png)
+   :::image type="content" source="media/azure-sql-management-pack/configuring-general-properties.png" alt-text="Screenshot that shows General properties.":::
 
 1. For **Authentication Mode**, select **Azure Service Principal Name**.
 
@@ -112,15 +112,15 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
 ![Screenshot that shows the SPN configuration.](./media/azure-sql-management-pack/selecting-spn-configuration.png)
 
-If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** panen appears. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
+If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** pane appears. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
 
 ![Screenshot that shows Sign in to your account.](./media/azure-sql-management-pack/sign-in-account.png)
 
 At this step, you might receive internet security alerts. To resolve the alerts, go to **Internet Properties**, select the **Security** tab, and then set a lower internet zone security level.
 
-![Screenshot that shows Security level.](./media/azure-sql-management-pack/change-security-level.png)
+![Screenshot that shows security settings in Internet Optionsl.](./media/azure-sql-management-pack/change-security-level.png)
 
-When the Azure AD application is successfully created, authentication information appears at the **Auto-Create SPN Status** step.
+When the Azure AD application is successfully created, authentication information appears at the **Auto-create SPN Status** step.
 
 > [!TIP]
 > This information is available only once. Be sure to save this information to a secure location to use it later.
@@ -144,7 +144,7 @@ To register the application and create the SPN manually by using the Azure porta
 > [!TIP]
 > You can skip the web URI redirection. The parameter is not needed for monitoring.
 
-In the Azure portal, on the **IAM Access** pane, assign the Reader role to the SPN for the respective Azure SQL DB server. The role assignment flow is similar to the flow that is described in [Grant a user access to Azure resources by using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal#grant-access).
+In the Azure portal, on the **Access control (IAM)** pane, assign the Reader role to the SPN for the respective Azure SQL DB server. The role assignment flow is similar to the flow that is described in [Grant a user access to Azure resources by using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal#grant-access).
 
 ![Screenshot that shows manual granted SPN permission in the Azure portal.](./media/azure-sql-management-pack/azure-spn-reader-permission.png)
 
@@ -155,7 +155,7 @@ For **SPN Configuration**, select the **Enter SPN Manually** option, and then se
 - **Client Secret**: The client secret value for the specific SPN.
 
 > [!NOTE]
-> The client secret value is visible only once after you create it. Copy the value to a secure location for reuse.
+> The client secret value is visible only once after you create it. Copy the value to a secure location to use later.
 
 The information is used to create a new Run As account for authentication in Azure Cloud Services.
 
