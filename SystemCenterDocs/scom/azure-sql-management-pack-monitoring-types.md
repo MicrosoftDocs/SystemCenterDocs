@@ -1,6 +1,6 @@
 ---
 title: Monitoring types in Management Pack for Azure SQL Database
-description: Learn how to configure Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database.
+description: Learn how to set up Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database.
 ms.custom: engagement-fy23
 author: epomortseva
 ms.author: v-fkornilov
@@ -46,7 +46,7 @@ The main difference between [Azure REST API](/rest/api/azure/) monitoring and T-
   - Count of Failed Connection
   - Count of connections blocked by the Firewall
 
-To make these workflows available in the Azure REST API, select the **Use T-SQL monitoring** checkbox and run the required T-SQL scripts that are described in [Configure Azure REST API monitoring](#configure-azure-rest-api-monitoring).
+To make these workflows available in the Azure REST API, select the **Use T-SQL monitoring** checkbox and run the required T-SQL scripts that are described in [Set up Azure REST API monitoring](#set-up-azure-rest-api-monitoring).
 
 > [!NOTE]
 > To connect Microsoft System Center Operations Manager to Azure resources, your server must have TLS 1.2 enabled. Check the protocol status by using [TLS 1.2 enforcement for Microsoft Entra Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
