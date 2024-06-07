@@ -19,7 +19,7 @@ This article describes how to set up a notification channel that sends alert not
 
 Earlier versions of System Center Operations Manager supported integration with *Skype for Business*. Users could get alerts from System Center Operations Manager. All Skype for Business customers were encouraged to start using Microsoft Teams as their communications and collaboration service. Skype for Business was retired on July 31, 2021.
 
-In line with the lifecycle, we now support System Center Operations Manager alerts on Microsoft Teams. Integrating Teams with System Center Operations Manager enhances productivity becaused you can get alerts directly in Teams, where you collaborate the most.
+In line with the lifecycle, we now support System Center Operations Manager alerts on Microsoft Teams. Integrating Teams with System Center Operations Manager enhances productivity because you can get alerts directly in Teams, where you collaborate the most.
 
 In System Center Operations Manager 2022, Microsoft Teams was added to the existing basic notification channels. You can set conditions for the channel to allow only certain types of alerts.
 
@@ -31,57 +31,58 @@ To configure alert notifications for System Center Operations Manager, you must 
 Before you begin, make sure that you have the following items:
 
 - Teams tenant information.
-- Run As account. Delegated API type is used in Teams integration and the Run As account credentials will be used to authenticate.
-  Run As account should be
-  - A valid Microsoft Entra ID account (example: `user@domain`).
+- Run As account. The delegated API type is used in Teams integration, and the Run As account credentials are used to authenticate. The Run As account should have the following characteristics. The account is:
+
+  - A valid Microsoft Entra ID account (for example, `user@domain`).
   - Licensed to use Microsoft Teams.
-  - A member of target Microsoft Teams channel.
+  - A member of the target Microsoft Teams channel.
   - Not enabled for multifactor authentication.
 
-  For more information, see [How to create and configure the Notification action account](./manage-notifications-create-configure.md).
-- Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
+    For more information, see [Create and configure the notification action account](./manage-notifications-create-configure.md).
+
+- Link to the Teams channel you created. For more information about Teams channels, see [Overview of teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
 - Details of the newly created application in Azure. Instructions to register an application available at [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2).
 - For the newly created app, ensure that the Graph API permission is given as `ChannelMessage.Send` and that the **Grant admin consent for Contoso** checkbox is selected.
 
-  :::image type="content" source="media/teams-notifications/graph-api-permissions.png" alt-text="Screenshot that shows graph API permissions.":::
+  :::image type="content" source="media/teams-notifications/graph-api-permissions.png" alt-text="Screenshot that shows Graph API permissions.":::
 
-- On the **Microsoft Entra ID admin center** > **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
+- On **Microsoft Entra ID admin center** > **Advanced settings**, ensure that **Allow public client flows** is set to **Yes**.
 
-  :::image type="content" source="media/teams-notifications/advance-settings.png" alt-text="Screenshot that shows advance settings.":::
+  :::image type="content" source="media/teams-notifications/advance-settings.png" alt-text="Screenshot that shows advanced settings.":::
 
 ## Key descriptions in notifications channels
 
-For detailed information about channels, subscribers, and subscriptions, see [Subscribe to alert notifications](./manage-notifications-alert-notifications.md).
+For more detailed information about channels, subscribers, and subscriptions, see [Subscribe to alert notifications](./manage-notifications-alert-notifications.md).
 
 | Parameters | Microsoft Teams |
 |---|---|
-| Notifications Channel | Provide Azure endpoints, Azure / Microsoft 365 authentication details such as application ID and tenant ID, format of notifications that will be sent to Microsoft Teams. |
-| Notifications Subscriber | Provide notification schedule and Microsoft Teams channel details to which notifications will be sent. |
-| Notifications Subscription | Set criteria & scope on alerts that will be sent as notifications to Microsoft Teams. Subscription defines the criteria for sending a notification, the channel to be used, and the subscribers to receive the notification. |
+| Notifications Channel | Provide Azure endpoints, Azure/Microsoft 365 authentication details such as application ID and tenant ID, and the format of notifications to send to Microsoft Teams. |
+| Notifications Subscriber | Provide notification schedule and Microsoft Teams channel details to which to send notifications. |
+| Notifications Subscription | Set criteria and scope on alerts that to send as notifications to Microsoft Teams. Subscription defines the criteria for sending a notification, the channel to use, and the subscribers to receive the notification. |
 
-## Integrate Operations Manager with Microsoft Teams
+## Integrate System Center Operations Manager with Microsoft Teams
 
-To integrate Operations Manager with Teams, set up a Teams channel, and then add a subscriber and a subscription.
+To integrate System Center Operations Manager with Teams, set up a Teams channel, and then add a subscriber and a subscription.
 
 ## Create and enable the Microsoft Teams notification channel
 
 1. Sign in to the computer where the Operations Manager console is installed.
 
-1. In the console under **Notifications**, right-click **Channels** and select **New channel** > **Microsoft Teams*.
+1. On the console under **Notifications**, right-click **Channels** and select **New channel** > **Microsoft Teams*.
 
    The Microsoft Teams Notification Channel wizard opens.
 
 1. On **Description**, enter values for **Channel name** and **Description (optional)**, and then select **Next**.
 
-   :::image type="content" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="Screenshot that shows Microsoft Teams notification channel wizard.":::
+   :::image type="content" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="Screenshot that shows the Microsoft Teams notification channel wizard.":::
 
-1. On **Authentication**, enter values for **Tenant Id** and **Client Id** from your Microsoft Entra ID app, and select **Next**.
+1. On **Authentication**, enter values for **Tenant Id** and **Client Id** from your Microsoft Entra ID app, and then select **Next**.
 
    :::image type="content" source="media/teams-notifications/authentication.png" alt-text="Screenshot that shows authentication.":::
 
-1. On **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default. Select **Next**. (If you aren't a public cloud user, see [National cloud If deployments](/graph/deployments) for the endpoints to use.)
+1. On **Endpoints**, values for **Authorization URL** and **Graph API URL for your Cloud** are set by default. Select **Next**. (If you aren't a public cloud user, see [National cloud deployments](/graph/deployments) for the endpoints to use.)
 
-   :::image type="content" source="media/teams-notifications/endpoints.png" alt-text="Screenshot that shows endpoints.":::
+   :::image type="content" source="media/teams-notifications/endpoints.png" alt-text="Screenshot that shows endpoints to use.":::
 
 1. On **Format**, in **Default Microsoft Teams Notifications Message Format", a default alert format uses Adaptive Cards to deliver rich alerts. Select **Finish**.
 
@@ -89,24 +90,24 @@ To integrate Operations Manager with Teams, set up a Teams channel, and then add
 
 1. To customize the Teams message and for more information, see the [Adaptive Cards overview](/adaptive-cards/) and the [Adaptive Cards reference](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card).
 
-The following table highlights the variables to use for various properties of the alert or links to the HTML content.
+The following table highlights the variables to use for various properties of the alert or links to the HTML content:
 
    | Alert property of the link | Variable |  
    |-------------|---|-------------|  
-   |Alert Source  |$Data[Default='Not Present']/Context/DataItem/ManagedEntityPath$\$Data[Default='Not Present']/Context/DataItem/ManagedEntityDisplayName$ |
-   | Alert Name  |$Data[Default='Not Present']/Context/DataItem/AlertName$ |
-   |Alert Description   |$Data[Default='Not Present']/Context/DataItem/AlertDescription$  |
-   | Alert Severity   |$Data[Default='Not Present']/Context/DataItem/Severity$   |
-   | Alert Priority  | $Data[Default='Not Present']/Context/DataItem/Priority$  |
-   | Alert Category   |$Data[Default='Not Present']/Context/DataItem/Category$  |
-   | Alert Owner    | $Data[Default='Not Present']/Context/DataItem/AlertOwner$ |
-   | Alert Resolved By    |$Data[Default='Not Present']/Context/DataItem/ResolvedBy$  |
-   | Alert Raised Time   |$Data[Default='Not Present']/Context/DataItem/TimeRaisedLocal$  |
-   | Alert Last Modified Time | $Data[Default='Not Present']/Context/DataItem/LastModifiedLocal$  |
-   | Alert Last Modified By | $Data[Default='Not Present']/Context/DataItem/LastModifiedBy$ |
-   | Custom FieldN (N varies from 1 to 10) | $Data[Default='Not Present']/Context/DataItem/CustomN$   |
-   | WebConsole Alert Link | $Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/alert/$UrlEncodeData/Context/DataItem/AlertId$ |
-   | WebConsole Alert Source Link | $Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$ |
+   |`Alert Source`  |`$Data[Default='Not Present']/Context/DataItem/ManagedEntityPath$\$Data[Default='Not Present']/Context/DataItem/ManagedEntityDisplayName$` |
+   | `Alert Name`  |`$Data[Default='Not Present']/Context/DataItem/AlertName$` |
+   |`Alert Description`   |`$Data[Default='Not Present']/Context/DataItem/AlertDescription$`  |
+   | `Alert Severity`   |`$Data[Default='Not Present']/Context/DataItem/Severity$`   |
+   | `Alert Priority`  | `$Data[Default='Not Present']/Context/DataItem/Priority$`  |
+   | `Alert Category`   |`$Data[Default='Not Present']/Context/DataItem/Category$`  |
+   | `Alert Owner`    | `$Data[Default='Not Present']/Context/DataItem/AlertOwner$` |
+   | `Alert Resolved By`    |`$Data[Default='Not Present']/Context/DataItem/ResolvedBy$`  |
+   | `Alert Raised Time`   |`$Data[Default='Not Present']/Context/DataItem/TimeRaisedLocal$`  |
+   | `Alert Last Modified Time` | `$Data[Default='Not Present']/Context/DataItem/LastModifiedLocal$`  |
+   | `Alert Last Modified By` | `$Data[Default='Not Present']/Context/DataItem/LastModifiedBy$` |
+   | `Custom FieldN` (N varies from 1 to 10) | `$Data[Default='Not Present']/Context/DataItem/CustomN$`   |
+   | `WebConsole Alert Link` | `$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/alert/$UrlEncodeData/Context/DataItem/AlertId$` |
+   | `WebConsole Alert Source Link` | `$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$ `|
 
 ## Add a subscriber to the notification channel
 
@@ -149,7 +150,7 @@ The following table highlights the variables to use for various properties of th
 
 1. On **Schedule**, enter values for **Date range**, **Weekly recurrence**, **On the selected days of the week**, and **Time zone** based on your requirements. Select **Finish**.
 
-   :::image type="content" source="media/teams-notifications/schedule.png" alt-text="Screenshot that shows a notificationschedule.":::  
+   :::image type="content" source="media/teams-notifications/schedule.png" alt-text="Screenshot that shows a notification schedule.":::  
 
 ## Configure a notification subscription
 
