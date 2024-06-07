@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/06/2024
+ms.date: 06/07/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -172,11 +172,12 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 Supported versions:
 
 - Debian 9, 10, 11, and 12
-- Ubuntu 16.04, 18.04, 20.04 and 22.04
+- Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!NOTE]
 >- Debian 10, 11, and Ubuntu 20.04 are compatible with System Center - Operations Manager 2019 UR3 and later.
 >- Ubuntu 22.04 is compatible with System Center - Operations Manager 2019 UR5 and later.
+>- Ubuntu 24.04 is compatible with System Center - Operations Manager 2019 UR6 and later
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
