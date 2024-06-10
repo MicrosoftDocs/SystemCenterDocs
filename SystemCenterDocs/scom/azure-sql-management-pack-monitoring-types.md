@@ -4,7 +4,7 @@ description: Learn how to set up Azure REST API and T-SQL monitoring in Manageme
 ms.custom: engagement-fy23
 author: epomortseva
 ms.author: v-fkornilov
-manager: evansma
+manager: ebruersan
 ms.date: 05/22/2024
 ms.topic: article
 ms.service: system-center

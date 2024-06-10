@@ -3,8 +3,8 @@ title: Monitoring scenarios in Management Pack for Azure SQL Database
 description: Learn about monitoring configurations in Management Pack for Azure SQL Database.
 author: Anastas1ya
 ms.author: v-fkornilov
-manager: evansma
-ms.date: 3/17/2021
+manager: ebruersan
+ms.date: 06/10/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
