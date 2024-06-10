@@ -16,7 +16,7 @@ This article describes monitoring scenarios that Management Pack for Azure SQL D
 
 ## Service availability monitoring
 
-The *State changes of the master database* monitor tracks the availability of Azure SQL Database instances that it discovers. This monitor isn't considered to be noisy and doesn't require special configuration.
+The *State changes of the master database* monitor tracks the availability of Azure SQL Database instances that it discovers. This monitor isn't considered noisy, and it doesn't require special configuration.
 
 ## Service performance monitoring
 
@@ -35,7 +35,7 @@ The management pack has a rule that collects the number of databases that are ho
 
 ## Database availability monitoring
 
-The *State changes of the database* monitor tracks the availability of discovered databases. This monitor isn't considered to be noisy and doesn't require special configuration.
+The *State changes of the database* monitor tracks the availability of discovered databases. This monitor isn't considered noisy, and it doesn't require special configuration.
 
 ## Database performance monitoring
 

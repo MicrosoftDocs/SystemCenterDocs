@@ -75,21 +75,17 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
    :::image type="content" source="media/azure-sql-management-pack/selecting-monitoring-target.png" alt-text="Screenshot that shows selecting the Monitoring target.":::
 
-1. On **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to use to store the template.  
+1. On **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to use to store the template. Then select **Next**.
 
    To create a new management pack, select **New**, and then follow the instructions in the wizard.
 
-   Select **Next**.
-
    :::image type="content" source="media/azure-sql-management-pack/configuring-general-properties.png" alt-text="Screenshot that shows General properties.":::
 
-1. On **Authentication Mode**, select **Azure Service Principal Name**.
-
-   Select **Next**.
+1. On **Authentication Mode**, select **Azure Service Principal Name**, and then select **Next**.
 
    :::image type="content" source="media/azure-sql-management-pack/selecting-authentication-mode.png" alt-text="Screenshot that shows Authentication mode.":::
 
-1. On **Azure Endpoints**, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox and modify the default Azure endpoints if necessary.
+1. On **Azure Endpoints**, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox and modify the default Azure endpoints if necessary. Then select **Next**.
 
    Here are the default endpoints for creating the Azure SPN:
 
@@ -102,8 +98,6 @@ To monitor Azure SQL Database instances by using the Azure REST API:
    - Database Resource URI: `https://database.windows.net`
 
    - Graph API Resource URI: `https://graph.windows.net`
-
-   Select **Next**.
 
    :::image type="content" source="media/azure-sql-management-pack/selecting-azure-endpoints.png" alt-text="Screenshot that shows Azure endpoints.":::
 
@@ -186,7 +180,7 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
        The **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-        :::image type="content" source="media/azure-sql-management-pack/configuring-database-exclude-regular-expression-list.png" alt-text="Screenshot that shows the database exclude list regular expression SQL.":::
+       :::image type="content" source="media/azure-sql-management-pack/configuring-database-exclude-regular-expression-list.png" alt-text="Screenshot that shows the database exclude list regular expression SQL.":::
 
        To remove an existing mask, select the mark, and then select **Delete**.
 
@@ -198,7 +192,7 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
        :::image type="content" source="media/azure-sql-management-pack/sign-in-account.png" alt-text="Screenshot that shows the pane to sign in to your account.":::
 
-       At this step, you might see internet security alerts. To resolve the alerts, go to **Internet Options**, select the **Security** tab, and then set a lower internet zone security level.
+       At this step, an internet security alert might appear. To resolve the issue, go to **Internet Options**, select the **Security** tab, and then set a lower internet zone security level.
 
        :::image type="content" source="media/azure-sql-management-pack/change-security-level.png" alt-text="Screenshot that shows security settings in Internet Options.":::
 
@@ -209,7 +203,7 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
        :::image type="content" source="media/azure-sql-management-pack/reviewing-authentication-information.png" alt-text="Screenshot that shows Authentication information.":::
 
-1. On **Subscription Permissions**, select the Azure subscriptions where you want to add the Azure SPN.
+1. On **Subscription Permissions**, select the Azure subscriptions where you want to add the Azure SPN. Then select **Next**.
 
    :::image type="content" source="media/azure-sql-management-pack/configuring-subscription-permissions.png" alt-text="Screenshot that shows Subscription permissions.":::
 
@@ -223,7 +217,7 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
 1. To set up T-SQL monitoring when you use Azure SPN, create a separate user for every monitored database. Grant the user the dbmanager role by running the following queries:
 
-   ```SQL
+   ```sql
    /*Run this on [master] database.
    Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
    CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
@@ -258,17 +252,17 @@ To monitor Azure SQL Database instances by using T-SQL queries:
 
    :::image type="content" source="media/azure-sql-management-pack/selecting-monitoring-target.png" alt-text="Screenshot that shows the Azure SQL Database monitoring type.":::
 
-1. On **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to store the template.  
+1. On **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to store the template. Then select **Next**.
 
    For **Management pack**, to create a new management pack, select **New, and follow the instructions in the wizard.
 
    :::image type="content" source="media/azure-sql-management-pack/configuring-general-properties.png" alt-text="Screenshot that shows the General settings.":::
 
-1. On **Authentication Mode**, select **SQL Server**.
+1. On **Authentication Mode**, select **SQL Server**, and then select **Next**.
 
    :::image type="content" source="media/azure-sql-management-pack/selecting-authentication-sql.png" alt-text="Screenshot that shows the T-SQL authentication mode.":::
 
-1. On **What to Monitor**, select **Add Server**.
+1. On **What to Monitor**, select **Add Server**, and then select **Next**.
 
    :::image type="content" source="media/azure-sql-management-pack/adding-servers.png" alt-text="Screenshot that shows the servers to monitor.":::
 
@@ -280,11 +274,11 @@ To monitor Azure SQL Database instances by using T-SQL queries:
 
    For more information on how to create a new SQL Server authentication login, see [Authorize database access to SQL Database, SQL Managed Instance, and Azure Synapse Analytics](/azure/sql-database/sql-database-manage-logins).
 
-1. Select **Next**.
+   Select **Next**.
 
-1. *Optionally* At the **Database Filter List** step, select the filtering mode, which can be either **Exclude** or **Include**. Select a filtering mask type, which can be either **Wildcard** or **Regular Expression**. Enter filtering masks, which should match database names that you want to exclude from or include in the monitoring list. Select **Add**, and then select **Next**.
+1. *Optionally*. on **Database Filter List**, select the filtering mode, which can be either **Exclude** or **Include**. Select a filtering mask type, which can be either **Wildcard** or **Regular Expression**. Enter filtering masks, which should match database names that you want to exclude from or include in the monitoring list. Select **Add**, and then select **Next**.
 
-   **Wildcard** filtering mask type can't end with `.` or space characters, can't contain `<`, `>`, `%`, `&`, `:`, `\`, `/`, `?`, or control characters, and it can't have more than 128 characters.
+   A **Wildcard** filtering mask type can't end with `.` or space characters, can't contain `<`, `>`, `%`, `&`, `:`, `\`, `/`, `?`, or control characters, and it can't have more than 128 characters.
 
    :::image type="content" source="media/azure-sql-management-pack/configuring-database-include-wildcard-list-manual.png" alt-text="Screenshot that shows the Database include list wildcard SQL manual template.":::
 
