@@ -1,6 +1,6 @@
 ---
-title: Enable Microsoft Teams notification channel
-description: This article describes how to enable Microsoft Teams notification channel for Microsoft System Center Operations Manager.
+title: Set up a Microsoft Teams notification channel
+description: This article describes how to set up a Microsoft Teams notification channel for System Center Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -50,15 +50,15 @@ Before you begin, make sure that you have the following items:
 
   :::image type="content" source="media/teams-notifications/advance-settings.png" alt-text="Screenshot that shows advanced settings.":::
 
-## Key descriptions in notifications channels
+## Key descriptions for notification channels
 
 For more detailed information about channels, subscribers, and subscriptions, see [Subscribe to alert notifications](./manage-notifications-alert-notifications.md).
 
 | Parameters | Microsoft Teams |
 |---|---|
-| Notifications Channel | Provide Azure endpoints, Azure/Microsoft 365 authentication details such as application ID and tenant ID, and the format of notifications to send to Microsoft Teams. |
-| Notifications Subscriber | Provide notification schedule and Microsoft Teams channel details to which to send notifications. |
-| Notifications Subscription | Set criteria and scope on alerts that to send as notifications to Microsoft Teams. Subscription defines the criteria for sending a notification, the channel to use, and the subscribers to receive the notification. |
+| `Notifications Channel` | Provide Azure endpoints, Azure and Microsoft 365 authentication details such as application ID and tenant ID, and the format of notifications to send to Microsoft Teams. |
+| `Notifications Subscriber` | Provide notification schedule and Microsoft Teams channel details to which to send notifications. |
+| `Notifications Subscription` | Set criteria and scope on alerts to send as notifications to Microsoft Teams. Defines the criteria for sending a notification, the channel to use, and the subscribers that receive the notification. |
 
 ## Integrate System Center Operations Manager with Microsoft Teams
 
@@ -90,7 +90,7 @@ To integrate System Center Operations Manager with Teams, set up a Teams channel
 
 1. To customize the Teams message and for more information, see the [Adaptive Cards overview](/adaptive-cards/) and the [Adaptive Cards reference](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card).
 
-The following table highlights the variables to use for various properties of the alert or links to the HTML content:
+   The following table highlights the variables to use for various properties of the alert or links to the HTML content:
 
    | Alert property of the link | Variable |  
    |-------------|---|-------------|  
@@ -107,7 +107,7 @@ The following table highlights the variables to use for various properties of th
    | `Alert Last Modified By` | `$Data[Default='Not Present']/Context/DataItem/LastModifiedBy$` |
    | `Custom FieldN` (N varies from 1 to 10) | `$Data[Default='Not Present']/Context/DataItem/CustomN$`   |
    | `WebConsole Alert Link` | `$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/alert/$UrlEncodeData/Context/DataItem/AlertId$` |
-   | `WebConsole Alert Source Link` | `$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$ `|
+   | `WebConsole Alert Source Link` | `$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$`|
 
 ## Add a subscriber to the notification channel
 
@@ -119,7 +119,7 @@ The following table highlights the variables to use for various properties of th
 
    :::image type="subscriber description" source="media/teams-notifications/subscriber-description.png" alt-text="Screenshot that shows adding a  subscriber description.":::
 
-1. On **Schedule**, select any of the following options based on your requirement, and then select **Next**.
+1. On **Schedule**, select any of the following options based on your requirements, and then select **Next**.
 
    - **Always send notifications**: Sends notifications all the time.
    - **Notify only during the specified times**: Sends notifications only at specific times.
@@ -136,11 +136,11 @@ The following table highlights the variables to use for various properties of th
 
    The Subscribers Address wizard opens.
 
-1. On **General**, for **Address name**, enter an address name to identify the subscriber.
+1. On **General**, for **Address name**, enter an address name to identify the subscriber. Then select **Next**.
 
    :::image type="content" source="media/teams-notifications/subscriber-address-name.png" alt-text="Screenshot that shows the subscriber address name.":::
 
-1. On **Channel**, for **Channel Type**, enter **Microsoft Teams**.
+1. On **Channel**, for **Channel Type**, enter **Microsoft Teams**. Then select **Next**.
 
    :::image type="content" source="media/teams-notifications/channel-type.png" alt-text="Screenshot that shows selecting the channel type.":::
 
@@ -152,9 +152,9 @@ The following table highlights the variables to use for various properties of th
 
    :::image type="content" source="media/teams-notifications/schedule.png" alt-text="Screenshot that shows a notification schedule.":::  
 
-## Configure a notification subscription
+## Set up a notification subscription
 
-1. Sign in to the computer where the System Center Operations Manager console is installed.
+1. Sign in to the computer where the Operations Manager console is installed.
 
 1. In the console under **Notifications**, right-click **Subscriptions** and select **New subscription**.
 
@@ -166,7 +166,7 @@ The following table highlights the variables to use for various properties of th
 
    :::image type="content" source="media/teams-notifications/create-notification-subscription.png" alt-text="Screenshot that shows create notification subscription.":::
 
-1. Set values for **Scope** and **Criteria** to define the type of alerts you want notifications for.
+1. Set values for **Scope** and **Criteria** to define the type of alerts you want notifications for. Select **Next**.
 
    :::image type="content" source="media/teams-notifications/scope.png" alt-text="Screenshot that shows scope.":::
 
@@ -174,9 +174,9 @@ The following table highlights the variables to use for various properties of th
 
 1. On **Subscribers**, select **Search**, select the subscriber, and then select **Next**.
 
-   :::image type="content" source="media/teams-notifications/subscriber-search.png" alt-text="Screenshot that shows subscriber search.":::
+   :::image type="content" source="media/teams-notifications/subscriber-search.png" alt-text="Screenshot that shows a subscriber search.":::
 
-1. On **Channels**, select **Search**, select the notification channel you want to search for, and then select **Next**.
+1. On **Channels**, select **Search**, select the notification channel to search for, and then select **Next**.
 
    :::image type="content" source="media/teams-notifications/channel-search.png" alt-text="Screenshot that shows channel search.":::
 
@@ -184,8 +184,8 @@ The following table highlights the variables to use for various properties of th
 
 ## Related content
 
-- To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md).
+- To create an email notification channel, see [Enable an email notification channel](manage-notifications-create-email-channel.md).
 
-- To create a command channel notification, see [How to enable a command notification channel](manage-notifications-create-command-channel.md).
+- To create a command channel notification, see [Enable a command notification channel](manage-notifications-create-command-channel.md).
 
-- To create a text message (SMS) notification channel, see [How to enable an SMS notification channel](manage-notifications-create-txt-channel.md).
+- To create a text message (SMS) notification channel, see [Enable an SMS notification channel](manage-notifications-create-txt-channel.md).

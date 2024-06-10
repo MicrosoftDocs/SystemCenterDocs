@@ -11,11 +11,11 @@ ms.subservice: operations-manager
 ms.custom: engagement-fy23
 ---
 
-# Security configuration
+# Security configuration in Management Pack for Azure SQL Managed Instance
 
-Monitoring accounts, SQL accounts, and Microsoft Entra ID principles that Management Pack for Azure SQL Managed Instance uses for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
+Monitoring accounts, SQL accounts, and Microsoft Entra ID principles that Management Pack for Azure SQL Managed Instance uses for monitoring should have enough permissions to access each managed instance that you specify in your monitoring templates.
 
-Every managed instance should have a sign-in account for the monitoring account. This account should be granted either of the following permissions:
+Every managed instance should have a sign-in account for the monitoring account. The account should be granted one of the following permissions:
 
 - System admin rights
 
@@ -23,7 +23,7 @@ Every managed instance should have a sign-in account for the monitoring account.
 
 To configure least-privilege monitoring, use the following scripts as examples.
 
-Run the following script against every managed instance. When you deploy new managed instances, be sure to run this script for each of the instances. You don't need to run the script for each new database that you create after initial execution. The script updates the *model* database so that databases that you create later have the required user. But you do need to run this script for every database that was attached or restored after you initially executed the script.
+Run the following script for every managed instance. When you deploy a new managed instance, be sure to run this script for the instance. You don't need to run the script for each new database that you create after initial execution. The script updates the *model* database so that databases that you create later have the required user. But you do need to run this script for every database that was attached or restored after you initially executed the script.
 
 ```sql
 --First script that:
@@ -71,7 +71,7 @@ EXEC sp_addrolemember @rolename='db_owner', @membername='MILowPriv_role';
 EXEC sp_addrolemember @rolename='SQLAgentReaderRole', @membername='MILowPriv_role';
 ```
 
-This script adds the monitoring account to the db_owner role, which might not be allowed. The db_owner permissions are required to set management pack tasks to run Database Console Command (DBCC) checks. If you don't need these tasks, don't give the permissions.
+This script adds the monitoring account to the db_owner role, which might not be allowed. The db_owner permissions are required to set management pack tasks to run Database Console Command (DBCC) checks. If you don't need these tasks, don't grant the permissions.
 
 ```sql
 --Second script that adds MILowPriv user to db_owner role for master, msdb, model, and all user databases.

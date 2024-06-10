@@ -311,6 +311,6 @@ To monitor Azure SQL Database instances by using T-SQL queries:
 
 1. On **Summary**, review the connection settings, and then select **Create**.
 
-## Related articles
+## Related content
 
 - [Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md)
