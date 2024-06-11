@@ -6,6 +6,10 @@
       "redirect_url" : "/system-center/index"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/whats-new-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/whats-new-scom-managed-instance"
+  },
+  {
      "source_path" : "SystemCenterDocs/orchestrator/delete-network-adapter.md",
      "redirect_url" : "/system-center/orchestrator/delete-network-adapter-activity-in-system-center-2016"
   },
