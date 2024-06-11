@@ -10,6 +10,134 @@
      "redirect_url" : "/azure/azure-monitor/scom-manage-instance/whats-new-scom-managed-instance"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/migrate-to-operations-manager-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/migrate-to-operations-manager-managed-instance?tabs=mp-overrides"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/tutorial-create-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/tutorial-create-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/monitor-health-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/monitor-health-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/customizations-on-scom-managed-instance-management-servers.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/customizations-on-scom-managed-instance-management-servers"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/register-scom-managed-instance-resource-provider.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/register-scom-managed-instance-resource-provider"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-separate-subnet-in-vnet.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-separate-subnet-in-vnet"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-sql-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-sql-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-key-vault.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-key-vault"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-user-assigned-identity.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-user-assigned-identity"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-gmsa-account.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-group-managed-service-account"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/store-domain-credentials-in-key-vault.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/store-domain-credentials-key-vault"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-static-ip.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-static-ip"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/configure-network-firewall.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/configure-network-firewall"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/verify-azure-and-internal-gpo-policies.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/verify-azure-internal-group-policy-object-policies"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scom-managed-instance-self-verification-of-steps.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/self-verification-steps"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-operations-manager-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-operations-manager-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/connect-managed-instance-ops-console.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/connect-managed-instance-ops-console"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scale-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/scale-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/patch-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/patch-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/operations-manager-managed-instance-create-reports-on-power-bi.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-reports-power-bi"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/dashboards-on-azure-managed-grafana.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/dashboards-on-azure-managed-grafana"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/query-scom-managed-instance-data-on-grafana.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/query-scom-managed-instance-data-on-grafana"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/view-operations-manager-alerts-azure-monitor.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/view-operations-manager-alerts-azure-monitor"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/monitor-off-azure-vm-with-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/monitor-off-azure-vm-with-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/monitor-arc-enabled-vm-with-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/monitor-arc-enabled-vm-with-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scom-mi-activity-log.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/scom-mi-activity-log"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/configure-log-analytics-for-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/configure-log-analytics-for-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/troubleshoot-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/troubleshoot-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/troubleshooting-input-parameters-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/troubleshooting-input-parameters-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/operations-manager-managed-instance-common-questions.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/common-questions"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/use-managed-identities-with-scom-mi.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/use-managed-identities-with-scom-mi"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scom-mi-data-encryption-at-rest.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/scom-mi-data-encryption-at-rest"
+  },
+  {
      "source_path" : "SystemCenterDocs/orchestrator/delete-network-adapter.md",
      "redirect_url" : "/system-center/orchestrator/delete-network-adapter-activity-in-system-center-2016"
   },
