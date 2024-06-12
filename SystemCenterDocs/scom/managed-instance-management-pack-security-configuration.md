@@ -19,7 +19,7 @@ Every managed instance should have a sign-in account for the monitoring account.
 
 - System admin rights
 
-- A minimum level of permissions to allow the management pack to operate (that is, in a least-privilege configuration).
+- A minimum level of permissions to allow the management pack to operate (that is, in a least-privilege configuration)
 
 To configure least-privilege monitoring, use the following scripts as examples.
 
