@@ -67,7 +67,7 @@ To integrate System Center Operations Manager with Teams, set up a Teams channel
 
 1. Sign in to the computer where the Operations Manager console is installed.
 
-1. On the console under **Notifications**, right-click **Channels** and select **New channel** > **Microsoft Teams*.
+1. On the console under **Notifications**, right-click **Channels** and select **New channel** > **Microsoft Teams**.
 
    The Microsoft Teams Notification Channel wizard opens.
 
@@ -83,7 +83,7 @@ To integrate System Center Operations Manager with Teams, set up a Teams channel
 
    :::image type="content" source="media/teams-notifications/endpoints.png" alt-text="Screenshot that shows endpoints to use.":::
 
-1. On **Format**, in **Default Microsoft Teams Notifications Message Format", a default alert format uses Adaptive Cards to deliver rich alerts. Select **Finish**.
+1. On **Format**, in **Default Microsoft Teams Notifications Message Format**, a default alert format uses Adaptive Cards to deliver rich alerts. Select **Finish**.
 
    :::image type="content" source="media/teams-notifications/format.png" alt-text="Screenshot that shows the default notifications message format.":::
 
