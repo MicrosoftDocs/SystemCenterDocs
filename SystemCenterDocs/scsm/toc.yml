@@ -1,0 +1,301 @@
+- name: Overview
+  items: 
+    - name: Service Manager
+      href: service-manager.md
+    - name: What's new in Service Manager
+      href: whats-new-in-sm.md
+- name: Get started
+  items: 
+    - name: Service Manager build versions
+      href: release-build-versions.md
+    - name: Evaluation and activation of Service Manager
+      href: sm-license.md
+    - name: Service Manager components
+      href: sm-parts.md
+    - name: Supported configurations
+      href: supported-configs.md
+    - name: System requirements - Service Manager
+      href: system-requirements.md
+    - name: SQL Server requirements - Service Manager
+      href: sm-sql-reqs.md
+    - name: Release notes - Service Manager
+      href: release-notes-sm.md
+    - name: Enable service log on
+      href: enable-service-log-on-sm.md
+    - name: Manage telemetry settings
+      href: manage-telemetry.md
+- name: How to
+  items: 
+    - name: Plan
+      items: 
+        - name: Planning for Service Manager
+          href: plan-sm.md
+          items: 
+            - name: Plan for deployment
+              href: plan-deployment.md
+              items: 
+                - name: Service Manager editions
+                  href: sm-editions.md
+                - name: Recommended deployment topologies
+                  href: deploy-topo-scenarios.md
+                - name: Operations Manager considerations
+                  href: om-considerations.md
+                - name: Service Manager databases
+                  href: databases-created.md
+                - name: Port assignments
+                  href: ports.md
+            - name: Prepare for deployment
+              href: prepare-deploy.md
+              items: 
+                - name: Service Manager performance
+                  href: sm-perf.md
+                - name: Plan for performance and scalability
+                  href: plan-perf-scale.md
+                - name: Plan for hardware performance
+                  href: plan-hardware-perf.md
+    - name: Deploy
+      items: 
+        - name: Deploy Service Manager
+          href: deploy-sm.md
+          items: 
+            - name: Deployment scenarios
+              href: deploy-scenarios.md
+              items: 
+                - name: Install on a single computer
+                  href: install-one-computer.md
+                - name: Install on two computers
+                  href: install-two-computers.md
+                - name: Install on four computers
+                  href: install-four-computers.md
+                - name: Set up remote SQL Server Reporting Services
+                  href: config-remote-ssrs.md
+                - name: Use SQL Server AlwaysOn availability groups for failover
+                  href: sql-always-on.md
+                - name: Create and deploy server images
+                  href: deploy-sm-images.md
+            - name: Install on VMs
+              href: install-sm-vms.md
+            - name: Configure PowerShell
+              href: config-powershell.md
+            - name: Register with the data warehouse to enable reporting
+              href: register-dw.md
+            - name: Deploy additional management servers
+              href: deploy-additional-ms.md
+            - name: Deployment considerations with a disjointed namespace
+              href: disjointed-namespaces.md
+            - name: Learn about the new Self Service portal
+              href: learn-self-service-portal.md
+              items: 
+                - name: Deploy the Self-Service portal
+                  href: deploy-self-service-portal.md
+            - name: Set up load balancing
+              href: load-balancing.md
+            - name: Back up the encryption key
+              href: encryption-key.md
+            - name: Index non-English knowledge articles
+              href: non-eng-articles.md
+            - name: Troubleshoot deployment issues
+              href: troubleshoot-deployment.md
+            - name: Deploy from a command line
+              href: deploy-cmd-line.md
+            - name: Move databases
+              href: move-databases.md
+    - name: Upgrade
+      items: 
+        - name: Upgrade Service Manager
+          href: upgrade-service-manager.md
+        - name: Upgrade the self-service portal to Service Manager 2016
+          href: upgrade-configs-portal.md
+        - name: Upgrade SQL Server Reporting Services
+          href: prepare-remote-ssrs.md
+        - name: Set up a  lab environment for upgrade
+          href: set-up-lab-with-production-data.md
+          items: 
+            - name: Prepare the production environment
+              href: prod-env.md
+            - name: Prepare the lab environment
+              href: lab-env.md
+        - name: Run an upgrade
+          href: upgrade-environment.md
+        - name: Complete tasks after upgrade
+          href: tasks-to-complete-after-upgrade.md
+        - name: Troubleshoot upgrade issues
+          href: resolve-upgrade-problems.md
+    - name: Administer
+      items: 
+        - name: Use management packs to add functionality
+          href: management-packs.md
+        - name: Use connectors to import data
+          href: import-data-connectors.md
+          items: 
+            - name: Import data from Active Directory Domain Services
+              href: import-data-ads.md
+            - name: Import data and alerts from Operations Manager
+              href: import-data-om.md
+            - name: Import data from Configuration Manager
+              href: import-data-cm.md
+            - name: Import runbooks from Orchestrator
+              href: import-data-orch.md
+            - name: Import data from VMM
+              href: import-data-vmm.md
+            - name: Use a CSV file to import data
+              href: import-data-csv.md
+            - name: Optionally disable ECL logging for faster connector synchronization
+              href: disable-ecl-logging.md
+        - name: Configuration items
+          href: config-items.md
+        - name: Configure incident management
+          href: incident-mgt.md
+        - name: Configure service level management
+          href: service-level-mgt.md
+        - name: Configure workflows
+          href: workflows.md
+        - name: Configure change and activity management
+          href: change-activity-mgt.md
+        - name: Configure release management
+          href: release-mgt.md
+        - name: Configure Desired Configuration Management to generate incidents
+          href: dcm-incidents.md
+        - name: Configure notifications
+          href: notifications.md
+        - name: Use the service catalog to offer services
+          href: service-catalog.md
+        - name: Use groups, queues, and lists in Service Manager
+          href: group-queue-lists.md
+        - name: Use runbooks to automate procedures
+          href: runbooks.md
+        - name: User interface customization
+          href: ui-customization.md
+        - name: Manage user roles
+          href: user-roles.md
+        - name: Manage Run As accounts
+          href: run-as-accounts.md
+        - name: Manage knowledge articles
+          href: knowledge-articles.md
+        - name: Configure and use Service Manager cmdlets
+          href: sm-cmdlets.md
+        - name: Manage the data warehouse
+          href: manage-dw.md
+          items: 
+            - name: Register source systems to the data warehouse
+              href: register-sources-to-dw.md
+        - name: Troubleshoot computer problems with tasks
+          href: troubleshoot-with-tasks.md
+        - name: Configure your preference for sharing diagnostic and usage data
+          href: ceip-settings.md
+    - name: Operate
+      items: 
+        - name: Search for information
+          href: search-information.md
+        - name: Manage incidents and problems
+          href: incidents-problems.md
+        - name: Manage changes and activities
+          href: changes-activities.md
+        - name: Manage service requests
+          href: service-requests.md
+        - name: Manage release records
+          href: release-records.md
+        - name: Data warehouse reporting and analytics
+          href: dw-reporting.md
+          items: 
+            - name: Use and manage standard reports
+              href: standard-reports.md
+            - name: Overview of OLAP cubes for advanced analytics
+              href: olap-cubes-overview.md
+              items: 
+                - name: Model OLAP cubes in management packs
+                  href: olap-cubes-mps.md
+                - name: Troubleshoot OLAP cubes
+                  href: troubleshoot-olap-cubes.md
+                - name: Create an OLAP cube using a management pack
+                  href: create-olap-cube-mps.md
+                - name: Analyze OLAP cube data with Excel
+                  href: olap-cube-excel.md
+                - name: Refresh OLAP data cube information
+                  href: refresh-olap-cube.md
+                - name: Manage and use the analysis libraries
+                  href: manage-analysis-library.md
+                - name: Create and deploy dashboards
+                  href: deploy-dashboards.md
+                - name: Customize the data warehouse
+                  href: customize-dw.md
+        - name: Disaster recovery
+          href: disaster-recovery.md
+          items: 
+            - name: Prepare for Service Manager disaster recovery
+              href: prepare-disaster-recovery.md
+            - name: Implement Service Manager disaster recovery
+              href: implement-disaster-recovery.md
+    - name: Author
+      items: 
+        - name: Author with Service Manager
+          href: author-with-sm.md
+          items: 
+            - name: Management packs in the Authoring Tool
+              href: mps-in-auth-tool.md
+              items: 
+                - name: Work with management packs in the Service Manager console
+                  href: work-mps-console.md
+                - name: Work with management packs in the Service Manager Authoring Tool
+                  href: work-mps-auth-tool.md
+                - name: Work with management pack XML files
+                  href: work-mps-xml.md
+                - name: Seal a management pack
+                  href: seal-mp.md
+                - name: Bundle management packs and resource files
+                  href: bundle-mps.md
+                - name: Unbundle a bundled management pack for use with the Authoring Tool
+                  href: unbundle-mps.md
+            - name: Customize and author classes with Service Manager authoring
+              href: auth-classes.md
+            - name: Customize and author forms
+              href: auth-forms.md
+              items: 
+                - name: Customize and author forms with the Service Manager Authoring Tool
+                  href: auth-forms-auth-tool.md
+                - name: Customize the default incident form for the Authoring Tool sample scenario
+                  href: customize-default-incident-form.md
+            - name: Automate IT processes with workflows
+              href: automate-processes-workflows.md
+            - name: Create workflows for IT processes
+              items: 
+                - name: Manage workflows with the Authoring Tool
+                  href: manage-workflows-auth-tool.md
+                - name: Add or remove workflow activities
+                  href: add-workflow-activities.md
+                - name: Configure the way activities manage and pass information
+                  href: configure-activities-information.md
+                - name: Deploy a workflow to Service Manager using the Authoring Tool
+                  href: deploy-workflow.md
+                - name: Configure the Activities Toolbox in the Authoring Tool
+                  href: config-activities-toolbox.md
+                - name: Guidelines for creating custom activities in the Authoring Tool
+                  href: create-custom-activities.md
+            - name: Woodgrove Bank customization sample scenario for the Authoring Tool
+              href: woodgrove-scenario.md
+            - name: Customize a column title in a view for the authoring views sample scenario
+              href: customize-column-title.md
+            - name: Include dashboards and reports in custom views for the Authoring Tool reports sample scenario
+              href: dashboards-reports-in-custom-views.md
+- name: Reference
+  items: 
+    - name: Advanced analytical reports
+      href: advanced-reports.md
+    - name: Authoring Tool workflow activities
+      href: workflow-activity-ref.md
+    - name: Form control properties in the Authoring Tool
+      href: form-control-properties.md
+    - name: Languages supported by Service Manager
+      href: sm-languages.md
+    - name: Map Active Directory Domain Services attributes to properties in Service Manager
+      href: ad-ds-attribs.md
+    - name: Map Service Manager properties to Configuration Manager database views
+      href: sm-cm-views.md
+    - name: Registry keys
+      href: registry-keys.md
+    - name: Set an activity's status to completed for the Authoring Tool sample activity
+      href: activity-status-completed.md
+    - name: User role profiles
+      href: user-role-profiles.md
+    - name: Service Manager glossary
+      href: glossary.md
