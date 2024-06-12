@@ -254,7 +254,7 @@ To monitor Azure SQL Database instances by using T-SQL queries:
 
 1. On **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to store the template. Then select **Next**.
 
-   For **Management pack**, to create a new management pack, select **New, and follow the instructions in the wizard.
+   For **Management pack**, to create a new management pack, select **New** and follow the instructions in the wizard.
 
    :::image type="content" source="media/azure-sql-management-pack/configuring-general-properties.png" alt-text="Screenshot that shows the General settings.":::
 
