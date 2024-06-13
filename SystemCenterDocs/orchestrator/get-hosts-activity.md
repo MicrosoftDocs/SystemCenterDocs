@@ -1,7 +1,7 @@
 ---
 title: Get Hosts Activity
 description: The Get Hosts activity is used in a runbook to retrieve all the hosts attached to a vCenter instance.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,7 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 06/05/2024
 ---
 
 # Get Hosts Activity
@@ -31,9 +31,11 @@ The following tables list the required and optional properties and published dat
 The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ## Get Hosts Activity Required Properties
+
 No required properties are provided for this activity.
 
 ## Get Hosts Activity Optional Properties
+
 No optional properties are provided for this activity.
 
 ## Get Hosts Activity Published Data
@@ -42,16 +44,14 @@ No optional properties are provided for this activity.
 |:-----|:----------------------------------------------------|:-----------|
 | Host | A list of host paths managed by the vCenter server. | String     |
 
-The following procedure describes the steps required to configure a Get Hosts activity.
+To configure the Get Hosts Activity, follow these steps:
 
-### To configure the Get Hosts Activity
+1. From the **Activities** pane, drag a **Get Hosts** activity to the active runbook.
 
-1.  From the **Activities** pane, drag a **Get Hosts** activity to the active runbook.
+2. Double-click the **Get Hosts** activity icon. The **Properties** dialog opens.
 
-2.  Double-click the **Get Hosts** activity icon. The **Properties** dialog opens.
+3. Configure the settings in the **Properties** tab as follows:
 
-3.  Configure the settings in the **Properties** tab as follows:
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
 
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-
-4.  Select **Finish**.
+4. Select **Finish**.
