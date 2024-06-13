@@ -1,14 +1,14 @@
 ---
 title: Get Service Template activity in System Center - Orchestrator
 description: The Get Service Template activity is used in a runbook to return a list of all service templates.
-ms.date: 02/16/2024
+ms.date: 06/05/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Get Service Template activity
