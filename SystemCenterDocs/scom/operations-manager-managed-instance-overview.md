@@ -8,7 +8,7 @@ manager: jsuri
 ms.date: 05/15/2024
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
-ms.subservice: operations-manager-managed-instance
+ms.subservice: operations-manager
 ms.topic: overview
 monikerRange: '>=sc-om-2019'
 ---
