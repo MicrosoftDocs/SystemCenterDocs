@@ -16,7 +16,7 @@
       href: release-notes-om.md
     - name: What's new in Operations Manager
       href: whats-new-in-om.md
-    - name: Walkthrough: Installing Operations Manager on a Single Server
+    - name: Walkthrough - Installing Operations Manager on a Single Server
       href: quickstart-install-single-server.md
     - name: Installing Operations Manager from the Command Prompt
       href: install-using-cmdline.md

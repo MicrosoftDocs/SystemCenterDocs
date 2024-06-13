@@ -14,7 +14,7 @@
       href: install.md
     - name: Work with runbooks in the Orchestrator console
       href: console-overview.md
-    - name: Example runbook: Creating a runbook to monitor a folder
+    - name: Example runbook - Creating a runbook to monitor a folder
       href: monitor-a-folder-within-a-runbook.md
     - name: Release notes - Orchestrator
       href: release-notes-orch.md
