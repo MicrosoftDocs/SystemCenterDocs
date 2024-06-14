@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 06/14/2024
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -28,7 +28,6 @@ In a medium to enterprise-scale distributed deployment, the SQL Server instance 
 
 We don't recommend utilization of Operations Manager databases from an SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
 
-
 > [!IMPORTANT]
 > Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure Monitor SCOM Managed Instance](./operations-manager-managed-instance-overview.md), which utilizes Azure SQL MI, and is not reconfigurable.
 
@@ -46,7 +45,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 or 17.10.5 or later, and MSOLEDBSQL 18.2 or 18.6.7 or later.
+  > - Use ODBC 17.3 or 17.10.6, and MSOLEDBSQL 18.2 or 18.7.2.
 
 ::: moniker-end
 
@@ -57,7 +56,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+  > - Use ODBC 17.3 or 17.10.6, and MSOLEDBSQL 18.2 or 18.7.2.
 
 ::: moniker-end
 
