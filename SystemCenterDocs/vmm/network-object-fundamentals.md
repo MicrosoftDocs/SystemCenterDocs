@@ -5,7 +5,7 @@ description: This article describes about network object fundamentals.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/22/2023
+ms.date: 06/18/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -22,7 +22,7 @@ ms.custom: engagement-fy23, UpdateFrequency3
 
 System Center Virtual Machine Manager (VMM) is part of the System Center suite used to configure, manage, and transform traditional datacenters. It helps provide a unified management experience across on-premises, service provider, and the Azure cloud.
 
-This topic covers the basics that you need to understand before you move on to more complex topics, such as advanced VMM features and functions, and planning and designing private and public clouds.
+This article covers the basics that you need to understand before you move on to more complex topics, such as advanced VMM features and functions, and planning and designing private and public clouds.
 
 ## Networking objects
 The following VMM networking objects are used to build the basic networking infrastructure of Microsoft's Software Defined Networking (SDN) used in private and public clouds:
@@ -64,7 +64,7 @@ The following VMM networking objects are used to build the basic networking infr
 
 - [Network sites](network-virtual.md)
 
-  Logical groupings of hosts, IP Subnets and/or VLANs.
+  Logical groupings of hosts, IP Subnets, and/or VLANs.
 
 - [IP address pools (logical networks)](network-pool.md#create-a-static-address-pool-for-a-logical-network)
 
@@ -103,4 +103,4 @@ For more information about Microsoft SDN, see [Software Defined Networking](depl
 
 ## Next steps
 
-To get started with VMM, see [What's New](whats-new-in-vmm.md) and [Install](install.md).
+To get started with VMM, see [What's New in SCVMM](whats-new-in-vmm.md) and [Install](install.md).

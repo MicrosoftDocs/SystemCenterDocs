@@ -5,7 +5,7 @@ description: This article provides an overview of Azure Arc-enabled System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/16/2023
+ms.date: 06/18/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -24,7 +24,7 @@ Arc-enabled System Center Virtual Machine Manager allows you to:
 - Empower developers and application teams to self-serve VM operations on demand using [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
 - Browse your VMM resources (VMs, templates, VM networks, and storage) in Azure, providing you with a single pane view for your infrastructure across both environments.
 - Discover and onboard existing SCVMM-managed VMs to Azure.
-- Install the Arc-connected machine agents at scale on SCVMM VMs to [govern, protect, configure, and monitor](/azure/azure-arc/servers/overview#supported-cloud-operations) them.
+- Install the Azure connected machine agents at scale on SCVMM VMs to [govern, protect, configure, and monitor](/azure/azure-arc/servers/overview#supported-cloud-operations) them.
 - Procure Extended Security Updates (ESUs) for the WS 2012 and 2012 R2 VMs managed by SCVMM.
 
 ## Discover Arc-enabled SCVMM from SCVMM console

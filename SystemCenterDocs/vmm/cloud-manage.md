@@ -1,18 +1,18 @@
 ---
 ms.assetid: 54833c06-7479-47cd-8926-1eb703634a3f
-title: Manage VMM cloud settings
+title: Manage a VMM private cloud
 description: This article provides instructions for managing a private cloud in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/16/2023
+ms.date: 06/18/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
-# Manage VMM cloud settings
+# Manage a VMM private cloud
 
 ::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
