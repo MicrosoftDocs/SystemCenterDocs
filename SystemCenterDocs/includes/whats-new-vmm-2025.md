@@ -14,10 +14,28 @@ ms.custom: intro-whats-new
 
 ## New features in VMM 2025
 
-See the following sections for new features and feature updates supported in VMM 2025. 
+See the following sections for new features and feature updates supported in VMM 2025.
 
+### Support for Windows Server 2025
 
-### Windows Server 2022 and Windows Server 2022 Guest OS support
+VMM 2025 supports Windows Server 2025 hosts and Virtual Machines.
 
-VMM 2022 can be used to manage on Windows Server 2022 hosts and Windows Server 2022 Guest OS hosts.
+### Support for Azure Stack HCI clusters 23H2
 
+With VMM 2025, you can manage Azure Stack HCI 23H2 clusters.
+
+### Enhanced security posture
+
+All VMs created with VMM 2025 will default to Generation 2, which is UEFI firmware-based and more secure than the BIOS firmware-based Generation 1 VMs. VMM 2025 will work with TLS 1.3, and the dependency on legacy authentication protocols like NTLM and CredSSP has also been significantly reduced with VMM 2025.
+ 
+### Support for the latest Linux Guest OSes
+
+Latest Linux guest OS distro versions like Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, SUSE Linux 15, Oracle Linux 9 and Rocky Linux 9 and 8 are now supported with VMM 2025.
+
+### Discontinuation of older Azure Integration capabilities
+
+In VMM 2025, Azure integration capabilities – Azure VM management from VMM and Azure update management v1 on VMM managed VMs – have been discontinued. Azure Arc-enabled System Center Virtual Machine Manager is the alternative for these capabilities.
+
+### Discontinuation of System Center – Service Provider Foundation
+
+With System Center 2025, Service Provider Foundation (SPF) is discontinued as its capabilities are now built into Azure Arc-enabled System Center Virtual Machine Manager.
