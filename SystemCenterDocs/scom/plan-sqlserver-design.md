@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 06/14/2024
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -45,7 +45,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
   >[!NOTE]
   > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 or 17.10.5 or later, and MSOLEDBSQL 18.2 or 18.6.7 or later.
+  > - Use ODBC 17.3 or 17.10.6, and MSOLEDBSQL 18.2 or 18.7.2.
 
 ::: moniker-end
 
@@ -55,8 +55,8 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2019 with Cumulative Update 8 (CU8) or later as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
   >[!NOTE]
-  > - Operations Manager 2022 and later supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-  > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+  > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
+  > - Use ODBC 17.3 or 17.10.6, and MSOLEDBSQL 18.2 or 18.7.2.
 
 ::: moniker-end
 
