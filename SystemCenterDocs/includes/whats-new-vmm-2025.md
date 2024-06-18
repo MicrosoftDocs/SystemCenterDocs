@@ -26,13 +26,15 @@ With VMM 2025, you can manage Azure Stack HCI 23H2 clusters.
 
 ### Enhanced security posture
 
-All VMs created with VMM 2025 will default to Generation 2, which is UEFI firmware-based and more secure than the BIOS firmware-based Generation 1 VMs. VMM 2025 will work with TLS 1.3, and the dependency on legacy authentication protocols like NTLM and CredSSP has also been significantly reduced with VMM 2025.
- 
+As part of this release, all the VMs created with VMM 2025 will default to Generation 2, which is UEFI firmware-based and is more secure than BIOS firmware-based Generation 1 VMs.
+
+As VMM 2025 works with TLS 1.3, the dependency on legacy authentication protocols like NTLM and CredSSP has reduced significantly.
+
 ### Support for the latest Linux Guest OSes
 
-Latest Linux guest OS distro versions like Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, SUSE Linux 15, Oracle Linux 9 and Rocky Linux 9 and 8 are now supported with VMM 2025.
+With VMM 2025, you can run Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, SUSE Linux 15, Oracle Linux 9, and Rocky Linux 9 and 8.
 
-### Discontinuation of older Azure Integration capabilities
+### Discontinuation of older Azure integration capabilities
 
 In VMM 2025, Azure integration capabilities – Azure VM management from VMM and Azure update management v1 on VMM managed VMs – have been discontinued. Azure Arc-enabled System Center Virtual Machine Manager is the alternative for these capabilities.
 
