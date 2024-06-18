@@ -33,7 +33,7 @@ The following table lists the build versions for Virtual Machine Manager 2025.
 
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
-||| September 2024 | General Availability |
+||n/a| October 2025 | System Center 2025 Virtual Machine Manager General Availability |
 
 :::moniker-end
 
