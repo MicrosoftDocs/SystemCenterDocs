@@ -1,10 +1,10 @@
 ---
-title: How to Delete or Restore a Network Device in Operations Manager
+title: Delete or Restore a Network Device in Operations Manager
 description: This article describes how to delete or restore a network device monitored by Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 06/19/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 85dae573-5813-4fd1-b81a-6a05f6e1cb7f
 ---
 
-# How to delete or restore a network device in Operations Manager
+# Delete or restore a network device in Operations Manager
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -29,58 +29,58 @@ To delete a device that is the starting point for recursive discovery, you must 
 
 If you delete a device that was discovered by a recursive discovery rule, it will be added to the exclude list of the rule. If you want to have that device discovered and monitored again, you must remove the device from the **Exclude Filters** page of the rule's properties and run the discovery again.  
 
-## To delete a network device discovered by explicit discovery  
+## Delete a network device discovered by explicit discovery  
 
-1.  In the Operations console, select the **Administration** workspace.  
+1. In the Operations console, select the **Administration** workspace.  
 
-2.  Select **Network Devices**, right-click the device that you want to delete, and select **Delete**.  
+2. Select **Network Devices**, right-click the device that you want to delete, and select **Delete**.  
 
     > [!NOTE]  
     > You can select multiple devices to delete.  
 
-## To delete a network device specified in a recursive discovery rule  
+## Delete a network device specified in a recursive discovery rule  
 
-1.  In the Operations console, select the **Administration** workspace.  
+1. In the Operations console, select the **Administration** workspace.  
 
-2.  Open **Properties** for the discovery rule and remove the device on the **Devices** page.  
+2. Open **Properties** for the discovery rule and remove the device on the **Devices** page.  
 
-## To delete a network device discovered by recursive discovery  
+## Delete a network device discovered by recursive discovery  
 
-1.  In the Operations console, select the **Administration** workspace.  
+1. In the Operations console, select the **Administration** workspace.  
 
-2.  Select **Network Devices** in **Network Management**.  
+2. Select **Network Devices** in **Network Management**.  
 
-3.  In the **Network Devices** pane, right-click a device that was discovered by recursive discovery, and then select **Delete**.  
+3. In the **Network Devices** pane, right-click a device that was discovered by recursive discovery, and then select **Delete**.  
 
-4.  You'll be prompted with a message asking you to confirm that you want to stop monitoring the selected network device. Select **Yes**.  
+4. You'll be prompted with a message asking you to confirm that you want to stop monitoring the selected network device. Select **Yes**.  
 
-5.  Select **Discovery Rules**.  
+5. Select **Discovery Rules**.  
 
-6.  Right-click the recursive discovery rule, and then select **Properties**.  
+6. Right-click the recursive discovery rule, and then select **Properties**.  
 
-7.  Select **Exclude Filters**.  
+7. Select **Exclude Filters**.  
 
-8.  Verify that an exclude filter has been created for the deleted device. This might take a few minutes to occur.  
+8. Verify that an exclude filter has been created for the deleted device. This might take a few minutes to occur.  
 
-### To restore a network device that was deleted from recursive discovery  
+### Restore a network device that was deleted from recursive discovery  
 
-1.  In the Operations console, select the **Administration** workspace.  
+1. In the Operations console, select the **Administration** workspace.  
 
-2.  Select **Discovery Rules**.  
+2. Select **Discovery Rules**.  
 
-3.  Right-click the recursive discovery rule, and then select **Properties**.  
+3. Right-click the recursive discovery rule, and then select **Properties**.  
 
-4.  Select **Exclude Filters**.  
+4. Select **Exclude Filters**.  
 
-5.  Select the network device and select **Remove**.  
+5. Select the network device and select **Remove**.  
 
-6.  Select **Summary**, and select **Save** to save and close the discovery rule.  
+6. Select **Summary**, and select **Save** to save and close the discovery rule.  
 
-7.  With the discovery rule selected, select **Run** in the **Actions** pane to rerun the discovery rule.  
+7. With the discovery rule selected, select **Run** in the **Actions** pane to rerun the discovery rule.  
 
     Note the status of the rule as it runs and wait until it shows a blank status.  
 
-8.  Verify that the device is rediscovered. This might take a few minutes to a few hours depending on the number of devices in the environment. You can view the status of the discovery rule to determine when it has completed.  
+8. Verify that the device is rediscovered. This might take a few minutes to a few hours depending on the number of devices in the environment. You can view the status of the discovery rule to determine when it has completed.  
 
 ## Next steps
 
