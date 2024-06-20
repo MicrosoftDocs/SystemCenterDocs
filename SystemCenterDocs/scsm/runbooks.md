@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.subservice: service-manager
 ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Use Service Manager runbooks to automate procedures
@@ -30,18 +30,18 @@ To automate processes in System Center, Orchestrator uses runbooks to automate p
 Additionally, the Orchestrator workflow authoring interface is available for your custom Service Manager scenarios. Runbooks are imported into Service Manager using the Orchestrator connector. After the connector is synchronized, imported runbooks appear in the **Library** workspace under the **Runbooks** node in the Service Manager console, where you can view them and also create runbook automation activity templates.
 
 ## About Orchestrator
+
 System Center - Orchestrator is an automation platform for orchestrating and integrating IT tools to drive down the cost of datacenter operations, while improving the reliability of IT processes. Orchestrator enables IT organizations to automate best practices, such as those that are found in the Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). This is achieved through workflow processes that coordinate Microsoft and other management tools to automate incident response, change and compliance, and service-life-cycle management processes.
 
 Through its workflow designer, Orchestrator automatically shares data and initiates tasks in System Center components, including Operations Manager, Service Manager, Virtual Machine Manager, Configuration Manager, Active Directory Domain Services (AD DS), and non-Microsoft tools. Orchestrator workflow automates IT infrastructure tasks, while  Service Manager workflow provides automation of human workflow. The combined offering ensures repeatable, consistent results by removing the latency associated with manual coordination service delivery. System Center and Orchestrator enable integration, efficiency, and business alignment of datacenter IT services by:
 
--   Automating processes and enforcing best practices for incident, change, and service-life-cycle management.
+- Automating processes and enforcing best practices for incident, change, and service-life-cycle management.
 
--   Reducing unanticipated errors and service delivery time by automating tasks across responsibility groups within your IT organization.
+- Reducing unanticipated errors and service delivery time by automating tasks across responsibility groups within your IT organization.
 
--   Integrating System Center with non-Microsoft tools to enable interoperability across the datacenter.
+- Integrating System Center with non-Microsoft tools to enable interoperability across the datacenter.
 
--   Orchestrating tasks across systems for consistent, documented, and compliant activity.
-
+- Orchestrating tasks across systems for consistent, documented, and compliant activity.
 
 ## Create a runbook automation activity template
 
@@ -52,23 +52,23 @@ As an example, you can implement a new request offering using an Orchestrator ru
 > [!IMPORTANT]
 > If you have extended root classes such as service request or release record, then you can map runbook activity parameter to extended properties only if the runbook activity template and service request templates are saved in same management pack where the definition extension is located.
 
-### To create a runbook automation activity template
+To create a runbook automation activity template, do the following:
 
-1.  In the Service Manager console, select **Library**.
+1. In the Service Manager console, select **Library**.
 
-2.  In the **Library** pane, select **Runbooks**.
+2. In the **Library** pane, select **Runbooks**.
 
-3.  In the **Runbooks** view, select a runbook.
+3. In the **Runbooks** view, select a runbook.
 
-4.  In the **Tasks** pane, under *RunbookName*, select **Create Runbook Automation Activity Template** to open the **Create Template** dialog.
+4. In the **Tasks** pane, under *RunbookName*, select **Create Runbook Automation Activity Template** to open the **Create Template** dialog.
 
-5.  In the **Name** box, enter a name for the template.
+5. In the **Name** box, enter a name for the template.
 
-6.  Optionally, in the **Description** box, enter a description for the template.
+6. Optionally, in the **Description** box, enter a description for the template.
 
-7.  If necessary, select an unsealed management pack to save the template to, and select **OK**. You will use this management pack later to retrieve the runbook automation activity template from another work item template, such as a service request template.
+7. If necessary, select an unsealed management pack to save the template to, and select **OK**. You will use this management pack later to retrieve the runbook automation activity template from another work item template, such as a service request template.
 
-8.  In the Runbook Activity Template: *TemplateName* form, on the **General** tab, enter information for **Title**, **Description**, **Area**, **Stage**, **Assigned To**, and **Designer**.
+8. In the Runbook Activity Template: *TemplateName* form, on the **General** tab, enter information for **Title**, **Description**, **Area**, **Stage**, **Assigned To**, and **Designer**.
 
 9. Ensure that **Is Ready for Automation** is selected.
 
@@ -80,22 +80,21 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 13. Select **OK** to close the form and create the template.
 
-
-
 ## View a runbook
+
 After you import runbooks from Orchestrator into Service Manager, you can open the runbook in the Service Manager console to ensure that it contains the parameters you want to use in an automation activity template in Service Manager.
 
 When you view the runbook, you can perform basic actions with the runbook, such as viewing the summary, jobs, instances, and definition of the runbook. You can also start and stop the runbook.
 
-### To view a runbook
+To view a runbook, do the following:
 
-1.  In the Service Manager console, select **Library**.
+1. In the Service Manager console, select **Library**.
 
-2.  In the **Library** pane, select **Runbooks**.
+2. In the **Library** pane, select **Runbooks**.
 
-3.  In the **Runbooks** view, select a runbook.
+3. In the **Runbooks** view, select a runbook.
 
-4.  In the **Tasks** pane under *RunbookName*, select **View Runbooks** to open the runbook in Internet Explorer.
+4. In the **Tasks** pane under *RunbookName*, select **View Runbooks** to open the runbook in Internet Explorer.
 
 ## Next steps
 
