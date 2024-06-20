@@ -1,12 +1,12 @@
 ---
 title: Complete Service Manager deployment by backing up the encryption key
 description: After you deploy Service Manager, you should back up the encryption key to help prepare for disaster recovery.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -47,7 +47,7 @@ Use the Encryption Key Backup or Restore Wizard and the following procedures to 
 7. On the **Provide a Password** page, enter a password that contains at least eight characters in the **Password** box. In the **Confirm Password** box, re-enter the same password, and select **Next**.  
 
     > [!NOTE]  
-    >  Recovery of the password isn't possible if it's lost or forgotten.  
+    > Recovery of the password isn't possible if it's lost or forgotten.  
 
 8. After you receive the message **Secure Storage Backup Complete**, select **Finish**.  
 
