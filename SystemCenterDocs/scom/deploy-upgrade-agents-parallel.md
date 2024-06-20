@@ -5,7 +5,7 @@ description: This article provides guidance with upgrading agents when planning 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/30/2024
+ms.date: 06/19/2024
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -22,19 +22,19 @@ ms.topic: article
 
 ::: moniker range="<=sc-om-2016"
 
-When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 1801 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services. 
+When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 1801 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
 
-::: moniker-end 
+::: moniker-end
 
 ::: moniker range="sc-om-2019"
 
-When you perform a side-by-side deployment of System Center 2019 - Operations Manager or System Center Operations Manager 2016 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services. 
+When you perform a side-by-side deployment of System Center 2019 - Operations Manager or System Center Operations Manager 2016 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
-When you perform a side-by-side deployment of System Center 2022 - Operations Manager or System Center Operations Manager 2019 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services. 
+When you perform a side-by-side deployment of System Center 2022 - Operations Manager or System Center Operations Manager 2019 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
 
 ::: moniker-end
 

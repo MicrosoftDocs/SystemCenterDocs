@@ -5,8 +5,8 @@ description: This article provides a high-level overview of what Operations Mana
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/07/2023
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.date: 06/19/2024
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
