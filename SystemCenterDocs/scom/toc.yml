@@ -2,7 +2,7 @@
   href: welcome.md
   items: 
     - name: About Azure Monitor SCOM Managed Instance
-      href: ./azure/azure-monitor/scom-manage-instance/overview.md?toc=/azure/azure-monitor/scom-managed-instance/toc.json&bc=/azure/azure-monitor/scom-managed-instance/breadcrumb/toc.json
+      href: /azure/azure-monitor/scom-manage-instance/overview.md?toc=/azure/azure-monitor/scom-managed-instance/toc.json&bc=/azure/azure-monitor/scom-managed-instance/breadcrumb/toc.json
     - name: Operations Manager key concepts
       href: key-concepts.md
 - name: Get Started
