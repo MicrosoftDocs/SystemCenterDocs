@@ -19,10 +19,10 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added new "Table Clustered Index Fragmentation" monitor for SQL Server on Windows and Linux that targets databases and checks for high fragmentation of clustered indexes
+- Added new "Table Clustered Index Fragmentation" monitor that targets databases and checks for high fragmentation of clustered indexes
 - Added new "Property Bag" step in the custom monitor setup to extend the alert context with a property from the query result
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
-- Reworked the "Long Running Requests" alert rule to improve security
+- Reworked the "Long Running Queries" alert rule to improve security
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
   - implemented keyboard navigation using the A and D buttons on the tiles in the dashboard
   - added the ability for the screen reader to announce buttons and errors in the SQL Server wizard
