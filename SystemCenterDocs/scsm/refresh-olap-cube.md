@@ -1,12 +1,12 @@
 ---
 title: Refresh OLAP data cube information
 description: Explains how to refresh OLAP data cube information in Service Manager.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -29,19 +29,19 @@ You can use the following procedures in Service Manager to refresh data in a Mic
 
 ## Refresh using the Service Manager console  
 
-1.  In the Service Manager console, select **Data Warehouse**, expand it, and select **Cubes**.  
+1. In the Service Manager console, select **Data Warehouse**, expand it, and select **Cubes**.  
 
-2.  In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Process Cube**.  
+2. In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Process Cube**.  
 
-3.  Select **OK** to close the **Process Cube** dialog.  
+3. Select **OK** to close the **Process Cube** dialog.  
 
 ### Validate refresh
 
--   Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
+- Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
 
 ## Manually refresh
 
--   Run the following script for the OLAP data cube of your choice.  
+- Run the following script for the OLAP data cube of your choice.  
 
     ```  
     Update etl.CubePartition set  

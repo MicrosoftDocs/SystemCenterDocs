@@ -1,12 +1,12 @@
 ---
 title: Unbundle a bundled management pack
 description: Describes how to unbundle a bundled management pack for use with the Service Manager Authoring Tool.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2023
+ms.date: 09/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -31,31 +31,31 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
 
  You can't extract sealed management packs from an .mpb file. Package owners must provide each file separately for a sealed management pack.  
 
-### To extract individual unsealed management packs from an .mpb file  
+### Extract individual unsealed management packs from an .mpb file  
 
 1. Start a Service Manager Windows&nbsp;PowerShell session.  
 
 2. In the Windows&nbsp;PowerShell console, enter the following commands:  
 
-   ```  
+   ```powershell
    mkdir <mpdir>  
    ```  
 
-   ```  
+   ```powershell  
    Get-SCSMManagementPack -bundlefile .\<filename>.mpb | Export-SCSMManagementPack -path <mpdir>  
    ```  
 
-   -   In the command, replace the *mpdir* placeholder with the folder in which the extracted management pack files will be stored.  
+   - In the command, replace the *mpdir* placeholder with the folder in which the extracted management pack files will be stored.  
 
-   -   Replace the *filename* placeholder with the name of the .mpb file.  
+   - Replace the *filename* placeholder with the name of the .mpb file.  
 
    You can now navigate to the *mpdir* folder in the current working folder to view and access the management pack files that you extracted.  
 
-### To extract resource files from an .mpb file  
+### Extract resource files from an .mpb file
 
 1. In a Windows&nbsp;PowerShell window, enter the following commands:  
 
-   ```  
+   ```powershell  
    $SM2016DirKey = Get-ItemProperty "hklm:\SOFTWARE\Microsoft\System Center\2016\Common\Setup"  
    $SM2016Dir = $SM2016DirKey.InstallDirectory   
    [reflection.assembly]::loadfrom($SM2016Dir + "\SDK Binaries\Microsoft.EnterpriseManagement.Packaging.dll")  
