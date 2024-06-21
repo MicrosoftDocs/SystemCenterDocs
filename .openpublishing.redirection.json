@@ -1,6 +1,38 @@
 {
  "redirections":
  [
+    {
+      "source_path": "SystemCenterDocs/vmm/network-switch.md",
+      "redirect_url": "/previous-versions/system-center/vmm/network-switch",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-vmm-1807"
+      ]
+    },
+    {
+      "source_path": "SystemCenterDocs/vmm/release-notes-vmm.md",
+      "redirect_url": "/previous-versions/system-center/vmm/release-notes-vmm",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-vmm-1807"
+      ]
+    },
+    {
+      "source_path": "SystemCenterDocs/vmm/system-requirements.md",
+      "redirect_url": "/previous-versions/system-center/vmm/system-requirements",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-vmm-1807"
+      ]
+    },
+    {
+      "source_path": "SystemCenterDocs/vmm/whats-new-in-vmm.md",
+      "redirect_url": "/previous-versions/system-center/vmm/whats-new-in-vmm",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-vmm-1807"
+      ]
+    },
   {
       "source_path" : "SystemCenterDocs/system-center.md",
       "redirect_url" : "/system-center/index"
