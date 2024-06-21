@@ -1,6 +1,5 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -22,9 +21,23 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "dpm",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
         "src": "dpm",
         "dest": "dpm",
+        "group": "dpm"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -32,16 +45,16 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
         ],
-        "group": "orchestrator",
         "src": "orchestrator",
         "dest": "orchestrator",
+        "group": "orchestrator"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -49,16 +62,16 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
         ],
-        "group": "scom",
         "src": "scom",
         "dest": "scom",
+        "group": "scom"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -66,16 +79,16 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
         ],
-        "group": "scsm",
         "src": "scsm",
         "dest": "scsm",
+        "group": "scsm"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -83,16 +96,16 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
         ],
-        "group": "sma",
         "src": "sma",
         "dest": "sma",
+        "group": "sma"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -100,33 +113,16 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
         ],
-        "group": "spf",
         "src": "spf",
         "dest": "spf",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
+        "group": "spf"
       },
       {
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "vmm",
-        "src": "vmm",
-        "dest": "vmm",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -134,7 +130,10 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+        "src": "vmm",
+        "dest": "vmm",
+        "group": "vmm"
       }
     ],
     "resource": [
@@ -148,9 +147,9 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "dpm",
         "src": "dpm",
-        "dest": "dpm"
+        "dest": "dpm",
+        "group": "dpm"
       },
       {
         "files": [
@@ -162,9 +161,9 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "sma",
         "src": "sma",
-        "dest": "sma"
+        "dest": "sma",
+        "group": "sma"
       },
       {
         "files": [
@@ -176,9 +175,9 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "orchestrator",
         "src": "orchestrator",
-        "dest": "orchestrator"
+        "dest": "orchestrator",
+        "group": "orchestrator"
       },
       {
         "files": [
@@ -190,9 +189,9 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "scom",
         "src": "scom",
-        "dest": "scom"
+        "dest": "scom",
+        "group": "scom"
       },
       {
         "files": [
@@ -204,9 +203,9 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "scsm",
         "src": "scsm",
-        "dest": "scsm"
+        "dest": "scsm",
+        "group": "scsm"
       },
       {
         "files": [
@@ -218,9 +217,9 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "spf",
         "src": "spf",
-        "dest": "spf"
+        "dest": "spf",
+        "group": "spf"
       },
       {
         "files": [
@@ -232,9 +231,9 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "vmm",
         "src": "vmm",
-        "dest": "vmm"
+        "dest": "vmm",
+        "group": "vmm"
       }
     ],
     "overwrite": [],
@@ -257,22 +256,34 @@
         "SystemCenterDocs/sma/*.md": "jyothisuri",
         "SystemCenterDocs/spf/*.md": "jyothisuri",
         "SystemCenterDocs/vmm/*.md": "jyothisuri"
+      },
+      "ms.author": {
+        "SystemCenterDocs/scom/*.md": "jsuri",
+        "SystemCenterDocs/includes/*.md": "jsuri",
+        "SystemCenterDocs/orchestrator/*.md": "jsuri",
+        "SystemCenterDocs/dpm/*.md": "jsuri",
+        "SystemCenterDocs/scsm/*.md": "jsuri",
+        "SystemCenterDocs/sma/*.md": "jsuri",
+        "SystemCenterDocs/spf/*.md": "jsuri",
+        "SystemCenterDocs/vmm/*.md": "jsuri"
+      },
+      "exclude_monikers": {
+        "includes/release-notes-om-1807.md": [
+          "sc-om-1807"
+        ],
+        "includes/whats-new-om-1807.md": [
+          "sc-om-1807"
+        ],
+        "scom/release-notes-om.md": [
+          "sc-om-1807"
+        ],
+        "scom/whats-new-in-om.md": [
+          "sc-om-1807"
+        ]
+      }
     },
-    "ms.author": {
-      "SystemCenterDocs/scom/*.md": "jsuri",
-      "SystemCenterDocs/includes/*.md": "jsuri",
-      "SystemCenterDocs/orchestrator/*.md": "jsuri",
-      "SystemCenterDocs/dpm/*.md": "jsuri",
-      "SystemCenterDocs/scsm/*.md": "jsuri",
-      "SystemCenterDocs/sma/*.md": "jsuri",
-      "SystemCenterDocs/spf/*.md": "jsuri",
-      "SystemCenterDocs/vmm/*.md": "jsuri"
-     }
-    },
-    "template": [
-      
-    ],
-    "dest": "system-center",
+    "template": [],
+    "markdownEngineName": "markdig",
     "groups": {
       "dpm": {
         "dest": "dpm",
@@ -302,6 +313,7 @@
         "dest": "vmm",
         "moniker_range": ">= sc-vmm-2016 <= sc-vmm-2022"
       }
-    }
+    },
+    "dest": "system-center"
   }
 }
