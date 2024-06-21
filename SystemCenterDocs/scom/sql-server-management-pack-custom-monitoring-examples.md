@@ -3,7 +3,7 @@ ms.assetid:
 title: Examples of custom query-based monitors in the System Center Management Pack for SQL Server
 description: This article shows examples of configuring custom query monitors and performance rules in the System Center Management Pack for SQL Server.
 manager: evansma
-author: v-fkornilov
+author: fkornilov
 ms.author: v-fkornilov
 ms.date: 06/21/2024
 ms.topic: article
@@ -15,7 +15,7 @@ ms.subservice: operations-manager
 
 All examples of using custom query-based monitors and performance rules based on the `AdventureWorks` sample database that can be found on the [installation](/sql/samples/adventureworks-install-configure) page or directly within the [SQL Server samples](https://github.com/microsoft/sql-server-samples) GitHub repository.
 
-# Prerequisites
+## Prerequisites
 
 - [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS).
 - [AdventureWorks2022](/sql/samples/adventureworks-install-configure) database.
@@ -27,7 +27,7 @@ If you don't have a running instance of `AdventureWorks2022` database, you can f
 - Download [AdventureWorks2022.bak](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak) database sample backup with OLTP data, that is for most typical online transaction processing workloads. If you're not sure what sample you need, start with the OLTP version that matches your SQL Server version.
 - [Restore AdventureWorks sample database](/sql/samples/adventureworks-install-configure?tabs=tsql#restore-to-sql-server) to your SQL Server using the `.bak` file. You can do so using the [RESTORE (Transact-SQL)](/sql/t-sql/statements/restore-statements-transact-sql) command, or using the graphical interface (GUI) in [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS).
 
-# Custom query-based two-state monitor
+## Custom query-based two-state monitor
 
 There are two types of unit monitors based on custom queries that you can create: two-state monitors and three-state monitors. This article shows typical examples of the usage of two-state monitors.
 
@@ -238,4 +238,4 @@ To create a monitor that changes its state to unhealthy if the `Person.Address` 
 
 After the custom monitor is created and works, you can see how it changed its state and generated an alert. In our example, the monitor should switch to the critical state, since the resulting query returns a record in the `Person.Address` table alongside there are 2 employees for the `Kansas City` in the `Person.BusinessEntityAddress` table.
 
-![Screenshot that shows alert properties for the second example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-monitor-alert-properties.png)
+![Screenshot that shows alert properties for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-monitor-alert-properties.png)
