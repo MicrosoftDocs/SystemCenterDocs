@@ -200,21 +200,21 @@ To create a monitor that changes its state to unhealthy if the `Person.Address` 
   
       If you want the monitor to be enabled by default, select the **Monitor is enabled** checkbox. Then select **Next**.
 
-      ![Screenshot of selecting a monitor name and description for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-2-general-properties-step.png)
+      ![Screenshot of selecting a monitor name and description for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-general-properties-step.png)
 
 3. At the **SQL Query** step, enter the database name as `AdventureWorks2022`, query text and timeouts (in seconds).
 
-      ![Screenshot that shows a target database name and SQL query for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-2-sql-query-step.png)
+      ![Screenshot that shows a target database name and SQL query for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-sql-query-step.png)
 
 4. At the **Conditions** step, select **ANY** condition that means if any of the added conditions are violated, the monitor switches to an unhealthy state; for this example, both conditions are needed because the monitor checks not only the number of employees for a certain city, but also existing this city in the table:
   
       To add a first condition, select **Add**, and then select a **Not Empty Result Set** - this condition checks if the specified result set that the query returned is not empty:
 
-      ![Screenshot that shows adding a not empty result set condition for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-condition1.png)
+      ![Screenshot that shows adding a not empty result set condition for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-condition-1.png)
 
       To add a second condition, select **Add**, and then select a **Scalar Value** - this condition checks in the specified result set, specified row number, and specified column name that is cell value is equal to 1:
 
-      ![Screenshot that shows adding a scalar value condition for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-condition2.png)
+      ![Screenshot that shows adding a scalar value condition for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-condition-2.png)
 
       Thus, the monitor operates based on conditions that checks that the query result is not empty and the number of employees is equal to 1. Otherwise, the monitor switches to an unhealthy state.
 
