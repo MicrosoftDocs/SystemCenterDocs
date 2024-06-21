@@ -3,13 +3,14 @@ description: You can use data deduplication in DPM storage to find and remove du
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2017
+ms.date: 06/20/2024
 title: Deduplicate DPM storage
 ms.subservice: data-protection-manager
 ms.assetid: af49cdc3-1f63-4c10-843a-d1cd27af473a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
+ms.custom: engagement-fy24
 ---
 
 # Deduplicate DPM storage
@@ -226,7 +227,7 @@ $duration
 
 In this configuration, DPM is configured to back up virtual machines between 10 PM and 6 AM. Deduplication is scheduled for the remaining 16 hours of the day. The actual dedup time you configure will depend on the volume size. For more information, see [Sizing Volumes for Data Deduplication](https://go.microsoft.com/fwlink/?LinkId=522575). A 16-hour deduplication window starting at 6 AM after the backup window ends would be configured as follows from any individual cluster node:
 
-```
+```powershell
 #disable default schedule
 Set-DedupSchedule * -Enabled:$false
 #Remainder of the day after an 8 hour backup window starting at 10pm $dedupDuration = 16
