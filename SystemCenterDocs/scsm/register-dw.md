@@ -1,12 +1,12 @@
 ---
 title: Enable Service Manager reporting
 description: Use the Data Warehouse Registration wizard to enable reporting.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -31,9 +31,7 @@ After you 've deployed the Service Manager management servers and data warehouse
 
 ## Run the Data Warehouse Registration wizard
 
-You can use the following steps in System Center - Service Manager to use the Data Warehouse Registration Wizard to register with the Service Manager data warehouse.  
-
-To run the Data Warehouse Registration wizard, follow these steps:
+You can use the following steps in System Center - Service Manager to use the Data Warehouse Registration Wizard to register with the Service Manager data warehouse.
 
 1. By using an account that is a member of the Service Manager and data warehouse management administrators group, sign in to the computer that hosts the Service Manager console.  
 
@@ -66,7 +64,7 @@ To run the Data Warehouse Registration wizard, follow these steps:
 
 Several management packs are imported during the data warehouse registration process in Service Manager. Data warehouse registration is complete when all of the management packs have been imported. You'll have to determine when that process is complete by using the following procedure.  
 
-### Determine when management pack deployment has completed  
+To determine when management pack deployment has completed, do the following:
 
 1. Start the Service Manager console.  
 

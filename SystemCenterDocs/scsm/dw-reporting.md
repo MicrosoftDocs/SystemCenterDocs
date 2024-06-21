@@ -1,12 +1,12 @@
 ---
 title: Data warehouse reporting and analytics
 description: Provides an overview about data warehouse reporting and analytics in Service Manager.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -65,9 +65,9 @@ The data warehouse that ships with Service Manager is actually its own managemen
 
   The data warehouse in Service Manager was designed and built with the intention of being a platform component that enables System Center users to collocate data from all System Center products to gain comprehensive insight across their information technology \(IT\) investments.  
 
-### The difference between OLTP and OLAP \(performing vs. analyzing transactions\)
+### The difference between OLTP and OLAP \(performing vs. analyzing transactions\)  
 
-Online transaction processing \(OLTP\) systems are designed for fast writes against small units of work-for example, for the fast creation of a single incident. In contrast, online analytical processing \(OLAP\) data warehouses are designed to facilitate fast analysis across large sets of data-for example, quickly determining service level agreement \(SLA\) adherence across all incidents created in the last year.  
+ Online transaction processing \(OLTP\) systems are designed for fast writes against small units of work-for example, for the fast creation of a single incident. In contrast, online analytical processing \(OLAP\) data warehouses are designed to facilitate fast analysis across large sets of data-for example, quickly determining service level agreement \(SLA\) adherence across all incidents created in the last year.  
 
 ### Data warehouse and analytics elements
 
@@ -84,9 +84,7 @@ If you aren't familiar with developing management packs, writing custom queries 
 The data warehouse in Service Manager comprises the following databases:  
 
 - DWStagingAndConfig-where data is extracted from source systems, such as Service Manager and Operations Manager, is initially stored.  
-
 - DWRepository-where extracted source data is transformed into the reporting optimized structure.  
-
 - DWDataMart-where published data is stored and gets consumed by the reports. This is also where data is stored for an extended period of time to facilitate historical reporting and analysis.  
 
 ### OLAP cubes
