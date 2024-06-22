@@ -1,6 +1,38 @@
 {
  "redirections":
  [
+    {
+      "source_path": "SystemCenterDocs/sma/release-notes-sma.md",
+      "redirect_url": "/previous-versions/system-center/sma/release-notes-sma",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-sma-1801"
+      ]
+    },
+    {
+      "source_path": "SystemCenterDocs/sma/system-requirements-sma.md",
+      "redirect_url": "/previous-versions/system-center/sma/system-requirements-sma",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-sma-1801"
+      ]
+    },
+    {
+      "source_path": "SystemCenterDocs/sma/upgrade-sma.md",
+      "redirect_url": "/previous-versions/system-center/sma/upgrade-sma",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-sma-1801"
+      ]
+    },
+    {
+      "source_path": "SystemCenterDocs/sma/whats-new-in-sma.md",
+      "redirect_url": "/previous-versions/system-center/sma/whats-new-in-sma",
+      "redirect_document_id": false,
+      "monikers": [
+        "sc-sma-1801"
+      ]
+    },
   {
       "source_path" : "SystemCenterDocs/system-center.md",
       "redirect_url" : "/system-center/index"
