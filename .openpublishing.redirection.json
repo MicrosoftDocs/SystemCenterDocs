@@ -1,14 +1,6 @@
 {
  "redirections":
  [
-    {
-      "source_path": "SystemCenterDocs/sma/release-notes-sma.md",
-      "redirect_url": "/previous-versions/system-center/sma/release-notes-sma",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-sma-1807"
-      ]
-    },
   {
       "source_path" : "SystemCenterDocs/system-center.md",
       "redirect_url" : "/system-center/index"
