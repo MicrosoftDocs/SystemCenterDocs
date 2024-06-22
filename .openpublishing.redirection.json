@@ -1,14 +1,6 @@
 {
  "redirections":
  [
-    {
-      "source_path": "SystemCenterDocs/dpm/upgrade-dpm.md",
-      "redirect_url": "/previous-versions/system-center/dpm/upgrade-dpm",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-dpm-1807"
-      ]
-    },
   {
       "source_path" : "SystemCenterDocs/system-center.md",
       "redirect_url" : "/system-center/index"
