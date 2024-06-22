@@ -1,22 +1,6 @@
 {
  "redirections":
  [
-    {
-      "source_path": "SystemCenterDocs/scom/release-notes-om.md",
-      "redirect_url": "/previous-versions/system-center/scom/release-notes-om",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-om-1807"
-      ]
-    },
-    {
-      "source_path": "SystemCenterDocs/scom/whats-new-in-om.md",
-      "redirect_url": "/previous-versions/system-center/scom/whats-new-in-om",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-om-1807"
-      ]
-    },
   {
       "source_path" : "SystemCenterDocs/system-center.md",
       "redirect_url" : "/system-center/index"
