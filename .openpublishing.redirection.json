@@ -1,30 +1,6 @@
 {
  "redirections":
  [
-    {
-      "source_path": "SystemCenterDocs/scsm/release-notes-sm.md",
-      "redirect_url": "/previous-versions/system-center/scsm/release-notes-sm",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-sm-1807"
-      ]
-    },
-    {
-      "source_path": "SystemCenterDocs/scsm/system-requirements.md",
-      "redirect_url": "/previous-versions/system-center/scsm/system-requirements",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-sm-1807"
-      ]
-    },
-    {
-      "source_path": "SystemCenterDocs/scsm/whats-new-in-sm.md",
-      "redirect_url": "/previous-versions/system-center/scsm/whats-new-in-sm",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-sm-1807"
-      ]
-    },
   {
       "source_path" : "SystemCenterDocs/system-center.md",
       "redirect_url" : "/system-center/index"
