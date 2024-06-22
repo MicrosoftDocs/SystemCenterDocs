@@ -1,22 +1,6 @@
 {
  "redirections":
  [
-    {
-      "source_path": "SystemCenterDocs/orchestrator/release-notes-orch.md",
-      "redirect_url": "/previous-versions/system-center/orchestrator/release-notes-orch",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-orch-1807"
-      ]
-    },
-    {
-      "source_path": "SystemCenterDocs/orchestrator/system-requirements-orch.md",
-      "redirect_url": "/previous-versions/system-center/orchestrator/system-requirements-orch",
-      "redirect_document_id": false,
-      "monikers": [
-        "sc-orch-1807"
-      ]
-    },
   {
       "source_path" : "SystemCenterDocs/system-center.md",
       "redirect_url" : "/system-center/index"
