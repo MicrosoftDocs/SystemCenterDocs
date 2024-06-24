@@ -15,6 +15,14 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
 
+## June 2024 - 7.5.11.0 CTP
+
+### What's new
+
+- Reworked the creation of Run As Accounts for the Automatic template to allow multiple accounts to be created in one time period
+- Added system-assigned managed identity and user-assigned managed identity to the Automatic template options for monitoring Azure SQL Managed Instance
+- Updated display strings
+
 ## March 2024 - 7.4.0.0 RTM
 
 ### What's new
