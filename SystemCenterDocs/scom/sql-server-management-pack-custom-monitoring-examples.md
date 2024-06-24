@@ -37,7 +37,7 @@ SELECT * FROM [Sales].[CreditCard]
 WHERE ExpYear = 2005
 ```
 
-The preceding query returns several records.
+The query returns several records:
 
 ![Screenshot of running the query for the first example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-1-select-result.png)
 
@@ -116,7 +116,7 @@ After you create the custom monitor, you can run it to see how it changes its st
 
 ## Example 2 with "Empty Result Set"
 
-In this example, consider the condition under which the `Production.Illustration` table is checked to ensure that for each `IllustrationID` record there also exists an entry in the `Production.ProductModelIllustration` table, because the `Illustration` table has the schema-bound dependency for the `ProductModelIllustration` table:
+In this example, consider the condition under which the `Production.Illustration` table is checked to ensure that for each `IllustrationID` record, an entry also exists in the `Production.ProductModelIllustration` table, because the `Illustration` table has the schema-bound dependency for the `ProductModelIllustration` table:
 
 ```SQL
 SELECT *
@@ -126,7 +126,7 @@ ON PIL.IllustrationID = PMI.IllustrationID
 WHERE PMI.IllustrationID IS NULL
 ```
 
-The preceding query returns one record without a model illustration in the `Production.ProductModelIllustration` table.
+The query returns one record without a model illustration in the `Production.ProductModelIllustration` table:
 
 ![Screenshot of running the query for the second example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-2-select-result.png)
 
@@ -210,7 +210,7 @@ WHERE PA.City like 'Kansas City'
 GROUP BY PA.City
 ```
 
-As a result of the preceding query, the `Kansas City` record exists and the number of employees for that city is two.
+As a result of the query, the `Kansas City` record exists and the number of employees for that city is two:
 
 ![Screenshot of running the query for the third example.](./media/sql-server-custom-monitoring-management-pack/two-state-monitor-example-3-select-result.png)
 
