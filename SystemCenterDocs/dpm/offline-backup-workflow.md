@@ -16,17 +16,16 @@ monikerRange: '>=sc-dpm-2019'
 
 # Offline seeding for DPM/MABS using customer-owned disks with Azure Import/Export
 
-This article describes how to send the initial full backup data from DPM/MABS to Azure using customer-owned disks instead of sending it via the network. Learn about [sending the initial full backup data from MARS to Azure using customer-owned disks](backup-azure-backup-import-export.md).
+This article describes how to send the initial full backup data from DPM/MABS to Azure using customer-owned disks instead of sending it via the network. Learn about [sending the initial full backup data from MARS to Azure using customer-owned disks](/azure/backup/backup-azure-backup-import-export).
 
 System Center Data Protection Manager Server integrate with Azure Backup and use several built-in efficiencies that save network and storage costs during the initial full backups of data to Azure. Initial full backups typically transfer large amounts of data and require more network bandwidth when compared to subsequent backups that transfer only the deltas/incrementals. Data Protection Manager compresses the initial backups. Through the process of offline seeding, Data Protection Manager can use disks to upload the compressed initial backup data offline to Azure.
 
-
 >[!IMPORTANT]
-> These steps are applicable for DPM 2019 UR1 (or above) and MABS v3 UR1 (or higher). Ensure that you've the latest MARS agent (version 2.0.9250.0 or higher) before following the below section. [Learn more](backup-azure-mars-troubleshoot.md#mars-offline-seeding-using-customer-owned-disks-importexport-is-not-working).
+> These steps are applicable for DPM 2019 UR1 (or above) and MABS v3 UR1 (or higher). Ensure that you've the latest MARS agent (version 2.0.9250.0 or higher) before following the below section. [Learn more](/azure/backup/backup-azure-mars-troubleshoot#mars-offline-seeding-using-customer-owned-disks-importexport-is-not-working).
 
 ## Offline-seeding process
 
-The offline-seeding process of Data Protection Manager is tightly integrated with the [Azure Import/Export service](../import-export/storage-import-export-service.md). You can use this service to transfer data to Azure by using disks. If you have terabytes (TBs) of initial backup data that need to be transferred over a high-latency and low-bandwidth network, you can use the offline-seeding workflow to ship the initial backup copy on one or more hard drives to an Azure datacenter. This article provides an overview and further steps that finish this workflow for System Center Data Protection Manager.
+The offline-seeding process of Data Protection Manager is tightly integrated with the [Azure Import/Export service](/azure/import-export/storage-import-export-service). You can use this service to transfer data to Azure by using disks. If you have terabytes (TBs) of initial backup data that need to be transferred over a high-latency and low-bandwidth network, you can use the offline-seeding workflow to ship the initial backup copy on one or more hard drives to an Azure datacenter. This article provides an overview and further steps that finish this workflow for System Center Data Protection Manager.
 
 > [!NOTE]
 > The process of offline backup for the Microsoft Azure Recovery Services (MARS) Agent is distinct from DPM and MABS. Offline backup isn't supported for system state backups done by using the Data Protection Manager Agent.
@@ -47,7 +46,7 @@ With the offline-seeding capability of Data Protection Manager and the Azure Imp
 
 Ensure that the following prerequisites are met before you start the offline backup workflow:
 
-* A [Recovery Services vault](backup-azure-recovery-services-vault-overview.md) has been created. To create one, follow the steps in [Create a Recovery Services vault](tutorial-backup-windows-server-to-azure.md#create-a-recovery-services-vault).
+* A [Recovery Services vault](/azure/backup/backup-azure-recovery-services-vault-overview) has been created. To create one, follow the steps in [Create a Recovery Services vault](/azure/backup/tutorial-backup-windows-server-to-azure#create-a-recovery-services-vault).
 * Ensure that only the [latest version of Microsoft Azure Recovery Services agent](https://aka.ms/azurebackup_agent) is installed on the SC DPM or MABS and registered to Recovery Services vault.
 * Update Rollup 1 is installed on SC DPM 2019 or MABS v3, along with the [latest MARS agent](https://aka.ms/azurebackup_agent).
 
@@ -66,26 +65,26 @@ Ensure that the following prerequisites are met before you start the offline bac
        :::image type="content" source="./media/offline-backup-workflow/register-import-export-inline.png" alt-text="Screenshot shows how to register the resource provider." lightbox="./media/offline-backup-workflow/register-import-export-expanded.png":::
 
 * A staging location, which might be a network share or any additional drive on the computer, internal or external, with enough disk space to hold your initial copy, is created. For example, if you want to back up a 500-GB file server, ensure that the staging area is at least 500 GB. (A smaller amount is used due to compression.)
-* For disks sent to Azure, ensure that only 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III internal hard drives are used. You can use hard drives up to 10 TB. Check the [Azure Import/Export service documentation](../import-export/storage-import-export-requirements.md#supported-hardware) for the latest set of drives that the service supports.
+* For disks sent to Azure, ensure that only 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III internal hard drives are used. You can use hard drives up to 10 TB. Check the [Azure Import/Export service documentation](/azure/import-export/storage-import-export-requirements#supported-hardware) for the latest set of drives that the service supports.
 * The SATA drives must be connected to a computer (referred to as a *copy computer*) from where the copy of backup data from the staging location to the SATA drives is done. Ensure that BitLocker is enabled on the copy computer.
 
 ## Workflow
 
-The information in this section helps you complete the offline-backup workflow so that your data can be delivered to an Azure datacenter and uploaded to Azure Storage. If you have questions about the Import service or any aspect of the process, see the [Import service overview](../import-export/storage-import-export-service.md) documentation referenced earlier.
+The information in this section helps you complete the offline-backup workflow so that your data can be delivered to an Azure datacenter and uploaded to Azure Storage. If you have questions about the Import service or any aspect of the process, see the [Import service overview](/azure/import-export/storage-import-export-service) documentation referenced earlier.
 
 ## Initiate offline backup
 
 1. When you create a new protection group with online protection or add online protection to existing protection group, you see the following screen. To select Initial online Replication method, select **Transfer using my own disk** and select **Next**.
 
-    ![Screenshot shows the import pane.](./media/backup-azure-backup-server-import-export/create-new-protection-group.png)
+    ![Screenshot shows the import pane.](./media/offline-backup-workflow/create-new-protection-group.png)
 
 2. The Azure sign-in page will open. Sign in using your Azure user account, which has *owner* role permission on the Azure Subscription.
 
-    ![Screenshot shows the Azure sign-in page.](./media/backup-azure-backup-server-import-export/choose-initial-online-replication.png)
+    ![Screenshot shows the Azure sign-in page.](./media/offline-backup-workflow/choose-initial-online-replication.png)
 
 3. Provide the inputs on the **Use your Own Disk** page.
 
-   ![Screenshot shows how to add details to use your own disk.](./media/backup-azure-backup-server-import-export/use-your-own-disk.png)
+   ![Screenshot shows how to add details to use your own disk.](./media/offline-backup-workflow/use-your-own-disk.png)
 
    The description of the inputs is as follows:
 
@@ -99,11 +98,11 @@ The information in this section helps you complete the offline-backup workflow s
 
 4. Complete the workflow to create or update the protection. And to initiate the offline-backup copy, right-click the **Protection Group**, and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
-   ![Screenshot shows how to create recovery point.](./media/backup-azure-backup-server-import-export/create-recovery-point.png)
+   ![Screenshot shows how to create recovery point.](./media/offline-backup-workflow/create-recovery-point.png)
 
 5. Monitor the Online Replica Creation job in the monitoring pane. The job should complete successfully with the warning *Waiting for Azure Import job to finish*.
 
-   ![Screenshot shows the complete recovery point.](./media/backup-azure-backup-server-import-export/complete-recovery-point.png)
+   ![Screenshot shows the complete recovery point.](./media/offline-backup-workflow/complete-recovery-point.png)
 
 6. After the operation finishes, the staging location is ready to be used for disk preparation.
 

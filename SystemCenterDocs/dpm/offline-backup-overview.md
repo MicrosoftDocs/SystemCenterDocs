@@ -26,7 +26,7 @@ DPM supports offline backup, which transfers initial backup data offline without
 
 You can do the Offline backup in two modes based on the ownership of the storage devices:
 
-- [Offline backup using Azure Data Box (preview)](#offline-backup-using-azure-data-box-preview)
+- [Offline backup using Azure Data Box](#offline-backup-using-azure-data-box)
 - [Offline backup based using Azure Import/Export service](#offline-backup-using-azure-importexport-service)
 
 ## Offline backup using Azure Data Box
