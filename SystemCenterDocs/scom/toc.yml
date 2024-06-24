@@ -611,6 +611,8 @@
               href: sql-server-management-pack-custom-monitor.md
             - name: Custom Query-Based Performance Rules
               href: sql-server-management-pack-custom-rule.md
+            - name: Custom Monitoring Examples
+              href: sql-server-management-pack-custom-monitoring-examples.md
         - name: Known Issues and Troubleshooting in Management Pack for SQL Server
           href: sql-server-management-pack-known-issues-and-troubleshooting.md
     - name: Management Pack for Azure SQL Database
