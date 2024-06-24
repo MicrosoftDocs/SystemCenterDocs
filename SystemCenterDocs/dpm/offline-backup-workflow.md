@@ -239,4 +239,3 @@ You can monitor the status of your Import job from the Azure portal by navigatin
 After the import job finishes, initial backup data is available in your storage account. At the time of the next scheduled backup, Data Protection Manager copies the contents of the data from the storage account to the Recovery Services vault.
 
 At the time of the next scheduled online replica creation job, Data Protection Manager performs incremental backup over the initial backup copy.
-
