@@ -220,7 +220,7 @@ To add the return-shipping details, follow these steps:
 ### Edit notification email
 
 To update the email addresses that are notified on the Import job progress, select **Edit notification details**.
- 
+
 :::image type="content" source="./media/offline-backup-workflow/edit-notification-email-inline.png" alt-text="Screenshot shows to how to edit notification email." lightbox="./media/offline-backup-workflow/edit-notification-email-expanded.png":::
 
 > [!IMPORTANT]
@@ -232,7 +232,7 @@ The amount of time it takes to process an Azure import job varies. The process t
 
 ### Monitor Azure import job status
 
-You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see the [Azure Data Box](../import-export/storage-import-export-view-drive-status.md?tabs=azure-portal-preview) page.
+You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see the [Azure Data Box](/azure/import-export/storage-import-export-view-drive-status?tabs=azure-portal-preview) page.
 
 ### Complete the workflow
 
@@ -240,6 +240,3 @@ After the import job finishes, initial backup data is available in your storage 
 
 At the time of the next scheduled online replica creation job, Data Protection Manager performs incremental backup over the initial backup copy.
 
-## Next steps
-
-* For any questions about the Azure Import/Export service workflow, see [Use the Microsoft Azure Import/Export service to transfer data to Blob storage](../import-export/storage-import-export-service.md).

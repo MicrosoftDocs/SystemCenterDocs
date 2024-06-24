@@ -24,8 +24,8 @@ ms.custom: UpdateFrequency2, engagement-fy24
 DPM is compatible with most popular antivirus software products. We recommend the following steps to avoid conflicts:
 
 1. Disable real-time monitoring - Disable real-time monitoring by the antivirus software for the following:
-     - C:\Program Files<DPM Installation path>\XSD folder
-     - C:\Program Files<DPM Installation path>\Temp folder
+     - C:\Program Files\<DPM Installation path\>\XSD folder
+     - C:\Program Files\<DPM Installation path\>\Temp folder
      - Drive letter of Modern Backup Storage volume
      - Disable real-time monitoring of MSDPM.exe, which is located in the folder **Program Files\Microsoft Data Protection Manager\DPM\bin**
      - Replica and transfer logs - To do this, disable real-time monitoring of **dpmra.exe**, which is located in the folder **Program Files\Microsoft Data Protection Manager\DPM\bin**. Real-time monitoring degrades performance because the antivirus software scans the replicas each time DPM synchronizes with the protected server and scans all affected files each time DPM applies changes to the replicas.
