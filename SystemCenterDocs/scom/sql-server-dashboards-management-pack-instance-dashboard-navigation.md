@@ -79,6 +79,7 @@ A user can use the filter field even if the dashboard group has objects with the
 The SQL Server Dashboard management pack allows you to navigate using the keyboard.
 
 The following keys are available:
+
 |Button|Purpose|
 |-|-|
 |Tab|Navigate to the next section|
