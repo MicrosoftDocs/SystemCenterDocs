@@ -268,6 +268,18 @@
         "SystemCenterDocs/vmm/*.md": "jsuri"
       },
       "exclude_monikers": {
+        "includes/release-notes-om-1807.md": [
+          "sc-om-1807"
+        ],
+        "includes/whats-new-om-1807.md": [
+          "sc-om-1807"
+        ],
+        "scom/release-notes-om.md": [
+          "sc-om-1807"
+        ],
+        "scom/whats-new-in-om.md": [
+          "sc-om-1807"
+        ],
         "includes/release-notes-orch-1801.md": [
           "sc-orch-1801"
         ],
