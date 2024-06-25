@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 03/18/2024
+ms.date: 06/25/2024
 ms.subservice: service-manager
 ms.assetid: 4bb2487c-5a91-44d2-9a85-f4112aff40ac
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -25,7 +25,7 @@ During setup in Service Manager, on the **Diagnostic and usage data** page, for 
 
 ## Configure your preference for sharing data from the Service Manager console
 
-1. In the Service Manager console, in the toolbar, select **Help**.
+1. Open the Service Manager console elevated as an Administrator and in the toolbar, select **Help**.
 
 2. In the **Help** menu, select **Send diagnostic and usage data to Microsoft**
 
@@ -35,7 +35,7 @@ During setup in Service Manager, on the **Diagnostic and usage data** page, for 
 
 1. Use the Service Manager console installed on same machine as Service Manager Management Server or Data Warehouse Management Server (and connect the console to same server), depending on where you want to configure the preference for sharing Service Manager diagnostic and usage data.
 
-2. In the Service Manager console, in the toolbar, select **Help**.
+2. Open the Service Manager console elevated as an Administrator and in the toolbar, select **Help**.
 
 3. In the **Help** menu, select **Send diagnostic and usage data to Microsoft**
 
