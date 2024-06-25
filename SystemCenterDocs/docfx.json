@@ -268,6 +268,12 @@
         "SystemCenterDocs/vmm/*.md": "jsuri"
       },
       "exclude_monikers": {
+        "includes/upgrade-to-dpm-1807.md": [
+          "sc-dpm-1807"
+        ],
+        "dpm/upgrade-dpm.md": [
+          "sc-dpm-1807"
+        ],
         "includes/release-notes-orch-1807.md": [
           "sc-orch-1807"
         ],
