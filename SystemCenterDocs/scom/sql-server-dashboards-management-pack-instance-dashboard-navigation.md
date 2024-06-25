@@ -79,7 +79,6 @@ A user can use the filter field even if the dashboard group has objects with the
 The SQL Server Dashboard management pack allows you to navigate using the keyboard.
 
 The following keys are available:
-
 |Button|Purpose|
 |-|-|
 |Tab|Navigate to the next section|
@@ -102,7 +101,7 @@ The following are the prerequisites for activating buttons "A" and "D":
 - Add flags to **Microsoft.EnterpriseManagement.Monitoring.Console.exe.config** in the directory C:\Program Files\Microsoft System Center\Operations\Manager\Console\
   
 ```Config
-        <!-- Assembly redirection -->
-        <runtime>
-            <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" />
+    <!-- Assembly redirection -->
+    <runtime>
+        <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" />
 ```
