@@ -285,6 +285,108 @@
         ],
         "orchestrator/upgrade-orch.md": [
           "sc-orch-1801"
+        ],
+        "includes/network-switch-2016-1801.md": [
+          "sc-vmm-1801"
+        ],
+        "includes/release-notes-vmm-1801.md": [
+          "sc-vmm-1801"
+        ],
+        "includes/system-reqs-vmm-1801.md": [
+          "sc-vmm-1801"
+        ],
+        "includes/upgrade-to-vmm-1801.md": [
+          "sc-vmm-1801"
+        ],
+        "includes/whats-new-vmm-1801.md": [
+          "sc-vmm-1801"
+        ],
+        "vmm/network-switch.md": [
+          "sc-vmm-1801"
+        ],
+        "vmm/release-notes-vmm.md": [
+          "sc-vmm-1801"
+        ],
+        "vmm/system-requirements.md": [
+          "sc-vmm-1801"
+        ],
+        "vmm/upgrade-vmm.md": [
+          "sc-vmm-1801"
+        ],
+        "vmm/whats-new-in-vmm.md": [
+          "sc-vmm-1801"
+        ],
+        "includes/install-om-crossplat-agent-cmdline-1801.md": [
+          "sc-om-1801"
+        ],
+        "includes/linux-log-file-monitoring-1801-1807.md": [
+          "sc-om-1801"
+        ],
+        "includes/release-notes-om-1801.md": [
+          "sc-om-1801"
+        ],
+        "scom/manage-install-crossplat-agent-cmdline.md": [
+          "sc-om-1801"
+        ],
+        "scom/manage-linux-logfiles.md": [
+          "sc-om-1801"
+        ],
+        "scom/release-notes-om.md": [
+          "sc-om-1801"
+        ],
+        "scom/whats-new-in-om.md": [
+          "sc-om-1801"
+        ],
+        "includes/whats-new-om-1801.md": [
+          "sc-om-1801"
+        ],
+        "includes/release-notes-sma-1801.md": [
+          "sc-sma-1801"
+        ],
+        "includes/system-reqs-sma-1801.md": [
+          "sc-sma-1801"
+        ],
+        "includes/upgrade-to-sma-1801.md": [
+          "sc-sma-1801"
+        ],
+        "includes/whats-new-sma-1801.md": [
+          "sc-sma-1801"
+        ],
+        "sma/release-notes-sma.md": [
+          "sc-sma-1801"
+        ],
+        "sma/system-requirements-sma.md": [
+          "sc-sma-1801"
+        ],
+        "sma/upgrade-sma.md": [
+          "sc-sma-1801"
+        ],
+        "sma/whats-new-in-sma.md": [
+          "sc-sma-1801"
+        ],
+        "includes/upgrade-to-dpm-1801.md": [
+          "sc-dpm-1801"
+        ],
+        "dpm/upgrade-dpm.md": [
+          "sc-dpm-1801"
+        ],
+        "includes/release-notes-spf-1801.md": [
+          "sc-spf-1801"
+        ],
+        "includes/system-reqs-spf-1801.md": [
+          "sc-spf-1801"
+        ],
+        "includes/upgrade-to-spf-1801.md": [
+          "sc-spf-1801"
+        ],
+        "spf/release-notes-spf.md": [
+          "sc-spf-1801"
+        ],
+        "spf/system-requirements-spf.md": [
+          "sc-spf-1801"
+        ],
+        "spf/upgrade-spf.md": [
+          "sc-spf-1801"
         ]
       }
     },
