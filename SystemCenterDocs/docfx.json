@@ -268,6 +268,54 @@
         "SystemCenterDocs/vmm/*.md": "jsuri"
       },
       "exclude_monikers": {
+        "includes/release-notes-sm-1801.md": [
+          "sc-sm-1801"
+        ],
+        "includes/system-reqs-sm-1801.md": [
+          "sc-sm-1801"
+        ],
+        "includes/upgrade-to-sm-1801.md": [
+          "sc-sm-1801"
+        ],
+        "includes/whats-new-sm-1801.md": [
+          "sc-sm-1801"
+        ],
+        "scsm/release-notes-sm.md": [
+          "sc-sm-1801"
+        ],
+        "scsm/system-requirements.md": [
+          "sc-sm-1801"
+        ],
+        "scsm/whats-new-in-sm.md": [
+          "sc-sm-1801"
+        ],
+        "scsm/upgrade-service-manager.md": [
+          "sc-sm-1801"
+        ],
+        "includes/network-switch-1807.md": [
+          "sc-vmm-1807"
+        ],
+        "includes/release-notes-vmm-1807.md": [
+          "sc-vmm-1807"
+        ],
+        "includes/system-reqs-vmm-1807.md": [
+          "sc-vmm-1807"
+        ],
+        "includes/whats-new-vmm-1807.md": [
+          "sc-vmm-1807"
+        ],
+        "vmm/network-switch.md": [
+          "sc-vmm-1807"
+        ],
+        "vmm/release-notes-vmm.md": [
+          "sc-vmm-1807"
+        ],
+        "vmm/system-requirements.md": [
+          "sc-vmm-1807"
+        ],
+        "vmm/whats-new-in-vmm.md": [
+          "sc-vmm-1807"
+        ],
         "includes/release-notes-sm-1807.md": [
           "sc-sm-1807"
         ],
