@@ -88,11 +88,13 @@ To create a two-state custom query-based monitor, perform the following steps:
 
 7. At the **Property Bag** step, add one or more conditions to parse the sql query result into a property bag to add properties to the alert context. This step can be skipped if the default alert context is sufficient for display.
 
-    ![Screenshot of configuring property bag](./media/sql-server-management-pack/sql-unit-monitor-property-bag.png)
+    ![Screenshot of configuring property bag.](./media/sql-server-management-pack/sql-unit-monitor-property-bag.png)
+
 
     To add a new condition, select **Add**, and then select **Scalar Value**. When you add a condition, you must specify **Friendly name** and **Configuration** details for a specific check to be performed.
 
-    ![Screenshot of property bag condition](./media/sql-server-management-pack/sql-unit-monitor-alert-condition.png)
+    ![Screenshot of property bag condition.](./media/sql-server-management-pack/sql-unit-monitor-alert-condition.png)
+
   
     After you finish setting all the required conditions, select **Next**.
 
