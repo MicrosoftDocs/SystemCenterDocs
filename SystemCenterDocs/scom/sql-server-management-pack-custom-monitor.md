@@ -86,11 +86,21 @@ To create a two-state custom query-based monitor, perform the following steps:
 
     After you finish setting all the required conditions, select **Next**.
 
-7. At the **Schedule** step, configure a query execution schedule and synchronization time.
+7. At the **Property Bag** step, add one or more conditions to parse the sql query result into a property bag to add properties to the alert context. This step can be skipped if the default alert context is sufficient for display.
+
+    ![Screenshot of configuring property bag](./media/sql-server-management-pack/sql-unit-monitor-property-bag.png)
+
+    To add a new condition, select **Add**, and then select **Scalar Value**. When you add a condition, you must specify **Friendly name** and **Configuration** details for a specific check to be performed.
+
+    ![Screenshot of property bag condition](./media/sql-server-management-pack/sql-unit-monitor-alert-condition.png)
+  
+    After you finish setting all the required conditions, select **Next**.
+
+8. At the **Schedule** step, configure a query execution schedule and synchronization time.
 
     ![Screenshot of configuring a schedule.](./media/sql-server-management-pack/sql-unit-monitor-schedule.png)
 
-8. At the **Schedule Filter** step, select the schedule filtering mode with the following options:
+9. At the **Schedule Filter** step, select the schedule filtering mode with the following options:
 
     - **Always process data**
 
@@ -118,11 +128,11 @@ To create a two-state custom query-based monitor, perform the following steps:
 
    ![Screenshot that shows using both schedule filtering options.](./media/sql-server-management-pack/schedule-filter-with-filled-options.png)
 
-9. At the **Configure Health** step, select the health state that the monitor should generate. Change the **Operational State** information if needed.
+10. At the **Configure Health** step, select the health state that the monitor should generate. Change the **Operational State** information if needed.
 
     ![Screenshot of configuring health.](./media/sql-server-management-pack/custom-monitor-configure-health.png)  
 
-10. At the **Configure Alerts** step, enable the generating of alerts and edit the **Alert properties** area if needed.
+11. At the **Configure Alerts** step, enable the generating of alerts and edit the **Alert properties** area if needed.
 
     If you need to activate alerts for the monitor, select the **Generate alerts for this monitor** checkbox, and set up an alert name and description to be shown when conditions fail. Change priority and severity, and resolve the alert mode.
 
@@ -151,6 +161,4 @@ When you use the **Equal to** condition in a three-state monitor:
 
 ### Example
 
-The expected value is a number in the range 1-70, which is the healthy state of the monitor. The range 71-85 is a warning state, and 86-100 is a critical state. You need to create a condition for each value in the 71-85 range to specify the warning state. Do the same for the 86-100 critical range.
-
-The monitor performs the check by comparing the result with all critical conditions. If there are no matches, the monitor compares the result with warning conditions. Otherwise, the result is in a healthy condition.
+For detailed examples of how to use custom monitors, refer to [Examples of usage](sql-server-management-pack-custom-monitoring-examples.md).
