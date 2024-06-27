@@ -252,7 +252,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 11. Review the **Installation summary** page and select **Install**.
 
-[Learn more](#configure-the-api-after-installation) to configure the Console after installation.
+[Learn more](#configuration-options-for-the-api-and-console) to configure the Console after installation.
 
 The **Installing features** page appears and displays the installation progress.
 
