@@ -24,7 +24,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Reworked the "Long Running Queries" alert rule to improve security
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
-  - implemented keyboard navigation using the A and D buttons on the tiles in the dashboard
+  - implemented [Keyboard Navigation](sql-server-dashboards-management-pack-instance-dashboard-navigation.md) using the A and D buttons on the tiles in the dashboard
   - added the ability for the screen reader to announce buttons and errors in the SQL Server wizard
   - redesigned dashboard list controls for greater accessibility
 
