@@ -5,7 +5,7 @@ description: This article provides an overview of Azure Arc-enabled System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/16/2023
+ms.date: 10/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
