@@ -29,8 +29,8 @@ System Center Data Protection Manager (DPM) logs activity in log files (\*.errlo
 
      Based on the above output, the logs will be in the following locations:
          
-     - DPM installation information: Logged on the DPM server at %ProgramFiles%\Microsoft System Center 2022\DPM\DPMLogs.
-     - DPM activity information: Logged on the DPM server at %ProgramFiles%\Microsoft System Center 2022\DPM\DPM\Temp.
+     - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPMLogs*.
+     - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPM\Temp*.
 
 -   **Protected client activity**: Logged on the client computer at %ProgramFiles%\Microsoft Data Protection Manager\DPM\Temp Logs. Client-initiated activities, such as self-service recovery, are logged on the client computer based on the user (%USERPROFILE%\AppData\Roaming\Microsoft\System Center Data Protection Manager\\).
 
