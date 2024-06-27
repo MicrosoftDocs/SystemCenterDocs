@@ -64,16 +64,17 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 2. For each data source, complete the DatasourceScriptConfig element:
 
     For the DataSourceName attribute, use one the following:
+
     | | DataSourceName attribute |
     |---|---|
-    |Volume or file share data sources|DataSourceName = “volume_letter” Example :  <DatasourceScriptConfig DataSourceName="C:">   - Do not use backslash `\` after drive letter.|
-    |Volume Mountpoints|DataSourceName=” Volume\mountpoint_name” Example: <DatasourceScriptConfig DataSourceName="C:\mountpoint">|
-    |Microsoft SQL Server|DataSourcename= "Instance\Database" Example:  <DatasourceScriptConfig DataSourceName="MySQLInstance\MySQLDB">|
-    |Microsoft Exchange|DataSourceName="Storage group name" Example: <DatasourceScriptConfig DataSourceName="First Storage Group">|
-    |Windows SharePoint Services|DatasourceName=“SharePoint Farm\SQL Server Name\SQL Instance Name\SharePoint_Config”   Example: <DatasourceScriptConfig DataSourceName="SharePoint Farm\MY-SQL\MYINSTANCE\SharePoint_Config">|
-    |Client Protection|DataSourceName= "DisconnectedClient" Example: <DatasourceScriptConfig DataSourceName="DisconnectedClient">|
-    |SystemState or BMR|DataSourceName="System Protection " Example: <DatasourceScriptConfig DataSourceName="System Protection ">    <--------------------- NOTE THE REQUIRED SPACE.|
-    |Hyper-V Server|DataSourceName = “ComponentID” Example: <DatasourceScriptConfig DataSourceName="44b31766-c87d-416e-b2c0-08fd297a0c8b">|
+    |Volume or file share data sources|DataSourceName = “volume_letter” Example :  \<DatasourceScriptConfig DataSourceName="C:"\>   - Do not use backslash `\` after drive letter.|
+    |Volume Mountpoints|DataSourceName=” Volume\mountpoint_name” Example: \<DatasourceScriptConfig DataSourceName="C:\mountpoint"\>|
+    |Microsoft SQL Server|DataSourcename= "Instance\Database" Example:  \<DatasourceScriptConfig DataSourceName="MySQLInstance\MySQLDB"\>|
+    |Microsoft Exchange|DataSourceName="Storage group name" Example: \<DatasourceScriptConfig DataSourceName="First Storage Group"\>|
+    |Windows SharePoint Services|DatasourceName=“SharePoint Farm\SQL Server Name\SQL Instance Name\SharePoint_Config”   Example: \<DatasourceScriptConfig DataSourceName="SharePoint Farm\MY-SQL\MYINSTANCE\SharePoint_Config"\>|
+    |Client Protection|DataSourceName= "DisconnectedClient" Example: \<DatasourceScriptConfig DataSourceName="DisconnectedClient"\>|
+    |SystemState or BMR|DataSourceName="System Protection " Example: \<DatasourceScriptConfig DataSourceName="System Protection "\>    <--------------------- NOTE THE REQUIRED SPACE.|
+    |Hyper-V Server|DataSourceName = “ComponentID” Example: \<DatasourceScriptConfig DataSourceName="44b31766-c87d-416e-b2c0-08fd297a0c8b"\>|
 
 >[!NOTE]
 >To get the VM ComponentID, run the PowerShell command Get-VM on the Hyper-V Server to list VM names and ID.
@@ -81,10 +82,10 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 > PS C:\> Get-VM  | select-object Name,ID
 > ```
 
-|Name|Id|
-|---|---|
-|Windows2022|44b31766-c87d-416e-b2c0-08fd297a0c8b|
-|Windows10-2|01d9ed67-5c79-4bbf-8f42-0f509b07aeda|
+| Name | Id |
+| --- | --- |
+| Windows2022 | 44b31766-c87d-416e-b2c0-08fd297a0c8b |
+| Windows10-2 | 01d9ed67-5c79-4bbf-8f42-0f509b07aeda |
 
 3. Save the *ScriptingConfig.xml* file.
 
