@@ -1,12 +1,12 @@
 ---
 title: Manage and use the analysis libraries
 description: Explains how to manage and use the analysis libraries in the Service Manager console.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -41,7 +41,7 @@ You can use the following procedure to manage the analysis libraries in the Serv
 
 You can use the following procedure in Service Manager to view Microsoft Excel workbooks that connect to Microsoft Online Analytical Processing \(OLAP\) data cubes by using the **Analysis Library** node in the Reporting workspace. Workbooks are saved to the Analysis Library by Service Manager so that report users can easily access the workbooks.  
 
-To use the analysis library, follow these steps:
+### Use the analysis library  
 
 1. In the Service Manager console, select **Reporting**, expand the **Analysis Library** node, and then navigate to the folder that contains an Excel workbook that you want to open.  
 2. Select the Excel workbook that you want to open, and then in the **Tasks** list, select **Open Excel File**.  

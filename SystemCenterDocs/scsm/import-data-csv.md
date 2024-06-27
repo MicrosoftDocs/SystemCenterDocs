@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/28/2023
+ms.date: 06/20/2024
 ms.subservice: service-manager
 ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Use a CSV file to import data into Service Manager
@@ -116,7 +116,7 @@ Save this file as **newcomputers.xml**.
 
 Before you can import data from a comma-separated value (CSV) file, you've to create two files: a data file and a format file. You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
 
-To import configuration items from a CSV file, follow these steps:
+To import configuration items from a CSV file, do the following:
 
 1. In the Service Manager console, select **Administration**.
 

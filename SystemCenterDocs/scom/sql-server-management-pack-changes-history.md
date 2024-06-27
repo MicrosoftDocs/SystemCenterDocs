@@ -15,6 +15,19 @@ ms.subservice: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
+## June 2024 - 7.5.19.0 CTP
+
+### What's New
+
+- Added new "Table Clustered Index Fragmentation" monitor that targets databases and checks for high fragmentation of clustered indexes
+- Added new "Property Bag" step in the custom monitor setup to extend the alert context with a property from the query result
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Reworked the "Long Running Queries" alert rule to improve security
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - implemented [Keyboard Navigation](sql-server-dashboards-management-pack-instance-dashboard-navigation.md) using the A and D buttons on the tiles in the dashboard
+  - added the ability for the screen reader to announce buttons and errors in the SQL Server wizard
+  - redesigned dashboard list controls for greater accessibility
+
 ## January 2024 - 7.4.0.0 RTM
 
 ### What's new

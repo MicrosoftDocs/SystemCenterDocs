@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.subservice: service-manager
 ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # User interface customization in Service Manager
@@ -27,7 +27,7 @@ The sealed management packs in Service Manager contain, among other things, view
 
 The **Failed Service Requests** view in Service Manager is in a sealed management pack. In this example, you will create a duplicate of this view, save it into an unsealed management pack, and then edit the new view by changing its name to **New Failed Service Requests**. You will finish this exercise by hiding the original Failed Service Requests view. As an administrator, you will still see the hidden view.
 
-To customize a view, follow these steps:
+To customize a view, do the following:
 
 1. In the Service Manager console, select **Work Items**.
 
@@ -47,7 +47,7 @@ To customize a view, follow these steps:
 
 The items in a list in a sealed management pack in Service Manager can't be changed. In this example, you'll add a list item (phone) to the **Service Request Source** list and save it into an unsealed management pack, and then edit the new view by changing its name to **New Failed Service Requests**. You will finish this exercise by hiding the original Failed Service Requests view. As an administrator, you will still see the hidden view.
 
-To customize a list item, follow these steps:
+To customize a list item, do the following:
 
 1. In the Service Manager console, select **Library**.
 
@@ -69,7 +69,7 @@ To customize a list item, follow these steps:
 
 Templates in a sealed management pack in Service Manager can't be changed. In this example, you will create a copy of the Default Service Request Template and save the copy in an unsealed management pack. You will then start a Create Template Wizard for the copy you made.
 
-To customize a template, follow these steps:
+To customize a template, do the following:
 
 1. In the Service Manager console, select **Library**.
 

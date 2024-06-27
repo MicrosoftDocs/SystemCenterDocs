@@ -1,0 +1,768 @@
+- name: About Operations Manager
+  href: welcome.md
+  items:
+  - name: About Azure Monitor SCOM Managed Instance
+    href: /azure/azure-monitor/scom-manage-instance/overview?toc=/azure/azure-monitor/scom-managed-instance/toc.json&bc=/azure/azure-monitor/scom-managed-instance/breadcrumb/toc.json
+  - name: Operations Manager key concepts
+    href: key-concepts.md
+- name: Get Started
+  href: get-started.md
+  items:
+  - name: Operations Manager build versions
+    href: release-build-versions.md
+  - name: Features deprecated
+    href: features-removed-or-deprecated.md
+  - name: Release notes
+    href: release-notes-om.md
+  - name: What's new in Operations Manager
+    href: whats-new-in-om.md
+  - name: Walkthrough - Installing Operations Manager on a Single Server
+    href: quickstart-install-single-server.md
+  - name: Installing Operations Manager from the Command Prompt
+    href: install-using-cmdline.md
+  - name: How to disable RC4 while installing Operations Manager
+    href: install-with-rc4-disabled.md
+  - name: Enable service logon
+    href: enable-service-logon.md
+  - name: Turn on/off telemetry settings
+    href: manage-telemetry.md
+- name: How To
+  items:
+  - name: Plan
+    href: plan-overview.md
+    items:
+    - name: System requirements
+      href: system-requirements.md
+    - name: Supported versions of UNIX and Linux
+      href: plan-supported-crossplat-os.md
+    - name: Planning a management group design
+      href: plan-mgmt-group-design.md
+    - name: SQL Server design considerations
+      href: plan-sqlserver-design.md
+    - name: Resource pool design considerations
+      href: plan-resource-pool-design.md
+    - name: Design integration with other enterprise management products
+      href: plan-thirdparty-integration.md
+    - name: Designing for high availability and disaster recovery
+      href: plan-hadr-design.md
+    - name: Agent deployment planning
+      href: plan-planning-agent-deployment.md
+    - name: Security
+      items:
+      - name: Configuring a firewall for Operations Manager
+        href: plan-security-config-firewall.md
+      - name: Configure TLS 1.2 encryption
+        href: plan-security-tls12-config.md
+      - name: Configure antivirus exclusions
+        href: plan-security-antivirus.md
+      - name: Service, user, and security accounts
+        href: plan-security-accounts.md
+      - name: Run As accounts and Profiles
+        href: plan-security-runas-accounts-profiles.md
+      - name: Group managed service accounts
+        items:
+        - name: Accounts used in gMSA
+          href: support-group-managed-service-accounts.md
+        - name: Provide security rights
+          href: provide-security-rights.md
+        - name: Database changes
+          href: database-changes.md
+        - name: Service level changes
+          href: service-level-changes.md
+        - name: Console level changes
+          href: console-level-changes.md
+      - name: Security credentials to access UNIX and Linux computers
+        href: plan-security-crossplat-credentials.md
+      - name: Authentication and data encryption in Operations Manager
+        href: plan-security-authentication-data-encryption.md
+      - name: Configure an HTTPS Binding for a Windows Server CA
+        href: configure-https-binding-windows-server-ca.md
+      - name: Obtain a certificate for use with Windows Servers and System Center Operations Manager
+        href: obtain-certificate-windows-server-and-operations-manager.md
+      - name: Data encryption for Web console and Reporting server connections
+        href: plan-data-encryption-server-roles.md
+      - name: Security considerations monitoring Microsoft Azure and Microsoft 365
+        href: plan-security-microsoft-cloud.md
+  - name: Deploy
+    href: deploy-overview.md
+    items:
+    - name: Single-Server deployment of Operations Manager
+      href: deploy-single-server.md
+    - name: Distributed deployment of Operations Manager
+      href: deploy-distributed-deployment.md
+      items:
+      - name: How to install an Operations Manager management server
+        href: deploy-install-mgmt-server.md
+      - name: How to install the Operations console
+        href: deploy-install-ops-console.md
+      - name: How to install the Operations Manager Web console
+        href: deploy-install-web-console.md
+      - name: How to create folders in Operations Manager Web console
+        href: support-folders-monitoring-view-web-console.md
+      - name: How  to install an Audit Collection Services(ACS) Collector and database
+        href: deploy-install-acs.md
+      - name: How to install the Operations Manager Reporting server
+        href: deploy-install-reporting-server.md
+      - name: Connect to the Data Warehouse across a firewall
+        href: deploy-connect-reportingdw-firewall.md
+      - name: How to install a gateway server
+        href: deploy-install-gateway-server.md
+    - name: Upgrading System Center Operations Manager
+      href: deploy-upgrade-overview.md
+      items:
+      - name: Pre-Upgrade tasks when upgrading Operations Manager
+        href: deploy-upgrade-pretasks.md
+      - name: How to upgrade a single-server management group
+        href: deploy-upgrade-single-server.md
+      - name: How to upgrade a management server - Upgrading a distributed management group
+        href: deploy-upgrade-mgmt-server.md
+      - name: How to upgrade an ACS Collector
+        href: deploy-upgrade-acs-collector.md
+      - name: How to upgrade a gateway server
+        href: deploy-upgrade-gateway-server.md
+      - name: How to upgrade an Operations console
+        href: deploy-upgrade-ops-console.md
+      - name: How to upgrade an agent
+        href: deploy-upgrade-agents.md
+      - name: How to upgrade agents in a parallel deployment
+        href: deploy-upgrade-agents-parallel.md
+      - name: How to upgrade a Web console
+        href: deploy-upgrade-web-console.md
+      - name: How to upgrade reporting
+        href: deploy-upgrade-reporting-server.md
+      - name: How to upgrade Operations Manager databases to SQL Server 2017
+        href: upgrade-sqlserver-2017-opsmgr.md
+      - name: How to upgrade Operations Manager databases to SQL Server 2019
+        href: upgrade-sqlserver-2019-operations-manager.md
+      - name: How to upgrade Operations Manager databases to SQL Server 2022
+        href: upgrade-sqlserver-2022-operations-manager.md
+      - name: How to upgrade to version 1807
+        href: upgrade-1801-to-1807.md
+      - name: How to upgrade from the evaluation version of Operations Manager
+        href: deploy-upgrade-eval.md
+      - name: Post-upgrade tasks when upgrading Operations Manager
+        href: deploy-upgrade-post-tasks.md
+    - name: Remove a Gateway Server from a Management Group
+      href: remove-gateway-server.md
+  - name: Manage
+    items:
+    - name: Quick reference to Operations Manager tasks
+      href: manage-quick-reference.md
+    - name: Operations Manager monitoring scenarios
+      href: manage-monitoring-scenarios.md
+    - name: Managing discovery and agents
+      items:
+      - name: Discover and install agent on Windows
+        href: manage-deploy-windows-agent-console.md
+      - name: Discover and install agent on UNIX and Linux
+        href: manage-deploy-crossplat-agent-console.md
+      - name: Install Windows agent manually with MOMAgent.msi
+        href: manage-deploy-windows-agent-manually.md
+      - name: Install agent on Nano Server
+        href: manage-deploy-windows-agent-nano.md
+      - name: Configuring Windows agents
+        href: manage-deploy-config-windows-agent.md
+      - name: Configure agent failover to multiple gateway servers
+        href: manage-config-agent-failover-multiple-gateway-servers.md
+      - name: Install agent on UNIX and Linux from command line
+        href: manage-install-crossplat-agent-cmdline.md
+      - name: Install agent on Linux from command line
+        href: deploy-linux-agent-install.md
+      - name: Manage certificates for UNIX and Linux computers
+        href: manage-crossplat-certificates.md
+      - name: Use CA certificate on SCX agent
+        href: /troubleshoot/system-center/scom/use-ca-certificate-on-scx-agent?toc=/system-center/scom/toc.json&bc=/system-center/breadcrumb/toc.json
+      - name: Repair Windows agent
+        href: manage-repair-windows-agent.md
+      - name: Process manual agent installations
+        href: manage-process-manual-agent-install.md
+      - name: Applying overrides to object discoveries
+        href: manage-apply-overrides-object-discovery.md
+      - name: Upgrading and uninstalling agent on UNIX and Linux computer
+        href: manage-upgrade-uninstall-crossplat-agent.md
+      - name: Manually uninstalling Agents from UNIX and Linux computers
+        href: manage-uninstall-crossplat-agent.md
+      - name: Uninstall agent on Windows computer
+        href: manage-uninstall-windows-agent.md
+      - name: Configure and use Active Directory Integration for agent assignment
+        href: manage-ad-integration-agent-assignment.md
+    - name: Using management packs
+      items:
+      - name: What is in an Operations Manager management pack?
+        href: manage-overview-management-pack.md
+      - name: Management packs installed with Operations Manager
+        href: manage-mp-installed-during-seutp.md
+      - name: Management pack lifecycle
+        href: manage-mp-lifecycle.md
+    - name: Management pack templates
+      items:
+      - name: About Management pack templates
+        href: management-pack-templates.md
+      - name: Creating Management pack templates
+        href: create-management-pack-templates.md
+      - name: .NET application performance monitoring template
+        items:
+        - name: .NET application performance monitoring template
+          href: net-application-performance-monitoring-template.md
+        - name: How to configure monitoring for .NET applications
+          items:
+          - name: Using exception handlers to define critical exceptions
+            href: use-exception-handlers-define-critical-exceptions.md
+        - name: Authoring strategies for .NET application monitoring
+          href: author-strategies-net-application-monitoring.md
+        - name: Application monitoring using the default settings
+          href: application-monitor-use-default-settings.md
+      - name: OLE DB data source template
+        href: ole-db-datasource-template.md
+      - name: Process Monitoring template
+        href: process-monitoring-template.md
+      - name: TCP port template
+        href: tcp-port-template.md
+      - name: UNIX or Linux log file
+        href: unix-linux-logfile.md
+      - name: UNIX or Linux process
+        href: unix-linux-process.md
+      - name: Web Application Availability Monitoring template
+        items:
+        - name: Web Application Availability Monitoring template
+          href: web-application-availability-monitoring-template.md
+      - name: Web Application Transaction Monitoring template
+        items:
+        - name: Web Application Transaction Monitoring template
+          href: web-application-transaction-monitoring-template.md
+        - name: How to replace parameters in a URL request
+          href: how-to-replace-parameters-url-request.md
+      - name: Windows Service template
+        href: windows-service-template.md
+      - name: Using classes and groups for overrides
+        href: manage-mp-overview-override-targets.md
+      - name: How to track changes in management pack
+        href: management-pack-change-tracking.md
+      - name: How to import, export, and remove a management pack
+        href: manage-mp-import-remove-delete.md
+      - name: Create a management pack for overrides
+        href: manage-mp-create-unsealed-mp.md
+      - name: How to override a Rule or Monitor
+        href: manage-mp-override-rule-monitor.md
+      - name: How to enable a Rule or Monitor
+        href: manage-enable-or-disable-rule-monitor.md
+      - name: How to add knowledge
+        href: manage-mp-add-knowledge.md
+      - name: Management Pack assessment
+        href: manage-mp-mpassessment.md
+      - name: Selecting a Management Pack File
+        href: select-management-pack-file.md
+    - name: Using the Operations Manager consoles
+      href: manage-consoles-overview.md
+      items:
+      - name: Comparing the Operations and Web console
+        href: manage-consoles-comparison.md
+      - name: How to connect to the Operations and Web console
+        href: manage-consoles-how-to-connect.md
+      - name: Operations console refresh improvements
+        href: manage-overview-console-refresh.md
+      - name: Using Health Explorer
+        href: manage-consoles-overview-healthexplorer.md
+      - name: Using My Workspace
+        href: manage-consoles-my-workspace.md
+      - name: Finding data and objects in the consoles
+        href: manage-console-finding-data.md
+      - name: Using advanced search
+        href: manage-console-using-adv-search.md
+      - name: Using the Monitoring workspace
+        href: manage-using-monitoring-workspace.md
+      - name: Using the Administration workspace
+        href: manage-using-admin-workspace.md
+      - name: Using the Authoring workspace
+        href: manage-using-authoring-workspace.md
+      - name: Using the Reporting workspace
+        href: manage-using-reporting-workspace.md
+    - name: Using reports
+      items:
+      - name: Operations Manager report library
+        href: manage-reports-installed-during-setup.md
+      - name: How to create reports
+        href: manage-reports-create-reports.md
+      - name: How to run, save, and export reports
+        href: manage-reports-run-save-export.md
+      - name: How to configure and modify report schedules
+        href: manage-reports-config-modify-schedules.md
+      - name: Favorite reports in Web console
+        href: favorite-reports-web-console.md
+    - name: Monitor failover clusters
+      href: manage-monitor-clusters-overview.md
+    - name: Not monitored and gray agents
+      href: manage-agents-not-healthy.md
+    - name: How to view all rules and monitors running on agent-managed computer
+      href: manage-agents-identify-all-running-workflows.md
+    - name: Configure SharePoint to view Operations Manager data
+      href: manage-console-sharepoint-integration.md
+    - name: Using views and dashboards
+      items:
+      - name: View types
+        href: manage-console-view-types.md
+      - name: Dashboards overview
+        href: manage-dashboards-overview.md
+      - name: Web console dashboards
+        items:
+        - name: Overview
+          href: manage-overview-html5-web-console.md
+        - name: Create dashboard with Alert widget
+          href: manage-create-web-dashboard-alerts.md
+        - name: Create dashboard with State widget
+          href: manage-create-web-dashboard-state.md
+        - name: Create dashboard with Perf widget
+          href: manage-create-web-dashboard-perf.md
+        - name: Create dashboard with Topology widget
+          href: manage-create-web-dashboard-topology.md
+        - name: Create dashboard with Tile widget
+          href: manage-create-web-dashboard-tile.md
+        - name: Create dashboard with Custom widget
+          href: manage-create-web-dashboard-custom.md
+        - name: Create dashboard with PowerShell widget
+          href: manage-create-web-dashboard-posh.md
+        - name: Manage dashboard and widget config
+          href: manage-web-console-dashboard-config.md
+        - name: Viewing effective configuration of workflows
+          href: manage-view-effective-configuration.md
+        - name: Using My Workspace in Web console
+          href: manage-web-console-my-workspace.md
+      - name: Standard views
+        href: manage-console-standard-views.md
+      - name: Creating and scoping views
+        href: manage-console-scope-views.md
+      - name: Personalize a view
+        href: manage-console-personalize-views.md
+    - name: Subscribing to alert notifications
+      href: manage-notifications-alert-notifications.md
+      items:
+      - name: How to create and configure the notification action account
+        href: manage-notifications-create-configure.md
+      - name: How to enable an email notification channel
+        href: manage-notifications-create-email-channel.md
+      - name: How to enable Microsoft Teams notification channel
+        href: manage-notifications-create-teams-channel.md
+      - name: How to enable an instant message notification channel
+        href: manage-notifications-create-im-channel.md
+      - name: How to enable text message(SMS) notification channel
+        href: manage-notifications-create-txt-channel.md
+      - name: How to enable a command notification channel
+        href: manage-notifications-create-command-channel.md
+      - name: How to create notification subscribers
+        href: manage-notifications-create-subscribers.md
+      - name: How to create notification subscriptions
+        href: manage-notifications-create-subscriptions.md
+      - name: How to customize message content for notifications
+        href: manage-notificiations-customize-message.md
+      - name: How to subscribe to notifications from an alert
+        href: manage-notifications-subscribe-from-alert.md
+    - name: Using the Visio add-in and SharePoint Visio Services Data Provider
+      href: manage-overview-visio-addin.md
+      items:
+      - name: Install the Visio add-in
+        href: manage-visio-addin-install-configure.md
+      - name: Install and configure the Visio Services data provider
+        href: manage-visio-addin-install-data-provider.md
+      - name: Configure the Operations Manager data source in Visio
+        href: manage-visio-addin-configure-datasource.md
+      - name: View an Operations Manager distributed diagram in Visio
+        href: manage-visio-addin-view-dad-in-visio.md
+      - name: Link to Operations Manager objects in a new or existing Visio document
+        href: manage-visio-addin-link-objects.md
+      - name: Build a simple monitoring dashboard using the Visio Web Part
+        href: manage-visio-addin-create-dashboard.md
+      - name: Publish a Visio diagram to SharePoint Server
+        href: manage-visio-addin-publish-sharepoint.md
+      - name: Change the way Health State is represented in Visio
+        href: manage-visio-addin-change-healthstate-datagraphic.md
+      - name: Troubleshooting the Visio add-in
+        href: manage-visio-addin-troubleshoot.md
+    - name: Security in Operations Manager
+      items:
+      - name: How to configure Report Server authentication
+        href: manage-config-authentication-reporting-server.md
+      - name: How to configure Web console authentication
+        href: manage-config-authentication-web-console.md
+      - name: Implementing user roles
+        href: manage-security-overview.md
+      - name: Operations associated with User Profile roles
+        href: manage-security-create-runas-account.md
+      - name: How to create a new Action account
+        href: manage-security-create-runas-actionaccount.md
+      - name: How to control access by using the Health Service Lockdown tool
+        href: manage-security-overview-hslockdown.md
+      - name: Managing Run As Accounts and Profiles
+        href: manage-security-maintain-runas-profiles.md
+      - name: Distribution and targeting for Run As Accounts and Profiles
+        href: manage-security-dist-target-runas-profiles.md
+      - name: How to create a Run As Account and associate with a Profile
+        href: manage-security-create-runas-link-profile.md
+      - name: How to configure Run As accounts and profiles for UNIX and Linux access
+        href: manage-security-config-crossplat-runas-profile.md
+      - name: Accessing UNIX and Linux computers
+        href: manage-security-authenticate-crossplat.md
+      - name: How to set credentials for accessing UNIX and Linux computers
+        href: manage-security-create-crossplat-credentials.md
+      - name: How to configure sudo elevation and SSH keys
+        href: manage-security-create-crossplat-sudo-sshkeys.md
+      - name: Sudoers templates for elevation in UNIX/Linux monitoring
+        href: manage-security-unix-linux-sudoers-templates.md
+      - name: Configure Kerberos authentication for Linux computers
+        href: manage-linux-kerberos-auth.md
+      - name: Required capabilities for UNIX and Linux computers
+        href: manage-security-crossplat-capabilities.md
+      - name: Configuring SSL ciphers
+        href: manage-security-crossplat-config-sslcipher.md
+      - name: Administering and configuring the UNIX/Linux agent
+        href: manage-security-administer-crossplat-agent.md
+      - name: Troubleshoot monitoring the UNIX/Linux agent
+        href: manage-monitoring-unix-linux.md
+    - name: Agentless monitoring
+      href: manage-agentless-monitoring.md
+    - name: Client monitoring using Agentless Exception Monitoring
+      href: manage-client-monitoring-using-aem.md
+    - name: Monitoring .NET applications
+      items:
+      - name: Viewing and investigating alerts for .NET apps
+        href: manage-viewing-and-investigating-alerts-for-dotnetapps.md
+      - name: Working with the Application Diagnostics console
+        href: manage-working-with-the-application-diagnostics-console.md
+      - name: Working with events using Application Diagnostics
+        href: manage-working-with-events-using-application-diagnostics.md
+      - name: Prioritizing alerts using Application Advisor
+        href: manage-prioritizing-alerts-using-application-advisor.md
+      - name: Configure grooming settings for .NET APM events
+        href: manage-configure-grooming-settings-for-dotnetapp-monitorevents.md
+      - name: Working with sensitive data for .NET applications
+        href: manage-working-with-sensitive-data-dotnetapps.md
+    - name: Monitoring Java Applications
+      items:
+      - name: Monitoring Java applications with Operations Manager
+        href: manage-monitoring-java-applications.md
+      - name: Configure monitoring of Java applications
+        href: manage-configure-monitoring-java-applications.md
+    - name: Monitoring networks with Operations Manager
+      href: manage-monitor-networkdevice-overview.md
+      items:
+      - name: How to discover network devices
+        href: manage-monitor-networkdevice-discover.md
+      - name: Network device discovery settings
+        href: manage-monitor-networkdevice-discovery-settings.md
+      - name: Run As accounts for network monitoring
+        href: manage-monitor-networkdevice-authentication.md
+      - name: How to delete or restore a network device
+        href: manage-monitor-networkdevice-delete-restore.md
+      - name: How to configure monitoring of network devices
+        href: manage-monitor-networkdevice-configure-monitoring.md
+      - name: Viewing network devices and data
+        href: manage-monitor-networkdevice-viewing-data.md
+      - name: Reports for network monitoring
+        href: manage-monitor-networkdevice-reports.md
+    - name: Fabric Monitoring
+      items:
+      - name: Fabric Monitoring
+        href: fabric-monitoring.md
+      - name: Scoping the Fabric Health Dashboard to a specific cloud
+        href: scope-fabric-health-dashboard.md
+      - name: The Fabric Monitoring Diagram view
+        href: fabric-monitoring-diagram-view.md
+      - name: Monitor cloud fabric using System Center Advisor
+        href: use-system-center-advisor.md
+    - name: Monitoring Web application transactions
+      items:
+      - name: How to edit settings or requests for a web application
+        href: edit-web-application-settings.md
+      - name: Web application properties
+        href: web-application-properties.md
+      - name: Web application request properties
+        href: web-application-request-properties.md
+    - name: Monitor Linux log files
+      items:
+      - name: Overview of Linux log file monitoring
+        href: manage-linux-logfiles.md
+      - name: Sample configuration file
+        href: manage-sample-configuration-file.md
+      - name: Sample management pack
+        href: manage-sample-management-pack.md
+    - name: Monitoring service level objectives
+      href: manage-monitor-sla-overview.md
+      items:
+      - name: Create a service level dashboard
+        href: manage-monitor-sla-create-dashboard.md
+      - name: Running a service level tracking report
+        href: manage-monitor-sla-reports.md
+    - name: Connecting Operations Manager with other management systems
+      href: manage-integration-thirdparty-overview.md
+      items:
+      - name: How to configure a product connector subscription
+        href: manage-integration-config-integration.md
+    - name: Manage Alerts
+      items:
+      - name: How heartbeats work
+        href: manage-agent-heartbeat-overview.md
+      - name: Resolving heartbeat alerts
+        href: manage-agent-resolve-heartbeat.md
+      - name: Configure ping computer recovery task from gateway servers
+        href: manage-heartbeat-failure-gateway-config.md
+      - name: How an alert is produced
+        href: manage-alert-generation-overview.md
+      - name: Viewing active alerts and details
+        href: manage-alert-view-alerts-details.md
+      - name: Examine properties of alerts, rules, and monitors
+        href: manage-examine-properties-of-workflows.md
+      - name: Impact of closing an alert
+        href: manage-alert-impact-closing.md
+      - name: How to close an alert generated by a monitor
+        href: manage-alert-created-by-monitor.md
+      - name: How to reset health
+        href: manage-health-reset-health.md
+      - name: Using health explorer to investigate problems
+        href: manage-health-using-healthexplorer.md
+      - name: How to set alert resolution states
+        href: manage-alert-set-resolution-states.md
+      - name: How to configure automatic alert resolution
+        href: manage-alert-configure-auto-resolution.md
+      - name: Data driven alert management
+        href: manage-alert-data-driven-management.md
+      - name: Enable recovery and diagnostic tasks
+        href: manage-enable-recovery-and-diagnostic-tasks.md
+    - name: Suspend monitoring temporarily by using maintenance mode
+      href: manage-maintenance-mode-overview.md
+    - name: Creating and managing groups
+      href: manage-create-manage-groups.md
+    - name: Running tasks in Operations Manager
+      href: manage-running-tasks.md
+    - name: Connecting management groups in Operations Manager
+      href: manage-connecting-mgmtgroups.md
+    - name: Using Operations Manager shell
+      href: manage-using-omcmdlets.md
+    - name: How to create and manage resource pools
+      href: manage-resource-pools-manage.md
+    - name: Maintaining Operations Manager infrastructure
+      items:
+      - name: Monitoring the health of the Management Group
+        href: manage-monitor-health-mg.md
+      - name: How and when to clear the cache
+        href: manage-clear-healthservice-cache.md
+      - name: How to configure Operations Manager to communicate with SQL Server
+        href: manage-sqlserver-communication.md
+      - name: Scheduled maintenance in Operations Manager
+        href: manage-scheduled-maintenance-in-operations-manager.md
+      - name: How to move the Reporting server role
+        href: manage-move-reporting-services-role.md
+      - name: How to move the Operational database
+        href: manage-move-opsdb.md
+      - name: How to move the Reporting data warehouse database
+        href: manage-move-omdwdb.md
+      - name: How to configure grooming settings for the Operations Manager database
+        href: manage-omdb-grooming-settings.md
+      - name: How to configure grooming settings for the Reporting data warehouse database
+        href: manage-omdwdb-grooming-settings.md
+- name: Management Packs
+  items:
+  - name: List of Management Packs
+    href: management-pack-list.md
+  - name: Management Pack for SQL Server
+    items:
+    - name: Features and Enhancements in Management Pack for SQL Server
+      href: sql-server-management-pack-changes-history.md
+    - name: Scope and Supported Configuration in Management Pack for SQL Server
+      href: sql-server-management-pack-supported-configuration.md
+    - name: Management Pack for SQL Server Delivery
+      href: sql-server-management-pack-management-pack-delivery.md
+    - name: Monitoring Configuration in Management Pack for SQL Server
+      href: sql-server-management-pack-monitoring-configuration.md
+      items:
+      - name: Monitoring Modes
+        href: sql-server-management-pack-monitoring-modes.md
+      - name: Monitoring Performance and Limitations
+        href: sql-server-management-pack-performance-limitations.md
+      - name: How Health Rolls Up
+        href: sql-server-management-pack-how-health-roll-up.md
+      - name: SQL Server Monitoring Pool
+        href: sql-server-management-pack-sql-server-monitoring-pool.md
+      - name: Disabling Monitoring of SQL Servers and Databases
+        href: sql-server-management-pack-disabling-monitoring.md
+      - name: Enabling Agent Proxy Option
+        href: sql-server-management-pack-enabling-agent-proxy.md
+      - name: Enabling Debugging
+        href: sql-server-management-pack-enable-debugging.md
+      - name: Tasks
+        items:
+        - name: Tasks overview
+          href: sql-server-management-pack-tasks-overview.md
+        - name: Export Event Log Task
+          href: sql-server-management-pack-export-event-log-task.md
+    - name: Security Configuration
+      items:
+      - name: SQL Server Run As Profiles
+        href: sql-server-management-pack-run-as-profiles.md
+      - name: Service SID
+        href: sql-server-management-pack-service-sid.md
+      - name: Low-Privilege Monitoring
+        href: sql-server-management-pack-low-privilege-monitoring.md
+    - name: Views and Dashboards in Management Pack for SQL Server
+      href: sql-server-management-pack-views-and-dashboards.md
+    - name: SQL Server Reporting
+      href: sql-server-management-pack-sql-server-reporting.md
+    - name: Custom Monitoring
+      items:
+      - name: Custom Query-Based Monitors
+        href: sql-server-management-pack-custom-monitor.md
+      - name: Custom Query-Based Performance Rules
+        href: sql-server-management-pack-custom-rule.md
+      - name: Custom Monitoring Examples
+        href: sql-server-management-pack-custom-monitoring-examples.md
+    - name: Known Issues and Troubleshooting in Management Pack for SQL Server
+      href: sql-server-management-pack-known-issues-and-troubleshooting.md
+  - name: Management Pack for Azure SQL Database
+    items:
+    - name: Features and Enhancements in Management Pack for Azure SQL Database
+      href: azure-sql-management-pack-changes-history.md
+    - name: Scope and Supported Configuration in Management Pack for Azure SQL Database
+      href: azure-sql-management-pack-supported-configuration.md
+    - name: Management Pack for Azure SQL Database Delivery
+      href: azure-sql-management-pack-management-pack-delivery.md
+    - name: Monitoring Configuration in Management Pack for Azure SQL Database
+      href: azure-sql-management-pack-monitoring-configuration.md
+      items:
+      - name: Monitoring Types
+        href: azure-sql-management-pack-monitoring-types.md
+    - name: Security Configuration
+      items:
+      - name: Azure SQL Database Run As Accounts
+        href: azure-sql-management-pack-run-as-accounts.md
+      - name: Low-Privilege Configuration
+        href: azure-sql-management-pack-low-privilege-configuration.md
+    - name: Views and Dashboards in Management Pack for Azure SQL Database
+      href: azure-sql-management-pack-viewing-information.md
+    - name: Custom Query-Based Monitoring
+      href: azure-sql-management-pack-custom-query-monitoring.md
+    - name: Known Issues and Troubleshooting in Management Pack for Azure SQL Database
+      href: azure-sql-management-pack-known-issues-and-troubleshooting.md
+  - name: Management Pack for Azure SQL Managed Instance
+    items:
+    - name: Features and Enhancements in Management Pack for Azure SQL Managed Instance
+      href: managed-instance-management-pack-changes-history.md
+    - name: Scope and Supported Configuration in Management Pack for Azure SQL Managed Instance
+      href: managed-instance-management-pack-supported-configuration.md
+    - name: Management Pack for Azure SQL Managed Instance Delivery
+      href: managed-instance-management-pack-management-pack-delivery.md
+    - name: Monitoring Configuration in Management Pack for Azure SQL Managed Instance
+      href: managed-instance-management-pack-monitoring-configuration.md
+      items:
+      - name: Monitoring Templates
+        items:
+        - name: Automatic Monitoring Template
+          href: managed-instance-management-pack-automatic-monitoring.md
+        - name: Manual Monitoring Template
+          href: managed-instance-management-pack-manual-monitoring.md
+      - name: Create a Service Principal
+        href: managed-instance-management-pack-service-principal.md
+      - name: Managed Instance Monitoring Pool
+        href: managed-instance-management-pack-monitoring-pool.md
+      - name: Enable Debugging
+        href: managed-instance-management-pack-enable-debugging.md
+      - name: Export Event Log Task
+        href: managed-instance-management-pack-export-event-log-task.md
+    - name: Security Configuration
+      href: managed-instance-management-pack-security-configuration.md
+    - name: Views and Dashboards in Management Pack for Azure SQL Managed Instance
+      href: managed-instance-management-pack-views-and-dashboards.md
+    - name: Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance
+      href: managed-instance-management-pack-known-issues-and-troubleshooting.md
+  - name: Management Pack for SQL Server Replication
+    items:
+    - name: Features and Enhancements in Management Pack for SQL Server Replication
+      href: sql-replication-management-pack-changes-history.md
+    - name: Scope and Supported Configuration in Management Pack for SQL Server Replication
+      href: sql-replication-management-pack-supported-configuration.md
+    - name: Terms and Definitions
+      href: sql-replication-management-pack-terms-and-definitions.md
+    - name: Management Pack for SQL Server Replication Delivery
+      href: sql-replication-management-pack-management-pack-delivery.md
+    - name: Management Pack Configuration
+      href: sql-replication-management-pack-management-pack-configuration.md
+    - name: Monitoring Configuration in Management Pack for SQL Server Replication
+      href: sql-replication-management-pack-monitoring-configuration.md
+    - name: Security Configuration in Management Pack for SQL Server Replication
+      items:
+      - name: Service SID
+        href: sql-replication-management-pack-service-sid.md
+      - name: Low-Privilege Monitoring
+        href: sql-replication-management-pack-low-privilege-monitoring.md
+    - name: Data Flow
+      href: sql-replication-management-pack-data-flow.md
+    - name: Views and Dashboards in Management Pack for SQL Server Replication
+      href: sql-replication-management-pack-views-and-dashboards.md
+    - name: Known Issues and Troubleshooting in Management Pack for SQL Server Replication
+      href: sql-replication-management-pack-known-issues-and-troubleshooting.md
+  - name: Management Pack for SQL Server Analysis Services
+    items:
+    - name: Features and Enhancements in Management Pack for SQL Server Analysis Services
+      href: analysis-services-management-pack-changes-history.md
+    - name: Scope and Supported Configuration in Management Pack for SQL Server Analysis Services
+      href: analysis-services-management-pack-supported-configuration.md
+    - name: Management Pack for SQL Server Analysis Services Delivery
+      href: analysis-services-management-pack-management-pack-delivery.md
+    - name: Monitoring Configuration in Management Pack for SQL Server Analysis Services
+      href: analysis-services-management-pack-monitoring-configuration.md
+      items:
+      - name: Disabling Monitoring of Analysis Servers and Databases
+        href: analysis-services-management-pack-disable-monitoring.md
+      - name: Enable debugging
+        href: analysis-services-management-pack-enable-debug.md
+      - name: Tasks overview
+        href: analysis-services-management-pack-tasks-overview.md
+    - name: Security Configuration in Management Pack for SQL Server Analysis Services
+      href: analysis-services-management-pack-security-configuration.md
+    - name: Views and Dashboards in Management Pack for SQL Server Analysis Services
+      href: analysis-services-management-pack-views-and-dashboards.md
+    - name: Known Issues and Troubleshooting in Management Pack for SQL Server Analysis Services
+      href: analysis-services-management-pack-known-issues-and-troubleshooting.md
+  - name: Management Pack for SQL Server Reporting Services
+    items:
+    - name: Features and Enhancements in Management Pack for SQL Server Reporting Services
+      href: reporting-services-management-pack-changes-history.md
+    - name: Scope and Supported Configuration in Management Pack for SQL Server Reporting Services
+      href: reporting-services-management-pack-supported-configuration.md
+    - name: Management Pack for SQL Server Reporting Services Delivery
+      href: reporting-services-management-pack-management-pack-delivery.md
+    - name: Monitoring Configuration in Management Pack for SQL Server Reporting Services
+      href: reporting-services-management-pack-monitoring-configuration.md
+    - name: Security Configuration
+      items:
+      - name: Reporting Services Run As Profiles
+        href: reporting-services-management-pack-run-as-profiles.md
+      - name: Least-Privilege Monitoring
+        href: reporting-services-management-pack-least-privilege-monitoring.md
+    - name: Views and Dashboards in Management Pack for SQL Server Reporting Services
+      href: reporting-services-management-pack-views-and-dashboards.md
+    - name: Known Issues and Troubleshooting in Management Pack for SQL Server Reporting Services
+      href: reporting-services-management-pack-known-issues-and-troubleshooting.md
+  - name: Management Pack for SQL Server Dashboards
+    items:
+    - name: Features and Enhancements in Management Pack for SQL Server Dashboards
+      href: sql-server-dashboards-management-pack-changes-history.md
+    - name: Introduction to Management Pack for SQL Server Dashboards
+      href: sql-server-dashboards-management-pack-introduction.md
+    - name: Datacenter View
+      href: sql-server-dashboards-management-pack-datacenter-view.md
+    - name: Instance View
+      href: sql-server-dashboards-management-pack-instance-view.md
+    - name: Configuring Datacenter Dashboard
+      href: sql-server-dashboards-management-pack-create-configure-datacenter-dashboards.md
+    - name: Adjusting Datacenter Dashboard
+      href: sql-server-dashboards-management-pack-adjusting-datacenter-dashboard.md
+    - name: Adjusting Instance Dashboard
+      href: sql-server-dashboards-management-pack-adjusting-instance-dashboard.md
+    - name: Managing Tiles
+      href: sql-server-dashboards-management-pack-managing-tiles.md
+    - name: Instance Dashboard Navigation
+      href: sql-server-dashboards-management-pack-instance-dashboard-navigation.md
+    - name: Configuring Run As Profiles
+      href: sql-server-dashboards-management-pack-run-as-profiles.md
+    - name: SQL Server Web Dashboards
+      href: sql-server-dashboards-management-pack-sql-server-dashboards.md
+    - name: Known Issues and Troubleshooting in Management Pack for SQL Server Dashboards
+      href: sql-server-dashboards-management-pack-known-issues-and-troubleshooting.md

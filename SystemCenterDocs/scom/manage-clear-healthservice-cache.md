@@ -4,7 +4,7 @@ description: This article provides guidance on how to manage the cache for the H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/22/2024
+ms.date: 06/19/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -22,7 +22,7 @@ ms.assetid: bea86d42-4838-46b0-96ac-75a0e8988e3c
 
 In System Center Operations Manager, when troubleshooting an issue with the Operations console or with an agent, you may see recommendations to "clear the cache." For more information on troubleshooting an issue with an agent, see [Not monitored and gray agents](manage-agents-not-healthy.md).  
 
-### Operations Console
+## Operations Console
 
 A possible reason to clear the Operations Console cache is to fix errors that occur when you access data in views, such as ObjectNotFoundExceptions. Another reason is to free up disk space when the cache file becomes too large.
 

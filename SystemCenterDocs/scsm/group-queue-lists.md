@@ -6,14 +6,14 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/28/2023
-title: Using Groups, Queues, and Lists in Service Manager
+ms.date: 06/20/2024
+title: Use Groups, Queues, and Lists in Service Manager
 ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
-# Using Groups, Queues, and Lists in Service Manager
+# Use Groups, Queues, and Lists in Service Manager
 
 ::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
@@ -75,7 +75,7 @@ Use the following procedures to create a new group (such as the **Exchange Serve
 > [!NOTE]
 > We recommend that you create a Configuration Manager connector before you run this procedure.
 
-To create a new group, follow these steps:
+### Create a new group
 
 1. In the Service Manager console, select **Library**.
 
@@ -129,9 +129,7 @@ To create a new group, follow these steps:
 
 You can create queues to create a grouping of related work items, such as incidents and change requests. For example, you can create a queue that you use for escalation, named **Exchange Send Problems Queue**, and then escalate that type of incident to that queue.
 
-You can use the following procedure to create a queue.
-
-To create a queue, follow these steps:
+To create a queue, do the following:
 
 1. In the Service Manager console, select **Library**.
 
@@ -167,9 +165,7 @@ To create a queue, follow these steps:
 
 ## Edit a Queue
 
-You can use the following procedure to edit a queue.
-
-To edit a queue, follow these steps:
+To edit a queue, do the following:
 
 1. In the Service Manager console, select **Library**.
 
@@ -185,7 +181,7 @@ To edit a queue, follow these steps:
 
 You can use these procedures to add a list item to an existing list and then validate it. For example, you can use this procedure to add a Laser Printer and Check-Writing Printer list item to the **Incident Classification** list.
 
-To add list items to Service Manager lists, follow these steps:
+### Add list items to Service Manager lists
 
 1. In the Service Manager console, select **Library**.
 

@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.subservice: service-manager
 ms.assetid: 29504a71-5574-472c-b930-894d31fe2267
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Configure Release Management settings
@@ -30,7 +30,7 @@ The Service Manager Administrator configures release management settings by usin
 > [!NOTE]
 > Revising the release record prefix doesn't affect the existing release records.
 
-To configure release management settings, follow these steps:
+### Configure release management settings
 
 1. In the Service Manager console, select **Administration**.
 
@@ -54,7 +54,7 @@ To configure release management settings, follow these steps:
 
 You can configure notifications for release records by completing the following procedure that sends a notification when a release record is created or updated.
 
-To configure a notification for updated release records, follow these steps:
+### Configure a notification for updated release records
 
 1. In the Service Manager console, select **Administration**.
 

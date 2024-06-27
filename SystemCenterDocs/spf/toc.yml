@@ -1,0 +1,37 @@
+- name: Overview
+  items:
+  - name: Get started with SPF
+    href: overview.md
+  - name: What's new in Service Provider Foundation
+    href: whats-new-in-spf.md
+  - name: Release notes - SPF
+    href: release-notes-spf.md
+  - name: Turn off telemetry in SPF
+    href: turn-off-telemetry.md
+- name: How To
+  items:
+  - name: Plan
+    items:
+    - name: Plan SPF deployment
+      href: plan-spf.md
+      items:
+      - name: System requirements - Service Provider Foundation
+        href: system-requirements-spf.md
+  - name: Deploy
+    items:
+    - name: Upgrade Service Provider Foundation
+      href: upgrade-spf.md
+    - name: Deploy SPF
+      href: deploy-spf.md
+  - name: Manage
+    items:
+    - name: Register SPF in Microsoft Azure Pack
+      href: manage-register-spf.md
+    - name: Manage tenants and user roles
+      href: manage-tenants.md
+    - name: Manage usage metering
+      href: manage-usage-metering.md
+    - name: Manage gallery resources
+      href: manage-gallery.md
+    - name: Automate and invoke runbooks
+      href: manage-runbooks.md
