@@ -3,14 +3,14 @@ description: This article describes the  pre and post backup scripts for Data Pr
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/08/2021
+ms.date: 06/27/2024
 title: Use Pre-backup and Post-backup scripts
 ms.subservice: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Pre-backup and Post-backup scripts for DPM
@@ -41,7 +41,7 @@ DPM runs the pre-backup and post-backup scripts by using the local system accoun
 
 **ScriptingConfig.xml**
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ScriptConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -61,17 +61,32 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
    > [!NOTE]
    > The *DataSourceName* attribute must be provided as **Drive:** (for example, **D:** if the data source is on the D drive).
 
-2. For each data source, complete the *DatasourceScriptConfig* element as follows:
-   -  For the *DataSourceName* attribute, enter the data source volume (for file data sources) or name (for all other data sources). The data source name for application data should be in the form of _Instance\Database_ for SQL, _Storage group name_ for Exchange, _Logical Path\Component Name_ for Virtual Server, and _SharePoint Farm\SQL Server Name\SQL Instance Name\SharePoint Config DB_ for Windows SharePoint Services.
+2. For each data source, complete the DatasourceScriptConfig element:
 
-   - In the **PreBackupScript** tag, enter the path and script name.
-   - In the **PreBackupCommandLine** tag, enter command-line parameters to be passed to the scripts, separated by spaces.
-   - In the **PostBackupScript** tag, enter the path and script name.
-   - In the **PostBackupCommandLine** tag, enter command-line parameters to be passed to the scripts, separated by spaces.
-   - In the **TimeOut** tag, enter the time in minutes that DPM should wait after invoking a script before timing out and marking the script as failed.
+    For the DataSourceName attribute, use one the following:
+    | | DataSourceName attribute |
+    |---|---|
+    |Volume or file share data sources|DataSourceName = “volume_letter” Example :  <DatasourceScriptConfig DataSourceName="C:">   - Do not use backslash `\` after drive letter.|
+    |Volume Mountpoints|DataSourceName=” Volume\mountpoint_name” Example: <DatasourceScriptConfig DataSourceName="C:\mountpoint">|
+    |Microsoft SQL Server|DataSourcename= "Instance\Database" Example:  <DatasourceScriptConfig DataSourceName="MySQLInstance\MySQLDB">|
+    |Microsoft Exchange|DataSourceName="Storage group name" Example: <DatasourceScriptConfig DataSourceName="First Storage Group">|
+    |Windows SharePoint Services|DatasourceName=“SharePoint Farm\SQL Server Name\SQL Instance Name\SharePoint_Config”   Example: <DatasourceScriptConfig DataSourceName="SharePoint Farm\MY-SQL\MYINSTANCE\SharePoint_Config">|
+    |Client Protection|DataSourceName= "DisconnectedClient" Example: <DatasourceScriptConfig DataSourceName="DisconnectedClient">|
+    |SystemState or BMR|DataSourceName="System Protection " Example: <DatasourceScriptConfig DataSourceName="System Protection ">    <--------------------- NOTE THE REQUIRED SPACE.|
+    |Hyper-V Server|DataSourceName = “ComponentID” Example: <DatasourceScriptConfig DataSourceName="44b31766-c87d-416e-b2c0-08fd297a0c8b">|
+
+>[!NOTE]
+>To get the VM ComponentID, run the PowerShell command Get-VM on the Hyper-V Server to list VM names and ID.
+> ```powershell
+> PS C:\> Get-VM  | select-object Name,ID
+> ```
+
+|Name|Id|
+|---|---|
+|Windows2022|44b31766-c87d-416e-b2c0-08fd297a0c8b|
+|Windows10-2|01d9ed67-5c79-4bbf-8f42-0f509b07aeda|
 
 3. Save the *ScriptingConfig.xml* file.
-
 
 > [!NOTE]
 > DPM will suffix an additional Boolean (true/false) parameter to the post-backup script command, indicating the status of the DPM backup job.
