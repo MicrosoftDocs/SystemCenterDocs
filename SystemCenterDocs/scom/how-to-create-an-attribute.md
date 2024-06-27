@@ -5,14 +5,14 @@ description: This article provides information on how to use Create Attribute wi
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
-ms.custom: UpdateFrequency3
+ms.date: 06/19/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create an attribute
+# Create an attribute
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
