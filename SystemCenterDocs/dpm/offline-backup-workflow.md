@@ -133,13 +133,13 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
 
     When you run the command, the utility requests the selection of the Azure Import job that corresponds to the drives that need to be prepared. If only a single import job is associated with the provided staging location, you see a screen like the one that follows.
 
-      :::image type="content" source="./media/offline-backup-workflow/diskprepconsole0_1.png" alt-text="Screenshot shows the Azure disk preparation tool input.":::
+      :::image type="content" source="./media/offline-backup-workflow/disk-prep-console-0_1.png" alt-text="Screenshot shows the Azure disk preparation tool input.":::
 
 1. Enter the drive letter without the trailing colon for the mounted disk that you want to prepare for transfer to Azure.
 1. Provide confirmation for the formatting of the drive when prompted.
 1. You're prompted to sign into your Azure subscription. Provide your credentials.
 
-    :::image type="content" source="./media/offline-backup-workflow/signindiskprep.png" alt-text="Screenshot shows the Azure subscription sign-in process.":::
+    :::image type="content" source="./media/offline-backup-workflow/sign-in-disk-prep.png" alt-text="Screenshot shows the Azure subscription sign-in process.":::
 
     The tool then begins to prepare the disk and copy the backup data. You might need to attach additional disks when prompted by the tool if the provided disk doesn't have sufficient space for the backup data. <br/>
 
