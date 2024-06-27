@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/07/2024
+ms.date: 06/27/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -204,11 +204,9 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 13. Review the **Installation summary** page, and select **Install**.
 
-    The **Installing features** page appears and displays the installation progress.
+[Learn more](#configuration-options-for-the-api-and-console) to configure the API after installation
 
-### Configuration options for the API
-
-
+The **Installing features** page appears and displays the installation progress.
 
 ## Install Orchestration Console
 
@@ -253,6 +251,8 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in Error Reporting, and select **Next**.
 
 11. Review the **Installation summary** page and select **Install**.
+
+[Learn more](#configure-the-api-after-installation) to configure the Console after installation.
 
 The **Installing features** page appears and displays the installation progress.
 
@@ -358,6 +358,18 @@ The properties for a runbook server include an optional description and the acco
 1. In the **Connections**  pane, select the Runbook Servers folder. In the right pane, right-click the runbook server to select **Properties**.  
 
 2. If you want to add or change the **Description** box, enter a description for this runbook server, and select **Finish**.
+
+## Configure your installation
+
+### Enable API logging to file
+
+Toggle the XML attribute `stdoutLogEnabled` to `true` in your `web.config` under `system.WebServer` > `aspNetCore`.
+
+Irrespective of this setting, you can view logs in the **Event Viewer** > **Windows Applications** > **Applications**.
+
+### Change your database settings for Web API
+
+The API is configured using the `web.config` file as mentioned [here](/system-center/orchestrator/how-to-change-the-orchestrator-database#change-the-database-settings-for-the-orchestrator-web-service).
 
 ## Troubleshoot your installation
 
