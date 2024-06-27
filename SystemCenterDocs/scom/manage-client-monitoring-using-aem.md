@@ -4,8 +4,8 @@ description: This article describes how to use agentless exception monitoring in
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
-ms.custom: UpdateFrequency3
+ms.date: 06/19/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -43,7 +43,7 @@ A state view that lists application errors by error group.
 **System error group view**  
 A state view that lists the computers that have an operating system failure.  
 
-## Forwarding client error reports (Client Monitoring)
+## Forward client error reports (Client Monitoring)
 
 The Microsoft Error Reporting (MER) service collects information about how you use Microsoft programs and about some of the issues you might encounter. Microsoft uses this information to improve the products and features you use most often and to help solve issues. Participation in the program is strictly voluntary.  
 

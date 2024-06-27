@@ -1,14 +1,14 @@
 ---
 title: Optionally disable ECL logging for faster connector synchronization
 description: Describes how you can optionally disable Service Manager ECL logging for faster connector synchronization.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/28/2023
+ms.date: 06/20/2024
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.assetid: 805b479a-9312-4039-be44-01dda07086d8
@@ -72,7 +72,7 @@ If you used a registry entry previously to disable ECL logging, the registry val
 
 Use the following procedure to disable ECL logging for connectors.
 
-To disable ECL logging for SCCM and Active Directory connectors, follow these steps:
+### Disable ECL logging for SCCM and Active Directory connectors
 
 > [!TIP]
 > You can read the *ECL logging disable for SCCM and AD connector* status with the `- Get-SCSMClassInstance (Get-SCSMClass -Name "System.GlobalSetting.ConnectorEclLogSettings")` cmdlet in the Service Manager shell. The value of `ConnectorEclLogDisabled` in your output when set to 0 means that all the ECL logs are enabled. The value of `ConnectorEclLogDisabled` in your output when set to 1 means that ECL logs are disabled for SCCM and AD connectors.
@@ -80,7 +80,7 @@ To disable ECL logging for SCCM and Active Directory connectors, follow these st
 1. Open a Service Manager PowerShell command as an administrator on the primary Management Server.
 2. Run the following command in the Service Manager shell:
 
-    ```powershell   
+    ```powershell
     Get-SCSMClassInstance (Get-SCSMClass -Name "System.GlobalSetting.ConnectorEclLogSettings") | %{$_.ConnectorEclLogDisabled = 1 ; $_}  | Update-SCSMClassinstance
     ```
 

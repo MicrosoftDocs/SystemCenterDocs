@@ -5,7 +5,7 @@ description: This article describes how to add an Azure subscription, so that yo
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/28/2023
+ms.date: 06/06/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -50,14 +50,14 @@ Here's what you need to add an Azure subscription in VMM:
 ::: moniker range="sc-vmm-1807"
 
 > [!NOTE]
-> To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create an Azure AD application using the Azure portal and make note of the Directory ID, Application ID, and Key.
+> To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create a Microsoft Entra ID application using the Azure portal and make note of the Directory ID, Application ID, and Key.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-1801"
 
 > [!NOTE]
-> To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create an Azure AD application using the Azure portal and make note of the Directory ID, Application ID, and Key.
+> To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create a Microsoft Entra ID application using the Azure portal and make note of the Directory ID, Application ID, and Key.
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ Here's what you need to add an Azure profile for Azure VM management:
 |--- | ---|
 |**Azure subscription** | You need at least one Azure subscription to add it to the VMM console.|
 |**Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.|
-|**AD Authentication** | To enable management of both Classic and Azure Resource Manager based VMs, the subscription must have Active Directory-based authentication associated with it. <br/><br/> Create an Azure AD application using Azure portal and make a note of the Directory ID, Application ID, and Key. <br/><br/> Assign application to Classic VM contributor and VM contributor roles by using *Subscription – Access Control (IAM) – Add*.|
+|**AD Authentication** | To enable management of both Classic and Azure Resource Manager based VMs, the subscription must have Active Directory-based authentication associated with it. <br/><br/> Create a Microsoft Entra ID application using Azure portal and make a note of the Directory ID, Application ID, and Key. <br/><br/> Assign application to Classic VM contributor and VM contributor roles by using *Subscription – Access Control (IAM) – Add*.|
 
 Here's what you need to create an Azure profile for Azure Update Management:
 

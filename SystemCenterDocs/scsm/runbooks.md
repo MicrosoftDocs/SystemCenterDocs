@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.subservice: service-manager
 ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Use Service Manager runbooks to automate procedures
@@ -52,7 +52,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 > [!IMPORTANT]
 > If you have extended root classes such as service request or release record, then you can map runbook activity parameter to extended properties only if the runbook activity template and service request templates are saved in same management pack where the definition extension is located.
 
-To create a runbook automation activity template, follow these steps:
+To create a runbook automation activity template, do the following:
 
 1. In the Service Manager console, select **Library**.
 
@@ -86,7 +86,7 @@ After you import runbooks from Orchestrator into Service Manager, you can open t
 
 When you view the runbook, you can perform basic actions with the runbook, such as viewing the summary, jobs, instances, and definition of the runbook. You can also start and stop the runbook.
 
-To view a runbook, follow these steps:
+To view a runbook, do the following:
 
 1. In the Service Manager console, select **Library**.
 

@@ -1,0 +1,56 @@
+- name: Overview
+  items:
+  - name: Overview of Service Management Automation
+    href: overview-of-service-management-automation.md
+  - name: Architecture of Service Management Automation
+    href: architecture-of-service-management-automation.md
+  - name: Runbook Execution in Service Management Automation
+    href: runbook-automation.md
+- name: Diagnostics and usage data
+  items:
+  - name: Turn off telemetry in SMA
+    href: turn-off-telemetry.md
+- name: Get started
+  items:
+  - name: What's new in Service Management Automation
+    href: whats-new-in-sma.md
+  - name: Release notes - Service Management Automation
+    href: release-notes-sma.md
+- name: How to
+  items:
+  - name: Deploy
+    items:
+    - name: System requirements - Service Management Automation
+      href: system-requirements-sma.md
+    - name: Deploy Service Management Automation
+      href: deploy.md
+    - name: Upgrade Service Management Automation
+      href: upgrade-sma.md
+  - name: Author Runbooks
+    items:
+    - name: Authoring Automation Runbooks
+      href: authoring-automation-runbooks.md
+    - name: Windows PowerShell Workflow Concepts
+      href: overview-powershell-workflows.md
+    - name: Runbook Output and Messages
+      href: overview-runbook-messages-output.md
+    - name: Child Runbooks in Service Management Automation
+      href: link-runbooks.md
+  - name: Manage Runbooks
+    href: manage-runbooks.md
+  - name: Manage SMA
+    items:
+    - name: Establish trust with Service Provider Foundation
+      href: establish-trust-between-service-management-automation-and-service-provider-foundation.md
+    - name: How to Purge the SMA database
+      href: how-to-purge-the-service-management-automation-database.md
+    - name: How to scale your SMA installation
+      href: scaling-service-management-automation-up-or-down.md
+    - name: Working with Integration Modules
+      href: manage-integration-modules.md
+    - name: Manage Global Assets
+      href: manage-global-assets.md
+  - name: Secure SMA
+    items:
+    - name: Encrypt SMA web service connection
+      href: encrypt-sql-connection-using-ssl.md

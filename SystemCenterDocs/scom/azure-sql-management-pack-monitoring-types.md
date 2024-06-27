@@ -1,24 +1,25 @@
 ---
-ms.assetid: 3711a302-ab02-4bf9-a3ad-c0dbbdf669fb
 title: Monitoring types in Management Pack for Azure SQL Database
-description: This article explains how to configure Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database
+description: Learn how to set up Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database.
 ms.custom: engagement-fy23
-author: epomortseva
+author: FKornilov
 ms.author: v-fkornilov
-manager: evansma
+manager: ebruersan
 ms.date: 05/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Monitoring Types
+# Monitoring types
 
-This article explains monitoring types that are available in Management Pack for Azure SQL Database.
+This article describes the types of monitoring that are available in Management Pack for Azure SQL Database.
 
-## Differences Between Azure REST API and T-SQL Monitoring
+## Azure REST API monitoring vs. T-SQL monitoring
 
-The main difference between [Azure REST API](/rest/api/azure/) monitoring and T-SQL monitoring is that in T-SQL, the entire set of workflows is available, while in Azure REST API, the following workflows are disabled due to API limitations:
+The main difference between [Azure REST API](/rest/api/azure/) monitoring and T-SQL monitoring is that in T-SQL, the entire set of workflows is available for you to use.
+
+In the Azure REST API, the following workflows aren't available due to API limitations:
 
 - Rules
   - Azure SQL DB: DB Transactions Locks Count
@@ -47,277 +48,269 @@ The main difference between [Azure REST API](/rest/api/azure/) monitoring and T-
   - Count of Failed Connection
   - Count of connections blocked by the Firewall
 
-To enable these workflows in Azure REST API, select the **Use T-SQL monitoring** checkbox and run the required T-SQL scripts provided in [Configuring Azure REST API Monitoring](#configuring-azure-rest-api-monitoring).
+To make these workflows available in the Azure REST API, select the **Use T-SQL monitoring** checkbox when you [set up Azure REST API monitoring](#set-up-azure-rest-api-monitoring), and run required T-SQL scripts.
 
->[!NOTE]
-> To connect System Center Operations Manager to Azure resources, your server must have TLS 1.2 enabled. Check protocol status with [TLS 1.2 enforcement for Azure AD Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
+> [!NOTE]
+> To connect Microsoft System Center Operations Manager to Azure resources, your server must have the TLS 1.2 protocol enabled. To learn how to check the protocol status on your server, see [TLS 1.2 enforcement for Microsoft Entra Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
 
-## Configuring Azure REST API Monitoring
+## Set up Azure REST API monitoring
 
 Azure REST API monitoring provides a wide range of monitoring targets.
 
-When using the Azure REST API, the Azure SQL Database Management Pack utilizes an Azure AD application (that is, Service Principal Name) for authentication in Azure AD, which gives access to the Azure Resource Management API. The account that you use must have either the **Owner** role (or higher) or any of the following roles:
+When you use the Azure REST API, the Management Pack for Azure SQL Database uses a Microsoft Entra application (that is, a service principal name) for authentication in Microsoft Entra. The service principal name (SPN) gives access to the Azure Resource Management API. The account that you use must have either the Owner role (or greater) or any of the following roles:
 
-- **Active Directory Administrator**
-- **Service Administrator** or **Co-Administrator**
+- Administrator
+- Service Administrator
+- Co-Administrator
 
-For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+For more information, see [Create a Microsoft Entra application and service principal that can access resources](/entra/identity-platform/howto-create-service-principal-portal).
 
-To begin the monitoring of Azure SQL Databases using the Azure REST API, perform the following steps:
+To monitor Azure SQL Database instances by using the Azure REST API:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
+1. In the Operations Manager console, go to **Authoring** > **Management Pack Templates**. Right-click **Azure SQL Database Monitoring** and select **Add Monitoring Wizard**.
 
-    ![Screenshot showing the REST API monitoring wizard.](./media/azure-sql-management-pack/opening-monitoring-wizard.png)  
+   :::image type="content" source="media/azure-sql-management-pack/opening-monitoring-wizard.png" alt-text="Screenshot that shows selecting the Add Monitoring Wizard link.":::
 
-2. At the **Monitoring Type** step, select **Azure SQL Database Monitoring**, and select **Next**.
+1. On **Monitoring Type**, select **Azure SQL Database Monitoring**, and then select **Next**.
 
-    ![Screenshot showing the Monitoring target.](./media/azure-sql-management-pack/selecting-monitoring-target.png)
+   :::image type="content" source="media/azure-sql-management-pack/selecting-monitoring-target.png" alt-text="Screenshot that shows selecting the Monitoring target.":::
 
-3. At the **General Properties** step, enter a new name and description, and from the **Select destination management pack** dropdown list, select a management pack that you want to use to store the template.  
+1. On **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to use to store the template. Then select **Next**.
 
-    To create a new management pack, select **New**, and follow the instructions of the wizard.
+   To create a new management pack, select **New**, and then follow the instructions in the wizard.
 
-    ![Screenshot showing General properties.](./media/azure-sql-management-pack/configuring-general-properties.png)
+   :::image type="content" source="media/azure-sql-management-pack/configuring-general-properties.png" alt-text="Screenshot that shows General properties.":::
 
-4. At the **Authentication Mode** step, select **Azure Service Principal Name**.
+1. On **Authentication Mode**, select **Azure Service Principal Name**, and then select **Next**.
 
-    ![Screenshot showing Authentication mode.](./media/azure-sql-management-pack/selecting-authentication-mode.png)
+   :::image type="content" source="media/azure-sql-management-pack/selecting-authentication-mode.png" alt-text="Screenshot that shows Authentication mode.":::
 
-5. At the **Azure Endpoints** step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox and modify the default Azure endpoints if required.
+1. On **Azure Endpoints**, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox and modify the default Azure endpoints if necessary. Then select **Next**.
 
-    The default endpoints for creating Azure Service Principal Name are as follows:
+   Here are the default endpoints for creating the Azure SPN:
 
    - Authority URI: `https://login.windows.net`
 
    - Management Service URI: `https://management.azure.com`
 
-     According to [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), should be used the Firewall port 1433. This endpoint is also used for Azure REST API.
+     As described in [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the firewall port should be port 1433. This endpoint is also used for Azure REST API.
 
    - Database Resource URI: `https://database.windows.net`
 
    - Graph API Resource URI: `https://graph.windows.net`
 
-    ![Screenshot showing Azure endpoints.](./media/azure-sql-management-pack/selecting-azure-endpoints.png)
+   :::image type="content" source="media/azure-sql-management-pack/selecting-azure-endpoints.png" alt-text="Screenshot that shows Azure endpoints.":::
 
-6. At the **SPN Configuration** step, choose the SPN configuration:
+1. On **SPN Configuration**, select **Auto-Create SPN**.
 
-   - **Auto-Create SPN**
+   The following list describes the options that you can choose from:
 
-       Select this option if you want Azure Service Principal Name to be created automatically by the Azure SQL MP library using the Azure REST API. With this option selected, a new Run As Account is created with the specified Azure Service Principal Name.
+   - **Auto-Create SPN**: Select this option if you want to create the Azure SPN automatically via the management pack library by using the Azure REST API. When this option is selected, a new Run As account that uses the specified Azure SPN is created.
 
-   - **Use Existing Run As Profile**
+   - **Use Existing Run As Profile**: Select this option if you want to use your own Azure SPN.
 
-       Select this option if you want to use your own Azure Service Principal Name.
+     If you select the **Use an existing Run As profile**, select **Next**, and then select an existing Run As account that's associated with an Azure SPN. This account is used for authentication in Azure Cloud Services.
 
-   - **Enter SPN Manually**
+     :::image type="content" source="media/azure-sql-management-pack/using-existing-run-as-account.png" alt-text="Screenshot that shows selecting an existing Run As account.":::
 
-       Select this option if you've already configured a Run As Profile (for example, in PowerShell) with the appropriate Azure Service Principal Name credentials.
+   - **Enter SPN Manually**: Select this option if you already created a Run As profile (for example, by using PowerShell) that has Azure SPN credentials.
 
-    For any of these options, you can select the **Use T-SQL for monitoring** checkbox to receive additional monitoring information and neutralize Azure Subscription throttling effects. For more information, see [Differences Between Azure REST API and T-SQL Monitoring](#differences-between-azure-rest-api-and-t-sql-monitoring).
+     To register the application and create the SPN manually by using the Azure portal, see [Create a Microsoft Entra application and service principal that can access resources](/entra/identity-platform/howto-create-service-principal-portal).
 
-    ### Auto-Create SPN
+     > [!TIP]
+     > You can skip the web URI redirection. The parameter is not needed for monitoring.
 
-    ![SPN configuration](./media/azure-sql-management-pack/selecting-spn-configuration.png)
+     1. In the Azure portal, on the **Access control (IAM)** pane, assign the Reader role to the SPN for the respective Azure SQL Database server. The role assignment flow is similar to the flow that is described in [Grant a user access to Azure resources by using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal#grant-access).
 
-    If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** window appears. In this window, enter your work, school, or personal Microsoft account credentials, select **Next**, and complete the form.
+        :::image type="content" source="media/azure-sql-management-pack/azure-spn-reader-permission.png" alt-text="Screenshot that shows manual granted SPN permission in the Azure portal.":::
 
-    ![Screenshot showing Sign in to your account.](./media/azure-sql-management-pack/sign-in-account.png)
+     1. On **SPN Configuration**, select the **Enter SPN Manually** option, and then select **Next**. Enter this information for your Azure SPN:
 
-    At this step, you may receive internet security alerts. To solve this, open **Internet Properties**, go to the **Security** tab, and lower the internet zone security level.
+        - **Tenant ID**: The directory (tenant) ID from the SPN overview section.
+        - **Application ID**: The application (client) ID from the SPN overview section.
+        - **Client Secret**: The client secret value for the specific SPN.
 
-    ![Screenshot showing Security level.](./media/azure-sql-management-pack/change-security-level.png)
+        > [!NOTE]
+        > The client secret value is visible only once after you create it. Copy the value to a secure location to use later.
 
-    Upon the successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication information will be displayed.
+        The information is used to create a new Run As account for authentication in Azure Cloud Services.
 
-    >[!TIP]
-    > This information is available only once. Ensure to save this information to a secure location for reuse.
+        :::image type="content" source="media/azure-sql-management-pack/entering-spn-manually.png" alt-text="Screenshot that shows Enter SPN manually.":::
 
-    ![Screenshot showing Authentication information.](./media/azure-sql-management-pack/reviewing-authentication-information.png)
+        If needed, you can create and configure a new Microsoft Entra ID application and Azure SPN by using [Azure PowerShell](/powershell/azure/?preserve-view=true&view=azps-2.8.0). For more information, see [Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 
-    At the **Subscription Permissions** step, select Azure subscriptions to which you want to add the created Azure Service Principal Name.
+        When you create a Run As account on **Enter SPN Manually Status**, review the status, and then select **Next**.
 
-    ![Screenshot showing Subscription permissions.](./media/azure-sql-management-pack/configuring-subscription-permissions.png)
+        :::image type="content" source="media/azure-sql-management-pack/reviewing-spn-status.png" alt-text="Screenshot that shows the SPN status.":::
 
-    ### Use existing Run As Profile
-    
-    To use an existing Run As Profile, at the **SPN Configuration** step, select the **Use Existing Run As Profile** option, select **Next**, and select an existing Run As Account associated with Azure Service Principal Name. This account will be used for authentication in Azure Cloud.
+     1. *Optionally*, on **Server Filter List**, select the filtering mode, which can be either **Exclude** or **Include**. Select the filtering mask type, which can be either **Wildcard** or **Regular Expression**. Enter filtering masks, which should match SQL Server names that you want to exclude from or include in the monitoring list. Then select **Add** > **Next**.
 
-    ![Screenshot showing Existing Run As Account.](./media/azure-sql-management-pack/using-existing-run-as-account.png)
+        The **Wildcard** filtering mask type can contain only a server name. The value can contain only lowercase letters, numbers, and the `-` character, but it can't start with or end with the `\` character, and it can't contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
-   ### Enter SPN manually
+         :::image type="content" source="media/azure-sql-management-pack/configuring-server-include-wildcard-list.png" alt-text="Screenshot that shows the server exclude list wildcard SPN.":::
 
-   Follow the steps to register the application and create SPN manually using the Azure portal to [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+         The **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    >[!TIP]
-    > You can skip the Web URI redirection, this parameter is not needed for monitoring.
+         :::image type="content" source="media/azure-sql-management-pack/configuring-server-exclude-regular-expression-list.png" alt-text="Screenshot that shows the server exclude list regular expression SPN.":::
 
-    Assign the **Reader** role to SPN in the IAM Access pane for the respective Azure SQL DB server in the Azure portal. Role assignment flow is like [Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal#grant-access).
+         If you want to remove an existing mask, select the mask type, and then select **Delete**.  
 
-     ![Screenshot of manual granted SPN permission in the Azure portal.](./media/azure-sql-management-pack/azure-spn-reader-permission.png)
+     1. *Optionally*, on **Database Filter List**, select the filtering mode, which can be either **Exclude** or **Include**. Select the filtering mask type, which can be either **Wildcard** or **Regular Expression**. Enter filtering masks, which should match database names that you want to exclude from or include in the monitoring list. Then select **Add** > **Next**.
 
-    At the **SPN Configuration** step, select the **Enter SPN Manually** option for this case, select **Next**, and provide the required information about your Azure Service Principal Name:
-   - Tenant ID – Directory (tenant) ID from SPN overview section.
-   - Application ID – Application (client) ID from SPN overview section.
-   - Client Secret – Client Secret Value for the specific SPN.
+        The **Wildcard** filtering mask type can't end with `.` or space characters, it can't contain `<`, `>`, `%`, `&`, `:`, `\`, `/`, `?`, or control characters, and it can't have more than 128 characters.
 
-    >[!NOTE]
-    > The Client Secret Value is available only once after creation. Copy this information to a secure location for reuse.
+        :::image type="content" source="media/azure-sql-management-pack/configuring-database-include-wildcard-list.png" alt-text="Screenshot that shows the database exclude list wildcard SPN.":::
 
-    This information will be used to create a new Run As Account for authentication in Azure Cloud.
+        For example, if you select the **Exclude** option and set the *dev*, *test*, *stage*, and *dbnotmon* masks, the monitoring behavior works as described in the following table:
 
-    ![Screenshot showing Enter SPN manually.](./media/azure-sql-management-pack/entering-spn-manually.png)
+        |Database name|Monitored status|
+        |-|-|
+        |dev|Not monitored|
+        |dev_sales|Not monitored|
+        |sales_dev|Monitored|
+        |test|Not monitored|
+        |test_sales|Not monitored|
+        |sales_test|Not monitored|
+        |stage|Not monitored|
+        |stage_dev|Monitored|
+        |dev_stage|Not monitored|
+        |dbnotmon|Not monitored|
+        |dbnotmon_sales|Monitored|
+        |sales_dbnotmon|Monitored|
 
-    If necessary, you can create and configure a new Microsoft Entra ID application and Azure Service Principal Name by using [Azure PowerShell](/powershell/azure/?preserve-view=true&view=azps-2.8.0). For more information, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+       The **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    Once a new Run As Account is created, at the **Enter SPN Manually Status** step, review the status and select **Next**.
+       :::image type="content" source="media/azure-sql-management-pack/configuring-database-exclude-regular-expression-list.png" alt-text="Screenshot that shows the database exclude list regular expression SQL.":::
 
-    ![Screenshot showing SPN status.](./media/azure-sql-management-pack/reviewing-spn-status.png)
+       To remove an existing mask, select the mark, and then select **Delete**.
 
-7. [Optionally] At the **Server Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
+       For more information about any of these options and to learn how to reduce Azure subscription throttling, select the **Use T-SQL for monitoring** checkbox and see [Azure REST API monitoring vs. T-SQL monitoring](#azure-rest-api-monitoring-vs-t-sql-monitoring).
 
-    **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
+       :::image type="content" source="media/azure-sql-management-pack/selecting-spn-configuration.png" alt-text="Screenshot that shows the SPN configuration.":::
 
-    ![Screenshot of the server exclude list wildcard SPN.](./media/azure-sql-management-pack/configuring-server-include-wildcard-list.png)
+       When you select the **Auto-Create SPN** option, the Microsoft Azure sign-in pane appears. Enter your work, school, or personal Microsoft account credentials, and then select **Next** and complete the form.
 
-    **Regular Expression** filtering mask type supports .NET regular expression patterns.
+       :::image type="content" source="media/azure-sql-management-pack/sign-in-account.png" alt-text="Screenshot that shows the pane to sign in to your account.":::
 
-    ![Screenshot of the server exclude list regular expression SPN.](./media/azure-sql-management-pack/configuring-server-exclude-regular-expression-list.png)
+       At this step, an internet security alert might appear. To resolve the issue, go to **Internet Options**, select the **Security** tab, and then set a lower internet zone security level.
 
-    If you want to remove an existing mask, select it and select **Delete**.  
+       :::image type="content" source="media/azure-sql-management-pack/change-security-level.png" alt-text="Screenshot that shows security settings in Internet Options.":::
 
-8. [Optionally] At the **Database Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match database names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
+       When the Microsoft Entra application is successfully created, authentication information appears on **Auto-create SPN Status**.
 
-    **Wildcard** filtering mask type can't end with '.' or ' ' characters, contain '<,>,%,&,:,\\,/,?' or control characters, and can't have more than 128 characters.
+       > [!WARNING]
+       > The authentication information is available only once. Be sure to save this information to a secure location to use it later.
 
-    ![Screenshot of database exclude list wildcard SPN.](./media/azure-sql-management-pack/configuring-database-include-wildcard-list.png)
+       :::image type="content" source="media/azure-sql-management-pack/reviewing-authentication-information.png" alt-text="Screenshot that shows Authentication information.":::
 
-    For example, if you select the **Exclude** option and set the *dev**, *\*test\**, **stageand*, *dbnotmon* masks, the monitoring behavior would be as follows:
+1. On **Subscription Permissions**, select the Azure subscriptions where you want to add the Azure SPN. Then select **Next**.
 
-    |DB Name|Monitored/Not monitored|
-    |-|-|
-    |dev|Not monitored|
-    |dev_sales|Not monitored|
-    |sales_dev|Monitored|
-    |test|Not monitored|
-    |test_sales|Not monitored|
-    |sales_test|Not monitored|
-    |stage|Not monitored|
-    |stage_dev|Monitored|
-    |dev_stage|Not monitored|
-    |dbnotmon|Not monitored|
-    |dbnotmon_sales|Monitored|
-    |sales_dbnotmon|Monitored|
+   :::image type="content" source="media/azure-sql-management-pack/configuring-subscription-permissions.png" alt-text="Screenshot that shows Subscription permissions.":::
 
-    **Regular Expression** filtering mask type supports .NET regular expression patterns.
+1. On **User Management Pool**, select a pool that has management servers, and then select **Next**.
 
-    ![Screenshot of the database exclude list regular expression SQL.](./media/azure-sql-management-pack/configuring-database-exclude-regular-expression-list.png)
+   :::image type="content" source="media/azure-sql-management-pack/selecting-management-pool.png" alt-text="Screenshot that shows the Management pool.":::
 
-    If you want to remove an existing mask, select it and select **Delete**.
+1. On **Summary**, review the connection settings, and then select **Create**.
 
-9. At the **User Management Pool** step, select a pool with management servers and select **Next**.
+   :::image type="content" source="media/azure-sql-management-pack/reviewing-summary.png" alt-text="Screenshot that shows the Summary information.":::
 
-    ![Screenshot of the Management pool.](./media/azure-sql-management-pack/selecting-management-pool.png)
+1. To set up T-SQL monitoring when you use Azure SPN, create a separate user for every monitored database. Grant the user the dbmanager role by running the following queries:
 
-10. At the **Summary** step, review connection settings and select **Create**.
+   ```sql
+   /*Run this on [master] database.
+   Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
+   CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
+   exec sp_addrolemember 'dbmanager', 'ApplicationName';
 
-    ![Screenshot of the Summary information.](./media/azure-sql-management-pack/reviewing-summary.png)
+   /*Run this on all [user] databases.
+   Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
+   CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
+   GRANT VIEW DATABASE STATE TO [ApplicationName];
+   ```
 
-11. To perform T-SQL monitoring when using Azure Service Principal Name, create a separate user for every monitored database and grant this user the **dbmanager** role by executing the following queries:
+   To run these queries in SQL Server Management Studio, connect to the Azure SQL Server instance as Administrator for Microsoft Entra.
 
-    ```SQL
-    /*Run this on [master] database.
-    Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
-    CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
-    exec sp_addrolemember 'dbmanager', 'ApplicationName';
+   After you assign permissions to the Azure SPN on each database, T-SQL monitoring works in REST and T-SQL mode.
 
-    /*Run this on all [user] databases.
-    Replace the 'ApplicationName' parameter with that specified in the Application Name field. See figure above.*/
-    CREATE USER [ApplicationName] FROM EXTERNAL PROVIDER;
-    GRANT VIEW DATABASE STATE TO [ApplicationName];
-    ```
+   For the correct T-SQL monitoring of geo replicas, grant the SQL Administrator right on each replica server.
 
-    To run these queries in SQL Server Management Studio, connect to the Azure SQL Server as **Active Directory Administrator**.
+## Set up T-SQL monitoring
 
-    After you assign permissions to Azure Service Principal Name on each database, T-SQL monitoring should work properly in REST+T-SQL mode.
+T-SQL is intended to monitor specific Azure SQL Database servers. When you select this mode, the monitoring workflows, including discoveries, rules, and monitors, use T-SQL queries in data sources.
 
-    For proper T-SQL monitoring of geo replicas, grant the **SQL Administrator** right on each replica server.
+> [!NOTE]
+> Each workflow data source creates a new SQL connection for every pair of SQL Server credentials (username and password). SQL connections are counted for database transaction units and affect billing. For more information, see [Resource limits for Azure SQL Database and Azure Synapse Analytics servers](/azure/sql-database/sql-database-resource-limits-database-server).
 
-## Configuring T-SQL Monitoring
+To monitor Azure SQL Database instances by using T-SQL queries:
 
-T-SQL is intended for monitoring of specific Azure SQL Database Servers. When choosing this mode, the monitoring workflows, such as discoveries, rules, and monitors use T-SQL queries in datasources.
+1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Templates**. Right-click **Azure SQL Database Monitoring** and select **Add Monitoring Wizard**.
 
->[!NOTE]
->Each workflow datasource creates a new SQL connection for every pair of SQL Server credentials (login\password). SQL connections are counted for database transaction units and affect the bill. For more information, see [Resource limits for Azure SQL Database and Azure Synapse Analytics servers](/azure/sql-database/sql-database-resource-limits-database-server).
+   :::image type="content" source="media/azure-sql-management-pack/opening-monitoring-wizard.png" alt-text="Screenshot that shows the T-SQL monitoring.":::
 
-To begin monitoring of Azure SQL Databases using T-SQL queries, perform the following steps:
+1. On **Select Monitoring Type**, select **Azure SQL Database Monitoring**, and then select **Next**.
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
+   :::image type="content" source="media/azure-sql-management-pack/selecting-monitoring-target.png" alt-text="Screenshot that shows the Azure SQL Database monitoring type.":::
 
-    ![Screenshot of the T-SQL monitoring.](./media/azure-sql-management-pack/opening-monitoring-wizard.png)
+1. On **General Properties**, enter a new name and description. For **Select destination management pack**, select a management pack to store the template. Then select **Next**.
 
-2. At the **Monitoring Type** step, select **Azure SQL Database Monitoring**, and select **Next**.
+   For **Management pack**, to create a new management pack, select **New** and follow the instructions in the wizard.
 
-    ![Screenshot of the Azure SQL monitoring type.](./media/azure-sql-management-pack/selecting-monitoring-target.png)
+   :::image type="content" source="media/azure-sql-management-pack/configuring-general-properties.png" alt-text="Screenshot that shows the General settings.":::
 
-3. At the **General Properties** step, enter a new name and description, and from the **Select destination management pack** dropdown list, select a management pack that you want to use to store the template.  
+1. On **Authentication Mode**, select **SQL Server**, and then select **Next**.
 
-    To create a new management pack, select **New** and follow the instructions of the wizard.
+   :::image type="content" source="media/azure-sql-management-pack/selecting-authentication-sql.png" alt-text="Screenshot that shows the T-SQL authentication mode.":::
 
-    ![Screenshot of the General settings.](./media/azure-sql-management-pack/configuring-general-properties.png)
+1. On **What to Monitor**, select **Add Server**, and then select **Next**.
 
-4. At the **Authentication Mode** step, select **SQL Server**.
+   :::image type="content" source="media/azure-sql-management-pack/adding-servers.png" alt-text="Screenshot that shows the servers to monitor.":::
 
-    ![Screenshot of the T-SQL mode.](./media/azure-sql-management-pack/selecting-authentication-sql.png)
+1. On **Server Configuration**, for **Server Name**, enter the name of the Azure SQL Database server that you want to monitor, select a Run As account that's associated with the SQL Server credentials, and then select **OK**. The [serveradmin](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles) role is required.
 
-5. At the **What to Monitor** step, select **Add Server**.
+   :::image type="content" source="media/azure-sql-management-pack/entering-server-name.png" alt-text="Screenshot that shows the server name.":::
 
-    ![Screenshot of the Servers to monitor.](./media/azure-sql-management-pack/adding-servers.png)
+   If you want to create a new Run As account, select **New**, and then enter a new Run As account name and credentials for the SQL Server instance that you want to monitor.
 
-6. In the **Server Name** field, enter a name of the Azure SQL Database server that you want to monitor, select a Run As Account associated with the SQL Server credentials, and select **OK**. The [serveradmin](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles) role is required.
+   For more information on how to create a new SQL Server authentication login, see [Authorize database access to SQL Database, SQL Managed Instance, and Azure Synapse Analytics](/azure/sql-database/sql-database-manage-logins).
 
-    ![Screenshot of the Server name.](./media/azure-sql-management-pack/entering-server-name.png)
+   Select **Next**.
 
-    If you want to create a new Run As Account, select **New** and enter a new Run As Account name and credentials for the SQL server that you want to monitor.
+1. *Optionally*. on **Database Filter List**, select the filtering mode, which can be either **Exclude** or **Include**. Select a filtering mask type, which can be either **Wildcard** or **Regular Expression**. Enter filtering masks, which should match database names that you want to exclude from or include in the monitoring list. Select **Add**, and then select **Next**.
 
-    For more information on how to create a new SQL Server authentication login, see [Authorize database access to SQL Database, SQL Managed Instance, and Azure Synapse Analytics](/azure/sql-database/sql-database-manage-logins).
+   A **Wildcard** filtering mask type can't end with `.` or space characters, can't contain `<`, `>`, `%`, `&`, `:`, `\`, `/`, `?`, or control characters, and it can't have more than 128 characters.
 
-7. Select **Next**.
+   :::image type="content" source="media/azure-sql-management-pack/configuring-database-include-wildcard-list-manual.png" alt-text="Screenshot that shows the Database include list wildcard SQL manual template.":::
 
-8. [Optionally] At the **Database Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match database names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
+   For example, if you select the **Exclude** option and set the *dev*, *test*, *stage*, and *dbnotmon* masks, the monitoring behavior works as described in the following table:
 
-    **Wildcard** filtering mask type can't end with '.' or ' ' characters, contain '<,>,%,&,:,\\,/,?' or control characters, and can't have more than 128 characters.
+   |Database name|Monitored status|
+   |-|-|
+   |dev|Not monitored|
+   |dev_sales|Not monitored|
+   |sales_dev|Monitored|
+   |test|Not monitored|
+   |test_sales|Not monitored|
+   |sales_test|Not monitored|
+   |stage|Not monitored|
+   |stage_dev|Monitored|
+   |dev_stage|Not monitored|
+   |dbnotmon|Not monitored|
+   |dbnotmon_sales|Monitored|
+   |sales_dbnotmon|Monitored|
 
-    ![Screenshot of the Database exclude list wildcard SQL manual template.](./media/azure-sql-management-pack/configuring-database-include-wildcard-list-manual.png)
+   The **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    For example, if you select the **Exclude** option and set the *dev**, *\*test\**, **stageand*, *dbnotmon* masks, the monitoring behavior would be as follows:
+   :::image type="content" source="media/azure-sql-management-pack/configuring-database-exclude-regular-expression-list-manual.png" alt-text="Screenshot that shows the Database exclude list regular expression manual template.":::
 
-    |DB Name|Monitored/Not monitored|
-    |-|-|
-    |dev|Not monitored|
-    |dev_sales|Not monitored|
-    |sales_dev|Monitored|
-    |test|Not monitored|
-    |test_sales|Not monitored|
-    |sales_test|Not monitored|
-    |stage|Not monitored|
-    |stage_dev|Monitored|
-    |dev_stage|Not monitored|
-    |dbnotmon|Not monitored|
-    |dbnotmon_sales|Monitored|
-    |sales_dbnotmon|Monitored|
+   If you want to remove an existing mask, select the mask name, and then select **Delete**.
 
-    **Regular Expression** filtering mask type supports .NET regular expression patterns.
+1. On **User Management Pool**, select a pool that has management servers, and then select **Next**.
 
-    ![Screenshot of the Database exclude list regular expression manual template.](./media/azure-sql-management-pack/configuring-database-exclude-regular-expression-list-manual.png)
+   :::image type="content" source="media/azure-sql-management-pack/sql-management-pool.png" alt-text="Screenshot that shows the T-SQL management pool.":::
 
-    If you want to remove an existing mask, select it and select **Delete**.
+1. On **Summary**, review the connection settings, and then select **Create**.
 
-9. At the **User Management Pool** step, select a pool with management servers and select **Next**.
+## Related content
 
-    ![Screenshot of the T-SQL management pool.](./media/azure-sql-management-pack/sql-management-pool.png)
-
-10. At the **Summary** step, review connection settings and select **Create**.
-
-## See also
-
-- [Custom Query-Based Monitoring](azure-sql-management-pack-custom-query-monitoring.md)
+- [Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md)

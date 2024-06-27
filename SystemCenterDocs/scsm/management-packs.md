@@ -7,10 +7,10 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.subservice: service-manager
 ms.assetid: 3c42925f-74f3-4c18-934e-8d1cd2edaa3b
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Use management packs to add functionality to Service Manager
@@ -41,8 +41,6 @@ For more information about management packs key concepts, management packs best 
 You can use the following procedures to create a management pack file in Service Manager. After you create the management pack file, you can use it to store objects that you create.
 
 For more information about how to create and customize management packs, see [Management Packs: Working with Management Packs](/previous-versions/system-center/system-center-2012-R2/hh519661(v=sc.12)).
-
-To create a management pack file, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 
@@ -139,7 +137,7 @@ By default, Service Manager doesn't automatically import the System Center Alert
 
 Instead, you must manually create a data source for Operations Manager. For more information, see [How to Register the System Center Data Warehouse to Operations Manager](register-sources-to-dw.md). Afterward, use the following procedure to import the management pack.
 
-To import the Operations Manager alert cube management pack, follow these steps:
+To import the Operations Manager alert cube management pack, do the following:
 
 1. In the Service Manager console, select **Data Warehouse**, select **Management Packs**, and confirm that **System Center Datawarehouse Operations Manager Library** is listed.
 
