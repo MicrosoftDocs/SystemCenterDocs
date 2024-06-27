@@ -256,4 +256,4 @@ After the upgrade, reconnect VMM to Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate and avoid certificate errors.
+If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is to renew the PXE server certificate and avoid certificate errors.

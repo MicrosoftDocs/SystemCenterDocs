@@ -250,7 +250,7 @@ All the virtual machine templates that were upgraded need to correctly specify t
 
 ## Renew certificates for PXE servers
 
-If you have a PXE server in the VMM fabric, you need to remove it from the fabric and then add it again. This is in order to renew the PXE server certificate and avoid certificate errors.
+If you have a PXE server in the VMM fabric, you need to remove it from the fabric and then add it again. This is to renew the PXE server certificate and avoid certificate errors.
 
 ## Update driver packages
 

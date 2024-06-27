@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/09/2023
+ms.date: 06/28/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -20,7 +20,7 @@ ms.custom: UpdateFrequency.5
 
 ::: moniker-end
 
-This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
+This article helps you to plan all the elements required for a successful System Center Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
 
 For more information on the supported versions of hardware and software, see the system requirements article for the version you install.
 
@@ -66,7 +66,7 @@ If the VMM user installing VMM, or running VMM setup, doesn't have permissions t
 If you can't do this, you can also register the SPN during VMM installation. A domain administrator can provide the SPN write permissions to VMM service user or setup user. 
 
 > [!NOTE]
-> This approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName, with no restrictions. 
+> This approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName with no restrictions.
 
 Hence, the delegated user should be highly trusted, and the account credentials must be kept secure. To do this:
 

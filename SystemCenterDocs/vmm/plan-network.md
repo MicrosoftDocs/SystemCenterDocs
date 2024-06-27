@@ -5,7 +5,7 @@ description: This article provides information about preparing the VMM network f
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/30/2023
+ms.date: 06/28/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,7 +21,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 ::: moniker-end
 
-This article describes how to plan your networking fabric in System Center - Virtual Machine Manager (VMM).
+This article describes how to plan your networking fabric in System Center Virtual Machine Manager (VMM).
 
 ## Networking components
 
@@ -45,7 +45,7 @@ Here's what you need to plan:
 
 1. **Automation creation**: Decide whether you want to let VMM create logical networks. VMM will automatically create a logical network each time you add a virtualization host. VMM doesn't create network sites in the automatically created logical network. You can turn off this option in **Settings** > **General** > **Network Settings** and clear **Automatic creation of logical networks**.
 2. **Logical network capacity**: If you're going to create logical networks manually, figure out what you'll need to represent your physical network topology. For example, if you need a management network and a network used by VMs, you should create two logical networks.
-3. **Logical network types**: Figure out the type of logical network you need. You'll configure VM networks on top of logical networks and those VM networks can provide network virtualization with the ability to create multiple virtual networks on a shared physical networks, or VM networks can provide isolation with VLANS and PVLANS. When you configure the logical network, you need to indicate the type of network you need.
+3. **Logical network types**: Figure out the type of logical network you need. You'll configure VM networks on top of logical networks and those VM networks can provide network virtualization with the ability to create multiple virtual networks on shared physical networks, or VM networks can provide isolation with VLANS and PVLANS. When you configure the logical network, you need to indicate the type of network you need.
 4. **Network sites**: Determine how many network sites you need in the logical network. You could plan around host groups and host locations. For example, a Seattle host group and a New York host group. You don't need network sites if you don't have VLANs and you're using DHCP to allocate IP addresses.
 5. **VLANs/subnets**: Figure out the VLANs and IP subnets you need in the logical network. These will mirror what you have in your physical network topology.
 6. **IP addressing**: If you're using static IP address assignment, determine which logical networks need static address pools.
@@ -65,7 +65,7 @@ Use the following table to plan for the logical networks, VM networks, and IP ad
 |-------------------------------|---------------------------------------------------------|
 | Logical networks already created by default by VMM|When you add a Hyper-V host to VMM, logical networks can be created by default, based on DNS suffixes. |
 | How many logical networks you need, and the purpose of each|Plan to create logical networks to represent the network topology for your hosts. For example, if you need a management network, a network used for cluster heartbeats, and a network used by virtual machines, create a logical network for each.|
-| Categories that your logical networks fall into|Review the purposes of your logical networks, and categorize them:<br /><br />-   **No isolation**: For example, a cluster-heartbeat network for a host cluster.<br />-   **VLAN**: Isolation provided by your VLANs.<br />-   **Virtualized**: Provides a foundation for Hyper-V network virtualization.<br />-   **External**: Managed through a network manager (vendor network-management console or virtual switch extension manager) outside of VM. <br />-   **IPAM**: Managed through an IP Address Management (IPAM) server. |
+| Categories that your logical networks fall into|Review the purposes of your logical networks and categorize them:<br /><br />-   **No isolation**: For example, a cluster-heartbeat network for a host cluster.<br />-   **VLAN**: Isolation provided by your VLANs.<br />-   **Virtualized**: Provides a foundation for Hyper-V network virtualization.<br />-   **External**: Managed through a network manager (vendor network-management console or virtual switch extension manager) outside of VM. <br />-   **IPAM**: Managed through an IP Address Management (IPAM) server. |
 | How many network sites are needed in each logical network|One common way to plan network sites is around host groups and host locations. For example, for a **Seattle** host group and a **New York** host group, if you had a MANAGEMENT logical network, you might create two network sites called **MANAGEMENT - Seattle** and **MANAGEMENT - New York**. |
 | Which VLANs and/or IP subnets are needed in each network site|The VLANs and IP subnets you assign should match your topology. |
 | Which logical networks (or specifically, which network sites) will need IP address pools|Determine which logical networks will use static IP addressing or load balancing, and which logical networks will be the foundation for network virtualization. For these logical networks, plan for IP address pools. |
@@ -74,7 +74,7 @@ Use the following table to plan for the logical networks, VM networks, and IP ad
 
 In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you've at least one logical network for deploying virtual machines and services. No network sites are created automatically.
 
-To illustrate how these settings work, suppose that you haven't changed the settings and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network, VMM also creates a VM network that is configured with **no isolation**. For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named **corp**, and on it, a VM network named “corp” that is configured with no isolation.
+To illustrate how these settings work, suppose that you haven't changed the settings and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network, VMM also creates a VM network that is configured with **no isolation**. For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named **corp**, and on it, a VM network named **corp** that is configured with no isolation.
 
 ## Guidelines for network sites: VLAN and IP subnet settings
 The main guideline specifying VLANs and IP subnets for network sites is to reflect your network topology. For details, see the following table.
@@ -100,7 +100,7 @@ The following table provides detailed guidelines. Additional information about I
 
 |Purpose of logical network|Guideline for creating IP address pools for that logical network, or for VM networks built on that logical network|
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|**Static IP**: Logical network with **no isolation**, and requiring static IP addressing. For example, a network that supports host cluster nodes|Create one or more IP address pools for the logical network.<br /><br />For a logical network with **no isolation**, if you create a VM network on the logical network, any IP address pools will automatically become available on the VM network. In other words, the VM network will give direct access to the logical network.|
+|**Static IP**: Logical network with **no isolation** and requiring static IP addressing. For example, a network that supports host cluster nodes|Create one or more IP address pools for the logical network.<br /><br />For a logical network with **no isolation**, if you create a VM network on the logical network, any IP address pools will automatically become available on the VM network. In other words, the VM network will give direct access to the logical network.|
 |**VLANs**: Logical network for VLAN-based independent networks using static IP addressing (rather than DHCP)|Create IP address pools on the logical network—one IP address pool for each VLAN where static IP addressing will be used.<br /><br />Later, when you create the VM networks that represent the VLANs, the IP address pools will automatically become available on those VM networks.|
 |**Network virtualization**: Logical network that will be the foundation for VM networks using network virtualization|Create IP address pools on the logical network that provides the foundation for the VM networks. Later, when you create the VM networks, you'll also create IP address pools on them (and see the important note after this table). If you use DHCP on the VM networks, VMM will respond to a DHCP request with an address from an IP address pool.<br /><br />The process of creating an IP address pool for a VM network is similar to the process of creating an IP address pool for a logical network.|
 |**Load balancing**: Logical network that will be the foundation for a VM network, where you'll use load balancing in a **service tier** (part of a set of virtual machines deployed together as a VMM **service**)|Create a static IP address pool on the VM network, and in it, define a reserved range of IP addresses. When you use VMM to deploy a load-balanced service tier that uses the VM network, VMM uses the reserved range of IP addresses to assign virtual IP (VIP) addresses to the load balancer.|
@@ -113,7 +113,7 @@ The following table provides detailed guidelines. Additional information about I
 >
 > VMM provides static MAC address pools by default, but you can customize the pools.
 
--   When you create a static IP address pool, you can configure associated information, such as default gateways, Domain Name System (DNS) servers, DNS suffixes, and Windows Internet Name Service (WINS) servers. All of these settings are optional.
+-   When you create a static IP address pool, you can configure associated information, such as default gateways, Domain Name System (DNS) servers, DNS suffixes, and Windows Internet Name Service (WINS) servers. All these settings are optional.
 
 -   IP address pools support both IPv4 and IPv6 addresses. However, you can't mix IPv4 and IPv6 addresses in the same IP address pool.
 
