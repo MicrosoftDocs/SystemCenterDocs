@@ -5,15 +5,15 @@ description: This article explains how to configure automatic monitoring templat
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 04/02/2024
+ms.date: 06/28/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Automatic monitoring template
+# Automatic monitoring template with Service Principal Name
 
-Automatic monitoring template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
+Automatic monitoring template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically. This article describes the automatic monitoring template using Service Principal Name (SPN).
 
 ## Add Monitoring Wizard and create a destination management pack
 
