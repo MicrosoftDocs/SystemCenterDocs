@@ -65,7 +65,7 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 
     For the *DataSourceName* attribute, use one the following:
 
-    | | DataSourceName attribute |
+    | DataSourceName | Attribute |
     |---|---|
     |Volume or file share data sources|DataSourceName = “volume_letter” \<br\>Example :  \<DatasourceScriptConfig DataSourceName="C:"\>   - Do not use backslash `\` after drive letter.|
     |Volume Mountpoints|DataSourceName=” Volume\mountpoint_name” \<br\>Example: \<DatasourceScriptConfig DataSourceName="C:\mountpoint"\>|
@@ -73,7 +73,7 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
     |Microsoft Exchange|DataSourceName="Storage group name" \<br\>Example: \<DatasourceScriptConfig DataSourceName="First Storage Group"\>|
     |Windows SharePoint Services|DatasourceName=“SharePoint Farm\SQL Server Name\SQL Instance Name\SharePoint_Config”   \<br\>Example: \<DatasourceScriptConfig DataSourceName="SharePoint Farm\MY-SQL\MYINSTANCE\SharePoint_Config"\>|
     |Client Protection|DataSourceName= "DisconnectedClient" \<br\>Example: \<DatasourceScriptConfig DataSourceName="DisconnectedClient"\>|
-    |SystemState or BMR|DataSourceName="System Protection " \<br\>Example: \<DatasourceScriptConfig DataSourceName="System Protection "\>    <--------------------- NOTE THE REQUIRED SPACE.|
+    |SystemState or BMR|DataSourceName="System Protection " \<br\>Example: \<DatasourceScriptConfig DataSourceName="System Protection "\> |
     |Hyper-V Server|DataSourceName = “ComponentID” \<br\>Example: \<DatasourceScriptConfig DataSourceName="44b31766-c87d-416e-b2c0-08fd297a0c8b"\>|
 
 >[!NOTE]
@@ -81,11 +81,10 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 > ```powershell
 > PS C:\> Get-VM  | select-object Name,ID
 > ```
-
-| Name | Id |
-| --- | --- |
-| Windows2022 | 44b31766-c87d-416e-b2c0-08fd297a0c8b |
-| Windows10-2 | 01d9ed67-5c79-4bbf-8f42-0f509b07aeda |
+>| Name | Id |
+>| --- | --- |
+>| Windows2022 | 44b31766-c87d-416e-b2c0-08fd297a0c8b |
+>| Windows10-2 | 01d9ed67-5c79-4bbf-8f42-0f509b07aeda |
 
 3. Save the *ScriptingConfig.xml* file.
 

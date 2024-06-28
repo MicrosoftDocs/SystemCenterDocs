@@ -72,7 +72,7 @@ To provide quick recovery of application data, DPM must create an express full b
 2. Select **Optimize performance** and on the **Express Full Backup** tab, select the available times for the express full backups and select **Add**.
    Select the days of the week for the express full backups.
 
-## Optimize Client Computer Performance
+## Optimize client computer performance
 
 On some client computers, you may notice the computer running slow when a backup is in progress. You can improve the client computer’s responsiveness by adding the following registry setting.
 The *ClientProtection* key and *WaitInMSPerRequestForClientRead* value aren't present by default, you must create them.
