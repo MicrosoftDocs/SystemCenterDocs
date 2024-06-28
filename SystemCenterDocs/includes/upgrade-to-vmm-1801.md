@@ -88,7 +88,7 @@ Use the following procedures:
 3. In **Product registration information**, provide the appropriate information, and then select **Next**. If you don't enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
 4. In **Please read this license agreement**, review the license agreement, select the <strong>I have read, understood, and agree with the terms of the license agreement **check box, and then select **Next</strong>.
 5. In **Usage and Connectivity Data**, select either of the options, and then select **Next**.
-6. If **Microsoft Update** page appears, select whether you want to use Microsoft Update and select **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
+6. If **Microsoft Update** page appears, select whether you want to use Microsoft Update and select **Next**. If you have already chosen to use Microsoft Update on this computer, this page won't appear.
 7. In **Installation location**, use the default path or enter a different installation path for the VMM program files, and then select **Next**.
 8. In **Database configuration**:
   -   [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
@@ -225,7 +225,7 @@ Before you upgrade, collect information about the VMM database:
 
 1. Take a backup of the highly available VMM database from the active node of the existing SQL cluster.
 2. Note the VMM role name to use when reinstalling the VMM server role. Uninstall VMM server from existing VMM cluster nodes with the retain database option.
-When uninstalling VMM server from the last node, you may get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
+When uninstalling VMM server from the last node, you can get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
 3. Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
 4. While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to the new SQL Cluster.
 
@@ -253,4 +253,4 @@ After the upgrade, reconnect VMM to Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.
+If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.
