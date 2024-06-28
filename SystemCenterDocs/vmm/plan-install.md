@@ -78,7 +78,7 @@ When you install VMM with this user account, SPN will be registered.
 
 ## VMM management server
 
-- You can't run the VMM management server on Nano server (applicable to releases prior to 2019).
+- You can't run the VMM management server on Nano server (applicable to Windows Server releases prior to 2019).
 - The management server computer name can't exceed 15 characters.
 - Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V.
 - You can install the VMM management server on a VM. If you do, and you use the Dynamic Memory feature of Hyper-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes (MB).
@@ -101,7 +101,7 @@ When you install VMM with this user account, SPN will be registered.
 - The SQL Server’s computer name can't exceed 15 characters in length.
 - If the VMM management server and the SQL Server computer aren't members of the same Active Directory domain, then a two-way trust must exist between the two domains.
 - When you install SQL Server, select the **Database Engine Services** and **Management Tools - Complete** features.
-- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Ensure that no jobs are running when you perform the upgrade, or jobs may fail and may need to be restarted manually.
+- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Ensure that no jobs are running when you perform the upgrade, or jobs can fail and need to be restarted manually.
 - For the VMM database, for better performance, don't store database files on the disk that is used for the operating system.
 - If you're using Software Defined Networking (SDN) in VMM, then all networking information is stored in the VMM database. Because of this, you might want to consider high availability for the VMM database, using the following guidelines:
   - Failover clustering is supported and is the recommended configuration for availability within a single geographical area or datacenter. [Read more](/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server).

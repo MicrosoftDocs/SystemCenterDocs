@@ -59,7 +59,7 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ## Plan a highly available VMM management server
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
-- Before you start, you'll need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
+- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 
@@ -103,7 +103,7 @@ You can create highly available library servers to ensure that file-based resour
 - The library server can't be a scale-out file server (SOFS). It must be on a failover cluster that doesn't use the SOFS cluster role. This is because when you deploy the library, the VMM agent is deployed on the host. For SOFS, there are multiple hosts in a cluster provides shares, which makes it complicated for agent deployment. When you have a standalone or clustered library server, you can use storage on SOFS by creating shares on it.
 - You can deploy the library shares on a cluster with physical nodes or a guest cluster.
 - If you want to add clustered storage when you create the cluster, ensure that all the computers can access the storage.
-- If you want to deploy a distributed VMM library in different datacenters, you'll need to set up a scheduled copy between the two library shares. No replication is available.
+- If you want to deploy a distributed VMM library in different datacenters, you need to set up a scheduled copy between the two library shares. No replication is available.
 
 ## Next steps
 

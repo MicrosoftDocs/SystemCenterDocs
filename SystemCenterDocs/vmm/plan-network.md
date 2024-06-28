@@ -54,7 +54,7 @@ Here's what you need to do:
 
 1. Identify baseline logical networks: Identify a set of initial logical networks that mirror the physical networks in your environment.
 2. Identify additional logical networks for specific requirements: Define logical networks with  specific purpose or perform a particular function within your environment. One of the benefits of logical networks is that you can separate computer and network services with different business purposes without needing to change your physical infrastructure.
-3. Determine isolation requirements: Identify which logical networks need to be isolated and how that isolation will be enforced, either through physical separation, VLAN/PVLAN, or network virtualization. Remember, that you need isolation if the logical network is going to be used by multiple tenants. If you've a single tenant or customer, isolation is optional. In turn, if you don't need isolation you only need a single VM network that maps to the logical network.
+3. Determine isolation requirements: Identify which logical networks need to be isolated and how that isolation will be enforced, either through physical separation, VLAN/PVLAN, or network virtualization. Remember, that you need isolation if the logical network is going to be used by multiple tenants. If you have a single tenant or customer, isolation is optional. In turn, if you don't need isolation you only need a single VM network that maps to the logical network.
 4. Determine the network sites, VLANs, PVLANs, and IP pools that need to be defined for each logical network you've identified.
 5. Figure out which logical network will associate with which virtualization hosts.
 
@@ -72,7 +72,7 @@ Use the following table to plan for the logical networks, VM networks, and IP ad
 
 ## Logical networks created by default
 
-In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you've at least one logical network for deploying virtual machines and services. No network sites are created automatically.
+In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you have at least one logical network for deploying virtual machines and services. No network sites are created automatically.
 
 To illustrate how these settings work, suppose that you haven't changed the settings and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network, VMM also creates a VM network that is configured with **no isolation**. For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named **corp**, and on it, a VM network named **corp** that is configured with no isolation.
 

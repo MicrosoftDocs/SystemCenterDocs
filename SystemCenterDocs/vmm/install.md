@@ -132,7 +132,7 @@ Each of these files contains key/value pairs with default values. These entries 
 | LibraryShareName | Name of the file share to be used or created. | MSSCVMMLibrary |
 | LibrarySharePath | Location of the existing file share or the new file share to be created. | C:\ProgramData\Virtual Machine Manager Library Files |
 | LibraryShareDescription | Description of the share. | Virtual Machine Manager Library Files |
-| SQMOptIn | 0: Don't opt in for **Diagnostic and Usage Data**.<br/><br/> 1: Opt in for **Diagnostic and Usage Data** | 1 |
+| SQMOptIn | 0: Don't opt in for **Diagnostic and Usage Data**.<br/><br/> 1: Opt in for **Diagnostic and Usage Data**. | 1 |
 | MUOptIn | 0: Don't opt in to Microsoft Update.<br/><br/> 1: Opt in to Microsoft Update. | 0 |
 | VmmServiceLocalAccount | 0: Use a domain account for the VMM service (scvmmservice).<br/><br/> 1: Use the Local System account for the VMM service.<br/><br/> To use a domain account, when you run setup.exe, provide values for the VMMServiceDomain, VMMServiceUserName, and VMMServiceUserPassword parameters. | 0 |
 | TopContainerName | Container for Distributed Key Management (DKM); for example, *CN=DKM,DC=contoso,DC=com*. | VMMServer |
