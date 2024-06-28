@@ -25,7 +25,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 ## Before you start
 
 - Review the system requirements and [planning information](plan-install.md). Learn about [system requirements](system-requirements.md).
-- Ensure that you've at least local admin permissions on the computer before you run the setup.
+- Ensure that you have at least local admin permissions on the computer before you run the setup.
 - The service account should be an administrator on the VMM server.
 
 >[!NOTE]
@@ -64,7 +64,7 @@ This article describes how to install the System Center Virtual Machine Manager 
     - If you're using a remote SQL instance, specify the name of the computer that's running the SQL Server. 
     - If you're installing the VMM management server on the same computer that's running the SQL Server, then in the **Server name** box, either enter the name of the computer (for example, **vmmserver01**) or **localhost**. 
     - If the SQL Server is in a cluster, enter the cluster name.
-1. Don't specify a **Port** value if you don't have a remote instance of the SQL Server or if you've a remote SQL Server that uses the default port (1433).
+1. Don't specify a **Port** value if you don't have a remote instance of the SQL Server or if you have a remote SQL Server that uses the default port (1433).
 1. Specify the SQL Server instance name and whether to use an existing or new database. You need an account with permissions to connect to the instance.
 1. On the **Configure service account and distributed key management** page, </br>
      Specify the account that the VMM service uses. You can't change the identity of the VMM service account after installation. Learn more about distributed key management [here](plan-install.md#distributed-key-management).
