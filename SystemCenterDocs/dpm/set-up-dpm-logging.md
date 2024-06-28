@@ -27,6 +27,8 @@ System Center Data Protection Manager (DPM) logs activity in log files (\*.errlo
 
      `Reg query "HKLM\Software\Microsoft\Microsoft Data Protection Manager\Setup" /v Installpath`
 
+     :::image type="content" source="media/set-up-dpm-logging/cmd.png" alt-text="Screenshot of command prompt.":::
+
      Based on the above output, the logs will be in the following locations:
          
      - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPMLogs*.
