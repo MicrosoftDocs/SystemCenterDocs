@@ -33,8 +33,8 @@ This article covers new functionality and improvements in Management Pack for Az
 - Added support for selecting a tenant in the 'Entra ID Tenant' monitoring wizard step
 - Added support for [enabling debug logging](managed-instance-management-pack-enable-debugging.md) in Windows Event Log
 - Added new [Operations Manager console task](managed-instance-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Management Server
-- Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression and wildcards for include and exclude from the monitoring
-- Added support for manually setting the expiration date for the application client secret in the [Automatic Monitoring Template wizard step](managed-instance-management-pack-automatic-monitoring.md#auto-create-spn)
+- Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring-spn.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression and wildcards for include and exclude from the monitoring
+- Added support for manually setting the expiration date for the application client secret in the [Automatic Monitoring Template wizard step](managed-instance-management-pack-automatic-monitoring-spn.md#auto-create-spn)
 - Updated memory and space monitoring workflows to apply four significant digit roundings in all the values
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
   - improved keyboard navigation

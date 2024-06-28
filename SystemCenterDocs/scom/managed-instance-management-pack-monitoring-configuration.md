@@ -19,7 +19,7 @@ This section explains monitoring configurations in Management Pack for Azure SQL
 
 Management Pack for Azure SQL Managed Instance has two monitoring templates for monitoring of Azure SQL Managed Instance:
 
-- [Azure SQL MI – Automatic](managed-instance-management-pack-automatic-monitoring.md)
+- [Azure SQL MI – Automatic](managed-instance-management-pack-automatic-monitoring-spn.md)
 
     This template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
 
