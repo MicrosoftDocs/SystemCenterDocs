@@ -204,7 +204,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 13. Review the **Installation summary** page, and select **Install**.
 
-[Learn more](#configuration-options-for-the-api-and-console) to configure the API after installation
+[Learn](#configuration-options-for-the-api-and-console) how to configure the API after installation
 
 The **Installing features** page appears and displays the installation progress.
 
@@ -252,7 +252,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 11. Review the **Installation summary** page and select **Install**.
 
-[Learn more](#configuration-options-for-the-api-and-console) to configure the Console after installation.
+[Learn](#configuration-options-for-the-api-and-console) how to configure the Console after installation.
 
 The **Installing features** page appears and displays the installation progress.
 
@@ -374,17 +374,6 @@ The API is configured using the `web.config` file as mentioned [here](/system-ce
 ## Troubleshoot your installation
 
 The following information provides additional instructions and caveats that you can use during the installation to resolve problems you might experience.  
-
-### Configuration options for the API and console
-
-#### Enable API logging to file
-
-Toggle the XML attribute `stdoutLogEnabled` to `true` in your `web.config` under `system.WebServer` > `aspNetCore`.
-
-Irrespective of this setting, you can view logs in the **Event Viewer** > **Windows Applications** > **Applications**.
-
-#### Configure the database connection
-
 
 ### Orchestrator log files  
 If you experience problems during installation, installation log files are located in the folder **C:\\Users\\%USERNAME%\\AppData\\Local\\SCO\\LOGS**.  
