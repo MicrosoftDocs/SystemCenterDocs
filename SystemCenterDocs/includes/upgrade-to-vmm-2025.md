@@ -5,7 +5,7 @@ description: include file to provide information about how to upgrade VMM server
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 06/28/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,6 +15,10 @@ ms.subservice: virtual-machine-manager
 
 The following sections provide information about how to upgrade to VMM 2025. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
+> [!NOTE]
+> - You can upgrade to VMM 2025 from VMM 2022; upgrade from 2019 and 2016 isn't supported.
+> - During VMM Installation, ensure that SQL Database isn't part of any Availability Group.
+
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2022.
@@ -22,7 +26,7 @@ The following sections provide information about how to upgrade to VMM 2025. The
 - Ensure that you're running a [supported version of SQL Server](../vmm/system-requirements.md).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade, you need to redeploy.
-	- Verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 2025.
+	- Verify Hyper-V host support for VMM 2025.
 
 ## Before you start
 
@@ -62,7 +66,7 @@ If you're running more than one System Center components, they should be upgrade
 >[!NOTE]
 > When you're upgrading a standalone VMM server, we recommend that you install VMM 2025 on the same server that had VMM 2022.
 
-If you're using Distributed Key Management, you may choose to install VMM 2022 on a different server.
+If you're using Distributed Key Management, you may choose to install VMM 2025 on a different server.
 
 Use the following procedures:
 
@@ -72,8 +76,8 @@ Use the following procedures:
 ### Back up and upgrade OS
 1. Back up and retain the VMM database.
 2. [Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and the console.
-3. Upgrade the management OS to Windows Server 2022.
-4. Install Windows 11 or Windows Server 2022 version of [ADK](/windows-hardware/get-started/adk-install).
+3. Upgrade the management OS to Windows Server 2025.
+4. Install Windows 11 or Windows Server 2025 version of [ADK](/windows-hardware/get-started/adk-install).
 
 #### Uninstall the VMM
 1. Go to **Control Panel** > **Programs** > **Program and Features**, select **Virtual Machine Manager** and select **Uninstall**.
@@ -145,8 +149,8 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 1. Back up and retain the VMM database.
 2. [Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
-3. On the passive VMM node, upgrade the management OS to Windows server 2022.
-4. Upgrade to the Windows 11 or Windows Server 2022 version of the [ADK](/windows-hardware/get-started/adk-install).
+3. On the passive VMM node, upgrade the management OS to Windows Server 2025.
+4. Upgrade to the Windows 11 or Windows Server 2025 version of the [ADK](/windows-hardware/get-started/adk-install).
 5. Install VMM 2025 on the passive node by using the following steps:
   -	 In the main setup page, select **Install**.
   -  In **Select features to install**, select **VMM management server** and then select **Next**. The VMM console will be automatically installed.
@@ -165,8 +169,8 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 **Follow these steps**:
 
 1. Back up and retain the VMM database.
-2. Add the same number of additional servers (with Windows Server 2022 Management OS) that equals to the server number present in the HA cluster.
-3. Install Windows 11/Windows Server 2022 version of the [ADK](/windows-hardware/get-started/adk-install) on the newly added 2022 servers.
+2. Add the same number of additional servers (with Windows Server 2025 Management OS) that equals to the server number present in the HA cluster.
+3. Install Windows 11/Windows Server 2025 version of the [ADK](/windows-hardware/get-started/adk-install) on the newly added 2025 servers.
 4. Install VMM 2025 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers).
 5. Repeat the installation steps for all the other newly added servers.
 6. Fail over the active VMM node to one of the newly added servers.
@@ -207,7 +211,7 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 
 There are a couple of reasons you might want to upgrade the VMM SQL Server database:
 
-- You're upgrading VMM to System Center 2022, and the current SQL Server database version isn't supported.
+- You're upgrading VMM to System Center 2025, and the current SQL Server database version isn't supported.
 - You want to upgrade a VMM standalone server to a high availability server, and SQL Server is installed locally.
 - You want to move the SQL Server database to a different computer.
 
@@ -246,7 +250,7 @@ When uninstalling VMM server from last node, you may get a message about unsucce
 
 ## Redeploy Azure Site Recovery
 
-If Azure Site Recovery was integrated into your VMM 2019 deployment, you need to redeploy it with VMM 2022 for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure) or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
+If Azure Site Recovery was integrated into your VMM 2022 deployment, you need to redeploy it with VMM 2025 for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure) or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
 
 
 ## Connect to Operations Manager

@@ -89,6 +89,19 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ::: moniker-end
 
+::: moniker range="sc-vmm-2025"
+- Requirements for computers running as VMM management nodes:
+	- All cluster nodes that will act as VMM servers must be running Windows Server 2025.
+	- Each cluster node must be joined to a domain and must have a computer name that doesn't exceed 15 characters.
+	- The VMM service network name must not exceed 15 characters.
+	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](/windows-hardware/get-started/adk-install). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
+	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://www.microsoft.com/download/details.aspx?id=56041) or [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=57474) or [SQL Server 2016 feature pack](https://www.microsoft.com/download/details.aspx?id=56833) or [SQL Server 2017 feature pack](https://www.microsoft.com/download/details.aspx?id=55992) or [SQL Server 2019 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=100450).
+
+    >[!Note]
+    > Deploying a highly available SCVMM management server in a Stretched clusters configuration is not supported.
+
+::: moniker-end
+
 ## Plan a highly available VMM library
 
 You can create highly available library servers to ensure that file-based resources, templates, and profiles are resilient and available.
