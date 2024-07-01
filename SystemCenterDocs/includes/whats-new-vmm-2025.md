@@ -30,7 +30,7 @@ VMM 2025 works with TLS 1.3, and the dependency on legacy authentication protoco
 
 All VMs created with VMM 2025 will default to Generation 2, which is UEFI firmware-based and is more secure than BIOS firmware-based Generation 1 VMs.
 
-### Support for the latest Linux Guest OSes
+### Support for the latest Linux Guest Operating Systems
 
 With VMM 2025, you can run Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, SUSE Linux 15, Oracle Linux 9, and Rocky Linux 9 and 8.
 
@@ -40,7 +40,11 @@ VMM 2025 comes with faster [ESXi to Hyper-V VM conversion](../vmm/vm-convert-vmw
 
 ### Switch to Arc-enabled SCVMM for Azure integration capabilities
 
-In VMM 2025, Azure integration capabilities – Azure VM management from VMM and Azure update management v1 on VMM managed VMs – aren't supported. Azure Arc-enabled System Center Virtual Machine Manager is the alternative for these capabilities.
+In VMM 2025, the following Azure integration capabilities are not supported:
+- Azure VM management from VMM
+- Azure update management v1 on VMM managed VMs
+
+Azure Arc-enabled System Center Virtual Machine Manager is the alternative for these capabilities.
 
 ### System Center Service Provider Foundation (SPF) is discontinued
 
