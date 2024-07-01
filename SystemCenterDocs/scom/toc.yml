@@ -654,7 +654,11 @@
       - name: Monitoring Templates
         items:
         - name: Automatic Monitoring Template
-          href: managed-instance-management-pack-automatic-monitoring.md
+          items: 
+            - name: Automatic Monitoring Template with Service Principal Name
+              href: managed-instance-management-pack-automatic-monitoring-service-principal-name.md
+            - name: Automatic Monitoring Template with Managed Identity
+              href: managed-instance-management-pack-automatic-monitoring-managed-identity.md
         - name: Manual Monitoring Template
           href: managed-instance-management-pack-manual-monitoring.md
       - name: Create a Service Principal
