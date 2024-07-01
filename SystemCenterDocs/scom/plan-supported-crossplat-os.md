@@ -189,7 +189,6 @@ Supported versions:
 
 Supported versions:
 
-- CentOS 7
 - Oracle Linux 7 and 8
 - Rocky 8 (supported from Operations Manager 2019 UR5 and later)
 - Alma 8 (supported from Operations Manager 2019 UR5 and later)
@@ -234,7 +233,6 @@ Supported versions:
 
 Supported versions:
 
-- CentOS 7
 - Oracle Linux 7 and 8
 - SLES 15
 - openSUSE Leap 15t
@@ -500,7 +498,7 @@ Ubuntu 14.04, 16.04 are supported.
 ::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Universal Linux (RPM package)
-CentOS 7 and Oracle Linux 6, 7 are supported.
+Oracle Linux 6, 7 are supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -513,7 +511,7 @@ CentOS 7 and Oracle Linux 6, 7 are supported.
 ::: moniker range="sc-om-2016"
 
 ## Universal Linux (RPM package)
-CentOS 7 and Oracle Linux 7 are supported.
+Oracle Linux 7 are supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
