@@ -5,13 +5,14 @@ description: include article to detail how to install the Operations Manager ver
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  03/14/2019
+ms.date:  07/01/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
 ## Install Operations Manager 2019 agent on UNIX and Linux computers
+
 The following procedures show how to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 2019.
 
 ## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
@@ -40,7 +41,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
     `scxadmin -status`
 
-## To install the agent on RPM based Universal Linux Servers (Oracle and Centos)
+## To install the agent on RPM based Universal Linux Servers (Oracle)
 
 1.  Transfer the agent (`scx-<version>.universalr.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
