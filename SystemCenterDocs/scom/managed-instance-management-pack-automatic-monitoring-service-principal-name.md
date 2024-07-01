@@ -60,7 +60,7 @@ If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** wi
 
 ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.png)
 
-Specify the desired Entra ID tenant with a specific SQL Managed Instance.
+Specify the desired Microsoft Entra ID tenant with a specific SQL Managed Instance.
 
 ![Screenshot showing step with selecting Azure tenant.](./media/managed-instance-management-pack/selecting-tenant-id.png)
 
@@ -106,7 +106,7 @@ Regardless of the selected option, ensure to grant required SQL permissions to t
 
 ## Instances filtering
 
-[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
 
 **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 

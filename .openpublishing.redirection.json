@@ -3872,15 +3872,7 @@
  },
  {
      "source_path": "SystemCenterDocs/scom/managed-instance-management-pack-automatic-monitoring.md",
-     "redirect_url": "/system-center/scom/managed-instance-management-pack-automatic-monitoring-spn"
- },
- {
-     "source_path": "SystemCenterDocs/scom/managed-instance-management-pack-automatic-monitoring-spn.md",
      "redirect_url": "/system-center/scom/managed-instance-management-pack-automatic-monitoring-service-principal-name"
- },
- {
-     "source_path": "SystemCenterDocs/scom/managed-instance-management-pack-automatic-monitoring-mi.md",
-     "redirect_url": "/system-center/scom/managed-instance-management-pack-automatic-monitoring-managed-identity"
  }
  ]
 }
