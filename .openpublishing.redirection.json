@@ -3869,6 +3869,10 @@
 {
      "source_path": "SystemCenterDocs/scom/sql-server-management-pack-tasks.md",
      "redirect_url": "/system-center/scom/sql-server-management-pack-tasks-overview"
+ },
+ {
+     "source_path": "SystemCenterDocs/scom/managed-instance-management-pack-automatic-monitoring.md",
+     "redirect_url": "/system-center/scom/managed-instance-management-pack-automatic-monitoring-spn"
  }
  ]
 }
