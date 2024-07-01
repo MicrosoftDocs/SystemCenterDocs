@@ -19,7 +19,7 @@ Automatic monitoring template allows you to configure monitoring by discovering 
 
 ### Prerequisites
 
-1. Enable system-assigned managed identity for management server VM in Azure Portal.
+1. Enable system-assigned managed identity for management server VM in Azure portal.
 
    Go to the Virtual Machine -> Security -> Identity.
 
@@ -66,11 +66,11 @@ At this step, select the **Enable checkbox if you want to change default Azure E
 
 ![Screenshot showing the Configure Azure endpoints.](./media/managed-instance-management-pack/configuring-azure-endpoints-mi.png)
 
-### Select Authentication Method
+### Azure Authentication Method
 
-At this step, select a system-assigned managed identity from the list. This means that your management server will use the system-assigned identity from its VM to connect to the Azure SQL Managed Instance.
+At this step, select a system-assigned managed identity from the list. This means that your management server will use the system-assigned identity from its VM to connect to the SQL Managed Instance.
 
-![Screenshot of selecting system-assigned managed identity](./media/managed-instance-management-pack/mis-selecting-authentication-method.png)
+![Screenshot of selecting system-assigned managed identity](./media/managed-instance-management-pack/system-managed-identity-selecting-authentication-method.png)
 
 ### SQL connection settings
 
@@ -78,33 +78,33 @@ At this step, select an authentication method that you want to use to connect to
 
 There are two options:
 
-- **Microsoft Entra ID**. Azure SQL Managed Instance must have enabled Entra ID Admin for this connection.
+- **Microsoft Entra ID**. SQL Managed Instance must have enabled Microsoft Entra ID Admin for this connection.
   
-  Go to Azure SQL Managed Instance in Azure Portal -> Settings -> Microsoft Entra ID.
+  Go to SQL Managed Instance in Azure portal -> Settings -> Microsoft Entra ID.
 
   Click **Set Admin** and specify an account. Save changes.
 
-  Grant permissions for the Azure SQL Managed Instance to access Entra ID.
+  Grant permissions for the SQL Managed Instance to access Microsoft Entra ID.
 
   > [!WARNING]
-  > You need to be a Company Administrator or Global Administrator to Grant Read permission to the principal that represents Managed Instance identity.
+  > You need to be a Company Administrator or Global Administrator to Grant Read permission to the principal that represents SQL Managed Instance identity.
 
-- **SQL Credentials**. Create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
+- **SQL Credentials**. Create a new Run As Account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
-    ![Screenshot showing the Configure Run As account for Automatic template.](./media/managed-instance-management-pack/mis-new-run-as-account-automatic-template.png)
+    ![Screenshot showing the Configure Run As Account for Automatic template.](./media/managed-instance-management-pack/system-managed-identity-new-run-as-account-automatic-template.png)
 
-![Screenshot showing the Configure SQL connection settings for SMI.](./media/managed-instance-management-pack/mis-sql-connection-settings.png)
+![Screenshot showing the Configure SQL connection settings for SMI.](./media/managed-instance-management-pack/system-managed-identity-sql-connection-settings.png)
 
 > [!IMPORTANT]
-> The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
+> The public endpoint is the default option for discovery and monitoring SQL Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
 
 ### Instances filtering
 
-[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
 
 **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
-![Screenshot of the server exclude list wildcard SPN.](./media/managed-instance-management-pack/mis-configure-instances-filtering.png)
+![Screenshot of the server exclude list wildcard SPN.](./media/managed-instance-management-pack/system-managed-identity-configure-instances-filtering.png)
 
 **Regular Expression** filtering mask type supports [.NET regular expressions patterns](/dotnet/standard/base-types/regular-expressions).
 
@@ -114,9 +114,9 @@ If you want to remove an existing mask, select it and select **Delete**.
 
 At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Azure SQL Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 
-![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/miu-choose-management-pool.png)
+![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/system-managed-identity-choose-management-pool.png)
 
-Confirm Run As account distribution to the selected management pool by completing the Summary step.
+Confirm Run As Account distribution to the selected management pool by completing the Summary step.
 
 ![Screenshot showing the RunAS account modification confirmation.](./media/managed-instance-management-pack/allowing-runas-modification.png)
 
@@ -124,13 +124,13 @@ Confirm Run As account distribution to the selected management pool by completin
 
 At this step, review all the configuration and connection settings and select **Create**.
 
-![Screenshot showing the Review connection settings for SMI.](./media/managed-instance-management-pack/mis-review-connection-settings.png)
+![Screenshot showing the Review connection settings for SMI.](./media/managed-instance-management-pack/system-managed-identity-review-connection-settings.png)
 
 ## User-assigned managed identity
 
 ### Prerequisites
 
-1. Create user-assigned managed identity in Azure Portal
+1. Create user-assigned managed identity in Azure portal
 
    Go to **Managed Identities** -> **Create** -> Specify the information and click **Review + Create**.
 
@@ -142,7 +142,7 @@ At this step, review all the configuration and connection settings and select **
 
    Click **Add** and select created user-assigned identity. Save the changes.
 
-3. Grant Reader permission to the user-assigned identity for the subscription or specific resource group where your System Center Operations Manager and Azure SQL Managed Instances reside.
+3. Grant Reader permission to the user-assigned identity for the subscription or specific resource group where your System Center Operations Manager and SQL Managed Instances reside.
 
     Go to subscription or resource group -> **Access Control (IAM)** and click **Add**.
 
@@ -181,21 +181,21 @@ At this step, select the **Enable checkbox if you want to change default Azure E
 
 ![Screenshot showing the Configure Azure endpoints.](./media/managed-instance-management-pack/configuring-azure-endpoints-mi.png)
 
-### Select Authentication Method
+### Azure Authentication Method
 
-At this step, select user-assigned managed identity in the list. It means your management server will use user-assigned identity from its VM to connect to Azure SQL Managed Instance.
+At this step, select user-assigned managed identity in the list. It means your management server will use user-assigned identity from its VM to connect to SQL Managed Instance.
 
-![Screenshot of selecting user-assigned managed identity](./media/managed-instance-management-pack/miu-selecting-authentication-method.png)
+![Screenshot of selecting user-assigned managed identity](./media/managed-instance-management-pack/user-managed-identity-selecting-authentication-method.png)
 
 ### Set Azure Run As Account
 
-Create a new Run As account by selecting **New** and specifying an account name and user-assigned client ID to access the managed instance with managed identity.
+Create a new Run As Account by selecting **New** and specifying an account name and user-assigned client ID to access the managed instance with managed identity.
 
-![Screenshot showing the Manual SPN Configuration.](./media/managed-instance-management-pack/miu-new-run-as-account.png)
+![Screenshot showing the Manual SPN Configuration.](./media/managed-instance-management-pack/user-managed-identity-new-run-as-account.png)
 
 Once you've created the Run As Account associated with the managed identity, select it from the drop-down list, then select **Next**. This Run As Account will be used for authentication in Azure Cloud.
 
-![Screenshot showing the existing Run As profile.](./media/managed-instance-management-pack/miu-existing-run-as-profile.png)
+![Screenshot showing the existing Run As profile.](./media/managed-instance-management-pack/user-managed-identity-existing-run-as-profile.png)
 
 Next time you can just use created Run As Account with the user-assigned managed identity to fill in the new automatic monitoring template.
 
@@ -205,33 +205,33 @@ At this step, select an authentication method that you want to use to connect to
 
 There are two options:
 
-- **Microsoft Entra ID**. Azure SQL Managed Instance must have enabled Entra ID Admin for this connection.
+- **Microsoft Entra ID**. SQL Managed Instance must have enabled Microsoft Entra ID Admin for this connection.
   
-  Go to Azure SQL Managed Instance in Azure Portal -> Settings -> Microsoft Entra ID.
+  Go to SQL Managed Instance in Azure portal -> Settings -> Microsoft Entra ID.
 
   Click **Set Admin** and specify an account. Save changes.
 
-  Grant permissions for the Azure SQL Managed Instance to access Entra ID.
+  Grant permissions for the SQL Managed Instance to access Microsoft Entra ID.
 
   > [!WARNING]
-  > You need to be a Company Administrator or Global Administrator to Grant Read permission to the principal that represents Managed Instance identity.
+  > You need to be a Company Administrator or Global Administrator to Grant Read permission to the principal that represents SQL Managed Instance identity.
 
-- **SQL Credentials**. Create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
+- **SQL Credentials**. Create a new Run As Account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
-![Screenshot showing the Azure SQL MI connection settings for UMI.](./media/managed-instance-management-pack/miu-sql-connection-settings.png)
+![Screenshot showing the Azure SQL MI connection settings for UMI.](./media/managed-instance-management-pack/user-managed-identity-sql-connection-settings.png)
 
 > [!IMPORTANT]
-> The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
+> The public endpoint is the default option for discovery and monitoring SQL Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
 
 ### Instances filtering
 
-[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
 
 **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
 **Regular Expression** filtering mask type supports [.NET regular expressions patterns](/dotnet/standard/base-types/regular-expressions).
 
-![Screenshot of the server exclude list regular expression SPN.](./media/managed-instance-management-pack/miu-configure-instances-filtering.png)
+![Screenshot of the server exclude list regular expression SPN.](./media/managed-instance-management-pack/user-managed-identity-configure-instances-filtering.png)
 
 If you want to remove an existing mask, select it and select **Delete**.
 
@@ -239,9 +239,9 @@ If you want to remove an existing mask, select it and select **Delete**.
 
 At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Azure SQL Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 
-![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/miu-choose-management-pool.png)
+![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/user-managed-identity-choose-management-pool.png)
 
-Confirm Run As account distribution to the selected management pool by completing the Summary step.
+Confirm Run As Account distribution to the selected management pool by completing the Summary step.
 
 ![Screenshot showing the RunAS account modification confirmation.](./media/managed-instance-management-pack/allowing-runas-modification.png)
 
@@ -249,4 +249,4 @@ Confirm Run As account distribution to the selected management pool by completin
 
 At this step, review all the configuration and connection settings and select **Create**.
 
-![Screenshot showing the Review wizard settings for UMI.](./media/managed-instance-management-pack/miu-review-connection-settings.png)
+![Screenshot showing the Review wizard settings for UMI.](./media/managed-instance-management-pack/user-managed-identity-review-connection-settings.png)

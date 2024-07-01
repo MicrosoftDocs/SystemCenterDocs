@@ -656,9 +656,9 @@
         - name: Automatic Monitoring Template
           items: 
             - name: Automatic Monitoring Template with SPN
-              href: managed-instance-management-pack-automatic-monitoring-spn.md
+              href: managed-instance-management-pack-automatic-monitoring-service-principal-name.md
             - name: Automatic Monitoring Template with Managed Identity
-              href: managed-instance-management-pack-automatic-monitoring-mi.md
+              href: managed-instance-management-pack-automatic-monitoring-managed-identity.md
         - name: Manual Monitoring Template
           href: managed-instance-management-pack-manual-monitoring.md
       - name: Create a Service Principal
