@@ -34,6 +34,10 @@ All VMs created with VMM 2025 will default to Generation 2, which is UEFI firmwa
 
 With VMM 2025, you can run Ubuntu Linux 24.04, RHEL 9, Debian 13 and 12, SUSE Linux 15, Oracle Linux 9, and Rocky Linux 9 and 8.
 
+### Enhanced VMware to Hyper-V VM conversion performance
+
+VMM 2025 comes with faster [ESXi to Hyper-V VM conversion](../vmm/vm-convert-vmware.md) performance by default.
+
 ### Switch to Arc-enabled SCVMM for Azure integration capabilities
 
 In VMM 2025, Azure integration capabilities – Azure VM management from VMM and Azure update management v1 on VMM managed VMs – aren't supported. Azure Arc-enabled System Center Virtual Machine Manager is the alternative for these capabilities.
