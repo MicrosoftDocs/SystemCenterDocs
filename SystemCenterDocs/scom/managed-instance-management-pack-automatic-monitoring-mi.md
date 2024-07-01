@@ -1,11 +1,11 @@
 ---
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
-title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
-description: This article explains how to configure automatic monitoring template with Managed Identity in Management Pack for Azure SQL Managed Instance.
+title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance using managed identity
+description: This article explains how to configure automatic monitoring template using Managed Identity in Management Pack for Azure SQL Managed Instance.
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 06/28/2024
+ms.date: 07/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -218,7 +218,7 @@ There are two options:
 
 - **SQL Credentials**. Create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
-![Screenshot showing the Configure SQL connection settings for UMI.](./media/managed-instance-management-pack/miu-sql-connection-settings.png)
+![Screenshot showing the Azure SQL MI connection settings for UMI.](./media/managed-instance-management-pack/miu-sql-connection-settings.png)
 
 > [!IMPORTANT]
 > The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
@@ -249,4 +249,4 @@ Confirm Run As account distribution to the selected management pool by completin
 
 At this step, review all the configuration and connection settings and select **Create**.
 
-![Screenshot showing the Review connection settings for UMI.](./media/managed-instance-management-pack/miu-review-connection-settings.png)
+![Screenshot showing the Review wizard settings for UMI.](./media/managed-instance-management-pack/miu-review-connection-settings.png)
