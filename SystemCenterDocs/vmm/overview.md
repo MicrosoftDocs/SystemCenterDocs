@@ -5,7 +5,7 @@ description: This article provides an overview of System Center VMM and a summar
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/01/2024
+ms.date: 06/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -36,4 +36,5 @@ Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the Syste
 
 ## Next steps
 
-[Learn about](system-requirements.md) system requirements.
+- Learn about [system requirements](system-requirements.md).
+- Get started with [Arc-enabled SCVMM](/azure/azure-arc/system-center-virtual-machine-manager/overview#how-does-it-work).
