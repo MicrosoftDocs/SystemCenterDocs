@@ -3,7 +3,7 @@ description: This article describes the  pre and post backup scripts for Data Pr
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/27/2024
+ms.date: 07/01/2024
 title: Use Pre-backup and Post-backup scripts
 ms.subservice: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
@@ -63,11 +63,11 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 
 2. For each data source, complete the *DatasourceScriptConfig* element:
 
-    For the *DataSourceName* attribute, use one the following:
+    For the *DataSourceName* attribute, use one of the following:
 
     | DataSourceName | Attribute |
     |---|---|
-    |Volume or file share data sources|DataSourceName = “volume_letter” <br>Example :  \<DatasourceScriptConfig DataSourceName="C:"\>   - Do not use backslash `\` after drive letter.|
+    |Volume or file share data sources|DataSourceName = “volume_letter” <br>Example:  \<DatasourceScriptConfig DataSourceName="C:"\>   - Don't use backslash `\` after drive letter.|
     |Volume Mountpoints|DataSourceName=” Volume\mountpoint_name” <br>Example: \<DatasourceScriptConfig DataSourceName="C:\mountpoint"\>|
     |Microsoft SQL Server|DataSourcename= "Instance\Database" <br>Example:  \<DatasourceScriptConfig DataSourceName="MySQLInstance\MySQLDB"\>|
     |Microsoft Exchange|DataSourceName="Storage group name" <br>Example: \<DatasourceScriptConfig DataSourceName="First Storage Group"\>|
@@ -76,17 +76,17 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
     |SystemState or BMR|DataSourceName="System Protection " <br>Example: \<DatasourceScriptConfig DataSourceName="System Protection "\> |
     |Hyper-V Server|DataSourceName = “ComponentID” <br>Example: \<DatasourceScriptConfig DataSourceName="44b31766-c87d-416e-b2c0-08fd297a0c8b"\>|
 
->[!NOTE]
->To get the VM ComponentID, run the PowerShell command Get-VM on the Hyper-V Server to list VM names and ID.
-> ```powershell
-> PS C:\> Get-VM  | select-object Name,ID
-> ```
->| Name | Id |
->| --- | --- |
->| Windows2022 | 44b31766-c87d-416e-b2c0-08fd297a0c8b |
->| Windows10-2 | 01d9ed67-5c79-4bbf-8f42-0f509b07aeda |
+    >[!NOTE]
+    >To get the VM ComponentID, run the PowerShell command Get-VM on the Hyper-V Server to list VM names and ID.
+    > ```powershell
+    > PS C:\> Get-VM  | select-object Name,ID
+    > ```
+    >| Name | Id |
+    >| --- | --- |
+    >| Windows2022 | 44b31766-c87d-416e-b2c0-08fd297a0c8b |
+    >| Windows10-2 | 01d9ed67-5c79-4bbf-8f42-0f509b07aeda |
 
 3. Save the *ScriptingConfig.xml* file.
 
-> [!NOTE]
-> DPM will suffix an additional Boolean (true/false) parameter to the post-backup script command, indicating the status of the DPM backup job.
+    > [!NOTE]
+    > DPM will suffix an additional Boolean (true/false) parameter to the post-backup script command, indicating the status of the DPM backup job.
