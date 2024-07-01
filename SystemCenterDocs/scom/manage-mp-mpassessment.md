@@ -253,7 +253,7 @@ The following workloads are supported for the operating systems listed below.
 ::: moniker range="=sc-om-2019"
 
 ## Support for Linux and Unix platforms supported for application servers workload
-- CentOS6 x64, CentOS7 x64
+
 - Oracle6 x64, Oracle7 x64
 - Sles12 x64
 - Rhel7 x64
