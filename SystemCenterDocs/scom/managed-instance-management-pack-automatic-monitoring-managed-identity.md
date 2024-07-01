@@ -114,7 +114,7 @@ If you want to remove an existing mask, select it and select **Delete**.
 
 At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Azure SQL Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 
-![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/system-managed-identity-choose-management-pool.png)
+![Screenshot showing the Management Pool settings for system managed identity.](./media/managed-instance-management-pack/system-managed-identity-choose-management-pool.png)
 
 Confirm Run As Account distribution to the selected management pool by completing the Summary step.
 
@@ -239,7 +239,7 @@ If you want to remove an existing mask, select it and select **Delete**.
 
 At this step, specify the Management Server pool which will be used for discovery and monitoring purposes. For more information, see [Azure SQL Managed Instance Monitoring Pool](managed-instance-management-pack-monitoring-pool.md).
 
-![Screenshot showing the Management Pool settings.](./media/managed-instance-management-pack/user-managed-identity-choose-management-pool.png)
+![Screenshot showing the Management Pool settings for user managed identity.](./media/managed-instance-management-pack/user-managed-identity-choose-management-pool.png)
 
 Confirm Run As Account distribution to the selected management pool by completing the Summary step.
 
