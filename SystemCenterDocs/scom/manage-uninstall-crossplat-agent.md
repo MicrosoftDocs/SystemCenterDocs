@@ -5,7 +5,7 @@ description: This article describes how to manually uninstall the Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/26/2023
+ms.date: 07/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -46,7 +46,7 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
     `rpm -q scx`
 
-### To uninstall the agent from RPM based Universal Linux servers (Oracle and Centos)
+### To uninstall the agent from RPM based Universal Linux servers (Oracle)
 
 1.  Sign in as the root user, and uninstall the agent by entering
 

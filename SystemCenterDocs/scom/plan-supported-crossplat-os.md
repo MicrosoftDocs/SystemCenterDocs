@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/07/2024
+ms.date: 07/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -189,7 +189,6 @@ Supported versions:
 
 Supported versions:
 
-- CentOS 7
 - Oracle Linux 7 and 8
 - Rocky 8 (supported from Operations Manager 2019 UR5 and later)
 - Alma 8 (supported from Operations Manager 2019 UR5 and later)
@@ -201,7 +200,7 @@ Supported versions:
 >[!Note]
 >- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
-To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -234,7 +233,6 @@ Supported versions:
 
 Supported versions:
 
-- CentOS 7
 - Oracle Linux 7 and 8
 - SLES 15
 - openSUSE Leap 15t
@@ -500,7 +498,7 @@ Ubuntu 14.04, 16.04 are supported.
 ::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Universal Linux (RPM package)
-CentOS 7 and Oracle Linux 6, 7 are supported.
+Oracle Linux 6, 7 are supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -513,7 +511,7 @@ CentOS 7 and Oracle Linux 6, 7 are supported.
 ::: moniker range="sc-om-2016"
 
 ## Universal Linux (RPM package)
-CentOS 7 and Oracle Linux 7 are supported.
+Oracle Linux 7 are supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
