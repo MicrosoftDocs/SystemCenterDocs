@@ -1,19 +1,19 @@
 ---
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
-title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
-description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance.
+title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance using service principal name
+description: This article explains how to configure automatic monitoring template with Service Principal Name in Management Pack for Azure SQL Managed Instance.
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 04/02/2024
+ms.date: 07/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Automatic monitoring template
+# Automatic monitoring template with Service Principal Name
 
-Automatic monitoring template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
+Automatic monitoring template allows you to configure monitoring by discovering all Azure SQL Managed Instances in the specified Azure subscription automatically. This article describes the automatic monitoring template using Service Principal Name (SPN).
 
 ## Add Monitoring Wizard and create a destination management pack
 
@@ -60,7 +60,7 @@ If you select the **Auto-Create SPN** option, the **Microsoft Azure sign-in** wi
 
 ![Screenshot showing the Auto-create SPN.](./media/managed-instance-management-pack/auto-create-spn.png)
 
-Specify the desired Entra ID tenant with a specific Azure SQL Managed Instance.
+Specify the desired Microsoft Entra ID tenant with a specific SQL Managed Instance.
 
 ![Screenshot showing step with selecting Azure tenant.](./media/managed-instance-management-pack/selecting-tenant-id.png)
 
@@ -91,22 +91,22 @@ At this step, select the Azure subscriptions that you want to monitor, multiple 
 
 ## SQL connection settings
 
-At this step, select an authentication method that you want to use to connect to your managed instances.
+At this step, select an authentication method that you want to use to connect to your SQL Managed Instances.
 
 > [!IMPORTANT]
 > The public endpoint is the default option for discovery and monitoring Managed Instances. Make sure that you have the appropriate security options configured for the connection. The private endpoint is also supported.
 
-You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
+You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the SQL Managed Instance.
 
 ![Screenshot showing the Configure Run As account for Automatic template.](./media/managed-instance-management-pack/new-run-as-account-automatic-template.png)
 
-Regardless of the selected option, ensure to grant required SQL permissions to the selected monitoring account for all the managed instances. For more information, see [Security Configuration](managed-instance-management-pack-security-configuration.md).
+Regardless of the selected option, ensure to grant required SQL permissions to the selected monitoring account for all the SQL Managed Instances. For more information, see [Security Configuration](managed-instance-management-pack-security-configuration.md).
 
 ![Screenshot showing the Configure SQL connection settings.](./media/managed-instance-management-pack/sql-connection-settings.png)
 
 ## Instances filtering
 
-[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
+[Optionally] At the **Configure Instances Filtering** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Managed Instance names that you want to exclude from or include to the monitoring list, select **Add**, then select **Next**.
 
 **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
