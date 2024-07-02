@@ -5,7 +5,7 @@ description: This article describes how to enable Kerberos Authentication with U
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/20/2022
+ms.date: 07/01/2024
 ms.custom: na
 ms.service: system-center
 monikerRange: '>sc-om-1801'
@@ -52,8 +52,6 @@ The following subset of those operating systems now supports WS-Management commu
 | Red Hat Enterprise Linux Server | 6 |
 | Red Hat Enterprise Linux Server | 7 |
 | Red Hat Enterprise Linux Server | 8 |
-| CentOS | 6 |
-| CentOS | 7 |
 | UBUNTU Server | 14 |
 | UBUNTU Server | 15 |
 
@@ -66,7 +64,6 @@ The following subset of those operating systems now supports WS-Management commu
 | Red Hat Enterprise Linux Server | 6 |
 | Red Hat Enterprise Linux Server | 7 |
 | Red Hat Enterprise Linux Server | 8 |
-| CentOS | 7 |
 | Rocky Linux | 8 |
 | Alma Linux | 8 |
 | SLES | 12 |
@@ -88,7 +85,6 @@ The following subset of those operating systems now supports WS-Management commu
 |------------------|:---------|
 | Red Hat Enterprise Linux Server | 7 |
 | Red Hat Enterprise Linux Server | 8 |
-| CentOS | 7 |
 | Rocky Linux | 8 |
 | Alma Linux | 8 |
 | SLES | 12 |

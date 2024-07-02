@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/24/2023
+ms.date: 07/01/2024
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -149,7 +149,7 @@ If you create a UNIX/Linux Script rule or monitor in a custom management pack, t
 
 ### Universal Linux - operating system name/version  
 
-The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host's operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to Operations Manager for a Universal Linux Agent host, use the following procedure:  
+The Universal Linux Agent, which supports Linux operating systems such as Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host's operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to Operations Manager for a Universal Linux Agent host, use the following procedure:  
 
 Create the file `disablereleasefileupdates` in the directory: `/etc/opt/microsoft/scx/conf/`.  
 
