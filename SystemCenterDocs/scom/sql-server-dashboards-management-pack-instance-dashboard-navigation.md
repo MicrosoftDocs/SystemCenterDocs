@@ -92,17 +92,3 @@ The following keys are available:
 |Right|Navigate to the previous tile|
 |A|Navigate to the next spike on the chart|
 |D|Navigate back to the previous spike on the chart|
-
-> [!Note]
-> Buttons "A" and "D" are not available for use by default. They need to be activated.
-
-The following are the prerequisites for activating buttons "A" and "D":
-
-- .NET Framework 4.8 on your Operations Manager management server or Operations Console
-- Add flags to **Microsoft.EnterpriseManagement.Monitoring.Console.exe.config** in the directory C:\Program Files\Microsoft System Center\Operations\Manager\Console\
-  
-```Config
-    <!-- Assembly redirection -->
-    <runtime>
-        <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" />
-```
