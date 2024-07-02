@@ -40,7 +40,7 @@ VMM 2025 comes with faster [ESXi to Hyper-V VM conversion](../vmm/vm-convert-vmw
 
 ### Switch to Arc-enabled SCVMM for Azure integration capabilities
 
-In VMM 2025, the following Azure integration capabilities are not supported:
+In VMM 2025, the following Azure integration capabilities aren't supported:
 - Azure VM management from VMM
 - Azure update management v1 on VMM managed VMs
 
