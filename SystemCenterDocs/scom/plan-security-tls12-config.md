@@ -176,20 +176,20 @@ After completing the configuration of all prerequisites for Operations Manager, 
 1. Open the Registry Editor
 1. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727`
     1. Create the following DWORD value pairs:
-        1. **SchUseStrongCrypto** [Value = 1]
-        1. **SystemDefaultTlsVersions** [Value = 1]
+        - **SchUseStrongCrypto** [Value = 1]
+        - **SystemDefaultTlsVersions** [Value = 1]
 1. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727`
     1. Create the following DWORD value pairs:
-        1. **SchUseStrongCrypto** [Value = 1]
-        1. **SystemDefaultTlsVersions** [Value = 1]
+        - **SchUseStrongCrypto** [Value = 1]
+        - **SystemDefaultTlsVersions** [Value = 1]
 1. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`  
     1. Create the following DWORD value pairs:
-        1. **SchUseStrongCrypto** [Value = 1]
-        1. **SystemDefaultTlsVersions** [Value = 1]
-1. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319` 
+        - **SchUseStrongCrypto** [Value = 1]
+        - **SystemDefaultTlsVersions** [Value = 1]
+1. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319`
     1. Create the following DWORD value pairs:
-        1. **SchUseStrongCrypto** [Value = 1]
-        1. **SystemDefaultTlsVersions** [Value = 1]
+        - **SchUseStrongCrypto** [Value = 1]
+        - **SystemDefaultTlsVersions** [Value = 1]
 1. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
@@ -291,12 +291,13 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
 3. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
 
-    >[!NOTE]
-    >The default name of DSN is OpsMgrAC.
+  > [!NOTE]
+  > The default name of DSN is OpsMgrAC.
 
 4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 17 installed, change this name to **ODBC Driver 17 for SQL Server**.
 5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
-   - If ODBC 17 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
+   - For example, if ODBC 17 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
+   - Check the name of the DLL for the current version of the ODBC driver installed if different.
 
 #### Registry File
 
@@ -318,7 +319,7 @@ Alternatively, create and save the following **.reg** file in Notepad or another
 
 Alternatively, you can run the following PowerShell commands to automate the change.
 
-- For ODBC 17, run the following PowerShell commands:
+- Ensure to replace the dll file path to an appropriate version if using a ODBC driver version other than 17.
 
   ```powershell
   New-ItemProperty -Path "HKLM:\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC" -Name "Driver" -Value "%WINDIR%\system32\msodbcsql7.dll" -PropertyType STRING -Force | Out-Null

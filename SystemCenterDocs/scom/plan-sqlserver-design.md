@@ -41,7 +41,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2019"
 
-- SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
+- SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2016 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
 
 > [!NOTE]
