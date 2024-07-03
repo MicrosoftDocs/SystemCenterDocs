@@ -87,7 +87,7 @@ Follow these steps to verify that Reporting Services is configured correctly:
 5. If **Report Server** isn't started and the **Scale out Deployment** isn't joined, check the configuration of **Service Account**, **Web Service URL**, and **Database**.
 
     > [!NOTE]
-    > _Operations Manager_ does not support a scale-out deployment of SSRS, even though SSRS itself does.
+    > While SQL Server Reporting Services supports a scale-out deployment model that allows you to run multiple report server instances that share a single report server database, it isn't supported with Operations Manager. Operations Manager Reporting installs a custom security extension as part of the setup of the front-end components, which can't be replicated across the web farm.
 
 6. Confirm that the SQL Server Reporting Services service is running. On the taskbar, select **Start**, point to **Administrative Tools**, and select **Services**.
 
