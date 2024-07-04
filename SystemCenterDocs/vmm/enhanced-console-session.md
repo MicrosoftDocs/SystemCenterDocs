@@ -48,7 +48,7 @@ Ensure the following prerequisites:
 1.  The operating system of the host on which the VM is running should be Windows Server 2016 and later.
 ::: moniker-end
 ::: moniker range="sc-vmm-2025"
-1.  The operating system of the host on which the VM is running should be Windows Server 2019 and later.
+1.  The operating system of the host on which the VM is running should be Windows Server 2019 or later.
 ::: moniker-end
 2.	The Hyper-V host must have Enhanced session mode policy setting turned ON.
 ::: moniker range="sc-vmm-2016"
