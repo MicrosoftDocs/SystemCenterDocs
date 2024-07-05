@@ -100,7 +100,7 @@ When you install VMM with this user account, SPN will be registered.
 
 ## VMM management server
 
-- You can't run the VMM management server on Nano server (applicable to releases prior to 2019).
+- You can't run the VMM management server on Nano server (applicable to Windows Server releases prior to 2019).
 - The management server computer name can't exceed 15 characters.
 - Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V.
 - You can install the VMM management server on a VM. If you do, and you use the Dynamic Memory feature of Hyper-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes (MB).

@@ -55,7 +55,7 @@ Ensure the following prerequisites:
 3.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016, or later.
 ::: moniker-end
 ::: moniker range=">sc-vmm-2019"
-3.	The computer from which you connect to the VM must run on Windows 11, Windows 10, Windows Server 2019, or later.
+3.	The computer from which you connect to the VM must run on Windows 10 or Windows 11 or Windows Server 2019 or later.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"

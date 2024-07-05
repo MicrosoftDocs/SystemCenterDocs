@@ -59,7 +59,9 @@ If you're running more than one System Center components, they should be upgrade
 5. Operations Manager
 6. Configuration Manager
 7. Virtual Machine Manager
-8. Service Provider Foundation
+
+>[!Note]
+>Service Provider Foundation (SPF) is discontinued from System Center 2025. However, SPF 2022 will continue to work with System Center 2025 components.
 
 ## Upgrade a standalone VMM server
 
