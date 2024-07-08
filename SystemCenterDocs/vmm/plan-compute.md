@@ -5,7 +5,7 @@ description: This article provides planning steps for setting up and provisionin
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/30/2023
+ms.date: 07/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -20,14 +20,14 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 ::: moniker-end
 
-This article describes how to plan the System Center - Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
+This article describes how to plan the System Center Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
 
 ## Plan the VMM library
 
 Before you start:
 
 - You should verify system requirements for the VMM library before you install VMM.
-- VMM deploys the default library share on the VMM server. After setup is complete you can't remove or relocate the default library share, so consider its location before you install VMM.
+- VMM deploys the default library share on the VMM server. After the setup is complete, you can't remove or relocate the default library share. So consider its location before you install VMM.
 - If you're using a SAN, the library server should have the same SAN as the hosts that use the library. This ensures that the library server and the hosts can access the same LUNs on the SAN for faster file transfers.
 - If you connect to a library from virtualization hosts across a LAN, the library server should be as close as possible to the hosts.
 - If you're planning to add more library servers, you can create library groups to organize them. You can use library groups to align servers with host groups in the VMM fabric. As a best practice, you should align each library server with the host group that uses the resources of that library.
@@ -36,7 +36,7 @@ Before you start:
 
 VMM supports Hyper-V and VMware virtualization hosts. When you're adding, provisioning, and managing hosts in the VMM fabric, consider these points:
 
-- The topology of Hyper-V hosts. VMM can work with Hyper-V hosts that are located in the same domain as the VMM server, in a domain with a two-way trust, or in a domain without a two-way trust. VMM can also work with Hyper-V hosts that are in a perimeter network, or in a disjointed namespace.
+- The topology of Hyper-V hosts. VMM can work with Hyper-V hosts that are in the same domain as the VMM server, in a domain with a two-way trust, or in a domain without a two-way trust. VMM can also work with Hyper-V hosts that are in a perimeter network, or in a disjointed namespace.
 - The topology of VMware hosts. VMM works with VMware hosts located anywhere in your environment.
 - The number and type of guest operating systems running on the host.
 - The system configuration of the VMs running on the host.
@@ -65,7 +65,7 @@ Host groups are hierarchical. For example, you can create a child host group of 
 
 - All host groups belong to the root host group - All Hosts.
 - Each host or host group is identified by its host path, a sequence of host group names that specifies the location of a host or host group within the hierarchy of host groups in the navigation pane. For example, the host path All Hosts\New York\Site21\VMHost05 indicates that the host VMHost05 belongs to the host group Site21, which is a child host group of the host group New York.
-- When you change the host reserves for a parent host group, you can choose whether or not to cascade the host reserve settings to hosts in all of its child host groups. If you choose to cascade the host reserve settings, all of the host reserve settings for the parent host group overwrite all previous settings for all hosts in all of the child host groups of the parent host group.
+- When you change the host reserves for a parent host group, you can choose whether to cascade the host reserve settings to hosts in all its child host groups. If you choose to cascade the host reserve settings, all the host reserve settings for the parent host group overwrite all previous settings for all hosts in all the child host groups of the parent host group.
 - If a parent host group is used for virtual machine self-service, each of its child host group automatically inherits self-service policies from the parent host group. However, you can add a self-service policy for the same user or group to both a parent host group and its child host group. By adding policies to both parent and child, you can assign the same users different templates, set different virtual machine permissions, and assign a different virtual machine quota on a subset of hosts within the parent host group.
 - You can use a host group to isolate a host. For example, if you have a host with guest operating systems that are running mission-critical applications, you can isolate that host by placing it in its own host group. This way you can ensure that there are no self-service policies applied on the host group and that the system resources set aside for running the host's operating system are appropriate, thus maximizing the host resources available for use by the guest operating systems.
 

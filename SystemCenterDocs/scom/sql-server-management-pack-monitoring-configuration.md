@@ -290,6 +290,7 @@ The following is a complete list of securables that are checked by the monitor t
   - master.sys.dm_db_xtp_table_memory_stats
   - master.sys.dm_db_xtp_hash_index_stats
   - master.sys.dm_resource_governor_resource_pools
+  - master.sys.dm_db_index_physical_stats
 
 - SELECT permission on catalog views
 
@@ -304,6 +305,7 @@ The following is a complete list of securables that are checked by the monitor t
   - master.sys.availability_replicas
   - master.sys.database_mirroring
   - master.sys.configurations
+  - master.sys.indexes
   - msdb.dbo.syspolicy_policies
   - msdb.dbo.syspolicy_conditions
   - msdb.dbo.syspolicy_policy_execution_history
