@@ -1,13 +1,13 @@
 - name: Overview
-  items: 
-    - name: What is VMM?
-      href: overview.md
-    - name: VMM network object fundamentals
-      href: network-object-fundamentals.md
-    - name: Arc-enabled SCVMM
-      href: about-arc-enabled-system-center-virtual-machine-manager.md
-    - name: What's new in VMM
-      href: whats-new-in-vmm.md
+  items:
+  - name: What is VMM?
+    href: overview.md
+  - name: VMM network object fundamentals
+    href: network-object-fundamentals.md
+  - name: Arc-enabled SCVMM
+    href: about-arc-enabled-system-center-virtual-machine-manager.md
+  - name: What's new in VMM
+    href: whats-new-in-vmm.md
 - name: Get Started
   items: 
     - name: VMM build versions
@@ -16,78 +16,6 @@
       href: release-notes-vmm.md
     - name: Turn telemetry data on/off
       href: manage-telemetry.md
-    - name: Deploy a VMM cloud
-      href: deploy-cloud.md
-      items: 
-        - name: Create a VMM cloud
-          href: cloud-create.md
-        - name: Manage a VMM cloud
-          href: cloud-manage.md
-    - name: Deploy a guarded host fabric
-      href: deploy-guarded-host-fabric.md
-      items: 
-        - name: Deploy guarded hosts
-          href: guarded-deploy-host.md
-        - name: Configure fallback HGS settings
-          href: guarded-fallback-hgs.md
-        - name: Deploy a shielded VHDX and VM template
-          href: guarded-deploy-template.md
-        - name: Deploy a shielded VM
-          href: guarded-deploy-vm.md
-        - name: Deploy a shielded Linux VM
-          href: guarded-deploy-linux-vm.md
-    - name: Deploy and manage a software defined network (SDN) infrastructure
-      href: deploy-sdn.md
-      items: 
-        - name: Deploy an SDN network controller
-          href: sdn-controller.md
-        - name: Deploy an SDN SLB
-          href: sdn-slb.md
-        - name: Deploy an SDN RAS gateway
-          href: sdn-gateway.md
-        - name: Deploy SDN using PowerShell
-          href: sdn-powershell.md
-        - name: Set up a VM network in SDN
-          href: sdn-create-network.md
-        - name: Encrypt VM networks in SDN
-          href: sdn-encrypt-networks.md
-        - name: Allow and block VM traffic with SDN port ACLs
-          href: sdn-port-acls.md
-        - name: Control SDN virtual network bandwidth with QoS
-          href: sdn-bandwidth-qos.md
-        - name: Load balance network traffic
-          href: sdn-load-balance-network-traffic.md
-        - name: Set up NAT for traffic forwarding in an SDN
-          href: sdn-set-up-nat.md
-        - name: Route traffic across networks in the SDN infrastructure
-          href: sdn-route-network-traffic.md
-        - name: Configure SDN guest clusters
-          href: sdn-guest-clusters.md
-        - name: Update the NC server certificate
-          href: sdn-update-nc-server-certificate.md
-        - name: Set up SDN SLB VIPs
-          href: sdn-configure-slb-vip.md
-        - name: Back up and restore the SDN infrastructure
-          href: sdn-backup-restore.md
-        - name: Remove an SDN from VMM
-          href: sdn-remove.md
-        - name: Manage SDN resources in the VMM fabric
-          href: network-sdn.md
-    - name: Deploy and manage Storage Spaces Direct
-      href: s2d.md
-      items: 
-        - name: Set up a hyper-converged Storage Spaces Direct cluster
-          href: s2d-hyper-converged.md
-        - name: Deploy and manage Azure Stack HCI clusters in VMM
-          href: deploy-manage-azure-stack-hci.md
-        - name: Set up a disaggregated Storage Spaces Direct cluster
-          href: s2d-disaggregated.md
-        - name: Manage Storage Spaces Direct clusters
-          href: s2d-manage.md
-        - name: Assign storage QoS policies for Clusters
-          href: qos-storage-clusters.md
-- name: How To
-  items: 
     - name: Plan
       items: 
         - name: System requirements - VMM
@@ -129,6 +57,8 @@
           href: update-rollups.md
         - name: Back up and restore VMM
           href: backup.md
+- name: How To
+  items: 
     - name: Manage the VMM library
       items: 
         - name: Library overview
@@ -177,6 +107,26 @@
           href: hyper-v-service.md
         - name: Manage VMware servers
           href: manage-vmware-hosts.md
+        - name: Deploy a VMM cloud
+          href: deploy-cloud.md
+          items: 
+            - name: Create a VMM cloud
+              href: cloud-create.md
+            - name: Manage a VMM cloud
+              href: cloud-manage.md
+        - name: Deploy a guarded host fabric
+          href: deploy-guarded-host-fabric.md
+          items: 
+            - name: Deploy guarded hosts
+              href: guarded-deploy-host.md
+            - name: Configure fallback HGS settings
+              href: guarded-fallback-hgs.md
+            - name: Deploy a shielded VHDX and VM template
+              href: guarded-deploy-template.md
+            - name: Deploy a shielded VM
+              href: guarded-deploy-vm.md
+            - name: Deploy a shielded Linux VM
+              href: guarded-deploy-linux-vm.md
     - name: Manage management servers
       items: 
         - name: Manage infrastructure servers
@@ -209,6 +159,43 @@
           href: network-nlb.md
         - name: Set up an IPAM server
           href: network-ipam.md
+        - name: Deploy and manage a software defined network (SDN) infrastructure
+          href: deploy-sdn.md
+          items: 
+            - name: Deploy an SDN network controller
+              href: sdn-controller.md
+            - name: Deploy an SDN SLB
+              href: sdn-slb.md
+            - name: Deploy an SDN RAS gateway
+              href: sdn-gateway.md
+            - name: Deploy SDN using PowerShell
+              href: sdn-powershell.md
+            - name: Set up a VM network in SDN
+              href: sdn-create-network.md
+            - name: Encrypt VM networks in SDN
+              href: sdn-encrypt-networks.md
+            - name: Allow and block VM traffic with SDN port ACLs
+              href: sdn-port-acls.md
+            - name: Control SDN virtual network bandwidth with QoS
+              href: sdn-bandwidth-qos.md
+            - name: Load balance network traffic
+              href: sdn-load-balance-network-traffic.md
+            - name: Set up NAT for traffic forwarding in an SDN
+              href: sdn-set-up-nat.md
+            - name: Route traffic across networks in the SDN infrastructure
+              href: sdn-route-network-traffic.md
+            - name: Configure SDN guest clusters
+              href: sdn-guest-clusters.md
+            - name: Update the NC server certificate
+              href: sdn-update-nc-server-certificate.md
+            - name: Set up SDN SLB VIPs
+              href: sdn-configure-slb-vip.md
+            - name: Back up and restore the SDN infrastructure
+              href: sdn-backup-restore.md
+            - name: Remove an SDN from VMM
+              href: sdn-remove.md
+            - name: Manage SDN resources in the VMM fabric
+              href: network-sdn.md
     - name: Manage storage
       items: 
         - name: Set up storage fabric
@@ -227,6 +214,19 @@
           href: storage-file.md
         - name: Set up Storage Replica in VMM
           href: storage-replica.md
+        - name: Deploy and manage Storage Spaces Direct
+          href: s2d.md
+          items: 
+            - name: Set up a hyper-converged Storage Spaces Direct cluster
+              href: s2d-hyper-converged.md
+            - name: Deploy and manage Azure Stack HCI clusters in VMM
+              href: deploy-manage-azure-stack-hci.md
+            - name: Set up a disaggregated Storage Spaces Direct cluster
+              href: s2d-disaggregated.md
+            - name: Manage Storage Spaces Direct clusters
+              href: s2d-manage.md
+            - name: Assign storage QoS policies for Clusters
+              href: qos-storage-clusters.md
     - name: Manage SOFS
       items: 
         - name: Set up a scale-out file server (SOFS)

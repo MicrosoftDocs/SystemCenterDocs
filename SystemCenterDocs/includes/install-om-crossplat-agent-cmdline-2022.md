@@ -5,7 +5,7 @@ description: include article to detail how to install the Operations Manager ver
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  11/29/2021
+ms.date:  07/01/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -40,7 +40,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
     `scxadmin -status`
 
-## Install the agent on RPM based Universal Linux Servers (Oracle and CentOS)
+## Install the agent on RPM based Universal Linux Servers (Oracle)
 
 1.  Transfer the agent (`scx-<version>.universalr.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 

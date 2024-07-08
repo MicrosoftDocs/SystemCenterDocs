@@ -1,12 +1,12 @@
 ---
 title: Manage incidents and problems
 description: Provides an overview and explains how to manage incidents and problems in Service Manager.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -89,7 +89,7 @@ In System Center - Service Manager, one way a help desk analyst can create a par
 
 The following procedure is performed on an incident that is neither a parent incident nor a child incident. Afterward, a new parent incident is created and the existing incident is converted to a child incident.  
 
-To create a parent incident from an incident form, follow these steps:
+To create a parent incident from an incident form, do the following:
 
 1. In the Service Manager console, open the Work Items workspace, and in the **Work Items** pane, expand **Incidents**.  
 2. Select any Incident Management view that contains active incidents, and then select an incident.  
@@ -107,7 +107,7 @@ To create a parent incident from an incident form, follow these steps:
 
 The help desk analyst can link open incidents to a parent incident or remove links using the following procedures.  
 
-To link open incidents to a parent incident, follow these steps:
+To link open incidents to a parent incident, do the following:
 
 1. In the Service Manager console, open the Work Items workspace, and in the **Work Items** pane, expand **Incident Management**.  
 2. Select any incident view that contains one or more incidents that you want to link to a parent incident.  
@@ -126,7 +126,7 @@ To link open incidents to a parent incident, follow these steps:
 
 In Service Manager, the help desk analyst can resolve a parent incident, and then Service Manager will automatically resolve all its child incidents if the Service Manager administrator has configured Incident settings accordingly. This method of resolving incidents can help the analyst quickly close many child incidents. Use the following procedure to resolve a parent incident.  
 
-To resolve a parent incident, follow these steps:
+To resolve a parent incident, do the following:
 
 1. In the Service Manager console, open the Work Items workspace, and in the **Work Items** pane, expand **Incident Management**.  
 2. Select the **All Open Parent Incidents** view, and then in the list of parent incidents, select the incident that you want to resolve.  
@@ -153,7 +153,7 @@ In Service Manager, the help desk analyst can reactivate a parent incident, and 
 
 Depending on the parent incident settings in the Administration workspace, the behavior of automatic child incident resolution and reactivation varies.
 
-To reactivate a parent incident, follow these steps:
+#### Reactivate a parent incident  
 
 1. In the Service Manager console, open the Work Items workspace, and in the **Work Items** pane, expand **Incident Management**.  
 2. Select the **All Incidents** view, and then in the list of parent incidents, select the incident that you want to reactivate.  
@@ -165,9 +165,7 @@ To reactivate a parent incident, follow these steps:
 
 In Service Manager, a parent incident template is used to create new incidents. Incidents created from a template will include information for fields that you don't have to enter manually. By using a template for new incidents, new incidents are created faster than from scratch.  
 
-The template author creates a template for release records by using the following procedure.  
-
-To create a parent incident template, follow these steps:
+The template author creates a template for release records by using the following procedure:
 
 1. In the Service Manager console, open the Library workspace, and in the **Library** pane, select **Templates**.  
 2. In the **Tasks** list under **Template**, select **Create Template**.  
@@ -184,7 +182,7 @@ To create a parent incident template, follow these steps:
 
 In Service Manager, the help desk analyst can use the following procedure to easily view parent incidents when a child incident is open. Reviewing parent incident information is often necessary to determine the status of its child incidents. Use the following procedure to view a parent incident from a child incident.  
 
-To view a parent incident from a child incident, follow these steps:
+To view a parent incident from a child incident, do the following:
 
 1. In the Service Manager console, open the Work Items workspace, and in the **Work Items** pane, expand **Incident Management**.  
 2. Select an incident view that contains a child incident that you want to open, and then select the incident.  
@@ -198,9 +196,7 @@ To view a parent incident from a child incident, follow these steps:
 
 When analysts create new incidents, Service Manager automatically notifies you if any parent incidents exist with the same classification category. The purpose of the notification is to help you combine incidents into parent child groups where a common underlying issue exists. Later, you can use the parent incident to manage the group of incidents as a whole and to serve as a single point of resolution.  
 
-Use the following procedure to manually create a new incident and then link it to a related parent.  
-
-To link a new incident to a parent incident, follow these steps:
+Use the following procedure to manually create a new incident and then link it to a related parent:
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Incident Management**, and select an incident view, such as **All Incidents**.  
@@ -218,7 +214,7 @@ To link a new incident to a parent incident, follow these steps:
 12. Optionally, in the **Open** dialog, select the file that you want to attach to this incident, and select **Open**. For example, select the screenshot of an error message that the affected user has received.  
 13. Select **OK**.  
 
-#### Validate creation of a new incident  
+#### Validate the creation of a new incident  
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Incident Management**, and select **All Incidents**. New incidents appear in the **All Incidents** view.  
@@ -250,7 +246,7 @@ In Service Manager, incidents are automatically created from email requests by u
 3. In the message body, enter additional information that the help desk analyst can use to correct the problem. For example, enter **The check printer has a paper jam. I will use a backup printer until the jam is fixed**.  
 4. Optionally, attach files that the help desk analyst can use to correct the problem.  
 
-### Validate creation of a new incident
+### Validate creation of a new incident  
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Incident Management**, and select **All Incidents**. New incidents appear in the **All Incidents** view.  
@@ -316,7 +312,7 @@ Views let you group incidents that share certain criteria. For example, the foll
 
 You can also personalize a view. However, when you personalize changes to a view, those changes aren't saved. For example, you can personalize the **All Incidents** view, but if you change column widths, column sorting, or grouping or if you remove columns, the next time you return to the view it displays information in the same manner as it did before you personalized it.  
 
-### Create an incident view
+### Create an incident view  
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Incident Management**.  
@@ -458,7 +454,7 @@ You can use the following procedures to create new problem records and then edit
 
 You can use the following procedures to resolve a problem record and the incidents that are associated with it and then validate the resolution.  
 
-To resolve a problem record and the incidents that are associated with it, follow these steps:
+#### Resolve a problem record and the incidents that are associated with it  
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Problem Management**, and select **Active Problems**.  
@@ -479,7 +475,7 @@ To resolve a problem record and the incidents that are associated with it, follo
 
 You can use the following procedure to link an incident or change request to a problem record if you created a problem record without linking it to an existing incident or change request.  
 
-To link an incident or change request to a problem record, follow these steps:
+To link an incident or change request to a problem record, do the following:
 
 1. In the Service Manager console, select **Work Items**.  
 2. In the **Work Items** pane, expand **Problem Management**, and select **Active Problems**.  

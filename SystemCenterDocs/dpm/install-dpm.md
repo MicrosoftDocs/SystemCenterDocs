@@ -1,7 +1,7 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
 ms.topic: article
-ms.date: 04/17/2024
+ms.date: 07/01/2024
 title: Installing DPM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -49,6 +49,16 @@ Table A
 |A2V2|20|100 GB|Net 5% churn|
 |A4V2|40|150 GB|Net 10% churn|
 |A8V2|60|200 GB|Net 15% churn|
+
+:::moniker range="sc-dpm-2022"
+>[!NOTE]
+>As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+:::moniker-end
+
+:::moniker range="<=sc-dpm-2019"
+>[!NOTE]
+>As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+:::moniker-end
 
 ## <a name="BKMK_SQL"></a>Set up a SQL Server database
 You'll need to set up a SQL Server database if:

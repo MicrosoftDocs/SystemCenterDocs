@@ -3,7 +3,7 @@ description: This article describes the steps you can take to improve replicatio
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 01/17/2024
+ms.date: 06/27/2024
 title: Improve replication performance
 ms.subservice: data-protection-manager
 ms.assetid: dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
@@ -21,7 +21,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 ::: moniker-end
 
-There are many steps you can take to optimize the performance of System Center 2012 - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
+There are many steps you can take to optimize the performance of System Center - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
 
 ## Network throttling
 
@@ -53,7 +53,7 @@ On-the-wire compression is configured at the protection-group level for backup t
 1. Open the DPM Administrator console > **Protection** view.
 
 2. Select **Optimize performance**.
-    On the **Network** tab, check **Enable on-the-wire compression**.
+   On the **Network** tab, check **Enable on-the-wire compression**.
 
 ## Stagger synchronization start times
 
@@ -70,4 +70,19 @@ To provide quick recovery of application data, DPM must create an express full b
 1. Select  DPM Administrator Console > **Protection** and select the  protection group for which you want to modify the express full backup schedule.
 
 2. Select **Optimize performance** and on the **Express Full Backup** tab, select the available times for the express full backups and select **Add**.
-    Select the days of the week for the express full backups.
+   Select the days of the week for the express full backups.
+
+## Optimize client computer performance
+
+On some client computers, you may notice the computer running slow when a backup is in progress. You can improve the client computer’s responsiveness by adding the following registry setting.
+The *ClientProtection* key and *WaitInMSPerRequestForClientRead* value aren't present by default, you must create them.
+
+- **Key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection`
+- **Value**: `WaitInMSPerRequestForClientRead`
+- **Data**: 50
+- **Type**: DWORD
+
+The default value for this DWORD is 50 (32H) and the supported range is 40 to 100. You can increase it to 75 to improve client responsiveness. If you want to increase/improve backup speed at the expense of responsiveness, reduce the value to 40.
+
+>[!NOTE]
+> Increase in `WaitInMSPerRequestForClientRead` value causes the DPM synchronization jobs to take longer.

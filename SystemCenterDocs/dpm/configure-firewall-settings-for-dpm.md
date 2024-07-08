@@ -4,8 +4,8 @@ description: This article explains how to configure firewall settings for variou
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2017
-ms.custom: na, UpdateFrequency2
+ms.date: 06/21/2024
+ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: article
@@ -33,20 +33,20 @@ A common question that arises during System Center Data Protection Manager (DPM)
 
 ##  <a name="BKMK_WF"></a> Windows Firewall settings
 
- If Windows Firewall is enabled when you install DPM, the DPM setup configures the Windows Firewall settings as required together with the rules and exceptions. The settings are summarized in the following table.  
+If Windows Firewall is enabled when you install DPM, the DPM setup configures the Windows Firewall settings as required together with the rules and exceptions. The settings are summarized in the following table.  
 
- > [!NOTE]
- >- If you’re looking for information about how to set up firewall exceptions for computers that DPM helps protect, see [Configure firewall exceptions for the agent](deploy-dpm-protection-agent.md#set-up-firewall-exceptions).
+> [!NOTE]
+>- If you’re looking for information about how to set up firewall exceptions for computers that DPM helps protect, see [Configure firewall exceptions for the agent](deploy-dpm-protection-agent.md#set-up-firewall-exceptions).
 >- If Windows Firewall wasn’t available when you installed DPM, see [How to configure Windows Firewall manually](#BKMK_Manual).  
 >- If you’re running the DPM database on a remote instance of the SQL Server, you’ll have to set up several firewall exceptions on the remote instance of the SQL Server. See [Set up Windows Firewall on the remote instance of SQL Server](#BKMK_SQL).  
 
 |Rule name|Details|Protocol|Port|  
 |---------------|-------------|--------------|----------|  
-|Microsoft System Center 2012 Data Protection Manager DCOM Setting|Required for DCOM communications between the DPM server and protected computers.|DCOM|135/TCP Dynamic|  
-|Microsoft System Center 2012 Data Protection Manager|Exception for Msdpm.exe (the DPM service). Runs on the DPM server.|All protocols|All ports|  
-|Microsoft System Center 2012 Data Protection Manager Replication Agent|Exception for Dpmra.exe (protection agent service that is used to back up and restore data). Runs on the DPM server and protected computers.|All protocols|All ports|  
+|Microsoft System Center Data Protection Manager DCOM Setting|Required for DCOM communications between the DPM server and protected computers.|DCOM|135/TCP Dynamic|  
+|Microsoft System Center Data Protection Manager|Exception for Msdpm.exe (the DPM service). Runs on the DPM server.|All protocols|All ports|  
+|Microsoft System Center Data Protection Manager Replication Agent|Exception for Dpmra.exe (protection agent service that is used to back up and restore data). Runs on the DPM server and protected computers.|All protocols|All ports|  
 
-###  <a name="BKMK_Manual"></a> How to configure Windows Firewall manually  
+### <a name="BKMK_Manual"></a> How to configure Windows Firewall manually  
 
 1. In Server Manager, select **Local Server** > **Tools** > **Windows Firewall with Advanced Security**.  
 
@@ -70,7 +70,7 @@ A common question that arises during System Center Data Protection Manager (DPM)
 
       If you’re running System Center 2012 R2 with SP1, the default rules will be named by using **Microsoft System Center 2012 Service Pack 1 Data Protection Manager**.  
 
-##  <a name="BKMK_SQL"></a> Set up Windows Firewall on the remote instance of the SQL Server  
+## <a name="BKMK_SQL"></a> Set up Windows Firewall on the remote instance of the SQL Server  
 
 - If you use a remote instance of the SQL Server for your DPM database, as part of the process, you’ll have to configure Windows Firewall on that remote instance of the SQL Server.  
 

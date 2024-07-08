@@ -3,13 +3,14 @@ description: This article describes how you can identify tape libraries compatib
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 03/07/2024
+ms.date: 06/20/2024
 title: Identify compatible tape libraries
 ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
+ms.custom: engagement-fy24
 ---
 
 # Identify compatible tape libraries
@@ -28,8 +29,7 @@ Virtual tape libraries configured with a virtual fiber channel adapter are suppo
 
 ## Verify tape library compatibility
 
-If the tape is listed in the [Windows Server Catalog](https://www.windowsservercatalog.com/) in the Hardware, Storage section, and is shown as compatible with Windows 2008 64-bit or Windows 2008 R2 64-bit, it will probably work with DPM. Note that any driver incompatibilities with Windows 2012 would need to be addressed by the vendor.
-If you already have a tape, you can run the DPM Tape Library Compatibility Test tool as described below.
+If the tape is listed in the [Windows Server Catalog](https://www.windowsservercatalog.com/) in the Hardware, Storage section, and is shown as compatible with Windows OS, it will probably work with DPM. If you already have a tape, you can run the DPM Tape Library Compatibility Test tool as described below.
 
 ## Run the compatibility tool
 

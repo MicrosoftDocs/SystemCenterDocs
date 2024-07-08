@@ -15,6 +15,21 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
+## June 2024 - 7.5.22.0 CTP
+
+### What's New
+
+- Added "VertiPaq memory paging indication" monitor to observe the level of VertiPaq memory paging
+- Added VertiPaq tiles to Analysis Services dashboards:
+  - Monitor tiles: VertiPaq memory consumed by SSAS Instance and VertiPaq memory paging indication
+  - Perfomance tile: VertiPaq Memory Limit, VertiPaq Memory Limit(GB), VertiPaq Memory Usage on the Server (%), VertiPaq Memory Usage on the Server (GB), VertiPq Nonpaged Memory (GB) and VertiPaq Memory Paged (GB)
+- Updated display strings
+
+### Bug fixes
+
+- Fixed an issue with alert message and monitor description for "VertiPaq memory consumed by SSAS Instance" monitor
+- Fixed an issue with "Memory consumed by other processes" monitor calculation
+
 ## January 2024 - 7.4.0.0 RTM
 
 ### What's new

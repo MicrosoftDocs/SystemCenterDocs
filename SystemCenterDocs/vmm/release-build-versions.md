@@ -5,7 +5,7 @@ description: This article details the release builds in Virtual Machine Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 06/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -33,7 +33,7 @@ The following table lists the build versions for Virtual Machine Manager 2025.
 
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
-||| September 2024 | General Availability |
+||| October 2024 | System Center 2025 Virtual Machine Manager General Availability |
 
 :::moniker-end
 

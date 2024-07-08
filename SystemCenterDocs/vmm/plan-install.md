@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/09/2023
+ms.date: 07/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -88,7 +88,7 @@ If the VMM user installing VMM, or running VMM setup, doesn't have permissions t
 If you can't do this, you can also register the SPN during VMM installation. A domain administrator can provide the SPN write permissions to VMM service user or setup user. 
 
 > [!NOTE]
-> This approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName, with no restrictions. 
+> This approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName with no restrictions.
 
 Hence, the delegated user should be highly trusted, and the account credentials must be kept secure. To do this:
 
@@ -123,7 +123,7 @@ When you install VMM with this user account, SPN will be registered.
 - The SQL Server’s computer name can't exceed 15 characters in length.
 - If the VMM management server and the SQL Server computer aren't members of the same Active Directory domain, then a two-way trust must exist between the two domains.
 - When you install SQL Server, select the **Database Engine Services** and **Management Tools - Complete** features.
-- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Ensure that no jobs are running when you perform the upgrade, or jobs may fail and may need to be restarted manually.
+- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Ensure that no jobs are running when you perform the upgrade, or jobs can fail and need to be restarted manually.
 - For the VMM database, for better performance, don't store database files on the disk that is used for the operating system.
 - If you're using Software Defined Networking (SDN) in VMM, then all networking information is stored in the VMM database. Because of this, you might want to consider high availability for the VMM database, using the following guidelines:
   - Failover clustering is supported and is the recommended configuration for availability within a single geographical area or datacenter. [Read more](/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server).

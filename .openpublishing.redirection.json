@@ -90,6 +90,10 @@
      "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-reports-power-bi"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/operations-manager-managed-instance-overview.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/overview"
+  },
+  {
      "source_path" : "SystemCenterDocs/scom/dashboards-on-azure-managed-grafana.md",
      "redirect_url" : "/azure/azure-monitor/scom-manage-instance/dashboards-on-azure-managed-grafana"
   },
@@ -3865,6 +3869,10 @@
 {
      "source_path": "SystemCenterDocs/scom/sql-server-management-pack-tasks.md",
      "redirect_url": "/system-center/scom/sql-server-management-pack-tasks-overview"
+ },
+ {
+     "source_path": "SystemCenterDocs/scom/managed-instance-management-pack-automatic-monitoring.md",
+     "redirect_url": "/system-center/scom/managed-instance-management-pack-automatic-monitoring-service-principal-name"
  }
  ]
 }
