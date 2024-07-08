@@ -12,8 +12,7 @@ ms.assetid: 912dfce9-c159-4de2-853b-c47fc161b5ca
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/08/2024
 ---
 
 # Get VM Status Activity

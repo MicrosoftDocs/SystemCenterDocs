@@ -12,8 +12,7 @@ ms.assetid: ffdc4a8b-e875-437d-afa0-9a1a0f1007bf
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 07/08/2024
 ---
 
 # Get Resource Pool Properties Activity

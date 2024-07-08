@@ -13,8 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/08/2024
 ---
 # Add VM Disk Activity
 
@@ -62,8 +61,6 @@ The activity publishes all the data from the required and optional properties in
 ## Configuring the Add VM Disk Activity
 
 The following procedure describes the steps required to configure an Add VM Disk activity.
-
-#### To configure the Add VM Disk Activity
 
 1.  From the **Activities** pane, drag an **Add VM Disk** activity to the active runbook.
 

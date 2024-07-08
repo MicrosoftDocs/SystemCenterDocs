@@ -8,8 +8,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/08/2024
 ---
 
 # Clone Linux VM activity
@@ -90,8 +89,6 @@ With the exception of "Source VM/Template Path," all properties and published da
 ## Configuring the Clone Linux VM Activity
 
 The following procedure describes the steps required to configure a Clone Linux VM activity.
-
-#### To configure the Clone Linux VM Activity
 
 1.  From the **Activities** pane, drag a **Clone Linux VM** activity to the active runbook.
 

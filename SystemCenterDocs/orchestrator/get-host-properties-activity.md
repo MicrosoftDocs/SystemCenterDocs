@@ -12,8 +12,7 @@ ms.assetid: 32e0b1e4-6e53-42a3-a6e1-4f144d2e4073
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 07/08/2024
 ---
 
 # Get Host Properties Activity

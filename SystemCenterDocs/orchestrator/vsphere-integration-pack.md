@@ -7,8 +7,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/08/2024
 ---
 # VMware vSphere integration pack
 
@@ -30,6 +29,14 @@ The integration pack for VMware vSphere is an add-on for System Center - Orchest
 - Download the pack for Orchestrator 2019 from [here, on the download center](https://www.microsoft.com/download/details.aspx?id=58112&WT.mc_id=rss_alldownloads_all).
 ::: moniker-end
 
+::: moniker range="sc-orch-2022"
+
+- Download the pack for Orchestrator 2019 from [here, on the download center](https://www.microsoft.com/download/details.aspx?id=58112&WT.mc_id=rss_alldownloads_all).
+
+- Download the pack for Orchestrator 2022 from here, on the download center.
+
+::: moniker-end
+
 ## Register and deploy the pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. For procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
@@ -37,7 +44,6 @@ After you download the integration pack file, you must register it with the Orch
 ## Deploy the Integration Pack
 
 Learn about [deploying the VMWare VSphere Integration Pack](vsphere-integration-pack.md).
-
 
 ## Known issues
 

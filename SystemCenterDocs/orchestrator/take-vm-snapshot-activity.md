@@ -13,8 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/08/2024
 ---
 # Take VM Snapshot Activity
 

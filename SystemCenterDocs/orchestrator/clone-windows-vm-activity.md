@@ -13,8 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/08/2024
 ---
 # Clone Windows VM Activity
 
@@ -127,8 +126,6 @@ With the exception of "Source VM/Template Path," all the properties and publishe
 ## Configuring the Clone Windows VM Activity
 
 The following procedure describes the steps required to configure a Clone Windows VM activity.
-
-#### To configure the Clone Windows VM Activity
 
 1.  From the **Activities** pane, drag a **Clone Windows VM** activity to the active runbook.
 
