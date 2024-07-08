@@ -5,7 +5,7 @@ description: This article explains about how to enable enhanced console session 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/10/2022
+ms.date: 07/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -20,19 +20,19 @@ ms.custom: UpdateFrequency2
 
 ::: moniker-end
 
-This article provides information on how to configure enhanced console session in System Center - Virtual Machine Manager (VMM).
+This article provides information on how to configure enhanced console session in System Center Virtual Machine Manager (VMM).
 
 Console connect in VMM provides a way to connect to the VM without a network connection to it.  For information on deploying VMM console, see [install VMM console](install-console.md). Prior to 1801, the console connect in VMM supported only basic session where clipboard text can only be pasted through the **Type Clipboard Text menu** option.
 
 ::: moniker range="sc-vmm-1801"
 
-VMM 1801 and later supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
+VMM 1801 and later supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)**, and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
 
 ::: moniker-end
 
 ::: moniker range=">sc-vmm-1801"
 
-VMM supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
+VMM supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)**, and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
 
 ::: moniker-end
 
@@ -76,23 +76,23 @@ Ensure the following prerequisites:
 
 ::: moniker range="<sc-vmm-2019"
 
-5. Once you see the VM console, look for the **Open Enhanced Session** option at the top right of the page. Select it to launch the enhanced Session window.
+5. Once you see the VM console, look for the **Open Enhanced Session** option at the top right of the page. Select it to launch the Enhanced Session window.
 
    ![Screenshot of the enhanced console session.](media/enhanced-console/enhanced-console-enabled-status.png)
 
    > [!NOTE]
-   > This action will close the current session and opens a new session. You will be redirected to the sign in screen in the new session.
+   > This action will close the current session and open a new session. You will be redirected to the sign in screen in the new session.
 
  ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
 
-  5. Once you see the VM console, look for the **Enhanced Session** option at the top right of the page. Select it to launch the enhanced Session window.
+  5. Once you see the VM console, look for the **Enhanced Session** option at the top right of the page. Select it to launch the Enhanced Session window.
 
       ![Screenshot of the enhanced console session.](media/enhanced-console/enhanced-console-enabled-status-2019.png)
 
       > [!NOTE]
-      > This action will close the current session and opens a new session. You will be redirected to the sign in screen in the new session.
+      > This action will close the current session and open a new session. You will be redirected to the sign in screen in the new session.
 
 
 ::: moniker-end
@@ -106,14 +106,14 @@ Ensure the following prerequisites:
 
 ::: moniker range=">=sc-vmm-2019"
 
-6. To switch back to basic session, select **Basic Session** at the top right.
+6. To switch back to the basic session, select **Basic Session** at the top right.
 
 ::: moniker-end
 
 Once the Enhanced Session Mode policy is enabled on the host:
 
 - Close any open console sessions to view the **Enhanced Session** option.
-- For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in the console connect window.
+- For a VM that is booting for the first time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in the console connect window.
 
 
 ## Next steps

@@ -5,7 +5,7 @@ description: This article provides information about the ports and protocols use
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/21/2023
+ms.date: 07/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -19,7 +19,7 @@ ms.subservice: virtual-machine-manager
 
 ::: moniker-end
 
-As part of your System Center Virtual Machine Manager (VMM) deployment, you need to allow access for the ports, and protocols that the VMM server and components will use. It's important to plan this in advance. Some of the port settings are configured in VMM setup, and if you want to modify them after you set up VMM for the first time, you'll need to reinstall to do so.
+As part of your System Center Virtual Machine Manager (VMM) deployment, you need to allow access for the ports and protocols that the VMM server and components will use. It's important to plan this in advance. Some of the port settings are configured in VMM setup, and if you want to modify them after you set up VMM for the first time, you'll need to reinstall to do so.
 
 ## Set up exceptions
 
