@@ -18,11 +18,7 @@ ROBOTS: noindex
 
 # Deploy Configuration Baseline activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The objective of this activity is to assign a configuration baseline to
 a collection. It requires a pre-existing baseline and a

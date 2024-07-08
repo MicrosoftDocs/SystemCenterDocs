@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Invoke Web Services
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Invoke Web Services activity runs a web service with the XML parameters you specify.  
 

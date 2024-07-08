@@ -18,13 +18,6 @@ robots: noindex
 
 # Add Collection Rule Activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
-
 The Add Collection Rule activity is used to define the membership of a
 collection by adding collection membership rules to the collection.
 Membership rules determine the resources that are included in the

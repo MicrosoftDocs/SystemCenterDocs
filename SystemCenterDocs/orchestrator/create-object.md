@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Create Object
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create Object is used to create a new Service Manager record associated with a specified class. This activity includes support for incidents and changes.
 

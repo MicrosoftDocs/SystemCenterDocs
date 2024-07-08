@@ -12,11 +12,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 ---
 # Scale Tier In activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Scale Tier In activity is used in a runbook to remove one virtual machine instance from a specified service tier.
 

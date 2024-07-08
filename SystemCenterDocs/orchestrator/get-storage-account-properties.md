@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 
 # Get Storage Account Properties
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Get Storage Account Properties** activity returns system properties for the specified storage account. It's part of the **Azure Storage** category activity.
 

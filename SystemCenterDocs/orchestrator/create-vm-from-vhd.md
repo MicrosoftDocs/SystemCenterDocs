@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Create VM from VHD
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create VM from VHD activity is used to create a new virtual machine from an existing virtual hard disk.
 

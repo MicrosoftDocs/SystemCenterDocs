@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # List OS Images
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **List OS Images** activity retrieves a list of the operating system images from the image repository. It's part of the **Azure Virtual Machine Images** category activity.
 

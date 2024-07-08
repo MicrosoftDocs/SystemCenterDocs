@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # List Container
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **List Container** activity returns a list of the containers under the specified storage account. It's part of the Azure Storage category activity.
 

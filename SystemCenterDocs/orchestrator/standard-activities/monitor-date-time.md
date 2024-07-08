@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Monitor Date/Time
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor Date/Time activity invokes runbooks at a time or interval that you specify. Use the Monitor Date/Time activity to invoke your runbooks at a specific time once a day, week, or month. You can also schedule runbooks to be invoked when a specific number of seconds have passed since it was last invoked, or immediately after the runbook is deployed.  
 

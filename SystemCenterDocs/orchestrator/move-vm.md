@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Move VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Move VM activity is used to move the selected virtual machine from one network location to another.
 

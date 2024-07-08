@@ -17,11 +17,6 @@ manager: jsuri
 
 # Get Group
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Get Group activity in a runbook to get the properties of a group in the Microsoft Active Directory.
 

@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Maintenance Mode activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Maintenance Mode activity is used in a runbook to enter and exit the maintenance mode for an ESX host controlled by the VMware vSphere vCenter server. Entering the maintenance mode prevents VMs powering up or failing over to the host if it's taking part in a high availability cluster. This allows the runbook to enable the Maintenance mode before powering off the host for hardware maintenance.
 

@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 
 # Get Service activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Service activity is used in a runbook to return data on all of the services within the VMM management server. The published data is returned for each service.
 

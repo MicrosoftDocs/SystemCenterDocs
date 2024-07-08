@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Revert VM Snapshot activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Revert VM Snapshot activity is used in a runbook to revert a virtual machine to the last available snapshot. This allows the runbook to revert a snapshot to its previous state after you've finished using it.
 

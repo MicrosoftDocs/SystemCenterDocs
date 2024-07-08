@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Create VM Deployment
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Create VM Deployment** activity provisions a virtual machine based on the supplied configuration. It's part of the **Azure Virtual Machines** category activity.
 
