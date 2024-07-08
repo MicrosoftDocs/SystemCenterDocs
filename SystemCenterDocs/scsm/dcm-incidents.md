@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Set up incident generation in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides an example that shows how to inventory all computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in Configuration Manager.
 

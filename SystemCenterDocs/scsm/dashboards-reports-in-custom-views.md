@@ -17,11 +17,7 @@ ms.assetid: 5e98cc12-263e-440e-b641-1fdd435d4f45
 
 # Include dashboards and reports in custom views for the Service Manager Authoring Tool reports sample scenario
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 One of the benefits of using System Center - Service Manager with Microsoft SharePoint, and of including the new Microsoft Online Analytical Processing \(OLAP\) cubes in the Service Manager box, is that it's easy to create SharePoint dashboards using PerformancePoint Services in Microsoft SharePoint&nbsp;Server&nbsp;2010 or Microsoft Excel. You can then create a custom view in Service Manager to display these dashboards.
 

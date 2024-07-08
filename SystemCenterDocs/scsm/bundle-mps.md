@@ -17,11 +17,7 @@ ms.assetid: c9cb6eaf-d744-4f91-b1d4-3294812953df
 
 # Bundle management packs and resource files
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 A custom management pack might include references to resources, such as an image or a form assembly. To import such a management pack into Service Manager, you must first bundle the management pack file and its associated resources into a single .mpb management pack file.  
 

@@ -17,11 +17,7 @@ ms.assetid: 4c083343-c3b2-47a6-8cd9-ca5fc0a99a05
 
 # Use and manage standard reports in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article describes how to use standard reports in Service Manager.  
 

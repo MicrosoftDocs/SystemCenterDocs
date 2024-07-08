@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Configure your preference for sharing Service Manager diagnostic and usage data
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 During setup in Service Manager, on the **Diagnostic and usage data** page, for sharing your Service Manager diagnostic and usage data with Microsoft. This feature is on by default. Administrators can turn off this feature anytime by using the choice options in Service Manager Console and Self Service Portal’s Web.config file (may also require service restart)
 
