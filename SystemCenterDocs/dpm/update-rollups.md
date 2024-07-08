@@ -14,13 +14,6 @@ ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
 
 # Deploy and manage update rollups in Data Protection Manager
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
-
 This article provides information about how to install and verify update rollups (UR) for System Center - Data Protection Manager (DPM).
 
 >[!NOTE]
