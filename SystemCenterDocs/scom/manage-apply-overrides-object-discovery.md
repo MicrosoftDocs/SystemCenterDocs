@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2
 
 # Applying overrides to object discoveries
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager monitors computers and devices that it has discovered, and it also monitors applications and features that it discovers on monitored computers. There may be situations where you want to limit discovery. For example, you might want only some instances of SQL Server to be discovered and monitored, or you want to remove a computer that has already been discovered.
 

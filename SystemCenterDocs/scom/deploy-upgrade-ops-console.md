@@ -14,11 +14,7 @@ ms.topic: article
 
 # How to upgrade an Operations console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This procedure upgrades a standalone Operations console to System Center - Operations Manager. Perform this procedure locally on the computer that has a standalone Operations console installed. You don't have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
@@ -82,9 +78,7 @@ Before you begin the upgrade process, ensure that your server meets the minimum 
 The value of the **UIVersion** entry is 7.2.11719.0.
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
-The value of **UIVersion** is 8.0.13053.0. 
-::: moniker-end 
+
 
 
 ## Next steps

@@ -14,11 +14,6 @@ ms.topic: article
 
 # Recommendations for antivirus exclusions that relate to Operations Manager 2019 and later
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article outlines antivirus exclusions that relate to System Center 2019 Operations Manager and later.  For earlier versions of Operations Manager, see [antivirus exclusions (Operations Manager 2012, 2012 R2, and 2016)](/troubleshoot/system-center/scom/antivirus-exclusions-recommendations).
 
@@ -61,7 +56,7 @@ The following directory-specific exclusions for Operations Manager include real-
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-1801"
+::: moniker range=">=sc-om-2019"
 
 |Component | Directory Exclusion |
 |----------|----------|

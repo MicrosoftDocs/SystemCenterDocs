@@ -14,11 +14,7 @@ ms.assetid: e6c36fe0-9fde-474f-a862-446598da5973
 
 # Standard views in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Several views are created by default when System Center Operations Manager is installed. Management packs also contain views. When a management pack is imported, a folder that contains the views that are defined in the management pack is created in the Monitoring workspace.  
 

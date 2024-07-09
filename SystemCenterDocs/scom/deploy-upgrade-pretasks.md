@@ -14,11 +14,6 @@ ms.topic: article
 
 # Pre-Upgrade tasks when upgrading to System Center Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process.
 

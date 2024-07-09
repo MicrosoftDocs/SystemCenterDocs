@@ -14,11 +14,7 @@ ms.topic: article
 
 # OLE DB data source template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 _OLE DB_ (Object Linking and Embedding Database) is a Microsoft technology for accessing various data sources by using a common method to connect to different databases such as Microsoft SQL Server.
 
