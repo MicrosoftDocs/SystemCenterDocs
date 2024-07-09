@@ -13,11 +13,7 @@ ms.subservice: virtual-machine-manager
 
 # Provision a Hyper-V host or cluster from bare metal computers
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Use this article to provision a Hyper-V host or cluster from bare metal computers with nothing installed on them, in the System Center - Virtual Machine Manager (VMM) fabric.
 

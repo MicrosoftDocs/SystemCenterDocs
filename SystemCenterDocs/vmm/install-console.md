@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy24
 
 # Install the VMM Console
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to install the System Center Virtual Machine Manager (VMM) console on a remote computer and connect to the VMM server. When you install the VMM management server, the console is installed on it automatically.
 

@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Manage VMs using Microsoft Entra ID-based authentication & authorization and region-specific Azure subscriptions
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 This article provides information about how to manage the Azure Resource Manager-based and region-specific Azure subscriptions using System Center - Virtual Machine Manager (VMM).
