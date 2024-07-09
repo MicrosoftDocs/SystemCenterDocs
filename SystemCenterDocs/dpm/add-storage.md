@@ -15,7 +15,7 @@ ms.custom: engagement-fy23
 
 # Add Modern Backup Storage to DPM
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="sc-dpm-2016"
 
 Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient workload-aware storage.
 
