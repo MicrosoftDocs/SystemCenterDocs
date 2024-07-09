@@ -15,6 +15,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 
+# Get Documents
 
 The **Get Documents** activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 

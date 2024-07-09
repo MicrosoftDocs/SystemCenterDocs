@@ -8,7 +8,7 @@ manager: jsuri
 ms.date: 07/01/2024
 ms.custom: na
 ms.service: system-center
-monikerRange: '>sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
 ---
@@ -41,17 +41,6 @@ UNIX and Linux Monitoring with Operations Manager is [supported on many operatin
 
 The following subset of those operating systems now supports WS-Management communication over Kerberos: (Only the most recently released version of each distribution will be supported.)
 
-::: moniker range="<sc-om-2019"
-
-| Operating System | Version |
-|------------------|:---------|
-| Red Hat Enterprise Linux Server | 6 |
-| Red Hat Enterprise Linux Server | 7 |
-| Red Hat Enterprise Linux Server | 8 |
-| UBUNTU Server | 14 |
-| UBUNTU Server | 15 |
-
-::: moniker-end
 
 ::: moniker range="sc-om-2019"
 

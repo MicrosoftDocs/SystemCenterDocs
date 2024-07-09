@@ -451,19 +451,6 @@ Ubuntu 14.04, 16.04 are supported.
 ::: moniker range="sc-om-2016"
 
 ## Universal Linux (RPM package)
-Oracle Linux 6, 7 are supported.
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|glibc|C Standard shared library|2.5-12|  
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
-|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
-
-::: moniker-end
-
-::: moniker range="sc-om-2016"
-
-## Universal Linux (RPM package)
 Oracle Linux 7 are supported.
 
 |Required package|Description|Minimum version|  
