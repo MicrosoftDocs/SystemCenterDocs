@@ -8,7 +8,7 @@ manager: jsuri
 ms.date: 02/08/2024
 ms.custom: engagement-fy24
 ms.service: system-center
-monikerRange: 'sc-om-1807'
+monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
 ---

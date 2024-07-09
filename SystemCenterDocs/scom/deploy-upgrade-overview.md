@@ -69,7 +69,7 @@ There are several options for upgrade:
 
 ::: moniker range="sc-om-2019"
 
-3. If you want to maintain your earlier version of Operations Manager (2016) Operations Manager environment, you can install version 2019 in parallel, upgrade your agents, and multi-home them between both management groups.  
+3. If you want to maintain your earlier version of Operations Manager (2016) environment, you can install version 2019 in parallel, upgrade your agents, and multi-home them between both management groups.  
 
 ::: moniker-end
 
