@@ -9,7 +9,6 @@ ms.date: 06/06/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-monikerRange: '>= sc-vmm-1801 <= sc-vmm-1807'
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
@@ -22,7 +21,7 @@ This article provides information about how to manage the Azure Resource Manager
 
 You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later, and perform the required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows the management of Azure subscriptions through certificate-based authentication and authorization and VMs in global Azure region.
 
-VMM 1801 and later supports management of Azure subscriptions through Microsoft Entra ID and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
+VMM 2019 and later supports management of Azure subscriptions through Microsoft Entra ID and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
 
 Management of Azure subscriptions through certificate-based authentication and authorization requires Management certificate. [Learn More](/azure/azure-api-management-certs).
 
