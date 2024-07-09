@@ -58,16 +58,6 @@ Ensure the following prerequisites are met:
 
 ::: moniker-end
 
-::: moniker range="<sc-vmm-2019"
-
-Ensure the following prerequisites are met:
-
-- A Hyper-V host running Windows Server 2016.
-- A Hyper-V VM running Windows Server 2016.
-- A Hyper-V VM with configuration version 8.0 or greater.
-- An Intel processor with VT-x and EPT technology.
-
-::: moniker-end
 
 ## Enable network virtualization
 
