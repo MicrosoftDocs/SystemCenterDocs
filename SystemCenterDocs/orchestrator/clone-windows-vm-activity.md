@@ -92,7 +92,7 @@ With the exception of "Source VM/Template Path," all the properties and publishe
 |:---|:---|:---|:---|
 | Admin Password   | The password of the Administrator account of the cloned virtual machine.   | String   | No   |
 | Computer Name   | The name of the cloned virtual machine.   | String   | No   |
-| DHCP (not available in System Center 2016) | Indicates whether to use DHCP for assigning an IP address to the cloned virtual machine.   | Boolean   | Yes   |
+| DHCP (not available in System Center 2022) | Indicates whether to use DHCP for assigning an IP address to the cloned virtual machine.   | Boolean   | Yes   |
 | DNS Name   | The complete domain name for the cloned virtual machine.   | String   | No   |
 | DNS Server   | The name of the DNS server to resolve name requests for the cloned virtual machine.   | String   | No   |
 | DNS Suffix   | The DNS Suffix that will be assigned to the network adapter of the cloned virtual machine. For example, example.com.   | String   | No   |
