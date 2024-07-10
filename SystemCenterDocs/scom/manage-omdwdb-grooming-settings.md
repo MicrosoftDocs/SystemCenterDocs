@@ -14,11 +14,7 @@ ms.assetid: 8dfd8f03-85ac-4231-8861-1d98e354cf94
 
 # Configure grooming settings for the Reporting data warehouse database
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The Reporting data warehouse stores data for a specified length of time, depending on the data (Alert, State, Event, Aem, or Performance) and the aggregation type (raw data, hourly aggregations, daily aggregations).  The database is set up to delete older data in order to maintain performance by managing its size.  Deleting the older data is called **grooming**.  
 

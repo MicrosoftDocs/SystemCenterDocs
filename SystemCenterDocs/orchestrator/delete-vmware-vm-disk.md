@@ -12,11 +12,7 @@ ms.date: 07/08/2024
 ---
 # Delete a virtual disk from a VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete VM Disk activity is used in a runbook to remove or delete a virtual disk from a virtual machine that is controlled by the VMware vSphere server.
 

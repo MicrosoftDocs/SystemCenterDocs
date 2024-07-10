@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # List Service Certificate
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **List Service Certificate** activity is used in a runbook to list all the service certificates associated with the specified cloud service. It's part of the **Azure Certificates** category activity.
 

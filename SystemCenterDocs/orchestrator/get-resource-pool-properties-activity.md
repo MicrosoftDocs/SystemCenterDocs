@@ -17,11 +17,7 @@ ms.date: 07/08/2024
 
 # Get Resource Pool Properties Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Resource Pool Properties activity is used in a runbook to retrieve all the runtime information and static configuration information for a resource pool. This allows the runbook to retrieve the runtime information of a resource pool and populate a performance report.
 

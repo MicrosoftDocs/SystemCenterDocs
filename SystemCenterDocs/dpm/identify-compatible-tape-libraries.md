@@ -15,12 +15,6 @@ ms.custom: engagement-fy24
 
 # Identify compatible tape libraries
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 Find the latest list of [compatible tape libraries](./dpm-compatible-tape-libraries.md) for System Center Data Protection Manager (DPM).
 
 ## Virtual tape library support

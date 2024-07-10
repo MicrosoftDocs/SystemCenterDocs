@@ -17,11 +17,7 @@ ms.assetid: 50891279-b22e-4d84-baf7-1488f6e9585b
 
 # Guidelines for creating custom activities in the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Service Manager automates various information technology (IT) processes. For the Incident Management process, for example, Service Manager includes various automated steps, such as automated notifications to users when incidents are created or resolved and automatic routing of incidents to various queues, based on categorization. This automation is implemented by using workflows that are defined for the various solutions, and it uses Windows Workflow Foundation (WF) capabilities to describe, execute, and track the automated operations.
 

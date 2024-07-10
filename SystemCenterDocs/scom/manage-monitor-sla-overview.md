@@ -14,11 +14,7 @@ ms.assetid: c7f7aac4-41b4-4094-bad6-3a509ff71bba
 
 # Monitoring service level objectives by using Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 To ensure that resources, such as applications and systems, are available and performing at acceptable levels, companies set goals for their service availability and response times. System Center Operations Manager provides the capability to monitor these service goals by tracking service level objectives.
 

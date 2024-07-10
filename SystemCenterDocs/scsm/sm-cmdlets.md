@@ -15,11 +15,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Configure and use Service Manager cmdlets for Windows PowerShell
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides an introduction to the Service Manager cmdlets for the Windows PowerShell command-line interface.
 

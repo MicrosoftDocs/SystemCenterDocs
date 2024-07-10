@@ -15,11 +15,6 @@ ms.custom: intro-deployment, engagement-fy23
 
 # Deploy VMs in the VMM fabric from a blank virtual hard disk
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 This article describes how to create and deploy virtual machines in the System Center - Virtual Machine Manager (VMM) fabric from a virtual hard disk (VHD).

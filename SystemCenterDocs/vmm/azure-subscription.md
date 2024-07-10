@@ -14,13 +14,9 @@ ms.custom: UpdateFrequency2
 
 # Add an Azure subscription in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-::: moniker range="<=sc-vmm-1807"
+::: moniker range="sc-vmm-2016"
 
 You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), and perform basic actions on Azure instances in the subscriptions.
 
@@ -47,21 +43,11 @@ Here's what you need to add an Azure subscription in VMM:
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
 
-> [!NOTE]
-> To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create a Microsoft Entra ID application using the Azure portal and make note of the Directory ID, Application ID, and Key.
 
-::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-> [!NOTE]
-> To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create a Microsoft Entra ID application using the Azure portal and make note of the Directory ID, Application ID, and Key.
-
-::: moniker-end
-
-::: moniker range="<=sc-vmm-1807"
+::: moniker range="sc-vmm-2016"
 
 ## Set up the Add Azure Subscription feature
 

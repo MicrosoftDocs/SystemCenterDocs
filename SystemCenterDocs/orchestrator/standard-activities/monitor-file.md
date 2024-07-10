@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Monitor File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor File activity invokes a runbook when files that you specify in folders and sub-folders have changed. You can monitor a file that indicates the completion of a transaction. For example, there are nightly transfers sent to your runbook server, and when the transfer is complete a file with the name "Complete" is written to the folder. This activity can automatically invoke a runbook that processes all the files in the folder when the "Complete" file is created.  
 

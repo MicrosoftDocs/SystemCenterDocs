@@ -14,11 +14,7 @@ ms.topic: article
 
 # How to set credentials for Accessing UNIX and Linux computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article contains procedures for how to set credentials in wizards for the following tasks, as set by wizards in System Center - Operations Manager:  
 

@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Prepare a production environment for upgrade
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Use the following procedures to prepare for System Center - Service Manager upgrade by creating a production environment and preparing it for production data for the purpose of upgrade testing.
 

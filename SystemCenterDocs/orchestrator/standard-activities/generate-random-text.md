@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Generate Random Text
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Generate Random Text activity generates random strings of text.  
 

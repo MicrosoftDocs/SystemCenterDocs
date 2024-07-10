@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 # System Center – Virtual Machine Manager build versions
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to determine your current Microsoft System Center – Virtual Machine Manager version number and the corresponding update rollup (UR). Each update rollup release has a link to a support article describing the UR changes and links to the package downloads.
 
@@ -81,29 +77,6 @@ The following table lists the release history for Virtual Machine Manager 2016.
 |4.0.2775.0|[4581601](https://support.microsoft.com/kb/4581601) | October 2020 |Update Rollup 10 |
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
-
-## Virtual Machine Manager 1801 build versions
-
-The following table lists the release history for Virtual Machine Manager 1801.
-
-| Build Number | KB | Release Date | Description |
-| --- | --- |--- |--- |
-|4.1.3223.0 |n/a | February 2018 |Version 1801 |
-
-::: moniker-end
-
-::: moniker range="sc-vmm-1807"
-
-## Virtual Machine Manager 1807 build versions
-
-The following table lists the release history for Virtual Machine Manager 1807.
-
-| Build Number | KB | Release Date | Description |
-| --- | --- |--- |--- |
-|4.1.3403.0 |[4135364](https://support.microsoft.com/kb/4135364) | July 2018 |Version 1807 |
-
-::: moniker-end
 
 ## Next steps
 [What's New in VMM](whats-new-in-vmm.md)

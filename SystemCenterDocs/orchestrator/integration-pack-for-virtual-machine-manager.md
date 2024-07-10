@@ -13,11 +13,7 @@ ms.custom: engagement-fy24
 
 # Integration pack for System Center VMM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The integration pack for System Center - Virtual Machine Manager (VMM) is an add-in for System Center - Orchestrator. Tee pack enables you to automate the following activities:
 
@@ -53,7 +49,6 @@ The activities from the VMM Integration Pack connect to a VMM Console, which in 
 
 ::: moniker range="<=sc-orch-2019"
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
-- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 ::: moniker-end
 

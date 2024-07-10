@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2
 
 # Manage roles and permissions in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 System Center - Virtual Machine Manager (VMM) allows you to manage roles and permissions. VMM provides:
 

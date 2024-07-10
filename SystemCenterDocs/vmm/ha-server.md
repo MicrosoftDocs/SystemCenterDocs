@@ -14,11 +14,7 @@ ms.custom: intro-deployment, engagement-fy24
 
 # Deploy a highly available VMM management server
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes the steps for deploying a highly available System Center - Virtual Machine Manager (VMM) server.
 

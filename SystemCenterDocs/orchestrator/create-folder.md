@@ -18,11 +18,7 @@ ms.date: 05/16/2024
 ---
 # Create Folder
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create Folder activity is used in a runbook to create a folder on an FTP server.
 

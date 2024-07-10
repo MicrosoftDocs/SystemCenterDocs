@@ -18,11 +18,7 @@ ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 
 # Manage the Service Manager data warehouse
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 In order to manage the data warehouse, which is primarily used by reporting, you must perform maintenance tasks on data warehouse jobs. For example, you can view their status, pause and resume, set a schedule, enable and disable schedules, and troubleshoot data warehouse jobs. You can perform all of these maintenance tasks by using Windows PowerShell cmdlets. In addition, you can perform some of these tasks through the Service Manager console.
 

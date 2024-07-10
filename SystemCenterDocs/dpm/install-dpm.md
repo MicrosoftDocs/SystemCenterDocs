@@ -13,12 +13,6 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 
 # Get DPM installed
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
 1. Read the [Setup prerequisites](#setup-prerequisites).
@@ -302,10 +296,10 @@ If you want to set up DPM on an RODC, you'll need to do a couple of steps before
 
 ## Upgrade SQL 2016 to SQL 2017
 
-If you want to use SQL 2017 with DPM Semi-Annual Channel 1801 or later, you must upgrade SQL 2016 to SQL 2017. You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
+You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
 
 >[!NOTE]
-> SQL 2017 is supported as a database with DPM 1801 in upgrade scenarios. With DPM 2019, SQL 2017 is supported as a DPM database in both new installation and upgrade scenarios of DPM.
+> With DPM 2019, SQL 2017 is supported as a DPM database in both new installation and upgrade scenarios of DPM.
 
 1. On the SQL Server, back up the Reporting database.
 2. Back up the Encryption Keys.

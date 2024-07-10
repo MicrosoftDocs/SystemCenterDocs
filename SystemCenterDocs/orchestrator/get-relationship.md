@@ -17,11 +17,7 @@ manager: jsuri
 
 # Get Relationship
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Relationship activity is used to generate a list of objects from two different classes that are related by the criteria you specify.
 

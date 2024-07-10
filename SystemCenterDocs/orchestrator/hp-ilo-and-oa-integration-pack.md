@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 
 # HP iLO and OA Integration Pack for System Center - Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Integration Pack for HP iLO and OA is an add-on for System Center - Orchestrator that enables you to automate HP iLO and OA commands.
 

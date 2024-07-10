@@ -18,12 +18,6 @@ ms.date: 06/05/2024
 
 # Get Entry
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Get Entry activity is used in a runbook to retrieve the existing entries from HP Service Manager.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](service-manager-activities.md).

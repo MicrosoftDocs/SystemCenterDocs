@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Set up VM networks in SDN using VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides information about how to create VM networks in an SDN using System Center - Virtual Machine Manager (VMM).
 

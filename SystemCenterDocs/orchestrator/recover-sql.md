@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Recover SQL
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Recover SQL activity is used in a runbook that recovers a SQL database to its original location or to a network folder.
 

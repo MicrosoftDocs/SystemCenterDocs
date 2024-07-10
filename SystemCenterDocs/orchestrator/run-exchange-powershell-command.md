@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Run Exchange PowerShell Command
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Run Exchange PowerShell Command activity in a runbook to run Exchange 2010 cmdlets.
 

@@ -15,11 +15,6 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Import data and alerts from Operations Manager into Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 If your organization uses System Center Operations Manager to monitor systems in your enterprise, the agents that are deployed gather information about configuration items that are discovered, and, as problems are detected, System Center Operations Manager generates alerts. Two connectors for Operations Manager are available in Service Manager: the configuration item (CI) connector that imports objects that are discovered by Operations Manager into the Service Manager database, and an alert connector that can create incidents based on alerts.
 

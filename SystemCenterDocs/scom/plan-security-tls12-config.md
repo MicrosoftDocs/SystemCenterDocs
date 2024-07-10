@@ -14,11 +14,6 @@ ms.topic: article
 
 # How to implement Transport Layer Security 1.2
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management group.  
 
@@ -60,7 +55,7 @@ Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is re
 
 ::: moniker range="sc-om-2016"
 >[!NOTE]
->If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media doesn't include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation doesn't apply to Operations Manager version 1801.
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media doesn't include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 
 ::: moniker-end
 ## Configure Windows Operating System to only use TLS 1.2 protocol

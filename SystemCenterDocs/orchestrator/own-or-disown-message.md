@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Own or Disown Message
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Own/Disown Message activity is used in a runbook to take ownership or remove ownership of a message.
 

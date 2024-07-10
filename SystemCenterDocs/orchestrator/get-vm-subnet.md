@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 
 # Get VM Subnet activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get VM Subnet activity is used in a runbook to return all virtual subnets on the VMM management server that meet the filtering criteria.
 

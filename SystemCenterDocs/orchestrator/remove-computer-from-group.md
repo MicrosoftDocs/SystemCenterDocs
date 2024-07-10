@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Remove Computer From Group
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Remove Computer From Group activity in a runbook to remove a computer from a group in the Microsoft Active Directory.
 

@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Set up update servers in the VMM compute fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Learn about deploying update servers in the System Center - Virtual Machine Manager (VMM) fabric.
 
@@ -79,7 +75,7 @@ After you've added the WSUS server to the fabric, you can configure update basel
 3. Select **Home** > **Properties** > **Updates** for the baseline. In **Updates**, add or remove baselines as required. To ensure all security updates are remediated, don't remove anything.
 4. Select **Assignment Scope**, and select the host groups, clusters, standalone servers, and infrastructure servers to add to the baseline. Or select **All Hosts** to add all.
 
-::: moniker range="<=sc-vmm-1801"
+::: moniker range="sc-vmm-2016"
 
 > [!NOTE]
 > We recommend that you don't update the servers in a Storage Spaces Direct cluster (either hyper-converged or disaggregated) by using VMM, as it might cause data loss.
@@ -96,7 +92,7 @@ After you've added the WSUS server to the fabric, you can configure update basel
 6. In **Summary**, select **Finish**, and accept the **Microsoft License Terms** if needed to install any of the updates. Verify the baseline in **Library** > **Update Catalog and Baselines** > **Baselines**.
 
 
-::: moniker range="<=sc-vmm-1801"
+::: moniker range="sc-vmm-2016"
 
 > [!NOTE]
 > We recommend that you don't update the servers in a Storage Spaces Direct cluster (either hyper-converged or disaggregated) by using VMM, as it might cause data loss.

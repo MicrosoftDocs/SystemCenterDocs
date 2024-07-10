@@ -17,12 +17,6 @@ ms.date: 07/08/2024
 ---
 # Clone Windows VM Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Clone Windows VM activity is used in a runbook to create a copy of an existing Windows virtual machine or template. This creates virtual machines quickly and easily using the existing virtual machines or templates as models.
 
 The following tables list the required and optional properties and published data for this activity.

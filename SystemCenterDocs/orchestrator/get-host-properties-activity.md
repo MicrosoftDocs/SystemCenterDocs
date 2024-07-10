@@ -17,11 +17,6 @@ ms.date: 07/08/2024
 
 # Get Host Properties Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Host Properties activity is used in a runbook to retrieve a list of properties for a specified host in the VMware vSphere cluster. Examples of these properties include Connection Status (Powered on, disconnected, and so on) and Maintenance Mode state.
 

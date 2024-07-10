@@ -10,8 +10,6 @@
   items:
   - name: Operations Manager build versions
     href: release-build-versions.md
-  - name: Features deprecated
-    href: features-removed-or-deprecated.md
   - name: Release notes
     href: release-notes-om.md
   - name: What's new in Operations Manager
@@ -136,8 +134,6 @@
         href: upgrade-sqlserver-2019-operations-manager.md
       - name: How to upgrade Operations Manager databases to SQL Server 2022
         href: upgrade-sqlserver-2022-operations-manager.md
-      - name: How to upgrade to version 1807
-        href: upgrade-1801-to-1807.md
       - name: How to upgrade from the evaluation version of Operations Manager
         href: deploy-upgrade-eval.md
       - name: Post-upgrade tasks when upgrading Operations Manager
@@ -259,8 +255,6 @@
         href: manage-consoles-comparison.md
       - name: How to connect to the Operations and Web console
         href: manage-consoles-how-to-connect.md
-      - name: Operations console refresh improvements
-        href: manage-overview-console-refresh.md
       - name: Using Health Explorer
         href: manage-consoles-overview-healthexplorer.md
       - name: Using My Workspace

@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Send Platform Event
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Send Platform Event activity creates an activity event with text that you specify. You can use the Send Platform Event activity to create notifications of any problems or general information that occur in the runbook.  
 

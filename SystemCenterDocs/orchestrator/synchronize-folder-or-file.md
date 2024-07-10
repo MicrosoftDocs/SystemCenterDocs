@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Synchronize Folder or File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Synchronize Folder/File activity is used in a runbook to perform a one way synchronization of a folder/File.
 
