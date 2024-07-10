@@ -18,11 +18,7 @@ ms.date: 05/16/2024
 ---
 # Create Entry
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create Entry activity is used in a runbook to create new incident, service desk request, or change request entries in HP Service Manager.
 

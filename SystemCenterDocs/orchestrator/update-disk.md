@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Update Disk
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Update Disk activity is used to add more disk space and to change some of the properties of an existing disk.
 

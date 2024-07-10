@@ -15,12 +15,6 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 
 # What's supported and what isn't for DPM?
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 This article summarizes some of the common support information you might need when deploying and maintaining a System Center - Data Protection Manager.
 
 

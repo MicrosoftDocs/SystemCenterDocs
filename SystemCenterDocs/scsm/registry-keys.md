@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Registry keys used by Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 > [!CAUTION]
 > Incorrectly editing the registry can severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.

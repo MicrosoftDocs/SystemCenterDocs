@@ -14,16 +14,12 @@ ms.topic: conceptual
 
 # Repair the Windows agent
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 Use one of the following procedures to repair the installation of the Windows agent on agent-managed computers.  
 
-::: moniker range=">=sc-om-1807"
+::: moniker range=">=sc-om-2019"
 
-With Operation Manager 1807 and later, you can reconfigure the Application Performance Monitoring (APM) component for the agent from the Operations console.
+With Operation Manager 2019 and later, you can reconfigure the Application Performance Monitoring (APM) component for the agent from the Operations console.
 
 ::: moniker-end  
 
@@ -41,7 +37,7 @@ Follow these steps to repair the installation of the agent by using the Operatio
 
 5. In the **Repair Agents** dialog, either leave **Use selected Management Server Action Account** selected or do the following:
 
-   ::: moniker range=">=sc-om-1807"
+   ::: moniker range=">=sc-om-2019"
    1. Select **Other user account**.
 
    2. Enter the **User name** and **Password**, and enter or select the **Domain** from the list. Select **This is a local computer account, not a domain account** if the account is a local computer account.

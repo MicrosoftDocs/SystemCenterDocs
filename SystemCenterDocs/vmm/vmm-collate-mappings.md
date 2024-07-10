@@ -14,11 +14,6 @@ ms.custom: UpdateFrequency3
 
 # VMM server collate mapping
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides the code and associated details for the VMM server collate mapping.
 

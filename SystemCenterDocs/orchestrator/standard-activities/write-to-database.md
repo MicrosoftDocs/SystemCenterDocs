@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Write to Database
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Write to Database activity writes a row into a database table. This activity interacts with the following databases:  
 

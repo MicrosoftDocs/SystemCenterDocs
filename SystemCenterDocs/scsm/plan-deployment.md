@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Plan for System Center - Service Manager deployment
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 For System Center - Service Manager, several deployment options are available, and three options are presented in this article.  
 

@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 
 # Import Runbooks from System Center Orchestrator into Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Service Manager integrates with Orchestrator, providing the capability to synchronously invoke runbooks from within Service Manager using workflows. This capability provides integration between Orchestrator automation capabilities with the Self-Service Portal and business modeling capabilities. When this capability is combined with the Service Manager Service Catalog stack, it's possible to create an end-user-facing request offering with an Orchestrator runbook as part of the fulfillment process.
 
@@ -52,10 +48,11 @@ You can use the following procedures to create a connector for System Center - O
       1. Enter the URL of the Orchestrator Web service in the form of http://computer:port/Orchestrator2012/Orchestrator.svc, where *computer* is the name of the computer hosting the web service and *port* is the port number where the web service is installed. (The default port number is 81.)
       ::: moniker-end
 
-      ::: moniker range=">=sc-sm-1801"
+      ::: moniker range=">=sc-sm-2019"
 
       1. Enter the URL of the Orchestrator Web service in the form of http://computer:port/Orchestrator/Orchestrator.svc, where *computer* is the name of the computer hosting the web service and *port* is the port number where the web service is installed. (The default port number is 81.)
       ::: moniker-end
+
 
    4. On the **Connection** page, in the **Credentials** area, either select an existing account or select **New**, and then do the following:
 

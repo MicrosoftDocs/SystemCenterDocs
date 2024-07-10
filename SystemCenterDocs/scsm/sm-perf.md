@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # System Center - Service Manager performance
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Performance for System Center - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 

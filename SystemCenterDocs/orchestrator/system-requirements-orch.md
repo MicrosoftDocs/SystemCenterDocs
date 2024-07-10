@@ -30,35 +30,9 @@ This article details the system requirements for System Center 2019 - Orchestrat
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
-::: moniker range="sc-orch-1801"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-This article details the system requirements for System Center 1801 - Orchestrator.
-
-::: moniker-end
-
 ::: moniker range="sc-orch-2016"
 
 This article details the system requirements for System Center 2016 - Orchestrator.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1807"
-
-This article details the system requirements for System Center 1807 - Orchestrator.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1801"
-
-[!INCLUDE [system-reqs-orch-1801.md](../includes/system-reqs-orch-1801.md)]
 
 ::: moniker-end
 
@@ -68,11 +42,7 @@ This article details the system requirements for System Center 1807 - Orchestrat
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1807"
 
-[!INCLUDE [system-reqs-orch-1807](../includes/system-reqs-orch-1807.md)]
-
-::: moniker-end
 
 ## Next steps
 [Install Orchestrator](install.md).

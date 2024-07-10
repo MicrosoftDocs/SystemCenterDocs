@@ -14,11 +14,7 @@ ms.topic: article
 
 # Security Considerations for Microsoft Azure and Microsoft 365
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## Integration with Azure
 

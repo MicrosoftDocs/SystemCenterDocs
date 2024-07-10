@@ -14,11 +14,7 @@ ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 
 # Manage Operations console and Web console in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center – Operations Manager includes two consoles:
 - Operations console 

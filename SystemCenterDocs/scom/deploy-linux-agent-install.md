@@ -7,7 +7,6 @@ manager: jsuri
 ms.date: 08/22/2023
 ms.custom: UpdateFrequency5, intro-installation, engagement-fy24
 ms.service: system-center
-monikerRange: 'sc-om-1801'
 ms.subservice: operations-manager
 ms.topic: article
 ---

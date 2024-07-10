@@ -14,11 +14,7 @@ ms.assetid: 0b8ed9f1-b1f0-4006-976f-84d654c5f1da
 
 # Using views and dashboards in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In Operations Manager, views provide insight into the performance of your service, its health state, or the issues detected and presented in an alerts view. Views return independent data based on specific criteria, whereas dashboards are a way to view operational data in a condensed, single pane of glass, which your operations, engineering, and the business can use to make meaningful decisions. There are various types of dashboards that can accommodate the various roles in your IT organization. You may have a data storage Manager that wants to see the percentage of SQL servers using more than the allocated amount of disk space; you may have a systems engineer managing a website with high traffic and wants to know what average requests per/sec are for all their Web servers. Dashboards convey information succinctly and in a compact format so that the end-users can decide if they need to take action immediately.
 

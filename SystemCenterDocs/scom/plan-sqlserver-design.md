@@ -14,11 +14,7 @@ ms.topic: article
 
 # SQL Server Design Considerations
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
 
@@ -33,7 +29,7 @@ We don't recommend utilization of Operations Manager databases from an SQL Insta
 
 ## SQL Server requirements
 
-::: moniker range=">sc-om-1807"
+::: moniker range=">=sc-om-2019"
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
@@ -61,7 +57,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 ::: moniker-end
 
 
-::: moniker range=">sc-om-1807 <=sc-om-2019"
+::: moniker range="sc-om-2019"
 
 - SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 - SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
@@ -74,14 +70,6 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
-
-* SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
-* SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
@@ -89,19 +77,6 @@ Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserve
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-Before upgrading to SQL Server 2017, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md).
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center Operations Manager version 1801 to host Reporting Server, Operational, Data Warehouse, and ACS database:
-
-* SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2016 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
@@ -139,7 +114,7 @@ For more information, see Hardware and Software Requirements for Installing SQL 
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-1801"
+::: moniker range=">=sc-om-2019"
 
 
 For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?preserve-view=true&view=sql-server-2016).
@@ -271,7 +246,7 @@ The Operations Manager data warehouse database is a single source of failure for
 
 
 
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 ## SQL Server Always On
 
@@ -407,7 +382,7 @@ Once you understand the environment baseline, you can reduce the **max server me
 For more information, see [Server memory configuration options](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2014).
 
 ::: moniker-end
-::: moniker range=">=sc-om-1801"
+::: moniker range=">=sc-om-2019"
 
 For more information, see [Server memory configuration options](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2016).
 

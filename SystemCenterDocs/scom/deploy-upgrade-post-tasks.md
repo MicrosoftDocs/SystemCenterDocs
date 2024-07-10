@@ -14,11 +14,7 @@ ms.topic: article
 
 # Post-Upgrade tasks when upgrading to System Center Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 After you've completed the upgrade process, you must perform many post-upgrade tasks.
 
@@ -80,7 +76,7 @@ Perform the following tasks to verify that the upgrade was successful.
 
 ### Apply the workaround to make the AD rules work
 
-Previous AD rules don't work after upgrading to Operations Manager 2019. After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules don't work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 doesn't have this issue.
+Previous AD rules don't work after upgrading to Operations Manager 2019. After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), previous AD rules don't work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 doesn't have this issue.
 
 Use the following steps to fix this issue:
 

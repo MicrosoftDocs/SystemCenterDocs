@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Save Event Log
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Save Event Log activity is used to save entries from an event log so that they can be used later. The Save Event Log activity saves the event log entries to a delimited text file in a format that you specify. The activity allows you to choose which fields will be saved and allows you to filter against the fields to only allow particular event log entries to be saved. This activity uses a satellite license.  
 

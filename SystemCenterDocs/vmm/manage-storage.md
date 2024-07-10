@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2
 
 # Set up the VMM storage fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 You can use System Center - Virtual Machine Manager (VMM) to manage your physical and virtualized infrastructure. As part of that management, VMM can manage storage that you assign to virtual hosts and clusters and VMs.
 

@@ -14,11 +14,7 @@ ms.topic: article
 
 # Configure authentication with the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## Configure SSL encryption
 

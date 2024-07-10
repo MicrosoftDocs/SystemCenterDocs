@@ -14,11 +14,7 @@ ms.custom: engagement-fy23
 
 # How to install an Operations Manager management server
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this article assumes that you've already installed a supported version of Microsoft SQL Server. If you're hosting the Operations Manager operational and data warehouse database on a SQL Server Always On availability group (AG), be sure to use the node planned for the initial Primary replica for initial installation of these databases.
 
@@ -29,7 +25,7 @@ Once you've installed the first management server and created the management gro
 ::: moniker range="sc-om-2016"
 
 > [!NOTE]  
-> If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation doesn't apply to Operations Manager version 1801.
+> If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 
 ::: moniker-end
 

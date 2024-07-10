@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Manage Service Manager user roles
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This section provides an overview of user roles in [List of User Role Profiles in Service Manager](user-role-profiles.md). It includes procedures that you can use to work with user roles.
 

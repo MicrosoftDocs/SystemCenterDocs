@@ -14,11 +14,7 @@ ms.custom: intro-installation, UpdateFrequency2, engagement-fy23
 
 # Install Service Manager on a single computer (minimum configuration)
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 If you want to evaluate System Center - Service Manager and you've a minimal amount of hardware available, install Service Manager on one computer. A sample single-computer configuration is shown in figure&nbsp;1. This configuration won't support a production environment, and no scalability or performance estimates are provided. Because you can't install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper-V to create a virtual computer to host the data warehouse management server.
 

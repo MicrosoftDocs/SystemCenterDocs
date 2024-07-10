@@ -15,11 +15,7 @@ ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 
 # Deploy a virtual machine from the VMM library
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to deploy a virtual machine that's stored in the System Center - Virtual Machine Manager (VMM) library.
 

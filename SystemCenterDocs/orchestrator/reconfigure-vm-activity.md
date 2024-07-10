@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Reconfigure VM activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Reconfigure VM activity is used in a runbook to change the hardware settings of a virtual machine. This allows the runbook to increase the number of CPUs and Memory to increase the availability of the application running in the guest operating system.
 

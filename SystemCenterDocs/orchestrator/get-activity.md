@@ -17,11 +17,6 @@ manager: jsuri
 
 # Get Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Activity activity is used to query for activity records for the selected activity class.
 

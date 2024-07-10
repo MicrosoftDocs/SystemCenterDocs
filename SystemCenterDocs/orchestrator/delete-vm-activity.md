@@ -18,11 +18,7 @@ ms.date: 06/05/2024
 ---
 # Delete VM Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete VM activity is used in a runbook to permanently delete a virtual machine and all its associated files that have already been added to the VMware ESX server host. Using the Delete VM activity is the same as selecting **Delete from disk** from the VMware VirtualCenter server console. This allows the runbook to delete a virtual machine that's no longer needed.
 

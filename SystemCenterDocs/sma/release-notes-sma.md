@@ -31,29 +31,9 @@ This article provides the release notes for System Center 2019 - Service Managem
 
 ::: moniker-end
 
-::: moniker range="sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
 
-This article provides the release notes for System Center 1807 - Service Management Automation (SMA).
 
-[!INCLUDE [release-notes-sma-1807.md](../includes/release-notes-sma-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-sma-1801"
-
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-This article provides the release notes for System Center 1801 - Service Management Automation(SMA).
-
-::: moniker-end
-
-::: moniker range="sc-sma-1801"
-
-[!INCLUDE [release-notes-sma-1801.md](../includes/release-notes-sma-1801.md)]
-
-::: moniker-end
 
 ## Next steps
 

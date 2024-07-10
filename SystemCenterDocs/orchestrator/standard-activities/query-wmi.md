@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Query WMI
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Query WMI activity will send a WMI query to a system that you specify and return the results. This activity can also be used to check statistics on a remote server to create audit trails that can be reviewed later.  
 

@@ -17,12 +17,6 @@ manager: jsuri
 
 # Get Collection Member activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Get Collection Member activity is used in a runbook that queries an
 existing Configuration Manager collection for its member computers. This
 lets you specify computers individually to obtain status or perform

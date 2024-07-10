@@ -17,11 +17,6 @@ manager: jsuri
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Deployment Status activity is used to retrieve the status of an
 application, program, task sequence, or software update deployment

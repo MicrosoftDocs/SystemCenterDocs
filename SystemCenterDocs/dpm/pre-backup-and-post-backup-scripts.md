@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Pre-backup and Post-backup scripts for DPM
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 This article details the pre- and post-backup scripts that you can use for DPM and how to use them.
 
 A *pre-backup script* is a script that resides on a protected computer. It's executed before each DPM backup job and prepares the protected data source for backup.

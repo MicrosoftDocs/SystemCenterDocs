@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Remove Mailbox
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox in an on-premises or online Exchange environment. For an environment such as Microsoft 365, the Remove Mailbox activity can be used to delete a mailbox.
 
