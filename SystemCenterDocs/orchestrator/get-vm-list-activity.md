@@ -12,7 +12,7 @@ ms.assetid: 043ce1cb-31d6-47c7-991f-9278b01b0113
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/08/2024
+ms.date: 07/10/2024
 ---
 
 # Get VM List Activity

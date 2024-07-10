@@ -1,7 +1,7 @@
 ---
 title: Deploy the VMware vSphere Integration Pack for System Center - Orchestrator
 description: This article provides important information about downloading and deploying the VMware vSphere integration pack for System Center - Orchestrator.
-ms.date: 07/08/2024
+ms.date: 07/10/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -21,7 +21,7 @@ This article provides important information about downloading and deploying the 
 
 The pack requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and the VMware vSphere application, refer to the respective product documentation.
 
--   VMware vSphere 4.1 or 5.0
+-   VMware vSphere 5, 6, 7, and 8
 -   System Center - Orchestrator
 
 ## Download the pack

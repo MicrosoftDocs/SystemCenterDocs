@@ -8,7 +8,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 07/08/2024
+ms.date: 07/10/2024
 ---
 # Delete a virtual disk from a VM
 

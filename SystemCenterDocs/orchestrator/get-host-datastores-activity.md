@@ -12,7 +12,7 @@ ms.assetid: 260c93bf-de76-438a-92fe-1e3dcff4ed49
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/08/2024
+ms.date: 07/10/2024
 ---
 
 # Get Host Datastores Activity

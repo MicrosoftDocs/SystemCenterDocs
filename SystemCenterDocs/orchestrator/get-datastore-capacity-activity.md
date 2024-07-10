@@ -12,7 +12,7 @@ ms.assetid: 1c02fe50-cf8c-4451-984b-b1bda2b9fb0a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/08/2024
+ms.date: 07/10/2024
 ---
 
 # Get Datastore Capacity Activity

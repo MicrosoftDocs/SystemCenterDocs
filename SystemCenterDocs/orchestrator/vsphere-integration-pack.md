@@ -7,7 +7,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/08/2024
+ms.date: 07/10/2024
 ---
 # VMware vSphere integration pack
 
@@ -37,7 +37,7 @@ After you download the integration pack file, you must register it with the Orch
 
 ## Deploy the Integration Pack
 
-Learn about [deploying the VMWare VSphere Integration Pack](vsphere-integration-pack.md).
+Learn about [deploying the VMWare VSphere Integration Pack](/system-center/orchestrator/deploying-the-vmware-vsphere-integration-pack).
 
 ## Known issues
 
