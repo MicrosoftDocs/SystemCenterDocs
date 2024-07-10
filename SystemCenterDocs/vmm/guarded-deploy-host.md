@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Provision guarded hosts in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to deploy guarded Hyper-V hosts in a System Center - Virtual Machine Manager (VMM) compute fabric. [Learn more](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms) about guarded fabric.
 

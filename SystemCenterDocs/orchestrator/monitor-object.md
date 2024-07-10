@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Monitor Object
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Monitor Object activity uses filter criteria to look for new and updated records that satisfy the criteria that you specify. Only one Monitor Object activity can be used per workflow.
 

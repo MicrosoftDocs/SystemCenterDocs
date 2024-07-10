@@ -15,11 +15,7 @@ ms.custom: intro-deployment, engagement-fy23, UpdateFrequency2
 
 # Deploy VMs with rapid provisioning using SAN copy in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to rapidly provision VMs in the System Center - Virtual Machine Manager (VMM) fabric using SAN copy.
 

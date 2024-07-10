@@ -12,11 +12,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ---
 # Operations Manager integration pack activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The following configuration instructions apply to all the activities in the System Center Integration Pack for System Center - Operations Manager. Links to this section are included in the configuration instructions for each activity.
 

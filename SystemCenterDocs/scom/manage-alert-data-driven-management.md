@@ -14,11 +14,7 @@ ms.topic: article
 
 # Data driven alert management
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 To drive towards improved accuracy of issues detected and alerted for infrastructure services and application monitored by System Center - Operations Manager, the Tune Management Packs feature is available to highlight the management packs and its workflows, which generate a high volume of alerts.  
 

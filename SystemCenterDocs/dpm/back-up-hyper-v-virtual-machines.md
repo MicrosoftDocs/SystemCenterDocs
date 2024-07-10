@@ -15,12 +15,6 @@ ms.custom: engagement-fy23
 
 # Back up Hyper-V virtual machines
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 System Center Data Protection Manager (DPM) protects Hyper-V virtual machines by backing up the data of virtual machines. You can back up data at the Hyper-V host level to enable VM-level and file-level data recovery or back up at the guest-level to enable application-level recovery.
 
 ## Supported scenarios

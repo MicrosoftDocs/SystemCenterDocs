@@ -14,11 +14,7 @@ ms.subservice: operations-manager
 
 # Sudoers templates for elevation in UNIX/Linux monitoring
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Effective monitoring of UNIX or Linux operating systems requires some elevated permissions on the client system for both monitoring and maintenance tasks. There are sudoers configuration templates provided in this article for baseline operability.
 

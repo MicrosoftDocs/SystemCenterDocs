@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Find Text
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Find Text activity finds lines in a text file. Use the Find Text activity to find according to a search string that you specify.  
 

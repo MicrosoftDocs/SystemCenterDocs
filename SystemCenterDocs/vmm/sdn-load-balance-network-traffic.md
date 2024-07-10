@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Load balance network traffic in an SDN fabric using VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 You can use the Software Load Balancer (SLB) to distribute the network traffic evenly among the workloads in Software Define Networking (SDN) managed by the Cloud Service Providers (CSPs) and the tenants. For more information, see [Software Load Balancer (SLB)](sdn-slb.md).

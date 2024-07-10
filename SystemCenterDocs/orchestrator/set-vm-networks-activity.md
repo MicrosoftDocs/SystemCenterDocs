@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Set VM Networks Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Set VM Networks activity is used in a runbook to replace the first virtual machine network switch with one that is specified. This allows the runbook to change the network switch that a virtual machine is using.
 

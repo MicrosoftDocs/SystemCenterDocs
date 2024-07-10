@@ -14,11 +14,7 @@ ms.topic: article
 
 # .NET application performance monitoring template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The  **.NET Application Performance Monitoring**  (APM) template in System Center – Operations Manager lets you monitor Internet Information Services (IIS)-hosted .NET applications from server- and client-side perspectives to get details about application performance and reliability that can help you pinpoint root causes of incidents. (For System Center 2012 SP1 only: You can also monitor Windows Services.) When you specify settings, the types of events to collect, the performance goals to measure, and servers to monitor, .NET Application Performance Monitoring reveals how applications are running. You can see how frequently a problem is occurring, how a server was performing when a problem occurred, and the chain of events related to the slow request or method that is raising exceptions. This information is required to partner with software developers and database administrators to help ensure that applications perform correctly and reliably for your customers.
 

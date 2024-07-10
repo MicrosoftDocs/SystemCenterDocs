@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Work with integration modules
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 
 An [Integration Module](overview-powershell-workflows.md#integration-modules) is a package that contains a [Windows PowerShell Module](/powershell/scripting/developer/module/understanding-a-windows-powershell-module). For information on writing a Windows PowerShell Module, see [Writing a Windows PowerShell Module](/powershell/scripting/developer/module/writing-a-windows-powershell-module). An Integration Module can contain any of the valid Module Types specified in [Windows PowerShell Modules](/powershell/scripting/developer/module/understanding-a-windows-powershell-module). This includes Script Modules (.psm1), Binary Modules (.dll), and Manifest Modules (.psd1).

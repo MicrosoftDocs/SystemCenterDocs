@@ -14,11 +14,6 @@ ms.topic: article
 
 # TCP port template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The  **TCP Port**  template lets you monitor the availability of an application that's accessible over TCP.
 

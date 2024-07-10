@@ -14,11 +14,7 @@ ms.topic: article
 
 # Planning Security Credentials for Accessing Unix and Linux Computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 

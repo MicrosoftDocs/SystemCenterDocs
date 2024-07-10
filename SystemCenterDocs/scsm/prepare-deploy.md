@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Prepare for System Center - Service Manager deployment
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Before you start the deployment of System Center - Service Manager, you create a group of users in Active Directory Domain Services \(AD DS\), and you create or identify a domain account that will be used during the Setup process. Ensure that the domain account is a member of the appropriate groups that are necessary for proper operation of Service Manager. Keep the following in mind when you're installing Service Manager and Operations Manager on the same server:  
 
@@ -211,7 +207,7 @@ Use the following procedures to prepare computers for deployment of Service Mana
 
 9. In the **Current Report Server** area, select **Stop**, and select **Start**.
 
-::: moniker range=">=sc-sm-1807"
+::: moniker range=">=sc-sm-2019"
 
 > [!IMPORTANT]
 > When you install System Center Service Manager with SQL Server Reporting Services (SSRS) 2017 or later, Service Manager reports don't deploy, an event 33410 occurs and displays the details for the deployment failure. See the following information for the cause and resolution for this issue.  

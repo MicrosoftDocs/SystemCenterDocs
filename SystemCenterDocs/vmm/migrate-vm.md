@@ -15,11 +15,7 @@ ms.custom: intro-migration, UpdateFrequency2
 
 # Migrate a virtual machine in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to migrate a VM in System Center - Virtual Machine Manager (VMM).
 

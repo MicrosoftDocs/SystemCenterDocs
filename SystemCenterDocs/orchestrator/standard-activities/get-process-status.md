@@ -17,13 +17,6 @@ manager: jsuri
 ---
 # Get Process Status
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Get Process Status activity checks the status of a running process on any computer. Use the Get Process Status activity to check the status of a process before performing another action. For example, you can check that a process that was detected by the [Monitor Process](monitor-process.md) activity is still running before shutting it down with the [End Process](end-process.md) activity.  
 

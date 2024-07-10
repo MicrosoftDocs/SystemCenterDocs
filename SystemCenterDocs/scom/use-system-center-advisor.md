@@ -14,11 +14,7 @@ ms.topic: article
 
 # Monitor cloud fabric using System Center Advisor
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Advisor is an online service that analyzes installations of Microsoft server software and covers fabric components. With the latest version of Advisor, you can now view Advisor alerts in the Operations Manager Operations console.
 

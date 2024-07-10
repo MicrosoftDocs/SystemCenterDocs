@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Get Internet Application Status
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Get Internet Application Status activity checks the availability of an internet application server. You can check the availability of a Web (HTTP), Email (SMTP), Email (POP3), FTP, DNS, or custom server. You can also configure a server so that it's available after a power outage or a restart.  
 

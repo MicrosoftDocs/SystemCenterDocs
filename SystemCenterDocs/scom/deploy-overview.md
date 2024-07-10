@@ -14,11 +14,7 @@ ms.topic: article
 
 # Deploying System Center Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 All System Center Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs require.
 
@@ -37,10 +33,6 @@ For information about connecting management groups, see [Connecting Management G
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
 -   [Release Notes for System Center 2019 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2019)
-
--   [Release Notes for System Center 1807 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-1807)
-
--   [Release Notes for System Center 1801 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-1801)
 
 -   [Release Notes for System Center 2016 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2016)
 

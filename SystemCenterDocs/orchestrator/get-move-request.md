@@ -17,11 +17,6 @@ manager: jsuri
 
 # Get Move Request
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Get Move Request activity in a runbook to retrieve detailed information for an existing mailbox move request for an on-premises environment.
 

@@ -8,18 +8,14 @@ manager: jsuri
 ms.date: 01/24/2024
 ms.custom: na
 ms.service: system-center
-monikerRange: '>=sc-om-1801'
+monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Sample Linux log file management pack
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 

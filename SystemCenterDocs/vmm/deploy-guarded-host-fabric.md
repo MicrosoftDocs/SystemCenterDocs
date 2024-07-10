@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency3
 
 # Scenario - Deploy guarded hosts and shielded virtual machines in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in a System Center - Virtual Machine Manager (VMM) compute fabric.
 

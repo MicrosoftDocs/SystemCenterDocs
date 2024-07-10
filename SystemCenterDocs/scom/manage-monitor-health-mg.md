@@ -14,11 +14,7 @@ ms.assetid: 42973387-51b3-4276-a2e4-522f1eba2435
 
 # Monitoring the Health of the Management Group
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager introduces a new dashboard view that provides a comprehensive picture of the health of your management group. The dashboard tries to answer the question, "do I need to do anything?"  
 

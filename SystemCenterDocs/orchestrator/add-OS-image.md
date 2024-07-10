@@ -18,12 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Add OS Image
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Add OS Image** activity adds an operating system image that is currently stored in a storage account in your subscription to the image repository. It's part of the **Azure Virtual Machine Images** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

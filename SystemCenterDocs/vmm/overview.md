@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency.5, intro-overview, engagement-fy24
 
 # What is Virtual Machine Manager?
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the System Center suite used to configure, manage, and transform traditional datacenters. It helps to provide a unified management experience across on-premises, service provider, and the Azure cloud. VMM capabilities include:
 

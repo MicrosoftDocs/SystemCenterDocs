@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Move Group
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Move Group activity in a runbook to move a group under a new parent path in the Microsoft Active Directory.
 

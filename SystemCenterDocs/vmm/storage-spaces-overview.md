@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Scenario: Deploy Storage Spaces Direct with VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of Storage Spaces Direct (S2D) deployment in the System Center - Virtual Machine Manager (VMM) fabric.
 

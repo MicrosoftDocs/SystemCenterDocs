@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2
 
 # Work with VMM as a self-service user
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 This article describes how to work with System Center - Virtual Machine Manager (VMM) as a self-service user.

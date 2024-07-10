@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Get SNMP Variable
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Get SNMP Variable activity will query a network device for the value of variable that is assigned to the Management Information Base address that you specify. You can use the Get SNMP Variable activity to retrieve information about a network device to determine if an administrator needs to be notified.  
 

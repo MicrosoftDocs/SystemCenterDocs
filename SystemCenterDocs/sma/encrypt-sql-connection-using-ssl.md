@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Encrypt SMA network traffic
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 This article provides information about how to encrypt SMA Web Service to SQL connection by using Secure Socket Layer (SSL) and encrypt the network traffic between runbook worker and SQL database.
 

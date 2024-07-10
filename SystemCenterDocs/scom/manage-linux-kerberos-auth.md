@@ -8,20 +8,16 @@ manager: jsuri
 ms.date: 07/01/2024
 ms.custom: na
 ms.service: system-center
-monikerRange: '>sc-om-1801'
+monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Kerberos Authentication Support for Unix and Linux computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-::: moniker-end
-
-System Center Operations Manager version 1801 and later communicates with UNIX and Linux computers using the Secure Shell (SSH) protocol and Web Services for Management (WS-Management). Agent actions such as agent install, uninstall, and update occur over SSH and require a privileged account. Agent discovery and Monitoring utilize WS-Management and only require a low privileged account.
+System Center Operations Manager version 2019 and later communicates with UNIX and Linux computers using the Secure Shell (SSH) protocol and Web Services for Management (WS-Management). Agent actions such as agent install, uninstall, and update occur over SSH and require a privileged account. Agent discovery and Monitoring utilize WS-Management and only require a low privileged account.
 
 Operations Manager can now support Kerberos authentication wherever the WS-Management protocol is used by the Management Server to communicate with UNIX and Linux computers. Adding Kerberos support for UNIX and Linux computers provides greater security by allowing the Management Server to no longer need to enable basic authentication for Windows Remote Management (WinRM).
 
@@ -45,17 +41,6 @@ UNIX and Linux Monitoring with Operations Manager is [supported on many operatin
 
 The following subset of those operating systems now supports WS-Management communication over Kerberos: (Only the most recently released version of each distribution will be supported.)
 
-::: moniker range="<sc-om-2019"
-
-| Operating System | Version |
-|------------------|:---------|
-| Red Hat Enterprise Linux Server | 6 |
-| Red Hat Enterprise Linux Server | 7 |
-| Red Hat Enterprise Linux Server | 8 |
-| UBUNTU Server | 14 |
-| UBUNTU Server | 15 |
-
-::: moniker-end
 
 ::: moniker range="sc-om-2019"
 

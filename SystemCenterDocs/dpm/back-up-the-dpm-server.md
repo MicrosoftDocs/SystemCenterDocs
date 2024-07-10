@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency2
 
 # Back up the DPM server
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 To ensure that data can be recovered if System Center Data Protection Manager (DPM) fails, you'll need a strategy for backing up the DPM server. If it isn't backed up, you'll need to rebuild it manually after a failure, and disk\-based recovery points won't be recoverable. You can back up DPM servers using a couple of methods:
 
 -   **Back up the DPM server** - You can back up a primary DPM server with a secondary DPM server. The secondary server will protect the primary server database and the data source replicas stored on the primary server. If the primary server fails, the secondary server can continue to protect workloads that are protected by the primary server, until the primary server is available again. If you need to rebuild the primary server, you can restore the databases and replicas to it from the secondary server. You can also restore data to protected computers directly from the secondary server when the primary server isn't available. You can set up two servers, one as primary and another as secondary, or configure each server to act as the primary for the other. You can also configure a chain of DPM servers that protect each other according to the chain order.
@@ -255,18 +249,6 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
     ::: moniker range="sc-dpm-2016"
 
     If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-2016&preserve-view=true).
-
-    ::: moniker-end
-
-    ::: moniker range="sc-dpm-1801"
-
-    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-1801&preserve-view=true).
-
-    ::: moniker-end
-
-    ::: moniker range="sc-dpm-1807"
-
-    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-1807&preserve-view=true).
 
     ::: moniker-end
 

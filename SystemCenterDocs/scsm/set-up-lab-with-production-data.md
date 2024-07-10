@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Set up a lab environment with production data
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article explains how to create a lab environment and populate it with production data so that upgrades can be performed and tested before an actual upgrade in the production environment. The procedures in this article show you how to configure Service Manager in a lab environment with production data. You then perform an in-place upgrade. It's important to follow the steps in this article in the order that they appear.
 

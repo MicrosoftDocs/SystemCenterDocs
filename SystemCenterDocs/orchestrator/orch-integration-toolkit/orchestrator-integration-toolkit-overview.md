@@ -13,13 +13,7 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Orchestrator Integration Toolkit overview
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 System Center Orchestrator enables integration, efficiency, and business alignment of your IT environment. Using System Center Orchestrator, you can automate your IT operations and standardize your best practices to improve operational efficiency. Orchestrator allows you to connect different systems from different vendors without any knowledge of scripting or programming languages.
 

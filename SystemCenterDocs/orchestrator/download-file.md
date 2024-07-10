@@ -18,11 +18,6 @@ ms.date: 06/05/2024
 
 # Download File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Download File activity is used in a runbook to download a file from an FTP server.
 

@@ -14,11 +14,7 @@ ms.assetid: 21d8f3a5-2ac8-4776-b063-f6895a21cd5a
 
 # Build a simple monitoring dashboard using the Visio Web Part
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 SharePoint Enterprise edition includes a Web part for Visio Services called the Visio Web Access Web Part. You can add this Web part to any SharePoint Web part page to build a dashboard that uses published Visio diagrams to provide visualizations.  
 

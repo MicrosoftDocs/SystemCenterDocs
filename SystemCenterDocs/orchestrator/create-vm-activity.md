@@ -18,12 +18,6 @@ ms.date: 05/16/2024
 ---
 # Create VM Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Create VM activity is added to a runbook to create a new virtual machine. The runbook can be used to create virtual machines on demand based on self-service provisioning processes.
 
 The following tables list the required and optional properties and published data for this activity.

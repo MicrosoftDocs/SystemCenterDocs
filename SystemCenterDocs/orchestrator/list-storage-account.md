@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # List Storage Account
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **List Storage Account** activity lists the storage accounts available under the current subscription. It's part of the **Azure Storage** category activity.
 

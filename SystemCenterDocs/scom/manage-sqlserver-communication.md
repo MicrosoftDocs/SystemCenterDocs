@@ -14,11 +14,7 @@ ms.topic: article
 
 # How to configure Operations Manager to communicate with SQL Server
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 If after installing System Center Operations Manager, you move the Operations Manager operational or data warehouse database to a different SQL Server instance, move the databases to a SQL Server Always On availability group, or reconfigure the SQL Server instance, you need to follow the steps below to reconfigure the management group to reference the new TCP/IP Port, instance name, or computer name.  
 
@@ -36,7 +32,7 @@ For all of the steps below where a SQL instance network name is referenced, use 
    -  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`
    Change **DatabaseServerName** with your operational database SQL instance network name.  
 
-2. On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for all later releases (1801, 1807, 2019, and 2022), `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
+2. On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for all later releases (2019, and 2022), `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
 
    -  Under the tag `<Category Name=”Cmdb”>`, change the value for *ServerName* to your operational database SQL instance network name and change the value for *PortNumber* to the SQL Server port number.
 

@@ -17,11 +17,7 @@ manager: jsuri
 
 # Get VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get VM activity is used to retrieve an existing VM based on the filters you specify.
 

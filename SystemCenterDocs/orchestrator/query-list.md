@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Query List
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Query List** activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list by using a [Collaborative Application Markup Language (CAML)](/sharepoint/dev/schema/query-schema) that you specify.
 
