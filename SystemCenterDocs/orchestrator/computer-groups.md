@@ -12,11 +12,7 @@ ms.custom: UpdateFrequency3
 ---
 # Computer groups
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 System Center - Orchestrator is designed to interact with all of your data center systems. Computer groups let you target selected activities against a set of similar computer systems instead of a single computer. By configuring the activities in your runbook to use a computer group, you have the flexibility to add computers dynamically by adding them to the computer group.  
 

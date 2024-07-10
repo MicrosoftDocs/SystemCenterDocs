@@ -14,11 +14,7 @@ ms.assetid: ac556a83-37b4-4388-b033-d1a59c52ab79
 
 # How to create and scope views in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager Operations console views and dashboards display information that meets specific criteria. When you select a view, a query is sent to the Operations Manager database and the results of the query are displayed in the results pane. With dashboards, the performance widget queries the data warehouse database.
 

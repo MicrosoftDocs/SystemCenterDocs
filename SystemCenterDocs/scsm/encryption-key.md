@@ -17,11 +17,7 @@ ms.assetid: dbb276a9-7df5-4cd9-ae75-9099aabcaa93
 
 # Complete Service Manager deployment by backing up the encryption key
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 When you deployed your System Center - Service Manager management server and database, an encryption key was created so that data between the Service Manager and data warehouse management servers and their associated databases could be encrypted. When you deployed the Self-Service Portal, an encryption key was created so that data between the Self-Service Portal and the Service Manager database could be encrypted.  
 

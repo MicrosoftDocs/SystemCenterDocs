@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Generate DPM reports
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area, you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively, you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 
 ## DPM reports

@@ -14,11 +14,7 @@ ms.assetid: bea86d42-4838-46b0-96ac-75a0e8988e3c
 
 # How and When to Clear the Cache
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, when troubleshooting an issue with the Operations console or with an agent, you may see recommendations to "clear the cache." For more information on troubleshooting an issue with an agent, see [Not monitored and gray agents](manage-agents-not-healthy.md).  
 

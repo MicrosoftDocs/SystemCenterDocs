@@ -14,11 +14,6 @@ ms.assetid: f210ed66-1bed-4571-b506-868258f33329
 
 # View network devices and data in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 After System Center Operations Manager discovers your network devices, you can view information about the devices using the following procedures.
 

@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Set up networking for Hyper-V hosts and clusters in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Read this article to set up network settings for Hyper-V hosts and clusters in the System Center - Virtual Machine Manager (VMM) compute fabric.
 
@@ -111,7 +107,7 @@ For a host, affinity between vNIC and pNIC can be set at virtual switch level. Y
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-1807"
+::: moniker range=">=sc-vmm-2019"
 
 ## Monitor physical network devices
 

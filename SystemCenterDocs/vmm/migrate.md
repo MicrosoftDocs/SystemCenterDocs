@@ -15,11 +15,7 @@ ms.custom: intro-migration, engagement-fy24
 
 # Migration of virtual machines – overview
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of migrating virtual machines in the System Center - Virtual Machine Manager (VMM) fabric.
 

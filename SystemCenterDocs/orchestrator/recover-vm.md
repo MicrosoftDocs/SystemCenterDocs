@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Recover VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Recover VM activity is used in a runbook that recovers a virtual machine from a specified point in time so that it can be restored to a server running Hyper-V or to a network folder.
 

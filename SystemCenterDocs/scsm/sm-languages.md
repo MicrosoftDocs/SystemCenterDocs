@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Languages supported by System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 It's assumed in this article that you're installing System Center - Service Manager on a computer where no previous version of Service Manager is installed.
 

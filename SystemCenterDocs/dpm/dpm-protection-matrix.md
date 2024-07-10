@@ -15,18 +15,10 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 
 # What can DPM back up?
 
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-> [!NOTE]
-> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](./index.yml).
-
-::: moniker-end
-
 This article provides details of the workloads that DPM can back up.
 
 ::: moniker range="<sc-dpm-2019"
-Use the following matrix for DPM 2016 and Semi-Annual Channel releases: 1801 and 1807:
+Use the following matrix for DPM 2016:
 
 - Workloads – The workload type of technology.
 
@@ -197,7 +189,7 @@ The following sections provide details of the protection support matrix for DPM:
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM|Windows Server 2008 SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|N|N|Protect: Hyper-V computers, Hyper-V VMs hosted on Cluster Shared Volumes (CSVs)<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.|
 |Linux|Linux running as Hyper-V guest|On-premises Hyper-V virtual machine|Y|Y|Hyper-V must be running on Windows Server 2012 R2 or Windows Server 2016. Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 |VMware VMs | VMware server 5.5, 6.0, or 6.5 | On-premises Hyper-V virtual machine | Y | N | VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
-|VMware VMs | [VMware vSphere 6.7](back-up-VMware.md)| On-premises Hyper-V virtual machine | Y (Applicable for DPM 1807 and later) | N | VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
+|VMware VMs | [VMware vSphere 6.7](back-up-VMware.md)| On-premises Hyper-V virtual machine | Y (Applicable for DPM 2019 and later) | N | VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
 
 ::: moniker-end
 
@@ -217,14 +209,14 @@ DPM can protect data in the following clustered applications:
 
 -   SQL Server
 
-    ::: moniker range="<sc-dpm-2019"
+    ::: moniker range="sc-dpm-2016"
 
     > [!NOTE]
     > DPM doesn't support the protection of SQL Server databases hosted on Cluster Shared Volumes (CSVs).
 
     ::: moniker-end
 
-    ::: moniker range=">sc-dpm-1807"
+    ::: moniker range=">=sc-dpm-2019"
 
     > [!NOTE]
     > DPM 2019 UR2 and later supports the protection of SQL Server databases, hosted on Cluster Shared Volumes (CSVs).

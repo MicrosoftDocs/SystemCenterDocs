@@ -14,11 +14,7 @@ monikerRange: '>sc-vmm-2016'
 
 # Manage storage QoS for clusters
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 This article describes how to manage storage quality-of-service (QoS) policies for clusters in System Center - Virtual Machine Manager (VMM).  
@@ -27,13 +23,7 @@ This article describes how to manage storage quality-of-service (QoS) policies f
 ## Assign storage QoS policy for clusters
 Windows server 2016 and later allows the deployments to use the storage QoS feature with any VHDs residing on a Cluster Shared Volume (CSV). In VMM 2016, the management of SQoS is limited to VHDs residing on the S2D hyper-converged type clusters and Scale-Out File Servers only (SOFS). Also, the scope of QoS policies is based on the storage arrays, which isn't scalable to the scenarios like SAN, where VMM only manages the compute cluster.
 
-::: moniker range="sc-vmm-1801"
-
-VMM 1801 and later supports QoS on all managed clusters and also SOFS running on Windows Server 2016 and later.
-
-::: moniker-end
-
-::: moniker range=">sc-vmm-1801"
+::: moniker range=">=sc-vmm-2019"
 
 VMM supports QoS on all managed clusters and also SOFS running on Windows Server 2016 and later.
 
@@ -80,13 +70,9 @@ The following new parameters are added:
 ## Assign  a storage QoS Policy from templates
    Templates usage is a common way for deploying VMs and Services on a cloud.
 
-::: moniker range="sc-vmm-1801"
 
-   With VMM 1801 and later, you can select storage QoS policies from a template as well. For information on how to assign storage QoS policies from templates, see the related procedure in the [create a VM template](library-vm-templates.md) article.
 
-::: moniker-end
-
-::: moniker range=">sc-vmm-1801"
+::: moniker range=">=sc-vmm-2019"
 
    You can select storage QoS policies from a template as well. For information on how to assign storage QoS policies from templates, see the related procedure in the [create a VM template](library-vm-templates.md) article.
 

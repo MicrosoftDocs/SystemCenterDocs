@@ -15,11 +15,6 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Use Service Manager runbooks to automate procedures
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Runbooks in Service Manger are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
 

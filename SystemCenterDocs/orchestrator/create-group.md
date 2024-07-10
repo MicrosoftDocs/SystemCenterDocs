@@ -17,11 +17,6 @@ robots: noindex
 ---
 # Create Group
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Create Group activity in a runbook to create a group in the Microsoft Active Directory.
 

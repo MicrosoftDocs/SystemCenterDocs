@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Junction
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Junction activity allows you to wait for multiple branches in a runbook to complete before continuing past the junction. This activity can also publish data again from any branch so that downstream activities past the Junction activity can consume the data. Data from different branches than the one you selected won't be available.  
 

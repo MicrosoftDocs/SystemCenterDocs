@@ -14,11 +14,7 @@ ms.assetid: fe53bb3b-9072-4b7d-a518-a210c3e1e17f
 
 # Client monitoring using error reporting in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The Client Monitoring feature of System Center Operations Manager enables you to monitor operating systems and applications for errors and participate in the Error Reporting program.  The Error Reporting program collects diagnostics and usage data about Operations Manager, which is used by Microsoft to improve the installation experience, quality, and security of future releases.
 

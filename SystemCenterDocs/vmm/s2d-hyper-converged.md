@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23
 
 # Deploy a Storage Spaces Direct hyper-converged cluster in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 Read this article to set up a hyper-converged cluster running Storage Spaces Direct (S2D) in System Center - Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.

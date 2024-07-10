@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Create Relationship
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create Relationship activity is used to create a relationship between two existing entities. For example, you can create a one-to-many relationship between incidents and customers.
 

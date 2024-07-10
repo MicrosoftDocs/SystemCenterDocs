@@ -14,11 +14,7 @@ ms.assetid: 83921ac3-655e-4279-8f16-88818c88349f
 
 # Using the Operations Manager Operations console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, the Monitoring workspace is the primary workspace for operators, network and system engineers, and service desk. The Monitoring workspace is basically the same in both the Operations and Web consoles.  
 

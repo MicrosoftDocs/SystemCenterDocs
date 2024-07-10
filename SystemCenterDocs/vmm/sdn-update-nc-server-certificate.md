@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Update the network controller server certificate
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
   Network controller (NC) uses a certificate for Northbound communication with REST clients, such as VMM, and Southbound communication with Hyper-V hosts and software load balancers.
 

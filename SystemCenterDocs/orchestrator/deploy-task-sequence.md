@@ -18,11 +18,7 @@ ROBOTS: noindex
 
 # Deploy Task Sequence activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Deploy Task Sequence activity creates a new Configuration
 Manager Task Sequence Deployment that assigns an existing task sequence

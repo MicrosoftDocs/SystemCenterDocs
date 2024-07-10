@@ -17,11 +17,7 @@ ms.date: 07/08/2024
 ---
 # Customize VM Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Customize VM activity is used in a runbook to customize a virtual machine using a designated script. This allows the runbook to perform advanced customization using a pre-made Customization Spec.
 

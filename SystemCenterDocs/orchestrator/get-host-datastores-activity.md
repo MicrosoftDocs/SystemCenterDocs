@@ -17,12 +17,6 @@ ms.date: 07/08/2024
 
 # Get Host Datastores Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Get Host Datastores activity is used in a runbook to retrieve a list of datastores available for a specified host managed by the VMware vSphere server. This can be used to check capacity of the system when automatically adding a new VM to the managed host.
 
 The following tables list the required and optional properties and published data for this activity.

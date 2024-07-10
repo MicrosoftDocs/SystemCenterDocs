@@ -17,11 +17,7 @@ ms.assetid: 1d7437cd-2451-417e-b415-735bdca051b8
 
 # Customize and author classes with Service Manager authoring
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.  
 

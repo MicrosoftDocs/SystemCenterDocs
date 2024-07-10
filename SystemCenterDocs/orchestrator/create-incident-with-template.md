@@ -17,12 +17,6 @@ robots: noindex
 ---
 # Create Incident with Template
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Create Incident with Template activity is used to create a new incident from an existing Incident Template. You've the option to overwrite template values with the existing incident values or apply template values.
 
 >[!IMPORTANT]

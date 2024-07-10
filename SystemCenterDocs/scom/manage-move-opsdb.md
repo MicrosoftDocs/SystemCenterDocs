@@ -14,11 +14,7 @@ ms.topic: article
 
 # How to move the Operational database
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 After the initial deployment of System Center Operations Manager, you might need to move the operational database from one Microsoft SQL Server-based computer to another.
 

@@ -1,6 +1,6 @@
 ---
 title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager
-description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM) 1801 fabric.
+description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM)  fabric.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -8,16 +8,12 @@ ms.date: 05/09/2022
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-monikerRange: '>sc-vmm-1801'
+monikerRange: '>=sc-vmm-2019'
 ---
 
 # Provision a shielded Linux virtual machine in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 This article describes how to deploy Linux shielded virtual machines (VMs) in System Center - Virtual Machine Manager (VMM).
@@ -26,7 +22,7 @@ This article describes how to deploy Linux shielded virtual machines (VMs) in Sy
 ## Procedure to shield a Linux VM
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based virtual machines. Shielded VMs provide protection against malicious administrator actions when the VM's data is at rest or when untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
 
-With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs. This support is available in VMM 1801.
+With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs.
 
 ## Shield a Linux VM
 

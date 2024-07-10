@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Delete Relationship
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete Relationship activity is used to remove an existing relationship between two entities.
 

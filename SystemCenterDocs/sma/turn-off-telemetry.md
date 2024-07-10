@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Turn off telemetry settings in Service Management Automation
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 
 This article provides information about how to turn off the telemetry settings in System Center - Service Management Automation (SMA).

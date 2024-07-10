@@ -13,11 +13,7 @@ ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 
 # Deploy System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The sections in this article help you deploy System Center - Service Manager in one of several different scenarios. The scenarios range from a simple, one\-computer scenario to a four\-computer scenario that is designed to support production\-type environments. In addition, this article shows you how to register a Service Manager management group with the Service Manager data warehouse so that you can generate reports. You have the option of deploying the Self-Service Portal so you can provide access to Service Manager through a web browser. To improve performance and provide for redundancy, you can deploy additional secondary Service Manager management servers.  
 

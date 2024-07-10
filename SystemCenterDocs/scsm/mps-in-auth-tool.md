@@ -17,11 +17,7 @@ ms.assetid: 8cbaa369-8881-46f6-9615-e9cbab638d5c
 
 # Management packs in the Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 All customizations to objects and to functionality in Service Manager are implemented using management packs. This section describes management packs and how to use and manage them to implement various types of customizations using different customization methods.  
 

@@ -14,11 +14,7 @@ ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
 
 # Connect to the Operations and Web Console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager includes two consoles:
 - The Operations console
@@ -46,7 +42,7 @@ Follow these steps to connect an Operations console to a management server:
 
 ::: moniker-end
 
-::: moniker range=">= sc-om-1801"
+::: moniker range=">= sc-om-2019"
 
 ### Connect an Operations console to a management server
 
@@ -70,10 +66,10 @@ The Operations console opens with the focus on the Monitoring workspace.
 
 In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer that has connectivity to the Web console server. The Web console is limited to My Workspace and the Monitoring workspace.  
 
-::: moniker range="<sc-om-1807"
+::: moniker range="sc-om-2016"
 
 > [!NOTE]  
-> You must use Internet Explorer 11 to connect to the web console in both System Center 2016 - Operations Manager and version 1801 to access the Silverlight-enabled dashboards. In addition, the Operations Manager web console requires that JavaScript be enabled and Silverlight version 5 is installed on the client computer. To enable JavaScript in Internet Explorer, open **Internet Options**, and select the **Security** tab. Select the zone for the Web console (Internet, Local intranet, or Trusted sites), and select **Custom level**. Enable **Active scripting**, select **OK**, select **OK**, and then connect to the Web console.  The web console doesn't support running IE in Compatibility View, otherwise you'll receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://mskb.pkisolutions.com/kb/2536204)
+> You must use Internet Explorer 11 to connect to the web console in System Center 2016 - Operations Manager to access the Silverlight-enabled dashboards. In addition, the Operations Manager web console requires that JavaScript be enabled and Silverlight version 5 is installed on the client computer. To enable JavaScript in Internet Explorer, open **Internet Options**, and select the **Security** tab. Select the zone for the Web console (Internet, Local intranet, or Trusted sites), and select **Custom level**. Enable **Active scripting**, select **OK**, select **OK**, and then connect to the Web console.  The web console doesn't support running IE in Compatibility View, otherwise you'll receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://mskb.pkisolutions.com/kb/2536204)
 
 ::: moniker-end
 

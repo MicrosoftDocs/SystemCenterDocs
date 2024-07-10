@@ -14,11 +14,6 @@ ms.topic: article
 
 # Create an attribute
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Use the Create Attribute Wizard to create a new attribute for a management pack. For more information, see [Attributes](/previous-versions/system-center/system-center-2012-R2/hh457609(v=sc.12)) in the Authoring Guide.
 

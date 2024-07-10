@@ -14,11 +14,7 @@ ms.assetid: ccbc61b1-4919-4514-ac2e-ea68384e3be8
 
 # Configure grooming settings for the Operations Manager database
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The grooming process removes unnecessary data from the Operations Manager database in order to maintain performance by managing its size. You can configure the grooming setting for the following data types:  
 

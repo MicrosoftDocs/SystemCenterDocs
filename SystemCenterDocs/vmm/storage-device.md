@@ -14,11 +14,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Add storage devices to the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 To manage storage in System Center - Virtual Machine Manager (VMM), you discover and add it to the VMM storage fabric.
 

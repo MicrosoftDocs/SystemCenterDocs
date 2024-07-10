@@ -31,34 +31,9 @@ This article provides the release notes for System Center 2019 - Orchestrator.
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-This article provides the release notes for System Center 1807 - Orchestrator.
-
-[!INCLUDE [release-notes-orch-1807.md](../includes/release-notes-orch-1807.md)]
-
-::: moniker-end
-
-
-::: moniker range="sc-orch-1801"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-This article provides the release notes for System Center 1801 - Orchestrator.
-
-::: moniker-end
-
 ::: moniker range="sc-orch-2016"
 
 This article lists the release notes for System Center 2016 - Orchestrator.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1801"
-
-[!INCLUDE [release-notes-orch-1801.md](../includes/release-notes-orch-1801.md)]
 
 ::: moniker-end
 
