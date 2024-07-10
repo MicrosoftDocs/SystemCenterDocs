@@ -7,7 +7,7 @@ manager: jsuri
 ms.date: 10/29/2020
 ms.custom: na
 ms.service: system-center
-monikerRange: '>sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ms.assetid:
 ms.subservice: operations-manager
 ms.topic: conceptual

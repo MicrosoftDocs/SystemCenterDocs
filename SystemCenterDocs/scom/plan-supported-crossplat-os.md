@@ -298,17 +298,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2016"
-
-## Red Hat Enterprise Linux Server 5  
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|glibc|C Standard Libraries|2.12-1.7|  
-|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
-|PAM|Pluggable Authentication Modules|1.1.1-4|  
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -399,16 +388,6 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2016"
-
-## SUSE Linux Enterprise Server 11
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|glibc-2.9-13.2|C Standard shared library|2.9-13.2|  
-|PAM|Pluggable Authentication Modules|pam-1.0.2-20.1|  
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -418,19 +397,6 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |--------------------|---------------|-------------------|  
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|  
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|  
-
-::: moniker-end
-
-::: moniker range="sc-om-2016"
-
-## Universal Linux (Debian package)
-Debian 8 and Ubuntu 14.04, 16.04 are supported.
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|libc6|C Standard shared library|2.3.6|  
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
-|PAM|Pluggable Authentication Modules|0.79-3|  
 
 ::: moniker-end
 

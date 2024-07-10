@@ -29,7 +29,7 @@ We don't recommend utilization of Operations Manager databases from an SQL Insta
 
 ## SQL Server requirements
 
-::: moniker range=">sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 

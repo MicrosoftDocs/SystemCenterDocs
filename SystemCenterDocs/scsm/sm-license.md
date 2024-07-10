@@ -19,7 +19,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-::: moniker range=">sc-sm-2019"
+::: moniker range=">=sc-sm-2019"
 The evaluation version of Service Manager can be installed and used for 180 days. You can view the information about the evaluation period, and accordingly activate your SM.
 ::: moniker-end
 
@@ -44,7 +44,7 @@ If you try to connect to Service Manager after the expiry of the evaluation peri
 ## Activate Service Manager
 
 
-::: moniker range=">sc-sm-2019"
+::: moniker range=">=sc-sm-2019"
 You can activate Service Manager using the product key from Console and PowerShell by using the following steps.
 ::: moniker-end
 
