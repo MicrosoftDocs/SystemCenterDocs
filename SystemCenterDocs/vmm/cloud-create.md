@@ -5,7 +5,7 @@ description: This article provides instructions for creating a private cloud in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/24/2023
+ms.date: 07/10/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,11 +13,9 @@ ms.custom: engagement-fy24
 ---
 
 
-# Scenario: Create a private cloud
+# Create a VMM private cloud
 
-
-
-This article provides instructions for creating a private cloud in System Center - Virtual Machine Manager (VMM).
+This article provides instructions for creating a private cloud in System Center Virtual Machine Manager (VMM).
 
 You can create a private cloud from a host group or from a VMware resource pool. Host groups can contain a single host type or a mix of Hyper-V and VMware ESX hosts.
 
@@ -66,7 +64,7 @@ You can create a private cloud from a host group or from a VMware resource pool.
     > Only storage classifications for storage pools that are assigned to the selected host groups appear in the list.
 10. In **Library** > **Stored VM path**, browse and select the library share you want to use for the self-service users to store VMs. Select **OK**.
 11. In **Read-only library shares** >  **Add**, select one or more library shares where administrators can provide read-only resources to cloud users. Select **OK** and then select **Next**.
-12. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** check boxes and set quotas for the following resources:
+12. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** checkboxes and set quotas for the following resources:
 
     **Quota Type** | **Description**
     --- |---
@@ -93,7 +91,7 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 2. In **Storage QoS Policies**, select the policies that you want to assign to this cloud.
 
-3. Proceed with rest of the steps and complete the wizard.
+3. Proceed with the rest of the steps and complete the wizard.
 
 ::: moniker-end
 
@@ -108,7 +106,7 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 7. In **Storage**, select **Next**. VMM doesn't manage or assign storage classifications assigned to ESX hosts.
 8. In **Library** > **Stored VM path**, browse and select the library share you want to use for self-service users to store VMs, and select **OK**.
 9. In **Read-only library shares** >  **Add**, select one or more library shares where administrators can provide read-only resources to cloud users. Select **OK** and then select **Next**.
-10. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** check boxes and set quotas for the following resources:
+10. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** checkboxes and set quotas for the following resources:
 
     **Quota Type** | **Description**
     --- |---
@@ -159,7 +157,7 @@ The fabric admin can now offer storage QoS policies while authoring the VMM priv
 4. Review the summary and select **Finish**.
 
 > [!NOTE]
-> This list contains only those policies that are available in scope of all the clusters selected in the Resources section of the cloud wizard. This helps the self-service user to choose between the available plans, even after the VM is placed.
+> This list contains only those policies that are available in scope of all the clusters selected in the Resources section of the cloud wizard. This helps the self-service user to choose between the available plans even after the VM is placed.
 
  
 **On Upgrade**
