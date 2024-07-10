@@ -69,6 +69,15 @@ You can deploy shielded VMs in VMM in a couple of ways:
     - The OS disk for the VM must use the GUID Partition Table. This is required for generation 2 VMs to support UEFI.
     ::: moniker-end
 
+    ::: moniker range="sc-vmm-2025"
+    - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
+    - The operating system on the disk must be one of:
+        - Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016
+        - Windows 11, Windows 10
+    - The OS disk for the VM must use the GUID Partition Table. This is required for generation 2 VMs to support UEFI.
+    ::: moniker-end
+
+
 7. **Set up helper VHD**: The hosting service provider will need to create a VM that acts as a helper VHD for converting the existing machines. [Learn more](guarded-deploy-template.md#configure-the-shielding-helper-vhd).
 
 ## Adding shielding data files to VMM
