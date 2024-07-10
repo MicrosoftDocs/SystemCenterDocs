@@ -75,4 +75,4 @@ This article provides the upgrade information for System Center 2016 - Virtual M
 
 ## Next steps
 
-Learn about deploying the latest [update rollups](update-rollups.md).
+- Learn about deploying the latest [update rollups](update-rollups.md).
