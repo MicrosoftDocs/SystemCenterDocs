@@ -33,7 +33,7 @@ Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shiel
 
 **Use the following steps**:
 
-1.  Navigate to **VMM Settings** > **General Settings** > **Host Guardian Service Settings**. On the **Host Guardian Service Settings** page, you'll see a section for Fallback Configurations.
+1.  Navigate to **VMM Settings** > **General Settings** > **Host Guardian Service Settings**. On the **Host Guardian Service Settings** page, you see a section for Fallback Configurations.
 2.  Define the **primary and fallback HGS URLs** and select **Finish**.
 
     ![Screenshot of fallback HGS.](media/fallback-hgs/fallback-hgs-config.png)

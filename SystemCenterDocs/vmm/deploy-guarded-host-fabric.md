@@ -20,7 +20,7 @@ Guarded fabrics provide additional protections for VMs to prevent tampering and 
 
 ## Why do I need to protect VMs?
 
-Virtual machines contain sensitive data and configuration that the VM owner may not want a fabric administrator to see. However, since all the data for VMs are stored in files, the data can easily be copied off and inspected by malware or a malicious administrator.
+Virtual machines contain sensitive data and configuration that the VM owner would not want a fabric administrator to see. However, since all the data for VMs are stored in files, the data can easily be copied off and inspected by malware or a malicious administrator.
 
 Shielded VMs in Windows Server help prevent such attacks by rigorously attesting to the health of a Hyper-V host before booting up a VM, ensuring the VM can only be started in datacenters authorized by the VM owner, and enabling the guest OS to encrypt its own data by using a new, virtual TPM. The VM owner can select from the following two types of protection when creating a security-sensitive VM:
 - **Encryption Supported**: Ideal for enterprise private cloud scenarios where encryption of data at rest and in-flight is necessary, but the fabric administrators are still trusted. The VM console and other management conveniences remain available to fabric administrators.
