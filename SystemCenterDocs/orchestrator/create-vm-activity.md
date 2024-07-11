@@ -13,8 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 05/16/2024
+ms.date: 07/10/2024
 ---
 # Create VM Activity
 
@@ -68,8 +67,6 @@ The activity publishes all the data from the required and optional properties in
 ## Configuring the Create VM Activity
 
 The following procedure describes the steps required to configure a Create VM activity.
-
-#### To configure the Create VM Activity
 
 1.  From the **Activities** pane, drag a **Create VM** activity to the active runbook.
 
