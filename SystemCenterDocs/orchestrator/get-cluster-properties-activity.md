@@ -12,8 +12,7 @@ ms.assetid: 6a413406-a44f-4f36-b3fc-1a8c066e0b8e
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 07/10/2024
 ---
 
 # Get Cluster Properties Activity
