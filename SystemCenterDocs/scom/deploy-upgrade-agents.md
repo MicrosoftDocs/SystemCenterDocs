@@ -8,7 +8,7 @@ manager: jsuri
 ms.date: 04/17/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
-monikerRange: ' sc-om-2019 || sc-om-2022'
+monikerRange: ' sc-om-2019 || sc-om-2022 || sc-om-2025'
 ms.subservice: operations-manager
 ms.topic: article
 ---
