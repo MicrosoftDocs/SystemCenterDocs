@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Delete Line
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Delete Line activity deletes lines from a text file. Use the Delete Line activity to delete outdated lines of text from a text file.  
 

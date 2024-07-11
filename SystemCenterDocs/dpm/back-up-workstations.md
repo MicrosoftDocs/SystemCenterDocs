@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Back up client computers with DPM
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 You can deploy System Center Data Protection Manager (DPM) to back up client computers. Depending on the client operating system, you can back up volumes, shares, folders, files, and deduped volumes.
 
 ## Prerequisites and limitations

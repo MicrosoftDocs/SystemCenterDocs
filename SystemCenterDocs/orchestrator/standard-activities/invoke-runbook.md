@@ -17,13 +17,6 @@ manager: jsuri
 ---
 # Invoke Runbook
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 
 The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.  

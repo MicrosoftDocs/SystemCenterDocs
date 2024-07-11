@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2
 
 # Manage telemetry settings in Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Orchestrator.
 

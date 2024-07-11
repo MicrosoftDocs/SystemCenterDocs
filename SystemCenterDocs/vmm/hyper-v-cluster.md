@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Manage Hyper-V clusters in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Use this article to manage Hyper-V host clusters in the System Center - Virtual Machine Manager (VMM) fabric. You can configure cluster properties and manage cluster nodes.
 

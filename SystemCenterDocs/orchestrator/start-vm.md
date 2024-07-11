@@ -17,11 +17,6 @@ robots: noindex
 ---
 # Start VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Start VM activity is used to start a virtual machine that has been paused, shut down, or stopped.
 

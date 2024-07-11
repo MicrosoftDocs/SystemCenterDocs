@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2
 
 # Add storage to Hyper-V hosts and clusters
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Read this article to allocate provisioned storage to Hyper-V hosts and clusters in the System Center - Virtual Machine Manager (VMM) fabric.
 

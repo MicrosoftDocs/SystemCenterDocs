@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Configure HGS fallback URLs in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to define the fallback Host Guardian Service (HGS) URLs in System Center - Virtual Machine Manager (VMM) global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 

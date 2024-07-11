@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Planning for System Center - Service Manager deployment
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Welcome to the planning guide for System Center - Service Manager. This article and others in this guide help you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before you deploy it in your company or organization. There are also general guidelines that can help you plan for the better hardware and software performance and scalability.  
 

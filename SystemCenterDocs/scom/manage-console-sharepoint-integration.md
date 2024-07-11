@@ -14,11 +14,7 @@ ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
 
 # Use SharePoint to view Operations Manager data
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager can display select dashboards from the Web console in SharePoint to see at a glance the status of operational metrics, such as availability and performance of your managed services. This is especially beneficial to members of your organization who don't need access to Operations Manager, such as service managers, executives, and even end-users of the service.  
 
@@ -47,7 +43,7 @@ Use the following procedures to configure dashboards on a SharePoint page. This 
 
     - For Operations Manager 2016 and URs, append `&disabletree=true` at the end of the URL to disable the tree view from being displayed with the web part.
 
-    - For Operations Manager 1801 and later, and the corresponding URs, append `?removeTree=True` at the end of the URL to disable the tree view from being displayed with the web part.
+    - For Operations Manager 2019 and later, and the corresponding URs, append `?removeTree=True` at the end of the URL to disable the tree view from being displayed with the web part.
 
     To enable the tree view, don't append any value at the end of the URL.
 

@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Use management packs to add functionality to Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 There are two types of management packs: sealed management packs and unsealed management packs. A sealed management pack can't be modified, but an unsealed management pack can be modified.
 

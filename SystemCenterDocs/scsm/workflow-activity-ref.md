@@ -17,11 +17,6 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 
 # Service Manager Authoring Tool workflow activity reference
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
 

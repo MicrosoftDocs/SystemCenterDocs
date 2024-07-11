@@ -14,11 +14,7 @@ ms.assetid: 4b55aeec-869a-4072-89f5-0ae8e5a860ea
 
 # Running a service level tracking report
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 You can create a report that shows how your application or group is performing in relation to the defined service level objectives. The report that's generated provides both high-level information to give you a picture of the overall status at a glance, and detailed low-level information to provide specific information on the availability and performance metrics.  
 

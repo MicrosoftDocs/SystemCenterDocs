@@ -14,11 +14,6 @@ ms.topic: article
 
 # How to install the Operations Manager Reporting server
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In this procedure, the Reporting server is installed on a standalone server that's hosting the SQL Server database and SQL Server Reporting Services.
 
@@ -45,7 +40,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]
->If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Reporting services role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system. This limitation doesn't apply to Operations Manager version 1801.
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Reporting services role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 >
 
 ::: moniker-end

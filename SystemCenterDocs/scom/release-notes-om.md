@@ -29,15 +29,6 @@ This article lists the release notes for System Center 2022 - Operations Manager
 [!INCLUDE [release-notes-om-2022.md](../includes/release-notes-om-2022.md)]
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article lists the release notes for System Center 1807 - Operations Manager.
-
-[!INCLUDE [release-notes-om-1807.md](../includes/release-notes-om-1807.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -47,15 +38,6 @@ This article lists the release notes for System Center 2016 - Operations Manager
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article lists the release notes for System Center 1801 - Operations Manager.
-
-[!INCLUDE [release-notes-om-1801.md](../includes/release-notes-om-1801.md)]
-
-::: moniker-end
 
 ## Next step
 

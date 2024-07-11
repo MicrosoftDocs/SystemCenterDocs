@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete VM Disk
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Delete VM Disk** activity deletes the specified data or operating system disk from your image repository. It is part of the **Azure Virtual Machine Disks** category activity.
 

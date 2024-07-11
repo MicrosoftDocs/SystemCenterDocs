@@ -14,12 +14,6 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Resources for troubleshooting
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
-
 ::: moniker range="<=sc-vmm-2016"
 
 Resource | Description

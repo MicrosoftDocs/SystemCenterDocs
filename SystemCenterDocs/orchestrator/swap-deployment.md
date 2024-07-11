@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Swap Deployment
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Swap Deployment** activity initiates a virtual IP swap between the staging and production deployment environments for a service. It's part of the **Azure Deployments** category activity.
 

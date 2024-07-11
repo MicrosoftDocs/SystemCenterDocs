@@ -18,11 +18,7 @@ ms.date: 05/16/2024
 ---
 # Delete file on an FTP server
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete File activity is used in a runbook to delete a file on an FTP server.
 

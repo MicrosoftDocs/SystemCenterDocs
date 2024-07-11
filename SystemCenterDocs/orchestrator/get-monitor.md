@@ -17,11 +17,7 @@ manager: jsuri
 
 # Get Monitor
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify. For example, you can use the Get Monitor activity to retrieve a message and replicate the information to a trouble ticketing system.
 

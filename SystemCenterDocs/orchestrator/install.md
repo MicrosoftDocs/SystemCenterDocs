@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 
 # Install System Center - Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-orch-2022"
 
@@ -472,13 +468,6 @@ This article provides detailed installation instructions for the various Orchest
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1801"
-
-   > [!NOTE]
-   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
-
-::: moniker-end
-
 ::: moniker range="<=sc-orch-2019"
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
@@ -540,13 +529,7 @@ This article provides detailed installation instructions for the various Orchest
 
 ::: moniker-end
 
-   ::: moniker range="sc-orch-1801"
-
-   > [!NOTE]
-   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
-
-   ::: moniker-end
-
+   
 ::: moniker range="<=sc-orch-2019"
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
@@ -663,12 +646,6 @@ This article provides detailed installation instructions for the various Orchest
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1801"
-
-   > [!NOTE]
-   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
-
-::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
 

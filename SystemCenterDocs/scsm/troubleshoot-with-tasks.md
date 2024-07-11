@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Troubleshoot computer problems with Service Manager tasks
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 If you want to view the logs on a remote computer that is exhibiting problems, you must first create a task that opens Event Viewer. Event Viewer reads logs from remote computers.
 

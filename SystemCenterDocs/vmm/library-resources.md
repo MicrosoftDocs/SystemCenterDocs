@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Manage the VMM library
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 Read this article to learn how to manage the System Center - Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.

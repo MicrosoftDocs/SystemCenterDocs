@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 ---
 # Stop Service activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Stop Service activity is used in a runbook to stop a VMM service.
 

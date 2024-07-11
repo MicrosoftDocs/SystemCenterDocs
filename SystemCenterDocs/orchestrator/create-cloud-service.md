@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Create Cloud Service
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Create Cloud Service** activity creates a new cloud service in Azure. It's part of **the Azure Cloud Services** category activity.
 

@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 
 # Deploy Service Management Automation
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 To deploy Service Management Automation (SMA), you must install the SMA Web Service, set up the SMA runbook worker, and set up the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation.
 

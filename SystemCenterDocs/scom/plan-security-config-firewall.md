@@ -14,11 +14,7 @@ ms.topic: article
 
 # Configure a Firewall for Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This section describes how to configure your firewall to allow communication between the different Operations Manager features on your network.  
 

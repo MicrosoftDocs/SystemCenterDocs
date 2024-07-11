@@ -18,12 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete Deployment
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Delete Deployment** activity deletes the specified deployment. It's part of the **Azure Deployments** category activity.
 
 >[!IMPORTANT]

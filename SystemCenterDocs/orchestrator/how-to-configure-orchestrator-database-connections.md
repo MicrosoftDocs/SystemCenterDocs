@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 
 # How to configure Orchestrator database connections
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 As part of your day-to-day operations of Orchestrator, you may need to change the connection settings to the Orchestrator database. You can use the `DBSetup` utility to change this setting. The common scenario is connecting to a restored backup.  
 

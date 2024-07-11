@@ -13,29 +13,13 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 # Create logical switches
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric.
 
 ::: moniker range="sc-vmm-2016"
 
 [!INCLUDE [network-switch-2016-1801.md](../includes/network-switch-2016-1801.md)]
-
-::: moniker-end
-
-::: moniker range="sc-vmm-1801"
-
-[!INCLUDE [network-switch-2016-1801.md](../includes/network-switch-2016-1801.md)]
-
-::: moniker-end
-
-::: moniker range="sc-vmm-1807"
-
-[!INCLUDE [network-switch-1807.md](../includes/network-switch-1807.md)]
 
 ::: moniker-end
 
