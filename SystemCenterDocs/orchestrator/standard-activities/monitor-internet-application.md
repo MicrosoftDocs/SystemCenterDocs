@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Monitor Internet Application
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor Internet Application activity will invoke a runbook when an internet application server becomes unavailable or becomes available. You can monitor a Web, Email (POP3 or SMTP), FTP, or DNS server.  You can also configure your external FTP or Web servers to be reachable through the internet and then automatically restart the server if it's found to be unavailable.  
 

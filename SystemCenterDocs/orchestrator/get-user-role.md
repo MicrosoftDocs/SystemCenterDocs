@@ -17,11 +17,7 @@ manager: jsuri
 
 # Get User Role
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Returns data on all the user roles within the VMM server.
 

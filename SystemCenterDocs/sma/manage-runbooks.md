@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Manage runbooks for Service Management Automation
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 As a Service Management Automation (SMA) administrator, you need to configure and run runbooks. Activities including setting up the runbook workers and scheduling and tracking runbooks. There are two system runbooks that are included with SMA in addition to the runbooks you author:
 

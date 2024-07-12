@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Create VM from VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create VM From VM activity is used to create a new virtual machine from an existing virtual machine.
 

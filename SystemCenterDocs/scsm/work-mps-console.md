@@ -17,11 +17,7 @@ ms.assetid: 6bf81515-8883-471e-b1df-62c30ad9ae9e
 
 # Work with management packs in the Service Manager console
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 When you make customizations in the Service Manager console, you save them in a management pack file. Sometimes, you've to first create a new management pack file. Later, to implement the customizations of the management pack, you import it into the Service Manager console.  
 

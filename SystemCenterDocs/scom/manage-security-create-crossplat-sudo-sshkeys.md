@@ -15,11 +15,7 @@ ms.topic: article
 
 # How to configure sudo elevation and SSH keys
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 With Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer using sudo, allowing the user to run programs or access files that have the security privileges of another user account. For agent maintenance, you also have the ability to use Secure Shell (SSH) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
 

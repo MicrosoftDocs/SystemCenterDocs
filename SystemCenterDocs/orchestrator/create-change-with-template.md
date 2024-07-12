@@ -12,11 +12,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ---
 # Create Change with Template activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create Change with Template activity is used to configure a change record based on an existing template.
 

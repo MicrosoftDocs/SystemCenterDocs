@@ -14,11 +14,7 @@ ms.topic: article
 
 # Operations associated with user role profiles
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article provides a list of the operations in System Center Operations Manager that are associated with each profile.  
 

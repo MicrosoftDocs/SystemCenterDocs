@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Set up logical networks in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 Read this article to learn how to create logical networks in System Center - Virtual Machine Manager (VMM)

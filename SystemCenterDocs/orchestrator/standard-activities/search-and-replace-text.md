@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Search and Replace Text
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Search and Replace Text activity searches for and replaces text that you specify in a text file.  
 

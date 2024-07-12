@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # System Center - Service Manager parts
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 There are six major parts of a System Center - Service Manager installation, as described in the following table.  
 

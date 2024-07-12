@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 
 # Configure change and activity management in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 As part of your initial configuration of Service Manager, you've to configure settings and workflows for change and activity management. Create a change request template that you can use later when new change requests are submitted.
 

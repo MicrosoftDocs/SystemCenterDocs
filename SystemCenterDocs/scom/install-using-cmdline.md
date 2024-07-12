@@ -14,11 +14,7 @@ ms.topic: article
 
 # Install Operations Manager from the Command Prompt
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 You can install features of Operations Manager by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all the servers meet the minimum supported configuration requirements for System Center Operations Manager. For more information, see [System Requirements](./system-requirements.md).
 

@@ -14,11 +14,7 @@ ms.topic: article
 
 # Make changes to an Operations Manager Management Group
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 After the initial deployment of System Center – Operations Manager, you might need to make changes or upgrades to the original deployment for reasons such as the following:
 

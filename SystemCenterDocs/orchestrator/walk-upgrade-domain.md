@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Walk Upgrade Domain
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Walk Upgrade Domain** activity specifies the next upgrade domain to be walked during manual in-place upgrade or configuration change. It's part of the **Azure Deployments** category activity.
 

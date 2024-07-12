@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 
 # Get VM RDP File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Get VM RDP File** activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

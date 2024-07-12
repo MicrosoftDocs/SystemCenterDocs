@@ -13,16 +13,11 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Start VM Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Start VM activity is used in a runbook to start a virtual machine that has been added to a VMware vSphere server and isn't already running. The Start VM activity waits for the guest operating system to complete its boot up sequence before continuing to the next object in the runbook. This allows the runbook to start a virtual machine after it has been paused by the Suspend VM activity.
 

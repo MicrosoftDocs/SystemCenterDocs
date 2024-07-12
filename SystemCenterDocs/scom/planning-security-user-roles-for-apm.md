@@ -14,11 +14,7 @@ ms.topic: article
 
 # User Roles for Application Performance Monitoring
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## .NET Application Performance Monitoring tasks and user roles  
 

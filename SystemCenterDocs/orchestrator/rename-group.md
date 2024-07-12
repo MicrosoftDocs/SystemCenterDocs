@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Rename Group
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Rename Group activity in a runbook to rename a group in Microsoft Active Directory.
 

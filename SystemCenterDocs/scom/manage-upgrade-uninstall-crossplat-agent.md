@@ -14,11 +14,7 @@ ms.topic: article
 
 # Upgrading and uninstalling agents on UNIX and Linux computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article describes how to upgrade and uninstall agents on UNIX and Linux computers using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks. For more information, see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).
 

@@ -14,11 +14,7 @@ ms.assetid: 1c8d08db-f510-463a-83db-f5b45411090e
 
 # Use advanced search
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, advanced search is available in My Workspace, when you create a new search. You can also open advanced search in the Monitoring workspace on the **Tools** menu.  
 

@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 
 # System Center - Operations Manager build versions
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2025"
 
@@ -52,33 +48,6 @@ This article lists Microsoft System Center 2016 - Operations Manager build versi
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-The following table lists the release history for Operations Manager 1807.
-
-## Operation Manager 1807 build versions
-
-The following is the build version for Operations Manager 1807.
-
-|Build Number |KB |Release Date |Description |  
-|-------------|---|-------------|------------|
-|7.3.13261.0 |[4133779](https://support.microsoft.com/help/4133779/system-center-operations-manager-version-1807) |July 2018 |Version 1807|
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-The following table lists the release history for Operations Manager 1801.
-
-## Operation Manager 1801 build versions
-
-The following is the build version for Operations Manager 1801.
-
-|Build Number |KB |Release Date |Description |  
-|-------------|---|-------------|------------|
-|7.3.13142.0 | |February 2018 |Version 1801|
-
-::: moniker-end
 
 ## Next steps
 

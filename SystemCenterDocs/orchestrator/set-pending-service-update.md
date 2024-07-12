@@ -12,11 +12,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 ---
 # Set Pending Service Update activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Set Pending Service Update activity is used in a runbook to set a specific service template as the pending service update.
 

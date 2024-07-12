@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Run OA Command
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Run OA Command** activity is used in a runbook to run a command that can be used to perform management activities, such as **Add User**, **Enable User**, and **Show Server Status**.
 

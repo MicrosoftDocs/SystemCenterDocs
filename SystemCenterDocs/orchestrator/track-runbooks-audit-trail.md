@@ -16,11 +16,7 @@ ms.date: 04/11/2023
 ---
 # Audit Trail
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The *Audit Trail* is a collection of text log files that contain information about the interaction of a runbook with external tools and systems. By using the Audit Trail, you can report on configuration and change compliance of processes and identify changes made to a non-Microsoft system for audit purposes or to remediate a change that causes service interruption.  
 

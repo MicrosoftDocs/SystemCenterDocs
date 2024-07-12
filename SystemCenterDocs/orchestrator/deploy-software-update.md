@@ -18,11 +18,7 @@ ROBOTS: noindex
 
 # Deploy Software Update activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Deploy Software Update activity is used in a runbook to create a
 Software Deployment (advertisement) to deploy software updates to a

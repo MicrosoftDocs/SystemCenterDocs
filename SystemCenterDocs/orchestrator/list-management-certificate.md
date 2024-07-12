@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # List Management Certificate
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **List Management Certificate** activity is used in a runbook to list basic information about all the management certificates associated with the specified subscription. It's part of the **Azure Certificates** category activity.
 

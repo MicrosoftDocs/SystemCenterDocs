@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 
 # Launch Tool
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Launch Tool activity is used in a runbook to run a specified command on a specified server.
 

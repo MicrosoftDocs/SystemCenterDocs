@@ -57,23 +57,9 @@ With Operations Manager 2019 UR5, the following additional data points are suppo
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-This article provides details of the new features supported in System Center 1807 - Operations Manager.
 
-[!INCLUDE [whats-new-om-1807.md](../includes/whats-new-om-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article provides details of the new features supported in System Center 1801 - Operations Manager.
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -81,11 +67,7 @@ This article provides details of the new features supported in System Center 201
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
 
-[!INCLUDE [whats-new-om-1801.md](../includes/whats-new-om-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
