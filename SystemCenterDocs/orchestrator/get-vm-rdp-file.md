@@ -1,8 +1,8 @@
 ---
 title: Get VM RDP File
 description: The Get VM RDP File activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 07/12/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 
 # Get VM RDP File
-
-
 
 The **Get VM RDP File** activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
