@@ -14,11 +14,7 @@ ms.topic: article
 
 # Manually uninstalling agents from UNIX and Linux computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 There are three ways to uninstall the UNIX and Linux management packs and agents.
 

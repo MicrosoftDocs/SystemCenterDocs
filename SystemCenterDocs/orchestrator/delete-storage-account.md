@@ -18,11 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete Storage Account
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Delete Storage Account** activity deletes the specified storage account from Azure. It's part of the **Azure Storage** category activity.
 

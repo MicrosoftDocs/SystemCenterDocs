@@ -17,11 +17,7 @@ manager: jsuri
 
 # How to create a benchmark runbook
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You will need to create a performance benchmark in order to optimize the performance for your Orchestrator runbook. As part of creating the benchmark, you should analyze the activities in your runbook.
 

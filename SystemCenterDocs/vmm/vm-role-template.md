@@ -15,11 +15,7 @@ ms.custom: engagement-fy23
 
 # Create VM templates using VMM and Microsoft Azure Pack
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 As a hosting provider, you can use System Center - Virtual Machine Manager (VMM) in combination with Microsoft Azure Pack to increase the features that you offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, you can create VM role templates. Tenants can use these templates to create VMs on-premises and in service-provider hosting environments.

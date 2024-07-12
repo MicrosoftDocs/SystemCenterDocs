@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Run antivirus software on the DPM server
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 DPM is compatible with most popular antivirus software products. We recommend the following steps to avoid conflicts:
 
 1. Disable real-time monitoring - Disable real-time monitoring by the antivirus software for the following:

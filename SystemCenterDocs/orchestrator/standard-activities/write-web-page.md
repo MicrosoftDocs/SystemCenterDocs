@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Write Web Page
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Write Web Page activity will create or add information to an HTML file. When creating new web pages with the Write Web Page activity, you can use templates that can contain any of the formattings that you require. When using the Write Web Page activity to create web pages, all occurrences of the tags \<DOC-TITLE> and \<DOC-TEXT> will be replaced by the title and text that you specify, respectively.  
 

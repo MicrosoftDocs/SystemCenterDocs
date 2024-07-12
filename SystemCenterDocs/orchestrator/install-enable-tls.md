@@ -14,18 +14,14 @@ ms.custom: engagement-fy24
 
 # Set up TLS for Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
 
 
 ## Before you start
 
-- Orchestrator should be running version 2016 with Update Rollup 4 or later, 1801, 1807, 2019, or 2022.
+- Orchestrator should be running version 2016 with Update Rollup 4 or later, 2019, or 2022.
 - Security fixes should be up-to-date on the Orchestrator.
 - System Center updates should be up-to-date.
 - SQL Server 2012 Native client 11.0 or later should be installed on the Orchestrator management server. To download and install Microsoft SQL Server 2012 Native Client 11.0, see [this Microsoft Download Center webpage](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).

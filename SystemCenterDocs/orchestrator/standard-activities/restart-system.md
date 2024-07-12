@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Restart System
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Restart System activity will restart a computer on your network. The Restart System activity can either wait for applications to shut down gracefully, or you can configure the activity to forcefully shut down any running applications. You can also send a message to notify your users of the reason for the disruption.  
 

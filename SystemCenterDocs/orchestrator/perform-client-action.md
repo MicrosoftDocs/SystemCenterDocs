@@ -18,11 +18,7 @@ robots: noindex
 
 # Perform Client Action activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Perform Client Action activity is used to initiate Configuration
 Manager client actions by communicating directly with the client. These

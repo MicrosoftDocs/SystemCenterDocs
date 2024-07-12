@@ -15,11 +15,7 @@ ms.topic: article
 
 # Overview of HTML5 Web console and dashboards
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager now delivers HTML5-based dashboards, which enhance the authoring and visualization experiences for Web console users. With these improvements, you can visualize operational data with richer data visualizations, faster performance, and drill-down.  You can access these dashboards from multiple browsers (such as Chrome) and are no longer dependent on Silverlight.
 
@@ -129,7 +125,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
     - Export to Excel the legend data to Excel for further analysis.
 
-20.	Delete HTML5 dashboards from the Web console; you can create dashboards or views to My workspace.  In version 1801, you can add dashboards or views to My Workspace from the monitoring tree.
+20.	Delete HTML5 dashboards from the Web console; you can create dashboards or views to My workspace.  
 
 21.	The IIS web server hosting the Web console role can be set up with network authentication mode and users can access the Web console using network authentication.
 

@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 
 # Get Service Configuration activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Service Configuration activity is used in a runbook to return all service configurations on the VMM management server that meet the filtering criteria.
 

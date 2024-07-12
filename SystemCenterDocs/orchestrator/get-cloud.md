@@ -13,12 +13,6 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Get Cloud activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Get Cloud activity is used in a runbook to return all clouds on the VMM management server that meet the filtering criteria.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

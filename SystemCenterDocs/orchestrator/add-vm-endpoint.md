@@ -18,12 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Add VM Endpoint
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Add VM Endpoint** activity adds an external endpoint to the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
 >[!NOTE]

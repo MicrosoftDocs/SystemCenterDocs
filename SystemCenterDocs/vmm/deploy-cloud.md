@@ -15,11 +15,7 @@ ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 
 # Scenario: Deploy a private VMM cloud
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of System Center - Virtual Machine Manager (VMM) private clouds.
 

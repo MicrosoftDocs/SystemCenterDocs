@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Configuration items in System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Configuration items (CIs) are a way to store information about services, computers, software, software updates, users, and other undefined imported objects in the Service Manager database in Service Manager. You can select configuration items when you submit forms, such as an incident form, a change request form, or a work item form.
 

@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Use SQL Server AlwaysOn availability groups with Service Manager to support failover
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The information in this article provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. AlwaysOn supports a failover environment. This information is supported only with SQL Server 2012 SP2 and above.
 

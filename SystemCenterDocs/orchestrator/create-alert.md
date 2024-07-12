@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Create Alert
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create Alert activity is used in a runbook to create a new alert in an Operations Manager management group.
 

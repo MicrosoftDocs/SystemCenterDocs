@@ -17,11 +17,7 @@ ms.assetid: 7d62ce9b-fd6d-4521-932d-f2ede5920955
 
 # Form control properties in the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The table in this article lists the properties of Service Manager form controls. This information can help you customize and create forms in the Service Manager Authoring Tool.  
 

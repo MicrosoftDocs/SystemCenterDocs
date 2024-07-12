@@ -14,11 +14,7 @@ ms.custom: intro-installation, UpdateFrequency2, engagement-fy24
 
 # Install an operating system on a VM in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to install an operating system on a VM in the System Center - Virtual Machine Manager (VMM) fabric.
 

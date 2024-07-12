@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency3
 
 # Identify data sources you want to protect
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 To protect data sources with System Center Data Protection Manager (DPM), you'll need to do the following:
 
 - Read [What can DPM back up?](dpm-protection-matrix.md) to understand what's supported for DPM backup.

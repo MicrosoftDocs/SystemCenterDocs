@@ -17,11 +17,6 @@ manager: jsuri
 
 # Get Organizational Unit
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Get Organizational Unit activity in a runbook to get the properties of an organizational unit in Active Directory Domain Services (AD DS).
 

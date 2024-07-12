@@ -16,11 +16,7 @@ ms.assetid: 805b479a-9312-4039-be44-01dda07086d8
 
 # Optionally disable Service Manager ECL logging for faster connector synchronization
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 You can watch this [video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization-with-Service-Manager?ocid=player) for a quick overview of this feature. For more details, continue reading the article.
 

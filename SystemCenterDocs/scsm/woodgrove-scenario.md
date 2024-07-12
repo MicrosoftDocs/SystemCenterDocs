@@ -17,11 +17,7 @@ ms.custom: engagement-fy23
 
 # Woodgrove Bank customization sample scenario for the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 To provide real-world context to the step-by-step procedures for the Service Manager Authoring Tool, we've created a fictitious scenario that takes place at a fictitious company, Woodgrove Bank.  
 

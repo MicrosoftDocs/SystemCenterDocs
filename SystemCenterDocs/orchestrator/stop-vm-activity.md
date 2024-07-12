@@ -13,16 +13,11 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Stop VM Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Stop VM activity is used in a runbook to stop a virtual machine that has already been added to a VMware vSphere server. This allows the runbook to stop a virtual machine before deleting it using the Delete VM activity.
 

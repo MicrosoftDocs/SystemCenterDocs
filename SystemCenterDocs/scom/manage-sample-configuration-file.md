@@ -8,18 +8,14 @@ manager: jsuri
 ms.date: 01/24/2024
 ms.custom: UpdateFrequency3
 ms.service: system-center
-monikerRange: '>=sc-om-1801'
+monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Sample configuration file for collecting Linux log files
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 

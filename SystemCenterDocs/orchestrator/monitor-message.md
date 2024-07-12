@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Monitor Message
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Monitor Message activity invokes a runbook when certain HP Operations Manager messages are created, updated, acknowledged, or unacknowledged according to filter criteria that you specify. The activity uses filters to determine which messages should invoke the runbook.
 

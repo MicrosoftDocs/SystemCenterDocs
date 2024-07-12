@@ -14,11 +14,7 @@ ms.topic: article
 
 # Install the Operations Manager Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
@@ -86,7 +82,7 @@ The local and remote parameters are as follows:
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]
->If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Web console role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation doesn't apply to Operations Manager version 1801.
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Web console role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 
 ::: moniker-end
 

@@ -13,11 +13,7 @@ ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 
 # Migrate Orchestrator between environments
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 This article describes how to move Orchestrator between environments, such as moving to a new SQL Server 2008 R2 or moving some components of Orchestrator.  
 

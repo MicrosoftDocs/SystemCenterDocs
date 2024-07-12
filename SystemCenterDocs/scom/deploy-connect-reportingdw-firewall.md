@@ -14,11 +14,7 @@ ms.topic: article
 
 # Connect to the Reporting Data Warehouse Across a Firewall
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article describes how to configure your environment to support placing the Report data warehouse behind a firewall for System Center Operations Manager.
 

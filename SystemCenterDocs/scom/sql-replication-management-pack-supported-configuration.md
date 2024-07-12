@@ -66,8 +66,6 @@ Management Pack for SQL Server Replication supports the following operating syst
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
 
 - System Center Operations Manager 2016
-- System Center Operations Manager 1801
-- System Center Operations Manager 1807
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
 

@@ -14,11 +14,7 @@ ms.topic: article
 
 # Configure and modify report schedules
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Operations Manager Reporting server component provides report-specific schedules to help you control the processing and distribution of reports. Once you've configured a schedule for a report, it can be managed from the Reporting workspace under the Scheduled Reports node in the Operations console.  
 

@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Move Or Copy Item
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Move Or Copy Item activity is used in a runbook to move or copy an item to another folder. This activity supports all item types.
 

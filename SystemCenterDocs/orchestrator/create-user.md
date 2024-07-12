@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Create User
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Create User activity in a runbook to create a user in the Microsoft Active Directory.
 

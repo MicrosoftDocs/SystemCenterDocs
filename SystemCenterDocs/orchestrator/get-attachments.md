@@ -17,11 +17,6 @@ manager: jsuri
 
 # Get Attachments
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Get Attachments** activity is used in a runbook to retrieve details from the attachments of a list item.
 

@@ -15,11 +15,7 @@ ms.custom: engagement-fy24
 
 # Scenario: Create a private cloud
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides instructions for creating a private cloud in System Center - Virtual Machine Manager (VMM).
 
@@ -135,13 +131,9 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-System Center - Virtual Machine Manager (SCVMM) 1801 and later support storage QoS policies on a private cloud.
 
-::: moniker-end
-
-::: moniker range=">sc-vmm-1801"
+::: moniker range=">=sc-vmm-2019"
 
 System Center - Virtual Machine Manager (SCVMM) supports storage QoS policies on a private cloud.
 

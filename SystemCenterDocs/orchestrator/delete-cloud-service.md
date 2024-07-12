@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete Cloud Service
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Delete Cloud Service** activity deletes the specified cloud service from Azure. It's part of the **Azure Cloud Services** category activity.
 

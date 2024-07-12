@@ -14,11 +14,7 @@ ms.custom: engagement-fy23, UpdateFrequency2
 
 # Set up an SDN network controller in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center - Virtual Machine Manager (VMM) fabric.
 

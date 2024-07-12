@@ -14,12 +14,6 @@ ms.topic: article
 
 # Service, User, and Security Accounts
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
-
 During the setup and daily operations of Operations Manager, you'll be asked to provide credentials for several accounts. This article provides information about each of these accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
 
 >[!NOTE]
@@ -64,7 +58,7 @@ The domain account that is specified for the action account is granted with Log 
 
 * Name:  Worker Process Logon Type
 * Type: REG_DWORD
-::: moniker range=">=sc-om-2016 <=sc-om-1807"
+::: moniker range="sc-om-2016"
 * Values: Four (4) -  Log on as batch, Two (2) -  Allow log on locally and Five (5) - Log on as Service.  Default value is 2. 
 ::: moniker-end  
 ::: moniker range=">=sc-om-2019"

@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Add VM templates to the VMM library
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Read this article to learn about VM templates and how to manage them in the System Center - Virtual Machine Manager (VMM) library.
 
