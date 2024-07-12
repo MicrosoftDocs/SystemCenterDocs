@@ -601,8 +601,10 @@
       href: sql-server-management-pack-sql-server-reporting.md
     - name: Custom Monitoring
       items:
-      - name: Custom Query-Based Monitors
-        href: sql-server-management-pack-custom-monitor.md
+      - name: Custom Query-Based Database Engine Monitors
+        href: sql-server-management-pack-custom-database-engine-monitor.md
+      - name: Custom Query-Based Database Monitors
+        href: sql-server-management-pack-custom-database-monitor.md
       - name: Custom Query-Based Performance Rules
         href: sql-server-management-pack-custom-rule.md
       - name: Custom Monitoring Examples

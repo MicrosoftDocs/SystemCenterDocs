@@ -1,28 +1,30 @@
 ---
 ms.assetid: dc45fd44-50ff-47af-bfdd-5407695c6cae
-title: Custom query-based monitors in System Center Management Pack for SQL Server
-description: This article explains how to configure a custom query monitor in System Center Management Pack for SQL Server.
+title: Custom database engine query-based monitors in System Center Management Pack for SQL Server
+description: This article explains how to configure a custom database engine query monitor in System Center Management Pack for SQL Server.
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 05/02/2024
+/ms.date: 07/12/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Custom query-based monitors
+# Custom query-based database engine monitors
 
 If the set of default monitors in System Center Management Pack for SQL Server isn't enough to cover your workflows, you can create a monitor that targets the SQL Server Database Engine for Windows and Linux platforms.
 
 During the monitor creation process, you use *conditions* to define how the monitor will determine the state after it receives query results. The approach for creating query-based monitors is similar to the approach for creating SQL Server policies. If the query result matches the condition, the monitor state is healthy. If the result doesn't match the condition, the monitor is unhealthy and shows an alert.
 
-There are two types of unit monitors based on custom queries that you can create: two-state monitors and three-state monitors. This article shows how to create both types and includes an example of a three-state monitor condition.
+There are two types of unit monitors based on custom queries that you can create for the SQL Server Database Engine: two-state monitors and three-state monitors.
 
 > [!NOTE]
 > Since the latest preview version of System Center Management Pack for SQL Server 7.1.0.0, the management pack for the custom monitoring feature is on a separate package installer: *SQLServerMP.CustomMonitoring.msi*. Be sure to import the management pack file *Microsoft.SQLServer.Core.CustomMonitoring.mpb* manually. The import process with the update option is not supported.
 
-## Two-state monitor
+For detailed examples of how to use custom monitors targeting SQL Server Database Engine, refer to [Examples of usage](sql-server-management-pack-custom-monitoring-examples.md).
+
+## Two-state custom database engine monitor
 
 To create a two-state custom query-based monitor, perform the following steps:
 
@@ -80,7 +82,7 @@ To create a two-state custom query-based monitor, perform the following steps:
       > [!NOTE]
       > The **Equal to** option is culture-independent (invariant) for a single value only and can't parse a range of values. Example of use: *3.14*, *2023-05-25*, or an arbitrary text.
 
-    You can make more than one condition by using the **OR** and **AND** operators. If you want to add, edit, or remove a condition, select the condition and use the appropriate button.
+    You can make more than one condition. If you want to add, edit, or remove a condition, select the condition and use the appropriate button.
 
     ![Screenshot that shows multiple conditions.](./media/sql-server-management-pack/sql-unit-monitor-multiple-conditions.png)
 
@@ -160,7 +162,3 @@ When you use the **Equal to** condition in a three-state monitor:
 - Choose a value.
 - Use conditions with unhealthy states that will be determined for the desired monitor's operational state.
 - Keep in mind the alert priority: the critical state is verified first.
-
-### Example
-
-For detailed examples of how to use custom monitors, refer to [Examples of usage](sql-server-management-pack-custom-monitoring-examples.md).
