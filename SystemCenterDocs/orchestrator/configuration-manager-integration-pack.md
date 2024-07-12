@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Configuration Manager Integration Pack for System Center - Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager management functions.
 
@@ -40,7 +36,6 @@ Before you can install the Integration Pack for Configuration Manager, you must 
 ::: moniker range="<=sc-orch-2019"
 
 - [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
-- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
 
 ::: moniker-end
 

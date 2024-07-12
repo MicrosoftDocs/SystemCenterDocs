@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Delete Item
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete Item activity is used in a runbook to delete the existing appointments, contact groups, email messages, and task items.
 

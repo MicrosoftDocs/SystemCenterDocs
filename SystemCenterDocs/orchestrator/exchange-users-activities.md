@@ -17,12 +17,6 @@ manager: jsuri
 
 # Exchange Users Activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The configuration instructions in this article apply to all the activities in the Exchange Users Integration Pack. Activities include creating, modifying, and managing tasks, appointments, emails, and contact groups. The task-specific configuration instruction articles for all activities include links to this article.
 
 The procedures in this article are performed on any activity that has been placed in the runbook window of the Orchestrator Runbook Designer.

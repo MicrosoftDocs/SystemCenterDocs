@@ -15,13 +15,9 @@ ms.topic: article
 
 # Create a dashboard with the Tile widget in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-::: moniker-end
-
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Tile widget to a dashboard in the new HTML5 Web console.  It displays a summary tile showing the health and number of alerts for the object that match a criteria.
+In System Center Operations Manager version 2019 and later, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Tile widget to a dashboard in the new HTML5 Web console.  It displays a summary tile showing the health and number of alerts for the object that match a criteria.
 
 ## Add widget to dashboard
 

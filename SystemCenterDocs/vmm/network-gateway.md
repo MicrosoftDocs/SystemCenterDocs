@@ -14,11 +14,7 @@ ms.subservice: virtual-machine-manager
 
 # Add a network virtualization gateway to the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Read this article to learn about setting up network virtualization gateways in the System Center - Virtual Machine Manager (VMM) networking fabric.
 
@@ -63,9 +59,9 @@ The service template provides a highly available Windows Server Gateway deployme
 
 1. You'll need to download the template from the [Download center](https://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
 
-::: moniker range="<=sc-vmm-1801"
+::: moniker range="sc-vmm-2016"
 > [!NOTE]
-> The templates downloaded are applicable for VMM 2012 R2, 2016, and 1801.
+> The templates downloaded are applicable for VMM 2012 R2, and 2016.
 ::: moniker-end
 
 2. The download is a compressed zip file. You'll need to extract the file. Files include a user guide, two service templates, and a custom resource folder (a folder with a .cr extension) that contains files required for the service templates.

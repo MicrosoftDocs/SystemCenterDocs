@@ -15,101 +15,14 @@ ms.topic: article
 
 # Create a dashboard with the Topology widget in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-::: moniker-end
-
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create dashboard in the new HTML5 Web console with the Topology widget.
+In System Center Operations Manager version 2019 and later, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create dashboard in the new HTML5 Web console with the Topology widget.
 
 ## Add widget to dashboard
 
-::: moniker range="sc-om-1807"
 
-1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 
-2. From the left pane in the Web console, select **+ New dashboard**.
-
-    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-inline.png" alt-text="Screenshot showing select New Dashboard in Web console." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-expanded.png":::
-
-3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
-
-    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-inline.png" alt-text="Screenshot showing specify name and description for new dashboard." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-expanded.png":::
-
-4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** dropdown list or you can save the dashboard by creating a new management pack by selecting **New** next to the **Management Pack** dropdown list and provide a name, description, and optionally a version number.
-
-    ![Screenshot showing Specify name and description for new MP.](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
-
-5. When you've completed specifying where to save the new dashboard to, select **OK**.
-
-6. Select **Save** after providing a name and description for the new dashboard.
-
-7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard**, and **View in fullscreen** options on the top of the page.
-
-    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-inline.png" alt-text="Screenshot showing New dashboard canvas." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-expanded.png":::
-
-8. Select **Topology Widget** from the **Select Widget** dropdown list.
-
-9. In the Topology widget pane, select scope for the widget by selecting either **Groups** or **Class**.
-
-    ![Screenshot showing Select scope for Topology widget.](./media/create-web-dashboard-topology/web-console-new-dashboard-topology.png)  
-
-    For either option selected, you can search by keyword in the list.  As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
-
-10. Select **Display** to choose an image for the topology widget to display in the authoring pane.  If you already added a custom image by performing these steps earlier, then select an image shown in the pane.
-
-     ![Screenshot showing Select new image for Topology widget.](./media/create-web-dashboard-topology/web-console-topology-widget-add-image.png)
-
-    Otherwise, select **Add image** and navigate to where the file is located.
-
-11. After selecting the file, select **Open** and the image will be uploaded and presented in the pane.  
-
-12. To change the size of the state icon, select either **Small** or **Large**.
-
-13. Complete the configuration by providing a **Name**, **Description**, and **Widget refresh interval** (default interval is 5 minutes) for the widget. Select **Save Widget** to save your new dashboard.  
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
-
-2. From the left pane in the Web console, select **+ New dashboard**.
-
-    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-inline.png" alt-text="Screenshot showing select New Dashboard in Web console." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-01-expanded.png":::
-
-3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
-
-    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-inline.png" alt-text="Screenshot showing specify name and description for new dashboard." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-02-expanded.png":::
-
-4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** dropdown list or you can save the dashboard by creating a new management pack by selecting **New** next to the **Management Pack** dropdown list and provide a name, description, and optionally a version number.
-
-    ![Screenshot showing Specify name and description for new MP.](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
-
-5. When you've completed specifying where to save the new dashboard to, select **OK**.
-
-6. Select **Save** after providing a name and description for the new dashboard.
-
-7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard**, and **View in fullscreen** options on the top of the page.
-
-    :::image type="content" source="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-inline.png" alt-text="Screenshot showing New dashboard canvas." lightbox="./media/create-web-dashboard-alerts/web-console-new-dashboard-04-expanded.png":::
-
-8. Select **Topology Widget** from the **Select Widget** dropdown list.
-
-9. In the Topology widget pane, select scope for the widget by selecting either **Groups** or **Class**.
-
-    ![Screenshot showing Select scope for Topology widget.](./media/create-web-dashboard-topology/web-console-new-dashboard-topology.png)
-
-    For either option selected, you can search by keyword in the list. As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
-
-10. Select **Display** to choose an image for the topology widget to display in the authoring pane. Select **Select Image**, and on the **Select Image** pane if you already added a custom image earlier, then select an image from the list. Otherwise, select **Add custom image** and navigate to where the file is located.
-
-11. After selecting the file, select **Open** and the image will be uploaded and presented in the **Select Image** pane. Select **Done** to complete.
-
-12. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget. Select **Save Widget** to save your new dashboard.  
-
-::: moniker-end
 
 When created for the first time, the health state icons for the selected objects are displayed at the left-top section of the topology widget. These icons have to be placed manually in the appropriate position on the image by performing the following steps:
 

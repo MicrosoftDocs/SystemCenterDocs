@@ -14,15 +14,11 @@ ms.topic: article
 
 # Upgrade agents in a parallel deployment
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="<=sc-om-2016"
 
-When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 1801 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
+When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 2019 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
 
 ::: moniker-end
 
@@ -35,17 +31,6 @@ When you perform a side-by-side deployment of System Center 2019 - Operations Ma
 ::: moniker range="sc-om-2022"
 
 When you perform a side-by-side deployment of System Center 2022 - Operations Manager or System Center Operations Manager 2019 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-The following coexistence scenarios are supported for the Operations Manager agent in a parallel deployment scenario with System Center Operations Manager 1801.
-
-* System Center 2016 - Operations Manager RTM and higher
-* System Center Operations Manager 2012 R2 RTM and higher
-
-Agents reporting to your Operations Manager 2012 R2 or 2016 management group can be upgraded to System Center Operations Manager 1801 and are fully capable of communicating with both management groups until you complete your migration and retire the old management group.  
 
 ::: moniker-end
 

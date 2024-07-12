@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Create Checkpoint
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create Checkpoint is used to save the state of a virtual hard disk that is attached to a virtual machine and all of the disk's contents, including application data files. For virtual machines on Hyper-V and VMware ESX Server hosts, a checkpoint also saves the hardware configuration information.
 

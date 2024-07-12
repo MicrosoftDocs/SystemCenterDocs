@@ -18,12 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Change Deployment Configuration
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Change Deployment Configuration** activity initiates a change to the deployment configuration. It's part of the Azure Deployments category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

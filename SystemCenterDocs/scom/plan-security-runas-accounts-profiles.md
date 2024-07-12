@@ -14,11 +14,7 @@ ms.topic: article
 
 # Run As Accounts and Profiles
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Run As accounts define which credentials are used for certain actions performed by the Operations Manager agent. These accounts are centrally managed through the Operations console and assigned to different Run As profiles. If a Run As profile isn't assigned to a particular action, it's carried out under the Default Action account. In a low-privilege environment, the default account may not have the required permissions for a particular action, and a Run As profile can be used to provide this authority. Management packs may install Run As profiles and Run As accounts to support required actions. If so, their documentation should be referenced for any required configuration.
 

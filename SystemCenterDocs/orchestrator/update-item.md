@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Update Item
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Update Item activity is used in a runbook to update an existing item.
 

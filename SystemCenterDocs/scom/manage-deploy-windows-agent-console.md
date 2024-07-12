@@ -14,11 +14,7 @@ ms.topic: conceptual
 
 # Install Agent on Windows Using the Discovery Wizard
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called discovery. One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
 
@@ -107,20 +103,8 @@ Follow these steps to install an agent on a computer running Windows by using th
 
 10. On the **Summary** page, do the following:  
 
-    ::: moniker range="sc-om-1807"
-    1. Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or enter an installation path.
-
-        > [!IMPORTANT]
-        > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they don't exist.
-
-    2. Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and enter the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
-
-    3. Leave **Install APM** set to the default if you intend to monitor a .NET web-based application on the targeted computer.  Otherwise, deselect the option.  
-
-    4. Select **Finish**.  
-    ::: moniker-end  
-
-    1. Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or enter an installation path.
+    
+    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or enter an installation path.
 
         > [!IMPORTANT]
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they don't exist.

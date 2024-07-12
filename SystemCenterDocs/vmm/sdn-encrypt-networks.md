@@ -15,20 +15,14 @@ ms.custom: UpdateFrequency3
 
 # Configure encrypted networks in SDN using VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article explains how to encrypt the VM networks in software defined network (SDN) using  System Center  - Virtual Machine Manager (VMM).
 
 Today, network traffic can be encrypted by the guest OS or an application using technologies like IPSec and TLS. However, these technologies are difficult to implement because of their inherent complexity and challenges related to interoperability between systems because of the nature of implementation.
 
 Using the encrypted networks feature in VMM, end-to-end encryption can be easily configured on the VM networks by using the Network Controller (NC). This encryption prevents traffic between two VMs on the same VM network and same subnet from being read and manipulated.
-::: moniker range="sc-vmm-1801"
- VMM 1801 and later supports this feature.
-::: moniker-end
+
 
 The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network.
 

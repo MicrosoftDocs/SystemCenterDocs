@@ -14,12 +14,6 @@ monikerRange: '<=sc-orch-2019'
 
 # Add VM Disk
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Add VM Disk** activity adds a disk to the user image repository. It's part of the **Azure Virtual Machine Disks** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

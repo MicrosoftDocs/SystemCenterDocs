@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Databases created by System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Before you start the installation of System Center - Service Manager, you may want to meet with your SQL Server administration team to discuss the effect Service Manager has on your computers running SQL Server, specifically the databases that are created. The databases that are created by the deployment of Service Manager are listed in the following table.  
 

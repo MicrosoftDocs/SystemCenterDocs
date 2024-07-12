@@ -8,18 +8,14 @@ manager: jsuri
 ms.date: 03/18/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
-monikerRange: '>=sc-om-1801'
+monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Linux Log file monitoring in System Center Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
@@ -43,17 +39,6 @@ The basic operation of log file monitoring in Linux includes the following steps
 3. Event is sent to OMED service on management server and logged to the **System Center OMED Service** Event Log on the management server. (The **System Center OMED Service** Event Log is only created when an Event has been successfully sent from a Fluentd Agent)
 4. Rules and monitors in a custom management pack collect events and create alerts in Operations Manager.
 
-::: moniker range="sc-om-1801"
-
-[!INCLUDE [log-file-monitoring-1801-1807.md](../includes/linux-log-file-monitoring-1801-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-om-1807"
-
-[!INCLUDE [log-file-monitoring-1801-1807.md](../includes/linux-log-file-monitoring-1801-1807.md)]
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 

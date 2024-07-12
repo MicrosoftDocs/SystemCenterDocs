@@ -13,11 +13,7 @@ ms.custom: engagement-fy24
 
 # The integration pack for System Center Operations Manager
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The integration pack for Operations Manager is an add-in provided by System Center Orchestrator. Use the integration pack to connect an Orchestrator Runbook server to an Operations Manager management server so that you can automate various actions.
 
@@ -34,7 +30,7 @@ Before you deploy the Operations Manager integration pack, install and configure
 - Operations Manager. The integration pack version should match the System Center version.
 
     >[!NOTE]
-    >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later and if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
+    >If you're using the Orchestrator 2016 integration pack for Operations Manager 2016 UR4 or later and if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
 
 - To allow server interaction with Operations Manager, install the Operations Manager console where an Orchestrator Runbook server or Runbook Designer is installed.
 
@@ -70,7 +66,6 @@ Before you deploy the Operations Manager integration pack, install and configure
 
 ::: moniker range="<=sc-orch-2019"
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
-- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 ::: moniker-end
 

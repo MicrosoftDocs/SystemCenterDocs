@@ -16,12 +16,6 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 # Use DPM to back up and restore VMware virtual machines
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 ::: moniker range="sc-dpm-2019"
 This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5, 6.7, or 7.0 (supported from DPM 2019 UR5) versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
@@ -377,7 +371,7 @@ In large VMware deployments, a single vCenter server can manage thousands of VMs
 
 DPM can back up VMware VMs to disk, tape, and Azure cloud. You can specify the protection method while creating the new Protection Group.
 
-For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](./identify-compatible-tape-libraries.md?preserve-view=true&view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
+For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](./identify-compatible-tape-libraries.md) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
 
@@ -602,14 +596,6 @@ The value should be the number (decimal) of virtual machines that you select for
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-1807"
-
-## VMware vSphere 6.7
-
-To back up vSphere 6.7, do the following:
-
-::: moniker-end
-
 ::: moniker range=">=sc-dpm-2019"
 
 ## VMware vSphere 6.7 and 7.0
@@ -628,7 +614,7 @@ To back up vSphere 6.7 and 7.0 (supported for DPM 2019 UR5), do the following:
 
 ::: moniker-end
 
-::: moniker range=">=sc-dpm-1807"
+::: moniker range=">=sc-dpm-2019"
 
 - Enable TLS 1.2 on DPM Server
   >[!Note]

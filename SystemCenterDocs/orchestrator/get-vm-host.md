@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 
 # Get VM Host activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get VM Host activity is used in a runbook to return all virtualization hosts on the VMM management server that meet the filter criteria.
 

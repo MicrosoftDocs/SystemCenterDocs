@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Run Program
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Run Program activity runs any program or command on any computer in your domain in an interactive or background mode. Use this activity to run backup applications or a batch script that runs a set of complex commands.  
 

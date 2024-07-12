@@ -17,11 +17,7 @@ ms.assetid: 89e11c59-3f08-4f0a-8efe-b55375c2bb6c
 
 # Unbundle a bundled management pack for use with the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 A bundled management pack \(.mpb\) file in System Center - Service Manager includes several management pack \(.mp\) files. In addition, it might include references to resources, such as an image or a form assembly. To customize a .mpb file, you must access and customize the individual files in the bundle.  
 

@@ -15,11 +15,6 @@ ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 
 # Configure Service Level Management
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of how to configure service level management in Service Manager. This section also contains procedures that cover service level management configuration scenarios.
 

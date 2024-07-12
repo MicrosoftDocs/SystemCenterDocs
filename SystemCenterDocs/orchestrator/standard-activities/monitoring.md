@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Monitoring
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The following table provides a brief description of the tasks you can accomplish when using each Monitoring activity.  
 

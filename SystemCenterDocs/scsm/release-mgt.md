@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Configure Release Management settings
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 As part of your initial configuration of Service Manager, you've to configure settings and workflows for release management. The settings define the ID prefix that is assigned to release records, how many files can be attached to each release record, and the maximum size of each file. You also create a workflow to notify people when a release record affects them.
 

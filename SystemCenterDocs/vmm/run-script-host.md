@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Run a script on a remote host by using Run Script command
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
  System Center Virtual Machine Manager (VMM) supports the ability to execute commands remotely, on a host by using the Run Script command feature. This feature is useful in scenarios where you want to start a service or collect information from a remote host.
 

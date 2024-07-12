@@ -14,11 +14,7 @@ ms.assetid: 5ec7aa58-3789-4589-a051-63fdd6f2dec1
 
 # View all rules and monitors running on an agent-managed computer
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Administrators for System Center Operations Manager sometimes want to know which rules and monitors are running on a computer. This is simple to do with the **Show Running Rules and Monitors for this Health Service** task.  
 

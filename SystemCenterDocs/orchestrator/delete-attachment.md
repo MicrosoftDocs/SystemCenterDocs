@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Delete Attachment
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Delete Attachment** activity is used in a runbook to delete an attachment from a Microsoft SharePoint list item.
 

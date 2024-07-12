@@ -16,13 +16,7 @@ manager: jsuri
 ---
 # Compare Values
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Compare Values activity compares two text values or two numerical values and then determines whether or not they're equal. This activity can also be used to test error messages or numbers against known issues and automatically route the runbook to the appropriate activity.  
 

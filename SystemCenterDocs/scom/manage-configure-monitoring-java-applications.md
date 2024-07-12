@@ -14,11 +14,7 @@ ms.assetid: ec45bdd7-cc61-4c81-8d1c-a4aae303f892
 
 # Configure Monitoring for Java applications
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Getting started with monitoring Java applications requires these four general steps:  
 

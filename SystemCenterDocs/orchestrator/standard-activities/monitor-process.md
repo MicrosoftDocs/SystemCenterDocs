@@ -17,13 +17,7 @@ manager: jsuri
 ---
 # Monitor Process
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor Process activity invokes runbooks when a process has been started or stopped. A process is any executable file that is running. You can use the Monitor Process activity to monitor processes on any remote computer.  
 

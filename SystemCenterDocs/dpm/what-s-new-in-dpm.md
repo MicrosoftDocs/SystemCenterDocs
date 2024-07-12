@@ -36,22 +36,6 @@ This article provides details of the new features supported in System Center - D
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [Release Notes for 1807](dpm-release-notes.md#dpm-1807-release-notes).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-System Center DPM 1801 provides the following new features:
-
-::: moniker-end
-
 ::: moniker range="sc-dpm-2016"
 
 System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, resulting in faster backups. DPM 2016 supports shielded VMs.
@@ -258,28 +242,6 @@ DPM 2019 UR6 supports Windows and Basic SMTP authentication to send reports and 
 DPM 2019 UR6 supports listing of online recovery points for a data source along with the expiry time. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
 
 DPM 2019 UR6 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](/azure/backup/backup-azure-security-feature#immutability-support).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-## What's new in DPM 1807
-
-DPM 1807 provides many bug fixes to improve performance.
-
-To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-## New features in DPM 1801
-
-System Center DPM 1801 supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs) and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md).
-
-* Up to 50% storage savings
-* Three times faster backups
-* Workload-volume affinity
 
 ::: moniker-end
 
