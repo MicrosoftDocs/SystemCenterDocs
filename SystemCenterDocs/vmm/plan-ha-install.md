@@ -37,7 +37,7 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ## Plan a highly available VMM management server
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
-- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
+- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md).
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 - Requirements for computers running as VMM management nodes:
@@ -53,7 +53,7 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ## Plan a highly available VMM management server
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
-- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
+- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md).
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 
