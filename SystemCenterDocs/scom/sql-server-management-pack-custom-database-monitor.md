@@ -47,15 +47,15 @@ To create a two-state custom query-based monitor, perform the following steps:
 
     The database name selector is a selector that parses the database name from the result set of a sql query. Setting the selector helps to identify the database from the result set to retrieve the data.
 
-   ![Screenshot of selecting a database monitor type](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-cookdown.png)
+   ![Screenshot of selecting a cookdown database monitor type](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-cookdown.png)
 
 6. At the **SQL Query** step, enter the database name, query text, and timeouts (in seconds). The default database is **master**.
 
     The Database name field specifies the database that will be used to execute the SQL query from this step.
 
-    The screenshot shows an example of using cookdown with a SQL query to [msdb.backupset](./sql/relational-databases/system-tables/backupset-transact-sql). This table contains information about all database backups on the server.
+    The screenshot shows an example of using cookdown with a SQL query to [msdb.backupset](/sql/relational-databases/system-tables/backupset-transact-sql). This table contains information about all database backups on the server.
 
-    ![Screenshot that shows a target database name and SQL query.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-sql-query-cookdown.png)
+    ![Screenshot that shows a target database name and SQL query for cookdown.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-sql-query-cookdown.png)
 
 7. At the **Conditions** step, add one or more conditions to verify query results.
 
@@ -78,7 +78,7 @@ To create a two-state custom query-based monitor, perform the following steps:
     - **Is NULL** is a true\false verification option. If the value is false, the monitor is unhealthy. Otherwise, the monitor is healthy.
     - Use **Equal to** to insert the specific value. If the result of the query matches the number value, the monitor is healthy. Otherwise, the monitor is unhealthy.
 
-    ![Screenshot that shows scalar values.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-cookdown-editing-scalar-condition.png)
+    ![Screenshot that shows scalar values for cookdown.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-cookdown-editing-scalar-condition.png)
 
       > [!NOTE]
       > The **Equal to** option is culture-independent (invariant) for a single value only and can't parse a range of values. Example of use: *3.14*, *2023-05-25*, or an arbitrary text.
@@ -95,7 +95,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
     To add a new condition, select **Add**, and then select **Scalar Value**. When you add a condition, you must specify **Friendly name** and **Configuration** details for a specific check to be performed.
 
-    ![Screenshot of property bag condition.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-cookdown-monitor-property-bag-condition.png)
+    ![Screenshot of property bag condition for cookdown.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-cookdown-monitor-property-bag-condition.png)
 
     After you finish setting all the required conditions, select **Next**.
 
@@ -147,7 +147,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
 > [!TIP]
 > By default, a custom query-based monitor works for all SQL Server databases. To avoid alert storming you need to override the monitor target only to a specific instance of the SQL Server. To do that, in the monitor's override properties set the **Enabled = False** for the **MSSQL on Windows: Database class**, and set the **Enabled = True** for the **specific SQL Server Database** object.
-
+msdb
 ## Custom database context query-based monitors targeting the SQL Server Database
 
 The database context monitor type will execute the specified query on all databases in the target manner. To exclude a specific database from this monitor, use overrides after creation.
@@ -176,15 +176,15 @@ To create a two-state custom query-based monitor, perform the following steps:
 
     The database context monitor type will perform the sql query to all databases in turn, so the database name selector can be omitted.
 
-   ![Screenshot of selecting a database monitor type](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-context.png)
+   ![Screenshot of selecting a database context monitor type](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-context.png)
 
 6. At the **SQL Query** step, enter query text and timeouts (in seconds). The default database is **master**.
 
     The database context will be executed on all databases, so the field for specifying only one database to query is locked.
 
-    ![Screenshot that shows a target database name and SQL query.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-context-sql-query.png)
+    ![Screenshot that shows a target database name and SQL query for database context.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-context-sql-query.png)
 
-    The screenshot shows an example of using database context with a SQL query to [sys.database_files](./sql/relational-databases/system-catalog-views/sys-database-files-transact-sql). This table exists in each database, so the database context monitor type will connect to each database and retrieve data in a targeted manner.
+    The screenshot shows an example of using database context with a SQL query to [sys.database_files](/sql/relational-databases/system-catalog-views/sys-database-files-transact-sql). This table exists in each database, so the database context monitor type will connect to each database and retrieve data in a targeted manner.
 
 7. At the **Conditions** step, add one or more conditions to verify query results.
 
@@ -208,7 +208,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
       Checks the scalar value in the specified cell of the result set. Only equal comparison is available at this moment. If you need complex logic, you can cover that with the query.
 
-    ![Screenshot that shows adding new conditions.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-context-conditions.png)
+    ![Screenshot that shows adding new conditions for database context.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-context-conditions.png)
 
     When you add a condition, you must specify **Friendly name** and **Configuration** details for a specific check to be performed.
 
@@ -217,7 +217,7 @@ To create a two-state custom query-based monitor, perform the following steps:
     - **Is NULL** is a true\false verification option. If the value is false, the monitor is unhealthy. Otherwise, the monitor is healthy.
     - Use **Equal to** to insert the specific value. If the result of the query matches the number value, the monitor is healthy. Otherwise, the monitor is unhealthy.
 
-    ![Screenshot that shows scalar values.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-context-editing-scalar-condition.png)
+    ![Screenshot that shows scalar values for database context.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-context-editing-scalar-condition.png)
 
       > [!NOTE]
       > The **Equal to** option is culture-independent (invariant) for a single value only and can't parse a range of values. Example of use: *3.14*, *2023-05-25*, or an arbitrary text.
@@ -234,7 +234,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
     To add a new condition, select **Add**, and then select **Scalar Value**. When you add a condition, you must specify **Friendly name** and **Configuration** details for a specific check to be performed.
 
-    ![Screenshot of property bag condition.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-property-bag-condition-database-context.png)
+    ![Screenshot of property bag condition for database context.](./media/sql-server-custom-monitoring-management-pack/sql-custom-database-monitor-property-bag-condition-database-context.png)
 
     You can make more than one condition for property bag. If you want to add, edit, or remove a condition, select the condition and use the appropriate button.
 
