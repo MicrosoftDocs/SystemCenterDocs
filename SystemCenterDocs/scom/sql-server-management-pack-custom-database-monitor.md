@@ -25,7 +25,7 @@ There are two types of unit monitors based on custom queries that you can create
 
 The Cookdown type allows you to retrieve data from multiple databases using a single query.
 
-### Two-state custom database monitor based on cookdown query
+### Two-state custom database cookdown monitor
 
 To create a two-state custom query-based monitor, perform the following steps:
 
@@ -154,7 +154,7 @@ The database context monitor type will execute the specified query on all databa
 
 This monitor type can increase performance.
 
-### Two-state custom database monitor based on database context query
+### Two-state custom database context monitor
 
 To create a two-state custom query-based monitor, perform the following steps:
 
