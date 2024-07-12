@@ -1,7 +1,7 @@
 ---
 title: HP iLO and OA Activities
 description: The following configuration instructions apply to all activities in this integration pack. It also lists the General tab.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,12 +13,10 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/12/2024
 ---
 
 # HP iLO and OA Activities
-
-
 
 The following configuration instructions apply to all the activities in this integration pack.
 
@@ -26,11 +24,11 @@ The following configuration instructions apply to all the activities in this int
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties in the Runbook Designer.
 
-### To configure the properties for an activity
+### Configure the properties for an activity
 
-1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
+1. Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 
-2.  To save your configuration entries, select **Finish**.
+2. To save your configuration entries, select **Finish**.
 
 In the activity properties dialog, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs from activity to activity
 
@@ -44,9 +42,9 @@ This tab contains properties that are specific to the activity.
 
 All activities in this integration pack have the **Connection Name** property at the top of the Details tab. This property is used to specify the connection to the HP iLO or OA system.
 
-### To configure the Connection Name property
+### Configure the Connection Name property
 
-1.  Select the ellipsis (...) button next to the **Name** field, and then select the applicable connection name or group name. Connections and groups displayed in the list have been previously configured as described in [Configuring the HP iLO and OA Connections](/previous-versions/system-center/packs/hh771475(v=technet.10)#ConfiguringConnections).
+1. Select the ellipsis (...) button next to the **Name** field, and then select the applicable connection name or group name. Connections and groups displayed in the list have been previously configured as described in [Configuring the HP iLO and OA Connections](/previous-versions/system-center/packs/hh771475(v=technet.10)#ConfiguringConnections).
 
 ### Run Behavior Tab
 
@@ -58,9 +56,9 @@ Get activities retrieve information from another activity or outside source, and
 
 By default, the data from the Get activity will be passed on as multiple individual outputs. This invokes the next activity as many times as there are items in the output. Alternatively, you can provide a single output for the activity by enabling the **Flatten** option. When you enable this option, you also choose a formatting option:
 
--   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.
--   **Separate with \_**. Each item is separated by one or more characters of your choice.
--   **Use CSV format**. All the items are in a CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
+- **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.
+- **Separate with \_**. Each item is separated by one or more characters of your choice.
+- **Use CSV format**. All the items are in a CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature doesn't flatten data across multiple instances of the same activity.
 
@@ -70,8 +68,8 @@ Some activities are expected to take a limited amount of time to complete. If th
 
 #### To be notified when the activity takes longer than a specified time to run or fails to run
 
-1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
-2.  Select **Report if activity fails to run** to generate run failure notifications.
+1. In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
+2. Select **Report if activity fails to run** to generate run failure notifications.
 
 For more information about Orchestrator events, see [Activity Events](/previous-versions/system-center/system-center-2012-R2/hh489611(v=sc.12)).
 
@@ -81,11 +79,11 @@ Published data is the foundation of a working runbook. It's the data produced as
 
 An activity can only subscribe to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-### To use published data
+### Use published data
 
-1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
-2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
-3.  Select the published data element that you want to use, and select **OK**.
+1. Right-click the property value box, select **Subscribe**, and select **Published Data**.
+2. Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
+3. Select the published data element that you want to use, and select **OK**.
 
 For a list of the data elements published by each activity, see the Published Data tables in the activity section. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 

@@ -1,19 +1,17 @@
 ---
 title: Get VM Subnet activity in System Center - Orchestrator
 description: The Get VM Subnet activity is used in a runbook to return all virtual subnets on the VMM management server that meet the filtering criteria. The activity publishes all of the data from the required and optional properties into published data.
-ms.date: 02/16/2024
+ms.date: 07/12/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Get VM Subnet activity
-
-
 
 The Get VM Subnet activity is used in a runbook to return all virtual subnets on the VMM management server that meet the filtering criteria.
 
