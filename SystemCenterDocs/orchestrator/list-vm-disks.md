@@ -1,7 +1,7 @@
 ---
 title: List VM Disks
 description: The List VM Disks activity retrieves a list of the disks in your image repository.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/12/2024
 ---
 # List VM Disks
-
-
 
 The **List VM Disks** activity retrieves a list of the disks in your image repository. It's part of the **Azure Virtual Machine Disks** category activity.
 
