@@ -162,7 +162,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 
     ![Screenshot of selections for creating a two-state unit monitor.](./media/sql-server-management-pack/sql-creating-unit-monitor.png)
 
-2. At the **Monitor Type** step, select **Microsoft SQL Server** > **Database** > **User-defined SQL Query Two-State DatabaseMonitor**.
+2. At the **Monitor Type** step, select **Microsoft SQL Server** > **Database** > **User-defined SQL Query Two-State Database Monitor**.
 
 3. From the **Select destination management pack** dropdown list, select a management pack that you want to use, or select **New** to create a new one. Then select **Next**.
 
