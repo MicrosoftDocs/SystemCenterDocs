@@ -5,11 +5,11 @@ description: This article provides information about how to manage mirrored SQL 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  04/08/2021
+ms.date:  07/12/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Back up mirrored SQL servers with DPM
