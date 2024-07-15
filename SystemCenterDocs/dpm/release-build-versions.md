@@ -36,6 +36,8 @@ This article describes how to determine your current Microsoft System Center –
 
 ::: moniker range="sc-dpm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 The following table lists the build versions for Data Protection Manager 2025.
 
 | Build Number | KB |Release Date | Description |

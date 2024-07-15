@@ -19,6 +19,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 This article provides the upgrade information for System Center 2025 - Data Protection Manager (DPM).
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 [!INCLUDE [upgrade-to-dpm-2025.md](../includes/upgrade-to-dpm-2025.md)]
 
 ::: moniker-end
