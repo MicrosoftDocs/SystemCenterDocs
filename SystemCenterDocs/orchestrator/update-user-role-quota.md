@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update User Role Quota
 
-
-
 Updates the quotas for a certain user role and cloud.
 
 ## Update User Role Quota Required Properties
