@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Regenerate Storage Account Key
 
-
-
 The **Regenerate Storage Account Key** activity regenerates the primary or secondary access key for the specified storage account. It's part of the **Azure Storage** category activity.
 
 >[!NOTE]

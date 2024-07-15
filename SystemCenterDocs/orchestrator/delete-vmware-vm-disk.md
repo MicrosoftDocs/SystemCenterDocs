@@ -56,4 +56,4 @@ The following procedure describes the steps required to configure a Delete VM Di
 
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.
