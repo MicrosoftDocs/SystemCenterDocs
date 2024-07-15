@@ -25,7 +25,7 @@ The activity publishes all the data from the required and optional properties in
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
-| ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMWare, or Virtual Server |   |
+| ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMware, or Virtual Server |   |
 | Action  | Remove or Restore   |   |
 
 ## Manage Checkpoint published data
@@ -37,7 +37,7 @@ The activity publishes all the data from the required and optional properties in
 | Added Time   | The date and time that the checkpoint was added, in the format yyyy-mm-dd hh:mm:ss AM or PM   |   |
 | Checkpoint ID   | The unique identifier (GUID) of the checkpoint   |   |
 | Checkpoint Name   | The name of the checkpoint   |   |
-| ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMWare, or Virtual Server |   |
+| ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMware, or Virtual Server |   |
 | Description   | An alphanumeric description of the checkpoint   |   |
 | Enabled   | True or False. If False, the virtual machine can't be started.   |   |
 | Modified Time   | The modification date and time for the checkpoint, in the format yyyy-mm-dd hh:mm:ss AM or PM   |   |

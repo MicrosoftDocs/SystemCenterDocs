@@ -29,7 +29,7 @@ The database key is essentially paired with the service master key on the databa
 
 Follow these steps to run a backup:
 
-1. [Back up the service master key for Microsoft SQL Server](/sql/t-sql/statements/backup-service-master-key-transact-sql). This is a one\-time operation. Note **password** is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key can't be recovered from the file.  
+1. [Back up the service master key for Microsoft SQL Server](/sql/t-sql/statements/backup-service-master-key-transact-sql). This is a one\-time operation. Note that **password** is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key can't be recovered from the file.  
 
     ```sql
     BACKUP SERVICE MASTER KEY TO FILE = 'path_to_file'  

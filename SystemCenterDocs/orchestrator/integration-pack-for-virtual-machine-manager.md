@@ -73,11 +73,11 @@ PowerShell must be installed on both the Orchestrator runbook server, and the co
 
 1. Open Registry Editor.
 2. Expand the **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\PowerShellEngine** subkey.
-3. Confirm that the the runtime entry appears (at least version 2.0).
+3. Confirm that the runtime entry appears (at least version 2.0).
 
 ## Confirm Windows Remote Management installation
 
-Windows Remote Management (at least version 2.0) must be installed and configured on the on both the Orchestrator runbook server and the computer running the VMM console. You can do this using the Local Group Policy Editor.
+Windows Remote Management (at least version 2.0) must be installed and configured on both the Orchestrator runbook server and the computer running the VMM console. You can do this using the Local Group Policy Editor.
 
 1. Select **Start** and then **Run**, enter **gpedit.msc**, and select **OK**.
 2. Under **Local Computer Policy**, then expand **Computer Configuration**, then expand **Administrative Templates**, and then expand **Windows Components**
