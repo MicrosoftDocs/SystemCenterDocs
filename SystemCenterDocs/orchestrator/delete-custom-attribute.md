@@ -18,7 +18,6 @@ ms.date: 05/16/2024
 ---
 # Delete Custom Attribute
 
-
 The Delete Custom Attribute activity is used in a runbook to delete a custom attribute from an existing message.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
