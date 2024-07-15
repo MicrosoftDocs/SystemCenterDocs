@@ -29,7 +29,7 @@ The following tables list the required and optional properties and published dat
 |:---|:---|:---|
 | Distinguished Name | Distinguished name of the computer account to delete | String   |
 
-## Published data fot Delete Computer activity
+## Published data for Delete Computer activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
