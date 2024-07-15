@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Swap Deployment
 
-
-
 The **Swap Deployment** activity initiates a virtual IP swap between the staging and production deployment environments for a service. It's part of the **Azure Deployments** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
