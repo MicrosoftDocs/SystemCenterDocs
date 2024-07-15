@@ -73,6 +73,10 @@ For more information about how to set up, configure, and run your environment to
 
 See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2022.
 
+### Release of SCO 2022 VMware vSphere Integration pack
+
+SCO 2022 VMware vSphere Integration packs is available for download [here](https://www.microsoft.com/download/details.aspx?id=106163).
+
 ### Release of SCO 2022 Exchange User Integration pack v10.22.2.19
 
 SCO 2022 Exchange User Integration pack now supports Private clouds. Download [here](https://www.microsoft.com/download/details.aspx?id=104336).
