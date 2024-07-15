@@ -53,7 +53,7 @@ To set up an FTP connection:
 3. In the **Name** box, enter a name for the connection. This can be the name of the **FTP** server or a descriptive name to distinguish the type of connection.
 4. In the **Type** box, select the â€¦ button and select a configuration type.
 5. In the **Connection Type** box, select the â€¦ button and select a connection type.
-6. In the **Transfer Type (FTP)** box, select the â€¦ button and select a transfer type. This configuration property applies to FTP only. This property can be left empty when the connection type is SSH File Transfer Protocol (SFTP).<br>**Note:**   Orchestrator doesn't support SFTP on computers that run Windows.
+6. In the **Transfer Type (FTP)** box, select the â€¦ button and select a transfer type. This configuration property applies to FTP only. This property can be left empty when the connection type is SSH File Transfer Protocol (SFTP).<br>**Note that**   Orchestrator doesn't support SFTP on computers that run Windows.
 7. In the **Server** box, enter the name or IP address of the **FTP** server. If you're using the computer name, you can enter the NetBIOS name or the fully qualified domain name (FQDN).
 8. In the **Port** box, enter the port number for the selected connection type.
 9. In the **Username** and **Password** boxes, enter the credentials that Orchestrator will use to connect to the **FTP** server.
