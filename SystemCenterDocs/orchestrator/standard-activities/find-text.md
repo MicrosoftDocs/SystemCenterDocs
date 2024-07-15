@@ -2,7 +2,7 @@
 title: Find Text 
 description: This article  provides information about the Find Text activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 10/01/2024
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

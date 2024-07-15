@@ -1,7 +1,7 @@
 ---
 title: Alphabetical List of Standard Activities
 description: This article lists Standard Activities
-ms.date: 10/01/2024
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

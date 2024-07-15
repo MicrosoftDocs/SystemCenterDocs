@@ -2,7 +2,7 @@
 title: Format Date-Time
 description: This article describes the functionality of Format Date/Time activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 10/01/2024
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

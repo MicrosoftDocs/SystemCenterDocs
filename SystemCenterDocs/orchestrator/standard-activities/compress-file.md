@@ -2,7 +2,7 @@
 title: Compress File 
 description: This article describes the Compress File activity that compresses files into zip archives.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 10/01/2024
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

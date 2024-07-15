@@ -4,7 +4,7 @@ description: This article provides details about the Orchestrator Integration Pa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/01/2024
+ms.date: 07/15/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -37,7 +37,7 @@ To create a new integration pack, follow these steps:
 
 1. Start the Integration Pack Wizard. Select **Start > Orchestrator Integration Pack Wizard**. The welcome page displays.  
 
-2. If you've an existing Integration Pack that you want to update, select **Import Integration Pack**. For more information, see [Updating an Existing Integration Pack](integration-pack-wizard.md#updating-an-existing-integration-pack). To create a new Integration Pack, select **Next**.  
+2. If you've an existing Integration Pack that you want to update, select **Import Integration Pack**. For more information, see [Updating an Existing Integration Pack](integration-pack-wizard.md#update-an-existing-integration-pack). To create a new Integration Pack, select **Next**.  
 
    > [!IMPORTANT]
    > If you want to upgrade an existing IP, you must select **Import Integration Pack**. If you select **Next**, the IP you create will have a new unique product ID and new unique IDs for all activities, even if you re-use a previous assembly and use the same product and filenames.  

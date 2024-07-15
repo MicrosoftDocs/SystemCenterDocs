@@ -4,7 +4,7 @@ description: This article provides details about the Orchestrator Integration To
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/01/2024
+ms.date: 07/15/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -57,7 +57,7 @@ Follow these steps to create a new command-line activity assembly:
 
 10. When you're finished adding and modifying commands, select **Next**. The assembly file specified at the start of the wizard is compiled, and when the process is complete, the final wizard page displays.  
 
-11. If you wish to immediately build an Integration Pack from this new assembly, select the **Build Integration Pack** button, which launches the Integration Pack Wizard and pre-loads the information from the assembly. Then, follow the instructions in [Creating a New Integration Pack](integration-pack-wizard.md#creating-a-new-integration-pack) to create the Integration Pack.  
+11. If you wish to immediately build an Integration Pack from this new assembly, select the **Build Integration Pack** button, which launches the Integration Pack Wizard and pre-loads the information from the assembly. Then, follow the instructions in [Creating a New Integration Pack](integration-pack-wizard.md#create-a-new-integration-pack) to create the Integration Pack.  
 
 12. If you wish to test your assembly using the Invoke .NET activity or just skip the IP build process for now, select **Finish**.  
 

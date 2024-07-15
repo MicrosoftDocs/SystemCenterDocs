@@ -2,7 +2,7 @@
 title: Get File Status
 description: This article describes the functionality of Get File Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
