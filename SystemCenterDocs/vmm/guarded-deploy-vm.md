@@ -72,7 +72,7 @@ You can deploy shielded VMs in VMM in a couple of ways:
     ::: moniker range="sc-vmm-2025"
     - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
     - The operating system on the disk must be one of:
-        - Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016
+        - Windows Server 2025, Windows Server 2022, Windows Server 2019
         - Windows 11, Windows 10
     - The OS disk for the VM must use the GUID Partition Table. This is required for generation 2 VMs to support UEFI.
     ::: moniker-end
