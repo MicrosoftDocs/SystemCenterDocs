@@ -48,7 +48,7 @@ No optional properties are provided for this activity.
 | Total CPU (MHz)   | The total CPU MHz available on the virtual machine cluster.   | Integer   |
 | Total Memory (MB)   | The total memory available on the virtual machine cluster.   | Integer   |
 
-## Configuring the Get Cluster Properties Activity
+## Configure the Get Cluster Properties Activity
 
 To configure the Get Cluster Properties Activity, follow these steps:
 
