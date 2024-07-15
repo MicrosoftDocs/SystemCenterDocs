@@ -554,7 +554,7 @@ These workloads can be running on a single server or in a cluster configuration.
 ::: moniker range="sc-dpm-2022"
 
 >[!Note]
-> DPM isn't supported, when you use Managed Instance link for distributed availability group.
+> DPM isn't supported when you use Managed Instance link for distributed availability group.
 
 ### SQL Server 2022 support
 
