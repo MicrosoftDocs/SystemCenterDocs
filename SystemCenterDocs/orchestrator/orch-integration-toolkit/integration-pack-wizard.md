@@ -4,7 +4,7 @@ description: This article provides details about the Orchestrator Integration Pa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/03/2024
+ms.date: 10/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,12 +13,10 @@ ms.custom: engagement-fy24
 
 # Integration Pack Wizard
 
-
-
 The Integration Pack Wizard (IP Wizard) allows you to create a new Integration Pack from an existing _Integration assembly_. _Integration assemblies_ can be authored using the Command-Line Activity Wizard (`CLIActivityWizard`) or using the Orchestrator SDK. The IP Wizard (`IPWizard`) packages the assemblies, dependent files, and required metadata into a `.OIP` file that can be deployed via the Orchestrator Deployment Manager.
 You can create professional-looking Integration Packs with full branding and custom icons, or simply package up command-line activities so that they can be more easily deployed using the IP Wizard.
 
-## Deciding when to create an integration pack  
+## Decide when to create an integration pack  
 
 It’s important to decide whether it’s appropriate to use activities individually with the Toolkit’s **.NET Integration Pack** activities, or it's better to create and deploy all the activities in an Integration Pack.  
 
@@ -26,7 +24,7 @@ When you only have few activities or when you’re in the development phase and 
 
 If you have a group of activities to test or you’re further along in the development cycle and want to test the entire end-to-end process of installation or upgrade, then creating an Integration Pack is the better approach. The Integration Pack provides a more user-friendly experience and a complete installation experience. Integration Packs also allow for deployment of the activities to multiple Runbook Servers or Runbook Designers across the organization or to external customers.  
 
-## Creating a new integration pack  
+## Create a new integration pack  
 
 The Integration Pack Wizard allows you to create Integration Packs from the existing Orchestrator-compatible assemblies and dependent files. If you haven't yet created an Orchestrator-compatible assembly, see the [Command Line Activity Wizard](command-line-activity-wizard.md#create-a-new-activity-assembly).  
 
@@ -35,7 +33,7 @@ The Integration Pack Wizard allows you to create Integration Packs from the exis
 
 [wix-official]: https://wixtoolset.org/
 
-#### To create a new integration pack  
+To create a new integration pack, follow these steps:
 
 1. Start the Integration Pack Wizard. Select **Start > Orchestrator Integration Pack Wizard**. The welcome page displays.  
 
@@ -90,13 +88,13 @@ The Integration Pack Wizard allows you to create Integration Packs from the exis
 
     For information on deploying your Integration Pack, see the article [How to add an Integration Pack](../how-to-add-an-integration-pack.md).  
 
-## Updating an existing integration pack  
+## Update an existing integration pack  
 
 The Orchestrator Integration Pack Wizard allows you to import an existing Integration Pack so that you can make changes and repackage it as a new version. Ensure that you check the **Enable Upgrade** checkbox, otherwise a new IP will be created instead of replacing or upgrading the previous installed version.  
 
 ### Helpful IP Upgrade Tips  
 
-#### Updating underlying assemblies
+#### Update underlying assemblies
 
 When you create an Integration Pack, metadata about the IP is stored in the package so that it can be read by the wizard during subsequent upgrades. When you update certain items such as activities or the underlying assemblies for those activities, you need to rebuild the IP. However, if you modify the activity settings and select a new assembly file, it will reset the fields on the Activity Information page, requiring you to enter the information again.  
 
@@ -124,7 +122,7 @@ Prior to converting an IP, the following steps must be completed:
 > [!NOTE]
 > For the easiest conversion process, you should place all of these files in the locations they were in when the IP was originally packaged before starting the IP Wizard. The IP Wizard references these files by their original paths. Selecting a new path is possible for all files, but selecting a new path for assemblies containing the activities will result in some of the details of the activity to be reset, requiring you to enter the information again. By using the original paths for the files, the existing information is simply reused without having to re-enter it.  
 
-#### To convert an Opalis-compatible Integration Pack  
+#### Convert an Opalis-compatible Integration Pack
 
 1. Start the Integration Pack Wizard  
 

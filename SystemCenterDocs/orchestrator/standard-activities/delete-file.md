@@ -2,7 +2,7 @@
 title: Delete File activity
 description: This article describes the delete file activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 10/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,8 @@ manager: jsuri
 
 The Delete File activity deletes files from the local file system or from a network location specified using a UNC path. You can purge a folder that contains old log files.  
 
-## Configuring the Delete File Activity  
+## Configure the Delete File Activity
+
  Before you configure the Delete File activity, you need to know which files you're deleting.  
 
  Use the following information to configure the Delete File activity.  
@@ -33,7 +34,8 @@ The Delete File activity deletes files from the local file system or from a netw
 |**File age**|Select the **Is less than** or **Is more than** option from the dropdown list to delete the files that are older or newer, respectively, than the number of days that you specify.|  
 |**days**|Enter the number of days that you'll use with the file age measure.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

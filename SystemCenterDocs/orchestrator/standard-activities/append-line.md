@@ -2,7 +2,7 @@
 title: Append Line
 description: This article describes the functionality of Append Line Activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 10/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,13 +17,12 @@ manager: jsuri
 ---
 # Append Line
 
-
-
 The Append Line activity appends a line of text into a text file. Use the Append Line activity to append lines to a log file to create audits trails of runbooks.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
-## Configuring the Append Line Activity  
+## Configure the Append Line Activity
+
  Before you configure the Append Line activity, you need to determine the following:  
 
 - The file name you want to append to.  
@@ -42,7 +41,8 @@ Use the following information to configure the Append Line activity.
 |**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** dropdown list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
 |**Text**|Enter the text that you want to append to the file that you specified.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  
