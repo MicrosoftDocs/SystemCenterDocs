@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create User Role
 
-
-
 This activity creates a user role within a designated cloud.
 
 ## Create User Role Activity Required Properties

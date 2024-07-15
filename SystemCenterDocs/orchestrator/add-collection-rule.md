@@ -65,7 +65,6 @@ You can specify the following rule properties:
   * Include Collection – the name or Collection ID of a collection of the same type (user or device) as the collection specified above.
   * Exclude Collection – the name or Collection ID of a collection of the same type (user or device) as the collection specified above.
 
-
 > [!Note]
 > When you use the browse feature to look up a collection name or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 
@@ -76,7 +75,7 @@ You can specify the following rule properties:
   |Connection| Specifies the name of the connection to the Configuration Manager server.|
   |Collection ID| Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|
 
-## Configuring the Add Collection Rule Activity
+## Configure the Add Collection Rule Activity
 
 To configure the Add Collection Rule activity:
 

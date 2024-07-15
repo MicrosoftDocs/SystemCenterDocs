@@ -18,8 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Create Cloud Service
 
-
-
 The **Create Cloud Service** activity creates a new cloud service in Azure. It's part of **the Azure Cloud Services** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -47,7 +45,6 @@ There are no optional properties for this runbook activity.
 | Description   | A description for the cloud service.   | String   |
 | Location/Affinity Group   | Whether to create the cloud service in a certain location or affinity group.   | String   |
 | Location/Affinity Group Value | The location where the cloud service will be created, or the name of an existing affinity group associated with the subscription. | String   |
-
 
 ## Next steps
 
