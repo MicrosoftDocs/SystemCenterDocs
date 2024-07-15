@@ -12,4 +12,4 @@ ms.subservice: data-protection-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Data Protection Manager (DPM) has reached the end of support. We recommend you to [upgrade to DPM 2022](../dpm/upgrade-dpm.md).
+>Service Provider Foundation (SPF) is discontinued from System Center 2025. However, SPF 2022 will continue to work with System Center 2025 components.

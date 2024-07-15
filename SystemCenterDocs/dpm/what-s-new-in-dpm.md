@@ -16,9 +16,9 @@ ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 
 ::: moniker range="sc-dpm-2025"
 
-This article gives details of the new features supported in System Center - Data Protection Manager (DPM) 2025.
-
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article gives details of the new features supported in System Center - Data Protection Manager (DPM) 2025.
 
 [!INCLUDE [whats-new-dpm-2025.md](../includes/whats-new-dpm-2025.md)]
 

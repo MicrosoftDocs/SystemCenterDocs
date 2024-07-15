@@ -16,6 +16,8 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 
 ::: moniker range="sc-orch-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article details the system requirements for System Center 2025 - Orchestrator.
 
 [!INCLUDE [system-reqs-orch-2025.md](../includes/system-reqs-orch-2025.md)]

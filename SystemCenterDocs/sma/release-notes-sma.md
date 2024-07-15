@@ -15,6 +15,12 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Release notes for System Center - Service Management Automation
 
+::: moniker range=sc-sma-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sma-2022"
 
 This article provides the release notes for System Center 2022 - Service Management Automation (SMA).

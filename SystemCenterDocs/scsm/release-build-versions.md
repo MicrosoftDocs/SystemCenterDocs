@@ -14,7 +14,11 @@ ms.custom: engagement-fy23
 
 # System Center – Service Manager build versions
 
+::: moniker range="sc-sm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+::: moniker-end
 
 This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
