@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Alert
 
-
-
 The Update Alert activity publishes all the data from the required and optional properties into published data. 
 
 The following tables list the required and optional properties and published data for this activity.

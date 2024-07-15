@@ -12,15 +12,13 @@ ms.custom: UpdateFrequency3
 ---
 # Service Manager activities
 
-
-
 The following configuration instructions apply to all the activities in the System Center Integration Pack for System Center - Service Manager. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
-#### To configure the properties for an activity
+#### Configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 
@@ -36,7 +34,7 @@ This tab contains the **Name** and **Description** properties for the activity. 
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the Connection property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Service Manager management server.
 
-#### To configure the Connection property
+#### Configure the Connection property
 
 1.  Select the ellipsis **(...)** button next to the **Configuration** field.
 
@@ -110,7 +108,7 @@ Published data is the foundation of a working runbook. It's the data produced as
 
 An activity can only subscribe to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+### Use published data
 
 1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 

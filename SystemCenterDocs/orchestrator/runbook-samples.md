@@ -17,8 +17,6 @@ ms.date: 05/08/2019
 
 # Runbook Samples
 
-
-
 This topic provides instructions about how to build and test sample runbooks by using the standard activities found in System Center - Orchestrator.  
 
 ## Samples  
