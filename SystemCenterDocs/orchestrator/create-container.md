@@ -18,7 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Create Container
 
-
 The **Create Container** activity creates a new container under the specified account. It's part of the **Azure Storage** category activity.
 
 >[!NOTE]

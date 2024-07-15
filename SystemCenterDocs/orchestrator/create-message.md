@@ -18,8 +18,6 @@ ms.date: 05/16/2024
 ---
 # Create Message
 
-
-
 The Create Message activity is used in a runbook to store a new message on the management server.
 
 The following tables list the required and optional properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).

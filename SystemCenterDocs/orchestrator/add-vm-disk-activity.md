@@ -56,18 +56,18 @@ The activity publishes all the data from the required and optional properties in
 | VM Path   | The path of the virtual machine that this disk belongs to.   | String   |
 | SCSI Controller Type | The type of SCSI controller to add if one doesn't exist on the chosen SCSI bus. | String   |
 
-## Configuring the Add VM Disk Activity
+## Configure the Add VM Disk Activity
 
 The following procedure describes the steps required to configure an Add VM Disk activity.
 
-1.  From the **Activities** pane, drag an **Add VM Disk** activity to the active runbook.
+1. From the **Activities** pane, drag an **Add VM Disk** activity to the active runbook.
 
-2.  Double-click the **Add VM Disk** activity icon.
+2. Double-click the **Add VM Disk** activity icon.
 
-3.  Configure the settings in the **Properties** tab as follows:
+3. Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use the published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

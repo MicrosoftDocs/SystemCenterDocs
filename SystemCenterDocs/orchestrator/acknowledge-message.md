@@ -12,7 +12,6 @@ monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---
 
-
 # Acknowledge Message
 
 The Acknowledge Message activity is used in a runbook to acknowledge or unacknowledge a message.
