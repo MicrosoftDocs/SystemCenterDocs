@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Runbook Control
 
-
-
 The following table provides a brief description of tasks you can accomplish with each activity.  
 
 |Tasks|Activity|  
@@ -28,5 +26,6 @@ The following table provides a brief description of tasks you can accomplish wit
 |Publish data from any branch.|[Junction](junction.md)|  
 |Run a runbook.|[Invoke Runbook](invoke-runbook.md)|  
 
-## See Also  
+## See Also
+
 [Standard Activities](../standard-activities.md).
