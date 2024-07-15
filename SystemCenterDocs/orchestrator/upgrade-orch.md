@@ -14,7 +14,6 @@ ms.custom: UpdateFrequency.5
 
 # Upgrade System Center Orchestrator
 
-
 ::: moniker range="sc-orch-2025"
 
 This article provides the upgrade information for System Center 2025 - Orchestrator.
