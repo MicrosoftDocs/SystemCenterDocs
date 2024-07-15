@@ -17,16 +17,15 @@ manager: jsuri
 ---
 # Set SNMP Variable
 
-
-
 The Set SNMP Variable activity will modify a variable, specified by its MIB, on a network device. Use the Set SNMP Variable to update a variable that reports on the failure or success of a critical runbook.  
 
-## Configuring the Set SNMP Variable Activity  
+## Configure the Set SNMP Variable Activity
+
  Before you configure the Set SNMP Variable activity, you need to determine the following:  
 
--   IP address of the device as well as the port number, SNMP MIB, and the SNMP version  
+- IP address of the device as well as the port number, SNMP MIB, and the SNMP version  
 
--   Community string required to update the variable  
+- Community string required to update the variable  
 
 > [!NOTE]
 >  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
@@ -44,14 +43,16 @@ The Set SNMP Variable activity will modify a variable, specified by its MIB, on 
 |**SNMP version**|Select the SNMP version to use when connecting to the network device. You can select **SNMPv1** or **SNMPv2c**.|  
 |**Community string**|Type the community string that will be used to authenticate against the network device. The community should have rights of Read write or higher. This field is case-sensitive and supports only alphanumeric characters.|  
 
-### Advanced Tab  
+### Advanced Tab
+
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Timeout**|Type the number of seconds the Set SNMP Variable will wait for a response from the network device. If the operation times out, then it will attempt to retry the action. The number of retries is specified in the **Retry** box.|  
 |**Retry**|Type the number of times to attempt to set the SNMP variable.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

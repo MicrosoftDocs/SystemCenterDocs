@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Notification
 
-
-
 The following table provides a brief description of tasks you can accomplish when using each Notification activity.  
 
 |Tasks|Notification Activities|  
