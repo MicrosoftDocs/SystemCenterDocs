@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # List of Integration Packs for Orchestrator
 
-
-
 ::: moniker range="<=sc-orch-2019"
 
 The following is a list of the available integration packs and the information for each.  
@@ -59,7 +57,7 @@ The following is a list of the available integration packs and the information f
 
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">=sc-orch-2022"
 
 The following is a list of the available integration packs and the information for each.  
 
