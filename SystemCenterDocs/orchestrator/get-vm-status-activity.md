@@ -52,7 +52,7 @@ No optional properties are provided for this activity.
 | VM Path   | The full path of the virtual machine on the vCenter server.   | String   |
 | VM UUID   | The UUID of the virtual machine as assigned by the vCenter server.   | String   |
 
-## Configuring the Get VM Status Activity
+## Configure the Get VM Status Activity
 
 The following procedure describes the steps required to configure a Get VM Status activity.
 

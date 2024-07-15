@@ -16,7 +16,6 @@ manager: jsuri
 ---
 # Disable Remote Mailbox (Hybrid)
 
-
 You can use the Disable Remote Mailbox (Hybrid) activity to remove a mailbox from the cloud-based service (hybrid environment). When you remove a mailbox with this activity, the associated user object in the on-premises Active Directory isn't removed.
 
 The following tables list the required properties, optional properties, and published data for this activity.

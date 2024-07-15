@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Resume File Download
 
-
-
 The Resume File Download activity is used in a runbook to resume a file download. This activity is only compatible with an FTP configuration.
 
 This activity publishes all the data from the required properties into published data.

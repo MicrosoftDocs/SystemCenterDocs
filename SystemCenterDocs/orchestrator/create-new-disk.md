@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create New Disk
 
-
-
 The Create New Disk activity is used to create a new disk and add it to a virtual machine.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

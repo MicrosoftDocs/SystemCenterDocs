@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Scheduling
 
-
-
 The following table provides a brief description of tasks you can accomplish when using each Scheduling activity.  
 
 |Tasks|Scheduling Activities|  

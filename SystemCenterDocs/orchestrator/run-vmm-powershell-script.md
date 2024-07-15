@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Run VMM PowerShell Script
 
-
-
 The Run VMM PowerShell activity is used to call any PowerShell activity.
 
 ## Run VMM PowerShell Script required properties

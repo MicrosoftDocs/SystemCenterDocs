@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Update Storage Account
 
-
-
 The **Update Storage Account** activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Microsoft Azure. It's part of the **Azure Storage** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

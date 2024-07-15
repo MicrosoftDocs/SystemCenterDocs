@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Monitor State
 
-
-
 The Monitor State activity monitors the state of an Operations Manager object that you specify. For example, you can use the Monitor State activity to trigger a corrective runbook when an object with a Warning or Critical state is detected.
 
 The following tables list the properties and published data for this activity. The activity publishes all the data from the properties into published data.

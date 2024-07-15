@@ -18,8 +18,6 @@ ROBOTS: noindex
 
 # Deploy application activity
 
-
-
 The Deploy Application activity is used to create new application
 deployments and assign them to collections. This activity uses the new
 Configuration Manager application model and relies on applications
@@ -52,18 +50,17 @@ optional properties into published data.
 
   - **ID** (default): the value is a collection ID
 
-  -   **Name**: the value is a collection name
+  - **Name**: the value is a collection name
 
 - Purpose: The deployment intent or purpose. The options are:
   - **Required** (default): the application is mandatory to be installed or uninstalled
 
   - **Available**: the application is made available but not mandatory
 
-
 - Action: The action to be performed with the application. The options are:
 
   - **Install** (default): the application will be installed on the device
-  -   **Uninstall**: the application will be uninstalled from the device
+  - **Uninstall**: the application will be uninstalled from the device
 
 - User Notification: Determines how the user sees the application and its notifications. The options are:
   - **Show all notifications** (default): the application is listed in the Software Center and all the notifications are displayed to the user.
@@ -104,12 +101,10 @@ optional properties into published data.
 > [!Note]
 > This setting applies only if the **Purpose** is set to **Required**.
 
-
 Require administrator approval: True or False (Default = False) Specifies whether the administrator will receive an alert and must approve before the installation occurs.
 
 > [!Warning]
 > This setting applies only if the **Purpose** is set to **Available** and the collection specified is a user collection.
-
 
 - Use default distribution point groups: True or False (Default = False) If distribution point groups are already associated with this collection, the content associated with this deployment will automatically be distributed to those distribution point groups without having to specify individual distribution points or groups.
 

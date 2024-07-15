@@ -11,8 +11,6 @@ ms.date: 07/10/2024
 ---
 # VMware vSphere integration pack
 
-
-
 The integration pack for VMware vSphere is an add-on for System Center - Orchestrator. It assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
 
 [Learn more](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx) about privacy in Orchestrator.
@@ -28,6 +26,12 @@ The integration pack for VMware vSphere is an add-on for System Center - Orchest
 ::: moniker range="sc-orch-2022"
 
 - Download the pack for Orchestrator 2022 from here, on the download center.
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+- Download the pack for Orchestrator 2025 from here, on the download center.
 
 ::: moniker-end
 

@@ -18,8 +18,6 @@ monikerRange: '<=sc-orch-2019'
 
 # Get Storage Account Properties
 
-
-
 The **Get Storage Account Properties** activity returns system properties for the specified storage account. It's part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

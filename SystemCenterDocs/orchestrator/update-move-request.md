@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Move Request
 
-
-
 You can use the Update Move Request activity in a runbook to change the attributes of an existing Move request for an on-premises environment.
 
 The following tables list the required properties, optional properties, and published data for this activity.

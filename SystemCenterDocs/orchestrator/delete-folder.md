@@ -18,8 +18,6 @@ ms.date: 05/16/2024
 ---
 # Delete folder on an FTP server
 
-
-
 The Delete Folder activity is used in a runbook to delete a folder on an FTP server.
 
 This activity publishes all the data from the required properties into published data.

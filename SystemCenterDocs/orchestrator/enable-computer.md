@@ -17,7 +17,6 @@ manager: jsuri
 
 # Enable Computer
 
-
 You can use the Enable Computer activity in a runbook to enable a computer in the Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

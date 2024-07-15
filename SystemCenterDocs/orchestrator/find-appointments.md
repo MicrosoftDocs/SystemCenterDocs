@@ -17,7 +17,6 @@ manager: jsuri
 
 # Find Appointments
 
-
 The Find Appointments activity is used in a runbook to find an existing appointment.
 
 The following tables list the required properties, optional properties, filters, and published data for this activity.

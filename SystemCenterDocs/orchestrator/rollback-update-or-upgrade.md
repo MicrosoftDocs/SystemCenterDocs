@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Rollback Update or Upgrade
 
-
-
 The **Rollback Update or Upgrade** activity cancels an in progress configuration change (update) or upgrade and returns the deployment to its state before the upgrade or configuration change was started. It's part of the **Azure Deployments** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
