@@ -342,7 +342,7 @@ Run the following PowerShell command to extract the v10.19.350.0 release package
 Setup.exe /components:webapi,webconsole
 ```
 
-Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
+Review the [API](/system-center/orchestrator/install#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
 
 The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
@@ -360,7 +360,7 @@ Run the following PowerShell command to extract the v10.19.350.0 release package
 Setup.exe /components:webapi,webconsole
 ```
 
-Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
+Review the [API](/system-center/orchestrator/install#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
 
 The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
