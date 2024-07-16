@@ -194,7 +194,7 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 ### Stopping protection of a data source from fails with ID: 33469
 
-**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
+**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469 - *This operation is not supported on the current version of the MARS agent*.
 
 This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
 

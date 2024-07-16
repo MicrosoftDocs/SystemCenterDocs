@@ -87,7 +87,7 @@ With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexib
 
 You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
 
-### VMware back up to tape
+### VMware backup to tape
 
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
 

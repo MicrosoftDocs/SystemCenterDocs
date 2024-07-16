@@ -4,7 +4,7 @@ description: include file that summarizes the release notes for Operations Manag
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/22/2022
+ms.date: 07/16/2024
 ms.service: system-center
 ms.assetid:
 ms.subservice: operations-manager
