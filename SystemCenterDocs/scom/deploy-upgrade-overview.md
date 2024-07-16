@@ -14,9 +14,9 @@ ms.topic: article
 
 # Upgrade System Center Operations Manager
 
-
-
 ::: moniker range="sc-om-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 This section of the Deployment Guide provides information about how to upgrade to System Center 2025 from an older supported version. You can upgrade to Operations Manager 2025 from Operations Manager versions 2022.
 

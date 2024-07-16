@@ -14,7 +14,11 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Operations Manager
 
+::: moniker range="sc-om-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+::: moniker-end
 
 Welcome to System Center - Operations Manager. Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
 

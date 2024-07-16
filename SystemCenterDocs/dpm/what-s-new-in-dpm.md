@@ -16,6 +16,8 @@ ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 
 ::: moniker range="sc-dpm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article gives details of the new features supported in System Center - Data Protection Manager (DPM) 2025.
 
 [!INCLUDE [whats-new-dpm-2025.md](../includes/whats-new-dpm-2025.md)]
@@ -85,7 +87,7 @@ With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexib
 
 You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
 
-### VMware back up to tape
+### VMware backup to tape
 
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
 
