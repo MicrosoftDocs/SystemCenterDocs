@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Computer
 
-
-
 You can use the Delete Computer activity in a runbook to delete a computer in the Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
@@ -31,7 +29,7 @@ The following tables list the required and optional properties and published dat
 |:---|:---|:---|
 | Distinguished Name | Distinguished name of the computer account to delete | String   |
 
-## Published data fot Delete Computer activity
+## Published data for Delete Computer activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

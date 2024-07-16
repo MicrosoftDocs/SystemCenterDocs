@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Monitoring
 
-
-
 The following table provides a brief description of the tasks you can accomplish when using each Monitoring activity.  
 
 |Tasks|Monitoring Activities|  

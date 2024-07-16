@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Remove VM Endpoint
 
-
-
 The **Remove VM Endpoint** activity removes an external endpoint from the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
 >[!NOTE]

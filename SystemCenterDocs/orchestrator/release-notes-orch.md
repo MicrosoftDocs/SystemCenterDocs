@@ -14,6 +14,14 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 # Release notes for System Center Orchestrator
 
+::: moniker range="sc-orch-2025"
+
+This article provides the release notes for System Center 2025 - Orchestrator.
+
+[!INCLUDE [release-notes-orch-2025.md](../includes/release-notes-orchestrator-2025.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-orch-2022"
 
 This article provides the release notes for System Center 2022 - Orchestrator.
@@ -21,7 +29,6 @@ This article provides the release notes for System Center 2022 - Orchestrator.
 [!INCLUDE [release-notes-orch-2022.md](../includes/release-notes-orch-2022.md)]
 
 ::: moniker-end
-
 
 ::: moniker range="sc-orch-2019"
 
@@ -44,4 +51,5 @@ This article lists the release notes for System Center 2016 - Orchestrator.
 ::: moniker-end
 
 ## Next steps
+
 [What's new in Orchestrator](./whats-new-in-orch.md).

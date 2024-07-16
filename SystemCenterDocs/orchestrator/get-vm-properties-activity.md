@@ -44,7 +44,7 @@ No optional properties are provided for this activity.
 | Memory MB   | The memory allocated to the VM in megabytes.   | String   |
 | VM Path   | The path of the virtual machine in the vSphere hierarchy.   | String   |
 
-## Configuring the Get VM Properties Activity
+## Configure the Get VM Properties Activity
 
 The following procedure describes the steps required to configure a Get VM Properties activity.
 

@@ -13,8 +13,6 @@ ms.subservice: orchestrator
 
 # System Center - Orchestrator build versions
 
-
-
 ::: moniker range="sc-orch-2025"
 
 This article lists Microsoft System Center 2025 - Orchestrator build versions.
@@ -23,7 +21,6 @@ This article lists Microsoft System Center 2025 - Orchestrator build versions.
 
 ::: moniker-end
 
-
 ::: moniker range="sc-orch-2022"
 
 This article lists Microsoft System Center 2022 - Orchestrator build versions. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
@@ -31,7 +28,6 @@ This article lists Microsoft System Center 2022 - Orchestrator build versions. E
 [!INCLUDE [release-build-versions-2022.md](../includes/release-build-versions-orch-2022.md)]
 
 ::: moniker-end
-
 
 ::: moniker range="sc-orch-2019"
 

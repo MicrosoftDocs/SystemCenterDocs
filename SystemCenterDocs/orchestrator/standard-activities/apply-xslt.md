@@ -2,7 +2,7 @@
 title: Apply XSLT
 description: This article describes the functionality of Apply XSLT activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Apply XSLT
 
-
-
 The Apply XSLT activity enables you to transform the content of an XML file according to the rules in an XSLT file that you specify. You can use the Apply XSLT activity to transform the content of an XML file to an HTML file.  
 
-## Configuring the Apply XSLT Activity  
+## Configure the Apply XSLT Activity
+
  Before you configure the Apply XSLT activity, you need to determine the following:  
 
 - The name of the XML file that will be converted.  
@@ -40,7 +39,8 @@ Use the following information to configure the Apply XSLT activity.
 |**Output XML file**|Enter the path, file name, and file name extension for the file that will hold the results of the transformation. Alternatively, select the ellipsis button **(...)** and browse for the folder where you'll save the file. From the Windows **Open** dialog, enter the file name and file name extension in the **File name** box.|  
 |**XSLT file**|Enter the path and name of the XSLT file that you want to use to transform the input XML file, or select the ellipsis button **(...)** and browse for it.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

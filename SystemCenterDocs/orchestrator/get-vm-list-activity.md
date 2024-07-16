@@ -50,7 +50,7 @@ No optional properties are provided for this activity.
 | VM Name  | The name of the VM.   | String   |
 | VM Path  | The full path of the VM on the vCenter server. | String   |
 
-## Configuring the Get VM List Activity
+## Configure the Get VM List Activity
 
 The following procedure describes the steps required to configure a Get VM List activity.
 

@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Synchronize Folder or File
 
-
-
 The Synchronize Folder/File activity is used in a runbook to perform a one way synchronization of a folder/File.
 
 This activity publishes all the data from the required and optional properties into published data.

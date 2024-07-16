@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Run .NET Script
 
-
-
 The Run .NET Script activity runs scripts written in VB.NET, JScript, C#, and Windows PowerShell. This activity is compatible with .NET CLR version 2.0 and later. Use the Microsoft System Center - Orchestrator Run .NET Script activity to run scripts that parse data or run functions against available APIs.  
 
 ## Configure the Run .NET Script Activity
@@ -34,7 +32,7 @@ The Run .NET Script activity runs scripts written in VB.NET, JScript, C#, and Wi
   Use the following information to configure the Run .NET Script activity.  
 
 > [!NOTE]
->  You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
+> You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
 ### Details Tab  
 
@@ -50,7 +48,8 @@ The Run .NET Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 |**Namespace**|Add a Namespace for each .NET namespace that will be used within your code. This allows you to call the code without using fully qualified names for each of the classes. Orchestrator recommends adding System namespace to every Run .NET Script activity.|  
 |**References**|Add each of the Assembly (DLL) references that contain the libraries that you want to use. Add the **System.dll** located in the **Windows\Microsoft.NET\Framework\\<.NET Version>** directory.|  
 
-###  <a name="BKMK_PublishedData"></a> Published Data  
+###  <a name="BKMK_PublishedData"></a> Published Data
+
  Add the published data items that you want this activity to publish. Every published data item that you add will be available on the Data bus. It's important to determine if a published data item will be multi-valued. The Run .NET Script activity automatically correlates multi-valued data from different items by aligning them. For example, if you choose to publish two items labeled **Name** and **Email** as Collections, the Run .NET script will try to line up each item in the Name collection with each item in the Email collection. If the collections aren't equally sized, then the Run .NET Script activity will create blank values for the collection that has fewer items. The following Published Data table lists the data items and the corresponding description published by this activity.  
 
 ### Published Data Tab  
@@ -77,25 +76,23 @@ The Run .NET Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 
 You can run 64-bit Windows PowerShell in Orchestrator *Run.Net Script* activity. Use the following steps:
 
-1.	Create a Run .NET Script activity from the **System activities group**.
-2.	In **Details** > **Type**, select **PowerShell** as the language.
-3.	In  **Script**, enclose your PowerShell commands in the following code:  
+1. Create a Run .NET Script activity from the **System activities group**.
+2. In **Details** > **Type**, select **PowerShell** as the language.
+3. In  **Script**, enclose your PowerShell commands in the following code:  
 
     ```
     Invoke-Command -ScriptBlock {YOUR CODE} -ComputerName localhost
 
     ```
 
-4.	Select **Finish**.
+4. Select **Finish**.
 
     ![Screenshot of Run .NET Script Activity.](../standard-activities/media/run-net-script-activity/run-net-script.png)
 
 >[!NOTE]
->
 >To verify the PowerShell version, use the following script in *Run .NET Script* activity and publish the 64 bit and PowerShell version variable.
 
-```
-
+```powershell
 $Result = Invoke-Command -ComputerName localhost {
 $Is64BitProcess = [Environment]::Is64BitProcess
 $PSVersion = $PSVersionTable.PSVersion

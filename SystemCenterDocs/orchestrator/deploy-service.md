@@ -12,8 +12,6 @@ ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 # Deploy Service activity
 
-
-
 The Deploy Service activity is used in a runbook to create a service using a specified service template.
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

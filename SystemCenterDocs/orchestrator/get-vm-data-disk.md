@@ -18,8 +18,6 @@ monikerRange: '<=sc-orch-2019'
 
 # Get VM Data Disk
 
-
-
 The **Get VM Data Disk** activity retrieves the specified data disk from a virtual machine. It's part of the **Azure Virtual Machine Disks** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
