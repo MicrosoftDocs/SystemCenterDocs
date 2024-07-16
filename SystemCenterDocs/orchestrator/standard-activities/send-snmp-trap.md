@@ -17,23 +17,22 @@ manager: jsuri
 ---
 # Send SNMP Trap
 
-
-
 The Send SNMP Trap activity will raise an SNMP event that can be detected by a network systems manager application. By using an enterprise identifier of a known network device, you can send SNMP Traps on behalf of a network device in your system. Use the Send SNMP Trap to create events for runbooks that need to be tracked using an SNMP monitoring product.  
 
-## Configuring the Send SNMP Trap Activity  
+## Configure the Send SNMP Trap Activity
+
  Before you configure the Send SNMP Trap activity you need to determine the following:  
 
--   IP address of the device where you will send your SNMP trap  
+- IP address of the device where you will send your SNMP trap  
 
--   Identifiers of the trap  
+- Identifiers of the trap  
 
--   The SNMP version you will use  
+- The SNMP version you will use  
 
--   The agent address you want to identify as the sender of the SNMP trap information 
+- The agent address you want to identify as the sender of the SNMP trap information 
 
 > [!NOTE]
->  You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
+> You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
  Use the following information to configure the Send SNMP Trap activity.  
 
@@ -51,13 +50,14 @@ The Send SNMP Trap activity will raise an SNMP event that can be detected by a n
 |**SNMP Version**|Select the SNMP version to use when generating the SNMP trap.|  
 |**Community string**|Type the community string that will be used to authenticate against the network device. This field is case-sensitive and supports only alphanumeric characters.<br /><br /> The Send SNMP Trap activity does not verify the content of community strings, nor whether the strings are received. It sends whatever data you provide, whether it is valid or not. The activity returns a status of Success if it was able to send the data, regardless of whether the data were correct or readable.|  
 
-### Advanced Tab  
+### Advanced Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Address**|If you want to identify another computer as the agent that sends the SNMP trap information, type the agent address in the box. Otherwise, leave the box blank. The activity will use the agent address of the runbook server that runs the runbook. This setting can only be used with version SNMPv1.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

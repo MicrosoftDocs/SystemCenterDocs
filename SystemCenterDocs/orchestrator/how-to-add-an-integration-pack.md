@@ -13,8 +13,6 @@ ms.custom: engagement-fy23
 
 # Add an integration pack
 
-
-
 System Center - Orchestrator includes a set of standard activities that are automatically installed. You can expand functionality and ability of Orchestrator to integrate platforms and products by Microsoft and other companies by installing integration packs. Each integration pack contains activities that provide functions that are unique to that product. Microsoft provides integration packs for all the System Center components, several other Microsoft products, and products from other companies.
 
 Integration packs are available from the Microsoft Download Center. Each integration pack has a guide that provides installation instructions, known issues, and reference information for the activities in that integration pack.
@@ -30,14 +28,13 @@ When you install an upgrade of an integration pack, you must first uninstall any
 
 Select the required tab for the steps to register, deploy, and upgrade an integration pack:
 
-
 # [Register an integration pack](#tab/Register)
 
 Follow these steps to register an integration pack:
 
 1. On the management server, copy the .OIP file for the integration pack to a local hard drive or network share.
-2.	Start the Deployment Manager.
-3.	In the navigation pane of the Deployment Manager, expand Orchestrator Management Server, right-click Integration Packs to select Register IP with the Management Server. The Integration Pack Registration Wizard opens.
+2. Start the Deployment Manager.
+3. In the navigation pane of the Deployment Manager, expand Orchestrator Management Server, right-click Integration Packs to select Register IP with the Management Server. The Integration Pack Registration Wizard opens.
 4.	Select **Next**.
 5.	In the Select Integration Packs or Hotfixes dialog, select **Add**.
 6.	Locate the .OIP file that you copied locally from step 1, select **Open**, and then select **Next**.

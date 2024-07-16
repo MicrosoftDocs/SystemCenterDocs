@@ -18,8 +18,6 @@ ms.date: 05/16/2024
 ---
 # Delete file on an FTP server
 
-
-
 The Delete File activity is used in a runbook to delete a file on an FTP server.
 
 This activity publishes all of the data from the required properties into published data.

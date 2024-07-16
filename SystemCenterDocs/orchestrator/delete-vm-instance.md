@@ -16,9 +16,8 @@ manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
+
 # Delete VM Instance
-
-
 
 The **Delete VM Instance** activity deletes the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

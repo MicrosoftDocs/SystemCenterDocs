@@ -17,8 +17,6 @@ ms.date: 07/10/2024
 ---
 # VMware vSphere Activities
 
-
-
 This integration pack adds the VMware vSphere category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
 - [Add Network Adapter Activity](add-network-adapter-activity.md)

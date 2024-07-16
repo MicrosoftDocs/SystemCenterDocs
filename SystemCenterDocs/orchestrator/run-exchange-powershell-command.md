@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Run Exchange PowerShell Command
 
-
-
 You can use the Run Exchange PowerShell Command activity in a runbook to run Exchange 2010 cmdlets.
 
 The following tables list the required properties and published data for this activity.

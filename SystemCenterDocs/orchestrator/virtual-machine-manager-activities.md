@@ -12,8 +12,6 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ---
 # System Center VMM Activities
 
-
-
 The following configuration instructions apply to all the activities in the System Center Integration Pack for System Center - Virtual Machine Manager (VMM).
 
 ## Activity properties
@@ -29,7 +27,6 @@ To configure the properties for an activity:
 In the activity properties dialog, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
 ## General tab
-
 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 

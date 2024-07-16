@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency3
 ---
 # Service Manager published data
 
-
-
 The following tables list the published data elements for all of the classes in the System Center - Service Manager Integration Pack.
 
 ## Active Directory Group Class published data

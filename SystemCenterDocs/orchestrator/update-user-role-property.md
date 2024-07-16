@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update User Role Property
 
-
-
 Updates User Role Property
 
 ## Update User Role Property Required Properties

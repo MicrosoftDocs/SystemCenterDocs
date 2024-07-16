@@ -17,7 +17,6 @@ manager: jsuri
 
 # Download Attachment
 
-
 The **Download Attachment** activity is used in a runbook to download an attachment from a Microsoft SharePoint list item.
 
 The following tables list the required properties and Published Data for this activity.

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create VM from Template
 
-
-
 The Create VM from Template activity is used to create a new virtual machine from the specified template.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

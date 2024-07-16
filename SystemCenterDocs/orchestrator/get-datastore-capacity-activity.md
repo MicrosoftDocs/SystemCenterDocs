@@ -41,7 +41,7 @@ No optional properties are provided for this activity.
 | Free Space   | The total amount of available space.   | Integer   |
 | Percent Free | The amount of available space as a percentage of the available capacity. | Integer   |
 
-## Configuring the Get Datastore Capacity Activity
+## Configure the Get Datastore Capacity Activity
 
 To configure the Get Datastore Capacity Activity, follow these steps:
 

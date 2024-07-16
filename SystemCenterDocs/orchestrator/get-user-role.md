@@ -17,8 +17,6 @@ manager: jsuri
 
 # Get User Role
 
-
-
 Returns data on all the user roles within the VMM server.
 
 >[!IMPORTANT]
