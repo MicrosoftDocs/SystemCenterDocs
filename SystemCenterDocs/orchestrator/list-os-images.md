@@ -1,8 +1,8 @@
 ---
 title: List OS Images
 description: The List OS Images activity retrieves a list of the operating system images from the image repository.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 07/12/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # List OS Images
-
-
 
 The **List OS Images** activity retrieves a list of the operating system images from the image repository. It's part of the **Azure Virtual Machine Images** category activity.
 
