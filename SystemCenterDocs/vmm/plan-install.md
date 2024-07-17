@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/05/2024
+ms.date: 07/16/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -35,7 +35,7 @@ Verify the following [system requirements](system-requirements.md):
 
 **Component** | **Details**
 --- | ---
-**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
+**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](/windows-hardware/get-started/adk-install). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
 **Guest operating system** | Windows operating systems [supported by Hyper-V](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows).<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
 **PowerShell** | [Supported versions](system-requirements.md)
