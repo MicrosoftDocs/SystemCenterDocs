@@ -13,8 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 05/16/2024
+ms.date: 07/10/2024
 ---
 # Customize VM Activity
 
@@ -47,8 +46,6 @@ No optional properties are provided for this activity.
 ## Configuring the Customize VM Activity
 
 The following procedure describes the steps required to configure a Customize VM activity.
-
-#### To configure the Customize VM Activity
 
 1.  From the **Activities** pane, drag a **Customize VM** activity to the active runbook.
 
