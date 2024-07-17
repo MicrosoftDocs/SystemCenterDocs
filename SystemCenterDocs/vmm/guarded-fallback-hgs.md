@@ -5,7 +5,7 @@ description: This article explains about how to configure the fallback HGS in VM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/10/2024
+ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
