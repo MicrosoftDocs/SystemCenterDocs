@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/15/2024
+ms.date: 07/17/2024
 title: What's supported and what isn't for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -553,8 +553,11 @@ These workloads can be running on a single server or in a cluster configuration.
 
 ::: moniker range="sc-dpm-2022"
 
->[!Note]
-> DPM isn't supported when you use Managed Instance link for distributed availability group.
+### SQL distributed availability group using Managed Instance Links
+
+**Issue**: DPM cannot protect a SQL DAG when using [Managed Instance Links](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql).
+
+**Workaround**: [Use Automated backups in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql).
 
 ### SQL Server 2022 support
 
