@@ -201,7 +201,7 @@ Follow these steps to recover a single mailbox:
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 
-2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protectd Exchange Data** node).
+2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protected Exchange Data** node).
 
 3. The available recovery points are indicated in bold on the calendar in the recovery points section. Select a date and select a recovery point in **Recovery time** > **Recover**.
 
@@ -510,7 +510,7 @@ Follow these steps to recover a single mailbox:
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 
-2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protectd Exchange Data** node).
+2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protected Exchange Data** node).
 
 3. Available recovery points are indicated in bold on the calendar in the recovery points section. Select a date and select a recovery point in **Recovery time** > **Recover**.
 
