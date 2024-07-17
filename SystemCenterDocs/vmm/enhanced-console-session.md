@@ -21,7 +21,7 @@ Console connect in VMM provides a way to connect to the VM without a network con
 
 ::: moniker range=">=sc-vmm-2019"
 
-VMM supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)**, and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
+From System Center 2019, VMM supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)**, and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
 
 ::: moniker-end
 
