@@ -39,10 +39,10 @@ Ensure the following prerequisites:
 1.  The operating system of the host on which the VM is running should be Windows Server 2019 or later.
 ::: moniker-end
 2.	The Hyper-V host must have Enhanced session mode policy setting turned ON.
-::: moniker range="=sc-vmm-2016"
+::: moniker range="sc-vmm-2016"
 3.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016, or later.
 ::: moniker-end
-::: moniker range=">=sc-vmm-2019 <=sc-vmm-2025"
+::: moniker range=">=sc-vmm-2019"
 3.	The computer from which you connect to the VM must run on Windows 11, Windows 10, Windows 8.1, Windows Server 2016, or later.
 ::: moniker-end
 
@@ -54,7 +54,7 @@ Ensure the following prerequisites:
 4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows Server 2016, or later as the guest operating system.
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2022 <=sc-vmm-2025"
+::: moniker range=">=sc-vmm-2022"
 4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 11, Windows Server 2016, or later as the guest operating system.
 ::: moniker-end
 
