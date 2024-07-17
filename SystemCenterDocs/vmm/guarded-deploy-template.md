@@ -74,7 +74,7 @@ The existing Windows VMs can also be converted to shielded VMs with the use of a
 1. [Prepare a helper VHD](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2016 or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
 ::: moniker-end
 ::: moniker range="sc-vmm-2025"
-1. [Prepare a helper VHD](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2019 or later or Windows 11/10 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
+1. [Prepare a helper VHD](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2019 or later or Windows 10/11 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
 ::: moniker-end
 1. [Copy the helper VHD](library-files.md) to a library share, and refresh the library server.
 1. In the VMM console, select **Settings** > **Host Guardian Service Settings**.
