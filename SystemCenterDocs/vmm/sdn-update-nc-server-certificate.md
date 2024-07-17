@@ -5,7 +5,7 @@ description: This article describes the procedure on how to update the network c
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/01/2024
+ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -38,7 +38,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
    - Certificate with private key - Export the certificate and import it on all the NC nodes' **My** store.
    - Certificate without a private key - Export the certificate and import it on all the NC nodes' **Root** store.
 
-2. If the certificate is a CA issued certificate, import it in all network controller nodes' **My** store.
+2. If the certificate is a CA issued certificate, import it on all network controller nodes' **My** store.
 
    > [!NOTE]
    > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Proceed with the rest of the steps to update the certificate.

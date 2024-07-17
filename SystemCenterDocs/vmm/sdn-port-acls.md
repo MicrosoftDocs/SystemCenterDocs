@@ -5,7 +5,7 @@ description: This article describes how to allow and block network traffic to a 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/24/2023
+ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,7 +21,7 @@ In System Center Virtual Machine Manager (VMM), you can centrally configure and 
 - A port ACL is a set of port ACL rules that filter the traffic at layer 2 port level.
 - A port ACL in VMM filters access to a specific VMM network object.
 - Each VMM network object can have only one port ACL attached.
-- An ACL contains rules and can be attached to any number of VMM network objects. You can create an ACL without rules, and add the rules later.
+- An ACL contains rules and can be attached to any number of VMM network objects. You can create an ACL without rules and add the rules later.
 - If an ACL has multiple rules, they're applied based on the priority. After a rule matches the criteria and is applied, no other rules are processed.  
 - SDN Port ACLs can be applied to virtual subnets and virtual network adapters.
 
