@@ -26,8 +26,8 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 - **Load balancing the internal network traffic** (Internal load balancing): This scenario includes load balancing the network traffic of workloads in the VM network that is enabled for **network virtualization**. Load balancing is done through a VIP.
 
 :::moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
-    > [!NOTE]
-    > VMM 2016 supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
+  > [!NOTE]
+  > VMM 2016 supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
 :::moniker-end
 
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
