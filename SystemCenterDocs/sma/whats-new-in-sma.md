@@ -17,6 +17,8 @@ ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy24
 
 ::: moniker range="sc-sma-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article provides the new features supported by System Center 2025 - Service Management Automation (SMA).
 
 ### Improved reliability of SMA jobs

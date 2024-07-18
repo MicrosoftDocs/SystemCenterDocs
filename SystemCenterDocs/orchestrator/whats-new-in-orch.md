@@ -136,6 +136,8 @@ Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [
 
 ::: moniker range="sc-orch-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 ## New features in Orchestrator 2025
 
 See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2025.

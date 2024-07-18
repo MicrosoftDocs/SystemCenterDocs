@@ -16,6 +16,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 ::: moniker range="sc-om-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 The following sections describe general performance and scalability guidance for System Center 2025 - Operations Manager.  These sections also provide recommendations for hardware configurations for various workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here. A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
 
 [!INCLUDE [system-reqs-om-2025.md](../includes/system-reqs-om-2025.md)]

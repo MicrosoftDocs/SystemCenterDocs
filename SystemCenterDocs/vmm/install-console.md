@@ -35,6 +35,9 @@ This article describes how to install the System Center Virtual Machine Manager 
 ::: moniker range="sc-vmm-2022"
 - The VMM version of the console must match the System Center version of the VMM server. For example, to connect to a VMM server running System Center 2022, the VMM console version must also be 2022.
 ::: moniker-end
+::: moniker range="sc-vmm-2025"
+- The VMM version of the console must match the System Center version of the VMM server. For example, to connect to a VMM server running System Center 2025, the VMM console version must also be 2025.
+::: moniker-end
 - You can only install one version of the console on a single machine.
 
 

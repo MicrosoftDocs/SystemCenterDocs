@@ -1,11 +1,11 @@
 ---
 ms.assetid:
 title: include file
-description: include article to detail the system requirements for VMM 2022
+description: include article to detail the system requirements for VMM 2025
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 06/28/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -49,8 +49,8 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
-Windows Server 2022 Desktop experience| Y | Y | If supported by SQL Server version
-Windows Server 2022 Server Core| Y | Y | If supported by SQL Server version
+Windows Server 2025 Desktop experience| Y | Y | If supported by SQL Server version
+Windows Server 2025 Server Core| Y | Y | If supported by SQL Server version
 
 >[!NOTE]
 > Ensure that VMM server operating system is the same as the managed host operating system in case of deployment of Hyper Converged Infrastructure.
@@ -61,10 +61,10 @@ Windows Server 2022 Server Core| Y | Y | If supported by SQL Server version
 --- | ---
 Windows 10 Enterprise | Y
 Windows 11 Enterprise | Y
-Window Server 2016 Standard, Datacenter | Y
 Windows Server 2019 (with desktop experience) | Y
 Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 Windows Server 2022 Standard, Datacenter | Y
+Windows Server 2025 Standard, Datacenter | Y
 
 
 ## SQL Server
@@ -75,11 +75,9 @@ Windows Server 2022 Standard, Datacenter | Y
 
 **SQL version** | **Supported**
 --- | ---
-SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) | Y
-SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) | Y
 SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019) | Y
-SQL Server 2022 as detailed [here](/lifecycle/products/?terms=SQL+Server+2022) (Supported from VMM 2022 UR1) | Y
-SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack.<br/> or <br/> Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/> or <br/> Install the SQL Server 2022 Command-Line Utilities from the Microsoft® SQL Server® 2022 Feature Pack.<br/><br/>Not required for VMM installation
+SQL Server 2022 as detailed [here](/lifecycle/products/?terms=SQL+Server+2022) | Y
+SQL Server command line utilities | Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/> or <br/> Install the SQL Server 2022 Command-Line Utilities from the Microsoft® SQL Server® 2022 Feature Pack.<br/><br/>Not required for VMM installation
 
 ## Virtualization
 
@@ -96,7 +94,7 @@ These components should be installed on the server before you install VMM.
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
 Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn't exceed 15 characters. | A computer with the VMM console installed should be a domain member.
-Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 11 and Windows Server 2022 and download windows PE Add-on for ADK| Not applicable
+Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 11 and Windows Server 2025 and download windows PE Add-on for ADK| Not applicable
 PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 .NET (minimum) | 4.6 |  4.5
 
@@ -107,28 +105,24 @@ PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
-Windows Server 2016 Standard and Datacenter (Core) | Y | Y | N | N
-Windows Server 2016 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
-Hyper-V Server 2016 | N | N | N | N
 Windows Server 2019 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
 Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N                                           
-[Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) | Y | N | N | N  
-[Azure Stack Hyper Converged Infrastructure (HCI, version 21H2)](../vmm/deploy-manage-azure-stack-hci.md)| Y | N | N | N
-[Azure Stack Hyper Converged Infrastructure (HCI, version 22H2)](../vmm/deploy-manage-azure-stack-hci.md) (Supported from VMM 2022 UR1)| Y | N | N | N
+[Azure Stack Hyper Converged Infrastructure (HCI, version 23H2)](../vmm/deploy-manage-azure-stack-hci.md)| Y | N | N | N
 Windows Server 2022 | Y | Y | Y | Y
+Windows Server 2025 | Y | Y | Y | Y
 
 ## VMware servers in the VMM fabric
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 6.5, 6.7<br/>7.0, 8.0 (supported from VMM 2022 UR1)
-vCenter | 6.5, 6.7<br/>7.0, 8.0 (supported from VMM 2022 UR1)
+ESX | ESX/ESXi 7.0, 8.0
+vCenter | 7.0, 8.0
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric
 
 **Guest operating system** | **Supported**
 --- | ---
-Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2022](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
+Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2025](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
 VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software).

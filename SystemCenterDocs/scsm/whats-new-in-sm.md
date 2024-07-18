@@ -17,6 +17,8 @@ ms.custom: UpdateFrequency.5, intro-whats-new
 
 ::: moniker range="sc-sm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article details the new features supported in System Center 2025 - Service Manager.  
 
 [!INCLUDE [whats-new-sm-2025.md](../includes/whats-new-sm-2025.md)]

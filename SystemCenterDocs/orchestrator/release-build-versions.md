@@ -15,6 +15,8 @@ ms.subservice: orchestrator
 
 ::: moniker range="sc-orch-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article lists Microsoft System Center 2025 - Orchestrator build versions.
 
 [!INCLUDE [release-build-versions-2025.md](../includes/release-build-versions-orchestrator-2025.md)]
