@@ -5,17 +5,16 @@ description: Describes how to configure a shielded template disk and utility dis
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/19/2023
+ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24
 ---
 
-#  Set up a disk and a VM template to deploy shielded VMs
+# Set up a disk and a VM template to deploy shielded VMs
 
-
-You deploy shielded virtual machines in the System Center - Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX) and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs, and convert the existing VMs to shielded VMs in VMM.
+You deploy shielded virtual machines in the System Center Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX) and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs, and convert the existing VMs to shielded VMs in VMM.
 
 ## Before you start
 
@@ -23,7 +22,7 @@ You deploy shielded virtual machines in the System Center - Virtual Machine Mana
 - The VMM library to which you add the signed template disk must be accessible to clouds from which shielded VMs will be provisioned.
 - The library shared should be added to clouds from which shielded VMs will be provisioned (not in read-only mode).
 
-## Adding signed template disks for shielded VMs to the VMM library
+## Add signed template disks for shielded VMs to the VMM library
 
 Shielded VMs can be deployed in two ways: by deploying directly from a signed template disk or by converting an existing VM to a shielded VM.
 
@@ -32,7 +31,7 @@ Signed template disks assure tenants that the disk contents haven't been modifie
 To prepare and add a signed template disk to the VMM library, complete the following steps:
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
-1. [Prepare a signed template disk](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 with Desktop Experience, or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/download/details.aspx?id=45520) installed.
+1. [Prepare a signed template disk](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 with Desktop Experience or Windows 10 or Windows 11 with the [Remote Server Administration Tools](https://www.microsoft.com/download/details.aspx?id=45520) installed.
 ::: moniker-end
 ::: moniker range="sc-vmm-2022"
 1. [Prepare a signed template disk](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 or 2019 with Desktop Experience or later, or Windows 10 or Windows 11 with the [Remote Server Administration Tools](https://www.microsoft.com/download/details.aspx?id=45520) installed.
@@ -62,7 +61,7 @@ After the VM template is created, ensure that it's available to the Tenant Admin
 
 The existing Windows VMs can also be converted to shielded VMs with the use of a shielding helper VHD. The helper VHD is a special disk prepared with tools to encrypt another VM's operating system drive. VMM must be configured with a helper VHD before you can shield the existing VMs.
 
-1. [Prepare a helper VHD](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2016 or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
+1. [Prepare a helper VHD](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2016 or later or Windows 10 or Windows 11 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
 2. [Copy the helper VHD](library-files.md) to a library share, and refresh the library server.
 3. In the VMM console, select **Settings** > **Host Guardian Service Settings**.
 4. In the Shielding Helper VHD section, select **Browse** and select the helper VHD from the list of files in the library shares.
