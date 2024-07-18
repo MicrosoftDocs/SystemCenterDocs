@@ -20,9 +20,9 @@ This article describes how to set up a Software Defined Networking (SDN) network
 
 The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](/windows-server/networking/sdn/technologies/network-controller/network-controller).
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-2022"
 
-VMM 2022 provides dual stack support for SDN network controller.
+VMM 2025 and 2022 provide dual stack support for SDN network controller.
 
 ::: moniker-end
 
@@ -37,10 +37,10 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-2022"
 
 >[!NOTE]
-> - VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.
+> - VMM 2022 and 2025 support dual stack (Ipv4 + Ipv6) for SDN components.
 > - See [System Requirements](system-requirements.md#servers-in-the-vmm-fabric) for the full list of supported server Operating System.
 
 ::: moniker-end
