@@ -5,12 +5,11 @@ description: This article provides information about how to manage the telemetry
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  10/13/2022
+ms.date:  07/16/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: data-protection-manager
-MonikerRange: sc-dpm-2019||sc-dpm-2016||sc-dpm-2022
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2,engagement-fy24
 ---
 
 # Manage telemetry settings
@@ -41,7 +40,6 @@ Administrators can turn off this feature at any point in time. For more informat
     > We recommend you to read the [Privacy Statement](https://privacy.microsoft.com/privacystatement) before you select an option.
     > - To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
     > - To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
-
 
 ::: moniker range="sc-dpm-2016"
 
