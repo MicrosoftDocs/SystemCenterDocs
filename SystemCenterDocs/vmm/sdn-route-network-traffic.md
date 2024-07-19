@@ -296,7 +296,7 @@ Using L3 forwarding connection, tenant network virtual machines can connect to a
 
 ::: moniker range="sc-vmm-2025"
 
-Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2016/2019/2022/2025 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
+Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2019/2022/2025 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
 
 ::: moniker-end
 

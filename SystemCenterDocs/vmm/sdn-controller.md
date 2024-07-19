@@ -40,7 +40,7 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 ::: moniker range=">=sc-vmm-2022"
 
 >[!NOTE]
-> - VMM 2022 and 2025 support dual stack (Ipv4 + Ipv6) for SDN components.
+> - VMM 2025 and 2022 support dual stack (Ipv4 + Ipv6) for SDN components.
 > - See [System Requirements](system-requirements.md#servers-in-the-vmm-fabric) for the full list of supported server Operating System.
 
 ::: moniker-end
