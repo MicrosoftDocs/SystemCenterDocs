@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2
 
 # Back up and restore the SDN infrastructure
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes the backup and recovery process of a software defined network (SDN) infrastructure in the System Center Virtual Machine Manager (VMM) fabric, and provides any applicable recommendations for the process completion.
 
@@ -63,7 +59,7 @@ Use the following refresh procedures to find any such differences between VMM an
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-1801"
+::: moniker range=">=sc-vmm-2019"
 > [!NOTE]
 > - Refresh cmdlets for refreshing network controller objects.
 > - If the network controller contains any objects that are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.

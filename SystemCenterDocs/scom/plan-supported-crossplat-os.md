@@ -14,11 +14,7 @@ ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 
 # Supported UNIX and Linux operating system versions
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2025"
 
@@ -270,36 +266,15 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
 
-The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 1801 - Operations Manager.  
 
-::: moniker-end
-
-::: moniker range="sc-om-1807"
-
-The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 1807 - Operations Manager.  
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 >[!NOTE]
 > Monitoring UNIX and Linux computers with System Center Operations Manager 2012 R2 management server is supported when using the System Center 2016 - Operations Manager agent with the Operations Manager 2012 R2 UNIX and Linux management packs. You can't import the required Operations Manager 2016 management packs for the specific version of UNIX/Linux and discover and deploy the Operations Manager 2016 agent from the **Computer and Device Management** wizard in your 2012 R2 management group. This task must be performed manually following the command-line-based deployment.
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
-
-## IBM AIX 6.1  
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|OS version|Version of operating system|6100-07-06-1241|  
-|xlC.rte|XL C/C++ Runtime|11.1.0.2|  
-|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -316,31 +291,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
 
-## IBM AIX 7 (Power)  
 
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|OS version|Version of operating system|7100-01-06-1241|  
-|xlC.rte|XL C/C++ Runtime|11.1.0.2|  
-|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-## IBM AIX 7 (Power)
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|OS version|Version of operating system|7100-01-06-1241|  
-|xlC.rte|XL C/C++ Runtime|11.1.0.2|  
-|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 ## HP-UX 11i v3 IA64  
 
@@ -354,19 +307,8 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807 >sc-om-2016"
 
-## Red Hat Enterprise Linux Server 5  
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|glibc|C Standard Libraries|2.12-1.7|  
-|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
-|PAM|Pluggable Authentication Modules|1.1.1-4|  
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 ## Red Hat Enterprise Linux Server 6  
 
@@ -399,7 +341,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 >- Solaris zone-level monitoring isn't supported.
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 ## Solaris 10 SPARC
 
@@ -456,18 +398,8 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807 >sc-om-2016"
 
-## SUSE Linux Enterprise Server 11
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|glibc-2.9-13.2|C Standard shared library|2.9-13.2|  
-|PAM|Pluggable Authentication Modules|pam-1.0.2-20.1|  
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 ## SUSE Linux Enterprise Server 12
 
@@ -475,20 +407,6 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |--------------------|---------------|-------------------|  
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|  
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|  
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807 >sc-om-2016"
-
-## Universal Linux (Debian package)
-
-Debian 8 and Ubuntu 14.04, 16.04 are supported.
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|libc6|C Standard shared library|2.3.6|  
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
-|PAM|Pluggable Authentication Modules|0.79-3|  
 
 ::: moniker-end
 
@@ -503,19 +421,6 @@ Ubuntu 14.04, 16.04 are supported.
 |libc6|C Standard shared library|2.3.6|  
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
 |PAM|Pluggable Authentication Modules|0.79-3|  
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807 >sc-om-2016"
-
-## Universal Linux (RPM package)
-Oracle Linux 6, 7 are supported.
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|glibc|C Standard shared library|2.5-12|  
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
-|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
 
 ::: moniker-end
 

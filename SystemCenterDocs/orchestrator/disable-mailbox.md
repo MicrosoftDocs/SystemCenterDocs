@@ -17,12 +17,6 @@ manager: jsuri
 
 # Disable Mailbox
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 For an on-premises environment, you can use the Disable Mailbox activity in a runbook to disable the mailbox of an existing user or InetOrgPerson object and remove that object's Exchange attributes from Active Directory. The user account associated with the disabled mailbox remains in Active Directory, but it's no longer associated with any mailbox. The disabled mailbox isn't deleted. It can be reconnected to a user at a later time.
 
 For an online cloud-based environment, the Disable Mailbox activity can be used with the Archive parameter to disable an archive for an existing mailbox.

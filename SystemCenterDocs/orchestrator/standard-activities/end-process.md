@@ -2,7 +2,7 @@
 title: End Process
 description: This article describes the End Process activity that ends processes that are running on the runbook server or on a remote computer.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -16,14 +16,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # End Process
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The End Process activity ends processes that are running on the runbook server or on a remote computer. The End Process activity can be used to shut down an application that isn't responding. The activity returns **success** if the named process is successfully ended or if the name process isn't running. This activity uses a satellite license.  
 

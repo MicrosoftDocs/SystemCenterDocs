@@ -18,12 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete VM Data Disk
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Delete VM Data Disk** activity removes the specified data disk from a virtual machine. It's part of the **Azure Virtual Machine Disks** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

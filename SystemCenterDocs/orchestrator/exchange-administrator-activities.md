@@ -17,12 +17,6 @@ manager: jsuri
 
 # Exchange Administrator Activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack. The detailed configuration sections for specific Exchange Admin activities all contain links back to these general instructions.
 
 Each procedure in this article is performed on an activity that has been placed in the runbook window of the **Orchestrator Runbook Designer**.
@@ -35,11 +29,11 @@ Each activity is configured with a set of required or optional properties. These
 > The property needs to have a value, otherwise the property won't be passed to the activity. An empty string or spaces isn't considered valid value.
 For example, GetMailbox activity has a property Identity. If the value for this property Identity is passed "" or "   ", then the Identity property will be omitted.
 
-### To view and configure the properties for an activity
+### View and configure the properties for an activity
 
-1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
-2.  View and configure the activity properties as needed.
-3.  To save your configuration entries, select **Finish**.
+1. Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
+2. View and configure the activity properties as needed.
+3. To save your configuration entries, select **Finish**.
 
 In the activity properties dialog, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
 
@@ -51,28 +45,28 @@ The **General** tab contains the **Name** and **Description** properties for the
 
 The **Properties** tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property on the **Properties** tab. The **Configuration Name** property is used to specify the connection to the Exchange server.
 
-### To configure the Configuration Name property
+### Configure the Configuration Name property
 
-1.  Select the ellipsis **(...)** button next to the **Name** field.
+1. Select the ellipsis **(...)** button next to the **Name** field.
 
-2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in <span>Exchange Admin Integration Pack for System Center - Orchestrator</span>.
+2. Select the applicable connection name. Connections displayed in the list have been previously configured as described in <span>Exchange Admin Integration Pack for System Center - Orchestrator</span>.
 
 ### Criteria for filters
 
 The **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When you specify filter criteria, you can select one of the available methods of comparison. The system provides an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds items that don't match the filter. All text filters are case sensitive.
 
--   **Equals**: The property of the item matches the text or number specified in the filter.
--   **Does not equal**: The property of the item doesn't match the text or number specified in the filter.
--   **Is less than**: The numeric property of the item is less than the number specified in the filter.
--   **Is less than or equal to**: The numeric property of the item is less than or equal to the number specified in the filter.
--   **Is greater than**: The numeric property of the item is greater than the number specified in the filter.
--   **Is greater than or equal to**: The numeric property of the item is greater than or equal to the number specified in the filter.
--   **Contains**: The property of the item contains the exact text specified in the filter. There can be other text surrounding the matching text.
--   **Does not contain**: The property of the item doesn't contain the exact text specified in the filter.
--   **Matches pattern**: This comparison method uses regular expressions to specify a pattern that the text must match.
--   **Does not match pattern**: This comparison method uses regular expressions to specify a pattern that the text must not match.
--   **Starts with**: The property of the item starts with the exact text specified in the filter.
--   **Ends with**: The property of the item ends with the exact text specified in the filter.
+- **Equals**: The property of the item matches the text or number specified in the filter.
+- **Does not equal**: The property of the item doesn't match the text or number specified in the filter.
+- **Is less than**: The numeric property of the item is less than the number specified in the filter.
+- **Is less than or equal to**: The numeric property of the item is less than or equal to the number specified in the filter.
+- **Is greater than**: The numeric property of the item is greater than the number specified in the filter.
+- **Is greater than or equal to**: The numeric property of the item is greater than or equal to the number specified in the filter.
+- **Contains**: The property of the item contains the exact text specified in the filter. There can be other text surrounding the matching text.
+- **Does not contain**: The property of the item doesn't contain the exact text specified in the filter.
+- **Matches pattern**: This comparison method uses regular expressions to specify a pattern that the text must match.
+- **Does not match pattern**: This comparison method uses regular expressions to specify a pattern that the text must not match.
+- **Starts with**: The property of the item starts with the exact text specified in the filter.
+- **Ends with**: The property of the item ends with the exact text specified in the filter.
 
 ### The Run Behavior tab
 
@@ -84,9 +78,9 @@ The **Get** activities retrieve information from another activity or outside sou
 
 By default, the data from the **Get** activity will be passed on as multiple individual outputs. These multiple outputs will invoke the next prescribed activity as many times as there are items in the output. Alternatively, to request a single combined output for the activity, you can enable the **Flatten** option. When you enable the **Flatten** option, you must specify the output format:
 
--   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files.
--   **Separate with**. Each item is separated by one or more characters of your choice.
--   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
+- **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files.
+- **Separate with**. Each item is separated by one or more characters of your choice.
+- **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
 
 The **Get** activity will produce a new set of data every time it runs. The **Flatten** feature doesn't flatten data across multiple instances of the same activity.
 
@@ -96,9 +90,9 @@ Some activities are expected to take only a limited amount of time to complete. 
 
 ### To be notified when the activity takes longer than a specified time to run or fails to run
 
-1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
+1. In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
-2.  Select **Report if activity fails to run** to generate run failure notifications.
+2. Select **Report if activity fails to run** to generate run failure notifications.
 
 ## Published data
 
@@ -106,11 +100,11 @@ Published data is the data produced as a result of the actions of an activity. T
 
 An activity can subscribe only to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-### To use published data
+### Use published data
 
-1.  Right-click the property value box, select **Subscribe**, and then select **Published Data**.
-2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
-3.  Select the published data element that you want to use, and select **OK**.
+1. Right-click the property value box, select **Subscribe**, and then select **Published Data**.
+2. Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
+3. Select the published data element that you want to use, and select **OK**.
 
 For a list of the data elements published by each activity, see the **Published Data** table in the specific activity section. For information about the common published data items, see <span>Common Published Data</span>.
 

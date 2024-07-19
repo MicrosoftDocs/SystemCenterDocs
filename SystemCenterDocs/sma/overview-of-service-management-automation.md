@@ -13,9 +13,9 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Overview of Service Management Automation
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+::: moniker range="sc-sma-2025"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 ::: moniker-end
 

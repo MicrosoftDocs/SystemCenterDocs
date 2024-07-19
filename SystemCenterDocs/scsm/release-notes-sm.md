@@ -13,6 +13,15 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Release notes for System Center Service Manager
+
+::: moniker range="sc-sm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Service Manager.
+
+::: moniker-end
+
 ::: moniker range="sc-sm-2022"
 
 This article lists the release notes for System Center 2022 - Service Manager. This article also includes the release notes for Operations Manager 2022 UR2.
@@ -29,23 +38,6 @@ This article provides the release notes for System Center Service Manager 2019.
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-This article provides the release notes for System Center 1807 - Service Manager (SM).
-
-[!INCLUDE [release-notes-sm-1807.md](../includes/release-notes-sm-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-sm-1801"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-This article provides the release notes for System Center 1801 - Service Manager (SM).
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
@@ -53,11 +45,7 @@ This article provides the release notes for System Center 2016 - Service Manager
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1801"
 
-[!INCLUDE [release-notes-sm-1801.md](../includes/release-notes-sm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 

@@ -2,7 +2,7 @@
 title: Decompress File
 description: This article describes the Decompress File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Decompress File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Decompress File activity decompresses the files contained in a zip archive file. You can extract files from zip archives that are downloaded using email or FTP.  
 
-## Configuring the Decompress File Activity  
+## Configure the Decompress File Activity
+
  Before you configure the Decompress File activity, you need to determine the following:  
 
 - The archive file name that you want to decompress.  
@@ -46,7 +39,8 @@ Use the following information to configure the Decompress File activity.
 |**Reproduce tree**|Select this option to extract the files to the same relative paths that they were saved in. To use this feature, the relative paths must have been stored in the zip archive when it was created.|  
 |**If the destination file exists**|Select the action that you want to take if a file with the same name as the file being extracted exists in the destination folder:<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique filename that doesn't conflict with an existing filename.<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that you're extracting.<br /><br /> **Fail**: Select this option to cause the **Decompress File** activity to fail if the file name already exists.|  
 
-### Published Data  
+### Published Data
+
  The following table lists published data items.  
 
 |Item|Description|  

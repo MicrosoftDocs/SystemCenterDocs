@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Monitor Service
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Monitor Service activity invokes runbooks when a service has been started or stopped. You can use the Monitor Service activity to monitor services on any remote computer. Use the Monitor Service activity to create runbooks that take corrective actions when services unintentionally shut down. For example, if a SQL Server service that hosts critical data stops responding, you can use a Monitor Service activity with a [Start/Stop Service](start-stop-service.md) activity to automatically restart the service.  
 
-## Configuring the Monitor Service Activity  
+## Configure the Monitor Service Activity
+
  Before you configure the Monitor Service activity, you need to determine the following:  
 
 - Which computer hosts the service that you're monitoring  
@@ -49,7 +42,8 @@ Use the following information to configure the Monitor Service activity.
 |**Restart stopped service**|Select the **Restart stopped service** box to restart a service that has stopped. You can also use the Start/Stop Service activity instead of selecting this option.|  
 |**Test frequency**|Select the amount of time to wait between each time that the Monitor Service activity checks the status of the service.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

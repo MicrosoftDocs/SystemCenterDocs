@@ -7,7 +7,7 @@ manager: jsuri
 ms.date: 07/19/2018
 ms.custom: UpdateFrequency2
 ms.service: system-center
-monikerRange: '>=sc-om-1807'
+monikerRange: '>=sc-om-2019'
 ms.assetid:
 ms.subservice: operations-manager
 ms.topic: article
@@ -15,11 +15,7 @@ ms.topic: article
 
 # How to view the effective configuration of a monitored object
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
  In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.
 

@@ -17,12 +17,6 @@ manager: jsuri
 
 # Get Mailbox
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment. The Get Mailbox activity lets you filter against various mailbox attributes.
 
 This activity calls the Exchange Get-Mailbox PowerShell cmdlet to do the underlying work. For more information, see [this article](/powershell/module/exchange/get-mailbox) about the Get-Mailbox cmdlet that shares the same parameter set.

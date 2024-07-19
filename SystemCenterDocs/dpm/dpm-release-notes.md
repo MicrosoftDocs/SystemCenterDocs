@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: Release Notes for System Center DPM
-description: Release notes about the DPM 2016, 1801, 1807, 2019 and 2022 releases.
+description: Release notes about the DPM 2016, 2019 and 2022 releases.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -13,6 +13,22 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # System Center DPM Release Notes
+
+::: moniker range="sc-dpm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Data Protection Manager (DPM), including the known issues and workarounds for DPM 2025.
+
+This article also includes the release notes for DPM 2025 Hotfix KB.
+
+We recommend you to see the following articles for detailed information about what DPM supports and can back up:
+
+- [What can DPM back up](dpm-protection-matrix.md)
+- [What DPM supports](dpm-support-issues.md)
+
+::: moniker-end
+
 ::: moniker range="sc-dpm-2019"
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes), DPM [2019 UR2](#dpm-2019-ur2-release-notes), DPM [2019 UR3](#dpm-2019-ur3-release-notes), DPM [2019 UR4](#dpm-2019-ur4-release-notes), [2019 UR5](#dpm-2019-ur5-release-notes), and [2019 UR6](#dpm-2019-ur6-release-notes) as applicable.
@@ -178,7 +194,7 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 ### Stopping protection of a data source from fails with ID: 33469
 
-**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
+**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469 - *This operation is not supported on the current version of the MARS agent*.
 
 This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
 
@@ -187,22 +203,6 @@ This issue occurs because DPM erroneously checks for an installed version of MAR
 ## DPM 2022 UR2 Refresh release notes
 
 DPM 2022 UR2 Refresh fixes the known issues in DPM 2022 UR2.
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-This article lists the release notes for System Center 1807 - Data Protection Manager (DPM).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-This article lists the release notes for System Center 1801 - Data Protection Manager (DPM).
 
 ::: moniker-end
 
@@ -298,12 +298,6 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Description**: DPM 2019 doesn't support end user recovery (EUR) with Modern Backup Storage (MBS).
 
 **Workaround**: None. File Server EUR isn't supported when using MBS.
-
-### DPM 1801/1807 servers cannot be managed by DPM 2019 central console
-
-**Description**: With DPM 2019 central console you can't manage any DPM 1801 or DPM 1807 servers.
-
-**Workaround**: Upgrade your DPM server to version 2019.
 
 ### Recovery Points not being pruned, leading to an accumulation of Recovery Points
 
@@ -506,208 +500,6 @@ For the issues fixed in UR6 and the installation instructions for UR6, see the [
 **Workaround**: None. Contact Microsoft support for assistance.
 
 ::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-## DPM 1807 Release notes
-
-To view the list of bugs that have been fixed in DPM 1807, refer to [KB article 4339950](https://support.microsoft.com/help/4339950).
-
-The following issues exist in the 1807 release.
-
-### Hyper-V VMs are protected twice on VM upgrade
-
-**Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group Wizard.
-
-**Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM and create a new protection group. Then refresh the data sources and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
-
-
-### Agent installation fails on Windows Server 2008, Windows Server 2008 R2
-
-**Description**: When protecting Windows Server 2008 or Windows Server 2008 R2, installing the agent can fail.
-
-**Workaround**: Upgrade the Windows Management Framework (WMF) on the production server to 5.1. Download the WMF from [Windows Management Frame 5.1](https://www.microsoft.com/download/details.aspx?id=54616). Install WMF and then install the agent.
-
-### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
-
-**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups might fail.
-
-**Workaround**: After recovery, change the VM Version to 2016 and then run a Consistency Check.
-
-### Bare Metal Recovery protection failures
-
-**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job might fail with the message that the replica size isn't sufficiently large.
-
-**Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
-
-**HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
-
-### Reprotecting the DPM database after upgrading to DPM 2016 or 1801
-
-**Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016 or 1801, the DPM database name can change in some scenarios.
-
-**Workaround**: If you're protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
-
-### Recovery Points not being pruned, leading to an accumulation of Recovery Points
-**Description:** DPM prunes recovery points older than the retention range. During the pruning process, DPM calculates the storage consumed by those recovery points to be pruned. Storage calculation delays pruning.
-
-**Workaround:** Configure DPM to skip calculating the size of recovery points to be pruned. As a result, the pruning script runs faster and prunes all recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source isn't updated until DPM finishes pruning. The storage consumption per volume continues to reflect the correct values.
-Use a PowerShell script to turn on size calculation. The following script runs complete size calculations.
-
-**Location:** Program Files\Microsoft System Center 2016\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
-
-**Script:** ```Manage-DPMDSStorageSizeUpdate.ps1 -ManageStorageInfo [StopSizeAutoUpdate | StartSizeAutoUpdate | GetSizeAutoUpdateStatus | UpdateSizeInfo ] [-UpdateSizeForDS <FilePath>] [-UpdatedDSSizeReport <FilePath>] [-FailedDSSizeUpdateFile <FilePath>]```
-
-- **ManageStorageInfo:** - Specifies the kind of operation needed.
-
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell won't report sizes.
-
-    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI might not be correct.
-
-    - ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
-
-    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups might fail with vhd mount errors.
-
-- **UpdateSizeForDS:** Path to a text file with a list of Datasource IDs for which size needs to be calculated with a datasourceID on each line. When not passed, size calculation is triggered for all the data sources.
-    Use after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
-    To get the Datasource IDs of specific data sources, use ``` Get-DPMProtectionGroup | Get-DPMDatasource | Format-table -Property Computer,name,ObjectType,Id```.
-
-- **UpdatedDSSizeReport:** Path to a file that stores the updated data source sizes. When not passed, sizes.csv file is created in the execution directory.
-    Use after ```UpdateSizeInfo``` in ```ManageStorageInfo```.
-
-- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This might happen due to reasons as ongoing backups. When not passed failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
-    This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
-
-### Hyper-V RCT - recover as files for D-T backup fails
-
-**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T doesn't exhibit this issue.
-
-**Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
-
-
-### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
-
-**Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end user recovery (EUR) isn't available.
-
-**Workaround**: None. File Server EUR isn't supported when using MBS.
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-## DPM 1801 Release notes
-
-The following bugs have been fixed in the DPM 1801 release:
-
-- Upgrading the DPM agent on the production server causes an unexpected reboot.
-- Consistency checks for Hyper-V VMs transferred more data than the size of the VMs.
-
-The following issues exist in the 1801 release.
-
-### Silent Installation of System Center DPM with SQL Server 2008
-
-**Description**: DPM 2016 RTM won't silently install on SQL Server 2008.
-
-**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008 or use the DPM 2016 Setup user interface.
-
-### Remove-DPMDiskStorage cmdlet might delete volumes with active or inactive backups
-
-**Description**: If the volume's data sources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the data sources can be removed too.
-
-**Workaround**: Before using the cmdlet to remove the volumes, ensure that the volume's data sources aren't in use (actively or inactively).
-
-### DPM 2016 on Windows Server 2016 hangs
-
-**Description**: Memory consumption on the DPM Server increases continuously until it reaches 90%. Memory consumption slows the DPM server.
-
-**Workaround**: Upgrade DPM to DPM UR2 and install [KB4013429](https://support.microsoft.com/help/4013429/windows-10-update-kb4013429) to fix this issue.
-
-
-### Hyper-V VMs are protected twice on VM upgrade
-
-**Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group Wizard.
-
-**Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM and create a new protection group. Then refresh the data sources and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
-
-### Agent installation fails on Windows Server 2008, Windows Server 2008 R2
-
-**Description**: When protecting Windows Server 2008, or Windows Server 2008 R2, installing the agent can fail.
-
-**Workaround**: Upgrade the Windows Management Framework (WMF) on the production server to 4.0. Download the WMF from Windows Management Frame 5.1(https://www.microsoft.com/download/details.aspx?id=54616). Install WMF and then install the agent.
-
-### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
-
-**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups might fail.
-
-**Workaround**: After recovery, change the VM Version to 2016 and then run a Consistency Check.
-
-### Bare Metal Recovery protection failures
-
-**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job might fail with the message that the replica size isn't sufficiently large.
-
-**Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
-
-**HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
-
-
-### Reprotecting the DPM database after upgrading to DPM 2016
-
-**Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016, the DPM database name can change in some scenarios.
-
-**Workaround**: If you're protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
-
-### Recovery Points not being pruned, leading to an accumulation of Recovery Points
-**Description:** DPM prunes recovery points older than the retention range. During the pruning process, DPM calculates the storage consumed by those recovery points to be pruned. Storage calculation delays pruning.
-
-**Workaround:** Configure DPM to skip calculating the size of recovery points to be pruned. As a result, the pruning script runs faster and prunes all recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source isn't updated until DPM finishes pruning. The storage consumption per volume continues to reflect the correct values.
-Use a PowerShell script to turn on size calculation. The following script runs complete size calculations.
-
-**Location:** Program Files\Microsoft System Center 2016\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
-
-**Script:** ```Manage-DPMDSStorageSizeUpdate.ps1 -ManageStorageInfo [StopSizeAutoUpdate | StartSizeAutoUpdate | GetSizeAutoUpdateStatus | UpdateSizeInfo ] [-UpdateSizeForDS <FilePath>] [-UpdatedDSSizeReport <FilePath>] [-FailedDSSizeUpdateFile <FilePath>]```
-
-- **ManageStorageInfo:** - Specifies the kind of operation needed.
-
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell won't report sizes.
-
-    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the data sources, until which sizes reported in PowerShell and UI might not be correct.
-
-    - ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
-
-    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by the data source. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups might fail with vhd mount errors.
-
-- **UpdateSizeForDS:** Path to a text file with a list of Datasource IDs for which size needs to be calculated with a datasourceID on each line. When not passed, size calculation is triggered for all the data sources.
-    Use after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
-    To get the Datasource IDs of specific data sources, use ``` Get-DPMProtectionGroup | Get-DPMDatasource | Format-table -Property Computer,name,ObjectType,Id```.
-
-- **UpdatedDSSizeReport:** Path to a file that stores the updated data source sizes. When not passed, sizes.csv file is created in the execution directory.
-    Use after ```UpdateSizeInfo``` in ```ManageStorageInfo```.
-
-- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This might happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
-    This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
-
-### Hyper-V RCT - recover as files for D-T backup fails
-
-**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups won't exhibit this issue.
-
-**Workaround**: Use Alternate Location Recovery as a VM and then transfer those files to the desired location.
-
-
-### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
-
-**Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end user recovery (EUR) isn't available.
-
-**Workaround**: None. File Server EUR isn't supported when using MBS.
-
-### Error 4387 might appear while installing DPM
-
-**Description**: While installing the Data Protection Manager, when you enter a SQL Instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
-
-**Workaround**: Perform the required actions as detailed in this [KB article](https://support.microsoft.com/en-in/help/956013/error-message-when-you-open-sql-server-configuration-manager-in-sql-se) and try the  DPM setup again.
-
-
-::: moniker-end
-
 
 ::: moniker range="sc-dpm-2016"
 

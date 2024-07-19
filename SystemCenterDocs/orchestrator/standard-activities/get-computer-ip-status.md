@@ -2,7 +2,7 @@
 title: Get Computer-IP Status
 description: This article describes the Get Computer/IP Status activity.
 ms.custom: engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,19 +17,12 @@ manager: jsuri
 ---
 # Get Computer/IP Status
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Get Computer/IP Status activity will send a ping to a remote computer or IP address and wait for a response. If a response is received, then the Get Computer/IP Status activity will succeed. If a response isn't received, the activity will fail.  
 
  The Get Computer/IP Status activity can be used to confirm that a computer is available before performing an action on that computer. You can also use the Get Computer/IP Status activity to check the availability of a computer as part of the level 1 diagnostic step when performing problem management processes.  
 
-## Configuring the Get Computer/IP Status Activity  
+## Configure the Get Computer/IP Status Activity
+
  Before you configure the Get Computer/IP Status activity, you need to determine the computer name or IP address of the computer that you're monitoring.  
 
 > [!IMPORTANT]
@@ -43,7 +36,8 @@ The Get Computer/IP Status activity will send a ping to a remote computer or IP 
 |--------------|--------------------------------|  
 |**Computer**|Enter the name of the computer that you're checking. You can also use the ellipsis **(...)** button to browse for the computer.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

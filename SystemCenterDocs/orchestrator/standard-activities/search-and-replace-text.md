@@ -17,19 +17,12 @@ manager: jsuri
 ---
 # Search and Replace Text
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Search and Replace Text activity searches for and replaces text that you specify in a text file.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
-## Configuring the Search and Replace Text Activity  
+## Configure the Search and Replace Text Activity
+
  Before you configure the Search and Replace Text activity, you need to determine the following:  
 
 - The file name you want to search in.  
@@ -53,7 +46,8 @@ Use the following information to configure the Search and Replace Text activity.
 |**Use regular expressions**|Select this option to use regular expressions in your search. |  
 |**Replacement text**|Enter the text that you want to replace the search text with.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

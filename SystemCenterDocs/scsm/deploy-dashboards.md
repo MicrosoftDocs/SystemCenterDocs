@@ -17,11 +17,6 @@ ms.assetid: 08d397c0-f3af-424c-a2cf-9490b4825834
 
 # Create and deploy Service Manager dashboards
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 You can use PerformancePoint Dashboard Designer with Service Manager to create and manage SharePoint dashboards and their elements to measure, monitor, and manage business performance with live data from the Service Manager data warehouse. Dashboards are mechanisms that display hierarchical arrangements of key performance indicators \(KPIs\).  
 

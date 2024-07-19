@@ -16,9 +16,9 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 # System Center – Data Protection Manager build versions
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+::: moniker range="sc-dpm-2025"
 
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 ::: moniker-end
 
@@ -101,26 +101,6 @@ The following table lists the build versions for Data Protection Manager 2016.
 | 5.0.525.0   | [4534063](https://support.microsoft.com/en-us/help/4534063/update-rollup-9-for-system-center-2016-data-protection-manager) | Update Rollup 9 for System Center 2016 Data Protection Manager  |
 | 5.0.622.0   | [4578608](https://support.microsoft.com/help/4578608/update-rollup-10-for-system-center-2016-data-protection-manager) | Update Rollup 10 for System Center 2016 Data Protection Manager  |
 | 5.0.661.0 | [5031798](https://support.microsoft.com/help/5031798) | Update Rollup 10 Hotfix for System Center 2016 Data Protection Manager |
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-The following table lists the build versions for Data Protection Manager 1801.
-
-| Build Number | KB | Description |
-| --- | --- | --- |
-| 5.1.363.0 | n/a | System Center 2016 1801 |
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-The following table lists the build versions for Data Protection Manager 1807.
-
-| Build Number | KB | Description |
-| --- | --- | --- |
-| 5.1.378.0 | [KB4339950](https://support.microsoft.com/help/4339950) | System Center 2016 1807 |
 
 ::: moniker-end
 

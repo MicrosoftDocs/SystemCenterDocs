@@ -10,6 +10,18 @@
      "redirect_url" : "/azure/azure-monitor/scom-manage-instance/whats-new-scom-managed-instance"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/upgrade-1801-to-1807.md",
+     "redirect_url" : "/system-center/scom/welcome"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/manage-overview-console-refresh.md",
+     "redirect_url" : "/system-center/scom/welcome"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/Features-removed-or-deprecated.md",
+     "redirect_url" : "/system-center/scom/welcome"
+  },
+  {
      "source_path" : "SystemCenterDocs/scom/migrate-to-operations-manager-managed-instance.md",
      "redirect_url" : "/azure/azure-monitor/scom-manage-instance/migrate-to-operations-manager-managed-instance?tabs=mp-overrides"
   },
@@ -3873,6 +3885,10 @@
  {
      "source_path": "SystemCenterDocs/scom/managed-instance-management-pack-automatic-monitoring.md",
      "redirect_url": "/system-center/scom/managed-instance-management-pack-automatic-monitoring-service-principal-name"
+ },
+ {
+     "source_path": "SystemCenterDocs/scom/sql-server-management-pack-custom-monitor.md",
+     "redirect_url": "/system-center/scom/sql-server-management-pack-custom-database-engine-monitor"
  }
  ]
 }

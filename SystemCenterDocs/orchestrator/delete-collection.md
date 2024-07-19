@@ -18,12 +18,6 @@ robots: noindex
 
 # Delete collection activity for System Center Configuration Manager
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Delete Collection activity is used to remove an existing collection
 from a Configuration Manager site and optionally delete the members of
 that collection from the Configuration Manager database. You can't
@@ -32,7 +26,6 @@ limiting a collection or one used in included/excluded collection
 rules).
 
 For the procedure to configure this object, see: [Configuring the Delete Collection Activity](/previous-versions/system-center/packs/hh967528(v=technet.10)#BKMK_ProcDelCol).
-
 
 ## Properties and published data
 
@@ -46,10 +39,9 @@ optional properties into published data.
 
 - Collection Value Type: Specifies whether the value in the Collection property is a collection name or a collection ID. Options are:
 
-  -   **ID** (default): the value is a collection ID
+  - **ID** (default): the value is a collection ID
 
-  -   **Name**: the value is a collection name
-
+  - **Name**: the value is a collection name
 
 - Delete members from database: True or False (Default = False). When set to True, deletes all the resources in the collection from the site database.
 
@@ -83,11 +75,10 @@ defaults by setting the appropriate values to **False**.
 The following values are published in addition to the input values
 above:
 
-
 - Connection: Specifies the name of the connection to the Configuration Manager server.
 - Collection ID: Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).
 
-## To configure the delete collection activity
+## Configure the delete collection activity
 
 1. From the **Activities** pane, drag a **Delete Collection** activity
    to the active runbook.

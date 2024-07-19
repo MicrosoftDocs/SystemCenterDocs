@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Query WMI
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Query WMI activity will send a WMI query to a system that you specify and return the results. This activity can also be used to check statistics on a remote server to create audit trails that can be reviewed later.  
 
-## Configuring the Query WMI Activity  
+## Configure the Query WMI Activity
+
  Before you configure the Query WMI activity, you need to determine the following:  
 
 - The computer you are querying.  
@@ -44,7 +37,8 @@ Use the following information to configure the Query WMI activity.
 |**Namespace**|Type the name of the WMI namespace that you want to query.|  
 |**WMI query**|Type the WMI query that will be used to query the **Computer**. For more information about Windows Management Instrumentation, see [Windows Management Instrumentation](/windows/win32/wmisdk/wmi-start-page).|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

@@ -38,16 +38,7 @@ This article lists the release notes for System Center 2019 - Virtual Machine Ma
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-This article lists the release notes for System Center 1807 - Virtual Machine Manager (VMM).
-
-[!INCLUDE [release-notes-vmm-1807.md](../includes/release-notes-vmm-1807.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
@@ -55,14 +46,7 @@ This article lists the release notes for System Center 2016 - Virtual Machine Ma
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-[!INCLUDE [release-notes-vmm-1801.md](../includes/release-notes-vmm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 

@@ -14,6 +14,16 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Release notes for System Center Operations Manager
 
+::: moniker range="sc-om-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Operations Manager.  
+
+[!INCLUDE [release-notes-om-2025.md](../includes/release-notes-om-2025.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 This article lists the release notes for System Center 2019 - Operations Manager.  This article also includes the release notes for Operations Manager 2019 UR1, UR2, UR4, and UR5.
@@ -29,15 +39,6 @@ This article lists the release notes for System Center 2022 - Operations Manager
 [!INCLUDE [release-notes-om-2022.md](../includes/release-notes-om-2022.md)]
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article lists the release notes for System Center 1807 - Operations Manager.
-
-[!INCLUDE [release-notes-om-1807.md](../includes/release-notes-om-1807.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -47,15 +48,6 @@ This article lists the release notes for System Center 2016 - Operations Manager
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article lists the release notes for System Center 1801 - Operations Manager.
-
-[!INCLUDE [release-notes-om-1801.md](../includes/release-notes-om-1801.md)]
-
-::: moniker-end
 
 ## Next step
 

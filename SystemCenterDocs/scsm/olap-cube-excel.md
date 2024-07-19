@@ -17,11 +17,7 @@ ms.assetid: 57102204-4876-4a97-9da4-ef6dac619721
 
 # Analyze Service Manager OLAP cube data with Excel
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Service Manager includes predefined Microsoft Online Analytical Processing \(OLAP\) data cubes that connect to the data warehouse to retrieve data so that you can manipulate it by using Microsoft Excel in a tabular fashion. When it's opened, a data cube is presented as a worksheet containing a blank PivotTable report. Information defining the OLAP data source is embedded in a worksheet. When you open a report or when you refresh the data connection, Excel uses Microsoft SQL&nbsp;Server Analysis Services \(SSAS\) to connect to the data warehouse to retrieve key performance indicators \(KPIs\) and other data. After it's opened, the current worksheet contains a snapshot or subset of data from the data warehouse. If you save a worksheet, the data source connection information, KPIs, and any other customizations you've made are saved with it. If you save the worksheet to an analysis library, you can later reopen it without having to use the Service Manager console.  
 

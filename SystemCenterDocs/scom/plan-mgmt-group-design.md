@@ -14,11 +14,7 @@ ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 
 # Planning a Management Group Design
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## Overview
 

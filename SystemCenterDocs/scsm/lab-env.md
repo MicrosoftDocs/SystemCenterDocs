@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Set up a lab environment for upgrade testing
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Use the following procedures to prepare for Service Manager upgrade by creating a lab environment and preparing it for production data for the purpose of upgrade testing.
 

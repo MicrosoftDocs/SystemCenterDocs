@@ -14,11 +14,6 @@ ms.assetid: 87da70aa-607a-47ec-bab5-39345ea53258
 
 # Reset health
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Some monitors can set state to critical (red), warning (yellow), and healthy (green). Other monitors are only able to change state to critical or warning and can't detect that state has returned to healthy. In that situation, the monitor must be reset manually. Administrators or authors can check whether a monitor is type **Manual Reset** in the **Authoring** workspace.  
 

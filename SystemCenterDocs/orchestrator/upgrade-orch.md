@@ -14,8 +14,9 @@ ms.custom: UpdateFrequency.5
 
 # Upgrade System Center Orchestrator
 
-
 ::: moniker range="sc-orch-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 This article provides the upgrade information for System Center 2025 - Orchestrator.
 
@@ -40,31 +41,9 @@ This article provides the upgrade information for System Center 2019 - Orchestra
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1801"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-This article provides the upgrade information for System Center 1801 - Orchestrator.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-You must have System Center - Orchestrator 1801 installed to apply the 1807 update. [Learn more on how to install Orchestrator 1807](https://support.microsoft.com/en-in/help/4135040/system-center-orchestrator-version-1807)
-
-::: moniker-end
-
 ::: moniker range="sc-orch-2016"
 
 This article provides the upgrade information for System Center 2016 - Orchestrator.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1801"
-
-[!INCLUDE [upgrade-to-orch-1801.md](../includes/upgrade-to-orch-1801.md)]
 
 ::: moniker-end
 

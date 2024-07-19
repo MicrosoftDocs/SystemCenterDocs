@@ -13,12 +13,6 @@ ms.custom: UpdateFrequency3
 
 # Configuration Manager integration pack activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The following configuration instructions apply to all the activities in this integration pack.
 
 ## Activity properties
@@ -62,10 +56,7 @@ Configuration Manager server.
 
 ## Configure the Connection Name property
 
--   Select the ellipsis **(…)** button next to the **Name** field, and
-    then select the applicable connection name. Connections displayed in
-    the list have been previously configured as described in
-    [Configuration Manager Integration Pack](configuration-manager-integration-pack.md).
+- Select the ellipsis **(…)** button next to the **Name** field, and then select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuration Manager Integration Pack](configuration-manager-integration-pack.md).
 
 **Value Type** properties are common across many of the activities.
 These properties provide flexibility in the type of data you provide to
@@ -75,7 +66,7 @@ listed immediately above the Value Type property.
 
 ## Configure Value Type properties
 
--   Select the ellipsis **(…)** button next to the **Value Type** field,
+- Select the ellipsis **(…)** button next to the **Value Type** field,
     and then select the setting that correctly identifies the type of
     value in the associated property.
 
@@ -94,7 +85,6 @@ To add a new mandatory assignment, select the **New** button. The
 Mandatory Schedule dialog appears.
 
 The Mandatory Schedule dialog contains the following elements:
-
 
 - Use the following schedule
   * Enables the **Schedule** group, which allows you to define a specific schedule.
@@ -141,14 +131,14 @@ there are items in the output. Alternatively, you can provide a single
 output for the Get activity by enabling the **Flatten** option. When you
 enable this option, you also choose a formatting option:
 
--   **Separate with line breaks**. Each item is on a new line. This
+- **Separate with line breaks**. Each item is on a new line. This
     format is useful for creating human-readable text files for the
     output.
 
--   **Separate with \_**. Each item is separated by one or more
+- **Separate with \_**. Each item is separated by one or more
     characters of your choice.
 
--   **Use CSV format**. All the items are in a CSV (comma-separated value)
+- **Use CSV format**. All the items are in a CSV (comma-separated value)
     format. This format is useful for importing data into spreadsheets
     or other applications.
 
@@ -169,10 +159,10 @@ the activity returns a failure.
 **To be notified when the activity takes longer than a specified time to
 run or fails to run**
 
-1.  In the **Event Notifications** box, enter the **number of seconds**
+1. In the **Event Notifications** box, enter the **number of seconds**
     of run time before a notification is generated.
 
-2.  Select the **Report if activity fails to run** checkbox to generate
+2. Select the **Report if activity fails to run** checkbox to generate
     run failure notifications.
 
 ## Published data
@@ -190,11 +180,11 @@ automatically populate the property values needed by activities.
 
 To use published data:
 
-1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
+1. Right-click the property value box, select **Subscribe**, and select **Published Data**.
 
-2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all the policies, select **Show Common Published Data**.
+2. Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all the policies, select **Show Common Published Data**.
 
-3.  Select the published data element that you want to use, and select **OK**.
+3. Select the published data element that you want to use, and select **OK**.
 
 ## Activities
 

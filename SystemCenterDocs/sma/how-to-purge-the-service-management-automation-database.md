@@ -13,11 +13,7 @@ ms.custom: engagement-fy24
 
 # Purge the Service Management Automation database
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 In Service Management Automation (SMA), database purging is automatic, but you can adjust it to your needs.
 

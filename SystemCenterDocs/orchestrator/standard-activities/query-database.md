@@ -17,14 +17,6 @@ manager: jsuri
 ---
 # Query Database
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Query Database activity queries a database and returns the resulting rows as published data. This activity supports the following database types:  
 
 - Access  
@@ -37,7 +29,8 @@ The Query Database activity queries a database and returns the resulting rows as
 
 The Query Database activity can be used to query a database for the detailed description of an error code that has appeared on one of the systems in the data center and then that description is sent to an administrator in an email message.  
 
-## Configuring the Query Database Activity  
+## Configure the Query Database Activity
+
  Before you configure the Query Database activity you will need to determine the following:  
 
 - The database that you are connecting to  
@@ -53,20 +46,20 @@ Use the following information to configure the Query Database activity.
 |**Query**|Type the SQL query in the **Query** field|  
 
 > [!WARNING]
->  The Query Database activity does not support queries that return data as XML, such as queries that use the **FOR XML** clause in SQL Server.  
+> The Query Database activity does not support queries that return data as XML, such as queries that use the **FOR XML** clause in SQL Server.  
 
-### Connection  
+### Connection
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Database type**|Select the **Database type** from the drop-down list. The options include the following:<br /><br /> -   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server|  
 
 > [!IMPORTANT]
->  When Orchestrator is installed on a non-English operating system, and you set the **Connection** for **Database type** to **SQL Server**, the Server input value cannot be **localhost**. You must use the actual computer name.  
+> When Orchestrator is installed on a non-English operating system, and you set the **Connection** for **Database type** to **SQL Server**, the Server input value cannot be **localhost**. You must use the actual computer name.  
 
  Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.  
 
-### Access Connections  
+### Access Connections
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -76,7 +69,7 @@ Use the following information to configure the Query Database activity.
 |**Password**|Type the password for the workgroup file.|  
 |**DB password**|Type the password for the Access database.|  
 
-### ODBC Connections  
+### ODBC Connections
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -84,7 +77,7 @@ Use the following information to configure the Query Database activity.
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### Oracle Connections  
+### Oracle Connections
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -92,7 +85,7 @@ Use the following information to configure the Query Database activity.
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### SQL Server Connections  
+### SQL Server Connections
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -100,20 +93,21 @@ Use the following information to configure the Query Database activity.
 |**Server**|Enter the name of the SQL Server that you want to access.|  
 |**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, type the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
 
-### Timeout  
+### Timeout
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Timeout**|Enter the amount of time that the Query Database activity will wait for the database operation to complete.<br /><br /> Set this value to `0` to wait indefinitely.|  
 
-### Security Credentials  
+### Security Credentials
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Use the security of the account assigned to the service**|Select this option if you want to run the Query Database activity using the same account that the runbook server uses.|  
 |**This account**|Use this option to specify a different account. Enter the **User name** and **Password**. **Note:**  If you specify an invalid user name or password, the account assigned to the runbook server will be used to run the activity.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

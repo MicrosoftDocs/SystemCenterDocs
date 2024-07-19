@@ -17,25 +17,18 @@ manager: jsuri
 ---
 # Monitor WMI
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Monitor WMI activity invokes a runbook when a WMI event is received as a result of the WMI event query that you specify. You can check for changes in devices that are attached to the server and invoke runbooks that take corrective action when errors occur.  
 
-## Configuring the Monitor WMI Activity  
+## Configure the Monitor WMI Activity
+
  Before you configure the Monitor WMI activity, you need to determine the following:  
 
--   The computer that you're monitoring  
+- The computer that you're monitoring  
 
--   The WMI event query that you want to run  
+- The WMI event query that you want to run  
 
 > [!WARNING]
->  A WMI event query differs from a standard WMI query.  
+> A WMI event query differs from a standard WMI query.  
 
  Use the following information to configure the Monitor WMI activity.  
 
@@ -47,7 +40,8 @@ The Monitor WMI activity invokes a runbook when a WMI event is received as a res
 |**Namespace**|Enter the name of the WMI namespace that you want to query.|  
 |**WMI query**|Enter the WMI event query that will be used to query the computer that you specified in the **Computer** box.|  
 
-### Syntax Examples  
+### Syntax Examples
+
  Here's the syntax of a simple notification query: `SELECT * FROM [EventClass] WITHIN [interval] WHERE TargetInstance ISA [object]`  
 
  When you submit this WMI query, you're submitting a job to be notified of all occurrences of the event represented by [EventClass]. The WITHIN clause denotes how the test is performed, which is at an interval of seconds denoted by [interval]. The WHERE clause is used to narrow down your query and can include activities, properties of embedded activities, and condition statements.  
@@ -63,7 +57,8 @@ The Monitor WMI activity invokes a runbook when a WMI event is received as a res
 > [!TIP]
 > A query can be rejected by WMI if it's too complex or becomes resource-intensive for evaluation.  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

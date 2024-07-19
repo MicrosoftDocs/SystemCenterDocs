@@ -14,11 +14,7 @@ ms.assetid: d2717f98-84fc-43d7-8c06-bdd5aaf386c0
 
 # Set alert resolution states
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager there are seven default resolution states for alerts:
 

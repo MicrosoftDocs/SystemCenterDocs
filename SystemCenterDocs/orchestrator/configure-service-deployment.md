@@ -12,12 +12,6 @@ ms.custom: UpdateFrequency3, engagement-fy23
 ---
 # Configure Service Deployment activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Configure Service Deployment activity is used in a runbook to configure a VMM service for deployment.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

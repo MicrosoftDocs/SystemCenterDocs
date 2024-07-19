@@ -15,17 +15,10 @@ ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
 
 # Use My Workspace
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 My Workspace provides you with a private area in the Operations and Web console that you can customize for your specific needs. Using My Workspace in the Operations console, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you.
 
-::: moniker range="sc-om-1807"
-In version 1807, you can create dashboards and add an existing dashboard from the Monitoring workspace. For more information, see [Using My Workspace in Web console](manage-web-console-my-workspace.md).
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 You can create dashboards and add an existing dashboard from the Monitoring workspace. For more information, see [Using My Workspace in Web console](manage-web-console-my-workspace.md).

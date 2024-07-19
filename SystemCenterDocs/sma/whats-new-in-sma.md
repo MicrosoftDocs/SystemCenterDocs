@@ -17,6 +17,8 @@ ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy24
 
 ::: moniker range="sc-sma-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article provides the new features supported by System Center 2025 - Service Management Automation (SMA).
 
 ### Improved reliability of SMA jobs
@@ -41,23 +43,6 @@ This article provides the new features supported by System Center 2022 - Service
 
 ::: moniker-end
 
-::: moniker range="sc-sma-1807"
-
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-SMA includes the features that are introduced in SMA 1801; there are no additional features included.  [Learn about the features introduced in 1801](?preserve-view=true&view=sc-sma-1801).
-
-::: moniker-end
-
-::: moniker range="sc-sma-1801"
-
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-This article details the new features supported in System Center 1801 - Service Management Automation (SMA).
-
-[!INCLUDE [whats-new-sma-1801.md](../includes/whats-new-sma-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-sma-2016"
 

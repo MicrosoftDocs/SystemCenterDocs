@@ -2,7 +2,7 @@
 title: Disconnect Network Path
 description: This article describes the Disconnect Network Path activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Disconnect Network Path
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Disconnect Network Path activity allows you to disconnect a network path. You can disconnect network paths you mapped using the [Map Network Path](map-network-path.md) activity or using another method.  
 
-## Configuring the Disconnect Network Path Activity  
+## Configure the Disconnect Network Path Activity
+
  Before you configure the Disconnect Network Path activity, you need to determine the network path you want to disconnect.  
 
 > [!NOTE]
@@ -41,7 +34,8 @@ The Disconnect Network Path activity allows you to disconnect a network path. Yo
 |--------------|--------------------------------|  
 |**Network path**|Enter the name of the network path that you want to disconnect, or select the ellipsis button **(...)** and browse for it.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

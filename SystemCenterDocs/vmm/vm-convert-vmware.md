@@ -14,11 +14,7 @@ ms.subservice: virtual-machine-manager
 
 # Convert a VMware VM to Hyper-V in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric to Hyper-V.
 
@@ -100,9 +96,9 @@ System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMwa
 
 ::: moniker-end
 
-::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
-As part of VMM 1801 release, the **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
+The **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
 
 ::: moniker-end
 

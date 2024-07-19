@@ -16,15 +16,10 @@ manager: jsuri
 ---
 # Orchestrator logs
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 This article provides information on common troubleshooting issues and the available tools that can help identify the root problems.  
 
-## Log files  
+## Log files
+
 In Orchestrator, different logs are available that provide information about Orchestrator runbooks and servers. The following table lists the available types of log files, with links to the appropriate sections that describe the logs in more detail.  
 
 |Log File Topic or Section|Contents|Where data is stored|Where data is viewed|  

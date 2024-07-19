@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency3
 
 # Standard activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 Standard Activities enable you to create runbooks to automate your data center procedures.
 
 The following table provides a brief description of tasks you can accomplish with each activity category.  

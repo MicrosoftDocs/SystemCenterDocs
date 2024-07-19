@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy23
 
 # Configure Incident Management in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of how to configure Incident management in Service Manager. This article also contains procedures that cover incident management configuration scenarios, including configuring incident settings, configuring email incident support, and creating an incident template.
 

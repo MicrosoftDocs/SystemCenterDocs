@@ -17,12 +17,6 @@ robots: noindex
 ---
 # Create Item
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Create Item activity is used in a runbook to create new appointments, contact groups, email messages, and task items.
 
 The following tables list the required properties, optional properties, and published data for Create Item activities. The required and optional properties are presented according to the item type: appointment, contact group, task, and email message.
@@ -162,10 +156,10 @@ Additionally, this article describes how to create recurring appointments and ta
 
 The integration pack provides the ability to create recurring appointments and tasks. To set up a recurring appointment or task, perform the following steps:
 
-1.  Add the optional **Recurrence** property. <br><br>
-2.  Select the desired recurrence pattern from one of the available options.<br><br>
-3.  To use a pattern other than the Daily pattern, add the optional **Recurs On These Days** property.<br><br>
-4.  Specify a value for the **Recurs On These Days** property according to the rules that are presented in the following table.<br><br>
+1. Add the optional **Recurrence** property. <br><br>
+2. Select the desired recurrence pattern from one of the available options.<br><br>
+3. To use a pattern other than the Daily pattern, add the optional **Recurs On These Days** property.<br><br>
+4. Specify a value for the **Recurs On These Days** property according to the rules that are presented in the following table.<br><br>
 
 | **Element**   | **Description**   |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

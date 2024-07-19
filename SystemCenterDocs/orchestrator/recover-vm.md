@@ -17,12 +17,6 @@ robots: noindex
 ---
 # Recover VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Recover VM activity is used in a runbook that recovers a virtual machine from a specified point in time so that it can be restored to a server running Hyper-V or to a network folder.
 
 The term *Network Folder* is used in this integration pack in the same way that it's used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.

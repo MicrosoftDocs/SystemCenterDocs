@@ -14,11 +14,7 @@ ms.topic: article
 
 # How to create reports in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Operations Manager includes many reports when you install a management group, to help you review the operational telemetry and configuration information to help troubleshoot issues or problems, review the day-to-day health of your IT services, and make decisions that drive changes in capacity planning or service operations of the service.  
 

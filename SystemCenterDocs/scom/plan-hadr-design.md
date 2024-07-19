@@ -14,11 +14,7 @@ ms.topic: article
 
 # High Availability and Disaster Recovery
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center – Operations Manager servers and features can potentially fail, affecting Operations Manager functionality.  The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature and the length of time it takes to recover the failing feature.
 

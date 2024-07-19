@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3,  engagement-fy24
 
 # Configure notifications in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Using Service Manager notifications, you can generate emails for almost any kind of change. For example, you can configure notifications to be sent to an analyst when changes occur to a work item or configuration item that pertains to email problems.
 

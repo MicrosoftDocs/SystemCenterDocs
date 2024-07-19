@@ -39,23 +39,6 @@ This article details the new features supported in System Center 2019 - Virtual 
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-This article details the new features supported in System Center 1807 - Virtual Machine Manager (VMM).
-
-[!INCLUDE [whats-new-vmm-1801.md](../includes/whats-new-vmm-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-vmm-1801"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-This article details the new features supported in System Center 1801 - Virtual Machine Manager (VMM).
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
@@ -63,11 +46,7 @@ This article details the new features supported in System Center 2016 - Virtual 
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-[!INCLUDE [whats-new-vmm-1801.md](../includes/whats-new-vmm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 

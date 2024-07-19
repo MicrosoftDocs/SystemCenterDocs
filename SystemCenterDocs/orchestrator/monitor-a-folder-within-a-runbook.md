@@ -17,22 +17,17 @@ ms.custom: engagement-fy23
 
 # Example Runbook: Monitor a folder with a runbook
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 This article shows you how to create a simple runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 
 ![Screenshot of Monitor Folder.](./media/monitor-a-folder-within-a-runbook/orch-2016-sample-monitor-folder.png)
 
-## Create and test a monitor runbook  
+## Create and test a monitor runbook
+
 The procedures to create, configure, and test a simple runbook that monitors a folder are described below.  
 
-### Create the workflow 
+### Create the workflow
 
-Follow these steps to create a workflow: 
+Follow these steps to create a workflow:
 
 1.  In the Runbook Designer **Connections** pane, right-click the **Runbooks** folder to select **New**, and then select **Runbook**.  
 
@@ -56,7 +51,7 @@ Follow these steps to create a workflow:
 
 11. Select the smart link arrow, and then drag it to the **Invoke Runbook** activity.  
 
-## To configure the workflow  
+## Configure the workflow  
 
 Follow these steps to configure the workflow:
 
@@ -119,7 +114,8 @@ Follow these steps to modify the runbook settings:
 
 4.  Right-click the **Monitor Runbook** tab to select **Check In**.  
 
-## Test the runbook  
+## Test the runbook
+
 In the Runbook Tester, you can test runbooks in a simulated runtime and debugging environment. You can run an entire runbook, step through it one activity at a time, or add breakpoints to stop the simulation at any activity that you select.  
 
 Use the following steps to test your runbook in the **Runbook Tester**.  

@@ -18,13 +18,6 @@ robots: noindex
 
 # Add Collection Rule Activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
-
 The Add Collection Rule activity is used to define the membership of a
 collection by adding collection membership rules to the collection.
 Membership rules determine the resources that are included in the
@@ -46,7 +39,7 @@ activity. To force re-evaluation of the collection’s membership after
 adding or removing collection rules, use the **Update Collection
 Membership** activity.
 
-For the procedure to configure this object, see [Configuring the add collection rule activity](#configuring-the-add-collection-rule-activity).
+For the procedure to configure this object, see [Configuring the add collection rule activity](#configure-the-add-collection-rule-activity).
 
 ## Properties and Published Data
 
@@ -72,7 +65,6 @@ You can specify the following rule properties:
   * Include Collection – the name or Collection ID of a collection of the same type (user or device) as the collection specified above.
   * Exclude Collection – the name or Collection ID of a collection of the same type (user or device) as the collection specified above.
 
-
 > [!Note]
 > When you use the browse feature to look up a collection name or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 
@@ -83,7 +75,7 @@ You can specify the following rule properties:
   |Connection| Specifies the name of the connection to the Configuration Manager server.|
   |Collection ID| Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|
 
-## Configuring the Add Collection Rule Activity
+## Configure the Add Collection Rule Activity
 
 To configure the Add Collection Rule activity:
 

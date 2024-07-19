@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Post-upgrade tasks
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article describes the tasks you should complete after upgrading System Center - Service Manager.
 

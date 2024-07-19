@@ -18,12 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Create Storage Account
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Create Storage Account** activity creates a new storage account in Azure. It's part of the **Azure Storage** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

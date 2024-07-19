@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Query XML
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Query XML activity is used to perform an XPath query on an XML file. You can use this activity to search for a string in an XML file.  
 
-## Configuring the Query XML Activity  
+## Configure the Query XML Activity
+
  Before you configure the Query XML activity, you need to determine the following:  
 
 - The XML file name or Block of XML that you want to search.  
@@ -44,7 +37,8 @@ Use the following information to configure the Query XML activity.
 |**XML Text**|Select either this option or the XML File option. Enter the name of the element in the XML text that you want to search in.|  
 |**XPath Query**|Enter the XPath query for your search.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

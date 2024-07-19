@@ -13,20 +13,17 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Add VM Disk Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Add VM Disk activity is used in a runbook to add a virtual disk to a virtual machine controlled by the VMware vSphere server. This can be used to increase the amount of disk space allocated to an existing virtual machine.
 
+::: moniker range="sc-orch-2016"
+
 For System Center 2016: If a SCSI controller isn't associated with the SCSI bus number specified in the activity, choosing a SCSI controller type will add a new controller and attach the new disk to it.
+
+::: moniker-end
 
 The following tables list the required and optional properties and published data for this activity.
 
@@ -46,7 +43,7 @@ The activity publishes all the data from the required and optional properties in
 | Datastore   | The path of the data store that will hold the new disk.   | String   | No   |
 | SCSI Bus Number   | The SCSI bus number of the SCSI controller   | Integer   | No   |
 | SCSI Unit Key   | The SCSI unit key of the SCSI controller   | Integer   | No   |
-| SCSI Controller Type (available only in System Center 2016) | The type of SCSI controller to add if one doesn't exist on the chosen SCSI bus. | String   | Yes   |
+| SCSI Controller Type | The type of SCSI controller to add if one doesn't exist on the chosen SCSI bus. | String   | Yes   |
 
 ### Add VM Disk Activity Published Data
 
@@ -57,22 +54,20 @@ The activity publishes all the data from the required and optional properties in
 | SCSI Bus Number   | The SCSI bus number setting specified.  | Integer   |
 | SCSI Unit Key   | The SCSI unit key setting specified.   | Integer   |
 | VM Path   | The path of the virtual machine that this disk belongs to.   | String   |
-| SCSI Controller Type (available only in System Center 2016) | The type of SCSI controller to add if one doesn't exist on the chosen SCSI bus. | String   |
+| SCSI Controller Type | The type of SCSI controller to add if one doesn't exist on the chosen SCSI bus. | String   |
 
-## Configuring the Add VM Disk Activity
+## Configure the Add VM Disk Activity
 
 The following procedure describes the steps required to configure an Add VM Disk activity.
 
-#### To configure the Add VM Disk Activity
+1. From the **Activities** pane, drag an **Add VM Disk** activity to the active runbook.
 
-1.  From the **Activities** pane, drag an **Add VM Disk** activity to the active runbook.
+2. Double-click the **Add VM Disk** activity icon.
 
-2.  Double-click the **Add VM Disk** activity icon.
+3. Configure the settings in the **Properties** tab as follows:
 
-3.  Configure the settings in the **Properties** tab as follows:
-
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use the published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

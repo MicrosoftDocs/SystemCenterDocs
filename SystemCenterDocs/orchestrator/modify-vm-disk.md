@@ -7,20 +7,13 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency3
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 07/12/2024
 ---
 
 # Modify VM Disk activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
-The Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine. When targeting version vCenter 5.0 or greater, it can also be used to extend the disk size of the selected disk. 
+The Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine. When targeting version vCenter 5.0 or greater, it can also be used to extend the disk size of the selected disk.
 
 The following tables list the required and optional properties and published data for this activity.
 
@@ -53,19 +46,18 @@ The following tables list the required and optional properties and published dat
 
 ## Configure the activity
 
+1. From the **Activities** pane, drag a **Modify VM Disk** activity to the active runbook.
 
-1.  From the **Activities** pane, drag a **Modify VM Disk** activity to the active runbook.
+2. Double-click the **Modify VM Disk** activity icon. The **Properties** dialog opens.
 
-2.  Double-click the **Modify VM Disk** activity icon. The **Properties** dialog opens.
+3. Configure the settings in the **Properties** tab as follows:
 
-3.  Configure the settings in the **Properties** tab as follows:
+    1. In the **Configuration** section, select the ellipsis button **(...)**.
 
-    1.  In the **Configuration** section, select the ellipsis button **(...)**.
+    2. Select the VMware vSphere server connection that you want to use for this activity, and select **OK**.
 
-    2.  Select the VMware vSphere server connection that you want to use for this activity, and select **OK**.
-
-    3.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    3. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
 
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

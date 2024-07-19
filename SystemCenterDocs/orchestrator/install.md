@@ -13,13 +13,7 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 
 # Install System Center - Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
-::: moniker range="sc-orch-2022"
+::: moniker range=">=sc-orch-2022"
 
 A complete Orchestrator installation includes:
 
@@ -184,11 +178,11 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API will run under an IIS App Pool with this identity. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-> [!NOTE]
-> If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
-> ```
-> aspnet_regiis.exe -ga DOMAIN\USER
-> ```
+    > [!NOTE]
+    > If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
+    > ```
+    > aspnet_regiis.exe -ga DOMAIN\USER
+    > ```
 
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous steps are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
@@ -233,11 +227,11 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Select **Test to verify the account credentials**. If the credentials are accepted, select **Next**.
 
-> [!NOTE]
-> If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
-> ```
-> aspnet_regiis.exe -ga DOMAIN\USER
-> ```
+    > [!NOTE]
+    > If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
+    > ```
+    > aspnet_regiis.exe -ga DOMAIN\USER
+    > ```
 
 7.	On the **Configure the ports for the Web Console** page, verify the port numbers for the Orchestration Console service and the URL of the Web API service, and select **Next**.
 
@@ -375,26 +369,30 @@ The API is configured using the `web.config` file as mentioned [here](/system-ce
 
 The following information provides additional instructions and caveats that you can use during the installation to resolve problems you might experience.  
 
-### Orchestrator log files  
+### Orchestrator log files
+
 If you experience problems during installation, installation log files are located in the folder **C:\\Users\\%USERNAME%\\AppData\\Local\\SCO\\LOGS**.  
 
 If you experience problems when you're running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center \<version\>\\Orchestrator\\**.  
 
-### Windows Firewall  
+### Windows Firewall
+
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
 
 ### Windows Firewall with advanced security
+
 By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server computers, and blocks all incoming traffic unless it's a response to a request by the host or it's specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
 
 Enable the following rules to allow all Monitor Event activities to function correctly:  
 
--   Windows Management Instrumentation \(Async\-In\)  
+- Windows Management Instrumentation \(Async\-In\)  
 
--   Windows Management Instrumentation \(DCOM\-In\)  
+- Windows Management Instrumentation \(DCOM\-In\)  
 
--   Windows Management Instrumentation \(WMI\-In\)  
+- Windows Management Instrumentation \(WMI\-In\)  
 
-### Automated deployment  
+### Automated deployment
+
 When a runbook server or Runbook Designer is installed behind a firewall, specific firewall rules are required between the remote computers that are used to deploy the runbook server and Runbook Designer. An additional rule is required for the remote connection between the Runbook Designer and the runbook server to allow the Orchestrator management service to accept remote connections. If you're using the **Monitor WMI** task, the runbook server requires a special firewall rule on the computer that uses PolicyModule.exe.  
 
 Enable the following firewall rules on your computer:  
@@ -424,7 +422,8 @@ When you reboot your runbook server, the RunbookService attempts to connect to t
 
 To solve this problem, you can manually start the RunbookService or configure the RunbookService to make multiple attempts during start-up to connect to database before failing.  
 
-### Can't restart runbook service if you uninstall with an account without administrator permissions  
+### Can't restart runbook service if you uninstall with an account without administrator permissions
+
 If you attempt to uninstall Orchestrator while signed in with an account that is a member of OrchestratorSystemGroup but isn't an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account doesn't have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
 
 To solve this problem, an administrator can add the user back to OrchestratorSystemGroup.
@@ -439,8 +438,7 @@ For a detailed description of the Orchestrator architecture, see [Learn about Or
 
 This article provides detailed installation instructions for the various Orchestrator roles.
 
-
-## To install an Orchestrator management server
+## Install an Orchestrator management server
 
 1.  On the server where you want to install Orchestrator, start the Orchestrator Setup Wizard.
 
@@ -472,17 +470,9 @@ This article provides detailed installation instructions for the various Orchest
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1801"
-
-   > [!NOTE]
-   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
-
-::: moniker-end
-
 ::: moniker range="<=sc-orch-2019"
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
-
 
 1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
@@ -513,7 +503,7 @@ This article provides detailed installation instructions for the various Orchest
 
 12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and select **Close** to complete the installation.
 
-## To install an Orchestrator runbook server
+## Install an Orchestrator runbook server
 
 1. On the server where you want to install an Orchestrator runbook server, start the Orchestrator Setup Wizard.
 
@@ -539,13 +529,6 @@ This article provides detailed installation instructions for the various Orchest
 5. Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
 ::: moniker-end
-
-   ::: moniker range="sc-orch-1801"
-
-   > [!NOTE]
-   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
-
-   ::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
 
@@ -578,7 +561,7 @@ This article provides detailed installation instructions for the various Orchest
 
 13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
-## To install the Orchestrator web service
+## Install the Orchestrator web service
 
 1. On the server where you want to install the Orchestrator web service, start the Orchestrator Setup Wizard.
 
@@ -586,7 +569,6 @@ This article provides detailed installation instructions for the various Orchest
 
    > [!NOTE]
    > Before you begin the installation of the Orchestrator web service, close any open programs and ensure that there are no pending restarts on the computer. Then sign in to the computer with the same user account to finish the installation of the server role or the security update.
-
 
 2. On the main setup page, under **Standalone installations**, select **Orchestration Console and Web Service**.
 
@@ -635,7 +617,7 @@ This article provides detailed installation instructions for the various Orchest
 
 14. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
-## To install the Orchestrator Runbook Designer on a single computer
+## Install the Orchestrator Runbook Designer on a single computer
 
 1.  On the server where you want to install the Orchestrator Runbook Designer, start the Orchestrator Setup Wizard.
 
@@ -643,7 +625,6 @@ This article provides detailed installation instructions for the various Orchest
 
     > [!NOTE]
     > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. Then, sign in to the computer with the same user account to finish the installation of the server role or the security update.
-
 
 2.  On the main wizard page, select **Runbook Designer**.
 
@@ -660,13 +641,6 @@ This article provides detailed installation instructions for the various Orchest
 5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1801"
-
-   > [!NOTE]
-   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
 ::: moniker-end
 
@@ -692,8 +666,7 @@ This article provides detailed installation instructions for the various Orchest
 
 8. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
-
-## To connect a Runbook Designer to a management server
+## Connect a Runbook Designer to a management server
 
 1.  In the Runbook Designer, select the **Connect to a server** icon in the navigation pane under the **Connections** pane.
 
@@ -702,7 +675,7 @@ This article provides detailed installation instructions for the various Orchest
 
 2.  In **System Center Orchestrator Connection**, enter the name of the server that hosts your Orchestrator management server, and select **OK**.
 
-## To enable network discovery
+## Enable network discovery
 
 1.  On the desktop of your computer running Windows server, select **Start**, select **Control Panel**, select **Network and Internet**, select **Network and Sharing Center**, select **Choose Home group and Sharing Options**, and then select **Change advanced sharing settings**.
 
@@ -712,8 +685,7 @@ This article provides detailed installation instructions for the various Orchest
 
     If you're prompted for an administrator password or confirmation, enter the password or provide confirmation.
 
-## To install from the command prompt
-
+## Install from the command prompt
 
 To install Orchestrator at a command prompt, use Setup.exe with the command-line options in the following table.
 
@@ -744,7 +716,8 @@ For example, you could use the following command to install all of the Orchestra
 ```
 .\Setup.exe /Silent /ServiceUserName:<UserName> /ServicePassword:<password> /Components:All /DbServer:<DBServerName> /DbNameNew:Orchestrator /WebServicePort:81 /WebConsolePort:82 /UseMicrosoftUpdate:1 /SendTelemetryReports:1 /EnableErrorReporting:always
 ```
-## To view runbook server properties
+
+## View runbook server properties
 
 The properties for a runbook server include an optional description and the account information to use for the Runbook Service. You can modify the description but can only view the service credentials.
 
@@ -752,31 +725,34 @@ The properties for a runbook server include an optional description and the acco
 
 2.  If you want to add or change the **Description** box, enter a description for this runbook server, and select **Finish**.
 
-
 ## Troubleshoot your installation
 
 The following information provides additional instructions and caveats that you can use during installation to resolve problems you might experience.  
 
-### Orchestrator log files  
+### Orchestrator log files
+
 If you experience problems during installation, installation log files are located in the folder **C:\\Users\\%USERNAME%\\AppData\\Local\\SCO\\LOGS**.  
 
 If you experience problems when you're running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center \<version\>\\Orchestrator\\**.  
 
-### Windows Firewall  
+### Windows Firewall
+
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
 
 ### Windows Firewall with advanced security
+
 By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server computers, and blocks all incoming traffic unless it's a response to a request by the host or it's specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
 
 Enable the following rules to allow all Monitor Event activities to function correctly:  
 
--   Windows Management Instrumentation \(Async\-In\)  
+- Windows Management Instrumentation \(Async\-In\)  
 
--   Windows Management Instrumentation \(DCOM\-In\)  
+- Windows Management Instrumentation \(DCOM\-In\)  
 
--   Windows Management Instrumentation \(WMI\-In\)  
+- Windows Management Instrumentation \(WMI\-In\)  
 
-### Automated deployment  
+### Automated deployment
+
 When a runbook server or Runbook Designer is installed behind a firewall, specific firewall rules are required between the remote computers that are used to deploy the runbook server and Runbook Designer. An additional rule is required for the remote connection between the Runbook Designer and the runbook server to allow the Orchestrator management service to accept remote connections. If you're using the **Monitor WMI** task, the runbook server requires a special firewall rule on the computer that uses PolicyModule.exe.  
 
 Enable the following firewall rules on your computer:  
@@ -788,7 +764,7 @@ Enable the following firewall rules on your computer:
 |64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center \<version\>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
 |32\-bit|%ProgramFiles%Microsoft System Center \<version\>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
 
-#### Firewall rules between remote computers  
+#### Firewall rules between remote computers
 
 |Operating system|Firewall rules|  
 |--------------------|------------------|  
@@ -803,12 +779,14 @@ Enable the following firewall rules on your computer:
 
 For more information about adding firewall rules, see [Add or Edit a Firewall Rule](/previous-versions/orphan-topics/ws.11/cc753558(v=ws.11)).  
 
-### <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot  
+### <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot
+
 When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database isn't available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server.**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  
 
 To solve this problem, you can manually start the RunbookService, or configure the RunbookService to make multiple attempts during start-up to connect to database before failing.  
 
-### Can't restart runbook service if you uninstall with an account without administrator permissions  
+### Can't restart runbook service if you uninstall with an account without administrator permissions
+
 If you attempt to uninstall Orchestrator while signed in with an account that is a member of OrchestratorSystemGroup but isn't an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account doesn't have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
 
 To solve this problem, an administrator can add the user back to OrchestratorSystemGroup.

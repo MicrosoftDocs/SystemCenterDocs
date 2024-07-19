@@ -14,12 +14,6 @@ ms.date: 08/11/2023
 ---
 # Overview of the Orchestration console
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 ::: moniker range="sc-orch-2019"
 
 The Orchestrator console is a single webpage made up of multiple panes and workspaces. This article describes those panes and workspaces and includes procedures for accessing the console and managing runbooks. It provides details to use the latest Web console based on HTML5 and using SilverLight (deprecated). Ensure you [migrate](#migrate-to-html5-web-components) to the latest Web console using the steps mentioned in this article.
@@ -348,7 +342,7 @@ Run the following PowerShell command to extract the v10.19.350.0 release package
 Setup.exe /components:webapi,webconsole
 ```
 
-Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
+Review the [API](/system-center/orchestrator/install#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
 
 The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
@@ -366,7 +360,7 @@ Run the following PowerShell command to extract the v10.19.350.0 release package
 Setup.exe /components:webapi,webconsole
 ```
 
-Review the [API](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install?view=sc-orch-2022#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
+Review the [API](/system-center/orchestrator/install#install-orchestrator-web-api-service)  and [Console installer](/system-center/orchestrator/install#install-orchestration-console) documentation and follow the steps shown by `Setup.exe`.
 
 The installer will automatically create new IIS sites with fresh `web.config`. You may have made changes to the `web.config` (such as adding domains to CORS allowed origins, database settings, other IIS site elements). Compare the previous and new `web.config` and update the new `web.config` as required.
 
@@ -416,6 +410,18 @@ Setting up TLS is beyond the scope of our installers; you will have to follow II
 The Orchestrator console is a Single Page App that helps you monitor and execute your Orchestrator deployment. This article details the supported features in the Orchestrator 2022 console.
 
 :::image type="content" source="./media/console-overview-2022/dashboard-inline.png" alt-text="Screenshot showing the dashboard." lightbox="./media/console-overview-2022/dashboard-expanded.png":::
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+The Orchestrator console is a Single Page App that helps you monitor and execute your Orchestrator deployment. This article details the supported features in the Orchestrator 2025 console.
+
+:::image type="content" source="./media/console-overview-2022/dashboard-inline.png" alt-text="Screenshot showing the dashboard." lightbox="./media/console-overview-2022/dashboard-expanded.png":::
+
+::: moniker-end
+
+::: moniker range=">=sc-orch-2022"
 
 ## Navigation pane
 
@@ -538,7 +544,6 @@ The **Stop** button is shown on the Dashboard and the Job screen. You will find 
 
 :::image type="job stop notification" source="./media/console-overview-2022/job-stop-notification.png" alt-text="Screenshot showing job stop notification.":::
 
-
 ## FAQs
 
 ### The Console doesn't load; error “Uh oh! Trouble connecting to WebApi [status 0]” appears
@@ -547,12 +552,11 @@ The **Stop** button is shown on the Dashboard and the Job screen. You will find 
 
     :::image type="content" source="./media/console-overview-2022/error-console-inline.png" alt-text="Screenshot showing error console." lightbox="./media/console-overview-2022/error-console-expanded.png":::
 
-
 2. If there are no CORS errors, check the **Event Viewer** logs (Application) on the Web API computer.
 
 To fix CORS errors, you must ensure that the API’s `web.config` file must have a suitable CORS configuration. The browser error shows the origin value it is expecting in the Web API's `web.config`. Although domain names are case-insensitive, IIS CORS uses case-sensitive comparison test. Ensure that the `origin` value is in lowercase in the IIS CORS config.
 
-> [!TIP] 
+> [!TIP]
 > A typical Web API IIS CORS config:
 > ```xml
 > <add allowCredentials="true" maxAge="7200" origin="http://{domain}[:{port}]">
@@ -587,10 +591,9 @@ The navigation pane is the left pane in the Orchestration console where you can 
 
 The **Runbooks** workspace lets you start and stop runbooks. You can also view information such as the jobs and instances created for each runbook and their definition.  
 
+#### Summary
 
-#### Summary  
 The **Summary** tab is displayed for any folder or runbook selected in the **Runbooks** workspace. This tab displays summary information for the jobs and instances of the selected runbook or for all the runbooks in the selected folder. The statistics that are displayed are updated every 10 minutes, so the activity performed within that time might not be reflected in the numbers until they're updated.  
-
 
 Each column in the **Summary** displays the number of jobs and instances that finished with a particular status \(Succeeded, Warning, or Failed\) within the last hour, the last day, and the last week. For instances, the number of instances that are currently in progress are also displayed. For jobs, the number of jobs that have been created and that are currently queued are also displayed.  
 
@@ -622,28 +625,28 @@ The **Instances** tab lists the instances that have been created on the runbook 
 
 The **Events** workspace lets you view log events. By default, log events include all events for the management server and all runbook servers. To limit the events, select **Filter** and provide criteria to limit the events displayed. If an event is specific to a runbook server, it includes the name of the server in the **Source** box. In this case, you can select the event, and then select **View Runbook Server** in the **Actions** pane. Selecting **View Runbook Server** opens the **Jobs** tab in the **Runbook Servers** workspace for that runbook server.  
 
-## Start the Orchestration console in a browser  
+## Start the Orchestration console in a browser
 
 1. Open your browser.  
 
-2.  In the address bar, enter `http://computer name/:port number` where computer name is the name of the server where the web service is installed and port is the port number selected during configuration of the web service. By default, the port is 82.  
+2. In the address bar, enter `http://computer name/:port number` where computer name is the name of the server where the web service is installed and port is the port number selected during configuration of the web service. By default, the port is 82.  
 
-## Start the Orchestration console in the Runbook Designer  
+## Start the Orchestration console in the Runbook Designer
 
 Select the **Orchestration Console** button on the toolbar.  
 
 > [!NOTE]  
 > If the URL hasn't been set for the Orchestration console, you'll receive an error message. Use the following procedure to set the URL.  
 
-## Set the Orchestration console URL in the Runbook Designer  
+## Set the Orchestration console URL in the Runbook Designer
 
 1. Select **Options**, and then select **Orchestration Console**.  
 
-2.  In the **URL** box, enter `http://computer name:port number` where computer name is the name of the server where the web service is installed and port is the port number selected during configuration of the web service. By default, the port is 82.  
+2. In the **URL** box, enter `http://computer name:port number` where computer name is the name of the server where the web service is installed and port is the port number selected during configuration of the web service. By default, the port is 82.  
 
 3. Select **Finish**.
 
-## Start and stop runbooks  
+## Start and stop runbooks
 
 In addition to viewing the current status of a runbook, you can also start and stop a runbook from the Orchestration console. When you start a runbook, a job is created and waits for an available runbook server to process the runbook. If the first action in a runbook is a monitor, the job runs continuously, potentially producing multiple instances of a runbook, until the runbook or job is stopped. When a runbook server is available, the job provides an instance of the runbook to the runbook server to process. A running runbook has at least one job and one or more instances associated with it.  
 
@@ -663,7 +666,7 @@ Follow these steps to start a runbook:
 
 4. Select the runbook, and then in the **Actions** pane, select **Start Runbook**.
 
-5.  If the runbook requires parameters, they're listed in the **Runbook Parameters** pane. Select the **Value** column for each runbook and enter a value for the runbook to use.
+5. If the runbook requires parameters, they're listed in the **Runbook Parameters** pane. Select the **Value** column for each runbook and enter a value for the runbook to use.
 
 6. If you want to run the runbook on a server other than its default, select a server in the **Available Runbook Server(s)** pane, and then select the right arrow to add the server to the **Selected Runbook Server(s)** pane.
 
@@ -700,9 +703,9 @@ Follow these steps to view the status of a runbook in the Orchestration console:
 
 4. Select the runbook.
 
-5.  To view all the jobs that the runbook created, in the **Actions** pane, select **View Jobs**.
+5. To view all the jobs that the runbook created, in the **Actions** pane, select **View Jobs**.
 
-6.  To view all the instances that the runbook created, in the **Actions** pane, select **View Instances**.
+6. To view all the instances that the runbook created, in the **Actions** pane, select **View Instances**.
 
 ---
 
@@ -719,4 +722,3 @@ When you view an instance, you can choose to stop the associated job. Stopping t
 ## Next steps
 
 To learn more about deploying runbooks, see [Deploy runbooks](deploy-runbooks.md).
-

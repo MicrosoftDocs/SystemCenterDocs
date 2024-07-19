@@ -5,7 +5,7 @@ description: Describes how to add and provision shielded VMs in the VMM fabric. 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/12/2022
+ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,13 +13,7 @@ ms.subservice: virtual-machine-manager
 
 # Provision shielded virtual machines in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
-
-This article describes how to deploy shielded virtual machines in the System Center - Virtual Machine Manager (VMM) compute fabric.
+This article describes how to deploy shielded virtual machines in the System Center Virtual Machine Manager (VMM) compute fabric.
 
 You can deploy shielded VMs in VMM in a couple of ways:
 
@@ -44,29 +38,29 @@ You can deploy shielded VMs in VMM in a couple of ways:
 6. **Verify existing VM requirements**: If you want to convert an existing VM to shielded, note the following:
 
     ::: moniker range="sc-vmm-2016"
-    - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
+    - The VM must be Generation 2 and have the Microsoft Windows Secure Boot template enabled
     - The operating system on the disk must be one of:
     - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
     - Windows 10, Windows 8.1, Windows 8
-    - The OS disk for the VM must use the GUID Partition Table. This is required for generation 2 VMs to support UEFI. 
+    - The OS disk for the VM must use the GUID Partition Table. This is required for Generation 2 VMs to support UEFI. 
     ::: moniker-end
 
 
     ::: moniker range="sc-vmm-2019"
-    - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
+    - The VM must be Generation 2 and have the Microsoft Windows Secure Boot template enabled
     - The operating system on the disk must be one of:
     - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
     - Windows 10
-    - The OS disk for the VM must use GUID Partition Table. This is required for generation 2 VMs to support UEFI. 
+    - The OS disk for the VM must use GUID Partition Table. This is required for Generation 2 VMs to support UEFI. 
     ::: moniker-end
 
 
     ::: moniker range="sc-vmm-2022"
-    - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
+    - The VM must be Generation 2 and have the Microsoft Windows Secure Boot template enabled
     - The operating system on the disk must be one of:
         - Windows Server 2022, Windows Server 2019, Windows Server 2016
         - Windows 11, Windows 10
-    - The OS disk for the VM must use the GUID Partition Table. This is required for generation 2 VMs to support UEFI.
+    - The OS disk for the VM must use the GUID Partition Table. This is required for Generation 2 VMs to support UEFI.
     ::: moniker-end
 
     ::: moniker range="sc-vmm-2025"
@@ -80,18 +74,18 @@ You can deploy shielded VMs in VMM in a couple of ways:
 
 7. **Set up helper VHD**: The hosting service provider will need to create a VM that acts as a helper VHD for converting the existing machines. [Learn more](guarded-deploy-template.md#configure-the-shielding-helper-vhd).
 
-## Adding shielding data files to VMM
+## Add shielding data files to VMM
 
 Before you can convert an existing VM to a shielded VM or provision a new shielded VM from a template, the VM owner must generate a shielding data file and add it to VMM.
 
 If you don't already have a shielding data file imported, complete the following steps:
 
-1. [Create a shielding data file](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data) if you don't already have one. Ensure that the shielding data file authorizes the hosting fabric VMM manages to run your shielded VMs.
+1. [Create a shielding data file](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data) if you don't have one already. Ensure that the shielding data file authorizes the hosting fabric VMM manages to run your shielded VMs.
 2. In the VMM console, select **Library** > **Import Shielding Data** > **Browse** and select your shielding data file.
 3. Specify a friendly name for the shielding data file in **Name** and optionally add a description. We recommend that you indicate whether the shielding data file is intended for use with the existing or new VMs in its name to make it easier to find again.
 4. Select **Import** to save the shielding data in VMM.
 
-To manage your imported shielding data files, go to **Library** > **VM Shielding Data** (under "Profiles").
+To manage your imported shielding data files, go to **Library** > **VM Shielding Data** (under **Profiles**).
 
 ## Provision a new shielded VM
 
@@ -99,13 +93,13 @@ To manage your imported shielding data files, go to **Library** > **VM Shielding
 2.	In **VMs and Services**, select **Create Virtual Machine** to open the Create Virtual Machine Wizard.
 3.	In **Select Source**, select **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**.
 4.	Select a shielded VM template or signed template disk. Both are identified by the shield icon ![Image of Shield Icon in VMM.](./media/guarded-deploy-vm/guarded-shield.png).
-5.	In **Select Shielding Data File**, select **Browse** and select a shielding data file. Only shielding data files that can be used to create a new shielded VM will be shown. Select **OK** > **Next** to continue.
+5.	In **Select Shielding Data File**, select **Browse**, and select a shielding data file. Only shielding data files that can be used to create a new shielded VM will be shown. Select **OK** > **Next** to continue.
 6.	Follow [these instructions](vm-template.md) to complete the wizard, and to deploy the VM on a host/cloud.
 
 When you complete the wizard, VMM creates a new shielded VM from the disk or template:
 
-1. The template disk (VHDX) file is copied from the VMM library
-2.	VM provisioning decrypts the data in the shielding data file, completes any substitution strings in the unattend.xml file, and copies additional files from the shielding data file to the operating system drive (for example, the RDP certificate).
+1. The template disk (VHDX) file is copied from the VMM library.
+2. VM provisioning decrypts the data in the shielding data file, completes any substitution strings in the unattend.xml file, and copies additional files from the shielding data file to the operating system drive (for example, the RDP certificate).
 3.	The VM restarts, is customized, and re-encrypted with BitLocker. The BitLocker full volume encryption key is stored in the virtual TPM of the new VM.
 4.	VM customization is complete when the shutdown command in the unattend.xml file runs; the VM remains switched off. If customization gets stuck, check the unattend.xml file by running it on an unshielded VM, or using an encryption-supported shielding data file that allows console access.
 5.	After VMM detects that specialization has finished, it will update its status to indicate the VM is created and, if selected, start up the VM.
@@ -117,8 +111,8 @@ You can enable shielding for a VM currently running on a host in the VMM fabric 
 1.	Ensure that you've all the prerequisites in place before you start.
 2.	Take the VM offline.
 3.	We recommend that you enable BitLocker on all disks attached to the VM before moving it to the guarded host.
-4.	Select the VM > **Properties** > **Shield**, and select a shielding data file.
-5.	Shut down the VM, export from non-guarded host, and import it to a guarded host. Only a guarded host can access the VM data.
+4.	Select the VM > **Properties** > **Shield** and select a shielding data file.
+5.	Shut down the VM, export from nonguarded host, and import it to a guarded host. Only a guarded host can access the VM data.
 
 ## Next steps
 

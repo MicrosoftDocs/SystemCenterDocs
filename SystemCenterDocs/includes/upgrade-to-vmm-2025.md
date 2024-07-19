@@ -5,7 +5,7 @@ description: include file to provide information about how to upgrade VMM server
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 06/28/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,6 +15,10 @@ ms.subservice: virtual-machine-manager
 
 The following sections provide information about how to upgrade to VMM 2025. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
+> [!NOTE]
+> - You can upgrade to VMM 2025 from VMM 2022; upgrade from 2019 and 2016 isn't supported.
+> - During VMM Installation, ensure that SQL Database isn't part of any Availability Group.
+
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2022.
@@ -22,7 +26,7 @@ The following sections provide information about how to upgrade to VMM 2025. The
 - Ensure that you're running a [supported version of SQL Server](../vmm/system-requirements.md).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade, you need to redeploy.
-	- Verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 2025.
+	- Verify Hyper-V host support for VMM 2025.
 
 ## Before you start
 
@@ -30,8 +34,8 @@ Ensure the following:
 
 1. Complete any jobs that are currently running in VMM.
 
-> [!NOTE]
-> The jobs history is deleted during the upgrade.
+   > [!NOTE]
+   > The jobs history is deleted during the upgrade.
 
 2. Close any connections to the VMM management server, including the VMM console and the VMM command shell.
 3. Close any other programs that are running on the VMM management server.
@@ -55,14 +59,16 @@ If you're running more than one System Center components, they should be upgrade
 5. Operations Manager
 6. Configuration Manager
 7. Virtual Machine Manager
-8. Service Provider Foundation
+
+>[!Note]
+>Service Provider Foundation (SPF) is discontinued from System Center 2025. However, SPF 2022 will continue to work with System Center 2025 components.
 
 ## Upgrade a standalone VMM server
 
 >[!NOTE]
 > When you're upgrading a standalone VMM server, we recommend that you install VMM 2025 on the same server that had VMM 2022.
 
-If you're using Distributed Key Management, you may choose to install VMM 2022 on a different server.
+If you're using Distributed Key Management, you can choose to install VMM 2025 on a different server.
 
 Use the following procedures:
 
@@ -72,8 +78,8 @@ Use the following procedures:
 ### Back up and upgrade OS
 1. Back up and retain the VMM database.
 2. [Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and the console.
-3. Upgrade the management OS to Windows Server 2022.
-4. Install Windows 11 or Windows Server 2022 version of [ADK](/windows-hardware/get-started/adk-install).
+3. Upgrade the management OS to Windows Server 2025.
+4. Install Windows 11 or Windows Server 2025 version of [ADK](/windows-hardware/get-started/adk-install).
 
 #### Uninstall the VMM
 1. Go to **Control Panel** > **Programs** > **Program and Features**, select **Virtual Machine Manager** and select **Uninstall**.
@@ -88,7 +94,7 @@ Use the following procedures:
 3.	In **Product registration information**, provide the appropriate information and then select **Next**. If you don't enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
 4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** checkbox, and then select **Next**.
 5.	In **Usage and Connectivity Data**, select either of the options, and then select **Next**.
-6.	If the **Microsoft Update** page appears, select whether you want to use Microsoft Update and select **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
+6.	If the **Microsoft Update** page appears, select whether you want to use Microsoft Update and select **Next**. If you have already chosen to use Microsoft Update on this computer, this page won't appear.
 7.	In **Installation location**, use the default path or enter a different installation path for the VMM program files and then select **Next**.
 8.	In **Database configuration**:
 	- [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
@@ -98,18 +104,18 @@ Use the following procedures:
 	- Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 9.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
->[!NOTE]
->You can't change the identity of the VMM service account after installation.
+   >[!NOTE]
+   >You can't change the identity of the VMM service account after installation.
 
 10.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
 
->[!NOTE]
->Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data, such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
+   >[!NOTE]
+   >Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data, such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
 
 11.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
->[!NOTE]
->You can't change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, don't configure any feature to use port 5986; this port number is preassigned.
+   >[!NOTE]
+   >You can't change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, don't configure any feature to use port 5986; this port number is preassigned.
 
 12.	In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you can't remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 13.	In **Upgrade compatibility report**, review the settings and select **Next** to proceed with the upgrade.
@@ -145,14 +151,14 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 1. Back up and retain the VMM database.
 2. [Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
-3. On the passive VMM node, upgrade the management OS to Windows server 2022.
-4. Upgrade to the Windows 11 or Windows Server 2022 version of the [ADK](/windows-hardware/get-started/adk-install).
+3. On the passive VMM node, upgrade the management OS to Windows Server 2025.
+4. Upgrade to the Windows 11 or Windows Server 2025 version of the [ADK](/windows-hardware/get-started/adk-install).
 5. Install VMM 2025 on the passive node by using the following steps:
-  -	 In the main setup page, select **Install**.
-  -  In **Select features to install**, select **VMM management server** and then select **Next**. The VMM console will be automatically installed.
-  -  When prompted, confirm that you want to add this server as a node to the highly available deployment.
-  -  On **Database Configuration** page, if prompted, select to upgrade the database.
-  -  Review the summary and complete the installation.
+   -  In the main setup page, select **Install**.
+   -  In **Select features to install**, select **VMM management server** and then select **Next**. The VMM console will be automatically installed.
+   -  When prompted, confirm that you want to add this server as a node to the highly available deployment.
+   -  On **Database Configuration** page, if prompted, select to upgrade the database.
+   -  Review the summary and complete the installation.
 6.	Fail over the active VMM node to the newly upgraded VMM server.
 7.	Repeat the procedure on other VMM nodes.
 8.  Update the cluster functional level by using the
@@ -165,8 +171,8 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 **Follow these steps**:
 
 1. Back up and retain the VMM database.
-2. Add the same number of additional servers (with Windows Server 2022 Management OS) that equals to the server number present in the HA cluster.
-3. Install Windows 11/Windows Server 2022 version of the [ADK](/windows-hardware/get-started/adk-install) on the newly added 2022 servers.
+2. Add the same number of additional servers (with Windows Server 2025 Management OS) that equals to the server number present in the HA cluster.
+3. Install Windows 11/Windows Server 2025 version of the [ADK](/windows-hardware/get-started/adk-install) on the newly added 2025 servers.
 4. Install VMM 2025 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers).
 5. Repeat the installation steps for all the other newly added servers.
 6. Fail over the active VMM node to one of the newly added servers.
@@ -207,7 +213,7 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 
 There are a couple of reasons you might want to upgrade the VMM SQL Server database:
 
-- You're upgrading VMM to System Center 2022, and the current SQL Server database version isn't supported.
+- You're upgrading VMM to System Center 2025, and the current SQL Server database version isn't supported.
 - You want to upgrade a VMM standalone server to a high availability server, and SQL Server is installed locally.
 - You want to move the SQL Server database to a different computer.
 
@@ -224,8 +230,8 @@ Before you upgrade, collect information about the VMM database:
 
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
-  - If you're upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
-  - If you want to upgrade the database without upgrading VMM, you need to uninstall, and then reinstall VMM. When you uninstall, on the **Database Options** page, select **Retain database**. Then reinstall with the same settings you used for the original installation. On the **Database Configuration**, specify the new SQL Server details. After reinstall, apply the update rollups and check that the deployment is working as expected.
+   - If you're upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
+   - If you want to upgrade the database without upgrading VMM, you need to uninstall, and then reinstall VMM. When you uninstall, on the **Database Options** page, select **Retain database**. Then reinstall with the same settings you used for the original installation. On the **Database Configuration**, specify the new SQL Server details. After reinstall, apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
 
@@ -239,14 +245,14 @@ Before you upgrade, collect information about the VMM database:
 
 1. Take a backup of the highly available VMM database from the active node of the existing SQL cluster.
 2. Note the VMM role name to use when reinstalling the VMM server role. Uninstall VMM server from the existing VMM cluster nodes with the retain database option.
-When uninstalling VMM server from last node, you may get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
+When uninstalling VMM server from last node, you can get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
 3. Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
 4. While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to the new SQL Cluster.
 
 
 ## Redeploy Azure Site Recovery
 
-If Azure Site Recovery was integrated into your VMM 2019 deployment, you need to redeploy it with VMM 2022 for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure) or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
+If Azure Site Recovery was integrated into your VMM 2022 deployment, you need to redeploy it with VMM 2025 for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure) or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
 
 
 ## Connect to Operations Manager
@@ -255,4 +261,4 @@ After the upgrade, reconnect VMM to the Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate and avoid certificate errors.
+If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is to renew the PXE server certificate and avoid certificate errors.

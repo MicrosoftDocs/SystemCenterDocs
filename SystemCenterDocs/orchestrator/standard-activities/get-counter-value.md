@@ -2,7 +2,7 @@
 title: Get Counter Value
 description: This article describes the functionality of Get Counter Value activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Get Counter Value
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Get Counter Value activity retrieves the value of a counter and returns it as a published data item. Wherever you need to use the value of a counter, use the published data that is published by the Get Counter Value to retrieve that value.  
 
-## Configuring the Get Counter Value Activity  
+## Configure the Get Counter Value Activity
+
  Before you configure the Get Counter Value activity, you need to determine which counter you'll retrieve.  
 
 > [!WARNING]
@@ -41,7 +34,8 @@ The Get Counter Value activity retrieves the value of a counter and returns it a
 |--------------|--------------------------------|  
 |Counter|Select the ellipsis **(...)** to select the **Counter** that you're retrieving.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

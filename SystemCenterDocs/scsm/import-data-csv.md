@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Use a CSV file to import data into Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides an overview and procedures for importing data and configuration items into Service Manager by using comma-separated value (CSV) files.
 

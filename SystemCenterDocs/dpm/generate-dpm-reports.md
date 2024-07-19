@@ -3,23 +3,17 @@ description: This article describes how to create DPM reports using SQL Server R
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 05/10/2023
+ms.date: 07/12/2024
 title: Generate DPM reports
 ms.subservice: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Generate DPM reports
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area, you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively, you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 

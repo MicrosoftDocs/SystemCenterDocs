@@ -14,11 +14,7 @@ ms.topic: article
 
 # Manage certificates for UNIX and Linux computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication isn't possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the management server acts as a standalone certificate authority. (Although it's possible to use third-party certificates, they aren't needed.)
 

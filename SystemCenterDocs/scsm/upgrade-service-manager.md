@@ -16,6 +16,8 @@ ms.custom: UpdateFrequency2
 
 ::: moniker range="=sc-sm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article provides the upgrade information for System Center 2025 - Service Manager (SM)
 
 [!INCLUDE [upgrade-to-sm-2025.md](../includes/upgrade-to-sm-2025.md)]
@@ -42,21 +44,6 @@ This article provides the upgrade information for System Center 2019 - Service M
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-You must have System Center - Service Manager 1801 installed to apply the 1807 update. [Learn more on how to install SM 1807](https://support.microsoft.com/en-in/help/4338239/system-center-service-manager-version-1807).
-
-::: moniker-end
-
-::: moniker range="sc-sm-1801"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-This article provides the upgrade information for System Center 1801 - Service Manager (SM)
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
@@ -64,11 +51,6 @@ This article provides the upgrade information for System Center 2016 - Service M
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1801"
-
-[!INCLUDE [upgrade-to-sm-1801.md](../includes/upgrade-to-sm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 

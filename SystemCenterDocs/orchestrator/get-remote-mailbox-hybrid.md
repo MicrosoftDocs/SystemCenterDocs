@@ -17,12 +17,6 @@ manager: jsuri
 
 # Get Remote Mailbox (Hybrid)
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 You can use the Get Remote Mailbox (Hybrid) activity to retrieve the mail-related attributes of one or more users in on-premises Active Directory that are associated with mailboxes in the cloud-based service (hybrid environment).
 
 The following tables list the required properties, optional properties, filters, and published data for this activity.

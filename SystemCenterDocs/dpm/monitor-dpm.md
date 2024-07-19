@@ -15,12 +15,6 @@ ms.custom: engagement-fy23, UpdateFrequency2
 
 # Monitor DPM
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 You can monitor a single System Center Data Protection Manager (DPM) server from the DPM Administrator console or monitor multiple DPM servers from the Central Console or monitor DPM activity with Operations Manager.
 
 ## Monitor with the DPM console
@@ -126,7 +120,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 ## Monitor DPM in the Azure console
 
 >[!NOTE]
-> For the backed-up items to be visible in the Azure portal, the DPM version must be 1807 (5.1.378.0) or 2019 (version 10.19.58.0 or later) .
+> For the backed-up items to be visible in the Azure portal, the DPM version must be 2019 (version 10.19.58.0 or later) .
 
 You use the Dashboard to get a quick overview of the state of your System Center - Data Protection Manager (DPM) backups in Microsoft Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults as follows:
 
@@ -195,7 +189,7 @@ All DPM-A customers (customers connected to Azure) have the flexibility of using
 
 ::: moniker-end
 
-::: moniker range=">= sc-dpm-1807"
+::: moniker range=">= sc-dpm-2019"
 
 ## Back up items in Recovery Services vault
 
@@ -263,7 +257,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 
 #### Install the agent and obtain the Management Packs
 
-1. For agent installation options, read [Operations Manager Installation Methods](../scom/deploy-overview.md?preserve-view=true&view=sc-om-1807).
+1.  For agent installation options, read [Operations Manager Installation Methods](../scom/deploy-overview.md).
     If you need to obtain the latest version of the agent, see [Microsoft Monitoring Agent](/services-hub/health/mma-setup) in the Download Center.
 
 2. Download the packs from the [Download Center](https://www.microsoft.com/download/details.aspx?id=9296).

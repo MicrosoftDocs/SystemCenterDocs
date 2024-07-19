@@ -14,9 +14,9 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
+::: moniker range="sc-om-2025"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 ::: moniker-end
 

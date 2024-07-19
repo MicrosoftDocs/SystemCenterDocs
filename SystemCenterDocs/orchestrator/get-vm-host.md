@@ -1,23 +1,17 @@
 ---
 title: Get VM Host activity in System Center - Orchestrator
 description: This article describes the Get VM Host activity to return all virtualization hosts on the VMM management server.
-ms.date: 02/16/2024
+ms.date: 07/12/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Get VM Host activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get VM Host activity is used in a runbook to return all virtualization hosts on the VMM management server that meet the filter criteria.
 
@@ -32,6 +26,7 @@ There are no required properties for this activity.
 There are no optional properties for this activity.
 
 ## Filters
+
 **Element**<br>
 VM Host ID<br>
 VM Host Name

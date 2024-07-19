@@ -17,6 +17,8 @@ ms.custom: UpdateFrequency.5, intro-whats-new
 
 ::: moniker range="sc-sm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article details the new features supported in System Center 2025 - Service Manager.  
 
 [!INCLUDE [whats-new-sm-2025.md](../includes/whats-new-sm-2025.md)]
@@ -37,23 +39,7 @@ This article details the new features supported in System Center 2019 - Service 
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-This article details the new features supported in System Center 1807 - Service Manager (SM).
-
-[!INCLUDE [whats-new-sm-1807.md](../includes/whats-new-sm-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-sm-1801"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-This article details the new features supported in System Center 1801 - Service Manager (SM).
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
@@ -61,11 +47,7 @@ This article details the new features supported in System Center 2016 - Service 
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1801"
 
-[!INCLUDE [whats-new-sm-1801.md](../includes/whats-new-sm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 

@@ -12,17 +12,10 @@ ms.assetid: 1c02fe50-cf8c-4451-984b-b1bda2b9fb0a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 07/10/2024
 ---
 
 # Get Datastore Capacity Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Datastore Capacity activity is used in a runbook to retrieve the capacity available on a specific data store. This allows the runbook to retrieve the available capacity of a data store before cloning or creating virtual machines in the data store.
 
@@ -48,7 +41,7 @@ No optional properties are provided for this activity.
 | Free Space   | The total amount of available space.   | Integer   |
 | Percent Free | The amount of available space as a percentage of the available capacity. | Integer   |
 
-## Configuring the Get Datastore Capacity Activity
+## Configure the Get Datastore Capacity Activity
 
 To configure the Get Datastore Capacity Activity, follow these steps:
 

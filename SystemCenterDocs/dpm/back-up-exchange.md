@@ -6,22 +6,16 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/12/2023
+ms.date: 07/16/2024
 title: Back up Exchange with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Back up Exchange with DPM
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
-::: moniker range="<=sc-dpm-1807"
+::: moniker range="sc-dpm-2016"
 
 System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013 and Exchange 2016. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so that you can protect your Exchange deployment. If you've a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases to fully protect your Exchange deployment, you should back up Exchange Server roles, such as the Client Access Server or the transport service on mailbox servers.
 
@@ -50,8 +44,8 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
 - To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node.
 
-    > [!NOTE]
-    > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
+ > [!NOTE]
+ > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
 - DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
@@ -169,7 +163,7 @@ After the protection group has been created, the initial replication occurs, and
 
 - If you use Operations Manager, you can centrally publish alerts.
 
-#### Set up monitoring notifications
+### Set up monitoring notifications
 
 1. In the DPM Administrator Console, select **Monitoring** > **Action** > **Options**.
 
@@ -181,7 +175,7 @@ After the protection group has been created, the initial replication occurs, and
 
 5. To test the SMTP server settings, select **Send Test Notification** > **OK**.
 
-#### Publish alerts for Operations Manager
+### Publish alerts for Operations Manager
 
 1. In the DPM Administrator Console, select **Monitoring** > **Action** > **Options**.
 
@@ -199,15 +193,15 @@ Follow these steps to recover a single mailbox:
 
 1. On the protected Exchange server, verify whether you've an existing recovery mailbox database. If you don't, create one using the New-MailboxDatabase cmdlet. Configure the recovery database so it can be overwritten by using the Set-MailboxDatabase cmdlet. For example:
 
-    ```
+    ```powershell
     New-MailboxDatabase -Recovery -Name RDB-CONTROL -Server E2K13-MBX1
     ```
 
-    ```
+    ```powershell   
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 
-2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protectd Exchange Data** node).
+2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protected Exchange Data** node).
 
 3. The available recovery points are indicated in bold on the calendar in the recovery points section. Select a date and select a recovery point in **Recovery time** > **Recover**.
 
@@ -233,7 +227,7 @@ Follow these steps to recover a single mailbox:
 
 8. After the recovery process has finished, the required mailbox isn't fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
 
-    ```
+    ```powershell   
     New-MailboxRestoreRequest -SourceDatabase 'RDB-CONTROL' -SourceStoreMailbox 'mailbox name' -TargetMailbox <name>@contoso.com -TargetRootFolder Recovery -SkipMerging StorageProviderForSource
     ```
 
@@ -354,7 +348,15 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 > [!NOTE]
 > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
 - DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
 
 - DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
@@ -500,15 +502,15 @@ Follow these steps to recover a single mailbox:
 
 1. On the protected Exchange server, verify whether you've an existing recovery mailbox database. If you don't, create one using the New-MailboxDatabase cmdlet. Configure the recovery database so it can be overwritten by using the Set-MailboxDatabase cmdlet. For example:
 
-    ```
+    ```powershell
     New-MailboxDatabase -Recovery -Name RDB-CONTROL -Server E2K13-MBX1
     ```
 
-    ```
+    ```powershell   
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 
-2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protectd Exchange Data** node).
+2. In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protected Exchange Data** node).
 
 3. Available recovery points are indicated in bold on the calendar in the recovery points section. Select a date and select a recovery point in **Recovery time** > **Recover**.
 
@@ -534,7 +536,7 @@ Follow these steps to recover a single mailbox:
 
 8. After the recovery process has finished, the required mailbox isn't fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
 
-    ```
+    ```powershell
     New-MailboxRestoreRequest -SourceDatabase 'RDB-CONTROL' -SourceStoreMailbox 'mailbox name' -TargetMailbox <name>@contoso.com -TargetRootFolder Recovery -SkipMerging StorageProviderForSource
     ```
 

@@ -12,17 +12,10 @@ ms.assetid: 32e0b1e4-6e53-42a3-a6e1-4f144d2e4073
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 07/10/2024
 ---
 
 # Get Host Properties Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Host Properties activity is used in a runbook to retrieve a list of properties for a specified host in the VMware vSphere cluster. Examples of these properties include Connection Status (Powered on, disconnected, and so on) and Maintenance Mode state.
 
@@ -55,7 +48,7 @@ No optional properties are provided for this activity.
 | Reboot Required   | Indicates whether a reboot is required.   | True@br False   |
 | vMotion Enabled   | Indicates whether vMotion is enabled.   | True@br False   |
 
-## Configuring the Get Host Properties Activity
+## Configure the Get Host Properties Activity
 
 To configure the Get Host Properties Activity, follow these steps:
 

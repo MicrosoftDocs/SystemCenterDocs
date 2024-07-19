@@ -15,11 +15,7 @@ ms.assetid:
 
 # Using My Workspace in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Using System Center Operations Manager HTML5 Web console, you can customize how you view monitoring data for your specific needs differently than the previous versions of Operations Manager.  
 
@@ -55,10 +51,7 @@ For detailed steps, review the following articles:
 * Create dashboard with the [PowerShell widget](manage-create-web-dashboard-posh.md)
 
 
-::: moniker range="sc-om-1801"
-Creating dashboard with PowerShell widget isn't supported in 1801.
 
-::: moniker-end
 
 ::: moniker range="sc-om-2019"
 >[!NOTE]

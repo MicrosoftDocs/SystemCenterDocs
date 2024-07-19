@@ -2,7 +2,7 @@
 title: Format Date-Time
 description: This article describes the functionality of Format Date/Time activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Format Date/Time
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Format Date/Time activity enables you to transform the existing date and time formats into custom formats that you create.  
 
-## Configuring the Format Date/Time Activity  
+## Configure the Format Date/Time Activity
+
  Before you configure the Format Date/Time activity, you need to determine the following:  
 
 - The existing date and time format you want to transform.  
@@ -47,7 +40,7 @@ Use the following information to configure the Format Date/Time activity.
 
  To specify a date/time format, you must enter the codes that represent each part of the date and time.  
 
-### Date/Time Format Codes  
+### Date/Time Format Codes
 
 |Code|Description|  
 |----------|-----------------|  
@@ -81,7 +74,8 @@ Use the following information to configure the Format Date/Time activity.
 |ddd MMM dd yyyy|Sat Aug 05 2006|  
 |dddd, MMMM dd yyyy|Saturday, August 05 2006|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

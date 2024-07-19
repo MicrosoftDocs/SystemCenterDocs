@@ -17,12 +17,6 @@ manager: jsuri
 
 # Get Network Adapter
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Get Network Adapter activity is used to retrieve an existing Virtual Network Adapter based on the filters you specify.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -46,7 +40,6 @@ The activity publishes all the data from the required and optional properties in
 | VLAN Enabled   | True or False   |
 | VLAN ID   |   The unique identifier (GUID) of the VLAN, if enabled. |
 | VM Network |  Name of the VM network  |
-
 
 ## Get Network Adapter Published Data
 

@@ -13,15 +13,10 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Modify the Orchestrator users group
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 You might want to change the Orchestrator users group after installation because of changes in your environment. For example, you might want to use a local group during installation, and then change it to a domain account later.  
 
-## PermissionsConfig tool  
+## PermissionsConfig tool
+
 You can change the Orchestrator Users group by using the PermissionsConfig tool, which is located on the management server in **\<InstallDir\>\\Management Server**. The syntax of this tool is as follows:  
 
 ```powershell
@@ -54,4 +49,5 @@ PermissionsConfig -OrchestratorUsersGroup "Contoso\Orchestrator Users" -remote
 > You must run the PermissionsConfig tool at a command prompt with administrative credentials because it modifies group memberships. To do this, right-click the **Command Prompt** icon to select **Run as Administrator**.  
 
 ## Next steps
+
 Review best practices for Orchestrator security at [Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12)).

@@ -5,20 +5,14 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 08/24/2021
+ms.date: 07/16/2024
 title: Deploy the DPM protection agent
 ms.subservice: data-protection-manager
 ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
-ms.custom: intro-deployment
+ms.custom: intro-deployment, engagement-fy24
 ---
 
 # Deploy the DPM protection agent
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 The System Center Data Protection Manager (DPM) protection agent is the software you install on each computer that contains data you want to back up with DPM. It consists of two components: the protection agent itself and an agent coordinator. Here's what it does:
 
@@ -120,12 +114,12 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
    - For a 32-bit computer, type: **DpmAgentInstaller_x86.exe *\<DPMServerName\>***
      where *&lt;DPMServerName&gt;* is the fully qualified domain name (FQDN) of the DPM server.
 
-    > [!NOTE]
-    >  - To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command. For example: **DpmAgentInstaller_x64.exe /q _&lt;DPMServerName&gt;_**
-    >  - To accept the EULA manually in a silent installation, use **DpmAgentInstaller_x64.exe /q &lt;DPMServerName&gt; /IAcceptEULA**
-    >  - If you specify a DPM server name in the command line, it installs the protection agent and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn't specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
-    >    1. To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
-    >    2. Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configures the security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
+    >[!NOTE]
+    >- To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command. For example: **DpmAgentInstaller_x64.exe /q _&lt;DPMServerName&gt;_**
+    >- To accept the EULA manually in a silent installation, use **DpmAgentInstaller_x64.exe /q &lt;DPMServerName&gt; /IAcceptEULA**
+    >- If you specify a DPM server name in the command line, it installs the protection agent and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn't specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
+    >   1. To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
+    >   2. Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configures the security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
 4. If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 

@@ -12,17 +12,10 @@ ms.assetid: ffdc4a8b-e875-437d-afa0-9a1a0f1007bf
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 07/10/2024
 ---
 
 # Get Resource Pool Properties Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Resource Pool Properties activity is used in a runbook to retrieve all the runtime information and static configuration information for a resource pool. This allows the runbook to retrieve the runtime information of a resource pool and populate a performance report.
 
@@ -72,7 +65,7 @@ No optional properties are provided for this activity.
 | Resource Pool Path   | The path of the resource pool.   | String   |
 | Virtual Machine Path   | The paths of all the virtual machines in the resource pool.   | String   |
 
-## Configuring the Get Resource Pool Properties Activity
+## Configure the Get Resource Pool Properties Activity
 
 To configure the Get Resource Pool Properties activity, follow these steps:
 

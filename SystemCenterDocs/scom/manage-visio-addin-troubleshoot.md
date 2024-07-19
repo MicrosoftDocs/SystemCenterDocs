@@ -14,11 +14,7 @@ ms.assetid: c9dabbc3-0ac5-46fe-8a34-b82b67c0e6ad
 
 # Troubleshooting the Visio Add-in
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The following sections provide information about troubleshooting the Visio Add-in:  
 

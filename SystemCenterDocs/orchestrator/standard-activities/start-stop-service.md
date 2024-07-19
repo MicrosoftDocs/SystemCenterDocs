@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Start/Stop Service
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Start/Stop Service activity will start, stop, pause, or restart a Windows service. The Start/Stop Service activity can be used to restart a service that has stopped responding or shut down a service in preparation for a backup. This activity uses a satellite license.  
 
-## Configuring the Start/Stop Service Activity  
+## Configure the Start/Stop Service Activity
+
  Before you configure the Start/Stop Service activity. you need to determine the following:  
 
 - The service name  
@@ -38,7 +31,6 @@ The Start/Stop Service activity will start, stop, pause, or restart a Windows se
 
   > [!NOTE]
   > This depends on the service you're interacting with; it may not be required.  
-
 
 Use the following information to configure the Start/Stop Service activity.  
 
@@ -52,7 +44,8 @@ Use the following information to configure the Start/Stop Service activity.
 |**Parameters**|Type any parameters that are required to interact with the **Service**.|  
 |**Action must complete in less than**|Specify the maximum amount of time in which the action must complete. After the time has expired, the Start/Stop Service activity will timeout and return a failure.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

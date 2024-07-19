@@ -17,6 +17,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 ::: moniker range="sc-dpm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
 [!INCLUDE [system-reqs-dpm-2025.md](../includes/system-reqs-dpm-2025.md)]
@@ -28,12 +30,6 @@ Use the following information to plan the deployment for System Center - Data Pr
 Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
 [!INCLUDE [system-reqs-dpm-2022.md](../includes/system-reqs-dpm-2022.md)]
-
-::: moniker-end
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
 
 ::: moniker-end
 
@@ -85,8 +81,6 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 --- | ---
 DPM 2016 | SQL Server 2014 SP2 or later <br/><br/>  SQL Server 2012 SP4 or later.
 DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-DPM 1801 |  SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-DPM 1807 | - SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) <br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017)
 
 ::: moniker-end
 

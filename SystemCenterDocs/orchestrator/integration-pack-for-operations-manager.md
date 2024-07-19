@@ -13,12 +13,6 @@ ms.custom: engagement-fy24
 
 # The integration pack for System Center Operations Manager
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The integration pack for Operations Manager is an add-in provided by System Center Orchestrator. Use the integration pack to connect an Orchestrator Runbook server to an Operations Manager management server so that you can automate various actions.
 
 For more information about integration packs, see the [System Center integration guide](https://go.microsoft.com/fwlink/?LinkID=275796).
@@ -34,7 +28,7 @@ Before you deploy the Operations Manager integration pack, install and configure
 - Operations Manager. The integration pack version should match the System Center version.
 
     >[!NOTE]
-    >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later and if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
+    >If you're using the Orchestrator 2016 integration pack for Operations Manager 2016 UR4 or later and if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
 
 - To allow server interaction with Operations Manager, install the Operations Manager console where an Orchestrator Runbook server or Runbook Designer is installed.
 
@@ -45,7 +39,7 @@ Before you deploy the Operations Manager integration pack, install and configure
 
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">=sc-orch-2022"
 
 - Orchestrator.
 
@@ -62,6 +56,12 @@ Before you deploy the Operations Manager integration pack, install and configure
 
 ## Download the integration pack
 
+::: moniker range="sc-orch-2025"
+
+- Download the pack for 2022
+
+::: moniker-end
+
 ::: moniker range="sc-orch-2022"
 
 - [Download the pack for 2022](https://www.microsoft.com/download/details.aspx?id=104339)
@@ -70,7 +70,6 @@ Before you deploy the Operations Manager integration pack, install and configure
 
 ::: moniker range="<=sc-orch-2019"
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
-- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 ::: moniker-end
 
@@ -84,15 +83,15 @@ A connection establishes a reusable link between Orchestrator and an Operations 
 
 To configure a connection:
 
-1.  In Runbook Designer, select **Options** > **Operations Manager**.
-2.  On the **Connections** tab, select **Add**.
-3.  In **Connection Entry**, in the  **Name** box, enter the name or IP address of the server that runs Operations Manager.
-4.  In the **Domain** box, enter the domain name of the Operations Manager server. Or select the ellipsis button **(...)** to browse for the domain, select it, and then select **Add**.
-5.  In the **User name** and **Password** boxes, enter the credentials that the Orchestrator server will use to connect to the Operations Manager server.
+1. In Runbook Designer, select **Options** > **Operations Manager**.
+2. On the **Connections** tab, select **Add**.
+3. In **Connection Entry**, in the  **Name** box, enter the name or IP address of the server that runs Operations Manager.
+4. In the **Domain** box, enter the domain name of the Operations Manager server. Or select the ellipsis button **(...)** to browse for the domain, select it, and then select **Add**.
+5. In the **User name** and **Password** boxes, enter the credentials that the Orchestrator server will use to connect to the Operations Manager server.
 6. In **Monitoring Intervals\\Polling** and **Monitoring Intervals\\Reconnect**, accept the default value of 10 seconds, or change the value. The property **(default value: 10 seconds)** is configurable.
-7.  Select **Test Connection**. When the confirmation message appears, select **OK**.
-8.  Add more connections if necessary.
-1. Select **OK** > **Finish**.
+7. Select **Test Connection**. When the confirmation message appears, select **OK**.
+8. Add more connections if necessary.
+9. Select **OK** > **Finish**.
 
 ## Enable SCO IP for Operations Manager 2016 UR4 or later
 
@@ -143,7 +142,7 @@ Follow these steps:
 
    Run the following Windows PowerShell script in administrator mode to automatically configure Windows to use only the TLS 1.2 protocol:
 
-   ```    
+   ```powershell  
        $ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")
        $ProtocolSubKeyList = @("Client", "Server")
        $DisabledByDefault = "DisabledByDefault"
@@ -203,7 +202,6 @@ Follow these steps:
    | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
 
 3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
-
 
    | Operating system | Required update |
    | --- | --- |

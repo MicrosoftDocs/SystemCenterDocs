@@ -12,12 +12,6 @@ ms.custom: engagement-fy23
 ---
 # Control runbook activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as **smart links** because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This article describes how to control sequencing and manipulate data within your runbook.
 
 ## Control activity sequence with smart links
@@ -26,7 +20,6 @@ The activities in your runbook will complete according to the order you set by l
 
 > [!IMPORTANT]  
 > The rules of the smart link **Exclude** tab supersede the rules on the smart link **Include** tab.  
-
 
 > [!IMPORTANT]  
 > The rules on each tab are joined by using an **or** condition. Only one of the conditions defined on a tab must be true for the condition to be true.  
@@ -69,30 +62,30 @@ Select the required tab for steps to add or remove a smart link condition:
 
 Follow these steps to add a smart link condition:
 
-1.  Right-click a smart link to select **Properties** to open the **Link Properties** dialog.  
+1. Right-click a smart link to select **Properties** to open the **Link Properties** dialog.  
 
     > [!IMPORTANT]  
     > To change the values that make up the rule, you have to select each underlined portion of the smart link condition.  
 
-2.  Select the listed activity in the condition to open the **Published Data** dialog.  
+2. Select the listed activity in the condition to open the **Published Data** dialog.  
 
-3.  Select the **Show common Returned Data** box to display properties that are common to all activities.  
+3. Select the **Show common Returned Data** box to display properties that are common to all activities.  
 
-4.  Select a property from the Published Data and select **OK**. The criteria expression is changed depending on the type of data that the property returns.  
+4. Select a property from the Published Data and select **OK**. The criteria expression is changed depending on the type of data that the property returns.  
 
-5.  To change the different parts of the expression, select the underlined text, and then either select or enter an appropriate value.
+5. To change the different parts of the expression, select the underlined text, and then either select or enter an appropriate value.
 
-6.  Select **Finish**.  
+6. Select **Finish**.  
 
 # [Remove a smart link condition](#tab/RemoveSmartLink)
 
 Follow these steps to remove a smart link condition:
 
-1.  In the **Link Properties** dialog, select either the **Include** tab or **Exclude** tab.  
+1. In the **Link Properties** dialog, select either the **Include** tab or **Exclude** tab.  
 
-2.  To select the condition that you want to remove, select to the right of the link condition on the word **or**, and then select **Remove**.  
+2. To select the condition that you want to remove, select to the right of the link condition on the word **or**, and then select **Remove**.  
 
-3.  Select **Finish**.
+3. Select **Finish**.
 
 ---
 
@@ -108,13 +101,14 @@ Loops run one time for each incoming piece of data that is passed to the activit
 
 ### Configure looping  
 
-1.  Right-click an activity in the runbook to select **Looping**. The **Looping Properties** dialog opens.  
+1. Right-click an activity in the runbook to select **Looping**. The **Looping Properties** dialog opens.  
 
-2.  On the **General** tab, select **Enable**.  
+2. On the **General** tab, select **Enable**.  
 
-3.  In the **Delay between attempts** box, enter the number of seconds to pause between each attempt to run the activity.  
+3. In the **Delay between attempts** box, enter the number of seconds to pause between each attempt to run the activity.  
 
-### Exit and Do Not Exit Conditions  
+### Exit and Do Not Exit Conditions
+
 The rules on the **Exit** tab specify the conditions that determine whether the loop exits. The rules on the **Do Not Exit** tab specify the conditions that cause the loop to continue.  
 
 > [!IMPORTANT]  
@@ -128,30 +122,30 @@ Select the required tab for the procedure to add or remove an **Exit** condition
 
 Follow these steps to add an exit condition:
 
-1.  In the **Looping Properties** dialog, select either the **Exit** tab or **Do Not Exit** tab, and then select the condition listed in the box select **Add** to add a condition.  
+1. In the **Looping Properties** dialog, select either the **Exit** tab or **Do Not Exit** tab, and then select the condition listed in the box select **Add** to add a condition.  
 
     > [!IMPORTANT]  
     > To change the values that make up the rule, you have to select each underlined portion of the link condition.  
 
-2.  Select the listed activity in the condition to open the **Published Data** dialog.  
+2. Select the listed activity in the condition to open the **Published Data** dialog.  
 
-3.  Check the **Show common Returned Data** box to display properties that are common to all activities.  
+3. Check the **Show common Returned Data** box to display properties that are common to all activities.  
 
-4.  Select a property from the published data, and then select **OK**. The criteria expression is changed depending on the type of data that the property returns.  
+4. Select a property from the published data, and then select **OK**. The criteria expression is changed depending on the type of data that the property returns.  
 
-5.  To change the different parts of the expression, select the underlined text and either select or enter an appropriate value.  
+5. To change the different parts of the expression, select the underlined text and either select or enter an appropriate value.  
 
-6.  Select **Finish**.  
+6. Select **Finish**.  
 
 # [Remove an exit condition](#tab/RemoveExitCondition)
 
 Follow these steps to remove an exit condition:
 
-1.  In the **Looping Properties** dialog, select either the **Exit** tab or the **Do Not Exit** tab.  
+1. In the **Looping Properties** dialog, select either the **Exit** tab or the **Do Not Exit** tab.  
 
-2.  To select the condition you want to remove, select **Or** to the right of the link condition, and then select **Remove**.  
+2. To select the condition you want to remove, select **Or** to the right of the link condition, and then select **Remove**.  
 
-3.  Select **Finish**.  
+3. Select **Finish**.  
 
 ---
 
@@ -178,13 +172,13 @@ Select the required tab to create a schedule, assign a schedule to a runbook, or
 
 Follow these steps to create a schedule:
 
-1.  In the **Connections** pane, right-click the **Schedules** folder or a subfolder of the **Schedules** folder, point to **New**, and then select **Schedule** to open the **New Schedule** dialog.  
+1. In the **Connections** pane, right-click the **Schedules** folder or a subfolder of the **Schedules** folder, point to **New**, and then select **Schedule** to open the **New Schedule** dialog.  
 
-2.  On the **General** tab, in the **Name** box, enter a name for the schedule.  
+2. On the **General** tab, in the **Name** box, enter a name for the schedule.  
 
-3.  In the **Description** box, enter a description that describes or explains the purpose of the schedule.  
+3. In the **Description** box, enter a description that describes or explains the purpose of the schedule.  
 
-4.  Select the **Details** tab. Select the days that this schedule allows runbooks to run:  
+4. Select the **Details** tab. Select the days that this schedule allows runbooks to run:  
 
     **Days of week**: Select this option and select the days of the week when this schedule allows runbooks to run.  
 
@@ -194,17 +188,17 @@ Follow these steps to create a schedule:
 
     You can't use **all** and **last** as part of a range of days. Additionally, if you entered a range of 5\-31, this range works correctly for all the months, including those with 28, 29, 30, and 31 days.  
 
-5.  Select **Hours** to open the **Schedule Hours** dialog.  
+5. Select **Hours** to open the **Schedule Hours** dialog.  
 
-6.  Select and drag to select a group of hours in a week. The text at the bottom of the dialog shows the time period that you selected. Then select one of the following:  
+6. Select and drag to select a group of hours in a week. The text at the bottom of the dialog shows the time period that you selected. Then select one of the following:  
 
     **Permit** \(blue\): assigns the time period that you selected as a time when runbooks are allowed to run.  
 
     **Denied** \(white\): assign the time period that you selected as a time when runbooks are not allowed to run.  
 
-7.  Select **OK**.  
+7. Select **OK**.  
 
-8.  Select the **Exceptions** tab. The list displays all the days that are exceptions to the rules defined in the **Details** tab.  
+8. Select the **Exceptions** tab. The list displays all the days that are exceptions to the rules defined in the **Details** tab.  
 
 9. Select **Add** to open the **Date** dialog.  
 
@@ -222,13 +216,13 @@ Follow these steps to create a schedule:
 
 Follow these steps to assign a schedule to a runbook:
 
-1.  Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
+1. Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
 
-2.  On the **General** tab, select the ellipsis **\(...\)** button to open the **Select a Schedule** dialog.  
+2. On the **General** tab, select the ellipsis **\(...\)** button to open the **Select a Schedule** dialog.  
 
-3.  Select the schedule that you want to apply to the runbook, and then select **OK**.  
+3. Select the schedule that you want to apply to the runbook, and then select **OK**.  
 
-4.  Select **Finish**.  
+4. Select **Finish**.  
 
     Every time the runbook is started, it checks the schedule to verify that it's allowed to run. If it isn't allowed to run, it stops and doesn't restart until the next time it's started.  
 
@@ -236,13 +230,13 @@ Follow these steps to assign a schedule to a runbook:
 
 Follow these steps to remove a schedule from a runbook:
 
-1.  Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
+1. Right-click the runbook tab, and then select **Properties** to open the **Runbook Properties** dialog.  
 
-2.  On the **General** tab, select the ellipsis **\(...\)** button to open the **Select a Schedule** dialog.  
+2. On the **General** tab, select the ellipsis **\(...\)** button to open the **Select a Schedule** dialog.  
 
-3.  Don't select a schedule. Select **OK**.  
+3. Don't select a schedule. Select **OK**.  
 
-4.  Select **Finish**. The schedule is removed from the runbook.
+4. Select **Finish**. The schedule is removed from the runbook.
 
 ---
 

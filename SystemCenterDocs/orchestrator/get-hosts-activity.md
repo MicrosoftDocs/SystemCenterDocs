@@ -12,17 +12,10 @@ ms.assetid: 25a60cd2-3942-47f6-b671-e126f109d291
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 07/10/2024
 ---
 
 # Get Hosts Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Hosts activity is used in a runbook to retrieve all the hosts attached to a vCenter instance. This allows the runbook to determine the list of hosts before cloning or creating virtual machines on a designated host.
 

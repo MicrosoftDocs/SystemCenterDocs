@@ -18,12 +18,6 @@ ms.date: 04/27/2023
 ---
 # Upload File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Upload File activity is used in a runbook to upload files to an FTP server.
 
 This activity publishes all the data from the required and optional properties into published data.

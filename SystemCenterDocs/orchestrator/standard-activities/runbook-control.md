@@ -17,14 +17,6 @@ manager: jsuri
 ---
 # Runbook Control
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The following table provides a brief description of tasks you can accomplish with each activity.  
 
 |Tasks|Activity|  
@@ -34,5 +26,6 @@ The following table provides a brief description of tasks you can accomplish wit
 |Publish data from any branch.|[Junction](junction.md)|  
 |Run a runbook.|[Invoke Runbook](invoke-runbook.md)|  
 
-## See Also  
+## See Also
+
 [Standard Activities](../standard-activities.md).

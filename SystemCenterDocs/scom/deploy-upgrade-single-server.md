@@ -14,11 +14,7 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 
 # Upgrade a single-server management group
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 When you upgrade a single-server management group, all the features that are installed on the server are upgraded. Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
@@ -36,7 +32,7 @@ Follow these steps to upgrade a single-server management group:
 4. On the **Select installation location** page, accept the default value, enter a new location or browse to one. Then select **Next**.
 
    > [!NOTE]
-   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. For all later releases (1801, 1807, 2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. For all later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
    >
 
 5. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.

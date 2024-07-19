@@ -12,12 +12,6 @@ ms.custom: engagement-fy23, engagement-fy23
 ---
 # Build and test runbooks
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the [Orchestration Console](console-overview.md).  
 
 To build a runbook, you drag activities onto the workspace. Activities are the building blocks of runbooks. In general, individual activities perform three actions:
@@ -30,7 +24,8 @@ To build a runbook, you drag activities onto the workspace. Activities are the b
 
 For more information about the types of activities, see [Control runbook activities](control-runbook-activities.md).
 
-## Runbook Designer Panes  
+## Runbook Designer Panes
+
 The Runbook Designer interface is organized into the following four panes.  
 
 |Pane|Description|  

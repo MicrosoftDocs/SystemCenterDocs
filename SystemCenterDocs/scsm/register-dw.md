@@ -17,11 +17,7 @@ ms.assetid: d5795bd5-7c01-47b9-909f-8147362b9cf4
 
 # Register with the Service Manager data warehouse to enable reporting
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 After you 've deployed the Service Manager management servers and data warehouse management servers, for reporting to function you must run the Data Warehouse Registration Wizard. This wizard registers the Service Manager management group with the data warehouse management group. It also deploys management packs from the Service Manager management server to the data warehouse management server.  
 

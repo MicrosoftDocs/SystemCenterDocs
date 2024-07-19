@@ -18,12 +18,6 @@ robots: noindex
 
 # Perform Client Action activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Perform Client Action activity is used to initiate Configuration
 Manager client actions by communicating directly with the client. These
 client actions can be used to enable more rapid processing of
@@ -89,6 +83,7 @@ As this activity targets individual computers and bypasses the normal communicat
 - Timeout (Seconds).
 
 ## Perform Client Action optional properties
+
 - Authority: Sets the authority used to authenticate the specified user. Options are:
     1.  Kerberos: &lt;Principal name&gt;
     2.  NTLMDOMAIN: &lt;domain name&gt;
@@ -97,7 +92,7 @@ As this activity targets individual computers and bypasses the normal communicat
 - Password: The password for the account credentials specified in the Username property
 - Username: The account credentials with WMI access to the remote client, in the format domain\\username
 
-## Configuring the Perform Client Action activity
+## Configure the Perform Client Action activity
 
 1.  From the **Activities** pane, drag a **Perform Client Action**
     activity to the active runbook.

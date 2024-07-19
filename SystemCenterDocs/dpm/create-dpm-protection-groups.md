@@ -2,23 +2,17 @@
 description: This article describes what DPM protection groups consist of and why you should use them.
 ms.topic: article
 ms.service: system-center
-ms.date: 11/25/2021
+ms.date: 07/16/2024
 title: Deploy protection groups
 ms.subservice: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: intro-deployment, UpdateFrequency2
+ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
 ---
 
 # Deploy protection groups
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 A System Center Data Protection Manager (DPM) protection group is a collection of data sources such as volumes, shares, or application workloads, which have common backup and restore settings. The protection group settings specify:
 
@@ -58,7 +52,7 @@ There are a few common ways to organize your protection groups:
 
 - **By data characteristics** - For example how often data changes, how rapidly it grows, or its storage requirements.
 
-## Choosing a name for the protection group
+## Choose a name for the protection group
 
 When choosing a name for your Protection Group, you should choose a meaningful name. The name must be unique to the DPM server. The Protection Group name can include any combination of alphanumeric characters and spaces, but it can't be longer than 64 characters. DPM doesn't support special characters such as `|`, `/`, `(`, `)`, or `.`.
 

@@ -8,16 +8,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.custom: UpdateFrequency3, engagement-fy23
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Delete a virtual disk from a VM
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete VM Disk activity is used in a runbook to remove or delete a virtual disk from a virtual machine that is controlled by the VMware vSphere server.
 
@@ -49,18 +42,18 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Delete VM Disk activity.
 
-1.  From the **Activities** pane, drag a **Delete VM Disk** activity to the active runbook.
+1. From the **Activities** pane, drag a **Delete VM Disk** activity to the active runbook.
 
-2.  Double-click the **Delete VM Disk** activity icon. The **Properties** dialog opens.
+2. Double-click the **Delete VM Disk** activity icon. The **Properties** dialog opens.
 
-3.  Configure the settings in the **Properties** tab as follows:
+3. Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, select the ellipsis button **(...)**.
+    1. In the **Configuration** section, select the ellipsis button **(...)**.
 
-    2.  Select the VMware vSphere server connection that you want to use for this activity, and select **OK**.
+    2. Select the VMware vSphere server connection that you want to use for this activity, and select **OK**.
 
-    3.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    3. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
 
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Update Hyper-V hosts and clusters
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Read this article to learn about keeping Hyper-V hosts and clusters updated in the System Center Virtual Machine Manager (VMM) fabric.
 
@@ -39,22 +35,6 @@ You'll need to set up an update (WSUS server) in the VMM fabric and configure up
       - Select **Live migration** to remove virtual machines from a host before performing update remediation so that they remain online. If you don't need to keep them online and want to perform a quicker update, select **Save state** to shut down virtual machines and proceed with remediation.
 6. Select **Remediate** to start updating. After remediation, if no reboot is pending, the server or cluster will show as **Compliant**.
 
-::: moniker range="sc-vmm-1807"
-
-  >[!NOTE]
-  >Remediation of a single node in a S2D cluster might not succeed if remediation is done by selecting the host. We recommend you to remediate at cluster level and then select the hosts for remediation.
-
-In S2D cluster, once the update is installed on the node, the node is rebooted and repair (resync) operation is initiated. If the resync isn't completed within 600 minutes (default value), the update job fails. To avoid the job failure, you can change the wait time in the registry key.
-
-- Minimum value for the resync wait time is 600 minutes and the maximum value can be 2880 minutes.
-
-- **S2DResyncWaitTimeInMins** is the registry key setting that you can use to change the default  Resync wait time.
-
-- *Here's the path for the registry key*:
-
-  \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings > RegistryKey  
-
-::: moniker-end
 
 ## Next steps
 

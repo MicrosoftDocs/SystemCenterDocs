@@ -18,12 +18,6 @@ ms.date: 04/27/2023
 ---
 # Restart VM Instance
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The **Restart VM Instance** activity restarts the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

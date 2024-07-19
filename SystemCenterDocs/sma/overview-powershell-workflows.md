@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Windows PowerShell Workflow Concepts
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 One [type of runbook](./authoring-automation-runbooks.md) for Service Management Automation is based on Windows PowerShell Workflows. This article provides a brief overview of the critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134242(v=ws.11)).
 

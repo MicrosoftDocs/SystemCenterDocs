@@ -16,6 +16,8 @@ ms.custom: UpdateFrequency.5
 
 ::: moniker range="sc-sm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article details the system requirements for System Center 2025 - Service Manager (SM).
 
 >[!NOTE]
@@ -44,23 +46,9 @@ This article details the system requirements for System Center 2019 - Service Ma
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 
-This article details the system requirements for System Center 1807 - Service Manager (SM).
 
-[!INCLUDE [system-reqs-sm-1807](../includes/system-reqs-sm-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-sm-1801"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-This article details the system requirements for System Center 1801 - Service Manager (SM).
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
@@ -68,11 +56,6 @@ This article details the system requirements for System Center 2016 - Service Ma
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1801"
-
-[!INCLUDE [system-reqs-sm-1801.md](../includes/system-reqs-sm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 

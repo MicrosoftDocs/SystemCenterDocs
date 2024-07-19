@@ -3,23 +3,17 @@ description: You can use DPM to back up and recover SQL Server databases.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 04/18/2024
+ms.date: 07/16/2024
 title: Back up SQL Server with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Back up SQL Server with DPM
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 System Center Data Protection Manager (DPM) provides backup and recovery for SQL Server databases. In addition to backing up SQL Server databases, you can run a system backup or full bare-metal backup of the SQL Server computer. Here's what DPM can protect:
 
@@ -133,10 +127,10 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 3. In **Select Group Members**, select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](create-dpm-protection-groups.md). 
 
-> [!NOTE]
->  - You've the option of selecting protection at the instance level or protection of individual databases.
->  - When you are protecting at the instance level, any database that is added to that instance of SQL Server will automatically be added to DPM protection.
->  - If you are using SQL Server AlwaysOn availability groups, you can create a protection group that contains the availability groups. DPM detects the availability groups and will displays them under **Cluster Group**. Select the whole group to protect it so that any databases that you add to the group are protected automatically, or select individual databases. For each instance of SQL Server, you can also run a system state backup or full bare metal backup. This in useful if you want to be able to recover your whole server and not just data.
+>[!NOTE]
+>- You've the option of selecting protection at the instance level or protection of individual databases.
+>- When you are protecting at the instance level, any database that is added to that instance of SQL Server will automatically be added to DPM protection.
+>- If you are using SQL Server AlwaysOn availability groups, you can create a protection group that contains the availability groups. DPM detects the availability groups and will displays them under **Cluster Group**. Select the whole group to protect it so that any databases that you add to the group are protected automatically, or select individual databases. For each instance of SQL Server, you can also run a system state backup or full bare metal backup. This in useful if you want to be able to recover your whole server and not just data.
 
 4. In **Select data protection method**,  specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
@@ -269,7 +263,7 @@ Recover a database from the DPM console as follows:
 
 4. On the **Review recovery selection** page, select **Next**.  
 
-> [!NOTE]
+>[!NOTE]
 >- Select where you want to recover the database. If you select **Recover to any SQL instance**, enter the recovery path. You can specify a new name for the recovered database. This option isn't available with the setting **Latest recovery point**.
 >- The default recovery path is the original location path. You must enter the appropriate recovery path.
 >- You can't recover a newer version SQL Server database to an older version SQL Server instance.

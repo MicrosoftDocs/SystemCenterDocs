@@ -15,12 +15,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Improve replication performance
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 There are many steps you can take to optimize the performance of System Center - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
 
 ## Network throttling

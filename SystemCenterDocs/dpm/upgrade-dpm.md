@@ -17,6 +17,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 ::: moniker range="sc-dpm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article provides the upgrade information for System Center 2025 - Data Protection Manager (DPM).
 
 [!INCLUDE [upgrade-to-dpm-2025.md](../includes/upgrade-to-dpm-2025.md)]
@@ -36,26 +38,6 @@ This article provides the upgrade information for System Center 2022 - Data Prot
 This article provides the upgrade information for System Center 2019 - Data Protection Manager (DPM).
 
 [!INCLUDE [upgrade-to-dpm-2019.md](../includes/upgrade-to-dpm-2019.md)]
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-This article provides the upgrade information for System Center 1807 - Data Protection Manager (DPM).
-
-[!INCLUDE [upgrade-to-dpm-1807.md](../includes/upgrade-to-dpm-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-This article provides the upgrade information for System Center 1801 - Data Protection Manager (DPM).
-
-[!INCLUDE [upgrade-to-dpm-1801.md](../includes/upgrade-to-dpm-1801.md)]
 
 ::: moniker-end
 

@@ -1,8 +1,8 @@
 ---
 title: Get VM instance
 description: The Get VM Instance activity retrieves the specified virtual machine.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 07/12/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,12 +17,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 
 # Get VM instance
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Get VM Instance** activity retrieves the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

@@ -17,12 +17,6 @@ robots: noindex
 ---
 # SharePoint Activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The following configuration instructions apply to all the activities in this integration pack. Links to this section are included in the configuration instructions for each activity.
 
 The procedures in this article are performed on an activity that has been placed in the Runbook Designer workspace.
@@ -31,7 +25,7 @@ The procedures in this article are performed on an activity that has been placed
 
 Each activity has a set of required or optional properties that define the configuration of that activity. The configuration includes how the activity connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the Runbook Designer workspace.
 
-### To view and configure the properties for an activity
+### View and configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 
@@ -49,7 +43,7 @@ This tab contains the **Name** and **Description** properties for the activity. 
 
 This tab contains properties that are specific to the activity. All the activities in this integration pack have the **Configuration Name** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to Microsoft Exchange Server.
 
-#### To configure the Configuration Name property
+#### Configure the Configuration Name property
 
 1.  Select the ellipsis **(...)** button next to the **Name** box.
 
@@ -100,7 +94,7 @@ Published Data is the data that is produced as a result of the actions of an act
 
 An activity can subscribe only to data from the activities that are linked before it in the runbook. You can use Published Data to automatically populate the property values that are required by activities.
 
-### To use Published Data
+### Use Published Data
 
 1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 

@@ -17,19 +17,12 @@ manager: jsuri
 ---
 # Restart System
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Restart System activity will restart a computer on your network. The Restart System activity can either wait for applications to shut down gracefully, or you can configure the activity to forcefully shut down any running applications. You can also send a message to notify your users of the reason for the disruption.  
 
  Some applications may consume memory and hard disk space and will not relinquish them without restarting the system. The Restart System activity can be used to restart these systems during maintenance windows to maintain service during business hours.  
 
-## Configuring the Restart System Activity  
+## Configure the Restart System Activity
+
  Before you configure the Restart System activity, you will need to determine the following:  
 
 - The computer you want to restart.  
@@ -47,7 +40,8 @@ Use the following information to configure the Restart System activity.
 |**Wait**|Type the number of seconds after sending the **Message** to the users before the system will be shut down.|  
 |**Force applications to close**|Select to forcefully shut down any applications that are running when the system is restarted.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

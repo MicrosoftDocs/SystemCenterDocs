@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Get Service Status
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Get Service Status activity will check the status of a service on any computer. Use the Get Service Status to check the status of service before performing another action. For example, if you have an SQL Server backup runbook that requires that SQL Server is stopped before performing the backup, you can check the status and then stop the service using the [Start/Stop Service](start-stop-service.md) activity.  
 
-## Configuring the Get Service Status Activity  
+## Configure the Get Service Status Activity
+
  Before you configure the Get Service Status activity, you need to determine the following:  
 
 - The computer where the service is located  
@@ -43,7 +36,8 @@ Use the following information to configure the Get Service Status activity.
 |**Computer**|Type the name of the computer where the service that you're checking is located. You can also use the ellipsis **(...)** button to browse for the computer. The runbook server that runs this runbook must have the appropriate rights to monitor the services on that computer.|  
 |**Service**|Type the name of the service that you're checking. You can also browse for the service using the ellipsis **(...)** button.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

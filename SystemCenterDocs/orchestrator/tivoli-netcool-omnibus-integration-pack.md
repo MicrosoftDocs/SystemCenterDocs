@@ -18,28 +18,23 @@ monikerRange: '<=sc-orch-2019'
 ---
 # IBM Tivoli Netcool OMNIbus Integration Pack for System Center  - Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Integration Pack for IBM Tivoli Netcool/OMNIbus is an add-on for System Center - Orchestrator that enables you to automate responses to alerts raised within IBM Tivoli Netcool/OMNIbus. You can combine these automated responses, or activities, with the standard activities found in Orchestrator.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information, see [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
-## Downloading the Integration Pack
+## Download the Integration Pack
 
 ::: moniker range="<=sc-orch-2019"
 - To download this integration pack for Orchestrator 2016, see [IBM Tivoli Netcool Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54103).
 - To download this integration pack for Orchestrator 2019, see [IBM Tivoli Netcool Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58110&WT.mc_id=rss_alldownloads_all).
 ::: moniker-end
 
-## Registering and Deploying the Integration Pack
+## Register and Deploy the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
 
-## Deploying the Integration Pack
+## Deploy the Integration Pack
+
 See [Deploying IBM Tivoli Netcool Integration Pack](tivoli-netcool-omnibus-integration-pack.md).
 
 ## Known Issues

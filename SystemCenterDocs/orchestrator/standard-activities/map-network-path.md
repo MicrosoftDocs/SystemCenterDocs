@@ -17,17 +17,10 @@ manager: jsuri
 ---
 # Map Network Path
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Map Network Path activity enables you to map a network path using a UNC path.  
 
-## Configuring the Map Network Path Activity  
+## Configure the Map Network Path Activity
+
  Before you configure the Map Network Path activity, you need to determine the following:  
 
 - The UNC path you want to map.  
@@ -44,7 +37,8 @@ Use the following information to configure the Map Network Path activity.
 |**User account**|Enter the user account that you need to access the network path.|  
 |**Password**|Enter the password that you need to access the network path.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

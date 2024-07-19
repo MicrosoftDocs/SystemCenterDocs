@@ -13,16 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Set VM Networks Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Set VM Networks activity is used in a runbook to replace the first virtual machine network switch with one that is specified. This allows the runbook to change the network switch that a virtual machine is using.
 
@@ -54,11 +47,9 @@ No optional properties are provided for this activity.
 | Network Adapter 4 | The name of the network that the fourth network adapter is attached to. | String   |
 | VM Path   | The path to the virtual machine.   | String   |
 
-## Configuring the Set VM Networks Activity
+## Configure the Set VM Networks Activity
 
-The following procedure describes the steps required to configure a Set VM Networks activity.
-
-### To configure the Set VM Networks Activity
+To configure the Set VM Networks Activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Set VM Networks** activity to the active runbook.
 

@@ -3,7 +3,7 @@ description: DPM overview article that explains the workloads and types of data 
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 01/17/2024
+ms.date: 07/12/2024
 title: Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
@@ -15,9 +15,9 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 
 # Data Protection Manager
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+::: moniker range="sc-dpm-2025"
 
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 ::: moniker-end
 

@@ -15,14 +15,6 @@ manager: jsuri
 ---
 # Ports and Protocols of Standard Activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 Orchestrator standard activities can communicate between the runbook servers where the runbook is deployed and any resource. If you have firewalls in your environment, when you use a standard activity, you must enable the ports between the runbook servers and resource as indicated in the following table.  
 
 |Standard activity|Port on runbook server|Port on resource server|Notes|  
@@ -43,6 +35,6 @@ Orchestrator standard activities can communicate between the runbook servers whe
 
 ## Other resources for this product  
 
--   [Orchestrator overview](../learn-about-orchestrator.md).
+- [Orchestrator overview](../learn-about-orchestrator.md).
 
--   [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md).
+- [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md).

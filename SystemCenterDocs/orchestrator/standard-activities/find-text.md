@@ -2,7 +2,7 @@
 title: Find Text 
 description: This article  provides information about the Find Text activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,19 +17,12 @@ manager: jsuri
 ---
 # Find Text
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Find Text activity finds lines in a text file. Use the Find Text activity to find according to a search string that you specify.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
-## Configuring the Find Text Activity  
+## Configure the Find Text Activity
+
  Before you configure the Find Text activity, you need to determine the following:  
 
 - The name of the file that you want to search in.  
@@ -51,7 +44,8 @@ Use the following information to configure the Find Text activity.
 |**Use regular expressions**|Select this option to use regular expressions in your search.|  
 |**Result**|Select one of the following options for your results:<br /><br /> **Only the first line that matches the text will be returned**<br /><br /> **All lines that match the text will be returned**|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

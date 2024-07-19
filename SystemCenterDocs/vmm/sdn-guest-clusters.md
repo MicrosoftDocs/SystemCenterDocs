@@ -15,27 +15,17 @@ ms.custom: UpdateFrequency2
 
 # Configure guest clusters in SDN through VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
 This article explains about how to configure guest clusters in SDN using the System Center - Virtual machine Manager (VMM).
 
 With the introduction of the network controller, VMs that are connected to the virtual network are only permitted to use the IP address that network controller (NC) assigns for communication. NC doesn't support floating IP addresses, which are essential for technologies such as Microsoft Failover Clustering to work.
 
-::: moniker range="sc-vmm-1801"
-
-In VMM 1801 and later, you can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
-
-VMM 1801 and later supports guest clustering in SDN through an Internal Load Balancer (ILB) Virtual IP (VIP). The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
-
-::: moniker-end
 
 
-::: moniker range=">sc-vmm-1801"
+
+::: moniker range=">=sc-vmm-2019"
 
 You can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 

@@ -18,12 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Update Alert Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This activity can change the information in an alert based on the results from automated diagnostics performed by a runbook.
 
 The following tables list the required properties, optional properties, and published data for this activity.
@@ -164,11 +158,9 @@ This activity publishes the following alerts:
 - x733ProbableCause
 - x733SpecificPro
 
-## Configuring the Update Alert Activity
+## Configure the Update Alert Activity
 
-The following procedure describes the steps required to configure an Update Alert activity.
-
-### To configure the Update Alert Activity
+To configure the Update Alert Activity, follow these steps:
 
 1.  From the **Activities** pane, drag an **Update Alert** activity to the active runbook.
 

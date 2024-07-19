@@ -17,19 +17,12 @@ manager: jsuri
 ---
 # Insert Line
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Insert Line activity inserts lines into a text file on a line number that you specify.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
-## Configuring the Insert Line Activity  
+## Configure the Insert Line Activity
+
  Before you configure the Insert Line File activity, you need to determine the following:  
 
 - The name of the file you want to insert text into.  
@@ -49,7 +42,8 @@ Use the following information to configure the Insert Line activity.
 |**Text**|Enter the text that you want to insert into the file.|  
 |**Line number**|Enter the line number where the text will be inserted.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

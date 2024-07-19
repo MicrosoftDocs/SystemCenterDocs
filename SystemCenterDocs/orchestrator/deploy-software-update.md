@@ -18,20 +18,14 @@ ROBOTS: noindex
 
 # Deploy Software Update activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Deploy Software Update activity is used in a runbook to create a
 Software Deployment (advertisement) to deploy software updates to a
 collection of computers. This activity requires that the updates have
 been downloaded and the following items exist on the Configuration
 Manager Site:
 
--   Deployment Template
--   Deployment Package
+- Deployment Template
+- Deployment Package
 
 ## Properties and published data
 
@@ -48,14 +42,14 @@ activity.
     >[!NOTE]
     >When you use the browse feature to look up a template name or enter a template name manually or from published data, you must set the **Deployment Template Value Type** property to **Name** or the activity will fail.
 - Deployment Template Value Type: Specifies whether the value in the **Deployment Template** property is a name or a template ID. Options are:
-    -   **ID** (default): the value is a template ID
-    -   **Name**: the value is a template name
+    - **ID** (default): the value is a template ID
+    - **Name**: the value is a template name
 - Update/Update Group: The display name or ID of an existing software update group or individual software update.
     >[!NOTE]
     >The browse feature will allow you to select a software update group by name. Individual software updates are not shown in the browser.
 - Update Value Type: Specifies whether the value in the **Update / Update Group** property is a name or an ID. The options are:
-    -  **Update Group Name** (default): The value is an update group name
-    -  **Update Group ID**: The value is an ID
+    - **Update Group Name** (default): The value is an update group name
+    - **Update Group ID**: The value is an ID
     - **Update Name**: The value is the name of an individual update
     - **Update ID**: The value is the CI\_ID of an individual update
 - Purpose: The deployment intent or purpose. The options are:
@@ -76,44 +70,47 @@ activity.
     >[!NOTE]
     >When you use the browse feature to look up a collection name or enter a collection name manually or from published data, you must set the **Collection Value Type** property to Name or the activity will fail.
 - Collection Value Type: Specifies whether the value in the Collection property is a name or a collection ID. The options are:
-    -   **ID** (default): the value is a collection ID
-    -   **Name**: the value is a collection name
+    - **ID** (default): the value is a collection ID
+    - **Name**: the value is a collection name
 
 ## Deploy Software Update optional properties
+
 - Allow peer client distribution: True or False (Default = True) Select this option to reduce the load on the network by allowing clients to download content from other clients on the network that have already downloaded and cached the content. This option utilizes Windows BranchCache and can be used on computers running Windows Vista SP2 and later.
 - Allow Software Install Outside of Maintenance Windows: True or False (Default = False) Allows the application to install even if the installation would occur outside of a maintenance window
 - Allow System Restart Outside of Maintenance Windows: True or False (Default = False) Allows the advertised program to restart the client even if the restart would occur outside of a maintenance window
 - Detail Level: Specified the level of information reported in state messages about the deployment. Options are:
-    -   **Normal** (default): Returns all state messages related to the deployment.
-    -   **Minimal**: Returns only enforcement success and critical error messages.
+    - **Normal** (default): Returns all state messages related to the deployment.
+    - **Minimal**: Returns only enforcement success and critical error messages.
 - Send Wake-up Packets: True or False (Default = False) Specifies whether the Configuration Manager server will send a Wake On LAN packet to the computer prior to the advertised program.
     >[!NOTE]
     >This setting applies only if the **Purpose** is set to **Required**.
 - Slow boundary deployment option: Specifies the options available when the client is within a slow or unreliable network boundary. The options are:
-    -   **Do not run program** (default): The program won't be run when a client is connected within a slow or unreliable network boundary.
-    -   **Download content and run locally**: The client will download the content from the Distribution Point before attempting to run the program.
+    - **Do not run program** (default): The program won't be run when a client is connected within a slow or unreliable network boundary.
+    - **Download content and run locally**: The client will download the content from the Distribution Point before attempting to run the program.
 - Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if the content isn't immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
 - Suppress Restart on Servers: True or False (Default = False) When set to **True**, prevents the automatic restart of servers after update installation.
 - Suppress Restart on Workstations: True or False (Default = False) When set to **True**, prevents the automatic restart of workstations after update installation.
 - Comment: An optional comment associated with the deployment.
 - Fast (LAN) boundary deployment option: Specifies how a program is run when the client is connected within a fast (LAN) network boundary. The options are:
-    -   **Download content and run locally** (default): The client will download the content from the Distribution Point before attempting to run the program.
-    -   **Run program from Distribution Point**: The client will run the program from the Distribution Point without downloading it first.
+    - **Download content and run locally** (default): The client will download the content from the Distribution Point before attempting to run the program.
+    - **Run program from Distribution Point**: The client will run the program from the Distribution Point without downloading it first.
 
 ## Schedule Tab properties
+
 - Schedule Evaluation – Time Based On: Defines how the time values below are interpreted. Options are:
-    -   **Client Local Time** (default): The times specified below represent the local time on the client.
-    -   **UTC**: The times specified below are UTC times.
+    - **Client Local Time** (default): The times specified below represent the local time on the client.
+    - **UTC**: The times specified below are UTC times.
 - Software available time - Availability: Determines whether the date/time value below is used to specify the availability of the deployment. The options are:
-    -   **As soon as possible** (default): The date/time value below is ignored and the availability is set to the current date/time.
-    -   **Schedule time**: The time specified below is used as the deployment’s availability time.
+    - **As soon as possible** (default): The date/time value below is ignored and the availability is set to the current date/time.
+    - **Schedule time**: The time specified below is used as the deployment’s availability time.
 - Software available time – Specific Time: The specific date/time when the deployment will be made available to clients.
 - Installation Deadline – deadline: Determines whether the date/time value below is used to specify the installation deadline of the deployment. The options are:
-    -   **As soon as possible** (default): The date/time value below is ignored and the deadline is set to the current date/time.
-    -   **Schedule time**: The time specified below is used as the deployment’s deadline time.
+    - **As soon as possible** (default): The date/time value below is ignored and the deadline is set to the current date/time.
+    - **Schedule time**: The time specified below is used as the deployment’s deadline time.
 - Installation Deadline – Specific Time: The specific date/time of the installation deadline for the deployment.
 
 ## Alerts Tab properties
+
 - Generate Alerts: True or False (Default = False) When set to **True**, an alert definition will be created for the deployment according to the settings below. When set to **False**, alert settings in this group are ignored.
 - When compliance % is below: When compliance with this deployment is below this percentage, an alert will be generated in Configuration Manager. Valid values: 1 - 99
 - Offset from deadline time: Alerts will be generated only after this period of time has elapsed from the deployment’s installation deadline time.
