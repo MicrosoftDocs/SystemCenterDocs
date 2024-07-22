@@ -37,7 +37,7 @@ To start monitoring a Nano Server, follow these steps:
 
 3. [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md) if you installed the agent manually on Nano Server.
 
-4. [Verify that you're monitoring your Nano Server](#verify-that-you-are-monitoring-your-nano-server).
+4. [Verify that you're monitoring your Nano Server](#verify-that-youre-monitoring-your-nano-server).
 
 There are several limitations in this release of the Nano Server agent. The following operations aren't supported in this release:
 
