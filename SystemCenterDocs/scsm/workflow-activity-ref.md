@@ -1,12 +1,12 @@
 ---
 title: Workflow activity reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
-ms.custom: na, UpdateFrequency2, engagement-fy23
+ms.custom: na, UpdateFrequency2, engagement-fy23, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/29/2023
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -16,7 +16,6 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 ---
 
 # Service Manager Authoring Tool workflow activity reference
-
 
 This article provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
 
@@ -36,7 +35,8 @@ This activity adds a computer to a security group in Active Directory Domain Ser
 |--------------------------|------------------------------|
 |None|When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD DS.|  
 
-#### Properties  
+#### Properties
+
  The **Add AD DS Computer to Group** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -63,7 +63,8 @@ This activity adds a user to a security group in Active Directory Domain Service
 |--------------------------|------------------------------|
 |None|When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD DS.|
 
-#### Properties  
+#### Properties
+
  The **Add AD DS User to Group** activity uses the input properties that are listed in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -89,13 +90,15 @@ Use control flow activities to provide structure—branches, loops, or timer del
  The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
 
 ### Delay activity
+
 This activity introduces a delay between activities in a workflow in Service Manager. The **Delay** activity is derived from the Microsoft .NET Framework **DelayActivity** class.  
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  The **Delay** activity uses the input properties that are listed in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -109,8 +112,8 @@ This activity introduces a delay between activities in a workflow in Service Man
 |--------------------------|------------------------------|-----------------------|
 |None|For more information about this activity, see [DelayActivity Class](/dotnet/api/system.workflow.activities.delayactivity) in the .NET Framework Class Library.|None|
 
-
 ### For Each Loop activity
+
 The **For Each Loop** activity takes as an input an array (*collection*) of objects and repeats the set of activities within the loop for each object in the collection. For example, if the input collection has five objects, the loop iterates five times. If the collection is empty, the loop doesn't iterate. There's no upper limit to the number of objects in the collection. The **For Each Loop** activity always runs on the computer on which the workflow runs.  
 
  The **For Each Loop** activity is a composite activity with two containers for activities:  
@@ -125,15 +128,16 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 
 Two types of activities don't get the **Current Item** and **Property to Bind** properties and therefore can't use the objects in the input collection:  
 
-  -   Script activities, such as the **Windows PowerShell Script** activity.  
+  - Script activities, such as the **Windows PowerShell Script** activity.  
 
-  -   Custom activities or other activities that don't inherit from the **WorkflowActivityBase** class. Such activities include those activities that are based on the **Activity** base class, such as native Visual Studio activities.  
+  - Custom activities or other activities that don't inherit from the **WorkflowActivityBase** class. Such activities include those activities that are based on the **Activity** base class, such as native Visual Studio activities.  
 
 |Design time prerequisites|Run time prerequisites|
 |--------------------------|------------------------------|
 |None|None|  
 
-#### Properties  
+#### Properties
+
  The **For Each Loop** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -155,7 +159,8 @@ This activity controls the sequence of activities within a workflow based on a B
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  None.  
 
 |Errors and exceptions|Remarks|Example|
@@ -170,7 +175,8 @@ This activity forks the sequence of activities into two simultaneous sequences o
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  None.  
 
 |Errors and exceptions|Remarks|Example|
@@ -191,7 +197,8 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 |--------------------------|------------------------------|
 |None|-   The Virtual Machine Manager console and Service Manager must both be installed on the same server. <br /> -   Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active Directory Domain Services (AD DS). <br />-   The Virtual Machine Manager console and Service Manager must both be installed on the same server. <br />- Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active Directory Domain Services (AD DS).|  
 
-#### Properties  
+#### Properties
+
  The **Get VM** activity uses the input properties in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -226,7 +233,8 @@ This activity in Service Manager moves a virtual machine from the Virtual Machin
 |--------------------------|------------------------------|
 |None| -   The Virtual Machine Manager console and Service Manager must both be installed on the same server. <br /> -   Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active Directory Domain Services (AD DS).|
 
-#### Properties  
+#### Properties
+
  The **Move VM** activity uses the input properties in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -269,7 +277,8 @@ This activity in Service Manager shuts down the guest operating system on a virt
 |--------------------------|------------------------------|
 |None|-   The Virtual Machine Manager console and Service Manager must both be installed on the same server. <br /> -   Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active Directory Domain Services (AD DS).|
 
-#### Properties  
+#### Properties
+
  The **Shutdown VM** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -303,7 +312,8 @@ This activity in Service Manager starts a stopped or paused virtual machine.
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  The **Start VM** activity uses the input properties in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -337,7 +347,8 @@ This activity in Service Manager saves the state of a virtual machine and then s
 |--------------------------|------------------------------|
 |None|-  The Virtual Machine Manager console and Service Manager must be both installed on the same server. <br /> -   Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active Directory Domain Services (AD DS). |
 
-#### Properties  
+#### Properties
+
  The **Save State VM** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -379,7 +390,8 @@ This activity runs a command-line script as part of a Windows Workflow Foundatio
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  The **Command Script** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -404,7 +416,8 @@ This activity in Service Manager runs a Windows PowerShell script as part of a W
 |--------------------------|------------------------------|
 |The **Windows PowerShell Script** activity depends upon the following prerequisites at design time:  <br/> -   Windows PowerShell 2.0  |Windows PowerShell 2.0|
 
-#### Properties  
+#### Properties
+
  The **Windows PowerShell Script** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  
@@ -430,7 +443,8 @@ This activity in Service Manager runs a VBScript script as part of a Windows Wor
 |--------------------------|------------------------------|
 |The **VBScript Script** activity depends on the following prerequisites at design time: <br/> None.|None|
 
-#### Properties  
+#### Properties
+
  The **VBScript Script** activity uses the input properties that are described in the following table.  
 
 |Display Name|Internal Name|Type|Required|Description|  
@@ -461,7 +475,8 @@ This activity creates and populates an incident in Service Manager.
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  The **Create Incident** activity uses the input properties that are listed in the following table.  
 
 |Display name|Internal name|Type|Required|Comments|  
@@ -495,7 +510,8 @@ This activity retrieves one or more incidents in Service Manager.
 |--------------------------|------------------------------|
 |None|None|
 
-#### Properties  
+#### Properties
+
  The **Get Incident** activity uses the input properties that are listed in the following table.  
 
 |Display name|Internal name|Type|Required|Comments|  
@@ -563,7 +579,8 @@ This activity updates the status of an automated activity in Service Manager.
 |--------------------------|------------------------------|
 |None|None.|
 
-#### Properties  
+#### Properties
+
  The **Set Activity Status to Completed** activity uses the input properties that are described in the following table.  
 
 |Display name|Internal name|Type|Required|Description|  

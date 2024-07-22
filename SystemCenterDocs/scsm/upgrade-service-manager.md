@@ -5,11 +5,11 @@ description: This article details the upgrade information and procedures for Ser
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/22/2024
+ms.date: 07/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Upgrade System Center Service Manager
@@ -34,13 +34,11 @@ This article provides the upgrade information for System Center 2019 - Service M
 
 ::: moniker-end
 
-
 ::: moniker range="sc-sm-2016"
 
 This article provides the upgrade information for System Center 2016 - Service Manager (SM)
 
 ::: moniker-end
-
 
 ::: moniker range="sc-sm-2016"
 
