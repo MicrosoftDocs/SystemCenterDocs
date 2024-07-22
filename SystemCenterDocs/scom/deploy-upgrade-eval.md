@@ -5,8 +5,8 @@ description: This article describes how to upgrade from an evaluation version of
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2023
-ms.custom: na, engagement-fy23
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -14,16 +14,12 @@ ms.topic: article
 
 # Upgrade from the evaluation version of Operations Manager
 
-
-
 The System Center Operations Manager evaluation version expires 180 days after you install it.
 
 To upgrade from an evaluation version of Operations Manager to a licensed version, you must obtain a valid product key from Microsoft. For information about Operations Manager licensing, see [System Center Licensing](https://www.microsoft.com/cloud-platform/system-center-pricing).
 
 > [!NOTE]
 > To check whether Operations Manager is licensed, in the Operations console, select **Help**, and then select **About**. In the **Product version** field, it'll show the version **(Retail)** after the version information.  If it shows **(Eval)**, then your installation is an evaluation version.  
-
-
 
 ## Upgrade from the evaluation version of System Center - Operations Manager
 

@@ -1,20 +1,18 @@
 ---
 ms.assetid: 61bb5a83-479f-4cc1-b67a-9cd02fc91d2f
-title: How to Configure Operations Manager to Communicate with SQL Server
+title: Configure Operations Manager to communicate with SQL server
 description: This article describes how to reconfigure Operations Manager if you change the SQL Server configuration or SQL Server instance hosting its databases.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/25/2020
-ms.custom: UpdateFrequency3
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to configure Operations Manager to communicate with SQL Server
-
-
+# Configure Operations Manager to communicate with SQL Server
 
 If after installing System Center Operations Manager, you move the Operations Manager operational or data warehouse database to a different SQL Server instance, move the databases to a SQL Server Always On availability group, or reconfigure the SQL Server instance, you need to follow the steps below to reconfigure the management group to reference the new TCP/IP Port, instance name, or computer name.  
 
@@ -22,21 +20,21 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
 For all of the steps below where a SQL instance network name is referenced, use the format `computername\instancename` followed by a comma, and then the SQL Server port number (`computername\instancename,portNumber`). If you're hosting the database on a SQL Server cluster, replace *computername* with the virtual network name of the SQL cluster resource group. If the database is part of a SQL Always On Availability Group, replace `computername\instancename` with the availability group listener name in the format of `AvalabilityGroupListenerName,portNumber`.
 
-## How to configure settings for the operational database
+## Configure settings for the operational database
 
 1. On each management server run **regedit** from an elevated **Command Prompt**, then edit:
 
-   -  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\Database`
+   - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\Database`
    Change **DatabaseServerName** with your operational database SQL instance network name.
 
-   -  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`
+   - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`
    Change **DatabaseServerName** with your operational database SQL instance network name.  
 
 2. On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for all later releases (2019, and 2022), `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
 
-   -  Under the tag `<Category Name=”Cmdb”>`, change the value for *ServerName* to your operational database SQL instance network name and change the value for *PortNumber* to the SQL Server port number.
+   - Under the tag `<Category Name=”Cmdb”>`, change the value for *ServerName* to your operational database SQL instance network name and change the value for *PortNumber* to the SQL Server port number.
 
-   -  Under the tag ` <Name=”ConfigStore”>`, change the value for *ServerName* to your operational database SQL instance network name and change the value for *PortNumber* to the SQL Server port number.
+   - Under the tag ` <Name=”ConfigStore”>`, change the value for *ServerName* to your operational database SQL instance network name and change the value for *PortNumber* to the SQL Server port number.
 
 3. On the SQL Server instance hosting the operational database, configure the following:
 
@@ -54,8 +52,7 @@ For all of the steps below where a SQL instance network name is referenced, use 
 
     g. In the first row, enter your operational database SQL instance network name.
 
-
-## How to configure settings for the data warehouse database
+## Configure settings for the data warehouse database
 
 1. On each management server, run **regedit** from an elevated **Command Prompt**, and then edit:
 
@@ -124,7 +121,6 @@ For all of the steps below where a SQL instance network name is referenced, use 
     e. In the results pane, scroll to the right of the column titled `column.ManagedTypePropertyId`.
 
     f. Find the row with a GUID that corresponds to one of those GUIDs returned by the query above (normally row number 8), and enter your data warehouse database SQL instance network name.
-
 
 ### Update Reporting server
 
