@@ -1,21 +1,19 @@
 ---
 ms.assetid: 68d9b467-12db-4fec-af94-9f9fa15c5f86
-title: How to Configure sudo Elevation and SSH Keys
+title: Configure sudo Elevation and SSH Keys
 titlesuffix: Microsoft System Center Operations Manager
 description: This article describes how to configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/27/2024
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to configure sudo elevation and SSH keys
-
-
+# Configure sudo elevation and SSH keys
 
 With Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer using sudo, allowing the user to run programs or access files that have the security privileges of another user account. For agent maintenance, you also have the ability to use Secure Shell (SSH) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
 

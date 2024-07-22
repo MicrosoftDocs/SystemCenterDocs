@@ -1,20 +1,18 @@
 ---
 ms.assetid: ed1c51df-2507-4f34-b051-04540896ac17
-title: How to Install an Audit Collection Services ACS Collector and Database
+title: Install an Audit Collection Services ACS Collector and Database
 description: This article describes how to install the Operations Manager Audit Collector and ACS database.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
-ms.custom: na, engagement-fy23
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to install an Audit Collection Services (ACS) collector and database
-
-
+# Install an Audit Collection Services (ACS) collector and database
 
 Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Both the procedures are performed on the computer that is designated as your ACS collector.
 
@@ -38,25 +36,25 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 Follow these steps to install an ACS collector and an ACS database:
 
-1.  Sign in to the server by using an account that has local administrative credentials.
+1. Sign in to the server by using an account that has local administrative credentials.
 
-2.  On the Operations Manager installation media, run **Setup.exe**, and select **Audit collection services**.
+2. On the Operations Manager installation media, run **Setup.exe**, and select **Audit collection services**.
 
     For monitoring UNIX and Linux computers, select **Audit collection services for UNIX/Linux**.
 
     The **Audit Collection Services Collector Setup** wizard opens.
 
-3.  On the **Welcome** page, select **Next**.
+3. On the **Welcome** page, select **Next**.
 
-4.  On the **License Agreement** page, read the licensing terms, select **I accept the agreement**, and select **Next**.
+4. On the **License Agreement** page, read the licensing terms, select **I accept the agreement**, and select **Next**.
 
-5.  On the **Database Installation Options** page, select **Create a new database**, and select **Next**.
+5. On the **Database Installation Options** page, select **Create a new database**, and select **Next**.
 
-6.  On the **Data Source** page, in the **Data source name** box, enter a name that you want to use as the Open Database Connectivity (ODBC) data source name for your ACS database. By default, this name is **OpsMgrAC**. Select **Next**.
+6. On the **Data Source** page, in the **Data source name** box, enter a name that you want to use as the Open Database Connectivity (ODBC) data source name for your ACS database. By default, this name is **OpsMgrAC**. Select **Next**.
 
-7.  On the **Database** page, if the database is on a separate server than the ACS collector, select **Remote Database Server**, and then enter the computer name of the database server that will host the database for this installation of ACS. Otherwise, select **Database server running locally**.
+7. On the **Database** page, if the database is on a separate server than the ACS collector, select **Remote Database Server**, and then enter the computer name of the database server that will host the database for this installation of ACS. Otherwise, select **Database server running locally**.
 
-8.  In the **Database server instance name** field, enter the name of the server and the name of the SQL Server instance, if not the default instance, for the database server that will host the ACS database. In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and enter a different name or leave the default name. Select **Next**.
+8. In the **Database server instance name** field, enter the name of the server and the name of the SQL Server instance, if not the default instance, for the database server that will host the ACS database. In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and enter a different name or leave the default name. Select **Next**.
 
     > [!NOTE]
     > Database name can't contain the `-` character.
@@ -147,19 +145,19 @@ Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous
 
 Follow these steps to deploy ACS reporting:
 
-1.  Sign in to the server that will be used to host ACS reporting as a user that is an administrator of the SSRS instance.
+1. Sign in to the server that will be used to host ACS reporting as a user that is an administrator of the SSRS instance.
 
-2.  Create a temporary folder, such as **C:\acs**.
+2. Create a temporary folder, such as **C:\acs**.
 
-3.  On your installation media, go to **\ReportModels\acs** and copy the directory contents to the temporary installation folder.
+3. On your installation media, go to **\ReportModels\acs** and copy the directory contents to the temporary installation folder.
 
     There are two folders (**Models** and **Reports**) and a file named **UploadAuditReports.cmd**.
 
-4.  On your installation media, go to **\SupportTools** and copy the file **ReportingConfig.exe** into the temporary **acs** folder.
+4. On your installation media, go to **\SupportTools** and copy the file **ReportingConfig.exe** into the temporary **acs** folder.
 
-5.  Open a Command Prompt window by using the **Run as Administrator** option, and then change directories to the temporary **acs** folder.
+5. Open a Command Prompt window by using the **Run as Administrator** option, and then change directories to the temporary **acs** folder.
 
-6.  Run the following command.
+6. Run the following command.
     `UploadAuditReports "<AuditDBServer\Instance>" "<Reporting Server URL>" "<path of the copied acs folder>"`
     For example: `UploadAuditReports "myAuditDbServer\Instance1" "http://myReportServer/ReportServer$instance1" "C:\acs"`
 
@@ -168,9 +166,9 @@ Follow these steps to deploy ACS reporting:
     > [!NOTE]
     > The reporting server URL needs the reporting server virtual directory (`ReportingServer_<InstanceName>`) instead of the reporting manager directory (`Reports_<InstanceName>`).
 
-7.  Open Internet Explorer, and enter the following address to view the **SQL Reporting Services Home** page. `http://<yourReportingServerName>/Reports_<InstanceName>`
+7. Open Internet Explorer, and enter the following address to view the **SQL Reporting Services Home** page. `http://<yourReportingServerName>/Reports_<InstanceName>`
 
-8.  Select **Audit Reports** in the body of the page, and select **Show Details** on the upper right part of the page.
+8. Select **Audit Reports** in the body of the page, and select **Show Details** on the upper right part of the page.
 
 9. Select the **Db Audit** data source.
 
