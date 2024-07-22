@@ -1,5 +1,5 @@
 ---
-title: Work with Sensitive Data for .NET Applications
+title: Work with sensitive data for .NET applications
 description: This article describes how to filter sensitive data collected by Application Performance Monitoring.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika

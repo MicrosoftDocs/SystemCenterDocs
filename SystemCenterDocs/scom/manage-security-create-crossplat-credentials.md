@@ -1,6 +1,6 @@
 ---
 ms.assetid: d8bb718e-9ecc-4839-926f-1bc0df246bf6
-title: Set Credentials for Accessing UNIX and Linux Computers
+title: Set credentials for accessing UNIX and Linux computers
 description: This article describes how to configure credentials required to securely manage UNIX and Linux computers with Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Set credentials for Accessing UNIX and Linux computers
+# Set credentials for accessing UNIX and Linux computers
 
 This article contains procedures for how to set credentials in wizards for the following tasks, as set by wizards in System Center - Operations Manager:  
 

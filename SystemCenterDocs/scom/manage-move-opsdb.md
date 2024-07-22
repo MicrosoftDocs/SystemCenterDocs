@@ -33,7 +33,7 @@ On all the management servers in the management group, stop the Operations Manag
 - Microsoft Monitoring Agent (HealthService)
 - System Center Management Configuration (cshost)
 
-### Backup the Operational database on the old SQL Server instance
+### Back up the Operational database on the old SQL Server instance
 
 1. On the original SQL Server instance hosting the operational database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManager.
 
