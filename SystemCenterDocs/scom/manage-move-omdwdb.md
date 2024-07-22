@@ -47,7 +47,7 @@ On all the management servers in the management group, stop the Operations Manag
 
 In the OperationsManager DB, manually update the **GlobalSettings** table to reflect the host\Instance, where the data warehouse has been moved to.
 
-For more information, see [How to configure the Operations Manager Reporting data warehouse database](manage-sqlserver-communication.md#how-to-configure-settings-for-the-data-warehouse-database).
+For more information, see [How to configure the Operations Manager Reporting data warehouse database](manage-sqlserver-communication.md#configure-settings-for-the-data-warehouse-database).
 
 ### Restore the Reporting data warehouse database on the new SQL Server instance
 
@@ -59,7 +59,7 @@ For more information, see [How to configure the Operations Manager Reporting dat
 
 ### Update the registry on the management servers and Reporting data warehouse database
 
-After moving the Operations Manager Reporting data warehouse database to a different SQL Server instance, you'll need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance. This requires modifying the registry, the configuration service configuration file, and several tables in the operational database. The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#how-to-configure-settings-for-the-data-warehouse-database).
+After moving the Operations Manager Reporting data warehouse database to a different SQL Server instance, you'll need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance. This requires modifying the registry, the configuration service configuration file, and several tables in the operational database. The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#configure-settings-for-the-data-warehouse-database).
 
 ### Update Reporting server
 
