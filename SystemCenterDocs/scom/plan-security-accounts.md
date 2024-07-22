@@ -5,8 +5,8 @@ description: This article provides an overview of the security accounts required
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/28/2023
-ms.custom: na, UpdateFrequency3
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -41,7 +41,6 @@ You can use a least-privilege account for the agent’s action account. On compu
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
 - Allow log on locally (SetInteractiveLogonRight) permission (not applicable for Operations Manager 2019 and later).
-
 
 > [!NOTE]
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the action account. Other Run As accounts can have lower privileges. The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they're configured.  For more information about which specific privileges are required, see the appropriate management pack guide.
