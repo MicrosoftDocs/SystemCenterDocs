@@ -5,16 +5,14 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/07/2024
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.custom: intro-installation, UpdateFrequency2, engagement-fy23
+ms.custom: intro-installation, UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Install Service Manager on a single computer (minimum configuration)
-
-
 
 If you want to evaluate System Center - Service Manager and you've a minimal amount of hardware available, install Service Manager on one computer. A sample single-computer configuration is shown in figure&nbsp;1. This configuration won't support a production environment, and no scalability or performance estimates are provided. Because you can't install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper-V to create a virtual computer to host the data warehouse management server.
 
@@ -63,12 +61,12 @@ For more information about the permissions that these accounts require, see **Ac
 
 8. On the **Configure the Service Manager management group** page, complete these steps:  
 
-   1.  In the **Management group name** box, enter a unique name for the management group.  
+   1. In the **Management group name** box, enter a unique name for the management group.  
 
        > [!IMPORTANT]  
        >  Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
 
-   2.  Select **Browse**, enter the user account or group to which you want to give Service Manager administrative credentials, and select **Next**.  
+   2. Select **Browse**, enter the user account or group to which you want to give Service Manager administrative credentials, and select **Next**.  
 
 9. On the **Configure the account for Service Manager services** page, select **Domain account**; specify the user name, password, and domain for the account; and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**.  
 
@@ -105,12 +103,12 @@ For more information about the permissions that these accounts require, see **Ac
 
 9. On the **Configure the data warehouse management group** page, complete these steps:  
 
-    1.  In the **Management group name** box, enter a unique name for the group.  
+    1. In the **Management group name** box, enter a unique name for the group.  
 
         > [!IMPORTANT]  
         >  Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
 
-    2.  Select **Browse**, enter the user account or group to which you want to give Service Manager administrative credentials, and select **Next**.  
+    2. Select **Browse**, enter the user account or group to which you want to give Service Manager administrative credentials, and select **Next**.  
 
 10. On the **Configure the reporting server for the data warehouse** page, Service Manager will use the existing computer if SQL Server Reporting Services \(SSRS\) is present. Accept the defaults, and select **Next**.  
 
@@ -140,14 +138,16 @@ For more information about the permissions that these accounts require, see **Ac
 After the installation, do the following:
 
 19. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the  following commands:
-    ```
+
+    ```powershell   
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
 
 20. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
-    ```
+
+    ```powershell   
     $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
 
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices")
@@ -184,13 +184,13 @@ After the installation, do the following:
 
 21. Enable the job schedules by running the following commands:
 
-    ```
+    ```powershell    
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
-22. Restart the Data Warehouse management server.
 
+22. Restart the Data Warehouse management server.
 
 ## Validate the single-computer installation
 
@@ -202,55 +202,55 @@ Select the required tab for steps to validate the installation of:
 
 Follow these steps to validate the Service Manager management server installation:
 
-1.  On the physical computer that hosts the Service Manager management server, verify that the Program Files\\Microsoft System Center \<version\>\\Service Manager\\ folder exists.  
+1. On the physical computer that hosts the Service Manager management server, verify that the Program Files\\Microsoft System Center \<version\>\\Service Manager\\ folder exists.  
 
-2.  Run **services.msc**, and then verify that the following services are installed, that they have a status of **Started**, and that the startup type is **Automatic**:  
+2. Run **services.msc**, and then verify that the following services are installed, that they have a status of **Started**, and that the startup type is **Automatic**:  
 
-    -   **System Center Data Access Service**  
-    -   **Microsoft Monitoring Agent**  
-    -   **System Center Management Configuration**  
+    - **System Center Data Access Service**  
+    - **Microsoft Monitoring Agent**  
+    - **System Center Management Configuration**  
 
-# [Service Manager console](#tab/Console)  
+# [Service Manager console](#tab/Console)
 
 Follow these steps to validate the Service Manager console installation:
 
-1.  On the physical computer, select **Start**, select **All Programs**, select **Microsoft System Center**, and select **Service Manager Console**.  
+1. On the physical computer, select **Start**, select **All Programs**, select **Microsoft System Center**, and select **Service Manager Console**.  
 
-2.  The first time that you run the Service Manager console, the **Connect to Service Manager Server** dialog appears. In the **Server name** box, enter the computer name of the server that hosts the Service Manager management server.  
+2. The first time that you run the Service Manager console, the **Connect to Service Manager Server** dialog appears. In the **Server name** box, enter the computer name of the server that hosts the Service Manager management server.  
 
-3.  The Service Manager console successfully connects to the Service Manager management server and starts.  
+3. The Service Manager console successfully connects to the Service Manager management server and starts.  
 
 # [Data warehouse management server](#tab/DataWarehouseManagementServer)
 
 Follow these steps to validate the data warehouse management server installation:
 
--   On the virtual machine, run **services.msc**, and verify that the following services are installed:  
+- On the virtual machine, run **services.msc**, and verify that the following services are installed:  
 
-    -   **System Center Data Access Service**  
-    -   **Microsoft Monitoring Agent**  
-    -   **System Center Management Configuration**  
+    - **System Center Data Access Service**  
+    - **Microsoft Monitoring Agent**  
+    - **System Center Management Configuration**  
 
 # [Service Manager database](#tab/Database)
 
 Follow these steps to validate the Service Manager database:
 
-1.  On the physical computer, select **Start**, select **All Programs**, select **Microsoft SQL Server**, and select **SQL Server Management Studio**.  
+1. On the physical computer, select **Start**, select **All Programs**, select **Microsoft SQL Server**, and select **SQL Server Management Studio**.  
 
-2.  In the **Connect to Server** dialog, follow these steps:  
+2. In the **Connect to Server** dialog, follow these steps:  
 
-    1.  In the **Server Type** list, select **Database Engine**.  
+    1. In the **Server Type** list, select **Database Engine**.  
 
-    2.  In the **Server Name** list, select the name of the computer that hosts the Service Manager database.  
+    2. In the **Server Name** list, select the name of the computer that hosts the Service Manager database.  
 
-    3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
+    3. In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 
-3.  In the **Object Explorer** pane, expand **Databases**.  
+3. In the **Object Explorer** pane, expand **Databases**.  
 
-4.  Verify that the **ServiceManager** database is listed.  
+4. Verify that the **ServiceManager** database is listed.  
 
-5.  Exit Microsoft SQL Server Management Studio.  
+5. Exit Microsoft SQL Server Management Studio.  
 
-# [Data warehouse](#tab/DataWarehouse)  
+# [Data warehouse](#tab/DataWarehouse)
 
 Follow these steps to validate the data warehouse installation:
 
@@ -258,9 +258,9 @@ Follow these steps to validate the data warehouse installation:
 
 2. In the **Connect to Server** dialog, complete these steps:  
 
-   1.  In the **Server Name** list, enter the computer name of the computer hosting Service Manager data warehouse databases. For this example, enter **localhost**.  
+   1. In the **Server Name** list, enter the computer name of the computer hosting Service Manager data warehouse databases. For this example, enter **localhost**.  
 
-   2.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
+   2. In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 
 3. In the **Object Explorer** pane, expand **Databases**.  
 
