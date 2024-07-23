@@ -57,7 +57,7 @@ For more information about the permissions that these accounts require, see [Acc
 7. On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
 
     > [!IMPORTANT]  
-    > A warning message appears if you're using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL Server. See the [Planning Guide for System Center - Service Manager](plan-sm.md).  
+    > A warning message appears if you're using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. See the [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -107,7 +107,7 @@ For more information about the permissions that these accounts require, see [Acc
 7. On the **Configure data warehouse databases** page, Service Manager checks the computer you're using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you're installing the data warehouse management server, and select **Next**.  
 
    > [!IMPORTANT]  
-   > A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
+   > A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure additional data warehouse datamarts** page, Service Manager checks the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
 

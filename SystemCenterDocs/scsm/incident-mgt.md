@@ -319,7 +319,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 1. Using Windows Explorer on the SMTP server, create a new text file named **TESTEMAIL**.
 2. Remove the TXT file name extension from the new file.
-3. Right-click the TESTMAIL file, and select **Open**.
+3. Right-click the TESTEMAIL file, and select **Open**.
 4. When you're prompted to open the file with a program, select **Notepad**, and select **OK**.
 5. In the file, enter the following using your own information, similar to the following example:
 

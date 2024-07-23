@@ -521,7 +521,7 @@ This activity retrieves one or more incidents in Service Manager.
 |Category|Category|Integer|No|Specifies the type of incident, such as **Networking** or **Printing**. The value is the ID of **enum**. (Category -**enum** data field)|  
 |Continue On Error|ContinueOnError|Boolean|No. (The default is true.)|Determines whether the workflow should continue running if the activity fails.|  
 |Incident ID|IncidentID|String|No|Specifies the unique identifier that is generated for the incident object.|  
-|Search Type|SearchType|Integer?|No|Specifies the title of the search type that is used with the activity.|  
+|Search Type|SearchType|Integer|No|Specifies the title of the search type that is used with the activity.|  
 |Status|Status|Integer|No|Specifies the status of incident. The value is the ID of **enum**. (Status -**enum** data field)|  
 |Summary Text|SummaryText|String|No|Specifies the summary text that describes the incident.|  
 

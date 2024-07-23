@@ -78,7 +78,7 @@ All software requirements for System Center 2022- Service Manager are fully docu
 
 **Before Upgrade**  
 
-**Description:** A problem with the upgrade process causes MPSync job to fail after the upgrade is complete. To prevent this problem (before you upgrade)[#back-up-service-manager-before-you-upgrade], you must run the SQL script mentioned below on the DWRepository database to get the actual SQL scripts that drop and add a constraint on the primary key in fact tables in the DWRepository database to correct the problem. Additionally, transform and load jobs might also fail. This error can occur because of erroneous database grooming.  
+**Description:** A problem with the upgrade process causes MPSync job to fail after the upgrade is complete. To prevent this problem (before you upgrade)[/system-center/scsm/upgrade-service-manager#back-up-service-manager-before-you-upgrade], you must run the SQL script mentioned below on the DWRepository database to get the actual SQL scripts that drop and add a constraint on the primary key in fact tables in the DWRepository database to correct the problem. Additionally, transform and load jobs might also fail. This error can occur because of erroneous database grooming.  
 
 ```sql
 ;WITH FactName  
@@ -127,7 +127,7 @@ FROM    FactPKListStr f
 
 ```  
 
-**Workaround 1:** If you've already upgraded and you don't have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the (Before Upgrade)[#back-up-service-manager-before-you-upgrade] section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
+**Workaround 1:** If you've already upgraded and you don't have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the (Before Upgrade)[/system-center/scsm/upgrade-service-manager#back-up-service-manager-before-you-upgrade] section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
 
 **Workaround 2:** If you've upgraded and you've problems with transform or load job failures, then determine if the SystemDerivedMp.Microsoft.SystemCenter.Datawarehouse.Base management pack exists in the DWStagingAndConfig database by running the following query.  
 

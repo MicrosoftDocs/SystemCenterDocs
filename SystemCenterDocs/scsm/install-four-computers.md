@@ -61,7 +61,7 @@ For more information about the permissions that these accounts require, see [Acc
 7. On the **Configure the Service Manager database** page, in the **Database server** field, enter the name of the computer that will host the Service Manager database, and press the TAB key. Ensure that **SQL Server instance** box is set to the desired SQL Server instance and that **Create a new database** is selected, and select **Next**. For example, enter **Computer 2** in the **Database server** box.  
 
     > [!IMPORTANT]  
-    > A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
+    > A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -121,7 +121,7 @@ The data warehouse databases include the following three databases: DWStagingAnd
 8. On the **Configure data warehouse databases** page, in the **Database server** box, enter the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, and select **Next**.  
 
     > [!IMPORTANT]  
-    > A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
+    > A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 9. In the list of the three databases, select **Data Mart**. In the **Database server** box, enter the computer name of the server that will host the Data Mart database. For example, enter **Computer 4**, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, select **Next**.  
 

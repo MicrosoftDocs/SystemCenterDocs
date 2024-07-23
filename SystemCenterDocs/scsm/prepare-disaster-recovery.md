@@ -136,7 +136,7 @@ Part of the disaster recovery plan for your Service Manager management server in
 
 You can use the Windows PowerShell command-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that as part of your disaster recovery plan for Service Manager you can later import these management packs.  
 
-o back up unsealed management packs, follow these steps:
+To back up unsealed management packs, follow these steps:
 
 1. On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you'll store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
 2. On the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, right-click **Windows PowerShell**, and select **Run as administrator**.  
