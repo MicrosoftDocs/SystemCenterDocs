@@ -5,15 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/28/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Prepare a production environment for upgrade
-
-
 
 Use the following procedures to prepare for System Center - Service Manager upgrade by creating a production environment and preparing it for production data for the purpose of upgrade testing.
 
@@ -30,15 +28,15 @@ When you install a secondary management server, data retention settings are rese
 
 Follow these steps to run setup:
 
-1.  By using an account that has administrator rights and that is also a member of the Service Manager Management group administrators, sign in to the computer that will host the additional Service Manager Management server.  
-2.  On the System Center - Service Manager installation media, double-click Setup.exe.  
-3.  On the **Microsoft System Center \<version\> Service Manager** page, select **Install a Service Manager Management server**.  
-4.  On the **Product registration** page, enter the information in the boxes. In the **Product key** boxes, enter the product key you received with Service Manager, or alternatively, select **Install as an evaluation edition (180 day trial)?**. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
-5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location where the additional Service Manager Management server will be installed.  
-6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
+1. By using an account that has administrator rights and that is also a member of the Service Manager Management group administrators, sign in to the computer that will host the additional Service Manager Management server.  
+2. On the System Center - Service Manager installation media, double-click Setup.exe.  
+3. On the **Microsoft System Center \<version\> Service Manager** page, select **Install a Service Manager Management server**.  
+4. On the **Product registration** page, enter the information in the boxes. In the **Product key** boxes, enter the product key you received with Service Manager, or alternatively, select **Install as an evaluation edition (180 day trial)?**. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
+5. On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location where the additional Service Manager Management server will be installed.  
+6. On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
     - If the prerequisite checker determines that the Microsoft Report Viewer Redistributable hasn't been installed, select **Install Microsoft Report Viewer Redistributable**. After the **Microsoft Report Viewer Redistributable 2008 (KB971119) Setup** wizard completes, select **Check perquisites again**.  
-7.  On the **Configure the Service Manager Database** page, in the **Database server** box, enter the name of the computer that hosts the Service Manager database that you used for your initial Service Manager Management server, and then press TAB. When the name of the instance displays in the **SQL Server instance** box, select **Use an existing database**. For example, enter **Computer 2** in the **Database server** box.  
-8.  Select the **Database** list, select the database name for the Service Manager database (the default name is ServiceManager), and select **Next**.  
+7. On the **Configure the Service Manager Database** page, in the **Database server** box, enter the name of the computer that hosts the Service Manager database that you used for your initial Service Manager Management server, and then press TAB. When the name of the instance displays in the **SQL Server instance** box, select **Use an existing database**. For example, enter **Computer 2** in the **Database server** box.  
+8. Select the **Database** list, select the database name for the Service Manager database (the default name is ServiceManager), and select **Next**.  
 9. On the **Configure the Service Manager Management group** page, verify that the management group name and management group administrators boxes have been populated. Select **Next**.  
 10. On the **Configure the Account for Service Manager Services** page, select **Domain account**, specify the user name, password, and domain for the account, and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**. For example, enter the account information for the domain user SM_Acct, and select **Next**.  
 
@@ -58,22 +56,21 @@ Use the following procedure to copy the workflow assembly files from the Service
 
 Follow these steps to copy the workflow assembly files: 
 
-1.  On the computer that is running the Service Manager Primary Server role, browse to the Service Manager Installation folder for example, C:\Program Files\Microsoft System Center\Service Manager copy the workflow files (workflow.dll).  
-2.  On the computer that is running the Service Manager Secondary server; browse to the Service Manager Installation folder; for example, C:\Program Files\Microsoft System Center\Service Manager. Paste the copied workflow files into this folder. You should overwrite any existing files.  
+1. On the computer that is running the Service Manager Primary Server role, browse to the Service Manager Installation folder for example, C:\Program Files\Microsoft System Center\Service Manager copy the workflow files (workflow.dll).  
+2. On the computer that is running the Service Manager Secondary server; browse to the Service Manager Installation folder; for example, C:\Program Files\Microsoft System Center\Service Manager. Paste the copied workflow files into this folder. You should overwrite any existing files.  
 
     > [!NOTE]  
     >  You must place the workflow assembly files in the Service Manager installation folder. This is very important step if you want to test the custom workflows that depend on workflow assembly files. Failure to copy these files would lead to failed custom workflows in the lab environment.
-
 
 ## Disable Service Manager connectors in the production environment
 
 Use the following procedure to disable the Service Manager connectors in the production environment:
 
-1.  In the Service Manager console, select **Administration**.  
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.  
-3.  In the **Connectors** pane, select the connector that you want to disable.  
-4.  In the **Tasks** pane, under the connector name, select **Disable**.  
-5.  In the **Disable Connector** dialog, select **OK**.
+1. In the Service Manager console, select **Administration**.  
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.  
+3. In the **Connectors** pane, select the connector that you want to disable.  
+4. In the **Tasks** pane, under the connector name, select **Disable**.  
+5. In the **Disable Connector** dialog, select **OK**.
 
 ## Disable email notifications in the production environment
 
@@ -83,21 +80,21 @@ Use the following procedure to disable incoming and outbound email notifications
 
 Follow these steps to disable outbound email notifications:
 
-1.  In the Service Manager console, select **Administration**.  
-2.  In the **Administration** pane, expand **Notifications**, and select **Channels**.  
-3.  In the **Channels** pane, select **E\-Mail Notification Channel**.  
-4.  In the **Tasks** pane, under **E\-Mail Notification Channel**, select **Properties** to open the **Configure E\-Mail Notification Channel** dialog.  
-5.  Clear the **Enable e\-mail notifications** checkbox.  
+1. In the Service Manager console, select **Administration**.  
+2. In the **Administration** pane, expand **Notifications**, and select **Channels**.  
+3. In the **Channels** pane, select **E\-Mail Notification Channel**.  
+4. In the **Tasks** pane, under **E\-Mail Notification Channel**, select **Properties** to open the **Configure E\-Mail Notification Channel** dialog.  
+5. Clear the **Enable e\-mail notifications** checkbox.  
 
 # [Disable incoming email notifications](#tab/DisableIncoming)
 
 Follow these steps to disable incoming email notifications:
 
-1.  In the Service Manager console, select **Administration**.  
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.  
-3.  In the **Settings** pane, double\-click **Incident Settings**.  
-4.  In the Incident **Settings** dialog, select **Incoming E\-mail**.  
-5.  Clear **Turn on incoming e\-mails processing**, and select **OK**.
+1. In the Service Manager console, select **Administration**.  
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.  
+3. In the **Settings** pane, double\-click **Incident Settings**.  
+4. In the Incident **Settings** dialog, select **Incoming E\-mail**.  
+5. Clear **Turn on incoming e\-mails processing**, and select **OK**.
 
 ---
 
@@ -109,14 +106,14 @@ Use the following procedure to stop the Service Manager services:
 
 Follow these steps to stop the Service Manager services:
 
-1.  In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
-2.  In the **Services** window, in the **Services (Local)** pane, locate the following three services and for each one, and select **Stop**:  
-    1.  System Center Data Access Service  
-    2.  System Center Management  
-    3.  System Center Management Configuration  
-3.  Open Windows Explorer.  
-4.  Locate the folder \\Program Files\\Microsoft System Center\\Service Manager.  
-5.  Delete the **Health Service State** folder and all of its contents.
+1. In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
+2. In the **Services** window, in the **Services (Local)** pane, locate the following three services and for each one, and select **Stop**:  
+    1. System Center Data Access Service  
+    2. System Center Management  
+    3. System Center Management Configuration  
+3. Open Windows Explorer.  
+4. Locate the folder \\Program Files\\Microsoft System Center\\Service Manager.  
+5. Delete the **Health Service State** folder and all of its contents.
 
 ## Back up the production Service Manager database for future recovery
 
@@ -162,10 +159,10 @@ Use the following procedure to enable the Service Manager connectors in the prod
 
 Follow these steps to enable a connector:
 
-1.  In the Service Manager console, select **Administration**.  
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.  
-3.  In the **Connectors** pane, select the connector that you want to enable.  
-4.  In the **Tasks** pane, under the connector name, select **Enable**.
+1. In the Service Manager console, select **Administration**.  
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.  
+3. In the **Connectors** pane, select the connector that you want to enable.  
+4. In the **Tasks** pane, under the connector name, select **Enable**.
 
 ## Enable email notifications in the production environment
 
@@ -175,21 +172,21 @@ Use the following procedure to enable incoming and outbound email notifications 
 
 Follow these steps to enable outbound email notifications:
 
-1.  In the Service Manager console, select **Administration**.  
-2.  In the **Administration** pane, expand **Notifications**, and select **Channels**.  
-3.  In the **Channels** pane, select **E\-Mail Notification Channel**.  
-4.  In the **Tasks** pane, under **E\-Mail Notification Channel**, select **Properties** to open the **Configure E\-Mail Notification Channel** dialog.  
-5.  Select **Enable e\-mail notifications**.  
+1. In the Service Manager console, select **Administration**.  
+2. In the **Administration** pane, expand **Notifications**, and select **Channels**.  
+3. In the **Channels** pane, select **E\-Mail Notification Channel**.  
+4. In the **Tasks** pane, under **E\-Mail Notification Channel**, select **Properties** to open the **Configure E\-Mail Notification Channel** dialog.  
+5. Select **Enable e\-mail notifications**.  
 
 # [Enable incoming email notifications](#tab/Incoming)
 
 Follow these steps to enable incoming email notifications:
 
-1.  In the Service Manager console, select **Administration**.  
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.  
-3.  In the **Settings** pane, double\-click **Incident Settings**.  
-4.  In the Incident **Settings** dialog, select **Incoming E\-mail**.  
-5.  Select **Turn on incoming e\-mails processing**, and select **OK**.
+1. In the Service Manager console, select **Administration**.  
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.  
+3. In the **Settings** pane, double\-click **Incident Settings**.  
+4. In the Incident **Settings** dialog, select **Incoming E\-mail**.  
+5. Select **Turn on incoming e\-mails processing**, and select **OK**.
 
 ---
 
