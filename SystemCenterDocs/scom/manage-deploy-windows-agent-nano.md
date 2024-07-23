@@ -5,8 +5,8 @@ description: This article describes how to install the Operations Manager agent 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/21/2022
-ms.custom: na, intro-installation
+ms.date: 07/22/2024
+ms.custom: intro-installation, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -29,7 +29,7 @@ You can download these management packs for Nano Server from the [Microsoft Down
 
 Monitoring a Nano Server installation is similar to monitoring any other installation of Windows Server; however, there are some key differences in how you install the agent on a Nano Server.
 
-You will need to follow the steps listed below to start monitoring a Nano Server.
+To start monitoring a Nano Server, follow these steps:
 
 1. [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md) or [Manually install the Operations Manager agent on a Nano server](#manually-install-the-operations-manager-agent-on-a-nano-server).
 
@@ -37,7 +37,7 @@ You will need to follow the steps listed below to start monitoring a Nano Server
 
 3. [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md) if you installed the agent manually on Nano Server.
 
-4. [Verify that you are monitoring your Nano Server](#verify-that-you-are-monitoring-your-nano-server).
+4. [Verify that you're monitoring your Nano Server](#verify-that-youre-monitoring-your-nano-server).
 
 There are several limitations in this release of the Nano Server agent. The following operations aren't supported in this release:
 
@@ -102,9 +102,9 @@ Use the following procedure to install the agent with a PowerShell script:
    Net Start HealthService
    ```
 
-### Troubleshoot agent installation
+### Troubleshooting agent installation
 
-If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server, you can follow the checklist below for possible solutions.
+If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server, follow the checklist below for possible solutions.
 
 |Error Message|Possible Reason|Resolution|
 |-------------|-------------|-------------|
@@ -130,7 +130,7 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 
 2. Approve the Nano Server for management.
 
-### Verify that you are monitoring your Nano Server
+### Verify that you're monitoring your Nano Server
 
 1. Open the **Agent Managed** list in the Device Management section of the Operations Manager Console Administration pane.
 
@@ -153,7 +153,7 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 
 ## Troubleshoot agent uninstall
 
-If you encounter any difficulties with removing the Operations Manager Agent on a Nano Server, you can follow the checklist below for possible solutions.
+If you encounter any difficulties with removing the Operations Manager Agent on a Nano Server, follow the checklist below for possible solutions.
 
 |Error Message|Possible Reason|Resolution|
 |-------------|-------------|-------------|
@@ -174,7 +174,7 @@ The Nano agent can be updated by one of the following methods:
 
     Updates are offered and installed automatically from Microsoft Update to an Operations Manager management server. With Operations Manager 2016, the management server updates will also include the updated files for Nano agent.  
 
-    After the management server is upgraded, the Nano agents will be placed in a pending management state, as described in the [process manual agent installations](~/scom/manage-deploy-windows-agent-manually.md) article. After approving updates, the agents will receive and apply the update.  Alternatively, you can trigger repair from the Operations console on any Nano agent. This will cause the update to be pushed and installed on the Nano agent from the management server.
+    After the management server is upgraded, the Nano agents will be placed in a pending management state, as described in the [process manual agent installations](~/scom/manage-deploy-windows-agent-manually.md) article. After approving updates, the agents will receive and apply the update.  Alternatively, you can trigger repair from the Operations console on any Nano agent. This causes the update to be pushed and installed on the Nano agent from the management server.
 
 2. Manually install update
 
