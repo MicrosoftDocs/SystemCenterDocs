@@ -5,8 +5,8 @@ description: This article describes how to enable Kerberos Authentication with U
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/01/2024
-ms.custom: na
+ms.date: 07/22/2024
+ms.custom: engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
@@ -14,8 +14,6 @@ ms.topic: article
 ---
 
 # Kerberos Authentication Support for Unix and Linux computers
-
-
 
 System Center Operations Manager version 2019 and later communicates with UNIX and Linux computers using the Secure Shell (SSH) protocol and Web Services for Management (WS-Management). Agent actions such as agent install, uninstall, and update occur over SSH and require a privileged account. Agent discovery and Monitoring utilize WS-Management and only require a low privileged account.
 
@@ -40,7 +38,6 @@ Operations Manager can now support Kerberos authentication wherever the WS-Manag
 UNIX and Linux Monitoring with Operations Manager is [supported on many operating systems](./plan-supported-crossplat-os.md).
 
 The following subset of those operating systems now supports WS-Management communication over Kerberos: (Only the most recently released version of each distribution will be supported.)
-
 
 ::: moniker range="sc-om-2019"
 
@@ -82,8 +79,6 @@ The following subset of those operating systems now supports WS-Management commu
 | Ubuntu Server | 16 |
 | Ubuntu Server | 18 |
 | Ubuntu Server | 20 |
-
-::: moniker-end
 
 - UNIX or Linux agent must be domain joined.
 

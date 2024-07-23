@@ -5,14 +5,13 @@ description: This article describes the console-level changes that are required 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/30/2022
+ms.date: 07/22/2024
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
-
 
 # Console-level changes for group Managed Service Accounts (gMSAs)
 

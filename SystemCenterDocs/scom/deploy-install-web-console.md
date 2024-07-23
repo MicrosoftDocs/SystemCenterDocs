@@ -5,16 +5,14 @@ description: This article describes how to install the Web console for System Ce
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
-ms.custom: engagement-fy23
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Install the Operations Manager Web console
-
-
 
 You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 

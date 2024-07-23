@@ -5,14 +5,13 @@ description: This article details the group managed service accounts feature, su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/19/2023
+ms.date: 07/22/2024
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
-
 
 # Support for group managed service accounts
 
