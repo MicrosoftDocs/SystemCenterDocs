@@ -80,6 +80,8 @@ The following subset of those operating systems now supports WS-Management commu
 | Ubuntu Server | 18 |
 | Ubuntu Server | 20 |
 
+::: moniker-end
+
 - UNIX or Linux agent must be domain joined.
 
 - Run as accounts must be configured to use domain-based accounts that are associated with the appropriate [Unix/Linux Run As Profile](./plan-security-crossplat-credentials.md).
