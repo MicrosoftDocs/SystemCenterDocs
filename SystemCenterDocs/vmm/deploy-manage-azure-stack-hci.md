@@ -301,7 +301,7 @@ After you add the ESXi clusters, all the virtual machines running on the ESXi cl
 1.	Go to **VMs and Services** to view the virtual machines. 
    You can also manage the primary lifecycle operations of these virtual machines from VMM.  
     :::image type="ESXi hosts" source="media/deploy-manage-azure-stack-hci/esxi-hosts.png" alt-text="Screenshot showing ESXi hosts.":::
-2.	Right-click the VM and select **Power Off** (online migrations are not supported) that need to be migrated and uninstall VMware tools from the guest operating system.
+2.	Right-click the VM and select **Power Off** (online migrations aren't supported) that need to be migrated and uninstall VMware tools from the guest operating system.
 3.	Select **Home** > **Create Virtual Machines** > **Convert Virtual Machine**. 
 4.	In the **Convert Virtual Machine Wizard**,
     1. Under **Select Source**, select the VM running in ESXi server and select **Next**.
