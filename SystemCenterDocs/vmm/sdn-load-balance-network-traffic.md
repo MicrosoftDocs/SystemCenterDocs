@@ -5,7 +5,7 @@ description: Learn how to configure Software load balancer (SLB) for the interna
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/17/2024
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
