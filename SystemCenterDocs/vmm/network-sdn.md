@@ -5,7 +5,7 @@ description: This article describes how to manage SDN networking elements in the
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/09/2023
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -43,13 +43,13 @@ Gateway | Provides gateway services to one or more virtualNetworks. | Overwritte
 GatewayPool | GatewayPools aggregate a set of gateways resources into a single pool.  | Overwritten by VMM if you enable out-of-box
 Host | | Overwritten by VMM if you enable out-of-box
 HostProperties | | Overwritten by VMM if you enable out-of-box
-IpConfigurations | IP addresses of the load balancer | Overwritten by VMM if you enable out-of-box
-IpPool | Create an IP address pool on the network controller | Overwritten by VMM if you enable out-of-box
+IpConfigurations | IP addresses of the load balancer. | Overwritten by VMM if you enable out-of-box
+IpPool | Create an IP address pool on the network controller. | Overwritten by VMM if you enable out-of-box
 LoadBalancerManager | Configures the load balancing service of the Network Controller. | Overwritten by VMM if you enable out-of-box
 LoadBalancerMux |  Represents a MUX VM deployed in the network controller fabric. | Overwritten by VMM if you enable out-of-box
 LogicalSubnets | A subnet/VLAN pair. | Overwritten by VMM if you enable out-of-box
-MACPool | Creates a MAC address pool on the network controller | Overwritten by VMM if you enable out-of-box
-NatRules | Configures the load balancer to apply NAT to traffic | Overwritten by VMM if you enable out-of-box
+MACPool | Creates a MAC address pool on the network controller. | Overwritten by VMM if you enable out-of-box
+NatRules | Configures the load balancer to apply NAT to traffic. | Overwritten by VMM if you enable out-of-box
 NetworkInterface |Specifies the configuration of either a host virtual interface (host vNIC) or a virtual server NIC (VMNIC).  | Overwritten by VMM if you enable out-of-box
 PortSettings | | Overwritten by VMM if you enable out-of-box
 PublicIPAddress | Specifies an IP address, which is publicly available. It's used by virtualGateways and loadBalancers to indicate the IP address that can be used to communicate with the virtual network from outside. | Overwritten by VMM if you enable out-of-box
@@ -60,7 +60,7 @@ VirtualGatewayBgpPeer | Configures BGP peers of the virtualGateways resource. | 
 VirtualNetwork | Used to create a virtual network using HNV for tenant overlays.  | Overwritten by VMM if you enable out-of-box
 VirtualServer | Corresponds to a virtual machine. Must be created for VMs that correspond to gateway and MUX resources. | Overwritten by VMM if you enable out-of-box
 VirtualSubnet | Used to create virtual subnets (VSIDs) under a tenant's virtual network (RDID). | Overwritten by VMM if you enable out-of-box
-VirtualSwitchManager | Configures the virtual switch properties on every server managed by the Network Controller | Overwritten by VMM if you enable out-of-box
+VirtualSwitchManager | Configures the virtual switch properties on every server managed by the Network Controller. | Overwritten by VMM if you enable out-of-box
 VM | Corresponds to a virtual machine. | Overwritten by VMM if you enable out-of-box
 
 

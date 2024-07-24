@@ -5,7 +5,7 @@ description: This article describes about how to route the network traffic betwe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -46,7 +46,7 @@ Ensure the following:
 
 ## Configure Site-to-Site VPN connections using VMM
 
-A site-to-site VPN connection allows you to securely connect two networks at different physical locations by using the Internet.
+A Site-to-Site VPN connection allows you to securely connect two networks at different physical locations by using the Internet.
 
 For Cloud Service Providers (CSPs) that host many tenants in their datacenter, SDN RAS gateway provides a multi-tenant gateway solution that allows your tenants to access and manage their resources over Site-to-Site VPN connections from remote sites, which in turn allows network traffic between virtual resources in your datacenter and their physical network.
 
@@ -66,34 +66,34 @@ For specifying VIP range, don’t use the shortened form of the IPv6 address; us
 
 ## Configure IPSec connection
 **Use the following procedure**:
-1.  Select the VM Network that you want to configure a Site-to-Site IPSec connection, and select **Connectivity**.
+1.  Select the VM Network that you want to configure a Site-to-Site IPSec connection and select **Connectivity**.
 2.  Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
 3.  Select the network controller service for the gateway device.
 4.  Select the **VPN Connections** > **Add** > **Add IPSec Tunnel**.
-5.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. You don't need to pre-configure this subnet in your datacenter.
+5.  Enter a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. You don't need to pre-configure this subnet in your datacenter.
 ![Screenshot of the site to site VPN.](./media/sdn-route-network-traffic/sdn-route-network-traffic1.png)
-6.  Type a  name for the connection, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
-7.  In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run as account, create a user account with a user name, and the IPSec key as the password for the account.
-8.  In **Routes**, type all the remote subnets that you want to connect to. If you've selected **Enable Border Gateway Protocol (BGP)** in the **Connectivity** page, routes aren't required.
+6.  Enter a  name for the connection, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
+7.  In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run as account, create a user account with a username, and the IPSec key as the password for the account.
+8.  In **Routes**, enter all the remote subnets that you want to connect to. If you've selected **Enable Border Gateway Protocol (BGP)** in the **Connectivity** page, routes aren't required.
 9.  On the **Advanced** tab, accept the default settings.
-10. If you've selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** wizard page as shown below:
+10. If you've selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** wizard page as shown below.
 ![Screenshot of enable b g p.](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM network.
 
 ## Configure GRE tunneling
 
 GRE tunnels enable connectivity between tenant virtual networks and external networks.
-Since the GRE protocol is lightweight and support for GRE is available on most of the network devices, it becomes an ideal choice for tunneling where encryption of data isn't required. GRE support in Sit-to-Site (S2S) tunnels facilitates traffic forwarding between tenant virtual networks and tenant external networks.
+Since the GRE protocol is lightweight and support for GRE is available on most of the network devices, it becomes an ideal choice for tunneling where encryption of data isn't required. GRE support in Site-to-Site (S2S) tunnels facilitates traffic forwarding between tenant virtual networks and tenant external networks.
 
 **Use the following procedure**:
 1.  Select the VM network where you want to configure a S2S GRE connection, and select **Connectivity**.
 2.  Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
 3.  Select the Network Controller Service for the Gateway Device.
 4.  Select **VPN Connections** > **Add** > **Add GRE Tunnel**.
-5.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM network. This subnet doesn't need to be pre-configured in your datacenter.
+5.  Enter a subnet as shown in the following diagram. This subnet is used to route packets out of the VM network. This subnet doesn't need to be preconfigured in your datacenter.
 ![Screenshot of GRE tunneling.](./media/sdn-route-network-traffic/sdn-route-network-traffic4.png)
-6.  Type a connection name, and specify the IP address of the remote endpoint.
-7.  Type the **GRE key**.
+6.  Enter a connection name, and specify the IP address of the remote endpoint.
+7.  Enter the **GRE key**.
 8.  Optionally, you can complete the other fields on this screen; these values aren't needed to set up a connection.
 9.  In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP, and ASN fields on the **Border Gateway Protocol** tab.
 10. You can use the defaults for the remaining settings.
@@ -140,7 +140,7 @@ The following table provides examples of dynamic and static L3 connections.
   **LocalIPAddresses** |  IP addresses to be configured on the SDN gateway L3 network interface. This IP address must belong to the next hop logical network you created. You must also provide the subnet mask. **Example**: 10.127.134.55/25
   **PeerIPAddresses** |  IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network you created in the prerequisites. This IP will serve as the next hop once traffic destined to the physical network from the tenant VM network reaches the SDN gateway. **Example**: 10.127.134.65
   **GatewaySubnet** |  Subnet to be used for routing between HNV gateway and tenant virtual network. You can use any subnet, ensure that it doesn't overlap with the next hop logical network.  **Example**:192.168.2.0/24
-  **RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway. These routes are for  the physical network subnets, which should be reachable from the tenant VM network over the L3 connection.
+  **RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway. These routes are for  the physical network subnets, which must be reachable from the tenant VM network over the L3 connection.
   **EnableBGP** |  Option to enable BGP. **Default**: false.
   **TenantASNRoutingSubnets** | ASN number of the tenant gateway, only if BGP is enabled.
 
@@ -348,11 +348,11 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     | --- | --- |
     | Name |  User-defined name for the L3 forwarding network connection.
     | VM Network (NextHop) |  User-defined name for the next hop VM network, which was created as a prerequisite. This represents the physical network that wants to communicate with the tenant VM network.  When you select *Browse*, only the *One Connected VM Networks* managed by Network service will be available for selection.
-    |Peer IP Address | IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network that you created as the prerequisite. This IP will serve as the next hop, once the traffic destined to the physical network from the tenant VM network reaches the SDN gateway. This must be an IPv4 address. There can be multiple peer IP addresses, must be separated by comma.  
-    | Local IP Addresses |  IP addresses to be configured on the SDN gateway L3 network interface. These  IP addresses must belong to the next hop logical network that you created as prerequisite. You must also provide the subnet mask. Example: 10.127.134.55/25. This must be an IPv4 address and should be in CIDR notation format. Peer IP address and Local IP addresses should be from the same Pool. These IP addresses should belong to the subnet defined in Logical Network Definition of VM Network.
+    |Peer IP Address | IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network that you created as the prerequisite. This IP will serve as the next hop, once the traffic destined to the physical network from the tenant VM network reaches the SDN gateway. This must be an IPv4 address. There can be multiple peer IP addresses, and they must be separated by commas.  
+    | Local IP Addresses |  IP addresses to be configured on the SDN gateway L3 network interface. These  IP addresses must belong to the next hop logical network that you created as prerequisite. You must also provide the subnet mask. Example: 10.127.134.55/25. This must be an IPv4 address and must be in CIDR notation format. Peer IP address and Local IP addresses must be from the same Pool. These IP addresses must belong to the subnet defined in Logical Network Definition of VM Network.
 
 
-- If you're using static routes, type all the remote subnets that you want to connect to, in **Routes**.
+- If you're using static routes, enter all the remote subnets that you want to connect to, in **Routes**.
 
     ![Screenshot of remote subnets.](./media/sdn-route-network-traffic/remote-subnets.png)
 
