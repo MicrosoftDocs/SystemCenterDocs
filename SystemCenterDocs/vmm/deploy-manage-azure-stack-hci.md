@@ -5,7 +5,7 @@ description: This article describes how to set up an Azure Stack HCI cluster in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
+ms.date: 07/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23
 
 # Deploy and manage Azure Stack HCI clusters in VMM
 
-This article provides information about how to set up an Azure Stack HCI cluster in System Center - Virtual Machine Manager (VMM). You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
+This article provides information about how to set up an Azure Stack HCI cluster in System Center Virtual Machine Manager (VMM). You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
 
 ::: moniker range="sc-vmm-2022"
 
@@ -25,7 +25,7 @@ This article provides information about how to set up an Azure Stack HCI cluster
 ::: moniker-end
 
 >[!IMPORTANT]
->Azure Stack HCI clusters that are managed by Virtual Machine Manager shouldn’t join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
+>Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
 
 ## Before you start
 
@@ -35,7 +35,7 @@ Ensure that you're running VMM 2019 UR3 or later.
 
 - Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to create and manage HCI clusters.
 
-- Ability to provision & deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
+- Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
 
 - [Set up VLAN based network on Azure Stack HCI clusters](manage-networks.md).
 
@@ -73,7 +73,7 @@ For detailed information on the supported parameter, see [Register-SCAzStackHCI]
 
 - Management of Azure Stack HCI [stretched clusters](/azure-stack/hci/concepts/stretched-clusters) is currently not supported in VMM.
 
-- Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. The Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Stack HCI clusters shouldn't be used for other purposes like WSUS servers, WDS servers, or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci), and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
+- Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. The Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Stack HCI clusters must not be used for other purposes like WSUS servers, WDS servers, or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci), and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
 
 - Live migration between any version of Windows Server and Azure Stack HCI clusters isn't supported. 
 
@@ -112,7 +112,7 @@ If you need to add the Azure Stack HCI hosts to the VMM fabric, [follow these st
 > [!NOTE]
 > - When you set up the cluster, select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the **Create Hyper-V Cluster** wizard.
 > - In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
-> - All the selected hosts should have Azure Stack HCI installed.
+> - All the selected hosts must have Azure Stack HCI installed.
 > - Since S2D is enabled, the cluster must be validated.
 
 ### Provision a cluster from bare metal machines
@@ -124,7 +124,7 @@ If you need to add the Azure Stack HCI hosts to the VMM fabric, [follow these st
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. 
 
 > [!NOTE]
-> - The generalized VHD or VHDX in the VMM library should be running Azure Stack HCI with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk should be set.
+> - The generalized VHD or VHDX in the VMM library must be running Azure Stack HCI with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk must be set.
 > - For bare-metal deployment, you need to add a pre-boot execution environment (PXE) server to the VMM fabric. The PXE server is provided through Windows Deployment Services. VMM uses its own WinPE image, and you need to ensure that it’s the latest. To do this, select **Fabric** > **Infrastructure** > **Update WinPE image**, and ensure that the job finishes.
 
 2.	Follow the instructions for [provisioning a cluster from bare-metal computers](hyper-v-bare-metal.md).
@@ -183,7 +183,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 4. Select the network adapters used for storage traffic. RDMA is enabled on these network adapters.
 
    > [!NOTE]
-   > In a converged NIC scenario, select the storage vNICs. The underlying pNICs should be RDMA capable for vNICs to be displayed and available for selection.
+   > In a converged NIC scenario, select the storage vNICs. The underlying pNICs must be RDMA capable for vNICs to be displayed and available for selection.
 
     ![Screenshot of Enable RMDS.](./media/s2d/enable-rmds-storage-network.png)
 
@@ -233,13 +233,13 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would create any other VM.
 
 > [!Important]
-> If the Azure Stack HCI cluster isn't registered with Azure or not connected to Azure for more than 30 days post registration, high availability virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 & 5 for cluster registration.
+> If the Azure Stack HCI cluster isn't registered with Azure or not connected to Azure for more than 30 days post registration, high availability virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 and 5 for cluster registration.
 
 ::: moniker range="sc-vmm-2022"
 
 ## Step 8: Migrate VMs from Windows Server to Azure Stack HCI cluster
 
-Use Network migration functionality in VMM to migrate workloads from Hyper-V (Windows Server 2019 & later) to Azure Stack HCI. 
+Use Network migration functionality in VMM to migrate workloads from Hyper-V (Windows Server 2019 and later) to Azure Stack HCI.
 
 >[!Note]
 >Live migration between Windows Server and Azure Stack HCI isn’t supported. Network migration from Azure Stack HCI to Windows Server isn’t supported. 

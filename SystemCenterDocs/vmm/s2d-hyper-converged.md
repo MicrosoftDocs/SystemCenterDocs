@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/11/2023
+ms.date: 07/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23
 
 
 
-Read this article to set up a hyper-converged cluster running Storage Spaces Direct (S2D) in System Center - Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
+Read this article to set up a hyper-converged cluster running Storage Spaces Direct (S2D) in System Center Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
 
 You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts or by provisioning from bare-metal servers.
 
@@ -47,7 +47,7 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 ## Before you start
 
 - Ensure that you're running VMM 2016 or later.
-- Hyper-V hosts in a cluster should be running Windows Server 2016 or later with the Hyper-V Role installed and be configured to host VMs.
+- Hyper-V hosts in a cluster must be running Windows Server 2016 or later with the Hyper-V Role installed and be configured to host VMs.
 ::: moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
   > [!NOTE]
   > VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
@@ -93,7 +93,7 @@ Follow these steps to provision a cluster from bare metal machines:
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. 
 
 > [!NOTE]
-> - The generalized VHD or VHDX in the VMM library should be running the applicable Windows Server version with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk should be set.
+> - The generalized VHD or VHDX in the VMM library must be running the applicable Windows Server version with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk must be set.
 > - For bare-metal deployment, you need to add a pre-boot execution environment (PXE) server to the VMM fabric. The PXE server is provided through Windows Deployment Services. VMM uses its own WinPE image, and you need to ensure that it's the latest. To do this, select **Fabric** > **Infrastructure** > **Update WinPE image**, and ensure that the job finishes.
 
 2.	Follow the instructions for [provisioning a cluster from bare-metal computers](hyper-v-bare-metal.md).
@@ -143,7 +143,7 @@ Ensure the following:
     >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
     >- You can configure the DCB settings during cluster creation workflow or on an existing cluster.
     >- You can't configure DCB settings during SOFS cluster creation; you can only configure on an existing SOFS cluster. All the nodes of the SOFS cluster must be managed by VMM.
-    > - Configuration of DCB settings during cluster creation is supported only when the cluster is created with an existing windows server. It isn't supported with bare metal/operating system deployment workflow.
+    > - Configuration of DCB settings during cluster creation is supported only when the cluster is created with an existing Windows server. It isn't supported with bare metal/operating system deployment workflow.
 
 **Use the following steps to configure DCB settings**:
 
@@ -171,7 +171,7 @@ Ensure the following:
 4. Select the network adapters used for storage traffic. RDMA is enabled on these network adapters.
 
     > [!NOTE]
-    > In a converged NIC scenario, select the storage vNICs. The underlying pNICs should be RDMA capable for vNICs to be displayed and available for selection.
+    > In a converged NIC scenario, select the storage vNICs. The underlying pNICs must be RDMA capable for vNICs to be displayed and available for selection.
 
     ![Screenshot of Enable RMDS.](./media/s2d/enable-rmds-storage-network.png)
 
@@ -181,7 +181,7 @@ Ensure the following:
 
     > [!NOTE]
     > - DCB settings can be configured on the existing Hyper-V S2D clusters by visiting the **Cluster Properties** page and navigating to the **DCB configuration** page.
-    > - Any out-of-band changes to DCB settings on any of the nodes will cause the S2D cluster to be non-compliant in VMM. A Remediate option will be provided in the **DCB configuration** page of cluster properties, which you can use to enforce the DCB settings configured in VMM on the cluster nodes.
+    > - Any out-of-band changes to DCB settings on any of the nodes will cause the S2D cluster to be noncompliant in VMM. A Remediate option will be provided in the **DCB configuration** page of cluster properties, which you can use to enforce the DCB settings configured in VMM on the cluster nodes.
 
 
 ## Step 4: Manage the pool and create CSVs
@@ -200,7 +200,7 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 
     ![Screenshot of Configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
 
-5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
+5. In **Summary**, verify the settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
 If you use PowerShell, the pool and the storage tier are automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 

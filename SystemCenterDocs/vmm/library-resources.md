@@ -5,7 +5,7 @@ description: This article describes management tasks for the VMM library
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/27/2023
+ms.date: 07/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 
 
-Read this article to learn how to manage the System Center - Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
+Read this article to learn how to manage the System Center Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
 
 ## Refresh the library
 
@@ -90,7 +90,7 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 
 ## Manage replicated library shares
 
-VMM supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR to replicate shares and manage the shares through VMM.
+VMM supports the management of library servers, which are replicated. You can use any replication technologies, such as DFSR, to replicate shares and manage the shares through VMM.
 
 For effective management of replicated shares using VMM, disable the usage of *alternate data stream* for both the source and destination library shares. You can do this while adding new library shares or by editing properties of the existing library shares. *Alternate data stream* is enabled by default. Disable this option only when using replication across library shares.
 

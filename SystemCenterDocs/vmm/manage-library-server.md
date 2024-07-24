@@ -5,7 +5,7 @@ description: This article provides guidance for setting up the library in the VM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/08/2022
+ms.date: 07/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency2
 
 
 
-Read this article to understand the System Center - Virtual Machine Manager (VMM) library and how to interact with it.
+Read this article to understand the System Center Virtual Machine Manager (VMM) library and how to interact with it.
 
 
 The VMM library is a file share that includes a catalog of resources that are used to deploy virtual machines and services in the VMM fabric. The library stores:
@@ -39,7 +39,7 @@ Resource type | What can I add?
 **Self-service user content** | Self-service users can upload their own resources that can be used when they author templates. Users can share resources with other self-service users.
 **Stored VMs and services** | Users can store their VMs that aren't in use in the stored node of the cloud library.
 **Update catalog and baselines** | If you manage updates through VMM, then WSUS update baselines are stored in the library.
-**Custom resources** | Add custom resources so that resources that would otherwise not be indexed show up in the library. To do this, create a folder with a .CR extension and save it to a library share. Folder contents are available to all users who can access the share. Examples of custom resources include pre and post-execution scripts and custom installation packages.
+**Custom resources** | Add custom resources so that resources that would otherwise not be indexed show up in the library. To do this, create a folder with a .CR extension and save it to a library share. Folder contents are available to all users who can access the share. Examples of custom resources include pre- and post-execution scripts and custom installation packages.
 **Manage replicated library shares** | You can manage library servers, which are replicated. You can use any replication technologies, such as DFSR, to manage the replicated shares through VMM.
 
 ::: moniker range=">=sc-vmm-2019"
@@ -47,4 +47,5 @@ Learn more about [managing replicated library shares](library-resources.md#manag
 ::: moniker-end
 
 ## Next steps
-[Learn about](library-files.md) adding file-based resources to the library.
+
+Learn about [adding file-based resources to the library](library-files.md).

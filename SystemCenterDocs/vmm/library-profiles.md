@@ -5,7 +5,7 @@ description: This article provides guidance for adding profiles to the library i
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/12/2022
+ms.date: 07/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: UpdateFrequency2
 
 
 
-Use this article to learn about System Center - Virtual Machine Manager (VMM) profiles and how to add them to the VMM library.
+Use this article to learn about System Center Virtual Machine Manager (VMM) profiles and how to add them to the VMM library.
 
 A VMM profile contains settings that are used when you create a new virtual machine or virtual machine template. Profiles make deployment easier by helping you to quickly create VMs with consistent settings. Profiles can be used to restrict the settings that are available to self-service users who create new VMs.
 
@@ -27,26 +27,26 @@ A VMM profile contains settings that are used when you create a new virtual mach
 **Application profile** | Provides instructions for installing an application. VMM supports multiple mechanisms for application deployment. Two of these mechanisms are for specific application packaging technologies: data\-tier applications \(DAC\) and WebDeploy (MSDeploy). A third mechanism enables you to install any application by running a script. You can use scripts that are created for Windows Installer \(MSI\), Setup.exe installation programs, Windows PowerShell Desired State Configuration (DSC), Puppet software, and Chef software. | No | Yes
 **SQL Server profile** | Provides instructions for customizing an instance of Microsoft SQL Server for a SQL Server DAC when a virtual machine is deployed as part of a service.| No | Yes
 **Capability profile** | Defines limits and capabilities for a specific set of resources; for example, settings for network adapters, processor ranges, and memory. Capability profiles are used for hardware profiles or in cloud deployment. For example, you could configure a private cloud and assign it a Hyper-V capability profile that requires all resources to the highly available. In this example, you need to set up library resources, such as hardware profiles, to align with the capability. To learn more, review [this article](https://social.technet.microsoft.com/wiki/contents/articles/4149.capability-profiles-in-scvmm-2012.aspx). | Yes | Yes
-**Physical computer profile** | Defines settings used to provision servers | No | No
+**Physical computer profile** | Defines settings used to provision servers. | No | No
 
 ## Create a hardware profile
 
 1. In the VMM console, select > **Library** > **Create** > **Hardware Profiles**.
-2. In **New Hardware Profile** > **General**, type in a profile name. You can create a hardware profile with the default settings but you probably want to tailor them. In **Hardware Profile**, you can specify the hardware settings.
-3. In **Compatibility**, you can specify that a capability profile should be assigned to the hardware profile. Remember, capability profiles help limit available options when you're creating a new VM.
+2. In **New Hardware Profile** > **General**, enter a profile name. You can create a hardware profile with the default settings but you probably want to tailor them. In **Hardware Profile**, you can specify the hardware settings.
+3. In **Compatibility**, you can specify that a capability profile must be assigned to the hardware profile. Remember, capability profiles help limit available options when you're creating a new VM.
 4. In **General**, you can define how many virtual processors to assign to the VM. You can specify memory, startup, and dynamic memory range. Startup specifies the memory that is assigned to the VM during startup. After startup, this memory can be reclaimed back from the VM in accordance with the minimum memory settings.
 5. In **Bus Configuration**, you add and remove hardware that supports storage device.
 6. In **Network Adapters**, you specify the number of network adapters in the VM, whether they'll have a static IP address or an address allocated from a pool, the MAC address, and port profile. The port profile can be used to control how bandwidth is used on the adapters.
-7. In **Advanced**, you can specify high availability and performance settings. In **Availability**, specify whether the VM should be highly available in deployed in a cluster. In **BIOS**, select the order of virtual device and when **Num Lock** is enabled for password entry. In **CPU Priority**, specify relative priority of CPU usage for the VM. If you set to High, the VM has more access to resources than those set to Low. In **Virtual NUMA**, specify when the VM can use [virtual NUMA](vm-settings.md#configure-virtual-numa). In **Memory Weight**, specify the relative memory priority for the VM.
-8. After you've finished creating the hardware profile, you can right-click it to configure additional properties. In **Dependencies**, you see any dependencies for the profile. For example, if a library-based file is required, we'd see it here. In **Access**, you can see the roles or users who have permissions to use this profile. In **Validation Errors**, you can check for errors.
+7. In **Advanced**, you can specify high availability and performance settings. In **Availability**, specify whether the VM must be highly available in deployed in a cluster. In **BIOS**, select the order of virtual device and when **Num Lock** is enabled for password entry. In **CPU Priority**, specify relative priority of CPU usage for the VM. If you set to High, the VM has more access to resources than those set to Low. In **Virtual NUMA**, specify when the VM can use [virtual NUMA](vm-settings.md#configure-virtual-numa). In **Memory Weight**, specify the relative memory priority for the VM.
+8. After you've finished creating the hardware profile, you can right-click it to configure additional properties. In **Dependencies**, you see any dependencies for the profile. For example, if a library-based file is required, you will see it here. In **Access**, you can see the roles or users who have permissions to use this profile. In **Validation Errors**, you can check for errors.
 9. After you've created the hardware profile, you can use it when you configure a virtual machine template or create a virtual machine. You can select a complete hardware profile, or select it and then tweak settings for the individual VM or template.
 
 ## Create a guest OS profile
 
 1. In the VMM console, select > **Library** > **Create** > **Guest OS Profiles**.
-2. In **New Guest OS Profile** > **General**, type in a profile name. In **Guest OS Profile**, specify the OS settings.
-3. In **General Settings** > **Operating System**, specify the VM operating system. In **Identity Information**, specify the actual machine name of the VM. You probably want a unique name so that you can specify a wildcard to generate a new name for each VM. You can also use characters ### to set an increasing numeric value. For example, if you type in ContosoVM-##, it generates machines named ContosoVM-01, ContosoVM-02, and so on. In **Admin Password**, specify local admin permissions require a password. You can use the predefined Run As account. In **Product Key**, type in the key for the OS installation. If you add an answer file under **Scripts**, you can select the **Product key provided by answer file** settings. In **Time Zone**, specify the time location for the VM.
-4. In **Roles and Features**, specify what should be installed on the VM. 
+2. In **New Guest OS Profile** > **General**, enter a profile name. In **Guest OS Profile**, specify the OS settings.
+3. In **General Settings** > **Operating System**, specify the VM operating system. In **Identity Information**, specify the actual machine name of the VM. You probably want a unique name so that you can specify a wildcard to generate a new name for each VM. You can also use characters ### to set an increasing numeric value. For example, if you enter ContosoVM-##, it generates machines named ContosoVM-01, ContosoVM-02, and so on. In **Admin Password**, specify local admin permissions require a password. You can use the predefined Run As account. In **Product Key**, enter the key for the OS installation. If you add an answer file under **Scripts**, you can select the **Product key provided by answer file** settings. In **Time Zone**, specify the time location for the VM.
+4. In **Roles and Features**, specify what needs to be installed on the VM. 
 
 >[!NOTE]
 >This setting is only used for the profile used in a VM template, which is then used in a service template.
@@ -59,11 +59,11 @@ A VMM profile contains settings that are used when you create a new virtual mach
 ## Create an application profile
 
 1. In the VMM console, select > **Library** > **Create** > **Application Profiles**.
-2. In **New Application Profile** > **General**, type in a profile name. In **Application Configuration**, you can specify the app settings.
+2. In **New Application Profile** > **General**, enter a profile name. In **Application Configuration**, you can specify the app settings.
 3. In **Application Configuration** > **OS Compatibility**, specify the guest operating systems that are compatible with the application profile.
 4. Select **Add** and select the type of application or script that you want to apply to the profile. To deploy any app type, select **General**. To deploy SQL Server DAC packages or script, select **SQL Server Application Host** so that you can add packages and scripts to the profile. To deploy Web applications, select **Web Application Host** so that you can add Web Deploy packages and scripts to the profile.
 5. If you selected **General**, you can add more than one more of the application or script to the profile.
-6. For applications, you can specify settings such as certificate, ports, and folders. You can also specify that the deployment of the app should be managed by a script. You can specify the script name and specify when it should run.
+6. For applications, you can specify settings such as certificate, ports, and folders. You can also specify that the deployment of the app must be managed by a script. You can specify the script name and specify when it must run.
 7. Select **Scripts** to add an unlimited number of scripts and properties such as parameters and security settings. For example, you can configure a script to create a guest cluster out of multiple VMs deployed by the VMM. For example, you can specify that one script must run at Creation: First VM (to form the cluster on the first virtual machine) and a different script to run at Creation: VMs After First (to add additional virtual machines to the cluster).
 8. After you're done, verify that the profile was created in **Library** > **Profiles** > **Application Profiles**.
 9. You use application profiles in service templates. For example, you could create a number of VM templates with hardware and OS profiles. Then you create a service template that includes those VM templates and the application profiles to create a set of VMs that are configured and deployed together as a single entity.
@@ -71,10 +71,10 @@ A VMM profile contains settings that are used when you create a new virtual mach
 ## Create a SQL Server profile
 
 1. In the VMM console, select > **Library** > **Create** > **SQL Server Profiles**.
-2. In **New SQL Server Profile** > **General**, type in a profile name. In **SQL Server Configuration**, you can specify the app settings.
+2. In **New SQL Server Profile** > **General**, enter a profile name. In **SQL Server Configuration**, you can specify the app settings.
 3. In **Application Configuration** > **Add** > **SQL Server Deployment**. A SQL Server deployment corresponds to a single instance of SQL Server. If you want multiple instances of SQL Server on the same VM, you need to create multiple deployments.
 4. In **SQL Server Deployment**, select **Deployment 1** and specify the deployment name and the SQL Server instance details. The RunAs account is optional; the VMM service account is used if you don't specify it.
-5. In **Configuration**, type in the path to the SQL Server installation file (setup.exe) and the SQL Server admins.
+5. In **Configuration**, enter the path to the SQL Server installation file (setup.exe) and the SQL Server admins.
 6. In **Service Account**, specify which accounts to use.
 
 ## Create a capability profile
@@ -82,24 +82,24 @@ A VMM profile contains settings that are used when you create a new virtual mach
 The exact settings for a capability profile depend on the profile in use. As an example, let's configure the Hyper-V capability profile to specify high availability for resources used in a private VMM cloud.
 
 1. In the VMM console, select > **Library** > **Create** > **Capability Profiles**.
-2. In **Create Capability Profile** > **General**, type in a profile name. In **Capabilities**, specify the profile settings.
+2. In **Create Capability Profile** > **General**, enter a profile name. In **Capabilities**, specify the profile settings.
 3. In **Capabilities** > **Fabric Compatibility**, select **Hyper-V virtualization host**. You could also elect to set up a custom capability profile.
 4. Set up the hardware configuration settings for the profile. The settings are similar to those used in a [hardware profile](#create-a-hardware-profile). However, in capability profiles, these settings represent limits rather than exact values.
 5. In **Advanced** > **Availability**, select **Highly available VM mode** > **Use default** > **Required**.
 6. Complete the wizard. After you've created the profile, you can select and enable it in **VMs and Services** > cloud name > **Properties** > **Capability Profiles**.
-7. Remember that all of the other profiles and templates used for VMs in the cloud need to match the capability profile requirements and the high availability setting.
+7. Remember that all the other profiles and templates used for VMs in the cloud need to match the capability profile requirements and the high availability setting.
 
 ## Create a physical computer profile
 
 VMM can be used to provision physical computers into Hyper-V hosts or into a scale-out file server (SOFS). When you're provisioning physical computers, you can use a physical computer profile to specify settings for the machine. Create a physical computer profile as follows:
 
 1. In the VMM console, select > **Library** > **Create** > **Physical Computer Profile**.
-2. In **New Physical Computer Profile** > **Profile Definition**, type in a profile name and description.
+2. In **New Physical Computer Profile** > **Profile Definition**, enter a profile name and description.
 ::: moniker range="sc-vmm-2016"
-3. In **OS Image**, select a virtual hard disk from the library share. It should be running Windows Server 2012 R2 or later. To create the hard disk, you can create a VM, install the guest operating system, and then use Sysprep with **/generalize** and **/oobe**. If the disk is dynamic, VMM converts it to a fixed disk during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
+3. In **OS Image**, select a virtual hard disk from the library share. It must be running Windows Server 2012 R2 or later. To create the hard disk, you can create a VM, install the guest operating system, and then use Sysprep with **/generalize** and **/oobe**. If the disk is dynamic, VMM converts it to a fixed disk during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
 ::: moniker-end
 ::: moniker range=">sc-vmm-2016"
-3. In **OS Image**, select a virtual hard disk from the library share. It should be running Windows Server 2016 or later. To create the hard disk, you can create a VM, install the guest operating system, and then use Sysprep with **/generalize** and **/oobe**. If the disk is dynamic, VMM converts it to a fixed disk during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
+3. In **OS Image**, select a virtual hard disk from the library share. It must be running Windows Server 2016 or later. To create the hard disk, you can create a VM, install the guest operating system, and then use Sysprep with **/generalize** and **/oobe**. If the disk is dynamic, VMM converts it to a fixed disk during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
 ::: moniker-end
 4. In **Hardware Configuration**, set up network adapters, disks and partitions, and any drivers.
 5. In **Network Adapters**, select **Connectivity Properties** to set up consistent device naming (CDN) for the adapter. Specify whether to allocate an IP address with DHCP or from a static pool. If it's a physical network adapter connected to a logical switch, this option isn't available.
