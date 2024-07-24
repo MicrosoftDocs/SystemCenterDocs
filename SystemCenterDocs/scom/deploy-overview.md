@@ -1,28 +1,26 @@
 ---
 ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
-title: Deploying System Center Operations Manager
+title: Deploy System Center Operations Manager
 description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/22/2022
-ms.custom: na, intro-deployment
+ms.date: 07/22/2024
+ms.custom: intro-deployment, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Deploying System Center Operations Manager
-
-
+# Deploy System Center Operations Manager
 
 All System Center Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs require.
 
 This section describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
 
--   [Single Server Deployment of Operations Manager](deploy-single-server.md)
+- [Single Server Deployment of Operations Manager](deploy-single-server.md)
 
--   [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md)
+- [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md)
 
 For information about connecting management groups, see [Connecting Management Groups in Operations Manager](manage-connecting-mgmtgroups.md).
 
@@ -32,11 +30,11 @@ For information about connecting management groups, see [Connecting Management G
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center 2019 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2019)
+- [Release Notes for System Center 2019 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2019)
 
--   [Release Notes for System Center 2016 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2016)
+- [Release Notes for System Center 2016 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2016)
 
--   [System Requirements for System Center Operations Manager](./system-requirements.md)
+- [System Requirements for System Center Operations Manager](./system-requirements.md)
 
 ::: moniker-end
 
@@ -44,10 +42,9 @@ Before you begin your deployment, you should read the release notes, and ensure 
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [System Requirements for System Center Operations Manager](./system-requirements.md)
+- [System Requirements for System Center Operations Manager](./system-requirements.md)
 
 ::: moniker-end
-
 
 ### Operations Manager Administrators role assignment
 
@@ -65,26 +62,25 @@ If you install Reporting, you're prompted for one additional account, the **Data
 > [!NOTE]
 > If you install multiple management servers, you're prompted for a **management server action account** and a **System Center Configuration service and System Center Data Access service account** each time you add a management server. You must provide the same accounts for each installation.
 
-
 ### SQL Server requirements
 
 System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](plan-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning article.
 
 During setup, you're prompted for the following:
 
--   The SQL Server database server name, Always On availability group name, or primary cluster name and instance name. If you have installed SQL Server using the default instance, you only have to specify the SQL Server name.  
+- The SQL Server database server name, Always On availability group name, or primary cluster name and instance name. If you have installed SQL Server using the default instance, you only have to specify the SQL Server name.  
 
 You can accept the default values for or set:
 
--   SQL Server Port number. By default, 1433.
+- SQL Server Port number. By default, 1433.
 
--   A new operational database (for first management server installation in the management group) or an existing operational database (when installing additional management servers in an existing management group).
+- A new operational database (for first management server installation in the management group) or an existing operational database (when installing additional management servers in an existing management group).
 
--   The database name. By default, OperationsManager.
+- The database name. By default, OperationsManager.
 
--   The starting database size. By default, 1000 MB.
+- The starting database size. By default, 1000 MB.
 
--   The Data file and Log folder locations. By default, these are C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\Data or C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\Log as appropriate to the SQL Server defaults.
+- The Data file and Log folder locations. By default, these are C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\Data or C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\Log as appropriate to the SQL Server defaults.
 
 > [!IMPORTANT]
 > If TCP/IP is disabled on a remote server that is hosting the SQL Server database, Setup won't be able to connect to the SQL Server database. To resolve this issue, enable TCP/IP on the remote server.

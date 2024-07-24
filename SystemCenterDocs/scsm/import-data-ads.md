@@ -7,15 +7,13 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/28/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Import data from Active Directory Domain Services
-
-
 
 The Service Manager database in Service Manager contains information about your enterprise, and it's used by all the parts of your service management structure. You can use an Active Directory connector to add users, groups, printers, and computers (and only these object types) as configuration items into the Service Manager database.
 
@@ -43,42 +41,42 @@ You can use the following procedures in Service Manager to create, validate, and
 
 ::: moniker-end
 
-### To create an Active Directory connector and to import objects from AD DS
+### Create an Active Directory connector and import objects from AD DS
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Tasks** pane, under **Connectors**, select **Create Connector**, and select **Active Directory Connector**.
+3. In the **Tasks** pane, under **Connectors**, select **Create Connector**, and select **Active Directory Connector**.
 
-4.  Complete these steps in the Active Directory Connector Wizard:
+4. Complete these steps in the Active Directory Connector Wizard:
 
-    1.  On the **Before You Begin** page, select **Next**.
+    1. On the **Before You Begin** page, select **Next**.
 
-    2.  On the **General** page, in the **Name** box, enter a name for the new connector. Ensure that the **Enable this connector** checkbox is selected, and select **Next**.
+    2. On the **General** page, in the **Name** box, enter a name for the new connector. Ensure that the **Enable this connector** checkbox is selected, and select **Next**.
 
-    3.  On the **Domain or organizational unit** page, select **Use the domain: _domain name_**. Or select **Let me choose the domain or OU**, and then select **Browse** to choose a domain or an organizational unit (OU) in your environment.
+    3. On the **Domain or organizational unit** page, select **Use the domain: _domain name_**. Or select **Let me choose the domain or OU**, and then select **Browse** to choose a domain or an organizational unit (OU) in your environment.
 
-    4.  In the **Credentials** area, select **New**.
+    4. In the **Credentials** area, select **New**.
 
-    5.  In the **Run As Account** dialog, in the **Display name** box, enter a name for the Run As account. In the **Account** list, select **Windows Account**. Enter the credentials for an account that has rights to read from AD DS, and select **OK**. On the **Domain or organizational unit** page, select **Test Connection**.
+    5. In the **Run As Account** dialog, in the **Display name** box, enter a name for the Run As account. In the **Account** list, select **Windows Account**. Enter the credentials for an account that has rights to read from AD DS, and select **OK**. On the **Domain or organizational unit** page, select **Test Connection**.
 
         > [!NOTE]
         > Special characters (such as the ampersand [&]) in the **User Name** box aren't supported.
 
-    6.  In the **Test Connection** dialog, ensure that **The connection to the server was successful** is displayed, and select **OK**. On the **Domain or organizational unit** page, select **Next**.
+    6. In the **Test Connection** dialog, ensure that **The connection to the server was successful** is displayed, and select **OK**. On the **Domain or organizational unit** page, select **Next**.
 
-    7.  On the **Select objects**, do the following:
+    7. On the **Select objects**, do the following:
 
-        1.  Select **All computers, printers, users, and user groups** to import all items or,
+        1. Select **All computers, printers, users, and user groups** to import all items or,
 
-        2.  Select **Select individual computers, printers, users or user groups** to import only the selected items or,
+        2. Select **Select individual computers, printers, users or user groups** to import only the selected items or,
 
-        3.  Select **Provide LDAP query filters for computers, printers, users, or user groups** if you want to create your own Lightweight Directory Access Protocol (LDAP) query.
+        3. Select **Provide LDAP query filters for computers, printers, users, or user groups** if you want to create your own Lightweight Directory Access Protocol (LDAP) query.
 
         If you want new users that are added to any groups you import to be added automatically to Service Manager, select **Automatically add users of AD Groups imported by this connector**, and select **Next**.
 
-    8.  On the **Schedule** page, in the **Synchronize** list, set the frequency and time of synchronization, and select **Next**.
+    8. On the **Schedule** page, in the **Synchronize** list, set the frequency and time of synchronization, and select **Next**.
 
     9. On the **Summary** page, ensure that the settings are correct, and select **Create**.
 
@@ -91,19 +89,19 @@ You can use the following procedures in Service Manager to create, validate, and
         > [!NOTE]
         > Depending on the amount of data that is imported, you might have to wait for the import to be completed.
 
-### To validate the creation of an Active Directory connector
+### Validate the creation of an Active Directory connector
 
-1.  In the **Connectors** pane, locate the Active Directory connector that you created. You might have to wait for a minute before the connector appears.
+1. In the **Connectors** pane, locate the Active Directory connector that you created. You might have to wait for a minute before the connector appears.
 
-2.  In the **Connectors** pane, review the **Status** column for a status of **Finished Success**.
+2. In the **Connectors** pane, review the **Status** column for a status of **Finished Success**.
 
-3.  In the **Configuration Items** pane, expand **Configuration Items**. Expand **Computers** and **All Windows Computers**, and verify that the intended computers from AD DS appear in the **All Windows Computers** pane. Expand **Printers**, expand **All Printers**, and then verify that the intended printers from AD DS appear in the **All Printers** pane.
+3. In the **Configuration Items** pane, expand **Configuration Items**. Expand **Computers** and **All Windows Computers**, and verify that the intended computers from AD DS appear in the **All Windows Computers** pane. Expand **Printers**, expand **All Printers**, and then verify that the intended printers from AD DS appear in the **All Printers** pane.
 
-4.  In the Service Manager console, select **Configuration Items**. In the **Configuration Items** pane, select **Users**, and then verify that the intended users and user groups from AD DS appear in the **Users** pane.
+4. In the Service Manager console, select **Configuration Items**. In the **Configuration Items** pane, select **Users**, and then verify that the intended users and user groups from AD DS appear in the **Users** pane.
 
-### To confirm the status of an Active Directory connector
+### Confirm the status of an Active Directory connector
 
--   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
+- View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
 
 ![PowerShell symbol](./media/import-data-ads/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316255(v=sc.20)).
 
@@ -111,70 +109,70 @@ You can use the following procedures in Service Manager to create, validate, and
 
 To ensure that the Service Manager database is up to date, the Active Directory connector synchronizes with Active Directory Domain Services (AD DS) every hour after the initial synchronization. However, you can use the following procedure to manually synchronize the connector and validate that it's synchronized.
 
-### To manually synchronize an Active Directory connector
+### Manually synchronize an Active Directory connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Active Directory connector that you want to synchronize.
+3. In the **Connectors** pane, select the Active Directory connector that you want to synchronize.
 
-4.  In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
+4. In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
 
     > [!NOTE]
     > Depending on the amount of data that is imported, you might have to wait for the import to be completed.
 
-### To validate that an Active Directory connector synchronized
+### Validate that an Active Directory connector synchronized
 
-1.  In the Service Manager console, select **Configuration Items**.
+1. In the Service Manager console, select **Configuration Items**.
 
-2.  In the **Configuration Items** pane, expand **Printers**, and select **All Printers**. Verify that any new printers in AD DS appear in the middle pane.
+2. In the **Configuration Items** pane, expand **Printers**, and select **All Printers**. Verify that any new printers in AD DS appear in the middle pane.
 
-3.  Expand **Computers**, and select **All Windows Computers**. Verify that any new computers in AD DS appear in the middle pane.
+3. Expand **Computers**, and select **All Windows Computers**. Verify that any new computers in AD DS appear in the middle pane.
 
-4.  In the Service Manager console, select **Configuration Items**.
+4. In the Service Manager console, select **Configuration Items**.
 
-5.  In the **Configuration Items** pane, select **Users**. Verify that any new users and groups in AD DS appear in the middle pane.
+5. In the **Configuration Items** pane, select **Users**. Verify that any new users and groups in AD DS appear in the middle pane.
 
 ## Disable and enable an Active Directory connector
 
 You can use the following procedure to disable or enable an Active Directory connector in Service Manager and validate its change in status.
 
-### To disable an Active Directory connector
+### Disable an Active Directory connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Active Directory connector that you want to disable.
+3. In the **Connectors** pane, select the Active Directory connector that you want to disable.
 
-4.  In the **Tasks** pane, under the connector name, select **Disable**.
+4. In the **Tasks** pane, under the connector name, select **Disable**.
 
-5.  In the **Disable Connector** dialog, select **OK**.
+5. In the **Disable Connector** dialog, select **OK**.
 
-### To enable an Active Directory connector
+### Enable an Active Directory connector
 
-1.  In the Service Manager console, select **Administration**, and select **Connectors**.
+1. In the Service Manager console, select **Administration**, and select **Connectors**.
 
-2.  In the **Connectors** pane, select the Active Directory connector that you want to enable.
+2. In the **Connectors** pane, select the Active Directory connector that you want to enable.
 
-3.  In the **Tasks** pane, under the connector name, select **Enable**.
+3. In the **Tasks** pane, under the connector name, select **Enable**.
 
-4.  In the **Enable Connector** dialog, select **OK**.
+4. In the **Enable Connector** dialog, select **OK**.
 
-### To validate the status change of an Active Directory connector
+### Validate the status change of an Active Directory connector
 
-1.  After you enable or disable an Active Directory connector, wait for about 30 seconds. Then, in the Service Manager console, select **Administration**, and select **Connectors**.
+1. After you enable or disable an Active Directory connector, wait for about 30 seconds. Then, in the Service Manager console, select **Administration**, and select **Connectors**.
 
-2.  In the middle pane, locate the connector for which you've changed status, and then verify the value in the **Enabled** column.
+2. In the middle pane, locate the connector for which you've changed status, and then verify the value in the **Enabled** column.
 
 ![PowerShell symbol](./media/import-data-ads/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316244(v=sc.20)).
+- For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316244(v=sc.20)).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
 
--   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316217(v=sc.20)).
+- For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316217(v=sc.20)).
 
 ## Import data from other domains
 
@@ -184,17 +182,17 @@ In domain B, either identify an existing service account or create a new one for
 
 Next, in Service Manager, create a new Active Directory connector in the Active Directory Connector Wizard. Follow these steps on the **Domain or organizational unit** page.
 
-### To specify the data source path and Run As account
+### Specify the data source path and Run As account
 
-1.  Use the appropriate method according to where the domains are located:
+1. Use the appropriate method according to where the domains are located:
 
-    -   If the two domains are in the same forest, in the **Server Information** area, select **Let me choose the domain or OU**, and select **Browse** to select the domain and organizational unit (OU).
+    - If the two domains are in the same forest, in the **Server Information** area, select **Let me choose the domain or OU**, and select **Browse** to select the domain and organizational unit (OU).
 
-    -   If the two domains are in different forests, in the **Server Information** area, select **Let me choose the domain or OU**, and then enter the domain and OU in the box. For example, enter **LDAP://b.woodgrovetest.net/OU=*OU Name*,DC=b,DC=woodgrovetest,DC=net**.
+    - If the two domains are in different forests, in the **Server Information** area, select **Let me choose the domain or OU**, and then enter the domain and OU in the box. For example, enter **LDAP://b.woodgrovetest.net/OU=*OU Name*,DC=b,DC=woodgrovetest,DC=net**.
 
-2.  In the **Credentials** area, select **New**.
+2. In the **Credentials** area, select **New**.
 
-3.  In the **Run As Account** dialog, in the **User name**, **Password**, and **Domain** boxes, enter the credentials for the service account from the b.woodgrovetest.net domain.
+3. In the **Run As Account** dialog, in the **User name**, **Password**, and **Domain** boxes, enter the credentials for the service account from the b.woodgrovetest.net domain.
 
     > [!NOTE]
     > If the two domains are in different forests, you must enter the domain name in the **User name** box. For example, enter `b.woodgrovetest.net\UserName`.

@@ -1,19 +1,18 @@
 ---
 ms.assetid: de589c7d-feaa-4486-a0b5-bd8c7a9c12eb
-title: How to Move the Reporting Data Warehouse Database
+title: Move the Reporting Data Warehouse Database
 description: This article describes how to move the Operations Manager Reporting data warehouse database to a different SQL Server instance after initial deployment.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/25/2020
-ms.custom: UpdateFrequency3
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to move the Reporting data warehouse database
-
+# Move the Reporting data warehouse database
 
 After the initial deployment of System Center Operations Manager, you might need to move the Reporting data warehouse database from one Microsoft SQL Server-based computer to another.
 
@@ -26,14 +25,15 @@ During the move, you need to stop services on your management servers, back up t
 
 ![Diagram showing Summary steps for moving Reporting DW database.](./media/manage-move-omdwdb/om2016-move-reporting-dw-database-steps.png)<br>
 
-## Moving the Reporting data warehouse database
+## Move the Reporting data warehouse database
 
 ### Stop the Operations Manager services
 
 On all the management servers in the management group, stop the Operations Manager services:
-  - System Center Data Access
-  - Microsoft Monitoring Agent
-  - System Center Management Configuration
+
+- System Center Data Access
+- Microsoft Monitoring Agent
+- System Center Management Configuration
 
 ### Back up the Reporting data warehouse database on the old SQL Server instance
 
@@ -44,9 +44,10 @@ On all the management servers in the management group, stop the Operations Manag
 2. Copy the backup file to a local drive of the new SQL Server instance.
 
 ### Update the GlobalSettings table
+
 In the OperationsManager DB, manually update the **GlobalSettings** table to reflect the host\Instance, where the data warehouse has been moved to.
 
-For more information, see [How to configure the Operations Manager Reporting data warehouse database](manage-sqlserver-communication.md#how-to-configure-settings-for-the-data-warehouse-database).
+For more information, see [How to configure the Operations Manager Reporting data warehouse database](manage-sqlserver-communication.md#configure-settings-for-the-data-warehouse-database).
 
 ### Restore the Reporting data warehouse database on the new SQL Server instance
 
@@ -58,7 +59,7 @@ For more information, see [How to configure the Operations Manager Reporting dat
 
 ### Update the registry on the management servers and Reporting data warehouse database
 
-After moving the Operations Manager Reporting data warehouse database to a different SQL Server instance, you'll need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance. This requires modifying the registry, the configuration service configuration file, and several tables in the operational database. The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#how-to-configure-settings-for-the-data-warehouse-database).
+After moving the Operations Manager Reporting data warehouse database to a different SQL Server instance, you'll need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance. This requires modifying the registry, the configuration service configuration file, and several tables in the operational database. The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#configure-settings-for-the-data-warehouse-database).
 
 ### Update Reporting server
 
@@ -90,7 +91,7 @@ On the reporting server, you'll need to change the connection string to referenc
     > [!NOTE]
     > If the DAS/Configuration account uses the LocalSystem account, specify computer account in the form \<domain\>\<computername>$.
 
-###  Start the Operations Manager services
+### Start the Operations Manager services
 
 1. On all the management servers in the management group, start the Operations Manager services:
    - System Center Data Access
@@ -98,9 +99,10 @@ On the reporting server, you'll need to change the connection string to referenc
    - System Center Management Configuration
 
 ### Update Service Principal Name for Kerberos Connections
+
 To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections#Manual) in order for management servers to authenticate with the SQL Server using the Kerberos protocol.  
 
-## To verify a successful move of the data warehouse database
+## Verify a successful move of the data warehouse database
 
 1. Verify that you can successfully run a report from the console.
 

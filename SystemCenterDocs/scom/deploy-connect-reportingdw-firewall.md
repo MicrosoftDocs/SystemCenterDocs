@@ -5,16 +5,14 @@ description: This article describes how to configure a System Center Operations 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/22/2024
+ms.date: 07/22/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Connecting to the Reporting Data Warehouse Across a Firewall
-
-
+# Connect to the Reporting Data Warehouse Across a Firewall
 
 This article describes how to configure your environment to support placing the Report data warehouse behind a firewall for System Center Operations Manager.
 
@@ -39,11 +37,11 @@ If there's a firewall or trust boundary between the Reporting Server and the Rep
 
 The account that was specified as the Data Reader Account during setup of Reporting becomes the Execution Account on Reporting Server, and it's this account that will be used to connect to the Reporting data warehouse.
 
-Identify what port number the computer running SQL Server on the Reporting data warehouse is using, and enter this number into the **dbo.MT_DataWarehouse** table in the Operations Manager database. See the article, [How to Configure the Reporting Data Warehouse to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#how-to-configure-settings-for-the-data-warehouse-database).
+Identify what port number the computer running SQL Server on the Reporting data warehouse is using, and enter this number into the **dbo.MT_DataWarehouse** table in the Operations Manager database. See the article, [How to Configure the Reporting Data Warehouse to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#configure-settings-for-the-data-warehouse-database).
 
 ## Reporting Server and Management Server Separated by a Firewall
 
-A "Could not verify if current user is in sysadmin Role" error message might display when installing the Reporting server role if the reporting server and the management server are separated by a firewall. This error message might display even if the proper firewall ports have been opened. This error occurs after entering the computer name for the management server and selecting **Next**. This error might also display because Reporting Setup was unable to connect to the operational database. In this environment, determine what port number the SQL Server instance is using and configure the Operations Manager database to use the port number. See the article, [How to Configure the Operations Manager Database to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#how-to-configure-settings-for-the-operational-database).
+A "Could not verify if current user is in sysadmin Role" error message might display when installing the Reporting server role if the reporting server and the management server are separated by a firewall. This error message might display even if the proper firewall ports have been opened. This error occurs after entering the computer name for the management server and selecting **Next**. This error might also display because Reporting Setup was unable to connect to the operational database. In this environment, determine what port number the SQL Server instance is using and configure the Operations Manager database to use the port number. See the article, [How to Configure the Operations Manager Database to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#configure-settings-for-the-operational-database).
 
 ## Next steps
 
