@@ -7,15 +7,13 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/18/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.assetid: 8453a3e9-56ee-4750-b111-81e241c480a4
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Configure Incident Management in Service Manager
-
-
 
 This article provides an overview of how to configure Incident management in Service Manager. This article also contains procedures that cover incident management configuration scenarios, including configuring incident settings, configuring email incident support, and creating an incident template.
 
@@ -300,7 +298,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 8. Select the **Permissions Groups** tab, select **only Anonymous users**, and select **OK**.
 9. To grant relay permission to anonymous connections on the new receive connector, open **Exchange Management Shell**, enter the following, and then press ENTER:
 
-    ```
+    ```powershell   
     Get-ReceiveConnector "Anonymous Relay" | Add-ADPermission -User "NT AUTHORITY\ANONYMOUS LOGON" -ExtendedRights "Ms-Exch-SMTP-Accept-Any-Recipient"
 
     ```
@@ -321,7 +319,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 1. Using Windows Explorer on the SMTP server, create a new text file named **TESTEMAIL**.
 2. Remove the TXT file name extension from the new file.
-3. Right-click the TESTMAIL file, and select **Open**.
+3. Right-click the TESTEMAIL file, and select **Open**.
 4. When you're prompted to open the file with a program, select **Notepad**, and select **OK**.
 5. In the file, enter the following using your own information, similar to the following example:
 
