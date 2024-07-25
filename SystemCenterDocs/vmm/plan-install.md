@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/16/2024
+ms.date: 07/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -33,6 +33,7 @@ Verify the following [system requirements](system-requirements.md):
 
 ## Additional deployment requirements
 
+::: moniker range="sc-vmm-2016"
 **Component** | **Details**
 --- | ---
 **Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version.
@@ -44,6 +45,21 @@ Verify the following [system requirements](system-requirements.md):
 **Monitoring** | System Center Operations Manager 2016. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
 **VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
+::: moniker-end
+
+::: moniker range="sc-vmm-2019 sc-vmm-2022"
+**Component** | **Details**
+--- | ---
+**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version.
+**Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](/windows-hardware/get-started/adk-install). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.<br/><br/>If you run into ADK file path issue while installing VMM, copy the files from the amd64 folder in ADK root folder to the ADK root folder itself. The default ADK folder path is *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*, but it can be different based on your choice of folder path during ADK installation.
+**Guest operating system** | Windows operating systems [supported by Hyper-V](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows).<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
+**PowerShell** | [Supported versions](system-requirements.md)
+**.NET** | [Supported versions](system-requirements.md)
+**Host agent** | VMM 2016/2019<br/><br/> Needed for hosts managed in VMM.
+**Monitoring** | System Center Operations Manager 2016. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
+**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
+**Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
+::: moniker-end
 
 ### SPN
 
