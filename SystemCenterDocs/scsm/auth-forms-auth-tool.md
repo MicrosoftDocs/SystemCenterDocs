@@ -1,12 +1,12 @@
 ---
 title: Customize and author forms
 description: Provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/28/2023
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -16,7 +16,6 @@ ms.assetid: 9140312b-4d0b-4f22-a466-85887485e066
 ---
 
 # Customize and author forms with the Service Manager Authoring Tool
-
 
 This article provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
 
@@ -167,7 +166,7 @@ Use the following procedure to add an **Image** control to a form.
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Image** icon from the **Form Customization Toolbox** pane to the form.  
-3. In the **Insert Image** dialog, specify the path of the image file for the image.
+3. In the **Insert Image** dialog, specify the path of the image file for the image. 
     > [!NOTE]
     > The image you chose appears on the form.  
 4. Select any property in the **Details** pane to customize other properties of the **Image** control.  
@@ -213,8 +212,6 @@ The **Panel** control in the Service Manager Authoring Tool is a **Layout** cont
 
 Use the following procedure to add a **Panel** control to a form.  
 
-To add a panel control to a form, follow these steps:
-
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Panel** icon from the **Form Customization Toolbox** pane to the form. You can now add other controls on the **Panel** control.  
 
@@ -223,8 +220,6 @@ To add a panel control to a form, follow these steps:
 A **Single Instance Picker** control in the Service Manager Authoring Tool is a custom control. It's used for presenting a list of instances of a certain class, and it lets the user select an instance from that list. This control resembles the **User Picker** control, but instead of being based on the **User** class, it's based on any class that you specify, including custom classes. You can modify properties of the **Single Instance Picker** control to customize characteristics such as the class whose instances will populate the list.  
 
 Use the following procedure to add a **Single Instance Picker** control to a form.  
-
-### Add a Single Instance Picker control to a form  
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Single Instance Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **Single Instance Picker** control on the form.  
@@ -276,8 +271,6 @@ Use the following procedure to add a **Text Box** control to a form.
 The **User Picker** control is a Service Manager custom control that is used for choosing a user from a drop-down list of users. You can modify the properties of the **User Picker** control in the Service Manager Authoring Tool to customize characteristics such as the layout and the list of users to bind to.  
 
 Use the following procedure to add a **User Picker** control to a form.  
-
-### Add a User Picker control to a form  
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **User Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **User Picker** control on the form.  

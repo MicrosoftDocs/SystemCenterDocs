@@ -5,16 +5,14 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/07/2024
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.custom: intro-installation, UpdateFrequency2, engagement-fy23
+ms.custom: intro-installation, UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Install Service Manager on a single computer (minimum configuration)
-
-
 
 If you want to evaluate System Center - Service Manager and you've a minimal amount of hardware available, install Service Manager on one computer. A sample single-computer configuration is shown in figure&nbsp;1. This configuration won't support a production environment, and no scalability or performance estimates are provided. Because you can't install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper-V to create a virtual computer to host the data warehouse management server.
 
@@ -141,7 +139,7 @@ After the installation, do the following:
 
 19. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the  following commands:
 
-    ```
+    ```powershell   
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
@@ -149,7 +147,7 @@ After the installation, do the following:
 
 20. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
 
-    ```
+    ```powershell   
     $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
 
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices")
@@ -186,7 +184,7 @@ After the installation, do the following:
 
 21. Enable the job schedules by running the following commands:
 
-    ```
+    ```powershell    
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}

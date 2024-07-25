@@ -5,7 +5,7 @@ description: This article provides information about how to configure SDN QoS by
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/30/2023
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-This article provides information about how to configure the Quality of Service (QoS) settings for SDN virtual networks in System Center - Virtual Machine Manager (VMM).
+This article provides information about how to configure the Quality of Service (QoS) settings for SDN virtual networks in System Center Virtual Machine Manager (VMM).
 Through this configuration, you can limit the bandwidth of the traffic flowing in or out of a virtual network adapter (vNIC) by specifying the minimum reserved bandwidth or maximum bandwidth for the adapter.
 
 - Service providers can prevent a high-traffic VM from blocking other VMs.

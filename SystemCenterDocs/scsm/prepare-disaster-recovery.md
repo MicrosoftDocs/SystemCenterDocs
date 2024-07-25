@@ -1,12 +1,12 @@
 ---
 title: Prepare for disaster recovery
 description: This article describes the steps that you must take for Service Manager disaster recovery before problems occur.
-ms.custom: na, UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/26/2023
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -16,8 +16,6 @@ ms.assetid: e481f3b8-4074-4b51-9faa-93e35f4ffe68
 ---
 
 # Prepare for Service Manager disaster recovery
-
-
 
 This article describes the steps that you must take for Service Manager disaster recovery before problems occur. The steps that you take to recover from a disaster are based on the completion of the steps that are outlined here. In general, preparing your Service Manager environment for disaster recovery involves the following:  
 
@@ -99,7 +97,7 @@ You can use the following procedure as part of your disaster recovery preparatio
 - ServiceManager  
 - ReportServer  
 
-To start the SQL Server Script wizard, follow these steps:
+#### Start the SQL Server Script wizard
 
 1. Using an account with Administrator privileges, sign in to the computer that hosts the Service Manager or data warehouse database.  
 2. On the Windows desktop, select **Start**, point to **Programs**, point to the Microsoft SQL Server version installed on your computer, and select **SQL Server Management Studio**.  
