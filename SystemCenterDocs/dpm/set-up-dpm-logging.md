@@ -23,7 +23,7 @@ System Center Data Protection Manager (DPM) logs activity in log files (\*.errlo
 
      :::image type="content" source="media/set-up-dpm-logging/cmd.png" alt-text="Screenshot of command prompt.":::
 
-::: moniker range="<=sc=dpm-2022"
+::: moniker range="<=sc-dpm-2022"
 
         Based on the above output, the logs will be in the following locations:
          
@@ -32,7 +32,7 @@ System Center Data Protection Manager (DPM) logs activity in log files (\*.errlo
 
 ::: moniker-end
 
-::: moniker range="sc=dpm-2025"
+::: moniker range="sc-dpm-2025"
          Based on the above output, the logs will be in the following locations:
          
          - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2025\DPM\DPMLogs*.
