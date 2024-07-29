@@ -25,18 +25,18 @@ System Center Data Protection Manager (DPM) logs activity in log files (\*.errlo
 
 ::: moniker range="<=sc-dpm-2022"
 
-        Based on the above output, the logs will be in the following locations:
+Based on the above output, the logs will be in the following locations:
          
-         - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPMLogs*.
-         - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPM\Temp*.
+   - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPMLogs*.
+   - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPM\Temp*.
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2025"
-         Based on the above output, the logs will be in the following locations:
+Based on the above output, the logs will be in the following locations:
          
-         - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2025\DPM\DPMLogs*.
-         - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2025\DPM\DPM\Temp*.
+   - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2025\DPM\DPMLogs*.
+   - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2025\DPM\DPM\Temp*.
 
 ::: moniker-end
 
