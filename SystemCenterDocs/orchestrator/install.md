@@ -148,7 +148,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 
 ::: moniker-end
 
-::: moniker range=">=sc-orch-2016"
+::: moniker range="<=sc-orch-2019"
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
@@ -270,7 +270,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 
 ::: moniker-end
 
-::: moniker range=">=sc-orch-2016"
+::: moniker range="<=sc-orch-2019"
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
