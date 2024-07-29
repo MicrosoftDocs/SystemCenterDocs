@@ -81,7 +81,7 @@ Use the following information to configure the Write to Database activity.
 ### SQL Server Connections Tab
 
 >[!Note]
->MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter <serverName>;Trust Server Certificate=True in **Server** field for every configuration.
+>MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter \<serverName\>;Trust Server Certificate=True in **Server** field for every configuration.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  

@@ -87,10 +87,10 @@ Use the following information to configure the Query Database activity.
 
 ### SQL Server Connections
 
-::: moniker range="sc-orch-2025:
+::: moniker range="sc-orch-2025"
 
 >[!Note]
->MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter <serverName>;Trust Server Certificate=True in **Server** field for every configuration.
+>MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter \<serverName\>;Trust Server Certificate=True in **Server** field for every configuration.
 
 ::: moniker-end
 

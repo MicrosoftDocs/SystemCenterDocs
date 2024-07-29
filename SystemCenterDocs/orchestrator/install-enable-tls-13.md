@@ -1,7 +1,7 @@
 ---
 ms.assetid:
-title: Set up TLS for Orchestrator
-description: This article provides instructions for setting up TLS with Orchestrator
+title: Set up TLS 1.3 for Orchestrator
+description: This article provides instructions for setting up TLS 1.3 with Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -12,7 +12,7 @@ ms.subservice: orchestrator
 moniker range: sc-orch-2025
 ---
 
-# Set up TLS for Orchestrator
+# Set up TLS 1.3 for Orchestrator
 
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.3 with System Center - Orchestrator.
 

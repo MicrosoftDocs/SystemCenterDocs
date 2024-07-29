@@ -77,7 +77,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator.  If Trust Server Certificate isn't installed on your SQL Server, you can enable the **Trust Server Certificate** setting (not recommended). Before you enable this setting, configure your registry settings by [Enabling Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator.  If Trust Server Certificate isn't installed on your SQL Server, you can enable the **Trust Server Certificate** setting (not recommended). Before you enable this setting, configure your registry settings by [Enabling Trust Server Certificate    ](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 6. On the **Configure the database** page, select a database or create a new database, and select **Next**.
@@ -348,7 +348,7 @@ You can proceed with any one of the following ways:
 
     1. For SQL Connection string Trust Server Certificate=true is added.
 
-    2. In webapi.config <environmentVariable name="Database__TrustServerCertificate" value="true"/> is added.
+    2. In webapi.config \<environmentVariable name="Database__TrustServerCertificate" value="true"/\> is added.
 
 ::: moniker-end
 
