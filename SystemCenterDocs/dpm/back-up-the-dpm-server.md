@@ -300,7 +300,7 @@ and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
 
 ::: moniker-end
 
-     Ensure that you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
+Ensure that you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
 
 2.  Create an Azure Backup vault, and download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](/azure/backup/backup-azure-dpm-introduction).
 
