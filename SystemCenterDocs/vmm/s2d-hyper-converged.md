@@ -148,13 +148,14 @@ Ensure the following:
 
 1. You're running VMM 2019 or later.
 2. Hyper-V hosts in the cluster are running Windows Server 2019 or later with the Hyper-V role installed and configured to host VMs.
+
 ::: moniker-end
 
-    >[!NOTE]
-    >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
-    >- You can configure the DCB settings during cluster creation workflow or on an existing cluster.
-    >- You can't configure DCB settings during SOFS cluster creation; you can only configure on an existing SOFS cluster. All the nodes of the SOFS cluster must be managed by VMM.
-    > - Configuration of DCB settings during cluster creation is supported only when the cluster is created with an existing windows server. It isn't supported with bare metal/operating system deployment workflow.
+   >[!NOTE]
+   >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
+   >- You can configure the DCB settings during cluster creation workflow or on an existing cluster.
+   >- You can't configure DCB settings during SOFS cluster creation; you can only configure on an existing SOFS cluster. All the nodes of the SOFS cluster must be managed by VMM.
+   > - Configuration of DCB settings during cluster creation is supported only when the cluster is created with an existing windows server. It isn't supported with bare metal/operating system deployment workflow.
 
 **Use the following steps to configure DCB settings**:
 
