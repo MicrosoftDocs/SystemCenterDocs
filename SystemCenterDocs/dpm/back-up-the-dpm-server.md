@@ -264,19 +264,19 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
 1.  Before you start, you'll need to run a script to retrieve the DPM replica volume mount point path so that you know which recovery point contains the DPM backup. Do this after initial replication with Azure Backup. In the script, replace dplsqlservername% with the name of the SQL Server instance hosting the DPM database.
 
-::: moniker range="sc-dpm-2016
+::: moniker range="sc-dpm-2016"
 
-    ```sql  
-    Select ag.NetbiosName as ServerName,ds.DataSourceName,vol.MountPointPath
-    from tbl_IM_DataSource as ds
-    join tbl_PRM_LogicalReplica as lr on ds.DataSourceId=lr.DataSourceId
-    join tbl_AM_Server as ag on ds.ServerId=ag.ServerId
-    join tbl_SPM_Volume as vol on lr.PhysicalReplicaId=vol.VolumeSetID
-    and vol.Usage =1
-    and lr.Validity in (1,2)
-    where ds.datasourcename like '%dpmdb%'
-    and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
-    ```
+```sql  
+Select ag.NetbiosName as ServerName,ds.DataSourceName,vol.MountPointPath
+from tbl_IM_DataSource as ds
+join tbl_PRM_LogicalReplica as lr on ds.DataSourceId=lr.DataSourceId
+join tbl_AM_Server as ag on ds.ServerId=ag.ServerId
+join tbl_SPM_Volume as vol on lr.PhysicalReplicaId=vol.VolumeSetID
+and vol.Usage =1
+and lr.Validity in (1,2)
+where ds.datasourcename like '%dpmdb%'
+and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
+```
 
 ::: moniker-end
 
@@ -300,7 +300,7 @@ and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
 
 ::: moniker-end
 
-    Ensure that you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
+     Ensure that you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
 
 2.  Create an Azure Backup vault, and download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](/azure/backup/backup-azure-dpm-introduction).
 
@@ -350,7 +350,7 @@ and AG.ServerName like N'%<dpmsqlservername>%' -- <dpmsqlservername> is a placeh
 
 ::: moniker-end
 
-::: moniker range=">=sc=dpm-2019"
+::: moniker range=">=sc-dpm-2019"
 
 ```sql
 Use DPMDB  -- change to match the DPMDB name if different
