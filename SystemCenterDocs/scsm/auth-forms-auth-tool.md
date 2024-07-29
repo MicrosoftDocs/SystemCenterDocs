@@ -90,14 +90,12 @@ The Authoring Tool includes form controls, such as the **Check Box**, **Date Pic
 
 The following sections describe how to create a new form in the Authoring Tool.  
 
-### Create a new form from a base class  
-
-Use the following procedure to create a simple form from a base class.  
+### Create a new form from a base class 
 
 > [!NOTE]  
 > When you create a form from a base class, the Authoring Tool doesn't support advanced capabilities. For example, there's no support for code-behind, complex rules such as field interdependency or calculated values.  
 
-#### Create a new form from a base class
+To create a new form from a base class, follow these steps:
 
 1. In the **Management Pack Explorer**, expand the management pack in which you want to store the new form. Right-click **Forms**, and select **Create**.  
 2. In the **Base class** dialog, select the base class for the form. You can narrow your search by selecting a specific management pack, or you can leave the default **All Management Packs**. Select **OK**.  
@@ -111,11 +109,9 @@ Use the following procedure to create a simple form from a base class.
 
 Sometimes a simple form isn't sufficient, and you must use advanced features, such as custom logic, in the form. In this case, you can develop a custom WPF form by using a tool other than the Authoring Tool instead of using Visual Studio. Then, instead of authoring a form from base class, you load that WPF form's assembly file into the Authoring Tool and use that as a starting point for further customizations to the form. The form customizations that you make in the Authoring Tool are stored in a management pack file.  
 
-Later, to use the customized form in Service Manager, after you complete all customizations, you must bundle the original form assembly file with the management pack that contains the customizations that you made in the Authoring Tool. For more information about bundling a management pack and creating a .mpb file, see [How to Bundle Management Packs and Resource Files](bundle-mps.md).  
+Later, to use the customized form in Service Manager, after you complete all customizations, you must bundle the original form assembly file with the management pack that contains the customizations that you made in the Authoring Tool. For more information about bundling a management pack and creating a .mpb file, see [How to Bundle Management Packs and Resource Files](bundle-mps.md).   
 
-Use the following procedure to load a custom WPF form assembly file into the Service Manager and customize that form.  
-
-#### Create a new form that is based on a custom WPF form
+To create a new form that is based on a custom WPF form, follow these steps:
 
 1. In the **Management Pack Explorer**, expand the management pack in which you want to store customizations to the form. Right-click **Forms**, and select **Add Custom**.  
 2. In the **Base class** dialog, select the base class for the form. You can narrow your search by selecting a specific management pack, or keep the default **All Management Packs**. Select **OK**.  
@@ -127,11 +123,9 @@ Use the following procedure to load a custom WPF form assembly file into the Ser
 
 ## Add a check box control to a form
 
-A **Check Box** control in the Service Manager Authoring Tool presents an option on the form, and lets the user choose that option. You can modify the properties of the **Check Box** control to customize characteristics such as the label that is displayed on the check box.  
+A **Check Box** control in the Service Manager Authoring Tool presents an option on the form, and lets the user choose that option. You can modify the properties of the **Check Box** control to customize characteristics such as the label that is displayed on the check box.
 
-Use the following procedure to add a **Check Box** control to a form.  
-
-### Add a Check Box control to a form  
+To add a Check Box control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form you want to customize is open in the authoring pane.  
 2. Drag the **Check Box** icon from the **Form Customization Toolbox** pane to the form. Select the **Check Box** control on the form.  
@@ -144,11 +138,9 @@ Use the following procedure to add a **Check Box** control to a form.
 
 ## Add a date picker control to a form
 
-A **Date Picker** control in the Service Manager Authoring Tool is used for displaying dates on a form. You can modify the properties of the **Date Picker** control to customize characteristics such as the format of the date that is displayed.  
+A **Date Picker** control in the Service Manager Authoring Tool is used for displaying dates on a form. You can modify the properties of the **Date Picker** control to customize characteristics such as the format of the date that is displayed.
 
-Use the following procedure to add a **Date Picker** control to a form.  
-
-### Add a Date Picker control to a form  
+To add a Date Picker control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Date Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **Date Picker** control on the form.  
@@ -160,9 +152,7 @@ Use the following procedure to add a **Date Picker** control to a form.
 
 An **Image** control in the Service Manager Authoring Tool is used for displaying an image. You can modify the properties of the **Image** control to customize characteristics such as the location, size, and image that is displayed.  
 
-Use the following procedure to add an **Image** control to a form.  
-
-### Add an Image control to a form  
+To add an Image control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Image** icon from the **Form Customization Toolbox** pane to the form.  
@@ -176,9 +166,7 @@ Use the following procedure to add an **Image** control to a form.
 
 A **Label** control is used in the Service Manager Authoring Tool for displaying a label on a form. You can modify the properties of the **Label** control to customize characteristics such as the text string that the label displays.  
 
-Use the following procedure to add a **Label** control to a form.  
-
-### Add a Label control to a form  
+To add a Label control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Label** icon from the **Form Customization Toolbox** pane to the form. Select the **Label** control on the form.  
@@ -193,11 +181,9 @@ The **List Picker** control in the Service Manager Authoring Tool is a custom co
 
 One of the characteristics of the control that you've to set is the list of items that will populate the **List Picker** control that you're creating. You can either choose an existing list, such as the **Activity Priority** list, or you can create a new list while you're creating the control.  
 
-To add list items to a newly created list, you must use the Service Manager console. You can't use the Authoring Tool to add list items to a newly created list. For more information about using the Service Manager console to add list items, see [How to Add a List Item](/previous-versions/system-center/system-center-2012-R2/hh519655(v=sc.12)).  
+To add list items to a newly created list, you must use the Service Manager console. You can't use the Authoring Tool to add list items to a newly created list. For more information about using the Service Manager console to add list items, see [How to Add a List Item](/previous-versions/system-center/system-center-2012-R2/hh519655(v=sc.12)).
 
-Use the following procedure to add a **List Picker** control to a form.  
-
-### Add a List Picker control to a form  
+To add a List Picker control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **List Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **List Picker** control on the form.  
@@ -210,7 +196,7 @@ Use the following procedure to add a **List Picker** control to a form.
 
 The **Panel** control in the Service Manager Authoring Tool is a **Layout** control that helps you manage a group of related controls. Typically, you drag and position several controls that have a related purpose on the form on a panel control. Then, if you need to move the controls that are on the panel, instead of moving each control individually, you can move the **Panel** control.  
 
-Use the following procedure to add a **Panel** control to a form.  
+To add a panel control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Panel** icon from the **Form Customization Toolbox** pane to the form. You can now add other controls on the **Panel** control.  
@@ -219,7 +205,7 @@ Use the following procedure to add a **Panel** control to a form.
 
 A **Single Instance Picker** control in the Service Manager Authoring Tool is a custom control. It's used for presenting a list of instances of a certain class, and it lets the user select an instance from that list. This control resembles the **User Picker** control, but instead of being based on the **User** class, it's based on any class that you specify, including custom classes. You can modify properties of the **Single Instance Picker** control to customize characteristics such as the class whose instances will populate the list.  
 
-Use the following procedure to add a **Single Instance Picker** control to a form.  
+To add a single instance picker control to a form, follow these steps:  
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Single Instance Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **Single Instance Picker** control on the form.  
@@ -230,8 +216,6 @@ Use the following procedure to add a **Single Instance Picker** control to a for
 ## Add a tab control and tab item controls to a form
 
 A **Tab Control** control, combined with **Tab Item** controls, is used for arranging visual content in tabular form in the Service Manager Authoring Tool. You can modify the properties of these controls to customize characteristics such as the appearance and layout. Typically, the **Tab Control** control is accompanied by several **Tab Item** controls that enable selection of individual items inside the **Tab Control**.  
-
-Use the following procedures to add a **Tab Control** control and a **Tab Item** control to a form.  
 
 ### Add a Tab Control control to a form  
 
@@ -251,9 +235,7 @@ Use the following procedures to add a **Tab Control** control and a **Tab Item**
 
 A **Text Box** control is used in the Service Manager Authoring Tool for text display and editing. You can modify the properties of the control to customize characteristics such as the location, the size, the wrapping behavior, and the text of the **Text Box** control.  
 
-Use the following procedure to add a **Text Box** control to a form.  
-
-### Add a Text Box control to a form  
+To add a Text Box control to a form, follow these steps:
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **Text Box** icon from the **Form Customization Toolbox** window to the form. Select the **Text Box** control on the form.  
@@ -270,7 +252,7 @@ Use the following procedure to add a **Text Box** control to a form.
 
 The **User Picker** control is a Service Manager custom control that is used for choosing a user from a drop-down list of users. You can modify the properties of the **User Picker** control in the Service Manager Authoring Tool to customize characteristics such as the layout and the list of users to bind to.  
 
-Use the following procedure to add a **User Picker** control to a form.  
+To add a user picker control to a form, follow these steps: 
 
 1. Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2. Drag the **User Picker** icon from the **Form Customization Toolbox** pane to the form. Select the **User Picker** control on the form.  
