@@ -35,6 +35,11 @@ Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups phy
 > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
 ::: moniker-end
 
+::: moniker range="sc-vmm-2025"
+> [!NOTE]
+> VMM 2025 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
+::: moniker-end
+
 ## How does it work?
 
 S2D creates pools of storage from storage that's attached to specific nodes in a Windows Server cluster. The storage can be internal on the node or disk devices that are directly attached to a single node. Supported storage drives include NVMe, SSD connected via SATA or SAS, and HDD. [Learn more](/windows-server/storage/storage-spaces/choosing-drives).
