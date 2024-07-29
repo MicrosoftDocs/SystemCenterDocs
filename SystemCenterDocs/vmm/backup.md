@@ -5,7 +5,7 @@ description: This article describes how to back up and restore the VMM database,
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/12/2023
+ms.date: 07/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: engagement-fy23
 
 
 
-This article describes the backup and recovery process in a System Center - Virtual Machine Manager (VMM) environment and provides some recommendations.
+This article describes the backup and recovery process in a System Center Virtual Machine Manager (VMM) environment and provides some recommendations.
 
 ## Before you start
 
@@ -61,7 +61,7 @@ Follow these steps to back up the VMM database by using the VMM console:
 
 2.  In the **Virtual Machine Manager Backup** dialog, specify the location for the backup file. Select a folder that isn't a root directory and that SQL Server can access.
 
-    You can check the status of the backup in the Jobs workspace.
+    You can check the status of the backup in the **Jobs** workspace.
 
     For information about how to recover the backup, see the **Important** note before this procedure.
 

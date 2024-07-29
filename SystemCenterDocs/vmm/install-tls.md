@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS with VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/12/2022
+ms.date: 07/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,7 +15,7 @@ ms.subservice: virtual-machine-manager
 
 
 
-This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Virtual Machine Manager (VMM) server.
+This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center Virtual Machine Manager (VMM) server.
 
 >[!NOTE]
 > Virtual Machine Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Virtual Machine Manager will select one of the three protocols in the following order of preference:

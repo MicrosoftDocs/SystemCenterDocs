@@ -5,7 +5,7 @@ description: This article provides information about how to deploy and manage th
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/24/2023
+ms.date: 07/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -19,7 +19,7 @@ ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
 This article provides information about how to install, verify, and remove update rollups for System Center Virtual Machine Manager (VMM).
 
 >[!NOTE]
-> Update rollups are installed automatically if Microsoft Updates are set to Automatic. If they aren't installed automatically, you can install these manually.
+> Update rollups are installed automatically if Microsoft updates are set to Automatic. If they aren't installed automatically, you can install them manually.
 >
 
 ## Obtain and install update rollups
@@ -34,13 +34,11 @@ The following sections provide information about how to obtain and install the u
 
 >[!NOTE]
 > Ensure that the job completes successfully; otherwise review the error details, and redo the backup.
->
-
-More information: [Back up the VMM database](backup.md#back-up-the-vmm-database) 
+> For more information, see [Back up the VMM database](backup.md#back-up-the-vmm-database).
 
 ### Install update rollups from Microsoft updates
 
-Follow these steps on a computer that has a VMM component installed and latest updates are yet to be installed:
+Follow these steps on a computer that has a VMM component installed and the latest updates are yet to be installed:
 
 1. Under **Settings** > **Update & Security**, select **Windows Update**.
 1. In the **Windows Update** window, select **Check Online for updates from Microsoft Update**.
@@ -50,7 +48,7 @@ Follow these steps on a computer that has a VMM component installed and latest u
 
 ### Install update rollups from Microsoft Download Center
 
-To manually download the update rollups from the Microsoft download center, [visit](https://www.catalog.update.microsoft.com/Home.aspx) the Microsoft Download Center, search for the desired KB and manually download the update rollup packages.
+To manually download the update rollups from the Microsoft Download Center, [visit](https://www.catalog.update.microsoft.com/Home.aspx) the Microsoft Download Center, search for the desired KB and manually download the update rollup packages.
 
 ### Install update rollups through command prompt
 
@@ -82,7 +80,7 @@ For example, to install the Update Rollup 2 for System Center 2019 Virtual Machi
 
 Use the following procedure to check if an update rollup is successfully installed:
 
-1. Under **Control Panel** > **Programs and Features** > **View installed updates**.
+1. Under **Control Panel** > **Programs** > **Programs and Features** > **View installed updates**.
 1. Verify that an update entry was created after the update rollup was installed.
     - For example, the Update Rollup 2 was released as update 3209586. You should be able to see this detail under **View installed updates** if you've installed this update rollup and if it was successfully installed.
 1. Verify that the binary's version has the correct build number. 
@@ -102,15 +100,15 @@ Use the following procedure to check if an update rollup is successfully install
 > 1. If you've one or more hotfixes installed on the server, ensure that you replace the hotfix binary with the official update rollup binary before you start the removal.
 >
 
-### Remove an update rollup by using the control panel
+### Remove an update rollup using the control panel
 
 1. Go to **Control Panel** > **Programs** > **Programs and Features**. For quick access, enter **appwiz.cpl** in **Run**; it opens the **Programs and Features** in **Control Panel**.
 1. Select **View installed updates**.
 1. Find the update that you want to remove, right-click the update, and then select **Uninstall**.
 
-### Remove an update rollup by using the command line
+### Remove an update rollup using the command line
 > [!NOTE]
-> To remove an update by using the command line, you must have the following two globally unique identifiers (GUIDs) available:
+> To remove an update using the command line, you must have the following two globally unique identifiers (GUIDs) available:
 >
 >- RTM product GUID
 >- Patch GUID
@@ -126,9 +124,9 @@ Use the following procedure to check if an update rollup is successfully install
 
 #### Patch GUIDs
 
-To find the patch GUID, right-click the update, select **Properties**. On the **Details** tab, and then select **Revision number**. This is the patch GUID.
+To find the patch GUID, right-click the update, select **Properties**. On the **Details** tab, select the **Revision number**. This is the patch GUID.
 
-When you know the RTM product GUID and the patch GUID, run the following command to remove the update:
+When you know the RTM product GUID and the patch GUID, run the following command to remove the update: 
  
 **Msiexec /I {< RTM Product GUID >} MSIPATCHREMOVE={< Patch GUID >}**
 
