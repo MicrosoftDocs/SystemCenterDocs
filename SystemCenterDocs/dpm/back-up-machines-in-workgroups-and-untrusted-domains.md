@@ -57,7 +57,7 @@ Before you start, check the supported protection scenarios and required network 
 |Perimeter network|Perimeter network protection not supported.|
 |IPSEC|Ensure IPSEC doesn't block communications.|
 
-## Back up using  NTLM authentication
+## Back up using NTLM authentication
 
 Here's what you'll need to do:
 
@@ -93,7 +93,7 @@ Here's what you'll need to do:
 
 If at any point you want to update the password for the NTLM credentials, run the following on the protected computer:
 
-```
+```powershell
 SetDpmServer.exe -dpmServerName <serverName> -isNonDomainServer -updatePassword
 ```
 
@@ -258,7 +258,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
     2. Navigate to the C:\Program files\Microsoft Data Protection Manager\DPM\bin folder, and run **setdpmserver** as follows:
 
-        ```
+        ```powershell
         setdpmserver -dpmCredential CertificateConfiguration_DPM01.contoso.com.bin -OutputFilePath c:\Temp -Thumbprint <ClientThumbprintWithNoSpaces
         ```
 
@@ -288,7 +288,7 @@ After the attach process completes, the protected computer should appear in the 
 
 Generates a file in `c:\\CertMetaData\\` with name `CertificateConfiguration\_<DPM SERVER FQDN>.bin`
 
-```
+```powershell
 Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate -Action Configure -OutputFilePath c:\CertMetaData\ -Thumbprint "cf822d9ba1c801ef40d4b31de0cfcb200a8a2496"
 ```
 
@@ -298,7 +298,7 @@ Where dpmserver.contoso.com is the name of the DPM server, and "cf822d9ba1c801ef
 
 Regenerates a lost configuration file in the folder c:\CertMetaData\
 
-```
+```powershell
 Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate "-OutputFilePath c:\CertMetaData\ -Action Regenerate
 ```
 

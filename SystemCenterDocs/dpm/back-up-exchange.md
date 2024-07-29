@@ -197,7 +197,7 @@ Follow these steps to recover a single mailbox:
     New-MailboxDatabase -Recovery -Name RDB-CONTROL -Server E2K13-MBX1
     ```
 
-    ```powershell   
+    ```powershell
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 
@@ -227,7 +227,7 @@ Follow these steps to recover a single mailbox:
 
 8. After the recovery process has finished, the required mailbox isn't fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
 
-    ```powershell   
+    ```powershell
     New-MailboxRestoreRequest -SourceDatabase 'RDB-CONTROL' -SourceStoreMailbox 'mailbox name' -TargetMailbox <name>@contoso.com -TargetRootFolder Recovery -SkipMerging StorageProviderForSource
     ```
 
@@ -506,7 +506,7 @@ Follow these steps to recover a single mailbox:
     New-MailboxDatabase -Recovery -Name RDB-CONTROL -Server E2K13-MBX1
     ```
 
-    ```powershell   
+    ```powershell
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 

@@ -264,6 +264,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
     The download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The reporting management pack is placed in a separate folder inside that folder.
 
 #### Import the Management Packs
+
 - Import the Discovery and Library Management Packs.
 - Sign in to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 - Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
@@ -293,6 +294,6 @@ You'll need to install the DPM Central Console on the Operations Manager server.
 3. Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
     Follow the instructions in the Import Management Packs wizard.
 
-#### Tweaking Management Pack settings
+#### Tweak Management Pack settings
 
 After you import the management packs, they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example, if you find that performance-measuring rules that are enabled degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](/previous-versions/system-center/system-center-2012-R2/hh212818(v=sc.12)).
