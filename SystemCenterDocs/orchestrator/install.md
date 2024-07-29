@@ -225,10 +225,14 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server.  If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by [Enabling Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server.
+
+If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended).
+
+You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 ::: moniker range=">=sc-orch-2022"
-8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
+1. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
 9. On the **Select the installation location** page, verify the installation location for Orchestrator, and select **Next**.
 
@@ -572,7 +576,7 @@ You can proceed with any one of the following ways:
 
     Alternatively, On the **Data Store Configuration** page, in **Server**, enter *localhost;Trust Server Certificate=True*.
 
-    The following configuration happens:
+    The following configuration occurs:
 
     1. For SQL Connection string Trust Server Certificate=true is added.
 
