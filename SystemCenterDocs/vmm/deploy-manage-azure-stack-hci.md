@@ -34,6 +34,7 @@ This article provides information about how to set up an Azure Stack HCI cluster
 >[!IMPORTANT]
 >Azure Stack HCI clusters that are managed by Virtual Machine Manager shouldn’t join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
 
+::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 ## Before you start
 
 Ensure that you're running VMM 2019 UR3 or later.
@@ -53,6 +54,8 @@ Ensure that you're running VMM 2019 UR3 or later.
 - Moving VMs between Windows Server and Azure Stack HCI clusters works via Network Migration and migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it's performed as a single operation. 
 
 - The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2025"
 
@@ -152,9 +155,9 @@ If you need to add the Azure Stack HCI hosts to the VMM fabric, [follow these st
 
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. 
 
-> [!NOTE]
-> - The generalized VHD or VHDX in the VMM library should be running Azure Stack HCI with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk should be set.
-> - For bare-metal deployment, you need to add a pre-boot execution environment (PXE) server to the VMM fabric. The PXE server is provided through Windows Deployment Services. VMM uses its own WinPE image, and you need to ensure that it’s the latest. To do this, select **Fabric** > **Infrastructure** > **Update WinPE image**, and ensure that the job finishes.
+  > [!NOTE]
+  > - The generalized VHD or VHDX in the VMM library should be running Azure Stack HCI with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk should be set.
+  > - For bare-metal deployment, you need to add a pre-boot execution environment (PXE) server to the VMM fabric. The PXE server is provided through Windows Deployment Services. VMM uses its own WinPE image, and you need to ensure that it’s the latest. To do this, select **Fabric** > **Infrastructure** > **Update WinPE image**, and ensure that the job finishes.
 
 2.	Follow the instructions for [provisioning a cluster from bare-metal computers](hyper-v-bare-metal.md).
 
