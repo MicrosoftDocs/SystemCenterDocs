@@ -5,7 +5,7 @@ description: This article describes how to set up and manage Storage Spaces Dire
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/25/2024
+ms.date: 07/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -60,3 +60,7 @@ The DCB settings must be consistent across all the hosts and the fabric network 
 To configure a DCB setting, use [this procedure](s2d-hyper-converged.md#step-3-configure-dcb-settings-on-the-s2d-cluster).
 
 ::: moniker-end
+
+## Next steps
+
+[Set storag3 QoS for clusters](./qos-storage-clusters.md)

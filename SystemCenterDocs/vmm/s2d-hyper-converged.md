@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/25/2024
+ms.date: 07/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -193,10 +193,12 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
 4. In the Create Volume Wizard > **Storage Type**, specify the volume name and select the storage pool.
 5. In **Capacity**, you can specify the volume size, file system, and resiliency settings.
+6. Select **Configure advanced storage and tiering settings** to set up these options.
+7. Select **Next**.
 
     ![Screenshot of the Volume settings.](./media/s2d/storage-spaces-volume-settings.png)
 
-6. Select **Configure advanced storage and tiering settings** to set up these options.
+8. In **Storage Settings**, specify the storage tier split, capacity, and resiliency settings.
 
     ![Screenshot of Configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
 
@@ -221,13 +223,14 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
 4. In the Create Volume Wizard > **Storage Type**, specify the volume name and select the storage pool.
 5. In **Capacity**, you can specify the volume size, file system, and resiliency settings.
+6. Select **Configure advanced storage and tiering settings** to set up these options.
+7. Select **Next**.
 
     ![Screenshot of Volume Capacity settings.](./media/s2d/storage-spaces-volume-settings.png)
 
-6. Select **Configure advanced storage and tiering settings** to set up these options.
+8. In **Storage Settings**, specify the storage tier split, capacity, and resiliency settings.
 
     ![Screenshot of storage settings.](./media/s2d/storage-spaces-tiering.png)
-
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 

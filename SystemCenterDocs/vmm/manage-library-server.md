@@ -5,7 +5,7 @@ description: This article provides guidance for setting up the library in the VM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/25/2024
+ms.date: 07/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -48,4 +48,4 @@ Learn more about [managing replicated library shares](library-resources.md#manag
 
 ## Next steps
 
-Learn about [adding file-based resources to the library](library-files.md).
+[Learn about adding file-based resources to the library](library-files.md).
