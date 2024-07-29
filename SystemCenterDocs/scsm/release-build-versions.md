@@ -33,7 +33,7 @@ The following table lists the build versions for Service Manager 2025.
 
 | Build Number | KB | Release Date | Description |
 | --- | --- |--- |--- |
-| | | September 2024 | General Availability |
+| | | October 2024 | General Availability |
 
 ::: moniker-end
 

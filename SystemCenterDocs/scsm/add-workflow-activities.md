@@ -17,8 +17,6 @@ ms.assetid: 32de708f-02f7-4021-882b-14ed140ebc89
 
 # Add or remove Service Manager workflow activities
 
-
-
 Workflow activities are the building blocks of a workflow. You can use the procedures in this section to add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow.  
 
 ## Add an activity to a workflow
@@ -27,7 +25,7 @@ Use this procedure to add an activity to a workflow from the **Activities Toolbo
 
  In the Woodgrove Bank customization scenario, Ken uses this procedure to add the Windows Workflow Foundation \(WF\) activities **Add AD DS Computer to Group** and **Set Activity Status to Completed** to his workflow.  
 
-### Add an activity to a workflow  
+To add an activity to a workflow, follow these steps:
 
 1. In the **Management Pack Explorer**, expand **Workflows**, right\-click the workflow you want, and select **Edit**. This opens the workflow in the authoring pane. For example, right\-click **AddComputerToADGroupWF**, and select **Edit**.  
 
@@ -68,7 +66,7 @@ The Activity Library includes specialized activities that incorporate Windows Po
 
  Use the following procedure to add a script to a workflow.  
 
-### Add a script to a workflow  
+To add a script to a workflow, follow these steps:
 
 1. In the **Management Pack Explorer**, expand **Workflows**, right\-click the workflow that you want, and select **Edit**. This opens the workflow in the authoring pane.  
 
@@ -112,7 +110,7 @@ To use a **Delay** activity, just drag the **Delay** activity into the workflow,
 
 Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
 
-### Add for each loop to a workflow  
+### Add each loop to a workflow  
 
 1. In the **Management Pack Explorer**, expand **Workflows**, right\-click the workflow you want, and select **Edit**. This opens the workflow in the authoring pane.  
 
