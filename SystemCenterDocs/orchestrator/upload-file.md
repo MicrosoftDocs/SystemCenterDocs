@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Upload File
 
-
-
 The Upload File activity is used in a runbook to upload files to an FTP server.
 
 This activity publishes all the data from the required and optional properties into published data.

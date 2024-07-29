@@ -18,7 +18,6 @@ ms.date: 06/05/2024
 
 # Download File
 
-
 The Download File activity is used in a runbook to download a file from an FTP server.
 
 This activity publishes all the data from the required and optional properties into published data.

@@ -1,5 +1,5 @@
 ---
-description: This article is a primer for the necessary components to deploy DPM 2022 in your environment.
+description: This article is a primer for the necessary components to deploy DPM 2025 in your environment.
 ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -42,7 +42,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2022 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-server/sql-server-2022) (supported from DPM 2022 UR1)<br/><br/> - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019)<br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017)
+DPM 2025 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-server/sql-server-2022) (supported from DPM 2022 UR1)<br/><br/> - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019)<br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017)
 
 ### SQL Server requirements
 
@@ -52,7 +52,7 @@ DPM 2022 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-se
 |-----------|----------|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
-|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017 or later)<br/><br/>**Note** <br/><br/> - For Remote SQL, the database engine and reporting services must be on the same computer. <br/><br/> - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer)|
+|Required features|Database Engine Services, Reporting Services<br/><br/>**Note** <br/><br/> - For Remote SQL, the database engine and reporting services must be on the same computer. <br/><br/> - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer|
 |Collations|SQL_Latin1_General_CP1_CI_AS|
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
@@ -67,7 +67,7 @@ DPM 2022 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-se
 
 |Requirement|Details|
 |-----------|-------|
-|Operating System|Windows Server 2022, Datacenter, and Standard editions<br/> Windows Server 2019, Datacenter, and Standard editions (Windows Server Core 2019 is supported)|
+|Operating System|Windows Server 2025, Datacenter, and Standard editions<br/> Windows Server 2022, Datacenter, and Standard editions|
 |Installation prerequisites|Microsoft .NET Framework 4.5 or later <br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools (install explicitly if your SQL Server is on a remote server)<br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running an Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 |RAM|4 GB minimum, 8 GB recommended|
@@ -101,7 +101,6 @@ DPM 2022 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-se
 |Windows Management Framework (WMF) <br/><br/> (Not applicable of DPM 2019)| If you're protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/><br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [Windows Management Frame 5.1](https://www.microsoft.com/download/details.aspx?id=54616) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/><br/> Windows Server 2012 and later don't require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
 |Prerequisites|DPM protection agent must be installed on a protected computer. For more information, see Set up the protection agent.<br/><br/> Protected volumes must be at least 1 GB in size with NTFS formatting.<br/><br/> Server operating systems protected by DPM must be 64 bit.|
-
 
 ## Networking
 

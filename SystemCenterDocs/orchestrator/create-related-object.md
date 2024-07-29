@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Related Object
 
-
-
 The Create Related Object activity is used to create a new Service Manager object that is related to other existing objects either by membership or by a hosted relationship.
 
 The following published data elements are specific to Create Related Object. Additional published data is generated based on the class that you select when you define the activity. For a list of data elements published by each class, see Service Manager Published Data.
@@ -27,9 +25,9 @@ Certain classes contain a mandatory ID property, which requires a GUID. Generati
 
 ### Create a class with an ID property
 
-1.  Create a Run .NET Script activity using the following method: `$GUID = \[guid\]::NewGUID()`.
+1. Create a Run .NET Script activity using the following method: `$GUID = \[guid\]::NewGUID()`.
 
-2.  On the **Published Data** tab, define the GUID variable using the following settings:
+2. On the **Published Data** tab, define the GUID variable using the following settings:
     1. Name: guid
     2. Type: String
     3. Variable: GUID

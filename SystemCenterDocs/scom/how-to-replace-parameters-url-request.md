@@ -5,16 +5,14 @@ description: This article provides an overview about how to replace parameters i
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/19/2023
-ms.custom: engagement-fy23
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Replace parameters in a URL request
-
-
 
 When you capture a web application by using the Web Application Editor, it can include unique information in one or more requests that changes each time you connect to the application. This information is typically included in the response to a request and then used by one or more subsequent requests.
 
@@ -109,7 +107,7 @@ You could just pull out the term itself, but it's more straightforward to includ
 
 ![Screenshot of Bing Web Application Recorded.](./media/bing-web-application-recorded.png)
 
-### To create an extraction rule
+### Create an extraction rule
 
 1. Select the first request, and then select  **Properties**  in the  **Actions**  pane.
 2. Select the  **Extraction Rules**  tab.
@@ -123,7 +121,7 @@ You could just pull out the term itself, but it's more straightforward to includ
 7. Select  **OK**  to save and close the extraction rule.
 8. Select **OK**  to save and close the request.
 
-### To insert a parameter into a request
+### Insert a parameter into a request
 
 1. Select the second request, and then select  **Properties**  in the  **Actions**  pane.
 2. On the  **General**  tab, select  **Insert parameter**.

@@ -33,7 +33,7 @@ To prepare DPM for future expansion, use the available disks to create a storage
 
 The remainder of this article provides the detail on how to add a volume and to expand it later.
 
-## Setting up MBS
+## Set up MBS
 
 Setting up MBS consists of the following procedures. You can't attach locally created VHD (VHDX) files and use them as storage on a physical DPM server.
 
@@ -142,8 +142,16 @@ DPM 2016 consumes storage thinly, as needed. Once DPM is configured for protecti
 
 Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient workload-aware storage. DPM 2019 introduces further performance improvements with MBS, resulting in 50-70% faster backup with Windows Server 2019.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
 > [!NOTE]
 > We recommend you to deploy DPM 2019 (using tiered volumes) on Windows Server 2019 to achieve enhanced backup performances.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server earlier than Windows Server 2016, it doesn't use MBS.
 - MBS provides intelligent storage for short-term backup to disk. MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
@@ -536,8 +544,8 @@ In case you had upgraded your existing storage to a tiered storage, you can migr
 
 Migration of data source should have all recovery points on Modern Storage.
 
-> [!NOTE]
-> - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) isn't supported.
+>[!NOTE]
+>- Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) isn't supported.
 >- Migration is similar to modification of a protection group. While migration is in progress, you can't trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
 ## Configure workload-aware storage

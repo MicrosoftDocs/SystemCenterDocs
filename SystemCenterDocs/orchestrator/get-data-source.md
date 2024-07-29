@@ -21,8 +21,8 @@ The Get Data Source activity retrieves information about Data Sources from eithe
 
 The common filters for this activity are as follows:
 
--   Name contains or matches a pattern
--   Protected - True or False
+- Name contains or matches a pattern
+- Protected - True or False
 
 This activity returns the Data Source ID (DataSourceId), which is used in all activities except Get DPM Server Capacity.
 

@@ -5,16 +5,14 @@ description: This guide provides the post-upgrade tasks you must perform after u
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
-ms.custom: engagement-fy23
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Post-Upgrade tasks when upgrading to System Center Operations Manager
-
-
 
 After you've completed the upgrade process, you must perform many post-upgrade tasks.
 

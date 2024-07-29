@@ -14,15 +14,15 @@ ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 
 ## Upgrade to DPM 2025
 
-You can install System Center - 2025 Data Protection Manager (DPM) on Windows Server 2022.
+You can install System Center - 2025 Data Protection Manager (DPM) on Windows Server 2025.
 You can upgrade to DPM 2025 from the following versions:
 
 - DPM 2022
 
   Before you upgrade to or install DPM 2025, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
-
 ## Upgrade path for DPM 2025
+
 If you upgrade from DPM 2022 to DPM 2025, ensure that your installation has the following necessary updates:
 
 - Upgrade the DPM server to DPM 2025.
@@ -30,7 +30,6 @@ If you upgrade from DPM 2022 to DPM 2025, ensure that your installation has the 
 - Update the agents on the protected servers.
 - Upgrade the DPM Remote Administrator on all production servers.
 - Backups continue without rebooting your production server.
-
 
 ### Upgrade steps for DPM
 

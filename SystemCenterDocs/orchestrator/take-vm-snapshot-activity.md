@@ -17,8 +17,6 @@ ms.date: 07/10/2024
 ---
 # Take VM Snapshot Activity
 
-
-
 The Take VM Snapshot activity is used in a runbook to take a snapshot of a running virtual machine on a VMware vSphere server and enable a new name and description to be assigned to the snapshot. This allows the runbook to create a new virtual machine based on the configuration of an existing one.
 
 The following tables list the required and optional properties and published data for this activity.
@@ -48,11 +46,9 @@ The activity publishes all the data from the required and optional properties in
 | Snapshot VM Memory   | Indicates whether the source virtual machine's memory was included in the snapshot. | Boolean   |
 | VM Path   | The path to the virtual machine from which the snapshot was taken.   | String   |
 
-## Configuring the Take VM Snapshot Activity
+## Configure the Take VM Snapshot Activity
 
-The following procedure describes the steps required to configure a Take VM Snapshot activity.
-
-### To configure the Take VM Snapshot activity
+To configure the Take VM Snapshot activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Take VM Snapshot** activity to the active runbook.
 

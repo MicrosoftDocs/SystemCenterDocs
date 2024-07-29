@@ -12,8 +12,6 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ---
 # Create Change with Template activity
 
-
-
 The Create Change with Template activity is used to configure a change record based on an existing template.
 
 >[!IMPORTANT]

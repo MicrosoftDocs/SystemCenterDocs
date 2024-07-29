@@ -2,7 +2,7 @@
 title: Check Schedule
 description: This article describes the check schedule activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,23 +17,21 @@ manager: jsuri
 ---
 # Check Schedule
 
-
-
 The Check schedule activity verifies that a runbook is allowed to run at the current time according to the permitted times or interval configured in a schedule. To use this activity, you can create a schedule and configure the permitted times, denied times, or interval at which the runbook can run. Then you can insert the activity into a runbook following a [Monitor Date/Time](monitor-date-time.md) activity and configure it to check the schedule to verify whether a runbook is allowed to run at the current time. You can also use the Check Schedule activity in a runbook that monitors systems for availability. If a problem is encountered, the Check Schedule activity can verify whether the current time is during business hours or in or out of a maintenance window.  
 
-## Configuring the Check Schedule Activity  
- Use the following information to configure the Check Schedule activity.  
+## Configure the Check Schedule Activity
 
-#### To configure the Check Schedule activity  
+To configure the Check Schedule activity, follow these steps:
 
-1.  From the **Activity pane**, drag a **Check Schedule** activity to the runbook.  
+1. From the **Activity pane**, drag a **Check Schedule** activity to the runbook.  
 
-2.  Double-click the **Check Schedule** activity icon to open the **Properties** dialog.  
+2. Double-click the **Check Schedule** activity icon to open the **Properties** dialog.  
 
-3.  Select the **Details** tab, and next to the **Schedule Template** box, select the ellipsis **(...)** button and in the **Select a Schedule** dialog, select the **Schedule** that you want to verify.  
+3. Select the **Details** tab, and next to the **Schedule Template** box, select the ellipsis **(...)** button and in the **Select a Schedule** dialog, select the **Schedule** that you want to verify.  
 
-### Published Data  
- The following table lists the published data items.  
+### Published Data
+
+The following table lists the published data items.  
 
 |Item|Description|  
 |----------|-----------------|  

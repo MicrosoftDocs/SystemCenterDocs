@@ -7,15 +7,13 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/17/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.assetid: 37c13875-a46b-4387-b35a-5d2c8f511f56
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Use the Service Manager service catalog to offer services
-
-
 
 This article provides an overview of how to use the service catalog in Service Manager. This article also contains procedures that cover management configuration scenarios for the service catalog.
 
@@ -50,7 +48,7 @@ By default, Service Manager includes only the General service offering category.
 
 Service offerings are logical groups of request offerings. Both service offerings and their request offerings are available to Self-Service Portal users when their status is set to Published and if end-users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog.
 
-To create a service offering, follow these steps:
+### Create a service offering
 
 1. In the Service Manager console, select **Library**.
 2. In the **Library** pane, expand **Service Catalog**, and then select **Service Offerings**.
@@ -81,7 +79,7 @@ To create a service offering, follow these steps:
 
 By default, Service Manager includes a number of service request templates that are based on a generic incident template. By viewing the template, you can gain an understanding of the categories of information to collect and convey to end-users as they submit requests through the Self-Service Portal. You can use the following procedure to create a new service request template without using the default generic incident request template.
 
-To create a service request template, follow these steps:
+### Create a service request template
 
 1. In the Service Manager console, select **Library**.
 2. In the **Library** pane, select **Templates**, and then in the **Tasks** lists under **Templates**, select **Create Template**.
@@ -106,8 +104,6 @@ To create a service request template, follow these steps:
 ## Create a request offering
 
 Request offerings are catalog items that describe the item, assistance, or action that is available to end-users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to Self-Service Portal users when the status of the offerings is set to Published and if end-users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog.
-
-You can use the following procedure to create a request offering.
 
 To create a request offering, follow these steps:
 
@@ -158,7 +154,7 @@ If you want to have an approval process added before publishing, you can associa
 
 You can use the following procedures to publish request offerings.
 
-To publish draft request offerings, follow these steps:
+### Publish draft request offerings
 
 1. In the Service Manager console, select **Library**.
 2. In the **Library** pane, expand **Service Catalog**, and then select **Draft Request Offerings**.
@@ -268,8 +264,6 @@ Follow these steps to copy a service offering:
 ## Publish a service offering
 
 You can publish draft service offerings by using the Publish task or by using a change request. When you publish a service offering by using the Publish task, the service offing must contain at least one published request offering before it appears in the Self-Service Portal. If you want to have an approval process added before publishing, you can associate the service offering with a change request. If you use a change request, you can also send email notifications as the approval process occurs.
-
-You can use the following procedures to publish a draft service offering and then use a change request to publish it.
 
 To publish a draft service offering, follow these steps:
 

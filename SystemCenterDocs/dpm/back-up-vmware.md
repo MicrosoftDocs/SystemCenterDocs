@@ -565,23 +565,11 @@ The value should be the number (decimal) of virtual machines that you select for
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
-
-## VMware parallel restore in DPM 2022
-
-DPM 2022 supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, eight parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
-
-::: moniker-end
-
-::: moniker range="sc-dpm-2025"
+::: moniker range=">=sc-dpm-2022"
 
 ## VMware parallel restore
 
 DPM supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, eight parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
-
-::: moniker-end
-
-::: moniker range=">=sc-dpm-2022"
 
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.

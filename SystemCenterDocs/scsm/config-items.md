@@ -1,21 +1,19 @@
 ---
 title: Configuration items in Service Manager
-description: Lean about configuration items in Service Manager.
+description: Learn about configuration items in Service Manager.
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/28/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.assetid: 7e6ab64c-c752-4cee-9057-e4b4413e571d
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Configuration items in System Center - Service Manager
-
-
 
 Configuration items (CIs) are a way to store information about services, computers, software, software updates, users, and other undefined imported objects in the Service Manager database in Service Manager. You can select configuration items when you submit forms, such as an incident form, a change request form, or a work item form.
 

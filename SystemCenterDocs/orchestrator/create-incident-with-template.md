@@ -30,7 +30,6 @@ The following published data elements are specific to Create Incident with Templ
 
 ## Create Incident with Template Published Data
 
-
 | Element   | Description   |
 |---------------------------|------------------------------------------------------------------------------|
 | System Center Object GUID | The unique identifier (GUID) of the incident   |

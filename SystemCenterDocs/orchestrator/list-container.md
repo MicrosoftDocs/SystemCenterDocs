@@ -1,8 +1,8 @@
 ---
 title: List Container
 description: The List Container activity returns a list of the containers under the specified storage account.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 07/12/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # List Container
-
-
 
 The **List Container** activity returns a list of the containers under the specified storage account. It's part of the Azure Storage category activity.
 
