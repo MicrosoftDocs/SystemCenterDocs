@@ -37,10 +37,6 @@ This article provides the release notes for System Center 2019 - Service Managem
 
 ::: moniker-end
 
-
-
-
-
 ## Next steps
 
 - [What's new in Service Management Automation](../sma/whats-new-in-sma.md)
