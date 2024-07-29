@@ -100,9 +100,6 @@ Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK 
 PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 .NET (minimum) | 4.6 |  4.5
 
->[!Note]
-> If you run into ADK file path issue while installing VMM, copy the files from the *amd64* folder in ADK root folder to the ADK root folder itself. The default ADK folder path is *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*, but it can be different based on your choice of folder path during ADK installation.
-
 ## Servers in the VMM fabric
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
@@ -116,6 +113,8 @@ Hyper-V Server 2019 | N | N | N | N
 [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) | Y | N | N | N  
 [Azure Stack Hyper Converged Infrastructure (HCI, version 21H2)](../vmm/deploy-manage-azure-stack-hci.md)| Y | N | N | N
 [Azure Stack Hyper Converged Infrastructure (HCI, version 22H2)](../vmm/deploy-manage-azure-stack-hci.md) (Supported from VMM 2022 UR1)| Y | N | N | N
+Windows Server 2022 | Y | Y | Y | Y
+[Azure Stack Hyper Converged Infrastructure (HCI, version 23H2)](../vmm/deploy-manage-azure-stack-hci.md) (Supported from VMM 2022 UR1)| Y | N | N | N
 Windows Server 2022 | Y | Y | Y | Y
 
 ## VMware servers in the VMM fabric
