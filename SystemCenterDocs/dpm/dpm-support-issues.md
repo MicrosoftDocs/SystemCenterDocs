@@ -59,7 +59,7 @@ This article summarizes some of the common support information you might need wh
 
 **Workaround**: None. All DPM servers sharing a library must be running the same version of DPM.
 
-::: moniker range="<=sc-dpm-2016"
+::: moniker range="sc-dpm-2016"
 
 ### Upgrading System Center 2010 directly to System Center 2016 isn't supported
 
