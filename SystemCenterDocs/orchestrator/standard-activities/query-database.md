@@ -2,7 +2,7 @@
 title: Query Database 
 description: This article describes the Query Database activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/29/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -86,6 +86,13 @@ Use the following information to configure the Query Database activity.
 |**Password**|Enter the password for this database.|  
 
 ### SQL Server Connections
+
+::: moniker range="sc-orch-2025:
+
+>[!Note]
+>MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter <serverName>;Trust Server Certificate=True in **Server** field for every configuration.
+
+::: moniker-end
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  

@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/27/2024
+ms.date: 07/29/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -72,8 +72,13 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 3. Select **Next** to continue.
 
 4. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
-
+::: moniker range="<=sc-orch-2022"
 5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator.  If Trust Server Certificate isn't installed on your SQL Server, you can enable the **Trust Server Certificate** setting (not recommended). Before you enable this setting, configure your registry settings by [Enabling Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+::: moniker-end
 
 6. On the **Configure the database** page, select a database or create a new database, and select **Next**.
 
@@ -125,8 +130,13 @@ If a prerequisite isn't met, a page displays the information about the prerequis
    3. Select **Next** to continue.
 
 6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
-
+::: moniker range="<=sc-orch-2022"
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server.  If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by [Enabling Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+::: moniker-end
 
 8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
@@ -183,8 +193,13 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
     > ```
     > aspnet_regiis.exe -ga DOMAIN\USER
     > ```
-
+::: moniker range="<=sc-orch-2022"
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous steps are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by [Enabling Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous steps are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+::: moniker-end
 
 8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
@@ -310,6 +325,32 @@ The **Installing features** page appears and displays the installation progress.
 3. Select **Turn on network discovery**, and select **Save changes**.
 
     If you're prompted for an administrator password or confirmation, enter the password or provide confirmation.
+
+::: moniker range=sc-orch-2025"
+
+## Enable Trust server connection (not recommended)
+
+Due to breaking changes in EFCore 8 and OLEDB 19, [encrypt defaults to **True** for SQL Server connection](/ef/core/what-is-new/ef-core-7.0/breaking-changes?toc=%2Fdotnet%2Fcore%2Fcompatibility%2Ftoc.json&bc=%2Fdotnet%2Fbreadcrumb%2Ftoc.json&tabs=v7#encrypt-defaults-to-true-for-sql-server-connections). Connection to SQL Server is always encrypted which requires certificate that client can trust.  
+
+You can proceed with any one of the following ways:
+
+- [Install a valid certificate on a server](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16).
+    >[!Note]
+    > It is recommended to obtain a certificate and ensure it is signed by an authority trusted by the client.
+- `TrustServerCertificate=True` to allow bypassing the normal trust mechanism.
+
+    1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
+    1. During installation, check the checkbox **Trust Server Certificate (not recommended)**.
+
+    Alternatively, On the **Data Store Configuration** page, in **Server**, enter *localhost;Trust Server Certificate=True*.
+
+    The following configuration happens:
+
+    1. For SQL Connection string Trust Server Certificate=true is added.
+
+    2. In webapi.config <environmentVariable name="Database__TrustServerCertificate" value="true"/> is added.
+
+::: moniker-end
 
 ## Install from the command prompt
 
