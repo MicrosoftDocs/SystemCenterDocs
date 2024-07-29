@@ -19,8 +19,13 @@ This article provides information about how to set up an Azure Stack HCI cluster
 
 ::: moniker range="sc-vmm-2022"
 
-[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2. The current product is Azure Stack HCI, version 21H2. Starting with [System Center 2022](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2022#support-for-azure-stack-hci-clusters-21h2&preserve-view=true), VMM supports Azure Stack HCI, version 20H2; Azure Stack HCI, version 21H2; and Azure Stack HCI, version 22H2 (supported from VMM 2022 UR1).
+[VMM 2022](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2022#support-for-azure-stack-hci-clusters-21h2&preserve-view=true) supports Azure Stack HCI, version 20H2; Azure Stack HCI, version 21H2; and Azure Stack HCI, version 22H2 (supported from VMM 2022 UR1).
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2. The current product is Azure Stack HCI, version 21H2.
 
 ::: moniker-end
 
