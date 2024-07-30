@@ -5,15 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/28/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Post-upgrade tasks
-
-
 
 This article describes the tasks you should complete after upgrading System Center - Service Manager.
 
@@ -31,7 +29,7 @@ Follow these steps to restart the Data Access service:
 
 3. In the **Services** window, in the **Services (Local)** pane, right-click **System Center Data Access Service**, and select **Start**.  
 
-### Start Service Manager workflows  
+### Start Service Manager workflows
 
 Follow these steps to start Service Manager workflows:
 
@@ -56,43 +54,43 @@ Follow these steps to restart data warehouse jobs:
     > [!NOTE]  
     > It's assumed in the following command examples that Service Manager was installed in its default location on the C: drive. If necessary, change directories to the location where you installed Service Manager.
 
-    ```  
+    ```powershell
     cd 'C:\Program Files\Microsoft System Center <version>\Service Manager'  
     ```  
 
-    ```  
+    ```powershell
     import-module $PWD/Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1  
     ```  
 
-    ```  
+    ```powershell
     Get-SCDWJob  
     ```  
 
-    ```  
+    ```powershell
     Enable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>  
     ```  
 
-    ```  
+    ```powershell
     Enable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>  
     ```  
 
-    ```  
+    ```powershell   
     Enable-SCDWJobSchedule -JobName Transform.Common  
     ```  
 
-    ```  
+    ```powershell
     Enable-SCDWJobSchedule -JobName Load.Common  
     ```  
 
-    ```  
+    ```powershell
     Enable-SCDWJobSchedule -JobName DWMaintenance  
     ```  
 
-    ```  
+    ```powershell
     Enable-SCDWJobSchedule -JobName MPSyncJob  
     ```  
 
-    ```  
+    ```powershell   
     Start-SCDWJob -JobName MPSyncJob  
     ```  
 

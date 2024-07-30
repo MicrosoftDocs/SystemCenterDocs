@@ -1,12 +1,12 @@
 ---
 title: Customize and author classes
 description: Learn about customizing and authoring classes with Service Manager authoring.
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/26/2023
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -16,8 +16,6 @@ ms.assetid: 1d7437cd-2451-417e-b415-735bdca051b8
 ---
 
 # Customize and author classes with Service Manager authoring
-
-
 
 A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.  
 
@@ -204,7 +202,7 @@ You can use the **Class Browser** pane in the Service Manager Authoring Tool to 
 
  When you select a management pack in the **Class Browser** pane, all the classes from the selected management pack are displayed, and you can expand the class for which you want to view properties. When you select **All Management Packs**, all the classes from all the management packs in the Library folder are displayed. Whenever you change the selection of the management pack, you must refresh the **Class Browser** pane.  
 
-### To browse a class  
+### Browse a class  
 
 1. If the **Class Browser** pane isn't visible in the Authoring Tool, select **View**, and select **Class Browser**.  
 
@@ -260,7 +258,7 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
   The following procedures describe all the methods for defining class inheritance in the Authoring Tool.  
 
-### To start with the configuration item class or the work item class as a base class  
+### Start with the configuration item class or the work item class as a base class  
 
 1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
@@ -279,7 +277,7 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 6. Select **Create property** or **Create relationship** to define new properties and new relationships for the class.  
 
-### To start with a selected base class  
+### Start with a selected base class  
 
 1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
@@ -291,7 +289,7 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 4. You can now select **Create property** or **Create relationship** to add properties or a relationship to the new class.  
 
-### To start without a selected base class  
+### Start without a selected base class  
 
 1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
@@ -317,7 +315,7 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 You can extend a class in the Service Manager Authoring Tool by adding properties and relationships to the definition of the class. Extending a class affects all the existing instances of that class: all instances of that class will be updated to include the new properties and relationships.  
 
-### To extend a class  
+### Extend a class  
 
 1. If the **Management Pack Explorer** pane isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 

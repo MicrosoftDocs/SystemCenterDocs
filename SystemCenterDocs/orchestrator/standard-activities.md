@@ -15,8 +15,6 @@ ms.custom: UpdateFrequency3
 
 # Standard activities
 
-
-
 Standard Activities enable you to create runbooks to automate your data center procedures.
 
 The following table provides a brief description of tasks you can accomplish with each activity category.  

@@ -14,8 +14,9 @@ ms.custom: UpdateFrequency.5
 
 # Upgrade System Center Orchestrator
 
-
 ::: moniker range="sc-orch-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 This article provides the upgrade information for System Center 2025 - Orchestrator.
 

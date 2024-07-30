@@ -18,8 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete Container
 
-
-
 The **Delete Container** activity marks the specified container for deletion. The container and any blobs contained within it are later deleted during garbage collection. It's part of the **Azure Storage** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

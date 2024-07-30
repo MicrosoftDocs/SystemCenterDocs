@@ -14,8 +14,6 @@ ms.custom: UpdateFrequency3, engagement-fy23
 ---
 # Stop Service activity
 
-
-
 The Stop Service activity is used in a runbook to stop a VMM service.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

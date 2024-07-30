@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Remove User Role
 
-
-
 Deletes a user role from the VMM server.
 
 ## Remove User Role required properties

@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Utilities
 
-
-
 The following table provides a brief description of tasks you can accomplish when using each Utilities activity.  
 
 |Tasks|Utilities Activities|  

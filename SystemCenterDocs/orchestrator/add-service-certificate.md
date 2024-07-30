@@ -42,6 +42,6 @@ There are no optional properties for this runbook activity.
 | Certificate File Path | The path to the certificate file.   | String   |
 | Service Name   | The name of the Windows Azure cloud service.   | String   |
 
-##  Next steps
+## Next steps
 
 [Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

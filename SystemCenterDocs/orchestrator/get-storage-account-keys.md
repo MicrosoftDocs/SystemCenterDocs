@@ -18,7 +18,6 @@ monikerRange: '<=sc-orch-2019'
 
 # Get Storage Account Keys
 
-
 The **Get Storage Account Keys** activity returns the primary and secondary access keys for the specified storage account. It's part of the **Azure Storage** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

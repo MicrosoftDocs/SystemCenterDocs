@@ -243,7 +243,7 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
     ::: moniker range=">=sc-dpm-2022"
 
-    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-2022&preserve-view=true).
+    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions).
 
     ::: moniker-end
 

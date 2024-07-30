@@ -16,6 +16,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 ::: moniker range="sc-sma-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article provides details of the system requirements for System Center 2025 - Service Management Automation (SMA).
 
 [!INCLUDE [system-reqs-sma-2025.md](../includes/system-reqs-sma-2025.md)]

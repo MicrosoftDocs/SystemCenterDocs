@@ -17,7 +17,6 @@ manager: jsuri
 
 # Download Document
 
-
 The **Download Document** activity is used in a runbook to download a document from a Microsoft SharePoint document library.
 
 The following tables list the required properties and Published Data for this activity.

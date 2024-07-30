@@ -18,8 +18,6 @@ robots: noindex
 
 # Delete collection rule activity
 
-
-
 The Delete Collection Rule activity is used to redefine the membership
 of a collection by removing collection membership rules from the
 collection. Membership rules determine the resources that are included
@@ -48,7 +46,6 @@ optional properties into published data.
 
   - **Name**: the value is a collection name
 
-
 - Membership Rule: The name for the rule that is shown in the Configuration Manager console for the collection’s membership rules
 
 - Membership Rule Type: The type of the membership rule to be deleted. Options are:
@@ -61,7 +58,6 @@ optional properties into published data.
 
   - **Exclude Collection**: a collection whose members are excluded in this collection’s membership
 
-
 ## Delete collection published data
 
 The following values are published in addition to the input values
@@ -69,7 +65,7 @@ above:
   Connection      Specifies the name of the connection to the Configuration Manager server
   Collection ID   Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).
 
-## To configure the delete collection activity
+## Configure the delete collection activity
 
 1. From the **Activities** pane, drag a **Delete Collection** activity
    to the active runbook.

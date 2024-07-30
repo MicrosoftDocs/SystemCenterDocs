@@ -5,7 +5,7 @@ description: Learn how to configure Software load balancer (SLB) for the interna
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/01/2024
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -54,25 +54,26 @@ Use the following procedures to configure the VIPs to load balance the workload 
 2. In the **Name** page, provide the name and optional description. Specify the **Virtual IP Port** that will be used as front-end port for the network traffic. In the **Backend port**, specify the port on which the back-end workloads are hosted. Select **Next**.
 
     ![Screenshot of VIP template type.](media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
-3. In **Specify a Template type**, select Specific. In **Manufacturer**, select Microsoft.  In **Model**, select Microsoft Network Controller. Select **Next**.
+3. In **Type**, under **Specify a template type**, select **Specific**. Select **Microsoft** from the Manufacturer dropdown and **Microsoft Network Controller** from the Model dropdown.
+4. Select **Next**.
 
     ![Screenshot of VIP protocol options.](media/sdn-load-balance-network-traffic/lb-protocol-options-image3.png)
-4. In **Specify Protocol options**, select the Custom option and type TCP/UDP in Protocol name. Select **Next**.
+5. In **Specify Protocol options**, select the Custom option and TCP/UDP in Protocol name. Select **Next**.
 
     > [!NOTE]
     > SLB supports only layer 4 load balancing of TCP/UDP traffic. HTTP/HTTPS protocols are not supported.
 
-5. For **Persistence** and **Load Balancing**, use the defaults. Select **Next**.
+6. For **Persistence** and **Load Balancing**, use the defaults. Select **Next**.
 
     ![Screenshot of Health Monitor.](media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
     > [!NOTE]
     > SLB doesn’t support persistence and different load balancing methods. By default, SLB uses Round Robin algorithm for load balancing.
 
-6. In **Health Monitors**, optionally, insert appropriate values. Select **Next**.
+7. In **Health Monitors**, optionally, insert appropriate values. Select **Next**.
 
     Options: TCP and HTTP are supported as health monitor protocols if SLB is used.
 
-7. Verify the settings, and select **Finish**.
+8. Verify the settings, and select **Finish**.
 
 Once the template is created, you can find this under **Fabric** > **VIP Templates**.
 

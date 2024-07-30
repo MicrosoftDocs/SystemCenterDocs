@@ -5,16 +5,14 @@ description: This article describes how to install the Operations Manager Audit 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
-ms.custom: na, engagement-fy23
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Install an Audit Collection Services (ACS) collector and database
-
-
 
 Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Both the procedures are performed on the computer that is designated as your ACS collector.
 

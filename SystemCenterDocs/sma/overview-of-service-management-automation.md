@@ -13,7 +13,11 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Overview of Service Management Automation
 
+::: moniker range="sc-sma-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+::: moniker-end
 
 Service Management Automation (SMA) is a set of tools that is integrated as the SMA extension in Microsoft Azure Pack for Windows Server. IT pros and IT developers can use SMA to construct, run, and manage runbooks to integrate, orchestrate, and automate IT business processes. SMA runbooks run on the Windows PowerShell engine.
 

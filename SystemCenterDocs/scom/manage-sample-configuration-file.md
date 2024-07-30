@@ -5,8 +5,8 @@ description: This article describes a sample configuration file for collecting L
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/24/2024
-ms.custom: UpdateFrequency3
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
@@ -14,8 +14,6 @@ ms.topic: article
 ---
 
 # Sample configuration file for collecting Linux log files
-
-
 
 ::: moniker range=">=sc-om-2019"
 

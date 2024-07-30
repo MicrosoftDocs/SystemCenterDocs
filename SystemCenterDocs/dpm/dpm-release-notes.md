@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: Release Notes for System Center DPM
-description: Release notes about the DPM 2016, 2019 and 2022 releases.
+description: Release notes about the DPM 2016, 2019, 2022 and 2025 releases.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -13,6 +13,22 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # System Center DPM Release Notes
+
+::: moniker range="sc-dpm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Data Protection Manager (DPM), including the known issues and workarounds for DPM 2025.
+
+This article also includes the release notes for DPM 2025 Hotfix KB.
+
+We recommend you to see the following articles for detailed information about what DPM supports and can back up:
+
+- [What can DPM back up](dpm-protection-matrix.md)
+- [What DPM supports](dpm-support-issues.md)
+
+::: moniker-end
+
 ::: moniker range="sc-dpm-2019"
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes), DPM [2019 UR2](#dpm-2019-ur2-release-notes), DPM [2019 UR3](#dpm-2019-ur3-release-notes), DPM [2019 UR4](#dpm-2019-ur4-release-notes), [2019 UR5](#dpm-2019-ur5-release-notes), and [2019 UR6](#dpm-2019-ur6-release-notes) as applicable.
@@ -178,7 +194,7 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 ### Stopping protection of a data source from fails with ID: 33469
 
-**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
+**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469 - *This operation is not supported on the current version of the MARS agent*.
 
 This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
 

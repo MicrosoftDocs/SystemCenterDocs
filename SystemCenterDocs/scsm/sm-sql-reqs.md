@@ -10,7 +10,6 @@ keywords:
 ms.date: 04/18/2024
 ms.subservice: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
-monikerRange:  sc-sm-2016 || sc-sm-2019 || sc-sm-2022
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
@@ -22,7 +21,7 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 
 ## SQL Server version support
 
-::: moniker range="<sc-sm-2019"
+::: moniker range="sc-sm-2016"
 
 |**System Center 2016** component |SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard  (64-bit)|
 |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|-------------------------------------|

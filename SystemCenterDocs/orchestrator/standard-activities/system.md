@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # System
 
-
-
 The following table provides a brief description of tasks you can accomplish when using each System activity.  
 
 |Tasks|System Activities|  

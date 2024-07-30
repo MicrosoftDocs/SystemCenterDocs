@@ -18,6 +18,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 
 ::: moniker range="sc-om-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article lists Microsoft System Center 2025 - Operations Manager build versions.
 
 [!INCLUDE [release-build-versions-2025.md](../includes/release-build-versions-2025.md)]
