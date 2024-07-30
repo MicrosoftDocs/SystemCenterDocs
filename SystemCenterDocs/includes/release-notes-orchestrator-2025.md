@@ -14,7 +14,7 @@ title:  include file
 
 ## Orchestrator 2025 release notes
 
-The following sections summarizes the release notes for Orchestrator 2025, and includes all issues fixed until SCO 2022 UR2.
+The following sections summarize the release notes for Orchestrator 2025, and include all issues fixed until SCO 2022 UR2.
 
 Additionally, the following issues have been fixed:
 
