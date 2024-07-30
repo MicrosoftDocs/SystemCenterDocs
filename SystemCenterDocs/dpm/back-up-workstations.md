@@ -305,7 +305,7 @@ To configure DPM recovery permissions for users that are not members of the loca
      >[!Note]
      > Non-Admin users added to the registry have access only to the recovery points created after the user was added. Earlier recovery points are accessible by Administrators only.
 
-[Recover data for clients](#tab/RecoverData)
+# [Recover data for clients](#tab/RecoverData)
 
 **Recover data from the DPM console as follows:**
 
