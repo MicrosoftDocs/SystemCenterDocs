@@ -176,7 +176,7 @@ Select the required tab for steps to allow **clients to recover their own data**
 
 ::: moniker range="sc-dpm-2016"
 
-# [Allow clients to recover their data](#tab/AllowClients)
+# [Allow clients to recover their data](#tab/AllowClients2016)
 
 End user recovery enables users to independently recover file data by retrieving recovery points of their files.
 
@@ -201,7 +201,7 @@ End user recovery enables users to independently recover file data by retrieving
 
 2. After AD settings are complete in the **End-user Recovery** tab, select **Enable end-user recovery**.
 
-# [Recover data for clients](#tab/RecoverData)
+# [Recover data for clients](#tab/RecoverData2016)
 
 **Recover data from the DPM console as follows:**
 
@@ -305,7 +305,7 @@ To configure DPM recovery permissions for users that are not members of the loca
      >[!Note]
      > Non-Admin users added to the registry have access only to the recovery points created after the user was added. Earlier recovery points are accessible by Administrators only.
 
-s# [Recover data for clients](#tab/RecoverData)
+[Recover data for clients](#tab/RecoverData)
 
 **Recover data from the DPM console as follows:**
 
@@ -350,3 +350,5 @@ s# [Recover data for clients](#tab/RecoverData)
 2. In **Properties** > **Previous Versions**, select the version that you want to recover from.
 
 ---
+
+::: moniker-end
