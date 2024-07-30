@@ -16,9 +16,8 @@ manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
+
 # Delete Service Certificate
-
-
 
 The **Delete Service Certificate** activity is used in a runbook to delete a service certificate from the certificate store of a cloud service. It's part of the **Azure Certificates** category activity.
 

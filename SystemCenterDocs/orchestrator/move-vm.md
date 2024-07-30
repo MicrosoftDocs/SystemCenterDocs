@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Move VM
 
-
-
 The Move VM activity is used to move the selected virtual machine from one network location to another.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

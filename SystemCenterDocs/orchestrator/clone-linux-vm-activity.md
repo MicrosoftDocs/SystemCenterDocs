@@ -80,18 +80,18 @@ With the exception of "Source VM/Template Path," all properties and published da
 | Virtual Processors   | The number of virtual processors assigned to the cloned virtual machine.   | Integer   |
 | DNS Suffix   | The DNS Suffix that will be assigned to the network adapter of the cloned virtual machine. For example, example.com. | String   |
 
-## Configuring the Clone Linux VM Activity
+## Configure the Clone Linux VM Activity
 
 The following procedure describes the steps required to configure a Clone Linux VM activity.
 
-1.  From the **Activities** pane, drag a **Clone Linux VM** activity to the active runbook.
+1. From the **Activities** pane, drag a **Clone Linux VM** activity to the active runbook.
 
-2.  Double-click the **Clone Linux VM** activity icon. The **Properties** dialog opens.
+2. Double-click the **Clone Linux VM** activity icon. The **Properties** dialog opens.
 
-3.  Configure the settings in the **Properties** tab as follows:
+3. Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

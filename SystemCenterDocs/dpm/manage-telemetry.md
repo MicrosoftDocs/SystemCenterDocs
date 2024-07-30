@@ -5,12 +5,11 @@ description: This article provides information about how to manage the telemetry
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  10/13/2022
+ms.date:  07/16/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: data-protection-manager
-MonikerRange: sc-dpm-2019||sc-dpm-2016||sc-dpm-2022||sc-dpm-2025
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2,engagement-fy24
 ---
 
 # Manage telemetry settings

@@ -5,16 +5,14 @@ description: This article provides a high-level overview of what preparations yo
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/22/2022
-ms.custom: na, intro-deployment
+ms.date: 07/22/2024
+ms.custom: intro-deployment, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Deploy System Center Operations Manager
-
-
 
 All System Center Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs require.
 
@@ -34,7 +32,7 @@ Before you begin your deployment, you should read the release notes, and ensure 
 
 - [Release Notes for System Center 2019 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2019)
 
--   [Release Notes for System Center 2016 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2016)
+- [Release Notes for System Center 2016 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2016)
 
 - [System Requirements for System Center Operations Manager](./system-requirements.md)
 

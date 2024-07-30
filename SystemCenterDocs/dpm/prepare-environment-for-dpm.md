@@ -17,6 +17,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 ::: moniker range="sc-dpm-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
 [!INCLUDE [system-reqs-dpm-2025.md](../includes/system-reqs-dpm-2025.md)]

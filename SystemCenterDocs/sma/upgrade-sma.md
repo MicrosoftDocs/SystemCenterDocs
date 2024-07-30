@@ -16,6 +16,8 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 ::: moniker range="=sc-sma-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
 This article provides the upgrade information for System Center 2025 - Service Management Automation (SMA).
 
 [!INCLUDE [upgrade-to-sma-2025.md](../includes/upgrade-to-sma-2025.md)]

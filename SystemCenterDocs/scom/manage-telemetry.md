@@ -5,16 +5,14 @@ description: This article provides information about how to manage the telemetry
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  07/20/2023
+ms.date:  07/22/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: operations-manager
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ---
 
 # Manage telemetry settings in Operations Manager
-
-
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Operations Manager.
 
@@ -38,13 +36,12 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
    > [!NOTE]
    > We recommend you to read the Privacy Statement before you select the option.
-   > -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
-   > -  To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
+   > - To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
+   > - To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
 
 ## Telemetry data collected
 
 The following table details the telemetry data that is collected by Operations Manager:  
-
 
 | Data related To | Data collected |
 | --- | --- |
@@ -73,7 +70,6 @@ The following table details the telemetry data that is collected by Operations M
 - System Center ID the System Center - Operations Manager environment resides in
 - Selected features
 
-
 ### HTML5 dashboards data collected through App Insights
 
 - All API exceptions
@@ -97,6 +93,6 @@ The following table details the telemetry data that is collected by Operations M
 - Count of icons in topology widget
 - Widget count in a dashboard
 
-
 ## Next steps
+
 See [Plan agent deployment](plan-planning-agent-deployment.md)

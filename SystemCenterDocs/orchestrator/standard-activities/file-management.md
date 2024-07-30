@@ -2,7 +2,7 @@
 title: File Management
 description: This article provides information on the various File Management activities.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/15/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -16,8 +16,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # File Management
-
-
 
 The following table provides a brief description of tasks you can accomplish when using each File Management activity.  
 

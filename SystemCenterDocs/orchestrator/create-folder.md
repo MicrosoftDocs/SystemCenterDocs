@@ -18,8 +18,6 @@ ms.date: 05/16/2024
 ---
 # Create Folder
 
-
-
 The Create Folder activity is used in a runbook to create a folder on an FTP server.
 
 This activity publishes all of the data from the required properties into published data.

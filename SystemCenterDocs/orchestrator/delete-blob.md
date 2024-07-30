@@ -18,8 +18,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete Blob
 
-
-
 The **Delete Blob** marks the specified blob or snapshot for deletion. It's part of the **Azure Storage** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Mailbox
 
-
-
 You can use the Update Mailbox activity to modify the settings of an existing mailbox in an on-premises or online environment.
 
 The following tables list the required properties, optional properties, and published data for this activity.

@@ -44,6 +44,11 @@ Table A
 |A4V2|40|150 GB|Net 10% churn|
 |A8V2|60|200 GB|Net 15% churn|
 
+:::moniker range="sc-dpm-2025"
+>[!NOTE]
+>As a Windows virtual machine in VMware - You can install DPM 2025 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+:::moniker-end
+
 :::moniker range="sc-dpm-2022"
 >[!NOTE]
 >As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
@@ -57,7 +62,7 @@ Table A
 ## <a name="BKMK_SQL"></a>Set up a SQL Server database
 You'll need to set up a SQL Server database if:
 
-::: moniker range="<= sc-dpm-2019"
+::: moniker range="<=sc-dpm-2019"
 
 - You're running DPM 2019, 2016
 

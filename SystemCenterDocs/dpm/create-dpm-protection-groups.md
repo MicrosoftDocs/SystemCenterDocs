@@ -2,14 +2,14 @@
 description: This article describes what DPM protection groups consist of and why you should use them.
 ms.topic: article
 ms.service: system-center
-ms.date: 11/25/2021
+ms.date: 07/16/2024
 title: Deploy protection groups
 ms.subservice: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: intro-deployment, UpdateFrequency2
+ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
 ---
 
 # Deploy protection groups
@@ -52,7 +52,7 @@ There are a few common ways to organize your protection groups:
 
 - **By data characteristics** - For example how often data changes, how rapidly it grows, or its storage requirements.
 
-## Choosing a name for the protection group
+## Choose a name for the protection group
 
 When choosing a name for your Protection Group, you should choose a meaningful name. The name must be unique to the DPM server. The Protection Group name can include any combination of alphanumeric characters and spaces, but it can't be longer than 64 characters. DPM doesn't support special characters such as `|`, `/`, `(`, `)`, or `.`.
 

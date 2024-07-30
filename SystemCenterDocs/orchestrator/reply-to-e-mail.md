@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Reply To E-Mail
 
-
-
 The Reply To E-Mail activity is used in a runbook to reply to email messages.
 
 The following tables list the required properties, optional properties, and published data for this activity.

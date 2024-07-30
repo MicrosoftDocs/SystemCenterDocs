@@ -7,15 +7,13 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/28/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Import data from Active Directory Domain Services
-
-
 
 The Service Manager database in Service Manager contains information about your enterprise, and it's used by all the parts of your service management structure. You can use an Active Directory connector to add users, groups, printers, and computers (and only these object types) as configuration items into the Service Manager database.
 
@@ -43,7 +41,7 @@ You can use the following procedures in Service Manager to create, validate, and
 
 ::: moniker-end
 
-To create an Active Directory connector and to import objects from AD DS, follow these steps:
+### Create an Active Directory connector and import objects from AD DS
 
 1. In the Service Manager console, select **Administration**.
 
@@ -140,7 +138,7 @@ To ensure that the Service Manager database is up to date, the Active Directory 
 
 You can use the following procedure to disable or enable an Active Directory connector in Service Manager and validate its change in status.
 
-To disable an Active Directory connector, follow these steps:
+### Disable an Active Directory connector
 
 1. In the Service Manager console, select **Administration**.
 

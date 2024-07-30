@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Group
 
-
-
 You can use the Update Group activity in a runbook to update properties of a group in Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

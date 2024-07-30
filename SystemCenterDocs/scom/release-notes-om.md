@@ -14,6 +14,16 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Release notes for System Center Operations Manager
 
+::: moniker range="sc-om-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Operations Manager.  
+
+[!INCLUDE [release-notes-om-2025.md](../includes/release-notes-om-2025.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 This article lists the release notes for System Center 2019 - Operations Manager.  This article also includes the release notes for Operations Manager 2019 UR1, UR2, UR4, and UR5.

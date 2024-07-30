@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Monitor Alert
 
-
-
 The Monitor Alert activity triggers a runbook when new Operations Manager alerts are generated, and when existing Operations Manager alerts are updated, according to filter criteria that you specify. For example, you can use the Monitor Alert activity to trigger a diagnostic and corrective runbook that responds to critical alerts in your network.
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all the data from the required and optional properties into published data.

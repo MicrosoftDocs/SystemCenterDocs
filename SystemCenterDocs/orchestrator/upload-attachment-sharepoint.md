@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Upload attachment to SharePoint
 
-
-
 The **Upload Attachment** activity is used in a runbook to attach a file to a Microsoft SharePoint list item.
 
 The following tables list the required properties and Published Data for this activity.

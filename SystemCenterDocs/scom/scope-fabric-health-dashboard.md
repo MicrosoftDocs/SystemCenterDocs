@@ -5,16 +5,14 @@ description: This article provides an overview of scoping the Fabric Health Dash
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/30/2020
-ms.custom: UpdateFrequency3
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Scope the Fabric Health Dashboard to a specific cloud
-
-
 
 Using the Fabric Health Dashboard, you can see the overall cloud health and the health of its underlying fabric, you can also use the Fabric Health Dashboard to see the fabric health of any cloud you select. When you scope the dashboard to a particular cloud in the **Cloud State** view, the Fabric Health Dashboard displays a grouping of all of the components that are relevant for that cloud only. When you see a health issue with any component, you can then drill down to investigate a single component in terms of that cloud only. In this way, a fabric administrator can do root cause analysis by digging deeper into an issue, which can lead to other dashboard views, such as the network monitoring dashboard.
 

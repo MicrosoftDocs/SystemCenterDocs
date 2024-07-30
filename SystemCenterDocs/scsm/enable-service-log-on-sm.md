@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/13/2023
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -13,7 +13,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5eb94e4f-72b8-46ec-8417-5d776cc6288f
 monikerRange: '>=sc-sm-2019'
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Enable Service Logon
@@ -54,7 +54,7 @@ Here's a sample error:
 
 ## Enable service log on through a local group policy
 
-To enable service log on through a local group policy, follow these steps:
+Follow these steps:
 
 1. Sign in with administrator privileges to the computer from which you want to provide **Log on as Service** permission to accounts.
 2. Go to **Administrative Tools** and select **Local Security Policy**.

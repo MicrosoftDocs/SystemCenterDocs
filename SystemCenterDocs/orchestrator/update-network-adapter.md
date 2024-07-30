@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Network Adapter
 
-
-
 The Update Network Adapter activity is used to make changes to an existing network adapter.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -40,7 +38,6 @@ The activity publishes all the data from the required and optional properties in
 | Network Tag   | An alphanumeric value of your choice to differentiate the host's virtual networks, based on a criterion such as throughput or security. Network tags can be used to match virtual machines with suitable hosts.    |
 | Virtual Network ID | The unique identifier (GUID) of the Virtual Network specified at the host level of the Virtual Machine Manager configuration      |
 | VLAN ID   | A numeric identifier in the range 1 through 4094 for the Network VLAN      |
-
 
 ## Update Network Adapter Published Data
 

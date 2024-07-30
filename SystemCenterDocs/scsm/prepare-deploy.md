@@ -5,15 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/14/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Prepare for System Center - Service Manager deployment
-
-
 
 Before you start the deployment of System Center - Service Manager, you create a group of users in Active Directory Domain Services \(AD DS\), and you create or identify a domain account that will be used during the Setup process. Ensure that the domain account is a member of the appropriate groups that are necessary for proper operation of Service Manager. Keep the following in mind when you're installing Service Manager and Operations Manager on the same server:  
 
@@ -128,10 +126,9 @@ You will have to provide credentials for the accounts in the following table dur
  To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment** .
 
 **Optional**:
-
- - Deny log on as a batch job
- - Deny log on through Remote Desktop Services
-
+- Deny log on as a batch job
+- Deny log on through Remote Desktop Services
+ 
 Select the required tab to view the permissions and best practices:
 
 # [Operations Manager Alert connector](#tab/OMAlertConnector)
@@ -161,8 +158,6 @@ Select the required tab to view the permissions and best practices:
 ---
 
 ## Prepare computers for Service Manager deployment
-
-Use the following procedures to prepare computers for deployment of Service Manager.  
 
 To prepare computers for Service Manager deployment, follow these steps:
 
