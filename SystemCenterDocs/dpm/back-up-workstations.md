@@ -256,29 +256,30 @@ End user recovery enables users to independently recover file data by retrieving
 >[!Note]
 >By default, DPM allows only the local administrator to perform user recoveries on the computer. The user account must be explicitly named as a local administrator on the client. It can't be a local administrator through group membership.
 
-For more information, see **Enabling non-administrators to recover files**.
+For more information, see [**Enable non-administrators to recover files**](#enable-non-administrators-to-recover-files).
 
 >[!Note]
->DPM Client UI tool supports Windows Communication Foundation (WCF) that uses TCP port 6075 on the DPM server for communication while performing recoveries. DPM automatically configures firewall rules starting with DPMAM_WFC_ on the DPM Server to allow this traffic.
+>DPM Client UI tool supports Windows Communication Foundation (WCF) that uses TCP port 6075 on the DPM server for communication while performing recoveries. On the DPM server, DPM automatically configures firewall rules starting with DPMAM_WFC_ to allow this traffic.
 
-DPM enables you to recover files and folders from backups stored on the DPM server that are managed by the backup administrator. To recover your data, you need to know the name of the DPM server on which the data was backed up. To find the name of the DPM server, contact your backup administrator.
+DPM enables you to recover files and folders from backups stored on the DPM server that are managed by the backup administrator. To recover your data, you must know the name of the DPM server on which the data was backed up. To know the name of the DPM server, contact your backup administrator.
 
 To recover data from backups stored on the DPM server, follow these steps:
 
-1. Select **Start** > **All Apps** and then select **Microsoft System Center DPM Client**. Alternately, you can select the DPM Client icon in the system tray.
+1. Select **Start** > **All Apps** and then select **Microsoft System Center DPM Client**. 
+     Alternately, you can select the DPM Client icon in the system tray.
 
 2. In the **Data Protection Manager Client** page, select **Recovery** tab.
 
-3. In the **Search for recovery points on:** field, the FQDN of the DPM Server must be auto-populated, if not, enter the name of DPM server on which the data was backed up.
+3. The FQDN of the DPM Server is auto-populated in the **Search for recovery points on:** field. If not, enter the name of DPM server on which the data was backed up.
 
      >[!Note]
-     >To find the name of the DPM server, contact your backup administrator.
+     >To know the name of the DPM server, contact your backup administrator.
 
 4. Select the **Search** icon to start the search for the existing recovery points on the DPM server. This lists the computers to which the user has permission.
-     - Select **+** next to the computer you want to recover data from to displays all the recovery points in the display pane.
-     - In the display pane, the **Time** column lists the time stamps for each recovery point and the **Link** column has an **Open…** link which points to the backup folder location on the DPM server for the each available recovery point listed.
+     - Select **+** next to the computer you want to recover data to displays all the recovery points in the display pane.
+     - In the display pane, the **Time** column lists the time stamps for each recovery point and the **Link** column has an **Open…** link that points to the backup folder location on the DPM server for the each available recovery point listed.
 
-5. Select **Open…** for the date and time of the recovery point to mount and access the recovery point data. Navigate to the file or folder you want to restore then right-click and **copy** the data to be recovered then **paste** the data in the desired location.
+5. Select **Open…** for the date and time of the recovery point to mount and access the recovery point data. Navigate to the file or folder you want to restore. Then, right-click and **copy** the data to be recovered and **paste** the data in the desired location.
 
 ## Enable non-administrators to recover files
 
@@ -286,19 +287,19 @@ The administrator of a client computer must authorize the username of non-admin 
 
 To do this, the administrator must add the following registry key and value for each of these non-admin users. This is single value that contains a comma-separated list of client users.
 
-**Key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection
-**Value**: ClientOwners
-**Type**: String
-**Data**: Names of non-admin users. This must be a comma-separated list of user names without any leading or trailing spaces.
+**Key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection <br>
+**Value**: ClientOwners<br>
+**Type**: String<br>
+**Data**: Names of non-admin users. This must be a comma-separated list of user names without any leading or trailing spaces.<br>
           For example: *Domain\User1,Domain\User2,Domain\User3 (and so on)*
 
-To configure DPM recovery permissions for users that are not members of the local administrators group, follow these steps:
+To configure DPM recovery permissions for users who are not members of the local administrators group, follow these steps:
 
 1. Sign in to the DPM protected client computer with a user account that is a member of the local administrators group.
 
-2. Open the registry editor and navigate to *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection*.
+2. Open the registry editor and navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection`.
 
-3. Right-click **ClientProtection** key and select new **String Value** and name the new value **ClientOwners**.
+3. Right-click **ClientProtection** key and select new **String Value** and name the new value as **ClientOwners**.
 
      - Double-click the **ClientOwner** to add a single user using the Domain\User format or add multiple users separated by a comma. Ensure not to use any leading or trailing spaces in the list.
 
