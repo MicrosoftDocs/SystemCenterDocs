@@ -3,7 +3,7 @@ description: You can use DPM to back up your system state and provide bare metal
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/29/2024
+ms.date: 07/30/2024
 title: Back up system state and bare metal
 ms.subservice: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -49,7 +49,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 |SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost server (database/transaction logs intact)|N|N|Y|
 |SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost server (database/transaction logs lost)|N|N|Y<br /><br />BMR recovery followed by regular DPM recovery|
 
-## How system state backup works
+## System state backup workflow
 
 1. When a system state backup runs, DPM communicates with WSB to request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. WSB will use this drive for backups.
 
@@ -193,11 +193,7 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure you select the workloads that you want to back up to Azure.
 
-::: moniker range="sc-dpm-2016"
-
 11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
-
-::: moniker-end
 
 ::: moniker range=">=sc-dpm-2019"
 
