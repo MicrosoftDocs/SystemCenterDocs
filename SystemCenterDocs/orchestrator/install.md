@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/29/2024
+ms.date: 07/30/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -57,7 +57,7 @@ This article provides detailed installation instructions for the various Orchest
     > Before you begin setup, close any open programs, and ensure that there are no pending restarts on the computer. For example, if you've installed a server role by using System Center - Service Manager or have applied a security update, you might have to restart the computer, and then sign in to the computer with the same user account to finish the installation of the server role or the security update.
 
     > [!NOTE]
-    > If User Account Control is enabled, then you will be prompted to verify that you want to allow the setup program to run. This is because it requires administrative access to make changes to the system.
+    > If User Account Control is enabled, you will be prompted to verify that you want to allow the setup program to run. This is because it requires administrative access to make changes to the system.
 
 2. On the main page of the wizard, select **Install**.
 
@@ -68,7 +68,7 @@ This article provides detailed installation instructions for the various Orchest
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms and select **Next**.
 
-    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and select **Next**.
+       On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
 
 5. On the **Select features to install** page, ensure that **Management Server** is the only feature selected and select **Next**.
 
@@ -554,7 +554,7 @@ The **Installing features** page appears and displays the installation progress.
 
     If you're prompted for an administrator password or confirmation, enter the password or provide confirmation.
 
-::: moniker range=sc-orch-2025"
+::: moniker range="sc-orch-2025"
 
 ## Enable Trust server connection (not recommended)
 
@@ -634,7 +634,7 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/ServiceUserName:[UserName]|Specifies the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
 |/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
 |/Components:[Feature 1, Feature 2,"]|Specifies the features to install (comma separated). Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebAPI, WebConsole and All.|
-|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files \Microsoft System Center \<version\>\Orchestrator is used.|
+|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files\Microsoft System Center\<version\>\Orchestrator is used.|
 |/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you're installing Management Server, Runbook Server, or web services.|
 |/DbUser:[UserName]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
 |/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
@@ -671,7 +671,7 @@ The properties for a runbook server include an optional description and the acco
 
 Toggle the XML attribute `stdoutLogEnabled` to `true` in your `web.config` under `system.WebServer` > `aspNetCore`.
 
-Irrespective of this setting, you can view logs in the **Event Viewer** > **Windows Applications** > **Applications**.
+Irrespective of this setting, you can view logs in **Event Viewer** > **Windows Applications** > **Applications**.
 
 ### Change your database settings for Web API
 

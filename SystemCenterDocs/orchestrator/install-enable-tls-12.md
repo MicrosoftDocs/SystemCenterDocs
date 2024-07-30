@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS 1.2 with Orch
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/16/2024
+ms.date: 07/29/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -73,7 +73,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
    **Method 1: Manually modify the registry**
 
    >[!Important]
-   >Carefully follow the steps in this section. You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
+   >You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
 
    Use the following steps to enable or disable all SCHANNEL protocols across the system.
 

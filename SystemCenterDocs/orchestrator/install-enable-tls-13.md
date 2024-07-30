@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS 1.3 with Orch
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/29/2024
+ms.date: 07/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -18,25 +18,27 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Before you start
 
-- Orchestrator should be running version 2022, or 2025.
+- Orchestrator should be running version 2022 or 2025.
 - Security fixes should be up-to-date on the Orchestrator.
 - System Center updates should be up-to-date.
 - SQL Server 2012 Native client 11.0 or later should be installed on the Orchestrator management server. To download and install Microsoft SQL Server 2012 Native Client 11.0, see [this Microsoft Download Center webpage](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 - Orchestrator should be running .NET version 4.6. Follow [these instructions](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed) to determine which version of .NET is installed.
-- To work with TLS 1.3, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) certificates are used, they should use SHA1 or SHA2.
+- To work with TLS 1.3, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) are used, they should use SHA1 or SHA2.
 - Install the SQL server version that supports TLS 1.3. SQL Server 2022 or later supports TLS 1.3.
 
 ## Install a SQL Server update for TLS 1.3 support
 
-1. [Download and install](/sql/relational-databases/security/networking/connect-with-tls-1-3?view=sql-server-ver16) the update for your SQL Server version.
-    - You don't need this update if you're running SQL Server 2012 or later.
-    - SQL Server 2019 (15.x) and earlier versions doesn't support TLS 1.3.
+[Download and install](/sql/relational-databases/security/networking/connect-with-tls-1-3?view=sql-server-ver16) the update for your SQL Server version.
+
+>[!Note]
+>- You don't need this update if you're running SQL Server 2012 or later.
+>- SQL Server 2019 (15.x) and earlier versions doesn't support TLS 1.3.
 
 ## Configure and use TLS 1.3
 
 1. Configure Orchestrator to use TLS 1.3
 
-    a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
+    a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, enter **regedit** in the Run box, and then select **OK**.
 
     b.Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319`.
 
@@ -64,7 +66,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
    **Method 1: Manually modify the registry**
 
    >[!Important]
-   >Carefully follow the steps in this section. You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
+   >You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
 
    Use the following steps to enable or disable all SCHANNEL protocols across the system.
 
@@ -82,7 +84,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
    d. Enter **SSL 3.0**.
 
-   e. Repeat the previous two steps to create keys for TLS 0, TLS 1.1, TLS 1.2 and TLS 1.3. These keys resemble directories.
+   e. Repeat the previous two steps to create keys for TLS 0, TLS 1.1, TLS 1.2, and TLS 1.3. These keys resemble directories.
 
    f. Create a client key and a server key under each of the SSL 3.0, TLS 1.0, TLS 1.1, TLS 1.2 and TLS 1.3 keys.
 

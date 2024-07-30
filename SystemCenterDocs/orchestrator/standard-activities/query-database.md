@@ -2,7 +2,7 @@
 title: Query Database 
 description: This article describes the Query Database activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 07/29/2024
+ms.date: 07/30/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ Use the following information to configure the Query Database activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Query**|Type the SQL query in the **Query** field|  
+|**Query**|Enter the SQL query in the **Query** field|  
 
 > [!WARNING]
 > The Query Database activity does not support queries that return data as XML, such as queries that use the **FOR XML** clause in SQL Server.  
@@ -63,11 +63,11 @@ Use the following information to configure the Query Database activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the name of the **Access** database file that you want to access.|  
-|**Workgroup file**|Type the name of the **Access** workgroup file that is associated with this database.|  
-|**User name**|Type the user name for the workgroup file.|  
-|**Password**|Type the password for the workgroup file.|  
-|**DB password**|Type the password for the Access database.|  
+|**File**|Enter the name of the **Access** database file that you want to access.|  
+|**Workgroup file**|Enter the name of the **Access** workgroup file that is associated with this database.|  
+|**User name**|Enter the user name for the workgroup file.|  
+|**Password**|Enter the password for the workgroup file.|  
+|**DB password**|Enter the password for the Access database.|  
 
 ### ODBC Connections
 
@@ -98,7 +98,7 @@ Use the following information to configure the Query Database activity.
 |--------------|--------------------------------|  
 |**Authentication**|Select either **Windows Authentication** or **SQL Server Authentication**.|  
 |**Server**|Enter the name of the SQL Server that you want to access.|  
-|**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, type the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
+|**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, enter the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
 
 ### Timeout
 

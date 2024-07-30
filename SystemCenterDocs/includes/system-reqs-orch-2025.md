@@ -5,7 +5,7 @@ description: include file to provide system requirements for Orchestrator 2025, 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/29/2024
+ms.date: 07/30/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: Orchestrator
@@ -36,7 +36,7 @@ The following versions of Windows client operating system are supported for the 
 
 |Component| Windows Server 2022 Standard, Datacenter with Desktop Experience| Windows Server 2025 Standard, Datacenter with Desktop Experience |
 |:--- |:---|:--- |
-|Runbook Designer|supported|Supported|
+|Runbook Designer|Supported|Supported|
 
 ## Running the Setup
 
@@ -62,7 +62,7 @@ The following software is required for a full installation of Orchestrator on a 
 ## SQL Server
 
 > [!NOTE]
-> - For the supported versions of SQL, use the service packs/cumulative updates that are currently in support by Microsoft.
+> - For the supported versions of SQL, use the service packs/cumulative updates that are currently supported by Microsoft.
 > -	SQL *Always ON*  is supported, except in cases where configuration is done on multi subnets.
 
 **SQL version** | **Supported**
