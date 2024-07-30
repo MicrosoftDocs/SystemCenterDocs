@@ -287,7 +287,7 @@ The administrator of a client computer must authorize the username of non-admin 
 
 To do this, the administrator must add the following registry key and value for each of these non-admin users. This is single value that contains a comma-separated list of client users.
 
-**Key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection <br>
+**Key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection` <br>
 **Value**: ClientOwners<br>
 **Type**: String<br>
 **Data**: Names of non-admin users. This must be a comma-separated list of user names without any leading or trailing spaces.<br>
