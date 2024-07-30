@@ -193,12 +193,18 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure you select the workloads that you want to back up to Azure.
 
+::: moniker range="sc-dpm-2016"
+
 11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
+
+::: moniker-end
 
 ::: moniker range=">=sc-dpm-2019"
 
->[!NOTE]
->Online backups have a dependency on new local disk based backup prior to running.  Ensure the Online protection schedule is compatible with the Express backup time and frequency.
+11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
+
+     >[!NOTE]
+     >Online backups have a dependency on new local disk based backup prior to running.  Ensure the Online protection schedule is compatible with the Express backup time and frequency.
 
 ::: moniker-end
 
