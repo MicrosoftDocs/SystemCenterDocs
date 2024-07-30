@@ -65,9 +65,9 @@
   - name: Install TLS
     items:
     - name: Install and enable TLS 1.2
-      href: install-enable-tls-12.md
+      href: install-enable-tls-1-2.md
     - name: Install and enable TLS 1.3
-      href: install-enable-tls-13.md
+      href: install-enable-tls-1-3.md
   - name: Manage Orchestrator Servers
     items:
     - name: Runbook permissions

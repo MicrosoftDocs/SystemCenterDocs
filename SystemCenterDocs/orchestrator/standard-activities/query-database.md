@@ -31,11 +31,11 @@ The Query Database activity can be used to query a database for the detailed des
 
 ## Configure the Query Database Activity
 
- Before you configure the Query Database activity you will need to determine the following:  
+ Before you configure the Query Database activity you'll need to determine the following:  
 
-- The database that you are connecting to  
+- The database that you're connecting to  
 
-- The SQL query that you are running  
+- The SQL query that you're running  
 
 Use the following information to configure the Query Database activity.  
 
@@ -127,6 +127,6 @@ Use the following information to configure the Query Database activity.
 |ODBC DSN|The name of the ODBC DSN. This published data will only be available when **ODBC** is selected on the **Connection** tab.|  
 |Oracle Service Name|The service name. This published data will only be available when **Oracle** is selected on the **Connection** tab.|  
 |Access file|The Access database file that was queried. This published data will only be available when **Access** is selected on the **Connection** tab.|  
-|Access workgroup information file|The Access workgroup file that is associated with the Access database file. This published xata will only be available when **Access** is selected on the **Connection** tab.|  
-|For each row published|  
-|Full line as a string with fields separated by ;|The entire the row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row|
+|Access workgroup information file|The Access workgroup file that is associated with the Access database file. This published data will only be available when **Access** is selected on the **Connection** tab.|  
+|For each row published|
+|Full line as a string with fields separated by `;`|The entire row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row|

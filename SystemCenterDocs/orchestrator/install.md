@@ -221,14 +221,14 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 ::: moniker range="sc-orch-2022"
-1. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 ::: moniker range=">=sc-orch-2022"
-1. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
+8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
 9. On the **Select the installation location** page, verify the installation location for Orchestrator, and select **Next**.
 
@@ -274,7 +274,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+   1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
       > [!WARNING]
       > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
@@ -434,9 +434,9 @@ The **Installing features** page appears and displays the installation progress.
 
 ::: moniker-end
 
-## Install Orchestration Console
-
 ::: moniker range=">=sc-orch-2022"
+
+## Install Orchestration Console
 
 Since Orchestrator 2022, the Web API service and Orchestration Console can be installed separately on different machines.
 
@@ -451,7 +451,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 4.	On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
 5.	Your computer is checked for required hardware and software. If your computer meets all the requirements, **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 

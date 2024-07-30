@@ -39,4 +39,4 @@ You can upgrade your installation of System Center 2022 Orchestrator to System C
 3. Install the Orchestrator management server in System Center 2025 as described in [Install Orchestrator](../orchestrator/install.md).
 4. Install any Orchestrator Runbook servers in System Center 2025.
 5. Install the Orchestrator Runbook Designer in System Center 2025.
-6. If required, install the Orchestrator Web Service in System Center 2025.
+6. If needed, install the Orchestrator Web Service in System Center 2025.
