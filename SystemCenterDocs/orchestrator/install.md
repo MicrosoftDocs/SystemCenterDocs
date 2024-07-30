@@ -332,8 +332,8 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
    1. Review the items that didn't pass the prerequisite check. The Web API requires .NET Hosting bundle v5.x and some IIS extensions. Download and install them from the official sites:
-      1.	.NET Hosting bundle
-      2.	IIS CORS (Cross-Origin Resource Sharing) module
+      -	.NET Hosting bundle
+      -	IIS CORS (Cross-Origin Resource Sharing) module
 
    2. After you resolve the missing prerequisites, select **Verify prerequisites again**.
 
@@ -574,9 +574,9 @@ You can proceed with any one of the following ways:
 
     The following configuration occurs:
 
-    1. For SQL Connection string Trust Server Certificate=true is added.
+    - For SQL Connection string Trust Server Certificate=true is added.
 
-    2. In webapi.config \<environmentVariable name="Database__TrustServerCertificate" value="true"/\> is added.
+    - In webapi.config \<environmentVariable name="Database__TrustServerCertificate" value="true"/\> is added.
 
 ::: moniker-end
 

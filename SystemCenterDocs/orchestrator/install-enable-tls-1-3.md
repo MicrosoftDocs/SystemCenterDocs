@@ -80,7 +80,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
    c. Right-click  **Protocol**, and point to **New** > **Key**.
 
-      ![New registry key](./media/integration-pack-for-om/new-registry-key.png)
+      [![Screenshot of new registry key.](./media/integration-pack-for-om/new-registry-key.png)](./media/integration-pack-for-om/new-registry-key.png#lightbox)
 
    d. Enter **SSL 3.0**.
 
