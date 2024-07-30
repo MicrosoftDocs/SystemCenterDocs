@@ -68,7 +68,7 @@ This article provides detailed installation instructions for the various Orchest
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms and select **Next**.
 
-       On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
 
 5. On the **Select features to install** page, ensure that **Management Server** is the only feature selected and select **Next**.
 
