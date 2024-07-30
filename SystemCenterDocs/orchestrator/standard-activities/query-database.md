@@ -2,7 +2,7 @@
 title: Query Database 
 description: This article describes the Query Database activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/30/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -31,11 +31,11 @@ The Query Database activity can be used to query a database for the detailed des
 
 ## Configure the Query Database Activity
 
- Before you configure the Query Database activity you will need to determine the following:  
+ Before you configure the Query Database activity you'll need to determine the following:  
 
-- The database that you are connecting to  
+- The database that you're connecting to  
 
-- The SQL query that you are running  
+- The SQL query that you're running  
 
 Use the following information to configure the Query Database activity.  
 
@@ -43,7 +43,7 @@ Use the following information to configure the Query Database activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Query**|Type the SQL query in the **Query** field|  
+|**Query**|Enter the SQL query in the **Query** field|  
 
 > [!WARNING]
 > The Query Database activity does not support queries that return data as XML, such as queries that use the **FOR XML** clause in SQL Server.  
@@ -63,11 +63,11 @@ Use the following information to configure the Query Database activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the name of the **Access** database file that you want to access.|  
-|**Workgroup file**|Type the name of the **Access** workgroup file that is associated with this database.|  
-|**User name**|Type the user name for the workgroup file.|  
-|**Password**|Type the password for the workgroup file.|  
-|**DB password**|Type the password for the Access database.|  
+|**File**|Enter the name of the **Access** database file that you want to access.|  
+|**Workgroup file**|Enter the name of the **Access** workgroup file that is associated with this database.|  
+|**User name**|Enter the user name for the workgroup file.|  
+|**Password**|Enter the password for the workgroup file.|  
+|**DB password**|Enter the password for the Access database.|  
 
 ### ODBC Connections
 
@@ -87,11 +87,18 @@ Use the following information to configure the Query Database activity.
 
 ### SQL Server Connections
 
+::: moniker range="sc-orch-2025"
+
+>[!Note]
+>MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter \<serverName\>;Trust Server Certificate=True in **Server** field for every configuration.
+
+::: moniker-end
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Authentication**|Select either **Windows Authentication** or **SQL Server Authentication**.|  
 |**Server**|Enter the name of the SQL Server that you want to access.|  
-|**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, type the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
+|**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, enter the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
 
 ### Timeout
 
@@ -120,6 +127,6 @@ Use the following information to configure the Query Database activity.
 |ODBC DSN|The name of the ODBC DSN. This published data will only be available when **ODBC** is selected on the **Connection** tab.|  
 |Oracle Service Name|The service name. This published data will only be available when **Oracle** is selected on the **Connection** tab.|  
 |Access file|The Access database file that was queried. This published data will only be available when **Access** is selected on the **Connection** tab.|  
-|Access workgroup information file|The Access workgroup file that is associated with the Access database file. This published xata will only be available when **Access** is selected on the **Connection** tab.|  
-|For each row published|  
-|Full line as a string with fields separated by ;|The entire the row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row|
+|Access workgroup information file|The Access workgroup file that is associated with the Access database file. This published data will only be available when **Access** is selected on the **Connection** tab.|  
+|For each row published|
+|Full line as a string with fields separated by `;`|The entire row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row|

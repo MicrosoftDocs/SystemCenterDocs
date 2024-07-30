@@ -5,7 +5,7 @@ description: include file to provide system requirements for Orchestrator 2025, 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 07/30/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: Orchestrator
@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 2025 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 2022 - Orchestrator and state the recommended hardware configurations for various workloads. As System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 2025 - Orchestrator and state the recommended hardware configurations for various workloads. As System Center 2025 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -26,22 +26,21 @@ The following sections provide general performance and scalability guidance for 
 
 The following versions of Windows Server operating system are supported.
 
-| Component | Windows Server 2019 Standard, Datacenter with Desktop Experience | Windows Server 2022 Standard, Datacenter with Desktop Experience |
+| Component | Windows Server 2022 Standard, Datacenter with Desktop Experience | Windows Server 2025 Standard, Datacenter with Desktop Experience |
 |:--- |:---|:--- |:--- |
 |All server roles|Supported|Supported|
-
 
 ## Client operating system
 
 The following versions of Windows client operating system are supported for the Orchestrator.
 
-|Component| Windows Server 2019 Standard, Datacenter with Desktop Experience| Windows Server 2022 Standard, Datacenter with Desktop Experience |
+|Component| Windows Server 2022 Standard, Datacenter with Desktop Experience| Windows Server 2025 Standard, Datacenter with Desktop Experience |
 |:--- |:---|:--- |
-|Runbook Designer|supported|Supported|
+|Runbook Designer|Supported|Supported|
 
 ## Running the Setup
 
-Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) before running the Setup executable (SetupOrchestrator.exe).
+Install the [Microsoft Visual C++ Redistributable (>= 14.34)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) before running the Setup executable (SetupOrchestrator.exe).
 
 ## Software
 
@@ -56,14 +55,14 @@ The following software is required for a full installation of Orchestrator on a 
 
 - Microsoft .NET Framework 4.5 or later.
 
-- Ensure that [Microsoft OLE DB Driver for SQL Server v18](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#previous-releases&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer, or the Web API Service.
+- Ensure that [Microsoft OLE DB Driver for SQL Server v19](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#previous-releases&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer, or the Web API Service.
 
 - Join the computer to an Active Directory domain.
 
 ## SQL Server
 
 > [!NOTE]
-> - For the supported versions of SQL, use the service packs/cumulative updates that are currently in support by Microsoft.
+> - For the supported versions of SQL, use the service packs/cumulative updates that are currently supported by Microsoft.
 > -	SQL *Always ON*  is supported, except in cases where configuration is done on multi subnets.
 
 **SQL version** | **Supported**
@@ -83,10 +82,8 @@ Orchestrator Web API requires the following versions of .NET Core and Hosting Bu
 
 |SCO version|.NET Core|
 |---|---|
-|2022 RTM|[.NET Core 5 Hosting Bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.17-windows-hosting-bundle-installer)|
-|2022 UR1|[.NET Core 6 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
+|2025 RTM|[.NET Core 8 Hosting Bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-8.0.6-windows-hosting-bundle-installer)|
 
 ## Virtualization
 
 Deploying and running Orchestrator on a virtualized operating system is fully supported. The software requirements are the same as those listed above. Any of the Orchestrator roles can also be run on a virtualized server running in Microsoft Azure.
-
