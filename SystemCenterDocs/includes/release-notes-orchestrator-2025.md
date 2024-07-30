@@ -23,33 +23,33 @@ Additionally, the following issues have been fixed:
 
 The following sections summarize the known issues and workarounds in SCO 2025:
 
-## Activity inside a runbook instance returns an empty set
+### Activity inside a runbook instance returns an empty set
 
 **Description**:  Direct calls to GET api/ActivityInstances or selecting an activity inside a runbook instance returns an empty result set in the right pane.
 
 **Workaround**: None
 
-## Identifiers are displayed instead of activity names on the Runbook Tester canvas and log view area
+### Identifiers are displayed instead of activity names on the Runbook Tester canvas and log view area
 
 **Description**: : Identifiers are displayed instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity name is included as a property in the Log View area.
 
 **Workaround**: If needed, Runbook tester of UR1 can be used which is compatible with Orchestrator 2022 UR2.
 
-## Text content doesn't show correctly in the Runbook Tester log view area
+### Text content doesn't show correctly in the Runbook Tester log view area
 
 **Description**: Text content doesn't show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
 
 **Workaround**: None
 
-## Runbooks that aren't inside any folder (root runbooks) aren't shown on the navigation pane
+### Runbooks that aren't inside any folder (root runbooks) aren't shown on the navigation pane
 
 **Workaround**: Move root runbooks to a folder.
 
-## Job form requires output parameter also
+### Job form requires output parameter also
 
 **Workaround**: Use any string as value, it will be overwritten by the runbook execution with the output.
 
-## Orchestrator Remoting Service and Runbook Server Monitor Service don’t exit cleanly
+### Orchestrator Remoting Service and Runbook Server Monitor Service don’t exit cleanly
 
 **Description**: The *oremoting and omonitor* services can't be stopped using Service kill.
 
