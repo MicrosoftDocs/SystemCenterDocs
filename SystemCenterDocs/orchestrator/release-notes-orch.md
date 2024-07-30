@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Orchestra
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/19/2024
+ms.date: 07/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -15,6 +15,10 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 # Release notes for System Center Orchestrator
 
 ::: moniker range="sc-orch-2025"
+
+::: moniker range="sc-orch-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 This article provides the release notes for System Center 2025 - Orchestrator.
 
