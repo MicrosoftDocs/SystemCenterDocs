@@ -5,15 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/28/2023
+ms.date: 04/28/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Troubleshoot upgrade issues
-
-
 
 This article helps you troubleshoot upgrade issues in System Center – Service Manager.
 
@@ -127,7 +125,7 @@ Follow these steps to increase the service time-out setting:
 
 1. On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 
-    ```  
+    ```powershell
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control   
     ServicesPipeTimeout  
     DWORD  

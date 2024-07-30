@@ -5,14 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/16/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Recommended deployment topologies for Service Manager
-
 
 For performance and scalability planning purposes, we recommend that you plan your deployment topology for System Center - Service Manager using scenarios that we've tested. While these aren't firm guidelines, Microsoft has tested deployment topologies using these scenarios and found that each configuration achieves satisfactory performance.  
 

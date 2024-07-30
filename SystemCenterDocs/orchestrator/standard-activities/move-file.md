@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Move File
 
-
-
 The Move File activity moves a file from one directory to another. You can move files to network shares that are available using UNC paths. You can also move files from a local or publicly available network folder, such as an FTP location, to an internal folder.  
 
-## Configuring the Move File Activity  
+## Configure the Move File Activity
+
  Before you configure the Move File activity, you need to determine the following:  
 
 - The files you're moving.  
@@ -39,7 +38,7 @@ Use the following information to configure the Move File activity.
 |**Folder**|Enter the path of the folder where you want the files to be moved to.|  
 |**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that is being moved.<br /><br /> **Fail**: Select this option to cause the Move File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.|  
 
-### Advanced Tab  
+### Advanced Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -48,7 +47,8 @@ Use the following information to configure the Move File activity.
 |**Date of transfer**|Set the file date at the destination to the date when it was copied to the folder.|  
 |**Same as original**|Set the date of the file at the destination to the date of the original file.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

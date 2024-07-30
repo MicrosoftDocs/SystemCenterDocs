@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Text File Management
 
-
-
 The following table provides a brief description of tasks you can accomplish when using each Text File Management activity.  
 
 > [!CAUTION]

@@ -1,7 +1,7 @@
 ---
 title: Get VM Status Activity
 description: The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,10 @@ ms.assetid: 912dfce9-c159-4de2-853b-c47fc161b5ca
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/10/2024
+ms.date: 07/12/2024
 ---
 
 # Get VM Status Activity
-
-
 
 The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine. This, for example, enables the runbook to retrieve the current status of a virtual machine to ensure that it has been properly shut down before performing a backup.
 
@@ -31,8 +29,8 @@ The activity publishes all the data from the required and optional properties in
 |:---|:---|:---|:---|
 | VM Path | The path of the virtual machine to retrieve the status for. | String   | Yes   |
 
-
 ## Get VM Status Activity Optional Properties
+
 No optional properties are provided for this activity.
 
 ## Get VM Status Activity Published Data
@@ -54,20 +52,18 @@ No optional properties are provided for this activity.
 | VM Path   | The full path of the virtual machine on the vCenter server.   | String   |
 | VM UUID   | The UUID of the virtual machine as assigned by the vCenter server.   | String   |
 
-## Configuring the Get VM Status Activity
+## Configure the Get VM Status Activity
 
 The following procedure describes the steps required to configure a Get VM Status activity.
 
-### To configure the Get VM Status Activity
+1. From the **Activities** pane, drag a **Get VM Status** activity to the active runbook.
 
-1.  From the **Activities** pane, drag a **Get VM Status** activity to the active runbook.
+2. Double-click the **Get VM Status** activity icon. The **Properties** dialog opens.
 
-2.  Double-click the **Get VM Status** activity icon. The **Properties** dialog opens.
+3. Configure the settings in the **Properties** tab as follows:
 
-3.  Configure the settings in the **Properties** tab as follows:
-
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

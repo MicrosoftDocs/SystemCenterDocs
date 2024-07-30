@@ -152,7 +152,7 @@ The following sections provide details of the protection support matrix for DPM:
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022) <br /><br /> Linux virtual machines running on versions 6.0, 6.5, 6.7, or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2022, Windows Server 2019, and Windows Server 2016. <br /><br />Protect: Entire virtual machine.<br /><br />Recover: Entire virtual machine.<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
+|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022/2025) <br /><br /> Linux virtual machines running on versions 6.0, 6.5, 6.7, or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows Server 2016. <br /><br />Protect: Entire virtual machine.<br /><br />Recover: Entire virtual machine.<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 
 ::: moniker-end
 

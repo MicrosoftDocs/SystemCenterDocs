@@ -17,8 +17,6 @@ ms.assetid: 1e31bc91-020f-47e7-bd2b-d40ddc2fb7ca
 
 # Set an activity's status to completed for the Service Manager Authoring Tool sample activity
 
-
-
 See the following sample activity in Service Manager that sets an activity's status to complete.  
 
 ```powershell

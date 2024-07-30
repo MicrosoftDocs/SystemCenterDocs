@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Rename File or Folder
 
-
-
 The Rename File/Folder activity is used in a runbook to rename a file or folder on an FTP server.
 
 This activity publishes all the data from the required properties into published data.

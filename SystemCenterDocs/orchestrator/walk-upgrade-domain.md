@@ -18,8 +18,6 @@ ms.date: 04/27/2023
 ---
 # Walk Upgrade Domain
 
-
-
 The **Walk Upgrade Domain** activity specifies the next upgrade domain to be walked during manual in-place upgrade or configuration change. It's part of the **Azure Deployments** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

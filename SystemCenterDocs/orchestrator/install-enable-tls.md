@@ -14,10 +14,7 @@ ms.custom: engagement-fy24
 
 # Set up TLS for Orchestrator
 
-
-
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
-
 
 ## Before you start
 
@@ -36,8 +33,8 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
     - You don't need this update if you're running SQL Server 2016 or later.
     - SQL Server 2008 R2 doesn't support TLS 1.2.
 
-
 ## Configure and use TLS 1.2
+
 1. Configure Orchestrator to use TLS 1.2
 
     a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
@@ -69,7 +66,6 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
       | --- | --- | --- |
       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
-
 
 2. Set Windows to use only TLS 1.2.
 
@@ -114,7 +110,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
    Run the following Windows PowerShell script in administrator mode to automatically configure Windows to use only the TLS 1.2 protocol:
 
-   ```
+   ```powershell 
    $ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
    $ProtocolSubKeyList = @("Client", "Server")
    $DisabledByDefault  = "DisabledByDefault"
@@ -174,7 +170,6 @@ To fix this issue, follow these steps:
 >4.	Click **OK**.
 
 For detailed information, see [this KB article](https://support.microsoft.com/help/4494803/orchestrator-integration-packs-stop-working-with-tls-1-2-connections).
-
 
 ## Next steps
 

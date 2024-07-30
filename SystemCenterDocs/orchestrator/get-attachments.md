@@ -17,7 +17,6 @@ manager: jsuri
 
 # Get Attachments
 
-
 The **Get Attachments** activity is used in a runbook to retrieve details from the attachments of a list item.
 
 The following tables list the filters, required properties, and Published Data for this activity.

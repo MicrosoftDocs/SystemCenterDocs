@@ -1,12 +1,12 @@
 ---
 title: Install Service Manager on two computers
 description: To evaluate Service Manager, you can install the Service Manager management server and data warehouse management server on two computers.
-ms.custom: na, intro-installation, UpdateFrequency2
+ms.custom: intro-installation, UpdateFrequency2, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/26/2022
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -16,8 +16,6 @@ ms.assetid: 95b4f9e4-e6f3-4d04-9b11-aeba6bea22ec
 ---
 
 # Install Service Manager on two computers
-
-
 
 If you want to evaluate System Center - Service Manager and its reporting capabilities in a lab environment, we recommend that you install the Service Manager management server and data warehouse management server on two computers. The first computer hosts the Service Manager management server and the Service Manager database. The second computer hosts the data warehouse management server and the data warehouse databases. This deployment topology is shown in figure&nbsp;1.  
 
@@ -40,7 +38,7 @@ As the first step in the two-computer installation process, install the Service 
 
 For more information about the permissions that these accounts require, see [Account required during Setup](prepare-deploy.md).  
 
-To install the Service Manager management server, Service Manager database, and console, follow these steps:
+### Install the Service Manager management server, Service Manager database, and console
 
 1. Sign in to the computer that will host the Service Manager management server by using an account that has administrative rights.  
 
@@ -59,7 +57,7 @@ To install the Service Manager management server, Service Manager database, and 
 7. On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
 
     > [!IMPORTANT]  
-    > A warning message appears if you're using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL Server. See the [Planning Guide for System Center - Service Manager](plan-sm.md).  
+    > A warning message appears if you're using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. See the [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -109,7 +107,7 @@ For more information about the permissions that these accounts require, see [Acc
 7. On the **Configure data warehouse databases** page, Service Manager checks the computer you're using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you're installing the data warehouse management server, and select **Next**.  
 
    > [!IMPORTANT]  
-   > A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
+   > A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure additional data warehouse datamarts** page, Service Manager checks the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
 
@@ -159,7 +157,7 @@ After the installation, do the following:
 
 20. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
 
-    ```powershell
+    ```powershell   
     $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
 
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices")
@@ -196,13 +194,11 @@ After the installation, do the following:
 
 21. Enable the job schedules by running the following commands:
 
-    ```powershell
+    ```powershell    
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
-
-22. Restart the Data Warehouse management server.
 
 ## Next steps
 

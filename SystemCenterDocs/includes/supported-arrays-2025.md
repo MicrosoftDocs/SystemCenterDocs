@@ -5,7 +5,7 @@ description: Include file to summarize the supported storage arrays for VMM 2025
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 06/28/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -26,7 +26,7 @@ ms.subservice: virtual-machine-manager
 
 >[!NOTE]
 >
-> **Known issue**: Deletion of thinly provisioned storage volume (LUN) fails for HPE Primera through VMM 2022.
+> **Known issue**: Deletion of thinly provisioned storage volume (LUN) fails for HPE Primera through VMM 2025.
 >
 >**Workaround**: Delete LUN directly from the array.
 

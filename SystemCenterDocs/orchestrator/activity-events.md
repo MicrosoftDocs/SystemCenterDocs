@@ -23,19 +23,19 @@ Each activity in an Orchestrator runbook has the ability to send an event whenev
 
 Follow these steps to configure an activity to send events:
 
-1.  Open the runbook in the **Runbook Designer**.  
+1. Open the runbook in the **Runbook Designer**.  
 
-2.  Double-click the activity to view its properties.  
+2. Double-click the activity to view its properties.  
 
-3.  Select the **Run Behavior** tab.  
+3. Select the **Run Behavior** tab.  
 
-4.  Enter the number of seconds to send an event when the activity runs too long.  
+4. Enter the number of seconds to send an event when the activity runs too long.  
 
-5.  Check the **Report if the activity fails to run** box to send an event when the activity fails.  
+5. Check the **Report if the activity fails to run** box to send an event when the activity fails.  
 
-6.  Select **Finish** to save the activity.  
+6. Select **Finish** to save the activity.  
 
-## Receiving Events from SNMP
+## Receive Events from SNMP
 
 In addition to viewing the events on the **Events** tab in the Runbook Designer, you can send them to an SNMP trap destination. This lets you monitor the health of the Orchestrator environment by using other tools designed to provide proactive alerting. The only requirement for such a tool is that it can receive SNMP traps. You can use the **Orchestrator Event Delivery Configuration Utility** to add and configure SNMP trap destinations for Runbook events.  
 
@@ -53,19 +53,19 @@ For example, use the following procedure to send traps by using SNMP version 1 t
 
 Follow these steps to add an SNMP trap destination:
 
-1.  Open a command prompt with administrative credentials.  
+1. Open a command prompt with administrative credentials.  
 
 ::: moniker range="<=sc-orch-2019"
 2.  Navigate to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">=sc-orch-2022"
 2.  Navigate to `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
-3.  Enter the following command: `oedc /snmp /add /ip 10.1.1.10 /port 162 /version SNMP1 /community public`  
+3. Enter the following command: `oedc /snmp /add /ip 10.1.1.10 /port 162 /version SNMP1 /community public`  
 
-4.  Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
+4. Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 
 ### Remove All SNMP Trap Destinations
 
@@ -75,21 +75,22 @@ You can't remove individual SNMP trap destinations. Instead, you must remove all
 
 Follow these steps to remove all SNMP trap destinations:
 
-1.  Open a command prompt with administrative credentials.  
+1. Open a command prompt with administrative credentials.  
 
 ::: moniker range="<=sc-orch-2019"
 2.  Navigate to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">=sc-orch-2022"
 2.  Navigate to `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
-3.  Enter the following command: **oedc /snmp /clear**  
+3. Enter the following command: **oedc /snmp /clear**  
 
-4.  Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
+4. Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 
-### Receiving SNMP Traps  
+### Receive SNMP Traps
+
 After you've configured an SNMP trap destination for Orchestrator event notifications, you can receive them by using any tool that reads SNMP traps, or you can use the **Monitor SNMP Trap** activity in a runbook to read the information. The content of SNMP traps is limited to the first 1000 characters if the content exceeds that length.  
 
 The variable bindings are listed in the following table.  

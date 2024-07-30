@@ -5,15 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/26/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Set up a lab environment for upgrade testing
-
-
 
 Use the following procedures to prepare for Service Manager upgrade by creating a lab environment and preparing it for production data for the purpose of upgrade testing.
 
@@ -66,7 +64,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 4. In the toolbar, select **New Query**.  
 5. In the center pane, enter the following commands, and select **Execute**.  
 
-    ```  
+    ```powershell
     sp_configure 'clr enabled', 1  
     go  
     reconfigure  
@@ -75,19 +73,19 @@ Use the following procedure to prepare the Service Manager database in the lab e
 
 6. In the center pane, remove the commands you entered in the previous step, enter the following commands, and select **Execute**.  
 
-    ```  
+    ```powershell
     ALTER DATABASE ServiceManager SET SINGLE_USER WITH ROLLBACK IMMEDIATE  
     ```  
 
 7. In the center pane, remove the commands you entered in the previous step, enter the following commands, and select **Execute**.  
 
-    ```  
+    ```powershell    
     ALTER DATABASE ServiceManager SET ENABLE_BROKER  
     ```  
 
 8. In the center pane, remove the commands you entered in the previous step, enter the following commands, and select **Execute**.  
 
-    ```  
+    ```powershell
     ALTER DATABASE ServiceManager SET MULTI_USER  
     ```  
 
@@ -137,7 +135,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 16. In the toolbar, select **New Query**.  
 17. In the center pane, enter the following command, and select **Execute**.  
 
-    ```  
+    ```powershell     
     Delete from dbo.MT_Microsoft$SystemCenter$ResourceAccessLayer$DwSdkResourceStore  
     ```  
 
@@ -170,7 +168,7 @@ Use the following procedure to edit the registry on the Service Manager manageme
 
 Use the following procedure to start the Service Manager services.  
 
-To start Service Manager services, follow these steps:
+### Start Service Manager services  
 
 1. On the Windows desktop, select **Start**, and select **Run**.  
 2. In the **Run** dialog, in the **Open** field, enter **services.msc**, and select **OK**.  
@@ -321,9 +319,9 @@ Use the following procedure to register the newly installed data warehouse serve
 
 ### Determine when the deployment is complete
 
-Because you need to allow enough time for the management pack deployment process to be completed, you'll have to determine when that process is complete. You can use the following procedure in Service Manager to determine when the process is complete.  
+ Because you need to allow enough time for the management pack deployment process to be completed, you'll have to determine when that process is complete. You can use the following procedure in Service Manager to determine when the process is complete.  
 
-To determine when management pack deployment has completed, follow these steps:
+#### Determine when management pack deployment has completed  
 
 1. Start the Service Manager console.  
 2. In the Service Manager console, select **Data Warehouse**.  

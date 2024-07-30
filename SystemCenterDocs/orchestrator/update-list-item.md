@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update List Item
 
-
-
 The **Update List Item** activity is used in a runbook to update an item in a Microsoft SharePoint list.
 
 The following tables list the required properties and Published Data for this activity. Additional optional properties are generated, which are based on the SharePoint list that is retrieved when you define the activity.
@@ -47,4 +45,4 @@ There are no optional properties for this runbook activity.
 
 ## Other Resources
 
-[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
+[Use Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

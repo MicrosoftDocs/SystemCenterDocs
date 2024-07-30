@@ -17,8 +17,6 @@ ms.date: 07/10/2024
 
 # Get Resource Pools Activity
 
-
-
 The Get Resource Pools activity is used in a runbook to retrieve a list of all the resource pools in managed by the VMware vSphere system. This allows the runbook to retrieve the resources pools before using the Get Resource Pool Runtime Info Activity.
 
 The following tables list the required and optional properties and published data for this activity.
@@ -39,7 +37,7 @@ No optional properties are provided for this activity.
 |:---|:---|:---|
 | Resource Pool | A list of resource pool paths within the vCenter server. | String   |
 
-## Configuring the Get Resource Pools Activity
+## Configure the Get Resource Pools Activity
 
 To configure the Get Resource Pools Activity, follow these steps:
 
