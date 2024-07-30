@@ -142,6 +142,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     ```
 
 ::: moniker range="sc-vmm-2025"
+
 ### Before you begin
 
 Ensure the following:
