@@ -16,11 +16,13 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 ::: moniker range="sc-orch-2025"
 
-::: moniker range="sc-orch-2025"
-
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
+::: moniker-end
+
 This article provides the release notes for System Center 2025 - Orchestrator.
+
+::: moniker range="sc-orch-2025"
 
 [!INCLUDE [release-notes-orch-2025.md](../includes/release-notes-orchestrator-2025.md)]
 
