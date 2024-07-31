@@ -1,6 +1,6 @@
 ---
 ms.assetid:
-description: include file to summarize the release notes for System Center 2025 - Orchestrator
+description: Include file to summarize the release notes for System Center 2025 - Orchestrator
 ms.topic:  include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -26,7 +26,7 @@ Additionally, the following issues are fixed:
 - GET api/ActivityInstances returns the expected value.
 - Activity names are correctly displayed on the Runbook Tester canvas and log view area instead of identifiers.
 
-The following sections summarize the known issues and workarounds in SCO 2025:
+The following sections summarize the known issues and workarounds in System Center Orchestrator 2025:
 
 ### Runbooks that aren't inside any folder (root runbooks) aren't shown on the navigation pane
 
