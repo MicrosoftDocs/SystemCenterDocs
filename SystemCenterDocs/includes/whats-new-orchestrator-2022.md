@@ -18,7 +18,7 @@ See the following sections for detailed information about the new features/featu
 
 ### Release of SCO 2022 VMware vSphere Integration pack
 
-SCO 2022 VMware vSphere Integration packs is available for download [here](https://www.microsoft.com/download/details.aspx?id=106163).
+SCO 2022 VMware vSphere Integration pack is available for download [here](https://www.microsoft.com/download/details.aspx?id=106163).
 
 ### Release of SCO 2022 Exchange User Integration pack v10.22.2.19
 

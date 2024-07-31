@@ -18,7 +18,7 @@ The following sections introduce new and updated features in System Center Orche
 
 ### Support for OLEDB19
 
-SCO 2025 supports OLEDB19  which encrypts SQL Connection by default. Ensure to have Trusted Server certificate for successful SQL connection. Learn more.
+SCO 2025 supports OLEDB19  which encrypts SQL Connection by default. Ensure to have Trusted Server certificate for successful SQL connection.
 
 ### Support for Transport Security Layer (TLS) protocol version 1.3
 

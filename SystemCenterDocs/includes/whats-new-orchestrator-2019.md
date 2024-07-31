@@ -35,7 +35,7 @@ Orchestrator 2019 support SQL Server 2022.
 ## Other Improvements
 
 - Latest Putty: No workaround needed to SSH to the latest Linux/Unix machines.
-- SM/SCOM integration is cleaner and now has respective console dependency only.
+- Service Manager/Operations Manager integration is cleaner and now has respective console dependency only.
 
 ## Bug fixes
 
