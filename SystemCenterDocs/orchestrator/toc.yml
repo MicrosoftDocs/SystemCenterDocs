@@ -14,7 +14,7 @@
     href: install.md
   - name: Work with runbooks in the Orchestrator console
     href: console-overview.md
-  - name: Example runbook - Creating a runbook to monitor a folder
+  - name: Example runbook - Create a runbook to monitor a folder
     href: monitor-a-folder-within-a-runbook.md
   - name: Release notes - Orchestrator
     href: release-notes-orch.md
@@ -76,7 +76,7 @@
       href: how-to-back-up-orchestrator.md
     - name: Bench mark
       href: how-to-benchmark.md
-    - name: Optimize performance of .Net activities
+    - name: Optimize performance of .NET activities
       href: how-to-optimize-dot-net-activities.md
     - name: Configure runbook throttling
       href: how-to-configure-runbook-throttling.md
@@ -703,12 +703,12 @@
           href: upload-attachment-sharepoint.md
         - name: Upload Document
           href: upload-document.md
-    - name: VMWare vSphere
+    - name: VMware vSphere
       href: vsphere-integration-pack.md
       items:
-      - name: Deploy the VMWare vSphere Integration Pack
+      - name: Deploy the VMware vSphere Integration Pack
         href: deploying-the-vmware-vsphere-integration-pack.md
-      - name: VMWare vSphere activities
+      - name: VMware vSphere activities
         href: vsphere-activities.md
         items:
         - name: Add Network Adapter
