@@ -10,7 +10,7 @@ ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency2, engagement-fy23, , engagement-fy24
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Back up client computers with DPM
@@ -158,6 +158,13 @@ The details of the registry entry are below. Modify the value USERNAME according
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
 11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
+
+::: moniker range=">=sc-dpm-2019"
+
+>[!Note]
+>Online backups have a dependency on new local disk based backup prior to running. Ensure the Online protection schedule is compatible with the Express backup time and frequency.
+
+::: moniker-end
 
 12. In **Specify online retention policy**, specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
