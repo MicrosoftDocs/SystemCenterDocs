@@ -19,27 +19,14 @@ The following sections summarize the release notes for Orchestrator 2025, and in
 Additionally, the following issues have been fixed:
 
 - Send platform event activity is persisted to the database and is visible in **Events** tab of the Runbook Designer.
-- System Center Orchestrator now supports Group Managed Service Accounts (gMSA).
+- Latest `plink.exe` is shipped with this release. Manual update of `pllink.exe` in Run SSH activity isn't required.  
+- Query database activity error *Failed to load extension* is fixed.
+- Orchestrator keys can be recreated.
+- Activities persist custom separators while you configure Run behaviour for the activity.
+- GET api/ActivityInstances returns the expected value.
+- Activity names are correctly displayed on the Runbook Tester canvas and log view area instead of identifiers.
 
 The following sections summarize the known issues and workarounds in SCO 2025:
-
-### Activity inside a runbook instance returns an empty set
-
-**Description**:  Direct calls to GET api/ActivityInstances or selecting an activity inside a runbook instance returns an empty result set in the right pane.
-
-**Workaround**: None
-
-### Identifiers are displayed instead of activity names on the Runbook Tester canvas and log view area
-
-**Description**: : Identifiers are displayed instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity name is included as a property in the Log View area.
-
-**Workaround**: If needed, Runbook tester of UR1 can be used which is compatible with Orchestrator 2022 UR2.
-
-### Text content doesn't show correctly in the Runbook Tester log view area
-
-**Description**: Text content doesn't show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
-
-**Workaround**: None
 
 ### Runbooks that aren't inside any folder (root runbooks) aren't shown on the navigation pane
 
