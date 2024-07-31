@@ -14,15 +14,15 @@ title:  include file
 
 ## Orchestrator 2025 release notes
 
-The following sections summarize the release notes for Orchestrator 2025, and include all issues fixed until SCO 2022 UR2.
+The following sections summarize the release notes for Orchestrator 2025, and include all issues fixed until Orchestrator 2022 UR2.
 
-Additionally, the following issues have been fixed:
+Additionally, the following issues are fixed:
 
 - Send platform event activity is persisted to the database and is visible in **Events** tab of the Runbook Designer.
 - Latest `plink.exe` is shipped with this release. Manual update of `pllink.exe` in Run SSH activity isn't required.  
 - Query database activity error *Failed to load extension* is fixed.
 - Orchestrator keys can be recreated.
-- Activities persist custom separators while you configure Run behaviour for the activity.
+- Activities persist custom separators while you configure Run behavior for the activity.
 - GET api/ActivityInstances returns the expected value.
 - Activity names are correctly displayed on the Runbook Tester canvas and log view area instead of identifiers.
 
