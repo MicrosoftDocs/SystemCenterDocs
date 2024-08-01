@@ -143,6 +143,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     PS> Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
     PS> Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
     ```
+:::moniker-end
 
 :::moniker range="sc-vmm-2025"
 
@@ -154,6 +155,7 @@ Ensure the following:
 2. Hyper-V hosts in the cluster are running Windows Server 2019 or later with the Hyper-V role installed and configured to host VMs.
 
 :::moniker-end
+
 
    >[!NOTE]
    >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
@@ -224,7 +226,6 @@ If you use PowerShell, the pool and the storage tier are automatically created w
 
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
 
-:::moniker-end
 
 
 :::moniker range="sc-vmm-2016"
