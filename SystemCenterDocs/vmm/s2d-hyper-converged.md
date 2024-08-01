@@ -228,7 +228,7 @@ In a hyper-converged topology, VMs can be directly deployed on the cluster. Thei
 
 
 
-:::moniker range="sc-vmm-2016"
+:::moniker range="<sc-vmm-2019"
 
 ## Step 3: Manage the pool and create CSVs
 
