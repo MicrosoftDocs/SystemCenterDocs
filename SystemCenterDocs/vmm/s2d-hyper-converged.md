@@ -138,14 +138,15 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 :::moniker-end
 
 ### Before you begin
-:::moniker range="sc-vmm-2025"
+
+:::moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 Ensure the following:
 
 1. You're running VMM 2019 or later.
 2. Hyper-V hosts in the cluster are running Windows Server 2019 or later with the Hyper-V role installed and configured to host VMs.
 :::moniker-end
 
-:::moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
+:::moniker range="sc-vmm-2025"
 Ensure the following:
 
 1. You're running VMM 2019 or later.
