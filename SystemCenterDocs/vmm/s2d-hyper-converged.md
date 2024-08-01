@@ -137,9 +137,8 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     ```
 :::moniker-end
 
-### Before you begin
-
 :::moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
+### Before you begin
 Ensure the following:
 
 1. You're running VMM 2019 or later.
@@ -147,6 +146,7 @@ Ensure the following:
 :::moniker-end
 
 :::moniker range="sc-vmm-2025"
+### Before you begin
 Ensure the following:
 
 1. You're running VMM 2019 or later.
