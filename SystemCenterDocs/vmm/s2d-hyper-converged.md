@@ -135,8 +135,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     PS> Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
     PS> Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
     ```
-
-
+:::moniker-end
 
 ### Before you begin
 :::moniker range="sc-vmm-2025"
@@ -153,6 +152,7 @@ Ensure the following:
 2. Hyper-V hosts in the cluster are running Windows Server 2019 or later with the Hyper-V role installed and configured to host VMs.
 :::moniker-end
 
+:::moniker range=">=sc-vmm-2019"
    >[!NOTE]
    >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
    >- You can configure the DCB settings during cluster creation workflow or on an existing cluster.
@@ -221,9 +221,7 @@ If you use PowerShell, the pool and the storage tier are automatically created w
 ## Step 5: Deploy VMs on the cluster
 
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
-
 :::moniker-end
-
 
 :::moniker range="sc-vmm-2016"
 ## Step 3: Manage the pool and create CSVs
@@ -243,7 +241,7 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
     ![Screenshot of storage settings.](./media/s2d/storage-spaces-tiering.png)
 
 
-5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
+7. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
 If you use PowerShell, the pool and the storage tier are automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
