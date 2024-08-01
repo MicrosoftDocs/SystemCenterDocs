@@ -3,14 +3,14 @@ description: You can use DPM to back up your system state and provide bare metal
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/20/2023
+ms.date: 07/30/2024
 title: Back up system state and bare metal
 ms.subservice: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: engagement-fy23, UpdateFrequency2
+ms.custom: engagement-fy23, UpdateFrequency2, engagement-fy24
 ---
 
 # Back up system state and bare metal
@@ -49,7 +49,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 |SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost server (database/transaction logs intact)|N|N|Y|
 |SQL Server/Exchange<br /><br />DPM app backup<br /><br />BMR/system state backup|Lost server (database/transaction logs lost)|N|N|Y<br /><br />BMR recovery followed by regular DPM recovery|
 
-## How system state backup works
+## System state backup workflow
 
 1. When a system state backup runs, DPM communicates with WSB to request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. WSB will use this drive for backups.
 
@@ -60,8 +60,8 @@ This table summarizes what you can back up and recover. You can see detailed inf
 4. Windows Server Backup (WSB) creates a folder called WindowsImageBackup on the root of the volume. As it creates the backup, all data is placed in this folder. When the backup completes, the file will then be transferred over to the DPM server.
 
     > [!NOTE]
-    >- This folder and its contents don't get cleaned up after the backup or transfer is done. The best way to think of this is that the space is being reserved for the next time a backup is done.
-    >- The folder gets created every time a backup is done. The time/date stamp will reflect the time of your last system state backup.
+    > - This folder and its contents don't get cleaned up after the backup or transfer is done. The best way to think of this is that the space is being reserved for the next time a backup is done.
+    > - The folder gets created every time a backup is done. The time/date stamp will reflect the time of your last system state backup.
 
 ## BMR backup
 
@@ -99,10 +99,14 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 ::: moniker-end
 
+>
+>
 - DPM reserves 30 GB of space on the replica volume for BMR. You can change this on the Disk Allocation page in the Modify Protection Group Wizard or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation PowerShell cmdlets. On the recovery point volume, BMR protection requires about 6 GB for retention of five days.
 
     > [!NOTE]
     > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. Process System state backup
+
+::: moniker range="sc-dpm-2016"
 
 - If you move from system state protection to BMR protection, BMR protection will require less space on the **recovery point volume.** However, the extra space on the volume isn't reclaimed. You can shrink the volume size manually from the **Modify Disk Allocation** page of the **Modify Protection Group Wizard** or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation cmdlets.
 
@@ -111,6 +115,16 @@ This table summarizes what you can back up and recover. You can see detailed inf
 - If you move from BMR protection to system state protection, you'll need more space on the recovery point volume. DPM might try to automatically grow the volume. If there's insufficient space in the storage pool, an error will be issued.
 
     If you move from BMR protection to system state protection, you'll need space on the protected computer because system state protection first writes the replica to the local computer and then transfers it to the DPM server
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
+
+- If you move from system state protection to BMR protection, BMR protection requires more space. The replica volume extends automatically. If you want to change the default space allocations, you can use **ReplicaSizeInGBForSystemProtectionWithBMR** registry entry.
+
+- If you move from BMR protection to system state protection, you need space on the protected computer because system state protection first writes the replica to the local computer and then transfers it to the DPM server.
+
+::: moniker-end
 
 ## Before you start
 
@@ -145,7 +159,17 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
 4. In **Select data protection method**, specify how you want to handle short- and long-term backups. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
+::: moniker range="sc-dpm-2016"
+
 5. In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In Retention range, specify how long you want to keep the data on disk. In Synchronization frequency, specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can check just before a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
+
+5. In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In Retention range, specify how long you want to keep the data on disk. In **Express Full Backup**, specify when you want to backup to disk.  All System State and BMR backups are considered express full backups for scheduling purposes.
+
+::: moniker-end
 
 6. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In Frequency of backup, specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
@@ -169,7 +193,20 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure you select the workloads that you want to back up to Azure.
 
+::: moniker range="sc-dpm-2016"
+
 11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
+
+11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
+
+     >[!NOTE]
+     >Online backups have a dependency on new local disk based backup prior to running.  Ensure the Online protection schedule is compatible with the Express backup time and frequency.
+
+::: moniker-end
 
 12. In **Specify online retention policy**, specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
