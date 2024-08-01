@@ -224,6 +224,8 @@ If you use PowerShell, the pool and the storage tier are automatically created w
 
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
 
+:::moniker-end
+
 
 :::moniker range="sc-vmm-2016"
 
