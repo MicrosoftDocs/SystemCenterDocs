@@ -5,7 +5,7 @@ description: This article provides guidance for adding service templates to the 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/29/2024
+ms.date: 08/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -45,8 +45,8 @@ You can create service templates if you have VMM admin or delegated admin permis
   > [!NOTE]
   > You can also select **Add Machine Tier** to add a tier manually. This opens the **Create Machine Tier Template** wizard. In **Select Source**, select a source for the tier. You can use an exact copy of an existing VM template or to customize an existing VM template. Select **Browse** to select the template or hard disk. In **Additional Properties**, you'll configure the tier properties described in the next step.
 
-1. You can select a tier to access its properties in the details pane of the designer. Select **View All Properties** to modify all the properties in a single view. Here's what you can modify when you select to view all:
-    - In **General** specify:
+5. You can select a tier to access its properties in the details pane of the designer. Select **View All Properties** to modify all the properties in a single view. Here's what you can modify when you select to view all:
+    - In **General**, specify:
       - The order in which tiers are deployed and serviced. For example, if you need the database tier to be running in order to run a frontend web app, you'd set the database tier to 1.
       - Whether you want to be able to add additional VMs to the tier in order to scale out (you can scale out to five VM instances in a tier).
       - More than one upgrade domain to minimize service interruptions when a tier is updated. VMM will update VMs in the tier according to their upgrade domains. VMM upgrades an upgrade domain at a time. It shuts down VMs in the domain, updates them, brings them online, and moves to the next domain to reduce impact.

@@ -5,7 +5,7 @@ description: This article provides guidance for adding files to the library in t
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/29/2024
+ms.date: 08/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
