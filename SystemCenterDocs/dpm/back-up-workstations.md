@@ -3,7 +3,7 @@ description: You can use DPM to back up client computers.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/30/2024
+ms.date: 08/01/2024
 title: Back up client computers with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
@@ -177,7 +177,7 @@ The details of the registry entry are below. Modify the value USERNAME according
 You can recover the client data using any one of the following methods:
 
 - Allow clients to recover their own data by setting up user recovery
-- Use the Recovery Wizard on the DPM Server to recover client computer data
+- Recover client’s computer data using Recovery Wizard on the DPM Server
 
 Select the required tab for steps to allow **clients to recover their own data** or **recover data for clients** using the DPM Recovery Wizard:
 
@@ -272,8 +272,8 @@ DPM enables you to recover files and folders from backups stored on the DPM serv
 
 To recover data from backups stored on the DPM server, follow these steps:
 
-1. Select **Start** > **All Apps** and then select **Microsoft System Center DPM Client**. 
-     Alternately, you can select the DPM Client icon in the system tray.
+1. Select **Start** > **All Apps** and then select **Microsoft System Center DPM Client**.
+     Alternately, you can select the DPM Client icon ![An icon that signifies DPM client.](media/back-up-workstations/icon-dpm-client.svg) in the system tray.
 
 2. In the **Data Protection Manager Client** page, select **Recovery** tab.
 
@@ -311,7 +311,7 @@ To configure DPM recovery permissions for users who are not members of the local
      - Double-click the **ClientOwner** to add a single user using the Domain\User format or add multiple users separated by a comma. Ensure not to use any leading or trailing spaces in the list.
 
      >[!Note]
-     > Non-Admin users added to the registry have access only to the recovery points created after the user was added. Earlier recovery points are accessible by Administrators only.
+     > Non-Admin users added to the registry have access only to the recovery points created after the user was added. Recovery points that were created earlier are accessible by Administrators only.
 
 # [Recover data for clients](#tab/RecoverData)
 
