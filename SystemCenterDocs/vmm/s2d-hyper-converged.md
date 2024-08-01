@@ -227,7 +227,8 @@ In a hyper-converged topology, VMs can be directly deployed on the cluster. Thei
 :::moniker-end
 
 
-:::moniker range="<sc-vmm-2019"
+:::moniker range="sc-vmm-2016"
+
 ## Step 3: Manage the pool and create CSVs
 
 You can now modify the storage pool settings and create virtual disks and CSVs.
