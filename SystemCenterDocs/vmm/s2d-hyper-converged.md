@@ -21,11 +21,11 @@ Read this article to set up a hyper-converged cluster running Storage Spaces Dir
 
 You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts or by provisioning from bare-metal servers.
 
-::: moniker range="sc-vmm-2016"
+:::moniker range="sc-vmm-2016"
 
 You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
 
-::: moniker-end
+:::moniker-end
 
 > [!NOTE]
 > You must enable S2D before adding the storage provider to VMM.
@@ -43,25 +43,25 @@ After you enable a cluster with S2D, VMM does the following:
 If you use PowerShell to create a hyper-converged cluster, the pool and the storage tier are automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
 
-::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 ## Before you start
 
 - Ensure that you're running VMM 2016 or later.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 or later with the Hyper-V Role installed and be configured to host VMs.
-::: moniker-end
+:::moniker-end
 
-::: moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
   > [!NOTE]
   > VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
-::: moniker-end
+:::moniker-end
 
-::: moniker range="sc-vmm-2022"
+:::moniker range="sc-vmm-2022"
 
   > [!NOTE]
   > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
-::: moniker-end
+:::moniker-end
 
-::: moniker range="sc-vmm-2025"
+:::moniker range="sc-vmm-2025"
 
 ## Before you start
 
@@ -70,7 +70,7 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
   > [!NOTE]
   > VMM 2025 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
 
-::: moniker-end
+:::moniker-end
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster or export the storage to other resources using SOFS.
 
@@ -121,12 +121,12 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled so that the switch is aware of virtualization. This switch is connected to the management logical network and has all the host virtual adapters that are required to provide access to the management network or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
 3.	[Create VM networks](network-virtual.md).
 
-::: moniker range="sc-vmm-2019"
+:::moniker range="sc-vmm-2019"
 >[!NOTE]
 >The following feature is applicable for VMM 2019 UR1.
-::: moniker-end
+:::moniker-end
 
-::: moniker range=">=sc-vmm-2019"
+:::moniker range=">=sc-vmm-2019"
 
 ## Step 3: Configure DCB settings on the S2D cluster
 
@@ -144,7 +144,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     PS> Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
     ```
 
-::: moniker range="sc-vmm-2025"
+:::moniker range="sc-vmm-2025"
 
 ### Before you begin
 
@@ -153,7 +153,7 @@ Ensure the following:
 1. You're running VMM 2019 or later.
 2. Hyper-V hosts in the cluster are running Windows Server 2019 or later with the Hyper-V role installed and configured to host VMs.
 
-::: moniker-end
+:::moniker-end
 
    >[!NOTE]
    >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
@@ -224,10 +224,10 @@ If you use PowerShell, the pool and the storage tier are automatically created w
 
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
 
-::: moniker-end
+:::moniker-end
 
 
-::: moniker range="<sc-vmm-2019"
+:::moniker range="<sc-vmm-2019"
 ## Step 3: Manage the pool and create CSVs
 
 You can now modify the storage pool settings and create virtual disks and CSVs.
@@ -253,7 +253,7 @@ If you use PowerShell, the pool and the storage tier are automatically created w
 
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
 
-::: moniker-end
+:::moniker-end
 
 ## Next steps
 
