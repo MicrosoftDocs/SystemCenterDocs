@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/28/2024
+ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -40,7 +40,9 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- Anti-virus apps must be supported.
   >- Online conversions aren't supported. You need to power off the VMware VMs.
   >- VMware tools must be uninstalled from the guest operating system of the VM.
-  >- From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
+
+>[!NOTE]
+> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
 
 >[!NOTE]
 > After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
