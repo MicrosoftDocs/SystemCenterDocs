@@ -62,7 +62,9 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- Online conversions aren't supported. You need to power off the VMware VMs.
   >- VMware tools must be uninstalled from the guest operating system of the VM.
   >- We recommend upgrading to VMM 2022 UR2 to convert your VMware VMs to Hyper-V four times faster.
-  >- From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
+
+>[!NOTE]
+> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
 
 >[!NOTE]
 > After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
