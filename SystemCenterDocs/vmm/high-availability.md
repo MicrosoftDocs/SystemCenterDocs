@@ -5,7 +5,7 @@ description: This article describes how to deploy the VMM server in high availab
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/24/2023
+ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,7 +15,7 @@ ms.custom: intro-deployment, engagement-fy24
 # Deploy VMM for high availability
 
 
-For resilience and scalability, you can deploy System Center - Virtual Machine Manager (VMM) in a high availability mode.
+For resilience and scalability, you can deploy System Center Virtual Machine Manager (VMM) in a high availability mode.
 
 ## Before you start
 
