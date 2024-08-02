@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/20/2024
+ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -41,6 +41,14 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- Online conversions aren't supported. You need to power off the VMware VMs.
   >- VMware tools must be uninstalled from the guest operating system of the VM.
 
+>[!NOTE]
+> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
+
+>[!NOTE]
+> After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
+  >- Set-StorageSetting -NewDiskPolicy OfflineShared: To have all the new shared bus disks offline and all the new local bus disks online
+  >- Set-StorageSetting -NewDiskPolicy OnlineAll: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
+
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
@@ -54,6 +62,14 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- Online conversions aren't supported. You need to power off the VMware VMs.
   >- VMware tools must be uninstalled from the guest operating system of the VM.
   >- We recommend upgrading to VMM 2022 UR2 to convert your VMware VMs to Hyper-V four times faster.
+
+>[!NOTE]
+> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
+
+>[!NOTE]
+> After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
+  >- Set-StorageSetting -NewDiskPolicy OfflineShared: To have all the new shared bus disks offline and all the new local bus disks online
+  >- Set-StorageSetting -NewDiskPolicy OnlineAll: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
 
 ::: moniker-end
 
@@ -129,7 +145,6 @@ Ensure the following prerequisites are met:
     ![Screenshot of vm conversion to gen 2.](media/vm-conversion/vm-conversion-gen2-created.png)
 
 > [!NOTE]
-> - Disk conversion (from **vmdk** to **VHDX/VHD**) is enhanced to be ~50% faster than earlier.
 > - PowerShell commands allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based on the requirements.
 
 ## Convert using PowerShell cmdlets
