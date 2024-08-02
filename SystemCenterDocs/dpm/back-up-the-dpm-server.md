@@ -3,48 +3,49 @@ description: This article helps you create a strategy for backing up the DPM ser
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 02/01/2024
+ms.date: 07/29/2024
 title: Back up the DPM server
 ms.subservice: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Back up the DPM server
 
 To ensure that data can be recovered if System Center Data Protection Manager (DPM) fails, you'll need a strategy for backing up the DPM server. If it isn't backed up, you'll need to rebuild it manually after a failure, and disk\-based recovery points won't be recoverable. You can back up DPM servers using a couple of methods:
 
--   **Back up the DPM server** - You can back up a primary DPM server with a secondary DPM server. The secondary server will protect the primary server database and the data source replicas stored on the primary server. If the primary server fails, the secondary server can continue to protect workloads that are protected by the primary server, until the primary server is available again. If you need to rebuild the primary server, you can restore the databases and replicas to it from the secondary server. You can also restore data to protected computers directly from the secondary server when the primary server isn't available. You can set up two servers, one as primary and another as secondary, or configure each server to act as the primary for the other. You can also configure a chain of DPM servers that protect each other according to the chain order.
+- **Back up the DPM server** - You can back up a primary DPM server with a secondary DPM server. The secondary server will protect the primary server database and the data source replicas stored on the primary server. If the primary server fails, the secondary server can continue to protect workloads that are protected by the primary server, until the primary server is available again. If you need to rebuild the primary server, you can restore the databases and replicas to it from the secondary server. You can also restore data to protected computers directly from the secondary server when the primary server isn't available. You can set up two servers, one as primary and another as secondary, or configure each server to act as the primary for the other. You can also configure a chain of DPM servers that protect each other according to the chain order.
 
--   **Back up the DPM database** - You can configure a DPM server to back up its own databases to its tape library, or you can use non\-Microsoft software to back up the databases to tape or removable media.
+- **Back up the DPM database** - You can configure a DPM server to back up its own databases to its tape library, or you can use non\-Microsoft software to back up the databases to tape or removable media.
 
--   **Back up DPM using third\-party software** - You can back up DPM servers using third\-party software that supports DPM and VSS.
+- **Back up DPM using third\-party software** - You can back up DPM servers using third\-party software that supports DPM and VSS.
 
 ## Back up with a secondary DPM server
+
 Information on a DPM server can be backed up and protected by another DPM server in any of the following configurations:
 
--   **Primary to secondary protection** - The database and replicas stored on a primary DPM server can be backed up to a secondary DPM server. If the primary server fails, the secondary server continues to back up protected workloads. If the primary server fails, you can do either of the following:
+- **Primary to secondary protection** - The database and replicas stored on a primary DPM server can be backed up to a secondary DPM server. If the primary server fails, the secondary server continues to back up protected workloads. If the primary server fails, you can do either of the following:
     Rebuild the primary server and restore its database and replicas from the secondary server. Then move the protected workloads back to the primary server after the rebuild.
     Select to switch protection to the secondary DPM server. With this setting, you can then restore to the protected computer directly from the secondary server when the need arises.
     For instructions, see [Set up secondary servers](#set-up-primary-and-secondary-protection).
 
--   **DPM chaining** - A chain of DPM servers provide protection, and each server protects the next one in the chain. For example:
+- **DPM chaining** - A chain of DPM servers provide protection, and each server protects the next one in the chain. For example:
     DPM1 is protected by DPM2 \(DPM1 is the primary and DPM2 is the secondary\).
     DPM2 is protected by DPM3 \(DPM2 is the primary and DPM3 is the secondary\)
     For instructions, see Set up chaining.
 
--   **Cyclic protection** - One DPM server is backed up by another DPM server and vice versa. For example, if DPM1 protects DPM2, then DPM2 protects DPM1. This is useful for small environments.
+- **Cyclic protection** - One DPM server is backed up by another DPM server and vice versa. For example, if DPM1 protects DPM2, then DPM2 protects DPM1. This is useful for small environments.
 
 ### Set up primary and secondary protection
+
 Back up a primary DPM server using a secondary DPM server:
 
-1.  The Primary DPM server has the protection agent already installed. You need to attach this protection agent to the secondary DPM server.
+1. The Primary DPM server has the protection agent already installed. You need to attach this protection agent to the secondary DPM server.
     > [!IMPORTANT]
     > Major and minor versions of the Primary and Secondary DPM servers must match.
-    >
 
     Follow these steps to attach the agent:
 
@@ -54,31 +55,33 @@ Back up a primary DPM server using a secondary DPM server:
      4. On the **Enter Credentials** page, type the user name and password for a domain account that is a member of the local Administrators group on the Primary DPM server.
      5. On the **Summary** page, select **Attach**.
 
-2.  Add the primary DPM server to an existing protection group, or create a new one. Select to protect the following data sources:
+2. Add the primary DPM server to an existing protection group, or create a new one. Select to protect the following data sources:
 
-    -   The SQL Server databases configured for the primary server.
+    - The SQL Server databases configured for the primary server.
 
-    -   All volumes on the primary DPM server \(Shares won't be visible separately\).
+    - All volumes on the primary DPM server \(Shares won't be visible separately\).
 
-    -   All replicas on the primary DPM server.
+    - All replicas on the primary DPM server.
 
-    -   At a minimum, you should select the databases, the \\Program Files\\Microsoft System Center\\DPM\\DPM\\Config folder, and the \\Program Files\\Microsoft System Center\\DPM\\Scripting folder.
+    - At a minimum, you should select the databases, the \\Program Files\\Microsoft System Center\\DPM\\DPM\\Config folder, and the \\Program Files\\Microsoft System Center\\DPM\\Scripting folder.
 
 > [!NOTE]
 > You can't exclude file names from protection for a replica. In addition, all DPM servers must be running the same version, updates, etc. When setting up synchronization, we recommend you synchronize every 24 hours.
 
 ### Set up DPM chaining
+
 Before you consider chaining, remember these limitations:
 
--   Each DPM server can only be protected once in the chain, so verify that they're not protected by more than one server.
+- Each DPM server can only be protected once in the chain, so verify that they're not protected by more than one server.
 
--   Primary and secondary servers are established by the chain. For example, if server DPM3 is actually protecting server DPM1 because it's acting as the secondary server for DPM2, it can't act directly as a secondary server for DPM1.
+- Primary and secondary servers are established by the chain. For example, if server DPM3 is actually protecting server DPM1 because it's acting as the secondary server for DPM2, it can't act directly as a secondary server for DPM1.
 
--   If a DPM server is configured to protect its own data source, the chain will be broken. For example, if DPM1 protects its own database or system state, DPM2 can't protect DPM1.
+- If a DPM server is configured to protect its own data source, the chain will be broken. For example, if DPM1 protects its own database or system state, DPM2 can't protect DPM1.
 
--   Before you can protect the database of a primary DPM server, you need to start the SQL Server VSS Writer service on the primary server.
+- Before you can protect the database of a primary DPM server, you need to start the SQL Server VSS Writer service on the primary server.
 
 #### Chaining example 1
+
 **Scenario 1: Chained protection**
 
 Scenario 1 shows a scenario in which four DPM servers are chained:
@@ -93,6 +96,7 @@ Scenario 1 shows a scenario in which four DPM servers are chained:
 ![Scenario with four DPM servers chained](./media/back-up-the-dpm-server/dpm2012_drdeployment_chaining.png)
 
 #### Chaining example 2
+
 **Scenario 2: Chained protection**
 
 Scenario 2 shows a scenario in which four DPM servers are chained:
@@ -109,6 +113,7 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 ![Diagram of alternate scenario with four DPM servers chained.](./media/back-up-the-dpm-server/dpm2012_dr_chainings1.png)
 
 ### Cyclic protection
+
 If you don't want to use a secondary server, then two DPM servers can protect each other.
 
 **Scenario 3: Cyclic protection**
@@ -126,28 +131,30 @@ Scenario 3 shows a scenario using cyclic protection.
 ![Diagram of example of cyclic protection scenario.](./media/back-up-the-dpm-server/dpm2012_drdeployment_cyclic.png)
 
 ### Configure chaining
+
 Set up chaining as follows:
 
-1.  Install the DPM protection agent on the DPM server that you want to protect from the DPM server you want to protect it from.
+1. Install the DPM protection agent on the DPM server that you want to protect from the DPM server you want to protect it from.
 
-2.  Configure secondary protection for the data sources protected by the DPM server you're protecting.
+2. Configure secondary protection for the data sources protected by the DPM server you're protecting.
 
 > [!NOTE]
 > In the DPM console, you won't be able to configure protection for data sources that are already protected by the agent. This prevents you from repeatedly protecting data.
 
-3.  As an example, if you have DPM1 and DPM2, you'd install the DPM protection agent from DPM1 to DPM2 and vice versa.
+3. As an example, if you have DPM1 and DPM2, you'd install the DPM protection agent from DPM1 to DPM2 and vice versa.
      Then configure secondary protection on DPM2 for servers that DPM1 protects and configure secondary protection on DPM1 for servers that DPM2 protects.
 
 ### Recover the server
+
 If a primary server fails, you can switch protection to the secondary server. After switching, you can perform recovery functions from the secondary server.
 
 **Switch protection to the secondary server**
 
 Use the following steps:
 
-1.	On the secondary DPM server, in the **Protection** area of the DPM Administrator console, go to the **Protection** work area, right-click the *data source* for which you want to switch protection.
-2.	Select **Switch Disaster Protection** from the context menu.
-3.	Run a consistency check.
+1. On the secondary DPM server, in the **Protection** area of the DPM Administrator console, go to the **Protection** work area, right-click the *data source* for which you want to switch protection.
+2. Select **Switch Disaster Protection** from the context menu.
+3. Run a consistency check.
 
 After switching protection, the replica appears as inconsistent, until the check runs.
 
@@ -164,15 +171,15 @@ After switching protection, the replica appears as inconsistent, until the check
 When you recover a primary DPM server, you’ll need to re-establish the protection for the computers that were previously protected by the primary DPM server.
 
    >[!NOTE]
-   >  - You can’t restore recovery points for data sources protected by the primary DPM server.
-   >  - When you recover the database files, ensure that the restore location on the primary DPM server is secure.
+   >- You can’t restore recovery points for data sources protected by the primary DPM server.
+   >- When you recover the database files, ensure that the restore location on the primary DPM server is secure.
 
 **Re-establish protection with primary DPM server**
 
 1.	On the protected computer, from the command prompt, run the command *Setdpmserver.exe \<primary DPM server name>*.
 2.	Open **Computer Management** and do the following:
 
-    -  Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
+    - Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
         - Distribute COM Users
         - DPMRADCOMTrustedMachines
         - DPMRADmTrustedMachines
@@ -180,13 +187,14 @@ When you recover a primary DPM server, you’ll need to re-establish the protect
 
 If protection fails after completing the above steps, do the following:
 
-1.	In **Administrative Tools**, open **Component Services**. Expand **Computers**, expand **My Computer**, and then select **DCOM Config**.
+1. In **Administrative Tools**, open **Component Services**. Expand **Computers**, expand **My Computer**, and then select **DCOM Config**.
 2.	In the results pane, right-click **DPM RA Service**. Select **Properties** > **Security**.
 3.	In the **Launch and Activation Permissions** area, select **Edit**.
     -	If the primary server is listed, the Access Control List (ACL) entry might be incorrect. Remove the entry, and then add the primary server with full permissions.
     -	If the primary server isn't listed, add the primary server with full permissions.
 
 ## Back up the DPM database
+
 As part of your DPM backup strategy, you'll have to back up the DPM database. The DPM database is named DPMDB. This database contains the DPM configuration together with data about DPM's backups. In case of a disaster, you can rebuild most of the functionality of a DPM server by using a recent backup of the database. Assuming you can restore the database, tape\- based backups are accessible, and they maintain all protection group settings and backup schedules. If the DPM storage pool disks weren't affected by the outage, disk\-based backups are also usable after a rebuild. You can back up the database by using different methods.
 
 ::: moniker range="sc-dpm-2019"
@@ -215,24 +223,24 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
 ::: moniker-end
 
--   If you back up using a DPM protection group, we recommend you use a unique protection group for the database.
+- If you back up using a DPM protection group, we recommend you use a unique protection group for the database.
 
--   As a best practice, if you're backing up to tape, make at least two copies of the backup tapes, and store each of the backup tapes in a different remote location. This added protection guards against physical damage or loss of the backup tape.
+- As a best practice, if you're backing up to tape, make at least two copies of the backup tapes, and store each of the backup tapes in a different remote location. This added protection guards against physical damage or loss of the backup tape.
 
--   If the DPM SQL Server instance isn't running on the DPM server, install the DPM protection agent on the SQL Server computer before you can protect the DPM databases on that server.
+- If the DPM SQL Server instance isn't running on the DPM server, install the DPM protection agent on the SQL Server computer before you can protect the DPM databases on that server.
 
     > [!NOTE]
     > For restore purposes, the DPM installation you want to restore with the DPM database must match the version of the DPM database itself. For example, if the database you want to recover is from a DPM 2016 with Update Rollup 4 installation, the DPM server must be running the same version with Update Rollup 4. This means that you might have to uninstall and reinstall DPM with a compatible version before you restore the database. To check the database version, you might have to mount it manually to a temporary database name and then run a SQL query against the database to check the last installed rollup based on the major and minor versions.
 
--   To check the DPM database version, follow these steps:
+- To check the DPM database version, follow these steps:
 
-    1.  To run the query, open SQL Management Studio, and then connect to the SQL instance that's running the DPM database.
+    1. To run the query, open SQL Management Studio, and then connect to the SQL instance that's running the DPM database.
 
-    2.  Select the DPM database, and then start a new query.
+    2. Select the DPM database, and then start a new query.
 
-    3.  Paste the following SQL query into the query pane and run it:
+    3. Paste the following SQL query into the query pane and run it:
 
-        **Select distinct MajorVersionNumber,MinorVersionNumber ,BuildNumber, FileName FROM dbo.tbl\_AM\_AgentPatch order byMajorVersionNumber,MinorVersionNumber,BuildNumber**
+        **Select distinct MajorVersionNumber,MinorVersionNumber ,BuildNumber, FileName FROM dbo.tbl\_AM\_AgentPatch order by MajorVersionNumber,MinorVersionNumber,BuildNumber**
 
     ::: moniker range="sc-dpm-2022"
 
@@ -256,19 +264,43 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
 1.  Before you start, you'll need to run a script to retrieve the DPM replica volume mount point path so that you know which recovery point contains the DPM backup. Do this after initial replication with Azure Backup. In the script, replace dplsqlservername% with the name of the SQL Server instance hosting the DPM database.
 
-    ```
-    Select ag.NetbiosName as ServerName,ds.DataSourceName,vol.MountPointPath
-    from tbl_IM_DataSource as ds
-    join tbl_PRM_LogicalReplica as lr on ds.DataSourceId=lr.DataSourceId
-    join tbl_AM_Server as ag on ds.ServerId=ag.ServerId
-    join tbl_SPM_Volume as vol on lr.PhysicalReplicaId=vol.VolumeSetID
-    and vol.Usage =1
-    and lr.Validity in (1,2)
-    where ds.datasourcename like '%dpmdb%'
-    and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
-    ```
+::: moniker range="sc-dpm-2016"
 
-    Ensure that you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
+```sql  
+Select ag.NetbiosName as ServerName,ds.DataSourceName,vol.MountPointPath
+from tbl_IM_DataSource as ds
+join tbl_PRM_LogicalReplica as lr on ds.DataSourceId=lr.DataSourceId
+join tbl_AM_Server as ag on ds.ServerId=ag.ServerId
+join tbl_SPM_Volume as vol on lr.PhysicalReplicaId=vol.VolumeSetID
+and vol.Usage =1
+and lr.Validity in (1,2)
+where ds.datasourcename like '%dpmdb%'
+and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
+```
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
+
+```sql
+Use DPMDB  -- change to match the DPMDB name if different
+select sv.AccessPath,sv.Server +'\' as Folder, lr.PhysicalReplicaId as "Replica" ,'\' as "\",lr.PhysicalReplicaId as "Relica-SubFolder"
+from tbl_IM_DataSource as ds
+join tbl_PRM_LogicalReplica as lr
+on ds.DataSourceId=lr.DataSourceId
+join tbl_AM_Server as ag
+on ds.ServerId=ag.ServerId
+join tbl_PRM_ReplicaVolume as rp
+on lr.PhysicalReplicaId=rp.ReplicaId
+join tbl_STM_Volume as sv
+on rp.StorageId = sv.StorageId
+where ds.datasourcename like '%dpmdb%'
+and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
+```
+
+::: moniker-end
+
+Ensure that you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
 
 2.  Create an Azure Backup vault, and download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](/azure/backup/backup-azure-dpm-introduction).
 
@@ -299,7 +331,9 @@ You can recover the database from Azure using any DPM server \(must be running a
 4.	On the **Select Data Protection Method** page, select **I want short-term protection using disk**. Specify the short-term protection policy options.
 5.	After the initial replication of DPM database, run the following SQL script:
 
-```
+::: moniker range="sc-dpm-2016"
+
+```sql
 select AG.NetbiosName, DS.DatasourceName, V.AccessPath, LR.PhysicalReplicaId from tbl_IM_DataSource DS
 join tbl_PRM_LogicalReplica as LR
 on DS.DataSourceId = LR.DataSourceId
@@ -313,6 +347,28 @@ where datasourcename like N'%dpmdb%' and ds.ProtectedGroupId isn't null
 and LR.Validity in (1,2)
 and AG.ServerName like N'%<dpmsqlservername>%' -- <dpmsqlservername> is a placeholder, put netbios name of server hosting DPMDB
 ```
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
+
+```sql
+Use DPMDB  -- change to match the DPMDB name if different
+select sv.AccessPath,sv.Server +'\' as Folder, lr.PhysicalReplicaId as "Replica" ,'\' as "\",lr.PhysicalReplicaId as "Relica-SubFolder"
+from tbl_IM_DataSource as ds
+join tbl_PRM_LogicalReplica as lr
+on ds.DataSourceId=lr.DataSourceId
+join tbl_AM_Server as ag
+on ds.ServerId=ag.ServerId
+join tbl_PRM_ReplicaVolume as rp
+on lr.PhysicalReplicaId=rp.ReplicaId
+join tbl_STM_Volume as sv
+on rp.StorageId = sv.StorageId
+where ds.datasourcename like '%dpmdb%'
+and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
+```
+
+::: moniker-end
 
 ### Recover DPM database
 To reconstruct your DPM with the same DB, you need to first recover the DPM database and sync it with the freshly installed DPM.
@@ -347,6 +403,8 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 8. After reinstalling the DPM server, you can use the restored DPMDB to attach to the DPM server by running *DPMSYNC-RESTOREDB* command.
 9. Run *DPMSYNC-SYNC*, once *DPMSYNC-RESTOREDB* is complete.
 
+::: moniker range="sc-dpm-2016"
+
 ### Back up the database by backing up the DPM storage pool
 > [!NOTE]
 > This option is applicable for DPM with legacy storage.
@@ -374,6 +432,7 @@ and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
 4.  On the **Select Data Protection Method** page, select **I want short\-term protection using disk**. Specify the short\-term protection policy options. We recommend a retention range of two weeks for DPM databases.
 
 #### Recover the database
+
 If the DPM server is still operational and the storage pool is intact \(problems with the DPM service or console\), then copy the database from the replica volume or a shadow copy as follows:
 
 1.  Decide from when you want to recover the database.
@@ -390,6 +449,7 @@ If the DPM server is still operational and the storage pool is intact \(problems
 
 5.  Now you can restore the database files by using SQL Management Studio or by running DPMSYNC\-RESTOREDB.
 
+::: moniker-end
 
 ### Back up the database to a secondary server
 
@@ -459,7 +519,8 @@ You can back up the DPM database to a local disk with native SQL Server backup, 
 
 2.  [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
 
-## Back up with native SQL Server backup to a share protected by DPM
+### Back up with native SQL Server backup to a share protected by DPM
+
 This backup option uses native SQL to back up the DPM database to a share, protects the share with DPM, and uses Windows VSS previous versions to facilitate the restore.
 
 **Before you start**
@@ -501,6 +562,8 @@ This backup option uses native SQL to back up the DPM database to a share, prote
 
 8.  Protect the C:\DPMBACKUP folder or the \\\sqlservername\DPMBACKUP share using DPM and wait for the initial replica to be created. There should be a dpmdb.bak in the C:\DPMBACKUPfolder as a result of the pre-backup script running, which was in turn copied to the DPM replica.
 
+::: moniker range="sc-dpm-2016"
+
 9. If you don't enable self-service recovery, you'll need some additional steps to share out the DPMBACKUP folder on the replica:
 
     1.  In the DPM console > **Protection**, locate the DPMBACKUP data source and select it. In the details section, select **Click to view details** on the link to the replica path and copy the path into Notepad. Remove the source path and retain the destination path. The path should look similar to the following: **C:\Program Files\Microsoft System Center\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP**.
@@ -510,14 +573,17 @@ This backup option uses native SQL to back up the DPM database to a share, prote
         ```
         Net Share DPMSERVERNAME-dpmdb="C:\Program Files\Microsoft System Center\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP"
         ```
+::: moniker-end
 
-**Configure the backup**
+#### Configure the DPM Database backup using Native SQL Server
 
 You can back up the DPM database as you would any other SQL Server database using SQL Server native backup.
 
 -   Get an [overview](/previous-versions/sql/sql-server-2012/ms187048(v=sql.110)) of SQL Server backup.
 
 -   [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
+
+::: moniker range="sc-dpm-2016"
 
 **Recover the database**
 
@@ -555,6 +621,8 @@ You can back up the DPM database as you would any other SQL Server database usin
     3.  Connect to the \\\SERVERNAME\DPMSERVERNAME-dpmdb share using Explorer from any Windows computer
 
     4.  Right-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab, there are all the backups that you can select and copy.
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 
