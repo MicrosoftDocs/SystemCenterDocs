@@ -5,7 +5,7 @@ description: Learn how to configure Software load balancer (SLB) for the interna
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/24/2024
+ms.date: 07/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -26,7 +26,7 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 - **Load balancing the internal network traffic** (Internal load balancing): This scenario includes load balancing the network traffic of workloads in the VM network that is enabled for **network virtualization**. Load balancing is done through a VIP.
 
   > [!NOTE]
-  > VMM 2016 supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
+  > VMM supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
 
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
 
