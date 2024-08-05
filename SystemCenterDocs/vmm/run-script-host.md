@@ -1,24 +1,24 @@
 ---
 ms.assetid: 8a13d5af-521c-4032-a4b0-e19a20eb2195
-title: Run a script on a remote VMM host by using the Run Script command.
+title: Run a script on a remote VMM host using the Run Script command.
 description: This article explains about how to use the Run Script command in System Center VMM to run scripts on a remote host.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/19/2024
+ms.date: 08/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
-# Run a script on a remote host by using Run Script command
+# Run a script on a remote host using Run Script command
 
 
 
- System Center Virtual Machine Manager (VMM) supports the ability to execute commands remotely, on a host by using the Run Script command feature. This feature is useful in scenarios where you want to start a service or collect information from a remote host.
+ System Center Virtual Machine Manager (VMM) supports the ability to execute commands remotely, on a host using the Run Script command feature. This feature is useful in scenarios where you want to start a service or collect information from a remote host.
 
- You can also run the script on the host by using the custom resources that you added to the VMM library. Custom resources can consist of batch files that can execute specific commands against the server, but the use of custom resources isn't required.
+ You can also run the script on the host using the custom resources that you added to the VMM library. Custom resources can consist of batch files that can execute specific commands against the server, but the use of custom resources isn't required.
 
 
 ## Example scenario 1 - Start a service
@@ -32,7 +32,7 @@ The following example scenario provides information on how you can start a servi
 
     ![Screenshot of Run Script Command.](media/run-script-command/run-script-window.png)
 
-2. As an example, type the following details against the options displayed:
+2. As an example, enter the following details against the options displayed:
 
    - **Deployment Order**: Select the deployment order from the dropdown menu.
    - **Executable program**: cmd.exe
@@ -59,7 +59,7 @@ Monitor the job in the VMM console for the result. If there's any error, go thro
 
 ## Example scenario 2 - Start a service using custom resources
 
-In this example, at step 2, we use the following values, rest of the steps remain the same.
+In this example, at step 2, we use the following values; rest of the steps remain the same.
 
 - **Deployment Order**: Select the deployment order from the dropdown menu.
 - **Executable program**: cmd.exe
@@ -72,4 +72,4 @@ In this example, at step 2, we use the following values, rest of the steps remai
   ![Screenshot of the run script custom form.](media/run-script-command/run-script-filled-custom.png)
 
     The batch file performs a net stop sftlist/y and then a net start sftlist.
-    In this scenario, the custom resource folder is transferred to the agent host and copied under windows\temp. A folder with the format, **scvmm.xxxxxxxx**, is  created to contain all the files. From here, it executes the batch file and the agent returns the corresponding outcome to VMM and displays it in the job. If the script generates an error, it creates a log under the specified location.
+    In this scenario, the custom resource folder is transferred to the agent host and copied under windows\temp. A folder with the format, **scvmm.xxxxxxxx**, is  created to contain all the files. From here, it executes the batch file, and the agent returns the corresponding outcome to VMM and displays it in the job. If the script generates an error, it creates a log under the specified location.

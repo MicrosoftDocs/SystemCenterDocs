@@ -5,7 +5,7 @@ description: This article describes how to set up host groups in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/24/2023
+ms.date: 08/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,9 +16,9 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 
 
-Read this article to learn about setting up and managing host groups in the System Center - Virtual Machine Manager (VMM) fabric.
+Read this article to learn about setting up and managing host groups in the System Center Virtual Machine Manager (VMM) fabric.
 
-A VMM host group is a logical entity that groups fabric resources together. You can group virtual machine hosts or clusters, or create nested host groups. After you've created host groups, you can assign and configure resources at the host group level. Those resources are then applied to all hosts and clusters in the group.
+A VMM host group is a logical entity that groups fabric resources together. You can group virtual machine hosts or clusters or create nested host groups. After you've created host groups, you can assign and configure resources at the host group level. Those resources are then applied to all hosts and clusters in the group.
 
 You can create host groups based on different criteria. For example, based on physical location, hardware capabilities, or specific workloads. You can assign permissions for host groups to the VMM admin, delegated administrators, and read-only admin user roles. Members of these user roles can view and manage the fabric resources that are assigned to them at the host group levels. When you create private clouds in VMM, you select which host groups will be included in the cloud, and then allocate resources in the host groups to the cloud.
 
@@ -26,7 +26,7 @@ You can create host groups based on different criteria. For example, based on ph
 
 1.  Select **Fabric** > **Servers** > **All Hosts** > **Create Host Group**.
 
-2.  Type in a group name. To create a host group at a specific location in the tree, right-click the desired parent node, and then select **Create Host Group**.
+2.  Enter a group name. To create a host group at a specific location in the tree, right-click the desired parent node, and then select **Create Host Group**.
 
 After you've created a host group, you can modify the following properties for the group.
 
