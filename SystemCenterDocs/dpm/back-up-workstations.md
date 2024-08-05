@@ -273,7 +273,7 @@ DPM enables you to recover files and folders from backups stored on the DPM serv
 To recover data from backups stored on the DPM server, follow these steps:
 
 1. Select **Start** > **All Apps** and then select **Microsoft System Center DPM Client**.
-     Alternately, you can select the DPM Client icon ![An icon that signifies DPM client.](media/back-up-workstations/icon-dpm-client.png) in the system tray.
+     Alternately, you can select the DPM Client icon ![An icon that signifies DPM client.](media/back-up-workstations/icon-data-protection-manager-client.png) in the system tray.
 
 2. In the **Data Protection Manager Client** page, select **Recovery** tab.
 
@@ -284,7 +284,7 @@ To recover data from backups stored on the DPM server, follow these steps:
 
 4. Select the **Search** icon to start the search for the existing recovery points on the DPM server. This lists the computers to which the user has permission.
      - Select **+** next to the computer you want to recover data to displays all the recovery points in the display pane.
-     - In the display pane, the **Time** column lists the time stamps for each recovery point and the **Link** column has an **Open…** link that points to the backup folder location on the DPM server for the each available recovery point listed.
+     - In the display pane, the **Time** column lists the time stamps for each recovery point and the **Link** column has an **Open…** link that points to the backup folder location on the DPM server for each available recovery point listed.
 
 5. Select **Open…** for the date and time of the recovery point to mount and access the recovery point data. Navigate to the file or folder you want to restore. Then, right-click and **copy** the data to be recovered and **paste** the data in the desired location.
 
