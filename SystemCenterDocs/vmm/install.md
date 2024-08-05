@@ -5,7 +5,7 @@ description: This article provides installation instructions for VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/05/2024
+ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -95,6 +95,15 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 > [!NOTE]
 > If Setup doesn't finish successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
 
+::: moniker range="sc-vmm-2019"
+> [!NOTE]
+> If you run into ADK file path issue while installing VMM, copy the files from the *amd64* folder in ADK root folder to the ADK root folder itself. The default ADK folder path is *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*, but it can be different based on your choice of folder path during ADK installation.
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+> [!NOTE]
+> If you run into ADK file path issue while installing VMM, copy the files from the *amd64* folder in ADK root folder to the ADK root folder itself. The default ADK folder path is *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*, but it can be different based on your choice of folder path during ADK installation.
+::: moniker-end
 
 ## Install VMM from a command prompt
 
