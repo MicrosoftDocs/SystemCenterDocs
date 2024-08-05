@@ -23,7 +23,7 @@ This article covers new functionality and improvements in Management Pack for SQ
   - Monitor tiles: VertiPaq memory consumed by SSAS Instance and VertiPaq memory paging indication
   - Perfomance tile: VertiPaq Memory Limit, VertiPaq Memory Limit(GB), VertiPaq Memory Usage on the Server (%), VertiPaq Memory Usage on the Server (GB), VertiPq Nonpaged Memory (GB) and VertiPaq Memory Paged (GB)
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
-  - implemented keyboard navigation using the A and D buttons on the tiles in the dashboard
+  - implemented [Keyboard Navigation](sql-server-dashboards-management-pack-instance-dashboard-navigation.md) using the A and D buttons on the tiles in the dashboard
   - added the ability for the screen reader to announce buttons and errors in the SQL Server wizard
   - redesigned dashboard list controls for greater accessibility
 
