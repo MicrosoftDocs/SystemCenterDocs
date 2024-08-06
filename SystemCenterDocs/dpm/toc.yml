@@ -113,3 +113,7 @@
       href: improve-replication-performance.md
     - name: Use central console to manage DPM servers
       href: use-central-console-to-manage-multiple-dpm-servers.md
+- name: Troubleshoot
+  items:
+  - name: Troubleshoot client protection End user recovery
+    href: client-protection-end-user-recovery.md
