@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: fkornilov
 ms.author: v-fkornilov
 manager: vvithal
-ms.date: 04/02/2024
+ms.date: 08/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,7 +15,7 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
 
-## June 2024 - 7.5.11.0 CTP
+## July 2024 - 7.6.0 RTM
 
 ### What's new
 
