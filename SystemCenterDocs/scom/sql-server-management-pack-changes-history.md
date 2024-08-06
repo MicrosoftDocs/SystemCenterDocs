@@ -21,7 +21,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 - Added new "Table Clustered Index Fragmentation" monitor that targets databases and checks for high fragmentation of clustered indexes
 - Added support for custom database monitoring with two options depending on the type of query: database context or cookdown
-- Added new "Property Bag" step in the custom monitor setup to extend the alert context with a property from the query result
+- Added new "Property Bag" step in the custom monitor setup to extend the alert context with properties from the query result
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Reworked the "Long Running Queries" alert rule to improve security
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
