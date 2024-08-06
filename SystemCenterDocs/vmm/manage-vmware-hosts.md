@@ -26,8 +26,12 @@ VMM enables you to deploy and manage virtual machines and services across multip
 - VMM integrates directly with VMware vCenter Server. Through the VMM console, you can manage the day-to-day operations of VMware vSphere hosts and clusters, such as the discovery and management of hosts.
 - VMM provides the ability to create, manage, store, place, and deploy virtual machines on vSphere hosts. You can import VMware templates.
 - You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example, configuring port groups, standard and distributed virtual switches (or **vSwitches**), vMotion, and Storage vMotion.
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 - You can convert VMware VMs to Hyper-V.
-
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+- You can [convert VMware VMs to Hyper-V](vm-convert-vmware.md).
+:::moniker-end
 
 ## Before you start
 

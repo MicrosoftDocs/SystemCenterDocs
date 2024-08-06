@@ -27,8 +27,11 @@ You can use service templates to create a guest cluster. That cluster can then b
 ::: moniker range="sc-vmm-2016"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2012 R2 or later. Otherwise, deployment will fail.
 ::: moniker-end
-::: moniker range=">sc-vmm-2016"
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2016 or later. Otherwise, deployment will fail.
+::: moniker-end
+::: moniker range="sc-vmm-2025"
+- VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2019 or later. Otherwise, deployment will fail.
 ::: moniker-end
 - You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if Hyper-V uses Cluster Shared Volumes (CSVs) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.
 - Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS) as the location of the shared .vhdx files.

@@ -46,7 +46,12 @@ Use the following procedure:
 
 | **Data related To** | **Data collected** |
 | --- | --- |
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 | **Census Data** | Unique ID generated for the VMM deployment <br /><br /> VMM build version <br /><br />ID used for correlation with other System Center products |
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+| **Census Data** | Customer Domain Name <br /><br /> Unique ID generated for the VMM deployment <br /><br /> VMM build version <br /><br />ID used for correlation with other System Center products |
+:::moniker-end
 | **Assurance Data** | Information about the VMM deployment - whether guardian service deployment or not <br /><br /> Count of guarded hosts being managed <br /><br />Count of hosts being managed <br /><br />Count of shielded VM templates <br /><br />Count of VM templates <br /><br /> Count of shielded VMs <br /><br />Count of VMs <br /><br /> Count of shielded clouds <br /><br />Count of guarded hosts in a cluster <br /><br />Count of guarded hosts in standalone deployments <br /><br />Count of code integrity policy in Global Settings <br /><br /> Count of Physical Computer Profile (PCP) with host guarding set <br /><br />If the VMM deployment is a guardian service deployment and OM integrated <br /><br /> If the VMM deployment is a guardian service deployment and WSUS integrated <br /><br /> Count of hosts with attestation mode as TPM<br /><br /> Count of hosts with attestation mode as AD <br /><br /> Count of CI policies existing in a library <br /><br /> Count of hosts being managed <br /><br /> Count of DMZ hosts being managed  <br /><br /> Count of Hyper-V hosts <br /><br /> Count of clusters <br /><br /> Count of nontrusted hosts being managed <br /><br />Information if customer is managing the VMware hosts<br /><br />Minimum, maximum, and average host cluster size <br /><br />Minimum, maximum, and average host memory size <br /><br /> Minimum, maximum, and average VMware cluster size
 | **Job related** | Indication if jobs are user initiated or background jobs<br /><br />Count of the number of times a job description type has failed<br /><br />Number of times job has run<br /><br />Maximum, minimum, and average number of jobs run per day |
 | **Dynamic Optimization Settings** | Count of hosts considered for dynamic optimization<br /><br />Count of hosts considered for power optimization<br /><br />Minimum, maximum, and average frequency to run dynamic optimization |
