@@ -5,7 +5,7 @@ description: This article provides guidance on upgrading Hyper-V host clusters
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/05/2024
+ms.date: 08/06/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: engagement-fy24
 
 
 
-Cluster rolling upgrade was introduced in Windows Server 2016. This feature enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
+Cluster rolling upgrade feature enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
 
 ::: moniker range="sc-vmm-2019"
 

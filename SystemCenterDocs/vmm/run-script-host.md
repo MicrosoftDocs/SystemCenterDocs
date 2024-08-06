@@ -5,7 +5,7 @@ description: This article explains about how to use the Run Script command in Sy
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/05/2024
+ms.date: 08/06/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
