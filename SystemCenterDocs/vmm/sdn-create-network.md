@@ -21,9 +21,9 @@ This article provides information about how to create VM networks in an SDN usin
 
 VM networks are abstract objects that act as an interface to logical networks. In a virtualized network environment, by using the VM networks, you can abstract virtual machines from the underlying logical network.
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-2022"
 
-VMM 2022 provides dual stack support for VM networks.
+VMM 2025 and 2022 provide dual stack support for VM networks.
 
 ::: moniker-end
 

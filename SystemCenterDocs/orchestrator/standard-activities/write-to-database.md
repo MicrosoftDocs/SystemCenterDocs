@@ -2,7 +2,7 @@
 title: Write to Database 
 description: This article describes the Write to Database activity that writes a row into a database table.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 07/29/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -79,6 +79,9 @@ Use the following information to configure the Write to Database activity.
 |**Password**|Enter the password for this database.|  
 
 ### SQL Server Connections Tab
+
+>[!Note]
+>MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter \<serverName\>;Trust Server Certificate=True in **Server** field for every configuration.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  

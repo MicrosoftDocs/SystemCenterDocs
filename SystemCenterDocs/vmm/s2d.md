@@ -5,7 +5,7 @@ description: This article describes how to set up and manage Storage Spaces Dire
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/10/2022
+ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: intro-deployment
 
 
 
-This article provides an overview of Storage Spaces Direct (S2D), and how it's deployed in the System Center - Virtual Machine Manager (VMM) fabric.
+This article provides an overview of Storage Spaces Direct (S2D), and how it's deployed in the System Center Virtual Machine Manager (VMM) fabric.
 
 Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups physical storage drives into virtual storage pools to provide virtualized storage. With virtualized storage, you can:
 

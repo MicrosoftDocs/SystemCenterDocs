@@ -16,6 +16,7 @@ ms.assetid: 21baa50d-4f34-489e-b3ce-f44e1b3a83aa
 ---
 
 ## Upgrade to System Center 2025 - Service Manager
+
 The following sections provide information about how to upgrade to System Center 2025 - Service Manager (SM).  
 
 > [!WARNING]  

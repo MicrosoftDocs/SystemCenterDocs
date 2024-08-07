@@ -5,7 +5,7 @@ description: This article describes how to set up and manage Storage Spaces Dire
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/01/2024
+ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -27,7 +27,7 @@ You can [view and configure cluster settings](hyper-v-cluster.md#configure-clust
 You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hyper-converged S2D cluster in the VMM fabric. The new node can be an existing Hyper-V server or a bare-metal physical server.
 
 > [!NOTE]
-> Typically, S2D node requires Remote Direct Memory Access (RDMA), Quality of Service (QoS), and switch embedded teaming (SET) settings. To configure these settings for a node by using bare-metal computers, you can use the post-deployment script capability in the physical computer profile (PCP). Here's the [sample PCP post-deployment script](hyper-v-bare-metal.md#sample-script).
+> Typically, S2D node requires Remote Direct Memory Access (RDMA), Quality of Service (QoS), and switch embedded teaming (SET) settings. To configure these settings for a node using bare-metal computers, you can use the post-deployment script capability in the physical computer profile (PCP). Here's the [sample PCP post-deployment script](hyper-v-bare-metal.md#sample-script).
 > You can also use this script to configure RDMA, QoS, and SET when you add a new node to an existing S2D deployment from bare-metal computers.
 
 -    When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node and enables S2D.
@@ -35,7 +35,7 @@ You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hype
 
 ## Control storage resources with QoS
 
-Quality of Service in [Windows Server](/windows-server/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs by using scale-out file share storage. QoS mitigates *noisy neighbor* issues and ensures that a single VM doesn't consume all storage resources.
+Quality of Service in [Windows Server](/windows-server/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using scale-out file share storage. QoS mitigates *noisy neighbor* issues and ensures that a single VM doesn't consume all storage resources.
 
 [Set up QoS policies](sofs-settings.md#set-a-storage-qos-for-an-sofs) for a file server or for specific virtual disks on the server.
 
@@ -60,3 +60,7 @@ The DCB settings must be consistent across all the hosts and the fabric network 
 To configure a DCB setting, use [this procedure](s2d-hyper-converged.md#step-3-configure-dcb-settings-on-the-s2d-cluster).
 
 ::: moniker-end
+
+## Next steps
+
+[Set storag3 QoS for clusters](./qos-storage-clusters.md)
