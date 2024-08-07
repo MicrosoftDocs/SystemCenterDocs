@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 03/01/2024
+ms.date: 08/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,12 +15,13 @@ ms.subservice: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## June 2024 - 7.5.19.0 CTP
+## July 2024 - 7.6.5 RTM
 
 ### What's New
 
 - Added new "Table Clustered Index Fragmentation" monitor that targets databases and checks for high fragmentation of clustered indexes
-- Added new "Property Bag" step in the custom monitor setup to extend the alert context with a property from the query result
+- Added support for custom database monitoring with two options depending on the type of query: database context or cookdown
+- Added new "Property Bag" step in the custom monitor setup to extend the alert context with properties from the query result
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Reworked the "Long Running Queries" alert rule to improve security
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:

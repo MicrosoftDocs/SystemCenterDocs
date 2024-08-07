@@ -5,7 +5,7 @@ description: This article lists the Microsoft Management Packs.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/24/2024
+ms.date: 08/05/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -112,13 +112,13 @@ The following table is for reference only and contains links to management packs
 |[Microsoft System Center 2019 Management Pack for Hyper-V](https://www.microsoft.com/download/details.aspx?id=101312)|11.0.4.0|2/5/2024|
 |[Microsoft System Center Management Pack for ADDS](https://www.microsoft.com/download/details.aspx?id=54525)|10.0.2.4|6/22/2022|
 |[Microsoft System Center Management Pack for Azure SQL Database](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.42.0|12/26/2022|
-|[Microsoft System Center Management Pack for Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.4.0.0|3/29/2024|
+|[Microsoft System Center Management Pack for Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.6.0.0|7/24/2024|
 |[Microsoft System Center Management Pack for Internet Information Service 2016 and 1709 Plus](https://www.microsoft.com/download/details.aspx?id=54445)|10.1.0.1|4/7/2022|
-|[Microsoft System Center management pack for SQL Server Analysis Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57382)|7.4.0.0|1/24/2024|
-|[Microsoft System Center management pack for SQL Server Dashboards](https://www.microsoft.com/download/details.aspx?id=51479)|7.4.0.0|1/23/2024|
+|[Microsoft System Center management pack for SQL Server Analysis Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57382)|7.6.2.0|7/24/2024|
+|[Microsoft System Center management pack for SQL Server Dashboards](https://www.microsoft.com/download/details.aspx?id=51479)|7.6.2.0|7/24/2024|
 |[Microsoft System Center management pack for SQL Server Replication version agnostic 2012-2019+](https://www.microsoft.com/download/details.aspx?id=56204)|7.0.28.0|12/26/2020|
-|[Microsoft System Center management pack for SQL Server Reporting Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57381)|7.4.0.0|1/24/2024|
-|[Microsoft System Center management pack for SQL Server version agnostic 2012-2022+ (Windows and Linux)](https://www.microsoft.com/download/details.aspx?id=56203)|7.4.0.0|1/23/2024|
+|[Microsoft System Center management pack for SQL Server Reporting Services version agnostic 2012-2022+](https://www.microsoft.com/download/details.aspx?id=57381)|7.6.1.0|7/24/2024|
+|[Microsoft System Center management pack for SQL Server version agnostic 2012-2022+ (Windows and Linux)](https://www.microsoft.com/download/details.aspx?id=56203)|7.6.5.0|7/24/2024|
 |[Microsoft System Center Management Pack for Windows Defender](https://www.microsoft.com/download/details.aspx?id=54081)|7.1.10128.1|4/7/2022|
 |[Microsoft System Center Management Pack for Windows Print Server 2016 and 1709 plus](https://www.microsoft.com/download/details.aspx?id=54588)|10.1.0.0|12/14/2020|
 |[Microsoft System Center Management Pack for Windows Server Cluster 2016 and above](https://www.microsoft.com/download/details.aspx?id=54701)|10.1.0.0|4/7/2022|

@@ -3,7 +3,7 @@ description: You can use DPM to back up client computers.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/29/2024
+ms.date: 08/01/2024
 title: Back up client computers with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
@@ -88,8 +88,8 @@ If you're looking to back up certain common folders in your client machines, you
 | Program Files            | C:\Program Files                                                                        |
 | System Drive             | C:\                                                                                     |
 
-> [!NOTE]
-> To backup *Links*, *Downloads*, *Slides Shows*, and *Quick Launch*, you need to add to the registry location
+>[!NOTE]
+>To backup *Links*, *Downloads*, *Slides Shows*, and *Quick Launch*, you need to add to the registry location
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders for every user.
 
 The details of the registry entry are below. Modify the value USERNAME according to your username of the client computer.
@@ -102,8 +102,8 @@ The details of the registry entry are below. Modify the value USERNAME according
 
 - reg add `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d “C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”`
 
-> [!NOTE]
-> While creating a protection group of your client or workstation machine, DPM honors the folder hierarchy during backup. As an example, if you select backup of *User Profiles*, which represents the parent of *Desktop* folder, the *Desktop* folder will be included in backup.
+>[!NOTE]
+>While creating a protection group of your client or workstation machine, DPM honors the folder hierarchy during backup. As an example, if you select backup of *User Profiles*, which represents the parent of *Desktop* folder, the *Desktop* folder will be included in backup.
 
 ## Back up client computers
 
@@ -123,13 +123,13 @@ The details of the registry entry are below. Modify the value USERNAME according
 
     - On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well-known folders, such as **Documents**, select the dropdown list.
 
-    > [!NOTE]
-    > - When you exclude a folder and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
-    > - When you include a folder and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
-    > - When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
-    > - In the **Folder** column, enter the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
-    > - You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
-    > - Under **File type exclusions**, you can specify the file types to exclude using their file extensions.
+    >[!NOTE]
+    >- When you exclude a folder and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
+    >- When you include a folder and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
+    >- When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
+    >- In the **Folder** column, enter the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
+    >- You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
+    >- Under **File type exclusions**, you can specify the file types to exclude using their file extensions.
 
 4. In **Select data protection method**, specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
@@ -177,19 +177,21 @@ The details of the registry entry are below. Modify the value USERNAME according
 You can recover the client data using any one of the following methods:
 
 - Allow clients to recover their own data by setting up user recovery
-- Use the Recovery Wizard to recover client computer data
+- Recover client’s computer data using Recovery Wizard on the DPM Server
 
-Select the required tab for steps to allow clients to recover their own data or recover client data using Recovery Wizard:
+Select the required tab for steps to allow **clients to recover their own data** or **recover data for clients** using the DPM Recovery Wizard:
 
-# [Allow clients to recover their data](#tab/AllowClients)
+::: moniker range="sc-dpm-2016"
+
+# [Allow clients to recover their data](#tab/AllowClients2016)
 
 End user recovery enables users to independently recover file data by retrieving recovery points of their files.
 
-> [!NOTE]
-> - Users can only recover data stored on disk.
-> - You'll need to modify the Active Directory schema to enable end user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](/previous-versions/system-center/system-center-2012-R2/hh758112(v=sc.12)) a detailed list of classes and attributes added to AD by DPM.
-> - If you enable end user recovery, you can't specify on which file servers end user recovery is enabled.
-> - You can't control which Active Directory users or groups can perform end user recovery.
+>[!NOTE]
+>- Users can only recover data stored on disk.
+>- You'll need to modify the Active Directory schema to enable end user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](/previous-versions/system-center/system-center-2012-R2/hh758112(v=sc.12)) a detailed list of classes and attributes added to AD by DPM.
+>- If you enable end user recovery, you can't specify on which file servers end user recovery is enabled.
+>- You can't control which Active Directory users or groups can perform end user recovery.
 
 **Configure end user recovery, here's what you'll need to do:**
 
@@ -205,6 +207,111 @@ End user recovery enables users to independently recover file data by retrieving
         > If the protected computer and DPM reside in different domains, the schema needs to be extended by running the DPMADSchemaExtension.exe tool on the other domain.
 
 2. After AD settings are complete in the **End-user Recovery** tab, select **Enable end-user recovery**.
+
+# [Recover data for clients](#tab/RecoverData2016)
+
+**Recover data from the DPM console as follows:**
+
+1. In the DPM console, select **Recovery** on the navigation bar and browse for the data you want to recover. In the results pane, select the data.
+
+2. The available recovery points are indicated in bold on the calendar in the recovery points section. Select the bold date for the recovery point you want to recover.
+
+3. In the **Recoverable item** pane, select the recoverable item you want to recover.
+
+4. In the **Actions** pane, select **Recover**. DPM starts the Recovery Wizard.
+
+5. You can recover data as follows:
+
+    1. **Recover to the original location**. This doesn't work if the client computer is connected over VPN. In this case, use an alternate location and then copy data from that location.
+
+    2. **Recover to an alternate location**.
+
+    3. **Copy to tape**. This option copies the volume that contains the selected data to a tape in a DPM library. You can also choose to compress or encrypt the data on tape.
+
+6. Specify your recovery options:
+
+    1. **Existing version recovery behavior**. Select **Create copy**, **Skip**, or **Overwrite**. This option is enabled only when you're recovering to the original location.
+
+    2. **Restore security**. Select **Apply settings of the destination computer** or **Apply the security settings of the recovery point version**.
+
+    3. **Network bandwidth usage throttling**. Select **Modify** to enable network bandwidth usage throttling.
+
+    4. **Enable SAN based recovery using hardware snapshots**. Select this option to use SAN-based hardware snapshots for quicker recovery.
+
+        This option is valid only when you have a SAN where hardware snapshot functionality is enabled, the SAN has the capability to create a clone and to split a clone to make it writable, and the protected computer and the DPM server are connected to the same SAN.
+
+    5. **Notification**. Select **Send an e-mail when the recovery completes**, and specify the recipients who will receive the notification. Separate the email addresses with commas.
+
+7. Select **Next** after you've made your selections for the preceding options.
+
+8. Review your recovery settings, and select **Recover**. Any synchronization job for the selected recovery item will be canceled while the recovery is in progress.
+
+**End users should recover data as follows:**
+
+1. Navigate to the protected data file. Right-click the file name > **Properties**.
+
+2. In **Properties** > **Previous Versions**, select the version that you want to recover from.
+
+---
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
+
+# [Allow clients to recover their data](#tab/AllowClients)
+
+>[!Note]
+>By default, DPM allows only the local administrator to perform user recoveries on the computer. The user account must be explicitly named as a local administrator on the client. It can't be a local administrator through group membership.
+
+For more information, see [**Enable non-administrators to recover files**](#enable-non-administrators-to-recover-files).
+
+>[!Note]
+>DPM Client UI tool supports Windows Communication Foundation (WCF) that uses TCP port 6075 on the DPM server for communication while performing recoveries. On the DPM server, DPM automatically configures firewall rules starting with DPMAM_WFC_ to allow this traffic.
+
+DPM enables you to recover files and folders from backups stored on the DPM server that are managed by the backup administrator. To recover your data, you must know the name of the DPM server on which the data was backed up. To know the name of the DPM server, contact your backup administrator.
+
+To recover data from backups stored on the DPM server, follow these steps:
+
+1. Select **Start** > **All Apps** and then select **Microsoft System Center DPM Client**.
+     Alternately, you can select the DPM Client icon ![An icon that signifies DPM client.](media/back-up-workstations/icon-data-protection-manager-client.png) in the system tray.
+
+2. In the **Data Protection Manager Client** page, select **Recovery** tab.
+
+3. The FQDN of the DPM Server is auto-populated in the **Search for recovery points on:** field. If not, enter the name of DPM server on which the data was backed up.
+
+     >[!Note]
+     >To know the name of the DPM server, contact your backup administrator.
+
+4. Select the **Search** icon to start the search for the existing recovery points on the DPM server. This lists the computers to which the user has permission.
+     - Select **+** next to the computer you want to recover data to displays all the recovery points in the display pane.
+     - In the display pane, the **Time** column lists the time stamps for each recovery point and the **Link** column has an **Open…** link that points to the backup folder location on the DPM server for each available recovery point listed.
+
+5. Select **Open…** for the date and time of the recovery point to mount and access the recovery point data. Navigate to the file or folder you want to restore. Then, right-click and **copy** the data to be recovered and **paste** the data in the desired location.
+
+## Enable non-administrators to recover files
+
+The administrator of a client computer must authorize the username of non-admin users who need permissions to perform end-user recovery of protected data on a protected client computer.
+
+To do this, the administrator must add the following registry key and value for each of these non-admin users. This is single value that contains a comma-separated list of client users.
+
+**Key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection` <br>
+**Value**: ClientOwners<br>
+**Type**: String<br>
+**Data**: Names of non-admin users. This must be a comma-separated list of user names without any leading or trailing spaces.<br>
+          For example: *Domain\User1,Domain\User2,Domain\User3 (and so on)*
+
+To configure DPM recovery permissions for users who are not members of the local administrators group, follow these steps:
+
+1. Sign in to the DPM protected client computer with a user account that is a member of the local administrators group.
+
+2. Open the registry editor and navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection`.
+
+3. Right-click **ClientProtection** key and select new **String Value** and name the new value as **ClientOwners**.
+
+     - Double-click the **ClientOwner** to add a single user using the Domain\User format or add multiple users separated by a comma. Ensure not to use any leading or trailing spaces in the list.
+
+     >[!Note]
+     > Non-Admin users added to the registry have access only to the recovery points created after the user was added. Recovery points that were created earlier are accessible by Administrators only.
 
 # [Recover data for clients](#tab/RecoverData)
 
@@ -251,3 +358,5 @@ End user recovery enables users to independently recover file data by retrieving
 2. In **Properties** > **Previous Versions**, select the version that you want to recover from.
 
 ---
+
+::: moniker-end
