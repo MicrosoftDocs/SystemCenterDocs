@@ -123,15 +123,6 @@ The details of the registry entry are below. Modify the value USERNAME according
 
     - On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well-known folders, such as **Documents**, select the dropdown list.
 
-<<<<<<< HEAD
-    > [!NOTE]
-    > - When you exclude a folder and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
-    > - When you include a folder and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
-    > - When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
-    > - In the **Folder** column, enter the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
-    > - You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
-    > - Under **File type exclusions**, you can specify the file types to exclude using their file extensions.
-=======
     >[!NOTE]
     >- When you exclude a folder and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
     >- When you include a folder and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
@@ -139,7 +130,6 @@ The details of the registry entry are below. Modify the value USERNAME according
     >- In the **Folder** column, enter the folder names using variables such as *program files* or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
     >- You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
     >- Under **File type exclusions**, you can specify the file types to exclude using their file extensions.
->>>>>>> 1ae7574a946be3d78e5ecce27a7cd3ceefe6b1a8
 
 4. In **Select data protection method**, specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
@@ -193,24 +183,6 @@ Select the required tab for steps to allow **clients to recover their own data**
 
 ::: moniker range="sc-dpm-2016"
 
-<<<<<<< HEAD
-End user recovery enables users to independently recover file data by retrieving recovery points of their files.
-
-> [!NOTE]
-> - Users can only recover data stored on disk.
-> - You'll need to modify the Active Directory schema to enable end user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](/previous-versions/system-center/system-center-2012-R2/hh758112(v=sc.12)) a detailed list of classes and attributes added to AD by DPM.
-> - If you enable end user recovery, you can't specify on which file servers end user recovery is enabled.
-> - You can't control which Active Directory users or groups can perform end user recovery.
-
-**Configure end user recovery, here's what you'll need to do:**
-
-1. Configure Active Directory to support end user recovery:
-
-    1. In the DPM console, select **Options** > **End-user Recovery** > **Configure Active Directory**.
-
-    2. In **Configure Active Directory**, select **Use current credentials** or type in a username and password with schema and domain admin permissions. Confirm your settings.
-
-=======
 # [Allow clients to recover their data](#tab/AllowClients2016)
 
 End user recovery enables users to independently recover file data by retrieving recovery points of their files.
@@ -229,7 +201,6 @@ End user recovery enables users to independently recover file data by retrieving
 
     2. In **Configure Active Directory**, select **Use current credentials** or type in a username and password with schema and domain admin permissions. Confirm your settings.
 
->>>>>>> 1ae7574a946be3d78e5ecce27a7cd3ceefe6b1a8
     3. If you don't have an account that has schedule and domain admin permissions, you can ask another user with those permissions to run &lt;drive:&gt;\Program Files\Microsoft Data Protection Manager\DPM\End User Recovery\DPMADSchemaExtension.exe on a computer in the same domain as the DPM server. When the app runs, the user should specify the name of the computer on which you want to enable end user recovery and the DNS domain name of the DPM server.
 
         > [!NOTE]
