@@ -51,7 +51,7 @@ To allow administrators and designated users to recover their own files, follow 
 
 8. For each client machine, add permissions for each Administrator and other user accounts (optionally) who must be able to recover their own file.
 
-      1. Select one of the machine accounts > **Role Assignments** and then select **guid$client** object.
+      1. Select one of the machines accounts > **Role Assignments** and then select **guid$client** object.
       2. Under **Name**, right-click **guid$client** entry and select **Properties**
       3. Select **Members** tab and then select **Select…** to add the users.
       4. Add the Domain Administrator and any additional Domain users, then select **Check Names**.
