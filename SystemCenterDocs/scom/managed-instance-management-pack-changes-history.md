@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: fkornilov
 ms.author: v-fkornilov
 manager: vvithal
-ms.date: 04/02/2024
+ms.date: 08/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,12 +15,12 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
 
-## June 2024 - 7.5.11.0 CTP
+## July 2024 - 7.6.0 RTM
 
 ### What's new
 
 - Reworked the creation of Run As Accounts for the Automatic template to allow multiple accounts to be created in one time period
-- Added support for [Managed Identity](managed-instance-management-pack-automatic-monitoring-managed-identity.md) with System-assigned Managed Identity and User-assigned Managed Identity options to the Automatic template options for monitoring SQL Managed Instance
+- Enhanced the Automatic template options for monitoring SQL Managed Instances by introducing support for [Managed Identity](managed-instance-management-pack-automatic-monitoring-managed-identity.md). This includes both System-assigned and User-assigned Managed Identity options
 - Updated display strings
 
 ## March 2024 - 7.4.0.0 RTM
