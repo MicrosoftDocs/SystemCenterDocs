@@ -2,7 +2,7 @@
 title: Write to Database 
 description: This article describes the Write to Database activity that writes a row into a database table.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 07/29/2024
+ms.date: 08/08/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -80,8 +80,12 @@ Use the following information to configure the Write to Database activity.
 
 ### SQL Server Connections Tab
 
+::: moniker range="sc-orch-2025"
+
 >[!Note]
->MSOLEDB19 Driver is used to establish connections to the SQL Server. If Trusted Server Certificate isn't installed, enter \<serverName\>;Trust Server Certificate=True in **Server** field for every configuration.
+>MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator machine,  enter Server=\<serverName\>;Trust Server Certificate=True in **Server** field for every configuration. [Learn more](/SystemCenterDocs/orchestrator/standard-activities/query-database.md) to install a SQL Server certificate.
+
+::: moniker-end
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
