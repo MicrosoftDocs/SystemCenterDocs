@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -72,7 +72,7 @@ This article provides detailed installation instructions for the various Orchest
 
 5. On the **Select features to install** page, ensure that **Management Server** is the only feature selected and select **Next**.
 
-6. Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next**, and proceed to the next step.
+6. Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
 If a prerequisite isn't met, a page displays the information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
@@ -94,7 +94,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator.  If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. Enable the **Trust Server Certificate** setting (not recommended) to let Orchestrator skip SQL Server certificate validation. For more information about SSL and encrypted connections, [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 ::: moniker range=">=sc-orch-2022"

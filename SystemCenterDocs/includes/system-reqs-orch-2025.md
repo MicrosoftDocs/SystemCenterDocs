@@ -5,7 +5,7 @@ description: include file to provide system requirements for Orchestrator 2025, 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: Orchestrator
@@ -46,7 +46,7 @@ Install the [Microsoft Visual C++ Redistributable (>= 14.34)](/cpp/windows/lates
 
 The following software is required for a full installation of Orchestrator on a single computer:
 
-- Microsoft SQL Server 2019 – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
+- Microsoft SQL Server – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
 
     > [!NOTE]
     > Management servers and runbook servers installed on the same computer must use the same database.
