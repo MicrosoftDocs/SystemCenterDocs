@@ -54,6 +54,8 @@ The following monitors are available for the monitoring of SQL Server Analysis S
 |Processing Pool Job Queue length|This monitor reports an alert when the processing pool job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
 |Default Storage Free Space|This monitor reports a Warning alert when the available free space for the instance default storage drops below the **Warning Threshold** setting expressed as a percentage of the sum of estimated default storage folder (DataDir) size and free disk space. The monitor reports a Critical alert when the available space drops below **Critical Threshold**. The monitor doesn't take into account databases and partitions located in folders other than the default storage folder (DataDir).|
 |CPU utilization|This monitor reports an alert if the CPU usage by the SQL Server Analysis Services process is high.|
+|VertiPaq memory consumed by SSAS Instance|This monitor reports a warning when Vertipaq memory allocations by SSAS instance surpass the configured **Warning Threshold** expressed as either an absolute value in GB or a percentage of the physical memory. The monitor issues a critical alert when these allocations surpass the configured **Critical Threshold**.|
+|VertiPaq memory paging indication|This monitor reports a warning when the Vertipaq memory paging usage by SSAS instance surpass the configured **Warning Threshold**, expressed as a percentage of the Vertipaq memory limit. The monitor issues a critical alert when these allocations surpass the configured **Critical Threshold** thus warning you that paging is soon to occur.|
 
 ## Database Monitoring
 
@@ -126,6 +128,9 @@ Performance collection rules collect the following metrics:
 - Processing Aggreagations Rows created/sec
 - Indexes Processing Rows/sec
 - Processing Rows written/sec
+- VertiPaq Memory Limit(GB)
+- VertiPaq Memory Paged (GB)
+- VertiPq Nonpaged Memory (GB)
 
 ## How Health Rolls Up
 
