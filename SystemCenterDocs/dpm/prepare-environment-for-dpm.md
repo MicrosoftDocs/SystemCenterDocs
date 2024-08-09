@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 
 # Preparing your environment for System Center Data Protection Manager
 
-[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 ::: moniker range="sc-dpm-2022"
 

@@ -13,7 +13,7 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 
 # Get DPM installed
 
-[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 

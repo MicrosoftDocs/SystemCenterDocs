@@ -15,7 +15,7 @@ ms.custom: engagement-fy24
 
 # Deduplicate DPM storage
 
-[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 System Center Data Protection Manager (DPM) can use data deduplication.
 

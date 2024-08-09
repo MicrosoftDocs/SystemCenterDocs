@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Prepare data storage
 
-[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 A major part of your System Center Data Protection Manager (DPM) deployment will be figuring out how to store data backed-up by DPM. Learn about:
 
