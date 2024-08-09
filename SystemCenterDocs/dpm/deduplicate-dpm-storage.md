@@ -3,7 +3,7 @@ description: You can use data deduplication in DPM storage to find and remove du
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/20/2024
+ms.date: 08/09/2024
 title: Deduplicate DPM storage
 ms.subservice: data-protection-manager
 ms.assetid: af49cdc3-1f63-4c10-843a-d1cd27af473a
@@ -14,6 +14,8 @@ ms.custom: engagement-fy24
 ---
 
 # Deduplicate DPM storage
+
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 System Center Data Protection Manager (DPM) can use data deduplication.
 
