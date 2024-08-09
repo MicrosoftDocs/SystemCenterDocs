@@ -4,7 +4,7 @@ description: This article explains how to install the Orchestrator Integration T
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/03/2024
+ms.date: 08/09/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,7 +13,7 @@ ms.custom: intro-installation
 
 # Installation
 
-
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 This article provides the system requirements and steps to install the Orchestrator Integration Toolkit.  
 
