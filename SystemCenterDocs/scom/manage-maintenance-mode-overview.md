@@ -5,7 +5,7 @@ description: This article describes how to put a monitored object into maintenan
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/27/2023
+ms.date: 08/09/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,7 +14,11 @@ ms.topic: article
 
 # Suspend monitoring temporarily by using maintenance mode
 
+::: moniker range=">=sc-om-2019 <=sc-om-2022"
 
+[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+
+::: moniker-end
 
 Maintenance mode in Operations Manager enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 

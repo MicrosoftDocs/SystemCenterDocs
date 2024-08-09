@@ -6,13 +6,19 @@ ms.custom: engagement-fy23
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/02/2024
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for Azure SQL Database
+
+::: moniker range=">=sc-om-2019 <=sc-om-2022"
+
+[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+
+::: moniker-end
 
 This section lists operating systems and features supported by Management Pack for Azure SQL Database.
 
