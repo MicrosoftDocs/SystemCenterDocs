@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23
 
 
 
-Read this article to set up a hyper-converged cluster running Storage Spaces Direct (S2D) in System Center Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
+This article describes how to set up a hyper-converged cluster running Storage Spaces Direct (S2D) in System Center Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
 
 You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts or by provisioning from bare-metal servers.
 
@@ -79,7 +79,7 @@ Follow these steps to provision a cluster from Hyper-V hosts:
 2.	 Follow the instructions for [provisioning a cluster from standalone Hyper-V hosts managed in the VMM fabric](hyper-v-standalone.md).
 
 > [!NOTE]
-> - When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard. In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
+> - When you set up the cluster, ensure to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard. In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
 > - If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
 # [From bare metal machines](#tab/BareMetalMachines)
