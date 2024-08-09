@@ -11,4 +11,4 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 > [!CAUTION]
-> This article references Windows Server 2012 and 2012 R2 reached End Of Support; consider your use and planning accordingly. For more information, see the [Windows Server 2012 and 2012 R2 End of Support guidance](/lifecycle/products/windows-server-2012-r2).
+> This article references Windows Server 2012 and 2012 R2 reached End Of Support. Consider your use and planning accordingly. For more information, see the [Windows Server 2012 and 2012 R2 End of Support guidance](/lifecycle/products/windows-server-2012-r2).

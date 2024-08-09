@@ -1,7 +1,7 @@
 ---
 title: System Center - The Orchestrator integration pack for System Center Operations Manager
 description: Learn about the integration pack for Operations Manager, an add-in provided by System Center Orchestrator.
-ms.date: 04/03/2024
+ms.date: 08/09/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,7 +13,7 @@ ms.custom: engagement-fy24
 
 # The integration pack for System Center Operations Manager
 
-
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 The integration pack for Operations Manager is an add-in provided by System Center Orchestrator. Use the integration pack to connect an Orchestrator Runbook server to an Operations Manager management server so that you can automate various actions.
 
