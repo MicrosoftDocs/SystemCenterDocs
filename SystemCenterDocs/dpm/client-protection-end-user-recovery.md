@@ -1,9 +1,9 @@
 ---
-description: Troubleshoot client protection End user recovery.
+description: Troubleshoot client protection End User Recovery in Data Protection Manager.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 08/06/2024
+ms.date: 08/09/2024
 title: Client protection End user Recovery (EUR) doesn’t work
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -13,7 +13,7 @@ manager: jsuri
 ms.custom:
 ---
 
-# Client protection End user Recovery (EUR) doesn’t work
+# Client protection End User Recovery (EUR) doesn’t work
 
 DPM offers client desktop protection to backup designated folders and files.  One of the benefits of Client protection is that Administrators and client machine end users can recover their own data from the DPM server without asking the DPM Administrator to restore the files from the backup server.
 
@@ -21,7 +21,7 @@ For more information on Recovering data for client desktop machines, see [Back u
 
 The **Allow clients to recover their data** section details how End User Recovery works. However, this feature isn’t working as designed.  
 
-**Issue**:
+### Issue
 
 Administrators and optionally configured end users can’t recover their own data. When you search for recovery points, you see the following message:
 
@@ -29,7 +29,7 @@ Administrators and optionally configured end users can’t recover their own dat
 
 :::image type="content" source="media/client-protection-end-user-recovery/data-protection-manager-client.png" alt-text="Screenshot of Data Protection Manager client.":::
 
-**Workaround**:
+### Workaround
 
 Allow administrators and designated users to recover their own files.  
 
@@ -58,6 +58,8 @@ To allow administrators and designated users to recover their own files, follow 
       5. Select **OK**.
 
       :::image type="content" source="media/client-protection-end-user-recovery/console.png" alt-text="Screenshot of Data Protection Manager console.":::
+     
+      :::image type="content" source="media/client-protection-end-user-recovery/console-inline.png" alt-text="Screenshot of Data Protection Manager console." lightbox="media/client-protection-end-user-recovery/console-expanded.png":::
 
 After you complete these steps for each client machine, the Administrator and other added users can recover data from any NEW recovery points that were created after you added them.
 
