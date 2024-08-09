@@ -4,7 +4,7 @@ description: This article explains how to install the Orchestrator Integration T
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/03/2024
+ms.date: 08/09/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,7 +13,8 @@ ms.custom: intro-installation
 
 # Installation
 
-
+> [!CAUTION]
+> This article references Windows Server 2012 and 2012 R2 reached End Of Support. Consider your use and planning accordingly. For more information, see the [Windows Server 2012 and 2012 R2 End of Support guidance](/lifecycle/products/windows-server-2012-r2).
 
 This article provides the system requirements and steps to install the Orchestrator Integration Toolkit.  
 
