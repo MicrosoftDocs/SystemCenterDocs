@@ -20,7 +20,7 @@ This article covers new functionality and improvements in Management Pack for Az
 ### What's new
 
 - Reworked the creation of Run As Accounts for the Automatic template to allow multiple accounts to be created in one time period
-- Added support for [Managed Identity](managed-instance-management-pack-automatic-monitoring-managed-identity.md) with System-assigned Managed Identity and User-assigned Managed Identity options to the Automatic template options for monitoring SQL Managed Instance
+- Enhanced the Automatic template options for monitoring SQL Managed Instances by introducing support for [Managed Identity](managed-instance-management-pack-automatic-monitoring-managed-identity.md). This includes both System-assigned and User-assigned Managed Identity options
 - Updated display strings
 
 ## March 2024 - 7.4.0.0 RTM
