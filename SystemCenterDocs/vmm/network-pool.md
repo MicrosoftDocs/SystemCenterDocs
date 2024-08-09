@@ -5,7 +5,7 @@ description: This article describes how to set up IP address pools in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/29/2021
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: UpdateFrequency2
 
 
 
-This article describes how to set up static IP address pools for logical and VM networks in the System Center - Virtual Machine Manager (VMM) networking fabric.
+This article describes how to set up static IP address pools for logical and VM networks in the System Center Virtual Machine Manager (VMM) networking fabric.
 
 >[!NOTE]
 > While creating a static IP address pool in VMM, don't use the IP address range (that is managed by the pool) outside of VMM, in the same environment.
@@ -50,19 +50,19 @@ When you set up the logical network, you'll need to configure a static IP addres
 
 ## Set up an IP address pool on a VM network
 
-1. Select **VMs and Services** > **VM Networks**  > **Home** > **Show** > **VM Networks** > **VM Network** tab.
-2. In  **VM Networks and IP Pools**, select the VM network **Create** > **Create IP Pool**.
-2. In **Create Static IP Address Pool Wizard** > **Name**, specify a name and description. Ensure that the correct logical network is indicated. Check that the correct VM network and subnet is selected.
-3. In **IP address range**, enter the start and end addresses for the pool. You can create multiple IP address pools in a subnet but the ranges mustn't overlap. In **Reserved IP addresses**, specify any ranges you want to reserve for other purposes.
+1. Select **VMs and Services** > **VM Networks**  > **Home** > **Show** > **VM Networks** > **VM Network**.
+2. In  **VM Networks and IP Pools**, select the VM network > **Create** > **Create IP Pool**.
+2. In **Create Static IP Address Pool Wizard** > **Name**, specify a name and description. Ensure that the correct logical network is indicated. Ensure the correct VM network and subnet is selected.
+3. In **IP address range**, enter the start and end addresses for the pool. You can create multiple IP address pools in a subnet but the ranges mustn't overlap. In **Reserved IP addresses**, specify any range you want to reserve for other purposes.
 6. In **Gateway**, select **Insert** if you want to specify one or more default gateways and the metric. The default gateway address must be in the same subnet range as the IP address pool but doesn't need to be part of the pool.
-7. In **DNS** specify DNS information, including DNS servers, the default DNS suffix for the connection, and the list of DNS search suffixes. For virtual machines that will join an Active Directory domain, we recommend that you use Group Policy to set the primary DNS suffix. This will ensure that when a Windows-based virtual machine is set to register its IP addresses with the primary DNS suffix, a Windows-based DNS server will register the IP address dynamically. Additionally, the use of Group Policy enables you to have an IP address pool that spans multiple domains. In this case, you would not want to specify a single primary DNS suffix.
+7. In **DNS**, specify DNS information, including DNS servers, the default DNS suffix for the connection, and the list of DNS search suffixes. For virtual machines that will join an Active Directory domain, we recommend that you use Group Policy to set the primary DNS suffix. This will ensure that when a Windows-based virtual machine is set to register its IP addresses with the primary DNS suffix, a Windows-based DNS server will register the IP address dynamically. Additionally, the use of Group Policy enables you to have an IP address pool that spans multiple domains. In this case, you would not want to specify a single primary DNS suffix.
 8. In **WINS**, select **Insert** if you want to enter the IP address of a WINS server. You can also select whether to enable NetBIOS over TCP/IP. This isn't recommended if the address range is made up of public addresses.
 9. In **Summary**, verify the settings and select **Finish**. When the job shows as **Completed**, verify the pool in **Logical Networks and IP Pools**.
 
 
 ### Release inactive addresses from the static address pool
 
-You can release inactive addresses. When you do, VMM returns the address to the static IP, or MAC address pool and considers it available for reassignment. An address is considered inactive if:
+You can release inactive addresses. When you do, VMM returns the address to the static IP pool, or MAC address pool and considers it available for reassignment. An address is considered inactive if:
 
 - A host that was assigned a static IP address through the bare-metal deployment process is removed from VMM management. When you remove the host, any IP and MAC addresses that were statically assigned to virtual machines on the host are also marked as inactive.
 - A virtual machine goes into a missing state because it was removed outside VMM.
@@ -71,9 +71,9 @@ You can release inactive addresses. When you do, VMM returns the address to the 
 
 	- To release addresses in a pool in a logical network, select **Logical Networks and IP Pools**, expand the logical network, and select the IP address pool.
 	- To release addresses in a pool in a VM network, select **Logical Networks and IP Pools**, expand the VM network, and select the IP address pool.
-2. Select **Home** > **Properties** > **Inactive addresses** and select the inactive IP addresses that you want to release.
+2. Select **Home** > **Properties** > **Inactive addresses**, and select the inactive IP addresses that you want to release.
 
 
 ## Next steps
 
-[Create a VM network](network-virtual.md).
+[Add a network virtualization gateway to the VMM fabric](network-gateway.md).

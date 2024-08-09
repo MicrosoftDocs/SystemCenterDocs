@@ -5,7 +5,7 @@ description: This article provides guidance for setting up load balancing for VM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/30/2023
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,10 +17,10 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-Read this article to learn about integrating Windows network load balancing (NLB) and hardware load balancers with System Center - Virtual Machine Manager (VMM) service templates.
+Read this article to learn about integrating Windows network load balancing (NLB) and hardware load balancers with System Center Virtual Machine Manager (VMM) service templates.
 
 
-Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that should be used. You can add VM templates, network settings, applications, and storage to a service template.
+Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that must be used. You can add VM templates, network settings, applications, and storage to a service template.
 
 Service templates can be single or multi-tier. A single tier service contains one VM used as a specific app. A multi-tier service contains multiple VMs. [Learn more](library-service-templates.md).
 
@@ -30,9 +30,9 @@ Service templates can be single or multi-tier. A single tier service contains on
 
 You can add a load balancer to load balance requests to VMs in a service tier. You can use a hardware load balancer or NLB for round robin balancing.
 
-To add a load balancer, you'll need to do the following actions:
+To add a load balancer, you'll need to do the following:
 
-- Ensure you have [logical networks configured](network-logical.md). The logical networks should have associated network sites. Those network sites should have one or more associated subnets from which you can create static IP address pools. In addition, associate each network site with the host group where the service will be deployed.
+- Ensure you have [logical networks configured](network-logical.md). The logical networks must have associated network sites. Those network sites must have one or more associated subnets from which you can create static IP address pools. In addition, associate each network site with the host group where the service will be deployed.
 - [Create an IP address pool](network-pool.md) for the logical networks. The IP pool must contain a reserved range of virtual IP addresses that can be assigned to the load balancer. You must set up the static IP address pools for the load balancer and for the virtual machines behind the load balancer. These can be from the same pool or from different pools, but you'll need both VIPs and IP addresses for the virtual machines.
 - [Create VM networks](network-virtual.md) on top of logical networks.
 - [Create VIP templates](network-nlb.md#create-vip-templates): A virtual IP (VIP) template contains load balanced settings for a specific type of network traffic. After you create a VIP template, you can specify it when you set up load balancing in a service template.
@@ -57,10 +57,10 @@ To add a load balancer, you'll need to do the following actions:
 	- Select **Custom** to specify **TCP**, **UDP**, or both.
 
 6. In **Persistence**, select **Enable persistence** to make the client session sticky (affinity). This setting means that the load balancer will always try to direct the same client to the same VM. It's based on the specified source IP address and subnet mask, the destination IP address, and other parameters that vary depending on the protocol.
-7. In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET? makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, monitoring interval, timeout, and retries.
+7. In **Health Monitors**, you can optionally specify that a verification must run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET? makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, monitoring interval, timeout, and retries.
 
 > [!NOTE]
-> The timeout should be less than the interval.
+> The timeout must be less than the interval.
 
 8. In **Load Balancing**, select which load balancing method you want to use. You can configure new connections to be directed based on the least connections or the fastest response time, using round robin, or using a custom method supported by the load balancer. If you're enabling NLB, select **Round Robin**.
 9. On the **Summary** page, review the settings and select **Finish**. The **Jobs** dialog appears. Wait for a **Completed** status. Then verify that the template appears in the **VIP Templates** pane.
@@ -70,8 +70,8 @@ To add a load balancer, you'll need to do the following actions:
 
 Set up a hardware load balancer as follows:
 
-- **Get a configuration provider**: To add a supported hardware load balancer, you'll need to download and install a configuration provider available from the load balancer manufacturer. VMM currently supports [Brocade ServerIron ADX load balancer provider](http://www.brocade.com/partnerships/technology-alliance-partners/partner-details/microsoft/microsoft-systems-center/index.page) and [Citrix NetScaler load balancer provider](https://www.citrix.com/community.html). The provider is a VMM plug-in that translates VMM PowerShell commands to the load balancer API. After you've installed the provider, you should restart the VMM service (**net stop scwmmservice** > **net start scvmmservice**).
-- **Set up an account**: Create a VMM Run As account with a user name and password with permissions to configure the downloaded load balancer.
+- **Get a configuration provider**: To add a supported hardware load balancer, you'll need to download and install a configuration provider available from the load balancer manufacturer. VMM currently supports [Brocade ServerIron ADX load balancer provider](http://www.brocade.com/partnerships/technology-alliance-partners/partner-details/microsoft/microsoft-systems-center/index.page) and [Citrix NetScaler load balancer provider](https://www.citrix.com/community.html). The provider is a VMM plug-in that translates VMM PowerShell commands to the load balancer API. After you've installed the provider, you must restart the VMM service (**net stop scwmmservice** > **net start scvmmservice**).
+- **Set up an account**: Create a VMM Run As account with a username and password with permissions to configure the downloaded load balancer.
 - **Add the load balancer to VMM**: Add a hardware load balancer to VMM using the Add Load Balancer Wizard.
 
 #### Add the hardware load balancer to VMM
@@ -80,7 +80,7 @@ During the wizard, select the host groups for which the load balancer is availab
 
 1. Select **Fabric** > **Networking** > **Load Balancers** > **Fabric Resources** > **Home** > **Add** > **Add Resources** > **Load Balancer**.
 2. In **Add Load Balancer Wizard** > **Credentials**, select the Run As account with the load balancer credentials.
-3. In **Host Group**, select each host group where the service will be deployed. Hosts should be able to access the load balancer. In addition, a physical network adapter on the host should be configured to use the same logical network as the service tier.
+3. In **Host Group**, select each host group where the service will be deployed. Hosts must be able to access the load balancer. In addition, a physical network adapter on the host must be configured to use the same logical network as the service tier.
 4. In **Manufacturer and Model**, select the appropriate entries.
 5. In **Address**, specify the **IP address** and **FQDN** or **NetBIOS** names of the load balancer. Specify the port on which the load balancer listens for requests.
 6. In **Logical Network Affinity**, specify the affinity to logical networks. 
@@ -88,7 +88,7 @@ During the wizard, select the host groups for which the load balancer is availab
 >[!NOTE]
 > - For frontend affinity, you'll select the logical network from which the load balancer obtains its VIP. The VIP is the IP address that's assigned to the load balancer when you deploy it in a service template.
 > - For frontend affinity, based on the logical networks, VMM determines the static IP address pools that are accessible from both the load balancer and from the relevant host group.
-> - When selecting logical networks for frontend affinity, the associated network site with the reserved VIP address range should be available to the host groups associated with the load balancer.
+> - When selecting logical networks for frontend affinity, the associated network site with the reserved VIP address range must be available to the host groups associated with the load balancer.
 > - For backend affinity, you'll select the logical networks to which you want to make the load balancer available for connections from the VMs in a service tier.
 
 7. In **Provider**, select the load balancer provider. Select **Test** to check the configuration.
@@ -112,11 +112,11 @@ NLB is automatically included as a load balancer in VMM. As long as you've set u
 
 ### Set up the hardware VIP for user access
 
-When the service is deployed, VMM automatically selects a VIP from the reserved range in the static IP address pool, and assigns it to the load-balanced service tier. To enable users to connect to the service, after the service is deployed, you need to determine the VIP and configure a DNS entry for it.
+When the service is deployed, VMM automatically selects a VIP from the reserved range in the static IP address pool and assigns it to the load-balanced service tier. To enable users to connect to the service, after the service is deployed, you need to determine the VIP and configure a DNS entry for it.
 
 1. After the service is deployed, select **Fabric** > **Networking** > **Load Balancers**.
 2. Select **Show** > **Service** > **Load Balancer Information for Services** and expand the service to see which VIP is assigned.
-3. Request that the DNS administrator manually create a DNS entry for the VIP. The entry should be the name that users will specify to connect to the service. For example, servicename.contosol.com.
+3. Request that the DNS administrator manually create a DNS entry for the VIP. The entry must be the name that users will specify to connect to the service. For example, servicename.contosol.com.
 
 ## Next steps
 
