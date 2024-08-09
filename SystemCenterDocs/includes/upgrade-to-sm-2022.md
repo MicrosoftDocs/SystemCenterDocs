@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/22/2024
+ms.date: 08/06/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -234,3 +234,17 @@ If you've installed a data warehouse management server in your environment, as p
 ### Encryption keys  
 
 When you've finished running Setup to either install or upgrade to System Center 2022 - Service Manager, you're prompted to open the Encryption Backup or Restore Wizard. If you've previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  
+
+## Known issue
+
+### After a successful Data Warehouse upgrade, the *MPSyncJob* fails
+
+**Description**:
+
+After a successful Data Warehouse upgrade, the *MPSyncJob* fails due to a deployment failure in the management pack **Microsoft System Center Configuration Manager Data Warehouse Library**. The **OperationsManager** event log shows the following error:
+- Incorrect syntax near the keyword `IF`
+- Incorrect syntax near `END`
+
+**Workaround**:
+
+Run the script documented [here](https://raw.githubusercontent.com/microsoft/CSS-SystemCenter-ServiceManager/5dfede20beabdead8dc33f39e97f6cf71a09caf8/Misc/FixForBug1040139.sql).
