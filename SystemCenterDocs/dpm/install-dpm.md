@@ -1,7 +1,7 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
 ms.topic: article
-ms.date: 07/01/2024
+ms.date: 08/09/2024
 title: Installing DPM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,6 +12,8 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ---
 
 # Get DPM installed
+
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
