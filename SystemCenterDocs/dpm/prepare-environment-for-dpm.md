@@ -6,11 +6,11 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 08/06/2024
 title: Preparing your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Preparing your environment for System Center Data Protection Manager
