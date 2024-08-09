@@ -56,8 +56,6 @@ To allow administrators and designated users to recover their own files, follow 
       3. Select **Members** tab and then select **Select…** to add the users.
       4. Add the Domain Administrator and any other Domain users, then select **Check Names**.
       5. Select **OK**.
-
-      :::image type="content" source="media/client-protection-end-user-recovery/console.png" alt-text="Screenshot of Data Protection Manager console.":::
      
       :::image type="content" source="media/client-protection-end-user-recovery/console-inline.png" alt-text="Screenshot of Data Protection Manager console." lightbox="media/client-protection-end-user-recovery/console-expanded.png":::
 
