@@ -16,7 +16,7 @@ ms.subservice: operations-manager
 
 ::: moniker range=">=sc-om-2019 <=sc-om-2022"
 
-[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 ::: moniker-end
 

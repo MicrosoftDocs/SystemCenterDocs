@@ -13,7 +13,7 @@ ms.topic: article
 
 # Microsoft Management Packs
 
-[!INCLUDE [eos-notes-windows-server-2012.md](../includes/eos-notes-windows-server-2012.md)]
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 For many of our own technologies, Microsoft provides a management pack to help monitor these technologies using Operations Manager. For more information about management packs, see: [What is in an Operations Manager management pack?](/system-center/scom/manage-overview-management-pack)
 
