@@ -13,7 +13,7 @@ ms.custom: intro-installation
 
 # Installation
 
-[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](/SystemCenterDocs/includes/end-of-support-notes-windows-server-2012.md)]
 
 This article provides the system requirements and steps to install the Orchestrator Integration Toolkit.  
 
