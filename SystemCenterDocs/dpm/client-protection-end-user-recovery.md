@@ -3,8 +3,8 @@ description: Troubleshoot client protection End User Recovery in Data Protection
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 08/09/2024
-title: Client protection End user Recovery (EUR) doesn’t work
+ms.date: 08/12/2024
+title: Client protection End User Recovery (EUR) doesn’t work in Data Protection Manager.
 ms.subservice: data-protection-manager
 ms.assetid:
 author: PriskeyJeronika-MS
@@ -21,7 +21,7 @@ For more information on Recovering data for client desktop machines, see [Back u
 
 The **Allow clients to recover their data** section details how End User Recovery works. However, this feature isn’t working as designed.  
 
-### Issue
+## Issue
 
 Administrators and optionally configured end users can’t recover their own data. When you search for recovery points, you see the following message:
 
@@ -29,7 +29,7 @@ Administrators and optionally configured end users can’t recover their own dat
 
 :::image type="content" source="media/client-protection-end-user-recovery/data-protection-manager-client.png" alt-text="Screenshot of Data Protection Manager client.":::
 
-### Workaround
+## Workaround
 
 Allow administrators and designated users to recover their own files.  
 
