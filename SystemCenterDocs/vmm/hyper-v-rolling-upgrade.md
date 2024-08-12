@@ -44,7 +44,9 @@ Cluster rolling upgrade was introduced in Windows Server 2016. This feature enab
 System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade feature to upgrade Hyper-V clusters in the VMM fabric. You can upgrade an entire cluster or specific cluster nodes. Here's what the upgrade does:
 
 - **Creates a template**: Creates a template of the node configuration by combining the appropriate physical computer profile with the node configuration settings detailed in the upgrade wizard.
+
 - **Migrates workloads**: Migrates workloads off the node, so workload operations aren't interrupted.
+
 - **Removes node**: Puts the node into maintenance mode and then removes it from the cluster. This removes all VMM agents, virtual switch extensions, and so forth, from the node.
 ::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 - **Provisions the node**: Provisions the node running Windows Server 2016/2019, and configures it according to the saved template.
@@ -53,6 +55,7 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 - **Provisions the node**: Provisions the node running Windows Server 2019/2022, and configures it according to the saved template.
 ::: moniker-end
 - **Returns the node to VMM**: Brings the node back under VMM management and installs the VMM agent.
+
 - **Returns the node to the cluster**: Adds the node back into the cluster, brings it out of the maintenance mode, and returns virtual machine workloads to it.
 
 ::: moniker range=">=sc-vmm-2019"

@@ -34,12 +34,19 @@ You can use service templates to create a guest cluster. That cluster can then b
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2019 or later. Otherwise, deployment will fail.
 ::: moniker-end
 - You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if Hyper-V uses Cluster Shared Volumes (CSVs) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.
+
 - Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS) as the location of the shared .vhdx files.
+
 - No other shared storage types are supported for guest clusters. Non-Microsoft SMB storage isn't supported.
+
 - You need many scripts to create the guest cluster, including a script to run on the first VM in the cluster and a script to run on the other VMs so that they can join the cluster. Script settings are specified in the service template application settings.
+
 - To configure shared disks for the cluster, you need to use new VHDX files. Don't reuse from a previous cluster. Ensure that the hard disk files are in the VMM library.
+
 - Identify a single path in SCSI-based storage where all the VHDX files for the guest cluster will be placed at deployment time. You can use storage classifications to control the placement of VHDX files, but you need at least one location in the classification with the capacity to hold all the VHDX files. VMM doesn't deploy the VHDX files to multiple locations.
+
 - You can vary the location of VHDX files at deployment time, even if you use the same service template to deploy multiple guest clusters. To do this, you need to deploy the guest clusters to a host group and not a cloud. Then at deployment, you specify a single path for all the shared VHDX files for the cluster. This overrides the location specified in the VM template.
+
 - You need a virtual hard disk file that contains the operating system (prepared with Sysprep) that you want the VMs in the guest cluster to use. When each node is created, VMM uses a copy of the virtual hard disk file for the system disk of the node.
 
 ## Specify scripts that run when a guest cluster is created
