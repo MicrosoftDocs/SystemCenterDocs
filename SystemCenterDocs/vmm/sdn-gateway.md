@@ -20,10 +20,10 @@ This article describes how to set up a Software Defined Networking (SDN) RAS gat
 
 An SDN RAS gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE), or Layer 3 Forwarding. [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-2022"
 
 > [!Note]
-> VMM 2022 provides dual stack support for RAS gateway.
+> VMM 2025 and 2022 provide dual stack support for RAS gateway.
 
 ::: moniker-end
 

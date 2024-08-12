@@ -34,7 +34,6 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 - System Center Configuration Manager CB releases
    - 1511, 1602, 1606, 1710, 1802, 1806 to 2103, 2107
 
-
 ## Hardware
 
 |Servers|Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
@@ -58,7 +57,6 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 |**Self-Service portal**|The Self-Service Portal server requires: Windows 2016 server or later; the IIS role and ASP.NET 4.5 enabled; SQL Server Analysis Management Objects.<br/><br/>  Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server.
 |**Machines using self-service**|The Self Service portal needs a screen resolution above 1024 X 768.<br/><br/> Supported browsers: Microsoft Edge; Microsoft Internet Explorer 10 and 11; Mozilla Firefox 42 and later; Google Chrome 46 and later.|  
 |**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS isn't on the same computer that hosts the data warehouse management server, you've to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.
-
 
 ### Additional notes
 
@@ -89,12 +87,9 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 > - Service Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
 
-
 |**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**|
 | --- | --- |--- |
 |**Service Manager/Data Warehouse database** |  &#8226; |&#8226; |
-
-
 
   > [!NOTE]
   > System Center 2022 - Service Manager doesn't support the *MultiSubnetFailover* parameter. This parameter isn't used in System Center 2022 - Service Manager connection strings.
@@ -122,7 +117,6 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
  SQL Server AlwaysOn Availability Groups functionality is supported by System Center 2022 - Service Manager.
 
  For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../scsm/sql-always-on.md).
-
 
 ## Upgrade to SQL 2017
 
@@ -155,7 +149,6 @@ The following steps provide information about upgrading to SQL 2019.
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2019.      
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2019.
-
 
 ### Enable CLR strict security
 
@@ -203,7 +196,7 @@ The following steps provide information about upgrading to SQL 2019.
 
   The following versions of Windows Server operating system are supported.
 
- |System Center component|Windows Server 2019 Standard, Datacenter|Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter|Windows Server 2022 Server Core|
+ |System Center component|Windows Server 2022 Standard, Datacenter|Windows Server 2025 Server Core | Windows Server 2025 Standard, Datacenter|Windows Server 2025 Server Core|
  |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|
  |**Service Manager** Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
  |**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
@@ -214,7 +207,7 @@ The following steps provide information about upgrading to SQL 2019.
 
  The following versions of Windows client operating system are supported for the Service Manager console.
 
- |System Center client-side components|Windows Server&reg; 2019 Standard, Datacenter Enterprise|Windows Server&reg; 2022 Standard, Datacenter|Windows 10 |Windows 11 |
+ |System Center client-side components|Windows Server&reg; 2022 Standard, Datacenter Enterprise|Windows Server&reg; 2025 Standard, Datacenter|Windows 10 |Windows 11 |
  |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------
  |**Service Manager** Console|&#8226;|&#8226;|&#8226;|&#8226;|
 
