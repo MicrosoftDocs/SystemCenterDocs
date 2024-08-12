@@ -27,17 +27,27 @@ You can use service templates to create a guest cluster. That cluster can then b
 ::: moniker range="sc-vmm-2016"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2012 R2 or later. Otherwise, deployment will fail.
 ::: moniker-end
-::: moniker range=">sc-vmm-2016"
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2016 or later. Otherwise, deployment will fail.
 ::: moniker-end
+::: moniker range="sc-vmm-2025"
+- VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2019 or later. Otherwise, deployment will fail.
+::: moniker-end
 - You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if Hyper-V uses Cluster Shared Volumes (CSVs) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.
+
 - Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS) as the location of the shared .vhdx files.
-- No other shared storage types are supported for guest clusters. Third-party SMB storage isn't supported.
+
+- No other shared storage types are supported for guest clusters. Non-Microsoft SMB storage isn't supported.
+
 - You need many scripts to create the guest cluster, including a script to run on the first VM in the cluster and a script to run on the other VMs so that they can join the cluster. Script settings are specified in the service template application settings.
-- To configure shared disks for the cluster, you will need to use new VHDX files. Don't reuse from a previous cluster. Ensure that the hard disk files are in the VMM library.
-- Identify a single path in SCSI-based storage where all the VHDX files for the guest cluster will be placed at deployment time. You can use storage classifications to control the placement of VHDX files, but you will need at least one location in the classification with the capacity to hold all the VHDX files. VMM doesn't deploy the VHDX files to multiple locations.
-- You can vary the location of VHDX files at deployment time, even if you use the same service template to deploy multiple guest clusters. To do this, you will need to deploy the guest clusters to a host group and not a cloud. Then at deployment, you specify a single path for all the shared VHDX files for the cluster. This overrides the location specified in the VM template.
-- You will need a virtual hard disk file that contains the operating system (prepared with Sysprep) that you want the VMs in the guest cluster to use. When each node is created, VMM uses a copy of the virtual hard disk file for the system disk of the node.
+
+- To configure shared disks for the cluster, you need to use new VHDX files. Don't reuse from a previous cluster. Ensure that the hard disk files are in the VMM library.
+
+- Identify a single path in SCSI-based storage where all the VHDX files for the guest cluster will be placed at deployment time. You can use storage classifications to control the placement of VHDX files, but you need at least one location in the classification with the capacity to hold all the VHDX files. VMM doesn't deploy the VHDX files to multiple locations.
+
+- You can vary the location of VHDX files at deployment time, even if you use the same service template to deploy multiple guest clusters. To do this, you need to deploy the guest clusters to a host group and not a cloud. Then at deployment, you specify a single path for all the shared VHDX files for the cluster. This overrides the location specified in the VM template.
+
+- You need a virtual hard disk file that contains the operating system (prepared with Sysprep) that you want the VMs in the guest cluster to use. When each node is created, VMM uses a copy of the virtual hard disk file for the system disk of the node.
 
 ## Specify scripts that run when a guest cluster is created
 
@@ -53,7 +63,7 @@ You can use service templates to create a guest cluster. That cluster can then b
     - Example: a script FormCluster.exe that runs with Cmd.exe and the /q and /c parameters and requires the cluster name would be Executable Program: **Cmd.exe**, Parameters: **/q** **/c** **FormCluster.cmd** **\@ClusterName@**
     - You can also add scripts to delete the cluster in an orderly way. **Script command type** would be **Deletion: VMs Before Last** or **Deletion: Last VM**.
     - You can also add a script of type **Pre-Install** that'll run on the first VM and on later VMs that are created as part of the service tier.
-5. Select **OK** to save settings and verify that the profile was created in **Profiles** > **Application Profiles**. The profile will appear in the **Profiles** pane.
+5. Select **OK** to save settings and verify that the profile was created in **Profiles** > **Application Profiles**. The profile appears in the **Profiles** pane.
 
 ## Create a VM template
 
@@ -67,7 +77,7 @@ Create a VM template that includes settings for a shared VHDX file. The VHDX fil
 6. To configure the guest cluster to use a shared VHDX, in **Bus Configuration** select **SCSI adapter 0**, and then next to **New**, select **Disk**. The new disk appears as a listing under the SCSI adapter. Select the disk and select **Share the disk across the service tier**.
 7. Clear **Contains the operating system for the virtual machine**. Select **Browse**, and select the VHDX file that you want VMM to deploy to shared storage and select **OK**. Repeat for each additional node in the cluster. Add the same disk each time, but ensure that the SCSI channel is unique for each node.
 6. In **Network Adapters**, select the adapter and select **Enable guest specified IP addresses**. This enables the nodes (VMs) in the cluster to specify the IP addresses for the cluster itself and for applications that you configure to run in the cluster.
-7. In **Advanced** > **Availability**, select **Make this virtual machine highly available**. With this setting, enable the VM is created as a clustered instance on the host cluster so that if one host fails, the VM will fail over to another host in the cluster.
+7. In **Advanced** > **Availability**, select **Make this virtual machine highly available**. With this setting, enable the VM is created as a clustered instance on the host cluster so that if one host fails, the VM fails over to another host in the cluster.
 8. Select **Manage availability sets** > **Create**. The availability set you create will be used by all the nodes in the guest cluster. This means that VMM will attempt to keep the VMs on separate hosts so that if one host fails VMs on a different host can provide services.
 9. In **Configure Operating System**, open the **Guest OS profile** list and select a guest operating system profile or **Create new Windows operating system customization settings**. Your selection determines whether additional wizard pages are displayed.
     - Under **Identity Information** > **Computer name**, you can provide a pattern to generate computer names. For example, if you enter server####, the computer names that are created are server0001, server0002, and so on. The use of a pattern ensures that when you add additional virtual machines to a service, the computer names that are generated are related and identifiable. If you use this method to specify the computer name, you can't use it in combination with a name prompt parameter (@\<name\>@). You can use one method or the other, but not both.
