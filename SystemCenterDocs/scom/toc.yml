@@ -730,6 +730,13 @@
       href: reporting-services-management-pack-management-pack-delivery.md
     - name: Monitoring Configuration in Management Pack for SQL Server Reporting Services
       href: reporting-services-management-pack-monitoring-configuration.md
+      items:
+      - name: Disabling Monitoring of Reporting Servers and Databases
+        href: reporting-services-management-pack-disable-monitoring.md
+      - name: Enable debugging
+        href: reporting-services-management-pack-enable-debug.md
+      - name: Tasks overview
+        href: reporting-services-management-pack-tasks-overview.md
     - name: Security Configuration
       items:
       - name: Reporting Services Run As Profiles
