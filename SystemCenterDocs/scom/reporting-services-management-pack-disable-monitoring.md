@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Disable monitoring of specified Reporting Servers and Databases in Management Pack SQL Server Reporting Services
+title: Disable monitoring of specified Reporting Servers in Management Pack SQL Server Reporting Services
 description: This section explains how to disable monitoring of Reporting Servers
 author: fkornilov
 ms.author: v-fkornilov
@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
-# Disabling monitoring of specified SQL Servers and databases in Management Pack SQL Server Reporting Services
+# Disabling monitoring of specified SQL Servers in Management Pack SQL Server Reporting Services
 
 This section explains how to disable monitoring of SQL Servers Reporting Services.
 
