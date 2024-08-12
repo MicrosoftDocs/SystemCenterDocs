@@ -120,5 +120,5 @@ New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -P
 
 ## Next steps
 
-[Learn more about the TLS 1.3 protocol](https://datatracker.ietf.org/doc/html/rfc8446/).
-[Learn more about the TLS 1.2 protocol](https://tools.ietf.org/html/rfc5246).
+- [Learn more about the TLS 1.3 protocol](https://datatracker.ietf.org/doc/html/rfc8446/).
+- [Learn more about the TLS 1.2 protocol](https://tools.ietf.org/html/rfc5246).
