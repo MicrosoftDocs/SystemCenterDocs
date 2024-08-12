@@ -5,13 +5,15 @@ description: This article lists the Microsoft Management Packs.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/05/2024
+ms.date: 08/09/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Microsoft Management Packs
+
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 For many of our own technologies, Microsoft provides a management pack to help monitor these technologies using Operations Manager. For more information about management packs, see: [What is in an Operations Manager management pack?](/system-center/scom/manage-overview-management-pack)
 

@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS 1.2 with Orch
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/29/2024
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -13,7 +13,9 @@ ms.custom: engagement-fy24
 moniker range: <=sc-orch-2022
 ---
 
-# Set up TLS 1.2 for Orchestrator
+# Set up TLS for Orchestrator
+
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
 
