@@ -44,25 +44,33 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 ## Before you start
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+
 - Ensure that you're running VMM 2016 or later.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 or later with the Hyper-V Role installed and be configured to host VMs.
+- 
 :::moniker-end
 
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
+
   > [!NOTE]
   > VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
+
 :::moniker-end
 
 :::moniker range="sc-vmm-2022"
+
   > [!NOTE]
   > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
+
 :::moniker-end
 
 :::moniker range="sc-vmm-2025"
+
 - Ensure that you're running VMM 2019 or later.
 - Hyper-V hosts in a cluster must be running Windows Server 2019 or later with the Hyper-V Role installed and be configured to host VMs.
   > [!NOTE]
   > VMM 2025 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
+
 :::moniker-end
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster or export the storage to other resources using SOFS.
