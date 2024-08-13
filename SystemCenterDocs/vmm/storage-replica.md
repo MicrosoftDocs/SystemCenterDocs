@@ -1,11 +1,11 @@
 ---
 ms.assetid: edd0a7c4-9da7-4727-ae61-940049782dae
-title: Manage Storage Replica in VMM 2016
+title: Manage Storage Replica in VMM
 description: This article describes how to set up Storage Replica in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/28/2023
+ms.date: 08/13/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,11 +17,11 @@ ms.custom: engagement-fy23
 
 
 
-Storage Replica was introduced in Windows Server 2016. It enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery, and stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
+Storage Replica enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery and stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
 
 [Learn more](/windows-server/storage/storage-replica/storage-replica-overview) and review the [FAQs](/windows-server/storage/storage-replica/storage-replica-frequently-asked-questions).
 
-This article explains how Storage Replica integrates with System Center - Virtual Machine Manager (VMM), and describes how to set up Storage Replica using PowerShell to replicate storage in the VMM fabric.
+This article explains how Storage Replica integrates with System Center Virtual Machine Manager (VMM) and describes how to set up Storage Replica using PowerShell to replicate storage in the VMM fabric.
 
 
 ## Storage Replica in VMM
@@ -30,7 +30,7 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 
 - Eliminates the cost and complexity associated with synchronous replication solutions such as SAN.
 - Synchronous replication minimizes downtime and data loss. It provides an RPO of 0 (zero data loss). RTO (data unavailability) only occurs during the time in which a primary site fails and a secondary site starts.
-- Source and destination storage hardware doesn't need to be identical.
+- Source and destination storage hardware don't need to be identical.
 
 ## Before you start
 
@@ -38,10 +38,10 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 * Hyper-V must be running on Windows Server 2016 or later Datacenter, Server Core, or Nano.
 * Only synchronous replication is supported. Asynchronous isn't supported.
 * You need two sets of storage, either volume or file storage. Both the source and destination locations must have the same type of storage (file or volume) but the actual storage can be mixed. For example, you could have Fibre Channel SAN at one end and Spaces Direct (in hyper-converged or disaggregated mode) at the other.
-* Each set of storage should be available in each of the clusters. Cluster storage shouldn't be shared.
+* Each set of storage must be available in each of the clusters. Cluster storage must not be shared.
 * Source and destination volumes (including log volumes) need to be identical in size and block size. This is because Storage Replica uses block replication.
 * You need at least one 1-GbE connection on each storage server, preferably 10 GbE, iWARP, or InfiniBand.
-* Each file server or cluster node needs firewall rules that allow ICMP, SMB (port 445, plus 5445 for SMB Direct), and WS-MAN (port 5985) bi-directional traffic between all nodes.
+* Each file server or cluster node needs firewall rules that allow ICMP, SMB (port 445, plus 5445 for SMB Direct), and WS-MAN (port 5985) bidirectional traffic between all nodes.
 * You need to be a member of the Administrator group on each cluster node.
 * Storage Replica can only be set up using Windows PowerShell at present.
 * Source and destination storage must be managed by the same VMM server.
@@ -54,13 +54,13 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 1.  **Identify storage**: Identify the source and destination storage you want to use.
 2.  **Discover and classify**: If your storage isn't currently in the VMM fabric, you need to discover it with VMM. Both the source and destination storage must be managed by the same VMM server. After discovery, create a storage pool and a storage classification for it. [Learn more](/previous-versions/system-center/system-center-2012-R2/gg610600(v=sc.12)).
 3.  **Pair**: Pair the source and destination storage array.
-4.  **Provision**: After your storage is paired, you'll need to provision identical data and log volumes from the source and destination storage pools created on the respective storage arrays. In addition to provisioning a volume for data that will be replicated, you also need to provision a volume for replication transaction logs. As data is updated on source storage, the transaction log is appended and delta changes are synchronized (using synchronous replication) with destination storage.
+4.  **Provision**: After your storage is paired, you'll need to provision identical data and log volumes from the source and destination storage pools created on the respective storage arrays. In addition to provisioning a volume for data that will be replicated, you also need to provision a volume for replication transaction logs. As data is updated on source storage, the transaction log is appended, and delta changes are synchronized (using synchronous replication) with destination storage.
 5.  **Create replication groups**: After the volumes are in place, you create replication groups. Replication groups are logical groups containing multiple volumes. The replication groups need to be identical, containing the data and log volumes for the source and destination sites, respectively.
 6.  **Enable replication**: Now you can enable replication between the source and destination replication groups.
 7.  **Refresh**: To finalize the creation of replication groups and to trigger the initial data replication, you need to refresh the primary and secondary storage provider. Data replicates to destination storage.
-8.  **Verify status**: Now you can check the status of the primary replication group. It should be in the Replicating state.
+8.  **Verify status**: Now you can check the status of the primary replication group. It must be in the Replicating state.
 9.  **Add VMs**: When delta replication is up and running, you can add VMs that use storage contained in the replication group. When you add the VMs, they'll be detected and will begin replicating automatically.
-10. **Run failover**: After replication is in a Synchronizing state, you can run a failover to check if it's working as expected. There isn't a test failover mechanism, so you'll run a manual failover in response to planned or unplanned outages. After failover, you can delete the VM on the source site (if it still exists), and create a VM on the destination site using the replicated data.
+10. **Run failover**: After replication is in a Synchronizing state, you can run a failover to check if it's working as expected. There isn't a test failover mechanism, so you'll run a manual failover in response to planned or unplanned outages. After failover, you can delete the VM on the source site (if it still exists) and create a VM on the destination site using the replicated data.
 11. **Run failback**: After failover is complete and replica VMs are up and running, you can fail back as you need to. Ensure that:
 
     - If you run an unplanned failover and your source location isn't available, you'll run a failover to fail back from the secondary to primary location, and then create the VM in the primary location.
@@ -100,7 +100,7 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 Pair the primary and secondary storage arrays using the variables for the storage array names.
 
 >[!NOTE]
->The array name should be the same as the cluster name.
+>The array name must be the same as the cluster name.
 
   ```PowerShell
         Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
@@ -140,7 +140,7 @@ Provision a LUN from the storage pool for data and for the log. Then create repl
 
 ## Enable replication
 
-Now enable synchronous replication between the source and destination replication groups.
+Enable synchronous replication between the source and destination replication groups.
 
   ```PowerShell
       Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation EnableProtection -TargetReplicationGroup $RecRG -EnableProtectionMode Synchronous
@@ -182,7 +182,7 @@ Run failover.
 
 Before you fail back, in the VMM console, remove the source VMs if they're still available. You can't fail back to the same VM.
 
-Now run failback:
+Run failback:
 
   ```PowerShell
       Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation ReverseRoles -EnableProtectionMode Synchronous -TargetReplicationGroup $RecRG
@@ -199,7 +199,7 @@ If you want to stop replication, you'll need to run this cmdlet at the source an
   ```
 
 
-## Learn more
+## Next steps
 
 - Learn more about [Storage Replica](/windows-server/storage/storage-replica/storage-replica-overview).
 - Learn about [allocating storage](hyper-v-storage.md) to Hyper-V hosts and clusters.
