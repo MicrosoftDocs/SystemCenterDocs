@@ -60,8 +60,11 @@ Use the VMM PowerShell interface to do the following:
     ::: moniker range="sc-vmm-2016"
     - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2012 R2 or later, because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
     ::: moniker-end
-    ::: moniker range=">sc-vmm-2016"
+    ::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
     - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2016 or later because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
+    ::: moniker-end
+    ::: moniker range="sc-vmm-2025"
+    - The rules are applied to virtual switch ports on Hyper-V servers as **extended port ACLs** (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2019 or later because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
     ::: moniker-end
     - All port ACL rules defined in VMM are stateful for TCP. You can't create stateless TCP ACL rules.
 2. Attach a port ACL to global settings. This applies the ACL to all VM virtual network adapters.

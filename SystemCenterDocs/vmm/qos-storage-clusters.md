@@ -19,10 +19,10 @@ monikerRange: '>sc-vmm-2016'
 
 This article describes how to manage storage quality-of-service (QoS) policies for clusters in System Center Virtual Machine Manager (VMM).  
 
-
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 ## Assign storage QoS policy for clusters
 Windows server 2016 and later allows the deployments to use the storage QoS feature with any VHDs residing on a Cluster Shared Volume (CSV). In VMM 2016, the management of SQoS is limited to VHDs residing on the S2D hyper-converged type clusters and Scale-Out File Servers only (SOFS). Also, the scope of QoS policies is based on the storage arrays, which isn't scalable to the scenarios like SAN, where VMM only manages the compute cluster.
-
+::: moniker-end
 ::: moniker range=">=sc-vmm-2019"
 
 VMM supports QoS on all managed clusters and also SOFS running on Windows Server 2016 and later.
@@ -39,6 +39,16 @@ VMM supports QoS on all managed clusters and also SOFS running on Windows Server
 > [!NOTE]
 > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+## Assign storage QoS policy for clusters
+Windows server 2019 and later allows the deployments to use the storage QoS feature with any VHDs residing on a Cluster Shared Volume (CSV). In VMM 2025, the management of SQoS is limited to VHDs residing on the S2D hyper-converged type clusters and Scale-Out File Servers only (SOFS). Also, the scope of QoS policies is based on the storage arrays, which isn't scalable to the scenarios like SAN, where VMM only manages the compute cluster.
+
+VMM 2025 supports QoS on all managed clusters and also SOFS running on Windows Server 2019 and later.
+
+> [!NOTE]
+> VMM 2025 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
 ::: moniker-end
 
 **Use these steps**:

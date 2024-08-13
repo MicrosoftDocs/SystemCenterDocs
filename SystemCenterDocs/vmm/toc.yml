@@ -52,7 +52,9 @@
             - name: Deploy a highly available VMM library
               href: ha-library.md
         - name: Set up TLS 1.2
-          href: install-tls.md
+          href: install-tls-12.md
+        - name: Set up TLS 1.3
+          href: install-tls-13.md
         - name: Deploy update rollups
           href: update-rollups.md
         - name: Back up and restore VMM
