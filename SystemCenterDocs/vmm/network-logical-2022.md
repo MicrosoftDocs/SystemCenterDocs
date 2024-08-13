@@ -12,7 +12,7 @@ ms.subservice: virtual-machine-manager
 monikerRange: '>=sc-vmm-2022'
 ---
 
-# Set up logical networks in the VMM fabric
+# Set up logical networks in VMM fabric
 
 This article describes how to create logical networks in System Center Virtual Machine Manager (VMM). VMM offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.
 
