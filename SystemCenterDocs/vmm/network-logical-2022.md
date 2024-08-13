@@ -1,7 +1,7 @@
 ---
 ms.assetid: 049a010e-78e8-4c93-b8ca-4543ae0c55d7
-title: Set up logical networks in VMM 2022 fabric
-description: This article describes how to set up logical networks in the VMM 2022 fabric.
+title: Set up logical networks in VMM fabric
+description: This article describes how to set up logical networks in the VMM fabric.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -9,12 +9,12 @@ ms.date: 03/21/2022
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-monikerRange: 'sc-vmm-2022'
+monikerRange: '>=sc-vmm-2022'
 ---
 
-# Set up logical networks in the VMM 2022 fabric
+# Set up logical networks in the VMM fabric
 
-This article describes how to create logical networks in System Center 2022 Virtual Machine Manager (VMM). VMM offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.
+This article describes how to create logical networks in System Center Virtual Machine Manager (VMM). VMM offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.
 
 You have different types of networks in your organization, such as corporate networks and management networks. In VMM, each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physical networks.
 
@@ -127,4 +127,5 @@ To set up an IP address pool on a logical network, [follow these steps](./networ
 
 ## Next steps
 
- [Create a VM network](network-virtual.md).
+- [Create a VM network](network-virtual.md).
+- [Set up static IP address pools in the VMM fabric](network-pool.md)
