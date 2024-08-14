@@ -13,9 +13,7 @@ ms.custom: engagement-fy24
 moniker range: <=sc-orch-2022
 ---
 
-# Set up TLS for Orchestrator
-
-[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
+# Set up TLS 1.2 for Orchestrator
 
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
 
