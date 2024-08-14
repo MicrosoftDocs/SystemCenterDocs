@@ -5,13 +5,19 @@ description: This article explains the scope and supported configuration for Man
 author: epomortseva
 ms.author: v-fkornilov
 manager: mkluck
-ms.date: 02/02/2024
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for SQL Server Replication
+
+::: moniker range=">=sc-om-2019 <=sc-om-2022"
+
+[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
+
+::: moniker-end
 
 ## SQL Server Versions
 

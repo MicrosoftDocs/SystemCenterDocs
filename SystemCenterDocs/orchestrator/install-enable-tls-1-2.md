@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS 1.2 with Orch
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/29/2024
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
