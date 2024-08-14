@@ -58,9 +58,9 @@ You can set up a virtual switch extension manager (network manager) if you want 
     **Embedded Team** is the default Uplink mode.
 6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it must manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
     - **Weight** - Weight is the default minimum bandwidth mode. Weight specifies a percentage of bandwidth rather than a specific number of bits per second. Minimum bandwidth is a value ranging from 1 to 100.
-    - **Default** – The system sets the mode to **Weight** if the switch isn't IOV enabled, or **None** if the switch is IOV enabled.
-    - **Absolute** – Minimum bandwidth will be in bits per second.  
-    - **None** – Minimum bandwidth is disabled on the switch. Users can't configure it on any network adapter that is connected to the switch.
+    - **Default** - The system sets the mode to **Weight** if the switch isn't IOV enabled, or **None** if the switch is IOV enabled.
+    - **Absolute** - Minimum bandwidth will be in bits per second.  
+    - **None** - Minimum bandwidth is disabled on the switch. Users can't configure it on any network adapter that is connected to the switch.
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter.
 If you want to enable:
     - Ensure you've SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
