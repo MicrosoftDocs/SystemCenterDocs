@@ -51,7 +51,7 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-2022"
 
 
 >[!Important]

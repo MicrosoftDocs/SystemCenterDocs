@@ -37,7 +37,7 @@ You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hype
 
 Quality of Service in [Windows Server](/windows-server/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using scale-out file share storage. QoS mitigates *noisy neighbor* issues and ensures that a single VM doesn't consume all storage resources.
 
-[Set up QoS policies](sofs-settings.md#set-a-storage-qos-for-an-sofs) for a file server or for specific virtual disks on the server.
+[Set up QoS policies](sofs-settings.md#set-a-storage-qos-for-a-sofs) for a file server or for specific virtual disks on the server.
 
 
 ::: moniker range="sc-vmm-2019"
