@@ -14,7 +14,6 @@ ms.custom: intro-deployment
 # Deploy the Self-Service portal for Service Manager
 
 
-
 The Self-Service portal provides web-based access to the features of System Center - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
 ## Supported operating systems
