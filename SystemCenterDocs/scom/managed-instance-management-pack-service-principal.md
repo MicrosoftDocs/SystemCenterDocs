@@ -88,7 +88,7 @@ To start using the service principal, go to the System Center Operations Manager
 
 At the **SPN Configuration** monitoring wizard step use **Use Existing Run As Profile**.
 
-![Screenshot showing the existing Run As profile.](./media/managed-instance-management-pack/use-existing-runas.png)
+![Screenshot showing the SPN existing Run As profile.](./media/managed-instance-management-pack/use-existing-runas.png)
 
 At the **Set Azure Run As Account** step, select **New** and complete the form with the values that you can find on the app's overview page:
 
