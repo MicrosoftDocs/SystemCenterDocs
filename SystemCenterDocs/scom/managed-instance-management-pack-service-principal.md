@@ -5,7 +5,7 @@ description: This article explains how to create a service principal in Azure Cl
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/28/2024
+ms.date: 08/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -84,7 +84,13 @@ Your service principal is set up.
 
 ## Set Azure Run As account
 
-To start using your service principal, at the **Set Azure Run As Account** monitoring wizard step, select **New** and complete the form with the values that you can find on the app's overview page:
+To start using the service principal, go to the System Center Operations Manager **Authoring** pane and select [Automatic Monitoring Template](managed-instance-management-pack-automatic-monitoring-service-principal-name.md#add-monitoring-wizard-and-create-a-destination-management-pack).
+
+At the **SPN Configuration** monitoring wizard step use **Use Existing Run As Profile**.
+
+![Screenshot showing the existing Run As profile.](./media/managed-instance-management-pack/set-runas-account-manual.png)
+
+At the **Set Azure Run As Account** step, select **New** and complete the form with the values that you can find on the app's overview page:
 
 ![Screenshot showing the new Azure Run As account creation.](./media/managed-instance-management-pack/new-spn-run-as.png)
 
