@@ -4,7 +4,7 @@ description: Learn about the security configuration in Management Pack for Azure
 author: FKornilov
 ms.author: v-fkornilov
 manager: ebruersan
-ms.date: 05/22/2024
+ms.date: 08/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,9 @@ ms.custom: engagement-fy23
 
 # Security configuration in Management Pack for Azure SQL Managed Instance
 
-Monitoring accounts, SQL accounts, and Microsoft Entra ID principles that Management Pack for Azure SQL Managed Instance uses for monitoring should have enough permissions to access each managed instance that you specify in your monitoring templates.
+Monitoring accounts, SQL accounts, and Microsoft Entra ID principles that Azure SQL Managed Instance Management Pack uses for monitoring should have enough permissions to access each managed instance that you specify in your monitoring templates.
+
+## Configuring SQL Instance permissions
 
 Every managed instance should have a sign-in account for the monitoring account. The account should be granted one of the following permissions:
 
@@ -90,3 +92,9 @@ AND db.is_read_only = 0
 EXEC (@createDatabaseUserAndRole);
 GO
 ```
+
+## Related Content
+
+- [Automatic monitoring template with Service Principal Name](managed-instance-management-pack-automatic-monitoring-service-principal-name.md)
+
+- [Manual monitoring template](managed-instance-management-pack-manual-monitoring.md)
