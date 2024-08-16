@@ -23,7 +23,7 @@ In addition to adding existing file servers to an SOFS cluster in the System Cen
 Here's what you need for the deployment:
 
 - **Physical computers** to deploy as SOFS cluster nodes. These computers must meet the prerequisites described in the table below. They can be running on operating system or an operating system that will be overwritten during the deployment process.
-- **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and use Sysprep with the /generalize and the /oobe options.<br/><br/> The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
+- **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and use Sysprep with the /generalize and the /oobe options.<br/>The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
 - **PXE server** configured with Windows Deployment Services is needed for bare metal deployment.
 
 ### Physical computer requirements
@@ -36,7 +36,7 @@ Here's what you need for the deployment:
 **Accounts** | You'll need two Run As accounts.<br/><br/> A Run As account for joining computers to the domain, and an account for access to the BMC on each computer.
 :::moniker-end
 
-:::moniker range="=sc-vmm-2022"
+:::moniker range="sc-vmm-2022"
 **Prerequisite** | **Details**
 --- | ---
 **BMC** | Each physical computer must have a baseboard management controller (BMC) installed that enables out-of-band management by VMM.<br/><br/> Through a BMC, you can access the computer remotely, independent of the operating system and control system functions such as the ability to turn the computer off or on.<br/><br/> The BMCs must use one of the supported out-of-band management protocols, and the management protocol must be enabled in the BMC settings.<br/><br/> Supported protocols: Intelligent Platform Management Interface (IPMI) versions 1.5 or 2.0; Data Center Management Interface (DCMI) version 1.0; System Management Architecture for Server Hardware (SMASH) version 1.0 over WS-Management (WS-Man); custom protocols such as Integrated Lights-Out (iLO).<br/><br/> The BMCs must use the latest version of firmware for the BMC model.<br/><br/> The BMCs must be configured with sign-in credentials and must use either static IP addressing or DHCP. If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC. For example, by using DHCP reservations.<br/><br/> The VMM management server must be able to access the network segment on which the BMCs are configured.
