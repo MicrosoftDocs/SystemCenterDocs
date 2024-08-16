@@ -574,7 +574,7 @@ You can proceed with any one of the following ways:
 
     - For SQL Connection string Trust Server Certificate=true is added.
 
-    - In webapi.config `\<environmentVariable name="Database__TrustServerCertificate" value="true"/\>` is added.
+    - In webapi.config `<environmentVariable name="Database__TrustServerCertificate" value="true"/>` is added.
 
 ::: moniker-end
 
