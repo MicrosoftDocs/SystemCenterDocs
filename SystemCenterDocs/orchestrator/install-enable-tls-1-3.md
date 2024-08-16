@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS 1.3 with Orch
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/30/2024
+ms.date: 08/16/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -56,10 +56,10 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
       | Path | Registry key | Value |
       | --- | --- | --- |
-      |HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
-      |HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
-      | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
-      | HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
+      |`HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727` | SystemDefaultTlsVersions | dword:00000001 |
+      |`HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727` | SystemDefaultTlsVersions | dword:00000001 |
+      | `HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319` | SystemDefaultTlsVersions | dword:00000001 |
+      | `HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319` | SystemDefaultTlsVersions | dword:00000001 |
 
 2. Set Windows to use only TLS 1.3.
 
@@ -76,7 +76,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
    a. Start Registry Editor. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
 
    b. Locate the following registry subkey:
-    HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols
+    `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols`
 
    c. Right-click  **Protocol**, and point to **New** > **Key**.
 
@@ -184,7 +184,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 To fix this issue, follow these steps:
 >1.	Start Registry Editor.
 >2.	Locate the following registry subkey:
- *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319*
+ `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319`
 >3.	Check whether the SystemDefaultTlsVersions value exists.
     -   If the value exists, make sure that its data is set to 1.
     -   If the value does not exist, create a DWORD (32-bit) value, and specify the following values:
