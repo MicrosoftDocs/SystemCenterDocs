@@ -3,7 +3,7 @@ description: This article contains the procedures for backing up and recovery of
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 08/09/2024
+ms.date: 02/29/2024
 title: Back up Hyper V virtual machines
 ms.subservice: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -14,8 +14,6 @@ ms.custom: engagement-fy23
 ---
 
 # Back up Hyper-V virtual machines
-
-[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 System Center Data Protection Manager (DPM) protects Hyper-V virtual machines by backing up the data of virtual machines. You can back up data at the Hyper-V host level to enable VM-level and file-level data recovery or back up at the guest-level to enable application-level recovery.
 
