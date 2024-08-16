@@ -90,4 +90,4 @@ This article describes how to create VMs in the System Center Virtual Machine Ma
 
 ## Next steps
 
-[Manage VM settings](vm-settings.md)
+[Manage the VM settings](vm-settings.md)

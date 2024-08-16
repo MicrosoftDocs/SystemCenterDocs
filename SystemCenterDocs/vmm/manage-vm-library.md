@@ -5,7 +5,7 @@ description: This article describes how to create VMs in the VMM fabric from the
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/29/2023
+ms.date: 08/20/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,12 +17,12 @@ ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 
 
 
-This article describes how to deploy a virtual machine that's stored in the System Center - Virtual Machine Manager (VMM) library.
+This article describes how to deploy a virtual machine that's stored in the System Center Virtual Machine Manager (VMM) library.
 
 ## Before you start
 
 - You need one or more VMs stored in the VMM library. To store a VM in the library, the VM must be stopped, shut down, or saved. You can't store a VM while it's running.
-- To store a VM in the library, select the VM > **Actions** > **Store in Library**. In the Select Library Server Wizard, specify where you want to store the VM. Then select **Store** to move the VM to the library. Review progress on the **Jobs** tab.
+- To store a VM in the library, select the VM > **Actions** > **Store in Library**. In the Select Library Server Wizard, specify where you want to store the VM. Select **Store** to move the VM to the library. Review progress on the **Jobs** tab.
 
 ## Deploy a VM
 
@@ -34,15 +34,15 @@ This article describes how to deploy a virtual machine that's stored in the Syst
     - In **Highly available virtual machines**, to make a VM highly available, you can migrate it to a host in a cluster, even if the VM hasn't been configured as highly available. Conversely, you can migrate a highly available VM to a standalone host.
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
     -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
     - The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). To learn more, review [overview of Windows ODX](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
 4. In **Select Path**, specify where you want to store the configuration files for the VM.
 
     - If you didn't select the default path, and you want to store other VMs on the path, select **Add this path to the list of host default paths**.
     - If SAN transfers are enabled for this deployment, by default, the virtual machine is transferred to the host over the storage area network (SAN). If you don't want to perform a SAN transfer, select the **Transfer over the network even if a SAN transfer is available** checkbox. If SAN transfers aren't available for this deployment, this option isn't available.
-5. In **Select Networks**, select the network settings the VM should use.
+5. In **Select Networks**, select the network settings the VM must use.
 6. In **Summary**, review the settings, and select **Deploy**. You can select to start the VM after it's deployed.
 
 ## Next steps
 
-To learn how to configure performance and availability settings for VMs, see [Manage the VM settings](vm-settings.md).
+[Manage the VM settings](vm-settings.md)
