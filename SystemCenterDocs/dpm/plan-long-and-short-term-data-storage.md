@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 08/09/2024
+ms.date: 03/07/2024
 title: Prepare data storage
 ms.subservice: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
@@ -14,8 +14,6 @@ ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Prepare data storage
-
-[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 A major part of your System Center Data Protection Manager (DPM) deployment will be figuring out how to store data backed-up by DPM. Learn about:
 
