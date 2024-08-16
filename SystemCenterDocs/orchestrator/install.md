@@ -572,9 +572,9 @@ You can proceed with any one of the following ways:
 
     Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
 
-       - For SQL Connection string Trust Server Certificate=true is added.
+    - For SQL Connection string Trust Server Certificate=true is added.
 
-       - In webapi.config `\<environmentVariable name="Database__TrustServerCertificate" value="true"/\>` is added.
+    - In webapi.config `\<environmentVariable name="Database__TrustServerCertificate" value="true"/\>` is added.
 
 ::: moniker-end
 
