@@ -23,7 +23,7 @@ In addition to adding existing file servers to an SOFS cluster in the System Cen
 Here's what you need for the deployment:
 
 - **Physical computers** to deploy as SOFS cluster nodes. These computers must meet the prerequisites described in the table below. They can be running on operating system or an operating system that will be overwritten during the deployment process.
-- **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and use Sysprep with the /generalize and the /oobe options.<br/><br/> The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
+- **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and use Sysprep with the /generalize and the /oobe options.<br/>The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
 - **PXE server** configured with Windows Deployment Services is needed for bare metal deployment.
 
 ### Physical computer requirements
