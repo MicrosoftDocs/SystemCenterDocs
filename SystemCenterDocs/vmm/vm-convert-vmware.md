@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 08/20/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.subservice: virtual-machine-manager
 
 
 
-This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric to Hyper-V.
+This article describes how to convert VMware VMs in the System Center Virtual Machine Manager (VMM) fabric to Hyper-V.
 
 ::: moniker range=">=sc-vmm-2019"
 
@@ -42,7 +42,7 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- VMware tools must be uninstalled from the guest operating system of the VM.
 
 >[!NOTE]
-> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
+> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
 
 >[!NOTE]
 > After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
@@ -64,7 +64,7 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
   >- We recommend upgrading to VMM 2022 UR2 to convert your VMware VMs to Hyper-V four times faster.
 
 >[!NOTE]
-> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
+> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
 
 >[!NOTE]
 > After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
@@ -107,8 +107,8 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 
 ::: moniker range=">sc-vmm-2016"
 
-## Convert EFI-based VM to Hyper-V generation 2 VM
-System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take advantage of generation 2 features.
+## Convert EFI-based VM to Hyper-V Generation 2 VM
+System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take advantage of Generation 2 features.
 
 ::: moniker-end
 
