@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/08/2024
+ms.date: 08/16/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -567,16 +567,14 @@ You can proceed with any one of the following ways:
     > It is recommended to obtain a certificate and ensure it is signed by an authority trusted by the client.
 - `TrustServerCertificate=True` to allow bypassing the normal trust mechanism.
 
-    1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
+    1. Set registry setting for Trust Server Certificate to **True** (Set this flag `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2`). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
     1. During installation, check the checkbox **Trust Server Certificate (not recommended)**.
 
-    Alternatively, On the **Data Store Configuration** page, in **Server**, enter *localhost;Trust Server Certificate=True*.
-
-    The following configuration occurs:
+    Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
 
     - For SQL Connection string Trust Server Certificate=true is added.
 
-    - In webapi.config \<environmentVariable name="Database__TrustServerCertificate" value="true"/\> is added.
+    - In webapi.config `<environmentVariable name="Database__TrustServerCertificate" value="true"/>` is added.
 
 ::: moniker-end
 
