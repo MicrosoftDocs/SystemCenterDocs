@@ -108,7 +108,7 @@ The following table lists the scenarios in which coexistence between Operations 
 |  Operations Manager 2019 RTM to the latest update| Yes|
 
 > [!TIP]
-> Although it is possible to upgrade from 2019 RTM directly to 2022, it's highly recommended to be on Update Rollup 3 or higher before upgrading,
+> Although it is possible to upgrade from 2019 RTM directly to 2022, it's highly recommended to be on Update Rollup 3 or higher before upgrading.
 ## In-place upgrade
 
 System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
