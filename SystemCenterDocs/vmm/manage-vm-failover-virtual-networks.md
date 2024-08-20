@@ -16,11 +16,11 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-This article describes how to handle replication and failover of VMs in System Center Virtual Machine Manager (VMM), between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
+This article describes how to handle replication and failover of VMs in System Center Virtual Machine Manager (VMM) between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
 
-- We recommend that you use Azure Site Recovery for replicating VMs. VMM doesn't manage Hyper-V Replica without Site Recovery, and you need to use Hyper-V Replica PowerShell cmdlets to automate Hyper-V Replica operations.
+- Use Azure Site Recovery for replicating VMs. VMM doesn't manage Hyper-V Replica without Site Recovery, and you need to use Hyper-V Replica PowerShell cmdlets to automate Hyper-V Replica operations.
 - For disaster recovery, we recommend that you use separate primary and secondary virtual networks. Primary VMs connect to the primary network, and replica VMs to the secondary network. This ensures that both VMs can be connected to a network at the same time.
-- If you've a single virtual network, use Site Recovery to automate network management using the network mapping feature. If you don't use Site Recovery, you need to carefully check prerequisites, and the order in which VMs are attached to the network. In particular, the replica VM and primary VM mustn't be connected to the single virtual network at the same time. Otherwise, CA-PA records might get deleted in VMM and cause network connectivity loss.
+- If you have a single virtual network, use Site Recovery to automate network management using the network mapping feature. If you don't use Site Recovery, you need to carefully check prerequisites, and the order in which VMs are attached to the network. In particular, the replica VM and primary VM mustn't be connected to the single virtual network at the same time. Otherwise, CA-PA records might get deleted in VMM and cause network connectivity loss.
 
 ## Sample solution
 
@@ -280,7 +280,7 @@ This script should be run for the failover script with $ReverseRep set to **$fal
 - $ReverseRep: Boolean argument to specify whether reverse replication should be performed. $true indicates that reverse replication runs.
 - $CancelFO: Boolean argument to specify whether the failover is cancelled. $true indicates cancellation on primary and recovery sites.
 
-One and only one of $ReverseRep and $CancelFO can be passed $true at a time.  After the script runs successfully, the state on both VMs should be **Replication enabled’**.
+One and only one of $ReverseRep and $CancelFO can be passed $true at a time. After the script runs successfully, the state on both VMs should be **Replication enabled’**.
 
 Run the script:
 
