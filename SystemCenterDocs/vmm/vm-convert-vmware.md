@@ -199,6 +199,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 - After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
 
 :::moniker-end
+
 :::moniker range="sc-vmm-2025"
 ## Change the conversion read-write chunk size
 
@@ -208,7 +209,7 @@ With VMM 2025, the VMware to Hyper-V VM conversion's read-write chunk size is se
 - This registry of type REG_DWORD is set with a value of *2147483648*, which is 2 GB in bytes. To change the chunk size on every Hyper-V host managed by VMM by running [this script](https://download.microsoft.com/download/2/c/a/2caf6779-853a-4455-9c67-a0d2b1e2ccfe/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20All%20Hosts.ps1) from the VMM Console after modifying the chunk size in the script as required.
 - Alternatively, if you want to change this registry value in a single host and not on all the hosts, run [this script](https://download.microsoft.com/download/4/4/6/446e9dac-0356-44ce-a0c9-707a8d3e2bb0/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20Single%20Host.ps1) from the VMM Console after modifying the chunk size in the script as required.
 - After changing this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
-
+:::moniker-end
 
 ## Next steps
 
