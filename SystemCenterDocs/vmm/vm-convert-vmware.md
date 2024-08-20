@@ -51,6 +51,27 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
 
 ::: moniker-end
 
+::: moniker range="sc-vmm-2025"
+
+
+>[!Important]
+  >- See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
+  >- You can't convert VMware workstations.
+  >- You can't convert VMs with virtual hard disks connected to an IDE bus.
+  >- Anti-virus apps must be supported.
+  >- Online conversions aren't supported. You need to power off the VMware VMs.
+  >- VMware tools must be uninstalled from the guest operating system of the VM.
+
+>[!NOTE]
+> From a same ESXi source to a same Hyper-V destination, we recommend not more than 10 VM conversions to be triggered in parallel. If the source-destination pair is different, VMM can support upto 100 VM conversions in parallel with the rest being queued. However, we recommend you stage the VM conversions in smaller batches for higher efficiency.
+
+>[!NOTE]
+> After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
+  >- Set-StorageSetting -NewDiskPolicy OfflineShared: To have all the new shared bus disks offline and all the new local bus disks online
+  >- Set-StorageSetting -NewDiskPolicy OnlineAll: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-2022"
 
 
@@ -168,6 +189,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 ::: moniker-end
 
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 ## Convert VMware VMs to Hyper-V faster
 
 - As a prerequisite to start converting VMware VMs to Hyper-V four times faster, upgrade to SCVMM 2022 UR2 or later.
@@ -175,6 +197,17 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 - This registry of type REG_DWORD, with a value of *2147483648*, which is 2 GB in bytes has to be set on every Hyper-V host managed by VMM by running [this script](https://download.microsoft.com/download/2/c/a/2caf6779-853a-4455-9c67-a0d2b1e2ccfe/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20All%20Hosts.ps1) from the VMM Console.
 - Alternatively, if you want to set this registry value in a single host and not on all the hosts, run [this script](https://download.microsoft.com/download/4/4/6/446e9dac-0356-44ce-a0c9-707a8d3e2bb0/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20Single%20Host.ps1) from the VMM Console.
 - After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
+
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+## Change the conversion read-write chunk size
+
+With VMM 2025, the VMware to Hyper-V VM conversion's read-write chunk size is set to 2 GB by default. To change this chunk size, follow this procedure:
+
+- The transfer chunk size is determined by a registry named **V2VTransferChunkSizeBytes** at *HKLM:\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Agent* in the Hyper-V hosts managed by SCVMM.
+- This registry of type REG_DWORD is set with a value of *2147483648*, which is 2 GB in bytes. To change the chunk size on every Hyper-V host managed by VMM by running [this script](https://download.microsoft.com/download/2/c/a/2caf6779-853a-4455-9c67-a0d2b1e2ccfe/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20All%20Hosts.ps1) from the VMM Console after modifying the chunk size in the script as required.
+- Alternatively, if you want to change this registry value in a single host and not on all the hosts, run [this script](https://download.microsoft.com/download/4/4/6/446e9dac-0356-44ce-a0c9-707a8d3e2bb0/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20Single%20Host.ps1) from the VMM Console after modifying the chunk size in the script as required.
+- After changing this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
 
 
 ## Next steps

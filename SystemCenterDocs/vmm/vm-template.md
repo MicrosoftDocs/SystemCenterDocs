@@ -31,11 +31,20 @@ This article describes how to create VMs in the System Center - Virtual Machine 
 ## Create a VM
 
 1. Select **VMs and Services** > **Create Virtual Machine** > **Create Virtual Machine**.
+
 2. In **Create Virtual Machine Wizard** > **Select Source**, select **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**.
+
 3. In **Select Virtual Machine Source**, select the template > **OK**. Select **OK** if a message appears that some deployment settings will be ignored.
+
 4. In **Select Source**, select **Next**.
+
 5. In **Identity**, specify the VM name and an optional description. Select **Next**.
-6. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list, or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a generation 1 or generation 2 machine. Select **Next**.
+:::moniker range="<=sc-vmm-2022"
+6. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 1 or Generation 2 machine. Select **Next**.
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+6. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 2 or Generation 1 machine. Select **Next**.
+:::moniker-end
 
     -   In **Compatibility**, if you want to deploy the virtual machine to a private cloud, select a capability profile that is available to the private cloud.
     -   In **Network Adapters**:

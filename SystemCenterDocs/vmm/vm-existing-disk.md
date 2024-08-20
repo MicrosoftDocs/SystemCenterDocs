@@ -28,9 +28,18 @@ This article describes how to create and deploy virtual machines in the System C
 ## Create a VM
 
 1. Select **VMs and Services** > **Create Virtual Machine** > **Create Virtual Machine**.
+
 2. In **Create Virtual Machine Wizard** > **Select Source**, select **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**. Select an existing VHD.
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 3. In **Identity**, specify the VM name and an optional description. If the VHD you choose is in the .vhdx format, in the **Generation** box, select **Generation 1** or **Generation 2**. Select **Next**.
+
 4. In **Configure Hardware**, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a generation 1 or generation 2 machine. Select **Next**.
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+3. In **Identity**, specify the VM name and an optional description. If the VHD you choose is in the .vhdx format, in the **Generation** box, select **Generation 2** or **Generation 1**. Select **Next**.
+
+4. In **Configure Hardware**, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 2 or Generation 1 machine. Select **Next**.
+:::moniker-end
 
     -   In **Compatibility**, if you want to deploy the virtual machine to a private cloud, select a capability profile that is available to the private cloud.
     -   In **Bus Configuration**, if you want to install an operating system from a DVD or an .iso image, ensure there's a virtual DVD drive that is configured to use an available option, such as the **Existing ISO image file** option. If you want to use an ISO image file, the file must be present in the VMM library.

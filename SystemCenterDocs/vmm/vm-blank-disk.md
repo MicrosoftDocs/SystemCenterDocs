@@ -30,10 +30,18 @@ This article describes how to create and deploy virtual machines in the System C
 ## Create a VM
 
 1. Select **VMs and Services** > **Create Virtual Machine** >**Create Virtual Machine**.
-2. In **Create Virtual Machine Wizard** > **Select Source**, select **Create the new virtual machine with a blank virtual hard disk** > **Next**.
-3. In **Identity**, specify the VM name and an optional description. In the **Generation** box, select **Generation 1** or **Generation 2**. And then select **Next**.
-4. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a generation 1 or generation 2 machine. And then select **Next**.
 
+2. In **Create Virtual Machine Wizard** > **Select Source**, select **Create the new virtual machine with a blank virtual hard disk** > **Next**.
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+3. In **Identity**, specify the VM name and an optional description. In the **Generation** box, select **Generation 1** or **Generation 2**. And then select **Next**.
+
+4. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 1 or Generation 2 machine. Select **Next**.
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+3. In **Identity**, specify the VM name and an optional description. In the **Generation** box, select **Generation 2** or **Generation 1**. And then select **Next**.
+
+4. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 2 or Generation 1 machine. Select **Next**.
+:::moniker-end
     -   In **Compatibility**, if you want to deploy the virtual machine to a private cloud, select a capability profile that is available to the private cloud.
 
     -   In **Bus Configuration**, if you want to install an operating system from a DVD or an .iso image, ensure there's a virtual DVD drive that is configured to use an available option, such as the **Existing ISO image file** option. If you want to use an ISO image file, the file must be present in the VMM library.
@@ -62,13 +70,6 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Deploy the VM on a host
 
-::: moniker range="sc-vmm-2022"
-
->[!NOTE]
-> Apply [this patch](https://support.microsoft.com/kb/2919355) for deploying VMM guest agent on the following OS, else the deployment fails:
- WS 2008, WS 2008 R2, WS 2012, WS 2012 R2, Windows 8, Windows 8.1, Windows Vista, and Windows 7.
-
-::: moniker-end
 
 1. In **Select Host**, view the ratings, select the host on which you want to deploy the VM, and select **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
 
