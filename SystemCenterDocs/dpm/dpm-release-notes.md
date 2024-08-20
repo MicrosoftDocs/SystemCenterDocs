@@ -1,18 +1,19 @@
 ---
 ms.assetid:
 title: Release Notes for System Center DPM
-description: Release notes about the DPM 2016, 2019 and 2022 releases.
+description: Release notes about the Data Protection Manager 2016, 2019 and 2022 releases.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/19/2024
+ms.date: 08/20/2024
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: article
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # System Center DPM Release Notes
+
 ::: moniker range="sc-dpm-2019"
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), including the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes), DPM [2019 UR2](#dpm-2019-ur2-release-notes), DPM [2019 UR3](#dpm-2019-ur3-release-notes), DPM [2019 UR4](#dpm-2019-ur4-release-notes), [2019 UR5](#dpm-2019-ur5-release-notes), and [2019 UR6](#dpm-2019-ur6-release-notes) as applicable.
@@ -64,7 +65,7 @@ Use these steps to rename the database:
 1. Stop the DPM service on the DPM server.  
 2. Run the following SQL commands to rename the database; update the DPM server name in the query below.
 
-   ```
+   ```sql  
    USE master
    GO
    ALTER DATABASE DPMDB  
@@ -127,13 +128,17 @@ In addition to the issues listed in DPM 2022 release notes, the following additi
  - DPM crashes when tape backup failure alerts are inactive.
 
 ## DPM 2022 UR1 release notes
+
 The following issues were identified after the release of DPM 2022 UR1 (KB 5019645) and are fixed in Hotfix for DPM 2022 UR1 (KB 5026073); We recommend that you apply the hotfix if you are running into the following issues. For more information, see the [KB article](https://support.microsoft.com/help/5026073) for the Hotfix.
-### Backups for VMware VMs that have VMware Tools start failing with error "Disk SubSystem 0x80990EF1" 
+
+### Backups for VMware VMs that have VMware Tools start failing with error "Disk SubSystem 0x80990EF1"
+
 **Description**: DPM 2022 UR1 had a bug where backups VMware VMs would fail if VMware tools is installed. This was due to a faulty configuration in DPM.
 
 **Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2.
 
-### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 and 2016 over TLS 1.2. 
+### DPM 2022 RTM and Update Rollup 1 can't discover databases in SQL Server 2017 and 2016 over TLS 1.2.
+
 **Description**: DPM 2022 RTM and UR1 did not support MSOLEDB 18 for SQL Server 2017 and 2016 which is required to perform discovery and protection of SQL Server over TLS 1.2. This issue is observed after [KB5021128](https://support.microsoft.com/help/5021128) or [KB5021127](https://support.microsoft.com/help/5021127) is installed for SQL Server 2016 and 2017 respectively to mandate TLS 1.2 or when TLS 1.0 and 1.1 are disabled on the protected server.
 
 **Workaround**: Apply Hotfix for DPM 2022 UR1 or DPM 2022 UR2, update the DPM Agents and then install [MSOLEDB 18](https://www.microsoft.com/en-us/download/details.aspx?id=56730) on the protected SQL Servers.
@@ -281,6 +286,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Workaround**: None. File Server EUR isn't supported when using MBS.
 
 ### Recovery Points not being pruned, leading to an accumulation of Recovery Points
+
 **Description:** DPM prunes recovery points older than the retention range. During the pruning process, DPM calculates the storage consumed by those recovery points to be pruned. Storage calculation delays pruning.
 
 **Workaround:** Configure DPM to skip calculating the size of recovery points to be pruned. As a result, the pruning script runs faster and prunes all recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source isn't updated until DPM finishes pruning. The storage consumption per volume continues to reflect the correct values.
@@ -342,6 +348,7 @@ GetData of Provider failed. |Backup Service Exception: FMException: [ErrorCode:G
 For issues fixed in DPM 2019 UR1, [see the KB article](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
 
 ## DPM 2019 UR2 release notes
+
 The following sections detail the known issues and workarounds for DPM 2019 UR2.
 
 For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft.com/help/4563392/update-rollup-2-for-system-center-2019-data-protection-manager).
@@ -357,7 +364,6 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 >[!NOTE]
 > This issue is fixed in DPM 2019 UR3. For more information about the issues fixed in UR3, see the [KB article](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d).  
 
-
 ### Latest report files are not automatically updated
 
 **Description**: With DPM 2019 UR2, issue with DPM report formatting and volume-to-volume migration reporting is fixed. However, the existing  report files aren't automatically replaced with the updated files.
@@ -366,31 +372,32 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 Follow these steps to replace the existing report files:
 
 #### Replace the ReportSRV10.dll
+
 1. Stop the SQL Server Reporting service.
-2.	Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
+2. Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
     - For SQL Server 2017 and later -  C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin
     - For SQL Server 2016 -  C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin
-3.	Start the SQL Server Reporting service.
+3. Start the SQL Server Reporting service.
 
 #### Replace the RDL files
 
-1.	On DPM, open the SQL Reporting Services portal URL.
-2.	On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
+1. On DPM, open the SQL Reporting Services portal URL.
+2. On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
 
     ![Reports folder](media/release-notes/reports-folder.png)
 
      >[!NOTE]
      > You can see only one folder with this naming convention. If DPM is upgraded from a previous version, the previous folder might still exist but you can’t open it.
 
-3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
+3. Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
 
     ![List of individual report files](media/release-notes/individual-report-files.png)
 
-4.	Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
+4. Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
 
     ![Manage report files](media/release-notes/manage-report-files.png)
 
-5.	On the new page, select **Replace** to replace with the latest report files.
+5. On the new page, select **Replace** to replace with the latest report files.
 
     ![Replace report files](media/release-notes/replace-report-files.png)
 
@@ -398,9 +405,9 @@ Follow these steps to replace the existing report files:
 
     For example: C:\Program Files\Microsoft System Center\DPM\DPM\bin\DpmReports
 
-6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
+6. After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
 
-7.	Restart DPM and use the report files.
+7. Restart DPM and use the report files.
 
 ## DPM 2019 UR3 release notes
 
@@ -441,7 +448,6 @@ The following section provides details of the known issue in DPM 2019 UR3 and th
    > - *ScopingCommonHelper.dll*
    > - *ViewAlertsAndAffectedItemsHelper.dll*
    > - *Wpfhelpers.dll*
-
 
 2. If you're using a language other than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
 
@@ -498,13 +504,11 @@ The following sections summarize the release notes for DPM 2016 and include the 
 
 **Workaround**: Before using the cmdlet to remove the volumes, ensure that the volume's data sources aren't in use (actively or inactively).
 
-
 ### DPM 2016 on Windows Server 2016 hangs
 
 **Description**: Memory consumption on the DPM Server increases continuously until it reaches 90%. Memory consumption slows the DPM server.
 
 **Workaround**: Upgrade DPM to DPM UR2 and install [KB4013429](https://support.microsoft.com/help/4013429/windows-10-update-kb4013429) to fix this issue.
-
 
 ### Hyper-V VMs are protected twice on VM upgrade
 
@@ -518,13 +522,11 @@ The following sections summarize the release notes for DPM 2016 and include the 
 
 **Workaround**: Upgrade the Windows Management Framework (WMF) on the production server to 4.0. Download the WMF from Windows Management Frame 5.1(https://www.microsoft.com/download/details.aspx?id=54616). Install WMF and then install the agent.
 
-
 ### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
 **Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data) and then re-enable protection. If you then recover a 2012 R2 copy at the original location, further backups might fail.
 
 **Workaround**: After recovery, change the VM Version to 2016 and then run a Consistency Check.
-
 
 ### Bare Metal Recovery protection failures
 
@@ -534,15 +536,14 @@ The following sections summarize the release notes for DPM 2016 and include the 
 
 **HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
 
-
 ### Reprotecting the DPM database after upgrading to DPM 2016
 
 **Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016, the DPM database name can change in some scenarios.
 
 **Workaround**: If you're protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
 
-
 ### Recovery Points not being pruned, leading to an accumulation of Recovery Points
+
 **Description:** DPM prunes recovery points older than the retention range. During the pruning process, DPM calculates the storage consumed by those recovery points to be pruned. Storage calculation delays pruning.
 
 **Workaround:** Configure DPM to skip calculating the size of recovery points to be pruned. As a result, the pruning script runs faster and prunes all recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source isn't updated until DPM finishes pruning. The storage consumption per volume continues to reflect the correct values.
@@ -572,13 +573,11 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 - ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the data sources for which the storage consumption couldn’t be calculated. This might happen due to reasons such as ongoing backups. When not passed, failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the data sources.
     This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
-
 ### Hyper-V RCT - recover as files for D-T backup fails
 
 **Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups won't exhibit this issue.
 
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
-
 
 ### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
 
@@ -600,32 +599,33 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 Follow these steps to replace the existing report files:
 
 #### Replace the ReportSRV10.dll
-1.  Stop the SQL Server Reporting service
-2.  Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL files in the following folder:
+
+1. Stop the SQL Server Reporting service
+2. Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL files in the following folder:
 
     *C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin*
 
-3.	Start the SQL Server Reporting service.
+3. Start the SQL Server Reporting service.
 
 #### Replace the RDL files
 
-1.	On DPM, open the SQL Reporting Services portal URL.
-2.	On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
+1. On DPM, open the SQL Reporting Services portal URL.
+2. On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
 
     ![Reports folder](media/release-notes/reports-folder.png)
 
      >[!NOTE]
      > You can see only one folder with this naming convention. If DPM is upgraded from a previous version, the previous folder might still exist but you can’t open it.
 
-3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
+3. Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
 
     ![List of individual report files](media/release-notes/individual-report-files.png)
 
-4.	Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
+4. Select the report files that don't end with *Report*, right-click **Option**, and then select **Manage**.
 
     ![Manage report files](media/release-notes/manage-report-files.png)
 
-5.	On the new page, select **Replace** to replace with the latest report files.
+5. On the new page, select **Replace** to replace with the latest report files.
 
     ![Replace report files](media/release-notes/replace-report-files.png)
 
@@ -633,15 +633,15 @@ Follow these steps to replace the existing report files:
 
     For example: C:\Program Files\Microsoft System Center\DPM\DPM\bin\DpmReports
 
-6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
+6. After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
 
-7.	Restart DPM and use the report files.
+7. Restart DPM and use the report files.
 
 ::: moniker-end
 
 ## Next steps
+
 - To know the new features included, see [What's new](what-s-new-in-dpm.md).
 - To install DPM, see the article, [Install DPM](install-dpm.md).
 - If you would like to consult planning information for your environment, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
 - See these KBs for ReFS specific issues - [KB4016173](https://support.microsoft.com/en-us/help/4016173/fix-heavy-memory-usage-in-refs-on-windows-server-2016-and-windows-10), [KB4035951](https://support.microsoft.com/en-us/help/4035951/refs-volume-using-dpm-becomes-unresponsive-on-windows-server-2016).
-
