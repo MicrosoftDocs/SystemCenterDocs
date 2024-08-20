@@ -5,7 +5,7 @@ description: This article describes how to work with VMM as a self-service user
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/21/2023
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,7 +18,7 @@ ms.custom: UpdateFrequency2
 
 
 
-This article describes how to work with System Center - Virtual Machine Manager (VMM) as a self-service user.
+This article describes how to work with System Center Virtual Machine Manager (VMM) as a self-service user.
 
 Self-service users can interact with VMM to deploy virtual machines and services to private clouds. Depending on your permissions, you can deploy VMs from VHDs and templates, and create and share your own templates and profiles. You interact with VMM using the VMM console (or PowerShell).
 
@@ -53,18 +53,18 @@ As a self-service user, you can share your library resources with the other memb
 
 - You must be the resource owner.
 - You must belong to self-service user role that has been assigned the Share action.
-- To use the shared resource, the user must belong to a self-service user role that has been assigned the Receive action.
+- To use the shared resource, the user must belong to a self-service user role that has been assigned the **Receive** action.
 
 Share resources as follows:
 
 1. Select **Library**, right-click the template or physical resource that you want to share > **Properties**.
 2. In **Access** > **Users**, select **Add**.
-3. In **Select Users**, in User, share the resource with another member of your role. In **User Role**, share the resource with other self-service user roles.
+3. In **Select Users**, in **User**, share the resource with another member of your role. In **User Role**, share the resource with other self-service user roles.
 
 
 ### Import library resources
 
-We recommend you use the method described in this procedure to import and export file-based resources to and from the VMM library. Note the following:
+We recommend you to use the method described in this procedure to import and export file-based resources to and from the VMM library. Note the following:
 
 - You can import resource to the user role data path in the Self Service User Content node in the library.
 - You can export resources from your user role data path or private cloud library.
@@ -80,7 +80,7 @@ Import resources as follows:
     - If the folder with .CR extension contains more than 100 files to be imported, it's recommended that you zip the files before the import. This will improve performance.
 
 3. Select **Add resource** to import one or more files to another library location.
-4. When you're finished, select **Import**. Check that the resources are listed **Self Service User Content** > user role data path > **Self Service User Objects**.
+4. When you're finished, select **Import**. Check that the resources are listed under **Self Service User Content** > user role data path > **Self Service User Objects**.
 
 ### Export library resources
 

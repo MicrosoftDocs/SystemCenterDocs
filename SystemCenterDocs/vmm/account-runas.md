@@ -5,7 +5,7 @@ description: This article describes how to manage Run As accounts in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/24/2023
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,11 +21,12 @@ This article describes how to create and manage Run As accounts in System Center
 
 A Run As account is a container for a set of stored credentials. In VMM, a Run As account can be provided for any process that requires credentials. Administrators and delegated administrators can create Run As accounts. [Learn more](manage-account.md#run-as-accounts) about different types of Run As accounts.
 
+To create a Run As account, follow these steps:
 
 1. Select **Settings**, and in **Create**, select **Create Run As Account**.
 2. In **Create Run As Account**, specify name and optional description to identify the credentials in VMM.
 3. In **User name** and **Password**, specify the credentials. The credentials can be a valid Active Directory user or group account or local credentials.
-4. Clear **Validate domain credentials** if you don't need them, and select **OK** to create the Run As account.
+4. Clear **Validate domain credentials** if you don't need them and select **OK** to create the Run As account.
 
 ## Next steps
 
