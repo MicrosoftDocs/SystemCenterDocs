@@ -69,12 +69,19 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 ### Live migration limitations
 
 - Live migration requires two or more servers that run Hyper-V, that support hardware virtualization, and use processors from the same manufacturer, such as all AMD processors or all Intel processors.
+:::moniker range="<=sc-vmm-2019"
 - Live migration is supported starting with hosts running Windows Server 2012.
+:::moniker-end
 - Virtual machines must be configured to use virtual hard disks or virtual Fibre Channel disks, not physical disks.
+
 - For live migration network traffic, you must use a private network.
+
 - Source and destination servers must belong to the same Active Directory domain or to different trusted domains.
+
 - If the source or destination virtual machine VHD has a base disk, the base disk must be in a share that is accessible (registered) from the destination host. Generally, live migration doesn't move the base disk.
+
 - Migration between clusters is only supported on hosts running in failover clusters. Cluster Shared Volume (CSV) storage must be enabled in the cluster.
+
 - Live migration of a virtual machine doesn't migrate virtual machine storage, specifically meaning the location that stores the virtual machine images (VHD, ISO, VFD files). To handle storage requirements, you can use one of the following options:
 
     - Configure the virtual machine so that the storage files are available on a file share that is accessible by both the source and destination host of the migration.
@@ -95,8 +102,14 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 Live VSM migrates a VM and its machine storage in a single action.
 
 - To use live VSM, the virtual machine LUN must be masked from the destination host.
+:::moniker range="<=sc-vmm-2019"
 - Live VSM is supported between two standalone hosts that run Hyper-V, starting with Windows Server 2012. The transfer can occur between local disks or SMB 3.0 file shares.
 - Live VSM is supported between two host clusters that run Hyper-V, starting with Windows Server 2012. The virtual machine can be transferred to either a CSV or SMB 3.0 file share on the destination host cluster.
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+- Live VSM is supported between two standalone hosts that run Hyper-V. The transfer can occur between local disks or SMB 3.0 file shares.
+- Live VSM is supported between two host clusters that run Hyper-V. The virtual machine can be transferred to either a CSV or SMB 3.0 file share on the destination host cluster.
+:::moniker-end
 
 ## Next steps
 

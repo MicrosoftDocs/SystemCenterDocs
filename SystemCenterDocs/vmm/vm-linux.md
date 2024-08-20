@@ -73,4 +73,4 @@ When the agent installs on the VM, the following files and folders will be creat
 
 ## Next steps
 
-Learn more about how to [manage VM settings](vm-settings.md).
+[Manage the VM settings](vm-settings.md).

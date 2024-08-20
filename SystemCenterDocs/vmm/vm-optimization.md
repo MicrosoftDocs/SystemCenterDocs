@@ -17,19 +17,34 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 Read this article to learn about enabling dynamic optimization (DO) and power optimization for virtual machines (VMs) in System Center Virtual Machine Manager (VMM). The article includes features overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
+:::moniker range="<=sc-vmm-2019"
 >[!NOTE]
 > - VMM supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only. Use the following procedures, as applicable, for the version of VMM you are using.
 > - VMM doesn’t support site aware clusters or stretched clusters. VMM doesn’t consider Hyper-V defined *site-specific fault domains* for dynamic optimization calculation.
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+>[!NOTE]
+> - VMM supports dynamic optimization for Compute and Storage. Use the following procedures, as applicable, for the version of VMM you are using.
+> - VMM doesn’t support site aware clusters or stretched clusters. VMM doesn’t consider Hyper-V defined *site-specific fault domains* for dynamic optimization calculation.
+:::moniker-end
 
 - **Dynamic optimization**: Using dynamic optimization, VMM performs live migration of VMs and VHDs within a host cluster. The migration is based on the settings you specify to improve load balancing among hosts and cluster shared storage (cluster shared volumes (CSVs), file shares) and to correct the placement issues for VMs.
 
      - **Compute Dynamic optimization** (Optimization of hosts) can be performed on hosts in a cluster to optimize host performance by migrating VMs across hosts. You can set the host performance thresholds to **CPU** and **Memory**.
-
-     - **Storage Dynamic Optimization** (Optimization of disk space applicable for VMM 2019 and later) can be performed on cluster shared storage (CSVs, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHDs) across shared storage. You can set free storage space threshold on cluster shared storage.  
+     :::moniker range="<=sc-vmm-2019"
+      - **Storage Dynamic Optimization** (Optimization of disk space applicable for VMM 2019 and later) can be performed on cluster shared storage (CSVs, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHDs) across shared storage. You can set free storage space threshold on cluster shared storage.
+     :::moniker-end
+     :::moniker range=">=sc-vmm-2022"
+      - **Storage Dynamic Optimization** (Optimization of disk space) can be performed on cluster shared storage (CSVs, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHDs) across shared storage. You can set free storage space threshold on cluster shared storage.
+      :::moniker-end
 
 - **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't needed to meet resource requirements within a cluster, and turns them back on when they're needed.
-
+:::moniker range="<=sc-vmm-2019"
 VMM supports compute dynamic optimization (both compute and storage in VMM 2019 and later) and power optimization on Hyper-V host clusters. Compute dynamic optimization and power optimization is also supported on VMware host clusters in the VMM fabric that support live migration.
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+VMM supports compute and storage dynamic optimization and power optimization on Hyper-V host clusters. Compute dynamic optimization and power optimization is also supported on VMware host clusters in the VMM fabric that support live migration.
+:::moniker-end
 
 ## Before you start
 Note the following information before you start using DO.
@@ -83,35 +98,46 @@ For hosts with BMC that support IMPI 1.5/2.0, DCMI 1.0, or SMASH 1.0 over WS-Man
 ## Enable dynamic and power optimization for a host group
 
 1. Select **Fabric** > **Servers** > **All Hosts** and select the host group that you want to configure.
+
 2. With the host group selected, select **Folder** > **Properties** group > **Properties**.
+
 3. In the host group properties, select **Dynamic Optimization**.
-4. In  **Specify dynamic optimization settings**, clear the **Use Dynamic Optimization settings from the parent host group** check box.
+
+4. In  **Specify dynamic optimization settings**, clear the **Use Dynamic Optimization settings from the parent host group** checkbox.
+:::moniker range="sc-vmm-2016"
 5. In **Aggressiveness**, select **High**, **Medium**, or **Low**.
 
    >[!NOTE]
    > In VMM 2019 and later, VM aggressiveness values are replaced from low/medium/high scale to integer scale 1 to 5.
    >
    > 1 is the lowest degree of aggressiveness, and 5 is the highest.
+:::moniker-end
+
+:::moniker range=">=sc-vmm-2019"
+5. In **Aggressiveness**, select a value on an integer scale of 1 to 5, where 1 is the lowest degree of aggressiveness and 5 is the highest.
+:::moniker-end
 
    VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
-   ::: moniker range=">=sc-vmm-2019"
-
    Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
-
+   ::: moniker range="sc-vmm-2016"
+   When you configure frequency and aggressiveness for dynamic optimization, you must try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **Medium**. After you observe the effects of dynamic optimization in your environment, you can increase the aggressiveness.
    ::: moniker-end
-
+   ::: moniker range=">=sc-vmm-2019"
    When you configure frequency and aggressiveness for dynamic optimization, you must try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **3**. After you observe the effects of dynamic optimization in your environment, you can increase the aggressiveness.
-
+   ::: moniker-end
 6. To help conserve energy by having VMM turn off hosts when they aren't needed and turn them on again when they're needed, configure power optimization for the host group. Power optimization is only available when virtual machines are being migrated automatically to balance load.
 
 7. To periodically run dynamic optimization on qualifying host clusters in the host group, enter the following settings:
 
-   1.  Select the **Automatically migrate virtual machines to balance load** check box to balance free storage space across shared storage.
+   1.  Select the **Automatically migrate virtual machines to balance load** checkbox to balance free storage space across shared storage.
    2. In **Frequency**, specify how often to run dynamic Optimization. You can enter any value between 10 minutes and 1440 minutes \(24 hours\).
-
+:::moniker range="<=sc-vmm-2019"
 8. Set thresholds for each of the compute and storage (applicable for VMM 2019 and later) resources listed. To change the units of the resources, go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the dropdown menu.
-
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+8. Set thresholds for each of the compute and storage resources listed. To change the units of the resources, go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the dropdown menu.
+:::moniker-end
 9. To turn on power optimization on the host group, select the **Enable power optimization** checkbox. Select **OK** again to save your changes.
 
     >[!NOTE]

@@ -40,8 +40,14 @@ Ensure the following before you begin the migration:
 1. In **Virtual Machines** view, browse to the host, select the VM, and in **Actions**, select **Migrate Virtual Machine**.
 2. In **Select Host**, select the destination host. You can check the tabs for more details about the host.
    - **Details**: Indicates the status of the host, the operating system, and the type and status of virtualization software. Lists the virtual machines on the host.
+
    - **Rating Explanation**: Lists the factors that resulted in a zero star rating.
-   - **SAN Explanation or Deployment and Transfer Explanation**: Lists the factors that make a SAN transfer unavailable. In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is a feature in VMM that is based on the Windows Offloaded Data Transfers (ODX) feature. For information about ODX, see [Windows Offloaded Data Transfers Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831375(v=ws.11)).
+   :::moniker range="<=sc-vmm-2019"
+   - **SAN Explanation or Deployment and Transfer Explanation**: Lists the factors that make a SAN transfer unavailable. In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is a feature in VMM that is based on the Windows Offloaded Data Transfers (ODX) feature introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831375(v=ws.11)).
+   :::moniker-end
+   :::moniker range=">=sc-vmm-2022"
+    - **SAN Explanation or Deployment and Transfer Explanation**: Lists the factors that make a SAN transfer unavailable. In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is a feature in VMM that is based on the Windows Offloaded Data Transfers (ODX) feature. For information about ODX, see [Windows Offloaded Data Transfers Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831375(v=ws.11)).
+   :::moniker-end
 
      > [!NOTE]
      > The Fast file copy feature is not utilized when migrating a VM from Host to Library.

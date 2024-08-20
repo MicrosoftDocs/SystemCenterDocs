@@ -62,14 +62,6 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Deploy the VM on a host
 
-::: moniker range="sc-vmm-2022"
-
->[!NOTE]
-> Apply [this patch](https://support.microsoft.com/kb/2919355) for deploying VMM guest agent on the following OS, else the deployment fails:
- WS 2008, WS 2008 R2, WS 2012, WS 2012 R2, Windows 8, Windows 8.1, Windows Vista, and Windows 7.
-
-::: moniker-end
-
 1. In **Select Host**, view the ratings, select the host on which you want to deploy the VM, and select **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
 
     -   **Expected utilization**: Expected utilization for a VM created from a blank VHD is based on standard defaults. VMM updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
