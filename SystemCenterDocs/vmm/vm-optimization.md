@@ -30,13 +30,13 @@ Read this article to learn about enabling dynamic optimization (DO) and power op
 
 - **Dynamic optimization**: Using dynamic optimization, VMM performs live migration of VMs and VHDs within a host cluster. The migration is based on the settings you specify to improve load balancing among hosts and cluster shared storage (cluster shared volumes (CSVs), file shares) and to correct the placement issues for VMs.
 
-     - **Compute Dynamic optimization** (Optimization of hosts) can be performed on hosts in a cluster to optimize host performance by migrating VMs across hosts. You can set the host performance thresholds to **CPU** and **Memory**.
+  - **Compute Dynamic optimization** (Optimization of hosts) can be performed on hosts in a cluster to optimize host performance by migrating VMs across hosts. You can set the host performance thresholds to **CPU** and **Memory**.
 :::moniker range="<=sc-vmm-2019"
-      - **Storage Dynamic Optimization** (Optimization of disk space applicable for VMM 2019 and later) can be performed on cluster shared storage (CSVs, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHDs) across shared storage. You can set free storage space threshold on cluster shared storage.
-:::moniker-end
-:::moniker range=">=sc-vmm-2022"
-      - **Storage Dynamic Optimization** (Optimization of disk space) can be performed on cluster shared storage (CSVs, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHDs) across shared storage. You can set free storage space threshold on cluster shared storage.
-:::moniker-end
+   - **Storage Dynamic Optimization** (Optimization of disk space applicable for VMM 2019 and later) can be performed on cluster shared storage (CSVs, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHDs) across shared storage. You can set free storage space threshold on cluster shared storage.
+   :::moniker-end
+   :::moniker range=">=sc-vmm-2022"
+   - **Storage Dynamic Optimization** (Optimization of disk space) can be performed on cluster shared storage (CSVs, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHDs) across shared storage. You can set free storage space threshold on cluster shared storage.
+   :::moniker-end
 
 - **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't needed to meet resource requirements within a cluster, and turns them back on when they're needed.
 :::moniker range="<=sc-vmm-2019"

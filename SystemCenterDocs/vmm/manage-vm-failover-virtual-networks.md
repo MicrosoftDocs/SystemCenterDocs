@@ -71,7 +71,7 @@ The script takes two arguments:
     - After this script is completed successfully with $ReverseRep as $true:
         - The primary VM must be in a **Prepared for planned failover** replication state.
         - The replica VM must be in a **Failover complete** replication state.
-    - If $false is passed, then reverse replication won't be performed. ReverseRepORCancelFO.ps1 can be used to either perform reverse replication or cancel the failover.
+    - If $false is passed, then reverse replication is not performed. ReverseRepORCancelFO.ps1 can be used to either perform reverse replication or cancel the failover.
     - After the script is completed successfully with $ReverseRep as $false:
         - The primary VM must be in a **Prepared for planned failover** replication state.
         - The replica VM must be in a **Failover complete** replication state.
@@ -274,7 +274,7 @@ Here's what this script does:
 
 ### Run the script
 
-This script should be run for the failover script with $ReverseRep set to **$false** .This script takes three arguments:
+This script should be run for the failover script with $ReverseRep set to **$false**. This script takes three arguments:
 
 - $VMName: VM name.
 - $ReverseRep: Boolean argument to specify whether reverse replication should be performed. $true indicates that reverse replication runs.
