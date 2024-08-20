@@ -47,7 +47,7 @@ It's assumed in this guide that you're performing an upgrade from System Center 
 >  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The following list are the affected System Center components integrated with Operations Manager and the recommended upgrade sequence:
 >
-   > 1. Orchestrator - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
+> 1. Orchestrator - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
    > 2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager.
    > 3. Data Protection Manager - if you've configured the central console to centrally manage your DPM environment.
    > 4. Operations Manager
@@ -107,6 +107,8 @@ The following table lists the scenarios in which coexistence between Operations 
 |:--- |:---|
 |  Operations Manager 2019 RTM to the latest update| Yes|
 
+> [!TIP]
+> Although it is possible to upgrade from 2019 RTM directly to 2022, it's highly recommended to be on Update Rollup 3 or higher before upgrading,
 ## In-place upgrade
 
 System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
@@ -197,7 +199,7 @@ It's assumed in this guide that you're performing an upgrade to System Center 20
 >  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The following list are the affected System Center components integrated with Operations Manager and the recommended upgrade sequence:
 >
-   > 1. Orchestrator - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
+> 1. Orchestrator - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
    > 2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager.
    > 3. Data Protection Manager - if you've configured the central console to centrally manage your DPM environment.
    > 4. Operations Manager
