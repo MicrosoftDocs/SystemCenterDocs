@@ -26,15 +26,26 @@ System Center - Virtual Machine Manager (VMM) allows you to manage roles and per
 
 The following table summarizes VMM user roles.
 
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
 **VMM user role** | **Permissions** | **Details**
 --- | --- | ---
 Administrator role | Members of this role can perform all administrative actions on all objects that VMM manages. | Only administrators can add a WSUS server to VMM to enable updates of the VMM fabric through VMM.
 Virtual machine administrator | Administrators can create the role (applicable for VMM 2019 and later). | Delegated administrator can create VM administrator role that includes entire scope or a subset of their scope, library servers, and Run-As accounts.
 Fabric administrator (delegated administrator) | Members of this role can perform all administrative tasks within their assigned host groups, clouds, and library servers. | Delegated administrators can't modify VMM settings, add or remove members of the administrators user role, or add WSUS servers.
 Read-Only administrator | Members of this role can view properties, status, and job status of objects within their assigned host groups, clouds, and library servers, but they can't modify the objects. | The read-only administrator can also view Run As accounts that administrators or delegated administrators have specified for that read-only administrator user role.
-Tenant administrator | Members of this role can manage self-service users and VM networks. | Tenant administrators can create, deploy, and manage their own virtual machines and services by using the VMM console or a web portal.<br/><br/> Tenant administrators can also specify which tasks the self-service users can perform on their virtual machines and services.<br/><br/> Tenant administrators can place quotas on computing resources and virtual machines.
+Tenant administrator | Members of this role can manage self-service users and VM networks. | Tenant administrators can create, deploy, and manage their own virtual machines and services using the VMM console or a web portal.<br/><br/> Tenant administrators can also specify which tasks the self-service users can perform on their virtual machines and services.<br/><br/> Tenant administrators can place quotas on computing resources and virtual machines.
 Application administrator (Self-Service User) | Members of this role can create, deploy, and manage their own virtual machines and services. | They can manage VMM using the VMM console.
-
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+**VMM user role** | **Permissions** | **Details**
+--- | --- | ---
+Administrator role | Members of this role can perform all administrative actions on all objects that VMM manages. | Only administrators can add a WSUS server to VMM to enable updates of the VMM fabric through VMM.
+Virtual machine administrator | Administrators can create the role. | Delegated administrator can create VM administrator role that includes entire scope or a subset of their scope, library servers, and Run-As accounts.
+Fabric administrator (delegated administrator) | Members of this role can perform all administrative tasks within their assigned host groups, clouds, and library servers. | Delegated administrators can't modify VMM settings, add or remove members of the administrators user role, or add WSUS servers.
+Read-Only administrator | Members of this role can view properties, status, and job status of objects within their assigned host groups, clouds, and library servers, but they can't modify the objects. | The read-only administrator can also view Run As accounts that administrators or delegated administrators have specified for that read-only administrator user role.
+Tenant administrator | Members of this role can manage self-service users and VM networks. | Tenant administrators can create, deploy, and manage their own virtual machines and services using the VMM console or a web portal.<br/><br/> Tenant administrators can also specify which tasks the self-service users can perform on their virtual machines and services.<br/><br/> Tenant administrators can place quotas on computing resources and virtual machines.
+Application administrator (Self-Service User) | Members of this role can create, deploy, and manage their own virtual machines and services. | They can manage VMM using the VMM console.
+:::moniker-end
 
 ## Run As accounts
 
