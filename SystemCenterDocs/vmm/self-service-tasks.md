@@ -52,7 +52,7 @@ If you have Author permissions, you can create templates and profiles in the lib
 As a self-service user, you can share your library resources with the other members of your self-service user role when the following conditions are met:
 
 - You must be the resource owner.
-- You must belong to self-service user role that has been assigned the Share action.
+- You must belong to self-service user role that is assigned the Share action.
 - To use the shared resource, the user must belong to a self-service user role that has been assigned the **Receive** action.
 
 Share resources as follows:
@@ -75,9 +75,9 @@ Import resources as follows:
 1. Select **Library** > **Import** > **Import Physical Resource**.
 2. Select **Add custom resource** to import a folder with the .CR extension and its contents. Alternatively, you can select a folder without a .CR extension that contains one or more files of a supported file type.
 
-    - If you select a folder without a .CR extension, only the files of a supported file type will appear in the VMM library.
+    - If you select a folder without a .CR extension, only the files of a supported file type appear in the VMM library.
     - However, if you use Windows Explorer to access the library share, you can access all the files in the folder depending on the file and share permissions that are configured outside VMM.
-    - If the folder with .CR extension contains more than 100 files to be imported, it's recommended that you zip the files before the import. This will improve performance.
+    - If the folder with .CR extension contains more than 100 files to be imported, it's recommended that you zip the files before the import. This improves performance.
 
 3. Select **Add resource** to import one or more files to another library location.
 4. When you're finished, select **Import**. Check that the resources are listed under **Self Service User Content** > user role data path > **Self Service User Objects**.
@@ -86,7 +86,7 @@ Import resources as follows:
 
 1. Select **Library** > **Export** > **Export Physical Resource**.
 2. Select **Add**, select the physical resources you want to export, and select **OK**.
-3. In **Specify a destination for the export files**, select **Browse** and select a destination folder. Then select **OK**.
+3. In **Specify a destination for the export files**, select **Browse**, and select a destination folder. Then select **OK**.
 4. When you're finished, select **Export**.
 
 ## Next steps
