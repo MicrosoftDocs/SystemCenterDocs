@@ -5,7 +5,7 @@ description: This article describes how to create logical switches in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  04/01/2024
+ms.date:  08/21/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
@@ -46,9 +46,9 @@ You can set up a virtual switch extension manager (network manager) if you want 
 3. In **Create Logical Switch Wizard** > **Getting Started**, review the information.
 4. In **General**, specify a name and optional description.
 5. In **Uplink Mode**, select:
-    - **No Uplink Team** - If you're not using teaming.
-    - **Embedded Team** - If you want to deploy the switch with SET-based teaming
-    - **Team** - If you want to use NIC teaming
+    - **No Uplink Team** - if you're not using teaming.
+    - **Embedded Team** - if you want to deploy the switch with SET-based teaming
+    - **Team** - if you want to use NIC teaming
 6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it must manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter. If you want to enable:
 
