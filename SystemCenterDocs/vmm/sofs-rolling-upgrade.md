@@ -36,7 +36,7 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 - **Provisions the node**: Provisions the node running Windows Server 2016, and configures it according to the saved template.
 :::moniker-end
 ::: moniker range="sc-vmm-2025"
-- **Provisions the node**: Provisions the node running Windows Server 2025, and configures it according to the saved template.
+- **Provisions the node**: Provisions the node running Windows Server 2025/2022/2019, and configures it according to the saved template.
 :::moniker-end
 - **Returns the node to VMM**: Brings the node back under VMM management and installs the VMM agent.
 
@@ -61,7 +61,7 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 - The VMM library needs a virtual hard disk configured with Windows Server 2016.
 :::moniker-end
 :::moniker range="sc-vmm-2025"
-- The VMM library needs a virtual hard disk configured with Windows Server 2025.
+- The VMM library needs a virtual hard disk configured with Windows Server 2025/2022/2019.
 :::moniker-end
 
 ## Run the upgrade

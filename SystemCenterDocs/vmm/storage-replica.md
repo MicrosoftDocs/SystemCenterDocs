@@ -14,10 +14,13 @@ ms.custom: engagement-fy23
 
 # Manage Storage Replica in VMM
 
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
+Storage Replica was introduced in Windows Server 2016. It enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery and stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
+:::moniker-end
 
-
-
+:::moniker range=">=sc-vmm-2022"
 Storage Replica enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery and stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
+:::moniker-end
 
 [Learn more](/windows-server/storage/storage-replica/storage-replica-overview) and review the [FAQs](/windows-server/storage/storage-replica/storage-replica-frequently-asked-questions).
 
