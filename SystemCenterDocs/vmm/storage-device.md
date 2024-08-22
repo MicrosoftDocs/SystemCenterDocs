@@ -5,7 +5,7 @@ description: This article describes how to discover storage devices in the VMM f
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/13/2024
+ms.date: 08/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

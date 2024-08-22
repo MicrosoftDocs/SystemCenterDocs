@@ -5,7 +5,7 @@ description: This article describes how to do a rolling upgrade of a SOFS cluste
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/13/2024
+ms.date: 08/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
