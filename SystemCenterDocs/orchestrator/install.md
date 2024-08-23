@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/16/2024
+ms.date: 08/22/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -372,6 +372,17 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 [Learn](#configure-your-installation) how to configure the API after installation.
 
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+>[!NOTE]
+>The setup tries to enable some IIS features, this fails if those features are already enabled. This is true for machines where (even previous version of) Orchestrator Web API was previously installed. You can check this in the Setup logs on `%AppData%\Local\Microsoft System Center 2012\Orchestrator\LOGS\*.log` where you’ll see the error about IIS features. To skip this step, run Setup.exe from the command prompt.  
+
+::: moniker-end
+
+::: moniker range=">=sc-orch-2022"
+
 The **Installing features** page appears and displays the installation progress.
 
 ::: moniker-end
@@ -558,7 +569,7 @@ The **Installing features** page appears and displays the installation progress.
 
 ## Enable Trust server connection (not recommended)
 
-Due to breaking changes in EFCore 8 and OLEDB 19, [encrypt defaults to **True** for SQL Server connection](/ef/core/what-is-new/ef-core-7.0/breaking-changes?toc=%2Fdotnet%2Fcore%2Fcompatibility%2Ftoc.json&bc=%2Fdotnet%2Fbreadcrumb%2Ftoc.json&tabs=v7#encrypt-defaults-to-true-for-sql-server-connections). Connection to SQL Server is always encrypted which requires certificate that client can trust.  
+Due to breaking changes in EFCore 8 and OLEDB 19, connection to SQL Server is always encrypted which requires a certificate that the client can trust.  
 
 You can proceed with any one of the following ways:
 
