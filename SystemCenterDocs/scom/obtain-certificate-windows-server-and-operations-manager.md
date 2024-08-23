@@ -6,19 +6,13 @@ ms.custom: engagement-fy23, UpdateFrequency2
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/09/2024
+ms.date: 04/10/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
 # Obtain a certificate for use with Windows Servers and System Center Operations Manager
-
-::: moniker range=">=sc-om-2019 <=sc-om-2022"
-
-[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
-
-::: moniker-end
 
 This article describes how to obtain a certificate and use with Operations Manager Management Server, Gateway, or Agent using either a Stand-Alone or Enterprise Active Directory Certificate Services (AD CS) Certificate Authority (CA) server on the Windows platform.
 

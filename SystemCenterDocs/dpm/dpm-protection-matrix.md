@@ -3,21 +3,22 @@ description: A complete matrix of all workloads, data types, and installations t
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/07/2023
+ms.date: 07/31/2024
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: engagement-fy23, UpdateFrequency.5
+ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 
 # What can DPM back up?
 
 This article provides details of the workloads that DPM can back up.
 
-::: moniker range="<sc-dpm-2019"
+::: moniker range="sc-dpm-2016"
+
 Use the following matrix for DPM 2016:
 
 - Workloads – The workload type of technology.
@@ -96,7 +97,7 @@ The following sections provide details of the protection support matrix for DPM:
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2012 R2/2012) <br /><br /> Linux virtual machines running on the versions 5.5, 6.0, 6.5 or 6.7 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012. <br /><br />Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
+|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2012 R2/2012) <br /><br /> Linux virtual machines running on the versions 5.5, 6.0, 6.5 or 6.7 of VMware vCenter and vSphere Hypervisor (ESXi).|Physical server <br /><br />Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012. <br /><br />Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 
 ::: moniker-end
 
@@ -124,7 +125,7 @@ The following sections provide details of the protection support matrix for DPM:
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022) <br /><br /> Linux virtual machines running on versions 6.0, 6.5, 6.7, or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2022, Windows Server 2019, and Windows Server 2016. <br /><br />Protect: Entire virtual machine.<br /><br />Recover: Entire virtual machine.<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
+|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022) <br /><br /> Linux virtual machines running on versions 6.0, 6.5, 6.7, or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Physical server <br /><br />Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2022, Windows Server 2019, and Windows Server 2016. <br /><br />Protect: Entire virtual machine.<br /><br />Recover: Entire virtual machine.<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 
 ::: moniker-end
 
@@ -170,7 +171,7 @@ The following sections provide details of the protection support matrix for DPM:
 |Client computers (64-bit and 32-bit)|Windows 8|Windows virtual machine in VMware (protects workloads running in Windows virtual machine in VMware)|Y|Y |Volume, share, folder, files, and deduped volumes.<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
 |Client computers (64-bit and 32-bit)|Windows 7|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, files, and deduped volumes.<br /><br />Protected volumes must be NTFS and at least 1 GB.|
 |Client computers (64-bit and 32-bit)|Windows 7|Windows virtual machine in VMware (protects workloads running in Windows virtual machine in VMware)|Y|Y|Volume, share, folder, files, and deduped volumes.<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
-|Servers (32-bit and 64-bit)|Windows Server 2016|Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMware (protects workloads running in Windows virtual machine in VMware)<br /><br />Physical server<br /><br />On-premises Hyper-V virtual machine|Y<br /><br />Not Nano server|Y <br/> Not Nano server|Volume, share, folder, file, system state/bare metal), and deduped volumes.|
+|Servers (32-bit and 64-bit)|Windows Server 2016|Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMware (protects workloads running in Windows virtual machine in VMware)<br /><br />Physical server<br /><br />On-premises Hyper-V virtual machine|Y<br /><br />Not Nano server|Y <br/> Not Nano server|Volume, share, folder, file, system state/bare metal, and deduped volumes.|
 |Servers (32-bit and 64-bit)|Windows Server 2012 R2 - Datacenter and Standard|Azure virtual machine (when workload is running as Azure virtual machine)|Y|Y|Volume, share, folder, file<br /><br />DPM must be running on at least Windows Server 2012 R2 to protect Windows Server 2012 deduped volumes.|
 |Servers (32-bit and 64-bit)|Windows Server 2012 R2 - Datacenter and Standard|Windows virtual machine in VMware (protects workloads running in Windows virtual machine in VMware)|Y|Y|Volume, share, folder, file, system state/bare metal)<br /><br />DPM must be running on Windows Server 2012 or 2012 R2 to protect Windows Server 2012 deduped volumes.|
 |Servers (32-bit and 64-bit)|Windows Server 2012/2012 with SP1 - Datacenter and Standard|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, file, system state/bare metal<br /><br />DPM must be running on at least Windows Server 2012 R2 to protect Windows Server 2012 deduped volumes.|
