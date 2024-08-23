@@ -5,17 +5,17 @@ description: This article describes how to create logical switches in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
-# Create logical switches
+# Set up logical switches
 
 
 
-This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric.
+This article describes how to create logical switches in the System Center Virtual Machine Manager (VMM) fabric.
 
 ::: moniker range="sc-vmm-2016"
 
@@ -43,4 +43,4 @@ This article describes how to create logical switches in the System Center - Vir
 
 ## Next steps
 
-[Apply network settings](hyper-v-network.md) on a host with a logical switch.
+[Apply network settings on a host with a logical switch](hyper-v-network.md).
