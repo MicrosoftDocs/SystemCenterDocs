@@ -12,8 +12,6 @@ ms.subservice:  virtual-machine-manager
 ms.custom: engagement-fy24
 ---
 
-# Set up logical networks in VMM fabric
-
 This article describes how to create logical networks in System Center Virtual Machine Manager (VMM). VMM offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.
 
 You have different types of networks in your organization, such as corporate networks and management networks. In VMM, each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physical networks.
@@ -34,14 +32,14 @@ Before you start, it's important to understand how logical networks work in VMM.
 
         - **Connected network**: The VLAN and subnet pairs of the underlying physical networks are logically equivalent. A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs. This network type was earlier known as *One Connected Network*.
 
-            ![Illustration of Connected network.](media/network-logical/connected-network.png)
+            ![Illustration of Connected network.](../vmm/media/network-logical/connected-network.png)
 
             **Example scenario**:
             Enterprise Contoso needs a network to host their DevTest workloads. This network might have multiple VLANs or subnets. Contoso creates a logical network of the type *Connected network*. VMM is responsible for assigning the VLAN or subnet to the VMs based on the host group on which the VM is placed.
 
        - **Independent network**: Multiple VM networks can be created on top of this logical network. Each VM network created provides access to a specific VLAN-subnet pair. The VM networks are independent of each other.
 
-         ![Illustration of an Independent network.](media/network-logical/independent-network.png)
+         ![Illustration of an Independent network.](../vmm/media/network-logical/independent-network.png)
 
            There are two types of independent networks:
            - VLAN-based independent networks
@@ -55,7 +53,7 @@ Before you start, it's important to understand how logical networks work in VMM.
 - **Virtualized network**:
     This is the fabric network. Multiple virtualized VM networks can be created on top of this logical network. Each VM network has its own virtualized address space.
 
-    ![Virtualized network](media/network-logical/virtualized-network.png)
+    ![Virtualized network](../vmm/media/network-logical/virtualized-network.png)
 
     >[!NOTE]
     >- A typical setup might be an infrastructure network with no isolation or VLAN isolation, a load balancer back end and internet-facing network with PVLAN, and tenant networks with isolation using network virtualization.
@@ -95,7 +93,7 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
 1.  Specify how you want to isolate VM networks associated with this logical network.
 
-    ![Screenshot of Create logical networks manually.](media/network-logical/create-logical-networks-manually.png)
+    ![Screenshot of Create logical networks manually.](../vmm/media/network-logical/create-logical-networks-manually.png)
 
     To simplify logical network creation, descriptions and illustrations of the logical network types are available in VMM. Each type of logical network has an in-product description and an illustration that describes the use case.
 
@@ -122,10 +120,10 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 1. In **Associated VLANs and IP subnets**, select **Insert Row** to specify the settings that you want to assign to the network site. If you select **PVLAN**, you need to add a **Secondary VLAN** for each VLAN. Ensure that the VLANs and subnets are available in your physical network. If you leave the **VLAN** field empty, VMM assigns a value of 0 to indicate that VLANs aren't used. In trunk mode, 0 indicates a native VLAN.
 1. If you created network sites and associated one or more IP subnets with them (when you're not using DHCP), you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. IP pools can be created within the **Create Logical Network Wizard**.
 
-To set up an IP address pool on a logical network, [follow these steps](./network-pool.md#create-a-static-address-pool-for-a-logical-network).
+To set up an IP address pool on a logical network, [follow these steps](../vmm/network-pool.md#create-a-static-address-pool-for-a-logical-network).
 
 
 ## Next steps
 
-- [Create a VM network](network-virtual.md).
-- [Set up static IP address pools in the VMM fabric](network-pool.md).
+- [Create a VM network](../vmm/network-virtual.md).
+- [Set up static IP address pools in the VMM fabric](../vmm/network-pool.md).

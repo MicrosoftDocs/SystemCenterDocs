@@ -12,8 +12,6 @@ ms.subservice:  virtual-machine-manager
 ms.custom: engagement-fy24
 ---
 
-# Set up logical networks in the VMM fabric
-
 
 Read this article to learn how to create logical networks in System Center Virtual Machine Manager (VMM)
 
@@ -94,4 +92,4 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
 ## Next steps
 
-If you created network sites and associated one or more IP subnets with them (you're not using DHCP), you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. [Set up IP address pools](network-pool.md).
+If you created network sites and associated one or more IP subnets with them (you're not using DHCP), you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. [Set up IP address pools](../vmm/network-pool.md).
