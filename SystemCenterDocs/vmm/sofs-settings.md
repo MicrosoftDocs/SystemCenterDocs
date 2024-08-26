@@ -20,7 +20,12 @@ You can manage scale-out file server (SOFS) in the System Center Virtual Machine
 - **Create storage pools**: Create storage pools from physical disks on SOFS nodes and allocate them.
 - **Create file shares**: You can create file shares on a SOFS in the VMM fabric. You can set the storage type for a share as a storage pool, local pool, or volume.
 - **QoS**: Set up a quality-of-service (QoS) policy for SOFS to control resources allocated to VMs.
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
 - **Set a disk witness for a storage pool**: From VMM 2016, you can specify that the disk witness for a SOFS cluster must come from a particular storage pool. To do this, VMM creates a three-way mirror space and configures it as the disk witness for the cluster. The storage pool must have at least five physical disks.
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+- **Set a disk witness for a storage pool**: In VMM, you can specify that the disk witness for a SOFS cluster must come from a particular storage pool. To do this, VMM creates a three-way mirror space and configures it as the disk witness for the cluster. The storage pool must have at least five physical disks.
+:::moniker-end
 
 ## Create storage pools
 
@@ -50,8 +55,12 @@ You can manage scale-out file server (SOFS) in the System Center Virtual Machine
 
 ## Set a storage QoS for a SOFS
 
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
  System Center VMM 2016 and later include storage QoS policies to solve the **noisy neighbor** problem. This problem is common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there's always a chance that one VM's usage of the resource exceeds that of the other. This can affect the performance of an app running on the VM. Storage QoS ensures:
-
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+ System Center VMM includes storage QoS policies to solve the **noisy neighbor** problem. This problem is common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there's always a chance that one VM's usage of the resource exceeds that of the other. This can affect the performance of an app running on the VM. Storage QoS ensures:
+:::moniker-end
 - **Mitigation of noisy neighbor issues**: Ensures that a single VM doesn't consume all the resources and starves the other VMs of storage bandwidth.
 - **Monitor end-to-end storage performance**: When VMs are started on a SOFS, their performance is monitored.
 - **Manage storage I/O in accordance with business needs**: Storage QoS policies define minimum and maximum limits for VMs and ensure they're met even in over-provisioned environments. If policies can't be met, alerts are issued.
