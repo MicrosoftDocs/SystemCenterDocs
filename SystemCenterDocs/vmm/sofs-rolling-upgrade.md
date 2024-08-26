@@ -5,7 +5,7 @@ description: This article describes how to do a rolling upgrade of a SOFS cluste
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/12/2022
+ms.date: 08/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -23,7 +23,6 @@ Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to
 ::: moniker range=">sc-vmm-2016"
 Cluster rolling upgrade enables you to upgrade the operating system of cluster nodes in a scale-out file server (SOFS) cluster, or Hyper-V cluster, without stopping workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
 ::: moniker-end
-
 
 This article describes how to perform a cluster rolling upgrade of SOFS managed in the System Center Virtual Machine Manager (VMM) fabric. Here's what the upgrade does:
 

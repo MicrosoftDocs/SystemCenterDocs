@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -90,11 +90,11 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-1. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. Enable the **Trust Server Certificate** setting (not recommended) to let Orchestrator skip SQL Server certificate validation. For more information about SSL and encrypted connections, [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. Enable the **Trust Server Certificate** setting (not recommended) to let Orchestrator skip SQL Server certificate validation. For more information about SSL and encrypted connections, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 ::: moniker range=">=sc-orch-2022"
@@ -372,6 +372,17 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 [Learn](#configure-your-installation) how to configure the API after installation.
 
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+>[!NOTE]
+>The setup tries to enable some IIS features, this fails if those features are already enabled. This is true for machines where (even previous version of) Orchestrator Web API was previously installed. You can check this in the Setup logs on `%AppData%\Local\Microsoft System Center 2012\Orchestrator\LOGS\*.log` where you’ll see the error about IIS features. To skip this step, run Setup.exe from the command prompt.  
+
+::: moniker-end
+
+::: moniker range=">=sc-orch-2022"
+
 The **Installing features** page appears and displays the installation progress.
 
 ::: moniker-end
@@ -558,7 +569,7 @@ The **Installing features** page appears and displays the installation progress.
 
 ## Enable Trust server connection (not recommended)
 
-Due to breaking changes in EFCore 8 and OLEDB 19, [encrypt defaults to **True** for SQL Server connection](/ef/core/what-is-new/ef-core-7.0/breaking-changes?toc=%2Fdotnet%2Fcore%2Fcompatibility%2Ftoc.json&bc=%2Fdotnet%2Fbreadcrumb%2Ftoc.json&tabs=v7#encrypt-defaults-to-true-for-sql-server-connections). Connection to SQL Server is always encrypted which requires certificate that client can trust.  
+Due to breaking changes in EFCore 8 and OLEDB 19, connection to SQL Server is always encrypted which requires a certificate that the client can trust.  
 
 You can proceed with any one of the following ways:
 
@@ -567,16 +578,14 @@ You can proceed with any one of the following ways:
     > It is recommended to obtain a certificate and ensure it is signed by an authority trusted by the client.
 - `TrustServerCertificate=True` to allow bypassing the normal trust mechanism.
 
-    1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
+    1. Set registry setting for Trust Server Certificate to **True** (Set this flag `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2`). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
     1. During installation, check the checkbox **Trust Server Certificate (not recommended)**.
 
-    Alternatively, On the **Data Store Configuration** page, in **Server**, enter *localhost;Trust Server Certificate=True*.
-
-    The following configuration occurs:
+    Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
 
     - For SQL Connection string Trust Server Certificate=true is added.
 
-    - In webapi.config \<environmentVariable name="Database__TrustServerCertificate" value="true"/\> is added.
+    - In webapi.config `<environmentVariable name="Database__TrustServerCertificate" value="true"/>` is added.
 
 ::: moniker-end
 

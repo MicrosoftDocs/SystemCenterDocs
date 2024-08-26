@@ -5,7 +5,7 @@ description: This article describes how to set up an Azure Stack HCI cluster in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -39,10 +39,22 @@ This article provides information about how to set up an Azure Stack HCI cluster
 >[!IMPORTANT]
 >Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
 
-::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 ## Before you start
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
 Ensure that you're running VMM 2019 UR3 or later.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+Ensure that you're running VMM 2022 UR1 or later.
+
+::: moniker-end
 
 **What’s supported?**
 

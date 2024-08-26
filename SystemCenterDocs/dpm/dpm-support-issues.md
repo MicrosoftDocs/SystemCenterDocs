@@ -1,16 +1,16 @@
 ---
-description: This article explains the supported deployment options for DPM.
+description: This article explains the supported deployment options for Data Protection Manager.
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/17/2024
+ms.date: 08/20/2024
 title: What's supported and what isn't for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
-ms.custom: engagement-fy23, UpdateFrequency.5
+ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 
 # What's supported and what isn't for DPM?

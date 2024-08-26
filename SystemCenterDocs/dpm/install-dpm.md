@@ -1,19 +1,17 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
 ms.topic: article
-ms.date: 08/09/2024
-title: Installing DPM
+ms.date: 08/20/2024
+title: Install Data Protection Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
+ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24
 ---
 
 # Get DPM installed
-
-[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
 
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
@@ -62,6 +60,7 @@ Table A
 :::moniker-end
 
 ## <a name="BKMK_SQL"></a>Set up a SQL Server database
+
 You'll need to set up a SQL Server database if:
 
 ::: moniker range="<=sc-dpm-2019"
@@ -190,9 +189,9 @@ To set up a SQL Server database:
 ::: moniker-end
 
 > [!NOTE]
-> - With SQL 2017 and later, SSRS doesn't get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
-> - For remote clustered SQL Instance, Database Engine must be on the cluster and SSRS must be on a separate computer (which can be the DPM server or any other computer).
-> - In both local or remote SQL Server scenarios, the following components must be installed on the DPM server.<br>
+>- With SQL 2017 and later, SSRS doesn't get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
+>- For remote clustered SQL Instance, Database Engine must be on the cluster and SSRS must be on a separate computer (which can be the DPM server or any other computer).
+>- In both local or remote SQL Server scenarios, the following components must be installed on the DPM server.<br>
      - [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) is no longer installed with SQL Server; you must install an equivalent version of SSMS separately.<br>
      - For SQL Server 2019, along with SSMS you should also install [SQLCMD](/sql/tools/sqlcmd-utility), [Visual C++ 2017 Redistributable](/cpp/windows/latest-supported-vc-redist?preserve-view=true&view=msvc-170), and [Microsoft ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server#version-17) on the DPM server separately.
 

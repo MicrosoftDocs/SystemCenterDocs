@@ -3,7 +3,7 @@ description: Use DPM to back up and restore VMware VMs.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 02/26/2024
+ms.date: 07/31/2024
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -11,7 +11,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '>sc-dpm-2016'
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Use DPM to back up and restore VMware virtual machines
@@ -61,8 +61,8 @@ DPM provides the following features when backing up VMware virtual machines:
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
 
 - If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
-    - You can use static IP address of vCenter Server as a workaround.
-    - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
+     - You can use static IP address of vCenter Server as a workaround.
+     - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
 - If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
 - DPM can't protect VMware VMs to a secondary DPM server.
@@ -71,8 +71,8 @@ Before you start backing up a VMware virtual machine, review the following list 
 - DPM can't detect or protect VMware vApps.
 - DPM can't protect VMware VMs with existing snapshots.
 - Ensure the following network ports are open:
-    - TCP 443 between MABS and vCenter
-    - TCP 443 and TCP 902 between MABS and ESXi host
+     - TCP 443 between MABS and vCenter
+     - TCP 443 and TCP 902 between MABS and ESXi host
 
 ::: moniker-end
 
@@ -83,8 +83,8 @@ Before you start backing up a VMware virtual machine, review the following list 
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
 
 - If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
-    - You can use static IP address of vCenter Server as a workaround.
-    - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
+     - You can use static IP address of vCenter Server as a workaround.
+     - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
 - If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
 - DPM can't protect VMware VMs to a secondary DPM server.
@@ -93,8 +93,8 @@ Before you start backing up a VMware virtual machine, review the following list 
 - DPM can't detect or protect VMware vApps.
 - DPM can't protect VMware VMs with existing snapshots.
 - Ensure the following network ports are open:
-    - TCP 443 between MABS and vCenter
-    - TCP 443 and TCP 902 between MABS and ESXi host
+     - TCP 443 between MABS and vCenter
+     - TCP 443 and TCP 902 between MABS and ESXi host
 - DPM can’t protect Data Sets when backing up vSphere 8.0 VMs.
 
 ::: moniker-end
@@ -162,7 +162,7 @@ Once you've matching credentials in DPM, update the VMware server credentials us
 
 When you delete credentials, you're removing the credential from the list on the DPM server. DPM doesn't allow you to delete a credential that is used to authenticate a production server.
 
-To delete a credential:
+To delete a credential, follow these steps:
 
 1. In the DPM Administrator Console, select Management, select Production Servers, and in the tool ribbon, select Manage VMware Credentials.
 2. In the Manage Credentials page, select the credential. Make sure the credential isn't associated with any Production Servers.
@@ -530,7 +530,7 @@ You can restore individual files from a protected VM recovery point. This featur
 
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
-10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
+10. On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
 >[!TIP]
@@ -557,11 +557,11 @@ You can modify the number of jobs by using the registry key as shown below (not 
 
 **Key Path:** *HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelIncrementalJobs*
 **32 Bit DWORD:** VMware
-**Data:** `number` 
+**Data:** `number`
 The value should be the number (decimal) of virtual machines that you select for parallel backup.
 
 > [!NOTE]
->  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
+> You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
 
 ::: moniker-end
 
@@ -658,7 +658,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   1. Get the details of VMware host that is protected on the DPM server.
 
-        ```
+        ```powershell
         PS C:\>$psInfo = get-DPMProductionServer
         PS C:\> $psInfo
 
@@ -669,7 +669,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   2. Select the VMware host and list the VMs protection for the VMware host.
 
-        ```
+        ```powershell
         PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[0] -Inquire
         PS C:\> $vmDsInfo
 
@@ -682,7 +682,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   3. Select the VM for which you want to exclude a disk.
 
-        ```
+        ```powershell
         PS C:\>$vmDsInfo[2]
 
         Computer     Name    ObjectType
@@ -700,28 +700,29 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
      **Add/remove the disk from exclusion, run the following command:**
 
-      ```
+      ```powershell
       ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
       ```
 
      **Example: Add the disk exclusion for TestVM4, run the following command**
 
-       ```
+       ```powershell
        PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
        Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
        Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
        ```
+
 5. Verify that the disk has been added for exclusion
 
    **View the existing exclusion for specific VMs, run the following command:**
 
-    ```
+    ```powershell
     ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
     ```
 
    **Example**
 
-    ```
+    ```powershell
     PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -view
     <VirtualMachine>
     <UUID>52b2b1b6-5a74-1359-a0a5-1c3627c7b96a</UUID>
@@ -738,7 +739,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
 To remove the disk from exclusion, run the following command:
 
-```
+```powershell
 PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
 ```
 
