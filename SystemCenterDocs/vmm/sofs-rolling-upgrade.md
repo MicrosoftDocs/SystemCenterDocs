@@ -68,18 +68,18 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 
 1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS > **Upgrade Cluster**.
 
-1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Select **Physical computer profile**, and select the profile for the nodes.
+2. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Select **Physical computer profile**, and select the profile for the nodes.
 
-1. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new account. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select **IPMI**. DCMI is supported even though it's not listed. Ensure that the correct port is listed.
+3. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new account. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select **IPMI**. DCMI is supported even though it's not listed. Ensure that the correct port is listed.
 
-1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
+4. In **Depoyment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
     - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to ensure the new name isn't in use.
     - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, enter an IP address within the logical network.
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
-1. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all the SOFS nodes are running Windows Server 2016 or later. The wizard upgrades the cluster functional level to Windows Server 2016.
+5. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all the SOFS nodes are running Windows Server 2016 or later. The wizard upgrades the cluster functional level to Windows Server 2016.
 :::moniker-end
 :::moniker range="sc-vmm-2025"
-1. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all the SOFS nodes are running Windows Server 2019 or later. The wizard upgrades the cluster functional level to Windows Server 2025.
+5. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all the SOFS nodes are running Windows Server 2019 or later. The wizard upgrades the cluster functional level to Windows Server 2025.
 :::moniker-end
 
 ::: moniker range="sc-vmm-2016"
