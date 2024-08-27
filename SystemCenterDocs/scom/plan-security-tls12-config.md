@@ -49,6 +49,7 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 1. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers.
 1. Configure Windows to only use TLS 1.2.  
 1. Configure Operations Manager Audit Collection Services to use the installed ODBC Driver.  
+
 ::: moniker-end
 
 Operations Manager generates SHA1 and SHA2 self-signed certificates. This is required to enable TLS 1.2. If CA-signed certificates are used, ensure that the certificates are either SHA1 or SHA2.
