@@ -5,7 +5,7 @@ description: This article describes how to set up Storage Replica in the VMM fab
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 08/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -81,13 +81,13 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 2. Get the name of the primary storage array and assign it to a variable.
 
       ```PowerShell
-          $PriArray = Get-SCStorageArray - Name $PriArrayName
+          $PriArray = Get-SCStorageArray -Name $PriArrayName
       ```
 
 3. Get the name of the secondary storage array and assign it to a variable.
 
       ```PowerShell
-          RecArray = Get-SCStorageArray - Name $RecArrayName
+          RecArray = Get-SCStorageArray -Name $RecArrayName
       ```
 
 4. Get the name of the primary storage pool and assign it to a variable.
