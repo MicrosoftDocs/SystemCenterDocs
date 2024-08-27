@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/02/2024
+ms.date: 08/27/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,12 +13,6 @@ ms.topic: article
 ---
 
 # SQL Server Design Considerations
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager relies on Microsoft SQL Server to support its operational, data warehouse, and ACS audit databases. These databases are essential and are created during the deployment of the first management server or ACS collector in your management group.
 
@@ -33,11 +27,7 @@ We don't recommend utilization of Operations Manager databases from an SQL Insta
 
 ## SQL Server requirements
 
-::: moniker range=">sc-om-1807"
-
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
-
-::: moniker-end
 
 ::: moniker range="sc-om-2019"
 
@@ -72,32 +62,9 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
-
-- SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
-- SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
-
-::: moniker-end
-
 ::: moniker range=">=sc-om-2019"
 
 Before upgrading SQL Server, see [upgrade information for 2017+](upgrade-sqlserver-2017-opsmgr.md) and [upgrade information for SQL 2019](upgrade-sqlserver-2019-operations-manager.md).
-
-::: moniker-end
-
-::: moniker range="sc-om-1807"
-
-Before upgrading to SQL Server 2017, see [upgrade information for 2017+](upgrade-sqlserver-2017-opsmgr.md).
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center Operations Manager version 1801 to host Reporting Server, Operational, Data Warehouse, and ACS database:
-
-- SQL Server 2016 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
 
 ::: moniker-end
 
@@ -258,8 +225,6 @@ Based on these factors, there are several recommended practices to consider when
 
 The Operations Manager Data Warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.
 
-::: moniker range="<=sc-om-1807"
-
 ## SQL Server Always On
 
 SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted on an availability replica.
@@ -271,8 +236,6 @@ To set up an availability group, you deploy a Windows Server Failover Clustering
 - Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability).
 - Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
 - Learn more about [setting up an availability group](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server).
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
@@ -395,11 +358,8 @@ Once you understand the environment baseline, you can reduce the **max server me
 For more information, see [Server memory configuration options](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2014).
 
 ::: moniker-end
-::: moniker range=">=sc-om-1801"
 
 For more information, see [Server memory configuration options](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2016).
-
-::: moniker-end
 
 ### Optimize TempDB
 
@@ -527,13 +487,9 @@ The Reporting Services instance acts as a proxy for access to data in the Data W
 
 Behind the scenes of Reporting Services, there's a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
 
-::: moniker range=">sc-om-1801"
-
 > [!NOTE]
 > From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings don't allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 > To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add `\*.\*` to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
-
-::: moniker-end
 
 ## Next steps
 

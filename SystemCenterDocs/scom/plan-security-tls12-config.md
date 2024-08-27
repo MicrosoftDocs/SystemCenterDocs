@@ -14,12 +14,6 @@ ms.topic: article
 
 # How to implement Transport Layer Security 1.2
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
-
 ## Executive Summary
 
 This article describes how to allow System Center Operations Manager to utilize Transport Layer Security (TLS) 1.2.
