@@ -36,8 +36,11 @@ Here's what you need:
 ::: moniker range="sc-vmm-2016"
 - Hyper-V hosts must be running Windows Server 2012 or later.
 ::: moniker-end
-::: moniker range=">sc-vmm-2016"
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 - Hyper-V hosts must be running Windows Server 2016 or later.
+::: moniker-end
+::: moniker range="sc-vmm-2025"
+- Hyper-V hosts must be running Windows Server 2019 or later.
 ::: moniker-end
 - Ensure that an SMI-S provider is installed. VMM manages Fibre Channel fabrics and SAN devices using the SMI-S provider. Remember not to install the SMI-S provider on the VMM server, but on a server that the VMM server can connect to with an FQDN or IP address.
 
