@@ -5,7 +5,7 @@ description: This article describes how to set up logical networks in the VMM 20
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/21/2022
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -48,9 +48,9 @@ Before you start, it's important to understand how logical networks work in VMM.
            - PVLAN-based independent networks
 
            **Example scenario**:
-           Woodgrove IT is a host. Woodgrove IT has Contoso and Fabrikam as its tenants. Both Contoso and Fabrikam need a DevTest network. Contoso's network should be isolated from that of Fabrikam. All VMs of Contoso should be connected to the *Contoso-DevTest* VM network. The VMs of Fabrikam should be connected to the *Fabrikam-DevTest* VM network.
+           Woodgrove IT is a host. Woodgrove IT has Contoso and Fabrikam as its tenants. Both Contoso and Fabrikam need a DevTest network. Contoso's network must be isolated from that of Fabrikam. All VMs of Contoso must be connected to the *Contoso-DevTest* VM network. The VMs of Fabrikam must be connected to the *Fabrikam-DevTest* VM network.
 
-           Woodgrove IT creates a logical network of the type *Independent network* and names it *DevTest*. This logical network has two VLAN-subnet pairs. Two VM networks are created on top of this logical network, and each VM network gets access to a specific VLAN-subnet. One VM network is named *Contoso-DevTest* and is provided for Contoso's use. The other VM network is named *Fabrikam-DevTest* and is provided for Fabrikam's use.
+           Woodgrove IT creates a logical network of the *Independent network* type and names it *DevTest*. This logical network has two VLAN-subnet pairs. Two VM networks are created on top of this logical network, and each VM network gets access to a specific VLAN-subnet. One VM network is named *Contoso-DevTest* and is provided for Contoso's use. The other VM network is named *Fabrikam-DevTest* and is provided for Fabrikam's use.
 
 - **Virtualized network**:
     This is the fabric network. Multiple virtualized VM networks can be created on top of this logical network. Each VM network has its own virtualized address space.
@@ -127,4 +127,5 @@ To set up an IP address pool on a logical network, [follow these steps](./networ
 
 ## Next steps
 
- [Create a VM network](network-virtual.md).
+- [Create a VM network](network-virtual.md).
+- [Set up static IP address pools in the VMM fabric](network-pool.md).
