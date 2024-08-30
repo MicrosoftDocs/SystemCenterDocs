@@ -36,7 +36,7 @@ This sample solution describes the following environment:
 - Ensure that the virtual switch and logical switch settings are valid and match in the VMM fabric. If they don't, network attach operations might not succeed after failover.
 - The primary VM must be connected to a virtual network
 - The replica VM must not be connected to a network
-- Only one IP address must be assigned to each network adapter of the primary VM. Run this command to ensure this. If there is more than one connected network adapter on the VM, run it for adapter by changing the array index.
+- Only one IP address must be assigned to each network adapter of the primary VM. Run this command to ensure this. If there's more than one connected network adapter on the VM, run it for adapter by changing the array index.
 
     ```powershell
     $VMOnPD = Get-SCVirtualMachine -Name "VM Name" | where {$_.IsPrimaryVM -eq $true}
