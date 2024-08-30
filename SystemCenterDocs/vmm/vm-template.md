@@ -5,7 +5,7 @@ description: This article describes how to create VMs in the VMM fabric from a V
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/20/2024
+ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
