@@ -31,17 +31,25 @@ This article describes how to create VMs in the System Center Virtual Machine Ma
 ## Create a VM
 
 1. Select **VMs and Services** > **Create Virtual Machine** > **Create Virtual Machine**.
-2. In **Create Virtual Machine Wizard** > **Select Source**, select **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**.
-3. In **Select Virtual Machine Source**, select the template > **OK**. Select **OK** if a message appears that some deployment settings will be ignored.
-4. In **Select Source**, select **Next**.
-5. In **Identity**, specify the VM name and an optional description. Select **Next**.
-6. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list, or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a generation 1 or generation 2 machine. Select **Next**.
 
-    -   In **Compatibility**, if you want to deploy the virtual machine to a private cloud, select a capability profile that is available to the private cloud.
-    -   In **Network Adapters**:
-        - If you want to use static IP addresses, set the MAC address to static.
-        - If the VM uses a VHD in VMware .vmdk format, include a legacy network adapter in the template (**New** > **Network Adapter** > **Legacy Network Adapter**). If you don't, the VM might not be able to start in a domain, although it's OK in a workgroup.
-    -   In **Configure Operating System**, specify the guest operating system settings. If you have an existing profile, select in the **Guest OS profile** list.
+2. In **Create Virtual Machine Wizard** > **Select Source**, select **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**.
+
+3. In **Select Virtual Machine Source**, select the template > **OK**. Select **OK** if a message appears that some deployment settings will be ignored.
+
+4. In **Select Source**, select **Next**.
+
+5. In **Identity**, specify the VM name and an optional description. Select **Next**.
+:::moniker range="<=sc-vmm-2022"
+6. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 1 or Generation 2 machine. Select **Next**.
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+6. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 2 or Generation 1 machine. Select **Next**.
+:::moniker-end
+  - In **Compatibility**, if you want to deploy the virtual machine to a private cloud, select a capability profile that is available to the private cloud.
+  - In **Network Adapters**:
+    - If you want to use static IP addresses, set the MAC address to static.
+    - If the VM uses a VHD in VMware .vmdk format, include a legacy network adapter in the template (**New** > **Network Adapter** > **Legacy Network Adapter**). If you don't, the VM might not be able to start in a domain, although it's OK in a workgroup.
+  - In **Configure Operating System**, specify the guest operating system settings. If you have an existing profile, select in the **Guest OS profile** list.
 
 7.  In the **Select Destination** page, specify how the virtual machine must be deployed - in a private cloud, on a host, or stored in the library.
 
@@ -55,8 +63,7 @@ This article describes how to create VMs in the System Center Virtual Machine Ma
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
     -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
     -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
-
-          The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
+        The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
 
 2.  In **Configure Settings**, review the VM settings. Either accept the default VM path on the host or specify a different location. You can optionally select to **Add this path to the list of default virtual machine paths on the host**. In **Machine Resources**, accept the default values for the VHD or modify as required. To prevent placement from choosing its own values, select the pin icon next to the setting. This option isn't available for self-service users.
 3.  In **Select Networks**, if it appears, optionally select the network settings, and select **Next**.
@@ -72,14 +79,12 @@ This article describes how to create VMs in the System Center Virtual Machine Ma
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
     -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
     -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
-        
         The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
 
 2.  In **Configure Settings**, review the VM settings. Either accept the default VM path on the host or specify a different location. You can optionally select **Add this path to the list of default virtual machine paths on the host**. In **Machine Resources**, accept the default values for the VHD or modify as required. To prevent placement from choosing its own values, select the pin icon next to the setting. This option isn't available for self-service users.
 3. In **Select Networks**, if it appears, optionally select the network settings, and select **Next**.
 4. In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you'll install on the VM. Select **Next.**
 5.  On the **Summary** page, confirm the settings and select **Create**.
-
 
 ## Store the VM in the library
 
