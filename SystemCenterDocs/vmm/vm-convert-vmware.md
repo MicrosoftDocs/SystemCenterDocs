@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.subservice: virtual-machine-manager
 
 
 
-This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric to Hyper-V.
+This article describes how to convert VMware VMs in the System Center Virtual Machine Manager (VMM) fabric to Hyper-V.
 
 ::: moniker range=">=sc-vmm-2019"
 
@@ -129,8 +129,8 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 
 ::: moniker range=">sc-vmm-2016"
 
-## Convert EFI-based VM to Hyper-V generation 2 VM
-System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take advantage of generation 2 features.
+## Convert EFI-based VM to Hyper-V Generation 2 VM
+System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take advantage of Generation 2 features.
 
 ::: moniker-end
 

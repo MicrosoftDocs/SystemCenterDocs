@@ -5,7 +5,7 @@ description: This article explains about how to enable and use nested virtualiza
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/06/2022
+ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,14 +18,14 @@ ms.custom: UpdateFrequency2
 
 
 
-Nested virtualization is a functionality in Windows Server 2016 and above that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
+Nested virtualization allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band using PowerShell and Hyper-V host configuration.
 
 You can use this functionality to reduce your infrastructure expense for development and test scenarios without the need for individual hardware.
 
 
 ::: moniker range=">=sc-vmm-2019"
 
-With System Center - Virtual Machine Manager (VMM), you can enable and disable the nested virtualization feature through VMM console. You can configure the nested Virtual Machine (VM) as a host in VMM and perform host operations from VMM, on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
+With System Center Virtual Machine Manager (VMM), you can enable and disable the nested virtualization feature through VMM console. You can configure the nested Virtual Machine (VM) as a host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Ensure the following prerequisites are met:
 
 ## Enable network virtualization
 
-Administrators/delegated administrators can configure nested virtualization by using VMM. Use the following procedures:
+Administrators/delegated administrators can configure nested virtualization using VMM. Use the following procedures:
 
 - [Enable nested virtualization](#enable-nested-virtualization-on-an-existing-virtual-machine)
 - [Configure the VM as a host in VMM](#configure-the-nested-vm-as-a-host)
@@ -80,11 +80,11 @@ Administrators/delegated administrators can configure nested virtualization by u
 
 
 1.	Identify the VM that meets the above [prerequisites](#before-you-start).
-2.	Ensure the VM is in **stopped** state.
+2.	Ensure the VM is in **Stopped** state.
 
     ![Screenshot of the stopped VM.](media/nested-vm/nested-vm-stopped-state.png)
 
-3. Browse the selected VM’s **Properties**.
+3. Right-click the VM to browse its **Properties**.
 
     ![Screenshot of the vm properties.](media/nested-vm/nested-vm-properties.png)
 4. On **General**, select **Enable Nested Virtualization**.
@@ -104,7 +104,7 @@ Administrators/delegated administrators can configure nested virtualization by u
     - File and printer sharing
     - Windows management instrumentation (WMI-Out)
 
-2. Ensure the VM is in **running** state. Start the VM if it isn't running.
+2. Ensure the VM is in **Running** state. Start the VM if it isn't running.
 
     ![Screenshot of host vm running.](media/nested-vm/nested-vm-running-state.png)
 
@@ -114,13 +114,13 @@ Administrators/delegated administrators can configure nested virtualization by u
 
     ![Screenshot of add resource wizard.](media/nested-vm/nested-vm-add-resource1.png)
 
-4. Run through the wizard, select the options as appropriate, and complete the wizard.
+4. Run through the wizard, select the appropriate options, and complete the wizard.
 
 ## Disable nested virtualization
 
 1.	Select the host or VM for which nested virtualization is enabled.
-2.	Ensure the VM is in **stopped** state. Stop the VM if it's running.
-3.	Browse the VM **Properties**.
+2.	Ensure the VM is in **Stopped** state. Stop the VM if it's running.
+3.	Right-click the VM to browse its **Properties**.
 4.	On **General**, clear the **Enable Nested Virtualization** check box.
 
     >[!NOTE]
