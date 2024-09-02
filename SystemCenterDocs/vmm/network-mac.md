@@ -5,7 +5,7 @@ description: This article describes how to create and manage MAC address pools i
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/20/2023
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 # Set up MAC address pools in the VMM fabric
 
 
-This article provides information about System Center - Virtual Machine Manager (VMM) default MAC addresses, and describes how to create and manage a custom MAC address pool.
+This article provides information about System Center Virtual Machine Manager (VMM) default MAC addresses and describes how to create and manage a custom MAC address pool.
 
 VMM uses static MAC address pools to automatically generate and assign MAC address to VMs. This article describes default MAC address pools in the VMM fabric and explains how to create custom pools.
 
@@ -43,13 +43,13 @@ Before you create a custom MAC pool, ensure that:
 
 
 1. Select **Fabric** > **Networking** > **MAC Address Pools** > **Home** > **Show** > **Fabric Resources** > **Create** > **Create MAC Pool**.
-2. In **Create MAC Address Pool Wizard** > **Name and Host Group**, specify a name and description. In **Host Group**, select the host groups that should use the pool.
+2. In **Create MAC Address Pool Wizard** > **Name and Host Group**, specify a name and description. In **Host Group**, select the host groups that must use the pool.
 3. In **MAC Address Range**, specify the start and end addresses.
 4. In **Summary**, review the settings and select **Finish**. When the job shows as **Completed**, verify pool in **MAC Pools**.
 
 ## Release IP addresses
 
-In some circumstances you might want to remove addresses from the MAC pool. For example, if a host that was assigned an IP address during bare metal deployment is removed from VMM management or if a VM goes into a missing state because it was removed outside VMM.
+In some circumstances, you might want to remove addresses from the MAC pool. For example, if a host that was assigned an IP address during bare metal deployment is removed from VMM management or if a VM goes into a missing state because it was removed outside VMM.
 
 1. Select **Fabric** > **Networking** > **MAC Address Pools** > **Home** > **Show** > **Fabric Resources**.
 2. In **MAC Pools**, select the pool you want to modify > **Properties**.

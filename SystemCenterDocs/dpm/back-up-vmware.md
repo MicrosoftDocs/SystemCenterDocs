@@ -3,7 +3,7 @@ description: Use DPM to back up and restore VMware VMs.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 02/26/2024
+ms.date: 07/31/2024
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -11,7 +11,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '>sc-dpm-2016'
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Use DPM to back up and restore VMware virtual machines
@@ -53,8 +53,8 @@ DPM provides the following features when backing up VMware virtual machines:
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
 
 - If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
-    - You can use static IP address of vCenter Server as a workaround.
-    - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
+     - You can use static IP address of vCenter Server as a workaround.
+     - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
 - If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
 - DPM can't protect VMware VMs to a secondary DPM server.
@@ -63,8 +63,8 @@ Before you start backing up a VMware virtual machine, review the following list 
 - DPM can't detect or protect VMware vApps.
 - DPM can't protect VMware VMs with existing snapshots.
 - Ensure the following network ports are open:
-    - TCP 443 between MABS and vCenter
-    - TCP 443 and TCP 902 between MABS and ESXi host
+     - TCP 443 between MABS and vCenter
+     - TCP 443 and TCP 902 between MABS and ESXi host
 
 ::: moniker-end
 
@@ -75,8 +75,8 @@ Before you start backing up a VMware virtual machine, review the following list 
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
 
 - If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
-    - You can use static IP address of vCenter Server as a workaround.
-    - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
+     - You can use static IP address of vCenter Server as a workaround.
+     - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
 - If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
 - DPM can't protect VMware VMs to a secondary DPM server.
@@ -85,8 +85,8 @@ Before you start backing up a VMware virtual machine, review the following list 
 - DPM can't detect or protect VMware vApps.
 - DPM can't protect VMware VMs with existing snapshots.
 - Ensure the following network ports are open:
-    - TCP 443 between MABS and vCenter
-    - TCP 443 and TCP 902 between MABS and ESXi host
+     - TCP 443 between MABS and vCenter
+     - TCP 443 and TCP 902 between MABS and ESXi host
 - DPM can’t protect Data Sets when backing up vSphere 8.0 VMs.
 
 ::: moniker-end
@@ -154,7 +154,7 @@ Once you've matching credentials in DPM, update the VMware server credentials us
 
 When you delete credentials, you're removing the credential from the list on the DPM server. DPM doesn't allow you to delete a credential that is used to authenticate a production server.
 
-To delete a credential:
+To delete a credential, follow these steps:
 
 1. In the DPM Administrator Console, select Management, select Production Servers, and in the tool ribbon, select Manage VMware Credentials.
 2. In the Manage Credentials page, select the credential. Make sure the credential isn't associated with any Production Servers.
@@ -276,7 +276,6 @@ The following table captures the privileges that you need to assign to the user 
 | Virtual machine.Snapshot management.Create snapshot |   |
 | Virtual machine.Snapshot management.Remove Snapshot |   |
 
-
 The recommended steps for assigning these privileges:
 
 #### Create a role, for example, BackupAdminRole
@@ -377,11 +376,11 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 
 **Use the following procedure**:
 
-1.	In the DPM Administrator console, select **Protection** > **Create protection group** to open the Create New Protection Group wizard.
-2.	On the **Select Group Members** page, select the VMware VMs you want to protect.
-3.	On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
-4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency you want.
-5.	On the **Select Tape and Library Details** page, specify the tape and library that will be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
+1. In the DPM Administrator console, select **Protection** > **Create protection group** to open the Create New Protection Group wizard.
+2. On the **Select Group Members** page, select the VMware VMs you want to protect.
+3. On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
+4. In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency you want.
+5. On the **Select Tape and Library Details** page, specify the tape and library that will be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
 
 ### Create a Protection Group for VMware VMs
 
@@ -399,12 +398,12 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 
     If you've a standalone tape or tape library connected to the DPM server, you'll be able to select **I want long-term protection using tape**.
 
-6.	On the **Specify Short-Term Goals** screen, for the **Retention Range**, specify the number of days your data is kept on disk.
+6. On the **Specify Short-Term Goals** screen, for the **Retention Range**, specify the number of days your data is kept on disk.
     If you want to change the schedule when application recovery points are taken, select **Modify**. On the Express Full Backup tab, choose a new schedule for the time(s) and days of the week when Express Full Backups are taken. The default is daily at 8 PM local time for the DPM server. When you've the short-term goals you like, select **Next**.
 
 7. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**,  specify how often backups to tape should run. The frequency is based on the retention range you've specified:
-    -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
-    -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
+    - When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    - When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
@@ -476,7 +475,7 @@ You can restore individual files from a protected VM recovery point. This featur
 
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
-10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
+10. On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
 ::: moniker-end
@@ -510,7 +509,7 @@ You can restore individual files from a protected VM recovery point. This featur
 
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
-10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
+10. On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
 >[!TIP]
@@ -537,12 +536,11 @@ You can modify the number of jobs by using the registry key as shown below (not 
 
 **Key Path:** *HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelIncrementalJobs*
 **32 Bit DWORD:** VMware
-**Data:** `number` 
+**Data:** `number`
 The value should be the number (decimal) of virtual machines that you select for parallel backup.
 
 > [!NOTE]
->  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
-
+> You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
 
 ::: moniker-end
 
@@ -639,7 +637,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   1. Get the details of VMware host that is protected on the DPM server.
 
-        ```
+        ```powershell
         PS C:\>$psInfo = get-DPMProductionServer
         PS C:\> $psInfo
 
@@ -650,7 +648,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   2. Select the VMware host and list the VMs protection for the VMware host.
 
-        ```
+        ```powershell
         PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[0] -Inquire
         PS C:\> $vmDsInfo
 
@@ -663,7 +661,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   3. Select the VM for which you want to exclude a disk.
 
-        ```
+        ```powershell
         PS C:\>$vmDsInfo[2]
 
         Computer     Name    ObjectType
@@ -678,31 +676,31 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
         >
         > With DPM 2019 UR2, this experience is improved. You can run the script without stopping the DPMRA service.
 
-
      **To add/remove the disk from exclusion, run the following command:**
 
-      ```
+      ```powershell
       ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
       ```
 
      **Example: To add the disk exclusion for TestVM4, run the following command**
 
-       ```
+       ```powershell
        PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
        Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
        Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
        ```
+
 5. Verify that the disk has been added for exclusion
 
    **To view the existing exclusion for specific VMs, run the following command:**
 
-    ```
+    ```powershell
     ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
     ```
 
    **Example**
 
-    ```
+    ```powershell
     PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -view
     <VirtualMachine>
     <UUID>52b2b1b6-5a74-1359-a0a5-1c3627c7b96a</UUID>
@@ -715,12 +713,11 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
   > [!NOTE]
   > If you're performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
 
-
 **Remove the disk from exclusion**
 
 To remove the disk from exclusion, run the following command:
 
-```
+```powershell
 PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
 ```
 
