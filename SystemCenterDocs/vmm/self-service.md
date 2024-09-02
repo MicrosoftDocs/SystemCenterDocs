@@ -5,7 +5,7 @@ description: This article describes how to set up self-service in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/21/2024
+ms.date: 09/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
