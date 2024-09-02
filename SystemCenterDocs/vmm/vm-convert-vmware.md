@@ -202,7 +202,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 :::moniker-end
 
 :::moniker range="sc-vmm-2025"
-## Change the conversion read-write chunk size
+## Change the disk read-write chunk size
 
 With VMM 2025, the VMware to Hyper-V VM conversion's read-write chunk size is set to 2 GB by default. To change this chunk size, follow this procedure:
 
