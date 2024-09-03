@@ -36,7 +36,12 @@ Using live migration provides many benefits:
 -   **Increased flexibility**: Live migration features can help simplify the movement of virtual machines across hosts and clusters. Therefore, it becomes easier to manage a dynamic datacenter.
 -   **Ease-of-maintenance**: Live migration alleviates the need to take standalone hosts and cluster hosts offline for maintenance and migration purposes, which helps to avoid downtime. With the ability to perform concurrent migrations and maintenance, migration timeframes can become shorter, depending on the time that is required to perform the live migration. In addition, the planning process for Hyper-V mobility is simplified.
 -   **Better hardware utilization**: The distribution of virtual machines can be optimized across the infrastructure. Virtual machines and storage can be moved to standalone servers and clusters with spare capacity, without interrupting availability. Power consumption is reduced as virtual machines can be moved across hosts, and then hosts can be powered down to save energy.
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
 -   **Failover clustering features**: VMM takes advantage of failover clustering features that were introduced in Windows Server 2012. These features include additional APIs to migrate virtual machines across cluster nodes, and improved attach/detach functionality that enables migration of virtual machines in and out of failover clusters without downtime.
+:::moniker-end
+:::moniker range=">=sc-vmm-2022"
+-   **Failover clustering features**: VMM takes advantage of Windows Server failover clustering features. These features include additional APIs to migrate virtual machines across cluster nodes, and improved attach/detach functionality that enables migration of virtual machines in and out of failover clusters without downtime.
+:::moniker-end
 
 ### Live migration support
 
@@ -69,7 +74,7 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 ### Live migration limitations
 
 - Live migration requires two or more servers that run Hyper-V, that support hardware virtualization, and use processors from the same manufacturer, such as all AMD processors or all Intel processors.
-:::moniker range="<=sc-vmm-2019"
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
 - Live migration is supported starting with hosts running Windows Server 2012.
 :::moniker-end
 - Virtual machines must be configured to use virtual hard disks or virtual Fibre Channel disks, not physical disks.
@@ -102,12 +107,14 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 Live VSM migrates a VM and its machine storage in a single action.
 
 - To use live VSM, the virtual machine LUN must be masked from the destination host.
-:::moniker range="<=sc-vmm-2019"
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
 - Live VSM is supported between two standalone hosts that run Hyper-V, starting with Windows Server 2012. The transfer can occur between local disks or SMB 3.0 file shares.
+
 - Live VSM is supported between two host clusters that run Hyper-V, starting with Windows Server 2012. The virtual machine can be transferred to either a CSV or SMB 3.0 file share on the destination host cluster.
 :::moniker-end
 :::moniker range=">=sc-vmm-2022"
 - Live VSM is supported between two standalone hosts that run Hyper-V. The transfer can occur between local disks or SMB 3.0 file shares.
+
 - Live VSM is supported between two host clusters that run Hyper-V. The virtual machine can be transferred to either a CSV or SMB 3.0 file share on the destination host cluster.
 :::moniker-end
 

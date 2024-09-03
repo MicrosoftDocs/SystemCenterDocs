@@ -7,7 +7,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 09/03/2024
 ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
 
@@ -42,7 +42,7 @@ The following steps are required to enable an automatic migration of Orchestrato
 6. Deploy Orchestrator components in environment B  
 
 > [!NOTE]  
-> See [https://go.microsoft.com/fwlink/?LinkId=246817](/sql/tools/sqlcmd-utility) for information on using the Sqlcmd utility.  
+> For more information, see how to use [sqlcmd utility](https://go.microsoft.com/fwlink/?LinkId=246817).
 
 > [!NOTE]  
 > It's recommended to enable SQL Broker on the Orchestrator Database in order for internal maintenance tasks to execute automatically.  
