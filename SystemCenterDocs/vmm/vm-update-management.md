@@ -9,7 +9,7 @@ ms.date: 07/28/2023
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-monikerRange: '>=sc-vmm-2019'
+monikerRange: '<=sc-vmm-2022'
 ms.custom: UpdateFrequency2
 ---
 
