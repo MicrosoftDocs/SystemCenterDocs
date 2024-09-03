@@ -5,7 +5,7 @@ description: This guide provides information on how to upgrade to Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 09/03/2024
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -21,11 +21,6 @@ ms.topic: article
 This section of the Deployment Guide provides information about how to upgrade to System Center 2025 from an older supported version. You can upgrade to Operations Manager 2025 from Operations Manager versions 2022.
 
 It's assumed in this guide that you're performing an upgrade from System Center 2022.
-
->[!Note]
->If you upgrade from System Center Operation Manager 2022 or earlier, ensure to remove the duplicate management pack aliases. For more information on how to remove the management pack aliases, see [Remove duplicate Management pack aliases](/troubleshoot/system-center/scom/remove-duplicate-management-pack-aliases).
-
-For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see Deploying System Center Operations Manager.
 
 ::: moniker-end
 

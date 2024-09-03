@@ -5,7 +5,7 @@ description: This article describes how to upgrade the Reporting server to the l
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 09/03/2024
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,8 +13,6 @@ ms.topic: article
 ---
 
 # Upgrade a Reporting server
-
-
 
 ::: moniker range=">=sc-om-2019"
 
@@ -24,14 +22,39 @@ Before you begin the upgrade process, ensure that your server meets the minimum 
 
 ## Before you perform the upgrade
 
+::: moniker-end
+
+::: moniker range=">=sc-om-2019 <=sc-om-2022"
+
 When you try to upgrade Reporting server to System Center Operations Manager 2019 Reporting server, the upgrade fails for the following configuration:
 
   * Server A is configured as the System Center 2016 - Operations Manager management server.
   * Server B is configured with SQL Server hosting the System Center Operations Manager 2019 operational and data  warehouse database, and Operations Manager Reporting server or a standalone SQL Server hosting Reporting server.
 
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+When you try to upgrade Reporting server to System Center Operations Manager 2025 Reporting server, the upgrade fails for the following configuration:
+
+  * Server A is configured as the System Center 2022 - Operations Manager management server.
+  * Server B is configured with SQL Server hosting the System Center Operations Manager 2022 operational and data  warehouse database, and Operations Manager Reporting server or a standalone SQL Server hosting Reporting server.
+
+::: moniker-end
+::: moniker range=">=sc-om-2019"
+
 The prerequisites checker will report the following error:  **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.**
+::: moniker-end
+
+::: moniker range=">=sc-om-2019 <=sc-om-2022"
 
 To work around this issue, install the System Center 2016 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 2019. Once the upgrade is successfully completed, you can rerun setup and uninstall the upgraded Operations console from the Reporting server.  
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+To work around this issue, install the System Center 2022 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 2025. Once the upgrade is successfully completed, you can rerun setup and uninstall the upgraded Operations console from the Reporting server.  
 
 ::: moniker-end
 
