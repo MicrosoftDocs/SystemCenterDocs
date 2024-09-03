@@ -4,7 +4,7 @@ description: This article describes how to configure and use Active Directory in
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 09/03/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,8 +13,6 @@ ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
 ---
 
 # Configure and use Active Directory Integration for agent assignment
-
-
 
 System Center Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups. This article will help you create and manage the configuration of the container in Active Directory, and agent assignment of management servers agents should report to.
 

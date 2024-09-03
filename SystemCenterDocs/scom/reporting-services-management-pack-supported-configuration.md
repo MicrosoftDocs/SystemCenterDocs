@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/02/2024
+ms.date: 09/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -29,6 +29,8 @@ The following is a list of features and configurations supported in Management P
 
 ## System Center Operations Manager
 
+::: moniker range="<=sc-om-2022"
+
 Management Pack for SQL Server Analysis Services supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
@@ -39,16 +41,38 @@ Management Pack for SQL Server Analysis Services supports the following versions
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
 
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+- System Center Operations Manager 2019
+- System Center Operations Manager 2022
+- System Center Operations Manager 2025
+
+::: moniker-end
+
 A dedicated Operations Manager management group isn't required for this management pack.
 
 ## Supported Operating Systems and Platforms
 
 Management Pack for SQL Server Reporting Services supports the following 64-bit operating systems and platforms:
 
+::: moniker range="<=sc-om-2022"
+
 - Windows Server 2012
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+- Windows Server 2019
+- Windows Server 2022
+- Windows Server 2025
+
+::: moniker-end
 
 Localized versions of Windows Server are also supported.

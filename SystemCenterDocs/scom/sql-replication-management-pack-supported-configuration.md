@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: epomortseva
 ms.author: v-fkornilov
 manager: mkluck
-ms.date: 02/02/2024
+ms.date: 09/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -59,6 +59,8 @@ All SQL Server Express editions support Replication as Subscriber with Push subs
 
 ## System Center Operations Manager
 
+::: moniker range="<=sc-om-2022"
+
 Management Pack for SQL Server Replication supports the following operating systems and platforms:
 
 - System Center Operations Manager 2012 R2
@@ -66,8 +68,17 @@ Management Pack for SQL Server Replication supports the following operating syst
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
 
 - System Center Operations Manager 2016
+
+::: moniker-end
+
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+
+::: moniker range="sc-om-2025"
+
+- System Center Operations Manager 2025
+
+::: moniker-end
 
 A dedicated management group isn't required.
 
@@ -75,11 +86,22 @@ A dedicated management group isn't required.
 
 Management Pack for SQL Server Replication supports the following 64-bit operating systems and platforms:
 
+::: moniker range="<=sc-om-2022"
+
 - Windows Server 2012
 - Windows Server 2012 R2
 - Windows Server 2016
+
+::: moniker-end
+
 - Windows Server 2019
 - Windows Server 2022
+
+::: moniker range="sc-om-2025"
+
+- Windows Server 2025
+
+::: moniker-end
 
 ## Agentless Monitoring
 

@@ -6,7 +6,7 @@ ms.custom: engagement-fy23
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/02/2024
+ms.date: 09/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -62,6 +62,8 @@ When using the vCore-based purchase model, the following rules don't collect dat
 
 ## System Center Operations Manager
 
+::: moniker range="<=sc-om-2022"
+
 Management Pack for Azure SQL Database supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
@@ -69,8 +71,19 @@ Management Pack for Azure SQL Database supports the following versions of System
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
   
 - System Center Operations Manager 2016
+
+::: moniker-end
+
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+
+
+
+::: moniker range="sc-om-2025"
+
+- System Center Operations Manager 2025
+
+::: moniker-end
 
 >[!NOTE]
 > To connect System Center Operations Manager to Azure resources, your server must have TLS 1.2 enabled. Check protocol status with [TLS 1.2 enforcement for Azure AD Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
@@ -78,8 +91,19 @@ Management Pack for Azure SQL Database supports the following versions of System
 
 Management Pack for Azure SQL Database supports the following 64-bit operating systems and platforms:
 
+::: moniker range="<=sc-om-2022"
+
 - Windows Server 2012
 - Windows Server 2012 R2
 - Windows Server 2016
+
+::: moniker-end
+
 - Windows Server 2019
 - Windows Server 2022
+
+::: moniker range="sc-om-2025"
+
+- Windows Server 2025
+
+::: moniker-end

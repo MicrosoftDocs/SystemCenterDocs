@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 09/03/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -39,7 +39,7 @@ This information helps you understand the performance and scalability characteri
 
 ## Upgrade sequence
 
-If you're upgrading an installation of System Center 2019 - Operations Manager that's integrated with one or more System Center components, it's important that you upgrade in the following order. 
+If you're upgrading an installation of System Center 2022 - Operations Manager that's integrated with one or more System Center components, it's important that you upgrade in the following order. 
 
 1. Orchestrator - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
 1. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
@@ -49,7 +49,7 @@ If you're upgrading an installation of System Center 2019 - Operations Manager t
 
 ## Hardware requirements
 
-Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2022 - Operations Manager, considering the minimum hardware requirements for processor, memory, and disk space. You should use the information here whether you're deploying one or multiple components, and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, see [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)
+Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2025 - Operations Manager, considering the minimum hardware requirements for processor, memory, and disk space. You should use the information here whether you're deploying one or multiple components, and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, see [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)
 
 >[!NOTE]
 > While the Operations Manager 2012 Sizing helper hasn't been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements. However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section isn't correct. The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.
@@ -70,15 +70,15 @@ Use this information to evaluate if your hardware environment is ready to suppor
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
 
-| Component                                                          | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core |
-|:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|
-| **Operations Manager** Management Server                            | Yes                                      | Yes    | Yes      | Yes          |
-| **Operations Manager** Gateway Server                               | Yes                                      | Yes    | Yes      | Yes          |
-| **Operations Manager** Web Console                                  | Yes                                      |        | Yes      |              |
-| **Operations Manager** ACS Collector                                | Yes                                      |        | Yes      |              |
-| **Operations Manager** Operations console                           | Yes                                      |        | Yes      |              |
-| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes                                      | Yes    | Yes      | Yes          |
-| **Operations Manager** Reporting server                             | Yes                                      |        |Yes       |              |
+| Component                                                          | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core | Windows Server 2025 Standard, Datacenter | Windows Server 2025 Server Core |
+|:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|:-----------------------------------------|:--------------------------------|
+| **Operations Manager** Management Server                            | Yes                                      | Yes    | Yes      | Yes          | Yes      | Yes          |
+| **Operations Manager** Gateway Server                               | Yes                                      | Yes    | Yes      | Yes          |Yes      | Yes          |
+| **Operations Manager** Web Console                                  | Yes                                      |        | Yes      |              |Yes      |              |
+| **Operations Manager** ACS Collector                                | Yes                                      |        | Yes      |              |Yes      |              |
+| **Operations Manager** Operations console                           | Yes                                      |        | Yes      |              |Yes      |              |
+| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes                                      | Yes    | Yes      | Yes          |Yes      | Yes          |
+| **Operations Manager** Reporting server                             | Yes                                      |        |Yes       |              |Yes       |              |
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
@@ -88,20 +88,20 @@ The following versions of Windows Server operating system are supported for the 
 ### Management server/Gateway server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
-- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
+- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0 or later.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - .NET Framework 4.7.2 or .NET Framework 4.8 is required. 
 
 ### Operations Manager console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
-- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
+- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0 or later.
 - .NET Framework 4.7.2 or .NET Framework 4.8 is required. 
 
 ### Web console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
-- Client web browser for Silverlight-enabled dashboards:  For backward compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 are required.
+- Client web browser for Silverlight-enabled dashboards:  For backward compatibility with Silverlight-enabled dashboards, Microsoft Edge 121.0.2277.4 or later and Silverlight 5 are required.
 
     >[!NOTE]
     > Operations Manager 2019 and later only includes the 64-bit version of the Operations console. 
@@ -109,9 +109,8 @@ The following versions of Windows Server operating system are supported for the 
 
 - Client web browser for HTML5 web console:
 
-    - Internet Explorer version 11
-    - Microsoft Edge version 88 and later
-    - Google Chrome version 88 and later
+    - Microsoft Edge version 121.0.2277.4 and later with IE compatibility mode.
+    - Google Chrome version 121 and later
     - Internet Information Services:  IIS 7.5 and later versions with the IIS Management Console and the following role services installed:
     - Static Content
     - Default Document
@@ -146,18 +145,16 @@ The following versions of Windows Server operating system are supported for the 
 
 ## Client operating system
 
-Windows 10 and Windows 11 client operating system are supported for the Operations Manager 2022 Operations console.
+Windows 10 and Windows 11 client operating system are supported for the Operations Manager 2022 or later Operations console.
 
 ## Microsoft Monitoring Agent operating system
 
 >[!NOTE]
-> Operations Manager 2022 only includes the 64-bit version of the agent.
+> Operations Manager 2025 only includes the 64-bit version of the agent.
 
+- Windows Server 2025 – Standard, Datacenter, Server Core
 - Windows Server 2022 - Standard, Datacenter, Server Core
 - Windows Server 2019 - Standard, Datacenter, Server Core
-- Windows Server 2016 - Standard, Datacenter, Server Core
-- Windows Server 2012 R2 - Standard, Datacenter, Server Core
-- Windows Server 2012 - Standard, Datacenter, Server Core
 - Windows 10 - Enterprise, Pro
 - Windows 11 - Enterprise, Pro
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
@@ -170,29 +167,28 @@ Windows 10 and Windows 11 client operating system are supported for the Operatio
 
 ## Virtualization
 
-Microsoft supports running all System Center 2022 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document. There are some restrictions on virtualization functionality that's applicable to Operations Manager.  Specifically, Microsoft doesn't support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:
+Microsoft supports running all System Center 2025 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document. There are some restrictions on virtualization functionality that's applicable to Operations Manager.  Specifically, Microsoft doesn't support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:
 - Virtual computers running any Operations Manager component must not make use of any functionality where all activity on the virtual computer isn't immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.
 - Virtual computers running any Operations Manager component can't be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted as would be done with a physical computer.
 
-System Center 2016 - Operations Manager and higher runs on virtual machines in Microsoft Azure as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.
+System Center 2016 - Operations Manager or later runs on virtual machines in Microsoft Azure as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.
 
 - Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here can be either on on-premises or Azure, and it would fail over to this environment on account of any disaster.
 - If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.
 
-
 ## Supported coexistence
 
-The following table lists the scenarios in which coexistence between Operations Manager 2022 and earlier versions of Operations Manager is supported.
+The following table lists the scenarios in which coexistence between Operations Manager 2025 and earlier versions of Operations Manager is supported.
 
 | Version | Management Group Coexistence |
 |:--- |:---|
-|  Operations Manager 2019 to the latest update rollup| Yes|
+|  Operations Manager 2022 to the latest update rollup| Yes|
 
 ## In-place upgrade
 
-System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
+System Center 2025 - Operations Manager supports an in-place upgrade from the following versions:
 
-System Center 2019
+System Center 2022
 
 ## Active Directory and DNS
 
