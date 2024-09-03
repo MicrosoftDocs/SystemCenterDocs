@@ -149,7 +149,7 @@ Changing the agent assignment rule can result in computers no longer being assig
 
 10. On the **Agent Failover** page, either select **Automatically manage failover** and select **Create** or select **Manually configure failover**. If you select **Manually configure failover**, do the following:  
 
-    1. Clear the check boxes of the management servers to which you don't want the agents to failover.  
+    1. Clear the check boxes of the management servers to which you don't want the agents to fail over.  
 
     2. Select **Create**.  
 

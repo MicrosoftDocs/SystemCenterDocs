@@ -173,7 +173,7 @@ Microsoft supports running all System Center 2025 – Operations Manager server 
 
 System Center 2016 - Operations Manager or later runs on virtual machines in Microsoft Azure as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.
 
-- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here can be either on on-premises or Azure, and it would fail over to this environment on account of any disaster.
+- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/azure/site-recovery/site-recovery-workload). The virtualized environment referred here can be either on on-premises or Azure, and it would fail over to this environment on account of any disaster.
 - If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.
 
 ## Supported coexistence

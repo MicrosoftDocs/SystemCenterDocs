@@ -106,14 +106,10 @@ Management Pack for SQL Server supports the following operating systems and plat
   Due to the [Lifecycle Policy](/lifecycle/products/windows-server-2012-r2), this version is no longer being tested.
   
 - Windows Server 2016
-
 ::: moniker-end
-
 - Windows Server 2019
 - Windows Server 2022
-
 ::: moniker range="sc-om-2025"
-
 - Windows Server 2025
 
 ::: moniker-end

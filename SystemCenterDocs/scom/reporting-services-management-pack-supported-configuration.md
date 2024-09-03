@@ -68,7 +68,6 @@ Management Pack for SQL Server Reporting Services supports the following 64-bit 
 ::: moniker-end
 
 ::: moniker range="sc-om-2025"
-
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server 2025
