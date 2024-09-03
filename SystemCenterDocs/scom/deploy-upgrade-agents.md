@@ -1,21 +1,19 @@
 ---
 ms.assetid: 4d1cf6ab-ed6e-4cd8-8ab8-f5d294877e4a
-title: How to Upgrade an Agent to System Center Operations Manager
+title: Upgrade an Agent to System Center Operations Manager
 description: This article describes how to upgrade an Operations Manager agent to System Center.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 09/03/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
-monikerRange: ' sc-om-2019 || sc-om-2022 || sc-om-2025'
+monikerRange: ' >=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade an Operations Manager agent
-
-
+# Upgrade an Operations Manager agent
 
 ::: moniker range="sc-om-2025"
 
@@ -32,12 +30,6 @@ Use the following procedures to upgrade an agent running on Windows or Linux to 
 ::: moniker range="sc-om-2022"
 
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2022. You should first verify that the agents meet the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
-
-::: moniker-end
-
-::: moniker range="sc-om-2025"
-
-Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2025. You should first verify that the agents meet the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ::: moniker-end
 
