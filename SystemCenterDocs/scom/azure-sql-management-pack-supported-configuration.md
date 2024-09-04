@@ -62,19 +62,23 @@ When using the vCore-based purchase model, the following rules don't collect dat
 
 ## System Center Operations Manager
 
-::: moniker range="<=sc-om-2022"
-
 Management Pack for Azure SQL Database supports the following versions of System Center Operations Manager:
+
+::: moniker range="<=sc-om-2022"
 
 - System Center Operations Manager 2012 R2
   
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
   
 - System Center Operations Manager 2016
-::: moniker-end
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+::: moniker-end
+
 ::: moniker range="sc-om-2025"
+
+- System Center Operations Manager 2019
+- System Center Operations Manager 2022
 - System Center Operations Manager 2025
 ::: moniker-end
 

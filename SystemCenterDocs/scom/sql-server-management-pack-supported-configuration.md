@@ -70,32 +70,31 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 
 ## System Center Operations Manager
 
-::: moniker range="<=sc-om-2022"
-
 Management Pack for SQL Server supports the following versions of System Center Operations Manager:
+
+::: moniker range="<=sc-om-2022"
 
 - System Center Operations Manager 2012 R2
   
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
 
 - System Center Operations Manager 2016
-
-::: moniker-end
-
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+::: moniker-end
 
 ::: moniker range="sc-om-2025"
-
+- System Center Operations Manager 2019
+- System Center Operations Manager 2022
 - System Center Operations Manager 2025
 
 ::: moniker-end
 
 ## Operating Systems and Platforms
 
-::: moniker range="<=sc-om-2022"
-
 Management Pack for SQL Server supports the following operating systems and platforms:
+
+::: moniker range="<=sc-om-2022"
 
 - Windows Server 2012
   
@@ -106,14 +105,15 @@ Management Pack for SQL Server supports the following operating systems and plat
   Due to the [Lifecycle Policy](/lifecycle/products/windows-server-2012-r2), this version is no longer being tested.
   
 - Windows Server 2016
-::: moniker-end
 - Windows Server 2019
 - Windows Server 2022
-::: moniker range="sc-om-2025"
-- Windows Server 2025
-
 ::: moniker-end
 
+::: moniker range="sc-om-2025"
+- Windows Server 2019
+- Windows Server 2022
+- Windows Server 2025
+::: moniker-end
 - Ubuntu 16.04 - 22.04
 - Red Hat Enterprise Linux 7.7 - 7.9, or 8.x - 9.x Server
 - SUSE Linux Enterprise Server v12 - v15
