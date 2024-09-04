@@ -5,7 +5,7 @@ description: This article describes how to upgrade a management server in a dist
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 09/03/2024
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -42,9 +42,18 @@ Follow these steps to upgrade a management server:
 
 5. On the **Getting Started, Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
-    > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    >
+::: moniker range="<=sc-om-2022"
+    
+   > [!NOTE]
+   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+   > [!NOTE]
+   > For System Center 2025 - Operations Manager, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+
+::: moniker-end
 
 6. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.
 

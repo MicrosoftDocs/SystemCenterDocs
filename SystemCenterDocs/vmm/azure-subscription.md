@@ -5,11 +5,12 @@ description: This article describes how to add an Azure subscription, so that yo
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/06/2024
+ms.date: 09/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2
+monikerRange: '<=sc-vmm-2022'
 ---
 
 # Add an Azure subscription in VMM
@@ -18,7 +19,7 @@ ms.custom: UpdateFrequency2
 
 ::: moniker range="sc-vmm-2016"
 
-You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), and perform basic actions on Azure instances in the subscriptions.
+You can add Microsoft Azure subscriptions to System Center Virtual Machine Manager (VMM) and perform basic actions on Azure instances in the subscriptions.
 
 - For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
 - If you're already managing your on-premises virtual machines in VMM, you can use this feature to perform some basic actions on Azure instances without leaving the VMM console. You can:
@@ -59,7 +60,7 @@ Here's what you need to add an Azure subscription in VMM:
 ## Manage Azure VMs
 
 If you're already managing your on-premises virtual machines in VMM, you can use this feature to perform some basic actions on Azure instances, without leaving the VMM console. You can:
--	Add and remove one or more Azure subscriptions by using the VMM console.
+-	Add and remove one or more Azure subscriptions using the VMM console.
 -	See a list view with details and status of all role instances in all deployments in that subscription.
 -	Manually refresh the list of instances.
 -	Perform the following basic actions on the instances:
@@ -86,7 +87,7 @@ You can't:
 
 ::: moniker range=">=sc-vmm-2019"
 
-You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM) by creating an Azure profile.
+You can add Microsoft Azure subscriptions to System Center Virtual Machine Manager (VMM) by creating an Azure profile.
 
 Using Azure profile, you can define the intended usage of the profile. Currently, Azure-VMM integration scenario supports the following:  
 
@@ -100,7 +101,7 @@ Here's what you need to add an Azure profile for Azure VM management:
 |--- | ---|
 |**Azure subscription** | You need at least one Azure subscription to add it to the VMM console.|
 |**Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.|
-|**AD Authentication** | To enable management of both Classic and Azure Resource Manager based VMs, the subscription must have Active Directory-based authentication associated with it. <br/><br/> Create a Microsoft Entra ID application using Azure portal and make a note of the Directory ID, Application ID, and Key. <br/><br/> Assign application to Classic VM contributor and VM contributor roles by using *Subscription – Access Control (IAM) – Add*.|
+|**AD Authentication** | To enable management of both Classic and Azure Resource Manager based VMs, the subscription must have Active Directory-based authentication associated with it. <br/><br/> Create a Microsoft Entra ID application using Azure portal and make a note of the Directory ID, Application ID, and Key. <br/><br/> Assign application to Classic VM contributor and VM contributor roles using *Subscription – Access Control (IAM) – Add*.|
 
 Here's what you need to create an Azure profile for Azure Update Management:
 
@@ -112,16 +113,20 @@ Here's what you need to create an Azure profile for Azure Update Management:
 ## Create Azure Profile
 
 Follow these steps:
-1.	In VMM console, go to **Library** > **Create** > **Azure Profile**.
+1.	In the VMM console, go to **Library** > **Create** > **Azure Profile**.
 
     ![Screenshot of the azure profile.](./media/azure-profile/azure-profile.png)
 
-2.  Under **Profile usage** dropdown menu, select **Azure VM Management** or **Azure Update Management**. Based on the selection, the next page seeks authentication information for the subscription ID entered.
+2.  Under **Profile Usage** dropdown menu, select **Azure VM Management** or **Azure Update Management**. Based on the selection, the next page seeks authentication information for the subscription ID entered.
 
     > [!NOTE]
     > - You can share Azure profile with Self Service Users (SSUs) by adding them as members in the wizard.
     > - You can view the list of all Azure profiles from **Library** > **Profiles** > **Azure Profiles**.
     Select an Azure profile from the list to view detailed information of this profile under the **General Information** pane.
 
-
 ::: moniker-end
+
+## Next steps
+
+- [Manage Azure VMs](manage-azure-vms.md).
+- [VM update management](vm-update-management.md).
