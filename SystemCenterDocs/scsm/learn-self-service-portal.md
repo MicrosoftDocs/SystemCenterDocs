@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/01/2024
+ms.date: 09/04/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -16,8 +16,6 @@ ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
 ---
 
 # Learn about deploying the new Self-Service portal and troubleshoot installation issues
-
-
 
 The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During installation, the Web app is configured to connect directly to the SDK Service running on the Service Manager server browser. A basic, newly\-configured Self\-Service Portal setup works as shown in the following diagram.  
 
@@ -72,6 +70,8 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 - Windows Server 2019
 
+- Windows Server 2016
+
 ::: moniker-end
 
 ::: moniker range="sc-sm-2025"
@@ -80,13 +80,23 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 - Windows Server 2022
 
+- Windows Server 2019
+
+- Windows Server 2016
+
 ::: moniker-end
 
 ### Supported web browsers
 
 The Self-Service portal needs a screen resolution above 1024 X 768. It's supported on the following browsers:
 
-- Microsoft Edge  
+::: moniker range="sc-sm-2025"
+- Microsoft Edge 121.0.2277.4 or later
+::: moniker-end
+
+::: moniker range="<=sc-sm-2022"
+- Microsoft Edge
+::: moniker-end
 
 - Microsoft Internet Explorer 10 and 11  
 
@@ -272,6 +282,8 @@ New type projections are included in the Portal.mpb file, which is part of the i
 
 Here's list of languages with language codes  that are supported by the portal:  
 
+::: moniker range="<=sc-sm-2022"
+
 - en\-US: English  
 
 - fr\-FR: français  
@@ -317,6 +329,48 @@ Here's list of languages with language codes  that are supported by the portal:
 - zh\-TW: 中文(简体\)  
 
 - zh\-HK: 中文 \(香港特別行政區\)  
+
+::: moniker-end
+
+::: moniker range="sc-sm-2025"
+
+- en\-US: English  
+
+- fr\-FR: français  
+
+- de\-DE: Deutsch  
+
+- cs\-CZ: čeština  
+
+- es\-ES: español  
+
+- hu\-HU: magyar  
+
+- it\-IT: italiano  
+
+- ja\-JP: 日本語  
+
+- ko\-KR: 한국어  
+
+- nl\-NL: Nederlands  
+
+- pl\-PL: polski  
+
+- pt\-BR: português \(Brasil\)  
+
+- pt\-PT: português \(Portugal\)  
+
+- ru\-RU: русский  
+
+- sv\-SE: svenska  
+
+- tr\-TR: Türkçe  
+
+- zh\-CHS: 中文(简体\)  
+
+- zh\-TW: 中文(简体\)  
+
+::: moniker-end
 
 ### The time display for my items always indicates AM
 
