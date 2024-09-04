@@ -93,14 +93,15 @@ Management Pack for Azure SQL Database supports the following 64-bit operating s
 - Windows Server 2012
 - Windows Server 2012 R2
 - Windows Server 2016
-
-::: moniker-end
-
 - Windows Server 2019
 - Windows Server 2022
+::: moniker-end
+
+
 
 ::: moniker range="sc-om-2025"
-
+- Windows Server 2019
+- Windows Server 2022
 - Windows Server 2025
 
 ::: moniker-end
