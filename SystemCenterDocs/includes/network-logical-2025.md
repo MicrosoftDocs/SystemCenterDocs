@@ -54,7 +54,7 @@ Before you start, it's important to understand how logical networks work in VMM.
 - **Virtualized network**:
     This is the fabric network. Multiple virtualized VM networks can be created on top of this logical network. Each VM network has its own virtualized address space.
 
-    ![Virtualized network](../vmm/media/network-logical/virtualized-network.png)
+    ![Illustration of a Virtualized network.](../vmm/media/network-logical/virtualized-network.png)
 
     >[!NOTE]
     >- A typical setup might be an infrastructure network with no isolation or VLAN isolation, a load balancer back end and internet-facing network with PVLAN, and tenant networks with isolation using network virtualization.
