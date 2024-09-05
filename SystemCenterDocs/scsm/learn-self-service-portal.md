@@ -17,11 +17,7 @@ ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
 
 # Learn about deploying the new Self-Service portal and troubleshoot installation issues
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During installation, the Web app is configured to connect directly to the SDK Service running on the Service Manager server browser. A basic, newly\-configured Self\-Service Portal setup works as shown in the following diagram.  
 
@@ -55,7 +51,7 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 ### Supported operating systems
 
-::: moniker range="<=sc-sm-1807"
+::: moniker range="sc-sm-2016"
  - Windows Server 2016
 
  - Windows Server 2012 R2

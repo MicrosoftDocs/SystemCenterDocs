@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2023
+ms.date: 05/15/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -17,11 +17,7 @@ ms.assetid: 91a72f45-07ff-41cd-80aa-7acde988f08f
 
 # Deployment scenarios for System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 System Center - Service Manager provides for many deployment scenarios. However, you can't deploy a Service Manager management server and a data warehouse management server on the same computer. In fact, Setup prevents you from installing both on a single server. The reason has to do with Service Manager architecture of the data warehouse, overall performance, and usage of the Operations Manager health service. The data warehouse was designed for quick data retrieval and hosting both the Service Manager management server and the data warehouse management server on a single server will negatively impact performance for both. Additionally, a single server doesn't scale out as Service Manager usage and data storage grow.  
 

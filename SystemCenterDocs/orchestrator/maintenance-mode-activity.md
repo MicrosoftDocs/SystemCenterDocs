@@ -1,7 +1,7 @@
 ---
 title: Maintenance Mode activity
 description: The Maintenance Mode activity is used in a runbook to enter and exit maintenance mode for an ESX host controlled by the VMware vSphere vCenter server.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,16 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/12/2024
 ---
 # Maintenance Mode activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Maintenance Mode activity is used in a runbook to enter and exit the maintenance mode for an ESX host controlled by the VMware vSphere vCenter server. Entering the maintenance mode prevents VMs powering up or failing over to the host if it's taking part in a high availability cluster. This allows the runbook to enable the Maintenance mode before powering off the host for hardware maintenance.
 
@@ -57,16 +50,14 @@ The activity publishes all the data from the required and optional properties in
 
 The following procedure describes the steps required to configure a Maintenance Mode activity.
 
-#### To configure the Maintenance Mode activity
+1. From the **Activities** pane, drag a **Maintenance Mode** activity to the active runbook.
 
-1.  From the **Activities** pane, drag a **Maintenance Mode** activity to the active runbook.
+2. Double-click the **Maintenance Mode** activity icon. The **Properties** dialog opens.
 
-2.  Double-click the **Maintenance Mode** activity icon. The **Properties** dialog opens.
+3. Configure the settings in the **Properties** tab as follows:
 
-3.  Configure the settings in the **Properties** tab as follows:
-
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

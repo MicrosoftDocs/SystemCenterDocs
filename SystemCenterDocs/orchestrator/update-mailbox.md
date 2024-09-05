@@ -1,8 +1,8 @@
 ---
 title: Update Mailbox
 description: You can use the Update Mailbox activity to modify the settings of an existing mailbox in an on-premises or online environment.
-ms.custom: UpdateFrequency3
-ms.date: 05/08/2019
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 05/16/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,11 +17,7 @@ robots: noindex
 ---
 # Update Mailbox
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Update Mailbox activity to modify the settings of an existing mailbox in an on-premises or online environment.
 

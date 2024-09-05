@@ -14,11 +14,7 @@ ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 
 # Subscribe to alert notifications in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 
 In System Center - Operations Manager, when an alert is generated, Operations Manager can notify the designated individuals in the following modes:

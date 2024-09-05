@@ -15,11 +15,7 @@ ms.topic: article
 
 # Manage dashboard and widget configuration in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## Delete a dashboard
 

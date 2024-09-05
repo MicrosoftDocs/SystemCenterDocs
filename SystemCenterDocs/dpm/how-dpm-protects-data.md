@@ -6,26 +6,19 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2017
+ms.date: 06/21/2024
 title: How does DPM work?
 ms.subservice: data-protection-manager
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 # How does DPM work?
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 
 The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It's intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers disk-based protection processes, tape-Based protection processes, recovery process, and the protection policy.
 
 ## Disk-based protection process
 
-To provide disk-based data protection, the DPM server creates and maintains a replica, or copy, of the data that is on protected servers. The replicas are stored in the storage pool, which consists of a set of disks on the DPM server or on a custom volume. The following illustration shows the basic relationship between a protected volume and its replica.
+To provide disk-based data protection, the DPM server creates and maintains a replica, or copy, of the data that is on protected servers. The replicas are stored in the storage pool, which consists of one or more ReFs formatted volumes on the DPM server. The following illustration shows the basic relationship between a protected volume and its replica.
 
 ![Diagram of disk-based protection process.](./media/how-dpm-protects-data/dpm-replica-creation.png)
 
@@ -72,7 +65,6 @@ Each express full backup creates a recovery point for application data. If the a
 
 - For protected Exchange data, synchronization transfers an incremental VSS snapshot using the Exchange VSS writer. Recovery points are created for each synchronization and express full backup.
 
-
 - SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model don't support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
 
 - Windows SharePoint Services and Microsoft Virtual Server don't support incremental backup. Recovery points are created for each express full backup only.
@@ -116,20 +108,11 @@ For specific backup types and schedules, see Planning Protection Groups
 
 The method of data protection, disk-based or tape-based, makes no difference to the recovery task. You select the recovery point of data that you want to recover, and DPM recovers the data to the protected computer.
 
-DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points isn't met yet, protection jobs will fail.
-
-> [!NOTE]
-> To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
+DPM can store a maximum of 448 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points isn't met yet, protection jobs will fail.
 
 As explained in The File Data Synchronization Process and The Application Data Synchronization Process, the process for creating recovery points differs between file data and application data. DPM creates recovery points for file data by taking a shadow copy of the replica on a schedule that you configure. For application data, each synchronization and express full backup creates a recovery point.
 
-The following illustration shows how each protection group member is associated with its own replica volume and recovery point volume.
-
-![Diagram of protection group members, replicas, and recovery points.](./media/how-dpm-protects-data/dpm-protection-group-members-replicas-and-recovery-points.png)
-
 Administrators recover data from available recovery points by using the Recovery Wizard in DPM Administrator Console. When you select a data source and point in time from which to recover, DPM notifies you if the data is on tape, whether the tape is online or offline, and which tapes are needed to complete the recovery.
-
-DPM gives administrators the ability to enable their users to perform their own recoveries by using the Previous Versions feature in Windows. If you don't want to provide this capability to your users, you can recover the data for desktop computers using the Recovery Wizard.
 
 ## Protection policy
 
@@ -157,22 +140,6 @@ Recovery point schedule establishes how many recovery points of this protection 
 Auto discovery is the daily process by which DPM automatically detects new or removed computers on the network. Once a day, at a time that you can schedule, DPM sends a small packet (less than 10 kilobytes) to the closest domain controller. The domain controller responds to the Lightweight Directory Access Protocol (LDAP) request with the computers in that domain, and DPM identifies new and removed computers. The network traffic created by the auto discovery process is minimal.
 
 Auto discovery doesn't discover new and removed computers in other domains. To install a protection agent on a computer in another domain, you must identify the computer by using its fully qualified domain name.
-
-## DPM directory structure
-
-When you begin protecting data with DPM, you'll notice that the installation path of DPM contains three folders in the Volumes directory:
-
-- \Microsoft DPM\DPM\Volumes\DiffArea
-
-- \Microsoft DPM\DPM\Volumes\Replica
-
-- \Microsoft DPM\DPM\Volumes\ShadowCopy
-
-The **DiffArea** folder contains mounted shadow copy volumes that store the recovery points for a data source.
-
-The **Replica** folder contains mounted replica volumes.
-
-The **ShadowCopy** folder contains local backup copies of the DPM database. In addition, when you use DPMBackup.exe to create backup shadow copies of the replicas for archive by third-party backup software, the backup shadow copies are stored in the ShadowCopy folder.
 
 ::: moniker range="<sc-dpm-2019"
 

@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 04/23/2024
+ms.date: 08/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,23 @@ ms.subservice: operations-manager
 # Features and enhancements in Management Pack for SQL Server Analysis Services
 
 This article covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
+
+## July 2024 - 7.6.2 RTM
+
+### What's New
+
+- Added "VertiPaq memory paging indication" monitor to observe the level of VertiPaq memory paging
+- Added Vertipaq tiles to Analysis Servises dashboards:
+	- Monitor tiles: VertiPaq memory consumed by SSAS Instance and VertiPaq memory paging indication
+	- Perfomance tile: VertiPaq Memory Limit, VertiPaq Memory Limit(GB), VertiPaq Memory Usage on the Server (%), VertiPaq Memory Usage on the Server (GB), VertiPq Nonpaged Memory (GB) and VertiPaq Memory Paged (GB)
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Updated display strings
+
+### Bug fixes
+
+- Fixed an issue with alert message and monitor description for "VertiPaq memory consumed by SSAS Instance" monitor
+- Fixed an issue with monitor triggers in mixed mode health calculation for the "VertiPaq memory consumed by SSAS instance" monitor
+- Fixed an issue with "Memory consumed by other processes" monitor calculation
 
 ## January 2024 - 7.4.0.0 RTM
 

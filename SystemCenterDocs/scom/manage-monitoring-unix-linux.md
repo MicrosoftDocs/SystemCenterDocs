@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting UNIX and Linux Agent Monitoring
+title: Troubleshoot UNIX and Linux Agent Monitoring
 description: This article provides basic troubleshooting guidance for discovery and monitoring of the UNIX/Linux OS.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 06/19/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,30 +12,27 @@ ms.topic: article
 ms.assetid: 6afa5807-9393-4fc9-92c2-aa7427d72f2f
 ---
 
-# Troubleshooting monitoring of UNIX and Linux computers
+# Troubleshoot monitoring of UNIX and Linux computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center - Operations Manager provides monitoring of UNIX and Linux computers similar to monitoring of Windows computers. You can monitor health, performance, obtain reports, run tasks, and implement custom monitoring instrumentation.  
 
 You can monitor the following aspects of UNIX and Linux computers:  
 
--   Services and applications  
+- Services and applications  
 
--   File system, disk space, swap space, system memory  
+- File system, disk space, swap space, system memory  
 
--   Network interfaces  
+- Network interfaces  
 
--   Core processes and attributes  
+- Core processes and attributes  
 
--   Key configurations  
+- Key configurations  
 
 Before you can monitor UNIX and Linux computers, you must complete the following steps:  
+
 ::: moniker range="sc-om-2016"
+
 1. Import management packs by downloading the latest versions from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=29696).
 2. [Create a dedicated resource pool](manage-resource-pools-manage.md) for monitoring UNIX and Linux computers.
 3. [Configure the certificates](manage-resource-pools-manage.md#configure-certificates-for-unix-and-linux-dedicated-resource-pools) for each management server in the pool.
@@ -44,6 +41,7 @@ Before you can monitor UNIX and Linux computers, you must complete the following
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
+
 1. Import management packs by downloading the latest versions from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=58208).
 2. [Create a dedicated resource pool](manage-resource-pools-manage.md) for monitoring UNIX and Linux computers.
 3. [Configure the certificates](manage-resource-pools-manage.md#configure-certificates-for-unix-and-linux-dedicated-resource-pools) for each management server in the pool.
@@ -52,6 +50,7 @@ Before you can monitor UNIX and Linux computers, you must complete the following
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
+
 1. Import management packs by downloading the latest versions from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=104213).
 2. [Create a dedicated resource pool](manage-resource-pools-manage.md) for monitoring UNIX and Linux computers.
 3. [Configure the certificates](manage-resource-pools-manage.md#configure-certificates-for-unix-and-linux-dedicated-resource-pools) for each management server in the pool.
@@ -69,10 +68,12 @@ By default, Operations Manager monitors the following operating system objects:
 
 You can provide additional monitoring and interaction capabilities with your managed UNIX and Linux computers by using the UNIX and Linux monitoring pack templates. For more information, see [UNIX or Linux Log File](/previous-versions/system-center/system-center-2012-R2/hh457589(v=sc.12)) and [UNIX or Linux Process](/previous-versions/system-center/system-center-2012-R2/hh457572(v=sc.12)) in the Authoring Guide.
 
-## Troubleshooting UNIX and Linux monitoring
+## Troubleshoot UNIX and Linux monitoring
+
 The following section provides information about issues that might occur with monitoring UNIX and Linux computers in Operations Manager.
 
-### Certificate Signing Error Message  
+### Certificate Signing Error Message
+
 During the installation of UNIX/Linux agents, you might see the following error.  
 
 ```  
@@ -93,13 +94,14 @@ This error occurs when the certificate signing module is called but the certific
 
 If you see this error, do the following:  
 
-1.  Ensure that the SSH daemon on the remote host is running.  
+1. Ensure that the SSH daemon on the remote host is running.  
 
-2.  Ensure that you can open an SSH session with the remote host by using the credentials specified in the Discovery Wizard.  
+2. Ensure that you can open an SSH session with the remote host by using the credentials specified in the Discovery Wizard.  
 
-3.  Ensure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information, see [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
+3. Ensure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information, see [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
 
-### Certificate Name and Host Name do not Match  
+### Certificate Name and Host Name do not Match
+
 The common name (CN) that is used in the certificate must match the fully qualified domain name (FQDN) that is resolved by Operations Manager. If the CN doesn't match, you'll see the following error when you run the Discovery Wizard:  
 
 ```  
@@ -126,15 +128,15 @@ Validate the hostnames and dates and ensure that they match the name being resol
 
 If the hostnames don't match, use one of the following actions to resolve the issue:  
 
--   If the UNIX or Linux hostname is correct but the Operations Manager management server is resolving it incorrectly, either modify the DNS entry to match the correct FQDN or add an entry to the hosts file on the Operations Manager server.  
+- If the UNIX or Linux hostname is correct but the Operations Manager management server is resolving it incorrectly, either modify the DNS entry to match the correct FQDN or add an entry to the hosts file on the Operations Manager server.  
 
--   If the UNIX or Linux hostname is incorrect, do one of the following:  
+- If the UNIX or Linux hostname is incorrect, do one of the following:  
 
-    -   Change the hostname on the UNIX or Linux host to the correct one and create a new certificate.  
+    - Change the hostname on the UNIX or Linux host to the correct one and create a new certificate.  
 
-    -   Create a new certificate with the desired hostname.  
+    - Create a new certificate with the desired hostname.  
 
-**To Change the Name on the Certificate:**  
+**Change the Name on the Certificate:**  
 
 If the certificate was created with an incorrect name, you can change the host name and re-create the certificate and private key. To do this, run the following command on the UNIX or Linux computer:  
 
@@ -156,7 +158,7 @@ Restart the agent by running the following command:
 /opt/microsoft/scx/bin/tools/scxadmin -restart  
 ```  
 
-**To add an entry to the hosts file:**  
+**Add an entry to the hosts file:**  
 
 If the FQDN isn't in Reverse DNS, you can add an entry to the hosts file located on the management server to provide name resolution. The hosts file is located in the Windows\System32\Drivers\etc folder. An entry in the hosts file is a combination of the IP address and the FQDN.  
 
@@ -168,20 +170,21 @@ For example, to add an entry for the host named **newhostname.newdomain.name** w
 
 ## Management pack issues
 
-### ExecuteCommand Does Not Support Pipeline Operators or Aliases  
+### *ExecuteCommand* Does Not Support Pipeline Operators or Aliases
+
 When you use an alias or a pipeline operator with the *ExecuteCommand* parameter, the command fails. The *ExecuteCommand* parameter doesn't support the pipeline operator, aliases, and shell-specific syntax.  
 
 In System Center Operations Manager management packs that are designed to manage UNIX and Linux computers, the *ExecuteCommand* parameter doesn't start a shell process, causing the custom action to fail.  
 
 For each of the following custom action types, you specify how the command arguments are invoked by using either the *ExecuteCommand* parameter or the *ExecuteShellCommand* parameter:  
 
--   Microsoft.Unix.WSMan.Invoke.ProbeAction  
+- Microsoft.Unix.WSMan.Invoke.ProbeAction  
 
--   Microsoft.Unix.WSMan.Invoke.WriteAction  
+- Microsoft.Unix.WSMan.Invoke.WriteAction  
 
--   Microsoft.Unix.WSMan.Invoke.Privileged.ProbeAction  
+- Microsoft.Unix.WSMan.Invoke.Privileged.ProbeAction  
 
--   Microsoft.Unix.WSMan.Invoke.Privileged.WriteAction  
+- Microsoft.Unix.WSMan.Invoke.Privileged.WriteAction  
 
 The *ExecuteCommand* parameter passes the command\-line arguments to the console without starting a shell process.  
 
@@ -192,19 +195,20 @@ The *ExecuteShellCommand* parameter passes the command arguments to a shell proc
 
 The following examples show how to use the *ExecuteCommand* and *ExecuteShellCommand* parameters:  
 
--   To pass the command-line arguments to the console without starting a shell process:  
+- To pass the command-line arguments to the console without starting a shell process:  
 
     `<p:ExecuteCommand_INPUT xmlns:p="https://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> service syslog status </p:Command> <p:timeout>10</p:timeout> </p:ExecuteCommand_INPUT>`  
 
--   To pass the command-line arguments to a shell process that references an explicit shell:  
+- To pass the command-line arguments to a shell process that references an explicit shell:  
 
     `<p:ExecuteCommand_INPUT xmlns:p="https://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> /bin/sh ps -ef syslog | grep -v grep </p:Command> <p:timeout>10</p:timeout> </p:ExecuteCommand_INPUT>`  
 
--   To pass the command arguments to a shell process that uses the user's default shell:  
+- To pass the command arguments to a shell process that uses the user's default shell:  
 
     `<p:ExecuteShellCommand_INPUT xmlns:p="https://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> uptime |&nbsp; awk '{print $10}' |awk -F"," '{print $1}' </p:Command> <p:timeout>10</p:timeout> </p:ExecuteShellCommand_INPUT>`  
 
 ## Logging and Debugging
+
 This section describes how to enable logging and debug tools for troubleshooting issues with monitoring UNIX and Linux computers.
 
 ::: moniker range="sc-om-2019"
@@ -221,7 +225,8 @@ This section describes how to enable logging and debug tools for troubleshooting
 
 ::: moniker-end
 
-### Enable Operations Manager Module Logging  
+### Enable Operations Manager Module Logging
+
 The Operations Manager Agents for UNIX and Linux maintain several log files that can be useful when troubleshooting client issues. These log files are located on the managed UNIX or Linux computer. The logging level for the agent log files can be configured as needed. More verbose logging can be useful in diagnosing an issue. For normal operation, log levels shouldn't be set to a value more verbose than the default configurations (Intermediate) in order to prevent excessive log file growth. 
 
 > [!NOTE]  
@@ -231,9 +236,11 @@ The Operations Manager Agents for UNIX and Linux maintain several log files that
 > The logging level for the omiserver.log log file can't be changed from the default in this version of the Operations Manager Agents for UNIX and Linux.  
 
 1. Create a blank file named **EnableOpsmgrModuleLogging** in the Temp directory for the user account calling these modules by typing at a command-line or PowerShell prompt:
-    ```
+
+    ```powershell
     COPY /Y NUL %windir%\TEMP\EnableOpsMgrModuleLogging
     ```
+
     ```powershell
     New-Item "$env:windir\TEMP\EnableOpsMgrModuleLogging"
     ```
@@ -245,7 +252,8 @@ The Operations Manager Agents for UNIX and Linux maintain several log files that
 
 In some cases, it might be required to restart the HealthService to get the EnableOpsmgrModuleLogging logging to take effect.  
 
-## Enable Logging on the UNIX Agent  
+## Enable Logging on the UNIX Agent
+
 These logs will report the UNIX agent actions. If there's a problem with the data returned to Operations Manager, look in this log. You can set the amount of information logged with the scxadmin command. The syntax for this command is:  
 
 `scxadmin -log-set [all|cimom|provider] {verbose|intermediate|errors}`  
@@ -258,39 +266,41 @@ The following table lists the possible parameter values:
 |Intermediate|Log **Info**, **Warning**, and **Error** messages.|  
 |Verbose|Log **Info**, **Warning**, and **Error** messages with debug logging. Note that This level of logging is likely to cause rapid growth in the size of the log files. It's recommended that this option only be used for short periods of time to diagnose a specific issue.|  
 
-### Use DebugView to Troubleshoot Discovery Issues  
+### Use DebugView to Troubleshoot Discovery Issues
+
 DebugView is an alternative method to EnableOpsmgrModuleLogging for troubleshooting discovery issues.  
 
-1.  Download DebugView from: [https://go.microsoft.comfwlink/?Linkid=129486](/sysinternals/downloads/debugview).  
+1. Download DebugView from: [https://go.microsoft.comfwlink/?Linkid=129486](/sysinternals/downloads/debugview).  
 
-2.  Launch DebugView on the Management Server performing the discovery.  
+2. Launch DebugView on the Management Server performing the discovery.  
 
-3.  Start discovering the UNIX Agents. You should start seeing output in your DebugView windows.  
+3. Start discovering the UNIX Agents. You should start seeing output in your DebugView windows.  
 
-4.  DebugView will present a step-by-step readout of the discovery wizard process. This is often the fastest method of troubleshooting discovery issues.  
+4. DebugView will present a step-by-step readout of the discovery wizard process. This is often the fastest method of troubleshooting discovery issues.  
 
-### Enable Operations Manager Logging for Windows Remote Management  
+### Enable Operations Manager Logging for Windows Remote Management
+
 This verbose tracing method is used to see the Windows Remote Management (WinRM) queries used by Operations Manager to gather data from the agent. If you suspect there's a problem with the WinRM connection, this log provides detailed information that can help with troubleshooting.  
 
-1.  On the Management server that is monitoring the UNIX or Linux agent, open a command prompt.  
+1. On the Management server that is monitoring the UNIX or Linux agent, open a command prompt.  
 
-2.  Enter the following commands at the command prompt:  
+2. Enter the following commands at the command prompt:  
 
-    1.  `cd C:\Program Files\Microsoft System Center\Operations Manager\Tools`
+    1. `cd C:\Program Files\Microsoft System Center\Operations Manager\Tools`
 
-    2.  `StopTracing.cmd`
+    2. `StopTracing.cmd`
 
-    3.  `StartTracing.cmd VER`
+    3. `StartTracing.cmd VER`
 
-3.  Reproduce the failing issue in Operations Manager.  
+3. Reproduce the failing issue in Operations Manager.  
 
-4.  Enter the following commands at the command prompt:  
+4. Enter the following commands at the command prompt:  
 
-    1.  `StopTracing.cmd`
+    1. `StopTracing.cmd`
 
-    2.  `FormatTracing.cmd`
+    2. `FormatTracing.cmd`
 
-5.  Search for WS-Man in the TracingGuidsNative.log file.  
+5. Search for WS-Man in the TracingGuidsNative.log file.  
 
 > [!NOTE]  
 > WinRM is also known as WS-Management (WS-Man).  
@@ -299,12 +309,15 @@ This verbose tracing method is used to see the Windows Remote Management (WinRM)
 > The FormatTracing command opens a Windows Explorer window displaying the `C:\Windows\Logs\OpsMgrTrace` directory. The TracingGuidsNative.log file is in that directory.
 
 ## Manage UNIX and Linux Log Files
+
 The Operations Manager Agents for UNIX and Linux don't limit the size of the agent log files. In order to control the maximum size of the log files, implement a process to manage the log files. For example, the standard utility logrotate is available on many UNIX and Linux operating systems. The logrotate utility can be configured to control the log files used by the Operations Manager Agents for UNIX or Linux. After rotating or modifying the log files of the agent, the agent must be signaled that logs have rotated in order to resume logging. The scxadmin command can be used with the -log\-rotate parameter with the following syntax:  
 
 `scxadmin -log-rotate all`  
 
-### Example Logrotate configuration file  
-The following example demonstrates a configuration file to rotate the scx.log files and omiserver.log with the [logrotate](https://linux.die.net/man/8/logrotate) utility of Linux. Typically, logrotate will run as a scheduled job (with crond) and act on configuration files found in `/etc/logrotate.d`. To test and use this configuration file, modify the configuration to be appropriate for your environment, and link or save the file in `/etc/logrotate.d`.  
+### Example Logrotate configuration file
+
+The following example demonstrates a configuration file to rotate the scx.log files and omiserver.log with the [logrotate](https://linux.die.net/man/8/logrotate) utility of Linux. Typically, logrotate will run as a scheduled job (with crond) and act on configuration files found in `/etc/logrotate.d`. To test and use this configuration file, modify the configuration to be appropriate for your environment, and link or save the file in `/etc/logrotate.d`.
+  
 ```
 #opsmgr.lr  
 

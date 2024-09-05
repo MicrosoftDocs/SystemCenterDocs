@@ -1,22 +1,19 @@
 ---
 title: Integration Pack for System Center DPM in System Center - Orchestrator
 description: This article describes the System Center DPM integration pack provided by System Center - Orchestrator.
-ms.date: 03/04/2019
+ms.date: 05/16/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
+ms.custom: engagement-fy24
 ---
 
 # Integration pack for System Center - DPM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The integration pack for System Center - Data Protection Manager (DPM) is an add-in for System Center - Orchestrator. The pack enables you to automate the protection of physical and virtual server resources. You can use the activities in this integration pack to create runbooks that provide the following:
 
@@ -49,7 +46,6 @@ The DPM integration pack requires the following software to be installed and con
 
 ::: moniker range="<=sc-orch-2019"
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
-- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 ::: moniker-end
 

@@ -13,11 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Automate Microsoft Azure Pack operations with Service Management Automation
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 
 You can use Service Management Automation (SMA) runbooks to automate routine operations in your Microsoft Azure Pack for Windows Server environment. There are two distinct types of SMA runbooks:

@@ -5,7 +5,7 @@ description: This article explains about how to configure SLB VIPs through VMM s
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/12/2022
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,25 +14,17 @@ ms.custom: UpdateFrequency3
 ---
 #	Configure SLB VIPs through VMM service templates
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 ::: moniker range=">sc-vmm-2016"
-Software Defined Networking (SDN) can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 only supports deploying SLB Virtual IPs (VIPs) using PowerShell.
+Software Defined Networking (SDN) can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants.
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-System Center - Virtual Machine Manager (VMM) 1801 and later support configuration of SLB VIPs while deploying multi-tier application by using service templates and also support both public and internal load balancing.
 
-::: moniker-end
+::: moniker range=">=sc-vmm-2019"
 
-::: moniker range=">sc-vmm-1801"
-
-System Center - Virtual Machine Manager (VMM) supports configuration of SLB VIPs while deploying multi-tier application by using service templates and also supports both public and internal load balancing.
+System Center Virtual Machine Manager (VMM) supports configuration of SLB VIPs while deploying multi-tier application by using service templates and also supports both public and internal load balancing.
 
 ::: moniker-end
 
@@ -63,26 +55,27 @@ Ensure the following prerequisites are met:
 
      ![Screenshot of template properties.](media/slb-vip/slb-properites.png)
 
-   - In **Type**, specify a template type, select **Specific**. Select **Microsoft** for Manufacturer. Select **Microsoft network controller** for Model. Select **Next**.
+   - In **Type**, under **Specify a template type**, select **Specific**. Select **Microsoft** from the Manufacturer dropdown and **Microsoft Network Controller** from the Model dropdown.
+   - Select **Next**.
 
      ![Screenshot of template type.](media/slb-vip/template-type.png)
 
-   - In **Protocol**, specify protocol options. Select **Next**.
+   - In **Protocol**, specify protocol options. Select **OK**.
 
      ![Screenshot of protocol.](media/slb-vip/protocol-options.png)
 
-   - In **Load Balancing method**, select the method and select **Next**.
+   - In **Load Balancing method**, select the method and select **OK**.
 
      ![Screenshot of load balancing method.](media/slb-vip/load-balancing.png)
 
-   - In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, monitoring interval, timeout, and retries.
+   - In **Health Monitors**, you can optionally specify that a verification must run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, monitoring interval, timeout, and retries.
 
    > [!NOTE]
-   > The timeout should be less than the interval.
+   > The timeout must be less than the interval.
 
      ![Screenshot of add health monitor.](media/slb-vip/health-monitor.png)
 
-   - In **Summary**, confirm the Settings and select **Finish** to create the VIP template.
+   - In **Summary**, confirm the settings and select **Finish** to create the VIP template.
 
 3. Configure SLB VIP while deploying Service
    - If the service template isn't open, select **Library** > **Templates** > **Service Templates** and open it.
@@ -101,12 +94,12 @@ Ensure the following prerequisites are met:
 
    - Save the service template in **Service Template** > **Save and Validate**.
 
-**Example 1**: Configuring Service with ‘Public’ VM Network as front-end. Here the ‘Backend’ network can be One connected or network virtualized VM network.
+**Example 1**: Configuring Service with *Public* VM Network as front-end. Here the *Backend* network can be One connected or network virtualized VM network.
 
 ![Diagram of slb vip example 1.](media/slb-vip/example-1.png)
 
 
-**Example 2**: Configuring Service with front-end and back-end connected to network virtualized VM Network ‘HNV VM Network’. This scenario is used for internal load balancing.
+**Example 2**: Configuring Service with front-end and back-end connected to network virtualized VM Network *HNV VM Network*. This scenario is used for internal load balancing.
 
 
 ![Diagram of slb vip example 2.](media/slb-vip/example-2.png)
@@ -118,4 +111,4 @@ When the service is deployed, VMM automatically selects a VIP from the reserved 
 
 1.	After the service is deployed, select **Fabric** > **Networking** > **Load Balancers**.
 2.	Select **Show** > **Service** > **Load Balancer Information for Services** and expand the service to see which VIP is assigned.
-3.	If users use the DNS name to access the service, request the DNS administrator to manually create a DNS entry for the VIP. The entry should be the name that users will specify to connect to the service. For example, servicename.contosol.com.
+3.	If users use the DNS name to access the service, request the DNS administrator to manually create a DNS entry for the VIP. The entry must be the name that users will specify to connect to the service. For example, servicename.contosol.com.

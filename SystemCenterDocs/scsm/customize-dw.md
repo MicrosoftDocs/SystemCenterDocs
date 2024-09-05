@@ -17,11 +17,7 @@ ms.assetid: 26cc6924-b9c7-4c0c-b20e-0ab85d9c2140
 
 # Overview of customizing the Service Manager data warehouse
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 After the Service Manager data warehouse is deployed and you've viewed its reports, you can customize the information in the reports to better suit your organization. For example, you might want to recreate reports that you've used in the past with other information systems using Service Manager. Or, you might want to customize the reports for your internal business processes for incidents or change management.
 

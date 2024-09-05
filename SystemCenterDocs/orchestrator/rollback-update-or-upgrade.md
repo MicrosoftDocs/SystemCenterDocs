@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Rollback Update or Upgrade
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Rollback Update or Upgrade** activity cancels an in progress configuration change (update) or upgrade and returns the deployment to its state before the upgrade or configuration change was started. It's part of the **Azure Deployments** category activity.
 

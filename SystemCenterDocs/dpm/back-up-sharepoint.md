@@ -3,23 +3,17 @@ description: Use DPM to protect SharePoint farms, external SQL Server databases,
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/12/2023
+ms.date: 08/06/2024
 title: Back up SharePoint with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Back up SharePoint with DPM
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 You can deploy System Center Data Protection Manager (DPM) to protect SharePoint farms, external SQL Server databases, and folders that include farm customizations. This article describes the steps required to back up and recover SharePoint data. The following sections provide detailed information about configuring and restoring backup data for SharePoint:
 

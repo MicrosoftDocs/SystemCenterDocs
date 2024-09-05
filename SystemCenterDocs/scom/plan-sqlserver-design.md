@@ -20,7 +20,7 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration. In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.
 
-We don't recommend utilization of Operations Manager databases from an SQL Instance that has other application databases to avoid any potential issues with I/O and other hardware resource restrictions.
+We don't recommend utilization of Operations Manager databases from a SQL Instance that has other application databases to avoid any potential issues with I/O and other hardware resource restrictions.
 
 > [!IMPORTANT]
 > Operations Manager does not support Platform as a Service (PaaS) instances of SQL, including products such as Azure SQL Managed Instance or Amazon Relational Database Service (AWS RDS). Please use an instance of SQL Server installed on a Windows machine. The only exception to this is within [Azure Monitor SCOM Managed Instance](./operations-manager-managed-instance-overview.md), which utilizes Azure SQL MI, and is not reconfigurable.

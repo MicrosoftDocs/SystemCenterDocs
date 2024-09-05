@@ -17,13 +17,6 @@ manager: jsuri
 ---
 # Monitor WMI
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor WMI activity invokes a runbook when a WMI event is received as a result of the WMI event query that you specify. You can check for changes in devices that are attached to the server and invoke runbooks that take corrective action when errors occur.  
 

@@ -5,18 +5,14 @@ description: This article describes how to install the Operations Manager Gatewa
 author: sepaugh
 ms.author: lornesepaugh
 manager: amanan
-ms.date: 03/07/2024
-ms.custom: intro-installation, engagement-fy23
+ms.date: 07/22/2024
+ms.custom: intro-installation, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Install a gateway server
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-::: moniker-end
 
 Gateway servers are typically used to enable monitoring of client computers that are outside the Kerberos trust boundary of management groups. However, they can also be used within the same domain if there are needs to split up the environment due to network segmentation, or to have "far away" agents connect to the management group.
 
@@ -26,7 +22,7 @@ Before continuing, ensure that your server meets the minimum system requirements
 
 ::: moniker range="sc-om-2016"
 > [!NOTE]
-> If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system. This limitation doesn't apply to Operations Manager version 1801.
+> If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 ::: moniker-end
 
 ## Prerequisites
@@ -185,7 +181,7 @@ We're using the [Set-SCOMParentManagementServer](/powershell/module/operationsma
     $FailoverServer = Get-SCOMManagementServer -Name "MS02.Contoso.com","MS03.Contoso.com"
     Set-SCOMParentManagementServer -GatewayServer $GatewayServer -FailoverServer $FailoverServer
     ```
-    
+
     > [!NOTE]
     > You cannot set a failover server to be the same as the primary server without changing the primary at the same time, or first. If you want to change the primary and set it to a secondary, use the following commands:
     >

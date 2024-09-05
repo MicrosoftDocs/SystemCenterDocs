@@ -225,7 +225,7 @@ Before you upgrade, collect information about the VMM database:
 
 1. Take a backup of the highly available VMM database from the active node of the existing SQL cluster.
 2. Note the VMM role name to use when reinstalling the VMM server role. Uninstall VMM server from existing VMM cluster nodes with the retain database option.
-When uninstalling VMM server from the last node, you may get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
+When uninstalling VMM server from the last node, you can get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
 3. Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
 4. While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to the new SQL Cluster.
 
@@ -253,4 +253,4 @@ After the upgrade, reconnect VMM to Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.
+If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is to renew the PXE server certificate, and avoid certificate errors.

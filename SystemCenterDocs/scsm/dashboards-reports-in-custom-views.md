@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/26/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -17,17 +17,13 @@ ms.assetid: 5e98cc12-263e-440e-b641-1fdd435d4f45
 
 # Include dashboards and reports in custom views for the Service Manager Authoring Tool reports sample scenario
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 One of the benefits of using System Center - Service Manager with Microsoft SharePoint, and of including the new Microsoft Online Analytical Processing \(OLAP\) cubes in the Service Manager box, is that it's easy to create SharePoint dashboards using PerformancePoint Services in Microsoft SharePoint&nbsp;Server&nbsp;2010 or Microsoft Excel. You can then create a custom view in Service Manager to display these dashboards.
 
  Use the following procedures to create a custom view to display a SharePoint dashboard from your environment in the Service Manager console. Complete all of the following three procedures in the order that they appear.
 
-## To create the dashboard management pack
+## Create the dashboard management pack
 
 1. In the Service Manager console, select **Administration**.
 
@@ -53,7 +49,7 @@ One of the benefits of using System Center - Service Manager with Microsoft Shar
     Get-SCManagementPack -DisplayName Dashboards | Remove-SCManagementPack
     ```
 
-## To edit the dashboard management pack in Visual&nbsp;Studio
+## Edit the dashboard management pack in Visual&nbsp;Studio
 
 1. Start Microsoft Visual Studio.
 
@@ -237,7 +233,7 @@ One of the benefits of using System Center - Service Manager with Microsoft Shar
 
     Save the updated file.
 
-## To display the dashboard in a custom view
+## Display the dashboard in a custom view
 
 1. In the Service Manager Windows PowerShell session, run the following command to validate the IncidentDashboards management pack:
 

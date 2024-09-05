@@ -1,12 +1,12 @@
 ---
 title: Form control properties
 description: Provides a reference for form control properties in the Service Manager Authoring Tool.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -17,11 +17,7 @@ ms.assetid: 7d62ce9b-fd6d-4521-932d-f2ede5920955
 
 # Form control properties in the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The table in this article lists the properties of Service Manager form controls. This information can help you customize and create forms in the Service Manager Authoring Tool.  
 

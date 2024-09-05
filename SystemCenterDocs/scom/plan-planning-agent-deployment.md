@@ -14,11 +14,7 @@ ms.topic: article
 
 # Operations Manager agents
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like a SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows Operations Manager to monitor Windows, Linux, and UNIX operating systems and the components of an IT service installed on them like a website or an Active Directory domain controller.  
 

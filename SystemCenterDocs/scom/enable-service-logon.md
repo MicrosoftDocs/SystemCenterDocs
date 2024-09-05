@@ -21,7 +21,7 @@ System Center Operations Manager supports hardening of service accounts and does
 
 Earlier version of Operations Managers has *Allow log on locally* as the default log on type. Operations Manager uses *Service Log on* by default. This leads to the following changes:
 
--	Health service uses log on type **Service** by default. For Operations Manager 1807 and earlier versions, it was **Interactive**.
+-	Health service uses log on type **Service** by default. For Operations Manager 2016 version, it was **Interactive**.
 -	Operations Manager action accounts and service accounts now have **Log on as a Service** permission.
 -	Action accounts and Run As accounts must have **Log on as a Service** permission to execute MonitoringHost.exe. [Learn more](plan-security-accounts.md).
 

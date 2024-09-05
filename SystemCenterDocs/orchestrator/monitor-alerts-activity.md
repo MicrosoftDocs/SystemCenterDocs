@@ -1,8 +1,8 @@
 ---
 title: Monitor Alerts activity
 description: The Monitor Alerts activity launches a runbook when an IBM Tivoli Netcool/OMNIbus alert matches the specified criteria.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 07/12/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,12 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Monitor Alerts activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Monitor Alerts activity launches a runbook when an IBM Tivoli Netcool/OMNIbus alert matches the specified criteria. You can use the Monitor Alerts activity to launch a diagnostic and corrective runbook that responds to critical alerts in your network.
 
@@ -52,19 +46,17 @@ This activity publishes the following alerts:<br>Acknowledged<br>Agent<br>AlertC
 
 The following procedure describes the steps required to configure a Monitor Alerts activity.
 
-#### To configure the Monitor Alerts activity
+1. From the **Activities** pane, select and drag a **Monitor Alerts** activity to the active runbook.
 
-1.  From the **Activities** pane, select and drag a **Monitor Alerts** activity to the active runbook.
+2. Double-click the **Monitor Alerts** activity icon. The **Properties** dialog opens.
 
-2.  Double-click the **Monitor Alerts** activity icon. The **Properties** dialog opens.
+3. Configure the settings in the **Details** tab as follows:
 
-3.  Configure the settings in the **Details** tab as follows:
-
-    1.  In the **ObjectServer** section, select the ellipsis button **(...)**, select the IBM Tivoli Netcool/OMNIbus server **Connection** that you want to use for this activity, and select **OK**.
-    2.  In the **Triggers** section, select the type(s) of alerts, **New** and/or **Updated** that are applicable to this runbook. Each alert of the specified trigger type is compared to the values of the filter(s) to determine if they meet the criteria before triggering the runbook.
-    3.  In the **Filters** section, enter a filter. Select **Add**. In the **Name** box, select the down arrow and select a property from the list.
-    4.  In the **Relation** box, select the down arrow and select a filter type.
-    5.  In the **Value** box, enter the value you want to use. Select **OK** to save the filter settings.
-    6.  Add additional filters as needed, and select **Finish**.
+    1. In the **ObjectServer** section, select the ellipsis button **(...)**, select the IBM Tivoli Netcool/OMNIbus server **Connection** that you want to use for this activity, and select **OK**.
+    2. In the **Triggers** section, select the type(s) of alerts, **New** and/or **Updated** that are applicable to this runbook. Each alert of the specified trigger type is compared to the values of the filter(s) to determine if they meet the criteria before triggering the runbook.
+    3. In the **Filters** section, enter a filter. Select **Add**. In the **Name** box, select the down arrow and select a property from the list.
+    4. In the **Relation** box, select the down arrow and select a filter type.
+    5. In the **Value** box, enter the value you want to use. Select **OK** to save the filter settings.
+    6. Add additional filters as needed, and select **Finish**.
 
     You can also use the published data to automatically populate the value of the property from the data output by a previous activity in the workflow. <br>For more information about using filters, see Filter Behavior.

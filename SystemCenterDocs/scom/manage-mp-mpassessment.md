@@ -14,11 +14,7 @@ ms.topic: article
 
 # Management pack assessment
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="<=sc-om-2016 <sc-om-2019"
 
@@ -169,7 +165,7 @@ The following workloads are supported for the operating systems listed below.
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 ### Windows Server 2016
 
@@ -253,7 +249,7 @@ The following workloads are supported for the operating systems listed below.
 ::: moniker range="=sc-om-2019"
 
 ## Support for Linux and Unix platforms supported for application servers workload
-- CentOS6 x64, CentOS7 x64
+
 - Oracle6 x64, Oracle7 x64
 - Sles12 x64
 - Rhel7 x64

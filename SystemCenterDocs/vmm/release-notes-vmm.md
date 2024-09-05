@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Virtual M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/19/2024
+ms.date: 06/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -30,16 +30,7 @@ This article lists the release notes for System Center 2019 - Virtual Machine Ma
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-This article lists the release notes for System Center 1807 - Virtual Machine Manager (VMM).
-
-[!INCLUDE [release-notes-vmm-1807.md](../includes/release-notes-vmm-1807.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
@@ -47,14 +38,7 @@ This article lists the release notes for System Center 2016 - Virtual Machine Ma
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-[!INCLUDE [release-notes-vmm-1801.md](../includes/release-notes-vmm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 

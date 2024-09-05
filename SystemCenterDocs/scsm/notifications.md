@@ -7,19 +7,15 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 06/08/2023
+ms.date: 05/20/2024
 ms.subservice: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3,  engagement-fy24
 ---
 
 # Configure notifications in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Using Service Manager notifications, you can generate emails for almost any kind of change. For example, you can configure notifications to be sent to an analyst when changes occur to a work item or configuration item that pertains to email problems.
 
@@ -73,7 +69,7 @@ You can use the following procedures to configure notification channels and vali
 
 ## Send notifications using external email authentication
 
-Azure Active Directory (Azure AD) implements OAuth protocol for secure authentication of its users and applications. Here's how the connection establishes when the activity runs:
+Microsoft Entra ID implements OAuth protocol for secure authentication of its users and applications. Here's how the connection establishes when the activity runs:
 
 1. Obtains user credentials from IP configuration.
 
@@ -87,9 +83,9 @@ Azure Active Directory (Azure AD) implements OAuth protocol for secure authentic
 
 To create an Azure AD app, do the following:
 
-1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) and search for [Azure Active Directory admin center](https://aad.portal.azure.com/).
+1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) and search for [Microsoft Entra ID admin center](https://aad.portal.azure.com/).
 
-2. On the **Azure Active Directory admin center** dashboard, select **Azure Active Directory**.
+2. On the **Microsoft Entra ID admin center** dashboard, select **Microsoft Entra ID**.
 
 3. On the **Overview** page, under **Manage** > **App registrations**, select **New registration**.
      

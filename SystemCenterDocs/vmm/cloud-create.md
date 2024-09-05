@@ -5,7 +5,7 @@ description: This article provides instructions for creating a private cloud in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/24/2023
+ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,15 +13,9 @@ ms.custom: engagement-fy24
 ---
 
 
-# Scenario: Create a private cloud
+# Create a VMM private cloud
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
-
-This article provides instructions for creating a private cloud in System Center - Virtual Machine Manager (VMM).
+This article provides instructions for creating a private cloud in System Center Virtual Machine Manager (VMM).
 
 You can create a private cloud from a host group or from a VMware resource pool. Host groups can contain a single host type or a mix of Hyper-V and VMware ESX hosts.
 
@@ -70,7 +64,7 @@ You can create a private cloud from a host group or from a VMware resource pool.
     > Only storage classifications for storage pools that are assigned to the selected host groups appear in the list.
 10. In **Library** > **Stored VM path**, browse and select the library share you want to use for the self-service users to store VMs. Select **OK**.
 11. In **Read-only library shares** >  **Add**, select one or more library shares where administrators can provide read-only resources to cloud users. Select **OK** and then select **Next**.
-12. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** check boxes and set quotas for the following resources:
+12. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** checkboxes and set quotas for the following resources:
 
     **Quota Type** | **Description**
     --- |---
@@ -97,7 +91,7 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 2. In **Storage QoS Policies**, select the policies that you want to assign to this cloud.
 
-3. Proceed with rest of the steps and complete the wizard.
+3. Proceed with the rest of the steps and complete the wizard.
 
 ::: moniker-end
 
@@ -112,12 +106,12 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 7. In **Storage**, select **Next**. VMM doesn't manage or assign storage classifications assigned to ESX hosts.
 8. In **Library** > **Stored VM path**, browse and select the library share you want to use for self-service users to store VMs, and select **OK**.
 9. In **Read-only library shares** >  **Add**, select one or more library shares where administrators can provide read-only resources to cloud users. Select **OK** and then select **Next**.
-10. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** check boxes and set quotas for the following resources:
+10. In **Capacity**, set capacity limits for the private cloud, and then select **Next**. You can either accept the default values, or clear the **Use Maximum** checkboxes and set quotas for the following resources:
 
     **Quota Type** | **Description**
     --- |---
-    **Virtual CPUs**  | Sets a limit on processing capacity within the private cloud that is equivalent to the capacity that can be provided by a specified number of CPUs. Applied against running virtual machines. Setting a CPU quota does not guarantee contiguous capacity; it only guarantees total CPU capacity available among hosts in the private cloud.
-    **Memory** | Sets a quota on memory (in gigabytes) that is available for virtual machines that are deployed on the private cloud. Applied against running virtual machines only. Setting a memory quota does not guarantee contiguous capacity. For example, the private cloud might have 2 GB of memory available on one host and 2 GB of memory on the other.
+    **Virtual CPUs**  | Sets a limit on processing capacity within the private cloud that is equivalent to the capacity that can be provided by a specified number of CPUs. Applied against running virtual machines. Setting a CPU quota doesn't guarantee contiguous capacity; it only guarantees total CPU capacity available among hosts in the private cloud.
+    **Memory** | Sets a quota on memory (in gigabytes) that is available for virtual machines that are deployed on the private cloud. Applied against running virtual machines only. Setting a memory quota doesn't guarantee contiguous capacity. For example, the private cloud might have 2 GB of memory available on one host and 2 GB of memory on the other.
     **Storage**  | Sets a quota on storage capacity (in gigabytes) that is available to virtual machines that are deployed on the private cloud. For dynamic virtual hard disks, quota calculations are based on maximum size.
     **Custom quota (points)** | Sets a quota on virtual machines that are deployed on the private cloud based on total quota points that are assigned to the virtual machines through their virtual machine templates. Quota points are an arbitrary value that can be assigned to a virtual machine template based on the anticipated size of the virtual machines. Custom quotas are provided for backward compatibility with self-service user roles that were created in VMM.
     **Virtual machines** | Limits the total number of virtual machines that can be deployed on the private cloud.
@@ -135,13 +129,9 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-System Center - Virtual Machine Manager (SCVMM) 1801 and later support storage QoS policies on a private cloud.
 
-::: moniker-end
-
-::: moniker range=">sc-vmm-1801"
+::: moniker range=">=sc-vmm-2019"
 
 System Center - Virtual Machine Manager (SCVMM) supports storage QoS policies on a private cloud.
 
@@ -167,7 +157,7 @@ The fabric admin can now offer storage QoS policies while authoring the VMM priv
 4. Review the summary and select **Finish**.
 
 > [!NOTE]
-> This list contains only those policies that are available in scope of all the clusters selected in the Resources section of the cloud wizard. This helps the self-service user to choose between the available plans, even after the VM is placed.
+> This list contains only those policies that are available in scope of all the clusters selected in the Resources section of the cloud wizard. This helps the self-service user to choose between the available plans even after the VM is placed.
 
  
 **On Upgrade**

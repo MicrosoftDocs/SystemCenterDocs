@@ -1,12 +1,12 @@
 ---
 title: Enable Service Manager reporting
 description: Use the Data Warehouse Registration wizard to enable reporting.
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2023
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -17,11 +17,7 @@ ms.assetid: d5795bd5-7c01-47b9-909f-8147362b9cf4
 
 # Register with the Service Manager data warehouse to enable reporting
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 After you 've deployed the Service Manager management servers and data warehouse management servers, for reporting to function you must run the Data Warehouse Registration Wizard. This wizard registers the Service Manager management group with the data warehouse management group. It also deploys management packs from the Service Manager management server to the data warehouse management server.  
 
@@ -31,9 +27,7 @@ After you 've deployed the Service Manager management servers and data warehouse
 
 ## Run the Data Warehouse Registration wizard
 
-You can use the following steps in System Center - Service Manager to use the Data Warehouse Registration Wizard to register with the Service Manager data warehouse.  
-
-### To run the Data Warehouse Registration wizard  
+You can use the following steps in System Center - Service Manager to use the Data Warehouse Registration Wizard to register with the Service Manager data warehouse.
 
 1. By using an account that is a member of the Service Manager and data warehouse management administrators group, sign in to the computer that hosts the Service Manager console.  
 
@@ -50,7 +44,7 @@ You can use the following steps in System Center - Service Manager to use the Da
 7. On the **Credentials** page, you can accept the default entry in the **Run as account** list, and select **Next**, or you can enter credentials from a user or group of your own choosing.  
 
    > [!IMPORTANT]  
-   >  The account that you specify will be assigned administrative credentials on the Service Manager management server, and it will be granted Read permission on the Service Manager database. You can specify different credentials from other Service Manager management groups when you're registering with the data warehouse.  
+   > The account that you specify will be assigned administrative credentials on the Service Manager management server, and it will be granted Read permission on the Service Manager database. You can specify different credentials from other Service Manager management groups when you're registering with the data warehouse.  
 
 8. On the **Summary** page, select **Create**.  
 
@@ -62,12 +56,11 @@ You can use the following steps in System Center - Service Manager to use the Da
 
     ![Screenshot of Windows PowerShell.](./media/register-dw/pssymbol.png) You can use a Windows&nbsp;PowerShell command to complete this task. For information about how to use Windows&nbsp;PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](/previous-versions/system-center/service-manager-2010-sp1/ff951619(v=technet.10)).
 
-
 ## Determine when Data Warehouse registration is complete
 
 Several management packs are imported during the data warehouse registration process in Service Manager. Data warehouse registration is complete when all of the management packs have been imported. You'll have to determine when that process is complete by using the following procedure.  
 
-### To determine when management pack deployment has completed  
+To determine when management pack deployment has completed, do the following:
 
 1. Start the Service Manager console.  
 
@@ -83,26 +76,26 @@ Several management packs are imported during the data warehouse registration pro
 
 7. Use the following steps to periodically refresh the **Data Warehouse Job** pane to monitor the progress of the registration process:  
 
-   1.  In the **Tasks** pane, under **Data Warehouse Jobs**, select **Refresh**.  
+   1. In the **Tasks** pane, under **Data Warehouse Jobs**, select **Refresh**.  
 
-   2.  In the **Data Warehouse Jobs** pane, select **MPSyncJob**.  
+   2. In the **Data Warehouse Jobs** pane, select **MPSyncJob**.  
 
-   3.  In the **MPSyncJob** details pane, in the **Synchronization Job Details** list, scroll to the right to view the **Status** column, and then select **Status** to alphabetically sort the status column.  
+   3. In the **MPSyncJob** details pane, in the **Synchronization Job Details** list, scroll to the right to view the **Status** column, and then select **Status** to alphabetically sort the status column.  
 
 8. After the management packs have been deployed \(as determined in step 6\), ensure that the following five data warehouse jobs appear in the **Data Warehouse Jobs** pane:  
 
-   -   Extract\_\<Service Manager management group name\>  
+   - Extract\_\<Service Manager management group name\>  
 
-   -   Extract\_\<data warehouse management group name\>  
+   - Extract\_\<data warehouse management group name\>  
 
-   -   Load.Common  
+   - Load.Common  
 
-   -   Transform.Common  
+   - Transform.Common  
 
-   -   MPSyncJob  
+   - MPSyncJob  
 
    > [!NOTE]
-   >  If these five data warehouse jobs don't appear, complete the following steps:  
+   > If these five data warehouse jobs don't appear, complete the following steps:  
    >
    > a. In the **Data Warehouse Jobs** pane, select **MPSyncJob**.  
    > b. In the **Tasks** pane, under **Synchronization**, and select **Resume**.  

@@ -5,18 +5,15 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/05/2023
+ms.date: 05/15/2024
 ms.subservice: service-manager
 ms.topic: article
+ms.custom: engagement-fy24
 ---
 
 # Author with System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Authoring in Service Manager (SM) refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
 
@@ -136,12 +133,7 @@ The SCSM\<version\>\_AuthoringTool\_RTM.exe program file contains the Service Ma
 
 If Windows Error Reporting is enabled on the computer that is running the Authoring Tool, errors are reported automatically.  
 
-::: moniker range="sc-sm-1801"
 
-> [!NOTE]
-> Don't install the Service Manager Authoring tool on the same computer that has the Service Manager Web portal installed.
-
-::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
@@ -160,8 +152,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 2. Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
 
      - [Download 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
-     - [Download 1801 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
-
+     
 ::: moniker-end
 
 ::: moniker range="sc-sm-2022"

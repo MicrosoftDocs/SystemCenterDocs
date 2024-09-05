@@ -17,11 +17,6 @@ robots: noindex
 ---
 # Reset User Password
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Reset User Password activity in a runbook to reset the user password in Microsoft Active Directory.
 

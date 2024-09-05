@@ -1,8 +1,8 @@
 ---
 title: Delete Alert Activity
 description: The Delete Alert activity deletes an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 05/16/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -18,11 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Delete Alert Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete Alert activity deletes an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This can be used to delete an alert that has been replaced by a newer one.
 

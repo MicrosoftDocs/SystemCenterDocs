@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 07/20/2023
+ms.date: 05/20/2024
 ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
@@ -27,31 +27,6 @@ This article details the new features supported in System Center 2019 - Orchestr
 
 ::: moniker-end
 
-::: moniker range="sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-No new features are introduced with System Center 1807 - Orchestrator.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1801"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-This article details the new features supported in System Center 1801 - Orchestrator.
-
-::: moniker-end
-
-::: moniker range="sc-orch-1801"
-
-## Support for TLS 1.2
-
-This release of System Center Orchestrator (SCO) contains all the bug fixes shipped until the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
-
-For more information about how to set up, configure, and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
-
-::: moniker-end
 
 ::: moniker range="sc-orch-2019"
 
@@ -77,11 +52,6 @@ This release of System Center Orchestrator (SCO) contains all the bug fixes ship
 
 For more information about how to set up, configure, and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
-> [!NOTE]
-> No features were introduced in System Center Orchestrator 1807.
-
-> [!NOTE]
-> The following features/feature updates were introduced in System Center Orchestrator 1801.
 
 ## Support for TLS 1.2
 
@@ -96,6 +66,14 @@ For more information about how to set up, configure, and run your environment to
 ## New features in Orchestrator 2022
 
 See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2022.
+
+### Release of SCO 2022 VMware vSphere Integration pack
+
+SCO 2022 VMware vSphere Integration packs is available for download [here](https://www.microsoft.com/download/details.aspx?id=106163).
+
+### Release of SCO 2022 Exchange User Integration pack v10.22.2.19
+
+SCO 2022 Exchange User Integration pack now supports Private clouds. Download [here](https://www.microsoft.com/download/details.aspx?id=104336).
 
 ### Release of SCO 2022 Exchange Admin Integration pack v10.22.2.5
 

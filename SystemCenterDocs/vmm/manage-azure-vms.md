@@ -5,7 +5,7 @@ description: This article provides information about the basic actions you can d
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/15/2020
+ms.date: 09/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,24 +14,20 @@ ms.custom: UpdateFrequency3
 
 # Manage Azure VMs
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
+This article provides information about the *Manage Azure Virtual Machines (VMs)* feature in System Center Virtual Machine Manager (VMM).
 
-This article provides information about the *Manage Azure Virtual Machines (VMs)* feature in System Center - Virtual Machine Manager (VMM).
-
-This feature allows you to perform basic actions on Azure instances attached to an Azure profile, created for Azure VM management.
+This feature allows you to perform basic actions on Azure instances attached to an Azure profile created for Azure VM management.
 
 >[!NOTE]
-> To perform these actions, you must create [Azure profile](azure-subscription.md) with **Profile Usage** selected as **Azure VM Management**. Once an Azure profile for Azure VM Management is created, the VMs deployed on Azure will be accessible on the **VMs and Services** page of VMM console and will be listed under **Azure Subscriptions**.
+> To perform these actions, you must create an [Azure profile](azure-subscription.md) with **Profile Usage** selected as **Azure VM Management**. Once an Azure profile for Azure VM Management is created, the VMs deployed on Azure will be accessible on the **VMs and Services** page of VMM console and will be listed under **Azure Subscriptions**.
 
 You can perform the following actions on Azure instances, without leaving the VMM console.
 
-- Add and remove one or more Azure subscriptions by using the VMM console.
+- Add and remove one or more Azure subscriptions using the VMM console.
 - See a list view with details and status of all role instances in all deployments in that subscription.
-- Manually refresh the list of instances.
+- Refresh the list of instances manually
 - Perform the following basic actions on the instances:
     - Start
     - Stop

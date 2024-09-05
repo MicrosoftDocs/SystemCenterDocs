@@ -1,7 +1,7 @@
 ---
 title: Get VM Properties Activity
 description: The Get VM Properties activity is used in a runbook to retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,17 +12,10 @@ ms.assetid: c10df30c-2768-4407-9599-77eb0e1c7d42
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/12/2024
 ---
 
 # Get VM Properties Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get VM Properties activity is used in a runbook to retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory. This, for example, enables the runbook to retrieve the information of the virtual machine and populate it into a CMDB.
 
@@ -37,6 +30,7 @@ The activity publishes all the data from the required and optional properties in
 | VM Path | The path of the virtual machine in the vSphere hierarchy. | String   | Yes   |
 
 ## Get VM Properties Activity Optional Properties
+
 No optional properties are provided for this activity.
 
 ## Get VM Properties Activity Published Data
@@ -54,16 +48,14 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Get VM Properties activity.
 
-### To configure the Get VM Properties Activity
+1. From the **Activities** pane, drag a **Get VM Properties** activity to the active runbook.
 
-1.  From the **Activities** pane, drag a **Get VM Properties** activity to the active runbook.
+2. Double-click the **Get VM Properties** activity icon. The **Properties** dialog opens.
 
-2.  Double-click the **Get VM Properties** activity icon. The **Properties** dialog opens.
+3. Configure the settings in the **Properties** tab as follows:
 
-3.  Configure the settings in the **Properties** tab as follows:
-
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

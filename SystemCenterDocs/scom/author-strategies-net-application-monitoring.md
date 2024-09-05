@@ -14,11 +14,6 @@ ms.topic: article
 
 # Authoring strategies for .NET application monitoring
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Here are some scenarios and settings to change during authoring that can help you receive the monitoring experience and data that is most helpful for you.
 

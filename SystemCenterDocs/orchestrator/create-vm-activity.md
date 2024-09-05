@@ -1,7 +1,7 @@
 ---
 title: Create VM Activity
 description: The Create VM activity is added to a runbook to create a new virtual machine.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,16 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Create VM Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create VM activity is added to a runbook to create a new virtual machine. The runbook can be used to create virtual machines on demand based on self-service provisioning processes.
 
@@ -74,8 +67,6 @@ The activity publishes all the data from the required and optional properties in
 ## Configuring the Create VM Activity
 
 The following procedure describes the steps required to configure a Create VM activity.
-
-#### To configure the Create VM Activity
 
 1.  From the **Activities** pane, drag a **Create VM** activity to the active runbook.
 

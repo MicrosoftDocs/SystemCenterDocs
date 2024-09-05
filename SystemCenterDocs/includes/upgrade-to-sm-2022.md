@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/25/2022
+ms.date: 08/06/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -16,23 +16,24 @@ ms.assetid: 21baa50d-4f34-489e-b3ce-f44e1b3a83aa
 ---
 
 ## Upgrade to System Center 2022 - Service Manager
+
 The following sections provide information about how to upgrade to System Center 2022 - Service Manager (SM).  
 
 > [!WARNING]  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
->   
-> 1.  Orchestrator  
-> 2.  Service Manager  
-> 3.  Data Protection Manager
-> 4.  Operations Manager  
-> 5.  Configuration Manager  
-> 6.  Virtual Machine Manager  
-> 7.  App Controller  
+>
+> 1. Orchestrator  
+> 2. Service Manager  
+> 3. Data Protection Manager
+> 4. Operations Manager  
+> 5. Configuration Manager  
+> 6. Virtual Machine Manager  
+> 7. App Controller  
 
  You can only upgrade to System Center 2022 from System Center 2019.
 
 > [!IMPORTANT]  
->  It's assumed in this guide that you're performing an *upgrade* to an existing System Center version. For information about installing System Center 2022 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](../scsm/deploy-sm.md).  
+> It's assumed in this guide that you're performing an *upgrade* to an existing System Center version. For information about installing System Center 2022 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](../scsm/deploy-sm.md).  
 
 ## Plan the upgrade to System Center 2022 - Service Manager
 
@@ -46,8 +47,8 @@ Upgrading to Service Manager 2022 requires preparation. We recommend that you in
 
 The release of System Center 2019 - Service Manager was available in two different versions:  
 
--   Evaluation version \(180\-day time\-out\)
--   Select license version  
+- Evaluation version \(180\-day time\-out\)
+- Select license version  
 
 The following upgrade paths are supported to Service Manager 2022.  
 
@@ -57,14 +58,13 @@ The following upgrade paths are supported to Service Manager 2022.
 |System Center 2019 - Service Manager Select|System Center 2022 - Service Manager Select|Licensed|  
 
 > [!NOTE]  
->  Upgrading from an evaluation version of Service Manager to an evaluation version of Service Manager 2022 *doesn't* extend the 180 days evaluation period.  
+> Upgrading from an evaluation version of Service Manager to an evaluation version of Service Manager 2022 *doesn't* extend the 180 days evaluation period.  
 
 ### Installation location  
 
 The default folder for installing Service Manager is \\Program Files\\Microsoft System Center\\Service&nbsp;Manager. However, when you perform the upgrade to Service Manager, the software is installed in the folder that Service Manager previously used. If Service Manager 2016/1801 was previously upgraded, then the following folder could be used:  
 
 \\Program Files\\Microsoft System Center\\Service&nbsp;Manager&nbsp;  
-
 
 ### Hardware requirements for System Center 2022 - Service Manager  
 
@@ -78,9 +78,9 @@ All software requirements for System Center 2022- Service Manager are fully docu
 
 **Before Upgrade**  
 
-**Description:** A problem with the upgrade process causes MPSync job to fail after the upgrade is complete. To prevent this problem (before you upgrade)[#back-up-service-manager-before-you-upgrade], you must run the SQL script mentioned below on the DWRepository database to get the actual SQL scripts that drop and add a constraint on the primary key in fact tables in the DWRepository database to correct the problem. Additionally, transform and load jobs might also fail. This error can occur because of erroneous database grooming.  
+**Description:** A problem with the upgrade process causes MPSync job to fail after the upgrade is complete. To prevent this problem [before you upgrade](#back-up-service-manager-before-you-upgrade), you must run the SQL script mentioned below on the DWRepository database to get the actual SQL scripts that drop and add a constraint on the primary key in fact tables in the DWRepository database to correct the problem. Additionally, transform and load jobs might also fail. This error can occur because of erroneous database grooming.  
 
-```  
+```sql
 ;WITH FactName  
 AS (  
        select w.WarehouseEntityName from etl.WarehouseEntity w  
@@ -127,7 +127,7 @@ FROM    FactPKListStr f
 
 ```  
 
-**Workaround 1:** If you've already upgraded and you don't have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the (Before Upgrade)[#back-up-service-manager-before-you-upgrade] section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
+**Workaround 1:** If you've already upgraded and you don't have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the [Before Upgrade](#back-up-service-manager-before-you-upgrade) section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
 
 **Workaround 2:** If you've upgraded and you've problems with transform or load job failures, then determine if the SystemDerivedMp.Microsoft.SystemCenter.Datawarehouse.Base management pack exists in the DWStagingAndConfig database by running the following query.  
 
@@ -137,13 +137,13 @@ select * from ManagementPack where mpname like '%SystemDerivedMp.Microsoft.Syste
 
 If the management pack doesn't exist, you need to restore your database to a state prior to upgrade. To restore your database, perform the following steps.  
 
-1.  Perform disaster recovery steps for the database backups.  
+1. Perform disaster recovery steps for the database backups.  
 
-2.  Disable the MPSyncJob schedule.  
+2. Disable the MPSyncJob schedule.  
 
-3.  Restore all the missing primary keys in the DWRepository manually. You can drop and recreate the primary key using the SQL script from the Before Upgrade section.  
+3. Restore all the missing primary keys in the DWRepository manually. You can drop and recreate the primary key using the SQL script from the Before Upgrade section.  
 
-4.  Restart the failed base management pack deployment using the Service Manager console.  
+4. Restart the failed base management pack deployment using the Service Manager console.  
 
 ### Testing the upgrade in a lab environment  
 
@@ -151,78 +151,73 @@ We recommend that you test the upgrade to System Center 2022 - Service Manager i
 
 ### Upgrade order and timing  
 
-The order of your upgrades is important. Perform the upgrade steps in the following order:  
+The order of your upgrades is important. Perform the upgrade steps in the following order:
 
-1.  Back up your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md).  
+1. Back up your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md).
 
-2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you won't be able to start them again until after you've completed the upgrade.  
+2. Start with the data warehouse management server.  
 
-3.  After the upgrade to the data warehouse management server is complete, upgrade the initial Service Manager management server. If you created more than one Service Manager management server, the initial Service Manager management server is the first one that you created.  
+3. After the upgrade to the data warehouse management server is complete, upgrade the initial (primary) Service Manager management server. If you created more than one Service Manager management server, the initial Service Manager management server is the first one that you created.
+
+4. Then upgrade all Secondary management servers, Self-Service Portals, and Service Manager consoles.  
 
 After the installation, do the following:
 
-4. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the following commands:
-    ```
-    $DW ='DWMS Servername'
+1. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the following commands:
 
-    Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
-    ```
+     ```powershell
+     $DW ='DWMS Servername' 
+     Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name} 
+     ```
 
-5. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
-    ```
-    $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
+2. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges: 
 
-    [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices")
-    $Server = New-Object Microsoft.AnalysisServices.Server
-    $Server.Connect($SSAS_ServerName)
-    $Databases = $Server.Databases
-    $DWASDB = $Databases["DWASDataBase"]
+     ```powershell
+     $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name 
 
-    #update DWDatamart dsv. Comment the below 3 commands if DWdatamart dsv is not present 
+     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices") 
+     $Server = New-Object Microsoft.AnalysisServices.Server 
+     $Server.Connect($SSAS_ServerName) 
+     $Databases = $Server.Databases 
+     $DWASDB = $Databases["DWASDataBase"] 
 
-    $DWASDB.DataSourceViews["DwDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal] 
+     #update DWDatamart dsv. Comment the below 3 commands if DWdatamart dsv is not present  
 
-    $DWASDB.DataSourceViews["DwDataMart"].Schema.Tables["LogicalDiskDim"].Columns["Size"].DataType  =  [decimal] 
+     $DWASDB.DataSourceViews["DwDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal]  
 
-    $DWASDB.DataSourceViews["DwDataMart"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull) 
+     $DWASDB.DataSourceViews["DwDataMart"].Schema.Tables["LogicalDiskDim"].Columns["Size"].DataType  =  [decimal]  
 
-    #update CMDatamart dsv.Comment the below 2 commands if cmdatamart dsv is not present 
+     $DWASDB.DataSourceViews["DwDataMart"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull)  
 
-    $DWASDB.DataSourceViews["CMDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal] 
+     #update CMDatamart dsv.Comment the below 2 commands if cmdatamart dsv is not present  
 
-    $DWASDB.DataSourceViews["CMDataMart"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull) 
+     $DWASDB.DataSourceViews["CMDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal]  
 
-    #update OperatingsystemDim
-    $DWASDB.Dimensions["OperatingsystemDim"].Attributes["PhysicalMemory"].KeyColumns[0].DataType =  [System.Data.OleDb.OleDbType]::Double 
+     $DWASDB.DataSourceViews["CMDataMart"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull)  
 
-    $DWASDB.Dimensions["OperatingsystemDim"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull + [Microsoft.AnalysisServices.UpdateOptions]::AlterDependents)
-    #update LogicalDiskDim 
+     #update OperatingsystemDim 
 
-    $DWASDB.Dimensions["LogicalDiskDim"].Attributes["Size"].KeyColumns[0].DataType =  [System.Data.OleDb.OleDbType]::Double 
+     $DWASDB.Dimensions["OperatingsystemDim"].Attributes["PhysicalMemory"].KeyColumns[0].DataType =  [System.Data.OleDb.OleDbType]::Double  
 
-    $DWASDB.Dimensions["LogicalDiskDim"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull + [Microsoft.AnalysisServices.UpdateOptions]::AlterDependents) 
+     $DWASDB.Dimensions["OperatingsystemDim"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull + [Microsoft.AnalysisServices.UpdateOptions]::AlterDependents) 
 
-    ```
+     #update LogicalDiskDim  
 
-6. Enable the job schedules by running the following commands:
+     $DWASDB.Dimensions["LogicalDiskDim"].Attributes["Size"].KeyColumns[0].DataType =  [System.Data.OleDb.OleDbType]::Double  
 
-    ```
-    $DW ='DWMS Servername'
+     $DWASDB.Dimensions["LogicalDiskDim"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull + [Microsoft.AnalysisServices.UpdateOptions]::AlterDependents)  
 
-    Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}
-    ```
-7. Restart the Data Warehouse management server.
+3. Enable the job schedules by running the following commands: 
 
-8.  Upgrade the Service Manager consoles and any additional Service Manager management servers.  
+     ```powershell
+     $DW ='DWMS Servername' 
 
-9.  Restart the data warehouse jobs.  
+     Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name} 
+     ```
 
-10.  Deploy the new Self-Service Portal.  
+4. Restart the Data Warehouse management server.
 
-11. Apply the [System Center 2022 Service Manager Hotfix](https://support.microsoft.com/topic/hotfix-for-system-center-2022-service-manager-june-2023-kb5021792-8f17ff60-eafc-4c43-8399-85beebc1065f) to the Primary management server, Secondary management server(s), Self-Service Portal(s), and all Analyst consoles.
-
-The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must update the Service Manager management server, and also deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
-
+5. Apply the [Update Rollup 2 for System Center 2022 Service Manager](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-service-manager-631042ca-f36d-4716-898c-6a4d4856f353) to the Data Warehouse management server, Primary management server, Secondary management server(s), Self-Service Portal(s), and all Analyst consoles.
 
 ### Database impacts  
 
@@ -239,3 +234,17 @@ If you've installed a data warehouse management server in your environment, as p
 ### Encryption keys  
 
 When you've finished running Setup to either install or upgrade to System Center 2022 - Service Manager, you're prompted to open the Encryption Backup or Restore Wizard. If you've previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  
+
+## Known issue
+
+### After a successful Data Warehouse upgrade, the *MPSyncJob* fails
+
+**Description**:
+
+After a successful Data Warehouse upgrade, the *MPSyncJob* fails due to a deployment failure in the management pack **Microsoft System Center Configuration Manager Data Warehouse Library**. The **OperationsManager** event log shows the following error:
+- Incorrect syntax near the keyword `IF`
+- Incorrect syntax near `END`
+
+**Workaround**:
+
+Run the script documented [here](https://raw.githubusercontent.com/microsoft/CSS-SystemCenter-ServiceManager/5dfede20beabdead8dc33f39e97f6cf71a09caf8/Misc/FixForBug1040139.sql).

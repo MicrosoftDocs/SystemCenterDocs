@@ -5,7 +5,7 @@ description: This article describes how to create logical switches in the VMM fa
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  04/01/2024
+ms.date:  08/21/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice:  virtual-machine-manager
@@ -14,7 +14,7 @@ ms.custom: engagement-fy24
 
 ## How to create logical switches
 
-This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric, convert a host virtual switch to a logical switch, and set up virtual switch extensions if you need them.
+This article describes how to create logical switches in the System Center Virtual Machine Manager (VMM) fabric, convert a host virtual switch to a logical switch, and set up virtual switch extensions if you need them.
 
 A logical switch brings virtual switch extensions, port profiles, and port classifications together so that you can configure each network adapter with the settings you need and have consistent settings on network adapters across multiple hosts. You can team multiple network adapters by applying the same logical switch and uplink port profile to them.
 
@@ -46,15 +46,15 @@ You can set up a virtual switch extension manager (network manager) if you want 
 3. In **Create Logical Switch Wizard** > **Getting Started**, review the information.
 4. In **General**, specify a name and optional description.
 5. In **Uplink Mode**, select:
-    - **No Uplink Team** if you're not using teaming.
-    - **Embedded Team** if you want to deploy the switch with SET-based teaming
-    - **Team** if you want to use NIC teaming
-6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
+    - **No Uplink Team** - if you're not using teaming.
+    - **Embedded Team** - if you want to deploy the switch with SET-based teaming
+    - **Team** - if you want to use NIC teaming
+6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it must manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter. If you want to enable:
 
     - Ensure that you've SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
     - Create a native port profile for virtual network adapters that is also SR-IOV enabled.
-    - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
+    - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM or create your own port classification.
 4. In **Extensions**, if you're using virtual switch extensions, select them and arrange the order. Extensions process network traffic through the switch in the order you specify.
 
 > [!NOTE]
@@ -62,7 +62,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 
 5. In **Virtual Port**, add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
 6. In **Uplink**, add an uplink port profile or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it's placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
-7. In **Summary**, review the settings and select **Finish**. Verify; the switch appears in **Logical Switches**.
+7. In **Summary**, review the settings and select **Finish**. Verify if the switch created appears in **Logical Switches**.
 
 ## Convert virtual switch to logical switch
 
@@ -77,14 +77,14 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 
 1. In **Server Manager** on the host, select **Hyper-V**. Close Server Manager.
 2. Right-click the host >  **Configure NIC Teaming**, and record any teaming and load balancing settings.
-3. In **Hyper-V Manager**, right-click the host > **Virtual Switch Manager**. Select the virtual switch and verify whether **Enable single-root I/O virtualization (SR-IOV)** is selected. Close Hyper-V Manager.
+3. In **Hyper-V Manager**, right-click the host > **Virtual Switch Manager**. Select the virtual switch and verify whether **Enable single-root I/O virtualization (SR-IOV)** is selected. Close the Hyper-V Manager.
 4. In the VMM console > **Fabric** > **Servers** > **All Hosts**, right-click the host > **Properties**.
 5. In **Virtual Switches**, note the properties, including logical network and minimum bandwidth mode.
 6. In **Fabric** > **Networking** > **Logical Switches**, right-click the logical switch that you want to convert the host configuration to and select **Properties**.
 7. In **Logical Switches**, record the information:
     - In **General**, record the uplink mode, whether SR-IOV is enabled, and minimum bandwidth mode.
     - In **Extensions**, note whether any forwarding extensions have been added to the logical switch.
-    - In **Virtual port**, record the names of the port profiles that are listed. Ensure that you note if one of them has SR-IOV in the name.
+    - In **Virtual port**, record the names of the port profiles that are listed. Ensure to note if one of them has SR-IOV in the name.
     - In **Uplinks**, record the network sites, whether uplink mode is teamed, the load balancing algorithm, and teaming mode.
 
 8. In **Fabric** > **Networking**, select **Port Profiles**. For any relevant port profiles, select **Properties**. In **Offload Settings**, see if **Enable Single-root I/O virtualization** is checked.
@@ -109,7 +109,7 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 
 1. In VMM, select  **Fabric** > **Servers** > **All Hosts**. Right-click the host > **Properties**.
 2. On the **Virtual Switches** tab, select **Convert to Logical Switch**.
-3. Select the logical switch that you want to convert the host to. Then select the uplink port profile to use and select **Convert**.
+3. Select the logical switch to which you want to convert the host. Select the uplink port profile to use and select **Convert**.
 4. The **Jobs** dialog might appear depending on your settings. Ensure that the job has a status of **Completed**, and then close the dialog.
 5. To verify that the switch was converted, right-click the host, select **Properties**, and then select the **Virtual Switches** tab.
 

@@ -1,18 +1,18 @@
 ---
 ms.assetid: bc3c9818-6019-4af3-bcaa-990229650c0c
-title: How to Install the Operations Manager Reporting Server
+title: Install the Operations Manager Reporting Server
 description: This article describes how to install the Operations Manager Reporting server role.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/02/2024
+ms.date: 09/05/2023
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to install the Operations Manager Reporting server
+# Install the Operations Manager Reporting server
 
 In this procedure, the Reporting server is installed on a standalone server that's hosting the SQL Server database and SQL Server Reporting Services.
 

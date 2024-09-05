@@ -5,7 +5,7 @@ description: This article describes how Operations Manager monitors communicatio
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/22/2024
+ms.date: 04/30/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,13 +14,9 @@ ms.topic: article
 
 # How heartbeats work in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-::: moniker-end
-
-System Center - Operations Manager uses *heartbeats* to monitor communication channels between an agent and the agent's primary management server. A heartbeat is a packet of data sent from the agent to the management server regularly, by default every 60 seconds, using port 5723 (UDP).  
+System Center - Operations Manager uses *heartbeats* to monitor communication channels between an agent and the agent's primary management server. A heartbeat is a packet of data sent from the agent to the management server regularly, by default every 60 seconds, using port 5723 (TCP).  
 
 When an agent fails to send a heartbeat four times, a **Health Service Heartbeat Failure** alert is generated and the management server attempts to contact the computer by using ping. If the computer doesn't respond to the ping, a **Failed to Connect to Computer** alert is generated. The following illustration shows this process.<br> ![Diagram depicting Agent to MS Heartbeat.](./media/manage-agent-heartbeat-overview/om2016-agent-heartbeat.png)
 

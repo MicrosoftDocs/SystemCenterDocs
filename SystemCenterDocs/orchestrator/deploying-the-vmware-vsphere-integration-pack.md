@@ -1,7 +1,7 @@
 ---
 title: Deploy the VMware vSphere Integration Pack for System Center - Orchestrator
 description: This article provides important information about downloading and deploying the VMware vSphere integration pack for System Center - Orchestrator.
-ms.date: 10/27/2022
+ms.date: 07/10/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -9,16 +9,11 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.custom: intro-deployment
-monikerRange: '<=sc-orch-2019'
 ---
 
 # Deploy the VMware vSphere integration pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 This article provides important information about downloading and deploying the VMware vSphere integration pack for System Center - Orchestrator.
 
@@ -26,14 +21,20 @@ This article provides important information about downloading and deploying the 
 
 The pack requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and the VMware vSphere application, refer to the respective product documentation.
 
--   VMware vSphere 4.1 or 5.0
+-   VMware vSphere 5, 6, 7, and 8
 -   System Center - Orchestrator
-
-::: moniker range="<=sc-orch-2019"
 
 ## Download the pack
 
+::: moniker range="<=sc-orch-2019"
+
 You can download the integration pack from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54099).
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+You can download the integration pack from the Microsoft Download Center.
 
 ::: moniker-end
 
@@ -74,8 +75,6 @@ After you download the integration pack file, you must register it with the Orch
 ## Configure the connections
 
 A connection establishes a reusable link between Orchestrator and a VMware vSphere server. You can create as many connections as you require to link to multiple servers running VMware vSphere. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
-
-
 
 1.  In Runbook Designer, click **Options**, and then click **VMware vSphere**. The VMware vSphere dialog appears.
 

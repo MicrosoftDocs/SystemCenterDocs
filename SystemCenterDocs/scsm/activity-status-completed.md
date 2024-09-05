@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/26/2023
+ms.date: 05/15/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -17,11 +17,7 @@ ms.assetid: 1e31bc91-020f-47e7-bd2b-d40ddc2fb7ca
 
 # Set an activity's status to completed for the Service Manager Authoring Tool sample activity
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 See the following sample activity in Service Manager that sets an activity's status to complete.  
 

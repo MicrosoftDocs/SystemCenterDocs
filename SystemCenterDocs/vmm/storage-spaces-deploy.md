@@ -14,11 +14,7 @@ ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
 
 # Deploy clusters with Storage Spaces Direct in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to set up a cluster with Storage Spaces Direct (S2D) in the System Center - Virtual Manager (VMM) fabric. You can set up a couple of types of clusters:
 

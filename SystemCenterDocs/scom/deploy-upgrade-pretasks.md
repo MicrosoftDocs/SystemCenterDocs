@@ -5,8 +5,8 @@ description: This guide provides the pre-upgrade tasks you must perform before a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/30/2023
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.date: 05/15/2024
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -14,11 +14,6 @@ ms.topic: article
 
 # Pre-Upgrade tasks when upgrading to System Center Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process.
 

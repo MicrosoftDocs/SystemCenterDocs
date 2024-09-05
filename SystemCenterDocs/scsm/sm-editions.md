@@ -5,18 +5,14 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2023
+ms.date: 05/15/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency5, engagement-fy24
 ---
 # System Center - Service Manager editions
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 System Center - Service Manager is available as both a retail edition and a select edition. Both editions offer the same functionality. The retail edition is purchased separately, and it includes a product key that you enter during setup. The select edition is delivered as part of a Microsoft Volume Licensing plan, and a product key isn't required.  
 

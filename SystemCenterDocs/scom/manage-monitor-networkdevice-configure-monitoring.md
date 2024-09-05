@@ -1,10 +1,10 @@
 ---
-title: How to Configure Monitoring of Network Devices
+title: Configure Monitoring of Network Devices
 description: This article describes how to configure Operations Manager to sample specific performance metrics and alert for certain issues detected on network devices.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 06/19/2024
 ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,45 +12,41 @@ ms.topic: article
 ms.assetid: 59ac2317-06dc-4f83-b074-47a1bd4b98ac
 ---
 
-# How to configure monitoring of network devices
+# Configure monitoring of network devices
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager includes the following management packs specific to network device discovery and monitoring:
 
--   Network Management - Core Monitoring
+- Network Management - Core Monitoring
 
     This management pack contains monitoring logic for network devices.
 
--   Windows Client Network Discovery
+- Windows Client Network Discovery
 
     This management pack contains discovery rules to set the properties of discovered network adapters connected to computers running client operating systems.
 
--   Windows Server Network Discovery
+- Windows Server Network Discovery
 
     This management pack contains discovery rules to set the properties of discovered network adapters connected to computers running server operating systems.
 
--   Network Discovery Internal
+- Network Discovery Internal
 
     This management pack contains definitions and rules for discovering network devices.
 
--   Network Management Library
+- Network Management Library
 
     This management pack contains definitions for core network device management.
 
--   Network Management Reports
+- Network Management Reports
 
     This management pack contains reports for network management.
 
--   Network Management Templates
+- Network Management Templates
 
     This management pack contains templates for authoring network management workflows.
 
-## Tuning network rules
+## Tune network rules
+
 The following rules are disabled by default. Using overrides, enable these rules only for the specific device types in your environment. To view these rules grouped by type, in the **Authoring** workspace, scope **Management Pack Objects** to the network monitoring management packs listed in the previous section, and select **Rules**.
 
 |Rule|Description|Types|
@@ -90,7 +86,8 @@ The following rules are disabled by default. Using overrides, enable these rules
 |**Port Internal Mac Receive Errors Rate**|Determines the change in the SNMP dot3StatsInternalMacReceiveErrorsRate value for the dot3_Ethernet_Performance_Port since the last polling.|Port (Dot3 ethernet)|
 |**Port Internal Mac Transmit Errors Rate**|Determines the change in the SNMP dot3StatsInternalMacTransmitErrorsRate value for the dot3_Ethernet_Performance_Port since the last polling.|Port (Dot3 ethernet)|
 
-## Tuning alerts for network monitoring
+## Tune alerts for network monitoring
+
 The following monitors that generate alerts are disabled by default. Using overrides, enable these monitors if you want to receive alerts for the issue.
 
 |Monitor|Description|Targets|

@@ -1,32 +1,24 @@
 ---
 title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager
-description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM) 1801 fabric.
+description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM)  fabric.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/09/2022
+ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-monikerRange: '>sc-vmm-1801'
+monikerRange: '>=sc-vmm-2019'
 ---
 
 # Provision a shielded Linux virtual machine in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
-
-
-This article describes how to deploy Linux shielded virtual machines (VMs) in System Center - Virtual Machine Manager (VMM).
-
+This article describes how to deploy Linux shielded virtual machines (VMs) in System Center Virtual Machine Manager (VMM).
 
 ## Procedure to shield a Linux VM
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based virtual machines. Shielded VMs provide protection against malicious administrator actions when the VM's data is at rest or when untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
 
-With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs. This support is available in VMM 1801.
+With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs.
 
 ## Shield a Linux VM
 
@@ -55,7 +47,7 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 		$cert = New-SelfSignedCertificate -DnsName '<<signing.contoso.com>>'
 
     ```
-2. Sign the disk by using a Windows Server 1709 machine. Use the following sample cmdlet:
+2. Sign the disk by using a Windows Server 1709 or later machine. Use the following sample cmdlet:
 
     ```powershell
     Protect-TemplateDisk -Path "<<Path to the VHDX>>" -TemplateName "<<Template Name>>" -Version <<x.x.x.x>> -Certificate $cert -ProtectedTemplateTargetDiskType PreprocessedLinux
@@ -79,13 +71,12 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
        ![Screenshot of Hardware configuration for a Linux shielded VM.](media/linux-shield/vm-create-linux-template-1.png)
 4.	In **Configure Operating System**:
 
-    - Select the Guest OS profile as **Create new Linux operating system customization settings**.
+    - Select the Guest OS profile as **[Create new Linux operating system customization settings]**.
 
     - Select the OS on the template disk that you created earlier (**Ubuntu Linux**).
-
+5. Select **Next**.
         ![Screenshot of Configuration for the VM template's operating system.](media/linux-shield/vm-create-linux-template-configure-os.png)
 
-5. Select **Next**.
 6. In **Summary**, review the details and select **Create to finish generation of Linux shielded VM template in VMM**.
 
 ## Generate the shielding data file
@@ -96,7 +87,7 @@ Before you generate the shielding data file (PDK):
 1.	[Get the guardian metadata from the Host Guardian Service (HGS)](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#select-trusted-fabrics).
 2.	[Extract the volume signature catalog (VSC) file](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#get-the-volume-signature-catalog-file).
 
-To generate the PDK, run the following sample script on a server that's running Windows Server version 1709:
+To generate the PDK, run the following sample script on a server that's running Windows Server version 1709 or later:
 
 ```powershell
 

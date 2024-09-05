@@ -5,11 +5,11 @@ description: This article details the known issues and workarounds in Operations
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/28/2023
+ms.date: 05/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # Release notes for System Center Operations Manager
@@ -30,15 +30,6 @@ This article lists the release notes for System Center 2022 - Operations Manager
 [!INCLUDE [release-notes-om-2022.md](../includes/release-notes-om-2022.md)]
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article lists the release notes for System Center 1807 - Operations Manager.
-
-[!INCLUDE [release-notes-om-1807.md](../includes/release-notes-om-1807.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -48,15 +39,6 @@ This article lists the release notes for System Center 2016 - Operations Manager
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article lists the release notes for System Center 1801 - Operations Manager.
-
-[!INCLUDE [release-notes-om-1801.md](../includes/release-notes-om-1801.md)]
-
-::: moniker-end
 
 ## Next steps
 [What's new in Operations Manager](whats-new-in-om.md).

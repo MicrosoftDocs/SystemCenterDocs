@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: fkornilov
 ms.author: v-fkornilov
 manager: vvithal
-ms.date: 04/02/2024
+ms.date: 08/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,14 @@ ms.subservice: operations-manager
 # Features and enhancements in Management Pack for Azure SQL Managed Instance
 
 This article covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
+
+## July 2024 - 7.6.0 RTM
+
+### What's new
+
+- Reworked the creation of Run As Accounts for the Automatic template to allow multiple accounts to be created in one time period
+- Enhanced the Automatic template options for monitoring SQL Managed Instances by introducing support for [Managed Identity](managed-instance-management-pack-automatic-monitoring-managed-identity.md). This includes both System-assigned and User-assigned Managed Identity options
+- Updated display strings
 
 ## March 2024 - 7.4.0.0 RTM
 
@@ -25,8 +33,8 @@ This article covers new functionality and improvements in Management Pack for Az
 - Added support for selecting a tenant in the 'Entra ID Tenant' monitoring wizard step
 - Added support for [enabling debug logging](managed-instance-management-pack-enable-debugging.md) in Windows Event Log
 - Added new [Operations Manager console task](managed-instance-management-pack-export-event-log-task.md), which allows saving and transport of the Event Log file from the Management Server
-- Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression and wildcards for include and exclude from the monitoring
-- Added support for manually setting the expiration date for the application client secret in the [Automatic Monitoring Template wizard step](managed-instance-management-pack-automatic-monitoring.md#auto-create-spn)
+- Added new [regular expression filtering mask type](managed-instance-management-pack-automatic-monitoring-service-principal-name.md#instances-filtering) in the 'Instance Filtering' monitoring wizard step; now the instance names can be filtered using regular expression and wildcards for include and exclude from the monitoring
+- Added support for manually setting the expiration date for the application client secret in the [Automatic Monitoring Template wizard step](managed-instance-management-pack-automatic-monitoring-service-principal-name.md#auto-create-spn)
 - Updated memory and space monitoring workflows to apply four significant digit roundings in all the values
 - Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
   - improved keyboard navigation

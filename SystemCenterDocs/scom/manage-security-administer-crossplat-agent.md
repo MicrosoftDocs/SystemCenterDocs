@@ -1,47 +1,40 @@
 ---
 ms.assetid: 5a64b832-1af6-4a01-981b-13e1bcb7a17c
-title: Administering and Configuring the UNIX - Linux Agent
+title: Administer and Configure the UNIX - Linux Agent
 description: This article describes options to administer and configure the UNIX and Linux agent Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/24/2023
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Administering and configuring the UNIX - Linux agent
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
+# Administer and configure the UNIX - Linux agent
 
 This article describes options to administer and configure the UNIX/Linux agent for System Center - Operations Manager.  
 
 ## Agent directories  
 
--  Open Management Infrastructure (OMI) is installed to the directory: `/opt/omi`
+- Open Management Infrastructure (OMI) is installed to the directory: `/opt/omi`
 
--  The UNIX/Linux agent installs to the directory: `/opt/microsoft/scx/`
+- The UNIX/Linux agent installs to the directory: `/opt/microsoft/scx/`
 
--  The UNIX/Linux agent maintains log files in the directory: `/var/opt/microsoft/scx/log/`
+- The UNIX/Linux agent maintains log files in the directory: `/var/opt/microsoft/scx/log/`
 
--  OMI maintains log files in the directory: `/var/opt/omi/log/`
+- OMI maintains log files in the directory: `/var/opt/omi/log/`
 
--  Agent configuration files, including certificates, are stored in the directory: `/etc/opt/microsoft/scx/`
+- Agent configuration files, including certificates, are stored in the directory: `/etc/opt/microsoft/scx/`
 
--  OMI configuration files are stored in the directory: `/etc/opt/omi`
-
+- OMI configuration files are stored in the directory: `/etc/opt/omi`
 
 ## Agent administration tools  
 
 In this section, tools to administer and configure the UNIX\/Linux agent are described.  
 
-### Running the agent administration tools  
+### Run the agent administration tools  
 
 The tools for configuring the UNIX/Linux Agent are located in the directory:  
 
@@ -81,7 +74,7 @@ scxadmin {-log-reset|-log-remove} provider [{FILE:<path>|STDOUT}]
 
 ### Examples  
 
-**Restarting the agent:**  
+**Restart the agent:**  
 
 ```  
 cd /opt/microsoft/scx/bin/tools/
@@ -119,7 +112,7 @@ Usage: /opt/microsoft/scx/bin/tools/.scxsslconfig [-v] [-s days] [-e days] [-d d
 -?             - this help message  
 ```  
 
-### Examples  
+### Examples
 
 **Regenerate the certificate, forcing overwrite of an existing certificate, with verbose output:**  
 
@@ -143,13 +136,13 @@ cd /opt/microsoft/scx/bin/tools/
 
 If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) article.  
 
-### Specifying an alternate temporary path for scripts
+### Specify an alternate temporary path for scripts
 
 If you create a UNIX/Linux Script rule or monitor in a custom management pack, the script contents will be written to a file in /tmp on the agent computer before being run. You may wish to specify an alternate directory for script execution. To specify an alternate directory, overwrite the symbolic link at: `/etc/opt/microsoft/scx/conf/tmpdir` to point to another directory. The destination of this symbolic link must be writeable by the user account defined in the UNIX/Linux Action Account and/or UNIX/Linux Privileged Account RunAs Profiles.
 
 ### Universal Linux - operating system name/version  
 
-The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host's operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to Operations Manager for a Universal Linux Agent host, use the following procedure:  
+The Universal Linux Agent, which supports Linux operating systems such as Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host's operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to Operations Manager for a Universal Linux Agent host, use the following procedure:  
 
 Create the file `disablereleasefileupdates` in the directory: `/etc/opt/microsoft/scx/conf/`.  
 
@@ -183,7 +176,7 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
 
 ::: moniker range=">=sc-om-2019"
 
-##	Performance and reliability improvements in the Linux agent  
+## Performance and reliability improvements in the Linux agent  
 
 ::: moniker-end
 
@@ -230,8 +223,8 @@ With Operations Manager 2019 UR3, log-level settings can be changed without the 
 
 ::: moniker-end
 
-
 ::: moniker range=">=sc-om-2019"
+
 ## Dynamic changes in log-level settings without agent restart
 
 You can change the log-level settings without the need for restarting the agent.

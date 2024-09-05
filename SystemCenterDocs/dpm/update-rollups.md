@@ -5,21 +5,14 @@ description: This article provides information about how to deploy and manage th
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/04/2020
+ms.date: 06/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.custom: intro-deployment, UpdateFrequency2
+ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
 ---
 
 # Deploy and manage update rollups in Data Protection Manager
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 
 This article provides information about how to install and verify update rollups (UR) for System Center - Data Protection Manager (DPM).
 

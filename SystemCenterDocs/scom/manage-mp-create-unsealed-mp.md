@@ -14,11 +14,7 @@ ms.topic: article
 
 # How to create a management pack for overrides
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center - Operations Manager, in a number of wizards and dialog boxes, you select a destination management pack in which to store the settings. You can select any unsealed management pack file in your management group or create a new one.  
 

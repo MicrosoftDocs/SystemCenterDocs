@@ -39,7 +39,7 @@ The following sections describe how to upgrade to System Center Virtual Machine 
 - Initiate a failover to the computer that is running SQL Server and on which the VMM database is installed.
 
 7. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
-8. If the VMM 2012 R2 server is running update rollup 10 or 11 and you've a Citrix NetScalar load balancer deployed, run this SQL Server script before you start the upgrade, otherwise it might fail. The script isn't needed if you're running update rollup 12 or later.
+8. If the VMM 2012 R2 server is running update rollup 10 or 11 and you have a Citrix NetScalar load balancer deployed, run this SQL Server script before you start the upgrade, otherwise it might fail. The script isn't needed if you're running update rollup 12 or later.
 
   ``ALTER TABLE [dbo].[tbl_NetMan_HardwareModelSettings]  
   ALTER COLUMN Version NVARCHAR(255) NULL;  
@@ -123,7 +123,7 @@ The following modes of upgrade are supported:
 
 ### Mixed mode upgrade with no additional VMM servers
 
-This procedure requires no additional VMM servers but has increased risk for downtime in some scenarios. For example, when you've two node HA VMM and the active VMM node fails while you're upgrading the passive. In this scenario, your VMM server won't have a failover node available.
+This procedure requires no additional VMM servers but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you're upgrading the passive. In this scenario, your VMM server won't have a failover node available.
 
 1. Back up and retain the VMM database.
 2. Uninstall the VMM on the passive node.  
@@ -192,7 +192,7 @@ Before you upgrade, collect information about the VMM database:
 
 1. Take a backup of the highly available VMM database from the active node of the existing SQL cluster.
 2. Note the VMM role name to use when reinstalling the VMM server role. Uninstall VMM server from the existing VMM cluster nodes with the retain database option.
-When uninstalling VMM server from the last node, you may get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
+When uninstalling VMM server from the last node, you can get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
 3. Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
 4. While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to the new SQL Cluster.
 
@@ -250,7 +250,7 @@ All the virtual machine templates that were upgraded need to correctly specify t
 
 ## Renew certificates for PXE servers
 
-If you have a PXE server in the VMM fabric, you need to remove it from the fabric and then add it again. This is in order to renew the PXE server certificate and avoid certificate errors.
+If you have a PXE server in the VMM fabric, you need to remove it from the fabric and then add it again. This is to renew the PXE server certificate and avoid certificate errors.
 
 ## Update driver packages
 

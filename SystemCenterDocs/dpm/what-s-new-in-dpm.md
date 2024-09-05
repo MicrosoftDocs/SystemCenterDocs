@@ -2,14 +2,14 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
 ms.service: system-center
-ms.date: 03/19/2024
+ms.date: 08/06/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
+ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24
 ---
 
 # What's new in System Center Data Protection Manager
@@ -25,22 +25,6 @@ This article gives details of the new features supported in System Center - Data
 ::: moniker range="sc-dpm-2019"
 
 This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3), [2019 UR4](#new-features-in-dpm-2019-ur4), [2019 UR5](#new-features-in-dpm-2019-ur5) and [2019 UR6](#new-features-in-dpm-2019-ur6).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [Release Notes for 1807](dpm-release-notes.md#dpm-1807-release-notes).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-System Center DPM 1801 provides the following new features:
 
 ::: moniker-end
 
@@ -239,28 +223,6 @@ DPM 2019 UR6 supports Windows and Basic SMTP authentication to send reports and 
 DPM 2019 UR6 supports listing of online recovery points for a data source along with the expiry time. Right-click a data source and select **List recovery points** to view the list of recovery points along with their expiration dates.
 
 DPM 2019 UR6 supports stopping protection and retaining data by the policy duration for immutable vaults directly from the UI. This helps you save backup costs when stopping protection for a data source backed up to an immutable vault. [Learn more](/azure/backup/backup-azure-security-feature#immutability-support).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-## What's new in DPM 1807
-
-DPM 1807 provides many bug fixes to improve performance.
-
-To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1801"
-
-## New features in DPM 1801
-
-System Center DPM 1801 supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs) and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md).
-
-* Up to 50% storage savings
-* Three times faster backups
-* Workload-volume affinity
 
 ::: moniker-end
 

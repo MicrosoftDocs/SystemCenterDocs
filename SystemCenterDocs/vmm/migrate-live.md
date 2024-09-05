@@ -5,7 +5,7 @@ description: This article describes how to run a live migration in the VMM fabri
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/12/2023
+ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,14 +15,10 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Run a live migration in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
-This article describes how to run a live migration of virtual machines (VMs) or VM storage in the System Center - Virtual Machine Manager (VMM) fabric. VMM provides live migration support between standalone Hyper-V hosts or between cluster hosts that have live migration enabled. [Learn more](migrate.md#live-migration).
+
+This article describes how to run a live migration of virtual machines (VMs) or VM storage in the System Center Virtual Machine Manager (VMM) fabric. VMM provides live migration support between standalone Hyper-V hosts or between cluster hosts that have live migration enabled. [Learn more](migrate.md#live-migration).
 
 ## Migrate a VM between two standalone hosts
 
@@ -32,25 +28,25 @@ To migrate a virtual machine from one standalone Hyper-V host to another standal
 2.  Select the host and in **VMs**, select the running VM that you want to migrate. Start the machine if it's not running.
 3.  In **Virtual Machine**, select **Migrate Virtual Machine** to start the Migrate Virtual Machine Wizard.
 4.  In **Select Host**, review the destination hosts and their associated transfer types. The **Live** transfer type appears if both hosts are configured to connect to the same SMB 3.0 file share.
-5.  Select the destination host where the transfer type is **Live**, and select **Next**.
+5.  Select the destination host where the transfer type is **Live** and select **Next**.
 6.  In **Summary**, select **Move**. To track the job status, open the **Jobs** workspace.
 7. To verify that the virtual machine was migrated, check the **VMs** list on the destination host to ensure the VM is running.
 
 
 ## Migrate a VM between clusters
-You can migrate a VM between clusters by using shared storage or with no shared infrastructure.
+You can migrate a VM between clusters using shared storage or with no shared infrastructure.
 
 Select the required tab for steps for live migration with shared storage or with no shared infrastructure:
 
 # [Live migration with shared storage](#tab/SharedStorage)
 
-When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration with shared storage, you must use SMB 3.0 file shares as the storage location. Because the storage doesn't have to be migrated, the time in which high availability status can't be guaranteed is short.
+When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration with shared storage, you must use SMB 3.0 file shares as the storage location. As the storage doesn't have to be migrated, the time in which high availability status can't be guaranteed is short.
 
 1.  In **VMs and Services** > **All Hosts**, select the cluster node from which you want to migrate.
 2.  In **VMs**, select the running VM that you want to migrate. Start the machine if it's not running.
 3.  In **Virtual Machine**, select **Migrate Virtual Machine** to start the Migrate Virtual Machine Wizard.
 4.  In **Select Host**, review the destination hosts and their associated transfer types. The **Live** transfer type is available for any destination cluster nodes that are configured to connect to the same SMB 3.0 file share on which the VM was originally created.
-5.  Select a node on a different cluster, and select **Next**.
+5.  Select a node on a different cluster and select **Next**.
 6.  In **Summary**, select **Move**. To track the job status, open the **Jobs** workspace.
 7. To verify that the virtual machine was migrated, check the **VMs** list on the destination node to ensure the VM is running.
 
@@ -89,7 +85,7 @@ You can run a live migration of VM storage between locations on standalone hosts
 1.  In **VMs and Services** > **All Hosts**, select the standalone host where the VM is located.
 2.  In **VMs**, select the running VM for which you want to migrate storage. Start the machine if it's not running.
 3.  In **Virtual Machine**, select **Migrate Storage** to start the Migrate Virtual Machine Wizard.
-4.  In **Select Path** > **Storage location**, select one of the default storage locations on the host. Or select **Browse** to view all possible storage destinations. Select the destination SMB 3.0 file share or location on the local hard disk, and select **OK**.
+4.  In **Select Path** > **Storage location**, select one of the default storage locations on the host. Or select **Browse** to view all possible storage destinations. Select the destination SMB 3.0 file share or location on the local hard disk and select **OK**.
 
     If you specify an SMB 3.0 file share in the **Storage location** list, ensure that you use the fully qualified domain name (FQDN) of the destination server in the share path. For example, instead of *\\\fileserver1\smbshare*, use *\\\fileserver1.contoso.com\smbshare*.
 
@@ -109,7 +105,7 @@ You can run live migration on multiple VMs so that two migrations occur at the s
 
 ## Improve live migration speed
 
-On Hyper-V hosts, you can increase live migration speed using compression by using SMB as the transport or both. The compression method uses algorithms that reduce the data that is transmitted over the wire. The SMB method can allow for faster data transfer.
+On Hyper-V hosts, you can increase live migration speed using compression using SMB as the transport or both. The compression method uses algorithms that reduce the data that is transmitted over the wire. The SMB method can allow for faster data transfer.
 
 By default, faster live migration is enabled to use the compression method. You can disable, enable, or change the method of faster live migration by changing the live storage migration settings, either at the Hyper-V host level or for each live migration instance.
 

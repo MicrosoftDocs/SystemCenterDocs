@@ -1,7 +1,7 @@
 ---
 title: Delete Custom Attribute
 description: The Delete Custom Attribute activity is used in a runbook to delete a custom attribute from an existing message.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -14,15 +14,10 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 05/16/2024
 ---
 # Delete Custom Attribute
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete Custom Attribute activity is used in a runbook to delete a custom attribute from an existing message.
 

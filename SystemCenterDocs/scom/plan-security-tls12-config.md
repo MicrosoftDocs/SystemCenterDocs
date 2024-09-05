@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/14/2024
+ms.date: 09/05/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,7 +14,6 @@ ms.topic: article
 
 # How to implement Transport Layer Security 1.2
 
-## Executive Summary
 
 This article describes how to allow System Center Operations Manager to utilize Transport Layer Security (TLS) 1.2.
 
@@ -44,12 +43,12 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 
 ::: moniker range=">sc-om-2016"
 
-1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) on all management servers and the Web console server.
-1. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-1. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers.
-1. Configure Windows to only use TLS 1.2.  
-1. Configure Operations Manager Audit Collection Services to use the installed ODBC Driver.  
-
+1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4 on all management servers and the Web console server.
+2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
+3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
+4. Install [ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6 on all management servers.
+5. Configure Windows to only use TLS 1.2.  
+6. Configure Operations Manager to only use TLS 1.2.  
 ::: moniker-end
 
 Operations Manager generates SHA1 and SHA2 self-signed certificates. This is required to enable TLS 1.2. If CA-signed certificates are used, ensure that the certificates are either SHA1 or SHA2.

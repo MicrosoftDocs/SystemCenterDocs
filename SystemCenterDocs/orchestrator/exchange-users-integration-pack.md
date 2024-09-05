@@ -1,8 +1,8 @@
 ---
 title: Exchange Users Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. Integration packs optimize IT operations across various environments.
-ms.custom: na
-ms.date: 04/04/2019
+ms.custom: engagement-fy24
+ms.date: 06/05/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,17 +17,15 @@ manager: jsuri
 
 # Exchange Users integration pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products.
 
 The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to read and send email messages, create appointments, or update tasks and contacts. The operation is carried over HTTP and the connection can be authenticated by the methods enabled on the Exchange Server. Consult with your tenant administrator about the available methods on your on-premises Exchange Server.
 
 This integration pack can be used to connect to both on-premises or Online Exchange servers using their respective [Exchange Web Services](/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange) (EWS) endpoint.
+
+>[!Note]
+>Azure Active Directory or Azure AD or AAD mentioned in Integration packs refers to Microsoft Entra ID. [Learn more](https://azure.microsoft.com/updates/azure-ad-is-becoming-microsoft-entra-id/).
 
 ::: moniker range=">= sc-orch-2019"
 

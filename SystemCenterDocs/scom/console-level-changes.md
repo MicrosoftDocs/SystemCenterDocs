@@ -5,14 +5,13 @@ description: This article describes the console-level changes that are required 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/30/2022
+ms.date: 07/22/2024
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
-
 
 # Console-level changes for group Managed Service Accounts (gMSAs)
 
@@ -54,11 +53,13 @@ Change the credentials of the default **Action** account to **gMSA**.
  ![Screenshot of Default Action Run As account.](media/gmsa/defaul-action-run-as-account.png)
 
 ## Microsoft Monitoring Agent
+
 To alter the agent **Action** account in the Microsoft Monitoring Agent, change the credentials from the target agent computer, as shown.
 
 ![Screenshot of Microsoft Monitoring Agent.](media/gmsa/monitoring-agent-properties.png)
 
 ### Create Run As accounts
+
 When you create a new Run As account, enter the gMSA in the **User name** box followed by **$**. Don't enter a password. Continue to create the Run As account.
 
 ![Screenshot of Run As accounts.](media/gmsa/run-account-credentials.png)

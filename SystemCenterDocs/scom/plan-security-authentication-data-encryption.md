@@ -14,11 +14,7 @@ ms.topic: article
 
 # Authentication and Data Encryption in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager consists of features such as the management server, gateway server, Reporting server, Operational database, Reporting data warehouse, agent, web console, and Operations console. This article explains how authentication is performed and identifies connection channels where the data is encrypted.
 

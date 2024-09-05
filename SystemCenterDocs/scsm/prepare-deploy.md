@@ -5,19 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/14/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Prepare for System Center - Service Manager deployment
-
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Before you start the deployment of System Center - Service Manager, you create a group of users in Active Directory Domain Services \(AD DS\), and you create or identify a domain account that will be used during the Setup process. Ensure that the domain account is a member of the appropriate groups that are necessary for proper operation of Service Manager. Keep the following in mind when you're installing Service Manager and Operations Manager on the same server:  
 
@@ -27,9 +21,9 @@ Before you start the deployment of System Center - Service Manager, you create a
 
      To validate that the Operations Manager Agent was installed, open the Control Panel and verify that the Operations Manager Agent is present.
 
--   You can install both the Operations Manager console and the Service Manager console on the same computer. The order in which you install the consoles doesn't matter.  
+- You can install both the Operations Manager console and the Service Manager console on the same computer. The order in which you install the consoles doesn't matter.  
 
--   Don't attempt to use the same SQL Server Reporting Services \(SSRS\) instance for both Operations Manager and Service Manager.  
+- Don't attempt to use the same SQL Server Reporting Services \(SSRS\) instance for both Operations Manager and Service Manager.  
 
 ## Account considerations before you run Setup
 
@@ -40,7 +34,7 @@ Before running Setup for Service Manager, review the following sections to ensur
 This section describes the permissions that you need when you're installing a Service Manager management server and Service Manager console databases and when you're registering the Service Manager management group with the data warehouse management group in Service Manager.
 
 > [!NOTE]  
->  The account that you use to run Setup is automatically made an administrator in Service Manager.
+> The account that you use to run Setup is automatically made an administrator in Service Manager.
 
 Select the required tab for details of the permissions that you need:
 
@@ -48,26 +42,26 @@ Select the required tab for details of the permissions that you need:
 
 You need the following permissions when you're installing a Service Manager management server:  
 
--   Local administrator on the computer that you run Setup on  
--   Local administrator on the computer that will host the Service Manager database if it's on a remote computer  
--   Logged-on user must be a domain account  
--   The Sysadmin SQL Server role on the SQL Server instance where the Service Manager database is being created  
+- Local administrator on the computer that you run Setup on  
+- Local administrator on the computer that will host the Service Manager database if it's on a remote computer  
+- Logged-on user must be a domain account  
+- The Sysadmin SQL Server role on the SQL Server instance where the Service Manager database is being created  
 
 # [Service Manager console](#tab/SMConsole)
 
 You need the following permissions when you're installing the Service Manager console:  
 
--   Local administrator on the computer that you run Setup on  
+- Local administrator on the computer that you run Setup on  
 
 # [Data warehouse management server](#tab/DataWarehouse)
 
 You need the following permissions when you're installing the data warehouse management server:  
 
--   Local administrator on the computer that you run Setup on  
--   Local administrator on the computer that will host the data warehouse database if it's on a remote computer  
--   Logged\-in user must be a domain account  
--   The Content Manager role in SQL Server Reporting Services \(SSRS\) at the site level \(root\)  
--   The Sysadmin SQL Server role on the SQL Server instance where the data warehouse database is being created  
+- Local administrator on the computer that you run Setup on  
+- Local administrator on the computer that will host the data warehouse database if it's on a remote computer  
+- Logged\-in user must be a domain account  
+- The Content Manager role in SQL Server Reporting Services \(SSRS\) at the site level \(root\)  
+- The Sysadmin SQL Server role on the SQL Server instance where the data warehouse database is being created  
 
 # [SQL Server Reporting Services](#tab/SQLServer)
 
@@ -79,10 +73,10 @@ Permissions to place a binary file into the \\Program Files\\Microsoft SQL Serve
 
 You need the following permissions when you're registering Service Manager with the data warehouse:  
 
--   The Sysadmin or security admin SQL Server role on the instance that is hosting the Service Manager database  
--   The Sysadmin or security admin SQL Server role on the instance that is hosting the data warehouse database  
--   Membership in the Service Manager Administrators user role on the Service Manager management server  
--   Membership in the Service Manager Administrators user role on the data warehouse management server
+- The Sysadmin or security admin SQL Server role on the instance that is hosting the Service Manager database  
+- The Sysadmin or security admin SQL Server role on the instance that is hosting the data warehouse database  
+- Membership in the Service Manager Administrators user role on the Service Manager management server  
+- Membership in the Service Manager Administrators user role on the data warehouse management server
 
 ---
 
@@ -120,8 +114,8 @@ You will have to provide credentials for the accounts in the following table dur
 
  As part of the installation process, you register the Service Manager management group with the data warehouse management group. During this process, you'll be prompted to provide credentials. The account credentials that you provide must be a domain account. Furthermore, you will have to provide an account with the following permissions:  
 
--   Must be a member of the Administrator user role in both the Service Manager and data warehouse management groups.  
--   Must be a member of the users local administrator group on the data warehouse management server.  
+- Must be a member of the Administrator user role in both the Service Manager and data warehouse management groups.  
+- Must be a member of the users local administrator group on the data warehouse management server.  
 
 ### Accounts required to create connectors
 
@@ -132,8 +126,8 @@ You will have to provide credentials for the accounts in the following table dur
  To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment** .
 
 **Optional**:
- - Deny log on as a batch job
- - Deny log on through Remote Desktop Services
+- Deny log on as a batch job
+- Deny log on through Remote Desktop Services
  
 Select the required tab to view the permissions and best practices:
 
@@ -165,9 +159,7 @@ Select the required tab to view the permissions and best practices:
 
 ## Prepare computers for Service Manager deployment
 
-Use the following procedures to prepare computers for deployment of Service Manager.  
-
-### To prepare computers for Service Manager deployment  
+To prepare computers for Service Manager deployment, follow these steps:
 
 1. Ensure that no Operations Manager parts are installed on the computers that will host either Service Manager or the data warehouse.  
 2. Create an Active Directory group of users that will be assigned to the role of Service Manager administrators of both the data warehouse and Service Manager management groups. For example, create the group **SM\_Admins**.  
@@ -191,27 +183,27 @@ Use the following procedures to prepare computers for deployment of Service Mana
 
      If either connection attempt fails or returns an error—for example, **HTTP Error 404.0 Not Found**—complete the steps in the procedure **To configure the reporting server**. Otherwise, continue with the installation of Service Manager.  
 
-### To configure the reporting server  
+### Configure the reporting server  
 
-1.  By using an account that has administrator rights, sign in to the computer that will host SQL Server Reporting Services \(SSRS\).  
+1. By using an account that has administrator rights, sign in to the computer that will host SQL Server Reporting Services \(SSRS\).  
 
-2.  Select **Start**, point to **Programs**, point to **Microsoft SQL Server 2008**, point to **Configuration Tools**, and select **Reporting Services Configuration Manager**.  
+2. Select **Start**, point to **Programs**, point to **Microsoft SQL Server 2008**, point to **Configuration Tools**, and select **Reporting Services Configuration Manager**.  
 
-3.  In the **Reporting Services Configuration Connection** dialog, ensure that the information in **Server Name** and **Report Server Instance** is correct, and select **Connect**.  
+3. In the **Reporting Services Configuration Connection** dialog, ensure that the information in **Server Name** and **Report Server Instance** is correct, and select **Connect**.  
 
-4.  In the **Connect** pane, select **Web Service URL**.  
+4. In the **Connect** pane, select **Web Service URL**.  
 
-5.  In the **Report Server Web Service Virtual Directory** area, in the **Virtual Directory** text box, ensure that the entry is **ReportServer**, and select **Apply**.  
+5. In the **Report Server Web Service Virtual Directory** area, in the **Virtual Directory** text box, ensure that the entry is **ReportServer**, and select **Apply**.  
 
-6.  In the **Connect** pane, select **Report Manager URL**.  
+6. In the **Connect** pane, select **Report Manager URL**.  
 
-7.  In the **Report Manager Site Identification** area, in the **Virtual Directory** text box, ensure that the entry reads **Reports**, and select **Apply**.  
+7. In the **Report Manager Site Identification** area, in the **Virtual Directory** text box, ensure that the entry reads **Reports**, and select **Apply**.  
 
-8.  In the **Connect** pane, select the top entry (`<server>\\<instance>`).  
+8. In the **Connect** pane, select the top entry (`<server>\\<instance>`).  
 
 9. In the **Current Report Server** area, select **Stop**, and select **Start**.
 
-::: moniker range=">=sc-sm-1807"
+::: moniker range=">=sc-sm-2019"
 
 > [!IMPORTANT]
 > When you install System Center Service Manager with SQL Server Reporting Services (SSRS) 2017 or later, Service Manager reports don't deploy, an event 33410 occurs and displays the details for the deployment failure. See the following information for the cause and resolution for this issue.  

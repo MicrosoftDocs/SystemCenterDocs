@@ -5,7 +5,7 @@ description: This article describes how to use PowerShell to deploy SDN componen
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/09/2022
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,13 +14,9 @@ ms.custom: UpdateFrequency2
 
 # Set up Software Defined Network (SDN) components in the VMM fabric using PowerShell
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-System Center - Virtual Machine Manager (VMM) can be used to deploy and manage a Software Defined Network (SDN) infrastructure.
+System Center Virtual Machine Manager (VMM) can be used to deploy and manage a Software Defined Network (SDN) infrastructure.
 
 You can deploy SDN components in the VMM fabric, including:
 
@@ -36,10 +32,10 @@ There are a couple of ways to deploy these components:
 ## Advantages of PowerShell deployment
 
 - Deploy all SDN components with PowerShell scripts.
-- The use of a script can reduce the introduction of manual errors and save significant deployment time.
+- The use of a script reduces the introduction of manual errors and save significant deployment time.
 - If you deploy using the script, you can modify settings in the VMM console afterwards just as you would if you deploy the SDN components manually.
 - Like the manual deployment, you have the option of setting up a new management logical network and switch or to reuse an existing network and switch.
-- If the script deployment fails, all changed settings are rolled back so that you can start again.
+- If the script deployment fails, all the changed settings are rolled back so that you can start again.
 - You can turn off deployment for specific components. For example, if you already have network controller deployed, you can deploy SLB and RAS gateway only.
 
 

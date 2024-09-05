@@ -14,11 +14,6 @@ ms.topic: article
 
 # Quick reference to Operations Manager tasks
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 

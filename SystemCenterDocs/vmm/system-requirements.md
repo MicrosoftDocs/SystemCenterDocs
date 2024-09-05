@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/15/2023
+ms.date: 07/05/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -30,25 +30,6 @@ This article provides details of the system requirements for System Center 2019 
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-This article provides details of the system requirements for System Center 1807 - Virtual Machine Manager (VMM).
-
-[!INCLUDE [system-reqs-vmm-1807.md](../includes/system-reqs-vmm-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-vmm-1801"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-This article provides details of the system requirements for System Center 1801 - Virtual Machine Manager (VMM).
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
@@ -56,11 +37,7 @@ This article provides details of the system requirements for System Center 2016 
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-[!INCLUDE [system-reqs-vmm-1801.md](../includes/system-reqs-vmm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 

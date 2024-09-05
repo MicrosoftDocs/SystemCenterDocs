@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/01/2024
+ms.date: 05/22/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -13,11 +13,6 @@ ms.custom: intro-deployment
 
 # Deploy the Self-Service portal for Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The Self-Service portal provides web-based access to the features of System Center - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
@@ -41,6 +36,7 @@ The Self-Service portal provides web-based access to the features of System Cent
  ::: moniker-end
 
 For more information, see [system requirements](system-requirements.md)
+
 ## Supported web browsers
 The Self-Service portal needs a screen resolution above 1024 X 768. It's supported on the following browsers.
 
@@ -53,9 +49,11 @@ The Self-Service portal needs a screen resolution above 1024 X 768. It's support
 -   Google Chrome 46 and later
 
 ## Set up the Self-Service portal
+
 You'll use the following sections to set up the Self-Service portal.
 
 ### Set up the web server
+
 Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
 
 1.  Start the Add Roles and Features Wizard and then enable IIS.
@@ -87,6 +85,7 @@ Join the Windows server machine to the same domain where the Service Manager SDK
         ![Screenshot showing the application development.](./media/deploy-self-service-portal/sm-ssp03b.png)
 
 ### Install the Self-Service Portal Webapp using Setup
+
 Use the following steps to install the Self-Service Portal WebApp using Setup.
 
 1.  Select **Service Manager Self-Service Portal** in Service Manager setup wizard.
@@ -130,6 +129,7 @@ Use the following steps to install the Self-Service Portal WebApp using Setup.
     ![Screenshot showing the Finished page.](./media/deploy-self-service-portal/sm-ssp13.png)
 
 ### Install the Self-Service portal webapp using the command line
+
 You can modify the following example to install the Self-Service portal.
 
 ```
@@ -137,6 +137,7 @@ SetupWizard.exe /Install:SelfServicePortal /silent /accepteula /CustomerExperien
 ```
 
 ### Complete the installation
+
 Use the following step to complete your installation.
 
 - Restart IIS. You can access the Web App (http://yourwebsite:port) in your browser. It will resemble the following image.
@@ -144,6 +145,7 @@ Use the following step to complete your installation.
   ![Screenshot showing the Self-Service Portal.](./media/deploy-self-service-portal/sm-sspdeploy-complete.png)
 
 ## Customize the Self-Service portal
+
 The following section describes how you can customize the Self-Service portal to suit your organization.
 
 Before you install any Update Rollup for Service Manager, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml). Then use the following steps to get started.
@@ -152,7 +154,6 @@ Before you install any Update Rollup for Service Manager, note that all customiz
 2.	Move your customizations from sidebar.cshtml to the new file, which is CustomSidebar.cshtml.
 
 In the future, you need to make all customizations to the Service Manager Self-Service portal’s sidebar in the CustomSidebar.cshtml file.
-
 
 ### Basic customization
 
@@ -177,11 +178,13 @@ The `<appSettings>` tab in the Web.config file offers some standard settings to 
 > You must restart the IIS service after you make any changes to the Web.config file.
 
 ### Style customization
+
 Web page style, such as font, color, and background, is customized by adding the Custom.css file in the \Content\css website folder.
 
 Styles defined in the CSS file override the default styles of the Self-Service Portal.
 
 ### Customizing the left menu bar
+
 You can modify the content shown in the left navigation bar (menu) by editing the Sidebar.cshtml file, which is in the \Views\Shared inside the website folder.
 
 For example:
@@ -189,10 +192,6 @@ For example:
 ![Screenshot showing the sidebar.cshtml.](./media/deploy-self-service-portal/sm-sspsidebar.png)
 
 You can add or remove shortcuts from the menu, and you can customize them with details for the CSS class, keyboard hotkeys, and others.
-
-### Additional UI customization
-
-For more information about UI customization, see [The Official System Center Service Manager Blog](https://techcommunity.microsoft.com/t5/system-center-blog/basic-ui-customization-in-the-new-self-service-portal-html5/ba-p/351441).
 
 ## Next steps
 

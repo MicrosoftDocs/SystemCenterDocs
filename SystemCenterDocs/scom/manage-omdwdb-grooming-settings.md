@@ -1,24 +1,20 @@
 ---
-title: How to Configure Grooming Settings for the Reporting Data Warehouse Database
+title: Configure Grooming Settings for the Reporting Data Warehouse Database
 description: This article reviews the default grooming settings for the Reporting data warehouse database and how to modify those settings.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
-ms.custom: na
+ms.date: 06/19/2024
+ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 8dfd8f03-85ac-4231-8861-1d98e354cf94
 ---
 
-# How to configure grooming settings for the Reporting data warehouse database
+# Configure grooming settings for the Reporting data warehouse database
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The Reporting data warehouse stores data for a specified length of time, depending on the data (Alert, State, Event, Aem, or Performance) and the aggregation type (raw data, hourly aggregations, daily aggregations).  The database is set up to delete older data in order to maintain performance by managing its size.  Deleting the older data is called **grooming**.  
 
@@ -39,33 +35,33 @@ The following table highlights the default data types and retention period after
 
 Settings for grooming the data warehouse can be changed through Microsoft SQL Server Management Studio.  
 
-## To change grooming settings in the Reporting data warehouse  
+## Change grooming settings in the Reporting data warehouse  
 
-1.  Sign in to the computer with an account that's a member of the SQL Server sysadmin fixed server role.
+1. Sign in to the computer with an account that's a member of the SQL Server sysadmin fixed server role.
 
-2.  On the Start Page, enter **SQL Server Management Studio** and the program will appear.  Select the program to open SQL Server Management Studio. You might want to right-click the program and pin it to the Start Page.
+2. On the Start Page, enter **SQL Server Management Studio** and the program will appear.  Select the program to open SQL Server Management Studio. You might want to right-click the program and pin it to the Start Page.
 
-3.  In the **Connect to Server** dialog, in the **Server Type** list, select **Database Engine**; in the **Server Name** list, select the server and instance for your Reporting data warehouse (for example, computer\INSTANCE1); in **Authentication** list, select **Windows Authentication**; and select **Connect**.  
+3. In the **Connect to Server** dialog, in the **Server Type** list, select **Database Engine**; in the **Server Name** list, select the server and instance for your Reporting data warehouse (for example, computer\INSTANCE1); in **Authentication** list, select **Windows Authentication**; and select **Connect**.  
 
-4.  In the Object Explorer pane, expand **Databases**, expand **OperationsManagerDW**, and then expand **Tables**.  
+4. In the Object Explorer pane, expand **Databases**, expand **OperationsManagerDW**, and then expand **Tables**.  
 
-5.  Right-click **dbo.Dataset,** and select **Open Table**.  
+5. Right-click **dbo.Dataset,** and select **Open Table**.  
 
-6.  Locate the dataset for which you want to change the grooming setting in the **DatasetDefaultName** column and make note of its GUID in the **DatasetId** column.  
+6. Locate the dataset for which you want to change the grooming setting in the **DatasetDefaultName** column and make note of its GUID in the **DatasetId** column.  
 
-7.  In the Object Explorer pane, right-click **dbo.StandardDatasetAggregation** and select **Open Table**.  
+7. In the Object Explorer pane, right-click **dbo.StandardDatasetAggregation** and select **Open Table**.  
 
-8.  In the **DatasetId** column, locate the dataset GUID you noted in step 5. Multiple entries of the same GUID might display.  
+8. In the **DatasetId** column, locate the dataset GUID you noted in step 5. Multiple entries of the same GUID might display.  
 
-9.  Locate the aggregation type from the list in the **AggregationTypeId** column by using the following values:  
+9. Locate the aggregation type from the list in the **AggregationTypeId** column by using the following values:  
 
-    -   0 = raw, nonaggregated data  
+    - 0 = raw, nonaggregated data  
 
-    -   10 = subhourly  
+    - 10 = subhourly  
 
-    -   20 = hourly  
+    - 20 = hourly  
 
-    -   30 = daily  
+    - 30 = daily  
 
 After you've located the dataset and its aggregation type, scroll to the **MaxDataAgeDays** column, and then edit the value there to set the grooming interval.  
 

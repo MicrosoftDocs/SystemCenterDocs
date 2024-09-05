@@ -1,23 +1,17 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
 ms.topic: article
-ms.date: 04/17/2024
-title: Installing DPM
+ms.date: 08/20/2024
+title: Install Data Protection Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
+ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24
 ---
 
 # Get DPM installed
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
@@ -28,7 +22,7 @@ Here's what you need to do to set up System Center Data Protection Manager (DPM)
 
 ::: moniker range="sc-dpm-2019"
 
-> [!NOTE] 
+> [!NOTE]
 > With DPM 2019 UR4, a fresh installation of the Update Rollup agent might restart the protected server.
 
 ::: moniker-end
@@ -50,124 +44,134 @@ Table A
 |A4V2|40|150 GB|Net 10% churn|
 |A8V2|60|200 GB|Net 15% churn|
 
+:::moniker range="sc-dpm-2022"
+>[!NOTE]
+>As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+:::moniker-end
+
+:::moniker range="<=sc-dpm-2019"
+>[!NOTE]
+>As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+:::moniker-end
+
 ## <a name="BKMK_SQL"></a>Set up a SQL Server database
+
 You'll need to set up a SQL Server database if:
 
 ::: moniker range="<= sc-dpm-2019"
 
--   You're running DPM 2019, 2016
+- You're running DPM 2019, 2016
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 
--   You're running DPM 2022, 2019, 2016
+- You're running DPM 2022, 2019, 2016
 
 ::: moniker-end
 
 To set up a SQL Server database:
 
-1.  Run SQL Server setup on the local server on which you'll install DPM or on a remote server.
+1. Run SQL Server setup on the local server on which you'll install DPM or on a remote server.
 
-1.  On the **Installation**, select **New SQL Server stand-alone installation** or **add features to an existing installation**.
+1. On the **Installation**, select **New SQL Server stand-alone installation** or **add features to an existing installation**.
 
-1.  On the **Product Key**, enter a valid license key. On the **Setup Support Rules**, correct any failures before proceeding.
+1. On the **Product Key**, enter a valid license key. On the **Setup Support Rules**, correct any failures before proceeding.
      On the **Setup Role**, select **SQL Server Feature Installation**.
 
-1.  On the **Feature Selection**, select **Database Engine Services**. In **Instance Features**, select **Reporting Service - Native**.
+1. On the **Feature Selection**, select **Database Engine Services**. In **Instance Features**, select **Reporting Service - Native**.
      On the **Installation Rules**, review the rules.
 
-1.  On the **Instance Configuration**, specify the name of the SQL Server Instance you'll use for DPM.  Don't use underscore or localized characters in the name. In **Disk Space Requirements**, review the information.
+1. On the **Instance Configuration**, specify the name of the SQL Server Instance you'll use for DPM.  Don't use underscore or localized characters in the name. In **Disk Space Requirements**, review the information.
 
-1.  In **Server Configuration** > **Service Accounts**, specify the domain accounts under which the SQL Server Services should run:
+1. In **Server Configuration** > **Service Accounts**, specify the domain accounts under which the SQL Server Services should run:
 
-    -   We recommend you use a single, dedicated domain user account to run SQL Server Services, SQL Server Agent, SQL Server Database Engine, and SQL Server Reporting Services.
+    - We recommend you use a single, dedicated domain user account to run SQL Server Services, SQL Server Agent, SQL Server Database Engine, and SQL Server Reporting Services.
 
-    -   If you're installing DPM on an RODC, then use the *DPMSQLSvcsAcctaccount* you created there. Note that the user account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After the setup is complete, you can remove the user account from the local Administrators group.  In addition, for installation on an RODC, you'll need to enter the password you selected when you set up RODC for DPM and create the *DPMR$MACHINENAME* account.
+    - If you're installing DPM on an RODC, then use the *DPMSQLSvcsAcctaccount* you created there. Note that the user account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After the setup is complete, you can remove the user account from the local Administrators group.  In addition, for installation on an RODC, you'll need to enter the password you selected when you set up RODC for DPM and create the *DPMR$MACHINENAME* account.
 
-    -   When you create a domain user account, give it the lowest possible privileges, assign it a strong password that doesn't expire, and give it an easily identifiable name. You'll add this account to the local Administrators group and the SQL Server Sysadmin fixed server role later in the wizard.
+    - When you create a domain user account, give it the lowest possible privileges, assign it a strong password that doesn't expire, and give it an easily identifiable name. You'll add this account to the local Administrators group and the SQL Server Sysadmin fixed server role later in the wizard.
 
-    -   All services except the SQL Full-text Filter Daemon Launcher should be set to Automatic.
+    - All services except the SQL Full-text Filter Daemon Launcher should be set to Automatic.
 
 ::: moniker range="sc-dpm-2022"
 
-7.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
-    
+7. On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+
     If you use SQL Server 2022, you need to install [SQL Server Native Client (SQLNCLI)](https://www.microsoft.com/download/details.aspx?id=50402) on the SQL Server 2022 machine.
 
     SQLNCLI is a pre-requisite for DPM 2022 RTM installation but isn't available in SQL Server 2022. Hence, after SQL Server 2022 installation you would also need to install SQL Server Native Client separately on the SQL Server machine.  After that, ensure that you install DPM 2022 RTM and update to UR1 or later, which supports SQL Server 2022 as the DPM Database and uses OLEDB 18.0 instead of SQLNCLI.
 
-8.  If you're installing SQL Server on a remote computer, do the following:
+8. If you're installing SQL Server on a remote computer, do the following:
 
-    -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
+    - Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
-    -   Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
+    - Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
 
-        -   Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
+        - Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
 
-        -   To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
+        - To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
             The report server listens for HTTP requests on port 80.
 
-        -   Enable RPC on the remote SQL Server.
+        - Enable RPC on the remote SQL Server.
 
-        -   The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
+        - The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
 
-        -   Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
+        - Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
 
-        -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
+        - You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
 
 ::: moniker-end
 
 ::: moniker range="<= sc-dpm-2019"
 
-7.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+7. On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
 
-8.  If you're installing SQL Server on a remote computer, do the following:
+8. If you're installing SQL Server on a remote computer, do the following:
 
-    -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
+    - Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
-    -   Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
+    - Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
 
-        -   Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
+        - Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
 
-        -   To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
+        - To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
             The report server listens for HTTP requests on port 80.
 
-        -   Enable RPC on the remote SQL Server.
+        - Enable RPC on the remote SQL Server.
 
-        -   The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
+        - The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
 
-        -   Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
+        - Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
 
-        -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
+        - You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
 
 ::: moniker-end
 
 > [!NOTE]
-> - With SQL 2017 and later, SSRS doesn't get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
-> - For remote clustered SQL Instance, Database Engine must be on the cluster and SSRS must be on a separate computer (which can be the DPM server or any other computer).
-> - In both local or remote SQL Server scenarios, the following components must be installed on the DPM server.<br>
+>- With SQL 2017 and later, SSRS doesn't get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
+>- For remote clustered SQL Instance, Database Engine must be on the cluster and SSRS must be on a separate computer (which can be the DPM server or any other computer).
+>- In both local or remote SQL Server scenarios, the following components must be installed on the DPM server.<br>
      - [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) is no longer installed with SQL Server; you must install an equivalent version of SSMS separately.<br>
      - For SQL Server 2019, along with SSMS you should also install [SQLCMD](/sql/tools/sqlcmd-utility), [Visual C++ 2017 Redistributable](/cpp/windows/latest-supported-vc-redist?preserve-view=true&view=msvc-170), and [Microsoft ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server#version-17) on the DPM server separately.
-
-
 
 ## <a name="BKMK_Install"></a>Install DPM
 
 >[!IMPORTANT]
 > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDNs).
 
-1.  If required, extract the DPM 2016.exe (for DPM 2016)/DPM 2019.exe (for DPM 2019) file onto the machine on which you want to run DPM. To do this, run the exe file, and on the **Welcome** screen, select **Next**. In **Select Destination Location**, specify where you want to extract the installation files to. In **Ready to Extract**, select **Extract**. After the extraction finishes, go to the specified location and run **Setup.exe**.
+1. If required, extract the DPM 2016.exe (for DPM 2016)/DPM 2019.exe (for DPM 2019) file onto the machine on which you want to run DPM. To do this, run the exe file, and on the **Welcome** screen, select **Next**. In **Select Destination Location**, specify where you want to extract the installation files to. In **Ready to Extract**, select **Extract**. After the extraction finishes, go to the specified location and run **Setup.exe**.
 
-2.  On the **Welcome** page of DPM Setup, select **Next**. On the **License Terms** page, accept the agreement > **OK**.
+2. On the **Welcome** page of DPM Setup, select **Next**. On the **License Terms** page, accept the agreement > **OK**.
 
-3.  On the **Prerequisites Check** page, wait for the check and resolve any issues before proceeding.
+3. On the **Prerequisites Check** page, wait for the check and resolve any issues before proceeding.
 
-4.  On the **Product Registration** page, select **Next**. On the **Microsoft Update Opt-In** page, choose whether you want to include DPM in your Microsoft Updates.
+4. On the **Product Registration** page, select **Next**. On the **Microsoft Update Opt-In** page, choose whether you want to include DPM in your Microsoft Updates.
 
-5.  On the **Summary of Settings** page, check the settings and select **Install**. After the installation is completed, select **Close**. It will automatically launch a Windows update to check for changes.
+5. On the **Summary of Settings** page, check the settings and select **Install**. After the installation is completed, select **Close**. It will automatically launch a Windows update to check for changes.
 
 ## <a name="BKMK_Unattend"></a>Run an unattended install
+
 Run an unattended install as follows:
 
 1. Ensure that you have the prerequisites installed before you start.
@@ -220,9 +224,10 @@ Run an unattended install as follows:
    - `<path>` is the location of the .ini file.
 
 ## <a name="BKMK_DC"></a>Install DPM on a domain controller
+
 If you want to set up DPM on an RODC, you'll need to do a couple of steps before you set up the SQL Server and install DPM.
 
-1.  Create the security groups and accounts needed for DPM. To do this, select **Start** > **Administrative Tools** > **Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group, use the default setting for Scope (Global) and Group type (Security):
+1. Create the security groups and accounts needed for DPM. To do this, select **Start** > **Administrative Tools** > **Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group, use the default setting for Scope (Global) and Group type (Security):
 
     - DPMDBReaders$<*Computer Name*>;
     - MSDPMTrustedMachines$<*Computer Name*>;
@@ -233,50 +238,50 @@ If you want to set up DPM on an RODC, you'll need to do a couple of steps before
     - DPMSCOM$<*Computer Name*>;
     - DPMRATrustedDPMRAs$<*Computer Name*>, where <*Computer Name*> is the name of the domain controller.
 
-2.  Add the local machine account for the domain controller (<*Computer Name*>) to the `MSDPMTrustedMachines$<*Computer Name*>` group. Then on the primary domain controller, create a domain user account with the lowest possible credentials. Assign it a strong password that doesn't expire and add it to the local administrators' group.
+2. Add the local machine account for the domain controller (<*Computer Name*>) to the `MSDPMTrustedMachines$<*Computer Name*>` group. Then on the primary domain controller, create a domain user account with the lowest possible credentials. Assign it a strong password that doesn't expire and add it to the local administrators' group.
 
     > [!NOTE]
     > Make a note of this account because you need to configure the SQL Server Services during the installation of the SQL Server. You can name this user account anything you want. However, to easily identify the account's purpose, you might want to give it a significant name, such as *DPMSQLSvcsAcct*. For these procedures, this account is referred to as the *DPMSQLSvcsAcct* account.
 
-3.  On the primary domain controller, create another domain user account with the lowest possible credentials and name the account *DPMR$MACHINENAME*, assign it a strong password that doesn't expire, and then add this account to the `DPMDBReaders$<*Computer Name*>` group.
+3. On the primary domain controller, create another domain user account with the lowest possible credentials and name the account *DPMR$MACHINENAME*, assign it a strong password that doesn't expire, and then add this account to the `DPMDBReaders$<*Computer Name*>` group.
 
-4.  Then create the security groups and user accounts needed for the SQL Server database with scope: global and Group type: security. The group or account should be in this format <*grouporaccountnameComputerName*>.
+4. Then create the security groups and user accounts needed for the SQL Server database with scope: global and Group type: security. The group or account should be in this format <*grouporaccountnameComputerName*>.
 
-    -   SQLServerSQL2005BrowserUser$<*Computer Name*>
+    - SQLServerSQL2005BrowserUser$<*Computer Name*>
 
-    -   SQLServerMSSQLServerADHelperUser$<*Computer Name*>
+    - SQLServerMSSQLServerADHelperUser$<*Computer Name*>
 
-    -   SQLServerReportServerUser$<*Instance ID*><*Instance Name*>
+    - SQLServerReportServerUser$<*Instance ID*><*Instance Name*>
 
-    -   SQLServerMSASUser$<*Computer Name*><*Instance Name*>
+    - SQLServerMSASUser$<*Computer Name*><*Instance Name*>
 
-    -   SQLServerDTSUser$<*Computer Name*>
+    - SQLServerDTSUser$<*Computer Name*>
 
-    -   SQLServerFDHostUser<*Computer Name*><*Instance Name*>
+    - SQLServerFDHostUser<*Computer Name*><*Instance Name*>
 
-    -   where <*Computer Name*> is the computer name of the domain controller on which SQL Server 2008 will be installed.
+    - where <*Computer Name*> is the computer name of the domain controller on which SQL Server 2008 will be installed.
          - <*Instance Name*> is the name of the instance of SQL Server that you plan to create on the domain controller. The instance name can be any name other than the default DPM instance name (MSDPM2010).
          - <*Instance ID*> by default is assigned by SQL Server Setup and indicates that the group applies to Reporting Services (MSRS) for the major version of the instance (10) of SQL Server. For this release, this value is MSRS1A0_50.
 
-5.  On the primary domain controller, add the domain user account that you created earlier (the DPMSQLSvcsAcct account) to the following groups:
+5. On the primary domain controller, add the domain user account that you created earlier (the DPMSQLSvcsAcct account) to the following groups:
     SQLServerReportServerUser$<*ComputerName*>$MSRS10.<*InstanceID*>
     SQLServerMSASUser$<*ComputerName*>$<*InstanceID*>
 
-6.  After you've completed these steps, you can install the SQL Server:
+6. After you've completed these steps, you can install the SQL Server:
 
-    -   Sign-in to the domain controller on which you want to install DPM using the domain user account that you created earlier. Let's refer to this account as DPMSQLSvcsAcct.
+    - Sign-in to the domain controller on which you want to install DPM using the domain user account that you created earlier. Let's refer to this account as DPMSQLSvcsAcct.
 
-    -   Start installing the SQL Server. On the **Server Configuration - Service Accounts** page of Setup, specify the sign-in account for the SQL Server Services (SQL Server Agent, SQL Server Database Engine, SQL Server Reporting Services) to run under the user account DPMSQLSvcsAcct.
+    - Start installing the SQL Server. On the **Server Configuration - Service Accounts** page of Setup, specify the sign-in account for the SQL Server Services (SQL Server Agent, SQL Server Database Engine, SQL Server Reporting Services) to run under the user account DPMSQLSvcsAcct.
 
-    -   After the SQL Server is installed, open **SQL Server Configuration Manager** > **SQL Server Network Configuration** > **Protocols**, right-click **Named Pipes** > **Enable**. You'll need to stop and restart the SQL Server Services.
+    - After the SQL Server is installed, open **SQL Server Configuration Manager** > **SQL Server Network Configuration** > **Protocols**, right-click **Named Pipes** > **Enable**. You'll need to stop and restart the SQL Server Services.
 
-7.  Then you can install DPM:
+7. Then you can install DPM:
 
-    -   On the **SQL Server Settings** page, type the name of the instance of SQL Server that you installed in the procedure as localhost\\&lt;Instance Name&gt;, and then type the credentials for the first domain user account you created (the DPMSQLSvcsAcct account).  This account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After the setup is complete, you can remove the user account from the local Administrators group.
+    - On the **SQL Server Settings** page, type the name of the instance of SQL Server that you installed in the procedure as localhost\\&lt;Instance Name&gt;, and then type the credentials for the first domain user account you created (the DPMSQLSvcsAcct account).  This account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After the setup is complete, you can remove the user account from the local Administrators group.
 
-    -   On the **Security Settings** page, you'll need to enter the same password that you used when you created the DPMR$MACHINENAME user account earlier.
+    - On the **Security Settings** page, you'll need to enter the same password that you used when you created the DPMR$MACHINENAME user account earlier.
 
-    -   Open SQL Server Management Studio and connect to the instance of SQL Server that DPM is configured to use. Select **New Query**, copy the text below to the right pane, and then press F5 to run the query.
+    - Open SQL Server Management Studio and connect to the instance of SQL Server that DPM is configured to use. Select **New Query**, copy the text below to the right pane, and then press F5 to run the query.
 
         ```
         use DPMDB
@@ -292,10 +297,10 @@ If you want to set up DPM on an RODC, you'll need to do a couple of steps before
 
 ## Upgrade SQL 2016 to SQL 2017
 
-If you want to use SQL 2017 with DPM Semi-Annual Channel 1801 or later, you must upgrade SQL 2016 to SQL 2017. You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
+You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
 
 >[!NOTE]
-> SQL 2017 is supported as a database with DPM 1801 in upgrade scenarios. With DPM 2019, SQL 2017 is supported as a DPM database in both new installation and upgrade scenarios of DPM.
+> With DPM 2019, SQL 2017 is supported as a DPM database in both new installation and upgrade scenarios of DPM.
 
 1. On the SQL Server, back up the Reporting database.
 2. Back up the Encryption Keys.

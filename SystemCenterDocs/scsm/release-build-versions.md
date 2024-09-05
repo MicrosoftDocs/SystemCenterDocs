@@ -14,11 +14,7 @@ ms.custom: engagement-fy23
 
 # System Center – Service Manager build versions
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
@@ -77,29 +73,8 @@ The following table lists the release history for Service Manager 2016.
 
 ::: moniker-end
 
-::: moniker range="sc-sm-1801"
 
-## Service Manager 1801 build versions
 
-The following table lists the release history for Service Manager 1801.
-
-| Build Number | KB | Release Date | Description |
-| --- | --- |--- |--- |
-| 7.7.16.0 | n/a | January 2018 | Version 1801 |
-
-::: moniker-end
-
-::: moniker range="sc-sm-1807"
-
-## Service Manager 1807 build versions
-
-The following table lists the release history for Service Manager 1807.
-
-| Build Number | KB | Release Date | Description |
-| --- | --- |--- |--- |
-| 7.7.16.34 | [4338239](https://support.microsoft.com/kb/4338239) | July 2018 | Version 1807 |
-
-::: moniker-end
 
 ## Next steps
 

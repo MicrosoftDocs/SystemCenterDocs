@@ -1,29 +1,25 @@
 ---
 title: Get Tier activity in System Center - Orchestrator
 description: The Get Tier activity is used in a runbook to return data on all tiers within the VMM management server. This article also lists the filters and published data.
-ms.date: 02/16/2024
+ms.date: 06/05/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Get Tier activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Tier activity is used in a runbook to return data on all tiers within the VMM management server. The Published Data below is returned for each tier.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-##  Filters
+## Filters
 
 **Element**<br>Service Name<br>Tier Name<br>State<br>Status<br>\# of Machines<br>Min \# of Machines<br>Max \# of Machines<br>Date added<br>Date modified<br>All Vms Accessible<br>Enabled
 

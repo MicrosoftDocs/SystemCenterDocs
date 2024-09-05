@@ -5,7 +5,7 @@ description: This article describes how to clone VMs in the VMM fabric from anot
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/19/2024
+ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,13 +15,8 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Clone VMs from another VM in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
-
-This article describes how to create and deploy virtual machines by cloning existing VMs in the System Center - Virtual Machine Manager (VMM) fabric.
+This article describes how to create and deploy virtual machines by cloning existing VMs in the System Center Virtual Machine Manager (VMM) fabric.
 
 
 ## Before you start
@@ -39,19 +34,19 @@ This article describes how to create and deploy virtual machines by cloning exis
 2. In **Create Virtual Machine Wizard** > **Select Source**, select **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**. Select an existing VM.
 3. In **Select Source**, select **Next**.
 4. In **Configure Hardware**, optionally configure any available settings. Select **Next**.
-5. In the **Select Destination** page, specify how the virtual machine should be deployed - in a private cloud, on a host, or stored in the library.
+5. In the **Select Destination** page, specify how the virtual machine must be deployed - in a private cloud, on a host, or stored in the library.
 
 
 
 ## Deploy the VM in a private cloud
 
-1.  In **Select Cloud**, select the private cloud on which you want to place the virtual machine. If you're connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. Cloud suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
+1.  In **Select Cloud**, select the private cloud on which you want to place the virtual machine. If you're connected as an Administrator, you can select the host on which the virtual machine must be deployed in the private cloud. Cloud suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
 
     -   **Expected utilization**: Expected utilization for a VM created from a blank VHD is based on standard defaults. VMM updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
-    -   **Make this VM highly available**: With this option selected, only hosts that are located in a cluster are available for selection.
+    -   **Make this VM highly available**: If this option is selected, only hosts that are located in a cluster are available for selection.
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
-    -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
+    -   **Rating Explanation**: Provides an explanation why a host received a zero rating.
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
         
         The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
 
@@ -68,7 +63,7 @@ This article describes how to create and deploy virtual machines by cloning exis
     -   **Make this VM highly available**: With this option selected, only hosts that are located in a cluster are available for selection.
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
     -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
 
         The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
 

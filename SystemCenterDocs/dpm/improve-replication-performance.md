@@ -3,7 +3,7 @@ description: This article describes the steps you can take to improve replicatio
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 01/17/2024
+ms.date: 06/27/2024
 title: Improve replication performance
 ms.subservice: data-protection-manager
 ms.assetid: dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
@@ -15,15 +15,10 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Improve replication performance
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
-There are many steps you can take to optimize the performance of System Center 2012 - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
+There are many steps you can take to optimize the performance of System Center - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
 
 ## Network throttling
+
 Network bandwidth usage throttling is configured at backed up machine level and you  can specify different network bandwidth usage throttling rates for work hours, non-work hours, and weekends, and you define the times for each of those categories. Enable throttling as follows:
 
 1. Open DPM console > **Management** > **Agent**, select the machine on which you want to throttle bandwidth > **Throttle**.
@@ -46,24 +41,42 @@ If the DPM bandwidth usage limit, either by itself or in combination with the li
 For example, if a DPM computer with a 1 gigabit per second (Gbps) network connection has a Group Policy reservable bandwidth limit of 20%, 200 Mbps of bandwidth is reserved for all programs that use the Packet Scheduler. If DPM bandwidth usage is then set to a maximum of 150 Mbps while Internet Information Services (IIS) bandwidth usage is set to a maximum of 100 Mbps, the combined bandwidth usage limits of DPM and IIS exceed the Group Policy reservable bandwidth limit and the DPM limit might not be applied. To resolve this issue, reduce the DPM setting for network bandwidth usage throttling.
 
 ## Enable data compression
+
 On-the-wire compression is configured at the protection-group level for backup to tape. Compressing data reduces the space needed on the tape and increases the number of backup jobs that can be stored on the same tape. Compression doesn't significantly increase the time required to complete the backup job. Encryption increases data security and also doesn't significantly increase the time required for the backup job. Encryption requires a valid certificate on the DPM server. Configure compression as follows:
 
-1.  Open the DPM Administrator console > **Protection** view.
+1. Open the DPM Administrator console > **Protection** view.
 
-2.  Select **Optimize performance**.
-    On the **Network** tab, check **Enable on-the-wire compression**.
+2. Select **Optimize performance**.
+   On the **Network** tab, check **Enable on-the-wire compression**.
 
 ## Stagger synchronization start times
+
 To optimize performance, you can offset the start time of synchronization jobs across different protection groups so that all of them don't start at the same time. Offsetting synchronization start times can also be used to optimize secondary protection of another DPM server. Offset as follows:
 
-1.  Select DPM Administrator Console > Protection and select a protection group.
+1. Select DPM Administrator Console > Protection and select a protection group.
 
-2.  Select **Optimize performance**. On the Network tab, select the hours and minutes to offset the start of the synchronization job in the **Offset** \<time\> start time by field.
+2. Select **Optimize performance**. On the Network tab, select the hours and minutes to offset the start of the synchronization job in the **Offset** \<time\> start time by field.
 
 ## Optimize express backups
+
 To provide quick recovery of application data, DPM must create an express full backup periodically. The express full backup operation typically increases the demand on the server's resources by 5% for several minutes. To reduce the demand on the server's resources, you can schedule fewer express full backups, but this can increase the data recovery time. Modify the schedule as follows:
 
-1.  Select  DPM Administrator Console > **Protection** and select the  protection group for which you want to modify the express full backup schedule.
+1. Select  DPM Administrator Console > **Protection** and select the  protection group for which you want to modify the express full backup schedule.
 
-2.  Select **Optimize performance** and on the **Express Full Backup** tab, select the available times for the express full backups and select **Add**.
-    Select the days of the week for the express full backups.
+2. Select **Optimize performance** and on the **Express Full Backup** tab, select the available times for the express full backups and select **Add**.
+   Select the days of the week for the express full backups.
+
+## Optimize client computer performance
+
+On some client computers, you may notice the computer running slow when a backup is in progress. You can improve the client computer’s responsiveness by adding the following registry setting.
+The *ClientProtection* key and *WaitInMSPerRequestForClientRead* value aren't present by default, you must create them.
+
+- **Key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection`
+- **Value**: `WaitInMSPerRequestForClientRead`
+- **Data**: 50
+- **Type**: DWORD
+
+The default value for this DWORD is 50 (32H) and the supported range is 40 to 100. You can increase it to 75 to improve client responsiveness. If you want to increase/improve backup speed at the expense of responsiveness, reduce the value to 40.
+
+>[!NOTE]
+> Increase in `WaitInMSPerRequestForClientRead` value causes the DPM synchronization jobs to take longer.

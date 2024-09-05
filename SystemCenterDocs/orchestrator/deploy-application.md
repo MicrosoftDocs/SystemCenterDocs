@@ -18,11 +18,7 @@ ROBOTS: noindex
 
 # Deploy application activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Deploy Application activity is used to create new application
 deployments and assign them to collections. This activity uses the new

@@ -18,11 +18,7 @@ ms.date: 04/27/2023
 ---
 # Update VM Instance
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Update VM Instance** activity updates the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

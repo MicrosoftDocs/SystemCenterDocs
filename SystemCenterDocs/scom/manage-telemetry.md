@@ -5,20 +5,14 @@ description: This article provides information about how to manage the telemetry
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  07/20/2023
+ms.date:  07/22/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: operations-manager
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ---
 
 # Manage telemetry settings in Operations Manager
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Operations Manager.
 
@@ -42,13 +36,12 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
    > [!NOTE]
    > We recommend you to read the Privacy Statement before you select the option.
-   > -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
-   > -  To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
+   > - To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
+   > - To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
 
 ## Telemetry data collected
 
 The following table details the telemetry data that is collected by Operations Manager:  
-
 
 | Data related To | Data collected |
 | --- | --- |
@@ -58,7 +51,7 @@ The following table details the telemetry data that is collected by Operations M
 | **SCOM Console** |  Time taken for the windows console to launch <br /><br /> 	Time taken for each of the monitoring screens to launch <br /><br /> 	Time taken for each of the administration screens to launch <br /><br /> 	Number of times network vicinity dashboard is launched <br /><br /> 	Number of times the data warehouse jobs are failing <br /><br /> 	Number of times the web console is being launched <br /><br /> 	Number of times the Maintenance mode task and SMM SDK calls are made for create and edit to determine adoption of new feature
 | **Updates and recommendations** |	Number of times the Updates and Recommendations link clicked/refreshed<br /><br /> 	Number of times the online catalog was down while loading Updates and Recommendations view <br /><br />	Time taken to load the Updates and Recommendations view <br /><br /> 	Number of workloads in Updates and Recommendations view has Updates available status <br /><br /> 	Number of workloads in Updates and Recommendations view have Not installedstatus <br /><br /> 	Number of workloads in Updates and Recommendations view has Partially installed status <br /><br /> 	Number of workloads shown in Updates and Recommendation <br /><br />  Number of times  Get MP link is clicked in Updates and Recommendations view <br /><br /> 	Number of times Get All MPs link is clicked in Updates and Recommendations view <br /><br /> 	Number of times View Guide link is clicked in Updates and Recommendations view <br /><br /> 	Workload selected in Get MP call in Updates and Recommendations view <br /><br /> 	Workloads selected in Get All MPs call in Updates and Recommendations view <br /><br /> 	Workload install status in Get MP call in Updates and Recommendations view <br /><br /> 	Workloads install status in Get All MPs call in Updates and Recommendations view<br /><br /> 	Time taken to install workload in Get MP call in Updates and Recommendationsview <br /><br />	Time taken to install workloads in Get All MPs call in *Updates and Recommendations* view <br /><br /> Is the installation fresh or upgrade <br /><br /> 	TotalSetuptimeInMinutes <br /><br /> 	Is setup silent  <br /><br /> 	Is error reporting enabled <br /><br /> 	Is the Microsoft update true or false <br /><br /> 	Is the setup 64 bit <br /><br /> 	SetupDefaultInstallPath <br /><br /> 	Install result - success or failure
 | **Database** | 	Whether the management server installation is fresh or upgrade<br /><br /> 	Whether the database (DB) installation is fresh or upgrade<br /><br /> 	Whether the data warehouse (DW) installation is fresh or upgrade <br /><br /> 	Default DB Name <br /><br /> 	DB Size in MB<br /><br /> 	DB Port <br /><br />	Is DB Local <br /><br /> 	DW Port <br /><br /> 	Is DW local <br /><br /> 	Is the SDK service using the local system account <br /><br /> 	Is the agent using the local system account <br /><br />
-| **Console Settings** |	Web console default website<br /><br /> 	Web console authorization mode<br /><br /> 	Web console SSL enabled<br /><br /> 	Count of maintenance schedules <br /><br /> 	Count of active alerts<br /><br /> 	User role <br /><br /> 	Console version <br /><br /> 	If users are enabling daily health report <br /><br /> 	If users are enabling computer discovery <br /><br /> 	If users are discovering entire domain, or the selected one<br /><br /> 	If users are enabling Auto-Select for updates <br /><br />	Telemetry on/off notifications<br /><br /> 	Click count on Tune Management Pack View <br /><br />	Click count, total days, minimum alert count, and total result set <br /><br /> 	Click count, MP name, alert name, and alert count <br /><br /> 	Click count of View or edit the settings of this monitor <br /><br /> 	Click count of View or override sources <br /><br /> 	Click count, source MP name and override MP name <br /><br />  Nano servers count (not applicable for Operations Manager 1801) <br /><br /> 	Alert view click count <br /><br /> 	Health explorer click count on alert view action menu <br /><br /> 	Open command window click count on alert view action menu <br /><br /> 	Start maintenance mode click count on alert view action menu <br /><br /> 	End maintenance mode click count on alert view action menu <br /><br /> 	Edit maintenance mode click count on alert view action menu <br /><br /> 	Time spent on alert view <br /><br /> 	Total number of items displayed on alert view <br /><br /> 	Performance view click count <br /><br /> 	Time spent on performance view<br /><br />	State view click count <br /><br /> 	Time spent on state view <br /><br /> 	Total number of items displayed on state view <br /><br /> Overrides being used <br /><br /> If notification channels & subscriptions are set up <br /><br /> Type of notification channels configured
+| **Console Settings** |	Web console default website<br /><br /> 	Web console authorization mode<br /><br /> 	Web console SSL enabled<br /><br /> 	Count of maintenance schedules <br /><br /> 	Count of active alerts<br /><br /> 	User role <br /><br /> 	Console version <br /><br /> 	If users are enabling daily health report <br /><br /> 	If users are enabling computer discovery <br /><br /> 	If users are discovering entire domain, or the selected one<br /><br /> 	If users are enabling Auto-Select for updates <br /><br />	Telemetry on/off notifications<br /><br /> 	Click count on Tune Management Pack View <br /><br />	Click count, total days, minimum alert count, and total result set <br /><br /> 	Click count, MP name, alert name, and alert count <br /><br /> 	Click count of View or edit the settings of this monitor <br /><br /> 	Click count of View or override sources <br /><br /> 	Click count, source MP name and override MP name <br /><br />  Nano servers count <br /><br /> 	Alert view click count <br /><br /> 	Health explorer click count on alert view action menu <br /><br /> 	Open command window click count on alert view action menu <br /><br /> 	Start maintenance mode click count on alert view action menu <br /><br /> 	End maintenance mode click count on alert view action menu <br /><br /> 	Edit maintenance mode click count on alert view action menu <br /><br /> 	Time spent on alert view <br /><br /> 	Total number of items displayed on alert view <br /><br /> 	Performance view click count <br /><br /> 	Time spent on performance view<br /><br />	State view click count <br /><br /> 	Time spent on state view <br /><br /> 	Total number of items displayed on state view <br /><br /> Overrides being used <br /><br /> If notification channels & subscriptions are set up <br /><br /> Type of notification channels configured
 
 ::: moniker range="sc-om-2016"
 
@@ -76,7 +69,6 @@ The following table details the telemetry data that is collected by Operations M
 - Average number of entities that are set to maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
 - System Center ID the System Center - Operations Manager environment resides in
 - Selected features
-
 
 ### HTML5 dashboards data collected through App Insights
 
@@ -101,6 +93,6 @@ The following table details the telemetry data that is collected by Operations M
 - Count of icons in topology widget
 - Widget count in a dashboard
 
-
 ## Next steps
+
 See [Plan agent deployment](plan-planning-agent-deployment.md)

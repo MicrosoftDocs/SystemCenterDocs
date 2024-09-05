@@ -1,7 +1,7 @@
 ---
 title: Get Annotation
 description: The Get Annotation activity retrieves annotations for a specified message according to the filter criteria that you specify.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -13,16 +13,10 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 06/05/2024
 ---
 
 # Get Annotation
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Annotation activity retrieves annotations for a specified message according to the filter criteria that you specify. The activity uses filters to determine which annotations retrieved from the management server should be published.
 

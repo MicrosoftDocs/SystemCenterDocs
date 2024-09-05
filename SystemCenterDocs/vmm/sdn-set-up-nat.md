@@ -5,7 +5,7 @@ description: This article describes how to configure NAT connection and NAT rule
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
+ms.date: 07/25/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,11 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 # Set up NAT for traffic forwarding in the SDN infrastructure
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to set up Network Address Translation (NAT) for traffic forwarding in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
 
@@ -62,7 +58,7 @@ Use the following procedure:
 
     ![Screenshot of nat connection.](media/sdn-nat/create-connection-directly.png)
 
-4. In the **IP address pool**, choose the IP pool from which the VIP should come from. In IP address, choose an IP address from the pool selected. Select **OK**.
+4. In the **IP address pool**, choose the IP pool from which the VIP must come from. In IP address, choose an IP address from the pool selected. Select **OK**.
 ::: moniker range=">=sc-vmm-2019"
 5. To enable IPv6, select an IPv6 address pool and provide an IPv6 address.
 ::: moniker-end
@@ -110,11 +106,11 @@ Use the following procedure to add rules to a NAT connection:
 3.	Under **Specify network address translation (NAT) rules**, select **Add**.
 Type the following details as appropriate:
 
-    - **Name** – Name for the inbound NAT rule.
-    -	**Protocol** – Inbound network traffic protocol. TCP/UDP are supported.
-    -	**Incoming Port** – Port number that you want to use along with the VIP to access the VM.
-    -	**Destination IP** – IP address of the VM to which you want to direct the external traffic.
-    -	**Destination Port** – Port number on the VM, the external traffic should be forwarded to.
+   - **Name** – Name for the inbound NAT rule.
+   - **Protocol** – Inbound network traffic protocol. TCP/UDP are supported.
+   - **Incoming Port** – Port number that you want to use along with the VIP to access the VM.
+   - **Destination IP** – IP address of the VM to which you want to direct the external traffic.
+   - **Destination Port** – Port number on the VM, the external traffic must be forwarded to.
 4.	Select **OK**.
 
 >[!NOTE]
@@ -123,8 +119,8 @@ Type the following details as appropriate:
 ## Remove a NAT rule
 Use the following procedure:
 
-1.	In the VMM console, select **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
-2.	Select **Network Address Translation** on the wizard.
+1. In the VMM console, select **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
+2. Select **Network Address Translation** on the wizard.
 3. Select the NAT rule that you want to remove, select **Remove**, and then select **OK**.
 
 ## Remove a NAT connection

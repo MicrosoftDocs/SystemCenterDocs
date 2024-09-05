@@ -1,40 +1,36 @@
 ---
 ms.assetid: e0fe4a01-8964-402b-95e9-76bc5940606a
-title: How to Manage the Report Server Unattended Execution Account in Operations Manager
+title: Manage the Report Server Unattended Execution Account in Operations Manager
 description: This topic describes how to configure the unattended execution account for the Operations Manager Reporting server.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
-ms.custom: UpdateFrequency3
+ms.date: 06/19/2024
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to Manage the Report Server Unattended Execution Account in Operations Manager
+# Manage the Report Server Unattended Execution Account in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The Operations Manager Report Server unattended execution account is used to query data from the Reporting data warehouse. Ensure to use an account that has minimum permissions (read-only access with network connection permissions is sufficient). This account isn't managed from within the Operations Manager user interface. Use this procedure to change the user name or password for this account.  
 
-### To manage the Report Server unattended execution account  
+### Manage the Report Server unattended execution account
 
-1.  From the Windows start screen, enter **Reporting** and select **Reporting Services Configuration Manager** from the search results.
+1. From the Windows start screen, enter **Reporting** and select **Reporting Services Configuration Manager** from the search results.
 
-2.  The Reporting Services Configuration Connection dialog appears so that you can select the report server instance you want to configure. Select **Connect**.
+2. The Reporting Services Configuration Connection dialog appears so that you can select the report server instance you want to configure. Select **Connect**.
 
-3.  In **Server Name**, specify the name of the computer on which the report server instance is installed. The name of the local computer appears by default, but you can enter the name of a remote SQL Server instance if you want to connect to a report server that is installed on a remote computer.  
+3. In **Server Name**, specify the name of the computer on which the report server instance is installed. The name of the local computer appears by default, but you can enter the name of a remote SQL Server instance if you want to connect to a report server that is installed on a remote computer.  
 
 4. In **Report Server Instance**, select the SQL Server Reporting Services instance that you want to configure.
 
-4.  On the **Execution Account** page, enter a new user name or password as required.  
+5. On the **Execution Account** page, enter a new user name or password as required.  
 
-5.  Select **Apply**, and then select **Exit**.  
+6. Select **Apply**, and then select **Exit**.  
 
 ## Next steps
 

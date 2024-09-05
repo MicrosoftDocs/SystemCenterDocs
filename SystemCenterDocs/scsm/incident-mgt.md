@@ -7,31 +7,25 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/18/2023
+ms.date: 07/22/2024
 ms.subservice: service-manager
 ms.assetid: 8453a3e9-56ee-4750-b111-81e241c480a4
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Configure Incident Management in Service Manager
-
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of how to configure Incident management in Service Manager. This article also contains procedures that cover incident management configuration scenarios, including configuring incident settings, configuring email incident support, and creating an incident template.
 
 Several features in Service Manager let you streamline the creation of incidents. You can configure incident settings such as the following in Service Manager:
 
--   Priority calculations that are based on impact and urgency
+- Priority calculations that are based on impact and urgency
 
--   Target resolution time
+- Target resolution time
 
--   Prefixes that are used for incident numbers
+- Prefixes that are used for incident numbers
 
--   Length of time a closed incident remains in the Service Manager database
+- Length of time a closed incident remains in the Service Manager database
 
 You can create an incident template to populate certain fields for a specified incident type, such as email-related problems. Help desk personnel use templates when creating incidents. The template prepopulates some of the fields in the incident, such as the name of the support analyst who handles email-related problems.
 
@@ -40,6 +34,7 @@ You can configure incident management to automatically generate incidents based 
 The procedures in this section describe how to configure incidents. You can define incident priority based on impact and urgency, specify resolution times based on incident priority, create an incident template, and create a new incident based on desired configuration management.
 
 ## Configure incident settings
+
 You can use the procedures in this section to configure settings for incident number prefixes, file attachment limits, incident priority calculations, resolution times, and System Center Operations Manager Web settings.
 
 In Service Manager, all the incident numbers start with **IR**. However, you can change the prefix that is used for your incident numbers.
@@ -58,6 +53,7 @@ The resolution time defines how much time it should take to resolve an incident.
 You can create a connector to import alerts and configuration items from Operations Manager. By using the Operations Manager alert connector, Service Manager can create incidents based on alerts. When you view these incidents in Service Manager, you can select a link to obtain more information about the alert or about the health state of the configuration item. Service Manager uses the Operations Manager Web console server to provide this information. Service Manager uses the URL that you specify in the Operations Manager Web setting to connect to Operations Manager.
 
 ## Create an incident template
+
 You can use the procedures in this section to create incident templates in Service Manager for problems that are, for example, related to email and printers.
 
 When an analyst at the help desk receives a call, there are many pieces of information that the analyst must gather to create an incident, such as a summary of the problem; the name of the user to whom the incident will be assigned; the impact; the urgency; and whether this is a Tier 1, 2, or 3 incident. For some systems in the enterprise, this information might already be known.
@@ -82,17 +78,17 @@ Use the following procedure to limit the number and size of files that can be at
 
 ### Set file attachment limits
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Incident Settings**.
-4.  In the **Tasks** pane, under **Incident Settings**, select **Properties**.
-5.  In the **Incident Settings** dialog, select **General**.
-6.  Set **Maximum number of attached files** to **5**.
-7.  Set **Maximum size (KB)** to **500**, and select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Incident Settings**.
+4. In the **Tasks** pane, under **Incident Settings**, select **Properties**.
+5. In the **Incident Settings** dialog, select **General**.
+6. Set **Maximum number of attached files** to **5**.
+7. Set **Maximum size (KB)** to **500**, and select **OK**.
 
 ### Validate file attachment limits
 
--   When you create a new incident or edit an existing one, no more than five files can be attached, and each file can be no larger than 500 KB.
+- When you create a new incident or edit an existing one, no more than five files can be attached, and each file can be no larger than 500 KB.
 
 ## Set parent incident options
 
@@ -106,42 +102,42 @@ Select the required tab for steps to automatically resolve, activate, or update 
 
 Follow these steps to automatically resolve child incidents:
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Incident Settings**.
-4.  In the **Tasks** pane, under **Incident Settings**, select **Properties**.
-5.  In the **Incident Settings** dialog, select **Parent Incident** and then choose one of the following actions:
-    -   If you want to automatically resolve a child incident when its parent is resolved without any analyst interaction, set **Auto resolution of child incidents** to **Automatically resolve child incidents when parent incident is resolved**, and then choose either **Same as parent incident category** or **Choose a child incident category** and a default resolution category.
-    -   If you want to automatically resolve a child incident when its parent is resolved and have an analyst review and verify the incident resolution category, select **Auto resolution of child incidents** to **Let the analyst decide when resolve the parent incident** and then choose either **Same as parent incident category** or **Choose a child incident category** and a default resolution category.
-    -   If you don't want child incidents to automatically resolve, select **Auto resolution of child incidents** to **Do not resolve child incidents when parent incident is resolved**.
-6.  Select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Incident Settings**.
+4. In the **Tasks** pane, under **Incident Settings**, select **Properties**.
+5. In the **Incident Settings** dialog, select **Parent Incident** and then choose one of the following actions:
+    - If you want to automatically resolve a child incident when its parent is resolved without any analyst interaction, set **Auto resolution of child incidents** to **Automatically resolve child incidents when parent incident is resolved**, and then choose either **Same as parent incident category** or **Choose a child incident category** and a default resolution category.
+    - If you want to automatically resolve a child incident when its parent is resolved and have an analyst review and verify the incident resolution category, select **Auto resolution of child incidents** to **Let the analyst decide when resolve the parent incident** and then choose either **Same as parent incident category** or **Choose a child incident category** and a default resolution category.
+    - If you don't want child incidents to automatically resolve, select **Auto resolution of child incidents** to **Do not resolve child incidents when parent incident is resolved**.
+6. Select **OK**.
 
 # [Activate child incidents](#tab/ActivateChildIncidents)
 
 Follow these steps to automatically activate child incidents:
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Incident Settings**.
-4.  In the **Tasks** pane, under **Incident Settings**, select **Properties**.
-5.  In the **Incident Settings** dialog, select **Parent Incident**, and then choose one of the following actions:
-    -   If you want to automatically activate a child incident when its parent is activated without any analyst interaction, set **Auto reactivation of child incidents** to **Automatically reactivate child incidents when parent incident is reactivated**, and then choose a default reactivation status.
-    -   If you want to automatically resolve a child incident when its parent is resolved and have an analyst review and verify the incident reactivation status, select **Auto reactivation of child incidents** to **Automatically reactivate child incidents when parent incident is reactivated**, and then choose a default reactivation status.
-    -   If you don't want to automatically activate child incidents, set **Auto reactivation of child incidents** to **Do not reactivate child incidents when parent incident is reactivated**.
-6.  Select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Incident Settings**.
+4. In the **Tasks** pane, under **Incident Settings**, select **Properties**.
+5. In the **Incident Settings** dialog, select **Parent Incident**, and then choose one of the following actions:
+    - If you want to automatically activate a child incident when its parent is activated without any analyst interaction, set **Auto reactivation of child incidents** to **Automatically reactivate child incidents when parent incident is reactivated**, and then choose a default reactivation status.
+    - If you want to automatically resolve a child incident when its parent is resolved and have an analyst review and verify the incident reactivation status, select **Auto reactivation of child incidents** to **Automatically reactivate child incidents when parent incident is reactivated**, and then choose a default reactivation status.
+    - If you don't want to automatically activate child incidents, set **Auto reactivation of child incidents** to **Do not reactivate child incidents when parent incident is reactivated**.
+6. Select **OK**.
 
 # [Update child incident status](#tab/UpdateChildIncidentStatus)
 
 Follow these steps to automatically update child incident status:
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Incident Settings**.
-4.  In the **Tasks** pane, under **Incident Settings**, select **Properties**.
-5.  In the **Incident Settings** dialog, select **Parent Incident**, and then choose one of the following actions:
-    -   If you want to automatically update child incident status when it's linked to a parent incident, set **Status of active child incidents when linked to parent** to **Automatically change the status of active child incidents when linking to parent**, and then choose an available incident status.
-    -   If you don't want to automatically update child incident status, set **Status of active child incidents when linked to parent** to **Do not change the status of child incidents**.
-6.  Select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Incident Settings**.
+4. In the **Tasks** pane, under **Incident Settings**, select **Properties**.
+5. In the **Incident Settings** dialog, select **Parent Incident**, and then choose one of the following actions:
+    - If you want to automatically update child incident status when it's linked to a parent incident, set **Status of active child incidents when linked to parent** to **Automatically change the status of active child incidents when linking to parent**, and then choose an available incident status.
+    - If you don't want to automatically update child incident status, set **Status of active child incidents when linked to parent** to **Do not change the status of child incidents**.
+6. Select **OK**.
 
 ---
 
@@ -151,16 +147,16 @@ Use the following procedure in Service Manager to define a priority calculation 
 
 ### Set incident priority
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Incident Settings**.
-4.  In the **Tasks** pane, under **Incident Settings**, select **Properties**.
-5.  In the **Incident Settings** dialog, select **Priority Calculation**.
-6.  For each of the High, Medium, and Low settings for both impact and urgency, select an incident priority value from 1 through 9, and select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Incident Settings**.
+4. In the **Tasks** pane, under **Incident Settings**, select **Properties**.
+5. In the **Incident Settings** dialog, select **Priority Calculation**.
+6. For each of the High, Medium, and Low settings for both impact and urgency, select an incident priority value from 1 through 9, and select **OK**.
 
 ### Validate incident priority
 
--   When you create a new incident or edit an existing one, the resulting priority setting must match the value that is entered in the table for a specific High, Medium, and Low setting that is defined for impact and urgency.
+- When you create a new incident or edit an existing one, the resulting priority setting must match the value that is entered in the table for a specific High, Medium, and Low setting that is defined for impact and urgency.
 
 ## Set the default incident resolution time
 
@@ -168,17 +164,17 @@ Use the following procedure to set a resolution time based on incident priority 
 
 ### Set resolution time
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Incident Settings**.
-4.  In the **Tasks** pane, under **Incident Settings**, select **Properties**.
-5.  In the **Incident Settings** dialog, select **Resolution Time**.
-6.  For each of the priority settings of 1 through 9, specify the amount of time for incident resolution.
-7.  Select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Incident Settings**.
+4. In the **Tasks** pane, under **Incident Settings**, select **Properties**.
+5. In the **Incident Settings** dialog, select **Resolution Time**.
+6. For each of the priority settings of 1 through 9, specify the amount of time for incident resolution.
+7. Select **OK**.
 
 ### Validate resolution time
 
--   When you create a new incident or edit an existing one, the resulting resolution times for an incident match the values that are defined in the preceding procedures.
+- When you create a new incident or edit an existing one, the resulting resolution times for an incident match the values that are defined in the preceding procedures.
 
 ## Set Operations Manager web settings in Service Manager
 
@@ -186,16 +182,16 @@ Use the following procedures to set the web settings of System Center Operations
 
 ### Set Operations Manager web settings
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Incident Settings**.
-4.  In the **Tasks** pane, under **Incident Settings**, select **Properties**.
-5.  In the **Incident Settings** dialog, select **Operations Manager Web Settings**.
-6.  In the **Web Console URL** box, enter the URL of the Operations Manager 2007 web console server, and select **OK**. For example, enter `http://servername:51908`, where *servername* is the name of the computer hosting the web console server.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Incident Settings**.
+4. In the **Tasks** pane, under **Incident Settings**, select **Properties**.
+5. In the **Incident Settings** dialog, select **Operations Manager Web Settings**.
+6. In the **Web Console URL** box, enter the URL of the Operations Manager 2007 web console server, and select **OK**. For example, enter `http://servername:51908`, where *servername* is the name of the computer hosting the web console server.
 
 ### Validate Operations Manager web settings
 
--   Ensure that you can access the web console server by entering `http://servername:51908` into your browser, where *servername* is the name of the computer hosting the web console server.
+- Ensure that you can access the web console server by entering `http://servername:51908` into your browser, where *servername* is the name of the computer hosting the web console server.
 
 ## Configure email incident support for Exchange Server
 
@@ -203,42 +199,42 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 ### Install and configure the SMTP server
 
-1.  Sign in with administrative credentials on the server that will host the Simple Mail Transfer Protocol (SMTP) server role.
+1. Sign in with administrative credentials on the server that will host the Simple Mail Transfer Protocol (SMTP) server role.
 
     > [!NOTE]
     > A server running Exchange Server can't be your SMTP server.
 
-2.  Select **Start**, navigate to **All Programs**, **Administrative Tools**, and select **Server Manager**.
-3.  In Server Manager, select **Features**, and in the **Features** pane, select **Add Features**.
-4.  In the **Select Feature** window, select **SMTP Server**.
-5.  The Add Features Wizard appears. If the dependent role services aren't already selected, you're prompted to add role services and features for the SMTP server. Select **Add Required Role Services**.
-6.  On the **Select Features** page, select **Next**.
-7.  On the **Web Server (IIS)** page, select **Next**.
-8.  On the **Select Role Service** page, select **Next**.
+2. Select **Start**, navigate to **All Programs**, **Administrative Tools**, and select **Server Manager**.
+3. In Server Manager, select **Features**, and in the **Features** pane, select **Add Features**.
+4. In the **Select Feature** window, select **SMTP Server**.
+5. The Add Features Wizard appears. If the dependent role services aren't already selected, you're prompted to add role services and features for the SMTP server. Select **Add Required Role Services**.
+6. On the **Select Features** page, select **Next**.
+7. On the **Web Server (IIS)** page, select **Next**.
+8. On the **Select Role Service** page, select **Next**.
 9. On the **Confirm Installation Selections** page, select **Install**.
 10. When the **Installation Results** page appears, select **Close** to exit the wizard.
 
 ### Configure the IIS SMTP server service for Service Manager
 
-1.  On the server that is hosting the SMTP server service, open **Administrative Tools**, and select **Internet Information Services (IIS) Manager**.
-2.  Expand the SMTP server until you see **SMTP Virtual Server #1**. The SMTP server might have a different name, but it appears with an email icon.
-3.  Right-click **SMTP Virtual Server #1**, select **Rename**, and then enter the name of your server.
-4.  Expand **Domains**, and then rename the domain to the fully qualified domain name (FQDN) of the server or the domain name that you want to use.
+1. On the server that is hosting the SMTP server service, open **Administrative Tools**, and select **Internet Information Services (IIS) Manager**.
+2. Expand the SMTP server until you see **SMTP Virtual Server #1**. The SMTP server might have a different name, but it appears with an email icon.
+3. Right-click **SMTP Virtual Server #1**, select **Rename**, and then enter the name of your server.
+4. Expand **Domains**, and then rename the domain to the fully qualified domain name (FQDN) of the server or the domain name that you want to use.
 
     > [!NOTE]
     > This can't be the same domain that the server is a member of. However, it can be a child domain.
 
     For example, if the domain name is contoso.com, you use a server name that resembles server.contoso.com.
 
-5.  Using the server name from step 3, right-click the server name, and select **Properties**.
-6.  Select the **Access** tab, and select **Relay**.
-7.  On the **Relay Restrictions** tab, select **All except the list below**, select **Allow all computers which successfully authenticate to relay regardless of the list above**, and select **OK**.
-8.  Select the **Delivery** tab, and select **Advanced**.
+5. Using the server name from step 3, right-click the server name, and select **Properties**.
+6. Select the **Access** tab, and select **Relay**.
+7. On the **Relay Restrictions** tab, select **All except the list below**, select **Allow all computers which successfully authenticate to relay regardless of the list above**, and select **OK**.
+8. Select the **Delivery** tab, and select **Advanced**.
 9. In the **Advanced Delivery** window, enter the values as shown here:
-    1.  For **Masquerade Domain**, enter your root domain name; for example, **contoso.com**.
-    2.  For the FQDN, enter your Exchange server name; for example, **exchange.contoso.com**.
-    3.  For **Smart host**, enter your Exchange server name; for example, **exchange.contoso.com**.
-    4.  Select **OK**, and select **OK** again to close the **Advanced Delivery** window.
+    1. For **Masquerade Domain**, enter your root domain name; for example, **contoso.com**.
+    2. For the FQDN, enter your Exchange server name; for example, **exchange.contoso.com**.
+    3. For **Smart host**, enter your Exchange server name; for example, **exchange.contoso.com**.
+    4. Select **OK**, and select **OK** again to close the **Advanced Delivery** window.
 10. Close IIS Manager, open Windows Explorer, and navigate to *SystemDrive*:\Inetpub\Mailroot.
 11. Create two child folders. Name the first folder **Badmail**, and name the second folder **Drop**.
 12. Right-click the *SystemDrive*:\Inetpub\Mailroot folder, and select **Share**.
@@ -247,25 +243,25 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 ### Configure Service Manager for email
 
-1.  Open the Service Manager console, and select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, double-click **Incident Settings**.
-4.  Scroll to **Incoming E-mail**.
-5.  In **The SMTP Service drop folder location**, enter the path, share, and folder for the Drop folder. In this example, enter *computer_name\mailroot\Drop*, where *computer_name* is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Drop** is the subfolder name.
-6.  In **SMTP Service bad folder location**, enter the path, share, and folder to the Badmail folder. In this example, enter *computer_name\Mailroot\Badmail* where *computer_name* is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Badmail** is the subfolder name.
-7.  In **Maximum number of e-mails to process at a time**, enter a number for the emails that you want Service Manager to process during an email processing cycle.
-8.  Select **Turn on incoming e-mails processing**, and select **OK**.
+1. Open the Service Manager console, and select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, double-click **Incident Settings**.
+4. Scroll to **Incoming E-mail**.
+5. In **The SMTP Service drop folder location**, enter the path, share, and folder for the Drop folder. In this example, enter *computer_name\mailroot\Drop*, where *computer_name* is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Drop** is the subfolder name.
+6. In **SMTP Service bad folder location**, enter the path, share, and folder to the Badmail folder. In this example, enter *computer_name\Mailroot\Badmail* where *computer_name* is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Badmail** is the subfolder name.
+7. In **Maximum number of e-mails to process at a time**, enter a number for the emails that you want Service Manager to process during an email processing cycle.
+8. Select **Turn on incoming e-mails processing**, and select **OK**.
 
 ### Configure email notifications
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Notifications**, and select **Channels**.
-3.  In the **Channels** pane, select **E-Mail Notification Channel**.
-4.  In the **Tasks** pane, under **E-Mail Notification Channel**, select **Properties** to open the **Configure E-Mail Notification Channel** dialog.
-5.  Select **Enable e-mail notifications**, and select **Add**.
-6.  In the **Add SMTP Server** dialog, enter the FQDN of the SMTP server that you want to use. For example, enter **Servername.domain.com**.
-7.  In **Port number**, enter or select the SMTP port number that you want to use. For example, select **25**.
-8.  Select **Add**, and in the **Add SMTP Server** dialog, enter the FQDN of the SMTP server that you want to use. For example, enter **Exchange.domain.com**, and replace the information with your Exchange domain name information.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Notifications**, and select **Channels**.
+3. In the **Channels** pane, select **E-Mail Notification Channel**.
+4. In the **Tasks** pane, under **E-Mail Notification Channel**, select **Properties** to open the **Configure E-Mail Notification Channel** dialog.
+5. Select **Enable e-mail notifications**, and select **Add**.
+6. In the **Add SMTP Server** dialog, enter the FQDN of the SMTP server that you want to use. For example, enter **Servername.domain.com**.
+7. In **Port number**, enter or select the SMTP port number that you want to use. For example, select **25**.
+8. Select **Add**, and in the **Add SMTP Server** dialog, enter the FQDN of the SMTP server that you want to use. For example, enter **Exchange.domain.com**, and replace the information with your Exchange domain name information.
 9. In **Port number**, enter or select the SMTP port number that you want to use. For example, select **25**.
 10. In **Authentication method**, select **Anonymous**, and select **OK**.
 11. In **Return e-mail address**, enter the email address of the service account that was used during Setup. For example, enter **Helpdek\@Servername.domain.com**.
@@ -274,34 +270,35 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 ### Validate email notification configuration
 
-1.  In the **Channels** pane, select **E-Mail Notification Channel**.
-2.  In the **Tasks** pane, under **E-Mail Notification Channel**, select **Configure** to open the **Configure E-Mail Notification Channel** dialog.
-3.  Confirm that the configuration you entered is correct.
+1. In the **Channels** pane, select **E-Mail Notification Channel**.
+2. In the **Tasks** pane, under **E-Mail Notification Channel**, select **Configure** to open the **Configure E-Mail Notification Channel** dialog.
+3. Confirm that the configuration you entered is correct.
 
 ### Configure Exchange Server for use with Service Manager
+
 In the following procedures, you configure Exchange Server for use with Service Manager. You perform these procedures on the server that hosts Exchange Server.
 
 #### Configure the Organization Hub Transport
 
-1.  In Exchange Server, select **Organization Configuration**, and select **Hub Transport**.
-2.  In the **Hub Transport** window, select the **Accepted Domains** tab.
-3.  In the **Actions** pane, select **New Accepted Domain**.
-4.  In the New Accepted Domain Wizard, on the **New Accepted Domain** page, in the **Name** box, enter a descriptive name. For example, enter **From SMTP Server**, and in **Accepted Domain**, enter the SMTP domain name that you created for Service Manager. For example, enter **\*.Servername.domain.com**.
-5.  Select **Authoritative Domain**, and select **New**.
+1. In Exchange Server, select **Organization Configuration**, and select **Hub Transport**.
+2. In the **Hub Transport** window, select the **Accepted Domains** tab.
+3. In the **Actions** pane, select **New Accepted Domain**.
+4. In the New Accepted Domain Wizard, on the **New Accepted Domain** page, in the **Name** box, enter a descriptive name. For example, enter **From SMTP Server**, and in **Accepted Domain**, enter the SMTP domain name that you created for Service Manager. For example, enter **\*.Servername.domain.com**.
+5. Select **Authoritative Domain**, and select **New**.
 
 #### Configure the Server Configuration Hub Transport
 
-1.  In Exchange Server, navigate to **Server Configuration**, and select **Hub Transport**.
-2.  In the **Actions** pane, select **New Receive Connector** to open the New Receive Connector Wizard.
-3.  In **Name**, enter a name that identifies the Service Manager SMTP server, select **Custom** for the intended use, and select **Next**.
-4.  On the **Local Network Settings** page, accept the default value, leave the **FQDN** box empty, and select **Next**.
-5.  On the **Remote Network Settings** page, remove the existing IP address, enter the IP address of your Service Manager SMTP server, and select **Next**.
-6.  On the **New Connector** page, select **New** to complete the wizard.
-7.  Double-click the newly created **Receive Connector** to open its properties, select the **Authentication** tab, and then clear any items that are selected.
-8.  Select the **Permissions Groups** tab, select **only Anonymous users**, and select **OK**.
+1. In Exchange Server, navigate to **Server Configuration**, and select **Hub Transport**.
+2. In the **Actions** pane, select **New Receive Connector** to open the New Receive Connector Wizard.
+3. In **Name**, enter a name that identifies the Service Manager SMTP server, select **Custom** for the intended use, and select **Next**.
+4. On the **Local Network Settings** page, accept the default value, leave the **FQDN** box empty, and select **Next**.
+5. On the **Remote Network Settings** page, remove the existing IP address, enter the IP address of your Service Manager SMTP server, and select **Next**.
+6. On the **New Connector** page, select **New** to complete the wizard.
+7. Double-click the newly created **Receive Connector** to open its properties, select the **Authentication** tab, and then clear any items that are selected.
+8. Select the **Permissions Groups** tab, select **only Anonymous users**, and select **OK**.
 9. To grant relay permission to anonymous connections on the new receive connector, open **Exchange Management Shell**, enter the following, and then press ENTER:
 
-    ```
+    ```powershell   
     Get-ReceiveConnector "Anonymous Relay" | Add-ADPermission -User "NT AUTHORITY\ANONYMOUS LOGON" -ExtendedRights "Ms-Exch-SMTP-Accept-Any-Recipient"
 
     ```
@@ -310,21 +307,21 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 #### Configure the mail contact in Exchange
 
-1.  In Exchange Server, navigate to **Recipient Configuration**, and select **Mail Contact**.
-2.  In the **Action** pane, select **New Mail Contact**.
-3.  In the New Mail Contact Wizard, select **New contact**, and select **Next**.
-4.  In **Name**, enter the name that you want to use as the Service Manager return email address, without @domain.com. For example, enter **Helpdesk**.
-5.  In **Alias**, enter the name that you want users to use as the **Email Alias** name. For example, enter **Helpdesk**.
-6.  Edit the **External e-mail address**, and enter the FQDN for the email address. For example, enter **helpdesk\@server.domain.com**.
-7.  Select **Next**, and select **New** to complete the wizard.
+1. In Exchange Server, navigate to **Recipient Configuration**, and select **Mail Contact**.
+2. In the **Action** pane, select **New Mail Contact**.
+3. In the New Mail Contact Wizard, select **New contact**, and select **Next**.
+4. In **Name**, enter the name that you want to use as the Service Manager return email address, without @domain.com. For example, enter **Helpdesk**.
+5. In **Alias**, enter the name that you want users to use as the **Email Alias** name. For example, enter **Helpdesk**.
+6. Edit the **External e-mail address**, and enter the FQDN for the email address. For example, enter **helpdesk\@server.domain.com**.
+7. Select **Next**, and select **New** to complete the wizard.
 
 #### Test email functionality between the SMTP server and the Exchange server
 
-1.  Using Windows Explorer on the SMTP server, create a new text file named **TESTEMAIL**.
-2.  Remove the TXT file name extension from the new file.
-3.  Right-click the TESTMAIL file, and select **Open**.
-4.  When you're prompted to open the file with a program, select **Notepad**, and select **OK**.
-5.  In the file, enter the following using your own information, similar to the following example:
+1. Using Windows Explorer on the SMTP server, create a new text file named **TESTEMAIL**.
+2. Remove the TXT file name extension from the new file.
+3. Right-click the TESTEMAIL file, and select **Open**.
+4. When you're prompted to open the file with a program, select **Notepad**, and select **OK**.
+5. In the file, enter the following using your own information, similar to the following example:
 
     ```
     to:username@domain.com
@@ -342,9 +339,9 @@ In the following procedures, you configure Exchange Server for use with Service 
     This is a test
     ```
 
-6.  Save the file without a file name extension, and then close Notepad.
-7.  Copy the file to a location where you can use it in the future for testing.
-8.  Copy the file into the *SystemDrive*:\inetpub\mailroot\Pickup folder.
+6. Save the file without a file name extension, and then close Notepad.
+7. Copy the file to a location where you can use it in the future for testing.
+8. Copy the file into the *SystemDrive*:\inetpub\mailroot\Pickup folder.
 
     > [!NOTE]
     > The file should be removed automatically. This indicates that the Exchange server is using it.
@@ -361,43 +358,43 @@ Select the required tab for steps to create an email-related or a new printer-re
 
 Follow these steps to create an email-related incident template:
 
-1.  In the Service Manager console, select **Library**.
-2.  In the **Library** pane, expand **Library**, and select **Templates**.
-3.  In the **Tasks** pane, in the **Templates** area, select **Create Template**.
-4.  In the **Create Template** dialog, complete these steps:
-    1.  In the **Name** box, enter a name for the incident template. For example, enter **E-mail Incident**.
-    2.  In the **Description** box, enter a description for the incident template. For example, enter **Use this template to start all email-related incidents**.
-    3.  Select **Browse** to choose a class.
-    4.  In the **Choose Class** dialog, select **Incident**, and select **OK**.
-    5.  In the **Management Pack** list, select **Service Manager Incident Management Configuration Library**, and select **OK**.
-5.  In the incident template form, complete these steps:
-    1.  Leave the **Affected user** box empty.
-    2.  Leave the **Alternate contact information** box empty. Alternate contact information for the affected user is entered when the incident is created.
-    3.  In the **Title** box, enter a title for the template. Or, enter a preface, such as **Email:**.
-    4.  In the **Classification Category** box, select the category that reflects the problem to report. For example, select **E-mail Problems**.
-    5.  Leave the **Source** box empty. The **Source** box is automatically populated when the incident is created.
-    6.  In the **Impact** box, select a value. For example, select **High**.
+1. In the Service Manager console, select **Library**.
+2. In the **Library** pane, expand **Library**, and select **Templates**.
+3. In the **Tasks** pane, in the **Templates** area, select **Create Template**.
+4. In the **Create Template** dialog, complete these steps:
+    1. In the **Name** box, enter a name for the incident template. For example, enter **E-mail Incident**.
+    2. In the **Description** box, enter a description for the incident template. For example, enter **Use this template to start all email-related incidents**.
+    3. Select **Browse** to choose a class.
+    4. In the **Choose Class** dialog, select **Incident**, and select **OK**.
+    5. In the **Management Pack** list, select **Service Manager Incident Management Configuration Library**, and select **OK**.
+5. In the incident template form, complete these steps:
+    1. Leave the **Affected user** box empty.
+    2. Leave the **Alternate contact information** box empty. Alternate contact information for the affected user is entered when the incident is created.
+    3. In the **Title** box, enter a title for the template. Or, enter a preface, such as **Email:**.
+    4. In the **Classification Category** box, select the category that reflects the problem to report. For example, select **E-mail Problems**.
+    5. Leave the **Source** box empty. The **Source** box is automatically populated when the incident is created.
+    6. In the **Impact** box, select a value. For example, select **High**.
         In the **Urgency** box, select a value. For example, select **High**.
-    7.  In the **Support Group** box, select a tier. For example, if you want all email-related issues to be assigned to the tier 2 support group, select **Tier 2**.
-    8.  Select **OK**.
+    7. In the **Support Group** box, select a tier. For example, if you want all email-related issues to be assigned to the tier 2 support group, select **Tier 2**.
+    8. Select **OK**.
 
 # [Printer-related incident template](#tab/PrinterRelated)
 
 Follow these steps to create a new printer-related incident template:
 
-1.  In the Service Manager console, select **Library**.
-2.  In the **Library** pane, expand **Library**, and select **Templates**.
-3.  In the **Tasks** pane, select **Create Template**.
-4.  In the **Create Template** dialog, complete these steps:
-    1.  In the **Name** box, enter a name for the incident template. For example, enter **Escalate Printer Problems to Tier 2**.
-    2.  In the **Description** box, enter a description for the incident template. For example, enter **Use this template to assign high-urgency printer-related problems to tier 2**.
-    3.  Select **Browse** to choose a class.
-    4.  In the **Choose Class** dialog, select **Incident**, and select **OK**.
-    5.  In the **Management Pack** list, select **Service Manager Incident Management Configuration Library**, and select **OK**.
-5.  In the incident template form, follow these steps:
-    1.  In the **Support Group** box, select a tier. For example, if you want all printer-related issues to be assigned to the tier 2 support group, select **Tier 2**.
-    2.  Select **OK**.
-    3.  Press F5 to refresh the **Templates** pane.
+1. In the Service Manager console, select **Library**.
+2. In the **Library** pane, expand **Library**, and select **Templates**.
+3. In the **Tasks** pane, select **Create Template**.
+4. In the **Create Template** dialog, complete these steps:
+    1. In the **Name** box, enter a name for the incident template. For example, enter **Escalate Printer Problems to Tier 2**.
+    2. In the **Description** box, enter a description for the incident template. For example, enter **Use this template to assign high-urgency printer-related problems to tier 2**.
+    3. Select **Browse** to choose a class.
+    4. In the **Choose Class** dialog, select **Incident**, and select **OK**.
+    5. In the **Management Pack** list, select **Service Manager Incident Management Configuration Library**, and select **OK**.
+5. In the incident template form, follow these steps:
+    1. In the **Support Group** box, select a tier. For example, if you want all printer-related issues to be assigned to the tier 2 support group, select **Tier 2**.
+    2. Select **OK**.
+    3. Press F5 to refresh the **Templates** pane.
 
 ---
 
