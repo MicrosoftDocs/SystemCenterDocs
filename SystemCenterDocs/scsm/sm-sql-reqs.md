@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/18/2024
+ms.date: 09/04/2024
 ms.subservice: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 ms.custom: UpdateFrequency.5, engagement-fy24
@@ -55,7 +55,7 @@ For detailed information about the requirements for Service Manager components, 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 ::: moniker-end
 
-::: moniker range=">=sc-sm-2022"
+::: moniker range="sc-sm-2022"
 
 | **System Center 2022 component**                      | **Service Manager** Database or Data Warehouse Database |
 |-------------------------------------------------------|---------------------------------------------------------|
@@ -69,6 +69,22 @@ For detailed information about the requirements for Service Manager components, 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 
 ::: moniker-end
+
+::: moniker range="sc-sm-2025"
+
+| **System Center 2025 component**                      | **Service Manager** Database or Data Warehouse Database |
+|-------------------------------------------------------|---------------------------------------------------------|
+| **SQL Server 2017 and Cumulative Updates**    | Yes                                                       |
+| **SQL Server 2019 with Cumulative Update 8 (CU8) or later**    | Yes                                                       |
+| **SQL Server 2022**                                     | Yes                                                       |
+
+>[!NOTE]
+> - Use ODBC 17.3 to 17.10.6, and MSOLEDBSQL 18.2 to 18.7.2.
+
+For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
+
+::: moniker-end
+
 
 ## Allow updates
 

@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 09/04/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -25,14 +25,13 @@ Read [Configurations for deployment scenarios](../scsm/deploy-topo-scenarios.md)
 
 ## Supported coexistence
 
-To help simplify upgrades, you can use Service Manager 2022 connectors with the following  System Center components.
+To help simplify upgrades, you can use Service Manager 2025 connectors with the following  System Center components.
 
 - System Center 2022/2025 Virtual Machine manager
-- System Center 2022/2025 Orchestrator
 - System Center 2022/2025 Operations Manager
 - System Center 2022/2025 Configuration Manager (only during migration scenario)
 - System Center Configuration Manager CB releases
-   - 1511, 1602, 1606, 1710, 1802, 1806 to 2103, 2107
+   - 1511, 1602, 1606, 1710, 1802, 1806 to 2103, 2107, 2111, 2203, 2207, 2211, 2303, 2309, 2403
 
 ## Hardware
 
@@ -72,9 +71,9 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
 ## SQL Server requirements
 
- Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center 2022 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2022 - Service Manager reporting.
+ Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center 2025 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2025 - Service Manager reporting.
 
- Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2022. Use this information whether you're deploying one or multiple components of System Center.
+ Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2025. Use this information whether you're deploying one or multiple components of System Center.
 
 >[!NOTE]
 > During installation, select *SQL Server full-text search* on the computers running SQL Server that will host the Service Manager and data warehouse databases.
@@ -84,19 +83,19 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 > [!NOTE]
 > - SM  doesn’t support SSAS mode *Tabular*. Select the SSAS mode as *Multi-dimensional* during the installation of SQL Server.
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - Service Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
-> - With SQL 2019 (CU8 or later), use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
+> - Service Manager 2025 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
+> - With SQL 2019 (CU8 or later), use ODBC 17.3 to 17.10.6, and MSOLEDBSQL 18.2 to 18.7.2.
 
 |**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**|
 | --- | --- |--- |
 |**Service Manager/Data Warehouse database** |  &#8226; |&#8226; |
 
   > [!NOTE]
-  > System Center 2022 - Service Manager doesn't support the *MultiSubnetFailover* parameter. This parameter isn't used in System Center 2022 - Service Manager connection strings.
+  > System Center 2025 - Service Manager doesn't support the *MultiSubnetFailover* parameter. This parameter isn't used in System Center 2025 - Service Manager connection strings.
 
 ### Allow updates
 
- To either install or upgrade to System Center 2022 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2022 - Service Manager Setup won't complete and the following error message appears at the **Create database** stage of the installation:
+ To either install or upgrade to System Center 2025 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2025 - Service Manager Setup won't complete and the following error message appears at the **Create database** stage of the installation:
 
  *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry the upgrade for this role.*
 
@@ -114,7 +113,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
 ### AlwaysOn Availability Groups considerations for Service Manager databases
 
- SQL Server AlwaysOn Availability Groups functionality is supported by System Center 2022 - Service Manager.
+ SQL Server AlwaysOn Availability Groups functionality is supported by System Center 2025 - Service Manager.
 
  For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../scsm/sql-always-on.md).
 
@@ -196,20 +195,20 @@ The following steps provide information about upgrading to SQL 2019.
 
   The following versions of Windows Server operating system are supported.
 
- |System Center component|Windows Server 2022 Standard, Datacenter|Windows Server 2025 Server Core | Windows Server 2025 Standard, Datacenter|Windows Server 2025 Server Core|
+ |System Center component|Windows Server 2019 Standard, Datacenter|Windows Server 2019 Server Core |Windows Server 2022 Standard, Datacenter|Windows Server 2022 Server Core | Windows Server 2025 Standard, Datacenter|Windows Server 2025 Server Core|
  |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|
- |**Service Manager** Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
- |**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
- |**Service Manager** Database or Data Warehouse Database|&#8226;|&#8226;|&#8226;|&#8226;|
- |**Service Manager** Self-Service Portal (HTML 5)|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Management Server|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Database or Data Warehouse Database|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Self-Service Portal (HTML 5)|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 
 ## Client operating system
 
  The following versions of Windows client operating system are supported for the Service Manager console.
 
- |System Center client-side components|Windows Server&reg; 2022 Standard, Datacenter Enterprise|Windows Server&reg; 2025 Standard, Datacenter|Windows 10 |Windows 11 |
+ |System Center client-side components|Windows Server&reg; 2019 Standard, Datacenter Enterprise|Windows Server&reg; 2022 Standard, Datacenter Enterprise|Windows Server&reg; 2025 Standard, Datacenter|Windows 10 |Windows 11 |
  |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------
- |**Service Manager** Console|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 
 ## .NET Versions supported
 

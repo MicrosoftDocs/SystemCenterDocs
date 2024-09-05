@@ -5,14 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/22/2024
+ms.date: 09/04/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment
 ---
 
 # Deploy the Self-Service portal for Service Manager
-
 
 The Self-Service portal provides web-based access to the features of System Center - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
@@ -49,7 +48,13 @@ For more information, see [system requirements](system-requirements.md)
 
 The Self-Service portal needs a screen resolution above 1024 X 768. It's supported on the following browsers.
 
+::: moniker range="sc-sm-2025"
+- Microsoft Edge 121.0.2277.4 or later
+::: moniker-end
+
+::: moniker range="<=sc-sm-2022"
 - Microsoft Edge
+::: moniker-end
 
 - Microsoft Internet Explorer 10 and 11
 
