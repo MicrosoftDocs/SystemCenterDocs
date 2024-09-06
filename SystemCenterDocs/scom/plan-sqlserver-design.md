@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/27/2024
+ms.date: 09/06/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager
@@ -34,15 +34,6 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2016 and the latest updates available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2016)
 
-> [!NOTE]
->
-> SQL Server Drivers are highly recommended to be installed on all management servers:
->
-> - [ODBC v17.x or later](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows)
-> - [MSOLEDBSQL v18.x or later](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server)
->
-> If ODBC v18.x or MSOLEDBSQL v19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. More information on this process can be found here: [Configure SQL Server Database Engine for encryption - SQL Server](/sql/database-engine/configure-windows/configure-sql-server-encryption)
-
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
@@ -50,15 +41,6 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
-
-> [!NOTE]
->
-> SQL Server Drivers are highly recommended to be installed on all management servers:
->
-> - [ODBC v17.x or later](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows)
-> - [MSOLEDBSQL v18.x or later](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server)
->
-> If ODBC v18.x or MSOLEDBSQL v19.x are used, then encryption for the SQL connection will need to be configured on all the Management Servers and SQL endpoints. More information on this process can be found here: [Configure SQL Server Database Engine for encryption - SQL Server](/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
 ::: moniker-end
 
@@ -77,16 +59,37 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-> [!NOTE]
-> Each of the following SQL Server components supporting a SCOM infrastructure are required to be at the same SQL Server major version:
->
-> - SQL Server database engine instances hosting any of the SCOM databases (that is, **OperationManager**, **OperationManagerDW**, and SSRS databases **ReportServer** & **ReportServerTempDB**).
-> - SQL Server Reporting Services (SSRS) instance.
-> - The SQL Server collation setting must be one of the supported types as described in the section: [**SQL Server collation setting**](#sql-server-collation-setting).
-> - SQL Server Full Text Search is required for all SQL Server database engine instances hosting any of the SCOM databases.
-> - The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components are based on what installation options of Windows Server are supported by SQL Server.
->
-> Additionally, the Operations Manager Reporting role cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only (SharePoint integrated mode isn't supported).
+### SQL Server drivers
+
+SQL Server Drivers should be installed on all management servers and the web console server, and are required to enforce a secured TLS 1.2 connection:
+
+- [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
+- [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
+
+If utilizing SQL Server connection encryption, you will need to install these driver versions instead:
+
+- Microsoft OLE DB Driver 19: [https://aka.ms/downloadmsoledbsql](https://aka.ms/downloadmsoledbsql)
+- Microsoft ODBC Driver 18: [https://aka.ms/downloadmsodbcsql](https://aka.ms/downloadmsodbcsql)
+
+More information about configuring SQL connection encryption can be found here: [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption)
+
+### SQL Server updates
+
+ Each of the following SQL Server components supporting a SCOM infrastructure are required to be at the same SQL Server major version:
+
+- SQL Server database engine instances hosting any of the SCOM databases, including:
+  - OperationManager
+  - OperationManagerDW
+  - SSRS databases ReportServer and ReportServerTempDB
+- SQL Server Reporting Services (SSRS) instance.
+
+### SQL Server authentication mode
+
+By default, SQL operates in a Mixed Mode authentication configuration. However, Operations Manager only utilizes Windows authentication to communicate with SQL Server. If left at default, SQL Mixed Mode Authentication setting will still work if no local account has the `db_owner` role. Local accounts with the `db_owner` role are known to cause issues with Operations Manager.
+
+It is highly recommended to remove the `db_owner` role from all the *local accounts* before installing the product and don’t add the `db_owner` role to any local accounts after installation.
+
+### Additional considersations
 
 Other hardware and software considerations apply in your design planning:
 
@@ -95,11 +98,11 @@ Other hardware and software considerations apply in your design planning:
 - .NET Framework 4 is required.
 - .NET Framework 4.8 is supported from Operations Manager 2022.
 - Reporting Server isn't supported on Windows Server Core.
+- The SQL Server collation setting must be one of the supported types as described in the section: [**SQL Server collation setting**](#sql-server-collation-setting).
+- SQL Server Full Text Search is required for all SQL Server database engine instances hosting any of the SCOM databases.
+- The Windows Server installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components are based on what installation options of Windows Server are supported by SQL Server.
 
 For more information, see the Hardware & Software Requirements section under the SQL Server installation and planning documentation here: [Plan a SQL Server installation](/sql/sql-server/install/planning-a-sql-server-installation)
-
-> [!NOTE]
-> Although Operations Manager uses only Windows authentication during installation, the SQL Mixed Mode Authentication setting will still work if no local account has the db_owner role. Local accounts with the db_owner role are known to cause issues with System Center Operations Manager. Remove the db_owner role from all the local accounts before installing the product and don’t add the db_owner role to any of the local accounts after installation.
 
 ## SQL Server collation setting
 
@@ -475,11 +478,22 @@ A backup strategy must take into account the details of your environment. A typi
 
 The Reporting Services instance acts as a proxy for access to data in the Data Warehouse database. It generates and displays reports based on templates stored inside the management packs.
 
+The Operations Manager Reporting role cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only (SharePoint integrated mode isn't supported).
+
 Behind the scenes of Reporting Services, there's a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
 
 > [!NOTE]
 > From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings don't allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
-> To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add `\*.\*` to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+>
+> To fix this:
+>
+> 1. Open SQL Management Studio
+> 1. Connect to your Reporting Services instance
+> 1. Open **Properties**
+> 1. Select **Advanced** on the left sidebar
+> 1. Add `*.*` to the list for *AllowedResourceExtensionsForUpload*.
+>
+> Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS. The list is described in "Resolution 2" here: [Operations Manager reports fail to deploy](/troubleshoot/system-center/scom/cannot-deploy-operations-manager-reports)
 
 ## Next steps
 

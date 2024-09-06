@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/05/2024
+ms.date: 09/06/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -36,7 +36,9 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) on all management servers and the web console server.  
 1. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers and the web console server.
 1. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-1. For System Center 2016 - Operations Manager, install Update Rollup 4 or later.  
+1. Install a minimum of Update Rollup 4 for SCOM 2016 on all components.
+1. Ensure your servers have a minimum .NET 4.6 installed as compatible with your OS: [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies)
+    1. Do not install .NET 4.8, as there have been known issues with SCOM 2016 incompatabilities.
 1. Configure Windows to only use TLS 1.2.  
 1. Configure .NET to utilize TLS 1.2 by default.
 1. Configure Audit Collection Services if installed.
@@ -47,7 +49,6 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 
 1. Install [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4 on all management servers and the web console server.
 1. Install [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6 on all management servers and the web console server.
-1. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
 1. Configure Windows to only use TLS 1.2.  
 1. Configure .NET to utilize TLS 1.2 by default.
 1. Configure Audit Collection Services if installed.
@@ -55,8 +56,8 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 > [!NOTE]
 > If utilizing SQL Server connection encryption, you will need to install these driver versions instead:
 >
-> - MS OLE DBDriver 19: [https://aka.ms/downloadmsoledbsql](https://aka.ms/downloadmsoledbsql)
-> - ODBCDriver 18: [https://aka.ms/downloadmsodbcsql](https://aka.ms/downloadmsodbcsql)
+> - Microsoft OLE DB Driver 19: [https://aka.ms/downloadmsoledbsql](https://aka.ms/downloadmsoledbsql)
+> - Microsoft ODBC Driver 18: [https://aka.ms/downloadmsodbcsql](https://aka.ms/downloadmsodbcsql)
 >
 > More information about configuring SQL connection encryption can be found here: [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
@@ -157,12 +158,14 @@ foreach ($Protocol in $ProtocolList)
 }
 ```
 
-## Configure Operations Manager to use only TLS 1.2
+## Configure .NET Framework to use only TLS 1.2
+
+.NET typically requires the application to define what TLS protocol to use for communication, in the instance of SCOM however, we will need to tell .NET system-wide what protocol to use.
 
 After completing the configuration of all prerequisites for Operations Manager, perform the following steps on all management servers, the server hosting the Web console role, and on any Windows computer the agent is installed on.  
 
->[!IMPORTANT]
->Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before making any modifications, back up the registry for restoration in case problems occur.
+> [!IMPORTANT]
+> Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before making any modifications, back up the registry for restoration in case problems occur.
 
 ::: moniker range="sc-om-2016"
 
