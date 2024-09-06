@@ -61,15 +61,15 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ### SQL Server drivers
 
-SQL Server Drivers should be installed on all management servers and the web console server, and are required to enforce a secured TLS 1.2 connection:
+SQL Server Drivers should be installed on **all** management servers and the web console server, and are required to enforce a secured TLS 1.2 connection:
 
-- [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
-- [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
+- [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
+- [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
 
-If utilizing SQL Server connection encryption, you'll need to install these driver versions instead:
+If utilizing an encrypted SQL Server connection, you'll need to install these driver versions instead:
 
-- Microsoft OLE DB Driver 19: [https://aka.ms/downloadmsoledbsql](https://aka.ms/downloadmsoledbsql)
-- Microsoft ODBC Driver 18: [https://aka.ms/downloadmsodbcsql](https://aka.ms/downloadmsodbcsql)
+- [Microsoft OLE DB Driver](https://aka.ms/downloadmsoledbsql) latest version.
+- [Microsoft ODBC Driver](https://aka.ms/downloadmsodbcsql) latest version.
 
 More information about configuring SQL connection encryption can be found here: [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption)
 
