@@ -33,22 +33,33 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 > [!NOTE]
 > Microsoft OLE DB Driver 18 for SQL Server (recommended) is supported with Operations Manager 2016 UR9 and later.
 
-1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) on all management servers and the Web console server.  
+1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6) or [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server) (x64) on all management servers and the web console server.  
+1. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers and the web console server.
 1. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-1. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers.
 1. For System Center 2016 - Operations Manager, install Update Rollup 4 or later.  
 1. Configure Windows to only use TLS 1.2.  
-1. Configure Operations Manager Audit Collection Services to use the installed ODBC Driver.  
+1. Configure .NET to utilize TLS 1.2 by default.
+1. Configure Audit Collection Services if installed.
+
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
 
-1. Install [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4 on all management servers and the Web console server.
-2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
-3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-4. Install [ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6 on all management servers.
-5. Configure Windows to only use TLS 1.2.  
-6. Configure Operations Manager to only use TLS 1.2.  
+1. Install [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4 on all management servers and the web console server.
+1. Install [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6 on all management servers and the web console server.
+1. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
+1. Configure Windows to only use TLS 1.2.  
+1. Configure .NET to utilize TLS 1.2 by default.
+1. Configure Audit Collection Services if installed.
+
+> [!NOTE]
+> If utilizing SQL Server connection encryption, you will need to install these driver versions instead:
+>
+> - MS OLE DBDriver 19: [https://aka.ms/downloadmsoledbsql](https://aka.ms/downloadmsoledbsql)
+> - ODBCDriver 18: [https://aka.ms/downloadmsodbcsql](https://aka.ms/downloadmsodbcsql)
+>
+> More information about configuring SQL connection encryption can be found here: [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption)
+
 ::: moniker-end
 
 Operations Manager generates SHA1 and SHA2 self-signed certificates. This is required to enable TLS 1.2. If CA-signed certificates are used, ensure that the certificates are either SHA1 or SHA2.
