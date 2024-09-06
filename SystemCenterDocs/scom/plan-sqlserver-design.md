@@ -66,7 +66,7 @@ SQL Server Drivers should be installed on all management servers and the web con
 - [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
 - [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
 
-If utilizing SQL Server connection encryption, you will need to install these driver versions instead:
+If utilizing SQL Server connection encryption, you'll need to install these driver versions instead:
 
 - Microsoft OLE DB Driver 19: [https://aka.ms/downloadmsoledbsql](https://aka.ms/downloadmsoledbsql)
 - Microsoft ODBC Driver 18: [https://aka.ms/downloadmsodbcsql](https://aka.ms/downloadmsodbcsql)
@@ -75,9 +75,9 @@ More information about configuring SQL connection encryption can be found here: 
 
 ### SQL Server updates
 
- Each of the following SQL Server components supporting a SCOM infrastructure are required to be at the same SQL Server major version:
+ Each of the following SQL Server components supporting an Operations Manager infrastructure are required to be at the same SQL Server major version:
 
-- SQL Server database engine instances hosting any of the SCOM databases, including:
+- SQL Server database engine instances hosting any of the Operations Manager databases, including:
   - OperationManager
   - OperationManagerDW
   - SSRS databases ReportServer and ReportServerTempDB
@@ -87,20 +87,20 @@ More information about configuring SQL connection encryption can be found here: 
 
 By default, SQL operates in a Mixed Mode authentication configuration. However, Operations Manager only utilizes Windows authentication to communicate with SQL Server. If left at default, SQL Mixed Mode Authentication setting will still work if no local account has the `db_owner` role. Local accounts with the `db_owner` role are known to cause issues with Operations Manager.
 
-It is highly recommended to remove the `db_owner` role from all the *local accounts* before installing the product and don’t add the `db_owner` role to any local accounts after installation.
+It's highly recommended to remove the `db_owner` role from all the local accounts before installing the product and don’t add the `db_owner` role to any local accounts after installation.
 
-### Additional considersations
+### Other considerations
 
 Other hardware and software considerations apply in your design planning:
 
-- SQL Server is recommended run on disks in NTFS file format.
-- SQL Server is required to have at least 1 GB of free disk space for the operational and data warehouse database, and is enforced at the time of database creation. Keep in mind that the disk utilization of the databases will likely grow significantly after setup, ensure to have plenty of free disk space above this base requirement.
+- IT is recommended to have SQL disks in NTFS file format.
+- You must have at least 1 GB of free disk space for the operational and data warehouse database, this is enforced at the time of database creation. Keep in mind that the disk utilization of the databases **will grow significantly** after setup, ensure to have plenty of free disk space above this base requirement.
 - .NET Framework 4 is required.
 - .NET Framework 4.8 is supported from Operations Manager 2022.
 - Reporting Server isn't supported on Windows Server Core.
 - The SQL Server collation setting must be one of the supported types as described in the section: [**SQL Server collation setting**](#sql-server-collation-setting).
-- SQL Server Full Text Search is required for all SQL Server database engine instances hosting any of the SCOM databases.
-- The Windows Server installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components are based on what installation options of Windows Server are supported by SQL Server.
+- SQL Server Full Text Search is required for all SQL Server database engine instances hosting any of the Operations Manager databases.
+- The Windows Server installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components are based on what installation options are supported by SQL Server.
 
 For more information, see the Hardware & Software Requirements section under the SQL Server installation and planning documentation here: [Plan a SQL Server installation](/sql/sql-server/install/planning-a-sql-server-installation)
 
@@ -215,7 +215,7 @@ Factors that influence the load on the data warehouse include:
 - Rate of operational data collection.
   - The data warehouse performs computations and stores aggregated data, along with a limited amount of raw data, to enable more efficient reporting. As a result, the cost of collecting operational data to the data warehouse is slightly higher compared to the Operations Manager database. However, this cost is offset by the reduced processing cost of discovery data in the data warehouse compared to the Operations Manager database.
 - Number of concurrent reporting users or scheduled report generation.
-  - Each reporting user can add a significant load on the system because reports frequently summarize large volumes of data. The overall capacity needs are influenced by the number of reports run simultaneously and the type of reports being run. Reports that query large date ranges or large numbers of objects require additional system resources.
+  - Each reporting user can add a significant load on the system because reports frequently summarize large volumes of data. The overall capacity needs are influenced by the number of reports run simultaneously and the type of reports being run. Reports that query large date ranges or large numbers of objects require extra system resources.
 
 Based on these factors, there are several recommended practices to consider when sizing the data warehouse:
 
@@ -309,13 +309,13 @@ Support experiences have shown that performance issues aren't typically caused b
 
 Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager. Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing. The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads. As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
-It's important to test the SQL Server design by performing throughput testing of the IO subsystem before deploying SQL Server. Ensure that these tests are able to achieve your IO requirements with an acceptable latency.Use the [Diskspd Utility](https://github.com/Microsoft/diskspd) to evaluate the I/O capacity of the storage subsystem supporting SQL Server. The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool - [DiskSpd, PowerShell and storage performance: measuring IOPs, throughput and latency for both local disks and SMB file shares](/archive/blogs/josebda/diskspd-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares?branch=main).
+It's important to test the SQL Server design by performing throughput testing of the IO subsystem before deploying SQL Server. Ensure that these tests are able to achieve your IO requirements with an acceptable latency. Use the [Diskspd Utility](https://github.com/Microsoft/diskspd) to evaluate the I/O capacity of the storage subsystem supporting SQL Server. The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool - [DiskSpd, PowerShell, and storage performance: measuring IOPs, throughput and latency for both local disks and SMB file shares](/archive/blogs/josebda/diskspd-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares?branch=main).
 
 ### NTFS allocation unit size
 
 Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation and is most commonly the result of partition misalignment with stripe unit boundaries. It can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
 
-When formatting the partition used for SQL Server data files, it's recommended to use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and TempDB. Be aware, however, that using allocation unit sizes greater than 4-KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it isn't recommended.
+When formatting the partition used for SQL Server data files, the recommendation is to use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and TempDB. Be aware, however, that using allocation unit sizes greater than 4-KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it isn't recommended.
 
 ### Reserve memory
 
@@ -340,7 +340,7 @@ After you've set these values, monitor the **Memory\Available MBytes** counter i
 
 Keep in mind that these calculations assume you want SQL Server to be able to use all available memory, unless you modify them to account for other applications. Consider the specific memory requirements for your OS, other applications, the SQL Server thread stack, and other multipage allocators. A typical formula would be `((total system memory) – (memory for thread stack) – (OS memory requirements) – (memory for other applications) – (memory for multipage allocators))`, where the memory for thread stack = `((max worker threads) (stack size))`. The stack size is 512 KB for x86 systems, 2 MB for x64 systems, and 4 MB for IA64 systems, and you can find the value for max worker threads in the max_worker_count column of sys.dm_os_sys_info.
 
-These considerations also apply to the memory requirements for SQL Server to run in a virtual machine. Since SQL Server is designed to cache data in the buffer pool, and it will use as much memory as possible, it can be difficult to determine the ideal amount of RAM needed. When reducing the memory allocated to a SQL Server instance, you can reach a point where lower memory allotment gets traded for higher disk I/O access.
+These considerations also apply to the memory requirements for SQL Server to run in a virtual machine. Since SQL Server is designed to cache data in the buffer pool, and it uses as much memory as possible, it can be difficult to determine the ideal amount of RAM needed. When reducing the memory allocated to a SQL Server instance, you can reach a point where lower memory allotment gets traded for higher disk I/O access.
 
 To configure SQL Server memory in an environment that has been over-provisioned, start by monitoring the environment and the current performance metrics, including the SQL Server Buffer Manager **page life expectancy** and **page reads/sec** and the Physical Disk **disk reads/sec** values. If the environment has excess memory, **page life expectancy** will increase by a value of one each second without any decrease under the workload, due to caching; the SQL Server Buffer Manager **page reads/sec** value will be low after the cache ramps up; and the Physical Disk **disk reads/sec** will also remain low.
 
@@ -454,13 +454,13 @@ Configure these two settings carefully. The particular configuration really depe
 
 Windows Server Failover Clustering is a high availability platform that is constantly monitoring the network connections and health of the nodes in a cluster. If a node isn't reachable over the network, then recovery action is taken to recover and bring applications and services online on another node in the cluster. The default settings out of the box are optimized for failures where there's a complete loss of a server, which is considered a "hard" failure. These would be unrecoverable failure scenarios such as the failure of nonredundant hardware or power. In these situations, the server is lost and the goal is for Failover Clustering to quickly detect the loss of the server and rapidly recover on another server in the cluster. To accomplish this fast recovery from hard failures, the default settings for cluster health monitoring are fairly aggressive. However, they're fully configurable to allow flexibility for various scenarios.
 
-These default settings deliver the best behavior for most customers; however, as clusters are stretched from being inches to possibly miles apart, the cluster may become exposed to additional and potentially unreliable networking components between the nodes. Another factor is that the quality of commodity servers is constantly increasing, coupled with augmented resiliency through redundant components (such as dual power supplies, NIC teaming, and multi-path I/O), the number of nonredundant hardware failures may potentially be fairly rare. Because hard failures may be less frequent, some customers may wish to tune the cluster for transient failures, where the cluster is more resilient to brief network failures between the nodes. By increasing the default failure thresholds, you can decrease the sensitivity to brief network issues that last a short period of time.
+These default settings deliver the best behavior for most customers; however, as clusters are stretched from being inches to possibly miles apart, the cluster may become exposed to more, and potentially unreliable, networking components between the nodes. Another factor is that the quality of commodity servers is constantly increasing, coupled with augmented resiliency through redundant components (such as dual power supplies, NIC teaming, and multi-path I/O), the number of nonredundant hardware failures may potentially be fairly rare. Because hard failures may be less frequent, some customers may wish to tune the cluster for transient failures, where the cluster is more resilient to brief network failures between the nodes. By increasing the default failure thresholds, you can decrease the sensitivity to brief network issues that last a short period of time.
 
 It's important to understand that there's no right answer here, and the optimized setting may vary by your specific business requirements and service level agreements.
 
 ### Virtualizing SQL Server
 
-In virtual environments, for performance reasons, it's recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. You can use the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) utility released for SCOM 2012 to estimate required IOPS and stress test your data disks to verify. Storage performance can be tested with the [DiskSpd utility](https://github.com/microsoft/diskspd). See also [Operations Manager virtualization support](./system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.
+In virtual environments, for performance reasons, it's recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. You can use the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075) utility released for Operations Manager 2012 to estimate required IOPS and stress test your data disks to verify. Storage performance can be tested with the [DiskSpd utility](https://github.com/microsoft/diskspd). See also [Operations Manager virtualization support](./system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.
 
 ### Always On and recovery model
 
@@ -478,7 +478,7 @@ A backup strategy must take into account the details of your environment. A typi
 
 The Reporting Services instance acts as a proxy for access to data in the Data Warehouse database. It generates and displays reports based on templates stored inside the management packs.
 
-The Operations Manager Reporting role cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only (SharePoint integrated mode isn't supported).
+The Operations Manager Reporting role can't be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only (SharePoint integrated mode isn't supported).
 
 Behind the scenes of Reporting Services, there's a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
 
@@ -487,10 +487,11 @@ Behind the scenes of Reporting Services, there's a SQL Server Database instance 
 >
 > To fix this:
 >
-> 1. Open SQL Management Studio
-> 1. Connect to your Reporting Services instance
-> 1. Open **Properties**
-> 1. Select **Advanced** on the left sidebar
+> 1. Open SQL Management Studio.
+> 1. Connect to your Reporting Services instance.
+> 1. Right-click on the server instance in the Object Explorer window.
+> 1. Select **Properties**.
+> 1. Select **Advanced** on the left sidebar.
 > 1. Add `*.*` to the list for *AllowedResourceExtensionsForUpload*.
 >
 > Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS. The list is described in "Resolution 2" here: [Operations Manager reports fail to deploy](/troubleshoot/system-center/scom/cannot-deploy-operations-manager-reports)
