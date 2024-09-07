@@ -61,12 +61,14 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ### SQL Server drivers
 
-SQL Server Drivers should be installed on **all** management servers and the web console server, and are required to enforce a secured TLS 1.2 connection:
+The [OLE DB](/sql/connect/oledb/oledb-driver-for-sql-server) and [ODBC](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server) SQL Server Drivers need to be installed on **all** management servers and the web console server, as these components directly interface with the databases and these drivers allow API level access to SQL.
+
+The recommended versions for use with Operations Manager are:
 
 - [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
 - [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
 
-If utilizing an encrypted SQL Server connection, you'll need to install these driver versions instead:
+If utilizing an encrypted SQL Server connection, you need to install the latest versions of the driver instead:
 
 - [Microsoft OLE DB Driver](https://aka.ms/downloadmsoledbsql) latest version.
 - [Microsoft ODBC Driver](https://aka.ms/downloadmsodbcsql) latest version.
