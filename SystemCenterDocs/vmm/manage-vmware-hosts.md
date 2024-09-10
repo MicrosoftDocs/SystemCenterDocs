@@ -5,7 +5,7 @@ description: This article provides guidance about managing VMware servers in the
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/19/2023
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,7 +18,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-Read this article to learn about managing VMware servers and VMs in the System Center - Virtual Machine Manager (VMM) fabric.
+Read this article to learn about managing VMware servers and VMs in the System Center Virtual Machine Manager (VMM) fabric.
 
 VMM enables you to deploy and manage virtual machines and services across multiple hypervisor platforms, including VMware vSphere hosts and vCenter servers.
 
@@ -32,7 +32,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 ## Before you start
 
 - VMM supports the management of hosts and clusters running VMware. [Learn more](system-requirements.md) for supported versions of VMware.
-- You need a vCenter server in your deployment. vSphere hosts and host clusters should be managed by a vCenter server, which, in turn, is managed by VMM.
+- You need a vCenter server in your deployment. vSphere hosts and host clusters must be managed by a vCenter server, which, in turn, is managed by VMM.
 - The following features are supported by VMM when hosts and clusters are managed with a vCenter server:
  - VMM command shell (same shell across all hypervisors).
  - VM placement based on host ratings when you create, deploy, or migrate VMware VMs. Includes concurrent VM deployment during service deployment.
@@ -52,7 +52,10 @@ VMM enables you to deploy and manage virtual machines and services across multip
  - You can organize and store VMware VMs, VMDK files, and VMware templates in the VMM library. You can create new VMs from templates.
 
    >[!NOTE]
-   >VMM doesn't support older VMDK disk types. These disk types are supported: regular VMDK files (VMFS and moniolithic flat), VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap), and snapshots (vmfssparse).
+   >VMM doesn't support older VMDK disk types. These disk types are supported:
+   > - Regular VMDK files (VMFS and monolithic flat)
+   > - VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap)
+   > - Snapshots (vmfssparse)
 
  - You can create templates using .vmdk files stored in the library. You can also import templates stored on vSphere hosts (only template metadata is imported to VMM).
  - VMM supports existing standard and distributed vSwitches and port groups. vSwitches and port groups must be configured with the vCenter server.
@@ -65,10 +68,10 @@ VMM enables you to deploy and manage virtual machines and services across multip
    >If you create and deploy a VM to a vSphere host configured to use a dynamic disk, the disk will be thin provisioned. If a VM was created as a thin provisioned disk, out-of-band VM will display it as dynamic. If you save a thin provisioned disk to the library, VMM will save it as thick. It remains thick if you create a VM from it.
 
  - All storage must be added to vSphere hosts outside VMM.
- - Communication between VMM and the vCenter server is SSL encrypted. You'll need a certificate to identify the vCenter server. You can use a self-signed certificate for a vCenter server or a third-party verified certificate.
+ - Communication between VMM and the vCenter server is SSL encrypted. You'll need a certificate to identify the vCenter server. You can use a self-signed certificate for a vCenter server or a non-Microsoft verified certificate.
  - If you're using a self-signed certificate for authenticating the vCenter server to VMM, you can manually import the certificate to the Trusted People certificate store on the VMM management server before adding the vCenter server. If you don't, you'll be prompted to do this during deployment.
  - You'll need an account with admin permissions for the vCenter server (local or Active Directory account) and an account with admin permissions for the vSphere hosts. You can create Run As accounts before you begin. If you don't, you'll need to create accounts during the deployment procedure.
- - You can decide whether you want VMM to communicate with the vSphere hosts managed by the vCenter server over a secure connection. If so, you'll need a certificate to authenticate communications on each vSphere host or cluster. You can either use the self-signed certificate that VMware created when vSphere was installed on the host, or a certificate from a trusted CA. If you're using a self-signed certificate, you can  import it from each vSphere host to the vMM management server before you begin deployment
+ - You can decide whether you want VMM to communicate with the vSphere hosts managed by the vCenter server over a secure connection. If so, you'll need a certificate to authenticate communications on each vSphere host or cluster. You can either use the self-signed certificate that VMware created when vSphere was installed on the host, or a certificate from a trusted CA. If you're using a self-signed certificate, you can  import it from each vSphere host to the VMM management server before you begin deployment
  - Before you configure network settings for vSphere hosts, ensure that you've created logical networks that you want to associate with the physical network adapters on the hosts.
 
 ## Add a vCenter server
@@ -85,14 +88,14 @@ VMM enables you to deploy and manage virtual machines and services across multip
 
 1. Ensure that the vCenter server is managed by VMM before you start. When you add the vCenter server, vSphere hosts for the server are discovered automatically.
 2. Select **Fabric** > **Add Resources** > **VMware ESX Hosts and Clusters**.
-2. In the **Add Resource Wizard** > **Credentials**, select the Run As account that has admin permissions on the vSphere hosts you want to add. Create a Run As account if you don't have one
+2. In the **Add Resource Wizard** > **Credentials**, select the Run As account that has admin permissions on the vSphere hosts you want to add. Create a Run As account if you don't have one.
 3. In **Target Resources**, select the vCenter server. If the hosts are clustered, they'll be listed together with the cluster nodes.
 3. In **Computer Name**, select the hosts or clusters you want to add or **Select All**.
 4. In **Host Settings**, select the host group to which you want to assign the host or cluster. You don't need to add VM placement paths.
 5. In **Summary**, verify the settings and select **Finish**. Wait until the Jobs dialog shows a **Completed** status.
 6. Select **Fabric** > **Servers**> **All Hosts** and in the host group, check the status of each host or cluster. Either select **OK** or **OK (limited)**.
 7. If the status is limited, it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, right-click the vCenter server > **Properties** > **Security**.
-5. To import the certificate, select each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status should be **OK** after the import.
+5. To import the certificate, select each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status must be **OK** after the import.
 
 ## Associate host adapters with logical networks
 
@@ -109,7 +112,7 @@ Associate the logical network with the physical network adapter (for an external
    >[!NOTE]
    >Only logical networks available to the host group are available.
 
-3. Select **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default for a logical network, the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears, it indicates that no network site exists for the logical network. If **Unassigned** is available, select it to view VLANS to which the physical adapter is connected but that isn't included in a network site.
+3. Select **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default, for a logical network, the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears, it indicates that no network site exists for the logical network. If **Unassigned** is available, select it to view VLANS to which the physical adapter is connected but that isn't included in a network site.
 4. View virtual network settings in the host properties > **Virtual Networks**. View compliance information in **Fabric** > **Networking** > **Logical Networks** > **Hosts** > **Logical Network Information for Hosts** > **Compliance**. A status of **Fully compliant** indicates that all subnets and VLAN that are in the network site are assigned to the network adapter.
 
 
@@ -126,7 +129,7 @@ You can import VMware templates from the vCenter server to the VMM library. VMM 
 Servicing windows provide a method for scheduling servicing outside VMM. You can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule the maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determine if it's currently in a servicing window. Servicing windows don't interfere with the regular use and functionality of VMM. Set up a servicing window as follows:
 
 1. In the VMM console, select **Settings** > **Create** > **Create Servicing Window**.
-2. In New Servicing Window, specify a name and optional description for the window.
+2. In **New Servicing Window**, specify a name and optional description for the window.
 3. In **Category**, enter or select the category of servicing window.
 4. In **Start time**, enter the date, time of day, and time zone for the maintenance window.
 5. In **Duration**, specify the number of hours or minutes in the servicing window.
