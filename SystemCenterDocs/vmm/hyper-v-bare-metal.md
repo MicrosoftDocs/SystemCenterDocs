@@ -178,26 +178,26 @@ Provision as follows:
 1. Select **Fabric** > **Servers** > **Home** > **Add** > **Add Resources** > **Hyper-V Hosts and Clusters**.
 2. In the **Add Resource Wizard** > **Resource location**, select **Physical computers to be provisioned as virtual machine hosts**.
 3. In **Credentials and Protocol** select the Run As account with permissions to access the BMC. In the **Protocol** list, select the out-of-band management protocol that your BMCs use. If you want to use Data Center Management Interface (DCMI), select **Intelligent Platform Management Interface (IPMI)**. Although DCMI 1.0 isn't listed, it's supported. Ensure the correct port is selected.
-5. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can enter a single IP address, an IP subnet, or an IP address range.
+4. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can enter a single IP address, an IP subnet, or an IP address range.
     - If you're provisioning a single computer, you can either specify a single IP address, or specify an IP address range that both starts and ends with the intended IP address. If you specify a single IP address, when you select **Next**, the computer is restarted.
     - If you specify an IP address range, when you select **Next**, information about the computer is displayed, and you can confirm that you specified the computer that you meant to.
-6. If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs (identified by IP addresses) and select the ones you want to provision as hosts. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, select **Refresh**.
-8. In **Provisioning Options**, select a host group for new Hyper-V hosts. Select the physical computer profile you want to apply.
-9. In **Deployment Customization**, review the list of computers again, and provide information for each computer that you want to include.
+5. If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs (identified by IP addresses) and select the ones you want to provision as hosts. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, select **Refresh**.
+6. In **Provisioning Options**, select a host group for new Hyper-V hosts. Select the physical computer profile you want to apply.
+7. In **Deployment Customization**, review the list of computers again, and provide information for each computer that you want to include.
     - If you see a computer that you don't want to include, select the BMC (identified by IP address) and then select **Remove**.
     - To configure computers, select the BMC IP address.
     - Specify a unique computer name, without wildcard characters.
     - Select or clear **Skip Active Directory for this computer name**. The Active Directory check prevents deployment if the computer account already exists. This helps prevent deploying a computer with the same name as an existing computer. If you skip the Active Directory check, and there's an existing computer account in AD DS other than the Run As account that was specified in the physical computer profile, the deployment process fails to join the computer to the domain.
-11. For the computer you're configuring, select a network adapter (on the left). You can modify the configuration or fill in more information.
-12. You can specify the MAC address of the management NIC (not the BMC) and static IP settings for this network adapter. If you specify an address, select a logical network and an IP subnet if applicable. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, enter an IP address that's within the logical network or its subnet. If you select an IP subnet, ensure that it corresponds to the physical location where you're deploying the host and to the network that the adapter is connected to. Otherwise, the deployment can fail.
-13. Configure the adapter settings for each network adapter.
+8. For the computer you're configuring, select a network adapter (on the left). You can modify the configuration or fill in more information.
+9. You can specify the MAC address of the management NIC (not the BMC) and static IP settings for this network adapter. If you specify an address, select a logical network and an IP subnet if applicable. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, enter an IP address that's within the logical network or its subnet. If you select an IP subnet, ensure that it corresponds to the physical location where you're deploying the host and to the network that the adapter is connected to. Otherwise, the deployment can fail.
+10. Configure the adapter settings for each network adapter.
 
 >[!NOTE]
 >If the number of physical network adapters in a computer doesn't match the number of physical network adapters that are defined in the physical computer profile, you must specify any information that is missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then select **Remove**.
 
-14. Repeat the configuration for each BMC IP address in the list. When you've filled in information for all the computers you want to provision, select **Next**.
-15. In **Summary**, confirm the settings, and then select **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the **Jobs** dialog might appear. Ensure that all the steps in the job have a status of **Completed**, and then close the dialog.
-16. To confirm that the host was added, select **Fabric** > **Servers** > **All Hosts** > host group, and verify that the new Hyper-V host appears in the group.
+11. Repeat the configuration for each BMC IP address in the list. When you've filled in information for all the computers you want to provision, select **Next**.
+12. In **Summary**, confirm the settings, and then select **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the **Jobs** dialog might appear. Ensure that all the steps in the job have a status of **Completed**, and then close the dialog.
+13. To confirm that the host was added, select **Fabric** > **Servers** > **All Hosts** > host group, and verify that the new Hyper-V host appears in the group.
 
 ## Provision a Hyper-V cluster from bare metal
 
