@@ -1,6 +1,6 @@
 ---
 ms.assetid: 1c4927e5-5053-47e1-bf35-9aca5b4793a2
-title: Monitoring configuration in Management Pack for SQL Server Analysis Services
+title: Monitor configuration in Management Pack for SQL Server Analysis Services
 description: This article explains monitoring configurations in Management Pack for SQL Server Analysis Services
 manager: evansma
 author: fkornilov
@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Monitoring Configuration in Management Pack for SQL Server Analysis Services
+# Monitor Configuration in Management Pack for SQL Server Analysis Services
 
 A server instance of Analysis Services is a copy of the msmdsrv.exe executable that runs as an operating system service. Each instance is fully independent of other instances on the same server, having its own configuration settings, permissions, ports, startup accounts, file storage, and server mode properties.
 
