@@ -14,10 +14,7 @@ ms.custom: engagement-fy24
 
 # Set up TLS for Orchestrator
 
-
-
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
-
 
 ## Before you start
 

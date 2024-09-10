@@ -5,7 +5,7 @@ description: This article describes how to fail over VMs between virtual network
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/19/2023
+ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,11 +16,11 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-This article describes how to handle replication and failover of VMs in System Center - Virtual Machine Manager (VMM), between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
+This article describes how to handle replication and failover of VMs in System Center Virtual Machine Manager (VMM) between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
 
-- We recommend that you use Azure Site Recovery for replicating VMs. VMM doesn't manage Hyper-V Replica without Site Recovery, and you need to use Hyper-V Replica PowerShell cmdlets to automate Hyper-V Replica operations.
+- Use Azure Site Recovery for replicating VMs. VMM doesn't manage Hyper-V Replica without Site Recovery, and you need to use Hyper-V Replica PowerShell cmdlets to automate Hyper-V Replica operations.
 - For disaster recovery, we recommend that you use separate primary and secondary virtual networks. Primary VMs connect to the primary network, and replica VMs to the secondary network. This ensures that both VMs can be connected to a network at the same time.
-- If you've a single virtual network, use Site Recovery to automate network management using the network mapping feature. If you don't use Site Recovery, you need to carefully check prerequisites, and the order in which VMs are attached to the network. In particular, the replica VM and primary VM mustn't be connected to the single virtual network at the same time. Otherwise, CA-PA records might get deleted in VMM and cause network connectivity loss.
+- If you have a single virtual network, use Site Recovery to automate network management using the network mapping feature. If you don't use Site Recovery, you need to carefully check prerequisites, and the order in which VMs are attached to the network. In particular, the replica VM and primary VM mustn't be connected to the single virtual network at the same time. Otherwise, CA-PA records might get deleted in VMM and cause network connectivity loss.
 
 ## Sample solution
 
@@ -28,23 +28,23 @@ This sample solution describes the following environment:
 
 - A single VMM server manages both primary and secondary sites.
 - Primary and replica VMs are hosted on a single Hyper-V virtual network.
-- You want to run a planned failover, and retain the IP address of the VM after the failover.
+- You want to run a planned failover and retain the IP address of the VM after the failover.
 - VMs have IPv4 addresses.
 
 ## Before you start
 
 - Ensure that the virtual switch and logical switch settings are valid and match in the VMM fabric. If they don't, network attach operations might not succeed after failover.
-- The primary VM should be connected to a virtual network
-- The replica VM shouldn't be connected to a network
-- Only one IP address should be assigned to each network adapter of the primary VM. Run this command to ensure this. If there's more than one connected network adapter on the VM, run it for adapter by changing the array index.
+- The primary VM must be connected to a virtual network
+- The replica VM must not be connected to a network
+- Only one IP address must be assigned to each network adapter of the primary VM. Run this command to ensure this. If there's more than one connected network adapter on the VM, run it for adapter by changing the array index.
 
     ```powershell
     $VMOnPD = Get-SCVirtualMachine -Name "VM Name" | where {$_.IsPrimaryVM -eq $true}
     Get-SCIPAddress –GrantToObjectId $VMOnPD.VirtualNetworkAdapters[0].ID``
     ```
 
-- Ensure that the IP address assigned to the VM by the operating system is the same as the IP address shown above. Sign in to the VM and run **ipconfig** to check this.
-- Check that lookup tables are correctly set on the primary and replica. To do this, run the following command on each server, and ensure that there's an entry that corresponds to the IP address returned above: `Get-NetVirtualizationLookupRecord`
+- Ensure that the IP address assigned to the VM by the operating system is the same as the IP address displayed above. Sign in to the VM and run **ipconfig** to check this.
+- Ensure that lookup tables are correctly set on the primary and replica. To do this, run the following command on each server, and ensure that there's an entry that corresponds to the IP address returned above: `Get-NetVirtualizationLookupRecord`
 - Check that the IP address is IPv4, and not IPv6
 - Ensure both VMs are turned off before you run the scripts.
 - Ensure that the replication state is enabled on both VMs.
@@ -54,7 +54,7 @@ This sample solution describes the following environment:
 Here's what this script does:
 
 1. For each network adapter on a primary VM, it stores the IP address, VM network, and IP pool.
-2. Revokes all of the IP addresses for each network adapter on the primary and secondary VMs.
+2. Revokes all the IP addresses for each network adapter on the primary and secondary VMs.
 3. Disconnects all network adapters.
 4. Fails over the primary and secondary VMs.
 5. Optionally starts reverse replication.
@@ -66,15 +66,15 @@ Here's what this script does:
 The script takes two arguments:
 
 - $VMName – Name of the virtual machine
-- $ReverseRep – Boolean argument to specify whether reverse replication should be performed or not
+- $ReverseRep – Boolean argument to specify whether reverse replication must be performed or not
     - If $true is passed, then the reverse replication is started immediately, and you can't cancel failover later.
     - After this script is completed successfully with $ReverseRep as $true:
-        - The primary VM should be in a **Prepared for planned failover** replication state.
-        - The replica VM should be in a **Failover complete** replication state.
-    - If $false is passed, then reverse replication won't be performed. ReverseRepORCancelFO.ps1 can be used to either perform reverse replication or cancel the failover.
+        - The primary VM must be in a **Prepared for planned failover** replication state.
+        - The replica VM must be in a **Failover complete** replication state.
+    - If $false is passed, then reverse replication isn't performed. ReverseRepORCancelFO.ps1 can be used to either perform reverse replication or cancel the failover.
     - After the script is completed successfully with $ReverseRep as $false:
-        - The primary VM should be in a **Prepared for planned failover** replication state.
-        - The replica VM should be in a **Failover complete** replication state.
+        - The primary VM must be in a **Prepared for planned failover** replication state.
+        - The replica VM must be in a **Failover complete** replication state.
 
 If the script doesn't complete any of the  steps, you need to manually complete the failed steps, and then return to the PowerShell window. The script steps include failover of the primary VM, failover of the replica VM, and optionally reverse replication.
 
@@ -88,7 +88,7 @@ Run the script:
    [boolean]$ReverseRep
 )
 
-# the script running on system with SCVMM Console/PowerShell installed. Also, requires Hyper-V powershell module.``
+# the script running on system with SCVMM Console/PowerShell installed. Also, requires Hyper-V PowerShell module.``
 
 Import-Module hyper-v
 
@@ -270,17 +270,17 @@ foreach($vmAdapter in $VMOnPDAdapter)
 Here's what this script does:
 
 1. If you didn't run reverse replication in the failover script, you can use this script for reverse replication, or to cancel the failover.
-2. If you cancel, the script reverses the networking steps, and restores the primary VM connections after disconnecting the replica VM networks.
+2. If you cancel, the script reverses the networking steps and restores the primary VM connections after disconnecting the replica VM networks.
 
 ### Run the script
 
-This script should be run for the failover script with $ReverseRep set to **$false** .This script takes three arguments:
+This script should be run for the failover script with $ReverseRep set to **$false**. This script takes three arguments:
 
-- $VMName: VM name
+- $VMName: VM name.
 - $ReverseRep: Boolean argument to specify whether reverse replication should be performed. $true indicates that reverse replication runs.
-- $CancelFO - Boolean argument to specify whether the failover is cancelled. $true indicates cancellation on primary and recovery sites.
+- $CancelFO: Boolean argument to specify whether the failover is cancelled. $true indicates cancellation on primary and recovery sites.
 
-One and only one of $ReverseRep and $CancelFO can be passed $true at a time.  After the script runs successfully, the state on both VMs should be **Replication enabled’**.
+One and only one of $ReverseRep and $CancelFO can be passed $true at a time. After the script runs successfully, the state on both VMs should be **Replication enabled’**.
 
 Run the script:
 
@@ -294,7 +294,7 @@ Param(
    [boolean]$CancelFO
 )
 
-# the script running on system with SCVMM Console/PowerShell installed. Also, requires Hyper-V powershell module.
+# the script running on system with SCVMM Console/PowerShell installed. Also, requires Hyper-V PowerShell module.
 
 Import-Module hyper-v
 

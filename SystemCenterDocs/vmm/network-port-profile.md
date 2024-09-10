@@ -5,7 +5,7 @@ description: This article describes how to create port profiles in the VMM fabri
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/20/2023
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,7 +18,7 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 Use this article to learn about and set up uplink port profiles and virtual network adapter port profiles in the System Center Virtual Machine Manager (VMM) networking fabric.
 
-- **Uplink port profiles**: You can create uplink port profiles and then apply them to physical network adapters when you deploy switches. Uplink port profiles define the load balancing algorithm for an adapter, and specify how to team multiple network adapters on a host that uses the same uplink port profile. This profile is used with the logical network that you associated with the adapter.
+- **Uplink port profiles**: You can create uplink port profiles and then apply them to physical network adapters when you deploy switches. Uplink port profiles define the load balancing algorithm for an adapter and specify how to team multiple network adapters on a host that uses the same uplink port profile. This profile is used with the logical network that you associated with the adapter.
 - **Virtual network adapter port profiles**. You apply virtual network adapter port profiles to virtual network adapters. These profiles define specific capabilities, such as bandwidth limitations and priority. VMM includes many built-in profiles.
 - **Port classifications**: After creating a virtual network adapter port profile, you can create port classifications. Port classifications are abstractions that identify different types of virtual network adapter port profiles. For example, you could create a classification called FAST to identify ports that are configured to have more bandwidth and another one called SLOW with less bandwidth. Classifications are included in logical switches. Administrators and tenants can choose a classification for their VM virtual machine adapters. By default, VMM includes built-in classifications that map to the built-in virtual network adapter port profiles
 
@@ -34,18 +34,18 @@ computers, you'll need to create uplinks for each group of computers.
 location) that have different connectivity requirements or use different teaming
 protocols.
 - You might consider creating separate uplinks for networks that don't or won't support network virtualization.
-- Network sites that will be included in a profile should be scoped to the same group of host computers. If they aren't, you'll receive an out-of-scope error when you try to apply it to a computer that isn't a member of the host groups defines in every one of the network sites included in the uplink profile.
-- You should try to ensure that each of the network sites that you add to an uplink port profile refers to a different logical network. If you do otherwise, all of the VLANs and IP subnets defined in those network sites will be associated with the logical network on any host computer on which the uplink port profile is applied. If you're not using VLAN isolation, the host computer has no way of establishing which of the range of possible VLANs and IP subnets will be needed to allow VMs connected to the logical network.
-- You can create an uplink port profile that contains references to multiple network sites (and hence logical networks). You should ensure that the VLANs and IP addresses in each of the selected sites should be valid (routable) from the physical network adapter to which the port profile has been applied.
-- When you apply the profile to a physical network adapter, these network sites determine the set of logical networks that should be associated with the physical adapter, and the VLANs and IP subnets that will be allocated to VMs and services that connect to those logical networks.
+- Network sites that will be included in a profile must be scoped to the same group of host computers. If they aren't, you'll receive an out-of-scope error when you try to apply it to a computer that isn't a member of the host groups defines in every one of the network sites included in the uplink profile.
+- You must try to ensure that each of the network sites that you add to an uplink port profile refers to a different logical network. If you do otherwise, all the VLANs and IP subnets defined in those network sites will be associated with the logical network on any host computer on which the uplink port profile is applied. If you're not using VLAN isolation, the host computer has no way of establishing which of the range of possible VLANs and IP subnets will be needed to allow VMs connected to the logical network.
+- You can create an uplink port profile that contains references to multiple network sites (and hence logical networks). You must ensure that the VLANs and IP addresses in each of the selected sites must be valid (routable) from the physical network adapter to which the port profile has been applied.
+- When you apply the profile to a physical network adapter, these network sites determine the set of logical networks that must be associated with the physical adapter, and the VLANs and IP subnets that will be allocated to VMs and services that connect to those logical networks.
 
 
 ### Create an uplink port profile
 
 1. Select **Fabric** > **Home** > **Show** > **Fabric Resources**. Select the **Fabric** tab > **Networking** > **Port Profiles** > **Hyper-V Port Profile**.
-2. In **Create Hyper-V Port Profile Wizard** > **General**, type in a name and description, and select **Uplink Port Profile**. Select the load balancing and teaming settings:
+2. In **Create Hyper-V Port Profile Wizard** > **General**, enter a name and description, and select **Uplink Port Profile**. Select the load balancing and teaming settings:
     ::: moniker range="sc-vmm-2016"
-	- **Load balancing**: **Host Default** is the default setting, and this will either distribute network traffic based on the Hyper-V switch port identifier of the source VM or use a **Dynamic** loading balancing algorithm depending on what the Hyper-V host supports. Dynamic is only available from Windows Server 2012 R2 onward. You can also select:
+	- **Load balancing**: **Host Default** is the default setting. This either distributes network traffic based on the Hyper-V switch port identifier of the source VM or use a **Dynamic** loading balancing algorithm depending on what the Hyper-V host supports. Dynamic is only available from Windows Server 2012 R2 onward. You can also select:
 	
 	   - **Hyper-V port**: Distributes network traffic according to the Hyper-V switch port identifier of the source VM.
 	   - **Transport ports**: Uses the source and destination TCP ports and the IP addresses to create a hash and then assigns the packets that have the hash value to one of the available network adapters.
@@ -68,7 +68,7 @@ protocols.
 		- **LACP**: Use the LACP protocol to dynamically identify links that are connected between the host and a given switch.
 		- **Static teaming**: Configure both the switch and host to identify which links form the team.
 
-3. In **Network Configuration**, select one or more network sites for this uplink port profile to support. Uplink port profiles contain a list of network sites with each network site representing a link to a different logical network. Select **Enable Hyper-V Network Virtualization** if you want to enable network virtualization to deploy multiple VM networks on a single physical network. You should only do this if the logical network is configured for network virtualization with **Allow new VM networks created on this logical network to use network virtualization** enabled.
+3. In **Network Configuration**, select one or more network sites for this uplink port profile to support. Uplink port profiles contain a list of network sites with each network site representing a link to a different logical network. Select **Enable Hyper-V Network Virtualization** if you want to enable network virtualization to deploy multiple VM networks on a single physical network. You must only do this if the logical network is configured for network virtualization with **Allow new VM networks created on this logical network to use network virtualization** enabled.
 4. In **Summary**, review the settings and select **Finish**.
 
 After you create an uplink port profile, the next step is to add it to a logical switch, which places it in a list of profiles that're available through that logical switch. When you apply the logical switch to a network adapter in a host, the uplink port profile is available in the list of profiles, but it isn't applied to that network adapter until you select it from the list. This not only helps you to create consistency in the configurations of network adapters across multiple hosts but also enables you to configure each network adapter according to your specific requirements.
@@ -76,7 +76,7 @@ After you create an uplink port profile, the next step is to add it to a logical
 ## Create a virtual network adapter port profile
 
 1. Select **Fabric** > **Home** > **Show** > **Fabric Resources**. Select **Fabric** tab > **Networking** > **Port Profiles** > **Home** > **Create** > **Hyper-V Port Profile**.
-2. In **Create Hyper-V Port Profile Wizard** > **General** type in a name and description and select **Uplink Port Profile**.
+2. In **Create Hyper-V Port Profile Wizard** > **General** enter a name and description and select **Uplink Port Profile**.
 3. In **Offload Setting**, specify a setting for offloading traffic:
 
 	- **Enable virtual machine queue (VMQ)**: Packets destined for a virtual network adapter are delivered directly to a queue for that adapter, and they don't have to be copied from the management operating system to the virtual machine. The physical network adapter must support VMQ.

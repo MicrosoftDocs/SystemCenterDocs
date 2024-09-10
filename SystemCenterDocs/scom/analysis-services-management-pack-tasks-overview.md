@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
-# Tasks Overview
+# Overview of SQL Server Analysis Services Management Pack tasks
 
 The SQL Server Analysis Services Management Pack provides tasks for some activities with the target Instance:
 

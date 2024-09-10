@@ -5,7 +5,7 @@ description: This article provides information about how to manage VMs with Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/06/2024
+ms.date: 09/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,12 +17,17 @@ ms.custom: UpdateFrequency2, engagement-fy23
 
 
 
-This article provides information about how to manage the Azure Resource Manager-based and region-specific Azure subscriptions using System Center - Virtual Machine Manager (VMM).
-
+This article provides information about how to manage the Azure Resource Manager-based and region-specific Azure subscriptions using System Center Virtual Machine Manager (VMM).
+:::moniker range="<=sc-vmm-2019"
 You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later, and perform the required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows the management of Azure subscriptions through certificate-based authentication and authorization and VMs in global Azure region.
 
 VMM 2019 and later supports management of Azure subscriptions through Microsoft Entra ID and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
+:::moniker-end
+:::moniker range="sc-vmm-2022"
+You can add Microsoft Azure subscriptions to System Center Virtual Machine Manager (VMM) and perform the required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows the management of Azure subscriptions through certificate-based authentication and authorization and VMs in global Azure region.
 
+VMM also supports the management of Azure subscriptions through Microsoft Entra ID and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
+:::moniker-end
 Management of Azure subscriptions through certificate-based authentication and authorization requires Management certificate. [Learn More](/azure/azure-api-management-certs).
 
 Management of VMs using Microsoft Entra ID-based authentication and authorization requires Microsoft Entra ID application.
@@ -32,9 +37,9 @@ Management of VMs using Microsoft Entra ID-based authentication and authorizatio
 
 ## Before you start
 
-Ensure the following prerequisites:
+Ensure the following prerequisites are met:
 
-- **Microsoft Entra ID application** - to manage VMs by using VMM through AD authentication and authorization, you need to create a Microsoft Entra ID application and then provide the following details through VMM Azure plugin:
+- **Microsoft Entra ID application** - To manage VMs using VMM through AD authentication and authorization, you need to create a Microsoft Entra ID application and then provide the following details through VMM Azure plugin:
 
     -	Azure Subscription ID
     -   Microsoft Entra ID
@@ -42,22 +47,22 @@ Ensure the following prerequisites:
 
   [Learn more](/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create a Microsoft Entra ID app.  
 
-- **A management certificate** - with the configuration as described in [this article](./azure-subscription.md).
+- **A management certificate** - Configured as described in [this article](./azure-subscription.md).
 
   - The subscription must have a management certificate associated with it so that VMM can use the classic deployment model in Azure.
   - Make note of the subscription ID and the certificate thumbprint.
   - Certificates must be x509 v3 compliant.
-  - The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.  
-  - The certificate should also be located in the Current User\Personal store of the computer running the VMM console.
+  - The management certificate must be in the local certificate store on the computer on which you add the Azure subscription feature.  
+  - The certificate must also be in the Current User\Personal store of the computer running the VMM console.
 
 	> [!NOTE]
     > The certificate is required only if you choose to use certificate-based authentication to manage your Azure subscription.
 
-## Procedure - manage Microsoft Entra ID-based authentication & authorization and region-specific Azure subscriptions
+## Manage Microsoft Entra ID-based authentication & authorization and region-specific Azure subscriptions
 
 **Use the following steps**:
 
-1.	Browse to **Azure subscription** and select **Add Subscription**.
+1.	Browse to **Azure Subscriptions** and select **Add Subscription**.
 ![Screenshot of add subscription.](media/azure-arm-based/add-subscription.png)
 
 2. Provide **Display Name**, **Azure cloud**, and **Subscription ID**.
@@ -66,16 +71,16 @@ Ensure the following prerequisites:
 
     ![Screenshot of add subscription id.](media/azure-arm-based/add-subscription-id.png)
 
-3. Select **Management using Azure AD authentication** (to use certificate based management, go to step 5).
+3. Select **Management using Azure AD authentication** (to use certificate-based management, go to step 5).
 
     ![Screenshot of select authentication.](media/azure-arm-based/azure-ad-authentication.png)
 
-4. Provide **Directory ID**, **Application ID**, and **Key**, and select **Finish** (after this step, directly go to step 6).
+4. Provide **Directory ID**, **Application ID**, and **Key**, and select **Finish** (after this step, go to step 6 directly).
 ![Screenshot of ad authentication details.](media/azure-arm-based/management-using-ad.png)
 
 5. To use management certificate, select **Management using management certificate** (not required if already performed step 3 and 4).
 
-    If you want to continue using certificate-based authentication, then instead of selecting Microsoft Entra ID authentication, choose management certificate based authentication and provide the management certificate from **Current User\Personal** certificate store and select **Finish**.
+    If you want to continue using certificate-based authentication, then instead of selecting Microsoft Entra ID authentication, choose management certificate-based authentication and provide the management certificate from **Current User\Personal** certificate store and select **Finish**.
 
     ![Screenshot of select management certificate.](media/azure-arm-based/management-using-certificate.png)
 
