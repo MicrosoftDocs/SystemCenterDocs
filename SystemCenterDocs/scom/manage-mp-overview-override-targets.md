@@ -14,8 +14,6 @@ ms.topic: article
 
 # Using classes and groups for overrides
 
-
-
 This article describes the differences between classes and groups in System Center - Operations Manager, and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.  
 
 ## Classes  

@@ -77,3 +77,7 @@ After the connection test is complete, you can view and edit the properties of t
 At this step, review all the configuration and connection settings and select **Create**.
 
 ![Screenshot showing the Review summary.](./media/managed-instance-management-pack/manual-summary.png)
+
+## See Also
+
+- [Security configuration in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-security-configuration.md)

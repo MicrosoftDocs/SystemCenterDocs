@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 07/01/2024
+ms.date: 08/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,11 @@ ms.subservice: operations-manager
 
 # Automatic monitoring template with Service Principal Name
 
-Automatic monitoring template allows you to configure monitoring by discovering all Azure SQL Managed Instances in the specified Azure subscription automatically. This article describes the automatic monitoring template using Service Principal Name (SPN).
+Automatic monitoring template allows to configure monitoring by discovering all Azure SQL Managed Instances in the specified Azure subscription automatically. This article describes the automatic monitoring template creation using Service Principal Name (SPN). 
+
+The Azure SQL Managed Instance management pack creates an SPN with the required permissions for the selected subscription when the automated template is populated.
+
+The permission for a manually created SPN must be assigned using Azure Portal. For more information, see [Assign a role to the application](managed-instance-management-pack-service-principal.md#assign-a-role-to-the-application).
 
 ## Add Monitoring Wizard and create a destination management pack
 

@@ -5,7 +5,7 @@ description: This article describes how to set up an Azure Stack HCI cluster in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 09/04/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -34,7 +34,17 @@ This article provides information about how to set up an Azure Stack HCI cluster
 
 ## Before you start
 
+::: moniker range="sc-vmm-2019"
+
 Ensure that you're running VMM 2019 UR3 or later.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+Ensure that you're running VMM 2022 UR1 or later.
+
+::: moniker-end
 
 **What’s supported?**
 

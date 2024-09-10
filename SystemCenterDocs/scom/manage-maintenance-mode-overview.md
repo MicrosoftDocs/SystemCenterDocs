@@ -14,8 +14,6 @@ ms.topic: article
 
 # Suspend monitoring temporarily by using maintenance mode
 
-
-
 Maintenance mode in Operations Manager enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 
 -   Rules and monitors

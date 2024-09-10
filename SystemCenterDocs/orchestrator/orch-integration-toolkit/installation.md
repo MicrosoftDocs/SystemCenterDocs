@@ -13,8 +13,6 @@ ms.custom: intro-installation
 
 # Installation
 
-
-
 This article provides the system requirements and steps to install the Orchestrator Integration Toolkit.  
 
 ## System Requirements  
