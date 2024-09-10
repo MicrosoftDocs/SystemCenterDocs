@@ -5,7 +5,7 @@ description: This article describes how to manage infrastructure servers in the 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/19/2023
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,9 +16,9 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-Read this article to learn about adding and managing infrastructure servers in the System Center - Virtual Machine Manager (VMM) fabric.
+Read this article to learn about adding and managing infrastructure servers in the System Center Virtual Machine Manager (VMM) fabric.
 
-In addition to the infrastructure servers used by the VMM fabric ([library server](manage-library-server.md), [PXE servers](hyper-v-bare-metal.md), and [IPAM servers](network-ipam.md)), you can add other infrastructure servers such as Active Directory, DNS, DHCP, and System Center to the VMM fabric. This allows you to manage and update all of these servers in the same location.
+In addition to the infrastructure servers used by the VMM fabric ([library server](manage-library-server.md), [PXE servers](hyper-v-bare-metal.md), and [IPAM servers](network-ipam.md)), you can add other infrastructure servers such as Active Directory, DNS, DHCP, and System Center to the VMM fabric. This allows you to manage and update all these servers in the same location.
 
 The **Infrastructure** node in the VMM console shows the infrastructure servers you add. It also shows the VMM management servers, vCenter servers, VMM library servers, IPAM servers, and PXE servers if you add them.
 
@@ -33,8 +33,8 @@ In order to update infrastructure servers, you'll need to [set up a WSUS server 
 
 After the WSUS server is in place, you can update infrastructure servers as follows:
 
-1. In **Fabric** > **Servers** > **Home** > **Show** > **Compliance**, select the server you want to update. All the baselines for the server will be shown. The server could be compliant for some baselines and not for others.
-2. Select **Remediate**. You'll only see this option if the selected objects aren't compliant.
+1. In **Fabric** > **Servers** > **Home** > **Show** > **Compliance**, select the server you want to update. All the baselines for the server will be displayed. The server could be compliant for some baselines and not for others.
+2. Select **Remediate**. You'll see this option if the selected objects aren't compliant.
 3. In **Update Remediation**, select or clear update baselines or individual updates to determine which updates to install. When you select a computer, all updates are initially selected.
 4. If you prefer to restart the server manually after remediation completes, select **Do not restart the servers after remediation**. By default, the server restarts if any updates require it. If you choose not to restart and updates need it, the computer status will be **Pending Machine Reboot** after the remediation. The updates won't be activated until you restart. With this status, VMM won't scan the machines for compliance during refreshes.
 5. Select **Remediate** to start updating.
