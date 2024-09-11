@@ -38,7 +38,7 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 1. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
 1. Install a minimum of Update Rollup 4 for SCOM 2016 on all components.
 1. Ensure your servers have a minimum .NET 4.6 installed as compatible with your OS: [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies)
-    1. Do not install .NET 4.8, as there have been known issues with SCOM 2016 incompatabilities.
+    1. Do not install .NET 4.8, as there have been known issues with SCOM 2016 incompatibilities.
 1. Configure Windows to only use TLS 1.2.  
 1. Configure .NET to utilize TLS 1.2 by default.
 1. Configure Audit Collection Services if installed.
