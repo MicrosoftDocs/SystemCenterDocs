@@ -5,7 +5,7 @@ description: This article describes how to update Hyper-V hosts and clusters in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/19/2023
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -24,8 +24,8 @@ You'll need to set up an update (WSUS server) in the VMM fabric and configure up
 
 ## Update a host or cluster
 
-1. In **Fabric** > **Servers** > **Show** > **Compliance**, select the computers you want to update. All the baselines for the computer will be shown. The computer could be compliant for some baselines and not for others.
-2. Select **Remediate**. You'll only see this option if the selected objects aren't compliant.
+1. In **Fabric** > **Servers** > **Show** > **Compliance**, select the computers you want to update. All the baselines for the computer will be displayed. The computer could be compliant for some baselines and not for others.
+2. Select **Remediate**. You'll see this option only if the selected objects aren't compliant.
 3. In **Update Remediation**, select or clear update baselines or individual updates to determine which updates to install. When you select a computer, all updates are initially selected. If you're running a Hyper-V cluster, ensure that:
       - To update all cluster nodes, select the host cluster by its cluster name.
       - To update single nodes, select the individual hosts in the cluster. With this setting, VMM doesn't display cluster remediation options but treats each node as a standalone Hyper-V host.
