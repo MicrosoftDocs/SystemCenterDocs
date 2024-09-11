@@ -96,7 +96,7 @@ It's highly recommended to remove the `db_owner` role from all the local account
 Other hardware and software considerations apply in your design planning:
 
 - IT is recommended to have SQL disks in NTFS file format.
-- You must have at least 1 GB of free disk space for the operational and data warehouse database, this is enforced at the time of database creation. Keep in mind that the disk utilization of the databases **will grow significantly** after setup, ensure to have plenty of free disk space above this base requirement.
+- You must have at least 1 GB of free disk space for the operational and data warehouse database, this is enforced at the time of database creation. Keep in mind that the disk utilization of **the databases will grow significantly after setup**, ensure to have plenty of free disk space above this base requirement.
 - .NET Framework 4 is required.
 - .NET Framework 4.8 is supported from Operations Manager 2022.
 - Reporting Server isn't supported on Windows Server Core.
