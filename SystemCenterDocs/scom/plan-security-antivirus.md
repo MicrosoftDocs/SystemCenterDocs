@@ -5,15 +5,14 @@ description: Describes some antivirus exclusions that relate to Operations Manag
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/22/2022
-ms.custom: na, UpdateFrequency2
+ms.date: 09/11/2024
+ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Recommendations for antivirus exclusions that relate to Operations Manager 2019 and later
-
 
 This article outlines antivirus exclusions that relate to System Center 2019 Operations Manager and later.  For earlier versions of Operations Manager, see [antivirus exclusions (Operations Manager 2012, 2012 R2, and 2016)](/troubleshoot/system-center/scom/antivirus-exclusions-recommendations).
 
@@ -65,7 +64,7 @@ The following directory-specific exclusions for Operations Manager include real-
 |**Gateway server** | %ProgramFiles%\System Center Operations Manager\Gateway\Health Service State |
 |**Windows agent** |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
 |**Reporting server** | %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting |
-|**Web Console server** | %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole |
+|**Web Console server** | %ProgramFiles%\Microsoft System Center\Operations Manager\WebConsole |
 
 ::: moniker-end
 
