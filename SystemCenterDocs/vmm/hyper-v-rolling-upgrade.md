@@ -5,7 +5,7 @@ description: This article provides guidance on upgrading Hyper-V host clusters
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/02/2024
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,19 +16,19 @@ ms.custom: engagement-fy24
 
 
 
-Cluster rolling upgrade was introduced in Windows Server 2016. This feature enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
+Cluster rolling upgrade feature enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
 
 ::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
-> System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Hyper-V host cluster from Windows Server 2016 to Windows Server 2019. Versions earlier to VMM 2019 support rolling upgrade to 2016 from 2012 R2. Use the following procedures as applicable for the version of VMM you're using and the upgrade version it supports.
+> System Center 2019 Virtual Machine Manager (VMM) supports rolling upgrade of a Hyper-V host cluster from Windows Server 2016 to Windows Server 2019. Versions earlier to VMM 2019 support rolling upgrade to 2016 from 2012 R2. Use the following procedures as applicable for the version of VMM you're using and the upgrade version it supports.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
 >[!NOTE]
-> System Center 2022 - Virtual Machine Manager (VMM) supports rolling upgrade of a Hyper-V host cluster from Windows Server 2019 to Windows Server 2022. Use the following procedures as applicable for the version of VMM you're using and the upgrade version it supports.
+> System Center 2022 Virtual Machine Manager (VMM) supports rolling upgrade of a Hyper-V host cluster from Windows Server 2019 to Windows Server 2022. Use the following procedures as applicable for the version of VMM you're using and the upgrade version it supports.
 
 ::: moniker-end
 
@@ -41,7 +41,7 @@ Cluster rolling upgrade was introduced in Windows Server 2016. This feature enab
 
 ## Cluster rolling upgrade in VMM
 
-System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade feature to upgrade Hyper-V clusters in the VMM fabric. You can upgrade an entire cluster or specific cluster nodes. Here's what the upgrade does:
+System Center Virtual Machine Manager (VMM) supports using the rolling upgrade feature to upgrade Hyper-V clusters in the VMM fabric. You can upgrade an entire cluster or specific cluster nodes. Here's what the upgrade does:
 
 - **Creates a template**: Creates a template of the node configuration by combining the appropriate physical computer profile with the node configuration settings detailed in the upgrade wizard.
 
@@ -65,9 +65,9 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 
 ::: moniker-end
 
-## Before you start
+## Prerequisites
 
-Review the platform [restrictions and limitations](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start Cluster rolling upgrade.
+Review the platform [restrictions and limitations](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start cluster rolling upgrade.
 
 ::: moniker range="<=sc-vmm-2019"
 - The cluster must be managed by VMM.
@@ -98,11 +98,11 @@ Review the platform [restrictions and limitations](/windows-server/failover-clus
 ::: moniker range="<=sc-vmm-2019"
 
 1. Select **Fabric** > **Servers** > **All Hosts**. Right-click the host cluster > **Upgrade Cluster**.
-1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Then select **Physical computer profile**, and select the profile for the nodes.
+1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Then select **Physical computer profile** and select the profile for the nodes.
 1. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new one. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select IPMI. DCMI is supported even though it's not listed. Ensure the correct port is listed.
-1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
+1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
     - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to ensure the new name isn't in use.
-    - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet, if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address within the logical network.
+    - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet, if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, enter an IP address within the logical network.
 5. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes the nodes upgrade successfully, the wizard upgrades the cluster functional level to Windows Server 2016/2019.
 
 ::: moniker-end
@@ -110,11 +110,11 @@ Review the platform [restrictions and limitations](/windows-server/failover-clus
 ::: moniker range="sc-vmm-2022"
 
 1. Select **Fabric** > **Servers** > **All Hosts**. Right-click the host cluster > **Upgrade Cluster**.
-1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Then select **Physical computer profile**, and select the profile for the nodes.
+1. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Then select **Physical computer profile** and select the profile for the nodes.
 1. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new one. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select IPMI. DCMI is supported even though it's not listed. Ensure the correct port is listed.
-1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
+1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
     - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to ensure the new name isn't in use.
-    - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet, if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address within the logical network.
+    - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet, if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, enter an IP address within the logical network.
 5. In **Summary**, select **Finish** to begin the upgrade. If the wizard finishes the nodes upgrade successfully, the wizard upgrades the cluster functional level to Windows Server 2019/2022.
 
 ::: moniker-end
