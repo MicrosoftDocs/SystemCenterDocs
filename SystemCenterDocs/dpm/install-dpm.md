@@ -314,28 +314,28 @@ Run an unattended install as follows:
    When creating DPMSetup.ini, replace the text inside <> with values from your environment. Lines beginning with the hash (#) are commented out, and the DPM setup uses the default values. To specify your values, type the values within the <> and delete the hash (#).
 
    ```
-   [OPTIONS]
-   UserName = <A user with credentials to install DPM>
-   CompanyName = <Name of your company>
-   ProductKey = <The 25-character DPM product key in the format xxxxx-xxxxx-xxxxx-xxxxx-xxxxx>
-   # SqlAccountPassword = <The password to the DPM$ account>
-   # StandardAgentLicenses = <No. of standard agent licenses you have purchased>
-   # EnterpriseAgentLicenses = <No. of enterprise agent licenses you have purchased>
-   # ProgramFiles = C:\Program Files\Microsoft Data Protection Manager
-   # DatabaseFiles = C:\Program Files\Microsoft Data Protection Manager\DPM\DPMDB
-   # IntegratedInstallSource = <Location of the DPM setup files>
-   # ---For using a remote SQL Server Instance ---
-   # SQLMachineName = <Name of the SQL Server computer> OR <SQL Cluster Name>
-   # SQLInstanceName = <Name of the instance of SQL Server that Setup must use>
-   # SQLMachineUserName = <Username that Setup must user>
-   # SQLMachinePassword = <Password for the username Setup must use>
-   # SQLMachineDomainName = <Domain to which the SQL Server computer is attached>
-   # ---For using a reporting SQL Server Instance in case of DPMDB in SQL Cluster ---
-   # ReportingMachineName = <Name of the SQL Server computer>
-   # ReportingInstanceName = <Name of the instance of SQL Server that Setup must use, SSRS in case of SQL 2017>
-   # ReportingMachineUserName = <Username that Setup must user>
-   # ReportingMachinePassword = <Password for the username Setup must use>
-   # ReportingMachineDomainName = <Domain to which the SQL Server computer is attached>
+   [OPTIONS] 
+   UserName = <A user with credentials to install DPM> 
+   CompanyName = <Name of your company> 
+   ProductKey = <The 25-character DPM product key in the format xxxxx-xxxxx-xxxxx-xxxxx-xxxxx> 
+   # SqlAccountPassword = <The password to the DPM$ account> 
+   # StandardAgentLicenses = <No. of standard agent licenses you have purchased> 
+   # EnterpriseAgentLicenses = <No. of enterprise agent licenses you have purchased> 
+   # ProgramFiles = C:\Program Files\Microsoft Data Protection Manager 
+   # DatabaseFiles = C:\Program Files\Microsoft Data Protection Manager\DPM\DPMDB 
+   # IntegratedInstallSource = <Location of the DPM setup files> 
+   # ---For using a remote SQL Server Instance --- 
+   # SQLMachineName = <Name of the SQL Server computer> OR <SQL Cluster Name> 
+   # SQLInstanceName = <Name of the instance of SQL Server that Setup must use> 
+   # SQLMachineUserName = <Username that Setup must user> 
+   # SQLMachinePassword = <Password for the username Setup must use> 
+   # SQLMachineDomainName = <Domain to which the SQL Server computer is attached> 
+   # ---For using a reporting SQL Server Instance in case of DPMDB in SQL Cluster --- 
+   # ReportingMachineName = <Name of the SQL Server computer> 
+   # ReportingInstanceName = SSRS 
+   # ReportingMachineUserName = <Username that Setup must user> 
+   # ReportingMachinePassword = <Password for the username Setup must use> 
+   # ReportingMachineDomainName = <Domain to which the SQL Server computer is attached> 
    ```
 
 5. After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`.
