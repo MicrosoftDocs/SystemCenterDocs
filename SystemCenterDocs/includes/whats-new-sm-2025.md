@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 04/10/2024
+ms.date: 09/04/2024
 ms.subservice: service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
@@ -16,7 +16,6 @@ ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 
 See the following sections for information about the new features/features updated in Service Manager (SM) 2025.
 
-## Support to SQL Server 2017
+## Support for Windows Server 2025  
 
-SM 2025 supports new installation of SQL Server 2017.
-
+Service Manager 2025 now supports Windows Server 2025.  

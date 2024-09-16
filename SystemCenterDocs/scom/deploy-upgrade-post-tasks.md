@@ -5,7 +5,7 @@ description: This guide provides the post-upgrade tasks you must perform after u
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 09/03/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -74,11 +74,32 @@ Perform the following tasks to verify that the upgrade was successful.
 
 ### Apply the workaround to make the AD rules work
 
+::: moniker range="<=sc-om-2022"
+
 Previous AD rules don't work after upgrading to Operations Manager 2019. After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), previous AD rules don't work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 doesn't have this issue.
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+Previous AD rules don't work after upgrading to Operations Manager 2025. After you upgrade to Operations Manager 2025 from Operations Manager 2022, previous AD rules don't work due to the change in Active Directory rules' format.
+
+::: moniker-end
 
 Use the following steps to fix this issue:
 
+::: moniker range="<=sc-om-2022"
+
 1. After you upgrade to 2022, export the default management pack to a folder.
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+1. After you upgrade to 2025, export the default management pack to a folder.
+
+::: moniker-end
+
 2. Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
 3. Rename all the AD rules to use \<NetBIOS Domain Name of Management Server\> instead of \<FQDN of Management Server\>, example below.
 

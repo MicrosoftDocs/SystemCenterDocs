@@ -5,7 +5,7 @@ description: This article provides guidance with upgrading agents when planning 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/19/2024
+ms.date: 09/03/2024
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,9 +14,7 @@ ms.topic: article
 
 # Upgrade agents in a parallel deployment
 
-
-
-::: moniker range="<=sc-om-2016"
+::: moniker range="sc-om-2016"
 
 When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 2019 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
 
@@ -34,7 +32,13 @@ When you perform a side-by-side deployment of System Center 2022 - Operations Ma
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-2016"
+::: moniker range="sc-om-2025"
+
+When you perform a side-by-side deployment of System Center 2025 - Operations Manager or System Center Operations Manager 2022 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.
+
+::: moniker-end
+
+::: moniker range="sc-om-2016"
 
 Agents reporting to your Operations Manager 2012 R2 management group can be upgraded to System Center 2016 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2012 R2 management group. 
 
@@ -49,6 +53,12 @@ Agents reporting to your Operations Manager 2016 management group can be upgrade
 ::: moniker range="sc-om-2022"
 
 Agents reporting to your Operations Manager 2019 management group can be upgraded to System Center 2022 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2019 management group.
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+Agents reporting to your Operations Manager 2022 management group can be upgraded to System Center 2025 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2022 management group.
 
 ::: moniker-end
 
