@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 09/16/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -635,6 +635,8 @@ You can proceed with any one of the following ways:
 
 To install Orchestrator at a command prompt, use Setup.exe with the command-line options in the following table.
 
+::: moniker range="<=sc-orch-2022"
+
 |Option|Description|
 |----------|---------------|
 |/Silent|Installation is performed without displaying a dialog.|
@@ -658,6 +660,38 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
 |/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
 |/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+|Option|Description|
+|----------|---------------|
+|/Silent|Installation is performed without displaying a dialog.|
+|/Uninstall|Product is uninstalled. This option is performed silently.|
+|/Key:[Product Key]|Specifies the product key. If no product key is specified, Orchestrator is installed as an evaluation edition.|
+|/ServiceUserName:[UserName]|Specifies the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/Components:[Feature 1, Feature 2,"]|Specifies the features to install (comma separated). Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebAPI, WebConsole and All.|
+|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files\Microsoft System Center\<version\>\Orchestrator is used.|
+|/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/DbUser:[UserName]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
+|/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
+|/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Can't be used with DbNameExisting.|
+|/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Can't be used with DbNameNew.|
+|/TrustServerCertificate[true|false] | 
+/TrustServerCertificate[true|false]|Specifies whether to trust SQL Server Certificate. Set to false by default .|
+|/WebServicePort:[Port]|Specifies the port to use for the Web API service. Required if Web API service is installed.|
+|/WebConsolePublicUrl: [URL]|Specifies the URL of the Orchestration Console that should be used to configure CORS on the Web API. Required if Web API service is installed.|
+|/WebConsolePort:[Port]|Specifies the port to use for the Orchestrator console. Required if Orchestrator Console is installed.|
+|/WebServicePublicUrl:[URL]|Specifies the URL of the web API service that should be used by the Orchestration Console. Required if Orchestration Console is installed.|
+|/OrchestratorUsersGroup:[Group SID]|Specifies the SID of the domain or local group that will be granted access to Management server. If no value is specified, the default local group is used.|
+|/OrchestratorRemote|Specifies that remote access should be granted to the Runbook Designer.|
+|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
+|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
+|/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
+
+::: moniker-end
 
 For example, you could use the following command to install all the Orchestrator components using Windows Authentication.
 
