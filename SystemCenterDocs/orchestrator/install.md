@@ -679,8 +679,7 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
 |/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Can't be used with DbNameExisting.|
 |/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Can't be used with DbNameNew.|
-|/TrustServerCertificate[true|false] | 
-/TrustServerCertificate[true|false]|Specifies whether to trust SQL Server Certificate. Set to false by default .|
+|/TrustServerCertificate[true|false]|Specifies whether to trust SQL Server Certificate. **Set to false by default**.|
 |/WebServicePort:[Port]|Specifies the port to use for the Web API service. Required if Web API service is installed.|
 |/WebConsolePublicUrl: [URL]|Specifies the URL of the Orchestration Console that should be used to configure CORS on the Web API. Required if Web API service is installed.|
 |/WebConsolePort:[Port]|Specifies the port to use for the Orchestrator console. Required if Orchestrator Console is installed.|
