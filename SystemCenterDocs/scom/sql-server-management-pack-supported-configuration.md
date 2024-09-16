@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 12/15/2023
+ms.date: 09/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,12 +15,16 @@ ms.subservice: operations-manager
 
 ## SQL Server Versions
 
+::: moniker range="<=sc-om-2022"
+
 Management Pack for SQL Server is version-agnostic. It supports the discovery and monitoring of SQL Server following versions:
 
 - SQL Server 2012
   
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-sql-server-2012), this version is no longer being tested.
-  
+
+::: moniker-end
+
 - SQL Server 2014
 - SQL Server 2016
 - SQL Server 2017 (Windows and Linux platforms)
@@ -68,6 +72,8 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 
 Management Pack for SQL Server supports the following versions of System Center Operations Manager:
 
+::: moniker range="<=sc-om-2022"
+
 - System Center Operations Manager 2012 R2
   
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
@@ -75,10 +81,20 @@ Management Pack for SQL Server supports the following versions of System Center 
 - System Center Operations Manager 2016
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+- System Center Operations Manager 2019
+- System Center Operations Manager 2022
+- System Center Operations Manager 2025
+
+::: moniker-end
 
 ## Operating Systems and Platforms
 
 Management Pack for SQL Server supports the following operating systems and platforms:
+
+::: moniker range="<=sc-om-2022"
 
 - Windows Server 2012
   
@@ -91,6 +107,13 @@ Management Pack for SQL Server supports the following operating systems and plat
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+- Windows Server 2019
+- Windows Server 2022
+- Windows Server 2025
+::: moniker-end
 - Ubuntu 16.04 - 22.04
 - Red Hat Enterprise Linux 7.7 - 7.9, or 8.x - 9.x Server
 - SUSE Linux Enterprise Server v12 - v15

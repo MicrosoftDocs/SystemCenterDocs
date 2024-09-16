@@ -580,8 +580,12 @@ You can proceed with any one of the following ways:
 
     1. Set registry setting for Trust Server Certificate to **True** (Set this flag `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2`). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
     1. During installation, check the checkbox **Trust Server Certificate (not recommended)**.
+    
+    :::image type="content" source="media/install/configuration-inline.png" alt-text="Screenshot of configuration." lightbox="media/install/configuration-expanded.png":::
 
     Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
+
+    :::image type="content" source="media/install/data-store-configuration-inline.png" alt-text="Screenshot of data store configuration." lightbox="media/install/data-store-configuration-expanded.png":::
 
     - For SQL Connection string Trust Server Certificate=true is added.
 

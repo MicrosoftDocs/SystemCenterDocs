@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/10/2024
+ms.date: 09/04/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager

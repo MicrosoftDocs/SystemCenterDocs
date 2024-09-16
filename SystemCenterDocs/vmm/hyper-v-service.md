@@ -5,7 +5,7 @@ description: This article describes how to service host and virtual machines in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/19/2023
+ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -53,11 +53,11 @@ You can service hosts and VMs by:
 2. Select the host to place in maintenance mode, and in the **Host** group, select **Start Maintenance Mode**.
     - You can select **Move all virtual machines to other hosts in the cluster** if you want to move all highly available VMs to other hosts in the cluster (the host must be in a cluster that's capable of live migration).
     - Otherwise, select **Place all running virtual machines into a saved state**. Note that list causes a loss of service for users currently using the VM.
-3. You can verify that the host is in maintenance mode by checking its status in **Fabric** > **Hosts**.
+3. You can verify if the host is in maintenance mode by checking its status in **Fabric** > **Hosts**.
 
 To bring a host out of maintenance node, select it and select **Stop Maintenance Mode**.
 
 > [!NOTE]
-> VMM doesn't automatically restart the VM, and doesn't automatically migrate VMs back to the host.
+> VMM doesn't automatically restart the VM and doesn't automatically migrate VMs back to the host.
 
 

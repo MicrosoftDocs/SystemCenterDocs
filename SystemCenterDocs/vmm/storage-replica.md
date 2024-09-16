@@ -5,7 +5,7 @@ description: This article describes how to set up Storage Replica in the VMM fab
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 08/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,10 +14,13 @@ ms.custom: engagement-fy23
 
 # Manage Storage Replica in VMM
 
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
+Storage Replica was introduced in Windows Server 2016. It enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery and stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
+:::moniker-end
 
-
-
+:::moniker range=">=sc-vmm-2022"
 Storage Replica enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery and stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
+:::moniker-end
 
 [Learn more](/windows-server/storage/storage-replica/storage-replica-overview) and review the [FAQs](/windows-server/storage/storage-replica/storage-replica-frequently-asked-questions).
 
@@ -33,9 +36,14 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 - Source and destination storage hardware don't need to be identical.
 
 ## Before you start
-
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 * VMM must be running on Windows Server 2016 or later Datacenter Edition.
 * Hyper-V must be running on Windows Server 2016 or later Datacenter, Server Core, or Nano.
+:::moniker-end
+::: moniker range="sc-vmm-2025"
+* VMM must be running on Windows Server 2025 or later Datacenter Edition.
+* Hyper-V must be running on Windows Server 2019 or later Datacenter, Server Core, or Nano.
+:::moniker-end
 * Only synchronous replication is supported. Asynchronous isn't supported.
 * You need two sets of storage, either volume or file storage. Both the source and destination locations must have the same type of storage (file or volume) but the actual storage can be mixed. For example, you could have Fibre Channel SAN at one end and Spaces Direct (in hyper-converged or disaggregated mode) at the other.
 * Each set of storage must be available in each of the clusters. Cluster storage must not be shared.
@@ -73,13 +81,13 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 2. Get the name of the primary storage array and assign it to a variable.
 
       ```PowerShell
-          $PriArray = Get-SCStorageArray - Name $PriArrayName
+          $PriArray = Get-SCStorageArray -Name $PriArrayName
       ```
 
 3. Get the name of the secondary storage array and assign it to a variable.
 
       ```PowerShell
-          RecArray = Get-SCStorageArray - Name $RecArrayName
+          RecArray = Get-SCStorageArray -Name $RecArrayName
       ```
 
 4. Get the name of the primary storage pool and assign it to a variable.
