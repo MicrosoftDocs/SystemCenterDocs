@@ -20,6 +20,9 @@ This article provides information about how to encrypt SMA Web Service to SQL co
 
 ## Encrypt SMA web service connection
 
+>[!NOTE]
+> Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable.
+
 Use the following procedure to securely connect SMA web service with the SQL server:
 
 1.	Open an elevated PowerShell console.
@@ -32,8 +35,6 @@ Use the following procedure to securely connect SMA web service with the SQL ser
     ![Screenshot of the Decrypt config file.](./media/encrypt-sma-web-service/decrypt-config-file.png)
 
 4.	Open the web.config file in Notepad from the path **C:\inet\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
-    >[!NOTE]
-    > Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable.
 
     ![Screenshot of the Append connection.](./media/encrypt-sma-web-service/append-connection.png)
 
