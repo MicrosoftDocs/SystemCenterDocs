@@ -5,7 +5,7 @@ description: This article provides information about how to encrypt SMA web serv
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  04/03/2024
+ms.date:  09/17/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -19,6 +19,9 @@ ms.custom: UpdateFrequency2, engagement-fy24
 This article provides information about how to encrypt SMA Web Service to SQL connection by using Secure Socket Layer (SSL) and encrypt the network traffic between runbook worker and SQL database.
 
 ## Encrypt SMA web service connection
+
+>[!NOTE]
+> Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable.
 
 Use the following procedure to securely connect SMA web service with the SQL server:
 
