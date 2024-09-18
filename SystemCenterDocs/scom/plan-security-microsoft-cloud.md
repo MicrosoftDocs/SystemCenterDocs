@@ -36,18 +36,7 @@ You must associate the Run As Account with an appropriate Run As profile. The Ad
 
 ## Integration with Microsoft 365
 
-Microsoft 365 management pack uses the agentless monitoring approach. All monitoring workflows that communicate with Microsoft 365 Monitoring API are being executed on management servers only. A user account with Global Administrator permissions for the subscription is required for monitoring of a Microsoft 365 subscription. It's highly recommended to add a new dedicated user account to each subscription you want to monitor.
-To create a new user with Global Administrator permissions using Microsoft 365 admin center:
-1. Go to https://portal.office.com/Adminportal/ to open the admin center. Sign in as Subscription Global Administrator.
-2. On Users and Groups tab: select Add button
-3. Enter First name, Last name, Display name, and User name and select a domain linked to the subscription.
-Note that First and Last names are required for account with Global Administrator role.<br>![Screenshot of the New User Details page.](./media/plan-security-microsoft-cloud/om2016-o365-new-user-details.png)  
-4. On setting tab, select Global administrator role to be assigned to account. Specify alternate email address and user location.<br>![Screenshot of the New User Settings page.](./media/plan-security-microsoft-cloud/om2016-o365-new-user-settings.png)  
-5. You aren't required to assign Microsoft 365 services licenses to the monitoring account.
-6. Specify an email address to receive a temporary password. Sign out from Microsoft 365 admin center, and sign in again using the new credentials received in the email.
-7. Sign in to the Microsoft 365 management portal using the newly created credentials and set the password for the account. Remember to use a strong complex password because this account has Global administrator permissions.
-   > [!NOTE]
-   > Management Pack workflows are unable to obtain monitoring data, Connection State monitor sets Subscription health to “Critical” state and generates “(401) Unauthorized” Alert until new Global Administrator account is used to sign in to the Microsoft 365 management portal at least once.
+Microsoft 365 management pack uses the agentless monitoring approach. All monitoring workflows that communicate with Microsoft 365 Monitoring API are being executed on management servers only.
 
 ### Configure Run As profiles
 
