@@ -5,7 +5,7 @@ description: This article describes how to deploy a Microsoft iSCSI Target Serve
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/20/2023
+ms.date: 08/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,18 +16,18 @@ ms.custom: engagement-fy23
 
 
 
-Microsoft iSCSI Target Server is a server role that enables a Windows server machine to function as a storage device. This article explains how to set up a Microsoft iSCSI Target Server in System Center - Virtual Machine Manager (VMM) storage.
+Microsoft iSCSI Target Server is a server role that enables a Windows server machine to function as a storage device. This article explains how to set up a Microsoft iSCSI Target Server in System Center Virtual Machine Manager (VMM) storage.
 
 Here's what you need to do:
 
 
 1. **Install the role**: Install the iSCSI Target Server role (**Server Roles** > **File and Storage Services** > **File and iSCSI Services**) on a server that you want to add as a block storage device.
-2. **Set up virtual iSCSI disks**: After installing the role, you'll need to set up virtual iSCSI disks, and connect to the servers you want. [Learn more](/archive/blogs/amitd/configure-windows-2012-r2-as-iscsi-target).
+2. **Set up virtual iSCSI disks**: After installing the role, you'll need to set up virtual iSCSI disks and connect to the servers you want. [Learn more](/archive/blogs/amitd/configure-windows-2012-r2-as-iscsi-target).
 ::: moniker range="sc-vmm-2016"
 3. **Install the provider**: If the iSCSI Target Server runs Windows Server 2012, you must install the SMI-S provider on it. The provider is located with the setup files in \amd64\Setup\msi\iSCSITargetSMISProvider.msi, and on the VMM server in \Program Files\Microsoft System Center 2012\Virtual Machine Manager\Setup\Msi\iSCSITargetProv\iSCSITargetSMISProvider.msi. You'll need to run the .msi file on the iSCSI Target Server. If the server's running Windows Server 2012 R2, you don't need to install the provider.
 ::: moniker-end
 4. **Add account**: Add the VMM admin account as an administrator on the server.
-5. **Discover in VMM**: [Add the storage device](storage-device.md) to VMM. Select **SAN and NAS devices discovered and managed by a SMI-S provider** as the provider type, and specify the IP address or FQDN as the server. Select the account with permissions to the server as the Run As account. Add it to the required storage classification, and complete the **Add Storage Devices Wizard**.
+5. **Discover in VMM**: [Add the storage device](storage-device.md) to VMM. Select **SAN and NAS devices discovered and managed by a SMI-S provider** as the provider type and specify the IP address or FQDN as the server. Select the account with permissions to the server as the Run As account. Add it to the required storage classification and complete the **Add Storage Devices Wizard**.
 
 
 After adding the server as a storage device under VMM management, you can allocate the storage pools and LUNs to a host group and provision storage to hosts and clusters.
@@ -46,7 +46,7 @@ Open PowerShell and use the cmdlets described below to manage iSCSI target serve
 
 |Command|Purpose|
 |-----------|-----------|
-|`$Cred = Get-Credential`|Obtain the iSCSI Target Server local administrative credentials that are based on user name and password.<br /><br /> Any account that is part of the Local Administrators group is sufficient.|
+|`$Cred = Get-Credential`|Obtain the iSCSI Target Server local administrative credentials that are based on username and password.<br /><br /> Any account that is part of the Local Administrators group is sufficient.|
 |`$Runas = New-SCRunAsAccount -Name "iSCSIRunas" -Credential $Cred`|Create a Run As account in VMM.|
 |`Add-SCStorageProvider -Name "Microsoft iSCSI Target Provider" -RunAsAccount $Runas -ComputerName "<computername>" -AddSmisWmiProvider`|Add the storage provider.|
 
@@ -62,7 +62,7 @@ Open PowerShell and use the cmdlets described below to manage iSCSI target serve
 |Command|Purpose|
 |-----------|-----------|
 |`$pool = Get-SCStoragePool -Name "MS iSCSITarget Concrete: D:"`|Get the specific storage pool to add.|
-|`$class = New-SCStorageClassification -Name “gold”`|Create a storage classification, if none exists.|
+|`$class = New-SCStorageClassification -Name “gold”`|Create a storage classification if none exists.|
 |`Set-SCStorageArray -AddStoragePoolToManagement $pool -StorageArray $pool.StorageArray -StorageClassification $class`|Add the storage pool to VMM.|
 |`Set-SCStoragePool -StoragePool $pool -AddVMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the storage pool to a virtualization server group.|
 

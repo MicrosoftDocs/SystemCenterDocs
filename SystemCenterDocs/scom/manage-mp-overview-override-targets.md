@@ -5,7 +5,7 @@ description: This article describes how to apply overrides to classes and groups
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/09/2024
+ms.date: 07/2/2023
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,12 +13,6 @@ ms.topic: article
 ---
 
 # Using classes and groups for overrides
-
-::: moniker range=">=sc-om-2019 <=sc-om-2022"
-
-[!INCLUDE [end-of-support-notes-windows-server-2012.md](../includes/end-of-support-notes-windows-server-2012.md)]
-
-::: moniker-end
 
 This article describes the differences between classes and groups in System Center - Operations Manager, and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.  
 

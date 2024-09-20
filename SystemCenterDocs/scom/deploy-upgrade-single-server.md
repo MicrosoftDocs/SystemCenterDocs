@@ -4,7 +4,7 @@ description: This article describes how to upgrade a single-server management gr
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 09/03/2024
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,8 +13,6 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 ---
 
 # Upgrade a single-server management group
-
-
 
 When you upgrade a single-server management group, all the features that are installed on the server are upgraded. Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
@@ -31,16 +29,22 @@ Follow these steps to upgrade a single-server management group:
 
 4. On the **Select installation location** page, accept the default value, enter a new location or browse to one. Then select **Next**.
 
+::: moniker range="<=sc-om-2022"
    > [!NOTE]
    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. For all later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-   >
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+   > [!NOTE]
+   > For System Center 2025 - Operations Manager, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+::: moniker-end
 
 5. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.
 
    > [!NOTE]
    > Microsoft SQL Server Full Text Search must be enabled on the SQL Server hosting the OperationsManager and OperationsManagerDW databases.
 
-6. If the Prerequisites checker doesn't return any other errors or warnings that have to be addressed, select **Next**.
+6. If the Prerequisites checker doesn't return any other errors or warnings that must be addressed, select **Next**.
 
 7. On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Configuration and Data Access service accounts, and select **Next**.
 

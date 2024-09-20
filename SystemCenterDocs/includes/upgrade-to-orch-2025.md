@@ -4,7 +4,7 @@ title:  include file
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  07/30/2024
+ms.date:  09/03/2024
 ms.topic:  include
 ms.service:  system-center
 ms.subservice: orchestrator
@@ -35,8 +35,8 @@ You can upgrade your installation of System Center 2022 Orchestrator to System C
 **Perform the upgrade:**
 
 1. Stop all Orchestrator runbooks.
-2. Uninstall the Orchestrator management server, any runbook servers, the Web Service, and the Runbook Designer.
+2. Uninstall the Orchestrator management server, any runbook servers, the Web components, and the Runbook Designer.
 3. Install the Orchestrator management server in System Center 2025 as described in [Install Orchestrator](../orchestrator/install.md).
 4. Install any Orchestrator Runbook servers in System Center 2025.
 5. Install the Orchestrator Runbook Designer in System Center 2025.
-6. If needed, install the Orchestrator Web Service in System Center 2025.
+6. If needed, install the Orchestrator Web components in System Center 2025.

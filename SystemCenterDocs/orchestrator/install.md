@@ -372,6 +372,17 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 [Learn](#configure-your-installation) how to configure the API after installation.
 
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+>[!NOTE]
+>The setup tries to enable some IIS features, this fails if those features are already enabled. This is true for machines where (even previous version of) Orchestrator Web API was previously installed. You can check this in the Setup logs on `%AppData%\Local\Microsoft System Center 2012\Orchestrator\LOGS\*.log` where you’ll see the error about IIS features. To skip this step, run Setup.exe from the command prompt.  
+
+::: moniker-end
+
+::: moniker range=">=sc-orch-2022"
+
 The **Installing features** page appears and displays the installation progress.
 
 ::: moniker-end
@@ -573,6 +584,7 @@ Following are the three ways to mitigate this error:
     > It is recommended to obtain a certificate and ensure it is signed by an authority trusted by the client.
 -Option 2: `TrustServerCertificate=True` to allow bypassing the normal trust mechanism (not recommended). For more information, see [How encryption and certificate validation works](/sql/connect/oledb/features/encryption-and-certificate-validation?view=sql-server-ver16#encryption-and-certificate-validation-behavior).
 
+
     1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
     1. During installation, check the checkbox **Yes, Trust Server Certificate (not recommended)**.
        Following configuration occurs:
@@ -581,9 +593,11 @@ Following are the three ways to mitigate this error:
 
        :::image type="content" source="media/install/configuration.png" alt-text="Screenshot showing configuration screen.":::
 
-    Alternatively, On the **Data Store Configuration** page, in **Server**, enter *localhost;Trust Server Certificate=True*.
+    Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
+
 
     :::image type="content" source="media/install/server-details.png" alt-text="Screenshot showing server details.":::
+
 
 -Option 3: Use Data Store configuration to explicitly set *Server = localhost;Use encryption for Data=False* to the connection string (not recommended) to not encrypt the connection.
 
@@ -638,6 +652,8 @@ Following are the three ways to mitigate this error:
 
 To install Orchestrator at a command prompt, use Setup.exe with the command-line options in the following table.
 
+::: moniker range="<=sc-orch-2022"
+
 |Option|Description|
 |----------|---------------|
 |/Silent|Installation is performed without displaying a dialog.|
@@ -661,6 +677,37 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
 |/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
 |/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+|Option|Description|
+|----------|---------------|
+|/Silent|Installation is performed without displaying a dialog.|
+|/Uninstall|Product is uninstalled. This option is performed silently.|
+|/Key:[Product Key]|Specifies the product key. If no product key is specified, Orchestrator is installed as an evaluation edition.|
+|/ServiceUserName:[UserName]|Specifies the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/Components:[Feature 1, Feature 2,"]|Specifies the features to install (comma separated). Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebAPI, WebConsole and All.|
+|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files\Microsoft System Center\<version\>\Orchestrator is used.|
+|/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/DbUser:[UserName]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
+|/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
+|/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Can't be used with DbNameExisting.|
+|/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Can't be used with DbNameNew.|
+|/TrustServerCertificate[true\false]|Specifies whether to trust SQL Server Certificate. **Set to false by default**.|
+|/WebServicePort:[Port]|Specifies the port to use for the Web API service. Required if Web API service is installed.|
+|/WebConsolePublicUrl: [URL]|Specifies the URL of the Orchestration Console that should be used to configure CORS on the Web API. Required if Web API service is installed.|
+|/WebConsolePort:[Port]|Specifies the port to use for the Orchestrator console. Required if Orchestrator Console is installed.|
+|/WebServicePublicUrl:[URL]|Specifies the URL of the web API service that should be used by the Orchestration Console. Required if Orchestration Console is installed.|
+|/OrchestratorUsersGroup:[Group SID]|Specifies the SID of the domain or local group that will be granted access to Management server. If no value is specified, the default local group is used.|
+|/OrchestratorRemote|Specifies that remote access should be granted to the Runbook Designer.|
+|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
+|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
+|/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
+
+::: moniker-end
 
 For example, you could use the following command to install all the Orchestrator components using Windows Authentication.
 
