@@ -14,8 +14,6 @@ ms.topic: article
 
 # Application monitoring using the default settings
 
-
-
 Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports.
 
 ## Use default settings for server-side monitoring

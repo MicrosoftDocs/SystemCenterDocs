@@ -6,7 +6,7 @@ ms.custom: engagement-fy23, UpdateFrequency2
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/14/2022
+ms.date: 08/21/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.subservice: virtual-machine-manager
 
 
 
-Read this article to learn about setting up network virtualization gateways in the System Center - Virtual Machine Manager (VMM) networking fabric.
+Read this article to learn about setting up network virtualization gateways in the System Center Virtual Machine Manager (VMM) networking fabric.
 
 By default, if you're using isolated VM networks in your VMM fabric, VMs associated with a network can only connect to machines in the same subnet. If you want to connect VMs further than the subnet, you'll need a gateway.
 
@@ -33,7 +33,7 @@ To figure out whether you need a network virtualization gateway in your network,
 You can set up your gateway in many ways depending on your requirements:
 
 - Connectivity to a public network can be achieved through NAT.
-- Connectivity to an on-premises network is over a VPN tunnel (with or without Border Gateway Protocol (BGP)
+- Connectivity to an on-premises network is over a VPN tunnel (with or without Border Gateway Protocol (BGP))
 - Direct routing without NAT can be used for connectivity between different VM networks.
 
 
@@ -45,9 +45,10 @@ You can set up your gateway in many ways depending on your requirements:
 - **Windows Server gateway**: If you want to configure a gateway running Windows Server, you can use a predefined template available from the Microsoft Download Center. The template supports System Center 2012 R2 or later versions.
 ::: moniker-end
 ::: moniker range=">sc-vmm-2016"
-- **Windows Server gateway**: If you want to configure a gateway running Windows Server, you can use a predefined template available from the Microsoft Download Center. The template supports System Center 2016 or later versions.
+- **Windows Server gateway**: If you want to configure a gateway running Windows Server, you can use a predefined template available from the Microsoft Download Center.
 ::: moniker-end
 - **Logical networks**: You need logical networks (you'll need more than one if you want the gateway to connect from VM networks in one logical network to VM networks in another).
+
 - **Remote VPN settings**: If you want to connect the gateway to a remote VPN server, you'll need:
     - The remote server IP address and information about on-premises subnets or the BGP address, if relevant.
     - You'll need to identify how you'll authenticate with the remote VPN server. If it uses a preshared key, you can authenticate with a Run As account and specify the shared key as the password. Or you can authenticate with a certificate. The certificate can be either a certificate that the remote VPN server selects automatically or a certificate that you've obtained and placed on your network.
@@ -57,7 +58,7 @@ You can set up your gateway in many ways depending on your requirements:
 
 The service template provides a highly available Windows Server Gateway deployment in active-standby mode.
 
-1. You'll need to download the template from the [Download center](https://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
+1. You'll need to download the template from the [Download Center](https://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
 
 ::: moniker range="sc-vmm-2016"
 > [!NOTE]
@@ -74,18 +75,17 @@ The service template provides a highly available Windows Server Gateway deployme
 > You'll need to install the provider software on the VMM management server and add the gateway to the fabric.
 > Obtain the provider software. You can review a list of supported providers in **Settings** > **Configuration Providers**.
 
-Use the following procedure to add the non-windows gateway:
+Use the following procedure to add the non-Windows gateway:
 
-1. Select **Fabric** > **Network Service**. Right-click and select **Add Network Service** to open the Network Service wizard. Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches. or
- On Home, select  **Add Resources** > **Network Service**.
+1. Select **Fabric** > **Network Service**. Right-click and select **Add Network Service** to open the Network Service wizard. Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches. Or on Home, select  **Add Resources** > **Network Service**.
 2. In **Add Network Service Wizard** > **Name**, specify a name and description for the gateway.
 3. In **Manufacturer and Model**, select the required settings.
 4. In **Credentials**, specify a Run As account with permissions in the domain to which the gateway is connected.
-5. In **Connection String**, type the string that the gateway should use. The string syntax is defined by the gateway vendor.
+5. In **Connection String**, enter the string that the gateway must use. The string syntax is defined by the gateway vendor.
 6. In **Certificates**, if listed, verify the thumbprints of the certificates match those installed on the gateway. Select to confirm that the certificates can be imported. If none is listed, the gateway probably doesn't need certificate authentication. If they're needed, ensure that they're installed correctly on the gateway.
 7. In **Gather Information**, select **Scan Provider** to run the basic validation test against the gateway.
 8. In **Host Group**, select one or more host groups to which the gateway will be available.
 9. In **Summary**, review the settings and select **Finish**.
 10. After the gateway is added, find its listing in **Network Services**, and right-click > **Properties** > **Connectivity**.
-11. Select **Enable front end connection**, and select the gateway network adapter and network site that provides connectivity outside the enterprise datacenter or hosting provider. Select **Enable back end connection**, and select a gateway network adapter and network site in a logical network within the enterprise. The network must have network virtualization enabled and the network site must have a static IP address.
-12. When you create a VM network, you can assign the gateway to it, and select the required connectivity options.
+11. Select **Enable front end connection**, and select the gateway network adapter and network site that provides connectivity outside the enterprise datacenter or hosting provider. Select **Enable back end connection**, and select a gateway network adapter and network site in a logical network within the enterprise. The network must have network virtualization enabled, and the network site must have a static IP address.
+12. When you create a VM network, you can assign the gateway to it and select the required connectivity options.

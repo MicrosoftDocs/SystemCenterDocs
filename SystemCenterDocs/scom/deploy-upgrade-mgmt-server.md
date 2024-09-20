@@ -1,20 +1,18 @@
 ---
 ms.assetid: aabf9661-6b4c-4495-845d-7d30de3cff93
-title: Upgrade a Management Server - Upgrading a Distributed Management Group
+title: Upgrade a Management Server - Upgrade a Distributed Management Group
 description: This article describes how to upgrade a management server in a distributed deployment of Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 09/03/2024
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Upgrade a management server - upgrading a distributed management group
-
-
+# Upgrade a management server - upgrade a distributed management group
 
 When you upgrade a distributed management group, you start by upgrading each of the management servers in your management group. There are many pre-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-overview.md).
 
@@ -44,9 +42,18 @@ Follow these steps to upgrade a management server:
 
 5. On the **Getting Started, Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
-    > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    >
+::: moniker range="<=sc-om-2022"
+    
+   > [!NOTE]
+   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+   > [!NOTE]
+   > For System Center 2025 - Operations Manager, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+
+::: moniker-end
 
 6. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.
 

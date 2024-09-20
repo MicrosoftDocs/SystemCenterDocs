@@ -19,12 +19,13 @@ The following sections summarize the release notes for Orchestrator 2025, and in
 Additionally, the following issues are fixed:
 
 - Send platform event activity is persisted to the database and is visible in **Events** tab of the Runbook Designer.
-- Latest `plink.exe` is shipped with this release. Manual update of `pllink.exe` in Run SSH activity isn't required.  
+- Run SSH activity is fixed. Latest (at the time of release) plink.exe is included.
 - Query database activity error *Failed to load extension* is fixed.
-- Orchestrator keys can be recreated.
+- Re-create Orchestrator keys by following the steps mentioned [here](/troubleshoot/system-center/orchestrator/license-key-expired-after-migrating-database). 
 - Activities persist custom separators while you configure Run behavior for the activity.
 - GET api/ActivityInstances returns the expected value.
 - Activity names are correctly displayed on the Runbook Tester canvas and log view area instead of identifiers.
+- Jobs in active state are visible in Active Jobs in Web Console.
 
 The following sections summarize the known issues and workarounds in System Center Orchestrator 2025:
 

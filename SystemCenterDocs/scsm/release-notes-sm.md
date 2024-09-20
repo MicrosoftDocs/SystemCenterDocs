@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 09/04/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager

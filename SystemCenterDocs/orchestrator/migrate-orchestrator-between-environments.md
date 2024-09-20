@@ -7,13 +7,23 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/16/2024
+ms.date: 09/03/2024
 ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
 
 # Migrate Orchestrator between environments
 
-This article describes how to move Orchestrator between environments, such as moving to a new SQL Server 2008 R2 or moving some components of Orchestrator.  
+::: moniker range="<=sc-orch-2022"
+
+This article describes how to move Orchestrator between environments, such as moving to a new SQL Server 2008 R2 or moving some components of Orchestrator.
+
+::: moniker-end 
+
+::: moniker range="sc-orch-2025"
+
+This article describes how to move Orchestrator between environments, such as moving to a new SQL Server 2022 or moving some components of Orchestrator.
+
+::: moniker-end 
 
 The following processes and scripts enable you to easily move between environments. They're based on a full migration of all Orchestrator components to a new SQL Server machine, with a restored Orchestrator database.  
 
@@ -32,7 +42,7 @@ The following steps are required to enable an automatic migration of Orchestrato
 6. Deploy Orchestrator components in environment B  
 
 > [!NOTE]  
-> See [https://go.microsoft.com/fwlink/?LinkId=246817](/sql/tools/sqlcmd-utility) for information on using the Sqlcmd utility.  
+> For more information, see how to use [sqlcmd utility](https://go.microsoft.com/fwlink/?LinkId=246817).
 
 > [!NOTE]  
 > It's recommended to enable SQL Broker on the Orchestrator Database in order for internal maintenance tasks to execute automatically.  
@@ -155,7 +165,14 @@ The following example installs all of Orchestrator on a computer running SQL Ser
 ::: moniker-end
 
 ::: moniker range=">=sc-orch-2022"
-The following example installs all of Orchestrator on a computer running SQL Server:  
+The following example installs Orchestrator on a computer running SQL Server:  
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+>[!NOTE]
+>Review guidelines on how to [enable Trust Server Connection (not recommended)](/SystemCenterDocs/orchestrator/install.md#enable-trust-server-connection-not-recommended) setting.
+
 ::: moniker-end
 
 ```powershell

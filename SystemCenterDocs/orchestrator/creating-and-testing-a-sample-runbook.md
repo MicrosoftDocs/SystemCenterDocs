@@ -1,5 +1,5 @@
 ---
-title: Creating and Testing a Sample Runbook
+title: Create and test a sample Runbook
 description: This article describes how to create and test a simple runbook.
 ms.service: system-center
 ms.reviewer: na
@@ -11,11 +11,11 @@ ms.assetid: 10b8d20a-7bf8-4af8-86fa-8b936319355b
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
+ms.date: 08/22/2024
 ms.custom: engagement-fy23
 ---
 
-# Create and Test a Sample Runbook
+# Create and test a sample Runbook
 
 The following article describes how to create and test a sample runbook. The purpose of this runbook is to detect when a text file is added to a particular folder, copy that file to another folder, read the contents of the file, append a line from the copied file to another file, and then delete the original file.  
 
@@ -25,7 +25,17 @@ The runbook starts with a **Monitor File** activity to wait for the text file to
 
 Use the following procedures to create the runbook by using the required activities.  
 
+::: moniker range="<=sc-orch-2022"
+
 1. Select **Start**, point to  **All Programs**, select **Microsoft System Center 2016**, select **Orchestrator**, and then select **Runbook Designer**.  
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+1. Select **Start**, point to  **All Programs**, select **Microsoft System Center 2025**, select **Orchestrator**, and then select **Runbook Designer**.  
+
+::: moniker-end
 
 2. In the **Connections** pane, right-click **Runbooks** to select **New**, and then select **Runbook**.  
 
@@ -67,9 +77,9 @@ Follow these steps to add and configure a Monitor File activity:
 
 The **Monitor File** activity is created and configured to watch for any new text files that are created in the C:\\Drop folder.  
 
-### Add additional activities to the runbook 
+### Add additional activities to the runbook
 
-Follow these steps to add additional activities to the runbook: 
+Follow these steps to add additional activities to the runbook:
 
 1. In the **Activities** pane, expand the **File Management** category.  
 

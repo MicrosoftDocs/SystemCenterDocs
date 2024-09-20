@@ -143,8 +143,6 @@
           href: network-logical.md
         - name: Set up logical networks in UR1
           href: network-logical-ur1.md
-        - name: Set up logical networks in VMM
-          href: network-logical-2022.md
         - name: Set up VM networks
           href: network-virtual.md
         - name: Set up IP address pools

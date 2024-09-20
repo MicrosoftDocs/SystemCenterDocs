@@ -33,7 +33,7 @@ Ensure to install the **.NET Framework 4.5.2** or higher before importing Manage
 >[!NOTE]
 >Management Pack for Azure SQL Database doesn't support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
-## Importing Management Pack
+## Import Management Pack
 
 Management Pack for Azure SQL Database provides monitoring of [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) using Azure REST API) and T-SQL queries.
 
