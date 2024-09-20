@@ -577,7 +577,7 @@ Following are the three ways to mitigate this error:
     1. During installation, check the checkbox **Yes, Trust Server Certificate (not recommended)**.
        Following configuration occurs:
           1. For SQL Connection string, adds *Trust Server Certificate=true*.
-          1. In webapi.config, adds <environmentVariable name="Database__TrustServerCertificate" value="true"/>
+          1. In webapi.config, adds \<environmentVariable name="Database__TrustServerCertificate" value="true"/\>
 
        :::image type="content" source="media/install/configuration.png" alt-text="Screenshot showing configuration screen.":::
 
