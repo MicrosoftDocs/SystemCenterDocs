@@ -593,10 +593,10 @@ Following are the three ways to mitigate this error:
 
        :::image type="content" source="media/install/configuration.png" alt-text="Screenshot showing configuration screen.":::
 
-    Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
+       Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
 
 
-    :::image type="content" source="media/install/server-details.png" alt-text="Screenshot showing server details.":::
+       :::image type="content" source="media/install/server-details.png" alt-text="Screenshot showing server details.":::
 
 
 -Option 3: Use Data Store configuration to explicitly set *Server = localhost;Use encryption for Data=False* to the connection string (not recommended) to not encrypt the connection.
