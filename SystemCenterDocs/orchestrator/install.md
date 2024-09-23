@@ -580,10 +580,11 @@ A connection was successfully established with the server, but then an error occ
 Following are the three ways to mitigate this error:
 
 - Option 1: [Install a valid certificate on a server](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16).
+  
     >[!Note]
     > It is recommended to obtain a certificate and ensure it is signed by an authority trusted by the client.
--Option 2: `TrustServerCertificate=True` to allow bypassing the normal trust mechanism (not recommended). For more information, see [How encryption and certificate validation works](/sql/connect/oledb/features/encryption-and-certificate-validation?view=sql-server-ver16#encryption-and-certificate-validation-behavior).
-
+    
+- Option 2: `TrustServerCertificate=True` to allow bypassing the normal trust mechanism (not recommended). For more information, see [How encryption and certificate validation works](/sql/connect/oledb/features/encryption-and-certificate-validation?view=sql-server-ver16#encryption-and-certificate-validation-behavior).
 
     1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
     1. During installation, check the checkbox **Yes, Trust Server Certificate (not recommended)**.
@@ -599,10 +600,10 @@ Following are the three ways to mitigate this error:
        :::image type="content" source="media/install/server-details.png" alt-text="Screenshot showing server details.":::
 
 
--Option 3: Use Data Store configuration to explicitly set *Server = localhost;Use encryption for Data=False* to the connection string (not recommended) to not encrypt the connection.
+- Option 3: Use Data Store configuration to explicitly set *Server = localhost;Use encryption for Data=False* to the connection string (not recommended) to not encrypt the connection.
 
 >[!Warning]
->Options 2 and 3 both leave the server in a potentially insecure state.
+> Options 2 and 3 both leave the server in a potentially insecure state.
 
 ::: moniker-end
 
