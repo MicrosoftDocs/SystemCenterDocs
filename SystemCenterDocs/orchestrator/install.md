@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/03/2024
+ms.date: 09/20/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -94,7 +94,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. Enable the **Trust Server Certificate** setting (not recommended) to let Orchestrator skip SQL Server certificate validation. For more information about SSL and encrypted connections, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. Enable the **Trust Server Certificate** setting (not recommended) to let Orchestrator skip SQL Server certificate validation. For more information about SSL and encrypted connections, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16). Before you enable this setting, configure your registry settings by following the procedure in [Secure connection to SQL server](#secure-connection-to-sql-server). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 ::: moniker range=">=sc-orch-2022"
@@ -225,7 +225,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by following the procedure in [Secure connection to SQL server](#secure-connection-to-sql-server). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 ::: moniker range=">=sc-orch-2022"
 8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
@@ -353,7 +353,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by following the procedure in [Enable Trust Server Certificate](#enable-trust-server-connection-not-recommended). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous steps are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. If Trust Server Certificate isn't installed on your SQL Server, you can enable the Trust Server Certificate setting (not recommended). Before you enable this setting, configure your registry settings by following the procedure in [Secure connection to SQL server](#secure-connection-to-sql-server). You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous steps are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 ::: moniker range=">=sc-orch-2022"
@@ -567,29 +567,43 @@ The **Installing features** page appears and displays the installation progress.
 
 ::: moniker range="sc-orch-2025"
 
-## Enable Trust server connection (not recommended)
+## Secure connection to SQL server
 
-Due to breaking changes in EFCore 8 and OLEDB 19, connection to SQL Server is always encrypted which requires a certificate that the client can trust.  
+Due to breaking changes in EFCore 8 and OLEDB 19, SQL Server connection is encrypted by default and requires a certificate that client can trust which means:
+- The SQL Server must be configured with a valid certificate
+- The client must trust this certificate
 
-You can proceed with any one of the following ways:
+If these conditions are not met, then a SqlException is thrown. For example:
 
-- [Install a valid certificate on a server](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16).
+A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+
+Following are the three ways to mitigate this error:
+
+- Option 1: [Install a valid certificate on a server](/sql/database-engine/configure-windows/configure-sql-server-encryption?view=sql-server-ver16).
+  
     >[!Note]
     > It is recommended to obtain a certificate and ensure it is signed by an authority trusted by the client.
-- `TrustServerCertificate=True` to allow bypassing the normal trust mechanism.
-
-    1. Set registry setting for Trust Server Certificate to **True** (Set this flag `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2`). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
-    1. During installation, check the checkbox **Trust Server Certificate (not recommended)**.
     
-    :::image type="content" source="media/install/configuration-inline.png" alt-text="Screenshot of configuration." lightbox="media/install/configuration-expanded.png":::
+- Option 2: `TrustServerCertificate=True` to allow bypassing the normal trust mechanism (not recommended). For more information, see [How encryption and certificate validation works](/sql/connect/oledb/features/encryption-and-certificate-validation?view=sql-server-ver16#encryption-and-certificate-validation-behavior).
+
+    1. Set registry setting for Trust Server Certificate to **True** (Set this flag Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\SNI19.0\GeneralFlags\Flag2). [Learn more](/sql/connect/oledb/features/registry-settings?view=sql-server-ver16#trust-server-certificate).
+    1. During installation, check the checkbox **Yes, Trust Server Certificate (not recommended)**.
+       Following configuration occurs:
+          1. For SQL Connection string, adds *Trust Server Certificate=true*.
+          1. In webapi.config, adds \<environmentVariable name="Database__TrustServerCertificate" value="true"/\>
+
+       :::image type="content" source="media/install/configuration.png" alt-text="Screenshot showing configuration screen.":::
 
     Alternatively, On the **Data Store Configuration** page, in **Server**, enter `localhost;Trust Server Certificate=True` and this results in the following:
 
-    :::image type="content" source="media/install/data-store-configuration-inline.png" alt-text="Screenshot of data store configuration." lightbox="media/install/data-store-configuration-expanded.png":::
 
-    - For SQL Connection string Trust Server Certificate=true is added.
+    :::image type="content" source="media/install/server-details.png" alt-text="Screenshot showing server details.":::
 
-    - In webapi.config `<environmentVariable name="Database__TrustServerCertificate" value="true"/>` is added.
+
+- Option 3: Use Data Store configuration to explicitly set *Server = localhost;Use encryption for Data=False* to the connection string (not recommended) to not encrypt the connection.
+
+>[!Warning]
+> Options 2 and 3 both leave the server in a potentially insecure state.
 
 ::: moniker-end
 
@@ -639,6 +653,8 @@ You can proceed with any one of the following ways:
 
 To install Orchestrator at a command prompt, use Setup.exe with the command-line options in the following table.
 
+::: moniker range="<=sc-orch-2022"
+
 |Option|Description|
 |----------|---------------|
 |/Silent|Installation is performed without displaying a dialog.|
@@ -662,6 +678,37 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
 |/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
 |/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+|Option|Description|
+|----------|---------------|
+|/Silent|Installation is performed without displaying a dialog.|
+|/Uninstall|Product is uninstalled. This option is performed silently.|
+|/Key:[Product Key]|Specifies the product key. If no product key is specified, Orchestrator is installed as an evaluation edition.|
+|/ServiceUserName:[UserName]|Specifies the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/Components:[Feature 1, Feature 2,"]|Specifies the features to install (comma separated). Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebAPI, WebConsole and All.|
+|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files\Microsoft System Center\<version\>\Orchestrator is used.|
+|/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/DbUser:[UserName]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
+|/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
+|/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Can't be used with DbNameExisting.|
+|/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Can't be used with DbNameNew.|
+|/TrustServerCertificate[true\false]|Specifies whether to trust SQL Server Certificate. **Set to false by default**.|
+|/WebServicePort:[Port]|Specifies the port to use for the Web API service. Required if Web API service is installed.|
+|/WebConsolePublicUrl: [URL]|Specifies the URL of the Orchestration Console that should be used to configure CORS on the Web API. Required if Web API service is installed.|
+|/WebConsolePort:[Port]|Specifies the port to use for the Orchestrator console. Required if Orchestrator Console is installed.|
+|/WebServicePublicUrl:[URL]|Specifies the URL of the web API service that should be used by the Orchestration Console. Required if Orchestration Console is installed.|
+|/OrchestratorUsersGroup:[Group SID]|Specifies the SID of the domain or local group that will be granted access to Management server. If no value is specified, the default local group is used.|
+|/OrchestratorRemote|Specifies that remote access should be granted to the Runbook Designer.|
+|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
+|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
+|/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
+
+::: moniker-end
 
 For example, you could use the following command to install all the Orchestrator components using Windows Authentication.
 

@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS 1.3 with Orch
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/16/2024
+ms.date: 09/16/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -31,7 +31,6 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 [Download and install](/sql/relational-databases/security/networking/connect-with-tls-1-3?view=sql-server-ver16) the update for your SQL Server version.
 
 >[!Note]
->- You don't need this update if you're running SQL Server 2012 or later.
 >- SQL Server 2019 (15.x) and earlier versions doesn't support TLS 1.3.
 
 ## Configure and use TLS 1.3
