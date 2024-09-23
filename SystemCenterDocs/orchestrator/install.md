@@ -339,7 +339,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
    3. Select **Next** to continue.
 
-6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API will run under an IIS App Pool with this identity. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
+6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API runs under an IIS App Pool with this identity. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 
     > [!NOTE]
     > If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
@@ -470,7 +470,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
     Orchestration Console requires IIS URL Rewrite module; download from here.
 
-6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Select **Test to verify the account credentials**. If the credentials are accepted, select **Next**.
+6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Console runs under an IIS App Pool with this identity. Select **Test to verify the account credentials**. If the credentials are accepted, select **Next**.
 
     > [!NOTE]
     > If the service account you enter here is not a member of the local Administrators group, you must grant the user permissions in the IIS Metabase. To do this, open an administrative command window, navigate to the directory **C:\Windows\Microsoft.NET\Framework64\v4.0.30319** and run the below command. Replace DOMAIN\USER with the domain and username of the service account.
@@ -573,7 +573,7 @@ Due to breaking changes in EFCore 8 and OLEDB 19, SQL Server connection is encry
 - The SQL Server must be configured with a valid certificate
 - The client must trust this certificate
 
-If these conditions are not met, then a SqlException is thrown. For example:
+If these conditions aren't met, then a SqlException is thrown. For example:
 
 A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
 
