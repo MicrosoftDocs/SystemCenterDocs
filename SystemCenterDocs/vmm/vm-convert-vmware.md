@@ -33,46 +33,46 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 
 1.	Create **Run as account** for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
 
-    :::image type="content" source="media/vm-convert-vmware/create-run-as-account.png" alt-text="Screenshot of create run as account page.":::
+    :::image type="content" source="media/vm-convert-vmware/create-run-as-account.png" alt-text="Screenshot of create run as account page." lightbox="media/vm-convert-vmware/create-run-as-account.png":::
  
 2.	In the VMM console, under **Fabric**, select **Servers > Add VMware vCenter Server**.
 
-    :::image type="content" source="media/vm-convert-vmware/add-vmware-vcenter-server.png" alt-text="Screenshot of add vmware vcenter server option.":::
+    :::image type="content" source="media/vm-convert-vmware/add-vmware-vcenter-server.png" alt-text="Screenshot of add vmware vcenter server option." lightbox="media/vm-convert-vmware/add-vmware-vcenter-server.png":::
 
 3.	In the **Add VMware vCenter Server** page, do the following:<br>
   a. **Computer name**: Specify the vCenter server name.<br>
   b. **Run As account**: Select the Run As account created for vSphere administrator.<br>
 
-      :::image type="content" source="media/vm-convert-vmware/specify-vcenter-server.png" alt-text="Screenshot of specify vcenter server page.":::
+      :::image type="content" source="media/vm-convert-vmware/specify-vcenter-server.png" alt-text="Screenshot of specify vcenter server page." lightbox="media/vm-convert-vmware/specify-vcenter-server.png":::
 
 4.	Select **Finish**.
 
 5.	In the **Import Certificate** page, select **Import**.
 
-    :::image type="content" source="media/vm-convert-vmware/import-certificate.png" alt-text="Screenshot of import certificate page.":::
+    :::image type="content" source="media/vm-convert-vmware/import-certificate.png" alt-text="Screenshot of import certificate page." lightbox="media/vm-convert-vmware/import-certificate.png":::
  
 6.	After the successful addition of the vCenter server, all the ESXi hosts under the vCenter are discovered in VMM.
 
 7.	In the VMM console, under **Fabric**, select **Servers > Add VMware ESX Hosts and Clusters**.
 
-    :::image type="content" source="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png" alt-text="Screenshot of add vmware ESX hosts and clusters page.":::
+    :::image type="content" source="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png" alt-text="Screenshot of add vmware ESX hosts and clusters page." lightbox="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png":::
 
 8.	In the **Add Resource Wizard**,<br>
     a. Under **Credentials**, select the Run as account that is used for the port and select **Next**.<br>
 
-    :::image type="content" source="media/vm-convert-vmware/add-resource-wizard.png" alt-text="Screenshot of add resource wizard page.":::
+    :::image type="content" source="media/vm-convert-vmware/add-resource-wizard.png" alt-text="Screenshot of add resource wizard page." lightbox="media/vm-convert-vmware/add-resource-wizard.png":::
 
     b.	Under **Target Resources**, select all the ESX clusters that need to be added to VMM and select **Next**.
 
-    :::image type="content" source="media/vm-convert-vmware/select-esx-computers.png" alt-text="Screenshot of select ESX computers page.":::
+    :::image type="content" source="media/vm-convert-vmware/select-esx-computers.png" alt-text="Screenshot of select ESX computers page." lightbox="media/vm-convert-vmware/select-esx-computers.png":::
 
     c.	Under **Host Settings**, select the location where you want to add the VMs and select **Next**.
 
-      :::image type="content" source="media/vm-convert-vmware/add-virtual-machine-path.png" alt-text="Screenshot of add virtual machine path page.":::
+      :::image type="content" source="media/vm-convert-vmware/add-virtual-machine-path.png" alt-text="Screenshot of add virtual machine path page." lightbox="media/vm-convert-vmware/add-virtual-machine-path.png":::
 
     d.	Under **Summary**, review the settings and select **Finish**. Along with the hosts, associated VMs will also get added.
  
-    :::image type="content" source="media/vm-convert-vmware/confirm-settings.png" alt-text="Screenshot of confirm settings page.":::
+    :::image type="content" source="media/vm-convert-vmware/confirm-settings.png" alt-text="Screenshot of confirm settings page." lightbox="media/vm-convert-vmware/confirm-settings.png":::
 
 ## Convert your VMware VMs to Hyper-V
 
@@ -125,8 +125,10 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 Here is the PowerShell cmdlet for V2V conversion via SCVMM with all the parameters:
 
-```powershell-interactive
+```powershell
+
 New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>] [-EnableMACAddressSpoofing <bool>] [-VMMServer <ServerConnection>] [-LibraryServer <LibraryServer>] [-JobGroup <guid>] [-Trigger] [-VhdType {UnknownType | DynamicallyExpanding | FixedSize}] [-VhdFormat {VHD | VHDX}] [-Description <string>] [-Name <string>] [-Owner <string>] [-UserRole <UserRole>] [-Path <string>] [-StartVM] [-CPUCount <byte>] [-CPURelativeWeight <int>] [-CPUType <ProcessorType>] [-MemoryMB <int>] [-Generation <int>] [-DelayStartSeconds <int>] [-StartAction {NeverAutoTurnOnVM | AlwaysAutoTurnOnVM | TurnOnVMIfRunningWhenVSStopped}] [-StopAction {SaveVM | TurnOffVM | ShutdownGuestOS}] [-LogicalNetwork <LogicalNetwork>] [-VMNetwork <VMNetwork>] [-NoConnection] [-MACAddress <string>] [-MACAddressType <string>] [-SourceNetworkConnectionID <string>] [-VirtualNetwork <VirtualNetwork>] [-VirtualNetworkAdapter <VirtualNetworkAdapter>] [-VLanEnabled <bool>] [-VLanID <uint16>] [-OverridePatchPath <string>] [-SkipInstallVirtualizationGuestServices] [-NetworkLocation <string>] [-NetworkTag <string>] [-RunAsynchronously] [-PROTipID <guid>] [-JobVariable <string>] [<CommonParameters>]
+
 ```
 
 ## Convert your VMware VMs to Hyper-V at-scale using PowerShell scripts
