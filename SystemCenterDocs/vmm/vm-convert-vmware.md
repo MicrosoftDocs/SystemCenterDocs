@@ -31,7 +31,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 
 ## Start by bringing your vCenter server and the source ESXi hosts under SCVMM management
 
-1.	Create **Run as account** for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
+1.	Create [Run as account](./account-runas.md) for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
 
     :::image type="content" source="media/vm-convert-vmware/create-run-as-account.png" alt-text="Screenshot of create run as account page." lightbox="media/vm-convert-vmware/create-run-as-account.png":::
  
