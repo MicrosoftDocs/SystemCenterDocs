@@ -312,7 +312,7 @@ The following user roles are considered trusted/untrusted personas in Orchestrat
 
 ::: zone-end
 
-::: zone pivot="security-scenarios"
+::: zone pivot="data-encryption"
 
 ## Orchestrator Data Encryption
 
@@ -369,3 +369,5 @@ Moving encrypted data between Orchestrator instances requires one of two scenari
 Essentially, the Export functionality creates an export file whose encrypted data has been encrypted a password provided by the user during export. This export file contains encrypted data that can be decrypted by providing the same password during import. The data is encrypted and stored into the database by using the encryption keys for the new database.
 
 ::: zone-end
+
+## Next steps
