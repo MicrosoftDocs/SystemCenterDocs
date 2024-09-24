@@ -120,7 +120,6 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 > We recommend that no more than ten conversions be triggered parallelly from the same ESXi source to the same Hyper-V destination. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel, with the remaining conversions queued. However, we recommend staging the VM conversions in smaller batches for higher efficiency.
 
 PowerShell script-based conversion allows you to automate your conversion process and perform at-scale conversions. PowerShell commands also allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk, based on the requirements. Here is a sample PS script to convert five VMs - VM1, VM2, VM3, VM4, VM5:
-<Sample script with appropriate values>
 
 >[!Note]
 >Third party migration options are provided by Microsoft partners. These options are available to you at an additional cost but may help in reducing the VM downtime during migration. The following third-party migration options are available:<br>
