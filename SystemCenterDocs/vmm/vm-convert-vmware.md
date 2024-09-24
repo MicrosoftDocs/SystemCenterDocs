@@ -25,10 +25,11 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 >- You can't convert VMware workstations.
 >- You can't convert VMs with virtual hard disks connected to an IDE bus.
 >- VMware tools must be uninstalled from the guest operating system of the VM.
+>- *Add a point on the unsupported case with VMware VMs with vSAN storage*
 >- Online conversions aren't supported through SCVMM.
 >- We recommend upgrading to VMM 2025 to convert your VMware VMs to Hyper-V four times faster.
 
-**Start by bringing your vCenter server and the source ESXi hosts under SCVMM management**
+## Start by bringing your vCenter server and the source ESXi hosts under SCVMM management
 
 1.	Create **Run as account** for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
 
@@ -82,24 +83,38 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 1.	Select **VMs and Services > Home > Create > Create Virtual Machines > Convert Virtual Machine**.
 
+    *Add Image*
+
 2.	In **Convert Virtual Machine** wizard > **Select Source**, select **Browse** and in **Select Virtual Machine Source**, select the VMware VM you want to convert.
+
+    *Add Image*
 
 3.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
+    *Add Image*
+
 4.	In **Virtual Machine Configuration**, specify the number of processors and memory settings. You can migrate BIOS-based VMware VMs to Generation 1 Hyper-V VMs and UEFI-based VMware VMs to Generation 2 Hyper-V VMs.
+
+    *Add Image*
 
 5.	In **Select Host**, select a Hyper-V host/Azure Stack HCI for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
+    *Add Image*
+
 6.	In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
 
+    *Add Image*
 
     >[!Note]
     >The PowerShell script-based approach provides guidance to retain the IP of the VM after conversion. You can also read about it in Cameron Peppers’ blogpost here.
 
 7.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 
+    *Add Image*
 
 8.	Select **Create** to start the conversion. Verify the VM's conversion in **VMs and Services > Home > Show > VMs**.
+
+    *Add Image*
 
     >[!Note]
     >After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
@@ -119,10 +134,12 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 >[!Note]
 > We recommend that no more than ten conversions be triggered parallelly from the same ESXi source to the same Hyper-V destination. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel, with the remaining conversions queued. However, we recommend staging the VM conversions in smaller batches for higher efficiency.
 
-PowerShell script-based conversion allows you to automate your conversion process and perform at-scale conversions. PowerShell commands also allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk, based on the requirements. Here is a sample PS script to convert five VMs - VM1, VM2, VM3, VM4, VM5:
+PowerShell script-based conversion allows you to automate your conversion process and perform at-scale conversions. PowerShell commands also allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk, based on the requirements. Here is a sample PowerShell script to convert five VMs - VM1, VM2, VM3, VM4, VM5:
+
+*Sample script with appropriate values*
 
 >[!Note]
->Third party migration options are provided by Microsoft partners. These options are available to you at an additional cost but may help in reducing the VM downtime during migration. The following third-party migration options are available:<br>
+>Third-party migration options are provided by Microsoft partners. These options are available to you at an additional cost but may help in reducing the VM downtime during migration. The following third-party migration options are available:<br>
 >- [Commvault](https://documentation.commvault.com/11.20/converting_from_vmware_to_hyper_v.html)
 >- [Zerto](https://www.zerto.com/blog/migrations-data-mobility/how-to-easily-migrate-from-vmware-to-hyper-v-with-zerto/)
 >- [Veeam](https://www.veeam.com/blog/vmware-to-hyper-v-migration.html)
