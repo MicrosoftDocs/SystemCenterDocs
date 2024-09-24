@@ -54,7 +54,7 @@ You can get a connection string for a managed instance using the Azure portal.
 To create a Run As account from the connection string, use the following format:  
 
 ```
-Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Password>;
+Server=<ServerAddress>;Database=<DatabaseName>;User Id=***;Password=***;
 ```
 
 You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
