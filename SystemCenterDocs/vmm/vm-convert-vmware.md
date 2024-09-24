@@ -28,7 +28,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 >- Online conversions aren't supported through SCVMM.
 >- We recommend upgrading to VMM 2025 to convert your VMware VMs to Hyper-V four times faster.
 
-Start by bringing your vCenter server and the source ESXi hosts under SCVMM management
+**Start by bringing your vCenter server and the source ESXi hosts under SCVMM management**
 
 1.	Create **Run as account** for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
 
@@ -40,7 +40,7 @@ Start by bringing your vCenter server and the source ESXi hosts under SCVMM mana
 
 3.	In the **Add VMware vCenter Server** page, do the following:<br>
   a. **Computer name**: Specify the vCenter server name.<br>
-  b. **Run As account**: Select the Run As account created for vSphere administrator.<br><br>
+  b. **Run As account**: Select the Run As account created for vSphere administrator.<br>
 
       :::image type="content" source="media/vm-convert-vmware/specify-vcenter-server.png" alt-text="Screenshot of specify vcenter server page.":::
 
@@ -93,18 +93,18 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 6.	In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
 
 
->[!Note]
->The PowerShell script-based approach provides guidance to retain the IP of the VM after conversion. You can also read about it in Cameron Peppers’ blogpost here.
+    >[!Note]
+    >The PowerShell script-based approach provides guidance to retain the IP of the VM after conversion. You can also read about it in Cameron Peppers’ blogpost here.
 
 7.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 
 
 8.	Select **Create** to start the conversion. Verify the VM's conversion in **VMs and Services > Home > Show > VMs**.
 
->[!Note]
->After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
->- Set-StorageSetting -NewDiskPolicy OfflineShared: To have all the new shared bus disks offline and all the new local bus disks online
->- Set-StorageSetting -NewDiskPolicy OnlineAll: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
+    >[!Note]
+    >After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
+    >- `Set-StorageSetting -NewDiskPolicy OfflineShared`: To have all the new shared bus disks offline and all the new local bus disks online
+    >- `Set-StorageSetting -NewDiskPolicy OnlineAll`: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
 
 ## Convert using PowerShell cmdlet
 
