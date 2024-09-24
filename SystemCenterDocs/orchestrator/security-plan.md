@@ -59,7 +59,7 @@ The account for the Orchestrator Runbook Service must have the following permiss
 
 - Depending on the resources that the activities in your runbooks access, the service account might require additional credentials on remote computers. Specific activities can also be configured with alternate credentials if the service account doesn't have access to particular resources.
 
-:::zone-end
+::: zone-end
 
 ::: zone pivot="orchestrator-user-group"
 
@@ -88,7 +88,7 @@ The decision of which to use depends on where you want to manage the group’s u
 >[!Note]
 >A member of the Orchestrator Users group can grant access to other users to view and run runbooks from the Orchestration console without having to add those users to the group. Those who only use the Orchestration console are referred to as operators. They typically require the ability to run runbooks, but not to create them. For information about setting permissions for individual runbooks, see [Runbook Permissions](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh403774(v=sc.12)) in [Using Runbooks in System Center - Orchestrator](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh403791(v=sc.12)).
 
-:::zone-end
+::: zone-end
 
 ::: zone pivot="orchestrator-database-security"
 
@@ -170,7 +170,7 @@ As part of your security planning, you must plan for rotating your encryption ke
 
       Provide the password used for the export. The data in the export file is decrypted using the password, and encrypted as it is imported to the database using the new Orchestrator master database key.
 
-:::zone-end
+::: zone-end
 
 ::: zone pivot="runbook-security"
 
@@ -178,7 +178,7 @@ As part of your security planning, you must plan for rotating your encryption ke
 
 All elements of a runbook are accessible to all Runbook Designers, and to any runbook servers in your environment. You can modify the permissions for runbook elements (such as a folder), but any permissions you set aren't enforced.
 
-:::zone-end
+::: zone-end
 
 ::: zone pivot="web-service-console-security"
 
@@ -190,7 +190,7 @@ In the default configuration of an Orchestrator deployment, web service calls ar
 
 To record all requests to your Orchestrator web service, you should enable audit trail logging with `atlc.exe.` For more information about logging using `atlc.exe`, go to [Audit Trail](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh488400(v=sc.12)).
 
-:::zone-end
+::: zone-end
 
 ::: zone pivot="use-windows-firewall"
 
@@ -249,7 +249,7 @@ For Windows Server 2008 R2, enable the following rules to allow any activity tha
 
 - Windows Management Instrumentation (WMI-In)
 
-:::zone-end
+::: zone-end
 
 ::: zone pivot="security-scenarios"
 
@@ -310,7 +310,7 @@ The following user roles are considered trusted/untrusted personas in Orchestrat
 |Database Administrator|MS SQL Server 20008 R2|Full Encrypt & decrypt|Rights to SQL Server as a DBA with rights to the Orchestrator database|Yes|
 |Windows Administrator|Windows Server 2008 R2|No explicit rights are granted, however Windows administrators are considered trusted personas.|Rights to Windows|Yes|
 
-:::zone-end
+::: zone-end
 
 ::: zone pivot="security-scenarios"
 
@@ -368,4 +368,4 @@ Moving encrypted data between Orchestrator instances requires one of two scenari
 
 Essentially, the Export functionality creates an export file whose encrypted data has been encrypted a password provided by the user during export. This export file contains encrypted data that can be decrypted by providing the same password during import. The data is encrypted and stored into the database by using the encryption keys for the new database.
 
-:::zone-end
+::: zone-end
