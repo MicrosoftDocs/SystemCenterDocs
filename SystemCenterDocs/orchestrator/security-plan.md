@@ -304,7 +304,8 @@ Orchestrator manages security through membership in two security groups created 
 The following user roles are considered trusted/untrusted personas in Orchestrator.
 
 |Security domain|Context|Cryptography rights|Identified by|Trusted persona|
-|Run Time|Orchestrator Services<br><br>"Invoke Runbook" Alternate Credentials|Full encrypt & decrypt|Orchestrator Systems Group in Active Directory / Credentials on "Invoke Runbook" Runbook Activity|Yes|
+|---|---|---|---|---|
+|Run Time|Orchestrator Services<br><br>**Invoke Runbook** Alternate Credentials|Full encrypt & decrypt|Orchestrator Systems Group in Active Directory / Credentials on **Invoke Runbook** Runbook Activity|Yes|
 |Design Time|Runbook Designer<br><br>Deployment Manager<br><br>Data Store Configuration|Full encrypt & decrypt|Orchestrator Users Group in Active Directory|Yes|
 |Operator|Orchestration Console<br>Web Service|No explicit access to encrypted or decrypted data.|User rights defined in the Runbook Designer by the Runbook Author role|No|
 |Database Administrator|MS SQL Server 20008 R2|Full Encrypt & decrypt|Rights to SQL Server as a DBA with rights to the Orchestrator database|Yes|
