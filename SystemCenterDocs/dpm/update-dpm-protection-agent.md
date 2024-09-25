@@ -1,5 +1,5 @@
 ---
-description: This article describes how to update protection agents for both connected and nonconnected client computers.
+description: This article describes how to update protection agents for both connected and disconnected client computers.
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -14,9 +14,9 @@ ms.custom: na
 
 # Update the DPM protection agent
 
-If you want to upgrade a protection agent that is installed on a computer that isn't connected to the network, you can't perform a connected agent upgrade from within DPM Administrator Console. You must perform the upgrade in a nonactive domain environment. The DPM server shows that the protection agent update is pending until the client computer is connected to the network.
+If you want to upgrade a protection agent installed on a computer that isn't connected to the network, you can't perform a connected agent upgrade from within DPM Administrator Console. You must perform the upgrade in an inactive domain environment. The DPM server shows that the protection agent update is pending until the client computer is connected to the network.
 
-This article describes how to update protection agents for both connected and nonconnected client computers.
+This article describes how to update protection agents for both connected and disconnected client computers.
 
 ## Update a protection agent for a connected client computer
 
@@ -44,6 +44,6 @@ To update a protection agent on a disconnected client computer, follow these ste
 
 3. To install updated protection agents on selected computers, select **Update**.
 
-4. For client computers that aren't connected to the network, **Update Pending** appears in the **Agent Status** column until the computer is connected to the network.
+      For client computers that aren't connected to the network, **Update Pending** appears in the **Agent Status** column until the computer is connected to the network.
 
-     After a client computer is connected to the network, **Updating** appears on the **Agent Updates** column for the client computer.
+      After a client computer is connected to the network, **Updating** appears on the **Agent Updates** column for the client computer.
