@@ -22,7 +22,7 @@ This article describes how to update protection agents for both connected and no
 
 To update a protection agent for a connected client computer, follow these steps:
 
-1. In the DPM Administrator Console, select **Management**and then select the **Agents** tab.
+1. In the DPM Administrator Console, select **Management** and then select the **Agents** tab.
 
 2. Select the client computers on which you want to update the protection agent.
 
