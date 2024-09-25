@@ -5,7 +5,7 @@ description: This article provides information about how to encrypt SMA web serv
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  09/17/2024
+ms.date:  09/25/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Encrypt SMA network traffic
-
-
 
 This article provides information about how to encrypt SMA Web Service to SQL connection by using Secure Socket Layer (SSL) and encrypt the network traffic between runbook worker and SQL database.
 
@@ -72,15 +70,9 @@ Use the following steps to secure the connection between Runbook worker and the 
 ```
 
 3. The `connectionString` depends on your authentication settings:
-   - If using Integrated Windows authentication (without an SQL user/password):
+   - Use Integrated Windows authentication (without an SQL user/password):
 
      `Data Source=<database-server-hostname>;Database=<SMA-database-name>;Integrated Security=True;MultipleActiveResultSets=False;Encrypt=True;`
-
-   - If using SQL user/password:
-
-     `Data Source=<database-server-hostname>;Database=<SMA-database-name>;User ID=<username>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;`
-
-     For more information, see [SqlClient Connection Strings](/dotnet/framework/data/adonet/connection-string-syntax#sqlclient-connection-strings).
 
 4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate isn't installed on the worker computer.
 
