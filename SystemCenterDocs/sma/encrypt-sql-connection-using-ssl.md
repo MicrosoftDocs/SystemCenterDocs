@@ -70,7 +70,7 @@ Use the following steps to secure the connection between Runbook worker and the 
 ```
 
 3. The `connectionString` depends on your authentication settings:
-   - If using Integrated Windows authentication (without an SQL user/password):
+   - Use Integrated Windows authentication (without an SQL user/password):
 
      `Data Source=<database-server-hostname>;Database=<SMA-database-name>;Integrated Security=True;MultipleActiveResultSets=False;Encrypt=True;`
 
