@@ -182,7 +182,7 @@ All elements of a runbook are accessible to all Runbook Designers, and to any ru
 
 ::: zone pivot="web-service-console-security"
 
-### Orchestrator Web Service and Orchestration Console Security
+## Orchestrator Web Service and Orchestration Console Security
 
 If you plan to install the Orchestrator web service and orchestration console, you should choose a secure protocol such as HTTPS to secure communication and prevent malformed requests from a man-in-the-middle attack. For more information on securing your Orchestrator web service and the Orchestration console, go to [How to Configure the Orchestrator Web Service to use HTTPS](https://learn.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh529160(v=sc.12)).
 
@@ -208,11 +208,11 @@ Enable the following rules as they apply to your configuration.
 
 #### Enable access to your SQL server
 
-1. On the remote computer where a Runbook Designer or a runbook server is installed, open a port to connect to your SQL server. The default SQL port is TCP:1433.
+On the remote computer where a Runbook Designer or a runbook server is installed, open a port to connect to your SQL server. The default SQL port is TCP:1433.
 
 #### Enable access between the Runbook Designer and the management server
 
-1. On the computer running the Management Server Service, add a firewall rule to allow Runbook Designer or runbook server to access `ManagementService.exe`.
+On the computer running the Management Server Service, add a firewall rule to allow Runbook Designer or runbook server to access `ManagementService.exe`.
 
 ##### Location of Orchestrator Management Service
 
@@ -222,11 +222,11 @@ Enable the following rules as they apply to your configuration.
 
 #### Grant privilege to the Runbook Server Service account
 
-1. On the remote runbook server computer, confirm that the Runbook Server Service account has the **Logon as service** privilege.
+On the remote runbook server computer, confirm that the Runbook Server Service account has the **Logon as service** privilege.
 
 #### Allow remote deployments with the Deployment Manager
 
-1. On the remote computer where you deployed the runbook server or the Runbook Designer, add a rule to allow the Deployment Manager to access the Orchestrator Remoting Service.
+On the remote computer where you deployed the runbook server or the Runbook Designer, add a rule to allow the Deployment Manager to access the Orchestrator Remoting Service.
 
 ##### Location of Orchestrator Remoting Service
 
@@ -372,3 +372,5 @@ Essentially, the Export functionality creates an export file whose encrypted dat
 ::: zone-end
 
 ## Next steps
+
+[System requirements for System Center Orchestrator](https://learn.microsoft.com/system-center/orchestrator/system-requirements-orch).

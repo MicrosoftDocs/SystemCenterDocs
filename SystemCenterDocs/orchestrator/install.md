@@ -94,7 +94,7 @@ If a prerequisite isn't met, a page displays the information about the prerequis
 ::: moniker-end
 
 ::: moniker range="sc-orch-2025"
-5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. Connecion with SQL server is encrypted by default. You must install a certificate that client can trust or you can follow the [Secure Connection to SQL server](#secure-connection-to-sql-server) to bypass the recommended trust mechanism. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. Connection with SQL server is encrypted by default. You must install a certificate that client can trust or you can follow the [Secure Connection to SQL server](#secure-connection-to-sql-server) to bypass the recommended trust mechanism. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 ::: moniker-end
 
 ::: moniker range=">=sc-orch-2022"
