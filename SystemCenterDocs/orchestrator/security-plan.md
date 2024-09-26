@@ -92,7 +92,7 @@ The decision of which to use depends on where you want to manage the group’s u
 
 ::: zone pivot="orchestrator-database-security"
 
-## Orchestration Database Security
+## Orchestrator Database Security
 
 The following sections provide information about securing the orchestration database in Orchestrator:
 

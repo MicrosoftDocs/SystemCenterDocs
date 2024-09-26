@@ -10,7 +10,7 @@ groups:
   - id: orchestrator-user-group
     title: Orchestrator Users Group
   - id: orchestrator-database-security
-    title: Orchestration Database Security
+    title: Orchestrator Database Security
   - id: runbook-security
     title: Runbook security
   - id: web-service-console-security
