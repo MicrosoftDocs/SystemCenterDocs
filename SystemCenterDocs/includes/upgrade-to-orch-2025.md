@@ -20,7 +20,7 @@ You can upgrade your installation of System Center 2022 Orchestrator to System C
 
 >[!NOTE]
 >- To upgrade to Orchestrator 2025, ensure that [Microsoft OLE DB Driver v19 for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server&view=sql-server-ver15&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer, or the Web API Service.
->- Connection to SQL is encrypted by default. To establish connection, install Trusted Server Certificate or follow steps mentioned  in [Enable Trust Server Connection (not recommended)](/SystemCenterDocs/orchestrator/install.md#enable-trust-server-connection-not-recommended).
+>- Connection to SQL is encrypted by default. To establish connection, install Trusted Server Certificate or follow steps mentioned  in [Secure Connection to SQL server](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server).
 >- Before you attempt the upgrade, ensure that your environment is upgraded to the supported versions as described in [System Requirements for System Center 2025](../orchestrator/system-requirements-orch.md).
 
 ## Upgrade steps
