@@ -72,7 +72,7 @@ All hardware requirements for System Center 2025 - Service Manager are fully doc
 
 All software requirements for System Center 2025- Service Manager are fully documented in [Software Requirements](../scsm/system-requirements.md).  
 
-### Preventing MPSync jobs from railing  
+### Preventing MPSync jobs from failing  
 
 **Before Upgrade**  
 

@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/04/2024
+ms.date: 09/26/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -117,21 +117,6 @@ To help simplify upgrades, you can use Service Manager 2025 connectors with the 
 
  For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../scsm/sql-always-on.md).
 
-## Upgrade to SQL 2017
-
- The following steps provide information about upgrading to SQL 2017.
-
-  > [!NOTE]  
-  > Upgrade process to SQL 2017 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
-
-**Use the following steps to upgrade from SQL 2016 to 2017**:
-
-1. Upgrade to SQL 2017.
-2. Install SQL 2017 reporting services (SSRS), launch the reporting services configuration manager to use the existing reporting DB, and restore encryption keys. Configure the Web service URL and Web portal URL.
-3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.
-4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
-5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2017.
-
 ## Upgrade to SQL 2019
 
 The following steps provide information about upgrading to SQL 2019.
@@ -148,6 +133,23 @@ The following steps provide information about upgrading to SQL 2019.
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2019.      
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2019.
+
+## Upgrade to SQL 2022
+
+The following steps provide information about upgrading to SQL 2022.
+
+ > [!NOTE]  
+ > - You must use Cumulative Update 8 (CU8) or later with SQL 2022.
+ > - Use ODBC 17.3 to 17.10.4.1, and MSOLEDBSQL 18.2 to 18.6.6.
+ > - Upgrade process to SQL 2022 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
+
+ **Use the following steps to upgrade from SQL 2019 to 2022**:
+
+1. Upgrade to SQL 2022.
+2. Install SQL 2022 reporting services (SSRS), launch the reporting services configuration manager to use the existing reporting DB, and restore encryption keys. Configure the Web service URL and Web portal URL.
+3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2022.
+4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
+5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2022.
 
 ### Enable CLR strict security
 
