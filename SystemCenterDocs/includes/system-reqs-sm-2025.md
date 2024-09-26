@@ -86,9 +86,10 @@ To help simplify upgrades, you can use Service Manager 2025 connectors with the 
 > - Service Manager 2025 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 to 17.10.6, and MSOLEDBSQL 18.2 to 18.7.2.
 
-|**Service Manager** | **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**| **SQL Server 2022**|
+|**System Center Component** | **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**| **SQL Server 2022**|
 | --- | --- |--- |
-|**Service Manager/Data Warehouse database** |  &#8226; |&#8226; |
+|**Service Manager** |  &#8226; |&#8226; |
+|**Data Warehouse database** |  &#8226; |&#8226; |
 
   > [!NOTE]
   > System Center 2025 - Service Manager doesn't support the *MultiSubnetFailover* parameter. This parameter isn't used in System Center 2025 - Service Manager connection strings.
