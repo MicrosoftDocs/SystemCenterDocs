@@ -23,7 +23,7 @@ Additionally, the following issues are fixed:
 - Query database activity error *Failed to load extension* is fixed.
 - Re-create Orchestrator keys by following the steps mentioned [here](/troubleshoot/system-center/orchestrator/license-key-expired-after-migrating-database). 
 - Activities persist custom separators while you configure Run behavior for the activity.
-- GET api/ActivityInstances returns the expected value.
+- GET api/ActivityInstances returns the expected value instead of empty result.
 - Activity names are correctly displayed on the Runbook Tester canvas and log view area instead of identifiers.
 - Jobs in active state are visible in Active Jobs in Web Console.
 
