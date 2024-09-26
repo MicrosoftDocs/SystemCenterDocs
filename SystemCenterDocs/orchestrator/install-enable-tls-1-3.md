@@ -28,6 +28,9 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Install a SQL Server update for TLS 1.3 support
 
+>[!Important]
+>Even with TLS 1.3 support for TDS connections, TLS 1.2 is still required for starting up SQL Server satellite services. Don't disable TLS 1.2 on the machine.
+
 [Download and install](/sql/relational-databases/security/networking/connect-with-tls-1-3?view=sql-server-ver16) the update for your SQL Server version.
 
 >[!Note]
