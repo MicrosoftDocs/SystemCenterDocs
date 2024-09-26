@@ -86,7 +86,7 @@ To help simplify upgrades, you can use Service Manager 2025 connectors with the 
 > - Service Manager 2025 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 to 17.10.6, and MSOLEDBSQL 18.2 to 18.7.2.
 
-|**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**|
+|**Service Manager** | **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**| **SQL Server 2022**|
 | --- | --- |--- |
 |**Service Manager/Data Warehouse database** |  &#8226; |&#8226; |
 
