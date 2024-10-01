@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/10/2024
+ms.date: 10/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -19,11 +19,7 @@ ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy24
 
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
-This article provides the new features supported by System Center 2025 - Service Management Automation (SMA).
-
-### Improved reliability of SMA jobs
-
-With improvements made in Sandbox lifecycle management, we've improved the overall reliability of jobs run in SMA.
+There are no new features in Service Management Automation 2025.
 
 ::: moniker-end
 
