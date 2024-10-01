@@ -14,8 +14,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Runbook output and messages
 
-
-
 Most automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](/archive/blogs/) to send output from a workflow. Service Management Automation works with each of these streams differently, and you should follow best practices for how to use each when you're creating a runbook.
 
 The following table provides a brief description of each of the streams and their behavior in the Management Portal both when running a published runbook and when [testing a runbook](./authoring-automation-runbooks.md). Further details on each stream are provided in the subsequent sections.
@@ -42,6 +40,7 @@ $object
 ```
 
 ### Output from a function
+
 When you write to the output stream in a function that is included in your runbook, the output is passed back to the runbook. If the runbook assigns that output to a variable, then it isn't written to the output stream. Writing to any other streams from within the function will write to the corresponding stream for the runbook.
 
 Consider the following sample runbook.
