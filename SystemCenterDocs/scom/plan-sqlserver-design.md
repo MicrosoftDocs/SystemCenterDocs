@@ -52,13 +52,6 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2022"
-
-- SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
-
-::: moniker-end
-
-
 ::: moniker range=">=sc-om-2019"
 
 Before upgrading SQL Server, see [upgrade information for 2017+](upgrade-sqlserver-2017-opsmgr.md) and [upgrade information for SQL 2019](upgrade-sqlserver-2019-operations-manager.md).
@@ -256,20 +249,6 @@ To set up an availability group, you deploy a Windows Server Failover Clustering
 - Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability).
 - Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
 - Learn more about [setting up an availability group](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server).
-
-::: moniker range=">=sc-om-2019"
-
-SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica.
-
-With System Center 2016 and later - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.  
-
-::: moniker-end
-
-::: moniker range=">=sc-om-2022"
-
-You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
-
-::: moniker-end
 
 > [!TIP]
 > Beginning with Operations Manager 2022, you can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
