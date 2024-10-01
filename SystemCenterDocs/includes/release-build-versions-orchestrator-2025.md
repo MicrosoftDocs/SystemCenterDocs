@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/12/2024
+ms.date: 10/01/2024
 ms.service: system-center
 ms.assetid: 
 ms.subservice: orchestrator
@@ -17,4 +17,4 @@ The following table lists the release history for Orchestrator 2025.
 
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
-|||September 2024 |General Availability|
+|10.25.1.7||November 2024 |General Availability|
