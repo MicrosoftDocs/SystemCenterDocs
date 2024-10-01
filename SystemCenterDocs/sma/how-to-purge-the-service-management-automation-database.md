@@ -13,8 +13,6 @@ ms.custom: engagement-fy24
 
 # Purge the Service Management Automation database
 
-
-
 In Service Management Automation (SMA), database purging is automatic, but you can adjust it to your needs.
 
 - To enable the automatic database purge, you must enable the SQL Server Agent (MSSQLSERVER) service for Automatic start. The service isn't turned on by default, but it's frequently started by SQL Server database administrators for other tasks.

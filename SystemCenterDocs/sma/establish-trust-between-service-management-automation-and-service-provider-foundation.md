@@ -14,8 +14,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Establish trust between Service Management Automation and Service Provider Foundation
 
-
-
 For Service Provider Foundation to successfully call the Service Management Automation web service, the Service Management Automation web service certificate must be trusted by the server on which Service Provider Foundation is installed. This article applies whether you're using a self-signed certificate or a certification authority certificate for your Service Management Automation web service.
 
 ## Trust the Service Management Automation certificate

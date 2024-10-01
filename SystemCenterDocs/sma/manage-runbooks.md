@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Manage runbooks for Service Management Automation
 
-
-
 As a Service Management Automation (SMA) administrator, you need to configure and run runbooks. Activities including setting up the runbook workers and scheduling and tracking runbooks. There are two system runbooks that are included with SMA in addition to the runbooks you author:
 
 - **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all the native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules so that their activities can be used when you author runbooks in Microsoft Azure Pack.

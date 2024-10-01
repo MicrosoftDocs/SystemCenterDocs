@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 
 # Deploy Service Management Automation
 
-
-
 To deploy Service Management Automation (SMA), you must install the SMA Web Service, set up the SMA runbook worker, and set up the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation.
 
 You can install the web service on any machine that can communicate with Microsoft Azure Pack and an instance of SQL Server.

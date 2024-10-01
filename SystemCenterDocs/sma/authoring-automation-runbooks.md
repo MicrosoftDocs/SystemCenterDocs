@@ -11,9 +11,8 @@ title: Author Automation Runbooks
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
+
 # Author Service Management Automation runbooks
-
-
 
 Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows or PowerShell scripts. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
