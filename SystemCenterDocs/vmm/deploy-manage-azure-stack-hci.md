@@ -35,9 +35,15 @@ This article provides information about how to set up an Azure Stack HCI cluster
 
 ::: moniker-end
 
-
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 >[!IMPORTANT]
 >Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+>[!IMPORTANT]
+>Azure Stack HCI 23H2 clusters should be updated to 2408.2 or 2411 versions to be supported through System Center Virtual Machine Manager. Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
+::: moniker-end
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 ## Before you start
@@ -285,7 +291,8 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 
     ![Screenshot of configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
 
-7. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
+7. In **Storage Settings**, you can specify the storage tier split, capacity, and resiliency.
+8. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
 ## Step 7: Deploy VMs on the cluster
 
