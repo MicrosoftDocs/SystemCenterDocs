@@ -45,22 +45,34 @@ This article provides information about how to set up an Azure Stack HCI cluster
 >Azure Stack HCI 23H2 clusters should be updated to 2408.2 or 2411 versions to be supported through System Center Virtual Machine Manager. Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
 ::: moniker-end
 
-::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
-## Before you start
 
-::: moniker-end
+## Before you start
 
 ::: moniker range="sc-vmm-2019"
 
 Ensure that you're running VMM 2019 UR3 or later.
+
+**What’s supported?**
+
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to create and manage HCI clusters.
+
+- Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
+
+- [Set up VLAN based network on Azure Stack HCI clusters](manage-networks.md).
+
+- [Deployment and management of SDN network controller on Azure Stack HCI clusters](sdn-controller.md).
+
+- Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs), and application of [QoS settings](qos-storage-clusters.md#assign-storage-qos-policy-for-clusters).
+
+- Moving VMs between Windows Server and Azure Stack HCI clusters works via Network Migration and migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it's performed as a single operation. 
+
+- The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
 Ensure that you're running VMM 2022 UR1 or later.
-
-::: moniker-end
 
 **What’s supported?**
 
@@ -81,8 +93,6 @@ Ensure that you're running VMM 2022 UR1 or later.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2025"
-
-## Before you start
 
 **What’s supported?**
 
