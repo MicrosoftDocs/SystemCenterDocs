@@ -236,7 +236,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 >[!NOTE]
 >Default values are assigned to **Priority** and **Bandwidth**. Customize these values based on your organization's environment needs.
 
-    ![Screenshot of Priority bandwidth.](./media/s2d/assign-priority-bandwidth.png)
+   ![Screenshot of Priority bandwidth.](./media/s2d/assign-priority-bandwidth.png)
 
    Default values:
 
