@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/03/2024
+ms.date: 10/04/2024
 ms.custom: intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
@@ -19,6 +19,10 @@ The following sections introduce new and updated features in System Center Opera
 ## Support for Windows Server 2025
 
 Operations Manager 2025 now supports Windows Server 2025.
+
+## Support for Openssl 3.3 and later
+
+Operations Manager 2025 now supports Openssl 3.3 and later.
 
 ## Other updates
 
