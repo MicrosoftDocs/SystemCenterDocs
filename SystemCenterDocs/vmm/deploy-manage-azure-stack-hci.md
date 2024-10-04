@@ -262,7 +262,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 ## Step 4: Register Azure Stack HCI cluster with Azure
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 
 After creating an Azure Stack HCI cluster, it must be registered with Azure within 30 days of installation per Azure Online Service terms. If you're using System Center 2022, use `Register-SCAzStackHCI` cmdlet in VMM to register the Azure Stack HCI cluster with Azure. Alternatively, follow [these steps](/azure-stack/hci/deploy/register-with-azure) to register the Azure Stack HCI cluster with Azure.
 
@@ -341,8 +341,10 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
     :::image type="Add VMware vCenter option" source="media/deploy-manage-azure-stack-hci/add-vmware-vcenter-inline.png" alt-text="Screenshot showing add VMware vCenter option." lightbox="media/deploy-manage-azure-stack-hci/add-vmware-vcenter-expanded.png":::
 3.	In the **Add VMware vCenter Server** page, do the following:
     1. **Computer name**: Specify the vCenter server name.
-    1. **Run As account**: Select the Run As account created for vSphere administrator.   
+    1. **Run As account**: Select the Run As account created for vSphere administrator.
+   
        :::image type="Server information" source="media/deploy-manage-azure-stack-hci/server-info.png" alt-text="Screenshot showing server information.":::
+
 4.	Select **Finish**.
 5.	In the **Import Certificate** page, select **Import**.
 
@@ -356,7 +358,9 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
     :::image type="Add Host options" source="media/deploy-manage-azure-stack-hci/add-hosts.png" alt-text="Screenshot showing Add hosts option.":::
 2.	In the **Add Resource Wizard**, 
     1. Under **Credentials**, select the Run as account that is used for the port and select **Next**.
+    
        :::image type="Credentials tab" source="media/deploy-manage-azure-stack-hci/credentials-inline.png" alt-text="Screenshot showing credentials tab." lightbox="media/deploy-manage-azure-stack-hci/credentials-expanded.png":::
+
     1. Under **Target Resources**, select all the ESX clusters that need to be added to VMM and select **Next**. 
        :::image type="Target resources tab" source="media/deploy-manage-azure-stack-hci/target-resources-inline.png" alt-text="Screenshot showing target resources tab." lightbox="media/deploy-manage-azure-stack-hci/target-resources-expanded.png":::
     1. Under **Host Settings**, select the location where you want to add the VMs and select **Next**.
@@ -369,7 +373,9 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
 
 1.	If the ESXi host status reflects as **OK (Limited)**, right-click **Properties** > **Management**, select Run as account that is used for the port and import the certificates for the host.  
 Repeat the same process for all the ESXi hosts.
+
      :::image type="Management tab" source="media/deploy-manage-azure-stack-hci/management.png" alt-text="Screenshot showing  Management tab.":::
+
 After you add the ESXi clusters, all the virtual machines running on the ESXi clusters are auto discovered in VMM. 
  
 ### View VMs
