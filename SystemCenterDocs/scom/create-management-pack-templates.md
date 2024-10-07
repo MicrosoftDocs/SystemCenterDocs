@@ -14,7 +14,6 @@ ms.topic: article
 
 # Create management pack templates
 
-
 Use the following procedure to create and modify management pack templates.
 
 ## Create a management pack template

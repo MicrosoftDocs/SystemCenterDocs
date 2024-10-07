@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Enabling debugging in Management Pack for SQL Server Analysis Services
+title: Enable debugging in Management Pack for SQL Server Analysis Services
 description: This article explains how to enable debugging in Management Pack for SQL Server Analysis Services
 manager: evansma
 author: fkornilov
@@ -15,7 +15,7 @@ ms.subservice: operations-manager
 
 In Management Pack for SQL Server Analysis Services, you can enable debugging in the Windows Event log in cases when you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
 
-## Enabling Debugging
+## Enable Debugging
 
 To enable debugging, do the following:
 
@@ -52,7 +52,7 @@ ForEach-Object {
 
 The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You don't need to restart any service; changes are applied automatically.
 
-## Disabling Debugging
+## Disable Debugging
 
 To disable debugging, delete the keys added above or use the following PowerShell script to disable debugging in automated mode:
 

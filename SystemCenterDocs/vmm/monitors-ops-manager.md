@@ -5,7 +5,7 @@ description: This article describes how to integrate VMM with Operations Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/28/2023
+ms.date: 09/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -17,7 +17,7 @@ ms.custom: engagement-fy23
 
 
 
-This article describes how to integrate System Center - Virtual Machine Manager (VMM) with System Center Operations Manager to monitor the health of virtualization hosts, virtual machines, and other resources in the VMM compute fabric.
+This article describes how to integrate System Center Virtual Machine Manager (VMM) with System Center Operations Manager to monitor the health of virtualization hosts, virtual machines, and other resources in the VMM compute fabric.
 
 - Operations Manager monitors the VMM server and all the hosts and virtual machines in the VMM fabric.
 - An Operations Manager management group can monitor multiple VMM instances. The VMM fabric can only be monitored by a single Operations Manager management group.
@@ -27,7 +27,7 @@ This article describes how to integrate System Center - Virtual Machine Manager 
 
 You set up Operations Manager with VMM as follows:
 
-1. Verify [prerequisites](../scom/system-requirements.md).
+1. Ensure the [prerequisites](../scom/system-requirements.md) are met.
 2. Install the Operations Manager console on the VMM server so that you can monitor VMM from the server.
 3. Install Operations Manager agents on the VMM management server and all hosts under management by VMM.
 4. Locate the latest management pack.
@@ -35,7 +35,7 @@ You set up Operations Manager with VMM as follows:
 
     - Imports the VMM management packs into the Operations Manager.
     - Optionally enables Performance and Resource Optimization (PRO). PRO information is provided by the Operations Manager, and can be mapped to VMM to optimize performance. You can map specific Operations Manager alerts to remedial actions in VMM. For example, you could migrate VMs to a different host after a hardware issue. In addition, with PRO enabled, Operations Manager can detect resource issues or hardware failures in the virtualization infrastructure.
-    - Optionally enables maintenance mode. VMM can place hosts in maintenance mode for servicing. When a host is in maintenance mode, VMM uses live migration to move VMs to another location, and doesn't place new VMs on the host. If the maintenance mode is enabled for Operations Manager monitoring, when a host is placed into maintenance mode in VMM, Operations Manager also places it in the same mode. In the maintenance mode, the Operations Manager agent suppresses alerts, notifications, and state changes, so that the host isn't monitored while regular hardware and software maintenance activities are in progress.
+    - Optionally enables maintenance mode. VMM can place hosts in maintenance mode for servicing. When a host is in maintenance mode, VMM uses live migration to move VMs to another location and doesn't place new VMs on the host. If the maintenance mode is enabled for Operations Manager monitoring, when a host is placed into maintenance mode in VMM, Operations Manager also places it in the same mode. In the maintenance mode, the Operations Manager agent suppresses alerts, notifications, and state changes, so that the host isn't monitored while regular hardware and software maintenance activities are in progress.
     - Enables support for SQL Server Analysis Services (SSAS) and the reporting capabilities provided by SSAS.
 
 
@@ -63,12 +63,22 @@ You set up Operations Manager with VMM as follows:
 
 ::: moniker-end
 
+::: moniker range="sc-vmm-2025"
+
+>[!NOTE]
+>Ensure that you're using a supported version of Operations Manager (running on System Center 2025).
+
+::: moniker-end
+
 ::: moniker range="<=sc-vmm-2019"
-- Operations Manager must use SQL Server 2012 SP2, SQL Server 2014, or SQL Server 2016 with reporting services enabled. To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager reporting server. The SSAS instance name should match the SQL Server Reporting Services (MSSQLSERVER).
+- Operations Manager must use SQL Server 2012 SP2, SQL Server 2014, or SQL Server 2016 with reporting services enabled. To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager reporting server. The SSAS instance name must match the SQL Server Reporting Services (MSSQLSERVER).
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-- Operations Manager must use SQL Server 2016, SQL Server 2017, SQL Server 2019, or SQL Server 2022 with reporting services enabled. To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager reporting server. The SSAS instance name should match the SQL Server Reporting Services (MSSQLSERVER).
+- Operations Manager must use SQL Server 2016, SQL Server 2017, SQL Server 2019, or SQL Server 2022 with reporting services enabled. To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager reporting server. The SSAS instance name must match the SQL Server Reporting Services (MSSQLSERVER).
+::: moniker-end
+::: moniker range="sc-vmm-2025"
+- Operations Manager must use SQL Server 2019 or SQL Server 2022 with reporting services enabled. To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager reporting server. The SSAS instance name must match the SQL Server Reporting Services (MSSQLSERVER).
 ::: moniker-end
 - The version of the Operations Manager operations console that is installed on the VMM management server must match the version of Operations Manager with which you intend to integrate. The Operations Manager agent version agent should be supported by the Operations Manager version.
 - Ensure that the version of Windows PowerShell that's on all Operations Manager management servers is the most recent version supported by that version of Operations Manager. To determine which version of Windows PowerShell is on a server, run **Get-Host | Select-Object Version**
@@ -95,7 +105,7 @@ You set up Operations Manager with VMM as follows:
 
 ## Run the integration wizard
 
-Run the wizard to connect the VMM server to the Operations Manager server, and import the VMM management pack to Operations Manager.
+Run the wizard to connect the VMM server to the Operations Manager server and import the VMM management pack to Operations Manager.
 
 1.  In the VMM console, select **Settings** > **System Center Settings** > **Operations Manager Server** > **Properties**.
 
@@ -105,12 +115,12 @@ Run the wizard to connect the VMM server to the Operations Manager server, and i
 2.  In **Introduction**, select **Next**.
 3.  In **Connection to Operations Manager**, specify the Operations Manager server name, and select an account to use to connect to it. You can use the VMM server service account or specify a Run As account. This account must be a member of the Operations Manager Administrator role.
 4.  Select **Enable Performance and Resource Optimization (PRO)** if necessary.
-5.  Select **Enable maintenance mode integration with Operations Manager**, if desired. Then select **Next**.
+5.  Select **Enable maintenance mode integration with Operations Manager**, if desired. Select **Next**.
 
     When hosts are placed in maintenance mode using the VMM management server, Operations Manager places them in the maintenance mode as well. In this mode, the Operations Manager agent suppresses alerts, notifications, rules, monitors, automatic responses, state changes, and new alerts.
 
-6.  Enter credentials for Operations Manager to connect with the VMM management server, and select **Next**. This account will be added to the Administrator user role in VMM.
-7. Review the information in the **Summary** page, and select **Finish**. You can view the status of the new connection in the **Jobs** workspace.
+6.  Enter credentials for Operations Manager to connect with the VMM management server and select **Next**. This account will be added to the Administrator user role in VMM.
+7. Review the information in the **Summary** page and select **Finish**. You can view the status of the new connection in the **Jobs** workspace.
 8. With **System Center Settings** still selected, in the results pane, right-click **Operations Manager Server**, and select **Properties**. In **Operation Manager Settings** > **Details** > **Connection Status**, confirm that the connection is **OK**.
 
 If you later remove a connection to an Operations Manager server, this doesn't remove the VMM management packs from the server, but the connector is removed.

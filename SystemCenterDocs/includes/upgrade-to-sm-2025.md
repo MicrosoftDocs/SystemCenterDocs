@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 09/04/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -62,10 +62,7 @@ The following upgrade paths are supported to Service Manager 2025.
 
 ### Installation location  
 
-The default folder for installing Service Manager is \\Program Files\\Microsoft System Center\\Service&nbsp;Manager. However, when you perform the upgrade to Service Manager, the software is installed in the folder that Service Manager previously used. If Service Manager 2016/1801 was previously upgraded, then the following folder could be used:  
-
-\\Program Files\\Microsoft System Center\\Service&nbsp;Manager&nbsp;  
-
+The default folder for installing Service Manager is \\Program Files\\Microsoft System Center\\Service&nbsp;Manager. However, when you perform the upgrade to Service Manager, the software is installed in the folder that Service Manager previously used.
 
 ### Hardware requirements for System Center 2025 - Service Manager  
 
@@ -75,7 +72,7 @@ All hardware requirements for System Center 2025 - Service Manager are fully doc
 
 All software requirements for System Center 2025- Service Manager are fully documented in [Software Requirements](../scsm/system-requirements.md).  
 
-### Preventing MPSync jobs from railing  
+### Preventing MPSync jobs from failing  
 
 **Before Upgrade**  
 
@@ -146,7 +143,7 @@ If the management pack doesn't exist, you need to restore your database to a sta
 
 4.  Restart the failed base management pack deployment using the Service Manager console.  
 
-### Testing the upgrade in a lab environment  
+### Test the upgrade in a lab environment  
 
 We recommend that you test the upgrade to System Center 2025 - Service Manager in a lab environment.  
 
@@ -156,21 +153,23 @@ The order of your upgrades is important. Perform the upgrade steps in the follow
 
 1.  Back up your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md).  
 
-2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you won't be able to start them again until after you've completed the upgrade.  
+2.  Start with the data warehouse management server.
 
 3.  After the upgrade to the data warehouse management server is complete, upgrade the initial Service Manager management server. If you created more than one Service Manager management server, the initial Service Manager management server is the first one that you created.  
 
+4. Then upgrade all Secondary management servers, Self-Service Portals, and Service Manager consoles.
+
 After the installation, do the following:
 
-4. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the following commands:
-    ```
+1. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the following commands:
+    ```powershell  
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
 
-5. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
-    ```
+2. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
+    ```powershell   
     $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
 
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices")
@@ -205,25 +204,16 @@ After the installation, do the following:
 
     ```
 
-6. Enable the job schedules by running the following commands:
+3. Enable the job schedules by running the following commands:
 
-    ```
+    ```powershell    
     $DW ='DWMS Servername'
 
     Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
-7. Restart the Data Warehouse management server.
+4. Restart the Data Warehouse management server.
 
-8.  Upgrade the Service Manager consoles and any additional Service Manager management servers.  
-
-9.  Restart the data warehouse jobs.  
-
-10.  Deploy the new Self-Service Portal.  
-
-11. Apply the [System Center 2022 Service Manager Hotfix](https://support.microsoft.com/topic/hotfix-for-system-center-2022-service-manager-june-2023-kb5021792-8f17ff60-eafc-4c43-8399-85beebc1065f) to the Primary management server, Secondary management server(s), Self-Service Portal(s), and all Analyst consoles.
-
-The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must update the Service Manager management server, and also deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
-
+5.  Apply the System Center 2025 Service Manager to the Data Warehouse management server, Primary management server, Secondary management server(s), Self-Service Portal(s), and all Analyst consoles.
 
 ### Database impacts  
 

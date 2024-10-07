@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Service Management Automation architecture
 
-
-
 This article shows a diagram that illustrates System Center - Service Management Automation (SMA) features.
 
 ![SMA architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)

@@ -14,7 +14,6 @@ ms.topic: article
 
 # Author strategies for .NET application monitoring
 
-
 Here are some scenarios and settings to change during authoring that can help you receive the monitoring experience and data that is most helpful for you.
 
 ## Monitor a new application

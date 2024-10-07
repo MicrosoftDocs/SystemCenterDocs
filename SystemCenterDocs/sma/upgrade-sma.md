@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Ser
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2024
+ms.date: 10/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -40,15 +40,11 @@ This article provides the upgrade information for System Center 2019 - Service M
 
 ::: moniker-end
 
-
-
 ::: moniker range="sc-sma-2016"
 
 This article provides the upgrade information for System Center 2016 - Service Management Automation (SMA).
 
 ::: moniker-end
-
-
 
 ::: moniker range="sc-sma-2016"
 

@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Windows PowerShell Workflow Concepts
 
-
-
 One [type of runbook](./authoring-automation-runbooks.md) for Service Management Automation is based on Windows PowerShell Workflows. This article provides a brief overview of the critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134242(v=ws.11)).
 
 The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](/previous-versions/azure/dn643629(v=azure.100)) although the two will typically work with different resources.

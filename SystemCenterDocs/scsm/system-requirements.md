@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/30/2024
+ms.date: 09/26/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
@@ -21,7 +21,7 @@ ms.custom: UpdateFrequency.5
 This article details the system requirements for System Center 2025 - Service Manager (SM).
 
 >[!NOTE]
-> Unlike the earlier releases, for SM 2025, you don't need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
+> Unlike the earlier releases, for SM 2025, Analysis Management Object is removed.
 
  [!INCLUDE [system-reqs-sm-2025](../includes/system-reqs-sm-2025.md)]
 

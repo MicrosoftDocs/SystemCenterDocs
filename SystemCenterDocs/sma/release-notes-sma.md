@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/03/2024
+ms.date: 10/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -15,9 +15,11 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Release notes for System Center - Service Management Automation
 
-::: moniker range=sc-sma-2025"
+::: moniker range="sc-sma-2025"
 
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+There are no known issues in Service Management Automation 2025.
 
 ::: moniker-end
 

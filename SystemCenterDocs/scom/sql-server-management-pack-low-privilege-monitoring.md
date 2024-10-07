@@ -20,11 +20,7 @@ To enable low-privilege monitoring, grant appropriate permissions to Run As acco
 > [!NOTE]
 > The **Virtual Log File Count** monitor (VLF) doesn't support low-privilege monitoring on SQL Servers 2012 and 2014.
 
-## Agent Monitoring
-
-This section explains how to configure low-privilege agent monitoring.
-
-### In Active Directory
+## Create Active Directory accounts
 
 1. In Active Directory, create the following domain users for low-privilege access to the target SQL Server instances:
 
@@ -39,12 +35,16 @@ This section explains how to configure low-privilege agent monitoring.
 
 3. Add the **SQLMPLowPriv** group to the [Read-only Domain Controllers](/windows-server/identity/ad-ds/manage/understand-security-groups#read-only-domain-controllers) Active Directory security group.
 
+## Agent Monitoring
+
+This section explains how to configure low-privilege agent monitoring.
+
 ### On Agents
 
-1. Grant the **SQLTaskAction** user and the **SQLMPLowPriv** group the **Read** permission in the registry key:
+1. Grant the **SQLTaskAction** user and the **SQLMPLowPriv** group the **Read** permission for the registry key:
     `HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft SQL Server`
 
-2. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission in the registry key:
+2. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission for the registry key:
     `HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft SQL Server\[InstanceID]\MSSQLServer\Parameters`
 
 3. Add the **SQLTaskAction** and **SQLMonitor** users to the [Event Log Readers](/windows-server/identity/ad-ds/manage/understand-security-groups#event-log-readers) Active Directory security local group.
@@ -64,12 +64,12 @@ This section explains how to configure low-privilege agent monitoring.
 5. Configure the **Allow log on locally** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on locally.
 
     > [!NOTE]
-    > If you're using the versions of the System Center Operations Manager 2012 R2 or 2016, follow the steps above to provide **Allow log on locally** permission to Run As accounts. [Learn more](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
+    > If you're using System Center Operations Manager 2016, follow the steps above to provide **Allow log on locally** permission to Run As accounts. [Learn more](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
 
 6. Configure the **Log on as a Service** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to sign in as a service.
 
     > [!NOTE]
-    > If you're using the versions of System Center Operations Manager 2019 and higher, follow the steps above to provide **Log on as a Service** permission to Run As accounts. [Learn more](./enable-service-logon.md).
+    > If you're using System Center Operations Manager 2019 or higher, follow the steps above to provide **Log on as a Service** permission to Run As accounts. [Learn more](./enable-service-logon.md).
 
 7. In the **Microsoft Monitoring Agent** properties for the selected management group, set the **Local System** account to perform agent actions.
 
@@ -77,7 +77,7 @@ This section explains how to configure low-privilege agent monitoring.
 
 1. Take the steps above for each cluster node.
 
-2. Grant **SQLMPLowPriv** and **SQLTaskAction** the **Remote Launch** and **Remote Activation** DCOM permissions using [DCOMCNFG](/windows/win32/com/setting-machine-wide-security-using-dcomcnfg).
+2. Grant to **SQLMPLowPriv** and **SQLTaskAction** the **Remote Launch** and **Remote Activation** DCOM permissions using [DCOMCNFG](/windows/win32/com/setting-machine-wide-security-using-dcomcnfg).
 
 3. Allow **Windows Remote Management** through Windows Firewall.
 
@@ -96,7 +96,7 @@ This section explains how to configure low-privilege agent monitoring.
     SET NOCOUNT ON;
     /*The domain account that System Center Operations Manager will use
     to access the SQL Server instance*/
-    DECLARE @accountname sysname = 'SQLMPLowPriv';
+    DECLARE @accountname sysname = '<domainName>\<login_name>';
     /*In some cases, administrators change the 'sa' account default name.
     This will retrieve the name of the account associated to princicpal_id = 1*/
     DECLARE @sa_name sysname = 'sa';
@@ -254,14 +254,14 @@ This section explains how to configure low-privilege agentless monitoring.
 
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
-2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, use the following SQL script to create and set the lowest privilege configuration for the **SQLMPLowPriv** account with SQL Server authentication:
+2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, use the following SQL script to create and set the lowest privilege configuration for the **SQLMPLowPriv** account with Active Directory authentication:
 
      ```SQL
     USE [master];
     SET NOCOUNT ON;
     /*The user account with SQL Server authentication that System Center Operations Manager
     will use to access the SQL Server instance*/
-    DECLARE @accountname sysname = 'SQLMPLowPriv';
+    DECLARE @accountname sysname = '<domainName>\<login_name>';
     /*In some cases, administrators change the 'sa' account default name.
     This will retrieve the name of the account associated to princicpal_id = 1*/
     DECLARE @sa_name sysname = 'sa';
@@ -281,7 +281,7 @@ This section explains how to configure low-privilege agentless monitoring.
     and replace it with your value below*/
     SET @createLoginCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
         WHERE [name] = '''+ @accountname +''') BEGIN
-        CREATE LOGIN '+ QUOTENAME(@accountname) +' WITH PASSWORD=N'''', DEFAULT_DATABASE=[master]; END'
+        CREATE LOGIN '+ QUOTENAME(@accountname) +' FROM WINDOWS WITH DEFAULT_DATABASE=[master]; END'
     EXEC(@createLoginCommand);
     -- Add the login to the user-defined server role
     DECLARE @addServerMemberCommand nvarchar(200);
@@ -372,9 +372,9 @@ To configure low-privilege agentless monitoring using the monitoring wizard, per
 
     For example:
 
-     - 172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"
-     - 172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
-     - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
+     - 192.0.2.133;MachineName="_example-server-name_";InstanceName="_example-instance-name_";Platform="Windows"
+     - 192.0.2.133,50626;MachineName="_example-server-name_";InstanceName="_example-instance-name_";Platform="Windows"
+     - 192.0.5.115;MachineName="_example-server-name_";InstanceName="_example-instance-name_";Platform="Linux"
 
     You can also create a new Run As account. For that, in the **Add Instances** window, select **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
 
@@ -497,13 +497,13 @@ To get information about the services, grant required permissions according to t
     The new SDDL looks similar to the following one:
 
     ```CONSOLE
-    D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU) (A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA) S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)
+    D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU) (A;;CCLCRPRC;;;A-1-22-3-4444444444-5555555555-6666666-7777777777)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA) S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)
     ```
 
 5. Set the security credentials to access the Service Control Manager by using the **sdset** command.
 
     ```CONSOLE
-    sc sdset scmanager "D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)(A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)"
+    sc sdset scmanager "D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)(A;;CCLCRPRC;;;A-1-22-3-4444444444-5555555555-6666666-7777777777)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)"
     ```
 
 6. Set rights for SQL Server, SQL agent, and SQL Full-text Filter Daemon Launcher services by using the **Command-Line Tool SubInACL** utility for the **Spotlight User** SID.
@@ -511,11 +511,11 @@ To get information about the services, grant required permissions according to t
     Run the utility with the following options:
 
     ```CONSOLE
-    subinacl.exe /service mssqlserver /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    subinacl.exe /service mssqlserver /GRANT= A-1-22-3-4444444444-5555555555-6666666-7777777777=LQSEI
 
-    subinacl.exe /service sqlserveragent /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    subinacl.exe /service sqlserveragent /GRANT= A-1-22-3-4444444444-5555555555-6666666-7777777777=LQSEI
 
-    subinacl.exe /service mssqlfdlauncher /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    subinacl.exe /service mssqlfdlauncher /GRANT= A-1-22-3-4444444444-5555555555-6666666-7777777777=LQSEI
     ```
 
     ![Screenshot of running subinacl.](./media/sql-server-management-pack/subinacl-run.png)
@@ -533,7 +533,7 @@ To get information about the services, grant required permissions according to t
     Run the utility with the following options:
 
     ```CONSOLE
-    subinacl.exe /service clussvc /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    subinacl.exe /service clussvc /GRANT= A-1-22-3-4444444444-5555555555-6666666-7777777777=LQSEI
     ```
 
 ### Managing Remote Access to the Registry

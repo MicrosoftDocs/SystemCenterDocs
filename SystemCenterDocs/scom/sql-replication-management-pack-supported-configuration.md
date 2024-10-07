@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: epomortseva
 ms.author: v-fkornilov
 manager: mkluck
-ms.date: 02/02/2024
+ms.date: 09/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -52,12 +52,14 @@ Management Pack for SQL Server Replication works with any edition of SQL Server 
   - Database Configuration metrics
   - Database Performance metrics
 - [Not supported] Localized versions of SQL Server
-    Management Pack for SQL Server Replication supports English-language version of SQL Server only.
+    Management Pack for SQL Server Replication support English-language version of SQL Server only.
 - [Not supported] 32-bit versions of SQL Server
 
 All SQL Server Express editions support Replication as Subscriber with Push subscriptions only. For more information, see [Editions and supported features of SQL Server](/sql/sql-server/editions-and-components-of-sql-server-version-15).
 
 ## System Center Operations Manager
+
+::: moniker range="<=sc-om-2022"
 
 Management Pack for SQL Server Replication supports the following operating systems and platforms:
 
@@ -66,8 +68,17 @@ Management Pack for SQL Server Replication supports the following operating syst
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
 
 - System Center Operations Manager 2016
+
+::: moniker-end
+
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+
+::: moniker range="sc-om-2025"
+
+- System Center Operations Manager 2025
+
+::: moniker-end
 
 A dedicated management group isn't required.
 
@@ -75,11 +86,21 @@ A dedicated management group isn't required.
 
 Management Pack for SQL Server Replication supports the following 64-bit operating systems and platforms:
 
+::: moniker range="<=sc-om-2022"
+
 - Windows Server 2012
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
+::: moniker-end
+
+::: moniker range="sc-om-2025"
+- Windows Server 2019
+- Windows Server 2022
+- Windows Server 2025
+
+::: moniker-end
 
 ## Agentless Monitoring
 

@@ -30,6 +30,8 @@
       href: feature-performance-considerations.md
     - name: System requirements - Orchestrator
       href: system-requirements-orch.md
+    - name: Orchestrator Security Plan
+      href: security-plan.md
     - name: TCP port requirements
       href: tcp-port-requirements.md
     - name: Design a runbook

@@ -55,12 +55,12 @@ VMM server to Windows file server | 80: WinRM; 135: RPC; 139: NetBIOS; 445: SMB 
 VMM server to Windows file server | 443:HTTPS | BITS used for file transfer<br/><br/> Inbound rule on file server |
 VMM server to Windows file server | 5985/5986:WinRM | Control channel<br/><br/> Inbound rule on file server |
 
-::: moniker range=">= sc-vmm-2016"
+::: moniker range=">=sc-vmm-2016"
 > [!NOTE]
 > In addition to the above ports, VMM relies on the default dynamic port range for all its communication with Hyper-V hosts, file servers, and library servers.  [Learn more](https://support.microsoft.com/en-in/help/929851/the-default-dynamic-port-range-for-tcp-ip-has-changed-in-windows-vista) about the dynamic port range.
 > We recommend that you reconfigure the firewalls to allow traffic between servers in the dynamic port range of 49152 through 65535.
 ::: moniker-end
-::: moniker range=">= sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 > [!NOTE]
 > System Center Virtual Machine Manager uses NTLM authentication protocol to perform management operations. Using Kerberos authentication protocol isn’t recommended as it may break a few VM operations.
 ::: moniker-end
