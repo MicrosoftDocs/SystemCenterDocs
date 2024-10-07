@@ -19,4 +19,3 @@ The following sections introduce new and updated features in System Center Opera
 ### Discover Azure Migrate from Operations Manager console
 
 Operations Manager 2025 allows you to discover Azure Migrate from console. You can now generate a complete inventory of your on-premises environment without appliance. This can be used in Azure Migrate to assess machines at scale. [Learn more](https://support.microsoft.com/topic/discover-azure-migrate-for-operations-manager-04b33766-f824-4e99-9065-3109411ede63).
-
