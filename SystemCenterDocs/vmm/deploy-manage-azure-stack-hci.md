@@ -42,7 +42,7 @@ This article provides information about how to set up an Azure Stack HCI cluster
 
 ::: moniker range="sc-vmm-2025"
 >[!IMPORTANT]
->Azure Stack HCI 23H2 clusters should be updated to 2408.2 or 2411 versions to be supported by System Center Virtual Machine Manager. Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
+>Azure Stack HCI 23H2 clusters should be updated to 2408.2 or 2411 versions to be supported by VMM 2025. Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
 ::: moniker-end
 
 
