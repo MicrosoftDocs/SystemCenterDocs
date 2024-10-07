@@ -7,7 +7,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/03/2024
+ms.date: 10/07/2024
 ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
 
@@ -171,7 +171,7 @@ The following example installs Orchestrator on a computer running SQL Server:
 ::: moniker range="sc-orch-2025"
 
 >[!NOTE]
->Review guidelines on how to [enable Trust Server Connection (not recommended)](/SystemCenterDocs/orchestrator/install.md#enable-trust-server-connection-not-recommended) setting.
+>Review guidelines about [Secure connection to SQL server)](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server).
 
 ::: moniker-end
 
