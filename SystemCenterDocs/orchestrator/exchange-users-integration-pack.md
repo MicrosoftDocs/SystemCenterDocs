@@ -2,7 +2,7 @@
 title: Exchange Users Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. Integration packs optimize IT operations across various environments.
 ms.custom: engagement-fy24
-ms.date: 06/05/2024
+ms.date: 10/07/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -161,7 +161,7 @@ Here's how the connection will be established when the activity runs:
 
 6. In Application overview page, under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
 
-    :::image type="Azure AD App overview pane" source="media/exchange-users-integration-pack/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
+    :::image type="Azure AD App overview pane" source="media/exchange-users-integration-pack/app-overview.png" alt-text="Screenshot of Azure AD App overview pane." lightbox="media/exchange-users-integration-pack/app-overview.png":::
 
 7. Select **Authentication**, do the following, and select **Save**.
 
