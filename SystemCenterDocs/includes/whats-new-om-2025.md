@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/03/2024
+ms.date: 10/07/2024
 ms.custom: intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
@@ -18,7 +18,11 @@ The following sections introduce new and updated features in System Center Opera
 
 ## Support for Windows Server 2025
 
-Operations Manager 2025 now supports Windows Server 2025.
+Operations Manager 2025 now supports Windows Server 2025. [Learn more](/SystemCenterDocs/scom/system-requirements.md).
+
+## Support for OpenSSL 3.1 to 3.3
+
+Operations Manager 2025 now supports OpenSSL 3.1 to 3.3
 
 ## Other updates
 
@@ -26,5 +30,5 @@ Operations Manager 2025 also includes the following updates:
 
 Supports the following newer browsers Chrome and Edge:
 
-- Microsoft Edge version 121 and later with IE compatibility mode.  
+- Microsoft Edge version 121 and later with IE compatibility mode.
 - Google Chrome version 121 and later.

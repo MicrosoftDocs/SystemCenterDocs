@@ -18,7 +18,7 @@ ms.topic: article
 
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
-This article provides details of the new features supported in System Center 2025 - Operations Manager. 
+This article provides details of the new features supported in System Center 2025 - Operations Manager.
 
 [!INCLUDE [whats-new-om-2025.md](../includes/whats-new-om-2025.md)]
 
