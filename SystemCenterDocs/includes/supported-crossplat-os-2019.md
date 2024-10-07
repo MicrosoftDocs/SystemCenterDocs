@@ -148,7 +148,7 @@ Supported versions:
 >[!Note]
 >- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
-To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle).
+To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](/SystemCenterDocs/scom/manage-install-crossplat-agent-cmdline.md#install-the-agent-on-rpm-based-universal-linux-servers-oracle).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
