@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/03/2024
+ms.date: 10/07/2024
 ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
@@ -18,7 +18,7 @@ ms.topic: article
 
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
-This article provides details of the new features supported in System Center 2025 - Operations Manager. 
+This article provides details of the new features supported in System Center 2025 - Operations Manager.
 
 [!INCLUDE [whats-new-om-2025.md](../includes/whats-new-om-2025.md)]
 

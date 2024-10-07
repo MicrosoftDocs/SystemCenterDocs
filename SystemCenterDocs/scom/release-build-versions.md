@@ -5,7 +5,7 @@ description: This article details the release builds in Operations Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/02/2024
+ms.date: 10/07/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # System Center - Operations Manager build versions
-
-
 
 ::: moniker range="sc-om-2025"
 
