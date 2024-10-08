@@ -159,7 +159,7 @@ To set up a SQL Server database:
 
 ::: moniker-end
 
-::: moniker range=">=sc-dpm-2022"
+::: moniker range="sc-dpm-2022"
 
 > [!NOTE]
 >- With SQL 2017 and later, SSRS doesn't get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
