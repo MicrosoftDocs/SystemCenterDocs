@@ -60,7 +60,7 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.11.23|
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsl|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
-|SUNWopenssl-libraries|SUNopenssl-libraries (Usr) <br /><br /> **Note**: For TLS1.2, to get OpenSSL 1.0.1p, apply the following patch: 151912-02 (or greater) (This patch is applicable for 2019 UR3 and later).|11.10.0, REV=2005.01.21.15.53|
+|SUNWopenssl-libraries|SUNopenssl-libraries (Usr) <br /><br /> **Note**: For TLS1.2, to get OpenSSL 1.0.1p, apply the following patch: 151912-02 (or greater) (This patch is applicable for 2019 UR3 and later.)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
 
@@ -146,7 +146,7 @@ Supported versions:
 - SLES 15 is supported from System Center - Operations Manager 2019 UR1 and later
 
 >[!Note]
->- Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
+>Manually update the OpenSSH version in your environment to >= 8.7p1-29 to monitor RHEL 9.1 servers.
 
 To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](/SystemCenterDocs/scom/manage-install-crossplat-agent-cmdline.md#install-the-agent-on-rpm-based-universal-linux-servers-oracle).
 

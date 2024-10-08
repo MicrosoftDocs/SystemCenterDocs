@@ -60,7 +60,7 @@ ms.subservice: operations-manager
 |PAM|Pluggable Authentication Modules|1.1.8|  
 
 >[!NOTE]
->- Solaris zone-level monitoring isn't supported.
+>Solaris zone-level monitoring isn't supported.
 
 ## Solaris 10 SPARC
 
@@ -133,7 +133,7 @@ Ubuntu 14.04, 16.04 are supported.
 |PAM|Pluggable Authentication Modules|0.79-3|  
 
 ## Universal Linux (RPM package)
-Oracle Linux 7 are supported.
+Oracle Linux 7 is supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  

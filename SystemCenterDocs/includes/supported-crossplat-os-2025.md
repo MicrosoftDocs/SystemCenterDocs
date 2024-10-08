@@ -20,7 +20,7 @@ ms.subservice: operations-manager
 |PAM|Pluggable Authentication Modules|1.1.8-1|
 
 >[!NOTE]
->- Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022 and later.
+>Red Hat Enterprise Linux Server 7 (Power) isn't supported in Operations Manager 2022 and later.
 
 ## SUSE Linux Enterprise Server 12
 
@@ -31,7 +31,7 @@ ms.subservice: operations-manager
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 to 3.3|
 
 >[!NOTE]
->- SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022 and later.
+>SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022 and later.
 
 ## Universal Linux (Debian package)
 
@@ -68,5 +68,5 @@ Supported versions:
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0to 3.3|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 to 3.3|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
