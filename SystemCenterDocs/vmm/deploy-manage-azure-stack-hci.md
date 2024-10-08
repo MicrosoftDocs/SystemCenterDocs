@@ -35,26 +35,44 @@ This article provides information about how to set up an Azure Stack HCI cluster
 
 ::: moniker-end
 
-
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 >[!IMPORTANT]
 >Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
-
-::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
-## Before you start
-
 ::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+>[!IMPORTANT]
+>Azure Stack HCI 23H2 clusters should be updated to 2408.2 or 2411 versions to be supported by VMM 2025. Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
+::: moniker-end
+
+
+## Before you start
 
 ::: moniker range="sc-vmm-2019"
 
 Ensure that you're running VMM 2019 UR3 or later.
+
+**What’s supported?**
+
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to create and manage HCI clusters.
+
+- Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
+
+- [Set up VLAN based network on Azure Stack HCI clusters](manage-networks.md).
+
+- [Deployment and management of SDN network controller on Azure Stack HCI clusters](sdn-controller.md).
+
+- Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs), and application of [QoS settings](qos-storage-clusters.md#assign-storage-qos-policy-for-clusters).
+
+- Moving VMs between Windows Server and Azure Stack HCI clusters works via Network Migration and migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it's performed as a single operation. 
+
+- The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
 Ensure that you're running VMM 2022 UR1 or later.
-
-::: moniker-end
 
 **What’s supported?**
 
@@ -75,8 +93,6 @@ Ensure that you're running VMM 2022 UR1 or later.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2025"
-
-## Before you start
 
 **What’s supported?**
 
@@ -193,7 +209,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 >Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4 if you do not wish to configure DCB settings.
 
 ### Recommendations
-- If you've vNICs deployed, for optimal performance, we recommend you to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).
+- If you have vNICs deployed, for optimal performance, we recommend you to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).
 
 
 - When you create a network adapter port profile, we recommend you to allow **IEEE priority**. [Learn more](network-port-profile.md#create-a-virtual-network-adapter-port-profile).
@@ -246,7 +262,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 ## Step 4: Register Azure Stack HCI cluster with Azure
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 
 After creating an Azure Stack HCI cluster, it must be registered with Azure within 30 days of installation per Azure Online Service terms. If you're using System Center 2022, use `Register-SCAzStackHCI` cmdlet in VMM to register the Azure Stack HCI cluster with Azure. Alternatively, follow [these steps](/azure-stack/hci/deploy/register-with-azure) to register the Azure Stack HCI cluster with Azure.
 
@@ -285,7 +301,8 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 
     ![Screenshot of configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
 
-7. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
+7. In **Storage Settings**, you can specify the storage tier split, capacity, and resiliency.
+8. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
 ## Step 7: Deploy VMs on the cluster
 
@@ -324,8 +341,10 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
     :::image type="Add VMware vCenter option" source="media/deploy-manage-azure-stack-hci/add-vmware-vcenter-inline.png" alt-text="Screenshot showing add VMware vCenter option." lightbox="media/deploy-manage-azure-stack-hci/add-vmware-vcenter-expanded.png":::
 3.	In the **Add VMware vCenter Server** page, do the following:
     1. **Computer name**: Specify the vCenter server name.
-    1. **Run As account**: Select the Run As account created for vSphere administrator.   
+    1. **Run As account**: Select the Run As account created for vSphere administrator.
+   
        :::image type="Server information" source="media/deploy-manage-azure-stack-hci/server-info.png" alt-text="Screenshot showing server information.":::
+
 4.	Select **Finish**.
 5.	In the **Import Certificate** page, select **Import**.
 
@@ -339,7 +358,9 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
     :::image type="Add Host options" source="media/deploy-manage-azure-stack-hci/add-hosts.png" alt-text="Screenshot showing Add hosts option.":::
 2.	In the **Add Resource Wizard**, 
     1. Under **Credentials**, select the Run as account that is used for the port and select **Next**.
+    
        :::image type="Credentials tab" source="media/deploy-manage-azure-stack-hci/credentials-inline.png" alt-text="Screenshot showing credentials tab." lightbox="media/deploy-manage-azure-stack-hci/credentials-expanded.png":::
+
     1. Under **Target Resources**, select all the ESX clusters that need to be added to VMM and select **Next**. 
        :::image type="Target resources tab" source="media/deploy-manage-azure-stack-hci/target-resources-inline.png" alt-text="Screenshot showing target resources tab." lightbox="media/deploy-manage-azure-stack-hci/target-resources-expanded.png":::
     1. Under **Host Settings**, select the location where you want to add the VMs and select **Next**.
@@ -352,7 +373,9 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
 
 1.	If the ESXi host status reflects as **OK (Limited)**, right-click **Properties** > **Management**, select Run as account that is used for the port and import the certificates for the host.  
 Repeat the same process for all the ESXi hosts.
+
      :::image type="Management tab" source="media/deploy-manage-azure-stack-hci/management.png" alt-text="Screenshot showing  Management tab.":::
+
 After you add the ESXi clusters, all the virtual machines running on the ESXi clusters are auto discovered in VMM. 
  
 ### View VMs
