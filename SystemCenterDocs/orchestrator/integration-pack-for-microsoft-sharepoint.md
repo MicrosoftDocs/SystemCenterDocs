@@ -1,7 +1,7 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 06/05/2024
+ms.date: 10/07/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -161,7 +161,7 @@ Set the OAuth redirection URI. Choose the Public client (Mobile/Desktop app) pla
 
 2. Select `https://login.microsoftonline.com/common/oauth2/nativeclient` as the Redirect URI and select **Configure**.
 
-   ![Screenshot of Redirect URI.](./media/integration-pack-for-sharepoint/sp-redirect-uri.png)
+   :::image type="content" source="./media/integration-pack-for-sharepoint/sp-redirect-uri.png" alt-text="Screenshot of Redirect URI." lightbox="./media/integration-pack-for-sharepoint/sp-redirect-uri.png":::
 
 3. Under **Advanced Setting**, set **Allow Public Client flows** to **Yes** and select **Save**.
 
