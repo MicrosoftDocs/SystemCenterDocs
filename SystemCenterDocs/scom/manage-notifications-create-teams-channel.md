@@ -4,7 +4,7 @@ description: This article describes how to set up a Microsoft Teams notification
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/22/2024
+ms.date: 10/07/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -77,7 +77,7 @@ To integrate System Center Operations Manager with Teams, set up a Teams channel
 
 1. On **Authentication**, enter values for **Tenant Id** and **Client Id** from your Microsoft Entra ID app, and then select **Next**.
 
-   :::image type="content" source="media/teams-notifications/authentication.png" alt-text="Screenshot that shows authentication.":::
+   :::image type="content" source="media/teams-notifications/authentication.png" alt-text="Screenshot that shows authentication." lightbox="media/teams-notifications/authentication.png":::
 
 1. On **Endpoints**, values for **Authorization URL** and **Graph API URL for your Cloud** are set by default. Select **Next**. (If you aren't a public cloud user, see [National cloud deployments](/graph/deployments) for the endpoints to use.)
 
