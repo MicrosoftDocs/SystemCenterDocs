@@ -6,7 +6,7 @@ description: This article provides sudoers file templates for monitoring Unix an
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 03/01/2024
+ms.date: 10/07/2024
 ms.topic: reference
 ms.service: system-center
 ms.subservice: operations-manager
@@ -104,7 +104,7 @@ Once updated with the correct usernames and any extra modifications, the templat
 
 ## Universal Linux
 
-Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](plan-supported-crossplat-os.md#universal-linux-debian-package-1)
+Universal Linux encompasses both Debian and Red Hat based operating systems and is where to find the latest supported Linux operating systems and distributions. For a list of distros that fall under this class type, refer to: [Supported UNIX and Linux Operating System Versions](/SystemCenterDocs/scom/plan-supported-crossplat-os.md#universal-linux-debian-package-1).
 
 [!INCLUDE [sudoers-universallinux.md](includes/sudoers-universallinux.md)]
 
