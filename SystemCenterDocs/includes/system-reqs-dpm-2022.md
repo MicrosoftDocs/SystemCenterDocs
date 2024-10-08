@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 08/06/2024
+ms.date: 10/08/2024
 title: Preparing your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -46,8 +46,6 @@ DPM 2022 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-se
 
 ### SQL Server requirements
 
-**SQL Server requirements**
-
 |Requirement| Details  |
 |-----------|----------|
 |RAM|4 GB minimum, 8 GB recommended|
@@ -57,7 +55,7 @@ DPM 2022 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-se
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](../dpm/install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](../dpm/install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.<br/><br/>Note: When you use Remote SQL Server 2022, you must install SQLCMD version 16 on the DPM server.<br>If SQLCMD version 16 isn't available to download, install SQLCMD version 15 instead, then copy `SQLCMD.exe` version 16 (`C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn`) from SQL server 2022 to DPM 2022 server before DPM 2022 installation.<br>Revert it after installation.|
 |Clustered SQL Server|Supported|
 
 >[!NOTE]
