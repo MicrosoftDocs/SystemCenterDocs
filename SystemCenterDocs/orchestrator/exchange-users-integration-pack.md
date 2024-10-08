@@ -184,7 +184,7 @@ Generally, Public Client Apps that operate in *delegated authentication* mode re
 However, the IP doesn't support the consent grant flow; instead the tenant admin must grant consent on behalf of all users in the tenant.
 
 1. Add the permissions to the app by editing the app **Manifest**.
-    1. On the Azure AD portal, select the Azure AD application.
+    1. On the Microsoft Entra admin center, select the Azure AD application.
     2. Follow the [steps to grant EWS permissions](/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application) by editing the app **Manifest**.
 
         :::image type="content" alt-text="Screenshot of Azure AD App manifest."  source="./media/exchange-users-integration-pack/manifest.png" lightbox="./media/exchange-users-integration-pack/manifest-expanded.png":::
