@@ -63,17 +63,17 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 The [OLE DB](/sql/connect/oledb/oledb-driver-for-sql-server) and [ODBC](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server) SQL Server Drivers need to be installed on **all** management servers and the web console server, as these components directly interface with the databases and these drivers allow API level access to SQL.
 
-The recommended versions for use with Operations Manager are:
-
-- [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
-- [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
-
-If utilizing an encrypted SQL Server connection, you need to install the latest versions of the driver instead:
+It is recommended to utilize an encrypted SQL Server connection; when doing so, you need to install the latest versions of the SQL drivers:
 
 - [Microsoft OLE DB Driver](https://aka.ms/downloadmsoledbsql) latest version.
 - [Microsoft ODBC Driver](https://aka.ms/downloadmsodbcsql) latest version.
 
 More information about configuring SQL connection encryption can be found here: [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption)
+
+If **not** utilizing encrypted SQL connections, use previous releases of the SQL drivers that do not enforce encryption:
+
+- [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6.
+- [Microsoft OLE DB Driver](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4.
 
 ### SQL Server updates
 
