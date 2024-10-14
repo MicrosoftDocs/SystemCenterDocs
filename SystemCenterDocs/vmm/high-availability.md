@@ -15,7 +15,7 @@ ms.custom: intro-deployment, engagement-fy24
 # Deploy VMM for high availability
 
 
-For resilience and scalability, you can deploy System Center - Virtual Machine Manager (VMM) in a high availability mode.
+For resilience and scalability, you can deploy System Center Virtual Machine Manager (VMM) in a high availability mode.
 
 ## Before you start
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
