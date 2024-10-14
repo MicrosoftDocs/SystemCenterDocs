@@ -9,7 +9,7 @@ ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-monikerRange: '<=sc-vmm-2022'
+monikerRange: <=sc-vmm-2022
 ---
 
 # Set up TLS 1.2 for VMM
