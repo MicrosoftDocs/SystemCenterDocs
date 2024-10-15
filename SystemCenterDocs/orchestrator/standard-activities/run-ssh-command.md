@@ -2,7 +2,7 @@
 title: Run SSH Command
 description: This article describes the functionality of Run SSH Command activity.
 ms.custom: UpdateFrequency3
-ms.date: 07/28/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

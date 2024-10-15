@@ -2,7 +2,7 @@
 title: Run .NET Script 
 description: This article describes Run .NET Script activity that runs scripts written in VB.NET, JScript, C#, and Windows PowerShell.
 ms.custom: UpdateFrequency2
-ms.date: 07/25/2019
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

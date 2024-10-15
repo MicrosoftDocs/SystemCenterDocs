@@ -2,7 +2,7 @@
 title: Get Service Status
 description: This article describes about the Get Service Status activity and its use to check the status of a service on any computer.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
