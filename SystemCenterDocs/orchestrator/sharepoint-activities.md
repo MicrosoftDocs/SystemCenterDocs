@@ -2,7 +2,7 @@
 title: SharePoint Activities
 description: The following configuration instructions apply to all the activities in this integration pack. It also lists the properties tabs.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 03/04/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

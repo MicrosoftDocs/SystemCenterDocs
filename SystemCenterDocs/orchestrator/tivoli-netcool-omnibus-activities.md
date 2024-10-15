@@ -2,7 +2,7 @@
 title: IBM Tivoli Netcool OMNIbus Activities
 description: This integration pack adds the IBM Tivoli Netcool/OMNIbus category to the Activity pane in the Runbook Designer.
 ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

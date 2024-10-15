@@ -2,7 +2,7 @@
 title: Windows Azure Activities
 description: The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.
 ms.custom: UpdateFrequency2
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

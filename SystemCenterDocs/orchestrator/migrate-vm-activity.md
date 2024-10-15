@@ -13,7 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ROBOTS: noindex
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ---
 # Migrate VM activity
 

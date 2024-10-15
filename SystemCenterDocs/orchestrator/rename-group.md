@@ -2,7 +2,7 @@
 title: Rename Group
 description: You can use the Rename Group activity in a runbook to rename a group in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2, engagement-fy24
-ms.date: 01/23/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

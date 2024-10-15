@@ -1,7 +1,7 @@
 ---
 title: Configuration Manager integration pack activities
 description: This article contains configuration instructions for activities provided by the Configuration Manager integration pack.
-ms.date: 01/17/2018
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

@@ -12,7 +12,7 @@ ms.assetid: b93dbbb6-3c0d-4256-8140-c47b67a50a4a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 11/01/2024
 ---
 # Audit Trail
 

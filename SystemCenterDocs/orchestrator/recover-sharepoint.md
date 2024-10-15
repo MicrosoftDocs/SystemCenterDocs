@@ -2,7 +2,7 @@
 title: Recover SharePoint
 description: The Recover SharePoint activity is used in a runbook that recovers a SharePoint farm (configuration and data) to its original location or to a network folder.
 ms.custom: 3
-ms.date: 12/02/2016
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
