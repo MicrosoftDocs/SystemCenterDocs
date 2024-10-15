@@ -2,20 +2,20 @@
   items:
   - name: What is VMM?
     href: overview.md
-  - name: VMM network object fundamentals
-    href: network-object-fundamentals.md
-  - name: Arc-enabled SCVMM
+  - name: Azure Arc-enabled SCVMM
     href: about-arc-enabled-system-center-virtual-machine-manager.md
   - name: What's new in VMM
     href: whats-new-in-vmm.md
+  - name: VMM build versions
+    href: release-build-versions.md
+  - name: Release notes - VMM
+    href: release-notes-vmm.md
+- name: Concepts
+  items:
+  - name: VMM network object fundamentals
+    href: network-object-fundamentals.md
 - name: Get Started
   items: 
-    - name: VMM build versions
-      href: release-build-versions.md
-    - name: Release notes - VMM
-      href: release-notes-vmm.md
-    - name: Turn telemetry data on/off
-      href: manage-telemetry.md
     - name: Plan
       items: 
         - name: System requirements - VMM
@@ -32,6 +32,8 @@
           href: plan-network.md
         - name: Identify supported storage arrays
           href: supported-arrays.md
+        - name: Turn telemetry data on/off
+          href: manage-telemetry.md
     - name: Upgrade and install
       items: 
         - name: Upgrade VMM
