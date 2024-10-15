@@ -44,7 +44,7 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 - Registration and deregistration of Azure Stack HCI clusters is supported only through Azure.
 
-- Azure Stack HCI clusters shouldn't be used for other purposes like WSUS servers, WDS servers, or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci), and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing). Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. The Azure Stack HCI Product Terms enable you to run only what is required for hosting virtual machines.
+- Azure Stack HCI clusters shouldn't be used for other purposes like WSUS servers, WDS servers, or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci), and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing). Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. Azure Stack HCI Product Terms enable you to run only what is required for hosting virtual machines.
 
 - Live migration between any version of Windows Server and Azure Stack HCI clusters isn't supported. 
 
