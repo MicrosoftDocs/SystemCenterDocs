@@ -10,7 +10,7 @@ ms.service: system-center
 monikerRange: 'sc-om-2022'
 ms.assetid:
 ms.subservice: operations-manager
-ms.topic: conceptual-article
+ms.topic: conceptual
 ---
 
 # Upgrade Operations Manager databases to SQL Server 2022
