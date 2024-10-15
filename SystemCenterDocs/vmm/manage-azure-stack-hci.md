@@ -5,7 +5,7 @@ description: This article describes how to manage an Azure Stack HCI cluster in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/10/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -87,11 +87,11 @@ Use Network migration functionality in VMM to migrate workloads from Hyper-V (Wi
 >Live migration between Windows Server and Azure Stack HCI isn’t supported. Network migration from Azure Stack HCI to Windows Server isn’t supported. 
 
 1. Temporarily disable the live migration at the destination Azure Stack HCI host.
-2.	Select VMs and Services > All Hosts, and then select the source Hyper-V host from which you want to migrate. 
+2.	Select **VMs and Services** > **All Hosts**, and then select the source Hyper-V host from which you want to migrate. 
 3.	Select the VM that you want to migrate. The VM must be in a turned off state. 
-5.	Select Migrate Virtual Machine.
-6.	In Select Host, review and select the destination Azure Stack HCI host. 
-6.	Select Next to initiate network migration. VMM will perform imports and exports at the back end. 
+5.	Select **Migrate Virtual Machine**.
+6.	In **Select Host**, review and select the destination Azure Stack HCI host. 
+6.	Select **Next** to initiate network migration. VMM will perform imports and exports at the back end. 
 7.	To verify that the virtual machine is successfully migrated, check the VMs list on the destination host. Turn on the VM and re-enable live migration on the Azure Stack HCI host.
 
 ## Next steps
