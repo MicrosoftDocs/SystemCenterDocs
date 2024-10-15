@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 09/25/2024
+ms.date: 11/01/2024
 title: Update the DPM protection agent
 ms.subservice: data-protection-manager
 ms.assetid: 

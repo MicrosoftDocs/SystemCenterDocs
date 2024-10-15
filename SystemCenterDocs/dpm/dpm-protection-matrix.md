@@ -3,7 +3,7 @@ description: A complete matrix of all workloads, data types, and installations t
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/31/2024
+ms.date: 11/01/2024
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4

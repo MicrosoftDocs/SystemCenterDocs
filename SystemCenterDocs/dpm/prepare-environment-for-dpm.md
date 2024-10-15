@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 10/04/2024
+ms.date: 11/01/2024
 title: Prepare your environment for System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040

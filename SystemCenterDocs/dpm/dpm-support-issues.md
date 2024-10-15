@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 08/20/2024
+ms.date: 11/01/2024
 title: What's supported and what isn't for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
