@@ -4,7 +4,7 @@ description: This article describes how to examine properties of alerts, rules a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/30/2021
+ms.date: 11/01/2024
 ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
 ms.custom: UpdateFrequency2
 ms.service: system-center

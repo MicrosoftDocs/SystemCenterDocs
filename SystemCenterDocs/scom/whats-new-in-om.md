@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/07/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager

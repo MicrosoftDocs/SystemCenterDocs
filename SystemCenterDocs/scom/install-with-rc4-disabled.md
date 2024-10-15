@@ -5,7 +5,7 @@ description: This article describes Operations Manager installation with RC4 dis
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/18/2021
+ms.date: 11/01/2024
 ms.custom: na, intro-installation, UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager

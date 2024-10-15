@@ -5,7 +5,7 @@ description: This article provides an overview of management pack templates
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 10/14/2019
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager

@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for Azure SQL 
 author: epomortseva
 ms.author: v-fkornilov
 manager: vvithal
-ms.date: 09/03/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

@@ -4,7 +4,7 @@ description: This article describes how to upgrade the SQL Server supporting Sys
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/29/2020
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
