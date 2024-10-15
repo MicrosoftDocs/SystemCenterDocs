@@ -2,7 +2,7 @@
 title: Send Syslog Message 
 description: This article provides information about the Send Syslog Message activity
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

@@ -2,7 +2,7 @@
 title: End Process
 description: This article describes the End Process activity that ends processes that are running on the runbook server or on a remote computer.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 07/15/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
