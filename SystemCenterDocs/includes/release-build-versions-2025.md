@@ -19,16 +19,16 @@ The following tables list the release history for Operations Manager 2025.
 
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
-|10.25.10132.0||November 2024 |General Availability |
+|10.25.10132.0|-|November 2024 |General Availability |
 
 ### Agent and Gateway
 
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
-|||November 2024 |General Availability |
+||-|November 2024 |General Availability |
 
 ### SCX Agent
 
 |Build Number |KB |Release Date |Agent Version |Description |
 |-------------|---|-------------|--------------|------------|
-|||November 2024 | |General Availability |
+||-|November 2024 | |General Availability |
