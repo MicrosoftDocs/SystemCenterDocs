@@ -3,7 +3,7 @@ description: This article describes tape libraries compatible with DPM.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/31/2024
+ms.date: 11/01/2024
 title: System Center DPM Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
