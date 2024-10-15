@@ -38,7 +38,7 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 **Unsupported Azure Stack HCI management scenarios with VMM**
 
-- Creation of Azure Stack HCI cluster using SCVMM. See the [deployment methods for Azure Stack HCI 23H2 clusters](https://learn.microsoft.com/azure-stack/hci/deploy/deployment-introduction#about-deployment-methods).
+- Creation of Azure Stack HCI cluster using SCVMM. See the [deployment methods for Azure Stack HCI 23H2 clusters](/azure-stack/hci/deploy/deployment-introduction#about-deployment-methods).
 
 - Management of Azure Stack HCI [stretched clusters](/azure-stack/hci/concepts/stretched-clusters).
 
