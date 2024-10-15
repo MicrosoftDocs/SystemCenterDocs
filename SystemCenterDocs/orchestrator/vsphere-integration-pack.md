@@ -7,7 +7,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/15/2024
+ms.date: 11/01/2024
 ---
 # VMware vSphere integration pack
 

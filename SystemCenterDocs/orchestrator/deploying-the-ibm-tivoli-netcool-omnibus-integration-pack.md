@@ -1,7 +1,7 @@
 ---
 title: Deploy the IBM Tivoli Netcool OMNIbus integration pack for System Center - Orchestrator
 description: This article provides information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center - Orchestrator.
-ms.date: 10/27/2022
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

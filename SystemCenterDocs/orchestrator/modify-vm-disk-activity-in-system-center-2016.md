@@ -2,7 +2,7 @@
 title: Modify VM Disk Activity in System Center 2016
 description: The Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine.
 ms.custom: UpdateFrequency3
-ms.date: 02/16/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

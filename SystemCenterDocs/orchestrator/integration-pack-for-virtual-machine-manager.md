@@ -1,7 +1,7 @@
 ---
 title: Integration pack for System Center - Virtual Machine Manager (VMM)
 description: This article describes the System Center integration pack for System Center - Virtual Machine Manager (VMM). The integration pack is an add-in for System Center - Orchestrator.
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

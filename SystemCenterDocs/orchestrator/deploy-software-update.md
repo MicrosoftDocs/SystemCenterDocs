@@ -2,7 +2,7 @@
 title: Deploy Software Update activity
 description: Describes the configurable properties for the Deploy Software Update activity for Configuration Manager Integration Pack.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
-ms.date: 10/10/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

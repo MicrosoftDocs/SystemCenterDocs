@@ -1,7 +1,7 @@
 ---
 title: System Center Service Manager activities
 description: This article describes all activities in the System Center Integration Pack for System Center - Service Manager.
-ms.date: 01/17/2018
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

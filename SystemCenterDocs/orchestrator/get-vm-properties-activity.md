@@ -12,7 +12,7 @@ ms.assetid: c10df30c-2768-4407-9599-77eb0e1c7d42
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ---
 
 # Get VM Properties Activity
