@@ -5,7 +5,7 @@ description: This article provides information about how to deploy and manage th
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/24/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: data-protection-manager
