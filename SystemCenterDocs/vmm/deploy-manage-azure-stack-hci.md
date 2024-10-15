@@ -259,7 +259,7 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 
     ![Screenshot of Volume settings.](./media/s2d/storage-spaces-volume-settings.png)
 
-6. In **Storage Settings**, you can specify the storage tier split, capacity, and resiliency.
+6. In **Storage settings**, you can specify the storage tier split, capacity, and resiliency.
 
     ![Screenshot of configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
 

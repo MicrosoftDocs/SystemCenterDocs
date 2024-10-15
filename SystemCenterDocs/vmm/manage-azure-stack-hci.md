@@ -65,7 +65,7 @@ After adding the Azure Stack HCI cluster to SCVMM, you can modify the storage po
 
     ![Screenshot of Volume settings.](./media/s2d/storage-spaces-volume-settings.png)
 
-6. In **Storage Settings**, you can specify the storage tier split, capacity, and resiliency.
+6. In **Storage settings**, you can specify the storage tier split, capacity, and resiliency.
 
     ![Screenshot of configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
 
