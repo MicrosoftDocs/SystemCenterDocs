@@ -9,7 +9,7 @@ ms.date: 10/10/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-monikerRange: 'sc-vmm-2025'
+monikerRange: sc-vmm-2025
 ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23
 ---
 
@@ -26,7 +26,7 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 **Supported Azure Stack HCI management scenarios with VMM**
 
-- Addition and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to add Azure Stack HCI clusters to VMM.
+- Addition and management of Azure Stack HCI clusters. [See detailed steps](./hyper-v-existing.md#add-servers) to add Azure Stack HCI clusters to VMM.
 
 - Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
 
@@ -37,6 +37,8 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 - The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
 
 **Unsupported Azure Stack HCI management scenarios with VMM**
+
+- Creation of Azure Stack HCI cluster using SCVMM. See the [deployment methods for Azure Stack HCI 23H2 clusters](https://learn.microsoft.com/azure-stack/hci/deploy/deployment-introduction#about-deployment-methods).
 
 - Management of Azure Stack HCI [stretched clusters](/azure-stack/hci/concepts/stretched-clusters).
 
@@ -50,6 +52,47 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 > Live migration between Azure Stack HCI clusters works, as well as between Windows Server clusters.
 
 - The only storage type available for Azure Stack HCI is Storage Spaces Direct (S2D). If you need to use any other type of storage, for example SANs, use Windows Server as the virtualization host.
+
+## Manage the pool and create CSVs
+
+You can now modify the storage pool settings and create virtual disks and CSVs.
+
+1. Select **Fabric** > **Storage** > **Arrays**.
+2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
+3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
+4. In the **Create Volume Wizard** > **Storage Type**, specify the volume name and select the storage pool.
+5. In **Capacity**, you can specify the volume size, file system, and resiliency (Failures to tolerate) settings.
+
+    ![Screenshot of Volume settings.](./media/s2d/storage-spaces-volume-settings.png)
+
+6. Select **Configure advanced storage and tiering settings** to set up these options.
+
+    ![Screenshot of configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
+
+7. In **Storage Settings**, you can specify the storage tier split, capacity, and resiliency.
+8. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
+
+## Deploy VMs on the cluster
+
+In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would create any other VM.
+
+> [!IMPORTANT]
+> If the Azure Stack HCI cluster isn't registered with Azure or not connected to Azure for more than 30 days post registration, high availability virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 and 5 for cluster registration.
+
+## Migrate VMs from Windows Server to Azure Stack HCI cluster
+
+Use Network migration functionality in VMM to migrate workloads from Hyper-V (Windows Server 2019 and later) to Azure Stack HCI.
+
+>[!Note]
+>Live migration between Windows Server and Azure Stack HCI isn’t supported. Network migration from Azure Stack HCI to Windows Server isn’t supported. 
+
+1. Temporarily disable the live migration at the destination Azure Stack HCI host.
+2.	Select VMs and Services > All Hosts, and then select the source Hyper-V host from which you want to migrate. 
+3.	Select the VM that you want to migrate. The VM must be in a turned off state. 
+5.	Select Migrate Virtual Machine.
+6.	In Select Host, review and select the destination Azure Stack HCI host. 
+6.	Select Next to initiate network migration. VMM will perform imports and exports at the back end. 
+7.	To verify that the virtual machine is successfully migrated, check the VMs list on the destination host. Turn on the VM and re-enable live migration on the Azure Stack HCI host.
 
 ## Next steps
 

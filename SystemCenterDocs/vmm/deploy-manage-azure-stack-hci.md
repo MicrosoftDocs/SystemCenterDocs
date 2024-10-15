@@ -42,7 +42,7 @@ Ensure that you're running VMM 2019 UR3 or later.
 
 **What’s supported?**
 
-- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to create and manage HCI clusters.
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](./hyper-v-existing.md#add-servers) to create and manage HCI clusters.
 
 - Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
 
