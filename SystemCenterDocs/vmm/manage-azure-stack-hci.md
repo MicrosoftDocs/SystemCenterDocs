@@ -55,7 +55,7 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 ## Manage the storage pool and create CSVs
 
-After adding the Azure Stack HCI cluster to SCVMM, you can modify the the storage pool settings and create virtual disks and CSVs.
+After adding the Azure Stack HCI cluster to SCVMM, you can modify the storage pool settings and create virtual disks and CSVs.
 
 1. Select **Fabric** > **Storage** > **Arrays**.
 2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
