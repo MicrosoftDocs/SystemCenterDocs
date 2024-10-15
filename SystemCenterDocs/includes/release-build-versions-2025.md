@@ -31,4 +31,4 @@ The following tables list the release history for Operations Manager 2025.
 
 |Build Number |KB |Release Date |Agent Version |Description |
 |-------------|---|-------------|--------------|------------|
-||-|November 2024 | |General Availability |
+|10.25.1005.0|-|November 2024 |1.9.1-0|General Availability |
