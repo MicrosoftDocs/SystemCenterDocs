@@ -221,6 +221,8 @@
               href: s2d-hyper-converged.md
             - name: Deploy and manage Azure Stack HCI clusters in VMM
               href: deploy-manage-azure-stack-hci.md
+            - name: Manage Azure Stack HCI clusters in VMM
+              href: manage-azure-stack-hci.md
             - name: Set up a disaggregated Storage Spaces Direct cluster
               href: s2d-disaggregated.md
             - name: Manage Storage Spaces Direct clusters
