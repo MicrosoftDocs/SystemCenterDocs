@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/06/2024
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager

@@ -5,7 +5,7 @@ description: This article describes the procedure to remove a gateway server fro
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

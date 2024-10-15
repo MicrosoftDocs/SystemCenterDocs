@@ -5,7 +5,7 @@ description: This article is the landing page covering all of the getting starte
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 11/01/2024
 ms.custom: intro-get-started, UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

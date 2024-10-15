@@ -6,7 +6,7 @@ description: This article provides sudoers file templates for monitoring Unix an
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 10/07/2024
+ms.date: 11/01/2024
 ms.topic: reference
 ms.service: system-center
 ms.subservice: operations-manager
