@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/16/2024
+ms.date: 11/01/2024
 title: Back up Exchange with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730

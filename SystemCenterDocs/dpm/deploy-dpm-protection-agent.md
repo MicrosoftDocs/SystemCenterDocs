@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 07/16/2024
+ms.date: 11/01/2024
 title: Deploy the DPM protection agent
 ms.subservice: data-protection-manager
 ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
