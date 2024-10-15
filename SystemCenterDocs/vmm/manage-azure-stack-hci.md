@@ -61,15 +61,14 @@ After adding the Azure Stack HCI cluster to SCVMM, you can modify the storage po
 2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
 3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
 4. In the **Create Volume Wizard** > **Storage Type**, specify the volume name and select the storage pool.
-5. In **Capacity**, you can specify the volume size, file system, and resiliency (Failures to tolerate) settings.
+5. In **Capacity**, you can specify the volume size, file system, and resiliency (Failures to tolerate) settings. Select **Configure advanced storage and tiering settings** to set up these options.
 
     ![Screenshot of Volume settings.](./media/s2d/storage-spaces-volume-settings.png)
 
-6. Select **Configure advanced storage and tiering settings** to set up these options.
+6. In **Storage Settings**, you can specify the storage tier split, capacity, and resiliency.
 
     ![Screenshot of configure Storage settings.](./media/s2d/storage-spaces-tiering.png)
 
-7. In **Storage Settings**, you can specify the storage tier split, capacity, and resiliency.
 8. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
 ## Deploy VMs on the cluster
