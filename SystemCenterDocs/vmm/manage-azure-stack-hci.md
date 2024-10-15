@@ -53,9 +53,9 @@ Starting with [System Center 2025](/system-center/vmm/whats-new-in-vmm?view=sc-v
 
 - The only storage type available for Azure Stack HCI is Storage Spaces Direct (S2D). If you need to use any other type of storage, for example SANs, use Windows Server as the virtualization host.
 
-## Manage the pool and create CSVs
+## Manage the storage pool and create CSVs
 
-You can now modify the storage pool settings and create virtual disks and CSVs.
+After adding the Azure Stack HCI cluster to SCVMM, you can modify the the storage pool settings and create virtual disks and CSVs.
 
 1. Select **Fabric** > **Storage** > **Arrays**.
 2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification.
@@ -75,9 +75,6 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 ## Deploy VMs on the cluster
 
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would create any other VM.
-
-> [!IMPORTANT]
-> If the Azure Stack HCI cluster isn't registered with Azure or not connected to Azure for more than 30 days post registration, high availability virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 and 5 for cluster registration.
 
 ## Migrate VMs from Windows Server to Azure Stack HCI cluster
 
