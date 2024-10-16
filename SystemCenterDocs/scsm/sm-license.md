@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: '>sc-sm-2016'
