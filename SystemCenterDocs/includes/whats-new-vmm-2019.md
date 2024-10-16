@@ -16,6 +16,9 @@ ms.subservice: virtual-machine-manager
 
 The following sections introduce the new features in Virtual Machine Manager (VMM) 2019.
 
+> [!CAUTION]
+> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](~/articles/virtual-machines/workloads/centos/centos-end-of-life.md).
+
 ### Compute
 
 #### Cluster rolling upgrade for S2D clusters
@@ -323,7 +326,7 @@ VMM 2019 RTM and later now supports SQL Server 2019.
 
 #### Support for Linux Operating system
 
-VMM 2019 UR2 supports Red Hat 8.0, Debian 10, Ubuntu 20.04 Linux Operating systems.
+VMM 2019 UR2 supports Red Hat 8.0, CentOS 8, Debian 10, Ubuntu 20.04 Linux Operating systems.
 
 ### Updates to PowerShell cmdlets
 
