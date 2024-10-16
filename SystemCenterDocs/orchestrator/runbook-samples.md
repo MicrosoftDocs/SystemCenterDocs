@@ -12,7 +12,7 @@ ms.assetid: 7dcf9d0a-db63-48ad-9fb8-525147ba62b7
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/08/2019
+ms.date: 11/01/2024
 ---
 
 # Runbook Samples

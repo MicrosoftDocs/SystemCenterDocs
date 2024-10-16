@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 08/06/2024
+ms.date: 11/01/2024
 title: Upgrade your System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:

@@ -4,7 +4,7 @@ description: This article explains how to install the Orchestrator Integration T
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

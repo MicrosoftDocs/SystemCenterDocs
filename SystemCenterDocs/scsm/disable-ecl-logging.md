@@ -8,7 +8,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 06/20/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.assetid: 805b479a-9312-4039-be44-01dda07086d8

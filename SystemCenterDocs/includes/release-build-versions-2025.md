@@ -4,9 +4,9 @@ description: Include file that shows the list of release builds for System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/12/2024
+ms.date: 10/07/2024
 ms.service: system-center
-ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
+ms.assetid: 
 ms.subservice: operations-manager
 ms.topic: include
 ---
@@ -16,16 +16,19 @@ ms.topic: include
 The following tables list the release history for Operations Manager 2025.
 
 ### Management Server (and other components*)
+
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
-|||September 2024 |General Availability |
+|10.25.10132.0|-|November 2024 |General Availability |
 
 ### Agent and Gateway
+
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
-|||September 2024 |General Availability |
+||-|November 2024 |General Availability |
 
 ### SCX Agent
+
 |Build Number |KB |Release Date |Agent Version |Description |
 |-------------|---|-------------|--------------|------------|
-|||September 2024 | |General Availability |
+|10.25.1005.0|-|November 2024 |1.9.1-0|General Availability |

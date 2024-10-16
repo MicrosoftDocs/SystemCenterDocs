@@ -5,7 +5,7 @@ description: This article describes how to upgrade an Operations Manager agent t
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/03/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5
 ms.service: system-center
 monikerRange: ' >=sc-om-2019'

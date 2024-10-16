@@ -12,7 +12,7 @@ ms.assetid: 25a60cd2-3942-47f6-b671-e126f109d291
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 
 # Get Hosts Activity

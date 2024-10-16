@@ -8,7 +8,7 @@ ms.assetid:
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/24/2024
+ms.date: 11/01/2024
 monikerRange: 'sc-orch-2025'
 zone_pivot_groups: orchestrator-security-planning
 ---

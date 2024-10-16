@@ -4,13 +4,13 @@ description: This article describes how to upgrade the SQL Server supporting Sys
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/13/2023
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 monikerRange: 'sc-om-2022'
 ms.assetid:
 ms.subservice: operations-manager
-ms.topic: conceptual-article
+ms.topic: conceptual
 ---
 
 # Upgrade Operations Manager databases to SQL Server 2022

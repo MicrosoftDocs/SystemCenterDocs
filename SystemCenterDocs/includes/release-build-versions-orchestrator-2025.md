@@ -17,4 +17,4 @@ The following table lists the release history for Orchestrator 2025.
 
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
-|10.25.1.7||November 2024 |General Availability|
+|10.25.1.7|-|November 2024 |General Availability|

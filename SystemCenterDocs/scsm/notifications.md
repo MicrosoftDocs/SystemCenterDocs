@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 05/20/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ms.custom: UpdateFrequency3,  engagement-fy24
@@ -104,7 +104,7 @@ To create an Azure AD app, do the following:
 
 6. After successful registration, under **Overview** > **Essentials**, ensure to note the **Application (client) ID** and **Directory (tenant) ID**.
 
-      :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page.":::
+      :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page." lightbox="media/notifications/overview-essentials.png":::
 
 7. On the **Overview** page, under **Manage**, select **Authentication**, and do the following:
 

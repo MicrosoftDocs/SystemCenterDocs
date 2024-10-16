@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 03/07/2024
+ms.date: 11/01/2024
 title: Prepare data storage
 ms.subservice: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852

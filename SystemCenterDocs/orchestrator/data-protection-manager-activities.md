@@ -1,7 +1,7 @@
 ---
 title: Data Protection Manager activities in System Center - Orchestrator
 description: The article describes all activities in the integration pack for System Center - Data Protection Manager.
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

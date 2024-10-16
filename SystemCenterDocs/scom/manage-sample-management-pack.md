@@ -5,7 +5,7 @@ description: This article describes a sample management pack for creating an ale
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/24/2024
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 monikerRange: '>=sc-om-2019'

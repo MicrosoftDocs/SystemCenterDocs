@@ -8,7 +8,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 
 # Clone Linux VM activity

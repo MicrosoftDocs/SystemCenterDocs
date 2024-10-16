@@ -1,7 +1,7 @@
 ---
 title: Deploy the VMware vSphere Integration Pack for System Center - Orchestrator
 description: This article provides important information about downloading and deploying the VMware vSphere integration pack for System Center - Orchestrator.
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

@@ -5,7 +5,7 @@ description: This article provides information on how to provide security rights
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/21/2022
+ms.date: 11/01/2024
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager

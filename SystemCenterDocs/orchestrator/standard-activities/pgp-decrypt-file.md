@@ -1,7 +1,7 @@
 ---
 title: PGP Decrypt File
 description: This article describes the functionality of PGP Decrypt File activity.
-ms.date: 05/07/2019
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

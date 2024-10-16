@@ -4,7 +4,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 description: This topic describes how to identify particular computers in your environment that have triggered an alert.
-ms.date: 11/28/2023
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager

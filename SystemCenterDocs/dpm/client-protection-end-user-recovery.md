@@ -3,7 +3,7 @@ description: Troubleshoot client protection End User Recovery in Data Protection
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 08/12/2024
+ms.date: 11/01/2024
 title: Client protection End User Recovery (EUR) doesn’t work in Data Protection Manager.
 ms.subservice: data-protection-manager
 ms.assetid:

@@ -2,7 +2,7 @@
 title: Query XML 
 description: This article describes the Query XML activity that is used to perform an XPath query on an XML file.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

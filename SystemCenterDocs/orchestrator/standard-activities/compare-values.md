@@ -2,7 +2,7 @@
 title: Compare Values
 description: This article compares two text values or two numerical values and then determines whether or not they are equal.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 07/15/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

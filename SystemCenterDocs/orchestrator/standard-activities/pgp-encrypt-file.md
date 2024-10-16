@@ -1,7 +1,7 @@
 ---
 title: PGP Encrypt File
 description: This article describes the PGP Encrypt File activity.
-ms.date: 05/07/2019
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

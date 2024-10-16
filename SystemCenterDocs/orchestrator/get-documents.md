@@ -2,7 +2,7 @@
 title: Get Documents
 description: The Get Documents activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/21/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

@@ -5,7 +5,7 @@ description: This article explains how to configure a custom database engine que
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-/ms.date: 07/12/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

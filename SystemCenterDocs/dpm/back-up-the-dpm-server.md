@@ -3,7 +3,7 @@ description: This article helps you create a strategy for backing up the DPM ser
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/29/2024
+ms.date: 11/01/2024
 title: Back up the DPM server
 ms.subservice: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f

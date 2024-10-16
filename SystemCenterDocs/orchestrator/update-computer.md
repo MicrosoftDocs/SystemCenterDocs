@@ -2,7 +2,7 @@
 title: Update Computer
 description: You can use the Update Computer activity in a runbook to update the properties of a computer in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2, engagement-fy24
-ms.date: 01/23/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

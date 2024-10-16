@@ -3,7 +3,7 @@ description: You can back up a generic data source with DPM.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/21/2024
+ms.date: 11/01/2024
 title: Prepare to back up a generic data source
 ms.subservice: data-protection-manager
 ms.assetid: 8ad00a50-108a-4212-ad43-c12a8f8f5587

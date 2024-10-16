@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 keywords:
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 title: Scale Service Management Automation
 ms.subservice: service-management-automation
 ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255

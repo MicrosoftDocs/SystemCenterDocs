@@ -14,7 +14,7 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 05/16/2024
+ms.date: 11/01/2024
 ---
 # Delete Custom Attribute
 

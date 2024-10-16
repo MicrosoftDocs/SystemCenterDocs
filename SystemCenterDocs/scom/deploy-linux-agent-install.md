@@ -4,7 +4,7 @@ description: This article describes the new Linux agent and how to install manua
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2023
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency5, intro-installation, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

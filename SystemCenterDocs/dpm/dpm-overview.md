@@ -3,7 +3,7 @@ description: DPM overview article that explains the workloads and types of data 
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 title: Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751

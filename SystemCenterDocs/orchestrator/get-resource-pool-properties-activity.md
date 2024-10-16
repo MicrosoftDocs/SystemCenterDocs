@@ -12,7 +12,7 @@ ms.assetid: ffdc4a8b-e875-437d-afa0-9a1a0f1007bf
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 
 # Get Resource Pool Properties Activity

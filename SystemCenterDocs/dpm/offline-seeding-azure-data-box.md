@@ -3,7 +3,7 @@ description: You can use Azure Data Box to seed initial Backup data offline from
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/24/2024
+ms.date: 11/01/2024
 title: Offline Seeding using Azure Data box
 ms.subservice: data-protection-manager
 ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
