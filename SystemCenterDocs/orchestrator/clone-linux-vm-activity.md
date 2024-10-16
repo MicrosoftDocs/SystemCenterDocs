@@ -2,23 +2,16 @@
 title: Clone Linux VM activity
 description: The article describes the Clone Linux VM activity,  to create a copy of an existing Linux virtual machine or template in a runbook.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/10/2024
 ---
 
 # Clone Linux VM activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Clone Linux VM activity is used in a runbook to create a copy of an existing Linux virtual machine or template. This can be used to create new virtual machines quickly and easily using the existing virtual machines or templates as models.
 
@@ -90,8 +83,6 @@ With the exception of "Source VM/Template Path," all properties and published da
 ## Configuring the Clone Linux VM Activity
 
 The following procedure describes the steps required to configure a Clone Linux VM activity.
-
-#### To configure the Clone Linux VM Activity
 
 1.  From the **Activities** pane, drag a **Clone Linux VM** activity to the active runbook.
 

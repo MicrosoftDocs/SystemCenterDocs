@@ -1,15 +1,15 @@
 ---
 title: Customize a column title in a view for the views sample scenario
 description: Describes how to customize a column title in a view for the Service Manager Authoring Tool views sample scenario.
-manager: mkluck
-ms.custom: na
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0a48640f-1ecf-4636-912e-42d9000cebc7
@@ -17,11 +17,7 @@ ms.assetid: 0a48640f-1ecf-4636-912e-42d9000cebc7
 
 # Customize a column title in a view for the authoring views sample scenario
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 System Center - Service Manager contains predefined views that you can use to display information and the status of various work items and configuration items in the Service Manager console. Views are defined in unsealed management packs, allowing for some customizations of views.
 

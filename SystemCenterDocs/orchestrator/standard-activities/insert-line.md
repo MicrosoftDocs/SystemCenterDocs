@@ -3,27 +3,20 @@ title: Insert Line
 description: This article describes inserts lines into a text file on a line number that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ae2bc14f-7027-484e-95c0-4cad77b8f5ef
 caps.latest.revision: 13
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: "evansma"
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Insert Line
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Insert Line activity inserts lines into a text file on a line number that you specify.  
 

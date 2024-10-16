@@ -2,25 +2,21 @@
 ms.assetid: 1a71c7fa-faa3-4d0a-a8ef-d022c803f298
 title: Back up and restore a software defined network infrastructure
 description: This article describes the procedure to back up and restore the software defined infrastructure.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 05/10/2022
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/24/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2
 ---
 
 # Back up and restore the SDN infrastructure
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-This article describes the backup and recovery process of a software defined network (SDN) infrastructure in the System Center Virtual Machine Manager (VMM) fabric, and provides any applicable recommendations for the process completion.
+This article describes the backup and recovery process of a software defined network (SDN) infrastructure in the System Center Virtual Machine Manager (VMM) fabric and provides any applicable recommendations for the process completion.
 
 To back up and restore an SDN, you must back up and restore the network controller (NC) that is deployed in the SDN. Use the following procedures in the sequence explained.
 
@@ -52,18 +48,18 @@ Use the following procedures to bring up a new network controller:
 Restore the network controller from a network controller backup by using the network controller Rest API. [Learn more](/windows-server/networking/sdn/manage/update-backup-restore#restore-the-sdn-infrastructure-from-a-backup).
 
 ## Refresh the network controller and synchronize VMM and NC
-Depending on the SDN state captured in the network controller backup and the current VMM state, some of the resources in VMM and network controller might be out of sync.
+Depending on the SDN state captured in the network controller backup and the current VMM state, some of the resources in VMM and network controller can be out of sync.
 
-Use the following refresh procedures to find any such differences between VMM and NC, and resolve them accordingly.
+Use the following refresh procedures to find any such differences between VMM and NC and resolve them accordingly.
 
 ::: moniker range="sc-vmm-2016"
 > [!NOTE]
 > - Refresh cmdlets for refreshing network controller objects are available from VMM 2016 UR3.
-> - If the network controller contains any objects that are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
+> - If the network controller contains any objects that are not present in the VMM DB, then the  VMM will not refresh (even if those objects were created using VMM earlier). Delete those objects from NC and re-create the objects from VMM to manage these objects from VMM again.
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-1801"
+::: moniker range=">=sc-vmm-2019"
 > [!NOTE]
 > - Refresh cmdlets for refreshing network controller objects.
 > - If the network controller contains any objects that are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.

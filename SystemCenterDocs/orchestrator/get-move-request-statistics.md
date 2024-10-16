@@ -1,27 +1,23 @@
 ---
 title: Get Move Request Statistics
 description: You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premises environment.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 62e227c1-8233-4201-8bc1-cfbd4aa70f9e
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Get Move Request Statistics
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Get Move Request Statistics activity to retrieve statistical information about the existing move requests for an on-premises environment.
 

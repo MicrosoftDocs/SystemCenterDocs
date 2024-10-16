@@ -2,27 +2,24 @@
 ms.assetid: ba58d433-17ea-4ddc-af8d-42748ad2d349
 title: Encrypt SMA web service to SQL connection by using SSL
 description: This article provides information about how to encrypt SMA web service to SQL connection by using SSL.
-author:  jyothisuri
-ms.author: jsuri
-manager:  mkluck
-ms.date:  09/04/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date:  09/25/2024
 ms.topic:  article
-ms.prod:  system-center
-ms.technology: service-management-automation
+ms.service: system-center
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Encrypt SMA network traffic
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
-
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
-
 This article provides information about how to encrypt SMA Web Service to SQL connection by using Secure Socket Layer (SSL) and encrypt the network traffic between runbook worker and SQL database.
 
 ## Encrypt SMA web service connection
+
+>[!NOTE]
+> Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows aren't viable.
 
 Use the following procedure to securely connect SMA web service with the SQL server:
 
@@ -73,15 +70,9 @@ Use the following steps to secure the connection between Runbook worker and the 
 ```
 
 3. The `connectionString` depends on your authentication settings:
-   - If using Integrated Windows authentication (without an SQL user/password):
+   - Use Integrated Windows authentication (without an SQL user/password):
 
      `Data Source=<database-server-hostname>;Database=<SMA-database-name>;Integrated Security=True;MultipleActiveResultSets=False;Encrypt=True;`
-
-   - If using SQL user/password:
-
-     `Data Source=<database-server-hostname>;Database=<SMA-database-name>;User ID=<username>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;`
-
-     For more information, see [SqlClient Connection Strings](/dotnet/framework/data/adonet/connection-string-syntax#sqlclient-connection-strings).
 
 4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate isn't installed on the worker computer.
 

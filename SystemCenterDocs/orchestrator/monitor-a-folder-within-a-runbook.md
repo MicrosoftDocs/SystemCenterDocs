@@ -1,27 +1,23 @@
 ---
 title: Example Runbook Monitoring a folder with a runbook
 description: This article describes how you can use a sample to create a simple monitoring runbook that monitors a folder for new text files.
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9be981fc-6708-4d00-a42a-2a15f0addbf0
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/13/2023
-manager: mkluck
 ms.custom: engagement-fy23
 ---
 
 # Example Runbook: Monitor a folder with a runbook
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 This article shows you how to create a simple runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 

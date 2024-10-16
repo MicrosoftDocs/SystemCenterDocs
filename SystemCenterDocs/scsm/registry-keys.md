@@ -1,23 +1,19 @@
 ---
 title: Service Manager registry keys
 description: Learn about registry keys used by Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 08/22/2023
-ms.technology: service-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 05/15/2024
+ms.subservice: service-manager
 ms.custom: UpdateFrequency5, engagement-fy24
 ---
 
 # Registry keys used by Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 > [!CAUTION]
 > Incorrectly editing the registry can severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.

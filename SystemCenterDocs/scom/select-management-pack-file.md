@@ -2,23 +2,19 @@
 ms.assetid: 0a119fc2-b6fb-4ca6-a2ce-5344ea69b327
 title: Select a management pack file in Operations Manager management pack
 description: This article provides an overview about how to select a Management Pack File
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: Anastas1ya
+ms.author: v-fkornilov
+manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Select a management pack file
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 When you create any monitoring in the Operations console, you have to specify a management pack file for the elements that you're creating. This article describes a basic strategy that you can follow and provides additional details to help you understand the logic of the recommended strategy.
 

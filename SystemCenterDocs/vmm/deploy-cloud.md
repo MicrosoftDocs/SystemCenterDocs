@@ -2,26 +2,19 @@
 ms.assetid: 3e85d403-e8dc-40b0-a578-0caee2b3ee1f
 title: Deploy a private VMM cloud
 description: This article provides an overview of private cloud deployment in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/01/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/17/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: intro-deployment, UpdateFrequency3
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ---
 
+# Deploy a private VMM cloud
 
-# Scenario: Deploy a private VMM cloud
-
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
-
-This article provides an overview of System Center - Virtual Machine Manager (VMM) private clouds.
+This article provides an overview of System Center Virtual Machine Manager (VMM) private clouds.
 
 A private cloud is a cloud that is provisioned and managed on-premises by an organization. It's deployed using an organization’s own hardware to take the advantages of a private cloud model.
 

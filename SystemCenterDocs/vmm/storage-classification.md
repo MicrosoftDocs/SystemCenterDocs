@@ -2,24 +2,20 @@
 ms.assetid: 03be2a03-3c30-418f-8c5c-169744ac864f
 title: Set up storage classifications in the VMM fabric
 description: This article describes how to set up storage classifications in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/24/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/22/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23
 ---
 # Set up storage classifications in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-Use storage classifications to abstract storage devices in the System Center - Virtual Machine Manager (VMM) fabric. You classify storage devices with similar characteristics, and assign these classifications, rather than specific storage devices, to hosts and clusters. The host and cluster can then use any available storage n the classification.
+Use storage classifications to abstract storage devices in the System Center Virtual Machine Manager (VMM) fabric. You can classify storage devices with similar characteristics and assign these classifications, rather than specific storage devices, to hosts and clusters. The host and cluster can then use any available storage n the classification.
 
 Classifications are often based on storage types or performance characteristics. For example, you could create:
 

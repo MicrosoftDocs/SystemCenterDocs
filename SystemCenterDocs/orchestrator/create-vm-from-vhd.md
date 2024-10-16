@@ -1,27 +1,23 @@
 ---
 title: Create VM from VHD
 description: The Create VM from VHD activity is used to create a new virtual machine from an existing virtual hard disk.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 10/10/2023
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87146c7c-d1e7-4faf-a079-7814a81b9f1b
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Create VM from VHD
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create VM from VHD activity is used to create a new virtual machine from an existing virtual hard disk.
 
@@ -150,7 +146,7 @@ The activity publishes all the data from the required and optional properties in
 | Virtual Network   | The name of the virtual network   |
 | Virtual Network Adapters   | A list of the names of Virtual Network Adapters   |
 | Virtual SCSI Adapters   | A list of the names of Virtual SCSI Adapters   |
-| VMC Path   | The virtual machine configuration file path, in the format C:\\VMM\\DRDemo-DataTier\\VirtualMachines\\abc12345-d6ef-78g9-h0ij-1kl2-34m56n7890p12.xml   |
+| VMC Path   | The virtual machine configuration file path in the format C:\\VMM\\DRDemo-DataTier\\VirtualMachines\\abc12345-d6ef-78g9-h0ij-1kl2-34m56n7890p12.xml   |
 | VM Host   | The full computer name of the host computer for Virtual Machine Manager   |
 | VM ID   | The unique identifier (GUID) of the virtual machine   |
 | VM Name   | The name of the virtual machine   |

@@ -2,27 +2,20 @@
 title: Add Network Adapter Activity
 description: The Add Network Adapter activity is used in a runbook to add a virtual network adapter to a virtual machine controlled by the VMware vSphere server.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8b09506e-34d1-4c32-ad34-600d86ceb109
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Add Network Adapter Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Add Network Adapter** activity is used in a runbook to add a virtual network adapter to a virtual machine controlled by the VMware vSphere server. This can be used to connect the virtual machine to multiple networks in a multi-homed environment or to add the first network adapter as part of a provisioning process.
 
@@ -55,8 +48,6 @@ No optional properties are provided for this activity.
 ## Configuring the Add Network Adapter Activity
 
 The following procedure describes the steps required to configure an Add Network Adapter activity.
-
-#### To configure the Add Network Adapter Activity
 
 1.  From the **Activities** pane, drag an **Add Network Adapter** activity to the active runbook.
 

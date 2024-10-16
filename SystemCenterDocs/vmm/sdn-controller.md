@@ -2,25 +2,21 @@
 ms.assetid: 8bd626d5-27c0-46c5-9031-905a69e44219
 title: Set up an SDN network controller in the VMM fabric
 description: This article describes how to set up a Software Defined Network (SDN) infrastructure in the System Center VMM fabric.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/20/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/24/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23, UpdateFrequency2
 ---
 
 # Set up an SDN network controller in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center - Virtual Machine Manager (VMM) fabric.
+This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center Virtual Machine Manager (VMM) fabric.
 
 The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](/windows-server/networking/sdn/technologies/network-controller/network-controller).
 
@@ -58,7 +54,7 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 
 To set up SDN in the VMM fabric, you need the following:
 
-- **A service template**: VMM uses a service template to automate network controller deployment. Service templates for the network controller support multi-node deployment on generation 1 and generation 2 VMs.
+- **A service template**: VMM uses a service template to automate network controller deployment. Service templates for the network controller support multi-node deployment on Generation 1 and Generation 2 VMs.
 - **A virtual hard disk**: The service template needs a prepared virtual hard disk that's imported into the VMM library. This virtual hard disk is used for network controller VMs.
     - The virtual hard disk must be running the applicable Windows Server version with the latest patches installed.
     - It can be in VHD or VHDX format.
@@ -109,15 +105,15 @@ Here's what you need to do to set up an SDN network controller:
 
 **Name** | **Type** | **Details**
 --- | --- |---
-**Network Controller Production Generation 1 VM.xml** | Template | Three-node network controller for generation 1 VMs
-**Network Controller Production Generation 2 VM.xml** | Template | Three-node network controller for generation 2 VMs
-**Network Controller Standalone Generation 1 VM.xml** | Template | Single-node network controller for generation 1 VMs
-**Network Controller Standalone Generation 2 VM.xml** | Template | Single-node network controller for generation 2 VMs
+**Network Controller Production Generation 1 VM.xml** | Template | Three-node network controller for Generation 1 VMs
+**Network Controller Production Generation 2 VM.xml** | Template | Three-node network controller for Generation 2 VMs
+**Network Controller Standalone Generation 1 VM.xml** | Template | Single-node network controller for Generation 1 VMs
+**Network Controller Standalone Generation 2 VM.xml** | Template | Single-node network controller for Generation 2 VMs
 **NcSetup.cr** | Custom resource file | A library resource containing scripts used to set up the network.
 **ServerCertificate.cr** | Custom resource file | Library resource containing the private key for the network controller in .pfx format.
 **NcCertificate.cr** | Custom resource file | Library resource containing the trusted root certificate (.CER) for the network controller. This is used for secure communications between the network controller and other subservices (For example, SLB MUXes).
 **TrustedRootCertificate.cr** | Custom resource file | Library resource containing the CA public key (.cer) imported as the trusted root certificate to validate the SSL certificate.
-**EdgeDeployment.cr** | Template | Used for installing SLB MUX roles and gateway roles (for example, VPN)
+**EdgeDeployment.cr** | Template | Used for installing SLB MUX roles and gateway roles (for example, VPN).
 
 ## Set up Active Directory groups
 Create security groups for network controller management and clients.
@@ -126,13 +122,13 @@ Create security groups for network controller management and clients.
 
     - In the group, add all the users who have permissions to configure the network controller. For example, create a group named Network Controller Admins.
     -  All the users that you add to this group must also be members of the Domain Users group in Active Directory.
-    - The group for network controller management should be a domain local group. Members of this group will be able to create, delete, and update the deployed network controller configuration.
+    - The group for network controller management must be a domain local group. Members of this group will be able to create, delete, and update the deployed network controller configuration.
     - Create at least one user account that is a member of this group and have access to its credentials. After the network controller is deployed, VMM can be configured to use the user account credentials to establish communication with the network controller.
 2. Create another security group for network controller clients.
     - Add users with permissions to configure and manage networks using network controller. For example, create a group named Network Controller Users.
     - All the users that you add to the new group must also be members of the Domain Users group in Active Directory.
     - All Network Controller configuration and management is performed using Representational State Transfer (DNS).
-    -  The group should be a Domain Local group. After the network controller is deployed, any members of this group will have permissions to communicate with the network controller via the REST based interface.
+    -  The group must be a Domain Local group. After the network controller is deployed, any members of this group will have permissions to communicate with the network controller via the REST-based interface.
     - Create at least one user account that is a member of this group. After the network controller is deployed, VMM can be configured to use the user account credentials to establish communication with the network controller.
 
 ## Create a library share for logging
@@ -168,7 +164,7 @@ You can create a management logical network in VMM to mirror your physical manag
    >[!NOTE]
    > From VMM 2019 UR1,**One Connected Network** type is changed to **Connected Network**.
 ::: moniker-end
-4.  Select **Network Site** > **Add**. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet details. This network should already exist and be configured in your physical switch.
+4.  Select **Network Site** > **Add**. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet details. This network must already exist and be configured in your physical switch.
 5.  Review the **Summary** information and select **Finish** to complete.
 
 
@@ -192,8 +188,8 @@ If you want to allocate static IP addresses to network controller VMs, create an
 1.  In the VMM console, right-click the management logical network and select **Create IP Pool**.
 2.  Provide a **Name** and optional description for the pool, and ensure that the management network is selected for the logical network.
 3.  In **Network Site** panel, select the subnet that this IP address pool will service.
-4.  In **IP Address range** panel, type the starting and ending IP addresses.
-5. To use an IP as REST IP, type one of the IP addresses from the specified range in the **IP addresses to be reserved for other uses** box. In case you want to use the REST End Point, skip this step.
+4.  In **IP Address range** panel, enter the starting and ending IP addresses.
+5. To use an IP as REST IP, enter one of the IP addresses from the specified range in the **IP addresses to be reserved for other uses** box. In case you want to use the REST End Point, skip this step.
 
     - Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
     - If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide a REST DNS name.
@@ -221,7 +217,7 @@ You need to deploy a logical switch on the management logical network. The switc
 
 ### Deploy the logical switch
 
-You must deploy the management logical switch on all of the hosts where you intend to deploy the NC. These hosts must be a part of VMM host group that you created earlier [Learn more](hyper-v-network.md).
+You must deploy the management logical switch on all the hosts where you intend to deploy the NC. These hosts must be a part of VMM host group that you created earlier. [Learn more](hyper-v-network.md).
 
 ## Set up the security certificates
 
@@ -232,13 +228,13 @@ You need an SSL certificate that will be used for secure/HTTPS communication wit
 
 ### Use a self-signed certificate
 
-The following example creates a new self-signed certificate and should be run on the VMM server.
+The following example creates a new self-signed certificate and must be run on the VMM server.
 
 > [!NOTE]
 > - You can use an IP address as the DNS name, but this isn't recommended as it restricts the network controller to a single subnet.
 > - You can use any friendly name for the network controller.
-> - For multi-node deployment, The DNS name should be the REST name you want to use.
-> - For single-node deployment, the DNS name should be the network controller name followed by the full domain name.
+> - For multi-node deployment, The DNS name must be the REST name you want to use.
+> - For single-node deployment, the DNS name must be the network controller name followed by the full domain name.
 
 **Deployment** | **Syntax** | **Example**
 --- | --- | ---
@@ -288,7 +284,7 @@ Import the template and update the parameters for your environment.
 
 ### Import the template
 
-Import the service template into the VMM library. For this example, we'll import the generation 2 template.
+Import the service template into the VMM library. For this example, we'll import the Generation 2 template.
 
 1.  Select **Library** > **Import Template**.
 2.  Browse to your service template folder, select the **Network Controller Production Generation 2 VM.xml** file.
@@ -297,7 +293,7 @@ Import the service template into the VMM library. For this example, we'll import
     - **WinServer.vhdx** Select the base virtual hard drive image that you prepared earlier.
     - **NCSetup.cr**: Map to the NCSetup.cr library resource in the VMM library.
     - **ServerCertificate.cr**: Map to the ServerCertificate.cr resource in the VMM library. In addition, put the .pfx SSL certificate that you prepared earlier inside this folder. Ensure that you only have one certificate in the ServerCertificate.cr folder.
-    - **TrustedRootCertificate.cr**:  Map to the TrustedRootCertificate.cr folder in your VMM library. If you don't need a trusted root certificate, this resource still needs to be mapped to a CR folder. However, the folder should be left empty.
+    - **TrustedRootCertificate.cr**:  Map to the TrustedRootCertificate.cr folder in your VMM library. If you don't need a trusted root certificate, this resource still needs to be mapped to a CR folder. However, the folder must be left empty.
 
 4.  Once done, ensure that the Job is complete.
 
@@ -312,7 +308,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 1. In the VMM library, select the service template, and open it in designer mode.
 2. Double-click the computer tier to open the Windows Server Network Controller Properties page.
 3. To specify a product key, select **OS Configuration** > **Product Key**, and specify the key shared by CCEP.
-5.  To enable high availability, select **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
+5.  To enable high availability, select **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** checkbox.
 5.  To enable dynamic IP configuration and use DHCP for network controller management, select network adapter on the designer, and change the IPV4 address type to **Dynamic**.
 
     > [!NOTE]
@@ -321,7 +317,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 
 ## Deploy the network controller
 
-1. Select the network controller service template > **Configure Deployment**. Type a service name, and select a destination for the service instance. The destination must map to the dedicated host group containing hosts that will be managed by the network controller.
+1. Select the network controller service template > **Configure Deployment**. Enter a service name, and select a destination for the service instance. The destination must map to the dedicated host group containing hosts that will be managed by the network controller.
 2. Configure the deployment settings as described in the table below.
 3. It's normal for the virtual machine instances to be initially red. Select **Refresh Preview** to have the deployment service automatically find suitable hosts for the virtual machines to be created.
 4. After you configure these settings, select **Deploy Service** to begin the service deployment job.
@@ -337,13 +333,13 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 --- | --- |---
 **ClientSecurityGroup** | Required | Name of the security group that you created, containing network controller client accounts.
 **DiagnosticLogShare** | Optional | File share location where the diagnostic logs will be periodically uploaded. If this isn't provided, the logs are stored locally on each node.
-**DiagnosticLogShareUsername** | Optional | Full user name (including domain name) for an account that has access permissions to the diagnostic log share. In the format: [domain]\\[username].
+**DiagnosticLogShareUsername** | Optional | Full username (including domain name) for an account that has access permissions to the diagnostic log share. In the format: [domain]\\[username].
 **DiagnosticLogSharePassword** | Optional | The password for the account specified in the DiagnosticLogShareUsername parameter.
-**LocalAdmin** | Required | Select a Run as account in your environment, which will be used as the local administrator on the network controller virtual machines.<br><br> **Note**: while creating Run as accounts, uncheck the **validate domain credentials option** if you're creating a local account.<br><br> User name should be .\Administrator (create it if it doesn't exist).
+**LocalAdmin** | Required | Select a Run As account in your environment, which will be used as the local administrator on the network controller virtual machines.<br><br> **Note**: While creating Run As accounts, uncheck the **validate domain credentials option** if you're creating a local account.<br><br> Username must be .\Administrator (create it if it doesn't exist).
 **Management** | Required | Select the management logical network you created earlier.
-**MgmtDomainAccount** | Required | Select a Run as account in your environment, which will be used to prepare the network controller. This user must be a member of the management security group, specified below, which has privileges to manage the network controller.
-**MgmtDomainAccountName** | Required | This must be the full user name (including domain name) of the Run as account mapped to MgmtDomainAccount.<br><br> The domain user name will be added to the Administrators group during deployment.
-**MgmtDomainAccountPassword** | Required | Password for the management Run as account mapped to MgmtDomainAccount.
+**MgmtDomainAccount** | Required | Select a Run As account in your environment, which will be used to prepare the network controller. This user must be a member of the management security group, specified below, which has privileges to manage the network controller.
+**MgmtDomainAccountName** | Required | This must be the full username (including domain name) of the Run As account mapped to MgmtDomainAccount.<br><br> The domain username will be added to the Administrators group during deployment.
+**MgmtDomainAccountPassword** | Required | Password for the management Run As account mapped to MgmtDomainAccount.
 **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the network controller virtual machines will join.
 **MgmtSecurityGroup** | Required | Name of the security group you created previously containing network controller management accounts.
 **RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> If the nodes are in the same subnet, you must provide the REST IP address. If the nodes are in different subnets, provide the REST DNS name.   
@@ -365,13 +361,13 @@ After the network controller service is successfully deployed, the next step is 
 1. In **Fabric**, right-click **Networking** > **Network Service**, and select **Add Network Service.**
 2. The **Add Network Service Wizard** starts. Specify a name and optional description.
 3. Select **Microsoft** for the manufacturer and for model select **Microsoft network controller**.
-4. In **Credentials**, provide the Run As account you want to use to configure the network service. This should be the same account that you included in the network controller clients group.
+4. In **Credentials**, provide the Run As account you want to use to configure the network service. This must be the same account that you included in the network controller clients group.
 5. For the **Connection String**:
-    - In multi-node deployment, **ServerURL** should use the REST endpoint, and **servicename** should be the name of the  network controller instance.
-    - In single node deployment, **ServerURL** should be the network controller FQDN and, **servicename** must be the network controller service instance name. Example: ``serverurl=https://NCCluster.contoso.com;servicename=NC_VMM_RTM``
+    - In multi-node deployment, **ServerURL** must use the REST endpoint, and **servicename** must be the name of the  network controller instance.
+    - In single node deployment, **ServerURL** must be the network controller FQDN and, **servicename** must be the network controller service instance name. Example: ``serverurl=https://NCCluster.contoso.com;servicename=NC_VMM_RTM``
 
 6. In **Review Certificates**, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure that you select **These certificates have been reviewed and can be imported to the trusted certificate store box**.
-7. On the next screen, select **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and check that isNetworkController = true. When it completes successfully, select **Next**.
+7. On the next screen, select **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and check that isNetworkController = true. When it completes successfully, select **Next**.
 8. Configure the host group that your network controller will manage.
 9. Select **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console. If the network service isn't added, check **Jobs** in the VMM console to troubleshoot.
 
@@ -379,13 +375,13 @@ After the network controller service is successfully deployed, the next step is 
 
 You can optionally validate the network controller deployment. To do this:
 
-1. Create **HNV provider** network (the backend network), managed by the network controller for tenant VM connectivity. This network is used to validate that the network controller has been deployed successfully and that tenant VMs within the same virtual network can ping each other. This network should exist in your physical network infrastructure, and all SDN fabric hosts should have physical connectivity to it.
+1. Create **HNV provider** network (the backend network), managed by the network controller for tenant VM connectivity. This network is used to validate that the network controller has been deployed successfully and that tenant VMs within the same virtual network can ping each other. This network must exist in your physical network infrastructure, and all SDN fabric hosts must have physical connectivity to it.
 2. After creating the HNV provide network, you configure two tenant VM networks on top of it. Create VM networks and IP address pools, and then deploy the tenant VMs. You can also test connectivity between two tenant VMs deployed on different hosts to ensure the network controller is deployed correctly.
 
 
 ### Create the HNV provider network
 
-1.  Start the **Create Logical Network Wizard**. Type a name and optional description for this network.
+1.  Start the **Create Logical Network Wizard**. Enter a name and optional description for this network.
 ::: moniker range="<sc-vmm-2019"
 2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure that you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
 ::: moniker-end
@@ -405,7 +401,7 @@ You can optionally validate the network controller deployment. To do this:
 
 ::: moniker-end
 
-3. In **Network Site**, add the network site information for your HNV provider network. This should include the host group, subnet, and VLAN information for the network.
+3. In **Network Site**, add the network site information for your HNV provider network. This must include the host group, subnet, and VLAN information for the network.
 4. Review the **Summary** information and complete the wizard.
 
 ### Create the IP address pool
@@ -455,7 +451,7 @@ The configure HNV logical network needs an IP address pool, even if DHCP is avai
 ::: moniker-end
 
 4.  In **IP Address range**, configure the starting and ending IP address. Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
-5.  Next, configure the default gateway address. Select **Insert** next to the **Default gateways** box, type the address, and use the default metric. Optionally configure DNS and WINS.
+5.  Next, configure the default gateway address. Select **Insert** next to the **Default gateways** box, enter the address, and use the default metric. Optionally configure DNS and WINS.
 6.  Review the summary information and select **Finish** to complete the wizard.
 7.  As part of network controller onboarding, the switch that you deployed on the hosts for the Management logical network connectivity was converted to an SDN switch. This switch can now be used to deploy a network controller managed network, including the HNV provider logical network. Ensure that you select the network site corresponding to the  HNV provider logical network in the uplink port profile settings for the Management logical switch.
 
@@ -486,7 +482,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 >
 [ ![Screenshot of Enable dual stack.](./media/sdn-controller/enable-dual-stack-inline.png) ](./media/sdn-controller/enable-dual-stack-expanded.png#lightbox)
 
-When you create VM Subnets, to enable dual stack support, provide both IPv4 subnet and IPv6 subnet, separated by a semicolon (‘;’). (applicable to 2022 and later)
+When you create VM Subnets, to enable dual stack support, provide both IPv4 subnet and IPv6 subnet, separated by a semicolon (;). (applicable to 2022 and later)
 >
 [ ![Screenshot of VM Subnets.](./media/sdn-controller/vm-subnets-inline.png) ](./media/sdn-controller/vm-subnets-expanded.png#lightbox)
 

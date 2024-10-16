@@ -2,23 +2,19 @@
 ms.assetid: d7f96cca-113c-4732-a3ba-e7f593350015
 title: Data Encryption for Web console and Reporting server Connections
 description: This article provides design guidance for Operations Manager roles where secure communication is required in the enterprise.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/25/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Data Encryption for Web console and Reporting server Connections
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 You can configure the Operations Manager Web console and Reporting server to use Secure Sockets Layer (SSL) connections to ensure that both incoming requests and outbound responses are encrypted prior to transmission. Operations Manager can use Federal Information Processing Standard (FIPS) compliant algorithms for secure data encryption when accessing the Web console and when running reports in the Operations console from the Reporting server.
 

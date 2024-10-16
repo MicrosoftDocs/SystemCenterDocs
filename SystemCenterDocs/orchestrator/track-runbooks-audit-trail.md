@@ -2,25 +2,21 @@
 title: Audit Trail
 description: This article provides information about how to activate and deactivate audit trails. 
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b93dbbb6-3c0d-4256-8140-c47b67a50a4a
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/11/2023
-manager: mkluck
 ---
 # Audit Trail
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The *Audit Trail* is a collection of text log files that contain information about the interaction of a runbook with external tools and systems. By using the Audit Trail, you can report on configuration and change compliance of processes and identify changes made to a non-Microsoft system for audit purposes or to remediate a change that causes service interruption.  
 

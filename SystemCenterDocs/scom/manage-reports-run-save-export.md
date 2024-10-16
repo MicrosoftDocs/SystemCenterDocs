@@ -2,23 +2,19 @@
 ms.assetid: 113f2b4e-8f48-43da-9f31-2a2bf1d78ec5
 title: Run, Save, and Export a Report
 description: This article describes how to run, save and export a report in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Run, save, and export a report
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 You can view a report in Operations Manager by selecting it, entering the required parameters, and executing it.  Once you run it, you can also choose to save the configuration to a linked report, which deploys that report with different settings. You can export a report to another file format, such as PowerPoint, Image, PDF, Microsoft Word, or Microsoft Excel for your reporting users.  
 

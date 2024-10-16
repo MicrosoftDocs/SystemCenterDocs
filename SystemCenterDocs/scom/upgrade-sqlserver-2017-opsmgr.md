@@ -1,25 +1,21 @@
 ---
 title: Upgrade Operations Manager databases to SQL Server 2017
 description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2017.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/29/2020
 ms.custom: na
-ms.prod: system-center
-monikerRange: '>sc-om-1801'
+ms.service: system-center
+monikerRange: '>=sc-om-2019'
 ms.assetid:
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: conceptual
 ---
 
 # How to upgrade Operations Manager databases to SQL Server 2017
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2017.  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 

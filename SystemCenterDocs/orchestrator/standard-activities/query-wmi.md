@@ -3,27 +3,21 @@ title: Query WMI
 description: This article describes the Query WMI activity that will send a WMI query to a system that you specify and return the results.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 979b6b2d-8aba-48e3-a42a-8553cdd08559
 caps.latest.revision: 19
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Query WMI
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Query WMI activity will send a WMI query to a system that you specify and return the results. This activity can also be used to check statistics on a remote server to create audit trails that can be reviewed later.  
 

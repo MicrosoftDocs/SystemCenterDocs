@@ -1,23 +1,19 @@
 ---
 title: What is Service Provider Foundation?
 description: This article provides a broad overview of Service Provider Foundation
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # What is Service Provider Foundation?
 
-::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
 
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-::: moniker-end
 
 System Center - Virtual Machine Manager (VMM) provides all the resources needed to build, maintain, and monitor a cloud infrastructure. However, service providers and large enterprises need additional features to support multiple tenants, integrate infrastructures with sophisticated web-based self-service portals, and distribute management workloads across multiple datacenters.
 

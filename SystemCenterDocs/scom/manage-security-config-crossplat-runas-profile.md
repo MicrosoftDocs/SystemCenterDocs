@@ -2,23 +2,19 @@
 ms.assetid: 61b25aa7-b725-445b-8f4c-40ce213714c2
 title: How to Configure Run As Accounts and Profiles for UNIX and Linux Access
 description: This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.custom: UpdateFrequency2, engagement-fy24
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to configure Run As accounts and profiles for UNIX and Linux access
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 If you are the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Planning Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
 

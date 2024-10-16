@@ -2,23 +2,19 @@
 ms.assetid: 9d758a26-a2dd-42f0-87a6-eafbbb8a2dbf
 title: Manage storage deployed with Storage Spaces Direct in the VMM fabric
 description: This article describes how to manage storage in Storage Spaces Direct in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Manage storage in Storage Spaces Direct in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to manage storage deployed with Storage Spaces Direct (S2D) in the System Center - Virtual Manager (VMM) fabric.
 

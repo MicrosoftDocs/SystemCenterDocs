@@ -1,16 +1,16 @@
 ---
 title: System Center - Data Protection Manager volume to volume migration
 description: This article describes volume to volume migration.
-manager: vvithal
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
-ms.date: 10/20/2020
-ms.technology: data-protection-manager
+ms.service: system-center
+ms.date: 06/20/2024
+ms.subservice: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 monikerRange: sc-dpm-2019||sc-dpm-2016
-ms.custom: intro-migration, UpdateFrequency2
+ms.custom: intro-migration, UpdateFrequency2, engagement-fy24
 ---
 
 # Migrate data sources to new volumes
@@ -24,7 +24,8 @@ ms.custom: intro-migration, UpdateFrequency2
 
 This article provides information on how to migrate data sources from one volume to another.
 
-There're various reasons why a [volume migration](add-storage.md#migrate-data-to-newly-created-volumes) is required: 
+There're various reasons why a [volume migration](add-storage.md#migrate-data-to-newly-created-volumes) is required:
+
 - The underlying storage in the old volume can have fragmentation
 - The old volume would've reached the limit of maximum allowed storage size
 - You want to store your backups on a high-performance underlying storage
@@ -41,7 +42,6 @@ DPM supports the following two options to migrate data to a new volume:
    > This option is applicable from DPM 2019 UR2 and later.
 
    ::: moniker-end
-
 
   To use this option, first, add the registry key as per the details below:
 
@@ -64,11 +64,9 @@ Follow these steps:
 
    ![Move disk storage](./media/volume-volume-migration/select-target-disk-storage.png)
 
-
 4. Select the *target disk storage* that you want to migrate to and select **OK**.
 
    ![Select target disk storage](./media/volume-volume-migration/select-workload.png)
-
 
    This begins the migration process. For monitoring scheduled jobs, you can open another DPM console in parallel while the migration is in progress.
 

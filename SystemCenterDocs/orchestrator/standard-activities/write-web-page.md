@@ -3,27 +3,21 @@ title: Write Web Page
 description: This article describes the Write Web Page activity that will create or add information to an HTML file.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 43f5cfc6-df95-4c03-80b4-c2157bc7f88f
 caps.latest.revision: 13
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Write Web Page
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Write Web Page activity will create or add information to an HTML file. When creating new web pages with the Write Web Page activity, you can use templates that can contain any of the formattings that you require. When using the Write Web Page activity to create web pages, all occurrences of the tags \<DOC-TITLE> and \<DOC-TEXT> will be replaced by the title and text that you specify, respectively.  
 

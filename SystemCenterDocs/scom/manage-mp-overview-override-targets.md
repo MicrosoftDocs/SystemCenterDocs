@@ -2,23 +2,17 @@
 ms.assetid: 22fdfe80-9d2a-4b46-b544-06a5b2b0e6c2
 title: Using Classes and Groups for Overrides
 description: This article describes how to apply overrides to classes and groups in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/2/2023
 ms.custom: engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Using classes and groups for overrides
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article describes the differences between classes and groups in System Center - Operations Manager, and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.  
 

@@ -5,20 +5,16 @@ description: This article is the main landing page for all content related to Sy
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/12/2022
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 03/18/2024
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Welcome to System Center - Operations Manager. Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
 

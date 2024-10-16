@@ -3,12 +3,12 @@ ms.assetid: a2732a5c-9722-412f-9efa-da652146d3e7
 title: Data flow in Management Pack for SQL Server Replication
 description: This section explains data flows in Management Pack for SQL Server Replication
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Data Flow

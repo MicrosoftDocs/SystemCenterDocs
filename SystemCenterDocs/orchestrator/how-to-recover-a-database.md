@@ -2,22 +2,18 @@
 title: How to recover a database
 description: Describes how to restore a database from backup in System Center - Orchestrator.
 ms.date: 04/12/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 
 # Recover a database
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Orchestrator database can be backed up and restored using most standard MS SQL Server database backup\/restore mechanisms. This includes Microsoft SQL Server Backup, DPM SQL Server backup, and others. Orchestrator provides a VSS Writer that will discover the database server that is associated with the Management Server and back up the database when the Management Server is backed up.  
 

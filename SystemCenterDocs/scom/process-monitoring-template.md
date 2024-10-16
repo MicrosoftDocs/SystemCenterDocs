@@ -2,23 +2,19 @@
 ms.assetid: 9a250872-da2d-43d6-ac0e-9882c068311f
 title: Process Monitoring template in Operations Manager management pack
 description: This article provides an overview about process monitoring template
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Process Monitoring template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The _Process Monitoring_ template lets you monitor whether a particular process is running on a computer. By using this template, you can implement two different basic scenarios: You might require the process to be running for a particular application and want to be warned if it isn't running, or you might have to be alerted if you discover that an unwanted process is running. In addition to monitoring whether the application is running, you can collect performance data for the processor and memory usage of the process.
 

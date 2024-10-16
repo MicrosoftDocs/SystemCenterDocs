@@ -2,23 +2,19 @@
 ms.assetid: 7a4739b5-81ef-4495-aa09-5545641d8274
 title: Configuring Windows Agents
 description: This article describes the options and how to configure the Microsoft Monitoring Agent on Windows computers.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/17/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Configure Windows agents
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center – Operations Manager, when you install an agent on a computer, a Microsoft Monitoring Agent application is added to the Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server to remove a management group from an agent configuration and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
 

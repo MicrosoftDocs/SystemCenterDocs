@@ -1,27 +1,21 @@
 ---
 title: Get Data Source
 description: The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload).
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 36855461-0113-451b-86f9-e10656fd8b15
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Get Data Source
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload). A data source is a workload that is currently protected or will be protected by Data Protection Manager. When the Get Data Source activity is used in a protection scenario, you select a production server, which becomes the default. When this activity is used in a recovery scenario, you'll select a protection group or the production server. You then filter the list of data sources obtained using your own custom criteria that result in the data source(s) that you want to use in your runbook.
 

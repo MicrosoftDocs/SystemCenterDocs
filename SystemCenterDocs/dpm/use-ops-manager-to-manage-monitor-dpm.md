@@ -1,25 +1,19 @@
 ---
 description: Describes how to manage and monitor DPM servers with Operations Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 5/10/2018
+ms.date: 01/17/2024
 title: Manage and monitor DPM servers with System Center Operations Manager
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 97fd6656-af44-4e5c-bef8-dc57643b0181
-ms.author: jsuri
-ms.custom: UpdateFrequency2
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage and monitor DPM servers with Operations Manager
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple System Center Data Protection Manager (DPM) servers from a single location. It provides:
 

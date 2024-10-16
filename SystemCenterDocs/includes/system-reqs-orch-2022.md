@@ -2,13 +2,13 @@
 ms.assetid:
 title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
-ms.author: jsuri
-manager: mkluck
-ms.date: 01/12/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/31/2024
 ms.custom: na
-author: jyothisuri
-ms.prod: system center
-ms.technology: Orchestrator
+ms.service: system-center
+ms.subservice: Orchestrator
 ms.topic: include
 ---
 
@@ -56,7 +56,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 - Microsoft .NET Framework 4.5 or later.
 
-- Ensure that [Microsoft OLE DB Driver for SQL Server v18](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#previous-releases&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer, or the Web API Service.
+- Ensure that [Microsoft OLE DB Driver for SQL Server v18](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#previous-releases&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer, or the Web API Service.
 
 - Join the computer to an Active Directory domain.
 
@@ -84,7 +84,7 @@ Orchestrator Web API requires the following versions of .NET Core and Hosting Bu
 |SCO version|.NET Core|
 |---|---|
 |2022 RTM|[.NET Core 5 Hosting Bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.17-windows-hosting-bundle-installer)|
-|2022 UR1|[.NET Core 6 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
+|2022 UR1, UR2|[.NET Core 6 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
 
 ## Virtualization
 

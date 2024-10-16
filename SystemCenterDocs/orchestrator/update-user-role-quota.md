@@ -3,25 +3,21 @@ title: Update User Role Quota
 description: Updates the quotas for a certain user role and cloud.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 08/22/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 253dbe66-1fdd-4160-a664-0cf34e712e03
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Update User Role Quota
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Updates the quotas for a certain user role and cloud.
 

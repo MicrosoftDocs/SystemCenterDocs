@@ -2,28 +2,24 @@
 ms.assetid: 2684494b-1779-4df8-9f11-db46a0d96542
 title: Manage port ACLs in VMM
 description: Describes how to manage Hyper-V port access control lists (ACLs)
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 05/12/2022
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/09/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 
 # Manage port ACLs in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-In System Center - Virtual Machine Manager (VMM), you can centrally configure and manage Hyper-V port access control lists (ACLs). Port ACLs can be configured for both a Network Controller- managed fabric and for networks that aren't managed by Network Controller.
+In System Center Virtual Machine Manager (VMM), you can centrally configure and manage Hyper-V port access control lists (ACLs). Port ACLs can be configured for both a Network Controller-managed fabric and for networks that aren't managed by Network Controller.
 
 - A port ACL is a set of rules that filter traffic at the layer 2 port level. A port ACL in VMM filters access to a particular VMM object. A network object can have no more than one port ACL attached.
-- An ACL contains rules and can be attached to any number of network objects. You can create an ACL without rules, and then add rules at a later time. Each ACL rule corresponds to only one port ACL.
+- An ACL contains rules and can be attached to any number of network objects. You can create an ACL without rules, and then add rules later. Each ACL rule corresponds to only one port ACL.
 - If an ACL has multiple rules, they're applied based on priority. After a rule matches criteria and is applied, no other rules are processed.
 - A global settings port ACL is applied to all VM virtual network adapters in an infrastructure. There's no separate object type for global settings. Instead, the global settings port ACL is attached to the VMM management server.
 - Port ACL settings are exposed only through PowerShell cmdlets in VMM and can't be configured in the VMM console.
@@ -49,9 +45,9 @@ In System Center - Virtual Machine Manager (VMM), you can centrally configure an
 
 Here's a list of unsupported scenarios:
 
-- Manage individual rules for a single instance, when the ACL is shared with multiple instances. All rules are managed centrally within their parent ACLs, and apply wherever the ACL is attached.
+- Manage individual rules for a single instance when the ACL is shared with multiple instances. All rules are managed centrally within their parent ACLs and apply wherever the ACL is attached.
 - Attach more than one ACL to an entity.
-- Apply port ACLs to virtual network adapters n the Hyper-V parent partition (management operating system).
+- Apply port ACLs to virtual network adapters in the Hyper-V parent partition (management operating system).
 - Create port ACL rules in VMM that include IP-level protocols (other than TCP or UDP). Other protocols are still supported natively by Hyper-V.
 - Apply port ACLs to logical networks, network sites (logical network definitions), subnet VLANs, and other VMM networking objects that aren't mentioned as supported.
 
@@ -62,7 +58,7 @@ Use the VMM PowerShell interface to do the following:
 1. Define port ACLs and rules.
 
     ::: moniker range="sc-vmm-2016"
-    - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2012 R2 or later, because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
+    - The rules are applied to virtual switch ports on Hyper-V servers as extended port ACLs (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2012 R2 or later, because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
     ::: moniker-end
     ::: moniker range=">sc-vmm-2016"
     - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2016 or later because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
@@ -92,7 +88,7 @@ Use the VMM PowerShell interface to do the following:
 Name; Description | Port ACL name and description
 JobVariable | Stores job progress
 ManagedByNC | Specifies whether objects are managed by Network Controller
-OnBehalfOfUser/OnBehalfOfRole | Run job with user name or role
+OnBehalfOfUser/OnBehalfOfRole | Run job with username or role
 Owner | Specifies the owner of a VMM object in the form of a valid domain user account. Example: Contoso\PattiFuller or PattiFuller@Contoso
 ProTipID | ID of ProTip that triggered action
 RunAsychronously | Indicates whether job runs asynchronously
@@ -110,7 +106,7 @@ Create a port ACL for objects managed by Network Controller "DemoACLManagedByNC"
 PS: C:\> New-SCPortACL -Name "DemoACLManagedByNC" -Description "PortACL Example Managed by NC" -ManagedByN
 ```
 
-Create a port ACL for objects not managed Network Controller "DemPortACL":
+Create a port ACL for objects not managed by Network Controller "DemPortACL":
 
 ```
 PS: C:\> New-SCPortACL -Name "DemoPortACL" -Description "Port ACL Example Non Managed by NC"
@@ -133,12 +129,12 @@ PS: C:\> New-SCPortACL -Name "DemoPortACL" -Description "Port ACL Example Non Ma
 Name, Description | Rule name and description
 Type | Specifies the traffic direction for which the ACL is applied (Inbound or Outbound)
 Action | Specifies whether the ACL allows or blocks traffic (Allow or Deny)
-LocalAddressPrefix | Specifies the source IP address or subnet that's used to identify traffic that should be filtered.
-LocalPortRange | Specifies the source port range that's used to identify traffic.
-RemoteAddressPrefix | Specifies the destination IP address or subnet that's used to identify traffic for filtering.
+LocalAddressPrefix | Specifies the source IP address or subnet that's used to identify traffic that must be filtered
+LocalPortRange | Specifies the source port range that's used to identify traffic
+RemoteAddressPrefix | Specifies the destination IP address or subnet that's used to identify traffic for filtering
 RemotePortRange | Specifies the destination port range that's used to  identify traffic.
-Protocol | Specifies the protocol for which the rule is applied.
-Priority | Specify the priority of the rule in port ACL. Rules are applied according to order. Set a priority between 1 and 65535, where the lowest number has highest priority. Port ACLs  rules for objects managed by Network Controller should be set equal to or greater than 100. Network Controller doesn't support priority below 100.
+Protocol | Specifies the protocol for which the rule is applied
+Priority | Specify the priority of the rule in port ACL. Rules are applied according to order. Set a priority between 1 and 65535, where the lowest number has highest priority. Port ACLs  rules for objects managed by Network Controller must be set equal to or greater than 100. Network Controller doesn't support priority below 100.
 
 ### Examples
 
@@ -174,7 +170,7 @@ Modify the port ACL rule for the destination address range and protocol for a ru
 PS: C:\> $portACLRule = Get-SCPortACLRule -Name "AllowRDPAccess" `` <br/><br/> `` PS: C:\> Set-SCPortACLRule -PortACLRule $portACLRule -RemoteAddressPrefix 172.185.21.0/24 -Protocol Udp
 ```
 
-The first command retrieves rule "AllowRDPAccess". The second changes the protocol to UDP, and sets the destination to subnet 172.185.21.0/24.
+The first command retrieves rule **AllowRDPAccess**. The second changes the protocol to UDP and sets the destination to subnet 172.185.21.0/24.
 
 
 ## Attach and detach port ACLs
@@ -192,8 +188,8 @@ A port ACL can be attached to global settings, VM networks, VM subnets, and virt
 
 **Parameter** | **Details**
 --- | ---
-VMM server | Name of the VMM server on which the port ACL is applied.
-PortACL | Optionally attaches the specified port ACL to global settings.
+VMM server | Name of the VMM server on which the port ACL is applied
+PortACL | Optionally attaches the specified port ACL to global settings
 
 ### Examples
 
@@ -255,7 +251,7 @@ Set-SCVMSubnet [–PortACL <NetworkAccessControlList> | -RemovePortACL] [rest of
 ## Retrieve and view port ACLs and rules
 
 1. Open PowerShell in VMM.
-2. Run the [Get-SCPortACL](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportacl) cmdlet, to retrieve and view a port ACL:
+2. Run the [Get-SCPortACL](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportacl) cmdlet to retrieve and view a port ACL:
 
     ```
     Get-SCPortACL [[-Name] <String> ] [-ID <Guid> ] [-OnBehalfOfUser <String> ] [-OnBehalfOfUserRole <UserRole> ] [-VMMServer <ServerConnection> ] [ <CommonParameters>]
@@ -273,7 +269,7 @@ Set-SCVMSubnet [–PortACL <NetworkAccessControlList> | -RemovePortACL] [rest of
 --- | ---
 No parameters | Retrieves all ACLs
 Name/ID | Retrieve by name or GUID
-OnBehalfOfUser/OnBehalfOfUserRole | Run with user name or role
+OnBehalfOfUser/OnBehalfOfUserRole | Run with username or role
 VMMServer | Retrieve ACLs on specific VMM server
 CommonParameters | [Learn more](/powershell/module/microsoft.powershell.core/about/about_commonparameters)
 
@@ -300,7 +296,7 @@ Get all rules for ACL:
 ## Modify port ACLs and rules
 
 1. Open PowerShell in VMM.
-2. Run the [Set-SCPortACL](/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/Set-SCPortACL) cmdlet, to modify a port ACL:
+2. Run the [Set-SCPortACL](/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/Set-SCPortACL) cmdlet to modify a port ACL:
 
     ```
     Set-SCPortACL [-PortACL] <PortACL> [[-Description] <String>] [-JobVariable <String>] [-Name <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [<CommonParameters>]
@@ -318,9 +314,9 @@ Get all rules for ACL:
 --- | ---
 Name/Description | Name and description of port ACL
 JobVariable | Stores job progress
-OnBehalfOfUser/OnBehalfOfUserRole | Run with user name or role.
+OnBehalfOfUser/OnBehalfOfUserRole | Run with username or role
 ProTipID | ID of ProTip that triggered action
-RunAsynchronously | Indicates whether job runs asynchronously.
+RunAsynchronously | Indicates whether job runs asynchronously
 Confirm | Prompts before running job
 WhatIf | Shows what happens without running command
 
@@ -338,7 +334,7 @@ PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL"
 PS: C:> Set-SCPortACL -PortACL $portACL -Description "Port ACL Example Non Managed by Network Controller"
 ```
 
-The first cmdlet retrieves the ACL, the second sets the description on the ACL.
+The first cmdlet retrieves the ACL; the second sets the description on the ACL.
 
 
 Remove an ACL:
@@ -351,4 +347,4 @@ PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL"
 PS: C:> Remove-SCPortACL -PortACL $portACL
 ```
 
-The first cmdlet retrieves the ACL, the second removes it.
+The first cmdlet retrieves the ACL; the second removes it.

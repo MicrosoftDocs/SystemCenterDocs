@@ -2,27 +2,23 @@
 ms.assetid: e2581377-1e74-49c1-b02f-1fd245ccd478
 title: Create VM templates using VMM 2016 and Microsoft Azure Pack
 description: This article describes how to create VM role templates that can be used by tenants
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 03/09/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 09/17/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 monikerRange: '<sc-vmm-2019'
 ms.custom: engagement-fy23
 ---
 
 # Create VM templates using VMM and Microsoft Azure Pack
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
-As a hosting provider, you can use System Center - Virtual Machine Manager (VMM) in combination with Microsoft Azure Pack to increase the features that you offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, you can create VM role templates. Tenants can use these templates to create VMs on-premises and in service-provider hosting environments.
+
+As a hosting provider, you can use System Center Virtual Machine Manager (VMM) in combination with Microsoft Azure Pack to increase the features that you offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, you can create VM role templates. Tenants can use these templates to create VMs on-premises and in service provider hosting environments.
 
 ## Before you begin
 
@@ -31,7 +27,7 @@ As a hosting provider, you can use System Center - Virtual Machine Manager (VMM)
 
 ## Download Azure Pack Gallery resources
 
-Azure Pack Gallery Resources provide tenant offerings using standard and reusable components. The VM role gallery enables you to deploy VMs. Usually you need two packages to deploy a VM role:
+Azure Pack Gallery Resources provide tenant offerings using standard and reusable components. The VM role gallery enables you to deploy VMs. Usually, you need two packages to deploy a VM role:
 
 - A resource definition package (\*\.resdefpkg) to deploy the VM. This template describes information asked to self-portal tenants about VM size, name, and so on. These parameters are used by VMM to deploy the role.
 - A resource extension package (\*\.resextpkg) to install apps on a VM.
@@ -42,12 +38,12 @@ Each resource contains a Readme file that explains how to prepare your environme
 2. Start the installer, select the **Options** link at the bottom, and enter the link https:\//www.microsoft.com/web/webpi/partners/servicemodels.xml into **Custom Feeds**. Select **Add Feed** > **OK**. A **Service Models** tab should appear.
 3. In the **Service Models** tab, select **Gallery Resources**.
 4. Select the resource you want, and select **Add** > **Install**.
-5. Accept the license terms if appropriate, and select **Continue**. A window will be opened for the folder on the local computer where the resource is downloaded.
+5. Accept the license terms if appropriate, and select **Continue**. A window opens for the folder on the local computer where the resource is downloaded.
 6. The Readme file that accompanies the resource will specify whether additional software is needed. Follow the instructions as needed.
 
 ## Import resource extensions to the library
 
-For gallery resources that use Resource Extensions, you need to import the extensions into the VMM library using PowerShell. This example shows you how to install a Resource Extension Pack (MyVMRole.resextpkg) with a library shared named MSSCVMMLibrary,
+For gallery resources that use Resource Extensions, you need to import the extensions into the VMM library using PowerShell. This example shows how to install a Resource Extension Pack (MyVMRole.resextpkg) with a library shared named MSSCVMMLibrary,
 
 1. At the command line, run the following:
 
@@ -68,7 +64,7 @@ To create a template, you need a virtual hard disk file that contains an operati
 
 ### Specify the operating system
 
-1. When you create the hard disk, specify the required operating system in the Operating System property. For data disks, this value must be set to None.
+1. When you create the hard disk, specify the required operating system in the Operating System property. For data disks, this value must be set to **None**.
 2. Set the property using the VMM console or PowerShell. The following example shows how to set the virtual hard disk MyVirtualHardDisk to run Windows Server 2012 Datacenter. Your cmdlet with replace the disk name with one of the values in the Readme file.
 
 ```
@@ -130,7 +126,7 @@ The gallery item should now be listed on the **Gallery** tab.
 2. Select the arrow next to the gallery item name. Verify the details of the gallery item. Navigate back, and select **Make Public**.
 3. Select the **Plans** workspace, and select the plan to which you want to add the gallery item.
 4. Select the **Virtual Machine Clouds** service. Scroll to the **Gallery** section, and select **Add Gallery Items**.
-5 Select the gallery items that you imported, and select **Save**
+5. Select the gallery items that you imported, and select **Save**
 
 The Virtual Machine Role is now available to the tenant as part of the selected plan.
 

@@ -1,24 +1,19 @@
 ---
 title: Orchestrator Integration Toolkit Integration Pack Wizard
 description: This article provides details about the Orchestrator Integration Pack Wizard.
-author: jyothisuri
-manager: evansma
-ms.date: 02/02/2018
-ms.prod: system-center
-ms.technology: orchestrator
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/03/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-ms.author: jsuri
+ms.custom: engagement-fy24
 ---
 
 # Integration Pack Wizard
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Integration Pack Wizard (IP Wizard) allows you to create a new Integration Pack from an existing _Integration assembly_. _Integration assemblies_ can be authored using the Command-Line Activity Wizard (`CLIActivityWizard`) or using the Orchestrator SDK. The IP Wizard (`IPWizard`) packages the assemblies, dependent files, and required metadata into a `.OIP` file that can be deployed via the Orchestrator Deployment Manager.
 You can create professional-looking Integration Packs with full branding and custom icons, or simply package up command-line activities so that they can be more easily deployed using the IP Wizard.

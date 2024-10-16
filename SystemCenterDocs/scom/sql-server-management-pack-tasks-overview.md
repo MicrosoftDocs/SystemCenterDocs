@@ -3,12 +3,12 @@ ms.assetid: 9550f943-bcc2-45dc-a866-9eae7b3b8b0c
 title: Tasks in Management Pack for SQL Server
 description: This section explains tasks in the Management Pack for SQL Server
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 06/13/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Tasks overview

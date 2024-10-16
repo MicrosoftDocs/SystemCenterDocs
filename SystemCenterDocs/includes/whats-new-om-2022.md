@@ -2,13 +2,13 @@
 ms.assetid:
 title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager 2022
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/24/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/16/2024
 ms.custom: intro-whats-new
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: include
 ---
 
@@ -103,7 +103,7 @@ Operations Manager 2022 also includes the following updates:
     - Microsoft Edge version 88 and later.
     - Google Chrome version 88 and later.
 - Supports Ubuntu 20, Oracle Linux 8, Debian 10, and Debian 11.
-- Removed support for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, and SLES 12 PPC.
+- Removed support for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), Debian 8, SLES 11, and SLES 12 PPC.
 
 ### Discover Azure Migrate from Operations Manager console
 

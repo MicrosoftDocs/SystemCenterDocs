@@ -1,28 +1,24 @@
 ---
 title: Delete VM Disk
 description: The Delete VM Disk activity deletes the specified data or operating system disk from your image repository.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 06/05/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 02ec5f7f-abad-4144-b78c-f32dfc7312af
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete VM Disk
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Delete VM Disk** activity deletes the specified data or operating system disk from your image repository. It is part of the **Azure Virtual Machine Disks** category activity.
 

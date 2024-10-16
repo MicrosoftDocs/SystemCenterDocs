@@ -1,28 +1,24 @@
 ---
 title: Query ConfigMgr activity
 description: Describes the configurable properties for the Query ConfigMgr activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 11/09/2023
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e6ea8b08-b182-45dd-a680-2b06bc62ce8e
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 
 # Query ConfigMgr activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Query ConfigMgr activity allows users to run an ad-hoc WQL query
 against Configuration Manager, returning the query results to published
@@ -75,7 +71,7 @@ data for further action.
 >   -   Site Systems Flagged with Warning or Critical Status
 
 The activity publishes all the data from the required and optional
-properties into published data. 
+properties into published data.
 
 The following tables list the required
 and optional properties and published data for this activity.

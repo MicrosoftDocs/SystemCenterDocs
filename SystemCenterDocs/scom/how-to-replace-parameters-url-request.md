@@ -1,24 +1,18 @@
 ---
 ms.assetid: 79cdd322-909b-4159-a189-d9e3a68ad681
-title: How to replace parameters in a URL request in Operations Manager management pack
+title: Replace parameters in a URL request in Operations Manager management pack
 description: This article provides an overview about how to replace parameters in a URL request
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/19/2023
-ms.custom: engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to replace parameters in a URL request
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
+# Replace parameters in a URL request
 
 When you capture a web application by using the Web Application Editor, it can include unique information in one or more requests that changes each time you connect to the application. This information is typically included in the response to a request and then used by one or more subsequent requests.
 
@@ -45,6 +39,7 @@ http://www.myapp.com/results.aspx?sessionid=32793279321721
 http://www.myapp.com/submit.aspx?sessionid=32793279321721
 
 ```
+
 In this request sequence, the session ID is created by the first request and used in the second, third, and fourth requests. When you run this monitor, it fails because the first request generates a new session ID that couldn't match the session ID that was used when the session was captured.
 
 To configure this request sequence with parameter replacement, you've to create an extraction rule on the first request to create a context parameter for the session ID. The extraction rule inspects the body of the request to locate the value for the sessionid variable. You would then modify the subsequent requests to use this parameter instead of the value for the session ID.
@@ -62,7 +57,8 @@ http://www.myapp.com/results.aspx?sessionid=$ParametersContext/sessionID$
 http://www.myapp.com/submit.aspx?sessionid=$ParametersContext/sessionID$
 
 ```
-## Creating an extraction rule
+
+## Create an extraction rule
 
 Context parameters are collected by an _extraction rule_, and each extraction rule collects a single context parameter. You create an extraction rule in the  **Properties**  dialog of the request that initially generates the required data. To identify the value to extract, you must view the body of the response returned from the particular request. You can either view the source of the page returned in the browser or use a tool that lets you inspect the details of the HTTP responses. You can't view the text by using the Web Application Editor.
 
@@ -77,7 +73,7 @@ When you've identified the request that contains the information you have to ext
 | Ignore case during search for matching text | Specifies whether to ignore the case of the characters being searched by the  **Starts with**  and  **Ends with**  boxes. |
 | Perform URI encoding of extracted strings | Specifies whether to encode the extracted string after it's collected. |
 
-## Inserting a parameter into a request
+## Insert a parameter into a request
 
 You use a parameter in a request by replacing the explicit value with a variable representing the parameter. The format of the variable is $ParametersContext/\<ContextParameterName>$. When the request is run, the variable is replaced with the data extracted by the parameter.
 
@@ -100,7 +96,7 @@ To determine where in the response body the search term appears, you can view th
 
 You could just pull out the term itself, but it's more straightforward to include the entire string in the parameter. This string is preceded by the characters  **\<h3>Popular now\</h3>\<ul>\<li>\<a href=>**  and ends with the next occurrence of  **"**. Those are the values that you'll use when you define the parameter extraction.
 
-### To record a sample web application
+### Record a sample web application
 
 1. Use the procedure in [How to Capture Web Application Recording](/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to record a web application.
 2. While recording, connect to [**https://www.bing.com**](https://www.bing.com/).
@@ -111,7 +107,7 @@ You could just pull out the term itself, but it's more straightforward to includ
 
 ![Screenshot of Bing Web Application Recorded.](./media/bing-web-application-recorded.png)
 
-### To create an extraction rule
+### Create an extraction rule
 
 1. Select the first request, and then select  **Properties**  in the  **Actions**  pane.
 2. Select the  **Extraction Rules**  tab.
@@ -125,7 +121,7 @@ You could just pull out the term itself, but it's more straightforward to includ
 7. Select  **OK**  to save and close the extraction rule.
 8. Select **OK**  to save and close the request.
 
-### To insert a parameter into a request
+### Insert a parameter into a request
 
 1. Select the second request, and then select  **Properties**  in the  **Actions**  pane.
 2. On the  **General**  tab, select  **Insert parameter**.

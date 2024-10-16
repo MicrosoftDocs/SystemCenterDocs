@@ -1,25 +1,19 @@
 ---
 title: Configure change and activity management
 description: Provides an overview and explains how to configure change and activity management features in Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 03/29/2023
-ms.technology: service-manager
+ms.date: 07/22/2024
+ms.subservice: service-manager
 ms.assetid: 399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Configure change and activity management in Service Manager
-
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 As part of your initial configuration of Service Manager, you've to configure settings and workflows for change and activity management. Create a change request template that you can use later when new change requests are submitted.
 

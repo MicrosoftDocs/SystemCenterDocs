@@ -1,22 +1,19 @@
 ---
 title: Port assignments for System Center - Service Manager
 description: Learn about the port assignments used by System Center - Service Manager.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 01/23/2018
-ms.technology: service-manager
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.subservice: service-manager
 ms.topic: article
+ms.custom: engagement-fy24
 ---
 
 # Port assignments for System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 As part of your security infrastructure, you may want to keep track of port numbers that are used throughout your System Center - Service Manager environment. And while these port numbers aren't configurable, you can review the following table that lists port numbers that are used between the parts of Service Manager. You will want to ensure that these firewall ports are opened on computers that host Service Manager.  
 

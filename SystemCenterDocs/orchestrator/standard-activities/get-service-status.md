@@ -3,27 +3,21 @@ title: Get Service Status
 description: This article describes about the Get Service Status activity and its use to check the status of a service on any computer.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 212191ed-8156-45f1-bb09-0ccda3823d16
 caps.latest.revision: 14
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Get Service Status
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Get Service Status activity will check the status of a service on any computer. Use the Get Service Status to check the status of service before performing another action. For example, if you have an SQL Server backup runbook that requires that SQL Server is stopped before performing the backup, you can check the status and then stop the service using the [Start/Stop Service](start-stop-service.md) activity.  
 

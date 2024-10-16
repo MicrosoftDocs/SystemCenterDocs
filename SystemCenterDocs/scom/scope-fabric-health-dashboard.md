@@ -2,29 +2,23 @@
 ms.assetid: e0c24f1f-9457-49f6-8f65-069aa45dbbd8
 title: Scope the Fabric Health Dashboard to a Specific Cloud and Investigating Details in System Center Operations Manager
 description: This article provides an overview of scoping the Fabric Health Dashboard to a Specific Cloud and Investigating Details
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/30/2020
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Scoping the Fabric Health Dashboard to a specific cloud
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
+# Scope the Fabric Health Dashboard to a specific cloud
 
 Using the Fabric Health Dashboard, you can see the overall cloud health and the health of its underlying fabric, you can also use the Fabric Health Dashboard to see the fabric health of any cloud you select. When you scope the dashboard to a particular cloud in the **Cloud State** view, the Fabric Health Dashboard displays a grouping of all of the components that are relevant for that cloud only. When you see a health issue with any component, you can then drill down to investigate a single component in terms of that cloud only. In this way, a fabric administrator can do root cause analysis by digging deeper into an issue, which can lead to other dashboard views, such as the network monitoring dashboard.
 
 ## Monitor the health of a cloud
 
-### To scope to a particular cloud
+### Scope to a particular cloud
 
 1. In the Operations Manager console, select **Monitoring**, expand **Cloud Health Dashboard**, select **Cloud Health**, and you see the private clouds you're monitoring in the **Cloud State** pane.
 

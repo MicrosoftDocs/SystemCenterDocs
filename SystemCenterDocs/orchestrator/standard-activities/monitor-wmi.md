@@ -3,27 +3,20 @@ title: Monitor WMI
 description: This article describes the functionality of Monitor WMI activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d825cef7-e68a-4387-829e-c3602bed2b6a
 caps.latest.revision: 19
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Monitor WMI
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor WMI activity invokes a runbook when a WMI event is received as a result of the WMI event query that you specify. You can check for changes in devices that are attached to the server and invoke runbooks that take corrective action when errors occur.  
 

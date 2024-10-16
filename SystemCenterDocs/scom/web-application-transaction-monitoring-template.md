@@ -1,24 +1,20 @@
 ---
 ms.assetid: 5c187754-29e7-41a8-ae85-cb2d1514b0a4
 title: Web Application Transaction Monitoring template in Operations Manager management pack
-description: This article provides an overview of web application transaction monitoring template
+description: This article provides an overview of web application transaction monitoring template.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 02/09/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Web Application Transaction Monitoring template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The _Web Application Transaction Monitoring_ template lets you test a website or web-based application by sending requests over HTTP, validating their response, and measuring their performance. This can be a simple test to determine if the website is responding, or it can be a complex set of requests to simulate a user who is performing such actions as signing in to the site and browsing through a set of pages.
 

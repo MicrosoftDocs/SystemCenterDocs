@@ -3,12 +3,12 @@ ms.assetid: bb3791a0-51ca-4d4e-acab-6913cc0a50bb
 title: Introduction to Management Pack for SQL Server Dashboards
 description: This article explains the Management Pack for SQL Server Dashboards functionality
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Introduction to Management Pack for SQL Server Dashboards
@@ -30,8 +30,6 @@ This management pack is designed for the following versions of System Center Ope
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
 
 - System Center Operations Manager 2016
-- System Center Operations Manager 1801
-- System Center Operations Manager 1807
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
 

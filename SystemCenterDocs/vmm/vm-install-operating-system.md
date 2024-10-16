@@ -1,26 +1,22 @@
 ---
 title: Install an operating system on a VM in the System Center VMM fabric
 description: This article describes how to install an operating system on a VM in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/03/2018
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/30/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: intro-installation, UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: intro-installation, UpdateFrequency2, engagement-fy24
 ---
 
 
 # Install an operating system on a VM in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-This article describes how to install an operating system on a VM in the System Center - Virtual Machine Manager (VMM) fabric.
+This article describes how to install an operating system on a VM in the System Center Virtual Machine Manager (VMM) fabric.
 
 After you've deployed a VM in the VMM fabric, you can install an operating system on it. Review the [supported operating systems](./system-requirements.md#vms-in-the-vmm-fabric).
 
@@ -34,7 +30,7 @@ You can install an operating system from a DVD, from an ISO image file in the VM
 
 1. In **Virtual Machines**, right-click the VM > **Properties**.
 2. In **Hardware Configuration**, select **DVD** on the **New** toolbar to add a virtual DVD drive to the IDE bus.
-3. Select **Physical CD/DVD drive**, and select the drive on the host.
+3. Select **Physical CD/DVD drive** and select the drive on the host.
 
 ## Prepare to install from an ISO in the VMM library
 
@@ -49,7 +45,7 @@ By default, when you create a VM, an ISO attached as a virtual DVD drive is copi
 
 1. Specify an Active Directory domain account as the VMM service account on the VMM server.
 2. Grant the VMM service account read access on the VMM library share that stores the ISO image files. Grant the Hyper-V host machine account read access for the shared ISO location.
-3. Configure constrained delegation for each Hyper-V host. This ensures that each host presents delegated credentials for CIFS/SMB to the VMM server on which the library stores the ISO. To do this, in Active Directory, locate the host machine account and open the account properties. In the **Delegation** tab, select **Select this computer for delegation to specified services only** > **Use any authentication protocol** > **Add**. Add the VMM library server that contains the ISO you want to share. In **Add Services**, add **cifs**
+3. Configure constrained delegation for each Hyper-V host. This ensures that each host presents delegated credentials for CIFS/SMB to the VMM server on which the library stores the ISO. To do this, in Active Directory, locate the host machine account and open the account properties. In the **Delegation** tab, select **Select this computer for delegation to specified services only** > **Use any authentication protocol** > **Add**. Add the VMM library server that contains the ISO you want to share. In **Add Services**, add **cifs**.
 4. Now configure a virtual machine to share an ISO image.<br>
      a. In the VM properties > **Hardware Configuration**, in **Capture** mode > select **Existing image file** and browse to select the ISO image file in the library.<br>
      b. Select **Share image file instead of copying it**.
@@ -72,11 +68,11 @@ If the network adapter on the host computer supports network service boots, you 
 ## Install the operating system on the virtual machine
 
 1. Right-click the VM > **Connect to virtual machine**. Select **Yes** to start the VM.
-2. On the Remote Control menu, select **Special Keys** and then select **Send Ctrl+Alt+Delete**.
+2. On the **Remote Control** menu, select **Special Keys** and then select **Send Ctrl+Alt+Delete**.
 3. Install the operating system on the VM. The boot disk partition must be the Windows partition.
 4. After completing the installation, end your session with the VM and stop the VM in VMM.
 
 
 ## Next steps
 
-[Manage](./vm-settings.md) VM settings.
+[Manage the VM settings](./vm-settings.md).

@@ -2,13 +2,13 @@
 ms.assetid: 0683ab30-6f03-4ffc-a50d-8d91d61768fe
 title: include file
 description: include file to detail the new features in virtual machine manager 1801.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date:  04/25/2018
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date:  06/06/2024
 ms.topic:  include
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+ms.service:  system-center
+ms.subservice:  virtual-machine-manager
 ---
 
 ## What's new in System Center 1801 - Virtual Machine Manager
@@ -20,7 +20,7 @@ See the following sections for detailed information about the new features suppo
 ### Nested virtualization
 VMM  supports Nested Virtualization feature that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third-party virtualization management products with Microsoft hypervisor.
+You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use non-Microsoft virtualization management products with Microsoft hypervisor.
 
 You can enable or disable the nested virtualization feature using SCVMM 1801. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement. [Learn more](../vmm/vm-nested-virtualization.md).
 
@@ -106,4 +106,4 @@ The primary HGS URLs will always be used in favor of the secondary. If the prima
 
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and global Azure regions.
 
-VMM 1801 supports management of Azure Resource Manager based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
+VMM 1801 supports management of Azure Resource Manager based VMs, Microsoft Entra ID-based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).

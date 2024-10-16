@@ -1,44 +1,40 @@
 ---
 title: Build a simple monitoring dashboard using the Visio Web Part
 description: This article provides a walk-through on how to create a basic monitoring dashboard in SharePoint linking to your Visio drawing.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 09/26/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/19/2024
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 21d8f3a5-2ac8-4776-b063-f6895a21cd5a
 ---
 
 # Build a simple monitoring dashboard using the Visio Web Part
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 SharePoint Enterprise edition includes a Web part for Visio Services called the Visio Web Access Web Part. You can add this Web part to any SharePoint Web part page to build a dashboard that uses published Visio diagrams to provide visualizations.  
 
-## To build a monitoring dashboard for your Visio diagram  
+## Build a monitoring dashboard for your Visio diagram  
 
-1.  In Internet Explorer, navigate to your SharePoint site.  
+1. In Internet Explorer, navigate to your SharePoint site.  
 
-2.  Navigate to the Shared Documents document library.  
+2. Navigate to the Shared Documents document library.  
 
-3.  Select **Site Actions** (above the ribbon), and select **More Options**.  
+3. Select **Site Actions** (above the ribbon), and select **More Options**.  
 
-4.  Select the Web Part page and select **Create**.  
+4. Select the Web Part page and select **Create**.  
 
-5.  Enter a name for the new page.  
+5. Enter a name for the new page.  
 
-6.  Under **Layout**, select **Header, Right Column, Body** from the list of available layout templates.  
+6. Under **Layout**, select **Header, Right Column, Body** from the list of available layout templates.  
 
-7.  Select **Create** to create the new Web page.  
+7. Select **Create** to create the new Web page.  
 
-8.  Select the Body zone. You should see a new **Insert** tab on the ribbon.  
+8. Select the Body zone. You should see a new **Insert** tab on the ribbon.  
 
 9. On the **Insert** tab, select **Web Part**.  
 

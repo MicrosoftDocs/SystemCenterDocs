@@ -2,25 +2,21 @@
 ms.assetid: 2ebb4cfd-fd5e-4add-b75c-dcb932dbaa64
 title: Back up and restore VMM
 description: This article describes how to back up and restore the VMM database, and hosts and virtual machines in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 05/12/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/02/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23
 ---
 
 # Back up and restore VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-This article describes the backup and recovery process in a System Center - Virtual Machine Manager (VMM) environment and provides some recommendations.
+This article describes the backup and recovery process in a System Center Virtual Machine Manager (VMM) environment and provides some recommendations.
 
 ## Before you start
 
@@ -48,7 +44,7 @@ The VMM database can be stored on the VMM management server or on a separate ser
 In addition to backing up the database, we recommend that you create a system state backup of the VMM management server so that you can re-create the server with the same security identifier (SID) in a catastrophic data loss. The SID is an integral part of how VMM is authorized on virtual machine hosts.
 
 > [!IMPORTANT]
-> - There are several ways to recover the VMM database file that you create through either of the following backup procedures. One way, which requires the VMM management server to be functioning, is to use the **SCVMMRecover.exe** tool, as described in [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)) (although **SCVMMRecover.exe** is not a cmdlet). Another way, which doesn't require the VMM management server to be functioning, is to restore by using SQL Server tools for restoring and attaching a database file.
+> - There are several ways to recover the VMM database file that you create through either of the following backup procedures. One way, which requires the VMM management server to be functioning, is to use the **SCVMMRecover.exe** tool, as described in [Backup-SCVMMServer](/previous-versions/system-center/powershell/system-center-2012-r2/jj647705(v=sc.20)) (although **SCVMMRecover.exe** is not a cmdlet). Another way, which doesn't require the VMM management server to be functioning, is to restore using SQL Server tools for restoring and attaching a database file.
 > - To use the following procedures, you must be a member of the Administrator user role.
 
 You can back up the VMM database in the following ways:
@@ -65,7 +61,7 @@ Follow these steps to back up the VMM database by using the VMM console:
 
 2.  In the **Virtual Machine Manager Backup** dialog, specify the location for the backup file. Select a folder that isn't a root directory and that SQL Server can access.
 
-    You can check the status of the backup in the Jobs workspace.
+    You can check the status of the backup in the **Jobs** workspace.
 
     For information about how to recover the backup, see the **Important** note before this procedure.
 

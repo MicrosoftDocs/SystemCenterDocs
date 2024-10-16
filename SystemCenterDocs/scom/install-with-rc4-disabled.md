@@ -2,23 +2,19 @@
 ms.assetid: 0497e546-7da7-4342-a427-4a9488ae6c7a
 title: Install Operations Manager with RC4 disabled
 description: This article describes Operations Manager installation with RC4 disabled
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 06/18/2021
 ms.custom: na, intro-installation, UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to disable RC4 while installing Operations Manager?
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article describes how to disable RC4 while installing Operations Manager.
 

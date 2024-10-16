@@ -1,23 +1,19 @@
 ---
 title: Manage tenants and user roles in SPF
 description: Provides information setting up SPF tenants, and creating self-service tenant roles in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 #  Manage tenants and user roles in SPF
 
-::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
 
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-::: moniker-end
 
 System Center - Service Provider Foundation (SPF) doesn't create user roles or define their scope. To set up tenants, you need a certificate public key that's used to validate claims made on behalf of a tenant.
 

@@ -1,23 +1,19 @@
 ---
 description: Provides an overview of how you can purge the Service Management Automation database.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 08/07/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 04/03/2024
 title: Purge the Service Management Automation database
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: engagement-fy24
 ---
 
 # Purge the Service Management Automation database
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 In Service Management Automation (SMA), database purging is automatic, but you can adjust it to your needs.
 

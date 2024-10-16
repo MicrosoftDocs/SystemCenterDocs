@@ -2,25 +2,21 @@
 ms.assetid: b6c7614a-e5af-42ae-b88d-9810b42a35f6
 title: Plan VMM installation
 description: This article provides planning information for setting up VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/16/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5
 ---
 
 # Plan VMM installation
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
+This article helps you to plan all the elements required for a successful System Center Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
 
 For more information on the supported versions of hardware and software, see the system requirements article for the version you install.
 
@@ -37,17 +33,47 @@ Verify the following [system requirements](system-requirements.md):
 
 ## Additional deployment requirements
 
+::: moniker range="sc-vmm-2016"
 **Component** | **Details**
 --- | ---
-**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
+**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](/windows-hardware/get-started/adk-install). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
-**Guest operating system** | Windows operating systems [supported by Hyper-V](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows).<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
+**Guest operating system** | Windows operating systems [supported by Hyper-V](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows).<br/><br/> Linux (RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
 **PowerShell** | [Supported versions](system-requirements.md)
 **.NET** | [Supported versions](system-requirements.md)
-**Host agent** | VMM 2016/1801/1807/2019<br/><br/> Needed for hosts managed in VMM.
-**Monitoring** | System Center Operations Manager 2016/1801. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
+**Host agent** | VMM 2016/2019<br/><br/> Needed for hosts managed in VMM.
+**Monitoring** | System Center Operations Manager 2016. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
 **VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+**Component** | **Details**
+--- | ---
+**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version.
+**Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](/windows-hardware/get-started/adk-install). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.<br/><br/>If you run into ADK file path issue while installing VMM, copy the files from the *amd64* folder in ADK root folder to the ADK root folder itself. The default ADK folder path is *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*, but it can be different based on your choice of folder path during ADK installation.
+**Guest operating system** | Windows operating systems [supported by Hyper-V](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows).<br/><br/> Linux (RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
+**PowerShell** | [Supported versions](system-requirements.md)
+**.NET** | [Supported versions](system-requirements.md)
+**Host agent** | VMM 2016/2019<br/><br/> Needed for hosts managed in VMM.
+**Monitoring** | System Center Operations Manager 2016. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
+**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
+**Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+**Component** | **Details**
+--- | ---
+**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version.
+**Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](/windows-hardware/get-started/adk-install). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.<br/><br/>If you run into ADK file path issue while installing VMM, copy the files from the *amd64* folder in ADK root folder to the ADK root folder itself. The default ADK folder path is *C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM*, but it can be different based on your choice of folder path during ADK installation.
+**Guest operating system** | Windows operating systems [supported by Hyper-V](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows).<br/><br/> Linux (RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
+**PowerShell** | [Supported versions](system-requirements.md)
+**.NET** | [Supported versions](system-requirements.md)
+**Host agent** | VMM 2016/2019<br/><br/> Needed for hosts managed in VMM.
+**Monitoring** | System Center Operations Manager 2016. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
+**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1 and 2019 UR5)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
+**Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
+::: moniker-end
 
 ### SPN
 
@@ -66,7 +92,7 @@ If the VMM user installing VMM, or running VMM setup, doesn't have permissions t
 If you can't do this, you can also register the SPN during VMM installation. A domain administrator can provide the SPN write permissions to VMM service user or setup user. 
 
 > [!NOTE]
-> This approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName, with no restrictions. 
+> This approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName with no restrictions.
 
 Hence, the delegated user should be highly trusted, and the account credentials must be kept secure. To do this:
 
@@ -78,7 +104,7 @@ When you install VMM with this user account, SPN will be registered.
 
 ## VMM management server
 
-- You can't run the VMM management server on Nano server (applicable to releases prior to 2019).
+- You can't run the VMM management server on Nano server (applicable to Windows Server releases prior to 2019).
 - The management server computer name can't exceed 15 characters.
 - Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V.
 - You can install the VMM management server on a VM. If you do, and you use the Dynamic Memory feature of Hyper-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes (MB).
@@ -88,7 +114,7 @@ When you install VMM with this user account, SPN will be registered.
      -  Add one or more remote computers as library servers, and don't use the default library share on the VMM management server.
      -  Don't run the SQL Server instance on the VMM management server.
 ::: moniker-end
-::: moniker range="<= sc-vmm-1807"
+::: moniker range="sc-vmm-2016"
 - If you want to manage more than 150 hosts, we recommend that you use a dedicated computer for the VMM management server and do the following:
      -  Add one or more remote computers as library servers, and don't use the default library share on the VMM management server.
      -  Don't run the SQL Server instance on the VMM management server.
@@ -101,7 +127,7 @@ When you install VMM with this user account, SPN will be registered.
 - The SQL Server’s computer name can't exceed 15 characters in length.
 - If the VMM management server and the SQL Server computer aren't members of the same Active Directory domain, then a two-way trust must exist between the two domains.
 - When you install SQL Server, select the **Database Engine Services** and **Management Tools - Complete** features.
-- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Ensure that no jobs are running when you perform the upgrade, or jobs may fail and may need to be restarted manually.
+- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Ensure that no jobs are running when you perform the upgrade, or jobs can fail and need to be restarted manually.
 - For the VMM database, for better performance, don't store database files on the disk that is used for the operating system.
 - If you're using Software Defined Networking (SDN) in VMM, then all networking information is stored in the VMM database. Because of this, you might want to consider high availability for the VMM database, using the following guidelines:
   - Failover clustering is supported and is the recommended configuration for availability within a single geographical area or datacenter. [Read more](/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server).
@@ -111,12 +137,6 @@ When you install VMM with this user account, SPN will be registered.
 - The SQL Server service must use an account that has permission to access Active Directory Domain Services (AD DS). For example, you can specify the Local System Account or a domain user account. Don't specify a local user account.
 - You don't need to configure collation. During deployment, Setup automatically configures CI collation according to the language of the server operating system.
 
-::: moniker range="sc-vmm-1801"
-
-> [!NOTE]
-> Target database collate and the VMM server collate must be the same if the database is part of SQL Always On (AO) group. To check the current culture on your VMM machine, use the [Get-Culture](/previous-versions/windows/it-pro/windows-powershell-1.0/ee176844(v=technet.10)) PowerShell command. Learn more about [VMM server collate mappings](vmm-collate-mappings.md).
-
-::: moniker-end
 - Dynamic port is supported.
 - If you want to create the VMM database prior to VMM installation:
   - Ensure that you have permissions or create a SQL database, or ask the SQL Server admin to do it.
@@ -135,12 +155,23 @@ When you install VMM with this user account, SPN will be registered.
 
 ## Account and domain requirements
 
+::: moniker range=">sc-vmm-2016"
 When you install VMM, you must configure the VMM service to use any one of the following accounts:
 
 - The Local System account (can't be used for a highly available VMM deployment) or
 - A domain user account or 
 - A Group Managed Service Account (gMSA)
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2016"
+
+When you install VMM, you must configure the VMM service to use any one of the following accounts:
+
+- The Local System account (can't be used for a highly available VMM deployment) or
+- A domain user account
+
+::: moniker-end
 Ensure the following before you prepare an account:
 
 ::: moniker range=">=sc-vmm-2019"

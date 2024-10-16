@@ -1,27 +1,21 @@
 ---
 title: Designing a Runbook
 description: Describes how to design a new runbook for System Center 2016 - Orchestrator.
-ms.custom: UpdateFrequency3
-ms.date: 04/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/07/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a0af32cb-3faf-4f13-b9eb-eadc10effe1b
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Designing a Runbook
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 When you plan a new runbook, you should start with a defined process that you want to automate. This process determines your choice of runbook activities. Specifically, determine the following:  
 

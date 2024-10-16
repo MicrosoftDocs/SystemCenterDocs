@@ -1,23 +1,19 @@
 ---
 title: Optimize performance of .NET activities in System Center - Orchestrator
 description: Describes how to configure runbook servers in System Center - Orchestrator, to optimize performance of .NET activities.
-ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 04/03/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.custom: UpdateFrequency3
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Optimize performance of .NET activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 ## Improve assembly load time
 

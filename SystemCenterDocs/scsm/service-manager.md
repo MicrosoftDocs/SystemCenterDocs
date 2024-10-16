@@ -1,23 +1,19 @@
 ---
 title: About System Center - Service Manager
 description: This article provides an overview of System Center - Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 ms.date: 01/31/2023
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # About System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 System Center - Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
 

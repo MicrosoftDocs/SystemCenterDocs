@@ -2,26 +2,22 @@
 ms.assetid: ce968ce3-58d3-4eae-9b70-54eaac78a664
 title: Manage the VMM library
 description: This article describes management tasks for the VMM library
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/27/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/02/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Manage the VMM library
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 
-Read this article to learn how to manage the System Center - Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
+
+Read this article to learn how to manage the System Center Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
 
 ## Refresh the library
 
@@ -94,7 +90,7 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 
 ## Manage replicated library shares
 
-VMM supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR to replicate shares and manage the shares through VMM.
+VMM supports the management of library servers, which are replicated. You can use any replication technologies, such as DFSR, to replicate shares and manage the shares through VMM.
 
 For effective management of replicated shares using VMM, disable the usage of *alternate data stream* for both the source and destination library shares. You can do this while adding new library shares or by editing properties of the existing library shares. *Alternate data stream* is enabled by default. Disable this option only when using replication across library shares.
 

@@ -1,22 +1,17 @@
 ---
 title: Control runbook activities
 description: This article describes how to manipulate data and control the sequence of operations in an Orchestrator runbook.
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/11/2023
-manager: mkluck
 ms.custom: engagement-fy23
 ---
 # Control runbook activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as **smart links** because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This article describes how to control sequencing and manipulate data within your runbook.
 

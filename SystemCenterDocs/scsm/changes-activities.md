@@ -1,15 +1,15 @@
 ---
 title: Manage changes and activities
 description: Provides an example scenario and details about how to manage changes and activities in Service Manager.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/06/2019
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6228f358-1256-475f-8d63-9bdf62070ecd
@@ -17,11 +17,7 @@ ms.assetid: 6228f358-1256-475f-8d63-9bdf62070ecd
 
 # Manage changes and activities in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Information Technology (IT) departments must manage changes to their IT environment and the risk associated with such changes. The change management features in Service Manager help you manage change by providing repeatable, predictable, and measured processes to implement change.
 

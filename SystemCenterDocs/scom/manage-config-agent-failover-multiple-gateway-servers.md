@@ -1,23 +1,19 @@
 ---
 title: How to Configure Agent Failover to Multiple Gateway Servers
 description: This article describes how to use PowerShell to configure failover between multiple Gateway servers.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/17/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 4f6532e7-6bbd-441e-8a3c-9dec577c8724
 ---
 # Configure Agent Failover to Multiple Gateway Servers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 If you've deployed multiple gateway servers in a domain that doesn't have a trust relationship established with the domain that the rest of the management group is in, you can configure agents to utilize those gateway servers as necessary. To do this, you must use the Operations Manager Shell to configure an agent to fail over to multiple gateway servers. The commands can be run from any command shell in the management group.  
 

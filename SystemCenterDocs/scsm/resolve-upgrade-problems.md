@@ -1,23 +1,17 @@
 ---
 title: Troubleshoot upgrade issues in System Center - Service Manager
 description: This article helps you resolve System Center - Service Manager upgrade problems and work around them.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 04/28/2023
-ms.technology: service-manager
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/28/2024
+ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Troubleshoot upgrade issues
-
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article helps you troubleshoot upgrade issues in System Center – Service Manager.
 
@@ -109,29 +103,29 @@ For more information about the cause of this problem, see [Knowledgebase Article
 
 There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to Service Manager fails as a result of Configuration service Startup timing out. You can:  
 
--   Disable signature verification on the computer that is running Setup.  
+- Disable signature verification on the computer that is running Setup.  
 
--   Increase the service time\-out setting on the computer that is running Setup.  
+- Increase the service time\-out setting on the computer that is running Setup.  
 
 ### Disable signature verification
 
 Follow these steps to disable signature verification:
 
-1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
+1. On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
-2.  In the `<runtime> </runtime>` section, add `<generatePublisherEvidence enabled="false">`.  
+2. In the `<runtime> </runtime>` section, add `<generatePublisherEvidence enabled="false">`.  
 
-3.  Save the changes to the file.  
+3. Save the changes to the file.  
 
-4.  Attempt the upgrade again.  
+4. Attempt the upgrade again.  
 
 ### Increase the service time-out setting  
 
 Follow these steps to increase the service time-out setting:
 
-1.  On the computer that is running Setup, create the following registry value to increase the service time-out period:  
+1. On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 
-    ```  
+    ```powershell
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control   
     ServicesPipeTimeout  
     DWORD  
@@ -145,6 +139,6 @@ Follow these steps to increase the service time-out setting:
     > [!NOTE]  
     >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For more information about the registry key, see [article 922918](/troubleshoot/windows-server/system-management-components/service-not-start-events-7000-7011-time-out-error) in the Microsoft Knowledge Base.  
 
-2.  Start the computer again.  
+2. Start the computer again.  
 
-3.  Attempt the upgrade again.
+3. Attempt the upgrade again.

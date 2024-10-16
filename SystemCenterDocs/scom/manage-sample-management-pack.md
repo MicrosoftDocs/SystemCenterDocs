@@ -2,22 +2,25 @@
 ms.assetid:
 title: Sample Linux log file management pack
 description: This article describes a sample management pack for creating an alert from a log file on Linux in System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 01/16/2018
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/24/2024
 ms.custom: na
-ms.prod: system-center
-monikerRange: '>=sc-om-1801'
-ms.technology: operations-manager
+ms.service: system-center
+monikerRange: '>=sc-om-2019'
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Sample Linux log file management pack
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker range=">=sc-om-2019"
+
+>[!Note]
+>System Center Operations Manager won't support the fluentD based log file monitoring upon the OMS agent retirement which is scheduled for August 2024.
 
 ::: moniker-end
 

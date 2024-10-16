@@ -1,28 +1,24 @@
 ---
 title: Deploy Program activity
 description: Describes the configurable properties for the Deploy Program activity for Configuration Manager Integration Pack.
-ms.custom: na, intro-deployment, UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy24
+ms.date: 10/10/2023
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 62285d61-2831-46bb-8a6b-b0de2b69476d
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ROBOTS: noindex
 ---
 
 # Deploy Program activity for Configuration Manager Integration Pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Deploy Program activity is used to assign legacy application
 deployments (packages and programs) to a Collection. This activity
@@ -48,28 +44,28 @@ optional properties into published data.
 - Package: The display name or ID of an existing package.
 
     >[!NOTE]
-    >When you use the browse feature to look up a package name, or enter a package name manually or from published data, you must set the **Package Value Type** property to **Name** or the activity will fail.
+    >When you use the browse feature to look up a package name or enter a package name manually or from published data, you must set the **Package Value Type** property to **Name** or the activity will fail.
 
-- Package Value Type: Specifies whether the value in the **Package** property is a name or an application ID. Options are:
+- Package Value Type: Specifies whether the value in the **Package** property is a name or an application ID. The options are:
     -   **ID** (default): the value is a package ID
     -   **Name**: the value is a package name
 
 - Collection: The display name or ID of an existing collection.
     >[!NOTE]
-    >When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
+    >When you use the browse feature to look up a collection name or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 
-- Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. Options are:
+- Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. The options are:
     -   **ID** (default): the value is a collection ID
     -   **Name**: the value is a collection name
 
-- Purpose: The deployment intent or purpose. Options are:
+- Purpose: The deployment intent or purpose. The options are:
     -   **Required** (default): the application is mandatory to be installed or uninstalled
     -   **Available**: the application is made available but not mandatory
 
         >[!NOTE]
         >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
 
-- Rerun behavior: Specifies whether the program will be rerun on the client computer if it has previously been run before the scheduled mandatory time. Options are:
+- Rerun behavior: Specifies whether the program will be rerun on the client computer if it has previously been run before the scheduled mandatory time. The options are:
     -   **Always rerun program** (default): The program will always be rerun on the client when the advertisement is scheduled, even if the program has already been successfully run. This is useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
     -   **Never rerun program**: The program won't be rerun on the client if the program has previously been run on the client, even if the program originally failed or the program files have been changed.
     -   **Rerun if failed previous attempt**: The program will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it hasn't successfully done so.
@@ -83,15 +79,15 @@ optional properties into published data.
     >[!WARNING]
     >If there are no default distribution point groups associated with the collection, and the content isn't already distributed, this property or the **Distribution Point** property must have a value or the activity will fail.
 
-- Enable peer caching: True or False (Default = True) Select this option to reduce load on the network by allowing clients to download content from other clients on the network that have already downloaded and cached the content. This option utilizes Windows BranchCache and can be used on computers running Windows Vista SP2 and later.
+- Enable peer caching: True or False (Default = True) Select this option to reduce the load on the network by allowing clients to download content from other clients on the network that have already downloaded and cached the content. This option utilizes Windows BranchCache and can be used on computers running Windows Vista SP2 and later.
 
 ## Deploy Program optional properties
-- Allow running independently of assignments: True or False (Default = False) Specifies whether or not users may run the program independently, regardless of its assignment status.
+- Allow running independently of assignments: True or False (Default = False) Specifies whether or not users can run the program independently, regardless of its assignment status.
 - Allow Software Install Outside of Maintenance Windows: True or False (Default = False) Allows the application to install even if the installation would occur outside of a maintenance window.
 - Allow System Restart Outside of Maintenance Windows: True or False (Default = False) Allows the advertised program to restart the client even if the restart would occur outside of a maintenance window.
 - Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if content isn't immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
 - Comment: An optional comment associated with the deployment.
-- Fast (LAN) boundary deployment option: Specifies how a program is run when the client is connected within a fast (LAN) network boundary. Options are:
+- Fast (LAN) boundary deployment option: Specifies how a program is run when the client is connected within a fast (LAN) network boundary. The options are:
     -   **Download content and run locally** (default): the client will download the content from the Distribution Point before attempting to run the program.
     -   **Run program from Distribution Point**: The client will run the program from the Distribution Point without downloading it first.
 
@@ -99,7 +95,7 @@ optional properties into published data.
     >[!NOTE]
     >This setting applies only if the **Purpose** is set to **Required**.
 
-- Slow boundary deployment option: Specifies the options available when the client is within a slow or unreliable network boundary. Options are:
+- Slow boundary deployment option: Specifies the options available when the client is within a slow or unreliable network boundary. The options are:
     -   **Do not run program** (default): The program won't be run when a client is connected within a slow or unreliable network boundary.
     -   **Download content and run locally**: The client will download the content from the Distribution Point before attempting to run the program.
 
@@ -122,8 +118,8 @@ optional properties into published data.
     - **None**: Specifies that the operation doesn't occur.
     - **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
     - **Monthly**: Specifies that the operation recurs every N months. If this option is selected, you must specify the day of the month on which the operation will occur.
-    - **Custom interval** (varies depending on the recurrence pattern selected): Specifies the frequency with which the operation will recur. You may set this in terms of minutes, hours, or days.
-  - **Assign immediately after this event**: Enables the selector for event-based assignment. Options are:
+    - **Custom interval** (varies depending on the recurrence pattern selected): Specifies the frequency with which the operation will recur. You can set this in terms of minutes, hours, or days.
+  - **Assign immediately after this event**: Enables the selector for event-based assignment. The options are:
       - **As soon as possible**: Specifies that the program will automatically run as soon as it reaches the client and all the program requirements are met. This value is specified by default.
       - **Logon**: Specifies that the program will automatically run the next time a user signs in to the client.
       - **Logoff**: Specifies that the program will automatically run the next time a user signs out of the client.
@@ -131,15 +127,14 @@ optional properties into published data.
 
 ## Deploy Program published data
 
-The following values are published in addition to the input values
-above:
+The following values are published in addition to the input values above:
 
 |Element|Description|
 |---|---|
 |Connection|Specifies the name of the connection to the Configuration Manager server|
 |Collection ID|Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property)|
 
-## Configuring the Deploy Program activity
+## Configure the Deploy Program activity
 
 1. From the **Activities** pane, drag a **Deploy Program** activity to
    the active runbook.
@@ -164,7 +159,7 @@ above:
 
 4. Configuring the **Schedule** tab:
 
-   The Schedule tab allows you to define when the deployment becomes available or when it expires, and mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
+   The Schedule tab allows you to define when the deployment becomes available or when it expires and the mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
    >[!NOTE]
    >When a deployment is set to **Required**, then a mandatory schedule must be defined for the deployment or the activity will fail.
 

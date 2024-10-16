@@ -2,23 +2,19 @@
 ms.assetid: 102761c5-25f3-4fd4-8e5b-a68ea622e921
 title: How to Create a Management Pack for Overrides
 description: This article describes how to create a writeable management pack to save overrides to in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/04/2020
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to create a management pack for overrides
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center - Operations Manager, in a number of wizards and dialog boxes, you select a destination management pack in which to store the settings. You can select any unsealed management pack file in your management group or create a new one.  
 

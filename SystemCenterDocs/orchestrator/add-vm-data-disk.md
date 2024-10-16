@@ -3,26 +3,20 @@ title: Add VM Data Disk
 description: The Add VM Data Disk activity adds a data disk to a virtual machine.
 ms.custom: engagement-fy23, UpdateFrequency2
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 29ca91cb-1d7f-43b1-a967-23e7cdf2918c
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Add VM Data Disk
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Add VM Data Disk** activity adds a data disk to a virtual machine. It's part of the **Azure Virtual Machine Disks** category activity.
 

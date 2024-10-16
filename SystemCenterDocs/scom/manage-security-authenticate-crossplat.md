@@ -2,23 +2,19 @@
 ms.assetid: e81f5d5c-0780-4a2d-8611-c15b23dc47cf
 title: Accessing UNIX and Linux Computers in Operations Manager
 description: This article highlights accessing UNIX and Linux computers in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Accessing UNIX and Linux computers in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center - Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:  
 

@@ -1,14 +1,14 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 1801.
-manager: mkluck
 ms.topic:  article
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center-threshold
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
 keywords:
 ms.date:  2/8/2018
 title:  Upgrade to DPM 1801
-ms.technology:  system-center-2016
+ms.subservice: data-protection-manager
 ms.assetid:
 ---
 

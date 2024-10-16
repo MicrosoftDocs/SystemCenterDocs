@@ -1,15 +1,15 @@
 ---
 title: Manage service requests
 description: Explains how to manage service requests in Service Manager.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/06/2019
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9a0583e5-0eaa-42d0-a704-2301ca3af342
@@ -17,11 +17,7 @@ ms.assetid: 9a0583e5-0eaa-42d0-a704-2301ca3af342
 
 # Manage service requests in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Service requests are requests for existing, preauthorized services and features that Service Manager can manage as a type of work item. Service requests help you deliver a service request fulfillment solution to align your business and information technology (IT) strategy and ensure that IT services provide business value. Service requests are tightly coupled with the service catalog, and together they help add value to your IT organization by clearly managing service requests. This can help lead to a better understanding of the supply and demand for services and a more efficient and transparent customer service provided by your IT organization.  
 

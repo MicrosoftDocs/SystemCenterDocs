@@ -1,23 +1,19 @@
 ---
 title: Automate and invoke runbooks from SPF
 description: Provides information about integrating System Center SPF and SMA.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Automate and invoke runbooks from SPF
 
-::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
 
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-::: moniker-end
 
 You can use System Center - Service Provider Foundation (SPF) and Service Management Automation (SMA) together to provide automated solutions for your tenants. You can configure events in SPF that the SMA web service uses.
 

@@ -1,24 +1,20 @@
 ---
 title: Publish a Visio diagram to SharePoint Server
 description: This article describes how to publish a Visio diagram created with the add-in to your SharePoint document library.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 02/16/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 4c5bb8ee-725f-4ff2-ba85-21e689bcc1de
 ---
 
 # Publish a Visio diagram to SharePoint Server
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 With the Visio Add-in installed on the client and the data provider installed on the SharePoint server, you can now publish diagrams that you've connected to Operations Manager data to a SharePoint document library to share them with others in your organization.  
 

@@ -1,13 +1,13 @@
 ---
 title: Database sizing and performance
 description: Provides guidance for sizing the System Center - Orchestrator database
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/18/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-ms.author: jsuri
 ms.custom: engagement-fy23
 ---
 
@@ -16,11 +16,7 @@ ms.custom: engagement-fy23
 
 # Database sizing and performance
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Database sizing is the key to understanding the performance of System Center - Orchestrator. The runbook servers, management server, and web components all depend on the Orchestrator database for their operations. Problems with Orchestrator deployments can arise from an incomplete understanding of the types of data in the database and how to manage them.  
 

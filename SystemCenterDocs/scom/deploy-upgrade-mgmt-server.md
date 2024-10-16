@@ -5,20 +5,16 @@ description: This article describes how to upgrade a management server in a dist
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
-ms.custom: UpdateFrequency.5, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 05/15/2024
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to upgrade a management server - upgrading a distributed management group
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 When you upgrade a distributed management group, you start by upgrading each of the management servers in your management group. There are many pre-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-overview.md).
 
@@ -49,7 +45,7 @@ Follow these steps to upgrade a management server:
 5.  On the **Getting Started, Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
     > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807, 2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
     >
 
 6.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.

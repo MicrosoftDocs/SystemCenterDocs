@@ -2,26 +2,22 @@
 ms.assetid:
 title: How to create a dashboard with the Performance widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Performance widget.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/19/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
 monikerRange: '>sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to create a dashboard with the Performance widget in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-::: moniker-end
-
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 Web console with the Performance widget.
+In System Center Operations Manager version 2019 and later, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 Web console with the Performance widget.
 
 ## Add widget to dashboard
 
@@ -81,11 +77,12 @@ With a performance widget, you can perform such actions as:
 - Export the alerts to Excel for further analysis
 - Modify your selection of legend or enable/disable **Visualize objects by performance**, customized to your personal needs
 
-To perform these actions, hover your mouse over the widget and click on the ellipsis **...** on the top right corner of the widget. This will display actions available for the widget.
+To perform these actions, hover your mouse over the widget and select the ellipsis **...** at the top right corner of the widget. This will display actions available for the widget.
 
    * Select **Set vertical axis** to modify the scale values of the y axis and select **Save**.  
    * Select **Export to Excel** to export the alert data to an Excel file.  
    * Select **Personalize** to change your selection of columns to be displayed or to group alerts. Select **Save personalization** when you've completed making your changes.
 
 ## Next steps
+
 To learn how to create a dashboard in the new web console with the State widget, see [How create a dashboard with the State widget in the Web console](manage-create-web-dashboard-state.md).

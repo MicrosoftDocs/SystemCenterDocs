@@ -1,24 +1,19 @@
 ---
 ms.assetid: d12f1b76-178f-4f30-a452-d47eb7fd5e3c
 title: UNIX or Linux process in Operations Manager management pack
-description: This article provides an overview of UNIX or Linux process
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+description: This article provides an overview of UNIX or Linux process.
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # UNIX or Linux process
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The _UNIX/Linux Process Monitoring_ template lets you monitor that a particular process installed on an UNIX or Linux computer runs.
 
@@ -36,7 +31,7 @@ The following table shows the monitoring activity that the  **UNIX/Linux Process
 
 ## Wizard options
 
-When you run the  **UNIX/Linux Process Monitoring**  template, you've to provide values for options in the following tables. Each table represents a single page in the wizard.
+When you run the  **UNIX/Linux Process Monitoring**  template, you have to provide values for options in the following tables. Each table represents a single page in the wizard.
 
 ## General Options
 
@@ -55,9 +50,9 @@ The following options are available on the  **Process Monitoring Details**  page
 | Option | Description |
 | --- | --- |
 | Process name | The name of the process. You can use the  **Select a Process**  button to connect to a monitored UNIX/Linux computer and list current running processes in order to select a process by name. If you wish to target the monitor to only a single computer, you must use the  **Select a Process**  button to select a computer and process. |
-| Computer Group | The name of the group of UNIX or Linux computers for the process to monitor. Select the  **Select a group**  button to select a group that is installed in your management group. If you've used the  **Select a Process**  button to select a running process from a computer, the monitor will be targeted to that computer. After using the  **Select a Process**  button to select a process, you can use the  **Select a Group**  button to target a group with the monitor for the selected process. |
+| Computer Group | The name of the group of UNIX or Linux computers for the process to monitor. Select the  **Select a group**  button to select a group that is installed in your management group. If you have used the  **Select a Process**  button to select a running process from a computer, the monitor will be targeted to that computer. After using the  **Select a Process**  button to select a process, you can use the  **Select a Group**  button to target a group with the monitor for the selected process. |
 | Alert Severity | The severity for the alert: Error, Warning, or Information. |
-| Regular Expression to filter process arguments | An optional Regular expression to use in filtering processes by arguments. If this option is used, processes that match the provided process name will be additionally filtered by their arguments. Only processes with arguments that match the Regular expression will be evaluated by the monitor. This is useful to identify a process for a specific application when other applications on the system may use a process with the same name. The Regular expression is evaluated against a concatenated list of process arguments. |
+| Regular Expression to filter process arguments | An optional Regular expression to use in filtering processes by arguments. If this option is used, processes that match the provided process name will be additionally filtered by their arguments. Only processes with arguments that match the Regular expression will be evaluated by the monitor. This is useful to identify a process for a specific application when other applications on the system might use a process with the same name. The Regular expression is evaluated against a concatenated list of process arguments. |
 | Expression Matching Results | If you use the  **Select a Process**  button to connect to a monitored computer and select a process by name, the list of all processes with the selected process name for that computer are shown in this field. When you provide a  **Regular expression to filter process arguments** the processes listed in this field are filtered so that you can preview the filtering by argument. |
 
 ## Process Template Settings
@@ -66,8 +61,8 @@ The following options are available on the  **Process Template Settings**  page 
 
 | Option | Description |
 | --- | --- |
-| Minimum number of instances | The minimum number of running instances of the monitored process. To alert if no instances of the process are running, check the box  **Generate an alert when the number of process instances is less than the specified value** , and input a value of 1. The number of process instances is calculated after filtering by process name and the optional Regular expression to filter process arguments. If the number of running instances is less than the provided value, an alert will be generated. |
-| Maximum number of instances | The maximum number of running instances of the monitored process. To alert if more than a specific number of instances of the process are running, check the box  **Generate an alert when the number of process instances is greater than the specified value** , and input the maximum threshold value. The number of process instances is calculated after filtering by process name and the optional Regular expression to filter process arguments. If the number of running instances is greater than the provided value, an alert will be generated. |
+| Minimum number of instances | The minimum number of running instances of the monitored process. To alert if no instances of the process are running, check the box  **Generate an alert when the number of process instances is less than the specified value** , and input a value of 1. The number of process instances is calculated after filtering by process name and the optional Regular expression to filter process arguments. If the number of running instances is less than the provided value, an alert is generated. |
+| Maximum number of instances | The maximum number of running instances of the monitored process. To alert if more than a specific number of instances of the process are running, check the box  **Generate an alert when the number of process instances is greater than the specified value** , and input the maximum threshold value. The number of process instances is calculated after filtering by process name and the optional Regular expression to filter process arguments. If the number of running instances is greater than the provided value, an alert is generated. |
 
 ## Additional monitoring
 

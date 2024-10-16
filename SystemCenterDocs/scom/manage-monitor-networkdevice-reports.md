@@ -1,24 +1,20 @@
 ---
 title: Reports for Network Monitoring in Operations Manager
 description: This article summarizes the default reports for network devices included with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/29/2019
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/19/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: acd07be8-9878-4997-86c4-4a932f5e27e2
 ---
 
 # Reports for network monitoring in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center - Operations Manager provides the reports described in the following table. For more information on a report, in the **Reporting** workspace, select the report and view the **Report Details**.
 

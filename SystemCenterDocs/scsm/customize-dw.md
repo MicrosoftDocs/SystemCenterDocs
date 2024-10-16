@@ -1,15 +1,15 @@
 ---
 title: Customize the data warehouse
 description: Provides an overview about customizing the Service Manager data warehouse.
-manager: mkluck
-ms.custom: na, UpdateFrequency2
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 26cc6924-b9c7-4c0c-b20e-0ab85d9c2140
@@ -17,11 +17,7 @@ ms.assetid: 26cc6924-b9c7-4c0c-b20e-0ab85d9c2140
 
 # Overview of customizing the Service Manager data warehouse
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 After the Service Manager data warehouse is deployed and you've viewed its reports, you can customize the information in the reports to better suit your organization. For example, you might want to recreate reports that you've used in the past with other information systems using Service Manager. Or, you might want to customize the reports for your internal business processes for incidents or change management.
 

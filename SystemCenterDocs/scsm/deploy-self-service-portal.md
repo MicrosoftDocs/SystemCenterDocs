@@ -1,23 +1,18 @@
 ---
 title: Deploy the Service Manager Self-Service portal
 description: This article describes prerequisites, installation steps, and configuration options for the Service Manager Self-Service portal.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 07/19/2023
-ms.technology: service-manager
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 05/22/2024
+ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment
 ---
 
 # Deploy the Self-Service portal for Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The Self-Service portal provides web-based access to the features of System Center - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
@@ -41,6 +36,7 @@ The Self-Service portal provides web-based access to the features of System Cent
  ::: moniker-end
 
 For more information, see [system requirements](system-requirements.md)
+
 ## Supported web browsers
 The Self-Service portal needs a screen resolution above 1024 X 768. It's supported on the following browsers.
 
@@ -53,9 +49,11 @@ The Self-Service portal needs a screen resolution above 1024 X 768. It's support
 -   Google Chrome 46 and later
 
 ## Set up the Self-Service portal
+
 You'll use the following sections to set up the Self-Service portal.
 
 ### Set up the web server
+
 Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
 
 1.  Start the Add Roles and Features Wizard and then enable IIS.
@@ -87,6 +85,7 @@ Join the Windows server machine to the same domain where the Service Manager SDK
         ![Screenshot showing the application development.](./media/deploy-self-service-portal/sm-ssp03b.png)
 
 ### Install the Self-Service Portal Webapp using Setup
+
 Use the following steps to install the Self-Service Portal WebApp using Setup.
 
 1.  Select **Service Manager Self-Service Portal** in Service Manager setup wizard.
@@ -130,6 +129,7 @@ Use the following steps to install the Self-Service Portal WebApp using Setup.
     ![Screenshot showing the Finished page.](./media/deploy-self-service-portal/sm-ssp13.png)
 
 ### Install the Self-Service portal webapp using the command line
+
 You can modify the following example to install the Self-Service portal.
 
 ```
@@ -137,6 +137,7 @@ SetupWizard.exe /Install:SelfServicePortal /silent /accepteula /CustomerExperien
 ```
 
 ### Complete the installation
+
 Use the following step to complete your installation.
 
 - Restart IIS. You can access the Web App (http://yourwebsite:port) in your browser. It will resemble the following image.
@@ -144,6 +145,7 @@ Use the following step to complete your installation.
   ![Screenshot showing the Self-Service Portal.](./media/deploy-self-service-portal/sm-sspdeploy-complete.png)
 
 ## Customize the Self-Service portal
+
 The following section describes how you can customize the Self-Service portal to suit your organization.
 
 Before you install any Update Rollup for Service Manager, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml). Then use the following steps to get started.
@@ -153,13 +155,12 @@ Before you install any Update Rollup for Service Manager, note that all customiz
 
 In the future, you need to make all customizations to the Service Manager Self-Service portal’s sidebar in the CustomSidebar.cshtml file.
 
-
 ### Basic customization
 
 The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas that are most often modified. Here's a list of them.
 
-|Key|Purpose|
-|-------|-----------|
+| Key | Purpose |
+| ------- | ----------- |
 |CompanyName|The value of this key appears as the company's name inside the portal.|
 |CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company's logo inside the portal.|
 |ITPhone|This key takes the value to configure the IT help desk's phone number. This information appears at the bottom of the navigation menu.|
@@ -170,18 +171,20 @@ The `<appSettings>` tab in the Web.config file offers some standard settings to 
 |MaxQueryResults|The value of this key defines the maximum number of results that are returned by any query form element inside your request offering forms.|
 |UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user-specific details of the signed-in user.|
 |DataCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache generic data which can be shared among different users.|
-|EnableTelemetry|The value of this key defines your selection about participating in Microsoft's Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as **True**. By default, it has the same value that you chose during Setup.|,
+|EnableTelemetry|The value of this key defines your selection about participating in Microsoft's Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as **True**. By default, it has the same value that you chose during Setup.|
 |CustomActiveRequestStatusEnumList|By default, the Self Service portal puts custom enumerations for My Request (incident and service requests) states in the *Closed* filter category. This key allows customization to map required custom states to the *Active* filter category. The value of this key should be a comma separated list containing *EnumTypeName* values of enumerations which are required to be mapped with the Active category in the Self Service Portal. You can look for desired custom states labeled *EnumTypeName* in the *EnumType* table, using the following example. </br></br> `SELECT [EnumTypeName]` </br></br> `FROM [<Service Manager DB name, which by default is “ServiceManager”>].[dbo].[EnumType]`|
 
 > [!NOTE]
 > You must restart the IIS service after you make any changes to the Web.config file.
 
 ### Style customization
+
 Web page style, such as font, color, and background, is customized by adding the Custom.css file in the \Content\css website folder.
 
 Styles defined in the CSS file override the default styles of the Self-Service Portal.
 
 ### Customizing the left menu bar
+
 You can modify the content shown in the left navigation bar (menu) by editing the Sidebar.cshtml file, which is in the \Views\Shared inside the website folder.
 
 For example:
@@ -189,10 +192,6 @@ For example:
 ![Screenshot showing the sidebar.cshtml.](./media/deploy-self-service-portal/sm-sspsidebar.png)
 
 You can add or remove shortcuts from the menu, and you can customize them with details for the CSS class, keyboard hotkeys, and others.
-
-### Additional UI customization
-
-For more information about UI customization, see [The Official System Center Service Manager Blog](https://techcommunity.microsoft.com/t5/system-center-blog/basic-ui-customization-in-the-new-self-service-portal-html5/ba-p/351441).
 
 ## Next steps
 

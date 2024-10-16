@@ -3,12 +3,12 @@ ms.assetid: 613e32b0-3f29-45f2-b7ca-897789564f5c
 title: Management Pack for SQL Server Replication configuration
 description: This article explains management pack configuration
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Management Pack Configuration

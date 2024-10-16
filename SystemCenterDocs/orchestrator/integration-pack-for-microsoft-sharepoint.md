@@ -1,23 +1,19 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 02/01/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 10/07/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 
 # Integration pack for SharePoint
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Integration packs are add-ons for System Center - Orchestrator. They help you to optimize the IT operations across heterogeneous environments. Using integration packs, you can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and non-Microsoft products.
 
@@ -27,6 +23,8 @@ This article provides information about System Center integration pack for Micro
 
 The System Center Integration Pack for Microsoft SharePoint enables the automation of common tasks in SharePoint. For example, to create list items, to upload and download documents, and to monitor a list for changes.
 
+>[!Note]
+>Azure Active Directory or Azure AD or AAD mentioned in Integration packs refers to Microsoft Entra ID. [Learn more](https://azure.microsoft.com/updates/azure-ad-is-becoming-microsoft-entra-id/).
 
 ## System requirements
 
@@ -89,7 +87,6 @@ The integration pack for SharePoint requires the following software to be instal
 
 ::: moniker range="<=sc-orch-2019"
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
-- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 ::: moniker-end
 
@@ -160,7 +157,7 @@ Set the OAuth redirection URI. Choose the Public client (Mobile/Desktop app) pla
 
 2. Select `https://login.microsoftonline.com/common/oauth2/nativeclient` as the Redirect URI and select **Configure**.
 
-   ![Screenshot of Redirect URI.](./media/integration-pack-for-sharepoint/sp-redirect-uri.png)
+   :::image type="content" source="./media/integration-pack-for-sharepoint/sp-redirect-uri.png" alt-text="Screenshot of Redirect URI." lightbox="./media/integration-pack-for-sharepoint/sp-redirect-uri.png":::
 
 3. Under **Advanced Setting**, set **Allow Public Client flows** to **Yes** and select **Save**.
 

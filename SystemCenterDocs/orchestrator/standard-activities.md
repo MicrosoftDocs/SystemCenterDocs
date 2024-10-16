@@ -1,25 +1,21 @@
 ---
 title: Orchestrator Standard Activities
 description: This article describes the standard activities in Orchestrator that enable you to create runbooks to automate your data center procedures.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 12/14/2017
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
 ms.custom: UpdateFrequency3
 ---
 
 # Standard activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Standard Activities enable you to create runbooks to automate your data center procedures.
 

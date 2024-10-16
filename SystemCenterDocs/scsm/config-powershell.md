@@ -1,15 +1,15 @@
 ---
 title: Configure PowerShell to run in Service Manager
 description: Before you use PowerShell with Service Manager, you need to prepare and then import Service Manager cmdlets.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/06/2019
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9b785d6a-2011-4fd9-987b-46e5eb164896
@@ -17,11 +17,7 @@ ms.assetid: 9b785d6a-2011-4fd9-987b-46e5eb164896
 
 # Configure Windows PowerShell to run in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Before you can run commands in the Windows PowerShell command-line interface in System Center - Service Manager, you must set execution policy to RemoteSigned and import the data warehouse cmdlet module.
 

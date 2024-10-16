@@ -1,28 +1,24 @@
 ---
 title: Manage the data warehouse
 description: Describes how to manage the Service Manager data warehouse.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 05/12/2022
-ms.technology: service-manager
+ms.date: 04/18/2024
+ms.subservice: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
 
 # Manage the Service Manager data warehouse
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 In order to manage the data warehouse, which is primarily used by reporting, you must perform maintenance tasks on data warehouse jobs. For example, you can view their status, pause and resume, set a schedule, enable and disable schedules, and troubleshoot data warehouse jobs. You can perform all of these maintenance tasks by using Windows PowerShell cmdlets. In addition, you can perform some of these tasks through the Service Manager console.
 

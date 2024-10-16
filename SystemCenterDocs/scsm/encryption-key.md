@@ -1,15 +1,15 @@
 ---
 title: Complete Service Manager deployment by backing up the encryption key
 description: After you deploy Service Manager, you should back up the encryption key to help prepare for disaster recovery.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dbb276a9-7df5-4cd9-ae75-9099aabcaa93
@@ -17,11 +17,7 @@ ms.assetid: dbb276a9-7df5-4cd9-ae75-9099aabcaa93
 
 # Complete Service Manager deployment by backing up the encryption key
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 When you deployed your System Center - Service Manager management server and database, an encryption key was created so that data between the Service Manager and data warehouse management servers and their associated databases could be encrypted. When you deployed the Self-Service Portal, an encryption key was created so that data between the Self-Service Portal and the Service Manager database could be encrypted.  
 
@@ -47,7 +43,7 @@ Use the Encryption Key Backup or Restore Wizard and the following procedures to 
 7. On the **Provide a Password** page, enter a password that contains at least eight characters in the **Password** box. In the **Confirm Password** box, re-enter the same password, and select **Next**.  
 
     > [!NOTE]  
-    >  Recovery of the password isn't possible if it's lost or forgotten.  
+    > Recovery of the password isn't possible if it's lost or forgotten.  
 
 8. After you receive the message **Secure Storage Backup Complete**, select **Finish**.  
 

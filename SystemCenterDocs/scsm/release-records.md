@@ -1,23 +1,18 @@
 ---
 title: Manage release records
 description: Provides an overview and describes how to manage Service Manager release records.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 01/23/2018
-ms.technology: service-manager
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage Service Manager release records
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The key to understanding release management in System Center - Service Manager is realizing how objects, such as change requests and activities, interact when facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.  
 

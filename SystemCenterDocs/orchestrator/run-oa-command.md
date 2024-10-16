@@ -2,27 +2,23 @@
 title: Run OA Command
 description: The Run OA Command activity is used in a runbook to run a command that can be used to perform management activities such as Add User, Enable User, and Show Server Status.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d86c35be-c407-4f65-aec2-593839e58b4f
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---
 # Run OA Command
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Run OA Command** activity is used in a runbook to run a command that can be used to perform management activities, such as **Add User**, **Enable User**, and **Show Server Status**.
 

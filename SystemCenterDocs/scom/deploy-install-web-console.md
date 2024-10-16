@@ -1,24 +1,18 @@
 ---
 ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
-title: How to Install the Operations Manager Web console
+title: Install the Operations Manager Web console
 description: This article describes how to install the Web console for System Center Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
-ms.custom: engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 07/22/2024
+ms.custom: engagement-fy23, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to install the Operations Manager Web console
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
+# Install the Operations Manager Web console
 
 You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
@@ -49,11 +43,11 @@ Installation of Reporting and Web Console will be successful irrespective of the
 
 When you install the web console, the following three components are installed:
 
--   Operations Manager web console
+- Operations Manager web console
 
--   Application Diagnostics console
+- Application Diagnostics console
 
--   Application Advisor console
+- Application Advisor console
 
 > [!NOTE]
 > If Application Diagnostics console isn't installed, when viewing APM alerts, you won't be able to use the link embedded in the alert description to launch the APM event details. To use this feature, install the web console within the management group.
@@ -81,22 +75,22 @@ The local and remote parameters are as follows:
 > [!NOTE]
 > If you run **Repair** on the web console after installation, the settings that were selected during installation will be restored. Any changes that you manually make to the web console configuration after the installation will be reset.
 
-### To install a stand-alone Web console
+### Install a stand-alone Web console
 
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]
->If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Web console role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation doesn't apply to Operations Manager version 1801.
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Web console role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.
 
 ::: moniker-end
 
-1.  Sign in to the computer that will host the web console with an account that has local administrative credentials.
+1. Sign in to the computer that will host the web console with an account that has local administrative credentials.
 
-2.  On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
+2. On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
 
-3.  On the **Getting Started**, **Select features to install** page, select **Web console**. To read more about what each feature provides and its requirements, select **Expand all**, or expand the buttons next to each feature, and select **Next**.
+3. On the **Getting Started**, **Select features to install** page, select **Web console**. To read more about what each feature provides and its requirements, select **Expand all**, or expand the buttons next to each feature, and select **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default location, or type in a new location or browse to one, and select **Next**.
+4. On the **Getting Started**, **Select installation location** page, accept the default location, or type in a new location or browse to one, and select **Next**.
 
   ::: moniker range="sc-om-2016"
    > [!NOTE]
@@ -108,20 +102,19 @@ The local and remote parameters are as follows:
    > The default path is `C:\Program Files\Microsoft System Center\Operations Manager`.
 ::: moniker-end
 
-
-5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify Prerequisites Again** to recheck the system.
+5. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
-    >-  Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and select **Allow**.
+    >- Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and select **Allow**.
     >- Select **ASP.NET v4.8**, and select **Allow** (applicable for Operations Manager 2022).
 
-6.  If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
+6. If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
-7.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and select **Next**.
+7. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and select **Next**.
 
-8.  On the **Configuration**, **Specify a management server** page, enter the name of a management server that only the web console uses, and select **Next**.
+8. On the **Configuration**, **Specify a management server** page, enter the name of a management server that only the web console uses, and select **Next**.
 
-9.  On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and select **Next**.
+9. On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and select **Next**.
 
     > [!WARNING]
     > Installing the web console on a computer that has SharePoint installed isn't supported.
@@ -139,29 +132,29 @@ The local and remote parameters are as follows:
 
 13. When Setup is finished, the **Setup is complete** page appears. Select **Close**.
 
-### To install the Web console on an existing Management server
+### Install the Web console on an existing Management server
 
-1.  Sign in to the computer that is hosting a management server with an account that has local administrative credentials.
+1. Sign in to the computer that is hosting a management server with an account that has local administrative credentials.
 
-2.  On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
+2. On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
 
-3.  On the **Getting Started**, **What do you want to do?** page, select **Add a feature**.
+3. On the **Getting Started**, **What do you want to do?** page, select **Add a feature**.
 
-4.  On the **Getting Started, Select features to install** page, select **Web console**, and select **Next**.
+4. On the **Getting Started, Select features to install** page, select **Web console**, and select **Next**.
 
-5.  On the **Prerequisites** page, review and address any warnings or errors, and select **Verify Prerequisites Again** to recheck the system.
+5. On the **Prerequisites** page, review and address any warnings or errors, and select **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
     >- Installation of the System Center - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and select **Allow**.
     >- Select **ASP.NET v4.8**, and select **Allow** (applicable for Operations Manager 2022).
 
-6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
+6. If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
-7.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and select **Next**.
+7. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and select **Next**.
 
-8.  On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and select **Next**.
+8. On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and select **Next**.
 
-9.  On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and select **Next**.
+9. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and select **Next**.
 
 10. If Windows Update isn't activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and select **Next**.
 
@@ -172,13 +165,13 @@ The local and remote parameters are as follows:
 > [!IMPORTANT]
 > The Default website must have an http or https binding configured. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost hostname, depending on the scenario. For more information, see [Host header or IP address binding causes web console login errors in Operations Manager](/troubleshoot/system-center/scom/web-console-login-errors).
 
-### To install a Web console by using the Command Prompt window
+### Install a Web console by using the Command Prompt window
 
-1.  Sign in to the computer with an account that has local administrative credentials.
+1. Sign in to the computer with an account that has local administrative credentials.
 
-2.  Open a Command Prompt window by using the **Run as Administrator** option.
+2. Open a Command Prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command.
+3. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
@@ -197,31 +190,31 @@ The local and remote parameters are as follows:
     /AcceptEndUserLicenseAgreement: [0|1]
     ```
 
-## To configure permissions inheritance for the Web console
+## Configure permissions inheritance for the Web console
 
 The following steps are for configuring permission inheritance for the System Center - Operations Manager Web console.  
 
-1.  In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, `C:\Program Files\System Center <version>\Operations Manager\WebConsole\MonitoringView`), right-click the TempImages folder, and select **Properties**.
+1. In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, `C:\Program Files\System Center <version>\Operations Manager\WebConsole\MonitoringView`), right-click the TempImages folder, and select **Properties**.
 
-2.  On the **Security** tab, select **Advanced**.
+2. On the **Security** tab, select **Advanced**.
 
-3.  On the **Permissions** tab, select **Change Permissions**.
+3. On the **Permissions** tab, select **Change Permissions**.
 
 ::: moniker range="<sc-om-2019"
 
-4.  Select the **Include inheritable permissions from this object's parent** checkbox. Skip this step for Windows 2016 and later.
+4. Select the **Include inheritable permissions from this object's parent** checkbox. Skip this step for Windows 2016 and later.
 
-5.  In **Permission entries**, select **Administrators**, and select **Remove**. Repeat for the **SYSTEM** entry, and select **OK**.
+5. In **Permission entries**, select **Administrators**, and select **Remove**. Repeat for the **SYSTEM** entry, and select **OK**.
 
-6.  Select **OK** to close **Advanced Security Settings for TempImages**, and select **OK** to close **TempImages Properties**.
+6. Select **OK** to close **Advanced Security Settings for TempImages**, and select **OK** to close **TempImages Properties**.
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
-4.  In **Permission entries**, select **Administrators**, and select **Remove**. Repeat for the **SYSTEM** entry, and select **OK**.
+4. In **Permission entries**, select **Administrators**, and select **Remove**. Repeat for the **SYSTEM** entry, and select **OK**.
 
-5.  Select **OK** to close **Advanced Security Settings for TempImages**, and select **OK** to close **TempImages Properties**.
+5. Select **OK** to close **Advanced Security Settings for TempImages**, and select **OK** to close **TempImages Properties**.
 
 ::: moniker-end
 

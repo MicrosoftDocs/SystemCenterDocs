@@ -3,27 +3,21 @@ title: Delete Line
 description: This article describes the Delete Line activity and how to configure it.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d100cc47-7340-4072-a6dc-77c4d2241566
 caps.latest.revision: 13
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: "evansma"
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Delete Line
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Delete Line activity deletes lines from a text file. Use the Delete Line activity to delete outdated lines of text from a text file.  
 

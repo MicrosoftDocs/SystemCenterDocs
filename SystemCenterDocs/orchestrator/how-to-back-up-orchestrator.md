@@ -1,23 +1,19 @@
 ---
 title: Back up Orchestrator
 description: Describes how to backup a System Center - Orchestrator environment.
-ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 04/03/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.custom: UpdateFrequency3
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Back up Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 A complete backup of an Orchestrator environment consists of the following:  
 

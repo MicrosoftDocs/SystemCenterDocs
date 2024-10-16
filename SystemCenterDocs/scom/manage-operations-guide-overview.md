@@ -1,24 +1,20 @@
 ---
 title: Operations Guide for System Center Operations Manager
 description: This article provides an overview of the System Center Operations Manager Operations Guide.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 06/22/2018
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: c2b63b0a-4c6e-40b3-a75e-2ca514df3bc4
 ---
 
 # Operations Guide for System Center Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Operations Manager, a component of System Center, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by receiving alerts and using numerous views providing insight into health, security, performance, or configuration issues affecting the health of the service.  
 

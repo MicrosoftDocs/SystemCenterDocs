@@ -7,18 +7,14 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/13/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to Install the Operations console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 After you install System Center - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
 

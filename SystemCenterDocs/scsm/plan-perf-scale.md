@@ -1,23 +1,19 @@
 ---
 title: Plan for System Center - Service Manager performance and scalability
 description: This article describes general performance and scalability planning guidance for System Center - Service Manager.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 01/23/2018
-ms.technology: service-manager
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/22/2024
+ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Plan for System Center - Service Manager performance and scalability
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 
 This article describes general performance and scalability planning guidance for System Center - Service Manager. While Service Manager is built to meet a performance standard on minimum recommended hardware, the hardware requirements for your specific scenario may be higher or lower than the generalized guidelines presented here. This article also describes considerations for Service Manager software.  

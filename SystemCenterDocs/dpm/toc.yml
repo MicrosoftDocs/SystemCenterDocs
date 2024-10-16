@@ -1,0 +1,119 @@
+- name: Overview
+  items:
+  - name: Data Protection Manager
+    href: dpm-overview.md
+  - name: How does DPM work?
+    href: how-dpm-protects-data.md
+  - name: What can DPM back up?
+    href: dpm-protection-matrix.md
+  - name: DPM-compatible tape libraries
+    href: dpm-compatible-tape-libraries.md
+- name: Get Started
+  items:
+  - name: DPM build versions
+    href: release-build-versions.md
+  - name: DPM release notes
+    href: dpm-release-notes.md
+  - name: What's new in DPM
+    href: what-s-new-in-dpm.md
+  - name: What DPM supports
+    href: dpm-support-issues.md
+  - name: Turn on/off telemetry settings
+    href: manage-telemetry.md
+- name: How To
+  items:
+  - name: Plan Your DPM Environment
+    items:
+    - name: Get ready to deploy DPM servers
+      href: plan-dpm-deployment.md
+    - name: Prepare your environment for DPM
+      href: prepare-environment-for-dpm.md
+    - name: Prepare data storage
+      href: plan-long-and-short-term-data-storage.md
+    - name: Identify compatible tape libraries
+      href: identify-compatible-tape-libraries.md
+    - name: Identify data sources you want to protect
+      href: identify-data-sources-to-protect.md
+  - name: Install or Upgrade DPM
+    items:
+    - name: Install DPM
+      href: install-dpm.md
+    - name: Upgrade your DPM installation
+      href: upgrade-dpm.md
+    - name: Add Modern Backup storage
+      href: add-storage.md
+      items:
+      - name: Extend tiered volume
+        href: extend-tiered-volume.md
+      - name: Migrate datasources to new volumes
+        href: volume-to-volume-migration.md
+    - name: Deduplicate DPM storage
+      href: deduplicate-dpm-storage.md
+    - name: Deploy and manage update rollups
+      href: update-rollups.md
+  - name: Deploy DPM
+    items:
+    - name: Deploy the DPM protection agent
+      href: deploy-dpm-protection-agent.md
+    - name: Deploy protection groups
+      href: create-dpm-protection-groups.md
+    - name: Configure firewall settings
+      href: configure-firewall-settings-for-dpm.md
+    - name: Offline backup
+      items:
+      - name: Overview
+        href: offline-backup-overview.md
+      - name: Offline seeding using Azure Data Box
+        href: offline-seeding-azure-data-box.md
+      - name: Offline seeding using own disk
+        href: offline-backup-workflow.md
+  - name: Protect Workloads
+    items:
+    - name: Pre-backup and post-backup scripts
+      href: pre-backup-and-post-backup-scripts.md
+    - name: Back up Hyper-V virtual machines
+      href: back-up-hyper-v-virtual-machines.md
+    - name: Back up Exchange with DPM
+      href: back-up-exchange.md
+    - name: Back up SharePoint with DPM
+      href: back-up-sharepoint.md
+    - name: Back up SQL Server with DPM
+      href: back-up-sql-server.md
+    - name: Back up mirrored SQL Server with DPM
+      href: back-up-mirrored-sql-servers.md
+    - name: Back up client computers with DPM
+      href: back-up-workstations.md
+    - name: Back up file data with DPM
+      href: back-up-file-data.md
+    - name: Back up system state and bare metal
+      href: back-up-system-state-and-bare-metal.md
+    - name: Back up and restore VMware servers
+      href: back-up-vmware.md
+    - name: Back up and restore VMM servers
+      href: back-up-vmm-server.md
+    - name: Prepare to back up a generic data source
+      href: back-up-generic-data-source.md
+    - name: Prepare machines in workgroups and untrusted domains for backup
+      href: back-up-machines-in-workgroups-and-untrusted-domains.md
+    - name: Back up the DPM server
+      href: back-up-the-dpm-server.md
+  - name: Monitor and Manage
+    items:
+    - name: Monitor DPM
+      href: monitor-dpm.md
+    - name: Run antivirus software on the DPM server
+      href: run-antivirus-server.md
+    - name: Set up DPM logging
+      href: set-up-dpm-logging.md
+    - name: Generate DPM reports
+      href: generate-dpm-reports.md
+    - name: Use Operations Manager to manage and monitor DPM servers
+      href: use-ops-manager-to-manage-monitor-dpm.md
+    - name: Improve replication performance
+      href: improve-replication-performance.md
+    - name: Use central console to manage DPM servers
+      href: use-central-console-to-manage-multiple-dpm-servers.md
+- name: Troubleshoot
+  items:
+  - name: Troubleshoot client protection End user recovery
+    href: client-protection-end-user-recovery.md

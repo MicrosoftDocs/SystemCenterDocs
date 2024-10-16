@@ -1,24 +1,20 @@
 ---
 title: Examining Properties of Alerts, Rules, and Monitors
 description: This article describes how to examine properties of alerts, rules and monitors.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 03/30/2021
 ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Examining properties of alerts, rules, and monitors
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The properties pages for alerts, rules, and monitors offer useful information and actions that you can take. The following tables explain what you can learn from properties for alerts, rules, and monitors and include tips on using the properties tabs.  
 

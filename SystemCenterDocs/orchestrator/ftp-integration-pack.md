@@ -2,27 +2,21 @@
 title: FTP Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. You can design runbooks in Orchestrator.
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e0482f7f-711a-4b40-9884-1d1bd4b96bf2
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---
 
 # FTP integration pack
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Integration packs are add-ons for Orchestrator, a component of System Center, that can help you optimize IT operations across heterogeneous environments. You can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products. The Integration Pack for FTP enables you to automate FTP operations, which include creating a folder, deleting a file or folder, downloading, uploading, file, and folder listing and synchronization.
 

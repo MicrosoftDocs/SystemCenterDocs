@@ -2,23 +2,19 @@
 ms.assetid: 715a0ed4-8936-4b43-ad1b-024465e0605e
 title: How to Add Knowledge to a Management Pack
 description: This article describes how to add custom knowledge to a workflow in a management pack.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 06/04/2018
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to add knowledge to a management pack
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.  
 

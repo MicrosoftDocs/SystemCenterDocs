@@ -1,24 +1,20 @@
 ---
 title: How to Configure Grooming Settings for .NET Application Performance Monitoring Events
 description: This article describes how to configure grooming of the APM data from the Operations Manager DBs.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 06/06/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: bf667946-eae3-4958-96dc-e27d8ea7081a
 ---
 
 # How to configure grooming settings for .NET Application performance monitoring events
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 When you've been monitoring applications using .NET Application Performance Monitoring (APM), a new data type, APM events, will begin to take up space. Eventually, you'll want to groom your database for APM events. Changing the grooming settings for your database for APM events requires the following procedures. You can groom APM events in three locations:  
 

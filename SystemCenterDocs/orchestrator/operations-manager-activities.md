@@ -1,22 +1,18 @@
 ---
 title: Operations Manager activities in the System Center - Orchestrator integration pack
 description: This article describes all activities in the System Center integration pack for System Center - Operations Manager.
-ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 04/03/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.custom: UpdateFrequency3
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 # Operations Manager integration pack activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The following configuration instructions apply to all the activities in the System Center Integration Pack for System Center - Operations Manager. Links to this section are included in the configuration instructions for each activity.
 

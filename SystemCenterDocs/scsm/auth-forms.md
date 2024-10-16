@@ -1,15 +1,15 @@
 ---
 title: Overview of customizing and authoring forms
 description: Learn about how you can customize and author forms with the Service Manager Authoring Tool.
-manager: mkluck
 ms.custom: engagement-fy24, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 09/26/2023
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 05/15/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dd99e994-e34d-469e-aea0-5c3547eeab66
@@ -17,11 +17,7 @@ ms.assetid: dd99e994-e34d-469e-aea0-5c3547eeab66
 
 # Overview of customizing and authoring forms with the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 A form is a window that makes it possible for users to interact with objects from the database. Users can use a form to view and edit the properties of objects. Each form is tied to a specific class, and it displays information only for instances of the targeted class. A form contains fields. Typically, each field is bound to a specific property of the form's targeted class. The incident form, for example, is tied to the incident object. Therefore, the incident form displays information about incident objects in the database.
 

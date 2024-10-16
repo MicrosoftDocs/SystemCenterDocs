@@ -2,13 +2,13 @@
 ms.assetid: 
 title: System requirements for System Center Operations Manager
 description: This article describes the software and hardware system requirements for System Center Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 12/06/2022
 ms.topic: include
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 ## Capacity limits for Operations Manager
@@ -192,7 +192,7 @@ The following table lists the scenarios in which coexistence between Operations 
 
 System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
 
-System Center 2019
+- System Center 2019
 
 ## Active Directory and DNS
 

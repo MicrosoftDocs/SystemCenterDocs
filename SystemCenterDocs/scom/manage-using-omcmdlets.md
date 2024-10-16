@@ -2,23 +2,19 @@
 ms.assetid: 315fec65-847e-4621-92ce-1cf50296b43b
 title: Using Operations Manager Shell
 description: This article describes how to use the Operations Manager shell to perform administrative tasks with PowerShell.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 01/03/2017
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Using Operations Manager Shell
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, the Operations Manager Shell is installed with the Operations Manager console; it provides a command-line environment and task-based scripting technology that you can use to automate many Operations Manager administrative tasks.  
 

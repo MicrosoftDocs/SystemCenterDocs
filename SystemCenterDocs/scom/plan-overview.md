@@ -2,23 +2,18 @@
 ms.assetid: d101c474-7a4d-4a01-b52a-a22270c475d0
 title: Operations Manager Planning Guide
 description: This article is the landing page for the planning guide supporting System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
-ms.date: 07/09/2019
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Operations Manager Planning Guide
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 By deploying System Center Operations Manager in your environment, you can provide your organization with a monitoring service that ensures IT and business service owners are able to effectively monitor and report on the availability and performance metrics of their services across on-premises, service provider, and cloud environments.  After you identify the deployment tasks and current environment for your organization, you can create the Operations Manager deployment strategy that meets your organization’s service operations needs.  
 

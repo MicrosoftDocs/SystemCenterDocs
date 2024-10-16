@@ -1,15 +1,15 @@
 ---
 title: New Self-Service portal deployment scenarios and troubleshooting
 description: This article helps you understand what you need to know before you deploy the new Service Manager Self-Service portal, and troubleshoot its installation.
-manager: mkluck
 ms.custom: engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 04/19/2023
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/01/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
@@ -17,11 +17,7 @@ ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
 
 # Learn about deploying the new Self-Service portal and troubleshoot installation issues
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During installation, the Web app is configured to connect directly to the SDK Service running on the Service Manager server browser. A basic, newly\-configured Self\-Service Portal setup works as shown in the following diagram.  
 
@@ -55,7 +51,7 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 ### Supported operating systems
 
-::: moniker range="<=sc-sm-1807"
+::: moniker range="sc-sm-2016"
  - Windows Server 2016
 
  - Windows Server 2012 R2
@@ -91,7 +87,7 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  If you want to install new Self-Service Portal on port 80, you must first move the default website in IIS to a different port; for example, port 8080-and then move Self-Service Portal to port 80.  
 
 ### Use SSL  
- [SSL](https://learn.microsoft.com/iis/manage/configuring-security/how-to-set-up-ssl-on-iis) is recommended to ensure secure communication, especially when using basic authentication when a  username and password are transferred across network in plain text.  
+ [SSL](/iis/manage/configuring-security/how-to-set-up-ssl-on-iis) is recommended to ensure secure communication, especially when using basic authentication when a  username and password are transferred across network in plain text.  
 
 ## Deployment topologies  
  You can use the following deployment topologies for the Self-Service portal.  
@@ -108,7 +104,7 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  ![Diagram of the sm&#45;ssp&#45;scenario&#45;03.](./media/learn-self-service-portal/deploy-sm-ssp-scenario-03.png)  
 
- In this configuration, the new Self-Service Portal and the secondary Service Manager server are installed on different servers and a [double\-hop](https://weblogs.asp.net/owscott/iis-windows-authentication-and-the-double-hop-issue) is required to create a connection to the SDK Service from the Web app. Windows Authentication can't be used in this case and the Portal needs to be configured to use [Basic Authentication](https://learn.microsoft.com/iis/configuration/system.webServer/security/authentication/basicAuthentication). As Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers. See [additional details on Basic Authentication for double-hop scenarios](#basic-authentication).
+ In this configuration, the new Self-Service Portal and the secondary Service Manager server are installed on different servers and a [double\-hop](https://weblogs.asp.net/owscott/iis-windows-authentication-and-the-double-hop-issue) is required to create a connection to the SDK Service from the Web app. Windows Authentication can't be used in this case and the Portal needs to be configured to use [Basic Authentication](/iis/configuration/system.webServer/security/authentication/basicAuthentication). As Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers. See [additional details on Basic Authentication for double-hop scenarios](#basic-authentication).
 
  Using SSL with network delays between the Portal and the SDK Service, makes this topology slower compared to a single\-server deployment. However, this configuration can help deployment scenarios where a double\-hop can't be avoided.  
 
@@ -117,7 +113,7 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  ![Diagram of the sm&#45;ssp&#45;scenario&#45;04.](./media/learn-self-service-portal/deploy-sm-ssp-scenario-04.png)  
 
- A WebFarm ensures high availability to the Self\-Service Portal. Internally, the Web app creates a WCF connection to the SDK Service. Creating the initial connection takes time, so the ideal scenario is that the WebServer that the user connects to initially should service all the subsequent requests for faster turnaround. To ensure this configuration in IIS, the ARR setting should be set to [Client Affinity](https://learn.microsoft.com/iis/web-hosting/scenario-build-a-web-farm-with-iis-servers/planning-step-3-plan-iis-web-farm-load-balancing) enabled.  
+ A WebFarm ensures high availability to the Self\-Service Portal. Internally, the Web app creates a WCF connection to the SDK Service. Creating the initial connection takes time, so the ideal scenario is that the WebServer that the user connects to initially should service all the subsequent requests for faster turnaround. To ensure this configuration in IIS, the ARR setting should be set to [Client Affinity](/iis/web-hosting/scenario-build-a-web-farm-with-iis-servers/planning-step-3-plan-iis-web-farm-load-balancing) enabled.  
 
 ## Troubleshoot Setup issues  
  The following troubleshooting sections can help you resolve common issues.  

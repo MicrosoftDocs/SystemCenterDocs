@@ -2,23 +2,19 @@
 ms.assetid: 6c063660-b105-4f68-915e-3adc9021a14a
 title: Manage the SDN infrastructure in the VMM fabric
 description: This article describes how to manage SDN networking elements in the System Center VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/24/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage SDN resources in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
  This article summarizes the software-defined network (SDN) operations that you can manage in the System Center Virtual Machine Manager (VMM) fabric. For operations that can't be managed in the fabric, you need to use REST APIs or Windows Server PowerShell.
 
@@ -47,13 +43,13 @@ Gateway | Provides gateway services to one or more virtualNetworks. | Overwritte
 GatewayPool | GatewayPools aggregate a set of gateways resources into a single pool.  | Overwritten by VMM if you enable out-of-box
 Host | | Overwritten by VMM if you enable out-of-box
 HostProperties | | Overwritten by VMM if you enable out-of-box
-IpConfigurations | IP addresses of the load balancer | Overwritten by VMM if you enable out-of-box
-IpPool | Create an IP address pool on the network controller | Overwritten by VMM if you enable out-of-box
+IpConfigurations | IP addresses of the load balancer. | Overwritten by VMM if you enable out-of-box
+IpPool | Create an IP address pool on the network controller. | Overwritten by VMM if you enable out-of-box
 LoadBalancerManager | Configures the load balancing service of the Network Controller. | Overwritten by VMM if you enable out-of-box
 LoadBalancerMux |  Represents a MUX VM deployed in the network controller fabric. | Overwritten by VMM if you enable out-of-box
 LogicalSubnets | A subnet/VLAN pair. | Overwritten by VMM if you enable out-of-box
-MACPool | Creates a MAC address pool on the network controller | Overwritten by VMM if you enable out-of-box
-NatRules | Configures the load balancer to apply NAT to traffic | Overwritten by VMM if you enable out-of-box
+MACPool | Creates a MAC address pool on the network controller. | Overwritten by VMM if you enable out-of-box
+NatRules | Configures the load balancer to apply NAT to traffic. | Overwritten by VMM if you enable out-of-box
 NetworkInterface |Specifies the configuration of either a host virtual interface (host vNIC) or a virtual server NIC (VMNIC).  | Overwritten by VMM if you enable out-of-box
 PortSettings | | Overwritten by VMM if you enable out-of-box
 PublicIPAddress | Specifies an IP address, which is publicly available. It's used by virtualGateways and loadBalancers to indicate the IP address that can be used to communicate with the virtual network from outside. | Overwritten by VMM if you enable out-of-box
@@ -64,13 +60,13 @@ VirtualGatewayBgpPeer | Configures BGP peers of the virtualGateways resource. | 
 VirtualNetwork | Used to create a virtual network using HNV for tenant overlays.  | Overwritten by VMM if you enable out-of-box
 VirtualServer | Corresponds to a virtual machine. Must be created for VMs that correspond to gateway and MUX resources. | Overwritten by VMM if you enable out-of-box
 VirtualSubnet | Used to create virtual subnets (VSIDs) under a tenant's virtual network (RDID). | Overwritten by VMM if you enable out-of-box
-VirtualSwitchManager | Configures the virtual switch properties on every server managed by the Network Controller | Overwritten by VMM if you enable out-of-box
+VirtualSwitchManager | Configures the virtual switch properties on every server managed by the Network Controller. | Overwritten by VMM if you enable out-of-box
 VM | Corresponds to a virtual machine. | Overwritten by VMM if you enable out-of-box
 
 
 
 ### Unknown resources
 
-These resources to be created and managed outside the VMM fabric. VMM has no knowledge of them, and obviously doesn't overwrite them when they're configured outside the VMM console.
+These resources are to be created and managed outside the VMM fabric. VMM has no knowledge of them, and obviously doesn't overwrite them when they're configured outside the VMM console.
 
 Unknown objects are any Network Controller resources that aren't listed in the table above. Get the [latest list](/openspecs/windows_protocols/ms-ncnbi/d2a6f7c9-563f-40aa-94f7-9bf89fb79b80) of SDN resources.

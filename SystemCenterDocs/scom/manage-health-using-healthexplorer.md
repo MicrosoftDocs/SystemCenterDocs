@@ -1,24 +1,20 @@
 ---
 title: Using Health Explorer to Investigate Problems
 description: This article describes how to use the Operations Manager Health Explorer to investigate state change events for when monitors are in an unhealthy state.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
-ms.date: 08/13/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 61005760-0977-4cd8-b76d-05558160f78f
 ---
 
 # Using Health Explorer to investigate problems
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Use Health Explorer to find out which monitor is reflecting a health state issue and review knowledge about the monitor and possible causes for actions related to it. In the **Active Alerts** view, select the alert to highlight it. The Health Explorer link under **Alert Actions** in the **Tasks** pane becomes active.  Health Explorer is also accessible when selecting a monitored object from any health state view in the console.  
 

@@ -3,17 +3,43 @@ ms.assetid: 110aa866-00e8-4672-bd03-39cc8818e6b4
 title: Features and enhancements in Management Pack for SQL Server Dashboards
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Dashboards
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
-ms.date: 7/5/2023
+ms.date: 03/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Features and enhancements in Management Pack for SQL Server Dashboards
 
 This article covers new functionality and improvements in Management Pack for SQL Server Dashboards.
+
+## July 2024 - 7.6.2 RTM
+
+### What's New
+
+- Added Vertipaq tiles to Analysis Servises dashboards:
+  - Monitor tiles: VertiPaq memory consumed by SSAS Instance and VertiPaq memory paging indication
+  - Perfomance tile: VertiPaq Memory Limit, VertiPaq Memory Limit(GB), VertiPaq Memory Usage on the Server (%), VertiPaq Memory Usage on the Server (GB), VertiPq Nonpaged Memory (GB) and VertiPaq Memory Paged (GB)
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - implemented [Keyboard Navigation](sql-server-dashboards-management-pack-instance-dashboard-navigation.md) using the A and D buttons on the tiles in the dashboard
+  - added the ability for the screen reader to announce buttons and errors in the SQL Server wizard
+  - redesigned dashboard list controls for greater accessibility
+
+## January 2024 - 7.4.0.0 RTM
+
+### What's new
+
+- Improved accessibility for the Summary Dashboard view and Monitoring Wizard template, including the following major changes:
+  - improved keyboard navigation
+  - improved color contrast in dashboards for better legibility
+  - reworked high contrast theme for dashboards
+  - added support for screen-reading software
+
+### Bug fixes
+
+- Fixed the issue of Summary Dashboard view not working in the System Center Operations Manager Console when operational and data warehouse databases are hosted on SQL Server version 2022
 
 ## July 2023 - 7.2.0.0 RTM
 

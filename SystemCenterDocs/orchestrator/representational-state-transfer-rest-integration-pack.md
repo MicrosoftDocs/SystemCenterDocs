@@ -1,22 +1,19 @@
 ---
 title: Representational State Transfer (REST) integration pack for System Center - Orchestrator
 description: This article describes the REST integration pack for System Center - Orchestrator.
-ms.date: 04/04/2019
-ms.prod: system-center
-ms.technology: orchestrator
+ms.date: 05/16/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.custom: engagement-fy24
 ---
 
 # REST integration pack guide
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The integration pack for Representational State Transfer (REST) is an add-on for System Center - Orchestrator that enables you to create activities within runbooks that make requests to REST web services to get data or perform functions.
 

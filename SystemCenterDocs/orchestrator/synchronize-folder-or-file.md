@@ -2,27 +2,23 @@
 title: Synchronize Folder or File
 description: The Synchronize Folder/File activity is used in a runbook to perform a one way synchronization of a folder/File.
 ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ebe29f05-8025-4ad0-a77f-0171289e20a7
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---
 # Synchronize Folder or File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Synchronize Folder/File activity is used in a runbook to perform a one way synchronization of a folder/File.
 

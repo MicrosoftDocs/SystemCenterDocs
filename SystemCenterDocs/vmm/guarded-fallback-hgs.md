@@ -2,30 +2,24 @@
 ms.assetid: 686ba922-5d20-4c0b-b99b-c2ecde1d7bb2
 title: Configure fallback HGS in System Center Virtual Machine Manager
 description: This article explains about how to configure the fallback HGS in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/10/2018
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/17/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Configure HGS fallback URLs in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+This article describes how to define the fallback Host Guardian Service (HGS) URLs in System Center Virtual Machine Manager (VMM) global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) must operate even in situations of disaster.
 
-::: moniker-end
-
-This article describes how to define the fallback Host Guardian Service (HGS) URLs in System Center - Virtual Machine Manager (VMM) global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
-
-Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster.
-
-With fallback HGS configuration feature in VMM, a guarded host can be configured with a primary and secondary pair of HGS URLS (an attestation and key protection URI). This capability will enable scenarios, such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs, and so on.
+With fallback HGS configuration feature in VMM, a guarded host can be configured with a primary and secondary pair of HGS URLS (an attestation and key protection URI). This capability enables scenarios, such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs, and so on.
 
 The primary HGS URLs will always be used in favor of the secondary. If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be reattempted against the secondary. Subsequent operations will always favor the primary; the secondary will only be used when the primary fails.
 
@@ -39,12 +33,11 @@ Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shiel
 
 **Use the following steps**:
 
-1.  Navigate to **VMM Settings** > **General Settings** > **Host Guardian Service settings**.
-2.  Open the Host Guardian Service settings. You should see a section for Fallback Configurations.
-3.  Define the **primary and fallback HGS URLs** and select **Finish**.
+1.  Navigate to **VMM Settings** > **General Settings** > **Host Guardian Service Settings**. On the **Host Guardian Service Settings** page, you see a section for Fallback Configurations.
+2.  Define the **primary and fallback HGS URLs** and select **Finish**.
 
     ![Screenshot of fallback HGS.](media/fallback-hgs/fallback-hgs-config.png)
-4.  Enable the fallback URLs on the host by navigating to **Host Properties** > **Host Guardian Service**. Select Enable host Guardian Hyper-V support and use the URLs as configured as global settings in VMM and select **OK**.
+3.  Enable the fallback URLs on the host by navigating to **Host Properties** > **Host Guardian Service**. Select Enable host Guardian Hyper-V support and use the URLs as configured as global settings in VMM and select **OK**.
 
     > [!NOTE]
     > After this step, the VMM service configures the supported hosts with primary and fallback HGS URLs. Only hosts on and above Windows Server 1709 support fallback HGS URLs.
@@ -81,7 +74,7 @@ Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shiel
    [-SecureRemoteConnectEnabled <Boolean>] [-UseAnyMigrationSubnet <Boolean >]
    [-VMHostManagementCredential <VMMCredential>] [-VMPaths <String>] [<CommonParameters>]
    ```
-2. The following parameter is added to **Get-SCGuardianConfiguration**  to let the user specify from which HGS the metadata be fetched.
+2. The following parameter is added to **Get-SCGuardianConfiguration**  to let the user specify from which HGS the metadata must be fetched.
 
     **[-Guardian {Primary | Fallback}]**
 

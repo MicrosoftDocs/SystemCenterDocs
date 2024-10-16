@@ -1,12 +1,12 @@
 ---
 title: Acknowledge Message
 description: The Acknowledge Message activity is used in a runbook to acknowledge or unacknowledge a message.
-author: jyothisuri
-manager: mkluck
-ms.prod: system-center
-ms.technology: orchestrator
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-ms.author: jsuri
 ms.custom: UpdateFrequency3
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
@@ -14,13 +14,6 @@ ms.date: 04/27/2023
 
 
 # Acknowledge Message
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 
 The Acknowledge Message activity is used in a runbook to acknowledge or unacknowledge a message.
 

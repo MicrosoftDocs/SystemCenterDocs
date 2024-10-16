@@ -2,20 +2,20 @@
 ms.assetid: e76baa8d-7756-44e7-b887-e622e85d8006
 title: Managing Nano server as a Hyper-V host or a VM in VMM
 description: This article describes how to deploy and manage Nano server-based hosts & VMs in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/01/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 09/17/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 monikerRange: 'sc-vmm-2016'
-ms.custom: intro-deployment
+ms.custom: intro-deployment, engagement-fy24
 ---
 
 # Deploy and manage Nano server-based Hyper-V hosts or VMs in VMM
 
-You can use System Center - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
+You can use System Center Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
 
 Using VMM, you can add and manage existing hosts running Nano, configure bare-metal machines as Nano Server-based hosts, deploy compute clusters, and storage clusters (disaggregated and hyper-converged). You can manage Nano-based VMs, including shielded VMs.
 
@@ -24,7 +24,10 @@ Using VMM, you can add and manage existing hosts running Nano, configure bare-me
 
 - For VM deployment, you need to create the Nano Server virtual hard disk outside VMM.
 - You can't create a VM template from a Nano Server VM in VMM. You can create a VM template from scratch using a Nano Server virtual hard disk.
-- There are some known issues when joining a Nano Server VM to a domain. If you try to join the VM to a domain with customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workaround, deploy the VM and then join it to a domain. [Learn more](/windows-server/get-started/nano-server-quick-start). Note that joining a physical machine to a domain during bare metal deployment works fine.
+- There are some known issues when joining a Nano Server VM to a domain. If you try to join the VM to a domain with customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workaround, deploy the VM and then join it to a domain. [Learn more](/windows-server/get-started/nano-server-quick-start). 
+
+>[!NOTE]
+> Joining a physical machine to a domain during bare metal deployment works fine.
 
 ## Prepare a Nano server virtual hard disk
 
@@ -58,7 +61,7 @@ To get started with the deployment of a Nano Server-based host or virtual machin
     ```
 
    - This example creates a VHD from an ISO mounted as F:
-   - When creating the VHD, it uses a folder called Base in the same folder in which you ran **New-NanoServerImage**
+   - When creating the VHD, it uses a folder called Base in the same folder in which you ran **New-NanoServerImage**.
    - It places the VHD in a folder called **Nano1** in the folder from which the command runs.
    - The computer name in this example is **Nano-srv1**. It includes the OEM drivers installed for most common hardware and has the clustering feature enabled.
    - The VHD has remote management of the Nano server enabled, even from the systems that aren't in the same subnet.
@@ -87,7 +90,7 @@ If you didn't add the VMM packages when you created the Nano Server VHD, you can
     Install-PackageProvider NanoServerPackage
     Import-PackageProvider NanoServerPackage
     ```
-2. After the provider is installed, you can search and install the VMM packages (VMM agent and Hyper-V) on the VHD using these cmdlets, where **C:\MyNano.vhd** is the location of the Nano Server based VHD.
+2. After the provider is installed, you can search and install the VMM packages (VMM agent and Hyper-V) on the VHD using these cmdlets, where **C:\MyNano.vhd** is the location of the Nano Server-based VHD.
 
     ```
     Find-NanoServerPackage
@@ -137,7 +140,7 @@ After the Nano server host is ready, add it to the VMM fabric. [Learn more](hype
 To create Nano server-based VMs, you need to add few VM-specific packages to the VHD. Create the VHD for a VM as follows:
 
 1. Copy **NanoServerImageGenerator.psm1** and **Convert-WindowsImage.ps1** from the \NanoServer folder in VMM to a folder on your hard drive.
-2. Start Windows PowerShell as an administrator, and navigate to the script folder.
+2. Start Windows PowerShell as an administrator and navigate to the script folder.
 3. Import the **NanoServerImageGenerator** script with **Import-Module NanoServerImageGenerator.psm1 -Verbose**.
 4. Create a VHD that includes the SCVMM packages by running the following command. You'll be prompted for an administrator password for the new VHD.
 

@@ -4,11 +4,11 @@ title: Export event log task in Management Pack for SQL Server
 description: This article explains how to run the export event log task for DB Engine in SQL Server Management Pack
 manager: evansma
 author: epomortseva
-ms.author: v-ekaterinap
-ms.date: 06/13/2023
+ms.author: v-fkornilov
+ms.date: 02/01/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Export event log Task
@@ -27,7 +27,7 @@ For the SQL Server DB Engine on Windows in the agentless monitoring mode, this t
 
 3. Use the **Override** button to fine-tune the task parameters.
 
-4. Specify the **Task Credentials** for the target SQL Server DB Engine according to its monitoring type and run the task.
+4. Specify the **Task Credentials** for the target SQL Server DB Engine according to its monitoring type and run the task. Date and/or time must be specified in at least one parameter.
 
 ## Tasks parameters
 
@@ -58,11 +58,9 @@ The following date time formats can be used:
 |Parameter|Format|
 |-|-|
 |Date|MM-YYYY-DD|
-||DD-YYYY-MM
 || MM-YYYY
 ||YYYY-MM|
 |Time|HH AM/PM|
-||HH:MM:SS AM/PM|
 ||HH:MM:SS GMT|
 ||HH:MM:SS +H:00|
 
@@ -86,13 +84,13 @@ The following parameters for specifying the duration range:
 **PT1H15M** means 1 hour and 15 minutes.
 **PT45M30S** means 45 minutes and 30 seconds.
   
-### InvariantCulture date time examples
+## InvariantCulture date time examples
 
 - The time range is one day.
 
     Date From=06/2023/15 and Date To=06/2023/16. An event log file is created with events from the whole day of June 15.
 
-    >[!WARNING]
+    > [!WARNING]
     > Specifying the range Date From and Date To with single date but without a time, creates a blank file.  
 
 - The time range is several hours.
@@ -107,7 +105,7 @@ The following parameters for specifying the duration range:
 
     Date From=06/2023 and Date To=06/2023. An event log file is created with events from the whole month of June.
 
-### Duration range examples
+## Duration range examples
 
 - The time range is last hour.
 
@@ -119,6 +117,6 @@ The following parameters for specifying the duration range:
 
 - The time range is a specific period during the current day.
 
-   Date From=PT10H:30M:30S and Date To=PT3H:30M.
+   Date From=PT10H30M30S and Date To=PT3H30M.
 
    An event log file is created with the log history exported for the period starting 10 hours, 30 minutes, and 30 seconds before the request time and ending 3 hours and 30 minutes before the request time.

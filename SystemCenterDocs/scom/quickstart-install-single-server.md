@@ -2,23 +2,19 @@
 title: Walkthrough Installing Operations Manager on a Single Server
 description: This article describes how to install all Operations Manager roles in a simple single-server deployment.
 ms.custom: engagement-fy23, UpdateFrequency.5
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/20/2023
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 05/15/2024
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 
 # Installing Operations Manager on a Single Server
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This walkthrough guides you through an installation of System Center - Operations Manager on a single server. The features installed include the following:
 
@@ -72,25 +68,6 @@ Follow these steps to install the single server management group configuration:
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
-
-   > [!NOTE]
-   > For System Center 1801 - Operations Manager, the default path is:
-   > ```
-   > C:\Program Files\Microsoft System Center\Operations Manager
-   > ```
-
-::: moniker-end
-
-::: moniker range="sc-om-1807"
-
-   > [!NOTE]
-   > For System Center 1807 - Operations Manager, the default path is:
-   > ```
-   > C:\Program Files\Microsoft System Center\Operations Manager
-   > ```
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 

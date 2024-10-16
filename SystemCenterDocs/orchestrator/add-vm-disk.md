@@ -2,23 +2,17 @@
 title: Add VM Disk
 description: Describes the Add VM Disk activity, to add a disk to the user image repository.
 ms.date: 04/27/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency2
 monikerRange: '<=sc-orch-2019'
 ---
 
 # Add VM Disk
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Add VM Disk** activity adds a disk to the user image repository. It's part of the **Azure Virtual Machine Disks** category activity.
 

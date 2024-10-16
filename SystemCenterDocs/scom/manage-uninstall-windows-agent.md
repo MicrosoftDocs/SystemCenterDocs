@@ -2,23 +2,19 @@
 ms.assetid: 11d9cf46-2880-493f-bdf1-29263e2949f0
 title: Uninstall Agent from Windows-based Computers
 description: This article describes the different methods to uninstall the Operations Manager agent from Windows computers.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 09/26/2023
 ms.custom: UpdateFrequency2, engagement-fy24
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Uninstall Agent from Windows-based Computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Use one of the following procedures to uninstall a System Center Operations Manager agent from an agent-managed computer.
 

@@ -1,27 +1,23 @@
 ---
 title: Update Remote Mailbox (Hybrid)
 description: You can use the Update Remote Mailbox activity to modify the mail-related attributes of an existing user in Active Directory that is associated with a mailbox in the cloud-based service (hybrid environment).
-ms.custom: UpdateFrequency3
-ms.date: 05/08/2019
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 05/16/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4931d67c-86a8-44f6-ac6d-8c4e72fd3a21
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Update Remote Mailbox (Hybrid)
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Update Remote Mailbox activity to modify the mail-related attributes of an existing user in Active Directory that is associated with a mailbox in the cloud-based service (hybrid environment).
 

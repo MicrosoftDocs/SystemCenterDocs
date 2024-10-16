@@ -3,26 +3,22 @@ title: Update Alert Activity
 description: The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer.
 ms.custom: UpdateFrequency3
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ba537978-bae7-4188-8c49-c380c7fc4adc
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Update Alert Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This activity can change the information in an alert based on the results from automated diagnostics performed by a runbook.
 

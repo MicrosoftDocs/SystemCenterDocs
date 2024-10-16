@@ -1,19 +1,19 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM in your environment.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 07/20/2023
-title: Preparing your environment for System Center Data Protection Manager
-ms.technology: data-protection-manager
+ms.date: 10/04/2024
+title: Prepare your environment for System Center Data Protection Manager
+ms.subservice: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
-# Preparing your environment for System Center Data Protection Manager
+# Prepare your environment for System Center Data Protection Manager
 
 ::: moniker range="sc-dpm-2022"
 
@@ -23,15 +23,7 @@ Use the following information to plan the deployment for System Center - Data Pr
 
 ::: moniker-end
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
-
 ::: moniker range="<sc-dpm-2022"
-
 
 Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
@@ -79,8 +71,6 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 --- | ---
 DPM 2016 | SQL Server 2014 SP2 or later <br/><br/>  SQL Server 2012 SP4 or later.
 DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-DPM 1801 |  SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
-DPM 1807 | - SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) <br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017)
 
 ::: moniker-end
 

@@ -6,9 +6,8 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 08/22/2023
 ms.custom: UpdateFrequency5, intro-installation, engagement-fy24
-ms.prod: system-center
-monikerRange: 'sc-om-1801'
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

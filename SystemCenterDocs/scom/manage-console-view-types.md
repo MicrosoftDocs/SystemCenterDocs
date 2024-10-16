@@ -1,24 +1,20 @@
 ---
 title: View Types in Operations Manager
 description: This article describes the different view types available in the Operations Manager consoles.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: f36bccfb-e038-4a3a-9999-3195fe738bd3
 ---
 
 # View types in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In Operations Manager, views provide insight into the performance of your service, its health state, or the issues detected and presented in an alerts view. Views return independent data based on specific criteria, whereas dashboards are a way to view operational data in a condensed, single pane of glass, which your operations, engineering, and the business can use to make meaningful decisions. There are various types of dashboards that can accommodate the various roles in your IT organization. You may have a data storage Manager that wants to see the percentage of SQL servers using more than the allocated amount of disk space; you may have systems engineers managing a website with high traffic who want to know what average requests per/sec are for all their Web servers. Dashboards convey information succinctly and in a compact format so that the end-users can decide if they need to take action immediately.
 

@@ -1,28 +1,22 @@
 ---
 title: Get Deployment
 description: The Get Deployment activity returns configuration information, status, and system properties for a deployment.
-ms.custom: engagement-fy23, UpdateFrequency3
-ms.date: 04/27/2023
-ms.prod: system-center
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
+ms.date: 06/05/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 846005ef-f15b-42e1-a6f5-ead1324a788f
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 monikerRange: '<=sc-orch-2019'
 ---
 
 # Get Deployment
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Get Deployment** activity returns configuration information, status, and system properties for a deployment. It's part of the **Azure Deployments** category activity.
 

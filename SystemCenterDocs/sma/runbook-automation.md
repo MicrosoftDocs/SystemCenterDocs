@@ -1,23 +1,19 @@
 ---
 description: Provides details on how you can automate operations in your Microsoft Azure Pack environment with Service Management Automation
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 09/04/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 04/03/2024
 title: Automate Microsoft Azure Pack operations with runbooks
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Automate Microsoft Azure Pack operations with Service Management Automation
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 
 You can use Service Management Automation (SMA) runbooks to automate routine operations in your Microsoft Azure Pack for Windows Server environment. There are two distinct types of SMA runbooks:
@@ -71,7 +67,7 @@ If the RunbookWorker property of the runbook is populated, then that Worker serv
 
 The Worker server creates a job that runs on the Worker server that services the request and remotely accesses any computers or other resources that it will work with. This requires the cmdlets in the runbook to be able to remotely access these resources. Alternatively, the runbook can include an [InlineScript](overview-powershell-workflows.md#inlinescript) command in order to use PowerShell Remoting to run commands locally on a target computer. This concept is illustrated in the following diagram.
 
-![Runbook execution diagram.](/system-center/sma/media/runbook-automation/smaauth_runbookconcept.png)
+![Runbook execution diagram.](./media/runbook-automation/smaauth_runbookconcept.png)
 
 If a job is suspended or interrupted, it may be resumed on a different Worker server. Because of this, you should be careful about using local resources that aren't accessible to all Worker servers, such as a file on a local computer. You should use [Global Assets](manage-global-assets.md) such as [Variables](manage-global-assets.md) as much as possible for sharing information between [checkpoints](overview-powershell-workflows.md#checkpoints).
 

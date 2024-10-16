@@ -1,23 +1,19 @@
 ---
 title: Agentless Monitoring in Operations Manager
 description: This article describes how to use agentless monitoring in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/24/2023
-ms.custom: UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---
 # Agentless Monitoring in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager can gather performance and availability data on a computer that doesn't have an agent installed by using a proxy agent that's installed on another computer. Use agentless monitoring of computers when it isn't possible or desirable to install an agent on a computer.  
 
@@ -56,7 +52,7 @@ You can monitor a computer without an agent by using either agentless monitoring
 
 5.  On the **Auto or Advanced?** page, do the following:  
 
-    1.  Select either **Automatic computer discovery** or **Advanced discovery**. Automatic computer discovery scans for Windows-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with WKS. If you select **Automatic computer discovery**, select **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.  
+    1.  Select either **Automatic computer discovery** or **Advanced discovery**. Automatic computer discovery scans for Windows-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard returns, such as computer names starting with WKS. If you select **Automatic computer discovery**, select **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.  
 
     2.  In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.  
 

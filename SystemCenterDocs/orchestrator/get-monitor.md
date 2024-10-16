@@ -1,27 +1,23 @@
 ---
 title: Get Monitor
 description: The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify.
-ms.custom: UpdateFrequency3
-ms.date: 4/25/2017
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 02/21/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 196b2938-3b17-4ab8-bfe9-3f5fb17ba159
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Get Monitor
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify. For example, you can use the Get Monitor activity to retrieve a message and replicate the information to a trouble ticketing system.
 
@@ -59,7 +55,7 @@ The following tables list the filters, properties, and published data for this a
 | IsAvailable   | Indicates whether the Operations Manager monitoring object is available to perform a monitoring operation |
 | IsManaged   | Indicates whether the Operations Manager monitoring object is managed   |
 | LastModified   | The date and time that the Operations Manager monitoring object was last modified   |
-| LeastDerivedNonAbstractingMonitoringClassId | The globally unique ID for the least derived non-abstract monitoring class   |
+| LeastDerivedNonAbstractingMonitoringClassId | The globally unique ID for the least derived nonabstract monitoring class   |
 | MaintenanceModeLastModified   | The date and time that the monitor maintenance mode was last changed   |
 | ManagementGroup   | The Management Group to which the Operations Manager monitoring object belongs   |
 | ManagementGroupId   | The unique ID of the Management Group   |

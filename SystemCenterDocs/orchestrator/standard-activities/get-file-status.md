@@ -3,27 +3,21 @@ title: Get File Status
 description: This article describes the functionality of Get File Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b61d52ec-e35d-42cf-a0fb-fda815e3195b
 caps.latest.revision: 15
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Get File Status
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Get File Status activity verifies that a file exists on the local file system or a network location using a UNC path. You can check that a file is available before copying to another location or before starting any services that depend on the existence of the file. If the file doesn't exist, you can take corrective action using the [Copy File](copy-file.md) activity to copy the file from another location.  
 

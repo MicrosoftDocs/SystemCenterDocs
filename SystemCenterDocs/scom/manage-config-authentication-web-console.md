@@ -2,23 +2,19 @@
 ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
 description: This article describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
-ms.date: 01/19/2023
-ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/19/2024
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Configure authentication with the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## Configure SSL encryption
 
@@ -57,27 +53,26 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 4. Save and close the file when finished.
 5. Select **Start**, select **Run**, type **regedit**, and select **OK**.
 
-5. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\\**, double-click the value **HTTP_GET_ENABLED** and change its value to **false**. Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.
+6. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\\**, double-click the value **HTTP_GET_ENABLED** and change its value to **false**. Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.
 
-6. After completing the above steps, reset the Web site hosting the Operations Manager Web console.  
+7. After completing the above steps, reset the Web site hosting the Operations Manager Web console.  
 
 ::: moniker-end
-
 
 ## Configure FIPS compliance
 
 Follow these steps for the Operations Manager Web console server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS). Enabling FIPS compliance for System Center - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory, etc.), also be FIPS compliant.
 
-### To install the cryptography DLL
+### Install the cryptography DLL
 
-1.	On the system hosting the Web console, use the Run as Administrator option to open a Command Prompt window.
-2.	Change directories to the SupportTools directory of your installation media, and then change directory to **AMD64**.  
-3.	Run the following **gacutil** command: `gacutil.exe –i Microsoft.EnterpriseManagement.Cryptography.dll`.
+1. On the system hosting the Web console, use the Run as Administrator option to open a Command Prompt window.
+2. Change directories to the SupportTools directory of your installation media, and then change directory to **AMD64**.  
+3. Run the following **gacutil** command: `gacutil.exe –i Microsoft.EnterpriseManagement.Cryptography.dll`.
 
-### To edit the machine.config files
+### Edit the machine.config files
 
-1.  Use a plain text editor to open the **machine.config** file in *%WinDir%\Microsoft.NET\Framework\v2.0.50727\CONFIG\\*.
-2.  If the following content doesn't exist within the `<Configuration>` root element, add as follows:
+1. Use a plain text editor to open the **machine.config** file in *%WinDir%\Microsoft.NET\Framework\v2.0.50727\CONFIG\\*.
+2. If the following content doesn't exist within the `<Configuration>` root element, add as follows:
 
     ```
      <mscorlib>
@@ -102,14 +97,13 @@ Repeat the preceding step on the following files:
 - %WinDir%\Microsoft.NET\Framework\v4.0.30319\Config\machine.config
 - %WinDir%\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config
 
-
 ::: moniker range="<sc-om-2019"
 
-### To edit the web.config file in WebHost folder
+### Edit the web.config file in WebHost folder
 
-1.	Use a plain text editor to open the web.config file in `<Path>:\Program Files\System Center 2016\Operations Manager\WebConsole\WebHost\web.config`.
-2.	In the \<encryption\> element, add the following element if it doesn't exist: `<symmetricAlgorithm  iv="SHA256"/>`
-3.	In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it doesn't exist: **tokenAlgorithm="SHA256"**
+1. Use a plain text editor to open the web.config file in `<Path>:\Program Files\System Center 2016\Operations Manager\WebConsole\WebHost\web.config`.
+2. In the \<encryption\> element, add the following element if it doesn't exist: `<symmetricAlgorithm  iv="SHA256"/>`
+3. In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it doesn't exist: **tokenAlgorithm="SHA256"**
 
      ```
      <connection autoSignIn="True" autoSignOutInterval="30">  
@@ -126,8 +120,7 @@ Repeat the preceding step on the following files:
 
 6. Save and close the file.
 
-
-### To edit the web.config file in MonitoringView folder
+### Edit the web.config file in MonitoringView folder
 
 1. Use a plain text editor to open the web.config file in `<PATH>:\Program Files\System Center 2012\Operations Manager\WebConsole\MonitoringView\web.config`.
 2. In the `<encryption>` element, add the following element if it doesn't exist: `<symmetricAlgorithm  iv="SHA256"/>`.
@@ -150,10 +143,10 @@ Repeat the preceding step on the following files:
 
 ::: moniker range=">=sc-om-2019"
 
-## Configure login session
+## Configure sign in session
 
 >[!NOTE]
->The web console uses windows authentication by default, if available to login into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
+>The web console uses windows authentication by default, if available to sign into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
 
 1. To edit the value, use a plain text editor to open the web.config in `<PATH>:\Program Files\Microsoft System Center\Operations Manager\WebConsole\Dashboard`.
 2. In the `<appSettings>` root element, modify the following session timeout value in minutes.
@@ -161,7 +154,6 @@ Repeat the preceding step on the following files:
 	  <add key="SessionTimeout" value="1440"/>
     ```
 3. After completing the above steps, reset the Web site hosting the Operations Manager Web console.
-
 
 ::: moniker-end
 

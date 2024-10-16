@@ -6,12 +6,256 @@
       "redirect_url" : "/system-center/index"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/whats-new-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/whats-new-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/upgrade-1801-to-1807.md",
+     "redirect_url" : "/system-center/scom/welcome"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/manage-overview-console-refresh.md",
+     "redirect_url" : "/system-center/scom/welcome"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/Features-removed-or-deprecated.md",
+     "redirect_url" : "/system-center/scom/welcome"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/migrate-to-operations-manager-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/migrate-to-operations-manager-managed-instance?tabs=mp-overrides"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/tutorial-create-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/tutorial-create-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/monitor-health-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/monitor-health-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/customizations-on-scom-managed-instance-management-servers.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/customizations-on-scom-managed-instance-management-servers"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/register-scom-managed-instance-resource-provider.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/register-scom-managed-instance-resource-provider"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-separate-subnet-in-vnet.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-separate-subnet-in-vnet"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-sql-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-sql-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-key-vault.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-key-vault"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-user-assigned-identity.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-user-assigned-identity"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-gmsa-account.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-group-managed-service-account"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/store-domain-credentials-in-key-vault.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/store-domain-credentials-key-vault"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-static-ip.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-static-ip"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/configure-network-firewall.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/configure-network-firewall"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/verify-azure-and-internal-gpo-policies.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/verify-azure-internal-group-policy-object-policies"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scom-managed-instance-self-verification-of-steps.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/self-verification-steps"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/create-operations-manager-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-operations-manager-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/connect-managed-instance-ops-console.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/connect-managed-instance-ops-console"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scale-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/scale-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/patch-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/patch-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/operations-manager-managed-instance-create-reports-on-power-bi.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/create-reports-power-bi"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/operations-manager-managed-instance-overview.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/dashboards-on-azure-managed-grafana.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/dashboards-on-azure-managed-grafana"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/query-scom-managed-instance-data-on-grafana.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/query-scom-managed-instance-data-on-grafana"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/view-operations-manager-alerts-azure-monitor.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/view-operations-manager-alerts-azure-monitor"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/monitor-off-azure-vm-with-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/monitor-off-azure-vm-with-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/monitor-arc-enabled-vm-with-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/monitor-arc-enabled-vm-with-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scom-mi-activity-log.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/scom-mi-activity-log"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/configure-log-analytics-for-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/configure-log-analytics-for-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/troubleshoot-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/troubleshoot-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/troubleshooting-input-parameters-scom-managed-instance.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/troubleshooting-input-parameters-scom-managed-instance"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/operations-manager-managed-instance-common-questions.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/common-questions"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/use-managed-identities-with-scom-mi.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/use-managed-identities-with-scom-mi"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scom-mi-data-encryption-at-rest.md",
+     "redirect_url" : "/azure/azure-monitor/scom-manage-instance/scom-mi-data-encryption-at-rest"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/delete-network-adapter.md",
+     "redirect_url" : "/system-center/orchestrator/delete-network-adapter-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/manage-mp-installed-during-seutp.md",
+     "redirect_url" : "/system-center/scom/manage-mp-installed-during-setup"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/delete-vm-disk-activity.md",
+     "redirect_url" : "/system-center/orchestrator/delete-vm-disk-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/modify-vm-disk-activity.md",
+     "redirect_url" : "/system-center/orchestrator/modify-vm-disk-activity-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/monitor-vmm-job.md",
+     "redirect_url" : "/system-center/orchestrator/monitor-vmm-job-in-system-center-2016"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/configure-service-deployment-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/configure-service-deployment"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/deploy-service-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/deploy-service"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/apply-pending-service-update-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/apply-pending-service-update"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-cloud-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-cloud"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-service-configuration-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-service-configuration"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-service-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-service"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-service-template-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-service-template"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-tier-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-tier"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-user-role-quota-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-user-role-quota"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-vm-host-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-vm-host"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-vm-network-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-vm-network"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/get-vm-subnet-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/get-vm-subnet"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/scale-tier-in-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/scale-tier-in"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/scale-tier-out-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/scale-tier-out"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/set-pending-service-update-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/set-pending-service-update"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orchestrator/stop-service-in-system-center-2016.md",
+     "redirect_url" : "/system-center/orchestrator/stop-service"
+  },
+  {
       "source_path" : "SystemCenterDocs/dpm/get-started/upgrade-to-dpm-2016.md",
       "redirect_url" : "/system-center/dpm/upgrade-to-dpm-2016"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/manage-deploy-windows-agent-manually-scom-managed-instance.md",
+     "redirect_url" : "/system-center/scom/operations-manager-managed-instance-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/plan-planning-agent-deployment-scom-managed-instance.md",
+     "redirect_url" : "/system-center/scom/operations-manager-managed-instance-overview"
+  },
+  {
      "source_path" : "SystemCenterDocs/dpm/get-started/Get-started.md",
      "redirect_url": "/system-center/dpm/dpm-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/scom/scom-managed-instance-monitoring-scenarios.md",
+     "redirect_url": "/system-center/scom/monitor-health-scom-managed-instance"
   },
   {
     "source_path" : "SystemCenterDocs/dpm/get-started/prepare-environment-for-dpm.md",
@@ -3177,6 +3421,14 @@
      "redirect_url": "/system-center/system-center"
   },
   {
+     "source_path" : "SystemCenterDocs/VMM/hyper-v-hosts.md",
+     "redirect_url": "/system-center/vmm/hyper-v-cluster"
+  },
+  {
+     "source_path" : "SystemCenterDocs/VMM/manage-vmm.md",
+     "redirect_url": "/system-center/vmm/provision-vms"
+  },
+  {
      "source_path" : "SystemCenterDocs/VMM/vmm.md",
      "redirect_url": "/system-center/vmm/overview"
   },
@@ -3629,6 +3881,14 @@
 {
      "source_path": "SystemCenterDocs/scom/sql-server-management-pack-tasks.md",
      "redirect_url": "/system-center/scom/sql-server-management-pack-tasks-overview"
+ },
+ {
+     "source_path": "SystemCenterDocs/scom/managed-instance-management-pack-automatic-monitoring.md",
+     "redirect_url": "/system-center/scom/managed-instance-management-pack-automatic-monitoring-service-principal-name"
+ },
+ {
+     "source_path": "SystemCenterDocs/scom/sql-server-management-pack-custom-monitor.md",
+     "redirect_url": "/system-center/scom/sql-server-management-pack-custom-database-engine-monitor"
  }
  ]
 }

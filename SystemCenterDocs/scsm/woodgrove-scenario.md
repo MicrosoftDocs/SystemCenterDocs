@@ -1,14 +1,14 @@
 ---
 title: Woodgrove Bank customization sample scenario
 description: Provides an overview and the steps needed to complete the Woodgrove Bank customization sample scenario for the Service Manager Authoring Tool.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 03/27/2023
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ea9bb90e-5a00-4346-b2a2-f6076c203778
@@ -17,11 +17,7 @@ ms.custom: engagement-fy23
 
 # Woodgrove Bank customization sample scenario for the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 To provide real-world context to the step-by-step procedures for the Service Manager Authoring Tool, we've created a fictitious scenario that takes place at a fictitious company, Woodgrove Bank.  
 

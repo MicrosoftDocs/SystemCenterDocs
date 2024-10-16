@@ -1,28 +1,22 @@
 ---
 title: Monitor Entry
 description: The Monitor Entry activity invokes a runbook when new entries are generated and/or existing entries are modified in HP Service Manager.
-ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8fe4ab70-2443-4fc6-a076-9405fd3ea2cf
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/12/2024
 ---
 # Monitor Entry
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Monitor Entry activity invokes a runbook when new entries are generated and/or existing entries are modified in HP Service Manager.
 
@@ -41,9 +35,9 @@ The following tables list the required properties and published data for this ac
 
 Time synchronization between the Runbook Server and the HP Service Manager system is important to the operation of the Monitor Entry object. For this reason, the Monitor Entry object attempts multiple methods to synchronize the times of the systems. The object will first try to use the Domain time. If the Runbook Server user doesn't have the permission to perform a **NET TIME** command on the HP Service Manager system, then the object will attempt to retrieve the information from the database. If the ODBC driver isn't present on the Runbook Server, then the object will default to use the local time of the Runbook Server. If you're experiencing problems with the Monitor Entry object, try one of the following:
 
--   Ensure that the Runbook Server and the HP Service Manager are on the same domain and that the user assigned to the Runbook Server service is able to successfully perform a NET TIME command against the HP Service Manager system.
--   Create an ODBC DSN on the Runbook Server that connects to the HP Service Manager database. Ensure that this DSN information is added to the connection information for that HP Service Manager system. For more information about creating connections to HP Service Manager, see [Configuring the HP Service Manager Connections](/previous-versions/system-center/packs/hh771464(v=technet.10)#ConfiguringConnections).
--   Ensure that the locale and system times are synchronized between the Runbook Server and the HP Service Manager system.
+- Ensure that the Runbook Server and the HP Service Manager are on the same domain and that the user assigned to the Runbook Server service is able to successfully perform a NET TIME command against the HP Service Manager system.
+- Create an ODBC DSN on the Runbook Server that connects to the HP Service Manager database. Ensure that this DSN information is added to the connection information for that HP Service Manager system. For more information about creating connections to HP Service Manager, see [Configuring the HP Service Manager Connections](/previous-versions/system-center/packs/hh771464(v=technet.10)#ConfiguringConnections).
+- Ensure that the locale and system times are synchronized between the Runbook Server and the HP Service Manager system.
 
 ## Other activities
 

@@ -3,12 +3,12 @@ ms.assetid: 9f175a54-0700-4bf3-8288-d30f0f3538f0
 title: Features and enhancements in Management Pack for SQL Server Replication
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Replication
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Features and Enhancements in Management Pack for SQL Server Replication

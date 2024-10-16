@@ -3,26 +3,20 @@ title: Add VM Endpoint
 description: The Add VM Endpoint activity adds an external endpoint to the specified virtual machine.
 ms.custom: UpdateFrequency2
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b6ddabeb-d6fb-4f7f-9b8e-afe7f88b01ba
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Add VM Endpoint
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Add VM Endpoint** activity adds an external endpoint to the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

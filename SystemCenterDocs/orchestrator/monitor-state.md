@@ -1,27 +1,23 @@
 ---
 title: Monitor State
 description: The Monitor State activity monitors the state of an Operations Manager object that you specify.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 11/09/2023
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 47d10330-5980-44f7-a11c-23cc04636ddc
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Monitor State
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Monitor State activity monitors the state of an Operations Manager object that you specify. For example, you can use the Monitor State activity to trigger a corrective runbook when an object with a Warning or Critical state is detected.
 
@@ -58,4 +54,4 @@ The following tables list the properties and published data for this activity. T
 | Path   | The path to the Operations Manager monitoring object   |
 | Server   | The name of the Operations Manager server   |
 | StateLastModified   | The date and time that the Operations Manager monitoring object state was last changed   |
-| Username   | The user name that was used to access the Operations Manager server   |
+| Username   | The username that was used to access the Operations Manager server   |

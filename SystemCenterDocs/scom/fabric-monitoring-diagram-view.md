@@ -1,24 +1,20 @@
 ---
 ms.assetid: 6dea2e1e-2a33-417c-8a65-785b5dd2cd9b
 title: The Fabric Monitoring Diagram View displaying health states of cloud environments in System Center Operations Manager
-description: This article provides an overview of the Fabric Monitoring diagram view
+description: This article provides an overview of the Fabric Monitoring diagram view.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/27/2019
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # The Fabric Monitoring Diagram view
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The Fabric Monitoring Diagram view gives you a diagram of the entire infrastructure and shows the health state of each part of the fabric. The Diagram view helps you answer questions such as **What is the health of my entire fabric?** Improvements to the diagram ensure that health rolls up and that the relevant fabric components are part of the Diagram View.
 
@@ -28,7 +24,7 @@ Follow these steps:
 
 1. To open the Diagram View, select **Monitoring**, and in **Microsoft System Center Virtual Machine Manager Views**, select **Diagram View** for the environment you want to see displayed as a diagram.
 
-   Diagram View nodes show the health roll up, so if a node is shown as healthy, you know that everything beneath is also healthy. Similarly, if a node is marked unhealthy, something in that node has a problem.
+   Diagram View nodes show the health roll up. So if a node is shown as healthy, you know that everything beneath is also healthy. Similarly, if a node is marked unhealthy, something in that node has a problem.
 
    ![Screenshot showing the Diagram view.](./media/fabric-monitoring/diagram-view.png)
 
@@ -40,4 +36,4 @@ Follow these steps:
 
 ## Next steps
 
-[Monitor cloud fabric using System Center Advisor ](use-system-center-advisor.md)
+[Monitor cloud fabric using System Center Advisor.](use-system-center-advisor.md)

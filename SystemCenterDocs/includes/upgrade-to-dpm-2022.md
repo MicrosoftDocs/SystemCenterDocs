@@ -1,14 +1,14 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 2022.
-manager:  mkluck
 ms.topic:  include
-author:  jyothisuri
-ms.author: jsuri
-ms.prod:  system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
 keywords:
-ms.date:  11/08/2022
+ms.date:  08/06/2024
 title:  include file
-ms.technology:  data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 ---
 
@@ -21,7 +21,6 @@ You can upgrade to DPM 2022 from the following versions:
 
   Before you upgrade to or install DPM 2022, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
-
 ## Upgrade path for DPM 2022
 If you upgrade from DPM 2019 to DPM 2022, ensure that your installation has the following necessary updates:
 
@@ -31,11 +30,10 @@ If you upgrade from DPM 2019 to DPM 2022, ensure that your installation has the 
 - Upgrade the DPM Remote Administrator on all production servers.
 - Backups continue without rebooting your production server.
 
-
 ### Upgrade steps for DPM
 
 >[!Note]
->If the name of the existing DPM database is DPMDB or the DPM server is using a remote SQL server instance shared by multiple DPM servers, rename the database before you upgrade. See related known issues and workaround here.
+>If the name of the existing DPM database is DPMDB or the DPM server is using a remote SQL server instance shared by multiple DPM servers, rename the database before you upgrade. See related known issues and workaround [here](/system-center/dpm/dpm-release-notes#upgrade-from-dpm-2019-to-dpm-2022-might-fail-when-the-dpm-database-name-is-dpmdbin).
 
 1. To install the DPM, select Setup.exe to open the System Center 2022 wizard.
 2. Under Install, select Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.

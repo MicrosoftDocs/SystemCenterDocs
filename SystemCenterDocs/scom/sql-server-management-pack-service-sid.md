@@ -3,12 +3,12 @@ ms.assetid: 8f280433-6981-402e-b94d-ba2e9ae97b81
 title: Service SID in Management Pack for SQL Server
 description: This article explains how to configure monitoring with service SID
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 2/1/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Service SID
@@ -95,6 +95,9 @@ To configure monitoring using Service Security Identifier, perform the following
     USE [master];
     GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService];
     GRANT EXECUTE ON sys.xp_instance_regread TO [SCOM_HealthService];
+    GRANT SELECT ON [sys].[indexes] TO [SCOM_HealthService];
+    GRANT SELECT ON [sys].[tables] TO [SCOM_HealthService];
+    GRANT SELECT ON [sys].[dm_db_index_physical_stats] TO [SCOM_HealthService];
     USE [msdb];
     GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_HealthService];
     GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_HealthService];

@@ -1,14 +1,14 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2022 in your environment.
-manager: mkluck
 ms.topic: include
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 05/02/2022
+ms.date: 08/06/2024
 title: Preparing your environment for System Center Data Protection Manager
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid:
 ---
 
@@ -98,7 +98,6 @@ DPM 2022 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/sql-se
 |-----------|-------|
 |Protected workload size limits|DPM 2016 and later with Modern Backup Storage don't have LDM limits. <br/><br/> With DPM 2016 and later, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested. However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation.|
 |.NET framework|All protected computers need at least .NET Framework 4.0 installed before you install the DPM protection agent.|
-|Windows Management Framework (WMF) <br/><br/> (Not applicable of DPM 2019)| If you're protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/><br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [Windows Management Frame 5.1](https://www.microsoft.com/download/details.aspx?id=54616) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/><br/> Windows Server 2012 and later don't require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
 |Prerequisites|DPM protection agent must be installed on a protected computer. For more information, see Set up the protection agent.<br/><br/> Protected volumes must be at least 1 GB in size with NTFS formatting.<br/><br/> Server operating systems protected by DPM must be 64 bit.|
 
