@@ -4,11 +4,11 @@ title: Custom query-based performance rule in Management Pack for SQL Server
 description: This article explains how to configure custom query performance rule in Management Pack for SQL Server
 manager: evansma
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 ms.date: 12/7/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Custom Query-Based Performance Rule

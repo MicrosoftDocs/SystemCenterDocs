@@ -1,24 +1,20 @@
 ---
 title: How to Personalize a View in Operations Manager
 description: This article describes how to customize views in the Operations Manager Operations console.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
-ms.date: 02/06/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/22/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
 ---
 
 # How to personalize a view in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, views are contained in management packs. If a view is contained in a sealed management pack, you can open the properties of the view, but you can't save any changes to it. However, you can change the display options of the view and then save it as a personalized view.  
 

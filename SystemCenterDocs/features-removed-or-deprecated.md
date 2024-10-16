@@ -1,10 +1,10 @@
 ---
 description: This topic lists the features and functionality that have been removed or replaced in System Center 2016.
-manager: jsuri
 ms.topic: article
-author: Farha-Bano
-ms.author: v-farhabano
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 05/31/2021
 title: Features Removed or Deprecated from System Center 2016

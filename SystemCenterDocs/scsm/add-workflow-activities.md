@@ -1,15 +1,15 @@
 ---
 title: Add or remove workflow activities
 description: You can add or remove Service Manager workflow activities in a workflow to automate processes.
-manager: mkluck
-ms.custom: na, UpdateFrequency2
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/22/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 32de708f-02f7-4021-882b-14ed140ebc89
@@ -17,11 +17,7 @@ ms.assetid: 32de708f-02f7-4021-882b-14ed140ebc89
 
 # Add or remove Service Manager workflow activities
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Workflow activities are the building blocks of a workflow. You can use the procedures in this section to add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow.  
 

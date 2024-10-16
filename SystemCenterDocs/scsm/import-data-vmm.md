@@ -1,25 +1,21 @@
 ---
 title: Import data from Virtual Machine Manager
 description: Describes how you can import data from Virtual Machine Manager into Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 05/06/2019
-ms.technology: service-manager
+ms.date: 03/18/2024
+ms.subservice: service-manager
 ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Import data from Virtual Machine Manager into Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 You can import objects, such as VM templates, service templates, and storage classifications that are created in Virtual Machine Manager (VMM) into the Service Manager database by creating a Virtual Machine Manager connector. After you import these objects into the Service Manager database, you can use these objects, for example, when you create Request Offerings.
 

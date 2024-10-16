@@ -1,28 +1,23 @@
 ---
 title: Customize VM Activity
 description: The Customize VM activity is used in a runbook to customize a virtual machine using a designated script.
-ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f6e414a7-8505-432c-9da1-052ab78cdace
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 07/10/2024
 ---
 # Customize VM Activity
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Customize VM activity is used in a runbook to customize a virtual machine using a designated script. This allows the runbook to perform advanced customization using a pre-made Customization Spec.
 
@@ -51,8 +46,6 @@ No optional properties are provided for this activity.
 ## Configuring the Customize VM Activity
 
 The following procedure describes the steps required to configure a Customize VM activity.
-
-#### To configure the Customize VM Activity
 
 1.  From the **Activities** pane, drag a **Customize VM** activity to the active runbook.
 

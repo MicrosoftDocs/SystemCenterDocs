@@ -1,15 +1,15 @@
 ---
 title: Refresh OLAP data cube information
 description: Explains how to refresh OLAP data cube information in Service Manager.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aeb99cdc-6d17-4979-bbf8-76f822e2636b
@@ -17,31 +17,25 @@ ms.assetid: aeb99cdc-6d17-4979-bbf8-76f822e2636b
 
 # Refresh OLAP data cube information in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
-
 You can use the following procedures in Service Manager to refresh data in a Microsoft Online Analytical Processing \(OLAP\) data cube and then validate that it was refreshed. By default, most OLAP data cubes are refreshed every 24 hours. However, you can manually refresh the data to ensure that you're accessing the latest information from the data warehouse.  
 
  If necessary, you can also manually process an OLAP data cube outside of the processing job.  
 
 ## Refresh using the Service Manager console  
 
-1.  In the Service Manager console, select **Data Warehouse**, expand it, and select **Cubes**.  
+1. In the Service Manager console, select **Data Warehouse**, expand it, and select **Cubes**.  
 
-2.  In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Process Cube**.  
+2. In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Process Cube**.  
 
-3.  Select **OK** to close the **Process Cube** dialog.  
+3. Select **OK** to close the **Process Cube** dialog.  
 
 ### Validate refresh
 
--   Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
+- Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
 
 ## Manually refresh
 
--   Run the following script for the OLAP data cube of your choice.  
+- Run the following script for the OLAP data cube of your choice.  
 
     ```  
     Update etl.CubePartition set  

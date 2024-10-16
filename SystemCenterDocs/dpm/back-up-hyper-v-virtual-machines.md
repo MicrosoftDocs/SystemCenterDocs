@@ -1,25 +1,19 @@
 ---
 description: This article contains the procedures for backing up and recovery of virtual machines.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 02/29/2024
 title: Back up Hyper V virtual machines
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 
 # Back up Hyper-V virtual machines
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 System Center Data Protection Manager (DPM) protects Hyper-V virtual machines by backing up the data of virtual machines. You can back up data at the Hyper-V host level to enable VM-level and file-level data recovery or back up at the guest-level to enable application-level recovery.
 
@@ -139,7 +133,7 @@ These are the prerequisites for backing up Hyper-V virtual machines with DPM.
 |Prerequisite|Details|
 |------------|-------|
 |DPM prerequisites|- If you want to perform item-level recovery for virtual machines (recover files, folders, and volumes) then you'll need to install the Hyper-V role on the DPM server. If you only want to recover the virtual machine and not item-level, then the role isn't required.<br />-   You can protect up to 800 virtual machines of 100 GB each on one DPM server and allow multiple DPM servers that support larger clusters.<br />-   DPM excludes the page file from incremental backups to improve virtual machine backup performance.<br />-   DPM can back up a Hyper-V server or cluster in the same domain as the DPM server or in a child or trusted domain. If you want to back up Hyper-V in a workgroup or an untrusted domain, you'll need to set up authentication. For a single Hyper-V server, you can use NTLM or certificate authentication. For a cluster, you can use certificate authentication only.<br />-   Using host-level backup to back up virtual machine data on passthrough disks isn't supported. In this scenario, we recommend you use host-level backup to back up VHD files and guest-level backup to back up the other data that isn't visible on the host.<br />-   When protecting a Hyper-V cluster using scaled-out DPM protection (multiple DPM server protecting a large Hyper-V cluster), you can't add secondary protection for the protected Hyper-V workloads.<br />-   You can only back up replica virtual machines if DPM is running System Center 2012 R2 and the Hyper-V host is running on Windows Server 2012 R2.<br />-   You can back up deduplicated volumes.|
-|Hyper-V VM prerequisites|-   The version of Integration Components that's running on the virtual machine should be the same as the version of Hyper-V on the server that's running Hyper-V.<br />-   For each virtual machine backup, you'll need free space on the volume hosting the virtual hard disk files to allow Hyper-V enough room for differencing disks (AVHDs) during backup. The space must be at least equal to the calculation **Initial disk size\*Churn rate\*Backup** window time. If you're running multiple backups on a cluster, you'll need enough storage capacity to accommodate the AVHDs for each of the virtual machines using this calculation.<br />-   If you want to back up virtual machines located on a Hyper-V host server running Windows Server 2012 R2, the virtual machine should have an SCSI controller specified, even if it's not connected to anything. This is because for online backup in Windows Server 2012 R2, the Hyper-V host mounts a new VHD in the VM and then dismounts it later. Only the SCSI controller can support this and is thus required for online backup of the virtual machine. The SCSI controller doesn't it became clear why we need this SCSI controller. Without this setting, event ID 10103 will be issued when you try to back up the virtual machine.|
+|Hyper-V VM prerequisites|-   The version of Integration Components that's running on the virtual machine should be the same as the version of Hyper-V on the server that's running Hyper-V.<br />-   For each virtual machine backup, you'll need free space on the volume hosting the virtual hard disk files to allow Hyper-V enough room for differencing disks (AVHDs) during backup. The space must be at least equal to the calculation **Initial disk size\*Churn rate\*Backup** window time. If you're running multiple backups on a cluster, you'll need enough storage capacity to accommodate the AVHDs for each of the virtual machines using this calculation.<br />-   If you want to back up virtual machines located on a Hyper-V host server running Windows Server 2012 R2, the virtual machine should have a SCSI controller specified, even if it's not connected to anything. This is because for online backup in Windows Server 2012 R2, the Hyper-V host mounts a new VHD in the VM and then dismounts it later. Only the SCSI controller can support this and is thus required for online backup of the virtual machine. The SCSI controller doesn't it became clear why we need this SCSI controller. Without this setting, event ID 10103 will be issued when you try to back up the virtual machine.|
 |Linux prerequisites|-   You can back up Linux virtual machines using DPM 2012 R2. Only file-consistent snapshots are supported.|
 |Back up VMs with CSV storage|-   For CSV storage, install the Volume Shadow Copy Services (VSS) hardware provider on the Hyper-V server. Contact your storage area network (SAN) vendor for the VSS hardware provider.<br />-   If a single node shuts down unexpectedly in a CSV cluster, DPM will perform a consistency check against the virtual machines that were running on that node.<br />-   If you need to restart a Hyper-V server that has BitLocker Drive Encryption enabled on the CSV cluster, you must run a consistency check for Hyper-V virtual machines.|
 |Back up VMs with SMB storage|-   Turn on auto-mount on the server that's running Hyper-V to enable virtual machine protection.<br />-   Disable TCP Chimney Offload.<br />-   Ensure that all Hyper-V machine accounts have full permissions on the specific remote SMB file shares.<br />-   Ensure that the file path for all virtual machine components during recovery to alternate location is less than 260 characters. If not, recovery might succeed but Hyper-V can't mount the virtual machine.<br />-   The following scenarios aren't supported:<br />     Deployments where some components of the virtual machine are on local volumes and some are on remote volumes; an IPv4 or IPv6 address for storage location file server; and recovery of a virtual machine to a computer that uses remote SMB shares.<br />-   You'll need to enable the File Server VSS Agent service on each SMB server - Add it in **Add roles and features** > **Select server roles** > **File and Storage Services** > **File Services** > **File Service** > **File Server VSS Agent Service**.|
@@ -297,7 +291,7 @@ A replica virtual machine is turned off until a failover is initiated, and VSS c
 
   ```powershell
 
-  Convert-VHD –Path c:\VM\my-vhdx.vhdx –DestinationPath c:\New-VM\new-vhdx.vhdx –VHDType Dynamic
+  Convert-VHD –Path c:\VM\my-vhdx.vhdx –DestinationPath c:\New-VM\new-vhdx.vhdx –VHDType Fixed
 
   ```
 
@@ -341,6 +335,8 @@ When you can recover a backed-up virtual machine, you use the Recovery wizard to
 
 ## Restore an individual file from a Hyper-V VM
 
+::: moniker range="<=sc-dpm-2019"
+
 You can restore individual files from a protected Hyper-V VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
 >[!NOTE]
@@ -371,3 +367,48 @@ You can restore individual files from a protected Hyper-V VM recovery point. Thi
 1. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 
 1. On the **Summary** screen, review your settings and select **Recover** to start the recovery process. The **Recovery status** screen shows the progression of the recovery operation.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+You can restore individual files from a protected Hyper-V VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
+
+>[!NOTE]
+>- Restoring an individual file from a Hyper-V VM is available only for Windows VM and from Disk and Online Recovery Points.
+>- With DPM 2022 UR2 and later, you can restore an individual file from a Hyper-V VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+For item-level recovery from an online recovery point, ensure that the Hyper-V role is installed on the MABS Server, automatic mounting of volumes is enabled, and the VM VHD doesn't contain a dynamic disk. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
+
+To restore an individual file from a Hyper-V VM, follow these steps:
+
+1. In the DPM Administrator Console, select **Recovery** view.
+
+1. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a Hyper-V VM or folder, the **Recovery points for** pane displays the available recovery points.
+
+    ![Screenshot of "Recovery points for" pane to recover files from Hyper-v VM.](./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk.png)
+
+1. In the **Recovery Points for** pane, use the calendar to select the date that contains the desired recovery point(s). Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, ensure that you've chosen the correct **Recovery time**. If the selected date has multiple recovery points, choose your recovery point by selecting it in the Recovery time dropdown menu. Once you chose the recovery point, the list of recoverable items appears in the Path pane.
+
+1. To find the files you want to recover, in the **Path** pane, double-click the item in the Recoverable item column to open it. If you use an online recovery point, wait until the recovery point is mounted. Once the mount is complete, select the VM, VHD disk, and the volume you want to restore until the files and folders are listed. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item. Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** doesn't search into subfolders. To search through subfolders, double-click the folder. Use the Up button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You can't recover items from multiple folders in the same recovery job.
+
+    ![Screenshot of Review Recovery Selection in Hyper-v VM.](./media/back-up-hyper-v-virtual-machines/hyper-v-vm-disk-selection.png)
+
+1. Once you've selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**. In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
+
+1. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, select **Modify**. To leave network throttling disabled, select **Next**. No other options on this wizard screen are available for VMware VMs. If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
+
+1. On the **Select Recovery Type** screen, select **Next**. You can only recover your file(s) or folder(s) to a network folder.
+
+1. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
+
+    ![Screenshot of Specify location to recover files from Hyper-v VM.](./media/back-up-hyper-v-virtual-machines/hyper-v-vm-specify-destination.png)
+
+1. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
+
+1. On the **Summary** screen, review your settings and select **Recover** to start the recovery process. The **Recovery status** screen shows the progression of the recovery operation.
+
+>[!TIP]
+>You can perform item-level restore of online recovery points for Hyper-V VMs running Windows also from Add external DPM Server to recover VM files and folders quickly.
+
+::: moniker-end

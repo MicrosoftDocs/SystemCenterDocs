@@ -2,27 +2,23 @@
 title: Shutdown VM Instance
 description: The Shutdown VM Instance activity shuts down the specified virtual machine.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a60f46a3-7696-4857-8cd9-eecc2162c9ee
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---
 # Shutdown VM Instance
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Shutdown VM Instance** activity shuts down the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

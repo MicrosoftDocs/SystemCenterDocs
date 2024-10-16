@@ -1,15 +1,15 @@
 ---
 title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
-manager: mkluck
-ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 04/26/2023
+ms.custom: intro-deployment, UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
@@ -17,11 +17,6 @@ ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
 
 # Deployment considerations with a disjointed namespace
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjointed namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](/windows-server/identity/ad-ds/plan/disjoint-namespace).  
 

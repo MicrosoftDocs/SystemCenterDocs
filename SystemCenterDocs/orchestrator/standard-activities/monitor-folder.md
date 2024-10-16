@@ -3,27 +3,21 @@ title: Monitor Folder
 description: This article describes how to configure the Monitor Folder Activity
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7a88688b-c7dd-4cc7-bda8-cd8ca52fdb05
 caps.latest.revision: 13
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Monitor Folder
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor Folder activity invokes a runbook when the folder that you specified has changed, or if the files within that folder have been changed. You can monitor the size of log files in a folder. If the files grow too large, the Monitor Folder activity can invoke a runbook that will archive, backup, and then purge the log files to clean up the folder.  
 

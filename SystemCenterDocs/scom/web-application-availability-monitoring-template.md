@@ -1,38 +1,34 @@
 ---
 ms.assetid: 3b3c168b-a279-41cc-bde4-ba6cc554add9
 title: Web Application Availability Monitoring template in Operations Manager management pack
-description: This article provides an overview of web application availability monitoring template
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+description: This article provides an overview of web application availability monitoring template.
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Web Application Availability Monitoring template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-::: moniker-end
-
-The  **Web Application Availability Monitoring**  template lets you create availability monitoring tests for one or more web application URLs and run these monitoring tests from internal locations. In addition to state and alert views, you can display the status of these tests in a provided map dashboard and a details dashboard.
+The **Web Application Availability Monitoring** template lets you create availability monitoring tests for one or more web application URLs and run these monitoring tests from internal locations. In addition to state and alert views, you can display the status of these tests in a provided map dashboard and a details dashboard.
 
 ## Scenarios
 
-Use the  **Web Application Availability Monitoring**  template in scenarios where you've to monitor web-based applications from different locations to see if they're working according to certain requirements, which you can specify.
+Use the **Web Application Availability Monitoring** template in scenarios where you've to monitor web-based applications from different locations to see if they're working according to certain requirements, which you can specify.
 
 ## Internal locations
 
-You might have web applications that must always be available at internal locations. Use the  **Web Application Availability Monitoring**  template to see which web applications are available from which internal locations.
+You might have web applications that must always be available at internal locations. Use the **Web Application Availability Monitoring** template to see which web applications are available from which internal locations.
 
 ## Monitoring Performed by the Web Application Availability Monitoring Template
 
-By default, the  **Web Application Availability Monitoring**  template configures the following monitoring by default. You can modify the monitor in the  **Change Configuration**  page of the  **Web Application Availability Monitoring**  template.
+By default, the  **Web Application Availability Monitoring** template configures the following monitoring by default. You can modify the monitor in the **Change Configuration** page of the **Web Application Availability Monitoring** template.
 
 | Monitor description | Default values |
 | --- | --- |
@@ -40,7 +36,7 @@ By default, the  **Web Application Availability Monitoring**  template configure
 ||- Test Frequency: 10 minutes
 ||- Performance data collection interval: 1 every 10 minutes
 ||- Test time-out: 45 seconds
-||- HTTP status code: 400 (An alert will be generated if the HTTP status code is 400 or greater.)
+||- HTTP status code: 400 (An alert is generated if the HTTP status code is 400 or greater.)
 ||- Number of consecutive times a criteria should fail before an alert is generated: 1
 ||- Generate alerts from each test: enabled
 ||- Allow redirects: enabled
@@ -62,7 +58,7 @@ By default, the  **Web Application Availability Monitoring**  template configure
 
 ## Viewing monitoring data
 
-All data collected by the  **Web Application Availability Monitoring**  template appears in the  **Web Application Availability Monitoring**  folder in the  **Application Monitoring**  folder in the  **Monitoring**  navigation pane. The  **Application Availability Monitoring**  folder contains the default views and subfolders that provide Test State, Web Application Status, and alerts related to the tests being monitored. By using the Test State view, you can see the test state of the individual tests. The state of each object matches the state of the targeted object that has the worst health state so that you see the worst state of the monitors that are running. If one or more of the tests are shown with an error while at least one other test is healthy, it could indicate a problem for that particular test location. If all the components are unhealthy, it could indicate a problem with the web application itself.
+All data collected by the **Web Application Availability Monitoring** template appears in the  **Web Application Availability Monitoring**  folder in the  **Application Monitoring**  folder in the  **Monitoring**  navigation pane. The  **Application Availability Monitoring**  folder contains the default views and subfolders that provide Test State, Web Application Status, and alerts related to the tests being monitored. By using the Test State view, you can see the test state of the individual tests. The state of each object matches the state of the targeted object that has the worst health state so that you see the worst state of the monitors that are running. If one or more of the tests are shown with an error while at least one other test is healthy, it could indicate a problem for that particular test location. If all the components are unhealthy, it could indicate a problem with the web application itself.
 
 **Web Application Availability Monitoring folder**
 
@@ -72,7 +68,7 @@ To view the state of the individual monitors, open the Health Explorer for each 
 
 ## Wizard options
 
-When you run the  **Web Application Availability Monitoring**  template, you've to provide values for options as listed in the following tables. Each table represents a single page in the wizard.
+When you run the **Web Application Availability Monitoring** template, you've to provide values for options as listed in the following tables. Each table represents a single page in the wizard.
 
 ## General
 
@@ -106,7 +102,7 @@ The following options are available on the  **What to Monitor**  page of the wiz
 
 Select the internal locations from which you want the URLs to be monitored.
 
-The following options are available on the  **Where to Monitor From**  page of the wizard.
+The following options are available on the **Where to Monitor From** page of the wizard.
 
 | Option | Description |
 | --- | --- |
@@ -117,7 +113,7 @@ The following options are available on the  **Where to Monitor From**  page of t
 
 ![Screenshot of select internal locations page.](./media/select-internal-locations-page.png)
 
-Select the internal locations from which you want to monitor the URLs you specified on the  **What to Monitor**  page. Select Add to add internal locations and then search for and select the internal locations that you want to monitor from.
+Select the internal locations from which you want to monitor the URLs you specified on the  **What to Monitor**  page. Select **Add** to add internal locations and then search for and select the internal locations that you want to monitor from.
 
 The following options are available on the  **Select internal locations**  page of the wizard.
 
@@ -236,7 +232,7 @@ The following options are available on the  **Change Configuration for Test Set*
 | Performance Collection: Request (Base page): Response time | Processing time for the request, such as opening a browser and waiting for all resources to load. |
 | Performance Collection: Request (Base page): TCP connect time | Time taken to establish a TCP connection to the target server and receive the initial greeting from the service. |
 | Performance Collection: Request (Base page): Time to first byte | Time taken since the TCP connection is established until the first byte of response is received. |
-| Performance Collection: Request (Base page): Time to last byte | Time from when TCP connection is established until the last byte of response is completely received. |
+| Performance Collection: Request (Base page): Time to last byte | Time from when TCP connection is established until the last byte of the response is completely received. |
 | Performance Collection: Request (Base page): DNS resolution time | Time taken to resolve the URL domain name to the IP address. |
 | Performance Collection: Request (Base page): Content size | Size of the response body received. |
 | Performance Collection: Request (Base page): Content time | Base page download time (base page only). |
@@ -259,7 +255,7 @@ The following options are available on the  **Change Configuration for Test Set*
 
 ![Screenshot of Summary page.](./media/summary-page1.png)
 
-The  **Summary**  page of the wizard lists the settings you've configured for the  **Web Application Availability Monitoring**  template. If you want to change any of these settings, select  **Previous**  or the template page until you reach the page with the settings that you want to change.
+The  **Summary**  page of the wizard lists the settings you've configured for the  **Web Application Availability Monitoring** template. If you want to change any of these settings, select  **Previous**  or the template page until you reach the page with the settings that you want to change.
 
 ## Creating and modifying web application availability monitoring templates
 
@@ -268,11 +264,11 @@ For the procedure to run the .NET Application Performance Monitoring wizard, see
 #### To modify an existing Web application availability monitoring template
 
 1. Open the Operations console with a user account that has Author credentials in the management group.
-2. Select the  **Authoring**  workspace.
-3. In the  **Authoring**  navigation pane, expand  **Management Pack Templates** , and then select  **Web Application Availability Monitoring**.
-4. In the  **Web Application Availability Monitoring**  pane, locate the template you want to change.
-5. Right-click the test group that you want to modify, and then select  **Properties**.
-6. Using the tabs to navigate the pages of settings, make the desired changes, such as reconfiguring criteria for tests in this group, and select  **OK**.
+2. Select the **Authoring** workspace.
+3. In the **Authoring** navigation pane, expand **Management Pack Templates**, and then select **Web Application Availability Monitoring**.
+4. In the **Web Application Availability Monitoring** pane, locate the template you want to change.
+5. Right-click the test group that you want to modify, and then select **Properties**.
+6. Using the tabs to navigate the pages of settings, make the desired changes, such as reconfiguring criteria for tests in this group, and select **OK**.
 
 ## Viewing web application availability monitoring monitors and collected data
 
@@ -281,8 +277,8 @@ After you configure monitoring for an application, these three views will help y
 #### To view all web application availability monitoring monitored applications
 
 1. Open the Operations console.
-2. Select the  **Monitoring**  workspace.
-3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and select  **Web Application Status**.
+2. Select the **Monitoring** workspace.
+3. In the **Monitoring** navigation pane, expand **Application Monitoring**, expand **Web Application Availability Monitoring**, and select **Web Application Status**.
 
 #### To view the state of each monitor
 

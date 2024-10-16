@@ -2,13 +2,13 @@
 ms.assetid: 86715db7-f219-4187-a7a3-3bf0dfb96102
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2019.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 02/19/2021
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/13/2023
 ms.topic: include
-ms.prod:  system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 ## Upgrade to System Center 2019 - Virtual Machine Manager
@@ -65,7 +65,7 @@ If you're running more than one System Center components, they should be upgrade
 >[!NOTE]
 >When you're upgrading a standalone VMM server, we recommend that you install VMM 2019 on the same server that had VMM 2016, 1801, or 1807.  
 
-If you're using Distributed Key Management, you may choose to install VMM 2019 on a different server, but ensure that the new server has the same name as that of the old VMM server.
+If you're using Distributed Key Management, you can choose to install VMM 2019 on a different server, but ensure that the new server has the same name as that of the old VMM server.
 
 Use the following procedures:
 
@@ -98,7 +98,7 @@ Use the following procedures:
 	- [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
 	- If you're using a remote SQL instance, specify the SQL server computer name.
 	- If the SQL Server runs on the VMM server, enter the name of the VMM server or enter **localhost**. If the SQL Server is in a cluster, enter the cluster name.
-	- Don't specify a port value if you're using local SQL server or if your remote SQL server uses the default port (1443).
+	- Don't specify a port value if you're using local SQL server or if your remote SQL server uses the default port (1433).
 	- Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 9.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
@@ -142,7 +142,7 @@ The following two modes of upgrade are supported:
 > SQL Server upgrade can be performed any time, independent of the VMM upgrade.
 
 ### Mixed mode upgrade with no additional VMM servers
-This procedure requires no additional VMM servers but has increased risk for downtime in some scenarios. For example, when you've two node HA VMM and the active VMM node fails while you're upgrading the passive. In this scenario, your VMM server won't have a failover node available.
+This procedure requires no additional VMM servers but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you're upgrading the passive. In this scenario, your VMM server won't have a failover node available.
 
 **Follow these steps**:  
 
@@ -240,7 +240,7 @@ Before you upgrade, collect the information about the VMM database:
 
 1. Take a backup of the highly available VMM database from the active node of the existing SQL cluster.
 2. Note the VMM role name to use when reinstalling the VMM server role. Uninstall VMM server from the existing VMM cluster nodes with the retain database option.
-When uninstalling VMM server from last node, you may get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
+When uninstalling VMM server from last node, you can get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
 3. Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
 4. While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to the new SQL Cluster.
 
@@ -256,4 +256,4 @@ After the upgrade, reconnect VMM to Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate and avoid certificate errors.
+If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is to renew the PXE server certificate and avoid certificate errors.

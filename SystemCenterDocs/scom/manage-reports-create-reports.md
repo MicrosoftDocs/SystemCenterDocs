@@ -2,23 +2,19 @@
 ms.assetid: 15cffea3-2fac-4c35-b7a6-8a95634eaf18
 title: How to Create Reports in Operations Manager
 description: This article describes how to create a linked report in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to create reports in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Operations Manager includes many reports when you install a management group, to help you review the operational telemetry and configuration information to help troubleshoot issues or problems, review the day-to-day health of your IT services, and make decisions that drive changes in capacity planning or service operations of the service.  
 

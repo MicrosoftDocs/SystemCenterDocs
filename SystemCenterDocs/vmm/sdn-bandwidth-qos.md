@@ -2,26 +2,22 @@
 ms.assetid: f993ce68-4b19-4d10-9ebd-dc1e6261cc4e
 title: Control SDN virtual network bandwidth with QoS
 description: This article provides information about how to configure SDN QoS by using VMM.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/24/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
 # Control SDN virtual network bandwidth with QoS
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-This article provides information about how to configure the Quality of Service (QoS) settings for SDN virtual networks in System Center - Virtual Machine Manager (VMM).
+This article provides information about how to configure the Quality of Service (QoS) settings for SDN virtual networks in System Center Virtual Machine Manager (VMM).
 Through this configuration, you can limit the bandwidth of the traffic flowing in or out of a virtual network adapter (vNIC) by specifying the minimum reserved bandwidth or maximum bandwidth for the adapter.
 
 - Service providers can prevent a high-traffic VM from blocking other VMs.
@@ -73,7 +69,7 @@ To associate a port classification to the logical switch, use the following proc
 
 1.	Go to **Fabric** > **Networking** > **Logical Switches**.
 2.	Right-click the selected logical switch to view its **Properties**.
-3.	Select Virtual Ports , select **Add** to open the **Add Virtual Port** page.
+3.	Select Virtual Ports, select **Add** to open the **Add Virtual Port** page.
 ![Screenshot of classification for virtual port.](media/port-classification-for-virtaul-port.png)
 4.	**Browse** to select the port classification (as an example, **TenantA Workload**) and select **OK**.
 5.	Select the **Include the Hyper-V virtual network adapter port profile** option and select **Browse**. Select the vNIC port profile (as an example, **TenantA**  that you created in the previous procedure). Select **OK**.

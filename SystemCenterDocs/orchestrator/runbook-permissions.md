@@ -1,26 +1,22 @@
 ---
 title: Runbook permissions
 description: This article describes how to set permissions for users to access runbook properties.
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
 ms.date: 04/12/2023
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: engagement-fy23
 ---
 # Runbook permissions
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Runbook access permissions are set through the Runbook Designer. By default, only users in the Orchestrator Users Group have full access to a runbook. You give access to additional users to run, start, stop, view, and change runbooks at either the folder level or the individual runbook level.  
 

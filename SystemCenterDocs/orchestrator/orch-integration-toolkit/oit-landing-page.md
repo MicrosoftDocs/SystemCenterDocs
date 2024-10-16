@@ -1,25 +1,19 @@
 ---
 title: System Center - Orchestrator Integration Toolkit
 description: The Orchestrator Integration Toolkit is used to create new integrations for Orchestrator.
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 02/02/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-ms.author: jsuri
 ms.custom: UpdateFrequency3
 ---
 
 # System Center - Orchestrator Integration Toolkit
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The System Center Orchestrator Integration Toolkit is a set of tools to help you create new integrations for Orchestrator. Using wizard-based applications, you can easily create new workflow activities and Integration Packs that extend the capabilities of the product. You can also create custom workflow activities using the Orchestrator SDK and C#, and then package them into an Integration Pack using this toolkit. This document describes the contents of the System Center Orchestrator Integration Toolkit, how to use the utilities in the Toolkit, and special procedures for migrating activities and Integration Packs from previous versions to be compatible with System Center Orchestrator.  
 

@@ -1,26 +1,22 @@
 ---
 title: Orchestrator logs
 description: Provides information about common troubleshooting issues using log files.
-ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagment-fy24
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c06b17d-fd0d-4a98-8013-f5e5954606ed
-ms.author: jsuri
-ms.date: 10/12/2016
-author: jyothisuri
-manager: mkluck
+ms.date: 11/09/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Orchestrator logs
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 This article provides information on common troubleshooting issues and the available tools that can help identify the root problems.  
 

@@ -3,26 +3,20 @@ title: Capture VM Instance
 description: The Capture VM Instance activity makes a running virtual machine available as an image for reuse.
 ms.custom: UpdateFrequency2
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 568d336c-ed98-4ca1-8783-265a8dd0c6db
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Capture VM Instance
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Capture VM Instance** activity makes a running virtual machine available as an image for reuse. For Windows-based virtual machines, the image should be sysprepped before capture. After performing the capture, the virtual machine is deleted. This activity is part of the **Azure Virtual Machines** category activity.
 

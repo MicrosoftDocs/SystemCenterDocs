@@ -2,23 +2,19 @@
 ms.assetid: 332a9aa5-3176-4f39-b854-5a9817997eb5
 title: Managing Certificates for UNIX and Linux Computers
 description: This article describes how to manage certificates required for authentication with UNIX and Linux computers with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/20/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Managing certificates for UNIX and Linux computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication isn't possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the management server acts as a standalone certificate authority. (Although it's possible to use third-party certificates, they aren't needed.)
 
@@ -53,6 +49,8 @@ If you've a firewall on your UNIX or Linux computer, you must open port 1270 (in
 ## Next steps
 
 - For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md).
+
+- For steps on how to configure the UNIX and Linux agent to use a certificate issued by a certificate authority: [Convert self-signed SCX certificates to CA certificates](/troubleshoot/system-center/scom/use-ca-certificate-on-scx-agent)
 
 - To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](~/scom/manage-upgrade-uninstall-crossplat-agent.md).
 

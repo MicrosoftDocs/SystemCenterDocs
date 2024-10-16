@@ -1,16 +1,16 @@
 ---
 description: This article explains how to extend the tiered volume in System Center - Data Protection Manager.
-manager:  mkluck
 ms.topic:  article
-author:  jyothisuri
-ms.author: jsuri
-ms.prod:  system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date:  11/04/2020
+ms.date:  06/21/2024
 title:  Extend tiered volume in System Center Data Protection Manager
-ms.technology:  data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Extend tiered volume
@@ -22,6 +22,7 @@ Before you resize a volume, ensure that you have enough capacity in the storage 
 For the virtual disk that uses storage tiers, you can resize each tier separately using the **Resize-StorageTier** cmdlet.
 
 ## Step 1 – Resize the virtual disk
+
 Run the following PowerShell cmdlets to get the names of the storage tiers by following the associations from the virtual disk:
 
 ```PowerShell
@@ -61,16 +62,16 @@ $Partition | Resize-Partition -Size ($Partition | Get-PartitionSupportedSize).Si
 
 You can add more capacity to the tiered volume by adding new disks. Based on the requirement, you can add additional HDDs or SSDs. Follow the step below to add disks to a storage pool.
 
-1.	Physically connect the additional disks that you want to add, and [initialize these disks](add-storage.md#initialize-disks).
+1. Physically connect the additional disks that you want to add, and [initialize these disks](add-storage.md#initialize-disks).
     After initialization, the newly added disks appear in the **Primordial** storage pool.
 
     ![Screenshot showing additional disks connected.](./media/extend-tiered-volume/additional-disk-connected.png)
 
-2.	To add a new disk to an existing storage pool used for DPM, right-click the storage pool name, and then select **Add Physical Disk…**.
+2. To add a new disk to an existing storage pool used for DPM, right-click the storage pool name, and then select **Add Physical Disk…**.
 
     ![Screenshot showing add new disks.](./media/extend-tiered-volume/add-physical-disk.png)
 
-3.	Select the disk from the list of available disks and select **OK**.
+3. Select the disk from the list of available disks and select **OK**.
 
     ![Screenshot showing select new disk.](./media/extend-tiered-volume/select-disk.png)
 

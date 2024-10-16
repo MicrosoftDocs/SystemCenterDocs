@@ -3,12 +3,12 @@ ms.assetid: 9e13d0f4-84b2-42bf-836f-b23791616971
 title: Management Pack for SQL Server delivery
 description: This article explains how to install Management Pack for SQL Server
 author: epomortseva
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 5/31/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Management Pack for SQL Server Delivery

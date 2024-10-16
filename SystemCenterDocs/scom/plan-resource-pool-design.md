@@ -2,23 +2,19 @@
 ms.assetid: f70d4861-d0ec-43df-ba9c-7acdd1238ffb
 title: Resource Pool Design Considerations
 description: This article provides an overview of the design decisions with resource pools  when planning a management group configuration for your Operations Manager deployment.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: na, UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Resource pool design considerations
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 A Resource Pool is a logical grouping of management servers and/or gateway servers used to distribute work among themselves and take over work from a failed member.  In other words, they provide high availability and scalability for workflows.  When designing a management group, considerations must be made for monitoring of network devices, Linux/UNIX systems, and other workloads that are designed to take advantage of a resource pool.  
 

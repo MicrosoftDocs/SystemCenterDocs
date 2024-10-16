@@ -1,15 +1,15 @@
 ---
 title: Install Service Manager on virtual machines
 description: This article provides guidance that you should consider when you install Service Manager in a Hyper-V virtual environment.
-manager: mkluck
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy24
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 08/22/2023
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 05/15/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3614b9db-20de-41c0-9780-a27624258da0
@@ -17,11 +17,6 @@ ms.assetid: 3614b9db-20de-41c0-9780-a27624258da0
 
 # Install Service Manager on virtual machines
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides guidance that you should consider when you install System Center - Service Manager in a Hyper\-V virtual environment. If you're installing Microsoft SQL&nbsp;Server into an environment without Hyper\-V, consult your vendor's documentation for guidance regarding the use of SQL&nbsp;Server.  
 

@@ -2,13 +2,13 @@
 ms.assetid: 326aa5d0-4793-4f79-8510-efb5a0a69529
 title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/20/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/16/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 ---
 
@@ -17,7 +17,7 @@ ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
 
 ::: moniker range="sc-vmm-2022"
 
-This article details the new features supported in System Center 2022 - Virtual Machine Manager (VMM). It also details the new features in VMM 2022 UR1.
+This article details the new features supported in System Center 2022 - Virtual Machine Manager (VMM). It also details the new features in VMM 2022 UR1 and UR2.
 
 [!INCLUDE [whats-new-vmm-2022.md](../includes/whats-new-vmm-2022.md)]
 
@@ -25,29 +25,15 @@ This article details the new features supported in System Center 2022 - Virtual 
 
 ::: moniker range="sc-vmm-2019"
 
-This article details the new features supported in System Center 2019 - Virtual Machine Manager (VMM). It also details the new features in VMM 2019 UR1, UR2, UR3, UR4, and UR5.
+This article details the new features supported in System Center 2019 - Virtual Machine Manager (VMM). It also details the new features in VMM 2019 UR1, UR2, UR3, UR4, UR5, and UR6.
+
+> [!CAUTION]
+> This article references CentOS, a Linux distribution that has reached End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 [!INCLUDE [whats-new-vmm-2019.md](../includes/whats-new-vmm-2019.md)]
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-This article details the new features supported in System Center 1807 - Virtual Machine Manager (VMM).
-
-[!INCLUDE [whats-new-vmm-1801.md](../includes/whats-new-vmm-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-vmm-1801"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-This article details the new features supported in System Center 1801 - Virtual Machine Manager (VMM).
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
@@ -55,11 +41,7 @@ This article details the new features supported in System Center 2016 - Virtual 
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-[!INCLUDE [whats-new-vmm-1801.md](../includes/whats-new-vmm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 

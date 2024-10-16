@@ -1,15 +1,15 @@
 ---
 title: Advanced analytical reports in Service Manager
 description: Provides a reference of advanced analytical reports available in Service Manager.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/10/2021
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
@@ -17,11 +17,7 @@ ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 
 # Advanced analytical reports available in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The following analytical reports - which are presented as [Microsoft Online Analytical Processing (OLAP) data cubes](olap-cubes-overview.md) - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 

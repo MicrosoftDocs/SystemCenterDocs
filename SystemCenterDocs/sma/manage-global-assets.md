@@ -1,23 +1,19 @@
 ---
 description: Provides guidance and procedures for using global assets in an Automation runbook.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 08/07/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 04/03/2024
 title: Simplify runbook authoring with global assets
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Simplify Service Management Automation runbook authoring with global assets
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 Global Assets are available to all the runbooks in an Automation environment.  You create and configure them using either the Automation workspace in the management portal or with the appropriate cmdlets in Windows PowerShell. From a runbook, you can retrieve and set values for global assets with activities in the **RunbookConstructs** module. The Windows PowerShell cmdlets are available to use in runbooks in Service Management Automation, but the activities are recommended as they're more efficient because they don't have to work through the Automation web service.
 

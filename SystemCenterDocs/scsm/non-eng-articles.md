@@ -1,15 +1,15 @@
 ---
 title: Index non-English knowledge articles
 description: This article helps you resolve issues when you want to index non-English knowledge articles.
-manager: mkluck
-ms.custom: na, UpdateFrequency3, engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 04/26/2023
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3a0d866d-40b8-4f40-a175-3c5b563bbf83
@@ -17,11 +17,7 @@ ms.assetid: 3a0d866d-40b8-4f40-a175-3c5b563bbf83
 
 # Index non-English Service Manager knowledge articles
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 If you've existing knowledge articles or are planning to create knowledge articles in any language other than English, use the following procedure to resolve an indexing issue in Microsoft SQL Server 2016. This issue deals with non-English characters that are used in only the Analyst Content and the Internal Content fields in a knowledge article. You must perform this procedure on the computer that hosts the System Center - Service Manager database. You have two tasks to perform. The first is to edit the registry, and the second is to run a series of SQL Server query commands on the Service Manager database.  
 

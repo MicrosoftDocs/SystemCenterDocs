@@ -2,35 +2,31 @@
 ms.assetid: 0ebd1dcd-cfe8-42ae-9c5f-cd9b91d582f8
 title: Supported storage arrays in VMM
 description: This article summarizes supported storage arrays for VMM.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 05/23/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/05/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Supported storage arrays
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="<sc-vmm-2019"
 
- Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, SAS connections, and network file shares.
+ Virtualized workloads in System Center Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, SAS connections, and network file shares.
 
- This article provides a list of supported storage devices for VMM 2016, 1801, and 1807.
+ This article provides a list of supported storage devices for VMM 2016.
 
 
 
 | **Device** | **Protocol** | **Min Controller Firmware** | **SMI-S** | **Details** |
 | --- | --- | --- | --- | --- |
-| Hewlett Packard Enterprise<br/><br/> 3PAR | SMI-S | 3PAR: 3PAR v. 3.2.2 MU3 or later<br/><br/> 3PAR 8000 & 20000, 7000 & 10000 | SMI-S CIM version 1.5 | [Link](https://h20392.www2.hpe.com/portal/swdepot/displayProductInfo.do?productNumber=System_Center) |
+| Hewlett Packard Enterprise<br/><br/> 3PAR | SMI-S | 3PAR: 3PAR v. 3.2.2 MU3 or later<br/><br/> 3PAR 8000 & 20000, 7000 & 10000 | SMI-S CIM version 1.5 | [Link](https://www.hpe.com/us/en/storage/3par.html) |
 | Tintri<br/><br/> VMstore | SMB | 4.2 and later | Embedded version 2.1 | [Support](https://identity.tintri.com/login?relayState=https://support.tintri.com/) |
 | NEC / NEC Storage M-Series <br/><br/> M310, M510, M710, M310F, M710F, M320, M320F  | iSCSI/FC | Min Controller Firmware: 010A(Storage Control Software Revision 0941 or later) | SMI-S v1.6.1 | [Details](https://www.nec.com/en/global/prod/storage/product/san/index.html) |
 |Fujitsu/ETERNUS<br/><br/>DX60 S3, DX60 S4, DX100 S3, DX100 S4, DX200 S3, DX200 S4<br/>DX500 S3, DX500 S4, DX600 S3,  DX600 S4, DX8700 S3, <br/>DX8900 S3, DX8900 S4, DX200F, AF250, AF250 S2, AF650, AF650 S2|iSCSI/FC|V10L60 or later | EMBEDDED SMI-S v1.6.0 | [Storage System ETERNUS](http://www.fujitsu.com/global/products/computing/storage/) |

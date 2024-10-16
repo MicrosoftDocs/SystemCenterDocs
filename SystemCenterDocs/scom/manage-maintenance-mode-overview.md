@@ -2,23 +2,17 @@
 ms.assetid: c4e4d992-340a-4ab9-8c98-6640c37adda2
 title: Suspend Monitoring Temporarily by Using Maintenance Mode
 description: This article describes how to put a monitored object into maintenance mode on-demand or using a schedule.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/27/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Suspend monitoring temporarily by using maintenance mode
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Maintenance mode in Operations Manager enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 
@@ -292,7 +286,7 @@ The following procedure describes how to create a maintenance schedule for selec
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list. This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.
 
-::: moniker range=">sc-om-1801"
+::: moniker range=">=sc-om-2019"
 
 ## Create maintenance schedule in the Web console
 

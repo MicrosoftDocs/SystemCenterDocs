@@ -1,24 +1,20 @@
 ---
 title: Running a Service Level Tracking Report
 description: This article describes how to use the Service Level Tracking report in Operations Manager to evaluate service levels against defined targets.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
-ms.date: 12/05/2016
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 09/26/2023
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 4b55aeec-869a-4072-89f5-0ae8e5a860ea
 ---
 
 # Running a service level tracking report
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 You can create a report that shows how your application or group is performing in relation to the defined service level objectives. The report that's generated provides both high-level information to give you a picture of the overall status at a glance, and detailed low-level information to provide specific information on the availability and performance metrics.  
 

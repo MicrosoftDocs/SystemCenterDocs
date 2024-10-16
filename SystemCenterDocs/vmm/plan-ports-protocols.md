@@ -2,24 +2,20 @@
 ms.assetid: 628d7b3e-9933-4b65-b3b1-a54e1cbbaa37
 title: Identify VMM ports and protocols
 description: This article provides information about the ports and protocols used in a VMM 2016 deployment
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 02/21/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/05/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 # Identify VMM ports and protocols
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-As part of your System Center Virtual Machine Manager (VMM) deployment, you need to allow access for the ports, and protocols that the VMM server and components will use. It's important to plan this in advance. Some of the port settings are configured in VMM setup, and if you want to modify them after you set up VMM for the first time, you'll need to reinstall to do so.
+As part of your System Center Virtual Machine Manager (VMM) deployment, you need to allow access for the ports and protocols that the VMM server and components will use. It's important to plan this in advance. Some of the port settings are configured in VMM setup, and if you want to modify them after you set up VMM for the first time, you'll need to reinstall to do so.
 
 ## Set up exceptions
 

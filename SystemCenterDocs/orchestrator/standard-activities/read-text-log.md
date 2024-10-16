@@ -3,27 +3,21 @@ title: Read Text Log
 description: This article describes the Read Text Log activity that will read lines in a structured text log file.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4b1150e4-ef0c-4fba-a358-53db2106399e
 caps.latest.revision: 12
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Read Text Log
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Read Text Log activity will read lines in a structured text log file. If you have log files that change names, you can configure the Read Text Log activity to read from the newest file in a folder that matches a file name pattern. The Read Text Log activity can be used to check a log for errors and then take corrective action on the server that is creating the log or send an email to an administrator to escalate the issue.  
 

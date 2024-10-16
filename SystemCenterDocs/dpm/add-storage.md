@@ -1,27 +1,21 @@
 ---
 description: This article provides information on how to add and configure storage in DPM.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
 ms.date: 07/28/2023
 title: Add Modern Backup Storage to DPM
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 ms.custom: engagement-fy23
 ---
 
 # Add Modern Backup Storage to DPM
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
-::: moniker range="<=sc-dpm-1807"
+::: moniker range="sc-dpm-2016"
 
 Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient workload-aware storage.
 

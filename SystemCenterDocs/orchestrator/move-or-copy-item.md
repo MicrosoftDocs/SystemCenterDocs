@@ -1,27 +1,23 @@
 ---
 title: Move Or Copy Item
 description: The Move Or Copy Item activity is used in a runbook to move or copy an item to another folder.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 11/09/2023
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3cd9da10-0931-4029-b313-7860eda9ba27
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Move Or Copy Item
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Move Or Copy Item activity is used in a runbook to move or copy an item to another folder. This activity supports all item types.
 
@@ -33,7 +29,7 @@ The following tables list the required properties and published data for this ac
 |:---|:---|:---|
 | ID   | The ID of the item to be moved or copied   | String   |
 | Copy   | Indicates whether the item is to be copied to the new location | True<br>False   |
-| Destination Folder | The folder that the item will be moved to   | String   |
+| Destination Folder | The folder to which the item will be moved   | String   |
 
 ## Move Or Copy Item published data
 
@@ -41,9 +37,9 @@ The following tables list the required properties and published data for this ac
 |:---|:---|:---|
 | ID   | The new ID of the item that is moved or copied   | String   |
 | Copy   | Indicates whether the item is to be copied to the new location  | Boolean   |
-| Destination Folder   | The folder that the item will be moved to   | String   |
+| Destination Folder   | The folder to which the item will be moved   | String   |
 | Domain   | The domain that the Exchange server belongs to   | String   |
 | Exchange Server Address | The address of the Exchange server   | String   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Use Autodiscover   | Indicates whether or not the Autodiscover service is being used | Boolean   |
-| User Name   | User name to be used to connect to Exchange server   | String   |
+| User Name   | Username to be used to connect to Exchange server   | String   |

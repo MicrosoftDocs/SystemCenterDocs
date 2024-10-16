@@ -3,27 +3,20 @@ title: Get Process Status
 description: This article describes the functionality of Get Process Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 58173cdc-97ea-4ecf-a7b8-4e48c30fea5b
 caps.latest.revision: 18
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Get Process Status
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Get Process Status activity checks the status of a running process on any computer. Use the Get Process Status activity to check the status of a process before performing another action. For example, you can check that a process that was detected by the [Monitor Process](monitor-process.md) activity is still running before shutting it down with the [End Process](end-process.md) activity.  
 

@@ -1,31 +1,28 @@
 ---
 title: Active Directory Integration Pack for System Center - Orchestrator
 description: The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
-ms.custom: UpdateFrequency2
-ms.date: 03/10/2022
-ms.prod: system-center
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.date: 06/05/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bdb60820-2684-40c5-ae5a-b653acb7736c
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Active Directory Integration Pack for System Center - Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
-
 The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
+
+>[!Note]
+>Azure Active Directory or Azure AD or AAD mentioned in Integration packs refers to Microsoft Entra ID. [Learn more](https://azure.microsoft.com/updates/azure-ad-is-becoming-microsoft-entra-id/).
 
 ## System Requirements
 

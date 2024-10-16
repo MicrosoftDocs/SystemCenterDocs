@@ -1,25 +1,19 @@
 ---
 title: Orchestrator Integration Toolkit Command Line Activity Wizard
 description: This article provides details about the Orchestrator Integration Toolkit Command Line Activity Wizard.
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/26/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Command Line Activity Wizard
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Command-Line Activity Wizard enables you to quickly create new activities in Orchestrator by encapsulating commands, arguments, and parameters into a Microsoft .NET assembly (.DLL). The wizard automatically creates C# source code using the Orchestrator SDK and compiles it for you. Using this assembly, you can utilize the .NET Integration Pack (part of the Integration Toolkit) to test your activities, and then use the Integration Pack Wizard to package the assembly into a custom Integration Pack that can be distributed and deployed just like other Integration Packs.  
 

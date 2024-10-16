@@ -2,23 +2,19 @@
 ms.assetid: dabe96c0-08a5-4577-bd12-cafd7cc7a5a6
 title: Planning a Management Group Design
 description: This article provides an overview of the design decisions for consideration when planning a management group configuration for your Operations Manager 2016 deployment.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 01/09/2023
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
-ms.custom: engagement-fy23, UpdateFrequency.5
+ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 
 # Planning a Management Group Design
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## Overview
 

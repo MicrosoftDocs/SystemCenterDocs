@@ -1,24 +1,20 @@
 ---
 title: Prioritizing Alerts by Using Application Advisor
 description: This article describes how to use Application Advisor to identify exceptions detected from your monitored web application.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/29/2019
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: a9d0f6f6-90df-4159-9a24-5ba0647a2343
 ---
 
 # Prioritizing alerts by using Application Advisor
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Application Advisor works with .NET Application Performance Monitoring in System Center - Operations Manager and helps you prioritize and manage which alerts to address. It identifies which applications are causing the most alerts within an environment. These are the applications you should investigate first because they're causing the most service level agreement (SLA) violations. Use Application Advisor as a first step in alert management and as a view into the overall health of an application. Application Advisor helps you **follow the noise** and find out where the most events are occurring. Application failure and analysis reports let you view those individual applications in fine detail. Summary reports give you key information at a glance, such as the top five alerts to resolve.  
 

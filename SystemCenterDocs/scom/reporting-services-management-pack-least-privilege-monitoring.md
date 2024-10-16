@@ -3,12 +3,12 @@ ms.assetid: 7820156f-399a-4bad-a7bf-98d40a76be30
 title: Least-privilege monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains least-privilege monitoring configuration
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Least-Privilege Monitoring Configuration

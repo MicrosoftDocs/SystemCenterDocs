@@ -3,12 +3,12 @@ ms.assetid: 1c12cdd4-2601-4abd-aab4-e4e85905291d
 title: Instance dashboard navigation in Management Pack for SQL Server Dashboards
 description: This article explains how to navigate through the dashboards structure
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 06/25/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Instance Dashboard Navigation
@@ -73,3 +73,22 @@ A tooltip with the object name appears only when the user hovers over the dashbo
 The **Filter** field is cleared every time the user changes the dashboard level.
 
 A user can use the filter field even if the dashboard group has objects with the empty path line and objects with a path at the path line simultaneously.
+
+## Keyboard Navigation
+
+The SQL Server Dashboard management pack allows you to navigate using the keyboard.
+
+The following keys are available:
+
+|Button|Purpose|
+|-|-|
+|Tab|Navigate to the next section|
+|Shift + Tab|Navigate back to the previous section|
+|Enter|Enter into the list or element|
+|Up|Navigate to the next element of the list|
+|Down|Navigate to the previous element of the list|
+|Backspace|Collapse or expand the list|
+|Left|Navigate to the next tile|
+|Right|Navigate to the previous tile|
+|A|Navigate to the next spike on the chart|
+|D|Navigate back to the previous spike on the chart|

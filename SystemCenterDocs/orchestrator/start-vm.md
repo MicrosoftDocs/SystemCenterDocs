@@ -1,27 +1,22 @@
 ---
 title: Start VM
 description: The Start VM activity is used to start a virtual machine that has been paused, shut down, or stopped.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 03/04/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ad598fdd-5ced-4679-8fde-e1ec078ab4d1
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Start VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Start VM activity is used to start a virtual machine that has been paused, shut down, or stopped.
 

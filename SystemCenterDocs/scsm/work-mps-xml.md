@@ -1,15 +1,15 @@
 ---
 title: Work with management pack XML files
 description: Describes how to work with management pack XML files for Service Manager authoring.
-manager: mkluck
-ms.custom: na, UpdateFrequency2
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1f621771-00da-4dd8-a96f-9a0b243c3d88
@@ -17,11 +17,7 @@ ms.assetid: 1f621771-00da-4dd8-a96f-9a0b243c3d88
 
 # Work with Service Manager management pack XML files
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 For elaborate customizations of management packs, the Service Manager console and the Service Manager Authoring Tool might not be sufficient, and you might need to author or modify management pack files directly. Working directly with management pack files requires in-depth knowledge in several areas such as the System Center Common Schema and the structure of management packs.  
 

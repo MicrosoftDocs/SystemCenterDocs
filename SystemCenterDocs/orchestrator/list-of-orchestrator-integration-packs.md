@@ -3,25 +3,21 @@ title: Orchestrator Integration Packs
 description: This article provides the list of integration packs for Orchestrator.
 ms.custom: UpdateFrequency2
 ms.date: 11/21/2022
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: article
 ms.assetid:
 caps.latest.revision: 12
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # List of Integration Packs for Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
 

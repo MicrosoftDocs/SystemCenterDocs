@@ -1,25 +1,19 @@
 ---
 title: Orchestrator Integration Toolkit Overview
 description: This article describes the enhanced features of the Orchestrator Integration Toolkit that is used to create new integrations for Orchestrator.
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-ms.author: jsuri
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # Orchestrator Integration Toolkit overview
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 System Center Orchestrator enables integration, efficiency, and business alignment of your IT environment. Using System Center Orchestrator, you can automate your IT operations and standardize your best practices to improve operational efficiency. Orchestrator allows you to connect different systems from different vendors without any knowledge of scripting or programming languages.
 

@@ -2,23 +2,19 @@
 ms.assetid: 61149e13-9249-493b-adb0-6997dc8dd6b1
 title: Management pack templates in Operations Manager management pack
 description: This article provides an overview of management pack templates
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: Anastas1ya
+ms.author: v-fkornilov
+manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Management pack templates
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 _Management Pack Templates_ provide _Monitoring wizards_ that let you create complete monitoring scenarios with minimal input. The wizard creates the required monitors, rules, and even targets to implement the particular scenario. There's no requirement for you to understand the management pack elements that are created. You can modify the configuration of the wizard itself if you want to change the way that monitoring is being performed.
 

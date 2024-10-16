@@ -1,23 +1,19 @@
 ---
 title: Monitoring Java Applications
 description: This article describes the concepts and recommendations for monitoring Java applications with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/21/2022
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 13f2661d-ad31-4d01-92b4-fb9b2e7173f8
 ---
 # Monitoring Java applications
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Java Application Performance Monitoring (APM) in System Center - Operations Manager lets you monitor Java applications to get details about application performance and exception events that can help you determine the root causes of problems. The System Center Management Pack for Java Application Performance Monitoring lets you monitor Java application performance and exception events by using Operations Manager Application Advisor. With Operations Manager Application Advisor, you can investigate method and resource timing for performance events, stack traces for exception events, Java-specific counters for events (such as Average Request Time, Requests Per Second, JVM Memory, and Class Loader), and run some of the standard Application Performance Monitoring reports. Additionally, you get Operations Manager level alerting on Java application server counters. Download the Management Pack for Java Application Performance Monitoring from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=39709).  
 

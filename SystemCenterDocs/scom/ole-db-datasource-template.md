@@ -2,23 +2,19 @@
 ms.assetid: 3b2683c5-6f10-437e-87cb-cb389356ea00
 title: OLE DB data source template in Operations Manager management pack
 description: This article provides an overview about OLE DB data source template
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # OLE DB data source template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 _OLE DB_ (Object Linking and Embedding Database) is a Microsoft technology for accessing various data sources by using a common method to connect to different databases such as Microsoft SQL Server.
 

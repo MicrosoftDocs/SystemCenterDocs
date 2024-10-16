@@ -2,23 +2,19 @@
 ms.assetid: 3040bfd2-3b31-40e4-94f9-911641e4b8c4
 title: Manage telemetry settings in Service Manager
 description: This article provides information about how to manage the telemetry settings in System Center Service Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 05/15/2018
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 11/28/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-manager
+ms.service: system-center
+ms.subservice: service-manager
 ms.custom: UpdateFrequency.5
 ---
 
 # Manage telemetry settings in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Service Manager (SM).
 

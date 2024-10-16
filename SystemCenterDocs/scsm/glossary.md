@@ -1,23 +1,19 @@
 ---
 title: Glossary for System Center - Service Manager
 description: This glossary defines terms used in Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 01/23/2018
-ms.technology: service-manager
-ms.custom: UpdateFrequency2
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 03/18/2024
+ms.subservice: service-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Glossary of terms in System Center - Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 |Term|Definition|
 |--------|--------------|

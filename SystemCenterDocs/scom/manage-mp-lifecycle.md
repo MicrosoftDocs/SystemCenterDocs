@@ -2,23 +2,18 @@
 ms.assetid: f408d78d-f05a-4166-a23b-50d42dbce9fe
 title: Management Pack Lifecycle
 description: This article provides a high-level overview of how to manage the lifecycle of monitoring configurations in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Management Pack Lifecycle
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center - Operations Manager uses management packs contain monitoring settings for applications and services. Ideally, a management pack tells you everything you want to know about the application or technology that you're monitoring and nothing that you don't want to know. Management packs are designed to provide a useful monitoring experience for most environments; however, you'll want to test, tune, and tailor each management pack to provide optimal results for your organization's needs.  
 

@@ -2,15 +2,15 @@
 ms.assetid: 8d35cb2c-3128-45e4-bd83-bdb7c178b684
 title: Release notes for System Center Service Management Automation
 description: This article details the known issues and issues fixed in Service Management Automation.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/03/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-management-automation
+ms.service: system-center
+ms.subservice: service-management-automation
 monikerRange: '>sc-sma-2016'
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Release notes for System Center - Service Management Automation
@@ -31,29 +31,9 @@ This article provides the release notes for System Center 2019 - Service Managem
 
 ::: moniker-end
 
-::: moniker range="sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
 
-This article provides the release notes for System Center 1807 - Service Management Automation (SMA).
 
-[!INCLUDE [release-notes-sma-1807.md](../includes/release-notes-sma-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-sma-1801"
-
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-This article provides the release notes for System Center 1801 - Service Management Automation(SMA).
-
-::: moniker-end
-
-::: moniker range="sc-sma-1801"
-
-[!INCLUDE [release-notes-sma-1801.md](../includes/release-notes-sma-1801.md)]
-
-::: moniker-end
 
 ## Next steps
 

@@ -2,23 +2,18 @@
 ms.assetid: d837d304-20ff-4d2a-8071-f1c5664d93dd
 title: Create an Attribute
 description: This article provides information on how to use Create Attribute wizard.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2016
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/19/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create an attribute
+# Create an attribute
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Use the Create Attribute Wizard to create a new attribute for a management pack. For more information, see [Attributes](/previous-versions/system-center/system-center-2012-R2/hh457609(v=sc.12)) in the Authoring Guide.
 

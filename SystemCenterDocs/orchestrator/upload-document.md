@@ -3,25 +3,21 @@ title: Upload Document
 description: The Upload Document activity is used in a runbook to upload a document to a Microsoft SharePoint document library.
 ms.custom: 3
 ms.date: 05/07/2019
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0259e54f-d6ba-4e2e-92a9-c3d27102bf88
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Upload Document
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Upload Document** activity is used in a runbook to upload a document to a Microsoft SharePoint document library.
 

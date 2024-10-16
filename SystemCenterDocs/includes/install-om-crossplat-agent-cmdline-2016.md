@@ -2,13 +2,13 @@
 ms.assetid:
 title: include file
 description: include article to detail the detail how to install the System Center 2016 - Operations Manager agent manually on UNIX and Linux computers.
-author: jyothisuri
-ms.author: jsuri
-manager:  mkluck
-ms.date:  05/08/2018
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date:  07/01/2024
 ms.topic:  include
-ms.prod:  system-center-threshold
-ms.technology:  operations-manager
+ms.service:  system-center
+ms.subservice:  operations-manager
 ---
 
 ## Install Operations Manager agent on UNIX and Linux computers
@@ -40,7 +40,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
     `scxadmin -status`
 
-## To install the agent on RPM based Universal Linux Servers (Oracle and Centos)
+## To install the agent on RPM based Universal Linux Servers (Oracle)
 
 1.  Transfer the agent (`scx-<version>.universalr.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 

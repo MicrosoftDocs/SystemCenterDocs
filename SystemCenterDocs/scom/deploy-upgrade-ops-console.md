@@ -2,23 +2,19 @@
 ms.assetid: 89b1617f-73d3-4a5d-9a82-3ef4ab1a9fc3
 title: How to Upgrade an Operations Console
 description: This article describes how to upgrade an Operations console to the latest version of System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.custom: UpdateFrequency.5, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to upgrade an Operations console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This procedure upgrades a standalone Operations console to System Center - Operations Manager. Perform this procedure locally on the computer that has a standalone Operations console installed. You don't have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
@@ -82,9 +78,7 @@ Before you begin the upgrade process, ensure that your server meets the minimum 
 The value of the **UIVersion** entry is 7.2.11719.0.
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
-The value of **UIVersion** is 8.0.13053.0. 
-::: moniker-end 
+
 
 
 ## Next steps

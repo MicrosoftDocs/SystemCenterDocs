@@ -2,23 +2,19 @@
 ms.assetid: 94744b26-2177-4c8d-a3ae-e3ec0f8f5b60
 title: Planning Security Credentials for Accessing Unix and Linux Computers
 description: This article provides design guidance to understand how to securely manage Linux and UNIX computers with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/25/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Planning Security Credentials for Accessing Unix and Linux Computers
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 

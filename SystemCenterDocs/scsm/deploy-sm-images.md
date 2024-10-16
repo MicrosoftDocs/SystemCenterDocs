@@ -1,15 +1,15 @@
 ---
 title: Create and deploy server images of Service Manager
 description: This article helps you create a system image that contains software needed for use as a template so that you can apply it to new servers.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/05/2019
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
@@ -17,11 +17,6 @@ ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 
 # Create and deploy server images of Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 You can use the information in this article to create a system image that contains Windows server, SQL Server, and Service Manager for use as a template that you can apply to new servers. Follow the basic steps below to prepare the image. You can modify them, as needed, for your environment. For more information about the Windows System Preparation Tool, see [What is Sysprep?](/previous-versions/windows/it-pro/windows-vista/cc721940(v=ws.10)).
 

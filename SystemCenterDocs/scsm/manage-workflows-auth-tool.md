@@ -1,15 +1,15 @@
 ---
 title: Manage workflows
 description: Describes how to manage workflows with the Service Manager Authoring Tool.
-manager: mkluck
-ms.custom: na, UpdateFrequency2
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 42812658-2d83-4cd1-b86f-bacd91add82d
@@ -17,11 +17,7 @@ ms.assetid: 42812658-2d83-4cd1-b86f-bacd91add82d
 
 # Manage workflows with the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 To use a workflow to automate a process in the Service Manager Authoring Tool, you must define what the workflow should do, when it should run, and what information it needs. You can start with general definitions and then refine them until you have details that you can work with in Service Manager.
 

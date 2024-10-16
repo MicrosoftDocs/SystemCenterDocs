@@ -1,12 +1,12 @@
 ---
 title: Orchestrator overview
 description: This article provides an overview of System Center - Orchestrator
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
@@ -15,11 +15,7 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Overview of System Center  - Orchestrator
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 As an IT administrator, you probably perform numerous tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process.
 With System Center - Orchestrator, you tie disparate tasks and procedures together using a graphical user interface Runbook Designer to create reliable, flexible, and efficient end-to-end solutions in your IT environment.

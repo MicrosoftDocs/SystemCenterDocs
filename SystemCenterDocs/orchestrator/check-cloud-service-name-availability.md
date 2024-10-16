@@ -3,26 +3,20 @@ title: Check Cloud Service Name Availability
 description: The Check Cloud Service Name Availability activity checks to see if the specified cloud service name is available, or if it has already been taken.
 ms.custom: UpdateFrequency2
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b4f862ca-5918-4f0a-9031-973cce272d68
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Check Cloud Service Name Availability
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Check Cloud Service Name Availability** activity checks to see if the specified cloud service name is available, or if it has already been taken. It's part of the **Azure Cloud Services** category activity.
 

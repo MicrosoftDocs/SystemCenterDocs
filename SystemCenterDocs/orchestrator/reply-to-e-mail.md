@@ -1,27 +1,23 @@
 ---
 title: Reply To E-Mail
 description: The Reply To E-Mail activity is used in a runbook to reply to email messages.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 03/04/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6a81c1b1-081b-4b2d-b292-90030263fd96
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Reply To E-Mail
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Reply To E-Mail activity is used in a runbook to reply to email messages.
 

@@ -2,24 +2,20 @@
 ms.assetid: 74520b3d-e41d-4abd-9da8-8c0bc6d34c37
 title: Service hosts and virtual machines in the VMM compute fabric
 description: This article describes how to service host and virtual machines in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 01/10/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/09/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
 # Service hosts and virtual machines in the VMM compute fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 Read this article to learn about service Hyper-V hosts and virtual machines in the System Center Virtual Machine Manager (VMM) fabric.
 
@@ -57,11 +53,11 @@ You can service hosts and VMs by:
 2. Select the host to place in maintenance mode, and in the **Host** group, select **Start Maintenance Mode**.
     - You can select **Move all virtual machines to other hosts in the cluster** if you want to move all highly available VMs to other hosts in the cluster (the host must be in a cluster that's capable of live migration).
     - Otherwise, select **Place all running virtual machines into a saved state**. Note that list causes a loss of service for users currently using the VM.
-3. You can verify that the host is in maintenance mode by checking its status in **Fabric** > **Hosts**.
+3. You can verify if the host is in maintenance mode by checking its status in **Fabric** > **Hosts**.
 
 To bring a host out of maintenance node, select it and select **Stop Maintenance Mode**.
 
 > [!NOTE]
-> VMM doesn't automatically restart the VM, and doesn't automatically migrate VMs back to the host.
+> VMM doesn't automatically restart the VM and doesn't automatically migrate VMs back to the host.
 
 

@@ -1,27 +1,22 @@
 ---
 title: Creating and Testing a Sample Runbook
 description: This article describes how to create and test a simple runbook.
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10b8d20a-7bf8-4af8-86fa-8b936319355b
-author: jyothisuri
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/13/2023
-manager: mkluck
 ms.custom: engagement-fy23
 ---
 
 # Create and Test a Sample Runbook
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The following article describes how to create and test a sample runbook. The purpose of this runbook is to detect when a text file is added to a particular folder, copy that file to another folder, read the contents of the file, append a line from the copied file to another file, and then delete the original file.  
 

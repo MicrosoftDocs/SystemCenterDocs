@@ -2,26 +2,22 @@
 ms.assetid:
 title: How to create a dashboard with the PowerShell widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the PowerShell widget.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/22/2018
-ms.custom: na
-ms.prod: system-center
-monikerRange: 'sc-om-1807'
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+monikerRange: '>=sc-om-2019'
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to create a dashboard with the PowerShell widget in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-::: moniker-end
-
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 Web console with the PowerShell widget.
+In System Center Operations Manager version 2019 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 Web console with the PowerShell widget.
 
 The script will typically use the Operations Manager cmdlets to retrieve information from the management group.  It must then use the ScriptContext object to create a Data Object and then add that object to the ReturnCollection property. Typically with the Silverlight-based PowerShell widget, scripts were configured with the variable named $dataObject, and this variable held data returned from ScriptContext object.  However, this widget doesn't support that variable name and will return an error when you attempt to save your changes. Replace this variable name with a custom name such as $results.  
 

@@ -2,25 +2,21 @@
 title: View and configure Runbook properties
 description: This article describes how you can View and configure Runbook properties.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3bd4992a-badc-4d36-9e64-52e2a167f9e8
-ms.author: jsuri
 ms.date: 04/11/2023
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Runbook properties
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 A runbook is essentially a series of activities that are using data, performing tasks, and publishing data for use by other activities in the runbook. Each runbook has a collection of configurable properties. These properties let you customize the behavior of a runbook.  
 

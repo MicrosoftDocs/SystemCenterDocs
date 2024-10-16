@@ -1,24 +1,20 @@
 ---
 title: Network Devices Supported for Discovery by Operations Manager
 description: This article provides information on how to monitor physical network routers and switches including the interfaces and ports.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/29/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 4ef0e1d1-8c39-4480-9ec0-cc6bfa915bbb
 ---
 
 # Network Devices Supported for Discovery by Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center - Operations Manager can monitor physical network routers and switches, including the interfaces and ports on those devices, and the virtual local area networks (VLANs) and Hot Standby Router Protocol (HSRP) groups that they participate in, as well as firewalls and load balancers. Operations Manager can monitor network devices that support SNMP, and can provide port monitoring for devices that implement interface MIB (RFC 2863) and MIB-II (RFC 1213) standards.  
 

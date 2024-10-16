@@ -2,23 +2,19 @@
 ms.assetid: e4d57914-f0f8-4858-8de8-6f5d153b9d60
 title: Storage Spaces Direct in VMM - Overview
 description: This article describes Storage Spaces Direct in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/19/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Scenario: Deploy Storage Spaces Direct with VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article provides an overview of Storage Spaces Direct (S2D) deployment in the System Center - Virtual Machine Manager (VMM) fabric.
 

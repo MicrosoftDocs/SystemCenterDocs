@@ -2,23 +2,19 @@
 ms.assetid: 01649c28-afbd-4f82-91db-de88d93544f6
 title: Operations Manager Agents
 description: This article provides design guidance for agent deployment on Windows, Linux and UNIX computers with Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/10/2023
-ms.custom: na, UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Operations Manager agents
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like a SQL database or logical disk, and executes tasks on demand by an operator or in response to a condition. It allows Operations Manager to monitor Windows, Linux, and UNIX operating systems and the components of an IT service installed on them like a website or an Active Directory domain controller.  
 

@@ -1,26 +1,20 @@
 ---
 description: Use DPM to back up and restore VMware VMs.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 07/20/2023
+ms.date: 07/31/2024
 title: Back up and restore VMware Virtual Machines
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid:
-ms.author: jsuri
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 monikerRange: '>sc-dpm-2016'
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Use DPM to back up and restore VMware virtual machines
-
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5, 6.7, or 7.0 (supported from DPM 2019 UR5) versions of VMware vCenter and vSphere Hypervisor (ESXi).
@@ -30,9 +24,10 @@ DPM 2019 UR5 and later don't support vSphere 5.5. Ensure to upgrade to newer vSp
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
-This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, or 7.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0, and 8.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
-DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html).
+>[!NOTE]
+>DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html). vSphere 8.0 is supported from DPM 2022 UR2.
 
 ::: moniker-end
 
@@ -51,13 +46,15 @@ DPM provides the following features when backing up VMware virtual machines:
 - DPM protects VMs migrated for load balancing: As VMs are migrated for load balancing, DPM automatically detects and continues VM protection.
 - DPM can recover files/folders from a Windows VM without recovering the entire VM, which helps recover necessary files faster.
 
+::: moniker range="<=sc-dpm-2019"
+
 ## Prerequisites and Limitations
 
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
 
 - If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
-    - You can use static IP address of vCenter Server as a workaround.
-    - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
+     - You can use static IP address of vCenter Server as a workaround.
+     - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
 - If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
 - DPM can't protect VMware VMs to a secondary DPM server.
@@ -66,8 +63,33 @@ Before you start backing up a VMware virtual machine, review the following list 
 - DPM can't detect or protect VMware vApps.
 - DPM can't protect VMware VMs with existing snapshots.
 - Ensure the following network ports are open:
-    - TCP 443 between MABS and vCenter
-    - TCP 443 and TCP 902 between MABS and ESXi host
+     - TCP 443 between MABS and vCenter
+     - TCP 443 and TCP 902 between MABS and ESXi host
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+## Prerequisites and Limitations
+
+Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites:
+
+- If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
+     - You can use static IP address of vCenter Server as a workaround.
+     - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
+- If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
+- If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
+- DPM can't protect VMware VMs to a secondary DPM server.
+- You can't back up user snapshots before the first DPM backup. Once DPM completes the first backup, then you can back up user snapshots.
+- DPM can't protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
+- DPM can't detect or protect VMware vApps.
+- DPM can't protect VMware VMs with existing snapshots.
+- Ensure the following network ports are open:
+     - TCP 443 between MABS and vCenter
+     - TCP 443 and TCP 902 between MABS and ESXi host
+- DPM can’t protect Data Sets when backing up vSphere 8.0 VMs.
+
+::: moniker-end
 
 ## Configure DPM to protect VMware
 
@@ -132,7 +154,7 @@ Once you've matching credentials in DPM, update the VMware server credentials us
 
 When you delete credentials, you're removing the credential from the list on the DPM server. DPM doesn't allow you to delete a credential that is used to authenticate a production server.
 
-To delete a credential:
+To delete a credential, follow these steps:
 
 1. In the DPM Administrator Console, select Management, select Production Servers, and in the tool ribbon, select Manage VMware Credentials.
 2. In the Manage Credentials page, select the credential. Make sure the credential isn't associated with any Production Servers.
@@ -254,7 +276,6 @@ The following table captures the privileges that you need to assign to the user 
 | Virtual machine.Snapshot management.Create snapshot |   |
 | Virtual machine.Snapshot management.Remove Snapshot |   |
 
-
 The recommended steps for assigning these privileges:
 
 #### Create a role, for example, BackupAdminRole
@@ -342,7 +363,7 @@ In large VMware deployments, a single vCenter server can manage thousands of VMs
 
 DPM can back up VMware VMs to disk, tape, and Azure cloud. You can specify the protection method while creating the new Protection Group.
 
-For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](./identify-compatible-tape-libraries.md?preserve-view=true&view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
+For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](./identify-compatible-tape-libraries.md) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
 
@@ -355,11 +376,11 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 
 **Use the following procedure**:
 
-1.	In the DPM Administrator console, select **Protection** > **Create protection group** to open the Create New Protection Group wizard.
-2.	On the **Select Group Members** page, select the VMware VMs you want to protect.
-3.	On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
-4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency you want.
-5.	On the **Select Tape and Library Details** page, specify the tape and library that will be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
+1. In the DPM Administrator console, select **Protection** > **Create protection group** to open the Create New Protection Group wizard.
+2. On the **Select Group Members** page, select the VMware VMs you want to protect.
+3. On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
+4. In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency you want.
+5. On the **Select Tape and Library Details** page, specify the tape and library that will be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
 
 ### Create a Protection Group for VMware VMs
 
@@ -377,12 +398,12 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 
     If you've a standalone tape or tape library connected to the DPM server, you'll be able to select **I want long-term protection using tape**.
 
-6.	On the **Specify Short-Term Goals** screen, for the **Retention Range**, specify the number of days your data is kept on disk.
+6. On the **Specify Short-Term Goals** screen, for the **Retention Range**, specify the number of days your data is kept on disk.
     If you want to change the schedule when application recovery points are taken, select **Modify**. On the Express Full Backup tab, choose a new schedule for the time(s) and days of the week when Express Full Backups are taken. The default is daily at 8 PM local time for the DPM server. When you've the short-term goals you like, select **Next**.
 
 7. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**,  specify how often backups to tape should run. The frequency is based on the retention range you've specified:
-    -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
-    -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
+    - When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    - When the retention range is 1-11 months, you can select backups to occur daily, weekly, biweekly, or monthly.
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
@@ -395,14 +416,14 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 11. On the **Specify Online Protection Data** screen, select the data source(s) that you want to protect.
 12. On the **Specify Online Backup Schedule** screen, specify how often you want to take a backup from the disk backup to Azure. A recovery point is created each time a backup is taken.
 13. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. For more information on backing up DPM to Azure, see [Backup DPM workloads with Azure Backup](/azure/backup/backup-azure-dpm-introduction).
-14. On the **Choose Online Replication** screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you've a large amount of data, it may be more timely to use the Offline Backup feature. For more information, including a step-by-step walkthrough, see [Offline Backup with Azure](/azure/backup/offline-backup-overview).
+14. On the **Choose Online Replication** screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you've a large amount of data, it might be more timely to use the Offline Backup feature. For more information, including a step-by-step walkthrough, see [Offline Backup with Azure](/azure/backup/offline-backup-overview).
 15. On the Summary screen, review the settings. If you're interested in optimizing the performance of the protection group, see [Optimizing DPM operations](/previous-versions/system-center/system-center-2012-R2/jj628105(v=sc.12)) that affect performance. Once you're satisfied with all the settings for the protection group, select **Create Group** to create the protection group and trigger the initial backup copy.
 
 The Status screen appears and gives you an update on the creation of your protection group and the state of your initial backup.
 
 ## Restore VMware virtual machines
 
-This section explains how to use DPM to restore VMware VM [recovery points](/previous-versions/system-center/system-center-2012-R2/jj627975(v=sc.12)). For an overview on using DPM to recover data, see [Recover protected data](/previous-versions/system-center/system-center-2012-R2/jj628056(v=sc.12)). In the DPM Administrator Console, there are two ways to find recoverable data: search or browse. When recovering data, you may or may not want to restore data or a VM to the same location. For this reason, DPM supports these three recovery options for VMware VM backups.
+This section explains how to use DPM to restore VMware VM [recovery points](/previous-versions/system-center/system-center-2012-R2/jj627975(v=sc.12)). For an overview on using DPM to recover data, see [Recover protected data](/previous-versions/system-center/system-center-2012-R2/jj628056(v=sc.12)). In the DPM Administrator Console, there are two ways to find recoverable data: search or browse. When recovering data, you might or might not want to restore data or a VM to the same location. For this reason, DPM supports these three recovery options for VMware VM backups.
 
 - **Original location recovery (OLR)** - Use OLR to restore a protected VM to its original location. You can restore a VM to its original location only if no disks have been added or deleted since the backup occurred. If disks have been added or deleted, you must use alternate location recovery.
 - **Alternate location recovery (ALR)** - When the original VM is missing or you don't want to disturb the original VM, recover the VM to an alternate location. To recover a VM to an alternate location, you must provide the location of an ESXi host, resource pool, folder, and the storage datastore and path. To help differentiate the restored VM from the original VM, DPM appends **-Recovered** to the name of the VM.
@@ -429,8 +450,10 @@ This section explains how to use DPM to restore VMware VM [recovery points](/pre
 
 ### Restore an individual file from a VM
 
+::: moniker range="<=sc-dpm-2019"
+
 >[!NOTE]
-> Restore of an individual file from a VM backup is possible only from the disk recovery points.  
+> Restore of an individual file from a VM backup is possible only from the disk recovery points.
 
 You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
@@ -452,8 +475,56 @@ You can restore individual files from a protected VM recovery point. This featur
 
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
-10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
+10. On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+>[!NOTE]
+> Restore of an individual file from a VM backup is possible only for Windows VMs from the disk and online recovery points.
+
+With DPM 2022 UR2 and later, you can restore an individual file from a VMware VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+Additionally, for item-level recovery from an online recovery point, ensure that automatic mounting of volumes is enabled. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
+
+You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
+
+1. In the DPM Administrator Console, select the **Recovery** view.
+2. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
+    ![Screenshot of open Recovery points.](./media/back-up-vmware/vmware-recovery-point-disk.png)
+3. In the **Recovery Points for:** pane, use the calendar to select the date that contains the desired recovery point(s).
+    Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, ensure that you've chosen the correct Recovery time. If the selected date has multiple recovery points, choose your recovery point by selecting it in the **Recovery time** dropdown menu. Once you chose the recovery point, the list of recoverable items appears in the **Path:** pane.
+4. To find the files you want to recover, in the **Path** pane, double-click the item in the **Recoverable item** column to open it. If you use an online recovery point, wait until the recovery point is mounted. Once the mount is complete, select the VM, disk, and the volume you want to restore until the files and folders are listed. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item.
+    Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** doesn't search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You can't recover items from multiple folders in the same recovery job.
+5. When you've selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**.
+    In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
+
+     ![Screenshot of review Recovery points.](./media/back-up-vmware/review-recovery-point-selection.png)
+6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, select **Modify**. To leave network throttling disabled, select **Next**. No other options on this wizard screen are available for VMware VMs.
+    If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
+7. On the **Select Recovery Type** screen, select **Next**. You can only recover your file(s) or folder(s) to a network folder.
+8. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
+
+    ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
+9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
+10. On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
+    The **Recovery status screen shows the progression of the recovery operation**.
+
+>[!TIP]
+>You can perform item-level restore of online recovery points for VMware VMs running Windows also from Add external DPM Server to recover VM files and folders quickly.
+
+### Fallback to crash consistent backups for VMware VMs
+
+Application consistent backups for VMware VMs running Windows can fail with **ApplicationQuiesceFault** error if the VSS providers in the VM aren't in a stable state or if the VM is under heavy load. If you encounter this quiescing error, use the following registry key on the DPM server running 2022 UR2 or later to retry the failed application consistent backup with a crash consistent backup.
+
+```
+Name - FailbackToCrashConsistentBackup DWORD = 1
+Path- SOFTWARE\\MICROSOFT\\MICROSOFT DATA PROTECTION MANAGER\\VMWare
+```
+
+::: moniker-end
 
 ::: moniker range=">=sc-dpm-2019"
 
@@ -463,13 +534,13 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-**Key Path:** *Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare*
-
-**Key Type:** DWORD (32-bit) value.
+**Key Path:** *HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelIncrementalJobs*
+**32 Bit DWORD:** VMware
+**Data:** `number`
+The value should be the number (decimal) of virtual machines that you select for parallel backup.
 
 > [!NOTE]
->  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
-
+> You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
 
 ::: moniker-end
 
@@ -482,21 +553,13 @@ DPM 2022 supports restore of more than one VMware VMs protected from same vCente
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.
 
-**Key Path**: *HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs*
+**Key Path**: *HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\MaxParallelRecoveryJobs*
 
 **32 Bit DWORD**: VMware
 
 **Data**: \<number\>
 
 The value should be the number (decimal) of virtual machines that you select for parallel recovery.
-
-::: moniker-end
-
-::: moniker range="sc-dpm-1807"
-
-## VMware vSphere 6.7
-
-To back up vSphere 6.7, do the following:
 
 ::: moniker-end
 
@@ -518,7 +581,7 @@ To back up vSphere 6.7 and 7.0 (supported for DPM 2019 UR5), do the following:
 
 ::: moniker-end
 
-::: moniker range=">=sc-dpm-1807"
+::: moniker range=">=sc-dpm-2019"
 
 - Enable TLS 1.2 on DPM Server
   >[!Note]
@@ -574,7 +637,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   1. Get the details of VMware host that is protected on the DPM server.
 
-        ```
+        ```powershell
         PS C:\>$psInfo = get-DPMProductionServer
         PS C:\> $psInfo
 
@@ -585,7 +648,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   2. Select the VMware host and list the VMs protection for the VMware host.
 
-        ```
+        ```powershell
         PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[0] -Inquire
         PS C:\> $vmDsInfo
 
@@ -598,7 +661,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
   3. Select the VM for which you want to exclude a disk.
 
-        ```
+        ```powershell
         PS C:\>$vmDsInfo[2]
 
         Computer     Name    ObjectType
@@ -613,31 +676,31 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
         >
         > With DPM 2019 UR2, this experience is improved. You can run the script without stopping the DPMRA service.
 
-
      **To add/remove the disk from exclusion, run the following command:**
 
-      ```
+      ```powershell
       ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
       ```
 
      **Example: To add the disk exclusion for TestVM4, run the following command**
 
-       ```
+       ```powershell
        PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
        Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
        Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
        ```
+
 5. Verify that the disk has been added for exclusion
 
    **To view the existing exclusion for specific VMs, run the following command:**
 
-    ```
+    ```powershell
     ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
     ```
 
    **Example**
 
-    ```
+    ```powershell
     PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -view
     <VirtualMachine>
     <UUID>52b2b1b6-5a74-1359-a0a5-1c3627c7b96a</UUID>
@@ -650,12 +713,11 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
   > [!NOTE]
   > If you're performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
 
-
 **Remove the disk from exclusion**
 
 To remove the disk from exclusion, run the following command:
 
-```
+```powershell
 PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
 ```
 

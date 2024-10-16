@@ -2,23 +2,19 @@
 ms.assetid: c7e03604-c2a2-4e0c-b8d4-cf0eb68c133d
 title: What is in an Operations Manager Management Pack?
 description: This article describes the composition of an Operations Manager management pack.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/29/2019
-ms.custom: na, intro-overview
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: intro-overview, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # What is in an Operations Manager management pack?
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Management packs typically contain monitoring settings for applications and services. After a management pack is imported into a management group, System Center - Operations Manager immediately begins monitoring objects based on default configurations and thresholds that are defined in the management pack.  
 

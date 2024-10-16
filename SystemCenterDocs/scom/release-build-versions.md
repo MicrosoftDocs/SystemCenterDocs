@@ -2,23 +2,19 @@
 ms.assetid: a6271390-71e0-4a97-b48c-38369165613b
 title: Release build versions for System Center Operations Manager
 description: This article details the release builds in Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/31/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/02/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.service: system-center
+ms.subservice: operations-manager
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # System Center - Operations Manager build versions
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
@@ -27,7 +23,6 @@ This article lists Microsoft System Center 2022 - Operations Manager build versi
 [!INCLUDE [release-build-versions-2022.md](../includes/release-build-versions-2022.md)]
 
 ::: moniker-end
-
 
 ::: moniker range="sc-om-2019"
 
@@ -45,37 +40,9 @@ This article lists Microsoft System Center 2016 - Operations Manager build versi
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
-
-The following table lists the release history for Operations Manager 1807.
-
-## Operation Manager 1807 build versions
-
-The following is the build version for Operations Manager 1807.
-
-|Build Number |KB |Release Date |Description |  
-|-------------|---|-------------|------------|   
-|7.3.13261.0 |[4133779](https://support.microsoft.com/help/4133779/system-center-operations-manager-version-1807) |July 2018 |Version 1807|
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-The following table lists the release history for Operations Manager 1801.
-
-## Operation Manager 1801 build versions
-
-The following is the build version for Operations Manager 1801.
-
-|Build Number |KB |Release Date |Description |  
-|-------------|---|-------------|------------|   
-|7.3.13142.0 | |February 2018 |Version 1801|
-
-::: moniker-end
 
 ## Next steps
 
 - See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
 
 - See [What's New in Operations Manager](./whats-new-in-om.md).
-

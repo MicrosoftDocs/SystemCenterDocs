@@ -2,23 +2,18 @@
 ms.assetid: aa903de4-1f46-407b-a340-8b07abdaeda7
 title: User Roles for Application Performance Monitoring
 description: This article describes the user roles for the Application Performance Monitoring feature of Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 02/06/2018
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/19/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # User Roles for Application Performance Monitoring
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 
 ## .NET Application Performance Monitoring tasks and user roles  
@@ -27,17 +22,15 @@ This table shows the System Center Operations Manager .NET Application Performan
 
 Legend:  
 
--   Yes = Can always use the feature  
+- Yes = Can always use the feature  
 
--   No = Cannot use the feature unless the user also belongs to a group that grants access to functionality.  
-
+- No = Cannot use the feature unless the user also belongs to a group that grants access to functionality.  
 
 | -                                     | Administrator | Author | Advanced Operator | Application Monitoring Operator | Operator | Read-Only Operator | Report Operator | Report Security Administrator |
 |---------------------------------------|---------------|--------|-------------------|---------------------------------|----------|--------------------|-----------------|-------------------------------|
 | Run APM Wizard or change APM settings | Yes           | No     | No                | No                              | No       | No                 | No              | No                            |
 | Access Application Diagnostics        | Yes           | No     | No                | Yes                             | No       | No                 | No              | No                            |
 | Access Application Advisor            | Yes           | No     | No                | Yes                             | No       | No                 | Yes             | Yes                           |  
-
 
 > [!NOTE]  
 > The Application Monitoring Operator role and Report Operator role are both required to access Application Advisor.  

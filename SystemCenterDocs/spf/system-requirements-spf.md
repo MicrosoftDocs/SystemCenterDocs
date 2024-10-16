@@ -2,13 +2,13 @@
 ms.assetid: 2d498902-bbce-4620-917d-0e1d039f8a29
 title: System requirements for Service Provider Foundation
 description: This article describes the software and hardware system requirements for System Center Service Provider Foundation
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/28/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2
 ---
 
@@ -30,33 +30,13 @@ This article details the system requirements for System Center 2019 - Service Pr
 
 ::: moniker-end
 
-::: moniker range="sc-spf-1807"
-
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-System requirements for SPF 1801 are also applicable for SPF 1807; there are no changes. [Learn more](?preserve-view=true&view=sc-spf-1801) about the system requirements.
-
-::: moniker-end
-
-::: moniker range="sc-spf-1801"
-
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-This article details the system requirements for System Center 1801 - Service Provider Foundation (SPF).
-
-::: moniker-end
-
 ::: moniker range="sc-spf-2016"
 
 This article details the system requirements for System Center 2016 - Service Provider Foundation (SPF).
 
 ::: moniker-end
 
-::: moniker range="sc-spf-1801"
 
-[!INCLUDE [system-reqs-spf-1801.md](../includes/system-reqs-spf-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-spf-2016"
 

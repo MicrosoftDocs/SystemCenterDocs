@@ -1,42 +1,38 @@
 ---
 description: This article describes how to create DPM reports using SQL Server Reporting Services.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 05/10/2023
+ms.date: 07/12/2024
 title: Generate DPM reports
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
-ms.author: jsuri
-ms.custom: UpdateFrequency2, engagement-fy23
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Generate DPM reports
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
-
 System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area, you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively, you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 
 ## DPM reports
+
 DPM provides many different reports:
 
--   **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
+- **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
 
--   **Protection report**: Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
+- **Protection report**: Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
 
--   **Recovery report**: Provides commonly used metrics for recovery success rolled up over long periods of time. Use this report to track how recoveries are doing and how well you performed against your SLAs for RTOs.
+- **Recovery report**: Provides commonly used metrics for recovery success rolled up over long periods of time. Use this report to track how recoveries are doing and how well you performed against your SLAs for RTOs.
 
--   **Disk utilization report**: Summarizes disk capacity, disk allocation, and disk usage in the DPM storage pool. Use this report to identify trends in disk usage and make decisions about modifying space allocations.
+- **Disk utilization report**: Summarizes disk capacity, disk allocation, and disk usage in the DPM storage pool. Use this report to identify trends in disk usage and make decisions about modifying space allocations.
 
--   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
+- **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
 
 ### Predefined SQL reports
+
 DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method than querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need in-depth knowledge of the entire database or the relationship between tables and keys.
 
 > [!NOTE]
@@ -167,34 +163,37 @@ The following table summarizes the predefined SQL views.
 Select the required tab for steps to schedule, view, print, or send reports:
 
 # [Schedule reports](#tab/Schedule)
+
 Reports aren't scheduled by default in DPM. To start creating and saving historical reports, create a report schedule. Each report type has an independent schedule. A report only has a single schedule. Schedule a report as follows:
 
-1.  In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and select **Schedule**.
+1. In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and select **Schedule**.
 
-2.  Select **Run the \<name of report\> according to the schedule options**.
+2. Select **Run the \<name of report\> according to the schedule options**.
 
-3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
+3. On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
 
 # [View reports](#tab/View)
+
 In the DPM Administrator Console, you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of a report to customize, export, or print it.
 
-1.  You can request a new report with the following settings:
+1. You can request a new report with the following settings:
 
-    -   Display - You can view a report group by protected computer or protection group.
+    - Display - You can view a report group by protected computer or protection group.
 
-    -   You can specify or exclude a specific time period. You can set report granularity as follows:
+    - You can specify or exclude a specific time period. You can set report granularity as follows:
 
-        -   Week - Seven days - from Sunday through Saturday
+        - Week - Seven days - from Sunday through Saturday
 
-        -   Month - A full month from the first to the last day of the month
+        - Month - A full month from the first to the last day of the month
 
-        -   Quarter - For three months starting from January (for example, January through March)
+        - Quarter - For three months starting from January (for example, January through March)
 
-        -   Annual - January 1 to December 31 of a particular year
+        - Annual - January 1 to December 31 of a particular year
 
-2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report so that you can retain the maximum number of copies at all times.
+2. You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report so that you can retain the maximum number of copies at all times.
 
 # [Print reports](#tab/Print)
+
 Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats aren't editable, so you can't modify the report to fit other paper sizes.
 
 > [!NOTE]
@@ -204,49 +203,52 @@ Reports in DPM have been designed to print on A4 paper without horizontally spli
 
 Follow these steps to print MHTML reports:
 
-1.  On the Internet Explorer **File** menu, select **Page Setup**.
+1. On the Internet Explorer **File** menu, select **Page Setup**.
 
-2.  Set paper size to A4 and select **Orientation** > **Portrait**.
+2. Set paper size to A4 and select **Orientation** > **Portrait**.
 
-3.  Set **Margins** to values no greater than the following (in inches): **Left:** 0.11, **Right:** 0.11, **Top:** 0.11, **Bottom:** 0.11. Then print the report.
+3. Set **Margins** to values no greater than the following (in inches): **Left:** 0.11, **Right:** 0.11, **Top:** 0.11, **Bottom:** 0.11. Then print the report.
 
 #### Print a PDF report
 
 Follow these steps to print PDF reports:
 
-1.  In Adobe Acrobat, open the **Print** page.
+1. In Adobe Acrobat, open the **Print** page.
 
-2.  Set **Page Scaling** to **Shrink large pages** (the default setting). Select **Auto-Rotate and Center**.
+2. Set **Page Scaling** to **Shrink large pages** (the default setting). Select **Auto-Rotate and Center**.
 
-3.  On the **Advanced** tab, set the orientation to **Portrait** and print the report.
+3. On the **Advanced** tab, set the orientation to **Portrait** and print the report.
 
 #### Print a report using Microsoft Excel
 
 Follow these steps to print reports using Microsoft Excel:
 
-1.  Open the file in Excel.
+1. Open the file in Excel.
 
-2.  Select **Page Layout** > **Orientation** > **Portrait**.
+2. Select **Page Layout** > **Orientation** > **Portrait**.
 
-3.  Select **Size** > **A4** .
+3. Select **Size** > **A4** .
 
-4.  Select **Margins** > **Custom Margins**. Set the **Top**, **Left**, **Bottom**, and **Footer** margins to 0.
+4. Select **Margins** > **Custom Margins**. Set the **Top**, **Left**, **Bottom**, and **Footer** margins to 0.
 
-5.  In **Scale to Fit**, set  **Scale** to 80%.
+5. In **Scale to Fit**, set  **Scale** to 80%.
 
-6.  In **Sheet Options**, clear **Print** if it's selected. Then print the report.
+6. In **Sheet Options**, clear **Print** if it's selected. Then print the report.
 
 # [Send reports](#tab/Send)
+
 You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports, do the following:
-1.  Specify the SMTP server that DPM will use to send reports.
 
-2.  In the Reporting view, on the display pane, right-click the report to which you want to subscribe and select **Schedule**.
+1. Specify the SMTP server that DPM will use to send reports.
 
-3.  On the **E-mail** tab, in **Recipients**, enter the email addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
+2. In the Reporting view, on the display pane, right-click the report to which you want to subscribe and select **Schedule**.
+
+3. On the **E-mail** tab, in **Recipients**, enter the email addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
 
 ---
 
 ## Generate DPM reports in Operations Manager
+
 Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information, you can use predefined views or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212876(v=sc.12)).
 DPM provides many predefined views that you can use to search more simply than defining your own query or filter.
 

@@ -1,28 +1,21 @@
 ---
 title: Get Datastore Capacity Activity
 description: The Get Datastore Capacity activity is used in a runbook to retrieve the capacity available on a specific data store.
-ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1c02fe50-cf8c-4451-984b-b1bda2b9fb0a
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/10/2024
 ---
 
 # Get Datastore Capacity Activity
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Get Datastore Capacity activity is used in a runbook to retrieve the capacity available on a specific data store. This allows the runbook to retrieve the available capacity of a data store before cloning or creating virtual machines in the data store.
 
@@ -37,6 +30,7 @@ The activity publishes all the data from the required and optional properties in
 | Datastore | The name of the data store for which to retrieve the capacity. | String   | No   |
 
 ## Get Datastore Capacity Activity Optional Properties
+
 No optional properties are provided for this activity.
 
 ## Get Datastore Capacity Activity Published Data
@@ -49,14 +43,12 @@ No optional properties are provided for this activity.
 
 ## Configuring the Get Datastore Capacity Activity
 
-The following procedure describes the steps required to configure a Get Datastore Capacity activity.
+To configure the Get Datastore Capacity Activity, follow these steps:
 
-### To configure the Get Datastore Capacity Activity
-
-1.  From the **Activities** pane, drag a **Get Datastore Capacity** activity to the active runbook.
-2.  Double-click the **Get Datastore Capacity** activity icon. The **Properties** dialog opens.
-3.  Configure the settings in the **Properties** tab as follows:
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+1. From the **Activities** pane, drag a **Get Datastore Capacity** activity to the active runbook.
+2. Double-click the **Get Datastore Capacity** activity icon. The **Properties** dialog opens.
+3. Configure the settings in the **Properties** tab as follows:
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
-4.  Select **Finish**.
+4. Select **Finish**.

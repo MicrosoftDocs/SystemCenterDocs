@@ -1,24 +1,20 @@
 ---
 title: Monitoring the Health of the Management Group
 description: This article provides a high level overview of the supported monitoring scenarios with System Center Operations Manager. Operations Manager introduces a new dashboard view that provides a comprehensive picture of the health of your management group.
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
-ms.date: 01/08/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 42973387-51b3-4276-a2e4-522f1eba2435
 ---
 
 # Monitoring the Health of the Management Group
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager introduces a new dashboard view that provides a comprehensive picture of the health of your management group. The dashboard tries to answer the question, "do I need to do anything?"  
 
@@ -26,9 +22,9 @@ The **Management Group Health** view under the **Operations Manager** folder, al
 
 You can display **Management Group Health** on a SharePoint site by integrating with Operations Manager, giving all authorized users a useful summary of management group status. For more information, see [Using SharePoint to view Operations Manager data](manage-console-sharepoint-integration.md).  
 
-**Management Group Health** automatically refreshes every 15 minutes by default. To manually refresh the view, right-click the view and select **Refresh**. It may take some time before the dashboard starts to show data. The agent data is recalculated every 15 minutes, and not when you refresh the dashboard.  
+**Management Group Health** automatically refreshes every 15 minutes by default. To manually refresh the view, right-click the view and select **Refresh**. It might take some time before the dashboard starts to show data. The agent data is recalculated every 15 minutes, and not when you refresh the dashboard.  
 
-This article describes the specific information you'll see in each cell of the **Management Group Health** dashboard view.  
+This article describes the specific information that you see in each cell of the **Management Group Health** dashboard view.  
 
 ## Management Group Functions  
 ![Screenshot showing Health of management group functions.](./media/manage-monitor-health-mg/om2016-mgh-dashboard-grid1.png)  

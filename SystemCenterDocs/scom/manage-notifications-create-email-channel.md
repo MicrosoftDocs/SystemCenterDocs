@@ -1,24 +1,19 @@
 ---
 title: How to Enable an Email Notification Channel
 description: This article describes the steps to configure an email notification channel to send alerts to subscribers from an email server.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 07/28/2023
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: eb68582d-fe83-4d79-9017-55673f7f65b9
 ---
 
 # How to enable an email notification channel
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This article describes how to configure a channel that will send alert notifications to subscribers from an email server either within the domain of the organization or external email authentication.  
 

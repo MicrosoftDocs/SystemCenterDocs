@@ -1,23 +1,19 @@
 ---
 title: Plan SPF deployment
 description: This article provides an overview of how to plan for a Service Provider Foundation installation.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Plan SPF deployment
 
-::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
 
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-::: moniker-end
 
 This article helps you ensure that you've the prerequisites and planning steps in place before you deploy System Center - Service Provider Foundation (SPF).
 

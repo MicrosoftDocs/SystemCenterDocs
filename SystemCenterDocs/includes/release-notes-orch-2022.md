@@ -1,31 +1,64 @@
 ---
 ms.assetid:
 description: include file to summarize the release notes for System Center 2022 - Orchestrator
-manager: mkluck
 ms.topic:  include
-author: jyothisuri
-ms.author: jsuri
-ms.prod:  system-center
-ms.technology: Orchestrator
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service:  system-center
+ms.subservice: Orchestrator
 keywords:
-ms.date: 05/26/2023
+ms.date: 02/21/2024
 title:  include file
 ---
 
-## Orchestrator 2022 release notes
+## Orchestrator 2022 UR2 release notes
 
-The Orchestrator 2022 release includes all issues fixed until [Orchestrator 2019 UR3](https://support.microsoft.com/topic/update-rollup-3-for-system-center-2019-orchestrator-70bc1df6-adbc-9b89-68bf-df5a6eefca5f).
+The following sections summarize the release notes for Orchestrator 2022 UR2, and include the known issues and workarounds.
 
->[!NOTE]
->System Center Orchestrator 2019 IPs aren't supported on System Center Orchestrator 2022. 
+For the problems fixed in UR2 and the installation instructions for UR2, see [the KB article](https://support.microsoft.com/kb/5033099).
 
-### Update Rollup 1 (12 January 2023)
+### 'Send platform event' activity isn't persisted to the database
 
-See [KB article #5021420](https://support.microsoft.com/kb/5021420) for improvements and issues fixed in 2022 UR1.
+**Description**: **Send platform event** activity isn't persisted to the database and isn't visible in **Events** tab of the Runbook Designer.
 
-## Known Issues and Workarounds
+**Workaround**: None
 
-The following are the known issues and workarounds in System Center 2022 - Orchestrator.
+### Identifiers are displayed instead of activity names on the Runbook Tester canvas and log view area
+
+**Description**: Identifiers are displayed instead of Activity Names on the Runbook Tester canvas and Log View area. The Activity name is included as a property in the Log View area.
+
+**Workaround**: If needed, Runbook tester of UR1 can be used, it is compatible with SCO UR2.
+
+### Text content does not show correctly in the Runbook Tester log view area
+
+**Description**: Text content does not show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
+
+**Workaround**: None
+
+### Service Manager connector doesn't work with new Web API
+
+**Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
+
+**Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
+
+### Runbook designer crashes with some Integration packs
+
+**Description**: With some integration packs, Runbook designer might crash when you update existing runbooks or create new runbooks.
+
+**Mitigation**: Install the [Hotfix](https://www.catalog.update.microsoft.com/Search.aspx?q=5033783) for Orchestrator 2022 UR2 that fixes this issue.
+
+## Orchestrator 2022 UR1 release notes
+
+The following sections summarize the release notes for Orchestrator 2022 UR1, and include the known issues and workarounds.
+
+For the problems fixed in UR1 and the installation instructions for UR2, see [the KB article](https://support.microsoft.com/kb/5021420).
+
+### 'Send platform event' activity isn't persisted to the database
+
+**Description**: **Send platform event** activity isn't persisted to the database and isn't visible in **Events** tab of the Runbook Designer.
+
+**Workaround**: None
 
 ### Issues with Exchange Admin Integration pack v10.22.1.x
 
@@ -75,3 +108,10 @@ taskkill /f /pid {pid of the service}
 **Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
 
 **Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
+
+## Orchestrator 2022 release notes
+
+The Orchestrator 2022 release includes all issues fixed until [Orchestrator 2019 UR3](https://support.microsoft.com/topic/update-rollup-3-for-system-center-2019-orchestrator-70bc1df6-adbc-9b89-68bf-df5a6eefca5f).
+
+>[!NOTE]
+>System Center Orchestrator 2019 IPs aren't supported on System Center Orchestrator 2022. 

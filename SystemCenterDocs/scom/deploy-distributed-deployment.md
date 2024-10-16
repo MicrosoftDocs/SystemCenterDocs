@@ -2,23 +2,19 @@
 ms.assetid: 2e50e81c-96f5-4a4d-8dd1-dd57470e91be
 title: Distributed Deployment of Operations Manager
 description: This article highlights the distributed deployment configuration of Operations Manager and references each role to install.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/08/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 12/15/2023
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Distributed deployment of Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The distributed management group installation will form the foundation of 99 percent of Operations Manager deployments. It allows for the distribution of features and services across multiple servers to allow for scalability. It can include all Operations Manager server roles and supports the monitoring of devices across trust boundaries by using the gateway server.
 

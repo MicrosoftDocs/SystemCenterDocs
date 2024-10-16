@@ -1,28 +1,23 @@
 ---
 title: Create Container
 description: The Create Container activity creates a new container under the specified account.
-ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 05/16/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e58ceb1a-56fe-4675-95e5-a7f8187198ce
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Create Container
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Create Container** activity creates a new container under the specified account. It's part of the **Azure Storage** category activity.
 

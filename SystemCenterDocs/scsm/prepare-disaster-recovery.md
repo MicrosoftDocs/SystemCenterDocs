@@ -1,15 +1,15 @@
 ---
 title: Prepare for disaster recovery
 description: This article describes the steps that you must take for Service Manager disaster recovery before problems occur.
-manager: mkluck
-ms.custom: na, UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 04/26/2023
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e481f3b8-4074-4b51-9faa-93e35f4ffe68
@@ -17,18 +17,12 @@ ms.assetid: e481f3b8-4074-4b51-9faa-93e35f4ffe68
 
 # Prepare for Service Manager disaster recovery
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
-
 This article describes the steps that you must take for Service Manager disaster recovery before problems occur. The steps that you take to recover from a disaster are based on the completion of the steps that are outlined here. In general, preparing your Service Manager environment for disaster recovery involves the following:  
 
-1.  Deploying Service Manager with management servers and databases on separate computers  
-2.  Backing up the encryption keys on the Service Manager and data warehouse management servers
-3.  Backing up the SQL databases
-4.  Backing up your unsealed management packs
+1. Deploying Service Manager with management servers and databases on separate computers  
+2. Backing up the encryption keys on the Service Manager and data warehouse management servers
+3. Backing up the SQL databases
+4. Backing up your unsealed management packs
 
 ## Deployment strategy for disaster recovery
 
@@ -58,30 +52,30 @@ You use the Encryption Key Backup or Restore Wizard to back up encryption keys o
 
 ### Back up the encryption key  
 
-1.  Sign in to the computer that hosts the Service Manager management server of data warehouse management server by using an account that is a member of the Administrators group.  
-2.  In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.  
-3.  Right-click **SecureStorageBackup.exe** and select **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
-4.  On the **Introduction** page, select **Next**.  
-5.  On the **Backup or Restore?** page, select **Backup the Encryption Key**, and select **Next**.  
-6.  On the **Provide a Location** page, enter the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the MyServer server in the Backup shared folder, enter **\\\\MyServer\\Backup\\SMBackupkey.bin**, and select **Next**.  
-7.  On the **Provide a Password** page, in the **Password** box, enter a password that contains at least eight characters. In the **Confirm Password** box, reenter the same password, and select **Next**.  
+1. Sign in to the computer that hosts the Service Manager management server of data warehouse management server by using an account that is a member of the Administrators group.  
+2. In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.  
+3. Right-click **SecureStorageBackup.exe** and select **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
+4. On the **Introduction** page, select **Next**.  
+5. On the **Backup or Restore?** page, select **Backup the Encryption Key**, and select **Next**.  
+6. On the **Provide a Location** page, enter the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the MyServer server in the Backup shared folder, enter **\\\\MyServer\\Backup\\SMBackupkey.bin**, and select **Next**.  
+7. On the **Provide a Password** page, in the **Password** box, enter a password that contains at least eight characters. In the **Confirm Password** box, reenter the same password, and select **Next**.  
     > [!IMPORTANT]  
     >  Recovery of the password is not possible if the password is lost or forgotten.  
 
-8.  After you see the message **Secure Storage Backup Complete**, select **Finish**.
+8. After you see the message **Secure Storage Backup Complete**, select **Finish**.
 
 ## Back up System Center - Service Manager databases
 
 There are up to eight databases in a System Center - Service Manager environment:  
 
--   ServiceManager  
--   DWDataMart  
--   DWRepository  
--   DWStagingAndConfig  
--   ReportServer  
--   Analyst  
--   OMDWDataMart  
--   CMDWDataMart  
+- ServiceManager  
+- DWDataMart  
+- DWRepository  
+- DWStagingAndConfig  
+- ReportServer  
+- Analyst  
+- OMDWDataMart  
+- CMDWDataMart  
 
 The first four databases in this list need to connect and exchange data with the Service Manager and data warehouse management servers. Data is encrypted during these exchanges. On the management servers, the encryption keys are backed up and restored as necessary, as explained in this article. For the servers that host databases, the encryption keys are stored in the databases themselves.  
 
@@ -97,42 +91,42 @@ During installation of the Service Manager database, Service Manager Setup enabl
 
 You can use the following procedure as part of your disaster recovery preparation steps for Service Manager to generate a script to capture SQL Server logon permissions and object-level permissions. You perform this procedure on the computer that hosts SQL Server Reporting Services (SSRS) and on the computers that host the following Service Manager and data warehouse databases:  
 
--   DWDataMart  
--   DWRepository  
--   DWStagingAndConfig  
--   ServiceManager  
--   ReportServer  
+- DWDataMart  
+- DWRepository  
+- DWStagingAndConfig  
+- ServiceManager  
+- ReportServer  
 
-#### To start the SQL Server Script wizard  
+#### Start the SQL Server Script wizard
 
-1.  Using an account with Administrator privileges, sign in to the computer that hosts the Service Manager or data warehouse database.  
-2.  On the Windows desktop, select **Start**, point to **Programs**, point to the Microsoft SQL Server version installed on your computer, and select **SQL Server Management Studio**.  
-3.  In the **Connect to Server** dialog, do the following:  
-    1.  In the **Server Type** list, select **Database Engine**.  
-    2.  In the **Server Name** list, select the server and the instance for your Service Manager database. For example, select **computer\\INSTANCE1**.  
-    3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
-4.  In the **Object Explorer** pane, expand **Databases**.  
-5.  Right-click the database name, point to **Tasks**, and select **Generate Scripts**. For this example, right-click **ServiceManager**, point to **Tasks**, and select **Generate Scripts**.  
-6.  In the Generate and Publish Scripts Wizard, do the following:  
-    1.  On the **Introduction** page, select **Next**.  
-    2.  On the **Choose Objects** page, select **Select specific database objects**, and select **Select All**.  
-    3.  In the database objects list, expand **Tables**.  
-    4.  Clear the checkbox for the following tables:  
-        -   **dbo.STG\_Collation**  
-        -   **dbo.STG\_Locale**  
-        -   **dbo.STG\_MTD\_ConverisonLog**  
-    5.  Scroll up to the top of the list, and then collapse **Tables**.  
-    6.  Expand **Stored Procedures**.  
-    7.  Clear the checkbox for the following stored procedures:  
-        -   **dbo.STG\_DTS\_ConvertToUnicode**  
-        -   **dbo.STG\_DTS\_CreateClonedTable**  
-        -   **dbo.STG\_DTS\_InsertSQL**  
-        -   **dbo.STG\_DTS\_ValidateConversion**  
-    8.  Select **Next**.  
+1. Using an account with Administrator privileges, sign in to the computer that hosts the Service Manager or data warehouse database.  
+2. On the Windows desktop, select **Start**, point to **Programs**, point to the Microsoft SQL Server version installed on your computer, and select **SQL Server Management Studio**.  
+3. In the **Connect to Server** dialog, do the following:  
+    1. In the **Server Type** list, select **Database Engine**.  
+    2. In the **Server Name** list, select the server and the instance for your Service Manager database. For example, select **computer\\INSTANCE1**.  
+    3. In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
+4. In the **Object Explorer** pane, expand **Databases**.  
+5. Right-click the database name, point to **Tasks**, and select **Generate Scripts**. For this example, right-click **ServiceManager**, point to **Tasks**, and select **Generate Scripts**.  
+6. In the Generate and Publish Scripts Wizard, do the following:  
+    1. On the **Introduction** page, select **Next**.  
+    2. On the **Choose Objects** page, select **Select specific database objects**, and select **Select All**.  
+    3. In the database objects list, expand **Tables**.  
+    4. Clear the checkbox for the following tables:  
+        - **dbo.STG\_Collation**  
+        - **dbo.STG\_Locale**  
+        - **dbo.STG\_MTD\_ConverisonLog**  
+    5. Scroll up to the top of the list, and then collapse **Tables**.  
+    6. Expand **Stored Procedures**.  
+    7. Clear the checkbox for the following stored procedures:  
+        - **dbo.STG\_DTS\_ConvertToUnicode**  
+        - **dbo.STG\_DTS\_CreateClonedTable**  
+        - **dbo.STG\_DTS\_InsertSQL**  
+        - **dbo.STG\_DTS\_ValidateConversion**  
+    8. Select **Next**.  
     9. On the **Set Scripting Options** page, select **Save scripts**, select **Save to file**, select **Single file**, specify a file location in **File name**, and select **Next**.  
     10. On the **Summary** page, select **Next**.  
     11. When the script is complete, on the **Save or Publish Scripts** page, select **Finish**.  
-7.  If you need to restore a database, use this script to set permissions.
+7. If you need to restore a database, use this script to set permissions.
 
 ## Back up unsealed management packs
 
@@ -142,19 +136,19 @@ Part of the disaster recovery plan for your Service Manager management server in
 
 You can use the Windows PowerShell command-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that as part of your disaster recovery plan for Service Manager you can later import these management packs.  
 
-#### To back up unsealed management packs  
+To back up unsealed management packs, follow these steps:
 
-1.  On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you'll store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
-2.  On the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, right-click **Windows PowerShell**, and select **Run as administrator**.  
-3.  In the Service Manager console, select **Administration**.  
-4.  In the **Tasks** pane, select **Start PowerShell Session**  
-5.  At the Windows PowerShell command prompt, enter the following command:  
+1. On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you'll store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
+2. On the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, right-click **Windows PowerShell**, and select **Run as administrator**.  
+3. In the Service Manager console, select **Administration**.  
+4. In the **Tasks** pane, select **Start PowerShell Session**  
+5. At the Windows PowerShell command prompt, enter the following command:  
 
-    ```  
+    ```powershell
     Get-SCSMManagementPack | where {$_.Sealed -eq $false}|Export-SCSMManagementPack -Path c:\mpbackup  
     ```  
 
-6.  Save the unsealed management packs on a separate physical computer.
+6. Save the unsealed management packs on a separate physical computer.
 
 ## Next steps
 

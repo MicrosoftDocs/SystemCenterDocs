@@ -2,23 +2,19 @@
 ms.assetid: 7cb61f4f-d184-407e-abc1-f2334de51810
 title: Management Pack Assessment
 description: This article describes how to use the updates and recommendations feature in  System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/01/2024
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Management pack assessment
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ::: moniker range="<=sc-om-2016 <sc-om-2019"
 
@@ -58,9 +54,6 @@ This feature includes the following capabilities:
 
 >[!NOTE]
 >In order to use the options highlighted in the table above, the computer you are running the Operations console from requires an Internet connection and your firewall needs to allow access to the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**
-
->[!NOTE]
->Configuring the frequency and control the discovery of workloads can't be performed directly from the Operations console.  If you wish to modify those settings of this feature, you can download a PowerShell script from the [Microsoft Script Center](https://gallery.technet.microsoft.com/scriptcenter/Script-to-modify-settings-246c84af#content).
 
 ## Importing a Management Pack using Get MP
 The following procedure describes how to use the Get MP option to download a management pack for a selected workload.  
@@ -172,7 +165,7 @@ The following workloads are supported for the operating systems listed below.
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
 ### Windows Server 2016
 
@@ -256,7 +249,7 @@ The following workloads are supported for the operating systems listed below.
 ::: moniker range="=sc-om-2019"
 
 ## Support for Linux and Unix platforms supported for application servers workload
-- CentOS6 x64, CentOS7 x64
+
 - Oracle6 x64, Oracle7 x64
 - Sles12 x64
 - Rhel7 x64

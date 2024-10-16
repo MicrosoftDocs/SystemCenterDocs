@@ -1,15 +1,15 @@
 ---
 title: Upgrade Operations Manager databases to SQL Server 2019
 description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2019.
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 01/13/2023
 ms.custom: na
-ms.prod: system-center
+ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.assetid:
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: conceptual
 ---
 

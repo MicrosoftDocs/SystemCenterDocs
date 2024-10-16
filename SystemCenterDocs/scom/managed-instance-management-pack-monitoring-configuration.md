@@ -2,20 +2,24 @@
 ms.assetid: 7e0ce57d-1b20-4412-a14e-941b4264f849
 title: Monitoring configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the monitoring configuration in Management Pack for Azure SQL Managed Instance
-author: Anastas1ya
-ms.author: v-ekaterinap
+author: epomortseva
+ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/10/2021
+ms.date: 1/30/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Monitoring Configuration in Management Pack for Azure SQL Managed Instance
 
+This section explains monitoring configurations in Management Pack for Azure SQL Managed Instance.
+
+## Monitoring Templates
+
 Management Pack for Azure SQL Managed Instance has two monitoring templates for monitoring of Azure SQL Managed Instance:
 
-- [Azure SQL MI – Automatic](managed-instance-management-pack-automatic-monitoring.md)
+- [Azure SQL MI – Automatic](managed-instance-management-pack-automatic-monitoring-managed-identity.md)
 
     This template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
 
@@ -23,8 +27,8 @@ Management Pack for Azure SQL Managed Instance has two monitoring templates for 
 
     This template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
->[!NOTE]
->Using both the templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and may also cause performance issues.
+> [!IMPORTANT]
+> Using both the templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and may also cause performance issues.
 
 ## Space Monitoring
 
@@ -51,8 +55,8 @@ For instance space monitoring, the management pack checks storage utilization at
 
 Management Pack for Azure SQL Managed Instance provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
 
->[!NOTE]
->The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups aren't considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql).
+> [!NOTE]
+> The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups aren't considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql).
 
 ## Securables Configuration Status Monitor
 
@@ -120,7 +124,9 @@ All database states except the ONLINE one will result in an unhealthy monitor st
 |RECOVERING|Database is being recovered. The recovering process is a transient state; the database will automatically become online if the recovery succeeds. If the recovery fails, the database will become suspect. The database is unavailable.|  
 |RECOVERY PENDING|SQL Server has encountered a resource-related error during recovery. The database isn't damaged, but files may be missing or system resource limitations may be preventing it from starting. The database is unavailable. Additional action by the user is required to resolve the error and let the recovery process be completed.|  
 |SUSPECT|At least the primary filegroup is suspect and may be damaged. The database can't be recovered during startup of SQL Server. The database is unavailable. Additional action by the user is required to resolve the problem.|  
-|EMERGENCY|User has changed the database and set the status to EMERGENCY. The database is in single-user mode and may be repaired or restored. The database is marked READ_ONLY, logging is disabled, and access is limited to members of the **sysadmin** fixed server role. EMERGENCY is primarily used for troubleshooting purposes. For example, a database marked as suspect can be set to the EMERGENCY state. This could permit the system administrator read-only access to the database. Only members of the **sysadmin** fixed server role can set a database to the EMERGENCY state.|  
+|EMERGENCY|User has changed the database and set the status to EMERGENCY. The database is in single-user mode and may be repaired or restored. The database is marked READ_ONLY, logging is disabled, and access is limited to members of the **sysadmin** fixed server role. EMERGENCY is primarily used for troubleshooting purposes. For example, a database marked as suspect can be set to the EMERGENCY state. This could permit the system administrator read-only access to the database. Only members of the **sysadmin** fixed server role can set a database to the EMERGENCY state.|
+|COPYING|Database is being copied across managed instances by using Always On availability group technology. The copy feature creates a new database on the destination instance as a copy of the source database. With this feature, data replication is reliable, consistent, asynchronous, and near real-time. When you copy a database, the source database remains online during the operation and after it's completed. The database is available.|
+|OFFLINE_SECONDARY|Database is available for access after the failover, which performs full data synchronization between primary and secondary databases before the secondary switches to the primary role. This guarantees no data loss. Failover is only possible when the primary is accessible. The database is available.|
 
 For more information, see [Database States](/sql/relational-databases/databases/database-states).
 

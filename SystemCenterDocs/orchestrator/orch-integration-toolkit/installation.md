@@ -1,25 +1,17 @@
 ---
 title: Orchestrator Integration Toolkit Installation
 description: This article explains how to install the Orchestrator Integration Toolkit.
-author: jyothisuri
-manager: evansma
-ms.date: 04/25/2022
-ms.prod: system-center
-ms.technology: orchestrator
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/03/2024
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-ms.author: jsuri
 ms.custom: intro-installation
 ---
 
 # Installation
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 This article provides the system requirements and steps to install the Orchestrator Integration Toolkit.  
 

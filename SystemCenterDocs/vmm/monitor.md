@@ -2,25 +2,21 @@
 ms.assetid: 00667742-29ba-44ea-8dda-587d8944f4a8
 title: Monitor VMM
 description: This article describes how to monitor VMM with VMM jobs, and System Center Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/16/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 09/02/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Monitor VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-You configure monitoring and reporting in System Center - Virtual Machine Manager (VMM) as follows:
+You configure monitoring and reporting in System Center Virtual Machine Manager (VMM) as follows:
 
 - **VMM jobs**: In the VMM console, you can monitor the status of processes and operations with VMM jobs.
 - **Monitoring in Operations Manager**: To monitor the health and status of VMM servers and the VMM fabric, you integrate VMM with System Center Operations Manager.
@@ -31,12 +27,12 @@ You configure monitoring and reporting in System Center - Virtual Machine Manage
 
 A VMM job is created for any action that changes the status of a managed object.
 
-- Jobs are composed of steps that are performed sequentially to complete an action. Simple jobs, such as stopping a virtual machine, contain only one step. More complex jobs, or running a wizard, might contain multiple jobs or job groups.
+- Jobs are composed of steps that are performed sequentially to complete an action. Simple jobs, such as stopping a virtual machine, contain only one step. More complex jobs, or running a wizard, can contain multiple jobs or job groups.
 -  Jobs are tracked in the **Jobs** view in the VMM console. The **Details** tab in the **Jobs** view shows the status of each step in a job.
 - Each job is represented by one or more VMM PowerShell cmdlets. You can perform almost any VMM task with [PowerShell](/previous-versions/system-center/powershell/system-center-2012-r2/jj654428(v=sc.20)). Each wizard includes a **View Script** button on the **Summary** page that displays the cmdlets that will perform the job that you just requested. You can save Windows PowerShell scripts to the VMM library, and view and run them in **Library** view.
 - Each VMM job is independent and doesn't depend on the status of another job. For example, if you're running jobs to add multiple host servers, the failure to add one host doesn't affect the remaining jobs.
 When a job completes, an audit record is saved that lists the changes that the job made to the VMM object. You can view the audit record in **Jobs** > **Details** > **Change Tracking**.
-- Jobs are started automatically when you perform tasks in the VMM console, or using PowerShell. You can cancel some running jobs, but others, including adding hosts and system jobs, can't be canceled after they've started running.
+- Jobs are started automatically when you perform tasks in the VMM console or using PowerShell. You can cancel some running jobs, but others, including adding hosts and system jobs, can't be canceled after they've started running.
 - You can generally restart failed jobs, but note that:
     - If multiple jobs place a VM into a failed state, only the most recent job can be restarted.
     - For jobs that run for a long time, such as virtual machine migration, intermediate results are stored periodically while the job is running, and the Restart action attempts to resume the job from the last known state. All other jobs start from the beginning.
@@ -44,13 +40,13 @@ When a job completes, an audit record is saved that lists the changes that the j
 
 ## Monitor with Operations Manager
 
-You can monitor VMM health and status in Operations Manager by installing the VMM management pack, which provides many dashboards in the Operations Manager console.
+You can monitor VMM health and status in Operations Manager by installing the [VMM management pack](https://www.microsoft.com/download/details.aspx?id=54113), which provides many dashboards in the Operations Manager console.
 
 
 **Dashboard** | **Details**
 --- | ---
-**Virtual Machine Dashboard** | Monitors the health of virtual machines.<br/><br/> It shows information about discovered VMs in the VMM fabric. You can view alerts, properties, host, and performance information for the VM.
-**VMM Host Dashboard** | Monitors the health of virtualization hosts discovered in the VMM fabric.<br/><br/> It shows information about the host properties, status, VMs, alerts, and performance.
+**Virtual Machine Dashboard** | Monitors the health of virtual machines.<br/><br/> It displays information about discovered VMs in the VMM fabric. You can view alerts, properties, host, and performance information for the VM.
+**VMM Host Dashboard** | Monitors the health of virtualization hosts discovered in the VMM fabric.<br/><br/> It displays information about the host properties, status, VMs, alerts, and performance.
 **Fabric Health Dashboard** | Monitors the health of VMM private clouds.<br/><br/> For each cloud, the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters, and so on), and storage information such as pools, file share, LUNs, and network monitoring.<br/><br/> A fabric monitoring dashboard diagram view shows the status for each piece of the fabric.<br/><br/> The dashboard can be scoped to physical or virtual resources or to a particular cloud tenant.
 
 [Learn more](monitors-ops-manager.md) about integrating VMM with Operations Manager.
@@ -61,7 +57,7 @@ After you've connected VMM to Operations Manager, you can view and create report
 
 **Report** | **Details**
 --- | ---
-**Capacity Utilization** | Details usage for VM hosts and other objects.<br/><br/> Provides an overview of how capacity is being used in your datacenter, and helps you to make resources decisions for supporting your VMs.
+**Capacity Utilization** | Details usage for VM hosts and other objects.<br/><br/> Provides an overview of how capacity is being used in your datacenter and helps you make resources decisions for supporting your VMs.
 **Host Group Forecasting** | Predicts host activity based on history of disk space, memory, disk IO, network IO, and CPU usage.<br/><br/> To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager Reporting server.
 **Host Utilization** | Shows the number of virtual machines that are running on each host and average usage, along with the total or maximum values for host processors, memory, and disk space.
 **Host Utilization Growth** | Shows the percentage change in resource usage and the number of virtual machines that are running on selected hosts during a specified time period.

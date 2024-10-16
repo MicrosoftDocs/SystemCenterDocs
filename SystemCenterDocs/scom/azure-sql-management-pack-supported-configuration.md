@@ -3,13 +3,13 @@ ms.assetid: 3b973a20-df14-490f-8452-020a9e3ede96
 title: Scope and supported configuration in Management Pack for Azure SQL Database
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Database
 ms.custom: engagement-fy23
-author: vchvlad
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-fkornilov
 manager: evansma
-ms.date: 01/09/2023
+ms.date: 02/02/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for Azure SQL Database
@@ -69,8 +69,6 @@ Management Pack for Azure SQL Database supports the following versions of System
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
   
 - System Center Operations Manager 2016
-- System Center Operations Manager 1801
-- System Center Operations Manager 1807
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
 

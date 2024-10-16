@@ -2,23 +2,19 @@
 ms.assetid: 97e6a5fa-a108-42d0-93f7-c1ac1884f2ae
 title: Required Capabilities for UNIX and Linux Accounts
 description: This article describes the capabilities for privileged and unprivileged access to Linux and UNIX computer with Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 03/09/2017
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/19/2024
 ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Required capabilities for UNIX and Linux accounts
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Access to UNIX and Linux computers in System Center - Operations Manager uses three Run as profiles. One profile is associated with an unprivileged account while the other two accounts are associated with a privileged account or an unprivileged account that is elevated by using `sudo` or `su`.  
 

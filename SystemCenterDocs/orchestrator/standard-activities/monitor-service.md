@@ -3,27 +3,21 @@ title: Monitor Service
 description: This article describes about the Monitor Service activity that invokes runbooks when a service has been started or stopped.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 274d3f61-125f-4d90-9ab3-33208908534e
 caps.latest.revision: 17
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Monitor Service
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Monitor Service activity invokes runbooks when a service has been started or stopped. You can use the Monitor Service activity to monitor services on any remote computer. Use the Monitor Service activity to create runbooks that take corrective actions when services unintentionally shut down. For example, if a SQL Server service that hosts critical data stops responding, you can use a Monitor Service activity with a [Start/Stop Service](start-stop-service.md) activity to automatically restart the service.  
 

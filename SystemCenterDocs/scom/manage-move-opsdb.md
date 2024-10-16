@@ -1,24 +1,18 @@
 ---
 ms.assetid: 033e12cc-1265-48a2-848c-acbc316d8ad5
-title: How to Move the Operational Database
+title: Move the Operational Database
 description: This article describes how to move the Operations Manager operational database to a different SQL Server instance after initial deployment.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/17/2018
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to move the Operational database
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
+# Move the Operational database
 
 After the initial deployment of System Center Operations Manager, you might need to move the operational database from one Microsoft SQL Server-based computer to another.
 
@@ -31,16 +25,15 @@ During the move, you need to stop services on your management servers, back up t
 
 ![Diagram showing Summary steps for moving operational database.](./media/manage-move-opsdb/om2016-move-operational-database-steps.png)<br>
 
-## Moving the Operational database
-
 ### Stop the Operations Manager services
 
 On all the management servers in the management group, stop the Operations Manager services:
-  - System Center Data Access (omsdk)
-  - Microsoft Monitoring Agent (HealthService)
-  - System Center Management Configuration (cshost)
+  
+- System Center Data Access (omsdk)
+- Microsoft Monitoring Agent (HealthService)
+- System Center Management Configuration (cshost)
 
-### Backup the Operational database on the old SQL Server instance
+### Back up the Operational database on the old SQL Server instance
 
 1. On the original SQL Server instance hosting the operational database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManager.
 
@@ -65,7 +58,7 @@ On all the management servers in the management group, stop the Operations Manag
 
 ### Update the registry and configuration files on the management servers, and Operational database
 
-After moving the Operations Manager operational database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#how-to-configure-settings-for-the-operational-database).
+After moving the Operations Manager operational database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#configure-settings-for-the-operational-database).
 
 ### Update security credentials on the new SQL Server instance hosting the operational database
 
@@ -133,17 +126,16 @@ In the below steps your database name may be different from the default. You may
     ```sql
     EXEC sp_fulltext_database 'enable'
     ```
-   
 
-###  Start the Operations Manager services
+### Start the Operations Manager services
 
 1. On all the management servers in the management group, start the Operations Manager services:
    - System Center Data Access (omsdk)
    - Microsoft Monitoring Agent (HealthService)
    - System Center Management Configuration (cshost)
 
-
 ### Update Service Principal Name for Kerberos Connections
+
 To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?preserve-view=true&view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using the Kerberos protocol.  
 
 ## Next steps

@@ -1,23 +1,19 @@
 ---
 title: Identifying the Computer Experiencing a Problem
-author: jyothisuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 description: This topic describes how to identify particular computers in your environment that have triggered an alert.
-ms.date: 08/29/2016
-ms.author: jsuri
+ms.date: 11/28/2023
 ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Identifying the computer experiencing a problem
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This article helps you answer questions such as **I see an alert that says logical disk defragmentation is high. Where is it high?**  
 

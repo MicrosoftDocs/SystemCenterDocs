@@ -3,12 +3,12 @@ ms.assetid: 1c4927e5-5053-47e1-bf35-9aca5b4793a2
 title: Monitoring configuration in Management Pack for SQL Server Analysis Services
 description: This article explains monitoring configurations in Management Pack for SQL Server Analysis Services
 manager: evansma
-author: epomortseva
-ms.author: v-ekaterinap
-ms.date: 06/13/2023
+author: fkornilov
+ms.author: v-fkornilov
+ms.date: 04/23/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Monitoring Configuration in Management Pack for SQL Server Analysis Services
@@ -39,62 +39,6 @@ Analysis Services Database includes the following server modes:
   - Partition
 - Tabular Database
 
-## Disabling Monitoring of Specified SQL Server Analysis Services Versions
-
-Management Pack for SQL Server Analysis Services allows you to exclude certain versions of SQL Server Analysis Services from monitoring.
-
-To exclude versions that you don't want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **SSAS: Multidimensional Instance Discovery**, **SSAS: PowerPivot Instance Discovery**, or **SSAS: Tabular Instance Discovery** discovery with the versions that you want to exclude. Use commas to specify multiple versions.
-
-For example, an override "2014,2016" instructs the management pack to skip instances of SQL Server Analysis Services 2014 and 2016.
-
-![Screenshot of disabling Monitoring of Specified SQL Server Versions.](./media/analysis-services-management-pack/overriding-version-parameter.png)
-
-## Disabling Monitoring of Specified SQL Server Analysis Services Editions
-
-Management Pack for SQL Server Analysis Services allows you to exclude certain editions of SQL Server Analysis Services instances from monitoring.
-
-To exclude editions that you don't want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **SSAS: Multidimensional Instance Discovery**, **SSAS: PowerPivot Instance Discovery**, or **SSAS: Tabular Instance Discovery** discovery with the editions that you want to exclude. Use commas to specify multiple editions.
-
-The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
-
-|Short Name|Covered Editions|
-|-|-|
-|Enterprise|Enterprise Edition, Enterprise Edition: Core-based Licensing|
-|Standard|Standard Edition, Business Intelligence Edition|
-|Web|Web Edition|
-|Developer|Developer Edition|
-|Express|Express Edition, Express Edition with Advanced Services|
-|Evaluation|Enterprise Evaluation Edition|
-
-![Screenshot of disabling Monitoring of Specified SQL Server Editions.](./media/analysis-services-management-pack/overriding-edition-parameter.png)
-
-## Disabling Monitoring of Specified Databases by Name
-
-You can disable discovery and monitoring of databases by specifying database names in the **Exclude list** parameter available in the following discoveries:
-
-- Multidimensional DB Discovery
-
-- Tabular DB Discovery
-
-Use commas to separate database names and asterisks to replace one or more characters. For example, when setting the **Exclude list** parameter to dev*, \*test*, *stage, dbnotmon, the monitoring behavior would be as follows:
-
-|DB Name|Monitored/Not monitored|
-|-|-|
-|dev|Not monitored|
-|dev_sales|Not monitored|
-|sales_dev|Monitored|
-|test|Not monitored|
-|test_sales|Not monitored|
-|sales_test|Not monitored|
-|stage|Not monitored|
-|stage_dev|Monitored|
-|dev_stage|Not monitored|
-|dbnotmon|Not monitored|
-|dbnotmon_sales|Monitored|
-|sales_dbnotmon|Monitored|
-
-If you've \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables the monitoring of any database.
-
 ## Instance Monitoring
 
 The following monitors are available for the monitoring of SQL Server Analysis Services instances.
@@ -110,6 +54,8 @@ The following monitors are available for the monitoring of SQL Server Analysis S
 |Processing Pool Job Queue length|This monitor reports an alert when the processing pool job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
 |Default Storage Free Space|This monitor reports a Warning alert when the available free space for the instance default storage drops below the **Warning Threshold** setting expressed as a percentage of the sum of estimated default storage folder (DataDir) size and free disk space. The monitor reports a Critical alert when the available space drops below **Critical Threshold**. The monitor doesn't take into account databases and partitions located in folders other than the default storage folder (DataDir).|
 |CPU utilization|This monitor reports an alert if the CPU usage by the SQL Server Analysis Services process is high.|
+|VertiPaq memory consumed by SSAS Instance|This monitor reports a warning when Vertipaq memory allocations by SSAS instance surpass the configured **Warning Threshold** expressed as either an absolute value in GB or a percentage of the physical memory. The monitor issues a critical alert when these allocations surpass the configured **Critical Threshold**.|
+|VertiPaq memory paging indication|This monitor reports a warning when the Vertipaq memory paging usage by SSAS instance surpass the configured **Warning Threshold**, expressed as a percentage of the Vertipaq memory limit. The monitor issues a critical alert when these allocations surpass the configured **Critical Threshold** thus warning you that paging is soon to occur.|
 
 ## Database Monitoring
 
@@ -173,90 +119,18 @@ Performance collection rules collect the following metrics:
 - Total Memory on the Server (GB)
 - Used Space on Drive (GB)
 - Database VertiPaq Memory Size (GB)
-
-## Tasks Overview
-
-The SQL Server Analysis Services Management Pack provides tasks for some activities with the target Instance:
-
-- **Export Event Log**
-
-   Export the Windows Event log file from the machine hosting SQL Server Analysis Services instance.
-   The exported source events with ID 4221 are:
-
-  - SQL Server Analysis Services MP Library
-  - SQL Server Analysis Services Discovery MP
-  - SQL Server Analysis Services Monitoring MP
-  - SQL Server MP Default
-
-   For more information, see [Export Event Log Task](sql-server-management-pack-export-event-log-task.md).
-
-- **Start Analysis Services**
-
-    SQL Server Analysis Services instance can be started by task from System Center Operations Manager.
-
-- **Stop Analysis Services**
-
-    SQL Server Analysis Services instance can be stopped by task from System Center Operations Manager.
-
-## Enabling Debugging
-
-In Management Pack for SQL Server Analysis Services, you can enable debugging in the Windows Event log in cases when you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
-
-To enable debugging, do the following:
-
-1. Open the Windows registry.
-
-2. Create the following key:
-`HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Analysis Services MP`
-
-3. Create a Multi-String with the name `<MG Name>` that corresponds to the management group name for which you want to collect logs. Leave **Value data** empty to enable Debug logging for all SQL MP modules in the Operations Manager Event Log.
-
-Or use the following PowerShell script to enable debugging in automated mode:
-
-```PowerShell
-$SCOMRoot = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\'
-$MPDebugKey = Join-Path -Path $SCOMRoot -ChildPath 'SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Analysis Services MP'
-$AgRoot = Join-Path -Path $SCOMRoot -ChildPath 'Agent Management Groups'
-$SrvRoot = Join-Path -Path $SCOMRoot -ChildPath 'Server Management Groups'
-$searchPath = if (Test-Path $AgRoot) { $AgRoot } else { $SrvRoot }
-
-if (-not(Test-Path $SCOMRoot)) {
-    Write-Error 'The Microsoft Operations Manager or Monitoring Agent is not installed.' -ErrorAction Stop
-}
-
-if (-not(Test-Path $MPDebugKey)) {
-    New-Item -Path $MPDebugKey -Force | Out-Null
-}
-
-Get-ChildItem -Path $searchPath |
-Out-GridView -OutputMode Multiple | # Remove this line if there's no need for GUI
-ForEach-Object {
-    New-ItemProperty -LiteralPath $MPDebugKey -Name $_.PSChildName -Value '1' -PropertyType 'MultiString' -Force | Out-Null
-}
-```
-
-The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You don't need to restart any service; changes are applied automatically.
-
-## Disabling Debugging
-
-To disable debugging, delete the keys added above or use the following PowerShell script to disable debugging in automated mode:
-
-```PowerShell
-$MPDebugKey = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Analysis Services MP'
-
-if (-not(Test-Path $MPDebugKey)) {
-    Write-Error 'The Microsoft Operations Manager or Monitoring Agent is not installed.' -ErrorAction Stop
-}
-
-(Get-Item -Path $MPDebugKey).property |
-Out-GridView -OutputMode Multiple | # Remove this line if there is no need for GUI
-ForEach-Object {
-    Remove-ItemProperty -LiteralPath $MPDebugKey -Name $_ -Force | Out-Null
-}
-```
-
-> [!NOTE]
-> Currently, you can enable extended logging for all SQL MP modules only. Extended logging of separate modules isn't supported yet.
+- MDX Number of calculation covers
+- MDX Total cells calculated
+- MDX Total NON EMPTY for calculated members
+- MDX Total NON EMPTY unoptimized
+- MDX Total Recomputes
+- MDX Total Sonar subcubes
+- Processing Aggreagations Rows created/sec
+- Indexes Processing Rows/sec
+- Processing Rows written/sec
+- VertiPaq Memory Limit(GB)
+- VertiPaq Memory Paged (GB)
+- VertiPq Nonpaged Memory (GB)
 
 ## How Health Rolls Up
 

@@ -2,23 +2,18 @@
 ms.assetid: dd7742fd-dcec-4546-b0f3-59ddaf94459a
 title: Quick Reference to Operations Manager Tasks
 description: This article summarizes the common tasks to perform after installing Operations Manager in your environment.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/09/2019
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Quick reference to Operations Manager tasks
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 

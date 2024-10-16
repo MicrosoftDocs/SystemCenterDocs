@@ -1,27 +1,23 @@
 ---
 title: Update Group
 description: You can use the Update Group activity in a runbook to update properties of a group in the Microsoft Active Directory.
-ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.date: 01/23/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9ddbe80a-4efb-4679-b880-bda7228c167e
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Update Group
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 You can use the Update Group activity in a runbook to update properties of a group in Microsoft Active Directory.
 

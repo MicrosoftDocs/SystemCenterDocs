@@ -2,13 +2,13 @@
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
 description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, UR2, UR3, UR4, and UR5.
-author:  jyothisuri
-ms.author: jsuri
-manager:  mkluck
-ms.date:  04/19/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date:  06/06/2024
 ms.topic:  include
-ms.prod:  system-center
-ms.technology:  virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ---
 
 
@@ -18,7 +18,7 @@ The following sections introduce the new features in Virtual Machine Manager (VM
 
 ### Compute
 
-####   Cluster rolling upgrade for S2D clusters
+#### Cluster rolling upgrade for S2D clusters
 
 System Center 2019 Virtual Machine Manager supports a rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. For more information, see [Perform a rolling upgrade](../vmm/hyper-v-rolling-upgrade.md).
 
@@ -135,7 +135,7 @@ VMM supports SQL Server 2017. You can upgrade SQL Server 2016 to SQL Server 2017
 
 VMM supports a nested virtualization feature that you can use to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. With this feature, you can also use third-party virtualization management products with Hyper-V.
+You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. With this feature, you can also use non-Microsoft virtualization management products with Hyper-V.
 
 You can enable or disable the nested virtualization feature by using VMM. You can configure the VM as a host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement. For more information, see [Configure a nested VM as a host](../vmm/vm-nested-virtualization.md).
 
@@ -228,7 +228,7 @@ Currently, the VMM Azure plug-in supports only classic VMs and global Azure regi
 VMM 1801 supports management of:
 
 * Azure Resource Manager-based VMs.
-* Azure Active Directory-based authentication that's created by using the new Azure portal.
+* Microsoft Entra ID-based authentication that's created by using the new Azure portal.
 * Region-specific Azure subscriptions, namely, Germany, China, and US Government Azure regions.
 
 For more information, see [Manage VMs](../vmm/vms-manage-azure-ad-and-region-specific.md).
@@ -364,7 +364,7 @@ VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV
 
 #### Support for Azure Stack HCI clusters
 
-VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
+VMM 2019 UR3 includes support to add, deploy, and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
 
 Azure Stack HCI, version 20H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
@@ -393,9 +393,9 @@ For problems fixed in UR4, and the installation instructions for UR4, see [the K
 
 VMM 2019 UR4 supports Windows Server 2012 2022 and Windows 11 guest virtual machines. For more information about supported hosts, see [System requirements](/system-center/vmm/system-requirements?view=sc-vmm-2019&preserve-view=true#servers-in-the-vmm-fabric).
 
-#### Support for Smart card login
+#### Support for Smart card sign in
 
-VMM 2019 UR4 supports smart card login to connect virtual machines in enhanced session mode.
+VMM 2019 UR4 supports smart card sign in to connect virtual machines in enhanced session mode.
 
 ## New features in VMM 2019 UR5
 
@@ -412,3 +412,15 @@ VMM 2019 UR5 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more](/s
 ### Discover Arc-enabled SCVMM from VMM console
 
 VMM 2019 UR5 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2019&preserve-view=true).
+
+## New features in VMM 2019 UR6
+
+The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 6 (UR6).
+
+For problems fixed in UR6, and the installation instructions for UR6, see the [KB article](https://support.microsoft.com/kb/5035468).
+
+### Improved Arc-enabled SCVMM Discovery tab
+
+The **Azure Arc** tab now highlights the latest feature additions to Arc-enabled SCVMM which includes support for Azure management services such as Microsoft Defender for Cloud, Azure Update Manager, Azure Monitor, Microsoft Sentinel, and more. [Learn more](https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-azure-management-capabilities-for-azure-arc-enabled/ba-p/3947253).
+
+If you are running WS 2012 and 2012R2 host and guest operating systems, the Azure Arc blade now provides guidance to continue remaining in support state.

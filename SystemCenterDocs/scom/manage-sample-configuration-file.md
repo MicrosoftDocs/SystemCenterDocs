@@ -2,22 +2,23 @@
 ms.assetid:
 title: Sample configuration file for collecting Linux log files
 description: This article describes a sample configuration file for collecting Linux log files on Linux in System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 09/24/2020
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-monikerRange: '>=sc-om-1801'
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+monikerRange: '>=sc-om-2019'
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Sample configuration file for collecting Linux log files
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
+::: moniker range=">=sc-om-2019"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+>[!Note]
+>System Center Operations Manager won't support the fluentD based log file monitoring upon the OMS agent retirement which is scheduled for August 2024.
 
 ::: moniker-end
 

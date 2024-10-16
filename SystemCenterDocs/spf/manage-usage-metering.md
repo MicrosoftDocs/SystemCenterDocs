@@ -1,23 +1,19 @@
 ---
 title: Manage usage metering in SPF
 description: Provides information about setting up usage metering in SPF
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Manage usage metering in SPF
 
-::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
 
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-::: moniker-end
 
 You can configure System Center - Service Provider Foundation (SPF) to aggregate usage statistics for queries by the SPF Usage web service.
 

@@ -1,23 +1,19 @@
 ---
 title: Migrate Orchestrator between environments
 description: Describes how you can automatically move Orchestrator between environments.
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.date: 12/23/2020
-manager: mkluck
-ms.custom: intro-migration, UpdateFrequency3
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 05/16/2024
+ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
 
 # Migrate Orchestrator between environments
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 This article describes how to move Orchestrator between environments, such as moving to a new SQL Server 2008 R2 or moving some components of Orchestrator.  
 

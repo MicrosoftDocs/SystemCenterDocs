@@ -1,23 +1,19 @@
 ---
 title: Dashboards in Operations Manager
 description: This article provides an overview of dashboards in Operations Manager to visualize operational data from monitored services and their components.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
-ms.date: 10/08/2020
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Dashboards in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define many configurations of cells that can each contain a widget of your choice.
 

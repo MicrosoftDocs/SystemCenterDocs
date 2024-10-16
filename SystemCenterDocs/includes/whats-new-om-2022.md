@@ -2,13 +2,13 @@
 ms.assetid:
 title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager 2022
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/24/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/16/2024
 ms.custom: intro-whats-new
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: include
 ---
 
@@ -71,7 +71,7 @@ Values of few registries that are customized (commonly) are retained when an upd
 
 - Value of custom install location of Monitoring Agent is retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.
 - Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
-- While upgrading non-primary Management Servers, Data warehouse registry details are retained (which were previously deleted).
+- While upgrading nonprimary Management Servers, Data warehouse registry details are retained (which were previously deleted).
 - Support for group managed service accounts in the Installer setup.
 - Operations Manager 2022 supports .NET 4.8.
 - The Web console now utilizes HTML5 instead of Silverlight.
@@ -103,18 +103,14 @@ Operations Manager 2022 also includes the following updates:
     - Microsoft Edge version 88 and later.
     - Google Chrome version 88 and later.
 - Supports Ubuntu 20, Oracle Linux 8, Debian 10, and Debian 11.
-- Removed support for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, and SLES 12 PPC.
+- Removed support for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), Debian 8, SLES 11, and SLES 12 PPC.
 
 ### Discover Azure Migrate from Operations Manager console
 
-Operations Manager 2022 allows you to discover Azure Migrate from console.You can now generate a complete inventory of your on-premises environment without appliance. This can be used in Azure Migrate to assess machines at scale. [Learn more](https://support.microsoft.com/topic/discover-azure-migrate-for-operations-manager-04b33766-f824-4e99-9065-3109411ede63).
+Operations Manager 2022 allows you to discover Azure Migrate from console. You can now generate a complete inventory of your on-premises environment without appliance. This can be used in Azure Migrate to assess machines at scale. [Learn more](https://support.microsoft.com/topic/discover-azure-migrate-for-operations-manager-04b33766-f824-4e99-9065-3109411ede63).
 
 ## New features in Operations Manager 2022 UR1
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2022 Update Rollup 1 (UR1).
 
 For problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-operations-manager-3f5780c9-36d9-4bba-8361-d40ca7c7ae80).
-
-### Supports SQL Server 2022
-
-Operations Manager 2022 UR1 supports SQL Server 2022.

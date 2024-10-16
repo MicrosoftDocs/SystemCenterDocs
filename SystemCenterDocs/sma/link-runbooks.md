@@ -1,23 +1,19 @@
 ---
 description: Provides an overview of how you can call one or more child runbooks.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 08/07/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 04/03/2024
 title: Child runbooks in Service Management Automation
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Child runbooks in Service Management Automation
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 It's a best practice in Service Management Automation (SMA) to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform the required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be the best for your different scenarios.
 

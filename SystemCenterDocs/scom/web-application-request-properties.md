@@ -2,15 +2,15 @@
 ms.assetid: 4380f888-a7fa-4913-8715-9f1f524d4590
 title: Web application request properties
 description: This article provides information about how to manage the web application requests properties in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 monikerRange: '>=sc-om-2019'
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Web Application Request Properties

@@ -1,27 +1,23 @@
 ---
 title: Update List Item
 description: The Update List Item activity is used in a runbook to update an item in a Microsoft SharePoint list.
-ms.custom: UpdateFrequency3
-ms.date: 05/07/2019
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 05/16/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7c9627b5-2136-407f-a2c9-2be38f3415ba
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Update List Item
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Update List Item** activity is used in a runbook to update an item in a Microsoft SharePoint list.
 

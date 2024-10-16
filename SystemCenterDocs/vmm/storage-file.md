@@ -2,26 +2,20 @@
 ms.assetid: 88134cd9-4440-47bd-acf0-ab8f90bc2003
 title: Set up file storage in the VMM fabric
 description: This article describes how to set up file storage in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/20/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/22/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 
 # Set up file storage in the VMM fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
-
-You can manage file storage that supports SMB 3.0 in the System Center - Virtual Machine Manager (VMM) storage fabric. This includes Windows file servers, scale-out file servers (SOFS), and network-attached storage (NAS) devices from third-parties such as EMC and NetApp.
+You can manage file storage that supports SMB 3.0 in the System Center Virtual Machine Manager (VMM) storage fabric. This includes Windows file servers, scale-out file servers (SOFS), and network-attached storage (NAS) devices from non-Microsoft vendors such as EMC and NetApp.
 
 This article describes how to add file storage to the VMM fabric. After file shares are available in the fabric, you can assign them to Hyper-V hosts and clusters.
 
@@ -50,13 +44,13 @@ You need to create a file share on the file server. When you do this, VMM assign
 
 You can assign file shares on any host on which you want to create VMs that will use the file share as storage.
 
-1. Select **Fabric** > **Servers** > **All Hosts**, and select the host or cluster node you want to configure.
+1. Select **Fabric** > **Servers** > **All Hosts** and select the host or cluster node you want to configure.
 2. In **Host** > **Properties**, select **Properties** > **Host Access**. Specify a Run As account. By default, the Run As account that was used to add the host to VMM is listed. In the Run As account box, configure the account settings. You can't use the account that you use for the VMM service.
 
 	- If you used a domain account for the VMM service account, add the domain account to the local Administrators group on the file server.
 	- If you used the local system account for the VMM service account, add the computer account for the VMM management server to the local Administrators group on the file server. For example, for a VMM management server that is named VMMServer01, add the computer account VMMServer01$.
 	- Any host or host cluster that accesses the SMB 3.0 file share must have been added to VMM using a Run As account. VMM automatically uses this Run As account to access the SMB 3.0 file share.
-	- If you specified explicit user credentials when you added a host or host cluster, you can remove the host or cluster from VMM and then add it again by using a Run As account.
+	- If you specified explicit user credentials when you added a host or host cluster, you can remove the host or cluster from VMM and then add it again using a Run As account.
 
 3. Select **Host Name Properties** > **Storage** > **Add File Share**.
 4. In **File share path**, select the required SMB 3.0 file share, and select **OK**. To confirm that the host has access, open the **Jobs** workspace to view the job status. Or open the host properties again and select the **Storage** tab. Under **File Shares**, select the SMB 3.0 file share. Verify that a green check mark appears next to **Access to file share**.

@@ -2,23 +2,19 @@
 ms.assetid: afe18fe0-2d80-4176-b020-972b09ba6f27
 title: How to Create a Run As Account and Associate with a Run As Profile
 description: This article describes how to create a Run As account and associate with a profile in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/25/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to create a Run As account and associate with a Run As profile
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 This procedure describes how you create a Run As Account by using a set of Windows credentials as an example. Then it shows you how to edit the properties of the Run As Account to modify the security level and distribution of the credentials. You use this same procedure for all other account types. Once you are completed creating the Run As account, you will associate it with a Run As Profile.  
 

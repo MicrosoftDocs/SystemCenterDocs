@@ -2,19 +2,17 @@
 ms.assetid: b1883bce-1329-4c2a-bca9-1c5b1ccecaca
 title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/26/2023
-ms.custom: UpdateFrequency.5, engagement-fy23, intro-whats-new
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 10/16/2024
+ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # What's New in Operations Manager
-
-
 
 ::: moniker range="sc-om-2022"
 
@@ -47,23 +45,9 @@ With Operations Manager 2019 UR5, the following additional data points are suppo
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-This article provides details of the new features supported in System Center 1807 - Operations Manager.
 
-[!INCLUDE [whats-new-om-1807.md](../includes/whats-new-om-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-This article provides details of the new features supported in System Center 1801 - Operations Manager.
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
@@ -71,11 +55,7 @@ This article provides details of the new features supported in System Center 201
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
 
-[!INCLUDE [whats-new-om-1801.md](../includes/whats-new-om-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-om-2016"
 

@@ -2,22 +2,18 @@
 title: Configuration Manager integration pack activities
 description: This article contains configuration instructions for activities provided by the Configuration Manager integration pack.
 ms.date: 01/17/2018
-ms.prod: system-center
-ms.technology: orchestrator
+ms.service: system-center
+ms.subservice: orchestrator
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.custom: UpdateFrequency3
 ---
 
 # Configuration Manager integration pack activities
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The following configuration instructions apply to all the activities in this integration pack.
 

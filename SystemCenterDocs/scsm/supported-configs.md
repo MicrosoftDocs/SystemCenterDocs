@@ -1,23 +1,19 @@
 ---
 title: Supported configurations for System Center - Service Manager
 description: The article describes supported configurations for Service Manager.
-ms.prod: system-center
-manager: mkluck
-author: jyothisuri
-ms.author: jsuri
-ms.date: 01/23/2018
-ms.technology: service-manager
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Supported configurations
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 This article summarizes the workloads for which System Center - Service Manager is tested.
 

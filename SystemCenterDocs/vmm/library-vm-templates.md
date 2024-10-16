@@ -2,30 +2,26 @@
 ms.assetid: f327b30f-ff15-4460-be00-dd4fa1a665f5
 title: Add VM templates to the VMM library
 description: This article provides guidance for adding VM templates to the library in the VMM compute fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/02/2018
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/02/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Add VM templates to the VMM library
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-Read this article to learn about VM templates and how to manage them in the System Center - Virtual Machine Manager (VMM) library.
+Read this article to learn about VM templates and how to manage them in the System Center Virtual Machine Manager (VMM) library.
 
 Templates help you to create VMs with consistent settings. VMM provides two types of templates:
 
 - VM templates are database objects that are stored in the VMM library. They're used to quickly set up VMs.
-- [Service templates](library-resources.md) define how a service is configured. They include information about the VMs that are deployed as part of the service, which applications to install on VMs, and the network settings that should be used. Service templates usually contain VM templates.
+- [Service templates](library-resources.md) define how a service is configured. They include information about the VMs that are deployed as part of the service, which applications to install on VMs, and the network settings that must be used. Service templates usually contain VM templates.
 
 There are two methods for creating a VM template:
 
@@ -50,11 +46,11 @@ There are two methods for creating a VM template:
 
 1. Select **Library** > **Create** > **Create VM Template**.
 2. In the Create VM Template Wizard, select **Source** > **Use an existing VM template or virtual hard disk stored in the library**. Select the disk or template in **Select VM Template Source**.
-3. In **Identity**, type in a template name and description.
+3. In **Identity**, enter a template name and description.
 4. In **Configure Hardware**, specify the hardware settings. You can select to use an existing hardware profile. 
 
 > [!NOTE]
-> The profile and hardware options will depend on which VM you're configuring - generation 1 or generation 2 VMs. To learn more, review [how to create a hardware profile](library-profiles.md#create-a-hardware-profile).
+> The profile and hardware options will depend on which VM you're configuring - Generation 1 or Generation 2 VMs. To learn more, review [how to create a hardware profile](library-profiles.md#create-a-hardware-profile).
 
 5. In **Configure Operating System**, specify the machine settings. You can use a guest OS profile or configure specific settings. To learn more, review [how to create a guest OS profile](library-profiles.md#create-a-guest-os-profile).
 6. In **Configure Applications**, set up app settings. This isn't relevant if you're using the VM template to deploy VMs that aren't part of a service. To learn more, review [how to create an application profile](library-profiles.md#create-an-application-profile). If you're configuring a SQL Server setup in **Configure SQL Server**, review [how to create a SQL Server profile](library-profiles.md#create-a-sql-server-profile).
@@ -65,7 +61,7 @@ There are two methods for creating a VM template:
 
 1. Select **Library** > **Create** > **Create VM Template**.
 2. In  the Create VM Template Wizard > select **Source** > **From an existing virtual machine that is deployed on a host**. Select the VM in **Select VM Template Source**.
-3. In **Identity**, type in a template name and description. 
+3. In **Identity**, enter a template name and description. 
 
 > [!NOTE]
 > The template will destroy the source VM, and data on it could be lost. Clone it if it's important to you.
@@ -84,10 +80,10 @@ You can create VMs based on the template you've created.
 
 1. After step 3 in the [previous procedure](#create-a-vm-template-based-on-a-vm-deployed-on-a-host), in **Configure Hardware**, select  **Advanced** under **Bus configuration**, and select appropriate option under **Storage QoS Policy**.
 
-2. Proceed with rest of the steps to complete the wizard.
+2. Proceed with the rest of the steps to complete the wizard.
 
 ::: moniker-end
 
 ## Next steps
 
-Review the following on how to [create VMs based on the template](vm-template.md) you've created.
+Learn how to [create VMs based on the template](vm-template.md) you've created.

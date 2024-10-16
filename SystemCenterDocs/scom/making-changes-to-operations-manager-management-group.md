@@ -1,24 +1,20 @@
 ---
 ms.assetid: 3de02832-cbf1-4e68-ae75-91b50f702c24
 title: Making Changes to an Operations Manager Management Group
-description: This article describes the tasks you may perform after you have deployed or upgraded Operations Manager in your environment.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 04/29/2019
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+description: This article describes the tasks you might perform after you have deployed or upgraded Operations Manager in your environment.
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/09/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Making changes to an Operations Manager Management Group
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 After the initial deployment of System Center – Operations Manager, you might need to make changes or upgrades to the original deployment for reasons such as the following:
 

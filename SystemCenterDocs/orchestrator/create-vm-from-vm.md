@@ -1,27 +1,23 @@
 ---
 title: Create VM from VM
 description: The Create VM From VM activity is used to create a new virtual machine from an existing virtual machine.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 10/10/2023
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6ad6e788-460d-4c30-98d3-d34c411cbdbd
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Create VM from VM
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Create VM From VM activity is used to create a new virtual machine from an existing virtual machine.
 
@@ -80,13 +76,13 @@ The activity publishes all the data from the required and optional properties in
 | Delay Start (s)   | The number of seconds to wait after the virtualization service starts before automatically starting the virtual machine   |
 | Description   | An alphanumeric description of the virtual machine   |
 | Disk I/O (IOPS)   | The disk I/O performance, measured by the number of I/O operations per second \[IOPS\] that can be performed with acceptable latency   |
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |
+| Enabled   | True or False. If False, the virtual machine can't be started.   |
 | Expected CPU Utilization   | A two-digit percent value that represents the average CPU usage for the virtual machine   |
 | Failed Job ID   | The unique identifier (GUID) of the most recent failed job   |
 | Has Pass-through Disk   | True or False   |
 | Has VM Additions   | True or False. If True, the virtual machine has additional software installed on the Guest Operating System to assist with virtualization, also known as VM Guest Services.   |
 | Heartbeat Enabled   | True or False   |
-| Host Group Path   | The path of the virtual machine under its host group, in the format All Hosts\\virtual machine name.   |
+| Host Group Path   | The path of the virtual machine under its host group, in the format All Hosts\\virtual machinename.   |
 | Host ID   | The unique identifier (GUID) of the host computer   |
 | Host Type   | VMHost   |
 | Highly Available   | True or False   |
@@ -128,7 +124,7 @@ The activity publishes all the data from the required and optional properties in
 | Time Synchronization Enabled   | True or False   |
 | Total Size   | The total size of the virtual machine, including all disks and configuration files   |
 | Undo Disks Enabled   | True or False. If True, the virtual machine can undo any changes when shutting down.   |
-| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action is not supported   |
+| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action isn't supported   |
 | Use Hardware Assisted Virtualization | True or False   |
 | User Role ID   | The unique identifier (GUID) of the user role that allows users to create virtual machines   |
 | Virtual COM Ports   | A list of the names of the Virtual COM Ports. Always COM1 or COM2.   |
@@ -136,7 +132,7 @@ The activity publishes all the data from the required and optional properties in
 | Virtual DVD Drives   | A list of the names of the Virtual DVD Drives   |
 | Virtual Floppy Drive   | A list of the names of the Virtual Floppy Drives   |
 | Virtual Hard Disks   | A list of the names of the Virtual Hard Disks   |
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |
 | Virtual Network   | The name of the Virtual Network   |
 | Virtual Network Adapters   | A list of the names of the Virtual Network Adapters   |
 | Virtual SCSI Adapters   | A list of the names of the Virtual SCSI Adapters   |

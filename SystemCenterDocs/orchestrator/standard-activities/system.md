@@ -3,27 +3,21 @@ title: System
 description: This article provides information about the tasks that you can do using System activities. 
 ms.custom: UpdateFrequency5, engagement-fy23, engagement-fy24
 ms.date: 08/22/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 441c0d81-a1d5-4218-bbe8-54184f1deb62
 caps.latest.revision: 6
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # System
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The following table provides a brief description of tasks you can accomplish when using each System activity.  
 

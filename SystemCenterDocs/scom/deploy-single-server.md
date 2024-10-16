@@ -2,23 +2,18 @@
 ms.assetid: 2c2f0df5-befb-47f1-926b-c013fd659ec5
 title: Single-Server Deployment of Operations Manager
 description: This article provides an overview of the single-server deployment of Operations Manager to prepare you before performing setup.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Single-server deployment of Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The single-server management group scenario combines all the management group roles that can coexist onto a single server running as a member server in an Active Directory domain. This instance can be on dedicated hardware or on a virtual computer. You can deploy the Operations console to computers other than the single server, and access the web console  with a browser.
 

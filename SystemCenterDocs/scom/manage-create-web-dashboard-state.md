@@ -2,31 +2,22 @@
 ms.assetid:
 title: How to create a dashboard with the State widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Health State widget.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/22/2022
 ms.custom: UpdateFrequency2
-ms.prod: system-center
+ms.service: system-center
 monikerRange: '>sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to create a dashboard with the State widget in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 
-::: moniker range="sc-om-1801"
-In System Center Operations Manager version 1801 and later, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Health State widget.
-::: moniker-end
-
-::: moniker range=">=sc-om-1807"
+::: moniker range=">=sc-om-2019"
 System Center Operations Manager Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Health State widget.
 ::: moniker-end
 

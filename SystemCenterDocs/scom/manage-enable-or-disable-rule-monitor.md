@@ -2,23 +2,18 @@
 ms.assetid: 954164df-4d78-45a7-868e-a7639747b761
 title: How to Enable or Disable a Rule or Monitor
 description: This article provides specific instructions on how to enable or enable Management Pack monitoring rules and monitors.
-author: jyothisuri
-manager: mkluck
-ms.author: jsuri
-ms.date: 04/29/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to enable or disable a rule or monitor
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center - Operations Manager, if a management pack's default settings contain a monitor or rule that isn't necessary in your environment, you can use overrides to disable this monitor or rule. In addition, some management packs ship with some rules or monitors disabled; you should read the management pack guide to identify the workflows that are disabled by default and determine if you should enable any of them for your monitoring needs. For example, the management packs for network monitoring contain rules and monitors that are vendor-specific. Many vendor-specific rules and monitors in the network management pack are disabled to avoid performance impact. You should identify the devices used in your environment and use overrides to enable the rules and monitors specific to your devices.  
 

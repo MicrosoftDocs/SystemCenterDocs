@@ -2,23 +2,19 @@
 ms.assetid: d080e947-1fb9-4647-99a3-6449f39676e6
 title: Use System Center Advisor to Proactively Monitor Cloud Fabric in System Center Operations Manager
 description: This article provides an overview of using system center advisor to proactively monitor cloud fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 06/27/2019
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Monitor cloud fabric using System Center Advisor
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Advisor is an online service that analyzes installations of Microsoft server software and covers fabric components. With the latest version of Advisor, you can now view Advisor alerts in the Operations Manager Operations console.
 

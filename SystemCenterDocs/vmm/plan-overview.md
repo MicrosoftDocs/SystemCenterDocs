@@ -2,23 +2,19 @@
 ms.assetid: c875ed10-4374-46fb-978e-06318512350d
 title: Plan VMM deployment
 description: This article provides links to planning System Center VMM deployment
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/20/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23
 ---
 
 # Plan VMM deployment
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 There are a number of planning steps you should take before you start deploying System Center - Virtual Machine Manager (VMM). These steps help deployment processes go smoothly by ensuring the prerequisites are in place for installing and deploying VMM.
 

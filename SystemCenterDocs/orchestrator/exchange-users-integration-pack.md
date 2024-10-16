@@ -1,33 +1,31 @@
 ---
 title: Exchange Users Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. Integration packs optimize IT operations across various environments.
-ms.custom: na
-ms.date: 04/04/2019
-ms.prod: system-center
+ms.custom: engagement-fy24
+ms.date: 10/07/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2a7359ab-604e-4e05-89f3-09eb13a14c58
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 
 # Exchange Users integration pack
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products.
 
 The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to read and send email messages, create appointments, or update tasks and contacts. The operation is carried over HTTP and the connection can be authenticated by the methods enabled on the Exchange Server. Consult with your tenant administrator about the available methods on your on-premises Exchange Server.
 
 This integration pack can be used to connect to both on-premises or Online Exchange servers using their respective [Exchange Web Services](/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange) (EWS) endpoint.
+
+>[!Note]
+>Azure Active Directory or Azure AD or AAD mentioned in Integration packs refers to Microsoft Entra ID. [Learn more](https://azure.microsoft.com/updates/azure-ad-is-becoming-microsoft-entra-id/).
 
 ::: moniker range=">= sc-orch-2019"
 
@@ -163,7 +161,7 @@ Here's how the connection will be established when the activity runs:
 
 6. In Application overview page, under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
 
-    :::image type="Azure AD App overview pane" source="media/exchange-users-integration-pack/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
+    :::image type="Azure AD App overview pane" source="media/exchange-users-integration-pack/app-overview.png" alt-text="Screenshot of Azure AD App overview pane." lightbox="media/exchange-users-integration-pack/app-overview.png":::
 
 7. Select **Authentication**, do the following, and select **Save**.
 
@@ -186,7 +184,7 @@ Generally, Public Client Apps that operate in *delegated authentication* mode re
 However, the IP doesn't support the consent grant flow; instead the tenant admin must grant consent on behalf of all users in the tenant.
 
 1. Add the permissions to the app by editing the app **Manifest**.
-    1. On the Azure AD portal, select the Azure AD application.
+    1. On the Microsoft Entra admin center, select the Azure AD application.
     2. Follow the [steps to grant EWS permissions](/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application) by editing the app **Manifest**.
 
         :::image type="content" alt-text="Screenshot of Azure AD App manifest."  source="./media/exchange-users-integration-pack/manifest.png" lightbox="./media/exchange-users-integration-pack/manifest-expanded.png":::

@@ -1,15 +1,15 @@
 ---
 title: Configure the Activities Toolbox
 description: You can configure the activities toolbox in the Service Manager Authoring Tool to add or remove custom activities and to personalize it.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/06/2019
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fed6eb78-2fb6-432d-9c47-8d3502956ab4
@@ -17,11 +17,7 @@ ms.assetid: fed6eb78-2fb6-432d-9c47-8d3502956ab4
 
 # Configure the Activities Toolbox in the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 There are two ways to configure the Activities Toolbox in the Service Manager Authoring Tool:
 

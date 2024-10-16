@@ -1,27 +1,21 @@
 ---
 title: Active Directory Activities
 description: This article contains configuration instructions for Active Directory activities.
-ms.custom: UpdateFrequency2
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.date: 03/04/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 73d76ac0-8eee-466a-b11b-3df39e045d6d
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Active Directory Activities
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The following configuration instructions apply to all activities in this integration pack.
 

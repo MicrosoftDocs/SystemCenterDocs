@@ -3,27 +3,21 @@ title: Start-Stop Service
 description: This article provides detailed information about the start-stop service activity and how to configure it.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d1aedb89-b6c9-44fd-9491-9818f5d1327a
 caps.latest.revision: 19
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Start/Stop Service
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Start/Stop Service activity will start, stop, pause, or restart a Windows service. The Start/Stop Service activity can be used to restart a service that has stopped responding or shut down a service in preparation for a backup. This activity uses a satellite license.  
 

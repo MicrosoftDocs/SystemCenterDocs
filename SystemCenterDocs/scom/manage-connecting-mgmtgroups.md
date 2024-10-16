@@ -2,23 +2,19 @@
 ms.assetid: e2d68a4e-b2d5-4567-be36-454fd1dc67bb
 title: Connecting Management Groups in Operations Manager
 description: This article describes how to connect multiple management groups for a consolidated view in a single Operations console.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/21/2022
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Connecting management groups in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 
 Connecting management groups in System Center Operations Manager enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer-to-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.  
@@ -34,7 +30,7 @@ Connecting management groups offers these additional services:
 
 -   Consolidated monitoring across trust boundaries  
 
-::: moniker range=">=sc-om-2016 <=sc-om-1807"
+::: moniker range="sc-om-2016"
 > [!IMPORTANT]  
 > Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2016 - Operations Manager. 
 ::: moniker-end 

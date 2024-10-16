@@ -1,24 +1,20 @@
 ---
 title: Install and Configure the Visio Services Data Provider
 description: This article describes how to install and configure the Visio Services Data Provider in a SharePoint farm.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: UpdateFrequency2, intro-installation
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 8b1c21ab-529b-4c04-9384-717a503f3df7
 ---
 
 # Install and configure the Visio Services Data Provider
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The Visio Services Data Provider for System Center - Operations Manager uses SharePoint's Visio Services to enable Visio diagrams to show live health state from Operations Manager in SharePoint.  
 

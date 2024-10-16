@@ -1,28 +1,24 @@
 ---
 title: Delete File
 description: The Delete File activity is used in a runbook to delete a file on an FTP server.
-ms.custom: UpdateFrequency3
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a7fe1669-71b4-4f8b-a3c2-7b5c032dae91
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 05/16/2024
 ---
 # Delete file on an FTP server
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Delete File activity is used in a runbook to delete a file on an FTP server.
 

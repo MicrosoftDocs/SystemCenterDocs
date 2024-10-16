@@ -2,23 +2,18 @@
 ms.assetid: 1bde753f-c0e9-43b9-9a73-a78a4233881b
 title: TCP port template in Operations Manager management pack
 description: This article provides an overview of TCP port template
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # TCP port template
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The  **TCP Port**  template lets you monitor the availability of an application that's accessible over TCP.
 

@@ -1,24 +1,20 @@
 ---
 description: Provides an overview of how you can use different output stream in your runbooks.
-manager: cfreeman
 ms.topic: article
-author: bwren
-ms.author: bwren
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 09/04/2023
+ms.date: 04/03/2024
 title: Runbook Output and Messages
-ms.technology: service-management-automation
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Runbook output and messages
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 
 Most automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](/archive/blogs/) to send output from a workflow. Service Management Automation works with each of these streams differently, and you should follow best practices for how to use each when you're creating a runbook.

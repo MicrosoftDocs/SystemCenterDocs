@@ -2,24 +2,20 @@
 ms.assetid:
 title: Manage dashboard and widget configuration in Web console
 description: This article describes how to manage the configuration of the HTML5 Web console dashboards and widgets in System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/16/2018
-ms.custom: UpdateFrequency2
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
 monikerRange: '>sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Manage dashboard and widget configuration in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 ## Delete a dashboard
 

@@ -1,23 +1,19 @@
 ---
 title: Import gallery items in SPF
 description: Provides information about importing gallery items into SPF
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: system-center
-ms.technology: service-provider-foundation
+ms.service: system-center
+ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Import gallery items in SPF
 
-::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
 
-[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
-
-::: moniker-end
 
  Gallery items are VM roles that serve as standard and reusable artifacts. These items can be used by hosting service providers to provide offerings to their tenants. In Microsoft Azure Pack, you can add a gallery item to a tenant subscription plan. Virtual machine roles represent a scalable tier of virtual machines that can be provisioned by a tenant using a single process. Examples of workloads that can be created by virtual machine roles could include a single virtual machine, an Active Directory Domain Controller, a SQL Server cluster, or Internet Information Services \(IIS\) web farm.  [Learn more](https://social.technet.microsoft.com/wiki/contents/articles/20194.downloading-and-installing-windows-azure-pack-gallery-resource.aspx) about gallery resources.
 

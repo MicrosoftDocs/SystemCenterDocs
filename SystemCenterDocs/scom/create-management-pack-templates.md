@@ -2,23 +2,18 @@
 ms.assetid: a554a6b1-252e-4cc3-8b8f-80a7ea43b6da
 title: Create management pack templates in Operations Manager management pack
 description: This article provides an overview of creating management pack templates
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 10/14/2019
 ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Create management pack templates
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Use the following procedure to create and modify management pack templates.
 

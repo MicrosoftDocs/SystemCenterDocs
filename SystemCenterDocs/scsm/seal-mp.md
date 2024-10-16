@@ -1,15 +1,15 @@
 ---
 title: Seal a Service Manager management pack
 description: Describes how to seal a Service Manager management pack for use with Service Manager authoring.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/20/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 240ef642-dba3-416a-b048-df98d947cbaf
@@ -17,11 +17,7 @@ ms.assetid: 240ef642-dba3-416a-b048-df98d947cbaf
 
 # Seal a Service Manager management pack
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 When a management pack in Service Manager contains base definitions that other management packs have to reference, such as a list, it must be sealed. After you seal a management pack, you can't directly modify objects in the sealed management pack, and you can't unseal the sealed management pack, but you can define references to objects in the sealed management packs.  
 
@@ -33,13 +29,13 @@ When a management pack in Service Manager contains base definitions that other m
 
 ## Seal a management pack
 
-1.  Create a .snk key file that contains a public\/private key pair.  
+1. Create a .snk key file that contains a public\/private key pair.  
 
-2.  In the Service Manager Authoring Tool, in **Management Pack Explorer**, right\-click the management pack that you want to seal, and select **Seal Management Pack**.  
+2. In the Service Manager Authoring Tool, in **Management Pack Explorer**, right\-click the management pack that you want to seal, and select **Seal Management Pack**.  
 
-3.  In the **Seal Management Pack** dialog, in the **Key File** box, enter the location of the key file that you previously created. The file must have a .snk extension. You must also fill in the **Company** box. Filling in the other boxes is optional.  
+3. In the **Seal Management Pack** dialog, in the **Key File** box, enter the location of the key file that you previously created. The file must have a .snk extension. You must also fill in the **Company** box. Filling in the other boxes is optional.  
 
-4.  Select **Seal** to create a sealed management pack, which will be stored in the folder that you specify in the **Output Directory** box.  
+4. Select **Seal** to create a sealed management pack, which will be stored in the folder that you specify in the **Output Directory** box.  
 
 ## Next steps
 

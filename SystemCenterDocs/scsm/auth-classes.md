@@ -1,27 +1,21 @@
 ---
 title: Customize and author classes
 description: Learn about customizing and authoring classes with Service Manager authoring.
-manager: mkluck
-ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 04/26/2023
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1d7437cd-2451-417e-b415-735bdca051b8
 ---
 
 # Customize and author classes with Service Manager authoring
-
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.  
 
@@ -34,12 +28,14 @@ Objects in Service Manager are *instances* of a particular base class. All insta
  Like all management pack elements, classes have *ID* and *Display Name* properties. In this documentation, **ID** refers to the unique name of the class that is seen only in the Authoring Tool, while **Name** and **Display Name** refer to the language-specific name that appears in the Service Manager console.  
 
 > [!NOTE]  
->  When you're creating a class, always ensure that the class names are unique among management packs. If possible, use class names that are meaningful in your environment. You can determine whether a class name already exists by using the search feature in the **Class Browser** window of the Service Manager Authoring Tool.  
+> When you're creating a class, always ensure that the class names are unique among management packs. If possible, use class names that are meaningful in your environment. You can determine whether a class name already exists by using the search feature in the **Class Browser** window of the Service Manager Authoring Tool.  
 
-### Properties  
+### Properties
+
  All the instances of a particular class share a common set of *properties*. The values for these properties are provided in various methods by users and can vary among different instances. Properties are used to represent details of the actual object, such as a unique name, location, and other details that may be interesting to the user or that are required for management scenarios.  
 
-#### Key properties  
+#### Key properties
+
  A *key property* uniquely identifies each instance of a particular class. If a property is marked as a key property, each instance of the class must have a unique value for that property, and the value can't be null. For *hosted classes*, the value must only be unique for all the instances of the class that have the same hosting parent. For *unhosted classes*, it must be unique for all the instances of the class in the management group. Hosting relationships are further described later in this section.  
 
  Classes don't always require a key property. A key property is only required if more than one instance of a class is expected for a single parent. If only a single instance is expected, a key property isn't required but may still be defined.  
@@ -49,6 +45,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
  All the objects have a **Path Name** property that is calculated from the object's key property or properties and those of its hosting parent or parents. For unhosted objects, **Path Name** will be the key property of the class itself. **Path Name** can be used to uniquely identify any instance of a class in the management group.  
 
 ### Base classes and inheritance
+
  Every class must specify a *base class* that identifies an existing class that the new class will *specialize*. The management pack libraries that are included with Service Manager contain several classes that can be used as the base for custom classes in management packs. A management pack will typically have at least one class inheriting from a library class and potentially other classes inheriting from classes in the same management pack.  
 
  The concept of a base class can be illustrated with the Windows Server Operating System management pack. This management pack includes classes representing logical disks installed on the computer. The following illustration shows the classes **Windows Server 2003 Logical Disk** and **Windows Server 2008 Logical Disk**. These classes are both based on **Logical Disk (Server)** that is defined in the Microsoft.Windows.Server.Library management pack file. **Logical Disk (Server)** is in turn based on **Logical Disk**, which itself is based on **Logical Device**, and so on, through **Logical Hardware**, **Logical Entity**, and finally **Entity**. All classes can trace a similar inheritance path and will always end up at **Entity**, which is the root of the class structure. This is the only class that doesn't have a base class, and all the other classes eventually inherit from it.  
@@ -59,21 +56,26 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  **Entity** has a single property named **Display Name**. This property is inherited by all the classes inheriting from **Entity**. All the classes eventually inherit from **Entity**. That is why all the classes have a **Display Name** property. No other classes in this example have properties until **Logical Device**, which defines **Name**, **Description**, and **DeviceID**. **DeviceID** is specified as the key property. These properties are all inherited by **Logical Disk** and **Logical Disk \(Server\)**. **Logical Disk \(Server\)** then adds the additional properties **Size**, **Drive Type**, and **File System**. The bottom-level classes that are specific to the version of the operating system inherit the entire set of properties provided by those classes above them in the inheritance tree.  
 
-### Class types  
+### Class types
+
  Most classes have one or more actual instances and are known as *concrete classes*. *Abstract classes* and *singleton classes* are special kinds of classes that behave differently and are used for particular scenarios.  
 
-#### Abstract classes  
+#### Abstract classes
+
  Abstract classes have no instances and exist only to act as a base class for other classes. All the properties and relationships that are defined at the abstract class level are inherited by child classes and don't have to be defined again. Most of the classes that are defined in management pack libraries are abstract, since they're only provided to act as base classes for classes that are defined in custom management packs.  
 
  Abstract classes are used where there's a common set of properties, relationships, or grouping that can be defined across all further specializations of a class. In the previous example, all the classes shown above **Windows Server 2003 Logical Disk** and **Windows Server 2008 Logical Disk** are abstract. They exist only for the lower-level classes to inherit from.  
 
-#### Singleton classes  
+#### Singleton classes
+
  *Singleton classes* are used when there's one and only one instance of a class. The class is the instance, and it always exists. The single instance is being created when the management pack is installed. Similarly, a key property isn't required for a singleton class, because it will only ever have a single instance. A common use of singleton classes is for the **Groups** class, because there's only a single instance of this class required throughout the management group.  
 
-### Class extensions  
+### Class extensions
+
  To customize a class, you can extend it by adding new properties to the existing class definition. The new properties will now be included in all the instances of that class that already exist, and in any new instances that will be created. An abstract class can't be extended.  
 
-### Relationships  
+### Relationships
+
  *Relationships* are defined between classes to indicate an association between a particular instance of one class and the particular instance of another. There are three types of relationships, and they're detailed in the following sections:  
 
 - Hosting relationship  
@@ -90,15 +92,18 @@ Class relationships affect objects in the following ways.
 |Containment|Key property and existence aren't dependent on container object.|Any workflow that is targeted at a class have access to that class's properties in addition to the properties of any of its container parent (s).<br /><br /> For example, a script in a workflow targeting an incident class can access the properties of the container queue's class.|  
 |Reference|Key property and existence aren't dependent on referenced object.|Any workflow that is targeted at a class has access only to that class's properties.|  
 
-#### Reference relationship  
+#### Reference relationship
+
  The *reference relationship* is the most general relationship type. A reference relationship is used when the parent and child classes aren't dependent on one another; for example, a database could reference another database that it's replicating. One database isn't dependent on the other, and the objects exist separately.  
 
-#### Containment relationship  
+#### Containment relationship
+
  The *containment relationship* type is less restrictive than the hosting relationship. It declares that one class is related to another class, although one isn't required for the other. Unlike a hosting relationship, a containment relationship is many-to-many. This means that one object can contain multiple objects, and a single object can be contained by multiple other objects. For example, one group can contain multiple objects, and a single object can be a member of multiple groups.  
 
  Containment relationships are typically used for group membership where objects are included in a group through a containment relationship between the group and the member object.  
 
-#### Hosting relationship  
+#### Hosting relationship
+
  The most restrictive relationship between classes is the *hosting* relationship. A class hosted by another class is called a *hosted class*, and an instance of the class is called a *hosted object*. If a class isn't hosted by another, it's called an *unhosted class*, and an instance of the class is called an *unhosted object*.  
 
  When one object is hosted by another, that object relies on its hosting parent for its very existence. If the hosting parent is removed, the hosted child will also be removed. For example, a logical disk can't exist without the computer that it's installed on.  
@@ -123,10 +128,12 @@ Class relationships affect objects in the following ways.
 
 Use the following guidelines and best practices when you're customizing classes in the Service Manager Authoring Tool.  
 
-### Naming conventions for type definitions  
+### Naming conventions for type definitions
+
  The Service Manager schema model naming convention is based on the .NET namespaces naming convention.  
 
-#### Basic naming conventions  
+#### Basic naming conventions
+
  The basic naming convention is **CompanyName.TechnologyArea.ProductName.FunctionalityArea.Name**, where:  
 
 - **ProductName** is optional; use it if the definition is independent of any specific product.  
@@ -137,50 +144,55 @@ Use the following guidelines and best practices when you're customizing classes 
 
 Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Knowledge.Article**, **System.WorkItem.Incident**, and **System.StarRating.Average**.  
 
-#### The System namespace  
+#### The System namespace
+
  The **System** namespace refers to definitions that are independent of Microsoft and Windows. This usually applies to the base definitions that either Windows applications or Unix applications depend on. These base definitions should be company independent.  
 
  Use the following guidelines for the System prefix:  
 
--   **System.Computer** represents any type of computer, and it isn't vendor specific.  
+- **System.Computer** represents any type of computer, and it isn't vendor specific.  
 
--   Use the **System** prefix if you expect others to define schemas on top of that namespace.  
+- Use the **System** prefix if you expect others to define schemas on top of that namespace.  
 
--   Note that **Microsoft.Windows.Computer** doesn't start with **System**, although most Windows applications \(regardless of the vendor that defines it\) rely on this definition.  
+- Note that **Microsoft.Windows.Computer** doesn't start with **System**, although most Windows applications \(regardless of the vendor that defines it\) rely on this definition.  
 
-#### Best practices for naming classes  
+#### Best practices for naming classes
+
  Use the following best practices when you're naming classes:  
 
--   Don't create two separate classes \(even if they're in two different management packs\) that would result in identical key values being stored for different objects of the two classes.  
+- Don't create two separate classes \(even if they're in two different management packs\) that would result in identical key values being stored for different objects of the two classes.  
 
--   When you're extending a class, always ensure that the class extension names are unique across management packs. If possible, use meaningful class extension names.  
+- When you're extending a class, always ensure that the class extension names are unique across management packs. If possible, use meaningful class extension names.  
 
--   When you're extending a class, don't define a property with an ID that is already in use in that class.  
+- When you're extending a class, don't define a property with an ID that is already in use in that class.  
 
--   Don't use periods in names of properties of a custom class.  
+- Don't use periods in names of properties of a custom class.  
 
--   If you add a custom named calculation when you author a cube, preface the name of the named calculation with NC\_. This will reduce the possibility of using a name of a property that already exists.  
+- If you add a custom named calculation when you author a cube, preface the name of the named calculation with NC\_. This will reduce the possibility of using a name of a property that already exists.  
 
-### Do not create too many classes  
+### Do not create too many classes
+
  Creating too many classes can result in needless complexity with minimal value. A good rule is to use the least number of classes to achieve the desired results. Other than abstract classes, if a class isn't going to be the target of any workflow or be used to store data, it probably shouldn't be created. Also, if two classes are similar, consider using a single class for both of them, possibly by using a property that can hold the values for any differences.  
 
-### Do not use properties that update frequently  
+### Do not use properties that update frequently
+
  Property values should change rarely after they're first populated. A possible cause for frequent property value changes is a custom connector or any other customization that programmatically updates the Service Manager database. These scenarios can potentially cause property values to update too frequently, such as every 10 to 15 minutes or less for a large number of objects.  
 
  Such frequent changes to property values might slightly impact the performance of the workflows, and they might have other performance impacts. This is because the system keeps track of those changes in history. Also, depending on the property being changed, these changes can add a significant amount of data to be processed and stored by the data warehouse.  
 
-### Do not extend an abstract class  
+### Do not extend an abstract class
+
  In Service Manager, you can't extend an abstract class. If you need to extend an abstract class, you can do either of the following:  
 
--   Create a new class with the properties you want to add, and then create a relationship between the new class and the abstract class.  
+- Create a new class with the properties you want to add, and then create a relationship between the new class and the abstract class.  
 
--   Extend each of the relevant concrete classes that derive from the abstract class.  
+- Extend each of the relevant concrete classes that derive from the abstract class.  
 
-### Improve simple search for work item classes  
+### Improve simple search for work item classes
+
  When you define a custom class that is derived from the "**System.WorkItem**" class, we recommend that you store the **DisplayName** property of that class in the following format: **WorkItem.ID\<SPACE\>WorkItem.Title**.  
 
  This improves simple search. Simple search searches only the **DisplayName** property, and by explicitly including the **Title** property value and the **ID** property value in the **DisplayName** property value, the results of simple search are improved. This is because the user can search either by a word in the title or by ID.  
-
 
 ## Browse a class in the Authoring tool
 
@@ -190,19 +202,19 @@ You can use the **Class Browser** pane in the Service Manager Authoring Tool to 
 
  When you select a management pack in the **Class Browser** pane, all the classes from the selected management pack are displayed, and you can expand the class for which you want to view properties. When you select **All Management Packs**, all the classes from all the management packs in the Library folder are displayed. Whenever you change the selection of the management pack, you must refresh the **Class Browser** pane.  
 
-### To browse a class  
+### Browse a class  
 
-1.  If the **Class Browser** pane isn't visible in the Authoring Tool, select **View**, and select **Class Browser**.  
+1. If the **Class Browser** pane isn't visible in the Authoring Tool, select **View**, and select **Class Browser**.  
 
-2.  In the **Class Browser** pane, in the management pack list, select the management pack that contains the class that you want to browse. For example, select the **System Library** management pack.  
+2. In the **Class Browser** pane, in the management pack list, select the management pack that contains the class that you want to browse. For example, select the **System Library** management pack.  
 
-3.  Locate the class that you want to view, such as the **Computer** class, and then do the following:  
+3. Locate the class that you want to view, such as the **Computer** class, and then do the following:  
 
-    -   To view the details of the class, such as **Description** and **Internal Name**, right-click the class, and select **Details**.  
+    - To view the details of the class, such as **Description** and **Internal Name**, right-click the class, and select **Details**.  
 
-    -   To view the list of class properties, such as **Display Name** and **Asset Status**, expand the class in the **Class Browser** pane. To further view details of a property, right-click the property, and select **Details**.  
+    - To view the list of class properties, such as **Display Name** and **Asset Status**, expand the class in the **Class Browser** pane. To further view details of a property, right-click the property, and select **Details**.  
 
-    -   To open the management pack that contains the definition of the class, right-click the class, and select **View**.  
+    - To open the management pack that contains the definition of the class, right-click the class, and select **View**.  
 
 ## Edit details of a class in the Authoring tool
 
@@ -212,21 +224,21 @@ You can use the Service Manager Authoring Tool to view the properties of a class
 
 ### Change the name or description of a class  
 
-1.  On your desktop, select **Start**.  
+1. On your desktop, select **Start**.  
 
-2.  Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
+2. Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
 
-3.  Ensure that both the **Management Pack Explorer** and the **Details** panes are open.  
+3. Ensure that both the **Management Pack Explorer** and the **Details** panes are open.  
 
-4.  Select **File**, and select **Open**.  
+4. Select **File**, and select **Open**.  
 
-5.  In the **Open File** dialog, select an unsealed management pack that contains the class that you want to change, and select **Open**. For example, open the *Authoring Tool installation folder* \\Samples\\Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml sample management pack.  
+5. In the **Open File** dialog, select an unsealed management pack that contains the class that you want to change, and select **Open**. For example, open the *Authoring Tool installation folder* \\Samples\\Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml sample management pack.  
 
-6.  In the **Management Pack Explorer**, expand the management pack that contains the class that you want to change.  
+6. In the **Management Pack Explorer**, expand the management pack that contains the class that you want to change.  
 
-7.  Expand **Classes**, and then locate and select the class that you want to change.  
+7. Expand **Classes**, and then locate and select the class that you want to change.  
 
-8.  Select the value of the **Name** or **Description** property, and then enter the new value. Values that can't be changed are unavailable.  
+8. Select the value of the **Name** or **Description** property, and then enter the new value. Values that can't be changed are unavailable.  
 
 9. In the **Management Pack Explorer**, right-click the management pack that contains the changed class, and select **Save**.  
 
@@ -246,56 +258,56 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
   The following procedures describe all the methods for defining class inheritance in the Authoring Tool.  
 
-### To start with the configuration item class or the work item class as a base class  
+### Start with the configuration item class or the work item class as a base class  
 
-1.  If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
-2.  In the **Management Pack Explorer**, select and then expand any management pack.  
+2. In the **Management Pack Explorer**, select and then expand any management pack.  
 
-3.  Right-click **Classes**, and select **Create Configuration Item Class** or **Create Work Item Class**.  
+3. Right-click **Classes**, and select **Create Configuration Item Class** or **Create Work Item Class**.  
 
-4.  If you're creating a class from a sealed management pack, in the **Target Management Pack** dialog, select an unsealed management pack to store the class customization, and select **OK**.  
+4. If you're creating a class from a sealed management pack, in the **Target Management Pack** dialog, select an unsealed management pack to store the class customization, and select **OK**.  
 
     > [!NOTE]  
-    >  If you're creating a class from an unsealed management pack, this class customization is saved in that selected management pack.  
+    > If you're creating a class from an unsealed management pack, this class customization is saved in that selected management pack.  
 
-5.  In the **Create Class** dialog, specify the internal name for the new class, and select **Create**.  
+5. In the **Create Class** dialog, specify the internal name for the new class, and select **Create**.  
 
      In the authoring pane, you can now view the list of properties of the new class. If you're creating a configuration item class, all the properties of the configuration item class are listed. If you're creating a work item class, all the properties of the work item class are displayed.  
 
-6.  Select **Create property** or **Create relationship** to define new properties and new relationships for the class.  
+6. Select **Create property** or **Create relationship** to define new properties and new relationships for the class.  
 
-### To start with a selected base class  
+### Start with a selected base class  
 
-1.  If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
-2.  In the **Management Pack Explorer**, locate and then right-click the base class from which the new class will inherit properties and relationships. Select **Inherit from this class**.  
+2. In the **Management Pack Explorer**, locate and then right-click the base class from which the new class will inherit properties and relationships. Select **Inherit from this class**.  
 
-3.  In the **Inherit New Class** dialog, enter an internal name for the class.  
+3. In the **Inherit New Class** dialog, enter an internal name for the class.  
 
      In the authoring pane, the **Class properties and relationship** list displays the properties of the base class.  
 
-4.  You can now select **Create property** or **Create relationship** to add properties or a relationship to the new class.  
+4. You can now select **Create property** or **Create relationship** to add properties or a relationship to the new class.  
 
-### To start without a selected base class  
+### Start without a selected base class  
 
-1.  If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+1. If the **Management Pack Explorer** isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
-2.  In the **Management Pack Explorer**, select and then expand any management pack.  
+2. In the **Management Pack Explorer**, select and then expand any management pack.  
 
-3.  Right-click **Classes**, and select **Create other class**.  
+3. Right-click **Classes**, and select **Create other class**.  
 
-4.  In the **Base class** dialog, select the base class to inherit properties and relationships from.  
+4. In the **Base class** dialog, select the base class to inherit properties and relationships from.  
 
      Optionally, if you know in which management pack the base class that you want to use is defined, you can filter on the respective management pack, and then select the base class for this customization.  
 
      Select **OK**.  
 
-5.  If the base class that you selected to inherit properties and relationships from is in a sealed management pack, in the **Target Management Pack** dialog, select an unsealed management pack to store the class customization, and select **OK**.  
+5. If the base class that you selected to inherit properties and relationships from is in a sealed management pack, in the **Target Management Pack** dialog, select an unsealed management pack to store the class customization, and select **OK**.  
 
      If the base class that you selected to inherit properties and relationships from is in an unsealed management pack, this class customization will be saved in that selected management pack.  
 
-6.  In the **Create class** dialog, specify the internal name for this class, and select **Create**.  
+6. In the **Create class** dialog, specify the internal name for this class, and select **Create**.  
 
      In the authoring pane, you can now view the list of properties of the new class. This list includes all the properties of the base class that you selected.  
 
@@ -303,25 +315,24 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
 You can extend a class in the Service Manager Authoring Tool by adding properties and relationships to the definition of the class. Extending a class affects all the existing instances of that class: all instances of that class will be updated to include the new properties and relationships.  
 
-### To extend a class  
+### Extend a class  
 
-1.  If the **Management Pack Explorer** pane isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
+1. If the **Management Pack Explorer** pane isn't visible in the Authoring Tool, select **View**, and select **Management Pack Explorer**.  
 
-2.  In the **Management Pack Explorer** pane, locate and right\-click the class that you want to extend, and select **Extend class**.  
+2. In the **Management Pack Explorer** pane, locate and right\-click the class that you want to extend, and select **Extend class**.  
 
-3.  In the **Target Management Pack** dialog, select an unsealed management pack to store the class extension, and select **OK**.  
+3. In the **Target Management Pack** dialog, select an unsealed management pack to store the class extension, and select **OK**.  
 
-4.  The **Class properties and relationship** list on the **Extension of class** tab in the authoring pane displays the properties and the relationships of the class. Create new properties and relationships as follows:  
+4. The **Class properties and relationship** list on the **Extension of class** tab in the authoring pane displays the properties and the relationships of the class. Create new properties and relationships as follows:  
 
-    1.  Select **Create property**; in the **Create property** dialog, enter a name in **Internal name** for the new property; and select **Create**.  
+    1. Select **Create property**; in the **Create property** dialog, enter a name in **Internal name** for the new property; and select **Create**.  
 
-    2.  Select **Create relationship**; in the **Create relationship** dialog, enter a name in **Internal name** for the new relationship; and select **Create**.  
+    2. Select **Create relationship**; in the **Create relationship** dialog, enter a name in **Internal name** for the new relationship; and select **Create**.  
 
     > [!NOTE]  
-    >  When you're extending a class, don't define a property with an ID that is already in use in that class.  
+    > When you're extending a class, don't define a property with an ID that is already in use in that class.  
 
-5.  Locate and select the new property or relationship in the **Class properties and relationship** list, and modify its properties in the **Details** pane as needed.
-
+5. Locate and select the new property or relationship in the **Class properties and relationship** list, and modify its properties in the **Details** pane as needed.
 
 ## Next steps
 

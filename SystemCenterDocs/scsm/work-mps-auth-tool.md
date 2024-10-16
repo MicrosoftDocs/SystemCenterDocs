@@ -1,15 +1,15 @@
 ---
 title: Work with management packs in the Authoring Tool
 description: Describes how to work with management packs in the Service Manager Authoring Tool.
-manager: mkluck
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/11/2022
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 16ddf6aa-46d8-4b31-99d0-569a63565407
@@ -17,11 +17,7 @@ ms.assetid: 16ddf6aa-46d8-4b31-99d0-569a63565407
 
 # Work with management packs in the Service Manager Authoring Tool
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 Service Manager objects are stored in management packs. To modify an object using the Service Manager Authoring Tool, you open the management pack file that contains that object. To capture changes that you made in the Authoring Tool, you then save the changes in the original management pack file or in a new management pack file. If the original object that you changed is defined in a sealed management pack, you must save your changes in a new or an existing unsealed management pack. Unlike Service Manager, to save modified objects the Authoring Tool manipulates the actual management pack files on the hard drive-in an offline mode, without direct interaction with the Service Manager database.  
 

@@ -2,24 +2,20 @@
 ms.assetid: 15be7169-be12-4047-b1fd-fe6ad4b2fdc1
 title: Create logical switches
 description: This article describes how to create logical switches in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/04/2020
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/21/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
-# Create logical switches
+# Set up logical switches
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
-
-This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric.
+This article describes how to create logical switches in the System Center Virtual Machine Manager (VMM) fabric.
 
 ::: moniker range="sc-vmm-2016"
 
@@ -27,18 +23,18 @@ This article describes how to create logical switches in the System Center - Vir
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
+::: moniker range="sc-vmm-2019"
 
-[!INCLUDE [network-switch-2016-1801.md](../includes/network-switch-2016-1801.md)]
+[!INCLUDE [network-switch-2019.md](../includes/network-switch-2019.md)]
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-1807"
+::: moniker range="sc-vmm-2022"
 
-[!INCLUDE [network-switch-1807.md](../includes/network-switch-1807.md)]
+[!INCLUDE [network-switch-2022.md](../includes/network-switch-2022.md)]
 
 ::: moniker-end
 
 ## Next steps
 
-[Apply network settings](hyper-v-network.md) on a host with a logical switch.
+[Apply network settings on a host with a logical switch](hyper-v-network.md).

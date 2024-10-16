@@ -2,13 +2,13 @@
 ms.assetid: 1597330b-2d0a-4259-a156-60aefeb5614e
 title: Release notes for Virtual Machine Manager
 description: This article details the known issues and issues fixed in Virtual Machine Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/27/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
+ms.service: system-center
+ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5
 ---
 
@@ -30,16 +30,7 @@ This article lists the release notes for System Center 2019 - Virtual Machine Ma
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-This article lists the release notes for System Center 1807 - Virtual Machine Manager (VMM).
-
-[!INCLUDE [release-notes-vmm-1807.md](../includes/release-notes-vmm-1807.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
@@ -47,14 +38,7 @@ This article lists the release notes for System Center 2016 - Virtual Machine Ma
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1801"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-
-[!INCLUDE [release-notes-vmm-1801.md](../includes/release-notes-vmm-1801.md)]
-
-::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 

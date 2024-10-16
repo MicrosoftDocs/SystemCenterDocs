@@ -1,27 +1,23 @@
 ---
 title: Stop Maintenance Mode
 description: The Stop Maintenance Mode activity takes a monitor out of maintenance mode.
-ms.custom: UpdateFrequency3
-ms.date: 12/02/2016
-ms.prod: system-center
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.date: 03/04/2024
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2358a3dd-2f24-46f6-b7b9-4a5d0952b887
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 ---
 # Stop Maintenance Mode
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The Stop Maintenance Mode activity takes a monitor out of maintenance mode. If you put a monitor into maintenance mode using the Start Maintenance Mode Activity, you can use the Stop Maintenance Mode activity to put that monitor back in service before the configured duration has elapsed.
 

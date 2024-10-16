@@ -2,22 +2,25 @@
 ms.assetid:
 title: Log file monitoring in System Center Operations Manager
 description: This article provides an overview of the Linux log file monitoring in System Center Operations Manager
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/06/2023
-ms.custom: na, engagement-fy23
-ms.prod: system-center
-monikerRange: '>=sc-om-1801'
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: engagement-fy23, engagement-fy24
+ms.service: system-center
+monikerRange: '>=sc-om-2019'
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Linux Log file monitoring in System Center Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker range=">=sc-om-2019"
+
+>[!Note]
+>System Center Operations Manager won't support the fluentD based log file monitoring upon the OMS agent retirement which is scheduled for August 2024.
 
 ::: moniker-end
 
@@ -36,17 +39,6 @@ The basic operation of log file monitoring in Linux includes the following steps
 3. Rules and monitors in a custom management pack collect events and create alerts in Operations Manager.
 
 
-::: moniker range="sc-om-1801"
-
-[!INCLUDE [log-file-monitoring-1801-1807.md](../includes/linux-log-file-monitoring-1801-1807.md)]
-
-::: moniker-end
-
-::: moniker range="sc-om-1807"
-
-[!INCLUDE [log-file-monitoring-1801-1807.md](../includes/linux-log-file-monitoring-1801-1807.md)]
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 

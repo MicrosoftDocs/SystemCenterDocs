@@ -2,23 +2,19 @@
 ms.assetid: 197a4330-5b2e-4ccd-bfe2-4c93e2a6714b
 title: Configure and Modify Report Schedules
 description: This article describes how to configure and modify custom report schedules in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/24/2023
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Configure and modify report schedules
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Operations Manager Reporting server component provides report-specific schedules to help you control the processing and distribution of reports. Once you've configured a schedule for a report, it can be managed from the Reporting workspace under the Scheduled Reports node in the Operations console.  
 

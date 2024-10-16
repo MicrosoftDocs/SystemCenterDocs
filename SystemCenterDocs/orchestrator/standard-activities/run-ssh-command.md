@@ -3,27 +3,21 @@ title: Run SSH Command
 description: This article describes the functionality of Run SSH Command activity.
 ms.custom: UpdateFrequency3
 ms.date: 07/28/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f04d8a08-3621-4d03-b231-20994b0d5c93
 caps.latest.revision: 25
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Run SSH Command
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Run SSH Command activity opens an SSH connection to a remote server and runs shell commands on that server. Use the Run SSH Command activity to run backup applications or a batch script that runs a set of complex commands on a non-Windows computer. The Run SSH Command activity can run any command in a Secure Shell.  
 

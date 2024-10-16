@@ -2,19 +2,18 @@
 ms.assetid: a6c11181-2042-425e-9bc2-101bb08b47bc
 title: Edit settings or requests for your web application.
 description: This article provides information about how to edit settings or requests for your web application.  
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
-ms.custom: UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-
-# How to edit settings or requests in a Web application
+# Edit settings or requests in a Web application
 
 You can use the Web Application Editor to manually create or edit a request in a Web Application Transaction Monitoring template. For editing a particular request, there's no difference whether the request was created manually or by capturing a browser session. For detailed information about the properties that you can set for the request, see Web Application Request Properties.
 

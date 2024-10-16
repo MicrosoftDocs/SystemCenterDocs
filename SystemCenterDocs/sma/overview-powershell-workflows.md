@@ -1,23 +1,19 @@
 ---
 title: Windows PowerShell Workflow Concepts
 description: Provides a brief overview of critical features of workflows that are common to Automation runbooks.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
-ms.date: 08/07/2023
-ms.technology: service-management-automation
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
+ms.date: 04/03/2024
+ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Windows PowerShell Workflow Concepts
 
-::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
 
-[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
-
-::: moniker-end
 
 
 One [type of runbook](./authoring-automation-runbooks.md) for Service Management Automation is based on Windows PowerShell Workflows. This article provides a brief overview of the critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134242(v=ws.11)).
@@ -154,7 +150,7 @@ InlineScript
 
 The most common use for **InlineScript** in a runbook is to run a block of code on another computer. This is required when cmdlets in your runbook aren't installed in Automation or if the action only has permissions to be performed locally on the target computer. This is illustrated in the following diagram.
 
-![Inline script diagram.](/system-center/sma/media/overview-powershell-workflows/smaauth_inlinescript.png)
+![Inline script diagram.](./media/overview-powershell-workflows/smaauth_inlinescript.png)
 
 In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](~/sma/manage-global-assets.md) or [Connection](~/sma/manage-global-assets.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
 

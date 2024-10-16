@@ -1,23 +1,19 @@
 ---
 title: Prepare remote SQL Server Reporting Services for System Center - Service Manager
 description: Describes how to prepare remote SQL Server Reporting Services for System Center - Service Manager upgrade.
-manager: mkluck
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 01/23/2018
-ms.technology: service-manager
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.subservice: service-manager
 ms.topic: article
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Prepare remote SQL Server Reporting Services in a Service Manager upgrade
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 When you installed System Center - Service Manager, you may have specified a different computer to host Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) than the computer that hosted the data warehouse management server. If in your environment, SSRS is remote from the data warehouse management server, you must use the following procedures to prepare the computer that hosts SSRS for the upgrade:  
 

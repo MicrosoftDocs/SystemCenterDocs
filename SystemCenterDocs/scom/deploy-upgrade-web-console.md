@@ -2,20 +2,20 @@
 ms.assetid: ac2e1b48-2f24-44c1-8d06-9405b2db9c26
 title: How to Upgrade a Web Console
 description: This article describes how to upgrade a Web console to the latest release of System Center Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 01/15/2018
-ms.custom: UpdateFrequency3
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 01/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
 monikerRange: 'sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # How to upgrade a Web console
 
-Before you begin the upgrade process, ensure that your server meets the minimum supported configurations for System Center Operations Manager. This process isn't applicable for version 1801. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+Before you begin the upgrade process, ensure that your server meets the minimum supported configurations for System Center Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!NOTE]
 > When you upgrade the web console, any customizations that were made to the web.config file after the web console was installed will be reset. Make a backup copy before proceeding.  
@@ -59,7 +59,7 @@ If you made changes after you set up your web console to either enable or disabl
 4.  On the **Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
     > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. For all the later releases (1801, 1807, and 2019), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. For all the later releases (2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
     >
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify Prerequisites Again** to recheck the system.

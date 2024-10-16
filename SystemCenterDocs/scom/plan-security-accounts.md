@@ -2,23 +2,17 @@
 ms.assetid: c2049a9d-fb5b-4d87-beae-529a244c97ce
 title: Service, User, and Security Accounts
 description: This article provides an overview of the security accounts required for initial setup of Operations Manager and for core features that may require a privileged account.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/28/2023
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 07/22/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Service, User, and Security Accounts
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 During the setup and daily operations of Operations Manager, you'll be asked to provide credentials for several accounts. This article provides information about each of these accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
 
@@ -38,7 +32,7 @@ In System Center Operations Manager, management servers, gateway servers, and ag
 
 The account that a MonitoringHost.exe process runs as is called the action account.  MonitoringHost.exe is the process that runs these actions by using the credentials that are specified in the action account. A new instance of MonitoringHost.exe is created for each account.  The action account for the MonitoringHost.exe process running on an agent is called the Agent Action Account.  The action account used by the MonitoringHost.exe process on a management server is called the Management Server Action account.  The action account used by the MonitoringHost.exe process on a gateway server is called the Gateway Server Action Account.  On all management servers in the management group, we recommend that you grant the account local administrative rights unless least-privileged access is required by your organization's IT security policy.
 
-Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those you defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
+Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those you defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account, a new instance of MonitoringHost.exe is created for each account.
 
 When you install Operations Manager, you have the option to specify a domain account or use LocalSystem.  The more secure approach is to specify a domain account, which allows you to select a user with the least privileges necessary for your environment.
 
@@ -47,7 +41,6 @@ You can use a least-privilege account for the agent’s action account. On compu
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
 - Allow log on locally (SetInteractiveLogonRight) permission (not applicable for Operations Manager 2019 and later).
-
 
 > [!NOTE]
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the action account. Other Run As accounts can have lower privileges. The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they're configured.  For more information about which specific privileges are required, see the appropriate management pack guide.
@@ -64,7 +57,7 @@ The domain account that is specified for the action account is granted with Log 
 
 * Name:  Worker Process Logon Type
 * Type: REG_DWORD
-::: moniker range=">=sc-om-2016 <=sc-om-1807"
+::: moniker range="sc-om-2016"
 * Values: Four (4) -  Log on as batch, Two (2) -  Allow log on locally and Five (5) - Log on as Service.  Default value is 2. 
 ::: moniker-end  
 ::: moniker range=">=sc-om-2019"

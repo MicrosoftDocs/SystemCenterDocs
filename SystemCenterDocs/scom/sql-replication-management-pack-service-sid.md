@@ -3,12 +3,12 @@ ms.assetid: 71e5a3ff-147f-46d9-a195-4af43951d85e
 title: Service SID in Management Pack for SQL Server Replication
 description: This article explains how to configure monitoring with service SID in Management Pack for SQL Server Replication
 author: Anastas1ya
-ms.author: v-ekaterinap
+ms.author: v-fkornilov
 manager: evansma
 ms.date: 4/20/2022
 ms.topic: article
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ---
 
 # Service SID in Management Pack for SQL Server Replication

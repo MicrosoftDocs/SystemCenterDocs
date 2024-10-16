@@ -2,27 +2,23 @@
 ms.assetid: 2d8c7af1-fe96-4901-9d51-90e12bedeaa8
 title: Set up host groups in the VMM compute fabric
 description: This article describes how to set up host groups in the VMM fabric
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2016
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 08/09/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
 # Set up host groups in the VMM compute fabric
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
-::: moniker-end
+Read this article to learn about setting up and managing host groups in the System Center Virtual Machine Manager (VMM) fabric.
 
-Read this article to learn about setting up and managing host groups in the System Center - Virtual Machine Manager (VMM) fabric.
-
-A VMM host group is a logical entity that groups fabric resources together. You can group virtual machine hosts or clusters, or create nested host groups. After you've created host groups, you can assign and configure resources at the host group level. Those resources are then applied to all hosts and clusters in the group.
+A VMM host group is a logical entity that groups fabric resources together. You can group virtual machine hosts or clusters or create nested host groups. After you've created host groups, you can assign and configure resources at the host group level. Those resources are then applied to all hosts and clusters in the group.
 
 You can create host groups based on different criteria. For example, based on physical location, hardware capabilities, or specific workloads. You can assign permissions for host groups to the VMM admin, delegated administrators, and read-only admin user roles. Members of these user roles can view and manage the fabric resources that are assigned to them at the host group levels. When you create private clouds in VMM, you select which host groups will be included in the cloud, and then allocate resources in the host groups to the cloud.
 
@@ -30,7 +26,7 @@ You can create host groups based on different criteria. For example, based on ph
 
 1.  Select **Fabric** > **Servers** > **All Hosts** > **Create Host Group**.
 
-2.  Type in a group name. To create a host group at a specific location in the tree, right-click the desired parent node, and then select **Create Host Group**.
+2.  Enter a group name. To create a host group at a specific location in the tree, right-click the desired parent node, and then select **Create Host Group**.
 
 After you've created a host group, you can modify the following properties for the group.
 
@@ -46,4 +42,4 @@ After you've created a host group, you can modify the following properties for t
 
 ## Next steps
 
-After you've created host groups, you can deploy [Hyper-V](hyper-v-hosts.md) hosts in the VMM fabric.
+After you've created host groups, you can deploy [Hyper-V](hyper-v-cluster.md) hosts in the VMM fabric.

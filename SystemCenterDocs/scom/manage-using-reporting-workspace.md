@@ -1,24 +1,20 @@
 ---
 title: Using the Reporting Workspace in Operations Manager
 description: This article describes how to use the Operations Manager Operations console to view and administer reports.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/04/2020
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: dbfffaab-d49c-42a5-bbb3-77cbeae9b841
 ---
 
 # Using the Reporting Workspace in Operations Manager
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 System Center Operations Manager provides extensive reporting capabilities, including multiple report libraries that you can select from to customize reports for your specific requirements. Reports perform a query against the data warehouse database and return the results in an easy-to-read format.  
 

@@ -2,23 +2,19 @@
 ms.assetid: ddb56d8e-703c-4145-b301-99ab3e8f8fbd
 title: Application monitoring using the default settings in Operations Manager management pack
 description: This article provides an overview about application monitoring using the default settings
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 10/14/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
+ms.custom: engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Application monitoring using the default settings
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports.
 

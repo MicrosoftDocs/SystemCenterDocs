@@ -2,23 +2,19 @@
 ms.assetid: 55045642-0eba-407d-9482-33494b41a21e
 title: Operations Manager Key Concepts
 description: This article provides a high-level overview of what Operations Manager is and what capabilities it provides as a monitoring platform.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 08/07/2023
-ms.custom: UpdateFrequency.5, engagement-fy23
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 06/19/2024
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Operations Manager key concepts
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Operations Manager, a component of Microsoft System Center, is software that helps you monitor services, devices, and operations for many computers from a single console. This article explains the basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the IT services for your business.
 
@@ -39,11 +35,11 @@ Operations Manager will tell you, which monitored objects aren't healthy, send a
 
 Installing Operations Manager creates a *management group*. The management group is the basic unit of functionality. At a minimum, a management group consists of a *management server*, the *operational database*, and the *reporting data warehouse database*.
 
--   The **management server** is the focal point for administering the management group and communicating with the database. When you open the Operations console and connect to a management group, you connect to a management server for that management group. Depending on the size of your computing environment, a management group can contain a single management server or multiple management servers.
+- The **management server** is the focal point for administering the management group and communicating with the database. When you open the Operations console and connect to a management group, you connect to a management server for that management group. Depending on the size of your computing environment, a management group can contain a single management server or multiple management servers.
 
--   The **operational database** is a SQL Server database that contains all configuration data for the management group and stores all monitoring data that is collected and processed for the management group. The operational database retains short-term data, by default 7 days.
+- The **operational database** is a SQL Server database that contains all configuration data for the management group and stores all monitoring data that is collected and processed for the management group. The operational database retains short-term data, by default 7 days.
 
--   The **data warehouse database** is a SQL Server database that stores monitoring and alerting data for historical purposes. Data that is written to the Operations Manager database is also written to the data warehouse database, so reports always contain current data. The data warehouse database retains long-term data.
+- The **data warehouse database** is a SQL Server database that stores monitoring and alerting data for historical purposes. Data that is written to the Operations Manager database is also written to the data warehouse database, so reports always contain current data. The data warehouse database retains long-term data.
 
 When Operations Manager reporting functionality is installed, the management group also contains a *Reporting server*, which builds and presents reports from data in the data warehouse database.
 
@@ -94,9 +90,9 @@ After Operations Manager installs an agent on a computer, it sends an initial co
 
 A *rule* defines the events and performance data to collect from computers and what to do with the information after it's collected. A simple way to think about rules is as an If/Then statement. For example, a management pack for an application might contain rules such as the following:
 
--   If a message indicating that the application is shutting down appears in the event log, create an alert.
+- If a message indicating that the application is shutting down appears in the event log, create an alert.
 
--   If the upload of a source file fails, collect the event that indicates this failure.
+- If the upload of a source file fails, collect the event that indicates this failure.
 
 As these examples show, rules can create alerts and collect events or performance data, which the agent sends to the management server. Rules can also run scripts, such as allowing a rule to attempt to restart a failed application.
 
@@ -108,21 +104,21 @@ The following image is a simplified illustration of how objects are discovered a
 
 ![Illustration of a Discovery and Monitoring Overview.](./media/key-concepts/om2016-windows-computer-discovery.png)
 
-1.  The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Agent deployment planning](plan-planning-agent-deployment.md).
+1. The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Agent deployment planning](plan-planning-agent-deployment.md).
 
-2.  Computers that meet the specified criteria and aren't already managed are identified.
+2. Computers that meet the specified criteria and aren't already managed are identified.
 
-3.  An Operations Manager agent is installed on the discovered computer.
+3. An Operations Manager agent is installed on the discovered computer.
 
-4.  The agent requests configuration data, and then the management server sends the agent configuration data from installed management packs, which includes classes to be discovered. For example, if the Windows Server operating system management packs are installed, the management server will send the agent the operating system classes.
+4. The agent requests configuration data, and then the management server sends the agent configuration data from installed management packs, which includes classes to be discovered. For example, if the Windows Server operating system management packs are installed, the management server will send the agent the operating system classes.
 
-5.  The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2019 operating system is on the computer.
+5. The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2019 operating system is on the computer.
 
-6.  The management server sends the agent all monitoring logic from the installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2019.
+6. The management server sends the agent all monitoring logic from the installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2019.
 
-7.  The agent applies the monitoring logic, such as rules and monitors, runs workflows, and returns data to the management server.
+7. The agent applies the monitoring logic, such as rules and monitors, runs workflows, and returns data to the management server.
 
-8.  As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server, which then sends the updated monitoring logic.
+8. As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server, which then sends the updated monitoring logic.
 
 > [!NOTE]
 > Operations Manager can also discover and monitor network devices, computers running UNIX, and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](/previous-versions/system-center/system-center-2012-R2/hh212763(v=sc.12)) in the Operations Guide.
@@ -139,15 +135,14 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ### Other resources for Operations Manager
 
--   [Main page for System Center - Operations Manager](welcome.md).
+- [Main page for System Center - Operations Manager](welcome.md).
 
--   Review the design and deployment considerations and recommendations for Operations Manager in the [Planning Guide](plan-overview.md).
+- Review the design and deployment considerations and recommendations for Operations Manager in the [Planning Guide](plan-overview.md).
 
--   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center - Operations Manager](deploy-overview.md).
+- To learn how to install Operations Manager and deploy a management group, see [Deploying System Center - Operations Manager](deploy-overview.md).
 
--   To learn how to use Operations Manager after the management group is set up, see [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md).
+- To learn how to use Operations Manager after the management group is set up, see [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md).
 
--   To learn how to create a management pack, see [Create management pack templates](create-management-pack-templates.md).
+- To learn how to create a management pack, see [Create management pack templates](create-management-pack-templates.md).
 
--   [Operations Manager Community](https://go.microsoft.com/fwlink/p/?LinkID=221328).
-
+- [Operations Manager Community](https://go.microsoft.com/fwlink/p/?LinkID=221328).

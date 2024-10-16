@@ -1,24 +1,19 @@
 ---
 title: Resolving Heartbeat Alerts
 description: This article describes how to investigate a Health Service Heartbeat Failure alert in Operations Manager.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 04/29/2019
 ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: b0f9ef5e-e8bf-4cd3-a358-02a7aafa82a9
 ---
 
 # Resolving heartbeat alerts
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 The Health Service sends a heartbeat to a management server to verify that the system is still responding. When a specified number of heartbeats fail to arrive, System Center - Operations Manager displays an alert.  
 

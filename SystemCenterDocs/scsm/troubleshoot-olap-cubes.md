@@ -1,15 +1,15 @@
 ---
 title: Troubleshoot OLAP cubes
 description: Explains how you can troubleshoot Service Manager OLAP cubes.
-manager: mkluck
-ms.custom: na, UpdateFrequency2
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 10/12/2016
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 02/08/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dfabe723-15b7-40e0-923a-66819be1e93c
@@ -17,11 +17,7 @@ ms.assetid: dfabe723-15b7-40e0-923a-66819be1e93c
 
 # Troubleshoot Service Manager OLAP cubes
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The following sections describe common problems that you might need to troubleshoot online analytical processing \(OLAP\) data cubes in the Service Manager data warehouse.  
 

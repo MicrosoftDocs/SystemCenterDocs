@@ -3,27 +3,21 @@ title: Copy File
 description: This article describes the functionality of Copy File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/27/2023
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9f718d16-c8d9-48ba-8c84-907d3ec69437
 caps.latest.revision: 13
-author: "jyothisuri"
-ms.author: "jsuri"
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ---
 # Copy File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Copy File activity copies a file from one directory to another. You can also copy files to network shares that are available using UNC paths. Use the Copy File activity to copy important files that have been created or modified in a folder that's being monitored by the Monitor Folder activity to a backup location.  
 

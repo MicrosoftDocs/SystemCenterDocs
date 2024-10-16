@@ -1,24 +1,20 @@
 ---
 title: Creating a Service Level Dashboard
 description: This article describes how to create a Service Level Dashboard in the Operations Manager console to visualize IT service availability metrics.
-author: jyothisuri
-ms.author: jsuri
-ms.manager: mkluck
-ms.date: 12/05/2016
-ms.custom: UpdateFrequency2
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 09/26/2023
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 08ea756b-01dd-4f6c-8326-4fec3ab3706e
 ---
 
 # Creating a service level dashboard
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 After you configure a service level objective, you can create a service level dashboard view to monitor the service level objective. The service level dashboard view displays a grid of service levels and a grid of service level objectives grid, which lists the various objectives that have a goal or target value and whether success is either above or below that target value for the currently selected SLA/instance. When you select an objective in the **Service Level Objectives** grid, a gauge and chart is displayed, as shown in the following image.  
 

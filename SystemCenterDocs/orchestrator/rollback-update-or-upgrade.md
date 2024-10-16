@@ -2,27 +2,23 @@
 title: Rollback Update or Upgrade
 description: The Rollback Update or Upgrade activity cancels an in progress configuration change (update) or upgrade and returns the deployment to its state before the upgrade or configuration change was started.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.prod: system-center
+ms.service: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology: orchestrator
+ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a4c09c8f-5c17-4603-97fb-1d8b1e577ef7
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/27/2023
 ---
 # Rollback Update or Upgrade
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
-[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-::: moniker-end
 
 The **Rollback Update or Upgrade** activity cancels an in progress configuration change (update) or upgrade and returns the deployment to its state before the upgrade or configuration change was started. It's part of the **Azure Deployments** category activity.
 

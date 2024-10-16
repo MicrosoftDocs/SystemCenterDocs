@@ -2,24 +2,19 @@
 ms.assetid: de43c081-201d-47e8-8d49-639ebd5b518b
 title: Set up self-service in VMM
 description: This article describes how to set up self-service in VMM
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 11/07/2016
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 09/02/2024
 ms.topic: article
-ms.prod: system-center
-ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.service: system-center
+ms.subservice: virtual-machine-manager
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 
 # Set up self-service in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to set up self-service in System Center - Virtual Machine Manager (VMM).
 
@@ -44,11 +39,11 @@ You set up self-service in VMM as follows:
 ## Set up a self-service user role
 
 1.  Select **Settings** > **Create** > **Create User Role**.
-2.  In the **Create User Role Wizard**, enter a name and optional description for the role, and then select **Next**.
+2.  In the **Create User Role Wizard**, enter a name and optional description for the role, and select **Next**.
 3.  In **Profile** page, select **Self-Service User**, and select **Next**.
-4.  In **Members**, select **Add** to add user accounts and Active Directory groups to the role. Then select **Next**.
-5.  In **Scope**, select at least one private cloud that members of the role will use. Then select **Next**.
-6.  In **Quotas**, set quota for each private cloud. Each quota sets an individual limit for each member of the user role. If you want all role members to share overall quotas, create a security group in Active Directory, and assign that group to the user role. Supported quota types include:
+4.  In **Members**, select **Add** to add user accounts and Active Directory groups to the role. Select **Next**.
+5.  In **Scope**, select at least one private cloud that members of the role will use. Select **Next**.
+6.  In **Quotas**, set a quota for each private cloud. Each quota sets an individual limit for each member of the user role. If you want all role members to share overall quotas, create a security group in Active Directory, and assign that group to the user role. Supported quota types include:
 
     - **Virtual CPUs**: Limits the total number of VM CPUs that can be consumed from the private cloud.
     - **Memory (MB)**: Limits the amount of VM memory that can be consumed from the private cloud.
@@ -72,24 +67,24 @@ You set up self-service in VMM as follows:
     - **Remove/Save**: Users can remove or save their VMs.
     - **Share**: Users can share resources that they own with other self-service user roles. Sharable resources include hardware profiles, operating system profiles, application profiles, SQL Server profiles, virtual machine templates, virtual machines, service templates, and services. A self-service user must be the owner of a resource to share it. For a user role to use the resources, it must have the **Receive** action.
     - **Start/Stop**: Users can start and stop their own VMs and services.
-    - **Store and redeploy**: Users can store their own virtual machines in the VMM library, and redeploy those virtual machines. Virtual machines stored in the library don't count against a user's virtual machine quota. VMM doesn't support storing services.
+    - **Store and redeploy**: Users can store their own virtual machines in the VMM library and redeploy those virtual machines. Virtual machines stored in the library don't count against a user's virtual machine quota. VMM doesn't support storing services.
 
 10. If the **Run As accounts** page appears, add Run As accounts that you want the members of this role to be able to use in the actions to create VMs and services. Then select **Next**.
-11. In **Summary** page, review the settings, and select **Finish** to create the role. Verify the role appears in **Settings** > **Security** > **User Roles**.
+11. In the **Summary** page, review the settings, and select **Finish** to create the role. Verify the role appears in **Settings** > **Security** > **User Roles**.
 
 After you create the role, you can modify its settings on the properties page.
 
 
 ## Prepare the VMM library for self-service
 
-Self-service users with the required permissions can access the VMM library. Users with the Author action can create templates and profiles in the library. They can also share those templates and profiles with other self-service users. In order for self-service users to interact with the library, you need to prepare the following:
+Self-service users with the required permissions can access the VMM library. Users with the Author action can create templates and profiles in the library. They can also share those templates and profiles with other self-service users. For self-service users to interact with the library, you need to prepare the following:
 
-- **Read-only library shares**: To share physical resources, such as VHDs and ISO images with self-service users, you set up read-only library shares for private clouds, and add the resources to the path. The resources are then available for self-service users that have the private cloud in their scope. You could also store resources such as Application Frameworks on these shares to enable self-service users to configure templates and profiles with scripts.
+- **Read-only library shares**: To share physical resources, such as VHDs and ISO images with self-service users, you set up read-only library shares for private clouds, and add the resources to the path. The resources are then available for self-service users that have the private cloud in their scope. You can also store resources such as Application Frameworks on these shares to enable self-service users to configure templates and profiles with scripts.
 - **Self-service user data paths**: Set up user data paths on self-service roles to provide a place where members of the role can upload and share their own resources. For example, a path might store app packages for services deployed by a self-service user role. Read and write permissions for the path are controlled through the file system. VMM discovers all paths that the current self-service user can access. These data paths must be on a library share.
 
 ## Before you start
 
-All of these procedures must be performed by a VMM administrator. Delegated administrators can add library shares on library servers that are in the scope of their user role, can configure read-only library shares on private clouds that they created, and can configure user data paths on self-service user roles that they created. Only members of the local Administrators group can grant access permissions on their user data paths.
+All these procedures must be performed by a VMM administrator. Delegated administrators can add library shares on library servers that are in the scope of their user role, can configure read-only library shares on private clouds that they created, and can configure user data paths on self-service user roles that they created. Only members of the local Administrators group can grant access permissions on their user data paths.
 
 
 ## Create read-only library shares
@@ -100,7 +95,7 @@ All of these procedures must be performed by a VMM administrator. Delegated admi
     > The shared folder can't be in the default library share path. You can't add a library share that's in the path of an existing library share.
 3. Copy the \ApplicationFrameworks folder from the default library share to the share you created for private cloud resources.
 4. Add the share to the VMM library. In **Library** > **Library Server** > **Add Library Share**, select each shared folder you want to add to the library. Verify that the share is added in **Library Servers**.
-5. To add the read-only share to a private cloud, open VMs and Services > clouds, and select the private cloud you want to update.
+5. To add the read-only share to a private cloud, open VMs and **Services** > **clouds**, and select the private cloud you want to update.
 6. In the cloud, select **Folder** > **Properties** > **Library** > **Read-only library shares** > **Add**.
 
 
@@ -115,10 +110,10 @@ Configure a user data path for the self-service user role, and grant read/write 
 
 1. Create a folder to store all resources that will be shared by self-service users. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data.
 2. Within that folder, create a subfolder to store resources for the self-service user role. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers.
-3. Then within that subfolder, create a third-level subfolder to store all the application packages for all releases of the virtual application that you'll use in this scenario. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers\<MyApplication>.
+3. Within that subfolder, create a third-level subfolder to store all the application packages for all releases of the virtual application that you'll use in this scenario. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers\<MyApplication>.
 4. In that subfolder, create a fourth-level subfolder to store the application package for the first release of the service. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers\<MyApplication>\MyApplication v1>.
 
-    Each time you update and resequence an application by using Server App-V, you'll need to store the new application package in a separate folder.
+    Each time you update and resequence an application using Server App-V, you'll need to store the new application package in a separate folder.
 
 5. To enable members of the self-service user role to access the resources and upload their own resources to the folder, grant all members read/write permission on the folder.
 6. If needed, share the folder that contains user data for all self-service user roles, and add the share to the VMM library. To be assigned to a self-service user role, a user data path must be on a library share.
@@ -138,7 +133,7 @@ To share a resource with a member of another self-service user role, you need th
 
 Enable resource sharing as follows:
 
-1. Select **Settings** > **Security** > User Roles, and select the self-service user role for which you want to enable resource sharing.
+1. Select **Settings** > **Security** > **User Roles**, and select the self-service user role for which you want to enable resource sharing.
 2. In the **User Role** group, select **Properties**.
 3. In **Actions**, select **Share**, and select **OK**. Members of this self-service user role can now share their own resources with members of any self-service user role that has the **Receive** action assigned to it.
 3. To configure a user role with the **Receive** action, select the role > **Properties** >  **Action**, and select **Receive**.

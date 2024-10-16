@@ -1,17 +1,17 @@
 ---
 description: Learn about the components of offline backup in DPM
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.prod: system-center
+ms.service: system-center
 keywords:
-ms.date: 08/04/2020
+ms.date: 06/24/2024
 title: Overview of offline backup
-ms.technology: data-protection-manager
+ms.subservice: data-protection-manager
 ms.assetid: 87b6a324-15df-41ae-86a3-546901bdd369
-ms.author: jsuri
-monikerRange: 'sc-dpm-2019'
-ms.custom: UpdateFrequency2
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+monikerRange: '>=sc-dpm-2019'
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Overview of offline backup in DPM
@@ -26,15 +26,12 @@ DPM supports offline backup, which transfers initial backup data offline without
 
 You can do the Offline backup in two modes based on the ownership of the storage devices:
 
-- [Offline backup using Azure Data Box (preview)](#offline-backup-using-azure-data-box-preview)
+- [Offline backup using Azure Data Box](#offline-backup-using-azure-data-box)
 - [Offline backup based using Azure Import/Export service](#offline-backup-using-azure-importexport-service)
 
-## Offline backup using Azure Data Box (preview)
+## Offline backup using Azure Data Box
 
-> [!NOTE]
-> This mode is currently in preview.
-
-This mode is currently supported with the Microsoft Azure Recovery Services (MARS) Agent, in preview. This option takes advantage of [Azure Data Box](https://azure.microsoft.com/services/databox/) to ship Microsoft-proprietary, secure, and tamper-resistant transfer appliances with USB connectors to your datacenter or remote office. Backup data is directly written onto these devices. This option saves the effort required to procure your own Azure-compatible disks and connectors or to provision temporary storage as a staging location. Microsoft also handles the end-to-end transfer logistics, which you can track through the Azure portal.
+This mode is currently supported with the Microsoft Azure Recovery Services (MARS) Agent. This option takes advantage of [Azure Data Box](https://azure.microsoft.com/services/databox/) to ship Microsoft-proprietary, secure, and tamper-resistant transfer appliances with USB connectors to your datacenter or remote office. Backup data is directly written onto these devices. This option saves the effort required to procure your own Azure-compatible disks and connectors or to provision temporary storage as a staging location. Microsoft also handles the end-to-end transfer logistics, which you can track through the Azure portal.
 
 Here's the architecture to depict the movement of backup data.
 

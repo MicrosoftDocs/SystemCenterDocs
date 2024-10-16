@@ -1,15 +1,15 @@
 ---
 title: Manual steps to configure SQL Server Reporting Services
 description: When you deploy the Service Manager data warehouse management server, you can choose the server where Microsoft SQL Server Reporting Services is deployed.
-manager: mkluck
-ms.custom: na, UpdateFrequency2
-ms.prod: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 05/11/2022
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/18/2024
 ms.reviewer: na
 ms.suite: na
-ms.technology: service-manager
+ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8f0b7917-ba9f-49de-93bb-17d26fb2bf11
@@ -17,11 +17,7 @@ ms.assetid: 8f0b7917-ba9f-49de-93bb-17d26fb2bf11
 
 # Manual steps to configure SQL Server Reporting Services
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you're prompted to follow this procedure to prepare the server. Preparing the remote computer to host SSRS involves the following steps, which are covered in detail in this section:
 

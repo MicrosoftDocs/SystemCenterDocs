@@ -1,14 +1,13 @@
 ---
 title: Install agent and certificate on Linux computers using the command line
 description: This article describes the new Linux agent and how to install manually on System Center Operations Manager 1801.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
 ms.date: 08/22/2023
 ms.custom: UpdateFrequency5, intro-installation, engagement-fy24
-ms.prod: system-center
-monikerRange: 'sc-om-1801'
-ms.technology: operations-manager
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 

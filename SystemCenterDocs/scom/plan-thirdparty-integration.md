@@ -2,23 +2,19 @@
 ms.assetid: 383a3286-5e1e-410b-a3b9-216af2febd97
 title: Design Integration with other Enterprise Management Products
 description: This article provides design guidance for integrating Operations Manager with third-party enterprise management platforms.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/09/2019
-ms.custom: na, UpdateFrequency3
-ms.prod: system-center
-ms.technology: operations-manager
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency3, engagement-fy24
+ms.service: system-center
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Integration with other enterprise management products
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 Many customers have one or more monitoring platforms, where one provides consolidated operational data across business infrastructure, data centers, complex networks, and IT domains in the enterprise. From this central monitoring platform, they correlate this data and forward to service management solution for incident recording and escalation, and to analyze and visualize the data presented through different types of dashboards. System Center - Operations Manager is included in that service operations framework to forward alert or alert and performance data, or is the primary monitoring platform extended to meet your business needs.  
 

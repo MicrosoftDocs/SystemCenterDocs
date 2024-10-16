@@ -2,24 +2,20 @@
 ms.assetid:
 title: How to create a dashboard with the Custom widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Custom widget.
-author: jyothisuri
-ms.author: jsuri
-manager: mkluck
-ms.date: 07/05/2023
-ms.custom: UpdateFrequency2
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 03/18/2024
+ms.custom: UpdateFrequency2, engagement-fy24
+ms.service: system-center
 monikerRange: '>sc-om-2016'
-ms.technology: operations-manager
+ms.subservice: operations-manager
 ms.topic: article
 ---
 
 # Create a dashboard with the Custom widget in the Web console
 
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
-
-::: moniker-end
 
 In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console, which is using a new API based on REST. It executes the HTML code specified and visualizes the desired output in various visualizations.
 

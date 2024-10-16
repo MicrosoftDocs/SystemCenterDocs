@@ -1,25 +1,21 @@
 ---
 title: Register source systems to the System Center data warehouse
 description: Describes how you can register source systems to the System Center data warehouse and troubleshoot common problems in Service Manager.
-manager: mkluck
 ms.topic: article
-author: jyothisuri
-ms.author: jsuri
-ms.prod: system-center
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.service: system-center
 keywords:
-ms.date: 10/12/2016
-ms.technology: service-manager
+ms.date: 02/08/2024
+ms.subservice: service-manager
 ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Register source systems to the System Center data warehouse in Service Manager
 
-::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
-::: moniker-end
 
 The data warehouse in Service Manager retrieves data from one or more data sources. These data sources are the transactional processing systems that produce and govern data that you will eventually want to measure and analyze. For example, incidents and change requests are created and managed in Service Manager, software updates and power policies are managed in Configuration Manager, and other systems produce and govern other data sets.
 
