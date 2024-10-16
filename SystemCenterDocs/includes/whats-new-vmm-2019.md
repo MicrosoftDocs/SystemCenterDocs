@@ -16,9 +16,6 @@ ms.subservice: virtual-machine-manager
 
 The following sections introduce the new features in Virtual Machine Manager (VMM) 2019.
 
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](~/articles/virtual-machines/workloads/centos/centos-end-of-life.md).
-
 ### Compute
 
 #### Cluster rolling upgrade for S2D clusters
