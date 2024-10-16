@@ -323,7 +323,7 @@ VMM 2019 RTM and later now supports SQL Server 2019.
 
 #### Support for Linux Operating system
 
-VMM 2019 UR2 supports Red Hat 8.0, CentOS 8, Debian 10, Ubuntu 20.04 Linux Operating systems.
+VMM 2019 UR2 supports Red Hat 8.0, Debian 10, Ubuntu 20.04 Linux Operating systems.
 
 ### Updates to PowerShell cmdlets
 
