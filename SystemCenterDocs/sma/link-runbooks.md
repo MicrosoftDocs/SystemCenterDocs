@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 title: Child runbooks in Service Management Automation
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
