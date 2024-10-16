@@ -155,9 +155,9 @@ If this file exists, the agent won't attempt to update the operating system prop
 Edit the file `scx-release` in the directory: `/etc/opt/microsoft/scx/conf`. This file has the format:  
 
 ```  
-OSName=CentOS  
-OSVersion=6.0  
-OSFullName=CentOS 6.0 (x86_64)  
+OSName=Ubuntu  
+OSVersion=24.04
+OSFullName=Ubuntu 24.04 (x86_64)
 OSAlias=UniversalR  
 OSManufacturer=  
 ```  
