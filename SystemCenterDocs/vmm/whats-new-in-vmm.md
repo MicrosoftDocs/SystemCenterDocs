@@ -28,7 +28,7 @@ This article details the new features supported in System Center 2022 - Virtual 
 This article details the new features supported in System Center 2019 - Virtual Machine Manager (VMM). It also details the new features in VMM 2019 UR1, UR2, UR3, UR4, UR5, and UR6.
 
 > [!CAUTION]
-> This article references CentOS, a Linux distribution that has reached End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life.md).
+> This article references CentOS, a Linux distribution that has reached End Of Life (EOL) status. Please consider your use and planning accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 [!INCLUDE [whats-new-vmm-2019.md](../includes/whats-new-vmm-2019.md)]
 
