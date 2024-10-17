@@ -20,12 +20,24 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 
 This article lists the release notes for System Center 2025 - Data Protection Manager (DPM), including the known issues and workarounds for DPM 2025.
 
-This article also includes the release notes for DPM 2025 Hotfix KB.
-
 We recommend you to see the following articles for detailed information about what DPM supports and can back up:
 
 - [What can DPM back up](dpm-protection-matrix.md)
 - [What DPM supports](dpm-support-issues.md)
+
+## DPM 2025 release notes
+
+### Communication with the SQL instance might fail
+
+**Description**: Communication with the SQL instances (for backups, existing SQL, SharePoint backups or SQL instance enumeration) might fail post upgrading to DPM 2025 if OLEDB 19 isn't installed.
+
+**Workaround**: Install latest version of [OLEDB 19](https://learn.microsoft.com/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16) (19.3 and above) on all the machines where SQL instances are present and are being backed-up by the DPM server. Also, install on DPM server before enabling backups for DPM database.
+
+In addition, following are the improvements:
+
+- Upgrading a licensed DPM server to Eval build is blocked.
+- Upgrading Eval to a licensed build is blocked.
+- Improved/fixed duplicate summary manager jobs post upgrade.
 
 ::: moniker-end
 
