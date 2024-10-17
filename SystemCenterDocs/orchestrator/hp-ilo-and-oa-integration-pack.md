@@ -22,7 +22,7 @@ ms.date: 04/27/2023
 ::: moniker range="sc-orch-2019"
 
 >[!NOTE]
->Windows Azure Integration pack is discontinued from System Center Orchestator 2022 and later.
+>HP iLO and OA Integration pack is discontinued from System Center Orchestator 2022 and later.
 
 ::: moniker-end
 
