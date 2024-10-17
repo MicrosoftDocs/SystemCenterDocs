@@ -29,7 +29,7 @@ We recommend you to see the following articles for detailed information about wh
 
 ### Communication with the SQL instance might fail
 
-**Description**: Communication with the SQL instances (for backups, existing SQL, SharePoint backups or SQL instance enumeration) might fail post upgrading to DPM 2025 if OLEDB 19 isn't installed.
+**Description**: Communication with the SQL instances (existing SQL, SharePoint backups or SQL instance enumeration) might fail post upgrading to DPM 2025 if OLEDB 19 isn't installed.
 
 **Workaround**: Install latest version of [OLEDB 19](https://learn.microsoft.com/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16) (19.3 and above) on all the machines where SQL instances are present and are being backed-up by the DPM server. Also, install on DPM server before enabling backups for DPM database.
 
