@@ -35,3 +35,7 @@ Use the `ConfigureSharepoint.exe` command line tool to support the SharePoint su
 ### Support for VMs with vTPM device configured
 
 Backup and restore vTPM configured VMs, preserving vTPM device settings during the restoration process. The Alternate Location Restore (ALR) flow for vTPM VMs assumes that the selected target vCenter has access to the same Key Provider.
+
+### Support for SQL OLEDB 19
+
+DPM 2025 uses OLEDB 19 driver to communicate and backup SQL instances. This is applicable for SharePoint backups also.
