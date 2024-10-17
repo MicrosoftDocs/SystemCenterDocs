@@ -73,6 +73,8 @@ The following is a list of the available integration packs and the information f
 
  [Share Point](integration-pack-for-microsoft-sharepoint.md)
 
+ [VMware Sphere](vsphere-integration-pack.md)  
+
  [Data Protection Manager](integration-pack-for-data-protection-manager.md)  
 
  [Configuration Manager](configuration-manager-integration-pack.md)  
