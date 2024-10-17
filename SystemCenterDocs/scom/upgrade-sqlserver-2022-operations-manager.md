@@ -7,7 +7,7 @@ manager: jsuri
 ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2022'
 ms.assetid:
 ms.subservice: operations-manager
 ms.topic: conceptual
@@ -15,7 +15,11 @@ ms.topic: conceptual
 
 # Upgrade Operations Manager databases to SQL Server 2022
 
+::: moniker range="sc-om-2022"
+
 Operations Manager 2022 UR1 supports SQL 2022.
+
+::: moniker-end
 
 Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2022.  Before you proceed, back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
