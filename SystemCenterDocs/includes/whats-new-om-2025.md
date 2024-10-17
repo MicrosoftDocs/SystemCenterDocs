@@ -22,11 +22,7 @@ Operations Manager 2025 now supports Windows Server 2025. [Learn more](/SystemCe
 
 ## Support for OpenSSL 3.1 to 3.3
 
-Operations Manager 2025 now supports OpenSSL 3.1 to 3.3
-
-## Support for Openssl 3.3 and later
-
-Operations Manager 2025 now supports Openssl 3.3 and later.
+Operations Manager 2025 now supports OpenSSL 3.1 to 3.3. [Learn more](/SystemCenterDocs/scom/plan-supported-crossplat-os.md).
 
 ## Other updates
 
