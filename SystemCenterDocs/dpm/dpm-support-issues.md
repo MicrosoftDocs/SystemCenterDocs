@@ -671,16 +671,6 @@ These workloads can be running on a single server or in a cluster configuration.
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2025"
-
-### SQL Server 2025 support
-
-**Issue**: You can protect SQL Server 2025.
-
-**Workaround**: Run the correct DPM version.
-
-::: moniker-end
-
 ### AlwaysOn support
 
 **Issue**: AlwaysOn is supported in DPM.
