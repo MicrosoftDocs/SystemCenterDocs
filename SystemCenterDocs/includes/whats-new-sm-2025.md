@@ -18,4 +18,13 @@ See the following sections for information about the new features/features updat
 
 ## Support for Windows Server 2025  
 
-Service Manager 2025 now supports Windows Server 2025.  
+Service Manager 2025 now supports Windows Server 2025. [Learn more](/SystemCenterDocs/scsm/system-requirements.md).
+
+## Other updates
+
+Service Manager 2025 also includes the following updates:
+
+Supports the following newer browsers Chrome and Edge:
+
+- Microsoft Edge version 121 and later with IE compatibility mode.
+- Google Chrome version 121 and later.
