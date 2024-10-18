@@ -18,6 +18,14 @@ ms.date: 11/01/2024
 
 # HP iLO and OA Integration Pack for System Center - Orchestrator
 
+
+::: moniker range="sc-orch-2019"
+
+>[!NOTE]
+>HP iLO and OA Integration pack has been discontinued from System Center Orchestator 2022 and later.
+
+::: moniker-end
+
 The Integration Pack for HP iLO and OA is an add-on for System Center - Orchestrator that enables you to automate HP iLO and OA commands.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
