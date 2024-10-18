@@ -18,7 +18,12 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Windows Azure Integration Pack for Orchestrator in System Center
 
+::: moniker range="sc-orch-2019"
 
+>[!NOTE]
+>Windows Azure Integration pack has been discontinued from System Center Orchestator 2022 and later.
+
+::: moniker-end
 
 The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using the '2012-03-01' version of the Windows Azure Classic Deployments REST API.
 

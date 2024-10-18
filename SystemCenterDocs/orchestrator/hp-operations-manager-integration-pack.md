@@ -19,6 +19,12 @@ ms.date: 04/27/2023
 # HP Operations Manager Integration Pack for System Center - Orchestrator
 
 
+::: moniker range="sc-orch-2019"
+
+>[!NOTE]
+>HP Operations Manager Integration pack has been discontinued from System Center Orchestator 2022 and later.
+
+::: moniker-end
 
 The Integration Pack for HP Operations Manager is an add-on for System Center - Orchestrator that enables you to automate the consolidation and correlation of fault and performance events across your entire physical and virtual IT infrastructure.
 
