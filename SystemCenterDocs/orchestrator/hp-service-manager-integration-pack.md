@@ -18,6 +18,14 @@ ms.date: 11/01/2024
 
 # HP Service Manager Integration Pack for System Center - Orchestrator
 
+
+::: moniker range="sc-orch-2019"
+
+>[!NOTE]
+>HP Service Manager Integration pack has been discontinued from System Center Orchestator 2022 and later.
+
+::: moniker-end
+
 The integration pack for HP Service Manager is an add-on for Orchestrator in System Center and System Center - Orchestrator that enables you to retrieve, create, update, and monitor tickets in HP Service Manager.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
