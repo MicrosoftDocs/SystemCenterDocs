@@ -167,7 +167,7 @@ To set up a SQL Server database:
 >- In both local or remote SQL Server scenarios, the following components must be installed on the DPM server.<br>
      - [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) is no longer installed with SQL Server; you must install an equivalent version of SSMS separately.<br>
      - For SQL Server 2019, along with SSMS you should also install [SQLCMD](/sql/tools/sqlcmd-utility), [Visual C++ 2017 Redistributable](/cpp/windows/latest-supported-vc-redist?preserve-view=true&view=msvc-170), and [Microsoft ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server#version-17) on the DPM server separately.<br>
-     - When you use Remote SQL Server 2022, you must install SQLCMD version 16 on the DPM server. If SQLCMD version 16 isn't available to download, install SQLCMD version 15 and then copy `SQLCMD.exe` version 16 (`C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn`) from SQL server 2022 to DPM 2022 server before DPM 2022 installation. After the installation, delete version 16 and rename version 15 as needed.
+     - When you use Remote SQL Server 2022, you must install SQLCMD version 16 on the DPM server. If SQLCMD version 16 isn't available to download, install SQLCMD version 15 and rename the folder, and then copy the folder of `SQLCMD` version 16 (`C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn`) from SQL server 2022 to DPM 2022 server before DPM 2022 installation. After the installation, delete version 16 and rename version 15 as needed.
 
 ::: moniker-end
 
