@@ -28,7 +28,7 @@ Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the Syste
 
 - **Library resources**: The VMM fabric retains a library of file-based and non file-based resources that are used to create and deploy VMs and services on virtualization hosts. File-based resources include virtual hard disks, ISO images, and scripts. Non file-based resources include templates and profiles that are used to standardize the creation of VMs. Library resources are accessed through library shares.
 ::: moniker range=">= sc-vmm-2019"
-- **Azure management**: Onboard to Azure Arc-enabled SCVMM to manage your VMs in a self-service mode using Azure Role-Based Access Control. Azure Arc-enabled SCVMM enables the construction of automation and self-service pipelines using Python; Java; JavaScript; Go and .NET SDKs; Terraform, ARM, and Bicep templates; Azure REST APIs; Azure CLI; and Azure PowerShell. Azure Arc-enabled SCVMM also provides access to Azure management services such as Microsoft Defender for Cloud, Azure Monitor, Azure Update Manager, and Azure Policy, enabling you to secure, govern, and manage your SCVMM VMs from the cloud.
+- **Azure management**: Onboard to Azure Arc-enabled SCVMM to manage your VMs in a self-service mode using Azure Role-Based Access Control. Azure Arc-enabled SCVMM enables the construction of automation and self-service pipelines using Python, Java, JavaScript, Go, and .NET SDKs; Terraform, ARM, and Bicep templates; Azure REST APIs, CLI, and PowerShell. Azure Arc-enabled SCVMM also provides access to Azure management services such as Microsoft Defender for Cloud, Azure Monitor, Azure Update Manager, and Azure Policy, enabling you to secure, govern, and manage your SCVMM VMs from the cloud.
 ::: moniker-end
 ## Resources
 
