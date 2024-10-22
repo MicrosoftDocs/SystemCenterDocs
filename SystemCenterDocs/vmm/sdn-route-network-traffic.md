@@ -5,7 +5,7 @@ description: This article describes about how to route the network traffic betwe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/24/2024
+ms.date: 10/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -48,7 +48,7 @@ Ensure the following:
 
 A Site-to-Site VPN connection allows you to securely connect two networks at different physical locations by using the Internet.
 
-For Cloud Service Providers (CSPs) that host many tenants in their datacenter, SDN RAS gateway provides a multi-tenant gateway solution that allows your tenants to access and manage their resources over Site-to-Site VPN connections from remote sites, which in turn allows network traffic between virtual resources in your datacenter and their physical network.
+For Cloud Service Providers (CSPs) that host many tenants in their datacenter, SDN RAS gateway provides a multitenant gateway solution that allows your tenants to access and manage their resources over Site-to-Site VPN connections from remote sites, which in turn allows network traffic between virtual resources in your datacenter and their physical network.
 
 
 ::: moniker range="sc-vmm-2022"
