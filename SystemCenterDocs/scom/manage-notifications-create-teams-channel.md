@@ -4,7 +4,7 @@ description: This article describes how to set up a Microsoft Teams notification
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/07/2024
+ms.date: 10/22/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
