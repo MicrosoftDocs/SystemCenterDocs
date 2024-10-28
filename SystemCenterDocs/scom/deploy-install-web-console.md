@@ -224,7 +224,7 @@ All information and content at https://techcommunity.microsoft.com/t5/system-cen
 
 By default, the IIS application pool identity of the Web Console is the built-in account named **ApplicationPoolIdentity**. When connecting to SQL, this account uses the Windows computer login to access the Operations Manager databases. To improve security, it is recommended that you change the Web Console identity to a dedicated Active Directory user account.
 
-The following are the steps for changing Web Console identity:
+To change the Web Console identity, follow these steps:
 
 1. Create a user account in Active Directory to use as the Web Console identity.
 
@@ -240,25 +240,25 @@ The following are the steps for changing Web Console identity:
    
 1. Open **SQL Server Management Studio** and connect to the SQL instance that hosts the OperationsManager database.
 
-1. Expand **Security**, right-click **Logins** and click **New Login**.
+1. Expand **Security**, right-click **Logins** and select **New Login**.
 
-1. For **Login name**, enter the username of the account you created in Step 1 using <domain>\<user> format. Alternatively, click **Search** and search Active Directory for the account.
+1. For **Login name**, enter the username of the account you created in Step 1 using *domain*\\*user* format. Alternatively, select **Search** and search Active Directory for the account.
 
-1. Click **User Mapping**.
+1. Select **User Mapping**.
 
-1. Click to select the **OperationsManager** database, make sure that the **public** role membership is selected in the lower pane and click **OK**.
+1. Select the **OperationsManager** database, make sure that the **public** role membership is selected in the lower pane and select **OK**.
 
 1. Repeat steps 4-8 for the OperationsManagerDW database.
 
-1. On the Web Console server, open **IIS Manager** and click **Application Pools**.
+1. On the Web Console server, open **IIS Manager** and select **Application Pools**.
 
-1. Right click **DefaultAppPool** and click **Advanced Settings**.
+1. Right-click **DefaultAppPool** and select **Advanced Settings**.
 
-1. In Advanced Settings, find the **Identity** setting and click the three dots next to **ApplicationPoolIdentity**.
+1. In Advanced Settings, find the **Identity** setting and select the three dots next to **ApplicationPoolIdentity**.
 
-1. Click **Custom account** and click **Set**.
+1. Select **Custom account** and select **Set**.
 
-1. Enter the username (in <domain>\<user> format) and password of the account you created in Step 1 and click **OK** three times to return to the main IIS Manager window.
+1. Enter the username in *domain*\\*user* format and the password of the account you created in Step 1 and select **OK** three times to return to the main IIS Manager window.
 
 1. Repeat Steps 11-14 for the following application pools:
 
