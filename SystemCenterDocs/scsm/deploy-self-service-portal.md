@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/22/2024
+ms.date: 10/22/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment
