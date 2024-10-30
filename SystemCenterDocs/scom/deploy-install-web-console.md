@@ -220,6 +220,60 @@ The following steps are for configuring permission inheritance for the System Ce
 
 All information and content at https://techcommunity.microsoft.com/t5/system-center-blog/running-the-web-console-server-on-a-standalone-server-using/ba-p/340345 is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
 
+## Configure the IIS Application Pool Identity
+
+By default, the IIS application pool identity of the Web Console is the built-in account named **ApplicationPoolIdentity**. When connecting to SQL, this account uses the Windows computer login to access the Operations Manager databases. To improve security, it is recommended that you change the Web Console identity to a dedicated Active Directory user account.
+
+To change the Web Console identity, follow these steps:
+
+1. Create a user account in Active Directory to use as the Web Console identity.
+
+1. Add the user to the local Administrators group on the Web Console server.
+
+1. Open **Local Security Policy** on the Web Console server, expand **Security Settings** > **Local Policies** > **User Rights Assignment** and grant the following rights to the user:
+
+   1. **Log on as a service**
+   
+   1. **Generate security audits**
+   
+   1. **Replace a process level token**
+   
+1. Open **SQL Server Management Studio** and connect to the SQL instance that hosts the OperationsManager database.
+
+1. Expand **Security**, right-click **Logins** and select **New Login**.
+
+1. For **Login name**, enter the username of the account you created in Step 1 using *domain*\\*user* format. Alternatively, select **Search** and search Active Directory for the account.
+
+1. Select **User Mapping**.
+
+1. Select the **OperationsManager** database, make sure that the **public** role membership is selected in the lower pane and select **OK**.
+
+1. Repeat steps 4-8 for the OperationsManagerDW database.
+
+1. On the Web Console server, open **IIS Manager** and select **Application Pools**.
+
+1. Right-click **DefaultAppPool** and select **Advanced Settings**.
+
+1. In Advanced Settings, find the **Identity** setting and select the three dots next to **ApplicationPoolIdentity**.
+
+1. Select **Custom account** and select **Set**.
+
+1. Enter the username in *domain*\\*user* format and the password of the account you created in Step 1 and select **OK** three times to return to the main IIS Manager window.
+
+1. Repeat Steps 11-14 for the following application pools:
+
+   1. MonitoringView
+   
+   1. OperationsManager
+   
+   1. OperationsManagerAppMonitoring
+   
+1. Return to **SQL Server Management Studio** and connect to the SQL instance that hosts the OperationsManager database.
+
+1. Expand **Security** > **Logins,** find the computer account of the Web Console server and delete or disable the login.
+
+1. Repeat Steps 16-17 for the OperationsManagerDW database.
+
 ## Next steps
 
 - To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).
