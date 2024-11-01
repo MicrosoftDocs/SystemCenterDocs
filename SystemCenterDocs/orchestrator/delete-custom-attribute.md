@@ -14,10 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 05/16/2024
+ms.date: 11/01/2024
 ---
 # Delete Custom Attribute
-
 
 The Delete Custom Attribute activity is used in a runbook to delete a custom attribute from an existing message.
 

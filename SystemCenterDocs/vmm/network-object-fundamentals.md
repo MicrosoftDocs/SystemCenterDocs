@@ -40,7 +40,7 @@ The following VMM networking objects are used to build the basic networking infr
 
 ::: moniker-end
 
-   - [One connected logical network](network-logical-2022.md)
+   - [One connected logical network](network-logical.md)
 
      A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs.
 

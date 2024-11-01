@@ -2,7 +2,7 @@
 title: Update Object
 description: The Update Object activity is used to change the values of one or more properties of an existing object.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 08/22/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Update Object
-
-
 
 The Update Object activity is used to change the values of one or more properties of an existing object.
 

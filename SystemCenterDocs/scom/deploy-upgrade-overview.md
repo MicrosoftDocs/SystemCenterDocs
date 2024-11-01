@@ -1,20 +1,28 @@
 ---
 ms.assetid: 9d47d9ef-9a95-4b05-817f-75b3039f6e2c
-title: Upgrading System Center Operations Manager
+title: Upgrade System Center Operations Manager
 description: This guide provides information on how to upgrade to Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Upgrading System Center Operations Manager
+# Upgrade System Center Operations Manager
 
+::: moniker range="sc-om-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This section of the Deployment Guide provides information about how to upgrade to System Center 2025 from an older supported version. You can upgrade to Operations Manager 2025 from Operations Manager versions 2022.
+
+It's assumed in this guide that you're performing an upgrade from System Center 2022.
+
+::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
@@ -79,6 +87,13 @@ There are several options for upgrade:
 
 ::: moniker-end
 
+::: moniker range="sc-om-2025"
+
+3. If you want to maintain your earlier version of Operations Manager (2022) Operations Manager environment, you can install version 2025 in parallel, upgrade your agents, and multi-home them between both management groups.
+
+::: moniker-end
+
+
 ::: moniker range="sc-om-2019"
 
 ## Supported coexistence
@@ -116,6 +131,25 @@ System Center 2022 - Operations Manager supports an in-place upgrade from the fo
 > Although it is possible to upgrade from 2019 RTM directly to 2022, it's highly recommended to be on Update Rollup 3 or higher before upgrading.
 
 ::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+## Supported coexistence
+
+The following table lists the scenarios in which coexistence between Operations Manager 2025 and earlier versions of Operations Manager is supported.
+
+| Version | Management Group Coexistence |
+|:--- |:---|
+|  Operations Manager 2022 RTM to the latest update| Yes|
+
+## In-place upgrade
+
+System Center 2025 - Operations Manager supports an in-place upgrade from the following versions:
+
+- System Center 2022
+
+::: moniker-end
+
 
 ::: moniker range=">=sc-om-2019"
 
@@ -164,6 +198,17 @@ The following upgrade path supports customers in an Operations Manager scenario 
 Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md#upgrade-agents-in-a-parallel-deployment).
 
 ::: moniker-end
+
+::: moniker range="sc-om-2025"
+
+## High level overview of upgrading agents and running two environments
+
+The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2025 Operations Manager on your upgrade path are fully capable of working with native Operations Manager 2022 functionality.
+
+Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md#upgrade-agents-in-a-parallel-deployment).
+
+::: moniker-end
+
 
 ::: moniker range=">=sc-om-2019"
 

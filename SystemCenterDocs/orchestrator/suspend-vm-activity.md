@@ -13,11 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Suspend VM Activity
-
-
 
 The Suspend VM activity is used in a runbook to suspend a virtual machine that has already been added to a VMware vSphere server and is already running. This, for example, enables the runbook to suspend a running virtual machine before backing it up. Then use the Start VM activity to start it again.
 
@@ -43,11 +41,9 @@ No optional properties are provided for this activity.
 | Enter standby mode | Indicates whether the Enter standby mode option was selected. | Boolean   |
 | VM Path   | The path to the virtual machine that was suspended.   | String   |
 
-## Configuring the Suspend VM Activity
+## Configure the Suspend VM Activity
 
-The following procedure describes the steps required to configure a Suspend VM activity.
-
-### To configure the Suspend VM Activity
+To configure the Suspend VM Activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Suspend VM** activity to the active runbook.
 

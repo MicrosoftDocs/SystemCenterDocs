@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 08/20/2024
+ms.date: 11/01/2024
 title: What's supported and what isn't for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -45,13 +45,21 @@ This article summarizes some of the common support information you might need wh
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2025"
+
+- As an Azure virtual machine - You can install DPM 2025 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+
+- As a Windows virtual machine in VMware - You can install DPM 2025 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+
+::: moniker-end
+
 ### Sharing a library between different DPM versions isn't supported
 
 **Issue**: Different versions of DPM (for example, DPM 2019 and DPM 2022) can't function as clients sharing the same library.
 
 **Workaround**: None. All DPM servers sharing a library must be running the same version of DPM.
 
-::: moniker range="<=sc-dpm-2016"
+::: moniker range="sc-dpm-2016"
 
 ### Upgrading System Center 2010 directly to System Center 2016 isn't supported
 
@@ -198,11 +206,11 @@ Both scenarios are unsupported. You can only select one of the following options
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor and ask them to [verify tape library compatibility](identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor and ask them to [verify tape library compatibility](identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -222,6 +230,10 @@ Protection of SQL Server database stored on Cluster Shared Volume (CSV) is suppo
 
 ::: moniker range="sc-dpm-2022"
 Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2022](what-s-new-in-dpm.md?view=sc-dpm-2022&preserve-view=true).
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2025](what-s-new-in-dpm.md?view=sc-dpm-2025&preserve-view=true).
 ::: moniker-end
 
 **Workaround**: None.
@@ -309,6 +321,25 @@ Protection of SQL Server database stored on Cluster Shared Volume (CSV) is suppo
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2025"
+
+  >[!NOTE]
+  >- Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to back up the volume with deduplication enabled.
+  >- We've identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these and will update this section as soon as we've a fix available.
+
+| Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support |
+|---|---|---|---|
+| Windows Server 2025 | Windows Server 2025 | DPM 2025 | Y |
+| Windows Server 2022 | Windows Server 2025 | DPM 2025 | Y |
+| Windows Server 2019 | Windows Server 2025 | DPM 2025 | Y\* |
+| Windows Server 2025 | Windows Server 2022 | DPM 2025 | N |
+| Windows Server 2022 | Windows Server 2022 | DPM 2025 | Y |
+| Windows Server 2019 | Windows Server 2022 | DPM 2025 | Y\* |
+
+- *Deduped NTFS volumes in Windows Server 2019 Protected Servers are non-deduplicated during restore.
+
+::: moniker-end
+
 ### Windows deduplication isn't always supported on volumes hosting .VHD or .VHDX files
 
 **Issue**: Dedupe support
@@ -373,6 +404,16 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2025"
+
+### Support parameters for protecting computers running client operating systems with DPM
+
+**Issue**: Support for backing up Windows clients with DPM.
+
+**Workaround**: DPM 2025 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2025&preserve-view=true).
+
+::: moniker-end
+
 ### Support for protecting computers running server operating systems with DPM
 
 ::: moniker range="<=sc-dpm-2016"
@@ -405,6 +446,13 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2025"
+**Issue**: Support for backing up Windows Server with DPM.
+
+**Workaround**: DPM 2025 can back up Windows Server 2025, 2022, and 2019. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2025&preserve-view=true).
+
+::: moniker-end
+
 ### DPM can't protect SOFS shares
 
 **Issue**: DPM can't protect shares on SOFS.
@@ -428,6 +476,16 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ### File Server end-user recovery (EUR) isn't available when using Modern Backup Storage (MBS)
 
 **Description**: File Server end user recovery (EUR) isn't available with DPM 2022 since it uses Modern Backup Storage.
+
+**Workaround**: None. File Server EUR isn't supported when using MBS.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+### File Server end-user recovery (EUR) isn't available when using Modern Backup Storage (MBS)
+
+**Description**: File Server end user recovery (EUR) isn't available with DPM 2025 since it uses Modern Backup Storage.
 
 **Workaround**: None. File Server EUR isn't supported when using MBS.
 
@@ -570,6 +628,16 @@ These workloads can be running on a single server or in a cluster configuration.
 ### AlwaysOn support
 
 **Issue**: DPM 2022 protects SharePoint farm SQL Server databases that have AlwaysOn enabled.
+
+**Workaround**: None.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+### AlwaysOn support
+
+**Issue**: DPM 2025 protects SharePoint farm SQL Server databases that have AlwaysOn enabled.
 
 **Workaround**: None.
 

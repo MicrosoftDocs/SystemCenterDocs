@@ -2,7 +2,7 @@
 title: Get Collection Member activity
 description: Describes the configurable properties for the Get Collection Member activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/21/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -67,21 +67,21 @@ above:
 | SMSID | Configuration Manager unique ID. |
 |  Suppress Auto Provision | True or False. When set to true and when this resource belongs to a collection configured for automatic provisioning, it prevents the resource from being automatically provisioned by an Out of Band service point. |
 
-## Configuring the Get Collection Member activity
+## Configure the Get Collection Member activity
 
-1.  From the **Activities** pane, drag a **Get Collection Member**
+1. From the **Activities** pane, drag a **Get Collection Member**
     activity to the active runbook.
 
-2.  Double-click the **Get Collection Member** activity icon. The
+2. Double-click the **Get Collection Member** activity icon. The
     **Properties** dialog opens.
 
-3.  Configuring the **Details** tab:
+3. Configuring the **Details** tab:
 
-    1.  In the **Connection** section, select the ellipsis button
+    1. In the **Connection** section, select the ellipsis button
         **(...)**, and then select the Configuration Manager server
         connection that you want to use for this activity. Select **OK**.
 
-    2.  In the **Fields** section, enter a value for each of the
+    2. In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
         select the ellipsis **(...)** button next to the text box to browse
         for a value.
@@ -90,4 +90,4 @@ above:
         value of the property from the data output by a previous
         activity in the runbook.
 
-4.  Select **Finish**.
+4. Select **Finish**.

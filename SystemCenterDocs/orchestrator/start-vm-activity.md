@@ -13,11 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Start VM Activity
-
-
 
 The Start VM activity is used in a runbook to start a virtual machine that has been added to a VMware vSphere server and isn't already running. The Start VM activity waits for the guest operating system to complete its boot up sequence before continuing to the next object in the runbook. This allows the runbook to start a virtual machine after it has been paused by the Suspend VM activity.
 
@@ -43,11 +41,9 @@ The activity publishes all the data from the required and optional properties in
 |:---|:---|:---|
 | VM Path | The path of the virtual machine that was started. | String   |
 
-## Configuring the Start VM Activity
+## Configure the Start VM Activity
 
-The following procedure describes the steps required to configure a Start VM activity.
-
-### To configure the Start VM activity
+To configure the Start VM activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Start VM** activity to the active runbook.
 

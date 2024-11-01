@@ -7,15 +7,13 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 12/14/2017
+ms.date: 11/01/2024
 ms.subservice: orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
 ms.custom: UpdateFrequency3
 ---
 
 # Standard activities
-
-
 
 Standard Activities enable you to create runbooks to automate your data center procedures.
 

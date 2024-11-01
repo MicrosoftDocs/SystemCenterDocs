@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Update Deployment Status
-
-
 
 The Update Deployment Status activity initiates a change in deployment status. It's part of the Azure Deployments category activity.
 
@@ -63,7 +61,6 @@ There are no optional properties for this runbook activity.
 | Wait for Completion   | Whether to wait for this operation to complete in Microsoft Azure before moving on to the next activity. | Boolean   |
 | Deployment Status   | The new status of the deployment.   | String   |
 
-
 ## Other Resources
 
-[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
+[Use Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

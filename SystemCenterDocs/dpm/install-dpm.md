@@ -1,7 +1,7 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
 ms.topic: article
-ms.date: 08/20/2024
+ms.date: 11/01/2024
 title: Install Data Protection Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -29,12 +29,27 @@ Here's what you need to do to set up System Center Data Protection Manager (DPM)
 
 ## Setup prerequisites
 
+::: moniker range="<=sc-dpm-2022"
+
 |Environment |Details or specifics for the installation|
 |----------- |-----------------------------------------|
 |Basic DPM installation prerequisites|Many components are needed on the DPM server. These are installed automatically during setup:<br /><br />-   .NET Framework 4.0 or 4.5 (DPM 2016/2019); .NET Framework 3.5 required for SQL installation (Before SQL 2016); .NET Framework 4.6 required for SQL installation (SQL 2016 onwards). Install with Add Features in Server Manager if it doesn't install automatically.<br />-   Windows Installer 4.5 (or later). Installed as part of the operating system but can also be installed as an administrator from \<root directory\>DPM\setup\redist\WindowsInstaller\INSTMSI45.EXE.<br />-   Microsoft Visual C++ 2012 Redistributable; Microsoft Visual C++ 2010 Redistributable; Microsoft Visual C++ 2008 Redistributable. <br />-   PowerShell 3.0 (included with Windows Server 2012 R2 or 2012). <br /> - Microsoft Hyper-V Management PowerShell|
 |DPM database<br />|- [Verify supported SQL server versions](prepare-environment-for-dpm.md#sql-server-database) for the DPM database. <br /> - You can install the SQL server on the DPM server or a remote server.<br /> - Have SQL installed locally or remotely before you install DPM. <br />- If you plan to use SQL server 2022 with DPM 2022, ensure to install [SQL server Native Client (SQLNCLI)](https://www.microsoft.com/download/details.aspx?id=50402) on the SQL server machine before you install DPM 2022 RTM as SQL 2022 doesn't ship with SQLNCLI.  <br />- If you install the database remotely, the computer running the remote instance must be in the same domain and time zone as the DPM server. <br />- If you're running a remote database, make sure to run the SQL Prep tool on the remote SQL computer before installing DPM. <br />- SQL server can be standalone or running in a cluster.<br />- If the SQL server is clustered, Reporting server and SQL server should be on different computers. <br />- You can't run a SQL server on a domain controller. <br />- You can't use a SQL server Always-On deployment.<br />- If you deploy DPM as an Azure virtual machine (VM), use an Azure VM running SQL server as a remote SQL server instance. You can't use an on-premises SQL server in this deployment, and the Azure SQL database isn't currently supported.|
 |DPM installed as Hyper-V VM|If you're installing DPM as a Hyper-V virtual machine note that:<br /><br /><ul><li>Virtual DPM installation isn't for scaled-up environments. Instead, use direct attach/SAN-based storage. Performance can suffer in scaled-up (Hyper-V on CSV) environments using VHDX files compared to SAN. Therefore, for scaled-up environments, we don't recommend using VHDX.</li><li>There's no size limit for VHDX.<br />    Both fixed and dynamically expanding VHDX files are supported.</li><li>Both VHD and VHDX files are supported in the DPM storage pool.<br />     A virtual DPM installation is required to support adding virtual hard drives to the storage pool.</li><li>For dynamic and fixed virtual hard drives, VHD and VHDX files are supported on remote SMB shares.</li><li>From DPM 2012 R2 with Update 3 onwards, you can run DPM as a Hyper-V virtual machine with support for tape drives using synthetic FC.</li><li>For high-availability DPM storage, virtual hard drives should be placed on scaled-out file servers (SOFS).  SMB 3.0 is required for scaled-out file servers.</li><li>Virtual DPM installations don't support:<br /><br /><ul><li>Windows 2012 Storage Spaces or virtual hard drives built on top of storage spaces.<br /> Local or remote hosting of VHDX files on Windows 2012 storage space also isn't supported.</li><li>Enabling Disk Dedupe on volumes hosting virtual hard drives.</li><li>Windows 2012 iSCSI targets (which use virtual hard drives) as a DPM storage pool.</li><li>NTFS compression for volumes hosting VHD files used in the DPM storage pool.</li><li>BitLocker on volumes hosting VHD files used for the storage pool.</li><li>A native 4K sector size of physical disks for VHDX files in the DPM storage pool.</li><li>Virtual hard drives hosted on Windows 2008 servers.</li></ul></li></ul>|
 |DPM as an Azure virtual machine|<ul><li>DPM is supported on any Azure IaaS virtual machine of size A2 or higher.<br />     You can select a size for the DPM virtual machine using the [DPM Azure virtual machine size calculator](/samples/browse/?redirectedfrom=TechNet-Gallery).  When you set up the virtual machine create an instance in the Standard compute tier because the maximum IOPS per attached disk are higher in the Standard tier than in the Basic tier.</li><li>DPM can protect the workloads as detailed here in the [protection matrix](~/dpm/dpm-protection-matrix.md).</li><li>DPM can protect workloads that run across multiple Azure cloud services that have the same Azure virtual network and Azure subscription.<br /> DPM running as an Azure virtual machine can't protect on-premises data.</li><li>Use a separate storage account for the DPM virtual machine, because there are size and IOPS limits on a storage account that might impact the performance of the DPM virtual machine if shared with other running virtual machines. The DPM virtual machine and the protected workloads should be part of the same Azure virtual network.</li><li>The number of disks that can be used for the target storage (DPM storage pool) is limited by the size of the virtual machine (maximum of 16).  The Azure Backup agent running on the DPM server needs temporary storage for its use (a cache location), and data restored from the cloud (local staging area). Note that each Azure virtual machine comes with some temporary disk storage. This is available to the user as the volume D:\\. The local staging area needed by Azure Backup can be configured to reside in D:\\, and the cache location can be placed on C:\\. In this way, no space needs to be carved out from the data disks attached to the DPM virtual machine.</li><li>You store data on Azure disks attached to the DPM virtual machine. Once attached to the virtual machine, the disks and the storage space are managed from within DPM. The amount of data you can back up depends on the number and size of disks attached to the DPM virtual machine. There's a maximum number of disks that can be attached to each Azure virtual machine (4 disks for A2V2, A4V2, and A8V2), and the maximum size of each disk (1 TB). This determines the total backup storage pool available. We recommend you retain data for one day on the DPM-attached Azure disk, and store data older than one day in the Azure Backup service. This provides data storage for a longer retention range and allows you to protect a larger amount of data by offloading it to Azure Backup.</li><li>If you want to scale your deployment you have the following options:<br /><br /><ul><li>Option 1, Scale up: Increase the size of the DPM virtual machine from A2V2, A4V2, A8V2, and add more local storage.</li><li>Option 2, Offload data: Send older data to Azure Backup, and retain only the newest data on the storage attached to the DPM server.</li><li>Option 3, Scale-out: Add more DPM servers to protect the workloads.</li></ul></li><li>The maximum number of protected workloads for each DPM virtual machine size is summarized in Table A below.</li></ul>|
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+|Environment |Details or specifics for the installation|
+|----------- |-----------------------------------------|
+|Basic DPM installation prerequisites|Many components are needed on the DPM server. These are installed automatically during setup:<br /><br />-   .NET Framework 4.0 or 4.5 (DPM 2016/2019); .NET Framework 3.5 required for SQL installation (Before SQL 2016); .NET Framework 4.6 required for SQL installation (SQL 2016 onwards). Install with Add Features in Server Manager if it doesn't install automatically.<br />-   Windows Installer 4.5 (or later). Installed as part of the operating system but can also be installed as an administrator from \<root directory\>DPM\setup\redist\WindowsInstaller\INSTMSI45.EXE.<br />-   Microsoft Visual C++ 2015 Redistributable; Microsoft Visual C++ 2013 Redistributable; Microsoft Visual C++ 2012 Redistributable. <br />-   PowerShell 3.0 (included with Windows Server 2012 R2 or 2012). <br /> - Microsoft Hyper-V Management PowerShell|
+|DPM database<br />|- [Verify supported SQL server versions](prepare-environment-for-dpm.md#sql-server-database) for the DPM database. <br /> - You can install the SQL server on the DPM server or a remote server.<br /> - Have SQL installed locally or remotely before you install DPM. <br />- If you plan to use SQL server 2022 with DPM 2025, ensure to install [SQL OLEDB 19](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16#download). <br />- If you install the database remotely, the computer running the remote instance must be in the same domain and time zone as the DPM server. <br />- If you're running a remote database, make sure to run the SQL Prep tool on the remote SQL computer before installing DPM. <br />- SQL server can be standalone or running in a cluster.<br />- If the SQL server is clustered, Reporting server and SQL server should be on different computers. <br />- You can't run a SQL server on a domain controller. <br />- You can't use a SQL server Always-On deployment.<br />- If you deploy DPM as an Azure virtual machine (VM), use an Azure VM running SQL server as a remote SQL server instance. You can't use an on-premises SQL server in this deployment, and the Azure SQL database isn't currently supported.|
+|DPM installed as Hyper-V VM|If you're installing DPM as a Hyper-V virtual machine note that:<br /><br /><ul><li>Virtual DPM installation isn't for scaled-up environments. Instead, use direct attach/SAN-based storage. Performance can suffer in scaled-up (Hyper-V on CSV) environments using VHDX files compared to SAN. Therefore, for scaled-up environments, we don't recommend using VHDX.</li><li>There's no size limit for VHDX.<br />    Both fixed and dynamically expanding VHDX files are supported.</li><li>Both VHD and VHDX files are supported in the DPM storage pool.<br />     A virtual DPM installation is required to support adding virtual hard drives to the storage pool.</li><li>For dynamic and fixed virtual hard drives, VHD and VHDX files are supported on remote SMB shares.</li><li>DPM can run as a Hyper-V virtual machine with support for tape drives using synthetic FC.</li><li>For high-availability DPM storage, virtual hard drives should be placed on scaled-out file servers (SOFS).  SMB 3.0 is required for scaled-out file servers.</li><li>Virtual DPM installations don't support:<br /><br /><ul><li>Windows 2012 Storage Spaces or virtual hard drives built on top of storage spaces.<br /> Local or remote hosting of VHDX files on Windows 2012 storage space also isn't supported.</li><li>Enabling Disk Dedupe on volumes hosting virtual hard drives.</li><li>Windows 2012 iSCSI targets (which use virtual hard drives) as a DPM storage pool.</li><li>NTFS compression for volumes hosting VHD files used in the DPM storage pool.</li><li>BitLocker on volumes hosting VHD files used for the storage pool.</li><li>A native 4K sector size of physical disks for VHDX files in the DPM storage pool.</li><li>Virtual hard drives hosted on Windows 2008 servers.</li></ul></li></ul>|
+|DPM as an Azure virtual machine|<ul><li>DPM is supported on any Azure IaaS virtual machine of size A2 or higher.<br />     You can select a size for the DPM virtual machine using the [DPM Azure virtual machine size calculator](/samples/browse/?redirectedfrom=TechNet-Gallery).  When you set up the virtual machine create an instance in the Standard compute tier because the maximum IOPS per attached disk are higher in the Standard tier than in the Basic tier.</li><li>DPM can protect the workloads as detailed here in the [protection matrix](~/dpm/dpm-protection-matrix.md).</li><li>DPM can protect workloads that run across multiple Azure cloud services that have the same Azure virtual network and Azure subscription.<br /> DPM running as an Azure virtual machine can't protect on-premises data.</li><li>Use a separate storage account for the DPM virtual machine, because there are size and IOPS limits on a storage account that might impact the performance of the DPM virtual machine if shared with other running virtual machines. The DPM virtual machine and the protected workloads should be part of the same Azure virtual network.</li><li>The number of disks that can be used for the target storage (DPM storage pool) is limited by the size of the virtual machine (maximum of 16).  The Azure Backup agent running on the DPM server needs temporary storage for its use (a cache location), and data restored from the cloud (local staging area). Note that each Azure virtual machine comes with some temporary disk storage. This is available to the user as the volume D:\\. The local staging area needed by Azure Backup can be configured to reside in D:\\, and the cache location can be placed on C:\\. In this way, no space needs to be carved out from the data disks attached to the DPM virtual machine.</li><li>You store data on Azure disks attached to the DPM virtual machine. Once attached to the virtual machine, the disks and the storage space are managed from within DPM. The amount of data you can back up depends on the number and size of disks attached to the DPM virtual machine. We recommend you retain data for one day on the DPM-attached Azure disk, and store data older than one day in the Azure Backup service. This provides data storage for a longer retention range and allows you to protect a larger amount of data by offloading it to Azure Backup.</li><li>If you want to scale your deployment you have the following options:<br /><br /><ul><li>Option 1, Scale up: Increase the size of the DPM virtual machine from A2V2, A4V2, A8V2, and add more local storage.</li><li>Option 2, Offload data: Send older data to Azure Backup, and retain only the newest data on the storage attached to the DPM server.</li><li>Option 3, Scale-out: Add more DPM servers to protect the workloads.</li></ul></li><li>The maximum number of protected workloads for each DPM virtual machine size is summarized in Table A below.</li></ul>|
+
+::: moniker-end
 
 Table A
 
@@ -44,7 +59,7 @@ Table A
 |A4V2|40|150 GB|Net 10% churn|
 |A8V2|60|200 GB|Net 15% churn|
 
-:::moniker range="sc-dpm-2022"
+:::moniker range=">=sc-dpm-2022"
 >[!NOTE]
 >As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 :::moniker-end
@@ -58,7 +73,7 @@ Table A
 
 You'll need to set up a SQL Server database if:
 
-::: moniker range="<= sc-dpm-2019"
+::: moniker range="<=sc-dpm-2019"
 
 - You're running DPM 2019, 2016
 
@@ -67,6 +82,12 @@ You'll need to set up a SQL Server database if:
 ::: moniker range="sc-dpm-2022"
 
 - You're running DPM 2022, 2019, 2016
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+- You're running DPM 2025, 2022, 2019
 
 ::: moniker-end
 
@@ -97,10 +118,38 @@ To set up a SQL Server database:
 ::: moniker range="sc-dpm-2022"
 
 7. On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
-
+    
     If you use SQL Server 2022, you need to install [SQL Server Native Client (SQLNCLI)](https://www.microsoft.com/download/details.aspx?id=50402) on the SQL Server 2022 machine.
 
     SQLNCLI is a pre-requisite for DPM 2022 RTM installation but isn't available in SQL Server 2022. Hence, after SQL Server 2022 installation you would also need to install SQL Server Native Client separately on the SQL Server machine.  After that, ensure that you install DPM 2022 RTM and update to UR1 or later, which supports SQL Server 2022 as the DPM Database and uses OLEDB 18.0 instead of SQLNCLI.
+
+8. If you're installing SQL Server on a remote computer, do the following:
+
+    - Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
+
+    - Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
+
+        - Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
+
+        - To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
+            The report server listens for HTTP requests on port 80.
+
+        - Enable RPC on the remote SQL Server.
+
+        - The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
+
+        - Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
+
+        - You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+7. On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+    
+    After the SQL installation is completed, ensure to install [SQL OLEDB 19](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16#download).
+
 
 8. If you're installing SQL Server on a remote computer, do the following:
 
@@ -159,7 +208,7 @@ To set up a SQL Server database:
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
 > [!NOTE]
 >- With SQL 2017 and later, SSRS doesn't get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
@@ -176,7 +225,13 @@ To set up a SQL Server database:
 >[!IMPORTANT]
 > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDNs).
 
+::: moniker range="<=sc-dpm-2022"
 1. If required, extract the DPM 2016.exe (for DPM 2016)/DPM 2019.exe (for DPM 2019) file onto the machine on which you want to run DPM. To do this, run the exe file, and on the **Welcome** screen, select **Next**. In **Select Destination Location**, specify where you want to extract the installation files to. In **Ready to Extract**, select **Extract**. After the extraction finishes, go to the specified location and run **Setup.exe**.
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+1. Extract the SCDPM_2025.exe file onto the machine on which you want to run DPM. To do this, run the exe file, and on the **Welcome** screen, select **Next**. In **Select Destination Location**, specify where you want to extract the installation files to. In **Ready to Extract**, select **Extract**. After the extraction finishes, go to the specified location and run **Setup.exe**.
+::: moniker-end
 
 2. On the **Welcome** page of DPM Setup, select **Next**. On the **License Terms** page, accept the agreement > **OK**.
 
@@ -192,6 +247,7 @@ Run an unattended install as follows:
 
 1. Ensure that you have the prerequisites installed before you start.
 
+::: moniker range="<=sc-dpm-2022"
 2. On the remote SQL Server, ensure that .NET Framework 3.5 (for SQL 2016), 4.0, or 4.5 (SQL 2017) is installed on the Windows server before installing SQL.
 
 3. Use the following code to ensure that the firewall is opened:
@@ -238,6 +294,58 @@ Run an unattended install as follows:
 6. After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`.
    - `[media location]` indicates where you'll run setup.exe from.
    - `<path>` is the location of the .ini file.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+2. Use the following code to ensure that the firewall is opened:
+
+   ```
+   netsh advfirewall firewall add rule name=DPM_SqlServr.exe dir=in action=allow program=\"%PROGRAMFILES%\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Binn\sqlservr.exe\" profile=Domain   
+
+   netsh advfirewall firewall add rule name=DPM_UDP_Port_1434 dir=in action=allow protocol=UDP localport=1434 profile=Domain 
+   ```
+
+3. Install SQL Server on the local or remote server.
+
+4. Copy the following text into Notepad (or another text editor) and save the script on the DPM server as DPMSetup.ini. You use the same script whether the SQL Server Instance is installed on the DPM server or a remote server.
+
+   >[!IMPORTANT]
+   > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDNs).
+
+   When creating DPMSetup.ini, replace the text inside <> with values from your environment. Lines beginning with the hash (#) are commented out, and the DPM setup uses the default values. To specify your values, type the values within the <> and delete the hash (#).
+
+   ```
+   [OPTIONS] 
+   UserName = <A user with credentials to install DPM> 
+   CompanyName = <Name of your company> 
+   ProductKey = <The 25-character DPM product key in the format xxxxx-xxxxx-xxxxx-xxxxx-xxxxx> 
+   # SqlAccountPassword = <The password to the DPM$ account> 
+   # StandardAgentLicenses = <No. of standard agent licenses you have purchased> 
+   # EnterpriseAgentLicenses = <No. of enterprise agent licenses you have purchased> 
+   # ProgramFiles = C:\Program Files\Microsoft Data Protection Manager 
+   # DatabaseFiles = C:\Program Files\Microsoft Data Protection Manager\DPM\DPMDB 
+   # IntegratedInstallSource = <Location of the DPM setup files> 
+   # ---For using a remote SQL Server Instance --- 
+   # SQLMachineName = <Name of the SQL Server computer> OR <SQL Cluster Name> 
+   # SQLInstanceName = <Name of the instance of SQL Server that Setup must use> 
+   # SQLMachineUserName = <Username that Setup must user> 
+   # SQLMachinePassword = <Password for the username Setup must use> 
+   # SQLMachineDomainName = <Domain to which the SQL Server computer is attached> 
+   # ---For using a reporting SQL Server Instance in case of DPMDB in SQL Cluster --- 
+   # ReportingMachineName = <Name of the SQL Server computer> 
+   # ReportingInstanceName = SSRS 
+   # ReportingMachineUserName = <Username that Setup must user> 
+   # ReportingMachinePassword = <Password for the username Setup must use> 
+   # ReportingMachineDomainName = <Domain to which the SQL Server computer is attached> 
+   ```
+
+5. After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`.
+   - `[media location]` indicates where you'll run setup.exe from.
+   - `<path>` is the location of the .ini file.
+
+::: moniker-end
 
 ## <a name="BKMK_DC"></a>Install DPM on a domain controller
 
@@ -311,6 +419,8 @@ If you want to set up DPM on an RODC, you'll need to do a couple of steps before
         where ScheduleId = @refresh_jobid
         ```
 
+::: moniker range="<=sc-dpm-2022"
+
 ## Upgrade SQL 2016 to SQL 2017
 
 You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
@@ -328,6 +438,32 @@ You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, 
 
 6. Change the Reporting Service virtual directory name to ReportServer_SSRS.
 7. Configure the Reporting Service, and restore the database and encryption keys.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+## Upgrade to SQL 2022
+
+The following procedure lists the steps to upgrade SQL 2022.
+
+>[!NOTE]
+> With DPM 2025 only SQL 2022 is supported as a DPM database in both new installation and upgrade scenarios of DPM.
+
+Before upgrading from a version older than SQL 2017 to SQL 2022, ensure to
+
+1. Back up the Reporting database on the SQL Server.
+2. Back up the Encryption Keys.
+3. Clean up the reporting folders on the local machine.
+4. Install the Reporting Service.
+5. On the DPM server, change the following DPM registry key to the new reporting instance name.
+
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\DB\<*ReportingInstanceName*>
+
+6. Change the Reporting Service virtual directory name to ReportServer_SSRS.
+7. Configure the Reporting Service, and restore the database and encryption keys.
+
+::: moniker-end
 
 ## Next steps
 

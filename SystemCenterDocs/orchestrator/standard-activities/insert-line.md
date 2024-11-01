@@ -2,7 +2,7 @@
 title: Insert Line 
 description: This article describes inserts lines into a text file on a line number that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,12 +17,12 @@ manager: jsuri
 ---
 # Insert Line
 
-
 The Insert Line activity inserts lines into a text file on a line number that you specify.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
-## Configuring the Insert Line Activity  
+## Configure the Insert Line Activity
+
  Before you configure the Insert Line File activity, you need to determine the following:  
 
 - The name of the file you want to insert text into.  
@@ -42,7 +42,8 @@ Use the following information to configure the Insert Line activity.
 |**Text**|Enter the text that you want to insert into the file.|  
 |**Line number**|Enter the line number where the text will be inserted.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

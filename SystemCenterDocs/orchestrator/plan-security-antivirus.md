@@ -5,7 +5,7 @@ description: Describes some antivirus exclusions that relate to Orchestrator. Th
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/30/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

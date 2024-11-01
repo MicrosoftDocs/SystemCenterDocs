@@ -1,11 +1,11 @@
 ---
 title: Enable service logon
-description: the article provides information about how to enable service logon as log on type.
+description: This article provides information about how to enable service logon as log on type.
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -36,7 +36,7 @@ This account is used to run the *MonitoringHost.exe* process (runs all the Workf
 >We recommend that you provide service logon permission to the accounts used by various SM connectors (AD, OM, SCO, CM, VMM, exchange connectors).
 >Service reporting account and analysis services accounts don't require service logon permission.
 
-## To enable service logon
+## Enable service logon as log on type
 
 You can grant service logon permission through a domain policy or a local group policy.
 

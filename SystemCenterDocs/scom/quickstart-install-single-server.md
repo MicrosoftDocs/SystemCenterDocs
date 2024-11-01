@@ -1,30 +1,30 @@
 ---
-title: Walkthrough Installing Operations Manager on a Single Server
+title: Install Operations Manager on a Single Server
 description: This article describes how to install all Operations Manager roles in a simple single-server deployment.
 ms.custom: engagement-fy23, UpdateFrequency.5
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 
-# Installing Operations Manager on a Single Server
+# Install Operations Manager on a Single Server
 
 
 
 This walkthrough guides you through an installation of System Center - Operations Manager on a single server. The features installed include the following:
 
--   Management server
+- Management server
 
--   Operations console
+- Operations console
 
--   Web console
+- Web console
 
--   Reporting server
+- Reporting server
 
 ## Prerequisites
 
@@ -32,9 +32,9 @@ You must ensure that your server meets the minimum supported configurations for 
 
 **Required SQL Server Components**
 
--   Database Engine Services - Full-Text and Semantic Extractions for Search (as called in SQL Server 2012 and later)
+- Database Engine Services - Full-Text and Semantic Extractions for Search (as called in SQL Server 2012 and later)
 
--   Reporting Services - Native
+- Reporting Services - Native
 
 ### Install the single server management group configuration
 
@@ -47,6 +47,16 @@ Follow these steps to install the single server management group configuration:
 3. On the **Getting Started**, **Select features to install** page, select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, select **Expand all**, or expand the buttons next to each feature. Then select **Next**.
 
 4. On the **Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
+
+::: moniker range="sc-om-2025"
+
+   > [!NOTE]
+   > For System Center 2025 - Operations Manager, the default path is:
+   > ```
+   > C:\Program Files\Microsoft System Center\Operations Manager
+   > ```
+
+::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
@@ -168,14 +178,14 @@ Follow these steps to install the single server management group configuration:
 
 Follow these steps to install the Operations Manager single server management group configuration from the command prompt:
 
-1.  Sign in to the server by using an account that has local administrative credentials.
+1. Sign in to the server by using an account that has local administrative credentials.
 
-2.  Open the command prompt by using the **Run as Administrator** option.
+2. Open the command prompt by using the **Run as Administrator** option.
 
     > [!NOTE]
     > Setup.exe requires administrator privileges because the Setup process requires access to system processes that can only be used by a local administrator.
 
-3.  Change the path to where the System Center Operations Manager setup.exe file is located, and run the following command.
+3. Change the path to where the System Center Operations Manager setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
@@ -214,11 +224,11 @@ Follow these steps to install the Operations Manager single server management gr
     /UseMicrosoftUpdate: [0|1]
     ```
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 ## Removed dependency on LocalSystem account
 
-Operations Manager 2022 provides the following changes:
+Operations Manager provides the following changes:
 
 - LocalSystem is no longer used internally instead of the Default Action Account.
 This was used earlier for APM configuration, Privileged Monitoring Account, RunAs Profile fallback. There was an association created for the Validate Subscription Account RunAs Profile.  
@@ -232,37 +242,37 @@ This was used earlier for APM configuration, Privileged Monitoring Account, RunA
 
 Follow these steps to confirm the health of the management server:
 
-1.  In the Operations console, select the **Administration** workspace.
+1. In the Operations console, select the **Administration** workspace.
 
-2.  In **Device Management**, select **Management Servers**. In the results pane, you should see the Management server that you installed with a green check mark in the **Health State** column.
+2. In **Device Management**, select **Management Servers**. In the results pane, you should see the Management server that you installed with a green check mark in the **Health State** column.
 
 ### Confirm the health of Operations Manager reports
 
 Follow these steps to confirm the health of Operations Manager reports:
 
-1.  In the Operations console, in the navigation pane, select the **Reporting** button.
+1. In the Operations console, in the navigation pane, select the **Reporting** button.
 
     > [!NOTE]
     > After the initial deployment, it can take up to 30 minutes for the reports to appear.
 
-2.  Select **Microsoft ODR Report Library**, and then double-click any of the reports listed. The selected report is generated and displays in a new window.
+2. Select **Microsoft ODR Report Library**, and then double-click any of the reports listed. The selected report is generated and displays in a new window.
 
     By default, you should see the following reports:
 
-    -   **Alerts Per Day**
+    - **Alerts Per Day**
 
-    -   **Instance Space**
+    - **Instance Space**
 
-    -   **Management Group**
+    - **Management Group**
 
-    -   **Management Packs**
+    - **Management Packs**
 
-    -   **Most Common Alerts**
+    - **Most Common Alerts**
 
     > [!NOTE]
     > Selecting the Management Packs report is particularly useful at this point because it provides you with a full inventory of the management packs that have been installed on your server.
 
-3.  Close the report window.
+3. Close the report window.
 
 ## Next steps
 

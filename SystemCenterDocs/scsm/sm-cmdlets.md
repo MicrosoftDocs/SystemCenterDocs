@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -22,9 +22,9 @@ Before you can run any command in the Windows PowerShell command-line interface 
 
 The Service Manager cmdlets are implemented in the following two modules:
 
--   **System.Center.Service.Manager**. This module is imported automatically every time a Service Manager Windows PowerShell session is opened.
+- **System.Center.Service.Manager**. This module is imported automatically every time a Service Manager Windows PowerShell session is opened.
 
--   **Microsoft.EnterpriseManagement.Warehouse.Cmdlets**. This module must be imported manually.
+- **Microsoft.EnterpriseManagement.Warehouse.Cmdlets**. This module must be imported manually.
 
 ## Get started with Service Manager cmdlets
 
@@ -32,9 +32,9 @@ Windows PowerShell is a Windows command-line shell that includes an interactive 
 
 The Service Manager cmdlets are delivered in two modules that are listed below. In Service Manager, these cmdlet modules aren't installed in the typical path that is listed in the $env:PSModulePath variable. Therefore, if you run the `Get-Module -List` cmdlet, the Service Manager modules aren't listed.
 
--   Administrator cmdlets: The System.Center.Service.Manager module that contains the cmdlets that are needed for common administrative tasks.
+- Administrator cmdlets: The System.Center.Service.Manager module that contains the cmdlets that are needed for common administrative tasks.
 
--   Data warehouse cmdlets: The Microsoft.EnterpriseManagement.Warehouse.Cmdlets module that contains the cmdlets that are needed for operating on the Service Manager data warehouse.
+- Data warehouse cmdlets: The Microsoft.EnterpriseManagement.Warehouse.Cmdlets module that contains the cmdlets that are needed for operating on the Service Manager data warehouse.
 
 The data warehouse cmdlets operate on the data warehouse database, and you can run them on both the  Service Manager management server or the data warehouse management server.
 
@@ -42,15 +42,15 @@ Data returned from Windows PowerShell command might contain more information tha
 
 The following procedures help you to get started with Service Manager cmdlets.
 
-### To open a Service Manager Windows PowerShell session from the Service Manager console
+### Open a Service Manager Windows PowerShell session from the Service Manager console
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  On the **Tasks** pane, select **Start PowerShell Session**.
+2. On the **Tasks** pane, select **Start PowerShell Session**.
 
 The administrator cmdlet module is automatically pre-imported in this session.
 
-### To open a Service Manager Windows PowerShell session from Windows
+### Open a Service Manager Windows PowerShell session from Windows
 
 1. On the computer that hosts the Service Manager management server, on the taskbar, select **Start**, point to **All Programs**, and select **Microsoft System Center**.
 
@@ -58,34 +58,34 @@ The administrator cmdlet module is automatically pre-imported in this session.
 
 The administrator cmdlet module is automatically pre-imported in this session.
 
-### To list all Service Manager cmdlets
+### List all Service Manager cmdlets
 
-1.  Open a Service Manager Windows PowerShell session.
+1. Open a Service Manager Windows PowerShell session.
 
-2.  To list the cmdlets that are included in the administrator module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
+2. To list the cmdlets that are included in the administrator module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
 
-    ```
+    ```powershell
     Get-Command -module System.Center.Service.Manager
     ```
 
-3.  To list the cmdlets that are included in the data warehouse module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
+3. To list the cmdlets that are included in the data warehouse module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
 
-    ```
+    ```powershell
     Get-Command -module Microsoft.EnterpriseManagement.Warehouse.Cmdlets
     ```
 
-### To get Help for a cmdlet
+### Get Help for a cmdlet
 
-1.  Open a Service Manager Windows PowerShell session.
+1. Open a Service Manager Windows PowerShell session.
 
-2.  You can now access the on-the-box Help, or you can use the `-online` parameter to access the most up-to-date online Help:
-    -   On-the-box Help: Type the following command. Replace *cmdlet-name* with the name of the cmdlet that you want to get help for, for example, **Import-SCSMManagementPack**:
+2. You can now access the on-the-box Help, or you can use the `-online` parameter to access the most up-to-date online Help:
+    - On-the-box Help: Type the following command. Replace *cmdlet-name* with the name of the cmdlet that you want to get help for, for example, **Import-SCSMManagementPack**:
 
         ```
         Get-help <cmdlet-name> -detailed
         ```
 
-    -   Online, up-to-date Help: Type the following command, and then press ENTER:
+    - Online, up-to-date Help: Type the following command, and then press ENTER:
 
         ```
         Get-help <cmdlet-name> -online
@@ -210,7 +210,6 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Start-SCDWJob|Starts a Data Warehouse job.|
 |Unregister-SCDWManagememtPack||
 |Unregister-SCDWSource|Unregisters a data source from the data warehouse.|
-
 
 ## Next steps
 

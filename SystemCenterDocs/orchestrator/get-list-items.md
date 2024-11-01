@@ -2,7 +2,7 @@
 title: Get List Items
 description: The Get List Items activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/21/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 ---
 
 # Get List Items
-
-
 
 The **Get List Items** activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list.
 

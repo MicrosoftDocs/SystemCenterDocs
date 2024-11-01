@@ -2,7 +2,7 @@
 title: IBM Tivoli Netcool OMNIbus Activities
 description: This integration pack adds the IBM Tivoli Netcool/OMNIbus category to the Activity pane in the Runbook Designer.
 ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # IBM Tivoli Netcool OMNIbus Activities
-
-
 
 This integration pack adds the IBM Tivoli Netcool/OMNIbus category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
@@ -40,7 +38,7 @@ The following configuration instructions apply to all the activities in this int
 
 Each activity can have a set of properties that define the configuration of that activity. These properties can includes how the activity connects to other activities or how the activity performs its actions. You can view or modify an activity's properties when the activity is in the runbook window.
 
-#### To configure the properties for an activity
+#### Configure the properties for an activity
 
 1.  Double-click the activity name.
 
@@ -64,7 +62,7 @@ This tab contains the properties that are specific to the activity.
 
 All activities in this integration pack have a **Connection Name** property at the top of the **Details** tab. This property specifies the connection to the IBM Tivoli Netcool/OMNIbus server.
 
-#### To configure the Connection Name property
+#### Configure the Connection Name property
 
 -   Select the ellipsis **(...)** button next to the **Name** field, and then select the applicable connection name.
 
@@ -99,7 +97,7 @@ Activities produce a new set of data every time they run. The **Flatten** featur
 
 Some activities take a limited amount of time to complete. If the activity doesn't complete within a specified time, it can appear to stop responding. You can configure the number of seconds to wait for the completion of an activity. After this wait period, a platform event is sent and the issue is reported. Additionally, you can choose whether to generate a platform event if the activity returns a failure.
 
-#### To send a notification when an activity fails
+#### Send a notification when an activity fails
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of time before generating a notification.
 
@@ -111,7 +109,7 @@ For more information about events, see the [Activity Events](/previous-versions/
 
 Published data is the method that one activity shares information with other activities in a runbook. It's the data produced by the actions of an activity. This data is published to an internal data bus unique for each runbook. Activities in a workflow can subscribe to the published data of another activity and use it in their configuration. Link conditions also use published data to add decision-making capabilities to a runbook.<br>An activity can only subscribe to published data from activities that run before it in the runbook. You can use published data to populate the property values needed by an activity.
 
-#### To use published data
+#### Use published data
 
 1.  Right-click the **Property Value** box, select **Subscribe**, and select **Published Data**.
 

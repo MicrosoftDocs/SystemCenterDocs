@@ -4,7 +4,7 @@ description: This article provides the list of release builds for System Center 
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 08/06/2024
+ms.date: 11/01/2024
 ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 author: PriskeyJeronika-MS
@@ -14,6 +14,12 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # System Center – Data Protection Manager build versions
+
+::: moniker range="sc-dpm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+::: moniker-end
 
 This article describes how to determine your current Microsoft System Center – Data Protection Manager version number and the corresponding update rollup (UR). Each update rollup release has a link to a support article describing the update rollup changes as well as links to the package downloads.
 
@@ -32,6 +38,16 @@ This article describes how to determine your current Microsoft System Center –
 ::: moniker-end
 
 ## Build versions
+
+::: moniker range="sc-dpm-2025"
+
+The following table lists the build versions for Data Protection Manager 2025.
+
+| Build Number | KB |Release Date | Description |
+| --- | --- |-------------| --- |
+|10.25.25.0| |November 2024 |General Availability|
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 
@@ -88,4 +104,5 @@ The following table lists the build versions for Data Protection Manager 2016.
 ::: moniker-end
 
 ## Next steps
+
 [See what's New in DPM](what-s-new-in-dpm.md)

@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Ser
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/06/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
@@ -13,6 +13,16 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Upgrade System Center Service Manager
+
+::: moniker range="=sc-sm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article provides the upgrade information for System Center 2025 - Service Manager (SM)
+
+[!INCLUDE [upgrade-to-sm-2025.md](../includes/upgrade-to-sm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="=sc-sm-2022"
 

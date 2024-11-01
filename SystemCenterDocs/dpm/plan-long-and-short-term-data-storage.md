@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 03/07/2024
+ms.date: 11/01/2024
 title: Prepare data storage
 ms.subservice: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
@@ -19,15 +19,16 @@ A major part of your System Center Data Protection Manager (DPM) deployment will
 
 - [Add Modern Backup Storage](add-storage.md)
 
--   [Short and long-term storage](#BKMK_Storage)
+- [Short and long-term storage](#BKMK_Storage)
 
--   [Cloud storage with Azure Backup](#BKMK_Azure)
+- [Cloud storage with Azure Backup](#BKMK_Azure)
 
--   [Disk storage](#BKMK_Disk)
+- [Disk storage](#BKMK_Disk)
 
--   [Tape storage](#BKMK_Tape)
+- [Tape storage](#BKMK_Tape)
 
 ## <a name="BKMK_Storage"></a>Short and long-term storage overview
+
 In DPM, you'll need to select short and long-term storage for backed up data.
 
 |Storage|Short-term|Long-term|Characteristics|
@@ -37,31 +38,31 @@ In DPM, you'll need to select short and long-term storage for backed up data.
 |Disk|All data backed-up to DPM can be stored on disk for short-term storage (D2D)|No long-term storage on disk.|-   Disks provide a quick method of data backup and recovery. It's useful for data that has a low RPO and thus needs to be recovered quickly after failure.<br />-   Disks can provide redundancy using disk technologies such as RAID.<br />-   Maximum disk retention is 448 days.<br />-   Disk backup has no impact on running workloads.|
 
 ## <a name="BKMK_Azure"></a>Prepare cloud storage (Azure Backup)
+
 You can back up protected DPM data to Azure using the Azure Backup service. This is useful in a couple of scenarios:
 
--   **DPM is deployed on-premises as a physical server or virtual machine** - If you deploy DPM as a physical server or as an on-premises Hyper-V virtual machine you can back up data with Azure Backup in addition to backing data up to disk and tape.
+- **DPM is deployed on-premises as a physical server or virtual machine** - If you deploy DPM as a physical server or as an on-premises Hyper-V virtual machine you can back up data with Azure Backup in addition to backing data up to disk and tape.
 
--   **DPM is deployed as a virtual machine in Azure** - If DPM is deployed as an Azure virtual machine (possible from System Center 2012 R2 with Update 3) you can back up data to Azure disks attached to the DPM Azure virtual machine and then offload data storage with backup to Azure Backup.
-
+- **DPM is deployed as a virtual machine in Azure** - If DPM is deployed as an Azure virtual machine (possible from System Center 2012 R2 with Update 3) you can back up data to Azure disks attached to the DPM Azure virtual machine and then offload data storage with backup to Azure Backup.
 
 When you set up a protection group in DPM, you select the disk for short-term storage and then you enable online backup to Azure.  Note that:
 
--   There are a number of prerequisites and limitations. [Read more](/azure/backup/backup-azure-dpm-introduction#requirements-and-limitations).
+- There are a number of prerequisites and limitations. [Read more](/azure/backup/backup-azure-dpm-introduction#requirements-and-limitations).
 
--   You'll need to set up Azure Backup before you enable backup to the cloud for a protection group in the DPM console. [Learn](/azure/backup/backup-azure-dpm-introduction) how to set up Azure Backup with DPM.
-
+- You'll need to set up Azure Backup before you enable backup to the cloud for a protection group in the DPM console. [Learn](/azure/backup/backup-azure-dpm-introduction) how to set up Azure Backup with DPM.
 
 ## <a name="BKMK_Disk"></a>Prepare disk storage
+
 DPM backs up data to disk for short-term storage by saving data to the DPM storage pool. The storage pool is the set of disks and volumes on which the DPM  server stores the recovery points for the protected data. Before you can store data on a disk, you'll need at least one disk or volume in a storage pool. You can use any of the following for the storage pool:
 
 > [!NOTE]
 > Network-attached storage (NAS)  and thin provisioned virtual disks are not supported for use in the DPM storage pool.
 
--   Direct attached storage (DAS)
+- Direct attached storage (DAS)
 
--   Fiber Channel storage area network (SAN)
+- Fiber Channel storage area network (SAN)
 
--   iSCSI storage device or SAN
+- iSCSI storage device or SAN
 
 ## Best practices for the storage pool
 
@@ -74,6 +75,7 @@ DPM backs up data to disk for short-term storage by saving data to the DPM stora
 |Custom values|In some cases you might want to use a custom volume, where a custom volume isn't in the storage pool and is used to store the replica and recovery points for a protection group member. For example, you might want a greater amount of control over storage for specific data sources or critical data needs to be stored using a high-performance LUN on a SAN.<br /><br />Any volume that's attached to the DPM server can be selected as a custom volume, except the volume that contains the system and program files. To use custom volumes for a protection group member, two custom volumes must be available: one volume to store the replica and one volume to store the recovery points.<br /><br />DPM can't manage the space in custom volumes. If DPM alerts you that a custom replica volume or recovery point volume is running out of space, you'll need to manually change the size of the custom volume by using Disk Management.<br /><br />You can't change the selection of storage pool or custom volume for a protection group member after the group is created. To do this you'll need to stop protecting the data source and then add it again to a protection group.|
 
 ### Compare disk options
+
 **Disk**
 
 |Disk Configuration|Capacity|Cost|Reliability|Performance/scalability|
@@ -85,77 +87,78 @@ DPM backs up data to disk for short-term storage by saving data to the DPM stora
 |RAID 10|1|1|4|4|
 
 ### Configure the storage pool
+
 After you have at least one disk set up in accordance with the prerequisites, you can add it to the storage pool.
 
--   In DPM Administrator Console, select **Management** > **Disks**.
+- In DPM Administrator Console, select **Management** > **Disks**.
 
--   Select **Add** on the tool ribbon, and in **Add Disks to Storage Pool** select the disk you want to add from the **Available disks** list.
+- Select **Add** on the tool ribbon, and in **Add Disks to Storage Pool** select the disk you want to add from the **Available disks** list.
 
 After the storage pool is set up, when you create protection groups that include data sources you want to back up, you'll be able to configure the disk as short-term storage for that backed up data.
 
 ## <a name="BKMK_Tape"></a>Prepare tape backup
 
--   DPM can back up to tape libraries or standalone tape drives.
+- DPM can back up to tape libraries or standalone tape drives.
 
--   You'll need to attach your tape libraries or standalone tape drives to the DPM server with SAN or SCSI. Tape devices must be compatible with DPM. Read about [Identify compatible tape libraries](~/dpm/identify-compatible-tape-libraries.md).
+- You'll need to attach your tape libraries or standalone tape drives to the DPM server with SAN or SCSI. Tape devices must be compatible with DPM. Read about [Identify compatible tape libraries](~/dpm/identify-compatible-tape-libraries.md).
 
--   Get a list of [Compatible Tape Libraries](./dpm-compatible-tape-libraries.md).
+- Get a list of [Compatible Tape Libraries](./dpm-compatible-tape-libraries.md).
 
--   The tape capacity you need depends on the size of the protected data and the number of tape backup jobs you'll run. To plan for the number of tapes required for a protection group, multiply the required backup frequency by the retention range.
+- The tape capacity you need depends on the size of the protected data and the number of tape backup jobs you'll run. To plan for the number of tapes required for a protection group, multiply the required backup frequency by the retention range.
 
--   For standalone tape drives, DPM does the following for each protection group:
+- For standalone tape drives, DPM does the following for each protection group:
 
-    -   Appends all short-term backups to a single tape.
+    - Appends all short-term backups to a single tape.
 
-    -   Appends all long-term backups to a single tape that is different from the short-term backup tape.
+    - Appends all long-term backups to a single tape that is different from the short-term backup tape.
 
-    -   When a tape fills up, DPM raises an alert to add a new free tape.
+    - When a tape fills up, DPM raises an alert to add a new free tape.
 
--   For tape libraries:
+- For tape libraries:
 
-    -   DPM can allocate two or more tapes for each protection group. All the data sources in a protection group will always append to the same tape for both short-term and long-term protection.
+    - DPM can allocate two or more tapes for each protection group. All the data sources in a protection group will always append to the same tape for both short-term and long-term protection.
 
-    -   If the protection group settings specify the allocation of more than one drive the data sources will be split across the tape. For example, if there are five data sources and a drive with a maximum limit of two sources, DPM might write three data sources on one tape and two on another. This might cause an uneven distribution of data among tapes, depending on the data size, any other scheduled backup tape jobs, and the number of tape drives available at the time.
+    - If the protection group settings specify the allocation of more than one drive the data sources will be split across the tape. For example, if there are five data sources and a drive with a maximum limit of two sources, DPM might write three data sources on one tape and two on another. This might cause an uneven distribution of data among tapes, depending on the data size, any other scheduled backup tape jobs, and the number of tape drives available at the time.
 
--   Long-term backups to tape allocate a tape for each full backup job so that each long-term backup recovery point is always on a new tape.
+- Long-term backups to tape allocate a tape for each full backup job so that each long-term backup recovery point is always on a new tape.
 
--   Available free tapes are decremented as tapes are allocated to long-term or short-term backup. If no new tape is available for a long-term backup an alert is issued.
+- Available free tapes are decremented as tapes are allocated to long-term or short-term backup. If no new tape is available for a long-term backup an alert is issued.
 
--   If short-term backups are configured to use tape and the full backup option is used, each full backup job will require a new free tape.
+- If short-term backups are configured to use tape and the full backup option is used, each full backup job will require a new free tape.
 
--   If you trigger two different **create recovery point (tape)** actions for two protection group members, DPM creates two tape backup jobs, and two tapes will be required. If you trigger a single **create recovery point (tape)** action for two protection group members, a single tape is used. This ensures that data for selected protection group members are collocated for ad-hoc backups to the same tape.
+- If you trigger two different **create recovery point (tape)** actions for two protection group members, DPM creates two tape backup jobs, and two tapes will be required. If you trigger a single **create recovery point (tape)** action for two protection group members, a single tape is used. This ensures that data for selected protection group members are collocated for ad-hoc backups to the same tape.
 
 #### Install and configure tape devices
 
-1.  Attach tape drive - Follow the instructions provided with the tape device to attach and install it on the DPM server.
+1. Attach tape drive - Follow the instructions provided with the tape device to attach and install it on the DPM server.
 
-2.  Verify serial numbers - Check that the medium changer and tape drives have serial numbers. DPM uses these for identification. Installed tape devices are listed in Device Manager.
+2. Verify serial numbers - Check that the medium changer and tape drives have serial numbers. DPM uses these for identification. Installed tape devices are listed in Device Manager.
 
-3.  Add firewall exceptions - Add firewall exceptions so that DPM can detect the tape:
-
-    C:\Program Files\Microsoft System Center 2012\DPM\SQL\SSQL10_50.MSDPMV4RC\MSSQL\Binn\sqlservr.exe
-    C:\Program Files (x86)\Microsoft SQL Server\90\Shared\sqlbrowser.exe
-    C:\Program Files\Microsoft System Center 2012\DPM\DPM\bin\DPMLA.exe
-
-4.  Add firewall exceptions - Add firewall exceptions so that DPM can detect the tape:
+3. Add firewall exceptions - Add firewall exceptions so that DPM can detect the tape:
 
     C:\Program Files\Microsoft System Center 2012\DPM\SQL\SSQL10_50.MSDPMV4RC\MSSQL\Binn\sqlservr.exe
     C:\Program Files (x86)\Microsoft SQL Server\90\Shared\sqlbrowser.exe
     C:\Program Files\Microsoft System Center 2012\DPM\DPM\bin\DPMLA.exe
 
-5.  Detect manually - DPM automatically detects tape devices that are physically attached to it and they're displayed in the Libraries workspace of the Management view. If a device isn't displayed, you can detect it manually with the Rescan button. This might take a few minutes. After you rescan, check that the details displayed in Device Manager and the tape library are the same
+4. Add firewall exceptions - Add firewall exceptions so that DPM can detect the tape:
 
-6.  Set up tape sharing - Set up tape sharing if you want to share a single tape library across multiple DPM servers. Note that:
+    C:\Program Files\Microsoft System Center 2012\DPM\SQL\SSQL10_50.MSDPMV4RC\MSSQL\Binn\sqlservr.exe
+    C:\Program Files (x86)\Microsoft SQL Server\90\Shared\sqlbrowser.exe
+    C:\Program Files\Microsoft System Center 2012\DPM\DPM\bin\DPMLA.exe
 
-    -   The tape library is typically a collection of tape drives that automatically mount and dismount tape media.
+5. Detect manually - DPM automatically detects tape devices that are physically attached to it and they're displayed in the Libraries workspace of the Management view. If a device isn't displayed, you can detect it manually with the Rescan button. This might take a few minutes. After you rescan, check that the details displayed in Device Manager and the tape library are the same
 
-    -   The tape library must be in a storage area network (SAN) environment.
+6. Set up tape sharing - Set up tape sharing if you want to share a single tape library across multiple DPM servers. Note that:
 
-7.  The library server is a computer on which DPM is installed, the library-sharing command has been run, and the medium changer is enabled.
+    - The tape library is typically a collection of tape drives that automatically mount and dismount tape media.
+
+    - The tape library must be in a storage area network (SAN) environment.
+
+7. The library server is a computer on which DPM is installed, the library-sharing command has been run, and the medium changer is enabled.
      A library client is a computer on which DPM is installed, the library-sharing command has been run, and the medium changer is not enabled.
     We recommend that the system configuration of the library server computer and all library client computers be as similar as possible and that you do not configure any protection groups on the library server.
 
-8.  All DPM servers using a shared library must use a similar SQL Server setup for hosting DPM databases. For example, they should all use a local instance of the DPM database or all of them should use a remote instance. You cannot have some DPM servers using a local instance and others using a remote instance.
+8. All DPM servers using a shared library must use a similar SQL Server setup for hosting DPM databases. For example, they should all use a local instance of the DPM database or all of them should use a remote instance. You cannot have some DPM servers using a local instance and others using a remote instance.
 
 After you've set up tapes, when you create a protection group including data sources you want to protect, you'll be able to select tape for long-term and short-term data storage.
 
@@ -163,35 +166,34 @@ If you want to use a shared library for multiple DPM servers continue to the nex
 
 #### Set up tape sharing
 
-1.  On the computer that will be the library server for the shared library, use Device Manager to enable the medium changer.
+1. On the computer that will be the library server for the shared library, use Device Manager to enable the medium changer.
 
     On each library client computer, ensure that the medium changer is not enabled.
 
-2.  Enable the Named Pipes protocol for the SQL Server instances of the library server and library client computers. Then restart the SQL service.
+2. Enable the Named Pipes protocol for the SQL Server instances of the library server and library client computers. Then restart the SQL service.
 
-3.  To configure the DPM servers to use a shared library, on each library client computer, open an elevated Command Prompt window, and then run the following commands:
+3. To configure the DPM servers to use a shared library, on each library client computer, open an elevated Command Prompt window, and then run the following commands:
 
-    -   `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
+    - `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
 
-    -   `AddLibraryServerForDpm.exe -DpmServerWithLibrary <FQDN of library server>` where '\<FQDN of library server\>' is the fully qualified domain name of the library server.
+    - `AddLibraryServerForDpm.exe -DpmServerWithLibrary <FQDN of library server>` where '\<FQDN of library server\>' is the fully qualified domain name of the library server.
 
-4.  On the library server computer, open an elevated Command Prompt window, and then run the following commands one time for each library client. For example, if your library server supports three library clients, you must run this command three times on the library server.
+4. On the library server computer, open an elevated Command Prompt window, and then run the following commands one time for each library client. For example, if your library server supports three library clients, you must run this command three times on the library server.
 
-    -   `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
+    - `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
 
-    -   `AddLibraryServerForDpm.exe - ShareLibraryWithDpm <FQDN of library client>` where `<FQDN of library client>` is the fully qualified domain name of the library client.
+    - `AddLibraryServerForDpm.exe - ShareLibraryWithDpm <FQDN of library client>` where `<FQDN of library client>` is the fully qualified domain name of the library client.
 
-5.  Before you run the following commands on all library client computers, ensure the SQL Server (MSDPM2012) and SQL Server Agent (MSDPM2012) services use a domain user account as the logon account. Also, ensure the domain account is a member of the local Administrator group on all computers that share the library. Then, on each library client computer, open an elevated Command Prompt window and run the following commands.
+5. Before you run the following commands on all library client computers, ensure the SQL Server (MSDPM2012) and SQL Server Agent (MSDPM2012) services use a domain user account as the logon account. Also, ensure the domain account is a member of the local Administrator group on all computers that share the library. Then, on each library client computer, open an elevated Command Prompt window and run the following commands.
 
-    -   `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
+    - `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
 
-    -   `SetSharedDpmDatabase -DatabaseName <SqlServer\Instance\DatabaseName> [-DoNotMoveData]` where `<SQLServer\Instance\Databasename>` is the database name of the library server. You can find the name in the **About DPM** window in the DPM Administrator console.
+    - `SetSharedDpmDatabase -DatabaseName <SqlServer\Instance\DatabaseName> [-DoNotMoveData]` where `<SQLServer\Instance\Databasename>` is the database name of the library server. You can find the name in the **About DPM** window in the DPM Administrator console.
 
-6.  In DPM Administrator Console on the library server, perform a rescan. Then perform a rescan or refresh on each of the library client computers.
+6. In DPM Administrator Console on the library server, perform a rescan. Then perform a rescan or refresh on each of the library client computers.
 
     The quickest way to see all media on all of the DPM servers is to perform a rescan on each, followed by a detailed inventory. Next, on any one of the servers, mark a number of media as free, and then perform a refresh on the other servers.
     After you've configured library sharing, you can use the shared tape library as if it were attached to each DPM server.
-
 
 ## Next steps
 

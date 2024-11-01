@@ -5,7 +5,7 @@ description: This article details the release builds in Virtual Machine Manager
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/27/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,6 +21,17 @@ This article describes how to determine your current Microsoft System Center –
 
 > [!NOTE]
 > All System Center Virtual Machine Manager update rollups are cumulative. This means, you do not need to apply the URs in order; you can always apply the latest update. If you have deployed System Center – Virtual Machine Manager and never applied an update rollup, you can proceed to install the latest one available.
+
+:::moniker range="sc-vmm-2025"
+
+## Virtual Machine Manager 2025 build versions
+The following table lists the release history for Virtual Machine Manager 2025.
+
+| Build Number | KB | Release Date | Description |
+| --- | --- |--- |--- |
+|10.25.1200.0|n/a| November 2024 | General Availability |
+
+:::moniker-end
 
 ::: moniker range="sc-vmm-2019"
 

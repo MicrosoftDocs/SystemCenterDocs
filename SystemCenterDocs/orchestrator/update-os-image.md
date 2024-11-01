@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Update OS Image
-
-
 
 The **Update OS Image** activity updates an operating system image that is in your image repository. It's part of the **Azure Virtual Machine Images** category activity.
 
@@ -48,7 +46,6 @@ There are no optional properties for this runbook activity.
 | Media Link   | Specifies the location of the blob in Microsoft Azure blob store where the media for the image is located. | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Microsoft Azure before moving on to the next activity.   | Boolean   |
 | Request ID   | The unique identifier of the request to Microsoft Azure.   | String   |
-
 
 ## Other Resources
 

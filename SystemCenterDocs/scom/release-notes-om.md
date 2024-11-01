@@ -5,7 +5,7 @@ description: This article details the known issues and workarounds in Operations
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,10 +14,19 @@ ms.custom: UpdateFrequency.5, engagement-fy24
 
 # Release notes for System Center Operations Manager
 
+::: moniker range="sc-om-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Operations Manager.  
+
+[!INCLUDE [release-notes-om-2025.md](../includes/release-notes-om-2025.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 This article lists the release notes for System Center 2019 - Operations Manager.  This article also includes the release notes for Operations Manager 2019 UR1, UR2, UR4, and UR5.
-
 
 [!INCLUDE [release-notes-om-2019.md](../includes/release-notes-om-2019.md)]
 
@@ -40,5 +49,6 @@ This article lists the release notes for System Center 2016 - Operations Manager
 ::: moniker-end
 
 
-## Next steps
+## Next step
+
 [What's new in Operations Manager](whats-new-in-om.md).

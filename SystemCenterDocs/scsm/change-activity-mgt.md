@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
@@ -32,16 +32,16 @@ Change request templates store commonly used settings and apply the information 
 
 ### Create a messaging change request template
 
-1.  In the Service Manager console, select **Library**.
-2.  In the **Library** pane, select **Templates**.
-3.  In the **Tasks** pane, under **Templates**, select **Create Template**.
-4.  In the **Create Template** dialog, enter a name for the template in the **Name** box. 
-    For example, enter **Changes to Messaging Infrastructure Template**.
-5.  In the **Description** box, enter a description for the template.
-    For example, enter **Use this change template when you want to modify the messaging infrastructure**.
-6.  Select **Browse** to select a class.
-7.  In the **Select a Class** dialog, select **Change Request**, and select **OK**.
-8.  In the **Create Template** dialog, under **Management pack**, select **Service Manager Change Management Configuration Library**, and select **OK**.
+1. In the Service Manager console, select **Library**.
+2. In the **Library** pane, select **Templates**.
+3. In the **Tasks** pane, under **Templates**, select **Create Template**.
+4. In the **Create Template** dialog, enter a name for the template in the **Name** box.
+   For example, enter **Changes to Messaging Infrastructure Template**.
+5. In the **Description** box, enter a description for the template.
+   For example, enter **Use this change template when you want to modify the messaging infrastructure**.
+6. Select **Browse** to select a class.
+7. In the **Select a Class** dialog, select **Change Request**, and select **OK**.
+8. In the **Create Template** dialog, under **Management pack**, select **Service Manager Change Management Configuration Library**, and select **OK**.
 9. In the **Change Request Template** form, on the **General** tab, in the **Description** box, enter a description for the change.
     For example, enter **Use when modifying the Exchange Server software infrastructure**.
 10. In the **Area** box, select the area that is affected by the change request. 
@@ -57,21 +57,21 @@ Change request templates store commonly used settings and apply the information 
 
 ### Create a priority-modifying template
 
-1.  In the Service Manager console, select **Library**.
-2.  In the **Library** pane, select **Templates**.
-3.  In the **Tasks** pane, select **Create Template** under **Templates**.
-4.  In the **Create Template** dialog, enter a name for the template in the **Name** box. For example, enter **Set Standard Change Requests to Low Priority**.
-5.  In the **Description** box, enter a description for the template.
-    For example, enter **Use this change template to automatically set the priority for standard change requests to Low**.
-6.  Select **Browse** to add a class.
-7.  In the **Choose Class** dialog, select **Change Request**, and select **OK**.
-8.  In the **Create Template** dialog, under **Management pack**, select **Service Manager Change Management Configuration Library**, and select **OK**.
+1. In the Service Manager console, select **Library**.
+2. In the **Library** pane, select **Templates**.
+3. In the **Tasks** pane, select **Create Template** under **Templates**.
+4. In the **Create Template** dialog, enter a name for the template in the **Name** box. For example, enter **Set Standard Change Requests to Low Priority**.
+5. In the **Description** box, enter a description for the template.
+   For example, enter **Use this change template to automatically set the priority for standard change requests to Low**.
+6. Select **Browse** to add a class.
+7. In the **Choose Class** dialog, select **Change Request**, and select **OK**.
+8. In the **Create Template** dialog, under **Management pack**, select **Service Manager Change Management Configuration Library**, and select **OK**.
 9. In the **Change Request Template** form, on the **General** tab, in the **Priority** list, select **Low**.
 10. Select **OK**.
 
 ### Validate template creation
 
--   Verify that the new templates were created. For example, verify that **Changes to Messaging Infrastructure Template** and **Set Standard Change Requests to Low Priority** appear in the **Templates** view. You might have to press F5 to make the new change templates appear.
+- Verify that the new templates were created. For example, verify that **Changes to Messaging Infrastructure Template** and **Set Standard Change Requests to Low Priority** appear in the **Templates** view. You might have to press F5 to make the new change templates appear.
 
 ## Create a manual activity template
 
@@ -81,19 +81,19 @@ In the following procedure, you will create a manual activity template named **S
 
 ### Create a manual activity template
 
-1.  In the Service Manager console, select **Library**.
-2.  In the **Library** pane, select **Templates**.
-3.  In the **Tasks** pane, in the **Templates** area, select **Create Template**.
-4.  In the **Create Template** dialog, in the **Name** box, enter a name for the template. For example, enter **Set *named users* as the Activity Implementer**.
-5.  In the **Description** box, enter a description for the template.
-6.  Select **Browse** to choose a class.
-7.  In the **Choose Class** dialog, select **Manual Activity**, and select **OK**.
-8.  In the **Create Template** dialog, under **Management pack**, select **Service Manager Activity Management Configuration Library**, and select **OK**.
+1. In the Service Manager console, select **Library**.
+2. In the **Library** pane, select **Templates**.
+3. In the **Tasks** pane, in the **Templates** area, select **Create Template**.
+4. In the **Create Template** dialog, in the **Name** box, enter a name for the template. For example, enter **Set *named users* as the Activity Implementer**.
+5. In the **Description** box, enter a description for the template.
+6. Select **Browse** to choose a class.
+7. In the **Choose Class** dialog, select **Manual Activity**, and select **OK**.
+8. In the **Create Template** dialog, under **Management pack**, select **Service Manager Activity Management Configuration Library**, and select **OK**.
 9. In the **Manual Activity Template** form, on the **General** tab, select the ellipsis button (**...**) next to **Activity Implementer**, select a user, and select **OK**.
 
 ### Validate that the template was created
 
--   In the **Templates** view, verify that the new template was created. You might have to press F5 to make the new manual activity template appear.
+- In the **Templates** view, verify that the new template was created. You might have to press F5 to make the new manual activity template appear.
 
 ## Configure general change settings
 
@@ -102,22 +102,22 @@ Use the following procedures to configure settings to specify change request pre
 > [!NOTE]
 > Revising the change request prefix doesn't affect existing change requests.
 
-### To configure general change settings
+To configure general change settings, follow these steps:
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Change Request Settings**.
-4.  In the **Tasks** pane, in the **Change Request Settings** area, select **Properties**.
-5.  In the **Change Request Settings** dialog, you can make the following changes:
-    - If you want to change the prefix code, change the default value in the **Change Request ID prefix** box.
-    - If you want to change the maximum number of files that you can attach to a change request, change the default value in the **Maximum number of attached files** box. For example, enter **2**.
-    - If you want to change the maximum size of files that you attach to a change request, change the default value in the **Maximum size (KB)** box. For example, enter **300**.
-6.  Select **OK** to close the **Change Request Settings** dialog.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Change Request Settings**.
+4. In the **Tasks** pane, in the **Change Request Settings** area, select **Properties**.
+5. In the **Change Request Settings** dialog, you can make the following changes:
+   - If you want to change the prefix code, change the default value in the **Change Request ID prefix** box.
+   - If you want to change the maximum number of files that you can attach to a change request, change the default value in the **Maximum number of attached files** box. For example, enter **2**.
+   - If you want to change the maximum size of files that you attach to a change request, change the default value in the **Maximum size (KB)** box. For example, enter **300**.
+6. Select **OK** to close the **Change Request Settings** dialog.
 
 ### Validate change settings
 
-1.  To validate changes to the prefix code, create a new change request, and verify that the change request IDs have the prefix that you specified.
-2.  To validate changes to the attachment settings, open a change request, and attempt to add a file attachment that violates the settings that you specified.
+1. To validate changes to the prefix code, create a new change request, and verify that the change request IDs have the prefix that you specified.
+2. To validate changes to the attachment settings, open a change request, and attempt to add a file attachment that violates the settings that you specified.
 
 ## Configure general activity settings
 
@@ -128,19 +128,19 @@ Use the following procedure to configure settings to specify activity prefixes w
 
 ### Configure general activity settings
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Settings**.
-3.  In the **Settings** pane, select **Activity Settings**.
-4.  In the **Tasks** pane, in the **Activity Settings** area, select **Properties**.
-5.  In the **Activity Settings** dialog, you can make the following changes:
-    -   If you want to change the activity prefix code, change the default value in the **Activity prefix** box. For example, change the value to **AA**.
-    -   If you want to change the manual activity prefix code, change the default value in the **Manual activity prefix** box. For example, change the value to **AM**.
-    -   If you want to change the review activity prefix code, change the default value in the **Review activity prefix** box. For example, change the value to **AR**.
-6.  Select **OK** to close the **Activity Settings** dialog.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Settings**.
+3. In the **Settings** pane, select **Activity Settings**.
+4. In the **Tasks** pane, in the **Activity Settings** area, select **Properties**.
+5. In the **Activity Settings** dialog, you can make the following changes:
+   - If you want to change the activity prefix code, change the default value in the **Activity prefix** box. For example, change the value to **AA**.
+   - If you want to change the manual activity prefix code, change the default value in the **Manual activity prefix** box. For example, change the value to **AM**.
+   - If you want to change the review activity prefix code, change the default value in the **Review activity prefix** box. For example, change the value to **AR**.
+6. Select **OK** to close the **Activity Settings** dialog.
 
 ### Validate activity setting changes
 
--   To validate changes to any prefix code, create a new change request, and then verify on the **Activities** tab that the activities have the new prefix that you specified.
+- To validate changes to any prefix code, create a new change request, and then verify on the **Activities** tab that the activities have the new prefix that you specified.
 
 ## Configure change management workflows
 
@@ -148,19 +148,19 @@ Use the following procedures to set the priority of all standard change requests
 
 Before you can complete the steps in the following procedures, you've to create the following templates:
 
--   **Set Standard Change Requests to Low Priority**: For more information, see the procedure **To create a priority-modifying template** in [How to Create Change Request Templates](#create-change-request-templates).
--   **New Standard Change Request Received Template**: For more information, see the procedure **To create a notification template for change requests** in [How to Create Notification Templates](./notifications.md).
+- **Set Standard Change Requests to Low Priority**: For more information, see the procedure **To create a priority-modifying template** in [How to Create Change Request Templates](#create-change-request-templates).
+- **New Standard Change Request Received Template**: For more information, see the procedure **To create a notification template for change requests** in [How to Create Notification Templates](./notifications.md).
 
 ### Create a workflow to set all standard change requests to low
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
-3.  In the **Configuration** pane, select **Change Request Event Workflow Configuration**.
-4.  In the **Tasks** pane, in the **Change Request Event Workflow Configuration** area, select **Configure Workflow Rules**.
-5.  In the **Configure Workflows** dialog, select **Add**.
-6.  On the **Before You Begin** page of the Configure Workflows for Objects of Class Change Request Wizard, select **Next**.
-7.  On the **Workflow Information** page, in the **Name** box, enter a name for the workflow. For example, enter **Set Standard Change Request to Low Priority workflow**.
-8.  Optionally, in the **Description** box, you can enter a description of the new workflow. For example, you can enter **This workflow automatically sets the priority of a standard change request to low**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
+3. In the **Configuration** pane, select **Change Request Event Workflow Configuration**.
+4. In the **Tasks** pane, in the **Change Request Event Workflow Configuration** area, select **Configure Workflow Rules**.
+5. In the **Configure Workflows** dialog, select **Add**.
+6. On the **Before You Begin** page of the Configure Workflows for Objects of Class Change Request Wizard, select **Next**.
+7. On the **Workflow Information** page, in the **Name** box, enter a name for the workflow. For example, enter **Set Standard Change Request to Low Priority workflow**.
+8. Optionally, in the **Description** box, you can enter a description of the new workflow. For example, you can enter **This workflow automatically sets the priority of a standard change request to low**.
 9. In the **Check for events** list, select **When an object is created**.
 10. Ensure that the **Enabled** checkbox is selected, and select **Next**.
 11. On the **Specify Criteria** page, on the **Changed To** tab, in the **Related classes** list, select **Change Request**.
@@ -176,11 +176,11 @@ Before you can complete the steps in the following procedures, you've to create 
 
 ### Validate workflow creation
 
-1.  In the **Configuration** pane, select the **Change Request Event Workflow Configuration** template.
-2.  In the **Tasks** pane, select **Configure Workflow Rules**.
-3.  In the **Configure Workflows** dialog, the **Set Standard Change Request to Low Priority workflow** workflow should appear.
-4.  Optionally, you can create a new change request by using the **Standard Change Request** template to verify that the priority of new requests is set to Low.
-5.  Notification email is sent to the user who created the change request.
+1. In the **Configuration** pane, select the **Change Request Event Workflow Configuration** template.
+2. In the **Tasks** pane, select **Configure Workflow Rules**.
+3. In the **Configure Workflows** dialog, the **Set Standard Change Request to Low Priority workflow** workflow should appear.
+4. Optionally, you can create a new change request by using the **Standard Change Request** template to verify that the priority of new requests is set to Low.
+5. Notification email is sent to the user who created the change request.
 
 ## Configure activity management workflows
 
@@ -188,21 +188,21 @@ Use the following procedures to automatically assign all unassigned manual activ
 
 Before you can complete the steps in the following procedures, you've to create the following templates:
 
--   **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](#create-a-manual-activity-template).
--   **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](./notifications.md).
+- **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](#create-a-manual-activity-template).
+- **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](./notifications.md).
 
 The new workflow you're about to create applies the **Set *named user* as the Activity Implementer** template, which assigns the named user to all the activities that don't have a designated activity implementer. The **New Activity Assigned Received Template** sends notification to a user if the email notification channel is configured.
 
 ### Create an activity management workflow
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
-3.  In the **Configuration** pane, select **Activity Event Workflow Configuration**.
-4.  In the **Tasks** pane, in the **Activity Event Workflow Configuration** area, select **Configure Workflow Rules**.
-5.  In the **Select a Class** dialog, in the **Name** list, select **Manual Activity**, and select **OK**.
-6.  In the **Configure Workflows** dialog, select **Add**.
-7.  On the **Before You Begin** page of the **Configure workflows for objects of class Manual Activity** wizard, select **Next**.
-8.  On the **Workflow Information** page, in the **Name** box, enter a name for the workflow. For example, enter **Assign Unassigned Activities to _named user_**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
+3. In the **Configuration** pane, select **Activity Event Workflow Configuration**.
+4. In the **Tasks** pane, in the **Activity Event Workflow Configuration** area, select **Configure Workflow Rules**.
+5. In the **Select a Class** dialog, in the **Name** list, select **Manual Activity**, and select **OK**.
+6. In the **Configure Workflows** dialog, select **Add**.
+7. On the **Before You Begin** page of the **Configure workflows for objects of class Manual Activity** wizard, select **Next**.
+8. On the **Workflow Information** page, in the **Name** box, enter a name for the workflow. For example, enter **Assign Unassigned Activities to _named user_**.
 9. Optionally, in the **Description** box, you can type a description of the new workflow. For example, you can type **This workflow automatically assigns unassigned manual activities to the _named user_**.
 10. In the **Check for events** list, select **When an object is created**.
 11. Ensure that the **Enabled** checkbox is selected, and select **Next**.
@@ -220,9 +220,8 @@ The new workflow you're about to create applies the **Set *named user* as the Ac
 
 ### Validate workflow creation
 
-1.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Status**.
-2.  In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the _named user_** is listed.
-
+1. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Status**.
+2. In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the _named user_** is listed.
 
 ## Next steps
 

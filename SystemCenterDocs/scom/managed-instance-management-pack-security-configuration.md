@@ -4,7 +4,7 @@ description: Learn about the security configuration in Management Pack for Azure
 author: FKornilov
 ms.author: v-fkornilov
 manager: ebruersan
-ms.date: 08/15/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

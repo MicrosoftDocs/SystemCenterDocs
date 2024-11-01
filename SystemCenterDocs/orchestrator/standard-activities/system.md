@@ -2,7 +2,7 @@
 title: System
 description: This article provides information about the tasks that you can do using System activities. 
 ms.custom: UpdateFrequency5, engagement-fy23, engagement-fy24
-ms.date: 08/22/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -16,8 +16,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # System
-
-
 
 The following table provides a brief description of tasks you can accomplish when using each System activity.  
 

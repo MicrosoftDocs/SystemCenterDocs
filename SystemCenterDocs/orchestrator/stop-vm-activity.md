@@ -13,11 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Stop VM Activity
-
-
 
 The Stop VM activity is used in a runbook to stop a virtual machine that has already been added to a VMware vSphere server. This allows the runbook to stop a virtual machine before deleting it using the Delete VM activity.
 
@@ -43,11 +41,9 @@ No optional properties are provided for this activity.
 | Gracefully shut down | Indicates whether the guest operating system is shut down instead of powered off. | Boolean   |
 | VM Path   | The path to the virtual machine.   | String   |
 
-## Configuring the Stop VM Activity
+## Configure the Stop VM Activity
 
-The following procedure describes the steps required to configure a Stop VM activity.
-
-### To configure the Stop VM Activity
+To configure the Stop VM Activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Stop VM** activity to the active runbook.
 

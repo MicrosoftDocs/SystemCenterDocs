@@ -13,11 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Reset VM activity
-
-
 
 The Reset VM activity is used in a runbook to stop and restart a running virtual machine. This allows the runbook to reset a virtual machine of a VMware vSphere server that's no longer responding to ping commands.
 
@@ -41,11 +39,9 @@ No optional properties are provided for this activity.
 |:---|:---|:---|
 | VM Path | The path of the virtual machine. | String   |
 
-## Configuring the Reset VM activity
+## Configure the Reset VM activity
 
-The following procedure describes the steps required to configure a Reset VM activity.
-
-#### To configure the Reset VM activity
+To configure the Reset VM activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Reset VM** activity to the active runbook.
 

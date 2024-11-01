@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/04/2023
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
@@ -14,6 +14,16 @@ ms.custom: UpdateFrequency.5, intro-whats-new
 
 
 # What's New in System Center Service Manager
+
+::: moniker range="sc-sm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article details the new features supported in System Center 2025 - Service Manager.  
+
+[!INCLUDE [whats-new-sm-2025.md](../includes/whats-new-sm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-sm-2022"
 

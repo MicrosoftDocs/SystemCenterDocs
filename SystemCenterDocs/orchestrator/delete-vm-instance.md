@@ -2,7 +2,7 @@
 title: Delete VM Instance
 description: The Delete VM Instance activity deletes the specified virtual machine.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 06/05/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,8 @@ manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
+
 # Delete VM Instance
-
-
 
 The **Delete VM Instance** activity deletes the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

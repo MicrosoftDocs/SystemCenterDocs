@@ -1,7 +1,7 @@
 ---
 title: Integration Pack for System Center DPM in System Center - Orchestrator
 description: This article describes the System Center DPM integration pack provided by System Center - Orchestrator.
-ms.date: 05/16/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,15 +13,13 @@ ms.custom: engagement-fy24
 
 # Integration pack for System Center - DPM
 
-
-
 The integration pack for System Center - Data Protection Manager (DPM) is an add-in for System Center - Orchestrator. The pack enables you to automate the protection of physical and virtual server resources. You can use the activities in this integration pack to create runbooks that provide the following:
 
--   Automated virtual machine protection and recovery
--   Automated SharePoint farm protection and recovery
--   Automated SQL server protection and recovery
--   Automated system state protection
--   Ad hoc backups
+- Automated virtual machine protection and recovery
+- Automated SharePoint farm protection and recovery
+- Automated SQL server protection and recovery
+- Automated system state protection
+- Ad hoc backups
 
 > [!NOTE]
 >  Currently, the integration pack doesn't support remote SQL servers for DPM.
@@ -37,6 +35,12 @@ The DPM integration pack requires the following software to be installed and con
 - Windows Management Framework
 
 ## Download the integration pack
+
+::: moniker range="sc-orch-2025"
+
+- Download the pack for 2025
+
+::: moniker-end
 
 ::: moniker range="sc-orch-2022"
 
@@ -57,23 +61,21 @@ After you download the integration pack file, you must register it with the Orch
 
 The DPM integration pack uses Windows PowerShell remoting on the Runbook Designer, and on the Runbook Server, to run commands on the DPM server. The WinRM service is started automatically. By default, no WinRM listener is configured. Even if the WinRM service is running, WS-Management protocol messages that request data can't be received or sent.
 
-
-
 ## Enable Windows Remote Management trusted hosts
 
-1.  On the Orchestrator computer, select **Start** >  **Run**. Then enter **gpedit.msc**, and select **OK** to open the **Local Group Policy Editor**.
-2.  In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Remote Management (WinRM)** > **WinRM Client**. Double-click **Trusted Hosts**.
-3.  Select **Enabled**, and add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Then select **OK**.
+1. On the Orchestrator computer, select **Start** >  **Run**. Then enter **gpedit.msc**, and select **OK** to open the **Local Group Policy Editor**.
+2. In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Remote Management (WinRM)** > **WinRM Client**. Double-click **Trusted Hosts**.
+3. Select **Enabled**, and add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Then select **OK**.
 
 ## Set the execution policy
 
 The execution policy in Windows PowerShell determines which scripts must be digitally signed before they run. By default, the execution policy is set to **Restricted.** This prohibits loading any configuration files or running any scripts. To run the scripts in this integration pack, you must set the execution policy to **RemoteSigned** as follows:
 
-1.  Open a Windows PowerShell (x86) console as an administrator.
+1. Open a Windows PowerShell (x86) console as an administrator.
 
-2.  Enter the command **&lt;System Drive&gt;:\\PS&gt;set-executionpolicy remotesigned** and press Enter.
+2. Enter the command **&lt;System Drive&gt;:\\PS&gt;set-executionpolicy remotesigned** and press Enter.
 
-3.  When prompted, enter **Y** and press Enter.
+3. When prompted, enter **Y** and press Enter.
 
 Learn more about [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy?preserve-view=true&view=powershell-6).
 
@@ -83,9 +85,8 @@ This integration pack uses Windows PowerShell remote commands to communicate wit
 
 Run the following command once on each computer that will receive commands. You don't need to run it on computers that only send commands. Because the command activates listeners, we recommend that you run it only where it's needed.
 
-
-1.  Open a Windows PowerShell (x86) console as an administrator.
-2.  Type _System Drive_**:\\PS&gt;enable-psremoting** and press Enter.
+1. Open a Windows PowerShell (x86) console as an administrator.
+2. Type _System Drive_**:\\PS&gt;enable-psremoting** and press Enter.
 
 [Learn more](/powershell/module/Microsoft.PowerShell.Core/Enable-PSRemoting?preserve-view=true&view=powershell-3.0) about Enable PSRemoting.
 
@@ -99,13 +100,12 @@ WM-Management also provides a setting for MaxConnections (regardless of users), 
 
 Connections provide a way for you to define how DPM Activities connect to the DPM servers in your infrastructure. You must define at least one connection in order to use the DPM activities. You can define as many as you need to connect to different DPM servers or to use different connection settings or credentials.
 
-
-1.  In the Runbook Designer, select the **Options** menu, and then select DPM.
-2.  On the **Configurations** tab, select **Add** to begin the connection setup.
-3.  In the **Name** box, enter a name for the connection. The name may be the name of the DPM server or any other name you wish to describe the connection.
-4.  Select the ellipsis button (...) next to the **Type** box, select **PowerShell Remoting**, and select **OK**.
-5.  In the **Properties** pane, the elements that are required to define this integration are displayed. Enter a value for each element, as defined in the table below.
-6.  Select **OK** to save the configuration, and select **Finish** to close the dialog.
+1. In the Runbook Designer, select the **Options** menu, and then select DPM.
+2. On the **Configurations** tab, select **Add** to begin the connection setup.
+3. In the **Name** box, enter a name for the connection. The name may be the name of the DPM server or any other name you wish to describe the connection.
+4. Select the ellipsis button (...) next to the **Type** box, select **PowerShell Remoting**, and select **OK**.
+5. In the **Properties** pane, the elements that are required to define this integration are displayed. Enter a value for each element, as defined in the table below.
+6. Select **OK** to save the configuration, and select **Finish** to close the dialog.
 
 ### DPM properties
 

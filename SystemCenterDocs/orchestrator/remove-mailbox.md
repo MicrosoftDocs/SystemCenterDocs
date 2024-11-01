@@ -2,7 +2,7 @@
 title: Remove Mailbox
 description: You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox, in an on-premises or online Exchange environment.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 03/04/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Remove Mailbox
-
-
 
 You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox in an on-premises or online Exchange environment. For an environment such as Microsoft 365, the Remove Mailbox activity can be used to delete a mailbox.
 

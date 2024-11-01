@@ -13,11 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Set VM CD or DVD to ISO Image Activity
-
-
 
 The Set VM CD/DVD to ISO Image activity is used in a runbook to set the CD/DVD drive of a virtual machine to an ISO image. This allows the runbook to attach a CD/DVD image of a software application for automatic provisioning.
 
@@ -44,11 +42,9 @@ No optional properties are provided for this activity.
 | Datastore | The path of the datastore that contains the ISO image. | String   |
 | VM Path   | The path to the virtual machine.   | String   |
 
-## Configuring the Set VM CD/DVD to ISO Image Activity
+## Configure the Set VM CD/DVD to ISO Image Activity
 
-The following procedure describes the steps required to configure a Set VM CD/DVD to ISO Image activity.
-
-### To configure the Set VM CD/DVD to ISO Image Activity
+To configure the Set VM CD/DVD to ISO Image Activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Set VM CD/DVD to ISO Image** activity to the active runbook.
 

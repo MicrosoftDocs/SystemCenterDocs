@@ -2,7 +2,7 @@
 title: Deploy Program activity
 description: Describes the configurable properties for the Deploy Program activity for Configuration Manager Integration Pack.
 ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy24
-ms.date: 10/10/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -18,8 +18,6 @@ ROBOTS: noindex
 
 # Deploy Program activity for Configuration Manager Integration Pack
 
-
-
 The Deploy Program activity is used to assign legacy application
 deployments (packages and programs) to a Collection. This activity
 requires an existing Configuration Manager package and program.
@@ -29,7 +27,6 @@ application model), use the **Deploy Application** activity. To deploy a
 task sequence, use the **Deploy Task Sequence** activity. To deploy
 software updates in an update group, use the **Deploy Software Update**
 activity. To get status on deployments you’ve created, use the **Get Deployment Status** activity.
-
 
 ## Properties and published data
 
@@ -47,29 +44,29 @@ optional properties into published data.
     >When you use the browse feature to look up a package name or enter a package name manually or from published data, you must set the **Package Value Type** property to **Name** or the activity will fail.
 
 - Package Value Type: Specifies whether the value in the **Package** property is a name or an application ID. The options are:
-    -   **ID** (default): the value is a package ID
-    -   **Name**: the value is a package name
+    - **ID** (default): the value is a package ID
+    - **Name**: the value is a package name
 
 - Collection: The display name or ID of an existing collection.
     >[!NOTE]
     >When you use the browse feature to look up a collection name or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 
 - Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. The options are:
-    -   **ID** (default): the value is a collection ID
-    -   **Name**: the value is a collection name
+    - **ID** (default): the value is a collection ID
+    - **Name**: the value is a collection name
 
 - Purpose: The deployment intent or purpose. The options are:
-    -   **Required** (default): the application is mandatory to be installed or uninstalled
-    -   **Available**: the application is made available but not mandatory
+    - **Required** (default): the application is mandatory to be installed or uninstalled
+    - **Available**: the application is made available but not mandatory
 
         >[!NOTE]
         >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
 
 - Rerun behavior: Specifies whether the program will be rerun on the client computer if it has previously been run before the scheduled mandatory time. The options are:
-    -   **Always rerun program** (default): The program will always be rerun on the client when the advertisement is scheduled, even if the program has already been successfully run. This is useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
-    -   **Never rerun program**: The program won't be rerun on the client if the program has previously been run on the client, even if the program originally failed or the program files have been changed.
-    -   **Rerun if failed previous attempt**: The program will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it hasn't successfully done so.
-    -   **Rerun if succeeded on previous attempt**: The program will be rerun only if it has previously run successfully on the client. This is useful when using recurring advertisements in which the program is routinely updated, and in which each update requires the previous update to have been successfully installed.
+    - **Always rerun program** (default): The program will always be rerun on the client when the advertisement is scheduled, even if the program has already been successfully run. This is useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
+    - **Never rerun program**: The program won't be rerun on the client if the program has previously been run on the client, even if the program originally failed or the program files have been changed.
+    - **Rerun if failed previous attempt**: The program will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it hasn't successfully done so.
+    - **Rerun if succeeded on previous attempt**: The program will be rerun only if it has previously run successfully on the client. This is useful when using recurring advertisements in which the program is routinely updated, and in which each update requires the previous update to have been successfully installed.
 
 - Distribution Point: The name of a distribution point to where the content for this deployment will be distributed. The name is typically in a UNC format, such as: “\\\\server1.contoso.com”
     >[!NOTE]
@@ -82,22 +79,23 @@ optional properties into published data.
 - Enable peer caching: True or False (Default = True) Select this option to reduce the load on the network by allowing clients to download content from other clients on the network that have already downloaded and cached the content. This option utilizes Windows BranchCache and can be used on computers running Windows Vista SP2 and later.
 
 ## Deploy Program optional properties
+
 - Allow running independently of assignments: True or False (Default = False) Specifies whether or not users can run the program independently, regardless of its assignment status.
 - Allow Software Install Outside of Maintenance Windows: True or False (Default = False) Allows the application to install even if the installation would occur outside of a maintenance window.
 - Allow System Restart Outside of Maintenance Windows: True or False (Default = False) Allows the advertised program to restart the client even if the restart would occur outside of a maintenance window.
 - Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if content isn't immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
 - Comment: An optional comment associated with the deployment.
 - Fast (LAN) boundary deployment option: Specifies how a program is run when the client is connected within a fast (LAN) network boundary. The options are:
-    -   **Download content and run locally** (default): the client will download the content from the Distribution Point before attempting to run the program.
-    -   **Run program from Distribution Point**: The client will run the program from the Distribution Point without downloading it first.
+    - **Download content and run locally** (default): the client will download the content from the Distribution Point before attempting to run the program.
+    - **Run program from Distribution Point**: The client will run the program from the Distribution Point without downloading it first.
 
 - Send Wake-up Packets: True or False (Default = False) Specifies whether the Configuration Manager server will send a Wake On LAN packet to the computer prior to the advertised program.
     >[!NOTE]
     >This setting applies only if the **Purpose** is set to **Required**.
 
 - Slow boundary deployment option: Specifies the options available when the client is within a slow or unreliable network boundary. The options are:
-    -   **Do not run program** (default): The program won't be run when a client is connected within a slow or unreliable network boundary.
-    -   **Download content and run locally**: The client will download the content from the Distribution Point before attempting to run the program.
+    - **Do not run program** (default): The program won't be run when a client is connected within a slow or unreliable network boundary.
+    - **Download content and run locally**: The client will download the content from the Distribution Point before attempting to run the program.
 
 - Use default distribution point groups: True or False (Default = True) If distribution point groups are already associated with this collection, the content associated with this deployment will automatically be distributed to those distribution point groups without having to specify individual distribution points or groups.
 
@@ -123,7 +121,6 @@ optional properties into published data.
       - **As soon as possible**: Specifies that the program will automatically run as soon as it reaches the client and all the program requirements are met. This value is specified by default.
       - **Logon**: Specifies that the program will automatically run the next time a user signs in to the client.
       - **Logoff**: Specifies that the program will automatically run the next time a user signs out of the client.
-
 
 ## Deploy Program published data
 

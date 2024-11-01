@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -60,7 +60,7 @@ You use the Encryption Key Backup or Restore Wizard to back up encryption keys o
 6. On the **Provide a Location** page, enter the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the MyServer server in the Backup shared folder, enter **\\\\MyServer\\Backup\\SMBackupkey.bin**, and select **Next**.  
 7. On the **Provide a Password** page, in the **Password** box, enter a password that contains at least eight characters. In the **Confirm Password** box, reenter the same password, and select **Next**.  
     > [!IMPORTANT]  
-    >  Recovery of the password is not possible if the password is lost or forgotten.  
+    > Recovery of the password is not possible if the password is lost or forgotten.  
 
 8. After you see the message **Secure Storage Backup Complete**, select **Finish**.
 
@@ -130,9 +130,7 @@ You can use the following procedure as part of your disaster recovery preparatio
 
 ## Back up unsealed management packs
 
-Part of the disaster recovery plan for your Service Manager management server involves backing up your unsealed management packs. The following procedure describes how to back up your unsealed management packs.  
-
-### Back up unsealed management packs
+Part of the disaster recovery plan for your Service Manager management server involves backing up your unsealed management packs. The following procedure describes how to back up your unsealed management packs.
 
 You can use the Windows PowerShell command-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that as part of your disaster recovery plan for Service Manager you can later import these management packs.  
 

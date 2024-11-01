@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 06/20/2024
+ms.date: 11/01/2024
 title: Use Groups, Queues, and Lists in Service Manager
 ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e

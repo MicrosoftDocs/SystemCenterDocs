@@ -13,12 +13,10 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 11/01/2024
 ---
 
 # Get Message
-
-
 
 The Get Message activity retrieves message from a management server according to the filter criteria that you specify. The activity uses filters to determine which messages retrieved from the management server should be published.
 

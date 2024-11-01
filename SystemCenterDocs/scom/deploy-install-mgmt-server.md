@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.reviewer: randolphwest
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -27,7 +27,7 @@ Once you've installed the first management server and created the management gro
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 > [!NOTE]  
 > You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.

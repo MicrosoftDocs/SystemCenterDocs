@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Remove VM Endpoint
-
-
 
 The **Remove VM Endpoint** activity removes an external endpoint from the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

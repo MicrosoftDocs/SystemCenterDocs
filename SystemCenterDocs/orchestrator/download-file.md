@@ -13,11 +13,10 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 06/05/2024
+ms.date: 11/01/2024
 ---
 
 # Download File
-
 
 The Download File activity is used in a runbook to download a file from an FTP server.
 

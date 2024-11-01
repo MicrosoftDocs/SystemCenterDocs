@@ -1,7 +1,7 @@
 ---
 title: Back up Orchestrator
 description: Describes how to backup a System Center - Orchestrator environment.
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,13 +13,11 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Back up Orchestrator
 
-
-
 A complete backup of an Orchestrator environment consists of the following:  
 
--   Backup of the Orchestrator database.  
--   File backup of the Orchestrator management server.  
--   File backup of each Runbook server and Orchestrator web server.  
+- Backup of the Orchestrator database.  
+- File backup of the Orchestrator management server.  
+- File backup of each Runbook server and Orchestrator web server.  
 
 Orchestrator supports Volume Shadow copy Service \(VSS\) for backup and restore with System Center - Data Protection Manager (DPM). VSS is a framework that allows volume backups to be performed while an application continues to run.  
 
@@ -36,7 +34,8 @@ To register the Orchestrator database used by the local management server, run t
 
 `SCOExpressWriter /register`  
 
-## Orchestrator servers  
+## Orchestrator servers
+
 Orchestrator management server, Runbook servers, and web servers do not persist any data. Runbooks and their settings are stored entirely in the Orchestrator database and accessed by these servers as required. Management servers and Runbook servers have a settings.dat file that includes configuration details to connect to the Orchestrator database. Orchestrator web servers have a web.config file with this same information. These files are backed up with standard file backups which are supported by DPM.  
 
 ## Orchestrator database

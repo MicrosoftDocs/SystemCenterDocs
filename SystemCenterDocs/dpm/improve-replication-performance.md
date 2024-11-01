@@ -3,7 +3,7 @@ description: This article describes the steps you can take to improve replicatio
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/27/2024
+ms.date: 11/01/2024
 title: Improve replication performance
 ms.subservice: data-protection-manager
 ms.assetid: dc7b7b49-dcbb-4e44-9ea7-31374c5773ff

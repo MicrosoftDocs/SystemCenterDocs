@@ -1,7 +1,7 @@
 ---
 title: Windows Azure Integration Pack for Orchestrator in System Center
 description: The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using Windows Azure Classic Deployments REST API.
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -57,7 +57,7 @@ After you download the integration pack file, you must register it with the Orch
 
 A connection establishes a reusable link between Orchestrator and Windows Azure. You can specify as many connections as you require to create links to multiple Windows Azure subscriptions.
 
-### To set up a Windows Azure connection
+### Set up a Windows Azure connection
 
 1. In the Runbook Designer, select **Options**, and select **Windows Azure**. The **Windows Azure** dialog appears.
 

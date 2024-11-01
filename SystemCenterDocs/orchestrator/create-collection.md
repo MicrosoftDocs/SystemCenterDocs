@@ -2,7 +2,7 @@
 title: Create Collection Activity
 description: This article provides guidance on how to configure the Create Collection activity for System Center 2016 Configuration Manager.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/07/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 ---
 
 # Create collection activity for System Center 2016 Configuration Manager
-
-
 
 The Create Collection activity is used in a runbook to create a new
 Configuration Manager user or device collection. Collections are the
@@ -39,7 +37,6 @@ activity. The activity publishes all the data from the required and
 optional properties into published data.
 
 ## Create collection properties
-
 
 - Collection Name: The desired display name of the collection to be created.
 
@@ -68,7 +65,7 @@ When you use the browse feature to look up a collection name, or enter a collect
 - Collection ID: Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).
 - Connection: Specifies the name of the connection to the Configuration Manager server
 
-## To configure the create collection activity
+## Configure the create collection activity
 
 1. From the **Activities** pane, drag a **Create Collection** activity
    to the active runbook.
@@ -101,7 +98,6 @@ When you use the browse feature to look up a collection name, or enter a collect
 
   - **Client Local Time** (default): the times specified represent the local time on the client.
   - **UTC**: The times specified are UTC times.
-
 
 - Recurrence Pattern: Determines how often the collection should be updated. Options are:
 

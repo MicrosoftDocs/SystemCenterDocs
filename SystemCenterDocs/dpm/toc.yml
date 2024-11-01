@@ -40,6 +40,8 @@
       href: install-dpm.md
     - name: Upgrade your DPM installation
       href: upgrade-dpm.md
+    - name: Update the DPM protection agent
+      href: update-dpm-protection-agent.md
     - name: Add Modern Backup storage
       href: add-storage.md
       items:

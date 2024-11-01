@@ -5,7 +5,7 @@ description: This article provides a high-level overview of what preparations yo
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.custom: intro-deployment, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -38,7 +38,7 @@ Before you begin your deployment, you should read the release notes, and ensure 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 

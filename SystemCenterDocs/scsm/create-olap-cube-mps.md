@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -36,7 +36,7 @@ When you define an OLAP cube using the schema above and you import the managemen
 
 ![Diagram of the dimensional view.](./media/create-olap-cube-mps/ops-comptuerhostsoperatingsystemfact.png)
 
-### To create an OLAP cube using a management pack
+### Create an OLAP cube using a management pack
 
 1. Copy the following management pack source code and save it:
 

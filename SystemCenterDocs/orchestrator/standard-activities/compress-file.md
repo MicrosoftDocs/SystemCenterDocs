@@ -2,7 +2,7 @@
 title: Compress File 
 description: This article describes the Compress File activity that compresses files into zip archives.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Compress File
 
-
-
 The Compress File activity compresses files into zip archives. You can use the Compress File activity to archive log files before storage or before sending them to another location using FTP or email.  
 
-## Configuring the Compress File Activity  
+## Configure the Compress File Activity
+
  Before you configure the Compress File activity, you need to know which files you'll compress.  
 
  Use the following information to configure the Compress File activity.  
@@ -37,7 +36,8 @@ The Compress File activity compresses files into zip archives. You can use the C
 |**If the destination archive already exists**|Select the action that you want to take if a file with the same name as the archive being created already exists in the destination folder:<br /><br /> **Add files to the existing archive**: Select this option to add the files that you specified to the existing archive.<br /><br /> **Overwrite the existing archive**: Select this option to overwrite the existing file with the archive that you're creating.<br /><br /> **Fail if the archive exists**: Select this option to cause the Compress File activity to fail if the filename already exists.<br /><br /> **Create a unique named archive**: Select this option to append a value to the filename to create a unique filename that doesn't conflict with the existing filename.|  
 |Compression level|Select the level of compression that you want to use to compress the files into the archive. You can select one of the following levels.<br /><br /> -   None<br />-   Low<br />-   Medium<br />-   High<br /><br /> Higher compression levels take more time to complete but usually result in smaller files. Lower compression levels create larger archives, but take less time to complete.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

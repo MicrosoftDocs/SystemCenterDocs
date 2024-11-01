@@ -2,7 +2,7 @@
 title: Upload Document
 description: The Upload Document activity is used in a runbook to upload a document to a Microsoft SharePoint document library.
 ms.custom: 3
-ms.date: 05/07/2019
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Upload Document
-
-
 
 The **Upload Document** activity is used in a runbook to upload a document to a Microsoft SharePoint document library.
 

@@ -1,11 +1,11 @@
 ---
 ms.assetid:
-title: How to create a dashboard with the State widget in the Web console
+title: Create a dashboard with the State widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Health State widget.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/22/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>sc-om-2016'
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create a dashboard with the State widget in the Web console
+# Create a dashboard with the State widget in the Web console
 
 
 
@@ -77,6 +77,7 @@ When you select an object in the widget, it presents the Monitoring Object detai
 To learn more about the effective configuration feature, see [View configuration of a monitored object](manage-view-effective-configuration.md).
 
 ## Actions on State widget
+
 For one or more monitored objects selected in the widget, you can perform such actions as:
 
 - Export the alerts to Excel for further analysis
@@ -84,8 +85,8 @@ For one or more monitored objects selected in the widget, you can perform such a
 
 To perform these actions, hover your mouse over the widget and click on the ellipsis **...** on the top right corner of the widget.  This will display actions available for the widget.  
 
-   * Select **Export to Excel** to export the alert data to an Excel file.
-   * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Select **Save personalization** when you have completed making your changes.  
+* Select **Export to Excel** to export the alert data to an Excel file.
+* Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Select **Save personalization** when you have completed making your changes.  
 
 :::moniker range="sc-om-2019"
 
@@ -93,7 +94,6 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
 > [!NOTE]
 > This feature is applicable for 2019 UR3 and later.
-
 
 State widget now supports sort by option.
 
@@ -103,7 +103,7 @@ With Operations Manager 2019 UR3 and later, you can sort the results columns in 
 
 ::: moniker-end
 
-:::moniker range="sc-om-2022"
+:::moniker range=">=sc-om-2022"
 
 ## View options in State widget
 

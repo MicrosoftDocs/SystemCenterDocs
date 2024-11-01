@@ -2,7 +2,7 @@
 description: Descriptions of the new features in System Center DPM
 ms.topic: article
 ms.service: system-center
-ms.date: 08/06/2024
+ms.date: 11/01/2024
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -13,6 +13,16 @@ ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24
 ---
 
 # What's new in System Center Data Protection Manager
+
+::: moniker range="sc-dpm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article gives details of the new features supported in System Center - Data Protection Manager (DPM) 2025.
+
+[!INCLUDE [whats-new-dpm-2025.md](../includes/whats-new-dpm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 
@@ -45,38 +55,46 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 ::: moniker range="sc-dpm-2019"
 
 ### Windows Server 2019 support
+
 DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 
 ### SQL 2017 support as DPM database
+
 DPM 2019 support SQL 2017 as its database.
 
 You can install SQL Server on a remote server or on the DPM server. The database must be installed and running before you install DPM.
 
 ### Support for newer workloads backups
+
 With DPM 2019, you can back up newer versions of workloads, as following:
--	Hyper-V VMs 2019
--	Windows Server 2019
--	Exchange 2019
--	SharePoint 2019
--	VMware [vSphere 6.7 and 7.0](back-up-vmware.md#vmware-vsphere-67-and-70)
--	System Center Virtual Machine Manager 2019. [Learn more.](dpm-protection-matrix.md)
+
+- Hyper-V VMs 2019
+- Windows Server 2019
+- Exchange 2019
+- SharePoint 2019
+- VMware [vSphere 6.7 and 7.0](back-up-vmware.md#vmware-vsphere-67-and-70)
+- System Center Virtual Machine Manager 2019. [Learn more.](dpm-protection-matrix.md)
 
 ### Faster backups with Tiered storage using SSDs
+
 DPM 2016 introduced [Modern Backup Storage](./add-storage.md?preserve-view=true&view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as the underlying file system and is designed to make use of hybrid storage such as tiered storage.
 
 To achieve the scale and performance by MBS, we recommend using a small percentage (4% of the overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
 
 ### Support for Central Monitoring
+
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
 
 You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
 
-### VMware back up to tape
+### VMware backup to tape
+
 For long-term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
 
 DPM 2019 supports both Original Location Recovery (OLR) and Alternate Location Recovery (ALR) for restoring the protected VM. [Learn more](back-up-vmware.md).
 
 ### VMware parallel backups
+
 With DPM 2019, all your VMware VMs back up within a single protection group would be parallel, leading to 25% faster VM backups.
 
 With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMware delta replication jobs run in parallel. By default, the number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
@@ -102,15 +120,18 @@ With DPM 2019 UR1, you can back up the ReFS volumes and workloads deployed on th
 > We have identified a few issues with the backup of deduplicated ReFS volumes. We are working on fixing these and will update this section as soon as we have a fix available. Until then, we are removing the support for backup of deduplicated ReFS volumes from 2019 UR1.
 
 ### Windows Server Core support
+
 You can install DPM 2019 UR1 on Windows Server Core 2019 and 2016.
 
 > [!NOTE]
 > Installation of MARS agent on Windows Server Core isn't supported. With this limitation, DPM cannot be connected to Azure Recovery Services Vault when it's installed on Windows Server Core.
 
 ### Disk exclusion for VMware VM backup
+
 With DPM 2019 UR1, you can exclude the specific disk from a VMware VM backup. [Learn more](back-up-vmware.md).
 
 ### Support for another layer of authentication to delete online backup
+
 With DPM 2019 UR1, another layer of authentication is added for critical operations. You'll be prompted to enter a security PIN when you perform *Stop Protection* with *Delete data* operations.
 
 ### New cmdlet parameter
@@ -143,7 +164,6 @@ DPM 2019 supports SQL server 2019 as DPM database. You can install SQL Server on
 
 DPM 2019 UR3 has only bug fixes. See [the KB article](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d) for details about the issues fixed.
 
-
 ## New features in DPM 2019 UR4
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR4.
@@ -151,9 +171,10 @@ See the following sections for information about the new features/feature update
 For issues fixed in UR4 and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-data-protection-manager-1f4a13ed-9750-49bb-b312-9def71bc31da).
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
+
 DPM 2019 UR4 removes the dependency on File Catalog, which was needed to restore individual files and folders from the online recovery points. DPM now uses the iSCSI mount method to provide individual file restore. This also improves backup time as the upload of file catalog metadata isn't needed anymore.
 
-### Private endpoint support 
+### Private endpoint support
 
 With DPM 2019 UR4, you can use a private endpoint to take online backup to Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
 
@@ -262,20 +283,23 @@ Modern Backup Storage is a feature that provides several benefits including:
 Modern Backup Storage achieves 30-40% storage savings using technologies such as Resilient File System (ReFS). Using ReFS volumes and storing backups on VHDXs means there are no Local Disk Manager (LDM) limits or storage over-allocations. DPM storage consumption is flexible: it grows and shrinks based on the production data source’s storage changes.
 
 #### Faster backups
+
 DPM 2016 uses block cloning to store backups on ReFS volumes. Instead of using copy-on-write to store backups (which was used by VolSnap in DPM 2012 R2), DPM 2016's block cloning uses allocate-on-write. This change improves IOPS efficiency, making backups nearly 70% faster.
 
 #### Choose the volumes for your data source to increase storage efficiency
+
 DPM's workload-aware storage feature decreases costs by providing flexible storage choices for a given data source. This means DPM can use expensive, high-performance disks for backing up high-IOPS workloads, such as SQL or SharePoint. Low-performance storage can be used for reduced-IOPS workloads.
 
 #### Back up storage consumption in line with production data source
-Without Logical Disk Manager (LDM) limits, data sources grow and shrink as needed, without the need for manual intervention. DPM doesn't need to allocate storage to data sources beforehand and can dynamically allow the backups to adjust as needed, thus achieving higher efficiency with less storage requirement.
 
+Without Logical Disk Manager (LDM) limits, data sources grow and shrink as needed, without the need for manual intervention. DPM doesn't need to allocate storage to data sources beforehand and can dynamically allow the backups to adjust as needed, thus achieving higher efficiency with less storage requirement.
 
 ### Hyper-V protection improvements
 
 The following information touches on the improvements for protecting VMs with DPM 2016.
 
 #### Resilient Change Tracking (RCT)
+
 In Windows Server 2016, Hyper-V virtual hard disks have built-in change tracking. As a result, in case of a host outage or VM migration, change-tracking is automatically preserved. With RCT, backups:
 - **are more reliable**: Consistency checks aren't required after VM migration.
 - **are scalable**: More parallel backups and less storage overhead.
@@ -285,7 +309,6 @@ In Windows Server 2016, Hyper-V virtual hard disks have built-in change tracking
 
 Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RCT by default. VMs deployed on Windows Server 2012 R2 or earlier don't support RCT. However, you can upgrade older VMs. To upgrade older VMs to enable RCT:
 
-
 1. In Hyper-V Manager, shut down the virtual machine.
 
 2. In Hyper-V Manager, select **Action** > **Upgrade Configuration Version**.
@@ -294,7 +317,7 @@ Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RC
 
    If you want to use Windows PowerShell to upgrade the virtual machine configuration, run the following command where vmname is the name of the virtual machine.
 
-   ```
+   ```powershell
    Update-VMVersion <vmname>
    ```
 
@@ -312,19 +335,19 @@ Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade t
 
 To enable uninterrupted protection, run the following steps for each node:
 
-1.	Drain Roles on the node.
+1. Drain Roles on the node.
 
     This puts the node in a paused state and automatically migrates any VM on that node to another cluster node.
 
-2.	Restart the node.
+2. Restart the node.
 
-3.	Evict the node.
+3. Evict the node.
 
-4.	Install Windows Server 2016.
+4. Install Windows Server 2016.
 
-5.	Install the DPM agent.
+5. Install the DPM agent.
 
-6.	Add the node back to the cluster.
+6. Add the node back to the cluster.
 
     This allows backups to occur without consistency checks while keeping the cluster alive.
 
@@ -405,6 +428,7 @@ We recommended you to update your DPM 2016 installation to Hotfix for Update Rol
 ::: moniker-end
 
 ## Next steps
+
 - [Install DPM](install-dpm.md)
 - [Upgrade your DPM installation](upgrade-dpm.md)
 - [Know about deploying and managing Update Rollups](update-rollups.md)

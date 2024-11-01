@@ -2,7 +2,7 @@
 title: Move VM
 description: The Move VM activity is used to move the selected virtual machine from one network location to another.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/09/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Move VM
-
-
 
 The Move VM activity is used to move the selected virtual machine from one network location to another.
 

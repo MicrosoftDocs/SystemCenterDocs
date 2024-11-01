@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/05/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,6 +13,14 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # System requirements for System Center Virtual Machine Manager
+
+::: moniker range="sc-vmm-2025"
+
+This article provides details of the system requirements for System Center 2025 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [system-reqs-vmm-2025.md](../includes/system-reqs-vmm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 

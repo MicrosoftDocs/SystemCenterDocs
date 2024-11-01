@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -17,8 +17,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot Data Warehouse Jobs](manage-dw.md).
-
-
 
 ## Installation log files
 

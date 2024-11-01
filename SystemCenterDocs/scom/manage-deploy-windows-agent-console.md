@@ -5,7 +5,7 @@ description: This topic describes how to deploy the Operations Manager agent on 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/17/2023
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -43,46 +43,46 @@ Follow these steps to install an agent on a computer running Windows by using th
 
 5. On the **Auto or Advanced?** page, do the following:
 
-   1.  Select either **Automatic computer discovery** or **Advanced discovery**. If you select **Automatic computer discovery**, select **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.
+   1. Select either **Automatic computer discovery** or **Advanced discovery**. If you select **Automatic computer discovery**, select **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.
 
        > [!NOTE]
        > Automatic computer discovery scans for Windows-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with NY.
 
-   2.  In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.
+   2. In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.
 
-   3.  In the **Management Server** list, select the management server or gateway server to discover the computers.
+   3. In the **Management Server** list, select the management server or gateway server to discover the computers.
 
-   4.  If you selected **Servers and Clients**, you can select the **Verify discovered computers can be contacted** checkbox. This is likely to increase the success rate of agent deployment, but discovery can take longer.
+   4. If you selected **Servers and Clients**, you can select the **Verify discovered computers can be contacted** checkbox. This is likely to increase the success rate of agent deployment, but discovery can take longer.
 
        > [!NOTE]
        > If the Active Directory catalog doesn't contain the NetBIOS names for computers in a domain, select **Verify discovered computers can be contacted**. Otherwise, the **Browse, or Type In** option fails to find computers. This affects computers in the same domain as the management server, in another domain with a full trust relationship, and in untrusted domains by using a gateway server.
 
-   5.  Select **Next**.
+   5. Select **Next**.
 
        > [!NOTE]
        > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option isn't selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group isn't returned.
 
 6. On the **Discovery Method** page, you can locate the computers that you want to manage by either scanning or browsing Active Directory Domain Services or entering the computer names.
 
-   If you want to scan, do the following:
+ If you want to scan, do the following:
 
-   1.  If it isn't already selected, select **Scan Active Directory** and select **Configure**.
+ 1. If it isn't already selected, select **Scan Active Directory** and select **Configure**.
 
-   2.  In the **Find Computers** dialog, enter the criteria that you want to use for discovering computers, and select **OK**.
+ 2. In the **Find Computers** dialog, enter the criteria that you want to use for discovering computers, and select **OK**.
 
-   3.  In the **Domain** list, select the domain of the computers that you want to discover.
+ 3. In the **Domain** list, select the domain of the computers that you want to discover.
 
-   If you want to browse Active Directory Domain Services or enter the computer names, do the following:
+ If you want to browse Active Directory Domain Services or enter the computer names, do the following:
 
-    1.  Select **Browse for, or type-in computer names**, select **Browse**, specify the names of the computers that you want to manage, and select **OK**.
+   1. Select **Browse for, or type-in computer names**, select **Browse**, specify the names of the computers that you want to manage, and select **OK**.
 
-    2.  In the **Browse for, or type-in computer names** box, enter the computer names, separated by a semicolon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+   2. In the **Browse for, or type-in computer names** box, enter the computer names, separated by a semicolon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
 
 7. Select **Next**, and on the **Administrator Account** page, do one of the following:
 
-   1.  Select **Use selected Management Server Action Account** if it isn't already selected.
+   1. Select **Use selected Management Server Action Account** if it isn't already selected.
 
-   2.  Select **Other user account**, enter the **User name** and **Password**, and then select the **Domain** from the list. If the user name isn't a domain account, select **This is a local computer account, not a domain account**.
+   2. Select **Other user account**, enter the **User name** and **Password**, and then select the **Domain** from the list. If the user name isn't a domain account, select **This is a local computer account, not a domain account**.
 
        > [!IMPORTANT]
        > The account must have administrative privileges on the targeted computers. If **This is a local computer account, not a domain account** is selected, the management server action account will be used to perform discovery.
@@ -94,9 +94,9 @@ Follow these steps to install an agent on a computer running Windows by using th
 
 9. On the **Select Objects to Manage** page, do the following:
 
-    1.  Select the computers that you want to be agent-managed computers.
+    1. Select the computers that you want to be agent-managed computers.
 
-    2.  In the **Management Mode** list, select **Agent** and then select **Next**.
+    2. In the **Management Mode** list, select **Agent** and then select **Next**.
 
         > [!NOTE]
         > The discovery results show virtual nodes of clusters. Don't select any virtual nodes to be managed.
@@ -109,9 +109,9 @@ Follow these steps to install an agent on a computer running Windows by using th
         > [!IMPORTANT]
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they don't exist.
 
-    2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and enter the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
+    2. Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and enter the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
 
-    3.  Select **Finish**.  
+    3. Select **Finish**.  
 
 11. In the **Agent Management Task Status** dialog, the **Status** for each selected computer changes from **Queued** to **Success**; the computers are ready to be managed.
 

@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -165,12 +165,12 @@ To prepare computers for Service Manager deployment, follow these steps:
 2. Create an Active Directory group of users that will be assigned to the role of Service Manager administrators of both the data warehouse and Service Manager management groups. For example, create the group **SM\_Admins**.  
 
    > [!NOTE]  
-   >  This group of users must be in the same domain that Service Manager is in. Users from any other domain—even child domains—aren't supported.  
+   > This group of users must be in the same domain that Service Manager is in. Users from any other domain—even child domains—aren't supported.  
 
 3. Create the accounts that are necessary for Service Manager.
 
    > [!NOTE]  
-   >  Service Manager accounts must be in the same domain that Service Manager is in. Accounts from any other domain—even child domains—aren't supported.  
+   > Service Manager accounts must be in the same domain that Service Manager is in. Accounts from any other domain—even child domains—aren't supported.  
 
 4. Ensure that the Structured Query Language \(SQL\) instances that are used for Service Manager databases are using port number 1433.
 5. If you're installing the databases on a remote computer running Microsoft SQL Server, the user who is running Setup must be a domain user with local administrator permissions on the SQL Server computer.  

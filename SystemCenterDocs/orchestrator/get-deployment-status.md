@@ -2,7 +2,7 @@
 title: Get Deployment Status activity.
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/21/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,7 +16,6 @@ manager: jsuri
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
-
 
 The Get Deployment Status activity is used to retrieve the status of an
 application, program, task sequence, or software update deployment
@@ -60,6 +59,7 @@ The following list describes the Published Data for the available
 Deployment Types.
 
 ## Program or task sequence
+
 - AdvertisementID                   ID of the advertisement (deployment)
 - LastAcceptanceMessageID           Last acceptance status message ID
 - LastAcceptanceMessageIDName       Short description of the last acceptance status message
@@ -175,17 +175,17 @@ Deployment Types.
 |UserID |User ID|
 |VMHostName|If the device is a virtual machine, the name of the host for the VM|
 
-## Configuring the Get Deployment Status activity
+## Configure the Get Deployment Status activity
 
-1.  From the **Activities** pane, drag a **Get Deployment Status**
+1. From the **Activities** pane, drag a **Get Deployment Status**
     activity to the active runbook.
-2.  Double-click the **Get Deployment Status** activity icon. The
+2. Double-click the **Get Deployment Status** activity icon. The
     **Properties** dialog opens.
-3.  Configuring the **Details** tab:
-    1.  In the **Connection** section, select the ellipsis button
+3. Configuring the **Details** tab:
+    1. In the **Connection** section, select the ellipsis button
         **(...)**, and then select the Configuration Manager server
         connection that you want to use for this activity. Select **OK**.
-    2.  In the **Fields** section, enter a value for each of the
+    2. In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
         select the ellipsis button **(...)** next to the text box to browse
         for a value.
@@ -194,4 +194,4 @@ Deployment Types.
         value of the property from the data output by a previous
         activity in the runbook.
 
-4.  Select **Finish**.
+4. Select **Finish**.

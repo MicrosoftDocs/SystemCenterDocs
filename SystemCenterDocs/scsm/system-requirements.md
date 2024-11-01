@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/04/2023
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
@@ -13,6 +13,19 @@ ms.custom: UpdateFrequency.5
 ---
 
 # System requirements for System Center Service Manager
+
+::: moniker range="sc-sm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article details the system requirements for System Center 2025 - Service Manager (SM).
+
+>[!NOTE]
+> Unlike the earlier releases, for SM 2025, Analysis Management Object is removed.
+
+ [!INCLUDE [system-reqs-sm-2025](../includes/system-reqs-sm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-sm-2022"
 

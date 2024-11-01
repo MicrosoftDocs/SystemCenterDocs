@@ -9,18 +9,17 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c06b17d-fd0d-4a98-8013-f5e5954606ed
-ms.date: 11/09/2023
+ms.date: 11/01/2024
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ---
 # Orchestrator logs
 
-
-
 This article provides information on common troubleshooting issues and the available tools that can help identify the root problems.  
 
-## Log files  
+## Log files
+
 In Orchestrator, different logs are available that provide information about Orchestrator runbooks and servers. The following table lists the available types of log files, with links to the appropriate sections that describe the logs in more detail.  
 
 |Log File Topic or Section|Contents|Where data is stored|Where data is viewed|  

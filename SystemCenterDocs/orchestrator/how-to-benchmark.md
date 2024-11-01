@@ -2,7 +2,7 @@
 title: How to create a benchmark runbook
 description: Describes how to create a benchmark runbook to evaluate performance of different logging options in a System Center - Orchestrator environment.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 04/25/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,15 +15,14 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 
-# How to create a benchmark runbook
-
-
+# Create a benchmark runbook
 
 You will need to create a performance benchmark in order to optimize the performance for your Orchestrator runbook. As part of creating the benchmark, you should analyze the activities in your runbook.
 
 Orchestrator runbook activities can be thought of as having two distinct types of code:  platform code and domain code. The term *domain code* is used to identify code within a runbook activity that is typically not associated with the Orchestrator platform itself (with notable exceptions, such as **Invoke Runbook**, **Junction**, and others). For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code (the **plumbing** of the activity) as well as domain code unique to invoking a SOAP-based web service. The platform code will be very similar for most activities, since it's built on a common framework. However, there will potentially be great variation in domain code for different activities.  
 
-## Data Logging  
+## Data Logging
+
 Data logging has a major impact on runbook performance. For the purpose of understanding performance, consider two logging configurations: Default logging and Common Published Data logging. Default logging results in approximately 524 bytes of data being written to the Orchestrator database each time an activity is run. Logging of common published data writes approximately 6,082 bytes of data (12 times the default logging level). There's a notable difference in performance between these logging levels.  
 
 Consider the scenario where the same runbook activity is run twice, once with data logging at the default level and once with logging of common published data enabled. The domain code should take the same amount of time to complete. However, the platform code will take longer to run with common published data logging enabled. Essentially, the platform code has to support logging 12 times more data with common published data enabled than it did when running at the default logging level.  
@@ -34,13 +33,13 @@ The Standard Activity **Compare Values** can be used to create benchmarks of an 
 
 Follow these steps to create a runbook that can be used to benchmark your Orchestrator environment:
 
-1.  Create a new runbook.  
-2.  Add a **Compare Values** activity from the Standard Activity palette. Double-click the activity to configure it.  
-3.  Select the **General** tab and configure this activity to compare strings (the default value).  
-4.  Select the **Details** tab, enter the value **STRING** in the **Test** box and select **is empty**.  
-5.  Select **Finish** to save the updates to the activity.  
-6.  Right-click the activity and select **Looping**.  
-7.  Select the **Enable** checkbox and enter the number **0** (zero) for **Delay between attempts**.  
+1. Create a new runbook.  
+2. Add a **Compare Values** activity from the Standard Activity palette. Double-click the activity to configure it.  
+3. Select the **General** tab and configure this activity to compare strings (the default value).  
+4. Select the **Details** tab, enter the value **STRING** in the **Test** box and select **is empty**.  
+5. Select **Finish** to save the updates to the activity.  
+6. Right-click the activity and select **Looping**.  
+7. Select the **Enable** checkbox and enter the number **0** (zero) for **Delay between attempts**.  
 8. Select the **Exit** tab.  
 9. Change the default exit condition. Select **Compare Values**, check the **Show Common Published Data** checkbox, and select **Loop:  Number of attempts**. Select **OK** to save this change.  
 10. Select **value** from the updated exit condition and enter the number **10000** (ten-thousand). Select **OK** to save this change.  
@@ -83,12 +82,12 @@ Of course, most real-world scenarios will be different. Activity behavior may ch
 
 To summarize:  
 
--   Make careful decisions about when to log published data.  
--   Carefully consider the impact of logging common published data. Remember that the number of times activities run determines the volume of logged data. A runbook with a small number of activities run many times can result in more data logging than a larger runbook run a small number of times.  
--   Don't enable logging of activity specific published data in production environments.  
--   Develop an understanding of how much time your runbooks spend running domain code compared to running platform code.  
--   Estimate platform code costs using the techniques outlined in this document. Use as a reference in considering where to make improvements in runbook performance.  
--   Use the techniques outlined in this document to gain a deeper understanding of the relative performance of your different runtime environments. Identify opportunities for improvement by making normalized comparisons of your measurements.  
+- Make careful decisions about when to log published data.  
+- Carefully consider the impact of logging common published data. Remember that the number of times activities run determines the volume of logged data. A runbook with a small number of activities run many times can result in more data logging than a larger runbook run a small number of times.  
+- Don't enable logging of activity specific published data in production environments.  
+- Develop an understanding of how much time your runbooks spend running domain code compared to running platform code.  
+- Estimate platform code costs using the techniques outlined in this document. Use as a reference in considering where to make improvements in runbook performance.  
+- Use the techniques outlined in this document to gain a deeper understanding of the relative performance of your different runtime environments. Identify opportunities for improvement by making normalized comparisons of your measurements.  
 
 ## Next steps
 

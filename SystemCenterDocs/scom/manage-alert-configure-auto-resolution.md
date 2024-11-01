@@ -1,10 +1,10 @@
 ---
-title: How to Configure Automatic Alert Resolution
+title: Configure Automatic Alert Resolution
 description: This article describes how to configure the setting for automatic alert resolution in the Operations Manager management group.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/22/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,31 +12,31 @@ ms.topic: article
 ms.assetid: dab97fc0-0cd9-40cf-a5bb-2e304490fef4
 ---
 
-# How to configure automatic alert resolution
+# Configure automatic alert resolution
 
 
 
 In System Center Operations Manager, alerts are resolved automatically after a specific number of days. You can change the automatic alert resolution settings globally for the management group. Using automatic alert resolution, you can configure all active alerts with a resolution state of **New** to be changed to **Closed** after a specific number of days. You can also configure all active alerts with a resolution state of **New** to be changed to **Closed** after a specific number of days when the alert source is healthy.  
 
-## To change the global settings for automatic alert resolution  
+## Change the global settings for automatic alert resolution  
 
-1.  In the Operations console, select **Administration**.  
+1. In the Operations console, select **Administration**.  
 
-2.  Select **Settings**.  
+2. Select **Settings**.  
 
-3.  Double-click **Alerts**.  
+3. Double-click **Alerts**.  
 
-4.  Select the **Automatic Alert Resolution** tab.  
+4. Select the **Automatic Alert Resolution** tab.  
 
-5.  Change the days for either or both of the following settings:  
+5. Change the days for either or both of the following settings:  
 
     ![Screenshot showing Global settings for automatic alert resolution.](./media/manage-alert-configure-auto-resolution/om2016-global-settings-alerts-autoresolution.png)  
 
-6.  Select **OK**.  
+6. Select **OK**.  
 
 ## Next steps
 
--  To get better visibility with the alerts being generated in your environment and determine which are the candidates for additional configuration to reduce alert noise and improve alert accuracy, see [Data-driven Alert Management](manage-alert-data-driven-management.md) from the Operations console.
+- To get better visibility with the alerts being generated in your environment and determine which are the candidates for additional configuration to reduce alert noise and improve alert accuracy, see [Data-driven Alert Management](manage-alert-data-driven-management.md) from the Operations console.
 
 - To understand how alerts are generated for monitored objects in your management group, see [How an Alert is Produced](manage-alert-generation-overview.md).
 

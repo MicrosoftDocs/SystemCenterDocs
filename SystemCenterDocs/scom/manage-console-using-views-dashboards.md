@@ -1,10 +1,10 @@
 ---
-title: Using Views and Dashboards in Operations Manager
+title: Use Views and Dashboards in Operations Manager
 description: This article describes how to use the views and dashboards in Operations Manager to visualize operational data from monitored services and their components.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/28/2023
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 0b8ed9f1-b1f0-4006-976f-84d654c5f1da
 ---
 
-# Using views and dashboards in Operations Manager
+# Use views and dashboards in Operations Manager
 
 
 
@@ -20,15 +20,14 @@ In Operations Manager, views provide insight into the performance of your servic
 
 After you identify the IT services to monitor, the configuration of how to monitor them, you need to configure how that data will be visualized and provided to the different personas in the organization who are responsible for sustaining and maintaining the service, the end-users who want to see a summarized availability status of critical services provided, and the management who are interested in determining if IT is meeting its service objectives to the business.  
 
+## Use views and dashboards in Operations Manager topics  
 
-## Using views and dashboards in Operations Manager topics  
+- [View types in Operations Manager](manage-console-view-types.md)  
 
--   [View types in Operations Manager](manage-console-view-types.md)  
+- [Dashboards in Operations Manager](manage-dashboards-overview.md)
 
--   [Dashboards in Operations Manager](manage-dashboards-overview.md)
+- [Standard views in Operations Manager](manage-console-standard-views.md)  
 
--   [Standard views in Operations Manager](manage-console-standard-views.md)  
+- [Creating and scoping views in Operations Manager](manage-console-scope-views.md)  
 
--   [Creating and scoping views in Operations Manager](manage-console-scope-views.md)  
-
--   [Personalize a view in Operations Manager](manage-console-personalize-views.md)
+- [Personalize a view in Operations Manager](manage-console-personalize-views.md)
