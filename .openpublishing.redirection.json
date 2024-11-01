@@ -3633,8 +3633,8 @@
      "redirect_url" : "/system-center/vmm/install-tls-12"
 },
 {
-     "source_path" : "SystemCenterDocs/orch/install-enable-tls.md",
-     "redirect_url" : "/system-center/vmm/install-enable-tls-1-2"
+     "source_path" : "SystemCenterDocs/orchestrator/install-enable-tls.md",
+     "redirect_url" : "/system-center/orchestrator/install-enable-tls-1-2"
 },
 {
      "source_path" : "SystemCenterDocs/vmm/manage/manage-network-mac-address-pools.md",
