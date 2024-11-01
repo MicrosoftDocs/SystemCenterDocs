@@ -8,7 +8,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ---
 
 # Modify VM Disk activity

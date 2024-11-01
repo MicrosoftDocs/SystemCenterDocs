@@ -2,7 +2,7 @@
 title: Monitor State
 description: The Monitor State activity monitors the state of an Operations Manager object that you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/09/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Monitor State
-
-
 
 The Monitor State activity monitors the state of an Operations Manager object that you specify. For example, you can use the Monitor State activity to trigger a corrective runbook when an object with a Warning or Critical state is detected.
 

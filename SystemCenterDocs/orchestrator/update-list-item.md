@@ -2,7 +2,7 @@
 title: Update List Item
 description: The Update List Item activity is used in a runbook to update an item in a Microsoft SharePoint list.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 05/16/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Update List Item
-
-
 
 The **Update List Item** activity is used in a runbook to update an item in a Microsoft SharePoint list.
 
@@ -47,4 +45,4 @@ There are no optional properties for this runbook activity.
 
 ## Other Resources
 
-[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
+[Use Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

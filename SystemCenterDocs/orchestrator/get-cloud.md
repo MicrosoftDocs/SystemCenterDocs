@@ -1,7 +1,7 @@
 ---
 title: Get Cloud activity in System Center - Orchestrator
 description: The Get Cloud activity is used in a runbook to return all clouds on the VMM management server that meet the filtering criteria.
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

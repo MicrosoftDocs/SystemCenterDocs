@@ -1,10 +1,10 @@
 ---
-title: Using Health Explorer in Operations Manager
+title: Use Health Explorer in Operations Manager
 description: This article describes how to use the Operations Manager Health Explorer to view health and state changes for monitored objects.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 0e4aec83-1bbf-4cbb-86ec-0bf9e3710dc5
 ---
 
-# Using Health Explorer in Operations Manager
+# Use Health Explorer in Operations Manager
 
 
 
@@ -20,13 +20,13 @@ In System Center Operations Manager, you can use the Health Explorer tool to ide
 
 You can start Health Explorer from the **Tasks** pane after you select an object, alert, or event in the results pane. Health Explorer organizes health information into the following categories:  
 
--   Performance  
+- Performance  
 
--   Security  
+- Security  
 
--   Availability  
+- Availability  
 
--   Configuration  
+- Configuration  
 
 All monitors that are defined for a selected object display in the appropriate category.  
 

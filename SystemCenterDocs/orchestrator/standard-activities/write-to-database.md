@@ -2,7 +2,7 @@
 title: Write to Database 
 description: This article describes the Write to Database activity that writes a row into a database table.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Write to Database
 
-
-
 The Write to Database activity writes a row into a database table. This activity interacts with the following databases:  
 
 - Access  
@@ -31,7 +29,8 @@ The Write to Database activity writes a row into a database table. This activity
 
 The Write to Database activity can be used to replicate important Windows Event Log Events to a database table that is able to be queried and maintained.  
 
-## Configuring the Write to Database Activity  
+## Configure the Write to Database Activity
+
  Before you configure the Write to Database activity, you need to determine the following:  
 
 - The database you're connecting to.  
@@ -47,13 +46,13 @@ Use the following information to configure the Write to Database activity.
 |**Table name**|Enter the name of the database table that you're adding the row to.|  
 |**Data**|The list displays all the fields in the table that will be set. To add a field, select **Add** and enter the **Field name** and **Value**. To remove a field, select it, and select **Remove**. To edit a field, double-click the field name.|  
 
-### Connection Tab  
+### Connection Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Database type**|Select the **Database type** from the dropdown list. The options include the following:<br /><br /> -   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server<br /><br /> Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.|  
 
-### Access Connections Tab  
+### Access Connections Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -63,7 +62,7 @@ Use the following information to configure the Write to Database activity.
 |**Password**|Enter the password for the workgroup file.|  
 |**DB password**|Enter the password for the Access database.|  
 
-### ODBC Connections Tab  
+### ODBC Connections Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -71,7 +70,7 @@ Use the following information to configure the Write to Database activity.
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### Oracle Connections Tab  
+### Oracle Connections Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -79,7 +78,14 @@ Use the following information to configure the Write to Database activity.
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### SQL Server Connections Tab  
+### SQL Server Connections Tab
+
+::: moniker range="sc-orch-2025"
+
+>[!Note]
+>MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator RunbookWorker machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server) to install a SQL Server certificate.
+
+::: moniker-end
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -87,20 +93,21 @@ Use the following information to configure the Write to Database activity.
 |**Server**|Enter the name of the SQL Server that you want to access.|  
 |**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, enter the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
 
-### Timeout Tab  
+### Timeout Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Timeout**|Enter the amount of time that the Query Database activity will wait for the database operation to complete.<br /><br /> Set this value to `0` to wait indefinitely.|  
 
-### Security Credentials Tab  
+### Security Credentials Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Use the security of the account assigned to the service**|Select this option if you want to run the Query Database activity using the same account that the runbook server uses.|  
 |**This account**|Use this option to specify a different account. Enter the **User name** and **Password**. **Note:**  If you specify an invalid user name or password, the account assigned to the runbook server will be used to run the activity.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

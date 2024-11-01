@@ -5,7 +5,7 @@ description: This article describes how to enable Kerberos Authentication with U
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
@@ -61,7 +61,7 @@ The following subset of those operating systems now supports WS-Management commu
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 | Operating System | Version |
 |------------------|:---------|
@@ -79,6 +79,7 @@ The following subset of those operating systems now supports WS-Management commu
 | Ubuntu Server | 16 |
 | Ubuntu Server | 18 |
 | Ubuntu Server | 20 |
+
 ::: moniker-end
 
 - UNIX or Linux agent must be domain joined.

@@ -2,7 +2,7 @@
 title: Upload Attachment
 description: The Upload Attachment activity is used to upload a file to an existing Service Manager object.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 08/22/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Upload Attachment
-
-
 
 The Upload Attachment activity is used to upload a file to an existing Service Manager object.
 
@@ -40,7 +38,7 @@ For file attachments, the following activities will usually precede the Upload A
 -   Use Get File Status to get information about the file to be uploaded. This activity retrieves the data needed to attach the file to the Service Manager object.
 -   Use Create Related Object to create a File Attachment related to the parent record. This activity creates the File Attachment object where the attachment is to be uploaded. There are several critical fields that must be correctly populated in order for the attachment to behave correctly in Service Manager
 
-## Configuring the Upload Attachment Activity Workflow for Knowledge Articles
+## Configure the Upload Attachment Activity Workflow for Knowledge Articles
 
 The Upload Attachment activity is dependent on other activities for the data that it requires. For knowledge articles, the following activities usually precede the Upload Attachment activity in a workflow:
 

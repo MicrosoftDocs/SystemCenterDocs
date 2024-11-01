@@ -2,7 +2,7 @@
 title: Deploy Task Sequence activity
 description: Describes the configurable properties for the Deploy Task Sequence activity for Configuration Manager Integration Pack.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
-ms.date: 10/10/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -18,8 +18,6 @@ ROBOTS: noindex
 
 # Deploy Task Sequence activity for Configuration Manager Integration Pack
 
-
-
 The Deploy Task Sequence activity creates a new Configuration
 Manager Task Sequence Deployment that assigns an existing task sequence
 to a collection. This enables you to deploy an operating system and
@@ -33,31 +31,32 @@ status on deployments you’ve created, use the **Get Deployment Status**
 activity.
 
 ## Deploy Task Sequence properties
+
 - Deployment Name: The desired name for the new deployment that will be shown in the Configuration Manager console.
 - Task Sequence: The display name or ID of an existing task sequence.
     >[!NOTE]
     >When you use the browse feature to look up a task sequence name or enter a task sequence name manually or from published data, you must set the **Task Sequence Value Type** property to **Name** or the activity will fail.
 - Task Sequence Value Type: Specifies whether the value in the **Task Sequence** property is a name or a task sequence ID. The options are:
-    -   **ID** (default): the value is a task sequence ID
-    -   **Name**: the value is a task Sequence name
+    - **ID** (default): the value is a task sequence ID
+    - **Name**: the value is a task Sequence name
 - Collection: The display name or ID of an existing collection.
     >[!NOTE]
     >When you use the browse feature to look up a collection name or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 - Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. The options are:
-    -   **ID** (default): the value is a collection ID
-    -   **Name**: the value is a collection name
+    - **ID** (default): the value is a collection ID
+    - **Name**: the value is a collection name
 - Purpose: The deployment intent or purpose. The options are:
-    -   **Required** (default): the task sequence is mandatory to be installed or uninstalled
-    -   **Available**: the task sequence is made available but isn't mandatory
+    - **Required** (default): the task sequence is mandatory to be installed or uninstalled
+    - **Available**: the task sequence is made available but isn't mandatory
 - Rerun behavior: Specifies whether the task sequence will be rerun on the client computer if it has previously been run before the scheduled mandatory time. The options are:
-    -   **Always rerun program** (default): The task sequence will always be rerun on the client when the advertisement is scheduled even if the task sequence has already been successfully run. This is useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
-    -   **Never rerun program**: The task sequence won't be rerun on the client if the task sequence has previously been run on the client, even if the task sequence originally failed or the program files have been changed.
-    -   **Rerun if failed previous attempt**: The task sequence will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it hasn't successfully done so.
-    -   **Rerun if succeeded on previous attempt**: The task sequence will be rerun only if it has previously run successfully on the client. This is useful when using recurring advertisements in which the program is routinely updated, and in which each update requires the previous update to have been successfully installed.
+    - **Always rerun program** (default): The task sequence will always be rerun on the client when the advertisement is scheduled even if the task sequence has already been successfully run. This is useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
+    - **Never rerun program**: The task sequence won't be rerun on the client if the task sequence has previously been run on the client, even if the task sequence originally failed or the program files have been changed.
+    - **Rerun if failed previous attempt**: The task sequence will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it hasn't successfully done so.
+    - **Rerun if succeeded on previous attempt**: The task sequence will be rerun only if it has previously run successfully on the client. This is useful when using recurring advertisements in which the program is routinely updated, and in which each update requires the previous update to have been successfully installed.
 - Show the Task Sequence Progress: True or False (Default = False) Specifies whether or not users see a progress dialog for the task sequence.
 - Content Download: Specifies how the content will be obtained for this task sequence. The options are:
-    -   **Download locally when needed** (default): download all the necessary installation files as needed to complete the task sequence
-    -   **Download all content before starting**: download all the necessary installation files locally before initiating the installation. All the files will be downloaded and stored in the client cache prior to running the task sequence.
+    - **Download locally when needed** (default): download all the necessary installation files as needed to complete the task sequence
+    - **Download all content before starting**: download all the necessary installation files locally before initiating the installation. All the files will be downloaded and stored in the client cache prior to running the task sequence.
 
 ## Deploy Task Sequence optional properties
 
@@ -74,6 +73,7 @@ activity.
 - Use remote distribution point: True or False (Default = False) When no local distribution point is available, use a remote distribution point.
 
 ## Schedule Tab properties
+
 - Schedule when this deployment will become available: True or False (Default = False) By default, the deployment is made immediately available. If you wish to define a future date or time to make this deployment available, then set this property to **True** and set the associated date/time below.
 - Deployment Availability Time: The date/time when this deployment will be made available.
     >[!NOTE]
@@ -114,19 +114,19 @@ above:
 
 ## Configure the Deploy Task Sequence activity
 
-1.  From the **Activities** pane, drag a **Deploy Task Sequence**
+1. From the **Activities** pane, drag a **Deploy Task Sequence**
     activity to the active runbook.
 
-2.  Double-click the **Deploy Task Sequence** activity icon. The
+2. Double-click the **Deploy Task Sequence** activity icon. The
     **Properties** dialog opens.
 
-3.  Configuring the **Details** tab:
+3. Configuring the **Details** tab:
 
-    1.  In the **Connection** section, select the ellipsis button
+    1. In the **Connection** section, select the ellipsis button
         **(...)**, and then select the Configuration Manager server
         connection that you want to use for this activity. Select **OK**.
 
-    2.  In the **Fields** section, enter a value for each of the
+    2. In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
         select the ellipsis button **(…)** next to the text box to browse
         for a value.
@@ -135,11 +135,11 @@ above:
         value of the property from the data output by a previous
         activity in the runbook.
 
-4.  Configuring the **Schedule** tab:
+4. Configuring the **Schedule** tab:
 
     The Schedule tab allows you to define when the deployment becomes available or when it expires and the mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
 
     >[!NOTE]
     >When a deployment is set to **Required**, then a mandatory schedule must be defined for the deployment or the activity will fail.
 
-5.  Select **Finish**.
+5. Select **Finish**.

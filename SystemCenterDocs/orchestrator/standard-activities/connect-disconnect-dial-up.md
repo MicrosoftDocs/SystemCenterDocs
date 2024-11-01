@@ -2,7 +2,7 @@
 title: Connect-Disconnect Dial-up
 description: This article describes the Connect/Disconnect Dial-up activity.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Connect/Disconnect Dial-up
 
-
-
 The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connection or VPN. The connection must be configured on the Runbook server before the activity can use it. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252606(v=ws.10))  
 
-## Configuring the Connect/Disconnect Dial-up Activity  
+## Configure the Connect/Disconnect Dial-up Activity
+
  Use the following information to configure the Connect/Disconnect Dial-up activity.  
 
 ### Connection Tab  
@@ -33,7 +32,7 @@ The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connec
 |**Attempts**|Enter the number of times the activity should attempt to connect to the remote network before quitting.|  
 |**Delay**|Enter the amount of time, in seconds, that the activity should wait between retry attempts.|  
 
-### Authentication Tab  
+### Authentication Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -41,7 +40,8 @@ The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connec
 |**Username**|Enter the username to sign in to the remote network.|  
 |**Password**|Enter the password for the username.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

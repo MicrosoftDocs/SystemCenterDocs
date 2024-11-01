@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
 
@@ -29,7 +29,7 @@ Installation of Reporting and Web Console will be successful irrespective of the
 
 ::: moniker-end
 
-::: moniker range="=sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 >[!NOTE]
 > Operations Manager supports a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you are installing it.
@@ -68,9 +68,9 @@ EXEC [apm].GrantRWPermissionsToComputer N'[LOGIN]'
 
 The local and remote parameters are as follows:
 
--   For local installation, the LOGIN is: IIS APPPOOL\OperationsManagerAppMonitoring
+- For local installation, the LOGIN is: IIS APPPOOL\OperationsManagerAppMonitoring
 
--   For remote installation, the LOGIN is: Domain\MachineName$
+- For remote installation, the LOGIN is: Domain\MachineName$
 
 > [!NOTE]
 > If you run **Repair** on the web console after installation, the settings that were selected during installation will be restored. Any changes that you manually make to the web console configuration after the installation will be reset.
@@ -124,13 +124,13 @@ The local and remote parameters are as follows:
     > [!NOTE]
     > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
 
-10. On the **Diagnostic and Usage Data** page, review data collection terms and then select **Next** to continue.  
+11. On the **Diagnostic and Usage Data** page, review data collection terms and then select **Next** to continue.  
 
-11. If Microsoft Update isn't enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and select **Next**.
+12. If Microsoft Update isn't enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and select **Next**.
 
-12. Review your selections on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
+13. Review your selections on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
 
-13. When Setup is finished, the **Setup is complete** page appears. Select **Close**.
+14. When Setup is finished, the **Setup is complete** page appears. Select **Close**.
 
 ### Install the Web console on an existing Management server
 

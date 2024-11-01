@@ -1,11 +1,11 @@
 ---
 ms.assetid:
 title: Release Notes for System Center DPM
-description: Release notes about the Data Protection Manager 2016, 2019 and 2022 releases.
+description: Release notes about the DPM 2016, 2019, 2022 and 2025 releases.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/20/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.topic: article
@@ -13,6 +13,33 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # System Center DPM Release Notes
+
+::: moniker range="sc-dpm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Data Protection Manager (DPM), including the known issues and workarounds for DPM 2025.
+
+We recommend you to see the following articles for detailed information about what DPM supports and can back up:
+
+- [What can DPM back up](dpm-protection-matrix.md)
+- [What DPM supports](dpm-support-issues.md)
+
+## DPM 2025 release notes
+
+### Communication with the SQL instance might fail
+
+**Description**: Communication with the SQL instances (existing SQL, SharePoint backups or SQL instance enumeration) might fail post upgrading to DPM 2025 if OLEDB 19 isn't installed.
+
+**Workaround**: Install latest version of [OLEDB 19](https://learn.microsoft.com/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16) (19.3 and above) on all the machines where SQL instances are present and are being backed-up by the DPM server. Also, install on DPM server before enabling backups for DPM database.
+
+In addition, following are the improvements:
+
+- Upgrading a licensed DPM server to Eval build is blocked.
+- Upgrading Eval to a licensed build is blocked.
+- Improved/fixed duplicate summary manager jobs post upgrade.
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 
@@ -180,7 +207,7 @@ In addition to the issues documented above, DPM 2022 UR2 has the following issue
 
 ### Stopping protection of a data source from fails with ID: 33469
 
-**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469, *This operation is not supported on the current version of the MARS agent*.
+**Description**: Removing a data source from protection group or stopping backup results in an error with ID 33469 - *This operation is not supported on the current version of the MARS agent*.
 
 This issue occurs because DPM erroneously checks for an installed version of MARS (Microsoft Azure Recovery Services) agent 2.0.9262.0 or later and fails when no MARS agent is available on the DPM server.
 

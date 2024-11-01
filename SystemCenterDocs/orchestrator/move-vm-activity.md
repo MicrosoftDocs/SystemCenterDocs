@@ -13,11 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Move VM Activity
-
-
 
 The Move VM activity is used in a runbook to move the virtual disk to a specific location and can also associate the virtual machine with a different host. This allows the runbook to move virtual machines from one host to another. When a virtual machine is moved, the disk files are moved and the host association is changed. To change the host association without moving the disk files, use the Migrate VM activity.
 
@@ -47,11 +45,9 @@ No optional properties are provided for this activity.
 | Destination Resource Pool | The path of the destination resource pool.   | String   |
 | VM Path   | The path to the virtual machine that was moved.   | String   |
 
-## Configuring the Move VM activity
+## Configure the Move VM activity
 
-The following procedure describes the steps required to configure a Move VM activity.
-
-#### To configure the Move VM activity
+To configure the Move VM activity, follow these steps:
 
 1.  From the **Activities** pane, drag a **Move VM** activity to the active runbook.
 

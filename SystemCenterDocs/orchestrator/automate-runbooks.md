@@ -4,7 +4,7 @@ description: Provides an overview of runbook concepts and operations in System C
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -17,11 +17,13 @@ ms.custom: engagement-fy23
 The power of System Center - Orchestrator lies in providing runbooks and the individual activities that make up a runbook. Runbooks contain the instructions for an automated task or process. The individual steps throughout a runbook are called activities. Within the runbook, additional controls provide information and instructions to control the sequence of activities in the runbook. Runbooks, activities, and each runbook control have configurable properties. You modify these properties to configure the behavior that your runbook requires.  
 
 ## Starting Point
+
 Your runbook must have only one starting point. A starting point is an activity that automatically runs when the runbook is started. Each activity in the runbook runs after the previous activity in the workflow is completed.  
 
 If a runbook starts with any activity other than a monitor activity, the runbook begins processing, and attempts to run to completion. If the runbook starts with a monitoring activity, the monitor loads and waits for the trigger condition. When the condition is met, a runbook instance is created to run the remaining activities in the runbook. The monitor continues to run and waits for another occurrence of the trigger condition. Runbooks that start with monitors continue to run until you stop them from the Runbook Designer or Orchestration console.
 
 ## Variables
+
 When building runbooks, some settings are the same across activities. Variables let you specify a value that activities use in any runbook.  
 
 > [!IMPORTANT]  
@@ -37,25 +39,25 @@ When building runbooks, some settings are the same across activities. Variables 
 
 Use the following procedures to create, insert, and organize variables.  
 
-# [Create a variable](#tab/Create)  
+# [Create a variable](#tab/Create)
 
 Follow these steps to create a variable:
 
-1.  In the **Connections** pane in the Runbook Designer, expand the **Global Settings** folder, and then select the **Variables** folder.  
+1. In the **Connections** pane in the Runbook Designer, expand the **Global Settings** folder, and then select the **Variables** folder.  
 
-2.  Right-click the **Variables** folder or a subfolder of the **Variables** folder to select **New**, and then select **Variable** to open the **New Variable** dialog.  
+2. Right-click the **Variables** folder or a subfolder of the **Variables** folder to select **New**, and then select **Variable** to open the **New Variable** dialog.  
 
-3.  In the **Name** box, enter a name for the variable.  
+3. In the **Name** box, enter a name for the variable.  
 
-4.  In the **Description** box, enter a description that explains the purpose of the variable.  
+4. In the **Description** box, enter a description that explains the purpose of the variable.  
 
-5.  In the **Value** box, enter the value of the variable. This value replaces the placeholder in those activities where the variable is inserted.  
+5. In the **Value** box, enter the value of the variable. This value replaces the placeholder in those activities where the variable is inserted.  
 
-6.  If you want the variable to be encrypted (for example, to store a password for use in other runbook activities), select the **Encrypted Variable** checkbox.  
+6. If you want the variable to be encrypted (for example, to store a password for use in other runbook activities), select the **Encrypted Variable** checkbox.  
 
     For more information about best practices for using encrypted variables, see [Orchestrator Data Encryption](/previous-versions/system-center/system-center-2012-R2/hh912316(v=sc.12)).  
 
-7.  Select **Finish**.  
+7. Select **Finish**.  
 
 > [!IMPORTANT]  
 > Orchestrator doesn't let you combine an encrypted variable with plain text as a parameter value in a runbook.  
@@ -64,11 +66,11 @@ Follow these steps to create a variable:
 
 Follow these steps to insert a variable in an activity:
 
-1.  Right-click the applicable activity from your runbook to select **Properties**, and then select the **Details** tab to open the activities properties dialog.  
+1. Right-click the applicable activity from your runbook to select **Properties**, and then select the **Details** tab to open the activities properties dialog.  
 
-2.  In a text box, to open a menu, right-click to select **Subscribe**, and then select **Variable** to open the **Select a Variable** dialog.  
+2. In a text box, to open a menu, right-click to select **Subscribe**, and then select **Variable** to open the **Select a Variable** dialog.  
 
-3.  Select the variable name, and then select **OK**.  
+3. Select the variable name, and then select **OK**.  
 
     A placeholder `{variable}` is inserted next to the computer name in the **Computer** box.  
 
@@ -78,14 +80,15 @@ Follow these steps to insert a variable in an activity:
 
 Follow these steps to organize variables:
 
-1.  You can group variables into folders to organize them. To create a folder, right-click the **Variables** folder to select **New**, and then select **Folder**.  
+1. You can group variables into folders to organize them. To create a folder, right-click the **Variables** folder to select **New**, and then select **Folder**.  
 
-2.  To move a variable to a different folder, right-click the variable, and then select **Move** to open the **Select a Folder** dialog.  
+2. To move a variable to a different folder, right-click the variable, and then select **Move** to open the **Select a Folder** dialog.  
 
-3.  Select the destination folder, and then select **OK**. The variable is moved to the new folder location.
+3. Select the destination folder, and then select **OK**. The variable is moved to the new folder location.
 ---
 
-## Special Variables  
+## Special Variables
+
 You can specify special formats of variables to provide dynamic information to your runbooks. Specify the value of the variable to invoke this behavior.  
 
 `NOW()`: When the variable is resolved, it's set to the current date and time. You can pass arguments to this function to return specific portions of the date or time. For example, `NOW(hour)` returns the current hour. The following are the valid arguments for the `NOW()` function: day, dayofweek, dayofyear, month, year, hour, minute, second, millisecond.  
@@ -93,6 +96,7 @@ You can specify special formats of variables to provide dynamic information to y
 `%ENVVAR%`: This variable returns the value of the environment variable between the percent `(\)` symbols. The environment variable is based on the runbook server computer where the runbook is running, and it's not case-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable doesn't exist, the text specified within the variable is returned as-is (that is, if you enter `%ENVVAR%` and no environment variable named `ENVVAR` exists, the text `'%ENVVAR%'` is returned).  
 
 ## Workflow Control
+
 When you build runbooks in Orchestrator, it's important to understand the underlying logic of the workflow engine. By using this logic, you can create workflows to automate resource-based jobs and complex data processing tasks.  
 
 The workflow control provides the following controls: Smart Links and Embedded Loops.  
@@ -109,7 +113,7 @@ When a loop is configured for an activity, it continues to run with the same inp
 
 Loops run one time for each incoming piece of data that is passed to the activity. For example, consider a runbook that uses a **Query Database** activity followed by **Append Line**. If the **Query Database** activity returned three rows, the **Append Line** activity would run three times. If you have a loop on the **Append Line** activity, it would run three separate loops. After the first data item has looped through the **Append Line** activity, the next item goes through **Append Line** and loops until it exits, and then the third begins. After all the three items have been processed, the next activity in the runbook runs.
 
-## Extending Runbook capabilities
+## Extend Runbook capabilities
 
 Orchestrator provides two options for extending standard activities. You can either build new activities or create new Integration Packs (IP). IPs are collections of activities for Microsoft and products of other companies, which are specific to a product or technology. If the functionality that you require isn't available in an IP, you have the alternative option of using the Orchestrator Integration Toolkit.
 

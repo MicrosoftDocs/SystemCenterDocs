@@ -2,7 +2,7 @@
 title: Delete List Item
 description: The Delete List Item activity is used in a runbook to delete an item from a Microsoft SharePoint list.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Delete List Item
-
-
 
 The **Delete List Item** activity is used in a runbook to delete an item from a Microsoft SharePoint list.
 

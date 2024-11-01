@@ -13,7 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ROBOTS: noindex
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ---
 # Migrate VM activity
 
@@ -45,7 +45,7 @@ No optional properties are provided for this activity.
 | Move Priority   | The priority level assigned to the migration.   | String   |
 | VM Path   | The path to the virtual machine that was migrated. | String   |
 
-## Configuring the Migrate VM activity
+## Configure the Migrate VM activity
 
 The following procedure describes the steps required to configure a Migrate VM activity.
 

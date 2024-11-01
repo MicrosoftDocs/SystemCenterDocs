@@ -1,10 +1,10 @@
 ---
-title: Comparing the Operations and Web Console
+title: Compare the Operations and Web Console
 description: This article describes both of the Operations Manager consoles and the differences between them for viewing monitoring data and performing administration in the management group.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,11 +12,12 @@ ms.topic: article
 ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 ---
 
-# Comparing the Operations and Web console
+# Compare the Operations and Web console
 
 
 
 System Center Operations Manager includes two consoles:
+
 - The Operations console
 - The Web console
 
@@ -41,19 +42,19 @@ In the web console, only Monitoring and My Workspace are available:
 
 There are a few differences between the Operations console and Web console that you should be aware of:  
 
--   There are minor differences in sort. For example, in the Web console, when you sort alerts, only the alerts visible on the page are sorted rather than all alerts.  
+- There are minor differences in sort. For example, in the Web console, when you sort alerts, only the alerts visible on the page are sorted rather than all alerts.  
 
--   Fewer alerts display per page in the Web console.  
+- Fewer alerts display per page in the Web console.  
 
--   You can't run tasks that require elevated access in the Web console.  
+- You can't run tasks that require elevated access in the Web console.  
 
--   You can't access event views.
+- You can't access event views.
 
--   Informational alerts aren't presented in an alerts view.  
+- Informational alerts aren't presented in an alerts view.  
 
--   You don't have the options to show, hide, personalize, or create views in the Web console, although you can create a dashboard view in My Workspace in the Web console.  
+- You don't have the options to show, hide, personalize, or create views in the Web console, although you can create a dashboard view in My Workspace in the Web console.  
 
--   There are no subscription options in the Web console.
+- There are no subscription options in the Web console.
 
 ## Next steps
 

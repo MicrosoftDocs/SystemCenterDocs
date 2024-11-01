@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/16/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,16 @@ ms.topic: article
 
 # What's New in Operations Manager
 
+::: moniker range="sc-om-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article provides details of the new features supported in System Center 2025 - Operations Manager.
+
+[!INCLUDE [whats-new-om-2025.md](../includes/whats-new-om-2025.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2022"
 
 This article provides details of the new features supported in System Center 2022 - Operations Manager. It also includes the new features in Operations Manager 2022 UR1.
@@ -21,6 +31,7 @@ This article provides details of the new features supported in System Center 202
 [!INCLUDE [whats-new-om-2022.md](../includes/whats-new-om-2022.md)]
 
 ### Discover Azure Monitor SCOM Managed Instance (preview) from Operations Manager console
+
 Operations Manager 2022 UR1 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. [Learn more](operations-manager-managed-instance-overview.md).
 
 :::image type="content" source="media/whats-new-in-om/discover-scom-managed-instance-inline.png" alt-text="Screenshot of SCOM Managed Instance (preview) page." lightbox="media/whats-new-in-om/discover-scom-managed-instance-expanded.png":::
@@ -34,13 +45,16 @@ This article provides details of the new features supported in System Center 201
 [!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
 
 ### Discover Azure Monitor SCOM Managed Instance (preview) from Operations Manager console
+
 Operations Manager 2019 UR5 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. [Learn more](operations-manager-managed-instance-overview.md).
 
 :::image type="content" source="media/whats-new-in-om/discover-scom-managed-instance-inline.png" alt-text="Screenshot of SCOM Managed Instance (preview) page." lightbox="media/whats-new-in-om/discover-scom-managed-instance-expanded.png":::
 
 ### Telemetry capability enhancements
+
 With Operations Manager 2019 UR5, the following additional data points are supported for notifications:
-- Notification channels 
+
+- Notification channels
 - Notification subscriptions
 
 ::: moniker-end
@@ -64,4 +78,5 @@ This article provides details of the new features supported in System Center 201
 ::: moniker-end
 
 ## Next steps
+
 [Know the system requirements for Operations Manager](./system-requirements.md)

@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: e233cb46-69de-439d-a4f8-08d8ac993e64
 ms.custom: UpdateFrequency3, engagement-fy24
@@ -26,65 +26,65 @@ The Microsoft Azure management pack for Operations Manager is supported in this 
 
 For the System Center Operations Manager configuration item (CI) connector to function correctly, you've to import a set of management packs into Service Manager. The management packs and the Windows PowerShell script that you need to import the management packs are in the Service Manager installation folder. The default installation folder is \Program Files\Microsoft System Center\Service Manager \<version\>\Operations Manager Management Packs and System Center - Operations Manager Management Packs. Use the following procedures to import the management packs into Service Manager.
 
-### To import Operations Manager management packs for an Operations Manager CI connector
+To import Operations Manager management packs for an Operations Manager CI connector, follow these steps:
 
-1.  On the computer that is hosting the Service Manager management server, on the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell**, right-click **Windows PowerShell**, and select **Run as administrator**.
+1. On the computer that is hosting the Service Manager management server, on the Windows desktop, select **Start**, point to **Programs**, point to **Windows PowerShell**, right-click **Windows PowerShell**, and select **Run as administrator**.
 
-2.  In Windows PowerShell, enter the following command, and then press ENTER:
+2. In Windows PowerShell, enter the following command, and then press ENTER:
 
-    ```
+    ```powershell
     Get-ExecutionPolicy
     ```
 
-3.  Review the output and note the current execution policy setting.
+3. Review the output and note the current execution policy setting.
 
-4.  Enter the following commands, and then press ENTER after each command:
+4. Enter the following commands, and then press ENTER after each command:
 
-    ```
+    ```powershell
     Set-ExecutionPolicy Unrestricted
     ```
 
-    ```
+    ```powershell
     Set-Location \"Program Files\Microsoft System Center \<version\>\Service Manager\Operations Manager Management Packs"
     ```
 
-5.  Type the following command, and then press ENTER:
+5. Type the following command, and then press ENTER:
 
-    ```
+    ```powershell
     .\installOMMPs.ps1
     ```
 
     This command starts the Windows PowerShell script that installs the management packs. Wait for the management packs to be imported.
 
-6.  Change the execution policy back to the value that you noted in step 3. For example, enter the following command to set the execution policy to Restricted, and then press ENTER:
+6. Change the execution policy back to the value that you noted in step 3. For example, enter the following command to set the execution policy to Restricted, and then press ENTER:
 
-    ```
+    ```powershell
     Set-ExecutionPolicy Restricted
     ```
 
-7.  To exit Windows PowerShell, enter the following command, and then press ENTER:
+7. To exit Windows PowerShell, enter the following command, and then press ENTER:
 
-    ```
+    ```powershell
     Exit
     ```
 
-### To import Operations Manager management packs for an Operations Manager CI connector
+### Import Operations Manager management packs for an Operations Manager CI connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Management Packs**.
+2. In the **Administration** pane, expand **Administration**, and select **Management Packs**.
 
-3.  In the **Tasks** pane, under **Management Packs**, select **Import**.
+3. In the **Tasks** pane, under **Management Packs**, select **Import**.
 
-4.  In the **Select Management Packs to Import** box, point to the drive where Service Manager is installed, and then point to Program Files\Microsoft System Center\Service Manager \<version\>\Operations Manager \<version\> Management Packs.
+4. In the **Select Management Packs to Import** box, point to the drive where Service Manager is installed, and then point to Program Files\Microsoft System Center\Service Manager \<version\>\Operations Manager \<version\> Management Packs.
 
-5.  To the right of the **File name** box, select the file type **MP files (\*.mp)**.
+5. To the right of the **File name** box, select the file type **MP files (\*.mp)**.
 
-6.  In the list of files, select all of the management packs, and select **Open**.
+6. In the list of files, select all of the management packs, and select **Open**.
 
-7.  In **Import Management Packs**, select all of the management packs, and select **Import**.
+7. In **Import Management Packs**, select all of the management packs, and select **Import**.
 
-8.  When the import process is complete, the message *The management pack was imported successfully* will appear.
+8. When the import process is complete, the message *The management pack was imported successfully* will appear.
 
 9. Select **OK**.
 
@@ -101,7 +101,7 @@ You have the option of defining Service Manager templates that run when alerts o
 
 There are two phases for creating the Alert connector. The first part involves creating the Alert connector on the Service Manager management server. The second part requires that you start the Operations Manager console and set up a subscription for the newly created connector. The subscription you create must be unique for the Alert connector; no connector that is created to point to Operations Manager should have a subscription that overlaps with another Operations Manager internal connector. Both phases are described in the following procedure.
 
-### To create an Operations Manager alert connector
+### Create an Operations Manager alert connector
 
 1. In the Service Manager console, select **Administration**.
 
@@ -111,23 +111,23 @@ There are two phases for creating the Alert connector. The first part involves c
 
 4. Complete the following steps to complete the Operations Manager Alert Connector Wizard:
 
-   1.  On the **Before You Begin** page, select **Next**.
+   1. On the **Before You Begin** page, select **Next**.
 
-   2.  On the **General** page, in the **Name** box, enter a name for the new connector. Ensure that the **Enable** checkbox is selected, and select **Next**. Make a note of this name; you'll need this name in step 7 of this procedure.
+   2. On the **General** page, in the **Name** box, enter a name for the new connector. Ensure that the **Enable** checkbox is selected, and select **Next**. Make a note of this name; you'll need this name in step 7 of this procedure.
 
-   3.  On the **Server Details** page, in the **Server name** box, enter the name of the server that is hosting the Operations Manager root management server. Under **Credentials**, select **New**.
+   3. On the **Server Details** page, in the **Server name** box, enter the name of the server that is hosting the Operations Manager root management server. Under **Credentials**, select **New**.
 
-   4.  In the **Run As Account** dialog, in the **Display name** box, enter a name for this Run As account. In the **Account** list, select **Windows Account**.
+   4. In the **Run As Account** dialog, in the **Display name** box, enter a name for this Run As account. In the **Account** list, select **Windows Account**.
 
-   5.  In the **User Name**, **Password**, and **Domain** fields, enter the credentials for the Run As account, and select **OK**.
+   5. In the **User Name**, **Password**, and **Domain** fields, enter the credentials for the Run As account, and select **OK**.
 
-   6.  On the **Server Details** page, select **Test Connection**. If you receive the following confirmation message, select **OK**, and select **Next**:
+   6. On the **Server Details** page, select **Test Connection**. If you receive the following confirmation message, select **OK**, and select **Next**:
 
        *The connection to the server was successful.*
 
-   7.  On the **Alert Routing Rules** page, select **Add**.
+   7. On the **Alert Routing Rules** page, select **Add**.
 
-   8.  In the **Add Alert Routing Rule** dialog, create a name for the rule, select the template that you want to use to process incidents created by an alert, and then select the alert criteria that you want to use. Select **OK**, and select **Next**.
+   8. In the **Add Alert Routing Rule** dialog, create a name for the rule, select the template that you want to use to process incidents created by an alert, and then select the alert criteria that you want to use. Select **OK**, and select **Next**.
 
    9. On the **Schedule** page, select **Close alerts in Operations Manager when incidents are resolved or closed** or **Resolve incidents automatically when the alerts in Operations Manager are closed**, select **Next**, and select **Create**.
 
@@ -151,57 +151,57 @@ There are two phases for creating the Alert connector. The first part involves c
 
 14. In the **Alert Sync:*name of connector*** dialog, select **OK**.
 
-### To validate the creation of an Operations Manager alert connector
+### Validate the creation of an Operations Manager alert connector
 
--   Confirm that the connector you created is displayed in the Service Manager console in the **Connectors** pane.
+- Confirm that the connector you created is displayed in the Service Manager console in the **Connectors** pane.
 
--   Confirm that incidents are created in Service Manager from alerts in Operations Manager.
+- Confirm that incidents are created in Service Manager from alerts in Operations Manager.
 
-### To create an Operations Manager CI connector
+### Create an Operations Manager CI connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Tasks** pane, under **Connectors**, select **Create Connector**, and select **Operations Manager CI Connector**.
+3. In the **Tasks** pane, under **Connectors**, select **Create Connector**, and select **Operations Manager CI Connector**.
 
-4.  Complete the following steps to complete the Operations Manager CI Connector Wizard:
+4. Complete the following steps to complete the Operations Manager CI Connector Wizard:
 
-    1.  On the **General** page, in the **Name** box, enter a name for the new connector. Ensure that the **Enable** checkbox is selected, and select **Next**.
+    1. On the **General** page, in the **Name** box, enter a name for the new connector. Ensure that the **Enable** checkbox is selected, and select **Next**.
 
-    2.  On the **Server Details** page, in the **Server name** box, enter the name of the server that is hosting the Operations Manager root management server.
+    2. On the **Server Details** page, in the **Server name** box, enter the name of the server that is hosting the Operations Manager root management server.
 
-    3.  Use one of the following methods to enter credentials:
+    3. Use one of the following methods to enter credentials:
 
-        -   Under **Credentials**, select the Run As account you created for the alert connector, and then go to step 4d.
+        - Under **Credentials**, select the Run As account you created for the alert connector, and then go to step 4d.
 
-        -   Under **Credentials**, select **New**. In the **User name**, **Password**, and **Domain** boxes, enter the credentials for the Run As account, and select **OK**.
+        - Under **Credentials**, select **New**. In the **User name**, **Password**, and **Domain** boxes, enter the credentials for the Run As account, and select **OK**.
 
-    4.  On the **Server Details** page, select **Test Connection**. If you receive the following confirmation message, select **OK**, and select **Next**:
+    4. On the **Server Details** page, select **Test Connection**. If you receive the following confirmation message, select **OK**, and select **Next**:
 
         *The connection to the server was successful.*
 
-    5.  On the **MP Selection** page, select **Select all**, or select the management packs that define the configuration items you want to import, and select **Next**.
+    5. On the **MP Selection** page, select **Select all**, or select the management packs that define the configuration items you want to import, and select **Next**.
 
-    6.  On the **Schedule** page, select **Next**, and select **Create**.
+    6. On the **Schedule** page, select **Next**, and select **Create**.
 
-### To validate the creation of an Operations Manager CI connector
+### Validate the creation of an Operations Manager CI connector
 
--   Confirm that the objects that Operations Manager discovered are listed as configuration items in Service Manager.
+- Confirm that the objects that Operations Manager discovered are listed as configuration items in Service Manager.
 
-### To confirm the status of an Operations Manager connector
+### Confirm the status of an Operations Manager connector
 
--   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of import completion.
+- View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of import completion.
 
 ![PowerShell symbol](./media/import-data-om/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new Operations Manager alert connector in Service Manager, see [New-SCOMAlertConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316238(v=sc.20)).
+- For information about how to use Windows PowerShell to create a new Operations Manager alert connector in Service Manager, see [New-SCOMAlertConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316238(v=sc.20)).
 
--   For information about how to use Windows PowerShell to create an alert rule to be used with an Operations Manager alert connector in Service Manager, see [New-SCSMAlertRule](/previous-versions/system-center/powershell/system-center-2012-r2/hh316241(v=sc.20)).
+- For information about how to use Windows PowerShell to create an alert rule to be used with an Operations Manager alert connector in Service Manager, see [New-SCSMAlertRule](/previous-versions/system-center/powershell/system-center-2012-r2/hh316241(v=sc.20)).
 
--   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316228(v=sc.20)).
+- For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316228(v=sc.20)).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
 
 ## Synchronize an Operations Manager connector
 
@@ -210,23 +210,23 @@ When you create an Operations Manager alert connector for Service Manager, it po
 > [!NOTE]
 > The **Start Time** and **Finish Time** values aren't updated when an alert connector is synchronized. These values are only updated when alert data is transferred between Operations Manager and Service Manager.
 
-### To manually synchronize an Operations Manager connector
+### Manually synchronize an Operations Manager connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Operations Manager connector that you want to synchronize.
+3. In the **Connectors** pane, select the Operations Manager connector that you want to synchronize.
 
-4.  In the **Tasks** pane, under the connector name, select **Synchronize Now**.
+4. In the **Tasks** pane, under the connector name, select **Synchronize Now**.
 
-5.  In the **Synchronize Now** dialog, select **OK**.
+5. In the **Synchronize Now** dialog, select **OK**.
 
-### To validate Operations Manager connector synchronization
+### Validate Operations Manager connector synchronization
 
-1.  In the Service Manager console, select **Configuration Items**.
+1. In the Service Manager console, select **Configuration Items**.
 
-2.  In the **Configuration Items** pane, expand **Computers**, and select **All Windows Computers**. Verify that any new computers that were discovered in Operations Manager appear in the **All Windows Computers** pane.
+2. In the **Configuration Items** pane, expand **Computers**, and select **All Windows Computers**. Verify that any new computers that were discovered in Operations Manager appear in the **All Windows Computers** pane.
 
 ## Disable and enable an Operations Manager connector
 
@@ -236,65 +236,65 @@ For example, after you configure an Operations Manager connector, if you must pe
 
 For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](/troubleshoot/system-center/scom/remove-old-product-connectors) on Kevin Holman's System Center blog.
 
-### To disable an Operations Manager connector
+### Disable an Operations Manager connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Operations Manager connector that you want to disable.
+3. In the **Connectors** pane, select the Operations Manager connector that you want to disable.
 
-4.  In the **Tasks** pane, under the connector name, select **Disable**.
+4. In the **Tasks** pane, under the connector name, select **Disable**.
 
-5.  In the **Disable Connector** dialog, select **OK**.
+5. In the **Disable Connector** dialog, select **OK**.
 
-### To enable an Operations Manager connector
+### Enable an Operations Manager connector
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Operations Manager connector that you want to enable.
+3. In the **Connectors** pane, select the Operations Manager connector that you want to enable.
 
-4.  In the **Tasks** pane, under the connector name, select **Enable**.
+4. In the **Tasks** pane, under the connector name, select **Enable**.
 
-5.  In the **Enable Connector** dialog, select **OK**.
+5. In the **Enable Connector** dialog, select **OK**.
 
-### To validate the status change of an Operations Manager connector
+### Validate the status change of an Operations Manager connector
 
-1.  Wait 30 seconds. Then, in the Service Manager console, select **Administration**, and select **Connectors**.
+1. Wait 30 seconds. Then, in the Service Manager console, select **Administration**, and select **Connectors**.
 
-2.  In the **Connectors** pane, locate the connector for which you've changed the status, and verify the value in the **Enabled** column.
+2. In the **Connectors** pane, locate the connector for which you've changed the status, and verify the value in the **Enabled** column.
 
 ![PowerShell symbol](./media/import-data-om/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316244(v=sc.20)).
+- For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316244(v=sc.20)).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
 
--   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316217(v=sc.20)).
+- For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316217(v=sc.20)).
 
 ## Edit an Operations Manager connector
 
 After you install an Operations Manager alert connector and configuration item (CI) connector, you can edit the connectors. For example, you can use the following procedure to add more management packs to the CI connector.
 
-### To edit an Operations Manager CI connector
+To edit an Operations Manager CI connector, follow these steps:
 
-1.  In the Service Manager console, select **Administration**.
+1. In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Connectors** pane, select the Operations Manager connector that you want to edit.
+3. In the **Connectors** pane, select the Operations Manager connector that you want to edit.
 
-4.  In the **Tasks** pane, under the connector name, select **Properties**.
+4. In the **Tasks** pane, under the connector name, select **Properties**.
 
-5.  In the **Edit** dialog, in the left pane, select **Management Packs**.
+5. In the **Edit** dialog, in the left pane, select **Management Packs**.
 
-6.  In the **Management Packs** pane, select **Refresh**.
+6. In the **Management Packs** pane, select **Refresh**.
 
-7.  In the **Credentials** dialog, enter the credentials to connect to Operations Manager, and select **OK**.
+7. In the **Credentials** dialog, enter the credentials to connect to Operations Manager, and select **OK**.
 
-8.  In the **Management Packs** list, select the management packs that define the configuration items that you want to import, and select **OK**.
+8. In the **Management Packs** list, select the management packs that define the configuration items that you want to import, and select **OK**.
 
 ## Next steps
 

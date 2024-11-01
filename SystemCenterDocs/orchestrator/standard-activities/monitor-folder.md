@@ -2,7 +2,7 @@
 title: Monitor Folder
 description: This article describes how to configure the Monitor Folder Activity
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Monitor Folder
 
-
-
 The Monitor Folder activity invokes a runbook when the folder that you specified has changed, or if the files within that folder have been changed. You can monitor the size of log files in a folder. If the files grow too large, the Monitor Folder activity can invoke a runbook that will archive, backup, and then purge the log files to clean up the folder.  
 
-## Configuring the Monitor Folder Activity  
+## Configure the Monitor Folder Activity
+
  Before you configure the Monitor Folder activity, you need to determine the following:  
 
 - The folder name you're monitoring.  
@@ -40,21 +39,22 @@ Use the following information to configure the Monitor Folder activity.
 |**Include sub-folders**|Select this option to monitor the files and folders in sub-folders in the **Folder** that you specified.|  
 |**File Filters**|Create filters with custom criteria for the files that you want to monitor. Perform the following for each filter that you want to create:<br /><br /> 1.  Select **Add** to open the **Filter Settings** dialog.<br />2.  From the **Name** menu list, select the criteria that you want to use. The **Relation** and **Value** menu options present custom options according to the criteria that you select from the **Name** menu items.<br />3.  Select from the **Relation** and **Value** menu items.<br />4.  Select **OK**.|  
 
-### Triggers Tab  
+### Triggers Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Number of files is**|Select this option to invoke the Monitor Folder activity if the number of files is greater than, equal to, or less than the value that you provide. Select the criteria from the dropdown list and enter the value in the field.|  
 |**Total file size is**|Select this option to invoke the Monitor Folder activity if the total file size of the folder is greater than or less than the value that you provide. Select the criteria from the first dropdown list, enter the value in the field, and select the unit of measure from the last dropdown list.|  
 
-### Authentication Tab  
+### Authentication Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**User name**|Enter the user name required to access the folder if it's on a remote computer.|  
 |**Password**|Enter the password required to access the folder if it's on a remote computer.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

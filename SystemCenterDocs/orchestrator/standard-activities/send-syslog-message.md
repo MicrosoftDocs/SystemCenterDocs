@@ -2,7 +2,7 @@
 title: Send Syslog Message 
 description: This article provides information about the Send Syslog Message activity
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Send Syslog Message
 
-
-
 The Send Syslog Message activity creates a message on the Syslog server that you specify. You can use this activity to create audit logs on the Syslog server that document any problems that occur while trying to correct issues using an automated runbook.  
 
-## Configuring the Send Syslog Message Activity  
+## Configuring the Send Syslog Message Activity
+
  Use the following information to configure the Send Syslog Message activity.  
 
 ### Details Tab  
@@ -33,7 +32,8 @@ The Send Syslog Message activity creates a message on the Syslog server that you
 |**Priority**|Select the priority from the dropdown menu that is appropriate for this message.|  
 |**Facility**|Select the facility from the dropdown menu that is appropriate for this message.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

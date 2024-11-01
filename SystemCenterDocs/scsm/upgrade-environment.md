@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -34,11 +34,12 @@ You can't start an upgrade to System Center 2016 - Service Manager if any data w
     ![Screenshot of the Active Directory Connector wizard.](./media/upgrade-environment/sm-adconnector01.png)
 
 ## Prepare Service Manager 2012 R2 for upgrade
+
 This article describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:  
 
-1.  List the data warehouse jobs that are running and disable them.
+1. List the data warehouse jobs that are running and disable them.
 
-2.  Confirm that the data warehouse jobs have stopped running.  
+2. Confirm that the data warehouse jobs have stopped running.  
 
 3. When the data warehouse jobs have completed, start the upgrade of the data warehouse management server.  
 
@@ -46,7 +47,7 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 
 5. Wait for 10 minutes, and then start the upgrade of the Service Manager management server.  
 
-### To list the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
+### List the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
 
 1. On the computer that hosts the data warehouse management server, select **Start**, select **All Programs**, select **Microsoft System Center 2012 R2**, and select **Service Manager Shell**.  
 
@@ -74,17 +75,17 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 3. A list of the data warehouse jobs appears.
 
 
-### To confirm that the data warehouse jobs have stopped running  
+### Confirm that the data warehouse jobs have stopped running  
 
-1.  In the Service Manager console, select **Data Warehouse**.  
+1. In the Service Manager console, select **Data Warehouse**.  
 
-2.  In the **Data Warehouse** pane, expand **Data Warehouse**, and select **Data Warehouse Jobs**.  
+2. In the **Data Warehouse** pane, expand **Data Warehouse**, and select **Data Warehouse Jobs**.  
 
-3.  In the **Data Warehouse Jobs** pane, observe the **Status** column for each data warehouse job. When the status for each job is listed as **Not Started**, proceed to the next procedure to stop the Self-Service Portal. If no Self-Service Portal exists in your environment, you can start the upgrade process.  
+3. In the **Data Warehouse Jobs** pane, observe the **Status** column for each data warehouse job. When the status for each job is listed as **Not Started**, proceed to the next procedure to stop the Self-Service Portal. If no Self-Service Portal exists in your environment, you can start the upgrade process.  
 
-### To prevent MPSync jobs from failing  
+### Prevent MPSync jobs from failing  
 
--   Run the SQL script below on the DWRepository database to get the SQL scripts that drop and add a constraint on the primary key in fact tables in the DWRepository database to correct the problem  
+- Run the SQL script below on the DWRepository database to get the SQL scripts that drop and add a constraint on the primary key in fact tables in the DWRepository database to correct the problem  
 
     ```  
     ;WITH FactName  
@@ -141,34 +142,36 @@ Use the following procedures to upgrade your Service Manager environment to Syst
 Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](upgrade-configs-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
 
 ### Upgrade steps for custom development
+
 With the System Center 2016 - Service Manager release, the product has moved to support .NET 4.5.1. The tool set to support this movement to .NET 4.5.1 is required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in-house or by third party (non-Microsoft). Refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/) to avoid getting into this problem.
 
-### Upgrade the data warehouse management server  
+### Upgrade the data warehouse management server
+
  Use the following procedure to upgrade the data warehouse management server.  
 
 > [!IMPORTANT]  
->  Ensure that you've stopped the data warehouse jobs before you continue.  
+> Ensure that you've stopped the data warehouse jobs before you continue.  
 
-#### To upgrade the data warehouse management server  
+To upgrade the data warehouse management server, follow these steps:
 
-1.  Sign in to the computer that will host the data warehouse management server by using an account that is a member of the Administrators group. This account must also be a local administrator.  
+1. Sign in to the computer that will host the data warehouse management server by using an account that is a member of the Administrators group. This account must also be a local administrator.  
 
-2.  On the Service Manager installation media, double\-click the **Setup.exe** to start the Service Manager Setup Wizard.  
+2. On the Service Manager installation media, double\-click the **Setup.exe** to start the Service Manager Setup Wizard.  
 
-3.  On the **Microsoft System Center 2016** page, select **Upgrade Service Manager data warehouse management server**.  
+3. On the **Microsoft System Center 2016** page, select **Upgrade Service Manager data warehouse management server**.  
 
-4.  On the **Prepare for upgrade** page, select the two items indicating that you've read the appropriate sections in the System Center 2016 - Service Manager Upgrade Guide, and select **Next**.  
+4. On the **Prepare for upgrade** page, select the two items indicating that you've read the appropriate sections in the System Center 2016 - Service Manager Upgrade Guide, and select **Next**.  
 
-5.  On the **Product registration** page, enter the appropriate information in the boxes. Read the Microsoft Software License Terms; if applicable, select **I have read, understood, and agree with the terms of the license agreement**; and select **Next**.  
+5. On the **Product registration** page, enter the appropriate information in the boxes. Read the Microsoft Software License Terms; if applicable, select **I have read, understood, and agree with the terms of the license agreement**; and select **Next**.  
 
-6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
+6. On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
 
-7.  On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, enter the computer name of the server that will host the SQL Server Analysis Services \(SSAS\) database, and then press the tab key. When **Default** appears in the **SQL Server instance** box, select **Next**.  
+7. On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, enter the computer name of the server that will host the SQL Server Analysis Services \(SSAS\) database, and then press the tab key. When **Default** appears in the **SQL Server instance** box, select **Next**.  
 
     > [!IMPORTANT]  
-    >  If you're installing SSAS on a computer other than the computer that hosts the data warehouse management server and there's a firewall in your environment, you must ensure that the proper firewall ports are opened. For more information, see **Port Assignments for System Center 2016 - Service Manager** in the [Planning Guide for System Center 2016 - Service Manager](plan-sm.md).  
+    > If you're installing SSAS on a computer other than the computer that hosts the data warehouse management server and there's a firewall in your environment, you must ensure that the proper firewall ports are opened. For more information, see **Port Assignments for System Center 2016 - Service Manager** in the [Planning Guide for System Center 2016 - Service Manager](plan-sm.md).  
 
-8.  On the **Configure Analysis Services credential** page, specify the user name, password, and domain for the account, and select **Test Credentials**. After you receive a message saying **The credentials were accepted**, select **Next**.  
+8. On the **Configure Analysis Services credential** page, specify the user name, password, and domain for the account, and select **Test Credentials**. After you receive a message saying **The credentials were accepted**, select **Next**.  
 
 9. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, select **Privacy statement for System Center Service Manager**, and select **Next**.
 
@@ -178,47 +181,49 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 
 12. On **The upgrade was completed successfully** page, if you've already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** checkbox, and select **Close**.  
 
-### Upgrade the Service Manager management server  
+### Upgrade the Service Manager management server
+
  Use the following procedure to upgrade the Service Manager management server.  
 
-#### To upgrade the Service Manager management server  
+To upgrade the Service Manager management server, follow these steps:
 
-1.  Sign in to the computer that will host the Service Manager management server by using an account that is a member of the Administrators group.  
+1. Sign in to the computer that will host the Service Manager management server by using an account that is a member of the Administrators group.  
 
-2.  On the Service Manager installation media, double\-click the **Setup.exe** to start the Service Manager Setup Wizard.  
+2. On the Service Manager installation media, double\-click the **Setup.exe** to start the Service Manager Setup Wizard.  
 
-3.  On the **Microsoft System Center 2016** page, select **Upgrade Service Manager management server**.  
+3. On the **Microsoft System Center 2016** page, select **Upgrade Service Manager management server**.  
 
-4.  On the **Prepare for upgrade** page, select the two items indicating that you've read the appropriate sections in the Upgrade Guide for System Center 2016 - Service Manager, and select **Next**.  
+4. On the **Prepare for upgrade** page, select the two items indicating that you've read the appropriate sections in the Upgrade Guide for System Center 2016 - Service Manager, and select **Next**.  
 
-5.  On the **Product registration** page, enter the appropriate information in the boxes. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
+5. On the **Product registration** page, enter the appropriate information in the boxes. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
 
-6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
+6. On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
 
-7.  On the **Configuration Summary** page, read the information that is provided, and, if it's accurate, select **Install**.  
+7. On the **Configuration Summary** page, read the information that is provided, and, if it's accurate, select **Install**.  
 
-8.  On the **The upgrade was completed successfully** page, if you've already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** checkbox, and select **Close**.  
+8. On the **The upgrade was completed successfully** page, if you've already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** checkbox, and select **Close**.  
 
-### Upgrade the Service Manager console  
+### Upgrade the Service Manager console
+
  Use the following procedure to upgrade the Service Manager console.  
 
-#### To upgrade the Service Manager console  
+To upgrade the Service Manager console, follow these steps:
 
-1.  Sign in to the computer that will host the Service Manager console by using an account that is a member of the Administrators group.  
+1. Sign in to the computer that will host the Service Manager console by using an account that is a member of the Administrators group.  
 
-2.  On the Service Manager installation media, double\-click the **Setup.exe** to start the Service Manager Setup Wizard.  
+2. On the Service Manager installation media, double\-click the **Setup.exe** to start the Service Manager Setup Wizard.  
 
-3.  On the **Microsoft System Center 2016** page, select **Upgrade Service Manager console**.  
+3. On the **Microsoft System Center 2016** page, select **Upgrade Service Manager console**.  
 
-4.  On the **Prepare for upgrade** page, select the two items indicating that you've read the appropriate sections in the Upgrade Guide for System Center 2016 - Service Manager, and select **Next**.  
+4. On the **Prepare for upgrade** page, select the two items indicating that you've read the appropriate sections in the Upgrade Guide for System Center 2016 - Service Manager, and select **Next**.  
 
-5.  On the **Product registration** page, read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
+5. On the **Product registration** page, read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
 
-6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
+6. On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
 
-7.  On the **Configuration Summary** page, read the information that is provided, and, if it's accurate, select **Install**.  
+7. On the **Configuration Summary** page, read the information that is provided, and, if it's accurate, select **Install**.  
 
-8.  On **The upgrade was completed successfully** page, select **Close**.
+8. On **The upgrade was completed successfully** page, select **Close**.
 
 ## Next steps
 

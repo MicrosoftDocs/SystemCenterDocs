@@ -2,7 +2,7 @@
 title: Query ConfigMgr activity
 description: Describes the configurable properties for the Query ConfigMgr activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/09/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 ---
 
 # Query ConfigMgr activity for Configuration Manager Integration Pack
-
-
 
 The Query ConfigMgr activity allows users to run an ad-hoc WQL query
 against Configuration Manager, returning the query results to published

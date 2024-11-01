@@ -4,7 +4,7 @@ description: This article provides guidance on how to manage the cache for the H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/19/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -25,7 +25,7 @@ A possible reason to clear the Operations Console cache is to fix errors that oc
 > [!IMPORTANT]
 > Before proceeding close any open consoles.
 
-### [Using PowerShell](#tab/using-powershell)
+#### [PowerShell](#tab/powershell)
 
 This may need to be executed from an Administrator PowerShell console, depending on organization policy.
 
@@ -37,7 +37,7 @@ Start-Process ((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\System Center Operati
 Start-Process "$Env:ProgramFiles\Microsoft System Center\Operations Manager\Console\Microsoft.EnterpriseManagement.Monitoring.Console.exe" -ArgumentList "/clearCache"
 ```
 
-#### [Using Command Prompt](#tab/using-command-prompt)
+#### [Command Prompt](#tab/command-prompt)
 
 This may need to be executed from an Administrator Command Prompt, depending on organization policy.
 
@@ -73,6 +73,7 @@ One of the last steps in troubleshooting is to clear the cache. This will remove
 This may need to be executed from an Administrator console depending on organization policy.
 
 PowerShell:
+
 ```powershell
 # This will read the install directory from registry and perform the same steps outlined
 Stop-Service HealthService -Force -Verbose;
@@ -81,6 +82,7 @@ Start-Service HealthService -Verbose
 ```
 
 Command Prompt (as a batch file):
+
 ```cmd
 :: Clear Health Service State (Cache)
 ECHO OFF
@@ -117,6 +119,7 @@ One of the last steps in troubleshooting is clearing the cache. Sometimes, the g
 This may need to be executed from an Administrator console depending on organization policy.
 
 PowerShell:
+
 ```powershell
 # This will read the install directory from registry and perform the same steps outlined
 Stop-Service HealthService -Force -Verbose;
@@ -125,6 +128,7 @@ Start-Service HealthService -Verbose
 ```
 
 Command Prompt (as a batch file):
+
 ```cmd
 :: Clear Health Service State (Cache)
 ECHO OFF

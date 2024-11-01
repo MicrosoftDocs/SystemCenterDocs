@@ -2,7 +2,7 @@
 title: Get VM
 description: The Get VM activity is used to retrieve an existing VM based on the filters you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,14 +17,11 @@ manager: jsuri
 
 # Get VM
 
-
-
 The Get VM activity is used to retrieve an existing VM based on the filters you specify.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get VM Filters
-
 
 | Element   | Description   |
 |:---|:---|
@@ -96,7 +93,7 @@ The activity publishes all of the data from the required and optional properties
 | Virtual Disk Drives   | A list of the names of Virtual Disk Drives   |
 | Virtual DVD Drives   | A list of the names of Virtual DVD Drives   |
 | Virtual Hard Disks   | A list of the names of Virtual Hard Disks   |
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |
 | Virtual Network Adapters   | A list of the names of Virtual Network Adapters   |
 | Virtual SCSI Adapters   | A list of the names of Virtual SCSI Adapters   |
 | VM ID   | The unique identifier (GUID) of the virtual machine   |
@@ -112,7 +109,7 @@ The activity publishes all of the data from the required and optional properties
 | Backup Enabled   | True or False   |
 | Boot Order   | The order of devices that the virtual machine on a Hyper-V host uses to start up. The valid values are: CD, IDE Hard Drive, PXE Boot, or Floppy   |
 | Checkpoint Location   | The full path of the checkpoint for the virtual machine, in the format C:\\ProgramData\\Microsoft\\Windows\\Hyper-V   |
-| Cloud   | A collection of resources that are provisioned and managed on-premise by an organization   |
+| Cloud   | A collection of resources that are provisioned and managed on-premises by an organization   |
 | Cloud Capability Profile   | The configurable options that define your cloud   |
 | Compliance Status   | True or False   |
 | Computer Name   | The name of the virtual machine   |
@@ -189,7 +186,7 @@ The activity publishes all of the data from the required and optional properties
 | Virtual Disk Drives   | A list of the names of Virtual Disk Drives   |
 | Virtual Floppy Drives   | A list of the names of Virtual Floppy Drives   |
 | Virtual Hard Disks   | A list of the names of Virtual Hard Disks   |
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |
 | Virtual Network Adapters   | A list of the names of Virtual Network Adapters   |
 | Virtual SCSI Adapters   | A list of the names of Virtual SCSI Adapters   |
 | VMC Path   | The virtual machine configuration file path, in the format C:\\VMM\\DRDemo-DataTier\\VirtualMachines\\abc12345-d6ef-78g9-h0ij-1kl2-34m56n7890p12.xml   |

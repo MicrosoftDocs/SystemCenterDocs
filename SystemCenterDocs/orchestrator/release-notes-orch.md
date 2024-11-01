@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Orchestra
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/19/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -14,6 +14,16 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 
 # Release notes for System Center Orchestrator
 
+::: moniker range="sc-orch-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article provides the release notes for System Center 2025 - Orchestrator.
+
+[!INCLUDE [release-notes-orch-2025.md](../includes/release-notes-orchestrator-2025.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-orch-2022"
 
 This article provides the release notes for System Center 2022 - Orchestrator.
@@ -21,7 +31,6 @@ This article provides the release notes for System Center 2022 - Orchestrator.
 [!INCLUDE [release-notes-orch-2022.md](../includes/release-notes-orch-2022.md)]
 
 ::: moniker-end
-
 
 ::: moniker range="sc-orch-2019"
 
@@ -44,4 +53,5 @@ This article lists the release notes for System Center 2016 - Orchestrator.
 ::: moniker-end
 
 ## Next steps
+
 [What's new in Orchestrator](./whats-new-in-orch.md).

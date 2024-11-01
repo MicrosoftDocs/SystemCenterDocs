@@ -3,7 +3,7 @@ description: Use DPM to back up and restore VMware VMs.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 10/22/2024
+ms.date: 11/01/2024
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -28,6 +28,14 @@ This article explains how to use Data Protection Manager (DPM) to back up virtua
 
 >[!NOTE]
 >DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html). vSphere 8.0 is supported from DPM 2022 UR2.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0, and 8.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+
+>[!NOTE]
+>DPM 2025 don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html).
 
 ::: moniker-end
 
@@ -68,7 +76,7 @@ Before you start backing up a VMware virtual machine, review the following list 
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
 ## Prerequisites and Limitations
 
@@ -487,6 +495,19 @@ You can restore individual files from a protected VM recovery point. This featur
 
 With DPM 2022 UR2 and later, you can restore an individual file from a VMware VM from both disk and online recovery points. The VM should be a Windows Server VM.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+>[!NOTE]
+> Restore of an individual file from a VM backup is possible only for Windows VMs from the disk and online recovery points.
+
+You can restore an individual file from a VMware VM from both disk and online recovery points. The VM should be a Windows Server VM.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2022"
+
 Additionally, for item-level recovery from an online recovery point, ensure that automatic mounting of volumes is enabled. The item-level recovery for online recovery points works by mounting the VM recovery point using iSCSI for browsing, and only one VM can be mounted at a given time.
 
 You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
@@ -544,11 +565,11 @@ The value should be the number (decimal) of virtual machines that you select for
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
-## VMware parallel restore in DPM 2022
+## VMware parallel restore
 
-DPM 2022 supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, eight parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
+DPM supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, eight parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
 
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.
@@ -569,7 +590,7 @@ The value should be the number (decimal) of virtual machines that you select for
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
+::: moniker range=">=sc-dpm-2022"
 
 To back up vSphere 6.7 and 7.0, do the following:
 
@@ -676,13 +697,14 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
         >
         > With DPM 2019 UR2, this experience is improved. You can run the script without stopping the DPMRA service.
 
-     **To add/remove the disk from exclusion, run the following command:**
+
+     **Add/remove the disk from exclusion, run the following command:**
 
       ```powershell
       ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
       ```
 
-     **Example: To add the disk exclusion for TestVM4, run the following command**
+     **Example: Add the disk exclusion for TestVM4, run the following command**
 
        ```powershell
        PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
@@ -692,7 +714,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
 5. Verify that the disk has been added for exclusion
 
-   **To view the existing exclusion for specific VMs, run the following command:**
+   **View the existing exclusion for specific VMs, run the following command:**
 
     ```powershell
     ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]

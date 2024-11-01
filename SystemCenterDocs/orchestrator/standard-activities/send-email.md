@@ -2,7 +2,7 @@
 title: Send Email 
 description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,15 +17,13 @@ manager: jsuri
 ---
 # Send Email
 
-
-
 The Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system.  
 
 > [!IMPORTANT]
-
 > If you put more than 1 MB of text directly into the message body, the activity can fail during initialization. To avoid this issue, enter no more than 1 MB of text directly into the message body or save the text to a file, and provide the file name as the message you want to send.  
 
-## Configuring the Send Email Activity  
+## Configure the Send Email Activity
+
  Before you configure the Send Email activity, you'll need to determine the following:  
 
 - Your SMTP server information.
@@ -46,7 +44,7 @@ Use the following information to configure the Send Email activity.
 |**Attachments**|The list displays the attachments that will be sent with the email. To add an attachment, select **Add** to open the **Attachment Properties** dialog, specify the path of the attachment or select the ellipsis **(...)** next to the **File** box, and then select **OK**.<br /><br /> To remove an attachment, select the attachment in the **Attachments** box, and select **Remove**. To edit an attachment, double-click the attachment in the **Attachments** box.|  
 |**Task fails if an attachment is missing**|Select this box to cause the Send Email activity to fail if any of the attachments can't be found when the email is being sent.|  
 
-### Advanced  
+### Advanced
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -56,7 +54,7 @@ Use the following information to configure the Send Email activity.
 |**Password**|The password that is associated with the User ID.|  
 |**Domain**|The domain associated with the User ID.|  
 
-### Connect  
+### Connect
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -65,7 +63,8 @@ Use the following information to configure the Send Email activity.
 |**Port**|Select to change the port that will be used to connect to the SMTP server. The default port is 25.|  
 |**Enable SSL**|Select to indicate that the SMTP connection requires SSL.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

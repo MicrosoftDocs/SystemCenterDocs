@@ -5,7 +5,7 @@ description: This article describes how to upgrade a Gateway server to the lates
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/19/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -18,7 +18,7 @@ ms.topic: article
 
 After you upgrade the management servers in your management group, you upgrade any gateway servers. The procedure to upgrade is performed locally on the gateway server. You can then verify whether the upgrade is successful. Before you begin the upgrade process, ensure that your gateway server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
-## To upgrade a gateway server
+To upgrade a gateway server, follow these steps:
 
 1. Sign in to a computer that hosts the gateway server with an account that's a member of the  Operations Manager Administrators role for your Operations Manager management group.
 

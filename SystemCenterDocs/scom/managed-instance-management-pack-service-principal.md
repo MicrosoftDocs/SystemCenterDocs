@@ -5,7 +5,7 @@ description: This article explains how to create a service principal in Azure Cl
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 08/15/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

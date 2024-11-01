@@ -5,7 +5,7 @@ description: This article explains run as profiles in Management Pack for SQL Se
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 03/07/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

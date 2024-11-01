@@ -2,7 +2,7 @@
 title: Invoke Web Services 
 description: This article describes the Invoke Web Services activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Invoke Web Services
 
-
-
 The Invoke Web Services activity runs a web service with the XML parameters you specify.  
 
-## Configuring the Invoke Web Services Activity  
+## Configure the Invoke Web Services Activity
+
  Before you configure the Invoke Web Services activity, you need to determine the following:  
 
 - WSDL file of the web service.
@@ -59,36 +58,38 @@ Use the following information to configure the Invoke Web Services activity.
 |**User name**|Enter the user name to access the secured web service.|  
 |**Password**|Enter the password to access the secured web service.|  
 
-###  <a name="BKMK_HTTPS"></a> HTTPS certificate options  
+###  <a name="BKMK_HTTPS"></a> HTTPS certificate options
+
  Orchestrator allows you to configure HTTPS certificate options in cases where certificate validation fails.  
 
  Use the following steps to configure HTTPS certificate options.  
 
-##### To configure HTTPS certificate options  
+#### Configure HTTPS certificate options
 
-1.  In the Runbook Designer, select the **Options** menu and select **Invoke Web Services** to open the **Invoke Web Services** dialog.  
+1. In the Runbook Designer, select the **Options** menu and select **Invoke Web Services** to open the **Invoke Web Services** dialog.  
 
-2.  Configure the settings on the **Details** tab. Configuration instructions are listed in the following table.  
+2. Configure the settings on the **Details** tab. Configuration instructions are listed in the following table.  
 
-### Details  
+### Details
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**HTTPS Options**|Select one of the following **HTTPS Options**:<br /><br /> -   **Accept all certificates**<br />-   **Accept certificates from trusted hosts**<br /><br /> Configuration instructions for each of the **HTTPS Options** are listed in the following tables.|  
 
-### Accept all certificates Details  
+### Accept all certificates Details
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Accept all certificates**|Accepts certificates from all hosts.<br /><br /> After you select this HTTPS option, select **Finish**.|  
 
-### Accept certificates from trusted hosts Details  
+### Accept certificates from trusted hosts Details
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Accept certificates from trusted hosts**|Specifies the hosts you want to accept the certificates from.<br /><br /> 1.  Select **Add** to open the **Trusted Host** dialog.<br />2.  Enter the trusted host name in the **Value** box, and select **OK**. The host is then added to the list.<br /><br /> To edit hosts, select **Edit**.<br /><br /> To remove hosts, select **Remove**.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  
@@ -101,7 +102,8 @@ Use the following information to configure the Invoke Web Services activity.
 |Web Service URL|The URL of the web service.|  
 |Web Service protocol|The protocol that the web service uses.|  
 
-### Publishing web services  
+### Publish web services
+
  The Invoke Web Service object builds an assembly at **C:\ProgramData\Microsoft System Center 2012\Orchestrator\Activities\WebServices2**or **C:\Users\USERNAME\AppData\Local\Microsoft System Center 2012\Orchestrator\Activities\WebServices2**. The assembly is identified by the web service location. For example, **http://localhost/TestService/DylanService.asmx?WSDL**.  
 
  If you publish additional services or update an existing service, you must clean the cache, except for the **wspkey.snk** file. After cleaning the cache, the web service changes are   correctly published.

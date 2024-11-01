@@ -4,7 +4,7 @@ description: This article provides the details about running antivirus software 
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/24/2024
+ms.date: 11/01/2024
 ms.subservice: data-protection-manager
 ms.assetid: c0f4201b-53f7-45c8-af16-5522d0f10c6e
 author: PriskeyJeronika-MS
@@ -51,4 +51,5 @@ Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f 
 ```
 
 ## Next steps
+
 [Set up DPM logging](set-up-dpm-logging.md)

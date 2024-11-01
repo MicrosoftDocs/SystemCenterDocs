@@ -5,7 +5,7 @@ description: This article describes how to set up and manage Storage Spaces Dire
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -33,6 +33,11 @@ Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups phy
 ::: moniker range="sc-vmm-2022"
 > [!NOTE]
 > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+> [!NOTE]
+> VMM 2025 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
 ::: moniker-end
 
 ## How does it work?

@@ -2,7 +2,7 @@
 title: Run SSH Command
 description: This article describes the functionality of Run SSH Command activity.
 ms.custom: UpdateFrequency3
-ms.date: 07/28/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -16,8 +16,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # Run SSH Command
-
-
 
 The Run SSH Command activity opens an SSH connection to a remote server and runs shell commands on that server. Use the Run SSH Command activity to run backup applications or a batch script that runs a set of complex commands on a non-Windows computer. The Run SSH Command activity can run any command in a Secure Shell.  
 
@@ -37,7 +35,8 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 
   For more information about PuTTY, go to [Download PuTTY - a free SSH and telnet client for Windows](https://go.microsoft.com/fwlink/p/?LinkID=230517).  
 
-## Configuring the Run SSH Command Activity  
+## Configure the Run SSH Command Activity
+
  Before you configure the Run SSH Command activity, you need to determine the following:  
 
 - Connection information for the computer that hosts the SSH server that you want to connect to.  
@@ -68,7 +67,8 @@ Use the following information to configure the Run SSH Command activity.
 |**Key File**|Select this option to specify a key file to use. You must use the PuTTY key file generator to create a key file. You can download this tool from [Download PuTTY - a free SSH and telnet client for Windows](https://go.microsoft.com/fwlink/p/?LinkID=230517).|  
 |**Passphrase**|Type the passphrase that is associated with the key file that you specified.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  
@@ -83,4 +83,5 @@ Use the following information to configure the Run SSH Command activity.
 |Username|The username used to sign in to the SSH server.|
 
 ## Next steps
+
 See the article on how to get the [SNMP variables](get-snmp-variable.md).

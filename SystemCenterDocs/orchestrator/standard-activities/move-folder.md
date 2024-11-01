@@ -2,7 +2,7 @@
 title: Move Folder
 description: This article describes the functionality of Move Folder activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Move Folder
 
-
-
 The Move Folder activity moves a folder and its sub-folders from one directory to another. You can also move folders to network shares that are available using UNC paths. In addition, you can take files from a local or network folder that are made publicly available as an FTP location and move them to an internal folder.  
 
-## Configuring the Move Folder Activity  
+## Configure the Move Folder Activity
+
  Use the following information to configure the Move Folder activity.  
 
 ### Details Tab  
@@ -31,7 +30,8 @@ The Move Folder activity moves a folder and its sub-folders from one directory t
 |**Source**|Enter the path of the folder that you want to move, or select the ellipsis **(...)** button to browse for it. The Move Folder activity doesn't support the * and ? wildcards.|  
 |**Destination**|Enter the path and name that you want to move the folder to, or select the ellipsis **(...)** button to browse for it.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

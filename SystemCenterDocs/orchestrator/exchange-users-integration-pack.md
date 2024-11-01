@@ -2,7 +2,7 @@
 title: Exchange Users Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. Integration packs optimize IT operations across various environments.
 ms.custom: engagement-fy24
-ms.date: 10/22/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,7 +16,6 @@ manager: jsuri
 ---
 
 # Exchange Users integration pack
-
 
 Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products.
 
@@ -106,6 +105,12 @@ Prior to implementing the Exchange Users Integration Pack, you must install and 
 ::: moniker range="sc-orch-2022"
 
 - To download the Exchange Users Integration Pack for Orchestrator 2022, go to the [Download Center space for 2022](https://www.microsoft.com/download/details.aspx?id=104336).
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+- To download the Exchange Users Integration Pack for Orchestrator 2025, go to the Download Center space for 2025.
 
 ::: moniker-end
 

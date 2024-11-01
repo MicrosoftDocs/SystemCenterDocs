@@ -6,44 +6,46 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # Overview of Service Management Automation
 
+::: moniker range="sc-sma-2025"
 
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
+::: moniker-end
 
 Service Management Automation (SMA) is a set of tools that is integrated as the SMA extension in Microsoft Azure Pack for Windows Server. IT pros and IT developers can use SMA to construct, run, and manage runbooks to integrate, orchestrate, and automate IT business processes. SMA runbooks run on the Windows PowerShell engine.
 
-
-
 ## SMA components
+
 SMA uses the following three underlying components that are connected to Microsoft Azure Pack through the SMA service endpoint:
 
-**Web service**
+### Web service
 
--   Connects to Microsoft Azure Pack
+- Connects to Microsoft Azure Pack
 
--   Distributes runbook jobs to runbook workers
+- Distributes runbook jobs to runbook workers
 
--   Supports HTTPS
+- Supports HTTPS
 
--   Enables security group to control access
+- Enables security group to control access
 
-**Runbook worker**
+### Runbook worker
 
--   Executes runbook jobs
+- Executes runbook jobs
 
--   Runs under a service account
+- Runs under a service account
 
-**PowerShell module**
+### PowerShell module
 
--   Enables SMA management by using Windows PowerShell cmdlets
+- Enables SMA management by using Windows PowerShell cmdlets
 
-### Should I use SMA or System Center - Orchestrator?
+## Should I use SMA or System Center - Orchestrator?
 
 The System Center - Orchestrator component enables you to automate business processes and IT operations in your data center without scripting or programming. If you prefer a graphical authoring approach, use Orchestrator.
 
@@ -55,14 +57,13 @@ The following diagram illustrates each of the SMA features, and the communicatio
 
 ![SMA Architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)
 
+- The SMA web service communicates with Microsoft Azure Pack, and authenticates users.
 
--   The SMA web service communicates with Microsoft Azure Pack, and authenticates users.
+- The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
 
--   The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
+- Runbook workers run the runbooks, and they can be used for load balancing.
 
--   Runbook workers run the runbooks, and they can be used for load balancing.
-
--   The management portal in Microsoft Azure Pack is where you author, debug, and start and stop runbooks.
+- The management portal in Microsoft Azure Pack is where you author, debug, and start and stop runbooks.
 
 > [!IMPORTANT]
 > The [SMA Developer's Guide](/previous-versions/system-center/developer/dn688344(v=msdn.10)) is now available. This guide is a set of REST API reference documentation for the SMA web service.

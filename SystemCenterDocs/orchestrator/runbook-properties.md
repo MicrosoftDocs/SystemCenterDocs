@@ -9,14 +9,12 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3bd4992a-badc-4d36-9e64-52e2a167f9e8
-ms.date: 04/11/2023
+ms.date: 11/01/2024
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ---
 # Runbook properties
-
-
 
 A runbook is essentially a series of activities that are using data, performing tasks, and publishing data for use by other activities in the runbook. Each runbook has a collection of configurable properties. These properties let you customize the behavior of a runbook.  
 
@@ -34,7 +32,8 @@ Follow these steps to view the properties of a runbook:
 
 A summary of the runbook properties and how to configure them follows.  
 
-## General  
+## General
+
 On the **General** tab of the **Runbook Properties** dialog, you can customize a name and description for the runbook. You can also associate a schedule with the runbook. After you assigned a schedule to the runbook, the runbook only runs on the dates and times that you specified in the schedule.  
 
 ### Create a schedule  
@@ -86,7 +85,8 @@ On the **General** tab of the **Runbook Properties** dialog, you can customize a
 
 2.  Select a schedule, select **OK**, and then select **Finish**.  
 
-## Runbook servers  
+## Runbook servers
+
 This tab displays the list of runbook servers assigned to run this runbook. If the list is empty, the runbook uses the setting defined in the **Runbook Servers** folder found in the **Connections** pane of the Runbook Designer. If the runbook server that uses the Primary role is available, the runbook runs on it. If the primary runbook server isn't available, each runbook server that uses a Standby role is checked until one is found that can run the runbook.  
 
 You can override the default behavior and assign a primary and any number of standby runbook servers to a runbook. It's useful to assign a specific runbook server to a runbook if the runbook requires access to a specialized resource, such as a backup device.  
@@ -109,7 +109,8 @@ Follow these steps to assign primary and standby runbook servers to a runbook:
 
 5.  When you're finished adding runbook servers, select **Finish**.  
 
-## <a name="BKMK_Logging"></a>Logging  
+## <a name="BKMK_Logging"></a>Logging
+
 This feature controls what data is logged to the orchestration database. If stored in the orchestration database, this data is visible in views such as the **Log** pane in the Runbook Designer and in the Orchestration console. This information doesn't affect the availability of Published Data in a running runbook.  
 
 Published Data includes data specific to each activity.  
@@ -133,7 +134,8 @@ Common Published Data is a set of data items that are common to all activities. 
 > [!CAUTION]  
 > When you turn on logging, the size of the orchestration database increases.  
 
-## Event notifications  
+## Event notifications
+
 You can enable event notification for the runbook. Notifications appear in views such as the **Log** pane in the Runbook Designer and in the Orchestration console.  
 
 If you want to be notified when a runbook runs for more than a specified length of time, enter a value in the **seconds** box.  
@@ -142,7 +144,8 @@ If you want to be notified if the runbook doesn't run, select the **Runbook fail
 
 For more information about event notifications, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).  
 
-## Job concurrency  
+## Job concurrency
+
 The job concurrency setting lets you set the maximum number of simultaneous jobs so that you can carry out multiple requests for the same runbook at the same time. This setting applies to the individual runbook. A runbook server can run 50 runbooks at the same time. If you select a job concurrency setting over 50, your environment requires more runbook servers or the requests to start a runbook will queue.  
 
 The following limitations apply:  
@@ -157,7 +160,8 @@ The following limitations apply:
 
 -   Plan the use of multiple requests carefully. Before you change the maximum number of simultaneous runbook requests, consider the tasks performed by the runbook. Verify that each runbook instance can finish successfully. For example, if your runbook creates a folder, copies files into it, and then deletes the folder when it's finished, one instance of the runbook might delete the folder before other instances are finished with it. In this case, you should keep the maximum number of simultaneous requests for this runbook a value of 1 to avoid conflicts.  
 
-## Returned Data  
+## Returned Data
+
 Returned Data defines the data that a runbook returns when it finishes. Each Returned Data definition can contain either a single or multiple parameter values. To populate the data definitions, end the workflow with a Return Data activity that contains the return values.  
 
 You access the Returned Data values through Published Data in one of several ways.  

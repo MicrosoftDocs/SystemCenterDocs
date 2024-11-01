@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -13,10 +13,10 @@ ms.custom: intro-deployment
 
 # Deploy the Self-Service portal for Service Manager
 
-
 The Self-Service portal provides web-based access to the features of System Center - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
 ## Supported operating systems
+
 ::: moniker range="<sc-sm-2019"
  - Windows Server 2016
  - Windows Server 2012 R2
@@ -35,18 +35,32 @@ The Self-Service portal provides web-based access to the features of System Cent
  - Windows Server 2012 R2
  ::: moniker-end
 
+::: moniker range="sc-sm-2025"
+ - Windows Server 2025
+ - Windows Server 2022
+ - Windows Server 2019
+ - Windows Server 2016
+ ::: moniker-end
+
 For more information, see [system requirements](system-requirements.md)
 
 ## Supported web browsers
+
 The Self-Service portal needs a screen resolution above 1024 X 768. It's supported on the following browsers.
 
--   Microsoft Edge
+::: moniker range="sc-sm-2025"
+- Microsoft Edge 121.0.2277.4 or later
+::: moniker-end
 
--   Microsoft Internet Explorer 10 and 11
+::: moniker range="<=sc-sm-2022"
+- Microsoft Edge
+::: moniker-end
 
--   Mozilla Firefox 42 and later
+- Microsoft Internet Explorer 10 and 11
 
--   Google Chrome 46 and later
+- Mozilla Firefox 42 and later
+
+- Google Chrome 46 and later
 
 ## Set up the Self-Service portal
 
@@ -56,31 +70,31 @@ You'll use the following sections to set up the Self-Service portal.
 
 Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
 
-1.  Start the Add Roles and Features Wizard and then enable IIS.
+1. Start the Add Roles and Features Wizard and then enable IIS.
 
     ![Screenshot showing the select server roles.](./media/deploy-self-service-portal/sm-ssp01.png)
 
-2.  Enable the .NET features.
+2. Enable the .NET features.
 
-    1.  Enable .NET 3.5
+    1. Enable .NET 3.5
 
         ![Screenshot showing the select features.](./media/deploy-self-service-portal/sm-sspdeploy2a.png)
 
-    2.  Enable HTTP Activation
+    2. Enable HTTP Activation
 
         ![Screenshot showing the select HTTP activation.](./media/deploy-self-service-portal/sm-sspdeploy2b.png)
 
-    3.  Enable ASP.NET 4.5
+    3. Enable ASP.NET 4.5
 
         ![Screenshot showing the select ASP.NET 4.5.](./media/deploy-self-service-portal/sm-sspdeploy2c.png)
 
-3.  Enable the following role services on the Web Server Role (IIS) page.
+3. Enable the following role services on the Web Server Role (IIS) page.
 
-    1.  **Basic Authentication** and **Windows Authentication**
+    1. **Basic Authentication** and **Windows Authentication**
 
         ![Screenshot showing the basic authentication and Windows authentication.](./media/deploy-self-service-portal/sm-sspdeploy3a.png)
 
-    2.  Add **Application Development** and under it, add **.NET Extensibility 4.5**, **ASP**, and **ASP.NET 4.5**.
+    2. Add **Application Development** and under it, add **.NET Extensibility 4.5**, **ASP**, and **ASP.NET 4.5**.
 
         ![Screenshot showing the application development.](./media/deploy-self-service-portal/sm-ssp03b.png)
 
@@ -88,39 +102,39 @@ Join the Windows server machine to the same domain where the Service Manager SDK
 
 Use the following steps to install the Self-Service Portal WebApp using Setup.
 
-1.  Select **Service Manager Self-Service Portal** in Service Manager setup wizard.
+1. Select **Service Manager Self-Service Portal** in Service Manager setup wizard.
 
-2.  Go through the EULA and accept it.
+2. Go through the EULA and accept it.
 
     ![Screenshot showing the EULA.](./media/deploy-self-service-portal/sm-ssp06.png)
 
-3.  Choose your installation location.
+3. Choose your installation location.
 
     ![Screenshot showing the installation location.](./media/deploy-self-service-portal/sm-ssp07.png)
 
-4.  Review the System check results.
+4. Review the System check results.
 
-5.  Configure the Self-Service Portal server and enter configuration details for your server.
+5. Configure the Self-Service Portal server and enter configuration details for your server.
 
-    -   **WebSite Name** : The name of the website to display in the IIS Management console.
+    - **WebSite Name** : The name of the website to display in the IIS Management console.
 
-    -   **SM Server name**: You can provide a fully qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. For more information, see [Deployment topologies](/system-center/scsm/learn-self-service-portal?#deployment-topologies).
+    - **SM Server name**: You can provide a fully qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. For more information, see [Deployment topologies](/system-center/scsm/learn-self-service-portal?#deployment-topologies).
 
-    -   **Portal Port**: The port number that the website will use.
+    - **Portal Port**: The port number that the website will use.
 
-    -   **SSL Certificate:** (Optional) The SSL certificate to configure the website in secure mode (https://). This is the recommended setting if you're using Basic Authentication. The default is Windows  Authentication.
+    - **SSL Certificate:** (Optional) The SSL certificate to configure the website in secure mode (https://). This is the recommended setting if you're using Basic Authentication. The default is Windows  Authentication.
 
     ![Screenshot showing the configure the Self-Service Portal server.](./media/deploy-self-service-portal/sm-ssp09.png)
 
-6.  Configure the account for the Self-Service Portal. This is the account that the IIS instance will run under. This account should have the Service Manager Admin role.
+6. Configure the account for the Self-Service Portal. This is the account that the IIS instance will run under. This account should have the Service Manager Admin role.
 
     ![Screenshot showing the Self-Service portal account.](./media/deploy-self-service-portal/sm-ssp10.png)
 
-7.  The Diagnostic and usage data notification information is displayed, informing you that data is sent to Microsoft by default. You can change this setting in the Service Manager console. Select **Next**.
+7. The Diagnostic and usage data notification information is displayed, informing you that data is sent to Microsoft by default. You can change this setting in the Service Manager console. Select **Next**.
 
     ![Screenshot showing the diagnostic and usage data.](./media/deploy-self-service-portal/sm-ssp11.png)
 
-8.  Choose whether to automatically install Microsoft updates.
+8. Choose whether to automatically install Microsoft updates.
 
     ![Screenshot showing the Microsoft updates.](./media/deploy-self-service-portal/sm-ssp12.png)
 
@@ -150,8 +164,8 @@ The following section describes how you can customize the Self-Service portal to
 
 Before you install any Update Rollup for Service Manager, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml). Then use the following steps to get started.
 
-1.	Create a new cshtml file named CustomSidebar.cshtml in the &lt;Self-Service Portal install path&gt;\inetpub\wwwroot\SelfServicePortal\Views\Shared folder path.
-2.	Move your customizations from sidebar.cshtml to the new file, which is CustomSidebar.cshtml.
+1. Create a new cshtml file named CustomSidebar.cshtml in the &lt;Self-Service Portal install path&gt;\inetpub\wwwroot\SelfServicePortal\Views\Shared folder path.
+2. Move your customizations from sidebar.cshtml to the new file, which is CustomSidebar.cshtml.
 
 In the future, you need to make all customizations to the Service Manager Self-Service portal’s sidebar in the CustomSidebar.cshtml file.
 

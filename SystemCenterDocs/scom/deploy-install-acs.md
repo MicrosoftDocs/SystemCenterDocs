@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Audit 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -23,7 +23,7 @@ Use the following procedures to install an Audit Collection Services (ACS) colle
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 >[!NOTE]
 > Operations Manager supports a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you're installing it.

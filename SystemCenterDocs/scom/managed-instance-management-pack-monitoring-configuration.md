@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 1/30/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

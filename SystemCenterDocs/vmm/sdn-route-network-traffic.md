@@ -5,7 +5,7 @@ description: This article describes about how to route the network traffic betwe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/22/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -51,8 +51,8 @@ A Site-to-Site VPN connection allows you to securely connect two networks at dif
 For Cloud Service Providers (CSPs) that host many tenants in their datacenter, SDN RAS gateway provides a multitenant gateway solution that allows your tenants to access and manage their resources over Site-to-Site VPN connections from remote sites, which in turn allows network traffic between virtual resources in your datacenter and their physical network.
 
 
-::: moniker range="sc-vmm-2022"
-VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.
+::: moniker range=">=sc-vmm-2022"
+VMM 2025 and 2022 support dual stack (Ipv4 + Ipv6) for SDN components.
 
 ::: moniker-end
 
@@ -291,6 +291,12 @@ Using L3 forwarding connection, tenant network virtual machines can connect to a
 ::: moniker range="sc-vmm-2022"
 
 Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2016/2019/2022 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+
+Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2019/2022/2025 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
 
 ::: moniker-end
 

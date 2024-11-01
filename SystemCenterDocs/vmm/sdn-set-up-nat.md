@@ -5,7 +5,7 @@ description: This article describes how to configure NAT connection and NAT rule
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/25/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -27,9 +27,9 @@ The following two NAT types are supported by VMM.
 
 This article provides information about how to configure a NAT connection for SDN virtual networks using VMM.
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-2022"
 
-VMM 2022 supports dual stack. NAT rules to Dual stack VM networks isn't supported at VMM console. NAT rules can be specified using PowerShell cmdlets. For more information, see [Add rules to a NAT connection](#add-rules-to-a-nat-connection).
+VMM 2025 and 2022 support dual stack. NAT rules to Dual stack VM networks isn't supported at VMM console. NAT rules can be specified using PowerShell cmdlets. For more information, see [Add rules to a NAT connection](#add-rules-to-a-nat-connection).
 
 ::: moniker-end
 
@@ -71,7 +71,13 @@ A NAT connection will be created for this VM network.
 
 ## Add rules to a NAT connection
 
+::: moniker range="<=sc-vmm-2019"
 VMM 2022 supports dual stack. NAT rules to dual stack VM networks isn't supported at the VMM console. NAT rules can be specified using PowerShell cmdlets.
+:::moniker-end
+
+::: moniker range=">=sc-vmm-2022"
+VMM 2025 and 2022 support dual stack. NAT rules to dual stack VM networks isn't supported at the VMM console. NAT rules can be specified using PowerShell cmdlets.
+:::moniker-end
 
 ```
 $vmNetwork = Get-SCVMNetwork -ID <VMNetwork ID>

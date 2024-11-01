@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 ms.custom: UpdateFrequency3, engagement-fy24
@@ -28,9 +28,11 @@ By using a Configuration Manager connector, you can import configuration baselin
 For information about Microsoft Operations Framework (MOF) implementation of change and configuration, see [Position of the Change and Configuration SMF Within the MOF IT Service Lifecycle](/previous-versions/tn-archive/cc543211(v=technet.10)).
 
 ## Complete the data warehouse registration process
+
 Before you create the Configuration Manager connector, you must ensure that the Data Warehouse Registration process is complete.
 
 ## Additional data in Configuration Manager
+
 Additional data in Configuration Manager includes User-Device Affinity (UDA), Mobile Device Data, and Software Request Data. UDA data from Configuration Manager more accurately determines who the primary user of a computer or device is. The UDA data collected by the Service Manager Configuration Manager connector is used to populate the UsesComputer and PrimaryUser information in the Service Manager database.
 
 Mobile device data for Windows Phones, Windows Mobile Phones, and Nokia devices will be collected by the Service Manager Configuration Manager connector. Data from other mobile devices such as iPhone, BlackBerry, and Android-based phones will be collected when you're using the Configuration Manager Exchange Server connector. Mobile device data will be imported into the Service Manager database as configuration items, and it can be associated with work items, incident management, and change management.
@@ -38,25 +40,28 @@ Mobile device data for Windows Phones, Windows Mobile Phones, and Nokia devices 
 Software request data will be used in support of self-service software request integration with Configuration Manager. The administrative category data from Configuration Manager will be used to select which Service Request templates to apply when creating a request from the Self-Service Portal.
 
 ## Schedule
+
 You can configure the Configuration Manager connector to update the Service Manager database on a recurring schedule. You can also temporarily suspend the importation of data from Configuration Manager by disabling the connector. For example, you can disable the connector when maintenance is performed on the Configuration Manager site database because you know that the maintenance process temporarily creates inaccurate data. When appropriate, you can re-enable the connector and resume importing data.
 
 ## Extended hardware inventory with Configuration Manager
+
 In Configuration Manager, you can extend the hardware inventory by collecting an inventory of additional Windows Management Instrumentation (WMI) classes, additional WMI class attributes, registry keys, and other customizations to accommodate your organization's requirements. For more information about extending the hardware inventory in Configuration Manager, see [How to Extend Hardware Inventory](/mem/configmgr/core/clients/manage/inventory/extend-hardware-inventory).
 
 If you've extended the hardware inventory in Configuration Manager, you must create a new Configuration Manager Connector management pack in Service Manager to collect the extended hardware inventory. This new management pack can contain only the information required to collect the extended hardware inventory from Configuration Manager, or it can consist of everything from the original Configuration Manager Connector management pack plus the new extended hardware inventory. For information about creating a new connector management pack, see [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File]().
 
 ## Importing software configuration items
+
 You can import software configuration items with the Configuration Manager Connector by importing the following asset intelligence reporting classes in Configuration Manager. These classes should be enabled in Configuration Manager before you configure the Configuration Manager connector in Service Manager. For more information about enabling Asset Intelligence in Configuration Manager, see [How to Enable Asset Intelligence](/mem/configmgr/core/clients/manage/asset-intelligence/configuring-asset-intelligence).
 
--   SMS_InstalledSoftware
+- SMS_InstalledSoftware
 
--   SMS_SystemConsoleUsage
+- SMS_SystemConsoleUsage
 
--   SMS_SystemConsoleUser
+- SMS_SystemConsoleUser
 
--   SoftwareLicensingService
+- SoftwareLicensingService
 
--   SoftwareLicensingProduct
+- SoftwareLicensingProduct
 
 If the software for a particular computer doesn't appear in the **All Software** view in the Configuration Items workspace, you should review the Operations Manager event log on the Service Manager primary management server. You should look for events with sources of OpsMgr Connector and Lfx Service to determine if there are any errors.
 
@@ -67,32 +72,32 @@ You can use the following procedures to create a connector to import data from C
 > [!IMPORTANT]
 > Before you can create the Configuration Manager connector, you've to verify that Configuration Manager is installed in your environment, and you've to turn on Windows User Account Control (UAC). For more information about UAC, see [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
 
-### To create a Configuration Manager connector
+To create a Configuration Manager connector, follow these steps:
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
-3.  In the **Tasks** pane, under **Connectors**, select **Create Connector**, and select **Configuration Manager Connector**. The Configuration Manager Connector Wizard starts.
-4.  On the **Before You Begin** page, select **Next**.
-5.  On the **General** page, do the following:
-    1.  In the **Name** box, enter a name for the new connector. For example, enter **Configuration Manager Connector to Seattle**.
-    2.  In the **Description** box, enter a description for the new connector. For example, enter **A Configuration Manager connector to site Seattle**.
-    3.  Ensure that the **Enabled** checkbox is selected, and select **Next**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
+3. In the **Tasks** pane, under **Connectors**, select **Create Connector**, and select **Configuration Manager Connector**. The Configuration Manager Connector Wizard starts.
+4. On the **Before You Begin** page, select **Next**.
+5. On the **General** page, do the following:
+    1. In the **Name** box, enter a name for the new connector. For example, enter **Configuration Manager Connector to Seattle**.
+    2. In the **Description** box, enter a description for the new connector. For example, enter **A Configuration Manager connector to site Seattle**.
+    3. Ensure that the **Enabled** checkbox is selected, and select **Next**.
 ::: moniker range="sc-sm-2016"
-6.  On the **Select Management Pack** page, in the **Management Pack** list, select either **System Center Configuration Manager Connector Configuration** or **System Center Configuration Manager 2012 Connector Configuration**, and select **Next**.
+6. On the **Select Management Pack** page, in the **Management Pack** list, select either **System Center Configuration Manager Connector Configuration** or **System Center Configuration Manager 2012 Connector Configuration**, and select **Next**.
 ::: moniker-end
 ::: moniker range=">sc-sm-2016"
-6.  On the **Select Management Pack** page, in the **Management Pack** list, select either **System Center Configuration Manager Connector Configuration** and select **Next**.
+6. On the **Select Management Pack** page, in the **Management Pack** list, select either **System Center Configuration Manager Connector Configuration** and select **Next**.
 ::: moniker-end
-7.  On the **Connect to System Center Configuration Manager Database** page, do the following:
-    1.  In the **Database Server Name** box, enter the server name of the server that is hosting the Configuration Manager site database and the database named instance, if applicable. For example, at the hypothetical Woodgrove Bank, you might enter **woodgrove\instance1** if the Configuration Manager database is on a named instance of Microsoft SQL Server, or enter **woodgrove** if the database is on a default instance of the SQL Server.
-    2.  In the **Database Name** box, enter the name of the Configuration Manager site database. For example, enter **SMS_CM1**.
-    3.  In the **Credentials** area, select a Run As account, or create a new Run As account. The user account that you specify as the Run As account must be a member of the smsdbrole_extract and the db_datareader groups for the Configuration Manager site database.
-    4.  In the **Credentials** area, select **Test Connection**.
-    5.  In the **Credentials** dialog, in the **Password** box, enter the password for the account, and select **OK**.
-    6.  In the **Test Connection** dialog, if you receive the following confirmation message, select **OK**:
+7. On the **Connect to System Center Configuration Manager Database** page, do the following:
+    1. In the **Database Server Name** box, enter the server name of the server that is hosting the Configuration Manager site database and the database named instance, if applicable. For example, at the hypothetical Woodgrove Bank, you might enter **woodgrove\instance1** if the Configuration Manager database is on a named instance of Microsoft SQL Server, or enter **woodgrove** if the database is on a default instance of the SQL Server.
+    2. In the **Database Name** box, enter the name of the Configuration Manager site database. For example, enter **SMS_CM1**.
+    3. In the **Credentials** area, select a Run As account, or create a new Run As account. The user account that you specify as the Run As account must be a member of the smsdbrole_extract and the db_datareader groups for the Configuration Manager site database.
+    4. In the **Credentials** area, select **Test Connection**.
+    5. In the **Credentials** dialog, in the **Password** box, enter the password for the account, and select **OK**.
+    6. In the **Test Connection** dialog, if you receive the following confirmation message, select **OK**:
         **The connection to the server was successful**.
-    7.  Select **Next**.
-8.  On the **Collections** page, select the appropriate collection, and then select **Next**.
+    7. Select **Next**.
+8. On the **Collections** page, select the appropriate collection, and then select **Next**.
 9. On the **Schedule** page, in the **Synchronize** list, set the frequency and time of synchronization, and select **Next**.
 10. On the **Summary** page, confirm the connector settings you made, and select **Create**.
 11. On the **Confirmation** page, ensure that you receive the following confirmation message:
@@ -102,15 +107,15 @@ You can use the following procedures to create a connector to import data from C
     > [!NOTE]
     > The System Center Configuration Manager Connector Wizard may take several hours to import data from Configuration Manager.
 
-### To validate the creation of a Configuration Manager connector
+### Validate the creation of a Configuration Manager connector
 
-1.  Confirm that the Configuration Manager connector that you created is displayed in the **Connectors** pane.
-2.  In the Service Manager console, select **Configuration Items**. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and select **All Windows Computers**. Verify that the intended computers appear in the **All Windows Computers** pane.
-3.  In the middle pane, double-click a newly imported computer. Verify that the appropriate computer details appear in the computer form.
+1. Confirm that the Configuration Manager connector that you created is displayed in the **Connectors** pane.
+2. In the Service Manager console, select **Configuration Items**. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and select **All Windows Computers**. Verify that the intended computers appear in the **All Windows Computers** pane.
+3. In the middle pane, double-click a newly imported computer. Verify that the appropriate computer details appear in the computer form.
 
-### To confirm the status of a Configuration Manager connector
+### Confirm the status of a Configuration Manager connector
 
--   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
+- View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
 
 ![PowerShell symbol](./media/import-data-cm/pssymbol.png)You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New-SCCMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316198(v=sc.20)).
 
@@ -118,53 +123,53 @@ You can use the following procedures to create a connector to import data from C
 
 You can use the following procedures to disable or enable a Configuration Manager connector and validate the status of the change.
 
-### To disable a Configuration Manager connector
+### Disable a Configuration Manager connector
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
-3.  In the **Connectors** pane, select the Configuration Manager connector that you want to disable. For example, select **Configuration Manager connector to SEA**.
-4.  In the **Tasks** pane, under the connector name, select **Disable**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
+3. In the **Connectors** pane, select the Configuration Manager connector that you want to disable. For example, select **Configuration Manager connector to SEA**.
+4. In the **Tasks** pane, under the connector name, select **Disable**.
 
     > [!NOTE]
     > If you disable a connector while it's synchronizing data, the synchronization process may not stop. However, a disabled connector won't import any new data from a Configuration Manager database from that point forward.
 
-### To enable a Configuration Manager connector
+### Enable a Configuration Manager connector
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
-3.  In the **Connectors** pane, select the Configuration Manager connector that you want to enable. For example, select **Configuration Manager connector to SEA**.
-4.  In the **Tasks** pane, under the connector name, select **Enable**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
+3. In the **Connectors** pane, select the Configuration Manager connector that you want to enable. For example, select **Configuration Manager connector to SEA**.
+4. In the **Tasks** pane, under the connector name, select **Enable**.
 
-### To validate the status change of a Configuration Manager connector
+### Validate the status change of a Configuration Manager connector
 
-1.  After you disable or enable the connector, wait 30 seconds. Then, in the Service Manager console, select **Administration**, and select **Connectors**.
-2.  In the **Connectors** pane, locate the connector for which you've changed status, and verify the value in the **Enabled** column.
-3.  If you enabled the connector, verify that the connector resumes synchronization according to the schedule. If you disabled the connector, verify that the connector no longer synchronizes according to the schedule.
+1. After you disable or enable the connector, wait 30 seconds. Then, in the Service Manager console, select **Administration**, and select **Connectors**.
+2. In the **Connectors** pane, locate the connector for which you've changed status, and verify the value in the **Enabled** column.
+3. If you enabled the connector, verify that the connector resumes synchronization according to the schedule. If you disabled the connector, verify that the connector no longer synchronizes according to the schedule.
 
 ![Screenshot of the PowerShell symbol.](./media/import-data-cm/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](/previous-versions/system-center/service-manager-2010-sp1/ff951618(v=technet.10)).
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
--   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316217(v=sc.20)).
+- For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](/previous-versions/system-center/service-manager-2010-sp1/ff951618(v=technet.10)).
+- For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316209(v=sc.20)).
+- For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316217(v=sc.20)).
 
 ## Synchronize a Configuration Manager connector
 
 To ensure that the Service Manager database is up to date, the System Center Configuration Manager connector synchronizes with Configuration Manager every day after the initial synchronization. However, you can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
 
-### To manually synchronize a Configuration Manager connector
+### Manually synchronize a Configuration Manager connector
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
-3.  In the **Connectors** pane, select the Configuration Manager connector that you want to synchronize.
-4.  In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Administration**, and select **Connectors**.
+3. In the **Connectors** pane, select the Configuration Manager connector that you want to synchronize.
+4. In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
 
     > [!NOTE]
     > Depending on the amount of data that is imported, you might have to wait for the import to be completed.
 
-### To validate that a Configuration Manager connector synchronized
+### Validate that a Configuration Manager connector synchronized
 
-1.  In the Service Manager console, select **Configuration Items**.
-2.  In the **Configuration Items** pane, expand **Computers**, and select **All Windows Computers**. Verify that any new computers in Configuration Manager appear in the middle pane.
+1. In the Service Manager console, select **Configuration Items**.
+2. In the **Configuration Items** pane, expand **Computers**, and select **All Windows Computers**. Verify that any new computers in Configuration Manager appear in the middle pane.
 
 ## Configure a Configuration Manager connector for an extended SMS_def.mof file
 
@@ -175,38 +180,42 @@ When you create a Configuration Manager connector in Service Manager, you can se
 If the Configuration Manager SMS_def.mof file has been extended to collect additional hardware inventory data, which you also want to import into Service Manager, you must create a new custom management pack that defines that additional data. Then, you've to create a new Configuration Manager connector and configure it to use the new custom management pack.
 
 ### Import extended hardware inventory data from Configuration Manager
+
 To import extended hardware inventory data from Configuration Manager, you must author a custom Configuration Manager connector management pack. There are two approaches to implementing a custom Configuration Manager connector:
 
--   Create a custom Configuration Manager connector management pack that defines the extended data that you want to import and then create two connectors. Configure one connector to use the default System Center Configuration Manager Connector Configuration management pack to import the data that is defined by default. Configure the second connector to use the custom management pack to import the additional extended data.
+- Create a custom Configuration Manager connector management pack that defines the extended data that you want to import and then create two connectors. Configure one connector to use the default System Center Configuration Manager Connector Configuration management pack to import the data that is defined by default. Configure the second connector to use the custom management pack to import the additional extended data.
 
--   Customize the default System Center Configuration Manager Connector Configuration management pack to also include the additional extended data. Create a single connector that is configured to use the custom management pack to import all the information that you must have.
+- Customize the default System Center Configuration Manager Connector Configuration management pack to also include the additional extended data. Create a single connector that is configured to use the custom management pack to import all the information that you must have.
 
 This article provides the information that you must have to implement the first approach that is described earlier. It provides the details that you must have so that you can develop a custom Configuration Manager connector management pack that imports the extended hardware inventory from Configuration Manager.
 
 The high-level steps to importing extended hardware inventory data are as follows:
 
-1.  Create a custom Configuration Manager Connector Configuration management pack with the definitions for the extended data.
-2.  Import the custom management pack into Service Manager. After you import the management pack, Service Manager processes the directives in the management pack to create staging tables and to run any install Structured Query Language (SQL) scripts, as defined in the management pack.
-3.  Create a Configuration Manager connector and configure it to use the custom management pack.
-4.  The Configuration Manager connector imports the data.
+1. Create a custom Configuration Manager Connector Configuration management pack with the definitions for the extended data.
+2. Import the custom management pack into Service Manager. After you import the management pack, Service Manager processes the directives in the management pack to create staging tables and to run any install Structured Query Language (SQL) scripts, as defined in the management pack.
+3. Create a Configuration Manager connector and configure it to use the custom management pack.
+4. The Configuration Manager connector imports the data.
 
 ### Work with a custom Configuration Manager Connector management pack
+
 Consider the following tips when you're working with a custom Configurations Manager Connector management pack:
 
--   Semantic errors in the connector configuration templates in the management pack don't prevent the management pack from being imported, and they're logged to the event log. In this case, you must delete the management pack, correct the errors, and reimport the management pack.
+- Semantic errors in the connector configuration templates in the management pack don't prevent the management pack from being imported, and they're logged to the event log. In this case, you must delete the management pack, correct the errors, and reimport the management pack.
 
--   After creating a Configuration Manager connector, you can't modify its management pack selection. Instead, you must delete that connector and then create a new one with the desired management pack selection.
+- After creating a Configuration Manager connector, you can't modify its management pack selection. Instead, you must delete that connector and then create a new one with the desired management pack selection.
 
--   To ensure a successful deletion of a management pack, you must delete any connectors that are configured to use the management pack that you want to delete and then delete the management pack.
+- To ensure a successful deletion of a management pack, you must delete any connectors that are configured to use the management pack that you want to delete and then delete the management pack.
 
     When you delete a custom Configurations Manager Connector management pack, Service Manager tries to delete all related staging tables that were created during the management pack import. Then, Service Manager runs any scripts that are defined in the **Uninstall** section of the management pack.
 
--   Unlike other management packs, the custom Configuration Manager Connector management pack can't be versioned. Importing a later version of the management pack will succeed. However, the connector configuration in the management pack will be ignored, or it might cause validation errors that are logged to the event log.
+- Unlike other management packs, the custom Configuration Manager Connector management pack can't be versioned. Importing a later version of the management pack will succeed. However, the connector configuration in the management pack will be ignored, or it might cause validation errors that are logged to the event log.
 
 ### Create custom Configuration Manager Connector Configuration management pack
+
 A custom Configuration Manager Connector Configuration management pack is similar in structure to the default Configuration Manager Connector management pack. It must contain the two object templates **DataProvider** and **DataConsumer** that specify how the data should be imported and applied.
 
 #### DataProvider section
+
 The **DataProvider** section provides information, such as which data to import, that you must have when you're importing data from Configuration Manager into the staging tables of **LinkingFramework**. The **DataProvider** section includes the queries that run on the Configuration Manager site database; directives for staging table creation; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 #### DataConsumer section
@@ -214,6 +223,7 @@ The **DataProvider** section provides information, such as which data to import,
 The **DataConsumer** section provides information about reading the data from staging tables and writing it to the **ServiceManager** database's instances space, such as **Entities** or **Relationships**. The **DataConsumer** section includes queries that run on the staging tables; mapping to the Service Manager type system; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 #### Structure of the DataProvider and DataConsumer object templates sections
+
 Basically, the **DataProvider** and the **DataConsumer** are object templates that are targeted to a projection type. The following code shows the general structure of the **DataProvider** and the **DataConsumer** sections:
 
 ```
@@ -228,13 +238,14 @@ Basically, the **DataProvider** and the **DataConsumer** are object templates th
 
 In this code, **DataTable**, **Field**, and **DataCollection** are defined as follows:
 
--   **DataTable**. The smallest data unit that is defined for data transfer. It's a declaration of what data to retrieve from the external data source. It also defines dependencies between different data tables and when data batching, watermarking, and grooming have finished.
+- **DataTable**. The smallest data unit that is defined for data transfer. It's a declaration of what data to retrieve from the external data source. It also defines dependencies between different data tables and when data batching, watermarking, and grooming have finished.
 
--   **Field**. A single column in a data table.
+- **Field**. A single column in a data table.
 
--   **DataCollection**. A set of data tables to be transferred in one data transfer job or session. It defines which data tables are included in this data collection.
+- **DataCollection**. A set of data tables to be transferred in one data transfer job or session. It defines which data tables are included in this data collection.
 
 ### Properties in the custom management pack
+
 The following table provides the details about each property in the custom Configuration Manager Connector Configuration management pack. Use these guidelines when you create the custom management pack.
 
 |Property|Expected value|Validation after import|
@@ -273,11 +284,13 @@ The following table provides the details about each property in the custom Confi
 |Settings|In **DataProvider** template-Not present<br /><br />In **DataConsumer** template-Indicates type mapping|Escaped XML with following syntax:<br /><br />`<TypeName>Microsoft.Windows.Computer</TypeName>`<br /><br />`<MPName>Microsoft.Windows.Library</MPName>`<br /><br />`<MPVersion>version of MP</MPVersion>`<br /><br />`<MPToken>token for MP</MPToken>`|
 
 ### Custom Configuration Manager Connector Configuration management packs samples
+
 The following are schema definitions and Configuration Manager Connector management pack samples that import data from the Configuration Manager SCCM_Ext.vex_GS_PC_BIOS view.
 
 Refer to the table earlier in this article for more information about the properties of these management packs. Use an XML editor, such as the editor in Microsoft Visual Studio, to modify these samples to fit your import scenarios.
 
 #### Import data from a hosted class
+
 When you're specifying a class that is hosted, the view in the **DataConsumer** template should include columns for the key property of the parent class. In this sample, the class that contains the BIOS information is hosted under a computer.
 
 In this example, the Configuration Manager Connector Configuration management pack has two collections in the **DataProvider** and in the **DataConsumer** sections, one for importing the computers data and the second to import the BIOS data.

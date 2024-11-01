@@ -5,7 +5,7 @@ description: This article explains monitoring modes in Management Pack for SQL S
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 1/25/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

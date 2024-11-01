@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/15/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency5, engagement-fy24
@@ -23,7 +23,7 @@ Before you start the installation of System Center - Service Manager, you may wa
 |Service Manager data warehouse|DWStagingAndConfig<br /><br /> DWRepository<br /><br /> DWDataMart<br /><br /> DWASDataBase<br /><br /> OMDWDataMart<br /><br /> CMDWDataMart|These first three databases make up the data warehouse. The extract process populates the DWStagingAndConfig database, which is transformed into a proper format in the DWRepository database, which, through the load process, becomes the content for the DWDataMart database.<br /><br /> The DWASDatabase is used by SQL Server Analysis Services \(SSAS\) and stores Microsoft Online Analytical Processing \(OLAP\) cubes.<br /><br /> The OMDWDataMart and CMDWDataMart databases are for collecting data from Operations Manager and Configuration Manager, respectively.|  
 
 > [!IMPORTANT]  
->  Service Manager doesn't support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL Server.
+> Service Manager doesn't support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL Server.
 
 ## Next steps
 

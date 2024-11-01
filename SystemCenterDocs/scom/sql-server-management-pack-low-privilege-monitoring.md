@@ -5,7 +5,7 @@ description: This article explains low-privilege monitoring
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 2/1/2023
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

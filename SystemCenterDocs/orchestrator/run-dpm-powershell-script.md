@@ -2,7 +2,7 @@
 title: Run DPM PowerShell Script
 description: The Run DPM PowerShell Script activity is used in a runbook to provide a flexible way to address more complex scenarios you may have in working with System Center - Data Protection Manager (DPM).
 ms.custom: UpdateFrequency3
-ms.date: 05/08/2019
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Run DPM PowerShell Script
-
-
 
 The Run DPM PowerShell Script activity is used in a runbook to provide a flexible way to address more complex scenarios you may have in working with System Center - Data Protection Manager (DPM).
 

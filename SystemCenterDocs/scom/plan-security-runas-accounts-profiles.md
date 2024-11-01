@@ -5,7 +5,7 @@ description: This article describes how to use run as accounts and profiles to s
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/29/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 
 
-Run As accounts define which credentials are used for certain actions performed by the Operations Manager agent. These accounts are centrally managed through the Operations console and assigned to different Run As profiles. If a Run As profile isn't assigned to a particular action, it is carried out under the Default Action account. In a low-privilege environment, the default account may not have the required permissions for a particular action, and a Run As profile can be used to provide this authority. Management packs may install Run As profiles and Run As accounts to support required actions. If so, their documentation should be referenced for any required configuration.
+Run As accounts define which credentials are used for certain actions performed by the Operations Manager agent. These accounts are centrally managed through the Operations console and assigned to different Run As profiles. If a Run As profile isn't assigned to a particular action, it's carried out under the Default Action account. In a low-privilege environment, the default account may not have the required permissions for a particular action, and a Run As profile can be used to provide this authority. Management packs may install Run As profiles and Run As accounts to support required actions. If so, their documentation should be referenced for any required configuration.
 
 ## Default Run As accounts
 
@@ -31,7 +31,6 @@ The following table lists the default Run As accounts created by Operations Mana
 | Data Warehouse Report Deployment Account | Used to authenticate between the management server and SQL Server hosting Operations Manager Reporting Services. | Domain account specified during setup as the Data Reader account. |
 | Local System Windows Account | Built-in SYSTEM account used by the agent action account. | Windows Local System account |
 | Network Service Windows Account | Built-in Network service account. | Windows NetworkService account |
-
 
 ## Default Run As profiles
 
@@ -60,11 +59,11 @@ The following table lists the Run As profiles created by Operations Manager duri
 | SNMPv3 Monitoring Account | This account is used for SNMPv3 monitoring. | None |
 | UNIX/Linux Action Account | THis account is used for low privilege UNIX and Linux access. | None |
 | UNIX/Linux Agent Maintenance Account | This account is used for privileged maintenance operations for UNIX and Linux agents.  Without this account, agent maintenance operations doesn't work. | None |
-| UNIX/Linux Privileged Account | This account is used for accessing protected UNIX and Linux resources and actions that require high privileges.  Without this account, some rules, diagnostics, and recoveries doesn't work. | None |
+| UNIX/Linux Privileged Account | This account is used for accessing protected UNIX and Linux resources and actions that require high privileges.  Without this account, some rules, diagnostics, and recoveries don't work. | None |
 | Windows Cluster Action Account | This profile is used for all discovery and monitoring of Windows Cluster components. This profile defaults to used action accounts unless it's populated by the user. | None |
 | WS-Management Action Account | This profile is used for WS-Management access. | None |
 
-## Understanding distribution and targeting
+## Understand distribution and targeting
 
 Both Run As account distribution and Run As account targeting must be correctly configured for the Run As profile to work properly.
 

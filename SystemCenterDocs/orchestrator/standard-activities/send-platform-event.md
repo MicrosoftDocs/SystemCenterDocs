@@ -2,7 +2,7 @@
 title: Send Platform Event
 description: This article describes the Send Platform Event activity that creates an activity event with text that you specify.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -16,8 +16,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # Send Platform Event
-
-
 
 The Send Platform Event activity creates an activity event with text that you specify. You can use the Send Platform Event activity to create notifications of any problems or general information that occur in the runbook.  
 
@@ -34,7 +32,7 @@ For more information about activity events, see [Activity Events](../activity-ev
 |**Details**|Details of the event that display when the event is opened. This has a limit of 2,000 characters.|  
 
 > [!WARNING]
->  The Runbook Designer doesn't warn you when you configure this activity and you exceed the limits for the **Summary** or **Details** settings. If you exceed these limits, the Runbook Designer doesn't allow you to check-in the runbook and a generic error is shown. The runbook server generates an error if it attempts to process data that exceeds these limits.  
+> The Runbook Designer doesn't warn you when you configure this activity and you exceed the limits for the **Summary** or **Details** settings. If you exceed these limits, the Runbook Designer doesn't allow you to check-in the runbook and a generic error is shown. The runbook server generates an error if it attempts to process data that exceeds these limits.  
 
 ## Published Data  
 

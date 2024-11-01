@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Rename File or Folder
-
-
 
 The Rename File/Folder activity is used in a runbook to rename a file or folder on an FTP server.
 

@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -52,7 +52,7 @@ Follow these steps to restart data warehouse jobs:
 2. Enter the following commands and then press Enter after each command.  
 
     > [!NOTE]  
-    >  It's assumed in the following command examples that Service Manager was installed in its default location on the C: drive. If necessary, change directories to the location where you installed Service Manager.
+    > It's assumed in the following command examples that Service Manager was installed in its default location on the C: drive. If necessary, change directories to the location where you installed Service Manager.
 
     ```powershell
     cd 'C:\Program Files\Microsoft System Center <version>\Service Manager'  
@@ -100,7 +100,7 @@ Follow these steps to restart data warehouse jobs:
 
  After you perform an upgrade, use the following procedure to stop and then start SSRS.  
 
-#### Stop and then restart SSRS
+To stop and then restart SSRS, follow these steps:
 
 Follow these steps to stop and then restart SSRS:
 

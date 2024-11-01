@@ -5,7 +5,7 @@ description: This article provides information to add and allocate storage to Hy
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/09/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -110,10 +110,12 @@ In **Host Cluster Name** > **Properties**, select a tab:
    ::: moniker range="sc-vmm-2016"
    - **Shared Volumes**: For adding cluster shared volumes (CSVs), converting CSVs to available storage, or removing CSVs. The cluster must run at least Windows Server 2012 to support CSVs.
    ::: moniker-end
-   ::: moniker range=">sc-vmm-2016"
-   - **Shared Volumes**: For adding cluster shared volumes (CSVs), converting CSVs to available storage, or removing CSVs. The cluster must run at least Windows Server 2016 to support CSVs.
+   ::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
+   - **Shared Volumes**: for adding cluster shared volumes (CSVs), converting CSVs to available storage, or removing CSVs. The cluster must run at least Windows Server 2016 to support CSVs.
    ::: moniker-end
-
+   ::: moniker range="sc-vmm-2025"
+   - **Shared Volumes**: for adding cluster shared volumes (CSVs), converting CSVs to available storage, or removing CSVs. The cluster must run at least Windows Server 2019 to support CSVs.
+   ::: moniker-end
 2.  Configure storage for the host cluster.
 
     - If you add available storage for CSVs, use only alphanumeric characters for a LUN. You can't change the partition style of a disk that has already been initialized.

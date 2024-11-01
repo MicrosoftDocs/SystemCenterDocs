@@ -2,7 +2,7 @@
 title: Modify Counter
 description: This article describes the functionality of Modify Counter activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,13 +17,12 @@ manager: jsuri
 ---
 # Modify Counter
 
-
-
 The Modify Counter increments and decrements a counter, and resets it to its default value. It also sets it to a value you specify. Wherever you need to update the value of a counter, use the Modify Counter activity to update its value.  
 
  The current value of a counter is specific for every runbook that uses that counter. The first time a counter is used, the default value that has been specified in the counters configuration will be used. You can only modify the value of counters in a runbook using the Modify Counter activity.  
 
-## Configuring the Modify Counter Activity  
+## Configure the Modify Counter Activity
+
  Before you configure the Modify Counter activity, you need to determine the following:  
 
 - The counter you're updating.  
@@ -40,7 +39,8 @@ Use the following information to configure the Modify Counter activity.
 |**Action**|Select how you want the value of the counter to be changed:<br /><br /> **Increment**: add the **Step** value to the value of the counter.<br /><br /> **Decrement**: subtract the **Step** value from the value of the counter.<br /><br /> **Set**: set the value of the counter to the **Step** value.<br /><br /> **Reset**: reset the value of the counter to the default value.|  
 |**Value**|The value used by the **Increment**, **Decrement**, or **Set** action.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

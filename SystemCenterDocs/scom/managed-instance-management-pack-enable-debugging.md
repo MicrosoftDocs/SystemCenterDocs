@@ -4,7 +4,7 @@ description: This article explains how to enable debugging in Management Pack fo
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 02/29/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
