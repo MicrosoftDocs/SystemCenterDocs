@@ -18,7 +18,7 @@ See the following sections for information about the new features/features updat
 
 ## Support for Windows Server 2025  
 
-Service Manager 2025 now supports Windows Server 2025. [Learn more](/SystemCenterDocs/scsm/system-requirements.md).
+Service Manager 2025 now supports Windows Server 2025. [Learn more](/system-center/scsm/system-requirements?view=sc-sm-2025).
 
 ## Other updates
 
