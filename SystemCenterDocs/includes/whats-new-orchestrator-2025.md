@@ -18,7 +18,7 @@ The following sections introduce new and updated features in System Center Orche
 
 ### Support for OLEDB19
 
-SCO 2025 supports OLEDB19  which encrypts SQL Connection by default. Ensure to have Trusted Server certificate for successful SQL connection. [Learn more](/system-center/orchestrator/install?view=sc-orch-2025).
+SCO 2025 supports OLEDB19  which encrypts SQL Connection by default. Ensure to have Trusted Server certificate for successful SQL connection. [Learn more](/system-center/orchestrator/install?view=sc-orch-2025#secure-connection-to-sql-server).
 
 ### Support for .NET 8
 
