@@ -41,11 +41,11 @@ This information helps you understand the performance and scalability characteri
 ## Upgrade sequence
 If you're upgrading an installation of System Center 2016/1801/1807 - Operations Manager that's integrated with one or more System Center components, it's important that you upgrade in the following order.
 
-1. Orchestrator - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
-2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager.
-3. Data Protection Manager - if you've configured the central console to centrally manage your DPM environment.
-4. Operations Manager
-5. Virtual Machine Manager - if you've configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines, and virtual machine hosts.
+1. **Orchestrator** - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
+2. **Service Manager** - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager.
+3. **Data Protection Manager** - if you've configured the central console to centrally manage your DPM environment.
+4. **Operations Manager**
+5. **Virtual Machine Manager** - if you've configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines, and virtual machine hosts.
 
 ## Hardware requirements
 
