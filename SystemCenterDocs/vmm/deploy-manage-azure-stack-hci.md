@@ -1,11 +1,11 @@
 ---
 ms.assetid: 40d9b3b7-3e5a-463c-bbc0-161450e59714
-title: Deploy and manage Azure Local instances in VMM
-description: This article describes how to set up an Azure Local instance in VMM.
+title: Deploy and manage Azure Stack HCI clusters in VMM
+description: This article describes how to set up an Azure Stack HCI cluster in VMM.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/13/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,9 +13,9 @@ monikerRange: '>=sc-vmm-2019 <=sc-vmm-2022'
 ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23
 ---
 
-# Deploy and manage Azure Local instances in VMM
+# Deploy and manage Azure Stack HCI clusters in VMM
 
-This article provides information about how to set up an Azure Local instance in System Center Virtual Machine Manager (VMM). You can deploy an Azure Local instance by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
+This article provides information about how to set up an Azure Stack HCI cluster in System Center Virtual Machine Manager (VMM). You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
 
 ::: moniker range="sc-vmm-2022"
 
@@ -31,7 +31,7 @@ This article provides information about how to set up an Azure Local instance in
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 >[!IMPORTANT]
->Azure Local instances that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
+>Azure Stack HCI clusters that are managed by Virtual Machine Manager must not join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. For the latest updates, see the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog).
 ::: moniker-end
 
 ## Before you start
@@ -42,19 +42,19 @@ Ensure that you're running VMM 2019 UR3 or later.
 
 **What’s supported?**
 
-- Addition, creation, and management of Azure Local instances. [See detailed steps](./hyper-v-existing.md#add-servers) to create and manage HCI clusters.
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](./hyper-v-existing.md#add-servers) to create and manage HCI clusters.
 
-- Ability to provision and deploy VMs on the Azure Local instances and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
+- Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
 
-- [Set up VLAN based network on Azure Local instances](manage-networks.md).
+- [Set up VLAN based network on Azure Stack HCI clusters](manage-networks.md).
 
-- [Deployment and management of SDN network controller on Azure Local instances](sdn-controller.md).
+- [Deployment and management of SDN network controller on Azure Stack HCI clusters](sdn-controller.md).
 
 - Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs), and application of [QoS settings](qos-storage-clusters.md#assign-storage-qos-policy-for-clusters).
 
-- Moving VMs between Windows Server and Azure Local instances works via Network Migration and migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it's performed as a single operation. 
+- Moving VMs between Windows Server and Azure Stack HCI clusters works via Network Migration and migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it's performed as a single operation. 
 
-- The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Local instances as well.
+- The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
 
 ::: moniker-end
 
@@ -64,27 +64,27 @@ Ensure that you're running VMM 2022 UR1 or later.
 
 **What’s supported?**
 
-- Addition, creation, and management of Azure Local instances. [See detailed steps](./hyper-v-existing.md#add-servers) to create and manage HCI clusters.
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](./hyper-v-existing.md#add-servers) to create and manage HCI clusters.
 
-- Ability to provision and deploy VMs on the Azure Local instances and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
+- Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates, or from an existing VM. [Learn more](provision-vms.md).
 
-- [Set up VLAN based network on Azure Local instances](manage-networks.md).
+- [Set up VLAN based network on Azure Stack HCI clusters](manage-networks.md).
 
-- [Deployment and management of SDN network controller on Azure Local instances](sdn-controller.md).
+- [Deployment and management of SDN network controller on Azure Stack HCI clusters](sdn-controller.md).
 
 - Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs), and application of [QoS settings](qos-storage-clusters.md#assign-storage-qos-policy-for-clusters).
 
-- Moving VMs between Windows Server and Azure Local instances works via Network Migration and migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it's performed as a single operation. 
+- Moving VMs between Windows Server and Azure Stack HCI clusters works via Network Migration and migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it's performed as a single operation. 
 
-- The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Local instances as well.
+- The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
-**Register and unregister Azure Local instances**
+**Register and unregister Azure Stack HCI clusters**
 
-With VMM 2022, we're introducing VMM PowerShell cmdlets to register and unregister Azure Local instances.
+With VMM 2022, we're introducing VMM PowerShell cmdlets to register and unregister Azure Stack HCI clusters.
 
 Use the following cmdlets to register an HCI cluster:
 
@@ -106,17 +106,17 @@ For detailed information on the supported parameter, see [Register-SCAzStackHCI]
 
 - Management of Azure Stack HCI [stretched clusters](/azure-stack/hci/concepts/stretched-clusters) is currently not supported in VMM.
 
-- Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. The Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Local instances shouldn't be used for other purposes like WSUS servers, WDS servers, or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci), and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
+- Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. The Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Stack HCI clusters shouldn't be used for other purposes like WSUS servers, WDS servers, or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci), and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
 
-- Live migration between any version of Windows Server and Azure Local instances isn't supported. 
+- Live migration between any version of Windows Server and Azure Stack HCI clusters isn't supported. 
 
 > [!NOTE]
-> Live migration between Azure Local instances works, as well as between Windows Server clusters.
+> Live migration between Azure Stack HCI clusters works, as well as between Windows Server clusters.
 
 - The only storage type available for Azure Stack HCI is Storage Spaces Direct (S2D). Creation or management of non-S2D cluster with Azure Stack HCI nodes isn't supported. If you need to use any other type of storage, for example SANs, use Windows Server as the virtualization host.
 
 > [!NOTE]
-> You must enable S2D when creating an Azure Local instance.
+> You must enable S2D when creating an Azure Stack HCI cluster.
 > To enable S2D, in the cluster creation wizard, go to **General Configuration**. Under **Specify the cluster name and host group**, select **Enable Storage Spaces Direct** as shown below:
 
 ![Screenshot of S2D enabled.](./media/s2d/s2d-enable.png)
@@ -171,7 +171,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 3.	[Create VM networks](network-virtual.md).
 
 
-## Step 3: Configure DCB settings on the Azure Local instance
+## Step 3: Configure DCB settings on the Azure Stack HCI cluster
 
 >[!NOTE]
 >Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4 if you do not wish to configure DCB settings.
@@ -222,25 +222,25 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 5. Review the summary and select **Finish**.
 
-    An Azure Local instance will be created and the DCB parameters are configured on all the S2D nodes.
+    An Azure Stack HCI cluster will be created and the DCB parameters are configured on all the S2D nodes.
 
    > [!NOTE]
    > - DCB settings can be configured on the existing Hyper-V S2D clusters by visiting the **Cluster Properties** page and navigating to the **DCB configuration** page.
    > - Any out-of-band changes to DCB settings on any of the nodes will cause the S2D cluster to be non-compliant in VMM. A Remediate option will be provided in the **DCB configuration** page of cluster properties, which you can use to enforce the DCB settings configured in VMM on the cluster nodes.
 
-## Step 4: Register Azure Local instance with Azure
+## Step 4: Register Azure Stack HCI cluster with Azure
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 
-After creating an Azure Local instance, it must be registered with Azure within 30 days of installation per Azure Online Service terms. If you're using System Center 2022, use `Register-SCAzStackHCI` cmdlet in VMM to register the Azure Local instance with Azure. Alternatively, follow [these steps](/azure-stack/hci/deploy/register-with-azure) to register the Azure Local instance with Azure.
+After creating an Azure Stack HCI cluster, it must be registered with Azure within 30 days of installation per Azure Online Service terms. If you're using System Center 2022, use `Register-SCAzStackHCI` cmdlet in VMM to register the Azure Stack HCI cluster with Azure. Alternatively, follow [these steps](/azure-stack/hci/deploy/register-with-azure) to register the Azure Stack HCI cluster with Azure.
 
 ::: moniker-end
 
 The registration status will reflect in VMM after a successful cluster refresh.
 
-## Step 5: View the registration status of Azure Local instances
+## Step 5: View the registration status of Azure Stack HCI clusters
 
-1. In the VMM console, you can view the registration status and last connected date of Azure Local instances.
+1. In the VMM console, you can view the registration status and last connected date of Azure Stack HCI clusters.
 2. Select **Fabric**, right-click the **Azure Stack HCI** cluster, and select **Properties**.
 
    ![Screenshot of Registration status.](./media/s2d/registration-status.png)
@@ -270,11 +270,11 @@ You can now modify the storage pool settings and create virtual disks and CSVs.
 In a hyper-converged topology, VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would create any other VM.
 
 > [!Important]
-> If the Azure Local instance isn't registered with Azure or not connected to Azure for more than 30 days post registration, high availability virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 and 5 for cluster registration.
+> If the Azure Stack HCI cluster isn't registered with Azure or not connected to Azure for more than 30 days post registration, high availability virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 and 5 for cluster registration.
 
 ::: moniker range="sc-vmm-2022"
 
-## Step 8: Migrate VMs from Windows Server to Azure Local instance
+## Step 8: Migrate VMs from Windows Server to Azure Stack HCI cluster
 
 Use Network migration functionality in VMM to migrate workloads from Hyper-V (Windows Server 2019 and later) to Azure Stack HCI.
 
@@ -289,7 +289,7 @@ Use Network migration functionality in VMM to migrate workloads from Hyper-V (Wi
 6.	Select **Next** to initiate network migration. VMM will perform imports and exports at the back end. 
 7.	To verify that the virtual machine is successfully migrated, check the VMs list on the destination host. Turn on the VM and re-enable live migration on the Azure Stack HCI host. 
 
-## Step 9: Migrate VMware workloads to Azure Local instance using SCVMM
+## Step 9: Migrate VMware workloads to Azure Stack HCI cluster using SCVMM
 
 VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) conversion. You can use the conversion tool to migrate workloads at scale from VMware infrastructure to Hyper-V infrastructure. 
 For the list of supported VMware servers, see [System requirements](system-requirements.md).
@@ -355,7 +355,7 @@ After you add the ESXi clusters, all the virtual machines running on the ESXi cl
 
    :::image type="Select host" source="media/deploy-manage-azure-stack-hci/select-host.png" alt-text="Screenshot showing select host option.":::
 6. Select a [virtual network](manage-networks.md) for the virtual machine and select **Create** to complete the migration.  
-The virtual machine running on the ESXi cluster is successfully migrated to Azure Local instance. For automation, use [PowerShell commands](vm-convert-vmware.md#convert-using-powershell-cmdlets) for conversion. 
+The virtual machine running on the ESXi cluster is successfully migrated to Azure Stack HCI cluster. For automation, use [PowerShell commands](vm-convert-vmware.md#convert-using-powershell-cmdlets) for conversion. 
 
 ::: moniker-end
 
