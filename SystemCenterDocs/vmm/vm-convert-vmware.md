@@ -38,7 +38,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
  
 2.	In the VMM console, under **Fabric**, select **Servers > Add VMware vCenter Server**.
 
-    :::image type="content" source="media/vm-convert-vmware/add-vmware-vcenter-server.png" alt-text="Screenshot of add vmware vcenter server option." lightbox="media/vm-convert-vmware/add-vmware-vcenter-server.png":::
+    :::image type="content" source="media/vm-convert-vmware/add-vmware-vcenter-server.png" alt-text="Screenshot of add VMware vcenter server option." lightbox="media/vm-convert-vmware/add-vmware-vcenter-server.png":::
 
 3.	In the **Add VMware vCenter Server** page, do the following:<br>
   a. **Computer name**: Specify the vCenter server name.<br>
@@ -56,7 +56,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 
 7.	In the VMM console, under **Fabric**, select **Servers > Add VMware ESX Hosts and Clusters**.
 
-    :::image type="content" source="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png" alt-text="Screenshot of add vmware ESX hosts and clusters page." lightbox="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png":::
+    :::image type="content" source="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png" alt-text="Screenshot of add VMware ESX hosts and clusters page." lightbox="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png":::
 
 8.	In the **Add Resource Wizard**,<br>
     a. Under **Credentials**, select the Run as account with administrator privileges on the ESXi host to be added and select **Next**.<br>
@@ -86,13 +86,13 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 2.	Select **VMs and Services > Home > Create > Create Virtual Machines > Convert Virtual Machine**.
 
-3.	In **Convert Virtual Machine** wizard > **Select Source**, select **Browse** and in **Select Virtual Machine Source**, select the VMware VM you want to convert.
+3.	In **Convert Virtual Machine** wizard > **Select Source**, select **Browse**, and in **Select Virtual Machine Source**, select the VMware VM you want to convert.
 
 4.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
 5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings. You can migrate BIOS-based VMware VMs to Generation 1 Hyper-V VMs and UEFI-based VMware VMs to Generation 2 Hyper-V VMs.
 
-6.	In **Select Host**, select a Hyper-V host/Azure Stack HCI for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
+6.	In **Select Host**, select a Hyper-V host/Azure Local for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
 7.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 
@@ -105,7 +105,7 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 ## Convert using PowerShell cmdlet
 
-Here is the PowerShell cmdlet for V2V conversion via SCVMM with all the parameters:
+Here's the PowerShell cmdlet for V2V conversion via SCVMM with all the parameters:
 
 ```powershell
 
@@ -127,7 +127,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 >[!Note]
 > We recommend that no more than ten conversions be triggered parallelly from the same ESXi source to the same Hyper-V destination. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel, with the remaining conversions queued. However, we recommend staging the VM conversions in smaller batches for higher efficiency.
 
-PowerShell script-based conversion allows you to automate your conversion process and perform at-scale conversions. PowerShell commands also allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk, based on the requirements. Here is a sample PowerShell script to convert five VMs - VM1, VM2, VM3, VM4, VM5:
+PowerShell script-based conversion allows you to automate your conversion process and perform at-scale conversions. PowerShell commands also allow you to provide the disk type for the target Hyper-V VM, which enables the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk, based on the requirements. Here's a sample PowerShell script to convert five VMs - VM1, VM2, VM3, VM4, VM5:
 
 *Sample script with appropriate values*
 
