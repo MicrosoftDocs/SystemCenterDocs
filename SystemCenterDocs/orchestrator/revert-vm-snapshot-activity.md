@@ -13,11 +13,9 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Revert VM Snapshot activity
-
-
 
 The Revert VM Snapshot activity is used in a runbook to revert a virtual machine to the last available snapshot. This allows the runbook to revert a snapshot to its previous state after you've finished using it.
 
@@ -48,7 +46,7 @@ The activity publishes all the data from the required and optional properties in
 
 The following procedure describes the steps required to configure a Revert VM Snapshot activity.
 
-#### To configure the Revert VM Snapshot activity
+#### Configure the Revert VM Snapshot activity
 
 1.  From the **Activities** pane, drag a **Revert VM Snapshot** activity to the active runbook.
 

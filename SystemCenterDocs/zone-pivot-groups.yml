@@ -1,0 +1,23 @@
+### YamlMime:ZonePivotGroups
+groups:
+#Owner: v-gjeronika
+- id: orchestrator-security-planning
+  title: Orchestration security planning
+  prompt: Choose a security requirement
+  pivots:
+  - id: orchestrator-service-account
+    title: Orchestrator Service Accounts
+  - id: orchestrator-user-group
+    title: Orchestrator Users Group
+  - id: orchestrator-database-security
+    title: Orchestrator Database Security
+  - id: runbook-security
+    title: Runbook security
+  - id: web-service-console-security
+    title: Orchestrator Web Service and Orchestration Console Security
+  - id: use-windows-firewall
+    title: Use Windows Firewall with Orchestrator
+  - id: security-scenarios
+    title: Orchestrator Security Scenarios
+  - id: data-encryption
+    title: Orchestrator Data Encryption

@@ -2,7 +2,7 @@
 title: Query XML 
 description: This article describes the Query XML activity that is used to perform an XPath query on an XML file.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Query XML
 
-
-
 The Query XML activity is used to perform an XPath query on an XML file. You can use this activity to search for a string in an XML file.  
 
-## Configuring the Query XML Activity  
+## Configure the Query XML Activity
+
  Before you configure the Query XML activity, you need to determine the following:  
 
 - The XML file name or Block of XML that you want to search.  
@@ -38,7 +37,8 @@ Use the following information to configure the Query XML activity.
 |**XML Text**|Select either this option or the XML File option. Enter the name of the element in the XML text that you want to search in.|  
 |**XPath Query**|Enter the XPath query for your search.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

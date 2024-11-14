@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -121,7 +121,6 @@ Use this procedure to delete an activity group in the Service Manager Authoring 
 > You can only delete personalized activity groups. You can't delete the default activity groups.
 
 - In the **Activities Toolbox** pane, right-click the group, and select **Delete Group**.
-
 
 ## Next steps
 

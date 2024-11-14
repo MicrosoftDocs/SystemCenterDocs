@@ -2,7 +2,7 @@
 title: REST activities
 description: The following configuration instructions apply to all activities in this integration pack. It lists event notifications.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 03/04/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,15 +17,13 @@ robots: noindex
 ---
 # REST activities
 
-
-
 The following configuration instructions apply to all the activities in this integration pack. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
-#### To configure the properties for an activity
+#### Configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 
@@ -65,7 +63,7 @@ Published data is the foundation of a working runbook. It's the data produced as
 
 An activity can only subscribe to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+#### Use published data
 
 1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 

@@ -5,7 +5,7 @@ description: This section explains tasks in the Management Pack for SQL Server R
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 08/12/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

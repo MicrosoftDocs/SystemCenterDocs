@@ -2,7 +2,7 @@
 title: Add Computer To Group
 description: You can use the Add Computer To Group activity in a runbook to add a computer to a group in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2, engagement-fy24
-ms.date: 03/04/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

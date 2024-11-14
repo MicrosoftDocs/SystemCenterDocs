@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: '>sc-sm-2016'
@@ -33,11 +33,11 @@ You will receive notices for evaluation expiry once the evaluation period expire
 
 If you try to connect to Service Manager after the expiry of the evaluation period, the following notices appear on the Console and on PowerShell.
 
-**Notice for Service Manager Console**
+### Notice for Service Manager Console
 
 ![Screenshot showing Notice through console.](./media/sm-licensing/notice-for-sm.png)
 
-**Notice for Service Manager PowerShell**
+### Notice for Service Manager PowerShell
 
 ![Screenshot showing Notice through PowerShell.](./media/sm-licensing/notice-for-sm-powershell.png)
 

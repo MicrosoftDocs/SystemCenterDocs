@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/20/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -72,7 +72,7 @@ To configure SharePoint infrastructure for dashboards, do the following:
 
 You can use the following information to create a new data source in Service Manager and save it using Dashboard Designer.  
 
- The workspace is an XML document that defines the PerformancePoint item definitions for a particular project. The saved workspace items are stored in SharePoint lists and libraries. You can add existing stored items to a workspace based on the project requirements.  
+The workspace is an XML document that defines the PerformancePoint item definitions for a particular project. The saved workspace items are stored in SharePoint lists and libraries. You can add existing stored items to a workspace based on the project requirements.  
 
 To create a data source for Dashboard Designer, do the following:
 
@@ -231,9 +231,9 @@ Use the following procedure to create and assemble the Resolved Incidents Dashbo
 
 Use the following procedure to deploy the Resolved Incidents Dashboard to the SharePoint Dashboards library.  
 
- In this procedure, you deploy the Resolved Incidents Dashboard to the SharePoint Dashboards library using the selected master page. Each dashboard is published as a folder that consists of a web page for each page in the dashboard.  
+In this procedure, you deploy the Resolved Incidents Dashboard to the SharePoint Dashboards library using the selected master page. Each dashboard is published as a folder that consists of a web page for each page in the dashboard.  
 
- After you deploy the dashboard, you can select values in the Resolved Incidents Scorecard to show information that applies only to that classification. For example, if you select an E\-Mail Problems value, only incidents with the E\-Mail Problems classification appear in the scorecard portion of the report.  
+After you deploy the dashboard, you can select values in the Resolved Incidents Scorecard to show information that applies only to that classification. For example, if you select an E\-Mail Problems value, only incidents with the E\-Mail Problems classification appear in the scorecard portion of the report.  
 
 1. Open Dashboard Designer, connect to the server that hosts the DWASDataBase, and then select **Service Manager WorkItems Cube**. Or, if you've previously saved a designer workspace file that contains the connection information, open that file.  
 

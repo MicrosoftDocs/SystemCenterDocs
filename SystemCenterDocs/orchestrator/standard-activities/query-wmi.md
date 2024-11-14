@@ -2,7 +2,7 @@
 title: Query WMI
 description: This article describes the Query WMI activity that will send a WMI query to a system that you specify and return the results.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Query WMI
 
-
-
 The Query WMI activity will send a WMI query to a system that you specify and return the results. This activity can also be used to check statistics on a remote server to create audit trails that can be reviewed later.  
 
-## Configuring the Query WMI Activity  
+## Configure the Query WMI Activity
+
  Before you configure the Query WMI activity, you need to determine the following:  
 
 - The computer you are querying.  
@@ -38,7 +37,8 @@ Use the following information to configure the Query WMI activity.
 |**Namespace**|Type the name of the WMI namespace that you want to query.|  
 |**WMI query**|Type the WMI query that will be used to query the **Computer**. For more information about Windows Management Instrumentation, see [Windows Management Instrumentation](/windows/win32/wmisdk/wmi-start-page).|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

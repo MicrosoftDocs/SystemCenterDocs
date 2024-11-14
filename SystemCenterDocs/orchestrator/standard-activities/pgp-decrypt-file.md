@@ -1,7 +1,7 @@
 ---
 title: PGP Decrypt File
 description: This article describes the functionality of PGP Decrypt File activity.
-ms.date: 05/07/2019
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -16,12 +16,9 @@ manager: jsuri
 ---
 # PGP Decrypt File
 
-
-
 The PGP Decrypt File activity decrypts a file or entire folder tree using a PGP key file and passphrase that you've created. When decrypting an entire folder, the folder tree is preserved from the root folder down. For example, if you decrypt C:\Documents and Settings\Administrator\My Documents\\\*.\* and all subfolders, all files in My Documents are decrypted and also all the files in the folders under My Documents. All the files in subfolders will be in the same subfolder in the Output folder.  
 
 You can use the PGP Decrypt File activity to decrypt files that were encrypted as part of a backup operation. To use this activity, you must install the gpg executable.
-
 
 ## Install GnuPG
 
@@ -31,19 +28,19 @@ GnuPG is an open-source program used by the standard activities PGP Encrypt file
 
 Use the following steps:
 
-1.	Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/).
-2.	Save gpg.exe and iconv.dll to the \<System drive\>:\Program Files (x86)\Common Files\Microsoft System Center \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that's running the Runbook Designer.
+1. Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/).
+2. Save gpg.exe and iconv.dll to the \<System drive\>:\Program Files (x86)\Common Files\Microsoft System Center \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that's running the Runbook Designer.
 
 ### Install GnuPG version 2.x
 
 Use the following steps:
 
-1.	Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
+1. Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
 
-2.	Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll to the \<System drive\>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+2. Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll to the \<System drive\>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
+## Configure the PGP Decrypt Activity
 
-## Configuring the PGP Decrypt Activity  
  Use the following information to configure the PGP Decrypt File activity.  
 
 ### Details Tab  
@@ -64,7 +61,8 @@ Use the following steps:
 |**Keyring folder**|Enter the location of the keyring folder that contains the secret keyring file that you'll use to decrypt the files. The secret keyring file (*.skr) may be renamed with a \*.gpg extension.|  
 |**Passphrase**|Enter the passphrase that is associated with the keyring file.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Reimage VM Instance
-
-
 
 The **Reimage Role Instance** activity requests a reimage of a role instance that is running in a deployment. It's part of the **Azure Deployments** category activity.
 

@@ -3,7 +3,7 @@ description: This article describes how you can identify tape libraries compatib
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/20/2024
+ms.date: 11/01/2024
 title: Identify compatible tape libraries
 ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe

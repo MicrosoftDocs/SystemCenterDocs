@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 05/20/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ms.custom: UpdateFrequency3,  engagement-fy24
@@ -32,7 +32,6 @@ For example, the end-user notification template includes a substitution string i
 
 While this example is simple, Service Manager includes substitution strings for almost every property that you might need to create notifications that can inform end-users and other Service Manager users with very timely and relevant information. You can easily view the substitution strings that are available in Service Manager by opening an existing notification template and then, in the template design area, selecting the **Insert** button to view the classes and properties.
 
-
 ## Configure notification channels
 
 You can use the following procedures to configure notification channels and validate the configuration. Notification channels are the method by which notification messages are sent to users. You use the **Configure E-Mail Notification Channel** dialog to configure and enable email notifications that Service Manager sends to a Simple Mail Transfer Protocol (SMTP) server.
@@ -40,32 +39,32 @@ You can use the following procedures to configure notification channels and vali
 > [!NOTE]
 > Only email notification is supported.
 
-### To configure email notifications
+### Configure email notifications
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Notifications**, and select **Channels**.
-3.  In the **Channels** pane, select **E-Mail Notification Channel**.
-4.  In the **Tasks** pane, under **E-Mail Notification Channel**, select **Properties** to open the **Configure E-Mail Notification Channel** dialog.
-5.  Select the **Enable e-mail notifications** checkbox.
-6.  Select **Add**. In the **Add SMTP Server** dialog, enter the fully qualified domain name (FQDN) of the SMTP server that you want to use. For example, enter **Exchange01.Woodgrove.Com**.
-7.  In the **Port number** box, enter or select the SMTP port number that you want to use. For example, select **25**.
-8.  In the **Authentication method** box, select either **Anonymous** or **Windows Integrated**. For example, select **Anonymous**. Then, select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Notifications**, and select **Channels**.
+3. In the **Channels** pane, select **E-Mail Notification Channel**.
+4. In the **Tasks** pane, under **E-Mail Notification Channel**, select **Properties** to open the **Configure E-Mail Notification Channel** dialog.
+5. Select the **Enable e-mail notifications** checkbox.
+6. Select **Add**. In the **Add SMTP Server** dialog, enter the fully qualified domain name (FQDN) of the SMTP server that you want to use. For example, enter **Exchange01.Woodgrove.Com**.
+7. In the **Port number** box, enter or select the SMTP port number that you want to use. For example, select **25**.
+8. In the **Authentication method** box, select either **Anonymous** or **Windows Integrated**. For example, select **Anonymous**. Then, select **OK**.
 9. In the **Return e-mail address** box, enter the email address of the service account that is used during setup. For example, enter **smadmin\@woodgrove.com**.
 10. In the **Retry primary after** box, enter or select the number of seconds that you want Service Manager to wait before it tries to resend outgoing email notifications. For example, select **25**.
 11. Select **OK** to close the dialog.
 
-### To validate email notification configuration
+### Validate email notification configuration
 
-1.  In the **Channels** pane, select **E-Mail Notification Channel**.
-2.  In the **Tasks** pane, under **E-Mail Notification Channel**, select **Properties** to open the **Configure E-Mail Notification Channel** dialog.
-3.  Verify that the configuration you entered is correct.
+1. In the **Channels** pane, select **E-Mail Notification Channel**.
+2. In the **Tasks** pane, under **E-Mail Notification Channel**, select **Properties** to open the **Configure E-Mail Notification Channel** dialog.
+3. Verify that the configuration you entered is correct.
 
 ![Screenshot of PowerShell symbol.](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316236(v=sc.20)).
--   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316246(v=sc.20)).
+- For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316236(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316246(v=sc.20)).
 
-::: moniker range="sc-sm-2022"
+::: moniker range=">=sc-sm-2022"
 
 ## Send notifications using external email authentication
 
@@ -105,7 +104,7 @@ To create an Azure AD app, do the following:
 
 6. After successful registration, under **Overview** > **Essentials**, ensure to note the **Application (client) ID** and **Directory (tenant) ID**.
 
-      :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page.":::
+      :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page." lightbox="media/notifications/overview-essentials.png":::
 
 7. On the **Overview** page, under **Manage**, select **Authentication**, and do the following:
 
@@ -195,7 +194,6 @@ Setting EXTERNALEWSLogs to 1 enables trace and logs to be shown in event viewer 
 
 ::: moniker-end
 
-
 ## Create notification templates
 
 You can use the following procedures to create notification templates for many types of information records or work items that Service Manager records or keeps track of, such as incidents, change requests, activities, release records, and configuration items. After you create the notification templates, you can use a notification subscription to send email messages based on the templates. The notification template determines the type and format of the messages to send.
@@ -203,74 +201,73 @@ You can use the following procedures to create notification templates for many t
 > [!NOTE]
 > Manually copying and pasting substitution strings from other notification templates won't generally work. Therefore, you should avoid copying them to prevent errors. Instead, you can easily browse for and insert available substitution strings into any notification template that you're creating or updating.
 
-
 The following two templates are prerequisites for other procedures:
 
--   The New Activity Assigned Received Template.
--   The New Standard Change Request Received Template.
+- The New Activity Assigned Received Template.
+- The New Standard Change Request Received Template.
 
 > [!NOTE]
 > Notifications are sent only by email.
 
-### To create a notification template for incidents
+### Create a notification template for incidents
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Notifications**, and select **Templates**.
-3.  In the **Tasks** pane, under **Templates**, select **Create E-mail Template**.
-4.  On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, enter a name. For example, enter **New E-mail Incident Template**. Optionally, in the **Description** box, you can enter a description for the template that you're creating.
-5.  Next to the **Targeted class** box, select **Browse**.
-6.  In the **Choose Class** dialog, select **Incident**, and select **OK**.
-7.  Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
-8.  On the **Template Design** page, in the **Message subject** box, enter a subject for the email template. For example, enter **New Incident created with ID#**. Then, select **Insert**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Notifications**, and select **Templates**.
+3. In the **Tasks** pane, under **Templates**, select **Create E-mail Template**.
+4. On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, enter a name. For example, enter **New E-mail Incident Template**. Optionally, in the **Description** box, you can enter a description for the template that you're creating.
+5. Next to the **Targeted class** box, select **Browse**.
+6. In the **Choose Class** dialog, select **Incident**, and select **OK**.
+7. Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
+8. On the **Template Design** page, in the **Message subject** box, enter a subject for the email template. For example, enter **New Incident created with ID#**. Then, select **Insert**.
 9. In the **Select Property** dialog, select **ID**, and select **Add**.
 10. In the **Message body** box, enter a description to indicate that a new incident was opened for an email problem.
 11. Use the other default values on this page, and select **Next**.
 12. On the **Summary** page, review the settings that you've selected for the template. Then, select **Create**.
 13. On the **Completion** page, select **Close**.
 
-### To create a notification template for change requests
+### Create a notification template for change requests
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Notifications**, and select **Templates**.
-3.  In the **Tasks** pane, under **Templates**, select **Create E-mail Template**.
-4.  On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, enter a name. For example, enter **New Standard Change Request Received Template**. Optionally, in the **Description** box, you can enter a description for the template that you're creating.
-5.  Next to the **Targeted class** box, select **Browse**.
-6.  In the **Choose Class** dialog, select **Change Request**, and select **OK**.
-7.  Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
-8.  On the **Template Design** page, in the **Message subject** box, enter a subject for the email template. For example, enter **New Standard Change Request with ID#**. Then, select **Insert**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Notifications**, and select **Templates**.
+3. In the **Tasks** pane, under **Templates**, select **Create E-mail Template**.
+4. On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, enter a name. For example, enter **New Standard Change Request Received Template**. Optionally, in the **Description** box, you can enter a description for the template that you're creating.
+5. Next to the **Targeted class** box, select **Browse**.
+6. In the **Choose Class** dialog, select **Change Request**, and select **OK**.
+7. Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
+8. On the **Template Design** page, in the **Message subject** box, enter a subject for the email template. For example, enter **New Standard Change Request with ID#**. Then, select **Insert**.
 9. In the **Select Property** dialog, select **ID**, and select **Add**.
 10. In the **Message body** box, enter a description to indicate that a new standard change request was opened.
 11. Use the other default values on this page, and select **Next**.
 12. On the **Summary** page, review the settings that you've selected for the template. Then, select **Create**.
 13. On the **Completion** page, select **Close**.
 
-### To create a notification template for a newly assigned activity
+### Create a notification template for a newly assigned activity
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Notifications**, and select **Templates**.
-3.  In the **Tasks** pane, under **Templates**, select **Create E-mail Template**.
-4.  On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, enter a name. For example, enter **New Activity Assigned Received Template**. Optionally, in the **Description** box, you can enter a description for the template that you're creating.
-5.  Next to the **Targeted class** box, select **Browse**.
-6.  In the **Select a Class** dialog, select **Manual Activity**, and select **OK**.
-7.  Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
-8.  On the **Template Design** page, in the **Message subject** box, enter a subject for the email template. For example, enter **New Activity Assigned with ID#**. Then, select **Insert**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Notifications**, and select **Templates**.
+3. In the **Tasks** pane, under **Templates**, select **Create E-mail Template**.
+4. On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, enter a name. For example, enter **New Activity Assigned Received Template**. Optionally, in the **Description** box, you can enter a description for the template that you're creating.
+5. Next to the **Targeted class** box, select **Browse**.
+6. In the **Select a Class** dialog, select **Manual Activity**, and select **OK**.
+7. Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
+8. On the **Template Design** page, in the **Message subject** box, enter a subject for the email template. For example, enter **New Activity Assigned with ID#**. Then, select **Insert**.
 9. In the **Select Property** dialog, select **ID**, and select **Add**.
 10. In the **Message body** box, enter a description to indicate that an activity has been assigned.
 11. Use the other default values on this page, and select **Next**.
 12. On the **Summary** page, review the settings that you've selected for the template. Then, select **Create**.
 13. On the **Completion** page, select **Close**.
 
-### To validate template creation
+### Validate template creation
 
--   Verify that the new template you created appears in the list of notification templates.
+- Verify that the new template you created appears in the list of notification templates.
 
 ![Screenshot of the PowerShell symbol.](./media/notifications/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316229(v=sc.20)).
--   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316234(v=sc.20)).
--   For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get-SCSMEmailTemplateContent](/previous-versions/system-center/powershell/system-center-2012-r2/hh316219(v=sc.20)).
--   For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316235(v=sc.20)).
--   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316216(v=sc.20)).
+- For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316229(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316234(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get-SCSMEmailTemplateContent](/previous-versions/system-center/powershell/system-center-2012-r2/hh316219(v=sc.20)).
+- For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316235(v=sc.20)).
+- For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316216(v=sc.20)).
 
 ## Subscribe to notifications
 
@@ -283,16 +280,16 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 > [!NOTE]
 > Some notification criteria values might not change. If you want to receive a notification when a change occurs, ensure that you choose a value for an object that is likely to change. For example, the **Incident ID** for an incident doesn't change.
 
-### To create a notification subscription for an incident
+### Create a notification subscription for an incident
 
-1.  In the Service Manager console, select **Administration**.
-2.  In the **Administration** pane, expand **Notification**, and select **Subscriptions**.
-3.  In the **Tasks** pane, select **Create Subscription**.
-4.  On the **Before You Begin** page of the Create E-mail Notification Subscription Wizard, select **Next**.
-5.  On the **General** page, in the **Notification subscription name** box, enter a name. For example, enter **New Incident for E-mail Problem Notification Subscription**. Optionally, in the **Description** box, you can enter a description for the subscription that you're creating.
-6.  Next to the **Targeted class** box, select **Browse**.
-7.  In the **When to notify** box, select **When an object of the selected class is created**.
-8.  In the **Choose Class** dialog, choose a class. For example, select **Incident**. Then, select **OK**.
+1. In the Service Manager console, select **Administration**.
+2. In the **Administration** pane, expand **Notification**, and select **Subscriptions**.
+3. In the **Tasks** pane, select **Create Subscription**.
+4. On the **Before You Begin** page of the Create E-mail Notification Subscription Wizard, select **Next**.
+5. On the **General** page, in the **Notification subscription name** box, enter a name. For example, enter **New Incident for E-mail Problem Notification Subscription**. Optionally, in the **Description** box, you can enter a description for the subscription that you're creating.
+6. Next to the **Targeted class** box, select **Browse**.
+7. In the **When to notify** box, select **When an object of the selected class is created**.
+8. In the **Choose Class** dialog, choose a class. For example, select **Incident**. Then, select **OK**.
 9. Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
 10. On the **Additional Criteria** page, select **Incident**. In the **Available Properties** list, select **Classification Category**, and select **Add**.
 11. On the **Additional Criteria** page, select the **Criteria** tab. In the **Criteria** area, next to **[Incident] Classification Category**, select **equals**. In the list, select **E-mail Problems**, and select **Next**.
@@ -309,7 +306,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 18. On the **Summary** page, review the settings that you selected for the notification subscription, and select **Create**.
 19. On the **Completion** page, select **Close**.
 
-### To create a periodic notification subscription for a release record
+### Create a periodic notification subscription for a release record
 
 1. In the Service Manager console, select **Administration**.
 2. In the **Administration** pane, expand **Notifications**, and select **Subscriptions**.
@@ -337,16 +334,16 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 20. On the **Summary** page, review the settings that you selected for the notification subscription, and select **Create**.
 21. On the **Completion** page, select **Close**.
 
-### To validate a notification subscription
+### Validate a notification subscription
 
--   Locate the notification subscription that you created in the list of subscriptions.
+- Locate the notification subscription that you created in the list of subscriptions.
 
 ![Screenshot of the PowerShell symbol.](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316196(v=sc.20)).
--   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316211(v=sc.20)).
--   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316242(v=sc.20)).
--   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316257(v=sc.20)).
+- For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316196(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316211(v=sc.20)).
+- For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316242(v=sc.20)).
+- For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316257(v=sc.20)).
 
 ## Verify a notification configuration
 
@@ -354,14 +351,14 @@ You can use the following procedure to verify that you've correctly configured n
 
 If you're verifying a recurring notification subscription, you must wait for the time interval that you set previously to elapse until the notification is sent. When the notification is received, the configuration of the notification is verified.
 
-### To verify a notification configuration
+To verify a notification configuration, follow these steps:
 
-1.  In the Service Manager console, select **Work Items**.
-2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and select **All Open Incidents**.
-3.  In the **Tasks** pane, under **Incident Management**, select **Create Incident**.
-4.  In the **Incident *Number* New** form, enter the required information in the **Affected user**, **Title**, **Classification Category**, **Impact**, and **Urgency** boxes.
-5.  In the **Classification Category** list, select **E-mail Problems**, and select **OK**.
-6.  Verify that an email notification that contains the information you entered in the template is received. The email title should contain the incident ID number.
+1. In the Service Manager console, select **Work Items**.
+2. In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and select **All Open Incidents**.
+3. In the **Tasks** pane, under **Incident Management**, select **Create Incident**.
+4. In the **Incident *Number* New** form, enter the required information in the **Affected user**, **Title**, **Classification Category**, **Impact**, and **Urgency** boxes.
+5. In the **Classification Category** list, select **E-mail Problems**, and select **OK**.
+6. Verify that an email notification that contains the information you entered in the template is received. The email title should contain the incident ID number.
 
 ## Automatically notify groups of Service Manager users
 
@@ -373,37 +370,37 @@ In Exchange Server, the **Require that all senders are authenticated** setting i
 
 As an alternative, you can avoid using **Assigned to** and instead use **Support Group** changing as a triggering field. To set this up, create a new email notification subscription, and under additional criteria, use the following:
 
--   Changed from: [incident] Support Group Does not equal Tier 1
--   Changed to: [incident] Support Group equals Tier 1
+- Changed from: [incident] Support Group Does not equal Tier 1
+- Changed to: [incident] Support Group equals Tier 1
 
 Use whatever template you want, and add the recipient of the mailing distribution list for Tier 1. Now Tier 1 is notified whenever a ticket is sent to them, even if it's done by means of a template at portal ticket creation.
 
 Setting up one of these for each support group will ensure that all your groups are informed of incoming incidents that require their attention.
 
-### To create a messaging-enabled universal security group
+### Create a messaging-enabled universal security group
 
-1.  In the Exchange Management Console, navigate to **Recipient Configuration**, right-click **Distribution Group**, and select **New Distribution Group**.
-2.  On the **Introduction** page, either choose an existing universal group or create a new group.
-3.  On the **Group Information** page, select the **Security** group type.
-4.  Complete the creation of the group.
-5.  Add members to the group by right-clicking them, selecting **Properties**, and accessing the **Members** tab.
-6.  Wait for Service Manager to sync with Active Directory Domain Services (AD DS), or perform a manual Synchronization from **Administration** > **Connectors**. (Select **AD Connector**, and then select the **Synchronize Now** task on the right-hand side).
-7.  Once the Active Directory synchronization has completed, the newly created group will be available as a configuration item in Service Manager, and it can be selected in the user picker fields, such as **Affected User** and **Assigned To**.
+1. In the Exchange Management Console, navigate to **Recipient Configuration**, right-click **Distribution Group**, and select **New Distribution Group**.
+2. On the **Introduction** page, either choose an existing universal group or create a new group.
+3. On the **Group Information** page, select the **Security** group type.
+4. Complete the creation of the group.
+5. Add members to the group by right-clicking them, selecting **Properties**, and accessing the **Members** tab.
+6. Wait for Service Manager to sync with Active Directory Domain Services (AD DS), or perform a manual Synchronization from **Administration** > **Connectors**. (Select **AD Connector**, and then select the **Synchronize Now** task on the right-hand side).
+7. Once the Active Directory synchronization has completed, the newly created group will be available as a configuration item in Service Manager, and it can be selected in the user picker fields, such as **Affected User** and **Assigned To**.
 
-### To create a workflow to notify stakeholders when an incident is created
+### Create a workflow to notify stakeholders when an incident is created
 
-1.  Navigate to **Administration** > **Workflows** > **Configuration**.
-2.  Double-click **Incident Event Workflow Configuration**.
-3.  Select **Add**, and select **Next** on the **Before you Begin** page.
-4.  Give the workflow a name, such as *Incident Created Email Stakeholders*.
-5.  Leave the default of **When an incident is created** in the **Check for Events** dropdown list.
-6.  Select one of your custom management packs (or create one) to store the workflow in, and select **Next**.
-7.  Select **Next** on the **Specify Incident Criteria** page. (We want this workflow to run when any new incident is created.)
-8.  Optionally, apply a template. (In this case, we're creating the workflow for notification only, so we choose **Do not apply a template**.)
+1. Navigate to **Administration** > **Workflows** > **Configuration**.
+2. Double-click **Incident Event Workflow Configuration**.
+3. Select **Add**, and select **Next** on the **Before you Begin** page.
+4. Give the workflow a name, such as *Incident Created Email Stakeholders*.
+5. Leave the default of **When an incident is created** in the **Check for Events** dropdown list.
+6. Select one of your custom management packs (or create one) to store the workflow in, and select **Next**.
+7. Select **Next** on the **Specify Incident Criteria** page. (We want this workflow to run when any new incident is created.)
+8. Optionally, apply a template. (In this case, we're creating the workflow for notification only, so we choose **Do not apply a template**.)
 9. In the **Select People to Notify** dialog, select the **Enable notification** checkbox. Add the appropriate users you want to notify with the appropriate templates.
 10. Select Next, and select **Create** to complete creation of the workflow.
 
-### To test the workflow and mail the enabled universal security group
+### Test the workflow and mail the enabled universal security group
 
 - Create an incident and assign it to the messaging-enabled universal security group that you created earlier.
 

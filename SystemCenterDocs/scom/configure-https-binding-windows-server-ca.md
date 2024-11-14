@@ -1,18 +1,18 @@
 ---
 ms.assetid: 
-title: How to configure an HTTPS binding for a Windows Server CA
+title: Configure an HTTPS binding for a Windows Server CA
 description: This article describes how to configure an HTTPS binding for a Windows Server CA.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/21/2022
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to configure an HTTPS binding for a Windows Server CA
+# Configure an HTTPS binding for a Windows Server CA
 
 If you're setting up a new certification authority (CA) for the first time for use with System Center – Operations Manager, use the following procedure to configure an HTTPS binding for the CA.
 
@@ -36,10 +36,10 @@ To configure an HTTPS binding, do the following:
 
 8. On the **Connections** pane, under **Default Web Site**, select **CertSrv**.
 
-   If the **CertServ** page is missing under Default Web Site, verify these Active Directory Certificate Services features are installed and configured on the CA server: 
+   If the **CertServ** page is missing under Default Web Site, verify these Active Directory Certificate Services features are installed and configured on the CA server:
 
-   - Certificate Enrollment Web Services 
-   - Certificate Authority Web Enrollment 
+   - Certificate Enrollment Web Services
+   - Certificate Authority Web Enrollment
 
 9. On the **/CertSrv Home** page, right-click **SSL Settings**, and then select **Open Feature**.
 

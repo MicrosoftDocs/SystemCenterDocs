@@ -2,7 +2,7 @@
 title: Update Collection Membership activity
 description: Describes the configurable properties for the Update Collection Membership activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 03/04/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 ---
 
 # Update Collection Membership activity for Configuration Manager Integration Pack
-
-
 
 The Update Collection Membership activity is used to initiate collection
 evaluation. It ensures that the membership of a collection is current
@@ -45,7 +43,7 @@ above:
 |Connection|Specifies the name of the connection to the Configuration Manager server|
 |Collection ID|Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|
 
-## Configuring the Update Collection Membership activity
+## Configure the Update Collection Membership activity
 
 1.  From the **Activities** pane, drag an **Update Collection
     Membership** activity to the active runbook.

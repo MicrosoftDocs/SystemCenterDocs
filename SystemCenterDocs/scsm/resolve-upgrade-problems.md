@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/28/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -134,10 +134,10 @@ Follow these steps to increase the service time-out setting:
     ```  
 
     > [!CAUTION]  
-    >  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
+    > Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
 
     > [!NOTE]  
-    >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For more information about the registry key, see [article 922918](/troubleshoot/windows-server/system-management-components/service-not-start-events-7000-7011-time-out-error) in the Microsoft Knowledge Base.  
+    > You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For more information about the registry key, see [article 922918](/troubleshoot/windows-server/system-management-components/service-not-start-events-7000-7011-time-out-error) in the Microsoft Knowledge Base.  
 
 2. Start the computer again.  
 

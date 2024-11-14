@@ -2,7 +2,7 @@
 title: Save Event Log
 description: This article describes the Save Event Log activity that is used to save entries from an event log.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,25 +17,24 @@ manager: jsuri
 ---
 # Save Event Log
 
-
-
 The Save Event Log activity is used to save entries from an event log so that they can be used later. The Save Event Log activity saves the event log entries to a delimited text file in a format that you specify. The activity allows you to choose which fields will be saved and allows you to filter against the fields to only allow particular event log entries to be saved. This activity uses a satellite license.  
 
  The Save Event Log activity can be used to create audit trails of problems that occur with a particular application or specific categories of event log entries. These saved files can later be used to track the performance of servers and applications in your network.  
 
-## Configuring the Save Event Log Activity  
+## Configure the Save Event Log Activity
+
  Before you configure the Save Event Log activity, you need to determine the following:  
 
--   The event log that you are saving from  
+- The event log that you are saving from  
 
--   The computer where it is located  
+- The computer where it is located  
 
--   The fields that you want to include  
+- The fields that you want to include  
 
--   The format of the file  
+- The format of the file  
 
 > [!NOTE]
->  If you require only specific entries to be saved and not the entire event log, you will need to know what fields to filter against and what values to filter.  
+> If you require only specific entries to be saved and not the entire event log, you will need to know what fields to filter against and what values to filter.  
 
  Use the following information to configure the Save Event Log activity.  
 
@@ -47,7 +46,7 @@ The Save Event Log activity is used to save entries from an event log so that th
 |**Event log**|Type the name of the Windows Event Log where the entries that you are saving are located. You can also use the ellipsis **( ... )** button to browse for the event log name. Browsing is only available if you have specified a valid **Computer**.|  
 |**Include**|Select all the event Log fields that you want to save to the file. You have the option to select **Event ID**, **Source**, **Category**, **Description**, **Type**, **Computer**, and **Date/time**.|  
 
-### Filters Tab  
+### Filters Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -59,7 +58,7 @@ The Save Event Log activity is used to save entries from an event log so that th
 |**Computer**|Select and specify the value that the Computer field of the event log entries will need to match.|  
 |**Date from**|Select and specify the ranges of dates that the events will need to be from to be included.|  
 
-### Output Tab  
+### Output Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -69,7 +68,8 @@ The Save Event Log activity is used to save entries from an event log so that th
 |**Delimiter**|Type the delimiter that you want to use to separate the fields of each entry.|  
 |**Create column headings**|Select to save the column header information when saving a set of entries to a file. The header information contains metadata such as the field names.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

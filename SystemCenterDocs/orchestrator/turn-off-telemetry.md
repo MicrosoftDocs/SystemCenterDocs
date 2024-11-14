@@ -5,7 +5,7 @@ description: This article provides information about how to manage the telemetry
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/22/2018
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2
 ---
 
 # Manage telemetry settings in Orchestrator
-
-
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Orchestrator.
 
@@ -40,7 +38,6 @@ Administrators can turn off this feature at any point of time.
    -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
    - 	To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
 
-
 ## Telemetry data collected
 
 | Data related To | Data collected |
@@ -48,6 +45,6 @@ Administrators can turn off this feature at any point of time.
 | **Installation and other configuration information** | DataBase name  <br /><br /> Database authentication type|
 | **Usage** | Number of Runbook designers <br /><br /> Number of folders <br /><br /> Number of variables <br /><br /> Number of schedules <br /><br /> Number of runbooks<br /><br /> Number of computer groups <br /><br /> 	Number of integration packs  <br /><br />  Average load per minute on runbook server <br /><br /> Names of integration packs <br /><br /> Activity name in use <br /><br /> Run script types |
 
-
 ## Next steps
+
 [Work with runbooks in Orchestrator console](console-overview.md).

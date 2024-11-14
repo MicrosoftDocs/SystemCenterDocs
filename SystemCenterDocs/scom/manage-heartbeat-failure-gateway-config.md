@@ -5,7 +5,7 @@ description: This article describes how to configure the diagnostic task to ping
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -16,7 +16,6 @@ ms.topic: article
 
 
 When an agent fails to send a heartbeat, a Health Service Heartbeat Failure alert is generated and the management server attempts to contact the computer by performing a ping using Windows Management Instrumentation (WMI) based on its recovery task **Ping Computer on Heartbeat Failure**. If the computer doesn't respond to the ping, a Failed to Connect to Computer alert is generated. By default, this recovery task is performed from its assigned management server.  But when agents report to a gateway server that communicates with its assigned management server through a firewall, the attempt to ping the remote agent will fail.  The following steps describe how to configure the gateway server in this scenario to attempt to contact the computer and verify it's responding to a ping.  
-
 
 ## Prerequisites
 
@@ -47,7 +46,6 @@ Perform the following steps to configure the Run As account.
 
     >[!NOTE]
     >While the gateway server pings the agent, initiation occurs from management server using a WMI query that runs against agents reporting to the gateway server.  For this reason, the **Automatic Agent Management Account** Run As account needs to have the necessary privileges on both the management and gateway server to execute this WMI query from both roles. For more information on how to properly configure privileges to remotely connect to a computer using WMI, see [Securing a Remote WMI Connection](/windows/win32/wmisdk/securing-a-remote-wmi-connection).
->
 
 ## Next steps
 

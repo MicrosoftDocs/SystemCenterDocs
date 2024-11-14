@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -14,6 +14,14 @@ ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy24
 
 
 # What's new in Service Management Automation
+
+::: moniker range="sc-sma-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+There are no new features in Service Management Automation 2025.
+
+::: moniker-end
 
 ::: moniker range="sc-sma-2019"
 

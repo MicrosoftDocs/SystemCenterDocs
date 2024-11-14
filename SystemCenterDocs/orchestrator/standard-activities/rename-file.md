@@ -2,7 +2,7 @@
 title: Rename File
 description: This article describes the functionality of Rename File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Rename File
 
-
-
 The Rename File activity renames files on the local file system or on a network location specified using a UNC path. You can automatically rename files to a standard format according to your data center procedures.  
 
-## Configuring the Rename File Activity  
+## Configure the Rename File Activity
+
  Before you configure the Rename File activity, you need to determine the following:  
 
 - The original file name you're renaming.  
@@ -38,7 +37,7 @@ Use the following information to configure the Rename File activity.
 |**Include sub-folders**|Select this option to rename any files in the sub-folders of the folder that you specified that match the file names that you want to rename.|  
 |**Destination**|This list displays all the file names that will be renamed when this activity runs. To add a filename, select **Add** to open the **Rename Properties** dialog, specify the **Old name**, and specify the file **New name**.<br /><br /> To edit the list of file names, select **Edit**. To remove file names, select **Remove**.|  
 
-### Advanced Tab  
+### Advanced Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -48,7 +47,8 @@ Use the following information to configure the Rename File activity.
 |**Same as original**|Select this option to set the date of the file at the destination to the date of the original file.|  
 |**Destination already exists**|Select the action that you want to take if a file with the same name already exists in the folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that is being renamed.<br /><br /> **Fail**: Select this option to cause the Rename File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

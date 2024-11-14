@@ -2,7 +2,7 @@
 title: Get Recovery Point
 description: The Get Recovery Point activity is used in a runbook that queries a data source for all its associated recovery points or only the most recent recovery point.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/21/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 ---
 
 # Get Recovery Point
-
-
 
 The Get Recovery Point activity is used in a runbook that queries a data source for all its associated recovery points or only the most recent recovery point.
 

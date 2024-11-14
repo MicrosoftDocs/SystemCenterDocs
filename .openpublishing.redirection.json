@@ -3625,6 +3625,18 @@
      "redirect_url" : "/system-center/vmm/network-switch"
 },
 {
+     "source_path" : "SystemCenterDocs/vmm/network-logical-2022.md",
+     "redirect_url" : "/system-center/vmm/network-logical"
+},
+{
+     "source_path" : "SystemCenterDocs/vmm/install-tls.md",
+     "redirect_url" : "/system-center/vmm/install-tls-12"
+},
+{
+     "source_path" : "SystemCenterDocs/orchestrator/install-enable-tls.md",
+     "redirect_url" : "/system-center/orchestrator/install-enable-tls-1-2"
+},
+{
      "source_path" : "SystemCenterDocs/vmm/manage/manage-network-mac-address-pools.md",
      "redirect_url" : "/system-center/vmm/network-mac"
 },

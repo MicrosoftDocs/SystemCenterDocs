@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3
+monikerRange: '<=sc-vmm-2022'
 ---
 
 # Manage Azure VMs

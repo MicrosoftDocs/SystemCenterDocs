@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23
+monikerRange: '<=sc-vmm-2022'
 ---
 
 # Manage VMs using Microsoft Entra ID-based authentication & authorization and region-specific Azure subscriptions

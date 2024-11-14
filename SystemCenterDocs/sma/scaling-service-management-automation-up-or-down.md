@@ -1,21 +1,19 @@
 ---
-description: Provides an overview of how you can scale out a machine tier
+description: Provides an overview of how you can scale out a machine tier.
 ms.topic: article
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 keywords:
-ms.date: 04/03/2024
-title: Scaling Service Management Automation
+ms.date: 11/01/2024
+title: Scale Service Management Automation
 ms.subservice: service-management-automation
 ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
 ms.custom: engagement-fy24
 ---
 
-# Scaling Service Management Automation
-
-
+# Scale Service Management Automation
 
 Use the guidance in this section to scale out a machine tier in a service that's deployed in Service Management Automation (SMA). You can add runbook workers and web services to add additional capacity for runbook processing.
 

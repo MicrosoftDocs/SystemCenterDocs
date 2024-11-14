@@ -5,7 +5,7 @@ description: This article explains how to configure manual monitoring template i
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/12/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -54,7 +54,7 @@ You can get a connection string for a managed instance using the Azure portal.
 To create a Run As account from the connection string, use the following format:  
 
 ```
-Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Password>;
+Server=<ServerAddress>;Database=<DatabaseName>;User Id=***;Password=***;
 ```
 
 You can also create a new Run As account by selecting **New** and specifying an account name and connection credentials to access the managed instance.

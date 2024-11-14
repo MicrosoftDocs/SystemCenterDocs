@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -20,7 +20,7 @@ Use the following procedures to prepare for System Center - Service Manager upgr
 The following procedure shows how to install an additional management server. You must deploy the initial Service Manager management server and Service Manager Database before deploying an additional management server.  
 
 > [!TIP]  
->  You must be a member of the Service Manager Administrators user role in order to install an additional Service Manager management server.  
+> You must be a member of the Service Manager Administrators user role in order to install an additional Service Manager management server.  
 
 When you install a secondary management server, data retention settings are reset. Before you install a secondary management server, make a note of the data retention settings. After you've installed the additional management server, adjust the data retention settings to their original values.  
 
@@ -41,7 +41,7 @@ Follow these steps to run setup:
 10. On the **Configure the Account for Service Manager Services** page, select **Domain account**, specify the user name, password, and domain for the account, and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**. For example, enter the account information for the domain user SM_Acct, and select **Next**.  
 
     > [!NOTE]  
-    >  The user name and password you provide here must be the same ones used for the Service Manager account on the data warehouse management server.  
+    > The user name and password you provide here must be the same ones used for the Service Manager account on the data warehouse management server.  
 
 11. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, select **Privacy statement for System Center Service Manager**, and select **Next**.
 12. On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates, and select **Next**.  
@@ -52,9 +52,9 @@ Follow these steps to run setup:
 
 Use the following procedure to copy the workflow assembly files from the Service Manager Installation folder on the primary management server to the secondary management server that you created in the previous procedure.  
 
-### Copy the workflow assembly files 
+### Copy the workflow assembly files
 
-Follow these steps to copy the workflow assembly files: 
+Follow these steps to copy the workflow assembly files:
 
 1. On the computer that is running the Service Manager Primary Server role, browse to the Service Manager Installation folder for example, C:\Program Files\Microsoft System Center\Service Manager copy the workflow files (workflow.dll).  
 2. On the computer that is running the Service Manager Secondary server; browse to the Service Manager Installation folder; for example, C:\Program Files\Microsoft System Center\Service Manager. Paste the copied workflow files into this folder. You should overwrite any existing files.  

@@ -3,7 +3,7 @@ description: You can use data deduplication in DPM storage to find and remove du
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/20/2024
+ms.date: 11/01/2024
 title: Deduplicate DPM storage
 ms.subservice: data-protection-manager
 ms.assetid: af49cdc3-1f63-4c10-843a-d1cd27af473a
@@ -168,7 +168,7 @@ Dedup requires a special set of configuration options to support virtualized DPM
 
 1. **Enable dedup on Windows File Server storage**- The Deduplication role must be installed on all nodes of the Windows File Server cluster. To do this, run the following PowerShell command on each node of the cluster:
 
-    ```
+    ```powershell
     Install-WindowsFeature -Name FileAndStorage-Services,FS-Data-Deduplication -ComputerName <node name>
     ```
 

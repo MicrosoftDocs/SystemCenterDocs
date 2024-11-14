@@ -1,11 +1,11 @@
 ---
 ms.assetid:
-title: How to create a dashboard with the Performance widget in the Web console
+title: Create a dashboard with the Performance widget in the Web console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Performance widget.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/09/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>sc-om-2016'
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to create a dashboard with the Performance widget in the Web console
+# Create a dashboard with the Performance widget in the Web console
 
 
 
@@ -71,6 +71,7 @@ After the widget has been created, it displays a performance graph with the sele
 ![Screenshot showing Completed example of Performance widget in dashboard.](./media/create-web-dashboard-perf/web-console-new-dashboard-perf-04.png)
 
 ## Actions on Performance widget
+
 With a performance widget, you can perform such actions as:
 
 - Specify the minimum and maximum vertical axis values
@@ -79,9 +80,9 @@ With a performance widget, you can perform such actions as:
 
 To perform these actions, hover your mouse over the widget and select the ellipsis **...** at the top right corner of the widget. This will display actions available for the widget.
 
-   * Select **Set vertical axis** to modify the scale values of the y axis and select **Save**.  
-   * Select **Export to Excel** to export the alert data to an Excel file.  
-   * Select **Personalize** to change your selection of columns to be displayed or to group alerts. Select **Save personalization** when you've completed making your changes.
+- Select **Set vertical axis** to modify the scale values of the y axis and select **Save**.  
+- Select **Export to Excel** to export the alert data to an Excel file.  
+- Select **Personalize** to change your selection of columns to be displayed or to group alerts. Select **Save personalization** when you've completed making your changes.
 
 ## Next steps
 

@@ -2,7 +2,7 @@
 title: Exchange Users Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator. Integration packs optimize IT operations across various environments.
 ms.custom: engagement-fy24
-ms.date: 06/05/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,7 +16,6 @@ manager: jsuri
 ---
 
 # Exchange Users integration pack
-
 
 Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products.
 
@@ -109,6 +108,12 @@ Prior to implementing the Exchange Users Integration Pack, you must install and 
 
 ::: moniker-end
 
+::: moniker range="sc-orch-2025"
+
+- To download the Exchange Users Integration Pack for Orchestrator 2025, go to the Download Center space for 2025.
+
+::: moniker-end
+
 ## Register and deploy the integration pack
 
 Download the integration pack file and register it with the Orchestrator management server using the Deployment Manager. You may then deploy it to runbook servers and Runbook Designers. For procedures on installing integration packs, see [How to Install an Integration Pack](how-to-add-an-integration-pack.md).
@@ -161,7 +166,7 @@ Here's how the connection will be established when the activity runs:
 
 6. In Application overview page, under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
 
-    :::image type="Azure AD App overview pane" source="media/exchange-users-integration-pack/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
+    :::image type="Azure AD App overview pane" source="media/exchange-users-integration-pack/app-overview.png" alt-text="Screenshot of Azure AD App overview pane." lightbox="media/exchange-users-integration-pack/app-overview.png":::
 
 7. Select **Authentication**, do the following, and select **Save**.
 
@@ -184,14 +189,14 @@ Generally, Public Client Apps that operate in *delegated authentication* mode re
 However, the IP doesn't support the consent grant flow; instead the tenant admin must grant consent on behalf of all users in the tenant.
 
 1. Add the permissions to the app by editing the app **Manifest**.
-    1. On the Azure AD portal, select the Azure AD application.
+    1. On the Microsoft Entra admin center, select the Azure AD application.
     2. Follow the [steps to grant EWS permissions](/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application) by editing the app **Manifest**.
 
-        :::image type="content" alt-text="Screenshot of Azure AD App manifest."  source="./media/exchange-users-integration-pack/manifest.png" lightbox="./media/exchange-users-integration-pack/manifest-expanded.png":::
+        :::image type="content" alt-text="Screenshot of Azure AD App manifest."  source="./media/exchange-users-integration-pack/manifest.png" lightbox="./media/exchange-users-integration-pack/manifest.png":::
 
 2. Request your tenant admin to grant "Admin consent" (on the API permissions tab) to this application for `EWS.AccessAsUser.All` permission.
 
-    :::image type="content" alt-text="Screenshot of Azure AD App API permissions."  source="./media/exchange-users-integration-pack/api-permissions.png" lightbox="./media/exchange-users-integration-pack/api-permissions-expanded.png":::
+    :::image type="content" alt-text="Screenshot of Azure AD App API permissions."  source="./media/exchange-users-integration-pack/api-permissions.png" lightbox="./media/exchange-users-integration-pack/api-permissions.png":::
 
 In practice, **Admin consent** implies that any user in the tenant can configure the IP with their credentials and execute Exchange activities under their account.
 

@@ -5,7 +5,7 @@ description: This article describes the service-level changes that are required 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -32,7 +32,6 @@ To enable System Center Data Access Service to use gMSA:
 
     ![Screenshot of Log On As A Service right.](media/gmsa/logon-service-right.png)
 
-
 ## Change the credentials for the System Center configuration service
 
 Change the sign-in credentials for this service account from Windows Services Console, as shown.
@@ -55,7 +54,6 @@ Change the credentials of this Action account to gMSA that you intend to use as 
 
 Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
 
-
 ## Change the Data Warehouse Report Deployment account to use gMSA
 
 Operations Manager stores the credentials for the Data Warehouse Report Deployment account within a Run As account called the Data Warehouse Action account.
@@ -66,22 +64,19 @@ Change the credentials of this Action account to gMSA that you intend to use as 
 
 Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
 
-
 ## Update your data warehouse database
 
 1. Run the following SQL query against your data warehouse database. Replace *DataWarehouseName* with the name of your data warehouse database.
 
-    ```
+    ```sql   
     SELECT [ManagementGroupDefaultName],[WriterLoginName] FROM [DataWarehouseName].[dbo].[ManagementGroup]
 
     ```
 1. If the previous query doesn't return the gMSA that you created for the Data Warehouse Write account, then execute the following query to update it.
 
-    ```
+    ```sql    
     UPDATE [DataWarehouseName].[dbo].[ManagementGroup] SET [WriterLoginName] = 'DOMAIN\USERNAME' WHERE [ManagementGroupDefaultName] = 'SCOM MANAGEMENT GROUP NAME'
     ```
-
-
 
 ## Next steps
 

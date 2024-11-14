@@ -2,7 +2,7 @@
 title: Runbook Control
 description: This article describes the tasks that can be accomplished using the initialize data, return data, junction and invoke runbook activity.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,8 +17,6 @@ manager: jsuri
 ---
 # Runbook Control
 
-
-
 The following table provides a brief description of tasks you can accomplish with each activity.  
 
 |Tasks|Activity|  
@@ -28,5 +26,6 @@ The following table provides a brief description of tasks you can accomplish wit
 |Publish data from any branch.|[Junction](junction.md)|  
 |Run a runbook.|[Invoke Runbook](invoke-runbook.md)|  
 
-## See Also  
+## See Also
+
 [Standard Activities](../standard-activities.md).

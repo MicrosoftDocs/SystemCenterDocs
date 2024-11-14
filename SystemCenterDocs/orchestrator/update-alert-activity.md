@@ -2,7 +2,7 @@
 title: Update Alert Activity
 description: The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer.
 ms.custom: UpdateFrequency3
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Update Alert Activity
-
-
 
 The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This activity can change the information in an alert based on the results from automated diagnostics performed by a runbook.
 
@@ -160,11 +158,9 @@ This activity publishes the following alerts:
 - x733ProbableCause
 - x733SpecificPro
 
-## Configuring the Update Alert Activity
+## Configure the Update Alert Activity
 
-The following procedure describes the steps required to configure an Update Alert activity.
-
-### To configure the Update Alert Activity
+To configure the Update Alert Activity, follow these steps:
 
 1.  From the **Activities** pane, drag an **Update Alert** activity to the active runbook.
 

@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 06/20/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 3c42925f-74f3-4c18-934e-8d1cd2edaa3b
 ms.custom: UpdateFrequency3, engagement-fy24
@@ -66,7 +66,7 @@ When you export a sealed management pack, from the Service Manager console or by
 
 Use the following procedures to export an unsealed management pack and then validate the export.
 
-### Export a management pack
+To export a management pack, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 

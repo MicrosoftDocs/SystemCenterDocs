@@ -11,7 +11,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
@@ -35,8 +35,8 @@ There are seven data warehouse jobs that run at various times to maintain the da
 |Transform|This job takes the raw data from the staging area and does any cleansing, reformatting, and aggregation that is required to get it into the final format for reporting. This transformed data is written into the DWRepository database.|
 |Load|This job queries the data from the DWRepository database and inserts it into the DWDatamart database. The DWDatamart is the database that is used for all end user reporting needs.|
 
-
 ## Job schedule and frequency
+
 The schedule for a job defines when a job starts. Frequency refers to how often the job runs after it has started. Regardless of schedule and frequency, a job doesn't run unless the schedule for that job has been enabled. Except for the Entity (Grooming) job, each job has a default scheduled start time, which is midnight. The following table lists the scheduled start time, frequency, and default schedule setting.
 
 |Data warehouse job|Scheduled start time|Frequency|Enabled by default?|
@@ -50,23 +50,25 @@ The schedule for a job defines when a job starts. Frequency refers to how often 
 In this release of Service Manager, grooming functions are handled as a workflow. Settings for this job aren't configurable.
 
 ## PowerShell cmdlets
+
 The Service Manager Windows PowerShell module contains cmdlets that are used in this scenario to manage data warehouse functions on the server that hosts the data warehouse. You must run all Windows PowerShell cmdlets as an administrator. To view the Windows PowerShell Help, type the **get-help** command, followed by the name of the cmdlet for which you want help. For example, type `get-help Set-SCDWJobSchedule`. The following cmdlets are used in this scenario:
 
--   **Get-SCDWJobSchedule** Displays the schedule for a data warehouse job.
+- **Get-SCDWJobSchedule** Displays the schedule for a data warehouse job.
 
--   **Get-SCDWJob** Displays status for all recurring Service Manager data warehouse jobs.
+- **Get-SCDWJob** Displays status for all recurring Service Manager data warehouse jobs.
 
--   **Get-SCDWMgmtGroup** Shows details for a management group that is registered with the data warehouse.
+- **Get-SCDWMgmtGroup** Shows details for a management group that is registered with the data warehouse.
 
--   **Remove-SCDWMgmtGroup** Removes a management group from the data warehouse.
+- **Remove-SCDWMgmtGroup** Removes a management group from the data warehouse.
 
--   **Set-SCDWJobSchedule** Sets the schedule for data warehouse jobs.
+- **Set-SCDWJobSchedule** Sets the schedule for data warehouse jobs.
 
--   **Enable-SCDWJobSchedule** Enables a data warehouse job schedule.
+- **Enable-SCDWJobSchedule** Enables a data warehouse job schedule.
 
--   **Disable-SCDWJobSchedule** Disables a data warehouse job schedule. Job schedules are disabled by default.
+- **Disable-SCDWJobSchedule** Disables a data warehouse job schedule. Job schedules are disabled by default.
 
 ## Get started with data warehouse jobs
+
 When you register with the Service Manager data warehouse, the MPSyncJob starts running. This job can take several hours to complete its initial run. When this job is complete, you can see two extract jobs listed in the Data Warehouse Jobs pane. One extract job is listed as **Extract\__data warehouse management group name_**, and the other extract job is listed as **Extract\__Service Manager management group name_**. When both of these extract jobs appear, you know that the initial run of the MPSyncJob is complete and that you can now proceed with the subsequent maintenance tasks.
 
 ## Data warehouse module deployment
@@ -85,8 +87,8 @@ It's possible that multiple sources may refer to the same management pack. The v
 
 It's possible to remove management packs from the data warehouse. However, keep the following points in mind:
 
-1.  Removing management packs doesn't delete the data from the data warehouse as it does in the  Service Manager database; instead, the database view that users are granted access to is dropped.
-2.  If you reimport a management pack after you've removed the corresponding management pack, the historical data is exposed once again.
+1. Removing management packs doesn't delete the data from the data warehouse as it does in the  Service Manager database; instead, the database view that users are granted access to is dropped.
+2. If you reimport a management pack after you've removed the corresponding management pack, the historical data is exposed once again.
 
     > [!NOTE]
     > Only sealed management packs are synchronized from Service Manager to the data warehouse. An exception to this is list items, also known as enumerations. Groups or queues are synchronized to the data warehouse, regardless of whether they're in a sealed or unsealed management pack.
@@ -94,18 +96,19 @@ It's possible to remove management packs from the data warehouse. However, keep 
 Management packs that are imported from Service Manager are Service Manager-specific and data warehouse specific. The Service Manager management packs provide awareness of what the Service Manager database is structured like, and the data warehouse management packs drive the structure and processes of the data warehouse databases.
 
 ### Report deployment
+
 The management pack synchronization process imports management packs from Service Manager, and it defines how those management packs shape the structure, move the data, and copy reports for the data warehouse and reporting. After those management packs are synchronized between Service Manager and the data warehouse, the data is retrieved and reports are deployed for user consumption.
 
 Sequentially, report deployment occurs in the following process:
 
-1.  After all identified management packs are synchronized with data warehouse, management pack synchronization triggers the report deployment workflow.
-2.  Because the DWStagingandConfig database is the final destination of the management packs that have been synchronized, the deployment workflow queries the DWStagingandConfig database for any new or changed reports to deploy or any reports to remove.
-3.  The deployment workflow then publishes any new or updated reports to the SQL Server Reporting Services (SSRS) server through the SSRS web services.
-4.  SSRS stores the reports and appropriate metadata.
-5.  Schema deployment workflow is triggered by management pack synchronization.
-6.  Once again, information that causes schema changes is retrieved from the DWStagingandConfig database based on the newly synchronized management packs that are causing the changes.
-7.  Schema changes are deployed to the DWRepository database.
-8.  Any necessary changes to extract, transform, and load (ETL) modules are made to the DWStagingandConfig database.
+1. After all identified management packs are synchronized with data warehouse, management pack synchronization triggers the report deployment workflow.
+2. Because the DWStagingandConfig database is the final destination of the management packs that have been synchronized, the deployment workflow queries the DWStagingandConfig database for any new or changed reports to deploy or any reports to remove.
+3. The deployment workflow then publishes any new or updated reports to the SQL Server Reporting Services (SSRS) server through the SSRS web services.
+4. SSRS stores the reports and appropriate metadata.
+5. Schema deployment workflow is triggered by management pack synchronization.
+6. Once again, information that causes schema changes is retrieved from the DWStagingandConfig database based on the newly synchronized management packs that are causing the changes.
+7. Schema changes are deployed to the DWRepository database.
+8. Any necessary changes to extract, transform, and load (ETL) modules are made to the DWStagingandConfig database.
 
 Management packs that contain only Service Manager-specific information don't cause the deployment activities to execute. They're only be triggered for new data warehouse and reporting-specific elements.
 
@@ -113,9 +116,9 @@ Management packs that contain only Service Manager-specific information don't ca
 
 After the data warehouse schema and reports are deployed, the DWDataMart database is populated with actual data for reporting purposes. This is done by the ETL processes. These three processes each serve their own specific purpose:
 
--   **Extract** is designed specifically for processing large volumes of data from multiple sources, and it allows for moving data into an area that is built for manipulating the data.
--   **Transform** is designed for optimization of complex logic and integration operations. This process is where most of the ETL work occurs.
--   **Load** is designed for transferring the data that has already been processed into its target destination in a bulk manner.
+- **Extract** is designed specifically for processing large volumes of data from multiple sources, and it allows for moving data into an area that is built for manipulating the data.
+- **Transform** is designed for optimization of complex logic and integration operations. This process is where most of the ETL work occurs.
+- **Load** is designed for transferring the data that has already been processed into its target destination in a bulk manner.
 
 One of the main reasons for having three different databases is so that you can optimize your hardware environment more easily. In high-volume environments, the DWStagingandConfig and DWRepository databases must be on computer hardware that is optimized for read/write I/O. However, the computer hardware hosting the DWDatamart database must be optimized for read I/O. With that difference in mind, you can separate the DWDatamart to a different server or drive from the DWStagingandConfig and DWRepository databases. However, the DWStagingandConfig and DWRepository databases must remain on the same server.
 
@@ -125,8 +128,8 @@ At a high level, ETL occurs in the processes described in the following sections
 
 The extract process starts on a scheduled interval. Extract is the process that retrieves raw data from your online transaction processing system (OLTP) store, which in this case is the Service Manager database.
 
-1.  The extract process queries Service Manager for the delta data that has accumulated since the last time the extract process ran.
-2.  The new data is written into the DWStagingandConfig database in the same basic form as it's in the Service Manager database.
+1. The extract process queries Service Manager for the delta data that has accumulated since the last time the extract process ran.
+2. The new data is written into the DWStagingandConfig database in the same basic form as it's in the Service Manager database.
 
 #### Transform
 
@@ -141,10 +144,11 @@ The load process starts on a scheduled interval. The load process queries for th
 By default, data is stored in the data warehouse for three years for fact tables and for an unlimited period for dimension and outrigger tables. However, you can modify the retention period if you want to retain data longer or groom it out more aggressively.
 
 ### Fact table retention settings
+
 There are two types of retention settings in the data warehouse:
 
--   Global: The global retention period for all fact tables in the database is set to three years by default, which any subsequently created fact tables use as their default retention setting.
--   Individual Fact: The granular retention period for each individual fact table, uses the global setting of three years, unless you modify them individually.
+- Global: The global retention period for all fact tables in the database is set to three years by default, which any subsequently created fact tables use as their default retention setting.
+- Individual Fact: The granular retention period for each individual fact table, uses the global setting of three years, unless you modify them individually.
 
 **Global**:
 The default global retention period for data stored in the Service Manager data warehouse is three years, so all fact tables use three years as the default retention setting. Any subsequently-created fact tables use this setting when created for their individual retention setting.
@@ -152,11 +156,11 @@ The default global retention period for data stored in the Service Manager data 
 **Individual Fact Tables**:
 Individual fact tables inherit the global retention value when created, or you can customize them to a value that differs from the default global setting. You can configure the default individual fact tables that were created during installation, individually with a specific retention value as needed.
 
-#### To view the retention period for default tables or specific tables
+#### View the retention period for default tables or specific tables
 
 - Use the **Get-SCDWRetentionPeriod** PowerShell cmdlet to get the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. For detailed descriptions of available parameters and example usage, see [Get-SCDWRetentionPeriod](/previous-versions/system-center/powershell/system-center-2012-r2/hh541718(v=sc.20)).
 
-#### To set the retention period for default tables or specific tables
+#### Set the retention period for default tables or specific tables
 
 - Use the **Set-SCDWRetentionPeriod** PowerShell cmdlet to set the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. For detailed descriptions of available parameters and example usage, see [Set-SCDWRetentionPeriod](/previous-versions/system-center/powershell/system-center-2012-r2/hh541725(v=sc.20)).
 
@@ -172,66 +176,73 @@ In general, you should avoid having the same dimension, fact, and cube name in d
 
 Use the following procedure to enable the schedule for the ETL jobs as needed; you can use this procedure to enable the schedule for any of the data warehouse jobs. By default, the schedules for the extract, transform, and load (ETL) jobs are enabled. In this release of Service Manager, you can enable the schedules only by using Windows PowerShell.
 
-### To enable a schedule for a data warehouse job by using a Windows PowerShell cmdlet
+### Enable a schedule for a data warehouse job by using a Windows PowerShell cmdlet
 
 ::: moniker range="sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
-::: moniker-end
-::: moniker range=">sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
-::: moniker-end
-2.  At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
 
-    ```
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
+
+::: moniker-end
+
+::: moniker range=">sc-sm-2016"
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
+
+::: moniker-end
+
+2. At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
+
+    ```powershell
     Enable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>
     ```
 
-    ```
+    ```powershell
     Enable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>
     ```
 
-    ```
+    ```powershell
     Enable-SCDWJobSchedule -JobName Transform.Common
     ```
 
-    ```
+    ```powershell
     Enable-SCDWJobSchedule -JobName Load.Common
     ```
 
-3.  Enter **exit**, and then press ENTER.
-
-
+3. Enter **exit**, and then press ENTER.
 
 You can use the following procedure to disable the schedule for the extract, transform, and load (ETL) jobs; however, you can use this procedure to disable the schedule for any data warehouse job. In this release of Service Manager, you can disable the schedules only by using Windows PowerShell cmdlets.
 
-
-### To disable a schedule for a data warehouse job by using Windows PowerShell cmdlets
+### Disable a schedule for a data warehouse job by using Windows PowerShell cmdlets
 
 ::: moniker range="sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
-::: moniker-end
-::: moniker range=">sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
-::: moniker-end
-2.  At the Windows PowerShell prompt, enter the following commands, and press ENTER after each command:
 
-    ```
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
+::: moniker-end
+
+::: moniker range=">sc-sm-2016"
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
+::: moniker-end
+
+2. At the Windows PowerShell prompt, enter the following commands, and press ENTER after each command:
+
+    ```powershell
     Disable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>
     ```
 
-    ```
+    ```powershell
     Disable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>
     ```
 
-    ```
+    ```powershell
     Disable-SCDWJobSchedule -JobName Transform.Common
     ```
 
-    ```
+    ```powershell
     Disable-SCDWJobSchedule -JobName Load.Common
     ```
 
-3.  Enter **exit**, and then press ENTER.
+3. Enter **exit**, and then press ENTER.
 
 ## Stop and start a data warehouse job
 
@@ -240,70 +251,77 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 > [!NOTE]
 > For information about using the Service Manager Windows PowerShell cmdlets, see [Configuring and Using the Service Manager Cmdlets for Windows PowerShell](sm-cmdlets.md).
 
-### To stop and start data warehouse jobs using the Service Manager console
+### Stop and start data warehouse jobs using the Service Manager console
 
-1.  In the Service Manager console, select **Data Warehouse**.
-2.  Expand **Data Warehouse**, and select **Data Warehouse Jobs**.
-3.  In the **Data Warehouse Jobs** pane, select a job that is running, and select **Suspend** in the **Tasks** list.
-4.  Repeat the previous step for each data warehouse job.
-5.  To resume each job, select a job that is stopped in the **Data Warehouse Jobs** pane, and select **Resume** in the **Tasks** list.
+1. In the Service Manager console, select **Data Warehouse**.
+2. Expand **Data Warehouse**, and select **Data Warehouse Jobs**.
+3. In the **Data Warehouse Jobs** pane, select a job that is running, and select **Suspend** in the **Tasks** list.
+4. Repeat the previous step for each data warehouse job.
+5. To resume each job, select a job that is stopped in the **Data Warehouse Jobs** pane, and select **Resume** in the **Tasks** list.
 
-### To stop all data warehouse jobs using Windows PowerShell cmdlets
+### Stop all data warehouse jobs using Windows PowerShell cmdlets
 
 ::: moniker range="sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
-::: moniker-end
-::: moniker range=">sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
-::: moniker-end
-2.  At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
 
-    ```
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
+::: moniker-end
+
+::: moniker range=">sc-sm-2016"
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
+::: moniker-end
+
+2. At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
+
+    ```powershell
     Stop-SCDWJob-JobName Extract_<data warehouse management group name>
     ```
 
-    ```
+    ```powershell
     Stop-SCDWJob -JobName Extract_<Service Manager management group name>
     ```
 
-    ```
+    ```powershell
     Stop-SCDWJob -JobName Transform.Common
     ```
 
-    ```
+    ```powershell
     Stop-SCDWJob -JobName Load.Common
     ```
 
-3.  Type **exit**, and then press ENTER.
+3. Type **exit**, and then press ENTER.
 
-### To start all data warehouse jobs using Windows PowerShell cmdlets
+### Start all data warehouse jobs using Windows PowerShell cmdlets
 
 ::: moniker range="sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
 ::: moniker-end
+
 ::: moniker range=">sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
 ::: moniker-end
 
-2.  At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
+2. At the Windows PowerShell prompt, enter the following commands, and then press ENTER after each command:
 
-    ```
+    ```powershell
     Start-SCDWJob -JobName Extract_<data warehouse management group name>
     ```
 
-    ```
+    ```powershell
     Start-SCDWJob -JobName Extract_<Service Manager management group name>
     ```
 
-    ```
+    ```powershell
     Start-SCDWJob -JobName Transform.Common
     ```
 
-    ```
+    ```powershell
     Start-SCDWJob -JobName Load.Common
     ```
 
-3.  Enter **exit**, and then press ENTER.
+3. Enter **exit**, and then press ENTER.
 
 ## Schedule a data warehouse job in Service Manager
 
@@ -311,11 +329,11 @@ You can use the following procedure to schedule a data warehouse job in Service 
 
 You could use this procedure in a scenario where a schedule for the data warehouse jobs has been defined in Service Manager. You want to change the schedule for the data warehouse jobs to define standard maintenance windows for the Service Manager database and for the data warehouse. Use the **Set-SCDWJobSchedule** cmdlet to schedule the data warehouse jobs. The `Set-SCDWJobSchedule -ScheduleType Weekly` cmdlet and parameter combination allows jobs to run only on the days you specify. For example, the following commands define a daily or weekly schedule:
 
-```
+```powershell
 Set-SCDWJobSchedule -JobName Transform.Common -ScheduleType Daily -DailyFrequency  01:00:00 -DailyStart 06:00
 ```
 
-```
+```powershell
 Set-SCDWJobSchedule -JobName Transform.Common -ScheduleType Weekly -WeeklyFrequency Tuesday, Thursday -WeeklyStart 06:00
 ```
 
@@ -324,33 +342,39 @@ Set-SCDWJobSchedule -JobName Transform.Common -ScheduleType Weekly -WeeklyFreque
 
 In the following procedure, you configure a schedule for the Transform job to run every 45 minutes, starting at 2:00 in the morning. However, you can modify the commands to set your own schedule.
 
-### To configure a schedule for data warehouse jobs
+### Configure a schedule for data warehouse jobs
 
 ::: moniker range="sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
 ::: moniker-end
+
 ::: moniker range=">sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
 ::: moniker-end
 
-2.  At the Windows PowerShell prompt, type the following command, and then press ENTER.
+2. At the Windows PowerShell prompt, type the following command, and then press ENTER.
 
-    ```
+    ```powershell
     Set-SCDWJobSchedule -JobName Transform.Common -ScheduleType Daily -DailyFrequency 00:45:00 -DailyStart 02:00
     ```
 
-### To validate a data warehouse job schedule
+### Validate a data warehouse job schedule
 
 ::: moniker range="sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
 ::: moniker-end
+
 ::: moniker range=">sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
 ::: moniker-end
 
-2.  Enter the following command, and then press ENTER:
+2. Enter the following command, and then press ENTER:
 
-    ```
+    ```powershell
     Get-SCDWJobSchedule
     ```
 
@@ -360,15 +384,15 @@ You can process all the dimensions in the data warehouse in one operation using 
 
 Before you can use Service Manager cmdlets, you need to configure the Service Manager Shell. For information about configuring the Service Manager Shell, see [Configuring and Using the System Center - Service Manager Cmdlets for Windows PowerShell](sm-cmdlets.md).
 
-### To process all dimensions using cmdlets
+### Process all dimensions using cmdlets
 
 - Copy and paste the following code snippets at the prompt in a Service Manager Shell:
 
-    ```
+    ```powershell
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices") > $NULL
     ```
 
-    ```
+    ```powershell
     $Server = New-Object Microsoft.AnalysisServices.Server
     $Server.Connect("<FullyQualifiedServerName>")
     $Databases = $Server.Databases
@@ -377,7 +401,7 @@ Before you can use Service Manager cmdlets, you need to configure the Service Ma
     $Dimensions = $DWASDB.Dimensions
     ```
 
-    ```
+    ```powershell
     foreach ($Dimension in $Dimensions){$Dimension.Process("ProcessFull")}
     ```
 
@@ -385,39 +409,45 @@ Before you can use Service Manager cmdlets, you need to configure the Service Ma
 
 A history of data warehouse jobs is collected as they run in Service Manager. You can view this history to determine how long a job ran or to determine the last time the job ran successfully. When you display the data warehouse job history, you display the number of entries that you specify by using the *NumberOfBatches* parameter. Use the following procedure to view the last five entries in the history of a data warehouse job.
 
-### To view the last five entries in the data warehouse job history
+### View the last five entries in the data warehouse job history
 
 ::: moniker range="sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
 ::: moniker-end
+
 ::: moniker range=">sc-sm-2016"
-1.  On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
+
+1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
 ::: moniker-end
 
-2.  Enter the following command, and then press ENTER.
+2. Enter the following command, and then press ENTER.
 
-    ```
+    ```powershell
     Get-SCDWJob -NumberOfBatches 5
     ```
 
-3.  Enter **exit**, and then press ENTER.
+3. Enter **exit**, and then press ENTER.
 
 ## View the status of a data warehouse job
 
 You can use the following procedures to view the status of a data warehouse job in Service Manager to determine whether a job is running, stopped, or failed.
 
-### To view the status of a data warehouse job by using the Service Manager console
+### View the status of a data warehouse job by using the Service Manager console
 
 1. In the Service Manager console, select **Data Warehouse**.
 2. In the **Data Warehouse** pane, expand **Data Warehouse**, and select **Data Warehouse Jobs**.
 3. In the **Data Warehouse Jobs** pane, review the list of jobs to view their status.
 
-### To view the status of a data warehouse job by using a Windows PowerShell cmdlet
+### View the status of a data warehouse job by using a Windows PowerShell cmdlet
 
 ::: moniker range="sc-sm-2016"
+
 1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager 2016**, and select **Service Manager Shell**.
 ::: moniker-end
+
 ::: moniker range=">sc-sm-2016"
+
 1. On the computer that hosts the data warehouse management server, select **Start**, point to **All Programs**, select **Microsoft System Center**, select **Service Manager**, and select **Service Manager Shell**.
 ::: moniker-end
 
@@ -429,7 +459,6 @@ You can use the following procedures to view the status of a data warehouse job 
 
 3. Review the list of jobs to view their status.
 
-
 ## Troubleshoot a data warehouse job in Service Manager
 
 In Service Manager, you may encounter problems related to data warehouse jobs. After the Data Warehouse Registration Wizard completes and after Reporting becomes available in the Service Manager console, you can start running reports. If, for example, the incident management report you run doesn't show updated data, you can use Windows PowerShell cmdlets to troubleshoot the problem.
@@ -438,38 +467,42 @@ You can use the first procedure to determine whether a job failed using Windows 
 
 The second procedure can be used to change the default transform job timeout period. If you see that the data warehouse transform job doesn't complete successfully, then this may be due to the default 3-hour timeout period for the job being surpassed. This can happen because a large volume of data is transformed in the data warehouse. To confirm that this is actually happening, you can view the Event Viewer in the Data Warehouse where messages similar to:  **Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.** can be seen for a module. As an example, you might see the message above for the TransformEntityRelatesToEntityFact module. To resolve the problem in this case, you can set the timeout period to be longer than the default value of 10800 seconds.
 
-### To troubleshoot data warehouse jobs by using Windows PowerShell cmdlets
+### Troubleshoot data warehouse jobs by using Windows PowerShell cmdlets
 
-1.  On the computer that hosts the data warehouse management server, start **Windows PowerShell**.
-2.  Enter the following command, and then press ENTER.
+1. On the computer that hosts the data warehouse management server, start **Windows PowerShell**.
+2. Enter the following command, and then press ENTER.
 
-    ```
+    ```powershell
     Get-SCDWJob
     ```
 
-3.  Review the output, and locate any job with **Failed** status.
-4.  Enter the following command, and then press ENTER. In the command, specify the data warehouse job that failed as the value of the *JobName* parameter.
+3. Review the output, and locate any job with **Failed** status.
+4. Enter the following command, and then press ENTER. In the command, specify the data warehouse job that failed as the value of the *JobName* parameter.
 
-    ```
+    ```powershell
     Get-SCDWJobModule -JobName Transform.Common
     ```
 
-5.  In the output, locate a status of "Failed," and then review the **Error Message** column for more information about why the data warehouse job failed.
-6.  When you're ready to retry the failed job, in the Service Manager console, select **Data Warehouse**.
-7.  Expand **Data Warehouse**, and select **Data Warehouse Jobs**.
-8.  In the **Data Warehouse Jobs** pane, select the failed job in the list, and select **Resume** in the **Tasks** list.
+5. In the output, locate a status of "Failed," and then review the **Error Message** column for more information about why the data warehouse job failed.
+6. When you're ready to retry the failed job, in the Service Manager console, select **Data Warehouse**.
+7. Expand **Data Warehouse**, and select **Data Warehouse Jobs**.
+8. In the **Data Warehouse Jobs** pane, select the failed job in the list, and select **Resume** in the **Tasks** list.
 
-### To override the default timeout period
+### Override the default timeout period
 
 ::: moniker range="sc-sm-2016"
-1.  Edit the registry on the data warehouse management server and ensure that the key name **SqlCommandTimeout** under **SOFTWARE\Microsoft\System Center\2016\Common\DAL** exists and is of type DWORD. If it doesn't exist, create it.
+
+1. Edit the registry on the data warehouse management server and ensure that the key name **SqlCommandTimeout** under **SOFTWARE\Microsoft\System Center\2016\Common\DAL** exists and is of type DWORD. If it doesn't exist, create it.
 ::: moniker-end
+
 ::: moniker range=">sc-sm-2016"
-1.  Edit the registry on the data warehouse management server and ensure that the key name **SqlCommandTimeout** under **SOFTWARE\Microsoft\System Center\Common\DAL** exists and is of type DWORD. If it doesn't exist, create it.
+
+1. Edit the registry on the data warehouse management server and ensure that the key name **SqlCommandTimeout** under **SOFTWARE\Microsoft\System Center\Common\DAL** exists and is of type DWORD. If it doesn't exist, create it.
 ::: moniker-end
-2.  Edit the value, which is in seconds, with a positive value.
-3.  Restart the Microsoft Monitoring Agent service.
-4.  You can resume the Transform.common job to see the change.
+
+2. Edit the value, which is in seconds, with a positive value.
+3. Restart the Microsoft Monitoring Agent service.
+4. You can resume the Transform.common job to see the change.
 
 ## Next steps
 

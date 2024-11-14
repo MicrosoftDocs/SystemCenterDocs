@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
@@ -31,9 +31,7 @@ We recommend English as the default language for the SQL users sign-in accounts.
 
 As date format is based on the language, if the language of SQL user sign-in accounts isn't English, then a few data Warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs don't push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
 
-You can set the default language for a new SQL sign-in account or change the default language for an existing account. See the following sections for the steps to use.
-
-**Use these steps**:
+To set the default language for a new SQL sign-in account or change the default language for an existing account, follow these steps:
 
 1. Open *SQL Management Studio* with elevated privileges and connect to SQL server, where you want to create Service Manager or Data Warehouse databases.
 2. Go to **Security** folder.
@@ -54,7 +52,6 @@ You can set the default language for a new SQL sign-in account or change the def
 
     ![Screenshot showing the change current language.](./media/deploy-sm/change-existing-language.png)
 
-
 ## Avoid using Turkish language collations with Service Manager
 
 This section applies only if you're considering deploying a Service Manager database or data warehouse database to a SQL Server that has been configured to use a Turkish language collation.  
@@ -69,14 +66,14 @@ This section applies only if you're considering deploying a Service Manager data
 
 During installation, System Center - Service Manager Setup performs prerequisite checks for software and hardware requirements and returns one of the three following states:  
 
--   **Success**: Setup finds that all software and hardware requirements are met, and the installation proceeds.  
+- **Success**: Setup finds that all software and hardware requirements are met, and the installation proceeds.  
 
--   **Warning**: Setup finds that all software requirements are met, but the computer doesn't meet the minimum hardware requirements or the requirements for optional software are missing. The installation proceeds.  
+- **Warning**: Setup finds that all software requirements are met, but the computer doesn't meet the minimum hardware requirements or the requirements for optional software are missing. The installation proceeds.  
 
--   **Failure**: At least one software or hardware requirement isn't met, and the installation can't proceed. An **Installation cannot continue** message appears.  
+- **Failure**: At least one software or hardware requirement isn't met, and the installation can't proceed. An **Installation cannot continue** message appears.  
 
 > [!NOTE]  
->  On the **Installation cannot continue** screen, there's no option to restart the prerequisite checker. You must select **Cancel** to restart the installation process. Ensure that the computer meets all the hardware and software requirements before you run Setup again.
+> On the **Installation cannot continue** screen, there's no option to restart the prerequisite checker. You must select **Cancel** to restart the installation process. Ensure that the computer meets all the hardware and software requirements before you run Setup again.
 
 ## Next steps
 

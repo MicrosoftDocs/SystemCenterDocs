@@ -5,7 +5,7 @@ description: This article provides a high-level overview of what Operations Mana
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/19/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -98,7 +98,7 @@ As these examples show, rules can create alerts and collect events or performanc
 
 Discovered objects have a health state, which is reflected in the Operations console as green (successful or healthy), yellow (warning), or red (critical or unhealthy). *Monitors* define the health states for particular aspects of the monitored object. For example, a monitor for disk drive capacity might define green as less than 85 percent full, yellow as over 85 percent full, and red as over 90 percent full. A monitor can be configured to generate an alert when a state change occurs.
 
-## How objects are discovered and monitored
+## Discover and monitor Objects
 
 The following image is a simplified illustration of how objects are discovered and monitored.
 

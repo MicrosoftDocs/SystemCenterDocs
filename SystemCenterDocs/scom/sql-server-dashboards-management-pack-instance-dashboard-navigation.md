@@ -5,7 +5,7 @@ description: This article explains how to navigate through the dashboards struct
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 06/25/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

@@ -2,7 +2,7 @@
 title: Get SNMP Variable
 description: This article describes the Get SNMP Variable activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,16 +17,15 @@ manager: jsuri
 ---
 # Get SNMP Variable
 
-
-
 The Get SNMP Variable activity will query a network device for the value of variable that is assigned to the Management Information Base address that you specify. You can use the Get SNMP Variable activity to retrieve information about a network device to determine if an administrator needs to be notified.  
 
-## Configuring the Get SNMP Variable Activity  
+## Configure the Get SNMP Variable Activity
+
  Before you configure the Get SNMP Variable activity, you need to determine the following:  
 
--   The IP address of the device, and also the port number, SNMP MIB, and SNMP version  
+- The IP address of the device, and also the port number, SNMP MIB, and SNMP version  
 
--   The community string required to retrieve the variable.  
+- The community string required to retrieve the variable.  
 
 > [!NOTE]
 > You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
@@ -43,14 +42,15 @@ The Get SNMP Variable activity will query a network device for the value of vari
 |**SNMP Version**|Select the SNMP version to use when connecting to the network device.|  
 |**Community string**|Type the community string that will be used to authenticate against the network device. The community should have the rights of Read only or higher. This field is case-sensitive and supports only alphanumeric characters.|  
 
-### Advanced Tab  
+### Advanced Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Timeout**|Type the number of seconds the Get SNMP Variable will wait for a response from the network device. If the operation times out, then it will attempt to retry the action. The number of retries is specified in the **Retry** box.|  
 |**Retry**|Type the number of times to attempt to retrieve the SNMP variable|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  
