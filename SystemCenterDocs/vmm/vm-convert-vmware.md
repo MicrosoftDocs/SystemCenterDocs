@@ -79,9 +79,6 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 
 Now that your VMware VMs are discovered and manageable by VMM, you can convert these VMs to Hyper-V by following these instructions:
 
->[!Note]
-> As part of converting your VMware to Hyper-V, you can modernize your BIOS-based VMware VMs to Generation 2 Hyper-V VMs by following [these instructions](vm-convert-vmware.md#convert-a-vmware-vm-to-hyper-v-in-the-vmm-fabric) as a pre-step before starting the conversion.
-
 1. Ensure the VMware VMs that are to be converted are in the **Stopped** state and that there aren’t snapshots associated with them.
 
 2.	Select **VMs and Services > Home > Create > Create Virtual Machines > Convert Virtual Machine**.
