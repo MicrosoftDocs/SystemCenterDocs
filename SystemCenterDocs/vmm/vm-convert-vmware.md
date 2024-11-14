@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/24/2024
+ms.date: 11/14/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -25,9 +25,9 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 >- You can't convert VMware workstations.
 >- You can't convert VMs with virtual hard disks connected to an IDE bus.
 >- VMware tools must be uninstalled from the guest operating system of the VM.
->- *Add a point on the unsupported case with VMware VMs with vSAN storage*
+>- VMware VMs with vSAN storage can’t be converted to Hyper-V with SCVMM.
 >- Online conversions aren't supported through SCVMM.
->- We recommend upgrading to VMM 2025 to convert your VMware VMs to Hyper-V four times faster.
+>- We recommend upgrading to VMM 2025 to convert your VMware VMs to Hyper-V four times faster and to have an enhanced conversion experience.
 
 ## Start by bringing your vCenter server and the source ESXi hosts under SCVMM management
 
@@ -58,7 +58,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
     :::image type="content" source="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png" alt-text="Screenshot of add vmware ESX hosts and clusters page." lightbox="media/vm-convert-vmware/add-vmware-esx-hosts-and-clusters.png":::
 
 8.	In the **Add Resource Wizard**,<br>
-    a. Under **Credentials**, select the Run as account that is used for the port and select **Next**.<br>
+    a. Under **Credentials**, select the Run as account with administrator privileges on the ESXi host to be added and select **Next**.<br>
 
     :::image type="content" source="media/vm-convert-vmware/add-resource-wizard.png" alt-text="Screenshot of add resource wizard page." lightbox="media/vm-convert-vmware/add-resource-wizard.png":::
 
@@ -66,7 +66,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 
     :::image type="content" source="media/vm-convert-vmware/select-esx-computers.png" alt-text="Screenshot of select ESX computers page." lightbox="media/vm-convert-vmware/select-esx-computers.png":::
 
-    c.	Under **Host Settings**, select the location where you want to add the VMs and select **Next**.
+    c.	Under **Host Settings**, select the host group where you want to add the VMs and select **Next**.
 
       :::image type="content" source="media/vm-convert-vmware/add-virtual-machine-path.png" alt-text="Screenshot of add virtual machine path page." lightbox="media/vm-convert-vmware/add-virtual-machine-path.png":::
 
@@ -81,40 +81,21 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 >[!Note]
 > As part of converting your VMware to Hyper-V, you can modernize your BIOS-based VMware VMs to Generation 2 Hyper-V VMs by following [these instructions](vm-convert-vmware.md#convert-a-vmware-vm-to-hyper-v-in-the-vmm-fabric) as a pre-step before starting the conversion.
 
-1.	Select **VMs and Services > Home > Create > Create Virtual Machines > Convert Virtual Machine**.
+1. Ensure the VMware VMs that are to be converted are in the **Stopped** state and that there aren’t snapshots associated with them.
 
-    *Add Image*
+2.	Select **VMs and Services > Home > Create > Create Virtual Machines > Convert Virtual Machine**.
 
-2.	In **Convert Virtual Machine** wizard > **Select Source**, select **Browse** and in **Select Virtual Machine Source**, select the VMware VM you want to convert.
+3.	In **Convert Virtual Machine** wizard > **Select Source**, select **Browse** and in **Select Virtual Machine Source**, select the VMware VM you want to convert.
 
-    *Add Image*
+4.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
-3.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
+5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings. You can migrate BIOS-based VMware VMs to Generation 1 Hyper-V VMs and UEFI-based VMware VMs to Generation 2 Hyper-V VMs.
 
-    *Add Image*
-
-4.	In **Virtual Machine Configuration**, specify the number of processors and memory settings. You can migrate BIOS-based VMware VMs to Generation 1 Hyper-V VMs and UEFI-based VMware VMs to Generation 2 Hyper-V VMs.
-
-    *Add Image*
-
-5.	In **Select Host**, select a Hyper-V host/Azure Stack HCI for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
-
-    *Add Image*
-
-6.	In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
-
-    *Add Image*
-
-    >[!Note]
-    >The PowerShell script-based approach provides guidance to retain the IP of the VM after conversion. You can also read about it in Cameron Peppers’ blogpost here.
+6.	In **Select Host**, select a Hyper-V host/Azure Stack HCI for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
 7.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 
-    *Add Image*
-
 8.	Select **Create** to start the conversion. Verify the VM's conversion in **VMs and Services > Home > Show > VMs**.
-
-    *Add Image*
 
     >[!Note]
     >After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
