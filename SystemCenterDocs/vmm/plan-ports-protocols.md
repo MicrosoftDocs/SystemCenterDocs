@@ -5,15 +5,13 @@ description: This article provides information about the ports and protocols use
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/05/2024
+ms.date: 11/14/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ---
 
 # Identify VMM ports and protocols
-
-
 
 As part of your System Center Virtual Machine Manager (VMM) deployment, you need to allow access for the ports and protocols that the VMM server and components will use. It's important to plan this in advance. Some of the port settings are configured in VMM setup, and if you want to modify them after you set up VMM for the first time, you'll need to reinstall to do so.
 
@@ -26,7 +24,7 @@ As part of your System Center Virtual Machine Manager (VMM) deployment, you need
 4. In the **New Inbound Rule Wizard** > **Rule Type**, select **Port**, and then select **Next**.
 5. In **Protocol and Ports**, specify the port settings in accordance with the table below and continue in the wizard to create the rule.
 
-## Port and protocol exceptions
+## General ports and protocol exceptions
 
 **Connect** |  **Port/protocol** | **Details** | **Configure**
 --- | --- | --- | ---
@@ -37,7 +35,7 @@ VMM server to VMM agent on Windows Server-based hosts/remote library server | 59
 VMM server to VMM guest agent (VM data channel) | 443:HTTPS | BITS data channel for file transfers<br/><br/>Inbound rule on machines running the agent<br/><br/> The VMM guest agent is a special version of the VMM agent. It's installed on VMs that are part of a service template and on Linux VMs (with or without a service template). | Can't modify
 VMM server to VMM guest agent (VM control channel) | 5985:WinRM | Control channel<br/><br/> Inbound rule on machines running the agent | Can't modify
 VMM host to host | 443:HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on hosts and VMM server | Modify in VMM setup
-VMM server to VWware ESXi servers/Web Services | 22:SFTP<br/><br/> Inbound rule on hosts | Can't modify
+VMM server to VMware ESXi servers/Web Services | 22:SFTP<br/><br/> Inbound rule on hosts | Can't modify
 VMM server to load balancer | 80:HTTP; 443:HTTPS | Channel used for load balancer management | Modify in load balancer provider
 VMM server to remote SQL Server database | 1433:TDS | SQL Server listener<br/><br/> Inbound rule on SQL Server | Modify in VMM setup
 VMM server to WSUS update servers | 80/8530:HTTP; 443/8531:HTTPS | Data and control channels<br/><br/> Inbound rule on WSUS server | Can't modify from VMM
@@ -55,11 +53,20 @@ VMM server to Windows file server | 80: WinRM; 135: RPC; 139: NetBIOS; 445: SMB 
 VMM server to Windows file server | 443:HTTPS | BITS used for file transfer<br/><br/> Inbound rule on file server |
 VMM server to Windows file server | 5985/5986:WinRM | Control channel<br/><br/> Inbound rule on file server |
 
-::: moniker range=">=sc-vmm-2016"
+## VMware vCenter server and ESXi hosts management related ports and protocol exceptions
+
+**Connect** |  **Port/protocol** | **Details** | **Configure**
+--- | --- | --- | ---
+VMM server to VMware ESXi nodes | 22: SFTP <br> 443: HTTPS | Inbound rule on hosts | Can't modify
+Hyper-V node to VMware ESXi nodes | 22: SFTP <br> 443: HTTPS | Inbound rule on ESXi hosts | Can't modify
+VMware ESXi nodes to Hyper-V node | 443: HTTPS <br> 445: SMB (over TCP) | Inbound rule on ESXi hosts | Can't modify
+VMware vCenter server to Hyper-V node | 443:HTTPS | Inbound rule on ESXi hosts | Can't modify
+Hyper-V node to VMware vCenter | 443:HTTPS | Inbound rule on VMware vCenter server | Can't modify |
+
+
 > [!NOTE]
-> In addition to the above ports, VMM relies on the default dynamic port range for all its communication with Hyper-V hosts, file servers, and library servers.  [Learn more](https://support.microsoft.com/en-in/help/929851/the-default-dynamic-port-range-for-tcp-ip-has-changed-in-windows-vista) about the dynamic port range.
-> We recommend that you reconfigure the firewalls to allow traffic between servers in the dynamic port range of 49152 through 65535.
-::: moniker-end
+> In addition to the above ports, VMM relies on the default dynamic port range for all its communication with Hyper-V hosts, file servers, and library servers.  [Learn more](https://support.microsoft.com/en-in/help/929851/the-default-dynamic-port-range-for-tcp-ip-has-changed-in-windows-vista) about the dynamic port range. We recommend that you reconfigure the firewalls to allow traffic between servers in the dynamic port range of 49152 through 65535.
+
 ::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 > [!NOTE]
 > System Center Virtual Machine Manager uses NTLM authentication protocol to perform management operations. Using Kerberos authentication protocol isn’t recommended as it may break a few VM operations.
