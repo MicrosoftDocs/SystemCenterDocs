@@ -57,11 +57,11 @@ VMM server to Windows file server | 5985/5986:WinRM | Control channel<br/><br/> 
 
 **Connect** |  **Port/protocol** | **Details** | **Configure**
 --- | --- | --- | ---
-VMM server to VMware ESXi nodes | 22: SFTP <br> 443: HTTPS | Inbound rule on hosts | Can't modify
-Hyper-V node to VMware ESXi nodes | 22: SFTP <br> 443: HTTPS | Inbound rule on ESXi hosts | Can't modify
-VMware ESXi nodes to Hyper-V node | 443: HTTPS <br> 445: SMB (over TCP) | Inbound rule on ESXi hosts | Can't modify
-VMware vCenter server to Hyper-V node | 443:HTTPS | Inbound rule on ESXi hosts | Can't modify
-Hyper-V node to VMware vCenter | 443:HTTPS | Inbound rule on VMware vCenter server | Can't modify |
+VMM server to VMware vCenter server | 443: HTTPS | Inbound rule on VMware vCenter server | Can't modify
+VMware vCenter server to VMM server | 443: HTTPS | Outbound rule on VMware vCenter server | Can't modify
+VMM server to VMware ESXi nodes | 22: SFTP <br> 443: HTTPS | Inbound rule on ESXi nodes | Can't modify
+VMware ESXi nodes to Hyper-V node | 443:HTTPS <br> 445: SMB (over TCP) | Outbound rule on ESXi nodes | Can't modify
+VMware ESXi nodes to VMM server | 443:HTTPS | Outbound rule on ESXi nodes | Can't modify |
 
 
 > [!NOTE]
