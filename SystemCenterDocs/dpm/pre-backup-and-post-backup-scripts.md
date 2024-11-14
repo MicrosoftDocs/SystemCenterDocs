@@ -3,7 +3,7 @@ description: This article describes the  pre and post backup scripts for Data Pr
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/01/2024
+ms.date: 11/01/2024
 title: Use Pre-backup and Post-backup scripts
 ms.subservice: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3

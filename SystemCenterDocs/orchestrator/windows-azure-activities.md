@@ -2,7 +2,7 @@
 title: Windows Azure Activities
 description: The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.
 ms.custom: UpdateFrequency2
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -18,15 +18,13 @@ monikerRange: '<=sc-orch-2019'
 ---
 # Windows Azure Activities
 
-
-
 The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.
 
 ## Activity properties
 
 Each activity contains a set of required or optional properties. These define how the activity connects to other activities or how the activity performs its actions. When an activity has been placed in the runbook window, you can view or modify its properties.
 
-### To view and configure the properties for an activity
+### View and configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity and select **Properties**.
 
@@ -44,7 +42,7 @@ The **General** tab contains the **Name** and **Description** properties for the
 
 The **Properties** tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property on the **Properties** or **Filters** tab. The **Configuration Name** property is used to specify the connection to Windows Azure.
 
-### To configure the Configuration Name property
+### Configure the Configuration Name property
 
 1.  Select the ellipsis **(...)** button next to the **Name** box.
 
@@ -100,7 +98,7 @@ Published data is the data produced as a result of the actions of an activity. T
 
 An activity can only subscribe to data from the activities that occur before it in the runbook. You can use published data to automatically populate the property values needed by the activities.
 
-### To use published data
+### Use published data
 
 1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 

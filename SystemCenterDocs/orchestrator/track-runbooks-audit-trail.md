@@ -12,11 +12,9 @@ ms.assetid: b93dbbb6-3c0d-4256-8140-c47b67a50a4a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/11/2023
+ms.date: 11/01/2024
 ---
 # Audit Trail
-
-
 
 The *Audit Trail* is a collection of text log files that contain information about the interaction of a runbook with external tools and systems. By using the Audit Trail, you can report on configuration and change compliance of processes and identify changes made to a non-Microsoft system for audit purposes or to remediate a change that causes service interruption.  
 
@@ -32,7 +30,7 @@ By default, the Audit Trail isn't activated when you install Orchestrator. You c
 2.  Navigate to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">=sc-orch-2022"
 2.  Navigate to `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 

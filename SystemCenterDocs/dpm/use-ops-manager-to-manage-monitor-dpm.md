@@ -3,7 +3,7 @@ description: Describes how to manage and monitor DPM servers with Operations Man
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 01/17/2024
+ms.date: 11/01/2024
 title: Manage and monitor DPM servers with System Center Operations Manager
 ms.subservice: data-protection-manager
 ms.assetid: 97fd6656-af44-4e5c-bef8-dc57643b0181
@@ -30,6 +30,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 - Recover data
 
 ## Setting up Central Console
+
 What you need:
 
 - A System Center Operations Manager server running 2016. The Operations Manager Data Warehouse must be up and running.
@@ -49,13 +50,15 @@ You deploy Central Console as follows:
 4. [Import the DPM reporting management pack](#BKMK_ImportReporting) - Download the pack and install it on the Operations Manager server.
 
 ### <a name="BKMK_OM"></a>Install the Operations Manager agent
+
 Install the agent as follows:
 
-1.  Install the agent on each DPM server you want to monitor.
+1. Install the agent on each DPM server you want to monitor.
 
-2.  [Get](../scom/manage-deploy-windows-agent-manually.md) the latest agent version.
+2. [Get](../scom/manage-deploy-windows-agent-manually.md) the latest agent version.
 
 ### <a name="BKMK_Import"></a>Import the DPM discovery and library management packs
+
 DPM provides the following management packs:
 
 - Reporting management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
@@ -63,7 +66,6 @@ DPM provides the following management packs:
 - Discovery and monitoring management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
 
 - Library management pack - (Microsoft.SystemCenter.DataProtectionManager.2012.Library)
-
 
 1. On the Operations Manager server, remove any existing DPM management packs.
 
@@ -102,4 +104,5 @@ DPM provides the following management packs:
 4. Follow the instructions in the Import Management Packs wizard.
 
 ## Next steps
+
 After you import the Management Packs, they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example, if you find that performance-measuring rules that are enabled degrade server performance with slow WAN links, you can disable them. When you have everything configured as needed, you can generate the DPM reports from the Operations Manager.

@@ -2,7 +2,7 @@
 title: Search and Replace Text
 description: This article describes the functionality of Search and Replace Text Activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,13 +17,12 @@ manager: jsuri
 ---
 # Search and Replace Text
 
-
-
 The Search and Replace Text activity searches for and replaces text that you specify in a text file.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
-## Configuring the Search and Replace Text Activity  
+## Configure the Search and Replace Text Activity
+
  Before you configure the Search and Replace Text activity, you need to determine the following:  
 
 - The file name you want to search in.  
@@ -47,7 +46,8 @@ Use the following information to configure the Search and Replace Text activity.
 |**Use regular expressions**|Select this option to use regular expressions in your search. |  
 |**Replacement text**|Enter the text that you want to replace the search text with.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

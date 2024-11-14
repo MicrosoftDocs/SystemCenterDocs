@@ -3,7 +3,7 @@ description: This article explains the offline backup workflow for DPM.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/24/2024
+ms.date: 11/01/2024
 title: Offline backup for DPM
 ms.subservice: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89

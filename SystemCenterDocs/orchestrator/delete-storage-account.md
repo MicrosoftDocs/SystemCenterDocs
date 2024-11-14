@@ -2,7 +2,7 @@
 title: Delete Storage Account
 description: The Delete Storage Account activity deletes the specified storage account from Azure.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 06/05/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,7 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete Storage Account
-
 
 The **Delete Storage Account** activity deletes the specified storage account from Azure. It's part of the **Azure Storage** category activity.
 

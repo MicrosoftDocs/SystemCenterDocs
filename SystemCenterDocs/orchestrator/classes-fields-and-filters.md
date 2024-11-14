@@ -1,7 +1,7 @@
 ---
 title: Classes, fields, and filters
 description: The following tables list the System Center - Service Manager integration pack classes.
-ms.date: 01/17/2018
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article

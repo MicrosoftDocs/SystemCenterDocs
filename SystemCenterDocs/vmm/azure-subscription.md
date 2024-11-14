@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2
+monikerRange: '<=sc-vmm-2022'
 ---
 
 # Add an Azure subscription in VMM

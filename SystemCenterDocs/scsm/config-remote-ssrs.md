@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -46,7 +46,6 @@ Use the following steps:
 Use the following steps:
 
 1. On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer folder for SQL server 2016.
-
 
 2. Using an XML editor of your choice (such as Notepad), open the rssrvpolicy.config file.
 
@@ -89,7 +88,6 @@ Use the following steps:
 Use the following steps:
 
 1. On the computer hosting SSRS, locate the file rsreportserver.config in the \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer folder for SQL server 2016.
-
 
 2. Using an XML editor of your choice (such as Notepad), open the rsreportserver.config file.
 

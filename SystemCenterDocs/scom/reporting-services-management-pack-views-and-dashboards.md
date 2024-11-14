@@ -5,7 +5,7 @@ description: This article explains the views and dashboards in Management Pack f
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

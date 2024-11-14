@@ -1,10 +1,10 @@
 ---
-title: Resolving Heartbeat Alerts
+title: Resolve Heartbeat Alerts
 description: This article describes how to investigate a Health Service Heartbeat Failure alert in Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/29/2019
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: b0f9ef5e-e8bf-4cd3-a358-02a7aafa82a9
 ---
 
-# Resolving heartbeat alerts
+# Resolve heartbeat alerts
 
 
 The Health Service sends a heartbeat to a management server to verify that the system is still responding. When a specified number of heartbeats fail to arrive, System Center - Operations Manager displays an alert.  
@@ -23,54 +23,54 @@ If you want to walk through these procedures, you can cause this alert by disabl
 
 ## To cause a Health Service heartbeat failure alert for testing  
 
-1.  On a computer with an agent installed, open Control Panel.  
+1. On a computer with an agent installed, open Control Panel.  
 
-2.  Double-click **Administrative Tools**.  
+2. Double-click **Administrative Tools**.  
 
-3.  Double-click **Services**.  
+3. Double-click **Services**.  
 
-4.  Right-click the **Microsoft Monitoring Agent** service, and select **Stop**.  
+4. Right-click the **Microsoft Monitoring Agent** service, and select **Stop**.  
 
     > [!NOTE]  
     > Use this same procedure and select **Start** in step 4 when you're done testing.  
 
-## How to investigate agent heartbeat issues  
+## Investigate agent heartbeat issues  
 
 The **Monitoring** workspace displays active alerts. Looking at an alert provides information and tools to investigate with.  
 
-### To investigate an active alert  
+### Investigate an active alert  
 
-1.  Open the Operations console.  
+1. Open the Operations console.  
 
-2.  Select **Monitoring**.  
+2. Select **Monitoring**.  
 
-3.  Select **Active Alerts** to view the **Health Service Heartbeat Alert**.  
+3. Select **Active Alerts** to view the **Health Service Heartbeat Alert**.  
 
     > [!NOTE]  
     > Depending on the heartbeat interval and the number of missing heartbeats, a few minutes might be required to see the alert.  
 
-4.  Select the alert to highlight it and read the information in the **Alert Details** area. The **Alert Details** area provides information about the alert, including a description and knowledge about the cause and resolution.  
+4. Select the alert to highlight it and read the information in the **Alert Details** area. The **Alert Details** area provides information about the alert, including a description and knowledge about the cause and resolution.  
 
-## How to troubleshoot agent heartbeat issues  
+## Troubleshoot agent heartbeat issues  
 
 Use the tasks in the **Tasks** pane to diagnose the cause of the alert. Different alerts have different tasks. For a Health Service Heartbeat Failure alert, the tasks deal with pinging the system and verifying or restarting the service.  
 
-### To use the action tasks in troubleshooting  
+### Use the action tasks in troubleshooting  
 
-1.  In the **Tasks** pane, under **Health Service Watcher Tasks**, select **Ping Computer**. The task opens a dialog to display its progress.  
+1. In the **Tasks** pane, under **Health Service Watcher Tasks**, select **Ping Computer**. The task opens a dialog to display its progress.  
 
     > [!NOTE]  
     > If the ping fails, use standard networking troubleshooting to figure out the issue with connectivity. Verify that the system is turned on.  
 
-2.  Select **Close** to close the dialog.  
+2. Select **Close** to close the dialog.  
 
-3.  Under **Health Service Watcher Tasks**, select **Computer Management**. A **Computer Management** dialog for the target system opens.  
+3. Under **Health Service Watcher Tasks**, select **Computer Management**. A **Computer Management** dialog for the target system opens.  
 
-4.  Select **Services and Applications** to expand it.  
+4. Select **Services and Applications** to expand it.  
 
-5.  Select **Services** to display services.  
+5. Select **Services** to display services.  
 
-6.  Right-click the **Microsoft Monitoring Agent** service, and select **Start**.  
+6. Right-click the **Microsoft Monitoring Agent** service, and select **Start**.  
 
     > [!NOTE]  
     > After the connection with the agent is restored, the alert will be automatically resolved and the computer status will return to healthy.  

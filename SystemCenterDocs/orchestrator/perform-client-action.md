@@ -2,7 +2,7 @@
 title: Perform Client Action activity
 description: Describes the configurable properties for the Perform Client Action activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/09/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 ---
 
 # Perform Client Action activity for Configuration Manager Integration Pack
-
-
 
 The Perform Client Action activity is used to initiate Configuration
 Manager client actions by communicating directly with the client. These
@@ -85,6 +83,7 @@ As this activity targets individual computers and bypasses the normal communicat
 - Timeout (Seconds).
 
 ## Perform Client Action optional properties
+
 - Authority: Sets the authority used to authenticate the specified user. Options are:
     1.  Kerberos: &lt;Principal name&gt;
     2.  NTLMDOMAIN: &lt;domain name&gt;
@@ -93,7 +92,7 @@ As this activity targets individual computers and bypasses the normal communicat
 - Password: The password for the account credentials specified in the Username property
 - Username: The account credentials with WMI access to the remote client, in the format domain\\username
 
-## Configuring the Perform Client Action activity
+## Configure the Perform Client Action activity
 
 1.  From the **Activities** pane, drag a **Perform Client Action**
     activity to the active runbook.

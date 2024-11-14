@@ -2,7 +2,7 @@
 title: Get Internet Application Status
 description: This article describes the functionality of Get Internet Application Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Get Internet Application Status
 
-
-
 The Get Internet Application Status activity checks the availability of an internet application server. You can check the availability of a Web (HTTP), Email (SMTP), Email (POP3), FTP, DNS, or custom server. You can also configure a server so that it's available after a power outage or a restart.  
 
-## Configuring the Get Internet Application Status Activity  
+## Configure the Get Internet Application Status Activity
+
  Use the following information to configure the Get Internet Application Status activity.  
 
 > [!NOTE]
@@ -35,7 +34,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Description**|Enter a detailed description of the actions of the activity.|  
 |**Type**|Select the **Type** that matches the server that you want to monitor. The options include the following:<br /><br /> -   Web (HTTP)<br />-   E-mail (SMTP)<br />-   E-mail (POP3)<br />-   FTP<br />-   DNS<br />-   Custom<br /><br /> Configuration instructions for each **Details** tab **Type** are listed in the following tables.|  
 
-### Web (HTTP) Details Tab  
+### Web (HTTP) Details Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -45,7 +44,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Check that the page contains this string**|Select and enter a string to search for when the page is retrieved from the web server. When this option is selected, the server is only considered available if the string can be found on the page that's specified by the **URL**.|  
 |**Search is case sensitive**|Select to make the string search case sensitive.|  
 
-### Email (SMTP) Details Tab  
+### Email (SMTP) Details Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -56,7 +55,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**To**|Enter the address to send the email to.|  
 |**From**|Enter the address that the email is being sent from.|  
 
-### Email (POP3) Details Tab  
+### Email (POP3) Details Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -67,7 +66,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Username**|Enter the username to use to sign in to the POP3 server.|  
 |**Password**|Enter the password that is associated with the **Username** that you've specified.|  
 
-### FTP Details Tab  
+### FTP Details Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -78,7 +77,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Username**|Enter the username to use to sign in to the FTP server.|  
 |**Password**|Enter the password that's associated with the **Username** that you've specified.|  
 
-### DNS Details Tab  
+### DNS Details Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -87,7 +86,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Port**|Select to specify the port to use to connect to the DNS server.|  
 |**Test DNS table IP address**|Select to specify a computer name and the IP address that should be associated with that IP address. When this option is selected, the server is only considered available if the IP address is assigned to the computer that you specify.|  
 
-### Custom Details Tab  
+### Custom Details Tab
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -99,7 +98,8 @@ The Get Internet Application Status activity checks the availability of an inter
 
  You can use a sequence of actions to test a custom Internet application that isn't part of the predefined list. You can perform actions such as opening and closing a port and communicating with the Internet application by sending and receiving information.  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

@@ -5,7 +5,7 @@ description: This article explains about how to enable and use nested virtualiza
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/30/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -36,6 +36,16 @@ Enable the nested virtualization on a VM and then configure it as a host.
 
 ## Before you start
 
+::: moniker range="sc-vmm-2025"
+
+Ensure the following prerequisites are met:
+
+- A Hyper-V host running Windows Server 2019/2022/2025.
+- A Hyper-V VM running Windows Server 2019/2022/2025.
+- A Hyper-V VM with configuration version 8.0 or greater.
+- An Intel processor with VT-x and EPT technology.
+
+::: moniker-end
 ::: moniker range="sc-vmm-2022"
 
 Ensure the following prerequisites are met:

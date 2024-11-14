@@ -5,16 +5,16 @@ description: This section explains how to disable monitoring of Analysis Servers
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 04/23/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
-# Disabling monitoring of specified SQL Servers and databases in Management Pack SQL Server Analysis Services
+# Disable monitoring of specified SQL Servers and databases in Management Pack SQL Server Analysis Services
 
 This section explains how to disable monitoring of SQL Servers Analysis Services and Databases.
 
-## Disabling Monitoring of Specified SQL Server Analysis Services Versions
+## Disable Monitoring of Specified SQL Server Analysis Services Versions
 
 Management Pack for SQL Server Analysis Services allows you to exclude certain versions of SQL Server Analysis Services from monitoring.
 
@@ -24,7 +24,7 @@ For example, an override "2014,2016" instructs the management pack to skip insta
 
 ![Screenshot of disabling Monitoring of Specified SQL Server Versions.](./media/analysis-services-management-pack/overriding-version-parameter.png)
 
-## Disabling Monitoring of Specified SQL Server Analysis Services Editions
+## Disable Monitoring of Specified SQL Server Analysis Services Editions
 
 Management Pack for SQL Server Analysis Services allows you to exclude certain editions of SQL Server Analysis Services instances from monitoring.
 
@@ -43,7 +43,7 @@ The following table lists short names that you can use to override the **Edition
 
 ![Screenshot of disabling Monitoring of Specified SQL Server Editions.](./media/analysis-services-management-pack/overriding-edition-parameter.png)
 
-## Disabling Monitoring of Specified Databases by Name
+## Disable Monitoring of Specified Databases by Name
 
 You can disable discovery and monitoring of databases by specifying database names in the **Exclude list** parameter available in the following discoveries:
 

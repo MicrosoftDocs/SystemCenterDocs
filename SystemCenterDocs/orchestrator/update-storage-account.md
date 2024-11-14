@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Update Storage Account
-
-
 
 The **Update Storage Account** activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Microsoft Azure. It's part of the **Azure Storage** category activity.
 

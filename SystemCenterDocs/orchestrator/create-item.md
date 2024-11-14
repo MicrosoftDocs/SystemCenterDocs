@@ -2,7 +2,7 @@
 title: Create Item
 description: The Create Item activity is used in a runbook to create new appointment, contact group, and Email Message or task items.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 09/05/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Create Item
-
-
 
 The Create Item activity is used in a runbook to create new appointments, contact groups, email messages, and task items.
 
@@ -158,10 +156,10 @@ Additionally, this article describes how to create recurring appointments and ta
 
 The integration pack provides the ability to create recurring appointments and tasks. To set up a recurring appointment or task, perform the following steps:
 
-1.  Add the optional **Recurrence** property. <br><br>
-2.  Select the desired recurrence pattern from one of the available options.<br><br>
-3.  To use a pattern other than the Daily pattern, add the optional **Recurs On These Days** property.<br><br>
-4.  Specify a value for the **Recurs On These Days** property according to the rules that are presented in the following table.<br><br>
+1. Add the optional **Recurrence** property. <br><br>
+2. Select the desired recurrence pattern from one of the available options.<br><br>
+3. To use a pattern other than the Daily pattern, add the optional **Recurs On These Days** property.<br><br>
+4. Specify a value for the **Recurs On These Days** property according to the rules that are presented in the following table.<br><br>
 
 | **Element**   | **Description**   |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

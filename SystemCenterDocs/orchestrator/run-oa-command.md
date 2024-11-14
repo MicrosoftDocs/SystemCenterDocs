@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Run OA Command
-
-
 
 The **Run OA Command** activity is used in a runbook to run a command that can be used to perform management activities, such as **Add User**, **Enable User**, and **Show Server Status**.
 

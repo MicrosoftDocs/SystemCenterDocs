@@ -5,7 +5,7 @@ description: This article provides about provisioning an SOFS in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -28,7 +28,7 @@ Here's what you need for the deployment:
 
 ### Physical computer requirements
 
-:::moniker range=">=sc-vmm-2019"
+:::moniker range="<=sc-vmm-2019"
 **Prerequisite** | **Details**
 --- | ---
 **BMC** | Each physical computer must have a baseboard management controller (BMC) installed that enables out-of-band management by VMM.<br/><br/> Through a BMC, you can access the computer remotely, independent of the operating system and control system functions such as the ability to turn the computer off or on.<br/><br/> The BMCs must use one of the supported out-of-band management protocols, and the management protocol must be enabled in the BMC settings.<br/><br/> Supported protocols: Intelligent Platform Management Interface (IPMI) versions 1.5 or 2.0; Data Center Management Interface (DCMI) version 1.0; System Management Architecture for Server Hardware (SMASH) version 1.0 over WS-Management (WS-Man); custom protocols such as Integrated Lights-Out (iLO).<br/><br/> The BMCs must use the latest version of firmware for the BMC model.<br/><br/> The BMCs must be configured with sign-in credentials and must use either static IP addressing or DHCP. If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC. For example, by using DHCP reservations.<br/><br/> The VMM management server must be able to access the network segment on which the BMCs are configured.
@@ -41,6 +41,14 @@ Here's what you need for the deployment:
 --- | ---
 **BMC** | Each physical computer must have a baseboard management controller (BMC) installed that enables out-of-band management by VMM.<br/><br/> Through a BMC, you can access the computer remotely, independent of the operating system and control system functions such as the ability to turn the computer off or on.<br/><br/> The BMCs must use one of the supported out-of-band management protocols, and the management protocol must be enabled in the BMC settings.<br/><br/> Supported protocols: Intelligent Platform Management Interface (IPMI) versions 1.5 or 2.0; Data Center Management Interface (DCMI) version 1.0; System Management Architecture for Server Hardware (SMASH) version 1.0 over WS-Management (WS-Man); custom protocols such as Integrated Lights-Out (iLO).<br/><br/> The BMCs must use the latest version of firmware for the BMC model.<br/><br/> The BMCs must be configured with sign-in credentials and must use either static IP addressing or DHCP. If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC. For example, by using DHCP reservations.<br/><br/> The VMM management server must be able to access the network segment on which the BMCs are configured.
 **Operating system** | Physical computers must be running Windows Server 2016 or later.
+**Accounts** | You'll need two Run As accounts.<br/><br/> A Run As account for joining computers to the domain, and an account for access to the BMC on each computer.
+:::moniker-end
+
+:::moniker range="sc-vmm-2025"
+**Prerequisite** | **Details**
+--- | ---
+**BMC** | Each physical computer must have a baseboard management controller (BMC) installed that enables out-of-band management by VMM.<br/><br/> Through a BMC, you can access the computer remotely, independent of the operating system and control system functions such as the ability to turn the computer off or on.<br/><br/> The BMCs must use one of the supported out-of-band management protocols, and the management protocol must be enabled in the BMC settings.<br/><br/> Supported protocols: Intelligent Platform Management Interface (IPMI) versions 1.5 or 2.0; Data Center Management Interface (DCMI) version 1.0; System Management Architecture for Server Hardware (SMASH) version 1.0 over WS-Management (WS-Man); custom protocols such as Integrated Lights-Out (iLO).<br/><br/> The BMCs must use the latest version of firmware for the BMC model.<br/><br/> The BMCs must be configured with sign-in credentials and must use either static IP addressing or DHCP. If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC. For example, by using DHCP reservations.<br/><br/> The VMM management server must be able to access the network segment on which the BMCs are configured.
+**Operating system** | Physical computers must be running Windows Server 2019 or later.
 **Accounts** | You'll need two Run As accounts.<br/><br/> A Run As account for joining computers to the domain, and an account for access to the BMC on each computer.
 :::moniker-end
 
@@ -64,6 +72,16 @@ Here's what you need for the deployment:
 **Permissions** | When you add a PXE server, you must specify account credentials for an account that has local administrator permissions on the PXE server. You can enter a user name and password or specify a Run As account. You can create the Run As account before you begin or during deployment.
 :::moniker-end
 
+:::moniker range="sc-vmm-2025"
+**Prerequisite** | **Details**
+--- | ---
+**Deployment requirements** | You must have a PXE server configured with Windows Deployment Services.<br/><br/> If you've an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM (and VMM will recognize only the resulting servers). All other requests will continue to be handled by the PXE server according to how it's configured.<br/><br/> If you don't have an existing PXE server, you can deploy the Windows Deployment Services role on a server running a supported operating system (Windows Server 2019 or later).
+**Location** | The PXE server must be in the same subnet as the physical computers that you want to provision.
+**Windows Deployment Services installation** | When you install Windows Deployment Services, you must install both the Deployment server and Transport server options. You don't need to add images.<br/><br/> During host deployment, VMM uses a virtual hard disk that you've created and stored in the library.<br/><br/> You don't need to configure settings on the PXE response tab. VMM provides its own PXE provider.
+**Permissions** | When you add a PXE server, you must specify account credentials for an account that has local administrator permissions on the PXE server. You can enter a user name and password or specify a Run As account. You can create the Run As account before you begin or during deployment.
+:::moniker-end
+
+
 ### Virtual disk and template requirements
 
 :::moniker range="<=sc-vmm-2019"
@@ -77,10 +95,23 @@ Here's what you need for the deployment:
 **Logical networks** | If you've already configured logical networks or logical switches in VMM, you can include those configurations in the physical computer profile.<br/><br/>To include static IP addressing controlled through a logical network in a physical computer profile, configure the logical network. The logical network must include at least one network site and static IP address pool.<br/><br/>The network site must also be available to the host group or to a parent host group where you want to assign the hosts that you'll be creating from bare metal.
 **Logical switch** | To use a logical switch, install all the necessary virtual switch extensions and extension providers, and create the switch before you create the physical computer profile.<br/><br/> In the logical switch, as a best practice, include one or more port classifications for the virtual ports.<br/><br/> To apply a logical switch to physical adapters in a physical computer profile, ensure that you've installed the intended number of NICs on the physical computer. </br><br/>  
 :::moniker-end
-:::moniker range="=sc-vmm-2022"
+:::moniker range="sc-vmm-2022"
+
 **Prerequisite** | **Details**
 --- | ---
 **Virtual hard disk** | Ensure that you've a generalized virtual hard disk in a VMM library share. It must be running Windows Server 2016 or later.<br/><br/> We recommend that for production servers, you use a fixed disk (.vhd or .vhdx file format) to increase performance and to help protect user data.<br/><br/> Ensure that you've a generalized virtual hard disk in a VMM library share. It must be running Windows Server 2016 or later.
+**Dynamic disk** | When you create a physical computer profile, VMM converts a dynamic disk to a fixed disk.
+**Custom drivers** | If you plan to assign custom drivers to a physical computer profile, you add them to a VMM library share in one or more folders with a .CR (custom resources) extension. VMM recognizes them as custom resources.
+**Answer file** | Like custom resources, if you want a physical computer profile to include references to an answer file (Unattend.xml file), create the answer file and add it to a VMM library share before you start deployment. For example, you might want to create an answer file to enable Remote Desktop Services and place it on a library share. Then you can select that file when you configure a physical computer profile.
+**RDS** | If you use Remote Desktop Services (RDS) to manage servers, we recommend that you enable the RDS connections in the image. You can also enable RDS using an answer file in the physical computer profile.
+**Logical networks** | If you've already configured logical networks or logical switches in VMM, you can include those configurations in the physical computer profile.<br/><br/>To include static IP addressing controlled through a logical network in a physical computer profile, configure the logical network. The logical network must include at least one network site and static IP address pool.<br/><br/>The network site must also be available to the host group or to a parent host group where you want to assign the hosts that you'll be creating from bare metal.
+**Logical switch** | To use a logical switch, install all the necessary virtual switch extensions and extension providers, and create the switch before you create the physical computer profile.<br/><br/> In the logical switch, as a best practice, include one or more port classifications for the virtual ports.<br/><br/> To apply a logical switch to physical adapters in a physical computer profile, ensure that you've installed the intended number of NICs on the physical computer. </br><br/>  
+:::moniker-end
+
+:::moniker range="sc-vmm-2025"
+**Prerequisite** | **Details**
+--- | ---
+**Virtual hard disk** | Ensure that you've a generalized virtual hard disk in a VMM library share. It must be running Windows Server 2019 or later.<br/><br/> We recommend that for production servers, you use a fixed disk (.vhd or .vhdx file format) to increase performance and to help protect user data.<br/><br/> Ensure that you've a generalized virtual hard disk in a VMM library share. It must be running Windows Server 2019 or later.
 **Dynamic disk** | When you create a physical computer profile, VMM converts a dynamic disk to a fixed disk.
 **Custom drivers** | If you plan to assign custom drivers to a physical computer profile, you add them to a VMM library share in one or more folders with a .CR (custom resources) extension. VMM recognizes them as custom resources.
 **Answer file** | Like custom resources, if you want a physical computer profile to include references to an answer file (Unattend.xml file), create the answer file and add it to a VMM library share before you start deployment. For example, you might want to create an answer file to enable Remote Desktop Services and place it on a library share. Then you can select that file when you configure a physical computer profile.

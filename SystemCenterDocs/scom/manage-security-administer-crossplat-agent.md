@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -155,9 +155,9 @@ If this file exists, the agent won't attempt to update the operating system prop
 Edit the file `scx-release` in the directory: `/etc/opt/microsoft/scx/conf`. This file has the format:  
 
 ```  
-OSName=CentOS  
-OSVersion=6.0  
-OSFullName=CentOS 6.0 (x86_64)  
+OSName=Ubuntu  
+OSVersion=24.04
+OSFullName=Ubuntu 24.04 (x86_64)
 OSAlias=UniversalR  
 OSManufacturer=  
 ```  

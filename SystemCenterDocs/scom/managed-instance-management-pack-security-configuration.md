@@ -4,7 +4,7 @@ description: Learn about the security configuration in Management Pack for Azure
 author: FKornilov
 ms.author: v-fkornilov
 manager: ebruersan
-ms.date: 08/15/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,37 +13,32 @@ ms.custom: engagement-fy23
 
 # Security configuration in Management Pack for Azure SQL Managed Instance
 
-Monitoring accounts, SQL accounts, and Microsoft Entra ID principles that Azure SQL Managed Instance Management Pack uses for monitoring should have enough permissions to access each managed instance that you specify in your monitoring templates.
+Monitoring accounts, SQL accounts, and Microsoft Entra ID principals that Azure SQL Managed Instance Management Pack uses for monitoring should have enough permissions to access each managed instance that you specify in your monitoring templates.
 
 ## Configuring SQL Instance permissions
 
-Every managed instance should have a sign-in account for the monitoring account. The account should be granted one of the following permissions:
+Every managed instance should have a sign-in account for the monitoring account. The account should be granted at least a minimum set of permissions to allow the management pack to operate (that is, in a least-privilege configuration).
 
-- System admin rights
+> [!NOTE]
+> While the sysadmin role provides all the necessary permissions for management pack operations, it is not recommended to assign this role to the monitoring user.
 
-- A minimum level of permissions to allow the management pack to operate (that is, in a least-privilege configuration)
+Create an Entra ID account for monitoring access. This account will be used by management pack to access Azure SQL Managed Instance.
 
-To configure least-privilege monitoring, use the following scripts as examples.
-
-Run the following script for every managed instance. When you deploy a new managed instance, be sure to run this script for the instance. You don't need to run the script for each new database that you create after initial execution. The script updates the *model* database so that databases that you create later have the required user. But you do need to run this script for every database that was attached or restored after you initially executed the script.
+For every Azure SQL Managed Instance create a login for the Entra ID account and use the script below as example to configure least-privilege monitoring. You don't need to run the script for each new database that you create after initial execution. The script updates the *model* database so that databases that you create later have the required user. But you do need to run this script for every database that was attached or restored after you initially executed the script.
 
 ```sql
 --First script that:
 -- - Grants server-level permissions to the monitoring account.
 -- - Creates a user and role in the master, msdb, and model databases and grants the required permissions to it.
 -- - Creates a user and role in all user databases.
---Don't forget to replace 'YOURPASSWORD' with your value in @createLoginCommand variable.
 USE [master];
 SET NOCOUNT ON
-DECLARE @accountname SYSNAME = 'MILowPriv';
+DECLARE @accountname SYSNAME = 'example-account-name';
 CREATE SERVER ROLE [MILowPriv_role];
 GRANT VIEW ANY DEFINITION TO [MILowPriv_role];
 GRANT VIEW ANY DATABASE TO [MILowPriv_role];
 GRANT ALTER ANY DATABASE TO [MILowPriv_role];
 GRANT VIEW SERVER STATE TO [MILowPriv_role];
-DECLARE @createLoginCommand nvarchar(200);
-SET @createLoginCommand = 'CREATE LOGIN '+ QUOTENAME(@accountname) + ' WITH PASSWORD=N''YOURPASSWORD'', DEFAULT_DATABASE=[master];'
-EXEC (@createLoginCommand);
 EXEC sp_addsrvrolemember @loginame = @accountname, @rolename = 'MILowPriv_role';
 DECLARE @createDatabaseUserAndRole nvarchar(max);
 SET @createDatabaseUserAndRole = '';
@@ -79,7 +74,7 @@ This script adds the monitoring account to the db_owner role, which might not be
 --Second script that adds MILowPriv user to db_owner role for master, msdb, model, and all user databases.
 --This is only to enable running DBCC checks right on SCOM (Check Catalog, Check Database, Check Disk).
 --If you don't need this functionality, don't run this script.
-DECLARE @accountname sysname = 'MILowPriv';
+DECLARE @accountname sysname = 'example-account-name';
 DECLARE @createDatabaseUserAndRole nvarchar(max);
 SET @createDatabaseUserAndRole = '';
 SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + 'USE ' + QUOTENAME(db.name) + ';

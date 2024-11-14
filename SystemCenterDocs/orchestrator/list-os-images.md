@@ -2,7 +2,7 @@
 title: List OS Images
 description: The List OS Images activity retrieves a list of the operating system images from the image repository.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

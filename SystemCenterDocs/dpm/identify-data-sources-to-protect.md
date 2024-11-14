@@ -3,7 +3,7 @@ description: This article helps you identify data sources you want to protect wi
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 title: Identify data sources you want to protect
 ms.subservice: data-protection-manager
 ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a

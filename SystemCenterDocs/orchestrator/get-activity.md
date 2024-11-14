@@ -2,7 +2,7 @@
 title: Get Activity
 description: The Get Activity activity is used to query for activity records for the selected activity class.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/21/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,7 +16,6 @@ manager: jsuri
 ---
 
 # Get Activity
-
 
 The Get Activity activity is used to query for activity records for the selected activity class.
 

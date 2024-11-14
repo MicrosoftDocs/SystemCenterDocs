@@ -13,7 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 # Create VM Activity
 
@@ -64,18 +64,18 @@ The activity publishes all the data from the required and optional properties in
 | Virtual Disk Size (GB)  | The size of the virtual hard disk assigned to this virtual machine.   | Integer   |
 | Virtual Machine Name   | The name of the virtual machine as it appears in the vSphere user interface.   | String   |
 
-## Configuring the Create VM Activity
+## Configure the Create VM Activity
 
 The following procedure describes the steps required to configure a Create VM activity.
 
-1.  From the **Activities** pane, drag a **Create VM** activity to the active runbook.
+1. From the **Activities** pane, drag a **Create VM** activity to the active runbook.
 
-2.  Double-click the **Create VM** activity icon. The **Properties** dialog opens.
+2. Double-click the **Create VM** activity icon. The **Properties** dialog opens.
 
-3.  Configure the settings in the **Properties** tab as follows:
+3. Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    1. In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2. In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Select **Finish**.
+4. Select **Finish**.

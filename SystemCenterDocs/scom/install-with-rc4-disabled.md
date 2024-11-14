@@ -5,14 +5,14 @@ description: This article describes Operations Manager installation with RC4 dis
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/18/2021
+ms.date: 11/01/2024
 ms.custom: na, intro-installation, UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to disable RC4 while installing Operations Manager?
+# Disable RC4 while installing Operations Manager
 
 
 
@@ -25,7 +25,6 @@ When you install Operations Manager in a security hardened environment, the setu
 In a disabled RC4 environment, when you try to install Operations Manager, you can't pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section aren't implemented, and you'll see the following error in the Operations Manager setup:
 
 ![Screenshot of the Error in operations manager setup.](./media/protocol-disabled/error-operations-manager-setup.png)
-
 
 Operations Manager internally uses a Windows Security API as part of its credential validation process and the requested encryption type isn't supported by the KDC. The client and service should support the same type of encryption for communication.
 
@@ -51,17 +50,14 @@ In an environment that has RC4 disabled, ensure the following steps are implemen
 
    ![Screenshot of the AES Attributes enabled on the Domain Controller.](./media/protocol-disabled/attributes-domain-controller.png)
 
-
 2. AES Encryption type is allowed for Kerberos on the computer where Management Server needs to be installed. On the Management Server, go to **Local Group Policy Editor** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Network security: Configure encryption types allowed for Kerberos** > **Enable AES Encryption**
    - Check **AES128_HMAC_SHA1**
    - Check **AES256_HMAC_SHA1**
 
    ![Screenshot of the AES encryption type.](./media/protocol-disabled/aes-encryption.png)
 
-
 > [!NOTE]
 > If the Agent and Management Server are in different domains from the same forest (Child/Parent domain), follow [Method 3: Configure the trust to support AES128 and AES 256 encryption instead of RC4 encryption](/troubleshoot/windows-server/windows-security/unsupported-etype-error-accessing-trusted-domain).
-
 
 ## Disable RC4 in Operations Manager
 

@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
 
@@ -29,7 +29,7 @@ Installation of Reporting and Web Console will be successful irrespective of the
 
 ::: moniker-end
 
-::: moniker range="=sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 >[!NOTE]
 > Operations Manager supports a single installer for all supported languages, instead of language-specific installers. The installer automatically selects the language based on the computer's language settings where you are installing it.
@@ -68,9 +68,9 @@ EXEC [apm].GrantRWPermissionsToComputer N'[LOGIN]'
 
 The local and remote parameters are as follows:
 
--   For local installation, the LOGIN is: IIS APPPOOL\OperationsManagerAppMonitoring
+- For local installation, the LOGIN is: IIS APPPOOL\OperationsManagerAppMonitoring
 
--   For remote installation, the LOGIN is: Domain\MachineName$
+- For remote installation, the LOGIN is: Domain\MachineName$
 
 > [!NOTE]
 > If you run **Repair** on the web console after installation, the settings that were selected during installation will be restored. Any changes that you manually make to the web console configuration after the installation will be reset.
@@ -124,13 +124,13 @@ The local and remote parameters are as follows:
     > [!NOTE]
     > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
 
-10. On the **Diagnostic and Usage Data** page, review data collection terms and then select **Next** to continue.  
+11. On the **Diagnostic and Usage Data** page, review data collection terms and then select **Next** to continue.  
 
-11. If Microsoft Update isn't enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and select **Next**.
+12. If Microsoft Update isn't enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and select **Next**.
 
-12. Review your selections on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
+13. Review your selections on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
 
-13. When Setup is finished, the **Setup is complete** page appears. Select **Close**.
+14. When Setup is finished, the **Setup is complete** page appears. Select **Close**.
 
 ### Install the Web console on an existing Management server
 
@@ -219,6 +219,60 @@ The following steps are for configuring permission inheritance for the System Ce
 ::: moniker-end
 
 All information and content at https://techcommunity.microsoft.com/t5/system-center-blog/running-the-web-console-server-on-a-standalone-server-using/ba-p/340345 is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
+
+## Configure the IIS Application Pool Identity
+
+By default, the IIS application pool identity of the Web Console is the built-in account named **ApplicationPoolIdentity**. When connecting to SQL, this account uses the Windows computer login to access the Operations Manager databases. To improve security, it is recommended that you change the Web Console identity to a dedicated Active Directory user account.
+
+To change the Web Console identity, follow these steps:
+
+1. Create a user account in Active Directory to use as the Web Console identity.
+
+1. Add the user to the local Administrators group on the Web Console server.
+
+1. Open **Local Security Policy** on the Web Console server, expand **Security Settings** > **Local Policies** > **User Rights Assignment** and grant the following rights to the user:
+
+   1. **Log on as a service**
+   
+   1. **Generate security audits**
+   
+   1. **Replace a process level token**
+   
+1. Open **SQL Server Management Studio** and connect to the SQL instance that hosts the OperationsManager database.
+
+1. Expand **Security**, right-click **Logins** and select **New Login**.
+
+1. For **Login name**, enter the username of the account you created in Step 1 using *domain*\\*user* format. Alternatively, select **Search** and search Active Directory for the account.
+
+1. Select **User Mapping**.
+
+1. Select the **OperationsManager** database, make sure that the **public** role membership is selected in the lower pane and select **OK**.
+
+1. Repeat steps 4-8 for the OperationsManagerDW database.
+
+1. On the Web Console server, open **IIS Manager** and select **Application Pools**.
+
+1. Right-click **DefaultAppPool** and select **Advanced Settings**.
+
+1. In Advanced Settings, find the **Identity** setting and select the three dots next to **ApplicationPoolIdentity**.
+
+1. Select **Custom account** and select **Set**.
+
+1. Enter the username in *domain*\\*user* format and the password of the account you created in Step 1 and select **OK** three times to return to the main IIS Manager window.
+
+1. Repeat Steps 11-14 for the following application pools:
+
+   1. MonitoringView
+   
+   1. OperationsManager
+   
+   1. OperationsManagerAppMonitoring
+   
+1. Return to **SQL Server Management Studio** and connect to the SQL instance that hosts the OperationsManager database.
+
+1. Expand **Security** > **Logins,** find the computer account of the Web Console server and delete or disable the login.
+
+1. Repeat Steps 16-17 for the OperationsManagerDW database.
 
 ## Next steps
 

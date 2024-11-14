@@ -4,7 +4,7 @@ description: This article provides an overview of dashboards in Operations Manag
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -17,14 +17,13 @@ ms.topic: article
 
 A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define many configurations of cells that can each contain a widget of your choice.
 
-
 ::: moniker range="=sc-om-2019"
 
 Operations Manager 2019 UR2 and later support folders' creation in web console, inside which you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md).
 
 ::: moniker-end
 
-::: moniker range="=sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Operations Manager supports folders' creation in web console, inside which you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md).
 
@@ -61,7 +60,7 @@ Summary Dashboards include the following widgets.  
 - State Widget (State)
 - Alert Widget (Alert)
 
-### Object state 
+### Object state
 
 An Object State dashboard includes multiple widgets showing information about a particular object or group. You can't configure the individual widgets but can edit the configuration of the dashboard to define the target object or group that all the widgets will include in addition to the criteria for included alerts.  
 
@@ -71,7 +70,7 @@ Object State dashboards include the following widgets.  
 - State Tiles Widget (Host) showing the health state and open alert count for the target object's host. 
   > [!NOTE]
   > If you selected an unhosted target such as a group or a distributed application for the dashboard, this widget will be empty.  
-- State Widget (Contained objects) showing the health state of any objects contained by the target.  If the target is a group, then this will be the members of the group.  If the target has no contained objects, then this widget will be empty.   
+- State Widget (Contained objects) showing the health state of any objects contained by the target.  If the target is a group, then this will be the members of the group.  If the target has no contained objects, then this widget will be empty.
 Instance Details Widget (Object Details) that displays the details of the target object or group.  
 - Alert Widget (Alerts) showing the active alerts for the target and any of its contained objects. If the target is a group, then alerts from the members of the group are included. You set the criteria for which alerts are included in the configuration for the dashboard itself instead of for this individual widget.
 

@@ -5,7 +5,7 @@ description: This article describes how to set up the VMM library in a highly av
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -72,4 +72,4 @@ If you want to build a guest cluster to deploy the file server, read Rudolf Vese
 
 ## Next steps
 
-[Set up TLS for VMM](./install-tls.md).
+[Set up TLS for VMM](./install-tls-13.md).

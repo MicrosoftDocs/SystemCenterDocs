@@ -2,7 +2,7 @@
 title: Delete Blob
 description: The Delete Blob marks the specified blob or snapshot for deletion.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 05/16/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Delete Blob
-
-
 
 The **Delete Blob** marks the specified blob or snapshot for deletion. It's part of the **Azure Storage** category activity.
 

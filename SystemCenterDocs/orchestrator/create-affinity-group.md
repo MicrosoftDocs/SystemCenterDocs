@@ -2,7 +2,7 @@
 title: Create Affinity Group
 description: The Create Affinity Group activity creates a new affinity group for the specified subscription.
 ms.custom: UpdateFrequency2
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # Create Affinity Group
-
-
 
 The **Create Affinity Group** activity creates a new affinity group for the specified subscription. It's part of the **Azure Cloud Services** category activity.
 

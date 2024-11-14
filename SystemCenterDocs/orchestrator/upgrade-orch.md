@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Orc
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/28/2023
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
@@ -13,6 +13,16 @@ ms.custom: UpdateFrequency.5
 ---
 
 # Upgrade System Center Orchestrator
+
+::: moniker range="sc-orch-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article provides the upgrade information for System Center 2025 - Orchestrator.
+
+[!INCLUDE [upgrade-to-orch-2025.md](../includes/upgrade-to-orch-2025.md)]
+
+::: moniker-end
 
 
 ::: moniker range="sc-orch-2022"

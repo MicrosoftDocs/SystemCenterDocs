@@ -14,10 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Snapshot Blob
-
 
 The **Snapshot Blob** activity creates a read-only snapshot of a blob. It's part of the **Azure Storage** category activity.
 

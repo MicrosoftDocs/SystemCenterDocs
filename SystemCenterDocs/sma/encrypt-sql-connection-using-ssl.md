@@ -5,7 +5,7 @@ description: This article provides information about how to encrypt SMA web serv
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  09/17/2024
+ms.date: 11/01/2024
 ms.topic:  article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Encrypt SMA network traffic
-
-
 
 This article provides information about how to encrypt SMA Web Service to SQL connection by using Secure Socket Layer (SSL) and encrypt the network traffic between runbook worker and SQL database.
 
@@ -25,27 +23,29 @@ This article provides information about how to encrypt SMA Web Service to SQL co
 
 Use the following procedure to securely connect SMA web service with the SQL server:
 
-1.	Open an elevated PowerShell console.
-2.	Navigate to your .NET Framework home directory (for example, C:\Windows\Microsoft.NET\Framework64\v4.0.30319).
-3.	Decrypt the config file section using the following command:
+1. Open an elevated PowerShell console.
+2. Navigate to your .NET Framework home directory (for example, C:\Windows\Microsoft.NET\Framework64\v4.0.30319).
+3. Decrypt the config file section using the following command:
 
     ```powershell
     .\aspnet_regiis.exe -pdf "connectionStrings" 'C:\inetpub\Service Management Automation'
     ```
+
     ![Screenshot of the Decrypt config file.](./media/encrypt-sma-web-service/decrypt-config-file.png)
 
-4.	Open the web.config file in Notepad from the path **C:\inet\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
+4. Open the web.config file in Notepad from the path **C:\inet\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
 
     ![Screenshot of the Append connection.](./media/encrypt-sma-web-service/append-connection.png)
 
-5.	Encrypt the Config file section by running the following command:
+5. Encrypt the Config file section by running the following command:
 
     ```powershell
     .\aspnet_regiis.exe -pef "connectionStrings" 'C:\inetpub\Service Management Automation'
     ```
+
     ![Screenshot of the Encrypt config file.](./media/encrypt-sma-web-service/encrypt-config-file.png)
 
-6.	Restart the SMA App Pool from **Computer Management**> **Service and Applications** > **Internet Information Service(IIS) Manager**.
+6. Restart the SMA App Pool from **Computer Management**> **Service and Applications** > **Internet Information Service(IIS) Manager**.
 
 ## Encrypt SMA Runbook worker connection
 
@@ -54,9 +54,7 @@ Use the following steps to secure the connection between Runbook worker and the 
 >[!NOTE]
 > To encrypt the connection, you must run these steps on each of the Runbook worker computers.
 
-
 1. Navigate to the installation path of SMA and locate the `Orchestrator.Settings.config` file.
-
 2. Add the following under the (root) `configuration` key:
 
   ```xml
@@ -69,18 +67,12 @@ Use the following steps to secure the connection between Runbook worker and the 
       </connectionStrings>
     ...
     </configuration>
-```
+  ```
 
 3. The `connectionString` depends on your authentication settings:
-   - If using Integrated Windows authentication (without an SQL user/password):
+   - Use Integrated Windows authentication (without an SQL user/password):
 
      `Data Source=<database-server-hostname>;Database=<SMA-database-name>;Integrated Security=True;MultipleActiveResultSets=False;Encrypt=True;`
-
-   - If using SQL user/password:
-
-     `Data Source=<database-server-hostname>;Database=<SMA-database-name>;User ID=<username>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;`
-
-     For more information, see [SqlClient Connection Strings](/dotnet/framework/data/adonet/connection-string-syntax#sqlclient-connection-strings).
 
 4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate isn't installed on the worker computer.
 

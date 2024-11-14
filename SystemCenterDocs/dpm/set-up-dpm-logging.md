@@ -3,7 +3,7 @@ description: This article describes logging in DPM.
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/27/2024
+ms.date: 11/01/2024
 title: Set up DPM logging
 ms.subservice: data-protection-manager
 ms.assetid: 710459cd-75ec-4052-9199-c45828cbc19b
@@ -23,12 +23,24 @@ System Center Data Protection Manager (DPM) logs activity in log files (\*.errlo
 
      :::image type="content" source="media/set-up-dpm-logging/cmd.png" alt-text="Screenshot of command prompt.":::
 
-     Based on the above output, the logs will be in the following locations:
-         
-     - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPMLogs*.
-     - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPM\Temp*.
+::: moniker range="<=sc-dpm-2022"
 
--   **Protected client activity**: Logged on the client computer at %ProgramFiles%\Microsoft Data Protection Manager\DPM\Temp Logs. Client-initiated activities, such as self-service recovery, are logged on the client computer based on the user (%USERPROFILE%\AppData\Roaming\Microsoft\System Center Data Protection Manager\\).
+Based on the above output, the logs will be in the following locations:
+         
+   - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPMLogs*.
+   - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2022\DPM\DPM\Temp*.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+Based on the above output, the logs will be in the following locations:
+         
+   - DPM installation information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2025\DPM\DPMLogs*.
+   - DPM activity information: Logged on the DPM server at *%ProgramFiles%\Microsoft System Center 2025\DPM\DPM\Temp*.
+
+::: moniker-end
+
+- **Protected client activity**: Logged on the client computer at %ProgramFiles%\Microsoft Data Protection Manager\DPM\Temp Logs. Client-initiated activities, such as self-service recovery, are logged on the client computer based on the user (%USERPROFILE%\AppData\Roaming\Microsoft\System Center Data Protection Manager\\).
 
 You can tweak log file settings as follows:
 
@@ -40,8 +52,8 @@ You can tweak log file settings as follows:
 |\<binary\>TraceLogMaxNumber|DWORD|Maximum number of log files to retain<br /><br />30 by default<br /><br />The current number of log files is tracked in HKLM\Software\Microsoft\Microsoft Data Protection Manager: \<binary\>TraceLogNextNum (DWORD). This is an internal registry key, and we recommend that you don't modify it.|
 
 ## <a name="BKMK_Binary"></a>Binary and service mapping
-Mappings between some of the log binary names and services are summarized in the following table.
 
+Mappings between some of the log binary names and services are summarized in the following table.
 
 |                    Service/Process                    |      Binary name       |                                                                                                                             Details                                                                                                                              |
 |-------------------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

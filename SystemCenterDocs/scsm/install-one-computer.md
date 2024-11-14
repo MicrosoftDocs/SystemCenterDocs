@@ -1,11 +1,11 @@
 ---
-title: Install System Center - Service Manager on a single computer (minimum configuration)
+title: Install Service Manager on a single computer
 description: This article helps you to evaluate System Center - Service Manager when you want to install it on one computer.
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -57,14 +57,14 @@ For more information about the permissions that these accounts require, see **Ac
 7. On the **Configure the Service Manager database** page, Service Manager checks the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance is displayed, select **Next**.  
 
    > [!IMPORTANT]  
-   >  A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
+   > A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure the Service Manager management group** page, complete these steps:  
 
    1. In the **Management group name** box, enter a unique name for the management group.  
 
        > [!IMPORTANT]  
-       >  Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
+       > Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
 
    2. Select **Browse**, enter the user account or group to which you want to give Service Manager administrative credentials, and select **Next**.  
 
@@ -97,7 +97,7 @@ For more information about the permissions that these accounts require, see **Ac
 7. On the **Configure data warehouse databases** page, in the **Database server** box, enter the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, and select **Next**.  
 
    > [!IMPORTANT]  
-   >  A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see [Planning Guide for System Center - Service Manager](plan-sm.md).  
+   > A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8. On the **Configure additional data warehouse datamarts** page, Service Manager will check the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, select **Next**.  
 
@@ -106,13 +106,13 @@ For more information about the permissions that these accounts require, see **Ac
     1. In the **Management group name** box, enter a unique name for the group.  
 
         > [!IMPORTANT]  
-        >  Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
+        > Management group names must be unique. Don't use the same management group name when you deploy a Service Manager management server and a Service Manager data warehouse management server. Furthermore, don't use the management group name that is used for Operations Manager.  
 
     2. Select **Browse**, enter the user account or group to which you want to give Service Manager administrative credentials, and select **Next**.  
 
 10. On the **Configure the reporting server for the data warehouse** page, Service Manager will use the existing computer if SQL Server Reporting Services \(SSRS\) is present. Accept the defaults, and select **Next**.  
 
-    > [!NOTE] 
+    > [!NOTE]
     > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](./config-remote-ssrs.md).
     > - The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented can't be resolved in your environment, configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information, see [How to: Configure a URL \(Reporting Services Configuration\)](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
 
@@ -125,7 +125,7 @@ For more information about the permissions that these accounts require, see **Ac
 14. On the **Configure Analysis Services credential** page, select a domain account; select **Domain account**; specify the user name, password, and domain for the account; and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**.  
 
     > [!NOTE]  
-    >  The account that you specify here must have administrator rights on the computer that hosts SSRS.  
+    > The account that you specify here must have administrator rights on the computer that hosts SSRS.  
 
 15. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, select **Privacy statement for System Center Service Manager**, and select **Next**.  
 

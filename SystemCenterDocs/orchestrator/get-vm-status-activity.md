@@ -12,7 +12,7 @@ ms.assetid: 912dfce9-c159-4de2-853b-c47fc161b5ca
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ---
 
 # Get VM Status Activity
@@ -52,7 +52,7 @@ No optional properties are provided for this activity.
 | VM Path   | The full path of the virtual machine on the vCenter server.   | String   |
 | VM UUID   | The UUID of the virtual machine as assigned by the vCenter server.   | String   |
 
-## Configuring the Get VM Status Activity
+## Configure the Get VM Status Activity
 
 The following procedure describes the steps required to configure a Get VM Status activity.
 
