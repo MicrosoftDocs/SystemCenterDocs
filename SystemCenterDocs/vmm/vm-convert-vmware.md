@@ -121,7 +121,6 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 [-NetworkTag <string>] [-RunAsynchronously] [-PROTipID <guid>] [-JobVariable <string>]  [<CommonParameters>]
 ```
 
-
 ## Convert your VMware VMs to Hyper-V at-scale using PowerShell scripts
 
 >[!Note]
