@@ -45,7 +45,7 @@ VMM server to storage management service | WMI | Local call |
 Storage management service to SMI-S provider | CIM-XML | Provider-specific |
 VMM server to Baseboard Management Controller (BMC) | 443: HTTP (SMASH over WS-Management) | Inbound rule on BMC device | Modify on BMC device
 VMM server to Baseboard Management Controller (BMC) | 623: IPMI | Inbound rule on BMC device | Modify on BMC device  
-VMM server to Windows PE agent | 8101:WCF; 8103:WCF | 8101 is used for control channel, 8103 is used for time sync | Modify in VMM setup
+VMM server to Windows PE agent | 8101:WCF; 8103:WCF | 8101 is used for control channel; 8103 is used for time sync | Modify in VMM setup
 VMM server to WDS PXE provider | | 8102: WCF | Inbound rule on PXE server |
 VMM server to Hyper-V host in untrusted/perimeter domain | 443:HTTPS (BITS) | BITS data channel for file transfers<br/><br/> Inbound rule on VMM server |
 Library server to Hyper-V host in untrusted/perimeter domain | 443:HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on VMM library |
