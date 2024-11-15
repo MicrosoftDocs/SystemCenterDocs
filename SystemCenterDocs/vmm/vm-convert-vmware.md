@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2024
+ms.date: 11/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -28,7 +28,6 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 >- VMware VMs with vSAN storage can’t be converted to Hyper-V with SCVMM.
 >- Online conversions aren't supported through SCVMM.
 >- We recommend upgrading to VMM 2025 to convert your VMware VMs to Hyper-V four times faster and to have an enhanced conversion experience.
-
 
 ## Start by bringing your vCenter server and the source ESXi hosts under SCVMM management
 
@@ -61,19 +60,19 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 8.	In the **Add Resource Wizard**,<br>
     a. Under **Credentials**, select the Run as account with administrator privileges on the ESXi host to be added and select **Next**.<br>
 
-    :::image type="content" source="media/vm-convert-vmware/add-resource-wizard.png" alt-text="Screenshot of add resource wizard page." lightbox="media/vm-convert-vmware/add-resource-wizard.png":::
+      :::image type="content" source="media/vm-convert-vmware/add-resource-wizard.png" alt-text="Screenshot of add resource wizard page." lightbox="media/vm-convert-vmware/add-resource-wizard.png":::
 
     b.	Under **Target Resources**, select all the ESX clusters that need to be added to VMM and select **Next**.
 
-    :::image type="content" source="media/vm-convert-vmware/select-esx-computers.png" alt-text="Screenshot of select ESX computers page." lightbox="media/vm-convert-vmware/select-esx-computers.png":::
+      :::image type="content" source="media/vm-convert-vmware/select-esx-computers.png" alt-text="Screenshot of select ESX computers page." lightbox="media/vm-convert-vmware/select-esx-computers.png":::
 
     c.	Under **Host Settings**, select the host group where you want to add the VMs and select **Next**.
 
       :::image type="content" source="media/vm-convert-vmware/add-virtual-machine-path.png" alt-text="Screenshot of add virtual machine path page." lightbox="media/vm-convert-vmware/add-virtual-machine-path.png":::
 
-    d.	Under **Summary**, review the settings and select **Finish**. Along with the hosts, associated VMs will also get added.
+    d. Under **Summary**, review the settings and select **Finish**. Along with the hosts, associated VMs will also get added.
  
-    :::image type="content" source="media/vm-convert-vmware/confirm-settings.png" alt-text="Screenshot of confirm settings page." lightbox="media/vm-convert-vmware/confirm-settings.png":::
+      :::image type="content" source="media/vm-convert-vmware/confirm-settings.png" alt-text="Screenshot of confirm settings page." lightbox="media/vm-convert-vmware/confirm-settings.png":::
 
 ## Convert your VMware VMs to Hyper-V
 
@@ -95,10 +94,10 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 8.	Select **Create** to start the conversion. Verify the VM's conversion in **VMs and Services > Home > Show > VMs**.
 
-    >[!Note]
-    >After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
-    >- `Set-StorageSetting -NewDiskPolicy OfflineShared`: To have all the new shared bus disks offline and all the new local bus disks online
-    >- `Set-StorageSetting -NewDiskPolicy OnlineAll`: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
+>[!Note]
+>After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
+>- `Set-StorageSetting -NewDiskPolicy OfflineShared`: To have all the new shared bus disks offline and all the new local bus disks online
+>- `Set-StorageSetting -NewDiskPolicy OnlineAll`: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
 
 ## Convert using PowerShell cmdlet
 
@@ -119,22 +118,15 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 [-NetworkTag <string>] [-RunAsynchronously] [-PROTipID <guid>] [-JobVariable <string>]  [<CommonParameters>]
 ```
 
-## Convert your VMware VMs to Hyper-V at-scale using PowerShell scripts
-
 >[!Note]
 > We recommend that no more than ten conversions be triggered parallelly from the same ESXi source to the same Hyper-V destination. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel, with the remaining conversions queued. However, we recommend staging the VM conversions in smaller batches for higher efficiency.
 
-PowerShell script-based conversion allows you to automate your conversion process and perform at-scale conversions. PowerShell commands also allow you to provide the disk type for the target Hyper-V VM, which enables the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk, based on the requirements. Here's a sample PowerShell script to convert five VMs - VM1, VM2, VM3, VM4, VM5:
-
-*Sample script with appropriate values*
-
 >[!Note]
->Third-party migration options are provided by Microsoft partners. These options are available to you at an additional cost but may help in reducing the VM downtime during migration. The following third-party migration options are available:<br>
+>Non-Microsoft migration options are provided by Microsoft partners. These options are available to you at an additional cost but can help reduce the VM downtime during migration. The following non-Microsoft migration options are available:<br>
 >- [Commvault](https://documentation.commvault.com/11.20/converting_from_vmware_to_hyper_v.html)
 >- [Zerto](https://www.zerto.com/blog/migrations-data-mobility/how-to-easily-migrate-from-vmware-to-hyper-v-with-zerto/)
 >- [Veeam](https://www.veeam.com/blog/vmware-to-hyper-v-migration.html)
 >- [Carbonite](https://www.carbonite.com/business/products/migration/)
-
 
 ## Next steps
 
