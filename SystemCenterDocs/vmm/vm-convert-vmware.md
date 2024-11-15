@@ -80,7 +80,7 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 1. Ensure the VMware VMs that are to be converted are in the **Stopped** state and that there aren’t snapshots associated with them.
 
-2.	Select **VMs and Services > Home > Create > Create Virtual Machines > Convert Virtual Machine**.
+2.	Select **VMs and Services > Home > Convert Virtual Machine**.
 
 3.	In **Convert Virtual Machine** wizard > **Select Source**, select **Browse**, and in **Select Virtual Machine Source**, select the VMware VM you want to convert.
 
