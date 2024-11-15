@@ -37,13 +37,13 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
  
 2.	In the VMM console, under **Fabric**, select **Servers > Add VMware vCenter Server**.
 
-    :::image type="content" source="media/vm-convert-vmware/add-vmware-vcenter-server.png" alt-text="Screenshot of add VMware vcenter server option." lightbox="media/vm-convert-vmware/add-vmware-vcenter-server.png":::
+    :::image type="content" source="media/vm-convert-vmware/add-vmware-vcenter-server.png" alt-text="Screenshot of add VMware vCenter server option." lightbox="media/vm-convert-vmware/add-vmware-vcenter-server.png":::
 
 3.	In the **Add VMware vCenter Server** page, do the following:<br>
   a. **Computer name**: Specify the vCenter server name.<br>
   b. **Run As account**: Select the Run As account created for vSphere administrator.<br>
 
-      :::image type="content" source="media/vm-convert-vmware/specify-vcenter-server.png" alt-text="Screenshot of specify vcenter server page." lightbox="media/vm-convert-vmware/specify-vcenter-server.png":::
+      :::image type="content" source="media/vm-convert-vmware/specify-vcenter-server.png" alt-text="Screenshot of specify vCenter server page." lightbox="media/vm-convert-vmware/specify-vcenter-server.png":::
 
 4.	Select **Finish**.
 
