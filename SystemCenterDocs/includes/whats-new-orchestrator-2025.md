@@ -30,4 +30,4 @@ System Center Orchestrator 2025 supports Transport Security Layer (TLS) protocol
 
 ### Support for Group Managed Service Accounts (gMSA)
 
-System Center Orchestrator now supports Group Managed Service Accounts (gMSA).
+System Center Orchestrator now supports Group Managed Service Accounts (gMSA). [Learn more](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/group-managed-service-accounts-overview).
