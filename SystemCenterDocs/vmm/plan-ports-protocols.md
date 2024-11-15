@@ -5,7 +5,7 @@ description: This article provides information about the ports and protocols use
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/14/2024
+ms.date: 11/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -29,29 +29,29 @@ As part of your System Center Virtual Machine Manager (VMM) deployment, you need
 **Connect** |  **Port/protocol** | **Details** | **Configure**
 --- | --- | --- | ---
 VMM server to VMM agent on Windows Server-based hosts/remote library server | 80: WinRM; 135: RPC; 139: NetBIOS;   445: SMB (over TCP)| Used by the VMM agent <br/><br/> Inbound rule on hosts | Can't modify
-VMM server to VMM agent on Windows Server-based hosts/remote library server | 443:HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on hosts | Modify in VMM setup
-VMM server to VMM agent on Windows Server-based hosts/remote library server | 5985:WinRM | Control channel<br/><br/> Inbound rule on hosts | Modify in VMM setup
-VMM server to VMM agent on Windows Server-based hosts/remote library server | 5986:WinRM | Control channel (SSL)<br/><br/> Inbound rule on hosts | Can't modify
-VMM server to VMM guest agent (VM data channel) | 443:HTTPS | BITS data channel for file transfers<br/><br/>Inbound rule on machines running the agent<br/><br/> The VMM guest agent is a special version of the VMM agent. It's installed on VMs that are part of a service template and on Linux VMs (with or without a service template). | Can't modify
-VMM server to VMM guest agent (VM control channel) | 5985:WinRM | Control channel<br/><br/> Inbound rule on machines running the agent | Can't modify
-VMM host to host | 443:HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on hosts and VMM server | Modify in VMM setup
-VMM server to VMware ESXi servers/Web Services | 22:SFTP<br/><br/> Inbound rule on hosts | Can't modify
-VMM server to load balancer | 80:HTTP; 443:HTTPS | Channel used for load balancer management | Modify in load balancer provider
-VMM server to remote SQL Server database | 1433:TDS | SQL Server listener<br/><br/> Inbound rule on SQL Server | Modify in VMM setup
-VMM server to WSUS update servers | 80/8530:HTTP; 443/8531:HTTPS | Data and control channels<br/><br/> Inbound rule on WSUS server | Can't modify from VMM
-VMM library server to Hyper-V hosts | 443:HTTPS | BITS data channel for file transfers<br/><br/>Inbound rule on hosts - 443 | Modify in VMM setup
-VMM console to VMM | WCF:8100 (HTTP); WCF:8101 (HTTPS); Net.TCP: 8102 | Inbound rule on VMM console machine | Modify in VMM setup
+VMM server to VMM agent on Windows Server-based hosts/remote library server | 443: HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on hosts | Modify in VMM setup
+VMM server to VMM agent on Windows Server-based hosts/remote library server | 5985: WinRM | Control channel<br/><br/> Inbound rule on hosts | Modify in VMM setup
+VMM server to VMM agent on Windows Server-based hosts/remote library server | 5986: WinRM | Control channel (SSL)<br/><br/> Inbound rule on hosts | Can't modify
+VMM server to VMM guest agent (VM data channel) | 443: HTTPS | BITS data channel for file transfers<br/><br/>Inbound rule on machines running the agent<br/><br/> The VMM guest agent is a special version of the VMM agent. It's installed on VMs that are part of a service template and on Linux VMs (with or without a service template). | Can't modify
+VMM server to VMM guest agent (VM control channel) | 5985: WinRM | Control channel<br/><br/> Inbound rule on machines running the agent | Can't modify
+VMM host to host | 443: HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on hosts and VMM server | Modify in VMM setup
+VMM server to VMware ESXi servers/Web Services | 22: SFTP<br/><br/> Inbound rule on hosts | Can't modify
+VMM server to load balancer | 80: HTTP; 443: HTTPS | Channel used for load balancer management | Modify in load balancer provider
+VMM server to remote SQL Server database | 1433: TDS | SQL Server listener<br/><br/> Inbound rule on SQL Server | Modify in VMM setup
+VMM server to WSUS update servers | 80/8530: HTTP; 443/8531: HTTPS | Data and control channels<br/><br/> Inbound rule on WSUS server | Can't modify from VMM
+VMM library server to Hyper-V hosts | 443: HTTPS | BITS data channel for file transfers<br/><br/>Inbound rule on hosts - 443 | Modify in VMM setup
+VMM console to VMM | WCF: 8100 (HTTP); WCF: 8101 (HTTPS); Net.TCP: 8102 | Inbound rule on VMM console machine | Modify in VMM setup
 VMM server to storage management service | WMI | Local call |  
 Storage management service to SMI-S provider | CIM-XML | Provider-specific |
 VMM server to Baseboard Management Controller (BMC) | 443: HTTP (SMASH over WS-Management) | Inbound rule on BMC device | Modify on BMC device
 VMM server to Baseboard Management Controller (BMC) | 623: IPMI | Inbound rule on BMC device | Modify on BMC device  
-VMM server to Windows PE agent | 8101:WCF; 8103:WCF | 8101 is used for control channel; 8103 is used for time sync | Modify in VMM setup
+VMM server to Windows PE agent | 8101: WCF; 8103: WCF | 8101 is used for control channel; 8103 is used for time sync | Modify in VMM setup
 VMM server to WDS PXE provider | | 8102: WCF | Inbound rule on PXE server |
-VMM server to Hyper-V host in untrusted/perimeter domain | 443:HTTPS (BITS) | BITS data channel for file transfers<br/><br/> Inbound rule on VMM server |
-Library server to Hyper-V host in untrusted/perimeter domain | 443:HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on VMM library |
+VMM server to Hyper-V host in untrusted/perimeter domain | 443: HTTPS (BITS) | BITS data channel for file transfers<br/><br/> Inbound rule on VMM server |
+Library server to Hyper-V host in untrusted/perimeter domain | 443: HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on VMM library |
 VMM server to Windows file server | 80: WinRM; 135: RPC; 139: NetBIOS; 445: SMB (over TCP) | Used by the VMM agent<br/><br/> Inbound rule on file server |
-VMM server to Windows file server | 443:HTTPS | BITS used for file transfer<br/><br/> Inbound rule on file server |
-VMM server to Windows file server | 5985/5986:WinRM | Control channel<br/><br/> Inbound rule on file server |
+VMM server to Windows file server | 443: HTTPS | BITS used for file transfer<br/><br/> Inbound rule on file server |
+VMM server to Windows file server | 5985/5986: WinRM | Control channel<br/><br/> Inbound rule on file server |
 
 ## VMware vCenter server and ESXi hosts management related ports and protocol exceptions
 
@@ -60,8 +60,8 @@ VMM server to Windows file server | 5985/5986:WinRM | Control channel<br/><br/> 
 VMM server to VMware vCenter server | 443: HTTPS | Inbound rule on VMware vCenter server | Can't modify
 VMware vCenter server to VMM server | 443: HTTPS | Outbound rule on VMware vCenter server | Can't modify
 VMM server to VMware ESXi nodes | 22: SFTP <br> 443: HTTPS | Inbound rule on ESXi nodes | Can't modify
-VMware ESXi nodes to Hyper-V node | 443:HTTPS <br> 445: SMB (over TCP) | Outbound rule on ESXi nodes | Can't modify
-VMware ESXi nodes to VMM server | 443:HTTPS | Outbound rule on ESXi nodes | Can't modify |
+VMware ESXi nodes to Hyper-V node | 443: HTTPS <br> 445: SMB (over TCP) | Outbound rule on ESXi nodes | Can't modify
+VMware ESXi nodes to VMM server | 443: HTTPS | Outbound rule on ESXi nodes | Can't modify |
 
 
 > [!NOTE]
@@ -69,7 +69,7 @@ VMware ESXi nodes to VMM server | 443:HTTPS | Outbound rule on ESXi nodes | Can'
 
 ::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 > [!NOTE]
-> System Center Virtual Machine Manager uses NTLM authentication protocol to perform management operations. Using Kerberos authentication protocol isn’t recommended as it may break a few VM operations.
+> System Center Virtual Machine Manager uses NTLM authentication protocol to perform management operations. Using Kerberos authentication protocol isn’t recommended as it can break a few VM operations.
 ::: moniker-end
 
 ## Next steps
