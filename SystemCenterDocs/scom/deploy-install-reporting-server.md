@@ -97,9 +97,12 @@ Follow these steps to verify that Reporting Services is configured correctly:
 
 #### Install Operations Manager reporting
 
+> [!IMPORTANT]
+> The Operations Manager Reporting role must be installed directly on the SQL Server Reporting Server. Remote SSRS instances are not supported and will not appear in the installation wizard.
+
 Follow these steps to install Operations Manager reporting:
 
-1. Sign in to the computer with an account that has local administrative credentials.
+1. Sign in to the SSRS server as a local administrator.
 
 2. On the Operations Manager installation media, run **Setup.exe**, and select **Install**.
 
@@ -136,13 +139,14 @@ Follow these steps to install Operations Manager reporting from the command prom
 3. Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     > [!NOTE]
+    >
     > - The `/ManagementServer` parameter is only required when you're installing reporting on a server that isn't a management server.
-    > - The `/SRSInstance` parameter is only allowed to utilize a local SSRS instance.
+    > - The `/SRSInstance` parameter is the name of the local SSRS instance, for example 'SSRS'.
 
     ```cmd
     setup.exe /silent /install /components:OMReporting
     /ManagementServer:<ManagementServerName>
-    /SRSInstance:<server\instance>
+    /SRSInstance:[SSRS|<server\instance>]
     /DataReaderUser:<domain\username>
     /DataReaderPassword:<password>
     /SendODRReports:[0|1]

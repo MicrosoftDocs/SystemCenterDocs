@@ -192,11 +192,11 @@ However, the IP doesn't support the consent grant flow; instead the tenant admin
     1. On the Microsoft Entra admin center, select the Azure AD application.
     2. Follow the [steps to grant EWS permissions](/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application) by editing the app **Manifest**.
 
-        :::image type="content" alt-text="Screenshot of Azure AD App manifest."  source="./media/exchange-users-integration-pack/manifest.png" lightbox="./media/exchange-users-integration-pack/manifest-expanded.png":::
+        :::image type="content" alt-text="Screenshot of Azure AD App manifest."  source="./media/exchange-users-integration-pack/manifest.png" lightbox="./media/exchange-users-integration-pack/manifest.png":::
 
 2. Request your tenant admin to grant "Admin consent" (on the API permissions tab) to this application for `EWS.AccessAsUser.All` permission.
 
-    :::image type="content" alt-text="Screenshot of Azure AD App API permissions."  source="./media/exchange-users-integration-pack/api-permissions.png" lightbox="./media/exchange-users-integration-pack/api-permissions-expanded.png":::
+    :::image type="content" alt-text="Screenshot of Azure AD App API permissions."  source="./media/exchange-users-integration-pack/api-permissions.png" lightbox="./media/exchange-users-integration-pack/api-permissions.png":::
 
 In practice, **Admin consent** implies that any user in the tenant can configure the IP with their credentials and execute Exchange activities under their account.
 

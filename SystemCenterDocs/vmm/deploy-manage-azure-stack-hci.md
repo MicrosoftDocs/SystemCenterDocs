@@ -309,7 +309,7 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
 4.	Select **Finish**.
 5.	In the **Import Certificate** page, select **Import**.
 
-    :::image type="Import certificates option" source="media/deploy-manage-azure-stack-hci/import-certificate-inline.png" alt-text="Screenshot showing Import certificates option." lightbox="media/deploy-manage-azure-stack-hci/import-certificate-expanded.png":::
+    :::image type="Import certificates option" source="media/deploy-manage-azure-stack-hci/import-certificate-inline.png" alt-text="Screenshot showing Import certificates option." lightbox="media/deploy-manage-azure-stack-hci/import-certificate-inline.png":::
    
 6.	After the successful addition of the vCenter server, all the ESXi hosts under the vCenter are migrated to VMM. 
  
