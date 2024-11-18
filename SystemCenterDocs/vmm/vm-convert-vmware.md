@@ -1,11 +1,11 @@
 ---
 ms.assetid: 28a3bb81-979c-4ebe-aa07-7ba7ecfb6efc
 title: Convert a VMware VM to Hyper-V in the VMM fabric
-description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V
+description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/15/2024
+ms.date: 11/18/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -25,7 +25,7 @@ You can convert the VMs using the *Convert Virtual Machine* wizard. You can use 
 
 ::: moniker range="sc-vmm-2019"
 
-VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20H2. [Learn more about support to Azure Stack HCI 20H2](deploy-manage-azure-stack-hci.md).
+VMM 2019 UR3 supports the conversion of VMware VMs to Hyper-V and Azure Stack HCI 20H2. [Learn more about support to Azure Stack HCI 20H2](deploy-manage-azure-stack-hci.md).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
 > We recommend that no more than ten conversions be triggered parallelly from the same ESXi source to the same Hyper-V destination. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel, with the remaining conversions queued. However, we recommend staging the VM conversions in smaller batches for higher efficiency.
 
 >[!NOTE]
-> After conversion, all VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
+> After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
   >- `Set-StorageSetting -NewDiskPolicy OfflineShared`: To have all the new shared bus disks offline and all the new local bus disks online
   >- `Set-StorageSetting -NewDiskPolicy OnlineAll`: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
 ::: moniker-end
@@ -63,7 +63,7 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
 > We recommend that no more than ten conversions be triggered parallelly from the same ESXi source to the same Hyper-V destination. If the source-destination pair is different, VMM can support up to 100 VM conversions in parallel, with the remaining conversions queued. However, we recommend staging the VM conversions in smaller batches for higher efficiency.
 
 >[!NOTE]
-> After conversion, all VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
+> After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:
   >- `Set-StorageSetting -NewDiskPolicy OfflineShared`: To have all the new shared bus disks offline and all the new local bus disks online
   >- `Set-StorageSetting -NewDiskPolicy OnlineAll`: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
 
@@ -111,13 +111,7 @@ System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMwa
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
-
-The **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
-
-::: moniker-end
-
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 
 The **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
 
@@ -129,12 +123,14 @@ The **Convert Virtual Machine** wizard enables this migration. Based on the firm
 - EFI-based VMs are migrated to Hyper-V VM Generation 2.
 
 ### Before you start
+
 Ensure the following prerequisites are met:
 
 - VMware VMs with firmware type as EFI
 - VMware ESXi Hosts added in System Center VMM
 
 ### Conversion procedure
+
 1. To convert, follow the [above procedure](#convert-using-the-wizard) and select **Generation 2** in step 4.
 
     ![Screenshot of Configure VM conversion to gen 2.](media/vm-conversion/vm-conversion-select-gen2.png)
@@ -174,7 +170,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 - As part of SCVMM 2022 UR2, a new registry named **V2VTransferChunkSizeBytes** is introduced at *HKLM:\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Agent* in the Hyper-V hosts managed by SCVMM.
 - This registry of type REG_DWORD, with a value of *2147483648*, which is 2 GB in bytes has to be set on every Hyper-V host managed by VMM by running [this script](https://download.microsoft.com/download/2/c/a/2caf6779-853a-4455-9c67-a0d2b1e2ccfe/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20All%20Hosts.ps1) from the VMM Console.
 - Alternatively, if you want to set this registry value in a single host and not on all the hosts, run [this script](https://download.microsoft.com/download/4/4/6/446e9dac-0356-44ce-a0c9-707a8d3e2bb0/Script%20To%20Add%20Registry%20with%20new%20Chunk%20Size%20On%20Single%20Host.ps1) from the VMM Console.
-- After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored. 
+- After setting this registry value, if you remove any Hyper-V host(s) from SCVMM, stale entries for this registry might remain. If the same host(s) is re-added to SCVMM, the previous value of registry **V2VTransferChunkSizeBytes** will be honored.
 
 :::moniker-end
 
@@ -189,21 +185,21 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 >- You can't convert VMware workstations.
 >- You can't convert VMs with virtual hard disks connected to an IDE bus.
 >- VMware tools must be uninstalled from the guest operating system of the VM.
->- VMware VMs with vSAN storage can’t be converted to Hyper-V with SCVMM.
+>- VMware VMs with vSAN storage can't be converted to Hyper-V with SCVMM.
 >- Online conversions aren't supported through SCVMM.
 >- We recommend upgrading to VMM 2025 to convert your VMware VMs to Hyper-V four times faster and to have an enhanced conversion experience.
 
 ## Start by bringing your vCenter server and the source ESXi hosts under SCVMM management
 
-1.	Create [Run as account](./account-runas.md) for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
+1. Create [Run as account](./account-runas.md) for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
 
     :::image type="content" source="media/vm-convert-vmware/create-run-as-account.png" alt-text="Screenshot of create run as account page." lightbox="media/vm-convert-vmware/create-run-as-account.png":::
  
-2.	In the VMM console, under **Fabric**, select **Servers > Add VMware vCenter Server**.
+2. In the VMM console, under **Fabric**, select **Servers > Add VMware vCenter Server**.
 
     :::image type="content" source="media/vm-convert-vmware/add-vmware-vcenter-server.png" alt-text="Screenshot of add VMware vCenter server option." lightbox="media/vm-convert-vmware/add-vmware-vcenter-server.png":::
 
-3.	In the **Add VMware vCenter Server** page, do the following:<br>
+3. In the **Add VMware vCenter Server** page, do the following:<br>
   a. **Computer name**: Specify the vCenter server name.<br>
   b. **Run As account**: Select the Run As account created for vSphere administrator.<br>
 
@@ -211,7 +207,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 
 4.	Select **Finish**.
 
-5.	In the **Import Certificate** page, select **Import**.
+5.	On the **Import Certificate** page, select **Import**.
 
     :::image type="content" source="media/vm-convert-vmware/import-certificate.png" alt-text="Screenshot of import certificate page." lightbox="media/vm-convert-vmware/import-certificate.png":::
  
@@ -242,9 +238,9 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 
 Now that your VMware VMs are discovered and manageable by VMM, you can convert these VMs to Hyper-V by following these instructions:
 
-1. Ensure the VMware VMs that are to be converted are in the **Stopped** state and that there aren’t snapshots associated with them.
+1. Ensure the VMware VMs that are to be converted are in the **Stopped** state and that there are no snapshots associated with them.
 
-2.	Select **VMs and Services > Home > Convert Virtual Machine**.
+2. Select **VMs and Services > Home > Convert Virtual Machine**.
 
 3.	In **Convert Virtual Machine** wizard > **Select Source**, select **Browse**, and in **Select Virtual Machine Source**, select the VMware VM you want to convert.
 
@@ -256,11 +252,11 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 7.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 
-8.	Select **Create** to start the conversion. Verify the VM's conversion in **VMs and Services > Home > Show > VMs**.
+8.	Select **Create** to start the conversion. Verify the VMs' conversion in **VMs and Services > Home > Show > VMs**.
 
 >[!Note]
->After conversion, all VM disks except for the OS disk will be offline. This is because the NewDiskPolicy parameter is set to offlineALL on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
->- `Set-StorageSetting -NewDiskPolicy OfflineShared`: To have all the new shared bus disks offline and all the new local bus disks online
+>After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
+>- `Set-StorageSetting -NewDiskPolicy OfflineShared`: To have all the new shared bus disks offline and all the new local bus disks online.
 >- `Set-StorageSetting -NewDiskPolicy OnlineAll`: To have all the new disks online, regardless of whether the disks are on a local or shared bus.
 
 ## Convert using PowerShell cmdlet
@@ -292,8 +288,6 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 >- [Veeam](https://www.veeam.com/blog/vmware-to-hyper-v-migration.html)
 >- [Carbonite](https://www.carbonite.com/business/products/migration/)
 :::moniker-end
-
-
 
 ## Next steps
 
