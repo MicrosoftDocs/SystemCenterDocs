@@ -176,7 +176,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 
 :::moniker range="sc-vmm-2025"
-VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) conversion. You can use the [sample PowerShell script](vm-convert-vmware.md#convert-using-powershell-cmdlet) provided in this article to migrate workloads at scale from VMware infrastructure to Hyper-V infrastructure.
+VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) conversion.
 
 >[!Important]
 >- Review the [system requirements](./system-requirements.md) for the supported vCenter/ESXi servers.
