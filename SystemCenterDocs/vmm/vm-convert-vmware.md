@@ -117,7 +117,7 @@ The **Convert Virtual Machine** wizard enables this migration. Based on the firm
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 
 - BIOS-based VMs are migrated to Hyper-V VM Generation 1.
 - EFI-based VMs are migrated to Hyper-V VM Generation 2.
@@ -250,9 +250,11 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 6.	In **Select Host**, select a Hyper-V host/Azure Local for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
-7.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
+7. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
 
-8.	Select **Create** to start the conversion. Verify the VMs' conversion in **VMs and Services > Home > Show > VMs**.
+8.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
+
+9.	Select **Create** to start the conversion. Verify the VMs' conversion in **VMs and Services > Home > Show > VMs**.
 
 >[!Note]
 >After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
