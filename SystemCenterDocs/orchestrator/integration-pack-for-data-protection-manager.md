@@ -1,7 +1,7 @@
 ---
 title: Integration Pack for System Center DPM in System Center - Orchestrator
 description: This article describes the System Center DPM integration pack provided by System Center - Orchestrator.
-ms.date: 11/01/2024
+ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -38,7 +38,9 @@ The DPM integration pack requires the following software to be installed and con
 
 ::: moniker range="sc-orch-2025"
 
-- Download the pack for 2025
+Integration Pack for System Center DPM 2022 continues to work with System Center DPM 2025.
+
+Download the Integration Pack for System Center DPM [here](https://www.microsoft.com/download/details.aspx?id=104334).
 
 ::: moniker-end
 

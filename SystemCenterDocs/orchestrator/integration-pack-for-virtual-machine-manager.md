@@ -1,7 +1,7 @@
 ---
 title: Integration pack for System Center - Virtual Machine Manager (VMM)
 description: This article describes the System Center integration pack for System Center - Virtual Machine Manager (VMM). The integration pack is an add-in for System Center - Orchestrator.
-ms.date: 11/01/2024
+ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -41,7 +41,9 @@ The activities from the VMM Integration Pack connect to a VMM Console, which in 
 
 ::: moniker range="sc-orch-2025"
 
-- Download the pack for 2025
+Integration Pack for System Center VMM 2022 continues to work with System Center VMM 2025.
+
+Download the Integration Pack for VMM [here](https://www.microsoft.com/download/details.aspx?id=104340)
 
 ::: moniker-end
 

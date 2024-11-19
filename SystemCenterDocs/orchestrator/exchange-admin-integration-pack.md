@@ -1,7 +1,7 @@
 ---
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: This article provides information about exchange Integration packs and how to deploy it.
-ms.date: 11/01/2024
+ms.date: 11/19/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -103,7 +103,9 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 
 ::: moniker range=">=sc-orch-2025"
 
-- To download the Exchange Admin Integration Pack for Orchestrator 2025, see the Microsoft Download Center for 2025.
+Exchange Admin Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
+
+Download the Exchange Admin Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104335).
 
 ::: moniker-end
 
