@@ -133,11 +133,11 @@ Ensure the following prerequisites are met:
 
 1. To convert, follow the [above procedure](#convert-using-the-wizard) and select **Generation 2** in step 4.
 
-    ![Screenshot of Configure VM conversion to gen 2.](media/vm-conversion/vm-conversion-select-gen2.png)
+    :::image type="content" source="media/vm-convert-vmware/vm-conversion-select-gen2.png" alt-text="Screenshot of Configure VM conversion to gen 2." lightbox="media/vm-convert-vmware/vm-conversion-select-gen2.png":::
 
 2. Once the VM is converted, you can see the Generation 2 VM as shown in the image below:
 
-    ![Screenshot of vm conversion to gen 2.](media/vm-conversion/vm-conversion-gen2-created.png)
+    :::image type="content" source="media/vm-convert-vmware/vm-conversion-gen2-created.png" alt-text="Screenshot of vm conversion to gen 2." lightbox="media/vm-convert-vmware/vm-conversion-gen2-created.png":::
 
 > [!NOTE]
 > - PowerShell commands allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based on the requirements.
