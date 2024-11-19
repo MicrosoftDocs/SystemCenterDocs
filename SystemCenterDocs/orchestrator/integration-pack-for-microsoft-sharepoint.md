@@ -1,7 +1,7 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 11/01/2024
+ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -79,7 +79,9 @@ The integration pack for SharePoint requires the following software to be instal
 
 ::: moniker range="sc-orch-2025"
 
-- Download the pack for 2025
+SharePoint Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
+
+Download the SharePoint Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104332).
 
 ::: moniker-end
 
