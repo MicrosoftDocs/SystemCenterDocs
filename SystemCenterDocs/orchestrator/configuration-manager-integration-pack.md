@@ -2,7 +2,7 @@
 title: Configuration Manager Integration Pack
 description: The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager functions.
 ms.custom: na
-ms.date: 11/01/2024
+ms.date: 11/19/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -45,7 +45,9 @@ Before you can install the Integration Pack for Configuration Manager, you must 
 
 ::: moniker range="sc-orch-2025"
 
-- Download the pack for 2025
+Configuration Manager Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
+
+Download the Configuration Manager Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104338).
 
 ::: moniker-end
 

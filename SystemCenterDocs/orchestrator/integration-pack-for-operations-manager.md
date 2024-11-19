@@ -1,7 +1,7 @@
 ---
 title: System Center - The Orchestrator integration pack for System Center Operations Manager
 description: Learn about the integration pack for Operations Manager, an add-in provided by System Center Orchestrator.
-ms.date: 11/01/2024
+ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -58,7 +58,9 @@ Before you deploy the Operations Manager integration pack, install and configure
 
 ::: moniker range="sc-orch-2025"
 
-- Download the pack for 2022
+Operations Manager Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
+
+Operations Manager Download the Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104339).
 
 ::: moniker-end
 

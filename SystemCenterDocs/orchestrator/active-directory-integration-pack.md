@@ -2,7 +2,7 @@
 title: Active Directory Integration Pack for System Center - Orchestrator
 description: The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
 ms.custom: UpdateFrequency2, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 11/19/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -45,7 +45,7 @@ Before you can install the Integration Pack for Active Directory, you must first
 - Windows Server 2016 Active Directory, Windows Server 2012 R2 Active Directory, Windows Server 2012 Active Directory, Windows Server 2008 R2 Active Directory, Windows Server 2008 Active Directory, Windows Server 2003 R2 Active Directory, or Windows Server 2003 Active Directory.
 ::: moniker-end
 
-## Downloading the Integration Pack
+## Download the Integration Pack
 
 ::: moniker range="<=sc-orch-2019"
 
@@ -63,7 +63,9 @@ Before you can install the Integration Pack for Active Directory, you must first
 
 ::: moniker range="sc-orch-2025"
 
-- To download the Orchestrator 2025 integration pack, see Active Directory Integration Pack for System Center 2025 - Orchestrator.
+Active Directory Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
+
+Download the Active Directory Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104333).
 
 ::: moniker-end
 
