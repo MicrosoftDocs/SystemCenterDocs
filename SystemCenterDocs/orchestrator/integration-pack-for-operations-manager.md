@@ -58,9 +58,9 @@ Before you deploy the Operations Manager integration pack, install and configure
 
 ::: moniker range="sc-orch-2025"
 
-Integration Pack for Operations Manager 2022 continues to work with Operations Manager 2025.
+Operations Manager Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
 
-Download the Integration Pack for Operations Manager [here](https://www.microsoft.com/download/details.aspx?id=104339).
+Operations Manager Download the Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104339).
 
 ::: moniker-end
 

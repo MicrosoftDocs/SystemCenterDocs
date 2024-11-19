@@ -41,7 +41,7 @@ The activities from the VMM Integration Pack connect to a VMM Console, which in 
 
 ::: moniker range="sc-orch-2025"
 
-Integration Pack for System Center VMM 2022 continues to work with System Center VMM 2025.
+VMM Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
 
 Download the Integration Pack for VMM [here](https://www.microsoft.com/download/details.aspx?id=104340)
 

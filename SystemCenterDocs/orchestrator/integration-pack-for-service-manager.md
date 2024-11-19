@@ -34,7 +34,7 @@ The Service Manager integration pack requires the following software to be insta
 
 ::: moniker range="sc-orch-2025"
 
-Integration Pack for Service Manager 2022 continues to work with Service Manager 2025.
+Service Manager Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
 
 Download the Integration Pack for Service Manager [here](https://www.microsoft.com/download/details.aspx?id=104341).
 

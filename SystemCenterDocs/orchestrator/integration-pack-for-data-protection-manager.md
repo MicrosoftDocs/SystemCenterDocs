@@ -38,9 +38,9 @@ The DPM integration pack requires the following software to be installed and con
 
 ::: moniker range="sc-orch-2025"
 
-Integration Pack for System Center DPM 2022 continues to work with System Center DPM 2025.
+DPM Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
 
-Download the Integration Pack for System Center DPM [here](https://www.microsoft.com/download/details.aspx?id=104334).
+Download the DPM Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104334).
 
 ::: moniker-end
 
