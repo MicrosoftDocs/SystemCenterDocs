@@ -355,7 +355,7 @@ After you add the ESXi clusters, all the virtual machines running on the ESXi cl
 
    :::image type="Select host" source="media/deploy-manage-azure-stack-hci/select-host.png" alt-text="Screenshot showing select host option.":::
 6. Select a [virtual network](manage-networks.md) for the virtual machine and select **Create** to complete the migration.  
-The virtual machine running on the ESXi cluster is successfully migrated to Azure Stack HCI cluster. For automation, use [PowerShell commands](vm-convert-vmware.md#convert-using-powershell-cmdlets) for conversion. 
+The virtual machine running on the ESXi cluster is successfully migrated to Azure Stack HCI cluster. For automation, use [PowerShell commands](vm-convert-vmware.md#convert-using-powershell-cmdlet) for conversion. 
 
 ::: moniker-end
 
