@@ -4,7 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 11/20/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -327,6 +327,10 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
 5. Your computer is checked for required the hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
@@ -338,6 +342,27 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
    2. After you resolve the missing prerequisites, select **Verify prerequisites again**.
 
    3. Select **Next** to continue.
+
+::: moniker-end
+
+::: moniker range="sc-orch-2025"
+
+5. Your computer is checked for required the hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
+
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+
+   1. Review the items that didn't pass the prerequisite check. The Web API requires .NET Hosting bundle v8.x and some IIS extensions. Download and install them from the official sites:
+      -	.NET Hosting bundle
+      -	IIS CORS (Cross-Origin Resource Sharing) module
+
+   2. After you resolve the missing prerequisites, select **Verify prerequisites again**.
+
+   3. Select **Next** to continue.
+
+::: moniker-end
+
+
+::: moniker range=">=sc-orch-2022"
 
 6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API runs under an IIS App Pool with this identity. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 
