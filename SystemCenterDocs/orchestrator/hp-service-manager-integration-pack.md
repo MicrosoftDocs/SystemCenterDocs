@@ -13,7 +13,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 11/01/2024
+ms.date: 11/20/2024
 ---
 
 # HP Service Manager Integration Pack for System Center - Orchestrator
@@ -22,7 +22,7 @@ ms.date: 11/01/2024
 ::: moniker range="sc-orch-2019"
 
 >[!NOTE]
->HP Service Manager Integration pack has been discontinued from System Center Orchestator 2022 and later.
+>HP Service Manager Integration pack has been discontinued from System Center Orchestrator 2022 and later.
 
 ::: moniker-end
 
