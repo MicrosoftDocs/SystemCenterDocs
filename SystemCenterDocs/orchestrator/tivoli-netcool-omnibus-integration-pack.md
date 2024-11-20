@@ -18,7 +18,7 @@ monikerRange: '<=sc-orch-2019'
 ---
 # IBM Tivoli Netcool OMNIbus Integration Pack for System Center  - Orchestrator
 
-::: moniker range="sc-orch-2029"
+::: moniker range="sc-orch-2019"
 
 IBM Tivoli Netcool OMNIbus Integration pack has been discontinued from System Center Orchestrator 2022 and later.
 
