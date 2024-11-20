@@ -2,7 +2,7 @@
 title: IBM Tivoli Netcool OMNIbus Integration Pack for System Center - Orchestrator
 description: The Integration Pack for IBM Tivoli Netcool/OMNIbus is an add-on for System Center - Orchestrator that enables you to automate responses to alerts raised within IBM Tivoli Netcool/OMNIbus.
 ms.custom: na
-ms.date: 11/01/2024
+ms.date: 11/20/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,6 +17,12 @@ robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---
 # IBM Tivoli Netcool OMNIbus Integration Pack for System Center  - Orchestrator
+
+::: moniker range="sc-orch-2029"
+
+IBM Tivoli Netcool OMNIbus Integration pack has been discontinued from System Center Orchestrator 2022 and later.
+
+::: moniker-end
 
 The Integration Pack for IBM Tivoli Netcool/OMNIbus is an add-on for System Center - Orchestrator that enables you to automate responses to alerts raised within IBM Tivoli Netcool/OMNIbus. You can combine these automated responses, or activities, with the standard activities found in Orchestrator.
 
