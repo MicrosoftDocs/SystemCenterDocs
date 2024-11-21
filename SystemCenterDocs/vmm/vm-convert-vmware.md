@@ -185,7 +185,7 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
 >- You can't convert VMware workstations.
 >- You can't convert VMs with virtual hard disks connected to an IDE bus.
 >- VMware tools must be uninstalled from the guest operating system of the VM.
->- VMware VMs with vSAN storage can't be converted to Hyper-V with SCVMM.
+>- VMware VMs residing on vSAN-type storage can't be converted to Hyper-V with SCVMM.
 >- Online conversions aren't supported through SCVMM.
 >- We recommend upgrading to VMM 2025 to convert your VMware VMs to Hyper-V four times faster and to have an enhanced conversion experience.
 
