@@ -9,7 +9,7 @@ ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-overview, UpdateFrequency0.5
+ms.custom: intro-overview, UpdateFrequency0.5, engagement-fy24
 ---
 
 # About Arc-enabled System Center Virtual Machine Manager

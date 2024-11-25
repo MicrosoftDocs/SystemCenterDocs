@@ -9,7 +9,7 @@ ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23
+ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23, engagement-fy24
 ---
 
 # Deploy a Storage Spaces Direct hyper-converged cluster in VMM
