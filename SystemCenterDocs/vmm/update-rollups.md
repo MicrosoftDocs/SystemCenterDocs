@@ -9,7 +9,7 @@ ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
+ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Deploy and manage update rollups in VMM

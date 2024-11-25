@@ -9,7 +9,7 @@ ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-migration, UpdateFrequency3
+ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
 
 
