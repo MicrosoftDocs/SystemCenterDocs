@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: sc-vmm-2025
-ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23
+ms.custom: UpdateFrequency.5, intro-deployment, engagement-fy23, engagement-fy24
 ---
 
 # Manage Azure Stack HCI clusters in VMM

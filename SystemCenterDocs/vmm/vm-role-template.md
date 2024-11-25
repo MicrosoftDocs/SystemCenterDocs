@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '<sc-vmm-2019'
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Create VM templates using VMM and Microsoft Azure Pack

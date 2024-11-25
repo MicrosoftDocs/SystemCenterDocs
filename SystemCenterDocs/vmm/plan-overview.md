@@ -9,7 +9,7 @@ ms.date: 04/20/2023
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 # Plan VMM deployment

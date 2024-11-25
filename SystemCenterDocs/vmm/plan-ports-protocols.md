@@ -9,6 +9,7 @@ ms.date: 11/15/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.custom: engagement-fy24
 ---
 
 # Identify VMM ports and protocols

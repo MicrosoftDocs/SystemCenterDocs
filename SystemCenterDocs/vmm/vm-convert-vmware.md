@@ -8,6 +8,7 @@ manager: jsuri
 ms.date: 11/18/2024
 ms.topic: article
 ms.service: system-center
+ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager
 ---
 

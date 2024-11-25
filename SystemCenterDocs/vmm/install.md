@@ -9,7 +9,7 @@ ms.date: 10/22/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
+ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24
 ---
 
 # Install VMM
