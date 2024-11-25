@@ -9,7 +9,7 @@ ms.date: 06/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ---
 
 # Virtual Machine Manager network object fundamentals

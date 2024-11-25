@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: <=sc-vmm-2022
+ms.custom: engagement-fy24
 ---
 
 # Set up TLS 1.2 for VMM

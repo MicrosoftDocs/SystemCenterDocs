@@ -9,7 +9,7 @@ ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-deployment, engagement-fy23, UpdateFrequency2
+ms.custom: intro-deployment, engagement-fy23, UpdateFrequency2, engagement-fy24
 ---
 
 
