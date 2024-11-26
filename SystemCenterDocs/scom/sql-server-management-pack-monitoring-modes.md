@@ -5,7 +5,7 @@ description: This article explains monitoring modes in Management Pack for SQL S
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 11/26/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -89,15 +89,15 @@ To configure agentless monitoring, perform the following steps:
 
         ![Screenshot showing automatically distribution of the Run As account.](./media/sql-server-management-pack/run-as-account-distribution.png)
 
-    - Specify data sources and/or connection strings.
+    - Specify data sources and/or connection strings. 
 
       Use the following format when specifying connection strings:
 
-        - 172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"
+        - 192.0.2.17;MachineName="*example-server-name*";InstanceName="*example-instance-name*";Platform="Windows"
 
-        - 172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
+        - 192.0.2.17,50626;MachineName="*example-server-name*";InstanceName="*example-instance-name*";Platform="Windows"
 
-        - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
+        - 192.0.2.18;MachineName="*example-server-name*";InstanceName="*example-instance-name*";Platform="Linux"
 
     ![Screenshot showing Authentication type.](./media/sql-server-management-pack/authentication-type-agentless-wizard.png)
 
