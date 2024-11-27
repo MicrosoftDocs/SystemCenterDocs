@@ -93,11 +93,11 @@ To configure agentless monitoring, perform the following steps:
 
       Use the following format when specifying connection strings:
 
-        - 192.0.2.17;MachineName="*example-server-name*";InstanceName="*example-instance-name*";Platform="Windows"
+        - 192.0.2.17;MachineName="*server-name*";InstanceName="*instance-name*";Platform="Windows"
 
-        - 192.0.2.17,50626;MachineName="*example-server-name*";InstanceName="*example-instance-name*";Platform="Windows"
+        - 192.0.2.17,50626;MachineName="*server-name*";InstanceName="*instance-name*";Platform="Windows"
 
-        - 192.0.2.18;MachineName="*example-server-name*";InstanceName="*example-instance-name*";Platform="Linux"
+        - 192.0.2.18;MachineName="*server-name*";InstanceName="*instance-name*";Platform="Linux"
 
     ![Screenshot showing Authentication type.](./media/sql-server-management-pack/authentication-type-agentless-wizard.png)
 
