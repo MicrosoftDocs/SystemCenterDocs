@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/18/2024
+ms.date: 12/03/2024
 ms.topic: article
 ms.service: system-center
 ms.custom: engagement-fy24
@@ -58,6 +58,7 @@ VMM 2019 UR3 supports the conversion of VMware VMs to Hyper-V and Azure Stack HC
   >- Anti-virus apps must be supported.
   >- Online conversions aren't supported. You need to power off the VMware VMs.
   >- VMware tools must be uninstalled from the guest operating system of the VM.
+  >- VMware VMs residing on vSAN-type storage can't be converted to Hyper-V with SCVMM.
   >- We recommend upgrading to VMM 2022 UR2 to convert your VMware VMs to Hyper-V four times faster.
 
 >[!NOTE]
@@ -235,6 +236,12 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
  
       :::image type="content" source="media/vm-convert-vmware/confirm-settings.png" alt-text="Screenshot of confirm settings page." lightbox="media/vm-convert-vmware/confirm-settings.png":::
 
+9. Select **Fabric** > **Servers**> **All Hosts** and in the host group, check the status of each host or cluster. The **Host Status** should be either **OK** or **OK (limited)**.
+
+10. If the status is limited, it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, right-click the vCenter server > **Properties** > **Security**.
+
+11. To import the certificate, select each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status must be **OK** after the import.
+
 ## Convert your VMware VMs to Hyper-V
 
 Now that your VMware VMs are discovered and manageable by VMM, you can convert these VMs to Hyper-V by following these instructions:
@@ -247,7 +254,7 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 4.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
-5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings.
+5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings and select the **Generation** of the target VM.
 
 6.	In **Select Host**, select a Hyper-V host/Azure Local for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
