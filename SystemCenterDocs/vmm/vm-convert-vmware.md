@@ -236,6 +236,12 @@ VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) convers
  
       :::image type="content" source="media/vm-convert-vmware/confirm-settings.png" alt-text="Screenshot of confirm settings page." lightbox="media/vm-convert-vmware/confirm-settings.png":::
 
+9. Select **Fabric** > **Servers**> **All Hosts** and in the host group, check the status of each host or cluster. The **Host Status** should be either **OK** or **OK (limited)**.
+
+10. If the status is limited, it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, right-click the vCenter server > **Properties** > **Security**.
+
+11. To import the certificate, select each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status must be **OK** after the import.
+
 ## Convert your VMware VMs to Hyper-V
 
 Now that your VMware VMs are discovered and manageable by VMM, you can convert these VMs to Hyper-V by following these instructions:
