@@ -105,7 +105,8 @@ The following table defines wildcard patterns that you can use in expressions:
 |---|---|---|
 | ? |Matches any single character. You can use the question mark (?) anywhere in a character string.|**Jo?** finds Job, Jo1, Jo_, Jo?, Jo*, but not Job1, or Jobs.
 | \* |Matches any number of characters. You can use the asterisk (*) anywhere in a character string.|**Jo\*** finds Jobs, Job1, Job2, Job_prod, but not 1Job. **\*Job** finds 1Job, _Job, test-Job, but not 1Job_prod or Job_Base. **\*Job\*** finds cloudJob_1, Jobtest, 3Job, but not prod_J_O_B.
-| " |Matches any number of characters in double quotes. You can use the double quotes (" ") anywhere in a character string. If a character string contains a comma, the string must be quoted.|**"Job, Report"** finds a Job, Report string with a comma inside, but not an Job string separately, and a Report string separately. **"   Job name with leading and trailing spaces  "** finds an entry with all spaces included in double-quotes.
+| " |Matches any number of characters in double quotes. You can use the double quotes (" ") anywhere in a character string. If a character string contains a comma, the string must be quoted.|**"Job, Report"** finds a Job, Report string with a comma inside, but not a Job string separately, and a Report string separately. **"   Job name with leading and trailing spaces  "** finds an entry with all spaces included in double-quotes.
+
 
 The following table defines escape patterns that you can use in expressions:
 
