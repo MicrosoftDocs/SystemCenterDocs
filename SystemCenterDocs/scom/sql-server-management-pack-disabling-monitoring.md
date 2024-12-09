@@ -5,7 +5,7 @@ description: This section explains how to disable monitoring of SQL Servers and 
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 12/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -70,3 +70,48 @@ Use commas to separate database names and asterisks to replace one or more chara
 |sales_dbnotmon|Monitored|
 
 If you've \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables monitoring of any database.
+
+## Disabling Monitoring of specified SQL Agent Jobs by name
+
+Discovery and monitoring of SQL Agent Jobs can be disabled by specifying agent job names in the **Filter list** parameter available in the following discoveries:
+
+- MSSQL on Windows: Discover SQL Server Agent Jobs
+- MSSQL on Linux: Discover SQL Server Agent Jobs
+
+The discovery rule supports filtering settings with the following overrides:
+
+- Filter List - for filtering SQL Server Agent Jobs with agent job name.
+- Filter Mode - for setting the filter mode ("Exclude" or "Include") for the SQL Agent job filter list.
+
+The filtering modes work as follows:
+
+- Exclude mode - exclude agent jobs by name and do not monitor them.
+
+![Screenshot showing Disabling Monitoring of SQL Agent Jobs by Exclude option.](./media/sql-server-management-pack/override-properties-sql-agent-jobs-exclude.png)
+
+- Include mode - Include only specific agent jobs by name in monitoring.
+
+![Screenshot showing Disabling Monitoring of SQL Agent Jobs by Include option.](./media/sql-server-management-pack/override-properties-sql-agent-jobs-include.png)
+
+- If no filter mode is specified, the default mode is "Exclude".
+
+**Filter list** override supports wildcards and can be used for excluding SQL Agent Jobs with the agent job names with comma-separated values. For example, use conditions like `*test` to exclude jobs that end with `test`, or `Test*` to exclude jobs that start with `Test`, or `*test*` condition to exclude jobs that have a `test` entry in any part of the jobs text.
+
+If an element should contain an asterisk (\*) that is not a wildcard, double quote ("), or backslash (\\), the element must be escaped with a backslash `\`. For example, use conditions like `Job\*3` to exclude jobs that have `Job*3` in the job name, use conditions like `\\job\\service\\` to exclude agent jobs that have `\job\service\` in the job name.
+
+The following table defines wildcard patterns that you can use in expressions:
+
+|Character|Description|Example|  
+|---|---|---|
+| ? |Matches any single character. You can use the question mark (?) anywhere in a character string.|**Jo?** finds Job, Jo1, Jo_, Jo?, Jo*, but not Job1, or Jobs.
+| \* |Matches any number of characters. You can use the asterisk (*) anywhere in a character string.|**Jo\*** finds Jobs, Job1, Job2, Job_prod, but not 1Job. **\*Job** finds 1Job, _Job, test-Job, but not 1Job_prod or Job_Base. **\*Job\*** finds cloudJob_1, Jobtest, 3Job, but not prod_J_O_B.
+| " |Matches any number of characters in double quotes. You can use the double quotes (" ") anywhere in a character string. If a character string contains a comma, the string must be quoted.|**"Job, Report"** finds a Job, Report string with a comma inside, but not a Job string separately, and a Report string separately. **"   Job name with leading and trailing spaces  "** finds an entry with all spaces included in double-quotes.
+
+
+The following table defines escape patterns that you can use in expressions:
+
+|Character|Description|Example|
+|---|---|---|
+| \\* |Not a wildcard. Escapes the asterisk (\*) anywhere in a character string.|**jobname\\*** finds jobname\*, but not jobname1, jobname_prod, jobnames.
+|\\" |Not a wildcard. Escapes the double quotes (") anywhere in a character string.|**job \\"example\\"** finds job "example", but not job\\, job example, or "example".
+| \\\\ |Not a wildcard. Escapes the backslash (\\) anywhere in a character string.|**\\\job\\\service\\\\** finds \\job\\service\\, but not \\, job\\\service.
