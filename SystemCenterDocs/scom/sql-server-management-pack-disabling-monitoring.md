@@ -5,7 +5,7 @@ description: This section explains how to disable monitoring of SQL Servers and 
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 29/11/2024
+ms.date: 12/09/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
