@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 12/12/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -32,18 +32,6 @@ You can use the following procedures in Service Manager to refresh data in a Mic
 ### Validate refresh
 
 - Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
-
-## Manually refresh
-
-- Run the following script for the OLAP data cube of your choice.  
-
-    ```  
-    Update etl.CubePartition set  
-
-    watermarkbatchid = 0  
-
-    where cubename = 'ComputerCube'  
-    ```  
 
 ## Next steps
 
