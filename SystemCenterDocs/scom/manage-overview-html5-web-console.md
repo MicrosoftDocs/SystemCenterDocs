@@ -132,12 +132,6 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 ## Supported browsers
 
-::: moniker range="sc-om-2016"
-
-System Center Operations Manager Web console supports Microsoft Edge 40 and later, Google Chrome 61 and later, Mozilla Firefox 56 or later, and Internet Explorer 11.
-
-::: moniker-end
-
 ::: moniker range="sc-om-2019"
 
 System Center Operations Manager Web console supports Microsoft Edge 40 and later, Google Chrome 67 and later, and Internet Explorer 11.
