@@ -15,6 +15,12 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
+## December 2024 - 7.7 CTP
+
+### Bug fixes and improvements
+
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
+
 ## July 2024 - 7.6.1 RTM
 
 ### What's New
