@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/04/2024
+ms.date: 12/17/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -212,8 +212,6 @@ After the installation, do the following:
     Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}
     ```
 4. Restart the Data Warehouse management server.
-
-5.  Apply the System Center 2025 Service Manager to the Data Warehouse management server, Primary management server, Secondary management server(s), Self-Service Portal(s), and all Analyst consoles.
 
 ### Database impacts  
 

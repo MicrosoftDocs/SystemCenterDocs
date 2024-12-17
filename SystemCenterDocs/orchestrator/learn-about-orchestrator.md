@@ -4,14 +4,12 @@ description: This article provides an overview of System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 12/17/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
-
-
 
 # Overview of System Center  - Orchestrator
 
@@ -28,6 +26,8 @@ Using Orchestrator, you can:
 - Automate processes in your data center, regardless of hardware or platform.
 - Standardize best practices to improve operational efficiency.
 - Connect systems from different vendors without having to know how to use scripting and programming languages.
+
+To know about the prerequisites, see [System requirements for System Center Orchestrator](./system-requirements-orch.md).
 
 ## Orchestrator architecture
 
