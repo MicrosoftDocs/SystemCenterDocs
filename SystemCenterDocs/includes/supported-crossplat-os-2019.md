@@ -137,11 +137,10 @@ Supported versions:
 
 Supported versions:
 
-- Oracle Linux 7, 8 (supported from Operations Manager 2019 UR3 and later), and 9 (supported from Operations Manager 2019 UR6 and later)
-- Rocky 8 (supported from Operations Manager 2019 UR5 and later), and 9 (supported from Operations Manager 2019 UR6 and later)
-- Alma 8 (supported from Operations Manager 2019 UR5 and later), and 9 (supported from Operations Manager 2019 UR6 and later)
-- Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
-- Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR6 and later)
+- Oracle Linux 7<br> Oracle Linux 8 is supported from Operations Manager 2019 UR3 later<br> Oracle Linux 9 is supported from Operations Manager 2019 UR6 and later
+- Rocky 8 is supported from Operations Manager 2019 UR5 and later<br>Rocky 9 is supported from Operations Manager 2019 UR6 and later
+- Alma 8 is supported from Operations Manager 2019 UR5 and later<br>Alma 9 is supported from Operations Manager 2019 UR6 and later
+- Red Hat Enterprise Linux (RHEL) Server 8 is supported from Operations Manager 2019 UR1 and later<br>Red Hat Enterprise Linux (RHEL) Server 9 is supported from Operations Manager 2019 UR6 and later
 - SLES 15 is supported from System Center - Operations Manager 2019 UR1 and later
 
 >[!Note]
