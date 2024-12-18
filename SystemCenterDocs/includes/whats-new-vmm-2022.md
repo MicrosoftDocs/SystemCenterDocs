@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/07/2024
+ms.date: 12/18/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -32,16 +32,16 @@ With VMM 2022, you can manage Azure Stack HCI, 21H2 clusters.
 
 Azure Stack HCI, version 21H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters. 
+Most of the operations to manage Azure Local instances in VMM are similar to managing Windows Server clusters.
 
 >[!NOTE]
-> Management of Azure Stack HCI stretched clusters is currently not supported in VMM.
+> Management of Azure Local stretched clusters is currently not supported in VMM.
 
-See [Deploy and manage Azure Stack HCI clusters in VMM](../vmm/deploy-manage-azure-stack-hci.md).
+See [Deploy and manage Azure Local instances in VMM](../vmm/deploy-manage-azure-stack-hci.md).
 
-### Register and unregister Azure Stack HCI cluster using PowerShell cmdlets
+### Register and unregister Azure Local instance using PowerShell cmdlets
 
-VMM 2022 supports **register** and **unregister** PowerShell cmdlets for Azure Stack HCI cluster. See [Register-SCAzStackHCI](/powershell/module/virtualmachinemanager/register-scazstackhci?preserve-view=true&view=systemcenter-ps-2022) and [Unregister-SCAzStackHCI](/powershell/module/virtualmachinemanager/unregister-scazstackhci?preserve-view=true&view=systemcenter-ps-2022).
+VMM 2022 supports **register** and **unregister** PowerShell cmdlets for Azure Local instance. See [Register-SCAzStackHCI](/powershell/module/virtualmachinemanager/register-scazstackhci?preserve-view=true&view=systemcenter-ps-2022) and [Unregister-SCAzStackHCI](/powershell/module/virtualmachinemanager/unregister-scazstackhci?preserve-view=true&view=systemcenter-ps-2022).
 
 ### Support for dual stack SDN deployment
 
@@ -53,22 +53,21 @@ To enable Ipv6 for SDN deployment, do the required changes in the network contro
 
 For more information about these updates, see [Network controller](../vmm/sdn-controller.md), [Gateway](../vmm/sdn-gateway.md), [SLB](../vmm/sdn-slb.md), and [Set up NAT](../vmm/sdn-set-up-nat.md).
 
-
 ## New features in VMM 2022 UR1
 
 The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 1 (UR1).
 
 For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7).
 
-### Support for Azure Stack HCI clusters 22H2
+### Support for Azure Stack Local instances 22H2
 
-With VMM 2022 UR1, you can manage Azure Stack HCI, 22H2 clusters.
+With VMM 2022 UR1, you can manage Azure Local, 22H2 instances.
 
 Azure Stack HCI, version 22H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters. 
+Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters.
 
-See [Deploy and manage Azure Stack HCI clusters in VMM](../vmm/deploy-manage-azure-stack-hci.md).
+See [Deploy and manage Azure Local instances in VMM](../vmm/deploy-manage-azure-stack-hci.md).
 
 ### Support for VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0
 

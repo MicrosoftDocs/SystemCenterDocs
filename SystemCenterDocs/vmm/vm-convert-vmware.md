@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/03/2024
+ms.date: 12/18/2024
 ms.topic: article
 ms.service: system-center
 ms.custom: engagement-fy24
@@ -14,7 +14,6 @@ ms.subservice: virtual-machine-manager
 
 
 # Convert a VMware VM to Hyper-V in the VMM fabric
-
 
 This article describes how to convert VMware VMs in the System Center Virtual Machine Manager (VMM) fabric to Hyper-V.
 
@@ -26,7 +25,7 @@ You can convert the VMs using the *Convert Virtual Machine* wizard. You can use 
 
 ::: moniker range="sc-vmm-2019"
 
-VMM 2019 UR3 supports the conversion of VMware VMs to Hyper-V and Azure Stack HCI 20H2. [Learn more about support to Azure Stack HCI 20H2](deploy-manage-azure-stack-hci.md).
+VMM 2019 UR3 supports the conversion of VMware VMs to Hyper-V and Azure Local 20H2. [Learn more about support to Azure Local 20H2](deploy-manage-azure-stack-hci.md).
 
 ::: moniker-end
 
@@ -99,7 +98,7 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 2. In **Convert Virtual Machine** wizard > **Select Source**, select **Browse** and in **Select Virtual Machine Source**, select the VMware VMs you want to convert.
 3. In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 4. In **Virtual Machine Configuration**, specify the number of processors and memory settings.
-5. In **Select Host**, select a Hyper-V host/Azure Stack HCI (applicable from VMM 2019 UR3 and later) for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM paths are listed.
+5. In **Select Host**, select a Hyper-V host/Azure Local machine (applicable from VMM 2019 UR3 and later) for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM paths are listed.
 6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
 7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 8. Select **Create** to start the conversion.
@@ -254,7 +253,7 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 4.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
-5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings and select the **Generation** of the target VM.
+5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings.
 
 6.	In **Select Host**, select a Hyper-V host/Azure Local for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
