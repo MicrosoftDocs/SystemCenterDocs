@@ -232,7 +232,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 
-After creating an Azure Local instance, it must be registered with Azure within 30 days of installation per Azure Online Service terms. If you're using System Center 2022, use `Register-SCAzStackHCI` cmdlet in VMM to register the Azure Local instance with Azure. Alternatively, follow [these steps](/azure-stack/hci/deploy/register-with-azure) to register the Azure Local instance with Azure.
+After creating an Azure Local instance, it must be registered with Azure within 30 days of installation per Azure Online Service terms. If you're using System Center 2022, use `Register-SCAzStackHCI` cmdlet in VMM to register the Azure Local instance with Azure. Alternatively, follow [these steps](/azure/azure-local/deploy/register-with-azure) to register the Azure Local instance with Azure.
 
 ::: moniker-end
 

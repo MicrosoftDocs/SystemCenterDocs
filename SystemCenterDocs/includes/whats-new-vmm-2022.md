@@ -59,13 +59,13 @@ The following sections introduce the new features and feature updates supported 
 
 For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7).
 
-### Support for Azure Stack Local instances 22H2
+### Support for Azure Local instances 22H2
 
 With VMM 2022 UR1, you can manage Azure Local, 22H2 instances.
 
 Azure Stack HCI, version 22H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters.
+Most of the operations to manage Azure Local instances in VMM are similar to managing Windows Server clusters.
 
 See [Deploy and manage Azure Local instances in VMM](../vmm/deploy-manage-azure-stack-hci.md).
 
