@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/25/2024
+ms.date: 12/19/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -119,7 +119,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 Supported versions:
 
-- Debian 9, 10, 11, and 12
+- Debian 8, 9, 10, 11, and 12
 - Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!NOTE]
@@ -137,12 +137,11 @@ Supported versions:
 
 Supported versions:
 
-- Oracle Linux 7, 8, and 9 (supported from Operations Manager 2019 UR5 and later)
-- Rocky 8 (supported from Operations Manager 2019 UR4 and later), and 9 (supported from Operations Manager 2019 UR5 and later)
-- Alma 8 (supported from Operations Manager 2019 UR4 and later), and 9 (supported from Operations Manager 2019 UR5 and later)
-- Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
-- Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR5 and later) 
-- Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
+- CentOS 7 and 8
+- Oracle Linux 7<br> Oracle Linux 8 is supported from Operations Manager 2019 UR3 later<br> Oracle Linux 9 is supported from Operations Manager 2019 UR5 and later
+- Rocky 8 is supported from Operations Manager 2019 UR4 and later<br>Rocky 9 is supported from Operations Manager 2019 UR5 and later
+- Alma 8 is supported from Operations Manager 2019 UR4 and later<br>Alma 9 is supported from Operations Manager 2019 UR5 and later
+- Red Hat Enterprise Linux (RHEL) Server 8 is supported from Operations Manager 2019 UR1 and later<br>Red Hat Enterprise Linux (RHEL) Server 9 is supported from Operations Manager 2019 UR5 and later
 - SLES 15 is supported from System Center - Operations Manager 2019 UR1 and later
 
 >[!Note]
