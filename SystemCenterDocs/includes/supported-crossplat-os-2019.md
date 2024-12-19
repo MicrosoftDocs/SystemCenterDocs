@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/18/2024
+ms.date: 12/19/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -119,7 +119,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 Supported versions:
 
-- Debian 9, 10, 11, and 12
+- Debian 8, 9, 10, 11, and 12
 - Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!NOTE]
