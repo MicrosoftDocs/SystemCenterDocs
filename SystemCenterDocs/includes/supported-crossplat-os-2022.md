@@ -37,7 +37,7 @@ ms.subservice: operations-manager
 
 Supported versions:
 
-- Debian 9, 10, 11, and 12
+- Debian 8, 9, 10, 11, and 12
 - Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!Note]
