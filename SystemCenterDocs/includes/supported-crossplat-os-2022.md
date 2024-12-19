@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/25/2024
+ms.date: 12/18/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -37,7 +37,7 @@ ms.subservice: operations-manager
 
 Supported versions:
 
-- Debian 9, 10, 11, and 12
+- Debian 8, 9, 10, 11, and 12
 - Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!Note]
@@ -60,6 +60,7 @@ Supported versions:
 - Rocky 8 and 9
 - Alma 8 and 9
 - Red Hat Enterprise Linux (RHEL) Server 8 and 9
+- CentOS 7 and 8
 
 >[!Note]
 >- Oracle Linux 9, Rocky 9, and Alma 9 are supported from Operations Manager 2022 UR1 and later when you apply this [hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
