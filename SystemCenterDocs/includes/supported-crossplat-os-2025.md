@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/25/2024
+ms.date: 12/20/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -54,6 +54,7 @@ Supported versions:
 
 Supported versions:
 
+- CentOS 7, and 8
 - Oracle Linux 7, 8, and 9
 - SLES 15
 - openSUSE Leap 15t
