@@ -5,7 +5,7 @@ description: This article lists the Microsoft Management Packs.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 12/20/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -91,7 +91,6 @@ The following table is for reference only and contains links to management packs
 |[Microsoft Azure SQL Database](https://www.microsoft.com/download/details.aspx?id=38829)|7.0.26.0|11/03/2020|
 |[Microsoft Azure SQL Managed Instance](https://www.microsoft.com/download/details.aspx?id=101203)|7.0.34.0|12/22/2021|
 |[Microsoft Azure Stack Hub](https://www.microsoft.com/download/details.aspx?id=55184)|1.0.9.0|03/30/2023|
-|[Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=50013)|1.8.0.89|08/18/2022|
 |[Microsoft Distributed Transaction Coordinator (MSDTC) 2016 and above Management Pack for Microsoft System Center](https://www.microsoft.com/download/details.aspx?id=54271)|10.0.0.1|6/7/2022|
 |[Microsoft Exchange Server 2013 and above Management Pack](https://www.microsoft.com/download/details.aspx?id=39039)|15.0.669.23|6/22/2022|
 |[Microsoft Host Integration Server 2013 Management Pack](https://www.microsoft.com/download/details.aspx?id=39978)|9.0.2060.1|9/11/2019|
