@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/15/2024
+ms.date: 12/18/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -20,9 +20,9 @@ See the following sections for new features and feature updates supported in VMM
 
 VMM 2025 supports Windows Server 2025 hosts and Virtual Machines.
 
-### Support for management of VMs on Azure Stack HCI clusters 23H2
+### Support for management of VMs on Azure Local instances 23H2
 
-With VMM 2025, you can manage the virtual machines running on Azure Stack HCI 23H2 clusters.
+With VMM 2025, you can manage the virtual machines running on Azure Local 23H2 instances.
 
 ### Enhanced security posture
 
