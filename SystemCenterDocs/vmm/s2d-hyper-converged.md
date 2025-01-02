@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 12/18/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -57,19 +57,12 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 :::moniker-end
 
-:::moniker range="sc-vmm-2022"
-
-  > [!NOTE]
-  > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
-
-:::moniker-end
-
 :::moniker range="sc-vmm-2025"
 
 - Ensure that you're running VMM 2019 or later.
 - Hyper-V hosts in a cluster must be running Windows Server 2019 or later with the Hyper-V Role installed and be configured to host VMs.
   > [!NOTE]
-  > VMM 2025 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
+  > VMM 2025 supports [Azure Local (version 23H2 and 22H2)](deploy-manage-azure-stack-hci.md).
 
 :::moniker-end
 
