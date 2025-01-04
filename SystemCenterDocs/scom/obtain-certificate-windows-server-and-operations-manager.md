@@ -217,7 +217,7 @@ For more information, see [certificate templates](/previous-versions/windows/it-
       ```
 
       [NewRequest]
-      Subject=”CN=server.contoso.com”
+      Subject="CN=server.contoso.com"
       Key Exportable = TRUE  ; Private key is exportable
       HashAlgorithm = SHA256
       KeyLength = 2048  ; (2048 or 4096 as per Organization security requirement.)
