@@ -41,12 +41,15 @@ If your organization doesn't use AD CS or uses an external certificate authority
 - Subject="CN=server.contoso.com" ; (this should be the FQDN of the target, or how the system shows in DNS)
 
 - [Key Usage]
-     - Key Exportable=TRUE ; This setting is required when requesting certificates to be used on non-domain joined systems.
-     - HashAlgorithm = SHA256
-     - KeyLength=2048
-     - KeySpec=1
-     - KeyUsage=0xf0
-     - MachineKeySet=TRUE
+    Key Exportable = FALE  ; Private key is NOT exportable, unless creating on a domain machine for a non-domain machine, then use TRUE
+    HashAlgorithm = SHA256
+    KeyLength = 2048  ; (2048 or 4096 as per Organization security requirement.)
+    KeySpec = 1  ; AT_KEYEXCHANGE
+    KeyUsage = 0xf0  ; Digital Signature, Key Encipherment
+    MachineKeySet = TRUE ; The key belongs to the local computer account
+    ProviderName = "Microsoft RSA SChannel Cryptographic Provider"
+    ProviderType = 12
+    KeyAlgorithm = RSA
 
 - [EnhancedKeyUsageExtension]
      - OID=1.3.6.1.5.5.7.3.1 ; Server Authentication
