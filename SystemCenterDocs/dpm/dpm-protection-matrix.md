@@ -3,7 +3,7 @@ description: A complete matrix of all workloads, data types, and installations t
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/31/2024
+ms.date: 11/01/2024
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -34,6 +34,12 @@ Use the following matrix for DPM 2016:
 ::: moniker range="sc-dpm-2022"
 
 Use the following matrix for DPM 2022:
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+Use the following matrix for DPM 2025:
 
 ::: moniker-end
 
@@ -120,6 +126,34 @@ The following sections provide details of the protection support matrix for DPM:
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022) <br /><br /> Linux virtual machines running on versions 6.0, 6.5, 6.7, or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Physical server <br /><br />Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2022, Windows Server 2019, and Windows Server 2016. <br /><br />Protect: Entire virtual machine.<br /><br />Recover: Entire virtual machine.<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
+### Applications backup
+
+| Workload | Version | DPM installation | Protection and recovery |
+|---|---|---|---|---|---|
+| Client computers (64-bit) | Windows 10<br /><br />Windows 11 | Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine | Volume, share, folder, files, and deduped volumes<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB. |
+| Servers (64-bit) | Windows Server 2025, 2022, 2019 | Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine | Volume, share, folder, file, and deduped volumes.<br /><br />[System state and bare metal](back-up-system-state-and-bare-metal.md) (not supported for Azure virtual machine).<br /><br />DPM 2019 UR1 and later supports the protection of ReFS volumes and ReFS deduped volume. |
+| System Center VMM | VMM 2025, 2022, 2019 | Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine | All deployment scenarios: Database |
+| SQL Server | SQL Server 2022, SQL Server 2019, SQL Server 2017, 2016 and [supported SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202016), 2014 and supported [SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202014) | Physical server <br /><br /> Hyper-V virtual machine <br /><br /> VMware virtual machine <br /> <br /> Azure virtual machine | All deployment scenarios: database<br /><br />DPM 2019 UR1 and later supports the backup of SQL over ReFS. <br /><br /> DPM 2019 UR2 and later supports the backup of SQL database, stored on the Cluster Shared Volumes (CSVs). <br /><br />SQL Server 2022<br /><br />Note: Install latest version of OLEDB 19 (19.3 and above)|
+| Exchange | 2019, 2016 | Physical server<br/><br/> Hyper-V virtual machine <br /><br />VMware virtual machine | Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> DPM 2019 doesn't support the backup of Exchange over ReFS<br /><br /> DPM 2019 UR1 and later supports the backup of Exchange over ReFS |
+| SharePoint | 2019, 2016 with latest SPs | Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine) | Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS<br /><br />Note: Install latest version of OLEDB 19 (19.3 and above)|
+
+### VM backup
+
+|Workload|Version|DPM installation|Protection and recovery|
+|------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
+|Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2025, 2022, 2019|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on Cluster Shared Volumes (CSVs)<br /><br />Recover: Virtual machines, item-level recovery of files and folders, volumes, and virtual hard drives.|
+|VMware VMs | VMware server 6.5, 6.7, 7.0, 8.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on Cluster Shared Volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machines, item-level recovery of files and folders available only for Windows, volumes, and virtual hard drives.<br /><br />VMware vApps aren't supported.|
+
+### Linux
+
+|Workload|Version|DPM installation|Protection and recovery|
+|------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
+|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022/2025) <br /><br /> Linux virtual machines running on versions 6.5, 6.7, or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows Server 2016. <br /><br />Protect: Entire virtual machine.<br /><br />Recover: Entire virtual machine.<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 
 ::: moniker-end
 

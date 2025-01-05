@@ -3,7 +3,7 @@ description: This article helps you create a strategy for backing up the DPM ser
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/29/2024
+ms.date: 11/01/2024
 title: Back up the DPM server
 ms.subservice: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
@@ -162,7 +162,6 @@ After switching protection, the replica appears as inconsistent, until the check
 ![Diagram of Switch protection.](./media/back-up-the-dpm-server/secondary-protection.png)
 
 >[!NOTE]
->
 > - To switch the protection back to the primary server, do the same steps as above.
 > - You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](/powershell/module/dataprotectionmanager/start-dpmswitchprotection) PowerShell cmdlet.
 
@@ -176,8 +175,8 @@ When you recover a primary DPM server, you’ll need to re-establish the protect
 
 **Re-establish protection with primary DPM server**
 
-1.	On the protected computer, from the command prompt, run the command *Setdpmserver.exe \<primary DPM server name>*.
-2.	Open **Computer Management** and do the following:
+1. On the protected computer, from the command prompt, run the command *Setdpmserver.exe \<primary DPM server name>*.
+2. Open **Computer Management** and do the following:
 
     - Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
         - Distribute COM Users
@@ -242,9 +241,9 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
         **Select distinct MajorVersionNumber,MinorVersionNumber ,BuildNumber, FileName FROM dbo.tbl\_AM\_AgentPatch order by MajorVersionNumber,MinorVersionNumber,BuildNumber**
 
-    ::: moniker range="sc-dpm-2022"
+    ::: moniker range=">=sc-dpm-2022"
 
-    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions?view=sc-dpm-2022&preserve-view=true).
+    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups, see [List of Build Numbers for System Center Data Protection Manager (DPM)](/system-center/dpm/release-build-versions).
 
     ::: moniker-end
 
@@ -262,7 +261,7 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
 ### Back up to Azure
 
-1.  Before you start, you'll need to run a script to retrieve the DPM replica volume mount point path so that you know which recovery point contains the DPM backup. Do this after initial replication with Azure Backup. In the script, replace dplsqlservername% with the name of the SQL Server instance hosting the DPM database.
+1. Before you start, you'll need to run a script to retrieve the DPM replica volume mount point path so that you know which recovery point contains the DPM backup. Do this after initial replication with Azure Backup. In the script, replace dplsqlservername% with the name of the SQL Server instance hosting the DPM database.
 
 ::: moniker range="sc-dpm-2016"
 
@@ -302,34 +301,35 @@ and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
 
 Ensure that you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
 
-2.  Create an Azure Backup vault, and download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](/azure/backup/backup-azure-dpm-introduction).
+2. Create an Azure Backup vault, and download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](/azure/backup/backup-azure-dpm-introduction).
 
-3.  After the vault is configured, set up a DPM protection group that contains the DPM database, and select to back it up to disk and to Azure.
+3. After the vault is configured, set up a DPM protection group that contains the DPM database, and select to back it up to disk and to Azure.
 
 #### Recover the DPM database from Azure
+
 You can recover the database from Azure using any DPM server \(must be running at least DPM 2012 R2 with update rollup 7\) that's registered in the Azure Backup vault as follows:
 
-1.  In the DPM console, select **Recovery** > **Add External DPM**.
+1. In the DPM console, select **Recovery** > **Add External DPM**.
 
-2.  Provide the vault credentials \(download from the Azure Backup vault\).
+2. Provide the vault credentials \(download from the Azure Backup vault\).
 
     > [!NOTE]
     >The credentials are only valid for two days.
 
-3.  In **Select External DPM for Recovery**, select the DPM server for which you want to recover the database, type in the encryption passphrase, and select **OK**.
+3. In **Select External DPM for Recovery**, select the DPM server for which you want to recover the database, type in the encryption passphrase, and select **OK**.
 
-4.  Select the recovery point you want to use from the list of available points. Select **Clear External DPM** to return to the local DPM view.
+4. Select the recovery point you want to use from the list of available points. Select **Clear External DPM** to return to the local DPM view.
 
 ## Back up the DPM database to DPM storage pool
 
 > [!NOTE]  
 > This option is applicable for DPM with Modern Backup Storage.
 
-1.	In DPM console, select **Protection** > **Create protection group**.
-2.	On the **Select Protection Group Type** page, select **Servers**.
-3.	On the **Select group members** page, select **DPM database** . If you're running SQL Server remotely, select the remote SQL Server installed and select DPM database. If SQL Server is running on the DPM server, expand the DPM server and select DPMDB.
-4.	On the **Select Data Protection Method** page, select **I want short-term protection using disk**. Specify the short-term protection policy options.
-5.	After the initial replication of DPM database, run the following SQL script:
+1. In DPM console, select **Protection** > **Create protection group**.
+2. On the **Select Protection Group Type** page, select **Servers**.
+3. On the **Select group members** page, select **DPM database** . If you're running SQL Server remotely, select the remote SQL Server installed and select DPM database. If SQL Server is running on the DPM server, expand the DPM server and select DPMDB.
+4. On the **Select Data Protection Method** page, select **I want short-term protection using disk**. Specify the short-term protection policy options.
+5. After the initial replication of DPM database, run the following SQL script:
 
 ::: moniker range="sc-dpm-2016"
 
@@ -371,20 +371,21 @@ and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
 ::: moniker-end
 
 ### Recover DPM database
+
 To reconstruct your DPM with the same DB, you need to first recover the DPM database and sync it with the freshly installed DPM.
 
 **Use the following steps**
 
-1.	Open an administrative command prompt and run *psexec.exe -s powershell.exe* to start a PowerShell window in system context.
-2.	Decide the location from where you want to recover the database:
+1. Open an administrative command prompt and run *psexec.exe -s powershell.exe* to start a PowerShell window in system context.
+2. Decide the location from where you want to recover the database:
 
-**To copy the database from the last backup**
+**Copy the database from the last backup**
 
 1. Navigate to replica VHD path **\<DPMServer FQDN\>\<PhysicalReplicaId\>\<PhysicalReplicaId\>**
 2. Mount the disk0.vhdx present in it using the mount-vhd disk0.vhdx command.
 3. Once the replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example, mountvol X: \?\Volume{}\
 
-**To copy the database from a previous recovery point**
+**Copy the database from a previous recovery point**
 
 1. Navigate to DPMDB container directory **\<DPMServer FQDN\>\<PhysicalReplicaId\>**; you'll see multiple directories with some unique GUID identifiers under it corresponding to recovery points taken for DPM DB. Directories other than \<PhysicalReplicaId\> represent a PIT/recovery point.
 2. Navigate to any PIT vhd path, that is, **\<DPMServer FQDN\>\<PhysicalReplicaId\>\<PITId\>**, and mount the disk0.vhdx present in it using the *mount-vhd disk0.vhdx* command.
@@ -406,6 +407,7 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 ::: moniker range="sc-dpm-2016"
 
 ### Back up the database by backing up the DPM storage pool
+
 > [!NOTE]
 > This option is applicable for DPM with legacy storage.
 
@@ -423,54 +425,53 @@ where ds.datasourcename like '%dpmdb%'
 and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
 ```
 
-1.  In DPM console, select **Protection** > **Create protection group**
+1. In DPM console, select **Protection** > **Create protection group**
 
-2.  On the **Select Protection Group Type** page, select  **Servers**.
+2. On the **Select Protection Group Type** page, select  **Servers**.
 
-3.  On the **Select group members** page, select the DPM database. If you're running SQL Server remotely, select the remote SQL Server installed and select DPM database. If SQL Server is running on the DPM server, expand the DPM server item and select **DPMDB**.
+3. On the **Select group members** page, select the DPM database. If you're running SQL Server remotely, select the remote SQL Server installed and select DPM database. If SQL Server is running on the DPM server, expand the DPM server item and select **DPMDB**.
 
-4.  On the **Select Data Protection Method** page, select **I want short\-term protection using disk**. Specify the short\-term protection policy options. We recommend a retention range of two weeks for DPM databases.
+4. On the **Select Data Protection Method** page, select **I want short\-term protection using disk**. Specify the short\-term protection policy options. We recommend a retention range of two weeks for DPM databases.
 
 #### Recover the database
 
 If the DPM server is still operational and the storage pool is intact \(problems with the DPM service or console\), then copy the database from the replica volume or a shadow copy as follows:
 
-1.  Decide from when you want to recover the database.
+1. Decide from when you want to recover the database.
 
-    -   If you want to copy the database from the last backup taken directly from the DPM replica volume, use **mountvol.exe** to assign a drive letter to the replica volume using the GUID from the SQL script output. For example: C:\\Mountvol X: \\\\?\\Volume{d7a4fd76\-a0a8\-11e2\-8fd3\-001c23cb7375}\\
+    - If you want to copy the database from the last backup taken directly from the DPM replica volume, use **mountvol.exe** to assign a drive letter to the replica volume using the GUID from the SQL script output. For example: C:\\Mountvol X: \\\\?\\Volume{d7a4fd76\-a0a8\-11e2\-8fd3\-001c23cb7375}\\
 
-    -   If you want to copy the database from a previous recovery point \(shadow copy\), then you need to list all the shadow copies for the replica using the volume GUID from the SQL script output. This command lists shadow copies for that volume: C:\\>Vssadmin list shadows \/for\=\\\\?\\Volume{d7a4fd76\-a0a8\-11e2\-8fd3\-001c23cb7375}\\. Remember the creation time and the shadow copy ID you want to recover from.
+    - If you want to copy the database from a previous recovery point \(shadow copy\), then you need to list all the shadow copies for the replica using the volume GUID from the SQL script output. This command lists shadow copies for that volume: C:\\>Vssadmin list shadows \/for\=\\\\?\\Volume{d7a4fd76\-a0a8\-11e2\-8fd3\-001c23cb7375}\\. Remember the creation time and the shadow copy ID you want to recover from.
 
-2.  Then use diskshadow.exe to mount the shadow copy to an unused drive letter X: using the shadow copy ID so that you can copy the database files.
+2. Then use diskshadow.exe to mount the shadow copy to an unused drive letter X: using the shadow copy ID so that you can copy the database files.
 
-3.  Open an administrative command prompt and run **psexec.exe \-s cmd.exe** to start a command prompt in system context so that you have the permission to navigate to the replica volume \(X:\) and copy the files.
+3. Open an administrative command prompt and run **psexec.exe \-s cmd.exe** to start a command prompt in system context so that you have the permission to navigate to the replica volume \(X:\) and copy the files.
 
-4.  CD to the X: drive and navigate to the location of the DPM database files. Copy them to a location that's easy to restore from. After the copy is complete, exit the psexec cmd window, and run diskshadow.exe and unexpose the X: volume.
-
-5.  Now you can restore the database files by using SQL Management Studio or by running DPMSYNC\-RESTOREDB.
+4. CD to the X: drive and navigate to the location of the DPM database files. Copy them to a location that's easy to restore from. After the copy is complete, exit the psexec cmd window, and run diskshadow.exe and unexpose the X: volume.
 
 ::: moniker-end
 
 ### Back up the database to a secondary server
 
-1.  On the secondary DPM server, push the protection agent to the server on which the DPM database is installed - either on the primary DPM server or on a remote SQL Server. After installation, the server will appear in **Unprotected server with protection agents** and should show status **OK** when refreshed.
+1. On the secondary DPM server, push the protection agent to the server on which the DPM database is installed - either on the primary DPM server or on a remote SQL Server. After installation, the server will appear in **Unprotected server with protection agents** and should show status **OK** when refreshed.
 
-2.  Create a new protection group. In **Select group member**, choose the server hosting the DPM database. In **All SQL Servers**, select the database you want to protect.
+2. Create a new protection group. In **Select group member**, choose the server hosting the DPM database. In **All SQL Servers**, select the database you want to protect.
     In the **Select Data Protection Method** page, select to use short-term protection to disk and online if necessary. On the **Specify Short-Term Goals** page, select how to you want to configure backups to short-term storage. For disk storage, you can have 512 express full backups as often as every 30 minutes.
     Finish the wizard. Protection will start after the initial recovery point is created
 
 #### Recover the database
 
-1.  Rebuild the primary server as a DPM server if necessary.
+1. Rebuild the primary server as a DPM server if necessary.
 
-2.  To restore the database, in the DPM console on the secondary server, select **Recovery** and locate the protected database.
+2. To restore the database, in the DPM console on the secondary server, select **Recovery** and locate the protected database.
 
-3.  Select the date for the recovery point you want to recover. Recover the database to the original location.
+3. Select the date for the recovery point you want to recover. Recover the database to the original location.
     After recovering the database, run the DPMSync tool.
 
 ::: moniker range="sc-dpm-2019"
 
 ## Back up the database to tape
+
 You'll need to know the barcode or tape labels of the tapes that contain a copy of the DPM database. The best way to do this is to schedule a Status Report to be mailed on the same day that the DPM database is backed up. The report will include the last backup date/time, the tape label, and the barcode so that you can locate it for recovery. Alternatively, you can use this SQL script to extract the information from the current database so that you can store it separately in case of a disaster.
 
 ```
@@ -484,40 +485,41 @@ where ro.filespec like '%DPMDB%'
 order by CreationDate desc
 ```
 
-1.  Create a protection group and on the **Select Group Members** page, select the SQL Server (if it's running locally, select DPMDB under the DPM server).
+1. Create a protection group and on the **Select Group Members** page, select the SQL Server (if it's running locally, select DPMDB under the DPM server).
 
-2.  Select to do long-term protection with tape and specify the tape details on the **Select Library and Tape Details**.
+2. Select to do long-term protection with tape and specify the tape details on the **Select Library and Tape Details**.
 
 ### Recover the database
 
--   The restore process will depend on the tape hardware available and the current state of the DPM server that took the tape-based backup. If you can't restore the tape from the DPM server that did the backup, you'll need to restore it from another DPM server that has the same type of tape drive so that the tape can be read. You might need to rebuild the DPM server if the only tape hardware available was the one attached to the failed DPM server.
+- The restore process will depend on the tape hardware available and the current state of the DPM server that took the tape-based backup. If you can't restore the tape from the DPM server that did the backup, you'll need to restore it from another DPM server that has the same type of tape drive so that the tape can be read. You might need to rebuild the DPM server if the only tape hardware available was the one attached to the failed DPM server.
 
--   If you're using DPM tape encryption, you'll need the same certificate used to encrypt the tape installed on the alternate DPM server.
+- If you're using DPM tape encryption, you'll need the same certificate used to encrypt the tape installed on the alternate DPM server.
 
 To recover:
 
-1.  Locate the physical tape that contains the version/date/time of the DPM database you want to restore.
+1. Locate the physical tape that contains the version/date/time of the DPM database you want to restore.
 
-2.  Insert the backup tape into the tape drive or library and perform a detailed inventory in the DPM console -> Management ->Libraries.
+2. Insert the backup tape into the tape drive or library and perform a detailed inventory in the DPM console -> Management ->Libraries.
 
     > [!NOTE]
     > If the DPM server you're restoring from is a different DPM server or it's a new installation of DPM on the original server, the tape will be shown as imported (not created by this DPM server).
 
-3.  If necessary, recatalog the imported tape.
+3. If necessary, recatalog the imported tape.
 
-4.  On the **Recovery** tab, locate the database data source. If it was from an imported tape, the recovery point will be under **External DPM tapes**.
+4. On the **Recovery** tab, locate the database data source. If it was from an imported tape, the recovery point will be under **External DPM tapes**.
 
-5.  Recover the database (DPMDB) files. You can select to Recover to any instance of the SQL Server or to Copy to a network folder.
+5. Recover the database (DPMDB) files. You can select to Recover to any instance of the SQL Server or to Copy to a network folder.
     After the files are restored from tape, continue with recovery steps using SQL Management Studio or DPMSYNC -RESTOREDB.
 
 ::: moniker-end
 
 ## Back up with native SQL Server backup to a local disk
+
 You can back up the DPM database to a local disk with native SQL Server backup, independent of DPM.
 
-1.  Get an [overview](/previous-versions/sql/sql-server-2012/ms187048(v=sql.110)) of SQL Server backup.
+1. Get an [overview](/previous-versions/sql/sql-server-2012/ms187048(v=sql.110)) of SQL Server backup.
 
-2.  [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
+2. [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
 
 ### Back up with native SQL Server backup to a share protected by DPM
 
@@ -525,26 +527,26 @@ This backup option uses native SQL to back up the DPM database to a share, prote
 
 **Before you start**
 
-1.  If the DPM database is located on a remote SQL Server, install the DPM agent on that server.
+1. If the DPM database is located on a remote SQL Server, install the DPM agent on that server.
 
-2.  On the SQL Server, make a folder on a drive with enough free space to hold a single copy of a backup. For example: C:\DPMBACKUP.
+2. On the SQL Server, make a folder on a drive with enough free space to hold a single copy of a backup. For example: C:\DPMBACKUP.
 
-3.  Share the folder. For example, share C:\DPMBACKUP folder as DPMBACKUP.
+3. Share the folder. For example, share C:\DPMBACKUP folder as DPMBACKUP.
 
-4.  Copy and paste the OSQL command below into Notepad and save it to a file named C:\DPMBACKUP\bkupdb.cmd. Ensure that there's no .txt extension. Modify the SQL_Instance_name andDPMDB_NAME to match the instance and DPMDB name used by your DPM server.
+4. Copy and paste the OSQL command below into Notepad and save it to a file named C:\DPMBACKUP\bkupdb.cmd. Ensure that there's no .txt extension. Modify the SQL_Instance_name andDPMDB_NAME to match the instance and DPMDB name used by your DPM server.
 
     ```
     OSQL -E -S localhost\SQL_INSTANCE_NAME -Q "BACKUP DATABASE DPMDB_NAME TO DISK='C:\DPMBACKUP\dpmdb.bak' WITH FORMAT"
 
     ```
 
-5.  Using Notepad, open the ScriptingConfig.xml file located under the ...\DPM\Scripting folder.
+5. Using Notepad, open the ScriptingConfig.xml file located under the ...\DPM\Scripting folder.
 
-    -   On a remote SQL Server: **C:\Program Files\Microsoft Data Protection Manager\DPM\Scripting**
+    - On a remote SQL Server: **C:\Program Files\Microsoft Data Protection Manager\DPM\Scripting**
 
-    -   On a DPM server: **C:\Program Files\Microsoft System Center\DPM\DPM\Scripting**
+    - On a DPM server: **C:\Program Files\Microsoft System Center\DPM\DPM\Scripting**
 
-6.  Modify ScriptingConfig.xml and change DataSourceName= to be the drive letter that contains the DPMDBBACKUP folder/share. Change the PreBackupScript entry to the full path and name of thebkupdb.cmd saved in step 5.
+6. Modify ScriptingConfig.xml and change DataSourceName= to be the drive letter that contains the DPMDBBACKUP folder/share. Change the PreBackupScript entry to the full path and name of thebkupdb.cmd saved in step 5.
 
     ```
     <?xml version="1.0" encoding="utf-8"?>
@@ -558,17 +560,17 @@ This backup option uses native SQL to back up the DPM database to a share, prote
     </ScriptConfiguration>
     ```
 
-7.  Save the changes to ScriptingConfig.xml.
+7. Save the changes to ScriptingConfig.xml.
 
-8.  Protect the C:\DPMBACKUP folder or the \\\sqlservername\DPMBACKUP share using DPM and wait for the initial replica to be created. There should be a dpmdb.bak in the C:\DPMBACKUPfolder as a result of the pre-backup script running, which was in turn copied to the DPM replica.
+8. Protect the C:\DPMBACKUP folder or the \\\sqlservername\DPMBACKUP share using DPM and wait for the initial replica to be created. There should be a dpmdb.bak in the C:\DPMBACKUPfolder as a result of the pre-backup script running, which was in turn copied to the DPM replica.
 
 ::: moniker range="sc-dpm-2016"
 
 9. If you don't enable self-service recovery, you'll need some additional steps to share out the DPMBACKUP folder on the replica:
 
-    1.  In the DPM console > **Protection**, locate the DPMBACKUP data source and select it. In the details section, select **Click to view details** on the link to the replica path and copy the path into Notepad. Remove the source path and retain the destination path. The path should look similar to the following: **C:\Program Files\Microsoft System Center\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP**.
+    1. In the DPM console > **Protection**, locate the DPMBACKUP data source and select it. In the details section, select **Click to view details** on the link to the replica path and copy the path into Notepad. Remove the source path and retain the destination path. The path should look similar to the following: **C:\Program Files\Microsoft System Center\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP**.
 
-    2.  Make a share to that path using the share name **DPMSERVERNAME-DPMDB**. You can use the Net Share command below from an administrative command prompt.
+    2. Make a share to that path using the share name **DPMSERVERNAME-DPMDB**. You can use the Net Share command below from an administrative command prompt.
 
         ```
         Net Share DPMSERVERNAME-dpmdb="C:\Program Files\Microsoft System Center\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP"
@@ -579,19 +581,19 @@ This backup option uses native SQL to back up the DPM database to a share, prote
 
 You can back up the DPM database as you would any other SQL Server database using SQL Server native backup.
 
--   Get an [overview](/previous-versions/sql/sql-server-2012/ms187048(v=sql.110)) of SQL Server backup.
+- Get an [overview](/previous-versions/sql/sql-server-2012/ms187048(v=sql.110)) of SQL Server backup.
 
--   [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
+- [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
 
 ::: moniker range="sc-dpm-2016"
 
 **Recover the database**
 
-1.  Connect to the **\\\DPMServer\DPMSERVERNAME-dpmdb** share using Explorer from any Windows computer.
+1. Connect to the **\\\DPMServer\DPMSERVERNAME-dpmdb** share using Explorer from any Windows computer.
 
-2.  Right-click the dpmdb.bak file to view properties. On the **Previous Versions** tab, there are all the backups that you can select and copy. There's also the very last backup still located in the C:\DPMBACKUP folder, which is also easily accessible.
+2. Right-click the dpmdb.bak file to view properties. On the **Previous Versions** tab, there are all the backups that you can select and copy. There's also the very last backup still located in the C:\DPMBACKUP folder, which is also easily accessible.
 
-3.  If you need to move a SAN attached DPM storage pool disk to another server to be able to read from the replica volume or to reinstall Windows to read locally attached disks, you'll need to know the DPM Replica volume Mount point path or Volume GUID beforehand so you know what volume holds the database backup. You can use the SQL script below to extract that information anytime after initial protection but before the need to restore. Replace the %dpmsqlservername% with the name of the SQL Server hosting the database.
+3. If you need to move a SAN attached DPM storage pool disk to another server to be able to read from the replica volume or to reinstall Windows to read locally attached disks, you'll need to know the DPM Replica volume Mount point path or Volume GUID beforehand so you know what volume holds the database backup. You can use the SQL script below to extract that information anytime after initial protection but before the need to restore. Replace the %dpmsqlservername% with the name of the SQL Server hosting the database.
 
     ```
     Select ag.NetbiosName as
@@ -607,20 +609,20 @@ You can back up the DPM database as you would any other SQL Server database usin
 
     ```
 
-4.  If you need to recover after moving DPM storage pool disks or a DPM server rebuild:
+4. If you need to recover after moving DPM storage pool disks or a DPM server rebuild:
 
-    1.  You have the volume GUID, so should that volume need to be mounted on another Windows server or after a DPM server rebuild, use mountvol.exe to assign it a drive letter using the volume GUID from the SQL script output: **C:\Mountvol X: \\\\?\Volume{d7a4fd76-a0a8-11e2-8fd3-001c23cb7375}\\**.
+    1. You have the volume GUID, so should that volume need to be mounted on another Windows server or after a DPM server rebuild, use mountvol.exe to assign it a drive letter using the volume GUID from the SQL script output: **C:\Mountvol X: \\\\?\Volume{d7a4fd76-a0a8-11e2-8fd3-001c23cb7375}\\**.
 
-    2.  Reshare the DPMBACKUP folder on the replica volume using the drive letter and portion of the replica path representing the folder structure.
+    2. Reshare the DPMBACKUP folder on the replica volume using the drive letter and portion of the replica path representing the folder structure.
 
         ```
         net share SERVERNAME-DPMDB="X:\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP"
 
         ```
 
-    3.  Connect to the \\\SERVERNAME\DPMSERVERNAME-dpmdb share using Explorer from any Windows computer
+    3. Connect to the \\\SERVERNAME\DPMSERVERNAME-dpmdb share using Explorer from any Windows computer
 
-    4.  Right-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab, there are all the backups that you can select and copy.
+    4. Right-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab, there are all the backups that you can select and copy.
 
 ::: moniker-end
 
@@ -634,14 +636,13 @@ DPM database contains the DPM configuration together with data about DPM's backu
 
 Ensure that:
 
-1.	DPM DB is backed up on to local disks.
-2.	Storage pool is intact and available.
+- DPM DB is backed up on to local disks.
+- Storage pool is intact and available.
 
 >[!NOTE]
 >The Fully Qualified Domain Name (FQDN) of the DPM server during recovery needs to be same as the original DPM server.
 
-
-###  Back up DPM database
+### Back up DPM database
 
 1. In DPM console, select **Protection** > **Create protection group**.
 2. On the **Select Protection Group Type** page, select **Servers**.
@@ -671,20 +672,21 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 
 Use the following steps:
 
-1.	Open an administrative command prompt and run psexec.exe -s powershell.exe to start a PowerShell window in system context.
-2.	Decide from where you want to recover the database:
+1. Open an administrative command prompt and run psexec.exe -s powershell.exe to start a PowerShell window in system context.
+2. Decide from where you want to recover the database:
 
-**To copy the database from the last backup**
-1.	Navigate to replica VHD path, that is, \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PhysicalReplicaId>
-2.	Mount the disk0.vhdx present in it using mount-vhd disk0.vhdx
-3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output.
+**Copy the database from the last backup**
+
+1. Navigate to replica VHD path, that is, \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PhysicalReplicaId>
+2. Mount the disk0.vhdx present in it using mount-vhd disk0.vhdx
+3. Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output.
 For example, mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
-**To copy the database from a previous recovery point**
+**Copy the database from a previous recovery point**
 
-1.	Navigate to DPMDB container directory, that is, \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId\>\, you'll see multiple directories with some unique GUID identifiers under it corresponding to recovery points taken for DPM DB. Directories other than \<PhysicalReplicaId\> represent a PIT/recovery point.
-2.	Navigate to any PIT vhd path, that is, \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
-3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example, mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
+1. Navigate to DPMDB container directory, that is, \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId\>\, you'll see multiple directories with some unique GUID identifiers under it corresponding to recovery points taken for DPM DB. Directories other than \<PhysicalReplicaId\> represent a PIT/recovery point.
+2. Navigate to any PIT vhd path, that is, \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
+3. Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example, mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
     All of the following text within angular braces in the above steps are placeholders; replace them with appropriate values.
 
@@ -692,12 +694,12 @@ For example, mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
     - DPMServer FQDN - Fully qualified domain name of DPM server
     - PhysicalReplicaId - Physical replica ID from the SQL script output
     - PITId - GUID identifier other than physical replica ID in the container directory.
-4.	Open another administrative command prompt and run psexec.exe -s cmd.exe to start a command prompt in system context.
-5.	Change directory to the X: drive and navigate to the location of the DPM database files.
-6.	Copy them to a location that's easy to restore from. Exit the psexec cmd window after copying.
-7.	Go to the psexec PowerShell window opened in step 1, navigate to the VHDX path, and dismount the VHDX by using the command dismount-vhd disk0.vhdx.
-8.	After reinstalling the DPM server, you can use the restored DPMDB to attach to the DPM server by running DPMSYNC-RESTOREDB.
-9.	Run DPMSYNC-SYNC once DPMSYNC-RESTOREDB is complete.
+4. Open another administrative command prompt and run psexec.exe -s cmd.exe to start a command prompt in system context.
+5. Change directory to the X: drive and navigate to the location of the DPM database files.
+6. Copy them to a location that's easy to restore from. Exit the psexec cmd window after copying.
+7. Go to the psexec PowerShell window opened in step 1, navigate to the VHDX path, and dismount the VHDX by using the command dismount-vhd disk0.vhdx.
+8. After reinstalling the DPM server, you can use the restored DPMDB to attach to the DPM server by running DPMSYNC-RESTOREDB.
+9. Run DPMSYNC-SYNC once DPMSYNC-RESTOREDB is complete.
 
 ::: moniker-end
 

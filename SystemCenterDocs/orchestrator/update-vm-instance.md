@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Update VM Instance
-
-
 
 The **Update VM Instance** activity updates the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 

@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 02/08/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -24,10 +24,8 @@ However, this information isn't intended to provide detailed instructions on how
 >[!IMPORTANT]
 > Service Manager doesn't support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
 
-
 > [!NOTE]
 > After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
-
 
 ## SQL Server AlwaysOn supported Service Manager databases
 
@@ -53,7 +51,6 @@ Use the following tasks when you install a new management group with a SQL Alway
 3. Use SQL Server Management Studio to add the databases to the availability databases. When adding the databases to the availability databases under  **Select Data Synchronization**, three choices are possible:  **Full** ,  **Join only**  and  **Skip initial data synchronization**. Choose the option that is most appropriate for you. We recommend selecting  **Full**  and allowing the  **Add Database wizard**  to create a full backup and restore of the databases on the secondary replicas. More steps might or might not be needed depending on which choice you made. For more information, see [Manually Prepare a Secondary Database for an Availability Group (SQL Server)](/sql/database-engine/availability-groups/windows/manually-prepare-a-secondary-database-for-an-availability-group-sql-server).
 
 ## Use an existing management group
-
 
 Use the following series of tasks when using an existing management group with a SQL Server AlwaysOn availability group.
 

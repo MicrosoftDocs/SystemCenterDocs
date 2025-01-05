@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 08/12/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,12 @@ ms.subservice: operations-manager
 # Features and enhancements in Management Pack for SQL Server Reporting Services
 
 This article covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
+
+## December 2024 - 7.7 CTP
+
+### Bug fixes and improvements
+
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
 ## July 2024 - 7.6.1 RTM
 

@@ -5,11 +5,11 @@ description: Learn how to set up an SDN software load balancer in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/24/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 
@@ -23,8 +23,8 @@ The SLB enables even distribution of tenant and tenant customer network traffic 
 
 You can use VMM to deploy a network controller and a software load balancer. After you set up the SLB, you can use the multiplexing and NAT capabilities in your SDN infrastructure.
 
-::: moniker range="sc-vmm-2022"
-VMM 2022 provides dual stack support for SLB.
+::: moniker range=">=sc-vmm-2022"
+VMM 2025 and 2022 provide dual stack support for SLB.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2019"

@@ -5,15 +5,23 @@ description: This article describes the new features supported in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/16/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23
+ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24
 ---
 
 
 # What's new in System Center Virtual Machine Manager
+
+::: moniker range="sc-vmm-2025"
+
+This article details the new features supported in System Center 2025 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [whats-new-vmm-2025.md](../includes/whats-new-vmm-2025.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 

@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -35,7 +35,6 @@ When you deploy a Service Manager management server and a data warehouse, you ne
 - This doesn't affect either the Operations Manager to Service Manager Configuration Item connector, or the Operations Manager to  Service Manager Alert Incident connector.  
 - If you've databases with collations that don't match, you can't use the Operations Manager to Service Manager data warehouse connector. This connector imports alerts from the Operations Manager database, to the Service Manager DWStagingAndConfig database.
 
-
 ## Service Manager compatibility
 
 You can use any supported database collation for any System Center component with any supported Service Manager collation.  
@@ -58,9 +57,9 @@ Service Manager includes an Operations Manager agent. The agent is automatically
 - If you've already installed the portal or console on a server that doesn't host other Service Manager roles, then agent deployment will fail. To prevent the failure, back up the registry key as follows:
 
   1. Export the Service Manager key from HKEY\_CLASSES\_ROOT\\Installer\\Products\\\<ServiceManagerGUID\>. You can find the key by searching at the Products node for Data equal to Service Manager.  
-  2.  Delete the registry key.  
-  3.  Deploy the Operations Manager agent to the server.  
-  4.  Import the key you exported from step 1.
+  2. Delete the registry key.  
+  3. Deploy the Operations Manager agent to the server.  
+  4. Import the key you exported from step 1.
 
 ## Next steps
 

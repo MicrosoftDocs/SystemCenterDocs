@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -27,7 +27,7 @@ The sample scenario for customizing the default Incident form consists of three 
 
 Before you customize the form, view the default form in the Service Manager console and identify elements on the form that you want to customize. For example, you can plan to rearrange various text boxes on the form.
 
-### To view the default incident form
+To view the default incident form, follow these steps:
 
 1. In the Service Manager console, select **Work Items**.
 
@@ -41,7 +41,7 @@ Before you customize the form, view the default form in the Service Manager cons
 
 Use the following procedure to customize the default Incident form in the Authoring Tool.
 
-### To customize the Incident form
+To customize the Incident form, follow these steps:
 
 1. Select **Start**, point to **Programs**, point to **Microsoft System Center**, point to **Service Manager \<version\> Authoring**, and select **Service Manager Authoring Tool**.
 
@@ -71,7 +71,7 @@ Use the following procedure to customize the default Incident form in the Author
 
 Use the following procedure to view and use the customized Incident form in the Service Manager console.
 
-### To use the customized System.WorkItem.Incident.ConsoleForm form
+To use the customized System.WorkItem.Incident.ConsoleForm form, follow these steps:
 
 1. Start the Service Manager console, and select **Administration**.
 

@@ -2,7 +2,7 @@
 title: Orchestrator Integration Packs
 description: This article provides the list of integration packs for Orchestrator.
 ms.custom: UpdateFrequency2
-ms.date: 11/21/2022
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -16,8 +16,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # List of Integration Packs for Orchestrator
-
-
 
 ::: moniker range="<=sc-orch-2019"
 
@@ -59,7 +57,7 @@ The following is a list of the available integration packs and the information f
 
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">=sc-orch-2022"
 
 The following is a list of the available integration packs and the information for each.  
 
@@ -72,6 +70,8 @@ The following is a list of the available integration packs and the information f
  [REST](representational-state-transfer-rest-integration-pack.md)  
 
  [Share Point](integration-pack-for-microsoft-sharepoint.md)
+
+ [VMware Sphere](vsphere-integration-pack.md)  
 
  [Data Protection Manager](integration-pack-for-data-protection-manager.md)  
 

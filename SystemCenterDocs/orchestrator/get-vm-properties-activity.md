@@ -12,7 +12,7 @@ ms.assetid: c10df30c-2768-4407-9599-77eb0e1c7d42
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ---
 
 # Get VM Properties Activity
@@ -44,7 +44,7 @@ No optional properties are provided for this activity.
 | Memory MB   | The memory allocated to the VM in megabytes.   | String   |
 | VM Path   | The path of the virtual machine in the vSphere hierarchy.   | String   |
 
-## Configuring the Get VM Properties Activity
+## Configure the Get VM Properties Activity
 
 The following procedure describes the steps required to configure a Get VM Properties activity.
 

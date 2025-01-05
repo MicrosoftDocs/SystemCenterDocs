@@ -1,18 +1,18 @@
 ---
 ms.assetid: 6f8cff68-8b1f-49ab-a094-a1d5c17b2482
-title: How to Enable Recovery and Diagnostic Tasks
+title: Enable Recovery and Diagnostic Tasks
 description: This article describes how to create tasks to diagnose issues and take remedial actions.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/20/2019
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to enable recovery and diagnostic tasks
+# Enable recovery and diagnostic tasks
 
 
 
@@ -30,21 +30,21 @@ Some monitors have diagnostic or recovery tasks that are disabled by default. Yo
 
 On this tab, you can also add or edit tasks that you've added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](/previous-versions/system-center/system-center-2012-R2/hh705258(v=sc.12)) in the Author's Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides.
 
-## To enable a diagnostic or recovery task  
+## Enable a diagnostic or recovery task  
 
-1.  In the Operations console, in the **Authoring** workspace, right\-click a monitor and select **Properties**.  
+1. In the Operations console, in the **Authoring** workspace, right\-click a monitor and select **Properties**.  
 
-2.  Select the **Diagnostic and Recovery** tab.  
+2. Select the **Diagnostic and Recovery** tab.  
 
-3.  On the **Diagnostic and Recovery** tab, in the **Configure diagnostic tasks** or **Configure recovery tasks** section, ensure the desired task is selected and then select **Edit**.  
+3. On the **Diagnostic and Recovery** tab, in the **Configure diagnostic tasks** or **Configure recovery tasks** section, ensure the desired task is selected and then select **Edit**.  
 
-4.  On the **Overrides** tab, select **Override**. You can choose to override this monitor for objects of a specific type or for all objects within a group. After you choose which group or object type to override, the **Override Properties** dialog opens. For more information about applying an override, see [Using Classes and Groups for Overrides in Operations Manager](~/scom/manage-mp-overview-override-targets.md).  
+4. On the **Overrides** tab, select **Override**. You can choose to override this monitor for objects of a specific type or for all objects within a group. After you choose which group or object type to override, the **Override Properties** dialog opens. For more information about applying an override, see [Using Classes and Groups for Overrides in Operations Manager](~/scom/manage-mp-overview-override-targets.md).  
 
-5.  In the **Override\-controlled parameters** section, select **Enabled** and set the override value to **True**.  
+5. In the **Override\-controlled parameters** section, select **Enabled** and set the override value to **True**.  
 
-6.  Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by selecting **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
+6. Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by selecting **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
 
-7.  Select **OK**, and close the open properties windows.  
+7. Select **OK**, and close the open properties windows.  
 
 ## Next steps
 

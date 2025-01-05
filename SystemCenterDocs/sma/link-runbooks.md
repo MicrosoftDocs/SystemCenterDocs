@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 title: Child runbooks in Service Management Automation
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -13,11 +13,10 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Child runbooks in Service Management Automation
 
-
-
 It's a best practice in Service Management Automation (SMA) to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform the required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be the best for your different scenarios.
 
 ## Invoke a child runbook using inline execution
+
 To invoke a runbook inline from another runbook, you use the name of the runbook and provide values for its parameters exactly like you would use an activity or cmdlet.  All runbooks in the same SMA environment are available to all others to be used in this manner. The parent runbook will wait for the child runbook to complete before moving to the next line, and any output is returned directly to the parent.
 
 When you invoke a runbook inline, it runs in the same job as the parent runbook. There will be no indication in the job history of the child runbook that it ran. Any exceptions and any stream output from the child runbook will be associated with the parent. This results in fewer jobs and makes them easier to track and to troubleshoot since any exceptions thrown by the child runbook and any stream outputs that are associated with the parent runbook job.
@@ -42,6 +41,7 @@ $output = Test-ChildRunbook -VM $vm -RepeatCount 2 -Restart $true
 ```
 
 Following is the same example using a PowerShell script runbook as the child.
+
 ```powershell
 $vm = Get-VM -Name "MyVM" -ComputerName "MyServer"
 $output = .\Test-ChildRunbook.ps1 -VM $vm -RepeatCount 2 -Restart $true
@@ -76,6 +76,7 @@ Get-SmaJobOutput -WebServiceEndpoint $webServer -Port $port -Id $job.Id -Stream 
 ```
 
 ## Compare methods for calling a child runbook
+
 The following table summarizes the differences between the two methods for calling a runbook from another runbook.
 
 ||Inline|Cmdlet|

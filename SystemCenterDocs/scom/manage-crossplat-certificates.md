@@ -1,28 +1,26 @@
 ---
 ms.assetid: 332a9aa5-3176-4f39-b854-5a9817997eb5
-title: Managing Certificates for UNIX and Linux Computers
+title: Manage Certificates for UNIX and Linux Computers
 description: This article describes how to manage certificates required for authentication with UNIX and Linux computers with Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/20/2023
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Managing certificates for UNIX and Linux computers
+# Manage certificates for UNIX and Linux computers
 
 
 
 With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication isn't possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the management server acts as a standalone certificate authority. (Although it's possible to use third-party certificates, they aren't needed.)
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Prior to Operations Manager 2016, the Linux Agent used to generate certificates and encrypt it with SHA1. From 2016, the Linux Agent generates a SHA1 certificate and then, as part of the discovery process, the certificate gets encrypted with SHA256.
-
-With Operations Manager 2022, the certificate gets encrypted with SHA256.
 
 ::: moniker-end
 

@@ -9,7 +9,8 @@ ms.date: 09/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency3, engagement-fy24
+monikerRange: '<=sc-vmm-2022'
 ---
 
 # Manage Azure VMs

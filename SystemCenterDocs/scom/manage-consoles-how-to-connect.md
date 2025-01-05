@@ -4,7 +4,7 @@ description: This article describes how to open and configure the Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/13/2023
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -17,6 +17,7 @@ ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
 
 
 System Center Operations Manager includes two consoles:
+
 - The Operations console
 - The Web console
 
@@ -36,9 +37,9 @@ The System Center Operations Manager Operations console can be installed on any 
 
 Follow these steps to connect an Operations console to a management server:
 
-1.  To open the Operations console, select **Start** and then select **Microsoft System Center 2016\Operations Console**.
+1. To open the Operations console, select **Start** and then select **Microsoft System Center 2016\Operations Console**.
 
-2.  In the **Connect To Server** dialog, enter the server name or select a server from the list. (In the image above, the console hasn't yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
+2. In the **Connect To Server** dialog, enter the server name or select a server from the list. (In the image above, the console hasn't yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
 
 ::: moniker-end
 
@@ -48,9 +49,9 @@ Follow these steps to connect an Operations console to a management server:
 
 Follow these steps to connect an Operations console to a management server:
 
-1.  To open the Operations console, select **Start** and then select **Microsoft System Center\Operations Console**.
+1. To open the Operations console, select **Start** and then select **Microsoft System Center\Operations Console**.
 
-2.  In the **Connect To Server** dialog, enter the server name or select a server from the list. (In the image above, the console hasn't yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
+2. In the **Connect To Server** dialog, enter the server name or select a server from the list. (In the image above, the console hasn't yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
 
 ::: moniker-end
 
@@ -58,7 +59,7 @@ The Operations console opens with the focus on the Monitoring workspace.
 
 ### Change the management server that the Operations console is connected to
 
-1.  In the Operations console, select **Tools**, and then select **Connect...** as shown in the following image, which will open the **Connect To Server** window.  
+1. In the Operations console, select **Tools**, and then select **Connect...** as shown in the following image, which will open the **Connect To Server** window.  
 
     ![Screenshot showing Connect option from the Tools menu.](./media/manage-consoles-how-to-connect/om2016-operations-console-menu-connect.png)  
 
@@ -84,7 +85,7 @@ By default, the web console session is limited to 30 minutes. You can change thi
 
 ### Connect to a Web console  
 
--   Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.  
+- Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.  
 
     For information on installing the Web console, see [Install the Operations Manager Web console](~/scom/deploy-install-web-console.md).  
 

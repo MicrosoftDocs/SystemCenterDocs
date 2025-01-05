@@ -5,11 +5,11 @@ description: This article describes how to create and deploy VMs in the VMM fabr
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/30/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-deployment, engagement-fy23
+ms.custom: intro-deployment, engagement-fy23, engagement-fy24
 ---
 
 
@@ -30,19 +30,27 @@ This article describes how to create and deploy virtual machines in the System C
 ## Create a VM
 
 1. Select **VMs and Services** > **Create Virtual Machine** >**Create Virtual Machine**.
+
 2. In **Create Virtual Machine Wizard** > **Select Source**, select **Create the new virtual machine with a blank virtual hard disk** > **Next**.
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 3. In **Identity**, specify the VM name and an optional description. In the **Generation** box, select **Generation 1** or **Generation 2**. And then select **Next**.
+
 4. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 1 or Generation 2 machine. Select **Next**.
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+3. In **Identity**, specify the VM name and an optional description. In the **Generation** box, select **Generation 2** or **Generation 1**. And then select **Next**.
 
-    -   In **Compatibility**, if you want to deploy the virtual machine to a private cloud, select a capability profile that is available to the private cloud.
+4. In **Configure Hardware** page, either select the profile that you want to use from the **Hardware profile** list or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a Generation 2 or Generation 1 machine. Select **Next**.
+:::moniker-end
+   - In **Compatibility**, if you want to deploy the virtual machine to a private cloud, select a capability profile that is available to the private cloud.
 
-    -   In **Bus Configuration**, if you want to install an operating system from a DVD or an .iso image, ensure there's a virtual DVD drive that is configured to use an available option, such as the **Existing ISO image file** option. If you want to use an ISO image file, the file must be present in the VMM library.
-    -   If you want to store the virtual machine in the VMM library before you deploy it to a host, use of one of the blank virtual hard disks that are provided by default in the VMM library. Select the VHD in **Bus Configuration**. Select **Use an existing virtual hard disk** > **Browse**, and select a blank hard disk
-    -   If the virtual machine is a generation 1 that boots from the network to install an operating system, in **Network Adapters**, use the legacy network adapter type.
+   - In **Bus Configuration**, if you want to install an operating system from a DVD or an .iso image, ensure there's a virtual DVD drive that is configured to use an available option, such as the **Existing ISO image file** option. If you want to use an ISO image file, the file must be present in the VMM library.
 
-5.  In **Select Destination** page, specify how the virtual machine must be deployed - in a private cloud, on a host, or stored in the library.
+   - If you want to store the virtual machine in the VMM library before you deploy it to a host, use of one of the blank virtual hard disks that are provided by default in the VMM library. Select the VHD in **Bus Configuration**. Select **Use an existing virtual hard disk** > **Browse**, and select a blank hard disk.
 
+   - If the virtual machine is a Generation 1 that boots from the network to install an operating system, in **Network Adapters**, use the legacy network adapter type.
 
+5.  In **Select Destination** page, specify how the virtual machine should be deployed - in a private cloud, on a host, or stored in the library.
 
 ## Deploy the VM in a private cloud
 
@@ -61,6 +69,7 @@ This article describes how to create and deploy virtual machines in the System C
 5.  In **Summary**, confirm the settings, and select **Create**. Confirm that the VM was created in **VMs and Services** > **Clouds** and select the cloud. The virtual machine appears in the **VMs** pane.
 
 ## Deploy the VM on a host
+
 
 1. In **Select Host**, view the ratings, select the host on which you want to deploy the VM, and select **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
 

@@ -2,7 +2,7 @@
 title: Create Alert
 description: The Create Alert activity is used in a runbook to create a new alert in an Operations Manager management group.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 05/09/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Create Alert
-
-
 
 The Create Alert activity is used in a runbook to create a new alert in an Operations Manager management group.
 

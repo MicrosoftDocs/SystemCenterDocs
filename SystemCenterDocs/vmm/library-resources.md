@@ -9,7 +9,7 @@ ms.date: 08/02/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Manage the VMM library

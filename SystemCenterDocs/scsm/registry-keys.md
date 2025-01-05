@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 05/15/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.custom: UpdateFrequency5, engagement-fy24
 ---
@@ -20,11 +20,12 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 Service Manager stores many settings in the registry. You seldom have to edit the registry yourself, because most of those settings are derived from entries that you make in day-to-day use. However, some changes to settings might occasionally be required. Service Manager stores most registry values in the following locations:
 
--   HKEY_CURRENT_USER\Software\Microsoft\System Center\<version>\Service Manager\Console
+- HKEY_CURRENT_USER\Software\Microsoft\System Center\<version>\Service Manager\Console
 
--   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\<version>
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\<version>
 
 ## Service Manager console registry keys
+
 The keys in this section are used to manage the Service Manager console for the Service Manager console user. These keys are found in the HKEY_CURRENT_USER\Software\Microsoft\System Center\<version>\Service Manager\Console directory.
 
 |Key|Description and value|
@@ -48,6 +49,7 @@ The keys in this section are used to manage the Service Manager console for the 
 |HKEY_CURRENT_USER\Software\Microsoft\System Center\<version>\Service Manager\Console\User Settings\ SDKServiceMachine|Specifies the name of the server that the Service Manager console is connected to.|
 
 ## Service Manager registry keys
+
 Keys in this section are used to manage functions that are internal to Service Manager.
 
 |Key|Description and values|

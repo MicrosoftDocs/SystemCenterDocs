@@ -3,7 +3,7 @@ description: You can use Azure Data Box to seed initial Backup data offline from
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 06/24/2024
+ms.date: 11/01/2024
 title: Offline Seeding using Azure Data box
 ms.subservice: data-protection-manager
 ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
@@ -263,7 +263,7 @@ From the DPM/MABS server you're trying to configure offline backup, do the follo
     > To get the Azure user ID, perform one of these actions:
     >
     >- From the Azure-connected PowerShell, run the `Get-AzureRmADUser -UserPrincipalName "Account Holder's email as defined in the portal"` command.
-    > - Navigate to the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Azure Backup\DbgSettings\OnlineBackup` with the name *CurrentUserId*.
+    >- Navigate to the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Azure Backup\DbgSettings\OnlineBackup` with the name *CurrentUserId*.
 
 6. Right-click the string added in the step above and select **Modify**. In the value, provide the thumbprint of the certificate you exported in **point 2** and select **OK**.
 7. To get the value of thumbprint, double-click on the certificate, then select **Details**  and scroll-down until you see the thumbprint field. Select **Thumbprint** and copy the value.

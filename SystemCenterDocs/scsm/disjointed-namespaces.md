@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -20,7 +20,7 @@ ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
 
 In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjointed namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](/windows-server/identity/ad-ds/plan/disjoint-namespace).  
 
- We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
+We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
 
 ## Determine the principal name of the Service Manager management server  
 
@@ -44,15 +44,15 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 ## Edit the hosts file  
 
-1.  On the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal, start Windows Explorer and then locate the %Systemroot%\\System32\\Drivers\\Etc folder.  
+1. On the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal, start Windows Explorer and then locate the %Systemroot%\\System32\\Drivers\\Etc folder.  
 
-2.  Open the hosts file with Notepad by entering **notepad hosts**, and then press ENTER.  
+2. Open the hosts file with Notepad by entering **notepad hosts**, and then press ENTER.  
 
-3.  At the end of the hosts file, add an entry starting with the IP address of the Service Manager management server followed by its principal name.  
+3. At the end of the hosts file, add an entry starting with the IP address of the Service Manager management server followed by its principal name.  
 
-4.  Save and close the hosts file.  
+4. Save and close the hosts file.  
 
-5.  You can now start the setup procedure for either an additional Service Manager management server or an additional Self-Service Portal.
+5. You can now start the setup procedure for either an additional Service Manager management server or an additional Self-Service Portal.
 
 ## Next steps
 

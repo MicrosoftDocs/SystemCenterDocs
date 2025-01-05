@@ -1,18 +1,18 @@
 ---
 ms.assetid: f286e1fc-57f5-469f-bee5-e3756b560810
-title: Applying Overrides to Object Discoveries
+title: Apply Overrides to Object Discoveries
 description: This article describes how to target and apply overrides to object discovery rules.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/21/2022
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ms.custom: UpdateFrequency2
 ---
 
-# Applying overrides to object discoveries
+# Apply overrides to object discoveries
 
 
 
@@ -22,13 +22,13 @@ The precise steps to limit or restrict discovery depend on the object, applicati
 
 The override to disable the discovery can apply to:
 
--   All objects in the class that the discovery applies to. If you use this selection for your override, you disable the discovery completely.
+- All objects in the class that the discovery applies to. If you use this selection for your override, you disable the discovery completely.
 
--   A group. Group membership can be defined explicitly or dynamically. When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, can't reference an element in a different unsealed management pack, such as a group. If you're going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group. For more information, see [Creating and Managing Groups](manage-create-manage-groups.md).
+- A group. Group membership can be defined explicitly or dynamically. When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, can't reference an element in a different unsealed management pack, such as a group. If you're going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group. For more information, see [Creating and Managing Groups](manage-create-manage-groups.md).
 
--   One or more specific objects in the class that the discovery applies to. Using this method, you can select from discovered objects.
+- One or more specific objects in the class that the discovery applies to. Using this method, you can select from discovered objects.
 
--   All objects of another class. Using this method, you specify a class of objects to apply the override to.
+- All objects of another class. Using this method, you specify a class of objects to apply the override to.
 
 Choosing how to apply the override to disable the discovery depends on your situation. The simplest situation is when you want to disable discovery for a specific object or for all objects in a class. When you want to disable the discovery for any object that meets certain criteria, you must use a group that contains those objects or create a group that will identify those objects.
 

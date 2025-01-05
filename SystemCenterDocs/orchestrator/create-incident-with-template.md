@@ -2,7 +2,7 @@
 title: Create Incident with Template
 description: The Create Incident with Template activity is used to create a new incident from an existing Incident Template.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 09/05/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -29,7 +29,6 @@ The configuration user interface for Create Incident with Template doesn't provi
 The following published data elements are specific to Create Incident with Template activity. Additional published data is generated based on the class that you select when you define the activity. For a list of data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
 ## Create Incident with Template Published Data
-
 
 | Element   | Description   |
 |---------------------------|------------------------------------------------------------------------------|

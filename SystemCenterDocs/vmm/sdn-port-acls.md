@@ -9,7 +9,7 @@ ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency3, engagement-fy23
+ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Allow and block VM traffic using SDN port ACLs

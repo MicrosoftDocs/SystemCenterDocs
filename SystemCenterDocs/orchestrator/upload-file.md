@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Upload File
-
-
 
 The Upload File activity is used in a runbook to upload files to an FTP server.
 

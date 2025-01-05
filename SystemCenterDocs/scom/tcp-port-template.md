@@ -5,7 +5,7 @@ description: This article provides an overview of TCP port template
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -53,7 +53,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the template. This name is displayed in the Operations console. |
 | Description | Optional description of the service. |
-| Management Pack | Management pack to store the class and monitors that the template created. If you create any additional monitors or rules by using the service as a target class, you must store them in the same management pack.For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
+| Management Pack | Management pack to store the class and monitors that the template created. If you create any additional monitors or rules by using the service as a target class, you must store them in the same management pack. For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
 
 ## Target and Port
 
@@ -75,7 +75,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 
 ## Creating and modifying TCP port templates
 
-#### To run the TCP Port data source wizard
+### Run the TCP Port data source wizard
 
 1. Start the Operations console with an account that has Author credentials in the management group.
 2. Open the  **Authoring**  workspace.
@@ -96,7 +96,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 13. Specify the frequency to run the monitor in the  **Run this query**  box. Select  **Next**.
 14. Review the summary of the monitor, and select  **Create**.
 
-#### To modify an existing TPC Port template
+#### Modify an existing TPC Port template
 
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring**  workspace.
@@ -105,20 +105,20 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 5. Right-click the monitor, and then select  **Properties**.
 6. Enter the changes that you want, and select  **OK**.
 
-## Viewing TCP port monitors and collected data
+## View TCP port monitors and collected data
 
-#### To view all TCP port monitors
+### View all TCP port monitors
 
 1. Open the Operations console.
 2. Open the  **Monitoring**  workspace.
 3. In the  **Monitoring**  navigation pane, select  **Synthetic Transaction** , and select  **TCP Port Checks State**.
 
-#### To view the state of each monitor
+### View the state of each monitor
 
 1. In the  **TCP Port Checks State**  pane, right-click an object. Select  **Open** , and select  **Health Explorer**.
 2. Expand the  **Availability**  and  **Performance**  nodes to view the individual monitors.
 
-#### To view the performance collected for a monitor
+### View the performance collected for a monitor
 
 1. In the  **TCP Port Checks State**  pane, right-click an object. Select  **Open** , and select  **Performance**.
 2. In the  **Legend**  pane, select the counters you want to view.

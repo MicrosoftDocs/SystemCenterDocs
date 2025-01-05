@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration in Mana
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/27/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

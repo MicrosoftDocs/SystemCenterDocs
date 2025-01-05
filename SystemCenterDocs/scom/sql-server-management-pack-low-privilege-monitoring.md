@@ -5,7 +5,7 @@ description: This article explains low-privilege monitoring
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 2/1/2023
+ms.date: 11/26/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -372,9 +372,9 @@ To configure low-privilege agentless monitoring using the monitoring wizard, per
 
     For example:
 
-     - 192.0.2.133;MachineName="_example-server-name_";InstanceName="_example-instance-name_";Platform="Windows"
-     - 192.0.2.133,50626;MachineName="_example-server-name_";InstanceName="_example-instance-name_";Platform="Windows"
-     - 192.0.5.115;MachineName="_example-server-name_";InstanceName="_example-instance-name_";Platform="Linux"
+     - 192.0.2.10;MachineName="_server-name_";InstanceName="_instance-name_";Platform="Windows"
+     - 192.0.2.11,50626;MachineName="_server-name_";InstanceName="_instance-name_";Platform="Windows"
+     - 192.0.2.15;MachineName="_server-name_";InstanceName="_instance-name_";Platform="Linux"
 
     You can also create a new Run As account. For that, in the **Add Instances** window, select **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
 

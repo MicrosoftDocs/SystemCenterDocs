@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: fkornilov
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 08/05/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,14 +15,26 @@ ms.subservice: operations-manager
 
 This article covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
+## December 2024 - 7.7 CTP
+
+### What's new
+
+- Added automatic connection to non-default SQL Server instances when SQL Server Browser is not running.
+
+### Bug fixes and improvements
+
+- Improved the timeout overridable parameter handling to fix the issue with multiple instances of the same workflow running at the same time
+- Improved performance and memory footprint
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
+
 ## July 2024 - 7.6.2 RTM
 
 ### What's New
 
 - Added "VertiPaq memory paging indication" monitor to observe the level of VertiPaq memory paging
 - Added Vertipaq tiles to Analysis Servises dashboards:
-	- Monitor tiles: VertiPaq memory consumed by SSAS Instance and VertiPaq memory paging indication
-	- Perfomance tile: VertiPaq Memory Limit, VertiPaq Memory Limit(GB), VertiPaq Memory Usage on the Server (%), VertiPaq Memory Usage on the Server (GB), VertiPq Nonpaged Memory (GB) and VertiPaq Memory Paged (GB)
+  - Monitor tiles: VertiPaq memory consumed by SSAS Instance and VertiPaq memory paging indication
+ 	- Perfomance tile: VertiPaq Memory Limit, VertiPaq Memory Limit(GB), VertiPaq Memory Usage on the Server (%), VertiPaq Memory Usage on the Server (GB), VertiPq Nonpaged Memory (GB) and VertiPaq Memory Paged (GB)
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
 - Updated display strings
 

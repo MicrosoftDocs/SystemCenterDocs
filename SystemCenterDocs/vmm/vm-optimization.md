@@ -5,11 +5,11 @@ description: This article describes how to configure dynamic optimization and po
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/30/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 # Set up dynamic and power optimization in VMM

@@ -1,18 +1,18 @@
 ---
 ms.assetid: 11da2a90-3cf3-4983-a71f-1065a792374e
-title: How to Upgrade an ACS Collector
+title: Upgrade an ACS Collector
 description: This article describes how to upgrade an ACS Collector to the latest version of System Center Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2023
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade an ACS Collector
+# Upgrade an ACS Collector
 
 
 
@@ -23,23 +23,23 @@ Perform this procedure to upgrade the Audit Collection Services (ACS) Collector 
 
 Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
-## To upgrade an ACS Collector
+To upgrade an ACS Collector, follow these steps:
 
-1.  Sign in to the computer that hosts the ACS Collector with an Operations Manager Administrators role account for your Operations Manager management group.
+1. Sign in to the computer that hosts the ACS Collector with an Operations Manager Administrators role account for your Operations Manager management group.
 
-2.  On the Operations Manager media, run **Setup.exe**.
+2. On the Operations Manager media, run **Setup.exe**.
 
-3.  In the **Install** section, select **Audit Collection Services**. The Audit Collection Services Setup wizard starts.
+3. In the **Install** section, select **Audit Collection Services**. The Audit Collection Services Setup wizard starts.
 
-4.  On the **Welcome to the Audit Collection Services Collector Setup Wizard** page, select **Next**.
+4. On the **Welcome to the Audit Collection Services Collector Setup Wizard** page, select **Next**.
 
-5.  On the **Database Installation Options** page, select **Use an existing database**, and select **Next**.
+5. On the **Database Installation Options** page, select **Use an existing database**, and select **Next**.
 
-6.  On the **Data Source** page, enter the name that you used as the Open Database Connectivity data source name for your ACS database in the **Data source name** box. By default, this name is **OpsMgrAC**. Select **Next**.
+6. On the **Data Source** page, enter the name that you used as the Open Database Connectivity data source name for your ACS database in the **Data source name** box. By default, this name is **OpsMgrAC**. Select **Next**.
 
-7.  On the **Database** page, if the database is on a separate server than the ACS Collector, select **Remote Database Server**, and then enter the computer name of the database server that will host the database for this installation of ACS. Otherwise, select **Database server running locally**, and select **Next**.
+7. On the **Database** page, if the database is on a separate server than the ACS Collector, select **Remote Database Server**, and then enter the computer name of the database server that will host the database for this installation of ACS. Otherwise, select **Database server running locally**, and select **Next**.
 
-8.  On the **Database Authentication** page, select one authentication method. If the ACS Collector and the ACS database are members of the same domain, you can select **Windows authentication**; otherwise, select **SQL authentication**, and then select **Next**.
+8. On the **Database Authentication** page, select one authentication method. If the ACS Collector and the ACS database are members of the same domain, you can select **Windows authentication**; otherwise, select **SQL authentication**, and then select **Next**.
 
     > [!NOTE]
     > If you select **SQL authentication** and select **Next**, the **Database Credentials** page appears. Enter the name of the user account that has access to the SQL Server in the **SQL login name** box and the password for that account in the **SQL password** password box, and then select **Next**.

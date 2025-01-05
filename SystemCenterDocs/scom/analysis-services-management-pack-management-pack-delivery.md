@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for SQL Server
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 02/02/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -61,6 +61,6 @@ The environment that you use must meet the following prerequisites before you st
 > [!NOTE]
 > Management Pack for SQL Server Analysis Services doesn't support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
-## Importing Management Pack
+## Import Management Pack
 
 For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).

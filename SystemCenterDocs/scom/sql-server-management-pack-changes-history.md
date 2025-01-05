@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 08/05/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,21 @@ ms.subservice: operations-manager
 # Features and enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
+
+## December 2024 - 7.7.23 CTP
+
+### What's new
+
+- Added an [inclusion override](sql-server-management-pack-disabling-monitoring.md#disabling-monitoring-of-specified-sql-agent-jobs-by-name) for SQL Agent Job discovery
+
+### Bug fixes and improvements
+
+- Improved performance:
+  - Reimplemented SyncTime handling for cookdown data sources, some monitors and discoveries
+- Included database name in the "Blocking sessions" monitor alert
+- Fixed an issue with the Wizard where a screen reader did not automatically announce the displayed error information after a table row failed to load
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
+- Updated display strings
 
 ## July 2024 - 7.6.5 RTM
 

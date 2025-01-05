@@ -3,7 +3,7 @@ description: This article describes how to create DPM reports using SQL Server R
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 title: Generate DPM reports
 ms.subservice: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8

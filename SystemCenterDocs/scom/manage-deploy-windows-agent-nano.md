@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.custom: intro-installation, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -79,7 +79,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 3. Join the Nano Server to the same domain as the Operations Manager Management Server.
 There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the article [Discover and install agent on Windows](~/scom/manage-deploy-windows-agent-console.md).
 
-Use the following procedure to install the agent with a PowerShell script.   
+Use the following procedure to install the agent with a PowerShell script:
 
 1. Copy the NanoServer directory from the System Center Operations Manager setup directory to the Nano Server.
 
@@ -89,7 +89,7 @@ Use the following procedure to install the agent with a PowerShell script.
 
 4. Run the following script:
 
-   ```
+   ```powershell  
    .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder ..\
    ```
 

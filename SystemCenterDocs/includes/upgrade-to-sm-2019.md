@@ -78,7 +78,7 @@ All software requirements for System Center 2019- Service Manager are fully docu
 
 With the System Center 2016 - Service Manager release, the product has moved to support .NET 4.5.1. The tool set to support this movement to .NET 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies.
 
-### Preventing MPSync jobs from railing  
+### Preventing MPSync jobs from failing  
 
 **Before Upgrade**  
 

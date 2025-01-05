@@ -3,7 +3,7 @@ description: DPM overview article that explains the workloads and types of data 
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 title: Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
@@ -14,6 +14,12 @@ ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Data Protection Manager
+
+::: moniker range="sc-dpm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+::: moniker-end
 
 Every organization needs a business continuity and disaster recovery (BCDR) strategy to ensure resources are available during planned and unplanned outages. Your BCDR strategy requires keeping your data safe and recoverable, and keeping your business workloads, applications, and services continuously available. System Center Data Protection Manager (DPM) is a robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
 

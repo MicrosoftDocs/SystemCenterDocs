@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 01/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
@@ -100,7 +100,6 @@ WorkItemRelatesToWorkItem &gt; WorkItem
 - release record – advanced operator, author, release manager, workflow
 - service request – advanced operator, author, service request analyst, workflow
 
-
 WorkItemAffectedUser
 
 - incident record – advanced operator, author, incident resolver, workflow
@@ -165,9 +164,11 @@ ServiceOfferingRelatesToRequestOffering &gt; RequestOffering
 - author
 
 ## Implied permissions
+
 The following are implied permissions for Service Manager.
 
 ### ImpliedIncidentAffectedUser
+
 The permissions for the implied Affected User profile are granted through the WorkItemAffectedUser relationship.
 
 |Operation|Type|Property|Relationship|
@@ -178,6 +179,7 @@ The permissions for the implied Affected User profile are granted through the Wo
 |Delete|Work item that the user is affected by -  File attachment|File attachment for an incident or service request instance.|File attachment for an incident or service request instance.|
 
 ### ImpliedReviewer
+
 The permissions for the implied Review Activity Reviewer profile are granted through the ReviewerIsUser relationship.
 
 |Operation|Type|Property|Relationship|
@@ -188,6 +190,7 @@ The permissions for the implied Review Activity Reviewer profile are granted thr
 |Delete|None|None|None|
 
 ### ImpliedActivityEditor
+
 The permissions for the implied Assigned To User profile are granted through the WorkItemAssignedToUser relationship.
 
 |Operation|Type|Property|Relationship|
@@ -198,6 +201,7 @@ The permissions for the implied Assigned To User profile are granted through the
 |Delete|None|None|None|
 
 ### ImpliedConfigItemCustodian
+
 The permissions for the implied **CI Owner** profile are granted through the **ConfigItemOwnedByUser** relationship.
 
 |Operation|Type|Property|Relationship|
@@ -208,6 +212,7 @@ The permissions for the implied **CI Owner** profile are granted through the **C
 |Delete|None|None|None|
 
 ### ImpliedPrimaryComputerUser
+
 The permissions for the implied CI Primary User profile are granted through the ComputerPrimaryUser relationship.
 
 |Operation|Type|Property|Relationship|

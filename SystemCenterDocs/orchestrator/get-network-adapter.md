@@ -2,7 +2,7 @@
 title: Get Network Adapter
 description: The Get Network Adapter activity is used to retrieve an existing Virtual Network Adapter based on the filters you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 ---
 
 # Get Network Adapter
-
-
 
 The Get Network Adapter activity is used to retrieve an existing Virtual Network Adapter based on the filters you specify.
 
@@ -42,7 +40,6 @@ The activity publishes all the data from the required and optional properties in
 | VLAN Enabled   | True or False   |
 | VLAN ID   |   The unique identifier (GUID) of the VLAN, if enabled. |
 | VM Network |  Name of the VM network  |
-
 
 ## Get Network Adapter Published Data
 

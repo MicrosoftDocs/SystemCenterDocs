@@ -5,7 +5,7 @@ description: This article provides guidance about managing VMware servers in the
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/09/2024
+ms.date: 12/03/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -23,11 +23,18 @@ Read this article to learn about managing VMware servers and VMs in the System C
 VMM enables you to deploy and manage virtual machines and services across multiple hypervisor platforms, including VMware vSphere hosts and vCenter servers.
 
 - You can add vCenter and vSphere hosts to the VMM fabric.
-- VMM integrates directly with VMware vCenter Server. Through the VMM console, you can manage the day-to-day operations of VMware vSphere hosts and clusters, such as the discovery and management of hosts.
-- VMM provides the ability to create, manage, store, place, and deploy virtual machines on vSphere hosts. You can import VMware templates.
-- You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example, configuring port groups, standard and distributed virtual switches (or **vSwitches**), vMotion, and Storage vMotion.
-- You can convert VMware VMs to Hyper-V.
 
+- VMM integrates directly with VMware vCenter Server. Through the VMM console, you can manage the day-to-day operations of VMware vSphere hosts and clusters, such as the discovery and management of hosts.
+
+- VMM provides the ability to create, manage, store, place, and deploy virtual machines on vSphere hosts. You can import VMware templates.
+
+- You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example, configuring port groups, standard and distributed virtual switches (or **vSwitches**), vMotion, and Storage vMotion.
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+- You can convert VMware VMs to Hyper-V.
+:::moniker-end
+:::moniker range="sc-vmm-2025"
+- You can [convert VMware VMs to Hyper-V](vm-convert-vmware.md).
+:::moniker-end
 
 ## Before you start
 
@@ -93,7 +100,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 3. In **Computer Name**, select the hosts or clusters you want to add or **Select All**.
 4. In **Host Settings**, select the host group to which you want to assign the host or cluster. You don't need to add VM placement paths.
 5. In **Summary**, verify the settings and select **Finish**. Wait until the Jobs dialog shows a **Completed** status.
-6. Select **Fabric** > **Servers**> **All Hosts** and in the host group, check the status of each host or cluster. Either select **OK** or **OK (limited)**.
+6. Select **Fabric** > **Servers**> **All Hosts** and in the host group, check the status of each host or cluster. The **Host Status** should be either **OK** or **OK (limited)**.
 7. If the status is limited, it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, right-click the vCenter server > **Properties** > **Security**.
 5. To import the certificate, select each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status must be **OK** after the import.
 

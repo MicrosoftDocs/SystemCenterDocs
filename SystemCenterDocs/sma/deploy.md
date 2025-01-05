@@ -1,11 +1,11 @@
 ---
-description: Provides step by step instructions for setting up Service Management Automation
+description: Provides step by step instructions for setting up Service Management Automation.
 ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 04/03/2024
+ms.date: 11/01/2024
 title: Deploy Service Management Automation
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
@@ -13,47 +13,45 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 
 # Deploy Service Management Automation
 
-
-
 To deploy Service Management Automation (SMA), you must install the SMA Web Service, set up the SMA runbook worker, and set up the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation.
 
 You can install the web service on any machine that can communicate with Microsoft Azure Pack and an instance of SQL Server.
 
 ## Install the Service Automation web service
 
-1.  In the folder containing the downloaded System Center - Orchestrator installation software, select **Setup** to start the Setup wizard.
+1. In the folder containing the downloaded System Center - Orchestrator installation software, select **Setup** to start the Setup wizard.
 
-2.  Under **Service Management**, select **Web Service**, and select **Install**.
+2. Under **Service Management**, select **Web Service**, and select **Install**.
 
-3.  Complete the product registration information, and select **Next**.
+3. Complete the product registration information, and select **Next**.
 
-4.  Review and accept the license terms, and select **Next**.
+4. Review and accept the license terms, and select **Next**.
 
-5.  Review the Diagnostic and Usage Data Notice, and select **Next**.
+5. Review the Diagnostic and Usage Data Notice, and select **Next**.
 
-6.  This launches the prerequisites check. Review the results of the check. If all the items are installed, select **Next**.
+6. This launches the prerequisites check. Review the results of the check. If all the items are installed, select **Next**.
 
     > [!NOTE]
     > If you see an X next to any of the prerequisite software, you must install the item, and then run the prerequisite check again. You can't complete the installation of the service endpoint until you pass the prerequisite check.
 
-7.  Provide the following information for the database endpoint to use, and select **Next**.
+7. Provide the following information for the database endpoint to use, and select **Next**.
 
     |**Item** |**Action** |
     |-------------|----------------------|
-    | **Server** |Enter the name of the database server. By default, this is localhost.<br /><br />The format is sqlserver\instance, where \instance is optional.|
+    | **Server** |Enter the name of the database server. By default, this is localhost.<br/><br/>The format is sqlserver\instance, where \instance is optional.|
     | **Port number** |Enter the port number that you want to use for the database. The default is 1433.|
     | **Database name** |Enter the name of the database. The default is SMA.|
-    | **Authentication Credentials** |Select the type of authentication that you want to use. You can use Windows authentication or SQL Server authentication.<br /><br />If you choose SQL Server authentication, enter the user name and password for the computer running SQL Server.|
+    | **Authentication Credentials** |Select the type of authentication that you want to use. You can use Windows authentication or SQL Server authentication.<br/><br/>If you choose SQL Server authentication, enter the user name and password for the computer running SQL Server.|
 
     > [!NOTE]
     > If you're [upgrading from a previous installation](./upgrade-sma.md), use the database details from the previous installation.
 
-8.  Provide the following information to configure the Internet Information Settings (IIS) for the web service, and select **Next**.
+8. Provide the following information to configure the Internet Information Settings (IIS) for the web service, and select **Next**.
 
     |**Item** |**Action** |
     |-----------|------------|
     |**Domain security group or users with access** |Enter a security group or one or more users who can grant access to the web service.|
-    |**Application pool name** |SMA<br /><br />This name isn't configurable.|
+    |**Application pool name** |SMA<br/><br/>This name isn't configurable.|
     |**Application pool credentials** |Specify the credentials to use for the application pool. These are the credentials that the web service will run under.|
 
 9. Enter the port number for the web service to use. By default, this is 9090.
@@ -74,19 +72,19 @@ You can install the web service on any machine that can communicate with Microso
 
 ## Install the SMA PowerShell module
 
-1.  In the folder containing the downloaded System Center Orchestrator installation software, start the Setup wizard.
+1. In the folder containing the downloaded System Center Orchestrator installation software, start the Setup wizard.
 
-2.  Under **Service Management**, select **PowerShell administration**, and select **Install**.
+2. Under **Service Management**, select **PowerShell administration**, and select **Install**.
 
-3.  Follow the instructions in the Setup wizard.
+3. Follow the instructions in the Setup wizard.
 
 ## Set up the SMA runbook worker
 
-1.  In the folder containing the downloaded Orchestrator installation software, select Setup to start the Setup wizard.
+1. In the folder containing the downloaded Orchestrator installation software, select Setup to start the Setup wizard.
 
-2.  Under **Service Management**, select **Runbook Worker**, and select **Install**.
+2. Under **Service Management**, select **Runbook Worker**, and select **Install**.
 
-3.  Follow the instructions in the Setup wizard.
+3. Follow the instructions in the Setup wizard.
 
 After the installation is complete, use the administrative credentials to configure Automation in the Microsoft Azure Pack management portal.
 
@@ -97,26 +95,26 @@ After the installation is complete, use the administrative credentials to config
 
 Your installation media contains Windows Installer files for each SMA of the following features:
 
--   PowerShell module: PowershellModuleInstaller.msi
+- PowerShell module: PowershellModuleInstaller.msi
 
--   Web service: WebServiceInstaller.msi
+- Web service: WebServiceInstaller.msi
 
--   Runbook worker: WorkerInstaller.msi
+- Runbook worker: WorkerInstaller.msi
 
 > [!NOTE]
 > The installation options must be entered at a command prompt. An answer file isn't supported.
 
 ### PowerShell module installation options
+
 The SMA PowerShell module is a required prerequisite of the SMA web service, so you must install the SMA PowerShell module before you deploy the SMA web service. The PowerShell module installer takes no parameters. For example, you could use the following command:
 
-```
+```powershell
 msiexec.exe /i PowershellModuleInstaller.msi
 ```
 
 ### Web service installation options
+
 The following variables can be specified at a command prompt to override default behaviors.
-
-
 
 |**Installation item** |**Command-line switch** |**Valid values** |
 |------------|--------------|--------------|
@@ -143,11 +141,12 @@ The following variables can be specified at a command prompt to override default
 
 If logging is desired, use the Msiexec.exe command and specify the log path. For example, you could use the following command (ensure to use the name of your SQL Server instance).
 
-```
+```powershell
 msiexec.exe /i WebServiceInstaller.msi /L*v C:\Andreas\WebServiceInstaller.log CREATEDATABASE="Yes" SQLSERVER="localhost" DATABASEAUTHENTICATION="Windows" SQLDATABASE="SMA123"
 ```
 
 ### Runbook worker installation options
+
 A runbook worker can't be installed on the same computer as another runbook worker. Also, you must install the runbook worker on a computer that has access to the same SQL Server instance that the SMA web service is using.
 
 The following variables can be specified at a command prompt to override default behaviors.
@@ -171,18 +170,18 @@ The following variables can be specified at a command prompt to override default
 
 If logging is desired, use the Msiexec.exe command and specify the log path. For example, you could use the following command (ensure to use the name of your SQL Server instance):
 
-```
+```powershell
 msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDATABASE="Yes" SQLSERVER="localhost" DATABASEAUTHENTICATION="Windows" SQLDATABASE="SMA123"
 ```
 
 > [!NOTE]
 > If you install additional runbook workers, you must run the Windows PowerShell cmdlet **New-SmaRunbookWorkerDeployment** to properly configure the runbook worker.
 >
-> 1.  Stop the Runbook server service (RunbookService.exe) on each computer on which a runbook worker is installed.
-> 2.  Run the following Windows PowerShell command:
+> 1. Stop the Runbook server service (RunbookService.exe) on each computer on which a runbook worker is installed.
+> 2. Run the following Windows PowerShell command:
 >
 >     **New-SmaRunbookWorkerDeployment -<ComputerName\> "<WebServiceEndpoint\>**
-> 3.  Restart the Runbook server service on each computer on which a runbook worker is installed.
+> 3. Restart the Runbook server service on each computer on which a runbook worker is installed.
 
 ## Set or change the SMA endpoint
 
@@ -190,11 +189,11 @@ The **QuickStart** tab for Automation in Microsoft Azure Pack for Windows Server
 
 The SMA endpoint requires the following information:
 
--   The service URL and port. The port number is set when you install SMA.
+- The service URL and port. The port number is set when you install SMA.
 
--   The username of a user account that can access the SMA web service. Accounts with access to the SMA web service are also set during installation.
+- The username of a user account that can access the SMA web service. Accounts with access to the SMA web service are also set during installation.
 
--   The access password for the user account.
+- The access password for the user account.
 
 ## Uninstall SMA
 

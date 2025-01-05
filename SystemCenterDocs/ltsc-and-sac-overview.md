@@ -13,7 +13,7 @@ ms.assetid:
 
 # Overview of System Center release options
 
-System Center customers have their choice of release options: the Long-Term Servicing Channel (LTSC) or the new Semi-Annual Channel(SAC). The new Semi-Annual Channel is only offered for customers with Software Assurance.
+System Center customers have their choice of release options: the Long-Term Servicing Channel (LTSC) or the new Semi-Annual Channel (SAC). The new Semi-Annual Channel is only offered for customers with Software Assurance.
 
 As a System Center customer, stay on the Long-Term Servicing Channel (LTSC) or move to the new Semi-Annual Channel. Choose a release channel that works best for your business. If your requirements change, switch to a different release channel.
 
@@ -26,7 +26,7 @@ The Semi-Annual Channel is for customers who innovate quickly. With approximatel
 
 The first Semi-Annual Channel release was System Center, version 1801. Versions are identified by the year and month of release so version 1801 was released in January 2018.
 
-Semi-Annual Channel releases have 18 months of support from the date of public availability. And public availability is the same month, or month following the release date. System Center, version 1801, was released in January 2018. Public availability was February 8, 2018. [Support for version 1801 is available until August 8](sac-support-lifecycle.md), 2019.
+Semi-Annual Channel releases have 18 months of support from the date of public availability and public availability is the same month, or month following the release date. System Center, version 1801, was released in January 2018. Public availability was February 8, 2018. [Support for version 1801 is available until August 8](sac-support-lifecycle.md), 2019.
 
 The Semi-Annual Channel is only offered for customers with Software Assurance, and aligns with the release and servicing model for Windows Server announced in November 2017.
 

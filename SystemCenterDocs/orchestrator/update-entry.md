@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Update Entry
-
-
 
 The Update Entry activity is used in a runbook to modify the existing entries in HP Service Manager.
 

@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 01/19/2021
+ms.date: 11/01/2024
 ms.subservice: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: 'sc-orch-2016 || sc-orch-2019 || sc-orch-2022'
@@ -23,7 +23,6 @@ Communication between Orchestrator features on different computers occurs over T
 | Client browser | Orchestrator REST-based web service  | 81  | Yes   | Specified during Orchestrator installation. Both Port 81 and Port 82 must be accessible for the Orchestration console.      |
 | Client browser     | Orchestration console   | 82  | Yes   | Specified during Orchestrator installation. Both Port 81 and Port 82 must be accessible for the Orchestration console.          |
 | Activities   | Various targeted computers depending on activity | |   | For information about individual integration packs, see [Integration Packs for System Center - Orchestrator](list-of-orchestrator-integration-packs.md).    |
-
 
 ### Next steps
 - [See system requirements](system-requirements-orch.md).

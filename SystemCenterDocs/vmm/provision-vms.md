@@ -5,11 +5,11 @@ description: This article describes how to manage VMs in the VMM compute fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/30/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, engagement-fy24
 ---
 
 
@@ -98,26 +98,47 @@ A host might be assigned a zero rating if it doesn't meet conditions to receive 
 - Highly available virtual machines must be placed on clustered hosts. VMM assigns zero stars to hosts that aren't clustered but manual placement isn't blocked. If you migrate a highly available virtual machine to a non-clustered host, the virtual machine will no longer be highly available after the migration.
 - VMM blocks migration of Hyper-V hosts to hosts running different virtualization software. Migration of a virtual machine with specific features not allowed by the virtualization software that is running on a host will be blocked. For example, Hyper-V hosts don't allow booting up from a SCSI hard disk.
 
-
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 ## Handling Generation 1 and 2 VMs
 
 In VMM, you can create Generation 1 and Generation 2 VMs.
 
 - You can add VM templates specifying either Generation 1 or Generation 2 to a service template. Properties will appear for the generation you choose.
+:::moniker-end
 ::: moniker range="sc-vmm-2016"
 - Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2012 R2 and later. For example, VMM won't place a Generation 2 VM on a host running Windows Server 2012.
 ::: moniker-end
-::: moniker range=">sc-vmm-2016"
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 - Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2012 R2 and later. For example, VMM won't place a Generation 2 VM on a host running Windows Server 2012.
 ::: moniker-end
+:::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
 - When you use a virtual hard disk in .vhd format for a VM or VM template, the VM is automatically Generation 1 because .vhd doesn't support Generation 2. If you use .vhdx, you can select which option you want to use.
+
 - If you use an existing virtual machine or virtual machine template as the starting point for a new virtual machine or virtual machine template, the generation is determined by the existing virtual machine or virtual machine template.
+
 - If you create a hardware profile, you can choose between Generation 1 and 2. When you incorporate the profile into a VM or VM template, you specify the generation you want to use.
+
 - In all wizards and PowerShell cmdlets, you'll be offered configuration options in line with the generation of the VM.
+
 - Generation 1 and 2 VMs don't handle boot order in the same way.
     - You can customize the start order for Generation 1 VMs in the VMM console in the hardware settings when you create a VM. You can also customize using the BootOrder PowerShell parameter.
     - To customize the start order for Generation 1 VMs, you need to use PowerShell using the FirstBootDevice parameter when you create a VM. For example, to set the first boot device as the network adapter type: **Set-SCVMTemplate -Template "Generation2template" –FirstBootDevice "NIC,0"**
+:::moniker-end
 
+:::moniker range="sc-vmm-2025"
+## Handling Generation 2 and 1 VMs
+    
+In VMM, you can create Generation 2 and Generation 1 VMs.
+
+- You can add VM templates specifying either Generation 2 or Generation 1 to a service template. Properties will appear for the generation you choose.
+- If you use a .vhdx, you can select which option you want to use. When you use a virtual hard disk in .vhd format for a VM or VM template, the VM is automatically Generation 1 because .vhd doesn't support Generation 2.
+- If you use an existing virtual machine or virtual machine template as the starting point for a new virtual machine or virtual machine template, the generation is determined by the existing virtual machine or virtual machine template.
+- If you create a hardware profile, you can choose between Generation 2 and 1. When you incorporate the profile into a VM or VM template, you specify the generation you want to use.
+- In VMM 2025, VM Creation in all wizards and PowerShell cmdlets will default to Generation 2. However, you have the option of changing the Generation to 1 and you'll be offered configuration options in line with the generation of the VM.
+- Generation 2 and 1 VMs don't handle boot order in the same way.
+    - You can customize the start order for Generation 1 VMs in the VMM console in the hardware settings when you create a VM. You can also customize using the BootOrder PowerShell parameter.
+    - To customize the start order for Generation 1 VMs, you need to use PowerShell using the FirstBootDevice parameter when you create a VM. For example, to set the first boot device as the network adapter type: **Set-SCVMTemplate -Template "Generation2template" –FirstBootDevice "NIC,0"**
+:::moniker-end
 
 ## Optimizing provisioning
 

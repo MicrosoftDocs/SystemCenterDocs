@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 05/16/2024
+ms.date: 11/01/2024
 ---
 # Create Entry
-
-
 
 The Create Entry activity is used in a runbook to create new incident, service desk request, or change request entries in HP Service Manager.
 

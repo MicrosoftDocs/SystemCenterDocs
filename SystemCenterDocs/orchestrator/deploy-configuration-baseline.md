@@ -2,7 +2,7 @@
 title: Deploy Configuration Baseline activity
 description: Describes the configurable properties for the Deploy Configuration Baseline activity for Configuration Manager Integration Pack.
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
-ms.date: 02/07/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,6 @@ ROBOTS: noindex
 ---
 
 # Deploy Configuration Baseline activity for Configuration Manager Integration Pack
-
-
 
 The objective of this activity is to assign a configuration baseline to
 a collection. It requires a pre-existing baseline and a
@@ -44,18 +42,18 @@ and optional properties and published data for this activity.
 
  - Start: Defines a date and timestamp and how the time values are interpreted. Options are:
 
-    -   **Client Local Time** (default): the times specified represent the local time on the client
-    -   **UTC**: The times specified are UTC times.
+    - **Client Local Time** (default): the times specified represent the local time on the client
+    - **UTC**: The times specified are UTC times.
 
 - Recurrence Pattern: Determines how often the configuration baseline should be deployed. Options are:
     - **None** (default): The configuration baseline is deployed only once, at the date and time specified in **Start**.
     - **Weekly**: The configuration baseline is deployed on the specified day of the week at the interval of the specified number of weeks.
-    -   **Monthly**: The configuration baseline is deployed at the interval of the specified number of months on:
+    - **Monthly**: The configuration baseline is deployed at the interval of the specified number of months on:
 
-        -   **Day**: the specified day of the month.
-        -   **The Last Day of the Month**
-        -   The specified occurrence of the specified day of the week within the month.
-        -   **Custom Interval**: The configuration baseline is deployed at the interval of the specified number of minutes, hours, or days.
+        - **Day**: the specified day of the month.
+        - **The Last Day of the Month**
+        - The specified occurrence of the specified day of the week within the month.
+        - **Custom Interval**: The configuration baseline is deployed at the interval of the specified number of minutes, hours, or days.
 
 ## Alerts Tab properties
 
