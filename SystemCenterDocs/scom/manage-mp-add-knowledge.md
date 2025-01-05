@@ -5,7 +5,7 @@ description: This article describes how to add custom knowledge to a workflow in
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/04/2018
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager

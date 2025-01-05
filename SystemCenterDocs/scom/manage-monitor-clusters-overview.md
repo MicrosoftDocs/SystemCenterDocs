@@ -4,7 +4,7 @@ description: This article provides an overview on how to perform monitoring of a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/21/2022
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -28,7 +28,7 @@ To begin monitoring computers in a cluster, perform the following steps:
 
 1.  Install an agent on all cluster nodes (computers).  
 
-2.  Enable agent proxy on all cluster nodes. For more information, see [How to Configure a Proxy for Agentless Monitoring](manage-agentless-monitoring.md#how-to-configure-a-proxy-for-agentless-monitoring).  
+2.  Enable agent proxy on all cluster nodes. For more information, see [How to Configure a Proxy for Agentless Monitoring](manage-agentless-monitoring.md#configure-a-proxy-for-agentless-monitoring).  
 
 In the **Administration** workspace, cluster nodes will be displayed in **Agent Managed**, and the cluster will be displayed in **Agentless Managed**. The cluster will show as "not monitored" unless a management pack contains monitors that specifically target the cluster object. The agent on the active cluster node will perform all monitoring. If the node fails, the agent on the cluster node that clustering fails over to will begin monitoring, but the agent on the failover node will have no awareness of anything the agent on the other node had monitored previously, such as alerts, state changes, and so forth. The agents are independent.  
 

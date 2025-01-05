@@ -5,7 +5,7 @@ description: This article explains how to configure monitoring with service SID
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 2/1/2023
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager

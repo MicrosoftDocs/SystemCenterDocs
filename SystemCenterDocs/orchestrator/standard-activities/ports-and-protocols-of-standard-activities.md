@@ -2,7 +2,7 @@
 title: Ports and Protocols of Standard Activities 
 description: This article describes Ports and Protocols of Standard Activities.
 ms.custom: UpdateFrequency5, engagement-fy24
-ms.date: 08/22/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -14,8 +14,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # Ports and Protocols of Standard Activities
-
-
 
 Orchestrator standard activities can communicate between the runbook servers where the runbook is deployed and any resource. If you have firewalls in your environment, when you use a standard activity, you must enable the ports between the runbook servers and resource as indicated in the following table.  
 
@@ -37,6 +35,6 @@ Orchestrator standard activities can communicate between the runbook servers whe
 
 ## Other resources for this product  
 
--   [Orchestrator overview](../learn-about-orchestrator.md).
+- [Orchestrator overview](../learn-about-orchestrator.md).
 
--   [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md).
+- [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md).

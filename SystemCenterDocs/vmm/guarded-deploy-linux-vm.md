@@ -8,6 +8,7 @@ ms.date: 07/17/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
+ms.custom: engagement-fy24
 monikerRange: '>=sc-vmm-2019'
 ---
 

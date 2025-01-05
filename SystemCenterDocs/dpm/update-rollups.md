@@ -5,7 +5,7 @@ description: This article provides information about how to deploy and manage th
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/24/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: data-protection-manager
@@ -19,12 +19,12 @@ This article provides information about how to install and verify update rollups
 >[!NOTE]
 > Update Rollups are installed automatically if Microsoft Updates are set to *Automatic*. If these are not installed automatically, you can install manually.
 
-
 ## Obtain and install update rollups
 
 The following sections provide information about how to obtain and install the Update Rollups manually through Microsoft updates, Microsoft Download Center, and DPM command line.
 
 ### Back up the DPM database
+
 Back up the DPM database as detailed [here](back-up-the-dpm-server.md#back-up-with-native-sql-server-backup-to-a-local-disk).
 
 >[!NOTE]
@@ -48,15 +48,19 @@ To manually download the update rollups from the Microsoft download center, [vis
 
 To manually install an update rollup package through an elevated command prompt, do the following steps:
 
-1.  Run the following command to extract the package, select the path for extraction when prompted.  
+1. Run the following command to extract the package, select the path for extraction when prompted. 
+ 
     ```console
     <DPMUR exe name> /x
     ```
-2. From the extracted location, run the following command to install the update rollup:
+
+1. From the extracted location, run the following command to install the update rollup:
+
     ```console
     msiexec.exe/update <package_name>
 
     ```
+
     For example, to install the Update Rollup 2 (KB4563392) for DPM 2019, run the following command:
 
     ```console
@@ -65,7 +69,6 @@ To manually install an update rollup package through an elevated command prompt,
 
     >[!NOTE]
     > There may be additional installation steps specific to a UR. Check the relevant KB article to ensure you complete all the installation steps.
-
 
 ### Check the installation of an update rollup
 
@@ -84,6 +87,6 @@ Use the following procedure to check if an update rollup is successfully install
 > [!NOTE]
 > Not all the binaries have the current update rollup build number. However, if you do not have the binaries listed with the relevant update rollup build number, it is likely that the update rollup did not install successfully.
 
-
 ## Next steps
+
 See [what's new in the latest update rollup](what-s-new-in-dpm.md)

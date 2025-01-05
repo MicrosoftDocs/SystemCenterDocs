@@ -1,18 +1,19 @@
 ---
 ms.assetid: 958fdc2f-73b1-4648-94d0-b9c45b51b719
-title: Set up TLS for Orchestrator
-description: This article provides instructions for setting up TLS with Orchestrator
+title: Set up TLS 1.2 for Orchestrator
+description: This article provides instructions for setting up TLS 1.2 with Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/16/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: engagement-fy24
+moniker range: <=sc-orch-2022
 ---
 
-# Set up TLS for Orchestrator
+# Set up TLS 1.2 for Orchestrator
 
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
 
@@ -33,8 +34,8 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
     - You don't need this update if you're running SQL Server 2016 or later.
     - SQL Server 2008 R2 doesn't support TLS 1.2.
 
-
 ## Configure and use TLS 1.2
+
 1. Configure Orchestrator to use TLS 1.2
 
     a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
@@ -67,13 +68,12 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
 
-
 2. Set Windows to use only TLS 1.2.
 
    **Method 1: Manually modify the registry**
 
    >[!Important]
-   >Carefully follow the steps in this section. You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
+   >You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
 
    Use the following steps to enable or disable all SCHANNEL protocols across the system.
 
@@ -111,7 +111,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
    Run the following Windows PowerShell script in administrator mode to automatically configure Windows to use only the TLS 1.2 protocol:
 
-   ```
+   ```powershell 
    $ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
    $ProtocolSubKeyList = @("Client", "Server")
    $DisabledByDefault  = "DisabledByDefault"
@@ -171,7 +171,6 @@ To fix this issue, follow these steps:
 >4.	Click **OK**.
 
 For detailed information, see [this KB article](https://support.microsoft.com/help/4494803/orchestrator-integration-packs-stop-working-with-tls-1-2-connections).
-
 
 ## Next steps
 

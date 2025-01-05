@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/06/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy23, UpdateFrequency.5
 ms.service: system-center
 ms.subservice: operations-manager
@@ -36,11 +36,19 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 - SQL Server 2022 with a **minimum Cumulative Update 11 (CU11)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2022)
 - SQL Server 2019 with a **minimum Cumulative Update 8 (CU8)** or later update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2019)
 - SQL Server 2017 with the latest available update as available [here](/troubleshoot/sql/releases/download-and-install-latest-updates#sql-server-2017)
+
+::: moniker-end
+
+
+::: moniker range="sc-om-2019"
+
+- SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+- SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
 
@@ -242,12 +250,8 @@ To set up an availability group, you deploy a Windows Server Failover Clustering
 - Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
 - Learn more about [setting up an availability group](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server).
 
-::: moniker range=">=sc-om-2022"
-
 > [!TIP]
 > Beginning with Operations Manager 2022, you can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
-
-::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
 
@@ -299,7 +303,7 @@ Start-ClusterGroup <Listener Cluster Group name>
 
 When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur. For configuration information, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
 
-## Optimizing SQL Server
+## Optimize SQL Server
 
 Support experiences have shown that performance issues aren't typically caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather the issue is directly related to the configuration of the storage subsystem. Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance. Such examples are:
 

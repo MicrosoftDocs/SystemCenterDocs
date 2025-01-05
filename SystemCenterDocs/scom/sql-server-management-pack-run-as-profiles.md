@@ -5,7 +5,7 @@ description: This article explains run as profiles in Management Pack for SQL Se
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 03/07/2024
+ms.date: 11/26/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -120,7 +120,7 @@ Regardless of whether you use a local system account, domain user account, or ri
 
 The local system account of each node that might act as the primary one must have WMI permissions for other nodes in the current Availability Group. The same is for the domain action account.
 
-Below are the steps to configure security for configurations with the local system account. The provided instruction suggests that the **SQLAON-020** computer hosts the primary replica. These steps should be taken on each replica that participates in the target Availability Group.
+Below are the steps to configure security for configurations with the local system account. The provided instruction suggests that the **computer_1** computer hosts the primary replica. These steps should be taken on each replica that participates in the target Availability Group.
 
 To configure permissions for Always On workflows when server names exceed 15 characters, perform the following steps:
 

@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/07/2023
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
@@ -13,6 +13,15 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Release notes for System Center Service Manager
+
+::: moniker range="sc-sm-2025"
+
+[!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
+
+This article lists the release notes for System Center 2025 - Service Manager.
+
+::: moniker-end
+
 ::: moniker range="sc-sm-2022"
 
 This article lists the release notes for System Center 2022 - Service Manager. This article also includes the release notes for Operations Manager 2022 UR2.

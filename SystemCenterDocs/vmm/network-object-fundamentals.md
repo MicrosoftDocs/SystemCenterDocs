@@ -9,7 +9,7 @@ ms.date: 06/27/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ---
 
 # Virtual Machine Manager network object fundamentals
@@ -40,7 +40,7 @@ The following VMM networking objects are used to build the basic networking infr
 
 ::: moniker-end
 
-   - [One connected logical network](network-logical-2022.md)
+   - [One connected logical network](network-logical.md)
 
      A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs.
 

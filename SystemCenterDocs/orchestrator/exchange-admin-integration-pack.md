@@ -1,7 +1,7 @@
 ---
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: This article provides information about exchange Integration packs and how to deploy it.
-ms.date: 08/09/2023
+ms.date: 11/19/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -27,13 +27,13 @@ Microsoft is committed to protecting your privacy while delivering software that
 Before you implement the Integration Pack for Exchange Admin, you must install the following software. For more information on how to install and configure Orchestrator and the Exchange Admin Integration Pack, see the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
--   System Center 2016 integration packs require System Center 2016 - Orchestrator
--   System Center 2019 integration packs require System Center 2019 - Orchestrator
--   Microsoft .NET Framework 4.7 or above
--   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
--   Microsoft Exchange Management Shell
--   Microsoft PowerShell 2.0
--   Microsoft WinRM 2.0
+- System Center 2016 integration packs require System Center 2016 - Orchestrator
+- System Center 2019 integration packs require System Center 2019 - Orchestrator
+- Microsoft .NET Framework 4.7 or above
+- Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
+- Microsoft Exchange Management Shell
+- Microsoft PowerShell 2.0
+- Microsoft WinRM 2.0
 
 > [!IMPORTANT]
 >
@@ -83,11 +83,6 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 - Microsoft WinRM 2.0
 - Exchange Online PowerShell V3 Module ([EXO V3](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true)); you must [upgrade from EXO V2 to EXO V3](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597) for this IP.
 
-
-
-
-
-
 ---
 
 ::: moniker-end
@@ -103,6 +98,14 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 ::: moniker range="sc-orch-2022"
 
 - To download the Exchange Admin Integration Pack for Orchestrator 2022, see the [Microsoft Download Center for 2022](https://www.microsoft.com/download/details.aspx?id=104335).
+
+::: moniker-end
+
+::: moniker range=">=sc-orch-2025"
+
+Exchange Admin Integration Pack for Orchestrator 2022 continues to work with Orchestrator 2025.
+
+Download the Exchange Admin Integration Pack [here](https://www.microsoft.com/download/details.aspx?id=104335).
 
 ::: moniker-end
 
@@ -126,8 +129,8 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 6. In the **Exchange Server Host** box, enter the name or IP address of the Exchange server. To use a computer name, you can enter the *NetBIOS* name or the *fully qualified domain name (FQDN)*.
 7. In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, ensure to select the appropriate port.
 8. In the **Exchange PowerShell Application** box, enter the application name segment of the connection URI.
-9.  In the **Exchange User Name** and **Exchange User Password** boxes, enter the credentials that Orchestrator will use to sign in to the Exchange environment. The configured user must have the appropriate Exchange permissions.
-10.  Configure the **Exchange Environment** as necessary for connecting to an on-premises installation or to Office.
+9. In the **Exchange User Name** and **Exchange User Password** boxes, enter the credentials that Orchestrator will use to sign in to the Exchange environment. The configured user must have the appropriate Exchange permissions.
+10. Configure the **Exchange Environment** as necessary for connecting to an on-premises installation or to Office.
 11. Set the **Use SSL** property to **True** to have all communication between the runbook server and the Exchange server encrypted over HTTPS.
 12. If you use SSL:
     - The **Skip CA Check** property specifies whether the client doesn't validate that the server certificate is signed by a trusted certification authority (CA).
@@ -156,11 +159,6 @@ For more information on setting up app-only authentication for Exchange Online t
 
    :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin-inline.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen." lightbox="media/exchange-admin-integration-pack/exchange-admin-expanded.png":::
 
-
-
-
-
-
 ---
 
 ## Configure Windows PowerShell and WinRM for the Exchange Admin Integration Pack
@@ -171,14 +169,14 @@ For more information on setting up app-only authentication for Exchange Online t
 
 On the computer where Orchestrator runbooks are executed, ensure that PowerShell scripts can be run:
 
-1.  Start the **Windows PowerShell** command line.
-2.  To determine whether PowerShell scripts can be executed, run the following command:
+1. Start the **Windows PowerShell** command line.
+2. To determine whether PowerShell scripts can be executed, run the following command:
 
     ```PowerShell
         Get-ExecutionPolicy
     ```
 
-3.  If **Execution Policy** is **Restricted**, you must change it to **RemoteSigned**. Run the following command:
+3. If **Execution Policy** is **Restricted**, you must change it to **RemoteSigned**. Run the following command:
 
     ```PowerShell
         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
@@ -188,14 +186,14 @@ On the computer where Orchestrator runbooks are executed, ensure that PowerShell
 
 The configured user must be granted remote PowerShell rights on the Exchange server.
 
-1.  On the Exchange server, start the **Exchange Management Shell**.
-2.  To determine whether the user has remote PowerShell rights, run the following command, and check the value in the **RemotePowerShellEnabled** field:
+1. On the Exchange server, start the **Exchange Management Shell**.
+2. To determine whether the user has remote PowerShell rights, run the following command, and check the value in the **RemotePowerShellEnabled** field:
 
   ```PowerShell
         Get-User <UserName>
   ```
 
-3.  To grant the user remote PowerShell rights, run the following command:
+3. To grant the user remote PowerShell rights, run the following command:
 
   ```PowerShell
         Set-User <UserName> -RemotePowerShellEnabled $true
@@ -205,24 +203,24 @@ The configured user must be granted remote PowerShell rights on the Exchange ser
 
 On the Exchange server, ensure that PowerShell Basic Authentication is enabled:
 
-1.  Start **Internet Information Services (IIS) Manager**.
-2.  Navigate to the **PowerShell** site.
-3.  Open the **Authentication** settings, and ensure **Basic Authentication** is enabled.
+1. Start **Internet Information Services (IIS) Manager**.
+2. Navigate to the **PowerShell** site.
+3. Open the **Authentication** settings, and ensure **Basic Authentication** is enabled.
 
 ### Configure WinRM for HTTP unencrypted communication
 
 On the machine where Orchestrator runbooks are executed, configure WinRM trusted hosts, and to allow unencrypted traffic:
 
-1.  Open the **Local Group Policy** user interface: Windows Start Button &gt; Run &gt; gpedit.msc.
-2.  Navigate to **Local Computer Policy** &gt; **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Remote Management (WinRM)** &gt; **WinRM Client**.
-3.  Ensure that **Allow unencrypted traffic** is enabled.
-4.  Add the targeted computer that runs Exchange Server to the **Trusted Hosts** list.
+1. Open the **Local Group Policy** user interface: Windows Start Button &gt; Run &gt; gpedit.msc.
+2. Navigate to **Local Computer Policy** &gt; **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Remote Management (WinRM)** &gt; **WinRM Client**.
+3. Ensure that **Allow unencrypted traffic** is enabled.
+4. Add the targeted computer that runs Exchange Server to the **Trusted Hosts** list.
 
 On the Exchange server, ensure that PowerShell doesn't require SSL:
 
-1.  Start **Internet Information Services (IIS) Manager**.
-2.  Navigate to the **PowerShell** site.
-3.  Open **SSL Settings** and ensure that the **Require SSL** checkbox isn't selected.
+1. Start **Internet Information Services (IIS) Manager**.
+2. Navigate to the **PowerShell** site.
+3. Open **SSL Settings** and ensure that the **Require SSL** checkbox isn't selected.
 
 # [Exchange Online](#tab/ex-online)
 
@@ -231,6 +229,4 @@ Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-bl
  - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true)
  - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module&preserve-view=true)
 
-
 ---
-

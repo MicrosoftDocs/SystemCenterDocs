@@ -2,7 +2,7 @@
 title: Monitor Object
 description: The Monitor Object activity uses filter criteria to look for new and updated records that satisfy the criteria that you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/09/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Monitor Object
-
-
 
 The Monitor Object activity uses filter criteria to look for new and updated records that satisfy the criteria that you specify. Only one Monitor Object activity can be used per workflow.
 

@@ -5,7 +5,7 @@ description: This article details the group managed service accounts feature, su
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
@@ -25,7 +25,7 @@ Operations Manager 2019 UR1 and later supports group managed service accounts (g
 
 ::: moniker-end
 
-::: moniker range="sc-om-2022"
+::: moniker range=">=sc-om-2022"
 
 Operations Manager supports group managed service accounts (gMSA). This article details the accounts used for gMSA and the procedures involved with gMSA support.
 

@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/02/2024
+ms.date: 12/10/2024
 ms.service: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.subservice: operations-manager
@@ -53,6 +53,6 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1055.0|[v1.7.3-0](https://github.com/microsoft/SCXcore/releases/tag/v1.7.3-0) |November 2023 |1.7.3-0 |UR2 refresh/Deactivate OMI HTTP tracing|
 |10.22.1070.0|[v1.8.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.8.1-0) |March 2024 |1.8.1-0 |Update Rollup 2 - Hotfix |
 |10.22.1072.0|[v1.9.0-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.0-0) |April 2024 |1.9.0-0 |FIPS Crypto Policy Support |
-|10.22.1075.0|[v1.9.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.1-0)|September 2024 |1.9.1-0 |OpenSSL version 3.x Support|
+|10.22.1175.0|[v1.9.1-0](https://github.com/microsoft/SCXcore/releases/tag/v1.9.1-0)|September 2024 |1.9.1-0 |OpenSSL version 3.x Support|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*

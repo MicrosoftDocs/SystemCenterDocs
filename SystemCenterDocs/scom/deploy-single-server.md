@@ -5,7 +5,7 @@ description: This article provides an overview of the single-server deployment o
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/24/2023
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -25,39 +25,39 @@ You deploy Operations Manager in a single-server management group when you want 
 
 The single-server management group configuration supports the following services:
 
-1.  Monitoring and alerting
+1. Monitoring and alerting
 
-2.  Reporting (available in the Operations console but not in the web console)
+2. Reporting (available in the Operations console but not in the web console)
 
-3.  Audit collection
+3. Audit collection
 
-4.  Agent-less exception management
+4. Agent-less exception management
 
-5.  Data (accessed by using the web console and the Operations console)
+5. Data (accessed by using the web console and the Operations console)
 
 ## Operations Manager features
 
 The single-server management group configuration combines these features:
 
--   Audit Collection Services (ACS) collector
+- Audit Collection Services (ACS) collector
 
--   ACS database
+- ACS database
 
--   ACS forwarder
+- ACS forwarder
 
--   Operational database
+- Operational database
 
--   Operations console
+- Operations console
 
--   Reporting data warehouse database
+- Reporting data warehouse database
 
--   Reporting database
+- Reporting database
 
--   Reporting server
+- Reporting server
 
--   Web console server
+- Web console server
 
--   Command Shell
+- Command Shell
 
 ## Restrictions
 
@@ -79,21 +79,21 @@ This configuration is most commonly used for evaluation, testing, and management
 
 In this configuration, you need to ensure that network ports are opened for communication between the agents and the management server, between the Operations console and the management server, and between the Web console and the management server. All other inter-service communication occurs on the management server itself. The ports are as follows:
 
--   Operations console to management server: TCP 5724
+- Operations console to management server: TCP 5724
 
--   Operations console to Reporting server: TCP 80
+- Operations console to Reporting server: TCP 80
 
--   Web console to Web console server: TCP 51908 is the default port when you select Windows Authentication. If you chose Forms Authentication, the port will be user-defined.  
+- Web console to Web console server: TCP 51908 is the default port when you select Windows Authentication. If you chose Forms Authentication, the port will be user-defined.  
 
--   Agent to management server: TCP 5723
+- Agent to management server: TCP 5723
 
--   ACS forwarder to ACS collector: TCP 51909
+- ACS forwarder to ACS collector: TCP 51909
 
--   Agentless management: occurs over remote procedure call (RPC) dynamic port
+- Agentless management: occurs over remote procedure call (RPC) dynamic port
 
--   Management server to UNIX\Linux computer: TCP 1270
+- Management server to UNIX\Linux computer: TCP 1270
 
--   Management server to UNIX\Linux computer for special discovery and troubleshooting: TCP 22
+- Management server to UNIX\Linux computer for special discovery and troubleshooting: TCP 22
 
 For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).
 

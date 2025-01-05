@@ -9,7 +9,7 @@ ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: intro-deployment, UpdateFrequency2
+ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24
 ---
 
 # Deploy and manage a Software Defined Network (SDN) infrastructure in the VMM fabric

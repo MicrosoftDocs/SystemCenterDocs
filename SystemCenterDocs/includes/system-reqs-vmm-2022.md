@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2022
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/15/2023
+ms.date: 12/18/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -113,8 +113,6 @@ Hyper-V Server 2016 | N | N | N | N
 Windows Server 2019 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
 Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N                                           
-[Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) | Y | N | N | N  
-[Azure Stack Hyper Converged Infrastructure (HCI, version 21H2)](../vmm/deploy-manage-azure-stack-hci.md)| Y | N | N | N
 [Azure Stack Hyper Converged Infrastructure (HCI, version 22H2)](../vmm/deploy-manage-azure-stack-hci.md) (Supported from VMM 2022 UR1)| Y | N | N | N
 Windows Server 2022 | Y | Y | Y | Y
 

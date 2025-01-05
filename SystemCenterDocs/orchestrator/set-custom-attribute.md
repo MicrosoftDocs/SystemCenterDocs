@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Set Custom Attribute
-
-
 
 The Set Custom Attribute activity is used in a runbook to create or update a custom attribute for an existing message.
 

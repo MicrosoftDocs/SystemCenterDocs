@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -220,7 +220,7 @@ Your secondary management server is now the primary management server for the ma
 Use the following procedure to enable the Service Manager connectors in the lab environment. In this procedure, you won't be enabling the Operations Manager connector.  
 
 > [!WARNING]  
->  Don't enable or delete the Operations Manager alert connector in the lab environment. Doing so will cause the alert connector in the production environment to fail.  
+> Don't enable or delete the Operations Manager alert connector in the lab environment. Doing so will cause the alert connector in the production environment to fail.  
 
 ### Enable a connector  
 
@@ -244,7 +244,7 @@ Use the following procedure to install a new data warehouse server in the lab en
 7. On the **Configure data warehouse databases** page, Service Manager checks the computer you're using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you're installing the data warehouse management server, and then select **Next**.  
 
     > [!WARNING]  
-    >  A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL Server.  
+    > A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you've to reinstall SQL Server.  
 
 8. On the **Configure the data warehouse management group** page, follow these steps:  
     1. In the **Management group name** box, enter a unique name for the group.  
@@ -289,7 +289,7 @@ Use the following procedure to register the newly installed data warehouse serve
 7. On the **Credentials** page, you can accept the default entry in the **Run as account** list, and select **Next**, or you can enter credentials from a user or group of your own choosing.  
 
    > [!IMPORTANT]  
-   >  The account you specify will be assigned administrative credentials on the Service Manager management server and granted Read permission on the Service Manager database. You can specify different credentials from other Service Manager management groups when registering with the data warehouse.  
+   > The account you specify will be assigned administrative credentials on the Service Manager management server and granted Read permission on the Service Manager database. You can specify different credentials from other Service Manager management groups when registering with the data warehouse.  
 
 8. On the **Summary** page, select **Create**.  
 9. On the **Completion** page, when **The data warehouse registration succeeded** is displayed, select **Close**.  
@@ -306,7 +306,6 @@ Use the following procedure to register the newly installed data warehouse serve
     ```powershell
     Set-ExecutionPolicy RemoteSigned  
     Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1  
-
     ```  
 
 3. Enter the following command, and then press ENTER.  
@@ -332,7 +331,7 @@ Use the following procedure to register the newly installed data warehouse serve
 6. In the **MP Sync Job** dialog, scroll to the right and examine the **Status** column.  
 
     > [!NOTE]  
-    >  In the **MP Sync Job** dialog, select **Status** to alphabetically sort the status column.  
+    > In the **MP Sync Job** dialog, select **Status** to alphabetically sort the status column.  
 
 7. Scroll through the **Status** list. The management pack deployment process is complete when **Associated** or **Imported** is listed in the status column for all of the management packs. Ensure that there's no status of either **Pending Association** or **Failed** in the status list. In the **Data Warehouse Jobs** pane, the status of the **MPSyncJob** will have changed from **Running** to **Not Started**. This deployment process can take up to two hours to complete.  
 8. To refresh the **MP Sync Job** dialog:  

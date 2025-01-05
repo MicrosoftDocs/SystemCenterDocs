@@ -2,7 +2,7 @@
 title: Read Text Log 
 description: This article describes the Read Text Log activity that will read lines in a structured text log file.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,14 +17,13 @@ manager: jsuri
 ---
 # Read Text Log
 
-
-
 The Read Text Log activity will read lines in a structured text log file. If you have log files that change names, you can configure the Read Text Log activity to read from the newest file in a folder that matches a file name pattern. The Read Text Log activity can be used to check a log for errors and then take corrective action on the server that is creating the log or send an email to an administrator to escalate the issue.  
 
 > [!IMPORTANT]
 > For the Read Text Log activity to work correctly, every line in the text log file must begin with a timestamp.  
 
-## Configuring the Read Text Log Activity  
+## Configure the Read Text Log Activity
+
  Before you configure the Read Text Log activity, you need to determine the following:  
 
 - The log file name you're reading.  
@@ -44,7 +43,7 @@ Use the following information to configure the Read Text Log activity.
 |**Timestamp format**|Specify the format of the timestamp of the logs. For more information on how to specify the timestamp format, see the following Timestamp Format Codes table.|  
 |**Read the last lines**|Enter the number of lines.|  
 
-### Timestamp Format Codes  
+### Timestamp Format Codes
 
 |Code|Description|  
 |----------|-----------------|  
@@ -65,7 +64,8 @@ Here are some examples of dates and their corresponding timestamp format.
 |[03/26/2010] [14:07:46]|[%m/%d/%Y] [%H:%M:%S|  
 |15-11-10 02:09:45:056|%d-%m-%y %H:%M:%S:%s|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

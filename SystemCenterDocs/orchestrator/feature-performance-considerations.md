@@ -4,7 +4,7 @@ description: Provides performance guidance for System Center - Orchestrator
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/05/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -30,7 +30,7 @@ The data produced by a given activity can contain data elements that are single 
 
 Branching is a fundamental concept for Orchestrator. A given runbook activity will create a branch if it's the origin of two or more links whose filter conditions indicate there's data to pass to the activity at the end of the link. When a runbook is first invoked, it consists of a single thread. When this thread encounters a runbook activity whose links require a branch, additional threads are created, one for each branch. Each thread takes as input the published data from the activity that created the branch. This data is correlated back to the prior activities in the runbook \(hence, the ability to subscribe to published data from prior activities\).  
 
-::: moniker range="< sc-orch-2019"
+::: moniker range="<sc-orch-2019"
 
 The operator experience is based on two components: The Orchestration Console and the Web Service. The Orchestration Console is a Silverlight application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Hence, the Web Service and Orchestration Console are dependent on the performance of the Orchestrator database.
 
@@ -40,7 +40,7 @@ Additionally, while the Orchestration Console is dependent on the Web Service, i
 
 ::: moniker-end
 
-::: moniker range=">= sc-orch-2019"
+::: moniker range=">=sc-orch-2019"
 
 The operator experience is based on two components: The (new) Orchestration Console and Web API. The Orchestration Console is an Angular application that depends on the Web API for its connection to the Orchestrator database. The Web API is an IIS application that connects to the database. Hence, the Web API and Orchestration Console are dependent on the performance of the Orchestrator database.
 

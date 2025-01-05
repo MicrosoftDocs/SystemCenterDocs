@@ -5,7 +5,7 @@ description: This article provides an overview about process monitoring template
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -111,7 +111,7 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 
 ## Creating and modifying Process Monitor Templates
 
-#### To run the Process Monitoring wizard
+### Run the Process Monitoring wizard
 
 1. Determine the target group for the monitor by using the following logic:
 
@@ -153,7 +153,7 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 11. Select  **Next**.
 12. Review the summary of the monitor, and select  **Create**.
 
-#### To modify an existing Process Monitoring template
+### Modify an existing Process Monitoring template
 
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring**  workspace.
@@ -164,18 +164,18 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 
 ## Viewing Process Monitoring Monitors and Collected Data
 
-#### To view all Process Monitoring monitors
+### View all Process Monitoring monitors
 
 1. Open the Operations console.
 2. Open the  **Monitoring**  workspace.
 3. In the  **Monitoring**  navigation pane, select  **Windows Service and Process Monitoring** , and select  **Process State**.
 
-#### To view the state of each monitor
+### View the state of each monitor
 
 1. In the  **Process State**  pane, right-click an object. Select  **Open** , and select  **Health Explorer**.
 2. Expand the  **Availability**  and  **Performance**  nodes to view the individual monitors.
 
-#### To view the performance collected for a process
+### View the performance collected for a process
 
 1. In the  **Process State**  pane, right-click an object. Select  **Open** , and select  **Performance**.
 2. In the  **Legend**  pane, select the counters that you want to view.

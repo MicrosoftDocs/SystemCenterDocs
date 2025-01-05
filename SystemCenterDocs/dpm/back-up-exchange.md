@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 07/16/2024
+ms.date: 11/01/2024
 title: Back up Exchange with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
@@ -197,7 +197,7 @@ Follow these steps to recover a single mailbox:
     New-MailboxDatabase -Recovery -Name RDB-CONTROL -Server E2K13-MBX1
     ```
 
-    ```powershell   
+    ```powershell
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 
@@ -227,7 +227,7 @@ Follow these steps to recover a single mailbox:
 
 8. After the recovery process has finished, the required mailbox isn't fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
 
-    ```powershell   
+    ```powershell
     New-MailboxRestoreRequest -SourceDatabase 'RDB-CONTROL' -SourceStoreMailbox 'mailbox name' -TargetMailbox <name>@contoso.com -TargetRootFolder Recovery -SkipMerging StorageProviderForSource
     ```
 
@@ -506,7 +506,7 @@ Follow these steps to recover a single mailbox:
     New-MailboxDatabase -Recovery -Name RDB-CONTROL -Server E2K13-MBX1
     ```
 
-    ```powershell   
+    ```powershell
     Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 

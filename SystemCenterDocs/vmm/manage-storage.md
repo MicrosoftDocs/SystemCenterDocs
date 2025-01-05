@@ -5,11 +5,11 @@ description: This article describes how to set up the VMM storage fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Set up the VMM storage fabric
@@ -49,9 +49,15 @@ VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported
 
 ::: moniker-end
 
-::: moniker range=">sc-vmm-2016"
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
 
 VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported by file shares on computers running Windows Server 2016 or later, and by non-Microsoft vendors of network-attached storage (NAS) devices.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+
+VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported by file shares on computers running Windows Server 2019 or later, and by non-Microsoft vendors of network-attached storage (NAS) devices.
 
 ::: moniker-end
 

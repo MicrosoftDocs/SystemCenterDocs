@@ -4,10 +4,10 @@ description: This article describes how to upgrade the SQL Server supporting Sys
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 01/13/2023
+ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2022'
 ms.assetid:
 ms.subservice: operations-manager
 ms.topic: conceptual
@@ -15,10 +15,13 @@ ms.topic: conceptual
 
 # Upgrade Operations Manager databases to SQL Server 2022
 
+::: moniker range="sc-om-2022"
+
 Operations Manager 2022 UR1 supports SQL 2022.
 
-Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2022.  Before you proceed, back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
+::: moniker-end
 
+Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2022.  Before you proceed, back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
 >[!NOTE]
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
@@ -27,6 +30,7 @@ Use the steps in this article to perform an in-place upgrade of the databases su
 Before you perform these upgrade steps, review the [SQL Server 2022 upgrade information](/sql/database-engine/install-windows/upgrade-sql-server).
 
 ## Stop the Operations Manager services
+
 On all the management servers in the management group, stop the Operations Manager services:
 
 * System Center Data Access
@@ -34,6 +38,7 @@ On all the management servers in the management group, stop the Operations Manag
 * System Center Management Configuration
 
 ## Back up the Reporting server database
+
 1. On the SQL Server hosting the Reporting server databases, create a full backup of the **ReportServer** and **ReportServerTempDB** database. For more information, see [Create a Full Database Backup (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
 2. On the current Operations Manager reporting server, back up the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
@@ -64,7 +69,6 @@ On all the management servers in the management group, stop the Operations Manag
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
-
 To download SQL Server 2022 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=104502).
 
 After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.  This is necessary to configure Reporting Services to:
@@ -77,11 +81,12 @@ After a successful setup, select **Configure Report Server** to launch the Repor
 
 4. Run **regedit** from an elevated Command Prompt and navigate to _HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\SSRS\\MSSQLServer\\CurrentVersion_.  Note the value for the key _CurrentVersion_.   
 
-6. Create a registry REG_SZ  value named *Version* under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\Setup\ with REG_SZ value noted in the previous step.
+5. Create a registry REG_SZ  value named *Version* under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\Setup\ with REG_SZ value noted in the previous step.
 
-7. Reboot the server for the changes to take effect.
+6. Reboot the server for the changes to take effect.
 
 ## Verify the installation of SQL Report server
+
 After reinstalling the Operations Manager reporting server component, perform the following steps to confirm SQL Reporting Services is working correctly.
 
 1. Run the Reporting Services Configuration tool and connect to the report server instance you installed. The Web Service URL page includes a link to the Report Server Web service. Select the link to verify you can access the server.
@@ -100,7 +105,7 @@ After the Installation of Operations Manager Reporting Server, apply UR1 for the
 
 To enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017) on the Operations Manager databases, run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2022).  
 
-```
+```sql
 -- Do this only for SQL server version 2017 and more
 IF( convert(int, SERVERPROPERTY('ProductMajorVersion')) > 13 )
 BEGIN

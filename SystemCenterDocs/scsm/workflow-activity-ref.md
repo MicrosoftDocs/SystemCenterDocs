@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -45,7 +45,7 @@ This activity adds a computer to a security group in Active Directory Domain Ser
 |Computer Name|FullyQualifiedComputerName|String|Yes|The name of the computer.|  
 |Group Name|FullyQualifiedGroupName|String|Yes|The name of the Active Directory Domain Services group.|  
 
- The **Add AD DS Computer to Group** activity generates the output that is described in the following table.  
+The **Add AD DS Computer to Group** activity generates the output that is described in the following table.  
 
 |Display name|Internal name|Type|Description|  
 |------------------|-------------------|----------|-----------------|  
@@ -73,7 +73,7 @@ This activity adds a user to a security group in Active Directory Domain Service
 |User Name|UserName|String|Yes|The sign-in name of the user.|  
 |Group Name|FullyQualifiedGroupName|String|Yes|The FQDN of the group.|  
 
- The **Add AD DS User to Group** activity generates the output that is described in the following table.  
+The **Add AD DS User to Group** activity generates the output that is described in the following table.  
 
 |Display Name|Internal Name|Type|Description|  
 |------------------|-------------------|----------|-----------------|  
@@ -87,7 +87,7 @@ This activity adds a user to a security group in Active Directory Domain Service
 
 Use control flow activities to provide structure—branches, loops, or timer delays—for your workflow in Service Manager.  
 
- The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
+The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
 
 ### Delay activity
 
@@ -434,7 +434,7 @@ This activity in Service Manager runs a Windows PowerShell script as part of a W
 |Errors and exceptions|Remarks|Example|
 |--------------------------|------------------------------|-----------------------|
 |The **Windows PowerShell Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.|For more information about Windows PowerShell, see [Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=164777).|None|
- 
+
 ### VBScript Script activity
 
 This activity in Service Manager runs a VBScript script as part of a Windows Workflow Foundation (WF) workflow.  

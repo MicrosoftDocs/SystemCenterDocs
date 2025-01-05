@@ -12,7 +12,7 @@ ms.assetid: 6a413406-a44f-4f36-b3fc-1a8c066e0b8e
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ---
 
 # Get Cluster Properties Activity
@@ -48,7 +48,7 @@ No optional properties are provided for this activity.
 | Total CPU (MHz)   | The total CPU MHz available on the virtual machine cluster.   | Integer   |
 | Total Memory (MB)   | The total memory available on the virtual machine cluster.   | Integer   |
 
-## Configuring the Get Cluster Properties Activity
+## Configure the Get Cluster Properties Activity
 
 To configure the Get Cluster Properties Activity, follow these steps:
 

@@ -5,7 +5,7 @@ description: This article provides planning information for deploying VMM and it
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/05/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -37,7 +37,7 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ## Plan a highly available VMM management server
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
-- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
+- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md).
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 - Requirements for computers running as VMM management nodes:
@@ -53,7 +53,7 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ## Plan a highly available VMM management server
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
-- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
+- Before you start, you need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md).
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 
@@ -77,6 +77,19 @@ You shouldn't install SQL Server on the VMM cluster.
 	- The VMM service network name must not exceed 15 characters.
 	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](/windows-hardware/get-started/adk-install). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
 	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://www.microsoft.com/download/details.aspx?id=56041) or [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=57474) or [SQL Server 2016 feature pack](https://www.microsoft.com/download/details.aspx?id=56833) or [SQL Server 2017 feature pack](https://www.microsoft.com/download/details.aspx?id=55992) or [SQL Server 2019 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=100450).
+
+    >[!Note]
+    > Deploying a highly available SCVMM management server in a Stretched clusters configuration is not supported.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+- Requirements for computers running as VMM management nodes:
+	- All cluster nodes that will act as VMM servers must be running Windows Server 2025.
+	- Each cluster node must be joined to a domain and must have a computer name that doesn't exceed 15 characters.
+	- The VMM service network name must not exceed 15 characters.
+	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](/windows-hardware/get-started/adk-install). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
+	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://www.microsoft.com/download/details.aspx?id=56041) or [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=57474) or [SQL Server 2016 feature pack](https://www.microsoft.com/download/details.aspx?id=56833) or [SQL Server 2017 feature pack](https://www.microsoft.com/download/details.aspx?id=55992) or [SQL Server 2019 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=100450).
 
     >[!Note]
     > Deploying a highly available SCVMM management server in a Stretched clusters configuration is not supported.

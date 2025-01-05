@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -39,16 +39,16 @@ You can use the following procedure to view and analyze a Microsoft Online Analy
  You must have Microsoft Excel 2007 or later installed on the computer running the Service Manager console in order to use the following procedure.  
 
 > [!NOTE]  
->  The first time you analyze a cube with Excel, it can take a few minutes to load.  
+> The first time you analyze a cube with Excel, it can take a few minutes to load.  
 
-### To view and analyze an OLAP data cube with Excel  
+To view and analyze an OLAP data cube with Excel, follow these steps:
 
-1.  In the Service Manager console, select **Data Warehouse**, expand the **Data Warehouse** node, and select **Cubes**.  
-2.  In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Analyze Cube in Excel**. For example, select **SystemCenterWorkItemsCube** and analyze it.  
-3.  When the worksheet opens in Excel, you can drag and drop fields from the PivotTable Field List and create slicers and charts.  
-    -  For example, if you want to see the total number of incidents currently open, expand **IncidentDimGroup**, and then select **Incidents Opened**.  
-    -  You can add additional fields to generate a more complex analysis. For example, you can add computers from the **ComputerDim** dimension by selecting the **DisplayName** field to see the number of incidents that affect different computers.  
-4.  Optionally, you can save the workbook to a shared folder or other shared location, such as the analysis library. For more information about the analysis library, see [How to Use the Analysis Library](./manage-analysis-library.md).  
+1. In the Service Manager console, select **Data Warehouse**, expand the **Data Warehouse** node, and select **Cubes**.  
+2. In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Analyze Cube in Excel**. For example, select **SystemCenterWorkItemsCube** and analyze it.  
+3. When the worksheet opens in Excel, you can drag and drop fields from the PivotTable Field List and create slicers and charts.  
+    - For example, if you want to see the total number of incidents currently open, expand **IncidentDimGroup**, and then select **Incidents Opened**.  
+    - You can add additional fields to generate a more complex analysis. For example, you can add computers from the **ComputerDim** dimension by selecting the **DisplayName** field to see the number of incidents that affect different computers.  
+4. Optionally, you can save the workbook to a shared folder or other shared location, such as the analysis library. For more information about the analysis library, see [How to Use the Analysis Library](./manage-analysis-library.md).  
 
 ## Use Excel slicers to view Service Manager OLAP cube data
 

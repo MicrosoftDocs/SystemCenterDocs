@@ -12,7 +12,7 @@ ms.assetid: 043ce1cb-31d6-47c7-991f-9278b01b0113
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/12/2024
+ms.date: 11/01/2024
 ---
 
 # Get VM List Activity
@@ -50,7 +50,7 @@ No optional properties are provided for this activity.
 | VM Name  | The name of the VM.   | String   |
 | VM Path  | The full path of the VM on the vCenter server. | String   |
 
-## Configuring the Get VM List Activity
+## Configure the Get VM List Activity
 
 The following procedure describes the steps required to configure a Get VM List activity.
 

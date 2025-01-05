@@ -5,14 +5,22 @@ description: This article details the known issues and issues fixed in Virtual M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/27/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 
 # Release notes for System Center Virtual Machine Manager
+
+::: moniker range="sc-vmm-2025"
+
+Virtual Machine Manager (VMM) 2025 does not have any known issues.
+
+For new features in VMM 2025, see [What's new](whats-new-in-vmm.md).
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 

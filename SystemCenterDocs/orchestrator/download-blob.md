@@ -2,7 +2,7 @@
 title: Download Blob
 description: The Download Blob activity downloads a blob from the system.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 06/05/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,7 +17,6 @@ monikerRange: '<=sc-orch-2019'
 ---
 
 # Download Blob
-
 
 The **Download Blob** activity downloads a blob from the system. It's part of the **Azure Storage** category activity.
 

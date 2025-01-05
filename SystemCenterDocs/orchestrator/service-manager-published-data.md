@@ -1,7 +1,7 @@
 ---
 title: Service Manager published data
 description: The following tables list the published data elements for all of the classes in the System Center - Service Manager Integration Pack.
-ms.date: 01/17/2018
+ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -12,8 +12,6 @@ robots: noindex
 ms.custom: UpdateFrequency3
 ---
 # Service Manager published data
-
-
 
 The following tables list the published data elements for all of the classes in the System Center - Service Manager Integration Pack.
 

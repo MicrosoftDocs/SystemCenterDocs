@@ -5,11 +5,11 @@ description: This article summarizes supported storage arrays for VMM.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/05/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Supported storage arrays
@@ -58,6 +58,14 @@ This article provides details of the supported arrays for System Center 2019 - V
 This article provides details of the supported arrays for System Center 2022 - Virtual Machine Manager (VMM).
 
 [!INCLUDE [supported-arrays-2022.md](../includes/supported-arrays-2022.md)]
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+
+This article provides details of the supported arrays for System Center 2025 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [supported-arrays-2025.md](../includes/supported-arrays-2025.md)]
 
 ::: moniker-end
 

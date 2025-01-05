@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/22/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -88,7 +88,7 @@ For more information about the permissions that these accounts require, see [Acc
 
 To start deployment of the System Center - Service Manager data warehouse and data warehouse databases, install the data warehouse management server on one computer \(for example, computer 3\), and all of the data warehouse databases on another computer \(for example, computer 4\).  
 
- During Setup, you'll be prompted to provide credentials for the following accounts:  
+During Setup, you'll be prompted to provide credentials for the following accounts:  
 
 - Management group administrator  
 
@@ -184,6 +184,7 @@ The data warehouse databases include the following three databases: DWStagingAnd
 After the installation, do the following:
 
 21. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the  following commands:
+
     ```
     $DW ='DWMS Servername'
 
@@ -191,6 +192,7 @@ After the installation, do the following:
     ```
 
 22. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
+
     ```
     $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
 

@@ -1,7 +1,7 @@
 ---
 title: PGP Encrypt File
 description: This article describes the PGP Encrypt File activity.
-ms.date: 05/07/2019
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -15,8 +15,6 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 # PGP Encrypt File
-
-
 
 The PGP Encrypt File activity encrypts a file or an entire folder tree using a PGP key file that you've created. When encrypting an entire folder, the folder tree is preserved from the root folder down. For example, if you encrypt C:\Documents and Settings\Administrator\My Documents\\\*.\* and all subfolders, all files in My Documents are encrypted and also all the files in folders under My Documents. All the files that are in subfolders will be in the same subfolder in the Output folder. Use the PGP Encrypt File activity to encrypt files before backing them up.  
 
@@ -34,18 +32,19 @@ GnuPG is an open-source program used by the standard activities PGP Encrypt file
 
 Use the following steps:
 
-1.	Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/).
-2.	Save gpg.exe and iconv.dll to the \<System drive\>:\Program Files (x86)\Common Files\Microsoft System Center \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+1. Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/).
+2. Save gpg.exe and iconv.dll to the \<System drive\>:\Program Files (x86)\Common Files\Microsoft System Center \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
 ### Install GnuPG version 2.x
 
 Use the following steps:
 
-1.	Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
+1. Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
 
-2.	Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll to the \<System drive\>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+2. Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll to the \<System drive\>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator \<version\>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
-## Configuring the PGP Encrypt File Activity  
+## Configure the PGP Encrypt File Activity
+
  Before you configure the PGP Encrypt File activity, you need to determine the following:  
 
 - The path of the files that you want to encrypt.  
@@ -76,7 +75,8 @@ Use the following information to configure the PGP Encrypt File activity.
 |**Comment**|Enter the comment that was specified when the encryption key was created. If this field was completed when the encryption key was created, you must provide this information when using this activity.|  
 |**Email**|Enter the email address that was specified when the encryption key was created. This is a required field.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  

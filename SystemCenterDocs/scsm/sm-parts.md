@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2024
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -16,7 +16,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 There are six major parts of a System Center - Service Manager installation, as described in the following table.  
-
 
 |Service Manager part|Description|  
 |--------------------------------|-----------------|  

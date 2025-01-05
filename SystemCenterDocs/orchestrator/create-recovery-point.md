@@ -2,7 +2,7 @@
 title: Create Recovery Point
 description: The Create Recovery Point activity is used to create a backup for a selected data source.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 09/05/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Create Recovery Point
-
-
 
 The Create Recovery Point activity is used to create a backup for a selected data source. This activity allows you to create a recovery point outside the Data Protection Manager scheduled interval as configured for a protection group. This activity can also be used to force creation of an initial replica. For more information, see Protect Data Source.
 

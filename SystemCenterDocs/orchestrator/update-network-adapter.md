@@ -2,7 +2,7 @@
 title: Update Network Adapter
 description: The Update Network Adapter activity is used to make changes to an existing network adapter.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 03/04/2024
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,6 @@ manager: jsuri
 robots: noindex
 ---
 # Update Network Adapter
-
-
 
 The Update Network Adapter activity is used to make changes to an existing network adapter.
 
@@ -40,7 +38,6 @@ The activity publishes all the data from the required and optional properties in
 | Network Tag   | An alphanumeric value of your choice to differentiate the host's virtual networks, based on a criterion such as throughput or security. Network tags can be used to match virtual machines with suitable hosts.    |
 | Virtual Network ID | The unique identifier (GUID) of the Virtual Network specified at the host level of the Virtual Machine Manager configuration      |
 | VLAN ID   | A numeric identifier in the range 1 through 4094 for the Network VLAN      |
-
 
 ## Update Network Adapter Published Data
 

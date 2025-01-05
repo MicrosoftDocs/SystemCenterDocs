@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/18/2024
+ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -34,7 +34,6 @@ Software vendors or information technology \(IT\) developers with a working know
 
 The databases that a business uses to store all its transactions and records are called online transaction processing \(OLTP\) databases. These databases usually have records that are entered one at a time and that contain a wealth of information that can be used by strategists to make informed decisions about their business. The databases that are used to store the data, however, weren't designed for analysis. Therefore, retrieving answers from these databases is costly in terms of time and effort. OLAP databases are specialized databases that are designed to help extract this business intelligence information from the data.  
 
-
 OLAP cubes can be considered as the final piece of the puzzle for a data warehousing solution. An OLAP cube, also known as multidimensional cube or hypercube, is a data structure in SQL&nbsp;Server Analysis Services \(SSAS\) that is built, using OLAP databases, to allow near\-instantaneous analysis of data. The topology of this system is shown in the following illustration.  
 
  ![Diagram of the Service Manager 2016 DW.](./media/olap-cubes-overview/ops-dw2012.png)  
@@ -43,21 +42,18 @@ The useful feature of an OLAP cube is that the data in the cube can be contained
 
 The main goal of Service Manager OLAP cubes is to give software vendors or information technology \(IT\) developers the ability to perform near\-instantaneous analysis of data for both historical analysis and trending purposes. Service Manager does this by:  
 
--   Allowing you to define OLAP cubes in management packs that will be created automatically in SSAS when the management pack is deployed.  
--   Automatically maintaining the cube without user intervention, performing such tasks as processing, partitioning, translations and localization, and schema changes.  
--   Allowing users to use self\-service business intelligence tools, such as Excel, to analyze the data from multiple perspectives.  
--   Saving generated Excel reports for future reference.  
+- Allowing you to define OLAP cubes in management packs that will be created automatically in SSAS when the management pack is deployed.  
+- Automatically maintaining the cube without user intervention, performing such tasks as processing, partitioning, translations and localization, and schema changes.  
+- Allowing users to use self\-service business intelligence tools, such as Excel, to analyze the data from multiple perspectives.  
+- Saving generated Excel reports for future reference.  
 
 To see how data warehouse cubes are represented in the Service Manager console, navigate to the **Data Warehouse** workspace, and select **Cubes**.  
-
-
 
 ## Service Manager OLAP cubes
 
 The following illustration shows an image from SQL&nbsp;Server Business Intelligence Development Studio \(BIDS\) that depicts the main parts that are required for online analytical processing \(OLAP\) cubes. These parts are the data source, data source view, cubes, and dimensions. The following sections describe the OLAP cube parts and the actions that users can take using them.  
 
 :::image type="content" source="media/olap-cubes-overview/ops-cubedimensions.png" alt-text="Screenshot of the cube architecture.":::  
-
 
 ### Data source  
 
@@ -105,8 +101,8 @@ After the raw data has been processed in an OLAP cube, users can perform more co
 
 When a user drills down into the data in an OLAP cube, the user is analyzing the data at a different level of summarization. The level of detail of the data changes as the user drills down, examining the data at different levels in the hierarchy. As the users drill down, they move from summary information to data with a more narrow focus. The following are examples of drilling down:  
 
--   Drilling down into data to look at demographic information about the population of the United States, then into the state of Washington, then into the metropolitan area of Seattle, then into the city of Redmond, and finally into the population at Microsoft.  
--   Drilling down into sales figures for Xbox&nbsp;One consoles for the 2015 calendar year, then the fourth quarter of the year, then the month of December, then the week before Christmas, and finally Christmas Eve.  
+- Drilling down into data to look at demographic information about the population of the United States, then into the state of Washington, then into the metropolitan area of Seattle, then into the city of Redmond, and finally into the population at Microsoft.  
+- Drilling down into sales figures for Xbox&nbsp;One consoles for the 2015 calendar year, then the fourth quarter of the year, then the month of December, then the week before Christmas, and finally Christmas Eve.  
 
 #### Drill through  
 
@@ -138,13 +134,12 @@ A base set of aggregations is usually created that will be useful for most of th
 
 Service Manager uses the following two options when it builds and designs aggregations in Service Manager OLAP cubes:  
 
--   Performance Gain Reaches  
--   Usage\-based optimization  
+- Performance Gain Reaches  
+- Usage\-based optimization  
 
 The Performance Gain Reaches option defines what percentage of aggregations is built. For example, setting this option to the default and recommended value of 30 percent means that aggregations will be built to give the OLAP cube a 30\-percent estimated performance gain. However, this doesn't mean that 30 percent of the possible aggregations will be built.  
 
 Usage\-based optimization makes it possible for SSAS to log the requests for data so that when a query is run, the information is fed into the aggregation design process. SSAS then reviews the data and recommends which aggregations should be built to give the best estimated performance gain.  
-
 
 ## Service Manager cube partitioning
 
@@ -156,9 +151,9 @@ The main dynamic link library \(DLL\), which handles partitioning, is in the war
 
 Cube Partitioning Maintenance performs the following tasks:  
 
--   Create partitions  
--   Delete partitions  
--   Update partition boundaries  
+- Create partitions  
+- Delete partitions  
+- Update partition boundaries  
 
 To do this, the Structured Query Language \(SQL\) table etl.TablePartition is read to determine all the fact partitions that have been created for a measure group. The following actions occur:  
 
@@ -172,7 +167,6 @@ Remember the following about cube processing:
 
 - Only measure groups that are targeted at facts contain multiple partitions in SQL&nbsp;Server Standard Edition. By default, all measure groups and dimensions contain only one partition. Therefore, the partition doesn't have any boundary conditions.  
 - The partition boundaries are defined by a query binding that is based on datekeys that match up to the datekeys for the corresponding fact partition in the etl.TablePartition table.  
-
 
 ## Service Manager OLAP cube deployment
 
@@ -188,29 +182,28 @@ Only major objects can be serialized. In AMO, major objects are considered class
 
 Resources that wrap major objects must be created in a specific order for deployment to complete successfully and satisfy the dependency requirements of the OLAP cube elements. The following two lists illustrate the deployment sequence for the SystemCenterCube and CubeExtension elements, respectively:  
 
-1.  DataSourceView elements  
-2.  dimension elements  
-3.  date dimension element  
-4.  cube element  
-5.  DataSourceView elements  
-6.  cube element  
-
+1. DataSourceView elements  
+2. dimension elements  
+3. date dimension element  
+4. cube element  
+5. DataSourceView elements  
+6. cube element  
 
 ## Service Manager OLAP cube processing
 
 When an online analytical processing \(OLAP\) cube has been deployed and all its partitions have been created, it's ready to be processed so that it's viewable. Processing a cube is the final step after extract, transform, and load \(ETL\) runs. These steps occur as follows:  
 
-1.  Extract: Extract data from the source system  
-2.  Transform: Apply functions to conform data to a standard dimensional schema  
-3.  Load: Load the data into the data mart for consumption  
-4.  Process: Load the data from the data mart into the OLAP cube for browsing  
+1. Extract: Extract data from the source system  
+2. Transform: Apply functions to conform data to a standard dimensional schema  
+3. Load: Load the data into the data mart for consumption  
+4. Process: Load the data from the data mart into the OLAP cube for browsing  
 
 Processing of an OLAP cube occurs when all the aggregations for the cube are calculated and the cube is loaded with these aggregations and data. Dimension and fact tables are read, and the data is calculated and loaded into the cube. When you design an OLAP cube, processing must be carefully considered because of the potentially significant effect that processing might have in a production environment where millions of records may exist. A full process of all partitions in such an environment might take anywhere from days to even weeks, which might render the Service Manager infrastructure and cubes unusable to end users. One recommendation is to disable the processing schedule of any cubes that aren't being used to reduce the overhead on the system.  
 
 OLAP cube processing consists of two separate tasks:  
 
-1.  Dimension processing  
-2.  Partition processing  
+1. Dimension processing  
+2. Partition processing  
 
 Each OLAP cube has a corresponding processing job in the Service Manager console, and it runs on a user\-configurable schedule. Each type of processing task is described in the following sections.  
 
@@ -243,17 +236,18 @@ When a ProcessAdd task is performed, Service Manager limits the scope of the que
 
 Finally, it's important to note that Service Manager doesn't support manual processing of OLAP cubes using SSAS or Business Intelligence Development Studio. Processing cubes outside of the methods that are provided in System Center - Service Manager, including the Service Manager console and Service Manager cmdlets, won't update the watermark tables. Therefore, it's possible that data integrity problems might occur. If you've accidentally reprocessed the cube manually, one possible workaround is to unprocess the OLAP cube manually in the same manner. Then, the next time Service Manager processes the cube, it will automatically perform a ProcessFull task because partitions will be in an unprocessed state. This will update all watermarks and metadata correctly so that any possible data integrity problems will be fixed.  
 
-
 ## Maintain Service Manager OLAP cubes
 
 The information in the following sections describes maintenance best practices for online analytical processing \(OLAP\) cubes.  
 
-### Periodically reprocess Analysis Services dimensions  
+### Periodically reprocess Analysis Services dimensions
+
 SQL Server Analysis Services \(SSAS\) best practices recommend that SSAS dimensions should be fully processed periodically. Fully processing the dimensions rebuilds indices and optimizes the data storage of multidimensional data, which improves query and cube performance that can degrade over time. This is similar to periodically defragmenting a hard disk on a computer.  
 
 However, a drawback to fully processing an SSAS dimension is that all affected OLAP cubes become unprocessed, and they must also be fully processed to return them to the state in which you can query them. Service Manager doesn't explicitly fully process on SSAS dimensions. Therefore, you must decide when to perform this maintenance task.  
 
-### Memory considerations  
+### Memory considerations
+
 If you run all data warehouse extraction, transformation, and load \(ETL\) operations and OLAP cube functions on one server, carefully consider the memory needs of the operating system, data warehouse, and SSAS to ensure that the server can handle all the data\-intensive operations that can run concurrently. This is especially important because processing OLAP cubes is a memory\-intensive operation.  
 
 ## Next steps

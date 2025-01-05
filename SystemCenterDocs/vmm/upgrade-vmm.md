@@ -5,14 +5,23 @@ description: This article details the upgrade information and procedures for Vir
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/05/2024
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 
 # Upgrade System Center Virtual Machine Manager
+
+::: moniker range="sc-vmm-2025"
+
+This article provides the upgrade information for System Center 2025 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [upgrade-to-vmm-2025.md](../includes/upgrade-to-vmm-2025.md)]
+
+::: moniker-end
+
 
 ::: moniker range="sc-vmm-2022"
 
@@ -46,4 +55,4 @@ This article provides the upgrade information for System Center 2016 - Virtual M
 
 ## Next steps
 
-Learn about deploying the latest [update rollups](update-rollups.md).
+- Learn about deploying the latest [update rollups](update-rollups.md).

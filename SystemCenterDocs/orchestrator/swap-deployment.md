@@ -14,11 +14,9 @@ ms.author: v-gjeronika
 manager: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ---
 # Swap Deployment
-
-
 
 The **Swap Deployment** activity initiates a virtual IP swap between the staging and production deployment environments for a service. It's part of the **Azure Deployments** category activity.
 

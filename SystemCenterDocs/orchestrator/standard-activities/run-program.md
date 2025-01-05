@@ -2,7 +2,7 @@
 title: Run Program
 description: This article details about the Run Program activity
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 04/27/2023
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,11 +17,10 @@ manager: jsuri
 ---
 # Run Program
 
-
-
 The Run Program activity runs any program or command on any computer in your domain in an interactive or background mode. Use this activity to run backup applications or a batch script that runs a set of complex commands.  
 
-## Configuring the Run Program Activity  
+## Configure the Run Program Activity
+
  Before you configure the Run Program activity, you need to determine the following:  
 
 - The command line argument or program that will run and which computer it will run on.  
@@ -41,7 +40,7 @@ Use the following information to configure the Run .NET Script activity.
 |**Parameters**|Type the parameters that will be passed to the program that you want to run. This option is only available when you select the **Program execution** mode.|  
 |**Working folder**|Type the full path of the working folder that the program or command will use. The command or program will behave as if it was run from the working folder.|  
 
-### Advanced  
+### Advanced
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
@@ -52,7 +51,8 @@ Use the following information to configure the Run .NET Script activity.
 |**User name**|To use a different account name to sign in to a computer and run a program, type the account number in the User name box. **Note:**  This user name only signs in to the computer where the Run Program activity runs and uses the interactive sign-in type. If the program that the Run Program activity launches accesses resources on other computers, the same user name is used on the remote computer, but with the network sign-in type.|  
 |**Password**|Type the password associated with the user name to run the program on the remote computer.|  
 
-### Published Data  
+### Published Data
+
  The following table lists the published data items.  
 
 |Item|Description|  
@@ -68,7 +68,8 @@ Use the following information to configure the Run .NET Script activity.
 |Program output file|The name of the local file where the program output was saved.|  
 |UNC program output file|The name of the file where the program output was saved in UNC format.|  
 
-### Security  
+### Security
+
  The Run Program activity is based on PsExec. PsExec lets you execute processes on other systems, complete with full interactivity for console applications. For more information on PsExec, go to [PsExec](/sysinternals/downloads/psexec).  
 
  The Run Program activity inherits certain security concerns from PsExec. Specifically, PsExec uses named pipes. This can be a security concern, as credentials can be sent through this tool.  

@@ -75,8 +75,6 @@
           href: deploy-sm-images.md
       - name: Install on VMs
         href: install-sm-vms.md
-      - name: Configure PowerShell
-        href: config-powershell.md
       - name: Register with the data warehouse to enable reporting
         href: register-dw.md
       - name: Deploy additional management servers
