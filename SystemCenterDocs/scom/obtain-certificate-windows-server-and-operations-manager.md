@@ -348,7 +348,7 @@ Alternatively, right-click the certificate file > Install > Local machine and ch
 > [!TIP]
 > If you add a certificate to the certificate store with the private key and later delete it, the certificate will lose the private key when reimported. Operations Manager requires the private key for encrypting outgoing data. To restore the private key, use the [certutil](/windows-server/administration/windows-commands/certutil#-repairstore) command with the certificate's serial number. Run the following command in an Administrator Command Prompt or PowerShell window:
 >
-> ```text
+> ```cmd
 > certutil -repairstore my <certificateSerialNumber>
 > ```
 
@@ -387,7 +387,7 @@ To import the certificate into Operations Manager using MOMCertImport, follow th
 
 1. *MOMCertImport* updates the following registry location to contain a value that matches the serial number of the certificate imported, mirrored:
 
-    ```text
+    ```Registry
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber
     ```
 
