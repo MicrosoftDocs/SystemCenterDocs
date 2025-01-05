@@ -18,7 +18,7 @@ When System Center Operations Manager operates across trust boundaries where Ker
 
 Certificates generated using this article are **not** for Linux monitoring unless a Gateway server performing the monitoring is across a trust boundary, and then the certificate is only used for Windows-to-Windows authentication for the Gateway and Management Server, separate certificates (SCX-Certificates) are used for Linux authentication and are handled by Operations Manager itself.
 
-This article describes how to obtain a certificate and use with Operations Manager Management Server, Gateway, or Agent using an [Enterprise Active Directory Certificate Services](https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview) (AD CS) Certificate Authority (CA) server on the Windows platform. If you're using a Stand-Alone or non-Microsoft CA, Consult with your Certificate/PKI team for assistance in creating certificates used for Operations Manager.
+This article describes how to obtain a certificate and use with Operations Manager Management Server, Gateway, or Agent using an [Enterprise Active Directory Certificate Services](/windows-server/identity/ad-cs/active-directory-certificate-services-overview) (AD CS) Certificate Authority (CA) server on the Windows platform. If you're using a Stand-Alone or non-Microsoft CA, Consult with your Certificate/PKI team for assistance in creating certificates used for Operations Manager.
 
 ## Prerequisites
 
