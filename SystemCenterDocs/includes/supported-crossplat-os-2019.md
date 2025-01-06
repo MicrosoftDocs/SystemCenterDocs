@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/19/2024
+ms.date: 01/02/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -130,7 +130,7 @@ Supported versions:
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 and later|
 |PAM|Pluggable Authentication Modules|1.1.8-3.1|
 
 ## Universal Linux (RPM package)
@@ -152,5 +152,5 @@ To install the agent on servers, see [Install the agent on RPM based Universal L
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 and later|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
