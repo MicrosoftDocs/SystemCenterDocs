@@ -5,12 +5,11 @@ description: This include file describes the new features in Virtual Machine Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  06/06/2024
+ms.date:  12/18/2024
 ms.topic:  include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ---
-
 
 ## New features in VMM 2019
 
@@ -362,16 +361,16 @@ For problems fixed in VMM 2019 UR3, and installation instructions for UR3, [see 
 
 VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs. [Learn more](../vmm/vm-settings.md#support-for-trunk-mode).
 
-#### Support for Azure Stack HCI clusters
+#### Support for Azure Local instances
 
-VMM 2019 UR3 includes support to add, deploy, and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
+VMM 2019 UR3 includes support to add, deploy, and manage Azure Local instances in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Local.
 
 Azure Stack HCI, version 20H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. [Learn more](../vmm/deploy-manage-azure-stack-hci.md).
+Most of the operations to manage Azure Local instances in VMM are similar to that of managing Windows Server clusters. [Learn more](../vmm/deploy-manage-azure-stack-hci.md).
 
 >[!NOTE]
->Management of Azure Stack HCI *stretched* clusters is currently not supported in VMM.
+>Management of Azure Local *stretched* clusters is currently not supported in VMM.
 
 ### Updates to PowerShell cmdlets
 

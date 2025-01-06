@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: PriskeyJeronika-MS #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-gjeronika #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/09/2020 #Required; mm/dd/yyyy format.
+  ms.date: 12/18/2024 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -66,9 +66,9 @@ landingContent:
           - text: Set up the VMM storage fabric
             url: manage-storage.md
   # Card
-  - title: Deploy and manage Azure Stack HCI
+  - title: Deploy and manage Azure Local
     linkLists:
       - linkListType: deploy
         links:
-          - text: Deploy and manage Azure Stack HCI clusters in VMM
+          - text: Deploy and manage Azure Local instances in VMM
             url: deploy-manage-azure-stack-hci.md
