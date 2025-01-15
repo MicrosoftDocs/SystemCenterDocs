@@ -1,6 +1,6 @@
 ---
 ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
-title: Supported UNIX and Linux operating system versions
+title: Supported Linux operating system versions
 description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -12,7 +12,7 @@ ms.topic: article
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 
-# Supported UNIX and Linux operating system versions
+# Supported Linux operating system versions
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center - Operations Manager.
 
