@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/25/2024
+ms.date: 01/02/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -119,7 +119,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 Supported versions:
 
-- Debian 9, 10, 11, and 12
+- Debian 8, 9, 10, 11, and 12
 - Ubuntu 16.04, 18.04, 20.04, 22.04 and 24.04
 
 >[!NOTE]
@@ -130,19 +130,18 @@ Supported versions:
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 and later|
 |PAM|Pluggable Authentication Modules|1.1.8-3.1|
 
 ## Universal Linux (RPM package)
 
 Supported versions:
 
-- Oracle Linux 7, 8, and 9 (supported from Operations Manager 2019 UR5 and later)
-- Rocky 8 (supported from Operations Manager 2019 UR4 and later), and 9 (supported from Operations Manager 2019 UR5 and later)
-- Alma 8 (supported from Operations Manager 2019 UR4 and later), and 9 (supported from Operations Manager 2019 UR5 and later)
-- Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
-- Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR5 and later) 
-- Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later
+- CentOS 7 and 8
+- Oracle Linux 7<br> Oracle Linux 8 is supported from Operations Manager 2019 UR3 later<br> Oracle Linux 9 is supported from Operations Manager 2019 UR5 and later
+- Rocky 8 is supported from Operations Manager 2019 UR4 and later<br>Rocky 9 is supported from Operations Manager 2019 UR5 and later
+- Alma 8 is supported from Operations Manager 2019 UR4 and later<br>Alma 9 is supported from Operations Manager 2019 UR5 and later
+- Red Hat Enterprise Linux (RHEL) Server 8 is supported from Operations Manager 2019 UR1 and later<br>Red Hat Enterprise Linux (RHEL) Server 9 is supported from Operations Manager 2019 UR5 and later
 - SLES 15 is supported from System Center - Operations Manager 2019 UR1 and later
 
 >[!Note]
@@ -153,5 +152,5 @@ To install the agent on servers, see [Install the agent on RPM based Universal L
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 and later|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
