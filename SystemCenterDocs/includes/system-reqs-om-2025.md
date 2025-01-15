@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/03/2024
+ms.date: 01/15/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -155,6 +155,7 @@ Windows 10 and Windows 11 client operating system are supported for the Operatio
 - Windows Server 2025 – Standard, Datacenter, Server Core
 - Windows Server 2022 - Standard, Datacenter, Server Core
 - Windows Server 2019 - Standard, Datacenter, Server Core
+- Windows Server 2016 - Standard, Datacenter, Server Core
 - Windows 10 - Enterprise, Pro
 - Windows 11 - Enterprise, Pro
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
