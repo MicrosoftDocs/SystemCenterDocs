@@ -5,7 +5,7 @@ description: This article describes how to put a monitored object into maintenan
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 12/13/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -16,15 +16,15 @@ ms.topic: article
 
 Maintenance mode in Operations Manager enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 
--   Rules and monitors
+- Rules and monitors
 
--   Notifications
+- Notifications
 
--   Automatic responses
+- Automatic responses
 
--   State changes
+- State changes
 
--   New alerts
+- New alerts
 
 For example, an Exchange mailbox role running on a Windows server will have an Exchange Server service pack applied. This software update maintenance is expected to take 60 minutes to complete. During this time, the Mailbox database running on this server won't be available.
 
@@ -70,7 +70,6 @@ You can either select one or more monitoring objects and place them into mainten
 - If any accounts that are listed under the Operational Database Account profile don't have access to the SQLAgentOperatorRole permission on the MSDB database, assign the SQLAgentOperatorRole permission on the MSDB database to each account under the Operational Database Account profile.
 - If you don't have any accounts listed under the Operational Database Account profile, then the accounts that are available under the Default Action Account profile should have the SQLAgentOperatorRole permission on the MSDB database. This permission is granted automatically during the fresh installation of System Center Operations Manager 2019. However, in case of an upgrade to System Center Operations Manager 2019 from a previous version of System Center Operations Manager, this permission needs to be granted manually
 
-
 To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a system administrator to set the machine in maintenance mode directly from the computer itself, without any need to perform it from the Operations console.  It can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
 
 The following section describes how to work with the different options for the on-demand maintenance mode feature.
@@ -83,21 +82,21 @@ Select the required tab to work with the different options for the on-demand mai
 
 Follow these steps to put a monitored object into maintenance mode:
 
-1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
+1. Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, select **Monitoring**.
+2. In the Operations console, select **Monitoring**.
 
-3.  In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.
+3. In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.
 
-4.  In the **Windows Computers** pane, right-click the computer that you want to place into maintenance mode, select **Maintenance Mode**, and select **Start Maintenance Mode**. You can use ctrl+click or shift+click to select multiple computers to place into maintenance mode.
+4. In the **Windows Computers** pane, right-click the computer that you want to place into maintenance mode, select **Maintenance Mode**, and select **Start Maintenance Mode**. You can use ctrl+click or shift+click to select multiple computers to place into maintenance mode.
 
-5.  In the **Maintenance Mode Settings** dialog, under **Apply to**, select **Selected objects only** if the computer is to be placed into maintenance mode; otherwise, select **Selected objects and all their contained objects**.
+5. In the **Maintenance Mode Settings** dialog, under **Apply to**, select **Selected objects only** if the computer is to be placed into maintenance mode; otherwise, select **Selected objects and all their contained objects**.
 
-6.  Select **Planned** if this is a planned event; otherwise, leave it cleared.
+6. Select **Planned** if this is a planned event; otherwise, leave it cleared.
 
-7.  In the **Category** list, select the appropriate maintenance category.
+7. In the **Category** list, select the appropriate maintenance category.
 
-8.  Under **Duration**, select and enter the **Number of minutes** or select and enter the **Specific end time**, and select **OK**. A maintenance mode icon appears in the **Computers** pane, in the **Maintenance Mode** column for the computer you selected.
+8. Under **Duration**, select and enter the **Number of minutes** or select and enter the **Specific end time**, and select **OK**. A maintenance mode icon appears in the **Computers** pane, in the **Maintenance Mode** column for the computer you selected.
 
     > [!NOTE]
     > The minimum value for **Number of minutes** is 5. The maximum value is 1,051,200 (2 years).
@@ -107,35 +106,35 @@ Follow these steps to put a monitored object into maintenance mode:
 
 Follow these steps to edit the maintenance mode settings for a monitored object:
 
-1.  Sign in to the computer with an account that is a member of the Operations Manager Administrators role.
+1. Sign in to the computer with an account that is a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, select **Monitoring**.
+2. In the Operations console, select **Monitoring**.
 
-3.  In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.
+3. In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.
 
-4.  Right-click the computer in the **Windows Computers** pane whose settings you want to edit, select **Maintenance Mode**, and select **Edit Maintenance Mode settings**.
+4. Right-click the computer in the **Windows Computers** pane whose settings you want to edit, select **Maintenance Mode**, and select **Edit Maintenance Mode settings**.
 
-5.  In the **Maintenance Mode Settings** dialog, edit the settings you want to change, and select **OK**.
+5. In the **Maintenance Mode Settings** dialog, edit the settings you want to change, and select **OK**.
 
 # [Stop maintenance mode on a monitored object](#tab/Stop)
 
 Follow these steps to stop the maintenance mode on a monitored object:
 
-1.  Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
+1. Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, select **Monitoring**.
+2. In the Operations console, select **Monitoring**.
 
-3.  In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.
+3. In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.
 
-4.  In the **Windows Computers** pane, right-click the computer that you want to take out of maintenance mode, select **Maintenance Mode**, and select **Stop Maintenance Mode**.
+4. In the **Windows Computers** pane, right-click the computer that you want to take out of maintenance mode, select **Maintenance Mode**, and select **Stop Maintenance Mode**.
 
-5.  Do the following in the **Maintenance Mode** dialog:
+5. Do the following in the **Maintenance Mode** dialog:
 
-    1.  If you selected **Selected objects and all their contained objects** when you placed the computer into maintenance mode, select **Remove contained objects** and select **Yes**.
+    1. If you selected **Selected objects and all their contained objects** when you placed the computer into maintenance mode, select **Remove contained objects** and select **Yes**.
 
-    2.  If you selected **Selected objects only**, clear **Remove contained objects** and select **Yes**.
+    2. If you selected **Selected objects only**, clear **Remove contained objects** and select **Yes**.
 
-6.  In the **Windows Computers** pane, the maintenance mode icon disappears from the **Maintenance Mode** column for the computer you selected.
+6. In the **Windows Computers** pane, the maintenance mode icon disappears from the **Maintenance Mode** column for the computer you selected.
 
     > [!NOTE]
     > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from the maintenance mode.
@@ -171,7 +170,6 @@ A rule that targets the agent, reads the event entry on the agent and stores thi
 > [!NOTE]
 > The minimum duration value accepted is five (5) minutes.
 
-
 The following reasons are accepted by the cmdlet:  
 
 - PlannedOther
@@ -188,7 +186,7 @@ The following reasons are accepted by the cmdlet:
 - ApplicationUnresponsive
 - ApplicationUnstable
 - SecurityIssue
-- LossOfNetworkConnectivity 
+- LossOfNetworkConnectivity
 
 #### Examples:
 
@@ -208,7 +206,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 3. Change directory to the following path **C:\Program Files\Microsoft Monitoring Agent\Agent** by entering `cd C:\Program Files\Microsoft Monitoring Agent\Agent`.
 
-4. Import the module MaintenanceMode.dll by entering `Import-module MaintenanceMode.dll`.   
+4. Import the module MaintenanceMode.dll by entering `Import-module MaintenanceMode.dll`.
 
 5. Enter **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request.
 
@@ -229,7 +227,6 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 ::: moniker-end
 
-
 ## Schedule maintenance mode
 
 The following section describes how to work with the different options available for the maintenance mode scheduling feature.
@@ -240,9 +237,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
 1. Sign in to the computer with an account that's a member of the Operations Manager Administrators role.
 
-2. In the Operations console, select **Administration**.
+2. In the Operations console, select **Monitoring**.
 
-3. In the **Administration** workspace, expand **Device Management**, and select **Maintenance Schedules**.
+3. In the **Monitoring** workspace, expand **Monitoring**, and select **Maintenance Schedules**.
 
 4. From the **Tasks** pane, select **Create Maintenance Schedule**.
 
