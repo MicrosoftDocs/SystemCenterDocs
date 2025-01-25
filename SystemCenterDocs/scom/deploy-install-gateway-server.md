@@ -16,7 +16,7 @@ ms.topic: article
 
 Gateway servers are typically used to enable monitoring of client computers that are outside the Kerberos trust boundary of management groups. However, they can also be used within the same domain if there are needs to split up the environment due to network segmentation, or to have "far away" agents connect to the management group.
 
-Agents communicate directly with the gateway server, and the gateway server communicates with one or more management servers. Multiple gateway servers can be placed in a single domain so that the agents can fail over from one to the other if they lose communication with their primary gateway. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain. The gateway server acts as a proxy for agent-to-management server communication, enabling only one port to be opened between networks in place of many. Certificates must be used to establish each computer's identity when outside the Kerberos trust boundary. Without certificates, the systems might connect, but refuse to communicate due to being unable to authenticate the connection.
+Agents communicate directly with the gateway server, and the gateway server communicates with one or more management servers. Multiple gateway servers can be placed in a single domain so that the agents can fail over from one to the other if they lose communication with their primary gateway. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain. The gateway server acts as a proxy for agent-to-management server communication, enabling only one port to be opened between networks in place of many. Certificates must be used to establish each computer's identity when outside the Kerberos trust boundary. Without certificates, the systems might connect but refuse to communicate due to being unable to authenticate the connection.
 
 Before continuing, ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
@@ -96,9 +96,10 @@ Follow these steps to install the gateway server:
 1. On the **Destination Folder** page, accept the default, or select **Change** to select a different installation directory, and select **Next**.
 1. On the **Management Group Configuration** page, enter the target management group name in the **Management Group Name** field, enter the target management server name in the **Management Server** field, check that the **Management Server Port** field is **5723**, and select **Next**.
 1. On the **Gateway Action Account** page, select the **Local System** account option, unless you're using a domain-based or local computer-based gateway Action account. Select **Next**.
-1. On the **Microsoft Update** page, optionally indicate if you want to use Microsoft Update, and select **Next**. (Typically this selection should be No.)
+1. On the **Microsoft Update** page, optionally indicate if you want to use Microsoft Update, and select **Next**. (Typically, this selection should be No.)
+
 1. On the **Ready to Install** page, select **Install**.
-1. On the **Completing**  page, select **Finish**.
+1. On the **Completing** page, select **Finish**.
 
 #### [Install using the Command Prompt](#tab/install-using-the-command-prompt)
 
@@ -115,6 +116,7 @@ If you're using **LocalSystem** as the action account:
 
 ```cmd
 %WinDir%\System32\msiexec.exe /i C:\path\to\Installer\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log ^
+AcceptEndUserLicenseAgreement=1 ^
 ADDLOCAL=MOMGateway ^
 MANAGEMENT_GROUP="ManagementGroupName" ^
 IS_ROOT_HEALTH_SERVER=0 ^
@@ -129,6 +131,7 @@ If you're using a **Domain User** as the action account:
 
 ```cmd
 %WinDir%\System32\msiexec.exe /i C:\path\to\Installer\gateway\amd64\MOMGateway.msi /qn /l*v %LocalAppData%\SCOM\Logs\GatewayInstall.log ^
+AcceptEndUserLicenseAgreement=1 ^
 ADDLOCAL=MOMGateway ^
 MANAGEMENT_GROUP="ManagementGroupName" ^
 IS_ROOT_HEALTH_SERVER=0 ^
