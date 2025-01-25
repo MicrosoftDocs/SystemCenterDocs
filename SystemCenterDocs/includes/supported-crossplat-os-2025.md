@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/20/2024
+ms.date: 01/02/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -28,7 +28,7 @@ ms.subservice: operations-manager
 |--------------------|---------------|-------------------|
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 to 3.3|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 and later|
 
 >[!NOTE]
 >SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022 and later.
@@ -47,7 +47,7 @@ Supported versions:
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 to 3.3|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 and later|
 |PAM|Pluggable Authentication Modules|1.1.8-3.1|
 
 ## Universal Linux (RPM package)
@@ -70,5 +70,5 @@ Supported versions:
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 to 3.3|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0 and later|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
