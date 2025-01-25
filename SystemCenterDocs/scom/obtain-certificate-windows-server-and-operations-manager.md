@@ -166,7 +166,7 @@ To import the Trusted Root Certificate, follow these steps:
       1. Select **Next** and **Finish**.
 6. If successful, the Trusted Root Certificate from the CA is visible under **Trusted Root Certification Authorities** > **Certificates**.
 
-## Create a certificate template for an Enterprise CAs
+## Create a certificate template for an Enterprise CA
 
 > [!IMPORTANT]
 > If you're utilizing Stand-Alone or non-Microsoft CAs, consult with your certificate or PKI team on how to proceed with generating your certificate request.
@@ -274,39 +274,40 @@ For Enterprise CAs with a defined certificate template, you can request a new ce
 
 1. Sign in to the target machine with administrator rights (Management Server, Gateway, Agent, and so on).
 1. Use Administrator Command Prompt or PowerShell window to open Certificate Manager.
-      1. *certlm.msc* – opens the Local Machine certificate store.
-      1. *mmc.msc* – opens the Microsoft Management Console.
-          1. Load the Certificate Manager snap-in.
-          1. Go to **File** > **Add/Remove Snap-In**.
-          1. Select **Certificates**.
-          1. Select **Add**.
-          1. When prompted, select *Computer Account* and select **Next**
-          1. Ensure to select *Local Computer* and select **Finish**.
-          1. Select **OK** to close the wizard.
+    1. *certlm.msc* - opens the Local Machine certificate store.
+    1. *mmc.msc* - opens the Microsoft Management Console.
+        1. Load the Certificate Manager snap-in.
+        1. Go to **File** > **Add/Remove Snap-In**.
+        1. Select **Certificates**.
+        1. Select **Add**.
+        1. When prompted, select *Computer Account* and select **Next**
+        1. Ensure to select *Local Computer* and select **Finish**.
+        1. Select **OK** to close the wizard.
 1. Start the certificate request:
-      1. Under Certificates, expand the Personal folder.
-      1. Right-click  **Certificates** > **All Tasks** > **Request New Certificate**.
-1. **Certificate Enrollment wizard**
-      1. On the **Before You Begin** page, select **Next**.
-      1. Select the applicable Certificate Enrollment Policy (default may be the **Active Directory Enrollment Policy**), select **Next**
-      1. Select your desired Enrollment Policy template.
-          1. If the template isn't immediately available, select **Show all templates** box below the list
-          1. If the template needed is available with a red X beside it, consult your Active Directory or Certificate team
-      1. In most environments, you can find a warning message with a hyperlink under the certificate template, select the link, and continue to fill the information for the certificate.
-      1. **Certificate Properties wizard:**
+    1. Under Certificates, expand the Personal folder.
+    1. Right-click  **Certificates** > **All Tasks** > **Request New Certificate**.
+1. In the **Certificate Enrollment** wizard
+    1. On the **Before You Begin** page, select **Next**.
+    2. Select the applicable Certificate Enrollment Policy (default may be the **Active Directory Enrollment Policy**), select **Next**
+    3. Select your desired Enrollment Policy template.
+    4. If the template isn't immediately available, select **Show all templates** box below the list
+    5. If the template needed is available with a red X beside it, consult your Active Directory or Certificate team
+    6. As information in the certificate will need to be manually entered, you will find a warning message under the selected template as a hyperlink that says `⚠️ More Information is required to enroll for this certificate. Click here to configure settings.` 
+        1. Select the hyperlink, and continue to fill the information for the certificate in the popup window.
+1. In the **Certificate Properties** wizard:
 
-         |Tab|Description|
-         |----|---------------|
-         |Subject| 1. In Subject Name, select the **Common Name** or **Full DN**, provide the value - hostname or BIOS name of the target server, Select **Add**.</br> 2. Add Alternative Names as desired. If using alternative names in place of a Subject, the *first* name must match the hostname or BIOS name.|
-         |General| 1. Provide a Friendly Name to the generated certificate.</br> 2. Provide a description of the purpose of this certificate if desired.|
-         |Extensions| 1. Under Key usage, ensure to select **Digital Signature** and **Key encipherment** option, and select the **Make these key usages critical** checkbox.</br> 2. Under Extended Key Usage, ensure to select **Server Authentication** and **Client Authentication** options.|
-         |Private Key| 1. Under Key options, ensure that the Key Size is at least 1024 or 2048, and select the **Make private key exportable** checkbox.</br> 2. Under Key type, ensure to select the **Exchange** option.|
-         |Certification Authority tab| Ensure to select the CA checkbox.|
-         |Signature| If your organization requires a registration authority, provide a signing certificate for this request. |
+    |Tab|Description|
+    |----|---------------|
+    |Subject| 1. In Subject Name, select the **Common Name** or **Full DN**, provide the value - hostname or BIOS name of the target server, Select **Add**.</br> 2. Add Alternative Names as desired. If using alternative names in place of a Subject, the *first* name must match the hostname or BIOS name.|
+    |General| 1. Provide a Friendly Name to the generated certificate.</br> 2. Provide a description of the purpose of this certificate if desired.|
+    |Extensions| 1. Under Key usage, ensure to select **Digital Signature** and **Key encipherment** option, and select the **Make these key usages critical** checkbox.</br> 2. Under Extended Key Usage, ensure to select **Server Authentication** and **Client Authentication** options.|
+    |Private Key| 1. Under Key options, ensure that the Key Size is at least 1024 or 2048, and select the **Make private key exportable** checkbox.</br> 2. Under Key type, ensure to select the **Exchange** option.|
+    |Certification Authority tab| Ensure to select the CA checkbox.|
+    |Signature| If your organization requires a registration authority, provide a signing certificate for this request. |
 
-      1. Once the information is provided in the Certificate Properties wizard, the warning hyperlink from earlier disappears.
-      1. Select **Enroll to create the certificate**. If there's an error, consult your AD or certificate team.
-      1. If successful, the status reads **Succeeded** and a new certificate is in the Personal/Certificates store.
+    1. Once the information is provided in the Certificate Properties wizard, the warning hyperlink from earlier disappears.
+    1. Select **Enroll to create the certificate**. If there's an error, consult your AD or certificate team.
+        1. If successful, the status reads **Succeeded** and a new certificate is in the Personal/Certificates store.
 1. If these actions were taken on the intended recipient of the certificate, proceed to the next steps.
 1. If the certificate request needs to approval by a Certificate Manager, continue once the request is validated and approved.
    1. Once approved, if Auto Enrollment is configured, then the certificate will appear on the system after a Group Policy update (`gpupdate /force`).
