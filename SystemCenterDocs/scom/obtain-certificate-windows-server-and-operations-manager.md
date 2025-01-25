@@ -292,7 +292,7 @@ For Enterprise CAs with a defined certificate template, you can request a new ce
     3. Select your desired Enrollment Policy template.
     4. If the template isn't immediately available, select **Show all templates** box below the list
     5. If the template needed is available with a red X beside it, consult your Active Directory or Certificate team
-    6. As information in the certificate will need to be manually entered, you will find a warning message under the selected template as a hyperlink that says `⚠️ More Information is required to enroll for this certificate. Click here to configure settings.` 
+    6. As information in the certificate needs to be manually entered, you'll find a warning message under the selected template as a hyperlink that says `⚠️ More Information is required to enroll for this certificate. Click here to configure settings.` 
         1. Select the hyperlink, and continue to fill the information for the certificate in the popup window.
 1. In the **Certificate Properties** wizard:
 
@@ -347,7 +347,7 @@ To use the newly created certificate, import it into the certificate store on th
 Alternatively, right-click the certificate file > Install > Local machine and choose the destination of the personal store to install the certificate.
 
 > [!TIP]
-> If you add a certificate to the certificate store with the private key and later delete it, the certificate will lose the private key when reimported. Operations Manager requires the private key for encrypting outgoing data. To restore the private key, use the [certutil](/windows-server/administration/windows-commands/certutil#-repairstore) command with the certificate's serial number. Run the following command in an Administrator Command Prompt or PowerShell window:
+> If you add a certificate to the certificate store with the private key and later delete it, the certificate loses the private key when reimported. Operations Manager requires the private key for encrypting outgoing data. To restore the private key, use the [certutil](/windows-server/administration/windows-commands/certutil#-repairstore) command with the certificate's serial number. Run the following command in an Administrator Command Prompt or PowerShell window:
 >
 > ```cmd
 > certutil -repairstore my <certificateSerialNumber>
