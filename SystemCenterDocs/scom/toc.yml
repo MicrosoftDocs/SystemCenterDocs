@@ -31,8 +31,10 @@
     items:
     - name: System requirements
       href: system-requirements.md
-    - name: Supported versions of UNIX and Linux
-      href: plan-supported-crossplat-os.md
+    - name: Supported versions of UNIX
+      href: plan-supported-crossplat-unix-os.md
+    - name: Supported version of Linux
+      href: plan-supported-crossplat-linux-os.md
     - name: Plan a management group design
       href: plan-mgmt-group-design.md
     - name: SQL Server design considerations
