@@ -10,6 +10,10 @@
      "redirect_url" : "/azure/azure-monitor/scom-manage-instance/whats-new-scom-managed-instance"
   },
   {
+     "source_path" : "SystemCenterDocs/scom/plan-supported-crossplat-os.md",
+     "redirect_url" : "/system-center/scom/plan-supported-crossplat-linux-os"
+  },
+  {
      "source_path" : "SystemCenterDocs/scsm/config-powershell.md",
      "redirect_url" : "/system-center/scsm/service-manager"
   },
