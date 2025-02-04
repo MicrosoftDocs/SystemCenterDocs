@@ -25,7 +25,7 @@ The following tables describe the required UNIX operating systems and package de
 ::: moniker range=">= sc-om-2022"
 
 > [!IMPORTANT]
-> Beginning with the Operations Manager 2022, monitoring UNIX based operating systems is no longer supported. The last version to support these OS types is Operations Manager 2019.
+> Beginning with Operations Manager 2022, monitoring UNIX based operating systems is no longer supported. The last version to support this type of OS is Operations Manager 2019.
 
 ::: moniker-end
 
