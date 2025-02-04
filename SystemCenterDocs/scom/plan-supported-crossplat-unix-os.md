@@ -16,14 +16,14 @@ MonikerRange: "<=sc-om-2019"
 
 The following tables describe the required UNIX operating systems and package dependencies for System Center - Operations Manager.
 
-::: moniker range="<sc-om-2022"
+::: moniker range="< sc-om-2022"
 
 > [!IMPORTANT]
 > Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2022"
+::: moniker range=">= sc-om-2022"
 
 > [!IMPORTANT]
 > Operations Manager 2022 and above no longer supports monitoring UNIX based operating systems. The last version to support these OS types is Operations Manager 2019.
