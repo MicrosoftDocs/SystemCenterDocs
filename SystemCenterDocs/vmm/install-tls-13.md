@@ -55,7 +55,7 @@ Disable all SCHANNEL protocols except for TLS 1.3 and 1.2.
 Instead of modifying the registry values manually, you can use the following PowerShell script.
 
 ```
-$ProtocolList       = @(""SSL 3.0", "TLS 1.2", "TLS 1.3")
+$ProtocolList       = @("SSL 3.0", "TLS 1.2", "TLS 1.3")
 $ProtocolSubKeyList = @("Client", "Server")
 $DisabledByDefault  = "DisabledByDefault"
 $registryPath       = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
@@ -78,7 +78,7 @@ foreach ($Protocol in $ProtocolList)
 			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
 			New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "1" -PropertyType DWORD -Force | Out-Null
 		}
-else if ($Protocol -eq "TLS 1.3")
+elseif ($Protocol -eq "TLS 1.3")
 {
 Write-Output " Enabling - TLS 1.3"
 New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
