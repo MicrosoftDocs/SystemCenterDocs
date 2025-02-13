@@ -84,10 +84,7 @@ There are two options:
 
   Click **Set Admin** and specify an account. Save changes.
 
-  Grant permissions for the SQL Managed Instance to access Microsoft Entra ID.
-
-  > [!WARNING]
-  > You need to be a Company Administrator or Global Administrator to Grant Read permission to the principal that represents SQL Managed Instance identity.
+  Grant permissions for the SQL Managed Instance to access Microsoft Entra ID. For more details, check the [Grant Directory Readers permissions](/azure/azure-sql/database/authentication-azure-ad-only-authentication-create-server?#grant-directory-readers-permissions)
 
 - **SQL Credentials**. Create a new Run As Account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
