@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Gatewa
 author: sepaugh
 ms.author: lornesepaugh
 manager: amanan
-ms.date: 11/01/2024
+ms.date: 02/17/2025
 ms.custom: intro-installation, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -19,6 +19,8 @@ Gateway servers are typically used to enable monitoring of client computers that
 Agents communicate directly with the gateway server, and the gateway server communicates with one or more management servers. Multiple gateway servers can be placed in a single domain so that the agents can fail over from one to the other if they lose communication with their primary gateway. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain. The gateway server acts as a proxy for agent-to-management server communication, enabling only one port to be opened between networks in place of many. Certificates must be used to establish each computer's identity when outside the Kerberos trust boundary. Without certificates, the systems might connect but refuse to communicate due to being unable to authenticate the connection.
 
 Before continuing, ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+
+[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
 
 ::: moniker range="sc-om-2016"
 > [!NOTE]

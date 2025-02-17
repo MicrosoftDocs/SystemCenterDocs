@@ -5,7 +5,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.reviewer: randolphwest
-ms.date: 11/01/2024
+ms.date: 02/17/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -19,6 +19,8 @@ In System Center Operations Manager, the first feature you install is the manage
 You must ensure that your server meets the minimum system requirements for System Center Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md).
 
 Once you've installed the first management server and created the management group, you can follow the steps for installing an additional management server if you're planning to include additional management servers to provide high availability and increased capacity for your monitoring workloads.
+
+[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
 
 ::: moniker range="sc-om-2016"
 

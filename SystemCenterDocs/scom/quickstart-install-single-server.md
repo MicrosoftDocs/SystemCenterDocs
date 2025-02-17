@@ -5,7 +5,7 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 02/17/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -13,8 +13,6 @@ ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 
 # Install Operations Manager on a Single Server
-
-
 
 This walkthrough guides you through an installation of System Center - Operations Manager on a single server. The features installed include the following:
 
@@ -25,6 +23,8 @@ This walkthrough guides you through an installation of System Center - Operation
 - Web console
 
 - Reporting server
+
+[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
 
 ## Prerequisites
 

@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Operat
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 02/17/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,11 +14,11 @@ ms.topic: article
 
 # Install the Operations console
 
-
-
 After you install System Center - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
 
 You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md)
+
+[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
 
 ## Install the Operations console
 
