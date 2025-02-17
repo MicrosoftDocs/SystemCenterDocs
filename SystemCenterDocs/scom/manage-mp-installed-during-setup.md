@@ -5,7 +5,7 @@ description: This article describes what management packs are installed with Ope
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 02/17/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,8 +14,9 @@ ms.topic: article
 
 # Management packs installed with Operations Manager
 
-
 When you install Operations Manager, a component of System Center, many management packs are installed as well. The following table describes the purposes of those management packs.  
+
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 |Purpose|Associated management packs|  
 |-----------|-------------------------------|  
