@@ -24,7 +24,7 @@ This walkthrough guides you through an installation of System Center - Operation
 
 - Reporting server
 
-[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 ## Prerequisites
 

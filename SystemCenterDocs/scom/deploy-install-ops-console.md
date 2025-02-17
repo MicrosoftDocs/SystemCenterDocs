@@ -18,7 +18,7 @@ After you install System Center - Operations Manager, you can install the Operat
 
 You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md)
 
-[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 ## Install the Operations console
 

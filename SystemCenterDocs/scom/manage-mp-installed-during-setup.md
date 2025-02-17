@@ -16,7 +16,7 @@ ms.topic: article
 
 When you install Operations Manager, a component of System Center, many management packs are installed as well. The following table describes the purposes of those management packs.  
 
-[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 |Purpose|Associated management packs|  
 |-----------|-------------------------------|  

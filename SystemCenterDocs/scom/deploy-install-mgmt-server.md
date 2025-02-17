@@ -20,7 +20,7 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 Once you've installed the first management server and created the management group, you can follow the steps for installing an additional management server if you're planning to include additional management servers to provide high availability and increased capacity for your monitoring workloads.
 
-[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 ::: moniker range="sc-om-2016"
 

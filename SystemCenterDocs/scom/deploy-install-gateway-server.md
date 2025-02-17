@@ -20,7 +20,7 @@ Agents communicate directly with the gateway server, and the gateway server comm
 
 Before continuing, ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
-[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 ::: moniker range="sc-om-2016"
 > [!NOTE]

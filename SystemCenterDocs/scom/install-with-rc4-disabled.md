@@ -18,7 +18,7 @@ This article describes how to disable RC4 while installing Operations Manager.
 
 When you install Operations Manager in a security hardened environment, the setup tends to fail at the account configuration step if the appropriate permissions aren't configured properly.
 
-[!INCLUDE [ntauthority-note-om.md](../includes/ntauthority-note-om.md)]
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 ## Important information
 
