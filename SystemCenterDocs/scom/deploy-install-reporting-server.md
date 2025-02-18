@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 02/17/2025
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -20,6 +20,8 @@ In this procedure, the Reporting server is installed on a standalone server that
 > Although SQL Server Reporting Services is installed on the standalone server, Operations Manager reports aren't accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console.
 
 You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md).
+
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 ::: moniker range="sc-om-2019"
 
@@ -46,7 +48,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 ## Install Operations Manager reporting
 
-An installation of SQL Server Reporting Services used by Operations Manager **can't be shared with any other application** as changes are made to the base SSRS installation to accommodate user roles and authentication with SCOM. If any reports exist on the SSRS instance where the Operations Manager Reporting Services installer executes, all existing data and reports are overwritten.
+An installation of SQL Server Reporting Services used by Operations Manager **can't be shared with any other application** as changes are made to the base SSRS installation to accommodate user roles and authentication with System Center Operations Manager. If any reports exist on the SSRS instance where the Operations Manager Reporting Services installer executes, all existing data and reports are overwritten.
 
 Ensure that SQL Server Reporting Services is correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation](/sql/database-engine/install-windows/install-sql-server).
 
