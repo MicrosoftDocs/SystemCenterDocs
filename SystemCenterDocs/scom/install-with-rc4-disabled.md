@@ -5,7 +5,7 @@ description: This article describes Operations Manager installation with RC4 dis
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 02/17/2025
 ms.custom: na, intro-installation, UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,11 +14,11 @@ ms.topic: article
 
 # Disable RC4 while installing Operations Manager
 
-
-
 This article describes how to disable RC4 while installing Operations Manager.
 
 When you install Operations Manager in a security hardened environment, the setup tends to fail at the account configuration step if the appropriate permissions aren't configured properly.
+
+[!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
 
 ## Important information
 
