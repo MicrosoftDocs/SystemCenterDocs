@@ -86,7 +86,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 >
 > For more information, see: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692)
 
-Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend explicitly enabling the TLS 1.2 protocol.
+Use the following steps to modify SChannel protocols system-wide. We recommend explicitly enabling the TLS 1.2 protocol.
 
 > [!NOTE]
 > Making these registry changes doesn't affect the use of Kerberos or NTLM protocols.
@@ -170,7 +170,7 @@ After completing the configuration of all prerequisites for Operations Manager, 
 
 ### Prerequisites for Windows Server 2012/2012 R2
 
-Additional changes are required on Windows Server 2012/2012 R2 to use TLS 1.2 over HTTP for UNIX/LINUX monitoring. In order to enable TLS 1.2 as default security protocols in WinHTTP in Windows, the following changes need to be made as per [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392).
+Additional changes are required on Windows Server 2012/2012 R2 to use TLS 1.2 over HTTP for UNIX/LINUX monitoring. In order to allow/enable TLS 1.2 as default security protocols in WinHTTP in Windows, the following changes need to be made as per [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392).
 
 1. Install [KB3140245](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392) on the Management Servers/Gateways Servers in the UNIX/LINUX Resource Pool.
 2. Back up the registries that are modified as mentioned in the KB article.
