@@ -12,8 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Implement Transport Layer Security 1.2
-
+# Enforce TLS 1.2 for Operations Manager
 
 This article describes how to allow System Center Operations Manager to utilize Transport Layer Security (TLS) 1.2.
 
@@ -37,10 +36,13 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 1. Install [Microsoft ODBC Driver](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows) (x64) on all management servers and the web console server.
 1. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
 1. Install a minimum of Update Rollup 4 for SCOM 2016 on all components.
-1. Ensure your servers have a minimum .NET 4.6 installed as compatible with your OS: [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies)
-    1. Do not install .NET 4.8, as there have been known issues with SCOM 2016 incompatibilities.
+1. Ensure your servers have a minimum .NET Framework 4.6 installed as compatible with your OS: [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies)
+
+   1. Do not install .NET Framework 4.8, as there have been known issues with SCOM 2016 incompatibilities.
+      
 1. Configure Windows to only use TLS 1.2.  
-1. Configure .NET to utilize TLS 1.2 by default.
+1. Configure .NET Framework to utilize higher levels of cryptography by default.
+
 1. Configure Audit Collection Services if installed.
 
 ::: moniker-end
@@ -50,7 +52,8 @@ Perform the following steps to implement TLS protocol version 1.2 in Operations 
 1. Install [Microsoft OLE DB Driver for SQL](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#1874) version 18.7.4 on all management servers and the web console server.
 1. Install [Microsoft ODBC Driver for SQL](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver16#17106) version 17.10.6 on all management servers and the web console server.
 1. Configure Windows to only use TLS 1.2.  
-1. Configure .NET to utilize TLS 1.2 by default.
+1. Configure .NET Framework to utilize higher levels of cryptography by default.
+
 1. Configure Audit Collection Services if installed.
 
 > [!NOTE]
@@ -76,7 +79,7 @@ Operations Manager generates SHA1 and SHA2 self-signed certificates. This is req
 
 Use one of the following methods to configure Windows to use only the TLS 1.2 protocol.
 
-### Method 1: Manually modify the registry
+### Method 1: Modify the registry manually
 
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
@@ -103,15 +106,15 @@ Use the following steps to enable/disable all SCHANNEL protocols system-wide. We
     - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client`
     - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server`
 
-1. To disable each protocol, create the following DWORD values under **Server** and **Client**:  
+1. To disable a protocol, create the following DWORD values under **Server** and **Client**:  
 
-    - **Enabled** [Value = 0]  
-    - **DisabledByDefault** [Value = 1]  
+- **Enabled** [Value = 0]  
+ - **DisabledByDefault** [Value = 1]  
 
-1. To enable the TLS 1.2 protocol, create the following registry keys:
+1. To explicitly enable the TLS 1.2 protocol (default is enabled), create the following registry keys:
 
-    - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client`
-    - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server`:
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client`
+ - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server`:
 
 1. Then create the following DWORD values under **Server** and **Client**:
 
@@ -120,9 +123,9 @@ Use the following steps to enable/disable all SCHANNEL protocols system-wide. We
 
 1. Close the Registry Editor.
 
-### Method 2: Automatically modify the registry
+### Method 2: Modify the registry with PowerShell
 
-Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol:
+Run the following Windows PowerShell script as Administrator to configure your Windows Operating System to use only the TLS 1.2 Protocol:
 
 ```powershell
 $ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
@@ -158,9 +161,9 @@ foreach ($Protocol in $ProtocolList)
 }
 ```
 
-## Configure .NET Framework to use only TLS 1.2
+## Configure .NET Framework to use higher levels of cryptography
 
-.NET typically requires the application to define what TLS protocol to use for communication, in the instance of SCOM however, we will need to tell .NET system-wide what protocol to use.
+.NET Framework typically requires the application to define what TLS protocol to use for communication. In the instance of SCOM however, we will need to tell .NET Framework system-wide which protocol to use.
 
 After completing the configuration of all prerequisites for Operations Manager, perform the following steps on all management servers, the server hosting the Web console role, and on any Windows computer the agent is installed on.  
 
@@ -170,16 +173,16 @@ After completing the configuration of all prerequisites for Operations Manager, 
 ::: moniker range="sc-om-2016"
 
 > [!NOTE]
-> SCOM running on Windows OS 2012 needs additional changes to use TLS 1.2 over HTTP for UNIX/LINUX monitoring. In order to enable TLS 1.2 as default security protocols in WinHTTP in Windows, the following changes need to be made as per [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392).
->
-> 1. Install [KB3140245](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392) on the Management Servers/Gateways Servers in the UNIX/LINUX Resource Pool.
-> 2. Back up the registries that are modified as mentioned in the KB article.
-> 3. Download and run the [Easy Fix](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392#bkmk_easy) tool on the Management Servers/Gateways in the UNIX/LINUX Resource Pool.
-> 4. Reboot the servers.
+> SCOM running on Windows Server 2012/2012 R2 needs additional changes to use TLS 1.2 over HTTP for UNIX/LINUX monitoring. In order to enable TLS 1.2 as default security protocols in WinHTTP in Windows, the following changes need to be made as per [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392).
+> 
+1. Install [KB3140245](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392) on the Management Servers/Gateways Servers in the UNIX/LINUX Resource Pool.
+2. Back up the registries that are modified as mentioned in the KB article.
+3. Download and run the [Easy Fix](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392#bkmk_easy) tool on the Management Servers/Gateways in the UNIX/LINUX Resource Pool.
+4. Reboot the servers.
 
 ::: moniker-end
 
-### Manually modify the registry
+### Method 1: Modify the registry manually
 
 1. Open the Registry Editor
 1. Locate the following registry subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727`
@@ -200,12 +203,12 @@ After completing the configuration of all prerequisites for Operations Manager, 
         - **SystemDefaultTlsVersions** [Value = 1]
 1. Restart the system for the settings to take effect.  
 
-## Automatically modify the registry
+### Method 2: Modify the registry with PowerShell
 
 Run the following Windows PowerShell script in Administrator mode to automatically configure .NET Framework to prevent framework-inherited TLS 1.0 dependencies:
 
 ```powershell
-# Tighten up the .NET Framework
+# Allow .NET Framework to use higher levels of Cryptography
 $NetRegistryPath1 = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727" 
 New-ItemProperty -Path $NetRegistryPath1 -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null 
 New-ItemProperty -Path $NetRegistryPath1 -Name "SystemDefaultTlsVersions" -Value "1" -PropertyType DWORD -Force | Out-Null
@@ -227,7 +230,7 @@ New-ItemProperty -Path $NetRegistryPath4 -Name "SystemDefaultTlsVersions" -Value
 
 ::: moniker range="sc-om-2016"
 
-If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, ensure to import the management packs that are included in this rollup located in the following directory: **\Program Files\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
+If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, ensure to import the management packs that are included in this rollup located in the following directory: **%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
 
 ::: moniker-end
 
@@ -337,6 +340,8 @@ Alternatively, you can run the following PowerShell commands to automate the cha
 ::: moniker-end
 
 ## Next steps
+
+- For more information about TLS 1.0 from our Security Engineering team, see [Solving the TLS 1.0 Problem](/security/engineering/solving-tls1-problem).
 
 - For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).
 
