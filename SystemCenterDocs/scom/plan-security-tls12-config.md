@@ -240,14 +240,11 @@ If monitoring a supported version of Linux server with Operations Manager, follo
 For Audit Collection Services (ACS), additional changes must be made in the registry on ACS Collector server. ACS uses the ODBC Data Source Name (DSN) to make connections to the database. Ensure the DSN settings are updated to make them functional for TLS 1.2.
 
 1. Sign in to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
-3. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
-
-    >[!NOTE]
-    >The default name of DSN is OpsMgrAC.
-
-4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If ODBC 11.0 is installed, change this name to **ODBC Driver 11 for SQL Server**, or if ODBC 13.0 is installed, change this name to **ODBC Driver 13 for SQL Server**.
-5. Under the **OpsMgrAC** subkey, update the **Driver** for the ODBC version that is installed.
+1. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
+1. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.
+    1. **Note that the default DSN name is `OpsMgrAC`**.
+1. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If ODBC 11.0 is installed, change this name to **ODBC Driver 11 for SQL Server**, or if ODBC 13.0 is installed, change this name to **ODBC Driver 13 for SQL Server**.
+1. Under the **OpsMgrAC** subkey, update the **Driver** for the ODBC version that is installed.
    - If ODBC 11.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql11.dll`.
    - If ODBC 13.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql13.dll`.
    - If ODBC 17.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql17.dll`.
@@ -257,7 +254,7 @@ For Audit Collection Services (ACS), additional changes must be made in the regi
 
 Alternatively, create and save the following **.reg** file in Notepad or another text editor. To run the saved **.reg** file, double-click the file.
 
-- For ODBC 11.0, 13.0, 17.x, or 18.x. Create the following file ODBC.reg and (replace with the ODBC version being used) :
+- For ODBC 11.0, 13.0, 17.x, or 18.x. Create the following file ODBC.reg and (replace with the ODBC version being used):
 
     ```cmd
     Windows Registry Editor Version 5.00
