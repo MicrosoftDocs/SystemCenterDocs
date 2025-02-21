@@ -242,7 +242,7 @@ For Audit Collection Services (ACS), additional changes must be made in the regi
 1. Sign in to the server by using an account that has local administrative credentials.  
 1. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
 1. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.
-    1. **Note that the default DSN name is `OpsMgrAC`**.
+   1. **Note that the default DSN name is `OpsMgrAC`**.
 1. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If ODBC 11.0 is installed, change this name to **ODBC Driver 11 for SQL Server**, or if ODBC 13.0 is installed, change this name to **ODBC Driver 13 for SQL Server**.
 1. Under the **OpsMgrAC** subkey, update the **Driver** for the ODBC version that is installed.
    - If ODBC 11.0 is installed, change the Driver entry to `%WINDIR%\system32\msodbcsql11.dll`.
