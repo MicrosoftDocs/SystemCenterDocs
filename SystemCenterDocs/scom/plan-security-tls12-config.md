@@ -293,11 +293,11 @@ Alternatively, run the following PowerShell commands to automate the change.
 For Audit Collection Services (ACS), additional changes must be made in the registry on ACS Collector server. ACS uses the ODBC Data Source Name (DSN) to make connections to the database. Ensure the DSN settings are updated to make them functional for TLS 1.2.
 
 1. Sign in to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
-3. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
+1. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
+1. Locate the following ODBC subkey for OpsMgrAC: `HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC`.  
 
-  > [!NOTE]
-  > The default name of DSN is OpsMgrAC.
+    > [!NOTE]
+    > The default name of DSN is OpsMgrAC.
 
 1. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If ODBC 17 is installed, change this name to **ODBC Driver 17 for SQL Server**.
 1. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBC version that is installed.
