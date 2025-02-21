@@ -9,15 +9,25 @@ ms.date: 01/29/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
-MonikerRange: "<=sc-om-2019"
 ---
 
 # Supported UNIX operating system versions
 
 The following tables describe the required UNIX operating systems and package dependencies for System Center - Operations Manager.
 
->[!IMPORTANT]
-> Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
+::: moniker range="< sc-om-2022"
+
+> [!IMPORTANT]
+> Operations Manager will no longer support any operating systems or packages after their vendor stops providing support.
+
+::: moniker-end
+
+::: moniker range=">= sc-om-2022"
+
+> [!IMPORTANT]
+> Beginning with Operations Manager 2022, monitoring UNIX based operating systems is no longer supported. The last version to support this type of OS is Operations Manager 2019.
+
+::: moniker-end
 
 ::: moniker range="sc-om-2019"
 
