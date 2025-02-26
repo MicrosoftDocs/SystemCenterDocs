@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 02/26/2025
 title: Runbook Output and Messages
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -35,7 +35,7 @@ You can write data to the output stream using [Write-Output](/powershell/module/
 
 ```powershell
 #The following lines both write an object to the output stream.
-Write-Object -InputObject $object
+Write-Output -InputObject $object
 $object
 ```
 
