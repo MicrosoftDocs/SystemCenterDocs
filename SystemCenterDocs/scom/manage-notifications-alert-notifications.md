@@ -4,7 +4,7 @@ description: This article describes the alerts that Operations Manager can gener
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 02/27/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -21,7 +21,7 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 - Email
 - Instant message (IM)
 - Text message (SMS)
-- Microsoft Teams (applicable for 2022)
+- Microsoft Teams (applicable for 2022 and later)
 
 Notifications can also run commands automatically when an alert is raised on a monitored system.  
 
