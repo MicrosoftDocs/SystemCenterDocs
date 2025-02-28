@@ -59,7 +59,7 @@ To register the integration pack file, follow these steps:
 
 7. In the **Completing Integration Pack Registration Wizard** dialog box, select **Finish**. The **License Agreement** dialog box appears.
 
-8. select **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
+8. Select **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
 
 ### Deploy the pack
 
