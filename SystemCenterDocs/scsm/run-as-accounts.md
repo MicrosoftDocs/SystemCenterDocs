@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 02/28/2025
 ms.subservice: service-manager
 ms.assetid: 556f240e-d032-406a-ba10-2404fb591d04
 ms.custom: UpdateFrequency2
@@ -43,7 +43,7 @@ Use the following procedures to make these changes in Service Manager.
 
 ### Add the user to the local administrators account
 
-1. Add the new user as a member of the Administrators local group in Windows on the computers hosting the following:
+Add the new user as a member of the Administrators local group in Windows on the computers hosting the following:
     - Service Manager management server
     - Data warehouse management server
     - Self-Service Portal
@@ -52,17 +52,21 @@ Use the following procedures to make these changes in Service Manager.
 
 ### Add the user to the Administrators user role
 
-1. In the Service Manager console, select **Administration**.
+To add the user to the Administrators user role, follow these steps:
+
+1. In the **Service Manager** console, select **Administration**.
 2. In the **Administration** pane, expand **Administration**, expand **Security**, and select **User Roles**.
 3. In the **User Roles** pane, select **Administrators**.
 4. In the **Tasks** pane, select **Properties**.
-5. In the Edit User Role Wizard, select **Users**.
+5. In the **Edit User Role Wizard**, select **Users**.
 6. Select **Remove** to remove the existing credentials, select **Add** and add the new credentials, and select **OK**.
-7. In the Service Manager console, select **Data Warehouse**.
+7. In the **Service Manager** console, select **Data Warehouse**.
 8. In the **Data Warehouse** pane, expand **Data Warehouse**, expand **Security**, and select **User Roles**.
 9. Repeat steps 3 through 6.
 
 ### Change the logon account for the Service Manager Data Access Service and Service Manager Management Configuration services
+
+To change the logon account for the Service Manager Data Access Service and Service Manager Management Configuration services, follow these steps:
 
 1. On the computer that hosts the Self-Service Portal, on the Windows desktop, select **Start**, and select **Run**.
 2. In the **Run** dialog, in the **Open** box, enter **services.msc**, and select **OK**.
@@ -72,16 +76,18 @@ Use the following procedures to make these changes in Service Manager.
     1. Select **Locations**, in the **Locations** dialog, select **Entire Directory**, and select **OK**.
     2. In the **Enter the object name to select** box, enter the name of the new Operational Database Account, select **Check Names**, and select **OK**.
     3. In the **Password** and **Confirm Password** boxes, enter the password for the new user, and select **OK**.
-6. Restart the Service Manager Data Access Service.
+6. Restart the **Service Manager Data Access Service**.
 7. Right-click **System Center Management Configuration**, and select **Properties**.
 8. In the **System Center Management Configuration Properties (Local Computer)** dialog, select **Log On**, and select **Browse**.
 9. In the **Select User or Group** dialog, complete these steps:
     1. Select **Locations**, and in the **Locations** dialog, select **Entire Directory**, and select **OK**.
     2. In the **Enter the object name to select** box, enter the name of the new Operational Database Account, select **Check Names**, and select **OK**.
     3. In the **Password** and **Confirm Password** boxes, enter the password for the new user, and select **OK**.
-10. Restart the Service Manager Management Configuration service.
+10. Restart the **Service Manager Management Configuration** service.
 
 ### Create a SQL Server logon
+
+To create a SQL Server logon, follow these steps:
 
 1. On the computers hosting the Service Manager and data warehouse databases, open **SQL Server Management Studio**.
 2. In the **Connect to Server** dialog, complete these steps:
@@ -96,7 +102,16 @@ Use the following procedures to make these changes in Service Manager.
     2. In the **Enter the object name to select** box, enter the name of the new Operational Database Account, select **Check Names**, and select **OK**.
 7. In the **Select a page** pane, select **Server Roles**, and in the **Server roles** list, ensure that **sysadmin** and **public** are selected, and select **OK**.
 
-### Change the Service ManagerSelf-Service Portal application pool account
+### Change the Service Manager Self-Service Portal application pool account
+
+#### Prerequisite
+
+Before changing the Service Manager Self-Service Portal application pool account, the following prerequisites must be met:
+Enable the Internet Information Services (IIS) Manager by following the steps below:
+1. Search for **Turn Windows features on or off**.
+2. In the **Windows Features** dialog, select **Internet Information Services**.
+
+To change the Service Manager Self-Service Portal application pool account, follow these steps:
 
 1. On the Windows desktop, select **Start**, point to **Programs**, point to **Administrative Tools**, and select **Internet Information Services (IIS) Manager**.
 2. In the **Internet Information Services (IIS) Manager** window, in the **Connections** pane, expand the name of your computer, and select **Application Pools**.
@@ -106,17 +121,19 @@ Use the following procedures to make these changes in Service Manager.
 6. In the **Set Credentials** dialog, in the **User name** box, enter the user name for the Operational Database Account. In the **Password** and **Confirm password** boxes, enter the password for the new Operational Database Account, and select **OK**.
 7. In the **Application Pool Identity** dialog, select **OK**.
 8. In the **Advanced Settings** dialog, select **OK**.
-9. Close Internet Information Services (IIS) Manager.
+9. Close **Internet Information Services (IIS) Manager**.
 
 ### Change the Operational Database Account
 
-1. In the Service Manager console, select **Administration**.
+To set up and use the Operational Database Account, follow these steps:
+
+1. In the **Service Manager** console, select **Administration**.
 2. In the **Administration** pane, expand **Administration**, expand **Security**, and select **Run As Accounts**.
 3. In the **Run As Accounts** pane, select **Operational Database Account**.
 4. In the **Tasks** pane, select **Properties**.
 5. In the **Operational Database Account** page, in the **User name**, **Password**, and **Domain** boxes, enter the new credentials for the Operational Database Account, and select **OK**.
 
-## Change the password for the Operational Database account used by Service Manager
+## Change the password for the Operational Database Account used by Service Manager
 
 To change the login password for the Service Manager Data Access and Service Manager Management Configuration services, perform the following procedure.
 
@@ -125,11 +142,11 @@ To change the login password for the Service Manager Data Access and Service Man
 3. In the **Services** window, in the **Services (Local)** pane, right-click **System Center Data Access Service**, and select **Properties**.
 4. In the **System Center Data Access Service Properties (Local Computer)** dialog, select **Log On**.
 5. Type the new password in the **Password** and **Confirm Password** text boxes, and select **OK**.
-6. Restart the Service Manager Data Access Service.
+6. Restart the **Service Manager Data Access Service**.
 7. Right-click **System Center Management Configuration**, and select **Properties**.
 8. In the **System Center Management Configuration Properties (Local Computer)** dialog, select **Log On**.
 9. Enter the new password in the **Password** and **Confirm Password** text boxes, and select **OK**.
-10. Restart the System Center Management Configuration service.
+10. Restart the **System Center Management Configuration** service.
 
 ## Change the workflow Run As account credentials used by Service Manager
 
@@ -139,7 +156,9 @@ Use the following procedures to define a new user account for the Workflow Run A
 
 ### Change the Workflow Run As account using new credentials
 
-1. In the Service Manager console, select **Administration**.
+To change the Workflow Run As account using new credentials, follow these steps:
+
+1. In the **Service Manager** console, select **Administration**.
 2. In the **Administration** pane, expand **Administration**, expand **Security**, and select **Run As Accounts**.
 3. In the **Run As Accounts** pane, select **Workflow Account**.
 4. In the **Tasks** pane, select **Properties**.
@@ -147,7 +166,7 @@ Use the following procedures to define a new user account for the Workflow Run A
 6. In the **Administration** pane, select **User Roles**.
 7. In the **User Roles** pane, select **Workflows**.
 8. In the **Tasks** pane, select **Properties**.
-9. In the Edit User Role Wizard, select **Users**.
+9. In the **Edit User Role Wizard**, select **Users**.
 10. Select **Remove** to remove the existing credentials, select **Add** to add the credentials you specified in step 5, and select **OK**.
 
     > [!IMPORTANT]
@@ -155,7 +174,9 @@ Use the following procedures to define a new user account for the Workflow Run A
 
 ### Change the password for the Workflow Run As account credentials
 
-1. In the Service Manager console, select **Administration**.
+To change the password for the Workflow Run As account credentials, follow these steps:
+
+1. In the **Service Manager** console, select **Administration**.
 2. In the **Administration** pane, expand **Administration**, expand **Security**, and select **Run As Accounts**.
 3. In the **Run As Accounts** pane, select **Workflow Account**.
 4. In the **Tasks** pane, select **Properties**.
@@ -197,6 +218,6 @@ As date format is based on the language, if the language of SQL user login accou
 
 You can set the default language as English for a new SQL login account or change the default language for an existing account. [Learn more](deploy-sm.md#manage-default-language-for-sql-login-accounts).
 
-## Next steps
+## Next step
 
-- [Manage knowledge articles](knowledge-articles.md).
+[Manage knowledge articles](knowledge-articles.md).
