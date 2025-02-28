@@ -3,9 +3,9 @@ ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance using managed identity
 description: This article explains how to configure automatic monitoring template using Managed Identity in Management Pack for Azure SQL Managed Instance.
 author: fkornilov
-ms.author: v-fkornilov
+ms.author: v-vlchernov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 02/27/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -84,10 +84,7 @@ There are two options:
 
   Click **Set Admin** and specify an account. Save changes.
 
-  Grant permissions for the SQL Managed Instance to access Microsoft Entra ID.
-
-  > [!WARNING]
-  > You need to be a Company Administrator or Global Administrator to Grant Read permission to the principal that represents SQL Managed Instance identity.
+  Grant permissions for the SQL Managed Instance to access Microsoft Entra ID. For more details, check the [Grant Directory Readers permissions](/azure/azure-sql/database/authentication-azure-ad-only-authentication-create-server?#grant-directory-readers-permissions)
 
 - **SQL Credentials**. Create a new Run As Account by selecting **New** and specifying an account name and connection credentials to access the managed instance.
 
