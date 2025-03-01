@@ -106,8 +106,10 @@ To create a SQL Server logon, follow these steps:
 
 #### Prerequisite
 
-Before changing the Service Manager Self-Service Portal application pool account, the following prerequisites must be met:
-Enable the Internet Information Services (IIS) Manager by following the steps below:
+Before changing the Service Manager Self-Service Portal application pool account, you must enable the Internet Information Services (IIS) Manageras a prerequisite.<br>
+
+To enable the Internet Information Services (IIS) Manager, follow these steps:
+
 1. Search for **Turn Windows features on or off**.
 2. In the **Windows Features** dialog, select **Internet Information Services**.
 
