@@ -5,31 +5,35 @@ description: This article explains how to run the export event log task for DB E
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 11/01/2024
+ms.date: 02/28/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Export event log Task
+# Export event log task
 
 Export Event Log Task exports the Event log file containing Discovery, Monitoring, and Library SQL Server MP source events with ID 4221 from the selected SQL Server DB Engine.
 
 For the SQL Server DB Engine on Windows in the agentless monitoring mode, this task generates a log file using the System Center Operations Manager log file.
 
-## Steps to run the task
+## Run the task
+
+To run the task, follow these steps:
 
 1. Determine the log file location for saving:
    - local computer
    - [File share (SMB) symbol server](/windows-hardware/drivers/debugger/file-share--smb--symbol-server)
 
-2. In the System Center Operations Manager console, navigate to the **Database Engines view** and select the desired SQL Server Database Engine on Windows. Select the **Export Event Log** task on the right pane Tasks dropdown.
+2. In the **System Center Operations Manager** console, navigate to the **Database Engines view** and select the desired SQL Server Database Engine on Windows. Select the **Export Event Log** task on the right pane Tasks dropdown.
 
 3. Use the **Override** button to fine-tune the task parameters.
 
 4. Specify the **Task Credentials** for the target SQL Server DB Engine according to its monitoring type and run the task. Date and/or time must be specified in at least one parameter.
 
 ## Tasks parameters
+
+The task parameters with their description are as follows:
 
 ![Export Event Log task screenshot.](./media/sql-server-management-pack/export-log-task.png)
 
@@ -86,6 +90,8 @@ The following parameters for specifying the duration range:
   
 ## InvariantCulture date time examples
 
+The InvariantCulture date time examples are as follows:
+
 - The time range is one day.
 
     Date From=06/2023/15 and Date To=06/2023/16. An event log file is created with events from the whole day of June 15.
@@ -106,6 +112,8 @@ The following parameters for specifying the duration range:
     Date From=06/2023 and Date To=06/2023. An event log file is created with events from the whole month of June.
 
 ## Duration range examples
+
+The duration range examples are as follows:
 
 - The time range is last hour.
 
