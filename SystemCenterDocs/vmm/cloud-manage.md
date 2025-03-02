@@ -31,8 +31,14 @@ You have a cloud with a maximum setting of 32 GB of memory. That cloud has two V
 
 ### Example with the registry setting
 
-You have a cloud with a maximum setting of 32 GB of memory. That cloud has two VMs with 4 GB of memory each. To place a third VM with 26 GB of memory, do the following:
+You have a cloud with a maximum setting of 32 GB of memory. That cloud has two VMs with 4 GB of memory each.
+
+To place a third VM with 26 GB of memory, follow these steps:
 
 1. Update the capacity in the cloud properties to accommodate the increased memory size to, say 64 GB.
-2. Navigate to registry key **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Placement\IgnoreMemoryForStoppedReplicaVM**.
+2. Navigate to the registry key **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Placement\IgnoreMemoryForStoppedReplicaVM**.
 3. Set the DWORD value to 1. If the value **IgnoreMemoryForStoppedReplicaVM** doesn't exist, create it.
+
+## Next step
+
+[Scenario - Deploy guarded hosts and shielded virtual machines in VMM](deploy-guarded-host-fabric.md)
