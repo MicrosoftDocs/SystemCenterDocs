@@ -43,7 +43,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 ::: moniker range="sc-dpm-2025"
 
 >[!NOTE]
-> Install latest version of OLEDB 19 (19.3 and above) on all the machines where SQL instances are present and are being backed-up by the DPM server. Also, install on DPM server before enabling backups for DPM database.
+> Install latest version of [OLEDB 19](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16) (19.3 and above) on all the machines where SQL instances are present and are being backed-up by the DPM server. Also, install on DPM server before enabling backups for DPM database.
 
 ::: moniker-end
 
