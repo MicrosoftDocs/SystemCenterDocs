@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/03/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -39,6 +39,6 @@ This article provides the release notes for System Center 2019 - Service Managem
 
 ::: moniker-end
 
-## Next steps
+## Next step
 
-- [What's new in Service Management Automation](../sma/whats-new-in-sma.md)
+[What's new in Service Management Automation](../sma/whats-new-in-sma.md).
