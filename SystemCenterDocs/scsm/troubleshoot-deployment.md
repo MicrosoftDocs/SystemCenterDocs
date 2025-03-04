@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/04/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 
 
-An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot Data Warehouse Jobs](manage-dw.md).
+An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot data warehouse jobs](manage-dw.md).
 
 ## Installation log files
 
@@ -38,6 +38,6 @@ Additional Error Description : MODIFY FILE encountered operating system error 11
 
 You've to either increase the amount of free disk space that is available or reduce the amount of space that Service Manager allocates for the database, and then attempt the installation again. If you're installing Service Manager in a nonproduction environment, you can specify as little as 500 MB for the database.
 
-## Next steps
+## Next step
 
-- To deploy Service Manager using command-line parameters, review [Deploy Service Manager from a command line](deploy-cmd-line.md).
+To deploy Service Manager using command-line parameters, review [Deploy Service Manager from a command line](deploy-cmd-line.md).
