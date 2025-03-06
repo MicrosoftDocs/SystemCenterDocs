@@ -25,7 +25,7 @@ Settings include changing VM properties and setting up performance options, such
 
 You can add and remove virtual network adapters (vNICs) from VMs that are running. This reduces the workload downtime.
 
->[!NOTE]
+> [!NOTE]
 > - You add new virtual network adapters by creating or modifying a VMM hardware profile.
 > - This feature is only available for Generation 2 VMs.
 > - By default, added virtual network adapters aren't connected to a virtual network. You can configure VMs assigned with the hardware profile to use one or more of the virtual network adapters after they're deployed on a host.
@@ -155,15 +155,10 @@ Production checkpoints allow you to easily create *point in time* images of a VM
     - **Standard**: All the memory state of running applications gets stored so that when you apply the checkpoint, the application reverts to the previous state. For many applications this wouldn't be suitable for a production environment. Therefore, this type of checkpoint is typically more suitable for development and test environments for some applications.
 
 Set the checkpoint with the following PowerShell command:
-`Set-SCVirtualMachine CheckpointType (Disabled, Production, ProductionOnly, Standard)`
+`Set-SCVirtualMachine -CheckpointType (Disabled, Production, ProductionOnly, Standard)`
 
->[!NOTE]
-> - VM Checkpoints with SnapshotType = 'Recovery' will not be visible from SCVMM.
-
-
-
-
-
+> [!NOTE]
+> - VM Checkpoints with a `Recovery` SnapshotType will not be visible from SCVMM.
 
 ## Configure availability options for clustered VMs
 
