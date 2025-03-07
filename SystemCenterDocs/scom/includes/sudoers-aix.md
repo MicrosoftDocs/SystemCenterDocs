@@ -5,7 +5,7 @@ description: Include file with sudoers configuration for AIX operating systems.
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 03/05/2024
+ms.date: 03/75/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 
 <!-----------------
 
-SCOM 2022 does not support AIX 
+SCOM 2022 and above does not support AIX 
 
 -------------------------->
 
