@@ -5,7 +5,7 @@ description: This article describes how to configure Run As accounts and profile
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/10/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -16,12 +16,12 @@ ms.topic: article
 
 
 
-If you are the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Planning Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
+If you're the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Planning Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
 
 >[!NOTE]
->System Center Operations Manager does not support domain accounts for maintenance.
+>System Center Operations Manager doesn't support domain accounts for maintenance.
 
-## Configuring Run As accounts  
+## Configure Run As accounts  
 
 The **UNIX\/Linux Run As Accounts Wizard** creates Run As accounts that can be of two Run As account types:  
 
@@ -37,7 +37,9 @@ Use this wizard three or more times as needed so that you have the following Run
 
 -   An agent maintenance Run As account for upgrading, uninstalling, and other agent maintenance operations.  
 
-To run this wizard, you must have the following credentials information:  
+### Prerequisites
+
+Before you run this wizard, ensure you must have the following credentials information:  
 
 -   Username and password for unprivileged access to the UNIX or Linux computer.  
 
@@ -45,15 +47,17 @@ To run this wizard, you must have the following credentials information:
 
 -   Username and password for privileged access to the UNIX or Linux computer.  If you prefer not to provide credentials for a privileged account, you can use unprivileged credentials and have the credentials on the UNIX or Linux computer elevated.  
 
-    You can choose between su or sudo elevation. If the account is to be elevated using 'su', you will need the 'su' password.  
+    You can choose between su or sudo elevation. If the account is to be elevated using 'su', you'll need the 'su' password. For more information about Authentication on the UNIX or Linux computer, see [Access UNIX and Linux computers in Operations Manager](manage-security-authenticate-crossplat.md)
 
-#### To create a Run As account  
+#### Create a Run As account  
 
-1.  In the Operations console, click **Administration**.  
+To create a Run As account, follow these steps:
 
-2.  In **Run As Configuration**, click **UNIX\/Linux Accounts**.  
+1.  In the Operations console, select **Administration**.  
 
-3.  In the **Tasks** pane, click **Create Run As Account**.  
+2.  In **Run As Configuration**, select **UNIX\/Linux Accounts**.  
+
+3.  In the **Tasks** pane, select **Create Run As Account**.  
 
 4.  On the **Account Type** page, choose a **Monitoring Account** or an **Agent Maintenance Account**.  
 
@@ -63,11 +67,11 @@ To run this wizard, you must have the following credentials information:
 
 7.  On the **Distribution Security** page, select the **More Secure** or **Less Secure** option.  
 
-8.  Click **Create**.  
+8.  Select **Create**.  
 
 Repeat as needed until all the needed Run As accounts are created.  
 
-## Configuring Run As profiles  
+## Configure Run As profiles  
 
 Now that you have created the Run As accounts, you must add each Run As account to the applicable profile. There are three profiles to configure:  
 
@@ -86,13 +90,15 @@ Now that you have created the Run As accounts, you must add each Run As account 
 > [!NOTE]  
 > There is no need to run the **Create Run As Profile Wizard** unless you have authored a new management pack that requires it.  
 
-#### To add a Run As account to a profile  
+#### Add a Run As account to a profile  
 
-1.  In the Operations console, click **Administration**.  
+To add a Run As account, follow these steps:
 
-2.  In **Run As Configuration**, click **Profiles**.  
+1.  In the Operations console, select **Administration**.  
 
-3.  In the list of profiles, right click and then select **Properties** on one of the following profiles:  
+2.  In **Run As Configuration**, select **Profiles**.  
+
+3.  In the list of profiles, right-click and then select **Properties** on one of the following profiles:  
 
     -   UNIX\/Linux Action Account  
 
@@ -100,10 +106,15 @@ Now that you have created the Run As accounts, you must add each Run As account 
 
     -   UNIX\/Linux Agent Maintenance Account  
 
-4.  In the **Run As Profile** wizard, click **Next** until you get to the **Run As Accounts** page.  
+4.  In the **Run As Profile** wizard, select **Next** until you get to the **Run As Accounts** page.  
 
-5.  On the **Run As Accounts** page, click **Add** to add a Run As account that you created. Select the class, group, or object that will be accessed using the credentials in the Run As account.  
+5.  On the **Run As Accounts** page, select **Add** to add a Run As account that you created. Select the class, group, or object that will be accessed using the credentials in the Run As account.  
 
-6.  Click **Save**.  
+6.  Select **Save**.  
 
 Repeat as needed until all three profiles have been configured with one or more Run As accounts.  
+
+## Next steps
+
+- [Access UNIX and Linux computers in Operations Manager](manage-security-authenticate-crossplat.md)
+- [Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)
