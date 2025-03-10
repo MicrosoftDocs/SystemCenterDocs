@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/10/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -103,13 +103,13 @@ For more information about the cause of this problem, see [Knowledgebase Article
 
 There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to Service Manager fails as a result of Configuration service Startup timing out. You can:  
 
-- Disable signature verification on the computer that is running Setup.  
+- [Disable signature verification on the computer that is running Setup](#disable-signature-verification).  
 
-- Increase the service time\-out setting on the computer that is running Setup.  
+- [Increase the service time-out setting on the computer that is running Setup](#increase-the-service-time-out-setting).
 
 ### Disable signature verification
 
-Follow these steps to disable signature verification:
+To disable signature verification, follow these steps:
 
 1. On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
@@ -121,7 +121,7 @@ Follow these steps to disable signature verification:
 
 ### Increase the service time-out setting  
 
-Follow these steps to increase the service time-out setting:
+To increase the service time-out setting, follow these steps:
 
 1. On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 
