@@ -18,7 +18,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 Use this article if you want to create a guest failover cluster using a System Center Virtual Machine Manager (VMM) service template.
 
-A guest failover cluster consists of multiple VMs that are deployed in a cluster and use shared storage. Services in VMM are used to group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that must be used. You can add VM templates, network settings, applications, and storage to a service template. For more information, [Learn more](library-service-templates.md).
+A guest failover cluster consists of multiple VMs that are deployed in a cluster and use shared storage. Services in VMM are used to group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that must be used. You can add VM templates, network settings, applications, and storage to a service template. [Learn more](library-service-templates.md).
 
 You can use service templates to create a guest cluster. That cluster can then be configured to run an app, such as SQL Server.
 
