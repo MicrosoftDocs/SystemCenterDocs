@@ -1,7 +1,7 @@
 ---
 title: Deploy the VMware vSphere Integration Pack for System Center - Orchestrator
 description: This article provides important information about downloading and deploying the VMware vSphere integration pack for System Center - Orchestrator.
-ms.date: 02/28/2025
+ms.date: 03/17/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,7 +13,7 @@ ms.custom: intro-deployment
 
 # Deploy the VMware vSphere integration pack
 
-Deploying the VMware vSphere integration pack is essential for streamlining the management of VMware vSphere environments within System Center - Orchestrator. It enables seamless integration, allowing for efficient orchestration of tasks and processes across VMware vSphere servers.
+The VMware vSphere Integration Pack for System Center - Orchestrator enables seamless integration, allowing for efficient orchestration of tasks and processes across VMware vSphere servers. This article provides important information about downloading and deploying the VMware vSphere integration pack for System Center - Orchestrator.
 
 ## System requirements
 
@@ -41,7 +41,7 @@ You can download the integration pack from the Microsoft Download Center.
 
 After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to a runbook server.
 
-### Register the pack
+### Register the integration pack file
 
 To register the integration pack file, follow these steps:
 
@@ -55,13 +55,13 @@ To register the integration pack file, follow these steps:
 
 5. In the **Integration Pack or Hotfix Selection** dialog box, select **Add**.
 
-6. Locate and select the VMware vSphere file that you copied to the management server and select **Open**. Then select **Next**.
+6. Locate and select the VMware vSphere file that you copied to the management server, select **Open**, and then select **Next**.
 
 7. In the **Completing Integration Pack Registration Wizard** dialog box, select **Finish**. The **License Agreement** dialog box appears.
 
 8. Select **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
 
-### Deploy the pack
+### Deploy the integration pack file
 
 To deploy the integration pack file, follow these steps:
 
