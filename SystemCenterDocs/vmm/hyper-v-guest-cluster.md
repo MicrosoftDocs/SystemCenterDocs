@@ -5,7 +5,7 @@ description: This article provides guidance about creating a guest cluster from 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/28/2025
+ms.date: 03/17/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,13 +18,13 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 Use this article if you want to create a guest failover cluster using a System Center Virtual Machine Manager (VMM) service template.
 
-A guest failover cluster consists of multiple VMs that are deployed in a cluster and use shared storage. Services in VMM are used to group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that must be used. You can add VM templates, network settings, applications, and storage to a service template. For more information, see [Add service templates to the VMM library](library-service-templates.md).
+A guest failover cluster consists of multiple VMs that are deployed in a cluster and use shared storage. Services in VMM are used to group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that must be used. You can add VM templates, network settings, applications, and storage to a service template. For more information, [Learn more](library-service-templates.md).
 
 You can use service templates to create a guest cluster. That cluster can then be configured to run an app, such as SQL Server.
 
 ## Before you start
 
-Here are some considerations before you start deploying VMs to Hyper-V host clusters:
+Here are some considerations before you deploy VMs to Hyper-V host clusters:
 
 ::: moniker range="sc-vmm-2016"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2012 R2 or later. Otherwise, deployment will fail.
@@ -91,7 +91,7 @@ To create a VM template, follow these steps:
 
 ## Include the VM template in a service template
 
-To add the VM template in a service template, follow these steps:
+To include the VM template in a service template, follow these steps:
 
 1. [Create a service template](library-service-templates.md), and add the VM template to the appropriate template tier.
 2. After you save and validate the template, right-click the tier object in the service template designer and select **Properties**.
