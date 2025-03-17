@@ -4,7 +4,7 @@ description: This article describes how to use the Operations Manager Operations
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/28/2025
+ms.date: 03/17/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -51,7 +51,7 @@ In Operations Manager, you can run and view favorite reports under **Web Console
 
 ::: moniker-end
 
-## Next steps
+## Related content
 
-- Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to create reports for your operational needs.
-- [How to run, save, and export a report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
+- Review [Create reports in Operations Manager](manage-reports-create-reports.md) to learn how to create reports for your operational needs.
+- [Run, save, and export a report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
