@@ -103,6 +103,6 @@ To include the VM template in a service template, follow these steps:
 
 After you've set up the guest cluster, you're ready to deploy the service.
 
-## Next step
+## Related content
 
 [Deploy VMs from a template](vm-template.md).
