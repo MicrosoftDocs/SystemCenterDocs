@@ -29,7 +29,7 @@ For information about configuring an agent-managed computer as a proxy for agent
 > [!IMPORTANT]  
 > An agentless-managed computer places additional resource utilization on a management server than an agent-managed computer.  
 
-To change an agentless-managed computer to an agent-managed computer, do the following:  
+To change an agentless-managed computer to an agent-managed computer, follow these steps:  
 
 1. Delete the agentless-managed computer from the management group by right-clicking the computer in **Agentless Managed** in the **Administration** workspace and then selecting **Delete**.  
 
