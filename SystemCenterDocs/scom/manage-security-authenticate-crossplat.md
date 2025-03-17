@@ -5,7 +5,7 @@ description: This article highlights accessing UNIX and Linux computers in Opera
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/26/2025
+ms.date: 03/17/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -31,7 +31,7 @@ The protocol that is used depends on the action or information that is requested
 > [!NOTE]  
 > All the credentials referred to in this article pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.  
 
-For detailed instructions for specifying credentials and configuring accounts, see [How to set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md).  
+For detailed instructions for specifying credentials and configuring accounts, see [Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md).  
 
 ## Authentication on the UNIX or Linux computer
 
@@ -43,11 +43,11 @@ In Operations Manager, the system administrator is no longer required to provide
 
     Provides an overview of using credentials to install and maintain agents on UNIX and Linux computers and how they're configured to use Run As accounts and Run As profiles.  
 
--   [How to set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)  
+-   [Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)  
 
     Contains specific procedures for specifying credentials for different wizards in Operations Manager.  
 
--   [How to configure sudo Elevation and SSH Keys](manage-security-create-crossplat-sudo-sshkeys.md)  
+-   [Configure sudo Elevation and SSH Keys](manage-security-create-crossplat-sudo-sshkeys.md)  
 
     Describes how to configure an unprivileged account to be elevated to have privileged access on a UNIX or Linux computer.  
 
@@ -59,6 +59,6 @@ In Operations Manager, the system administrator is no longer required to provide
 
     Describes options to administer and configure the UNIX/Linux agent for System Center - Operations Manager.  
 
-## Next step
+## Related content
 
-[Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)
+[Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md).
