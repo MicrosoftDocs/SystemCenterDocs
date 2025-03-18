@@ -2,7 +2,7 @@
 title: Copy File
 description: This article describes the functionality of Copy File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 02/28/2025
+ms.date: 03/18/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -32,7 +32,7 @@ The Copy File activity copies a file from one directory to another. You can also
 |**File**|Enter the path and name of the file that you want to copy. You can use the * and ? wildcards to specify the file name or path. These wildcards behave the same way as in the Windows Command Prompt.|  
 |**Include sub-folders**|Select this option to copy any files within the sub-folders of the path you've specified that match the filename that you've specified.|  
 |**Folder**|Enter the path of the folder where you want the files to be copied to.|  
-|**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that's being copied.<br /><br /> **Fail**: Select this option to cause the Copy File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.|  
+|**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<ul><li> **Overwrite**: Select this option to overwrite the existing file with the file that's being copied.<li>**Fail**: Select this option to cause the Copy File activity to fail if the filename already exists.<li>**Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.</ul>|  
 
 ### Advanced tab
 
@@ -45,7 +45,7 @@ The Copy File activity copies a file from one directory to another. You can also
 
 ### Published data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  
@@ -82,8 +82,8 @@ The Copy File activity copies a file from one directory to another. You can also
 |Name and path of the origin file|The name and path that the file was copied from.|  
 |Include sub-folders|Indicates whether the Include sub-folders checkbox was selected.|
 
-## Next steps
+## Related content
 
-- [Get File Status](get-file-status.md)
-- [Monitor File](monitor-file.md)
-- [Print File](print-file.md)
+- [Get File Status](get-file-status.md).
+- [Monitor File](monitor-file.md).
+- [Print File](print-file.md).
