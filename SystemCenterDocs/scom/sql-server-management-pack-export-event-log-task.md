@@ -5,7 +5,7 @@ description: This article explains how to run the export event log task for DB E
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 02/28/2025
+ms.date: 03/18/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -19,7 +19,7 @@ For the SQL Server DB Engine on Windows in the agentless monitoring mode, this t
 
 ## Run the task
 
-To run the task, follow these steps:
+To run the export event log task, follow these steps:
 
 1. Determine the log file location for saving:
    - local computer
@@ -37,21 +37,14 @@ The task parameters with their description are as follows:
 
 ![Export Event Log task screenshot.](./media/sql-server-management-pack/export-log-task.png)
 
-- **Timeout (seconds)**
 
-    Specifies the time the rule is allowed to run before being stopped and marked as failed. The default value is 300 seconds, which can be changed.
+|Parameter|Definition|
+|-|-|
+|Timeout (Seconds)|Time the rule is allowed to run before being stopped and marked as failed. The default value is 300 seconds, which can be changed.|
+|Export Event Log Target File Path (Mandatory)|folder path, desired file name, and extension with Windows Event Viewer formats - .evtx, .evt, .etl.|
+|Date To (Optional)|Date and time until which the log file will be exported.|
+|Date From (Optional)|Date or time from which the log file will be exported.|
 
-- **Export Event Log Target File Path (Mandatory)**
-
-    Specify the folder path, desired file name, and extension with Windows Event Viewer formats - .evtx, .evt, .etl.
-
-- **Date To (Optional)**
-
-    Specify the date and time until which the log file will be exported.
-
-- **Date From (Optional)**
-
-    Specify the date or time from which the log file will be exported.
 
 ## Date and time formats for override task parameters
 
@@ -70,18 +63,18 @@ The following date time formats can be used:
 
 Separate the date numbers with symbols: ".", "/", "-".
 
-The following parameters for specifying the duration range:
+The following table shows parameters for specifying the duration range:
 
 |Parameter|Definition|
 |-|-|
 |P|Duration designator, placed at the start of duration expression|
-|Y|A number of years|
-|M|A number of months|
-|D|A number of days|
+|Y|Number of years|
+|M|Number of months|
+|D|Number of days|
 |T|Time designator, placed after the date range and before the time range|
-|H|A number of hours|
-|M|A number of minutes|
-|S|A number of seconds|
+|H|Number of hours|
+|M|Number of minutes|
+|S|Number of seconds|
 
 **P1Y1DT30M.01S** means 1 year 1 day 30 minutes and 10 milliseconds.
 **P1MT8H** means 1 month and 8 hours.
@@ -128,3 +121,6 @@ The duration range examples are as follows:
    Date From=PT10H30M30S and Date To=PT3H30M.
 
    An event log file is created with the log history exported for the period starting 10 hours, 30 minutes, and 30 seconds before the request time and ending 3 hours and 30 minutes before the request time.
+
+## Next step
+[SQL Server Run As profiles](sql-server-management-pack-run-as-profiles.md)
