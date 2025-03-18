@@ -11,7 +11,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 02/28/2025
+ms.date: 03/18/2025
 ms.subservice: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
@@ -399,7 +399,7 @@ Before you can use Service Manager cmdlets, you need to configure the Service Ma
 
 ### Process all dimensions using cmdlets
 
-- Copy and paste the following code snippets at the prompt in a Service Manager Shell:
+Copy and paste the following code snippets at the prompt in a Service Manager Shell:
 
     ```powershell
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices") > $NULL
@@ -527,6 +527,6 @@ To override the default timeout period, follow these steps:
 3. Restart the Microsoft Monitoring Agent service.
 4. You can resume the Transform.common job to see the change.
 
-## Next step
+## Related content
 
-To retrieve data from one or more data sources, see [Register source systems to the data warehouse](register-sources-to-dw.md).
+[Register source systems to the data warehouse](register-sources-to-dw.md).
