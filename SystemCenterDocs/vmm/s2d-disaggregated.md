@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct disagg
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/28/2025
+ms.date: 03/18/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -84,10 +84,7 @@ To allocate the storage in Hyper-V, follow these steps:
 1.	In the Hyper-V host properties > **Storage**, specify the file share path. Now, you can create VMs that use this file share.
 
 
-
-
-
-## Next steps
+## Related content
 
 
 - [Provision VMs](provision-vms.md).
