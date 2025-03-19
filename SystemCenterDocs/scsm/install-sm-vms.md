@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/19/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -19,6 +19,13 @@ ms.assetid: 3614b9db-20de-41c0-9780-a27624258da0
 
 
 This article provides guidance that you should consider when you install System Center - Service Manager in a Hyper\-V virtual environment. If you're installing Microsoft SQL&nbsp;Server into an environment without Hyper\-V, consult your vendor's documentation for guidance regarding the use of SQL&nbsp;Server.  
+
+
+::: moniker range=">=sc-sm-2019"
+
+[!INCLUDE [validation-sm.md](../includes/validation-sm.md)]
+
+::: moniker-end
 
 ## Deploy SQL&nbsp;Server in a virtual environment
 

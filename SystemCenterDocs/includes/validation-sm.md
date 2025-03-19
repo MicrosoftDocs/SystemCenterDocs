@@ -7,29 +7,35 @@ manager: jsuri
 ms.date:  03/19/2025
 ms.topic:  include
 ms.service: system-center
-ms.subservice: orchestrator
+ms.subservice: service-manager
 ---
 
-## Installer Validation (recommended) 
+## Installer Validation (optional) 
 
 After you download the installation media (zip), we recommend to verify that the file is not corrupted. Following is the checksum for the file:
 
-::: moniker range="sc-orch-2025"
+::: moniker range="sc-sm-2025"
+
 ```
-52F79F65908851AB5E2EDE18DD002273C3846811BC7560795EDSFB121A1EEFB3
+3001D0F19CFC8E1881B8D77E3251B81FB21E7A59C027CB4EB7663435068D41B1
 ```
+
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range="sc-sm-2022"
+
 ```
-8767920692157DA537284D38F8E1E9A1C8EDE94047452176AF6EA7C23AFFFC91
+667802FC1FA8545065AFBC06A28BAE4015B54528B6A9E5A80201C908E082D198
 ```
+
 ::: moniker-end
 
-::: moniker range="sc-orch-2019"
+::: moniker range="sc-sm-2019"
+
 ```
-7BD107535B6AB329D1D90B841C2629D2BE4014D1FB82DF030C1164A021BE9062
+C539C4590DFE2582C91EDD0D95CA8ADCA95506353BB01CF9CFECDE16048073A9
 ```
+
 ::: moniker-end
 
 To verify its authenticity, perform checksum validation on your computer by running the following PowerShell snippet:
