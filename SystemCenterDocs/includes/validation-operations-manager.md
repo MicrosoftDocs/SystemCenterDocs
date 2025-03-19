@@ -1,6 +1,6 @@
 ---
-title: include file
-description: include file for Validation section in Install docs.
+title: Include file
+description: Include file for Validation section in Install docs.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 
 ## Installer Validation (recommended) 
 
-After you download the installation media (zip), we recommend to verify that the file is not corrupted. Following is the checksum for the file:
+After you download the installation media (zip), we recommend to verify that the file isn't corrupted. Following is the checksum for the file:
 
 ::: moniker range="sc-om-2025"
 ```
@@ -40,4 +40,4 @@ $zipFilePath = "ENTER_ZIP_Path\<product>_<version>.zip"
 $expectedChecksum -eq (Get-FileHash -Path $zipFilePath -Algorithm SHA256).Hash
 ```
 
-When validation passes, you see **True** printed. If you see **False** printed, the downloaded file is not valid and you need to download it again.
+When validation passes, you see **True** printed. If you see **False** printed, the downloaded file isn't valid and you need to download it again.

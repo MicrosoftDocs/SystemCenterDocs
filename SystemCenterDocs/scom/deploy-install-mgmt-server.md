@@ -38,7 +38,7 @@ Once you've installed the first management server and created the management gro
 
 ::: moniker range=">=sc-om-2019"
 
-[!INCLUDE [validation-scom.md](../includes/validation-scom.md)]
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
 
 ::: moniker-end
 

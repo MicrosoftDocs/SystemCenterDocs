@@ -31,7 +31,7 @@ When you're ready to move System Center - Service Manager into a production envi
 
 ::: moniker range=">=sc-sm-2019"
 
-[!INCLUDE [validation-sm.md](../includes/validation-sm.md)]
+[!INCLUDE [validation-service-manager.md](../includes/validation-service-manager.md)]
 
 ::: moniker-end
 

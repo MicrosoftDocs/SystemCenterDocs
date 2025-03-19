@@ -38,7 +38,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ::: moniker range=">=sc-om-2019"
 
-[!INCLUDE [validation-scom.md](../includes/validation-scom.md)]
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
 
 ::: moniker-end
 

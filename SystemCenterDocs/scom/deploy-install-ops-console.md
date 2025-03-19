@@ -22,7 +22,7 @@ You must ensure that the computer that will host the Operations console meets th
 
 ::: moniker range=">=sc-om-2019"
 
-[!INCLUDE [validation-scom.md](../includes/validation-scom.md)]
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
 
 ::: moniker-end
 

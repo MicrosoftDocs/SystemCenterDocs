@@ -27,7 +27,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 
 ::: moniker range=">=sc-vmm-2019"
 
-[!INCLUDE [validation-vmm.md](../includes/validation-vmm.md)]
+[!INCLUDE [validation-virtual-machine-manager.md](../includes/validation-virtual-machine-manager.md)]
 
 ::: moniker-end
 

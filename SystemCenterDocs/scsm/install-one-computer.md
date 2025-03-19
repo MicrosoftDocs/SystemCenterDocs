@@ -26,7 +26,7 @@ If you want to evaluate System Center - Service Manager and you've a minimal amo
 
 ::: moniker range=">=sc-sm-2019"
 
-[!INCLUDE [validation-sm.md](../includes/validation-sm.md)]
+[!INCLUDE [validation-service-manager.md](../includes/validation-service-manager.md)]
 
 ::: moniker-end
 

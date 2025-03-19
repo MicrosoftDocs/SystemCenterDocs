@@ -79,7 +79,7 @@ The local and remote parameters are as follows:
 
 ::: moniker range=">=sc-om-2019"
 
-[!INCLUDE [validation-scom.md](../includes/validation-scom.md)]
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
 
 ::: moniker-end
 

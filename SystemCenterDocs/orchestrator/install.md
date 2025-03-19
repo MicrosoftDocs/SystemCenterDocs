@@ -49,7 +49,7 @@ This article provides detailed installation instructions for the various Orchest
 
 ::: moniker range=">=sc-orch-2019"
 
-[!INCLUDE [validation-orch.md](../includes/validation-orch.md)]
+[!INCLUDE [validation-orchestrator.md](../includes/validation-orchestrator.md)]
 
 ::: moniker-end
 
