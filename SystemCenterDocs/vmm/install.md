@@ -5,7 +5,7 @@ description: This article provides installation instructions for VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/22/2024
+ms.date: 03/19/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy
 ---
 
 # Install VMM
-
-
 
 This article describes how to install the System Center Virtual Machine Manager (VMM) management server.
 
@@ -26,6 +24,12 @@ This article describes how to install the System Center Virtual Machine Manager 
 
 >[!NOTE]
 >During VMM Installation, ensure that the SQL Database isn't part of any Availability Group.
+
+::: moniker range=">=sc-vmm-2019"
+
+[!INCLUDE [validation-vmm.md](../includes/validation-vmm.md)]
+
+::: moniker-end
 
 ## Run setup
 

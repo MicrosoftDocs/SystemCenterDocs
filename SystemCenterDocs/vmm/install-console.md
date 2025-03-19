@@ -5,7 +5,7 @@ description: This article provides installation instructions for the VMM console
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/19/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy24
 ---
 
 # Install the VMM Console
-
-
 
 This article describes how to install the System Center Virtual Machine Manager (VMM) console on a remote computer and connect to the VMM server. When you install the VMM management server, the console is installed on it automatically.
 
@@ -40,6 +38,11 @@ This article describes how to install the System Center Virtual Machine Manager 
 ::: moniker-end
 - You can only install one version of the console on a single machine.
 
+::: moniker range=">=sc-vmm-2019"
+
+[!INCLUDE [validation-vmm.md](../includes/validation-vmm.md)]
+
+::: moniker-end
 
 ## Run setup
 
