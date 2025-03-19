@@ -12,7 +12,7 @@ ms.subservice: orchestrator
 
 ## Installer Validation (recommended) 
 
-After you download the installation media (zip), we recommend to verify that the file isn't corrupted. Following is the checksum for the file:
+After you download the installation media (zip), we recommend verifying that the file isn't corrupted. Following is the checksum for the file:
 
 ::: moniker range="sc-orch-2025"
 ```
