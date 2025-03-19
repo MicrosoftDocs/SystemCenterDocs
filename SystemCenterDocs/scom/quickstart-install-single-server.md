@@ -5,7 +5,7 @@ ms.custom: engagement-fy23, UpdateFrequency.5
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/17/2025
+ms.date: 03/19/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -35,6 +35,12 @@ You must ensure that your server meets the minimum supported configurations for 
 - Database Engine Services - Full-Text and Semantic Extractions for Search (as called in SQL Server 2012 and later)
 
 - Reporting Services - Native
+
+::: moniker range=">=sc-om-2019"
+
+[!INCLUDE [validation-scom.md](../includes/validation-scom.md)]
+
+::: moniker-end
 
 ### Install the single server management group configuration
 

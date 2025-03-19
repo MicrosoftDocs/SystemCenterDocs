@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/17/2025
+ms.date: 03/19/2025
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -43,6 +43,12 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 > [!NOTE]
 > If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Reporting services role will fail because the setup media doesn't include the updates to support TLS 1.2. The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system. This limitation doesn't apply to Operations Manager version 1801.
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
+[!INCLUDE [validation-scom.md](../includes/validation-scom.md)]
 
 ::: moniker-end
 
