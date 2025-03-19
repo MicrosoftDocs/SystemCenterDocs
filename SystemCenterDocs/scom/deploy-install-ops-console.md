@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Operat
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/17/2025
+ms.date: 03/19/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -19,6 +19,12 @@ After you install System Center - Operations Manager, you can install the Operat
 You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md)
 
 [!INCLUDE [ntauthority-note-operations-manager.md](../includes/ntauthority-note-operations-manager.md)]
+
+::: moniker range=">=sc-om-2019"
+
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
+
+::: moniker-end
 
 ## Install the Operations console
 
