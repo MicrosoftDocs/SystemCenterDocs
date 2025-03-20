@@ -296,6 +296,8 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 >- [Zerto](https://www.zerto.com/blog/migrations-data-mobility/how-to-easily-migrate-from-vmware-to-hyper-v-with-zerto/)
 >- [Veeam](https://www.veeam.com/blog/vmware-to-hyper-v-migration.html)
 >- [Carbonite](https://www.carbonite.com/business/products/migration/)
+>- [NAKIVO](https://www.nakivo.com/blog/how-to-convert-vmware-vm-to-hyper-v/)
+
 :::moniker-end
 
 ## Next steps
