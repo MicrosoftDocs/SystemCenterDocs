@@ -3,7 +3,7 @@ description: This article contains the procedures for backing up and recovery of
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/24/2025
 title: Back up Hyper V virtual machines
 ms.subservice: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -43,6 +43,8 @@ Both methods have pros and cons:
 
 - Guest-level backup is useful if you want to protect specific workloads running on a virtual machine. At host-level you can recover an entire VM or specific files, but it won't provide recovery in the context of a specific application. For example, to be able to recover specific SharePoint items from a backed-up VM, you should do guest-level backup of that VM. You must use guest-level backup if you want to protect the data stored on passthrough disks. Passthrough allows the virtual machine to directly access the storage device and doesn't store virtual volume data in a VHD file.
 
+::: moniker range="<=sc-dpm-2019"
+
 ## Online and offline backup
 
 > [!IMPORTANT]
@@ -65,6 +67,8 @@ DPM works seamlessly with the Hyper-V Volume Shadow Copy Services (VSS) writer t
 - The virtual machine must be running, and if the virtual machine is in a cluster, the cluster resource group should be online. A Shadow Storage assignment of a volume inside the virtual machine mustn't be explicitly set to a different volume other than itself.
 
 If these conditions aren't met, DPM will perform an offline backup where the virtual machine is paused and placed in a saved state while the snapshot is taken, and then the virtual machine is resumed. This means the virtual machine is unavailable during the backup, usually a short period of less than a minute for many environments.
+
+::: moniker-end
 
 ## Protect VMs on SOFS clusters
 
