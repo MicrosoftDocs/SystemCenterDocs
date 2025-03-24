@@ -33,7 +33,7 @@ After you download the installation media (zip), we recommend verifying that the
 ::: moniker range="sc-sm-2019"
 
 ```
-C539C4590DFE2582C91EDD0D95CA8ADCA95506353BB01CF9CFECDE16048073A9
+223870FB43CA8B584040401BBE7FEDE9D90A066A391ABD39F3D7948BBD0FE4A1
 ```
 
 ::: moniker-end
