@@ -4,7 +4,7 @@ description: This article describes the functions you can perform from the Admin
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/17/2025
+ms.date: 03/26/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
@@ -95,6 +95,6 @@ The following table summarizes the settings you can manage in **Settings** in th
 |Server Security|Specify how the management server should handle manually installed agents.|[Process manual agent installations](manage-process-manual-agent-install.md)|
 
 
-## Related  content
-- [Use the Authoring workspace in Operations Manager](manage-using-authoring-workspace.md).
-- [Use the Reporting workspace in Operations Manager](manage-using-reporting-workspace.md).
+## Next steps
+- To use the Operations Manager Operations console to perform authoring tasks, see [Use the Authoring workspace in Operations Manager](manage-using-authoring-workspace.md).
+- To use the Operations Manager Operations console to view and administer reports, see [Use the Reporting workspace in Operations Manager](manage-using-reporting-workspace.md).
