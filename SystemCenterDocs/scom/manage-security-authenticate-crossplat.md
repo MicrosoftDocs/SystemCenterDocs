@@ -5,7 +5,7 @@ description: This article highlights accessing UNIX and Linux computers in Opera
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/17/2025
+ms.date: 03/26/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -59,6 +59,7 @@ In Operations Manager, the system administrator is no longer required to provide
 
     Describes options to administer and configure the UNIX/Linux agent for System Center - Operations Manager.  
 
-## Related content
+## Next steps
 
-[Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md).
+- To configure credentials required to securely manage UNIX and Linux computers with Operations Manager, see [Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md).
+- To configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager, see [Configure sudo elevation and SSH keys](manage-security-create-crossplat-sudo-sshkeys.md).
