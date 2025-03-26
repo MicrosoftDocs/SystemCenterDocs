@@ -5,7 +5,7 @@ description: This article provides a high-level overview of how to manage the li
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/17/2025
+ms.date: 03/26/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -139,7 +139,7 @@ The following are some best practices to follow when managing Operations Manager
 
 -   Document the overrides that you make to management packs. When you set an override, add an explanation of the action you're taking and the reason for it to the description field by selecting **Edit** in the Details pane of the Override Properties dialog. You may also want to maintain a spreadsheet or other form to document changes that you make to management packs.  
 
-## Related content
+## Next steps
 
 - To learn how to create a custom writeable management pack to store your overrides, see [Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
 - To understand what an Operations Manager management pack is and how it helps you proactively monitor your services and applications, see [What is in an Operations Manager Management Pack](manage-overview-management-pack.md).  
