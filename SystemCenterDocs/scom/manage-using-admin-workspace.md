@@ -88,7 +88,7 @@ The following table summarizes the settings you can manage in **Settings** in th
 |Agent Heartbeat|Agents generate a heartbeat at specific intervals to ensure they're operating properly. You can adjust the interval.|[How heartbeats work in Operations Manager](manage-agent-heartbeat-overview.md)|  
 |Alerts|Configure alert resolution states.<br>Configure automatic alert resolution.|   [Set alert resolution states](manage-alert-set-resolution-states.md)<br>   [Configure automatic alert resolution](manage-alert-configure-auto-resolution.md)|  
 |Database Grooming|Configure how long different types of data should be retained in the operational database.|[Maintenance of Operations Manager](manage-omdb-grooming-settings.md)|  
-|Privacy|Customer Experience Improvement Program (CEIP)Operational Data Reporting<br>   Error Reporting|[Send data to Microsoft](manage-client-monitoring-using-aem.md)|  
+|Privacy|Customer Experience Improvement Program (CEIP) Operational Data Reporting<br>   Error Reporting|[Send data to Microsoft](manage-client-monitoring-using-aem.md)|  
 |Reporting|Configure the path for the reporting server.|[Use the reporting workspace in Operations Manager](manage-reports-run-save-export.md)|  
 |Web Addresses|Designate web addresses for the Web console and online company knowledge.|[Connect to the Web Console](manage-consoles-how-to-connect.md#connect-to-the-web-console)|  
 |Server Heartbeat|Configure the number of missed heartbeats before the management server pings the agent-managed computer.|[How heartbeats work in Operations Manager](manage-agent-heartbeat-overview.md)|  
