@@ -136,7 +136,7 @@ We recommend you to go through the following table to understand the retention r
 |Retention range|Express full backup|Successful backups|Result|
 |---|---|---|---|
 |30 days|Monday to Friday|Five|30/5 = 6 weeks retention|
-|7 days|Daily|Five (Backups have failed on 2 days due to unplanned outage of the protected server)|7 recovery points spready over 9 days|
+|7 days|Daily|Five (Backups have failed on 2 days due to unplanned outage of the protected server)|7 recovery points spread over 9 days|
 |14 days|Every Saturday|14|14 recovery points spread over 14 weeks|
 
 Data loss tolerance is the maximum amount of data loss, measured in time, that is acceptable to business requirements. It determines how often DPM should synchronize with the protected server by collecting data changes from the protected server. You can change the synchronization frequency to any interval between 15 minutes and 24 hours. You can also select to synchronize just before a recovery point is created, rather than on a specified time schedule.
