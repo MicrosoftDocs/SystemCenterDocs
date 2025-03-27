@@ -93,6 +93,10 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 - If you use Modern Backup Storage and want to increase the BMR default replica size > 20 GB, use the registry key to increase it before protection: `HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)`.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2025"
+
 - If you use Modern Backup Storage, SystemState and BMR backups consume more storage (than legacy storage) due to ReFS cloning. Each SystemState or BMR backup is a full recovery point. To mitigate this storage consumption, you may want to:
   - schedule fewer System State or BMR recovery points,
   - use a smaller retention period for the recovery points,
@@ -100,6 +104,21 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     > [!NOTE]
     > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but reserves 20 GB for each server. Admins should change the registry value `ReplicaSizeInGBForSystemProtectionWithBMR` as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. 
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019 <=sc-dpm-2022"
+
+- If you use Modern Backup Storage, SystemState and BMR backups consume more storage (than legacy storage) due to ReFS cloning. Each SystemState or BMR backup is a full recovery point. To mitigate this storage consumption, you may want to:
+  - schedule fewer System State or BMR recovery points,
+  - use a smaller retention period for the recovery points,
+  - increase the available storage for System State or BMR backups. 
+
+    > [!NOTE]
+    > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but reserves 20 GB for each server. Admins should change the registry value `ReplicaSizeInGBForSystemProtectionWithBMR` as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. 
+
+    > [!NOTE]
+    > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. Process System state backup
 
 ::: moniker-end 
 
@@ -118,16 +137,8 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 - DPM reserves 30 GB of space on the replica volume for BMR. You can change this on the Disk Allocation page in the Modify Protection Group Wizard or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation PowerShell cmdlets. On the recovery point volume, BMR protection requires about 6 GB for retention of five days.
 
-::: moniker-end
-
-::: moniker range="<=sc-dpm-2022"
-
-   > [!NOTE]
-   > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. Process System state backup
-
-::: moniker-end
-
-::: moniker range="sc-dpm-2016"
+     > [!NOTE]
+     > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. Process System state backup
 
 - If you move from system state protection to BMR protection, BMR protection will require less space on the **recovery point volume.** However, the extra space on the volume isn't reclaimed. You can shrink the volume size manually from the **Modify Disk Allocation** page of the **Modify Protection Group Wizard** or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation cmdlets.
 
