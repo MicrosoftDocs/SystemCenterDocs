@@ -2,7 +2,7 @@
 title: Send Email 
 description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 03/27/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ Use the following information to configure the Send Email activity.
 
 ### Details  
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Subject**|Enter the subject of the email.|  
 |**Recipients**|The list displays the email addresses that the email will be sent to. To add a recipient, select **Add** to open the **Recipients Properties** dialog, specify the **Email address** and from the **Recipient type** box, select **To**, **Cc**, or **Bcc**, and then select **OK**.<br /><br /> To remove a recipient, select the recipient in the **Recipients** and select **Remove**. To edit a recipient, double-click the recipient in the **Recipients** box.|  
@@ -46,7 +46,7 @@ Use the following information to configure the Send Email activity.
 
 ### Advanced
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Priority**|Select the priority of the email from the dropdown list.  You can select **Normal**, **Low**, or **High**.|  
 |**Format**|Select the format that will be used for the message body. You can select **Rich Text**, **ASCII**, or **HTML**. **Note:** Some SPAM filters may not allow Rich Text or HTML email.|  
@@ -56,7 +56,7 @@ Use the following information to configure the Send Email activity.
 
 ### Connect
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Email address**|Enter the email address that will be inserted into the From: field of the email.|  
 |**Computer**|Enter the name of the SMTP server. You can also use the ellipsis **(...)** button to browse for the server.|  
@@ -77,3 +77,6 @@ Use the following information to configure the Send Email activity.
 |Outgoing mail server (SMTP)|The name of the SMTP server used to send the email.|  
 |Outgoing mail server port number|The port used to communicate with the SMTP server.|  
 |Outgoing mail server SSL enabled|Indicates whether the mail server has SSL enabled.|
+
+## Next steps
+- To see what tasks you can accomplish when using Notification activity, see [Notification](notification.md).

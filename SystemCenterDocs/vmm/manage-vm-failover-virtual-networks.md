@@ -5,7 +5,7 @@ description: This article describes how to fail over VMs between virtual network
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/30/2024
+ms.date: 03/27/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Configure VM failover between virtual networks
-
-
 
 This article describes how to handle replication and failover of VMs in System Center Virtual Machine Manager (VMM) between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
 
@@ -32,6 +30,8 @@ This sample solution describes the following environment:
 - VMs have IPv4 addresses.
 
 ## Before you start
+
+Here are some considerations before you start configuring VM failover between virtual networks:
 
 - Ensure that the virtual switch and logical switch settings are valid and match in the VMM fabric. If they don't, network attach operations might not succeed after failover.
 - The primary VM must be connected to a virtual network
@@ -494,3 +494,6 @@ foreach($vmAdapter in $VMOnDRAdapter)
     $counter = $counter + 1
 }
 ```
+
+## Next steps
+- To migrate VMs in the VMM fabric, see [Migration of virtual machines – overview](migrate.md).

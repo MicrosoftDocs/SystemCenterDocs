@@ -5,15 +5,13 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/27/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # System Center - Service Manager performance
-
-
 
 Performance for System Center - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 
@@ -53,6 +51,8 @@ Solution 1: You can manually specify how often Service Manager checks for group 
 > Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
 
 ### Manually specify the group change check interval
+
+Tp manually specify the group change check interval, follow these steps:
 
 1. Run Regedit, and navigate to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2010\\Common\\.  
 
