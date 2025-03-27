@@ -1,7 +1,7 @@
 ---
 title: Deploy the VMware vSphere Integration Pack for System Center - Orchestrator
 description: This article provides important information about downloading and deploying the VMware vSphere integration pack for System Center - Orchestrator.
-ms.date: 03/17/2025
+ms.date: 03/27/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -105,6 +105,6 @@ To configure the connections, follow these steps:
 
 12. Select **Finish**.
 
-## Related content
+## Next steps
 
-To get step-by-step instructions for building and testing runbooks in System Center - Orchestrator, see [Design a runbook](designing-a-runbook.md)
+- Add the VMware vSphere category to the Activities pane in the Runbook Designer with [VMware vSphere Activities](vsphere-activities.md) integration pack.
