@@ -2,7 +2,7 @@
 title: Invoke Runbook
 description: This article describes the Invoke Runbook activity that launches a runbook that you specified.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 02/28/2025
+ms.date: 03/27/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -55,8 +55,8 @@ Use the following information to configure the Invoke Runbook activity:
 
  If you use the Invoke Runbook activity and you use [Security Credentials](../common-activity-properties.md#security-credentials), the account you use must be a member of the Orchestrator System group to run successfully.  
 
-## Related content
+## Next steps
 
-- [Initialize Data](initialize-data.md)
-- [Return Data](return-data.md)
-- [Security Credentials](../common-activity-properties.md#security-credentials)
+- Configure the [Initialize Data](initialize-data.md) activity to launch generic runbooks.
+- Configure the [Return Data](return-data.md) activity to return data from the current runbook.
+- Specify the account that runs the Runbook Server Service with settings on the [Security Credentials](../common-activity-properties.md#security-credentials) tab.
