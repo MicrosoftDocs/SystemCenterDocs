@@ -5,7 +5,7 @@ description: This article provides guidance about creating a guest cluster from 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/17/2025
+ms.date: 03/27/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -103,6 +103,6 @@ To include the VM template in a service template, follow these steps:
 
 After you've set up the guest cluster, you're ready to deploy the service.
 
-## Related content
+## Next steps
 
-[Deploy VMs from a template](vm-template.md).
+[Create and deploy VMs in the VMM fabric from a VM template](vm-template.md).
