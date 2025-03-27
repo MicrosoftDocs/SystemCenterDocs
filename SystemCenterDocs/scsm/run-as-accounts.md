@@ -104,15 +104,6 @@ To create a SQL Server logon, follow these steps:
 
 ### Change the Service Manager Self-Service Portal application pool account
 
-#### Prerequisite
-
-Before changing the Service Manager Self-Service Portal application pool account, you must enable the Internet Information Services (IIS) Manageras a prerequisite.<br>
-
-To enable the Internet Information Services (IIS) Manager, follow these steps:
-
-1. Search for **Turn Windows features on or off**.
-2. In the **Windows Features** dialog, select **Internet Information Services**.
-
 To change the Service Manager Self-Service Portal application pool account, follow these steps:
 
 1. On the Windows desktop, select **Start**, point to **Programs**, point to **Administrative Tools**, and select **Internet Information Services (IIS) Manager**.
@@ -137,7 +128,7 @@ To set up and use the Operational Database Account, follow these steps:
 
 ## Change the password for the Operational Database Account used by Service Manager
 
-To change the login password for the Service Manager Data Access and Service Manager Management Configuration services, perform the following procedure.
+To change the login password for the Service Manager Data Access and Service Manager Management Configuration services, follow these steps:
 
 1. On the Windows desktop, select **Start**, and select **Run**.
 2. In the **Run** dialog, in the **Open** box, enter **services.msc**, and select **OK**.
@@ -220,6 +211,6 @@ As date format is based on the language, if the language of SQL user login accou
 
 You can set the default language as English for a new SQL login account or change the default language for an existing account. [Learn more](deploy-sm.md#manage-default-language-for-sql-login-accounts).
 
-## Next step
+## Next steps
 
-[Manage knowledge articles](knowledge-articles.md).
+- [Manage knowledge articles](knowledge-articles.md) to create and search for knowledge articles in Service Manager.
