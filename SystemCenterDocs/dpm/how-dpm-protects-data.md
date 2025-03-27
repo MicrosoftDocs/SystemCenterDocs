@@ -137,7 +137,7 @@ We recommend you to go through the following table to understand the retention r
 |---|---|---|---|
 |30 days|Monday to Friday|Five|30/5 = 6 weeks retention|
 |7 days|Daily|Five (Backups have failed on 2 days due to unplanned outage of the protected server)|7 recovery points spready over 9 days|
-|14 days|Every Saturday|Seven|14 recovery points spread over 14 weeks|
+|14 days|Every Saturday|14|14 recovery points spread over 14 weeks|
 
 >Example 1: If retention range is 30 days and express full backup is only from Monday to Friday, then assuming that all backups were successful, the result would be 30/5 = 6 weeks retention not 4 weeks.
 >
