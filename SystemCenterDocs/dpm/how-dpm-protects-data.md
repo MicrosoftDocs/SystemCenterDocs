@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/27/2025
 title: How does DPM work?
 ms.subservice: data-protection-manager
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
@@ -127,6 +127,17 @@ DPM configures the protection policy, or schedule of jobs, for each protection g
 Your recovery goals quantify your organization's data protection requirements. In DPM, the recovery goals are defined by retention range, data loss tolerance, recovery point schedule, and—for database applications—the express full backup schedule.
 
 The retention range is how long you need the backup data available. For example, do you need data from today to be available a week from now? Two weeks from now? A year from now?
+
+>[!NOTE]
+>The retention range in days are not calendar days, but the number of days that a successful recovery point was made.
+
+We recommend you to go through the following table to understand the retention range:
+
+|Retention range|Express full backup|Successful backups|Result|
+|---|---|---|---|
+|30 days|Monday to Friday|Five|30/5 = 6 weeks retention|
+|7 days|Daily|Five (Backups have failed on 2 days due to unplanned outage of the protected server)|7 recovery points spread over 9 days|
+|14 days|Every Saturday|14|14 recovery points spread over 14 weeks|
 
 Data loss tolerance is the maximum amount of data loss, measured in time, that is acceptable to business requirements. It determines how often DPM should synchronize with the protected server by collecting data changes from the protected server. You can change the synchronization frequency to any interval between 15 minutes and 24 hours. You can also select to synchronize just before a recovery point is created, rather than on a specified time schedule.
 
