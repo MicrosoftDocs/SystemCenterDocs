@@ -130,10 +130,18 @@ The retention range is how long you need the backup data available. For example,
 
 >[!NOTE]
 >The retention range in days are not calendar days, but the number of days that a successful recovery point was made.
+
+We recommend you to go through the following table to understand the retention range:
+
+|Retention range|Express full backup|Successful backups|Result|
+|---|---|---|---|
+|30 days|Monday to Friday|Five|30/5 = 6 weeks retention|
+|7 days|Daily|Five (Backups have failed on 2 days due to unplanned outage of the protected server)|7 recovery points spready over 9 days|
+|14 days|Every Saturday|Seven|14 recovery points spread over 14 weeks|
+
+>Example 1: If retention range is 30 days and express full backup is only from Monday to Friday, then assuming that all backups were successful, the result would be 30/5 = 6 weeks retention not 4 weeks.
 >
->Example 1: If retention range is 30 days and express full backup is only M-F, then assuming that all backups were successful, the result would be 30/5 = 6 weeks retention not 4 weeks.
->
->Example 2: If retention range is 7 days, express full backup is Daily, and Backups failed on 2 days due to unplanned outage of the protected server, then the result would be 7 recovery points spread over 9 days.
+>Example 2: If retention range is 7 days, express full backup is Daily, and Backups have failed on 2 days due to unplanned outage of the protected server, then the result would be 7 recovery points spread over 9 days.
 >
 >Example 3: If retention range is 14 days and express full Backup is every Saturday, then assuming that all backups were successful, the result would be 14 recovery points spread of 14 weeks.
 
