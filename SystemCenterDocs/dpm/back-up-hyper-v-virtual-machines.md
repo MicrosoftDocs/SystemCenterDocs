@@ -172,7 +172,7 @@ These are the prerequisites for backing up Hyper-V virtual machines with DPM.
 
 3. In the DPM Administrator console, select **Protection** > **Create protection group** to open the **Create New Protection Group** wizard.
 
-4. On the **Select Group Members** page, highlight the Hyper-V server, or the Hyper-V Cluster, then select the Refresh button to enumerate the Virtual machines. Select the VMs you want to protect from the Hyper-V host server or Cluster on which they're located.
+4. On the **Select Group Members** page, highlight the Hyper-V server, or the Hyper-V Cluster and then select **Refresh** to enumerate the Virtual machines. Select the VMs you want to protect from the Hyper-V host server or Cluster on which they're located.
 
 5. On the **Select Data Protection Method** page, specify a protection group name. Select **I want short-term protection using Disk**, and select **I want online protection** if you want to back up data to Azure using the Azure Backup service. If this option isn't available, complete the wizard to create the group. Ensure that the MARS agent is installed and registered to an Azure recovery services vault and then modify the protection group settings to select this option. You can store data in Azure for up to 3360 days.
 
