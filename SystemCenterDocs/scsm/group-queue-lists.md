@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 02/28/2025
+ms.date: 03/27/2025
 title: Use groups, queues, and lists in Service Manager
 ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
@@ -210,6 +210,6 @@ To validate the addition of a new list item, follow these steps:
 
 2. In the **Service Manager** console, create a new incident, and then locate the new list item in the **Classification Category** list. For example, expand **Printer Problems**, and then locate the **Laser Printer** and **Check-Writing Printer** list items.
 
-## Next step
+## Next steps
 
-[Use runbooks to automate procedures](runbooks.md).
+- Understand the purpose and use of runbooks through [Use runbooks to automate procedures](runbooks.md).
