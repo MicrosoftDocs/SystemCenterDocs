@@ -122,8 +122,8 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 ::: moniker range="<=sc-dpm-2022"
 
-    > [!NOTE]
-    > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. Process System state backup
+   > [!NOTE]
+   > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. Process System state backup
 
 ::: moniker-end
 
