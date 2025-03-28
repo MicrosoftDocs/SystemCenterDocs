@@ -5,7 +5,7 @@ description: This article describes how to add an IP Address Management server t
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/21/2024
+ms.date: 03/28/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -26,6 +26,8 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 ## Before you start
 
+Here are some considerations before you start setting up an IPAM server in the VMM fabric:
+
 - Ensure that you have an IPAM server. [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831353(v=ws.11)?f=255&MSPPError=-2147217396). The IPAM server can be running these versions of [Windows Servers](system-requirements.md).
 - Create or identify a domain account and set it to never expire. On the IPAM server, add the account to these groups:
  - **IPAM ASM Administrators**: A local group that exists on all IPAM servers and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj878348(v=ws.11)).
@@ -38,6 +40,8 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 
 ## Add an IPAM server to the fabric
+
+To add an IPAM server to the fabric, follow these steps:
 
 1. Select **Fabric** > **Home** > **Show** > **Fabric Resources** > **Fabric** > **Networking** > **Network Service**. Network services include gateways, virtual switch extensions, network managers (which include IPAM servers), and top-of-rack (TOR) switches.
 2. Select **Home** >**Add** > **Add Resources** > **Network Service**.
@@ -62,7 +66,9 @@ VM network | VIRTUALIZED IP ADDRESS SPACE<br /> Customer IP Address Space: **VM 
 
 ## IP address reservation
 
-IP reservation in IPAM is honored by VMM. Follow the steps below for reserving IP addresses.
+IP reservation in IPAM is honored by VMM.
+
+To reserve IP addresses, follow these steps:
 
 1. In IPAM, right-click **IP Address Range** for IP address reservation.
 2. Select **Edit IP Address Range** and a window opens.

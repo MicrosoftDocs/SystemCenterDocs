@@ -2,7 +2,7 @@
 title: Compress File 
 description: This article describes the Compress File activity that compresses files into zip archives.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 03/28/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -25,9 +25,11 @@ The Compress File activity compresses files into zip archives. You can use the C
 
  Use the following information to configure the Compress File activity.  
 
-### Details Tab  
+### Details tab  
 
-|Settings|Configuration Instructions|  
+The following table lists the details data items.
+
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Folder**|Enter the path to the file or to the folder that contains the files that you want to compress, or select the ellipsis **(...)** button and browse for the files. You can use wildcards in filenames. You can't browse for the folder name; you must enter the full folder name and location and include a trailing slash.|  
 |**Include files in sub-folders**|Select this option to include any files that are found within subfolders of the folder that you specified.|  
@@ -38,10 +40,14 @@ The Compress File activity compresses files into zip archives. You can use the C
 
 ### Published Data
 
- The following table lists the published data items.  
+The following table lists the published data items.  
 
 |Item|Description|  
 |----------|-----------------|  
-|Archive name and path|The name and path of the archive file that was created.|  
-|Number of files within archive|The number of files inside the archive file.|  
-|Size of archive|The size of the archive file.|
+|**Archive name and path**|The name and path of the archive file that was created.|  
+|**Number of files within archive**|The number of files inside the archive file.|  
+|**Size of archive**|The size of the archive file.|
+
+## Next steps
+
+- [Decompress File activity](decompress-file.md).

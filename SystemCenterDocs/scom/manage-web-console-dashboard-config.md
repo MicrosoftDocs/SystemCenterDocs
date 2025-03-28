@@ -5,7 +5,7 @@ description: This article describes how to manage the configuration of the HTML5
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/28/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>sc-om-2016'
@@ -29,6 +29,8 @@ You're prompted to confirm your wish to proceed with deleting the dashboard. Thi
 
 ## Add dashboards or views to My workspace
 
+To add dashboards or views to My workspace, follow these steps:
+
 1. Right-click on a dashboard or view in the monitoring tree of the Web console and select **Add to My Workspace** from the context menu.
 
 2. On the **Add to My Workspace** pane on the right side of the page, specify which folder in **My Workspace** this dashboard or view should be added.  You can also choose to create a new folder by selecting **New Folder** to better organize your workspace.
@@ -38,9 +40,9 @@ You're prompted to confirm your wish to proceed with deleting the dashboard. Thi
 
 ## Modify widget configuration
 
-To edit the widget, perform the following steps.
+To edit the widget configuration, follow these steps:
 
-1. Hover your mouse over the widget and click on the ellipsis **…** at the top right corner of the widget.
+1. Hover your mouse over the widget and select the ellipsis **…** at the top right corner of the widget.
 
 2. The options pane for the widget appears, and it displays all the possible actions available for the selected widget. Select **Edit** to launch the authoring pane for the widget.
 
@@ -50,7 +52,7 @@ After you update the widget, the changes are saved and the message **updating wi
 
 ## Delete a widget from the dashboard
 
-To delete a widget on your dashboard, perform the following steps.
+To delete a widget from your dashboard, follow these steps:
 
 1. Hover your mouse over the widget.
 
@@ -74,4 +76,4 @@ Move your cursor to the bottom right or right border of the widget. You will see
 To save the changes you want to keep, select **Save Changes**. If you want to cancel all your changes, select **Undo changes**.
 
 ## Next steps
-To understand how to create your own custom views and dashboards in Operations Manager, see [Creating and scoping views in Operations Manager](manage-console-scope-views.md).
+- To understand how to create your own custom views and dashboards in Operations Manager, see [Create and scope views in Operations Manager](manage-console-scope-views.md).

@@ -5,7 +5,7 @@ description: This article describes about how to route the network traffic betwe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 103/28/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -36,9 +36,9 @@ An SDN RAS gateway enables you to route network traffic between physical and vir
 
 ::: moniker-end
 
-## Before you start
+## Prerequisites
 
-Ensure the following:
+Before you route traffic across networks in the SDN infrastructure, ensure you meet these prerequisites:
 
 -   SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md), and [SDN RAS gateway](sdn-gateway.md) are deployed.
 
@@ -65,7 +65,9 @@ For specifying VIP range, don’t use the shortened form of the IPv6 address; us
 ::: moniker-end
 
 ## Configure IPSec connection
-**Use the following procedure**:
+
+To configure IPSec connection, follow these steps:
+
 1.  Select the VM Network that you want to configure a Site-to-Site IPSec connection and select **Connectivity**.
 2.  Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
 3.  Select the network controller service for the gateway device.
@@ -85,7 +87,8 @@ For specifying VIP range, don’t use the shortened form of the IPv6 address; us
 GRE tunnels enable connectivity between tenant virtual networks and external networks.
 Since the GRE protocol is lightweight and support for GRE is available on most of the network devices, it becomes an ideal choice for tunneling where encryption of data isn't required. GRE support in Site-to-Site (S2S) tunnels facilitates traffic forwarding between tenant virtual networks and tenant external networks.
 
-**Use the following procedure**:
+To configure GRE tunneling, follow these steps:
+
 1.  Select the VM network where you want to configure a S2S GRE connection, and select **Connectivity**.
 2.  Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
 3.  Select the Network Controller Service for the Gateway Device.
@@ -101,7 +104,9 @@ Since the GRE protocol is lightweight and support for GRE is available on most o
 
 ## Configure IPsec and GRE connections on the remote site
 
-On the remote peer device, use the  **VM network endpoint IP address** from the VMM UI as destination Address while setting up the IPSec\GRE connection.
+To configure IPsec and GRE connections on the remote site, follow this step:
+
+On the remote peer device, use the **VM network endpoint IP address** from the VMM UI as destination Address while setting up the IPSec\GRE connection.
 
 ![Screenshot of the remote site.](./media/sdn-route-network-traffic/sdn-route-network-traffic3.png)
 
@@ -115,12 +120,16 @@ Using L3 forwarding, tenant network virtual machines can connect to a physical n
 
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
-**Ensure the following before you attempt to configure L3**:
+
+
+**Prerequisites**:
+
+Before you attempt to configure L3, ensure you meet these prerequisites:
 
  - Ensure you're logged on as an administrator on the VMM server.
  - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
 
-**Use the following steps to create the next-hop logical network in SCVMM:**
+To create the next-hop logical network in SCVMM, follow these steps:
 
 1. On the VMM console, select **Logical Networks**, right-click and select **Create Logical Network**.
 
@@ -305,12 +314,14 @@ Using L3 forwarding connection, tenant network virtual machines can connect to a
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 
-**Ensure the following before you attempt to configure L3 connection**:
+*Prerequisites**:
+
+Before you attempt to configure L3 connection, ensure you meet these prerequisites:
 
 - Ensure you're logged on as an administrator on the VMM server.
 - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
 
-**Use the following steps to create the next-hop logical network in VMM:**
+To create the next-hop logical network in VMM, follow these steps:
 
 1.  On the VMM console, select **Logical Networks**, right-click and select **Create Logical Network**.
 2. In the **Settings** page, choose **One connected network** and select  **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**.
@@ -330,7 +341,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
 3. Create an IP Pool for this new logical network. IP address from this pool is required for setting up L3 forwarding.
 
-**Use the following steps to configure L3 forwarding**:
+To configure L3 forwarding, follow these steps:
 
 > [!NOTE]
 > You can't limit bandwidth in L3 VPN connection.
@@ -391,7 +402,7 @@ You can choose to configure static routes or dynamic routes (over BGP) with the 
 
 If you use BGP with L3 tunnel connection, BGP peering must be established between the SDN gateway internal interface IP address, which is present in a different compartment on the gateway VM (not the default compartment) and the peer device on the physical network.
 
-For BGP to work, you must use the following steps:
+**For BGP to work, you must use the following steps:**
 
 1. Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
 
@@ -407,7 +418,7 @@ For BGP to work, you must use the following steps:
 
 ## Determine the SDN gateway internal address
 
-Use the following procedure:
+To determine the SDN gateway internal address, follow these steps:
 
 Run the following PowerShell cmdlets on a network controller installed computer or a computer that was configured as a network controller client:
 
@@ -426,10 +437,11 @@ Run the following PowerShell cmdlets on a network controller installed computer 
 The result of this command provides the IP address that you must configure on the remote router as the peer IP Address.
 
 ## Set up the traffic selector from VMM PowerShell
- **Use the following procedure**:
 
 > [!NOTE]
 > Values used are examples only.
+
+To set up the traffic selector from VMM PowerShell, follow these steps:
 
 1. Create the traffic selector by using the following parameters.
 
@@ -450,3 +462,7 @@ The result of this command provides the IP address that you must configure on th
     ```
 
 2. Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
+
+## Next steps
+
+- [Configure guest clusters in SDN through VMM](sdn-guest-clusters.md).

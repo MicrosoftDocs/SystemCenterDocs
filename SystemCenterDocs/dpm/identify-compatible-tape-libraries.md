@@ -3,7 +3,7 @@ description: This article describes how you can identify tape libraries compatib
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/28/2025
 title: Identify compatible tape libraries
 ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
@@ -27,7 +27,9 @@ If the tape is listed in the [Windows Server Catalog](https://www.windowsserverc
 
 ## Run the compatibility tool
 
-Before you run the tool, do the following:
+**Prerequisites**
+
+Before you run the tool, ensure you meet these prerequisites:
 
 - Check if your target tape library and tape drives are visible in Device Manager.
 
@@ -35,7 +37,7 @@ Before you run the tool, do the following:
 
 - Insert cleaning tape in slot 1. The tapes must be in consecutive slots, and there should be no tapes in the slots between the tapes. The data tape's slot must precede the cleaning tape slot.
 
-To acquire and run the compatibility tool:
+To acquire and run the compatibility tool, follow these steps::
 
 1. Download the [DPM Tape Library Compatibility Test Tool](https://go.microsoft.com/fwlink/?LinkId=203337).
 
@@ -97,3 +99,7 @@ DPMLibraryTest.exe /CERTIFY /<switch_1> [/switch_2]
 |/SA|Run standalone drive test cases|```DPMLibraryTest.exe /CERTIFY /TL \\\\.\Tape21745678 /SA```|
 |/EX|Show examples||
 |/Help or /?|Show help||
+
+## Next steps
+
+- [Identify data sources you want to protect](identify-data-sources-to-protect.md).

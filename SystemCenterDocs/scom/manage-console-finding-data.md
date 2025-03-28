@@ -4,7 +4,7 @@ description: This article describes how to filter monitoring data in the Operati
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/28/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -23,11 +23,11 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 
 |Filter|When to use|For more information, see|  
 |----------|---------------|-----------------------------|  
-|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [How to Change Scope](manage-console-finding-data.md#how-to-change-scope)<br>-   [Using Groups to Scope Views](manage-console-scope-views.md)|  
-|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|-   [How to Use Find and Search](manage-console-finding-data.md#how-to-use-find-and-search)<br>-   [Using Advanced Search](manage-console-using-adv-search.md)<br>-   [Examples of Using Advanced Search in Operations Manager](~/scom/manage-console-using-adv-search.md#examples-of-using-advanced-search-in-operations-manager)|  
-|Find|Use to display a known single object.|[How to Use Find and Search](manage-console-finding-data.md#how-to-use-find-and-search)|  
+|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [Change Scope](manage-console-finding-data.md#how-to-change-scope)<br>-   [Use Groups to Scope Views](manage-console-scope-views.md)|  
+|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|-   [Use Find and Search](manage-console-finding-data.md#how-to-use-find-and-search)<br>-   [Use Advanced Search](manage-console-using-adv-search.md)<br>-   [Examples of Using Advanced Search in Operations Manager](~/scom/manage-console-using-adv-search.md#examples-of-using-advanced-search-in-operations-manager)|  
+|Find|Use to display a known single object.|[Use Find and Search](manage-console-finding-data.md#how-to-use-find-and-search)|  
 
-## How to change scope  
+## Change scope  
 
 Changing the scope of the monitoring view enables you to view only those objects that meet a certain criteria, such as management servers.
 
@@ -51,11 +51,13 @@ For example, if you want to view only those computers in your environment that a
 
 3. If the list is too long, you can find a specific group or distributed application by entering a word or phrase in the **Look for** field. After you make a selection, select **OK**. Now only the objects that meet the scope criteria are shown in the Results pane.  
 
-## How to use Find and Search
+## Use Find and Search
 
 Use the **Find** button when the list of objects in the Results pane is too long to quickly pick out a particular object. Use the **Search** button when you want to find all objects that meet a certain criteria.  
 
-### To use Find to create a list of objects
+### Find to create a list of objects
+
+To use Find to create a list of objects, follow these steps:
 
 1. In the Operations console, select **Monitoring**.  
 
@@ -67,7 +69,9 @@ Use the **Find** button when the list of objects in the Results pane is too long
 
 4. Select **Clear** to go back to the original list of objects.  
 
-### To use Search to create a list of objects  
+### Use Search to create a list of objects
+
+To use Search to create a list of objects, follow these steps:
 
 1. In the Operations console, select **Monitoring**.  
 
@@ -77,4 +81,4 @@ Use the **Find** button when the list of objects in the Results pane is too long
 
 ## Next steps
 
-* To learn how to search for a specific object type that meets your specified criteria, see [Using Advanced Search](manage-console-using-adv-search.md).  
+* To learn how to search for a specific object type that meets your specified criteria, see [Use Advanced Search](manage-console-using-adv-search.md).  
