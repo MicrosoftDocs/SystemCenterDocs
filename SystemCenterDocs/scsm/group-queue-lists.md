@@ -6,14 +6,14 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 03/27/2025
-title: Use groups, queues, and lists in Service Manager
+ms.date: 03/28/2025
+title: Use Groups, Queues, and Lists in Service Manager
 ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
-# Use groups, queues, and lists in Service Manager
+# Use Groups, Queues, and Lists in Service Manager
 
 
 
@@ -60,7 +60,7 @@ For example, when you're creating an incident, you notice that **Printer Problem
 
 ### List items
 
-In Service Manager, several default list items exist. It's important that you should not delete the default list items. Each default list item is defined by a globally unique identifier (GUID). Some of the default management packs reference these list items by their GUID. If you delete a list item, some management packs or workflows might not work.
+In Service Manager, several default list items exist. It's important that you must not delete the default list items. Each default list item is defined by a globally unique identifier (GUID). Some of the default management packs reference these list items by their GUID. If you delete a list item, some management packs or workflows might not work.
 
 If the name of a default list item causes an issue in your environment, you can change the display name of the existing item but leave the GUID intact. For example, you can change the name of the **Printing Problems** default list item to *Laser Printing Problems* if that is better in your environment.
 
@@ -71,11 +71,9 @@ Use the following procedures to create a new group (such as the **Exchange Serve
 > [!NOTE]
 > We recommend that you create a Configuration Manager connector before you run this procedure.
 
-### Create a group
-
 To create a group, follow these steps:
 
-1. In the **Service Manager** console, select **Library**.
+1. In the Service Manager console, select **Library**.
 
 2. In the **Library** pane, expand **Library**, and select **Groups**.
 
@@ -83,7 +81,7 @@ To create a group, follow these steps:
 
 4. On the **Before You Begin** page, select **Next**.
 
-5. On the **General** page, follow these steps:
+5. On the **General** page, do the following:
 
     1. Provide a name for the group, such as **Exchange Servers**.
 
@@ -115,13 +113,13 @@ To create a group, follow these steps:
 
     `The new group was created successfully.`
 
-### Validate the creation of a new group
+### Validate the creation of a group
 
-Here are some considerations before you start validating the creation of a group:
+To validate the creation of a group, follow these steps:
 
-- Ensure that **Exchange Servers** appears in the **Groups** pane. If necessary, press the F5 key to refresh the Service Manager console view.
+1. Ensure that **Exchange Servers** appears in the **Groups** pane. If necessary, press the F5 key to refresh the Service Manager console view.
 
-- In the **Tasks** pane, under the name of the group, select **View Group Members** to ensure that the Exchange servers appear in the **Group Members** window.
+2. In the **Tasks** pane, under the name of the group, select **View Group Members** to ensure that the Exchange servers appear in the **Group Members** window.
 
 ![Screenshot of the PowerShell symbol.](./media/group-queue-lists/pssymbol.png)You can use a Windows PowerShell command to retrieve groups from Operations Manager and from Service Manager. For more information, see [Get-SCSMGroup](/previous-versions/system-center/powershell/system-center-2012-r2/hh316273(v=sc.20)).
 
@@ -129,9 +127,9 @@ Here are some considerations before you start validating the creation of a group
 
 You can create queues to create a grouping of related work items, such as incidents and change requests. For example, you can create a queue that you use for escalation, named **Exchange Send Problems Queue**, and then escalate that type of incident to that queue.
 
-To create a queue, follow these steps:
+To create a queue, do the following:
 
-1. In the **Service Manager** console, select **Library**.
+1. In the Service Manager console, select **Library**.
 
 2. In the **Library** pane, expand **Library**, and select **Queues**.
 
@@ -159,17 +157,17 @@ To create a queue, follow these steps:
 
 To validate the creation of a queue, follow these steps:
 
-1. In the **Service Manager** console, verify that the new queue appears in the **Queues** pane.
+1. In the Service Manager console, verify that the new queue appears in the **Queues** pane.
 
 2. In the **Tasks** pane, select **Properties**, and then verify that the queue appears as you defined it.
 
-![Screenshot of the PowerShell symbol].(./media/group-queue-lists/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in Service Manager, see [Get-SCSMQueue](/previous-versions/system-center/powershell/system-center-2012-r2/hh316226(v=sc.20)).
+![Screenshot of the PowerShell symbol](./media/group-queue-lists/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in Service Manager, see [Get-SCSMQueue](/previous-versions/system-center/powershell/system-center-2012-r2/hh316226(v=sc.20)).
 
 ## Edit a queue
 
 To edit a queue, follow these steps:
 
-1. In the **Service Manager** console, select **Library**.
+1. In the Service Manager console, select **Library**.
 
 2. In the **Library** pane, expand **Library**, and select **Queues**.
 
@@ -187,7 +185,7 @@ You can use these procedures to add a list item to an existing list and then val
 
 To add list items to Service Manager lists, follow these steps:
 
-1. In the **Service Manager** console, select **Library**.
+1. In the Service Manager console, select **Library**.
 
 2. In the **Library** pane, select **Lists**. The **Lists** pane displays all the existing lists.
 
@@ -212,4 +210,4 @@ To validate the addition of a new list item, follow these steps:
 
 ## Next steps
 
-- Understand the purpose and use of runbooks through [Use runbooks to automate procedures](runbooks.md).
+- [Use runbooks to automate procedures](runbooks.md).
