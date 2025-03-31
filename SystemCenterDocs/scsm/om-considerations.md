@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -30,6 +30,8 @@ When you deploy a Service Manager management server and a data warehouse, you ne
 
 ## Database collations
 
+Here are some considerations for using database collations:
+
 - You must use the same supported language collations if you want to import data from Operations Manager into Service Manager.
 - This only applies to the Operations Manager database, and the SM DWStagingAndConfig database, when you create an Operations Manager Data Source for the data warehouse. Specifically, this appears in the Service Manager console as a Data Warehouse Data Source.
 - This doesn't affect either the Operations Manager to Service Manager Configuration Item connector, or the Operations Manager to  Service Manager Alert Incident connector.  
@@ -49,12 +51,14 @@ Operations Manager is supported by Service Manager, and Service Manager for conn
 
 ### Operations Manager agents
 
-Service Manager includes an Operations Manager agent. The agent is automatically installed when you deploy Service Manager. After installation, you must manually configure the agent to communicate with the Operations Manager management server.  
+Service Manager includes an Operations Manager agent. The agent is automatically installed when you deploy Service Manager.
+
+After installation, you must manually configure the agent to communicate with the Operations Manager management server for the following reasons: 
 
 - To validate that the agent is installed, open **Control Panel**, and verify that the agent is present.
 - To monitor a server running the Self-Service Portal, or the Service Manager console, deploy the Operations Manager agent on the server before you install the portal or console.
 - If you remove the console or Self-Service Portal on a machine that's running the Operations Manager agent, the agent is also removed.
-- If you've already installed the portal or console on a server that doesn't host other Service Manager roles, then agent deployment will fail. To prevent the failure, back up the registry key as follows:
+- If you've already installed the portal or console on a server that doesn't host other Service Manager roles, then agent deployment will fail. To prevent the failure and back up the registry key, do the following:
 
   1. Export the Service Manager key from HKEY\_CLASSES\_ROOT\\Installer\\Products\\\<ServiceManagerGUID\>. You can find the key by searching at the Products node for Data equal to Service Manager.  
   2. Delete the registry key.  
@@ -63,4 +67,4 @@ Service Manager includes an Operations Manager agent. The agent is automatically
 
 ## Next steps
 
-[Review](sm-languages.md) languages supported by Service Manager.
+Review [languages supported by Service Manager](sm-languages.md).

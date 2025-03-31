@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -29,6 +29,8 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
 
 ### Extract individual unsealed management packs from an .mpb file  
 
+To extract individual unsealed management packs from an .mpb file, follow these steps:
+
 1. Start a Service Manager Windows&nbsp;PowerShell session.  
 
 2. In the Windows&nbsp;PowerShell console, enter the following commands:  
@@ -48,6 +50,8 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
    You can now navigate to the *mpdir* folder in the current working folder to view and access the management pack files that you extracted.  
 
 ### Extract resource files from an .mpb file
+
+To extract resource files from an .mpb file, follow these steps:
 
 1. In a Windows&nbsp;PowerShell window, enter the following commands:  
 

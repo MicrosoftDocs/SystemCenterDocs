@@ -3,7 +3,7 @@ description: This article describes the  pre and post backup scripts for Data Pr
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 title: Use Pre-backup and Post-backup scripts
 ms.subservice: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
@@ -50,6 +50,8 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 
 ## Specify pre-backup and post-backup scripts
 
+To specify pre-backup and post-backup scripts, follow these steps:
+
 1. On the protected computer, open the *ScriptingConfig.xml* file in an XML or text editor.
 
    > [!NOTE]
@@ -84,3 +86,7 @@ xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
 
     > [!NOTE]
     > DPM will suffix an additional Boolean (true/false) parameter to the post-backup script command, indicating the status of the DPM backup job.
+
+## Next steps
+
+- [Back up Hyper-V virtual machines](back-up-hyper-v-virtual-machines.md).
