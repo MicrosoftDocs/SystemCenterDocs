@@ -1,5 +1,5 @@
 ---
-description: include file to detail the release notes for Service Manager 2025
+description: Include file to detail the release notes for Service Manager 2025
 ms.topic: include
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -8,7 +8,7 @@ ms.service:  system-center
 ms.subservice: service-manager
 keywords:
 ms.date: 03/31/2025
-title: include file
+title: Include file
 ms.assetid:
 ---
 
