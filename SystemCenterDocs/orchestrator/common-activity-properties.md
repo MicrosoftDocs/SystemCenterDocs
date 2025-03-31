@@ -12,7 +12,7 @@ ms.assetid: 1f3f12bf-e2c2-405c-9205-8d6de6d199d2
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ---
 # Common Activity Properties
 
@@ -68,6 +68,6 @@ The settings on the Security Credentials tab let you specify the account that ru
 |Use the security of the account assigned to the service|Select this option to run the activity with the account used by the runbook server. For more information, see [Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12)).|  
 |This account|Select this option to run this activity with another account. Specify the account user name and password to run this activity. Verify that the account has the credentials to perform this action. If the credentials you provided fail validation, the account assigned to the runbook server account is used.|  
 
-## See Also
+## Related content
 
 [Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12))

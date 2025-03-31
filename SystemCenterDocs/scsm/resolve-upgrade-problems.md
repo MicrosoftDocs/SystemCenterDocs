@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -15,13 +15,13 @@ ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 
 This article helps you troubleshoot upgrade issues in System Center – Service Manager.
 
- There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
+ There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs. The failure occurs in the following situations:
 
-- Failure occurs during the prerequisite check.
-- Failure occurs during predicted checks.
-- Failure occurs in an unpredictable manner before permanent changes are made to a management server.
-- Failure occurs in an unpredictable manner after permanent changes are made to a management server.
-- Failure occurs in an unpredictable manner after permanent changes are made to the database.
+- During the prerequisite check.
+- During predicted checks.
+- In an unpredictable manner before permanent changes are made to a management server.
+- In an unpredictable manner after permanent changes are made to a management server.
+- In an unpredictable manner after permanent changes are made to the database.
 
 The upgrade might also fail as a result of Configuration service Startup timing out.
 
@@ -65,7 +65,7 @@ In any case, you need the backup of the encryption key. For the Service Manager 
 
 If an error occurs after permanent changes have been made—for example, after management packs are imported or any other time data is written into a database—the error message that appears doesn't include a Retry button.
 
-At this point, your only option is to select **Close** and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see **Backing Up Service Manager Databases** in the Disaster Recovery Guide for Service Manager.
+At this point, your only option is to select **Close** and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see **Back Up Service Manager Databases** in the Disaster Recovery Guide for Service Manager.
 
 ---
 
@@ -109,7 +109,7 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 ### Disable signature verification
 
-Follow these steps to disable signature verification:
+To disable signature verification, follow these steps:
 
 1. On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
@@ -119,9 +119,9 @@ Follow these steps to disable signature verification:
 
 4. Attempt the upgrade again.  
 
-### Increase the service time-out setting  
+### Increase the service time-out setting 
 
-Follow these steps to increase the service time-out setting:
+To increase the service time-out setting, follow these steps:
 
 1. On the computer that is running Setup, create the following registry value to increase the service time-out period:  
 
@@ -142,3 +142,7 @@ Follow these steps to increase the service time-out setting:
 2. Start the computer again.  
 
 3. Attempt the upgrade again.
+
+## Next steps
+
+- [Use management packs to add functionality to Service Manager](management-packs.md).

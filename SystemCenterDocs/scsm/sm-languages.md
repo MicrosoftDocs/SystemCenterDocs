@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency5, engagement-fy24
@@ -19,7 +19,7 @@ It's assumed in this article that you're installing System Center - Service Mana
 
  Including English, Service Manager supports a total of 21 languages. Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. Learn more about [SQL Server support](supported-configs.md).  
 
- The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, **CI** indicates case-insensitive and **AS"**indicates accent-sensitive.  
+ The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, **CI** indicates case-insensitive and **AS"** indicates accent-sensitive.  
 
 |Windows locale|Collation|  
 |--------------------|---------------|  
@@ -47,3 +47,7 @@ It's assumed in this article that you're installing System Center - Service Mana
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
 |Turkish \(Türkiye\)|Turkish\_100\_CI\_AS|  
+
+## Next steps
+
+- [Map Active Directory Domain Services attributes to properties in System Center - Service Manager](ad-ds-attribs.md).
