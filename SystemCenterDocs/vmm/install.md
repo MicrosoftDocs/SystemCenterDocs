@@ -222,3 +222,7 @@ VMM supports the use of gMSA for *Management server service account*.
 3. Enter the gMSA account details in *Domain\gMSA account* format.
 
      :::image type="gmsa" source="media/install/configure-service-account.png" alt-text="Screenshot of gmsa.":::
+
+## Next Step
+
+- [Install the VMM Console](install-console.md).
