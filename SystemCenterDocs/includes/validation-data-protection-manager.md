@@ -4,13 +4,16 @@ description: Include file for Validation section in Install docs.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date:  03/19/2025
+ms.date:  04/01/2025
 ms.topic:  include
 ms.service: system-center
 ms.subservice: data-protection-manager
 ---
 
 ## Installer Validation (recommended) 
+
+>[!NOTE]
+>The following checksum is not valid for Intallation media downloaded from Evaluation Center.
 
 After you download the installation media (zip), we recommend verifying that the file isn't corrupted. Following is the checksum for the file:
 

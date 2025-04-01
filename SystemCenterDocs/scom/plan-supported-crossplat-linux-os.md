@@ -23,6 +23,9 @@ The following tables describe the required Linux operating systems and package d
 
 [!INCLUDE [supported-crossplat-os-2025.md](../includes/supported-crossplat-linux-os-2025.md)]
 
+>[NOTE]
+>If you encounter an error – **Azure Linux not supported**, copy the System Center Operations Manager 2022 *GetOSVersion.sh* file and replace with System Center Operations Manager 2025 *GetOSVersion.sh* file.
+
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
