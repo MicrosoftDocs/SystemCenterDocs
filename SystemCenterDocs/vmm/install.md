@@ -225,4 +225,4 @@ VMM supports the use of gMSA for *Management server service account*.
 
 ## Next Step
 
-- [Install the VMM Console](install-console.md).
+[Install the VMM Console](install-console.md).
