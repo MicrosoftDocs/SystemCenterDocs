@@ -5,7 +5,7 @@ description: This article describes how to rapidly provision VMs in the VMM fabr
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/28/2025
+ms.date: 04/01/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -23,7 +23,7 @@ Rapid provisioning provides a method for deploying new virtual machines to stora
 - You create a SAN copy-capable template from a Virtual Hard Disk (VHD) that resides on a storage logical unit that supports SAN copy through cloning or snapshots.
 - When you create a VM using the SAN copy-capable template, VMM quickly creates a read-write copy of the logical unit that contains the VHD and places the virtual machine files on the new logical unit.<br>
 When VMM deploys a virtual machine using rapid provisioning through SAN copy, VMM uses a SAN transfer instead of a network transfer. During a SAN transfer, a SAN copy of the logical unit that contains the virtual machine is created and is assigned to the destination host or host cluster. Because the files for a virtual machine aren't moved over the network when you transfer a virtual machine over a SAN, it's much faster than a transfer over a standard network.
-- You can use either of the following methods to create a SAN copy-capable template.
+- You can use either of the following methods to create a SAN copy-capable template:
     - Create a SAN-copy capable template from a new VM.
     - Create a SAN-copy capable template from an existing VM.
 
@@ -52,7 +52,7 @@ Here are some considerations before you start deploying VMs:
     - If the MPIO feature is already enabled before you add a host to VMM management, VMM will automatically enable MPIO for supported storage arrays using the Microsoft provided Device Specific Module (DSM). If you already installed vendor-specific DSMs for supported storage arrays and then add the host to VMM management, the vendor-specific MPIO settings will be used to communicate with those arrays.
     - If you add a host to VMM before you add the MPIO feature, you must manually configure MPIO to add the discovered device hardware IDs. Alternatively, you can install vendor-specific DSMs.
     - If you're using a Fibre Channel Storage Area Network (SAN), each host that will access the storage array must have a Host Bus Adapter (HBA) installed. Additionally, ensure that the hosts are zoned accordingly so that they can access the storage array.
-    - If you use an iSCSI SAN, ensure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, ensure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic. For information on how to create an iSCSI session on a host through VMM, see [How to Configure Storage on a Hyper-V Host in VMM](hyper-v-storage.md#configure-storage-for-a-hyper-v-cluster).
+    - If you use an iSCSI SAN, ensure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, ensure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic. For information on how to create an iSCSI session on a host through VMM, see [Configure Storage on a Hyper-V Host in VMM](hyper-v-storage.md#configure-storage-for-a-hyper-v-cluster).
 
 
 ## Create a SAN copy-capable template from a new virtual machine
@@ -144,6 +144,6 @@ To deploy a VM from the template, follow these steps:
 6. When you create a virtual machine from the SAN copy-capable template, a new logical unit is automatically provisioned from the same storage pool where the virtual hard disk that was used to create the SAN copy-capable template from resides. The logical unit is automatically registered and mounted on the target host.
 7. To verify that the virtual machine was created, open the VMs and Services workspace. Expand **All Hosts** or **Clouds** and locate and select the destination host or private cloud. In **VMs**, verify that the new virtual machine appears. If you open Disk Management (diskmgmt.msc) on the destination host, you can see the new disk that is assigned and registered to the host.
 
-## Next step
+## Next steps
 
 [Manage the VM settings](vm-settings.md).
