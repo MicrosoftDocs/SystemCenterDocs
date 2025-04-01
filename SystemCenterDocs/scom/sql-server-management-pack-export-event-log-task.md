@@ -5,7 +5,7 @@ description: This article explains how to run the export event log task for DB E
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 03/18/2025
+ms.date: 04/01/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -25,7 +25,7 @@ To run the export event log task, follow these steps:
    - local computer
    - [File share (SMB) symbol server](/windows-hardware/drivers/debugger/file-share--smb--symbol-server)
 
-2. In the **System Center Operations Manager** console, navigate to the **Database Engines view** and select the desired SQL Server Database Engine on Windows. Select the **Export Event Log** task on the right pane Tasks dropdown.
+2. In the System Center Operations Manager console, navigate to the **Database Engines view** and select the desired SQL Server Database Engine on Windows. Select the **Export Event Log** task on the right pane Tasks dropdown.
 
 3. Use the **Override** button to fine-tune the task parameters.
 
@@ -63,7 +63,7 @@ The following date time formats can be used:
 
 Separate the date numbers with symbols: ".", "/", "-".
 
-The following table shows parameters for specifying the duration range:
+The following table lists parameters for specifying the duration range:
 
 |Parameter|Definition|
 |-|-|
@@ -122,5 +122,5 @@ The duration range examples are as follows:
 
    An event log file is created with the log history exported for the period starting 10 hours, 30 minutes, and 30 seconds before the request time and ending 3 hours and 30 minutes before the request time.
 
-## Next step
-[SQL Server Run As profiles](sql-server-management-pack-run-as-profiles.md)
+## Next steps
+[SQL Server Run As profiles](sql-server-management-pack-run-as-profiles.md).
