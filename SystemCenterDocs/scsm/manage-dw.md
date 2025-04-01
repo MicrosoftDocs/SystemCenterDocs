@@ -11,7 +11,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 03/18/2025
+ms.date: 04/01/2025
 ms.subservice: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
@@ -86,8 +86,8 @@ It's possible that multiple sources may refer to the same management pack. The v
 
 It's possible to remove management packs from the data warehouse. However, keep the following points in mind:
 
-1. Removing management packs doesn't delete the data from the data warehouse as it does in the  Service Manager database; instead, the database view that users are granted access to is dropped.
-2. If you reimport a management pack after you've removed the corresponding management pack, the historical data is exposed once again.
+- Removing management packs doesn't delete the data from the data warehouse as it does in the  Service Manager database; instead, the database view that users are granted access to is dropped.
+- If you reimport a management pack after you've removed the corresponding management pack, the historical data is exposed once again.
 
     > [!NOTE]
     > Only sealed management packs are synchronized from Service Manager to the data warehouse. An exception to this is list items, also known as enumerations. Groups or queues are synchronized to the data warehouse, regardless of whether they're in a sealed or unsealed management pack.
@@ -258,7 +258,7 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 
 To stop and start data warehouse jobs using the Service Manager console, follow these steps:
 
-1. In the **Service Manager** console, select **Data Warehouse**.
+1. In the Service Manager console, select **Data Warehouse**.
 2. Expand **Data Warehouse**, and select **Data Warehouse Jobs**.
 3. In the **Data Warehouse Jobs** pane, select a job that is running, and select **Suspend** in the **Tasks** list.
 4. Repeat the previous step for each data warehouse job.
@@ -452,7 +452,7 @@ You can use the following procedures to view the status of a data warehouse job 
 
 To view the status of a data warehouse job by using the Service Manager console, follow these steps:
 
-1. In the **Service Manager** console, select **Data Warehouse**.
+1. In the Service Manager console, select **Data Warehouse**.
 2. In the **Data Warehouse** pane, expand **Data Warehouse**, and select **Data Warehouse Jobs**.
 3. In the **Data Warehouse Jobs** pane, review the list of jobs to view their status.
 
@@ -527,6 +527,6 @@ To override the default timeout period, follow these steps:
 3. Restart the Microsoft Monitoring Agent service.
 4. You can resume the Transform.common job to see the change.
 
-## Related content
+## Next steps
 
-[Register source systems to the data warehouse](register-sources-to-dw.md).
+- [Register source systems to the data warehouse](register-sources-to-dw.md).
