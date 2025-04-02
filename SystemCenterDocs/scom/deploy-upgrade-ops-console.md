@@ -36,13 +36,13 @@ To upgrade a standalone Operations console, follow these steps:
 4. On the **Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
 ::: moniker range="sc-om-2016"
-    > [!NOTE]
-    > The default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. 
+   > [!NOTE]
+   > The default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. 
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
-    > [!NOTE]
-    > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
+   > [!NOTE]
+   > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
 ::: moniker-end
 
 5. On the **Prerequisites** page, review and address any warnings or errors that are returned by the Prerequisites checker, and select **Verify Prerequisites Again** to recheck the system.
