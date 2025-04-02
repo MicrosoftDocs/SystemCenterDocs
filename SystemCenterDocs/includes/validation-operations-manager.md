@@ -10,7 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-## Installer Validation (recommended) 
+## Installer validation (recommended) 
 
 After you download the installation media (zip), we recommend verifying that the file isn't corrupted. Following is the checksum for the file:
 

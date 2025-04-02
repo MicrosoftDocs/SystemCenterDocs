@@ -125,8 +125,8 @@ To set up a SQL Server database:
 
 8. If you're installing SQL Server on a remote computer, do the following:
 
-    - If you use an MSCS clustered SQL server for DPM database, the Cluster Group Resource name for the SQL Server role must be named SQL Server (**InstanceName**). For example, SQL Server (MSSQLSERVER).
-    - If you use an MSCS clustered SQL server for DPM database, SQL Server Reporting Service (SSRS) must be installed on a separate standalone SQL server computer or installed on the DPM server itself.
+    - If you use an MSCS clustered SQL Server for DPM database, the Cluster Group Resource name for the SQL Server role must be named SQL Server (**InstanceName**). For example, SQL Server (MSSQLSERVER).
+    - If you use an MSCS clustered SQL Server for DPM database, SQL Server Reporting Service (SSRS) must be installed on a separate standalone SQL Server computer or installed on the DPM server itself.
     - Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
     - Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
