@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/01/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -26,6 +26,8 @@ You can use the information in this article to create a system image that contai
  Afterward, modify and save the sample CMD file below to create your own customized version and then run the file.  
 
 ## Prepare the server for imaging  
+
+To prepare the server for imaging, follow these steps:
 
 1. Install Windows Server on the new server.  
 
@@ -48,7 +50,7 @@ You can use the information in this article to create a system image that contai
 
 ### Create a CMD file that completes image installation  
 
-- Copy the following sample and modify it, as needed.  
+- Copy the following sample and modify it, as needed: 
 
     ```  
     @echo off  

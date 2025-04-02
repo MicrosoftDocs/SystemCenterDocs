@@ -5,7 +5,7 @@ description: This article provides an overview of creating management pack templ
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/01/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -18,6 +18,8 @@ Use the following procedure to create and modify management pack templates.
 
 ## Create a management pack template
 
+To create a management pack template, follow these steps:
+
 1. Start the Operations console with an account that has Author credentials in the management group.
 2. Open the  **Authoring**  workspace.
 3. In the  **Authoring**  navigation pane, right-click the **Management Pack Templates**  node, and then select  **Add Monitoring Wizard**.
@@ -26,6 +28,8 @@ Use the following procedure to create and modify management pack templates.
 
 ### Edit an existing management pack template
 
+To edit an existing management pack template, follow these steps:
+
 1. Start the Operations console with an account that has Author credentials in the management group.
 2. Open the  **Authoring**  workspace.
 3. In the  **Authoring**  navigation pane, expand the  **Management Pack Templates**  node.
@@ -33,11 +37,13 @@ Use the following procedure to create and modify management pack templates.
 
 ### View the elements created by the management pack template
 
+To view the elements created by the management pack template, follow these steps:
+
 1. Start the Operations console with an account that has Author credentials in the management group.
 2. Open the  **Authoring**  workspace.
 3. In the  **Authoring**  navigation pane, expand the  **Management Pack Templates**  node.
 4. Right-click the template to view, select  **View Management Pack Objects** , and then select the kind of element that you want to view.
 
-## See also
+## Related content
 
-- [Management Pack Templates](management-pack-templates.md)
+- [Management Pack Templates](management-pack-templates.md).

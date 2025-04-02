@@ -1,21 +1,21 @@
 ---
 ms.assetid: 8285d0f9-7069-4abf-b83e-ba5898dd73ff
-title: Enabling agent proxy option in Management Pack for SQL Server
+title: Enable agent proxy option in Management Pack for SQL Server
 description: This article explains how to enable the agent proxy option
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/01/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Enabling Agent Proxy Option
+# Enable Agent Proxy Option
 
 The **Agent Proxy** option should be enabled in cases when the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
 
-To enable the **Agent Proxy** option, perform the following steps:
+To enable the **Agent Proxy** option, follow these steps:
 
 1. Open the System Center Operations Manager console.
 
