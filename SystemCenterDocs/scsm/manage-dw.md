@@ -125,7 +125,7 @@ At a high level, ETL occurs in the processes described in the following sections
 
 #### Extract
 
-The extract process starts on a scheduled interval. Extract is the process that retrieves raw data from your Online Transaction Processing System (OLTP) store, which in this case is the Service Manager database.
+The extract process starts on a scheduled interval. Extract is the process that retrieves raw data from your Online Transaction Processing System (OLTP) store, which in this case is the Service Manager database. The extract process does the following:
 
 1. The extract process queries Service Manager for the delta data that has accumulated since the last time the extract process ran.
 2. The new data is written into the DWStagingandConfig database in the same basic form as it's in the Service Manager database.
@@ -179,9 +179,9 @@ In general, you should avoid having the same dimension, fact, and cube name in d
 
 Use the following procedure to enable the schedule for the ETL jobs as needed; you can use this procedure to enable the schedule for any of the data warehouse jobs. By default, the schedules for the Extract, Transform, and Load (ETL) jobs are enabled. In this release of Service Manager, you can enable the schedules only by using Windows PowerShell.
 
-### [Enable a schedule for a data warehouse job by using a Windows PowerShell cmdlet](#tab/enable-a-schedule-for-a-data-warehouse-job-by-using-a-windows-powershell-cmdlet)
+### [Enable a schedule for a data warehouse job by using Windows PowerShell cmdlets](#tab/enable-a-schedule-for-a-data-warehouse-job-by-using-windows-powershell-cmdlets)
 
-To enable a schedule for a data warehouse job by using a Windows PowerShell cmdlet, follow these steps:
+To enable a schedule for a data warehouse job by using Windows PowerShell cmdlets, follow these steps:
 
 ::: moniker range="sc-sm-2016"
 
@@ -398,6 +398,8 @@ To validate a data warehouse job schedule, follow these steps:
     ```powershell
     Get-SCDWJobSchedule
     ```
+
+---
 
 ## Process all dimensions in the data warehouse
 
