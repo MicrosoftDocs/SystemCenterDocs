@@ -5,7 +5,7 @@ description: This article describes how to rapidly provision VMs in the VMM fabr
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/01/2025
+ms.date: 04/02/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -74,13 +74,11 @@ Create a new VM on a logical unit assigned to a Hyper-V host. On the library ser
     - In **Machine Resources**, select **Virtual Hard Disk**. In **Browse** > **Select Destination Folder**, select the drive you created from the assigned logical unit.
     - In **Select Network** and **Add Properties**, select the required settings. In **Summary**, review the settings and select **Create**. Verify that the VM is listed in **VMs and Services** > **All Hosts** > **VMs**.
 
-4.  On the new VM, install and customize the guest operating system and the applications that you want. Generalize the image using Sysprep.exe with the **/generalize** and the **/oobe** options to generalize the associated virtual hard disk. For more information, see [Sysprep Command-Line Options](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825033(v=win.10)). When you're finished, ensure there are no .iso image files attached to the virtual DVD drive.
+4.  On the new VM, install and customize the guest operating system and the applications that you want. Generalize the image using Sysprep.exe with the **/generalize** and the **/oobe** options to generalize the associated virtual hard disk. [Learn more][Sysprep Command-Line Options](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825033(v=win.10)). When you're finished, ensure there are no .iso image files attached to the virtual DVD drive.
 
 ## Create a SAN copy-capable template from an existing VM
 
-### Prerequisites
-
-Before you create a SAN copy-capable template from an existing VM, the following prerequisites must be met:
+Create a template from an existing VM.
 
 - If you want to perform this procedure in VMM, the library server must be added as a managed Hyper-V host. This enables you to assign the logical unit to the library server through VMM. If you don't want to make the library a managed Hyper-V host, you can use your array vendor’s management tools to assign the logical unit to the library server.
 - You must have an existing virtual hard disk (that was generalized using Sysprep) that you want to use as a base image for rapid provisioning.
@@ -94,7 +92,7 @@ To create a template from an existing VM, follow these steps:
     - When you create the logical unit, select the option **Mount in the following empty NTFS folder** > **Browse**, and then select the folder that you created.
     - Don't assign a drive letter. Also, don't ever create multiple mount points to the folder.
 
-4. If the library server isn't a managed Hyper-V host, use your array vendor’s management tools to create the logical unit and to unmask the logical unit to the library server. Then do the following:
+4. If the library server isn't a managed Hyper-V host, use your array vendor’s management tools to create the logical unit and to unmask the logical unit to the library server. Then, do the following:
     - Don't assign a drive letter.
     - Use Disk Management (diskmgmt.msc) to rescan the disk, initialize the disk, and format it.
     - In Disk Management, mount the logical unit to the folder path you created in the library share (**Change Drive Letter and Paths** > **Add** > **Mount in the following empty NTFS folder**, and select the empty library folder).
@@ -142,7 +140,7 @@ To deploy a VM from the template, follow these steps:
 
 5. After you complete the wizard, open **Jobs** > **Create virtual machine job** to view the job status.
 6. When you create a virtual machine from the SAN copy-capable template, a new logical unit is automatically provisioned from the same storage pool where the virtual hard disk that was used to create the SAN copy-capable template from resides. The logical unit is automatically registered and mounted on the target host.
-7. To verify that the virtual machine was created, open the VMs and Services workspace. Expand **All Hosts** or **Clouds** and locate and select the destination host or private cloud. In **VMs**, verify that the new virtual machine appears. If you open Disk Management (diskmgmt.msc) on the destination host, you can see the new disk that is assigned and registered to the host.
+7. To verify that the virtual machine was created, open the VMs and Services workspace. Expand **All Hosts** or **Clouds** and locate and select the destination host or private cloud. In **VMs**, verify that the new virtual machine appears. If you open Disk Management (Diskmgmt.msc) on the destination host, you can see the new disk that is assigned and registered to the host.
 
 ## Next steps
 
