@@ -409,7 +409,7 @@ Before you can use Service Manager cmdlets, you need to configure the Service Ma
 
 ### Process all dimensions using cmdlets
 
-Copy and paste the following code snippets at the prompt in a Service Manager Shell:
+- Copy and paste the following code snippets at the prompt in a Service Manager Shell:
 
     ```powershell
     [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices") > $NULL
