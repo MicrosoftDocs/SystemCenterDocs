@@ -5,7 +5,7 @@ description: This article provides installation instructions for the VMM console
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/19/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy24
 ---
 
 # Install the VMM Console
-
-
 
 This article describes how to install the System Center Virtual Machine Manager (VMM) console on a remote computer and connect to the VMM server. When you install the VMM management server, the console is installed on it automatically.
 
@@ -40,13 +38,18 @@ This article describes how to install the System Center Virtual Machine Manager 
 ::: moniker-end
 - You can only install one version of the console on a single machine.
 
+::: moniker range=">=sc-vmm-2019"
+
+[!INCLUDE [validation-virtual-machine-manager.md](../includes/validation-virtual-machine-manager.md)]
+
+::: moniker-end
 
 ## Run setup
 
 1. Review the planning instructions. Then, right-click setup.exe for VMM > **Run as administrator**.
 2. On the main setup page, select **Install** and on the **Select features to install** page, select the **VMM console** checkbox, and then select **Next**. On the **Please read this notice page**, select the **I agree with the terms of this notice** checkbox, and then select **Next**.
 3. Review the information on the **Diagnostic and Usage Data** page, and then select **Next**. On the **Microsoft Update** page, select whether you want to use Microsoft Update, and then select **Next**. This page won't appear if updates are already installed.
-4. On the **Installation location** page, enter an installation path for the VMM program files or use the default path, and then select **Next**. Setup checks that the computer meets the console installation requirements.
+4. On the **Installation location** page, enter an installation path for the VMM program files or use the default path, and then select **Next**. Set up checks that the computer meets the console installation requirements.
 5. On the **Port configuration** page, enter the port that you want to use for the VMM console to communicate with the VMM management server, and then select **Next**. The port setting that you assign for the VMM console should match the port setting that you assigned for the VMM console during the installation of the VMM management server. The default port setting is 8100. Also, don't assign port number 5986 because it's preassigned.
 6. On the **Installation summary** page, review the settings and select **Install**. The **Installing features** page appears and displays the installation progress.
 7. On the **Setup completed successfully** page, select **Close** to finish the installation. Select **Open the VMM console when this wizard closes** to open the console after the wizard finishes. If setup doesn't finish successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
