@@ -15,6 +15,8 @@ ms.subservice: operations-manager
 
 The **Agent Proxy** option should be enabled in cases when the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
 
+## Enable Agent Proxy
+
 To enable the **Agent Proxy** option, follow these steps:
 
 1. Open the System Center Operations Manager console.

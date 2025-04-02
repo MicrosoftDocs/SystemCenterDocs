@@ -58,6 +58,8 @@ For additional information about command\-line parameters, enter **setup.exe /?*
 
 ## Before you start
 
+Here are some considerations before you start deploying Service Manager from a command line:
+
 ### Prepare the computer
 
  To help prevent an installation failure, on the computer where you'll be installing Service Manager, follow these steps:  
@@ -82,7 +84,7 @@ When the command\-line Setup is complete, the command prompt appears. You can vi
 
 The command\-line installation won't check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
 
-## [Deploy a management server](#tab/deploy-a-data-warehouse-management-server)
+## [Deploy a management server](#tab/deploy-a-management-server)
 
 You can use the following command\-line procedures to deploy the Service Manager management server and the Service Manager database.  
 
@@ -201,7 +203,7 @@ To deploy the Service Manager console, follow these steps:
 
 ## Command-line option error codes
 
-The following is a list of the error codes that are used in the command-line installation of Service Manager.  
+The following is a list of the error codes that are used in the command-line installation of Service Manager:
 
 |Error code|Error|  
 |----------------|-----------|  
