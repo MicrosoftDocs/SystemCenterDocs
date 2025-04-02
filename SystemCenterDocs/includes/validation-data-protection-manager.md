@@ -10,10 +10,10 @@ ms.service: system-center
 ms.subservice: data-protection-manager
 ---
 
-## Installer Validation (recommended) 
+## Installer validation (recommended) 
 
 >[!NOTE]
->The following checksum is not valid for Intallation media downloaded from Evaluation Center.
+>The following checksum is not valid for intallation media downloaded from the Evaluation Center.
 
 After you download the installation media (zip), we recommend verifying that the file isn't corrupted. Following is the checksum for the file:
 
