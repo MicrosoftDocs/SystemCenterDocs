@@ -5,7 +5,7 @@ description: This article explains how to run the export event log task for DB E
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 04/01/2025
+ms.date: 04/02/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -33,10 +33,9 @@ To run the export event log task, follow these steps:
 
 ## Tasks parameters
 
-The task parameters with their description are as follows:
-
 ![Export Event Log task screenshot.](./media/sql-server-management-pack/export-log-task.png)
 
+The task parameters with their description are as follows:
 
 |Parameter|Definition|
 |-|-|
@@ -121,6 +120,3 @@ The duration range examples are as follows:
    Date From=PT10H30M30S and Date To=PT3H30M.
 
    An event log file is created with the log history exported for the period starting 10 hours, 30 minutes, and 30 seconds before the request time and ending 3 hours and 30 minutes before the request time.
-
-## Next steps
-[SQL Server Run As profiles](sql-server-management-pack-run-as-profiles.md).
