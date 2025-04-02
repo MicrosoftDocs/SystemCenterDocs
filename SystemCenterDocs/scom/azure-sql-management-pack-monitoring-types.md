@@ -5,7 +5,7 @@ ms.custom: engagement-fy23
 author: FKornilov
 ms.author: v-fkornilov
 manager: ebruersan
-ms.date: 11/01/2024
+ms.date: 04/02/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -53,7 +53,7 @@ To make these workflows available in the Azure REST API, select the **Use T-SQL 
 > [!NOTE]
 > To connect Microsoft System Center Operations Manager to Azure resources, your server must have the TLS 1.2 protocol enabled. To learn how to check the protocol status on your server, see [TLS 1.2 enforcement for Microsoft Entra Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
 
-## Set up Azure REST API monitoring
+## [Set up Azure REST API monitoring](#tab/set-up-azure-rest-api-monitoring)
 
 Azure REST API monitoring provides a wide range of monitoring targets.
 
@@ -65,7 +65,7 @@ When you use the Azure REST API, the Management Pack for Azure SQL Database uses
 
 For more information, see [Create a Microsoft Entra application and service principal that can access resources](/entra/identity-platform/howto-create-service-principal-portal).
 
-To monitor Azure SQL Database instances by using the Azure REST API:
+To monitor Azure SQL Database instances by using the Azure REST API, follow these steps:
 
 1. In the Operations Manager console, go to **Authoring** > **Management Pack Templates**. Right-click **Azure SQL Database Monitoring** and select **Add Monitoring Wizard**.
 
@@ -235,14 +235,14 @@ To monitor Azure SQL Database instances by using the Azure REST API:
 
    For the correct T-SQL monitoring of geo replicas, grant the SQL Administrator right on each replica server.
 
-## Set up T-SQL monitoring
+## [Set up T-SQL monitoring](#tab/set-up-t-sql-monitoring)
 
 T-SQL is intended to monitor specific Azure SQL Database servers. When you select this mode, the monitoring workflows, including discoveries, rules, and monitors, use T-SQL queries in data sources.
 
 > [!NOTE]
 > Each workflow data source creates a new SQL connection for every pair of SQL Server credentials (username and password). SQL connections are counted for database transaction units and affect billing. For more information, see [Resource limits for Azure SQL Database and Azure Synapse Analytics servers](/azure/sql-database/sql-database-resource-limits-database-server).
 
-To monitor Azure SQL Database instances by using T-SQL queries:
+To monitor Azure SQL Database instances by using T-SQL queries, follow these steps:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Templates**. Right-click **Azure SQL Database Monitoring** and select **Add Monitoring Wizard**.
 
@@ -311,6 +311,8 @@ To monitor Azure SQL Database instances by using T-SQL queries:
 
 1. On **Summary**, review the connection settings, and then select **Create**.
 
+---
+
 ## Related content
 
-- [Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md)
+- [Custom query-based monitoring](azure-sql-management-pack-custom-query-monitoring.md).

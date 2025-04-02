@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboard in Syste
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/02/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>sc-om-2016'
@@ -22,6 +22,9 @@ System Center Operations Manager Web console provides a monitoring interface for
 ::: moniker-end
 
 ## Add widget to dashboard
+
+To create a dashboard and add a State widget, follow these steps:
+
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 2. From the left pane in the Web console, select **+ New dashboard**.
@@ -83,7 +86,9 @@ For one or more monitored objects selected in the widget, you can perform such a
 - Export the alerts to Excel for further analysis
 - Modify how the alerts are presented by included or excluding columns or how to group alerts, customized to your personal needs
 
-To perform these actions, hover your mouse over the widget and click on the ellipsis **...** on the top right corner of the widget.  This will display actions available for the widget.  
+To perform these actions, hover your mouse over the widget and select the ellipsis **...** on the top right corner of the widget.
+
+This will display the following actions available for the widget: 
 
 * Select **Export to Excel** to export the alert data to an Excel file.
 * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Select **Save personalization** when you have completed making your changes.  

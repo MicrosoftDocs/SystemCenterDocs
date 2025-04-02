@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/02/2025
 title:  Extend tiered volume in System Center Data Protection Manager
 ms.subservice: data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
@@ -21,7 +21,7 @@ Before you resize a volume, ensure that you have enough capacity in the storage 
 
 For the virtual disk that uses storage tiers, you can resize each tier separately using the **Resize-StorageTier** cmdlet.
 
-## Step 1 – Resize the virtual disk
+## Resize the virtual disk
 
 Run the following PowerShell cmdlets to get the names of the storage tiers by following the associations from the virtual disk:
 
@@ -40,7 +40,7 @@ Get-StorageTier <FriendlyName> | Resize-StorageTier -Size <Size>
 
 When you resize the **StorageTier** (s), the **VirtualDisk** and **Disk** follow automatically and are resized too.
 
-## Step 2 – Resize the partition
+## Resize the partition
 
 Next, resize the partition using the **Resize-Partition** cmdlet. The virtual disk is expected to have two partitions: the first partition is reserved and shouldn't be modified; the one you need to resize is **PartitionNumber = 2** and **Type = Basic**.
 
@@ -60,7 +60,9 @@ $Partition | Resize-Partition -Size ($Partition | Get-PartitionSupportedSize).Si
 
 ## Add disk to storage pool
 
-You can add more capacity to the tiered volume by adding new disks. Based on the requirement, you can add additional HDDs or SSDs. Follow the step below to add disks to a storage pool.
+You can add more capacity to the tiered volume by adding new disks. Based on the requirement, you can add additional HDDs or SSDs.
+
+To add disks to a storage pool, follow these steps:
 
 1. Physically connect the additional disks that you want to add, and [initialize these disks](add-storage.md#initialize-disks).
     After initialization, the newly added disks appear in the **Primordial** storage pool.

@@ -5,7 +5,7 @@ description: This article provides an overview about how to replace parameters i
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/02/2025
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -98,6 +98,8 @@ You could just pull out the term itself, but it's more straightforward to includ
 
 ### Record a sample web application
 
+To record a sample web application, follow these steps:
+
 1. Use the procedure in [How to Capture Web Application Recording](/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to record a web application.
 2. While recording, connect to [**https://www.bing.com**](https://www.bing.com/).
 3. Optionally, use the option on your browser to view the source of the Bing home page and locate the  **Popular Now**  section of the HTML code.
@@ -108,6 +110,8 @@ You could just pull out the term itself, but it's more straightforward to includ
 ![Screenshot of Bing Web Application Recorded.](./media/bing-web-application-recorded.png)
 
 ### Create an extraction rule
+
+To create an extraction rule, follow these steps:
 
 1. Select the first request, and then select  **Properties**  in the  **Actions**  pane.
 2. Select the  **Extraction Rules**  tab.
@@ -122,6 +126,8 @@ You could just pull out the term itself, but it's more straightforward to includ
 8. Select **OK**  to save and close the request.
 
 ### Insert a parameter into a request
+
+To insert a parameter into a request, follow these steps:
 
 1. Select the second request, and then select  **Properties**  in the  **Actions**  pane.
 2. On the  **General**  tab, select  **Insert parameter**.
