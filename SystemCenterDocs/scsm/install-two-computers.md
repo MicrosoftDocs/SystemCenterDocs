@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/19/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -25,6 +25,13 @@ If you want to evaluate System Center - Service Manager and its reporting capabi
 
 > [!IMPORTANT]  
 > Service Manager doesn't support case-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL&nbsp;Server.  
+
+
+::: moniker range=">=sc-sm-2019"
+
+[!INCLUDE [validation-service-manager.md](../includes/validation-service-manager.md)]
+
+::: moniker-end
 
 ## Install the Service Manager management server, Service Manager database, and console
 

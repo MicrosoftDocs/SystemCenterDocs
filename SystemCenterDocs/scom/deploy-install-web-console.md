@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/17/2025
+ms.date: 03/19/2025
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -76,6 +76,12 @@ The local and remote parameters are as follows:
 
 > [!NOTE]
 > If you run **Repair** on the web console after installation, the settings that were selected during installation will be restored. Any changes that you manually make to the web console configuration after the installation will be reset.
+
+::: moniker range=">=sc-om-2019"
+
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
+
+::: moniker-end
 
 ### Install a stand-alone Web console
 
