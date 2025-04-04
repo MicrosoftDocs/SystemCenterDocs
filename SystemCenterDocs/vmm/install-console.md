@@ -5,7 +5,7 @@ description: This article provides installation instructions for the VMM console
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/19/2025
+ms.date: 04/04/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -37,6 +37,12 @@ This article describes how to install the System Center Virtual Machine Manager 
 - The VMM version of the console must match the System Center version of the VMM server. For example, to connect to a VMM server running System Center 2025, the VMM console version must also be 2025.
 ::: moniker-end
 - You can only install one version of the console on a single machine.
+::: moniker range="sc-vmm-2025"
+- The VMM Console is installed with the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2022#before-you-start).
+::: moniker-end
+::: moniker range="sc-vmm-2022"
+- The VMM Console is installed with the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2025#before-you-start).
+::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
 
