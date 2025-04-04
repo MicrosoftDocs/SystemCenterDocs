@@ -2,7 +2,7 @@
 title: Save Event Log
 description: This article describes the Save Event Log activity that is used to save entries from an event log.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/03/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -25,30 +25,34 @@ The Save Event Log activity is used to save entries from an event log so that th
 
  Before you configure the Save Event Log activity, you need to determine the following:  
 
-- The event log that you are saving from  
+- The event log that you are saving from. 
 
-- The computer where it is located  
+- The computer where it is located.
 
-- The fields that you want to include  
+- The fields that you want to include. 
 
-- The format of the file  
+- The format of the file.
 
 > [!NOTE]
 > If you require only specific entries to be saved and not the entire event log, you will need to know what fields to filter against and what values to filter.  
 
  Use the following information to configure the Save Event Log activity.  
 
-### Details Tab  
+### Details tab  
 
-|Settings|Configuration Instructions|  
+The following table lists the settings available under the Details tab required to configure the Save Event Log activity:
+
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Type the computer where the event log is located. Type `localhost` to specify the runbook server where the runbook is being processed. You can also use the ellipsis **( ... )** button to browse for the computer.|  
 |**Event log**|Type the name of the Windows Event Log where the entries that you are saving are located. You can also use the ellipsis **( ... )** button to browse for the event log name. Browsing is only available if you have specified a valid **Computer**.|  
-|**Include**|Select all the event Log fields that you want to save to the file. You have the option to select **Event ID**, **Source**, **Category**, **Description**, **Type**, **Computer**, and **Date/time**.|  
+|**Include**|Select all the event Log fields that you want to save to the file. You have the option to select **Event ID**, **Source**, **Category**, **Description**, **Type**, **Computer**, and **Date/Time**.|  
 
-### Filters Tab
+### Filters tab
 
-|Settings|Configuration Instructions|  
+The following table lists the settings available under the Filters tab required to configure the Save Event Log activity:
+
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Event ID**|Select and type the specific event ID of the event log entry that you want to save.|  
 |**Source**|Select and type the value that the Source field of the event log entries will need to match.|  
@@ -58,9 +62,11 @@ The Save Event Log activity is used to save entries from an event log so that th
 |**Computer**|Select and specify the value that the Computer field of the event log entries will need to match.|  
 |**Date from**|Select and specify the ranges of dates that the events will need to be from to be included.|  
 
-### Output Tab
+### Output tab
 
-|Settings|Configuration Instructions|  
+The following table lists the settings available under the Output tab required to configure the Save Event Log activity:
+
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**File name**|Type the name of the file where the event log entries will be saved. This file will be saved on the computer where the event log resides.|  
 |**If the file exists**|Select the action that you want to take if a file with the same name already exists:<br /><br /> -   **Create a file with a unique name**: Select to append a value to the filename to create a unique name that doesn't conflict with an existing name.<br />-   **Append**: Select to append the entries that are being saved to the file.<br />-   **Overwrite**: Select to overwrite the existing file with the file that is being created.<br />-   **Fail**: Select to cause the Save Event Log activity to fail if the filename already exists.|  
@@ -68,9 +74,9 @@ The Save Event Log activity is used to save entries from an event log so that th
 |**Delimiter**|Type the delimiter that you want to use to separate the fields of each entry.|  
 |**Create column headings**|Select to save the column header information when saving a set of entries to a file. The header information contains metadata such as the field names.|  
 
-### Published Data
+### Published data
 
- The following table lists the published data items.  
+ The following table lists the published data items:
 
 |Item|Description|  
 |----------|-----------------|  

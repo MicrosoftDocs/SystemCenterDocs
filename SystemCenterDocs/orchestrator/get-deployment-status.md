@@ -2,7 +2,7 @@
 title: Get Deployment Status activity.
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/03/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -31,14 +31,17 @@ activity.
 
 ## Get Deployment Status properties
 
-- Deployment Type: The type of deployment for which you want to retrieve information. Options are:
+The Get Deployment Status properties are as follows:
+
+- Deployment Type: The type of deployment for which you want to retrieve information.
+The options are:
     - Application
     - Program
     - Task Sequence
     - Software Update
 - Filters: Filters available are dependent on the type of deployment selected. Filters modify the query sent to Configuration Manager so that the data returned to Orchestrator is already limited to desired results. This improves performance over returning all data and filtering at the Orchestrator server.
 
-To add new filter criteria:
+To add new filter criteria, follow these steps:
 
 1. Select **Add** and select the property on which to filter.
 2. Select a **Relation** and then enter a value for the filter.
@@ -47,8 +50,7 @@ To add new filter criteria:
 
 ## Get Deployment Status published data
 
-The following values are published in addition to the input values
-above:
+The following values are published in addition to the input values above:
 
 |Element|Description|
 |---|---|
@@ -56,126 +58,102 @@ above:
 |Result Count|The number of values returned by the query. |
 
 The following list describes the Published Data for the available
-Deployment Types.
+Deployment types.
 
-## Program or task sequence
-
-- AdvertisementID                   ID of the advertisement (deployment)
-- LastAcceptanceMessageID           Last acceptance status message ID
-- LastAcceptanceMessageIDName       Short description of the last acceptance status message
-- LastAcceptanceMessageIDSeverity
-    - Error: 3221225472
-    - Warning: 2147483648
-    - Informational: 1073741824
-- LastAcceptanceState               Numeric category of the last acceptance status message
-- LastAcceptanceStateName           Short description of the acceptance category
-- LastAcceptanceStatusTime          Date and time, in Universal Coordinated Time (UTC), when the last acceptance message was generated
-- LastExecutionContext              User context (account) under which the program ran
-- LastExecutionResult               Last string returned by a status Management Information Format (MIF) file (messages 10007 and 10009) or an error return code (10006)
-- LastState                         Numeric category of the last delivery status message
-- LastStateName                     Short description of the delivery category, including:
-    - Accepted â€“ No Further Status
-    - Succeeded
-    - Failed
-    - Waiting
-    - No Status
-- LastStatusMessageID               Last delivery status message ID
-- LastStatusMessageIDName           Short description of the last delivery status message.
-- LastStatusMessageIDSeverity
-    - Error: 3221225472
-    - Warning: 2147483648
-    - Informational: 1073741824
-- LastStatusTime                    Date and time, in Universal Coordinated Time (UTC), when the last delivery message was generated
-- ResourceID                        Resource ID of the device
-
-## Application
-
-- AppCI                       Application CI
-- AppName                     The name of the application
-- AppStatusType               App status type
-- AssignmentID                ID of the advertisement (deployment)
-- AssignmentUniqueID          GUID of the application
-- CollectionID                ID of the collection this resource belongs to
-- CollectionName              The name of the collection
-- ComplianceState             The compliance state for the configuration item.
-- DTCI                        The ID of the Deployment Type used in this deployment
-- DTModelID                   The ID of the Deployment Type Model
-- DTName                      The name of the Deployment Type used for this deployment
-- DTResultID                  Deployment Type Result ID
-- DeploymentIntent            0 = Required, 1 = Available
-- EnforcementState            The enforcement state. Possible values are:
-    - Enforcement State Unknown
-    - Enforcement Started
-    - Enforcement waiting for content
-    - Waiting for another installation to complete
-    - Waiting for maintenance window before installing
-    - Restart required before installing
-    - General failure
-    - Pending installation
-    - Installing update
-    - Pending system restart
-    - Successfully installed update
-    - Failed to install update
-    - Downloading update
-    - Downloaded update
-    - Failed to download update
-- ExtendedInfoDescriptionID   Extended information description ID
-- ExtendedInfoID              Extended information ID
-- IsMachineAssignedToUser     True or False. True if the machine is assigned to a user.
-- IsMachineChangesPersisted   True or False. True if the virtual machine changes are persisted.
-- IsVM                        True or False. True if this is a virtual machine.
-- MachineID                   Resource ID of the device
-- MachineName                 Name of the device
-- PolicyModelID               Policy model ID
-- Revision                    Revision number of the deployment
-- StartTime                   Deployment time
-- StatusType                  Status type:
-    - Success
-    - In Progress
-    - Unknown
-    - Error
-- Technology                  The deployment technology type, such as:
-    - Windows Installer
-    - App-V
-    - Script
-    - Nokia
-- UpdateState                 Update State
-- UserName                    User name
-- VMHostName                  If the device is a virtual machine, the name of the host for the VM
-
-## Software update
+## [Program or task sequence](#tab/program-or-task-sequence)
 
 |Element|Description|
 |---|---|
-|AssignmentID|ID of the advertisement (deployment)|
-|AssignmentName|Name of the advertisement (deployment)|
-|AssignmentUniqueID|GUID of the application|
-|CollectionID|ID of the collection this resource belongs to|
-|CollectionName|The name of the collection|
-|DeviceName|Name of the device where the update is targeted|
-|IsCompliant|True or False|
+|AdvertisementID|ID of the advertisement (deployment). |
+|LastAcceptanceMessageID|Last acceptance status message ID. |
+|LastAcceptanceMessageIDName|Short description of the last acceptance status message.|
+|LastAcceptanceMessageIDSeverity|<ul><li> Error: 3221225472  <li> Warning: 2147483648  <li> Informational: 1073741824 </ul>|
+|LastAcceptanceState|Numeric category of the last acceptance status message.|
+|LastAcceptanceStateName|Short description of the acceptance category.|
+|LastAcceptanceStatus|TimeDate and time, in Universal Coordinated Time (UTC), when the last acceptance message was generated.|
+|LastExecutionContext|User context (account) under which the program ran.|
+|LastExecutionResult|Last string returned by a status Management Information Format (MIF) file (messages 10007 and 10009) or an error return code (10006).|
+|LastState|Numeric category of the last delivery status message.|
+|LastStateName|Short description of the delivery category, including: <ul><li> Accepted â€“ No Further Status <li> Succeeded <li> Failed <li> Waiting <li> No Status </ul>|
+|LastStatusMessageID|Last delivery status message ID.|
+|LastStatusMessageIDName|Short description of the last delivery status message.|
+|LastStatusMessageIDSeverity|<ul><li> Error: 3221225472<br>  <li> Warning: 2147483648<br>  <li> Informational: 1073741824 </ul>|
+|LastStatusTime|Date and time, in Universal Coordinated Time (UTC), when the last delivery message was generated.|
+|ResourceID|Resource ID of the device.|
+                      
+
+## [Application](#tab/application)
+
+|Element|Description|
+|---|---|
+|AppCI|Application CI.|
+|AppName|Name of the application.|
+|AppStatusType|App status type.|
+|Assignment ID|ID of the advertisement (deployment).|
+|AssignmentUniqueID|GUID of the application.|
+|CollectionID|ID of the collection this resource belongs to.|
+|CollectionName|Name of the collection.|
+|ComplianceState|Compliance state for the configuration item.|
+|DTCI|ID of the Deployment Type used in this deployment.|
+|DTModelID|ID of the Deployment Type Model.|
+|DTName|Name of the Deployment Type used for this deployment.|
+|DTResultID|Deployment Type Result ID.|
+|DeploymentIntent|0 = Required, 1 = Available.|
+|EnforcementState|Enforcement state. Possible values are: <ul><li> Enforcement State Unknown <li> Enforcement Started <li> Enforcement waiting for content <li> Waiting for another installation to complete <li> Waiting for maintenance window before installing <li> Restart required before installing <li> General failure <li> Pending installation <li> Installing update <li> Pending system restart <li> Successfully installed update <li> Failed to install update <li> Downloading update <li> Downloaded update <li> Failed to download update </ul>|
+|ExtendedInfoDescriptionID|Extended information description ID.|
+|ExtendedInfoID|Extended information ID.|
 |IsMachineAssignedToUser|True or False. True if the machine is assigned to a user.|
 |IsMachineChangesPersisted|True or False. True if the virtual machine changes are persisted.|
 |IsVM|True or False. True if this is a virtual machine.|
-|LastComplianceMessageDesc|Last Compliance Message Description|
-|LastComplianceMessageID|Last Compliance Message ID|
-|LastComplianceMessageTime|Last Compliance Message Time|
-|LastEnforcementErrorCode|Last Enforcement Error Code|
-|LastEnforcementErrorID |Last Enforcement Error ID|
-|LastEnforcementErrorTime|Last Enforcement Error Time|
-|LastEnforcementMessageDesc|Last Enforcement Message Description|
-|LastEnforcementMessageID|Last Enforcement Message ID|
-|LastEnforcementMessageTime|Last Enforcement Message Time|
-|Resource ID |Resource ID of the device|
-|StatusDescription|Status description|
+|MachineID|Resource ID of the device.|
+|MachineName|Name of the device.|
+|PolicyModelID|Policy model ID.|
+|Revision|Revision number of the deployment.|
+|StartTime|Time of the deployment.|
+|StatusType|Status type: <ul><li> Success <li> In Progress <li> Unknown <li> Error </ul>|
+|Technology|The deployment technology type, such as: <ul><li> Windows Installer <li> App-V <li> Script <li> Nokia </ul>|
+|UpdateState|Status of the update.|
+|UserName|Name of the user.|
+|VMHostName|If the device is a virtual machine, the name of the host for the VM.|
+
+
+## [Software update](#tab/software-update)
+
+|Element|Description|
+|---|---|
+|AssignmentID|ID of the advertisement (deployment).|
+|AssignmentName|Name of the advertisement (deployment).|
+|AssignmentUniqueID|GUID of the application.|
+|CollectionID|ID of the collection this resource belongs to.|
+|CollectionName|Name of the collection.|
+|DeviceName|Name of the device where the update is targeted.|
+|IsCompliant|True or False.|
+|IsMachineAssignedToUser|True or False. True if the machine is assigned to a user.|
+|IsMachineChangesPersisted|True or False. True if the virtual machine changes are persisted.|
+|IsVM|True or False. True if this is a virtual machine.|
+|LastComplianceMessageDesc|Last compliance message description.|
+|LastComplianceMessageID|Last compliance message ID.|
+|LastComplianceMessageTime|Last compliance message time.|
+|LastEnforcementErrorCode|Last enforcement error code.|
+|LastEnforcementErrorID |Last enforcement error ID.|
+|LastEnforcementErrorTime|Last enforcement error time.|
+|LastEnforcementMessageDesc|Last enforcement message description.|
+|LastEnforcementMessageID|Last enforcement message ID.|
+|LastEnforcementMessageTime|Last enforcement message time.|
+|Resource ID|Resource ID of the device.|
+|StatusDescription|Description of the status.|
 |StatusEnforcementState|Additional enforcement state for progress and error status (0 for others).|
-|StatusErrorCode |Additional error code for error status (0 for others)|
-|StatusTime |Status time|
-|StatusType |Status type|
-|UserID |User ID|
-|VMHostName|If the device is a virtual machine, the name of the host for the VM|
+|StatusErrorCode|Additional error code for error status (0 for others).|
+|StatusTime|Time of the status.|
+|StatusType|Type of status.|
+|UserID |ID of the user.|
+|VMHostName|If the device is a virtual machine, the name of the host for the VM.|
+
+---
 
 ## Configure the Get Deployment Status activity
+
+To configure the Get Deployment Status activity, follow these steps:
 
 1. From the **Activities** pane, drag a **Get Deployment Status**
     activity to the active runbook.

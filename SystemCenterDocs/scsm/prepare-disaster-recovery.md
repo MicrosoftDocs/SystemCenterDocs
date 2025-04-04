@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/03/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -36,7 +36,7 @@ When you deploy Service Manager, an encryption key is created and stored in the 
 
  In addition, the computer name of the management server and Self-Service Portal is stored in the associated databases. Regardless of whether you encounter a software or hardware failure of a management server or Self-Service Portal, your recovery process is based on restoring a computer that has the same computer name as the computer that failed.  
 
- The steps for recovering from a management server failure are as follows:  
+ To recover from a management server failure, follow these steps:  
 
 1. Restore the encryption keys before you run Setup, and install the new management servers.  
 2. Install the new management server on a computer that has the same name as the original computer.  
@@ -51,6 +51,8 @@ Your disaster recovery strategy for Service Manager depends on backing up the en
 You use the Encryption Key Backup or Restore Wizard to back up encryption keys on the management servers and Self-Service Portal. This wizard is located on the Service Manager installation media in the Tools\\SecureStorageBackup folder.  
 
 ### Back up the encryption key  
+
+To back up the encryption key, follow these steps:
 
 1. Sign in to the computer that hosts the Service Manager management server of data warehouse management server by using an account that is a member of the Administrators group.  
 2. In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.  
@@ -98,6 +100,8 @@ You can use the following procedure as part of your disaster recovery preparatio
 - ReportServer  
 
 #### Start the SQL Server Script wizard
+
+To start the SQL Server Script wizard, follow these steps:
 
 1. Using an account with Administrator privileges, sign in to the computer that hosts the Service Manager or data warehouse database.  
 2. On the Windows desktop, select **Start**, point to **Programs**, point to the Microsoft SQL Server version installed on your computer, and select **SQL Server Management Studio**.  

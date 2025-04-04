@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/03/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -29,6 +29,8 @@ When a management pack in Service Manager contains base definitions that other m
 
 ## Seal a management pack
 
+To seal a management pack, follow these steps:
+
 1. Create a .snk key file that contains a public\/private key pair.  
 
 2. In the Service Manager Authoring Tool, in **Management Pack Explorer**, right\-click the management pack that you want to seal, and select **Seal Management Pack**.  
@@ -39,4 +41,4 @@ When a management pack in Service Manager contains base definitions that other m
 
 ## Next steps
 
-- [Bundle management packs and resource files](bundle-mps.md).
+[Bundle management packs and resource files](bundle-mps.md).

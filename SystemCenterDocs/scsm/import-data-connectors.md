@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 04/03/2025
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
@@ -24,10 +24,10 @@ Many of the configuration items that are found in the Service Manager database a
 If you're creating a new connector to replace an existing connector, create the new connector first, and then synchronize the new connector before deleting the old connector.
 
 > [!TIP]
-> ![PowerShell symbol](./media/import-data-connectors/pssymbol.png)You can use a Windows PowerShell command to remove a connector from Service Manager. For more information, see [Remove-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316239(v=sc.20)).
+> ![PowerShell symbol](./media/import-data-connectors/pssymbol.png) You can use a Windows PowerShell command to remove a connector from Service Manager. For more information, see [Remove-SCSMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316239(v=sc.20)).
 
 ## Next steps
 
-- Learn how to [import data from Active Directory Domain Services](import-data-ads.md).
-- Learn how to [import data and alerts from Operations Manager](import-data-om.md).
-- Learn how to [import data from Configuration Manager](import-data-cm.md).
+- [Import data from Active Directory Domain Services](import-data-ads.md).
+- [Import data and alerts from Operations Manager](import-data-om.md).
+- [Import data from Configuration Manager](import-data-cm.md).
