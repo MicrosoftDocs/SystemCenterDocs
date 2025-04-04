@@ -27,7 +27,7 @@ This article describes how to install the System Center Virtual Machine Manager 
   - [Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/download-system-center-2025?msockid=0c55acf0521869ad1f07bf4d534a68ab).
   - [Downloads & Keys - Visual Studio Subscriptions](https://my.visualstudio.com/Downloads?q=System%20Center%202025).
   - [Evaluation (VHDX) from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=106280).
-  - Any other procurement channels such as Microsoft Admin Center or from Microsoft Partners.
+  - Any other procurement channels such as Microsoft Admin Center or from Microsoft partners.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
@@ -35,7 +35,7 @@ This article describes how to install the System Center Virtual Machine Manager 
   - [Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/download-system-center-2022?msockid=0c55acf0521869ad1f07bf4d534a68ab).
   - [Downloads & Keys - Visual Studio Subscriptions](https://my.visualstudio.com/Downloads?q=System%20Center%202022).
   - [Evaluation (VHDX) from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=104040&msockid=0c55acf0521869ad1f07bf4d534a68ab).
-  - Any other procurement channels such as Microsoft Admin Center or from Microsoft Partners.
+  - Any other procurement channels such as Microsoft Admin Center or from Microsoft partners.
 ::: moniker-end
 
 
