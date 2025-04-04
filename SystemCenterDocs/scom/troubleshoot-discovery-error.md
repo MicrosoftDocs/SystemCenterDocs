@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Troubleshoot discovery error - Azure Linux not supported
-description: This article describes the workaround for discovery error.
+description: This articles describes how to troubleshoot a discovery error for any Linux VMs deployed in Azure.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -12,6 +12,8 @@ ms.topic: article
 ---
 
 # Troubleshoot discovery error - Azure Linux not supported
+
+This articles describes how to troubleshoot a discovery error for any Linux VMs deployed in Azure.
 
 **Issue**: You may encounter a discovery error Azure Linux not supported for any Linux VMs deployed in Azure.
 
