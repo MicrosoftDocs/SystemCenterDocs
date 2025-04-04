@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Supported Linux operating system versions
-description: This article lists the supported versions of Linux operating system for System Center Operations Manager.
+title: Troubleshoot discovery error - Azure Linux not supported
+description: This article describes the workaround for discovery error.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
