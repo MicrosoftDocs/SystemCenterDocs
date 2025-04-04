@@ -9,11 +9,10 @@ ms.date: 01/29/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
+monikerRange: '<=sc-om-2019'
 ---
 
 # Supported UNIX operating system versions
-
-The following tables describe the required UNIX operating systems and package dependencies for System Center - Operations Manager.
 
 ::: moniker range="< sc-om-2022"
 
@@ -31,11 +30,17 @@ The following tables describe the required UNIX operating systems and package de
 
 ::: moniker range="sc-om-2019"
 
+
+The following tables describe the required UNIX operating systems and package dependencies for System Center - Operations Manager.
+
 [!INCLUDE [supported-crossplat-os-2019.md](../includes/supported-crossplat-unix-os-2019.md)]
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
+
+
+The following tables describe the required UNIX operating systems and package dependencies for System Center - Operations Manager.
 
 [!INCLUDE [supported-crossplat-os-2016.md](../includes/supported-crossplat-unix-os-2016.md)]
 
