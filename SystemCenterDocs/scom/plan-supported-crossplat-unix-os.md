@@ -9,7 +9,6 @@ ms.date: 01/29/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
-monikerRange: '<=sc-om-2019'
 ---
 
 # Supported UNIX operating system versions
