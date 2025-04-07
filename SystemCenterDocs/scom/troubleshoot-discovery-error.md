@@ -1,25 +1,32 @@
 ---
 ms.assetid: 
-title: Troubleshoot discovery error - Azure Linux not supported
-description: This article describes how to troubleshoot a discovery error for any Linux VMs deployed in Azure.
+title: Troubleshoot discovery error - Azure Linux and Arc Linux machines are unsupported
+description: This article describes how to resolve an error indicating Azure Linux is unsupported in System Center Operations Manager 2025.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/04/2025
+ms.date: 07/04/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Troubleshoot discovery error - Azure Linux not supported
+# Troubleshoot discovery error - Azure Linux and Arc Linux machines are unsupported
 
-This article describes how to troubleshoot a discovery error for any Linux VMs deployed in Azure.
+This article describes how to resolve an error indicating Azure Linux is unsupported in System Center Operations Manager 2025.
 
-**Issue**: You may encounter a discovery error Azure Linux not supported for any Linux VMs deployed in Azure.
+**Issue**: In System Center Operations Manager 2025, you may encounter an error when you attemp to discover Linux machines running in Azure. 
+
+Error message - **Auzre Linux and Arc Linux Machines are unsupported**.
+
+>[!NOTE]
+> If you encounter this error in Azure Monitor SCOM Managed Instance, see [Monitor Linux machines](/azure/azure-monitor/scom-manage-instance/monitor-linux-machines).
 
 **Workaround**:
 
-Copy the following script and replace with the contents of System Center Operations Manager 2025 *GetOSVersion.sh* file.
+To resolve this error, do the following on all Management Servers in the Linux Resource Pools: 
+
+1. Copy the following script and replace with the contents of the *GetOSVersion.sh* file located in the UnixAgents directory - `C:\Program Files\Microsoft System Center\ Operations Manager\Server\AgentManagement\UnixAgents\`.
 
 ```
 Hostname=`uname -n`
@@ -304,3 +311,5 @@ fi
 ## Format in XML ouput readable by OpsMgr
 echo "<DiscoveredOS><Hostname>${Hostname}</Hostname><OSName>${OSName}</OSName><OSAlias>${OSAlias}</OSAlias><Version>${Version}</Version><Arch>${Arch}</Arch><IsLinux>${IsLinux}</IsLinux></DiscoveredOS>"
 ```
+
+2. Restart the Operations Manager console and reattempt to discover the Linux machines running in Azure. 

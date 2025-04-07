@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux operating system
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/04/2025
+ms.date: 07/04/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
