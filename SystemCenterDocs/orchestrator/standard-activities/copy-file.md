@@ -2,7 +2,7 @@
 title: Copy File
 description: This article describes the functionality of Copy File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 03/18/2025
+ms.date: 04/07/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -81,9 +81,3 @@ The Copy File activity copies a file from one directory to another. You can also
 |Name and path of the destination file|The name and path that the file was copied to.|  
 |Name and path of the origin file|The name and path that the file was copied from.|  
 |Include sub-folders|Indicates whether the Include sub-folders checkbox was selected.|
-
-## Related content
-
-- [Get File Status](get-file-status.md).
-- [Monitor File](monitor-file.md).
-- [Print File](print-file.md).
