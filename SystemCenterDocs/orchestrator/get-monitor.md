@@ -2,7 +2,7 @@
 title: Get Monitor
 description: The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 02/28/2025
+ms.date: 04/07/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -21,7 +21,7 @@ The Get Monitor activity is used in a runbook to retrieve monitoring activities 
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all the data from the required and optional properties into published data.
 
-## Get Monitor Filters
+## Get Monitor filters
 
 The table list the elements data for this activity:
 
@@ -68,7 +68,3 @@ The table list the elements data for this activity:
 | StateLastModified   | The time that the alert state was last changed.   |
 | Username   | The user name that was used to access the Operations Manager server.   |
 
-## Next steps
-
-- [Monitor Alert](monitor-alert.md)
-- [Monitor State](monitor-state.md)
