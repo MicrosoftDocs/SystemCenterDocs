@@ -19,6 +19,8 @@ This article describes how to resolve an error indicating Azure Linux is unsuppo
 
 Error message - **Auzre Linux and Arc Linux Machines are unsupported**.
 
+:::image type="content" source="media/troubleshoot-discovery-error/error-message.png" alt-text="Screenshot of error message.":::
+
 >[!NOTE]
 > If you encounter this error in Azure Monitor SCOM Managed Instance, see [Monitor Linux machines](/azure/azure-monitor/scom-manage-instance/monitor-linux-machines).
 
