@@ -5,7 +5,7 @@ description: This article describes the procedure on how to update the network c
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/24/2024
+ms.date: 04/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -19,9 +19,9 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
   Network controller (NC) uses a certificate for Northbound communication with REST clients, such as VMM, and Southbound communication with Hyper-V hosts and software load balancers.
 
-  You can change or update this certificate in the following scenarios after you deploy the NC.
+  You can change or update this certificate in the following scenarios after you deploy the NC:
 
-- The certificate has expired
+- The certificate has expired.
 - You want to move from a self-signed certificate to a certificate that is issued by a certificate authority (CA).
 
   > [!NOTE]
@@ -29,9 +29,11 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 ## Before you start
 
- Ensure that you create a new SSL certificate with the existing network controller's REST name. [Learn more](sdn-controller.md#set-up-the-security-certificates).
+ Before you start, ensure that you create a new SSL certificate with the existing network controller's REST name. [Learn more](sdn-controller.md#set-up-the-security-certificates).
 
 ## Update the server certificate
+
+To update the server certificate, follow these steps
 
 1. If the certificate is self-signed, do the following:
 
@@ -120,4 +122,5 @@ ms.custom: UpdateFrequency3, engagement-fy24
     You can now remove the previous certificate from the NC nodes.
 
     ## Next steps
+
     [Validate the NC deployment](sdn-controller.md#validate-the-deployment) to ensure that the deployment is successful.

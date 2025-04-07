@@ -5,7 +5,7 @@ description: This article describes how to use PowerShell to deploy SDN componen
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/24/2024
+ms.date: 04/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -31,6 +31,8 @@ There are a couple of ways to deploy these components:
 
 ## Advantages of PowerShell deployment
 
+The advantages of PowerShell deployment are as follows:
+
 - Deploy all SDN components with PowerShell scripts.
 - The use of a script reduces the introduction of manual errors and save significant deployment time.
 - If you deploy using the script, you can modify settings in the VMM console afterwards just as you would if you deploy the SDN components manually.
@@ -41,6 +43,8 @@ There are a couple of ways to deploy these components:
 
 ## Before you start
 
+Here are some considerations before you start setting up SDN components in the VMM fabric using PowerShell:
+
 - SET-enabled switch deployment isn't currently supported in a PowerShell deployment. You need to deploy the SET-enabled switch out-of-band, and then specify the name of the switch during deployment.
 - Check if you have the prerequisites for SDN component deployment in place:
     - [Network controller prerequisites](sdn-controller.md#before-you-start)
@@ -49,7 +53,7 @@ There are a couple of ways to deploy these components:
 
 ## Deployment steps
 
-Here's what you need to do to set up SDN components in VMM with PowerShell.
+Here's what you need to do to set up SDN components in VMM with PowerShell:
 
 
 1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing, and others. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
@@ -70,4 +74,4 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 
 ## Next steps
 
-[Configure hosts and physical network infrastructure for SDN ](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
+[Configure hosts and physical network infrastructure for SDN](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
