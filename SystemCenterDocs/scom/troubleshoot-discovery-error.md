@@ -15,7 +15,7 @@ ms.topic: article
 
 This article describes how to resolve an error indicating Azure Linux is unsupported in System Center Operations Manager 2025.
 
-**Issue**: In System Center Operations Manager 2025, you may encounter an error when you attemp to discover Linux machines running in Azure. 
+**Issue**: In System Center Operations Manager 2025, you may encounter an error when you attempt to discover Linux machines running in Azure. 
 
 Error message - **Auzre Linux and Arc Linux Machines are unsupported**.
 
