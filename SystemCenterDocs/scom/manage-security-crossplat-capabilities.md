@@ -5,7 +5,7 @@ description: This article describes the capabilities for privileged and unprivil
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2025
+ms.date: 04/07/2025
 ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager
@@ -37,8 +37,8 @@ The Operations Manager Linux/UNIX agent uses the standard PAM (Pluggable Authent
 
 However, the PAM authentication that is used by the Operations Manager agent doesn't require that the user name have an interactive shell associated with it.  If your Linux/UNIX account management practices include removing the interactive shell as a way to pseudo-disable an account, such removal doesn't prevent the account from being used to connect to the Operations Manager agent and perform monitoring functions.  In these cases, use additional PAM configuration to ensure these pseudo-disabled accounts don't authenticate to the Operations Manager agent.
 
-## Related content
+## Next steps
 
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials you must have to access UNIX and Linux computers](plan-security-crossplat-credentials.md).
-- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [Configure sudo elevation and SSH keys](manage-security-create-crossplat-sudo-sshkeys.md).
+- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to configure sudo elevation and SSH keys](manage-security-create-crossplat-sudo-sshkeys.md).
 - If you need to reconfigure Operations Manager to use a different cipher, review the [Configure SSL ciphers](manage-security-crossplat-config-sslcipher.md).
