@@ -5,7 +5,7 @@ description: This article provides an overview of private cloud deployment in VM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 02/28/2025
+ms.date: 04/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -37,6 +37,6 @@ You can create a private cloud from either:
 
 You can deploy a private cloud by configuring fabric resources, setting up library paths for private cloud users, and setting the cloud capacity.
 
-## Next step
+## Next steps
 
 [Create a private cloud in VMM](cloud-create.md).
