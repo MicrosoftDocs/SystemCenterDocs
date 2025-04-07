@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct disagg
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/18/2025
+ms.date: 04/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
 
 
 
-Read this article to set up a disaggregated cluster running Storage Spaces Direct (S2D) in System Center Virtual Machine Manager (VMM). For more information about S2D, see [Manage Storage Spaces Direct in VMM](s2d.md).
+Read this article to set up a disaggregated cluster running Storage Spaces Direct (S2D) in System Center Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
 
 You can deploy a disaggregated S2D cluster by provisioning a cluster running Hyper-V hosts, and a separate storage cluster running scale-out file server (SOFS) with S2D.
 
@@ -27,6 +27,7 @@ To enable S2D, go to **General Configuration** > **Specify the cluster name and 
 ![Screenshot of S2D enabled.](./media/s2d/s2d-enable.png)
 
 After you enable a disaggregated cluster with S2D, VMM does the following:
+
 1. The **File Server** role and the **Failover Clustering** features are enabled.
 2. Storage replica and data deduplication are enabled.
 3. The cluster is optionally validated and created.
@@ -50,7 +51,7 @@ To provision a SOFS cluster, follow these steps:
 4. In **Cluster Nodes**, define a list of computers to add to the cluster.
 5. In **Summary**, confirm the settings and then select **Finish**.
 
-If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. For more information about adding nodes to a SOFS, see [Manage scale-out file server (SOFS) in the VMM fabric](sofs.md).
+If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. [Learn more](sofs.md) about adding nodes to a SOFS.
 
 
 ### Add an existing SOFS cluster with S2D enabled
@@ -79,12 +80,12 @@ To manage the pool and create file shares, follow these steps:
 
 ## Allocate the storage in Hyper-V
 
-To allocate the storage in Hyper-V, follow these steps:
+To allocate the storage in Hyper-V, follow this step:
 
 1.	In the Hyper-V host properties > **Storage**, specify the file share path. Now, you can create VMs that use this file share.
 
 
-## Related content
+## Next steps
 
 
 - [Provision VMs](provision-vms.md).
