@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-management-automation
@@ -56,4 +56,4 @@ This article provides details of the system requirements for System Center 2016 
 
 ## Next steps
 
-- [Deploy Service Management Automation](../sma/deploy.md).
+[Deploy Service Management Automation](../sma/deploy.md).

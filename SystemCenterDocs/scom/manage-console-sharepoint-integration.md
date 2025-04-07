@@ -4,7 +4,7 @@ description: This article describes how to deploy the Operations Manager Web con
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/07/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -24,6 +24,8 @@ Use the following procedures to configure dashboards on a SharePoint page. This 
 > Silverlight-based dashboards made accessible from the SharePoint web part can only be viewed using the Internet Explorer.
 
 ## Configure the web part to connect to a Web console  
+
+To configure the web part to connect to a Web console, follow these steps:
 
 1. Open an Internet browser, and then navigate to the SharePoint server.  
 
@@ -53,6 +55,6 @@ Use the following procedures to configure dashboards on a SharePoint page. This 
 
 ## Next steps
 
-- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).
+- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Use Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).
 
-- To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](manage-reports-installed-during-setup.md).
+- To learn how you can use reports in Operations Manager to view historical operational data, see [Use reports in Operations Manager](manage-reports-installed-during-setup.md).

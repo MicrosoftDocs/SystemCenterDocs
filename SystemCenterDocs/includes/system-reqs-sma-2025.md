@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 04/04/2022
+ms.date: 04/07/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:  
@@ -19,31 +19,33 @@ The following sections describe the minimum hardware and software configurations
 
 ## Hardware requirements
 
-The following configurations should be used.
+The following configurations should be used:
 
 |Performance component|Recommendation|
 |-------------------------|------------------|
-|Virtual machines|Three, each with a runbook worker and web service installed<br /><br />Load-balanced incoming traffic<br /><br />Minimum of two cores and 4 GB of RAM for each virtual machine<br /><br />60 GB of available disk space|
+|Virtual machines|<ul> <li> Three, each with a runbook worker and web service installed.<li>Load-balanced incoming traffic.<li>Minimum of two cores and 4 GB of RAM for each virtual machine.<li>60 GB of available disk space. </ul>|
 |SQL Server|One computer with 8 GB of RAM and eight cores **Note:** One month of data under heavy load (12 jobs per minute for a month) results in 20 GB of disk space usage. Job purging should be used to keep this usage from growing beyond this amount.|
 
 ## Software requirements
 
-The following software must be installed for each role.
+The following software must be installed for each role:
 
 |Role|Prerequisites|
 |--------|-----------------|
-|Runbook worker|Windows Server 2025 <br /><br />Windows PowerShell 4.0 or above|
-|Automation web service|Windows Server 2025<br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
-|Windows PowerShell module|Windows PowerShell 4.0 or above|
+|Runbook worker|<ul> <li> Windows Server 2025. <li>Windows PowerShell 4.0 or above. </ul>|
+|Automation web service|<ul> <li>Windows Server 2025.<li>Internet Information Services (IIS) 7.5 or above (hosts the web service). <li>IIS Basic Authentication. <li>IIS Windows Authentication. <li>IIS URL Authorization. <li>ASP.NET 4.5. <li>.NET Framework 3.5 (for the Setup program). <li>.NET Framework 4.5<li>WCF HTTP Activation. </ul>|
+|Windows PowerShell module|Windows PowerShell 4.0 or above.|
 
 **SQL version** | **Supported**
 --- | ---
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
 
-Before installing the web service, ensure you've installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2025:
+Before installing the web service, ensure you've installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2025.
 
 #### Install .NET Framework 4.5 and HTTP Activation
+
+To install .NET Framework 4.5 and HTTP Activation, follow these steps:
 
 1. On the Windows **Start** screen, select the **Server Manager** tile.
 
@@ -69,7 +71,7 @@ Service Management Automation was tested by Microsoft by installing and using it
 
 ## Security Requirements
 
-The following ports must be opened for each role.
+The following ports must be opened for each role:
 
 |Role|Requirement|
 |--------|---------------|
@@ -77,7 +79,7 @@ The following ports must be opened for each role.
 |Automation web service|Default value: 9090. Configurable at install time port defaults to 9090. The installation program for Service Management Automation automatically opens the web service port on the local firewall.|
 |Windows PowerShell module|None|
 
-The following certificates are required for each component.
+The following certificates are required for each component:
 
 |Role|Requirement|
 |--------|---------------|
