@@ -38,10 +38,10 @@ This article describes how to install the System Center Virtual Machine Manager 
 ::: moniker-end
 - You can only install one version of the console on a single machine.
 ::: moniker range="sc-vmm-2025"
-- The VMM Console is installed with the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2025&preserve-view=true#before-you-start).
+- The VMM Console is installed using the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2025&preserve-view=true#before-you-start).
 ::: moniker-end
 ::: moniker range="sc-vmm-2022"
-- The VMM Console is installed with the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2022&preserve-view=true#before-you-start).
+- The VMM Console is installed using the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2022&preserve-view=true#before-you-start).
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
