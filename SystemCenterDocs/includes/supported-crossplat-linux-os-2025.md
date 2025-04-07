@@ -74,5 +74,5 @@ Supported versions:
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
 
 >[!NOTE]
->If you encounter a discovery error **Azure Linux and Arc Linux Machines are unsupported** for any Linux VMs deployed in Azure, see [Troubleshoot discovery error - Azure Linux not supported](/SystemCenterDocs/scom/troubleshoot-discovery-error.md).
+>If you encounter a discovery error **Azure Linux and Arc Linux Machines are unsupported** for any Linux VMs deployed in Azure, see [Troubleshoot discovery error - Azure Linux not supported](/system-center/scom/troubleshoot-discovery-error).
  
