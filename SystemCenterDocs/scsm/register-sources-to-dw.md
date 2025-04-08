@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/08/2025
 ms.subservice: service-manager
 ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -21,7 +21,7 @@ The data warehouse in Service Manager retrieves data from one or more data sourc
 
 Registering the data warehouse creates a relationship between the data warehouse server and the source system so that information can flow between them. In Service Manager, you can register to Service Manager, Operations Manager, and Configuration Manager directly. You can also use the updated software development kit (SDK) layer on top of the data warehouse, which enables you to push data into the data warehouse directly from other sources. For example, you might want to push data from your Human Resources computer system into the data warehouse.
 
-## Register the System Center data warehouse to Operations Manager
+## [Register the System Center data warehouse to Operations Manager](#tab/register-the-system-center-data-warehouse-to-operations-manager)
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse to Operations Manager and then validate the registration.
 
@@ -64,9 +64,9 @@ To register the data warehouse to Operations Manager, follow these steps:
 
 ### Validate the Operations Manager registration process
 
-- In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
+In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
 
-## Register the System Center data warehouse to Configuration Manager
+## [Register the System Center data warehouse to Configuration Manager](#tab/register-the-system-center-data-warehouse-to-configuration-manager)
 
 You can use the following steps in Service Manager to register Configuration Manager with the System Center Data Warehouse and then validate the registration.
 
@@ -107,11 +107,13 @@ To register Configuration Manager with the data warehouse, follow these steps:
 
 - In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Configuration Manager**. You might have to refresh your view to see the new data source.
 
-## Register the System Center data warehouse to a Service Manager source
+## [Register the System Center data warehouse to a Service Manager source](#tab/register-the-system-center-data-warehouse-to-a-service-manager-source)
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse with a Service Manager management group and then validate the registration. This makes it possible to host multiple Service Manager management groups in a single data warehouse.
 
 ### Register the data warehouse with another Service Manager management group
+
+To register the data warehouse with another Service Manager management group, follow these steps:
 
 1. By using an account that is a member of the Service Manager and data warehouse management administrators group, sign in to the computer that hosts the Service Manager console.
 
@@ -142,19 +144,23 @@ You can use the following procedures in Service Manager to register the System C
 
 ### Validate the  Service Manager registration process
 
-- In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
+In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
+
+---
 
 ## Manage data import jobs for Operations Manager and Configuration Manager
 
 You can use the following procedure to manage data warehouse data import jobs in Service Manager. Data import jobs are like other data warehouse jobs, and you can manage them with the Service Manager console and also with Windows PowerShell cmdlets. Methods of management include:
 
-- Revising the processing schedule to hourly, daily, or weekly
+- Revising the processing schedule to hourly, daily, or weekly.
 
-- Suspending a job
+- Suspending a job.
 
-- Resuming a suspended, or Not Started, job
+- Resuming a suspended, or Not Started job.
 
 ### Manage data import jobs and change a job schedule
+
+To manage data import jobs and change a job schedule, follow these steps:
 
 1. In the Service Manager console, select **Data Warehouse**, expand **Data Warehouse**, and select **Data Warehouse Jobs**.
 
@@ -168,23 +174,23 @@ You can use the following procedure to manage data warehouse data import jobs in
 
 This section describes steps you can take to troubleshoot System Center data warehouse errors in Service Manager.
 
-### Use the Operations Manager event log on the Data Warehouse server to troubleshoot errors
+### [Use the Operations Manager event log on the Data Warehouse server to troubleshoot errors](#tab/use-the-operations-manager-event-log-on-the-data-warehouse-server-to-troubleshoot-errors)
 
 Service Manager event logs are found in the Operations Manager event log. Evaluating events in the log is useful because most errors from the data warehouse are found in this event log. Events in the log are from two different sources: Deployment and Data Warehouse.
 
 Events with a source of **Deployment** are generated during management pack deployment, which includes report deployment or assembling the data warehouse; for example, by creating outriggers, dimensions, and fact tables. Errors in the event log include instructions about how to recover from the errors. For example, you might read instructions suggesting that you stop and then restart the Service Manager services. The three services on a data warehouse management server are:
 
-- System Center Data Access Service
+- System Center Data Access Service.
 
-- Microsoft Monitoring Agent
+- Microsoft Monitoring Agent.
 
-- System Center Management Configuration
+- System Center Management Configuration.
 
 When you start and stop Service Manager services, you must stop and start all three services.
 
 After the data warehouse is deployed, events are more likely to have a source of **Data Warehouse**. These events are created by jobs within the normal course of operations like extract, transform, and load (ETL) jobs; the MPSync job; and the DWMaintenance job.
 
-### Use the Service Manager console to troubleshoot errors
+### [Use the Service Manager console to troubleshoot errors](#tab/use-the-service-manager-console-to-troubleshoot-errors)
 
 In the Service Manager console, select **Data Warehouse Jobs** and you will see ETL job and MPSync job status. If your deployment was successful and your data warehouse is correctly registered to at least one Service Manager management group, you see at least five jobs. Every job should have the status **Running** or **Not Started**.
 
@@ -194,7 +200,7 @@ In the **Data Warehouse** workspace, you can select **Management Packs** in the 
 
 If your management pack has defined data warehouse-specific elements, such as outriggers, dimensions, fact tables, or reports, that management pack must be successfully deployed before the new tables and reports will be ready to use.
 
-### Use Windows PowerShell to troubleshoot errors
+### [Use Windows PowerShell to troubleshoot errors](#use-windows-powershell-to-troubleshoot-errors)
 
 The Windows PowerShell cmdlets in the following table provide detailed information about the data warehouse jobs.
 
@@ -204,6 +210,8 @@ The Windows PowerShell cmdlets in the following table provide detailed informati
 |Get-SCDWJob|This command lists the data warehouse job status of the current batch. Using the command, you can check whether the jobs are enabled or not, which jobs are running, and when they started.<br /><br />When the MPSync or DWMaintenance jobs start, they disable all of the ETL jobs. You will see the **Is Enabled** column set to **False** for each of the ETL jobs. This means that even if the ETL job status shows it's running, it actually isn't running. When the MPSync or DWMaintenance job completes, the ETL jobs are automatically enabled and resume processing.<br /><br />Jobs normally have the **Not Started** status, unless the previous batch has completed. If you prefer, you can use the **Get-SCDWJob** command to view the last few batches of a specific job.|
 |Get-SCDWJob -JobName *Specific job name* -NumberOfBatches *number* |Use this command to see the latest job, specified by *Specific job name*, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
 |Get-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is useful when you see job failures and you want to find out what caused the failure.|
+
+---
 
 ### Troubleshoot common data warehouse issues
 
@@ -219,41 +227,41 @@ Other aspects of the data warehouse deployment might appear to have gone smoothl
 
 **Troubleshooting Steps**
 
-To troubleshoot this problem, complete the following steps.
+To troubleshoot this problem, follow these steps:
 
-Step 1: Check the deployment status of your management packs:
+1. Check the deployment status of your management packs. To check the deployment status, do the following:
 
-1. In the Service Manager console, select **Data Warehouse**.
+    1. In the Service Manager console, select **Data Warehouse**.
 
-2. Select **Management Packs**, and in the search **Filter** box, enter **report**. This filters results to report-related management packs.
+    2. Select **Management Packs**, and in the search **Filter** box, enter **report**. This filters results to report-related management packs.
 
-3. Check the deployment status (last column) of the following management packs. None of the management packs should have a status of **Failed**.
+    3. Check the deployment status (last column) of the following management packs. None of the management packs should have a status of **Failed**.
 
-    - ServiceManager.ActivityManagement.Report.Library
+       - ServiceManager.ActivityManagement.Report.Library
 
-    - ServiceManager.ProblemManagement.Report.Library
+       - ServiceManager.ProblemManagement.Report.Library
 
-    - ServiceManager.IncidentManagement.Report.Libraryxxx
+       - ServiceManager.IncidentManagement.Report.Libraryxxx
 
-    - ServiceManager.ConfigurationManagement.Report.Library
+       - ServiceManager.ConfigurationManagement.Report.Library
 
-    - ServiceManager.ChangeManagement.Report.Library
+       - ServiceManager.ChangeManagement.Report.Library
 
-Step 2: Check the event log for error messages that mention the assembly Microsoft.EnterpriseManagement.Reporting.Code.dll file.
+2. Check the event log for error messages that mention the assembly Microsoft.EnterpriseManagement.Reporting.Code.dll file.
 
-If any of the above five management packs failed deployment:
+    If any of the above five management packs failed deployment, do the following:
 
-1. On the data warehouse management server, open the Operations Manager event log.
+    1. On the data warehouse management server, open the Operations Manager event log.
 
-2. Filter the events with **Event Sources** as **Deployment** and **Event Level** as **Error**.
+    2. Filter the events with **Event Sources** as **Deployment** and **Event Level** as **Error**.
 
-3. If there are error messages in the event log that indicate **cannot load Assembly Microsoft.EnterpriseManagement.Reporting.Code.dll**, review the following items:
+    3. If there are error messages in the event log that indicate **cannot load Assembly Microsoft.EnterpriseManagement.Reporting.Code.dll**, review the following items:
 
-    1. Your installation of SQL Server Reporting Services (SSRS) may be on a different server than the data warehouse management server.
+       1. Your installation of SQL Server Reporting Services (SSRS) may be on a different server than the data warehouse management server.
 
-    2. If your SSRS installation is on the same server as the data warehouse management server, restart the SSRS service.
+       2. If your SSRS installation is on the same server as the data warehouse management server, restart the SSRS service.
 
-4. Restart SSRS:
+    4. Restart SSRS:
 
     1. Sign in to the server where SSRS is installed.
 
@@ -265,18 +273,18 @@ If any of the above five management packs failed deployment:
 
     5. Select **Exit**.
 
-Step 3: Redeploy any failed report management packs:
+3. Redeploy any failed report management packs. To redeploy packs, do the following:
 
-1. In the Service Manager console, select **Data Warehouse**.
+    1. In the Service Manager console, select **Data Warehouse**.
 
-2. Select **Management Packs**, and then in the search filter, enter **report**.
+    2. Select **Management Packs**, and then in the search filter, enter **report**.
 
-3. For each of the management packs listed in step 1, in the **Tasks Pane**, select **Restart Deployment**.
+    3. For each of the management packs listed in step 1, in the **Tasks Pane**, select **Restart Deployment**.
 
     > [!NOTE]
     > If the deployment status of a management pack is listed as **Completed**, the **Restart Deployment** option is unavailable.
 
-After the deployment status of the report management packs has updated from **Failed** to **Completed**, open the Service Manager console. Reports should display in the **Reporting** workspace. You may have to restart the Service Manager console to view the reports because the console caches the list of reports.
+    After the deployment status of the report management packs has updated from **Failed** to **Completed**, open the Service Manager console. Reports should display in the **Reporting** workspace. You may have to restart the Service Manager console to view the reports because the console caches the list of reports.
 
 #### Jobs fail after importing a custom management pack
 
@@ -288,7 +296,7 @@ One or more data warehouse jobs start failing after importing a custom managemen
 
 To troubleshoot this problem, complete the following steps:
 
-1. Check the event log to ensure that the root cause is the custom management pack:
+1. Check the event log to ensure that the root cause is the custom management pack by following these steps:
 
     1. On data warehouse management server, open the Operations Manager event log.
 
@@ -306,7 +314,7 @@ To troubleshoot this problem, complete the following steps:
 
     4. After the MP Sync job is completed, resume the failed job either from the Service Manager console or with a Windows PowerShell cmdlet.
 
-3. Fix and reimport the custom management pack:
+3. Fix and reimport the custom management pack by following these steps:
 
     1. Remove the custom management pack and recover from the failure using step 2, shown previously.
 
@@ -354,13 +362,13 @@ Ensure that your management pack is synced to the data warehouse by completing t
 
 2. Select **Data Warehouse**.
 
-3. Select **Management Packs**, and then locate your management pack in the list of management packs. To do this, use the search feature by entering your management pack name in the search box. If you don't see your management pack:
+3. Select **Management Packs**, and then locate your management pack in the list of management packs. To do this, use the search feature by entering your management pack name in the search box. If you don't see your management pack, do the following:
 
     1. It might have failed to import into the data warehouse management server. Go to the data warehouse management server, open the Operations Manager event log and then filter the events with **Event Sources** as **OpsMgr SDK Service**.
 
     2. The MPSync job may not have run yet. It runs on a recurring schedule, which is, by default, once every hour. You can modify the schedule with Windows PowerShell. To speed up management pack synchronization, after you import your management pack you can manually resume the MPSync job, either from the Service Manager console or by using Windows PowerShell.
 
-Check the deployment status of your management pack:
+Check the deployment status of your management pack by following these steps:
 
 1. Open the Service Manager console.
 
@@ -438,4 +446,4 @@ If the job failure isn't related to the password, ensure that the Run As account
 
 ## Next steps
 
-- [Troubleshoot computer problems with tasks](troubleshoot-with-tasks.md).
+[Troubleshoot computer problems with tasks](troubleshoot-with-tasks.md).

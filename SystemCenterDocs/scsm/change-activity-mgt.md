@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 04/08/2025
 ms.subservice: service-manager
 ms.assetid: 399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
@@ -32,6 +32,8 @@ Change request templates store commonly used settings and apply the information 
 
 ### Create a messaging change request template
 
+To create a messaging change request template, follow these steps:
+
 1. In the Service Manager console, select **Library**.
 2. In the **Library** pane, select **Templates**.
 3. In the **Tasks** pane, under **Templates**, select **Create Template**.
@@ -55,7 +57,9 @@ Change request templates store commonly used settings and apply the information 
     For example, enter **Messaging Infrastructure Request Approval**. Select **Add** to add the user or group that will normally approve the change request.
 17. In each open form or dialog, select **OK**.
 
-### Create a priority-modifying template
+### [Create a priority-modifying template](#tab/create-a-priority-modifying-template)
+
+To create a priority-modifying template, follow these steps:
 
 1. In the Service Manager console, select **Library**.
 2. In the **Library** pane, select **Templates**.
@@ -69,17 +73,21 @@ Change request templates store commonly used settings and apply the information 
 9. In the **Change Request Template** form, on the **General** tab, in the **Priority** list, select **Low**.
 10. Select **OK**.
 
-### Validate template creation
+### [Validate template creation](#tab/validate-template-creation)
 
 - Verify that the new templates were created. For example, verify that **Changes to Messaging Infrastructure Template** and **Set Standard Change Requests to Low Priority** appear in the **Templates** view. You might have to press F5 to make the new change templates appear.
+
+---
 
 ## Create a manual activity template
 
 Use the following procedures to create a manual activity template and then validate it. Manual activity templates help ensure that all manual activities are assigned to the person who is the activity implementer. After you create the manual activity template, you create a workflow that applies the template. For more information about how to create a workflow, see [How to Configure Incident Workflows](./workflows.md).
 
-In the following procedure, you will create a manual activity template named **Set *named user* as the Activity Implementer**. This manual activity template is used in the [How to Configure Activity Management Workflows](#configure-activity-management-workflows) procedure.
+In the following procedure, you will create a manual activity template named **Set *named user* as the Activity Implementer**. This manual activity template is used in the [Configure Activity Management Workflows](#configure-activity-management-workflows) procedure.
 
-### Create a manual activity template
+### [Create a manual activity template](#tab/create-a-manual-activity-template)
+
+To create a manual activity template, follow these steps:
 
 1. In the Service Manager console, select **Library**.
 2. In the **Library** pane, select **Templates**.
@@ -91,9 +99,11 @@ In the following procedure, you will create a manual activity template named **S
 8. In the **Create Template** dialog, under **Management pack**, select **Service Manager Activity Management Configuration Library**, and select **OK**.
 9. In the **Manual Activity Template** form, on the **General** tab, select the ellipsis button (**...**) next to **Activity Implementer**, select a user, and select **OK**.
 
-### Validate that the template was created
+### [Validate that the template was created](#tab/validate-that-the-template-was-created)
 
-- In the **Templates** view, verify that the new template was created. You might have to press F5 to make the new manual activity template appear.
+In the **Templates** view, verify that the new template was created. You might have to press F5 to make the new manual activity template appear.
+
+---
 
 ## Configure general change settings
 
@@ -101,6 +111,8 @@ Use the following procedures to configure settings to specify change request pre
 
 > [!NOTE]
 > Revising the change request prefix doesn't affect existing change requests.
+
+### [Configure change settings](#tab/configure-change-settings)
 
 To configure general change settings, follow these steps:
 
@@ -114,10 +126,14 @@ To configure general change settings, follow these steps:
    - If you want to change the maximum size of files that you attach to a change request, change the default value in the **Maximum size (KB)** box. For example, enter **300**.
 6. Select **OK** to close the **Change Request Settings** dialog.
 
-### Validate change settings
+### [Validate change settings](#tab/validate-change-settings)
+
+To validate change settings, follow these steps:
 
 1. To validate changes to the prefix code, create a new change request, and verify that the change request IDs have the prefix that you specified.
 2. To validate changes to the attachment settings, open a change request, and attempt to add a file attachment that violates the settings that you specified.
+
+---
 
 ## Configure general activity settings
 
@@ -126,7 +142,9 @@ Use the following procedure to configure settings to specify activity prefixes w
 > [!NOTE]
 > Revising the activity request prefix doesn't affect the existing activity records.
 
-### Configure general activity settings
+### [Configure activity settings](#tab/configure-activity-settings)
+
+To configure general activity settings, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 2. In the **Administration** pane, expand **Administration**, and select **Settings**.
@@ -138,9 +156,11 @@ Use the following procedure to configure settings to specify activity prefixes w
    - If you want to change the review activity prefix code, change the default value in the **Review activity prefix** box. For example, change the value to **AR**.
 6. Select **OK** to close the **Activity Settings** dialog.
 
-### Validate activity setting changes
+### [Validate activity setting changes](#tab/validate-activity-setting-changes)
 
-- To validate changes to any prefix code, create a new change request, and then verify on the **Activities** tab that the activities have the new prefix that you specified.
+To validate changes to any prefix code, create a new change request, and then verify on the **Activities** tab that the activities have the new prefix that you specified.
+
+---
 
 ## Configure change management workflows
 
@@ -151,7 +171,9 @@ Before you can complete the steps in the following procedures, you've to create 
 - **Set Standard Change Requests to Low Priority**: For more information, see the procedure **To create a priority-modifying template** in [How to Create Change Request Templates](#create-change-request-templates).
 - **New Standard Change Request Received Template**: For more information, see the procedure **To create a notification template for change requests** in [How to Create Notification Templates](./notifications.md).
 
-### Create a workflow to set all standard change requests to low
+### [Create a workflow to set all standard change requests to low](#tab/create-a-workflow-to-set-all-standard-change-requests-to-low)
+
+To create a workflow to set all standard change requests to low, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 2. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
@@ -174,7 +196,9 @@ Before you can complete the steps in the following procedures, you've to create 
 19. On the **Completion** page, select **Close**.
 20. In the **Configure Workflows** dialog, select **OK**.
 
-### Validate workflow creation
+### [Validate workflow creation](#tab/validate-workflow-creation)
+
+To validate workflow creation, follow these steps:
 
 1. In the **Configuration** pane, select the **Change Request Event Workflow Configuration** template.
 2. In the **Tasks** pane, select **Configure Workflow Rules**.
@@ -182,18 +206,22 @@ Before you can complete the steps in the following procedures, you've to create 
 4. Optionally, you can create a new change request by using the **Standard Change Request** template to verify that the priority of new requests is set to Low.
 5. Notification email is sent to the user who created the change request.
 
+---
+
 ## Configure activity management workflows
 
 Use the following procedures to automatically assign all unassigned manual activities to a named user and then validate the creation of workflow.
 
 Before you can complete the steps in the following procedures, you've to create the following templates:
 
-- **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](#create-a-manual-activity-template).
-- **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](./notifications.md).
+- **Set *named user* as the Activity Implementer**: For more information, see [Create a Manual Activity Template](#create-a-manual-activity-template).
+- **New Activity Assigned Received Template**: For more information, see [Create Notification Templates](./notifications.md).
 
 The new workflow you're about to create applies the **Set *named user* as the Activity Implementer** template, which assigns the named user to all the activities that don't have a designated activity implementer. The **New Activity Assigned Received Template** sends notification to a user if the email notification channel is configured.
 
-### Create an activity management workflow
+### [Create an activity management workflow](#tab/create-an-activity-management-workflow)
+
+To create an activity management workflow, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 2. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Configuration**.
@@ -218,10 +246,14 @@ The new workflow you're about to create applies the **Set *named user* as the Ac
 21. On the **Completion** page, select **Close**.
 22. In the **Configure Workflows** dialog, select **OK** to close it.
 
-### Validate workflow creation
+### [Validate workflow creation](#tab/validate-workflow-creation)
+
+To validate workflow creation, follow these steps:
 
 1. In the **Administration** pane, expand **Administration**, expand **Workflows**, and select **Status**.
 2. In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the _named user_** is listed.
+
+---
 
 ## Next steps
 
