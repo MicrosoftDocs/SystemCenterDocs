@@ -5,7 +5,7 @@ description: This article describes how to resolve an error indicating Azure Lin
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/07/2025
+ms.date: 04/09/2025
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
@@ -17,12 +17,12 @@ This article describes how to resolve an error indicating Azure Linux is unsuppo
 
 **Issue**: In System Center Operations Manager 2025, you may encounter an error when you attempt to discover Linux machines running in Azure. 
 
-Error message - **Auzre Linux and Arc Linux Machines are unsupported**.
+Error message - **Azure Linux and Arc Linux Machines are unsupported**.
 
 :::image type="content" source="media/troubleshoot-discovery-error/error-message.png" alt-text="Screenshot of error message.":::
 
 >[!NOTE]
-> If you encounter this error in Azure Monitor SCOM Managed Instance, see [Monitor Linux machines](/azure/azure-monitor/scom-manage-instance/monitor-linux-machines).
+>This workaround applies only to System Center Operations Manager 2025. If you encounter this error in SCOM Managed Instance, see [Monitor Linux machines](/azure/azure-monitor/scom-manage-instance/monitor-linux-machines) as monitoring of Azure Linux VMs is not supported on SCOM Managed Instance.
 
 **Workaround**:
 
