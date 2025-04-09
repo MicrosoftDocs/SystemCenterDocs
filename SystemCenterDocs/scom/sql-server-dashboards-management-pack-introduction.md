@@ -5,23 +5,23 @@ description: This article explains the Management Pack for SQL Server Dashboards
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Introduction to Management Pack for SQL Server Dashboards
+# Introduction to Management Pack for SQL Server dashboards
 
 Microsoft SQL Server Dashboards Management Pack provides the ability to create and customize visualization on the fly.
 
 There are two views in SQL Server Dashboards:
 
-- **Datacenter**-an aggregated view.
+- **Datacenter**- Gives an aggregated view.
 
-- **Instance**-provides detailed information about the selected object.
+- **Instance**- Provides detailed information about the selected object.
 
-## Supported Configurations
+## Supported configurations
 
 This management pack is designed for the following versions of System Center Operations Manager:
 

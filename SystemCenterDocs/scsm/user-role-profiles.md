@@ -19,7 +19,7 @@ This article provides detailed information about the scope and properties of use
 
 ## Tabs in the Administrator console
 
-The table below shows the tabs and order that they appear in the console.
+The table below shows the tabs and order that they appear in the console:
 
 | User roles | Tab order in Console |
 | --- | --- |
@@ -37,7 +37,7 @@ The table below shows the tabs and order that they appear in the console.
 
 ## Default user roles
 
-| action | allowed roles |
+| Action | Allowed roles |
 | --- | --- |
 | read knowledge articles | activity implementer, advanced operator, author, change initiator, change manager, end user, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow |
 | edit knowledge articles | advanced operator, author |
@@ -165,9 +165,9 @@ ServiceOfferingRelatesToRequestOffering &gt; RequestOffering
 
 ## Implied permissions
 
-The following are implied permissions for Service Manager.
+The following are implied permissions for Service Manager:
 
-### ImpliedIncidentAffectedUser
+### [ImpliedIncidentAffectedUser](#tab/impliedincidentaffecteduser)
 
 The permissions for the implied Affected User profile are granted through the WorkItemAffectedUser relationship.
 
@@ -178,7 +178,7 @@ The permissions for the implied Affected User profile are granted through the Wo
 |Update|Work items that the user is affected by:<br /><br />-   Incident<br />-   Service request<br />-   Work item log<br />-   File attachment|All properties of an incident or service request instance.|Incident instance BillableTimeHasWorkingUser->User.|
 |Delete|Work item that the user is affected by -  File attachment|File attachment for an incident or service request instance.|File attachment for an incident or service request instance.|
 
-### ImpliedReviewer
+### [ImpliedReviewer](#tab/impliedreviewer)
 
 The permissions for the implied Review Activity Reviewer profile are granted through the ReviewerIsUser relationship.
 
@@ -189,7 +189,7 @@ The permissions for the implied Review Activity Reviewer profile are granted thr
 |Update|None|Reviewer instances:<br /><br />-   Reviewer.Comments<br />-   Reviewer.DecisionDate<br />-   Reviewer.Decision|Reviewer Instances:<br /><br />-   ReviewerVotedByUser->User<br />-   ReviewerVotedByUser->Reviewer|
 |Delete|None|None|None|
 
-### ImpliedActivityEditor
+### [ImpliedActivityEditor](#tab/impliedactivityeditor)
 
 The permissions for the implied Assigned To User profile are granted through the WorkItemAssignedToUser relationship.
 
@@ -200,7 +200,7 @@ The permissions for the implied Assigned To User profile are granted through the
 |Update|Work item instances that the user is assigned to: Activity|All properties of an activity and the work item instances.|All Activity instances that are related to the work item Instance.|
 |Delete|None|None|None|
 
-### ImpliedConfigItemCustodian
+### [ImpliedConfigItemCustodian](#tab/impliedconfigitemcustodian)
 
 The permissions for the implied **CI Owner** profile are granted through the **ConfigItemOwnedByUser** relationship.
 
@@ -211,7 +211,7 @@ The permissions for the implied **CI Owner** profile are granted through the **C
 |Update|None|None|Configuration item Instance - WorkItemAboutConfigItem|
 |Delete|None|None|None|
 
-### ImpliedPrimaryComputerUser
+### [ImpliedPrimaryComputerUser](#tab/impliedprimarycomputeruser)
 
 The permissions for the implied CI Primary User profile are granted through the ComputerPrimaryUser relationship.
 
@@ -221,3 +221,5 @@ The permissions for the implied CI Primary User profile are granted through the 
 |Create|None|None|None|
 |Update|None|None|None|
 |Delete|None|None|None|
+
+---

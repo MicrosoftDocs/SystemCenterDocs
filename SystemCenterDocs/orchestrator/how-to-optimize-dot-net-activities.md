@@ -1,7 +1,7 @@
 ---
 title: Optimize performance of .NET activities in System Center - Orchestrator
 description: Describes how to configure runbook servers in System Center - Orchestrator, to optimize performance of .NET activities.
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -23,6 +23,8 @@ To remove the delay you can either deactivate `generatePublisherEvidence` in `Po
 
 ### Deactivate `generatePublisherEvidence` in `policymodule.exe.config`
 
+To deactivate `generatePublisherEvidence` in `policymodule.exe.config`, follow these steps:
+
 ::: moniker range="<=sc-orch-2019"
 1. Locate the file `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Runbook Server\policymodule.exe.config` on the runbook server that executes runbooks containing an activity referencing a .NET assembly. 
 ::: moniker-end
@@ -41,8 +43,10 @@ To remove the delay you can either deactivate `generatePublisherEvidence` in `Po
 
 ### Create a profile for the service account
 
-1. On the runbook server where runbooks run that contain an activity referencing the .NET assemblies, sign in to the computer using the service account credentials. A profile is created on first sign-in.
+To create a profile for the service account, follow this step:
+
+On the runbook server where runbooks run that contain an activity referencing the .NET assemblies, sign in to the computer using the service account credentials. A profile is created on first sign-in.
 
 ## Next steps
 
-Learn more about [creating runbooks](design-and-build-runbooks.md).  
+Learn more about [create runbooks](design-and-build-runbooks.md).  

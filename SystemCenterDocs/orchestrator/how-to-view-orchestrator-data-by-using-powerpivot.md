@@ -1,7 +1,7 @@
 ---
 title: View Orchestrator data with PowerPivot
 description: Describes how to use PowerPivot for Excel to analyze operations data in System Center  - Orchestrator.
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -25,6 +25,8 @@ Use PowerPivot to configure a connection to Orchestrator web service. Orchestrat
 
 > [!NOTE]  
 > The OData provider in PowerPivot does not support the data contained in the Runbook Diagram box. Attempts to add a Runbook Diagram table will fail.  
+
+To create a connection to an Orchestrator feed, follow these steps:
 
 1. Open Excel.  
 2. Click the **PowerPivot** tab above the ribbon.  
@@ -59,6 +61,8 @@ The following procedure describes the steps to create a pivot table containing a
 
 ## Create a connection to the data&nbsp;feed  
 
+To create a connection to the data&nbsp;feed, follow these steps:
+
 1. Open Excel.  
 2. Click the **PowerPivot** tab above the ribbon.  
 3. Click **PowerPivot Window** on the ribbon. A **PowerPivot for Excel** book opens.  
@@ -71,6 +75,8 @@ The following procedure describes the steps to create a pivot table containing a
 
 ## Create relationships in PowerPivot  
 
+To create relationships in PowerPivot, follow these steps:
+
 1. In the **PowerPivot for Excel** window, select the **RunbookInstance** tab.  
 2. Right-click the header of the **RunbookId** column to select **Create Relationship**.  
 3. In the **Related Lookup Table** list, select **Runbooks**, and in the **Related Lookup Column** list, select **Id**, and then click **Create**.  
@@ -78,6 +84,8 @@ The following procedure describes the steps to create a pivot table containing a
 5. In the **Related Lookup Table** list, select **RunbookServers**, and in the **Related Lookup Column** list, select **Id**, and then click **Create**.  
 
 ## Create a pivot table  
+
+To create a pivot table, follow these steps:
 
 1. In the **PowerPivot for Excel** window, click **PivotTable** on the ribbon, and select **PivotTable**.  
 2. In the **Create PivotTable** dialog box, select **New Worksheet**, and then click **OK**.  

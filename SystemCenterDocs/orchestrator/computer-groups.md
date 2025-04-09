@@ -7,7 +7,7 @@ ms.topic: article
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.custom: UpdateFrequency3
 ---
 # Computer groups
@@ -20,9 +20,11 @@ You can create computer groups by using Active Directory queries, and you can ma
 
 To use computer groups in your activities, create a computer group, and then add computers to it.  
 
-You can also organize your computer groups into folders. Use the following steps to create a new folder.  
+You can also organize your computer groups into folders. 
 
 ### Create a folder  
+
+To create a folder, follow these steps:
 
 1. In the **Connections** pane in the Runbook Designer, click the **Computer Groups** folder or a subfolder.  
 
@@ -31,6 +33,8 @@ You can also organize your computer groups into folders. Use the following steps
 Use the following procedure to add a computer group. To add computers by using an Active Directory query or a Configuration Manager collection, use the Active Directory Integration Pack or the Integration Pack for Configuration Manager.  
 
 ### Add a computer group  
+
+To add a computer group, follow these steps:
 
 1. In the **Connections** pane, right-click the **Computer Groups** folder or a subfolder.  
 
@@ -46,7 +50,10 @@ Use the following procedure to add a computer group. To add computers by using a
 
 7. To add more computers to the group, repeat the previous two steps.  
 
+
 ### Modify settings  
+
+To modify settings, follow these steps:
 
 1. To modify the settings of an entry you added, click the entry on the **Contents** tab, and then click **Modify**.  
 
@@ -56,7 +63,7 @@ Use the following procedure to add a computer group. To add computers by using a
 
 Any standard activity that requires you to identify a **Computer** name in the **Configuration Properties** dialog box, such as the **Send Event Log Message** activity, can use a computer group. Other activities can use the **Computer Group** where you define a remote system or computer.  
 
-Use the following procedure to use a computer group.  
+To use a computer group, follow these steps:
 
 1. Right-click the applicable activity from your runbook, select **Properties** on the menu, and then select the **Details** tab to open the **Activities Properties** dialog box.  
 
