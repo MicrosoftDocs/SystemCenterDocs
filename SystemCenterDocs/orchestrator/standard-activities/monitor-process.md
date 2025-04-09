@@ -2,7 +2,7 @@
 title: Monitor Process
 description: This article describes the functionality of Monitor Process activity. 
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -21,21 +21,21 @@ The Monitor Process activity invokes runbooks when a process has been started or
 
  The Monitor Process activity can be used to create runbooks that take corrective actions when a process has been started but hasn't stopped. For example, if an application that has a tendency to stop responding and remain resident in memory even though it has completed, it can be shut down automatically by using a Monitor Process activity in a runbook with a [Get Process Status](get-process-status.md) activity to retrieve the status of the process and an [End Process](end-process.md) activity to shut it down.  
 
-## Configure the Monitor Process Activity
+## Configure the Monitor Process activity
 
  Before you configure the Monitor Process activity, you'll need to determine the following:  
 
-- Which computer will run the process that you're monitoring  
+- Which computer will run the process that you're monitoring. 
 
-- Which process you want to monitor  
+- Which process you want to monitor.  
 
-- Whether the runbook will be run when the process is started or stopped  
+- Whether the runbook will be run when the process is started or stopped.  
 
 Use the following information to configure the Monitor Process activity.  
 
-### Details Tab  
+### Details tab  
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Enter the name of the computer where the process that you're monitoring is located. You can also browse for the computer using the ellipsis **(...)** button. The runbook server that runs this runbook must have the appropriate rights to monitor the process on that computer.|  
 |**Process**|Enter the name of the process that you're monitoring. You can also browse for the process using the ellipsis **(...)** button.|  
@@ -45,7 +45,7 @@ Use the following information to configure the Monitor Process activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

@@ -5,7 +5,7 @@ description: This article provides information about how to manage the telemetry
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.topic:  article
 ms.service: system-center
 ms.subservice: data-protection-manager
@@ -29,6 +29,8 @@ Administrators can turn off this feature at any point in time. For more informat
 
 ## Turn on/off telemetry from console
 
+To turn on/off telemetry from console, follow these steps:
+
 1. In the Data Protection Manager console, go to **Management** and click **Options** in the top pane.
 2. In the **Options** dialog box, select **Diagnostic and Usage Data Settings**.
 
@@ -37,7 +39,7 @@ Administrators can turn off this feature at any point in time. For more informat
 3. Select the diagnostic and usage data sharing preference from the options displayed and then select **OK**.
 
     > [!NOTE]
-    > We recommend you to read the [Privacy Statement](https://privacy.microsoft.com/privacystatement) before you select an option.
+    > We recommend you to read the [Privacy Statement](https://privacy.microsoft.com/privacystatement) before you select an option:
     > - To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
     > - To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
 
@@ -45,12 +47,14 @@ Administrators can turn off this feature at any point in time. For more informat
 
 ## Telemetry data collected
 
-| **Data related To** | **Data collected** |
+The following table lists the Telemetry data collected:
+
+| **Data related to** | **Data collected** |
 | --- | --- |
 | **Setup** | Version of DPM installed. <br /><br />Version of the DPM update rollup installed. <br /><br /> Unique machine identifier. <br /><br /> Operating system on which DPM is installed. <br /><br /> If DPM is connected to Microsoft Azure, unique cloud subscription identifier.<br /><br /> If DPM is connected to Microsoft Azure, MARS agent version.<br /><br /> Whether tiered storage is enabled. |
 | **Workload Protected** | Workload unique Identifier. <br /><br />Size of the workload being backed up. <br /><br />Workload type and its version number. <br /><br />If the workload is currently being protected by DPM. <br /><br />Unique Identifier of the Protection Group under which the workload is protected.<br /><br /> Location where the workload is getting backed up - to disk/tape or cloud.|
 | **Restore Jobs** | Status of the restore job - whether successful or failed. <br /><br />Size of the data restored. <br /><br />Failure message, in case of restore job fails.<br /><br />Time taken for the restore job.<br /><br />Details of the workload for which the restore job was run. |
-| **Telemetry change status** | The status change details for the telemetry settings, if enabled or disabled, and when. |
+| **Telemetry Change Status** | The status change details for the telemetry settings, if enabled or disabled, and when. |
 | **DPM Console Crash Error** | The details of the error when a DPM console crashes.|
 
 ::: moniker-end
@@ -59,16 +63,18 @@ Administrators can turn off this feature at any point in time. For more informat
 
 ## Telemetry data collected
 
-| **Data related To** | **Data collected** |
+The following table lists the Telemetry data collected:
+
+| **Data related to** | **Data collected** |
 | --- | --- |
 | **Setup** | Version of DPM installed. <br /><br />Version of the DPM update rollup installed. <br /><br /> Unique machine identifier. <br /><br /> Operating system on which DPM is installed. <br /><br /> If DPM is connected to Microsoft Azure, unique cloud subscription identifier.<br /><br /> If DPM is connected to Microsoft Azure, MARS agent version.<br /><br /> Whether tiered storage is enabled. <br /><br /> Size of the storage used. |
 | **Workload Protected** | Workload unique Identifier. <br /><br />Size of the workload being backed up. <br /><br />Workload type and its version number. <br /><br />If the workload is currently being protected by DPM. <br /><br />Unique Identifier of the Protection Group under which the workload is protected.<br /><br /> Location where the workload is getting backed up - to disk/tape or cloud.|
 | **Jobs** | Status of the backup/restore job. <br /><br /> Size of the data backed up/restored. <br /><br />Failure message, in case backup/restore job fails.<br /><br /> Time taken for the restore job.<br /><br />Details of the workload for which the backup/restore job was run. |
-| **Telemetry change status** | The status change details for the telemetry settings, if enabled or disabled, and when. |
+| **Telemetry Change Status** | The status change details for the telemetry settings, if enabled or disabled, and when. |
 | **DPM Console Crash Error** | The details of the error when a DPM console crashes.|
 
 ::: moniker-end
 
 ## Next steps
 
-[Deploy the DPM protection agent](deploy-dpm-protection-agent.md)
+[Deploy the DPM protection agent](deploy-dpm-protection-agent.md).

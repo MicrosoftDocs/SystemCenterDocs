@@ -5,7 +5,7 @@ description: This article explains views and dashboards in Management Pack for S
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -17,10 +17,12 @@ Management Pack for SQL Server introduces the following version-independent view
 
 ![Screenshot showing Generic views and dashboards.](./media/sql-server-management-pack/version-independent-views.png)
 
+## View and Dashboard
+
 The **Computers** view displays computers on which agents are installed and management pack discovery is running. This view doesn't display computers configured for [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode).
 
 The **SQL Server Roles** dashboard provides information about instances of SQL Server Database Engine, SQL Server Reporting Services, SQL Server Analysis Services, and SQL Server Integration Services.
 
 ![Screenshot of SQL server roles.](./media/sql-server-management-pack/sql-server-roles.png)
 
-Some of these views may consist of a long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding data and objects in the Operations Manager consoles](manage-console-finding-data.md).
+Some of these views may consist of a long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Find data and objects in the Operations Manager consoles](manage-console-finding-data.md).

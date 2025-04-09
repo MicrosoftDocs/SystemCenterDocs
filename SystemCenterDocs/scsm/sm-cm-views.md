@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
@@ -19,7 +19,7 @@ The hardware inventory feature in Configuration Manager gathers information abou
 
 ## Microsoft.SystemCenter.ConfigurationManager.DeployedComputer
 
-The following table describes the mapping for the **Microsoft.SystemCenter.ConfigurationManager.DeployedComputer** type.
+The following table describes the mapping for the **Microsoft.SystemCenter.ConfigurationManager.DeployedComputer** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -36,7 +36,7 @@ The following table describes the mapping for the **Microsoft.SystemCenter.Confi
 
 ## Microsoft.Windows.Computer
 
-The following table describes the mappings for the **Microsoft.Windows.Computer** type.
+The following table describes the mappings for the **Microsoft.Windows.Computer** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -51,7 +51,7 @@ The following table describes the mappings for the **Microsoft.Windows.Computer*
 
 ## Microsoft.Windows.OperatingSystem
 
-The following table describes the mappings for the **Microsoft.Windows.OperatingSystem** type.
+The following table describes the mappings for the **Microsoft.Windows.OperatingSystem** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -73,7 +73,7 @@ The following table describes the mappings for the **Microsoft.Windows.Operating
 
 ## Microsoft.Windows.Peripherals.LogicalDisk
 
-The following table describes the mappings for the **Microsoft.Windows.Peripherals.LogicalDisk** type.
+The following table describes the mappings for the **Microsoft.Windows.Peripherals.LogicalDisk** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -90,7 +90,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 
 ## Microsoft.Windows.Peripherals.PhysicalDisk
 
-The following table describes the mappings for the **Microsoft.Windows.Peripherals.PhysicalDisk** type.
+The following table describes the mappings for the **Microsoft.Windows.Peripherals.PhysicalDisk** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -118,7 +118,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 
 ## Microsoft.Windows.Peripherals.Processor
 
-The following table describes the mappings for the **Microsoft.Windows.Peripherals.Processor** type.
+The following table describes the mappings for the **Microsoft.Windows.Peripherals.Processor** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -142,7 +142,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 
 ## Microsoft.Windows.Peripherals.NetworkAdapter
 
-The following table describes the mappings for the **Microsoft.Windows.Peripherals.NetworkAdapter** type.
+The following table describes the mappings for the **Microsoft.Windows.Peripherals.NetworkAdapter** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager Database Views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -169,7 +169,7 @@ The following table describes the mappings for the **Microsoft.Windows.Periphera
 
 ## System.DeviceHasSoftwareItemInstalled
 
-The following table describes the mappings for the **System.DeviceHasSoftwareItemInstalled** type.
+The following table describes the mappings for the **System.DeviceHasSoftwareItemInstalled** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -187,7 +187,7 @@ The following table describes the mappings for the **System.DeviceHasSoftwareIte
 
 ## System.DeviceHasSoftwareUpdateInstalled
 
-The following table describes the mappings for the **System.DeviceHasSoftwareUpdateInstalled** type.
+The following table describes the mappings for the **System.DeviceHasSoftwareUpdateInstalled** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -201,7 +201,7 @@ The following table describes the mappings for the **System.DeviceHasSoftwareUpd
 
 ## Microsoft.SystemCenter.ConfigurationManager.DCM_CI
 
-The following table describes the mappings for the **Microsoft.SystemCenter.ConfigurationManager.DCM_CI** type.
+The following table describes the mappings for the **Microsoft.SystemCenter.ConfigurationManager.DCM_CI** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -212,7 +212,7 @@ The following table describes the mappings for the **Microsoft.SystemCenter.Conf
 
 ## Microsoft.SystemCenter.ConfigurationManager.DCM_NoncompliantCI
 
-The following table describes the mappings for the **Microsoft.SystemCenter.ConfigurationManager.DCM_NoncompliantCI** type.
+The following table describes the mappings for the **Microsoft.SystemCenter.ConfigurationManager.DCM_NoncompliantCI** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -222,7 +222,7 @@ The following table describes the mappings for the **Microsoft.SystemCenter.Conf
 
 ## System.Domain.User
 
-The following table describes the mappings for the **System.Domain.User** type.
+The following table describes the mappings for the **System.Domain.User** type:
 
 |Configuration Manager class|Configuration Manager database value|Service Manager property|
 |-------------------------------|----------------------------------------|----------------------------|
@@ -231,7 +231,7 @@ The following table describes the mappings for the **System.Domain.User** type.
 
 ## Microsoft.SystemCenter.ConfigurationManagergr.CollectionInf
 
-The following table describes the mapping for the **Microsoft.SystemCenter.ConfigurationManagergr.CollectionInf** type.
+The following table describes the mapping for the **Microsoft.SystemCenter.ConfigurationManagergr.CollectionInf** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|
@@ -243,7 +243,7 @@ The following table describes the mapping for the **Microsoft.SystemCenter.Confi
 
 ## Microsoft.ConfigMgr.SoftwarePackage
 
-The following table describes the mapping for the **Microsoft.ConfigMgr.SoftwarePackage** type.
+The following table describes the mapping for the **Microsoft.ConfigMgr.SoftwarePackage** type:
 
 |Service Manager type|Service Manager property|Column name of Configuration Manager database views|
 |------------------------|----------------------------|-------------------------------------------------------|

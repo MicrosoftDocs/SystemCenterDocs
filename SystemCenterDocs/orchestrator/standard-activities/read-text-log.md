@@ -2,7 +2,7 @@
 title: Read Text Log 
 description: This article describes the Read Text Log activity that will read lines in a structured text log file.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -15,6 +15,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ---
+
 # Read Text Log
 
 The Read Text Log activity will read lines in a structured text log file. If you have log files that change names, you can configure the Read Text Log activity to read from the newest file in a folder that matches a file name pattern. The Read Text Log activity can be used to check a log for errors and then take corrective action on the server that is creating the log or send an email to an administrator to escalate the issue.  
@@ -22,7 +23,7 @@ The Read Text Log activity will read lines in a structured text log file. If you
 > [!IMPORTANT]
 > For the Read Text Log activity to work correctly, every line in the text log file must begin with a timestamp.  
 
-## Configure the Read Text Log Activity
+## Configure the Read Text Log activity
 
  Before you configure the Read Text Log activity, you need to determine the following:  
 
@@ -32,9 +33,11 @@ The Read Text Log activity will read lines in a structured text log file. If you
 
 Use the following information to configure the Read Text Log activity.  
 
-### Details Tab  
+### Details tab  
 
-|Settings|Configuration Instructions|  
+The following table lists the information in the Details tab:
+
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**File**|Select and enter the name of the log file that will be read. You can also use the ellipsis **(...)** to browse for the file.|  
 |**The most recent file in this folder**|Select and enter the folder where the most recent file that matches the pattern that you specify will be read. You can also use the ellipsis **(...)** to browse for the folder.|  
@@ -56,7 +59,7 @@ Use the following information to configure the Read Text Log activity.
 |%S|Seconds in two digits.|  
 |%s|Milliseconds in three digits.|  
 
-Here are some examples of dates and their corresponding timestamp format.  
+Here are some examples of dates and their corresponding timestamp format:  
 
 |Date|Format|  
 |----------|------------|  
@@ -66,7 +69,7 @@ Here are some examples of dates and their corresponding timestamp format.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  
