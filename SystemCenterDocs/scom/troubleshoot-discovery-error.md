@@ -28,7 +28,7 @@ Error message - **Azure Linux and Arc Linux Machines are unsupported**.
 
 To resolve this error, do the following on all Management Servers in the Linux Resource Pools: 
 
-1. Copy the following script and replace with the contents of the *GetOSVersion.sh* file located in the UnixAgents directory - `C:\Program Files\Microsoft System Center\ Operations Manager\Server\AgentManagement\UnixAgents\`.
+1. Copy the following script and replace with the contents of the *GetOSVersion.sh* file located in the UnixAgents directory - `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\`.
 
      ```
      Hostname=`uname -n`
