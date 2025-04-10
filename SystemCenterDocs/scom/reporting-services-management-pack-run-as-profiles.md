@@ -5,7 +5,7 @@ description: This article explains Reporting Services Run As Profiles.
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/10/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -70,9 +70,9 @@ If the default action account for the given system doesn't have the necessary pe
 > [!IMPORTANT]
 > It's not recommended to use the **Local System account** or **HealthService SSID** because it's a specific case to monitor SQL Server Reporting Services. Some workflows run on the server hosting a Reporting Services instance and try to reach the Reporting Services database commonly installed on another computer. You'll need to provide computer accounts of all the servers hosting SQL Server Reporting Services instances with the required permissions to access the Reporting Services databases. A domain account is a more suitable and secure option.
 
-## Configuring Run As Profiles
+## Configure Run As profiles
 
-To configure Run As profiles, perform the following steps:
+To configure Run As profiles, follow these steps:
 
 1. Identify the names of the target computers where the default action account has insufficient rights to monitor SQL Server Reporting Services.
 

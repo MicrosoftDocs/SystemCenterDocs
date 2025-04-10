@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/10/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -25,6 +25,8 @@ In Service Manager, you can use the search feature in the Service Manager consol
 - Domain users  
 
 - Manual activities  
+
+## Search criteria
 
 However, only knowledge articles are returned when you perform a knowledge search.  
 

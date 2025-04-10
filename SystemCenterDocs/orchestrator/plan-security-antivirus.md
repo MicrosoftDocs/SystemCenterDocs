@@ -5,7 +5,7 @@ description: Describes some antivirus exclusions that relate to Orchestrator. Th
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -24,7 +24,7 @@ We don't recommend that you rely on exclusions that are based on any process exe
 
 If you must make exclusions that are based on the process executables, use the following processes:
 
-|Component | Process |
+|Component |Process |
 |--------|---------|
 |**Management Service** |ManagementService.exe|
 |**Remoting Service** |OrchestratorRemotingService.exe|
@@ -36,7 +36,7 @@ If you must make exclusions that are based on the process executables, use the f
 
 ### SQL Database servers
 
-These exclusions include the SQL Server database files that are used by Orchestrator components and the system database files for the master database and for the tempdb database. To exclude these files by directory, exclude the directory for the .ldf and .mdf files.
+These exclusions include the SQL Server database files that are used by Orchestrator components and the system database files for the master database and for the tempdb database. To exclude these files by directory, exclude the directory for the .ldf and .mdf files:
 
 For example:
 
@@ -46,15 +46,15 @@ For example:
 
 For standard Microsoft SQL Server specific exclusions, see [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server).
 
-### Orchestrator (Management Server, Runbook Server)
+### Orchestrator (Management server, Runbook server)
 
 These exclusions include the default installation locations for all Orchestrator server roles. Any deviation from these default locations should also be included.
 
-**For a Management Server**
+**For a Management server**
 
 *%ProgramFiles%\Microsoft System Center\Orchestrator\Management Server*
 
-**For a Runbook Server**
+**For a Runbook server**
 
 *%ProgramFiles%\Microsoft System Center\Orchestrator\Runbook Server*
 
@@ -68,7 +68,7 @@ These exclusions include the SQL Server database files that are used by Orchestr
 
 For standard Microsoft SQL Server specific exclusions, see [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server).
 
-### Orchestrator (Management Server, Runbook Server)
+### Orchestrator (Management server, Runbook server)
 
 These exclusions include the log files that are used by Orchestrator. For more information, see [Orchestrator Logs](/system-center/orchestrator/orchestrator-logs).
 
