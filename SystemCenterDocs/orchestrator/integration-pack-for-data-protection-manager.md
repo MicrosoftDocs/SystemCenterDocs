@@ -1,7 +1,7 @@
 ---
 title: Integration Pack for System Center DPM in System Center - Orchestrator
 description: This article describes the System Center DPM integration pack provided by System Center - Orchestrator.
-ms.date: 11/19/2024
+ms.date: 04/11/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -65,13 +65,17 @@ The DPM integration pack uses Windows PowerShell remoting on the Runbook Designe
 
 ## Enable Windows Remote Management trusted hosts
 
+To enable Windows Remote Management trusted hosts, follow these steps:
+
 1. On the Orchestrator computer, select **Start** >  **Run**. Then enter **gpedit.msc**, and select **OK** to open the **Local Group Policy Editor**.
 2. In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Remote Management (WinRM)** > **WinRM Client**. Double-click **Trusted Hosts**.
 3. Select **Enabled**, and add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Then select **OK**.
 
 ## Set the execution policy
 
-The execution policy in Windows PowerShell determines which scripts must be digitally signed before they run. By default, the execution policy is set to **Restricted.** This prohibits loading any configuration files or running any scripts. To run the scripts in this integration pack, you must set the execution policy to **RemoteSigned** as follows:
+The execution policy in Windows PowerShell determines which scripts must be digitally signed before they run. By default, the execution policy is set to **Restricted.** This prohibits loading any configuration files or running any scripts. To run the scripts in this integration pack, you must set the execution policy to **RemoteSigned**.
+
+To set the execution policy, follow these steps:
 
 1. Open a Windows PowerShell (x86) console as an administrator.
 
@@ -87,6 +91,8 @@ This integration pack uses Windows PowerShell remote commands to communicate wit
 
 Run the following command once on each computer that will receive commands. You don't need to run it on computers that only send commands. Because the command activates listeners, we recommend that you run it only where it's needed.
 
+To configure remote connection settings, follow these steps:
+
 1. Open a Windows PowerShell (x86) console as an administrator.
 2. Type _System Drive_**:\\PS&gt;enable-psremoting** and press Enter.
 
@@ -101,6 +107,8 @@ WM-Management also provides a setting for MaxConnections (regardless of users), 
 ## Configure connections
 
 Connections provide a way for you to define how DPM Activities connect to the DPM servers in your infrastructure. You must define at least one connection in order to use the DPM activities. You can define as many as you need to connect to different DPM servers or to use different connection settings or credentials.
+
+To configure connections, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and then select DPM.
 2. On the **Configurations** tab, select **Add** to begin the connection setup.
@@ -118,7 +126,7 @@ Connections provide a way for you to define how DPM Activities connect to the DP
 | User   | The name of a user with access to DPM. This user account must have permissions on the DPM server to perform the actions requested by the activities.<br>If you leave this property empty, the configuration will use the credentials from the Runbook Service Account. If this account has appropriate permissions in DPM, then you don't need to provide credentials for the configuration.   |
 | Domain   | The domain that the user account resides in.   |
 | Password   | The password for the specified user account.   |
-| Authentication Type (Remote only) | The type of authentication to use. This is only required if the runbook server and DPM are installed on different computers. Options are as follows:<br> Default - Use the authentication method implemented by the WS-Management protocol. This is the default.<br> Basic - A scheme in which the username and password are sent in clear text to the server or proxy.<br> Negotiate - A challenge-response scheme that negotiates with the server or proxy to determine the scheme to use for authentication<br> NegotiateWithImplicitCredential - The connection is made using the credentials cached on the local computer.<br> Digest - A challenge-response scheme that uses a server-specified data string for the challenge.<br> Kerberos - The client computer and the server mutually authenticate by using Kerberos certificates.<br> The authentication method that you choose must be enabled in WinRM. You can enable the authentication methods using the **Local Group Policy Editor**. For more information, see [Installation and Configuration for Windows Remote Management](/windows/desktop/WinRM/installation-and-configuration-for-windows-remote-management). |
+| Authentication Type (Remote only) | The type of authentication to use. This is only required if the runbook server and DPM are installed on different computers. Options are as follows:<br> Default - Use the authentication method implemented by the WS-Management protocol. This is the default.<br> Basic - A scheme in which the username and password are sent in clear text to the server or proxy.<br> Negotiate - A challenge-response scheme that negotiates with the server or proxy to determine the scheme to use for authentication.<br> NegotiateWithImplicitCredential - The connection is made using the credentials cached on the local computer.<br> Digest - A challenge-response scheme that uses a server-specified data string for the challenge.<br> Kerberos - The client computer and the server mutually authenticate by using Kerberos certificates.<br> The authentication method that you choose must be enabled in WinRM. You can enable the authentication methods using the **Local Group Policy Editor**. For more information, see [Installation and configuration for Windows Remote Management](/windows/desktop/WinRM/installation-and-configuration-for-windows-remote-management). |
 | Port (Remote only)   | Specifies the port to use when the client connects to the WinRM service on the remote server. By default, the port used is 5985.   |
 | Use SSL (Remote only)   | Specifies whether SSL should be used for the connection.   |
 | Cache Session Timeout (min.)   | The number of minutes before the session will time out from lack of activity and need to reconnect. By default, this is 10 minutes.   |

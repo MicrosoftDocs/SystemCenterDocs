@@ -4,7 +4,7 @@ description: This article explains how to configure a custom database query moni
 manager: evansma
 author: epomortseva
 ms.author: v-fkornilov
-ms.date: 11/01/2024
+ms.date: 04/11/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -21,13 +21,13 @@ There are two types of unit monitors based on custom queries that you can create
 > [!NOTE]
 > Since the latest preview version of System Center Management Pack for SQL Server 7.1.0.0, the management pack for the custom monitoring feature is on a separate package installer: *SQLServerMP.CustomMonitoring.msi*. Be sure to import the management pack file *Microsoft.SQLServer.Core.CustomMonitoring.mpb* manually. The import process with the update option is not supported.
 
-## Custom cookdown query-based monitors targeting the SQL Server Database
+## [Custom cookdown query-based monitors targeting the SQL Server Database](#tab/custom-cookdown-query-based-monitors-targeting-the-sql-server-database)
 
 The Cookdown type allows you to retrieve data from multiple databases using a single query.
 
 ### Two-state custom database cookdown monitor
 
-To create a two-state custom query-based monitor, perform the following steps:
+To create a two-state custom query-based monitor, follow these steps:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Objects**. Right-click **Monitors**, select **Create a Monitor**, and then select **Unit Monitor**.
 
@@ -148,7 +148,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 > [!TIP]
 > By default, a custom query-based monitor works for all SQL Server databases. To avoid alert storming you need to override the monitor target only to a specific instance of the SQL Server. To do that, in the monitor's override properties set the **Enabled = False** for the **MSSQL on Windows: Database class**, and set the **Enabled = True** for the **specific SQL Server Database** object.
 
-## Custom database context query-based monitors targeting the SQL Server Database
+## [Custom database context query-based monitors targeting the SQL Server Database](#tab/custom-database-context-query-based-monitors-targeting-the-sql-server-database)
 
 The database context monitor type will execute the specified query on all databases in the target manner. To exclude a specific database from this monitor, use overrides after creation.
 
@@ -156,7 +156,7 @@ This monitor type can increase performance.
 
 ### Two-state custom database context monitor
 
-To create a two-state custom query-based monitor, perform the following steps:
+To create a two-state custom query-based monitor, follow these steps:
 
 1. In the System Center Operations Manager console, go to **Authoring** > **Management Pack Objects**. Right-click **Monitors**, select **Create a Monitor**, and then select **Unit Monitor**.
 
@@ -291,7 +291,7 @@ To create a two-state custom query-based monitor, perform the following steps:
 > [!TIP]
 > By default, a custom query-based monitor works for all SQL Server databases. To avoid alert storming you need to override the monitor target only to a specific instance of the SQL Server. To do that, in the monitor's override properties set the **Enabled = False** for the **MSSQL on Windows: Database class**, and set the **Enabled = True** for the **specific SQL Server Database** object.
 
-## Three-state monitor
+## [Three-state monitor](#tab/three-state-monitor)
 
 Creating a three-state custom query-based monitor is similar to creating a two-state monitor. The main difference is that you select **User-defined SQL Query Three-State Monitor** at the **Monitor Type** step. Then, you can specify details for **Warning Conditions** and **Critical Conditions** steps.
 
@@ -306,3 +306,5 @@ When you use the **Equal to** condition in a three-state monitor:
 - Keep in mind the alert priority: the critical state is verified first.
 
 Condition types are different for cookdown and the database context monitor type. For cookdown, only one option is available: scalar value. For the database context, you can use all kinds of conditions: empty result set, not empty result set, and scalar value.
+
+---

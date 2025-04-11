@@ -2,7 +2,7 @@
 title: Return Data 
 description: This article describes the Return Data activity that allows you to return data from the current runbook to a runbook that invoked the runbook.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/10/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -27,7 +27,7 @@ The Return Data activity allows you to return data from the current runbook to a
 
  The available published data items depend on the defined data elements.  
 
-## See Also
+## Related content
 
-- [Invoke Runbook](invoke-runbook.md)
-- [Initialize Data](initialize-data.md)
+- [Invoke Runbook](invoke-runbook.md).
+- [Initialize Data](initialize-data.md).
