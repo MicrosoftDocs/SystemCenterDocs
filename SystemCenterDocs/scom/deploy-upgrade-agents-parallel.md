@@ -78,7 +78,7 @@ If you want to maintain your existing Operations Manager environment, you can in
 
     Your deployment process will need to be updated to include the new agent Windows installer package and dependencies required. The logic defined to interrogate, install and configure, and verify the agent will need to be updated accordingly.
 
-Once you've completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager management group, you can reconfigure the agents to remove assignment from the existing Operations Manager management group that you're preparing to retire. This can be accomplished by following the guidance in the Operations Manager SDK to programatically [Remove the management group configuration](/previous-versions/system-center/developer/hh329017(v=msdn.10)) from the agent.  
+Once you've completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager management group, you can reconfigure the agents to remove assignment from the existing Operations Manager management group that you're preparing to retire. This can be accomplished by following the guidance in the Operations Manager SDK to programatically [remove the management group configuration](/previous-versions/system-center/developer/hh329017(v=msdn.10)) from the agent.  
 
 ## Next steps
 
