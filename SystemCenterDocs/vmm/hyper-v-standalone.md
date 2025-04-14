@@ -5,7 +5,7 @@ description: This article provides about provisioning a Hyper-V cluster in the V
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/09/2024
+ms.date: 04/14/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -13,8 +13,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Provision a cluster from Hyper-V standalone hosts in the VMM fabric
-
-
 
 Use the instructions in this article to create a cluster from standalone Hyper-V host servers that are managed in the System Center Virtual Machine Manager (VMM) fabric.
 
@@ -30,16 +28,21 @@ Use the instructions in this article to create a cluster from standalone Hyper-V
 ## Create a cluster
 
 1. In the VMM console, select **Fabric** > **Create** > **Hyper-V Cluster** to open the Create Hyper-V Cluster wizard.
-1. In **General**, specify a cluster name and choose the host group in which the existing Hyper-V hosts are located.
-1. In **Resource Type**, select the Run As account that you'll use to create the cluster. The account that you use must have administrative permissions on the servers that will become cluster nodes and must belong to the same domain as the Hyper\-V hosts that you want to cluster. Also, the account requires **Create Computer objects** permission in the container that is used for Computer accounts in the domain. Ensure that **Existing Windows servers** is selected, and if you don't need support from Microsoft for this cluster, you can select **Skip cluster validation**.
-1. In **Nodes**, select the Hyper-V host servers that you want to include in the cluster. You can select multiple hosts using the CTRL key or a range using SHIFT.
-1. In **IP address** (if it appears), enter the IP address you want to use for the cluster.
-1. In **Storage**, select the data disks you want the cluster to use. The list of available disks includes the logical units associated with the host group that you selected at the beginning of the wizard.
+2. In **General**, specify a cluster name and choose the host group in which the existing Hyper-V hosts are located.
+3. In **Resource Type**, select the Run As account that you'll use to create the cluster. The account that you use must have administrative permissions on the servers that will become cluster nodes and must belong to the same domain as the Hyper\-V hosts that you want to cluster. Also, the account requires **Create Computer objects** permission in the container that is used for Computer accounts in the domain. Ensure that **Existing Windows servers** is selected, and if you don't need support from Microsoft for this cluster, you can select **Skip cluster validation**.
+::: moniker-range="<=sc-vmm-2022"
+4. In **Nodes**, select the Hyper-V host servers that you want to include in the cluster. You can select multiple hosts using the CTRL key or a range using SHIFT.
+::: moniker-end
+::: moniker range="sc-vmm-2025
+4. In **Nodes**, select the Hyper-V host servers that you want to include in the cluster. You can select multiple hosts using the CTRL key or a range using SHIFT. Cluster validation requires CLIUSR account to be added in the Windows Server 2025 nodes that are being added to a cluster.
+::: moniker-end
+5. In **IP address** (if it appears), enter the IP address you want to use for the cluster.
+6. In **Storage**, select the data disks you want the cluster to use. The list of available disks includes the logical units associated with the host group that you selected at the beginning of the wizard.
     - If you assigned storage out-of-band, disks that aren't managed by VMM are displayed and selected as available disks, with the checkbox next to each disk dimmed and unavailable.
       - If you're using a non-Microsoft clustered file system \(CFS\) solution, ensure that you're aware which disks are CFS disks. Don't select those disks for the cluster. If you do, cluster creation will fail.
       - If the number of selected hosts for the cluster is even, the smallest disk that is larger than 500 megabytes \(MB\) is automatically chosen as the witness disk and is unavailable for selection.
-1. In **Virtual Switches**, you can select the logical networks to use when VMM automatically creates virtual switches on the Hyper-V nodes. The external virtual switches on destination Hyper-V nodes. VMM will automatically create the virtual switches on all the Hyper-V nodes.
-1. In **Summary**, confirm the settings and then select **Finish**. You can monitor the cluster status on the **Jobs** page. After the job finishes, you can verify cluster information by right-clicking **Properties** > **Status** tab on the cluster. You can also right-click the cluster and select **Validate Cluster**.
+7. In **Virtual Switches**, you can select the logical networks to use when VMM automatically creates virtual switches on the Hyper-V nodes. The external virtual switches on destination Hyper-V nodes. VMM will automatically create the virtual switches on all the Hyper-V nodes.
+8. In **Summary**, confirm the settings and then select **Finish**. You can monitor the cluster status on the **Jobs** page. After the job finishes, you can verify cluster information by right-clicking **Properties** > **Status** tab on the cluster. You can also right-click the cluster and select **Validate Cluster**.
 
 Here's what VMM does after you create the cluster:
 
