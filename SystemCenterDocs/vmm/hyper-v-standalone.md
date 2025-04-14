@@ -30,12 +30,16 @@ Use the instructions in this article to create a cluster from standalone Hyper-V
 1. In the VMM console, select **Fabric** > **Create** > **Hyper-V Cluster** to open the Create Hyper-V Cluster wizard.
 2. In **General**, specify a cluster name and choose the host group in which the existing Hyper-V hosts are located.
 3. In **Resource Type**, select the Run As account that you'll use to create the cluster. The account that you use must have administrative permissions on the servers that will become cluster nodes and must belong to the same domain as the Hyper\-V hosts that you want to cluster. Also, the account requires **Create Computer objects** permission in the container that is used for Computer accounts in the domain. Ensure that **Existing Windows servers** is selected, and if you don't need support from Microsoft for this cluster, you can select **Skip cluster validation**.
+
 ::: moniker-range="<=sc-vmm-2022"
 4. In **Nodes**, select the Hyper-V host servers that you want to include in the cluster. You can select multiple hosts using the CTRL key or a range using SHIFT.
+
 ::: moniker-end
+
 ::: moniker range="sc-vmm-2025"
 4. In **Nodes**, select the Hyper-V host servers that you want to include in the cluster. You can select multiple hosts using the CTRL key or a range using SHIFT. Cluster validation requires CLIUSR account to be added in the Windows Server 2025 nodes that are being added to a cluster.
 ::: moniker-end
+
 5. In **IP address** (if it appears), enter the IP address you want to use for the cluster.
 6. In **Storage**, select the data disks you want the cluster to use. The list of available disks includes the logical units associated with the host group that you selected at the beginning of the wizard.
     - If you assigned storage out-of-band, disks that aren't managed by VMM are displayed and selected as available disks, with the checkbox next to each disk dimmed and unavailable.
