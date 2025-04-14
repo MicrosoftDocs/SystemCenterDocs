@@ -5,7 +5,7 @@ description: This article describes how to discover storage devices in the VMM f
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/22/2024
+ms.date: 04/14/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -28,6 +28,12 @@ Ensure that the storage device is supported before you add it.
 3. In **Specify Discovery Scope**:
     - If you're using SMI-S, specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI WMI**, add the IP address/FQDN and add the port used to connect to the provider on the remote server. You can enable SSL if you're using CIMXML. Specify an account for connecting to the provider.
     - If you're using SMP, select the provider from the list. If it isn't in the list, select **Import** to refresh it.
+
+   >[!Important]
+   >For enhanced security, we recommend you to
+     >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you add storage devices without using SSL connection, remove and re-add them.
+     >- keep the `EnableHTTPListenerClientCertificateCheck` enabled on the VMM server machine.
+
 4. In **Gather Information**, VMM automatically tries to discover and import the storage device information. To retry, select **Scan Provider**.
 5. If you selected the option to use an SSL connection for an SMI-S provider, you observe that:
     - During discovery, the **Import Certificate** dialog appears. Check settings and select **Import**. By default, the certificate common name (CN) will be verified. This might cause storage discovery to fail if there's no CN or if it doesn't match.
