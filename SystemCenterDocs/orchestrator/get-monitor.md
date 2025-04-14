@@ -17,7 +17,7 @@ manager: jsuri
 
 # Get Monitor
 
-The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify. For example, you can use the Get Monitor activity to retrieve a message and replicate the information to a trouble ticketing system.
+In this article, you will learn about Get Monitor activity. The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify. For example, you can use the Get Monitor activity to retrieve a message and replicate the information to a trouble ticketing system.
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all the data from the required and optional properties into published data.
 
