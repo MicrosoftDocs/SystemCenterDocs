@@ -33,7 +33,7 @@ Use the instructions in this article to create a cluster from standalone Hyper-V
 ::: moniker-range="<=sc-vmm-2022"
 4. In **Nodes**, select the Hyper-V host servers that you want to include in the cluster. You can select multiple hosts using the CTRL key or a range using SHIFT.
 ::: moniker-end
-::: moniker range="sc-vmm-2025
+::: moniker range="sc-vmm-2025"
 4. In **Nodes**, select the Hyper-V host servers that you want to include in the cluster. You can select multiple hosts using the CTRL key or a range using SHIFT. Cluster validation requires CLIUSR account to be added in the Windows Server 2025 nodes that are being added to a cluster.
 ::: moniker-end
 5. In **IP address** (if it appears), enter the IP address you want to use for the cluster.
