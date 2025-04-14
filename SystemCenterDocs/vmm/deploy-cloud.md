@@ -32,8 +32,8 @@ VMM provides the following benefits:
 
 You can create a private cloud from either:
 
-- VMM host groups that contain resources from virtualization hosts.
-- A VMware resource pool.
+- VMM host groups that contain resources from virtualization hosts
+- A VMware resource pool
 
 You can deploy a private cloud by configuring fabric resources, setting up library paths for private cloud users, and setting the cloud capacity.
 
