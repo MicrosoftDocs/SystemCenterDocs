@@ -5,7 +5,7 @@ description: This article provides instructions for managing a private cloud in 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 06/27/2024
+ms.date: 02/28/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -38,7 +38,3 @@ To place a third VM with 26 GB of memory, follow these steps:
 1. Update the capacity in the cloud properties to accommodate the increased memory size to, say 64 GB.
 2. Navigate to the registry key **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Placement\IgnoreMemoryForStoppedReplicaVM**.
 3. Set the DWORD value to 1. If the value **IgnoreMemoryForStoppedReplicaVM** doesn't exist, create it.
-
-## Next step
-
-[Scenario - Deploy guarded hosts and shielded virtual machines in VMM](deploy-guarded-host-fabric.md)
