@@ -70,7 +70,7 @@ To install the Orchestrator Integration Toolkit, follow these steps:
 
 2. Select **Next**. The License Agreement page displays. To continue, you must select the checkbox next to **I accept the terms in the License Agreement** and select **Next**.  
 
-3. At the **User Information** page, enter your name and organization information and select **Next**.  
+3. At the User Information page, enter your name and organization information and select **Next**.  
 
 4. On the next page, select **Install**. Note the security shield icon on the Install button. This indicates the installation will occur using elevated privileges.  
 
@@ -105,7 +105,7 @@ To install the Orchestrator Integration Toolkit, follow these steps:
 [cli-wizard]: ./command-line-activity-wizard.md
 [ip-wizard]: ./integration-pack-wizard.md
 
-## Related content
+## Orchestrator resources
 
 In addition to this online reference provided for System Center Orchestrator, there are many resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
 
