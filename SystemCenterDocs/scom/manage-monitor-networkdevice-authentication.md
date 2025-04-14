@@ -14,19 +14,23 @@ ms.assetid: f3631fac-5b64-4903-8343-8254b107db15
 
 # Run As accounts for network monitoring in Operations Manager
 
-System Center - Operations Manager uses Run As accounts to discover and monitor network devices. The information you include in the Run As account enables management servers to communicate with the network devices. You can monitor devices that use Simple Network Management Protocol (SNMP) v1, v2, and v3.
+This article describes how to configure the Run As accounts required to discover network devices in Operations Manager. System Center - Operations Manager uses Run As accounts to discover and monitor network devices. The information you include in the Run As account enables management servers to communicate with the network devices. You can monitor devices that use Simple Network Management Protocol (SNMP) v1, v2, and v3.
 
 Network devices that use SNMP v1 or v2 require a Run As account that specifies a community string, which acts like a password to provide read-only access to the device.  
 
-## SNMP v3 Run As Account credentials
 
 Each network device that uses SNMP v3 requires a unique Run As account that provides the following credentials:  
 
 -   User name: Obtained from device configuration.
+
 -   Context: Name that together with the user name determines the access permissions of a request sent to the SNMPv3 agent.
+
 -   Authentication protocol: MD5 for Message Digest 5, SHA for Secure Hash Algorithm, or NONE.
+
 -   Authentication key: String consisting of 1 to 64 characters; required if the authentication protocol is MD5 or SHA.
+
 -   Privacy protocol: DES for Data Encryption Standard, AES for Advanced Encryption Standard, or NONE.
+
 -   Privacy key: String consisting of 1 to 64 characters; required if the privacy protocol is DES or AES.
 
     > [!NOTE]  
