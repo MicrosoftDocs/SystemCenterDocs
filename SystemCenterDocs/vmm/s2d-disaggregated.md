@@ -28,7 +28,7 @@ To enable S2D, go to **General Configuration** > **Specify the cluster name and 
 
 After you enable a disaggregated cluster with S2D, VMM does the following:
 
-1. The **File Server** role and the **Failover Clustering** features are enabled.
+1. The File Server role and the Failover Clustering features are enabled.
 2. Storage replica and data deduplication are enabled.
 3. The cluster is optionally validated and created.
 4. S2D is enabled, and a storage array is created with the same name you provide in the wizard.
@@ -38,7 +38,7 @@ After you enable a disaggregated cluster with S2D, VMM does the following:
 
 You can provision a SOFS cluster from servers in the VMM fabric or add an existing SOFS cluster to the fabric
 
-### Provision a SOFS cluster
+### Provision a cluster
 
 To provision a SOFS cluster, follow these steps:
 
@@ -59,7 +59,7 @@ If you want to add additional nodes to the SOFS cluster, VMM automatically disco
 To add an existing SOFS cluster with S2D enabled, follow these steps:
 
 1.	Select **Fabric** > **Add Resources** > **Storage Devices**.
-2.	In the **Add Resource Wizard**, select **Windows-based File Server**.
+2.	In the Add Resource Wizard, select **Windows-based File Server**.
 3.	In **Discovery Scope**, specify the cluster IP address or FQDN. Provide a Run As account with cluster access, and specify if the cluster is in a different domain.
 4.	In **Storage Device**, select the SOFS to add to the VMM fabric. You must only assign a classification to the pool after you add the provider.
 5.	In **Summary**, check the settings and complete the wizard.
@@ -74,7 +74,7 @@ To manage the pool and create file shares, follow these steps:
 1. Select **Fabric** > **Storage** > **Arrays**.
 2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification
 4.	After the pool appears with the new name if needed, select **Create File Share**.
-5.	In the **Create File Share Wizard** > **General**, specify a name for the share and select the pool from which storage must be taken.
+5.	In the Create File Share Wizard > **General**, specify a name for the share and select the pool from which storage must be taken.
 6.	In **Capacity**, specify the share size and settings.
 7.	In **Summary,** verify the settings. After the share is created, a new CSV is added under the storage pool.
 
@@ -82,11 +82,10 @@ To manage the pool and create file shares, follow these steps:
 
 To allocate the storage in Hyper-V, follow this step:
 
-1.	In the Hyper-V host properties > **Storage**, specify the file share path. Now, you can create VMs that use this file share.
+In the Hyper-V host properties > **Storage**, specify the file share path, and create VMs that use this file share.
 
 
 ## Next steps
-
 
 - [Provision VMs](provision-vms.md).
 - [Manage the cluster](s2d-manage.md).
