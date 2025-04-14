@@ -31,7 +31,7 @@ Ensure that the storage device is supported before you add it.
 
    >[!Important]
    >For enhanced security, we recommend you to
-     >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you add storage devices without using SSL connection, remove and re-add them.
+     >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you have added storage devices without using SSL connection, you can remove and re-add them. 
      >- keep the `EnableHTTPListenerClientCertificateCheck` enabled on the VMM server machine.
 
 4. In **Gather Information**, VMM automatically tries to discover and import the storage device information. To retry, select **Scan Provider**.
