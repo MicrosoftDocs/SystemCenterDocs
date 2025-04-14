@@ -52,7 +52,7 @@ Here are some considerations before you start deploying VMs:
     - If the MPIO feature is already enabled before you add a host to VMM management, VMM will automatically enable MPIO for supported storage arrays using the Microsoft provided Device Specific Module (DSM). If you already installed vendor-specific DSMs for supported storage arrays and then add the host to VMM management, the vendor-specific MPIO settings will be used to communicate with those arrays.
     - If you add a host to VMM before you add the MPIO feature, you must manually configure MPIO to add the discovered device hardware IDs. Alternatively, you can install vendor-specific DSMs.
     - If you're using a Fibre Channel Storage Area Network (SAN), each host that will access the storage array must have a Host Bus Adapter (HBA) installed. Additionally, ensure that the hosts are zoned accordingly so that they can access the storage array.
-    - If you use an iSCSI SAN, ensure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, ensure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic. For information on how to create an iSCSI session on a host through VMM, see [Configure Storage on a Hyper-V Host in VMM](hyper-v-storage.md#configure-storage-for-a-hyper-v-cluster).
+    - If you use an iSCSI SAN, ensure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, ensure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic. For information on how to create an iSCSI session on a host through VMM, see [How to configure Storage on a Hyper-V Host in VMM](hyper-v-storage.md#configure-storage-for-a-hyper-v-cluster).
 
 
 ## Create a SAN copy-capable template from a new virtual machine
@@ -74,7 +74,7 @@ Create a new VM on a logical unit assigned to a Hyper-V host. On the library ser
     - In **Machine Resources**, select **Virtual Hard Disk**. In **Browse** > **Select Destination Folder**, select the drive you created from the assigned logical unit.
     - In **Select Network** and **Add Properties**, select the required settings. In **Summary**, review the settings and select **Create**. Verify that the VM is listed in **VMs and Services** > **All Hosts** > **VMs**.
 
-4.  On the new VM, install and customize the guest operating system and the applications that you want. Generalize the image using Sysprep.exe with the **/generalize** and the **/oobe** options to generalize the associated virtual hard disk. [Learn more][Sysprep Command-Line Options](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825033(v=win.10)). When you're finished, ensure there are no .iso image files attached to the virtual DVD drive.
+4.  On the new VM, install and customize the guest operating system and the applications that you want. Generalize the image using Sysprep.exe with the **/generalize** and the **/oobe** options to generalize the associated virtual hard disk. [Learn more](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825033(v=win.10)). When you're finished, ensure there are no .iso image files attached to the virtual DVD drive.
 
 ## Create a SAN copy-capable template from an existing VM
 
