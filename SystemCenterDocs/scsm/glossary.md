@@ -6,14 +6,14 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.subservice: service-manager
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Glossary of terms in System Center - Service Manager
 
-
+This article lists the glossary that defines the terms used in System Center - Service Manager.
 
 |Term|Definition|
 |--------|--------------|
@@ -30,7 +30,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 |class|A named descriptor for a set of objects that share the same attributes, operations, methods, relationships, and behaviors.|
 |classification|The placement of an incident into a hierarchy of descriptors that indicate what the incident is generally about. For example, an incident could be classified as being related to software, and then to Microsoft, and then to Word.|
 |combination class|A feature in Service Manager that is used mostly in reports and in views to display information from multiple classes that are defined in Service Manager.|
-|configuration item|Any component that needs to be managed to deliver a service. In Service Manager, configuration items might include services, hardware, software, buildings, people, and formal documentation, such as process documentation and service level agreements (SLA).|
+|configuration item|Any component that needs to be managed to deliver a service. In Service Manager, configuration items might include services, hardware, software, buildings, people, and formal documentation, such as process documentation and Service Level Agreements (SLA).|
 |configuration item class|A collection of configuration items. Groups can contain members of different configuration items classes (for example, a computer and a user).|
 |connector|A software component that is the integration mechanism between Service Manager and an external system. It's used for data transfers from these external systems to Service Manager.|
 |dependent change management activity|A change management activity that is used to link change requests to a release record.|
@@ -48,7 +48,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 |management pack|A grouping of classes, workflows, views, forms, reports, and knowledge that extends Service Manager with the information necessary to implement all or part of a service management process. For example, the Incident management pack provides the necessary information to enable Service Manager to implement the incident management process.|
 |notification subscriber|The user who receives notifications.|
 |notification subscriber address|A package that contains information about how to reach a particular user. It includes items such as the protocol to use and the target address.|
-|notification subscription|A package that contains the notification subscriber, the notification subscriber address, and any additional information, such as when to send specific types of notifications|
+|notification subscription|A package that contains the notification subscriber, the notification subscriber address, and any additional information, such as when to send specific types of notifications.|
 |parent record|The highest-level container of one or more work items that includes new and changed configuration items.|
 |problem management|The process by which the root cause of one or more incidents is identified and by which a workaround or a permanent fix is found.|
 |problem record|A record that tracks the identification, investigation, and resolution of a root cause.|
@@ -73,7 +73,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 |service offering|The item or work effort that is available to customers through the Self-Service Portal in the service catalog.|
 |service request|A work item that is used to request an existing IT service that is being offered.|
 |service request fulfillment|The process for managing service requests.|
-|SLA|An industry-wide term that is detailed in the Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). Microsoft Solutions Framework (MSF) definition: An agreement between an IT organization and the user community that defines the responsibilities of all participating parties and that binds IT management to provide a particular service of a specific agreed-on quality and quantity. An SLA limits the demands that users may place on the service to the limits that are defined by the agreement.|
+|Service Level Agreements (SLA)|An industry-wide term that is detailed in the Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). Microsoft Solutions Framework (MSF) definition: An agreement between an IT organization and the user community that defines the responsibilities of all participating parties and that binds IT management to provide a particular service of a specific agreed-on quality and quantity. An SLA limits the demands that users may place on the service to the limits that are defined by the agreement.|
 |SLA metric|A calculated time interval that Service Manager determines between the date and time fields in incidents and service requests. For example, the SLA metric resolution time is defined as the difference between the Incident Created Date and the Incident Resolved Date.|
 |SLA target|The specified duration of time in which the IT organization must respond to or resolve an incident or service request.|
 |SQL Server Analysis Services cube|(Analysis Services cube for short.) A conceptual view, consisting of descriptive categories (dimensions) and quantitative values (measures). The generic industry term is **OLAP data cube**.|

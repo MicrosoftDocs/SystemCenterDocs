@@ -2,7 +2,7 @@
 title: Generate Random Text
 description: This article describes the functionality of Generate Random Text activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,24 +17,24 @@ manager: jsuri
 ---
 # Generate Random Text
 
-The Generate Random Text activity generates random strings of text.  
+This article describes the functionality of Generate Random Text activity. The Generate Random Text activity generates random strings of text.  
 
-## Configure the Generate Random Text Activity
+## Configure the Generate Random Text activity
 
  Before you configure the Generate Random Text activity, you need to determine the random text string attributes you want to generate.  
 
  Use the following information to configure the Generate Random Text activity.  
 
-### Details Tab  
+### Details tab  
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Text Length**|Enter the number of characters that you want the string to include; for example, 45.|  
 |**Text Contents**|Select the options for the items that you want the Generate Random Text activity to include in the random text string. In the Minimum Quantity field for each option that you select, enter the minimum number of these characters that you want to include in the string. The total of all Minimum Quantity fields must not be more than the number you entered in the Text Length field.<br /><br /> **Lower-Case Characters**<br /><br /> **Upper-Case Characters**<br /><br /> **Numbers**<br /><br /> **Symbols**|  
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

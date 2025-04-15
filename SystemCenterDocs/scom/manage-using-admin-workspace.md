@@ -4,7 +4,7 @@ description: This article describes the functions you can perform from the Admin
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/26/2025
+ms.date: 04/15/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
@@ -14,7 +14,7 @@ ms.topic: article
 
 # Use the Administration workspace in Operations Manager
 
-
+This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 
 In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
@@ -30,7 +30,9 @@ Use **Connected Management Groups** in the Administration workspace to connect a
 For more information, see [Connect management groups in Operations Manager](manage-connecting-mgmtgroups.md).  
 
 ## Device Management  
-You can use **Device Management** to perform the configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers. The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
+You can use **Device Management** to perform the configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers.
+
+The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
@@ -81,7 +83,7 @@ In Operations Manager, operations such as resolving alerts, running tasks, overr
 For more information, see [Implement User Roles](manage-security-overview.md).  
 
 ## Settings  
-The following table summarizes the settings you can manage in **Settings** in the Administration workspace.  
+The following table summarizes the settings you can manage in **Settings** in the Administration workspace:  
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
