@@ -2,7 +2,7 @@
 title: Query Database 
 description: This article describes the Query Database activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ Use the following information to configure the Query Database activity.
 
 ### Details  
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Query**|Enter the SQL query in the **Query** field|  
 
@@ -50,7 +50,7 @@ Use the following information to configure the Query Database activity.
 
 ### Connection
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Database type**|Select the **Database type** from the drop-down list. The options include the following:<br /><br /> -   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server|  
 
@@ -59,9 +59,9 @@ Use the following information to configure the Query Database activity.
 
  Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.  
 
-### Access Connections
+### [Access Connections](#tab/access-connections)
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**File**|Enter the name of the **Access** database file that you want to access.|  
 |**Workgroup file**|Enter the name of the **Access** workgroup file that is associated with this database.|  
@@ -69,46 +69,48 @@ Use the following information to configure the Query Database activity.
 |**Password**|Enter the password for the workgroup file.|  
 |**DB password**|Enter the password for the Access database.|  
 
-### ODBC Connections
+### [ODBC Connections](#tab/odbc-connections)
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**DSN**|Enter the data source name.|  
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### Oracle Connections
+### [Oracle Connections](#tab/oracle-connections)
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Service Name**|Enter the service name.|  
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
 
-### SQL Server Connections
+### [SQL Server Connections](#tab/sql-server-connections)
 
 ::: moniker range="sc-orch-2025"
 
->[!Note]
+>[!NOTE]
 >MSOLEDB19 Driver is used to establish encrypted connections to the SQL Server (by default). If the SQL server certificate isn't **Trusted** on the Orchestrator machine,  enter *Server=\<serverName\>;Trust Server Certificate=True* for every configuration. [Learn more](/SystemCenterDocs/orchestrator/install.md#secure-connection-to-sql-server) to install a SQL Server certificate.
 
 ::: moniker-end
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Authentication**|Select either **Windows Authentication** or **SQL Server Authentication**.|  
 |**Server**|Enter the name of the SQL Server that you want to access.|  
 |**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, enter the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
 
+---
+
 ### Timeout
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Timeout**|Enter the amount of time that the Query Database activity will wait for the database operation to complete.<br /><br /> Set this value to `0` to wait indefinitely.|  
 
 ### Security Credentials
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Use the security of the account assigned to the service**|Select this option if you want to run the Query Database activity using the same account that the runbook server uses.|  
 |**This account**|Use this option to specify a different account. Enter the **User name** and **Password**. **Note:**  If you specify an invalid user name or password, the account assigned to the runbook server will be used to run the activity.|  
@@ -129,4 +131,4 @@ Use the following information to configure the Query Database activity.
 |Access file|The Access database file that was queried. This published data will only be available when **Access** is selected on the **Connection** tab.|  
 |Access workgroup information file|The Access workgroup file that is associated with the Access database file. This published data will only be available when **Access** is selected on the **Connection** tab.|  
 |For each row published|
-|Full line as a string with fields separated by `;`|The entire row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row|
+|Full line as a string with fields separated by `;`|The entire row that was published with each field in the row separated by a semi-colon (;). Use the **Field** data manipulation function to obtain the values of a field within the row.|

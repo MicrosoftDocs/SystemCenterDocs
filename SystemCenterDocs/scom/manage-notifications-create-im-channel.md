@@ -4,7 +4,7 @@ description: This article describes how to create an instant message notificatio
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -19,7 +19,7 @@ To configure alert notifications for System Center - Operations Manager, your fi
 
 Before you begin, gather the following information from your instant message server:  
 
--   Fully qualified domain name (FQDN).  
+-   Fully Qualified Domain Name (FQDN).  
 
 -   Protocol used to send messages. You have two choices: TCP or Transport Layer Security (TLS).  
 
@@ -29,7 +29,9 @@ Before you begin, gather the following information from your instant message ser
 
 -   Return address to be used for the instant messages.  
 
-## To enable an instant message notification channel  
+## Enable an instant message notification channel  
+
+To enable an instant message notification channel, follow these steps:
 
 1.  Sign in to the computer with a user account that's a member of the Operations Manager Administrators role.  
 
@@ -56,12 +58,12 @@ Before you begin, gather the following information from your instant message ser
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
+- To designate when to send notifications and the addresses to which the notifications should be sent, review [Create notification subscribers](manage-notifications-create-subscribers.md).
 
-* To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).
+- To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).
 
-* To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md).
+- To create an email notification channel, see [Enable an email notification channel](manage-notifications-create-email-channel.md).
 
-* To create a command channel notification, see [How to enable a command notification channel](manage-notifications-create-command-channel.md).
+- To create a command channel notification, see [Enable a command notification channel](manage-notifications-create-command-channel.md).
 
-* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md).
+- To create a text message (SMS) notification channel, see [Enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md).

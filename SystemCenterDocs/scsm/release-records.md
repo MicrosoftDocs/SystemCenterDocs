@@ -5,7 +5,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -14,7 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 # Manage Service Manager release records
 
 
-The key to understanding release management in System Center - Service Manager is realizing how objects, such as change requests and activities, interact when facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.  
+This article provides an overview and describes how to manage Service Manager release records. The key to understanding release management in System Center - Service Manager is realizing how objects, such as change requests and activities, interact when facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.  
 
 Often, there are multiple parts of a project, and there's more than one change request that can be deployed at different times that can affect a project. The overall goal of change management and release management is to protect the production environment from unnecessary changes, so that every change to it must first be approved. Release management deals only with approved changes.  
 
@@ -48,9 +48,13 @@ The next major release for Woodgrove Bank is a deployment of a new version of it
 
 At Woodgrove Bank, Garret configures administrative settings for releases, and he creates a parent release record. He also creates templates for parallel and sequential activities. Then, Phil creates release records, based on the templates that Garret created. Phil chooses which changes to deploy, and then he updates release activities by adding, deleting, or modifying them for each release, as necessary. Garret configures notifications for release records to notify users. Garret and Phil can review the status and the progress of change requests for a release whenever they need to.
 
-## Create a release record
+## Create release record
 
-The Release Manager creates a release record in Service Manager using the following procedure.  
+The Release Manager creates a release record in Service Manager. A release record template is used to create release records.
+
+## [Create a release record](#tab/create-a-release-record)
+
+The Release Manager creates a release record in Service Manager. 
 
 To create a release record, follow these steps:
 
@@ -67,7 +71,7 @@ To create a release record, follow these steps:
 6. As you add an activity, the activity form opens. Enter necessary information, and select **OK** to save the activity.  
 7. When you've added all the activities you want, select **OK** to save the release record and close it. The release record then appears in the **Release Records: All** view.  
 
-## Create a release record template
+## [Create a release record template](#tab/create-a-release-record-template)
 
 A release record template is used to create new release records. A release record template can include predefined release activities. When you use a template for new release records, new release records are created faster than when you create them from scratch.  
 
@@ -90,11 +94,13 @@ To create a release record template, follow these steps:
 8. As you add an activity, the activity form opens. Enter the necessary information, and select **OK** to save the activity.  
 9. When you've added all the activities you want, select **OK** to save the release record template and close it. The release record template then appears in **Templates** list.  
 
+---
+
 ## Combine release records into parent-child groups
 
 Releases are normally deployed to production environments at intervals you define. For example, you can package several releases into monthly batches. You can define each batch as a parent release, which consolidates and links other smaller project\-specific releases into a monthly package. This process can help you verify that all child releases are evaluated together.  
 
-### Promote a release record
+### [Promote a release record](#tab/promote-a-release-record)
 
 The Release Manager can promote a release record to parent release record using the following procedure. A parent release record serves as a container for several releases.  
 
@@ -110,7 +116,7 @@ To promote a release record to a parent release record, follow these steps:
 6. The **Child Items** tab appears in the form where you can add child release records.  
 7. In the release record form, select **OK** to close it.  
 
-### Demote a parent release record
+### [Demote a parent release record](#tab/demote-a-parent-release-record)
 
 The Release Manager can demote a parent release record using the following procedure. If a parent release record contains child release records, all the child release records that it contains are unlinked from the parent and are no longer child release records.  
 
@@ -127,7 +133,7 @@ To demote a parent release record, follow these steps:
 7. The **Child Items** tab no longer appears in the form.  
 8. In the release record form, select **OK** to close it.  
 
-### Link a child release record
+### [Link a child release record](#tab/link-a-child-release-record)
 
 The Release Manager can link a child release record while editing a parent release record using the following procedure.  
 
@@ -140,7 +146,7 @@ To link a child release record to the current parent release record, follow thes
 5. In the **Select objects** dialog, select the release record that you want to link to a parent, and select **Add**. Select **OK** to close the **Select objects** dialog.  
 6. In the parent release record form, select **OK** to close it.  
 
-### Unlink the current release record
+### [Unlink the current release record](#tab/unlink-the-current-release-record)
 
 The Release Manager can unlink a child release record using the following procedure.  
 
@@ -151,7 +157,7 @@ To unlink the current release record from a parent release record, follow these 
 3. In the **Tasks** pane, select **Link or Unlink to Existing Parent Release Record**, and then in the fly\-out list, select **Unlink**.  
 4. In the **Comments** box, enter a comment indicating that you've unlinked the child release record from its parent release record, and select **OK** to close the **Comments** box.  
 
-### Unlink a child release record from the current release record
+### [Unlink a child release record from the current release record](#tab/unlink-a-child-release-record-from-the-current-release-record)
 
 The Release Manager can unlink a child release record while editing a parent release record using the following procedure.  
 
@@ -166,11 +172,13 @@ To unlink a child release record from the current parent release record, follow 
 
 5. In the parent release record form, select **OK** to close it.  
 
+---
+
 ## Define release package configuration items
 
 Release packages normally contain a build and an environment that the release is tested with. The sections in this article describe how to build the configuration item parts that are contained in a release package and how they're added to the release package.  
 
-### Create a build configuration item
+### [Create a build configuration item](#tab/create-a-build-configuration-item)
 
 The release manager can create a build configuration item that defines the software and version that a build consists of by performing the following procedure. After a build is created, it's normally added to the release package of a release record.  
 
@@ -188,7 +196,7 @@ To create a build configuration item, follow these steps:
     2. In the **Available objects** list, select the software configuration item that you want to associate with the build, select **Add**, and select **OK** to close the **Select objects** dialog.  
 6. Select **OK** to close the build form.  
 
-### Create an environment configuration item
+### [Create an environment configuration item](#tab/create-an-environment-configuration-item)
 
 The release manager can create an environment configuration item that defines the computers, services, and people that the environment consists of by performing the following procedure. After an environment is created, it's normally added to the release package of a release record.  
 
@@ -207,7 +215,7 @@ To create an environment configuration item, follow these steps:
     - Computers  
 6. Select **OK** to close the environment form.  
 
-### Add release package information to a release record
+### [Add release package information to a release record](#tab/add-release-package-information-to-a-release-record)
 
 The Release Manager can add release package information for a release record using the following procedure. The release package normally contains the build and environment that the release is tested with.  
 
@@ -221,6 +229,8 @@ To add release package information to a release record, follow these steps:
 6. Under **Affected Services**, select **Add**.  
 7. In the **Select objects** dialog, select the business service items that you want to add to the release package and select **Add**, and select **OK** to close the **Select objects** dialog.  
 8. In the release record form, select **OK** to close it.  
+
+---
 
 ## Create a template for parallel and sequential activities in Service Manager
 
@@ -322,4 +332,4 @@ To determine status and progress for a change request in a release record, follo
 
 ## Next steps
 
-- To learn about how Service Manager reports enable you to collect and view data and trends from across the business environment, read [Data warehouse reporting and analytics](dw-reporting.md).
+To learn about how Service Manager reports enable you to collect and view data and trends from across the business environment, read [Data warehouse reporting and analytics](dw-reporting.md).

@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -18,11 +18,13 @@ monikerRange: 'sc-sm-2016'
 
 # Upgrade your environment to System Center 2016 - Service Manager
 
-You can't start an upgrade to System Center 2016 - Service Manager if any data warehouse jobs or workflows are running. You can use the procedures in this section to stop the data warehouse job schedules and wait for them to complete before you upgrade the data warehouse management server. Before you upgrade the Service Manager management server, stop the Self-Service Portal, if it's installed, and then wait for 10 minutes to let any running workflows finish before you start the upgrade.  
+Use this article to upgrade to System Center 2016 - Service Manager. You can't start an upgrade to System Center 2016 - Service Manager if any data warehouse jobs or workflows are running. You can use the procedures in this section to stop the data warehouse job schedules and wait for them to complete before you upgrade the data warehouse management server. Before you upgrade the Service Manager management server, stop the Self-Service Portal, if it's installed, and then wait for 10 minutes to let any running workflows finish before you start the upgrade.  
 
  Complete the procedures in the following section, in order, to upgrade to System Center 2016 - Service Manager.  
 
 ## Upgrade preparation
+
+Here are some considerations for the upgrade preparation:
 
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored after you install the data warehouse.
 - Refer to the upgrade sequencing of System Center components at [Upgrading System Center 2012 R2 - Service Manager to System Center 2016](./upgrade-service-manager.md).
@@ -35,7 +37,9 @@ You can't start an upgrade to System Center 2016 - Service Manager if any data w
 
 ## Prepare Service Manager 2012 R2 for upgrade
 
-This article describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:  
+This article describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade.
+
+To upgrade the data warehouse management server, follow these steps:
 
 1. List the data warehouse jobs that are running and disable them.
 
@@ -47,7 +51,9 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 
 5. Wait for 10 minutes, and then start the upgrade of the Service Manager management server.  
 
-### List the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
+### [List the data warehouse jobs by using Windows PowerShell cmdlets and disable them](#tab/list-the-data-warehouse-jobs-by-using-windows-powershell-cmdlets-and-disable-them)
+
+To list the data warehouse jobs by using Windows PowerShell cmdlets and disable them, follow these steps:
 
 1. On the computer that hosts the data warehouse management server, select **Start**, select **All Programs**, select **Microsoft System Center 2012 R2**, and select **Service Manager Shell**.  
 
@@ -75,7 +81,9 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 3. A list of the data warehouse jobs appears.
 
 
-### Confirm that the data warehouse jobs have stopped running  
+### [Confirm that the data warehouse jobs have stopped running](#tab/confirm-that-the-data-warehouse-jobs-have-stopped-running) 
+
+To confirm that the data warehouse jobs have stopped running , follow these steps:
 
 1. In the Service Manager console, select **Data Warehouse**.  
 
@@ -83,7 +91,7 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 
 3. In the **Data Warehouse Jobs** pane, observe the **Status** column for each data warehouse job. When the status for each job is listed as **Not Started**, proceed to the next procedure to stop the Self-Service Portal. If no Self-Service Portal exists in your environment, you can start the upgrade process.  
 
-### Prevent MPSync jobs from failing  
+### [Prevent MPSync jobs from failing](#tab/prevent-mpsync-jobs-from-failing)  
 
 - Run the SQL script below on the DWRepository database to get the SQL scripts that drop and add a constraint on the primary key in fact tables in the DWRepository database to correct the problem  
 
@@ -133,19 +141,21 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
     FROM    FactPKListStr f  
     ```
 
+    ---
+
 ## Upgrade to System Center 2016 - Service Manager
 
 Use the following procedures to upgrade your Service Manager environment to System Center 2016 - Service Manager. These procedures include steps for upgrading the data warehouse management server, the Service Manager management server, and the Service Manager console.  
 
-### Upgrade the Service Manager Self Service portal
+### [Upgrade the Service Manager Self Service portal](#tab/upgrade-the-service-manager-self-service-portal)
 
-Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](upgrade-configs-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
+Refer the instructions mentioned in the [Upgrade the Service Manager Self-Service Portal](upgrade-configs-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
 
-### Upgrade steps for custom development
+### [Upgrade steps for custom development](#tab/upgrade-steps-for-custom-development)
 
 With the System Center 2016 - Service Manager release, the product has moved to support .NET 4.5.1. The tool set to support this movement to .NET 4.5.1 is required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in-house or by third party (non-Microsoft). Refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/) to avoid getting into this problem.
 
-### Upgrade the data warehouse management server
+### [Upgrade the data warehouse management server](#tab/upgrade-the-data-warehouse-management-server)
 
  Use the following procedure to upgrade the data warehouse management server.  
 
@@ -181,7 +191,7 @@ To upgrade the data warehouse management server, follow these steps:
 
 12. On **The upgrade was completed successfully** page, if you've already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** checkbox, and select **Close**.  
 
-### Upgrade the Service Manager management server
+### [Upgrade the Service Manager management server](#tab/upgrade-the-service-manager-management-server)
 
  Use the following procedure to upgrade the Service Manager management server.  
 
@@ -203,7 +213,7 @@ To upgrade the Service Manager management server, follow these steps:
 
 8. On the **The upgrade was completed successfully** page, if you've already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** checkbox, and select **Close**.  
 
-### Upgrade the Service Manager console
+### [Upgrade the Service Manager console](#tab/upgrade-the-service-manager-console)
 
  Use the following procedure to upgrade the Service Manager console.  
 
@@ -225,6 +235,8 @@ To upgrade the Service Manager console, follow these steps:
 
 8. On **The upgrade was completed successfully** page, select **Close**.
 
+---
+
 ## Next steps
 
-- Review [Tasks to complete after you upgrade to System Center 2016 - Service Manager](tasks-to-complete-after-upgrade.md).
+Review [Tasks to complete after you upgrade to System Center 2016 - Service Manager](tasks-to-complete-after-upgrade.md).

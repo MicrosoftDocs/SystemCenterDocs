@@ -5,7 +5,7 @@ description: This article provides an overview about how to select a Management 
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/14/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -64,7 +64,7 @@ If you used the Operations console to create the groups in this example in an un
   - Create groups in each management pack file with the overrides. This has the advantage of being easy to implement without any requirement to seal a management pack file, but it has the disadvantage of requiring you to potentially create multiple copies of the same group.
   - Create a separate management pack file for the groups. After you create the groups in the Operations console, export the management pack to an .xml file, and then seal the .xml file by using the process described earlier in this article. You can then install the sealed version of the management pack file so that the groups are available to any other management pack.
 
-## See also
+## Related content
 
-- [Management Pack Templates](management-pack-templates.md)
-- [Monitors and Rules](/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)
+- [Management Pack Templates](management-pack-templates.md).
+- [Monitors and Rules](/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29).
