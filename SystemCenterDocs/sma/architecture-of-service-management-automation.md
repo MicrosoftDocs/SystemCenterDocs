@@ -6,7 +6,7 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
@@ -18,6 +18,8 @@ This article shows a diagram that illustrates System Center - Service Management
 ![SMA architecture diagram.](./media/architecture-of-service-management-automation/smaarchitecture.png)
 
 ## Features
+
+The Service Management Automation features are as follows:
 
 - The SMA web service communicates with Microsoft Azure Pack and authenticates users.
 - The SQL Server databases store and retrieve many components. These include runbooks, runbook assets, activities, integration modules, and runbook job information.

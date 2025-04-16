@@ -4,17 +4,17 @@ description: This article describes the .NET application monitoring feature and 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: e29fed7f-28ec-48fe-b195-0e776a4778da
 ---
 
 # Viewing and investigating alerts for .NET applications
 
-
+This article describes the .NET application monitoring feature and how to use it for the first time.
 
 In System Center – Operations Manager, you can monitor web applications from server- and client-side perspectives to get details about application performance and reliability that can help you pinpoint the root causes of incidents. When you specify settings, the types of events to collect, the performance goals to measure, and servers to monitor, Operations Manager application monitoring reveals how web-based applications are running. You can see how frequently a problem is occurring, how a server was performing when a problem occurred, and the chain of events related to the slow request or method that's unreliable. This information is required to partner with software developers and database administrators to help ensure that applications perform correctly and reliably at optimal levels.
 
@@ -22,12 +22,14 @@ In System Center – Operations Manager, you can monitor web applications from
 
 Application monitoring in Operations Manager has two new monitoring features that allow you to prioritize alerts and then investigate and troubleshoot individual issues:
 
-* **Step 1**: Identify problem areas. Use Application Advisor to help you prioritize and manage which performance and exception events to address. Application Advisor identifies and lists which applications are causing the most problems within an environment. These are the applications you should address first because they're causing most SLA violations. If you're responsible for applications, Application Advisor provides a helpful view into your application’s overall health.
-* **Step 2**: Diagnose problems. Use Application Diagnostics to help you investigate and troubleshoot specific events. You can view event properties, performance counters, distributed chains, and similar and related events to narrow the cause of the issue and help identify who should correct the problem. Application Diagnostics is available as a standalone web console or through links in the Alert descriptions in the Operations Manager consoles.
+1. Identify problem areas. Use Application Advisor to help you prioritize and manage which performance and exception events to address. Application Advisor identifies and lists which applications are causing the most problems within an environment. These are the applications you should address first because they're causing most SLA violations. If you're responsible for applications, Application Advisor provides a helpful view into your application’s overall health.
+2. Diagnose problems. Use Application Diagnostics to help you investigate and troubleshoot specific events. You can view event properties, performance counters, distributed chains, and similar and related events to narrow the cause of the issue and help identify who should correct the problem. Application Diagnostics is available as a standalone web console or through links in the Alert descriptions in the Operations Manager consoles.
 
 After you've configured .NET applications to be monitored, you can view alerts and begin investigating the issues.  To configure monitoring of your .NET application, review the [Before you begin monitoring .NET applications](/previous-versions/system-center/system-center-2012-R2/hh543994(v=sc.12)) article to understand the requirements and configuration steps.  
 
-### View and investigate alerts for .NET applications (server-side example)  
+### View and investigate alerts for .NET applications (server-side example) 
+
+To view and investigate alerts for .NET applications, follow these steps:
 
 1.  To view active alerts by application group, in the System Center - Operations Manager Operations console, in the navigation pane, select **Monitoring**, expand **Application Monitoring\.NET Monitoring** and expand the folder with the name of the application group you configured for monitoring, and select **Active Alerts**.  
 
@@ -116,4 +118,4 @@ After you've configured .NET applications to be monitored, you can view alerts a
 
 ## Next steps
 
-* For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
+For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).

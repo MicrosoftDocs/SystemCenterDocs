@@ -5,7 +5,7 @@ description: This article provides guidance with upgrading agents when planning 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/03/2025
+ms.date: 04/16/2025
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,6 +13,8 @@ ms.topic: article
 ---
 
 # Upgrade agents in a parallel deployment
+
+This article provides guidance with upgrading agents when planning a side-by-side migration to Operations Manager.
 
 ::: moniker range="sc-om-2016"
 

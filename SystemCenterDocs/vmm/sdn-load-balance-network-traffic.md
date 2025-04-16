@@ -5,7 +5,7 @@ description: Learn how to configure Software load balancer (SLB) for the interna
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/15/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,10 +14,9 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Load balance network traffic in an SDN fabric using VMM
 
+In this article learn how to configure Software Load Balancer (SLB) for the internal and external network traffic through a VIP in Software Define Networking (SDN).
 
-
-
-You can use the Software Load Balancer (SLB) to distribute the network traffic evenly among the workloads in Software Define Networking (SDN) managed by the Cloud Service Providers (CSPs) and the tenants. For more information, see [Software Load Balancer (SLB)](sdn-slb.md).
+You can use the SLB to distribute the network traffic evenly among the workloads in Software Define Networking (SDN) managed by the Cloud Service Providers (CSPs) and the tenants. For more information, see [Software Load Balancer (SLB)](sdn-slb.md).
 
 System Center Virtual Machine Manager (VMM) supports the following two scenarios of load balancing:
 
@@ -31,7 +30,7 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
 
 ::: moniker range="sc-vmm-2019"
->[!Note]
+>[!NOTE]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.
 
@@ -39,14 +38,15 @@ This article provides information about how to configure the load balancing of w
 
 ## Before you start
 
-Ensure the following:
--  [SDN network controller](sdn-controller.md) and the SDN [software load balancer](sdn-slb.md) are deployed.
+Here are some considerations before you start configuring the load balancing of workload VMs, ensure:
+
+- [SDN network controller](sdn-controller.md) and the SDN [software load balancer](sdn-slb.md) are deployed.
 
 - Required VMs are created on appropriate networks and are identified for load balancing.
 
 ## Create a VIP template
 
-Use the following procedures to configure the VIPs to load balance the workload VMs (DIPs).
+To configure the VIPs to load balance the workload VMs (DIPs), follow these steps:
 
 1. In the VMM console, select **Fabric** > **VIP Templates**. Right-click and select **Create VIP Template**.
 
@@ -82,11 +82,11 @@ Once the template is created, you can find this under **Fabric** > **VIP Templat
 
 Create a VIP by using the following example scripts. Select the script based on the type of network traffic that you want to load balance:
 
-•	[Script for creating a VIP to load balance external network traffic](#script-for-creating-vip-to-load-balance-external-network-traffic)
+• [Script for creating a VIP to load balance external network traffic](#script-for-creating-vip-to-load-balance-external-network-traffic)
 
-•	[Script for creating a VIP to load balance internal network traffic](#script-for-creating-vip-to-load-balance-internal-network-traffic)
+• [Script for creating a VIP to load balance internal network traffic](#script-for-creating-vip-to-load-balance-internal-network-traffic)
 
-### Script for creating VIP to load balance external network traffic
+### [Script for creating VIP to load balance external network traffic](#tab/script-for-creating-vip-to-load-balance-external-network-traffic)
 
 The following example script creates the VIP from a public IP network to load balance the workload VMs WGB-001 & WGB-002 on port 80.
 ::: moniker range=">=sc-vmm-2019"
@@ -173,7 +173,7 @@ $vip = get-scloadbalancervip -Name $VipName;
 Write-Output "VIP created successfully " $vip;
 ```
 
-### Script for creating VIP to load balance internal network traffic
+### [Script for creating VIP to load balance internal network traffic](#tab/script-for-creating-vip-to-load-balance-internal-network-traffic)
 
 For the following example script, we created a new VIP template by name ILB-VIP-Template for load balancing the port 443 using the procedure detailed in the [previous section](#create-a-vip-template). The script creates a VIP from tenant VM network to load balance the VMs ILB-001 & ILB-002, which are part of the same tenant VM network.
 
@@ -257,3 +257,5 @@ Write-Output "Created VIP " $vip;
 $vip = get-scloadbalancervip -Name $VipName;
 Write-Output " VIP created successfully " $vip;
 ```
+
+---
