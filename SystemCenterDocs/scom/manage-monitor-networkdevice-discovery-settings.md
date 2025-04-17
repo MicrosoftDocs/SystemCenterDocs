@@ -4,7 +4,7 @@ description: This article describes how to configure discovery of network device
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/17/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: f7229aef-0a5c-40de-9219-c1df83fd3aa9
 
 # Network device discovery settings
 
-
+This article describes how to configure discovery of network devices to be monitored by Operations Manager.
 
 System Center Operations Manager offers many settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
 
@@ -37,11 +37,12 @@ System Center Operations Manager offers many settings that you can use to config
 |**IP Address or Host Name**|**Exclude Filters** page, **Add** button, when configuring a recursive discovery rule|Enter either a fully qualified domain name (FQDN), an IPv4 address, or an IPv6 address to exclude from discovery. You can add multiple IP address individually.|
 
 ## Wildcard matching for IP address range
+
 Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly. So, for example, the pattern *abc* doesn't match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it's interpreted as if there were an asterisk at the beginning. For example, the pattern ~[0-9] matches any string that doesn't contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates **except for an empty string**.
 
 Spaces are significant characters and are subject to matching.
 
-The wildcard patterns consist of the following.
+The wildcard patterns consist of the following:
 
 
 |                  Character                  |                                                                                                                     Description                                                                                                                     |                                                                                                                                                                       Example                                                                                                                                                                        |
@@ -56,10 +57,13 @@ The wildcard patterns consist of the following.
 |                      &                      |                                                                                                                      And also                                                                                                                       |                                                         \*NY\*ROUTER matches all strings containing NY and ROUTER<br /><br /><1-100>&\*[02468] matches all even numbers between 1 and 100.<br /><br />\*A\*&#124;\*B\*&\*C\* matches strings that contain either an A or a B, and also a C.                                                          |
 |                      ~                      |                                                                                                                       Except                                                                                                                        |                                                               10.20.30.\*~10.20.30.50 matches all hosts on 10.20.30 except for 10.20.30.50.<br><br>\*Router\*~\*Cisco\*&\*10.20.30.<5-10> matches routers except Cisco routers with the addresses between 10.20.30.5 and 10.20.30.10.                                                                |
 
-## Configuring a VLAN tag
-To differentiate between VLANs, you can configure a tag for a virtual local area network (VLAN) by editing the vlan-tag-settings.conf file on each management server that runs a network discovery rule. Vlan-tag-settings.conf is located in the Operations Manager installation directory in **\Server\NetworkMonitoring\conf\discovery**.
+## Configure a Virtual Local Area Network (VLAN) tag
 
-### To configure a VLAN tag
+To differentiate between VLANs, you can configure a tag for a VLAN by editing the vlan-tag-settings.conf file on each management server that runs a network discovery rule. Vlan-tag-settings.conf is located in the Operations Manager installation directory in **\Server\NetworkMonitoring\conf\discovery**.
+
+### Configure a VLAN tag
+
+To configure a VLAN tag, follow these steps:
 
 1.  On each management server that runs a network discovery rule, open vlan-tag-settings.conf in a text editor.
 

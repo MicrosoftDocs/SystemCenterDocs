@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting the Visio Add-in
+title: Troubleshoot the Visio Add-in
 description: This article provides information to help troubleshoot common issues with the Visio add-in for Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/17/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,9 +12,9 @@ ms.topic: article
 ms.assetid: c9dabbc3-0ac5-46fe-8a34-b82b67c0e6ad
 ---
 
-# Troubleshooting the Visio Add-in
+# Troubleshoot the Visio Add-in
 
-
+This article provides information to help troubleshoot common issues with the Visio add-in for Operations Manager.
 
 The following sections provide information about troubleshooting the Visio Add-in:  
 
@@ -24,7 +24,7 @@ The following sections provide information about troubleshooting the Visio Add-i
 
 ## Enable trace logging for the server data module
 
-Use the following steps to enable trace logging for the server data module installed on the SharePoint server.  
+To enable trace logging for the server data module installed on the SharePoint server, follow these steps:  
 
 1.  Open the Microsoft.Office.Visio.Server.OperationsManager.dll configuration file in a text editor (such as Notepad).  
 
@@ -76,6 +76,7 @@ You can change the font size by selecting the shape and then choosing a differen
 Health Explorer and Alert View hyperlinks might not be available in Edit mode or Full Screen mode if you've grouped your shapes or added links to any shapes that were already contained within groups.  
 
 ### You receive a ConfigurationErrorsException error message  
+
 You might see the following error message:  
 
 ```  
@@ -115,11 +116,13 @@ The state graphic doesn't appear on a stencil even though you've linked the shap
 Some stencils in Visio aren't defined with a wrapping group. To resolve this problem, create a group for the shape, and then use the **Link Shape to Data** option again. To create a group, right-click the shape, and select **Shape** and **Group**.  
 
 ### You see security warnings when you open a diagram  
+
 When you open a document that you previously linked to Operations Manager, you receive multiple security warnings.  
 
 This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don't show this message again**.  
 
 ### You can't reinstall the Visio Add-in  
+
 If you delete the Operations Manager Visio Add-in by using the Visio Trust Center, you can't add it again later.  
 
 This behavior occurs by design in Visio. Before you can add the Operations Manager Visio Add-in again, uninstall it by using Add/Remove Programs (or Programs and Features) in the Control Panel, and then reinstall it.  

@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for SQL Server
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/17/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,7 @@ ms.subservice: operations-manager
 
 # Management Pack for SQL Server Analysis Services Delivery
 
-Management Pack for SQL Server Analysis Services provides monitoring of SQL Server 2012 (and higher) Analysis
+This article explains how to install Management Pack for SQL Server Analysis Services. Management Pack for SQL Server Analysis Services provides monitoring of SQL Server 2012 (and higher) Analysis
 Services instances, databases, and partitions.
 
 You can download Management Pack for SQL Server Analysis Services from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=57382) or System Center Operations Manager Online Catalog.
@@ -46,13 +46,13 @@ After you download and unpack the **Microsoft.SQLServer.AnalysisServices.Managem
 
 ## Prerequisites
 
-The environment that you use must meet the following prerequisites before you start using Management Pack for SQL Server Analysis Services:
+Before you start using Management Pack for SQL Server Analysis services, ensure that the environment you use meet these prerequisites: 
 
 - Install **.NET Framework 4.5** or higher.
 
 - Import **Management Pack for Windows Server Operating System**.
 
-- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers isn't required.
+- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enable Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers isn't required.
 
 - Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services. SQL Server Analysis Services port configuration depends on the SQL Server Browser settings. For more information, see [SQL Server Browser Service (Database Engine and SSAS)](/sql/database-engine/configure-windows/sql-server-browser-service-database-engine-and-ssas).
 

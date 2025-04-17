@@ -1,10 +1,10 @@
 ---
-title: How to recover a database
+title: How to Recover a Database
 description: Describes how to restore a database from backup in System Center - Orchestrator.
-ms.date: 11/01/2024
+ms.date: 04/17/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: how-to
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
@@ -13,7 +13,7 @@ ms.custom: engagement-fy23
 
 # Recover a database
 
-The Orchestrator database can be backed up and restored using most standard MS SQL Server database backup\/restore mechanisms. This includes Microsoft SQL Server Backup, DPM SQL Server backup, and others. Orchestrator provides a VSS Writer that will discover the database server that is associated with the Management Server and back up the database when the Management Server is backed up.  
+This article describes how to restore a database from backup in System Center - Orchestrator. The Orchestrator database can be backed up and restored using most standard MS SQL Server database backup\/restore mechanisms. This includes Microsoft SQL Server Backup, DPM SQL Server backup, and others. Orchestrator provides a VSS Writer that will discover the database server that is associated with the Management Server and back up the database when the Management Server is backed up.  
 
 However, there are a few key considerations when restoring.  
 
@@ -27,7 +27,7 @@ The database key is essentially paired with the service master key on the databa
 
 ### Run a backup
 
-Follow these steps to run a backup:
+To run a backup, follow these steps:
 
 1. [Back up the service master key for Microsoft SQL Server](/sql/t-sql/statements/backup-service-master-key-transact-sql). This is a one\-time operation. Note that **password** is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key can't be recovered from the file.  
 
@@ -40,7 +40,7 @@ Follow these steps to run a backup:
 
 ### Restore the database  
 
-Follow these steps to restore the database:
+To restore the database, follow these steps:
 
 1. If you're restoring to the same database server from which the backup was taken and the service master key hasn't changed, simply restore the backup.  
 2. If you're restoring to a different database server with a different service master key, or you're restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server](/sql/t-sql/statements/restore-service-master-key-transact-sql). 
@@ -67,5 +67,5 @@ Follow these steps to restore the database:
 
 ## Next steps
 
-- [How to Recover Web Components](how-to-recover-web-components.md)
-- [How to Configure Orchestrator Database Connections](how-to-configure-orchestrator-database-connections.md)
+- [Recover web components](how-to-recover-web-components.md).
+- [Configure Orchestrator database connections](how-to-configure-orchestrator-database-connections.md).
