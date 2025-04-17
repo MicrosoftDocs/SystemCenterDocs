@@ -2,7 +2,7 @@
 title: Get File Status
 description: This article describes the functionality of Get File Status activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/16/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ manager: jsuri
 ---
 # Get File Status
 
-The Get File Status activity verifies that a file exists on the local file system or a network location using a UNC path. You can check that a file is available before copying to another location or before starting any services that depend on the existence of the file. If the file doesn't exist, you can take corrective action using the [Copy File](copy-file.md) activity to copy the file from another location.  
+This article describes the functionality of Get File Status activity. The Get File Status activity verifies that a file exists on the local file system or a network location using a UNC path. You can check that a file is available before copying to another location or before starting any services that depend on the existence of the file. If the file doesn't exist, you can take corrective action using the [Copy File](copy-file.md) activity to copy the file from another location.  
 
 ## Configure the Get File Status Activity
 
@@ -36,7 +36,7 @@ The Get File Status activity verifies that a file exists on the local file syste
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

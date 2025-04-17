@@ -5,8 +5,8 @@ description: This article provides information about how to manage VMs with Azur
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 09/02/2024
-ms.topic: article
+ms.date: 04/16/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -33,10 +33,11 @@ Management of Azure subscriptions through certificate-based authentication and a
 
 Management of VMs using Microsoft Entra ID-based authentication and authorization requires Microsoft Entra ID application.
 
->[!Note]
+>[!NOTE]
 > Azure AD mentioned in this article refers to Microsoft Entra ID. [Learn more](https://azure.microsoft.com/updates/azure-ad-is-becoming-microsoft-entra-id/).
 
 ## Before you start
+
 
 Ensure the following prerequisites are met:
 
@@ -61,7 +62,7 @@ Ensure the following prerequisites are met:
 
 ## Manage Microsoft Entra ID-based authentication & authorization and region-specific Azure subscriptions
 
-**Use the following steps**:
+To manage authentication and subscriptions, follow these steps:
 
 1.	Browse to **Azure Subscriptions** and select **Add Subscription**.
 ![Screenshot of add subscription.](media/azure-arm-based/add-subscription.png)

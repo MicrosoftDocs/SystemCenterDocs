@@ -1,7 +1,7 @@
 ---
 title: Back up Orchestrator
 description: Describes how to backup a System Center - Orchestrator environment.
-ms.date: 11/01/2024
+ms.date: 04/16/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,6 +13,8 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Back up Orchestrator
 
+This article describes how to backup a System Center - Orchestrator environment.
+
 A complete backup of an Orchestrator environment consists of the following:  
 
 - Backup of the Orchestrator database.  
@@ -21,7 +23,8 @@ A complete backup of an Orchestrator environment consists of the following:
 
 Orchestrator supports Volume Shadow copy Service \(VSS\) for backup and restore with System Center - Data Protection Manager (DPM). VSS is a framework that allows volume backups to be performed while an application continues to run.  
 
-## Registering Orchestrator with VSS  
+## Register Orchestrator with VSS  
+
 The **SCOExpressWriter** command\-line utility registers an Orchestrator database as a component associated with the Orchestrator management server. This association instructs DPM to back up the Orchestrator database when it performs a backup of the management server. Without this registration DPM must perform an individual backup of each component.  
 
 You must run **SCOExpressWriter** on the management server being registered, and you must be logged on with a user account that is a member of the local Administrators group.  
@@ -44,4 +47,4 @@ The Orchestrator database is a standard SQL Server database that is supported by
 
 ## Next steps
 
-Learn more about [recovering a database](how-to-recover-a-database.md).
+Learn more about [recover a database](how-to-recover-a-database.md).
