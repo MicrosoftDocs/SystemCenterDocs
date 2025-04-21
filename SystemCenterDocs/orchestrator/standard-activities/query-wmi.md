@@ -2,13 +2,13 @@
 title: Query WMI
 description: This article describes the Query WMI activity that will send a WMI query to a system that you specify and return the results.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: article
 ms.assetid: 979b6b2d-8aba-48e3-a42a-8553cdd08559
 caps.latest.revision: 19
 author: PriskeyJeronika-MS
@@ -17,7 +17,7 @@ manager: jsuri
 ---
 # Query WMI
 
-The Query WMI activity will send a WMI query to a system that you specify and return the results. This activity can also be used to check statistics on a remote server to create audit trails that can be reviewed later.  
+This article describes the Query WMI activity that will send a WMI query to a system that you specify and return the results. This activity can also be used to check statistics on a remote server to create audit trails that can be reviewed later.  
 
 ## Configure the Query WMI Activity
 
@@ -27,11 +27,11 @@ The Query WMI activity will send a WMI query to a system that you specify and re
 
 - The WMI query statement you want to run.  
 
-Use the following information to configure the Query WMI activity.  
+Use the following information to configure the Query WMI activity:  
 
 ### Details Tab  
 
-|Settings|Configuration Instructions|  
+|Settings|Configuration instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Type the name of the computer that you are running the WMI query against. You can also use the ellipsis **(...)** button to browse for the computer.|  
 |**Namespace**|Type the name of the WMI namespace that you want to query.|  
@@ -39,7 +39,7 @@ Use the following information to configure the Query WMI activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

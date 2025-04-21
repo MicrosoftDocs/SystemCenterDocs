@@ -1,17 +1,17 @@
 ---
-title: Manage workflows
+title: Manage Workflows
 description: Describes how to manage workflows with the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 42812658-2d83-4cd1-b86f-bacd91add82d
 ---
 
@@ -21,11 +21,11 @@ ms.assetid: 42812658-2d83-4cd1-b86f-bacd91add82d
 
 To use a workflow to automate a process in the Service Manager Authoring Tool, you must define what the workflow should do, when it should run, and what information it needs. You can start with general definitions and then refine them until you have details that you can work with in Service Manager.
 
-Use the procedures in this section to create or delete workflows in the Service Manager Authoring Tool. The Authoring Tool provides a wizard to help you create workflows.  
+Use the procedures in this article to create or delete workflows in the Service Manager Authoring Tool. The Authoring Tool provides a wizard to help you create workflows.  
 
 All workflows run under the security context of the Service Manager Workflow account.  
 
-## Create a new workflow
+## Create a workflow
 
 Use the Create Workflow Wizard to create a new workflow in the Service Manager Authoring Tool. After you create the workflow, you can populate the workflow with activities, as described in [Adding or Removing Workflow Activities](add-workflow-activities.md).  
 
@@ -40,7 +40,9 @@ The following procedures guide you through the process of creating a new workflo
 > [!IMPORTANT]  
 > After you've completed the wizard, you can't change the type of trigger that the workflow uses. For example, after you create a workflow that uses a timer trigger, you can't change it to use a database trigger instead.  
 
-### To create a new workflow triggered by a timer or schedule  
+### [Create a workflow triggered by a timer or schedule](#tab/create-a-workflow-triggered-by-a-timer-or-schedule)  
+
+To create a workflow triggered by a timer or schedule, follow these steps:
 
 1. In the Authoring Tool, open the management pack where you want to store this workflow.  
 2. In the **Management Pack Explorer**, right\-click **Workflows**, and select **Create**.  
@@ -58,7 +60,9 @@ The following procedures guide you through the process of creating a new workflo
     2. After you've set the interval for the workflow, select **Next**.  
 8. On the **Summary** page, review the settings for the new workflow, and select **Create**. After the wizard is completed, select **Close**.  
 
-### Create a new workflow triggered by a database change  
+### [Create a workflow triggered by a database change](#tab/create-a-workflow-triggered-by-a-database-change)  
+
+To create a workflow triggered by a database change, follow these steps:
 
 1. In the Authoring Tool, open the management pack where you want to store this workflow.  
 2. In the **Management Pack Explorer**, right\-click **Workflows**, and select **Create**.  
@@ -69,23 +73,25 @@ The following procedures guide you through the process of creating a new workflo
 7. On the **Trigger Criteria** page, to select a **Class name**, select **Browse**. In the **Class Property** dialog, select the class of object with which the workflow will interact, and select **OK**. For example, select **Automated Activity: Add Computer To AD Group**.  
 8. To select a **Change event**, select the dropdown list, select one of the options, and select **Next**. For example, select the dropdown list, and select **When an instance of the class is updated**.  
 9. Optionally, under **Add Criteria to this trigger**, select **Additional Criteria** to set advanced criteria, such as when the activity status changes from **Pending** to **In Progress**.  
-10. On the **Summary** page, review the settings for the new workflow, and select **Create**. After the wizard is completed, select **Close**.  
+10. On the **Summary** page, review the settings for the new workflow, and select **Create**. After the wizard is completed, select **Close**. 
+
+---
 
 ## Save and build a workflow
 
 Workflows are saved whenever you save the management pack. In addition, when you save a management pack, the Service Manager Authoring Tool automatically identifies the Windows Workflow Foundation \(WF\) workflow files that are associated with the workflow information in the management pack and builds them into workflow assemblies. \(Each WF workflow may have multiple raw files.\) The tool builds one assembly per workflow.  
 
-To save and build workflows, follow these steps:
+To save and build workflows, follow this step:
 
-- In the **Management Pack Explorer**, right\-click the management pack, and select **Save**.  
+In the **Management Pack Explorer**, right\-click the management pack, and select **Save**.  
 
 ## Copy a workflow
 
 Use this procedure to create a copy of a workflow in the Service Manager Authoring Tool. After you copy the workflow, you can edit the properties of either the copy or the original.  
 
-### To copy a workflow  
+To copy a workflow, follow this step:
 
-- In the **Management Pack Explorer**, expand **Workflow**, right\-click the workflow you want to copy, and select **Copy**.  
+In the **Management Pack Explorer**, expand **Workflow**, right\-click the workflow you want to copy, and select **Copy**.  
      The Authoring Tool creates a copy of the workflow and gives it a name that consists of the original workflow name and "\_Copy."  
 
 ## Edit a workflow's details
@@ -117,4 +123,4 @@ To delete a workflow, follow these steps:
 
 ## Next steps
 
-- To add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow, see [Add or remove workflow activities](add-workflow-activities.md).
+To add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow, see [Add or remove workflow activities](add-workflow-activities.md).
