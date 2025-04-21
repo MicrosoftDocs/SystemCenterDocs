@@ -1,22 +1,22 @@
 ---
 ms.assetid: 61b25aa7-b725-445b-8f4c-40ce213714c2
-title: How to Configure Run As Accounts and Profiles for UNIX and Linux Access
+title: Configure Run As Accounts and Profiles for UNIX and Linux Access
 description: This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/10/2025
+ms.date: 04/21/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# How to configure Run As accounts and profiles for UNIX and Linux access
+# configure Run As accounts and profiles for UNIX and Linux access
 
+This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
 
-
-If you're the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Planning Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
+If you're the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Plan Security credentials for accessing UNIX and Linux computers](plan-security-crossplat-credentials.md).  
 
 >[!NOTE]
 >System Center Operations Manager doesn't support domain accounts for maintenance.
@@ -27,7 +27,7 @@ The **UNIX\/Linux Run As Accounts Wizard** creates Run As accounts that can be o
 
 -   A monitoring account  
 
--   An agent maintenance account.  
+-   An agent maintenance account  
 
 Use this wizard three or more times as needed so that you have the following Run As accounts:  
 
@@ -113,8 +113,3 @@ To add a Run As account, follow these steps:
 6.  Select **Save**.  
 
 Repeat as needed until all three profiles have been configured with one or more Run As accounts.  
-
-## Next steps
-
-- [Access UNIX and Linux computers in Operations Manager](manage-security-authenticate-crossplat.md)
-- [Set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)
