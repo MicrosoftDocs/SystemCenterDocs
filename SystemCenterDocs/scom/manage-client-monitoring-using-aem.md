@@ -88,7 +88,7 @@ To configure a management server for client monitoring, follow these steps:
 
 5. On the **Introduction** page of the **Client Monitoring Configuration Wizard**, select **Next**. The Introduction page is skipped if the wizard has run previously and the **Do not show this page again** checkbox was selected.
 
-6. On the **Diagnostic and Usage Data** page, follow these steps:
+6. On the **Diagnostic and Usage Data** page, do one of the following:
 
     - Leave the default option of **No** if you don't want your organization to participate in the program, and select **Next**.
 

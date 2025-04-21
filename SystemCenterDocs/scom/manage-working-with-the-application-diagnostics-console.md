@@ -132,7 +132,7 @@ To filter by application errors and exception class, follow these steps:
 
 4.  To sort by count, at the top of the Count column, select **Count**. The exception classes that have occurred most often are ranked from the highest to the lowest.  
 
-5.  To begin investigating the issue and open Event properties, select an **Exception Class** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
+5.  To begin investigating the issue and open Event properties, select an **Exception Class** entry. For information about working with events, see [Work with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
 
 ## [Example: Grouping Application Errors by Failed Function](#tab/example-grouping-application-errors-by-failed-function)  
 
@@ -148,7 +148,7 @@ To filter by application errors and failed function, follow these steps:
 
 3.  To sort by count, at the top of the Count column, select **Count**. The functions that have failed most often are ranked from the highest to the lowest.  
 
-4.  To begin investigating the issue and open Event properties, select a **Failed Function** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
+4.  To begin investigating the issue and open Event properties, select a **Failed Function** entry. For information about working with events, see [Work with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
 
 ## [Example: Grouping Performance Events by Heaviest Resource](#tab/example-grouping-performance-events-by-heaviest-resource)  
 
@@ -164,7 +164,7 @@ To filter by application errors and failed function, follow these steps:
 
 3.  To sort by count, at the top of the Count column, select **Count**. The exception classes that have occurred most often are ranked from the highest to the lowest. You can also sort by average duration and maximum duration to see if some events that are occurring less often are still causing long delays and should therefore receive your attention.  
 
-4.  To begin investigating the issue and open Event properties, select a **Heaviest Resource** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
+4.  To begin investigating the issue and open Event properties, select a **Heaviest Resource** entry. For information about working with events, see [Work with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
 
 ---
 
