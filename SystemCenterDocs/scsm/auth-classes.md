@@ -6,7 +6,7 @@ ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/10/2025
+ms.date: 04/21/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -17,7 +17,7 @@ ms.assetid: 1d7437cd-2451-417e-b415-735bdca051b8
 
 # Customize and author classes with Service Manager authoring
 
-A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.  
+In this article, you'll learn about customizing and authoring classes with Service Manager authoring. A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.  
 
  Class definitions that represent a larger element, such as a Service Manager feature, are often grouped together. Class definitions are stored in management packs that must be imported into Service Manager to enable Service Manager functionality.  
 
@@ -30,7 +30,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 > [!NOTE]  
 > When you're creating a class, always ensure that the class names are unique among management packs. If possible, use class names that are meaningful in your environment. You can determine whether a class name already exists by using the search feature in the **Class Browser** window of the Service Manager Authoring tool.  
 
-### Properties
+### [Properties](#tab/properties)
 
  All the instances of a particular class share a common set of *properties*. The values for these properties are provided in various methods by users and can vary among different instances. Properties are used to represent details of the actual object, such as a unique name, location, and other details that may be interesting to the user or that are required for management scenarios.  
 
@@ -44,7 +44,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  All the objects have a **Path Name** property that is calculated from the object's key property or properties and those of its hosting parent or parents. For unhosted objects, **Path Name** will be the key property of the class itself. **Path Name** can be used to uniquely identify any instance of a class in the management group.  
 
-### Base classes and inheritance
+### [Base classes and inheritance](#tab/base-classes-and-inheritance)
 
  Every class must specify a *base class* that identifies an existing class that the new class will *specialize*. The management pack libraries that are included with Service Manager contain several classes that can be used as the base for custom classes in management packs. A management pack will typically have at least one class inheriting from a library class and potentially other classes inheriting from classes in the same management pack.  
 
@@ -56,7 +56,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  **Entity** has a single property named **Display Name**. This property is inherited by all the classes inheriting from **Entity**. All the classes eventually inherit from **Entity**. That is why all the classes have a **Display Name** property. No other classes in this example have properties until **Logical Device**, which defines **Name**, **Description**, and **DeviceID**. **DeviceID** is specified as the key property. These properties are all inherited by **Logical Disk** and **Logical Disk \(Server\)**. **Logical Disk \(Server\)** then adds the additional properties **Size**, **Drive Type**, and **File System**. The bottom-level classes that are specific to the version of the operating system inherit the entire set of properties provided by those classes above them in the inheritance tree.  
 
-### Class types
+### [Class types](#tab/class-types)
 
  Most classes have one or more actual instances and are known as *concrete classes*. *Abstract classes* and *singleton classes* are special kinds of classes that behave differently and are used for particular scenarios.  
 
@@ -70,15 +70,15 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  *Singleton classes* are used when there's one and only one instance of a class. The class is the instance, and it always exists. The single instance is being created when the management pack is installed. Similarly, a key property isn't required for a singleton class, because it will only ever have a single instance. A common use of singleton classes is for the **Groups** class, because there's only a single instance of this class required throughout the management group.  
 
-### Class extensions
+### [Class extensions](#tab/class-extensions)
 
  To customize a class, you can extend it by adding new properties to the existing class definition. The new properties will now be included in all the instances of that class that already exist, and in any new instances that will be created. An abstract class can't be extended.  
 
-### Relationships
+### [Relationships](#tab/relationships)
 
  *Relationships* are defined between classes to indicate an association between a particular instance of one class and the particular instance of another. There are three types of relationships, and they're detailed in the following sections:  
 
-- [Hosting relationship](#hosting-relationship)
+- [Hosting relationship](#hosting-relationship) 
 
 - [Containment relationship](#containment-relationship)  
 
@@ -124,11 +124,13 @@ Class relationships affect objects in the following ways:
 
  ![Diagram of a Sample Database Hosting relationship.](./media/auth-classes/author-authguide_sampledatabasehosting.png)
 
+---
+
 ## General guidelines and best practices for classes
 
 Use the following guidelines and best practices when you're customizing classes in the Service Manager Authoring tool.  
 
-### Naming conventions for type definitions
+### [Naming conventions for type definitions](#tab/naming-conventions-for-type-definitions)
 
  The Service Manager schema model naming convention is based on the .NET namespaces naming convention.  
 
@@ -170,17 +172,17 @@ Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Kno
 
 - If you add a custom named calculation when you author a cube, preface the name of the named calculation with NC\_. This will reduce the possibility of using a name of a property that already exists.  
 
-### Do not create too many classes
+### [Do not create too many classes](#tab/do-not-create-too-many-classes)
 
  Creating too many classes can result in needless complexity with minimal value. A good rule is to use the least number of classes to achieve the desired results. Other than abstract classes, if a class isn't going to be the target of any workflow or be used to store data, it probably shouldn't be created. Also, if two classes are similar, consider using a single class for both of them, possibly by using a property that can hold the values for any differences.  
 
-### Do not use properties that update frequently
+### [Do not use properties that update frequently](#tab/do-not-use-properties-that-update-frequently)
 
  Property values should change rarely after they're first populated. A possible cause for frequent property value changes is a custom connector or any other customization that programmatically updates the Service Manager database. These scenarios can potentially cause property values to update too frequently, such as every 10 to 15 minutes or less for a large number of objects.  
 
  Such frequent changes to property values might slightly impact the performance of the workflows, and they might have other performance impacts. This is because the system keeps track of those changes in history. Also, depending on the property being changed, these changes can add a significant amount of data to be processed and stored by the data warehouse.  
 
-### Do not extend an abstract class
+### [Do not extend an abstract class](#tab/do-not-extend-an-abstract-class)
 
  In Service Manager, you can't extend an abstract class. If you need to extend an abstract class, you can do either of the following:  
 
@@ -188,11 +190,13 @@ Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Kno
 
 - Extend each of the relevant concrete classes that derive from the abstract class.  
 
-### Improve simple search for work item classes
+### [Improve simple search for work item classes](#tab/improve-simple-search-for-work-item-classes)
 
  When you define a custom class that is derived from the "**System.WorkItem**" class, we recommend that you store the **DisplayName** property of that class in the following format: **WorkItem.ID\<SPACE\>WorkItem.Title**.  
 
  This improves simple search. Simple search searches only the **DisplayName** property, and by explicitly including the **Title** property value and the **ID** property value in the **DisplayName** property value, the results of simple search are improved. This is because the user can search either by a word in the title or by ID.  
+
+ ---
 
 ## Browse a class in the Authoring tool
 
@@ -206,7 +210,7 @@ You can use the **Class Browser** pane in the Service Manager Authoring tool to 
 
 To browse a class in the Authoring tool, follow these steps:
 
-1. If the **Class Browser** pane isn't visible in the Authoring tool, select **View**, and select **Class Browser**.  
+1. If the **Class Browser** pane isn't visible in the Authoring tool, select **View**, and then select **Class Browser**.  
 
 2. In the **Class Browser** pane, in the management pack list, select the management pack that contains the class that you want to browse. For example, select the **System Library** management pack.  
 
@@ -266,7 +270,7 @@ In the Service Manager Authoring tool, you can create a class that inherits prop
 
 To start with the configuration item class or the work item class as a base class in the Authoring tool, follow these steps:
 
-1. If the **Management Pack Explorer** isn't visible in the Authoring tool, select **View**, and select **Management Pack Explorer**.  
+1. If the **Management Pack Explorer** isn't visible in the Authoring tool, select **View**, and then select **Management Pack Explorer**.  
 
 2. In the **Management Pack Explorer**, select and then expand any management pack.  
 
@@ -287,7 +291,7 @@ To start with the configuration item class or the work item class as a base clas
 
 To start with a selected base class in the Authoring tool, follow these steps:
 
-1. If the **Management Pack Explorer** isn't visible in the Authoring tool, select **View**, and select **Management Pack Explorer**.  
+1. If the **Management Pack Explorer** isn't visible in the Authoring tool, select **View**, and then select **Management Pack Explorer**.  
 
 2. In the **Management Pack Explorer**, locate and then right-click the base class from which the new class will inherit properties and relationships. Select **Inherit from this class**.  
 
@@ -317,7 +321,7 @@ To start without a selected base class in the Authoring tool, follow these steps
 
      If the base class that you selected to inherit properties and relationships from is in an unsealed management pack, this class customization will be saved in that selected management pack.  
 
-6. In the **Create class** dialog, specify the internal name for this class, and select **Create**.  
+6. In the **Create class** dialog, specify the internal name for this class, and then select **Create**.  
 
      In the authoring pane, you can now view the list of properties of the new class. This list includes all the properties of the base class that you selected.  
 
@@ -346,6 +350,6 @@ To extend a class in the Authoring tool, follow these steps:
 
 5. Locate and select the new property or relationship in the **Class properties and relationship** list, and modify its properties in the **Details** pane as needed.
 
-## Next step
+## Next steps
 
 To view and edit the properties of objects, see [Customize and author forms](auth-forms.md).
