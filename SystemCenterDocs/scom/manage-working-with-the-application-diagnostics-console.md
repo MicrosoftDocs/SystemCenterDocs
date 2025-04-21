@@ -26,7 +26,7 @@ Legend:
 
 *  Yes - Can always use the feature  
 
-*  No - Can't use the feature unless the user also belongs to a group that grants access to this functionality.  
+*  No - Can't use the feature unless the user also belongs to a group that grants access to this functionality  
 
 |Tasks|Administrator|Author|Advanced Operator|Application Monitoring Operator|Operator|Read-Only Operator|Report Operator|Report Security Administrator|  
 |-|-----------------|----------|---------------------|-----------------------------------|------------|-----------------------|-------------------|---------------------------------|  
@@ -50,18 +50,18 @@ To open the Application Diagnostics console to look at events and the transactio
 
 Application Diagnostics and Application Advisor are installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, select **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, here are the links to Application Advisor and Application Diagnostics:  
 
-    -   The Application Diagnostics console address is: `http(s)://<web host>/AppDiagnostics`  
+- The Application Diagnostics console address is: `http(s)://<web host>/AppDiagnostics`
 
-    -   The Application Advisor console address is: `http(s)://<web host>/AppAdvisor`  
+- The Application Advisor console address is: `http(s)://<web host>/AppAdvisor`  
 
-    To make access to the consoles easy, add all three console URLs to your web browser's favorites list.  
+To make access to the consoles easy, add all three console URLs to your web browser's favorites list.  
 
-    To open Application Diagnostics, paste the Application Diagnostics URL into your browser. Application Diagnostics opens in the web browser window.  
+To open Application Diagnostics, paste the Application Diagnostics URL into your browser. Application Diagnostics opens in the web browser window.  
 
-    > [!NOTE]  
-    > If you're running Operations Manager on a server rather than a client computer, you can access Application Diagnostics and Application Advisor from the **Start** menu.  
+> [!NOTE]  
+> If you're running Operations Manager on a server rather than a client computer, you can access Application Diagnostics and Application Advisor from the **Start** menu.  
 
-    Access to Application Diagnostics is controlled through the Application Monitoring Operator and Administrator roles. You must be a member of one of these roles to have rights to the console.
+Access to Application Diagnostics is controlled through the Application Monitoring Operator and Administrator roles. You must be a member of one of these roles to have rights to the console.
 
 ## View Events by Areas of Interest  
 
