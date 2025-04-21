@@ -2,7 +2,7 @@
 title: Configuration Manager Integration Pack
 description: The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager functions.
 ms.custom: na
-ms.date: 03/10/2025
+ms.date: 04/21/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Configuration Manager Integration Pack for System Center - Orchestrator
 
-The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager management functions.
+In this article, you'll learn about Integration Pack for Configuration Manager. The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager management functions.
 
 With this integration pack, you can also create workflows that interact with and transfer information to the integration packs for System Center Service Manager, System Center Data Protection Manager, System Center Operations Manager, and System Center Virtual Machine Manager.
 
@@ -55,11 +55,13 @@ Download the Configuration Manager integration pack [here](https://www.microsoft
 
 After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To install an integration pack](how-to-add-an-integration-pack.md).
 
-## Configuring the Configuration Manager integration pack connection settings
+## Configure the Configuration Manager integration pack connection settings
 
 Connections provide a way for you to define the way that the Configuration Manager Activities will connect to the Configuration Manager server(s) in your infrastructure. You must define at least one connection in order to use the Configuration Manager activities, but you can define as many as you need in order to connect to different Configuration Manager servers or utilize different connection settings or credentials.
 
 ### Set up a Configuration Manager connection
+
+To set up a Configuration Manager connection, follow these steps:
 
 1. In the Runbook Designer, select **Options**, and select **Configuration Manager**. The **Configuration Manager** dialog appears.
 
@@ -77,7 +79,3 @@ Connections provide a way for you to define the way that the Configuration Manag
 6. Select **Test Connection**. When the message "Successfully connected" appears, select **OK**.
 
 7. Select **OK** to close the configuration dialog, and select **Finish**.
-
-## Next step
-
-[Configuration Manager activitive](configuration-manager-activities.md)
