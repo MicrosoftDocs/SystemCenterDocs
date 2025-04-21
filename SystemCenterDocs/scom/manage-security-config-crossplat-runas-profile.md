@@ -12,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: how-to
 ---
 
-# configure Run As accounts and profiles for UNIX and Linux access
+# Configure Run As accounts and profiles for UNIX and Linux access
 
 This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
 
