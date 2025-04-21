@@ -2,7 +2,7 @@
 title: Send Email 
 description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 03/27/2025
+ms.date: 04/21/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ manager: jsuri
 ---
 # Send Email
 
-The Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system.  
+This article describes about Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system.  
 
 > [!IMPORTANT]
 > If you put more than 1 MB of text directly into the message body, the activity can fail during initialization. To avoid this issue, enter no more than 1 MB of text directly into the message body or save the text to a file, and provide the file name as the message you want to send.  
@@ -32,7 +32,7 @@ The Send Email activity sends an email message using the standard SMTP protocol 
 
 - The email message you want to send.  
 
-Use the following information to configure the Send Email activity.  
+Use the following information to configure the Send Email activity:  
 
 ### Details  
 
@@ -65,7 +65,7 @@ Use the following information to configure the Send Email activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  
@@ -77,6 +77,3 @@ Use the following information to configure the Send Email activity.
 |Outgoing mail server (SMTP)|The name of the SMTP server used to send the email.|  
 |Outgoing mail server port number|The port used to communicate with the SMTP server.|  
 |Outgoing mail server SSL enabled|Indicates whether the mail server has SSL enabled.|
-
-## Next steps
-- To see what tasks you can accomplish when using Notification activity, see [Notification](notification.md).

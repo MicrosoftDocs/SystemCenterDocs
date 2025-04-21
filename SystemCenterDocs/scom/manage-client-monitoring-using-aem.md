@@ -4,17 +4,17 @@ description: This article describes how to use agentless exception monitoring in
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/27/2025
+ms.date: 04/21/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: fe53bb3b-9072-4b7d-a518-a210c3e1e17f
 ---
 
 # Client monitoring using error reporting in Operations Manager
 
-
+This article describes how to use agentless exception monitoring in Operations Manager.
 
 The Client Monitoring feature of System Center Operations Manager enables you to monitor operating systems and applications for errors and participate in the Error Reporting program.  The Error Reporting program collects diagnostics and usage data about Operations Manager, which is used by Microsoft to improve the installation experience, quality, and security of future releases.
 
@@ -43,9 +43,8 @@ When you choose to participate in the reporting service, you configure clients w
 
 The error reports forwarded from your organization to Microsoft are combined with reports from other organizations and individual customers to help Microsoft solve issues and improve the Microsoft products and features that customers use most often. For more information about the Microsoft Error Reporting service, see [the privacy statement for Microsoft Error Reporting Service page](https://privacy.microsoft.com/microsoft-error-reporting-privacy-statement).  
 
-**Prerequisites**
 
-Before you configure error reporting settings, ensure the management server has access to the Internet to participate in the program.
+The management server must have access to the Internet to participate in the program.  
 
 To configure error reporting settings, follow these steps:
 
@@ -203,7 +202,7 @@ To configure error transmission settings for client monitoring, follow these ste
     > [!NOTE]  
     > Select **Read the privacy statement** to view the privacy statement.  
 
-### Filter errors that are sent to Microsoft  
+### [Filter errors that are sent to Microsoft](#tab/filter-errors-that-are-sent-to-microsoft) 
 
 To filter errors that are sent to Microsoft, follow these steps:
 
@@ -215,7 +214,7 @@ To filter errors that are sent to Microsoft, follow these steps:
 
 4. Select **OK** twice.  
 
-### Configure diagnostic data sent to Microsoft with error reports  
+### [Configure diagnostic data sent to Microsoft with error reports](#tab/configure-diagnostic-data-sent-to-microsoft-with-error-reports)  
 
 To configure diagnostic data sent to Microsoft with error reports, follow these steps:
 
@@ -233,6 +232,4 @@ To configure diagnostic data sent to Microsoft with error reports, follow these 
 
 2. Select **OK**.
 
-## Next steps
-
-- Know how to use .NET application monitoring feature, see [Viewing and investigating alerts for .NET applications](manage-viewing-and-investigating-alerts-for-dotnetapps.md)
+---

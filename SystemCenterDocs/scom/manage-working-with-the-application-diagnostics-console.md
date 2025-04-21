@@ -4,15 +4,17 @@ description: This article describes how to use the Application Diagnostics conso
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/27/2025
+ms.date: 04/21/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: bb451d4a-4e48-428d-8992-0f2e2b5c240f
 ---
 
 # Work with the Application Diagnostics console
+
+This article describes how to use the Application Diagnostics console to review captured application error, exceptions, and events.
 
 The Application Diagnostics console is an event management system for .NET Application Performance Monitoring in System Center - Operations Manager. You can use Application Diagnostics console to monitor deployed .NET applications for slowdowns, faults, and failures, and immediately pinpoint the source of the problem.  
 
@@ -39,14 +41,14 @@ Legend:
 ## The Application Diagnostics console  
 The Application Diagnostics console is the place to look at the individual performance and reliability events that are being raised within your environment. You can look at all the events, or group them into "problem groups" in which events coming from the same sources are grouped together to highlight the problems with the monitored applications. Use Application Diagnostics to look at events and the transaction chains related to those events to understand how the performance and reliability issues are affecting your applications. 
 
-The Application Advisor console provides analytics and telemetry of the data presented in Application Diagnostics. Through the Application Advisor console you gain insights into which events are causing the most problems. For more information about Application Advisor, see [Prioritizing alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md)  
+The Application Advisor console provides analytics and telemetry of the data presented in Application Diagnostics. Through the Application Advisor console you gain insights into which events are causing the most problems. For more information about Application Advisor, see [Prioritize alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md)  
 
 
 ### Open the Application Diagnostics console  
 
-To open the Application Diagnostics console to look at events and the transaction chains related to those events, follow these steps:
+To open the Application Diagnostics console to look at events and the transaction chains related to those events, follow this step:
 
-1.  Application Diagnostics and Application Advisor are installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, select **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, here are the links to Application Advisor and Application Diagnostics:  
+Application Diagnostics and Application Advisor are installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, select **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, here are the links to Application Advisor and Application Diagnostics:  
 
     -   The Application Diagnostics console address is: `http(s)://<web host>/AppDiagnostics`  
 
@@ -65,11 +67,11 @@ To open the Application Diagnostics console to look at events and the transactio
 
 In Application Diagnostics, there are two major types of events: those related to application performance and those related to application failures and errors. The failures and errors can be divided further into connectivity, security, and failure issues. Failure issues are typically related to a problem with the application code. In Application Diagnostics, you can view events grouped in these ways:  
 
--   All (displays all events).
+-   All (displays all events)
 
--   Application Errors (displays exception events).
+-   Application Errors (displays exception events) 
 
--   Performance (displays performance events).
+-   Performance (displays performance events) 
 
 To view Events by Areas of Interest, follow these steps:
 
@@ -91,7 +93,7 @@ To group Events within Areas of Interest, follow these steps:
 
 Your first selection (**Application Errors** and **Performance**) affects the grouping options you see for your second selection.  
 
-### Group Application Errors  
+### [Group Application Errors](#tab/group-application-errors) 
 
 -   **Problem** What it displays: All events in this grouping are coming from the same entry point into the application (for example, a method or a web page) and have the same call stack. Value: Consolidating events by problem allows you to prioritize your efforts to correct an issue based on the number of events in the group.  
 
@@ -103,7 +105,7 @@ Your first selection (**Application Errors** and **Performance**) affects the gr
 
 -   **None** This option doesn't group the events.  
 
-### Grouping Performance Events  
+### [Group Performance Events](#tab/group-performance-events)  
 
 -   **Problem** What it displays: All events in this grouping have the identical call stack. Value: Consolidating events by problem allows you to prioritize your efforts to correct an issue based on the number of events in the group.  
 
@@ -111,7 +113,9 @@ Your first selection (**Application Errors** and **Performance**) affects the gr
 
 -   **None** This option doesn't group the events.  
 
-## Example: Grouping Application Errors by Exception Class  
+---
+
+## [Example: Grouping Application Errors by Exception Class](#tab/example-grouping-application-errors-by-exception-class)  
 
 Filtering by application errors and exception class quickly shows you which kinds, or classes, of exception events you're receiving most often.  
 
@@ -130,7 +134,7 @@ To filter by application errors and exception class, follow these steps:
 
 5.  To begin investigating the issue and open Event properties, select an **Exception Class** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
 
-## Example: Grouping Application Errors by Failed Function  
+## [Example: Grouping Application Errors by Failed Function](#tab/example-grouping-application-errors-by-failed-function)  
 
 Filtering by application errors and failed function quickly shows you which functions are failing most often. The functions that are failing the most are the ones you should investigate first to have the highest impact on your application's reliability.  
 
@@ -146,7 +150,7 @@ To filter by application errors and failed function, follow these steps:
 
 4.  To begin investigating the issue and open Event properties, select a **Failed Function** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
 
-## Example: Grouping Performance Events by Heaviest Resource  
+## [Example: Grouping Performance Events by Heaviest Resource](#tab/example-grouping-performance-events-by-heaviest-resource)  
 
 Filtering by application errors and exception class quickly shows you which performance events are triggered by the same resource call. The performance events that are most often triggered by the same resource call are the ones you should investigate first to have the highest impact on your application's performance.  
 
@@ -162,8 +166,10 @@ To filter by application errors and failed function, follow these steps:
 
 4.  To begin investigating the issue and open Event properties, select a **Heaviest Resource** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
 
+---
+
 ## Next steps
 
-* To learn how to prioritize and manage which alerts to address and where the most events are occurring, review [prioritize alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md).  
+* To learn how to prioritize and manage which alerts to address and where the most events are occurring, review [Prioritize alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md).  
 
-* To learn how to view alerts and begin investigating the issues raised, review [view and investigate alerts for .NET applications](manage-viewing-and-investigating-alerts-for-dotnetapps.md).
+* To learn how to view alerts and begin investigating the issues raised, review [View and investigate alerts for .NET applications](manage-viewing-and-investigating-alerts-for-dotnetapps.md).

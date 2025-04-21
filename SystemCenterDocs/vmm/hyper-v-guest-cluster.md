@@ -5,8 +5,8 @@ description: This article provides guidance about creating a guest cluster from 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/27/2025
-ms.topic: article
+ms.date: 04/21/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -24,7 +24,7 @@ You can use service templates to create a guest cluster. That cluster can then b
 
 ## Before you start
 
-Here are some considerations before you start deploying VMs to Hyper-V host clusters:
+Here are some considerations before you deploy VMs to Hyper-V host clusters:
 
 ::: moniker range="sc-vmm-2016"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2012 R2 or later. Otherwise, deployment will fail.

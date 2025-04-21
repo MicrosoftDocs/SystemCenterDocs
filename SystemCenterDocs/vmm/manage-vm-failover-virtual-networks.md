@@ -5,7 +5,7 @@ description: This article describes how to fail over VMs between virtual network
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/27/2025
+ms.date: 04/21/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -49,7 +49,7 @@ Here are some considerations before you start configuring VM failover between vi
 - Ensure both VMs are turned off before you run the scripts.
 - Ensure that the replication state is enabled on both VMs.
 
-## Run the planned failover script
+## [Run the planned failover script](#tab/run-the-planned-failover-script)
 
 Here's what this script does:
 
@@ -265,12 +265,12 @@ foreach($vmAdapter in $VMOnPDAdapter)
 }
 ```
 
-## Run the reverse replication/cancel script
+## [Run the reverse replication/cancel script](#tab/run-the-reverse-replicationcancel-script)
 
 Here's what this script does:
 
-1. If you didn't run reverse replication in the failover script, you can use this script for reverse replication, or to cancel the failover.
-2. If you cancel, the script reverses the networking steps and restores the primary VM connections after disconnecting the replica VM networks.
+- If you didn't run reverse replication in the failover script, you can use this script for reverse replication, or to cancel the failover.
+- If you cancel, the script reverses the networking steps and restores the primary VM connections after disconnecting the replica VM networks.
 
 ### Run the script
 
@@ -494,6 +494,7 @@ foreach($vmAdapter in $VMOnDRAdapter)
     $counter = $counter + 1
 }
 ```
+---
 
 ## Next steps
-- To migrate VMs in the VMM fabric, see [Migration of virtual machines – overview](migrate.md).
+To migrate VMs in the VMM fabric, see [Migration of virtual machines – overview](migrate.md).

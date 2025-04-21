@@ -5,7 +5,7 @@ description: This article describes how to create a management server action acc
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/27/2025
+ms.date: 04/21/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,7 @@ ms.topic: article
 
 # Create an action account in Operations Manager
 
+This article describes how to create a management server action account in Operations Manager.
 
 Use the following procedure to create a new management server action account. The new action account won't, by default, have access to Operations Manager database unless access is inherited in the credentials you assign to the action account. If not, a new account for accessing the Operations Manager database needs to be created.  
 
@@ -29,7 +30,7 @@ To create an action account in Operations Manager, follow these steps:
 
 4.  In the **Create Run As Account Wizard**, on the **Introduction** page, select **Next**.  
 
-5.  On the **General** page, follow these steps:
+5.  On the **General** page, do the following: 
 
     1.  In the **RunAsAccounttype** list, select **Action Account**.  
 
