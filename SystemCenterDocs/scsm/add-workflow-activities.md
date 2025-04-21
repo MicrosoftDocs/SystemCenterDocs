@@ -1,23 +1,23 @@
 ---
-title: Add or remove workflow activities
+title: Add or Remove Workflow Activities
 description: You can add or remove Service Manager workflow activities in a workflow to automate processes.
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 32de708f-02f7-4021-882b-14ed140ebc89
 ---
 
 # Add or remove Service Manager workflow activities
 
-Workflow activities are the building blocks of a workflow. You can use the procedures in this section to add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow.  
+Workflow activities are the building blocks of a workflow. You can use the procedures in this article to add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow.  
 
 ## Add an activity to a workflow
 
@@ -46,6 +46,8 @@ If your workflow uses multiple activities of the same type \(such as multiple Ad
 
 ### Copy and paste an activity  
 
+To copy and paste an activity, follow these steps:
+
 1. In the **Management Pack Explorer**, expand **Workflows**, right\-click the workflow you want, and select **Edit**. This opens the workflow in the authoring pane.  
 
 2. In the authoring pane, right\-click the activity, and select **Copy**.  
@@ -60,11 +62,11 @@ If your workflow uses multiple activities of the same type \(such as multiple Ad
 
 The Activity Library includes specialized activities that incorporate Windows PowerShell scripts, VBScript scripts, or command\-line scripts into workflows. Use a script activity to import the content of the script and to define the parameters that the script requires to run. The Service Manager Authoring Tool creates a task in the management pack to manage the script and store the script content and parameters.  
 
- Service Manager doesn't verify the script parameters; therefore, you've to ensure that the script logic handles validation. Also, when you create an incident with an extended property and don't provide a value for the extended property, the value of the parameter isn't parsed, and it's passed as $Data\/Property.  
+Service Manager doesn't verify the script parameters; therefore, you've to ensure that the script logic handles validation. Also, when you create an incident with an extended property and don't provide a value for the extended property, the value of the parameter isn't parsed, and it's passed as $Data\/Property.  
 
- Script activities run as a separate process from the workflows; however, they also run under the security context of the Service Manager Workflow account.  
+Script activities run as a separate process from the workflows; however, they also run under the security context of the Service Manager Workflow account.  
 
- Use the following procedure to add a script to a workflow.  
+Use the following procedure to add a script to a workflow.  
 
 To add a script to a workflow, follow these steps:
 
@@ -72,7 +74,7 @@ To add a script to a workflow, follow these steps:
 
 2. In the **Activities Toolbox** pane, locate the activity group **Script Activities** and its subgroup **Generic Script Activities**. Drag the script activity that you want to use to a position between the workflow start and workflow end icons or between two existing activities.  
 
-3. Set the script activity properties:  
+3. Set the script activity properties. To set this, do the following:  
 
     1. In the **Details** pane, select any of the properties in the **Activity Inputs** category, and select the ellipsis button (**...**) that appears next to the property.  
 
@@ -112,13 +114,15 @@ Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel**
 
 ### Add each loop to a workflow  
 
+To add each loop to a workflow, follow these steps:
+
 1. In the **Management Pack Explorer**, expand **Workflows**, right\-click the workflow you want, and select **Edit**. This opens the workflow in the authoring pane.  
 
 2. In the **Activities Toolbox** pane, locate the activity group **Control Flow**.  
 
 3. Drag the **For Each Loop** activity to a position between the Workflow Start and Workflow End icons or between two existing activities.  
 
-4. Add the activities for which you want to loop the execution to the **Loop Container\(ForEachChildActivity\)**. To add each activity:  
+4. Add the activities for which you want to loop the execution to the **Loop Container\(ForEachChildActivity\)**. To add each activity, do the following:  
 
     1. In the **Activities Toolbox** pane, expand the activity group that contains the activity that you want to use.  
 
@@ -145,4 +149,4 @@ To remove an activity from a workflow, do the following:
 
 ## Next steps
 
-- [Configure the way activities manage and pass information](configure-activities-information.md).
+[Configure the way activities manage and pass information](configure-activities-information.md).

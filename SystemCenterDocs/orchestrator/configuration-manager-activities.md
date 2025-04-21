@@ -1,7 +1,7 @@
 ---
-title: Configuration Manager integration pack activities
+title: Configuration Manager Integration Pack Activities
 description: This article contains configuration instructions for activities provided by the Configuration Manager integration pack.
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -13,7 +13,9 @@ ms.custom: UpdateFrequency3
 
 # Configuration Manager integration pack activities
 
-The following configuration instructions apply to all the activities in this integration pack.
+This article contains configuration instructions for activities provided by the Configuration Manager integration pack.
+
+The following configuration instructions apply to all the activities in this integration pack:
 
 ## Activity properties
 
@@ -25,10 +27,12 @@ runbook.
 
 ## Configure activity properties
 
-- Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
-- To save your configuration entries, select **Finish**.
+To configure activity properties, follow these steps:
 
-> [!Note]
+1. Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
+2. To save your configuration entries, select **Finish**.
+
+> [!NOTE]
 > The filters for all the activities are case sensitive. A value that doesn't match the case of your filter entry isn't returned.
 
 In the activity properties dialog, several tabs along the left side
@@ -81,8 +85,7 @@ Logon/Logoff. The settings on this tab are optional.
 
 ## Mandatory assignment schedules
 
-To add a new mandatory assignment, select the **New** button. The
-Mandatory Schedule dialog appears.
+To add a new mandatory assignment, select the **New** button. The Mandatory Schedule dialog appears.
 
 The Mandatory Schedule dialog contains the following elements:
 
@@ -100,6 +103,8 @@ The Mandatory Schedule dialog contains the following elements:
 
 ## Add a mandatory assignment
 
+To add a mandatory assignment, follow these steps:
+
 1. Select **Add**. The **Mandatory Schedule** dialog opens.
 2. To schedule the advertisement at a specified date and time, select **Use the following schedule**.
 3. To schedule the event, select the ellipsis **(…)** button to open the **Date Time Selection** dialog. Modify the date and time according to your needs, and select **OK**.
@@ -108,7 +113,7 @@ The Mandatory Schedule dialog contains the following elements:
 6. To run the advertisement after an event, select **Assign immediately after this event**. Select the applicable option **As soon as possible**, **Logoff**, or **Logon**.
 7. Select **OK** to save the schedule.
 
-> [!Note]
+> [!NOTE]
 > You can create multiple mandatory assignments.
 
 ## Run Behavior tab
@@ -156,8 +161,8 @@ this period, a platform event will be sent and the issue will be
 reported. You can also choose whether to generate a platform event if
 the activity returns a failure.
 
-**To be notified when the activity takes longer than a specified time to
-run or fails to run**
+To be notified when the activity takes longer than a specified time to
+run or fails to run, follow these steps:
 
 1. In the **Event Notifications** box, enter the **number of seconds**
     of run time before a notification is generated.
@@ -178,7 +183,7 @@ An activity can only subscribe to published data from the activities
 that are linked before it in the runbook. You can use published data to
 automatically populate the property values needed by activities.
 
-To use published data:
+To use published data, follow these steps:
 
 1. Right-click the property value box, select **Subscribe**, and select **Published Data**.
 

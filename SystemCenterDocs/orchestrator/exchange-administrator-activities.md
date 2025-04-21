@@ -2,7 +2,7 @@
 title: Exchange Administrator Activities
 description: The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -31,6 +31,8 @@ For example, GetMailbox activity has a property Identity. If the value for this 
 
 ### View and configure the properties for an activity
 
+To view and configure the properties for an activity, follow these steps:
+
 1. Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 2. View and configure the activity properties as needed.
 3. To save your configuration entries, select **Finish**.
@@ -47,26 +49,31 @@ The **Properties** tab contains properties that are specific to the activity. Al
 
 ### Configure the Configuration Name property
 
+To configure the Configuration Name property, follow these steps:
+
 1. Select the ellipsis **(...)** button next to the **Name** field.
 
 2. Select the applicable connection name. Connections displayed in the list have been previously configured as described in <span>Exchange Admin Integration Pack for System Center - Orchestrator</span>.
 
 ### Criteria for filters
 
-The **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When you specify filter criteria, you can select one of the available methods of comparison. The system provides an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds items that don't match the filter. All text filters are case sensitive.
+The **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When you specify filter criteria, you can select one of the available methods of comparison. The system provides an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds items that don't match the filter. All text filters are case sensitive:
 
-- **Equals**: The property of the item matches the text or number specified in the filter.
-- **Does not equal**: The property of the item doesn't match the text or number specified in the filter.
-- **Is less than**: The numeric property of the item is less than the number specified in the filter.
-- **Is less than or equal to**: The numeric property of the item is less than or equal to the number specified in the filter.
-- **Is greater than**: The numeric property of the item is greater than the number specified in the filter.
-- **Is greater than or equal to**: The numeric property of the item is greater than or equal to the number specified in the filter.
-- **Contains**: The property of the item contains the exact text specified in the filter. There can be other text surrounding the matching text.
-- **Does not contain**: The property of the item doesn't contain the exact text specified in the filter.
-- **Matches pattern**: This comparison method uses regular expressions to specify a pattern that the text must match.
-- **Does not match pattern**: This comparison method uses regular expressions to specify a pattern that the text must not match.
-- **Starts with**: The property of the item starts with the exact text specified in the filter.
-- **Ends with**: The property of the item ends with the exact text specified in the filter.
+|Text filter|Description|
+|-----------------------------|------------------------------|
+|**Equals**|The property of the item matches the text or number specified in the filter.|
+|**Does not equal**|The property of the item doesn't match the text or number specified in the filter.|
+|**Is less than**|The numeric property of the item is less than the number specified in the filter.|
+|**Is less than or equal to**|The numeric property of the item is less than or equal to the number specified in the filter.|
+|**Is greater than**|The numeric property of the item is greater than the number specified in the filter.|
+|**Is greater than or equal to**|The numeric property of the item is greater than or equal to the number specified in the filter.|
+|**Contains**|The property of the item contains the exact text specified in the filter. There can be other text surrounding the matching text.|
+|**Does not contain**|The property of the item doesn't contain the exact text specified in the filter.|
+|**Matches pattern**|This comparison method uses regular expressions to specify a pattern that the text must match.|
+|**Does not match pattern**|This comparison method uses regular expressions to specify a pattern that the text must not match.|
+|**Starts with**|The property of the item starts with the exact text specified in the filter.|
+|**Ends with**|The property of the item ends with the exact text specified in the filter.|
+
 
 ### The Run Behavior tab
 
@@ -78,9 +85,11 @@ The **Get** activities retrieve information from another activity or outside sou
 
 By default, the data from the **Get** activity will be passed on as multiple individual outputs. These multiple outputs will invoke the next prescribed activity as many times as there are items in the output. Alternatively, to request a single combined output for the activity, you can enable the **Flatten** option. When you enable the **Flatten** option, you must specify the output format:
 
-- **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files.
-- **Separate with**. Each item is separated by one or more characters of your choice.
-- **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
+|Output format|Description|
+|-----------------------------|------------------------------|
+|**Separate with line breaks**|Each item is on a new line. This format is useful for creating human-readable text files.|
+|**Separate with**|Each item is separated by one or more characters of your choice.|
+|**Use CSV format**|All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.|
 
 The **Get** activity will produce a new set of data every time it runs. The **Flatten** feature doesn't flatten data across multiple instances of the same activity.
 
@@ -89,6 +98,8 @@ The **Get** activity will produce a new set of data every time it runs. The **Fl
 Some activities are expected to take only a limited amount of time to complete. If they don't complete within an expected time frame, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this timeout threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
 ### To be notified when the activity takes longer than a specified time to run or fails to run
+
+To be notified of timeout and failure event notifications, follow these steps:
 
 1. In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
@@ -101,6 +112,8 @@ Published data is the data produced as a result of the actions of an activity. T
 An activity can subscribe only to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
 ### Use published data
+
+To use published data, follow these steps:
 
 1. Right-click the property value box, select **Subscribe**, and then select **Published Data**.
 2. Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
