@@ -9,7 +9,7 @@ ms.date: 04/21/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # configure Run As accounts and profiles for UNIX and Linux access
