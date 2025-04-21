@@ -14,7 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Troubleshoot Service Manager deployment issues
 
-
+This article describes how to troubleshoot System Center - Service Manager deployment issues.
 
 An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot data warehouse jobs](manage-dw.md).
 
@@ -38,6 +38,6 @@ Additional Error Description : MODIFY FILE encountered operating system error 11
 
 You've to either increase the amount of free disk space that is available or reduce the amount of space that Service Manager allocates for the database, and then attempt the installation again. If you're installing Service Manager in a nonproduction environment, you can specify as little as 500 MB for the database.
 
-## Next step
+## Next steps
 
 To deploy Service Manager using command-line parameters, review [Deploy Service Manager from a command line](deploy-cmd-line.md).
