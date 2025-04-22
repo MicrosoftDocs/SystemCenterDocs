@@ -59,6 +59,8 @@
       href: deploy-dpm-protection-agent.md
     - name: Deploy protection groups
       href: create-dpm-protection-groups.md
+    - name: Modify Long-term backup schedule 
+      href: modify-long-term-backup-schedule.md
     - name: Configure firewall settings
       href: configure-firewall-settings-for-dpm.md
     - name: Offline backup
