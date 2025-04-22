@@ -5,16 +5,16 @@ description: This article describes how to configure the Operations Manager agen
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/28/2025
+ms.date: 04/22/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Control access by using the Health Service Lockdown Tool in Operations Manager
+# Control access by using the Health Service Lockdown tool in Operations Manager
 
-
+This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
 
 On computers requiring high security, for example a domain controller, you might need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.  
 
@@ -61,7 +61,7 @@ To deny an account with the health service lockdown tool, follow these steps:
 
 ## Unlock the Action account
 
-To unlock the Action account, follow these steps:
+To unlock an Action account, follow these steps:
 
 1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
@@ -79,7 +79,7 @@ To unlock the Action account, follow these steps:
 
 ## Add the Local System account
 
-To add the Local System account, follow these steps:
+To add a Local System account, follow these steps:
 
 1.  Sign in to the computer with an account that is a member of the Administrators group.  
 
@@ -97,8 +97,8 @@ To add the Local System account, follow these steps:
 
 ## Next steps
 
-- To understand how to create a Run As account and associate with a Run As profile, see [Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
+- To understand how to create a Run As account and associate with a Run As profile, see [Create a Run As Account and associate with a Run As Profile](manage-security-create-runas-link-profile.md).
 
-- If you need to create new credentials for the management server action account, see [Create a New Action Account in Operations Manager](manage-security-create-runas-actionaccount.md).
+- If you need to create new credentials for the management server action account, see [Create an Action Account in Operations Manager](manage-security-create-runas-actionaccount.md).
 
-- To understand how to target Run As account distribution to agent-managed computers securely, review [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  
+- To understand how to target Run As account distribution to agent-managed computers securely, review [Distribution and targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  

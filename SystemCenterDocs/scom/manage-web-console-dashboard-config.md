@@ -1,21 +1,21 @@
 ---
 ms.assetid:
-title: Manage dashboard and widget configuration in Web console
+title: Manage Dashboard and Widget Configuration in Web Console
 description: This article describes how to manage the configuration of the HTML5 Web console dashboards and widgets in System Center Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/28/2025
+ms.date: 04/22/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Manage dashboard and widget configuration in the Web console
 
-
+This article describes how to manage the configuration of the HTML5 Web console dashboards and widgets in System Center Operations Manager.
 
 ## Delete a dashboard
 
@@ -76,4 +76,4 @@ Move your cursor to the bottom right or right border of the widget. You will see
 To save the changes you want to keep, select **Save Changes**. If you want to cancel all your changes, select **Undo changes**.
 
 ## Next steps
-- To understand how to create your own custom views and dashboards in Operations Manager, see [Create and scope views in Operations Manager](manage-console-scope-views.md).
+To understand how to create your own custom views and dashboards in Operations Manager, see [Create and scope views in Operations Manager](manage-console-scope-views.md).

@@ -5,8 +5,8 @@ description: This article describes about how to route the network traffic betwe
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 103/28/2025
-ms.topic: article
+ms.date: 04/22/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -44,7 +44,7 @@ Before you route traffic across networks in the SDN infrastructure, ensure you m
 
 -   An SDN VM network with network virtualization is created.
 
-## Configure Site-to-Site VPN connections using VMM
+## [Configure Site-to-Site VPN connections using VMM](#tab/configure-site-to-site-vpn-connections-using-vmm)
 
 A Site-to-Site VPN connection allows you to securely connect two networks at different physical locations by using the Internet.
 
@@ -64,7 +64,7 @@ For specifying VIP range, don’t use the shortened form of the IPv6 address; us
 
 ::: moniker-end
 
-## Configure IPSec connection
+## [Configure IPSec connection](#tab/configure-ipsec-connection)
 
 To configure IPSec connection, follow these steps:
 
@@ -82,7 +82,7 @@ To configure IPSec connection, follow these steps:
 ![Screenshot of enable b g p.](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM network.
 
-## Configure GRE tunneling
+## [Configure GRE tunneling](#tab/configure-gre-tunneling)
 
 GRE tunnels enable connectivity between tenant virtual networks and external networks.
 Since the GRE protocol is lightweight and support for GRE is available on most of the network devices, it becomes an ideal choice for tunneling where encryption of data isn't required. GRE support in Site-to-Site (S2S) tunnels facilitates traffic forwarding between tenant virtual networks and tenant external networks.
@@ -102,7 +102,7 @@ To configure GRE tunneling, follow these steps:
 10. You can use the defaults for the remaining settings.
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
-## Configure IPsec and GRE connections on the remote site
+## [Configure IPsec and GRE connections on the remote site](#tab/configure-ipsec-and-gre-connections-on-the-remote-site)
 
 To configure IPsec and GRE connections on the remote site, follow this step:
 
@@ -112,7 +112,7 @@ On the remote peer device, use the **VM network endpoint IP address** from the V
 
 ::: moniker range="<sc-vmm-2019"
 
-## Configure L3 forwarding  
+## [Configure L3 forwarding](#tab/configure-l3-forwarding) 
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
 
@@ -122,9 +122,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
 
 
-**Prerequisites**:
-
-Before you attempt to configure L3, ensure you meet these prerequisites:
+Before you attempt to configure L3 forwarding, ensure the following:
 
  - Ensure you're logged on as an administrator on the VMM server.
  - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
@@ -137,9 +135,9 @@ To create the next-hop logical network in SCVMM, follow these steps:
 
 3. Create an IP Pool for this new logical network.
 
-   IP address from this pool is required in the script for setting up L3 forwarding.
+IP address from this pool is required in the script for setting up L3 forwarding.
 
-The following table provides examples of dynamic and static L3 connections.
+The following table provides examples of dynamic and static L3 connections:
 
   **Parameter** | **Details/example values**
   --- | ---
@@ -285,7 +283,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 ::: moniker range=">=sc-vmm-2019"
 
-## Configure L3 forwarding
+## [Configure L3 forwarding](#tab/configure-l3-forwarding-1)
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
 
@@ -314,9 +312,7 @@ Using L3 forwarding connection, tenant network virtual machines can connect to a
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 
-*Prerequisites**:
-
-Before you attempt to configure L3 connection, ensure you meet these prerequisites:
+Before you attempt to configure L3 connection, ensure the following:
 
 - Ensure you're logged on as an administrator on the VMM server.
 - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
@@ -341,10 +337,10 @@ To create the next-hop logical network in VMM, follow these steps:
 
 3. Create an IP Pool for this new logical network. IP address from this pool is required for setting up L3 forwarding.
 
-To configure L3 forwarding, follow these steps:
-
 > [!NOTE]
 > You can't limit bandwidth in L3 VPN connection.
+
+To configure L3 forwarding, follow these steps:
 
 1. In the VMM console, select the tenant virtual network that you want to connect to the physical network through L3 gateway.  
 2. Right-click the selected tenant virtual network, select **Properties** > **Connectivity**.
@@ -379,7 +375,7 @@ To configure L3 forwarding, follow these steps:
 
 -  If you're using BGP, ensure that BGP peering is established between the SDN gateway internal interface IP address, which is present in a different compartment on the gateway VM (not the default compartment) and the peer device on the physical network.
 
-    **For BGP to work, you must do the following steps**:
+    For BGP to work, follow these steps:
 
     1. Add BGP peer for the L3 connection. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** page.
 
@@ -402,7 +398,7 @@ You can choose to configure static routes or dynamic routes (over BGP) with the 
 
 If you use BGP with L3 tunnel connection, BGP peering must be established between the SDN gateway internal interface IP address, which is present in a different compartment on the gateway VM (not the default compartment) and the peer device on the physical network.
 
-**For BGP to work, you must use the following steps:**
+For BGP to work, follow these steps:
 
 1. Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
 
@@ -415,6 +411,8 @@ If you use BGP with L3 tunnel connection, BGP peering must be established betwee
 4. Configure a route on the physical network with the destination as the SDN gateway internal address and the next hop as the L3 interface IP address (*LocalIPAddresses* parameter in the script).
 
 ::: moniker-end
+
+---
 
 ## Determine the SDN gateway internal address
 
@@ -463,6 +461,3 @@ To set up the traffic selector from VMM PowerShell, follow these steps:
 
 2. Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
 
-## Next steps
-
-- [Configure guest clusters in SDN through VMM](sdn-guest-clusters.md).

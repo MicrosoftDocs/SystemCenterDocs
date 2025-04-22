@@ -1,10 +1,10 @@
 ---
 description: This article describes how you can identify tape libraries compatible with DPM.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 03/28/2025
-title: Identify compatible tape libraries
+ms.date: 04/22/2025
+title: Identify Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 author: PriskeyJeronika-MS
@@ -14,6 +14,8 @@ ms.custom: engagement-fy24
 ---
 
 # Identify compatible tape libraries
+
+This article describes how you can identify tape libraries compatible with DPM.
 
 Find the latest list of [compatible tape libraries](./dpm-compatible-tape-libraries.md) for System Center Data Protection Manager (DPM).
 
@@ -27,9 +29,7 @@ If the tape is listed in the [Windows Server Catalog](https://www.windowsserverc
 
 ## Run the compatibility tool
 
-**Prerequisites**
-
-Before you run the tool, ensure you meet these prerequisites:
+Before you run the tool, do the following:
 
 - Check if your target tape library and tape drives are visible in Device Manager.
 
@@ -99,7 +99,3 @@ DPMLibraryTest.exe /CERTIFY /<switch_1> [/switch_2]
 |/SA|Run standalone drive test cases|```DPMLibraryTest.exe /CERTIFY /TL \\\\.\Tape21745678 /SA```|
 |/EX|Show examples||
 |/Help or /?|Show help||
-
-## Next steps
-
-- [Identify data sources you want to protect](identify-data-sources-to-protect.md).

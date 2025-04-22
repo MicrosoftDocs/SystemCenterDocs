@@ -1,12 +1,12 @@
 ---
 description: This article describes how to update protection agents for both connected and disconnected client computers.
-ms.topic: article
+ms.topic: how-to
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 03/28/2025
-title: Update the DPM protection agent
+ms.date: 04/22/2025
+title: Update the DPM Protection Agent
 ms.subservice: data-protection-manager
 ms.assetid: 
 ms.custom: na
@@ -48,6 +48,4 @@ To update a protection agent on a disconnected client computer, follow these ste
 
       After a client computer is connected to the network, **Updating** appears on the **Agent Updates** column for the client computer.
 
-## Next steps
 
-[Add Modern Backup Storage to DPM](add-storage.md)
