@@ -1,11 +1,11 @@
 ---
 ms.assetid: ddb56d8e-703c-4145-b301-99ab3e8f8fbd
-title: Application monitoring using the default settings
+title: Application Monitoring Using the Default Settings
 description: This article provides an overview about application monitoring using the default settings.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,6 +13,8 @@ ms.topic: article
 ---
 
 # Application monitoring using the default settings
+
+This article provides an overview about application monitoring using the default settings.
 
 Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports.
 
@@ -32,9 +34,9 @@ In general, client-side threshold settings should be higher than server-side thr
 
 There's no default for the load balancers. The load balancer setting is one you can opt to change, whereas you must change the client IP filters because if you don't update those settings, you won't get any data at all.
 
-**IP Address Filters**  You can use client IP filters to choose the networks that you want to monitor. By applying filters, administrators can limit the scope of the monitored computers. By default, only localhost IP addresses are monitored. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client-side monitoring. For more information, see [How to Configure IP Address Exclusion Filters for Client-Side Monitoring](/previous-versions/system-center/system-center-2012-R2/hh543988%28v%3dsc.12%29).
+**IP Address Filters**  You can use client IP filters to choose the networks that you want to monitor. By applying filters, administrators can limit the scope of the monitored computers. By default, only localhost IP addresses are monitored. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client-side monitoring. For more information, see [Configure IP Address Exclusion Filters for Client-Side Monitoring](/previous-versions/system-center/system-center-2012-R2/hh543988%28v%3dsc.12%29).
 
-## See also
+## Related content
 
-- [Authoring Strategies for .NET Application Monitoring](author-strategies-net-application-monitoring.md)
-- [How to Start Monitoring a New Application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29)
+- [Authoring strategies for .NET application monitoring](author-strategies-net-application-monitoring.md).
+- [Start monitoring a new application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29).

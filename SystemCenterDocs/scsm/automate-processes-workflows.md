@@ -1,12 +1,12 @@
 ---
-title: Automate IT processes with workflows
+title: Automate IT Processes with Workflows
 description: Learn about how you can automate IT processes with workflows in Service Manager.
 ms.custom: engagement-fy24, UpdateFrequency3
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -71,7 +71,7 @@ The Activity Library in Service Manager Authoring Tool provides many workflow ac
 
 The following tables list the default activities that are available with the Authoring Tool:  
 
-|Active Directory activity|Description|  
+|Active directory activity|Description|  
 |-------------------------------|-----------------|  
 |Add AD DS Computer To Group|Use this activity to add a computer to a security group in Active Directory Domain Services \(AD&nbsp;DS\).<br /><br /> When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  
 |Add AD DS User To Group|Use this activity to add a user to a security group in AD&nbsp;DS.<br /><br /> When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  

@@ -1,10 +1,10 @@
 ---
-title: Use the Administration workspace in Operations Manager
+title: Use the Administration Workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/26/2025
+ms.date: 04/22/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
@@ -14,7 +14,7 @@ ms.topic: article
 
 # Use the Administration workspace in Operations Manager
 
-
+This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 
 In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
@@ -22,7 +22,7 @@ When you first open the Administration workspace or when you select **Administra
 
 The sections below describe the different options in the Administration workspace and link to more detailed information about the task or option.  
 
-## Connected Management Groups  
+## Connected Management Groups 
 You can connect management groups to enable the forwarding of alerts and other monitoring data from a connected management group to the local management group. Tasks can be initiated from a local management group to run on managed objects of a connected management group.  
 
 Use **Connected Management Groups** in the Administration workspace to connect a management group or to edit the properties of a connected management group.  
@@ -57,7 +57,7 @@ You can use **Network Management** in the Administration workspace to discover n
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
 |Discovery Rules|Create rules for discovering network devices.<br>Modify existing discovery rules.|[Discover network devices in Operations Manager](manage-monitor-networkdevice-discover.md)|  
-|Network Devices|View properties of discovered network devices.|[Monitoring networks by using Operations Manager](manage-monitor-networkdevice-overview.md)|  
+|Network Devices|View properties of discovered network devices.|[Monitor networks by using Operations Manager](manage-monitor-networkdevice-overview.md)|  
 |Network Devices Pending Management|Retry or reject discovered network devices that are pending management.|[Discover network devices in Operations Manager](manage-monitor-networkdevice-discover.md)|  
 
 ## Notifications  

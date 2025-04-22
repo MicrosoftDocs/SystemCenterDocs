@@ -1,12 +1,12 @@
 ---
 ms.assetid: 599241ef-28b7-4a9c-ad1f-d2c79f5dd784
-title: Run a rolling upgrade of a SOFS cluster to Windows Server in VMM
-description: This article describes how to do a rolling upgrade of a SOFS cluster in the VMM storage fabric
+title: Run a Rolling Upgrade of a SOFS Cluster to Windows Server in VMM
+description: This article describes how to do a rolling upgrade of a SOFS cluster in the VMM storage fabric.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 04/22/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24
@@ -14,7 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Run a rolling upgrade of a SOFS cluster to Windows Server in VMM
 
-
+This article describes how to do a rolling upgrade of a SOFS cluster in the VMM storage fabric.
 
 ::: moniker range="sc-vmm-2016"
 Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes in a scale-out file server (SOFS) cluster, or Hyper-V cluster, without stopping workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
@@ -43,6 +43,8 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 
 ## Before you start
 
+Here are some considerations before you start running a rolling upgrade:
+
 - The cluster must be managed by VMM.
 ::: moniker range="sc-vmm-2016"
 - The cluster must be running Windows Server 2012 R2 or later.
@@ -65,13 +67,15 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 
 ## Run the upgrade
 
+To run the upgrade, follow these steps:
+
 1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS > **Upgrade Cluster**.
 
 2. In the Upgrade Wizard > **Nodes**, select the nodes you want to upgrade or **Select All**. Select **Physical computer profile**, and select the profile for the nodes.
 
 3. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new account. In **Out-of-band management protocol**, select the protocol that the BMCs use. To use DCMI, select **IPMI**. DCMI is supported even though it's not listed. Ensure that the correct port is listed.
 
-4. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information.
+4. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all the settings, it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal, BMC settings might not be complete. Fill in the missing information as below:
     - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to ensure the new name isn't in use.
     - In the network adapter configuration, you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet if applicable. If the subnet contains an address pool, you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise, enter an IP address within the logical network.
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
