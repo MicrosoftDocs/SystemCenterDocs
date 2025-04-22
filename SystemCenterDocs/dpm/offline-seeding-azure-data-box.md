@@ -3,8 +3,8 @@ description: You can use Azure Data Box to seed initial Backup data offline from
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
-title: Offline Seeding using Azure Data box
+ms.date: 04/22/2025
+title: Offline Seeding Using Azure Data Box
 ms.subservice: data-protection-manager
 ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
 author: PriskeyJeronika-MS
@@ -76,7 +76,7 @@ Ensure that the required Data Box devices are in *Delivered* state before trigge
 
 ![Setup azure databox](./media/offline-seeding-azure-data-box/setup-azure-databox.png)
 
-## Setup Azure Data Box devices
+## [Setup Azure Data Box devices](#tab/setup-azure-data-box-devices)
 
 Once you receive the Azure Data Box device, depending on the Azure Data Box SKU you've ordered, perform the steps in the appropriate sections below to set up and prepare the Data Box devices for the DPM/MABS Server to identify and transfer the initial backup data.
 
@@ -87,13 +87,15 @@ If you ordered one or more Azure Data Box disks (up to 8 TB each), follow the st
 > [!NOTE]
 > It's possible that the DPM/MABS server doesn't have a USB port. In such a scenario, you can connect your Azure Data Box disk to another server/client and expose the root of the device as a network share.
 
-## Setup Azure Data Box
+## [Setup Azure Data Box](#tab/setup-azure-data-box)
 
 If you ordered an Azure Data Box (up to 100 TB), follow the steps mentioned [here](/azure/databox/data-box-deploy-set-up) to set up your Data Box.
 
 ### Mount your Azure Data Box as local system
 
 The DPM/MABS server operates in the System context and so requires the same level of privilege to be provided to the mount path where the Azure Data Box is connected. Follow the steps below to ensure you can mount your Data Box device as local system using the NFS protocol.
+
+To mount your Azure Data Box as local system, follow these steps:
 
 1. Enable the Client for NFS feature on the DPM/MABS Server.
 Specify alternate source: *WIM:D:\Sources\Install.wim:4*
@@ -113,7 +115,11 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
 6. Once mounted, check if you can access X:  from your server. If you can, continue with the next section of this article.
 
+---
+
 ## Transfer initial backup data to Azure Data Box devices
+
+To transfer initial backup data to Azure Data Box devices, follow these steps:
 
 1. On your DPM/MABS Server, follow the steps to [create a new protection group](/system-center/dpm/create-dpm-protection-groups). If you're adding an online protection to the existing protection group, right-click the existing protection group, and select **Add Online Protection** and start from **Step 8**.
 2. On the **Select Group Members** page, specify the computers and sources you want to back up.
@@ -179,7 +185,9 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
     With this, the initial replication of the data occurs to the DPM/MABS disk. When it finishes the protection, the group status will show protection status as **OK** on the **Protection** page.
 
-17. To initiate the offline-backup copy to your Azure Data Box device, right-click the **Protection Group**, and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
+17. Initiate the offline-backup copy to your Azure Data Box device. To initialize, do the following:
+
+Right-click the **Protection Group**, and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
     ![Create recovery point](./media/offline-seeding-azure-data-box/create-recovery-point.png)
 
@@ -193,7 +201,7 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
 ## Post-backup steps
 
-Follow these steps once the data backup to the Azure Data Box Disk is successful.
+Once the data backup to the Azure Data Box Disk is successful, follow these steps:
 
 - Follow the steps in [this article](/azure/databox/data-box-disk-deploy-picked-up?tabs=in-japan%2Cin-sa&pivots=americas) to ship the Azure Data Box disk to Azure. If you used an Azure Data Box 100-TB device, follow [these steps](/azure/databox/data-box-deploy-picked-up?tabs=in-europe%2Cin-japan&pivots=americas) to ship the Azure Data Box to Azure.
 - [Monitor the Data Box job](/azure/databox/data-box-disk-deploy-upload-verify) in the Azure portal. Once the Azure Data Box job is *Complete*, the DPM/MABS server automatically moves the data from the Storage Account to the Recovery Services vault at the time of the next scheduled backup. It will then mark the backup job as *Job Completed* if a recovery point is successfully created.
@@ -202,6 +210,10 @@ Follow these steps once the data backup to the Azure Data Box Disk is successful
   > The DPM/MABS server triggers the backups at the times scheduled during protection group creation. However, these jobs will flag *Waiting for Azure Data Box job to be completed* until the time the job is complete.
 
 - After the DPM/MABS Server successfully creates a recovery point corresponding to the initial backup, you may delete the Storage Account (or specific contents) associated with the Azure Data Box job.
+
+
+
+::: zone pivot="troubleshooting"
 
 ## Troubleshooting
 
@@ -215,7 +227,7 @@ At the time of configuring offline backup, due to a known code defect in the Azu
 
 ### Verify if the issue is caused by this specific root cause
 
-To ensure that the failure is due to the [Issue](#issue) above, perform one of the following steps:
+To ensure that the failure is due to the [Issue](#issue) above, follow these steps:
 
 #### Step 1
 
@@ -231,12 +243,14 @@ Check if you see one of the following error messages in the DPM/MABS console at 
 
 #### Step 2
 
+To perform step 2, do the following:
+
 1. Open the **Temp** folder in the installation path (default temp folder path is *C:\Program Files\Microsoft Azure Recovery Services Agent\Temp*. Look for the *CBUICurr* file and open the file.
 2. In the *CBUICurr* file, scroll to the last line and check if the failure is due to "Unable to create a Microsoft Entra application credential in customer's account. Exception: Update to existing credential with KeyId \<some guid> isn't allowed".
 
 ### Workaround
 
-To resolve this issue, do the following steps and retry the policy configuration.
+To resolve this issue, follow these steps, and retry the policy configuration:
 
 1. Sign into the Azure sign-in page that appears on the DPM/MABS server UI using a different account with admin access on the subscription that will have the Data Box job created.
 2. If no other server has offline seeding configured and no other server is dependent on the `AzureOfflineBackup_<Azure User Id>` application, then delete this application from **Azure portal > Microsoft Entra ID > App registrations**.
@@ -248,7 +262,7 @@ To resolve this issue, do the following steps and retry the policy configuration
 
 #### Step 3
 
-From the DPM/MABS server you're trying to configure offline backup, do the following actions:
+From the DPM/MABS server you're trying to configure offline backup, do the following:
 
 1. Open the **Manage computer certificate application** > **Personal** tab and look for the certificate with the name `CB_AzureADCertforOfflineSeeding_<ResourceId>`.
 2. Select the certificate above, right-click **All Tasks** and **Export** without private key, in the .cer format.
@@ -269,3 +283,6 @@ From the DPM/MABS server you're trying to configure offline backup, do the follo
 7. To get the value of thumbprint, double-click on the certificate, then select **Details**  and scroll-down until you see the thumbprint field. Select **Thumbprint** and copy the value.
 
    ![Thumbprint value](./media/offline-seeding-azure-data-box/certificate.png)
+
+
+::: zone-end

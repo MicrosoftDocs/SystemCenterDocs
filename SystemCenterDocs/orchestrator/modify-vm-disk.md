@@ -1,19 +1,19 @@
 ---
-title: Modify VM Disk activity
+title: Modify VM Disk Activity
 description: This article describes how the Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine.
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: how-to
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ---
 
 # Modify VM Disk activity
 
-The Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine. When targeting version vCenter 5.0 or greater, it can also be used to extend the disk size of the selected disk.
+This article describes how the Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine. When targeting version vCenter 5.0 or greater, it can also be used to extend the disk size of the selected disk.
 
 The following tables list the required and optional properties and published data for this activity.
 
@@ -45,6 +45,8 @@ The following tables list the required and optional properties and published dat
 | SCSI Unit Key   | The SCSI unit key of the disk.   | String   |
 
 ## Configure the activity
+
+To configure the activity, follow these steps:
 
 1. From the **Activities** pane, drag a **Modify VM Disk** activity to the active runbook.
 

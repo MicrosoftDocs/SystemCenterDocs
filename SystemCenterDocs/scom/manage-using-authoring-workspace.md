@@ -1,10 +1,10 @@
 ---
-title: Using the Authoring Workspace in Operations Manager
+title: Use the Authoring Workspace in Operations Manager
 description: This article describes how to use the Operations Manager Operations console to perform authoring tasks.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/22/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
@@ -12,9 +12,9 @@ ms.topic: article
 ms.assetid: 8a116b94-6bc4-4160-b539-4bd542b8ee5a
 ---
 
-# Using the Authoring Workspace in Operations Manager
+# Use the Authoring Workspace in Operations Manager
 
-
+This article describes how to use the Operations Manager Operations console to perform authoring tasks.
 
 The options in the Authoring workspace allow you to create new monitoring scenarios. This could be to change or add monitoring in an existing management pack or to create a new management pack for an application that doesn't have one.  
 
@@ -58,8 +58,8 @@ The Management Pack Objects section provides access to the different elements th
 
 ## Next steps
 
-* To learn how to access and interact with the operational data or perform administrative tasks, see [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md).
+* To learn how to access and interact with the operational data or perform administrative tasks, see [Connect to the Operations and Web Console](manage-consoles-how-to-connect.md).
 
-* To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).
+* To learn how to create a custom writeable management pack to store your overrides, see [How to create a management pack for overrides](manage-mp-create-unsealed-mp.md).
 
-* To learn how to use groups to collect monitoring objects into manageable units for granular configuration management in the management group, review [Creating and managing groups](manage-create-manage-groups.md).  
+* To learn how to use groups to collect monitoring objects into manageable units for granular configuration management in the management group, review [Create and manage groups](manage-create-manage-groups.md).  

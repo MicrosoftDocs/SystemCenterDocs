@@ -5,15 +5,15 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
-title: Child runbooks in Service Management Automation
+ms.date: 04/22/2025
+title: Child Runbooks in Service Management Automation
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
 # Child runbooks in Service Management Automation
 
-It's a best practice in Service Management Automation (SMA) to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform the required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be the best for your different scenarios.
+This article provides an overview of how you can call one or more child runbooks in Service Management Automation (SMA). It's a best practice in SMA to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform the required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be the best for your different scenarios.
 
 ## Invoke a child runbook using inline execution
 
@@ -89,4 +89,4 @@ The following table summarizes the differences between the two methods for calli
 
 ## Next steps
 
-- Learn about [automation runbooks](./manage-runbooks.md).
+Learn about [automation runbooks](./manage-runbooks.md).
