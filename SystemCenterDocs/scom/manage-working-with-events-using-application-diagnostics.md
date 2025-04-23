@@ -42,7 +42,7 @@ To open Application Diagnostics from an alert, follow these steps:
 
 Use the following procedures to investigate your alert. IT Pros will most likely want to use information on the Event properties, Performance counters, and Distributed chains tabs to find out what happened, understand if a system issue caused the problem, and investigate where the root cause occurred. Developers will most likely need to use the information on the Distributed chains, Similar events, and Related events tabs to understand the specific context around a code problem.  
 
-::: zone pivot="troubleshoot-exceptionevent"
+::: zone pivot="exceptionevent"
 
 ### Troubleshoot by using Exception Event properties in Application Diagnostics  
 
@@ -65,7 +65,7 @@ In the Application Diagnostics window for the exception alert you're investigati
 
 ::: zone-end
 
-::: zone pivot="troubleshoot-performanceevent"
+::: zone pivot="performanceevent"
 
 ### Troubleshoot by using Performance Event properties in Application Diagnostics  
 
@@ -84,7 +84,7 @@ To troubleshoot by using Performance Event properties, follow these steps:
 
 ::: zone-end
 
-::: zone pivot="troubleshoot-performancecounters"
+::: zone pivot="performancecounters"
 
 ### Troubleshoot the state of the system by using Performance counters  
 
@@ -101,7 +101,7 @@ To troubleshoot the state of the system, follow these steps:
 
 ::: zone-end
 
-::: zone pivot="troubleshoot-distributedchains"
+::: zone pivot="distributedchains"
 
 ### Find the root problem by using Distributed chains
 
@@ -122,7 +122,7 @@ To find the root problem, follow these steps:
 
 ::: zone-end
 
-::: zone pivot="troubleshoot-similarevents"
+::: zone pivot="similarevents"
 
 ### Troubleshoot by viewing similar events  
 
@@ -144,7 +144,7 @@ To troubleshoot by viewing similar events, follow these steps:
 
 ::: zone-end
 
-::: zone pivot="troubleshoot-relatedevents"
+::: zone pivot="relatedevents"
 
 ### Troubleshoot by viewing related events
 
