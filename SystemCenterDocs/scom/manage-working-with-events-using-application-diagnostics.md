@@ -10,7 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: caf7af6f-5967-48a0-b0e5-47cb0e0314f7
-zone_pivot_groups: scom-troubleshoot-exceptionevent-performanceevent-performancecounters-distributedchains-similarevents-relatedevents
+zone_pivot_groups: scom-exceptionevent-performanceevent-performancecounters-distributedchains-similarevents-relatedevents
 ---
 
 # Work with events by using Application Diagnostics
