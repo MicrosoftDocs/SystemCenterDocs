@@ -3,7 +3,7 @@ description: This article describes the scheduling options for long-term protect
 ms.topic: article
 ms.service: system-center
 ms.date: 04/22/2025
-title: Modify Long-Term Backup Schedule
+title: Modify long-term backup schedule
 ms.subservice: data-protection-manager
 ms.assetid:
 author: PriskeyJeronika-MS
@@ -11,10 +11,9 @@ ms.author: v-gjeronika
 manager: jsuri
 ---
 
-# Modify Long-Term Backup Schedule
+# Modify long-term backup schedule
 
 This article describes the scheduling options for long-term protection.
-
 
 You can use the **Modify Long-Term Schedule** screen to change your long-term backup schedule. The scheduling options depend on your retention range and backup frequency.
 
@@ -31,3 +30,7 @@ You can use the **Modify Long-Term Schedule** screen to change your long-term ba
 |**Yearly**|- Date and time for yearly backup (yearly backups are performed one time in a year on the specified month and date).<br><br>Examples:<br>- If on January 10 2009 you schedule a yearly backup to run on the January 15, then the first backup will happen on January 15 2009 and then every year thereafter.<br>- If on January 10 2009 you schedule a yearly backup to run on the January 5, then the first backup will happen on January 5 2010 and then every year thereafter.<br><br>If you schedule a yearly backup within 24 hours from the current time and date, then the first backup will happen the next year on the specified month and date and every year thereafter.<br><br>Example:<br>- If on January 10 2009 3:00 P.M. you schedule a yearly backup to run on the January 11 at 10:00 A.M., then the first backup will happen on January 11 2010 at 10:00 A.M. and then every year thereafter.|
 
 After you modify the long-term backup schedule, select **OK**.
+
+# Next steps
+
+- [Configure firewall settings in DPM](configure-firewall-settings-for-dpm.md)
