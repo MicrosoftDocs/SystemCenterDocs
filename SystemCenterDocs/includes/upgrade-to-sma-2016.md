@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 05/31/2018
+ms.date: 04/23/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid: f13edf4f-5708-4a50-94ca-9afb5c266839
@@ -20,7 +20,7 @@ The following sections provide details about how to upgrade SMA 2012 R2 to SMA 2
 ## Prerequisites
 
 - Review the [system requirements](../sma/system-requirements-sma.md) to determine support requirements for SMA 2016.
-- Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can use standard tools and processes for [backing up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+- Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can use standard tools and processes for [back up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ## Upgrade
 
@@ -28,6 +28,8 @@ There's no in place upgrade for SMA servers, so you must uninstall the existing 
 
 > [!NOTE]
 > When installing SMA with an existing database, you must install the worker servers before the web service.
+
+To upgrade to SMA 2016, follow these steps:
 
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers.

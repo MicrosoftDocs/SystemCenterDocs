@@ -6,7 +6,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 04/17/2024
+ms.date: 04/23/2025
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:
@@ -22,14 +22,16 @@ The following sections provide information about how to upgrade your existing Se
 ## Prerequisites to upgrade
 
 - Review the [System Requirements for Service Management Automation](../sma/system-requirements-sma.md) to determine whether your current version of SMA supports upgrade to SMA 2025.
-- Perform a full backup of the SMA database as a precaution. It's a standard SQL Server database, and you can use standard tools and processes for [backing up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+- Perform a full backup of the SMA database as a precaution. It's a standard SQL Server database, and you can use standard tools and processes for [back up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
-## Upgrading to SMA 2025
+## Upgrade to SMA 2025
 
 There's no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones. You can keep the database intact, which contains the runbooks and configuration settings.  
 
 > [!NOTE]
 > When installing SMA with an existing database, you must install the worker servers before the web service.
+
+To upgrade to SMA 2025, follow these steps:
 
 1. If SMA servers are being monitored by Operations Manager, enable maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="/previous-versions/system-center/system-center-2012-R2/dn469636(v=sc.12)">How to uninstall Service Management Automation</a>.

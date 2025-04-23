@@ -1,12 +1,12 @@
 ---
-title: Bundle management packs and resource files
+title: Bundle Management Packs and Resource Files
 description: Learn about bundling management packs and resource files for Service Manager authoring.
 ms.custom: engagement-fy24, UpdateFrequency3
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/23/2025
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
@@ -17,7 +17,7 @@ ms.assetid: c9cb6eaf-d744-4f91-b1d4-3294812953df
 
 # Bundle management packs and resource files
 
-
+In this article, you'll learn about bundling management packs and resource files for Service Manager authoring.
 
 A custom management pack might include references to resources, such as an image or a form assembly. To import such a management pack into Service Manager, you must first bundle the management pack file and its associated resources into a single .mpb management pack file.  
 
@@ -29,4 +29,4 @@ To customize management packs that are bundled in an .mpb file, you must first u
 
 ## Next steps
 
-- [Unbundle a bundled management pack for use with the Authoring Tool](unbundle-mps.md).
+[Unbundle a bundled management pack for use with the Authoring Tool](unbundle-mps.md).

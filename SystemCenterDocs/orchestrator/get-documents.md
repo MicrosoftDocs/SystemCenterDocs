@@ -2,7 +2,7 @@
 title: Get Documents
 description: The Get Documents activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/23/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,24 +17,24 @@ manager: jsuri
 
 # Get Documents
 
-The **Get Documents** activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
+This article describes the **Get Documents** activity used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 
 The following tables list the filters, required and optional properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint document library that is retrieved when you define the activity.
 
-## Get Documents Required Properties
+## Get Documents required properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Library | The name of the SharePoint document library to be searched. | String   |
 
-## Get Documents Optional Properties
+## Get Documents optional properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Folder | The relative path of a child folder in the document library to refine the search.   | String   |
 | Recursive   | A Boolean value that indicates whether to retrieve data from documents in all child folders. | True<br>False   |
 
-## Get Documents Filters
+## Get Documents filters
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -45,7 +45,7 @@ The following tables list the filters, required and optional properties, and Pub
 | Modified By | The name of the user who last modified the document.   | Equals<br>Does not equal   |
 | Title   | The title of the document.   | Equals<br>Does not equal<br>Contains<br>Starts with   |
 
-## Get Documents Published Data
+## Get Documents published data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
