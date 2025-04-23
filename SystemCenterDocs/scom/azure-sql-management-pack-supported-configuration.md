@@ -1,12 +1,12 @@
 ---
 ms.assetid: 3b973a20-df14-490f-8452-020a9e3ede96
-title: Scope and supported configuration in Management Pack for Azure SQL Database
+title: Scope and Supported Configuration in Management Pack for Azure SQL Database
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Database
 ms.custom: engagement-fy23
 author: epomortseva
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 04/23/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,45 +14,31 @@ ms.subservice: operations-manager
 
 # Scope and Supported Configuration in Management Pack for Azure SQL Database
 
-This section lists operating systems and features supported by Management Pack for Azure SQL Database.
+This article lists operating systems and features supported by Management Pack for Azure SQL Database.
 
-Azure SQL Database is a fully managed platform as a service (PaaS) database engine that handles most of the database management functions such as upgrading, patching, backups, and monitoring without user involvement.
+Azure SQL Database is a fully managed Platform as a Service (PaaS) database engine that handles most of the database management functions such as upgrading, patching, backups, and monitoring without user involvement.
 
-## Supported Azure SQL Database Features and Purchase Models
+## Supported Azure SQL Database features and purchase models
 
 Management Pack for Azure SQL Database supports the following Azure SQL Database features and configurations:
 
-- SQL Server
-  - DTU metrics
-- SQL Database
-  - CPU metrics
-  - DTU metrics
-  - Connections metrics
-  - Transactions metrics
-  - Space metrics
-  - Sessions metrics
-- SQL Elastic Pools
-  - Storage metrics
-  - DTU metrics
-  - Sessions metrics
-  - CPU metrics
-  - I/O metrics
-- Database Geo-Replication
-  - Geo-Replication Link State
+|Feature|Configurations|
+|-|-|
+|SQL Server|DTU metrics|
+|SQL Database|  CPU metrics <br>DTU metrics <br>Connections metrics <br>Transactions metrics <br>Space metrics <br>Sessions metrics|
+|SQL Elastic Pools|Storage metrics <br>DTU metrics <br>Sessions metrics <br>CPU metrics <br>I/O metrics|
+|Database Geo-Replication|Geo-Replication Link State|
+
 
 ### Purchase Models
 
 Management Pack for Azure SQL Database supports monitoring of databases in any of the following [purchase models](https://azure.microsoft.com/pricing/details/sql-database/single/):
 
-- DTU-based SQL purchase models
-  - Basic
-  - Standard
-  - Premium
+|Model|Details|
+|-|-|
+|DTU-based SQL purchase models| Basic <br>Standard <br>Premium|
+|vCore-based purchase models (**Provisioned** or **Serverless**)|General Purpose <br>Hyperscale <br>Business Critical|
 
-- vCore-based purchase models (**Provisioned** or **Serverless**)
-  - General Purpose
-  - Hyperscale
-  - Business Critical
 
 When using the vCore-based purchase model, the following rules don't collect data because **DTULimit** metrics aren't available in this model:
 

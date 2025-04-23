@@ -4,24 +4,26 @@ description: This article describes how to customize views in the Operations Man
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/23/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
 ---
 
 # Personalize a view in Operations Manager
 
-
+This article describes how to customize views in the Operations Manager Operations console.
 
 In System Center Operations Manager, views are contained in management packs. If a view is contained in a sealed management pack, you can open the properties of the view, but you can't save any changes to it. However, you can change the display options of the view and then save it as a personalized view.  
 
 > [!NOTE]  
 > Personalized views are only visible to the user who personalized the view.  
 
-## Personalize a view  
+## Personalize a view
+
+To personalize a view, follow these steps:
 
 1. In the Operations console, select **Monitoring**.  
 
@@ -32,7 +34,9 @@ In System Center Operations Manager, views are contained in management packs. If
     > [!NOTE]  
     > In a state view, the option to sort by groups isn't available. This option is available in other view types, such as the alert view and event view.  
 
-## Restore view defaults  
+## Restore view defaults 
+
+To restore view defaults, follow these steps:
 
 1. In the Operations console, select **Monitoring**.  
 
@@ -42,8 +46,8 @@ In System Center Operations Manager, views are contained in management packs. If
 
 ## Next steps
 
-- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).  
+- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Use views and dashboards in Operations Manager](manage-console-using-views-dashboards.md).  
 
-- Operations Manager includes many views that are created during installation. To understand what these views provide, see [Standard Views in Operations Manager](manage-console-standard-views.md).  
+- Operations Manager includes many views that are created during installation. To understand what these views provide, see [Standard views in Operations Manager](manage-console-standard-views.md).  
 
-- To understand how to create your own custom views and dashboards in Operations Manager, as well as how to scope them, see [Creating and Scoping Views in Operations Manager](manage-console-scope-views.md).  
+- To understand how to create your own custom views and dashboards in Operations Manager, as well as how to scope them, see [Create and scope views in Operations Manager](manage-console-scope-views.md).  
