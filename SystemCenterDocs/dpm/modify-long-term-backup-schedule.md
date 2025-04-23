@@ -31,6 +31,6 @@ You can use the **Modify Long-Term Schedule** screen to change your long-term ba
 
 After you modify the long-term backup schedule, select **OK**.
 
-# Next steps
+## Next steps
 
 - [Configure firewall settings in DPM](configure-firewall-settings-for-dpm.md)
