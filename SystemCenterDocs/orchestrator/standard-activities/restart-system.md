@@ -2,7 +2,7 @@
 title: Restart System
 description: This article describes the functionality of Restart System activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/24/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ manager: jsuri
 ---
 # Restart System
 
-The Restart System activity will restart a computer on your network. The Restart System activity can either wait for applications to shut down gracefully, or you can configure the activity to forcefully shut down any running applications. You can also send a message to notify your users of the reason for the disruption.  
+This article describes the functionality of Restart System activity. The Restart System activity will restart a computer on your network. The Restart System activity can either wait for applications to shut down gracefully, or you can configure the activity to forcefully shut down any running applications. You can also send a message to notify your users of the reason for the disruption.  
 
  Some applications may consume memory and hard disk space and will not relinquish them without restarting the system. The Restart System activity can be used to restart these systems during maintenance windows to maintain service during business hours.  
 
