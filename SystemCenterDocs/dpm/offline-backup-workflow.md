@@ -60,12 +60,12 @@ Before you start the offline backup workflow, ensure that the following prerequi
 
 To register the resource provider, follow these steps:
 
-    1. In the main menu, select **Subscriptions**.
-    2. If you're subscribed to multiple subscriptions, select the subscription you're using for the offline backup. If you use only one subscription, then your subscription appears.
-    3. In the subscription menu, select **Resource Providers** to view the list of providers.
-    4. In the list of providers scroll down to Microsoft.DataBox. If the Status is NotRegistered, select **Register**.
+1. In the main menu, select **Subscriptions**.
+2. If you're subscribed to multiple subscriptions, select the subscription you're using for the offline backup. If you use only one subscription, then your subscription appears.
+3. In the subscription menu, select **Resource Providers** to view the list of providers.
+4. In the list of providers scroll down to Microsoft.DataBox. If the Status is NotRegistered, select **Register**.
 
-       :::image type="content" source="./media/offline-backup-workflow/register-import-export-inline.png" alt-text="Screenshot shows how to register the resource provider." lightbox="./media/offline-backup-workflow/register-import-export-expanded.png":::
+    :::image type="content" source="./media/offline-backup-workflow/register-import-export-inline.png" alt-text="Screenshot shows how to register the resource provider." lightbox="./media/offline-backup-workflow/register-import-export-expanded.png":::
 
 * A staging location, which might be a network share or any additional drive on the computer, internal or external, with enough disk space to hold your initial copy, is created. For example, if you want to back up a 500-GB file server, ensure that the staging area is at least 500 GB. (A smaller amount is used due to compression.)
 * For disks sent to Azure, ensure that only 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III internal hard drives are used. You can use hard drives up to 10 TB. Check the [Azure Import/Export service documentation](/azure/import-export/storage-import-export-requirements#supported-hardware) for the latest set of drives that the service supports.
