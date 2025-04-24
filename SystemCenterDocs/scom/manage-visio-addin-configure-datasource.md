@@ -4,19 +4,22 @@ description: This article describes how to configure Visio to communicate with O
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/24/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 2b286c07-c702-4ff9-8e4c-2865b34cf53d
 ---
 # Configure the Operations Manager data source in Visio
 
+This article describes how to configure Visio to communicate with Operations Manager so that you can include monitored object health state in a drawing.
 
 Before Visio can interact with System Center - Operations Manager, you need to configure Operations Manager as a data source for your Visio document. You also need to configure the Operations Manager Web console address to enable opening the Health Explorer or Alert view directly from Visio. You need to configure these items for each Visio document you create.  
 
-## To configure the Operations Manager data source and web console address in Visio  
+## Configure the Operations Manager data source and web console address in Visio  
+
+To configure the Operations Manager data source and web console address in Visio, follow these steps:
 
 1.  Open a new drawing in Visio.  
 

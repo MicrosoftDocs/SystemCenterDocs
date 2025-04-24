@@ -7,17 +7,18 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: fbb368f4-4512-4960-a98d-66e36ee49d29
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 monikerRange: '<=sc-orch-2019'
-ms.date: 11/01/2024
+ms.date: 04/24/2025
 ---
 
 # HP Operations Manager Integration Pack for System Center - Orchestrator
 
+This article describes about the Integration Pack for HP Operations Manager.
 
 ::: moniker range="sc-orch-2019"
 
@@ -48,7 +49,7 @@ The Integration Pack for HP Operations Manager requires the following software t
 - To download this integration pack for Orchestrator 2019, see [HP Operations Manager Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58108&WT.mc_id=rss_alldownloads_all).
 ::: moniker-end
 
-## Registering and Deploying the Integration Pack
+## Register and Deploy the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
 
@@ -57,6 +58,8 @@ After you download the integration pack file, you must register it with the Orch
 A connection establishes a reusable link between Orchestrator and an HP Operations Manager server. You can create as many connections as you require to specify links to multiple servers running HP Operations Manager. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
 ### Set up an HP Operations Manager configuration
+
+To set up an HP Operations Manager configuration, follow these steps:
 
 1. In the Runbook Designer, select the **Options** menu, and select **HP Operations Manager**. The HP Operations Manager dialog appears.
 2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.

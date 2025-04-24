@@ -1,12 +1,12 @@
 ---
 ms.assetid: 686ba922-5d20-4c0b-b99b-c2ecde1d7bb2
-title: Configure fallback HGS in System Center Virtual Machine Manager
+title: Configure Fallback HGS in System Center Virtual Machine Manager
 description: This article explains about how to configure the fallback HGS in VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/17/2024
-ms.topic: article
+ms.date: 04/24/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
@@ -25,13 +25,13 @@ The primary HGS URLs will always be used in favor of the secondary. If the prima
 
 ## Before you start
 
-Ensure that you've deployed and configured the Host Guardian Service before proceeding.
+Before you configure HGS fallback URLs in VMM, ensure that you've deployed and configured the Host Guardian Service.
 Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 
 
 ## Configure fallback HGS
 
-**Use the following steps**:
+To configure fallback HGS, follow these steps:
 
 1.  Navigate to **VMM Settings** > **General Settings** > **Host Guardian Service Settings**. On the **Host Guardian Service Settings** page, you see a section for Fallback Configurations.
 2.  Define the **primary and fallback HGS URLs** and select **Finish**.
@@ -43,6 +43,8 @@ Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shiel
     > After this step, the VMM service configures the supported hosts with primary and fallback HGS URLs. Only hosts on and above Windows Server 1709 support fallback HGS URLs.
 
 ## PowerShell command updates
+
+To use PowerShell command updates, follow these steps:
 
 1. The following two parameters are added to the existing **Set-SCVMHost** PowerShell command:
 
@@ -86,6 +88,6 @@ Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shiel
 
 ## Next steps
 
-- [Deploy the Host Guardian Service (HGS)](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs)
-- [Manage HGS ](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs)
-- [Set up a fallback HGS for a branch office](/archive/blogs/datacentersecurity/improved-branch-office-support-for-shielded-vms-in-windows-server-version-1709)
+- [Deploy the Host Guardian Service (HGS)](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
+- [Manage HGS ](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs).
+- [Set up a fallback HGS for a branch office](/archive/blogs/datacentersecurity/improved-branch-office-support-for-shielded-vms-in-windows-server-version-1709).
