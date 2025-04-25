@@ -2,7 +2,7 @@
 title: Get Item
 description: The Get Item activity is used in a runbook to retrieve details of existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/25/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,18 +17,18 @@ manager: jsuri
 
 # Get Item
 
-The Get Item activity is used in a runbook to retrieve details of an existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
+This article describes the Get Item activity that is used in a runbook to retrieve details of an existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
 
 The following tables list the required properties, filters, and published data for use of the Get Item activity. The tables for filters and published data are presented according to the item type: appointment, contact group, email message, and task.
 
-## Get Item Required Properties
+## [Get Item Required Properties](#tab/get-item-required-properties)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Search Folder   | Folder in which to search for the item   | String   |
 | Search Subfolders | Indicates whether to also search subfolders | True<br>False   |
 
-## Get Item Filters (Appointment)
+## [Get Item Filters (Appointment)](#tab/get-item-filters-appointment)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -65,7 +65,7 @@ The following tables list the required properties, filters, and published data f
 | Subject   | The subject of the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 | Time Zone   | The time zone that is specified for the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 
-## Get Item Published Data (Appointment)
+## [Get Item Published Data (Appointment)](#tab/get-item-published-data-appointment)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -130,7 +130,7 @@ The following tables list the required properties, filters, and published data f
 | iCal Timestamp   | The iCalendar timestamp   | DateTime   |
 | iCal UID   | The iCalendar UiD   | String   |
 
-## Get Item Filters (Contact Group)
+## [Get Item Filters (Contact Group)](#tab/get-item-filters-contact-group)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -142,7 +142,7 @@ The following tables list the required properties, filters, and published data f
 | Last Modified Name | Name of the user who last modified this contact group   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Start with   |
 | Members   | List of members associated with the contact group   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Start with   |
 
-## Get Item Published Data (Contact Group)
+## [Get Item Published Data (Contact Group)](#tab/get-item-published-data-contact-group)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -168,7 +168,7 @@ The following tables list the required properties, filters, and published data f
 | Web Client Edit From Query String | Query string to append to the Exchange Web client URL to open the contact group for editing | String   |
 | Web Client Read From Query String | Query string to append to the Exchange Web client URL to open the contact group for reading | String   |
 
-## Get Item Filters (E-Mail Message)
+## [Get Item Filters (E-Mail Message)](#tab/get-item-filters-e-mail-message)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -197,7 +197,7 @@ The following tables list the required properties, filters, and published data f
 | Sensitivity   | The sensitivity of the email   | Equals<br>Does not equal   |
 | Subject   | The subject of the email   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 
-## Get Item Published Data (E-Mail Message)
+## [Get Item Published Data (E-Mail Message)](#tab/get-item-published-data-e-mail-message)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -250,7 +250,7 @@ The following tables list the required properties, filters, and published data f
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the email for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the email for reading | String   |
 
-## Get Item Filters (Task)
+## [Get Item Filters (Task)](#tab/get-item-filters-task)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -284,7 +284,7 @@ The following tables list the required properties, filters, and published data f
 | Task Status   | The status of the task   | Equals<br>Does not equal   |
 | Total Work   | The total amount of work spent on the task   | Equals<br>Does not equal<br>Less than<br>Less than or equal to<br>Greater than<br>Greater than or equal to |
 
-## Get Item Published Data (Task)
+## [Get Item Published Data (Task)](#tab/get-item-published-data-task)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -334,3 +334,5 @@ The following tables list the required properties, filters, and published data f
 | User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the task for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the task for reading | String   |
+
+---

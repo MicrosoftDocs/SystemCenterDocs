@@ -1,11 +1,11 @@
 ---
 ms.assetid: aa0580cc-884b-42bc-8326-ff0b4291d703
-title: Manage SOFS settings in the VMM fabric
+title: Manage SOFS Settings in the VMM Fabric
 description: This article describes how to manage SOFS settings in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/25/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,8 +14,7 @@ ms.custom: engagement-fy24
 
 # Manage SOFS settings in the VMM fabric
 
-
-You can manage scale-out file server (SOFS) in the System Center Virtual Machine Manager (VMM) fabric as follows:
+This article describes how to manage SOFS settings in the VMM fabric. You can manage scale-out file server (SOFS) in the System Center Virtual Machine Manager (VMM) fabric as follows:
 
 - **Create storage pools**: Create storage pools from physical disks on SOFS nodes and allocate them.
 - **Create file shares**: You can create file shares on a SOFS in the VMM fabric. You can set the storage type for a share as a storage pool, local pool, or volume.
@@ -28,6 +27,8 @@ You can manage scale-out file server (SOFS) in the System Center Virtual Machine
 :::moniker-end
 
 ## Create storage pools
+
+To create storage pools, follow these steps:
 
 1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS server (not the nodes) and select **Manage Pools**.
 2. In **Manage Pools of File Server**, select **New** to create a new pool or modify an existing one.
@@ -46,6 +47,8 @@ You can manage scale-out file server (SOFS) in the System Center Virtual Machine
 
 ## Create a file share
 
+To create a file share, follow these steps:
+
 1. Select **Fabric** > **Storage** > **Home** > **Create File Share**.
 2. In **Create File Share Wizard** > **Storage Type**, select the SOFS on which you want to create a share. Enter a name and description for the share and select the storage pool you want to use. If the CSV exists, select **Volume** and specify it. If the folder path exists, select **Local path** and specify it. The file share inherits the classification of the storage pool.
 3. In **Capacity**, specify the file share size and type. Leave the default type unless the disk is used for backups or deduplication, in which case NTFS is recommended.
@@ -54,6 +57,8 @@ You can manage scale-out file server (SOFS) in the System Center Virtual Machine
 6. In **Summary**, review the settings and select **Finish**. Verify the file share in **Fabric** > **Storage** > **File Servers** > **File Shares**.
 
 ## Set a storage QoS for a SOFS
+
+To set a storage QoS, follow these steps:
 
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
  System Center VMM 2016 and later include storage QoS policies to solve the **noisy neighbor** problem. This problem is common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there's always a chance that one VM's usage of the resource exceeds that of the other. This can affect the performance of an app running on the VM. Storage QoS ensures:
@@ -65,7 +70,9 @@ You can manage scale-out file server (SOFS) in the System Center Virtual Machine
 - **Monitor end-to-end storage performance**: When VMs are started on a SOFS, their performance is monitored.
 - **Manage storage I/O in accordance with business needs**: Storage QoS policies define minimum and maximum limits for VMs and ensure they're met even in over-provisioned environments. If policies can't be met, alerts are issued.
 
-Set a storage QoS policy as follows:
+## Set a storage QoS policy
+
+To set a storage QoS policy, follow these steps:
 
 1. Select **Fabric** > **Storage** > **QoS Policies** > **Create Storage QoS Policy**.
 2. In **Create Storage QoS Policy Wizard** > **General**, specify a name and description for the policy.
@@ -75,6 +82,8 @@ Set a storage QoS policy as follows:
 
 
 ## Set a disk witness for the SOFS
+
+To set a disk witness, follow these steps:
 
 1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS server (not the nodes) and select **Properties**.
 2. In **General**, select **Use disk witness for this file server from the specified pool** to indicate that the disk witness for the SOFS must come from a specific storage pool. VMM creates a three-way mirror space, and configures it as the disk witness for the cluster.

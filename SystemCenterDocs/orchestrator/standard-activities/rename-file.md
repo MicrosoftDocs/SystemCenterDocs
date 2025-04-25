@@ -2,7 +2,7 @@
 title: Rename File
 description: This article describes the functionality of Rename File activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/25/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,13 +17,13 @@ manager: jsuri
 ---
 # Rename File
 
-The Rename File activity renames files on the local file system or on a network location specified using a UNC path. You can automatically rename files to a standard format according to your data center procedures.  
+This article describes the functionality of Rename File activity. The Rename File activity renames files on the local file system or on a network location specified using a UNC path. You can automatically rename files to a standard format according to your data center procedures.  
 
 ## Configure the Rename File Activity
 
  Before you configure the Rename File activity, you need to determine the following:  
 
-- The original file name you're renaming.  
+- The original file name you're renaming  
 
 - The new name of the file  
 
@@ -49,7 +49,7 @@ Use the following information to configure the Rename File activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

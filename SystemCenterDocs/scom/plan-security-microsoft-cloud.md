@@ -5,7 +5,7 @@ description: This article provides design guidance on how to authenticate and se
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/25/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # Security Considerations for Microsoft Azure and Microsoft 365
 
-
+This article provides design guidance on how to authenticate and securely monitor Microsoft Azure and Microsoft 365 with Operations Manager.
 
 ## Integration with Azure
 
