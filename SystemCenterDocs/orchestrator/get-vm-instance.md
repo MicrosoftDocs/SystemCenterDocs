@@ -1,8 +1,8 @@
 ---
-title: Get VM instance
+title: Get VM Instance
 description: The Get VM Instance activity retrieves the specified virtual machine.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 11/01/2024
+ms.date: 04/28/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -18,7 +18,7 @@ monikerRange: '<=sc-orch-2019'
 
 # Get VM instance
 
-The **Get VM Instance** activity retrieves the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
+In this article, you'll learn about the **Get VM Instance** activity that retrieves the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

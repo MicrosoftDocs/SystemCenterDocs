@@ -1,8 +1,8 @@
 ---
-title: How to create a benchmark runbook
+title: How to Create a Benchmark Runbook
 description: Describes how to create a benchmark runbook to evaluate performance of different logging options in a System Center - Orchestrator environment.
 ms.custom: UpdateFrequency2, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/28/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,7 +17,7 @@ manager: jsuri
 
 # Create a benchmark runbook
 
-You will need to create a performance benchmark in order to optimize the performance for your Orchestrator runbook. As part of creating the benchmark, you should analyze the activities in your runbook.
+This article describes how to create a benchmark runbook to evaluate performance of different logging options in a System Center - Orchestrator environment. You will need to create a performance benchmark in order to optimize the performance for your Orchestrator runbook. As part of creating the benchmark, you should analyze the activities in your runbook.
 
 Orchestrator runbook activities can be thought of as having two distinct types of code:  platform code and domain code. The term *domain code* is used to identify code within a runbook activity that is typically not associated with the Orchestrator platform itself (with notable exceptions, such as **Invoke Runbook**, **Junction**, and others). For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code (the **plumbing** of the activity) as well as domain code unique to invoking a SOAP-based web service. The platform code will be very similar for most activities, since it's built on a common framework. However, there will potentially be great variation in domain code for different activities.  
 
@@ -31,7 +31,7 @@ The Standard Activity **Compare Values** can be used to create benchmarks of an 
 
 ### Create a runbook that can be used to benchmark your Orchestrator environment
 
-Follow these steps to create a runbook that can be used to benchmark your Orchestrator environment:
+To create a runbook that can be used to benchmark your Orchestrator environment, follow these steps:
 
 1. Create a new runbook.  
 2. Add a **Compare Values** activity from the Standard Activity palette. Double-click the activity to configure it.  
@@ -91,4 +91,4 @@ To summarize:
 
 ## Next steps
 
-Get step by step instructions for creating runbooks at [Creating and testing a sample runbook](creating-and-testing-a-sample-runbook.md).
+Get step by step instructions for creating runbooks at [Create and test a sample runbook](creating-and-testing-a-sample-runbook.md).

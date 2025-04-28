@@ -1,22 +1,20 @@
 ---
 ms.assetid: 715a0ed4-8936-4b43-ad1b-024465e0605e
-title: How to Add Knowledge to a Management Pack
+title: Add Knowledge to a Management Pack
 description: This article describes how to add custom knowledge to a workflow in a management pack.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 04/28/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
-# How to add knowledge to a management pack
+# Add knowledge to a management pack
 
-
-
-System Center Operations Manager management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.  
+This article describes how to add custom knowledge to a workflow in a management pack. System Center Operations Manager management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.  
 
 Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is embedded in a rule or monitor when it's authored. Company knowledge is added by management group administrators to expand the troubleshooting information and provide company-specific information for operators. Administrators can use company knowledge to document any overrides implemented for a monitor or rule, along with the explanation for the customization and any other information that might be useful.  
 
@@ -33,7 +31,9 @@ To add or edit company knowledge, the computer must meet the following software 
 
 To add or edit company knowledge, you must have the Author or Administrator user role.  
 
-## To edit company knowledge  
+## To edit company knowledge 
+
+To edit company knowledge, follow these steps:
 
 1.  Open the Operations console with an account that is a member of the Operations Manager Author or Administrator role.  
 
@@ -62,8 +62,8 @@ To add or edit company knowledge, you must have the Author or Administrator user
 
 ## Next steps  
 
-- To perform common administrative tasks with management packs in your management group, see [How to Import, Export, and Remove an Operations Manager Management Pack](manage-mp-import-remove-delete.md).
+- To perform common administrative tasks with management packs in your management group, see [Import, Export, and Remove an Operations Manager Management Pack](manage-mp-import-remove-delete.md).
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).
 
-- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](manage-mp-override-rule-monitor.md) to understand how to configure the change.
+- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [Override a Rule or Monitor](manage-mp-override-rule-monitor.md) to understand how to configure the change.

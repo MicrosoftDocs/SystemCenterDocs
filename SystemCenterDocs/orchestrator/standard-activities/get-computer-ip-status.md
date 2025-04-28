@@ -2,7 +2,7 @@
 title: Get Computer-IP Status
 description: This article describes the Get Computer/IP Status activity.
 ms.custom: engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/28/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ manager: jsuri
 ---
 # Get Computer/IP Status
 
-The Get Computer/IP Status activity will send a ping to a remote computer or IP address and wait for a response. If a response is received, then the Get Computer/IP Status activity will succeed. If a response isn't received, the activity will fail.  
+This article describes the Get Computer/IP Status activity. The Get Computer/IP Status activity will send a ping to a remote computer or IP address and wait for a response. If a response is received, then the Get Computer/IP Status activity will succeed. If a response isn't received, the activity will fail.  
 
  The Get Computer/IP Status activity can be used to confirm that a computer is available before performing an action on that computer. You can also use the Get Computer/IP Status activity to check the availability of a computer as part of the level 1 diagnostic step when performing problem management processes.  
 

@@ -1,7 +1,7 @@
 ---
-title: Classes, fields, and filters
+title: Classes, Fields, and Filters
 description: The following tables list the System Center - Service Manager integration pack classes.
-ms.date: 11/01/2024
+ms.date: 04/28/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -12,7 +12,7 @@ ms.custom: UpdateFrequency3
 ---
 # Classes, fields, and filters
 
-The following tables list the System Center - Service Manager Integration Pack classes. They also list the elements that can be used as fields or filters to create, locate, retrieve, and update objects in that class.
+This article provides a list of fields and filters applicable to the objects in that class. The following tables list the System Center - Service Manager Integration Pack classes. They also list the elements that can be used as fields or filters to create, locate, retrieve, and update objects in that class.
 
 ## Active Directory Group Class
 
