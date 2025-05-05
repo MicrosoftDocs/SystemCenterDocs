@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct disagg
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 08/02/2024
+ms.date: 04/07/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -27,17 +27,20 @@ To enable S2D, go to **General Configuration** > **Specify the cluster name and 
 ![Screenshot of S2D enabled.](./media/s2d/s2d-enable.png)
 
 After you enable a disaggregated cluster with S2D, VMM does the following:
-1. The File Server role and the Failover Clustering feature are enabled.
+
+1. The File Server role and the Failover Clustering features are enabled.
 2. Storage replica and data deduplication are enabled.
 3. The cluster is optionally validated and created.
 4. S2D is enabled, and a storage array is created with the same name you provide in the wizard.
 
 
-## Step 1: Provision a SOFS cluster
+## Provision a SOFS cluster
 
 You can provision a SOFS cluster from servers in the VMM fabric or add an existing SOFS cluster to the fabric
 
-### Provision a SOFS cluster
+### Provision a cluster
+
+To provision a SOFS cluster, follow these steps:
 
 1. Select **Fabric Resources** > **Create** > **File Server Cluster**.
 2. In **General Configuration**, specify a cluster name, select a host group, and select **Storage attached directly to each cluster node (Storage Spaces Direct)**.
@@ -53,6 +56,8 @@ If you want to add additional nodes to the SOFS cluster, VMM automatically disco
 
 ### Add an existing SOFS cluster with S2D enabled
 
+To add an existing SOFS cluster with S2D enabled, follow these steps:
+
 1.	Select **Fabric** > **Add Resources** > **Storage Devices**.
 2.	In the Add Resource Wizard, select **Windows-based File Server**.
 3.	In **Discovery Scope**, specify the cluster IP address or FQDN. Provide a Run As account with cluster access, and specify if the cluster is in a different domain.
@@ -60,9 +65,11 @@ If you want to add additional nodes to the SOFS cluster, VMM automatically disco
 5.	In **Summary**, check the settings and complete the wizard.
 
 
-## Step 2: Manage the pool and create file shares
+## Manage the pool and create file shares
 
 After the SOFS cluster is provisioned and managed by VMM, you can modify the storage pool and create the storage.
+
+To manage the pool and create file shares, follow these steps:
 
 1. Select **Fabric** > **Storage** > **Arrays**.
 2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name and add a classification
@@ -71,17 +78,14 @@ After the SOFS cluster is provisioned and managed by VMM, you can modify the sto
 6.	In **Capacity**, specify the share size and settings.
 7.	In **Summary,** verify the settings. After the share is created, a new CSV is added under the storage pool.
 
-## Step 3: Allocate the storage in Hyper-V
+## Allocate the storage in Hyper-V
 
-1.	In the Hyper-V host properties > **Storage**, specify the file share path.
-2.	Now, you can create VMs that use this file share.
+To allocate the storage in Hyper-V, follow this step:
 
-
-
+In the Hyper-V host properties > **Storage**, specify the file share path, and create VMs that use this file share.
 
 
 ## Next steps
 
-
-- [Provision VMs](provision-vms.md)
-- [Manage the cluster](s2d-manage.md)
+- [Provision VMs](provision-vms.md).
+- [Manage the cluster](s2d-manage.md).

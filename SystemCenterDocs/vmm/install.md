@@ -5,7 +5,7 @@ description: This article provides installation instructions for VMM
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 10/22/2024
+ms.date: 04/04/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,8 +14,6 @@ ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy
 
 # Install VMM
 
-
-
 This article describes how to install the System Center Virtual Machine Manager (VMM) management server.
 
 ## Before you start
@@ -23,9 +21,30 @@ This article describes how to install the System Center Virtual Machine Manager 
 - Review the system requirements and [planning information](plan-install.md). Learn about [system requirements](system-requirements.md).
 - Ensure that you have at least local admin permissions on the computer before you run the setup.
 - The service account should be an administrator on the VMM server.
+::: moniker range="sc-vmm-2025"
+- Ensure you have the installer downloaded from one of the following procurement channels (not exhaustive):
+  - [Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/download-system-center-2025?msockid=0c55acf0521869ad1f07bf4d534a68ab).
+  - [Downloads & Keys - Visual Studio Subscriptions](https://my.visualstudio.com/Downloads?q=System%20Center%202025).
+  - [Evaluation (VHDX) from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=106280).
+  - Any other procurement channels such as Microsoft Admin Center or from Microsoft partners.
+::: moniker-end
+::: moniker range="sc-vmm-2022"
+- Ensure you have the installer downloaded from one of the following procurement channels (not exhaustive):
+  - [Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/download-system-center-2022?msockid=0c55acf0521869ad1f07bf4d534a68ab).
+  - [Downloads & Keys - Visual Studio Subscriptions](https://my.visualstudio.com/Downloads?q=System%20Center%202022).
+  - [Evaluation (VHDX) from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=104040&msockid=0c55acf0521869ad1f07bf4d534a68ab).
+  - Any other procurement channels such as Microsoft Admin Center or from Microsoft partners.
+::: moniker-end
+
 
 >[!NOTE]
 >During VMM Installation, ensure that the SQL Database isn't part of any Availability Group.
+
+::: moniker range=">=sc-vmm-2019"
+
+[!INCLUDE [validation-virtual-machine-manager.md](../includes/validation-virtual-machine-manager.md)]
+
+::: moniker-end
 
 ## Run setup
 
@@ -222,3 +241,7 @@ VMM supports the use of gMSA for *Management server service account*.
 3. Enter the gMSA account details in *Domain\gMSA account* format.
 
      :::image type="gmsa" source="media/install/configure-service-account.png" alt-text="Screenshot of gmsa.":::
+
+## Next Step
+
+[Install the VMM Console](install-console.md).
