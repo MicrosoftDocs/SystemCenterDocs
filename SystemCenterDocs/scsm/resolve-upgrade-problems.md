@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot upgrade issues in System Center - Service Manager
+title: Troubleshoot Upgrade Issues in System Center - Service Manager
 description: This article helps you resolve System Center - Service Manager upgrade problems and work around them.
 ms.service: system-center
 author: PriskeyJeronika-MS
@@ -119,7 +119,7 @@ To disable signature verification, follow these steps:
 
 4. Attempt the upgrade again.  
 
-### Increase the service time-out setting 
+### Increase the service time-out setting  
 
 To increase the service time-out setting, follow these steps:
 
@@ -142,7 +142,3 @@ To increase the service time-out setting, follow these steps:
 2. Start the computer again.  
 
 3. Attempt the upgrade again.
-
-## Next steps
-
-- [Use management packs to add functionality to Service Manager](management-packs.md).

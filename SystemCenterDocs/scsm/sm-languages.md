@@ -1,5 +1,5 @@
 ---
-title: Languages supported by System Center - Service Manager
+title: Languages Supported by System Center - Service Manager
 description: Describes the languages that System Center - Service Manager supports.
 ms.service: system-center
 author: PriskeyJeronika-MS
@@ -13,7 +13,7 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Languages supported by System Center - Service Manager
 
-
+This article describes the languages that System Center - Service Manager supports.
 
 It's assumed in this article that you're installing System Center - Service Manager on a computer where no previous version of Service Manager is installed.
 
@@ -47,7 +47,3 @@ It's assumed in this article that you're installing System Center - Service Mana
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
 |Turkish \(Türkiye\)|Turkish\_100\_CI\_AS|  
-
-## Next steps
-
-- [Map Active Directory Domain Services attributes to properties in System Center - Service Manager](ad-ds-attribs.md).

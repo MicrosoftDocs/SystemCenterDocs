@@ -1,6 +1,6 @@
 ---
 ms.assetid: 3e7cc6b6-1d9e-4299-90c9-5427d6a9e56b
-title: Scope and supported configuration in Management Pack for SQL Server Reporting Services
+title: Scope and Supported Configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Reporting Services
 author: epomortseva
 ms.author: v-fkornilov
@@ -12,6 +12,8 @@ ms.subservice: operations-manager
 ---
 
 # Scope and Supported Configuration in Management Pack for SQL Server Reporting Services
+
+This article explains the scope and supported configuration for Management Pack for SQL Server Reporting Services.
 
 Management Pack for SQL Server Reporting Services is version-agnostic and supports discovery and monitoring of SQL Server Reporting Services 2012 through 2022 and higher and Power BI Report Server.
 
@@ -37,9 +39,9 @@ Management Pack for SQL Server Analysis Services supports the following versions
   
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
   
-- System Center Operations Manager 2016.
-- System Center Operations Manager 2019.
-- System Center Operations Manager 2022.
+- System Center Operations Manager 2016
+- System Center Operations Manager 2019
+- System Center Operations Manager 2022
 
 ::: moniker-end
 
@@ -75,7 +77,3 @@ Management Pack for SQL Server Reporting Services supports the following 64-bit 
 ::: moniker-end
 
 Localized versions of Windows Server are also supported.
-
-
-## Next steps
-- [Management Pack for SQL Server Reporting Services Delivery](reporting-services-management-pack-management-pack-delivery.md).

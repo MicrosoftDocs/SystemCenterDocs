@@ -1,5 +1,5 @@
 ---
-title: Work with management packs in the Authoring Tool
+title: Work with Management Packs in the Authoring Tool
 description: Describes how to work with management packs in the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
@@ -11,13 +11,13 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 16ddf6aa-46d8-4b31-99d0-569a63565407
 ---
 
 # Work with management packs in the Service Manager Authoring Tool
 
-
+This article describes how to work with management packs in the Service Manager Authoring Tool.
 
 Service Manager objects are stored in management packs. To modify an object using the Service Manager Authoring Tool, you open the management pack file that contains that object. To capture changes that you made in the Authoring Tool, you then save the changes in the original management pack file or in a new management pack file. If the original object that you changed is defined in a sealed management pack, you must save your changes in a new or an existing unsealed management pack. Unlike Service Manager, to save modified objects the Authoring Tool manipulates the actual management pack files on the hard drive-in an offline mode, without direct interaction with the Service Manager database.  
 
@@ -106,4 +106,4 @@ To create a new management pack file, follow these steps:
 
 ## Next steps
 
-- [Work with management pack XML files](work-mps-xml.md).
+[Work with management pack XML files](work-mps-xml.md).

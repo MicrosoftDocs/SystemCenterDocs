@@ -14,7 +14,7 @@ ms.assetid: dbfffaab-d49c-42a5-bbb3-77cbeae9b841
 
 # Use the Reporting Workspace in Operations Manager
 
-
+This article describes how to use the Operations Manager Operations console to view and administer reports.
 
 System Center Operations Manager provides extensive reporting capabilities, including multiple report libraries that you can select from to customize reports for your specific requirements. Reports perform a query against the data warehouse database and return the results in an easy-to-read format.  
 
@@ -53,6 +53,6 @@ In Operations Manager, you can run and view favorite reports under **Web Console
 
 ## Next steps
 
-* Review [Create reports in Operations Manager](manage-reports-create-reports.md) to learn how create reports for your operational needs.
+* Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to reports for your operational needs.
 
-* [Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
+* [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.

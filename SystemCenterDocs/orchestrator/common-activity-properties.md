@@ -16,6 +16,8 @@ ms.date: 03/31/2025
 ---
 # Common Activity Properties
 
+This article describes the common activity properties including the run behavior, published data behavior, event notifications and security credentials.
+
 All activities have properties. The Properties dialog box for each activity has multiple tabs that provide access to the settings for the activity. The particular set of tabs varies between activities, but there are several common property types.  
 
 ## Details
@@ -70,4 +72,4 @@ The settings on the Security Credentials tab let you specify the account that ru
 
 ## Related content
 
-[Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12))
+[Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12)).
