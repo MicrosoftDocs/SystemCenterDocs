@@ -5,7 +5,7 @@ description: This include file describes the new features in Orchestrator 2022.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 07/31/2024
+ms.date: 05/06/2025
 ms.service: system-center
 monikerRange: 'sc-orch-2022'
 ms.subservice: orchestrator
@@ -73,3 +73,11 @@ Orchestrator 2022 supports SQL Server 2022. [Learn more](/system-center/orchestr
 Orchestrator 2022 UR1 depends on .NET Core 6.
 
 Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [Learn more](/system-center/orchestrator/system-requirements-orch#net-requirements).
+
+## New features in Orchestrator 2022 UR2
+
+The following sections introduce the new features and feature updates supported in Orchestrator 2022 Update Rollup 2 (UR2).
+
+### Issues fixed and Improvements in SCO 2022 Update Rollup 2
+
+For issues fixed in Orchestrator 2022 UR2, and installation instructions for UR2, see the [KB article](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-orchestrator-c43fd5ad-3e40-4ea0-8586-4c5c5901aae0).
