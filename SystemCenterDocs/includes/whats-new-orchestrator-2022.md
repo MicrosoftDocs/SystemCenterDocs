@@ -90,14 +90,14 @@ The following sections introduce the new features and feature updates supported 
 
 For issues fixed in Orchestrator 2022 UR3 and installation instructions for UR3, see the KB article.
 
-#### Support for .NET 8
+### Support for .NET 8
 
 System Center Orchestrator 2022 supports the latest and most secure .NET8 (LTSC).
 
-#### Support for Transport Security Layer (TLS) protocol version 1.3
+### Support for Transport Security Layer (TLS) protocol version 1.3
 
 System Center Orchestrator 2022 supports Transport Security Layer (TLS) protocol version 1.3.
 
-#### Support for Group Managed Service Accounts (gMSA)
+### Support for Group Managed Service Accounts (gMSA)
 
 System Center Orchestrator now supports Group Managed Service Accounts (gMSA). [Learn more](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/group-managed-service-accounts-overview).
