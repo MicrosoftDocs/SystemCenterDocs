@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/21/2025
+ms.date: 05/08/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -70,15 +70,15 @@ Use this information to evaluate if your hardware environment is ready to suppor
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
 
-| Component                                                          | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core | Windows Server 2025 Standard, Datacenter | Windows Server 2025 Server Core |
-|:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|:-----------------------------------------|:--------------------------------|
-| **Operations Manager** Management Server                            | Yes                                      | Yes    | Yes      | Yes          | Yes      | Yes          |
-| **Operations Manager** Gateway Server                               | Yes                                      | Yes    | Yes      | Yes          |Yes      | Yes          |
-| **Operations Manager** Web Console                                  | Yes                                      |        | Yes      |              |Yes      |              |
-| **Operations Manager** ACS Collector                                | Yes                                      |        | Yes      |              |Yes      |              |
-| **Operations Manager** Operations console                           | Yes                                      |        | Yes      |              |Yes      |              |
-| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes                                      | Yes    | Yes      | Yes          |Yes      | Yes          |
-| **Operations Manager** Reporting server                             | Yes                                      |        |Yes       |              |Yes       |              |
+| Component                                                          | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core | Windows Server 2025 Standard, Datacenter | Windows Server 2025 Server Core |
+|:--------------------------------------------------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|:-----------------------------------------|:--------------------------------|
+| **Operations Manager** Management Server                            | Yes      | Yes          | Yes      | Yes          |
+| **Operations Manager** Gateway Server                               | Yes      | Yes          |Yes      | Yes          |
+| **Operations Manager** Web Console                                  | Yes      |              |Yes      |              |
+| **Operations Manager** ACS Collector                                | Yes      |              |Yes      |              |
+| **Operations Manager** Operations console                           | Yes      |              |Yes      |              |
+| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes      | Yes          |Yes      | Yes          |
+| **Operations Manager** Reporting server                             |Yes       |              |Yes       |              |
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
