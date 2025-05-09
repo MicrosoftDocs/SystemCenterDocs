@@ -5,7 +5,7 @@ description: This article summarizes supported storage arrays for VMM.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 05/09/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -72,4 +72,4 @@ This article provides details of the supported arrays for System Center 2025 - V
 ## Next steps
 
  - [Learn more](storage-device.md) about configuring storage in the VMM fabric.
- - Learn more about array SMI-S [Conformance Testing Program](http://www.snia.org/ctp/)
+ - Learn more about array SMI-S [Conformance Testing Program](https://www.snia.org/swordfish-ctp)
