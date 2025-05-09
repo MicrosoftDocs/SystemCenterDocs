@@ -34,14 +34,15 @@ Ensure that the storage device is supported before you add it.
    >For enhanced security, we recommend you to
      >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you have added storage devices without using SSL connection, you can remove and re-add them. 
      >- keep the `EnableHTTPListenerClientCertificateCheck` enabled on the VMM server machine.
-::: moniiker-end
+::: moniker-end
 
 ::: moniker range=">=sc-vmm-2022"
    >[!Important]
    >For enhanced security, we recommend you to
      >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you have added storage devices without using SSL connection, you can remove and re-add them. 
      >- keep the `EnableHTTPListenerClientCertificateCheck` key enabled in the registry under **HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Windows/CurrentVersion/Storage Management/** on the VMM server machine.
-::: moniiker-end
+
+::: moniker-end
 
 
 4. In **Gather Information**, VMM automatically tries to discover and import the storage device information. To retry, select **Scan Provider**.
@@ -51,6 +52,7 @@ Ensure that the storage device is supported before you add it.
 5. If you selected the option to use an SSL connection for an SMI-S provider, you observe that:
     - During discovery, the **Import Certificate** dialog appears. Check settings and select **Import**. By default, the certificate common name (CN) will be verified. This might cause storage discovery to fail if there's no CN or if it doesn't match.
     - If discovery fails because of the CN, disable CN verification in the registry on the VMM server. In the registry, go to **HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Storage Management/** and create a new DWORD value - **DisableHttpsCommonNameCheck**. Set the value to 1.
+
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2022"
@@ -58,6 +60,7 @@ Ensure that the storage device is supported before you add it.
 5. If you selected the option to use an SSL connection for an SMI-S provider, you observe that:
     - During discovery, the **Import Certificate** dialog appears. Check settings and select **Import**. By default, the certificate common name (CN) will be verified. This might cause storage discovery to fail if there's no CN or if it doesn't match.
     - If discovery fails because of the CN, disable CN verification in the registry on the VMM server. In the registry, go to **HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Windows/CurrentVersion/Storage Management/** and create a new DWORD value - **DisableHttpsCommonNameCheck**. Set the value to 1.
+
 ::: moniker-end
 
 6. If the discovery process succeeds, the discovered storage arrays, storage pools, manufacturer, model, and capacity are listed on the page. When the process finishes, select **Next**.
