@@ -25,21 +25,26 @@ Ensure that the storage device is supported before you add it.
 
 1. Select **Fabric** > **Storage** > **Add Resources** >**Storage Devices**.
 2. In **Add Storage Devices Wizard** > **Select Provider Type**, select to add a storage device with SMI-S or SMP according to the device you're using.
+
+::: moniker range="<=sc-vmm-2019"
+
 3. In **Specify Discovery Scope**:
     - If you're using SMI-S, specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI WMI**, add the IP address/FQDN and add the port used to connect to the provider on the remote server. You can enable SSL if you're using CIMXML. Specify an account for connecting to the provider.
     - If you're using SMP, select the provider from the list. If it isn't in the list, select **Import** to refresh it.
-
-::: moniker range="<=sc-vmm-2019"
 
    >[!Important]
    >For enhanced security, we recommend you to
      >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you have added storage devices without using SSL connection, you can remove and re-add them. 
      >- keep the `EnableHTTPListenerClientCertificateCheck` enabled on the VMM server machine.
-     
+
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2022"
 
+
+3. In **Specify Discovery Scope**:
+    - If you're using SMI-S, specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI WMI**, add the IP address/FQDN and add the port used to connect to the provider on the remote server. You can enable SSL if you're using CIMXML. Specify an account for connecting to the provider.
+    - If you're using SMP, select the provider from the list. If it isn't in the list, select **Import** to refresh it.
    >[!Important]
    >For enhanced security, we recommend you to
      >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you have added storage devices without using SSL connection, you can remove and re-add them. 
