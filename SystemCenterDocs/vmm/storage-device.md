@@ -30,13 +30,16 @@ Ensure that the storage device is supported before you add it.
     - If you're using SMP, select the provider from the list. If it isn't in the list, select **Import** to refresh it.
 
 ::: moniker range="<=sc-vmm-2019"
+
    >[!Important]
    >For enhanced security, we recommend you to
      >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you have added storage devices without using SSL connection, you can remove and re-add them. 
      >- keep the `EnableHTTPListenerClientCertificateCheck` enabled on the VMM server machine.
+     
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2022"
+
    >[!Important]
    >For enhanced security, we recommend you to
      >- use a Secure Sockets Layer (SSL) connection for adding storage devices in the VMM fabric. If you have added storage devices without using SSL connection, you can remove and re-add them. 
