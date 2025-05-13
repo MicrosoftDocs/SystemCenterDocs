@@ -18,7 +18,7 @@ The following sections summarize the release notes for Orchestrator 2022 UR3, an
 
 For the problems fixed in UR3 and the installation instructions for UR3, see the KB article.
 
-### 'Send platform event' activity isn't persisted to the database, xt content does not show correctly in the Runbook Tester log view area
+### Text content does not show correctly in the Runbook Tester log view area
 
 **Description**: Text content does not show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
 
@@ -29,8 +29,6 @@ For the problems fixed in UR3 and the installation instructions for UR3, see the
 **Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
 
 **Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
-
-### Runbook designer crashes with some Integration packs
 
 ## Orchestrator 2022 UR2 release notes
 
