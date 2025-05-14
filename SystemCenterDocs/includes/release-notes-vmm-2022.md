@@ -18,6 +18,8 @@ The following sections summarize the release notes for VMM 2022 and include the 
 - For issues fixed in 2022 UR1, [see the KB article for UR1](https://support.microsoft.com/kb/5019202).
 - For issues fixed in 2022 UR2, [see the KB article for UR2](https://support.microsoft.com/kb/5032369).
 
+## Known issues
+
 ### Chinese language support for SCVMM
 
-Chinese characters part of GB18030 present in the names or properties of the resources managed by SCVMM are not be recognizable. To overcome this limitation, it is necessary to update the SQL database associated with SCVMM to [Cumulative Update 12](https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate12) and run this [SQL query](https://download.microsoft.com/download/aceff22d-08dc-44be-be76-24ff634fc405/GBIssueFixSQLQuery_new.sql) in the SQL database.
+Chinese characters that are part of GB18030 and appear in the names or properties of resources managed by SCVMM may not be recognized. To overcome this limitation, it is necessary to update the SQL database associated with SCVMM to [Cumulative Update 12](https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate12) and run this [SQL query](https://download.microsoft.com/download/aceff22d-08dc-44be-be76-24ff634fc405/GBIssueFixSQLQuery_new.sql) in the database.
