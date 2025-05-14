@@ -5,7 +5,7 @@ description: This include file describes the new features in Orchestrator 2022.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 05/06/2025
+ms.date: 05/07/2025
 ms.service: system-center
 monikerRange: 'sc-orch-2022'
 ms.subservice: orchestrator
@@ -81,3 +81,23 @@ The following sections introduce the new features and feature updates supported 
 ### Issues fixed and Improvements in SCO 2022 Update Rollup 2
 
 For issues fixed in Orchestrator 2022 UR2, and installation instructions for UR2, see the [KB article](https://support.microsoft.com/topic/update-rollup-2-for-system-center-2022-orchestrator-c43fd5ad-3e40-4ea0-8586-4c5c5901aae0).
+
+## New features in Orchestrator 2022 UR3
+
+The following sections introduce the new features and feature updates supported in Orchestrator 2022 Update Rollup 3 (UR3).
+
+### Issues fixed and Improvements in SCO 2022 Update Rollup 3
+
+For issues fixed in Orchestrator 2022 UR3 and installation instructions for UR3, see the KB article.
+
+### Support for .NET 8
+
+System Center Orchestrator 2022 supports the latest and most secure .NET8 (LTSC).
+
+### Support for Transport Security Layer (TLS) protocol version 1.3
+
+System Center Orchestrator 2022 supports Transport Security Layer (TLS) protocol version 1.3.
+
+### Support for Group Managed Service Accounts (gMSA)
+
+System Center Orchestrator now supports Group Managed Service Accounts (gMSA). [Learn more](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/group-managed-service-accounts-overview).
