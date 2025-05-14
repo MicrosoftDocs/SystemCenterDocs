@@ -5,13 +5,12 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 12/18/2024
+ms.date: 05/14/2025
 ms.topic: article
 ms.service: system-center
 ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager
 ---
-
 
 # Convert a VMware VM to Hyper-V in the VMM fabric
 
@@ -165,6 +164,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 ::: moniker-end
 
 :::moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+
 ## Convert VMware VMs to Hyper-V faster
 
 - As a prerequisite to start converting VMware VMs to Hyper-V four times faster, upgrade to SCVMM 2022 UR2 or later.
@@ -262,6 +262,9 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 8.	In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 
 9.	Select **Create** to start the conversion. Verify the VMs' conversion in **VMs and Services > Home > Show > VMs**.
+
+>[!Note]
+>If you convert VMware BIOS-based VMs with more than 4 disks, not all disks are attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To overcome this and attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after you convert the VM.
 
 >[!Note]
 >After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
