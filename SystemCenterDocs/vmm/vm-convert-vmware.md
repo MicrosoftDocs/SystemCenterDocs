@@ -139,6 +139,17 @@ Ensure the following prerequisites are met:
 
     :::image type="content" source="media/vm-convert-vmware/vm-conversion-gen2-created.png" alt-text="Screenshot of vm conversion to gen 2." lightbox="media/vm-convert-vmware/vm-conversion-gen2-created.png":::
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+>[!Note]
+>On converting VMware BIOS-based VMs with more than four disks, not all disks gets attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after converting the VM.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
+
 > [!NOTE]
 > - PowerShell commands allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based on the requirements.
 
@@ -265,7 +276,7 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 ::: moniker-end 
 
-::: moniker range=">=sc-vmm-2022"
+::: moniker range="sc-vmm-2025"
 
 >[!Note]
 >On converting VMware BIOS-based VMs with more than four disks, not all disks gets attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after converting the VM.
