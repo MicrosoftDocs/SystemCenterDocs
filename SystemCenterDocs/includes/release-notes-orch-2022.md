@@ -8,9 +8,27 @@ manager: jsuri
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:
-ms.date: 02/21/2024
+ms.date: 05/07/2025
 title:  include file
 ---
+
+## Orchestrator 2022 UR3 Release notes
+
+The following sections summarize the release notes for Orchestrator 2022 UR3, and include the known issues and workarounds.
+
+For the problems fixed in UR3 and the installation instructions for UR3, see the KB article.
+
+### Text content does not show correctly in the Runbook Tester log view area
+
+**Description**: Text content does not show correctly in the Runbook Tester log view area. Selecting the text will re-render it in the correct font that supports all scripts including GB18030-2022 character set.
+
+**Workaround**: None
+
+### Service Manager connector doesn't work with new Web API
+
+**Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
+
+**Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.
 
 ## Orchestrator 2022 UR2 release notes
 
