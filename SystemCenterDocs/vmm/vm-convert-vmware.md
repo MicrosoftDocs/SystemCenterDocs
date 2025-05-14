@@ -263,8 +263,17 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 9.	Select **Create** to start the conversion. Verify the VMs' conversion in **VMs and Services > Home > Show > VMs**.
 
+::: moniker-end 
+
+::: moniker range=">=sc-vmm-2022"
+
 >[!Note]
->If you convert VMware BIOS-based VMs with more than 4 disks, not all disks are attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To overcome this and attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after you convert the VM.
+>On converting VMware BIOS-based VMs with more than four disks, not all disks gets attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after converting the VM.
+
+::: moniker-end
+
+
+:::moniker range="sc-vmm-2025"
 
 >[!Note]
 >After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
