@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Virtual M
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 05/14/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -24,9 +24,9 @@ For new features in VMM 2025, see [What's new](whats-new-in-vmm.md).
 
 ::: moniker range="sc-vmm-2022"
 
-Virtual Machine Manager (VMM) 2022 doesn't have any known issues.
+This article lists the release notes for System Center 2022 - Virtual Machine Manager (VMM).
 
-For new features in VMM  2022, see [What's new](whats-new-in-vmm.md).
+[!INCLUDE [release-notes-vmm-2022.md](../includes/release-notes-vmm-2022.md)]
 
 ::: moniker-end
 
