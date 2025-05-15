@@ -7,7 +7,7 @@ ms.author: jsuri
 ms.service:  system-center
 ms.subservice: Orchestrator
 keywords:
-ms.date: 05/07/2025
+ms.date: 05/15/2025
 title:  include file
 ---
 
@@ -15,7 +15,7 @@ title:  include file
 
 The following sections summarize the release notes for Orchestrator 2022 UR3, and include the known issues and workarounds.
 
-For the problems fixed in UR3 and the installation instructions for UR3, see the KB article.
+For the problems fixed in UR3 and the installation instructions for UR3, see the [KB article](https://support.microsoft.com/topic/update-rollup-3-for-system-center-2022-orchestrator-aef5d811-c845-47c0-abc2-82ea9e74994a).
 
 ### Text content does not show correctly in the Runbook Tester log view area
 

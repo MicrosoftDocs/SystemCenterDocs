@@ -87,7 +87,7 @@ The following sections introduce the new features and feature updates supported 
 
 ### Issues fixed and Improvements in SCO 2022 Update Rollup 3
 
-For issues fixed in Orchestrator 2022 UR3 and installation instructions for UR3, see the KB article.
+For issues fixed in Orchestrator 2022 UR3 and installation instructions for UR3, see the [KB article](https://support.microsoft.com/topic/update-rollup-3-for-system-center-2022-orchestrator-aef5d811-c845-47c0-abc2-82ea9e74994a).
 
 ### Support for .NET 8
 

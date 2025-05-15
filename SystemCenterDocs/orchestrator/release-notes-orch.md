@@ -4,7 +4,7 @@ title: Release notes for Orchestrator
 description: This article details the known issues and issues fixed in Orchestrator
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 05/15/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: orchestrator
