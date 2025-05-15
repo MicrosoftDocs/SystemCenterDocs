@@ -7,9 +7,8 @@ ms.date: 05/05/2025
 title: System Center DPM Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy23, updateFrequency.5, engagement-fy24
 ---
 

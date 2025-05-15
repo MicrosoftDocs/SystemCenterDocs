@@ -2,9 +2,8 @@
 title: What's new in System Center Orchestrator
 description: This article describes the new features and other changes in System Center Orchestrator.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.date: 05/07/2025
 ms.subservice: orchestrator

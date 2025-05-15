@@ -7,9 +7,8 @@ ms.date: 11/01/2024
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '>sc-dpm-2016'
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---

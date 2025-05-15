@@ -2,9 +2,9 @@
 ms.assetid: 2e50e81c-96f5-4a4d-8dd1-dd57470e91be
 title: Distributed Deployment of Operations Manager
 description: This article highlights the distributed deployment configuration of Operations Manager and references each role to install.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center

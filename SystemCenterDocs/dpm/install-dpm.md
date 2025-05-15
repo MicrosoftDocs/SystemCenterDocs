@@ -3,9 +3,8 @@ description: This article contains prerequisites and setup instructions for DPM 
 ms.topic: article
 ms.date: 03/19/2025
 title: Install Data Protection Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24

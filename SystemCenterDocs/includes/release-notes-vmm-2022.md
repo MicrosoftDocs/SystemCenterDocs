@@ -2,9 +2,8 @@
 ms.assetid: 
 title: Include file
 description: Include file to summarize the release notes for VMM 2019.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  05/14/2025
 ms.topic:  include
 ms.service: system-center
