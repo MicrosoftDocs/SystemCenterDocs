@@ -2,9 +2,8 @@
 ms.assetid: 2a758506-7d92-4bb7-9b74-61e206ed6203
 title: include file
 description: include file to provide information about system requirements for VMM 2016
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  07/27/2018
 ms.topic: include
 ms.service:  system-center

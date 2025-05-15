@@ -2,9 +2,8 @@
 ms.assetid: fcb4ef4c-b511-402c-9ba6-724169598fe9
 title: Allow and block VM traffic with port ACLs in the SDN infrastructure using VMM
 description: This article describes how to allow and block network traffic to a particular VM using VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center

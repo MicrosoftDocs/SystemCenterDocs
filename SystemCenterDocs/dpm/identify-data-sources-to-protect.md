@@ -7,9 +7,8 @@ ms.date: 11/01/2024
 title: Identify data sources you want to protect
 ms.subservice: data-protection-manager
 ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 

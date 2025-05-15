@@ -2,9 +2,8 @@
 ms.assetid: 63e75b37-0bba-44d1-a8d9-dc1d8273ff48
 title: Deploy VMs with rapid provisioning using SAN copy in the VMM fabric
 description: This article describes how to rapidly provision VMs in the VMM fabric using SAN copy
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/02/2025
 ms.topic: article
 ms.service: system-center

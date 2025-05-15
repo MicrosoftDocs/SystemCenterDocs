@@ -2,9 +2,8 @@
 ms.assetid: 2d8c7af1-fe96-4901-9d51-90e12bedeaa8
 title: Set up host groups in the VMM compute fabric
 description: This article describes how to set up host groups in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 08/09/2024
 ms.topic: article
 ms.service: system-center
