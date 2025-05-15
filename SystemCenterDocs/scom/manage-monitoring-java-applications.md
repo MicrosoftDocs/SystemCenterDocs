@@ -1,9 +1,8 @@
 ---
 title: Monitoring Java Applications
 description: This article describes the concepts and recommendations for monitoring Java applications with Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center

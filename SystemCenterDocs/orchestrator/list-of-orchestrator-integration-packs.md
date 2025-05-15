@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: article
 ms.assetid:
 caps.latest.revision: 12
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # List of Integration Packs for Orchestrator
 

@@ -2,9 +2,8 @@
 ms.assetid: 049a010e-78e8-4c93-b8ca-4543ae0c55d7
 title: Set up logical networks in VMM 2019 UR1 and later fabric
 description: This article describes how to set up logical networks in the VMM 2019 UR1 and later fabric.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/01/2024
 ms.topic: article
 ms.service: system-center

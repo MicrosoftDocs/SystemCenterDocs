@@ -2,9 +2,8 @@
 ms.assetid: a6271390-71e0-4a97-b48c-38369165613b
 title: Release build versions for System Center Operations Manager
 description: This article details the release builds in Operations Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 12/10/2024
 ms.topic: article
 ms.service: system-center

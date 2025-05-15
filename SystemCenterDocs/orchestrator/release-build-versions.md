@@ -2,9 +2,8 @@
 ms.assetid:
 title: Release build versions for System Center Orchestrator
 description: This article details the release builds in Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/14/2025
 ms.topic: article
 ms.service: system-center

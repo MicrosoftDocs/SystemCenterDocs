@@ -1,9 +1,8 @@
 ---
 title: Connect Operations Manager With Other Management Systems
 description: This article describes how to integrate Operations Manager with other enterprise management systems and System Center components.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center

@@ -1,9 +1,8 @@
 ---
 description: include file to describe the new features in Service Management Automation (SMA) 2016
 ms.topic: include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 keywords:  
 ms.date: 01/22/2018

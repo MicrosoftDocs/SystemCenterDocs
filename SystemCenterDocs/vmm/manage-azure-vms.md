@@ -2,9 +2,8 @@
 ms.assetid: ed0e035b-4714-4bc4-a8fa-b4eef618e719
 title: Manage Azure VMs
 description: This article provides information about the basic actions you can do on Azure instances, without leaving the VMM console.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 09/02/2024
 ms.topic: article
 ms.service: system-center
