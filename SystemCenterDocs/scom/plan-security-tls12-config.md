@@ -152,6 +152,7 @@ foreach ($Protocol in $ProtocolList)
     New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "0" -PropertyType DWORD -Force | Out-Null
   }
   Write-Output " "
+ }
 }
 ```
 
