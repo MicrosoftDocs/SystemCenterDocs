@@ -1,5 +1,5 @@
 ---
-title: Configure workflows
+title: Configure Workflows
 description: Learn about configuring workflows in Service Manager.
 ms.topic: how-to
 author: PriskeyJeronika-MS
@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/16/2025
+ms.date: 05/27/2025
 ms.subservice: service-manager
 ms.assetid: b204c2fc-c65e-41f3-a650-e425060f61b3
 ms.custom: UpdateFrequency3, engagement-fy24
@@ -15,9 +15,9 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # Configure workflows in Service Manager
 
-In this article, you'll learn about configuring workflows in Service Manager.
-
 In Service Manager, a workflow is a sequence of activities that automate a business process. Workflows can, for example, update incidents when various changes occur. A workflow can automatically generate incidents when computers fall out of compliance from desired configuration management. You create a workflow that defines when and under what circumstances it will run. For example, a workflow can automatically change the support tier from a setting of 1 to 2 whenever a low-priority incident pertaining to printing problems is changed to a higher priority. Workflow activities function by the application of templates. For this example, an incident template to change the support tier to a setting of 2 must have been created previously.
+
+In this article, you'll learn about configuring workflows in Service Manager.
 
 You can create multiple workflows for each workflow configuration. You can enable or disable the workflow conditions. If a particular rule is disabled, the remaining rules still cause the workflow to run. If you want to completely disable a workflow, you must disable all of the rules that call the workflow.
 
@@ -54,12 +54,12 @@ To validate an incident workflow, follow these steps:
 4. In the **Incident Form** page, set the **Urgency** property to **High**, and select **OK**.
 5. In a few minutes, press F5. Verify that the value in the **Support Group** box changed to **Tier 2**.
 
-![Screenshot of PowerShell symbol.](./media/workflows/pssymbol.png) You can use Windows PowerShell commands to complete these and other related tasks. For more information about how to use each of these below listed tasks, see:
+![Screenshot of PowerShell symbol.](./media/workflows/pssymbol.png) You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
-- How to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316243(v=sc.20)).
-- How to use Windows PowerShell to retrieve configuration and status information for Service Manager workflows, see [Get-SCSMWorkflowStatus](/previous-versions/system-center/powershell/system-center-2012-r2/hh316207(v=sc.20)).
-- How to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](/previous-versions/system-center/powershell/system-center-2012-r2/hh316204(v=sc.20)).
-- How to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316221(v=sc.20)).
+- For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316243(v=sc.20)).
+- For information about how to use Windows PowerShell to retrieve configuration and status information for Service Manager workflows, see [Get-SCSMWorkflowStatus](/previous-versions/system-center/powershell/system-center-2012-r2/hh316207(v=sc.20)).
+- For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](/previous-versions/system-center/powershell/system-center-2012-r2/hh316204(v=sc.20)).
+- For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316221(v=sc.20)).
 
 ## View workflow success or failure in Service Manager
 
