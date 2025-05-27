@@ -3,9 +3,8 @@ ms.assetid: 68d9b467-12db-4fec-af94-9f9fa15c5f86
 title: Configure sudo Elevation and SSH Keys
 titlesuffix: Microsoft System Center Operations Manager
 description: This article describes how to configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
@@ -102,7 +101,7 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
 4. Select **Save private key** and name and save the file to the desired directory.
 5. You can use the exported file within a maintenance RunAs account configured for `scomuser`, or when performing maintenance tasks through the console.
 
-You can use the `scomuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
+You can use the `scomuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts. 
 
 > [!IMPORTANT]
 > **PPK file version 2 is the only version currently supported for System Center Operations Manager.**

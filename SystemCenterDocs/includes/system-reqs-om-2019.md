@@ -2,10 +2,9 @@
 ms.assetid: c700cb35-19e6-4c77-b439-95d8eaacc377
 title: include file
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2019.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 12/16/2020
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/21/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
@@ -29,7 +28,7 @@ This information helps you understand the performance and scalability characteri
 | Agentless-managed computers per management group | 60 |
 | Agent-managed and UNIX or Linux computers per management group | 6,000 (with 50 open consoles); 15,000 (with 25 open consoles) |
 | UNIX or Linux computers per dedicated management server | 1,000 |
-| UNIX or Linux computers monitored per dedicated gateway server | 200 |
+| UNIX or Linux computers monitored per dedicated gateway server | 100 |
 | Network devices managed by a resource pool with three or more management servers | 1,000 |
 | Network devices managed by two resource pools | 2,000 |
 | Agents for Application Performance Monitoring (APM) | 700 |

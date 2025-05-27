@@ -1,9 +1,8 @@
 ---
 title: Scheduled Maintenance in Operations Manager
 description: This article describes the default scheduled maintenance tasks configured automatically when the management group is installed.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center

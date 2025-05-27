@@ -1,9 +1,8 @@
 ---
 title: Agentless Monitoring in Operations Manager
 description: This article describes how to use agentless monitoring in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
@@ -29,7 +28,7 @@ For information about configuring an agent-managed computer as a proxy for agent
 > [!IMPORTANT]  
 > An agentless-managed computer places additional resource utilization on a management server than an agent-managed computer.  
 
-To change an agentless-managed computer to an agent-managed computer, do the following:  
+To change an agentless-managed computer to an agent-managed computer, follow these steps:  
 
 1. Delete the agentless-managed computer from the management group by right-clicking the computer in **Agentless Managed** in the **Administration** workspace and then selecting **Delete**.  
 

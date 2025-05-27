@@ -2,10 +2,9 @@
 ms.assetid:
 title: include file
 description: Include file to summarize the supported storage arrays for VMM 2022.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 02/09/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 05/09/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -18,6 +17,7 @@ ms.subservice: virtual-machine-manager
 
 | **Device** | **Protocol** | **Min Controller Firmware** | **SMI-S** | **Details** |
 | --- | --- | --- | --- | --- |
+|NetApp<br /><br /> AFF, ASA|iSCSI/FC/SMB3|ONTAP 9.15.1 or later|SMI-S 5.2.7|[Link](https://www.netapp.com/data-storage/)|
 | Hewlett Packard Enterprise<br/><br/> 3PAR | SMI-S | 3PAR: 3PAR v. 3.2.2 MU3 or later<br/><br/> 3PAR 8000 & 20000, 7000 & 10000 | SMI-S CIM version 1.5 | [Link](https://www.hpe.com/us/en/storage/3par.html) |
 |NEC / NEC Storage M-Series M320, M320F, M520, M720, M720F|iSCSI/FC |010A <br/><br/>M320/M320F Storage Control Software revision 1028 or later <br/><br/>M520/M720/M720F Storage Control Software revision 1224 or later |SMI-S 1.6.1|[Link](https://www.nec.com/en/global/prod/storage/product/san/index.html)
 |DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS: 7.4.2 or later <br/><br/> DSM: 2019 R1 or later <br/><br/> DSM 2020 R1 (20.1.1) or later <br/><br/> | SMI-S <br/>version 1.6 | [Link](https://www.dell.com/en-us/work/shop/cty/sf/disk-arrays?dgc=IR&cid=emcstorcat&lid=1) |

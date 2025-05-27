@@ -2,9 +2,8 @@
 ms.assetid: 40d9b3b7-3e5a-463c-bbc0-161450e59714
 title: Deploy and manage Azure Local instances in VMM
 description: This article describes how to set up an Azure Local instance in VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 12/18/2024
 ms.topic: article
 ms.service: system-center

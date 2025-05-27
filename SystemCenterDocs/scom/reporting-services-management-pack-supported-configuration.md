@@ -3,9 +3,9 @@ ms.assetid: 3e7cc6b6-1d9e-4299-90c9-5427d6a9e56b
 title: Scope and supported configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Reporting Services
 author: epomortseva
-ms.author: v-fkornilov
+ms.author: v-vlchernov
 manager: evansma
-ms.date: 11/01/2024
+ms.date: 05/22/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -40,6 +40,7 @@ Management Pack for SQL Server Analysis Services supports the following versions
 - System Center Operations Manager 2016
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+- System Center Operations Manager 2025
 
 ::: moniker-end
 
