@@ -2,9 +2,9 @@
 ms.assetid:
 title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
+ms.date: 04/14/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 12/18/2024
 ms.topic: include
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -114,3 +114,14 @@ If you are running WS 2012 and 2012R2 host and guest operating systems, the Azur
 ### Support for latest Linux Guest Operating Systems
 
 With VMM 2022 UR2, you can run Ubuntu Linux 22, Debian 11, Oracle Linux 8 and 9 based Linux VMs.
+
+
+## New features in VMM 2022 UR3
+
+The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 3 (UR3).
+
+For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see the KB article.
+
+### Support for latest guest Operating Systems
+
+With VMM 2022 UR3, you can run Windows Server 2025 VMs and Ubuntu Linux 24.04, RHEL 9, Debian 12, SLES 15, Rocky Linux 8 and 9 based Linux VMs.
