@@ -2,7 +2,7 @@
 title: Get VM
 description: The Get VM activity is used to retrieve an existing VM based on the filters you specify.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 04/21/2025
+ms.date: 05/27/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,11 +17,11 @@ manager: jsuri
 
 # Get VM
 
-This article explains the Get VM activity that is used to retrieve an existing VM based on the filters you specify. The activity publishes all of the data from the required and optional properties into published data.
+The Get VM activity is used to retrieve an existing VM based on the filters you specify. In this article, you'll learn about the Get VM activity.
 
-The following tables list the required and optional properties and published data for this activity:
+The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Get VM filters
+## Get VM Filters
 
 | Element   | Description   |
 |:---|:---|
