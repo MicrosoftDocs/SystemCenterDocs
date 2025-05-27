@@ -1,10 +1,9 @@
 ---
 title: Install Orchestrator
 description: Provides instructions for installing System Center - Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 12/17/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/19/2025
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
@@ -44,6 +43,12 @@ A complete Orchestrator installation includes a management server, one or more r
 For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](learn-about-orchestrator.md).
 
 This article provides detailed installation instructions for the various Orchestrator roles.
+
+::: moniker-end
+
+::: moniker range=">=sc-orch-2019"
+
+[!INCLUDE [validation-orchestrator.md](../includes/validation-orchestrator.md)]
 
 ::: moniker-end
 

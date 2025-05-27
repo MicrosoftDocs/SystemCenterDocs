@@ -2,9 +2,8 @@
 ms.assetid: 20a0b182-231f-4483-a6cb-701f1b72b857
 title: Allocate storage to VMM host groups
 description: This article describes how to allocate block storage to VMM host groups
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 08/22/2024
 ms.topic: article
 ms.service: system-center

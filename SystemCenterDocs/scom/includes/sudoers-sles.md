@@ -5,7 +5,7 @@ description: Include file with sudoers configuration for SUSE Linux Enterprise S
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 03/05/2024
+ms.date: 03/07/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,17 +13,17 @@ ms.subservice: operations-manager
 
 <!-----------------
 
-SCOM 2022
+SCOM 2022 and above
 
 -------------------------->
 
-::: moniker range="sc-om-2022"
+::: moniker range="> sc-om-2022"
 
 ### SLES 12
 
 ```bash
 #-----------------------------------------------------------------------------------
-# Example user configuration for Operations Manager 2022
+# Example user configuration for Operations Manager 2022 and above
 # Example assumes users named: scomadm & scomuser
 # Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 

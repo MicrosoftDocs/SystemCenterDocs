@@ -2,9 +2,8 @@
 ms.assetid: ba5add9b-c6c8-4e70-b916-94d9c548757f
 title: Release build versions for System Center Virtual Machine Manager
 description: This article details the release builds in Virtual Machine Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

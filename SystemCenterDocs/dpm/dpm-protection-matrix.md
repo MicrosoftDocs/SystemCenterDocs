@@ -3,13 +3,12 @@ description: A complete matrix of all workloads, data types, and installations t
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/03/2025
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ---
 
@@ -140,7 +139,7 @@ The following sections provide details of the protection support matrix for DPM:
 | System Center VMM | VMM 2025, 2022, 2019 | Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine | All deployment scenarios: Database |
 | SQL Server | SQL Server 2022, SQL Server 2019, SQL Server 2017, 2016 and [supported SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202016), 2014 and supported [SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202014) | Physical server <br /><br /> Hyper-V virtual machine <br /><br /> VMware virtual machine <br /> <br /> Azure virtual machine | All deployment scenarios: database<br /><br />DPM 2019 UR1 and later supports the backup of SQL over ReFS. <br /><br /> DPM 2019 UR2 and later supports the backup of SQL database, stored on the Cluster Shared Volumes (CSVs). <br /><br />SQL Server 2022<br /><br />Note: Install latest version of OLEDB 19 (19.3 and above)|
 | Exchange | 2019, 2016 | Physical server<br/><br/> Hyper-V virtual machine <br /><br />VMware virtual machine | Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> DPM 2019 doesn't support the backup of Exchange over ReFS<br /><br /> DPM 2019 UR1 and later supports the backup of Exchange over ReFS |
-| SharePoint | 2019, 2016 with latest SPs | Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine) | Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS<br /><br />Note: Install latest version of OLEDB 19 (19.3 and above)|
+| SharePoint | 2019, 2016 with latest SPs and Sharepoint Subscription Edition | Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine) | Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS<br /><br />Note: Install latest version of OLEDB 19 (19.3 and above)|
 
 ### VM backup
 

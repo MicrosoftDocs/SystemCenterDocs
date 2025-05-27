@@ -1,9 +1,8 @@
 ---
 title: Orchestrator Integration Toolkit Overview
 description: This article describes the enhanced features of the Orchestrator Integration Toolkit that is used to create new integrations for Orchestrator.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator

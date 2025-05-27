@@ -2,9 +2,9 @@
 ms.assetid:
 title: Enforce TLS 1.2 for Operations Manager
 description: This article describes how to configure System Center Operations Manager to utilize Transport Layer Security (TLS) 1.2.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+
 ms.date: 02/19/2025
 ms.custom: na
 ms.service: system-center
