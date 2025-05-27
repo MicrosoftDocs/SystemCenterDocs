@@ -1,11 +1,11 @@
 ---
-title: Troubleshoot System Center - Service Manager deployment issues
+title: Troubleshoot System Center - Service Manager Deployment Issues
 description: Describes how to troubleshoot System Center - Service Manager deployment issues.
 ms.service: system-center
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/21/2025
+ms.date: 05/27/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -14,7 +14,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Troubleshoot Service Manager deployment issues
 
-This article describes how to troubleshoot System Center - Service Manager deployment issues.
+This article provides information about troubleshooting System Center - Service Manager deployment issues.
 
 An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot data warehouse jobs](manage-dw.md).
 
