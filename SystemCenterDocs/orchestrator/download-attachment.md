@@ -2,7 +2,7 @@
 title: Download Attachment
 description: The Download Attachment activity is used in a runbook to download an attachment from a Microsoft SharePoint list item.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.date: 04/21/2025
+ms.date: 05/27/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -21,7 +21,7 @@ In this article, you'll learn about the **Download Attachment** activity that is
 
 The following tables list the required properties and Published Data for this activity.
 
-## Download Attachment Required properties
+## Download Attachment Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -31,7 +31,7 @@ The following tables list the required properties and Published Data for this ac
 | ID   | The ID of the list item that contains the attachment to be downloaded.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item.   | String   |
 
-## Download Attachment Optional properties
+## Download Attachment Optional Properties
 
 There are no optional properties for this runbook activity.
 
