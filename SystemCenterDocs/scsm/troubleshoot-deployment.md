@@ -1,10 +1,11 @@
 ---
-title: Troubleshoot System Center - Service Manager deployment issues
+title: Troubleshoot System Center - Service Manager Deployment Issues
 description: Describes how to troubleshoot System Center - Service Manager deployment issues.
 ms.service: system-center
-author: jyothisuri
-ms.author: jsuri
-ms.date: 11/01/2024
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 05/27/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -13,9 +14,9 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Troubleshoot Service Manager deployment issues
 
+This article provides information about troubleshooting System Center - Service Manager deployment issues.
 
-
-An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot Data Warehouse Jobs](manage-dw.md).
+An installation log file is captured during the installation of System Center – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot data warehouse jobs](manage-dw.md).
 
 ## Installation log files
 
@@ -39,4 +40,4 @@ You've to either increase the amount of free disk space that is available or red
 
 ## Next steps
 
-- To deploy Service Manager using command-line parameters, review [Deploy Service Manager from a command line](deploy-cmd-line.md).
+To deploy Service Manager using command-line parameters, review [Deploy Service Manager from a command line](deploy-cmd-line.md).
