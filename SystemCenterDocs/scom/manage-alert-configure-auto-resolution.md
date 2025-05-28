@@ -4,7 +4,7 @@ description: This article describes how to configure the setting for automatic a
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/21/2025
+ms.date: 05/28/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,8 +15,6 @@ ms.assetid: dab97fc0-0cd9-40cf-a5bb-2e304490fef4
 # Configure automatic alert resolution
 
 This article describes how to configure the setting for automatic alert resolution in the Operations Manager management group.
-
-To configure automatic alert resolution, follow these steps:
 
 In System Center Operations Manager, alerts are resolved automatically after a specific number of days. You can change the automatic alert resolution settings globally for the management group. Using automatic alert resolution, you can configure all active alerts with a resolution state of **New** to be changed to **Closed** after a specific number of days. You can also configure all active alerts with a resolution state of **New** to be changed to **Closed** after a specific number of days when the alert source is healthy.  
 
