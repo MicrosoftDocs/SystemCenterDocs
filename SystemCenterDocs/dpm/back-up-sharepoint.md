@@ -3,7 +3,7 @@ description: Use DPM to protect SharePoint farms, external SQL Server databases,
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 04/21/2025
+ms.date: 05/27/2025
 title: Back up SharePoint with DPM
 ms.subservice: data-protection-manager
 ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
@@ -21,11 +21,9 @@ You can deploy System Center Data Protection Manager (DPM) to protect SharePoint
 
 - [Restore SharePoint with DPM](#restore-sharepoint-data)
 
-For information about troubleshooting, see [Troubleshooting SharePoint and DPM](https://techcommunity.microsoft.com/t5/system-center-blog/backing-up-sharepoint-with-data-protection-manager-and/ba-p/350563).
+For information about troubleshooting, see [Troubleshoot SharePoint and DPM](https://techcommunity.microsoft.com/t5/system-center-blog/backing-up-sharepoint-with-data-protection-manager-and/ba-p/350563).
 
 ## Prerequisites and limitations
-
-Before you back up and recover SharePoint data with DPM, consider these limitations and ensure you meet these prerequisites:
 
 - For a list of supported SharePoint versions and the DPM versions required to back them up, see [What can DPM back up?](dpm-protection-matrix.md).
 
@@ -47,7 +45,7 @@ Before you back up and recover SharePoint data with DPM, consider these limitati
 
 ## Before you start
 
-Here are some considerations before you start backing up and recovering your SharePoint data with DPM:
+Before you start backing up data, do the following:
 
 1. **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't, see:
 
@@ -67,7 +65,7 @@ Here are some considerations before you start backing up and recovering your Sha
 
 ## Configure backup
 
-To back up SharePoint farm, configure protection for SharePoint by using ConfigureSharePoint.exe, then create a protection group in DPM, and then follow these steps:
+To back up SharePoint farm, configure protection for SharePoint by using ConfigureSharePoint.exe, and then create a protection group in DPM, follow these steps:
 
 1. **Run ConfigureSharePoint.exe** - This tool configures the SharePoint VSS Writer service \(WSS\) and provides the protection agent with credentials for the SharePoint farm.
     After you've deployed the protection agent, the ConfigureSharePoint.exe file can be found in the \<DPM Installation Path\>\\bin folder on the front\-end Web server.  If you've multiple WFE servers, you only need to install it on one of them. Run as follows:
@@ -162,7 +160,7 @@ To publish Operations Manager alerts, follow these steps:
 
 ## Restore SharePoint data
 
-You can recover SharePoint data in the following ways:
+You can recover SharePoint data as follows:
 
 - Recover to the original location.
 
