@@ -10,9 +10,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e13e25d3-2dc1-472d-807d-5a05daa062d7
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 ---
 # Remove Remote Mailbox (Hybrid)

@@ -2,9 +2,8 @@
 ms.assetid: 17e19c04-7712-456c-a5ed-59a1237d05f5
 title: Manage telemetry settings in System Center Orchestrator
 description: This article provides information about how to manage the telemetry settings in System Center Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

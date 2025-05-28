@@ -2,9 +2,8 @@
 title: include file
 description: include file to describe the system requirements for Service Manager 2016.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/08/2021
 ms.subservice: service-manager
 ms.topic: include

@@ -2,18 +2,15 @@
 title: Author with Service Manager
 description: Provides an overview of using, authoring, and customizing management packs, which enable customizations in Service Manager.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/12/2025
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: engagement-fy24
 ---
 
 # Author with System Center - Service Manager
-
-
 
 Authoring in Service Manager (SM) refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
 
@@ -165,19 +162,11 @@ If Windows Error Reporting is enabled on the computer that is running the Author
      
 ::: moniker-end
 
-::: moniker range="sc-sm-2022"
+::: moniker range=">=sc-sm-2022"
 
 2. Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
 
       - [Download 2022 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=105032)
-
-::: moniker-end
-
-::: moniker range="sc-sm-2025"
-
-2. Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
-
-      - Download 2025 SM Authoring tool
 
 ::: moniker-end
 

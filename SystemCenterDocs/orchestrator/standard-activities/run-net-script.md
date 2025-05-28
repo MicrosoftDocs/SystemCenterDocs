@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: article
 ms.assetid: ad8a97f1-9c63-4824-890d-02af0021115b
 caps.latest.revision: 29
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Run .NET Script
 

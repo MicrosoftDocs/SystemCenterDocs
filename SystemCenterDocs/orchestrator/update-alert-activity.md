@@ -10,9 +10,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ba537978-bae7-4188-8c49-c380c7fc4adc
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ---

@@ -10,9 +10,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
 ms.date: 11/01/2024
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Capture activity events to monitor runbooks

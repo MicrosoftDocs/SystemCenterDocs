@@ -2,10 +2,9 @@
 ms.assetid: 90bd75e0-de7a-4ca4-ae7e-681a9eb21aba
 title: Integrate VMM with Operations Manager for monitoring and reporting
 description: This article describes how to integrate VMM with Operations Manager for monitoring and reporting
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 05/15/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager

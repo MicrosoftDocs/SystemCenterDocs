@@ -2,9 +2,8 @@
 ms.assetid: 9332f5fb-b26f-4d05-9cc6-c13727cd5967
 title: Web application properties
 description: This article provides information about how to manage the web application properties.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
