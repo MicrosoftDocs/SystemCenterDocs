@@ -2,7 +2,7 @@
 title: Configuration Manager Integration Pack
 description: The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager functions.
 ms.custom: na
-ms.date: 04/21/2025
+ms.date: 05/28/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Configuration Manager Integration Pack for System Center - Orchestrator
 
-In this article, you'll learn about Integration Pack for Configuration Manager. The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager management functions.
+The Integration Pack for Configuration Manager is an add-on for System Center - Orchestrator that enables you to automate common Configuration Manager management functions. In this article, you'll learn about Integration Pack for Configuration Manager.
 
 With this integration pack, you can also create workflows that interact with and transfer information to the integration packs for System Center Service Manager, System Center Data Protection Manager, System Center Operations Manager, and System Center Virtual Machine Manager.
 
