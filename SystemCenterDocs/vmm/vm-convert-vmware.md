@@ -4,7 +4,7 @@ title: Convert a VMware VM to Hyper-V in the VMM fabric
 description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/14/2025
+ms.date: 05/29/2025
 ms.topic: article
 ms.service: system-center
 ms.custom: engagement-fy24
@@ -263,7 +263,13 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 4.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
+::: moniker range="<=sc-vmm-2022"
 5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings.
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings. Choose **Generation 2** if the source VMware VM is configured with UEFI firmware or choose **Generation 1** if the source VMware VM is configured with BIOS firmware.
+::: moniker-end
 
 6.	In **Select Host**, select a Hyper-V host/Azure Local for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
