@@ -187,6 +187,7 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 
 :::moniker range="sc-vmm-2025"
+
 VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) conversion.
 
 >[!Important]
@@ -263,13 +264,7 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 4.	In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 
-::: moniker range="<=sc-vmm-2022"
-5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings.
-::: moniker-end
-
-::: moniker range="sc-vmm-2025"
 5.	In **Virtual Machine Configuration**, specify the number of processors and memory settings. Choose **Generation 2** if the source VMware VM is configured with UEFI firmware or choose **Generation 1** if the source VMware VM is configured with BIOS firmware.
-::: moniker-end
 
 6.	In **Select Host**, select a Hyper-V host/Azure Local for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM path is listed.
 
@@ -279,17 +274,9 @@ Now that your VMware VMs are discovered and manageable by VMM, you can convert t
 
 9.	Select **Create** to start the conversion. Verify the VMs' conversion in **VMs and Services > Home > Show > VMs**.
 
-::: moniker-end 
-
-::: moniker range="sc-vmm-2025"
-
 >[!Note]
 >On converting VMware BIOS-based VMs with more than four disks, not all disks gets attached to the new Hyper-V VM after conversion due to the limitations with IDE standards. To attach the remaining disks, run this [PowerShell script](https://download.microsoft.com/download/aad31a6a-b2d9-42fe-bfeb-064af733107d/AttachDiskScript.ps1) after converting the VM.
 
-::: moniker-end
-
-
-:::moniker range="sc-vmm-2025"
 
 >[!Note]
 >After conversion, all the VM disks except for the OS disk will be offline. This is because the `NewDiskPolicy` parameter is set to *offlineALL* on VMware VMs by default. To override this and to have the new disks brought online after conversion, you can make one of the following changes to your VMware VM disk policy before initiating the conversion:<br>
