@@ -4,7 +4,7 @@ title: Convert a VMware VM to Hyper-V in the VMM fabric
 description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V.
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/29/2025
+ms.date: 05/30/2025
 ms.topic: article
 ms.service: system-center
 ms.custom: engagement-fy24
@@ -95,7 +95,23 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 1. Select **VMs and Services** > **Home** > **Create** > **Create Virtual Machines** > **Convert Virtual Machine**.
 2. In **Convert Virtual Machine** wizard > **Select Source**, select **Browse** and in **Select Virtual Machine Source**, select the VMware VMs you want to convert.
 3. In **Specify Virtual Machine Identity**, modify the machine name and description as required.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2016"
+
 4. In **Virtual Machine Configuration**, specify the number of processors and memory settings.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
+
+4. In **Virtual Machine Configuration**, specify the number of processors and memory settings. Choose **Generation 2** if the source VMware VM is configured with UEFI firmware or choose **Generation 1** if the source VMware VM is configured with BIOS firmware.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+
 5. In **Select Host**, select a Hyper-V host/Azure Local machine (applicable from VMM 2019 UR3 and later) for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM paths are listed.
 6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
 7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
@@ -103,40 +119,10 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
    Verify the VM's conversion in **VMs and Services** > **Home** > **Show** > **VMs**.
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2016 <=sc-vmm-2022"
+::: moniker range="sc-vmm-2016"
 
 ## Convert EFI-based VM to Hyper-V Generation 2 VM
 System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take advantage of Generation 2 features.
-
-::: moniker-end
-
-::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
-
-The **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
-
-::: moniker-end
-
-::: moniker range=">=sc-vmm-2019 <=sc-vmm-2022"
-
-- BIOS-based VMs are migrated to Hyper-V VM Generation 1.
-- EFI-based VMs are migrated to Hyper-V VM Generation 2.
-
-### Before you start
-
-Ensure the following prerequisites are met:
-
-- VMware VMs with firmware type as EFI
-- VMware ESXi Hosts added in System Center VMM
-
-### Conversion procedure
-
-1. To convert, follow the [above procedure](#convert-using-the-wizard) and select **Generation 2** in step 4.
-
-    :::image type="content" source="media/vm-convert-vmware/vm-conversion-select-gen2.png" alt-text="Screenshot of Configure VM conversion to gen 2." lightbox="media/vm-convert-vmware/vm-conversion-select-gen2.png":::
-
-2. Once the VM is converted, you can see the Generation 2 VM as shown in the image below:
-
-    :::image type="content" source="media/vm-convert-vmware/vm-conversion-gen2-created.png" alt-text="Screenshot of vm conversion to gen 2." lightbox="media/vm-convert-vmware/vm-conversion-gen2-created.png":::
 
 ::: moniker-end
 
