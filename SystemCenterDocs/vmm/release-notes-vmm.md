@@ -4,7 +4,7 @@ title: Release notes for Virtual Machine Manager
 description: This article details the known issues and issues fixed in Virtual Machine Manager
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/14/2025
+ms.date: 06/03/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
