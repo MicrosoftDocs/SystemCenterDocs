@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-vlchernov
 manager: evansma
-ms.date: 01/23/2025
+ms.date: 03/04/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -23,7 +23,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 
 ## July 2024 - 7.6.1 RTM
 
-### What's New
+### What's new
 
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server Reporting Services
 - Updated display strings
