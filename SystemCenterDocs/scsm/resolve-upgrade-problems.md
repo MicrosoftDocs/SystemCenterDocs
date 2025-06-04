@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot upgrade issues in System Center - Service Manager
+title: Troubleshoot Upgrade Issues in System Center - Service Manager
 description: This article helps you resolve System Center - Service Manager upgrade problems and work around them.
 ms.service: system-center
 author: PriskeyJeronika-MS
@@ -103,9 +103,9 @@ For more information about the cause of this problem, see [Knowledgebase Article
 
 There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to Service Manager fails as a result of Configuration service Startup timing out. You can:  
 
-- Disable signature verification on the computer that is running setup.  
+- Disable signature verification on the computer that is running Setup.  
 
-- Increase the service time-out setting on the computer that is running setup.
+- Increase the service time-out setting on the computer that is running Setup.
 
 ### Disable signature verification
 
