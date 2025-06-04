@@ -12,14 +12,14 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# Control access by using the Health Service Lockdown tool in Operations Manager
-
-This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
+# Control access by using the Health Service Lockdown Tool in Operations Manager
 
 On computers requiring high security, for example a domain controller, you might need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.  
 
 > [!NOTE]  
 > You'll be unable to start the Microsoft Monitoring Agent service if you've used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the Microsoft Monitoring Agent service, follow the second procedure in this article to unlock the Action Account.  
+
+This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
 
 The following command\-line options are available:  
 
@@ -97,8 +97,8 @@ To add a Local System account, follow these steps:
 
 ## Next steps
 
-- To understand how to create a Run As account and associate with a Run As profile, see [Create a Run As Account and associate with a Run As Profile](manage-security-create-runas-link-profile.md).
+- To understand how to create a Run As account and associate with a Run As profile, see [Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
 
 - If you need to create new credentials for the management server action account, see [Create an Action Account in Operations Manager](manage-security-create-runas-actionaccount.md).
 
-- To understand how to target Run As account distribution to agent-managed computers securely, review [Distribution and targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  
+- To understand how to target Run As account distribution to agent-managed computers securely, review [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  

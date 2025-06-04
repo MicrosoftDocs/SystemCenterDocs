@@ -14,7 +14,7 @@ ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
 
 # Find data and objects in the Operations Manager consoles
 
-This article describes how to filter monitoring data in the Operations Manager Operations console to see data based on your specific criteria.
+
 
 System Center Operations Manager, with the appropriate management packs imported, will provide you with a comprehensive view of what is going on with your monitored applications, hardware, and processes. This can result in a large volume of data being displayed in the Operations console. Learning how to quickly locate the data you need is essential to efficient interaction with the console. You can use the **Scope**, **Find**, and **Search** buttons on the Operations console toolbar to filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need. You can also filter your data based on the number of hours or days you would like to show.  
 
@@ -25,9 +25,9 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 
 |Filter|When to use|For more information, see|  
 |----------|---------------|-----------------------------|  
-|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|[Change scope](manage-console-finding-data.md#change-scope)<br>[Use groups to scope views](manage-console-scope-views.md)|  
-|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|[Use find and search](manage-console-finding-data.md#use-find-and-search)<br>[Use advanced search](manage-console-using-adv-search.md)<br>[Examples of using advanced search in Operations Manager](~/scom/manage-console-using-adv-search.md#examples-of-using-advanced-search-in-operations-manager)|  
-|Find|Use to display a known single object.|[Use find and search](manage-console-finding-data.md#use-find-and-search)|  
+|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|[Change Scope](manage-console-finding-data.md#change-scope)<br>[Use Groups to Scope Views](manage-console-scope-views.md)|  
+|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|[Use Find and Search](manage-console-finding-data.md#use-find-and-search)<br>[Use Advanced Search](manage-console-using-adv-search.md)<br>[Examples of Using Advanced Search in Operations Manager](~/scom/manage-console-using-adv-search.md#examples-of-using-advanced-search-in-operations-manager)|  
+|Find|Use to display a known single object.|[Use Find and Search](manage-console-finding-data.md#use-find-and-search)|  
 
 ## Change scope  
 

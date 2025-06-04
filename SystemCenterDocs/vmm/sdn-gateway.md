@@ -1,6 +1,6 @@
 ---
 ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
-title: Set up an SDN RAS gateway in the VMM fabric
+title: Set up an SDN RAS Gateway in the VMM Fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -310,7 +310,7 @@ The service instance you deployed is now associated with the gateway Manager rol
 ## Validate the deployment
 
 After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
-For more information, see the following contents:configure-ipsec-connection
+For more information, see the following contents:
 
 - [Create and validate site-to-site IPSec connections](sdn-route-network-traffic.md#tab/configure-ipsec-connection)
 - [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#tab/configure-gre-tunneling)

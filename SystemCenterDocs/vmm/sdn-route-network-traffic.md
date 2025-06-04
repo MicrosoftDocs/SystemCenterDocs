@@ -1,6 +1,6 @@
 ---
 ms.assetid: 4c8b52fd-c293-4334-8fd4-010e357097a6
-title: Route traffic across networks in SDN infrastructure
+title: Route Traffic Across Networks in SDN Infrastructure
 description: This article describes about how to route the network traffic between physical and virtual networks in an SDN infrastructure.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -36,15 +36,15 @@ An SDN RAS gateway enables you to route network traffic between physical and vir
 
 ::: moniker-end
 
-## Prerequisites
+## Before you start
 
-Before you route traffic across networks in the SDN infrastructure, ensure you meet these prerequisites:
+Here are some considerations before you start routing traffic across networks in the SDN infrastructure:
 
--   SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md), and [SDN RAS gateway](sdn-gateway.md) are deployed.
+-   Ensure SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md), and [SDN RAS gateway](sdn-gateway.md) are deployed.
 
--   An SDN VM network with network virtualization is created.
+-   Ensure an SDN VM network with network virtualization is created.
 
-## [Configure Site-to-Site VPN connections using VMM](#tab/configure-site-to-site-vpn-connections-using-vmm)
+## Configure Site-to-Site VPN connections using VMM
 
 A Site-to-Site VPN connection allows you to securely connect two networks at different physical locations by using the Internet.
 
@@ -64,7 +64,7 @@ For specifying VIP range, don’t use the shortened form of the IPv6 address; us
 
 ::: moniker-end
 
-## [Configure IPSec connection](#tab/configure-ipsec-connection)
+## Configure IPSec connection
 
 To configure IPSec connection, follow these steps:
 
@@ -82,7 +82,7 @@ To configure IPSec connection, follow these steps:
 ![Screenshot of enable b g p.](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM network.
 
-## [Configure GRE tunneling](#tab/configure-gre-tunneling)
+## Configure GRE tunneling
 
 GRE tunnels enable connectivity between tenant virtual networks and external networks.
 Since the GRE protocol is lightweight and support for GRE is available on most of the network devices, it becomes an ideal choice for tunneling where encryption of data isn't required. GRE support in Site-to-Site (S2S) tunnels facilitates traffic forwarding between tenant virtual networks and tenant external networks.
@@ -102,7 +102,7 @@ To configure GRE tunneling, follow these steps:
 10. You can use the defaults for the remaining settings.
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
-## [Configure IPsec and GRE connections on the remote site](#tab/configure-ipsec-and-gre-connections-on-the-remote-site)
+## Configure IPsec and GRE connections on the remote site
 
 To configure IPsec and GRE connections on the remote site, follow this step:
 
@@ -112,7 +112,7 @@ On the remote peer device, use the **VM network endpoint IP address** from the V
 
 ::: moniker range="<sc-vmm-2019"
 
-## [Configure L3 forwarding](#tab/configure-l3-forwarding) 
+## Configure L3 forwarding
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
 
@@ -283,7 +283,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 ::: moniker range=">=sc-vmm-2019"
 
-## [Configure L3 forwarding](#tab/configure-l3-forwarding-1)
+## Configure L3 forwarding
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
 
@@ -412,7 +412,7 @@ For BGP to work, follow these steps:
 
 ::: moniker-end
 
----
+
 
 ## Determine the SDN gateway internal address
 

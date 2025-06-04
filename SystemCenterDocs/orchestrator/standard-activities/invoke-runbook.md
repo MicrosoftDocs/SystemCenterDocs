@@ -17,7 +17,9 @@ manager: jsuri
 ---
 # Invoke Runbook
 
-This article describes the Invoke Runbook activity that launches a runbook that you have specified. The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.  
+The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.
+
+This article describes the Invoke Runbook activity.
 
  You can use the Invoke Runbook activity to invoke generic runbooks that only perform specific actions that don't depend on how the runbook is invoked. For example, you can create a runbook that calls separate runbooks to perform a backup maintenance procedure that in turn calls a runbook to shut down services, another runbook to back up data, and then a final runbook to restart the services.  
 
@@ -38,7 +40,7 @@ Use the following information to configure the Invoke Runbook activity:
 |**Invoke by path**|Select to force the Invoke Runbook activity to invoke the runbook by the specific path and name. When selected, any runbook with the same name in the same folder location is invoked. When unselected, the runbook that is invoked can be moved around the environment and the Invoke Runbook activity automatically maps itself to the new location.|  
 |**Wait for completion**|Select to force the Invoke Runbook activity to keep the invoked runbook running until it's completed. **Important:** Don't select **Wait for completion** if any return data in the invoked runbook is also return data in the invoking runbook.|  
 |**Parameters**|If you've selected a runbook that contains an [Initialize Data](initialize-data.md) activity, the list of parameters required to invoke that activity will be displayed. Enter a value for each parameter.|  
-|**Runbook servers**|Enter the list of runbook servers that will run this runbook. Separate each name with a semi-colon `(;)`. The order in which the runbook servers are listed will be the order used for failover and load balancing of the runbook. The runbook server names must correspond to the names that are displayed within the runbook server’s tree in the Orchestrator Deployment Manager. Leave this field blank to use the runbook or global defaults for the runbook server assignment.|  
+|**Runbook Servers**|Enter the list of runbook servers that will run this runbook. Separate each name with a semi-colon `(;)`. The order in which the runbook servers are listed will be the order used for failover and load balancing of the runbook. The runbook server names must correspond to the names that are displayed within the runbook server’s tree in the Orchestrator Deployment Manager. Leave this field blank to use the runbook or global defaults for the runbook server assignment.|  
 
 ### Published Data
 
