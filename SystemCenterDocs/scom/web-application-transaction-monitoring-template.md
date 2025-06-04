@@ -2,9 +2,8 @@
 ms.assetid: 5c187754-29e7-41a8-ae85-cb2d1514b0a4
 title: Web Application Transaction Monitoring template in Operations Manager management pack
 description: This article provides an overview of web application transaction monitoring template.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center

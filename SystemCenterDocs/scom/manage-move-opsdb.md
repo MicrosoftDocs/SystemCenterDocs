@@ -2,9 +2,8 @@
 ms.assetid: 033e12cc-1265-48a2-848c-acbc316d8ad5
 title: Move the Operational Database
 description: This article describes how to move the Operations Manager operational database to a different SQL Server instance after initial deployment.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
