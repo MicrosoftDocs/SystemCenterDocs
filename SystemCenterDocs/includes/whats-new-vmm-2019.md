@@ -2,9 +2,8 @@
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
 description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, UR2, UR3, UR4, and UR5.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  12/18/2024
 ms.topic:  include
 ms.service: system-center

@@ -2,9 +2,8 @@
 ms.assetid: 160253fe-35c3-4526-83dd-ca1e172d1b22
 title: Configure virtual machine settings in the VMM compute fabric
 description: This article describes how to configure settings for VMs in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 08/30/2024
 ms.topic: article
 ms.service: system-center
@@ -25,7 +24,7 @@ Settings include changing VM properties and setting up performance options, such
 
 You can add and remove virtual network adapters (vNICs) from VMs that are running. This reduces the workload downtime.
 
->[!NOTE]
+> [!NOTE]
 > - You add new virtual network adapters by creating or modifying a VMM hardware profile.
 > - This feature is only available for Generation 2 VMs.
 > - By default, added virtual network adapters aren't connected to a virtual network. You can configure VMs assigned with the hardware profile to use one or more of the virtual network adapters after they're deployed on a host.
@@ -66,8 +65,8 @@ See the following section for enabling Trunk mode through console; see [Set-SCVi
 To configure trunk mode in VMM, follow these steps:
 
 1. Under VM **Properties**, navigate to **Configure Hardware Settings** > **Network Adapter**, and select **Trunk mode** to enable trunk mode for VM vNICs.
-2. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
-   ![Screenshot of Trunk mode.](media/vm-settings/configure-trunk-mode.png)
+1. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
+![Screenshot of Trunk mode.](media/vm-settings/configure-trunk-mode.png)
 3. The VM Network that is selected as part of *Connected to a VM Network* workflow must also be made the native VLAN. You can't change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
 
 ### Add a virtual adapter with PowerShell
@@ -113,7 +112,7 @@ Use the following PowerShell examples to modify the static memory setting.
 
  Change the static memory for a running virtual machine.
 
- - The first command gets the virtual machine object named VM01, and then stores the object in the $VM variable.
+- The first command gets the virtual machine object named VM01, and then stores the object in the $VM variable.
  - The second command changes the memory allocated to VM01 to 1024 MB.
 
 ```
@@ -155,12 +154,10 @@ Production checkpoints allow you to easily create *point in time* images of a VM
     - **Standard**: All the memory state of running applications gets stored so that when you apply the checkpoint, the application reverts to the previous state. For many applications this wouldn't be suitable for a production environment. Therefore, this type of checkpoint is typically more suitable for development and test environments for some applications.
 
 Set the checkpoint with the following PowerShell command:
-`Set-SCVirtualMachine CheckpointType (Disabled, Production, ProductionOnly, Standard)`
+`Set-SCVirtualMachine -CheckpointType (Disabled, Production, ProductionOnly, Standard)`
 
-
-
-
-
+> [!NOTE]
+> - VM Checkpoints with a `Recovery` SnapshotType will not be visible from SCVMM.
 
 ## Configure availability options for clustered VMs
 

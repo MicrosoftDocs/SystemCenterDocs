@@ -1,11 +1,10 @@
 ---
 description: Deploy the DPM protection agent to identify data that DPM can protect and recover.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 03/27/2025
 title: Deploy the DPM protection agent
 ms.subservice: data-protection-manager
 ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
@@ -187,7 +186,7 @@ Use these steps:
 
 After you've installed the DPM agent manually, you'll need to attach the agent to the DPM server.
 
-1. In the DPM Administrator Console, on the navigation bar, select **Management** > **Agents**. In the **Actions** pane, select **Install**.
+1. In the DPM Administrator Console, on the navigation bar, select **Management** > **Production Servers**. In the **Actions** pane, select **Add**.
 
 2. On the **Select Agent Deployment Method** page, select **Attach agents** > **Computer on a trusted domain** > **Next**. The Protection Agent Installation Wizard opens.
 

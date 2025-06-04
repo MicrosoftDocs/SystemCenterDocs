@@ -2,9 +2,8 @@
 ms.assetid: ae000f5e-9d67-4d0d-b093-8d103dce2047
 title: Upgrade a Reporting Server
 description: This article describes how to upgrade the Reporting server to the latest version of System Center Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.service: system-center

@@ -2,9 +2,8 @@
 title: Planning for System Center - Service Manager deployment
 description: This article and others in this section help you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before you deploy it in your company or organization.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article

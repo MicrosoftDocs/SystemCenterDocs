@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 02ca2b81-a6a5-444a-8ddd-f3695ca5afd4
 caps.latest.revision: 10
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Send Event Log Message
 

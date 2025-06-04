@@ -9,9 +9,8 @@ ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: reference
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Ports and Protocols of Standard Activities
 

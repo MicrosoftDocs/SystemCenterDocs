@@ -2,9 +2,8 @@
 title: Set up a System Center - Service Manager lab environment with production data
 description: Learn to create a lab with production data to test a System Center - Service Manager upgrade.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article

@@ -2,9 +2,8 @@
 ms.assetid: e41aa1d-89fa-477d-8746-258525e48e17
 title: include file
 description: include file to provide information about hardware and software system requirements for System Center  2022 - Service Provider Foundation
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  07/04/2022
 ms.topic:  include
 ms.service:  system-center
