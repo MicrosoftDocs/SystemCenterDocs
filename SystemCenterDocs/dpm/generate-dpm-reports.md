@@ -7,9 +7,8 @@ ms.date: 11/01/2024
 title: Generate DPM reports
 ms.subservice: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

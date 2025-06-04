@@ -2,9 +2,8 @@
 title: Load balancing System Center - Service Manager
 description: Use network load balancing in Windows Server to configure a pool of computers so that they take turns responding to requests.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article

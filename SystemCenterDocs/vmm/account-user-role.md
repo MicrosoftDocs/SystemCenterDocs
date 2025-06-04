@@ -2,10 +2,9 @@
 ms.assetid: 8fea0c85-7091-48f7-8f50-0ad2dd56da64
 title: Set up user roles in VMM
 description: This article describes how to set up VMM roles and permissions
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 06/04/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -14,8 +13,6 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 
 # Set up user roles in VMM
-
-
 
 This article describes how to set up System Center Virtual Machine Manager (VMM) user roles.
 
@@ -45,8 +42,8 @@ This article describes how to set up System Center Virtual Machine Manager (VMM)
 2.  In the **Create User Role Wizard**, enter a name and optional description for the role, and select **Next**.
 3.  In **Profile** page, select the role, and select **Next**.
 4.  In **Members**, select **Add** to add user accounts and Active Directory groups to the user role. Add the members in **Select Users, Computers, or Groups**, and select **Next**.
-5.  In **Scope**, select the private clouds or host groups that the members of the role can use. Select **Next**.
-6.  If one or more **Quotas** pages appear (based on whether you selected private clouds on the previous wizard page), review and specify quotas as needed for each private cloud. Otherwise, skip to the next step. Read-only Administrators can only view items in this defined scope.
+5.  In **Scope**, select the VMM clouds or host groups that the members of the role can use. Select **Next**.
+6.  If one or more **Quotas** pages appear (based on whether you selected VMM clouds on the previous wizard page), review and specify quotas as needed for each VMM cloud. Otherwise, skip to the next step. Read-only Administrators can only view items in this defined scope.
 
     To set quotas for the combined use of all members of this user role, use the upper list. To set quotas for each individual member of this user role, use the lower list. By default, quotas are unlimited. To create a limit, clear the appropriate checkbox under **Use Maximum** and then, under **Assigned Quota**, select a limit. When you've completed all settings, select **Next**.
 

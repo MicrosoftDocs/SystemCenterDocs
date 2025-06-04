@@ -2,10 +2,9 @@
 ms.assetid: e72332a9-7f1b-477d-8d2c-34ea4ba137fa
 title: Add Windows servers as Hyper-V hosts or clusters in the VMM fabric
 description: This article describes how to provision Windows server as Hyper-V hosts and cluster in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 08/09/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 04/14/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -92,6 +91,8 @@ After you've added Hyper-V hosts and servers in the VMM fabric, there are a numb
 
 ## Properties for Hyper-V clusters
 
+::: moniker range="<=sc-vmm-2022"
+
 **Tab** | **Settings**
 --- |---
 **General** | View the name, host group, and description. You can also configure the **Cluster reserve \(nodes\)** setting and view the cluster reserve state.<br /><br/> The **Cluster reserve \(nodes\)** setting specifies the number of node failures a cluster must be able to sustain while still supporting all virtual machines deployed on the host cluster. If the cluster can't withstand the specified number of node failures and still keep all the virtual machines running, the cluster is placed in an overcommitted state. When overcommitted, the clustered hosts receive a zero rating during virtual machine placement. An administrator can override the rating and place a highly available virtual machine on an overcommitted cluster during a manual placement.
@@ -99,3 +100,17 @@ After you've added Hyper-V hosts and servers in the VMM fabric, there are a numb
 **Available Storage** | Shows available storage, that is, storage logical units that are assigned to the host cluster but aren't Cluster Shared Volumes \(CSVs\).<br/><br/> You can also do the following:<br/><br/> Add and remove storage logical units that are managed by VMM.<br/><br/> Convert available storage to shared storage \(CSV\).
 **Shared Volumes** | Shows the shared volumes \(CSVs\) that are allocated to the host cluster. You can also do the following:<br/><br/> Add and remove CSVs that are managed by VMM. <br/><br/> Convert CSVs to available \(non\-CSV\) storage.|
 **Custom Properties** | Custom properties that you manage.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2025"
+
+**Tab** | **Settings**
+--- |---
+**General** | View the name, host group, and description. You can also configure the **Cluster reserve \(nodes\)** setting and view the cluster reserve state.<br /><br/> The **Cluster reserve \(nodes\)** setting specifies the number of node failures a cluster must be able to sustain while still supporting all virtual machines deployed on the host cluster. If the cluster can't withstand the specified number of node failures and still keep all the virtual machines running, the cluster is placed in an overcommitted state. When overcommitted, the clustered hosts receive a zero rating during virtual machine placement. An administrator can override the rating and place a highly available virtual machine on an overcommitted cluster during a manual placement.
+**Status** | View detailed status information for the host cluster:<br/><br/> Cluster validation test runs and successes. Includes a link to the latest validation report \(if available\). Note that accessing the report requires administrative permissions on the cluster node where the report is located.  For host clusters, you can perform an on\-demand cluster validation through VMM. To do this, in the **Fabric** workspace, locate and select the host cluster. Then, on the **Host Cluster** tab, select **Validate Cluster**. Cluster validation begins immediately. Windows Server 2025 nodes require CLIUSR account to be added for the the cluster validation to work.<br/><br/>  Online elements in the cluster: cluster core resources, disk witness in quorum, and the cluster service on each node.
+**Available Storage** | Shows available storage, that is, storage logical units that are assigned to the host cluster but aren't Cluster Shared Volumes \(CSVs\).<br/><br/> You can also do the following:<br/><br/> Add and remove storage logical units that are managed by VMM.<br/><br/> Convert available storage to shared storage \(CSV\).
+**Shared Volumes** | Shows the shared volumes \(CSVs\) that are allocated to the host cluster. You can also do the following:<br/><br/> Add and remove CSVs that are managed by VMM. <br/><br/> Convert CSVs to available \(non\-CSV\) storage.|
+**Custom Properties** | Custom properties that you manage.
+
+::: moniker-end

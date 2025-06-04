@@ -1,10 +1,9 @@
 ---
 title: Configure firewall settings for DPM
 description: This article explains how to configure firewall settings for various DPM installations.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/28/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: data-protection-manager
@@ -17,7 +16,7 @@ A common question that arises during System Center Data Protection Manager (DPM)
 
 |Protocol|Port|Details|  
 |--------------|----------|-------------|  
-|DCOM|135/TCP Dynamic|DCOM is used by the DPM server and the DPM protection agent to issue commands and responses. DPM issues commands to the protection agent by invoking DCOM calls on the agent. The protection agent responds by invoking DCOM calls on the DPM server.<br /><br /> TCP port 135 is the DCE endpoint resolution point that is used by DCOM. By default, DCOM assigns ports dynamically from the TCP port range of 1024 through 65535. However, you can use Component Services to adjust the TCP port range. To do this, follow these steps:<br /><br /> 1.  In IIS 7.0 Manager, in the **Connections** pane, select the server-level node in the tree.<br />2.  In the list of features, double-click the **FTP Firewall Support** icon.<br />3.  Enter a range of values for the **Data Channel Port Range** for your FTP service.<br />4.  In the **Actions** pane, select **Apply** to save your configuration settings.|  
+|DCOM|135/TCP Dynamic|DCOM is used by the DPM server and the DPM protection agent to issue commands and responses. DPM issues commands to the protection agent by invoking DCOM calls on the agent. The protection agent responds by invoking DCOM calls on the DPM server.<br /><br /> TCP port 135 is the DCE endpoint resolution point that is used by DCOM. By default, DCOM assigns ports dynamically from the TCP port range of 49152 through 65535. However, you can use Component Services to adjust the TCP port range. To do this, follow these steps:<br /><br /> 1.  In IIS 7.0 Manager, in the **Connections** pane, select the server-level node in the tree.<br />2.  In the list of features, double-click the **FTP Firewall Support** icon.<br />3.  Enter a range of values for the **Data Channel Port Range** for your FTP service.<br />4.  In the **Actions** pane, select **Apply** to save your configuration settings.|  
 |TCP|5718/TCP<br /><br /> 5719/TCP|The DPM data channel is based on TCP. Both DPM and the protected computer initiate connections to enable DPM operations, such as synchronization and recovery. DPM communicates with the agent coordinator on port 5718 and with the protection agent on port 5719.|  
 |TCP|6075/TCP|Enabled when you create a protection group to help protect client computers. Required for end user recovery.<br /><br /> An exception in Windows Firewall (DPMAM_WCF_Service) is created for the program Amscvhost.exe when you enable Central Console for DPM in Operations Manager.|  
 |DNS|53/UDP|Used for host name resolution between DPM and the domain controller, and between the protected computer and the domain controller.|  
