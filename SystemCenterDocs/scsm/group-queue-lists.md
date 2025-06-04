@@ -1,12 +1,11 @@
 ---
 description: This article provides information on how you can use groups to manage configuration and work items in service manager.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/28/2025
 title: Use Groups, Queues, and Lists in Service Manager
 ms.subservice: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
@@ -60,18 +59,18 @@ For example, when you're creating an incident, you notice that **Printer Problem
 
 ### List items
 
-In Service Manager, several default list items exist. It's important that you not delete the default list items. Each default list item is defined by a globally unique identifier (GUID). Some of the default management packs reference these list items by their GUID. If you delete a list item, some management packs or workflows might not work.
+In Service Manager, several default list items exist. It's important that you must not delete the default list items. Each default list item is defined by a globally unique identifier (GUID). Some of the default management packs reference these list items by their GUID. If you delete a list item, some management packs or workflows might not work.
 
 If the name of a default list item causes an issue in your environment, you can change the display name of the existing item but leave the GUID intact. For example, you can change the name of the **Printing Problems** default list item to *Laser Printing Problems* if that is better in your environment.
 
-## Create a Group
+## Create a group
 
 Use the following procedures to create a new group (such as the **Exchange Servers** group) that includes the servers in your environment that are running Microsoft Exchange Server.
 
 > [!NOTE]
 > We recommend that you create a Configuration Manager connector before you run this procedure.
 
-### Create a new group
+To create a group, follow these steps:
 
 1. In the Service Manager console, select **Library**.
 
@@ -113,15 +112,17 @@ Use the following procedures to create a new group (such as the **Exchange Serve
 
     `The new group was created successfully.`
 
-### Validate the creation of a new group
+### Validate the creation of a group
 
-- Ensure that **Exchange Servers** appears in the **Groups** pane. If necessary, press the F5 key to refresh the Service Manager console view.
+To validate the creation of a group, follow these steps:
 
-    In the **Tasks** pane, under the name of the group, select **View Group Members** to ensure that the Exchange servers appear in the **Group Members** window.
+1. Ensure that **Exchange Servers** appears in the **Groups** pane. If necessary, press the F5 key to refresh the Service Manager console view.
+
+2. In the **Tasks** pane, under the name of the group, select **View Group Members** to ensure that the Exchange servers appear in the **Group Members** window.
 
 ![Screenshot of the PowerShell symbol.](./media/group-queue-lists/pssymbol.png)You can use a Windows PowerShell command to retrieve groups from Operations Manager and from Service Manager. For more information, see [Get-SCSMGroup](/previous-versions/system-center/powershell/system-center-2012-r2/hh316273(v=sc.20)).
 
-## Create a Queue
+## Create a queue
 
 You can create queues to create a grouping of related work items, such as incidents and change requests. For example, you can create a queue that you use for escalation, named **Exchange Send Problems Queue**, and then escalate that type of incident to that queue.
 
@@ -153,15 +154,17 @@ To create a queue, do the following:
 
 ### Validate the creation of a queue
 
+To validate the creation of a queue, follow these steps:
+
 1. In the Service Manager console, verify that the new queue appears in the **Queues** pane.
 
 2. In the **Tasks** pane, select **Properties**, and then verify that the queue appears as you defined it.
 
-![Screenshot of the PowerShell symbol].(./media/group-queue-lists/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in Service Manager, see [Get-SCSMQueue](/previous-versions/system-center/powershell/system-center-2012-r2/hh316226(v=sc.20)).
+![Screenshot of the PowerShell symbol](./media/group-queue-lists/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in Service Manager, see [Get-SCSMQueue](/previous-versions/system-center/powershell/system-center-2012-r2/hh316226(v=sc.20)).
 
-## Edit a Queue
+## Edit a queue
 
-To edit a queue, do the following:
+To edit a queue, follow these steps:
 
 1. In the Service Manager console, select **Library**.
 
@@ -173,11 +176,13 @@ To edit a queue, do the following:
 
 5. Select **OK** to save the changes.
 
-## Add a List Item
+## Add a list item
 
 You can use these procedures to add a list item to an existing list and then validate it. For example, you can use this procedure to add a Laser Printer and Check-Writing Printer list item to the **Incident Classification** list.
 
 ### Add list items to Service Manager lists
+
+To add list items to Service Manager lists, follow these steps:
 
 1. In the Service Manager console, select **Library**.
 
@@ -196,9 +201,11 @@ You can use these procedures to add a list item to an existing list and then val
 
 ### Validate the addition of a new list item
 
+To validate the addition of a new list item, follow these steps:
+
 1. Select the same list again, select **Properties** in the **Tasks** pane, and then verify that the new list item appears.
 
-2. In the Service Manager console, create a new incident, and then locate the new list item in the **Classification Category** list. For example, expand **Printer Problems**, and then locate the **Laser Printer** and **Check-Writing Printer** list items.
+2. In the **Service Manager** console, create a new incident, and then locate the new list item in the **Classification Category** list. For example, expand **Printer Problems**, and then locate the **Laser Printer** and **Check-Writing Printer** list items.
 
 ## Next steps
 

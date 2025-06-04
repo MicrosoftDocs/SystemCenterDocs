@@ -2,9 +2,8 @@
 ms.assetid: c1d20c47-3a30-4c5a-a9ec-e1c7f3a95bf3
 title: Provision a scale-out file server (SOFS) from standalone file servers in the VMM fabric
 description: This article describes how to provision an SOFS in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

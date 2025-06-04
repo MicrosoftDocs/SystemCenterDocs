@@ -2,10 +2,9 @@
 ms.assetid: bc3c9818-6019-4af3-bcaa-990229650c0c
 title: Install the Operations Manager Reporting Server
 description: This article describes how to install the Operations Manager Reporting server role.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 02/17/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/19/2025
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
@@ -46,6 +45,12 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 ::: moniker-end
 
+::: moniker range=">=sc-om-2019"
+
+[!INCLUDE [validation-operations-manager.md](../includes/validation-operations-manager.md)]
+
+::: moniker-end
+
 ## Install Operations Manager reporting
 
 An installation of SQL Server Reporting Services used by Operations Manager **can't be shared with any other application** as changes are made to the base SSRS installation to accommodate user roles and authentication with System Center Operations Manager. If any reports exist on the SSRS instance where the Operations Manager Reporting Services installer executes, all existing data and reports are overwritten.
@@ -53,7 +58,7 @@ An installation of SQL Server Reporting Services used by Operations Manager **ca
 Ensure that SQL Server Reporting Services is correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation](/sql/database-engine/install-windows/install-sql-server).
 
 > [!NOTE]
-> Before you continue with this procedure, ensure that the account that you are using to run the installer for the Operations Manager Reporting Role has [SA (sysadmin)](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions) on both the Operational Database (_OperationsManager_) and Reporting (_ReportServer_) SQL Instances. This will allow the installer to deploy all logins and permissions as required. The SA role can be safely removed from the account used for the installer after installation. Otherwise, the Setup fails, and all changes are rolled back, which may leave SQL Server Reporting Services in an inoperable state. If this happens you can attempt run a tool to reset SSRS to a working condition. The programs is: **ResetSRS.exe** which is an executable inside of the support tools folder on your Operations Manager installation media.
+> Before you continue with this procedure, ensure that the account that you are using to run the installer for the Operations Manager Reporting Role has [SA (sysadmin)](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions) on both the Operational Database (_OperationsManager_) and Reporting (_ReportServer_) SQL Instances. This will allow the installer to deploy all logins and permissions as required. The SA role can be safely removed from the account used for the installer after installation. Otherwise, the Setup fails, and all changes are rolled back, which may leave SQL Server Reporting Services in an inoperable state. If this happens you can attempt run a tool to reset SSRS to a working condition. The program is: **ResetSRS.exe** which is an executable inside of the support tools folder on your Operations Manager installation media.
 
 ## Install Reporting Services on NTLM hardened enterprises
 
