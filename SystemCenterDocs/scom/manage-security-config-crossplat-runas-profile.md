@@ -14,12 +14,12 @@ ms.topic: how-to
 
 # Configure Run As accounts and profiles for UNIX and Linux access
 
-This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
-
-If you're the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Plan Security credentials for accessing UNIX and Linux computers](plan-security-crossplat-credentials.md).  
+If you are the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Plan Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md).    
 
 >[!NOTE]
->System Center Operations Manager doesn't support domain accounts for maintenance.
+>System Center Operations Manager does not support domain accounts for maintenance.
+
+This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
 
 ## Configure Run As accounts  
 
@@ -37,9 +37,7 @@ Use this wizard three or more times as needed so that you have the following Run
 
 -   An agent maintenance Run As account for upgrading, uninstalling, and other agent maintenance operations.  
 
-### Prerequisites
-
-Before you run this wizard, ensure you must have the following credentials information:  
+To run this wizard, you must have the following credentials information:
 
 -   Username and password for unprivileged access to the UNIX or Linux computer.  
 
@@ -47,7 +45,7 @@ Before you run this wizard, ensure you must have the following credentials infor
 
 -   Username and password for privileged access to the UNIX or Linux computer.  If you prefer not to provide credentials for a privileged account, you can use unprivileged credentials and have the credentials on the UNIX or Linux computer elevated.  
 
-    You can choose between su or sudo elevation. If the account is to be elevated using 'su', you'll need the 'su' password. For more information about Authentication on the UNIX or Linux computer, see [Access UNIX and Linux computers in Operations Manager](manage-security-authenticate-crossplat.md)
+    You can choose between su or sudo elevation. If the account is to be elevated using 'su', you will need the 'su' password.  
 
 #### Create a Run As account  
 
