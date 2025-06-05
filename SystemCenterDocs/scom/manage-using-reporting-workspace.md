@@ -39,11 +39,7 @@ After you run a report, select **File**, and select **Publish** to publish the r
 ## Schedule reports  
 You can schedule configured reports to run on a one-time or recurring basis.  
 
-<<<<<<< HEAD
- After you run a report, select **File**, and select **Schedule** to configure the report subscription. For more information, see [Configure and modify report schedules](manage-reports-config-modify-schedules.md).
-=======
 After you run a report, select **File**, and select **Schedule** to configure the report subscription. For more information, see [Configure and modify report schedules](manage-reports-config-modify-schedules.md).
->>>>>>> 0ef3e8f4493b1f296a849b307837aa7aec72dd52
 
 ::: moniker range="=sc-om-2019"
 > [!NOTE]
@@ -62,14 +58,6 @@ In Operations Manager, you can run and view favorite reports under **Web Console
 
 ## Next steps
 
-<<<<<<< HEAD
+ * Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to reports for your operational needs.
 
-* Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to reports for your operational needs.
-
-* [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
-
-=======
-* Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to reports for your operational needs.
-
-* [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
->>>>>>> 0ef3e8f4493b1f296a849b307837aa7aec72dd52
+ * [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
