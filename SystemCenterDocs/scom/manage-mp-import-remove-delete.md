@@ -2,9 +2,8 @@
 ms.assetid: 0cff3a49-a490-4dd4-aa29-f6c9214c5d92
 title: Import, Export, and Remove an Operations Manager Management Pack
 description: This article describes how to import, export and remove an Operations Manager management pack from the management group.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/14/2024
 ms.custom: engagement-fy23
 ms.service: system-center
