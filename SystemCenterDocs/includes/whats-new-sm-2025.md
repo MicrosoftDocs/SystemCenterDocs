@@ -2,9 +2,8 @@
 title:  include file
 description: include file to describe the new features and other changes in System Center 2025 - Service Manager.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 keywords:  
 ms.date: 09/04/2024

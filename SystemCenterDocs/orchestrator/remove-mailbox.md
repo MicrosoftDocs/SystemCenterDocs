@@ -10,9 +10,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 57ac9277-f810-4efe-a8a4-dd01829113e7
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 ---
 # Remove Mailbox

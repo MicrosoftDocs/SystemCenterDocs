@@ -2,9 +2,8 @@
 title: Import data from Virtual Machine Manager
 description: Describes how you can import data from Virtual Machine Manager into Service Manager.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

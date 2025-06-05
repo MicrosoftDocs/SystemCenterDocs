@@ -4,9 +4,8 @@ description: This article describes how to manipulate data and control the seque
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: engagement-fy23
 ---

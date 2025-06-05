@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a2c706ca-506b-4d9d-96e6-f17ac48e8fc1
 caps.latest.revision: 11
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Modify Counter
 
