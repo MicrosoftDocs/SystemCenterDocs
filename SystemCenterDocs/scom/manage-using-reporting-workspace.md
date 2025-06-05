@@ -14,14 +14,16 @@ ms.assetid: dbfffaab-d49c-42a5-bbb3-77cbeae9b841
 
 # Use the Reporting Workspace in Operations Manager
 
-This article describes how to use the Operations Manager Operations console to view and administer reports.
+
 
 System Center Operations Manager provides extensive reporting capabilities, including multiple report libraries that you can select from to customize reports for your specific requirements. Reports perform a query against the data warehouse database and return the results in an easy-to-read format.  
 
 > [!IMPORTANT]  
-> Users must be a member of the Report Operator Users role to run reports.  
+> Users must be a member of the Report Operator Users role to run reports. 
 
-## Reports  
+This article discusses the Reporting Workspace in Operations Manager.
+
+## Reporting  
 Reporting in the Reporting workspace contains all reports installed with Operations Manager, as well as those reports included in management packs that you've imported.  
 
 The report library contains generic reports (for example, Availability and Configuration Changes reports). Generic reports have no specified context. The context for the report is defined in the parameter header, located at the top of the Report window.  For a list of reports included with Operations Manager, review [Operations Manager reports library](manage-reports-installed-during-setup.md).  
@@ -34,7 +36,7 @@ After you run a report, select **File**, and select **Publish** to publish the r
 ## Scheduled Reports  
 You can schedule configured reports to run on a one-time or recurring basis.  
 
-After you run a report, select **File**, and select **Schedule** to configure the report subscription. For more information, see [Schedule Reports](manage-reports-config-modify-schedules.md).
+After you run a report, select **File**, and select **Schedule** to configure the report subscription. For more information, see [Configure and modify report schedules](manage-reports-config-modify-schedules.md).
 
 ::: moniker range="=sc-om-2019"
 > [!NOTE]
@@ -53,6 +55,5 @@ In Operations Manager, you can run and view favorite reports under **Web Console
 
 ## Next steps
 
-* Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to reports for your operational needs.
-
-* [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.
+- Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how to create reports for your operational needs.
+- [Run, save, and export a report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.

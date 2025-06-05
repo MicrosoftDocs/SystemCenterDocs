@@ -15,13 +15,13 @@ ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 
 This article helps you troubleshoot upgrade issues in System Center – Service Manager.
 
- There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs. The failure occurs in the following situations:
+There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
 
-- During the prerequisite check.
-- During predicted checks.
-- In an unpredictable manner before permanent changes are made to a management server.
-- In an unpredictable manner after permanent changes are made to a management server.
-- In an unpredictable manner after permanent changes are made to the database.
+- Failure occurs during the prerequisite check.
+- Failure occurs during predicted checks.
+- Failure occurs in an unpredictable manner before permanent changes are made to a management server.
+- Failure occurs in an unpredictable manner after permanent changes are made to a management server.
+- Failure occurs in an unpredictable manner after permanent changes are made to the database.
 
 The upgrade might also fail as a result of Configuration service Startup timing out.
 

@@ -16,9 +16,11 @@ ms.date: 03/31/2025
 ---
 # Common Activity Properties
 
-This article describes the common activity properties including the run behavior, published data behavior, event notifications and security credentials.
+
 
 All activities have properties. The Properties dialog box for each activity has multiple tabs that provide access to the settings for the activity. The particular set of tabs varies between activities, but there are several common property types.  
+
+This article describes the common activity properties including the run behavior, published data behavior, event notifications and security credentials.
 
 ## Details
 

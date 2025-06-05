@@ -13,19 +13,21 @@ ms.subservice: operations-manager
 
 # Scope and Supported Configuration in Management Pack for SQL Server Reporting Services
 
-This article explains the scope and supported configuration for Management Pack for SQL Server Reporting Services.
+
 
 Management Pack for SQL Server Reporting Services is version-agnostic and supports discovery and monitoring of SQL Server Reporting Services 2012 through 2022 and higher and Power BI Report Server.
+
+This article explains the scope and supported configuration for Management Pack for SQL Server Reporting Services.
 
 ## SQL Server Reporting Services Features
 
 The following is a list of features and configurations supported in Management Pack for SQL Server Reporting Services:
 
-- SQL Server Reporting Services Instance (Native Mode).
+- SQL Server Reporting Services Instance (Native Mode)
 
-- SQL Server Reporting Services Scale-out deployment.
+- SQL Server Reporting Services Scale-out deployment
 
-- Power BI Report Server - Verified with build 15.0.1110.120.
+- Power BI Report Server - Verified with build 15.0.1110.120
 
   The management pack treats Power BI Report Server as a special kind of SQL Server Reporting Services and provides the same monitoring for Power BI Report Server instances as it does for Reporting Services instances. In this guide, we'll use SSRS or Reporting Services, but each term is intended for both SQL Server Reporting Services and Power BI Report Server.
 
@@ -35,7 +37,7 @@ The following is a list of features and configurations supported in Management P
 
 Management Pack for SQL Server Analysis Services supports the following versions of System Center Operations Manager:
 
-- System Center Operations Manager 2012 R2.
+- System Center Operations Manager 2012 R2
   
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
   

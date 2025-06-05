@@ -16,6 +16,8 @@ ms.custom: engagement-fy24
 
 You deploy shielded virtual machines in the System Center Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX) and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs, and convert the existing VMs to shielded VMs in VMM.
 
+This article describes how to configure a shielded template disk and utility disk in VMM to provision new shielded VMs and convert existing VMs to shielded VMs.
+
 ## Before you start
 
 Here are some considerations before you start configuring a shielded template disk and utility disk:
