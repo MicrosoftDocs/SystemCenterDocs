@@ -2,10 +2,11 @@
 ms.assetid: bed9e382-7a24-48d2-a15c-cb3413756236
 title: Create a guest cluster from a service template
 description: This article provides guidance about creating a guest cluster from a service template
-author: jyothisuri
-ms.author: jsuri
-ms.date: 03/27/2025
-ms.topic: article
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/21/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

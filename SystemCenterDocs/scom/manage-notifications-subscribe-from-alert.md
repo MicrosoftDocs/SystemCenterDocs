@@ -1,17 +1,18 @@
 ---
-title: How to Subscribe to Notifications from an Alert
+title: Subscribe to Notifications from an Alert
 description: This article describes how to subscribe to a notification from a selected alert in the Operations console.
-author: jyothisuri
-ms.author: jsuri
-ms.date: 02/27/2025
+author: PriskeyJeronika-MS
+ms.author: v-gjeronika
+manager: jsuri
+ms.date: 04/21/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: d7e061b0-5d6e-49de-b93f-85215f7c4b73
 ---
 
-# How to subscribe to notifications from an alert
+# Subscribe to notifications from an alert
 
 
 
@@ -22,7 +23,11 @@ You can create a notification subscription from an alert to ensure that you're n
 > [!NOTE]  
 > You must have configured a notification channel and notification subscriber to perform this procedure.  
 
-## To create a notification subscription from an alert  
+This article describes how to subscribe to a notification from a selected alert in the Operations console.
+
+## Create a notification subscription from an alert
+
+To create a notification subscription from an alert, follow these steps:
 
 1.  In the **Alerts** view, right-click the alert, select **Notification subscription**, and select **Create**.  
 
@@ -50,6 +55,6 @@ You can create a notification subscription from an alert to ensure that you're n
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [Create Notification Subscribers](manage-notifications-create-subscribers.md).
 
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).  
