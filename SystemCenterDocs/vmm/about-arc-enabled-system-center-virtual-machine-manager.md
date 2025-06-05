@@ -2,9 +2,8 @@
 ms.assetid: 
 title: About Arc-enabled System Center Virtual Machine Manager
 description: This article provides an overview of Azure Arc-enabled System Center Virtual Machine Manager (SCVMM).
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

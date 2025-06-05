@@ -2,9 +2,8 @@
 ms.assetid: c563887d-4182-4d58-b6d4-5fc980b2d2e2
 title: Set up the VMM storage fabric
 description: This article describes how to set up the VMM storage fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

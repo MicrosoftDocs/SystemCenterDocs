@@ -2,9 +2,8 @@
 ms.assetid: 39ea4ec4-9c42-4083-b0d4-9fdeff1f44f8
 title: System requirements for Service Manager
 description: This article describes the software and hardware system requirements for System Center Service Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

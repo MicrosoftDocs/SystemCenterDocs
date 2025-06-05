@@ -2,9 +2,8 @@
 ms.assetid: 4c8b52fd-c293-4334-8fd4-010e357097a6
 title: Route traffic across networks in SDN infrastructure
 description: This article describes about how to route the network traffic between physical and virtual networks in an SDN infrastructure.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

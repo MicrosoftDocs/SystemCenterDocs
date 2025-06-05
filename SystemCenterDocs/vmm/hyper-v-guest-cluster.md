@@ -2,10 +2,9 @@
 ms.assetid: bed9e382-7a24-48d2-a15c-cb3413756236
 title: Create a guest cluster from a service template
 description: This article provides guidance about creating a guest cluster from a service template
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/27/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -23,6 +22,8 @@ A guest failover cluster consists of multiple VMs that are deployed in a cluster
 You can use service templates to create a guest cluster. That cluster can then be configured to run an app, such as SQL Server.
 
 ## Before you start
+
+Here are some considerations before you deploy VMs to Hyper-V host clusters:
 
 ::: moniker range="sc-vmm-2016"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2012 R2 or later. Otherwise, deployment will fail.
@@ -51,6 +52,8 @@ You can use service templates to create a guest cluster. That cluster can then b
 
 ## Specify scripts that run when a guest cluster is created
 
+To specify scripts that run when a guest cluster is created, follow these steps:
+
 1. [Set up an application profile](library-profiles.md#create-an-application-profile).
 2. In **New Application Profile** > **General** > **Compatibility**, leave the default **General** setting enabled.
 3. In **Application Configuration** > **OS Compatibility**, select one or more editions of a server operating system.
@@ -68,8 +71,10 @@ You can use service templates to create a guest cluster. That cluster can then b
 
 Create a VM template that includes settings for a shared .vhdx file. This file must be deployed to shared storage that has SCSI channels available for each cluster node to provide the same access to the file for each node.
 
+To create a VM template, follow these steps:
+
 1. In the VMM library, verify that you have a virtual hard disk that contains the operating system (created using SysPrep) you want to use for VM in the guest cluster. It mustn't be blank.
-2. Create a VM template.
+2. Select **Create a VM template**.
 3. In the **Create VM Template Wizard** > **Select Source**, select **Use an existing VM template or virtual hard disk stored in the library** > **Browse**.
 4. In **Select VM Template Source**, select the virtual hard disk you want to use.
 5. In **Configure Hardware**, specify a hardware profile or hardware settings.
@@ -85,6 +90,8 @@ Create a VM template that includes settings for a shared .vhdx file. This file m
 
 ## Include the VM template in a service template
 
+To include the VM template in a service template, follow these steps:
+
 1. [Create a service template](library-service-templates.md), and add the VM template to the appropriate template tier.
 2. After you save and validate the template, right-click the tier object in the service template designer and select **Properties**.
 3. In **Application Configuration**, add the application profile you created. When the service is deployed, the scripts in the application profile will run. Save and validate the service template.
@@ -97,4 +104,4 @@ After you've set up the guest cluster, you're ready to deploy the service.
 
 ## Next steps
 
-[Deploy VMs from a template](vm-template.md).
+[Create and deploy VMs in the VMM fabric from a VM template](vm-template.md).

@@ -7,9 +7,8 @@ keywords:
 ms.date: 11/01/2024
 ms.subservice: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 

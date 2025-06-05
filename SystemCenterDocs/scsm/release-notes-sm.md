@@ -2,10 +2,9 @@
 ms.assetid: 38b426f5-5b76-4599-8ef9-66a02723a88a
 title: Release notes for Service Manager
 description: This article details the known issues and issues fixed in Service Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/31/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: service-manager
@@ -19,6 +18,8 @@ ms.custom: UpdateFrequency.5, engagement-fy23
 [!INCLUDE [discontinue-spf-2025.md](../includes/discontinue-spf-2025.md)]
 
 This article lists the release notes for System Center 2025 - Service Manager.
+
+[!INCLUDE [release-notes-sm-2025.md](../includes/release-notes-sm-2025.md)]
 
 ::: moniker-end
 

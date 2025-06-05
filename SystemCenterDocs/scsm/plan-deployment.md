@@ -2,9 +2,8 @@
 title: Plan for System Center - Service Manager deployment
 description: Learn about several deployment options for Service Manager.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.topic: article
