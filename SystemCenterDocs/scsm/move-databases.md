@@ -3,9 +3,8 @@ title: Move the Service Manager and data warehouse databases
 description: This article helps you move the Service Manager and data warehouse databases to different servers after you have deployed Service Manager.
 ms.custom: na, UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na

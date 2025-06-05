@@ -5,7 +5,7 @@ description: Include file with sudoers configuration for operating systems that 
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 03/05/2024
+ms.date: 03/07/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,15 +13,15 @@ ms.subservice: operations-manager
 
 <!-----------------
 
-SCOM 2022
+SCOM 2022 and above
 
 -------------------------->
 
-::: moniker range="sc-om-2022"
+::: moniker range="> sc-om-2022"
 
 ```bash
 #----------------------------------------------------------------------------------------
-# Example user configuration for Operations Manager 2022
+# Example user configuration for Operations Manager 2022 and above
 # Example assumes users named: scomadm & scomuser
 # Replace usernames & corresponding /tmp/scx-\<username\> specification for your environment
 

@@ -2,9 +2,8 @@
 ms.assetid:
 title: Overview of HTML5 Web console and dashboards
 description: This article provides an overview of the new HTML5 Web console and dashboards in System Center Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 12/13/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center

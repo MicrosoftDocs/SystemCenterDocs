@@ -7,9 +7,8 @@ ms.date: 04/22/2025
 title: Identify Compatible Tape Libraries
 ms.subservice: data-protection-manager
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy24
 ---
 

@@ -2,9 +2,8 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Set up TLS 1.3 for VMM
 description: This article provides instructions for setting up TLS 1.3 with VMM
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

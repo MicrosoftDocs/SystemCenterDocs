@@ -5,7 +5,7 @@ description: Include file with sudoers configuration for HP-UX operating systems
 author: sepaugh
 ms.author: lornesepaugh
 manager: benvan
-ms.date: 03/05/2024
+ms.date: 03/07/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,13 +13,7 @@ ms.subservice: operations-manager
 
 <!-----------------
 
-SCOM 2022 does not support HP-UX
-
--------------------------->
-
-<!-----------------
-
-SCOM 2019 does not support HP-UX
+SCOM 2019 and above does not support HP-UX
 
 -------------------------->
 

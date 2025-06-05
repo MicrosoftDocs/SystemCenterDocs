@@ -7,9 +7,8 @@ ms.date: 11/01/2024
 title: Back up the DPM server
 ms.subservice: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

@@ -1,11 +1,10 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
 ms.topic: article
-ms.date: 11/01/2024
+ms.date: 03/19/2025
 title: Install Data Protection Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24
@@ -125,6 +124,8 @@ To set up a SQL Server database:
 
 8. If you're installing SQL Server on a remote computer, do the following:
 
+    - If you use an MSCS clustered SQL Server for DPM database, the Cluster Group Resource name for the SQL Server role must be named SQL Server (**InstanceName**). For example, SQL Server (MSSQLSERVER).
+    - If you use an MSCS clustered SQL Server for DPM database, SQL Server Reporting Service (SSRS) must be installed on a separate standalone SQL Server computer or installed on the DPM server itself.
     - Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
     - Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
@@ -153,6 +154,8 @@ To set up a SQL Server database:
 
 8. If you're installing SQL Server on a remote computer, do the following:
 
+    - If you use an MSCS clustered SQL server for DPM database, the Cluster Group Resource name for the SQL Server role must be named SQL Server (**InstanceName**). For example, SQL Server (MSSQLSERVER).
+    - If you use an MSCS clustered SQL server for DPM database, SQL Server Reporting Service (SSRS) must be installed on a separate standalone SQL server computer or installed on the DPM server itself.
     - Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
     - Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
@@ -172,7 +175,34 @@ To set up a SQL Server database:
 
 ::: moniker-end
 
-::: moniker range="<= sc-dpm-2019"
+::: moniker range="= sc-dpm-2019"
+
+7. On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+
+8. If you're installing SQL Server on a remote computer, do the following:
+
+    - If you use an MSCS clustered SQL server for DPM database, the Cluster Group Resource name for the SQL Server role must be named SQL Server (**InstanceName**). For example, SQL Server (MSSQLSERVER).
+    - If you use an MSCS clustered SQL server for DPM database, SQL Server Reporting Service (SSRS) must be installed on a separate standalone SQL server computer or installed on the DPM server itself.
+    - Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
+
+    - Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
+
+        - Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
+
+        - To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
+            The report server listens for HTTP requests on port 80.
+
+        - Enable RPC on the remote SQL Server.
+
+        - The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
+
+        - Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
+
+        - You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
+
+::: moniker-end
+
+::: moniker range="= sc-dpm-2016"
 
 7. On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
 
@@ -197,6 +227,7 @@ To set up a SQL Server database:
 
 ::: moniker-end
 
+
 ::: moniker range="<=sc-dpm-2019"
 
 > [!NOTE]
@@ -217,6 +248,12 @@ To set up a SQL Server database:
          - [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) is no longer installed with SQL Server; you must install an equivalent version of SSMS separately.<br>
          - For SQL Server 2019, along with SSMS you should also install [SQLCMD](/sql/tools/sqlcmd-utility), [Visual C++ 2017 Redistributable](/cpp/windows/latest-supported-vc-redist?preserve-view=true&view=msvc-170), and [Microsoft ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server#version-17) on the DPM server separately.<br>
          - When you use Remote SQL Server 2022, you must install SQLCMD version 16 on the DPM server. If SQLCMD version 16 isn't available to download, install SQLCMD version 15, rename the folder, and then copy the folder of `SQLCMD` version 16 (`C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn`) from SQL server 2022 to DPM 2022 server before DPM 2022 installation. After the installation, delete version 16 and rename version 15 as needed.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
+
+[!INCLUDE [validation-data-protection-manager.md](../includes/validation-data-protection-manager.md)]
 
 ::: moniker-end
 
