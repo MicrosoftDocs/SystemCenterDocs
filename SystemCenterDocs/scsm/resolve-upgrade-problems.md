@@ -37,7 +37,7 @@ If a condition is found that is an absolute requirement for Service Manager, a f
 
 If either a warning or a failure indication appears, you can either cancel the installation and make the necessary changes, or make the appropriate changes and then select **Check prerequisites again** and continue with the installation. All failure conditions must be corrected before the installation or upgrade can proceed.
 
-# [During predicted checks](#tab/Phase2)
+# [During predicted checks](#tab/Phase2) 
 
 After any failures that were identified during the prerequisite check are corrected, pressing **Next** on the **Prerequisites** page starts the upgrade or installation of Service Manager. The system checks for the following conditions during the installation or upgrade process:
 
@@ -105,7 +105,7 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 - Disable signature verification on the computer that is running Setup.  
 
-- Increase the service time\-out setting on the computer that is running Setup.  
+- Increase the service time-out setting on the computer that is running Setup.
 
 ### Disable signature verification
 

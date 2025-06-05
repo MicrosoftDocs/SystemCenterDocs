@@ -3,9 +3,8 @@ title: Overview of customizing and authoring forms
 description: Learn about how you can customize and author forms with the Service Manager Authoring Tool.
 ms.custom: engagement-fy24, UpdateFrequency3
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na

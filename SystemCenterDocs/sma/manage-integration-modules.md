@@ -1,9 +1,8 @@
 ---
 description: Provides an overview of how you can work with integration modules.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.date: 11/01/2024
 title: Work with Integration Modules

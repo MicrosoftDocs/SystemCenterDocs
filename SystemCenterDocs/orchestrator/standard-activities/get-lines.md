@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 846ae2cb-ab9c-4d59-b0ca-3f0e82c8cbd6
 caps.latest.revision: 13
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Get Lines
 

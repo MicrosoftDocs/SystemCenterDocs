@@ -2,9 +2,8 @@
 ms.assetid: 
 title: Microsoft Management Packs
 description: This article lists the Microsoft Management Packs.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/11/2025
 ms.service: system-center
 ms.subservice: operations-manager

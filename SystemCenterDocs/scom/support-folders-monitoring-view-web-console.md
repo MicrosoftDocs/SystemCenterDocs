@@ -2,9 +2,8 @@
 ms.assetid: b883945e-734a-4b04-a63c-54db9c8cb7d9
 title: Create folders from web console in System Center Operations Manager
 description: This article describes the procedure on how to create folders using Operations Manager web console, and store dashboards inside them.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center

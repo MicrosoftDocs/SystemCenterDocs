@@ -6,9 +6,8 @@ ms.date: 04/22/2025
 title: Modify long-term backup schedule
 ms.subservice: data-protection-manager
 ms.assetid:
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Modify long-term backup schedule

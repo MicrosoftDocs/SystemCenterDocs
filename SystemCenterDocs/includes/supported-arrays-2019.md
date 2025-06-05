@@ -2,9 +2,8 @@
 ms.assetid:
 title: include file
 description: Include file to summarize the supported storage arrays for VMM 2019.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 02/09/2024
 ms.topic: include
 ms.service: system-center

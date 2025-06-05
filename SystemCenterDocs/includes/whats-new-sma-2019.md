@@ -2,9 +2,8 @@
 title:  include file
 description: include file to describe the new features and other changes in System Center Service Management Automation 2019.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 keywords:  
 ms.date: 03/14/2019

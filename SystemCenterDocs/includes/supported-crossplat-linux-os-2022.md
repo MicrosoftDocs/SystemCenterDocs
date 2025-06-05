@@ -2,9 +2,8 @@
 ms.assetid: 
 title: Supported UNIX and Linux operating system versions
 description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 01/02/2025
 ms.topic: include
 ms.service: system-center

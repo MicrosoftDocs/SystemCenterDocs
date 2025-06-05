@@ -2,9 +2,8 @@
 ms.assetid: 7a4739b5-81ef-4495-aa09-5545641d8274
 title: Configure Windows Agents
 description: This article describes the options and how to configure the Microsoft Monitoring Agent on Windows computers.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
