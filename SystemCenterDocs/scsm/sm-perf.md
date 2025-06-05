@@ -13,7 +13,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # System Center - Service Manager performance
 
-This article describes how performance for System Center - Service Manager server roles and features is affected by different factors.
+
 
 Performance for System Center - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 
@@ -22,6 +22,8 @@ Performance for System Center - Service Manager server roles and features is aff
 - Data insertion time for connectors. This is how long it takes for Service Manager to import data when a connector synchronizes.  
 
 - Workflow completion time. This is the length of time it takes for workflows to automatically apply some kind of action.  
+
+This article describes how performance for System Center - Service Manager server roles and features is affected by different factors.
 
 ## Connector performance
 
@@ -52,7 +54,7 @@ Solution 1: You can manually specify how often Service Manager checks for group 
 > [!CAUTION]  
 > Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
 
-### [Manually specify the group change check interval](#tab/manually-specify-the-group-change-check-interval)
+### Manually specify the group change check interval
 
 To manually specify the group change check interval, follow these steps:
 
@@ -66,7 +68,7 @@ To manually specify the group change check interval, follow these steps:
 
 Solution 2: You can use a Windows PowerShell script to add objects of a type, such as "Users", to a user role. Essentially, an analyst who is logged on in this role can access all objects that have a type equal to "User". If you use this method, you eliminate the need for a large group \("All Users"\) and the expensive check that Service Manager performs to determine this group membership. On the Service Manager management server, you can run the following Windows PowerShell script to add the "user" type to a role "RoleName". You've to modify this example script for your environment.  
 
-### [Run a Windows PowerShell script to add objects to a user role](#tab/run-a-windows-powershell-script-to-add-objects-to-a-user-role)  
+### Run a Windows PowerShell script to add objects to a user role
 
 - Modify the following script as necessary, and then run it:  
 

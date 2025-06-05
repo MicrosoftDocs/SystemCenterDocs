@@ -1,6 +1,6 @@
 ---
 ms.assetid: 24cefdb6-cc98-4153-af9a-f172d4f72bbf
-title: Create an action account in Operations Manager
+title: Create an Action Account in Operations Manager
 description: This article describes how to create a management server action account in Operations Manager.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
@@ -30,7 +30,7 @@ To create an action account in Operations Manager, follow these steps:
 
 4.  In the **Create Run As Account Wizard**, on the **Introduction** page, select **Next**.  
 
-5.  On the **General** page, do the following: 
+5.  On the **General** page, do the following:  
 
     1.  In the **RunAsAccounttype** list, select **Action Account**.  
 

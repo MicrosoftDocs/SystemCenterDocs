@@ -14,9 +14,11 @@ ms.assetid: bb451d4a-4e48-428d-8992-0f2e2b5c240f
 
 # Work with the Application Diagnostics console
 
-This article describes how to use the Application Diagnostics console to review captured application error, exceptions, and events.
+
 
 The Application Diagnostics console is an event management system for .NET Application Performance Monitoring in System Center - Operations Manager. You can use Application Diagnostics console to monitor deployed .NET applications for slowdowns, faults, and failures, and immediately pinpoint the source of the problem.  
+
+This article describes how to use the Application Diagnostics console to review captured application error, exceptions, and events.
 
 ## User roles for Application Performance Monitoring
 
@@ -46,11 +48,9 @@ The Application Advisor console provides analytics and telemetry of the data pre
 
 ### Open the Application Diagnostics console  
 
-To open the Application Diagnostics console to look at events and the transaction chains related to those events, follow this step:
+Application Diagnostics and Application Advisor are installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, select **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, here are the links to Application Advisor and Application Diagnostics:   
 
-Application Diagnostics and Application Advisor are installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, select **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, here are the links to Application Advisor and Application Diagnostics:  
-
-- The Application Diagnostics console address is: `http(s)://<web host>/AppDiagnostics`
+- The Application Diagnostics console address is: `http(s)://<web host>/AppDiagnostics`  
 
 - The Application Advisor console address is: `http(s)://<web host>/AppAdvisor`  
 
@@ -93,7 +93,7 @@ To group Events within Areas of Interest, follow these steps:
 
 Your first selection (**Application Errors** and **Performance**) affects the grouping options you see for your second selection.  
 
-### [Group Application Errors](#tab/group-application-errors) 
+### Group Application Errors
 
 -   **Problem** What it displays: All events in this grouping are coming from the same entry point into the application (for example, a method or a web page) and have the same call stack. Value: Consolidating events by problem allows you to prioritize your efforts to correct an issue based on the number of events in the group.  
 
@@ -105,7 +105,7 @@ Your first selection (**Application Errors** and **Performance**) affects the gr
 
 -   **None** This option doesn't group the events.  
 
-### [Group Performance Events](#tab/group-performance-events)  
+### Group Performance Events
 
 -   **Problem** What it displays: All events in this grouping have the identical call stack. Value: Consolidating events by problem allows you to prioritize your efforts to correct an issue based on the number of events in the group.  
 
@@ -113,7 +113,7 @@ Your first selection (**Application Errors** and **Performance**) affects the gr
 
 -   **None** This option doesn't group the events.  
 
----
+
 
 ## [Example: Grouping Application Errors by Exception Class](#tab/example-grouping-application-errors-by-exception-class)  
 

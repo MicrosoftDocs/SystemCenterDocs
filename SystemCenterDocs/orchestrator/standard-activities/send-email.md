@@ -17,10 +17,12 @@ manager: jsuri
 ---
 # Send Email
 
-This article describes about Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system.  
+The Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system. 
 
 > [!IMPORTANT]
 > If you put more than 1 MB of text directly into the message body, the activity can fail during initialization. To avoid this issue, enter no more than 1 MB of text directly into the message body or save the text to a file, and provide the file name as the message you want to send.  
+
+In this article, you'll learn about the Send Email activity.
 
 ## Configure the Send Email Activity
 
@@ -36,7 +38,7 @@ Use the following information to configure the Send Email activity:
 
 ### Details  
 
-|Settings|Configuration instructions|  
+|Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Subject**|Enter the subject of the email.|  
 |**Recipients**|The list displays the email addresses that the email will be sent to. To add a recipient, select **Add** to open the **Recipients Properties** dialog, specify the **Email address** and from the **Recipient type** box, select **To**, **Cc**, or **Bcc**, and then select **OK**.<br /><br /> To remove a recipient, select the recipient in the **Recipients** and select **Remove**. To edit a recipient, double-click the recipient in the **Recipients** box.|  
@@ -46,7 +48,7 @@ Use the following information to configure the Send Email activity:
 
 ### Advanced
 
-|Settings|Configuration instructions|  
+|Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Priority**|Select the priority of the email from the dropdown list.  You can select **Normal**, **Low**, or **High**.|  
 |**Format**|Select the format that will be used for the message body. You can select **Rich Text**, **ASCII**, or **HTML**. **Note:** Some SPAM filters may not allow Rich Text or HTML email.|  
@@ -56,7 +58,7 @@ Use the following information to configure the Send Email activity:
 
 ### Connect
 
-|Settings|Configuration instructions|  
+|Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Email address**|Enter the email address that will be inserted into the From: field of the email.|  
 |**Computer**|Enter the name of the SMTP server. You can also use the ellipsis **(...)** button to browse for the server.|  
