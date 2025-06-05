@@ -62,7 +62,7 @@ To open a management pack file, follow these steps:
 
 2. Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
 
-3. In the Authoring Tool, on the menu bar, select **File**, and select **Open**.  
+3. In the Authoring Tool, on the menu bar, select **File**, and then select **Open**.  
 
 4. In the **Open File** dialog, select the management pack file that you want to open, and select **Open**. The file that you select must have an .xml or .mp file name extension. For example, select **Management Packs** as the file type, and then select the following management pack file:
 

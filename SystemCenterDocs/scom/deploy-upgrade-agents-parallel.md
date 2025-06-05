@@ -5,7 +5,7 @@ description: This article provides guidance with upgrading agents when planning 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 11/01/2024
+ms.date: 03/03/2025
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -62,28 +62,26 @@ Agents reporting to your Operations Manager 2022 management group can be upgrade
 
 ::: moniker-end
 
-## Upgrading agents
+## Upgrade agents
 
-If you want to maintain your existing Operations Manager environment, you can install the latest release of Operations Manager in parallel, and just upgrade your agents depending on what method you currently use.  Such as:
+If you want to maintain your existing Operations Manager environment, you can install the latest release of Operations Manager in parallel, and just upgrade your agents depending on what method you currently use. Such as:
 
-- The discovery and installation of one or more agents from the Operations console.
+- The discovery and installation of one or more agents from the Operations console
 
     If you discover and install the existing agent-managed system from the new Operations Manager management group, the agent will be upgraded and multi-homed to where it reports to both management groups.  
 
-- Inclusion in the installation image.  
+- Inclusion in the installation image
 
     Your image will need to be updated to include the new version and configured to assign the agent to the new Operations Manager management group.
 
-- Manual installation where setup is manually executed on the agent or deployed through an existing software distribution tool.  
+- Manual installation where setup is manually executed on the agent or deployed through an existing software distribution tool
 
     Your deployment process will need to be updated to include the new agent Windows installer package and dependencies required. The logic defined to interrogate, install and configure, and verify the agent will need to be updated accordingly.
 
-Once you've completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager management group, you can reconfigure the agents to remove assignment from the existing Operations Manager management group that you're preparing to retire.  This can be accomplished by following the guidance in the Operations Manager SDK to programatically [remove the management group configuration](/previous-versions/system-center/developer/hh329017(v=msdn.10)) from the agent.  
+Once you've completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager management group, you can reconfigure the agents to remove assignment from the existing Operations Manager management group that you're preparing to retire. This can be accomplished by following the guidance in the Operations Manager SDK to programatically [remove the management group configuration](/previous-versions/system-center/developer/hh329017(v=msdn.10)) from the agent.  
 
 ## Next steps
 
 - To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  
-
-- To understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager, review information in the [Managing Discovery and Agents](welcome.md) section.
-
+- To understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager, review information in the [Manage Discovery and Agents](welcome.md) section.
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
