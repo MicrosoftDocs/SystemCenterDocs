@@ -1,9 +1,8 @@
 ---
 title: include file
 description: include file that summarizes the release notes for Operations Manager 2022.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/22/2022
 ms.service: system-center
 ms.assetid:

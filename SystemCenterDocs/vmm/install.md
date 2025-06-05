@@ -2,9 +2,8 @@
 ms.assetid: 362eb695-e4da-4470-ab02-3799faad279d
 title: Install VMM
 description: This article provides installation instructions for VMM
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/04/2025
 ms.topic: article
 ms.service: system-center
