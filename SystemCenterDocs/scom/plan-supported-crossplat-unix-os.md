@@ -2,9 +2,9 @@
 ms.assetid:
 title: Supported UNIX operating system versions
 description: This article lists the supported versions of UNIX operating system for System Center Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+
 ms.date: 01/29/2025
 ms.service: system-center
 ms.subservice: operations-manager
@@ -13,7 +13,12 @@ ms.topic: article
 
 # Supported UNIX operating system versions
 
+::: moniker range="<=sc-om-2019"
+
+
 The following tables describe the required UNIX operating systems and package dependencies for System Center - Operations Manager.
+
+::: moniker-end
 
 ::: moniker range="< sc-om-2022"
 
@@ -30,6 +35,8 @@ The following tables describe the required UNIX operating systems and package de
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
+
+
 
 [!INCLUDE [supported-crossplat-os-2019.md](../includes/supported-crossplat-unix-os-2019.md)]
 

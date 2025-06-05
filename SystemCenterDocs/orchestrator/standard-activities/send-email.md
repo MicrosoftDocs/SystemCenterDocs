@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 81c60f52-199b-46c7-83c9-3d38ae70b108
 caps.latest.revision: 16
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Send Email
 

@@ -7,9 +7,8 @@ ms.date: 11/01/2024
 title: Back up and restore VMM servers
 ms.subservice: data-protection-manager
 ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

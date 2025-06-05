@@ -2,9 +2,8 @@
 ms.assetid: 017e8bb1-e523-4cc0-bf0c-2d1d4697db11
 title: Process Manual Agent Installations
 description: This article describes how to process Operations Manager agents deployed manually.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: operations-manager
