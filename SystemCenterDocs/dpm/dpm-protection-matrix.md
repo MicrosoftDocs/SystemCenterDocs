@@ -1,6 +1,6 @@
 ---
 description: A complete matrix of all workloads, data types, and installations that DPM protects.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 03/03/2025

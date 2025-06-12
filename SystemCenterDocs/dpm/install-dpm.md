@@ -1,6 +1,6 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 03/19/2025
 title: Install Data Protection Manager
 author: jyothisuri
