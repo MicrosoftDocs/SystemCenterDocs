@@ -4,7 +4,7 @@ description: Describes the Get Service Configuration activity that is used in a 
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24

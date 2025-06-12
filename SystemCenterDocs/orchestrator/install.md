@@ -6,7 +6,7 @@ ms.author: jsuri
 ms.date: 03/19/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ---
 

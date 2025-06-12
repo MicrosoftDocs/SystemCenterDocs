@@ -5,7 +5,7 @@ description: This article details the release builds in Orchestrator
 author: jyothisuri
 ms.author: jsuri
 ms.date: 05/14/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: orchestrator
 ---
