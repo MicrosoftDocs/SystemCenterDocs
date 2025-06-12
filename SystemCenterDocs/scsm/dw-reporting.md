@@ -10,7 +10,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 90c721f6-6b0e-4c35-ac85-3fb2e4134ecc
 ---
 

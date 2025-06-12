@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/21/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Use connectors to import data into System Center - Service Manager
 description: Explains how to use connectors to import data into System Center - Service Manager.
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

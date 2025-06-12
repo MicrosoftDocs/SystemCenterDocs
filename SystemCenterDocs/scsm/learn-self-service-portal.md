@@ -10,7 +10,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
 ---
 

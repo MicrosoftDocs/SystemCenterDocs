@@ -8,7 +8,7 @@ manager: jsuri
 ms.date: 05/27/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
