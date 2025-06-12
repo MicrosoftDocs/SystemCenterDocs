@@ -5,7 +5,7 @@ description: This article provides an overview of setting up n SDN in the System
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/24/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy24

@@ -5,7 +5,7 @@ description: This article provides instructions for managing a private cloud in 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 02/28/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24
