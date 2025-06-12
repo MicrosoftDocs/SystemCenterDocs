@@ -8,7 +8,7 @@ ms.date: 02/17/2025
 ms.custom: na, intro-installation, UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Disable RC4 while installing Operations Manager
