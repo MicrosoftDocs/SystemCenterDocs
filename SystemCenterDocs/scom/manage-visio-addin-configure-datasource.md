@@ -7,7 +7,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 2b286c07-c702-4ff9-8e4c-2865b34cf53d
 ---
 # Configure the Operations Manager data source in Visio

@@ -8,7 +8,7 @@ ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2016'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
 ---
 
