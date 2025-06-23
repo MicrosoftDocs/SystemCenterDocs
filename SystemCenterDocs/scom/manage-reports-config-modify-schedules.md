@@ -2,9 +2,8 @@
 ms.assetid: 197a4330-5b2e-4ccd-bfe2-4c93e2a6714b
 title: Configure and Modify Report Schedules
 description: This article describes how to configure and modify custom report schedules in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center

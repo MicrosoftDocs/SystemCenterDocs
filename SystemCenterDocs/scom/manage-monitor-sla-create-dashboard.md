@@ -1,9 +1,8 @@
 ---
 title: Creating a Service Level Dashboard
 description: This article describes how to create a Service Level Dashboard in the Operations Manager console to visualize IT service availability metrics.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center

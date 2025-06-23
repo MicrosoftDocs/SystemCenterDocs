@@ -2,9 +2,8 @@
 ms.assetid: 4645135e-4007-41eb-abf1-addae8627aec
 description: include file to summarize the release notes for System Center 2019 - Service Provider Foundation
 ms.topic: include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.subservice: service-provider-foundation
 keywords:

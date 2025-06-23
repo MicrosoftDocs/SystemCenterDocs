@@ -7,9 +7,8 @@ ms.date: 03/31/2025
 title: Use Pre-backup and Post-backup scripts
 ms.subservice: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
