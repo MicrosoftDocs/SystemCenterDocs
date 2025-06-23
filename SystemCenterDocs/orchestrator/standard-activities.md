@@ -7,7 +7,7 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 03/31/2025
+ms.date: 11/01/2024
 ms.subservice: orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
 ms.custom: UpdateFrequency3
@@ -16,8 +16,6 @@ ms.custom: UpdateFrequency3
 # Standard activities
 
 Standard Activities enable you to create runbooks to automate your data center procedures.
-
-## Tasks
 
 The following table provides a brief description of tasks you can accomplish with each activity category.  
 
@@ -37,4 +35,4 @@ The following table provides a brief description of tasks you can accomplish wit
 
 ## Related content  
 
-- Learn how to configure common tab settings with [Common Activity Properties](common-activity-properties.md).
+- [Common Activity Properties](common-activity-properties.md).

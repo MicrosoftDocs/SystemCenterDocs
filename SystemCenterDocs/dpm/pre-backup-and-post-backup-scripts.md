@@ -15,11 +15,13 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Pre-backup and Post-backup scripts for DPM
 
-This article details the pre- and post-backup scripts that you can use for DPM and how to use them.
+
 
 A *pre-backup script* is a script that resides on a protected computer. It's executed before each DPM backup job and prepares the protected data source for backup.
 
 A *post-backup script* is a script that runs after a DPM backup job to do any post-backup processing, such as bringing a virtual machine back online.
+
+This article details the pre-backup and post-backup scripts that you can use for DPM and how to use them.
 
 When you install a protection agent on a computer, a *ScriptingConfig.xml* file is added to the install path *\Microsoft Data Protection Manager\DPM\Scripting* folder on the protected computer. For each protected data source on the computer, you can specify a pre-backup script and a post-backup script in ScriptingConfig.xml.
 
@@ -87,6 +89,4 @@ To specify pre-backup and post-backup scripts, follow these steps:
     > [!NOTE]
     > DPM will suffix an additional Boolean (true/false) parameter to the post-backup script command, indicating the status of the DPM backup job.
 
-## Next steps
-
-- [Back up Hyper-V virtual machines](back-up-hyper-v-virtual-machines.md).
+ 

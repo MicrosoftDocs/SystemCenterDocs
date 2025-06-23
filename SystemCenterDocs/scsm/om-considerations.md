@@ -1,5 +1,5 @@
 ---
-title: Operations Manager deployment consideration in System Center - Service Manager
+title: Operations Manager Deployment Consideration in System Center - Service Manager
 description: This article contains information to be aware of when you're combining Operations Manager and Service Manager.
 ms.service: system-center
 author: PriskeyJeronika-MS
@@ -51,14 +51,12 @@ Operations Manager is supported by Service Manager, and Service Manager for conn
 
 ### Operations Manager agents
 
-Service Manager includes an Operations Manager agent. The agent is automatically installed when you deploy Service Manager.
-
-After installation, you must manually configure the agent to communicate with the Operations Manager management server for the following reasons: 
+Service Manager includes an Operations Manager agent. The agent is automatically installed when you deploy Service Manager. After installation, you must manually configure the agent to communicate with the Operations Manager management server:
 
 - To validate that the agent is installed, open **Control Panel**, and verify that the agent is present.
 - To monitor a server running the Self-Service Portal, or the Service Manager console, deploy the Operations Manager agent on the server before you install the portal or console.
 - If you remove the console or Self-Service Portal on a machine that's running the Operations Manager agent, the agent is also removed.
-- If you've already installed the portal or console on a server that doesn't host other Service Manager roles, then agent deployment will fail. To prevent the failure and back up the registry key, do the following:
+- If you've already installed the portal or console on a server that doesn't host other Service Manager roles, then agent deployment will fail. To prevent the failure, back up the registry key as follows:
 
   1. Export the Service Manager key from HKEY\_CLASSES\_ROOT\\Installer\\Products\\\<ServiceManagerGUID\>. You can find the key by searching at the Products node for Data equal to Service Manager.  
   2. Delete the registry key.  

@@ -1,5 +1,5 @@
 ---
-title: Unbundle a bundled management pack
+title: Unbundle a Bundled Management Pack
 description: Describes how to unbundle a bundled management pack for use with the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center

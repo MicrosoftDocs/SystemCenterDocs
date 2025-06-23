@@ -2,7 +2,7 @@
 title: Print File
 description: This article describes the functionality of Print File Activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 03/31/2025
+ms.date: 11/01/2024
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -19,13 +19,15 @@ manager: jsuri
 
 The Print File activity prints text files to a printer that you specify. You can use this activity to print log files for paper filing before the data is moved or deleted from a server.  
 
+This article describes the functionality of Print File Activity.
+
 ## Configure the Print File Activity
 
  Before you configure the Print File activity, you need to determine the following:  
 
-- File name you're printing.  
+- File name you're printing 
 
-- Printer name.
+- Printer name
 
 Use the following information to configure the Print File activity.  
 
@@ -50,7 +52,3 @@ Use the following information to configure the Print File activity.
 |For each file:|  
 |Name and path of the file|The path of the file that was printed.|  
 |Name of the printer|The printer that was used to print the file.|
-
-## Next steps
-
-- [Rename File](rename-file.md).

@@ -5,7 +5,7 @@ description: This topic describes how to configure the unattended execution acco
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/31/2025
+ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -36,8 +36,8 @@ To manage the Report Server unattended execution account, follow these steps:
 
 ## Next steps
 
-- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account, see [Create a Run As Account and Associate with a Run As Profile](~/scom/manage-security-create-runas-link-profile.md).
+- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account, see [How to Create a Run As Account and Associate with a Run As Profile](~/scom/manage-security-create-runas-link-profile.md).
 
 - If you need to create new credentials for the management server action account, see [Create a New Action Account in Operations Manager](~/scom/manage-security-create-runas-actionaccount.md).
 
-- To understand the profiles defined in Operations Manager to manage authorization and security and configure user roles to perform administration and access to operational data in the management group, see [Implementing User Roles](manage-security-overview.md).
+- To understand the profiles defined in Operations Manager to manage authorization and security and configure user roles to perform administration and access to operational data in the management group, see [Implement User Roles](manage-security-overview.md).

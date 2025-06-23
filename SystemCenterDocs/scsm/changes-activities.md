@@ -1,5 +1,5 @@
 ---
-title: Manage changes and activities
+title: Manage Changes and Activities
 description: Provides an example scenario and details about how to manage changes and activities in Service Manager.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
@@ -145,7 +145,7 @@ You can use the following procedures to add a dependent activity to an existing 
 
 If you intend to use release management as part of the standard processes in your organization, consider adding dependent activities to change request templates. For more information about creating change request templates, see [Create Change Request Templates](./change-activity-mgt.md).  
 
-#### Add a dependent activity to a change request 
+#### Add a dependent activity to a change request  
 
 To add a dependent activity to a change request, follow these steps:
 
@@ -186,7 +186,7 @@ To edit a change request, follow these steps:
 4. Make the change that you want. For example, if you want to change the priority to high, select **High** in the **Priority** list. Or enter new text in the **Description** box.  
 5. Select **OK** to update the change request and to close it.  
 
-#### Validate an edited change request 
+#### Validate an edited change request  
 
 To validate an edited change request, follow these steps:
 
@@ -222,7 +222,7 @@ You can use the following procedures to approve a review activity in the Service
 > [!NOTE]  
 > Users can only approve or reject the activities that are assigned to them.  
 
-#### Approve a review activity for a change request
+#### Approve a review activity for a change request  
 
 To approve a review activity for a change request, follow these steps:
 
@@ -401,7 +401,7 @@ To close a successful change request, follow these steps:
 4. In the **Tasks** pane, select **Close**.  
 5. In the **Comment** box, enter a comment, and select **OK**.  
 
-#### Close a failed change request 
+#### Close a failed change request  
 
 To close a failed change request, follow these steps:
 
@@ -419,7 +419,7 @@ To close a failed change request, follow these steps:
 
 You can use the following procedure to notify reviewers that an activity is available for review. You can use the second procedure to notify users that a change request has been closed.  
 
-> [!NOTE] 
+> [!NOTE]  
 > Only administrators can configure workflow notifications.  
 
 #### Notify reviewers that an activity is available for review

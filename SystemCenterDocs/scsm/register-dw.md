@@ -1,5 +1,5 @@
 ---
-title: Enable Service Manager reporting
+title: Enable Service Manager Reporting
 description: Use the Data Warehouse Registration wizard to enable reporting.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
@@ -95,7 +95,7 @@ To determine when management pack deployment has completed, follow these steps:
    - MPSyncJob  
 
    > [!NOTE]
-   > If these five data warehouse jobs don't appear, do the following:  
+   > If these five data warehouse jobs don't appear, complete the following steps:  
    >
    > a. In the **Data Warehouse Jobs** pane, select **MPSyncJob**.  
    > b. In the **Tasks** pane, under **Synchronization**, and select **Resume**.  
