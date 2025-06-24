@@ -9,7 +9,7 @@ ms.custom: na
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Sample Linux log file management pack

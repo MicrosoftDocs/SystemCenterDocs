@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Configuring SSL ciphers

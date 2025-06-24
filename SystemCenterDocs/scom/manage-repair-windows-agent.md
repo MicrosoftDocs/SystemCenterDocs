@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Repair the Windows agent
