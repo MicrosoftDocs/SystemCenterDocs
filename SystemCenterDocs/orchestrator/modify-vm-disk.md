@@ -3,7 +3,7 @@ title: Modify VM Disk activity
 description: This article describes how the Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine.
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24
