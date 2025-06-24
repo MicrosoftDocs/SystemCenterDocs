@@ -5,7 +5,7 @@ description: Describes how to configure a shielded template disk and utility dis
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24

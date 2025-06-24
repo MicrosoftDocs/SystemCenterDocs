@@ -5,7 +5,7 @@ description: This article provides information about the ports and protocols use
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/15/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24

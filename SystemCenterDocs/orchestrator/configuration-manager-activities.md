@@ -4,7 +4,7 @@ description: This article contains configuration instructions for activities pro
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3

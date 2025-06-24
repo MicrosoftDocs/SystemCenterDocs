@@ -5,7 +5,7 @@ description: This article describes how to manage infrastructure servers in the 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/09/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

@@ -5,7 +5,7 @@ description: This article provides guidance about managing VMware servers in the
 author: jyothisuri
 ms.author: jsuri
 ms.date: 12/03/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

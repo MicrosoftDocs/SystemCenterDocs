@@ -1,6 +1,6 @@
 ---
 description: DPM overview article that explains the workloads and types of data you can protect with DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

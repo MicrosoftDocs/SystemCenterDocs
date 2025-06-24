@@ -5,7 +5,7 @@ description: This article describes how to manage storage in Storage Spaces Dire
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/24/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23

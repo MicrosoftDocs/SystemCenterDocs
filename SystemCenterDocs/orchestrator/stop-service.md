@@ -4,7 +4,7 @@ description: The Stop Service activity is used in a runbook to stop a VMM servic
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 488bb198-73fc-4983-b0ef-14a8c7176f9c
 author: jyothisuri
 ms.author: jsuri

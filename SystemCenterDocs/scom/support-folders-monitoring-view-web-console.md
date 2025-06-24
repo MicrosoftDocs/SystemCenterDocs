@@ -5,7 +5,7 @@ description: This article describes the procedure on how to create folders using
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 MonikerRange: '>=sc-om-2019'

@@ -7,7 +7,7 @@ ms.author: jsuri
 ms.date: 04/09/2025
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot discovery error - Azure Linux and Arc Linux machines are unsupported

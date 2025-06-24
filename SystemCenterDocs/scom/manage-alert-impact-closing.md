@@ -8,7 +8,7 @@ ms.date: 04/21/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: c6b6b917-1fbc-43aa-b1ba-317d0fa7c882
 ---
 

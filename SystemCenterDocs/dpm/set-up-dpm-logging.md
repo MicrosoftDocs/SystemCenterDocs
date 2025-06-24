@@ -1,6 +1,6 @@
 ---
 description: This article describes logging in DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

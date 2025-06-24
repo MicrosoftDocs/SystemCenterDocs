@@ -5,7 +5,7 @@ description: This article provides links to planning System Center VMM deploymen
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/20/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23

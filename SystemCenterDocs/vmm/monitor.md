@@ -5,7 +5,7 @@ description: This article describes how to monitor VMM with VMM jobs, and System
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/02/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24

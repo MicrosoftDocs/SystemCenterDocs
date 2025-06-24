@@ -5,7 +5,7 @@ description: This article describes about network object fundamentals.
 author: jyothisuri
 ms.author: jsuri
 ms.date: 06/27/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24

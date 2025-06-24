@@ -6,7 +6,7 @@ ms.custom: engagement-fy23, UpdateFrequency2
 author: jyothisuri
 ms.author: jsuri
 ms.date: 01/04/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ---

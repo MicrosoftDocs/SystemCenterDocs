@@ -1,6 +1,6 @@
 ---
 description: You can back up a generic data source with DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

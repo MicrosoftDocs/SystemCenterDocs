@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.assetid: b7260dc1-2314-4474-849b-7f6c627b5280
 author: jyothisuri
 ms.author: jsuri

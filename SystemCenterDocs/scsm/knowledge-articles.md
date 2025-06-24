@@ -1,7 +1,7 @@
 ---
 title: Manage knowledge articles
 description: Describes how to manage Service Manager knowledge articles.
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
