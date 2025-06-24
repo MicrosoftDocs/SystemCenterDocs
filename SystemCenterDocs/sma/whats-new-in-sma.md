@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: whats-new
 ms.service: system-center
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, intro-whats-new, engagement-fy24

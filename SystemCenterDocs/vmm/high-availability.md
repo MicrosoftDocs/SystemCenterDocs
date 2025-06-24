@@ -5,7 +5,7 @@ description: This article describes how to deploy the VMM server in high availab
 author: jyothisuri
 ms.author: jsuri
 ms.date: 01/08/2025
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, engagement-fy24

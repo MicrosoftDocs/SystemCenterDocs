@@ -5,7 +5,7 @@ description: This article provides an overview of private cloud deployment in VM
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/07/2025
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24

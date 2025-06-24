@@ -5,7 +5,7 @@ description: This article provides an overview of System Center VMM and a summar
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, intro-overview, engagement-fy24

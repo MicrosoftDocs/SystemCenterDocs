@@ -5,7 +5,7 @@ description: This article describes how to add an IP Address Management server t
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/21/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

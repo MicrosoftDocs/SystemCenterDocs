@@ -5,7 +5,7 @@ description: This article provides guidance for setting up the library in the VM
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/02/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

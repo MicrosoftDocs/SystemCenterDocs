@@ -5,7 +5,7 @@ description: This article describes how to migrate storage in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/30/2024
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-migration, UpdateFrequency3, engagement-fy24

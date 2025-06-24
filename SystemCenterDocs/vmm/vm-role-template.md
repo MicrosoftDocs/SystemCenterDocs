@@ -5,7 +5,7 @@ description: This article describes how to create VM role templates that can be 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/17/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '<sc-vmm-2019'
