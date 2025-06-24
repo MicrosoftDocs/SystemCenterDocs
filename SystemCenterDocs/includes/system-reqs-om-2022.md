@@ -2,10 +2,9 @@
 ms.assetid: 
 title: System requirements for System Center Operations Manager
 description: This article describes the software and hardware system requirements for System Center Operations Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 12/06/2022
+author: jyothisuri
+ms.author: jsuri
+ms.date: 05/08/2025
 ms.topic: include
 ms.service: system-center
 ms.subservice: operations-manager
@@ -28,7 +27,7 @@ This information helps you understand the performance and scalability characteri
 | Agentless-managed computers per management group | 60 |
 | Agent-managed and UNIX or Linux computers per management group | 6,000 (with 50 open consoles); 15,000 (with 25 open consoles) |
 | UNIX or Linux computers per dedicated management server | 1,000 |
-| UNIX or Linux computers monitored per dedicated gateway server | 200 |
+| UNIX or Linux computers monitored per dedicated gateway server | 100 |
 | Network devices managed by a resource pool with three or more management servers | 1,000 |
 | Network devices managed by two resource pools | 2,000 |
 | Agents for Application Performance Monitoring (APM) | 700 |
@@ -151,8 +150,9 @@ Windows 10 and Windows 11 client operating system are supported for the Operatio
 ## Microsoft Monitoring Agent operating system
 
 >[!NOTE]
-> Operations Manager 2022 only includes the 64-bit version of the agent.
+> Operations Manager 2022 and later includes the 64-bit version of the agent.
 
+- Windows Server 2025 - Standard, Datacenter, Server Core
 - Windows Server 2022 - Standard, Datacenter, Server Core
 - Windows Server 2019 - Standard, Datacenter, Server Core
 - Windows Server 2016 - Standard, Datacenter, Server Core

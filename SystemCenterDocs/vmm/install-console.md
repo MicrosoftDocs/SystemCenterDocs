@@ -2,10 +2,9 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Install the VMM console
 description: This article provides installation instructions for the VMM console
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 03/19/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 06/04/2025
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -37,6 +36,12 @@ This article describes how to install the System Center Virtual Machine Manager 
 - The VMM version of the console must match the System Center version of the VMM server. For example, to connect to a VMM server running System Center 2025, the VMM console version must also be 2025.
 ::: moniker-end
 - You can only install one version of the console on a single machine.
+::: moniker range="sc-vmm-2025"
+- The VMM Console is installed using the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2025&preserve-view=true#before-you-start).
+::: moniker-end
+::: moniker range="sc-vmm-2022"
+- The VMM Console is installed using the same installer as the VMM server. Ensure you have the installer downloaded from one of the [procurement channels](/system-center/vmm/install?view=sc-vmm-2022&preserve-view=true#before-you-start).
+::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
 
@@ -70,20 +75,20 @@ ProgramFiles | Specify the location in which to store program files.
 IndigoTCpPort | Specify the port number used to communicate with the VMM server.
 MUOptIn | 0: Don't opt in to Microsoft Update. 1: Opt in.
 VmmServerForOpsMgrConfig | Specify the name of the System Center Operations Manager server.
-IACCEPTSCUELA | Specifies that you have read, understood, and accepted the terms of use.
 
 Install the console as follows:
 
 1. Copy the VMClient.ini file from the amd64\Setup folder to a local folder.
 2. Edit the VMClient.ini file. Remove the comment indicator (#) only if you want to edit the entry. Otherwise, setup uses the values in the .ini file as the default values.
-3. Run setup as follows: setup.exe /client /i /f \<path\>, where:
+3. Run setup as follows: setup.exe /client /i /IACCEPTSCEULA /f \<path\>, where:
    - /client - specifies console installation
    - /i or /x - specify whether to install (/i) or uninstall (/x) the console.
+   - /IACCEPTSCEULA - Specifies that you have read, understood, and accepted the terms of use.
    - /f &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file, it installs with default values.
    - path: location of ini file.
    - Don't use the /opsmgr parameter
 
-Example: **setup.exe /client /i /f C:\Temp\VMClient.ini**.
+Example: **setup.exe /client /i /IACCEPTSCEULA /f C:\Temp\VMClient.ini**.
 
 ## Connect to a VMM management server
 

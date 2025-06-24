@@ -2,9 +2,8 @@
 ms.assetid: de545418-83e4-45f5-8809-27a5647d0aa7
 title: include file
 description: include file to summarize the release notes for VMM 2016.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date:  04/30/2018
 ms.topic:  include
 ms.service:  system-center

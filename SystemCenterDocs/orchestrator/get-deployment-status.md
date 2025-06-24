@@ -13,6 +13,7 @@ ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri
+
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack

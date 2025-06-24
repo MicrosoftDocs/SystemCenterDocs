@@ -13,6 +13,7 @@ ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 240ef642-dba3-416a-b048-df98d947cbaf
+
 ---
 
 # Seal a Service Manager management pack

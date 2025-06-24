@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23
+
 ---
 
 # Deploy clusters with Storage Spaces Direct in VMM

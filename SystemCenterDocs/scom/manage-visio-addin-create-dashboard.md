@@ -10,6 +10,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: article
 ms.assetid: 21d8f3a5-2ac8-4776-b063-f6895a21cd5a
+
 ---
 
 # Build a simple monitoring dashboard using the Visio Web Part

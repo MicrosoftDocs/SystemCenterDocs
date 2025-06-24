@@ -2,9 +2,8 @@
 ms.assetid: 71e6661a-0a00-4817-a5a9-46169bb23e32
 title: Virtual Machine Manager network object fundamentals
 description: This article describes about network object fundamentals.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 06/27/2024
 ms.topic: article
 ms.service: system-center
