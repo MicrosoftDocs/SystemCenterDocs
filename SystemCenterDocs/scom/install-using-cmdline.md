@@ -8,7 +8,7 @@ ms.date: 03/19/2025
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Install Operations Manager from the Command Prompt

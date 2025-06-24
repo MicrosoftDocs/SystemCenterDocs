@@ -8,7 +8,7 @@ ms.date: 03/19/2025
 ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Install the Operations Manager Web console

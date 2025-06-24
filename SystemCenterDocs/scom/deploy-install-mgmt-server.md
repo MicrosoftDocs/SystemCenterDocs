@@ -7,7 +7,7 @@ ms.reviewer: randolphwest
 ms.date: 03/19/2025
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: engagement-fy23, engagement-fy24
 ---
 

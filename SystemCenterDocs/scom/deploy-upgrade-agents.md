@@ -9,7 +9,7 @@ ms.custom: UpdateFrequency.5
 ms.service: system-center
 monikerRange: ' >=sc-om-2019'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade an Operations Manager agent
