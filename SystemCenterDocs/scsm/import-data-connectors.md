@@ -1,12 +1,12 @@
 ---
-title: Use connectors to import data into System Center - Service Manager
+title: Use Connectors to Import Data into System Center - Service Manager
 description: Explains how to use connectors to import data into System Center - Service Manager.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.service: system-center
-ms.date: 04/03/2025
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
@@ -16,6 +16,8 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 
 You can use System Center - Service Manager connectors to import data as configuration items from Active Directory Domain Services (AD DS), System Center Configuration Manager, System Center Orchestrator, System Center Virtual Machine Manager, and System Center Operations Manager. In addition, you can import alerts from Operations Manager, and you can configure these alerts to automatically generate incidents in Service Manager. You can also import data from comma-separated value (CSV) files into the Service Manager database.
+
+This article explains how to use connectors to import data into System Center - Service Manager.
 
 ## Effects of deleting a connector on configuration items
 
@@ -28,6 +30,6 @@ If you're creating a new connector to replace an existing connector, create the 
 
 ## Next steps
 
-- [Import data from Active Directory Domain Services](import-data-ads.md).
-- [Import data and alerts from Operations Manager](import-data-om.md).
-- [Import data from Configuration Manager](import-data-cm.md).
+- Learn how to [import data from Active Directory Domain Services](import-data-ads.md).
+- Learn how to [import data and alerts from Operations Manager](import-data-om.md).
+- Learn how to [import data from Configuration Manager](import-data-cm.md).
