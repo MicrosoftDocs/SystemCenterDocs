@@ -5,7 +5,7 @@ description: This article provides information about how to encrypt SMA web serv
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic:  article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-management-automation
 ms.custom: UpdateFrequency2, engagement-fy24

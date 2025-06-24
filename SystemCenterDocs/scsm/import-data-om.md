@@ -1,7 +1,7 @@
 ---
 title: Import data and alerts from Operations Manager
 description: Describes how you can import data and alerts from Operations Manager into Service Manager.
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
