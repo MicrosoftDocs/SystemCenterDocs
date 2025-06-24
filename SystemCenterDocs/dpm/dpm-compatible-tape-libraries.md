@@ -1,6 +1,6 @@
 ---
 description: This article describes tape libraries compatible with DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 05/05/2025

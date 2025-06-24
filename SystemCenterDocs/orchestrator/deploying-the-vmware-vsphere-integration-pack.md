@@ -4,7 +4,7 @@ description: This article provides important information about downloading and d
 ms.date: 03/27/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: install-set-up-deploy
 author: jyothisuri
 ms.author: jsuri
 ms.custom: intro-deployment

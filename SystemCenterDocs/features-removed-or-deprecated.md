@@ -1,6 +1,6 @@
 ---
 description: This topic lists the features and functionality that have been removed or replaced in System Center 2016.
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

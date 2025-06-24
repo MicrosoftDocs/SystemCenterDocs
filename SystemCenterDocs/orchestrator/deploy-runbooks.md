@@ -6,7 +6,7 @@ ms.author: jsuri
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: intro-deployment, engagement-fy23
 ---
 

@@ -7,7 +7,7 @@ ms.author: jsuri
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.topic: article
+ms.topic: release-notes
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ---
 

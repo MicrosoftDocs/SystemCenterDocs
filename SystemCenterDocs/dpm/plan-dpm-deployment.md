@@ -1,6 +1,6 @@
 ---
 description: Information to help you plan for and prepare to deploy DPM in your environment.
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

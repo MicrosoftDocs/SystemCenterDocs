@@ -1,6 +1,6 @@
 ---
 description: Descriptions of the new features in System Center DPM
-ms.topic: article
+ms.topic: whats-new
 ms.service: system-center
 ms.date: 11/01/2024
 title: What's new in System Center DPM
