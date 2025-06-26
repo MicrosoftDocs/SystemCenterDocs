@@ -1,11 +1,11 @@
 ---
 ms.assetid: f6500be6-7c8a-46ff-a3d4-b9fada8c5d8d
-title: Update the network controller server certificate
+title: Update the Network Controller Server Certificate
 description: This article describes the procedure on how to update the network controller's server certificate.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/07/2025
+ms.date: 07/24/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -21,7 +21,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
   You can change or update this certificate in the following scenarios after you deploy the NC:
 
-- The certificate has expired.
+- The certificate has expired
 - You want to move from a self-signed certificate to a certificate that is issued by a certificate authority (CA).
 
   > [!NOTE]
@@ -33,7 +33,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 ## Update the server certificate
 
-To update the server certificate, follow these steps
+To update the server certificate, follow these steps:
 
 1. If the certificate is self-signed, do the following:
 
@@ -122,5 +122,4 @@ To update the server certificate, follow these steps
     You can now remove the previous certificate from the NC nodes.
 
     ## Next steps
-
     [Validate the NC deployment](sdn-controller.md#validate-the-deployment) to ensure that the deployment is successful.

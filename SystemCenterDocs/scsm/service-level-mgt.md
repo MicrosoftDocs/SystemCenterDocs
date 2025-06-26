@@ -7,13 +7,14 @@ ms.author: v-gjeronika
 manager: jsuri
 ms.service: system-center
 keywords:
-ms.date: 04/07/2025
+ms.date: 11/01/2024
 ms.subservice: service-manager
 ms.assetid: a8f84795-11fd-4c62-8f50-0929cedd3b20
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
 # Configure Service Level Management
+
 
 This article provides an overview of how to configure service level management in Service Manager. This section also contains procedures that cover service level management configuration scenarios.
 
@@ -32,6 +33,7 @@ The Calendar node is used to define work days, work hours, and holidays as a cal
 The Metric node is used to define time metrics against a calendar item, corresponding to a service level objective. A time metric is the measurement between start and end dates. There are two predefined metrics in Service Manager:
 
 - Resolution Time
+
 - Completion Time
 
 The Resolution Time metric is used to measure the maximum length of time that incidents should take before they're resolved. By default, the two points in time that define Resolution Time are the start date as the date and time that each incident is created and the end date as the date and time that each incident is resolved.

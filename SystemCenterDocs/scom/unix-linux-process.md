@@ -1,11 +1,11 @@
 ---
 ms.assetid: d12f1b76-178f-4f30-a452-d47eb7fd5e3c
-title: UNIX or Linux process in Operations Manager management pack
+title: UNIX or Linux Process in Operations Manager Management Pack
 description: This article provides an overview of UNIX or Linux process.
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 04/07/2025
+ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
@@ -25,7 +25,7 @@ The  **UNIX/Linux Process Monitoring**  template is useful for monitoring any ap
 
 The following table shows the monitoring activity that the  **UNIX/Linux Process Monitoring** template performs:
 
-| Type | Description | When enabled |
+| Type | Description | When Enabled |
 | --- | --- | --- |
 | Monitors | Process Count is Outside of Range | Always enabled. |
 
@@ -70,7 +70,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 
 ## Create and modify UNIX/Linux process monitoring templates
 
-### [Create an existing UNIX/Linux process monitoring template](#tab/create-an-existing-unixlinux-process-monitoring-template)
+### Create an existing UNIX/Linux process monitoring template
 
 To create a UNIX/Linux process monitoring template, follow these steps:
 
@@ -99,7 +99,7 @@ To create a UNIX/Linux process monitoring template, follow these steps:
 16. Select  **Next**.
 17. Select  **Create**.
 
-### [Modify an existing UNIX/Linux process monitoring template](#tab/modify-an-existing-unixlinux-process-monitoring-template)
+### Modify an existing UNIX/Linux process monitoring template
 
 To modify an existing UNIX/Linux process monitoring template, follow these steps:
 
@@ -110,7 +110,7 @@ To modify an existing UNIX/Linux process monitoring template, follow these steps
 5. Right-click the template, and then select  **Properties**.
 6. Enter the changes that you want, and select  **OK**.
 
----
+
 
 ## View UNIX/Linux process monitors and collected data
 

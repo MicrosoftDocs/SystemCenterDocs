@@ -3,12 +3,12 @@ description: You can use DPM to back up and restore your System Center VMM datab
 ms.topic: article
 ms.service: system-center
 keywords:
-ms.date: 04/07/2025
-title: Back up and restore VMM servers
+ms.date: 11/01/2024
+title: Back up and Restore VMM Servers
 ms.subservice: data-protection-manager
 ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
@@ -18,35 +18,45 @@ ms.custom: UpdateFrequency2, engagement-fy24
 System Center Data Protection Manager (DPM) can back up the SQL Server instances that are being used as the System Center Virtual Machines Manager (VMM) database in a couple of ways:
 
 - You can do a regular SQL Server backup.
+
 - You can back up the SQL Server database using the VMM Express Writer component that appears under the VMM server in the DPM console. The main advantage to this method is that you don't need to set up any special permissions on the SQL Server.
 
 DPM can back up the VMM database using the VMM Express Writer component when VMM  is running on System Center 2012 onwards as a physical/virtual machine in the following deployment scenarios:
 
-- A standalone VMM host + standalone SQL Server (default and named, local and remote).
-- A standalone VMM host + clustered SQL Server (default and named, remote).
-- A clustered VMM host + standalone SQL Server (default and named, local and remote).
-- A clustered VMM host + clustered SQL Server (default and named, remote).
+- A standalone VMM host + standalone SQL Server (default and named, local and remote)
+
+- A standalone VMM host + clustered SQL Server (default and named, remote)
+
+- A clustered VMM host + standalone SQL Server (default and named, local and remote)
+
+- A clustered VMM host + clustered SQL Server (default and named, remote)
 
 ## Prerequisites and limitations
 
 Before setting up a DPM backup for VMM using VMM Express Writer, remember the following:
 
 - DPM only backs up the DPM SQL Server database. It doesn't back up all configuration files in the VMM library.
-- DPM supports initial replication and express full backups for VMM machines. Incremental backup isn't supported.
-- DPM can't back up the VMM database if you specified a static IP address for the SQL Server when you set up VMM. DPM also can't back up if you specified "localhost" for the database.
-- If you're using Distributed Key Management (DKM) encryption (key stored in AD), then DPM won't back up the key. You'll need to protect that as part of your AD backup. If the key is stored locally, it's backed up as part of the database.
-- In case of a failover, DPM will continue backing up when the VMM node comes back online. This allows you to perform scheduled failovers without losing protection. But if the node is lost, you've to configure the backup for the new one.
-- DPM supports recovery to the original location for VMM hosts. Recovery to an alternate location isn't supported.
 
+- DPM supports initial replication and express full backups for VMM machines. Incremental backup isn't supported.
+
+- DPM can't back up the VMM database if you specified a static IP address for the SQL Server when you set up VMM. DPM also can't back up if you specified "localhost" for the database.
+
+- If you're using Distributed Key Management (DKM) encryption (key stored in AD), then DPM won't back up the key. You'll need to protect that as part of your AD backup. If the key is stored locally, it's backed up as part of the database.
+
+- In case of a failover, DPM will continue backing up when the VMM node comes back online. This allows you to perform scheduled failovers without losing protection. But if the node is lost, you've to configure the backup for the new one.
+
+- DPM supports recovery to the original location for VMM hosts. Recovery to an alternate location isn't supported.
 
 ## Before you start
 
-Here are some considerations before you start backing up and restoring VMM servers:
+Before you start backing up and restoring VMM servers, do the following:
 
-- Review the [release notes](dpm-release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](dpm-support-issues.md).
+- Review the [release notes](dpm-release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
 - Ensure that the VMM machines you want to back up are in the DPM server domain or in a domain with a two-way trust relationship with the DPM domain.
+
 - **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
+
 - You'll need to deploy the DPM  protection agent on the VMM server. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 ## Back up VMM
@@ -66,7 +76,9 @@ To back up System Center Virtual Machines Manager, follow these steps:
 6. If you want to store data on tape for long-term storage, in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**, specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
     - When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+
     - When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also co-locate data from different protection groups on tape.
