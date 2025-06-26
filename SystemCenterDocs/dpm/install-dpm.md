@@ -20,7 +20,7 @@ Here's what you need to do to set up System Center Data Protection Manager (DPM)
 4. Set up DPM. You can [Install DPM](#BKMK_Install) from the user interface or [Run an unattended install](#BKMK_Unattend). Follow these instructions if you want to [Install DPM on a domain controller](#BKMK_DC).
 
 >[!NOTE]
->If you have volume licensing agreement, you can download the system center products from [here](/microsoft-365/commerce/licenses/download-vl-products?view=o365-worldwide).
+>If you have volume licensing agreement, you can download the System Center products from [here](/microsoft-365/commerce/licenses/download-vl-products?view=o365-worldwide).
 
 ::: moniker range="sc-dpm-2019"
 
