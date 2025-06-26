@@ -8,12 +8,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: e4531b9d-4434-4ad9-8f16-5497eb3e86e4
 caps.latest.revision: 12
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Send Syslog Message
 

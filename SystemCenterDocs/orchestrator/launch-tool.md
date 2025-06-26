@@ -7,11 +7,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 90d27667-d197-4d26-bb48-fdbeaf6e7e4b
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 11/01/2024
 ---

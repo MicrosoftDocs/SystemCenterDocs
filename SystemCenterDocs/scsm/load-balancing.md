@@ -7,7 +7,7 @@ ms.author: jsuri
 manager: jsuri
 ms.date: 11/01/2024
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 

@@ -10,9 +10,8 @@ ms.tgt_pltfrm: ""
 ms.topic: reference
 ms.assetid:
 caps.latest.revision: 12
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ---
 # Alphabetical List of Standard Activities

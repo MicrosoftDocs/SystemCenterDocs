@@ -6,7 +6,7 @@ author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
 ms.date: 12/09/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---

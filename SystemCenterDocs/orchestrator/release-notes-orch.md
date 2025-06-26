@@ -2,11 +2,10 @@
 ms.assetid: efe53e20-a7f4-4150-8d05-29819914066d
 title: Release notes for Orchestrator
 description: This article details the known issues and issues fixed in Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 05/15/2025
+ms.topic: release-notes
 ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: UpdateFrequency.5, engagement-fy23

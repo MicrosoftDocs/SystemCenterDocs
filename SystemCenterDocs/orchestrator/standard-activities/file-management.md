@@ -8,12 +8,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: d491e346-f43e-4958-85cc-169305fc471e
 caps.latest.revision: 8
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # File Management
 
