@@ -21,6 +21,9 @@ Here's what you need to do to set up System Center Data Protection Manager (DPM)
 
 ::: moniker range="sc-dpm-2019"
 
+>[!NOTE]
+>If you have volume licensing agreement, you can download the system center products from [here](/microsoft-365/commerce/licenses/download-vl-products?view=o365-worldwide).
+
 > [!NOTE]
 > With DPM 2019 UR4, a fresh installation of the Update Rollup agent might restart the protected server.
 
