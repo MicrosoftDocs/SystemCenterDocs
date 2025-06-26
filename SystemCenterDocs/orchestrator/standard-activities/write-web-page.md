@@ -3,6 +3,7 @@ title: Write Web Page
 description: This article describes the Write Web Page activity that will create or add information to an HTML file.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""

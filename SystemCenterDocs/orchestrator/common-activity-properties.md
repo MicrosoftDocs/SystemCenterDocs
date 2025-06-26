@@ -12,6 +12,7 @@ ms.assetid: 1f3f12bf-e2c2-405c-9205-8d6de6d199d2
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Common Activity Properties
 
