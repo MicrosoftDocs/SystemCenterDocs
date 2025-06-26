@@ -1,12 +1,12 @@
 ---
 description: include file to provide the information about the minimum hardware and software requirements for a full installation of Service Management Automation 2025.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 04/07/2025
+ms.date: 04/04/2022
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid:  
@@ -23,7 +23,7 @@ The following configurations should be used:
 
 |Performance component|Recommendation|
 |-------------------------|------------------|
-|Virtual machines|<ul> <li> Three, each with a runbook worker and web service installed.<li>Load-balanced incoming traffic.<li>Minimum of two cores and 4 GB of RAM for each virtual machine.<li>60 GB of available disk space. </ul>|
+|Virtual machines|Three, each with a runbook worker and web service installed<br /><br />Load-balanced incoming traffic<br /><br />Minimum of two cores and 4 GB of RAM for each virtual machine<br /><br />60 GB of available disk space|
 |SQL Server|One computer with 8 GB of RAM and eight cores **Note:** One month of data under heavy load (12 jobs per minute for a month) results in 20 GB of disk space usage. Job purging should be used to keep this usage from growing beyond this amount.|
 
 ## Software requirements
@@ -32,9 +32,9 @@ The following software must be installed for each role:
 
 |Role|Prerequisites|
 |--------|-----------------|
-|Runbook worker|<ul> <li> Windows Server 2025. <li>Windows PowerShell 4.0 or above. </ul>|
-|Automation web service|<ul> <li>Windows Server 2025.<li>Internet Information Services (IIS) 7.5 or above (hosts the web service). <li>IIS Basic Authentication. <li>IIS Windows Authentication. <li>IIS URL Authorization. <li>ASP.NET 4.5. <li>.NET Framework 3.5 (for the Setup program). <li>.NET Framework 4.5<li>WCF HTTP Activation. </ul>|
-|Windows PowerShell module|Windows PowerShell 4.0 or above.|
+|Runbook worker|Windows Server 2025 <br /><br />Windows PowerShell 4.0 or above|
+|Automation web service|Windows Server 2025<br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
+|Windows PowerShell module|Windows PowerShell 4.0 or above|
 
 **SQL version** | **Supported**
 --- | ---

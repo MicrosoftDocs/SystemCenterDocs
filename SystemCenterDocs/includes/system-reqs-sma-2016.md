@@ -1,12 +1,12 @@
 ---
 description: include file to describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation 2016.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.service:  system-center
 keywords:  
-ms.date: 04/07/2025
+ms.date: 01/22/2018
 title:  include file
 ms.subservice:  service-management-automation
 ms.assetid: 57ba1e98-2460-4a21-b083-9f77f16e4890
@@ -21,7 +21,7 @@ The following recommended configurations should be used:
 
 |Performance component|Recommendation|
 |-------------------------|------------------|
-|Virtual machines|<ul> <li>Three, each with a runbook worker and web service installed.<li>Load-balanced incoming traffic. <li>Minimum of two cores and 4 GB of RAM for each virtual machine. <li>60 GB of available disk space.|
+|Virtual machines|Three, each with a runbook worker and web service installed<br /><br />Load-balanced incoming traffic<br /><br />Minimum of two cores and 4 GB of RAM for each virtual machine<br /><br />60 GB of available disk space|
 |SQL Server|One computer with 8 GB of RAM and eight cores **Note:** One month of data under heavy load (12 jobs per minute for a month) results in 20 GB of disk space usage. Job purging should be used to keep this usage from growing beyond this amount.|
 
 ## Software requirements
@@ -29,15 +29,15 @@ The following software must be installed for each role:
 
 |Role|Prerequisites|
 |--------|-----------------|
-|Runbook worker|<ul> <li>Windows Server 2012 R2 or above. <li>Windows PowerShell 4.0 or above. </ul>|
-|Automation web service|<ul> <li>Windows Server 2012 R2 or above. <li> SQL Server 2012 SP4 (minimum). <br /> **Note**: Supports SQL 2012, 2014, and 2016 service packs that are in support by Microsoft. Here are the [supported service packs for 2012](/lifecycle/products/?terms=SQL+Server+2012), [2014](/lifecycle/products/?terms=SQL+Server+2014), and [2016](/lifecycle/products/?terms=SQL+Server+2016). <li>Internet Information Services (IIS) 7.5 or above (hosts the web service). <li>IIS Basic Authentication. <li>IIS Windows Authentication. <li>IIS URL Authorization. <li>ASP.NET 4.5. <li>.NET Framework 3.5 (for the Setup program). <li>.NET Framework 4.5. <li>WCF HTTP Activation. </ul>|
-|Windows PowerShell module|Windows PowerShell 4.0 or above.|
+|Runbook worker|Windows Server 2012 R2 or above<br /><br />Windows PowerShell 4.0 or above|
+|Automation web service|Windows Server 2012 R2 or above<br /><br /> SQL Server 2012 SP4 (minimum) <br /><br /> **Note**: Supports SQL 2012, 2014, and 2016 service packs that are in support by Microsoft. Here are the [supported service packs for 2012](/lifecycle/products/?terms=SQL+Server+2012), [2014](/lifecycle/products/?terms=SQL+Server+2014), and [2016](/lifecycle/products/?terms=SQL+Server+2016). <br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
+|Windows PowerShell module|Windows PowerShell 4.0 or above|
 
-Before installing the web service, use the following procedure to install .NET Framework 4.5 and HTTP Activation.
 
 ## Install .NET Framework 4.5 and HTTP Activation
 
-To install .NET Framework 4.5 and HTTP Activation, follow these steps:
+Before installing the web service, use the following procedure to install .NET Framework 4.5 and HTTP Activation:
+
 
 1.  On the Windows **Start** screen, select the **Server Manager** tile.
 

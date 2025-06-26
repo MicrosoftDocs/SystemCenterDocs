@@ -1,8 +1,8 @@
 ---
 description: include file to provide the information about the minimum hardware and software requirements for a full installation of Service Management Automation 2022.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.service:  system-center
 keywords:  
@@ -22,7 +22,7 @@ The following configurations should be used:
 
 |Performance component|Recommendation|
 |-------------------------|------------------|
-|Virtual machines|<ul> <li> Three, each with a runbook worker and web service installed.<li>Load-balanced incoming traffic.<li>Minimum of two cores and 4 GB of RAM for each virtual machine.<li>60 GB of available disk space. </ul>|
+|Virtual machines|Three, each with a runbook worker and web service installed<br /><br />Load-balanced incoming traffic<br /><br />Minimum of two cores and 4 GB of RAM for each virtual machine<br /><br />60 GB of available disk space|
 |SQL Server|One computer with 8 GB of RAM and eight cores **Note:** One month of data under heavy load (12 jobs per minute for a month) results in 20 GB of disk space usage. Job purging should be used to keep this usage from growing beyond this amount.|
 
 ## Software requirements
@@ -30,15 +30,14 @@ The following software must be installed for each role:
 
 |Role|Prerequisites|
 |--------|-----------------|
-|Runbook worker|<ul> <li> Windows Server 2022. <li>Windows PowerShell 4.0 or above. </ul>|
-|Automation web service|<ul> <li> Windows Server 2022.<li>Internet Information Services (IIS) 7.5 or above (hosts the web service).<li>IIS Basic Authentication.<li>IIS Windows Authentication.<li>IIS URL Authorization.<li>ASP.NET 4.5.<li>.NET Framework 3.5 (for the Setup program).<li>.NET Framework 4.5.<li>WCF HTTP Activation. </ul>|
-|Windows PowerShell module|Windows PowerShell 4.0 or above.|
+|Runbook worker|Windows Server 2022 <br /><br />Windows PowerShell 4.0 or above|
+|Automation web service|Windows Server 2022<br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
+|Windows PowerShell module|Windows PowerShell 4.0 or above|
 
 **SQL version** | **Supported**
 --- | ---
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
-
 
 Before installing the web service, ensure you've installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2022.
 

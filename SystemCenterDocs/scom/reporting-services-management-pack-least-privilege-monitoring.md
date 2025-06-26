@@ -1,11 +1,11 @@
 ---
 ms.assetid: 7820156f-399a-4bad-a7bf-98d40a76be30
-title: Least-privilege monitoring configuration in Management Pack for SQL Server Reporting Services
+title: Least-privilege Monitoring Configuration in Management Pack for SQL Server Reporting Services
 description: This article explains least-privilege monitoring configuration
 author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
-ms.date: 04/07/2025
+ms.date: 11/01/2024
 ms.topic: article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -17,7 +17,7 @@ This article explains how to configure least-privilege monitoring in Management 
 
 ## Active Directory
 
-To configure permissions in Active Directory, follow these steps:
+To configure permissions in Active Directory, perform the following steps:
 
 1. In Active Directory, create the following domain users for low-privilege access to all target SSRS instances and SQL Server instances hosting reporting database:
 
@@ -36,7 +36,7 @@ To configure permissions on the agent machines, grant local administrator permis
 
 ## SQL Server Reporting Services Instance
 
-To configure permissions on an instance of SQL Server Reporting Services, follow these steps:
+To configure permissions on an instance of SQL Server Reporting Services, perform the following steps:
 
 1. Open a web browser and connect to SSRS Report Manager.
 
@@ -52,7 +52,7 @@ To configure permissions on an instance of SQL Server Reporting Services, follow
 
 ## SQL Server Reporting Services Catalog Database
 
-To configure permissions on SQL Server Reporting Services Catalog Database, follow these steps:
+To configure permissions on SQL Server Reporting Services Catalog Database, perform the following steps:
 
 1. In SQL Server Management Studio, for the instance of SQL Server Database Engine that hosts SSRS Catalog Database, create a sign-in for **SSRSMPLowPriv**.
 
@@ -62,7 +62,7 @@ To configure permissions on SQL Server Reporting Services Catalog Database, foll
 
 ## Configure System Center Operations Manager
 
-To configure System Center Operations Manager, follow these steps:
+To configure System Center Operations Manager, perform the following steps:
 
 1. Import [Management Pack for SQL Server](sql-server-management-pack-management-pack-delivery.md) if it hasn't been imported.
 
@@ -81,7 +81,7 @@ To configure System Center Operations Manager, follow these steps:
 
 ### Permissions on System Center Operations Manager
 
-To configure permissions on System Center Operations Manager Management Server, follow these steps:
+To configure permissions on System Center Operations Manager Management Server, perform the following steps:
 
 1. Grant Local Administrator permissions to the **SSRSSDK** account.
 
