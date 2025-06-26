@@ -4,6 +4,7 @@ ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 03/03/2025
+ms.update-cycle: 180-days
 title: What can System Center Data Protection Manager back up?
 ms.subservice: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4

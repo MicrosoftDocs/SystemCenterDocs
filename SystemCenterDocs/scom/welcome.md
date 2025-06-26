@@ -5,6 +5,7 @@ description: This article is the main landing page for all content related to Sy
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: operations-manager
 ms.topic: concept-article

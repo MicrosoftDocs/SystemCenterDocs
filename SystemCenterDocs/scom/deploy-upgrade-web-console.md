@@ -5,6 +5,7 @@ description: This article describes how to upgrade a Web console to the latest r
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 monikerRange: 'sc-om-2016'
