@@ -3,15 +3,14 @@ title: Configure the Activities Toolbox
 description: You can configure the activities toolbox in the Service Manager Authoring Tool to add or remove custom activities and to personalize it.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 ms.assetid: fed6eb78-2fb6-432d-9c47-8d3502956ab4
 ---
 

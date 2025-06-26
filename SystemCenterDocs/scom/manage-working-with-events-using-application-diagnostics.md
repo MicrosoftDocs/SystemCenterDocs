@@ -1,14 +1,13 @@
 ---
 title: Working with Events by Using Application Diagnostics
 description: This article describes how to use the Application Diagnostics console to review captured application error, exceptions and troubleshoot the events.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: caf7af6f-5967-48a0-b0e5-47cb0e0314f7
 ---
 

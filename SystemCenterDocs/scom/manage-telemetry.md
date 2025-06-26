@@ -2,11 +2,10 @@
 ms.assetid: 8cfca640-efd9-450b-87cc-e1cda74cca7d
 title: Manage telemetry settings in System Center Operations Manager
 description: This article provides information about how to manage the telemetry settings in System Center Operations Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic:  article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
