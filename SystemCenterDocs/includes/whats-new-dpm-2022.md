@@ -70,7 +70,7 @@ For issues fixed and the installation instructions for UR2 refresh, see [KB ar
 
 ### Parallel online backup jobs - limit enhancement
 
-DPM 2022 UR2 supports increasing the maximum parallel online backup jobs from the default eight to a configurable limit of 20 based on your hardware and network limitations through a registry key for faster online backups. [Learn more](/azure/backup/backup-azure-microsoft-azure-backup).
+DPM 2022 UR2 supports increase in the maximum parallel online backup jobs from the default eight to a configurable limit of 20 based on your hardware and network limitations through a registry key for faster online backups. [Learn more](/azure/backup/backup-azure-microsoft-azure-backup).
 
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
