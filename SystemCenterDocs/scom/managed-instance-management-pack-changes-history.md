@@ -3,9 +3,9 @@ ms.assetid: 500910b3-e260-4673-b219-8dc24bc4f916
 title: Features and enhancements in Management Pack for Azure SQL Managed Instance
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Managed Instance.
 author: fkornilov
-ms.author: v-fkornilov
+ms.author: v-vlchernov
 manager: vvithal
-ms.date: 11/01/2024
+ms.date: 06/27/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -14,6 +14,16 @@ ms.subservice: operations-manager
 # Features and enhancements in Management Pack for Azure SQL Managed Instance
 
 This article covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
+
+## July 2025 – 7.9.4 CTP
+
+### What’s New
+
+- Replaced System.Data.SqlClient with the Microsoft.Data.SqlClient data provider for SQL Server (MDS):
+  - Actively maintained and enhanced by Microsoft.
+  - Supports the latest protocols and features, including TDS 8.0, TLS 1.3, and Always Encrypted.
+- Upgraded Microsoft SQL Server Management Objects (SMO) from version 15 to version 17, enabled by the migration to Microsoft.Data.SqlClient. This update brings numerous improvements and adds support for new SQL Server features.
+- Included minor enhancements and routine maintenance updates to improve system stability and overall reliability
 
 ## July 2024 - 7.6.0 RTM
 
