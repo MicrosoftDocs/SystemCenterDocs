@@ -4,7 +4,7 @@ ms.topic: include
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
-ms.date: 08/06/2024
+ms.date: 06/27/2025
 title: What's new in System Center DPM
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -67,6 +67,10 @@ For issues fixed and the installation instructions for UR2 refresh, see [KB ar
 
 >[!NOTE]
 >DPM 2022 UR2 has been superseded with DPM 2022 UR2 Refresh that has the same feature enhancements but fixes the known issues observed in DPM 2022 UR2. [Learn more](/system-center/dpm/dpm-release-notes?view=sc-dpm-2022#dpm-2022-ur2-release-notes&preserve-view=true).
+
+### Parallel online backup jobs - limit enhancement
+
+DPM 2022 UR2 supports increasing the maximum parallel online backup jobs from the default eight to a configurable limit of 20 based on your hardware and network limitations through a registry key for faster online backups. [Learn more](/azure/backup/backup-azure-microsoft-azure-backup).
 
 ### Support for item level recovery from online recovery for VMware and Hyper-V VMs running Windows
 
