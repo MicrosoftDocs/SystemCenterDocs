@@ -1,9 +1,8 @@
 ---
 description: This article provides information on how you can use groups to manage configuration and work items in service manager.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 03/28/2025

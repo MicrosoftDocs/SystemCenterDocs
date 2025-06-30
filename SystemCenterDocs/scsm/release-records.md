@@ -2,12 +2,11 @@
 title: Manage release records
 description: Provides an overview and describes how to manage Service Manager release records.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: how-to
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

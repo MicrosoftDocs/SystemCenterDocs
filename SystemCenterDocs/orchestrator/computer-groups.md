@@ -4,10 +4,11 @@ description: This article provides information on how to configure the activitie
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/09/2025
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency3
 ---
 # Computer groups

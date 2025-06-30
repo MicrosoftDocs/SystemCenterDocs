@@ -1,11 +1,12 @@
 ---
 title: Deploy System Center Service Provider Foundation (SPF)
 description: This article describes how to install and deploy System Center Service Provider Foundation (SPF)
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/09/2025
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 08/07/2023
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
@@ -63,4 +64,5 @@ If installation fails, refer to the log files: `Microsoft Service Provider*.logâ
 
 ## Next steps
 
-[Manage SPF](manage-register-spf.md).
+- [Manage SPF](manage-register-spf.md)
+- [Manage SPF](manage-register-spf.md)
