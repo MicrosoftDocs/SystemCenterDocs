@@ -1,9 +1,9 @@
 ---
 ms.assetid: 2e2323c5-6ec6-4fd2-bec5-70537d328fbe
-title: Set up a virtual network in SDN in the VMM fabric
+title: Set up a Virtual Network in SDN in the VMM Fabric
 description: This article describes the procedure on how to create a VM network in SDN, using a VMM.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.date: 04/08/2025
 ms.topic: article
@@ -33,16 +33,16 @@ The following two types of isolation settings are supported in SDN fabric:
 
 - **Network virtualization**: If a logical network is isolated using network virtualization, you can create multiple VM networks for this logical network. Within a VM network, tenants can use any IP addresses regardless of the IP addresses used on other VM networks. As a service provider, you can host workloads from multiple tenants on a single logical network. Tenants can also configure network connections on these VM networks.
 
-- **No Isolation**: If a logical network has no isolation, then only a single VM network can be associated with it. As a service provider, you can host infrastructure workloads using this type of isolation settings.
+- **No Isolation**:  If a logical network has no isolation, then only a single VM network can be associated with it. As a service provider, you can host infrastructure workloads using this type of isolation settings.
 
 >[!NOTE]
 > VLAN isolation is not supported in SDN fabric.
 
 ## Before you start
 
- Here are some considerations before you start setting up VM networks in SDN using VMM:
+ Here are some considerations before you set up VM networks in SDN using VMM:
 
-- Network controller is deployed in the SDN fabric [Learn more](sdn-controller.md).
+- Network controller is deployed in the SDN fabric. [Learn more](sdn-controller.md).
 
 - A logical network with appropriate isolation settings is created and is set to be managed by the Microsoft network controller. Also, create the IP pools for this logical network.
 
@@ -71,9 +71,9 @@ To create a VM network, follow these steps:
 5. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
    >[!NOTE]
-   > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the below settings in the **Connectivity** page.
+   > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
 
-   To configure the settings in the Connectivity page, follow these steps:
+
 
    - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option.  Select the **VPN gateway device** that you want to use and confirm the settings.
 
@@ -114,9 +114,9 @@ To create a VM network, follow these steps:
 6. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
    >[!NOTE]
-   > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the below settings in the **Connectivity** page.
+   > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
 
-   To configure the settings in the Connectivity page, follow these steps:
+
 
    - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option. Select the **VPN gateway device** that you want to use and confirm the settings.
 
@@ -136,7 +136,7 @@ Once the job is completed successfully, you can view the newly created VM networ
 ## Create a VM network (no isolation)
 
 > [!NOTE]
-> While creating the logical network, if you have chosen the option **Create VM network with same name to allow virtual machines to access this logical network directly**, then you can skip the below steps.
+> While creating the logical network, if you have chosen the option **Create VM network with same name to allow virtual machines to access this logical network directly**, then you can skip the following steps.
 
 To create a VM network, follow these steps:
 

@@ -1,9 +1,9 @@
 ---
 ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
-title: Set up an SDN RAS gateway in the VMM fabric
+title: Set up an SDN RAS Gateway in the VMM Fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.date: 04/08/2025
 ms.topic: article
@@ -35,7 +35,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 ## Before you start
 
-Here are some considerations before you start setting up an SDN RAS gateway:
+Here are some considerations before you set up an SDN RAS gateway:
 
 - **Planning**: Read about planning a software defined network, and review the planning topology in [this](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM) and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You must deploy the network controller before you deploy the RAS gateway.
@@ -332,8 +332,9 @@ For more information on connection types, see [this](/windows-server/networking/
 
 
 ## Set up the traffic selector from PowerShell
+Here's the procedure to set up the traffic selector by using the VMM PowerShell.
 
-To set up the traffic selector by using the VMM PowerShell, follow these steps:
+To set up the traffic selector, follow these steps:
 
 1. Create the traffic selector by using the following parameters.
 

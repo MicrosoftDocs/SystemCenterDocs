@@ -1,9 +1,9 @@
 ---
-title: Register source systems to the System Center data warehouse
+title: Register Source Systems to the System Center Data Warehouse
 description: Describes how you can register source systems to the System Center data warehouse and troubleshoot common problems in Service Manager.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.service: system-center
 keywords:
@@ -64,7 +64,7 @@ To register the data warehouse to Operations Manager, follow these steps:
 
 ### Validate the Operations Manager registration process
 
-In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
+- In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
 
 ## [Register the System Center data warehouse to Configuration Manager](#tab/register-the-system-center-data-warehouse-to-configuration-manager)
 
@@ -144,7 +144,7 @@ To register the data warehouse with another Service Manager management group, fo
 
 ### Validate the  Service Manager registration process
 
-In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
+- In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
 
 ---
 
@@ -152,11 +152,11 @@ In the **Data Sources** view, the new data source appears in the list of data so
 
 You can use the following procedure to manage data warehouse data import jobs in Service Manager. Data import jobs are like other data warehouse jobs, and you can manage them with the Service Manager console and also with Windows PowerShell cmdlets. Methods of management include:
 
-- Revising the processing schedule to hourly, daily, or weekly.
+- Revising the processing schedule to hourly, daily, or weekly
 
-- Suspending a job.
+- Suspending a job
 
-- Resuming a suspended, or Not Started job.
+- Resuming a suspended, or Not Started, job
 
 ### Manage data import jobs and change a job schedule
 
@@ -180,11 +180,11 @@ Service Manager event logs are found in the Operations Manager event log. Evalua
 
 Events with a source of **Deployment** are generated during management pack deployment, which includes report deployment or assembling the data warehouse; for example, by creating outriggers, dimensions, and fact tables. Errors in the event log include instructions about how to recover from the errors. For example, you might read instructions suggesting that you stop and then restart the Service Manager services. The three services on a data warehouse management server are:
 
-- System Center Data Access Service.
+- System Center Data Access Service
 
-- Microsoft Monitoring Agent.
+- Microsoft Monitoring Agent
 
-- System Center Management Configuration.
+- System Center Management Configuration
 
 When you start and stop Service Manager services, you must stop and start all three services.
 
@@ -211,8 +211,6 @@ The Windows PowerShell cmdlets in the following table provide detailed informati
 |Get-SCDWJob -JobName *Specific job name* -NumberOfBatches *number* |Use this command to see the latest job, specified by *Specific job name*, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
 |Get-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is useful when you see job failures and you want to find out what caused the failure.|
 
----
-
 ### Troubleshoot common data warehouse issues
 
 This list isn't exhaustive, but it covers most of the common problems that you're likely to encounter.
@@ -229,7 +227,7 @@ Other aspects of the data warehouse deployment might appear to have gone smoothl
 
 To troubleshoot this problem, follow these steps:
 
-1. Check the deployment status of your management packs. To check the deployment status, do the following:
+Step 1: Check the deployment status of your management packs:
 
     1. In the Service Manager console, select **Data Warehouse**.
 
@@ -247,9 +245,9 @@ To troubleshoot this problem, follow these steps:
 
        - ServiceManager.ChangeManagement.Report.Library
 
-2. Check the event log for error messages that mention the assembly Microsoft.EnterpriseManagement.Reporting.Code.dll file.
+Step 2: Check the event log for error messages that mention the assembly Microsoft.EnterpriseManagement.Reporting.Code.dll file.
 
-    If any of the above five management packs failed deployment, do the following:
+If any of the above five management packs failed deployment:
 
     1. On the data warehouse management server, open the Operations Manager event log.
 
@@ -273,7 +271,7 @@ To troubleshoot this problem, follow these steps:
 
     5. Select **Exit**.
 
-3. Redeploy any failed report management packs. To redeploy packs, do the following:
+Step 3: Redeploy any failed report management packs:
 
     1. In the Service Manager console, select **Data Warehouse**.
 
@@ -284,7 +282,7 @@ To troubleshoot this problem, follow these steps:
     > [!NOTE]
     > If the deployment status of a management pack is listed as **Completed**, the **Restart Deployment** option is unavailable.
 
-    After the deployment status of the report management packs has updated from **Failed** to **Completed**, open the Service Manager console. Reports should display in the **Reporting** workspace. You may have to restart the Service Manager console to view the reports because the console caches the list of reports.
+After the deployment status of the report management packs has updated from **Failed** to **Completed**, open the Service Manager console. Reports should display in the **Reporting** workspace. You may have to restart the Service Manager console to view the reports because the console caches the list of reports.
 
 #### Jobs fail after importing a custom management pack
 
@@ -446,4 +444,4 @@ If the job failure isn't related to the password, ensure that the Run As account
 
 ## Next steps
 
-[Troubleshoot computer problems with tasks](troubleshoot-with-tasks.md).
+- [Troubleshoot computer problems with tasks](troubleshoot-with-tasks.md).

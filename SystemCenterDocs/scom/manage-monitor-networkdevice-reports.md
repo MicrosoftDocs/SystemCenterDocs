@@ -1,8 +1,8 @@
 ---
 title: Reports for Network Monitoring in Operations Manager
 description: This article summarizes the default reports for network devices included with Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.date: 04/08/2025
 ms.custom: UpdateFrequency3, engagement-fy24
@@ -21,23 +21,19 @@ System Center - Operations Manager provides the reports described in the followi
 > [!NOTE]  
 > When you first install Operations Manager, it may take several minutes for all report libraries to appear in **Reporting**. 
 
-## Reports
-
-These reports display the following information:
-
 |Report|Description|  
 |----------|---------------|
-|Processor Utilization report |The processor utilization of a particular network device over a period of time.|
-|Memory Utilization report |The percentage of free memory on a particular network device over a period of time.|  
-|Interface Traffic Volume report |The rate of inbound and outbound traffic that goes through the selected port or interface over time.|
-|Interface Error Packet Analysis report |The percentage of error packets or discarded packets, both inbound and outbound, for the selected port or interface.|
-|Interface Packet Analysis report |The types of packets (unicast or nonunicast) that traverse the selected port or interface.|
-|Custom Performance report |The performance counter values.|
-|Port Traffic Volume report |The rate of inbound and outbound traffic that goes through the selected port or interface over time.|
-|Port Packet Analysis report |The types of packets (unicast or nonunicast) that traverse the selected port or interface.|
-|Port Error Packet Analysis report |The types of error packets that traverse the selected port or interface.|
-|Processor Utilization report |The process utilization of a particular network device over a period of time.|
-|Memory Utilization report |The percentage of free memory on a particular network device over a period of time.|  
+|Processor Utilization report |This report displays the processor utilization of a particular network device over a period of time.|
+|Memory Utilization report |This report displays the percentage of free memory on a particular network device over a period of time.|  
+|Interface Traffic Volume report |This report displays the rate of inbound and outbound traffic that goes through the selected port or interface over time.|
+|Interface Error Packet Analysis report |This report displays the percentage of error packets or discarded packets, both inbound and outbound, for the selected port or interface.|
+|Interface Packet Analysis report |This report displays the types of packets (unicast or nonunicast) that traverse the selected port or interface.|
+|Custom Performance report |This report displays performance counter values.|
+|Port Traffic Volume report |This report displays the rate of inbound and outbound traffic that goes through the selected port or interface over time.|
+|Port Packet Analysis report |This report displays the types of packets (unicast or nonunicast) that traverse the selected port or interface.|
+|Port Error Packet Analysis report |This report displays the types of error packets that traverse the selected port or interface.|
+|Processor Utilization report |This report displays the process utilization of a particular network device over a period of time.|
+|Memory Utilization report |This report displays the percentage of free memory on a particular network device over a period of time.|    
 
 ## Next steps
 

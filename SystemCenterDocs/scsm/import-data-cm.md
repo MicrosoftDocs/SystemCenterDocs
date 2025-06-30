@@ -1,9 +1,9 @@
 ---
-title: Import data from Configuration Manager
+title: Import Data from Configuration Manager
 description: Describes how to import data from Configuration Manager into Service Manager.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
+author: jyothisuri
+ms.author: jsuri
 manager: jsuri
 ms.service: system-center
 keywords:
@@ -45,9 +45,9 @@ You can configure the Configuration Manager connector to update the Service Mana
 
 ## Extended hardware inventory with Configuration Manager
 
-In Configuration Manager, you can extend the hardware inventory by collecting an inventory of additional Windows Management Instrumentation (WMI) classes, additional WMI class attributes, registry keys, and other customizations to accommodate your organization's requirements. For more information about extending the hardware inventory in Configuration Manager, see [Extend Hardware Inventory](/mem/configmgr/core/clients/manage/inventory/extend-hardware-inventory).
+In Configuration Manager, you can extend the hardware inventory by collecting an inventory of additional Windows Management Instrumentation (WMI) classes, additional WMI class attributes, registry keys, and other customizations to accommodate your organization's requirements. For more information about extending the hardware inventory in Configuration Manager, see [How to Extend Hardware Inventory](/mem/configmgr/core/clients/manage/inventory/extend-hardware-inventory).
 
-If you've extended the hardware inventory in Configuration Manager, you must create a new Configuration Manager Connector management pack in Service Manager to collect the extended hardware inventory. This new management pack can contain only the information required to collect the extended hardware inventory from Configuration Manager, or it can consist of everything from the original Configuration Manager Connector management pack plus the new extended hardware inventory. For information about creating a new connector management pack, see [Configure a Configuration Manager Connector for an Extended SMS_def.mof File](#configure-a-configuration-manager-connector-for-an-extended-sms_defmof-file).
+If you've extended the hardware inventory in Configuration Manager, you must create a new Configuration Manager Connector management pack in Service Manager to collect the extended hardware inventory. This new management pack can contain only the information required to collect the extended hardware inventory from Configuration Manager, or it can consist of everything from the original Configuration Manager Connector management pack plus the new extended hardware inventory. For information about creating a new connector management pack, see [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File](#configure-a-configuration-manager-connector-for-an-extended-sms_defmof-file).
 
 ## Import software configuration items
 
@@ -117,7 +117,7 @@ To validate the creation of a Configuration Manager connector, follow these step
 
 ### Confirm the status of a Configuration Manager connector
 
-View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
+- View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
 
 ![PowerShell symbol](./media/import-data-cm/pssymbol.png) You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New-SCCMConnector](/previous-versions/system-center/powershell/system-center-2012-r2/hh316198(v=sc.20)).
 
