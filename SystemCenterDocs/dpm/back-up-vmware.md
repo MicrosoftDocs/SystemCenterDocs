@@ -3,7 +3,7 @@ description: Use DPM to back up and restore VMware VMs.
 ms.topic: how-to
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 06/27/2025
 title: Back up and restore VMware Virtual Machines
 ms.subservice: data-protection-manager
 ms.assetid:
@@ -540,8 +540,10 @@ You can restore individual files from a protected VM recovery point. This featur
 Application consistent backups for VMware VMs running Windows can fail with **ApplicationQuiesceFault** error if the VSS providers in the VM aren't in a stable state or if the VM is under heavy load. If you encounter this quiescing error, use the following registry key on the DPM server running 2022 UR2 or later to retry the failed application consistent backup with a crash consistent backup.
 
 ```
-Name - FailbackToCrashConsistentBackup DWORD = 1
-Path- SOFTWARE\\MICROSOFT\\MICROSOFT DATA PROTECTION MANAGER\\VMWare
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\MICROSOFT DATA PROTECTION MANAGER\VMWare]
+"SystemDefaultTlsVersions"=dword:00000001
 ```
 
 ::: moniker-end
