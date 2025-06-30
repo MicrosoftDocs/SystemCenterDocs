@@ -21,7 +21,7 @@ The data warehouse in Service Manager retrieves data from one or more data sourc
 
 Registering the data warehouse creates a relationship between the data warehouse server and the source system so that information can flow between them. In Service Manager, you can register to Service Manager, Operations Manager, and Configuration Manager directly. You can also use the updated software development kit (SDK) layer on top of the data warehouse, which enables you to push data into the data warehouse directly from other sources. For example, you might want to push data from your Human Resources computer system into the data warehouse.
 
-## [Register the System Center data warehouse to Operations Manager](#tab/register-the-system-center-data-warehouse-to-operations-manager)
+## Register the System Center data warehouse to Operations Manager
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse to Operations Manager and then validate the registration.
 
@@ -66,7 +66,7 @@ To register the data warehouse to Operations Manager, follow these steps:
 
 - In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
 
-## [Register the System Center data warehouse to Configuration Manager](#tab/register-the-system-center-data-warehouse-to-configuration-manager)
+## Register the System Center data warehouse to Configuration Manager
 
 You can use the following steps in Service Manager to register Configuration Manager with the System Center Data Warehouse and then validate the registration.
 
@@ -107,7 +107,7 @@ To register Configuration Manager with the data warehouse, follow these steps:
 
 - In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Configuration Manager**. You might have to refresh your view to see the new data source.
 
-## [Register the System Center data warehouse to a Service Manager source](#tab/register-the-system-center-data-warehouse-to-a-service-manager-source)
+## Register the System Center data warehouse to a Service Manager source
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse with a Service Manager management group and then validate the registration. This makes it possible to host multiple Service Manager management groups in a single data warehouse.
 
@@ -146,8 +146,6 @@ To register the data warehouse with another Service Manager management group, fo
 
 - In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
 
----
-
 ## Manage data import jobs for Operations Manager and Configuration Manager
 
 You can use the following procedure to manage data warehouse data import jobs in Service Manager. Data import jobs are like other data warehouse jobs, and you can manage them with the Service Manager console and also with Windows PowerShell cmdlets. Methods of management include:
@@ -174,7 +172,7 @@ To manage data import jobs and change a job schedule, follow these steps:
 
 This section describes steps you can take to troubleshoot System Center data warehouse errors in Service Manager.
 
-### [Use the Operations Manager event log on the Data Warehouse server to troubleshoot errors](#tab/use-the-operations-manager-event-log-on-the-data-warehouse-server-to-troubleshoot-errors)
+### Use the Operations Manager event log on the Data Warehouse server to troubleshoot errors
 
 Service Manager event logs are found in the Operations Manager event log. Evaluating events in the log is useful because most errors from the data warehouse are found in this event log. Events in the log are from two different sources: Deployment and Data Warehouse.
 
@@ -189,8 +187,7 @@ Events with a source of **Deployment** are generated during management pack depl
 When you start and stop Service Manager services, you must stop and start all three services.
 
 After the data warehouse is deployed, events are more likely to have a source of **Data Warehouse**. These events are created by jobs within the normal course of operations like extract, transform, and load (ETL) jobs; the MPSync job; and the DWMaintenance job.
-
-### [Use the Service Manager console to troubleshoot errors](#tab/use-the-service-manager-console-to-troubleshoot-errors)
+Use the Service Manager console to troubleshoot errors
 
 In the Service Manager console, select **Data Warehouse Jobs** and you will see ETL job and MPSync job status. If your deployment was successful and your data warehouse is correctly registered to at least one Service Manager management group, you see at least five jobs. Every job should have the status **Running** or **Not Started**.
 
