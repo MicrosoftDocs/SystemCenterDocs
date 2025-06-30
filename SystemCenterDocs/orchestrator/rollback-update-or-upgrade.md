@@ -7,11 +7,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.assetid: a4c09c8f-5c17-4603-97fb-1d8b1e577ef7
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 monikerRange: '<=sc-orch-2019'
 ms.date: 11/01/2024

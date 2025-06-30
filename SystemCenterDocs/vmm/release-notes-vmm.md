@@ -2,11 +2,10 @@
 ms.assetid: 1597330b-2d0a-4259-a156-60aefeb5614e
 title: Release notes for Virtual Machine Manager
 description: This article details the known issues and issues fixed in Virtual Machine Manager
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+author: jyothisuri
+ms.author: jsuri
+ms.date: 06/03/2025
+ms.topic: release-notes
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, engagement-fy24
@@ -24,9 +23,9 @@ For new features in VMM 2025, see [What's new](whats-new-in-vmm.md).
 
 ::: moniker range="sc-vmm-2022"
 
-Virtual Machine Manager (VMM) 2022 doesn't have any known issues.
+This article lists the release notes for System Center 2022 - Virtual Machine Manager (VMM).
 
-For new features in VMM  2022, see [What's new](whats-new-in-vmm.md).
+[!INCLUDE [release-notes-vmm-2022.md](../includes/release-notes-vmm-2022.md)]
 
 ::: moniker-end
 

@@ -8,11 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 1e5f6075-259b-426b-97c9-a934d155f665
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Get Mailbox

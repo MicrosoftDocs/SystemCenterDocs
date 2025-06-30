@@ -8,11 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 7b6d6bc5-6de0-4207-9f5e-b5405913f293
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 ---
 # Upload attachment to SharePoint

@@ -8,11 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: d79a77be-37ae-4831-b7f9-42f2528c589f
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ROBOTS: noindex
 ---
 

@@ -2,9 +2,8 @@
 ms.assetid: c80cb318-ae9a-4034-85e5-9d7bc56506b7
 description: include file to summarize the release notes for System Center 2019 - Service Management Automation
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 ms.subservice: service-management-automation
 keywords:

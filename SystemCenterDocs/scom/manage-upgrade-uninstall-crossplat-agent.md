@@ -2,14 +2,13 @@
 ms.assetid: 58ebecd6-7f88-43bb-988b-6fdca37bf742
 title: Upgrading and Uninstalling Agents on UNIX and Linux Computers
 description: This article describes how to upgrade and uninstall the Operations Manager agent from UNIX and Linux computers.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Upgrading and uninstalling agents on UNIX and Linux computers

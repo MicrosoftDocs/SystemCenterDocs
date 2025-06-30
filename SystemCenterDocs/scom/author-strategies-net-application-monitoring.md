@@ -2,14 +2,14 @@
 ms.assetid: 77b54fbe-b6c3-4934-8b42-c89c08e3ccfd
 title: Author strategies for .NET application monitoring
 description: This article provides an overview about authoring strategies for .NET application monitoring.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
+
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Author strategies for .NET application monitoring

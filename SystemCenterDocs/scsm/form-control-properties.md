@@ -3,15 +3,14 @@ title: Form control properties
 description: Provides a reference for form control properties in the Service Manager Authoring Tool.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 7d62ce9b-fd6d-4521-932d-f2ede5920955
 ---
 

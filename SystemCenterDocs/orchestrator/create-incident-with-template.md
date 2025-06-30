@@ -8,11 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 02bcec02-12cc-4dd1-858c-beecbb7cbd3c
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 ---
 # Create Incident with Template

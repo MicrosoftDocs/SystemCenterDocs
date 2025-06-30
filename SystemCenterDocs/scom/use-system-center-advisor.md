@@ -2,14 +2,13 @@
 ms.assetid: d080e947-1fb9-4647-99a3-6449f39676e6
 title: Use System Center Advisor to Proactively Monitor Cloud Fabric in System Center Operations Manager
 description: This article provides an overview of using system center advisor to proactively monitor cloud fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Monitor cloud fabric using System Center Advisor
