@@ -88,7 +88,7 @@ DPM 2022 UR2 supports protection of VMware VMs running on vSphere 8.0. 
 DPM 2022 UR2 supports Windows and Basic SMTP authentication to send reports and alerts via email. [Learn more](../dpm/monitor-dpm.md).
 
 >[!NOTE]
->If you have been using M365 SMTP with DPM 2022 UR1, you must re-enter the credentials using Basic Authentication.  
+>If you have been using Microsoft 365 SMTP with DPM 2022 UR1, you must re-enter the credentials using Basic Authentication.  
 
 ### Fallback to crash consistent backups for VMware VMs  
 
