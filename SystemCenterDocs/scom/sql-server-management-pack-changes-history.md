@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: epomortseva
 ms.author: v-vlchernov
 manager: evansma
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
@@ -15,7 +15,7 @@ ms.subservice: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## July 2025 – 7.9.12 CTP
+## July 2025 – 7.10.6 RTM
 
 ### What’s New
 
@@ -26,6 +26,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Upgraded Microsoft SQL Server Management Objects (SMO) from version 15 to version 17, enabled by the migration to Microsoft.Data.SqlClient. This update brings numerous improvements and adds support for new SQL Server features.
 - Added an "Only Running Jobs" override to the Job Duration monitor. This setting allows the monitor to measure either all jobs or only those currently running.
 - Updated display strings.
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
 ### Bug Fixes
 
