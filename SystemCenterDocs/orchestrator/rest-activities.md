@@ -1,5 +1,5 @@
 ---
-title: REST activities
+title: REST Activities
 description: The following configuration instructions apply to all activities in this integration pack. It lists event notifications.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 04/09/2025
@@ -10,12 +10,10 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8dfe35b3-d3bf-4b34-889d-703b51672ca0
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 robots: noindex
 ---
-
 # REST activities
 
 The following configuration instructions apply to all the activities in this integration pack. Links to this section are included in the configuration instructions for each activity.

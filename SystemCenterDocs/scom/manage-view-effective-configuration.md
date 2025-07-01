@@ -1,9 +1,8 @@
 ---
 title: View Configuration of a Monitored Object
-description: This article describes how to view the effective configuration of a monitored object in the Operations Manager HTLM5 Web console.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+description: This article describes how to view the effective configuration of a monitored object in the Operations Manager HTML5 Web console.
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/09/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
@@ -13,7 +12,7 @@ ms.subservice: operations-manager
 ms.topic: article
 ---
 
-# View the effective configuration of a monitored object
+# View effective configuration of a monitored object
 
  In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.
 

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 876c7d8c-0b45-4cb2-b3c0-d8748603875a
-title: Views and dashboards in Management Pack for SQL Server
+title: Views and Dashboards in Management Pack for SQL Server
 description: This article explains views and dashboards in Management Pack for SQL Server
 author: Anastas1ya
 ms.author: v-fkornilov
@@ -16,8 +16,6 @@ ms.subservice: operations-manager
 Management Pack for SQL Server introduces the following version-independent views and dashboards.
 
 ![Screenshot showing Generic views and dashboards.](./media/sql-server-management-pack/version-independent-views.png)
-
-## View and Dashboard
 
 The **Computers** view displays computers on which agents are installed and management pack discovery is running. This view doesn't display computers configured for [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode).
 
