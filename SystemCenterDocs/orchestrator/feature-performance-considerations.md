@@ -1,13 +1,12 @@
 ---
-title: Feature performance considerations
+title: Feature Performance Considerations
 description: Provides performance guidance for System Center - Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/09/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ---
 
@@ -16,7 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 
 Despite the great deal of variance in their design and visual complexity, runbooks are simple. Runbooks essentially do three things: Run activities, manage published data, and branch.  
 
-## Orchestrator feature functions
+## Orchestrator Feature Functions
 
 Additionally, runbook activities can be thought of as having two distinct types of code: Platform code and domain code. The term *domain code* is used to identify code called within a runbook activity typically not associated with the Orchestrator product itself. For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code (the **plumbing** of the activity) and domain code unique to invoking a web service. The platform code will be unique but similar for most activities, since it's built from a common framework. However, there will potentially be great variation in domain code for different activities.  
 

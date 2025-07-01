@@ -11,7 +11,7 @@ ms.service: system-center
 ms.subservice: operations-manager
 ---
 
-# Introduction to Management Pack for SQL Server dashboards
+# Introduction to Management Pack for SQL Server Dashboards
 
 Microsoft SQL Server Dashboards Management Pack provides the ability to create and customize visualization on the fly.
 
@@ -21,7 +21,7 @@ There are two views in SQL Server Dashboards:
 
 - **Instance**- Provides detailed information about the selected object.
 
-## Supported configurations
+## Supported Configurations
 
 This management pack is designed for the following versions of System Center Operations Manager:
 

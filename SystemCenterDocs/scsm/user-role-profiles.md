@@ -1,12 +1,11 @@
 ---
-title: User role profiles in Service Manager
+title: User Role Profiles in Service Manager
 description: Learn about the scope and properties of user role profiles in Service Manager.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
-ms.date: 11/01/2024
+ms.date: 04/09/2025
 ms.subservice: service-manager
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
@@ -167,7 +166,7 @@ ServiceOfferingRelatesToRequestOffering &gt; RequestOffering
 
 The following are implied permissions for Service Manager:
 
-### [ImpliedIncidentAffectedUser](#tab/impliedincidentaffecteduser)
+### ImpliedIncidentAffectedUser
 
 The permissions for the implied Affected User profile are granted through the WorkItemAffectedUser relationship.
 
@@ -178,7 +177,7 @@ The permissions for the implied Affected User profile are granted through the Wo
 |Update|Work items that the user is affected by:<br /><br />-   Incident<br />-   Service request<br />-   Work item log<br />-   File attachment|All properties of an incident or service request instance.|Incident instance BillableTimeHasWorkingUser->User.|
 |Delete|Work item that the user is affected by -  File attachment|File attachment for an incident or service request instance.|File attachment for an incident or service request instance.|
 
-### [ImpliedReviewer](#tab/impliedreviewer)
+### ImpliedReviewer
 
 The permissions for the implied Review Activity Reviewer profile are granted through the ReviewerIsUser relationship.
 
@@ -189,7 +188,7 @@ The permissions for the implied Review Activity Reviewer profile are granted thr
 |Update|None|Reviewer instances:<br /><br />-   Reviewer.Comments<br />-   Reviewer.DecisionDate<br />-   Reviewer.Decision|Reviewer Instances:<br /><br />-   ReviewerVotedByUser->User<br />-   ReviewerVotedByUser->Reviewer|
 |Delete|None|None|None|
 
-### [ImpliedActivityEditor](#tab/impliedactivityeditor)
+### ImpliedActivityEditor
 
 The permissions for the implied Assigned To User profile are granted through the WorkItemAssignedToUser relationship.
 
@@ -200,7 +199,7 @@ The permissions for the implied Assigned To User profile are granted through the
 |Update|Work item instances that the user is assigned to: Activity|All properties of an activity and the work item instances.|All Activity instances that are related to the work item Instance.|
 |Delete|None|None|None|
 
-### [ImpliedConfigItemCustodian](#tab/impliedconfigitemcustodian)
+### ImpliedConfigItemCustodian
 
 The permissions for the implied **CI Owner** profile are granted through the **ConfigItemOwnedByUser** relationship.
 
@@ -211,7 +210,7 @@ The permissions for the implied **CI Owner** profile are granted through the **C
 |Update|None|None|Configuration item Instance - WorkItemAboutConfigItem|
 |Delete|None|None|None|
 
-### [ImpliedPrimaryComputerUser](#tab/impliedprimarycomputeruser)
+### ImpliedPrimaryComputerUser
 
 The permissions for the implied CI Primary User profile are granted through the ComputerPrimaryUser relationship.
 
@@ -221,5 +220,3 @@ The permissions for the implied CI Primary User profile are granted through the 
 |Create|None|None|None|
 |Update|None|None|None|
 |Delete|None|None|None|
-
----

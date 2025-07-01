@@ -1,13 +1,12 @@
 ---
-title: Implement disaster recovery
+title: Implement Disaster Recovery
 description: Describes the steps needed to recover from potential software and equipment failures in your Service Manager environment.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/09/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: how-to
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 
@@ -32,7 +31,7 @@ This section describes how to recover a Service Manager management server or a d
 
 For either management server, your first step must be to restore the encryption key *before* you start the management server setup.  
 
-### [Restore the Service Manager encryption key](#tab/restore-the-service-manager-encryption-key)
+### Restore the Service Manager encryption key
 
 You can use the following procedure to restore the encryption keys before you run Setup.exe to restore a part of Service Manager.  
 
@@ -50,12 +49,12 @@ To restore the encryption key, follow these steps:
 7. On the **Provide a Password** page, enter the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, reenter the same password, and select **Next**.  
 8. After you receive the message **Secure Storage Key Restore Complete**, select **Finish**.
 
-### [Restore the server](#tab/restore-the-server)
+### Restore the server
 
 > [!NOTE]  
 > You must restore the encryption key before starting this procedure.  
 
-To reinstall a management server in Service Manager, follow these steps:
+To restore a Service Manager management server, follow these steps:
 
 1. Sign in to the computer that will host the new Service Manager management server using an account that has administrator rights.  
 2. On the Service Manager installation media, double\-click the **Setup.exe** file.  
@@ -72,8 +71,6 @@ To reinstall a management server in Service Manager, follow these steps:
 10. On the **Help improve System Center** page, indicate your preference for participation in both the Customer Experience Improvement Program and Error Reporting. For more information, select **Tell me more about the program**, and select **Next**.  
 11. On the **Installation summary** page, select **Install**.  
 12. On the **Setup completed successfully** page, select **Close**.
-
----
 
 ## Recover a data warehouse management server
 
@@ -113,7 +110,7 @@ When you first ran Setup for Service Manager, you installed the initial Service 
 
 You can use the following procedures to promote a secondary Service Manager management server.  
 
-#### [Prepare the secondary management server](#tab/prepare-the-secondary-management-server)
+#### Prepare the secondary management server
 
 To prepare the secondary management server, follow these steps:
 
@@ -128,7 +125,7 @@ To prepare the secondary management server, follow these steps:
 6. Open Windows Explorer. Locate the folder \\Program Files\\Microsoft System Center \<version\>\\Service Manager.  
 7. In this folder, delete the Health Service State folder and all of its contents.  
 
-#### [Define the computer name for the Service Manager database](#tab/define-the-computer-name-for-the-service-manager-database)
+#### Define the computer name for the Service Manager database
 
 To define the computer name for the Service Manager database, follow these steps:
 
@@ -149,7 +146,7 @@ To define the computer name for the Service Manager database, follow these steps
 7. At the bottom of the **SQLQuery1.sql** pane \(the center pane\), confirm that the "Query executed successfully" message appears.  
 8. Exit Microsoft SQL&nbsp;Server Management Studio.  
 
-#### [Restart the services on the secondary management server](#tab/restart-the-services-on-the-secondary-management-server)  
+#### Restart the services on the secondary management server
 
 To restart the services on the secondary management server, follow these steps:
 
@@ -161,8 +158,6 @@ To restart the services on the secondary management server, follow these steps:
     - System Center Management Configuration  
 
 Your secondary management server is now the primary management server for the management group.
-
----
 
 ## Import Service Manager unsealed management packs
 

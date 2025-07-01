@@ -1,11 +1,10 @@
 ---
 title: Deploy System Center Service Provider Foundation (SPF)
 description: This article describes how to install and deploy System Center Service Provider Foundation (SPF)
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/09/2025
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, intro-deployment, engagement-fy24
@@ -21,7 +20,7 @@ SPF is part of System Center - Orchestrator. SPF exposes an extensible OData web
 
 ## Before you start
 
-Here are some considerations before you start deploying SPF:
+Here are some considerations before you deploy SPF:
 
 - Read the [planning article](plan-spf.md) to ensure deployment prerequisites are in place.
 - You can install SPF on a single server or on multiple servers.

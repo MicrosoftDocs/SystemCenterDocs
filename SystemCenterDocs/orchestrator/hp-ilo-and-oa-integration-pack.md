@@ -7,11 +7,10 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 79e741ff-5d02-4255-8efc-19926247c1c0
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/09/2025
 ---
@@ -92,11 +91,11 @@ To set up an HP iLO and OA connection, follow these steps:
 11. Select **OK** to close the configuration dialog.
 12. Select the connection and select the **Test** button. **Test connection succeeded** will appear when the connection is valid. Select **Finish**.
 
-## Export and import connections
+## Export and Import Connections
 
 Connections can be exported and imported into the connections list.
 
-### [Export a connection](#tab/export-a-connection)
+### Export a connection
 
 To export a connection, follow these steps:
 
@@ -106,7 +105,7 @@ To export a connection, follow these steps:
 4. Select **Save** to export.
 5. Select **OK** to close the configuration dialog and select **Finish**.
 
-### [Import a connection](#tab/import-a-connection)
+### Import a connection
 
 To import a connection, follow these steps:
 
@@ -116,13 +115,11 @@ To import a connection, follow these steps:
 4. Select **Open** to import.
 5. Select **OK** to close the configuration dialog and select **Finish**.
 
----
-
-## Configure the HP iLO and OA groups
+## Configure the HP iLO and OA Groups
 
 A group establishes a reusable list of connections between Orchestrator and an HP iLO and OA systems. You can create as many groups as you require to specify lists to multiple systems running HP iLO and OA.
 
-### [Set up an HP iLO and OA group](#tab/set-up-an-hp-ilo-and-oa-group)
+### Set up an HP iLO and OA group
 
 To set up an HP iLO and OA group, follow these steps:
 
@@ -132,7 +129,7 @@ To set up an HP iLO and OA group, follow these steps:
 4. In the **Available** list, press the Ctrl button while clicking on the connections to select multiple connections. Press the **&gt;&gt;** button to move the connections to the **Selected** list.
 5. Select **OK** to close the configuration dialog, and select **Finish**.
 
-### [Batch update credentials on a group](#tab/batch-update-credentials-on-a-group)
+### Batch update credentials on a group
 
 To batch update credentials on a group, follow these steps:
 
@@ -143,5 +140,3 @@ To batch update credentials on a group, follow these steps:
 5. In the **Key** box, enter a new key or leave blank to keep the original.
 6. In the **Port** box, enter a new port or leave blank to keep the original.
 7. Select **OK** to close the configuration dialog, and select **Finish**.
-
----
