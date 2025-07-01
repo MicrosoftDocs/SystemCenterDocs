@@ -4,7 +4,6 @@ description: Provides an overview and explains how to configure change and activ
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/08/2025

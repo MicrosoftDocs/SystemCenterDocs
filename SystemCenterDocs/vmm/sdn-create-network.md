@@ -4,7 +4,6 @@ title: Set up a Virtual Network in SDN in the VMM Fabric
 description: This article describes the procedure on how to create a VM network in SDN, using a VMM.
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.date: 04/08/2025
 ms.topic: article
 ms.service: system-center

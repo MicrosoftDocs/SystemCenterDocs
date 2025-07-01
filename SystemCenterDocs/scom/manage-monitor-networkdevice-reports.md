@@ -3,7 +3,6 @@ title: Reports for Network Monitoring in Operations Manager
 description: This article summarizes the default reports for network devices included with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.date: 04/08/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
@@ -37,6 +36,6 @@ System Center - Operations Manager provides the reports described in the followi
 
 ## Next steps
 
-- To learn how create reports for your operational needs, review [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md).
+- To learn how to create reports for your operational needs, review [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md).
 - [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.  
 - To learn how to schedule report delivery for reports available in Operations Manager, see [How to Configure and Modify Report Schedules](manage-reports-config-modify-schedules.md).  

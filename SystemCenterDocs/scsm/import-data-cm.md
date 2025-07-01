@@ -4,7 +4,6 @@ description: Describes how to import data from Configuration Manager into Servic
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/08/2025

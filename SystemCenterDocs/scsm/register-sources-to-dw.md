@@ -4,7 +4,6 @@ description: Describes how you can register source systems to the System Center 
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/08/2025
@@ -226,37 +225,37 @@ To troubleshoot this problem, follow these steps:
 
 Step 1: Check the deployment status of your management packs:
 
-    1. In the Service Manager console, select **Data Warehouse**.
+1. In the Service Manager console, select **Data Warehouse**.
 
-    2. Select **Management Packs**, and in the search **Filter** box, enter **report**. This filters results to report-related management packs.
+2. Select **Management Packs**, and in the search **Filter** box, enter **report**. This filters results to report-related management packs.
 
-    3. Check the deployment status (last column) of the following management packs. None of the management packs should have a status of **Failed**.
+3. Check the deployment status (last column) of the following management packs. None of the management packs should have a status of **Failed**.
 
-       - ServiceManager.ActivityManagement.Report.Library
+    - ServiceManager.ActivityManagement.Report.Library
 
-       - ServiceManager.ProblemManagement.Report.Library
+    - ServiceManager.ProblemManagement.Report.Library
 
-       - ServiceManager.IncidentManagement.Report.Libraryxxx
+    - ServiceManager.IncidentManagement.Report.Libraryxxx
 
-       - ServiceManager.ConfigurationManagement.Report.Library
+    - ServiceManager.ConfigurationManagement.Report.Library
 
-       - ServiceManager.ChangeManagement.Report.Library
+    - ServiceManager.ChangeManagement.Report.Library
 
 Step 2: Check the event log for error messages that mention the assembly Microsoft.EnterpriseManagement.Reporting.Code.dll file.
 
 If any of the above five management packs failed deployment:
 
-    1. On the data warehouse management server, open the Operations Manager event log.
+1. On the data warehouse management server, open the Operations Manager event log.
 
-    2. Filter the events with **Event Sources** as **Deployment** and **Event Level** as **Error**.
+2. Filter the events with **Event Sources** as **Deployment** and **Event Level** as **Error**.
 
-    3. If there are error messages in the event log that indicate **cannot load Assembly Microsoft.EnterpriseManagement.Reporting.Code.dll**, review the following items:
+3. If there are error messages in the event log that indicate **cannot load Assembly Microsoft.EnterpriseManagement.Reporting.Code.dll**, review the following items:
 
-       1. Your installation of SQL Server Reporting Services (SSRS) may be on a different server than the data warehouse management server.
+    1. Your installation of SQL Server Reporting Services (SSRS) may be on a different server than the data warehouse management server.
 
-       2. If your SSRS installation is on the same server as the data warehouse management server, restart the SSRS service.
+    2. If your SSRS installation is on the same server as the data warehouse management server, restart the SSRS service.
 
-    4. Restart SSRS:
+4. Restart SSRS:
 
     1. Sign in to the server where SSRS is installed.
 
@@ -270,11 +269,11 @@ If any of the above five management packs failed deployment:
 
 Step 3: Redeploy any failed report management packs:
 
-    1. In the Service Manager console, select **Data Warehouse**.
+1. In the Service Manager console, select **Data Warehouse**.
 
-    2. Select **Management Packs**, and then in the search filter, enter **report**.
+2. Select **Management Packs**, and then in the search filter, enter **report**.
 
-    3. For each of the management packs listed in step 1, in the **Tasks Pane**, select **Restart Deployment**.
+3. For each of the management packs listed in step 1, in the **Tasks Pane**, select **Restart Deployment**.
 
     > [!NOTE]
     > If the deployment status of a management pack is listed as **Completed**, the **Restart Deployment** option is unavailable.
