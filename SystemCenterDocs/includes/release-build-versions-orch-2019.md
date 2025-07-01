@@ -1,9 +1,8 @@
 ---
 title: System Center 2019 - Orchestrator Release Build Versions
 description: Include file that shows the list of release builds for System Center 2019 - Orchestrator.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/30/2024
 ms.service: system-center
 ms.assetid: 

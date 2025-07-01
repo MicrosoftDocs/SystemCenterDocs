@@ -7,7 +7,7 @@ ms.date: 04/09/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 4ef0e1d1-8c39-4480-9ec0-cc6bfa915bbb
 ---
 

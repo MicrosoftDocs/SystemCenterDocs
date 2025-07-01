@@ -5,7 +5,7 @@ description: This article describes how to manage SOFS in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/09/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

@@ -2,11 +2,10 @@
 ms.assetid: f55897a2-0a79-4fb4-8d39-de6462e29f5b
 title: Deploy VMs in the VMM fabric from a blank virtual hard disk
 description: This article describes how to create and deploy VMs in the VMM fabric from a blank virtual hard disk
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, engagement-fy23, engagement-fy24

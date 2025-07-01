@@ -5,7 +5,7 @@ author: FKornilov
 ms.author: v-fkornilov
 manager: ebruersan
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ---

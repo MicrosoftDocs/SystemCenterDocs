@@ -2,11 +2,10 @@
 ms.assetid: 350b385c-dc51-421c-a954-623a7fd416c2
 title: Provision a Hyper-V host or cluster from bare metal computers
 description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 12/18/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager

@@ -3,10 +3,9 @@ title: Migrate Orchestrator between environments
 description: Describes how you can automatically move Orchestrator between environments.
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: upgrade-and-migration-article
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: intro-migration, UpdateFrequency3, engagement-fy24
 ---
