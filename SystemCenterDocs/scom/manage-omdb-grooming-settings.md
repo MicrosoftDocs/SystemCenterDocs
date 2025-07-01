@@ -1,14 +1,13 @@
 ---
 title: Configure Grooming Settings for the Operations Manager Database
 description: This article reviews the default grooming settings for the operational database and how to modify those settings.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: ccbc61b1-4919-4514-ac2e-ea68384e3be8
 ---
 

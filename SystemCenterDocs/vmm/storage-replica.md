@@ -2,11 +2,10 @@
 ms.assetid: edd0a7c4-9da7-4727-ae61-940049782dae
 title: Manage Storage Replica in VMM
 description: This article describes how to set up Storage Replica in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23, engagement-fy24
