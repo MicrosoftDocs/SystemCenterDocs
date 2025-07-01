@@ -2,14 +2,13 @@
 ms.assetid: 
 title: Remove a Gateway Server from a Management Group
 description: This article describes the procedure to remove a gateway server from  a Management Group.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Remove a Gateway Server from a Management Group

@@ -62,4 +62,5 @@ If installation fails, refer to the log files: `Microsoft Service Provider*.logâ
 
 ## Next steps
 
-[Manage SPF](manage-register-spf.md).
+- [Manage SPF](manage-register-spf.md)
+- [Manage SPF](manage-register-spf.md)
