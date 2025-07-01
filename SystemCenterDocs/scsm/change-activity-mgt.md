@@ -6,6 +6,7 @@ ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/08/2025
+ms.topic: how-to
 ms.subservice: service-manager
 ms.assetid: 399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
