@@ -5,7 +5,7 @@ description: This article describes how to manage Run As accounts in VMM
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/02/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24

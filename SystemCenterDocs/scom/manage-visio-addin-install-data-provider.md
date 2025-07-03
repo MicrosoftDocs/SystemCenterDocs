@@ -7,7 +7,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency2, intro-installation
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 8b1c21ab-529b-4c04-9384-717a503f3df7
 ---
 

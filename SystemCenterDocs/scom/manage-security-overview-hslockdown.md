@@ -8,7 +8,7 @@ ms.date: 04/22/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Control access by using the Health Service Lockdown Tool in Operations Manager

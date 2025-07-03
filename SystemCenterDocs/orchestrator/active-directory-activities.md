@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 73d76ac0-8eee-466a-b11b-3df39e045d6d
 author: jyothisuri
 ms.author: jsuri

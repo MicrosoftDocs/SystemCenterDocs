@@ -10,7 +10,7 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
 monikerRange: 'sc-sm-2016'
 ---

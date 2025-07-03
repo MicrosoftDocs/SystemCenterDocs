@@ -4,7 +4,7 @@ description: Describes how to configure runbook servers in System Center - Orche
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.custom: UpdateFrequency3, engagement-fy24

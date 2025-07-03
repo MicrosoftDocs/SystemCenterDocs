@@ -5,7 +5,7 @@ description: This article describes how to set up Storage Spaces Direct in the V
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/24/2023
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, UpdateFrequency2, engagement-fy23

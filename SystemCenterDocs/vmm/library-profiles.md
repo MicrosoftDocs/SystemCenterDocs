@@ -5,7 +5,7 @@ description: This article provides guidance for adding profiles to the library i
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/02/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

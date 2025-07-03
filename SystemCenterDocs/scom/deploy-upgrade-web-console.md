@@ -9,7 +9,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 monikerRange: 'sc-om-2016'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade a Web console

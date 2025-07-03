@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade a Reporting server

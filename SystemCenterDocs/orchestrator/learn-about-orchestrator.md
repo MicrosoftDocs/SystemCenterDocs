@@ -6,7 +6,7 @@ ms.author: jsuri
 ms.date: 12/17/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency.5, engagement-fy24
 ---
 

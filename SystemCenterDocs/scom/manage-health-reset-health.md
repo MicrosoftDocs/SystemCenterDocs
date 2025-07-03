@@ -7,7 +7,7 @@ ms.date: 04/22/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 87da70aa-607a-47ec-bab5-39345ea53258
 ---
 

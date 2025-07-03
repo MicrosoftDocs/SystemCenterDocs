@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: intro-deployment, UpdateFrequency3, engagement-fy24
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: This article helps you identify data sources you want to protect with DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

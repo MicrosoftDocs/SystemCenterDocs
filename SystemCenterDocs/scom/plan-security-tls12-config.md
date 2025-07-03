@@ -8,7 +8,7 @@ ms.date: 06/03/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Enforce TLS 1.2 for Operations Manager

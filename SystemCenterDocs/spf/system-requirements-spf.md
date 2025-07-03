@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/28/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2

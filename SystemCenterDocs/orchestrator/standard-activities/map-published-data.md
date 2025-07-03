@@ -8,7 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: how-to
 ms.assetid: d9ddc895-bc37-4139-bf6d-87f21e064ade
 caps.latest.revision: 15
 author: jyothisuri

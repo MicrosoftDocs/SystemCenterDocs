@@ -1,6 +1,6 @@
 ---
 description: Troubleshoot client protection End User Recovery in Data Protection Manager.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

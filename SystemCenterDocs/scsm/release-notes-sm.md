@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service M
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/31/2025
-ms.topic: article
+ms.topic: release-notes
 ms.service: system-center
 ms.subservice: service-manager
 ms.custom: UpdateFrequency.5, engagement-fy23

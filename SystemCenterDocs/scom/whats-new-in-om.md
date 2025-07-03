@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency.5, engagement-fy24, intro-whats-new
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: whats-new
 ---
 
 # What's New in Operations Manager

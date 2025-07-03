@@ -5,7 +5,7 @@ description: This article summarizes supported storage arrays for VMM.
 author: jyothisuri
 ms.author: jsuri
 ms.date: 05/16/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24

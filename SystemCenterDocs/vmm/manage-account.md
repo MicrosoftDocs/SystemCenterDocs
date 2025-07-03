@@ -5,7 +5,7 @@ description: This article describes how to manage roles and permissions in VMM
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

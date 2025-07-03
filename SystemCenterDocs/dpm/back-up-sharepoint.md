@@ -1,6 +1,6 @@
 ---
 description: Use DPM to protect SharePoint farms, external SQL Server databases, and folders.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 05/27/2025

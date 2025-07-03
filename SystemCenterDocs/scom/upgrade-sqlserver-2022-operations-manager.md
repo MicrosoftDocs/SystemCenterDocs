@@ -9,7 +9,7 @@ ms.service: system-center
 monikerRange: '>=sc-om-2022'
 ms.assetid:
 ms.subservice: operations-manager
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade Operations Manager databases to SQL Server 2022

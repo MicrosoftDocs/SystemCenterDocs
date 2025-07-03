@@ -1,7 +1,7 @@
 ---
 title: System Center Service Manager Evaluation and Licensing
 description: This article provides information about the Evaluation and Licensing related updates in System Center - Service Manager
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

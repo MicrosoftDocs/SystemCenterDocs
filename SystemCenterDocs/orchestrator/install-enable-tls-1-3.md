@@ -5,7 +5,7 @@ description: This article provides instructions for setting up TLS 1.3 with Orch
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/28/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 moniker range: sc-orch-2025

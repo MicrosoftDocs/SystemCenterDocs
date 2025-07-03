@@ -9,7 +9,7 @@ ms.custom: engagement-fy23, engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Linux Log file monitoring in System Center Operations Manager
