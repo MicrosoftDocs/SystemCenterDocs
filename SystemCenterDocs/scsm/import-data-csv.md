@@ -1,12 +1,12 @@
 ---
-title: Use a CSV file to import data
+title: Use a CSV File to Import Data
 description: Describes how you can use a CSV file to import data into Service Manager.
 ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.subservice: service-manager
 ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
 ms.custom: UpdateFrequency3, engagement-fy24
@@ -73,7 +73,7 @@ WG-Chi-5, 172.30.14.30, CHICAGO
 
 ## Create the format file
 
-A format file is now created that is suited to import the rows that are contained in the **newcomputers.csv** file. The first step in writing the format file is identifying the class type or projection type that must be used for the instances in the .csv file. For more information about class type or projection types, see the blog post [Using the CSV import feature](https://techcommunity.microsoft.com/t5/system-center-blog/using-the-csv-import-feature/ba-p/340736) and download the file CSVImport.docx.
+A format file is now created that is suited to import the rows that are contained in the **newcomputers.csv** file. The first step in writing the format file is identifying the class type or projection type that must be used for the instances in the .csv file. For more information about class type or projection types, see the blog post [Use the CSV import feature](https://techcommunity.microsoft.com/t5/system-center-blog/using-the-csv-import-feature/ba-p/340736) and download the file CSVImport.docx.
 
 For the type of data being imported, you find that the **Microsoft.Windows.Computer** class is the best suited for the object type and property set. Start by declaring the class of the object that is being imported:
 
@@ -111,7 +111,7 @@ Save this file as **newcomputers.xml**.
 
 Before you can import data from a comma-separated value (CSV) file, you've to create two files: a data file and a format file. You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
 
-To import configuration items from a CSV file, do the following:
+To import configuration items from a CSV file, follow these steps:
 
 1. In the Service Manager console, select **Administration**.
 
@@ -133,6 +133,8 @@ To import configuration items from a CSV file, do the following:
 
 ### Validate the import of configuration items from a CSV file
 
+To validate the import of configuration items from a CSV file, follow these steps:
+
 1. In the Service Manager console, select **Configuration Items**.
 
 2. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and select **All Windows Computers**.
@@ -141,4 +143,4 @@ To import configuration items from a CSV file, do the following:
 
 ## Next steps
 
-- [Optionally disable ECL logging for faster connector synchronization](disable-ecl-logging.md).
+[Optionally disable ECL logging for faster connector synchronization](disable-ecl-logging.md).
