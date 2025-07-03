@@ -38,7 +38,7 @@ Accounts must be specified in one of the following fully qualified domain name (
 
 If you used the add or deny options when running the Health Service Lockdown tool, you'll need to restart the System Center Management service before the changes take effect.  
 
-When evaluating allowed and denied listings, know that denies takes priority over allows. If a user is listed as allowed, and the same user is a member of a group that is listed as denied, the user will be denied.  
+When evaluating allowed and denied listings, know that denials take priority over allows. If a user is listed as allowed, and the same user is a member of a group that is listed as denied, the user will be denied.  
 
 ## Deny an account with the health service lockdown tool
 
