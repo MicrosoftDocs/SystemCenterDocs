@@ -14,11 +14,9 @@ ms.custom: engagement-fy24
 
 # Identify compatible tape libraries
 
-
+This article describes how you can identify tape libraries compatible with DPM.
 
 Find the latest list of [compatible tape libraries](./dpm-compatible-tape-libraries.md) for System Center Data Protection Manager (DPM).
-
-This article describes how you can identify tape libraries compatible with DPM.
 
 ## Virtual tape library support
 

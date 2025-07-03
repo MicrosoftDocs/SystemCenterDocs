@@ -1,9 +1,8 @@
 ---
 title: Find Data and Objects in the Operations Manager Consoles
 description: This article describes how to filter monitoring data in the Operations Manager Operations console to see data based on your specific criteria.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/22/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
@@ -13,8 +12,6 @@ ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
 ---
 
 # Find data and objects in the Operations Manager consoles
-
-
 
 System Center Operations Manager, with the appropriate management packs imported, will provide you with a comprehensive view of what is going on with your monitored applications, hardware, and processes. This can result in a large volume of data being displayed in the Operations console. Learning how to quickly locate the data you need is essential to efficient interaction with the console. You can use the **Scope**, **Find**, and **Search** buttons on the Operations console toolbar to filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need. You can also filter your data based on the number of hours or days you would like to show.  
 

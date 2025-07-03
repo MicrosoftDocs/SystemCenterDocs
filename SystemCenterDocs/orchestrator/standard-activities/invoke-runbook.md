@@ -18,8 +18,6 @@ ms.author: jsuri
 
 The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.
 
-This article describes the Invoke Runbook activity.
-
  You can use the Invoke Runbook activity to invoke generic runbooks that only perform specific actions that don't depend on how the runbook is invoked. For example, you can create a runbook that calls separate runbooks to perform a backup maintenance procedure that in turn calls a runbook to shut down services, another runbook to back up data, and then a final runbook to restart the services.  
 
 > [!IMPORTANT]
@@ -31,9 +29,9 @@ This article describes the Invoke Runbook activity.
 
 ### Details  
 
-Use the following information to configure the Invoke Runbook activity:
+Use the following information to configure the Invoke Runbook activity.
 
-|Settings|Configuration instructions|  
+|Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Runbook**|Select the ellipsis **(...)** button to browse for the runbook that you want to invoke. **Important:**  Don't invoke a runbook that starts with a Monitor activity.|  
 |**Invoke by path**|Select to force the Invoke Runbook activity to invoke the runbook by the specific path and name. When selected, any runbook with the same name in the same folder location is invoked. When unselected, the runbook that is invoked can be moved around the environment and the Invoke Runbook activity automatically maps itself to the new location.|  

@@ -18,8 +18,6 @@ ms.author: jsuri
 
 The Compress File activity compresses files into zip archives. You can use the Compress File activity to archive log files before storage or before sending them to another location using FTP or email.
 
-This article describes the Compress File activity.
-
 ## Configure the Compress File Activity
 
  Before you configure the Compress File activity, you need to know which files you'll compress.  
@@ -28,9 +26,7 @@ This article describes the Compress File activity.
 
 ### Details Tab  
 
-The following table lists the details data items:
-
-|Settings|Configuration instructions|  
+|Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Folder**|Enter the path to the file or to the folder that contains the files that you want to compress, or select the ellipsis **(...)** button and browse for the files. You can use wildcards in filenames. You can't browse for the folder name; you must enter the full folder name and location and include a trailing slash.|  
 |**Include files in sub-folders**|Select this option to include any files that are found within subfolders of the folder that you specified.|  

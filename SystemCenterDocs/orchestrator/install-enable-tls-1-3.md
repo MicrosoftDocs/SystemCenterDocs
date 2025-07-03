@@ -2,9 +2,8 @@
 ms.assetid:
 title: Set up TLS 1.3 for Orchestrator
 description: This article provides instructions for setting up TLS 1.3 with Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/28/2025
 ms.topic: article
 ms.service: system-center
@@ -18,7 +17,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Before you start
 
-Here are some considerations before you start setting up TLS 1.3 for Orchestrator:
+Here are some considerations before you set up TLS 1.3 for Orchestrator:
 
 - Orchestrator should be running version 2022 or 2025.
 - Security fixes should be up-to-date on the Orchestrator.
@@ -67,7 +66,7 @@ To configure and use TLS 1.3, follow these steps:
       | `HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319` | SystemDefaultTlsVersions | dword:00000001 |
       | `HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319` | SystemDefaultTlsVersions | dword:00000001 |
 
-2. Set Windows to use only TLS 1.3:
+2. Use these methods to configure Windows to use only TLS 1.3:
 
    **Method 1: Manually modify the registry**
 

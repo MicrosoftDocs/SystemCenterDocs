@@ -2,9 +2,8 @@
 ms.assetid: 4c8b52fd-c293-4334-8fd4-010e357097a6
 title: Route Traffic Across Networks in SDN Infrastructure
 description: This article describes about how to route the network traffic between physical and virtual networks in an SDN infrastructure.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/22/2025
 ms.topic: how-to
 ms.service: system-center
@@ -38,7 +37,7 @@ An SDN RAS gateway enables you to route network traffic between physical and vir
 
 ## Before you start
 
-Here are some considerations before you start routing traffic across networks in the SDN infrastructure:
+Here are some considerations before you route traffic across networks in the SDN infrastructure:
 
 -   Ensure SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md), and [SDN RAS gateway](sdn-gateway.md) are deployed.
 
