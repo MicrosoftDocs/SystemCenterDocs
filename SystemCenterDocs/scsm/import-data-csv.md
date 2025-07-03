@@ -2,9 +2,8 @@
 title: Use a CSV File to Import Data
 description: Describes how you can use a CSV file to import data into Service Manager.
 ms.topic: how-to
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 03/31/2025

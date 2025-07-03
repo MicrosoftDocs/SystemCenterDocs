@@ -2,9 +2,8 @@
 title: Troubleshoot Upgrade Issues in System Center - Service Manager
 description: This article helps you resolve System Center - Service Manager upgrade problems and work around them.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/31/2025
 ms.subservice: service-manager
 ms.topic: article
@@ -65,7 +64,7 @@ In any case, you need the backup of the encryption key. For the Service Manager 
 
 If an error occurs after permanent changes have been made—for example, after management packs are imported or any other time data is written into a database—the error message that appears doesn't include a Retry button.
 
-At this point, your only option is to select **Close** and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see **Back Up Service Manager Databases** in the Disaster Recovery Guide for Service Manager.
+At this point, your only option is to select **Close** and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see **Backing Up Service Manager Databases** in the Disaster Recovery Guide for Service Manager.
 
 ---
 
