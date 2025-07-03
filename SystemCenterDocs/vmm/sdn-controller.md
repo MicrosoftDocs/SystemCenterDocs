@@ -5,7 +5,7 @@ description: This article describes how to set up a Software Defined Network (SD
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23, UpdateFrequency2, engagement-fy24

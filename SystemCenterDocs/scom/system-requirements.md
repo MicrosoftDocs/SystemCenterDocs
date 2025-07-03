@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 ms.date: 05/08/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: UpdateFrequency.5, engagement-fy23

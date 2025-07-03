@@ -1,7 +1,7 @@
 ---
 title: Configure Service Level Management
 description: Learn about configuring Service Level Management in Service Manager.
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

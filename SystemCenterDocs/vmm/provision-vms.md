@@ -5,7 +5,7 @@ description: This article describes how to manage VMs in the VMM compute fabric
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy23, engagement-fy24

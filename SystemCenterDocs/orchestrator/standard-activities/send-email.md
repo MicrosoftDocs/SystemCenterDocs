@@ -2,13 +2,13 @@
 title: Send Email 
 description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 04/21/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 81c60f52-199b-46c7-83c9-3d38ae70b108
 caps.latest.revision: 16
 author: jyothisuri
@@ -16,10 +16,12 @@ ms.author: jsuri
 ---
 # Send Email
 
-The Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system.  
+The Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system. 
 
 > [!IMPORTANT]
 > If you put more than 1 MB of text directly into the message body, the activity can fail during initialization. To avoid this issue, enter no more than 1 MB of text directly into the message body or save the text to a file, and provide the file name as the message you want to send.  
+
+In this article, you'll learn about the Send Email activity.
 
 ## Configure the Send Email Activity
 
@@ -31,7 +33,7 @@ The Send Email activity sends an email message using the standard SMTP protocol 
 
 - The email message you want to send.  
 
-Use the following information to configure the Send Email activity.  
+Use the following information to configure the Send Email activity:  
 
 ### Details  
 
@@ -64,7 +66,7 @@ Use the following information to configure the Send Email activity.
 
 ### Published Data
 
- The following table lists the published data items.  
+ The following table lists the published data items:  
 
 |Item|Description|  
 |----------|-----------------|  

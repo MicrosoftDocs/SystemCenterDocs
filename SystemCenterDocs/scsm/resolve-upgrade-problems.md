@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 03/31/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

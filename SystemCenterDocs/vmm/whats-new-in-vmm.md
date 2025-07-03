@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 ms.date: 04/14/2025
 author: jyothisuri
 ms.author: jsuri
-ms.topic: article
+ms.topic: whats-new
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, intro-whats-new, engagement-fy23, engagement-fy24

@@ -1,6 +1,6 @@
 ---
 description: This article describes how to update protection agents for both connected and disconnected client computers.
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

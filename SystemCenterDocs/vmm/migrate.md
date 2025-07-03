@@ -5,7 +5,7 @@ description: This article describes how to migrate VMs in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-migration, engagement-fy24

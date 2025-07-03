@@ -4,7 +4,7 @@ description: This article provides a broad overview of Service Provider Foundati
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/07/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency.5, engagement-fy24

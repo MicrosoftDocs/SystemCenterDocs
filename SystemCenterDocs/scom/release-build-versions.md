@@ -5,7 +5,7 @@ description: This article details the release builds in Operations Manager
 author: jyothisuri
 ms.author: jsuri
 ms.date: 12/10/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24

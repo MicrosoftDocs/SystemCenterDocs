@@ -5,7 +5,7 @@ description: This article describes how to deploy and manage Nano server-based h
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/17/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: 'sc-vmm-2016'

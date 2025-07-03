@@ -5,7 +5,7 @@ description: This article describes management tasks for the VMM library
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/02/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24

@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.custom: intro-deployment, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy System Center Operations Manager

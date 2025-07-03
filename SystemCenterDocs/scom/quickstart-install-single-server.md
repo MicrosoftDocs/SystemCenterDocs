@@ -7,7 +7,7 @@ ms.author: jsuri
 ms.date: 03/19/2025
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 

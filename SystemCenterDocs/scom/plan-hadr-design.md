@@ -8,7 +8,7 @@ ms.date: 11/01/2024
 ms.custom: engagement-fy23, UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # High Availability and Disaster Recovery

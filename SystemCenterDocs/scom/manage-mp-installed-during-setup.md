@@ -8,7 +8,7 @@ ms.date: 02/17/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Management packs installed with Operations Manager

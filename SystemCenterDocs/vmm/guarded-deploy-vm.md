@@ -5,7 +5,7 @@ description: Describes how to add and provision shielded VMs in the VMM fabric. 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager

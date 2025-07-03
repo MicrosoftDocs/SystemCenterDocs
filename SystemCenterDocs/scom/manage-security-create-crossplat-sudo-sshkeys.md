@@ -9,7 +9,7 @@ ms.date: 11/01/2024
 ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Configure sudo elevation and SSH keys

@@ -1,6 +1,6 @@
 ---
 description: Provides an overview of how you can work with integration modules.
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

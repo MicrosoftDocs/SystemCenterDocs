@@ -5,7 +5,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
