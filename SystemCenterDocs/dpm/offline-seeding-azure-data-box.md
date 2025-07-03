@@ -1,6 +1,6 @@
 ---
 description: You can use Azure Data Box to seed initial Backup data offline from DPM
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

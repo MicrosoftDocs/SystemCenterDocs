@@ -5,7 +5,7 @@ description: This article provides information about the basic actions you can d
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/02/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24

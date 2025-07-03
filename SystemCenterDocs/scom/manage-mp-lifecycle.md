@@ -8,7 +8,7 @@ ms.date: 03/26/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Management Pack Lifecycle

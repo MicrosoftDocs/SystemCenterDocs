@@ -5,7 +5,7 @@ description: This article provides installation instructions for the VMM console
 author: jyothisuri
 ms.author: jsuri
 ms.date: 06/04/2025
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy24

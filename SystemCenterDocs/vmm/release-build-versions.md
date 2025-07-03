@@ -5,7 +5,7 @@ description: This article details the release builds in Virtual Machine Manager
 ms.date: 04/16/2025
 author: jyothisuri
 ms.author: jsuri
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>=sc-vmm-2016'

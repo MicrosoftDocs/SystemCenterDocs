@@ -8,7 +8,7 @@ ms.date: 04/07/2025
 ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Required capabilities for UNIX and Linux accounts

@@ -1,6 +1,6 @@
 ---
 description: You can use DPM to back up your system state and provide bare metal recovery (BMR) protection.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 03/27/2025

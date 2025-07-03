@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 03/12/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: how-to
 ms.custom: engagement-fy24
 ---
 

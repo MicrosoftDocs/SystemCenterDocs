@@ -5,7 +5,7 @@ description: Describes how to manage Hyper-V port access control lists (ACLs)
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager

@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: jyothisuri
 ms.author: jsuri
 ms.date: 06/03/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.custom: engagement-fy24
 ms.subservice: virtual-machine-manager

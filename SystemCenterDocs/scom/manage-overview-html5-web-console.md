@@ -9,7 +9,7 @@ ms.custom: UpdateFrequency2
 ms.service: system-center
 monikerRange: '>sc-om-2016'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Overview of HTML5 Web console and dashboards

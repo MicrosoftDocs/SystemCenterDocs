@@ -1,6 +1,6 @@
 ---
 description: Provides guidance and instructions for creating Service Management Automation runbooks.
-ms.topic: article
+ms.topic: how-to
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

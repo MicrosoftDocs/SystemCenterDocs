@@ -8,7 +8,7 @@ ms.date: 11/14/2024
 ms.custom: engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Import, export, and remove an Operations Manager management pack

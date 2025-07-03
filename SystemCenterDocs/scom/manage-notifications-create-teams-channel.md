@@ -7,7 +7,7 @@ ms.date: 02/27/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 MonikerRange: '>=sc-om-2022'
 ---
 

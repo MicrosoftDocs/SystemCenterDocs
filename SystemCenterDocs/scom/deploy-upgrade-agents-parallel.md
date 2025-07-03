@@ -8,7 +8,7 @@ ms.date: 03/03/2025
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade agents in a parallel deployment
