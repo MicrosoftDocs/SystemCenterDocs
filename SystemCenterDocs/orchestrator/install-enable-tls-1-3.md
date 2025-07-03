@@ -71,7 +71,7 @@ To configure and use TLS 1.3, follow these steps:
    **Method 1: Manually modify the registry**
 
    >[!IMPORTANT]
-   >You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
+   >You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problem occurs.
 
    To enable or disable all SCHANNEL protocols across the system, follow these steps:
 
