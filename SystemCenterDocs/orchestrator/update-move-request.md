@@ -3,6 +3,7 @@ title: Update Move Request
 description: You can use the Update Move Request activity in a runbook to change the attributes of an existing Move request for an on-premises environment.
 ms.custom: UpdateFrequency3
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

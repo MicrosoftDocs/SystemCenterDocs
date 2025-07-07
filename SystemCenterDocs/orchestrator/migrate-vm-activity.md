@@ -13,6 +13,7 @@ author: jyothisuri
 ms.author: jsuri
 ROBOTS: noindex
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 # Migrate VM activity
 

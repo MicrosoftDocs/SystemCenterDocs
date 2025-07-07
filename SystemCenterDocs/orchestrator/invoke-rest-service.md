@@ -3,6 +3,7 @@ title: Invoke REST Service
 description: The Invoke REST Service activity is used in a runbook to make requests to RESTful web services and retrieve data or execute functions.
 ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

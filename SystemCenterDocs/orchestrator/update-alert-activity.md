@@ -3,6 +3,7 @@ title: Update Alert Activity
 description: The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer.
 ms.custom: UpdateFrequency3
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

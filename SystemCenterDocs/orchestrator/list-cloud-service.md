@@ -3,6 +3,7 @@ title: List Cloud Service
 description: The List Cloud Service activity lists the cloud services available under the current subscription.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na

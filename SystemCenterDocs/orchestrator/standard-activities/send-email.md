@@ -3,6 +3,7 @@ title: Send Email
 description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/21/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
