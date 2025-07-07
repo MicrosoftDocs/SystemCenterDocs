@@ -1,10 +1,10 @@
 ---
-title: Languages supported by System Center - Service Manager
+title: Languages Supported by System Center - Service Manager
 description: Describes the languages that System Center - Service Manager supports.
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.update-cycle: 1825-days
 ms.subservice: service-manager
 ms.topic: concept-article
@@ -13,13 +13,13 @@ ms.custom: UpdateFrequency5, engagement-fy24
 
 # Languages supported by System Center - Service Manager
 
-
+This article describes the languages that System Center - Service Manager supports.
 
 It's assumed in this article that you're installing System Center - Service Manager on a computer where no previous version of Service Manager is installed.
 
  Including English, Service Manager supports a total of 21 languages. Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. Learn more about [SQL Server support](supported-configs.md).  
 
- The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, **CI** indicates case-insensitive and **AS"**indicates accent-sensitive.  
+ The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, **CI** indicates case-insensitive and **AS"** indicates accent-sensitive.  
 
 |Windows locale|Collation|  
 |--------------------|---------------|  
