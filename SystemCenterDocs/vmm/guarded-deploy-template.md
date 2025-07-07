@@ -1,10 +1,10 @@
 ---
 ms.assetid: af4cd8cd-b424-455b-936f-e92e361d03fc
-title: Set up a template disk, shielding helper disk, and VM template to deploy shielded VMs in the VMM fabric
+title: Set up a Template Disk, Shielding Helper Disk, and VM Template to Deploy Shielded VMs in the VMM Fabric
 description: Describes how to configure a shielded template disk and utility disk in VMM to provision new shielded VMs and convert existing VMs to shielded VMs
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
@@ -15,7 +15,11 @@ ms.custom: engagement-fy24
 
 You deploy shielded virtual machines in the System Center Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX) and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs, and convert the existing VMs to shielded VMs in VMM.
 
+This article describes how to configure a shielded template disk and utility disk in VMM to provision new shielded VMs and convert existing VMs to shielded VMs.
+
 ## Before you start
+
+Here are some considerations before you configure a shielded template disk and utility disk:
 
 - The signed template disk used to create the shielded VM template must have the family and version marked.
 - The VMM library to which you add the signed template disk must be accessible to clouds from which shielded VMs will be provisioned.
@@ -27,7 +31,7 @@ Shielded VMs can be deployed in two ways: by deploying directly from a signed te
 
 Signed template disks assure tenants that the disk contents haven't been modified and enable tenants to securely transfer deployment secrets like administrator passwords and certificates to the VM in an encrypted manner. For this reason, it's preferred to deploy shielded VMs from signed template disks.
 
-To prepare and add a signed template disk to the VMM library, complete the following steps:
+To prepare and add a signed template disk to the VMM library, follow these steps:
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
 1. [Prepare a signed template disk](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 with Desktop Experience or Windows 10 or Windows 11 with the [Remote Server Administration Tools](https://www.microsoft.com/download/details.aspx?id=45520) installed.
@@ -50,7 +54,9 @@ To prepare and add a signed template disk to the VMM library, complete the follo
 
 You can optionally create a shielded VM template using a signed template disk. VM templates define virtual machine resources such as CPU count, RAM, and networking for an OS disk.
 
-Templates for shielded VMs vary slightly from a regular VM template. Some settings are fixed; for example, the VM must be a Generation 2 VM with Secure Boot enabled. Create the VM template as follows:
+Templates for shielded VMs vary slightly from a regular VM template. Some settings are fixed; for example, the VM must be a Generation 2 VM with Secure Boot enabled.
+
+To create the VM template follow these steps:
 
 1.	Select **Library** > **Create VM Template**. In **Select Source**, select Use an existing VM template or a virtual hard disk stored in the library > **Browse**.
 2.	Select the signed template disk, specify a template name and optional description, and select **OK**.
@@ -62,6 +68,8 @@ After the VM template is created, ensure that it's available to the Tenant Admin
 ## Configure the shielding helper VHD
 
 The existing Windows VMs can also be converted to shielded VMs with the use of a shielding helper VHD. The helper VHD is a special disk prepared with tools to encrypt another VM's operating system drive. VMM must be configured with a helper VHD before you can shield the existing VMs.
+
+To configure the shielding helper VHD, follow these steps:
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
 1. [Prepare a helper VHD](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2016 or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
