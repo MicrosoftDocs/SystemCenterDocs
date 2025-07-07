@@ -5,6 +5,7 @@ description: This article describes the procedure on how to update the network c
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/24/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager

@@ -5,6 +5,7 @@ description: This guide provides information on how to upgrade to Operations Man
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.custom: engagement-fy23, UpdateFrequency.5, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

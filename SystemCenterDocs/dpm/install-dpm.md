@@ -2,6 +2,7 @@
 description: This article contains prerequisites and setup instructions for DPM and it includes attended and unattended instructions
 ms.topic: install-set-up-deploy
 ms.date: 06/26/2025
+ms.update-cycle: 180-days
 title: Install Data Protection Manager
 author: jyothisuri
 ms.author: jsuri

@@ -5,6 +5,7 @@ ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/31/2025
+ms.update-cycle: 1825-days
 ms.subservice: service-manager
 ms.topic: concept-article
 ms.custom: UpdateFrequency5, engagement-fy24
