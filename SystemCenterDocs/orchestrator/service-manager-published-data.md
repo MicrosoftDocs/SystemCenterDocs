@@ -2,6 +2,7 @@
 title: Service Manager published data
 description: The following tables list the published data elements for all of the classes in the System Center - Service Manager Integration Pack.
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: concept-article

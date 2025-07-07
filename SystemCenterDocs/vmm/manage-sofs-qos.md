@@ -5,6 +5,7 @@ description: This article describes how to set QoS policies for SOFS storage
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/22/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager

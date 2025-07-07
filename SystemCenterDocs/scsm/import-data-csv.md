@@ -7,6 +7,7 @@ ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 03/31/2025
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
 ms.custom: UpdateFrequency3, engagement-fy24

@@ -4,6 +4,7 @@ description: Provides instructions for installing System Center - Orchestrator
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/19/2025
+ms.update-cycle: 180-days
 ms.service: system-center
 ms.subservice: orchestrator
 ms.topic: install-set-up-deploy

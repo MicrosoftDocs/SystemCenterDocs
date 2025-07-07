@@ -5,6 +5,7 @@ description: Describes how to set up guarded hosts and provision shielded VMs in
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/17/2024
+ms.update-cycle: 1095-days
 ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
