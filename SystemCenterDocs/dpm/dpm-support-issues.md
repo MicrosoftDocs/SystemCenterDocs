@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 07/10/2025
 ms.update-cycle: 180-days
 title: What's supported and what isn't for DPM
 ms.subservice: data-protection-manager
@@ -492,6 +492,29 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ::: moniker-end
 
 ## <a name="BKMK_Data"></a>Data protection issues
+
+::: moniker range=">=sc-dpm-2019"
+
+### Protected Data Source 16 TB size limit 
+
+**Issue**: By default, DPM formats the Replica volume using 4K NTFS Cluster size. This limits the NTFS volume size to 16 TB.  If the Data source being protected exceeds the 16 TB limit, protection fails with the following error:
+
+**DPM is out of disk space for the replica. (ID 58 Details: There is not enough space on the disk (0x80070070))**
+
+If the amount of the protected data source is below the limit initially, initial protection succeeds but if it exceeds the 16 TB limit later, DPM auto grows the replica virtual disk but then fails while it attempts to extend the file system to beyond the 16 TB limit.
+
+If the amount of the protected data source is above the 16 TB limit at the time of initial protection, the new replica allocation fails.
+
+**Workaround**: If the amount of the protected data source is above the 16 TB limit at the time of initial protection, you can add the following registry entry to force DPM to create the replica volume using NTFS 16K Cluster size. This enables the maximum 64TB file system limit, which supports Shadow copies.
+
+If the data source exceeded the 16 TB limit after initial replica was created using default 4K cluster and now fails, you can either reduce the amount of protected data on the source to below 16 TB limit to continue backups, or you must stop protection, delete the replica, and start protection over after adding the registry setting to increase the cluster size.
+
+Registry setting to increase the initial Replica NTFS cluster size 16K is
+
+`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage`
+`ReplicaVolumeClusterSize:REG_DWORD:0x00004000 (16384)`
+
+::: moniker-end
 
 ### DPM doesn't back up shared VHDX
 
