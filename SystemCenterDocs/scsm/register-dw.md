@@ -3,9 +3,8 @@ title: Enable Service Manager Reporting
 description: Use the Data Warehouse Registration wizard to enable reporting.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/31/2025
 ms.reviewer: na
 ms.suite: na

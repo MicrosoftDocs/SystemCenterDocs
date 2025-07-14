@@ -2,10 +2,9 @@
 ms.assetid: e0fe4a01-8964-402b-95e9-76bc5940606a
 title: Manage the Report Server Unattended Execution Account in Operations Manager
 description: This topic describes how to configure the unattended execution account for the Operations Manager Reporting server.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/31/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager

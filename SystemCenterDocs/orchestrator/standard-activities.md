@@ -2,12 +2,11 @@
 title: Orchestrator Standard Activities
 description: This article describes the standard activities in Orchestrator that enable you to create runbooks to automate your data center procedures.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.subservice: orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
 ms.custom: UpdateFrequency3
@@ -22,8 +21,8 @@ The following table provides a brief description of tasks you can accomplish wit
 |Tasks|Categories|  
 |-----------|----------------|  
 |Run system commands.|[System](./standard-activities/system.md)|  
-|Perform schedule-based activities.|[Schedule](./standard-activities/scheduling.md)|  
-|Monitor processes or system-level events.|[Monitor](./standard-activities/monitoring.md)|  
+|Perform schedule-based activities.|[Scheduling](./standard-activities/scheduling.md)|  
+|Monitor processes or system-level events.|[Monitoring](./standard-activities/monitoring.md)|  
 |Manage file interactions such as copying and moving files.|[File Management](./standard-activities/file-management.md)|  
 |Send email notifications.|[Email](./standard-activities/email.md)|  
 |Support other notification types.|[Notification](./standard-activities/notification.md)|  

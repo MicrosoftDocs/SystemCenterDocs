@@ -2,7 +2,7 @@
 title: Print File
 description: This article describes the functionality of Print File Activity.
 ms.custom: UpdateFrequency3, engagement-fy23
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1bec7174-4cf0-464b-aeb3-c179d52fb1dd
 caps.latest.revision: 13
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Print File
 
