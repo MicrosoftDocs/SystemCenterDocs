@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.update-cycle: 1095-days
 ms.subservice: orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
@@ -33,8 +33,6 @@ The following table provides a brief description of tasks you can accomplish wit
 
 [Here's](./standard-activities/alphabetical-list-of-standard-activities.md) the alphabetical list of Orchestrator standard activities.
 
-## See Also  
+## Related content  
 
--   [Common Activity Properties](common-activity-properties.md)  
-
-     Learn how to configure common tab settings.
+- [Common Activity Properties](common-activity-properties.md).
