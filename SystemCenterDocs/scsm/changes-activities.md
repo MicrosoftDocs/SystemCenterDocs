@@ -290,7 +290,7 @@ To notify users that a change request has been closed, follow these steps:
 
 #### Validate receipt of the notification  
 
-- The reviewer of the review activity or the user that the change request is assigned to receives an email message that indicates that a new review activity requires approval or that the change request was closed.
+- The reviewer of the review activity or the user that the change request is assigned to receive an email message that indicates that a new review activity requires approval or that the change request was closed.
 
 ## Suspend and resume a Service Manager change request
 
@@ -468,7 +468,7 @@ To notify users that a change request has been closed, follow these steps:
 
 #### Validate receipt of the notification
 
-- The reviewer of the review activity or the user that the change request is assigned to receives an email message that indicates that a new review activity requires approval or that the change request was closed.
+- The reviewer of the review activity or the user that the change request is assigned to receive an email message that indicates that a new review activity requires approval or that the change request was closed.
 
 ## Next steps
 
