@@ -5,7 +5,8 @@ description: Describes how to add and provision guarded hosts in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/17/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24

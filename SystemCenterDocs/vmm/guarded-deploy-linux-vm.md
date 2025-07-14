@@ -4,7 +4,7 @@ description: Learn how to add and provision a Linux shielded VM in the Virtual M
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/17/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: engagement-fy24

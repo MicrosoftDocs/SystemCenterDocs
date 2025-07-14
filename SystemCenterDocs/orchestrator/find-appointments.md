@@ -3,12 +3,13 @@ title: Find Appointments
 description: The Find Appointments activity is used in a runbook to find an existing appointment.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 223820eb-1c24-43ce-938e-935176e2a8bf
 author: jyothisuri
 ms.author: jsuri

@@ -1,6 +1,6 @@
 ---
 description: This article contains the procedures for backing up and recovery of virtual machines.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 03/27/2025

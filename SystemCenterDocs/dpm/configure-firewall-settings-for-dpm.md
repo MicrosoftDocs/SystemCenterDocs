@@ -7,7 +7,7 @@ ms.date: 03/28/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
 ms.subservice: data-protection-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Configure firewall settings in DPM

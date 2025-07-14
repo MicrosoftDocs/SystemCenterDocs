@@ -5,7 +5,7 @@ description: This article describes how to set up the VMM library in a highly av
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: intro-deployment, engagement-fy24

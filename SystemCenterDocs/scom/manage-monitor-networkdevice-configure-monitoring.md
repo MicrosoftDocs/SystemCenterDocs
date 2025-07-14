@@ -4,10 +4,11 @@ description: This article describes how to configure Operations Manager to sampl
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 59ac2317-06dc-4f83-b074-47a1bd4b98ac
 ---
 

@@ -3,12 +3,13 @@ title: Initialize Data
 description: This article describes the functionality of Initialize Data activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 02/28/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: c1cae147-b286-421d-b344-c73216ea9977
 caps.latest.revision: 13
 author: jyothisuri

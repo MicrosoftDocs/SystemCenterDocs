@@ -4,10 +4,11 @@ description: This article describes the .NET application monitoring feature and 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: e29fed7f-28ec-48fe-b195-0e776a4778da
 ---
 

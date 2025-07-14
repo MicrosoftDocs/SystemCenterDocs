@@ -3,12 +3,13 @@ title: Monitor Folder
 description: This article describes how to configure the Monitor Folder Activity
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 7a88688b-c7dd-4cc7-bda8-cd8ca52fdb05
 caps.latest.revision: 13
 author: jyothisuri

@@ -3,12 +3,13 @@ title: Get User Role
 description: Returns data on all the user roles within the VMM server.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 2c0732bd-d486-48c2-ae47-b35d42b45810
 author: jyothisuri
 ms.author: jsuri

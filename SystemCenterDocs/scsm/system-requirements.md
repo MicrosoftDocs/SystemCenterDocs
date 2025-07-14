@@ -5,7 +5,8 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic: article
+ms.update-cycle: 180-days
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: service-manager
 ms.custom: UpdateFrequency.5

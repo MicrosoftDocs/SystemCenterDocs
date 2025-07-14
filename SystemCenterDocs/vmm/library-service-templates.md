@@ -5,7 +5,8 @@ description: This article provides guidance for adding service templates to the 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/02/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency3, engagement-fy24

@@ -1,6 +1,6 @@
 ---
 description: Explains why you should use the Central Console to manage multiple DPM servers and how to install the console.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024

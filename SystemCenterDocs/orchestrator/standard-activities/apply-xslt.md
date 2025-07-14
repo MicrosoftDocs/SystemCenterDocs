@@ -3,12 +3,13 @@ title: Apply XSLT
 description: This article describes the functionality of Apply XSLT activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: 07fee562-5069-45b9-b48c-a816fced7284
 caps.latest.revision: 11
 author: jyothisuri

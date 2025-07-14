@@ -3,10 +3,10 @@ ms.assetid: e683af64-a4d0-4867-8941-3ac3419be3d9
 title: Features and enhancements in Management Pack for Azure SQL Database
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Database
 author: epomortseva
-ms.author: v-fkornilov
+ms.author: v-vlchernov
 manager: evansma
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 06/30/2025
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---
@@ -14,6 +14,18 @@ ms.subservice: operations-manager
 # Features and Enhancements in Management Pack for Azure SQL Database
 
 This section covers new functionality and improvements in Management Pack for Azure SQL Database.
+
+## July 2025 – 7.10.3.0 RTM
+
+### What’s New
+
+- Replaced System.Data.SqlClient with the Microsoft.Data.SqlClient data provider for SQL Server (MDS):
+  - Actively maintained and enhanced by Microsoft.
+  - Supports the latest protocols and features, including TDS 8.0, TLS 1.3, and Always Encrypted.
+
+- Added support for enabling debug logging in the **System Center Operations Manager** Windows Event Log.
+- Included minor enhancements and routine maintenance updates to improve system stability and overall reliability.
+- Updated the "Product Version Compliance" monitor with the latest public updates for SQL Server
 
 ## December 2022 - 7.0.42.0 RTM
 

@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Ser
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/28/2023
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy23

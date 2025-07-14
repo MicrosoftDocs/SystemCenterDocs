@@ -5,10 +5,11 @@ author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
 ms.date: 04/21/2025
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: how-to
+ms.topic: concept-article
 ms.assetid: fe53bb3b-9072-4b7d-a518-a210c3e1e17f
 ---
 

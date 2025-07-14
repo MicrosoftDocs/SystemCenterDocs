@@ -7,15 +7,20 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 1f3f12bf-e2c2-405c-9205-8d6de6d199d2
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
+ms.update-cycle: 1095-days
+ms.date: 03/31/2025
 ---
 # Common Activity Properties
 
+
+
 All activities have properties. The Properties dialog box for each activity has multiple tabs that provide access to the settings for the activity. The particular set of tabs varies between activities, but there are several common property types.  
+
+This article describes the common activity properties including the run behavior, published data behavior, event notifications and security credentials.
 
 ## Details
 
@@ -67,6 +72,6 @@ The settings on the Security Credentials tab let you specify the account that ru
 |Use the security of the account assigned to the service|Select this option to run the activity with the account used by the runbook server. For more information, see [Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12)).|  
 |This account|Select this option to run this activity with another account. Specify the account user name and password to run this activity. Verify that the account has the credentials to perform this action. If the credentials you provided fail validation, the account assigned to the runbook server account is used.|  
 
-## See Also
+## Related content
 
-[Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12))
+[Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12)).

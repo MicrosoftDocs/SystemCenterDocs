@@ -1,7 +1,7 @@
 ---
 title: Glossary for System Center - Service Manager
 description: This glossary defines terms used in Service Manager.
-ms.topic: article
+ms.topic: glossary
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center

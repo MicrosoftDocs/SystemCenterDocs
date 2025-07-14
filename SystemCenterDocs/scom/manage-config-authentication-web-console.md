@@ -5,10 +5,11 @@ description: This article describes how to configure Secure Sockets Layer (SSL) 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Configure authentication with the Web console
