@@ -6,12 +6,6 @@ ms.service: system-center
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/31/2025
-=======
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 11/01/2024
->>>>>>> 074cd195e091ae4709a6e34e76a199a9cc4ebb12
 ms.subservice: service-manager
 ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy24
