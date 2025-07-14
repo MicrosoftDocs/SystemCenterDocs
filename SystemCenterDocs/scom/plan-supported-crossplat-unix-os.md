@@ -8,7 +8,7 @@ ms.author: jsuri
 ms.date: 01/29/2025
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Supported UNIX operating system versions

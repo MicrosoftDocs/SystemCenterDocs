@@ -6,7 +6,7 @@ author: Anastas1ya
 ms.author: v-fkornilov
 manager: evansma
 ms.date: 11/01/2024
-ms.topic: article
+ms.topic: troubleshooting-known-issue
 ms.service: system-center
 ms.subservice: operations-manager
 ---

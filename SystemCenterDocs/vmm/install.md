@@ -5,7 +5,8 @@ description: This article provides installation instructions for VMM
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/04/2025
-ms.topic: article
+ms.update-cycle: 180-days
+ms.topic: install-set-up-deploy
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency.5, intro-installation, engagement-fy23, engagement-fy24

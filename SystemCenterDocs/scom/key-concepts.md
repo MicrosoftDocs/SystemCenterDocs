@@ -5,10 +5,11 @@ description: This article provides a high-level overview of what Operations Mana
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.custom: UpdateFrequency.5, engagement-fy23, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Operations Manager key concepts

@@ -7,12 +7,13 @@ ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 60be0ba1-5e71-4521-bfae-9c7721fdfa03
 author: jyothisuri
 ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ---
 
 # Get Annotation

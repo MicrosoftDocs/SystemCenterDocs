@@ -9,7 +9,7 @@ ms.custom: engagement-fy24
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Kerberos Authentication Support for Unix and Linux computers

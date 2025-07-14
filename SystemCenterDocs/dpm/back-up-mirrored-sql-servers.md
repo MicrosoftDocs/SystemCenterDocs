@@ -5,7 +5,7 @@ description: This article provides information about how to manage mirrored SQL 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic:  article
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: data-protection-manager
 ms.custom: UpdateFrequency2, engagement-fy24

@@ -5,7 +5,8 @@ description: This article provides information about how to manage the telemetry
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
-ms.topic:  article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: operations-manager
 ms.custom: engagement-fy23, UpdateFrequency3, engagement-fy24

@@ -3,12 +3,13 @@ title: File Management
 description: This article provides information on the various File Management activities.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: d491e346-f43e-4958-85cc-169305fc471e
 caps.latest.revision: 8
 author: jyothisuri

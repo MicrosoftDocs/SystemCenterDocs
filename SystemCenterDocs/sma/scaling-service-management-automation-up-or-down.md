@@ -1,6 +1,6 @@
 ---
 description: Provides an overview of how you can scale out a machine tier.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 author: jyothisuri
 ms.author: jsuri

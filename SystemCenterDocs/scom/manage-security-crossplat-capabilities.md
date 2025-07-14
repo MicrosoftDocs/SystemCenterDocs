@@ -5,10 +5,11 @@ description: This article describes the capabilities for privileged and unprivil
 author: jyothisuri
 ms.author: jsuri
 ms.date: 04/07/2025
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Required capabilities for UNIX and Linux accounts

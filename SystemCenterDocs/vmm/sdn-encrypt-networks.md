@@ -5,7 +5,8 @@ description: This article explains about how to configure encrypted networks in 
 author: jyothisuri
 ms.author: jsuri
 ms.date: 07/24/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'

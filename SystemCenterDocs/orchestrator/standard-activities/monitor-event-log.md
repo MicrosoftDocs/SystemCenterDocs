@@ -3,12 +3,13 @@ title: Monitor Event Log
 description: This article describes the Monitor Event Log activity that invokes runbooks when new events that match a filter that you specify appear in the Windows Event Log.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: how-to
 ms.assetid: 244f37c3-48e0-46a4-b3bc-2bd7046ba544
 caps.latest.revision: 14
 author: jyothisuri

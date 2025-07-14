@@ -2,12 +2,13 @@
 title: Optionally disable ECL logging for faster connector synchronization
 description: Describes how you can optionally disable Service Manager ECL logging for faster connector synchronization.
 ms.custom: UpdateFrequency3, engagement-fy24
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
 ms.assetid: 805b479a-9312-4039-be44-01dda07086d8

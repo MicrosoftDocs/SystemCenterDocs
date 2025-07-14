@@ -1,6 +1,6 @@
 ---
 description: This article describes the  pre and post backup scripts for Data Protection Manager.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 03/31/2025

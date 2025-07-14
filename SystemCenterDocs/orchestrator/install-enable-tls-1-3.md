@@ -4,8 +4,8 @@ title: Set up TLS 1.3 for Orchestrator
 description: This article provides instructions for setting up TLS 1.3 with Orchestrator
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 03/28/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: orchestrator
 moniker range: sc-orch-2025
@@ -17,6 +17,8 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Before you start
 
+Here are some considerations before you set up TLS 1.3 for Orchestrator:
+
 - Orchestrator should be running version 2022 or 2025.
 - Security fixes should be up-to-date on the Orchestrator.
 - System Center updates should be up-to-date.
@@ -27,17 +29,19 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Install a SQL Server update for TLS 1.3 support
 
->[!Important]
+>[!IMPORTANT]
 >Even with TLS 1.3 support for TDS connections, TLS 1.2 is still required for starting up SQL Server satellite services. Don't disable TLS 1.2 on the machine.
 
 [Download and install](/sql/relational-databases/security/networking/connect-with-tls-1-3?view=sql-server-ver16) the update for your SQL Server version.
 
->[!Note]
+>[!NOTE]
 >- SQL Server 2019 (15.x) and earlier versions doesn't support TLS 1.3.
 
 ## Configure and use TLS 1.3
 
-1. Configure Orchestrator to use TLS 1.3
+To configure and use TLS 1.3, follow these steps:
+
+1. Configure Orchestrator to use TLS 1.3:
 
     a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, enter **regedit** in the Run box, and then select **OK**.
 
@@ -62,14 +66,14 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
       | `HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319` | SystemDefaultTlsVersions | dword:00000001 |
       | `HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319` | SystemDefaultTlsVersions | dword:00000001 |
 
-2. Set Windows to use only TLS 1.3.
+2. Use these methods to configure Windows to use only TLS 1.3:
 
    **Method 1: Manually modify the registry**
 
-   >[!Important]
-   >You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
+   >[!IMPORTANT]
+   >You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problem occurs.
 
-   Use the following steps to enable or disable all SCHANNEL protocols across the system.
+   To enable or disable all SCHANNEL protocols across the system, follow these steps:
 
    >[!NOTE]
    >We recommend that you enable the TLS 1.3 protocol for incoming communications. Enable the TLS 1.3, TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications. Registry changes don't affect the use of the Kerberos protocol or NTLM protocol.
@@ -180,9 +184,11 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 4. Restart the computer.
 
->[!Note]
+>[!NOTE]
 >After you set Microsoft System Center Orchestrator to use only the TLS 1.3 protocol for connections, the Integration Packs stop working.
+
 To fix this issue, follow these steps:
+
 >1.	Start Registry Editor.
 >2.	Locate the following registry subkey:
  `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319`

@@ -4,10 +4,11 @@ description: This article provides guidance on how to manage the cache for the H
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: bea86d42-4838-46b0-96ac-75a0e8988e3c
 ---
 

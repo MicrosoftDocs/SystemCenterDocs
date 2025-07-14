@@ -4,7 +4,7 @@ description: Provides information about integrating System Center SPF and SMA.
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/07/2023
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: service-provider-foundation
 ms.custom: UpdateFrequency2, engagement-fy24

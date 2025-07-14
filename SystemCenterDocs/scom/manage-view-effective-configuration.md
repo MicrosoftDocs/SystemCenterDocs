@@ -9,7 +9,7 @@ ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.assetid:
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # How to view the effective configuration of a monitored object

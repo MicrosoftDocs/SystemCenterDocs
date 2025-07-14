@@ -4,10 +4,11 @@ description: This article summarizes the default reports for network devices inc
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: acd07be8-9878-4997-86c4-4a932f5e27e2
 ---
 

@@ -13,7 +13,7 @@ manager: jsuri
 ms.date: 11/01/2024
 >>>>>>> 074cd195e091ae4709a6e34e76a199a9cc4ebb12
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

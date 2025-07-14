@@ -2,12 +2,11 @@
 title: Troubleshoot Upgrade Issues in System Center - Service Manager
 description: This article helps you resolve System Center - Service Manager upgrade problems and work around them.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
-ms.date: 03/10/2025
+author: jyothisuri
+ms.author: jsuri
+ms.date: 03/31/2025
 ms.subservice: service-manager
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

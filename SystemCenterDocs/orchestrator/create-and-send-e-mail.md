@@ -3,12 +3,13 @@ title: Create and Send E-Mail
 description: The Create and Send E-Mail activity is used in a runbook to create and send an email message to one or more recipients.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 42303d7c-eb1c-4343-93d2-3123b93f1464
 author: jyothisuri
 ms.author: jsuri

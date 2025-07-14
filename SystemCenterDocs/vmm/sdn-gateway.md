@@ -1,11 +1,11 @@
 ---
 ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
-title: Set up an SDN RAS gateway in the VMM fabric
+title: Set up an SDN RAS Gateway in the VMM Fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/01/2024
-ms.topic: article
+ms.date: 04/22/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
@@ -21,7 +21,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 ::: moniker range=">=sc-vmm-2022"
 
-> [!Note]
+> [!NOTE]
 > VMM 2025 and 2022 provide dual stack support for RAS gateway.
 
 ::: moniker-end

@@ -5,10 +5,11 @@ description: This article details the group managed service accounts feature, su
 author: jyothisuri
 ms.author: jsuri
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 monikerRange: '>=sc-om-2019'
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ms.custom: UpdateFrequency3, engagement-fy24
 ---
 

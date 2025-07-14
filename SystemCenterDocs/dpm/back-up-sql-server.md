@@ -1,6 +1,6 @@
 ---
 description: You can use DPM to back up and recover SQL Server databases.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 03/05/2025

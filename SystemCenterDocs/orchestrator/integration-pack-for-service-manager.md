@@ -4,7 +4,7 @@ description: The article describes the integration pack for System Center - Serv
 ms.date: 11/19/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ---

@@ -6,7 +6,7 @@ ms.custom: engagement-fy23, UpdateFrequency2, engagement-fy24
 author: jyothisuri
 ms.author: jsuri
 ms.date: 08/21/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ---

@@ -5,7 +5,7 @@ description: This article provides information about how to manage VMs with Azur
 author: jyothisuri
 ms.author: jsuri
 ms.date: 09/02/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24

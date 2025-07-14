@@ -4,15 +4,12 @@ title: Manage the Report Server Unattended Execution Account in Operations Manag
 description: This topic describes how to configure the unattended execution account for the Operations Manager Reporting server.
 author: jyothisuri
 ms.author: jsuri
-<<<<<<< HEAD
 ms.date: 03/31/2025
-=======
-ms.date: 11/01/2024
->>>>>>> 074cd195e091ae4709a6e34e76a199a9cc4ebb12
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Manage the Report Server Unattended Execution Account in Operations Manager

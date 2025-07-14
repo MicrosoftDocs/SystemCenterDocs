@@ -5,7 +5,8 @@ description: This article details the known issues and issues fixed in Orchestra
 author: jyothisuri
 ms.author: jsuri
 ms.date: 05/15/2025
-ms.topic: article
+ms.update-cycle: 180-days
+ms.topic: release-notes
 ms.service: system-center
 ms.subservice: orchestrator
 ms.custom: UpdateFrequency.5, engagement-fy23

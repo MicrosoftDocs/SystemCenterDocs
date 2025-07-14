@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Service M
 author: jyothisuri
 ms.author: jsuri
 ms.date: 03/03/2025
-ms.topic: article
+ms.topic: release-notes
 ms.service: system-center
 ms.subservice: service-management-automation
 monikerRange: '>sc-sma-2016'

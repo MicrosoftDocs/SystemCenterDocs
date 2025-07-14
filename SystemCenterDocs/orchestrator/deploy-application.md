@@ -3,12 +3,13 @@ title: Deploy application activity
 description: Describes the configurable properties for the Deploy Application activity for Configuration Manager Integration Pack.
 ms.custom: na, intro-deployment, UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: b1197648-35b2-4366-886e-1c93dca4f1cf
 author: jyothisuri
 ms.author: jsuri

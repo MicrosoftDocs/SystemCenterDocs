@@ -3,12 +3,13 @@ title: Send E-Mail
 description: The Send E-Mail activity is used in a runbook to send e-mail messages.
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 30dc0550-1edc-40dc-8bdd-93e2fc10103e
 author: jyothisuri
 ms.author: jsuri
