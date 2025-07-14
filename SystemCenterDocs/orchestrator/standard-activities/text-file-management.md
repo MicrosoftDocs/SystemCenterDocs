@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 59a60b8a-2fb3-4dc9-9d3a-06cfd66db866
 caps.latest.revision: 7
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Text File Management
 

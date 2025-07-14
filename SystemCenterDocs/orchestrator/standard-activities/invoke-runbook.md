@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 78020370-0059-4788-9eed-2c1687aaf56e
 caps.latest.revision: 19
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Invoke Runbook
 

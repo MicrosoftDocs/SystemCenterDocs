@@ -2,9 +2,8 @@
 ms.assetid: c46cb9b2-e66e-4f06-9020-2157b063df3a
 title: include file
 description: include file to describe the new features in Operations Manager 2016
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/09/2017
 ms.custom: na
 ms.service: system-center
