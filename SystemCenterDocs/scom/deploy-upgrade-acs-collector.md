@@ -2,9 +2,8 @@
 ms.assetid: 11da2a90-3cf3-4983-a71f-1065a792374e
 title: Upgrade an ACS Collector
 description: This article describes how to upgrade an ACS Collector to the latest version of System Center Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/11/2025
 ms.custom: UpdateFrequency.5, engagement-fy24
 ms.service: system-center
@@ -14,14 +13,13 @@ ms.topic: article
 
 # Upgrade an ACS Collector
 
-This article describes how to upgrade an ACS Collector to the latest version of System Center Operations Manager.
 
 Perform this procedure to upgrade the Audit Collection Services (ACS) Collector locally on the ACS collector. During this procedure, the ACS database is also upgraded without any additional steps.
 
 > [!WARNING]
 > A computer that hosts an ACS Collector must also be an Operations Manager management server or gateway server.
 
-Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System requirements for System Center Operations Manager](./system-requirements.md).
+Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 To upgrade an ACS Collector, follow these steps:
 

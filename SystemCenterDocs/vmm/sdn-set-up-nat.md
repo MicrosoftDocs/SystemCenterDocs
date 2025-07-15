@@ -1,10 +1,9 @@
 ---
 ms.assetid: d174e976-e265-4acc-9ef5-1c92b602f761
-title: Set up NAT for traffic forwarding in SDN infrastructure by using VMM.
+title: Set up NAT for Traffic Forwarding in SDN Infrastructure by using VMM.
 description: This article describes how to configure NAT connection and NAT rules for traffic forwarding in the SDN infrastructure.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/10/2025
 ms.topic: article
 ms.service: system-center
@@ -43,7 +42,7 @@ VMM 2025 and 2022 support dual stack. NAT rules to Dual stack VM networks isn't 
 
 ## Before you start
 
-Here are some considerations before you start setting up NAT:
+Here are some considerations before you set up NAT:
 
 - [SDN network controller](sdn-controller.md) and the SDN [software load balancer](sdn-slb.md) are deployed.
 - An SDN VM network with network virtualization is created.

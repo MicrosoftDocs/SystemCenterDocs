@@ -1,10 +1,9 @@
 ---
 ms.assetid: 6cc028a5-1e33-4c8c-afaf-be1eb26bcf3f
-title: Provision a scale-out file server (SOFS) cluster from bare metal computers
+title: Provision a Scale-out File Server (SOFS) Cluster from Bare Metal Computers
 description: This article provides about provisioning an SOFS in the VMM fabric
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/11/2025
 ms.topic: article
 ms.service: system-center
@@ -20,13 +19,13 @@ In addition to adding existing file servers to an SOFS cluster in the System Cen
 
 ## Before you start
 
-Here are some considerations before you start deploying bare metal SOFS cluster in VMM:
+Here are some considerations before you deploy a bare metal SOFS cluster in VMM:
 
 - **Physical computers** to deploy as SOFS cluster nodes. These computers must meet the prerequisites described in the table below. They can be running on operating system or an operating system that will be overwritten during the deployment process.
 - **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and use Sysprep with the /generalize and the /oobe options.<br/>The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
 - **PXE server** configured with Windows Deployment Services is needed for bare metal deployment.
 
-### [Physical computer requirements](#tab/physical-computer-requirements)
+### Physical computer requirements
 
 :::moniker range="<=sc-vmm-2019"
 **Prerequisite** | **Details**
@@ -52,7 +51,7 @@ Here are some considerations before you start deploying bare metal SOFS cluster 
 **Accounts** | You'll need two Run As accounts.<br/><br/> A Run As account for joining computers to the domain, and an account for access to the BMC on each computer.
 :::moniker-end
 
-### [PFX server requirements](#tab/pfx-server-requirements)
+### PFX server requirements
 
 :::moniker range="<=sc-vmm-2019"
 **Prerequisite** | **Details**
@@ -82,7 +81,7 @@ Here are some considerations before you start deploying bare metal SOFS cluster 
 :::moniker-end
 
 
-### [Virtual disk and template requirements](#tab/virtual-disk-and-template-requirements)
+### Virtual disk and template requirements
 
 :::moniker range="<=sc-vmm-2019"
 **Prerequisite** | **Details**
@@ -120,8 +119,6 @@ Here are some considerations before you start deploying bare metal SOFS cluster 
 **Logical switch** | To use a logical switch, install all the necessary virtual switch extensions and extension providers, and create the switch before you create the physical computer profile.<br/><br/> In the logical switch, as a best practice, include one or more port classifications for the virtual ports.<br/><br/> To apply a logical switch to physical adapters in a physical computer profile, ensure that you've installed the intended number of NICs on the physical computer. </br><br/>  
 :::moniker-end
 
----
-
 ## Deployment steps
 
 To deploy bare metal SOFS cluster in VMM, follow these steps:
@@ -137,7 +134,7 @@ To deploy bare metal SOFS cluster in VMM, follow these steps:
 
 ## Prepare physical computers
 
-To prepare each computer to support virtualization, follow these steps:
+To prepare each computer to support virtualization, as follows:
 
 1. Set the BIOS boot order to boot from a Pre-Boot Execution Environment (PXE)-enabled network adapter as the first device.
 2. Configure the sign-in credentials and IP address settings for the BMC on each computer.

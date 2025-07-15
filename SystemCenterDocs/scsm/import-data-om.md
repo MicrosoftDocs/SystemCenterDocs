@@ -1,10 +1,9 @@
 ---
-title: Import data and alerts from Operations Manager
+title: Import Data and Alerts from Operations Manager
 description: Describes how you can import data and alerts from Operations Manager into Service Manager.
 ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/11/2025
@@ -16,15 +15,15 @@ ms.custom: UpdateFrequency3, engagement-fy24
 # Import data and alerts from Operations Manager into Service Manager
 
 
-If your organization uses System Center Operations Manager to monitor systems in your enterprise, the agents that are deployed gather information about configuration items that are discovered, and, as problems are detected, System Center Operations Manager generates alerts. Two connectors for Operations Manager are available in Service Manager: the Configuration Item (CI) connector that imports objects that are discovered by Operations Manager into the Service Manager database, and an alert connector that can create incidents based on alerts.
+If your organization uses System Center Operations Manager to monitor systems in your enterprise, the agents that are deployed gather information about configuration items that are discovered, and, as problems are detected, System Center Operations Manager generates alerts. Two connectors for Operations Manager are available in Service Manager: the configuration item (CI) connector that imports objects that are discovered by Operations Manager into the Service Manager database, and an alert connector that can create incidents based on alerts.
 
-System Center Operations Manager collects information about many different types of objects, such as hard disk drives and Web sites. To import objects that are discovered by Operations Manager, Service Manager requires a list of class definitions for these objects; the list of definitions is in the System Center Operations Manager management packs. Therefore, you must import some System Center Operations Manager management packs into Service Manager. When you install Service Manager, a set of System Center Operations Manager management packs for common objects and the required Windows PowerShell scripts are copied to your Service Manager installation folder. If you've installed additional management packs in Operations Manager, and you want to add the data from those additional management packs to Service Manager, you can modify the Configuration Item (CI) connector to add the additional management packs.
+System Center Operations Manager collects information about many different types of objects, such as hard disk drives and Web sites. To import objects that are discovered by Operations Manager, Service Manager requires a list of class definitions for these objects; the list of definitions is in the System Center Operations Manager management packs. Therefore, you must import some System Center Operations Manager management packs into Service Manager. When you install Service Manager, a set of System Center Operations Manager management packs for common objects and the required Windows PowerShell scripts are copied to your Service Manager installation folder. If you've installed additional management packs in Operations Manager, and you want to add the data from those additional management packs to Service Manager, you can modify the configuration item (CI) connector to add the additional management packs.
 
 The Microsoft Azure management pack for Operations Manager is supported in this release of Service Manager. This means that if an alert from Microsoft Azure is generated in Operations Manager, Service Manager will recognize the alert and an incident can be created.
 
 ## Import management packs for Operations Manager configuration item connectors
 
-For the System Center Operations Manager Configuration Item (CI) connector to function correctly, you've to import a set of management packs into Service Manager. The management packs and the Windows PowerShell script that you need to import the management packs are in the Service Manager installation folder. The default installation folder is \Program Files\Microsoft System Center\Service Manager \<version\>\Operations Manager Management Packs and System Center - Operations Manager Management Packs. Use the following procedures to import the management packs into Service Manager.
+For the System Center Operations Manager configuration item (CI) connector to function correctly, you've to import a set of management packs into Service Manager. The management packs and the Windows PowerShell script that you need to import the management packs are in the Service Manager installation folder. The default installation folder is \Program Files\Microsoft System Center\Service Manager \<version\>\Operations Manager Management Packs and System Center - Operations Manager Management Packs. Use the following procedures to import the management packs into Service Manager.
 
 To import Operations Manager management packs for an Operations Manager CI connector, follow these steps:
 
@@ -92,7 +91,7 @@ To import Operations Manager management packs for an Operations Manager CI conne
 
 ## Create an Operations Manager connector
 
-In Service Manager, there are two types of connectors for Operations Manager. You use the first type of connector, the alert connector, to automatically generate incidents that are based on Operations Manager alerts. You use the second type of connector, the Configuration Item (CI) connector, to import discovered objects from Operations Manager as configuration items into the Service Manager database. You can use the following procedures to create both connectors, validate them, and confirm their creation.
+In Service Manager, there are two types of connectors for Operations Manager. You use the first type of connector, the alert connector, to automatically generate incidents that are based on Operations Manager alerts. You use the second type of connector, the configuration item (CI) connector, to import discovered objects from Operations Manager as configuration items into the Service Manager database. You can use the following procedures to create both connectors, validate them, and confirm their creation.
 
 > [!NOTE]
 > For the Operations Manager CI connector to function correctly, you've to import a set of management packs into Service Manager.
@@ -103,7 +102,7 @@ You have the option of defining Service Manager templates that run when alerts o
 
 There are two phases for creating the Alert connector. The first part involves creating the Alert connector on the Service Manager management server. The second part requires that you start the Operations Manager console and set up a subscription for the newly created connector. The subscription you create must be unique for the Alert connector; no connector that is created to point to Operations Manager should have a subscription that overlaps with another Operations Manager internal connector. Both phases are described in the following procedure.
 
-### [Create an Operations Manager alert connector](#tab/create-an-operations-manager-alert-connector)
+### Create an Operations Manager alert connector
 
 To create an Operations Manager alert connector, follow these steps:
 
@@ -157,13 +156,11 @@ To create an Operations Manager alert connector, follow these steps:
 
 ### Validate the creation of an Operations Manager alert connector
 
-To validate the creation of an Operations Manager alert connector, confirm that:
+- Confirm that the connector you created is displayed in the Service Manager console in the **Connectors** pane.
 
-- The connector you created is displayed in the Service Manager console in the **Connectors** pane.
+- Confirm that incidents are created in Service Manager from alerts in Operations Manager.
 
-- Incidents are created in Service Manager from alerts in Operations Manager.
-
-### [Create an Operations Manager CI connector](#tab/create-an-operations-manager-ci-connector)
+### Create an Operations Manager CI connector
 
 To create an Operations Manager CI connector, follow these steps:
 
@@ -195,11 +192,11 @@ To create an Operations Manager CI connector, follow these steps:
 
 ### Validate the creation of an Operations Manager CI connector
 
-To validate this, confirm that the objects that Operations Manager discovered are listed as configuration items in Service Manager.
+Confirm that the objects that Operations Manager discovered are listed as configuration items in Service Manager.
 
 ### Confirm the status of an Operations Manager connector
 
-To confirm the status of an Operations Manager connector view the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of import completion.
+- View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of import completion.
 
 ![PowerShell symbol](./media/import-data-om/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
