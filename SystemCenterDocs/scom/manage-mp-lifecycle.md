@@ -2,14 +2,13 @@
 ms.assetid: f408d78d-f05a-4166-a23b-50d42dbce9fe
 title: Management Pack Lifecycle
 description: This article provides a high-level overview of how to manage the lifecycle of monitoring configurations in Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/26/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Management Pack Lifecycle

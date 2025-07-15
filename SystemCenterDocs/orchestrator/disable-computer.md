@@ -2,17 +2,16 @@
 title: Disable Computer
 description: You can use the Disable Computer activity in a runbook to disable a computer in the Microsoft Active Directory.
 ms.custom: UpdateFrequency2
-ms.date: 11/01/2024
+ms.date: 03/31/2025
 ms.service: system-center
 ms.reviewer: na
 ms.suite: na
 ms.subservice: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 84b51ab5-b50e-4953-b0ac-7e5f2b915f83
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Disable Computer

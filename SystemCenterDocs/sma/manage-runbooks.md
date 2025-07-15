@@ -1,10 +1,9 @@
 ---
 title: Manage runbooks for Service Management Automation
 description: Describes how to schedule, track, and configure runbooks for System Center Service Management Automation.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 ms.date: 11/01/2024
 ms.subservice: service-management-automation

@@ -1,13 +1,13 @@
 ---
 title: Import data from Configuration Manager
 description: Describes how to import data from Configuration Manager into Service Manager.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: how-to
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.subservice: service-manager
 ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 ms.custom: UpdateFrequency3, engagement-fy24
