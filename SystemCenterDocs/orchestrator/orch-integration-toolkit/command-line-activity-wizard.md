@@ -1,9 +1,8 @@
 ---
 title: Orchestrator Integration Toolkit Command Line Activity Wizard
 description: This article provides details about the Orchestrator Integration Toolkit Command Line Activity Wizard.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/10/2025
 ms.service: system-center
 ms.subservice: orchestrator
@@ -11,7 +10,7 @@ ms.topic: article
 ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
-# Command Line Activity wizard
+# Command Line Activity Wizard
 
 The Command-Line Activity Wizard enables you to quickly create new activities in Orchestrator by encapsulating commands, arguments, and parameters into a Microsoft .NET assembly (.DLL). The wizard automatically creates C# source code using the Orchestrator SDK and compiles it for you. Using this assembly, you can utilize the .NET Integration Pack (part of the Integration Toolkit) to test your activities, and then use the Integration Pack Wizard to package the assembly into a custom Integration Pack that can be distributed and deployed just like other Integration Packs.  
 
@@ -23,7 +22,7 @@ An activity is a single functional part of an Orchestrator runbook. Activities a
 
 Activities range from simple to complex. You can create an activity using the Command-Line Activity Wizard that does nothing but echoes text to an output property. You can also create a single activity that performs a complex, multi-step action such as virtual machine deployment. It’s up to you to define what each activity will do. However, your goal should be to define activities that encapsulate single sets of functionality that allow for easy reuse in many different types of situations. The key is flexibility. It’s better to create a set of 10 different activities that each do something specific and be able to use those activities in 20 different ways, rather than create 20 different activities to solve the specific individual scenarios. More information about best practices is covered later in this document.  
 
-## [Create a New Activity Assembly](#tab/create-a-new-activity-assembly)  
+## Create a New Activity Assembly
 
 To create a new command-line activity assembly, follow these steps:
 
@@ -61,7 +60,7 @@ To create a new command-line activity assembly, follow these steps:
 
 12. If you wish to test your assembly using the Invoke .NET activity or just skip the IP build process for now, select **Finish**.  
 
-## [Add commands to an assembly](#tab/add-commands-to-an-assembly)  
+## Add commands to an assembly
 
 To add a command to an assembly, follow these steps:
 
@@ -141,7 +140,7 @@ To add a command to an assembly, follow these steps:
 
 20. Select **OK** to close the Add/Edit Command dialog and return to the Commands dialog.  
 
-## [Test an Activity Assembly](#tab/test-an-activity-assembly)
+## Test an Activity Assembly
 
  After you've created an assembly, you can test it using the Invoke .NET activity (contained in the Integration Toolkit IP for .NET) to verify that it works as expected before converting it into a custom Integration Pack.  
 
@@ -173,9 +172,9 @@ To test an assembly, follow these steps:
 
 12. Select **Run to Breakpoint** in the toolbar. The runbook starts, and your activity runs. Results of the activity are shown in the **Run Log** pane.  
 
-13. Select **Show Details** under the activity name in the Run Log pane to see the detailed results, including the input properties and published data. 
+13. Select **Show Details** under the activity name in the Run Log pane to see the detailed results, including the input properties and published data.  
 
----
+
 
 ## QIK CLI Activity Migration
 
@@ -208,7 +207,7 @@ To convert an Opalis QIK CLI Assembly, follow these steps:
 
 In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
 
-- [System Center home](https://www.microsoft.com/cloud-platform/system-center).
-- [System Center documentation](../index.yml).
-- [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/).
-- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator).
+- [System Center home](https://www.microsoft.com/cloud-platform/system-center)
+- [System Center documentation](../index.yml)
+- [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/)
+- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)

@@ -1,10 +1,9 @@
 ---
 ms.assetid:
-title: Create a dashboard with the Alert widget in the Web console
+title: Create a Dashboard with the Alert Widget in the Web Console
 description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Alert widget.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/10/2025
 ms.custom: UpdateFrequency2, engagement-fy23
 ms.service: system-center
@@ -91,7 +90,7 @@ For one or more alerts selected in the widget, you can perform such actions as:
 - Export the alerts to Excel for further analysis.
 - Modify how the alerts are presented by including or excluding columns, how to group alerts, customized to your personal needs.
 
-To perform these actions, hover your mouse over the widget, and click on the ellipsis **...** on the top right corner of the widget. This will display the following actions available for the widget:
+To perform these actions, hover your mouse over the widget, and click on the ellipsis **...** on the top right corner of the widget. This will display actions available for the widget.
 
    * Select **Set resolution state** and select one or multiple alerts by selecting the checkbox in the first column on the left, for each alert resolution state you're going to change. Select the resolution state from the dropdown list and select **Save**.  
    * Select **Export to Excel** to export the alert data to an Excel file.  
@@ -118,7 +117,7 @@ With Operations Manager 2019 UR3 and later, you can sort the results columns in 
 
 ::: moniker-end
 
-### [Support for sort by option](#tab/support-for-sort-by-option)
+### Support for sort by option
 
 The **Sort by** option is now available in the **Add widget** wizard.
 
@@ -126,7 +125,7 @@ To include this feature, while creating a new widget using the **Add widget** wi
 
 ![Screenshot showing Add widget.](./media/create-web-dashboard-alerts/add-widget.png)
 
-### [View columns using sort by feature](#tab/view-columns-using-sort-by-feature)
+### View columns using sort by feature
 
 The **Sort by** option is available under **Edit** > **Personalize**.
 
@@ -147,8 +146,6 @@ The following image shows sample results for Alert widget after grouping by **Na
 
 ![Screenshot showing Screenshot showing Alert widget.](./media/create-web-dashboard-alerts/alert-widget-name-age.png)
 
----
-
 ## Next steps
 
-To learn how to create a dashboard in the new web console with the Performance widget, see [How create a dashboard with the Performance widget in the Web console](manage-create-web-dashboard-perf.md).
+To learn how to create a dashboard in the new web console with the Performance widget, see [How to create a dashboard with the Performance widget in the Web console](manage-create-web-dashboard-perf.md).

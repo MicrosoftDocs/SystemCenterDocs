@@ -1,11 +1,10 @@
 ---
-title: Search for information
+title: Search for Information
 description: Describes how to search for information in Service Manager.
 ms.custom: UpdateFrequency5, engagement-fy24
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/10/2025
 ms.reviewer: na
 ms.suite: na
@@ -25,8 +24,6 @@ In Service Manager, you can use the search feature in the Service Manager consol
 - Domain users  
 
 - Manual activities  
-
-## Search criteria
 
 However, only knowledge articles are returned when you perform a knowledge search.  
 

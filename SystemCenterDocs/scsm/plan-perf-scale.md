@@ -1,10 +1,9 @@
 ---
-title: Plan for System Center - Service Manager performance and scalability
+title: Plan for System Center - Service Manager Performance and Scalability
 description: This article describes general performance and scalability planning guidance for System Center - Service Manager.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/10/2025
 ms.subservice: service-manager
 ms.topic: article
@@ -23,7 +22,7 @@ Service Manager is a three\-tiered application, consisting of a database, a data
 - The smallest deployment topology that is supported requires two servers, either physical servers or virtual servers. The largest deployment topology contains more than four servers.  
 - The servers host the Service Manager console and Service Manager database on the management server. The data warehouse management server hosts the Service Manager data warehouse.  
 
-## Service Manager Sizing Helper tool
+## Service Manager Sizing Helper Tool
 
  The Service Manager Sizing Helper tool can help you size the hardware and software pieces that you will deploy using the details in this guide. The tool is included in the [Service Manager job aids](https://go.microsoft.com/fwlink/p/?LinkID=232378) documentation set \(SM\_job\_aids.zip\). Although the tool was created for a previous version of Service Manager, its recommendations are still valid.
 

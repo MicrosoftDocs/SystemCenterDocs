@@ -10,9 +10,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
 ms.date: 04/10/2025
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 
 # Capture activity events to monitor runbooks
@@ -49,7 +48,7 @@ oedc /snmp /add /ip <Targeted IP Address> /port <Targeted Port> /version <versio
 
 For example, use the following procedure to send traps by using SNMP version 1 to an SNMP receiver at IP address 10.1.1.10 on port 162 and a community called public.  
 
-### Add an SNMP Trap Destination
+### Add an SNMP trap destination
 
 To add an SNMP trap destination, follow these steps:
 
@@ -85,7 +84,7 @@ To remove all SNMP trap destinations, follow these steps:
 2.  Navigate to `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
-3. Enter the following command: **oedc /snmp /clear**.  
+3. Enter the following command: **oedc /snmp /clear**  
 
 4. Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 
