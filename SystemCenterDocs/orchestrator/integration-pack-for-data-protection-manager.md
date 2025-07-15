@@ -4,7 +4,7 @@ description: This article describes the System Center DPM integration pack provi
 ms.date: 04/11/2025
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 author: jyothisuri
 ms.author: jsuri
 ms.custom: engagement-fy24

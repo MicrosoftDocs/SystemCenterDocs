@@ -2,11 +2,10 @@
 ms.assetid: de3c13d3-f817-4c1d-875b-f878e53f0ba8
 title: Integrate load balancing with VMM service templates
 description: This article provides guidance for setting up load balancing for VMM service tiers
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 08/21/2024
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

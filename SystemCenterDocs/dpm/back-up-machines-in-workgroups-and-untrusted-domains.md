@@ -1,15 +1,14 @@
 ---
 description: Use DPM to protect computers that are in untrusted domains or workgroups.
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
 title: Prepare machines in workgroups and untrusted domains for backup
 ms.subservice: data-protection-manager
 ms.assetid: e63b86d4-1f83-48ef-82bb-636b9dc745e2
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 
