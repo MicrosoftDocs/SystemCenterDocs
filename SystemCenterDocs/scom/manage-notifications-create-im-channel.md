@@ -1,9 +1,8 @@
 ---
 title: How to Enable an Instant Message Notification Channel
 description: This article describes how to create an instant message notification channel for Operations Manager.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/14/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
@@ -19,7 +18,7 @@ To configure alert notifications for System Center - Operations Manager, your fi
 
 Before you begin, gather the following information from your instant message server:  
 
--   Fully Qualified Domain Name (FQDN).  
+-   Fully qualified domain name (FQDN).  
 
 -   Protocol used to send messages. You have two choices: TCP or Transport Layer Security (TLS).  
 

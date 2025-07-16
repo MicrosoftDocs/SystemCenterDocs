@@ -1,9 +1,8 @@
 ---
-title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager
+title: Provision a Shielded Linux Virtual Machine in System Center Virtual Machine Manager
 description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM)  fabric.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/14/2025
 ms.topic: article
 ms.service: system-center
@@ -17,7 +16,6 @@ monikerRange: '>=sc-vmm-2019'
 This article describes how to deploy Linux shielded virtual machines (VMs) in System Center Virtual Machine Manager (VMM).
 
 ## Procedure to shield a Linux VM
-
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based virtual machines. Shielded VMs provide protection against malicious administrator actions when the VM's data is at rest or when untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
 
 With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs.
@@ -33,10 +31,6 @@ To shield a Linux VM, follow these steps:
 
 >[!NOTE]
 > If you use Wireless Application Protocol (WAP), you can provision Linux shielded VMs in the same way you provision Windows shielded VMs.
-
-## [Create a signed template disk](#tab/create-a-signed-template-disk)
-
-To create a signed template disk, prepare a template disk and then sign the template disk.
 
 ### Prepare a template disk
 
@@ -68,7 +62,7 @@ To sign the template disk, follow these steps:
 
 3. Copy the template disk and the signed image to the VMM library.  
 
-## [Create a Linux shielded VM template in VMM](#tab/create-a-linux-shielded-vm-template-in-vmm)
+## Create a Linux shielded VM template in VMM
 
 To create a Linux shielded VM template, follow these steps:
 
@@ -93,7 +87,7 @@ To create a Linux shielded VM template, follow these steps:
 
 6. In **Summary**, review the details and select **Create to finish generation of Linux shielded VM template in VMM**.
 
-## [Generate the shielding data file](#tab/generate-the-shielding-data-file)
+## Generate the shielding data file
 
 Before you generate the shielding data file (PDK), ensure the following:
 
@@ -115,8 +109,7 @@ $Guardian = Import-HgsGuardian -Path <<Import the xml from pre-step 1>> -Name '<
 
 New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Owner $Owner –Guardian $guardian –VolumeIDQualifier (New-VolumeIDQualifier -VolumeSignatureCatalogFilePath '<<Path to the .vsc file generated in pre-step 2>>' -VersionRule Equals) -AnswerFile '<<Path to LinuxOsConfiguration.xml>>' -policy Shielded
 ```
-## [Create a Linux shielded VM by using the VM template and the PDK](#tab/create-a-linux-shielded-vm-by-using-the-vm-template-and-the-pdk)
-
+## Create a Linux shielded VM by using the VM template and the PDK
 To create a Linux shielded VM, follow these steps:
 
 1.	In the VMM console, select **Create Virtual Machine**.
@@ -137,7 +130,6 @@ To create a Linux shielded VM, follow these steps:
 
   While provisioning the VM, the VMM specialization agent reads the Linux configuration file PDK and customizes the VM.
 
----
 
 ## Next steps
 - Get an overview of [Guarded fabric and shielded VMs](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms).

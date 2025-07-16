@@ -1,10 +1,9 @@
 ---
 ms.assetid: e950d0c6-23d3-4f93-9210-c57f9068e5bc
-title: Set up an SDN software load balancer in the VMM fabric
-description: Learn how to set up an SDN software load balancer in the VMM fabric.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+title: Set up an SDN Software Load Balancer in the VMM Fabric
+description: Learn how to set up an SDN Software Load Balancer in the VMM fabric.
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/14/2025
 ms.topic: article
 ms.service: system-center
@@ -13,11 +12,11 @@ ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 
 
-# Set up an SDN Software Load Balancer (SLB) in the VMM fabric
+# Set up an SDN software load balancer (SLB) in the VMM fabric
 
 
 
-This article provides information on how to deploy a software Load Balancer (SLB) in a Software Defined Network (SDN).
+This article provides information on how to deploy a software load balancer (SLB) in a Software Defined Network (SDN).
 
 The SLB enables even distribution of tenant and tenant customer network traffic among virtual network resources so that multiple servers can host the same workload to provide high availability and scalability. [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/software-load-balancing-for-sdn).
 
@@ -35,7 +34,7 @@ VMM 2025 and 2022 provide dual stack support for SLB.
 ::: moniker-end
 
 ## Before you start
-Here are some considerations before you start setting up an SDN software load balancer:
+Here are some considerations before you set up an SDN software load balancer:
 
 - **Planning**: Read about planning a software defined network, and review the planning topology in [this](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM) and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You must have an [SDN network controller](sdn-controller.md) deployed in the VMM fabric so that you've the compute and network infrastructure running before you set up the load balancing.
@@ -76,7 +75,7 @@ Both the templates have a default count of three virtual machines, which can be 
 
 We recommend you use simplified SDN topology (two physical network) for SLB deployments. Skip creating transit logical network when simplified SDN topology template is used.
 
-## Create the logical networks
+## Create the transit logical network
 
 ## [Create the transit logical network](#tab/create-the-transit-logical-network)
 
@@ -127,7 +126,7 @@ To create the IP address pool, follow these steps:
     > [!NOTE]
     > Ensure that you associate the logical network with the management switch uplink port profile.
 
-## [Create private and public VIP logical networks](#tab/create-private-and-public-vip-logical-networks)
+## Create private and public VIP logical networks
 
 You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service.
 
@@ -207,7 +206,7 @@ To create IP address pools for the private and public VIP networks, follow these
 7. Review the summary information, and select **Finish** to complete the wizard.
 8. Repeat the procedure for the public VIP logical network; this time enter the IP address range for the public network.
 
----
+
 
 ## Import the service template
 
