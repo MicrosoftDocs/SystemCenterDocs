@@ -1,13 +1,13 @@
 ---
 title: SQL Server requirements for Service Manager
 description: The article describes SQL Server requirements for Service Manager.
-ms.topic: article
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+ms.topic: concept-article
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 ms.subservice: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 ms.custom: UpdateFrequency.5, engagement-fy24

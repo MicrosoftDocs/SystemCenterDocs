@@ -2,10 +2,10 @@
 ms.assetid: e950d0c6-23d3-4f93-9210-c57f9068e5bc
 title: Set up an SDN Software Load Balancer in the VMM Fabric
 description: Learn how to set up an SDN Software Load Balancer in the VMM fabric.
+ms.date: 04/14/2025
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/14/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy23, engagement-fy24

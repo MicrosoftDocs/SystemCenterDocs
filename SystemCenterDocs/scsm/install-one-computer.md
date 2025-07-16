@@ -2,13 +2,12 @@
 title: Install Service Manager on a single computer
 description: This article helps you to evaluate System Center - Service Manager when you want to install it on one computer.
 ms.service: system-center
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/19/2025
 ms.subservice: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: intro-installation, UpdateFrequency2, engagement-fy23, engagement-fy24
 ---
 

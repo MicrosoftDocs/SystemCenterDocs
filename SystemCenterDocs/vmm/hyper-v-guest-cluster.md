@@ -5,8 +5,8 @@ description: This article provides guidance about creating a guest cluster from 
 author: PriskeyJeronika-MS
 ms.author: v-gjeronika
 manager: jsuri
-ms.date: 03/27/2025
-ms.topic: article
+ms.date: 04/21/2025
+ms.topic: how-to
 ms.service: system-center
 ms.subservice: virtual-machine-manager
 ms.custom: UpdateFrequency2, engagement-fy24

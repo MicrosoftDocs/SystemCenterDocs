@@ -1,15 +1,14 @@
 ---
 description: This article describes logging in DPM.
-ms.topic: article
+ms.topic: concept-article
 ms.service: system-center
 keywords:
 ms.date: 11/01/2024
 title: Set up DPM logging
 ms.subservice: data-protection-manager
 ms.assetid: 710459cd-75ec-4052-9199-c45828cbc19b
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.custom: UpdateFrequency2, engagement-fy24
 ---
 

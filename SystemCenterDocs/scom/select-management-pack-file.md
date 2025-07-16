@@ -9,7 +9,7 @@ ms.date: 04/14/2025
 ms.custom: na
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Select a management pack file

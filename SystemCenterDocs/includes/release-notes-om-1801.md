@@ -1,9 +1,8 @@
 ---
 title: include file
 description: include file to summarize the release notes for OM 1801.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 07/30/2018
 ms.service: system-center
 ms.assetid: b9174aab-ed12-48f3-88f2-586aef943734

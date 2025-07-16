@@ -7,7 +7,7 @@ ms.date: 04/14/2025
 ms.custom: UpdateFrequency2
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 086970a5-845c-4a67-b164-a15f0af3213d
 ---
 # How to enable an instant message notification channel
