@@ -1,10 +1,10 @@
 ---
-title: User interface customization in Service Manager
-description: Explains how to customize user interface to display items in Service Manager.
+title: User Interface Customization in Service Manager
+description: Explains to customize how items are displayed in Service Manager.
+ms.topic: article
 ms.topic: how-to
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/15/2025
@@ -15,7 +15,7 @@ ms.custom: UpdateFrequency3, engagement-fy24
 
 # User interface customization in Service Manager
 
-This article explains how you can customize user interface to display items in Service Manager.
+
 
 The sealed management packs in Service Manager contain, among other things, views, list items, and templates. Because these items are in a sealed management pack, they can't be edited or changed. In Service Manager, you've the option of hiding views. You can duplicate list items and templates, saving the duplicates into an unsealed management pack, and because the duplicates are in an unsealed management pack, you can edit the properties of the list item or template using the Service Manager console.
 

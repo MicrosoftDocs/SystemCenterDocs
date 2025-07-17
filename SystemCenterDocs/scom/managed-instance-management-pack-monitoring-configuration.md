@@ -1,6 +1,6 @@
 ---
 ms.assetid: 7e0ce57d-1b20-4412-a14e-941b4264f849
-title: Monitoring configuration in Management Pack for Azure SQL Managed Instance
+title: Monitor Configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the monitoring configuration in Management Pack for Azure SQL Managed Instance
 author: epomortseva
 ms.author: v-fkornilov
@@ -15,7 +15,7 @@ ms.subservice: operations-manager
 
 This section explains monitoring configurations in Management Pack for Azure SQL Managed Instance.
 
-## Monitor Templates
+## Monitoring Templates
 
 Management Pack for Azure SQL Managed Instance has two monitoring templates for monitoring of Azure SQL Managed Instance:
 
@@ -60,16 +60,53 @@ Management Pack for Azure SQL Managed Instance provides a monitor that checks th
 
 ## Securables Configuration Status Monitor
 
-This monitor checks if each of the required SQL Server securables is accessible under the configured [monitoring account](managed-instance-management-pack-security-configuration.md).
+The following is a complete list of securables that are checked by the monitor targeted to the Azure SQL Managed Instance:
 
-The following table contains a complete list of securables that are checked by the monitor targeted to the Azure SQL Managed Instance:
+- Server-Level permissions
+  - VIEW SERVER STATE
+  - VIEW ANY DEFINITION
+  - VIEW ANY DATABASE
 
-|Type|Permissions|  
-|-----------|----------------|  
-|Server-Level permissions | VIEW SERVER STATE <br> VIEW ANY DEFINITION <br> VIEW ANY DATABASE|
-|SELECT permission on dynamic management views | sys.dm_os_performance_counters <br> sys.dm_tran_active_transactions <br> sys.dm_tran_session_transactions <br> VIEW ANY DATABASE <br> sys.dm_exec_sessions <br> sys.dm_exec_requests <br> sys.dm_exec_connections <br> sys.dm_os_sys_info <br> sys.dm_os_host_info <br> sys.dm_os_ring_buffers <br> sys.dm_os_volume_stats <br> sys.dm_os_threads <br> sys.dm_hadr_database_replica_states <br> sys.dm_hadr_fabric_partition_states <br> sys.dm_hadr_fabric_config_parameters <br> sys.dm_hadr_fabric_continuous_copy_status <br> sys.dm_db_xtp_checkpoint_files <br> sys.dm_db_xtp_table_memory_stats <br> sys.dm_db_xtp_hash_index_stats <br> sys.dm_internal_resource_governor_resource_pools <br> sys.database_files <br> sys.tables <br> sys.filegroups <br> sys.syscolumns <br> sys.sysprocesses <br> sys.configurations <br> sys.syslanguages <br> sys.server_resource_stats <br> msdb.dbo.sysjobschedules <br> msdb.dbo.backupset |
-|SELECT permission on catalog views | sys.databases
-|EXECUTE permission on stored procedures | sys.sp_enumerrorlogs <br> sys.xp_readerrorlog <br> sys.xp_instance_regread <br> msdb.dbo.sp_help_jobactivity <br> msdb.dbo.sp_help_job |
+- SELECT permission on dynamic management views
+  - sys.dm_os_performance_counters
+  - sys.dm_tran_active_transactions
+  - sys.dm_tran_session_transactions
+  - sys.dm_exec_sessions
+  - sys.dm_exec_requests
+  - sys.dm_exec_connections
+  - sys.dm_os_sys_info
+  - sys.dm_os_host_info
+  - sys.dm_os_ring_buffers
+  - sys.dm_os_volume_stats
+  - sys.dm_os_threads
+  - sys.dm_hadr_database_replica_states
+  - sys.dm_hadr_fabric_partition_states
+  - sys.dm_hadr_fabric_config_parameters
+  - sys.dm_hadr_fabric_continuous_copy_status
+  - sys.dm_db_xtp_checkpoint_files
+  - sys.dm_db_xtp_table_memory_stats
+  - sys.dm_db_xtp_hash_index_stats
+  - sys.dm_internal_resource_governor_resource_pools
+
+- SELECT permission on catalog views
+  - sys.databases
+  - sys.database_files
+  - sys.tables
+  - sys.filegroups
+  - sys.syscolumns
+  - sys.sysprocesses
+  - sys.configurations
+  - sys.syslanguages
+  - sys.server_resource_stats
+  - msdb.dbo.sysjobschedules
+  - msdb.dbo.backupset
+
+- EXECUTE permission on stored procedures
+  - sys.sp_enumerrorlogs
+  - sys.xp_readerrorlog
+  - sys.xp_instance_regread
+  - msdb.dbo.sp_help_jobactivity
+  - msdb.dbo.sp_help_job
 
 ## Database Status Monitoring
 

@@ -9,9 +9,8 @@ ms.subservice: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6eb5a088-0b37-456c-bd38-8af868e5ae82
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 monikerRange: '<=sc-orch-2019'
 ms.date: 04/15/2025
 ---
@@ -26,7 +25,7 @@ ms.date: 04/15/2025
 
 ::: moniker-end
 
-In this article you'll learn about the integration pack for HP Service Manager. This pack is an add-on for Orchestrator in System Center and System Center - Orchestrator that enables you to retrieve, create, update, and monitor tickets in HP Service Manager.
+The integration pack for HP Service Manager is an add-on for Orchestrator in System Center and System Center - Orchestrator that enables you to retrieve, create, update, and monitor tickets in HP Service Manager.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
