@@ -7,6 +7,7 @@ author: epomortseva
 ms.author: v-fkornilov
 ms.date: 04/15/2025
 ms.topic: how-to
+ms.topic: concept-article
 ms.service: system-center
 ms.subservice: operations-manager
 ---

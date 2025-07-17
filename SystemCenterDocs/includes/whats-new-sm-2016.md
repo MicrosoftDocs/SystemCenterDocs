@@ -2,9 +2,8 @@
 title:  include file
 description: include file to describe the new features and other changes in System Center 2016 - Service Manager.
 ms.topic:  include
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service:  system-center
 ms.date: 06/21/2018
 ms.subservice:  service-manager

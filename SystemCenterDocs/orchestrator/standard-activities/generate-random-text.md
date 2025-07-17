@@ -3,12 +3,13 @@ title: Generate Random Text
 description: This article describes the functionality of Generate Random Text activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 04/15/2025
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: concept-article
 ms.assetid: d20f8d7c-c7d7-4e2a-95c3-3c514514733d
 caps.latest.revision: 12
 author: jyothisuri

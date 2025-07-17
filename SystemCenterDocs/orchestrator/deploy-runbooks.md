@@ -1,13 +1,12 @@
 ---
 title: Deploy runbooks
 description: Provides an overview of creating making runbooks in System Center - Orchestrator
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: intro-deployment, engagement-fy23
 ---
 

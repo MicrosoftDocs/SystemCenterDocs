@@ -3,17 +3,17 @@ title: Check Schedule
 description: This article describes the check schedule activity.
 ms.custom: UpdateFrequency3, engagement-fy23
 ms.date: 11/01/2024
+ms.update-cycle: 1095-days
 ms.service: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.subservice: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: how-to
 ms.assetid: 3f949c61-c495-4639-aa71-d7ad0b197b74
 caps.latest.revision: 11
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ---
 # Check Schedule
 
