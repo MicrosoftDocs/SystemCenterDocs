@@ -1,9 +1,8 @@
 ---
-title: Use the Administration workspace in Operations Manager
+title: Use the Administration Workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/15/2025
 ms.custom: UpdateFrequency2, engagement-fy24
 ms.service: system-center
@@ -14,7 +13,6 @@ ms.topic: article
 
 # Use the Administration workspace in Operations Manager
 
-This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 
 In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
@@ -30,9 +28,7 @@ Use **Connected Management Groups** in the Administration workspace to connect a
 For more information, see [Connect management groups in Operations Manager](manage-connecting-mgmtgroups.md).  
 
 ## Device Management  
-You can use **Device Management** to perform the configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers.
-
-The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
+You can use **Device Management** to perform the configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers. The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
@@ -59,7 +55,7 @@ You can use **Network Management** in the Administration workspace to discover n
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
 |Discovery Rules|Create rules for discovering network devices.<br>Modify existing discovery rules.|[Discover network devices in Operations Manager](manage-monitor-networkdevice-discover.md)|  
-|Network Devices|View properties of discovered network devices.|[Monitoring networks by using Operations Manager](manage-monitor-networkdevice-overview.md)|  
+|Network Devices|View properties of discovered network devices.|[Monitor networks by using Operations Manager](manage-monitor-networkdevice-overview.md)|  
 |Network Devices Pending Management|Retry or reject discovered network devices that are pending management.|[Discover network devices in Operations Manager](manage-monitor-networkdevice-discover.md)|  
 
 ## Notifications  

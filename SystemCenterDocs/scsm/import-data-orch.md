@@ -2,9 +2,8 @@
 title: Import Runbooks from System Center Orchestrator
 description: Describes how you can import Runbooks from System Center Orchestrator into Service Manager.
 ms.topic: how-to
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/15/2025
@@ -15,7 +14,7 @@ ms.custom: UpdateFrequency3, engagement-fy23, engagement-fy24
 
 # Import Runbooks from System Center Orchestrator into Service Manager
 
-This article describes how you can import Runbooks from System Center Orchestrator into Service Manager.
+
 
 Service Manager integrates with Orchestrator, providing the capability to synchronously invoke runbooks from within Service Manager using workflows. This capability provides integration between Orchestrator automation capabilities with the Self-Service Portal and business modeling capabilities. When this capability is combined with the Service Manager Service Catalog stack, it's possible to create an end-user-facing request offering with an Orchestrator runbook as part of the fulfillment process.
 
@@ -28,7 +27,7 @@ Activities that make up a service request can be mapped to runbook activities, w
 
 You can use the following procedures to create a connector for System Center - Orchestrator and then validate the creation of the connector.
 
-### [Create an Orchestrator connector](#tab/create-an-orchestrator-connector)
+### Create an Orchestrator connector
 
 To create an Orchestrator connector, follow these steps:
 
@@ -73,7 +72,7 @@ To create an Orchestrator connector, follow these steps:
 
    8. On the **Completion** page, ensure that you receive the message *Orchestrator connector successfully created*, and select **Close**.
 
-### [Validate the creation of an Orchestrator connector](#tab/validate-the-creation-of-an-orchestrator-connector)
+### Validate the creation of an Orchestrator connector
 
 To validate the creation of an Orchestrator connector, follow these steps:
 
@@ -90,13 +89,11 @@ To validate the creation of an Orchestrator connector, follow these steps:
 
 5. Review the **Runbooks** pane, and note that your runbooks have been imported.
 
----
-
 ## Synchronize an Orchestrator connector
 
 To ensure that the Service Manager database is up to date, the Orchestrator connector synchronizes with Service Manager on a daily basis. You can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
 
-### [Manually synchronize an Orchestrator connector](#tab/manually-synchronize-an-orchestrator-connector)
+### Manually synchronize an Orchestrator connector
 
 To manually synchronize an Orchestrator connector, follow these steps:
 
@@ -108,7 +105,7 @@ To manually synchronize an Orchestrator connector, follow these steps:
 
 4. In the **Tasks** pane, under the name of the connector, select **Synchronize Now**.
 
-### [Validate that an Orchestrator connector is synchronized](#tab/validate-that-an-orchestrator-connector-is-synchronized)
+### Validate that an Orchestrator connector is synchronized
 
 To validate that an Orchestrator connector is synchronized, follow these steps:
 
@@ -119,13 +116,11 @@ To validate that an Orchestrator connector is synchronized, follow these steps:
     > [!NOTE]
     > Synchronization events are also written to the Event log in the Applications and Services Logs/Operations Manager folder.
 
----
-
 ## Disable and enable an Orchestrator connector
 
 You can use the following procedures to disable or enable an Orchestrator connector and validate the status of the connector.
 
-### [Disable an Orchestrator connector](#tab/disable-an-orchestrator-connector)
+### Disable an Orchestrator connector
 
 To disable an Orchestrator connector, follow these steps:
 
@@ -139,7 +134,7 @@ To disable an Orchestrator connector, follow these steps:
 
 5. In the **Disable Connector** dialog, select **OK**.
 
-### [Enable an Orchestrator connector](#tab/enable-an-orchestrator-connector)
+### Enable an Orchestrator connector
 
 To enable an Orchestrator connector, follow these steps:
 
@@ -150,8 +145,6 @@ To enable an Orchestrator connector, follow these steps:
 3. In the **Tasks** pane, under the connector name, select **Enable**.
 
 4. In the **Enable Connector** dialog, select **OK**.
-
----
 
 ### Validate the status change of an Orchestrator connector
 

@@ -2,9 +2,8 @@
 ms.assetid: ea90aa0a-46e0-49f0-8560-5c35dd3a3c96
 title: Fabric Monitoring in System Center Operation Manager
 description: This article provides an overview of fabric monitoring.
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 04/15/2025
 ms.custom: UpdateFrequency3, engagement-fy24
 ms.service: system-center
@@ -13,6 +12,8 @@ ms.topic: article
 ---
 
 # Fabric Monitoring
+
+
 
 This article discusses about Fabric Monitoring in System Center Operation Manager. A close integration between System Center Virtual Machine Manager and System Center Operations Manager introduces System Center cloud monitoring of virtual layers for private cloud environments. The management pack for System Center Virtual Machine Manager monitors availability of VMM and the availability, health, and performance of all virtual machines and virtual machine hosts that VMM manages. The Fabric Health Dashboard shows a detailed overview of the health of your private clouds and the fabric that services those clouds. The dashboard helps you answer questions like "What is the health of my clouds and the fabric serving those clouds?" and helps you understand how your fabric components are connected. At a glance, you can see cloud health and the health of the underlying fabric/virtual machines. You can also do the root cause analysis by linking to existing dashboards, such as network monitoring dashboards, and the Virtual Machine Manager diagram view can help you dive into network and storage monitoring.
 

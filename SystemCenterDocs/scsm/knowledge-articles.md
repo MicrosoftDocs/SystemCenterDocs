@@ -1,10 +1,9 @@
 ---
-title: Manage knowledge articles
+title: Manage Knowledge Articles
 description: Describes how to manage Service Manager knowledge articles.
 ms.topic: how-to
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.service: system-center
 keywords:
 ms.date: 04/15/2025
@@ -15,7 +14,6 @@ ms.custom: UpdateFrequency2, engagement-fy24
 
 # Manage Service Manager knowledge articles
 
-This article describes how to manage Service Manager knowledge articles.
 
 Knowledge articles in Service Manager can help service desk analysts and end-users understand and solve problems. Any employee can search for, view, and create knowledge articles so that end-users can help themselves and resolve IT problems before new work items are opened. Service desk analysts also have to link work items to knowledge articles.
 
@@ -36,7 +34,7 @@ To create a knowledge article, follow these steps:
 
 3. In the **Tasks** pane, under **Knowledge**, select **Create Knowledge Article**.
 
-4. In the form that appears, on the **General** tab, in the **Knowledge article information** area, do the following:
+4. In the form that appears, on the **General** tab, in the **Knowledge article information** area, follow these steps:
 
     1. In the **Title** box, enter a title for the knowledge article. For example, enter **How to obtain Windows 10 service packs**.
 
@@ -83,7 +81,7 @@ When the search is complete, Service Manager displays matches for content in the
 > [!NOTE]
 > Partial matches aren't returned by a search. Therefore, when you search for a knowledge article based on a keyword, you must enter the exact word. However, you can use the asterisk (&#42;) as a wildcard character when you perform a search.
 
-### [Search for a knowledge article using the Service Manager console](#tab/search-for-a-knowledge-article-using-the-service-manager-console)
+### Search for a knowledge article using the Service Manager console
 
 To search for a knowledge article using the Service Manager console, follow these steps:
 
@@ -93,15 +91,13 @@ To search for a knowledge article using the Service Manager console, follow thes
 
 The **Knowledge Search** form displays the knowledge articles that match the search term.
 
-### [Search for a knowledge article when an incident or change request form is open](#tab/search-for-a-knowledge-article-when-an-incident-or-change-request-form-is-open)
+### Search for a knowledge article when an incident or change request form is open
 
 To search for a knowledge article when an incident or change request form is open, follow these steps:
 
 1. With an incident or change request form open, in the **Tasks** pane, select **Search for Knowledge Articles**.
 
 2. In the **Knowledge Search** form, enter a search term in the **Search for** box, and select **Go**. For example, enter **Windows 10**.
-
----
 
 ### Link a knowledge article to an incident or change request
 
