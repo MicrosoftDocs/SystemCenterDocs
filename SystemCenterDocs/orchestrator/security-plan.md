@@ -3,11 +3,10 @@ title: Orchestrator Security Planning
 description: This article describes the service account and user account requirements, and security considerations for your System Center Orchestrator deployment.
 ms.service: system-center
 ms.subservice: orchestrator
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 
-author: PriskeyJeronika-MS
-ms.author: v-gjeronika
-manager: jsuri
+author: jyothisuri
+ms.author: jsuri
 ms.date: 11/01/2024
 monikerRange: 'sc-orch-2025'
 zone_pivot_groups: orchestrator-security-planning

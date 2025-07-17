@@ -8,7 +8,7 @@ ms.date: 04/16/2025
 ms.custom: engagement-fy24
 ms.service: system-center
 ms.subservice: operations-manager
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # UNIX or Linux log file
